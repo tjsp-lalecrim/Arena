@@ -4,7 +4,7 @@
 
 Entregar uma demo jogável em Português Brasileiro: criar o personagem, acompanhar a introdução, explorar Imperial Dungeons e encerrar ao alcançar o Shift Gate. Este backlog detalha as decisões de DEMO_INICIAL.md, sem ampliar o marco para cidades ou quests posteriores.
 
-Estado de execução e evidências em VALIDACAO_M01.md. M01-01, M01-02, M01-03 e M01-04 concluídos em 25/10/2026, com evidências no registro. Demais itens permanecem a fazer até evidência específica. A documentação existente e o .gitignore são insumos já preparados; não comprovam implementação do jogo. Não há estimativas de esforço ou datas definidas.
+Estado de execução e evidências em VALIDACAO_M01.md. M01-01, M01-02 e M01-04 possuem evidências registradas em 25/10/2026. M01-03 está em validação de compatibilidade com o editor; os testes anteriores comprovam somente execução no navegador. Demais itens permanecem a fazer até evidência específica. A documentação existente e o .gitignore são insumos já preparados; não comprovam implementação do jogo. Não há estimativas de esforço ou datas definidas.
 
 P0 indica base necessária para começar e integrar; P1 indica requisito de conclusão da demo, não conteúdo opcional. Sistemas novos devem ser implementados em plugins desenvolvidos pelo Codex quando o motor nativo não atender, com documentação e configuração reutilizável conforme PLUGINS.md.
 
@@ -14,7 +14,7 @@ P0 indica base necessária para começar e integrar; P1 indica requisito de conc
 | --- | --- | --- | --- | --- |
 | M01-01 | P0 | Consolidar baseline documental e organização Git Flow | — | Revisar arquivos, .gitignore e checklist, preparar commit coeso da feature documental e sua integração em develop conforme autorização; nenhuma fonte local externa entra por acidente |
 | M01-02 | P0 | Especificar o conteúdo de MQ01 a partir das fontes | 01 | Lista de eventos, textos pt-BR, itens, inimigos, áreas e transições com fontes; geometria da dungeon examinada visualmente; término no Shift Gate |
-| M01-03 | P0 | Preparar projeto mínimo executável | 01 | Nova partida abre mapa de teste válido, sem referências ausentes no fluxo; Community_Basic adequadamente substituído ou dispensado, mantendo comportamentos necessários |
+| M01-03 | P0 | Preparar projeto mínimo executável | 01 | Projeto abre no editor MV 1.6.1, gerenciador lê plugins e salvamento/reabertura preservam configuração; nova partida abre mapa válido e executa novamente em localhost, sem referências ausentes; Community_Basic substituído ou dispensado preservando comportamentos necessários |
 | M01-04 | P0 | Montar banco de dados mínimo e convenções de IDs | 02, 03 | Registros necessários ao M01 consistentes, fonte/adaptação identificadas e referências válidas; sem classes profissionais ou bloqueios de equipamento por raça |
 | M01-05 | P0 | Definir e implementar o estado persistente dos sistemas próprios | 04 | Contratos e IDs para personagem, quests, itens concedidos, inimigos, atalhos e progressão; salvar/carregar cenário mínimo preserva o estado sem duplicação |
 | M01-06 | P0 | Validar o primeiro conjunto visual e formatos de assets | 02, 03 | Exemplos de personagem, inimigo, tile, ícone e ilustração vistos no motor, com dark fantasy e leitura na escala final; fichas e prompts registrados |
@@ -105,8 +105,8 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | --- | --- | --- |
 | M01-01 | Concluído | Baseline 29fc22b, integração em develop; revisão do índice e fontes ignoradas |
 | M01-02 | Concluído | MQ01_ESPECIFICACAO.md; textos, eventos e mapas examinados; commit 29f44c3 |
-| M01-03 | Concluído | Laboratório Map001, plugins próprios, testes Chrome; commit 2d79de3 |
+| M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura, gerenciador e salvamento/reabertura no editor pendentes; ver VALIDACAO_M01.md |
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
 | M01-05 a M01-20 | A fazer | Cadastro não comprova aplicação racial, Vigor, arte, combate ou campanha |
 
-Próxima dependência: M01-05, contratos persistentes. M01-06 depende da especificação/base já concluídas e deve validar os primeiros assets IA antes da produção em lote. O laboratório atual não substitui criação de personagem nem o percurso até o Shift Gate.
+Próxima dependência: M01-05, contratos persistentes. M01-06 depende da especificação/base e da validação de autoria pendente e deve validar os primeiros assets IA antes da produção em lote. O laboratório atual não substitui criação de personagem nem o percurso até o Shift Gate.
