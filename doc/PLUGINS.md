@@ -48,7 +48,7 @@ A implementação e sua documentação devem descrever o mesmo comportamento. Va
 
 Para sustentar a reutilização, verificar o plugin em um cenário mínimo sem conteúdo exclusivo de Arena ou registrar explicitamente o que ainda impede essa validação. Atualizar a documentação junto com alterações de funcionalidade, parâmetros ou dependências.
 
-Nenhum novo plugin foi criado por esta documentação. A arquitetura e as dependências das futuras funcionalidades serão avaliadas durante sua implementação.
+Os critérios acima orientam as features. Os plugins e evidências implementados são documentados em doc/plugins/ e relacionados a seguir.
 
 ## Implementação M01-05
 
