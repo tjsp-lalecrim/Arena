@@ -172,3 +172,11 @@ Aprovação estética do responsável é agora requisito explícito de fechament
 ## Continuidade após aprovação R02/R03
 
 Usar os masters e exports identificados em `arte/APROVACAO_DIRECAO_R02_R03.json` como referências de continuidade nas gerações pertinentes. Preservar prompts e fontes. Rato R02 é intermediário; R03 é a referência principal aprovada. Novos derivados técnicos não recebem automaticamente aprovação de escala, alpha, recorte ou animação. Não regenerar imagens adequadas por conveniência. Durante a implementação dos diálogos, conferir composição, objetos e contexto com a cena narrada e registrar qualquer necessidade concreta de alteração. A proibição do protagonista nas ilustrações permanece. Não buscar novos prints sem lacuna específica.
+
+## Prioridade explícita de fidelidade — atualização 25/10/2026
+
+Arena é de1994 e é executado neste ambiente por emulação DOS. Baixa definição é limitação da fonte, não justificativa para fantasia genérica. Priorizar a instalação original, seus arquivos/materiais e capturas do jogo para identidade visual, textos, quests, objetos e locais; wiki complementa interpretação e organização. Separar observação do executável, texto do manual, documentação técnica e informação da wiki. Quando divergirem, registrar versões/contexto/evidências e decisão explícita, sem escolher silenciosamente.
+
+Melhorar definição/acabamento preservando silhuetas, materiais, cores características, arquitetura e função narrativa. Pixelização não é obrigatória. Detalhe ilegível permanece interpretação artística identificada, não fato confirmado. As adaptações já aprovadas de exploração2D, turnos, interface e progressão continuam válidas. Referências de continuidade aprovadas em `arte/APROVACAO_DIRECAO_R02_R03.json`; não regenerar imagens adequadas sem necessidade concreta. Ilustrações narrativas sem protagonista, inclusive mãos, membros, silhueta, sombra/reflexo ou equipamento que fixe identidade. Revisar contexto/objetos ao implementar falas.
+
+Preservar a instalação; consultas e extrações somente em área local ignorada, sem mods ou alterações no original. Não incorporar arquivos originais ao jogo distribuído. Relatórios e decisões podem ser versionados; exports de consulta não.

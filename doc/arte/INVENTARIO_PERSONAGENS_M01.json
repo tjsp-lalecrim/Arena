@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-25",
+  "scope": "inventário, não registro de opções já implementadas ou aprovadas",
+  "expectedCombinations": 16,
+  "pilotCombinations": 1,
+  "productionReadyCombinations": 0,
+  "records": [
+    {
+      "raceId": "argonian",
+      "genderId": "male",
+      "visualId": "argonian.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "argonian",
+      "genderId": "female",
+      "visualId": "argonian.female.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "breton",
+      "genderId": "male",
+      "visualId": "breton.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "breton",
+      "genderId": "female",
+      "visualId": "breton.female.base",
+      "map": {
+        "file": "img/characters/$Arena_Breton_Pilot.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "piloto provisória, não conjunto final aprovado"
+      },
+      "sideView": {
+        "file": "img/pictures/arena_breta_lateral_v01.png",
+        "cell": [
+          96,
+          96
+        ],
+        "status": "pose isolada, não folha svActors"
+      },
+      "portrait": "img/pictures/arena_breta_retrato_v01.png",
+      "productionReady": false
+    },
+    {
+      "raceId": "dark_elf",
+      "genderId": "male",
+      "visualId": "dark_elf.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "dark_elf",
+      "genderId": "female",
+      "visualId": "dark_elf.female.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "high_elf",
+      "genderId": "male",
+      "visualId": "high_elf.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "high_elf",
+      "genderId": "female",
+      "visualId": "high_elf.female.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "khajiit",
+      "genderId": "male",
+      "visualId": "khajiit.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "khajiit",
+      "genderId": "female",
+      "visualId": "khajiit.female.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "nord",
+      "genderId": "male",
+      "visualId": "nord.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "nord",
+      "genderId": "female",
+      "visualId": "nord.female.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "redguard",
+      "genderId": "male",
+      "visualId": "redguard.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "redguard",
+      "genderId": "female",
+      "visualId": "redguard.female.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "wood_elf",
+      "genderId": "male",
+      "visualId": "wood_elf.male.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    },
+    {
+      "raceId": "wood_elf",
+      "genderId": "female",
+      "visualId": "wood_elf.female.base",
+      "map": null,
+      "sideView": null,
+      "portrait": null,
+      "productionReady": false
+    }
+  ]
+}

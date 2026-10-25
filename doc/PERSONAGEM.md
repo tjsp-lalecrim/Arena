@@ -25,3 +25,7 @@ As regras já confirmadas prevalecem: Stamina é gasta somente em combate por t�
 - A evolução dos máximos segue a regra de progressão aprovada na feature, sem conceder aumentos repetidos por reentrada ou carregamento.
 
 As escolhas de criação estão confirmadas; o catálogo visual e a regra numérica de progressão serão especificados durante o desenvolvimento.
+
+## Inventário prévio M01-07
+
+`doc/arte/INVENTARIO_PERSONAGENS_M01.json` registra16 combinações necessárias das oito raças do catálogo e duas opções históricas de gênero. Uma bretã piloto tem exploração/retrato/pose lateral; isso não valida as outras15 nem uma folha completa de combate. Nenhuma UI ou aplicação racial adicionada nesta rodada; ler `arte/FIDELIDADE_E_VALIDACAO_R05.md`. A prioridade do original e as adaptações numéricas continuam separadas; sem bônus por gênero, profissões ou restrições de equipamentos.
