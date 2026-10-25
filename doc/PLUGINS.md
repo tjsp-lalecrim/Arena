@@ -1,0 +1,51 @@
+# Criação e documentação de plugins
+
+## Diretrizes confirmadas
+
+Cada plugin criado deve ter sua funcionalidade e suas dependências documentadas. Buscar implementações reutilizáveis em outros projetos, separando comportamento genérico de conteúdo específico de Arena.
+
+## Autoria dos plugins
+
+Os plugins utilizados no projeto devem ser desenvolvidos pelo Codex. Não adotar plugins prontos de terceiros como dependências da solução. Avaliações anteriores que citam plugins externos passam a valer somente como referências técnicas de viabilidade, sem recomendação de instalação ou compra.
+
+Implementar código próprio a partir dos requisitos do projeto e das interfaces do motor. Não copiar ou reempacotar um plugin externo e apresentá-lo como autoria do Codex. Separar a lógica reutilizável de configurações, textos e dados específicos de Arena, mantendo a documentação e a validação exigidas neste guia.
+
+O Community_Basic foi encontrado ativo na inspeção inicial e é uma pendência de adequação à nova diretriz, não uma exceção aprovada. Antes de removê-lo, inventariar os parâmetros e efeitos utilizados; se necessários, substituí-los por solução própria desenvolvida pelo Codex. Validar a equivalência e só então desativar a dependência. Nenhum plugin foi removido ou substituído por esta atualização documental.
+
+Esta diretriz trata de plugins do projeto; não exige reescrever o código nativo do RPG Maker MV.
+
+## Reutilização
+
+Antes de criar um plugin, verificar os recursos do motor e os plugins existentes, delimitando a necessidade e a responsabilidade da nova implementação. Evitar dependências desnecessárias e dividir plugins por responsabilidades coesas, sem criar uma estrutura genérica maior do que a necessidade real.
+
+Disponibilizar por configuração os valores que variam entre projetos, como referências a assets, identificadores do banco de dados, textos e ajustes de apresentação. Não embutir nomes, IDs ou regras de Arena na lógica reutilizável quando puderem ser fornecidos por configuração ou por uma integração separada.
+
+Manter claros os pontos de integração, as alterações no comportamento do motor e as interações entre plugins. A reutilização deve ser demonstrável em uma configuração mínima, sem depender implicitamente dos arquivos ou dados exclusivos deste jogo.
+
+## Documentação por plugin
+
+Manter um documento em `doc/plugins/` para cada plugin criado, com o mesmo nome-base do arquivo JavaScript. Essa pasta deve ser criada quando houver o primeiro plugin documentado. Manter as instruções relevantes também na ajuda exibida pelo gerenciador de plugins.
+
+Cada documento deve conter:
+
+- Nome, arquivo, versão, objetivo e funcionalidades oferecidas.
+- Versão do RPG Maker usada na validação; não declarar compatibilidade com versões não verificadas.
+- Dependências obrigatórias e opcionais, versões verificadas e ordem de carregamento. Se não houver dependências externas, declarar explicitamente.
+- Instalação, ativação e configuração mínima de exemplo.
+- Parâmetros, valores padrão e formatos aceitos.
+- Comandos, campos de notas e outros pontos de integração, quando existirem.
+- Assets e registros de dados necessários, com formatos e convenções utilizados.
+- Relação com outros plugins, conflitos conhecidos e alterações em classes ou métodos do motor.
+- Efeitos em partidas salvas, persistência, migração e desativação, quando aplicáveis.
+- Limitações, verificações realizadas, resultados e problemas conhecidos.
+- Histórico de mudanças e instruções para reaproveitar o plugin em outro projeto.
+
+Para dependências desconhecidas ou compatibilidade ainda não testada, registrar a pendência. Não declarar ausência de conflitos sem verificação.
+
+## Critérios de conclusão
+
+A implementação e sua documentação devem descrever o mesmo comportamento. Validar o uso principal, a configuração mínima e o tratamento de dependências ausentes ou configurações inválidas quando aplicável. Verificar a execução na combinação de plugins utilizada pelo projeto.
+
+Para sustentar a reutilização, verificar o plugin em um cenário mínimo sem conteúdo exclusivo de Arena ou registrar explicitamente o que ainda impede essa validação. Atualizar a documentação junto com alterações de funcionalidade, parâmetros ou dependências.
+
+Nenhum novo plugin foi criado por esta documentação. A arquitetura e as dependências das futuras funcionalidades serão avaliadas durante sua implementação.

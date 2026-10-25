@@ -1,0 +1,79 @@
+# Pendências atuais após consolidação das decisões
+
+Atualização em 25/10/2026. Este checklist é a referência operacional de pendências e prevalece sobre listas históricas de REVISAO_DE_PRONTIDAO.md e AVALIACAO_DE_CONSISTENCIA.md. Não altera os requisitos confirmados nos documentos temáticos.
+
+## Situação
+
+É possível iniciar um protótipo técnico do M01. Estão definidos escopo, marcos, idioma, criação de personagem, exploração, encontros, combate, encerramento da demo, fontes de recuperação, respawn, proteção de quests e coleta automática.
+
+Regras não especificadas seguem o padrão compatível do RPG Maker MV 1.6.1. Isso evita reabrir decisões sobre regras nativas, mas não fornece automaticamente comportamentos para sistemas novos nem substitui a direção específica de progressão inspirada em Skyrim.
+
+## Situação atual das definições e tarefas restantes
+
+| Tema | O que ainda não está concreto | Quando fechar |
+| --- | --- | --- |
+| Evolução dos recursos | Modelo de Skyrim confirmado; documentar fórmulas e incrementos adaptados como especificação técnica | Durante a feature de progressão, sem reabrir a direção |
+| Loot | Máximo de um equipamento por loot, com pequena chance de raridade; tabelas por dificuldade confirmadas | Implementar conciliação e balancear probabilidades |
+| Livros de magia | Uso único, consumíveis, sem requisitos mínimos, drops de inimigos/baús conforme dificuldade | Cadastrar livros e tabelas; validar consumo após aprendizado |
+| Magias ambientais | Avaliar adaptação para múltiplos alvos, preservando identidade e balanceamento | Durante a feature de magia; hipóteses em ADAPTACAO_DE_MAGIAS.md |
+| Geração em runtime | Recurso opcional com decisão adiada | Avaliar inclusão nos próximos marcos; fora dos requisitos do M01 |
+| Mapa e bússola | Recursos opcionais com decisão adiada | Avaliar inclusão nos próximos marcos; fora dos requisitos do M01 |
+| Mobile | Paisagem, tela inteira e preferência por Chrome confirmados; toque será avaliado nos testes | Ajustar resolução lógica, escala e controles no Galaxy A56 |
+| Criação e arte | Cadastrar raças/gêneros e seus assets; usar prints existentes de HUD, inventário, loot e quests e solicitar novos exemplos se necessário | Antes da produção em lote e durante protótipos |
+
+Não é necessário decidir todos esses pontos numa única rodada. Implementar e documentar escolhas locais reversíveis; consultar o responsável quando uma proposta alterar o produto ou quando houver alternativas com impacto relevante.
+
+## Especificação e balanceamento durante a implementação
+
+- Técnicas: mínimo leve/pesado por tipo já confirmado. Cadastrar movimentos, custos e efeitos concretos; validar desarmado e armas simultâneas quando usados no marco.
+- Recursos: escolher a implementação técnica de Stamina, valores iniciais e limites. Sem regeneração passiva; poções e camas recuperam; cama restaura os três recursos por completo.
+- Magias: converter catálogo, níveis de aprendizado e custos, registrando referências e diferenças do original. Não importar bugs ou criar spellmaking por associação.
+- Loot: partir dos dados disponíveis da wiki, identificar valores provisórios e ajustar chances/quantidades em testes. Coleta automática já está definida.
+- Descanso: identificar camas, custos e condições de acesso nos locais do marco. Não reabrir a restauração completa confirmada.
+- Quest inicial: traduzir e especificar eventos, chave, portas e transições a partir das fontes; validar geometria do mapa, que ainda não foi conferida visualmente neste conjunto de tarefas.
+- Itens importantes: associar cada obrigação a seu evento-fonte; reativar enquanto necessário, preservando entregas/consumos legítimos e eliminando duplicações nas etapas. O mecanismo geral já está definido.
+- Respawn: persistir conclusão e saída de área; separar inimigos comuns dos específicos de quest e da reativação excepcional para recuperar item obrigatório.
+- Interface: definir composição, atalhos, tamanho de slots e descrições, usando doc/prints como referência de mecânicas e mantendo dark fantasy. Não tratar imagens estáticas como especificação completa.
+- Aparência por armadura: escolher folhas alternativas ou camadas, produzir duas variantes de teste e validar save/load antes de ampliar combinações.
+- Persistência: estabelecer IDs e dados salvos por feature; definir compatibilidade antes de distribuir versões que devam carregar saves anteriores.
+
+## Tarefas de prontidão, não novas decisões de design
+
+- Preparar mapa inicial e recursos necessários ao boot; executar o primeiro playtest.
+- Adequar Community_Basic à política de plugins desenvolvidos pelo Codex, mantendo o necessário de forma nativa ou por implementação própria validada.
+- Implementar as features do M01 e seus critérios de aceitação, sem considerar a documentação como prova de execução.
+- Revisar o diff e selecionar os documentos antes do primeiro commit; nenhuma publicação foi feita nesta tarefa.
+
+## Ajustes documentais identificados nesta revisão
+
+COMBATE.md ainda apresentava ordem/quantidade de ações como decisão aberta e citava troca de personagem ativo, apesar da regra padrão do MV e do personagem único. A orientação foi alinhada: adotar regras nativas compatíveis e deixar aliados fora do inicial.
+
+INTERFACE.md ainda pedia referências concretas de MMORPG, mas doc/prints já foi populada. A tarefa atual é selecionar e interpretar os exemplos existentes. A política de arquivos ainda descrevia o gitignore como não aplicado; foi atualizada nesta tarefa.
+
+Relatórios históricos continuam como registros de análise, sem apagar suas conclusões anteriores. A documentação de entrada aponta este checklist para evitar que problemas já resolvidos sejam apresentados novamente como bloqueios.
+
+## Git e fontes locais
+
+O .gitignore foi aplicado conforme GITIGNORE_PROPOSTO.txt. Foram criadas develop e feature/documentacao-inicial, com a feature ativa. Não houve commit nem envio remoto.
+
+As pastas doc/wiki e doc/prints continuam locais e disponíveis para consulta explícita. O índice FONTES_LOCAIS.md permanece versionável. Documentação própria, dados, scripts e assets finais não devem ser excluídos pelos padrões aplicados.
+
+
+As decisões de inclusão de geração procedural, mapa e bússola foram adiadas para os próximos marcos e não são pendências bloqueadoras do M01. As demais linhas acima representam detalhamento, pesquisa, implementação e balanceamento, não pedidos para redefinir regras confirmadas. Novas alternativas com impacto de produto devem ser tratadas quando surgirem.
+
+## Verificação final de prontidão
+
+Conclusão: não restam bloqueios de definição de direção para iniciar o protótipo M01. O encerramento no Shift Gate, criação de personagem, idioma, regras de recursos, aprendizado, coleta, proteção de itens e destino mobile estão confirmados. Geração procedural, mapa e bússola estão adiados para próximos marcos.
+
+Os itens da tabela atual são especificações por feature, não uma nova rodada obrigatória de perguntas antes de começar. A progressão deve concretizar o modelo Skyrim com adaptações; os números serão documentados e balanceados. A seleção de raças, gêneros, técnicas, itens e assets exige inventário das fontes e do conteúdo do M01, sem presumir opções novas como já aprovadas.
+
+Ainda há tarefas antes de declarar o M01 pronto: detalhar e traduzir eventos, validar visualmente a dungeon, preparar o boot, produzir assets consistentes, implementar plugins próprios necessários e testar os fluxos em desktop e no Galaxy A56. Nenhuma delas foi executada por esta análise.
+
+Foram corrigidos trechos ativos que ainda tratavam o fim da demo e a identidade da primeira quest como indefinidos, além das menções à independência irrestrita dos slots equipáveis. Empilhamento passa a seguir explicitamente o padrão compatível do motor. As listas históricas permanecem datadas e subordinadas a este checklist.
+
+O .gitignore e os documentos continuam sem commit na feature/documentacao-inicial; revisar e consolidar a feature é uma pendência de organização, não de design. Nenhum commit, merge ou envio foi realizado nesta verificação.
+
+
+## Planejamento de implementação do M01
+
+As tarefas remanescentes estão organizadas em BACKLOG_M01.md, itens M01-01 a M01-20. O checklist de pendências continua distinguindo regras confirmadas de especificação técnica; o backlog indica ordem, dependências e critérios para executar a demo.
