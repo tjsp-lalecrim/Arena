@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "status": "base de dados; não carregado pelo motor ainda",
+  "races": [
+    {
+      "id": "argonian",
+      "name": "Argoniano",
+      "province": "Black Marsh",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 2,
+      "bonus": {
+        "kind": "vigorMultiplier",
+        "value": 1.1,
+        "adaptation": "Resistência ao nadar convertida em máximo de Vigor +10%; sem sistema de natação."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    },
+    {
+      "id": "breton",
+      "name": "Bretão",
+      "province": "High Rock",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 4,
+      "bonus": {
+        "kind": "magicDamageRate",
+        "value": 0.5,
+        "adaptation": "Metade do dano mágico; não importar saving throw inexistente no MV."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    },
+    {
+      "id": "dark_elf",
+      "name": "Elfo negro",
+      "province": "Morrowind",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 4,
+      "bonus": {
+        "kind": "weaponLevelBonus",
+        "divisor": 4,
+        "weapon": "all",
+        "adaptation": "floor(nível/4) dano e pontos percentuais de acerto em armas, sem profissão."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    },
+    {
+      "id": "high_elf",
+      "name": "Alto elfo",
+      "province": "Summurset Isle",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 6,
+      "bonus": {
+        "kind": "stateImmunity",
+        "stateId": 3,
+        "adaptation": "Imunidade nativa a Paralisia."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    },
+    {
+      "id": "khajiit",
+      "name": "Khajiit",
+      "province": "Elsweyr",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 7,
+      "bonus": {
+        "kind": "agilityMultiplier",
+        "value": 1.05,
+        "adaptation": "Escalada ágil convertida em AGI +5%; escalada não implementada."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    },
+    {
+      "id": "nord",
+      "name": "Nórdico",
+      "province": "Skyrim",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 8,
+      "bonus": {
+        "kind": "elementRate",
+        "elementId": 3,
+        "value": 0.5,
+        "adaptation": "Metade do dano de frio; sem saving throw adicional."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    },
+    {
+      "id": "redguard",
+      "name": "Redguard",
+      "province": "Hammerfell",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 9,
+      "bonus": {
+        "kind": "weaponLevelBonus",
+        "divisor": 3,
+        "weapon": "melee",
+        "adaptation": "floor(nível/3) dano e pontos percentuais de acerto corpo a corpo."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    },
+    {
+      "id": "wood_elf",
+      "name": "Elfo da floresta",
+      "province": "Valenwood",
+      "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "page": 10,
+      "bonus": {
+        "kind": "weaponLevelBonus",
+        "divisor": 3,
+        "weapon": "bow",
+        "adaptation": "floor(nível/3) dano e pontos percentuais de acerto com arcos; nenhum arco cadastrado nesta base."
+      },
+      "applied": false,
+      "visuals": {
+        "male": null,
+        "female": null
+      }
+    }
+  ],
+  "genders": [
+    {
+      "id": "male",
+      "name": "Masculino"
+    },
+    {
+      "id": "female",
+      "name": "Feminino"
+    }
+  ],
+  "notes": "Valores adaptados provisórios. Identidades e bônus aplicados em M01-07/08. Aparência em M01-06/12."
+}

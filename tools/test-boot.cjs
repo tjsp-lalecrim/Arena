@@ -37,6 +37,28 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         await page.waitForFunction(() => ! $gamePlayer.isTransferring());
         await page.waitForTimeout(500);
         assert.equal(await page.evaluate(() => $gameMap.mapId()), 1);
+        // Native MV integration: records must be usable without a racial/profession lock.
+        var nativeIntegration = null;
+        if (await page.evaluate(() => $dataWeapons[2] && $dataWeapons[2].name === 'Espada curta')) {
+            const native = await page.evaluate(() => {
+                var actor = new Game_Actor(1);
+                var free = [$dataWeapons[1], $dataWeapons[2], $dataArmors[1], $dataArmors[2]]
+                    .every(function(item) { return actor.canEquip(item); });
+                actor.forceChangeEquip(0, $dataWeapons[1]);
+                actor.forceChangeEquip(3, $dataArmors[2]);
+                actor.setHp(10);
+                var action = new Game_Action(actor);
+                action.setItem(2);
+                action.apply(actor);
+                var healed = actor.hp;
+                action.setItem(5);
+                action.apply(actor);
+                return { free: free, weapon: actor.weapons()[0].id, armor: actor.armors()[0].id,
+                    healed: healed, learned: actor.isLearnedSkill(9), duplicateBookValid: action.testApply(actor) };
+            });
+            assert.deepEqual(native, { free: true, weapon: 1, armor: 2, healed: 60, learned: true, duplicateBookValid: false });
+            nativeIntegration = native;
+        }
         const start = await page.evaluate(() => [$gamePlayer.x, $gamePlayer.y]);
         await key('ArrowRight');
         assert.deepEqual(await page.evaluate(() => [$gamePlayer.x, $gamePlayer.y]), [start[0] + 1, start[1]]);
@@ -78,7 +100,7 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         const result = {
             browser: await browser.version(), viewport: '1100x800', renderer: await page.evaluate(() => Graphics.isWebGL() ? 'WebGL' : 'Canvas'),
             checks: ['title', 'new-game', 'MV-1.6.1', 'runtime-config', 'grid-movement', 'event-message', 'menu', 'native-save', 'native-load-position', 'wall-collision', 'no-browser-errors'],
-            errors, mobile: 'not tested', screenshots: ['tmp/boot-menu.png', 'tmp/boot-map.png']
+            nativeIntegration, errors, mobile: 'not tested', screenshots: ['tmp/boot-menu.png', 'tmp/boot-map.png']
         };
         fs.writeFileSync(path.join('tmp', 'boot-result.json'), JSON.stringify(result, null, 2));
         console.log(JSON.stringify(result, null, 2));
