@@ -63,3 +63,7 @@ M01-04 pode concluir o banco mínimo sem afirmar M01-07/08/09/10/12/13 prontos. 
 ## Estado próprio implementado em M01-05
 
 Plugins MV_StateStore e Arena_Persistence guardam contratos sem duplicar nome, inventário, equipamentos, magias, HP/MP, máximos nativos, nível ou EXP. Recursos próprios iniciam vazios; exemplo de Vigor no teste não é balanceamento nem mecânica M01-08. Identidade racial/gênero/visual inicia null. Aparência equipada será derivada, não snapshot visual salvo. MQ01 inicia etapa 0; fonte lógica MQ01.ruby-key aponta para item 1 nas etapas 10/20, sem evento de mapa ativado. Nenhum ID do banco foi alterado. IDs de inimigos/áreas nos testes são técnicos e não definem o mapa final. Contratos/API e limites em PERSISTENCIA_M01.md.
+
+## Acréscimos da amostra M01-06
+
+Map002 e Tileset2 são exclusivamente técnicos. B tem tile0 transparente (flag16), tile1 piso passável (flag0), tile2 parede bloqueada (flag15). Nenhuma tabela de personagem/itens/inimigos foi renumerada ou alterada. Os ícones da galeria não são ainda ícones do banco. Map001 e início padrão preservados. Imagens nativas do ator são atribuídas somente na entrada do mapa de amostra e limpas no evento de retorno; contratos próprios não recebem raça/visual obrigatório por essa visualização. Formatos em doc/arte/AMOSTRA_M01_06.md.

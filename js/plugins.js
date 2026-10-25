@@ -6,5 +6,6 @@ var $plugins =
  {"name":"Arena_Runtime","status":true,"description":"v0.1.0 Configuração básica","parameters":{"CacheMegapixels":"20","Width":"816","Height":"624"}},
  {"name":"Arena_TechnicalPreview","status":true,"description":"v0.1.0 Laboratório sem arte final","parameters":{}},
  {"name":"MV_StateStore","status":true,"description":"v0.1.0 Estado JSON versionado reutilizável","parameters":{}},
- {"name":"Arena_Persistence","status":true,"description":"v0.1.0 Contratos persistentes de Arena","parameters":{}}
+ {"name":"Arena_Persistence","status":true,"description":"v0.1.0 Contratos persistentes de Arena","parameters":{}},
+ {"name":"Arena_ArtPreview","status":true,"description":"v0.1.0 Amostra artística em mapa técnico","parameters":{"PreviewMap":"2"}}
 ];
