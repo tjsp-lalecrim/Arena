@@ -4,5 +4,7 @@ var $plugins =
 [
  {"name":"Community_Basic","status":false,"description":"Referência original preservada; substituída por Arena_Runtime.","parameters":{"cacheLimit":"20","screenWidth":"816","screenHeight":"624","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"auto","alwaysDash":"off"}},
  {"name":"Arena_Runtime","status":true,"description":"v0.1.0 Configuração básica","parameters":{"CacheMegapixels":"20","Width":"816","Height":"624"}},
- {"name":"Arena_TechnicalPreview","status":true,"description":"v0.1.0 Laboratório sem arte final","parameters":{}}
+ {"name":"Arena_TechnicalPreview","status":true,"description":"v0.1.0 Laboratório sem arte final","parameters":{}},
+ {"name":"MV_StateStore","status":true,"description":"v0.1.0 Estado JSON versionado reutilizável","parameters":{}},
+ {"name":"Arena_Persistence","status":true,"description":"v0.1.0 Contratos persistentes de Arena","parameters":{}}
 ];
