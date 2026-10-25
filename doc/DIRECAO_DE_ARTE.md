@@ -1,6 +1,6 @@
 # Direção de arte e padrão de geração
 
-Versão 1.0. Direção estabelecida para orientar a produção; exemplos visuais ainda precisam ser gerados e validados dentro do jogo. Este guia não afirma que já exista uma biblioteca aprovada de assets.
+Versão 1.1 — revisão de identidade após rejeição estética da amostra M01-06 v0.1. Os testes de formatos e execução continuam válidos como evidência técnica, mas a amostra anterior não é referência artística aprovada. M01-06 permanece em revisão até aprovação estética do responsável.
 
 ## Identidade visual
 
@@ -156,3 +156,15 @@ Usar nomes descritivos e estáveis, por exemplo `arena_dungeon_pedra_parede_v01.
 ## Áudio
 
 Este guia padroniza os assets visuais. Não gerar vozes. Música e efeitos devem reforçar a mesma atmosfera, mas sua direção sonora ainda será especificada; não presumir que a paleta visual defina instrumentos ou composição musical.
+
+## Identidade reconhecível de Arena — refinamento 1.1
+
+Dark fantasy é tratamento, não substituição da identidade de Arena por fantasia medieval genérica. Preservar silhuetas, proporções, materiais e sinais arquitetônicos reconhecíveis nas referências originais; não adotar pixel art/baixa resolução automaticamente. Prints imperiais fornecidos pelo responsável devem ser examinados antes de gerar e efetivamente anexados ou descritos com rastreio explícito. Logos de vídeo, numeração, HUD, textos sobrepostos, armas/mãos do jogador e rotas desenhadas no mapa não são arquitetura/textura.
+
+Dungeon: piso de grandes lajes planas, sujas, marrons/ardósia com juntas largas, distinto das paredes de grandes blocos retangulares cinza-violeta em fiadas. Escala coerente com cela/corredor, poucas pedras por tile; não miniaturizar alvenaria em mosaico nem aplicar o mesmo ruído em todas as superfícies. Grades e portas retangulares, correntes grossas com argolas, nichos elevados e vestígios de prisão são marcadores; usar os confirmados para cada área. Frio, escuro e opressivo, mas com piso/passagens legíveis. Converter câmera em primeira pessoa para corte superior ortográfico sem isometria, mantendo material e função; não desenhar teto que oculte o espaço de exploração.
+
+Rato: corpo pesado arqueado, cabeça alongada baixa, focinho/dentes expostos, patas dianteiras robustas e expressão hostil conforme rat.png e vistas decodificadas. Evitar rato naturalista dócil de olhos grandes e redondos. Perfil lateral para Side View, continuidade entre quadros e leitura real96×64/escala testada. Estudos de preparação/bote/recuperação são apenas trechos, não uma animação completa de combate; ausência de dano/morte ou baixa variação deve permanecer declarada.
+
+Ilustrações narrativas reutilizáveis: NÃO mostrar o personagem do jogador, mãos, braços, silhuetas, sombras corporais ou reflexos que fixem raça, gênero ou equipamento. Usar ambientes/objetos/Ria/personagens narrativos necessários. Ria deve remeter à referência: aparição azul-fria, cabelo longo escuro e manto/tecido claro luminoso. Braços de Ria não são braços do protagonista, mas devem estar inequivocamente ligados à aparição. A regra não elimina sprites/retratos próprios da criação de personagem. A ilustração anterior com prisioneira bretã fica rejeitada para uso narrativo reutilizável.
+
+Aprovação estética do responsável é agora requisito explícito de fechamento desta revisão M01-06, separado dos testes técnicos. Conservar versões anteriores para comparação; não usá-las como imagem de estilo anexada aos novos prompts. Nenhuma produção em lote antes dessa aprovação.

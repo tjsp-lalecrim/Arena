@@ -4,7 +4,7 @@
 
 Entregar uma demo jogável em Português Brasileiro: criar o personagem, acompanhar a introdução, explorar Imperial Dungeons e encerrar ao alcançar o Shift Gate. Este backlog detalha as decisões de DEMO_INICIAL.md, sem ampliar o marco para cidades ou quests posteriores.
 
-Estado de execução e evidências em VALIDACAO_M01.md. M01-01, M01-02, M01-04, M01-05 e M01-06 possuem evidências registradas em 25/10/2026. M01-03 está em validação parcial de autoria: abertura após a correção confirmada pelo responsável; gerenciador e salvamento/reabertura permanecem pendentes. Demais itens permanecem a fazer até evidência específica. A documentação existente e o .gitignore são insumos já preparados; não comprovam implementação do jogo. Não há estimativas de esforço ou datas definidas.
+Estado de execução e evidências em VALIDACAO_M01.md. M01-01, M01-02, M01-04 e M01-05 possuem evidências registradas em 25/10/2026. M01-03 está em validação parcial de autoria: abertura após a correção confirmada pelo responsável; gerenciador e salvamento/reabertura permanecem pendentes. Demais itens permanecem a fazer até evidência específica. A documentação existente e o .gitignore são insumos já preparados; não comprovam implementação do jogo. Não há estimativas de esforço ou datas definidas.
 
 P0 indica base necessária para começar e integrar; P1 indica requisito de conclusão da demo, não conteúdo opcional. Sistemas novos devem ser implementados em plugins desenvolvidos pelo Codex quando o motor nativo não atender, com documentação e configuração reutilizável conforme PLUGINS.md.
 
@@ -108,7 +108,7 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura confirmada manualmente pelo responsável; gerenciador e salvamento/reabertura no editor pendentes; ver VALIDACAO_M01.md |
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
 | M01-05 | Concluído | Contratos/API v1, save/load nativo, save gerado pela composição anterior, campos ausentes, recibos e isolamento; VALIDACAO_M01.md e PERSISTENCIA_M01.md |
-| M01-06 | Concluído (amostra desktop) | Seis categorias + retrato gerados por IA, Map002 separado, alpha/escala/animação e save/load; doc/arte/AMOSTRA_M01_06.md e evidências. Editor/ aparelho pendentes |
+| M01-06 | Em revisão estética | Responsável rejeitou a direção da amostra v0.1; formatos técnicos não equivalem a aprovação. Rodada reduzida de dungeon/rato/ilustração, sem protagonista, aguardando aprovação |
 | M01-07 a M01-20 | A fazer | Amostra não comprova criação, aplicação racial, Vigor em combate ou campanha |
 
-M01-05 integrado em develop. M01-06 concluiu a amostra desta rodada em feature/m01-amostra-visual, publicada para revisão sem merge automático. A conferência de autoria no editor continua explícita; a arte não autoriza produção em lote nem comprova criação de personagem/percurso até o Shift Gate. Próximas features seguem as dependências, a partir de M01-07/M01-08.
+M01-05 integrado em develop. M01-06 foi reaberto após rejeição estética. A amostra anterior em feature/m01-amostra-visual permanece histórica, sem aprovação de estilo ou merge automático. Não avançar para produção em lote. A conferência de autoria no editor continua explícita; a arte não autoriza produção em lote nem comprova criação de personagem/percurso até o Shift Gate. Próximas features seguem as dependências, a partir de M01-07/M01-08.

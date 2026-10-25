@@ -1,3 +1,5 @@
+> Estado atual: **rejeitada esteticamente pelo responsável**. Registro histórico v0.1; execução técnica não comprova identidade Arena/TES nem aprovação. A imagem com protagonista não atende à regra narrativa 1.1.
+
 # Amostra artística M01-06 — v0.1
 
 Direção DIRECAO_DE_ARTE.md 1.0. Ferramenta image_gen.imagegen, geração/edição por IA; modelo/seed não expostos. Prompts completos, transparência solicitada e imagens efetivamente anexadas em prompts-m01-06.json. Mestres autorais selecionados em art/masters/, fora dos diretórios carregados; dimensões reais e SHA-256 de mestres/exportações em exportacoes-m01-06.json. Nenhuma imagem externa da wiki/prints foi copiada para os assets.
