@@ -67,3 +67,7 @@ Plugins MV_StateStore e Arena_Persistence guardam contratos sem duplicar nome, i
 ## Acréscimos da amostra M01-06
 
 Map002 e Tileset2 são exclusivamente técnicos. B tem tile0 transparente (flag16), tile1 piso passável (flag0), tile2 parede bloqueada (flag15). Nenhuma tabela de personagem/itens/inimigos foi renumerada ou alterada. Os ícones da galeria não são ainda ícones do banco. Map001 e início padrão preservados. Imagens nativas do ator são atribuídas somente na entrada do mapa de amostra e limpas no evento de retorno; contratos próprios não recebem raça/visual obrigatório por essa visualização. Formatos em doc/arte/AMOSTRA_M01_06.md.
+
+## Dados da galeria R04
+
+Map003/tileset3 reservados para validação visual. Map001 e002 preservados. Folha B Arena_Prison_R04: tile0 transparente/flag16; pisos1,2,9,10 passáveis/flag0; paredes4,5,12,13 bloqueadas/flag15. O MV divide o B em metades de8 colunas: a segunda linha usa +8, não +16. `ArenaArtSamples.json` separa os perfis visuais e sequências da lógica do plugin. Dados derivados de animação não são persistidos; HP/inventário/imagens continuam nativos e contratos próprios inalterados. Não houve renumeração de itens, atores ou quests.

@@ -53,3 +53,5 @@ Os critérios acima orientam as features. Os plugins e evidências implementados
 ## Implementação M01-05
 
 MV_StateStore 0.1.0 é o núcleo reutilizável sem conteúdo Arena; Arena_Persistence 0.1.0 é a camada de contratos/IDs específica do jogo. Ambos são próprios e documentados em doc/plugins/. Carregar o núcleo antes do consumidor, após os plugins atuais. Ausência da dependência gera erro explícito. js/plugins.js conserva a estrutura canônica do editor; Community_Basic permanece off. Os testes no navegador não confirmam gerenciador/salvamento no editor após a inclusão dos novos plugins.
+
+Atualização M01-06 R04: Arena_ArtPreview0.2.0 adiciona galeria Map003 mantendo histórica Map002, carrega perfis de conteúdo em ArenaArtSamples.json e usa rato/Ria aprovados. Documentação de parâmetros, ordem, persistência e limites em `plugins/Arena_ArtPreview.md`; estado e evidências em `arte/INTEGRACAO_R04.md`. Sem plugins externos ou alterações internas no MV.

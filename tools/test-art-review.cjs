@@ -24,7 +24,7 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         assert.equal(await page.locator('canvas').evaluate(c => c.toDataURL()), paused, 'pause freezes frame');
         assert.equal(await page.locator('canvas').evaluate(c =>
             c.getContext('2d').getImageData(0, 0, 96, 64).data.some((x, i) => i % 4 === 3 && x > 0)), true);
-        await page.screenshot({ path: 'doc/evidencias/m01-06-revisao-r02-browser.png', fullPage: true });
+        await page.screenshot({ path: 'doc/evidencias/m01-06-r04-visor-browser.png', fullPage: true });
         assert.deepEqual(errors, []);
         console.log('PASS: 1:1 dimensions, four rendered frames, stable pause, zero errors/404; no saves or engine.');
     } finally {

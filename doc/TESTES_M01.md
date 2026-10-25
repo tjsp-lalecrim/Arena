@@ -41,3 +41,7 @@ Título → Amostra visual abre Map002 sem alterar o início/laboratório origin
 ## Revisão visual isolada R02/R03
 
 Abrir `/tools/art-review.html` no servidor local, zoom 100%. Conferir dungeon 576×480 com piso/parede distintos; rato 96×64 com alerta, preparação, bote e recuperação (botão pausa); Ria 768×512 sem protagonista. Comparar às fontes e versões anteriores conforme `arte/REVISAO_IDENTIDADE_R02.md`. Não é mapa jogável ou combate. Rodar `tools/test-art-review.cjs` com Playwright e Chrome instalado. Aprovação estética do responsável é requisito separado dos testes de carregamento e formato; M01-06 continua em revisão. Testes no editor e A56 não foram executados nesta rodada.
+
+## Galeria R04
+
+Título > Validação visual R04 abre Map003; Enter diante de Ria(4,9), cela(7,9), saída(1,9). Teste `tools/test-art-integration.cjs` cobre mapa/tileset, quatro quadros do rato, colisão, save/load isolado, ilustrações e retorno sem MQ01. `tools/test-art-viewport.cjs` é somente pré-teste de viewport Android genérico no desktop, não teste Galaxy. Resultados em `doc/evidencias/m01-06-r04-*.json`. Matriz de critérios, roteiro de editor e aparelho: `arte/INTEGRACAO_R04.md`. Direção aprovada é evidência separada dos testes e não conclui M01-06.

@@ -117,3 +117,15 @@ O responsável rejeitou a identidade visual anterior. **M01-06 em revisão; não
 Rodada pequena: dungeon R02, rato R02 com correção R03 e Ria R02. Referências visuais inspecionadas e consulta decodificada à instalação, com limitações de associação documentadas em `arte/REVISAO_IDENTIDADE_R02.md`. Anteriores preservados. Dungeon ainda tem perspectiva convergente; rato é trecho de bote, não combate completo. Sem produção em lote nem promoção da rodada rejeitada.
 
 Visor isolado `tools/art-review.html`: Chrome desktop, imagens 1:1, carregamento, animação e pausa sem erros/404. Teste `tools/test-art-review.cjs`. Screenshot `doc/evidencias/m01-06-revisao-r02-browser.png`. Testes de persistência: 27 verificações aprovadas em contexto descartável, sem saves pessoais; testes de estado, runtime e banco mínimo aprovados. A evidência de navegador não comprova editor ou aparelho. Nenhum teste novo no editor MV ou Galaxy A56 nesta rodada. Aprovação estética, mapa ortogonal final e animação completa permanecem pendentes.
+
+## Aprovação de direção e integração R04 — 25/10/2026
+
+Responsável aprovou a direção da dungeon R02, rato R03 e Ria espectral R02 após `4faf3b2`; arquivos/dimensões/hashes exatos em `arte/APROVACAO_DIRECAO_R02_R03.json`. Essa evidência manual supersede a espera de aprovação da revisão anterior, mas não amplia a aprovação aos assets antigos ou a todos os testes técnicos. M01-06: **em validação técnica, não concluído**.
+
+Galeria nova Map003/tileset3, título “Validação visual R04”, mantém Map001/002 e anteriores. Ria/rato aprovados reutilizados sem regeneração; uma amostra de superfícies ortogonais gerada com a dungeon aprovada como referência. Documentação, prompt, avaliação e matriz das categorias em `arte/INTEGRACAO_R04.md`.
+
+Executados: `test-art-integration`, `test-art-preview`, `test-state-store`, `test-runtime`, `validate-data`, `test-persistence` (27 verificações) e `test-boot`; salvar/carregar em contexto descartável, sem saves pessoais; zero erros/arquivos faltantes. Auditoria de 27 registros e seis referências aprovadas inalteradas. Screenshots/resultados R04 em `doc/evidencias/`.
+
+Pré-teste de viewport Android genérico no Chrome desktop:916×412, canvas538,77×412; sem extravasar. Texto de painel equivale a11,22px CSS, pequeno e pendente de leitura física. **Não testado no Galaxy A56.** Editor/gerenciador/salvar projeto/reabrir/playtest da versão R04 não executados. Não transferir evidências manuais de versões anteriores para esta integração.
+
+Tentativa de autoria pelo Codex: o executável instalado abriu janela com título “Arena - RPG Maker MV”, mas `get_window_state` falhou duas vezes (incluindo recuperação com seleção renovada) com `window capture timed out: timed out waiting on channel`. Sem captura verificável, não foram feitas ações de gerenciador, salvamento/reabertura ou playtest. A janela/título isolados não comprovam leitura completa do projeto. Essas verificações continuam pendentes.

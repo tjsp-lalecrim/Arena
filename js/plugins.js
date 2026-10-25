@@ -7,5 +7,5 @@ var $plugins =
  {"name":"Arena_TechnicalPreview","status":true,"description":"v0.1.0 Laboratório sem arte final","parameters":{}},
  {"name":"MV_StateStore","status":true,"description":"v0.1.0 Estado JSON versionado reutilizável","parameters":{}},
  {"name":"Arena_Persistence","status":true,"description":"v0.1.0 Contratos persistentes de Arena","parameters":{}},
- {"name":"Arena_ArtPreview","status":true,"description":"v0.1.0 Amostra artística em mapa técnico","parameters":{"PreviewMap":"2"}}
+ {"name":"Arena_ArtPreview","status":true,"description":"v0.2.0 Galerias técnicas com perfis de arte","parameters":{"PreviewMap":"2"}}
 ];

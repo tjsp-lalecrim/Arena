@@ -167,7 +167,7 @@ Rato: corpo pesado arqueado, cabeça alongada baixa, focinho/dentes expostos, pa
 
 Ilustrações narrativas reutilizáveis: NÃO mostrar o personagem do jogador, mãos, braços, silhuetas, sombras corporais ou reflexos que fixem raça, gênero ou equipamento. Usar ambientes/objetos/Ria/personagens narrativos necessários. Ria deve remeter à referência: aparição azul-fria, cabelo longo escuro e manto/tecido claro luminoso. Braços de Ria não são braços do protagonista, mas devem estar inequivocamente ligados à aparição. A regra não elimina sprites/retratos próprios da criação de personagem. A ilustração anterior com prisioneira bretã fica rejeitada para uso narrativo reutilizável.
 
-Aprovação estética do responsável é agora requisito explícito de fechamento desta revisão M01-06, separado dos testes técnicos. Conservar versões anteriores para comparação; não usá-las como imagem de estilo anexada aos novos prompts. Nenhuma produção em lote antes dessa aprovação.
+Aprovação estética do responsável é agora requisito explícito de fechamento desta revisão M01-06, separado dos testes técnicos. Conservar versões anteriores para comparação; não usar a amostra rejeitada v0.1 como imagem de estilo anexada aos novos prompts. As referências aprovadas R02/R03 são o padrão de continuidade atual. Nenhuma produção em lote antes dessa aprovação.
 
 ## Continuidade após aprovação R02/R03
 
