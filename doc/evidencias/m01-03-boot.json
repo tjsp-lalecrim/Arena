@@ -1,0 +1,24 @@
+{
+  "browser": "156.0.8078.47",
+  "viewport": "1100x800",
+  "renderer": "WebGL",
+  "checks": [
+    "title",
+    "new-game",
+    "MV-1.6.1",
+    "runtime-config",
+    "grid-movement",
+    "event-message",
+    "menu",
+    "native-save",
+    "native-load-position",
+    "wall-collision",
+    "no-browser-errors"
+  ],
+  "errors": [],
+  "mobile": "not tested",
+  "screenshots": [
+    "tmp/boot-menu.png",
+    "tmp/boot-map.png"
+  ]
+}

@@ -77,3 +77,7 @@ O .gitignore e os documentos continuam sem commit na feature/documentacao-inicia
 ## Planejamento de implementação do M01
 
 As tarefas remanescentes estão organizadas em BACKLOG_M01.md, itens M01-01 a M01-20. O checklist de pendências continua distinguindo regras confirmadas de especificação técnica; o backlog indica ordem, dependências e critérios para executar a demo.
+
+## Execução iniciada em 25/10/2026
+
+A situação de Git descrita acima é histórica: baseline documental consolidada em 29fc22b e integrada em develop; MQ01 especificada em 29f44c3. O laboratório M01-03 passou em Chrome desktop. Consultar VALIDACAO_M01.md para estado por item e limites; este registro não declara a demo pronta.
