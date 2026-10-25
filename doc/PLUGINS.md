@@ -48,4 +48,8 @@ A implementação e sua documentação devem descrever o mesmo comportamento. Va
 
 Para sustentar a reutilização, verificar o plugin em um cenário mínimo sem conteúdo exclusivo de Arena ou registrar explicitamente o que ainda impede essa validação. Atualizar a documentação junto com alterações de funcionalidade, parâmetros ou dependências.
 
-Nenhum novo plugin foi criado por esta documentação. A arquitetura e as dependências das futuras funcionalidades serão avaliadas durante sua implementação.
+Os critérios acima orientam as features. Os plugins e evidências implementados são documentados em doc/plugins/ e relacionados a seguir.
+
+## Implementação M01-05
+
+MV_StateStore 0.1.0 é o núcleo reutilizável sem conteúdo Arena; Arena_Persistence 0.1.0 é a camada de contratos/IDs específica do jogo. Ambos são próprios e documentados em doc/plugins/. Carregar o núcleo antes do consumidor, após os plugins atuais. Ausência da dependência gera erro explícito. js/plugins.js conserva a estrutura canônica do editor; Community_Basic permanece off. Os testes no navegador não confirmam gerenciador/salvamento no editor após a inclusão dos novos plugins.

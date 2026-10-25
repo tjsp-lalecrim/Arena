@@ -4,7 +4,7 @@
 
 Entregar uma demo jogável em Português Brasileiro: criar o personagem, acompanhar a introdução, explorar Imperial Dungeons e encerrar ao alcançar o Shift Gate. Este backlog detalha as decisões de DEMO_INICIAL.md, sem ampliar o marco para cidades ou quests posteriores.
 
-Estado de execução e evidências em VALIDACAO_M01.md. M01-01, M01-02 e M01-04 possuem evidências registradas em 25/10/2026. M01-03 está em validação de compatibilidade com o editor; os testes anteriores comprovam somente execução no navegador. Demais itens permanecem a fazer até evidência específica. A documentação existente e o .gitignore são insumos já preparados; não comprovam implementação do jogo. Não há estimativas de esforço ou datas definidas.
+Estado de execução e evidências em VALIDACAO_M01.md. M01-01, M01-02, M01-04 e M01-05 possuem evidências registradas em 25/10/2026. M01-03 está em validação parcial de autoria: abertura após a correção confirmada pelo responsável; gerenciador e salvamento/reabertura permanecem pendentes. Demais itens permanecem a fazer até evidência específica. A documentação existente e o .gitignore são insumos já preparados; não comprovam implementação do jogo. Não há estimativas de esforço ou datas definidas.
 
 P0 indica base necessária para começar e integrar; P1 indica requisito de conclusão da demo, não conteúdo opcional. Sistemas novos devem ser implementados em plugins desenvolvidos pelo Codex quando o motor nativo não atender, com documentação e configuração reutilizável conforme PLUGINS.md.
 
@@ -107,6 +107,7 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | M01-02 | Concluído | MQ01_ESPECIFICACAO.md; textos, eventos e mapas examinados; commit 29f44c3 |
 | M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura confirmada manualmente pelo responsável; gerenciador e salvamento/reabertura no editor pendentes; ver VALIDACAO_M01.md |
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
-| M01-05 a M01-20 | A fazer | Cadastro não comprova aplicação racial, Vigor, arte, combate ou campanha |
+| M01-05 | Concluído | Contratos/API v1, save/load nativo, save gerado pela composição anterior, campos ausentes, recibos e isolamento; VALIDACAO_M01.md e PERSISTENCIA_M01.md |
+| M01-06 a M01-20 | A fazer | Persistência não comprova aplicação racial, Vigor em combate, arte ou campanha |
 
-Próxima dependência: M01-05, contratos persistentes. M01-06 depende da especificação/base e da validação de autoria pendente e deve validar os primeiros assets IA antes da produção em lote. O laboratório atual não substitui criação de personagem nem o percurso até o Shift Gate.
+M01-05 concluído no escopo de persistência; evidências e limites registrados, feature revisada e integração em develop autorizada nesta rodada. Próxima entrega funcional: M01-06, primeiro conjunto visual. M01-06 depende da especificação/base e da validação de autoria pendente e deve validar os primeiros assets IA antes da produção em lote. O laboratório atual não substitui criação de personagem nem o percurso até o Shift Gate.
