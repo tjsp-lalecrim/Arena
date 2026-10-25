@@ -1,0 +1,27 @@
+# Criação e evolução do personagem
+
+## Criação confirmada
+
+A nova partida permitirá escolher nome, raça e gênero. Os assets serão predefinidos para cada combinação de raça e gênero; não há editor livre de rosto ou corpo previsto por esta decisão. A apresentação inicial é em Português Brasileiro.
+
+Registrar as opções de raça e gênero disponibilizadas e o conjunto visual associado antes de produzir assets. Não inventar uma lista de opções como se já estivesse aprovada. Cada combinação implementada deve ter aparência-base consistente entre mapa e combate, respeitando DIRECAO_DE_ARTE.md e a mudança visual por armadura equipada.
+
+Aplicar somente os bônus raciais adaptados, sem importar classes profissionais de Arena ou suas restrições de equipamento. Não atribuir bônus mecânicos por gênero sem decisão específica. Salvar e carregar deve preservar nome, raça, gênero, equipamentos e aparência correspondente.
+
+## Vida, mana e Stamina
+
+A progressão de vida, mana e Stamina deve seguir o modelo de Skyrim com as adaptações necessárias ao projeto. Tratar esse modelo como base confirmada, não como escolha ainda aberta entre o crescimento padrão do MV e Skyrim. As fórmulas e os valores adaptados serão registrados e balanceados na implementação, sem importar automaticamente regeneração, peso de inventário ou outros sistemas.
+
+Na feature de progressão, propor e registrar uma regra concreta para crescimento dos máximos dos três recursos e sua relação com o nível do personagem, priorizando balanceamento. Não substituir essa direção pelo crescimento automático padrão do MV sem verificar sua adequação. Também não importar todos os sistemas de Skyrim por associação.
+
+As regras já confirmadas prevalecem: Stamina é gasta somente em combate por técnicas, sem regeneração passiva; recupera por poções ou camas. Inicialmente dormir em cama restaura toda a vida, mana e Stamina. A referência de progressão não autoriza regeneração passiva de Stamina.
+
+## Critérios de validação
+
+- É possível iniciar a demo escolhendo nome, raça e gênero e receber os assets predefinidos correspondentes.
+- A raça aplica os bônus documentados sem bloquear equipamentos ou criar profissão.
+- Trocar armadura preserva a identidade da combinação escolhida.
+- Salvar/carregar mantém escolhas e recursos.
+- A evolução dos máximos segue a regra de progressão aprovada na feature, sem conceder aumentos repetidos por reentrada ou carregamento.
+
+As escolhas de criação estão confirmadas; o catálogo visual e a regra numérica de progressão serão especificados durante o desenvolvimento.
