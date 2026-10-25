@@ -1,6 +1,6 @@
 # Direção de arte e padrão de geração
 
-Versão 1.1 — revisão de identidade após rejeição estética da amostra M01-06 v0.1. Os testes de formatos e execução continuam válidos como evidência técnica, mas a amostra anterior não é referência artística aprovada. M01-06 permanece em revisão até aprovação estética do responsável.
+Versão 1.2 — direção R02/R03 aprovada pelo responsável em 25/10/2026. A aprovação cobre a identidade da dungeon R02, rato R03 e Ria espectral R02, identificados por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. A rodada v0.1 continua histórica e rejeitada; M01-06 permanece em validação técnica, sem conclusão automática.
 
 ## Identidade visual
 
@@ -168,3 +168,7 @@ Rato: corpo pesado arqueado, cabeça alongada baixa, focinho/dentes expostos, pa
 Ilustrações narrativas reutilizáveis: NÃO mostrar o personagem do jogador, mãos, braços, silhuetas, sombras corporais ou reflexos que fixem raça, gênero ou equipamento. Usar ambientes/objetos/Ria/personagens narrativos necessários. Ria deve remeter à referência: aparição azul-fria, cabelo longo escuro e manto/tecido claro luminoso. Braços de Ria não são braços do protagonista, mas devem estar inequivocamente ligados à aparição. A regra não elimina sprites/retratos próprios da criação de personagem. A ilustração anterior com prisioneira bretã fica rejeitada para uso narrativo reutilizável.
 
 Aprovação estética do responsável é agora requisito explícito de fechamento desta revisão M01-06, separado dos testes técnicos. Conservar versões anteriores para comparação; não usá-las como imagem de estilo anexada aos novos prompts. Nenhuma produção em lote antes dessa aprovação.
+
+## Continuidade após aprovação R02/R03
+
+Usar os masters e exports identificados em `arte/APROVACAO_DIRECAO_R02_R03.json` como referências de continuidade nas gerações pertinentes. Preservar prompts e fontes. Rato R02 é intermediário; R03 é a referência principal aprovada. Novos derivados técnicos não recebem automaticamente aprovação de escala, alpha, recorte ou animação. Não regenerar imagens adequadas por conveniência. Durante a implementação dos diálogos, conferir composição, objetos e contexto com a cena narrada e registrar qualquer necessidade concreta de alteração. A proibição do protagonista nas ilustrações permanece. Não buscar novos prints sem lacuna específica.

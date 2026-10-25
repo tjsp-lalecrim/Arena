@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-25",
+  "providedBy": "responsável, mensagem explícita nesta conversa",
+  "scope": "Aprovação da direção artística e identidade, não validação técnica integral nem conclusão de M01-06",
+  "versions": {
+    "dungeon": "R02",
+    "rat": "R03 (R02 é estudo anterior, não referência principal)",
+    "ria": "R02"
+  },
+  "records": [
+    {
+      "file": "art/masters/revisao-r02/dungeon-identidade-r02.png",
+      "size": [
+        1374,
+        1145
+      ],
+      "sha256": "7fa442a9968b19edecdb4db3cd0d25cffd2ec9518a6ead1e1df523398154857d"
+    },
+    {
+      "file": "art/masters/revisao-r02/rato-ameaca-r03.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "98e43e99f8d0942cd00347c95f4664235cde0ca04d04b4aaee8ca74d3e8a9b16"
+    },
+    {
+      "file": "art/masters/revisao-r02/ria-sem-protagonista-r02.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "00719dcb076ecc529c24c6934a9070788a034d8751ca190641af55d98f62de0a"
+    },
+    {
+      "file": "img/pictures/arena_dungeon_estudo_r02.png",
+      "size": [
+        576,
+        480
+      ],
+      "sha256": "d73c2820e8a69f2458425f85da566752b6b73c7a2784c4e4cebb4474a2e17579"
+    },
+    {
+      "file": "img/pictures/arena_ria_narrativa_r02.png",
+      "size": [
+        768,
+        512
+      ],
+      "sha256": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+    },
+    {
+      "file": "img/pictures/arena_rato_bote_r03.png",
+      "size": [
+        384,
+        64
+      ],
+      "sha256": "da8cd24d4209da4dd71901521c159b466eda0a38ecc8d0d4182bd6f4ce8a88f0"
+    }
+  ],
+  "conditions": [
+    "Preservar identidade Arena/dark fantasy e usar os arquivos como anexos de continuidade nas próximas gerações pertinentes.",
+    "Narrativa reutilizável sem protagonista, membros, silhueta, sombra, reflexo ou equipamento dele.",
+    "Revisar composição, objetos e contexto ao implementar diálogos; regenerar somente por necessidade concreta.",
+    "Escala, recortes, alpha, animações, integração MV e mobile são validações separadas."
+  ],
+  "provenance": [
+    "prompts-revisao-identidade-r02.json",
+    "prompt-correcao-rato-r03.json",
+    "exportacoes-revisao-r02.json",
+    "REVISAO_IDENTIDADE_R02.md"
+  ]
+}

@@ -1,5 +1,7 @@
 # Revisão de identidade M01-06 — R02/R03
 
+**Atualização posterior:** direção aprovada pelo responsável em 25/10/2026; arquivos e hashes em APROVACAO_DIRECAO_R02_R03.json. O texto abaixo registra a avaliação anterior à aprovação, inclusive limitações técnicas que permanecem.
+
 Data: 2026-10-25. Branch: feature/m01-amostra-visual. Direção 1.1. **Em revisão estética pelo responsável.** A rejeição da rodada anterior prevalece sobre seu antigo registro de conclusão técnica. Nenhuma produção em lote autorizada por esta revisão.
 
 ## Referências efetivamente inspecionadas
