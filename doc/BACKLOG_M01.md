@@ -105,7 +105,7 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | --- | --- | --- |
 | M01-01 | Concluído | Baseline 29fc22b, integração em develop; revisão do índice e fontes ignoradas |
 | M01-02 | Concluído | MQ01_ESPECIFICACAO.md; textos, eventos e mapas examinados; commit 29f44c3 |
-| M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura, gerenciador e salvamento/reabertura no editor pendentes; ver VALIDACAO_M01.md |
+| M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura confirmada manualmente pelo responsável; gerenciador e salvamento/reabertura no editor pendentes; ver VALIDACAO_M01.md |
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
 | M01-05 a M01-20 | A fazer | Cadastro não comprova aplicação racial, Vigor, arte, combate ou campanha |
 
