@@ -1,0 +1,52 @@
+{
+  "browser": "156.0.8078.47",
+  "viewport": "1100x800",
+  "renderer": "WebGL",
+  "checks": [
+    "title",
+    "new-game",
+    "MV-1.6.1",
+    "runtime-config",
+    "grid-movement",
+    "event-message",
+    "menu",
+    "native-save",
+    "native-load-position",
+    "wall-collision",
+    "no-browser-errors"
+  ],
+  "nativeIntegration": {
+    "free": true,
+    "weapon": 1,
+    "armor": 2,
+    "healed": 60,
+    "learned": true,
+    "duplicateBookValid": false
+  },
+  "errors": [],
+  "mobile": "not tested",
+  "screenshots": [
+    "tmp/boot-menu.png",
+    "tmp/boot-map.png"
+  ],
+  "editor": {
+    "applicationStarted": true,
+    "projectOpen": "pending",
+    "pluginManager": "pending",
+    "projectSave": "pending",
+    "projectReopen": "pending",
+    "localhostAfterEditorSave": "pending",
+    "failure": [
+      "FrameArrived timed out: timed out waiting on channel",
+      "window capture timed out: timed out waiting on channel"
+    ]
+  },
+  "fileChecks": {
+    "utf8NoBom": true,
+    "javascriptSyntax": true,
+    "canonicalHeader": true,
+    "jsonArray": true,
+    "recordsUnchanged": true,
+    "referencedPluginFilesExist": true
+  }
+}
