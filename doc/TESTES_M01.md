@@ -45,3 +45,7 @@ Abrir `/tools/art-review.html` no servidor local, zoom 100%. Conferir dungeon 57
 ## Galeria R04
 
 Título > Validação visual R04 abre Map003; Enter diante de Ria(4,9), cela(7,9), saída(1,9). Teste `tools/test-art-integration.cjs` cobre mapa/tileset, quatro quadros do rato, colisão, save/load isolado, ilustrações e retorno sem MQ01. `tools/test-art-viewport.cjs` é somente pré-teste de viewport Android genérico no desktop, não teste Galaxy. Resultados em `doc/evidencias/m01-06-r04-*.json`. Matriz de critérios, roteiro de editor e aparelho: `arte/INTEGRACAO_R04.md`. Direção aprovada é evidência separada dos testes e não conclui M01-06.
+
+## R05 — autoria e viewport
+
+`test-art-viewport.cjs` agora verifica fonte primária26px e tamanho CSS≥16 na simulação916×412, além de tocar a placa de Ria por touchscreen emulado e aguardar o percurso/abertura nativos (não inicia evento por chamada direta). Resultado/screenshot m01-06-r05-* preservam os R04. Nenhum teste físico A56. Salvar/reabrir no editor foi executado via teclado/acessibilidade com comparação semântica; conferência visual ainda pendente. Matriz e limites em `arte/FIDELIDADE_E_VALIDACAO_R05.md`. Não existe criação M01-07 para testar nesta versão.

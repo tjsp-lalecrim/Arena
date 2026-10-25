@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.2.0 Galeria técnica M01-06; não implementa combate ou criação.
+ * @plugindesc v0.2.1 Galeria técnica M01-06; não implementa combate ou criação.
  * @author Codex
  * @param PreviewMap
  * @type number
@@ -75,19 +75,21 @@
         ui.fillRect(0, 0, 816, 84, '#17191d');
         ui.fillRect(464, 84, 352, 540, '#17191d');
         ui.fillRect(0, 528, 464, 96, '#17191d');
-        ui.textColor = '#d8ccaf'; ui.fontSize = 22;
-        ui.drawText(sample.legacy ? 'ARENA • Amostra anterior (histórico)' : 'ARENA • Direção aprovada; validação R04', 16, 8, 784, 32);
-        ui.fontSize = 17;
-        ui.drawText('Bretã piloto provisória • arte IA • sem combate jogável', 16, 42, 784, 30);
-        ui.drawText('Retrato 144×144', 480, 92, 190, 28);
-        ui.drawText('Lateral 96×96', 664, 92, 144, 28);
-        ui.drawText('Mesma personagem, roupa e paleta', 480, 284, 320, 28);
-        ui.drawText('Adaga · couro · cura — 32px', 480, 366, 320, 28);
-        ui.drawText(sample.legacy ? 'Rato: respiração (histórico)' : 'Rato R03: trecho de bote 96×64', 480, 464, 320, 28);
-        ui.drawText(sample.legacy ? '0 → 1 → 2 → 1; sem batalha' : 'Alerta → preparo → bote → retorno', 480, 494, 320, 28);
-        ui.drawText('Setas / clique: mover • Esc: menu e salvar', 16, 536, 440, 28);
-        ui.drawText(sample.legacy ? 'Enter: Ria (4,9), Sair (1,9)' : 'Enter: Ria (4,9), cela (7,9), sair (1,9)', 16, 566, 440, 28);
-        ui.fontSize = 16;
+        var compact = Utils.isMobileDevice() && !sample.legacy;
+        this._artUiFontSize = compact ? 26 : 17;
+        ui.textColor = '#d8ccaf'; ui.fontSize = compact ? 28 : 22;
+        ui.drawText(sample.legacy ? 'ARENA • Amostra anterior (histórico)' : compact ? 'ARENA • Validação visual' : 'ARENA • Direção aprovada; validação R04', 16, 8, 784, 32);
+        ui.fontSize = this._artUiFontSize;
+        ui.drawText(compact ? 'Piloto provisória • sem combate jogável' : 'Bretã piloto provisória • arte IA • sem combate jogável', 16, 42, 784, 30);
+        ui.drawText(compact ? 'Retrato 144px' : 'Retrato 144×144', 480, 92, 190, 28);
+        ui.drawText(compact ? 'Perfil 96px' : 'Lateral 96×96', 664, 92, 144, 28);
+        ui.drawText(compact ? 'Mesma piloto e roupa' : 'Mesma personagem, roupa e paleta', 480, 284, 320, 28);
+        ui.drawText(compact ? 'Ícones: 32px' : 'Adaga · couro · cura — 32px', 480, 366, 320, 28);
+        ui.drawText(sample.legacy ? 'Rato: respiração (histórico)' : compact ? 'Rato R03 • bote' : 'Rato R03: trecho de bote 96×64', 480, 464, 320, 28);
+        ui.drawText(sample.legacy ? '0 → 1 → 2 → 1; sem batalha' : compact ? '4 quadros • 96×64' : 'Alerta → preparo → bote → retorno', 480, 494, 320, 28);
+        ui.drawText(compact ? 'Mover: toque nas placas' : 'Setas / clique: mover • Esc: menu e salvar', 16, 536, 440, 28);
+        ui.drawText(sample.legacy ? 'Enter: Ria (4,9), Sair (1,9)' : compact ? 'Ria · Cela · Sair' : 'Enter: Ria (4,9), cela (7,9), sair (1,9)', 16, 566, 440, 28);
+        ui.fontSize = compact ? 24 : 16;
         ui.drawText('Ria', 192, 432, 48, 28, 'center');
         ui.drawText('Sair', 48, 432, 48, 28, 'center');
         if (!sample.legacy) ui.drawText('Cela', 336, 432, 48, 28, 'center');

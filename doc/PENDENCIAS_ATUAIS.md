@@ -91,3 +91,7 @@ A amostra anterior foi rejeitada pelo responsável. R02/R03 é candidata pequena
 ## Estado atual — direção aprovada, M01-06 em validação técnica
 
 A aprovação explícita do responsável em25/10/2026 cobre dungeon R02, rato R03 e Ria R02; conferir `arte/APROVACAO_DIRECAO_R02_R03.json`. Substitui a espera estética da seção anterior. Preservar referências/prompts e não regenerar imagens adequadas. Revisar composição/objetos/contexto ao integrar diálogos, sempre sem protagonista. Map003 é a nova galeria técnica; limitações, testes e próximos passos em `arte/INTEGRACAO_R04.md`. Ainda pendentes: autoria no editor, leitura/toque no aparelho, acabamento de superfícies e formatos/estados completos de combate. Não marcar todo M01-06 concluído.
+
+## Atualização R05
+
+Autoria: gerenciador abriu e projeto foi salvo/fechado/reaberto pelo editor usando teclado/acessibilidade; serialização auditada. Conferência visual detalhada do gerenciador/Map003 e playtest continua pendente por limitação de captura/clique. Leitura da galeria mobile melhorada, testada com toque emulado; Galaxy A56 não testado. Ver `arte/FIDELIDADE_E_VALIDACAO_R05.md`. Inventário:16 combinações necessárias, uma piloto provisória, nenhum conjunto final completo; M01-07 não iniciado enquanto dependência M01-06 continuar em validação. Não repetir geração dos aprovados.

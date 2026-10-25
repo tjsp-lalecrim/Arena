@@ -24,3 +24,7 @@ Os assets/mapas anteriores permanecem disponíveis. Map001 continua início norm
 ## Evidências e limites
 
 `tools/test-art-integration.cjs`: mapa3,ratocortes0/96/192/288,movimento,colisão,save/load isolado de posição/imagens/HP/recurso,ilustrações e retorno sem avançoMQ01/erros. `test-art-preview.cjs` mantém regressão histórica. Auditoria valida dimensões/hashes/perfis/referências. Pré-teste de viewport Android genérico cabe na tela, mas texto pequeno e testes físicos pendentes. Editor/gerenciador/salvar projeto/reabrir/playtest R04 não executados. Fontes, aprovação, roteiro e matriz em `doc/arte/INTEGRACAO_R04.md`.
+
+## Atualização0.2.1 — legibilidade da galeria atual
+
+No ramo Utils.isMobileDevice e perfil não histórico: cabeçalho28px, legendas primárias26px, etiquetas24px e textos curtos. Desktop/histórico preservados; imagens e quadros sem alteração. `_artUiFontSize` é diagnóstico derivado da apresentação, não dado persistente. Teste mobile emulado valida escala CSS e toque nativo na placa Ria. Nenhuma evidência física A56 ou de combate completo. Relatório `arte/FIDELIDADE_E_VALIDACAO_R05.md` e resultados R05 em evidencias/.

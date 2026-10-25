@@ -17,15 +17,25 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
             const r = c.getBoundingClientRect(); return { x: r.x, y: r.y, width: r.width, height: r.height, viewport: [innerWidth, innerHeight] };
         });
         assert.ok(bounds.x >= 0 && bounds.y >= 0 && bounds.width <= 916 && bounds.height <= 412);
-        await page.screenshot({ path: 'doc/evidencias/m01-06-r04-viewport-paisagem.png' });
-        await page.evaluate(() => $gameMap.event(1).start());
+        const nativeFont = await page.evaluate(() => SceneManager._scene._spriteset._artUiFontSize);
+        assert.equal(nativeFont, 26);
+        assert.ok(nativeFont * bounds.width / 816 >= 16);
+        await page.screenshot({ path: 'doc/evidencias/m01-06-r05-viewport-paisagem.png' });
+        const scale = bounds.width / 816;
+        const touch = await page.context().newCDPSession(page);
+        const point = { x: bounds.x + 4.5 * 48 * scale, y: bounds.y + 9.5 * 48 * scale };
+        // MV processes a pressed touch on an update; use a human-length press,
+        // rather than a zero-duration down/up pair between two updates.
+        await touch.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [point] });
+        await page.waitForTimeout(80);
+        await touch.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
         await page.waitForFunction(() => $gameScreen.picture(1) && SceneManager._scene._messageWindow.pause && ImageManager.isReady());
-        await page.screenshot({ path: 'doc/evidencias/m01-06-r04-ria-viewport.png' });
+        await page.screenshot({ path: 'doc/evidencias/m01-06-r05-ria-viewport.png' });
         assert.deepEqual(errors, []);
         const result = { browser: await browser.version(), mode: 'Desktop Chrome mobile viewport emulation only; NOT a Galaxy A56 test', bounds,
-            estimatedPanelFontCssPx: 17 * bounds.width / 816, checks: ['canvas-fits-viewport', 'map-and-narrative-load', 'zero-missing-files'],
+            estimatedPanelFontCssPx: nativeFont * bounds.width / 816, checks: ['canvas-fits-viewport', 'map-and-narrative-load', 'emulated-touch-pathfinds-to-ria-and-opens-event', 'primary-label-font-at-least16-css-pixels', 'zero-missing-files'],
             limitations: ['Small panel text requires physical readability test', 'No physical touch, fullscreen or performance validation', 'Generic Android test user agent; no Galaxy device identity or certification'], errors };
-        fs.writeFileSync('doc/evidencias/m01-06-r04-viewport-result.json', JSON.stringify(result, null, 2));
+        fs.writeFileSync('doc/evidencias/m01-06-r05-viewport-result.json', JSON.stringify(result, null, 2));
         console.log(JSON.stringify(result, null, 2));
     } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });
