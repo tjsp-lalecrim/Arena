@@ -93,3 +93,9 @@ Imagens em doc/prints/. Os nomes abaixo foram inventariados; o conteúdo visual 
 - skyrim_quest_system.jfif
 - warcraft_hud.webp
 - warcraft_quests.webp
+
+## Consultas na implementação M01 — 25/10/2026
+
+MQ01: Imperial Dungeons pp.1–6, Main Quest pp.1–2; mapas das pp.3 e 5 examinados visualmente. Especificação/tradução em MQ01_ESPECIFICACAO.md. Banco: Races, Monsters, Base Weapons, Base Armor, Potions, The Known Spellbook e Magical Effects; páginas/conversões em DADOS_M01.md. Print skyrim_quest_system.jfif examinado para organização do diário; demais prints continuam disponíveis, sem aprovação de estilo por associação.
+
+Original: ARENA/README.TXT identifica Version 1.07 CD-ROM; Docs/Passwords.txt consultado como material histórico de proteção de cópia, sem transpor sua tabela de custos. Pastas ARENA e Docs enumeradas explicitamente. Nenhum original modificado, copiado para assets ou executado. O catálogo de instalação é referência, não dependência para boot do projeto.
