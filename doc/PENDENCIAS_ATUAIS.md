@@ -83,3 +83,7 @@ As tarefas remanescentes estão organizadas em BACKLOG_M01.md, itens M01-01 a M0
 A situação de Git descrita acima é histórica: baseline documental consolidada em 29fc22b e integrada em develop; MQ01 especificada em 29f44c3. O laboratório M01-03 passou em Chrome desktop. Consultar VALIDACAO_M01.md para estado por item e limites; este registro não declara a demo pronta.
 
 Banco mínimo M01-04 cadastrado e validado; fontes/adaptações em DADOS_M01.md. Próxima etapa M01-05: persistência própria. O estado histórico “sem commit” nos parágrafos anteriores não representa a árvore atual; consultar o Git e VALIDACAO_M01.md.
+
+## M01-06 — revisão estética prioritária
+
+A amostra anterior foi rejeitada pelo responsável. R02/R03 é candidata pequena; consultar `arte/REVISAO_IDENTIDADE_R02.md`. Não ampliar produção antes da avaliação estética. Corrigir perspectiva para exploração superior e completar estados de animação somente após validar direção. Ilustrações narrativas reutilizáveis não podem fixar identidade/equipamento do protagonista, inclusive por mãos, silhuetas ou sombras.

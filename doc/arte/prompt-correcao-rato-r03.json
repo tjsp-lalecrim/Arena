@@ -1,0 +1,15 @@
+{
+  "tool": "image_gen.imagegen",
+  "model": "não informado",
+  "artGuide": "1.1",
+  "status": "em revisão",
+  "request": {
+    "id": "rato-r03",
+    "file": "rato-ameaca-r03.png",
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\revisao-r02\\rato-ameaca-r02.png"
+    ],
+    "prompt": "Correção técnica de enquadramento, preservando EXATAMENTE a identidade, cores, acabamento, anatomia e as quatro poses deste rato ameaçador. A última ponta do focinho encosta na borda e o atlas está apertado. Reorganize em grade2x2 (dois quadros em cima, dois embaixo), canvas1536x1024 transparente real, células iguais768x512 SEM LINHAS. Cada rato INTEIRO com cauda, focinho, dentes e unhas deve caber nos CENTRAIS70% da largura de cada célula, MARGEM mínima100px em cada lado, sem tocar nenhuma borda ou vizinho. Mesma escala em todos, patas apoiadas em y400 dentro de cada célula. Ordem de leitura: superior esquerda alerta, superior direita preparação comprimida, inferior esquerda bote/mordida com maxilar aberto e antepatas avançadas, inferior direita recuperação. Não redesenhar como rato dócil nem mudar pelagem ou olhar vermelho hostil. NÃO adicionar sangue, cenário, chão, sombra projetada, letras, números, legendas ou molduras. A mudança solicitada é espaçamento/margens e organização, não nova criatura. Arte dark fantasy figurativa de Arena, sem pixelart."
+  }
+}

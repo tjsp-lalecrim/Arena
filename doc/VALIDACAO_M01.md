@@ -109,3 +109,11 @@ Inspeção visual de capturas corrigiu sobreposição da legenda de perfil e tex
 M01-06 concluído no escopo da pequena amostra solicitada nesta rodada: todas as categorias geradas/integradas/verificadas em navegador desktop. Isso não aprova biblioteca completa nem combate: perfil é pose isolada, rato só farejo/respiração, caminhada de estudo, piso/parede com repetição perceptível sem autotiles. Variantes de armadura/base e demais combinações continuam M01-12/07; não geradas por associação a este item. Não há vozes, quest completa, novo inventário, criação de personagem ou cena narrativa final.
 
 Abertura: título → Amostra visual; Map002. Enter diante da placa Ria em(4,9) mostra arte; placa Sair em(1,9) retorna ao laboratório. Esc abre menu/salvar. Instruções e limitações em doc/arte/AMOSTRA_M01_06.md. Editor com esses novos assets/plugins, gerenciador/salvamento/reabertura do projeto e Galaxy A56 não testados. A evidência manual de playtest/browser recebida no início não foi atribuída a M01-06. M01-03 mantém pendências de autoria, sem alegar que save de partida equivale a salvar o projeto.
+
+## Revisão estética M01-06 — 2026-10-25
+
+O responsável rejeitou a identidade visual anterior. **M01-06 em revisão; não concluído artisticamente.** Formatos funcionando não substituem aprovação estética. Direção de arte 1.1 proíbe protagonista ou quaisquer membros/sombras/equipamentos dele em narrativa reutilizável.
+
+Rodada pequena: dungeon R02, rato R02 com correção R03 e Ria R02. Referências visuais inspecionadas e consulta decodificada à instalação, com limitações de associação documentadas em `arte/REVISAO_IDENTIDADE_R02.md`. Anteriores preservados. Dungeon ainda tem perspectiva convergente; rato é trecho de bote, não combate completo. Sem produção em lote nem promoção da rodada rejeitada.
+
+Visor isolado `tools/art-review.html`: Chrome desktop, imagens 1:1, carregamento, animação e pausa sem erros/404. Teste `tools/test-art-review.cjs`. Screenshot `doc/evidencias/m01-06-revisao-r02-browser.png`. Testes de persistência: 27 verificações aprovadas em contexto descartável, sem saves pessoais; testes de estado, runtime e banco mínimo aprovados. A evidência de navegador não comprova editor ou aparelho. Nenhum teste novo no editor MV ou Galaxy A56 nesta rodada. Aprovação estética, mapa ortogonal final e animação completa permanecem pendentes.

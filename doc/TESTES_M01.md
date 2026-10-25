@@ -37,3 +37,7 @@ Autoria manual ainda necessária após esta feature: abrir o projeto no MV 1.6.1
 ## Amostra artística M01-06
 
 Título → Amostra visual abre Map002 sem alterar o início/laboratório original. Roteiro e arquivos em doc/arte/AMOSTRA_M01_06.md. `node tools/test-art-preview.cjs` usa Chrome descartável: entrada, rato, movimento, colisão, save/load com imagens/HP/recurso próprio, ilustração sem quest e retorno. `tools/build-art-samples.py` exporta os mestres IA por montagem técnica e verifica dimensões/alpha/baselines. Não confundir esse teste com batalha ou folha SV completa. Conferir manualmente perspectiva/identidade, bordas, recortes, legibilidade a32/48/96px e loop. Editor e A56 com a nova amostra permanecem pendentes; confirmação manual anterior não se estende aos novos assets.
+
+## Revisão visual isolada R02/R03
+
+Abrir `/tools/art-review.html` no servidor local, zoom 100%. Conferir dungeon 576×480 com piso/parede distintos; rato 96×64 com alerta, preparação, bote e recuperação (botão pausa); Ria 768×512 sem protagonista. Comparar às fontes e versões anteriores conforme `arte/REVISAO_IDENTIDADE_R02.md`. Não é mapa jogável ou combate. Rodar `tools/test-art-review.cjs` com Playwright e Chrome instalado. Aprovação estética do responsável é requisito separado dos testes de carregamento e formato; M01-06 continua em revisão. Testes no editor e A56 não foram executados nesta rodada.
