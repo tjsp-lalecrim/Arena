@@ -104,3 +104,7 @@ Só ampliar para cidades compostas ou numerosas áreas após essa validação. A
 Adotar templates como método de autoria desde o início. Para runtime, priorizar uma prova de conceito de montagem modular, sem compromisso de proceduralizar a campanha inteira. A aprovação final da abordagem depende dos testes e da comparação de custo com variantes de mapas prontos produzidos para o projeto.
 
 Seguir Git Flow: a avaliação documental integra a feature de documentação; uma futura prova de conceito deve usar feature/geracao-cenarios, a partir de develop. Documentar qualquer plugin conforme PLUGINS.md. Nenhuma branch ou alteração no jogo foi realizada nesta avaliação.
+
+## Orientação válida para futura dungeon
+
+Padrão visual inicial confirmado:1 tile de teto,2 tiles para altura visual de parede e corredores com3 tiles de largura livre. Sujeito a avaliação nos testes. Separar altura visual de colisão/área caminhável. Preservar exceções locais do original, documentando motivo e resultado. Usar mapas da wiki e, quando possível, estrutura/posições dos eventos do original para salas, corredores, portas, objetos e eventos. Não substituir o layout por dungeon genérica gerada automaticamente. A regra não autoriza antecipar M01-14 nesta rodada.

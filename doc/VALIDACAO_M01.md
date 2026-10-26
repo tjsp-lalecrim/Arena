@@ -137,3 +137,7 @@ Em25/10/2026, consulta direta a ARENA/README.TXT (1.07 CD-ROM), Manual.pdf p.7 e
 Arena_ArtPreview0.2.1 melhora leitura mobile da galeria atual, sem regenerar imagens: texto primário26px (17,17px CSS na simulação916×412; antes11,22). Toque emulado percorre caminho nativo e abre Ria. Evidências R05 e inventário de16 combinações em `arte/FIDELIDADE_E_VALIDACAO_R05.md`; uma piloto, zero conjuntos finais completos.
 
 Editor: gerenciador abriu/fechou via teclado, Ctrl+S regravou dados, editor fechou e reabriu Arena. Comparação semântica preserva banco e contratos de plugins, exceto metadados nativos registrados. `evidencias/m01-06-r05-editor-roundtrip.json`. Captura/clique indisponíveis e nomes das linhas custom não visíveis por acessibilidade; não declarar conferência visual completa nem playtest da galeria. Galaxy A56 físico não testado. M01-06 em validação; M01-07 não iniciado, sem merge prematuro da dependência. Início normal ainda é laboratório; não há tela de criação para testar.
+
+## Encerramento da amostra M01-06
+
+Revisão do escopo conforme solicitação atual: os critérios de exemplos em motor estão atendidos pelas evidências R02–R05. Matriz em arte/ENCERRAMENTO_AMOSTRA_M01_06.md. M01-06 concluído como amostra desktop, sem converter pendências de M01-10/12/14/19 em requisitos de biblioteca inteira nesta etapa. Teste físico A56 e inspeção visual completa do editor continuam explicitamente pendentes. M01-05 permanece validado. Integração da feature visual em develop autorizada para iniciar M01-07.

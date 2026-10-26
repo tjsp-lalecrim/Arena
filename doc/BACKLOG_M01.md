@@ -108,7 +108,7 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura manual do responsável; R05 abriu gerenciador, salvou/reabriu e auditou contratos. Conferência visual detalhada ainda pendente; VALIDACAO_M01.md |
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
 | M01-05 | Concluído | Contratos/API v1, save/load nativo, save gerado pela composição anterior, campos ausentes, recibos e isolamento; VALIDACAO_M01.md e PERSISTENCIA_M01.md |
-| M01-06 | Em validação técnica | Direção dungeon R02/rato R03/Ria R02 aprovada pelo responsável; aprovação com hashes em arte/APROVACAO_DIRECAO_R02_R03.json. R05 ampliou legendas mobile e exercitou toque emulado; autoria parcial auditada. Conferência visual no editor e aparelho pendentes; não concluído |
+| M01-06 | Concluído (amostra desktop) | Matriz de critérios e limites em arte/ENCERRAMENTO_AMOSTRA_M01_06.md; direção aprovada e formatos no motor. Aparelho/combate completo/biblioteca final não declarados |
 | M01-07 | Não iniciado; inventário prévio | 16 combinações inventariadas, uma piloto provisória e zero conjuntos completos; arte/FIDELIDADE_E_VALIDACAO_R05.md. Depende de M01-06 |
 | M01-08 a M01-20 | A fazer | Amostra não comprova aplicação racial, Vigor em combate ou campanha |
 
