@@ -1,0 +1,8 @@
+{
+  "tool": "image_gen built-in",
+  "reference": "art/masters/combate-r01/breton-male-r02.png",
+  "prompt": "Use case: precise-object-edit. Generate ONLY a strip of THREE distinct defeat-animation frames for the EXACT LEFT-facing dark-haired Breton man in the supplied motion study. Preserve his face, black/dark brown open collar shirt, charcoal trousers, brown cuff boots, body proportions and painterly dark fantasy finish. Frame1 kneeling with bent head, frame2 on knees leaning onto hands, frame3 fully collapsed lying on his left side. Follow the supplied final row's poses and continuity; do NOT redesign. Exactly3 equal cells arranged in ONE horizontal row. Transparent background. EACH figure including every hand, boot and hair must fit entirely inside its cell with generous empty transparent margins. Crucial: make figures small enough to leave at least80px transparent gap between neighboring figures; figures MUST NOT TOUCH. No cropping. Same scale in all3. No text, borders, effects, grid or shadows. This is a technical replacement of the joined bottom row, not new identity or clothes. Output1536x512.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-5c4c6187-7dca-482d-9e61-052089096014.png",
+  "master": "art/masters/combate-r01/breton-male-defeat-r03.png",
+  "reason": "R02 still joins two defeat figures; preserve R01/R02, use separate three-frame defeat strip."
+}

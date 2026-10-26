@@ -1,0 +1,14 @@
+{
+  "id": "lizard-man",
+  "tool": "image_gen built-in",
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\monsters\\page13-1.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_breton_male_r02_side.png"
+  ],
+  "sourcePDF": "doc/wiki/Arena_Monsters - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+  "page": 13,
+  "prompt": "Use case: identity-preserve. Asset: enemy Side View animation sheet for Arena. Image1 is the actual original Arena monster illustration extracted from local UESP Monsters PDF page13. Its low resolution does not license redesign as generic fantasy. Image2 supplies ONLY the painterly figurative dark fantasy finish, not human identity or clothing. Stocky menacing dark-green Lizard Man from Arena, broad reptilian head with sharp teeth, thick torso/limbs, brown chest region, long trident and round shield as visible in source. Not a playable Argonian or a human in a mask. Do not invent decorative horns, armor, or a tail absent from source; unclear tiny details are restrained artistic interpretation. Reinterpret the original view as lateral RIGHT-facing enemy on the left of battle, preserve colors/materials/proportions and weapon identity. Exactly THREE columns and FOUR rows, TWELVE distinct full-body motion frames, equal cells, transparent background. Row1 idle three subtly breathing alert poses with planted feet. Row2 anticipation, forceful attack with body and jaw/weapon articulation, recovery. Row3 impact flinch, compressed recoil, returning posture. Row4 losing balance, collapsing, fully lying defeated. All weapons/shields/ears/feet must remain within each cell even at full extension, with generous margins. Identical scale/identity/outfit/weapon proportions throughout. Ground baseline consistent in standing/action frames. No repeated static poses advertised as animation, no text, borders, FX or added creatures. Detailed dark fantasy painting for final small game sprite, no pixel art, anime/chibi or shiny3D. Target1536x2048 with512x512 cells. Camera/perspective fixed.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-461a2f6e-3e73-42f0-9912-5aaf7d9ad255.png",
+  "master": "art/masters/combate-r01/lizard-man.png",
+  "approval": "No owner approval claimed; requires technical export inspection"
+}

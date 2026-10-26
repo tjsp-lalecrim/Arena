@@ -1,5 +1,7 @@
 # Direção de arte e padrão de geração
 
+Adendo M01-10 R01: novas folhas de combate não herdam aprovação R05. Preservados todos os retratos/exploração e fontes aprovadas; referências laterais r02 e rato r03 fornecidas à IA para continuidade. Goblin/Lizard Man usam também sprites identificados no PDF local Arena_Monsters p.6/13, somente consulta ignorada. Manifesto, prompts integrais e pranchas em arte/COMBATE_M01_10_MANIFEST.json e COMBATE_M01_10.md. Quatro estados de três quadros exercitados no motor; gesto corporal genérico sem arma desenhada ainda não encerra a apresentação. Manter revisão de identidade/roupa/apoio; nenhuma imagem nova é promovida automaticamente a referência estética. Sem novas ilustrações narrativas ou retratos.
+
 Versão 1.6 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md. Em R05 o responsável aprovou as artes atuais de M01-07 **para prosseguir com ressalvas**, por arquivo/versão/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Recortes e orientações heterogêneos não foram corrigidos. Não houve novas gerações/correções nesta rodada. A rodada inicial v0.1 continua histórica e rejeitada para narrativa; a aprovação atual não reabilita usos narrativos proibidos.
 
 ## Identidade visual

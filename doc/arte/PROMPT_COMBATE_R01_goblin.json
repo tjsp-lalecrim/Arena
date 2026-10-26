@@ -1,0 +1,14 @@
+{
+  "id": "goblin",
+  "tool": "image_gen built-in",
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\monsters\\page6-1.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_breton_male_r02_side.png"
+  ],
+  "sourcePDF": "doc/wiki/Arena_Monsters - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+  "page": 6,
+  "prompt": "Use case: identity-preserve. Asset: enemy Side View animation sheet for Arena. Image1 is the actual original Arena monster illustration extracted from local UESP Monsters PDF page6. Its low resolution does not license redesign as generic fantasy. Image2 supplies ONLY the painterly figurative dark fantasy finish, not human identity or clothing. Short yellow-green goblin with disproportionately large pointed ears/head, blue eyes, reddish-brown loincloth/straps and a straight worn steel sword. Preserve source creature silhouette, no Warcraft redesign, no armor or huge muscles. Reinterpret the original view as lateral RIGHT-facing enemy on the left of battle, preserve colors/materials/proportions and weapon identity. Exactly THREE columns and FOUR rows, TWELVE distinct full-body motion frames, equal cells, transparent background. Row1 idle three subtly breathing alert poses with planted feet. Row2 anticipation, forceful attack with body and jaw/weapon articulation, recovery. Row3 impact flinch, compressed recoil, returning posture. Row4 losing balance, collapsing, fully lying defeated. All weapons/shields/ears/feet must remain within each cell even at full extension, with generous margins. Identical scale/identity/outfit/weapon proportions throughout. Ground baseline consistent in standing/action frames. No repeated static poses advertised as animation, no text, borders, FX or added creatures. Detailed dark fantasy painting for final small game sprite, no pixel art, anime/chibi or shiny3D. Target1536x2048 with512x512 cells. Camera/perspective fixed.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-32fb9584-9a97-4a85-8092-c0996cf5346c.png",
+  "master": "art/masters/combate-r01/goblin.png",
+  "approval": "No owner approval claimed; requires technical export inspection"
+}
