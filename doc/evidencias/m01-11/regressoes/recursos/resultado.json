@@ -1,0 +1,1527 @@
+{
+  "composition": "M01-08/R01",
+  "browser": "156.0.8078.47",
+  "viewport": [
+    1100,
+    800
+  ],
+  "game": [
+    816,
+    624
+  ],
+  "legacy": {
+    "snapshot": {
+      "hp": {
+        "current": 41,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 13,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 37,
+        "maximum": 150,
+        "base": 140,
+        "growth": 0,
+        "initialBonus": 10,
+        "modifiers": 0
+      },
+      "level": 6,
+      "baselineLevel": 6,
+      "choices": {},
+      "pending": []
+    },
+    "pending": [
+      7
+    ]
+  },
+  "result": {
+    "checks": [
+      "argonianmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "argonianfemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "bretonmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "bretonfemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "dark_elfmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "dark_elffemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "high_elfmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "high_elffemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "khajiitmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "khajiitfemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "nordmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "nordfemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "redguardmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "redguardfemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "wood_elfmale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "wood_elffemale initial",
+      "spent native save/load",
+      "one earned choice",
+      "unearned rejected",
+      "unknown rejected",
+      "hp choice",
+      "duplicate rejected",
+      "increase does not heal",
+      "multiple levels",
+      "flat growth independent of race",
+      "growth save/load 0",
+      "growth save/load 1",
+      "growth save/load 2",
+      "down/up no duplicated entitlement",
+      "down/up retains committed growth",
+      "map technique cannot spend",
+      "map direct payment guarded",
+      "one native use pays once",
+      "basic attack free",
+      "zero insufficient",
+      "cannot go negative",
+      "exact cost",
+      "exact payment zero",
+      "no passive or TP-derived recovery",
+      "vigor potion enabled",
+      "actual potion consumption/recovery",
+      "clamp recovery at maximum",
+      "full no overflow",
+      "full map potion unavailable",
+      "negative recovery rejected",
+      "bed rest",
+      "rest fully restores all three, including dead technical actor",
+      "repeated bed no award or growth",
+      "hp potion partial",
+      "mp potion partial",
+      "no bed during battle",
+      "earned choice blocked during battle",
+      "battle leaves choice unspent",
+      "native modifier separate",
+      "modifier persists without doubling",
+      "all 98 level entitlements",
+      "maximum level MP choices not truncated by old 999 cap",
+      "racial AGI remains flat at max level",
+      "no choice beyond native level cap",
+      "balance configuration controls all initial maxima",
+      "native EXP awards level choice",
+      "class curve cannot grow max HP",
+      "pre-state laboratory defaults",
+      "no invented old identity"
+    ],
+    "races": [
+      {
+        "race": "argonian",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 130,
+            "maximum": 130,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 10,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "argonian",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 130,
+            "maximum": 130,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 10,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "breton",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "breton",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "dark_elf",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "dark_elf",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "high_elf",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "high_elf",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "khajiit",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "khajiit",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "nord",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "nord",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "redguard",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "redguard",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "wood_elf",
+        "gender": "male",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      },
+      {
+        "race": "wood_elf",
+        "gender": "female",
+        "snapshot": {
+          "hp": {
+            "current": 51,
+            "maximum": 110,
+            "base": 100,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 25,
+            "maximum": 60,
+            "base": 50,
+            "growth": 10,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 120,
+            "maximum": 120,
+            "base": 100,
+            "growth": 20,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 6,
+          "baselineLevel": 1,
+          "choices": {
+            "2": {
+              "resourceId": "hp",
+              "amount": 10
+            },
+            "3": {
+              "resourceId": "mp",
+              "amount": 10
+            },
+            "4": {
+              "resourceId": "vigor",
+              "amount": 10
+            },
+            "5": {
+              "resourceId": "vigor",
+              "amount": 10
+            }
+          },
+          "pending": [
+            6
+          ]
+        }
+      }
+    ],
+    "missing": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 1,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": []
+    }
+  },
+  "ui": [
+    "open",
+    "cancel-no-spend",
+    "confirm-mana",
+    "pending-preserved",
+    "leave",
+    "title-to-isolated-lab",
+    "native-item-menu-vigor-potion",
+    "keyboard-lab-controlled-cost",
+    "keyboard-lab-bed-recovery"
+  ],
+  "technicalMap": 5,
+  "errors": []
+}

@@ -2,13 +2,13 @@
 
 ## Objetivo e estado
 
-Estado operacional M01-10 R03: expansão técnica concluída nas16 identidades e três inimigos, com sete/quatro movimentos de seis células temporizadas. R02 Bretã/rato aprovado pelo responsável (a61977b) preservado; aprovação não estendida às novas variantes. Testes nativos/regressões e autoria abrir/gerenciador/salvar/reabrir executados; manual do responsável, playtest visual NW.js e Galaxy A56 pendentes. Ler EXPANSAO_COMBATE_M01_10_R03.md. M01-11 aguarda integração autorizada de M01-10; relatos R01/R02 abaixo são históricos.
+Estado operacional M01-11: M01-10 expandido/validado e integrado/publicado em develop f37018d. Interface em feature/m01-interface-batalha para revisão: jogador à esquerda, cartões/atalhos persistentes, controles por teclado/mouse/toque, cenário aprovado reaproveitado. Ler INTERFACE_BATALHA_M01_11.md e evidencias/m01-11. Aprovação manual R02 limitada a Bretã/rato; manual da interface/variantes, NW.js visual e Galaxy A56 pendentes. Sem integração desta feature em develop/main; M01-12 não iniciado.
 
 Histórico do fechamento M01-08 R01 (antes da integração): M01-07 R05 já integrado, bônus aplicados e arte aceita com ressalvas; recursos concluídos na feature para revisão. Evidências preservadas em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md; a autorização posterior resultou no merge d3c736d.
 
 Entregar uma demo jogável em Português Brasileiro: criar o personagem, acompanhar a introdução, explorar Imperial Dungeons e encerrar ao alcançar o Shift Gate. Este backlog detalha as decisões de DEMO_INICIAL.md, sem ampliar o marco para cidades ou quests posteriores.
 
-Estado de execução e evidências em VALIDACAO_M01.md. M01-01–09 estão integrados; M01-10 concluído tecnicamente na feature, aguardando a integração autorizada após revisão. M01-11–20 não iniciados. Autoria no editor é separada do navegador; a documentação isolada não comprova implementação. Não há estimativas de esforço ou datas definidas.
+Estado de execução e evidências em VALIDACAO_M01.md. M01-01–10 integrados; M01-11 implementado tecnicamente na feature para revisão, com manual do responsável/aparelho pendentes. M01-12–20 não iniciados. Autoria no editor é separada do navegador; a documentação isolada não comprova implementação. Não há estimativas de esforço ou datas definidas.
 
 P0 indica base necessária para começar e integrar; P1 indica requisito de conclusão da demo, não conteúdo opcional. Sistemas novos devem ser implementados em plugins desenvolvidos pelo Codex quando o motor nativo não atender, com documentação e configuração reutilizável conforme PLUGINS.md.
 

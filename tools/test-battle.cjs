@@ -8,7 +8,7 @@ const sourceSnapshot=Object.fromEntries(['js/plugins/Arena_Battle.js','data/Aren
   const page=await browser.newPage({viewport:{width:1100,height:800}}),errors=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('requestfailed',r=>errors.push(r.url()));
   await page.goto(process.env.ARENA_URL||'http://127.0.0.1:8766/');await page.waitForFunction(()=>window.ArenaBattle&&SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
-  await page.evaluate(()=>ArenaBattle.startLab());await page.waitForFunction(()=>$gameMap.mapId()===7&&SceneManager._scene instanceof Scene_Map&&!SceneManager._scene.isBusy());
+  await page.evaluate(()=>ArenaBattle.startLab());await page.waitForFunction(()=>$gameMap.mapId()===7&&SceneManager._scene instanceof Scene_Map&&SceneManager._scene.isActive()&&!SceneManager._scene.isBusy()&&!$gamePlayer.isTransferring()&&$gamePlayer.canMove());
   await page.evaluate(()=>{ArenaBattle.prepare();$gamePlayer.locate(7,6);$gamePlayer.setDirection(8);});
   await page.keyboard.press('Enter',{delay:110});
   await page.waitForFunction(()=>SceneManager._scene instanceof Scene_Battle&&SceneManager._scene.isActive(),null,{timeout:15000});

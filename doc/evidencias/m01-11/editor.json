@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-26",
+  "method": "Installed RPG Maker MV, keyboard and Windows accessibility via computer-use @oai/sky; not a Chrome runtime test",
+  "project": "D:\\RPG Maker MV\\Projects\\Arena",
+  "observed": ["Fresh Arena window658928 opened without read-error dialog", "F10 plugin manager opened", "Details showed Arena_BattleUI ON at end of18-record list", "Saved with Ctrl+S", "Closed window; disappearance confirmed", "Relaunched fresh Arena window528470 without read-error dialog", "Saved again and closed validation window"],
+  "pluginRecords": 18,
+  "pluginRecordsSemanticEqualityBeforeAfter": true,
+  "canonicalUtf8WithoutBom": true,
+  "semanticDatabaseChanges": ["data/System.json: versionId only"],
+  "formattingOnlyRestoredAfterExactSemanticComparison": "Native data files compared to pre-editor copies, including the valid M01-11 trio/reset additions; no indiscriminate checkout/revert",
+  "limits": ["No visual NW.js playtest asserted", "No physical Galaxy A56", "Owner manual UI tests deferred, no approval inferred from R02 animations", "No personal saves touched"]
+}

@@ -6,7 +6,7 @@ module.exports=function(page){
     const s=await page.evaluate(()=>{const s=SceneManager._scene;if(s instanceof Scene_Gameover)return'gameover';if(s instanceof Scene_Map&&!s.isBusy())return'map';if(s instanceof Scene_Battle){if(s._messageWindow.pause&&s._messageWindow._waitCount===0)return'message';if(s._partyCommandWindow.isOpenAndActive())return'party';if(s._actorCommandWindow.isOpenAndActive())return'actor';}return'wait';});
     if(s==='message')await key('Enter');else if(s==='party')await page.evaluate(()=>{SceneManager._scene._partyCommandWindow.selectSymbol('fight');SceneManager._scene._partyCommandWindow.processOk();});else if(s!=='wait')return s;
     await page.waitForTimeout(100);
-   }throw Error('battle did not reach input/end: '+JSON.stringify(await page.evaluate(()=>({phase:BattleManager._phase,errors:Graphics._errorPrinter.innerHTML,log:SceneManager._scene._logWindow&&SceneManager._scene._logWindow._methods}))));
+   }throw Error('battle did not reach input/end: '+JSON.stringify(await page.evaluate(()=>({phase:BattleManager._phase,errors:Graphics._errorPrinter.innerHTML,log:SceneManager._scene._logWindow&&SceneManager._scene._logWindow._methods,windows:['_actorCommandWindow','_skillWindow','_itemWindow','_enemyWindow','_actorWindow','_arenaHotbar','_arenaPicker'].map(k=>{const w=SceneManager._scene[k];return[k,w&&w.active,w&&w.openness,w&&w.visible];}),configuring:SceneManager._scene._arenaConfiguring}))));
   }
   async function choose(kind,id){
    assert.equal(await ready(),'actor');

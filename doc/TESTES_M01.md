@@ -84,3 +84,8 @@ Título > Validação visual R04 abre Map003; Enter diante de Ria(4,9), cela(7,9
 ## Expansão M01-10 R03
 
 Executar tools/test-battle-expansion-r03.cjs com ARENA_EXPANSION_FINAL=1, tools/audit-battle-expansion-r03.py e tools/validate-battle-motion.cjs; Chrome/Playwright em contexto isolado, ARENA_URL para o servidor local. Evidências17 perfis novos/47 vídeos, regressões e autoria em evidencias/m01-10-r03. Roteiro manual em EXPANSAO_COMBATE_M01_10_R03.md. Arquivos/tempos R02 aprovados preservados; revisões anteriores são históricas. Sem alegação de Galaxy A56/NW.js visual ou aprovação estética das novas variantes.
+
+
+## Interface M01-11
+
+tools/validate-battle-ui.cjs verifica geometria pura, UTF8,18 plugins preservando16, mapa/tropas com somente trio/reinício e motor/regras/arte inalterados. tools/test-battle-slots.cjs executa ações nativas, configuração/atalhos/limites/cancelamento/save-load e múltiplos inimigos. tools/test-battle-slots-category.cjs valida o fallback final para categoria única e cancelamento sem custos. tools/test-battle-slots-pointer.cjs testa mouse/toque Android genérico com canvas/pontos dentro da viewport e ajuda≥16px CSS. Roteiro, capturas e gravação em INTERFACE_BATALHA_M01_11.md e evidencias/m01-11. Testes no editor por teclado/acessibilidade separados do Chrome; não declarar NW.js visual ou Galaxy A56 físico.
