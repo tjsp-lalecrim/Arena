@@ -4,6 +4,7 @@ from PIL import Image
 import subprocess,json,hashlib
 R=Path(__file__).resolve().parents[1]
 base=json.loads(subprocess.check_output(['git','show','0a917f8:data/ArenaCharacterVisuals.json'],cwd=R))
+base['rules']['weaponSkillIds']=[i for i in base['rules']['weaponSkillIds'] if i not in [3,4]] # R04 technical classification fix only.
 now=json.loads((R/'data/ArenaCharacterVisuals.json').read_text(encoding='utf-8'))
 review=json.loads((R/'doc/arte/avaliacao-retratos-pose-r03.json').read_text(encoding='utf-8'))
 log=json.loads((R/'doc/arte/prompts-retratos-pose-r03.json').read_text(encoding='utf-8'))

@@ -2,10 +2,13 @@
 from pathlib import Path
 from PIL import Image
 import json, subprocess, hashlib
+import os
 R=Path(__file__).resolve().parents[1]
 before=json.loads(subprocess.check_output(['git','show','37e1729:data/ArenaCharacterVisuals.json'],cwd=R))
 after=json.loads((R/'data/ArenaCharacterVisuals.json').read_text(encoding='utf-8'))
-assert after['rules']==before['rules'] and after['schemaVersion']==before['schemaVersion'] and after['arrivalMapId']==before['arrivalMapId']
+expected_rules=dict(before['rules'])
+expected_rules['weaponSkillIds']=[i for i in expected_rules['weaponSkillIds'] if i not in [3,4]] # R04: documented unarmed exclusion, no numerical balance change.
+assert after['rules']==expected_rules and after['schemaVersion']==before['schemaVersion'] and after['arrivalMapId']==before['arrivalMapId']
 assert set(after['visuals'])==set(before['visuals'])
 sources=json.loads((R/'doc/arte/fontes-personagens-revisao-r02.json').read_text(encoding='utf-8'))
 assert len(sources['requests'])==7
@@ -45,5 +48,6 @@ for key,v in after['visuals'].items():
     face=Image.open(R/'img/faces'/(v['face']+'.png')).convert('RGBA')
     assert face.size==(576,288) and face.crop((144,0,576,288)).getbbox() is None
     results.append({'id':key,'mapFrameBoxes':boxes,'sideBox':sb,'portraitBox':face.crop((0,0,144,144)).getbbox()})
-(R/'doc/evidencias/personagens-r02/alpha-quadros.json').write_text(json.dumps({'checks':'Stable IDs/rules;192 directional cells; walk retained;864 static native SV cells; alpha margins;64 runtime files','results':results},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('PASS192 directional cells,864 SV cells,16 alpha/margin sets, preserved walk, identical rules/keys/statuses.')
+out=R/os.environ.get('ARENA_EVIDENCE_DIR','doc/evidencias/personagens-r02');out.mkdir(parents=True,exist_ok=True)
+(out/'alpha-quadros.json').write_text(json.dumps({'checks':'Stable IDs/approved rules with R04 unarmed exclusion;192 directional cells; walk retained;864 static native SV cells; alpha margins;64 runtime files','results':results},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print('PASS192 directional cells,864 SV cells,16 alpha/margin sets, preserved walk; approved rules with R04 unarmed exclusion, stable keys/statuses.')

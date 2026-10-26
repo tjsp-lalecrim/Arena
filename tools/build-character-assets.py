@@ -53,7 +53,7 @@ for race in cat['races']:
 contact=Image.new('RGBA',(1280,768),(27,29,33,255))
 for i,tile in enumerate(thumbs):contact.alpha_composite(tile,((i%4)*320,(i//4)*192))
 save(contact,'doc/arte/personagens-m01-v01.png')
-config={'schemaVersion':1,'arrivalMapId':4,'rules':{'weaponSkillIds':[1,3,4,5,6,7,8],'meleeWeaponTypeIds':[1,2],'bowWeaponTypeIds':[]},'visuals':visuals}
+config={'schemaVersion':1,'arrivalMapId':4,'rules':{'weaponSkillIds':[1,5,6,7,8],'meleeWeaponTypeIds':[1,2],'bowWeaponTypeIds':[]},'visuals':visuals}
 (R/'data/ArenaCharacterVisuals.json').write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (R/'doc/arte/exportacoes-criacao-m01.json').write_text(json.dumps({'masters':masters,'exports':exports,'limitations':'15 new static directional/base-side sets; Breton female existing walk reused; repeated native svActor cells are format support, not new animation.'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('16 combinations packed; '+str(len(exports))+' exports. Native SV sheets are explicitly static.')

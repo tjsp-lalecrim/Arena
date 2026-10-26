@@ -11,6 +11,7 @@ ns={'__file__':str(R/'tools/build-art-samples.py')}
 exec((R/'tools/build-art-samples.py').read_text(encoding='utf-8').split('pilot=load(')[0],ns)
 base=json.loads(subprocess.check_output(['git','show','0a917f8:data/ArenaCharacterVisuals.json'],cwd=R))
 config=copy.deepcopy(base);exports=[];masters=[];metrics=[]
+config['rules']['weaponSkillIds']=[i for i in config['rules']['weaponSkillIds'] if i not in [3,4]] # R04 technical classification fix, not balance.
 font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',14)
 labels={'argonian':'Argoniano','breton':'Bretão','dark_elf':'Elfo Negro','high_elf':'Alto Elfo','khajiit':'Khajiit','nord':'Nórdico','redguard':'Redguard','wood_elf':'Elfo da Floresta'}
 # Manual eye x/y, crown y, jaw y in a uniformly fitted144px probe.
