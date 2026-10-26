@@ -93,3 +93,8 @@ Revalidar alvo, disponibilidade e custos no momento de executar a ação. Ao can
 Selecionar os aspectos das referências em doc/prints e definir estrutura de cada tela, tamanho e quantidade de slots, paginação ou rolagem, posição das descrições, controles e eventual personalização. Arrastar equipamentos para slots de equipamento está confirmado. Arrastar e soltar em outros contextos, recargas, filtros e ordenação permanecem possibilidades a avaliar.
 
 Este documento especifica a direção da interface; os menus ainda não foram implementados ou testados.
+
+
+## Implementação M01-11
+
+Direção de batalha implementada tecnicamente em feature/m01-interface-batalha; o texto anterior é especificação/histórico para os demais menus. Quatro comandos existentes, filtros/cartões/quantidades/descrição, seis atalhos configuráveis e alvo único automático após ação solicitada. Teclado/mouse/toque com Voltar visível; sem Recuar/talentos ativos/aparo novo. Integração nativa, limites da emulação e roteiro em INTERFACE_BATALHA_M01_11.md. Inventário de exploração/equipamento por arrasto permanecem M01-12, sem antecipação nesta feature.

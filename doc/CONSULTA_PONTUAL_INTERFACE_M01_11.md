@@ -1,0 +1,9 @@
+# Consulta de composição M01-11 — não normativa
+
+Consulta exclusivamente de leitura em D:\RPG Maker MV\Projects\Battlespire: AGENTS.md, js/plugins.js, trechos de js/plugins/BS_BattleMenu96.js e BS_MenuFlow175.js. Busca pontual de nomes relacionados a slots/atalhos em BS_SideBattle90.js não acrescentou código ao Arena. Nenhuma execução/modificação de arquivos desse projeto, nenhum asset/dependência/regra/valor importado. Não é fonte oficial do Arena e não foi acrescentado ao índice de fontes normativas.
+
+Observados: divisão compacta de painel do personagem e comandos; descrição com quebra de linha; separação de listas e alvos; eliminação de grupos/alvos únicos com cancelamento que retorna à escolha real. Os prints locais do responsável (doc/prints/revisao-m01-10-r02/02-composicao.png,03-habilidades.png,04-inventario.png) orientaram campo amplo, informação próxima dos corpos, comandos por ícone, cartões e atalhos. Não foram adotados Recuar, aparo especial, talentos raciais ativos, oito espaços obrigatórios ou conteúdos/arte do exemplo.
+
+Solução própria: Scene_Battle nativa com camadas Arena existentes, geometria pura MV_BattleSlots, configuração ArenaBattleUI.json, cartões próprios, referências battle.1–8 no contrato de persistência anterior e revalidação sem novo consumidor de custos. Categorias são filtros diretos; configuração acessível por teclado e toque com Voltar visível. Cenário/ícones IA reaproveitam somente arte do Arena já aprovada; os ícones lineares dos comandos são novos elementos de interface próprios. Não houve cópia integral dos plugins observados.
+
+Hashes das fontes consultadas constam em evidencias/m01-11/consulta-battlespire.json, como identificação da consulta, sem redistribuir seus conteúdos. A fidelidade ao Arena e as decisões atuais do repositório prevalecem.

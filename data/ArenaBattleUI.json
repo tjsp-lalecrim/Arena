@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "playerPanelWidth": 228,
+  "commandHeight": 84,
+  "hotbarHeight": 100,
+  "slotCount": 6,
+  "slotWidth": 0,
+  "slotPrefix": "battle.",
+  "categoryWidth": 176,
+  "cardColumns": 3,
+  "cardHeight": 142,
+  "helpHeight": 88,
+  "playerHome": [
+    160,
+    380
+  ],
+  "enemyHomes": {
+    "1": [
+      [
+        650,
+        380
+      ]
+    ],
+    "2": [
+      [
+        560,
+        280
+      ],
+      [
+        700,
+        410
+      ]
+    ],
+    "3": [
+      [
+        550,
+        260
+      ],
+      [
+        700,
+        345
+      ],
+      [
+        540,
+        430
+      ]
+    ]
+  },
+  "background": {
+    "file": "arena_dungeon_estudo_r02",
+    "y": 20
+  },
+  "commands": [
+    {
+      "symbol": "attack",
+      "name": "Atacar",
+      "icon": "sword",
+      "description": "Atacar com a arma equipada. Sem custo de Vigor."
+    },
+    {
+      "symbol": "skill",
+      "name": "Habilidades",
+      "icon": "book",
+      "description": "Técnicas da arma e magias aprendidas. Tab alterna a categoria."
+    },
+    {
+      "symbol": "guard",
+      "name": "Defender",
+      "icon": "shield",
+      "description": "Reduz o dano recebido até a próxima ação. Defesa nativa, sem aparo especial."
+    },
+    {
+      "symbol": "item",
+      "name": "Itens",
+      "icon": "bag",
+      "description": "Usar um consumível disponível. Escolher não consome; confirmar a ação usa uma unidade."
+    }
+  ],
+  "skillLabels": {
+    "3": "Golpe leve",
+    "4": "Golpe pesado",
+    "5": "Corte leve",
+    "6": "Estocada pesada",
+    "7": "Corte leve",
+    "8": "Corte pesado",
+    "9": "Cura",
+    "10": "Dardo de fogo"
+  },
+  "technicalTroopId": 4,
+  "technicalEventId": 7,
+  "icons": {
+    "file": "arena_icones_v01",
+    "item": {
+      "2": {
+        "rect": [
+          64,
+          0,
+          32,
+          32
+        ],
+        "hue": 330
+      },
+      "3": {
+        "rect": [
+          64,
+          0,
+          32,
+          32
+        ],
+        "hue": 190
+      },
+      "4": {
+        "rect": [
+          64,
+          0,
+          32,
+          32
+        ],
+        "hue": 80
+      }
+    },
+    "skill": {
+      "5": {
+        "rect": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "hue": 0
+      },
+      "6": {
+        "rect": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "hue": 0
+      }
+    }
+  },
+  "enemyPanelOffsets": {
+    "3": [
+      [
+        -120,
+        0
+      ],
+      [
+        -75,
+        0
+      ],
+      [
+        -95,
+        0
+      ]
+    ]
+  },
+  "skillGlyphs": {
+    "3": "strike",
+    "4": "strike",
+    "7": "sword",
+    "8": "sword",
+    "9": "heal",
+    "10": "fire"
+  }
+}
