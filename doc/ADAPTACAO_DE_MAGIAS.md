@@ -1,5 +1,9 @@
 # Catálogo de magias e triagem para 2D por turnos
 
+## Recorte implementado M01-09 R01
+
+Cura9 (Heal): usuário,25+MAT Vida,8 Mana, sem Vigor. Dardo de fogo10 (Fire Dart): um inimigo,max(1,3×MAT−MDF),6 Mana, elemento Fogo2. Ambas somente em combate, aprendidas permanentemente por livros5/6 sem nível mínimo; números/alvos adaptados e provisórios. Efeitos reais, Mana e proteções raciais exercitados por ações nativas. Demais entradas abaixo são triagem, não implementação. Fontes locais The Known Spellbook pp.1–3 consultadas; não interpretar circinate como bloqueio de nível dos livros. HABILIDADES_M01_09.md registra fontes, fórmulas, testes e limites. Guild/ambientais/comércio permanecem posteriores; livros por loot M01-13.
+
 ## Fonte e método
 
 Catálogo-base: Arena_The Known Spellbook, páginas 1–5, e Arena_Magical Effects, páginas 2–5, PDFs da UESP em doc/wiki/. A consulta foi textual. Esta triagem analisa viabilidade; não autoriza excluir ou alterar automaticamente uma magia.

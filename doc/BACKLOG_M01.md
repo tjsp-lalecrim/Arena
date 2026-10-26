@@ -2,11 +2,13 @@
 
 ## Objetivo e estado
 
-Atualização operacional M01-08 R01: M01-07 R05 integrado em develop e1be141, P01–P08 aplicadas e arte aceita com ressalvas. M01-08 concluído tecnicamente em feature/m01-recursos-progressao para revisão, sem merge automático. Evidências em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md. O diagnóstico introdutório datado abaixo não deve substituir este estado atual.
+Atualização vigente M01-09 R01: M01-08 revisado/integrado/publicado em develop pelo merged3c736d, sem impedimentos encontrados. M01-09 implementado/validado em feature/m01-habilidades, para revisão sem integração automática. Escopo, critérios e limites em HABILIDADES_M01_09.md. Atualizações M01-08 abaixo são histórico de seu fechamento; não reabrem bônus ou arte aprovados.
+
+Histórico do fechamento M01-08 R01 (antes da integração): M01-07 R05 já integrado, bônus aplicados e arte aceita com ressalvas; recursos concluídos na feature para revisão. Evidências preservadas em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md; a autorização posterior resultou no merge d3c736d.
 
 Entregar uma demo jogável em Português Brasileiro: criar o personagem, acompanhar a introdução, explorar Imperial Dungeons e encerrar ao alcançar o Shift Gate. Este backlog detalha as decisões de DEMO_INICIAL.md, sem ampliar o marco para cidades ou quests posteriores.
 
-Estado de execução e evidências em VALIDACAO_M01.md. M01-01–08 possuem evidências nos escopos da tabela atual; M01-03 inclui abertura/gerenciador/salvamento/reabertura no editor, separados da inspeção visual de playtest NW.js ainda não declarada. M01-08 permanece na feature para revisão. M01-09–20 continuam a fazer. A documentação e o .gitignore isolados não comprovam implementação. Não há estimativas de esforço ou datas definidas.
+Estado de execução e evidências em VALIDACAO_M01.md. M01-01–09 possuem evidências nos escopos da tabela; M01-08 integrado, M01-09 na feature para revisão. Autoria no editor é separada da inspeção visual de playtest NW.js ainda não declarada. M01-10–20 continuam a fazer. A documentação e o .gitignore isolados não comprovam implementação. Não há estimativas de esforço ou datas definidas.
 
 P0 indica base necessária para começar e integrar; P1 indica requisito de conclusão da demo, não conteúdo opcional. Sistemas novos devem ser implementados em plugins desenvolvidos pelo Codex quando o motor nativo não atender, com documentação e configuração reutilizável conforme PLUGINS.md.
 
@@ -103,7 +105,7 @@ O backlog não cria issues, branches, commits ou publicações automaticamente. 
 
 Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundárias, cidades posteriores, toda a campanha, catálogo completo de magias e ferramentas extensas de autoria não são pré-requisitos desta demo. Reutilizar templates na autoria da dungeon é permitido, sem implicar gerador durante a partida.
 
-## Estado atual — M01-08 R01,26/10/2026
+## Estado atual — M01-09 R01,26/10/2026
 
 | Item | Estado | Evidência |
 | --- | --- | --- |
@@ -114,10 +116,11 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | M01-05 | Concluído | Contratos/API v1, save/load nativo, save gerado pela composição anterior, campos ausentes, recibos e isolamento; VALIDACAO_M01.md e PERSISTENCIA_M01.md |
 | M01-06 | Concluído (amostra desktop) | Matriz de critérios e limites em arte/ENCERRAMENTO_AMOSTRA_M01_06.md; direção aprovada e formatos no motor. Aparelho/combate completo/biblioteca final não declarados |
 | M01-07 | Concluído (criação-base desktop, com ressalvas aceitas) | Aprovação estética com defeitos adiados, P01–P08 provisórios implementados,981 verificações novas,234 de criação,16 roundtrips e27 de persistência; FECHAMENTO_M01_07.md. Equilíbrio de combate e aparelho continuam futuros |
-| M01-08 | Concluído tecnicamente, em feature para revisão | Recursos/máximos/escolhas+10,619 verificações/16 identidades, save R05 real, poções/cama/custo controlado/UI; RECURSOS_E_PROGRESSAO_M01_08.md e evidencias/m01-08/. Equilíbrio prático provisório |
-| M01-09 a M01-20 | A fazer | Técnicas/armas/encontros completos, eficácia prática dos bônus e campanha continuam futuros |
+| M01-08 | Concluído tecnicamente, integrado em develop |619 verificações, recursos/progressão; merged3c736d após revisão do fechamento. Equilíbrio prático provisório |
+| M01-09 | Concluído tecnicamente, em feature para revisão |628 verificações/192 ações nativas, pares por arma/sem arma, Vigor único, Cura/Dardo/Mana, livros transacionais, save/load e regressões; HABILIDADES_M01_09.md. Guild, loot de livros e batalha completa não declarados |
+| M01-10 a M01-20 | A fazer | Apresentação de combate/animações, encontros completos, equilíbrio prático e campanha continuam futuros |
 
-M01-05/06 integrados pelo merge7e7094c; M01-07 e suas revisões integrados pelo mergee1be141, preservando commits. M01-06 encerra exemplos, não biblioteca inteira. M01-07 entrega16 combinações-base com ressalvas aceitas e bônus provisórios, sem movimentos completos/armaduras variantes. M01-08 permanece em feature própria para revisão; não integrar automaticamente em develop/main nem criar release. Próximo elegível após revisão: **M01-09**, técnicas por arma e subconjunto de magias/livros; não iniciado nesta rodada.
+M01-05/06 integrados pelo merge7e7094c; M01-07 pelo mergee1be141; M01-08 pelo merged3c736d, preservando commits. M01-06 encerra exemplos, não biblioteca inteira. M01-07 preserva16 combinações-base e ressalvas aceitas. M01-09 permanece em feature própria para revisão, sem merge em develop/main ou release. Próximo item conforme dependências após revisão: **M01-10**, combate Side View/animações; não iniciado.
 
 R05 permanece a decisão vigente de M01-07; a atualização M01-08 trata somente recursos/progressão. Os registros R02/R03/R04 abaixo são históricos: aprovações/propostas pendentes nesses relatos não revogam a decisão posterior. Fonte exata em decisoes/M01_07_APROVACAO_R05.json; arquivos visuais/hash e pendências em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json e arte/PENDENCIAS_VISUAIS_M01_07.md.
 

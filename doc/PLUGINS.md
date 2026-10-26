@@ -1,5 +1,9 @@
 # Criação e documentação de plugins
 
+## Estado operacional M01-09
+
+Novos MV_AbilityRules0.1.0 (núcleo puro), Arena_Abilities0.1.0 (equipamento/execução/livros) e Arena_AbilityLab0.1.0 (cenário técnico), nessa ordem após os dez registros existentes. Documentos individuais em plugins/. Sem dependências externas ou outro consumidor de ArenaVigorCost; usa Arena_Resources. Livro usa uma transação própria, mantendo aprendizado/inventário nativos. Sem alterar engine/arte/Community_Basic. Configuração de conteúdo em ArenaAbilities.json, não no núcleo genérico.
+
 ## Diretrizes confirmadas
 
 Cada plugin criado deve ter sua funcionalidade e suas dependências documentadas. Buscar implementações reutilizáveis em outros projetos, separando comportamento genérico de conteúdo específico de Arena.

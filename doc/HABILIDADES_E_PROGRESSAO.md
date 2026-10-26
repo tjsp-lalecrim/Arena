@@ -2,6 +2,8 @@
 
 ## Diretrizes confirmadas
 
+Estado operacional M01-09 R01: implementados desarmado3/4, adaga5/6 e espada7/8 por equipamento, custos5/12 Vigor pelo consumidor M01-08, magias Cura9/Dardo10 com Mana8/6 e livros5/6 transacionais. Revalidação no início de ações nativas e atalhos técnicos incompatíveis invalidados, sem barra nova. Guild, fontes de loot e apresentação de batalha continuam futuras. Escopo/roteiro em HABILIDADES_M01_09.md; valores provisórios, P01–P08 e arte preservados.
+
 - As habilidades físicas são liberadas conforme a arma utilizada.
 - Vigor representa Stamina e é gasto somente em combate, através de técnicas.
 - Magias são aprendidas com magos da Mages Guild, tendo o original como referência de conteúdo e regras a consultar.
@@ -22,7 +24,7 @@ Cada tipo de arma deve oferecer no mínimo dois movimentos: leve e pesado. Os mo
 
 As técnicas de combate que utilizarem Stamina terão custo explícito. Movimento no mapa, patrulha, navegação de menus e outras ações fora do combate não devem consumir esse recurso. Ataque básico e outras ações não devem receber custo de Stamina automaticamente apenas por serem ações físicas.
 
-M01-08 escolheu recurso próprio, separado de TP. Não há regeneração passiva ou perda/reset ligada a TP. Poção4 restaura50 Vigor e a API/comando de cama restaura os três recursos integralmente fora de batalha. Inicial100 (+10 inicial Argoniano), evolução por escolha+10, custos controlados por nota de técnica apenas em batalha. Técnicas3–8 continuam desativadas até M01-09; custo5 foi executado isoladamente, sem combate completo. Contrato/valores provisórios em RECURSOS_E_PROGRESSAO_M01_08.md.
+M01-08 escolheu recurso próprio, separado de TP. Não há regeneração passiva ou perda/reset ligada a TP. Poção4 restaura50 Vigor e a API/comando de cama restaura os três recursos integralmente fora de batalha. Inicial100 (+10 inicial Argoniano), evolução por escolha+10. M01-09 ativa técnicas3–8 somente em batalha, conforme equipamento, usando o mesmo paySkillCost. Seleção/cancelamento não paga; execução válida paga uma vez mesmo em múltiplos efeitos/alvos; indisponibilidade ou falta de saldo não paga. Não há outra rotina descontando a tag. Contrato de recursos em RECURSOS_E_PROGRESSAO_M01_08.md; integração em HABILIDADES_M01_09.md.
 
 ## Balanceamento de magias
 
@@ -45,4 +47,4 @@ Validar o aprendizado antes de aplicar custo ou consumo. Quando a magia já for 
 - Uma tentativa repetida de aprender magia já conhecida não causa perda acidental de recursos.
 - As regras de aprendizado não introduzem classes profissionais ou restrições raciais não aprovadas.
 
-A progressão de máximos está implementada em M01-08: uma escolha de+10 em Vida/Mana/Vigor por nível, com configuração própria, confirmação/cancelamento e persistência idempotente. Não usa curvas de HP/MP da classe, não cura ao evoluir nem importa perks/progressão por perícias/peso. EXP/nível continuam nativos MV, sem profissões. Funcionamento técnico validado separadamente do balanceamento prático ainda pendente. Técnicas/armas, livros/magos e encontros completos permanecem nos itens próprios M01-09/10.
+A progressão de máximos está implementada em M01-08: uma escolha de+10 em Vida/Mana/Vigor por nível, sem cura ou curvas HP/MP da classe; EXP/nível nativos. M01-09 integra técnicas/armas e livros do subconjunto Cura/Dardo. Aprendizado por magos da Guild continua em marcos posteriores de cidades; drops/baús de livros em M01-13. Encontros completos, animações e equilíbrio prático continuam M01-10/20. Não importar profissões/perks/peso.
