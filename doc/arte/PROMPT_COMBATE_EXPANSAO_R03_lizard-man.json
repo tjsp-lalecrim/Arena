@@ -1,0 +1,13 @@
+{
+  "version": "R03-expansion",
+  "tool": "image_gen",
+  "id": "lizard-man",
+  "prompt": "Use case: identity-preserve. Expand the EXACT RIGHT-facing Arena Lizard Man of image1; image2 original Arena sprite confirms stocky dark olive-green reptile, teeth, TRIDENT and round shield, not a different species/outfit. Preserve existing painterly dark fantasy interpretation/identity and gear, not original pixelization. Exactly24 whole figures, SIX columns by FOUR rows, chronological frames left to right. Truly transparent1536x1024, cells256x256; creature/weapon occupy about200x180 so tail, shield and ALL three trident prongs have at least25px transparent margin, NEVER touch neighbors/crop. Same scale in all24. Row1 IDLE6 breathing and wary shield/trident stance with planted feet. Row2 THRUST6:neutral, trident withdraw anticipation, partial forward extension, extended RIGHT thrust IMPACT, half withdraw, exact neutral. Body/shoulder/elbow articulate progressively, shield stays attached to other arm. Row3 HURT6:neutral, torso recoil, compress behind shield, half recover, almost neutral, neutral. Row4 DEFEAT6:neutral losing strength, buckle, kneel, fall sideways, settle, fully lying still; trident/shield remain coherent and fit cell. Actual new intermediate drawings, no duplicated images/rigid translations, no new anatomy/horns/clothing/weapon redesign, no cute reptile. Tail matches image1 interpretation, not claimed as confirmed detail of original. No labels/grid/background/VFX.",
+  "referencesActuallyProvided": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\lizard-man-r02.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\monsters\\page13-1.png"
+  ],
+  "generatedFile": "exec-7c164f5a-879c-4d9f-8038-85271b04c96c.png",
+  "destination": "art/masters/combate-r03-expansao/lizard-man.png",
+  "status": "generated; technical and perceptual review required"
+}

@@ -1,5 +1,9 @@
 # Criação e documentação de plugins
 
+M01-10 R02: MV_MotionTimeline0.1.0 (núcleo puro) e Arena_BattleMotion0.2.0 (configuração/integração), após Arena_Battle. Sem consumidores novos de recursos/efeitos ou plugins externos.16 registros canônicos,14 anteriores preservados. Documentos individuais em plugins/; perfil R02 só piloto Bretã/rato, legacyR01 explicitamente separado. REVISAO_COMBATE_M01_10_R02.md contém vídeos/testes/limites; autoria no editor continua pendente.
+
+Atualização M01-10 R01: Arena_Battle0.1.0 após Arena_Abilities/Arena_Resources. Configuração ArenaBattle.json,14 registros canônicos com os13 anteriores preservados. Sem consumidores duplicados de Vigor/Mana, plugin externo ou alteração de motor. Documentação em plugins/Arena_Battle.md; aliases genéricos de ação explícitos, perfis ausentes geram erro. Batalha real no Map007; autoria no editor desta versão pendente, separada do Chrome. M01-09 integrado em develop782ebc8.
+
 ## Estado operacional M01-09
 
 Novos MV_AbilityRules0.1.0 (núcleo puro), Arena_Abilities0.1.0 (equipamento/execução/livros) e Arena_AbilityLab0.1.0 (cenário técnico), nessa ordem após os dez registros existentes. Documentos individuais em plugins/. Sem dependências externas ou outro consumidor de ArenaVigorCost; usa Arena_Resources. Livro usa uma transação própria, mantendo aprendizado/inventário nativos. Sem alterar engine/arte/Community_Basic. Configuração de conteúdo em ArenaAbilities.json, não no núcleo genérico.
@@ -69,3 +73,8 @@ MV_CharacterRules0.2.0 (funções puras, sem IDs/estado) e Arena_CharacterCreati
 ## M01-08
 
 MV_ResourceProgression0.1.0 (núcleo puro) e Arena_Resources0.1.0 (configuração específica, máximos/escolhas/Vigor, poções, descanso e interface mínima), nessa ordem ao final após Arena_CharacterCreation. Configuração em ArenaProgression.json; namespace arenaResources v1, sem espelhar HP/MP atuais. Documentos individuais em plugins/. Técnicas seguem indisponíveis até M01-09; Map005 é diagnóstico isolado. Community_Basic permanece OFF. Evidências técnicas e de autoria separadas em evidencias/m01-08/.
+
+
+## M01-10 R03
+
+Arena_BattleMotion0.3.0 amplia a cobertura para16 identidades/3 inimigos; actionMotion por inimigo, sem novo plugin ou consumidor de custos. MV_MotionTimeline permanece inalterado. Documentação em plugins/Arena_BattleMotion.md e EXPANSAO_COMBATE_M01_10_R03.md. R02 aprovado preservado. Autoria MV abrir/gerenciador/salvar/reabrir executada, separada do navegador; playtest visual NW.js/A56 e manual das variantes pendentes.

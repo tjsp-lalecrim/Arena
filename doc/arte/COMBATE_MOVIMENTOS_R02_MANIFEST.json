@@ -1,0 +1,861 @@
+{
+  "version": "M01-10/R02 pilot only",
+  "coverage": {
+    "actors": [
+      "breton.female.base"
+    ],
+    "enemies": [
+      1
+    ],
+    "notRevisedActors": 15,
+    "notRevisedEnemies": [
+      2,
+      3
+    ]
+  },
+  "approval": "owner manual deferred; technical inspection does not approve aesthetics",
+  "masters": [
+    {
+      "file": "art/masters/combate-r02/pilot-heavy.png",
+      "size": 2023129,
+      "sha256": "6791adce4186f0113c6088da72fcf59a15b923200c0430c039b6f940092a7717",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "candidate used; owner approval pending"
+    },
+    {
+      "file": "art/masters/combate-r02/pilot-light.png",
+      "size": 1882115,
+      "sha256": "428bc844c258fba3288bb5e4dbaad23dca646bc4be4b814144ed0d4a9855f2be",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "candidate used; owner approval pending"
+    },
+    {
+      "file": "art/masters/combate-r02/pilot-magic-item.png",
+      "size": 2279606,
+      "sha256": "cbc9bdb1ac5796547b4898c079b65bd7b7832f145bf2c129d28079d72f50d3c4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "candidate used; owner approval pending"
+    },
+    {
+      "file": "art/masters/combate-r02/pilot-strikes-repack.png",
+      "size": 1472659,
+      "sha256": "5a197c17a283a3e625ba3e330c7ee55050ac50a2f2f30bab95993337f194078b",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "status": "rejected: touching figures/cropped boots"
+    },
+    {
+      "file": "art/masters/combate-r02/pilot-strikes.png",
+      "size": 2211420,
+      "sha256": "b43d5078b5586d5dcc09e30bc2f40a95e7942ec426effae1c1cef48be7696446",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "rejected: touching figures"
+    },
+    {
+      "file": "art/masters/combate-r02/pilot-support.png",
+      "size": 2217438,
+      "sha256": "67139eadec48d5a7255cc0d5dc6c2b7cf7ea5295059d3c824d4b67d21bfa399d",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "candidate used; owner approval pending"
+    },
+    {
+      "file": "art/masters/combate-r02/rat.png",
+      "size": 2085993,
+      "sha256": "f20fd5688fd9874b2d571eb6af547c26df1f84846b5882bd35b9f451bb383bc2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "status": "candidate used; owner approval pending"
+    },
+    {
+      "file": "art/masters/combate-r02/weapons.png",
+      "size": 524225,
+      "sha256": "ebf53b6aa4b2f183a112b42cf54de681e07acba16229c7e846298d96c0220e8f",
+      "dimensions": [
+        1269,
+        1240
+      ],
+      "status": "candidate used; owner approval pending"
+    }
+  ],
+  "prompts": [
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_pilot-heavy.json",
+      "size": 2071,
+      "sha256": "8434b4dd0283751dd2978c7733eca42d811ea9382d02431854586a36464b804b"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_pilot-light.json",
+      "size": 1946,
+      "sha256": "e7b8b2744ab79ff792042384aabf56ab7c59b254576bc968cd1f8e30805c0881"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_pilot-magic-item.json",
+      "size": 2441,
+      "sha256": "4ca2f871f65ebd14221be6da212fa299c270a4d244b8fe2b00dfc8dc0225279d"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_pilot-strikes-repack.json",
+      "size": 1333,
+      "sha256": "fc34e3aa3298855b165b5467e9d072e30bc81617f5457a8e852ce043ff66eb09"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_pilot-strikes.json",
+      "size": 2661,
+      "sha256": "25e8ecbfdcc3f66da8015715ffa4fba1e69a109b57a492c519c7e9bd0beb63d1"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_pilot-support.json",
+      "size": 2469,
+      "sha256": "c38d14b70a1da540577dd8bdc1eb65a7038fb4b5ca5be74bf7d7437ffdf27c61"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_rat.json",
+      "size": 1638,
+      "sha256": "66b6f9f973414253946504245a8e96d3dd2a3c6a9b638a322f68f1dd29b0cb6b"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_weapons.json",
+      "size": 1522,
+      "sha256": "75293d7c2064838565ac8ab18b71efb9a9d1a43fd1b89b321c80585484da1e06"
+    }
+  ],
+  "exports": [
+    {
+      "file": "img/sv_actors/Arena_Combat_breton_female_r02.png",
+      "size": 340283,
+      "sha256": "d46343f5af25c51376c299a02f8837c2cffd0473deaecc41e158684ae482bc41",
+      "participant": "breton.female.base",
+      "cell": [
+        128,
+        112
+      ],
+      "frames": [
+        {
+          "motion": "idle",
+          "frame": 0,
+          "alphaBox": [
+            44,
+            16,
+            95,
+            104
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 1,
+          "alphaBox": [
+            44,
+            16,
+            94,
+            104
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 2,
+          "alphaBox": [
+            44,
+            16,
+            96,
+            104
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 3,
+          "alphaBox": [
+            44,
+            16,
+            97,
+            104
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 4,
+          "alphaBox": [
+            44,
+            16,
+            96,
+            104
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 5,
+          "alphaBox": [
+            44,
+            16,
+            96,
+            104
+          ]
+        },
+        {
+          "motion": "light",
+          "frame": 0,
+          "alphaBox": [
+            44,
+            16,
+            99,
+            104
+          ]
+        },
+        {
+          "motion": "light",
+          "frame": 1,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ]
+        },
+        {
+          "motion": "light",
+          "frame": 2,
+          "alphaBox": [
+            30,
+            18,
+            102,
+            104
+          ]
+        },
+        {
+          "motion": "light",
+          "frame": 3,
+          "alphaBox": [
+            24,
+            19,
+            103,
+            104
+          ]
+        },
+        {
+          "motion": "light",
+          "frame": 4,
+          "alphaBox": [
+            43,
+            18,
+            103,
+            104
+          ]
+        },
+        {
+          "motion": "light",
+          "frame": 5,
+          "alphaBox": [
+            44,
+            17,
+            99,
+            104
+          ]
+        },
+        {
+          "motion": "heavy",
+          "frame": 0,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ]
+        },
+        {
+          "motion": "heavy",
+          "frame": 1,
+          "alphaBox": [
+            44,
+            12,
+            106,
+            104
+          ]
+        },
+        {
+          "motion": "heavy",
+          "frame": 2,
+          "alphaBox": [
+            44,
+            18,
+            107,
+            104
+          ]
+        },
+        {
+          "motion": "heavy",
+          "frame": 3,
+          "alphaBox": [
+            35,
+            29,
+            112,
+            104
+          ]
+        },
+        {
+          "motion": "heavy",
+          "frame": 4,
+          "alphaBox": [
+            44,
+            21,
+            109,
+            104
+          ]
+        },
+        {
+          "motion": "heavy",
+          "frame": 5,
+          "alphaBox": [
+            44,
+            18,
+            103,
+            104
+          ]
+        },
+        {
+          "motion": "cast",
+          "frame": 0,
+          "alphaBox": [
+            44,
+            16,
+            92,
+            104
+          ]
+        },
+        {
+          "motion": "cast",
+          "frame": 1,
+          "alphaBox": [
+            44,
+            16,
+            92,
+            104
+          ]
+        },
+        {
+          "motion": "cast",
+          "frame": 2,
+          "alphaBox": [
+            43,
+            15,
+            91,
+            104
+          ]
+        },
+        {
+          "motion": "cast",
+          "frame": 3,
+          "alphaBox": [
+            30,
+            15,
+            92,
+            104
+          ]
+        },
+        {
+          "motion": "cast",
+          "frame": 4,
+          "alphaBox": [
+            43,
+            15,
+            89,
+            104
+          ]
+        },
+        {
+          "motion": "cast",
+          "frame": 5,
+          "alphaBox": [
+            44,
+            15,
+            87,
+            104
+          ]
+        },
+        {
+          "motion": "item",
+          "frame": 0,
+          "alphaBox": [
+            44,
+            16,
+            92,
+            104
+          ]
+        },
+        {
+          "motion": "item",
+          "frame": 1,
+          "alphaBox": [
+            44,
+            19,
+            92,
+            104
+          ]
+        },
+        {
+          "motion": "item",
+          "frame": 2,
+          "alphaBox": [
+            44,
+            16,
+            91,
+            104
+          ]
+        },
+        {
+          "motion": "item",
+          "frame": 3,
+          "alphaBox": [
+            44,
+            15,
+            92,
+            104
+          ]
+        },
+        {
+          "motion": "item",
+          "frame": 4,
+          "alphaBox": [
+            44,
+            18,
+            91,
+            104
+          ]
+        },
+        {
+          "motion": "item",
+          "frame": 5,
+          "alphaBox": [
+            44,
+            15,
+            87,
+            104
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 0,
+          "alphaBox": [
+            44,
+            17,
+            95,
+            104
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 1,
+          "alphaBox": [
+            44,
+            17,
+            99,
+            104
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 2,
+          "alphaBox": [
+            44,
+            25,
+            97,
+            104
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 3,
+          "alphaBox": [
+            44,
+            21,
+            99,
+            104
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 4,
+          "alphaBox": [
+            44,
+            17,
+            98,
+            104
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 5,
+          "alphaBox": [
+            44,
+            17,
+            96,
+            104
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 0,
+          "alphaBox": [
+            44,
+            21,
+            95,
+            104
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 1,
+          "alphaBox": [
+            42,
+            25,
+            91,
+            104
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 2,
+          "alphaBox": [
+            42,
+            46,
+            98,
+            104
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 3,
+          "alphaBox": [
+            32,
+            62,
+            96,
+            104
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 4,
+          "alphaBox": [
+            26,
+            75,
+            101,
+            104
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 5,
+          "alphaBox": [
+            25,
+            81,
+            103,
+            104
+          ]
+        }
+      ]
+    },
+    {
+      "file": "img/enemies/Arena_Combat_rat_r02.png",
+      "size": 173937,
+      "sha256": "69b1b1134d2c72ed446a045c9b4203253408af355e5860ca53fe782a9a01ba7b",
+      "participant": "1",
+      "cell": [
+        128,
+        80
+      ],
+      "frames": [
+        {
+          "motion": "idle",
+          "frame": 0,
+          "alphaBox": [
+            18,
+            33,
+            103,
+            74
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 1,
+          "alphaBox": [
+            20,
+            32,
+            100,
+            74
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 2,
+          "alphaBox": [
+            22,
+            31,
+            101,
+            74
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 3,
+          "alphaBox": [
+            20,
+            33,
+            103,
+            74
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 4,
+          "alphaBox": [
+            21,
+            33,
+            105,
+            74
+          ]
+        },
+        {
+          "motion": "idle",
+          "frame": 5,
+          "alphaBox": [
+            18,
+            33,
+            101,
+            74
+          ]
+        },
+        {
+          "motion": "bite",
+          "frame": 0,
+          "alphaBox": [
+            18,
+            31,
+            102,
+            74
+          ]
+        },
+        {
+          "motion": "bite",
+          "frame": 1,
+          "alphaBox": [
+            19,
+            33,
+            101,
+            74
+          ]
+        },
+        {
+          "motion": "bite",
+          "frame": 2,
+          "alphaBox": [
+            26,
+            32,
+            112,
+            74
+          ]
+        },
+        {
+          "motion": "bite",
+          "frame": 3,
+          "alphaBox": [
+            26,
+            32,
+            122,
+            74
+          ]
+        },
+        {
+          "motion": "bite",
+          "frame": 4,
+          "alphaBox": [
+            24,
+            35,
+            98,
+            74
+          ]
+        },
+        {
+          "motion": "bite",
+          "frame": 5,
+          "alphaBox": [
+            18,
+            32,
+            102,
+            74
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 0,
+          "alphaBox": [
+            18,
+            32,
+            103,
+            74
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 1,
+          "alphaBox": [
+            12,
+            26,
+            88,
+            74
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 2,
+          "alphaBox": [
+            19,
+            7,
+            100,
+            74
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 3,
+          "alphaBox": [
+            10,
+            25,
+            87,
+            74
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 4,
+          "alphaBox": [
+            22,
+            31,
+            106,
+            74
+          ]
+        },
+        {
+          "motion": "hurt",
+          "frame": 5,
+          "alphaBox": [
+            18,
+            32,
+            102,
+            74
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 0,
+          "alphaBox": [
+            19,
+            33,
+            102,
+            74
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 1,
+          "alphaBox": [
+            17,
+            32,
+            100,
+            74
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 2,
+          "alphaBox": [
+            22,
+            32,
+            104,
+            74
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 3,
+          "alphaBox": [
+            23,
+            35,
+            104,
+            74
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 4,
+          "alphaBox": [
+            21,
+            39,
+            106,
+            74
+          ]
+        },
+        {
+          "motion": "defeat",
+          "frame": 5,
+          "alphaBox": [
+            22,
+            43,
+            106,
+            74
+          ]
+        }
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "file": "img/pictures/Arena_weapon_dagger_r02.png",
+      "size": 1048,
+      "sha256": "ea021d88bc2910d9123df24bc94aa22b083a4f89d528eb28b60536e31cd414cb"
+    },
+    {
+      "file": "img/pictures/Arena_weapon_sword_r02.png",
+      "size": 1479,
+      "sha256": "73b3bd35c2d563e42dfed6ab50877f75443eb77c26624ad5a38429fb20ec3c95"
+    }
+  ],
+  "userInterfaceReferencesIgnored": [
+    {
+      "file": "doc/prints/revisao-m01-10-r02/01-arena-r01.png",
+      "size": 113645,
+      "sha256": "de3254e8e9b1c66e2b49e5fd03246cda80a5510dcc5c6956b2b94384bb56bc74"
+    },
+    {
+      "file": "doc/prints/revisao-m01-10-r02/02-composicao.png",
+      "size": 1387980,
+      "sha256": "c12c5f85b36952d6423b73eb24347cac4a8718679b96c95b7285d124d014bc5d"
+    },
+    {
+      "file": "doc/prints/revisao-m01-10-r02/03-habilidades.png",
+      "size": 1306529,
+      "sha256": "ec4e1a8fdb278964c24418d62ac9dcf9f53cf654830275c11b9f466e0aee8422"
+    },
+    {
+      "file": "doc/prints/revisao-m01-10-r02/04-inventario.png",
+      "size": 1291711,
+      "sha256": "7679a364715d69a790c30716bc7870ab016756acfca5c9c4468509b585e8b938"
+    }
+  ]
+}

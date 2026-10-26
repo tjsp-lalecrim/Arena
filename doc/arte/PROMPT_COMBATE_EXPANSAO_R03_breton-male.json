@@ -1,0 +1,14 @@
+{
+  "version": "M01-10/R03 expansion prerequisite to M01-11",
+  "tool": "image_gen built-in",
+  "transparent_background": true,
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_breton_male_r02_side.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\sv_actors\\Arena_Combat_breton_female_r02.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\breton-male-r02.png"
+  ],
+  "prompt": "Use case: identity-preserve. Production game animation expansion, NOT redesign. Image1 EXACT target male Breton identity: adult dark-haired man, dark brown open collar shirt, charcoal trousers, brown cuff boots, same face and build. Image3 high-resolution identity/outfit detail only. Image2 is APPROVED animation choreography/registration reference: copy its pose progression, camera, limb articulation, consistent cell scale, feet and LEFT-facing convention but replace ONLY the woman with the exact man of image1/3. Do not give him the woman's vest or cream blouse. Generate EXACTLY42 full-body figures, SIX columns by SEVEN rows, no labels/grid. Transparent PNG, target1536x1792 (256x256 cells). Standing figure about175px tall so extended hands and lying bodies leave at least25px transparent margin on ALL sides, NEVER touch neighboring figures. All42 use same scale. Row1 idle6 smooth breathing guard. Row2 light6: neutral, elbow withdraw, half extension, LEFT impact fist, half retract, neutral. Row3 heavy6: neutral, arm raised anticipation, high-hand torso load, downward-and-LEFT impact, recover, neutral. Row4 cast6: neutral, open palms focus, concentrate hands, open palm release LEFT, relax, neutral. Row5 item6: neutral, reach belt, lift small amber corked potion, drink at mouth, lower bottle, neutral. Row6 hurt6: neutral, recoil impact, compression, recover halfway, almost recover, neutral. Row7 defeat6: neutral weakening, knees buckle, kneel, onto supporting hands, fall on side, fully lying still. All rows start from SAME neutral pose. Exactly6 chronological frames per row, meaningful in-between drawings, not texture-noisy duplicate poses. Natural anatomy, planted feet during standing actions, stable torso size and clothes. No drawn weapon: empty gripping fist for later reusable dagger/sword layer, open hands for cast, small bottle only item middle frames. All hair/hands/boots/lying bodies FULLY contained. Figurative painterly dark fantasy matching identity refs; no pixel art, chibi, 3D, new costume, text, background, fake transparency checkerboard or effects.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-9d00700c-ad25-43cb-ba21-1085e1880f6e.png",
+  "master": "art/masters/combate-r03-expansao/breton-male.png",
+  "approval": "New candidate, not covered by approval of original pilot R02."
+}

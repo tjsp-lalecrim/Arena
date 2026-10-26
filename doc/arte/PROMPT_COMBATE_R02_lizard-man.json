@@ -1,0 +1,9 @@
+{
+  "id": "lizard-man",
+  "tool": "image_gen built-in",
+  "reference": "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\lizard-man.png",
+  "prompt": "Use case: precise-object-edit. This is a technical separation correction of the supplied twelve-frame motion sheet, not a redesign. Preserve EXACTLY the same character/creature, face, clothes, colors, anatomy, weapons and twelve different poses. Repack the twelve figures into exactly THREE equal columns by FOUR equal rows on a truly transparent background. Each figure must be a fully separated cutout with at least40px of empty transparent space on ALL sides, particularly between the two lying/collapsing figures in the bottom row, and between boots in one row and the head of the next. No figure may touch any other figure; no weapon, hand or foot may cross a cell boundary or be cropped. Make figures smaller within cells if necessary, maintaining the SAME scale across all twelve poses. Keep original LEFT-facing orientation for the human man or RIGHT-facing orientation for the green Lizard Man exactly as input. Do not invent missing parts, change clothing, alter racial anatomy or add new poses/text/effects/grid. Retain idle3, action3, hurt3, defeat3 in the same order and same painterly dark fantasy finish. Target1536x2048 transparent PNG. This correction is solely to enable non-destructive extraction without cutting hands, feet or trident.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-fb80eb24-e13d-4742-b978-d1b1145f19c4.png",
+  "master": "art/masters/combate-r01/lizard-man-r02.png",
+  "reason": "R01 has11 connected components: adjacent poses touch. Preserve R01; separate before export; no owner approval claimed."
+}

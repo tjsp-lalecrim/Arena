@@ -1,5 +1,7 @@
 # Interface e menus
 
+Direção registrada M01-10 R02 para **M01-11, não implementada**: capturas do responsável orientam campo mais amplo/cenário visível, barras próximas aos participantes, comandos por ícones, habilidades/itens em slots com custos/quantidades/descrições e barra de atalhos. Aplicar dark fantasy/identidade Arena; não copiar personagens, assets, valores ou regras do exemplo. Não incluir Recuar/fuga ou talentos raciais ativos por aparecerem nos prints, nem fixar automaticamente oito slots. Referências locais ignoradas e consulta pontual não normativa documentadas em CONSULTA_PONTUAL_INTERFACE_M01_10_R02.md. Nenhuma nova UI de slots foi implementada nesta rodada.
+
 ## Direção confirmada
 
 O menu de jogo e o menu de batalha serão refatorados para priorizar a organização em slots, com representação por ícones, descrições e quantidades onde forem cabíveis. Jogos de MMORPG são a referência para essa organização visual e interação.

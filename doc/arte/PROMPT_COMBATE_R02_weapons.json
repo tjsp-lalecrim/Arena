@@ -1,0 +1,12 @@
+{
+  "version": "M01-10/R02",
+  "tool": "image_gen built-in",
+  "transparent_background": true,
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_icones_v01.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Two reusable separate weapon cutouts for a dark fantasy 2D battle layer, not a character or icon panel. Input is approved Arena item palette/material reference: small steel dagger with dark leather grip. Generate TWO fully separated objects side by side on truly transparent background: LEFT a straight modest steel DAGGER; RIGHT a straight modest steel one-handed SWORD about1.6 times dagger length. Both point straight UP, hilts down. Neutral orthographic side view, not foreshortened, entire blade/guard/grip/pommel visible; blade on vertical axis, straight clean silhouette, worn steel warm brown leather dull brass. Same painterly figurative finish, simple readable48px-scale silhouette. No rune glow, skulls, giant fantasy blades, hands, bodies, stands, labels, grid or background. Reference does not establish a specific original sword design: sword is a conservative artistic interpretation using the same materials. Two objects only, no spare accessories.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-abf60085-52d6-46eb-b307-90ac3ba2e4d9.png",
+  "master": "art/masters/combate-r02/weapons.png",
+  "approval": "Candidate; no owner visual approval. Inspect actual cells and native sequences before expansion."
+}

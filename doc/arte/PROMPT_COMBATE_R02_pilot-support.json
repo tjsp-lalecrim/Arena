@@ -1,0 +1,13 @@
+{
+  "version": "M01-10/R02",
+  "tool": "image_gen built-in",
+  "transparent_background": true,
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_breton_female_r02_side.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\breton-female.png"
+  ],
+  "prompt": "Use case: identity-preserve. Production 2D SIDE VIEW articulated animation poses for Arena dark fantasy. Reference1 exact Breton woman's identity/style/outfit/LEFT-facing orientation; reference2 old motion study only for identity continuity, NOT its limited animation. Preserve adult woman, brown tied-back hair, cream blouse, brown leather vest, dark trousers, brown cuff boots. No portrait redesign. Exactly SIX equal columns, specified rows. Each cell contains ONE fully separated whole body, transparent margins, no touching neighbors, no clipped hands/hair/boots. Same anatomical scale across ALL cells, same ground baseline per cell, camera and body size never change. Meaningful new in-between drawings, NOT repeated images or translated rigid figures. Figurative painterly dark fantasy matching supplied exact woman, no pixel art/anime/3D. All poses face LEFT; spine/neck natural, no mirrored facing right. No background/text/grid/shadows/speed lines, no drawn weapons: gripping hand empty for a separate weapon layer. Feet in same planted locations whenever standing; rotate torso/arms naturally rather than sliding feet. Target1536x1024. Exactly THREE rows of6 distinct chronological frames. Row1 IDLE six-frame seamless breathing cycle in the supplied neutral guard, tiny chest/shoulder/hair motion, no stance shift. Row2 HURT six frames: neutral, impact chest recoil, maximum compression, begin recovery, halfway recovery, exact neutral guard. Row3 DEFEAT six frames: neutral loss of strength, knees buckle, kneeling, fall onto supporting hands, turn onto side, fully lying defeated. Keep body proportions and clothing constant and the full fallen body within its own cell. Smooth progressive joint articulation. Never show an arm amputated or a head floating. Each row begins in the SAME neutral stance so transitions match.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-67662b54-6ca0-46bf-9d54-7196ee2470ad.png",
+  "master": "art/masters/combate-r02/pilot-support.png",
+  "approval": "Candidate; no owner visual approval. Inspect actual cells and native sequences before expansion."
+}

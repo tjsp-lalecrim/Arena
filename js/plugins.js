@@ -14,5 +14,8 @@ var $plugins =
 {"name":"Arena_Resources","status":true,"description":"v0.1.0 Vida, Mana, Vigor próprio e evolução por escolha","parameters":{}},
 {"name":"MV_AbilityRules","status":true,"description":"v0.1.0 Seleção pura de técnicas por equipamento","parameters":{}},
 {"name":"Arena_Abilities","status":true,"description":"v0.1.0 Técnicas, magias e livros transacionais","parameters":{}},
-{"name":"Arena_AbilityLab","status":true,"description":"v0.1.0 Laboratório de ações nativas M01-09","parameters":{}}
+{"name":"Arena_AbilityLab","status":true,"description":"v0.1.0 Laboratório de ações nativas M01-09","parameters":{}},
+{"name":"Arena_Battle","status":true,"description":"v0.1.0 Combate nativo, animacoes por perfil e barras","parameters":{}},
+{"name":"MV_MotionTimeline","status":true,"description":"v0.1.0 Quadros, tempos e marco visual de impacto","parameters":{}},
+{"name":"Arena_BattleMotion","status":true,"description":"v0.2.0 Movimentos e armas separados: piloto e rato","parameters":{}}
 ];

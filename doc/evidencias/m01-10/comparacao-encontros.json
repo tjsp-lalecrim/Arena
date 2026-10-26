@@ -1,0 +1,685 @@
+{
+  "browser": "156.0.8078.47",
+  "fixture": "Level1 dagger, variance0, RNG0.5; actual native Scene_Battle. No numeric balancing changes.",
+  "samples": [
+    {
+      "race": "breton",
+      "troop": 1,
+      "skill": 5,
+      "turns": 1,
+      "elapsedMs": 5127,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 95,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "breton",
+      "troop": 1,
+      "skill": 6,
+      "turns": 1,
+      "elapsedMs": 5105,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 88,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "breton",
+      "troop": 2,
+      "skill": 5,
+      "turns": 2,
+      "elapsedMs": 8535,
+      "resources": {
+        "hp": {
+          "current": 91,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 90,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 91,
+      "level": 1
+    },
+    {
+      "race": "breton",
+      "troop": 2,
+      "skill": 6,
+      "turns": 1,
+      "elapsedMs": 5096,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 88,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "breton",
+      "troop": 3,
+      "skill": 5,
+      "turns": 3,
+      "elapsedMs": 13895,
+      "resources": {
+        "hp": {
+          "current": 55,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 85,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 2,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": [
+          2
+        ]
+      },
+      "hp": 55,
+      "level": 2
+    },
+    {
+      "race": "breton",
+      "troop": 3,
+      "skill": 6,
+      "turns": 2,
+      "elapsedMs": 10498,
+      "resources": {
+        "hp": {
+          "current": 70,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 76,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 2,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": [
+          2
+        ]
+      },
+      "hp": 70,
+      "level": 2
+    },
+    {
+      "race": "dark_elf",
+      "troop": 1,
+      "skill": 5,
+      "turns": 1,
+      "elapsedMs": 5086,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 95,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "dark_elf",
+      "troop": 1,
+      "skill": 6,
+      "turns": 1,
+      "elapsedMs": 5132,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 88,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "dark_elf",
+      "troop": 2,
+      "skill": 5,
+      "turns": 2,
+      "elapsedMs": 8581,
+      "resources": {
+        "hp": {
+          "current": 91,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 90,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 91,
+      "level": 1
+    },
+    {
+      "race": "dark_elf",
+      "troop": 2,
+      "skill": 6,
+      "turns": 1,
+      "elapsedMs": 5110,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 88,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "dark_elf",
+      "troop": 3,
+      "skill": 5,
+      "turns": 3,
+      "elapsedMs": 13990,
+      "resources": {
+        "hp": {
+          "current": 55,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 85,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 2,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": [
+          2
+        ]
+      },
+      "hp": 55,
+      "level": 2
+    },
+    {
+      "race": "dark_elf",
+      "troop": 3,
+      "skill": 6,
+      "turns": 2,
+      "elapsedMs": 10577,
+      "resources": {
+        "hp": {
+          "current": 70,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 76,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 2,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": [
+          2
+        ]
+      },
+      "hp": 70,
+      "level": 2
+    },
+    {
+      "race": "redguard",
+      "troop": 1,
+      "skill": 5,
+      "turns": 1,
+      "elapsedMs": 5096,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 95,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "redguard",
+      "troop": 1,
+      "skill": 6,
+      "turns": 1,
+      "elapsedMs": 5108,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 88,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "redguard",
+      "troop": 2,
+      "skill": 5,
+      "turns": 2,
+      "elapsedMs": 8503,
+      "resources": {
+        "hp": {
+          "current": 91,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 90,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 91,
+      "level": 1
+    },
+    {
+      "race": "redguard",
+      "troop": 2,
+      "skill": 6,
+      "turns": 1,
+      "elapsedMs": 5141,
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 88,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "hp": 100,
+      "level": 1
+    },
+    {
+      "race": "redguard",
+      "troop": 3,
+      "skill": 5,
+      "turns": 3,
+      "elapsedMs": 13996,
+      "resources": {
+        "hp": {
+          "current": 55,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 85,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 2,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": [
+          2
+        ]
+      },
+      "hp": 55,
+      "level": 2
+    },
+    {
+      "race": "redguard",
+      "troop": 3,
+      "skill": 6,
+      "turns": 2,
+      "elapsedMs": 10558,
+      "resources": {
+        "hp": {
+          "current": 70,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 76,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 2,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": [
+          2
+        ]
+      },
+      "hp": 70,
+      "level": 2
+    }
+  ],
+  "errors": []
+}

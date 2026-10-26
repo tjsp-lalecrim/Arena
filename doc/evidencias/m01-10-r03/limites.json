@@ -1,0 +1,7 @@
+{
+  "checks": [
+    "native attack with no targets finishes recovery without deadlock/effects/cost",
+    "technique selected while valid then Vigor0 before confirmation: skipped natively, no negative/partial debit or effect"
+  ],
+  "errors": []
+}

@@ -1,5 +1,9 @@
 # Banco mínimo e convenções M01
 
+M01-10 R02: ArenaBattleMotion.json v1 configura atlas/frames/durações/impacto/mãos por movimento, armas por wtype/empunhadura e cobertura parcial(1/16 personagem,1/3 inimigo). Camada visual lê arma nativa atual; relógio/bitmap ficam no Sprite e não entram no save. Sem mudança de schema persistente, banco, valores raciais ou pagamento de custos. Referência REVISAO_COMBATE_M01_10_R02.md.
+
+Atualização M01-10 R01: ArenaBattle.json v1 mapeia16 baseVisualId e inimigos1–3 para folhas3×4/células/apoio/tempo, aliases explícitos de movimentos e kit técnico. Map007 tem encontros301 por interação, sem fuga/derrota permitida, self switch após vitória e reinício explícito. Barras consultam estado real; sem cópia persistente ou mudança de schema. Skills/Items/Enemies/Troops, valores raciais e consumidores anteriores preservados. Nenhum item novo no início da campanha. COMBATE_M01_10.md contém limites e validações.
+
 Atualização operacional M01-09 R01: técnicas3–8 ativas com ocasião1 e disponibilidade derivada de arma/sem arma. Custos5/12 mantidos em ArenaVigorCost; Mana/Cura/Dardo e livros preservam IDs/valores. ArenaAbilities.json separa configurações; Map006 laboratório sem Battle Scene ou campanha. ArenaLearnSkill agora usa transação de aprendizado e consumo, sem requisito de nível. Não há livros no inventário inicial. Referência atual HABILIDADES_M01_09.md; afirmações antigas de tags sem consumidores/desativação abaixo descrevem a montagem inicial, não o estado vigente.
 
 Versão de esquema 1; feature/m01-dados, 25/10/2026. Banco inicial para integrar as próximas features, não catálogo completo ou balanceamento final. Os dados nativos são editáveis pelo MV 1.6.1; ArenaCatalog.json é catálogo próprio, carregado pelo consumidor Arena_CharacterCreation em M01-07. Não há classes profissionais: Aventureiro é somente o registro técnico exigido pelo MV.
@@ -79,3 +83,8 @@ Map003/tileset3 reservados para validação visual. Map001 e002 preservados. Fol
 ## Criação M01-07
 
 Map004: chegada técnica provisória após criação, tileset3, sem dungeon final. ArenaCharacterVisuals.json v1:16 chaves estáveis `<race>.<gender>.base`, referências de character/face/picture/svActor e grupos/skills de arma. Actor1/Class1 preservados como suporte técnico; nenhum registro por profissão/raça ou restrição de equipamento. ArenaCatalog passa a ter labels pt-BR e application=derived-after-confirmation, sem confundir aplicado com flag global do catálogo. Estado runtime segue Arena_Persistence e namespace arenaCreation v1. Vigor inicial100 (110 Argoniano) é adaptação provisória, sem gasto/progressão M01-08. Nomes/equipamentos/atributos/imagens nativos não são duplicados.
+
+
+## Apresentação M01-10 R03
+
+ArenaBattleMotion.json agora cobre16 identidades/3 inimigos, sem modificar banco de habilidades/itens/armas/inimigos. actionMotion do homem-lagarto é bite para Mordida paralisante11; estudo de tridente não integrado. Clock/quadro/mão não são dados persistentes. System.versionId regravado pelo editor durante a validação de autoria. EXPANSAO_COMBATE_M01_10_R03.md registra células/fontes e doença original do rato ainda sem contrato no subconjunto, a avaliar em combate/balanceamento.

@@ -1,5 +1,33 @@
 # Evidências de implementação M01
 
+## 26/10/2026 — M01-10 R03, expansão concluída tecnicamente
+
+Aprovação manual R02 associada a a61977b somente Bretã/rato, preservados byte a byte e por perfil. Escolha explícita: concluir a expansão antes de integrar.15 novas identidades/goblin/homem-lagarto agora usam R03, sete/quatro movimentos com seis células temporizadas, apoios de armas e mordida correspondente à skill11.22 prompts/masters não vazios,678 novas células,744 no conjunto, com retornos neutros reutilizados identificados. Não alegar744 desenhos exclusivos ou aprovação individual das variantes. Relato atual EXPANSAO_COMBATE_M01_10_R03.md; R01/R02 abaixo históricos.
+
+Evidências em evidencias/m01-10-r03:17 perfis novos executados pelo fluxo Scene_Battle com todos os quadros observados, adaga/espada/desarmado, consumo único, magia/poção, dano/derrota, vitória/retorno dos inimigos;47 WebM reais e decodificação por reprodução, pranchas/recortes1:1 inspecionados. Teste integrado de turnos/erro/esquiva/crítico/barras/save-load e limites sem alvo/seleção obsoleta passou. Regressões628 habilidades/192 ações,619 recursos,234 criação,981 bônus,27 persistência; validadores e núcleo puro passaram. Fixtures isoladas, sem saves pessoais, valores raciais/combate preservados.
+
+Autoria pelo editor: abriu Arena, F10 leu Arena_BattleMotion ON, salvou, fechou, reabriu nova janela e salvou novamente;16 registros semanticamente idênticos, estrutura canônica/UTF8 sem BOM. System.versionId alterado pelo editor; reformatações sem mudanças semânticas de Items/Skills/MapInfos descartadas após comparação exata. editor.json separa essa evidência do Chrome. Responsável mantém testes manuais adiados, novas variantes sem aprovação estética individual, playtest visual NW.js/Galaxy A56 pendentes; não são impedimentos funcionais demonstrados. Balanceamento provisório/limites em M01-20.
+
+## 26/10/2026 — revisão M01-10 R02, cobertura parcial explícita
+
+Branch inicialmente limpa8137dac. Somente breton.female.base e rato revisados:42/24 desenhos IA, seis por movimento, arma separada com apoio por quadro, leves/pesados e gestos de conjuração/poção distintos. Rejeitados/preservados dois estudos com figuras unidas/recortes; fontes/prompts/versões/hashes em arte/COMBATE_MOVIMENTOS_R02_MANIFEST.json. Todos os assets R01/retratos anteriores preservados. Outros15 personagens/2 inimigos ainda R01, não declarar cobertura R02.
+
+Chrome156.0.8078.47, jogo816×624/viewport1100×800:10 gravações completas do canvas e baseline R01, sem saves pessoais. Três encontros com troca adaga→espada→desarmado, custos5/12/Mana6, poção1, seis quadros de cada movimento observados, save/load posterior, vitória/retorno e derrota/game over. Dois efeitos/um useItem/um débito; ataque sem alvos termina sem travamento, técnica selecionada antes de perder Vigor é rejeitada. Teste detectou impacto uma atualização cedo; corrigido para aguardar o quadro exibido, não o próximo relógio. Traços finais/gravações em evidencias/m01-10-r02/resultado.json, limites.json;11 vídeos decodificados e filmstrips/GIFs inspecionados em recortes1:1. Não são replay artificial de atlas nem teste no editor.
+
+Regressões628 habilidades/192 ações raciais,619 recursos,234 criação+UI,27 persistência, StateStore/Runtime e matriz16 personagens/3 inimigos, com expectativas de seis quadros somente para piloto/rato; demais três. Núcleo alternativo de quatro quadros, validadores e66 células com alpha/margens/hash. Ajustes finais dos pontos de mão conferidos4x e em escala nativa, vídeos regravados. M01-10 continua em validação: avaliação de ritmo/peso, expansão e aprovação estética pendentes. Manual do responsável adiado; editor MV/gerenciador/salvar/reabrir/playtest NW.js/Galaxy A56 desta revisão não realizados. Canonical16/14 registros anteriores preservados verificados separadamente.
+
+## 26/10/2026 — M01-10 R01, batalha integrada (em validação)
+
+M01-09 revisado e integrado/publicado em develop782ebc8, preservando0e9f267 e seu histórico. Branch inicial limpa e sem divergência; feature/m01-combate criada a partir desse merge. Critérios, fontes, matriz e roteiro em COMBATE_M01_10.md. Main preservada, sem release ou integração da nova feature.
+
+Chrome156.0.8078.47,1100×800/jogo816×624: Scene_Battle real por evento301, turnos nativos, vitória/mapa/self switch/sem repetição e derrota/game over; fuga bloqueada. Técnicas5/6 e Mana9/10 pelas APIs anteriores, três poções, insuficiência/exato, cancelamento, erro/esquiva/crítico, dois impactos/um custo, save/load nativo após batalha. Resultados e capturas em evidencias/m01-10/resultado.json e ui.json. Mana inimiga0/10 foi fixture: painel mantém barra vazia; os inimigos distribuídos têm somente Vida. Corrigidos fundo de barra vazia e altura/espaçamento do painel.
+
+Matriz nativa em cobertura/resultado.json:16 identidades e três inimigos, três frames observados de cada estado espera/ação/dano/derrota. Folhas IA e prompts/hashes em arte/COMBATE_M01_10_MANIFEST.json;19 folhas/228 células com margens/alpha. Pranchas e capturas no tamanho final inspecionadas; não equivalem à aprovação do responsável. Ação do jogador genérica sem arma desenhada, aliases explícitos; continuidade/apoio e adequação da arma ainda impedem fechar integralmente a apresentação. M01-10 em validação, não concluído por métricas de pixels ou pelo piloto isolado.
+
+18 encontros determinísticos com Bretã/Elfa negra/Redguard, adaga nível1: leve/pesada vencem rato1/1, goblin2/1, homem-lagarto3/2 turnos, custos5/12 por ação. Registro comparacao-encontros.json; RNG0,5/variância0 e HP ampliado nas matrizes são fixtures em memória. Sem ajuste de P01–P08. Regressões:628 habilidades/192 ações,619 recursos,234 criação+UI,981 bônus,27 persistência, StateStore/Runtime e laboratório. Contextos descartáveis, sem saves pessoais. Resultados em evidencias/m01-10/regressoes; históricos preservados.
+
+Formato canônico UTF8 sem BOM/14 referências e13 registros anteriores idênticos verificados; motor, regras de custo, banco e arte aprovada anterior intactos. Abertura/gerenciador/salvar/reabrir no editor, playtest visual NW.js e Galaxy A56 desta versão **pendentes**. O responsável adiou testes manuais; não há nova aprovação manual. Relatos de versões anteriores abaixo permanecem históricos.
+
 ## 26/10/2026 — M01-09 R01, habilidades e livros
 
 Estado inicial limpo feature/m01-recursos-progressao2561830, sincronizado com origin; develop e1be141. Revisados diff/critério/evidências M01-08, validate-resources/validate-data e registros619/234/981/27, sem impedimento. Integração autorizada em develop pelo merged3c736d e publicação confirmada antes de criar feature/m01-habilidades. Nenhuma atribuição de relato manual antigo a código novo. main não promovida.

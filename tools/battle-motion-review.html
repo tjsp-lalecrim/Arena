@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8"><title>Arena — revisão de movimentos R02</title>
+<style>body{background:#17191d;color:#d8ccaf;font:18px sans-serif}canvas{display:block;margin:20px 0;max-width:none}</style>
+<p>Pranchas técnicas: desenho IA em escala nativa; rótulos e linhas de apoio externos. Revisão estética pendente.</p>
+<script>
+(async()=>{
+const root='../',data=await(await fetch(root+'data/ArenaBattleMotion.json')).json(),legacy=await(await fetch(root+'data/ArenaBattle.json')).json(),images={};
+async function img(folder,name){const k=folder+'/'+name;if(!images[k])images[k]=await new Promise((ok,no)=>{const i=new Image();i.onload=()=>ok(i);i.onerror=no;i.src=root+'img/'+k+'.png';});return images[k];}
+const pilot=data.actors['breton.female.base'],rat=data.enemies['1'];await img('sv_actors',pilot.file);await img('enemies',rat.file);await img('sv_actors',legacy.actors['breton.female.base'].file);await img('enemies',legacy.enemies['1'].file);for(const w of Object.values(data.weapons))await img('pictures',w.file);
+function board(id,title,rows){const canvas=document.createElement('canvas');canvas.id=id;canvas.width=1216;canvas.height=70+rows.length*176;document.body.append(canvas);const c=canvas.getContext('2d');c.fillStyle='#17191d';c.fillRect(0,0,canvas.width,canvas.height);c.fillStyle='#d8ccaf';c.font='19px sans-serif';c.fillText(title,16,26);
+rows.forEach((r,row)=>{const y=70+row*176,p=r.enemy?rat:pilot,folder=r.enemy?'enemies':'sv_actors',old=r.old&&(r.enemy?legacy.enemies['1']:legacy.actors['breton.female.base']),frames=r.old?[0,1,2].map(i=>({rect:[i*old.cell[0],old.cell[1],...old.cell]})):p.motions[r.key].frames,cell=r.old?old.cell:p.cell,ground=r.old?old.ground:p.ground;c.fillStyle='#d8ccaf';c.font='16px sans-serif';r.label.split('|').forEach((s,n)=>c.fillText(s,4,y+40+n*22));
+frames.forEach((f,i)=>{const x=160+i*176,ox=x+(176-cell[0])/2,oy=y+156-ground;c.strokeStyle='#343a40';c.beginPath();c.moveTo(x,y+156);c.lineTo(x+176,y+156);c.stroke();c.fillStyle='#a58a55';c.fillText(String(i),x+4,y+18);const w=r.weapon&&data.weapons[r.weapon];if(w&&f.hand){c.save();c.translate(ox+f.hand[0],oy+f.hand[1]);c.rotate(f.hand[2]*Math.PI/180);c.drawImage(images['pictures/'+w.file],-w.grip[0],-w.grip[1]);c.restore();}c.drawImage(images[folder+'/'+(old?old.file:p.file)],...f.rect,ox,oy,...cell);});});return canvas;}
+board('armas','Bretã feminina · comparação R01 / R02 · escala nativa · revisão pendente',[
+{old:true,label:'R01|ação genérica'}, {key:'idle',weapon:'1',label:'R02|espera / adaga'},
+{key:'light',weapon:'1',label:'R02|leve / adaga'},{key:'heavy',weapon:'1',label:'R02|pesada / adaga'},
+{key:'light',weapon:'2',label:'R02|leve / espada'},{key:'heavy',weapon:'2',label:'R02|pesada / espada'},
+{key:'light',label:'R02|leve / desarmado'},{key:'heavy',label:'R02|pesada / desarmado'}]);
+board('gestos','Bretã feminina · gestos, dano e derrota · escala nativa · revisão pendente',[
+{key:'cast',label:'R02|conjuração'},{key:'item',label:'R02|poção'}, {key:'hurt',weapon:'1',label:'R02|dano / adaga'},{key:'defeat',weapon:'1',label:'R02|derrota / adaga'}]);
+board('rato','Rato · comparação R01 / R02 · escala nativa · revisão pendente',[
+{enemy:true,old:true,label:'R01|bote'},{enemy:true,key:'idle',label:'R02|espera'},{enemy:true,key:'bite',label:'R02|bote'},{enemy:true,key:'hurt',label:'R02|dano'},{enemy:true,key:'defeat',label:'R02|derrota'}]);window.reviewReady=true;
+})();
+</script>

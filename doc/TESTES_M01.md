@@ -1,5 +1,17 @@
 # Execução e roteiro de testes M01
 
+## Revisão vigente — M01-10 R02
+
+REVISAO_COMBATE_M01_10_R02.md contém roteiro, cobertura1/16 e1/3, gravações e limites. Rodar tools/test-motion-timeline.cjs, validate-battle-motion.cjs, test-battle-motion.cjs(10 vídeos), test-battle-motion-edge.cjs e test-battle-coverage.cjs(ARENA_EVIDENCE_DIR para preservar R01). Necessário Chrome/Playwright local e servidor da raiz; contextos descartáveis. tools/inspect-motion-videos.cjs decodifica vídeos, build-motion-video-previews.py gera recortes/GIFs; não substituem inspeção no editor/mobile. Auditoria tools/audit-motion-r02.py. Responsável mantém testes manuais adiados; não registrar aceite estético automático.
+
+## Estado vigente — M01-10 R01
+
+Roteiro em COMBATE_M01_10.md: título Combate técnico, preparar(3,5), rato(7,5), goblin(6,8), homem-lagarto(10,8), reiniciar(11,5), novo participante(3,8). Eventos de interação, sem encontros automáticos. Confirmar novo participante inicia sessão técnica nova; cancelar preserva. Não usar saves pessoais.
+
+Testes: `node tools/test-battle.cjs`, `test-battle-ui.cjs`, `test-battle-coverage.cjs`, `test-battle-comparison.cjs`; Chrome/Playwright local e ARENA_URL de um servidor da raiz, padrão8766. Validadores: validate-data/resources/abilities/battle e `python tools/audit-battle-assets.py`. Contextos novos isolam slots. Matriz espera mensagens/ações/frames reais, sem substituir por apply direto.
+
+Conferir identidade, apoio, transparência, recortes, quatro estados e escala, recursos vazios versus ausentes, custos/cancelamento/poções, vitória sem repetição, derrota e save/load posterior. Ação genérica sem arma desenhada continua limitação. Testes manuais do responsável adiados; autoria/playtest visual no editor e Galaxy A56 desta versão pendentes. Não reatribuir aprovações antigas. O estado operacional M01-09 abaixo é histórico.
+
 ## Estado operacional — M01-09 R01
 
 `tools/test-abilities.cjs`:628 verificações e192 ações por BattleManager/startAction/updateAction/invokeAction, pagamento e efeitos nativos; compara raças/armas/níveis com fixtures determinísticas e não usa só fórmulas puras. Cobertura: técnica compatível/incompatível/removida, saldo suficiente/exato/insuficiente, cancelamento/forçada/sem alvo/erro, quatro aplicações/um pagamento, custos combinados sem parcial, magia conhecida/desconhecida/Mana, Cura real, livros válidos/repetidos/estoque múltiplo/rollback e menu nativo, save anterior2561830/load/atalhos. Resultado e capturas em evidencias/m01-09/.
@@ -67,3 +79,8 @@ Título > Validação visual R04 abre Map003; Enter diante de Ria(4,9), cela(7,9
 ## Criação M01-07
 
 `test-character-creation.cjs`: funções de nome e grupo de arma, teclado/cancelamento/revisão/confirmação,16 combinações e234 verificações de API/estado/bonificações/equipamento/save-load, imagens nativas vazias reconstruídas, flag ausente com recibo e rollback. `test-character-pointer.cjs`: mouse e toque80ms Android genérico emulado, previews, revisão/cancelamento sem gravação e remoção do campo HTML. Arquivos m01-07-* em evidencias/. Contextos Chrome descartáveis, slots1/2 somente nesses contextos. Regressões de laboratório agora selecionam arenaLab explicitamente; Novo Jogo é testado pela criação, não contornado como se fosse laboratório. A56 físico/NW.js visual/IME/fullscreen/desempenho não declarados.
+
+
+## Expansão M01-10 R03
+
+Executar tools/test-battle-expansion-r03.cjs com ARENA_EXPANSION_FINAL=1, tools/audit-battle-expansion-r03.py e tools/validate-battle-motion.cjs; Chrome/Playwright em contexto isolado, ARENA_URL para o servidor local. Evidências17 perfis novos/47 vídeos, regressões e autoria em evidencias/m01-10-r03. Roteiro manual em EXPANSAO_COMBATE_M01_10_R03.md. Arquivos/tempos R02 aprovados preservados; revisões anteriores são históricas. Sem alegação de Galaxy A56/NW.js visual ou aprovação estética das novas variantes.

@@ -1,0 +1,12 @@
+{
+  "version": "R03-expansion-repair",
+  "id": "nord-male-defeat",
+  "tool": "image_gen",
+  "prompt": "Use case: identity-preserve. Input image1 is the EXACT character and finish to preserve. Produce only SIX chronological DEFEAT animation frames for THIS SAME character, LEFT facing, same anatomy, face, hair/fur, shirt, trousers, boots, costume and painterly dark fantasy texture. No weapons, no identity redesign. Three columns by two rows, equal512px cells on transparent1536x1024. Full standing character300px high in first frame, same physical scale across all poses, ground level same relative baseline. Frame0 injured standing knees slightly bent;1 clutch torso and knee folding;2 kneel on one knee with chest lower;3 fall forwards onto hands and knees;4 settle side torso onto ground;5 fully lying on side, still recognizable, no blood. Every whole figure centered with60px transparent padding, all limbs/feet/tail fully visible, figures disconnected and never overlap. Exactly six different complete poses, no skipped blank cells, no texts/grid/background/shadows. No resurrection to idle at end. Preserve original approved LEFT-facing choreography; no mirror.",
+  "referencesActuallyProvided": [
+    "D:/RPG Maker MV/Projects/Arena/art/masters/combate-r03-expansao/nord-male.png"
+  ],
+  "generatedFile": "exec-616e8a78-0270-44f3-94db-ef5d00b3d55b.png",
+  "destination": "art/masters/combate-r03-expansao/nord-male-defeat.png",
+  "reason": "Source omitted required chronological poses; repair only missing sequence"
+}

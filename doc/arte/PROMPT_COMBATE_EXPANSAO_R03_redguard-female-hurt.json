@@ -1,0 +1,12 @@
+{
+  "version": "R03-expansion-repair",
+  "id": "redguard-female-hurt",
+  "tool": "image_gen",
+  "prompt": "Use case: identity-preserve. Image1 is EXACT Redguard female identity, clothing, dark skin, tied dark hair, white rolled-sleeve shirt, brown vest, trousers/boots and painterly finish. Generate ONLY SIX chronological HURT-and-RECOVERY frames. LEFT facing. Three columns two rows, equal512px cells, transparent1536x1024, standing height300px constant with60px clear padding. Frame0 neutral ready with clenched hands at chest;1 recoil upper torso backward slightly with feet grounded;2 hunch clutching abdomen headlower;3 begin straighten with forearm guarding chest;4 almost restored guard;5 neutral ready again. Same scale and floor, full feet and anatomy visible each frame. Exactly six figures, all separate no touching/crops/missingcells. No weapon, no new outfit or identity, no text/grid/effects/shadows/background.",
+  "referencesActuallyProvided": [
+    "D:/RPG Maker MV/Projects/Arena/art/masters/combate-r03-expansao/redguard-female.png"
+  ],
+  "generatedFile": "exec-4851d3d0-b612-4e3c-8259-e5de6d8c0287.png",
+  "destination": "art/masters/combate-r03-expansao/redguard-female-hurt.png",
+  "reason": "Source omitted required chronological poses; repair only missing sequence"
+}

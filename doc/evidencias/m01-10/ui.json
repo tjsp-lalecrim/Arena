@@ -1,0 +1,19 @@
+{
+  "sourceSnapshot": {
+    "js/plugins/Arena_Battle.js": "9e16553301514c7a86bbc1266452887c649a2ef8df7c812c0c6b67ea1c959fa5",
+    "data/ArenaBattle.json": "01f876b992e451ff25422f74803326c50cbfd108d80f865611dde265642866bb",
+    "data/Map007.json": "cf96c2b81b22e3b994bfbc3a830fcf49fa08a6901811410be4885d26056aa133",
+    "js/plugins.js": "5b0b06a89903ccddf111f310fc81ebc89807affcc2ac6b815a377a8a43875c4e"
+  },
+  "checks": [
+    "16 selectable profiles",
+    "cancel profile without changes",
+    "native profile confirm creates separate session",
+    "cancel technique before target costs zero",
+    "Cura native restores HP and costs8 MP",
+    "existing enemy Mana0/10 visible with empty gauge pixel",
+    "exact Vigor5 debit to0",
+    "native sword7/8 and unarmed3/4 pairs after equipment change, cost17 each pair"
+  ],
+  "errors": []
+}
