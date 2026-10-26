@@ -1,6 +1,6 @@
 # Criação e documentação de plugins
 
-Estado atual M01-12:20 registros no formato canônico,18 anteriores preservados; novos MV_EquipmentTransaction e Arena_Inventory. Sem dependência externa/Battlespire. Documentação dos dois em doc/plugins e relatório INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+Estado atual M01-12 R02: Arena_Inventory0.2.0 refina slots/ícones e modal comparativo sem alterar APIs/save ou dados;20 registros no formato canônico,18 anteriores preservados; novos MV_EquipmentTransaction e Arena_Inventory. Sem dependência externa/Battlespire. Documentação dos dois em doc/plugins e relatório INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
 
 M01-10 R02: MV_MotionTimeline0.1.0 (núcleo puro) e Arena_BattleMotion0.2.0 (configuração/integração), após Arena_Battle. Sem consumidores novos de recursos/efeitos ou plugins externos.16 registros canônicos,14 anteriores preservados. Documentos individuais em plugins/; perfil R02 só piloto Bretã/rato, legacyR01 explicitamente separado. REVISAO_COMBATE_M01_10_R02.md contém vídeos/testes/limites; autoria no editor continua pendente.
 

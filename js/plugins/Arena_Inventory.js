@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Inventário em slots, troca atômica e material de armadura.
+ * @plugindesc v0.2.0 Inventário em slots, troca atômica e material de armadura.
  * @author Codex
  * @help Após Arena_BattleUI e MV_EquipmentTransaction. Sem dependências externas.
  * Configuração/IDs: data/ArenaInventory.json. Não altera regras de combate.
@@ -115,7 +115,28 @@ var ArenaInventory,Scene_ArenaInventory;
     function Note(){this.initialize.apply(this,arguments);}
     Note.prototype=Object.create(Window_Base.prototype);Note.prototype.constructor=Note;
     Note.prototype.standardPadding=function(){return 10;};
-    Note.prototype.setText=function(t){if(t!==this._text){this._text=t;this.contents.clear();lines(this,t,0,0,this.contentsWidth(),3,20);}};
+    // Fit complete names into bounded lines; no ellipsis or clipped words.
+    function fittedName(w,text,x,y,width,max,height){
+        var rows=[],font=Math.min(20,height);
+        for(;font>=10;font--){w.contents.fontSize=font;rows=[];var row='';String(text).split(/\s+/).forEach(function(word){var next=row?row+' '+word:word;if(w.textWidth(next)>width&&row){rows.push(row);row=word;}else row=next;});if(row)rows.push(row);if(rows.length<=max)break;}
+        // Extremely long single words are fitted by Bitmap.drawText, without cropping.
+        if(rows.length>max)rows=rows.slice(0,max-1).concat(rows.slice(max-1).join(' '));
+        rows.forEach(function(row,n){w.contents.drawText(row,x,y+n*height,width,height);});
+    }
+    Note.prototype.setText=function(t){if(t!==this._text||this._comparison){this._comparison=null;this._text=t;this.refresh();}};
+    Note.prototype.setComparison=function(p,old,item){this._comparison={preview:p,old:old,item:item};this._text=null;this.refresh();};
+    Note.prototype.refresh=function(){
+        this.contents.clear();var model=this._comparison;
+        if(!model){lines(this,this._text,0,0,this.contentsWidth(),3,20);return;}
+        var p=model.preview,w=this.contentsWidth(),half=(w-16)/2;
+        this.resetTextColor();this.contents.fontSize=22;this.contents.drawText('Comparar · '+$dataSystem.equipTypes[actor().equipSlots()[p.slot]],0,0,w,27);
+        [model.old,model.item].forEach(function(item,n){var x=n*(half+16);this.contents.fillRect(x,34,half,80,'rgba(11,26,29,.85)');this.changeTextColor('#cbb785');this.contents.fontSize=18;this.contents.drawText(n?'Selecionado':'Atual',x+9,38,half-18,24);this.resetTextColor();if(item)icon(this,item,x+9,70,36);else{this.changeTextColor('#8e9b98');this.contents.drawText('—',x+9,70,36,34,'center');this.resetTextColor();}fittedName(this,item?item.name:'Sem equipamento',x+54,65,half-63,2,22);},this);
+        this.changeTextColor('#b7c1bc');lines(this,p.effects,0,122,w,2,16);
+        var columns=[[0,260,'Atributo','left'],[260,120,'Atual','center'],[380,160,'Após a troca','center'],[540,w-540,'Diferença','center']];
+        this.changeTextColor('#cbb785');this.contents.fontSize=18;columns.forEach(function(c){this.contents.drawText(c[2],c[0],174,c[1],27,c[3]);},this);
+        for(var id=0;id<8;id++){var y=207+id*31,d=p.after[id]-p.before[id];if(id%2===0)this.contents.fillRect(0,y,w,29,'rgba(25,44,47,.55)');this.resetTextColor();this.contents.fontSize=19;this.contents.drawText(TextManager.param(id),8,y,244,27);this.contents.drawText(String(p.before[id]),260,y,120,27,'center');this.contents.drawText(String(p.after[id]),380,y,160,27,'center');this.changeTextColor(d>0?'#9cda9b':d<0?'#f09c91':'#8e9b98');this.contents.drawText(d>0?'+'+d:d<0?String(d):'0',540,y,w-540,27,'center');}
+        this.resetTextColor();
+    };
     function Nav(){this.initialize.apply(this,arguments);}
     Nav.prototype=Object.create(Window_HorzCommand.prototype);Nav.prototype.constructor=Nav;
     Nav.prototype.windowWidth=function(){return Graphics.boxWidth;};Nav.prototype.windowHeight=function(){return 52;};Nav.prototype.standardPadding=function(){return 6;};Nav.prototype.maxCols=function(){return 3;};Nav.prototype.standardFontSize=function(){return 21;};
@@ -131,7 +152,8 @@ var ArenaInventory,Scene_ArenaInventory;
     Slots.prototype=Object.create(Window_Selectable.prototype);Slots.prototype.constructor=Slots;
     Slots.prototype.standardPadding=function(){return 12;};Slots.prototype.maxItems=function(){return actor().equipSlots().length;};Slots.prototype.itemHeight=function(){return 49;};
     Slots.prototype.refresh=function(){this.contents.clear();this.drawAllItems();};
-    Slots.prototype.drawItem=function(index){var r=this.itemRect(index),i=actor().equips()[index],s=SceneManager._scene;this.contents.fontSize=16;this.changeTextColor('#aaad9b');this.contents.drawText($dataSystem.equipTypes[actor().equipSlots()[index]],r.x+5,r.y,r.width-10,20);this.resetTextColor();this.contents.fontSize=19;this.contents.drawText(i?i.name:'— vazio —',r.x+6,r.y+22,r.width-12,23);if(s._drag&&s._drag.moving){var valid=!validate(actor(),index,resolve(s._drag.ref));this.contents.fillRect(r.x,r.y+r.height-2,r.width,2,valid?'#81b775':'#a25151');}};
+    Slots.prototype.drawItem=function(index){var r=this.itemRect(index),i=actor().equips()[index],s=SceneManager._scene;this.contents.fontSize=14;this.changeTextColor('#aaad9b');this.contents.drawText($dataSystem.equipTypes[actor().equipSlots()[index]],r.x+48,r.y,r.width-53,17);this.resetTextColor();if(i){icon(this,i,r.x+6,r.y+8,32);fittedName(this,i.name,r.x+48,r.y+17,r.width-53,2,15);}else{this.changeTextColor('#71807c');this.contents.fillRect(r.x+8,r.y+9,28,28,'rgba(70,85,81,.16)');this.contents.fontSize=17;this.contents.drawText('—',r.x+8,r.y+9,28,28,'center');this.contents.drawText('Sem equipamento',r.x+48,r.y+18,r.width-53,26);this.resetTextColor();}if(s._drag&&s._drag.moving){var valid=!validate(actor(),index,resolve(s._drag.ref));this.contents.fillRect(r.x,r.y+r.height-2,r.width,2,valid?'#81b775':'#a25151');}};
+    Slots.prototype.update=function(){Window_Selectable.prototype.update.call(this);var stamp=JSON.stringify(actor().equips().map(function(i){return i?[ref(i),i.name,i.iconIndex]:null;}));if(stamp!==this._equipStamp){this._equipStamp=stamp;this.refresh();}};
     Slots.prototype.updateHelp=function(){var s=SceneManager._scene;if(this.active)s._helpWindow.setText('Escolha um slot para filtrar as peças compatíveis e remover a atual. Tab alterna o foco.');};
     function Stats(){this.initialize.apply(this,arguments);}
     Stats.prototype=Object.create(Window_Base.prototype);Stats.prototype.constructor=Stats;Stats.prototype.standardPadding=function(){return 10;};
@@ -142,7 +164,7 @@ var ArenaInventory,Scene_ArenaInventory;
     Pager.prototype.windowWidth=function(){return config().leftWidth;};Pager.prototype.windowHeight=function(){return 64;};Pager.prototype.maxCols=function(){return 3;};Pager.prototype.standardPadding=function(){return 8;};Pager.prototype.standardFontSize=function(){return 18;};
     Pager.prototype.makeCommandList=function(){var s=SceneManager._scene;var pages=Math.max(1,Math.ceil((s._entries||[]).length/config().pageSize));this.addCommand('‹ Anterior','previous',pages>1);this.addCommand((s._page+1)+' / '+pages,'page',false);this.addCommand('Próxima ›','next',pages>1);};
     function Confirm(){this.initialize.apply(this,arguments);}
-    Confirm.prototype=Object.create(Window_HorzCommand.prototype);Confirm.prototype.constructor=Confirm;Confirm.prototype.windowWidth=function(){return 600;};Confirm.prototype.windowHeight=function(){return 64;};Confirm.prototype.standardPadding=function(){return 8;};Confirm.prototype.maxCols=function(){return 2;};Confirm.prototype.standardFontSize=function(){return 22;};
+    Confirm.prototype=Object.create(Window_HorzCommand.prototype);Confirm.prototype.constructor=Confirm;Confirm.prototype.windowWidth=function(){return 720;};Confirm.prototype.windowHeight=function(){return 64;};Confirm.prototype.standardPadding=function(){return 8;};Confirm.prototype.maxCols=function(){return 2;};Confirm.prototype.standardFontSize=function(){return 22;};
     Confirm.prototype.makeCommandList=function(){this.addCommand('Confirmar','confirm');this.addCommand('Cancelar','cancel');};
     Confirm.prototype.onTouch=function(triggered){if(!triggered)return;var i=this.hitTest(this.canvasToLocalX(TouchInput.x),this.canvasToLocalY(TouchInput.y));if(i>=0){this.select(i);this.processOk();}};
     Scene_ArenaInventory=function(){this.initialize.apply(this,arguments);};
@@ -157,8 +179,8 @@ var ArenaInventory,Scene_ArenaInventory;
         this._stats=theme(new Stats(config().leftWidth,424,Graphics.boxWidth-config().leftWidth,200));this._stats.refresh();this.addWindow(this._stats);
         this._pager=theme(new Pager(0,560));this._pager.setHandler('previous',this.page.bind(this,-1));this._pager.setHandler('next',this.page.bind(this,1));this._pager.setHandler('cancel',this.cancelGrid.bind(this));this._pager.deactivate();this.addWindow(this._pager);
         this.createActorWindow();this._actorWindow.hide();this._actorWindow.deactivate();
-        this._detail=theme(new Note(108,132,600,344));this._detail.hide();this.addWindow(this._detail);
-        this._confirm=theme(new Confirm(108,476));this._confirm.hide();this._confirm.deactivate();this._confirm.setHandler('confirm',this.commit.bind(this));this._confirm.setHandler('cancel',this.cancelConfirm.bind(this));this.addWindow(this._confirm);
+        this._detail=theme(new Note(48,32,720,490));this._detail.hide();this.addWindow(this._detail);
+        this._confirm=theme(new Confirm(48,522));this._confirm.hide();this._confirm.deactivate();this._confirm.setHandler('confirm',this.commit.bind(this));this._confirm.setHandler('cancel',this.cancelConfirm.bind(this));this.addWindow(this._confirm);
         this._dragSprite=new Sprite(new Bitmap(170,44));this.addChild(this._dragSprite);this._dragSprite.visible=false;
         this.refreshEntries();this._nav.deactivate();this._nav.select(this._mode==='equipment'?1:0);this._itemWindow.activate();this._itemWindow.select(0);
     };
@@ -179,7 +201,7 @@ var ArenaInventory,Scene_ArenaInventory;
         if(important(i)){this._helpWindow.setText('Item importante protegido. Uso narrativo pertence à quest.');this.focus(this._itemWindow);return;}
         this._pending={kind:'use',ref:ref(i)};this._detail.setText(i.name+'\n'+i.description+'\nConfirmar usa uma unidade somente se o efeito for válido.');this.showConfirm();
     };
-    Scene_ArenaInventory.prototype.offer=function(slot,r){var p=ArenaInventory.preview(slot,r);if(!p.ok){this.focus(this._itemWindow);this._helpWindow.setText(p.reason);return;}this._pending={kind:'equip',slot:slot,ref:r};var a=actor(),old=a.equips()[slot],i=resolve(r),text=(i?i.name:'Remover equipamento')+'\nAtual: '+(old?old.name:'vazio')+'\n'+p.effects+'\n';[2,3,4,5,6,7].forEach(function(n){text+=TextManager.param(n)+': '+p.before[n]+' → '+p.after[n]+'\n';});this._detail._text=null;this._detail.contents.clear();text.split('\n').forEach(function(line,n){this._detail.contents.fontSize=n<2?21:18;this._detail.contents.drawText(line,5,n*27,570,27);},this);this.showConfirm();};
+    Scene_ArenaInventory.prototype.offer=function(slot,r){var p=ArenaInventory.preview(slot,r);if(!p.ok){this.focus(this._itemWindow);this._helpWindow.setText(p.reason);return;}this._pending={kind:'equip',slot:slot,ref:r};this._detail.setComparison(p,actor().equips()[slot],resolve(r));this.showConfirm();};
     Scene_ArenaInventory.prototype.showConfirm=function(){[this._nav,this._itemWindow,this._slots,this._pager].forEach(function(w){w.deactivate();});this._detail.show();this._confirm.show();this._confirm.select(0);this._confirm.activate();};
     Scene_ArenaInventory.prototype.cancelConfirm=function(){this._pending=null;this._detail.hide();this._confirm.hide();this._confirm.deactivate();this.focus(this._itemWindow);this.updateDescription();};
     Scene_ArenaInventory.prototype.commit=function(){var p=this._pending,result;if(!p)return;this._confirm.deactivate();if(p.kind==='equip')result=ArenaInventory.equip(p.slot,p.ref);else{var i=resolve(p.ref),definition=i&&i.meta.ArenaLearnSkill;if(definition){var learned=ArenaAbilities.learnBook(actor(),i);result={ok:learned==='learned',reason:learned==='already-known'?'Magia já conhecida; livro preservado.':'Não foi possível aprender.'};}else{this._arenaUseItem=i;try{if(i&&$gameParty.hasItem(i)&&actor().canUse(i)&&this.canUse()){Scene_ItemBase.prototype.useItem.call(this);result={ok:true};}else result={ok:false,reason:'Sem efeito válido; item preservado.'};}finally{this._arenaUseItem=null;}}}this.cancelConfirm();this.refreshEntries();this._helpWindow.setText(result.ok?'Operação concluída.':result.reason);};
