@@ -1,5 +1,13 @@
 # Execução e roteiro de testes M01
 
+## Estado operacional — M01-08 R01
+
+M01-07 R05 integrado e aprovado, P01–P08 aplicadas. Os registros abaixo que dizem não haver criação/bônus são históricos das versões indicadas. Não reabrir estética aceita com ressalvas.
+
+`tools/test-resources-progression.cjs` usa Chrome/contexto descartável e save nativo produzido pela composição e1be141, sem saves pessoais. Cobre16 identidades, recursos atuais separados de máximos, escolhas idempotentes, níveis múltiplos/99/EXP nativa, HP/MP sem curva automática, poções nativas e item4 por menu, cama, limites, TP/regeneração/caminhada e UI confirmar/cancelar. Resultados/capturas em evidencias/m01-08/. `validate-resources.cjs` cobre configuração, reutilização pura, plugins canônicos/arquivos, manutenção de P01–P08/arte/motor e técnicas indisponíveis.
+
+Roteiro manual e coordenadas do Map005 em RECURSOS_E_PROGRESSAO_M01_08.md: título Laboratório de recursos; eventos x3/5/7/9/11/13 em y5; use menu Recursos / evolução e Itens, salve em slot exclusivo de teste. Não interpretar pagamento controlado como batalha jogável ou cama técnica como fonte narrativa confirmada. Evidência de editor é separada do navegador; não declarar Galaxy A56 físico ou playtest NW.js visual por emulação.
+
 ## Desktop — laboratório
 
 Validar separadamente a autoria no editor MV 1.6.1 e a execução por HTTP no Chrome. Abrir Game.rpgproject no editor não é equivalente a executar index.html no navegador. Exemplo PowerShell com Python instalado: `python -m http.server 8765 --bind 127.0.0.1`, depois http://127.0.0.1:8765/. Não usar file://. Nova partida abre Map001, laboratório técnico, não a dungeon final. Setas movem; Enter interage com o evento invisível em (8,5), imediatamente ao norte do início (8,6). Esc abre menu; salvar/carregar usa o sistema nativo, no navegador armazenado por origem. Não usar saves de testes como compromisso de compatibilidade com versões futuras.

@@ -22,7 +22,7 @@ Cada tipo de arma deve oferecer no mínimo dois movimentos: leve e pesado. Os mo
 
 As técnicas de combate que utilizarem Stamina terão custo explícito. Movimento no mapa, patrulha, navegação de menus e outras ações fora do combate não devem consumir esse recurso. Ataque básico e outras ações não devem receber custo de Stamina automaticamente apenas por serem ações físicas.
 
-O mapeamento técnico para TP ou para um recurso próprio ainda será escolhido. Se TP for utilizado, seus comportamentos nativos devem ser ajustados quando conflitarem com o conceito de Stamina. Não há regeneração passiva. A recuperação ocorre por poções ou camas; inicialmente uma cama restaura todo o Vigor, junto com vida e mana. Máximo e custos serão balanceados durante a feature.
+M01-08 escolheu recurso próprio, separado de TP. Não há regeneração passiva ou perda/reset ligada a TP. Poção4 restaura50 Vigor e a API/comando de cama restaura os três recursos integralmente fora de batalha. Inicial100 (+10 inicial Argoniano), evolução por escolha+10, custos controlados por nota de técnica apenas em batalha. Técnicas3–8 continuam desativadas até M01-09; custo5 foi executado isoladamente, sem combate completo. Contrato/valores provisórios em RECURSOS_E_PROGRESSAO_M01_08.md.
 
 ## Balanceamento de magias
 
@@ -45,4 +45,4 @@ Validar o aprendizado antes de aplicar custo ou consumo. Quando a magia já for 
 - Uma tentativa repetida de aprender magia já conhecida não causa perda acidental de recursos.
 - As regras de aprendizado não introduzem classes profissionais ou restrições raciais não aprovadas.
 
-A progressão de vida, mana e Stamina segue direção semelhante à de Skyrim, conforme PERSONAGEM.md; a regra concreta será definida na feature. Demais regras não especificadas seguem o padrão aplicável do MV, sem restaurar profissões do original. A implementação e o balanceamento ainda não foram realizados.
+A progressão de máximos está implementada em M01-08: uma escolha de+10 em Vida/Mana/Vigor por nível, com configuração própria, confirmação/cancelamento e persistência idempotente. Não usa curvas de HP/MP da classe, não cura ao evoluir nem importa perks/progressão por perícias/peso. EXP/nível continuam nativos MV, sem profissões. Funcionamento técnico validado separadamente do balanceamento prático ainda pendente. Técnicas/armas, livros/magos e encontros completos permanecem nos itens próprios M01-09/10.

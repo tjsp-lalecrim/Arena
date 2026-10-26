@@ -36,7 +36,7 @@ Consultar PERSONAGEM.md: nome, raça e gênero com assets predefinidos; progress
 
 Usar doc/wiki/ para dados da wiki e doc/prints/ para imagens de outros jogos que orientam a criação visual de mecânicas. Consultar DIRECAO_DE_ARTE.md para adaptar os exemplos sem alterar automaticamente o escopo.
 
-PENDENCIAS_ATUAIS.md é o checklist operacional mais recente. Consultá-lo antes de usar listas históricas de revisão. O .gitignore foi aplicado e a feature/documentacao-inicial está ativa, a partir de develop; verificar o estado do Git a cada tarefa.
+PENDENCIAS_ATUAIS.md é o checklist operacional mais recente. Consultá-lo antes de usar listas históricas de revisão. O .gitignore está aplicado; a indicação antiga de feature/documentacao-inicial ativa era histórica. M01-07 R05 foi aprovado/integrado em develop; P01–P08 estão aplicadas e a arte aprovada com ressalvas. M01-08 segue em feature própria; verificar o estado real do Git a cada tarefa.
 
 A verificação final em PENDENCIAS_ATUAIS.md confirma ausência de bloqueios de definição para começar o protótipo M01. Recursos opcionais ficam para próximos marcos. O trabalho restante é especificar, implementar, balancear e validar; não solicitar novamente decisões já confirmadas.
 

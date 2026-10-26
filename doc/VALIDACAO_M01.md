@@ -1,5 +1,21 @@
 # Evidências de implementação M01
 
+## 26/10/2026 — M01-08 R01, recursos e evolução
+
+Baseline limpa develop e1be141, feature/m01-recursos-progressao. M01-07 R05 aprovado/integrado, P01–P08 preservadas no catálogo e assets sem alterações. Resumos operacionais alinhados; relatos R02–R04 continuam históricos identificados.
+
+Fonte: manual oficial Skyrim Legendary Edition, p.6 impressa/PDFp.7, escolha entre três recursos; endereço/adaptação em RECURSOS_E_PROGRESSAO_M01_08.md. Configuração própria R01:100 Vida/50 Mana/100 Vigor (+10 inicial Argoniano), uma escolha de+10 por nível2–99, sem cura ao evoluir, sem curvas HP/MP MV. EXP/nível continuam nativos; não importa perks/skillsXP/peso. Números provisórios para balanceamento. MP com teto9999 para não truncar escolhas tardias no limite999 anterior.
+
+MV_ResourceProgression0.1.0 e Arena_Resources0.1.0, namespace arenaResources v1. HP/MP atuais nativos; base/escolhas/modificadores separados; Vigor em contrato próprio v1, sem TP/passivo. Save anterior consolida nível como baseline sem escolhas retroativas e preserva gasto/máximo; escolhas idempotentes por nível. Poção4 ativada50, poções2/3 nativas50/25, API de cama restaura três recursos. Técnicas3–8 indisponíveis até M01-09; só pagamento controlado de skill5, sem batalha/dano/encontros implementados.
+
+Evidências em `evidencias/m01-08/`: `test-resources-progression.cjs` passou619 verificações,16 identidades, save nativo R05 criado com plugins anteriores, gastos e vários roundtrips, escolhas1/múltiplas/nível99/EXP/pendentes, aplicação única, configuração alternativa, limites0/máximo, regeneração/TP/caminhada, poções/descanso, UI escolher/confirmar/cancelar e entrada Map005. Poção4 usada pelo menu nativo; eventos de gasto e cama também acionados por teclado. Capturas inspecionadas em816×624 (viewport1100×800), Chrome156.0.8078.47. Perfis/saves descartáveis, sem saves pessoais.
+
+Regressões: criação234, persistência27, bônus aprovados981, laboratório movimento/colisão/menu/save-load/dados nativos, StateStore e Runtime passaram. Ajustada uma expectativa histórica de criação: laboratório antigo sem identidade agora recebe Vigor neutro100 ao importar, sem ganhar raça/bônus. Nenhum critério de identidade removido. Evidências novas em subpasta regressoes/, sem sobrescrever R05. validate-data, validate-resources e sintaxe dos plugins passaram; zero arquivos ausentes/pageerrors nos cenários.
+
+Editor MV: reabertura antes da validação, F10/detalhes leram Arena_Resources ON e MV_ResourceProgression ON, salvar, fechar e reabrir em nova janela Arena sem erro. Comparação semântica dos dados: somente System.versionId alterado pelo editor; dez registros de plugins preservados, UTF-8 sem BOM e formato canônico. Registro em editor.json. Controle por teclado/acessibilidade; geometria de captura/clique indisponível, portanto não declaramos inspeção visual de playtest NW.js. Galaxy A56 físico/IME/fullscreen/desempenho não executados.
+
+M01-08 concluído tecnicamente no escopo autorizado, em feature para publicação/revisão, sem merge automático. Recursos reais do personagem e seus contratos validados; equilíbrio, duração de Vigor por encontro, técnicas/armas e camas narrativas ainda dependem M01-09/10/17/20. Cenário racial100/110/crescimento sem regrant atendido; demais cenários práticos permanecem futuros. M01-09 não iniciado.
+
 ## 26/10/2026 — fechamento M01-07 R05
 
 Decisão atual: aprovação estética com ressalvas, sem geração/correção de imagens nesta rodada. Manifesto `arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json` identifica 64 arquivos ativos e oito arquivos piloto, versões, dimensões e hashes; `arte/PENDENCIAS_VISUAIS_M01_07.md` registra bordas/recortes, orientação e o recorte do pé do piloto Khajiit. Essas falhas não foram corrigidas nem transformadas em padrão para gerações futuras. Registros R02/R03/R04 abaixo são históricos.
