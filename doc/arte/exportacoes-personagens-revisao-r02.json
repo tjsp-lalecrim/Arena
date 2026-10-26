@@ -1,0 +1,2212 @@
+{
+  "baselineCommit": "37e1729",
+  "revision": "M01-07 characters r02; anatomy masters r03; pending owner visual review",
+  "standards": {
+    "portraitCell": [
+      144,
+      144
+    ],
+    "portraitSheet": [
+      576,
+      288
+    ],
+    "eyeLineEstimate": 52,
+    "nominalCrownToJaw": 76,
+    "mapCell": [
+      48,
+      64
+    ],
+    "mapNominalFigureHeight": 56,
+    "mapFeetExclusive": 62,
+    "sideCell": [
+      96,
+      96
+    ],
+    "sideNominalFigureHeight": 88,
+    "sideFeetExclusive": 94,
+    "uiScale": 1
+  },
+  "masters": [
+    {
+      "file": "art/masters/criacao-r03/argonian-r03.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "fdf4c2a28b8a5531ef1cd5c2f6583f93c9c82cfad8e6fb7072b0062ab6bba327"
+    },
+    {
+      "file": "art/masters/criacao/breton-v01.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "0d3edb84761c8a3064ef4685f8d76e7bd9e70d2c7564866d2f2451ed56237ee9"
+    },
+    {
+      "file": "art/masters/breta-piloto-v01.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912"
+    },
+    {
+      "file": "art/masters/criacao/dark_elf-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "4ccc0c375575842af2bc4c390a87d6750150724993f13e862a0205e167ec2d8a"
+    },
+    {
+      "file": "art/masters/criacao/high_elf-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "c47a9caad31ff43a932f067affd138783392f15cc78959deb90b496423865999"
+    },
+    {
+      "file": "art/masters/criacao-r03/khajiit-r03.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "8c9ff5bc929c9a0c96a197a0efdb6754494e472556ba33bf081c3ac2677444ea"
+    },
+    {
+      "file": "art/masters/criacao/nord-v01.png",
+      "size": [
+        1087,
+        1447
+      ],
+      "sha256": "38bfb38f946ca1052db1372673c0432d6b6ef3835024a88e9acd1728fbc23a5a"
+    },
+    {
+      "file": "art/masters/criacao/redguard-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "eb2415dc59b964f089d645daee434829e3d7544e93cee156ef0d09da39a1ad29"
+    },
+    {
+      "file": "art/masters/criacao-r02/redguard-portraits-r02.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "56c63557ac387ebb1158e773094047cbaa4beae6bfdbdc7e653a161d8f2b92ad"
+    },
+    {
+      "file": "art/masters/criacao-r03/wood_elf-r03.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "6a633ab0bf2d663c3487c80a148df3f4d241151200aa7f28a69e1d0e1c21167e"
+    },
+    {
+      "file": "art/masters/criacao-r02/argonian-r02.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "04ef729de4aafa7ae9e4ea4230b4a8ec64a3db99dde990397040362ca737bf5b"
+    },
+    {
+      "file": "art/masters/criacao-r02/khajiit-r02.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "9103f3a1d2ef8fc62041b652793c275578fc9a41050efbb22ec6ab4eb7f29f48"
+    },
+    {
+      "file": "art/masters/criacao-r02/wood_elf-r02.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "39deec01e0fc0df7d0b9be09cd870ad3d8cc6e6b4f1ead5c0fd320bd2bf8ab74"
+    }
+  ],
+  "exports": [
+    {
+      "file": "img/characters/$Arena_argonian_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "83980fc933ad5272eb8ac85181c6393774a73c1732ad55315f6e1b1c7fad3263"
+    },
+    {
+      "file": "img/faces/Arena_argonian_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "a7b4b827149912e57c96e8d5db0bbe8095f247bf0ce088c7e620be0f8b262d73"
+    },
+    {
+      "file": "img/pictures/Arena_argonian_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "ecbb8d575dcd83435e40c7b018720a6c6740e7c50be0f3ecd7620007ae8935b0"
+    },
+    {
+      "file": "img/sv_actors/Arena_argonian_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "ce89da563df850c1ab9b388a15e6416e9e83d015874ef20cac9f2f1a6d9e6159"
+    },
+    {
+      "file": "img/characters/$Arena_argonian_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "5f8780c82496202397bbd4a4b0b6777e15fd7fb5e563079215fffbc14379f0b9"
+    },
+    {
+      "file": "img/faces/Arena_argonian_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "20f9b9ddb18423a6e652834ad34d27a5ff11bd7cfa9d7b69efae7cb583b31cf0"
+    },
+    {
+      "file": "img/pictures/Arena_argonian_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "105f613401de06fdd5a8d70ae7daad9cebcde82d97bbd8b14a54003f71f69007"
+    },
+    {
+      "file": "img/sv_actors/Arena_argonian_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "acf2753e6692adef412913ffa44145eee902f290fb1ca74b444a79d807553ebe"
+    },
+    {
+      "file": "img/characters/$Arena_breton_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "6d79ae95ba1ee5f39052da79713d488fc4af3fe1410afa73098ef8d3b41abc52"
+    },
+    {
+      "file": "img/faces/Arena_breton_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "b39d01d5606478890e2ac0a3186fb3bac3330dce1f5b57a4f0ea98272de33e91"
+    },
+    {
+      "file": "img/pictures/Arena_breton_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "ca9e47f01e3665b1fce52c671a511a5a6c8ca41138fbf625be5c9d1e72cf1a2c"
+    },
+    {
+      "file": "img/sv_actors/Arena_breton_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "cc82e3922d6e8e064cafc75d495de41b545916d9026079fda5a7f6beac0a66c3"
+    },
+    {
+      "file": "img/characters/$Arena_breton_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "967c6c9244edd3c8205911e4a62d1d2d9179320e3075dc6d5fc99a5a357a50f0"
+    },
+    {
+      "file": "img/faces/Arena_breton_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "bf47691e23d4685347abb2c8921709af7bb0d23294d5ea37debdf8d380950a9e"
+    },
+    {
+      "file": "img/pictures/Arena_breton_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "a73356117ba9ba00cc2ef85b48b711c1dd080b68e81bc6fceccffacf4a054db0"
+    },
+    {
+      "file": "img/sv_actors/Arena_breton_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "fba6b01fcaca01f12092509fc14dc3a20456521c2f447cf0aad7fe91e0543df3"
+    },
+    {
+      "file": "img/characters/$Arena_dark_elf_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "5e38c9de6cee32db60a44a558f3fb6a5b1eb3b77492f1bba227dfa54711d5f9b"
+    },
+    {
+      "file": "img/faces/Arena_dark_elf_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "e666aef6a5c16edaf0227e09b0e16fb139059735d64413bbe43645677cea37cc"
+    },
+    {
+      "file": "img/pictures/Arena_dark_elf_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "ce6bc8fc5c942ad549ce724b44dccbfd47a6c16117a2055f195e290f60ab64c5"
+    },
+    {
+      "file": "img/sv_actors/Arena_dark_elf_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "eeb0bfd975a0eb8871549481328b15a294c3c21668bc4f8ed2715317c1dfe07c"
+    },
+    {
+      "file": "img/characters/$Arena_dark_elf_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "93c6dade4a5357b8e8d39bf0ddc5f3f72642b1e5a4213409069e5223ac02f165"
+    },
+    {
+      "file": "img/faces/Arena_dark_elf_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "253fbb6aa25f2dbb72ff445d24c3cc72c8f609c0f58067d3e5d032d45319a23e"
+    },
+    {
+      "file": "img/pictures/Arena_dark_elf_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "cd40c821d55e1d0baf89b9992eb539536b99c95d2120fa51d08c7be4988bfe05"
+    },
+    {
+      "file": "img/sv_actors/Arena_dark_elf_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "8da65335634290958e24804995a5393cb349a543e44e0b32c2ec558a3cc0327b"
+    },
+    {
+      "file": "img/characters/$Arena_high_elf_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "a4fc99ef345b5adb18ef8a3cdc6e8c69ec1254130c857ec217030c001041dcc3"
+    },
+    {
+      "file": "img/faces/Arena_high_elf_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "72a09646c005e0e5edc649bd18c3b6ac26ef5a7f84fba2b8977fb7441906c8a0"
+    },
+    {
+      "file": "img/pictures/Arena_high_elf_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "9df88d24b85a18077d55c8af394a952b83cf1bce2fce22728b60e992ac417ca6"
+    },
+    {
+      "file": "img/sv_actors/Arena_high_elf_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "c38144195f8590ce9a8d0742f4218bb0fc31612c7fed0e2cd459205cb8add7c4"
+    },
+    {
+      "file": "img/characters/$Arena_high_elf_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "86614c8bc4d02847a9eea843cecd160c5d909ecdbb4c8aae5e06f912f799b579"
+    },
+    {
+      "file": "img/faces/Arena_high_elf_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "74ba4e1263128d0af40204dd64d0514c97989ce993fc77f9f7dbc8e24e659a90"
+    },
+    {
+      "file": "img/pictures/Arena_high_elf_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "1ff5320ac52b50f882a3aa0ec3368e0226126e03e7a262f37a39091932dfa18b"
+    },
+    {
+      "file": "img/sv_actors/Arena_high_elf_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "3f8064321345a6908c02aa029541ee460d9e5ae6b9261583f1b3394b6b6c85c8"
+    },
+    {
+      "file": "img/characters/$Arena_khajiit_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "3d471b29ef64e1b3216a24fa3bbc2b8b17e536615a61e1b0016cc8f411734226"
+    },
+    {
+      "file": "img/faces/Arena_khajiit_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "519691b6890c3156407182093a694d9ff80f5d7c198ee19d7bc19b73dbbd7afa"
+    },
+    {
+      "file": "img/pictures/Arena_khajiit_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "22e4ed978eebcbdd0a188366794ef2e08c1ef11cccf8c47247f05fd7d03f3e27"
+    },
+    {
+      "file": "img/sv_actors/Arena_khajiit_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "a190ed4c4c32062ad74aa793eb8aa81eefe06fc4840722343a34edfe80e1c1ba"
+    },
+    {
+      "file": "img/characters/$Arena_khajiit_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "543034c53b6f349ce50df5520402eca81cc8fd87f427192bfde29bc40a21977e"
+    },
+    {
+      "file": "img/faces/Arena_khajiit_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "fce84261635df368cca80f5b85e651e0f984eb89cc92266733922b4c90c09c27"
+    },
+    {
+      "file": "img/pictures/Arena_khajiit_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "19d50a4f1e5badf10655a18e19caab545d453602fd36c9ebb889adad659d688a"
+    },
+    {
+      "file": "img/sv_actors/Arena_khajiit_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "40ca8176077f0b7f353eafef6efa5348a729db6b67c7692bb0032ec29280a0f8"
+    },
+    {
+      "file": "img/characters/$Arena_nord_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "563655164c734c5538b763fa7f70dcd50d7c7a384d2823673347310462b188c1"
+    },
+    {
+      "file": "img/faces/Arena_nord_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "5b658ec7a16e96783a6a0b57a09771cc036f3b3afd064e76efba42618c9de517"
+    },
+    {
+      "file": "img/pictures/Arena_nord_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "aad10ba48f147ddb54f32c9dc2ce8a79b3475370572f2bf888e1061021f3a98e"
+    },
+    {
+      "file": "img/sv_actors/Arena_nord_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "e83adba251a94710b0098b927d364fc4ec74372543937c65adc891d41ff06087"
+    },
+    {
+      "file": "img/characters/$Arena_nord_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "790a8f2273029585e1c97dff271ac9c5109a9c6310a37c813fc1cd7a791d58d3"
+    },
+    {
+      "file": "img/faces/Arena_nord_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "217f340e04bed6d40941594e32f3b1d33f1621176af4e2afaaac0d364c53f350"
+    },
+    {
+      "file": "img/pictures/Arena_nord_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "cd2b7d1cc10ced977dae13a0ed8aa2ecc2297fd4b70a83989b212d65667c14e5"
+    },
+    {
+      "file": "img/sv_actors/Arena_nord_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "e2c3dc1905c418ab074c0b70ec768c82fbffb09e5bd4ac50b6ae8615c3ff5c43"
+    },
+    {
+      "file": "img/characters/$Arena_redguard_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "9c4b81a0d6d5db4a59a47c624db5856d08019508119632ae239dc788c9116264"
+    },
+    {
+      "file": "img/faces/Arena_redguard_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "7f71f9a4e0e33f5bd631645eb3210a9ed12f147a31ac04bd1474c243ac09332a"
+    },
+    {
+      "file": "img/pictures/Arena_redguard_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "64b8952af2d52ec154404e2dd83f6780ada8b04ff169931226e65ccddd858c33"
+    },
+    {
+      "file": "img/sv_actors/Arena_redguard_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "c548d1ef66ef94e709be10269ec30e934f533d8b634f0f5668dbb3dff21fac09"
+    },
+    {
+      "file": "img/characters/$Arena_redguard_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "9d018b7357a9fe247b5d9b4cb07b85bd4e901c358d4073d477cfff5a9765f90a"
+    },
+    {
+      "file": "img/faces/Arena_redguard_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "f96d981c1381735b5032087806a82026d692b69e7c59e3401007df821f200d8d"
+    },
+    {
+      "file": "img/pictures/Arena_redguard_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "0613e19e5b56c2f7d0efd3556950ee963bd2ee1e71cad95c9c335991556f91e9"
+    },
+    {
+      "file": "img/sv_actors/Arena_redguard_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "09ee972db6e572cf834c2ad539142a19307c321ed513c089387349571a8eb46d"
+    },
+    {
+      "file": "img/characters/$Arena_wood_elf_male_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "7de07fced5a14a774ec470cd2f18ffd915286fa4f6906641dc3a96d5b082e986"
+    },
+    {
+      "file": "img/faces/Arena_wood_elf_male_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "2e9361c5df3ff908ee56c41aa347623e91efd4ac572b85d405a10da2f8125b17"
+    },
+    {
+      "file": "img/pictures/Arena_wood_elf_male_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "94b3858e4a006af8f6d6f97c6ae8f4c55d540f72369da620176f29eb8b6f3b75"
+    },
+    {
+      "file": "img/sv_actors/Arena_wood_elf_male_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "17eb4ecc4ef6cfa263effecc01f945c4d5e94d5b7b95095c3b7c93c227e6cc6c"
+    },
+    {
+      "file": "img/characters/$Arena_wood_elf_female_r02.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "306bd018f1ee2a1fb8a59a6989efeedd45d1008a8bc2d88ebf75b9523f1927c4"
+    },
+    {
+      "file": "img/faces/Arena_wood_elf_female_r02.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "467ff24bcb8a5db2ae29e093ed9adbe4479f0063790addc08ec4141d2ad8a4e5"
+    },
+    {
+      "file": "img/pictures/Arena_wood_elf_female_r02_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "7913d5704aa04621eff6bdf811cc15296f0faaf40719e796d8f4a2c72b962445"
+    },
+    {
+      "file": "img/sv_actors/Arena_wood_elf_female_r02.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "1a45ed3006eddfa63977ef5c6084196b52019038d1bb87e5edbafdd8e5ed2224"
+    },
+    {
+      "file": "doc/arte/personagens-revisao-r02-retratos.png",
+      "size": [
+        880,
+        760
+      ],
+      "sha256": "a35d5dc3c804e3a27724a8fca9ce3ed4fe593d8efa62ecc230dc4fa8d7a37a68"
+    },
+    {
+      "file": "doc/arte/personagens-revisao-r02-pes.png",
+      "size": [
+        880,
+        640
+      ],
+      "sha256": "bb41f55c89e3d376a0c00c02d40ff49f050b42cda9e4d6a910f370ba6ebd3b91"
+    },
+    {
+      "file": "doc/arte/personagens-revisao-r02-antes-depois.png",
+      "size": [
+        760,
+        1200
+      ],
+      "sha256": "f36fdd5f7e8635c9e140395c2c7bb6c232f5e8c3ae0123d705d2656024de5047"
+    },
+    {
+      "file": "doc/arte/personagens-revisao-r02-direcoes-1.png",
+      "size": [
+        790,
+        960
+      ],
+      "sha256": "84f9549063fb2c77a5012f44cfc9f4df8652bf7de9a5593d63e5865e5db982ab"
+    },
+    {
+      "file": "doc/arte/personagens-revisao-r02-direcoes-2.png",
+      "size": [
+        790,
+        960
+      ],
+      "sha256": "06e5df464d8e31442928073b3d3b4c10ab972d7a284f8538a43491549b9c3212"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "argonian.male.base",
+      "manualProbeAnchors": [
+        96,
+        39,
+        2,
+        72
+      ],
+      "uniformScale": 0.5352112676056339,
+      "estimatedEyeTarget": [
+        88,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          7,
+          2,
+          137,
+          142
+        ],
+        "mapBoxes": [
+          [
+            10,
+            4,
+            38,
+            62
+          ],
+          [
+            13,
+            4,
+            34,
+            62
+          ],
+          [
+            14,
+            4,
+            34,
+            62
+          ],
+          [
+            10,
+            4,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          22,
+          2,
+          74,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          0,
+          12,
+          135,
+          144
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            39,
+            62
+          ],
+          [
+            13,
+            6,
+            37,
+            62
+          ],
+          [
+            11,
+            6,
+            35,
+            62
+          ],
+          [
+            10,
+            6,
+            39,
+            62
+          ]
+        ],
+        "sideBox": [
+          20,
+          6,
+          77,
+          94
+        ]
+      }
+    },
+    {
+      "id": "argonian.female.base",
+      "manualProbeAnchors": [
+        93,
+        31,
+        2,
+        62
+      ],
+      "uniformScale": 0.6031746031746031,
+      "estimatedEyeTarget": [
+        88,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          9,
+          2,
+          135,
+          142
+        ],
+        "mapBoxes": [
+          [
+            12,
+            4,
+            36,
+            62
+          ],
+          [
+            13,
+            4,
+            34,
+            62
+          ],
+          [
+            14,
+            6,
+            33,
+            62
+          ],
+          [
+            11,
+            4,
+            36,
+            62
+          ]
+        ],
+        "sideBox": [
+          19,
+          2,
+          77,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          0,
+          15,
+          140,
+          144
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            37,
+            62
+          ],
+          [
+            13,
+            6,
+            35,
+            62
+          ],
+          [
+            12,
+            6,
+            36,
+            62
+          ],
+          [
+            10,
+            6,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          16,
+          6,
+          78,
+          94
+        ]
+      }
+    },
+    {
+      "id": "breton.male.base",
+      "manualProbeAnchors": [
+        94,
+        44,
+        4,
+        78
+      ],
+      "uniformScale": 0.31393839254101263,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          6,
+          2,
+          137,
+          142
+        ],
+        "mapBoxes": [
+          [
+            11,
+            5,
+            37,
+            62
+          ],
+          [
+            16,
+            4,
+            31,
+            62
+          ],
+          [
+            16,
+            4,
+            31,
+            62
+          ],
+          [
+            11,
+            5,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          20,
+          2,
+          76,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          2,
+          9,
+          136,
+          144
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            37,
+            62
+          ],
+          [
+            17,
+            6,
+            32,
+            62
+          ],
+          [
+            16,
+            6,
+            31,
+            62
+          ],
+          [
+            12,
+            6,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          21,
+          6,
+          75,
+          94
+        ]
+      }
+    },
+    {
+      "id": "breton.female.base",
+      "manualProbeAnchors": [
+        94,
+        44,
+        3,
+        78
+      ],
+      "uniformScale": 0.23256830601092895,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          6,
+          2,
+          137,
+          142
+        ],
+        "mapBoxes": [
+          [
+            10,
+            5,
+            37,
+            62
+          ],
+          [
+            15,
+            4,
+            33,
+            62
+          ],
+          [
+            15,
+            5,
+            33,
+            62
+          ],
+          [
+            10,
+            8,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          22,
+          2,
+          73,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          3,
+          9,
+          136,
+          144
+        ],
+        "mapBoxes": [
+          [
+            11,
+            6,
+            37,
+            62
+          ],
+          [
+            13,
+            6,
+            36,
+            62
+          ],
+          [
+            12,
+            6,
+            35,
+            62
+          ],
+          [
+            10,
+            8,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          23,
+          6,
+          73,
+          94
+        ]
+      }
+    },
+    {
+      "id": "dark_elf.male.base",
+      "manualProbeAnchors": [
+        90,
+        51,
+        4,
+        85
+      ],
+      "uniformScale": 0.4196742002918787,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          3,
+          2,
+          140,
+          142
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            38,
+            62
+          ],
+          [
+            15,
+            4,
+            32,
+            62
+          ],
+          [
+            15,
+            4,
+            32,
+            62
+          ],
+          [
+            10,
+            5,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          2,
+          78,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          10,
+          6,
+          138,
+          137
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            37,
+            62
+          ],
+          [
+            16,
+            6,
+            32,
+            62
+          ],
+          [
+            16,
+            6,
+            32,
+            62
+          ],
+          [
+            10,
+            6,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          19,
+          6,
+          77,
+          94
+        ]
+      }
+    },
+    {
+      "id": "dark_elf.female.base",
+      "manualProbeAnchors": [
+        94,
+        47,
+        3,
+        79
+      ],
+      "uniformScale": 0.4501607717041801,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          8,
+          2,
+          135,
+          142
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            35,
+            62
+          ],
+          [
+            15,
+            4,
+            32,
+            62
+          ],
+          [
+            15,
+            6,
+            32,
+            62
+          ],
+          [
+            12,
+            6,
+            36,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          2,
+          77,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          6,
+          7,
+          133,
+          144
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            35,
+            62
+          ],
+          [
+            16,
+            6,
+            32,
+            62
+          ],
+          [
+            15,
+            6,
+            32,
+            62
+          ],
+          [
+            12,
+            6,
+            36,
+            62
+          ]
+        ],
+        "sideBox": [
+          20,
+          6,
+          76,
+          94
+        ]
+      }
+    },
+    {
+      "id": "high_elf.male.base",
+      "manualProbeAnchors": [
+        93,
+        44,
+        4,
+        78
+      ],
+      "uniformScale": 0.4216533248791313,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          9,
+          2,
+          134,
+          142
+        ],
+        "mapBoxes": [
+          [
+            11,
+            5,
+            36,
+            62
+          ],
+          [
+            16,
+            4,
+            31,
+            62
+          ],
+          [
+            16,
+            4,
+            31,
+            62
+          ],
+          [
+            11,
+            5,
+            36,
+            62
+          ]
+        ],
+        "sideBox": [
+          17,
+          2,
+          78,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          6,
+          9,
+          135,
+          144
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            36,
+            62
+          ],
+          [
+            17,
+            6,
+            32,
+            62
+          ],
+          [
+            16,
+            6,
+            30,
+            62
+          ],
+          [
+            12,
+            6,
+            36,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          6,
+          77,
+          94
+        ]
+      }
+    },
+    {
+      "id": "high_elf.female.base",
+      "manualProbeAnchors": [
+        95,
+        44,
+        3,
+        78
+      ],
+      "uniformScale": 0.41972386587771204,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          10,
+          2,
+          133,
+          142
+        ],
+        "mapBoxes": [
+          [
+            12,
+            4,
+            36,
+            62
+          ],
+          [
+            16,
+            4,
+            32,
+            62
+          ],
+          [
+            16,
+            5,
+            31,
+            62
+          ],
+          [
+            12,
+            4,
+            35,
+            62
+          ]
+        ],
+        "sideBox": [
+          19,
+          2,
+          77,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          6,
+          9,
+          131,
+          144
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            35,
+            62
+          ],
+          [
+            18,
+            6,
+            33,
+            62
+          ],
+          [
+            15,
+            6,
+            30,
+            62
+          ],
+          [
+            12,
+            6,
+            34,
+            62
+          ]
+        ],
+        "sideBox": [
+          20,
+          6,
+          75,
+          94
+        ]
+      }
+    },
+    {
+      "id": "khajiit.male.base",
+      "manualProbeAnchors": [
+        95,
+        45,
+        3,
+        74
+      ],
+      "uniformScale": 0.5203442879499217,
+      "estimatedEyeTarget": [
+        88,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          8,
+          2,
+          135,
+          142
+        ],
+        "mapBoxes": [
+          [
+            10,
+            5,
+            37,
+            62
+          ],
+          [
+            16,
+            4,
+            32,
+            62
+          ],
+          [
+            15,
+            4,
+            33,
+            62
+          ],
+          [
+            10,
+            5,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          21,
+          2,
+          75,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          0,
+          6,
+          130,
+          144
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            38,
+            62
+          ],
+          [
+            14,
+            6,
+            32,
+            62
+          ],
+          [
+            13,
+            6,
+            33,
+            62
+          ],
+          [
+            10,
+            6,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          19,
+          6,
+          78,
+          94
+        ]
+      }
+    },
+    {
+      "id": "khajiit.female.base",
+      "manualProbeAnchors": [
+        94,
+        45,
+        3,
+        76
+      ],
+      "uniformScale": 0.47788008084437456,
+      "estimatedEyeTarget": [
+        88,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          12,
+          2,
+          132,
+          142
+        ],
+        "mapBoxes": [
+          [
+            12,
+            4,
+            36,
+            62
+          ],
+          [
+            15,
+            4,
+            32,
+            62
+          ],
+          [
+            16,
+            5,
+            32,
+            62
+          ],
+          [
+            12,
+            4,
+            36,
+            62
+          ]
+        ],
+        "sideBox": [
+          20,
+          2,
+          76,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          4,
+          7,
+          127,
+          144
+        ],
+        "mapBoxes": [
+          [
+            11,
+            6,
+            37,
+            62
+          ],
+          [
+            15,
+            6,
+            33,
+            62
+          ],
+          [
+            16,
+            6,
+            33,
+            62
+          ],
+          [
+            10,
+            6,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          17,
+          6,
+          78,
+          94
+        ]
+      }
+    },
+    {
+      "id": "nord.male.base",
+      "manualProbeAnchors": [
+        92,
+        39,
+        3,
+        70
+      ],
+      "uniformScale": 0.4797763448617937,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          7,
+          2,
+          137,
+          142
+        ],
+        "mapBoxes": [
+          [
+            10,
+            4,
+            38,
+            62
+          ],
+          [
+            16,
+            4,
+            31,
+            62
+          ],
+          [
+            16,
+            4,
+            31,
+            62
+          ],
+          [
+            10,
+            4,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          20,
+          2,
+          76,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          0,
+          10,
+          143,
+          144
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            37,
+            62
+          ],
+          [
+            16,
+            6,
+            31,
+            62
+          ],
+          [
+            16,
+            6,
+            31,
+            62
+          ],
+          [
+            12,
+            6,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          21,
+          6,
+          75,
+          94
+        ]
+      }
+    },
+    {
+      "id": "nord.female.base",
+      "manualProbeAnchors": [
+        96,
+        37,
+        3,
+        72
+      ],
+      "uniformScale": 0.47301502622921665,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          7,
+          2,
+          136,
+          142
+        ],
+        "mapBoxes": [
+          [
+            12,
+            4,
+            36,
+            62
+          ],
+          [
+            15,
+            4,
+            32,
+            62
+          ],
+          [
+            16,
+            4,
+            32,
+            62
+          ],
+          [
+            12,
+            4,
+            35,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          2,
+          77,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          0,
+          13,
+          136,
+          144
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            35,
+            62
+          ],
+          [
+            16,
+            6,
+            32,
+            62
+          ],
+          [
+            16,
+            6,
+            31,
+            62
+          ],
+          [
+            12,
+            6,
+            35,
+            62
+          ]
+        ],
+        "sideBox": [
+          20,
+          6,
+          76,
+          94
+        ]
+      }
+    },
+    {
+      "id": "redguard.male.base",
+      "manualProbeAnchors": [
+        96,
+        40,
+        3,
+        80
+      ],
+      "uniformScale": 0.1572034336539456,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          2,
+          2,
+          141,
+          142
+        ],
+        "mapBoxes": [
+          [
+            10,
+            4,
+            38,
+            62
+          ],
+          [
+            14,
+            5,
+            34,
+            62
+          ],
+          [
+            14,
+            4,
+            34,
+            62
+          ],
+          [
+            9,
+            4,
+            39,
+            62
+          ]
+        ],
+        "sideBox": [
+          17,
+          2,
+          79,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          0,
+          15,
+          137,
+          144
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            37,
+            62
+          ],
+          [
+            16,
+            6,
+            35,
+            62
+          ],
+          [
+            13,
+            6,
+            32,
+            62
+          ],
+          [
+            10,
+            6,
+            39,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          6,
+          77,
+          94
+        ]
+      }
+    },
+    {
+      "id": "redguard.female.base",
+      "manualProbeAnchors": [
+        94,
+        48,
+        3,
+        81
+      ],
+      "uniformScale": 0.155011655011655,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          10,
+          2,
+          134,
+          142
+        ],
+        "mapBoxes": [
+          [
+            11,
+            4,
+            36,
+            62
+          ],
+          [
+            15,
+            4,
+            33,
+            62
+          ],
+          [
+            15,
+            7,
+            32,
+            62
+          ],
+          [
+            11,
+            6,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          15,
+          2,
+          81,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          5,
+          7,
+          134,
+          143
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            36,
+            62
+          ],
+          [
+            16,
+            6,
+            33,
+            62
+          ],
+          [
+            14,
+            6,
+            32,
+            62
+          ],
+          [
+            12,
+            6,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          16,
+          6,
+          80,
+          94
+        ]
+      }
+    },
+    {
+      "id": "wood_elf.male.base",
+      "manualProbeAnchors": [
+        95,
+        51,
+        4,
+        84
+      ],
+      "uniformScale": 0.4508474576271187,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          9,
+          2,
+          134,
+          142
+        ],
+        "mapBoxes": [
+          [
+            10,
+            4,
+            37,
+            62
+          ],
+          [
+            16,
+            4,
+            31,
+            62
+          ],
+          [
+            17,
+            5,
+            31,
+            62
+          ],
+          [
+            10,
+            4,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          2,
+          77,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          10,
+          5,
+          130,
+          138
+        ],
+        "mapBoxes": [
+          [
+            10,
+            6,
+            38,
+            62
+          ],
+          [
+            16,
+            6,
+            32,
+            62
+          ],
+          [
+            17,
+            6,
+            32,
+            62
+          ],
+          [
+            10,
+            6,
+            38,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          6,
+          76,
+          94
+        ]
+      }
+    },
+    {
+      "id": "wood_elf.female.base",
+      "manualProbeAnchors": [
+        95,
+        45,
+        3,
+        80
+      ],
+      "uniformScale": 0.4345340194396798,
+      "estimatedEyeTarget": [
+        92,
+        52
+      ],
+      "headWidthConstrained": false,
+      "before": {
+        "portraitAlphaBox": [
+          4,
+          2,
+          139,
+          142
+        ],
+        "mapBoxes": [
+          [
+            12,
+            4,
+            35,
+            62
+          ],
+          [
+            15,
+            4,
+            33,
+            62
+          ],
+          [
+            15,
+            5,
+            32,
+            62
+          ],
+          [
+            11,
+            4,
+            37,
+            62
+          ]
+        ],
+        "sideBox": [
+          18,
+          2,
+          78,
+          94
+        ]
+      },
+      "after": {
+        "portraitAlphaBox": [
+          1,
+          10,
+          137,
+          144
+        ],
+        "mapBoxes": [
+          [
+            12,
+            6,
+            36,
+            62
+          ],
+          [
+            16,
+            6,
+            35,
+            62
+          ],
+          [
+            14,
+            6,
+            32,
+            62
+          ],
+          [
+            11,
+            6,
+            36,
+            62
+          ]
+        ],
+        "sideBox": [
+          19,
+          6,
+          76,
+          94
+        ]
+      }
+    }
+  ],
+  "limitations": "15 static directional sets and 16 static side poses. Only Breton female has the pre-existing 3-phase walk. Repeated native SV cells are NOT full combat animations. Manual portrait anchors require visual owner review; source r03 has technical 2-source-pixel perimeter matte cleanup."
+}

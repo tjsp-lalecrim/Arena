@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-26",
+  "branch": "feature/m01-revisao-assets-personagens",
+  "baselineCommit": "37e1729",
+  "server": "127.0.0.1:8766; isolated helper only, existing8765 preserved",
+  "passed": [
+    "test-character-creation.cjs:234 checks plus UI",
+    "test-character-pointer.cjs:desktop mouse and generic emulated Android touch",
+    "test-character-visual-revision.cjs:16 UI previews,16 native save/load upgrades,16 map renders,256 native direction/pattern samples",
+    "test-persistence.cjs:27 checks",
+    "test-state-store.cjs",
+    "test-runtime.cjs",
+    "validate-data.cjs",
+    "audit-character-revision.py:192 map cells,864 SV cells,stable rules/IDs/status",
+    "audit-art-records.py:179 hashes/dimensions,7 prompt logs,canonical plugin list",
+    "git diff --check"
+  ],
+  "initialFailure": "New visual test tried Game_Map.setup before DataManager.loadMapData(4); fixed fixture sequencing. No product change to mask it.",
+  "notTested": [
+    "new editor/NW.js roundtrip or playtest for these revised assets",
+    "physical Galaxy A56",
+    "complete combat/walk cycles that do not exist"
+  ],
+  "aestheticReview": "pending owner"
+}
