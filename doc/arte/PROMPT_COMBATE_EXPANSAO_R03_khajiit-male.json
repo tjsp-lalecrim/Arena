@@ -1,0 +1,14 @@
+{
+  "version": "R03-expansion",
+  "tool": "image_gen",
+  "id": "khajiit-male",
+  "prompt": "Use case: identity-preserve. Arena production animation expansion, NOT aesthetic redesign. Image1 exact TARGET identity/outfit/skin/hair/gender reference. Image3 larger neutral TARGET detail, same identity only. Image2 approved Breton woman's atlas is CHOREOGRAPHY/REGISTRATION ONLY: copy seven motion rows and hand/foot logic, never copy her face, clothes or skin. Output exactly42 distinct full-body poses in SIX columns by SEVEN rows. Transparent PNG1536x1792, cells256x256; standing figure175px tall with25px empty margins all sides so hands/ears/boots/falling bodies never touch a neighbor or crop. Same scale across ALL42, natural neck/torso/limbs, LEFT facing in every frame for current player side. Row1 IDLE6 smooth breathing neutral guard. Row2 LIGHT6:neutral, elbow withdrawal, half extension, front gripping fist IMPACT to LEFT, half retract, neutral. Row3 HEAVY6:neutral, raise attacking arm, high-hand torso windup, forceful downward-left IMPACT, half recovery, neutral. Row4 CAST6:neutral, open hands focus, concentrate, open palm release LEFT, relax, neutral. Row5 POTION6:neutral, reach belt, lift small amber corked bottle, drink at mouth, lower, neutral. Row6 HURT6:neutral, recoil, compressed torso, half recover, almost recover, neutral. Row7 DEFEAT6:neutral weakening, knees buckle, kneeling, supporting hands on ground, falling on side, fully lying still. Every row begins/ends same neutral except defeat. Real intermediate articulated drawings, not six duplicates or translated sprites. Fixed planted foot support in standing actions, same clothing/proportions, preserve source facial and racial anatomy rather than generic animal. Empty closed grip for separate reusable weapon layer, no drawn weapon; open hands for magic, bottle only in potion middle frames. Painterly figurative dark fantasy exactly source finish/palette, no pixelization/anime/chibi/plastic3D, text, grid, background or VFX. TARGET IDENTITY CONSTRAINTS: Brown feline fur on face/hands, pointed feline ears, source exact muzzle/eyes/fur, brown shirt, black trousers/brown boots, masculine face/build. Don't replace head with pet cat, human face, a different fur pattern or add tail absent in source.",
+  "referencesActuallyProvided": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_khajiit_male_r02_side.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\sv_actors\\Arena_Combat_breton_female_r02.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\expansion-reference\\khajiit-male-neutral.png"
+  ],
+  "generatedFile": "exec-d6efc052-390f-468e-b1f6-30b2f07442b1.png",
+  "destination": "art/masters/combate-r03-expansao/khajiit-male.png",
+  "status": "generated; technical and perceptual review required"
+}

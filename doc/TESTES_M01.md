@@ -79,3 +79,8 @@ Título > Validação visual R04 abre Map003; Enter diante de Ria(4,9), cela(7,9
 ## Criação M01-07
 
 `test-character-creation.cjs`: funções de nome e grupo de arma, teclado/cancelamento/revisão/confirmação,16 combinações e234 verificações de API/estado/bonificações/equipamento/save-load, imagens nativas vazias reconstruídas, flag ausente com recibo e rollback. `test-character-pointer.cjs`: mouse e toque80ms Android genérico emulado, previews, revisão/cancelamento sem gravação e remoção do campo HTML. Arquivos m01-07-* em evidencias/. Contextos Chrome descartáveis, slots1/2 somente nesses contextos. Regressões de laboratório agora selecionam arenaLab explicitamente; Novo Jogo é testado pela criação, não contornado como se fosse laboratório. A56 físico/NW.js visual/IME/fullscreen/desempenho não declarados.
+
+
+## Expansão M01-10 R03
+
+Executar tools/test-battle-expansion-r03.cjs com ARENA_EXPANSION_FINAL=1, tools/audit-battle-expansion-r03.py e tools/validate-battle-motion.cjs; Chrome/Playwright em contexto isolado, ARENA_URL para o servidor local. Evidências17 perfis novos/47 vídeos, regressões e autoria em evidencias/m01-10-r03. Roteiro manual em EXPANSAO_COMBATE_M01_10_R03.md. Arquivos/tempos R02 aprovados preservados; revisões anteriores são históricas. Sem alegação de Galaxy A56/NW.js visual ou aprovação estética das novas variantes.

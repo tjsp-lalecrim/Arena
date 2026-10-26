@@ -1,5 +1,7 @@
 # Combate
 
+Estado operacional M01-10 R03: expansão técnica concluída nas16 identidades e três inimigos, com sete/quatro movimentos de seis células temporizadas. R02 Bretã/rato aprovado pelo responsável (a61977b) preservado; aprovação não estendida às novas variantes. Testes nativos/regressões e autoria abrir/gerenciador/salvar/reabrir executados; manual do responsável, playtest visual NW.js e Galaxy A56 pendentes. Ler EXPANSAO_COMBATE_M01_10_R03.md. M01-11 aguarda integração autorizada de M01-10; relatos R01/R02 abaixo são históricos.
+
 Estado vigente M01-10 R02: piloto Bretã/rato com desenhos intermediários, arma separada/apoios por quadro, leve/pesada, conjuração/poção, reação/queda e impacto nativo sincronizado. Não usar R01 genérico como descrição do piloto atual; outros15 personagens/2 inimigos continuam R01. REVISAO_COMBATE_M01_10_R02.md separa cobertura/testes/limites; M01-10 ainda em validação, manual adiado. Interface M01-11 apenas orientada pelos prints, sem implementação. Os parágrafos de estado R01/09 abaixo são históricos.
 
 Estado vigente M01-10 R01: batalha nativa por turnos no Map007, barras reais, vitória/retorno, derrota/game over e fuga bloqueada; quatro estados corporais mínimos nas16 combinações e três inimigos. Ação genérica sem arma visível e revisão de continuidade mantêm a apresentação em validação. COMBATE_M01_10.md separa implementação, testes, equilíbrio provisório e manual pendente. Patrulhas M01-15 e slots M01-11 não antecipados. Os relatos M01-09/08 e critérios abaixo são histórico/especificação.

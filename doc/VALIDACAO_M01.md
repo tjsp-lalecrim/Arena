@@ -1,5 +1,13 @@
 # Evidências de implementação M01
 
+## 26/10/2026 — M01-10 R03, expansão concluída tecnicamente
+
+Aprovação manual R02 associada a a61977b somente Bretã/rato, preservados byte a byte e por perfil. Escolha explícita: concluir a expansão antes de integrar.15 novas identidades/goblin/homem-lagarto agora usam R03, sete/quatro movimentos com seis células temporizadas, apoios de armas e mordida correspondente à skill11.22 prompts/masters não vazios,678 novas células,744 no conjunto, com retornos neutros reutilizados identificados. Não alegar744 desenhos exclusivos ou aprovação individual das variantes. Relato atual EXPANSAO_COMBATE_M01_10_R03.md; R01/R02 abaixo históricos.
+
+Evidências em evidencias/m01-10-r03:17 perfis novos executados pelo fluxo Scene_Battle com todos os quadros observados, adaga/espada/desarmado, consumo único, magia/poção, dano/derrota, vitória/retorno dos inimigos;47 WebM reais e decodificação por reprodução, pranchas/recortes1:1 inspecionados. Teste integrado de turnos/erro/esquiva/crítico/barras/save-load e limites sem alvo/seleção obsoleta passou. Regressões628 habilidades/192 ações,619 recursos,234 criação,981 bônus,27 persistência; validadores e núcleo puro passaram. Fixtures isoladas, sem saves pessoais, valores raciais/combate preservados.
+
+Autoria pelo editor: abriu Arena, F10 leu Arena_BattleMotion ON, salvou, fechou, reabriu nova janela e salvou novamente;16 registros semanticamente idênticos, estrutura canônica/UTF8 sem BOM. System.versionId alterado pelo editor; reformatações sem mudanças semânticas de Items/Skills/MapInfos descartadas após comparação exata. editor.json separa essa evidência do Chrome. Responsável mantém testes manuais adiados, novas variantes sem aprovação estética individual, playtest visual NW.js/Galaxy A56 pendentes; não são impedimentos funcionais demonstrados. Balanceamento provisório/limites em M01-20.
+
 ## 26/10/2026 — revisão M01-10 R02, cobertura parcial explícita
 
 Branch inicialmente limpa8137dac. Somente breton.female.base e rato revisados:42/24 desenhos IA, seis por movimento, arma separada com apoio por quadro, leves/pesados e gestos de conjuração/poção distintos. Rejeitados/preservados dois estudos com figuras unidas/recortes; fontes/prompts/versões/hashes em arte/COMBATE_MOVIMENTOS_R02_MANIFEST.json. Todos os assets R01/retratos anteriores preservados. Outros15 personagens/2 inimigos ainda R01, não declarar cobertura R02.

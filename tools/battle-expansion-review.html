@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>Arena — expansão R03</title>
+<style>body{margin:0;background:#17191d;color:#d8ccaf;font:16px sans-serif}canvas{display:block}</style>
+<script>
+(async()=>{
+ const root='../',entries=(await(await fetch(root+'doc/arte/COMBATE_EXPANSAO_R03_EXPORTS.json')).json()).profiles,cfg=await(await fetch(root+'data/ArenaBattleMotion.json')).json();
+ const key=new URLSearchParams(location.search).get('id'),entry=entries.find(e=>e.id===key);if(!entry)throw Error('Unknown participant '+key);
+ const load=src=>new Promise((ok,no)=>{let i=new Image;i.onload=()=>ok(i);i.onerror=no;i.src=root+src;});
+ const atlas=await load(entry.file),p=entry.profile,enemy=entry.file.includes('/enemies/'),weapons={};for(const [k,w]of Object.entries(cfg.weapons))weapons[k]=await load('img/pictures/'+w.file+'.png');
+ const rows=Object.keys(p.motions).map(k=>({key:k,weapon:enemy?null:'1'}));if(!enemy)rows.splice(3,0,{key:'light',weapon:'2'},{key:'heavy',weapon:'2'});
+ const canvas=document.createElement('canvas');canvas.id='review';canvas.width=1336;canvas.height=64+rows.length*150;document.body.append(canvas);const c=canvas.getContext('2d');c.fillStyle='#17191d';c.fillRect(0,0,canvas.width,canvas.height);c.font='18px sans-serif';c.fillStyle='#d8ccaf';c.fillText(key+' · R03 · escala nativa · inspeção técnica Codex, sem aprovação estética inferida',10,26);
+ rows.forEach((row,r)=>{let y=64+r*150;c.font='16px sans-serif';c.fillStyle='#d8ccaf';c.fillText(row.key+(row.weapon?' / arma'+row.weapon:''),4,y+35);p.motions[row.key].frames.forEach((f,n)=>{let x=168+n*192,ox=x+(192-p.cell[0])/2,oy=y+132-p.ground;c.strokeStyle='#48515b';c.beginPath();c.moveTo(x,y+132);c.lineTo(x+192,y+132);c.stroke();c.fillText(String(n),x,y+14);let w=row.weapon&&cfg.weapons[row.weapon];if(w&&f.hand){c.save();c.translate(ox+f.hand[0],oy+f.hand[1]);c.rotate(f.hand[2]*Math.PI/180);c.drawImage(weapons[row.weapon],-w.grip[0],-w.grip[1]);c.restore();}c.drawImage(atlas,...f.rect,ox,oy,...p.cell);});});window.reviewReady=true;
+})();
+</script>

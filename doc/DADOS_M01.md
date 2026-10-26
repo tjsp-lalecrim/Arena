@@ -83,3 +83,8 @@ Map003/tileset3 reservados para validação visual. Map001 e002 preservados. Fol
 ## Criação M01-07
 
 Map004: chegada técnica provisória após criação, tileset3, sem dungeon final. ArenaCharacterVisuals.json v1:16 chaves estáveis `<race>.<gender>.base`, referências de character/face/picture/svActor e grupos/skills de arma. Actor1/Class1 preservados como suporte técnico; nenhum registro por profissão/raça ou restrição de equipamento. ArenaCatalog passa a ter labels pt-BR e application=derived-after-confirmation, sem confundir aplicado com flag global do catálogo. Estado runtime segue Arena_Persistence e namespace arenaCreation v1. Vigor inicial100 (110 Argoniano) é adaptação provisória, sem gasto/progressão M01-08. Nomes/equipamentos/atributos/imagens nativos não são duplicados.
+
+
+## Apresentação M01-10 R03
+
+ArenaBattleMotion.json agora cobre16 identidades/3 inimigos, sem modificar banco de habilidades/itens/armas/inimigos. actionMotion do homem-lagarto é bite para Mordida paralisante11; estudo de tridente não integrado. Clock/quadro/mão não são dados persistentes. System.versionId regravado pelo editor durante a validação de autoria. EXPANSAO_COMBATE_M01_10_R03.md registra células/fontes e doença original do rato ainda sem contrato no subconjunto, a avaliar em combate/balanceamento.

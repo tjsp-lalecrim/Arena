@@ -1,3 +1,11 @@
+# Arena_BattleMotion0.3.0 — cobertura M01-10 R03
+
+Plugin próprio sem dependências externas; mesma ordem após Arena_Battle e MV_MotionTimeline, sem parâmetros/comandos novos. data/ArenaBattleMotion.json cobre16 identidades e inimigos1/2/3. Perfil de inimigo aceita actionMotion: goblin strike, homem-lagarto bite. Ausência usa bite para o rato R02 preservado; setup valida o movimento exigido, sem fallback estático. Não modifica useItem, fórmulas, custos ou persistência. Movimento atual continua transitório no Sprite, aparência reconstruída da identidade/equipamento ao carregar.
+
+Sete movimentos por jogador (idle/light/heavy/cast/item/hurt/defeat); quatro por inimigo (idle/ação/hurt/defeat), seis células com durações variáveis. R02 piloto/rato preservado. Apoios da expansão em art/masters/combate-r03-expansao/hands.json. Armas1/2 por camada, nenhuma quando desarmado, recolhidas nos gestos cast/item; ataque é light e defesa mantém guarda. Conteúdo/IDs permanecem separados do núcleo puro MVMotionTimeline, que aceita quantidades alternativas de quadros.
+
+Validação, fontes, limites de recorte, retornos neutros reutilizados e instruções em EXPANSAO_COMBATE_M01_10_R03.md. Testes nativos de17 novos perfis,47 vídeos decodificados/inspecionados, regressões e roundtrip de autoria no MV. Manual das variantes, NW.js visual/A56 e equilíbrio definitivo pendentes. Não é UI M01-11. O contrato detalhado R02 abaixo permanece histórico; suas afirmações de cobertura parcial/pendências de autoria foram substituídas neste escopo pela expansão R03.
+
 # Arena_BattleMotion0.2.0 — piloto R02
 
 Plugin próprio após Arena_Battle e MV_MotionTimeline, já dependentes de habilidades/recursos/persistência/criação. Sem plugins externos, parâmetros de editor ou comandos de plugin. Conteúdo em data/ArenaBattleMotion.json: schemaVersion, actors por baseVisualId, enemies por ID, skillMotions, weapons por wtypeId. Somente breton.female.base e inimigo1 revisados; perfis ausentes nessa revisão conservam explicitamente R01, sem promovê-los a cobertura nova.

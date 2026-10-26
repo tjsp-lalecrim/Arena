@@ -2,15 +2,13 @@
 
 ## Objetivo e estado
 
-Diretriz vigente desta rodada: aprovação manual R02 registrada para Bretã/rato (a61977b); concluir a expansão de M01-10 antes da integração, conforme escolha explícita do responsável. M01-11 solicitado, mas aguarda essa dependência; não criar sua feature a partir de uma integração parcial. Preservar as animações aprovadas e gerar apenas participantes faltantes. Registros anteriores abaixo são históricos até o próximo fechamento técnico.
-
-Atualização vigente M01-10 R02: feature/m01-combate **em validação**, sem nova integração. Piloto Bretã/rato têm intermediários, gestos, armas por camada, impacto nativo e vídeos;15 personagens/goblin/homem-lagarto permanecem R01. Expansão e avaliação perceptiva pendentes, sem fechar M01-10 por contagem de quadros. Manual do responsável adiado; editor/NW.js/Galaxy A56 pendentes. REVISAO_COMBATE_M01_10_R02.md é o registro atual. M01-09 integrado/publicado em develop782ebc8; relatos anteriores históricos.
+Estado operacional M01-10 R03: expansão técnica concluída nas16 identidades e três inimigos, com sete/quatro movimentos de seis células temporizadas. R02 Bretã/rato aprovado pelo responsável (a61977b) preservado; aprovação não estendida às novas variantes. Testes nativos/regressões e autoria abrir/gerenciador/salvar/reabrir executados; manual do responsável, playtest visual NW.js e Galaxy A56 pendentes. Ler EXPANSAO_COMBATE_M01_10_R03.md. M01-11 aguarda integração autorizada de M01-10; relatos R01/R02 abaixo são históricos.
 
 Histórico do fechamento M01-08 R01 (antes da integração): M01-07 R05 já integrado, bônus aplicados e arte aceita com ressalvas; recursos concluídos na feature para revisão. Evidências preservadas em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md; a autorização posterior resultou no merge d3c736d.
 
 Entregar uma demo jogável em Português Brasileiro: criar o personagem, acompanhar a introdução, explorar Imperial Dungeons e encerrar ao alcançar o Shift Gate. Este backlog detalha as decisões de DEMO_INICIAL.md, sem ampliar o marco para cidades ou quests posteriores.
 
-Estado de execução e evidências em VALIDACAO_M01.md. M01-01–09 possuem evidências nos escopos da tabela e estão integrados; M01-10 em validação na feature. M01-11–20 não iniciados. Autoria no editor é separada do navegador; a documentação isolada não comprova implementação. Não há estimativas de esforço ou datas definidas.
+Estado de execução e evidências em VALIDACAO_M01.md. M01-01–09 estão integrados; M01-10 concluído tecnicamente na feature, aguardando a integração autorizada após revisão. M01-11–20 não iniciados. Autoria no editor é separada do navegador; a documentação isolada não comprova implementação. Não há estimativas de esforço ou datas definidas.
 
 P0 indica base necessária para começar e integrar; P1 indica requisito de conclusão da demo, não conteúdo opcional. Sistemas novos devem ser implementados em plugins desenvolvidos pelo Codex quando o motor nativo não atender, com documentação e configuração reutilizável conforme PLUGINS.md.
 

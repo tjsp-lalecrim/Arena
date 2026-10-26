@@ -1,0 +1,184 @@
+[
+  {
+    "id": "argonian.male.base",
+    "side": "img/pictures/Arena_argonian_male_r02_side.png",
+    "source": "art/masters/combate-r01/argonian.png",
+    "sourceRect": [
+      54,
+      17,
+      224,
+      272
+    ],
+    "crop": "tmp/expansion-reference/argonian-male-neutral.png",
+    "sha256": "c01d916527ab2e1821a70e137e60527addeffec98fb44d1ea2add2d0b7a9bce9"
+  },
+  {
+    "id": "argonian.female.base",
+    "side": "img/pictures/Arena_argonian_female_r02_side.png",
+    "source": "art/masters/combate-r01/argonian.png",
+    "sourceRect": [
+      818,
+      16,
+      989,
+      271
+    ],
+    "crop": "tmp/expansion-reference/argonian-female-neutral.png",
+    "sha256": "3140933daecd49e16ca432bf0c59bd21cbe40eac5878fae4a1adb4aca88fb214"
+  },
+  {
+    "id": "dark_elf.male.base",
+    "side": "img/pictures/Arena_dark_elf_male_r02_side.png",
+    "source": "art/masters/combate-r01/dark_elf.png",
+    "sourceRect": [
+      62,
+      17,
+      237,
+      280
+    ],
+    "crop": "tmp/expansion-reference/dark_elf-male-neutral.png",
+    "sha256": "6b796d6e78544a1dd9b8eb6e082e1f100f9a05883967e136d0bbf63920579bc3"
+  },
+  {
+    "id": "dark_elf.female.base",
+    "side": "img/pictures/Arena_dark_elf_female_r02_side.png",
+    "source": "art/masters/combate-r01/dark_elf.png",
+    "sourceRect": [
+      829,
+      19,
+      999,
+      278
+    ],
+    "crop": "tmp/expansion-reference/dark_elf-female-neutral.png",
+    "sha256": "50eb4868ac2b5f86b87a118c9f0dd0441145887d206400abe88bd06a4c7677d5"
+  },
+  {
+    "id": "high_elf.male.base",
+    "side": "img/pictures/Arena_high_elf_male_r02_side.png",
+    "source": "art/masters/combate-r01/high_elf.png",
+    "sourceRect": [
+      72,
+      20,
+      238,
+      269
+    ],
+    "crop": "tmp/expansion-reference/high_elf-male-neutral.png",
+    "sha256": "457db24ae4bf75c21bc7b953c3c274a550b43e8e9daae6cc55f3692fef1ce64c"
+  },
+  {
+    "id": "high_elf.female.base",
+    "side": "img/pictures/Arena_high_elf_female_r02_side.png",
+    "source": "art/masters/combate-r01/high_elf.png",
+    "sourceRect": [
+      823,
+      23,
+      985,
+      269
+    ],
+    "crop": "tmp/expansion-reference/high_elf-female-neutral.png",
+    "sha256": "5023913b368e67584d0e4c7fc2035a0308e351417346d3e29b7c0018bf85d5ac"
+  },
+  {
+    "id": "khajiit.male.base",
+    "side": "img/pictures/Arena_khajiit_male_r02_side.png",
+    "source": "art/masters/combate-r01/khajiit.png",
+    "sourceRect": [
+      83,
+      14,
+      259,
+      272
+    ],
+    "crop": "tmp/expansion-reference/khajiit-male-neutral.png",
+    "sha256": "06e38dc90d4571bf3936a61427f3dde5768ec2c601779c467f03087b51e5bc79"
+  },
+  {
+    "id": "khajiit.female.base",
+    "side": "img/pictures/Arena_khajiit_female_r02_side.png",
+    "source": "art/masters/combate-r01/khajiit.png",
+    "sourceRect": [
+      854,
+      21,
+      1027,
+      272
+    ],
+    "crop": "tmp/expansion-reference/khajiit-female-neutral.png",
+    "sha256": "8b13cae9583729782845f0c52680457dd365663fc3b0c7662dbc21ad4ad39352"
+  },
+  {
+    "id": "nord.male.base",
+    "side": "img/pictures/Arena_nord_male_r02_side.png",
+    "source": "art/masters/combate-r01/nord.png",
+    "sourceRect": [
+      54,
+      26,
+      220,
+      282
+    ],
+    "crop": "tmp/expansion-reference/nord-male-neutral.png",
+    "sha256": "c87972590f789d006820b53526e8132ed4416ae33d610acc55393a72bca2ddb2"
+  },
+  {
+    "id": "nord.female.base",
+    "side": "img/pictures/Arena_nord_female_r02_side.png",
+    "source": "art/masters/combate-r01/nord.png",
+    "sourceRect": [
+      816,
+      31,
+      987,
+      284
+    ],
+    "crop": "tmp/expansion-reference/nord-female-neutral.png",
+    "sha256": "a93dc3186f5871e3e829c45b007d7dd79406157d44cb1e0736c52bb14980b43f"
+  },
+  {
+    "id": "redguard.male.base",
+    "side": "img/pictures/Arena_redguard_male_r02_side.png",
+    "source": "art/masters/combate-r01/redguard.png",
+    "sourceRect": [
+      59,
+      18,
+      244,
+      283
+    ],
+    "crop": "tmp/expansion-reference/redguard-male-neutral.png",
+    "sha256": "2d12717d6d499816d21b07eb69baf171390e89d667c2bafe8f06aac58b004b07"
+  },
+  {
+    "id": "redguard.female.base",
+    "side": "img/pictures/Arena_redguard_female_r02_side.png",
+    "source": "art/masters/combate-r01/redguard.png",
+    "sourceRect": [
+      825,
+      20,
+      1007,
+      282
+    ],
+    "crop": "tmp/expansion-reference/redguard-female-neutral.png",
+    "sha256": "47326fdc92181418d8d56ae46592eab257223906e4a2f8cfb3b32ebb4afa473c"
+  },
+  {
+    "id": "wood_elf.male.base",
+    "side": "img/pictures/Arena_wood_elf_male_r02_side.png",
+    "source": "art/masters/combate-r01/wood_elf.png",
+    "sourceRect": [
+      54,
+      22,
+      233,
+      294
+    ],
+    "crop": "tmp/expansion-reference/wood_elf-male-neutral.png",
+    "sha256": "134ac2f78c6896f55a0eb7fbdccf3cb5b2bc10539f291852a3155de0d9daeb84"
+  },
+  {
+    "id": "wood_elf.female.base",
+    "side": "img/pictures/Arena_wood_elf_female_r02_side.png",
+    "source": "art/masters/combate-r01/wood_elf.png",
+    "sourceRect": [
+      822,
+      26,
+      994,
+      294
+    ],
+    "crop": "tmp/expansion-reference/wood_elf-female-neutral.png",
+    "sha256": "9686fc598138b185e739dfb271680d6ebbef9c3d5e688095bfe18c804dea381a"
+  }
+]

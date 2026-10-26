@@ -1,9 +1,10 @@
 /*:
- * @plugindesc v0.2.0 Piloto: movimentos desenhados, armas separadas e impacto nativo.
+ * @plugindesc v0.3.0 Movimentos desenhados, armas separadas e impacto nativo.
  * @author Codex
  * @help Após Arena_Battle e MV_MotionTimeline. Sem dependências externas.
  * ArenaBattleMotion.json: cobertura explícita, frames/tempos/apoios/armas.
- * Só Bretã feminina e rato em R02. Outros perfis mantêm R01 documentado.
+ * R02 aprovado preservado; expansão R03 das demais15 identidades e inimigos2/3.
+ * Inimigos: actionMotion configura o movimento da ação cadastrada (strike/bite).
  * Não aplica dano nem cobra recursos. Pausa apresentação até o impacto nativo.
  * API ArenaBattleMotion.profile(battler), sample(battler).
  */
@@ -52,7 +53,7 @@ var ArenaBattleMotion;
     };
     function movement(action){if(action.isItem())return 'item';if(action.isMagicSkill())return 'cast';if(action.isAttack())return 'light';var key=$arenaBattleMotion.skillMotions[String(action.item().id)];if(!key)throw Error('Arena: ação sem movimento configurado: '+action.item().id);return key;}
     var perform=Window_BattleLog.prototype.performAction;
-    Window_BattleLog.prototype.performAction=function(subject,action){perform.apply(this,arguments);var s=spriteFor(subject);if(s&&profile(subject)&&!action.isGuard())play(s,subject.isActor()?movement(action):'bite',true);};
+    Window_BattleLog.prototype.performAction=function(subject,action){perform.apply(this,arguments);var s=spriteFor(subject);if(s&&profile(subject)&&!action.isGuard())play(s,subject.isActor()?movement(action):(profile(subject).actionMotion||'bite'),true);};
     var start=Window_BattleLog.prototype.startAction;
     Window_BattleLog.prototype.startAction=function(subject,action){
         var at=this._methods.length;start.apply(this,arguments);if(!profile(subject)||action.isGuard())return;
@@ -85,7 +86,7 @@ var ArenaBattleMotion;
     BattleManager.setup=function(){
         function check(p,required){required.forEach(function(k){if(!p.motions[k])throw Error('Arena: perfil R02 incompleto, movimento '+k);MVMotionTimeline.validate(p.motions[k]);});}
         Object.keys($arenaBattleMotion.actors).forEach(function(id){check($arenaBattleMotion.actors[id],['idle','light','heavy','cast','item','hurt','defeat']);});
-        Object.keys($arenaBattleMotion.enemies).forEach(function(id){check($arenaBattleMotion.enemies[id],['idle','bite','hurt','defeat']);});
+        Object.keys($arenaBattleMotion.enemies).forEach(function(id){var p=$arenaBattleMotion.enemies[id];check(p,['idle',p.actionMotion||'bite','hurt','defeat']);});
         return setup.apply(this,arguments);
     };
 })();

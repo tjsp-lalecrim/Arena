@@ -73,3 +73,8 @@ MV_CharacterRules0.2.0 (funções puras, sem IDs/estado) e Arena_CharacterCreati
 ## M01-08
 
 MV_ResourceProgression0.1.0 (núcleo puro) e Arena_Resources0.1.0 (configuração específica, máximos/escolhas/Vigor, poções, descanso e interface mínima), nessa ordem ao final após Arena_CharacterCreation. Configuração em ArenaProgression.json; namespace arenaResources v1, sem espelhar HP/MP atuais. Documentos individuais em plugins/. Técnicas seguem indisponíveis até M01-09; Map005 é diagnóstico isolado. Community_Basic permanece OFF. Evidências técnicas e de autoria separadas em evidencias/m01-08/.
+
+
+## M01-10 R03
+
+Arena_BattleMotion0.3.0 amplia a cobertura para16 identidades/3 inimigos; actionMotion por inimigo, sem novo plugin ou consumidor de custos. MV_MotionTimeline permanece inalterado. Documentação em plugins/Arena_BattleMotion.md e EXPANSAO_COMBATE_M01_10_R03.md. R02 aprovado preservado. Autoria MV abrir/gerenciador/salvar/reabrir executada, separada do navegador; playtest visual NW.js/A56 e manual das variantes pendentes.
