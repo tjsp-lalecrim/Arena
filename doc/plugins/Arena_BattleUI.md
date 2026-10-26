@@ -40,3 +40,8 @@ REVISAO_INTERFACE_M01_11_R02.md é o relato atual. Indicadores148px sem moldura,
 Extensão Graphics._updateRealScale limita redução do canvas à viewport pequena (inclusive mapa/game over), mantendo resolução lógica/proporção/mapeamento nativo de ponteiro; não força ampliação ou fullscreen. Corrige o recorte do MV desktop com stretch desligado. Base opaca da batalha cobre restos de snapshot do mapa. Corpo/arma/efeitos/relógios/custos/referências e os18 registros de plugins permanecem iguais a30e441d. Schema persistente não muda.
 
 Validar dimensões/estados/imagens em816×624 e640×480, mouse/toque emulado e regressões nativas. UI continua aguardando avaliação visual do responsável; compatibilidade estática/registro preservado não é novo teste visual no editor ou Galaxy A56. Procedimentos/limites no relatório R02.
+
+
+## Reuso por M01-12
+
+Exportação aditiva ArenaBattleUI.theme(window) aplica o acabamento às janelas próprias de inventário/equipamentos. Nenhuma outra alteração no fluxo/consumo/disposição da batalha. Os18 registros anteriores permanecem iguais; os dois plugins de M01-12 são acrescentados depois. Regressão nativa da interface preservada.

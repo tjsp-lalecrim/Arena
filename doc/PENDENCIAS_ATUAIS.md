@@ -1,6 +1,13 @@
 # Pendências atuais após consolidação das decisões
 
-Estado operacional: M01-11 tecnicamente validado, combate considerado satisfatório pelo responsável em25672fe; integração em develop autorizada. M01-12 mantém sua numeração: inventário, equipamento por arrasto/seleção e aparência por armadura. Favoritos para habilidades/itens são melhoria futura, sem implementação nesta etapa. Testes físicos/NW.js não informados continuam separados.
+
+## Fechamento M01-12 — aprovação do responsável (26/10/2026)
+
+Responsável aprovou inventário/equipamentos atuais, associados ao estado disponível6271f22, sem informar hash próprio, dispositivo ou lista de casos. A aprovação aceita a cobertura mínima de materiais existente para prosseguir; não transforma torso/material em figurinos completos nem comprova novos testes físicos/editor. Critérios funcionais revisados: arrasto/alternativas, troca/remoção sem perda, técnicas/atributos/aparência e save/load demonstrados nas evidências R01/R02. Validador estático/puro reexecutado com sucesso no fechamento; demais suítes identificadas são as execuções anteriores, sem alegar repetição. M01-12 concluído no escopo incremental aprovado, com ressalvas aceitas e não bloqueantes.
+
+Melhorias futuras, não implementadas: reavaliar paleta; facilitar acesso/uso de itens reduzindo confirmações constantes; melhorar design da janela de confirmação. Preservar também favoritos futuros e limitações de cobertura artística registradas. Nova sessão visual no editor e Galaxy A56 físico continuam pendentes para validação integrada, sem atribuir à aprovação do responsável. Autorizada integração em develop e publicação; sem promover main/release.
+
+Estado operacional M01-12: M01-11 integrado/publicado em develop6e59882 após aprovação do combate disponível em25672fe (ambiente/casos não detalhados). Feature/m01-inventario-equipamentos implementa inventário, troca/arrasto/prévia/remoção e aparência derivada mínima por couro/malha. M01-12 permanece em revisão, sem encerramento artístico; ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Favoritos são melhoria futura não implementada. Sem merge da nova feature ou avanço para M01-13; A56 físico/playtest visual NW.js pendentes.
 
 Histórico M01-10 R02 (superado pelo estado operacional acima): feature/m01-combate em validação, sem integração automática; revisão somente piloto Bretã/rato (gestos, intermediários, armas separadas, vídeos).15 personagens/2 inimigos ainda R01; expansão/avaliação perceptiva, manual do responsável, editor/NW.js e Galaxy A56 pendentes. M01-09 integrado/publicado em develop782ebc8. M01-11 apenas orientado pelos prints, não iniciado; sem nova UI de slots ou mecânicas do outro projeto. REVISAO_COMBATE_M01_10_R02.md e backlog prevalecem sobre os históricos abaixo. P01–P08 e retratos aprovados com ressalvas preservados.
 

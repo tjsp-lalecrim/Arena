@@ -71,3 +71,8 @@ ArenaPersistence.claimSource('MQ01.ruby-key'); // inactive
 ```
 
 Para a conferência de autoria, abrir Game.rpgproject no editor 1.6.1, abrir gerenciador e confirmar ordem/status dos cinco registros (Community_Basic off, quatro próprios on), salvar/reabrir e conferir diff; depois repetir localhost. A abertura manual confirmada pelo responsável foi da correção anterior, não prova esse ciclo após adicionar os novos plugins. Nenhum teste no Galaxy A56 nesta rodada.
+
+
+## Integração M01-12
+
+M01-12 mantém inventário e equipamentos nativos, sem novo namespace/schema ou concessão ao carregar. Material é calculado pela peça de Corpo atual sobre imagens-base da identidade, sem snapshot de aparência persistido. Página, gesto, prévia e bitmaps não são salvos. Sem armadura ou criação anterior, não inventar itens/identidade. Testes de save/load e save antigo em evidencias/m01-12. Atalhos continuam no contrato anterior; invalidar técnicas ao trocar arma permanece Arena_Abilities.

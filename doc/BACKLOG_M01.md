@@ -1,14 +1,21 @@
 # Backlog de implementação do M01
 
+
+## Fechamento M01-12 — aprovação do responsável (26/10/2026)
+
+Responsável aprovou inventário/equipamentos atuais, associados ao estado disponível6271f22, sem informar hash próprio, dispositivo ou lista de casos. A aprovação aceita a cobertura mínima de materiais existente para prosseguir; não transforma torso/material em figurinos completos nem comprova novos testes físicos/editor. Critérios funcionais revisados: arrasto/alternativas, troca/remoção sem perda, técnicas/atributos/aparência e save/load demonstrados nas evidências R01/R02. Validador estático/puro reexecutado com sucesso no fechamento; demais suítes identificadas são as execuções anteriores, sem alegar repetição. M01-12 concluído no escopo incremental aprovado, com ressalvas aceitas e não bloqueantes.
+
+Melhorias futuras, não implementadas: reavaliar paleta; facilitar acesso/uso de itens reduzindo confirmações constantes; melhorar design da janela de confirmação. Preservar também favoritos futuros e limitações de cobertura artística registradas. Nova sessão visual no editor e Galaxy A56 físico continuam pendentes para validação integrada, sem atribuir à aprovação do responsável. Autorizada integração em develop e publicação; sem promover main/release.
+
 ## Objetivo e estado
 
-Estado operacional: M01-11 tecnicamente validado, combate considerado satisfatório pelo responsável em25672fe; integração em develop autorizada. M01-12 mantém sua numeração: inventário, equipamento por arrasto/seleção e aparência por armadura. Favoritos para habilidades/itens são melhoria futura, sem implementação nesta etapa. Testes físicos/NW.js não informados continuam separados.
+Estado operacional M01-12: M01-11 integrado/publicado em develop6e59882 após aprovação do combate disponível em25672fe (ambiente/casos não detalhados). Feature/m01-inventario-equipamentos implementa inventário, troca/arrasto/prévia/remoção e aparência derivada mínima por couro/malha. M01-12 permanece em revisão, sem encerramento artístico; ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Favoritos são melhoria futura não implementada. Sem merge da nova feature ou avanço para M01-13; A56 físico/playtest visual NW.js pendentes.
 
 Histórico do fechamento M01-08 R01 (antes da integração): M01-07 R05 já integrado, bônus aplicados e arte aceita com ressalvas; recursos concluídos na feature para revisão. Evidências preservadas em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md; a autorização posterior resultou no merge d3c736d.
 
 Entregar uma demo jogável em Português Brasileiro: criar o personagem, acompanhar a introdução, explorar Imperial Dungeons e encerrar ao alcançar o Shift Gate. Este backlog detalha as decisões de DEMO_INICIAL.md, sem ampliar o marco para cidades ou quests posteriores.
 
-Estado de execução e evidências em VALIDACAO_M01.md. M01-01–10 integrados; M01-11 implementado tecnicamente na feature para revisão, com manual do responsável/aparelho pendentes. M01-12–20 não iniciados. Autoria no editor é separada do navegador; a documentação isolada não comprova implementação. Não há estimativas de esforço ou datas definidas.
+Estado de execução e evidências em VALIDACAO_M01.md. M01-01–11 integrados; M01-12 funcional na feature para revisão, com aparência mínima/material em avaliação e testes físicos separados. M01-13–20 não iniciados. Autoria no editor é separada do navegador; a documentação isolada não comprova implementação. Não há estimativas de esforço ou datas definidas.
 
 P0 indica base necessária para começar e integrar; P1 indica requisito de conclusão da demo, não conteúdo opcional. Sistemas novos devem ser implementados em plugins desenvolvidos pelo Codex quando o motor nativo não atender, com documentação e configuração reutilizável conforme PLUGINS.md.
 
@@ -130,3 +137,6 @@ Atualização26/10/2026: revisão exclusivamente dos assets de M01-07 em `featur
 Revisão pose-r03,26/10/2026: diretiva obrigatória em DIRECAO_DE_ARTE1.4/arte/PROCEDIMENTO_RETRATOS.md;16 retratos inspecionados e somente quatro corrigidos por IA (Khajiit/Argonianos, ambos os gêneros). Integração limita-se a quatro campos de face; demais assets/regras preservados. Evidências e pranchas em arte/REVISAO_POSE_RETRATOS_R03.md e evidencias/retratos-pose-r03/. **Avaliação estética continua pendente**; não concluir outra etapa ou promover candidatos a referência aprovada. Feature/m01-diretiva-pose-retratos para revisão, sem merge automático.
 
 R04 em feature/m01-identidade-e-auditoria-racial: dois pilotos masculinos Argoniano/Khajiit, com antes/depois e estudos144/48×64/96px; alpha real verificado, mas pé do combatente Khajiit alcança borda da fonte. **Sem integração ou aprovação estética**, sem ciclos/variantes completos. Todas as16 referências visuais ativas preservadas. Auditoria completa das oito raças e propostas P01–P08 não aplicadas em AUDITORIA_BONUS_RACIAIS_M01_07.md. Correção técnica separada: retirar3/4 desarmados dos bônus de arma, com reprodução antes/depois. Criação234,16 roundtrips/previews e matriz racial8×7 níveis verificadas em Chrome isolado; editor/aparelho desta rodada pendentes. M01-08 e seguintes não iniciados; sem merge/release.
+
+
+M01-12 R02 (26/10/2026): inventário anterior considerado bom pelo responsável; refinados slots equipados com ícones e comparação visual dos parâmetros finais. Testes/evidências R02 registrados no relatório e VALIDACAO_M01. Mesma feature, sem integração automática; avaliação das mudanças R02 e cobertura artística mínima permanecem pendentes. Não iniciar M01-13.

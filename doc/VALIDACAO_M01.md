@@ -1,5 +1,28 @@
 # Evidências de implementação M01
 
+
+## Fechamento M01-12 — aprovação do responsável (26/10/2026)
+
+Responsável aprovou inventário/equipamentos atuais, associados ao estado disponível6271f22, sem informar hash próprio, dispositivo ou lista de casos. A aprovação aceita a cobertura mínima de materiais existente para prosseguir; não transforma torso/material em figurinos completos nem comprova novos testes físicos/editor. Critérios funcionais revisados: arrasto/alternativas, troca/remoção sem perda, técnicas/atributos/aparência e save/load demonstrados nas evidências R01/R02. Validador estático/puro reexecutado com sucesso no fechamento; demais suítes identificadas são as execuções anteriores, sem alegar repetição. M01-12 concluído no escopo incremental aprovado, com ressalvas aceitas e não bloqueantes.
+
+Melhorias futuras, não implementadas: reavaliar paleta; facilitar acesso/uso de itens reduzindo confirmações constantes; melhorar design da janela de confirmação. Preservar também favoritos futuros e limitações de cobertura artística registradas. Nova sessão visual no editor e Galaxy A56 físico continuam pendentes para validação integrada, sem atribuir à aprovação do responsável. Autorizada integração em develop e publicação; sem promover main/release.
+
+## 26/10/2026 — M01-12 R02, comparação visual
+
+Base35a15e6, implementação0820646, mesma feature; Arena_Inventory0.2.0. Slots com ícones/nomes e comparação Atual/Selecionado com oito parâmetros finais e diferenças assinadas. Sete cenários específicos,18 regressivos do inventário e toque emulado916×412, validador puro/estático. Capturas816×624 e nomes longos em evidencias/m01-12-r02. Consulta somente leitura ao código dos quadros/cartões do Battlespire, sem cópia/dependência. Aprovação anterior do inventário registrada, sem aprovar automaticamente R02. Testes e limites em INVENTARIO_E_EQUIPAMENTOS_M01_12.md/R02. Nenhuma nova sessão no editor ou A56; autoria anterior preservada como histórica. Sem merge ou encerramento artístico.
+
+## 26/10/2026 — M01-12, inventário e equipamentos
+
+M01-11 consolidado após revisão/aprovação do combate informada pelo responsável; versão associada ao estado disponível25672fe, sem hash/ambiente/lista exaustiva de testes informados por ele. Fechamento74eb6f6 integrado/publicado em develop6e59882. Nova feature/m01-inventario-equipamentos, implementação c3face1 e materiais86c9143; hashes em evidencias/m01-12/fontes-testadas.json. Sem merge em develop/main ou início de M01-13. Favoritar habilidades/itens fica futuro, sem implementação.
+
+Inventário em cartões/descrições/quantidades, abas/páginas, slots e prévia de atributos, equipar/substituir/remover por teclado/mouse/drag/toque, importante protegido, técnicas/atalhos pela API anterior. Transação sobre equipamento nativo com validação antes do trade, estoque obsoleto/capacidade de devolução cheia bloqueados, repetição sem mudança, snapshot/rollback. Poções/livros reutilizam os consumidores existentes. Sem itens na campanha inicial ou lojas/crafting/loot novos; evento técnico8(13,5) no Map007 e entrada do título separam kit técnico.
+
+Aparência mínima de couro/malha por materiais IA em regiões do torso, preservando fontes/poses/alpha/tempos das16 identidades. Pranchas em escala nativa e inspeção do piloto complementam testes de12 células de mapa/42 de combate por identidade/material. Regiões protegidas opacas e alpha são exatos; bordas RGB translúcidas podem arredondar até1 pela cópia de canvas. Não são novas silhuetas completas ou segmentação final de cada peça. M01-12 continua em revisão e sem encerramento artístico; limites/arquivos/prompts em INVENTARIO_E_EQUIPAMENTOS_M01_12.md e arte/MATERIAIS_M01_12_*.json.
+
+Evidências evidencias/m01-12: 18 cenários reais de equipamento/arrasto/cancelamento/revalidação/itens/quantidades/atributos/save/load/batalha (incluindo falha nativa de trade com rollback e seleção alterada após prévia), toque Android genérico916×412 emulado, comparação16 identidades e invariantes, núcleo reutilizável puro incluindo exceção/rollback. Regressões de criação234, persistência27 incluindo save legado real, e interface de batalha12 cenários. Sem saves pessoais. Saídas finais e hashes identificam a revisão testada; falhas encontradas de hitTest/área de confirmação e foco de abas foram corrigidas, não contadas como aprovação.
+
+Editor instalado: abrir, F10/detalhes Arena_Inventory ON, salvar, fechar/reabrir sem erro de leitura;20 registros preservados/canônicos/UTF8 sem BOM, somente System.versionId mudou semanticamente. Leitura por acessibilidade; captura de screenshot falhou, sem inspeção visual de playtest NW.js. Evento8 adicionado depois e testado pelo fluxo nativo no navegador, não alegado como inspeção do mapa no editor. Galaxy A56 físico/fullscreen/desempenho e avaliação visual do responsável continuam pendentes. Banco de combate/bônus/custos e arquivos do motor preservados.
+
 ## Aprovação e fechamento M01-11
 
 26/10/2026: responsável testou o combate no estado25672fe e considera o resultado atual satisfatório. Escopo manual informado: combate observado nessa versão; não foram especificados todos os menus/casos, navegador, editor ou dispositivo. Não inferir teste físico A56/fullscreen nem funcionalidades posteriores. Critérios técnicos M01-11 já documentados passaram; autorização atual permite consolidar em develop. Favoritar habilidades/itens para inclusão nos atalhos fica como melhoria futura, sem implementação ou alteração das associações existentes.

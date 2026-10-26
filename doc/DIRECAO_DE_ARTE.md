@@ -1,5 +1,7 @@
 # Direção de arte e padrão de geração
 
+Estado atual M01-12: movimento/identidade atuais preservados e combate considerado satisfatório pelo responsável em rodada anterior. Gerados somente dois materiais de torso (couro/malha), sem novas poses/retratos; amostra mínima em revisão, não figurino final. Registros completos em arte/MATERIAIS_M01_12_*.json. Relatos de cobertura parcial M01-10 abaixo são históricos.
+
 Aprovação posterior de animação: R02 (entrega a61977b) aprovado pelo responsável para Bretã feminina/rato; registro em decisoes/M01_10_APROVACAO_ANIMACOES_R02.json. Preservar desenhos/tempos/fluidez desses exemplos. Expansão para os15 personagens/2 inimigos restantes foi explicitamente priorizada antes de integrar M01-10 e iniciar M01-11; gerar somente o que falta. A aprovação do piloto não aprova automaticamente novas variantes nem testes não executados. Relato de R02 ainda pendente abaixo é histórico.
 
 Adendo M01-10 R02 (vigente): revisão restrita ao piloto Bretã/rato, com desenhos novos de intermediários, gestos e duas armas separadas. Sem regenerar retratos ou produzir combinações de equipamento em lote.66 quadros auditados e vídeos nativos complementam pranchas; contagem/alpha não aprovam fluidez/anatomia. Estudos unidos/recortados rejeitados e preservados; manifesto arte/COMBATE_MOVIMENTOS_R02_MANIFEST.json. Aprovação anterior não se estende automaticamente a R02;15 personagens/2 inimigos não revisados. Restrições narrativas, identidade e dark fantasy continuam; prints de UI apenas orientam M01-11. Relatos R01/R05 abaixo são históricos.
@@ -244,3 +246,8 @@ Nenhum retrato, participante ou animação regenerado. Atlases/tempos M01-10 pre
 ## Revisão de UI M01-11 R02
 
 Responsável aprova combate/animações atuais na solicitação de refinamento da interface (base30e441d). Nenhuma regeneração ou alteração de movimentos/arte nesta rodada. Indicadores compactos sem caixas; menus inferiores com molduras finas, cantos arredondados, cores escuras/seleção verde e slots identificados, conforme prints de composição. Desenho de elementos de UI próprio por código, sem importar assets/regras do projeto consultado. Isso não promove a nova UI a aprovada: aguarda avaliação visual. Referências/evidências em REVISAO_INTERFACE_M01_11_R02.md.
+
+
+## Integração M01-12
+
+M01-12 reutiliza pixels/poses aprovados das16 identidades. Somente dois materiais IA gerados: couro/malha, com prompts completos, hashes, dimensões, masters e arquivos de consumo em arte/MATERIAIS_M01_12_*.json e art/m01-12. Aplicação em regiões de torso é amostra técnica mínima, não silhueta completa/figurino final ou aprovação estética. Mapas/retratos/narrativa/animações não foram regenerados. Avaliar encaixe e leitura antes de expandir produção; limites e cobertura em INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

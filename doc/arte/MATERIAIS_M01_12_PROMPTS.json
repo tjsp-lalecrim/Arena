@@ -1,0 +1,15 @@
+{
+  "version": "M01-12/material-v01",
+  "method": "image_gen built-in, two material swatches; no character regenerated",
+  "references": [],
+  "leather": {
+    "prompt": "Arena project M01-12 MATERIAL SWATCH ONLY. Generate a flat seamless square tile of worn medieval dark chestnut brown leather used for a humble cuirass. Dark fantasy painterly realistic finish, restrained grain, matte, subtle compressed creases and wear, palette earth brown #5C4232 with cold shadows, soft even illumination. This is a tiny repeated material sampler to be mapped only onto existing AI-drawn torso clothing pixels in RPG Maker character sprites, preserving all original silhouette, faces, skin, poses and animations. No garment silhouette, no character, no buckle, no border, no text, no isolated object, no perspective, no modern plastic, no strong highlights. Entire image is the material, opaque; seamless edges. No external image references are supplied for this swatch.",
+    "master": "art/m01-12/couro-v01.png",
+    "source": "C:/Users/hplea/.codex/generated_images/01a174c8-fc02-7100-bd7c-ad4775302730/exec-7f8ef280-26ea-4dbb-938b-147386e3276a.png"
+  },
+  "mail": {
+    "prompt": "Arena project M01-12 MATERIAL SWATCH ONLY. A flat seamless square repeating medieval chainmail material, closely interlocked small iron rings in clear alternating 4-in-1 rows. Worn dull steel, slate grey #8B8D86, cold dark recesses, restrained painted dark fantasy finish with soft even overhead-left light, no polished chrome, no gold, no rust-dominant red. Individual rings clearly readable at the source but this material is intended to be sampled at a few pixels per ring on existing character torso clothing, not used to generate a new person. Entire square covered with mail; no garment outline, no person, no hands, no mannequin, no text, no border, no perspective, no isolated object. Opaque image, seamless edges. No external image references supplied.",
+    "master": "art/m01-12/malha-v01.png",
+    "source": "C:/Users/hplea/.codex/generated_images/01a174c8-fc02-7100-bd7c-ad4775302730/exec-75866288-3d37-4058-97b1-636c06a503d2.png"
+  }
+}

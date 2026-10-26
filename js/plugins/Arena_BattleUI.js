@@ -40,7 +40,7 @@ var ArenaBattleUI;
         var parts=[],mp=a.skillMpCost(item),v=Number(item.meta.ArenaVigorCost||0);if(mp)parts.push(mp+' M');if(v)parts.push(v+' V');return parts.join(' / ')||'—';
     }
     function describe(item,a){if(!item)return 'Remover a associação deste espaço.';var r=resolve(refOf(item),a);return item.name+' · '+cost(item,a)+'\n'+(r.reason?r.reason+' ':'')+item.description;}
-    ArenaBattleUI={resolve:resolve,config:config,slotId:slotId};
+    ArenaBattleUI={resolve:resolve,config:config,slotId:slotId,theme:menuChrome};
     Input.keyMapper[67]='arenaConfigure';for(var key=1;key<=8;key++)Input.keyMapper[48+key]='arenaSlot'+key;
     var prevent=Input._shouldPreventDefault;
     Input._shouldPreventDefault=function(keyCode){return keyCode===9&&SceneManager._scene instanceof Scene_Battle||prevent.apply(this,arguments);};
