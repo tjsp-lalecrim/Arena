@@ -1,4 +1,4 @@
-# Arena_CharacterCreation 0.1.0
+# Arena_CharacterCreation 0.2.0
 
 Arquivo `js/plugins/Arena_CharacterCreation.js`. MV1.6.1. Sem dependências externas, parâmetros ou comandos. Carregar após MV_CharacterRules, MV_StateStore, Arena_Persistence e Arena_ArtPreview. Depende de ArenaCatalog.json e ArenaCharacterVisuals.json pela fila DataManager. Não editar arquivos internos do motor.
 
@@ -25,13 +25,17 @@ API pública: `isCreated()`, `race(id)`, `visual(raceId,genderId)`, `validate(dr
 
 Fonte primária: Manual.pdf p.7 da instalação; complemento UESP Races/Character Creation. Valores/conversões no catálogo e `M01_07_CRIACAO.md`. Bônus derivados da identidade confirmada, não somados por load/reentrada. Gênero não participa das fórmulas. Classe1 permanece suporte técnico comum, sem profissão ou permissões raciais.
 
-Nord: trait11/frio3×0,5; Alto elfo: trait14/estado3; Khajiit: trait21/AGI×1,05 com arredondamento MV (AGI10 torna11). Bretão: dano positivo mágico×0,5 após cálculo nativo, sem reduzir cura. Não importa saving throw. Elfos negros/Redguards/elfos da floresta: bônus floor(nível/divisor) em dano de fórmula e bônus/100 na chance de acerto, em habilidades de arma configuradas. Magias/itens não recebem bônus de arma. Redguard só melee, elfo da floresta só bow, elfo negro ambos; desarmado não recebe. Grupos e skillIds estão no JSON de configuração, não no núcleo reutilizável. Bow não tem arma cadastrada nesta base; não foi criado arco para antecipar M01-09.
+R05 aplica exatamente P01–P08 autorizadas: Argoniano +10 pontos de Vigor máximo inicial uma vez (base100→110); Bretão dano mágico positivo HP/MP/dreno×0,75 após cálculo nativo; elfo negro dano de arma×1,05/acerto+0,02; Alto elfo trait14/estado3; Khajiit AGI+1 via paramPlus; Nórdico dano de frio×0,5, sem afetar cura; Redguard melee×1,08/+0,03; Bosmer qualquer arma +0,04 de acerto, sem dano extra. Sem crescimento racial por nível. Fonte/versionamento exatos em doc/decisoes/M01_07_APROVACAO_R05.json e cópia imutável da proposta R04. Valores provisórios, não balanceamento final.
+
+Ações de arma exigem habilidade configurada, hitType físico, tipo de dano positivo HP/MP/dreno, arma efetivamente equipada e tipo compatível com a técnica pelo teste nativo isSkillWtypeOk. IDs3/4 desarmados excluídos; ataque1 armado incluído. Magias, curas, itens, punhos e híbridos não mapeados não recebem modificadores de arma. Dano multiplica somente fórmula positiva antes das etapas nativas, sem arredondamento intermediário; crítico/elemento/defesas/variância/guarda continuam nativos. Acerto soma à probabilidade da ação com teto1, sem alterar evasão. Grupos de armas/skillIds ficam no JSON Arena; não foram criadas armas ou sistemas futuros.
+
+Nórdico filtra ações de dano na extensão de calcElementRate, sem trait global de elemento: actor.elementRate(3) permanece1, cura de frio preservada, ataques de múltiplos elementos mantêm o máximo nativo após aplicar a resistência por elemento. Khajiit adiciona1 a paramPlus(6), antes dos multiplicadores/buffs nativos, sem alterar _paramPlus salvo. Sem reset/concessão ao subir nível ou carregar. Saves antigos preservam recursos gastos/máximos próprios; imagens e efeitos derivados usam catálogo atual. Namespace arenaCreation permanece v1, pois não há campo persistente novo; nenhum inventário/atributo nativo é duplicado.
 
 ## Pontos de extensão
 
-Aliases: fila DataManager._databaseFiles, Game_Actor.traitObjects, Game_Action.makeDamageValue/evalDamageFormula/itemHit, DataManager.extractSaveContents e comandos do título. Sprite de prévia usa recortes nativos de bitmap após carregamento, com proteção contra retorno assíncrono de uma seleção anterior. Fundo opaco próprio evita título anterior atravessando as janelas.
+Aliases: fila DataManager._databaseFiles, Game_Actor.traitObjects/paramPlus, Game_Action.makeDamageValue/evalDamageFormula/itemHit/calcElementRate, DataManager.extractSaveContents e comandos do título. Sprite de prévia usa recortes nativos de bitmap após carregamento, com proteção contra retorno assíncrono de uma seleção anterior. Fundo opaco próprio evita título anterior atravessando as janelas. Sem alteração em arquivos internos do motor ou dependências novas.
 
-`MV_CharacterRules.js` contém somente validação de nome, conversão de traits e bônus por nível/grupo, sem IDs ou acesso a estado. Reutilização exercitada por testes de função pura; integração Arena mantém conteúdo/IDs separados. `MV_StateStore.hasOperation` é consulta de recibo somente leitura adicionada para recuperação de campos ausentes.
+`MV_CharacterRules.js` contém validação de nome, conversão de traits, recurso inicial, parâmetro adicional e modificadores por grupo, sem IDs ou acesso a estado. A função antiga por nível permanece apenas para fixtures históricas; o catálogo atual não a utiliza. Reutilização exercitada por testes de função pura; integração Arena mantém conteúdo/IDs separados. `MV_StateStore.hasOperation` é consulta de recibo somente leitura adicionada para recuperação de campos ausentes.
 
 ## Arte e limites
 

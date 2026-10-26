@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Criação pt-BR, identidade persistente e bônus raciais de Arena.
+ * @plugindesc v0.2.0 Criação pt-BR, identidade e bônus raciais provisórios P01–P08.
  * @author Codex
  * @help Após MV_CharacterRules, MV_StateStore, Arena_Persistence e Arena_ArtPreview.
  * Sem parâmetros/comandos. Conteúdo em ArenaCatalog/ArenaCharacterVisuals.json.
@@ -53,8 +53,7 @@ var Scene_ArenaCharacterCreation;
                 actor.setName(d.name);
                 ArenaPersistence.setIdentity(d.race.id, d.genderId, d.visual.id);
                 images(actor, d.visual);
-                var vigor = 100;
-                if (d.race.bonus.kind === 'vigorMultiplier') vigor = Math.round(vigor * d.race.bonus.value);
+                var vigor = MVCharacterRules.initialResource(d.race.bonus, 'vigor', 100);
                 ArenaPersistence.setResource('vigor', vigor, vigor);
                 MVStateStore.once('arenaCreation', 'confirm', function(state) { state.confirmed = true; });
                 actor.refresh();
@@ -73,17 +72,25 @@ var Scene_ArenaCharacterCreation;
         if (r) objects.push({ traits: MVCharacterRules.traits(r.bonus) });
         return objects;
     };
-    function weaponBonus(action) {
+    var paramPlus = Game_Actor.prototype.paramPlus;
+    Game_Actor.prototype.paramPlus = function(paramId) {
+        var r = chosenRace(this);
+        return paramPlus.apply(this, arguments) + MVCharacterRules.parameterBonus(r && r.bonus, paramId);
+    };
+    function weaponModifiers(action) {
+        var neutral = { damageRate: 1, hit: 0 };
         var actor = action.subject();
-        if (!actor || !actor.isActor()) return 0;
+        if (!actor || !actor.isActor()) return neutral;
         var r = chosenRace(actor);
         var config = $arenaCharacterVisuals.rules;
-        if (!r || !action.isSkill() || config.weaponSkillIds.indexOf(action.item().id) < 0) return 0;
+        if (!r || !action.isSkill() || !action.isPhysical() ||
+                [1, 2, 5, 6].indexOf(action.item().damage.type) < 0 ||
+                config.weaponSkillIds.indexOf(action.item().id) < 0 || !actor.isSkillWtypeOk(action.item())) return neutral;
         var weapon = actor.weapons()[0];
-        if (!weapon) return 0;
+        if (!weapon) return neutral;
         var group = config.bowWeaponTypeIds.indexOf(weapon.wtypeId) >= 0 ? 'bow' :
-            config.meleeWeaponTypeIds.indexOf(weapon.wtypeId) >= 0 ? 'melee' : null;
-        return MVCharacterRules.weaponBonus(r.bonus, actor.level, group);
+            config.meleeWeaponTypeIds.indexOf(weapon.wtypeId) >= 0 ? 'melee' : 'other';
+        return MVCharacterRules.weaponModifiers(r.bonus, group);
     }
     var nativeDamage = Game_Action.prototype.makeDamageValue;
     Game_Action.prototype.makeDamageValue = function(target, critical) {
@@ -92,9 +99,27 @@ var Scene_ArenaCharacterCreation;
         return value > 0 && this.isMagical() && r && r.bonus.kind === 'magicDamageRate' ? Math.round(value * r.bonus.value) : value;
     };
     var damage = Game_Action.prototype.evalDamageFormula;
-    Game_Action.prototype.evalDamageFormula = function(target) { return damage.apply(this, arguments) + weaponBonus(this); };
+    Game_Action.prototype.evalDamageFormula = function(target) {
+        var value = damage.apply(this, arguments);
+        return value > 0 ? value * weaponModifiers(this).damageRate : value;
+    };
     var hit = Game_Action.prototype.itemHit;
-    Game_Action.prototype.itemHit = function(target) { return Math.min(1, hit.apply(this, arguments) + weaponBonus(this) / 100); };
+    Game_Action.prototype.itemHit = function(target) { return Math.min(1, hit.apply(this, arguments) + weaponModifiers(this).hit); };
+    // P06: cold damage only. A healing action never receives this racial reduction.
+    var elementRate = Game_Action.prototype.calcElementRate;
+    Game_Action.prototype.calcElementRate = function(target) {
+        var r = target.isActor() ? chosenRace(target) : null, bonus = r && r.bonus;
+        if (!bonus || bonus.kind !== 'damageElementRate' || [1, 2, 5, 6].indexOf(this.item().damage.type) < 0) {
+            return elementRate.apply(this, arguments);
+        }
+        var id = this.item().damage.elementId;
+        if (id >= 0) return elementRate.apply(this, arguments) * (id === bonus.elementId ? bonus.value : 1);
+        var elements = this.subject().attackElements();
+        if (!elements.length) return elementRate.apply(this, arguments);
+        return Math.max.apply(null, elements.map(function(e) {
+            return target.elementRate(e) * (e === bonus.elementId ? bonus.value : 1);
+        }));
+    };
     var extract = DataManager.extractSaveContents;
     DataManager.extractSaveContents = function(contents) { extract.apply(this, arguments); restoreAppearance(); };
     var titleList = Window_TitleCommand.prototype.makeCommandList;

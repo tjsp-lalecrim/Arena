@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
 (async () => {
+    const out = process.env.ARENA_EVIDENCE_DIR || 'doc/evidencias'; fs.mkdirSync(out, { recursive: true });
     const browser = await chromium.launch({ channel: 'chrome', headless: true });
     try {
         const results = [];
@@ -38,7 +39,7 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
             await page.waitForFunction(() => ImageManager.isReady());
             const input = await page.locator('input').boundingBox();
             assert.ok(input.x >= bounds.x && input.x + input.width <= bounds.x + bounds.width + 1);
-            await page.screenshot({ path: 'doc/evidencias/m01-07-' + (mobile ? 'mobile-emulado' : 'mouse') + '.png' });
+            await page.screenshot({ path: out + '/m01-07-' + (mobile ? 'mobile-emulado' : 'mouse') + '.png' });
             await click(160, 588); await page.waitForFunction(() => !!SceneManager._scene._confirm);
             await click(400, 304); await page.waitForFunction(() => !SceneManager._scene._confirm);
             assert.equal(await page.locator('input').inputValue(), 'Revisão');
@@ -52,7 +53,7 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
                 checks: ['race-single-click', 'gender-single-click', 'preview-loaded', 'confirm-review-retains-name', 'cancel-no-state-write', 'input-removed', 'no-missing-files'], errors });
             await page.close();
         }
-        fs.writeFileSync('doc/evidencias/m01-07-pointer-result.json', JSON.stringify({ browser: await browser.version(), validationServer: process.env.ARENA_URL || 'http://127.0.0.1:8765/', results, galaxyA56: 'not tested; no physical keyboard/fullscreen/performance test' }, null, 2));
+        fs.writeFileSync(out + '/m01-07-pointer-result.json', JSON.stringify({ browser: await browser.version(), validationServer: process.env.ARENA_URL || 'http://127.0.0.1:8765/', results, galaxyA56: 'not tested; no physical keyboard/fullscreen/performance test' }, null, 2));
         console.log('PASS: desktop mouse and80ms emulated touch navigation/confirmation/review/cancel, no state writes.');
     } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

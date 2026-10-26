@@ -8,6 +8,6 @@ var $plugins =
 {"name":"MV_StateStore","status":true,"description":"v0.1.0 Estado JSON versionado reutilizável","parameters":{}},
 {"name":"Arena_Persistence","status":true,"description":"v0.1.0 Contratos persistentes de Arena","parameters":{}},
 {"name":"Arena_ArtPreview","status":true,"description":"v0.2.1 Galerias técnicas com legendas mobile","parameters":{"PreviewMap":"2"}},
-{"name":"MV_CharacterRules","status":true,"description":"v0.1.0 Regras puras de nome e bônus","parameters":{}},
-{"name":"Arena_CharacterCreation","status":true,"description":"v0.1.0 Criação pt-BR e identidade racial","parameters":{}}
+{"name":"MV_CharacterRules","status":true,"description":"v0.2.0 Regras puras e modificadores raciais aprovados P01–P08","parameters":{}},
+{"name":"Arena_CharacterCreation","status":true,"description":"v0.2.0 Criação pt-BR e bônus raciais provisórios P01–P08","parameters":{}}
 ];

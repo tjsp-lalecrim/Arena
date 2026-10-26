@@ -2,7 +2,7 @@
 
 Versão de esquema 1; feature/m01-dados, 25/10/2026. Banco inicial para integrar as próximas features, não catálogo completo ou balanceamento final. Os dados nativos são editáveis pelo MV 1.6.1; ArenaCatalog.json é catálogo próprio, carregado pelo consumidor Arena_CharacterCreation em M01-07. Não há classes profissionais: Aventureiro é somente o registro técnico exigido pelo MV.
 
-Atualização R04,26/10/2026: auditoria atual em AUDITORIA_BONUS_RACIAIS_M01_07.md. ArenaCatalog e números/labels raciais permanecem iguais; novas porcentagens são propostas pendentes. Correção técnica em ArenaCharacterVisuals.rules.weaponSkillIds: somente1/5/6/7/8 são ações de arma; excluir3/4, já definidos abaixo como desarmados, mesmo quando uma arma estiver equipada. Os textos históricos de bônus catalogados/visuais null descrevem a etapa inicial; a criação-base atual aplica o catálogo e mantém16 referências visuais. Os novos pilotos R04 não substituem esses visuais ativos.
+Atualização R05,26/10/2026: P01–P08 da auditoria R04 foram autorizadas e aplicadas como balanceamento provisório; referência/versionamento em decisoes/M01_07_APROVACAO_R05.json. ArenaCatalog mantém schemaVersion1 e identifica balanceVersion M01-07/R05/P01-P08. ArenaCharacterVisuals.rules.weaponSkillIds permanece1/5/6/7/8, excluindo3/4 desarmados. As16 referências visuais foram preservadas, com aprovação estética e ressalvas registradas. Pilotos R04B não substituem automaticamente as folhas ativas.
 
 ## IDs estáveis
 
@@ -52,9 +52,9 @@ Classe técnica com 100 vida, 50 mana, 10 ATQ, 5 DEF, 8 MAT, 5 MDF, 10 AGI e 10 
 
 ## Catálogo racial e visuais
 
-ArenaCatalog.json inventaria as oito raças de Arena, províncias, páginas da fonte Races, bônus e duas combinações de gênero por raça. Não adiciona Imperial ou Orc jogáveis. Masculino/feminino correspondem às combinações de customização nas fontes; sem bônus por gênero. Cada visual está null explicitamente: não apontar para arquivo ausente nem tratar a lista de 16 combinações como arte produzida.
+ArenaCatalog.json inventaria as oito raças de Arena, províncias, páginas da fonte Races, bônus e duas combinações de gênero por raça. Não adiciona Imperial ou Orc jogáveis. Masculino/feminino correspondem às combinações de customização nas fontes; sem bônus por gênero. A base inicial usava visuais null; atualmente as16 chaves apontam para assets próprios existentes via ArenaCharacterVisuals, sem caminhos ausentes.
 
-Bônus catalogados, ainda não aplicados: Argoniano máximo Vigor +10% (adaptação da resistência na natação, sem implementar natação); Bretão recebe metade do dano mágico; Elfo negro floor(nível/4) de dano/acerto com arma; Alto elfo imune ao estado 3; Khajiit AGI +5% (adaptação da escalada, sem novo sistema); Nórdico metade do dano de frio; Redguard floor(nível/3) corpo a corpo; Elfo da floresta floor(nível/3) com arco. Acerto usa pontos percentuais e dano usa pontos na nova escala, números a balancear. Resistências sem salvaguarda adicional, pois não há saving throw equivalente no MV. O bônus de arco permanece sem uso até haver arco no recorte. Nenhum bônus bloqueia equipamento. M01-07 aplica os bônus; M01-08 provê o recurso de Vigor. As adaptações de exploração evitam criar sistemas de natação/escalada fora do marco.
+Bônus ativos R05: Argoniano initialResourceAdd/vigor+10 uma vez; Bretão magicDamageRate0,75; elfo negro weaponActionBonus/all/damageRate1,05/hit0,02; Alto elfo stateImmunity/3; Khajiit parameterAdd/6/+1; Nórdico damageElementRate/3/0,5, só dano; Redguard weaponActionBonus/melee/1,08/0,03; Bosmer weaponActionBonus/all/1/0,04. Acerto é soma de probabilidade, não percentual do atributo; dano é multiplicador de fórmula positiva, não pontos extras ou ATQ. Sem incrementos raciais por nível, saving throw, natação/escalada ou equipamento bloqueado. Vigor inicial existe; consumo/evolução são M01-08/09. Os valores R04 anteriores estão preservados na proposta imutável, não continuam como regra ativa.
 
 ## Validação e limites
 

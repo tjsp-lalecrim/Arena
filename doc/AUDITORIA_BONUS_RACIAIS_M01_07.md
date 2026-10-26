@@ -1,6 +1,8 @@
-# Auditoria racial M01-07 — propostas para revisão
+# Auditoria racial M01-07 — registro R04, aprovação provisória R05
 
-26/10/2026. **Propostas de balanceamento, não decisões confirmadas.** Nenhum percentual, divisor racial, atributo de banco ou texto de bônus da criação foi alterado nesta rodada. A única correção executada é a exclusão das técnicas desarmadas3/4 da lista de habilidades de arma, descrita separadamente abaixo. Skyrim orienta a revisão visual solicitada; não fornece estes bônus. Sem profissões, restrições de equipamentos ou diferenças mecânicas por gênero.
+**Atualização R05:** o responsável autorizou a aplicação integral de P01–P08 (opção preferida P08: acerto+4 p.p. com armas). Valores exatos e origem em `decisoes/M01_07_APROVACAO_R05.json`; cópia imutável deste documento como apresentado no commit1dd9a6c em `decisoes/PROPOSTA_RACIAL_R04_APROVADA.md`. Implementação/validação atuais em `FECHAMENTO_M01_07.md`. As observações, números de código e testes R04 abaixo são históricos; não descrevem mais os bônus ativos. Balanceamento prático permanece provisório.
+
+Registro histórico R04 de26/10/2026: na apresentação original os valores eram propostas, não aplicados, e apenas a exclusão das técnicas desarmadas3/4 havia sido executada. A autorização R05 acima substitui esse estado de aprovação; a cópia imutável conserva o texto original completo. Skyrim orienta somente o visual solicitado, não fornece estes bônus. Sem profissões, restrições de equipamentos ou diferenças mecânicas por gênero.
 
 ## Fontes e contexto real
 
@@ -8,7 +10,7 @@ Fonte primária: instalação original preservada, `D:\SteamLibrary\steamapps\co
 
 Implementação auditada: `data/ArenaCatalog.json`, `ArenaCharacterVisuals.json`, Skills/Classes/Actors/Weapons/Enemies/States/System e código `MV_CharacterRules`, `Arena_CharacterCreation` e funções nativas do MV1.6.1. Personagem: HP100, MP50, ATQ10, DEF5, MAT8, MDF5, AGI10, SOR10, HIT95%, classe técnica única e curva constante até nível99. Armas: adaga ATQ+2 e espada curta ATQ+3. Sem arco ou grupo de armas de distância configurado; sem natação/escalada. Vigor é recurso próprio inicial100, ainda sem consumo de técnicas ou evolução M01-08/09. Técnicas3–8 estão indisponíveis (`occasion=3`), sem concessão pela classe; sua fórmula pode ser exercitada em teste isolado, mas isso não as torna jogáveis. Criação termina no Map004, sem combate completo integrado.
 
-## Regra original, comportamento atual e problemas
+## Regra original, comportamento em R04 e problemas históricos
 
 | Raça / fonte | Regra de Arena | Implementação atual / atributos realmente afetados | Compatibilidade, descrição e risco |
 | --- | --- | --- | --- |
@@ -23,9 +25,9 @@ Implementação auditada: `data/ArenaCatalog.json`, `ArenaCharacterVisuals.json`
 
 O `floor` e o mapeamento1 ponto de acerto→1 ponto percentual são adaptações atuais, não equivalências demonstradas no motor de Arena. Acerto final ainda depende de evasão posterior: aumentar `itemHit` não elimina a rolagem `itemEva`. No banco atual os inimigos não têm EVA positiva, mas o contrato não deve pressupor isso para sempre. Não confundir bônus de ação com atributo HIT ou ATQ. Nenhum inimigo atual conjura a habilidade mágica10: a observação MAT0→dano1 é uma execução forçada de teste, não uma ameaça mágica jogável já integrada.
 
-## Tabela de propostas — aguarda aprovação
+## Tabela P01–P08 — valores aprovados provisoriamente em R05
 
-Os valores abaixo são um ponto de partida de balanceamento para a escala atual, **não aplicados**. Mantêm identidade em benefícios simples e derivados, sem classes, equipamento bloqueado ou sistema novo. As descrições são candidatas à criação, não os textos já exibidos.
+Os valores abaixo são o ponto de partida aprovado pelo responsável e aplicado em R05. Mantêm identidade em benefícios simples e derivados, sem classes, equipamento bloqueado ou sistema novo. As descrições foram sincronizadas na criação. A análise R04 foi preservada; nenhum número adicional foi introduzido.
 
 | ID / raça | Proposta e contrato preciso | Justificativa / limites | Descrição curta proposta em Português Brasileiro |
 | --- | --- | --- | --- |
@@ -40,9 +42,9 @@ Os valores abaixo são um ponto de partida de balanceamento para a escala atual,
 
 Para P03/P07/P08, “arma válida” significa: arma efetivamente equipada, tipo compatível com a técnica, ação de dano físico positivo de ataque/técnica de arma explicitamente mapeada; sem punhos, cura, itens, magia ou habilidade híbrida não definida. Ataque básico1 com arma é elegível. Dano percentual multiplica o valor positivo da fórmula depois da defesa presente na fórmula e antes das etapas nativas de elemento/defesas/crítico/variância/guarda, sem arredondamento intermediário; arredondamento final MV. Acerto soma pontos percentuais a `itemHit`, limitado a1; evasão continua separada. Novos tipos de arma/técnica dependem de M01-09, sem ampliar esta rodada. Não calcular bônus sobre cura ou repeti-lo por execução de save/load.
 
-Não há comprovação de equilíbrio entre essas propostas. Exigem aprovação, depois teste no combate integrado com custos, armas, magias, inimigos e níveis representativos; esses sistemas não foram antecipados. P01/P04 e a resistência básica P06 sugerem manutenção, mas continuam nesta tabela como recomendação, não mudança silenciosa de estado aprovado. Os textos atuais permanecem enquanto a decisão estiver pendente.
+Não há comprovação de equilíbrio definitivo. A aprovação recebida em R05 permite aplicar os valores provisórios; falta testar combate integrado com custos, armas, magias, inimigos e níveis representativos. Esses sistemas não foram antecipados. Cenários obrigatórios em BALANCEAMENTO_RACIAL_CENARIOS_M01.md. P01/P04 e a redução P06 conservam os efeitos recomendados; textos e código atuais constam do fechamento R05.
 
-## Evidências numéricas do código atual
+## Evidências numéricas do código R04 — históricas, anteriores à aprovação
 
 Testes em Chrome descartável, espada curta(ATQ13) contra rato(DEF2), variância/crítico controlados para observação. Ataque-base=24, chance-base95%. Valores abaixo são do **código atual**, não de P03/P07/P08:
 
@@ -68,6 +70,6 @@ Correção mínima: retirar somente IDs3/4 da lista, mantendo1/5/6/7/8 e todos o
 
 Evidências: `evidencias/auditoria-racial-r04/antes-correcao.json` e `depois-correcao.json`, produzidas por `tools/test-racial-audit.cjs`; parâmetros somente em memória para sondas, nenhum save pessoal. O teste padrão exige exclusão correta; `--record-before-fix` carrega as regras históricas de1399af8 na memória isolada para reproduzir a versão anterior (código do plugin não mudou). Nenhum valor proposto foi aplicado nesses testes. Os três empacotadores históricos também preservam a exclusão3/4 ao reconstruir configurações, para não reintroduzir o erro; não foram executados para sobrescrever a arte existente. Testes de criação e auditorias de dados/arte complementam a validação, sem substituir playtest integrado ou aparelho físico.
 
-## Decisões aguardadas
+## Decisão recebida e validação prática pendente
 
-Avaliar P01–P08 individualmente, especialmente intensidade Bretã, substituição dos incrementos por nível e precisão geral do Bosmer. Só após aprovação alterar ArenaCatalog/textos/fórmulas e ampliar os testes. M01-07 mantém a criação-base funcional, mas balanceamento racial e avaliação estética dos novos pilotos estão em revisão. Nenhum avanço para M01-08/09/10, merge em develop/main ou release decorre desta auditoria.
+O responsável aprovou P01–P08 e as artes atuais com ressalvas no fechamento R05. ArenaCatalog/textos/fórmulas foram atualizados e testados sem novas propostas. A eficácia comparativa e eventuais vantagens excessivas ficam para os cenários de M01-10/20; mudanças futuras exigem evidência e autorização. Não foi iniciada outra feature. A integração em develop foi autorizada condicionalmente à validação funcional; main/release continuam fora do escopo.

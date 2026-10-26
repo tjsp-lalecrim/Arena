@@ -1,14 +1,18 @@
-/* Native MV probes of CURRENT rules; proposed balances are deliberately absent. */
+/* Historical R04 probes. Current approved P01-P08 are tested by test-approved-races.cjs. */
 const fs=require('node:fs'),assert=require('node:assert/strict');
 const {execFileSync}=require('node:child_process');
 const priorConfig=JSON.parse(execFileSync('git',['show','1399af8:data/ArenaCharacterVisuals.json'],{encoding:'utf8'}));
 const {chromium}=require(process.env.ARENA_PLAYWRIGHT||'playwright');
 (async()=>{
  const before=process.argv.includes('--record-before-fix');
- const out=process.env.ARENA_EVIDENCE_DIR||'doc/evidencias/auditoria-racial-r04';fs.mkdirSync(out,{recursive:true});
+ const out=process.env.ARENA_EVIDENCE_DIR||'tmp/racial-audit-r04';fs.mkdirSync(out,{recursive:true});
  const browser=await chromium.launch({channel:'chrome',headless:true});
  try{
   const page=await browser.newPage({viewport:{width:1100,height:800}}),errors=[];
+  for(const path of ['js/plugins/MV_CharacterRules.js','js/plugins/Arena_CharacterCreation.js','data/ArenaCatalog.json','data/ArenaCharacterVisuals.json']){
+   const body=execFileSync('git',['show','1dd9a6c:'+path],{encoding:'utf8'});
+   await page.route('**/'+path,r=>r.fulfill({contentType:path.endsWith('.json')?'application/json':'application/javascript',body}));
+  }
   page.on('pageerror',e=>errors.push(e.message));page.on('requestfailed',r=>errors.push(r.url()));page.on('response',r=>{if(r.status()>=400)errors.push(r.url());});
   await page.goto(process.env.ARENA_URL||'http://127.0.0.1:8766/');
   await page.waitForFunction(()=>window.SceneManager&&SceneManager._scene instanceof Scene_Title&&SceneManager._scene.isActive());
@@ -56,7 +60,7 @@ const {chromium}=require(process.env.ARENA_PLAYWRIGHT||'playwright');
    }
   }
   assert.deepEqual(errors,[]);
-  fs.writeFileSync(`${out}/${before?'antes-correcao':'depois-correcao'}.json`,JSON.stringify({date:'2026-10-26',browser:await browser.version(),beforeTechnicalFix:before,historicalRulesFixture:before?'1399af8 rules loaded in isolated memory; plugin code unchanged':null,...result,errors,isolation:'disposable Chrome context; no personal saves',proposalsApplied:false,editor:'not tested; browser calculations only'},null,2));
-  console.log('PASS8 races ×7 levels; current damage/hit/critical/AGI/resources/resistance/immunity; armed unarmed-skill '+(before?'bug reproduced':'regression fixed')+'; proposals NOT applied.');
+  fs.writeFileSync(`${out}/${before?'antes-correcao':'depois-correcao'}.json`,JSON.stringify({date:'2026-10-26',browser:await browser.version(),historicalComposition:'R04 plugin/catalog composition1dd9a6c; not current approved R05',beforeTechnicalFix:before,historicalRulesFixture:before?'1399af8 rules loaded in isolated memory; plugin code unchanged':null,...result,errors,isolation:'disposable Chrome context; no personal saves',proposalsApplied:false,editor:'not tested; historical browser calculations only'},null,2));
+  console.log('PASS historical R04:8 races ×7 levels; damage/hit/critical/AGI/resources/resistance/immunity; armed unarmed-skill '+(before?'bug reproduced':'regression fixed')+'. Current R05 approvals are tested separately.');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
