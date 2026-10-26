@@ -1,5 +1,7 @@
 # Combate
 
+Estado vigente M01-10 R01: batalha nativa por turnos no Map007, barras reais, vitória/retorno, derrota/game over e fuga bloqueada; quatro estados corporais mínimos nas16 combinações e três inimigos. Ação genérica sem arma visível e revisão de continuidade mantêm a apresentação em validação. COMBATE_M01_10.md separa implementação, testes, equilíbrio provisório e manual pendente. Patrulhas M01-15 e slots M01-11 não antecipados. Os relatos M01-09/08 e critérios abaixo são histórico/especificação.
+
 Estado M01-09 R01: técnicas3–8 agora disponíveis por equipamento e magias9/10 por aprendizado; execução/custos/efeitos nativos validados no Map006 técnico, sem apresentação completa de batalha. O relato M01-08 abaixo refere-se ao fechamento anterior. M01-10/11 continuam responsáveis por animações, turnos integrados, barras e atalhos; HABILIDADES_M01_09.md distingue o laboratório do combate jogável e do equilíbrio final.
 
 ## Requisitos confirmados

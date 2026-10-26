@@ -1,5 +1,7 @@
 # Banco mínimo e convenções M01
 
+Atualização M01-10 R01: ArenaBattle.json v1 mapeia16 baseVisualId e inimigos1–3 para folhas3×4/células/apoio/tempo, aliases explícitos de movimentos e kit técnico. Map007 tem encontros301 por interação, sem fuga/derrota permitida, self switch após vitória e reinício explícito. Barras consultam estado real; sem cópia persistente ou mudança de schema. Skills/Items/Enemies/Troops, valores raciais e consumidores anteriores preservados. Nenhum item novo no início da campanha. COMBATE_M01_10.md contém limites e validações.
+
 Atualização operacional M01-09 R01: técnicas3–8 ativas com ocasião1 e disponibilidade derivada de arma/sem arma. Custos5/12 mantidos em ArenaVigorCost; Mana/Cura/Dardo e livros preservam IDs/valores. ArenaAbilities.json separa configurações; Map006 laboratório sem Battle Scene ou campanha. ArenaLearnSkill agora usa transação de aprendizado e consumo, sem requisito de nível. Não há livros no inventário inicial. Referência atual HABILIDADES_M01_09.md; afirmações antigas de tags sem consumidores/desativação abaixo descrevem a montagem inicial, não o estado vigente.
 
 Versão de esquema 1; feature/m01-dados, 25/10/2026. Banco inicial para integrar as próximas features, não catálogo completo ou balanceamento final. Os dados nativos são editáveis pelo MV 1.6.1; ArenaCatalog.json é catálogo próprio, carregado pelo consumidor Arena_CharacterCreation em M01-07. Não há classes profissionais: Aventureiro é somente o registro técnico exigido pelo MV.

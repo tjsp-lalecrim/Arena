@@ -17,5 +17,5 @@ for(const p of plugins)assert(fs.existsSync('js/plugins/'+p.name+'.js'));
 const pure={};vm.runInNewContext(fs.readFileSync('js/plugins/MV_ResourceProgression.js','utf8'),pure);
 assert.equal(pure.MVResourceProgression.growth({'2':{resourceId:'energy',amount:7}},'energy'),7);
 assert.equal(pure.MVResourceProgression.pending(1,4,{'2':{resourceId:'energy',amount:7}}).join(','),'3,4');assert.equal(pure.MVResourceProgression.clamp(200,50),50);
-assert.equal(execFileSync('git',['diff','e1be141','--','img','art','js/rpg_core.js','js/rpg_objects.js','js/rpg_managers.js','js/rpg_scenes.js'],{encoding:'utf8'}),'','preserve art and engine');
+assert.equal(execFileSync('git',['diff','--diff-filter=DMR','e1be141','--','img','art','js/rpg_core.js','js/rpg_objects.js','js/rpg_managers.js','js/rpg_scenes.js'],{encoding:'utf8'}),'','preserve art and engine');
 console.log('PASS M01-08 config, pure reuse, approved races/art/engine unchanged, notes and technical map, canonical UTF8 plugins and existing records preserved.');

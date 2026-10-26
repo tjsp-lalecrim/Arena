@@ -1,5 +1,7 @@
 # Criação e documentação de plugins
 
+Atualização M01-10 R01: Arena_Battle0.1.0 após Arena_Abilities/Arena_Resources. Configuração ArenaBattle.json,14 registros canônicos com os13 anteriores preservados. Sem consumidores duplicados de Vigor/Mana, plugin externo ou alteração de motor. Documentação em plugins/Arena_Battle.md; aliases genéricos de ação explícitos, perfis ausentes geram erro. Batalha real no Map007; autoria no editor desta versão pendente, separada do Chrome. M01-09 integrado em develop782ebc8.
+
 ## Estado operacional M01-09
 
 Novos MV_AbilityRules0.1.0 (núcleo puro), Arena_Abilities0.1.0 (equipamento/execução/livros) e Arena_AbilityLab0.1.0 (cenário técnico), nessa ordem após os dez registros existentes. Documentos individuais em plugins/. Sem dependências externas ou outro consumidor de ArenaVigorCost; usa Arena_Resources. Livro usa uma transação própria, mantendo aprendizado/inventário nativos. Sem alterar engine/arte/Community_Basic. Configuração de conteúdo em ArenaAbilities.json, não no núcleo genérico.

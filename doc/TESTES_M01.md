@@ -1,5 +1,13 @@
 # Execução e roteiro de testes M01
 
+## Estado vigente — M01-10 R01
+
+Roteiro em COMBATE_M01_10.md: título Combate técnico, preparar(3,5), rato(7,5), goblin(6,8), homem-lagarto(10,8), reiniciar(11,5), novo participante(3,8). Eventos de interação, sem encontros automáticos. Confirmar novo participante inicia sessão técnica nova; cancelar preserva. Não usar saves pessoais.
+
+Testes: `node tools/test-battle.cjs`, `test-battle-ui.cjs`, `test-battle-coverage.cjs`, `test-battle-comparison.cjs`; Chrome/Playwright local e ARENA_URL de um servidor da raiz, padrão8766. Validadores: validate-data/resources/abilities/battle e `python tools/audit-battle-assets.py`. Contextos novos isolam slots. Matriz espera mensagens/ações/frames reais, sem substituir por apply direto.
+
+Conferir identidade, apoio, transparência, recortes, quatro estados e escala, recursos vazios versus ausentes, custos/cancelamento/poções, vitória sem repetição, derrota e save/load posterior. Ação genérica sem arma desenhada continua limitação. Testes manuais do responsável adiados; autoria/playtest visual no editor e Galaxy A56 desta versão pendentes. Não reatribuir aprovações antigas. O estado operacional M01-09 abaixo é histórico.
+
 ## Estado operacional — M01-09 R01
 
 `tools/test-abilities.cjs`:628 verificações e192 ações por BattleManager/startAction/updateAction/invokeAction, pagamento e efeitos nativos; compara raças/armas/níveis com fixtures determinísticas e não usa só fórmulas puras. Cobertura: técnica compatível/incompatível/removida, saldo suficiente/exato/insuficiente, cancelamento/forçada/sem alvo/erro, quatro aplicações/um pagamento, custos combinados sem parcial, magia conhecida/desconhecida/Mana, Cura real, livros válidos/repetidos/estoque múltiplo/rollback e menu nativo, save anterior2561830/load/atalhos. Resultado e capturas em evidencias/m01-09/.

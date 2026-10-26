@@ -1,5 +1,17 @@
 # Evidências de implementação M01
 
+## 26/10/2026 — M01-10 R01, batalha integrada (em validação)
+
+M01-09 revisado e integrado/publicado em develop782ebc8, preservando0e9f267 e seu histórico. Branch inicial limpa e sem divergência; feature/m01-combate criada a partir desse merge. Critérios, fontes, matriz e roteiro em COMBATE_M01_10.md. Main preservada, sem release ou integração da nova feature.
+
+Chrome156.0.8078.47,1100×800/jogo816×624: Scene_Battle real por evento301, turnos nativos, vitória/mapa/self switch/sem repetição e derrota/game over; fuga bloqueada. Técnicas5/6 e Mana9/10 pelas APIs anteriores, três poções, insuficiência/exato, cancelamento, erro/esquiva/crítico, dois impactos/um custo, save/load nativo após batalha. Resultados e capturas em evidencias/m01-10/resultado.json e ui.json. Mana inimiga0/10 foi fixture: painel mantém barra vazia; os inimigos distribuídos têm somente Vida. Corrigidos fundo de barra vazia e altura/espaçamento do painel.
+
+Matriz nativa em cobertura/resultado.json:16 identidades e três inimigos, três frames observados de cada estado espera/ação/dano/derrota. Folhas IA e prompts/hashes em arte/COMBATE_M01_10_MANIFEST.json;19 folhas/228 células com margens/alpha. Pranchas e capturas no tamanho final inspecionadas; não equivalem à aprovação do responsável. Ação do jogador genérica sem arma desenhada, aliases explícitos; continuidade/apoio e adequação da arma ainda impedem fechar integralmente a apresentação. M01-10 em validação, não concluído por métricas de pixels ou pelo piloto isolado.
+
+18 encontros determinísticos com Bretã/Elfa negra/Redguard, adaga nível1: leve/pesada vencem rato1/1, goblin2/1, homem-lagarto3/2 turnos, custos5/12 por ação. Registro comparacao-encontros.json; RNG0,5/variância0 e HP ampliado nas matrizes são fixtures em memória. Sem ajuste de P01–P08. Regressões:628 habilidades/192 ações,619 recursos,234 criação+UI,981 bônus,27 persistência, StateStore/Runtime e laboratório. Contextos descartáveis, sem saves pessoais. Resultados em evidencias/m01-10/regressoes; históricos preservados.
+
+Formato canônico UTF8 sem BOM/14 referências e13 registros anteriores idênticos verificados; motor, regras de custo, banco e arte aprovada anterior intactos. Abertura/gerenciador/salvar/reabrir no editor, playtest visual NW.js e Galaxy A56 desta versão **pendentes**. O responsável adiou testes manuais; não há nova aprovação manual. Relatos de versões anteriores abaixo permanecem históricos.
+
 ## 26/10/2026 — M01-09 R01, habilidades e livros
 
 Estado inicial limpo feature/m01-recursos-progressao2561830, sincronizado com origin; develop e1be141. Revisados diff/critério/evidências M01-08, validate-resources/validate-data e registros619/234/981/27, sem impedimento. Integração autorizada em develop pelo merged3c736d e publicação confirmada antes de criar feature/m01-habilidades. Nenhuma atribuição de relato manual antigo a código novo. main não promovida.
