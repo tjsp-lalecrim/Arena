@@ -1,5 +1,12 @@
 # Evidências de implementação M01
 
+
+## Fechamento M01-12 — aprovação do responsável (26/10/2026)
+
+Responsável aprovou inventário/equipamentos atuais, associados ao estado disponível6271f22, sem informar hash próprio, dispositivo ou lista de casos. A aprovação aceita a cobertura mínima de materiais existente para prosseguir; não transforma torso/material em figurinos completos nem comprova novos testes físicos/editor. Critérios funcionais revisados: arrasto/alternativas, troca/remoção sem perda, técnicas/atributos/aparência e save/load demonstrados nas evidências R01/R02. Validador estático/puro reexecutado com sucesso no fechamento; demais suítes identificadas são as execuções anteriores, sem alegar repetição. M01-12 concluído no escopo incremental aprovado, com ressalvas aceitas e não bloqueantes.
+
+Melhorias futuras, não implementadas: reavaliar paleta; facilitar acesso/uso de itens reduzindo confirmações constantes; melhorar design da janela de confirmação. Preservar também favoritos futuros e limitações de cobertura artística registradas. Nova sessão visual no editor e Galaxy A56 físico continuam pendentes para validação integrada, sem atribuir à aprovação do responsável. Autorizada integração em develop e publicação; sem promover main/release.
+
 ## 26/10/2026 — M01-12 R02, comparação visual
 
 Base35a15e6, implementação0820646, mesma feature; Arena_Inventory0.2.0. Slots com ícones/nomes e comparação Atual/Selecionado com oito parâmetros finais e diferenças assinadas. Sete cenários específicos,18 regressivos do inventário e toque emulado916×412, validador puro/estático. Capturas816×624 e nomes longos em evidencias/m01-12-r02. Consulta somente leitura ao código dos quadros/cartões do Battlespire, sem cópia/dependência. Aprovação anterior do inventário registrada, sem aprovar automaticamente R02. Testes e limites em INVENTARIO_E_EQUIPAMENTOS_M01_12.md/R02. Nenhuma nova sessão no editor ou A56; autoria anterior preservada como histórica. Sem merge ou encerramento artístico.
