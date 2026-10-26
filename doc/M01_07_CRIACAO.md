@@ -47,7 +47,9 @@ Editor: nomes/status Community_Basic OFF, MV_CharacterRules ON e Arena_Character
 
 Diagnóstico de infraestrutura: houve timeouts de inicialização e uma falha de carregar Tilesets.json no servidor compartilhado. Causa não confirmada. Suite final passou em servidor isolado8766, com requestfailed monitorado, sem alteração de motor, scripts de jogo ou retries para mascarar erros. O servidor existente8765 foi preservado.
 
-## Revisão de assets em26/10/2026
+## Histórico R02/R03 — revisão de assets em26/10/2026
+
+Registro da situação naquela rodada; pendências de aprovação abaixo foram superadas por FECHAMENTO_M01_07.md R05. P01–P08 estão aplicadas e artes aprovadas com ressalvas, não corrigidas. M01-08 preserva esse fechamento.
 
 Criação-base permanece implementada; revisão visual r02 pendente do responsável. Todas as16 combinações receberam enquadramento técnico por categoria em arquivos novos, sem sobrescrever v01: retratos para direita com olhos alinhados por estimativa manual; exploração com figura nominal56px/pés y62; lateral88px/pés y94. Anatomia alterada por IA somente Argonianos/Khajiit/Bosmer e orientação dos retratos Redguard. Configuração troca apenas arquivos, mantendo chaves e regras; carregar saves de imagens v01 reconstrói r02. Inventário atual e inventário v01 separados em arte/.
 
@@ -55,7 +57,7 @@ Revisão seguinte pose-r03: diretriz obrigatória de peito/ombros/pescoço/cabe�
 
 Chrome desktop:16 prévias e16 aparências no mapa na mesma resolução;256 amostras de direção/padrão nativo;16 save/load de imagens anteriores; criação234 verificações, ponteiro mouse/toque emulado e persistência27 passaram. Auditoria192 células direcionais/864 SV,179 registros de mestres/exports e sete logs. Pranchas, manifesto, fontes efetivamente anexadas e evidências em arte/REVISAO_PERSONAGENS_R02.md e evidencias/personagens-r02/. Novo teste carrega Map004 explicitamente antes de configurar o mapa; a primeira tentativa sem essa preparação falhou no cenário de teste, corrigido sem alterar produto/motor. Arquivos de evidência anteriores preservados. Não houve teste novo de editor/NW.js ou Galaxy A56.15 conjuntos permanecem estáticos; piloto conserva caminhada; combate completo continua fora desta rodada.
 
-## Auditoria e identidade R04
+## Histórico — auditoria e identidade R04 (antes da aprovação R05)
 
 Base funcional preservada, mas revisão racial aberta. `AUDITORIA_BONUS_RACIAIS_M01_07.md` contém a tabela completa das oito raças: manual original, implementação efetiva, problemas, propostas e descrições curtas. P01–P08 **não aplicadas**; ArenaCatalog/textos e todos os valores originais desta adaptação estão intactos. Correção técnica já prevista pelo contrato: `weaponSkillIds` passa a1/5/6/7/8, excluindo3/4 desarmados, inclusive quando há arma equipada. Teste reproduz antes/corrige depois em oito raças×sete níveis, sem liberar as técnicas indisponíveis ou implementar combate.
 

@@ -60,4 +60,8 @@ Atualização R05: Arena_ArtPreview0.2.1 melhora legendas da galeria atual no ra
 
 ## M01-07
 
-MV_CharacterRules0.1.0 (funções puras, sem IDs/estado) e Arena_CharacterCreation0.1.0 (UI, conteúdo e hooks de identidade/bônus), após persistência/galeria. Documentação em plugins/MV_CharacterRules.md e plugins/Arena_CharacterCreation.md. MV_StateStore ganhou consulta hasOperation sem alterar schema. Sem plugins externos. Catálogo canônico preservado e lido/salvo pelo editor; evidência m01-07-editor.json.
+MV_CharacterRules0.2.0 (funções puras, sem IDs/estado) e Arena_CharacterCreation0.2.0 (UI, conteúdo e hooks de identidade/bônus P01–P08 R05), após persistência/galeria. Documentação em plugins/MV_CharacterRules.md e plugins/Arena_CharacterCreation.md. MV_StateStore ganhou consulta hasOperation sem alterar schema. Sem plugins externos. Catálogo canônico preservado e lido/salvo pelo editor; evidências históricas m01-07-editor.json e fechamento R05.
+
+## M01-08
+
+MV_ResourceProgression0.1.0 (núcleo puro) e Arena_Resources0.1.0 (configuração específica, máximos/escolhas/Vigor, poções, descanso e interface mínima), nessa ordem ao final após Arena_CharacterCreation. Configuração em ArenaProgression.json; namespace arenaResources v1, sem espelhar HP/MP atuais. Documentos individuais em plugins/. Técnicas seguem indisponíveis até M01-09; Map005 é diagnóstico isolado. Community_Basic permanece OFF. Evidências técnicas e de autoria separadas em evidencias/m01-08/.
