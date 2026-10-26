@@ -32,6 +32,8 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         assert.equal(await page.evaluate(() => Utils.RPGMAKER_VERSION), '1.6.1');
         assert.deepEqual(await page.evaluate(() => [Graphics.width, Graphics.height, ImageCache.limit]),
             [816, 624, 20000000]);
+        // New game now enters creation; this regression intentionally targets the laboratory.
+        await page.evaluate(() => SceneManager._scene._commandWindow.selectSymbol('arenaLab'));
         await key('Enter');
         await scene('Scene_Map');
         await page.waitForFunction(() => ! $gamePlayer.isTransferring());

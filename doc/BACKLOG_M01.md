@@ -105,11 +105,11 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | --- | --- | --- |
 | M01-01 | Concluído | Baseline 29fc22b, integração em develop; revisão do índice e fontes ignoradas |
 | M01-02 | Concluído | MQ01_ESPECIFICACAO.md; textos, eventos e mapas examinados; commit 29f44c3 |
-| M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura manual do responsável; R05 abriu gerenciador, salvou/reabriu e auditou contratos. Conferência visual detalhada ainda pendente; VALIDACAO_M01.md |
+| M01-03 | Concluído (base e autoria) | Leitura de nomes/status em detalhes do gerenciador, salvar/reabrir e comparação nativa em evidencias/m01-07-editor.json; localhost regressivo. Inspeção visual de playtest não declarada |
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
 | M01-05 | Concluído | Contratos/API v1, save/load nativo, save gerado pela composição anterior, campos ausentes, recibos e isolamento; VALIDACAO_M01.md e PERSISTENCIA_M01.md |
 | M01-06 | Concluído (amostra desktop) | Matriz de critérios e limites em arte/ENCERRAMENTO_AMOSTRA_M01_06.md; direção aprovada e formatos no motor. Aparelho/combate completo/biblioteca final não declarados |
-| M01-07 | Não iniciado; inventário prévio | 16 combinações inventariadas, uma piloto provisória e zero conjuntos completos; arte/FIDELIDADE_E_VALIDACAO_R05.md. Depende de M01-06 |
+| M01-07 | Concluído (criação-base desktop) | Nome/8 raças/2 gêneros/16 identidades-base, bônus derivados, confirmação/cancelamento, save/load e autoria; M01_07_CRIACAO.md. Poses novas estáticas e revisão estética/aparelho explicitamente separados |
 | M01-08 a M01-20 | A fazer | Amostra não comprova aplicação racial, Vigor em combate ou campanha |
 
-M01-05 integrado em develop. M01-06 foi reaberto após rejeição da v0.1. A direção R02/R03 recebeu aprovação explícita; a v0.1 permanece histórica e rejeitada. A integração técnica continua em feature/m01-amostra-visual, sem merge automático nem produção de biblioteca em lote. A conferência de autoria no editor continua explícita; a arte não autoriza produção em lote nem comprova criação de personagem/percurso até o Shift Gate. Próximas features seguem as dependências, a partir de M01-07/M01-08.
+M01-05 e a amostra M01-06 integrados em develop; merge7e7094c preserva commits e evidências. Criação em feature/m01-criacao-personagem, sem integração automática. M01-06 encerra exemplos de formato/identidade, não biblioteca inteira, combate ou teste no aparelho. M01-07 entrega a criação-base com16 combinações, ainda sem movimentos completos/armaduras variantes. Demais itens continuam a fazer conforme dependências; não iniciar outra feature por associação nesta rodada.

@@ -1,6 +1,6 @@
 # Banco mínimo e convenções M01
 
-Versão de esquema 1; feature/m01-dados, 25/10/2026. Banco inicial para integrar as próximas features, não catálogo completo ou balanceamento final. Os dados nativos são editáveis pelo MV 1.6.1; ArenaCatalog.json é catálogo próprio, ainda não carregado em runtime (consumidor será M01-07). Não há classes profissionais: Aventureiro é somente o registro técnico exigido pelo MV.
+Versão de esquema 1; feature/m01-dados, 25/10/2026. Banco inicial para integrar as próximas features, não catálogo completo ou balanceamento final. Os dados nativos são editáveis pelo MV 1.6.1; ArenaCatalog.json é catálogo próprio, carregado pelo consumidor Arena_CharacterCreation em M01-07. Não há classes profissionais: Aventureiro é somente o registro técnico exigido pelo MV.
 
 ## IDs estáveis
 
@@ -71,3 +71,7 @@ Map002 e Tileset2 são exclusivamente técnicos. B tem tile0 transparente (flag1
 ## Dados da galeria R04
 
 Map003/tileset3 reservados para validação visual. Map001 e002 preservados. Folha B Arena_Prison_R04: tile0 transparente/flag16; pisos1,2,9,10 passáveis/flag0; paredes4,5,12,13 bloqueadas/flag15. O MV divide o B em metades de8 colunas: a segunda linha usa +8, não +16. `ArenaArtSamples.json` separa os perfis visuais e sequências da lógica do plugin. Dados derivados de animação não são persistidos; HP/inventário/imagens continuam nativos e contratos próprios inalterados. Não houve renumeração de itens, atores ou quests.
+
+## Criação M01-07
+
+Map004: chegada técnica provisória após criação, tileset3, sem dungeon final. ArenaCharacterVisuals.json v1:16 chaves estáveis `<race>.<gender>.base`, referências de character/face/picture/svActor e grupos/skills de arma. Actor1/Class1 preservados como suporte técnico; nenhum registro por profissão/raça ou restrição de equipamento. ArenaCatalog passa a ter labels pt-BR e application=derived-after-confirmation, sem confundir aplicado com flag global do catálogo. Estado runtime segue Arena_Persistence e namespace arenaCreation v1. Vigor inicial100 (110 Argoniano) é adaptação provisória, sem gasto/progressão M01-08. Nomes/equipamentos/atributos/imagens nativos não são duplicados.

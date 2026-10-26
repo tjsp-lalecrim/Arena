@@ -95,3 +95,7 @@ A aprovação explícita do responsável em25/10/2026 cobre dungeon R02, rato R0
 ## Atualização R05
 
 Autoria: gerenciador abriu e projeto foi salvo/fechado/reaberto pelo editor usando teclado/acessibilidade; serialização auditada. Conferência visual detalhada do gerenciador/Map003 e playtest continua pendente por limitação de captura/clique. Leitura da galeria mobile melhorada, testada com toque emulado; Galaxy A56 não testado. Ver `arte/FIDELIDADE_E_VALIDACAO_R05.md`. Inventário:16 combinações necessárias, uma piloto provisória, nenhum conjunto final completo; M01-07 não iniciado enquanto dependência M01-06 continuar em validação. Não repetir geração dos aprovados.
+
+## Estado atual após criação M01-07
+
+M01-06 concluído como primeira amostra desktop conforme matriz ENCERRAMENTO_AMOSTRA_M01_06.md, integrado em develop. M01-07 criação-base implementada e validada em desktop em feature própria:16 combinações, nome, bônus e save/load. Relatório M01_07_CRIACAO.md. As esperas anteriores de todo catálogo/combate não bloqueiam mais os exemplos já demonstrados; biblioteca animada, visuais de armadura e A56 permanecem nos itens próprios. Novas variantes precisam de revisão estética pelo responsável, sem regenerar as aprovadas sem necessidade. Não implementar dungeon final, aliados ou outra feature nesta rodada.

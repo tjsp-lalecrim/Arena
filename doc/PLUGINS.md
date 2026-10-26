@@ -57,3 +57,7 @@ MV_StateStore 0.1.0 é o núcleo reutilizável sem conteúdo Arena; Arena_Persis
 Atualização M01-06 R04: Arena_ArtPreview0.2.0 adiciona galeria Map003 mantendo histórica Map002, carrega perfis de conteúdo em ArenaArtSamples.json e usa rato/Ria aprovados. Documentação de parâmetros, ordem, persistência e limites em `plugins/Arena_ArtPreview.md`; estado e evidências em `arte/INTEGRACAO_R04.md`. Sem plugins externos ou alterações internas no MV.
 
 Atualização R05: Arena_ArtPreview0.2.1 melhora legendas da galeria atual no ramo mobile; não muda contratos de save ou assets. Documentação em plugins/Arena_ArtPreview.md. Prioridade de fontes originais e inventário prévio às16 combinações em arte/FIDELIDADE_E_VALIDACAO_R05.md.
+
+## M01-07
+
+MV_CharacterRules0.1.0 (funções puras, sem IDs/estado) e Arena_CharacterCreation0.1.0 (UI, conteúdo e hooks de identidade/bônus), após persistência/galeria. Documentação em plugins/MV_CharacterRules.md e plugins/Arena_CharacterCreation.md. MV_StateStore ganhou consulta hasOperation sem alterar schema. Sem plugins externos. Catálogo canônico preservado e lido/salvo pelo editor; evidência m01-07-editor.json.

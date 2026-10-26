@@ -49,3 +49,7 @@ Título > Validação visual R04 abre Map003; Enter diante de Ria(4,9), cela(7,9
 ## R05 — autoria e viewport
 
 `test-art-viewport.cjs` agora verifica fonte primária26px e tamanho CSS≥16 na simulação916×412, além de tocar a placa de Ria por touchscreen emulado e aguardar o percurso/abertura nativos (não inicia evento por chamada direta). Resultado/screenshot m01-06-r05-* preservam os R04. Nenhum teste físico A56. Salvar/reabrir no editor foi executado via teclado/acessibilidade com comparação semântica; conferência visual ainda pendente. Matriz e limites em `arte/FIDELIDADE_E_VALIDACAO_R05.md`. Não existe criação M01-07 para testar nesta versão.
+
+## Criação M01-07
+
+`test-character-creation.cjs`: funções de nome e grupo de arma, teclado/cancelamento/revisão/confirmação,16 combinações e234 verificações de API/estado/bonificações/equipamento/save-load, imagens nativas vazias reconstruídas, flag ausente com recibo e rollback. `test-character-pointer.cjs`: mouse e toque80ms Android genérico emulado, previews, revisão/cancelamento sem gravação e remoção do campo HTML. Arquivos m01-07-* em evidencias/. Contextos Chrome descartáveis, slots1/2 somente nesses contextos. Regressões de laboratório agora selecionam arenaLab explicitamente; Novo Jogo é testado pela criação, não contornado como se fosse laboratório. A56 físico/NW.js visual/IME/fullscreen/desempenho não declarados.

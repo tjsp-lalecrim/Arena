@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "base de dados; não carregado pelo motor ainda",
+  "status": "Catálogo carregado por Arena_CharacterCreation; bônus derivados da identidade confirmada.",
   "races": [
     {
       "id": "argonian",
@@ -13,11 +13,12 @@
         "value": 1.1,
         "adaptation": "Resistência ao nadar convertida em máximo de Vigor +10%; sem sistema de natação."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "argonian.male.base",
+        "female": "argonian.female.base"
+      },
+      "bonusLabel": "Vigor inicial +10%.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "breton",
@@ -30,11 +31,12 @@
         "value": 0.5,
         "adaptation": "Metade do dano mágico; não importar saving throw inexistente no MV."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "breton.male.base",
+        "female": "breton.female.base"
+      },
+      "bonusLabel": "Recebe metade do dano mágico.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "dark_elf",
@@ -48,11 +50,12 @@
         "weapon": "all",
         "adaptation": "floor(nível/4) dano e pontos percentuais de acerto em armas, sem profissão."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "dark_elf.male.base",
+        "female": "dark_elf.female.base"
+      },
+      "bonusLabel": "Bônus com armas: +1 a cada 4 níveis.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "high_elf",
@@ -65,11 +68,12 @@
         "stateId": 3,
         "adaptation": "Imunidade nativa a Paralisia."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "high_elf.male.base",
+        "female": "high_elf.female.base"
+      },
+      "bonusLabel": "Imune à paralisia.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "khajiit",
@@ -82,11 +86,12 @@
         "value": 1.05,
         "adaptation": "Escalada ágil convertida em AGI +5%; escalada não implementada."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "khajiit.male.base",
+        "female": "khajiit.female.base"
+      },
+      "bonusLabel": "Agilidade +5%.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "nord",
@@ -100,11 +105,12 @@
         "value": 0.5,
         "adaptation": "Metade do dano de frio; sem saving throw adicional."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "nord.male.base",
+        "female": "nord.female.base"
+      },
+      "bonusLabel": "Recebe metade do dano de frio.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "redguard",
@@ -118,11 +124,12 @@
         "weapon": "melee",
         "adaptation": "floor(nível/3) dano e pontos percentuais de acerto corpo a corpo."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "redguard.male.base",
+        "female": "redguard.female.base"
+      },
+      "bonusLabel": "Corpo a corpo: +1 a cada 3 níveis.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "wood_elf",
@@ -136,11 +143,12 @@
         "weapon": "bow",
         "adaptation": "floor(nível/3) dano e pontos percentuais de acerto com arcos; nenhum arco cadastrado nesta base."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "wood_elf.male.base",
+        "female": "wood_elf.female.base"
+      },
+      "bonusLabel": "Com arcos: +1 a cada 3 níveis.",
+      "application": "derived-after-confirmation"
     }
   ],
   "genders": [

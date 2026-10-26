@@ -16,9 +16,11 @@ api.register('another-project', 2, { tokens: 0, nested: { label: null } }, (data
 });
 sandbox.$gameSystem = new Game_System();
 assert.equal(api.read('another-project').tokens, 0);
+assert.equal(api.hasOperation('another-project', 'reward/chest-1'), false);
 assert.equal(api.once('another-project', 'reward/chest-1', d => { d.tokens += 5; }), 'applied');
 assert.equal(api.once('another-project', 'reward/chest-1', d => { d.tokens += 5; }), 'duplicate');
 assert.equal(api.read('another-project').tokens, 5);
+assert.equal(api.hasOperation('another-project', 'reward/chest-1'), true);
 const snapshot = api.read('another-project'); snapshot.tokens = 900;
 assert.equal(api.read('another-project').tokens, 5, 'reads must not alias saved data');
 assert.throws(() => api.once('another-project', 'failed', d => { d.tokens = 99; throw Error('failure'); }));
