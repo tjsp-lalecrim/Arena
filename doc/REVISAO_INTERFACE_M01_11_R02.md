@@ -50,3 +50,8 @@ Limites: sem novo playtest visual NW.js/editor ou teste no Galaxy A56 físico ne
 ## Roteiro de revisão do responsável
 
 Título → Combate técnico (piloto) → preparar treino(3,5). Rato(7,5), Goblin(6,8), homem-lagarto(10,8), trio(13,8); descanso/reinício(11,5). Usar C/Configurar, associar habilidades/itens, Esc/Voltar;1–6 executa o espaço. Conferir nomes/custos/quantidades, seleção e indisponibilidade, ajuda nas listas, retorno e ausência de gasto ao navegar. Trocar/remover arma invalida técnicas pelo contrato anterior; itens esgotados conservam associação desabilitada. Salvar/carregar no mapa conserva referências. Vencer deve mostrar mensagem e EXP de largura integral sem atalhos, painel ou comandos por cima; confirmar retorna ao mapa. Avaliar em janela normal/menor e, posteriormente, no aparelho físico.
+
+
+## Fechamento autorizado
+
+26/10/2026: responsável testou o combate no estado25672fe e considera o resultado atual satisfatório. Escopo manual informado: combate observado nessa versão; não foram especificados todos os menus/casos, navegador, editor ou dispositivo. Não inferir teste físico A56/fullscreen nem funcionalidades posteriores. Critérios técnicos M01-11 já documentados passaram; autorização atual permite consolidar em develop. Favoritar habilidades/itens para inclusão nos atalhos fica como melhoria futura, sem implementação ou alteração das associações existentes.

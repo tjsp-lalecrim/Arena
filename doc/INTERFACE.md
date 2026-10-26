@@ -100,3 +100,8 @@ Este documento especifica a direção da interface; os menus ainda não foram im
 ## Implementação M01-11
 
 Direção de batalha implementada tecnicamente em feature/m01-interface-batalha; o texto anterior é especificação/histórico para os demais menus. Quatro comandos existentes, filtros/cartões/quantidades/descrição, seis atalhos configuráveis e alvo único automático após ação solicitada. Teclado/mouse/toque com Voltar visível; sem Recuar/talentos ativos/aparo novo. Integração nativa, limites da emulação e roteiro em INTERFACE_BATALHA_M01_11.md. Inventário de exploração/equipamento por arrasto permanecem M01-12, sem antecipação nesta feature.
+
+
+## Melhoria futura — favoritos
+
+Favoritar habilidades e itens para facilitar sua associação aos atalhos foi solicitado como pendência futura em26/10/2026. Não implementar em M01-12; referências battle.1–8 e fluxo atual preservados. Combate considerado satisfatório pelo responsável na versão25672fe, sem inferir cobertura manual de todos os menus ou dispositivos.

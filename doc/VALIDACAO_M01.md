@@ -1,5 +1,9 @@
 # Evidências de implementação M01
 
+## Aprovação e fechamento M01-11
+
+26/10/2026: responsável testou o combate no estado25672fe e considera o resultado atual satisfatório. Escopo manual informado: combate observado nessa versão; não foram especificados todos os menus/casos, navegador, editor ou dispositivo. Não inferir teste físico A56/fullscreen nem funcionalidades posteriores. Critérios técnicos M01-11 já documentados passaram; autorização atual permite consolidar em develop. Favoritar habilidades/itens para inclusão nos atalhos fica como melhoria futura, sem implementação ou alteração das associações existentes.
+
 ## 26/10/2026 — M01-11 R02, apresentação e resultado
 
 Base30e441d, mesma feature/m01-interface-batalha. Código revisado no commit a18fe76, com hashes em evidencias/m01-11-r02/fontes-testadas.json. Responsável declarou aprovados combate e animações atuais nesta solicitação; não atribuir à declaração novos testes no editor/aparelho, nem aprovação da UI. Interface ainda aguarda revisão visual. Sem merge em develop/main, release ou M01-12.
