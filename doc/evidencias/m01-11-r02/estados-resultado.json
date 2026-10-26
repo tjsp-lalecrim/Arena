@@ -1,0 +1,511 @@
+{
+  "browser": "156.0.8078.47",
+  "sources": {
+    "js/plugins/Arena_BattleUI.js": "6223c3a950ddc81279aab8f0118ca6783bf78dd8e831994416fd1a2136d98961",
+    "data/ArenaBattleUI.json": "3144b95ab875bc57a386ec7bac515558a861978f62759f3dbbcaee9641a6816b",
+    "js/plugins.js": "89c6853f394239ab58b18f0de0f6aeb091dc0181721c52cc2bb3d45ae6ca9b18"
+  },
+  "cases": [
+    {
+      "viewport": {
+        "width": 1100,
+        "height": 800
+      },
+      "canvas": {
+        "x": 142,
+        "y": 88,
+        "width": 816,
+        "height": 624,
+        "top": 88,
+        "right": 958,
+        "bottom": 712,
+        "left": 142
+      },
+      "load": {
+        "before": {
+          "battle.1": {
+            "kind": "skill",
+            "id": 5
+          },
+          "battle.2": {
+            "kind": "skill",
+            "id": 10
+          },
+          "battle.3": {
+            "kind": "item",
+            "id": 2
+          }
+        },
+        "after": {
+          "battle.1": {
+            "kind": "skill",
+            "id": 5
+          },
+          "battle.2": {
+            "kind": "skill",
+            "id": 10
+          },
+          "battle.3": {
+            "kind": "item",
+            "id": 2
+          }
+        }
+      },
+      "panels": [
+        {
+          "rect": [
+            576,
+            226,
+            148,
+            52
+          ],
+          "opacity": 0,
+          "resources": [
+            {
+              "id": "hp",
+              "name": "Vida",
+              "current": 18,
+              "maximum": 18,
+              "color": "#B44C4C"
+            }
+          ]
+        },
+        {
+          "rect": [
+            86,
+            178,
+            148,
+            100
+          ],
+          "opacity": 0,
+          "resources": [
+            {
+              "id": "hp",
+              "name": "Vida",
+              "current": 100,
+              "maximum": 100,
+              "color": "#B44C4C"
+            },
+            {
+              "id": "mp",
+              "name": "Mana",
+              "current": 50,
+              "maximum": 50,
+              "color": "#587EBC"
+            },
+            {
+              "id": "vigor",
+              "name": "Vigor",
+              "current": 100,
+              "maximum": 100,
+              "color": "#719365"
+            }
+          ]
+        }
+      ],
+      "result": {
+        "text": "Piloto foi vitorioso!\n\\.15 EXP recebidos!",
+        "message": [
+          0,
+          444,
+          816,
+          180
+        ],
+        "windows": [
+          {
+            "name": "_arenaHotbar",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_arenaPicker",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_actorCommandWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_skillWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_itemWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_enemyWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_actorWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_statusWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_arenaCategories",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_arenaBack",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_helpWindow",
+            "visible": false,
+            "active": false
+          }
+        ],
+        "uses": [
+          5
+        ],
+        "resources": {
+          "hp": {
+            "current": 95,
+            "maximum": 100,
+            "base": 100,
+            "growth": 0,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 50,
+            "maximum": 50,
+            "base": 50,
+            "growth": 0,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 95,
+            "maximum": 100,
+            "base": 100,
+            "growth": 0,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 1,
+          "baselineLevel": 1,
+          "choices": {},
+          "pending": []
+        }
+      },
+      "target": {
+        "rect": [
+          228,
+          520,
+          588,
+          104
+        ],
+        "status": [
+          0,
+          520,
+          228,
+          104
+        ],
+        "commandsVisible": false,
+        "panels": [
+          [
+            430,
+            106,
+            148,
+            52
+          ],
+          [
+            625,
+            191,
+            148,
+            52
+          ],
+          [
+            445,
+            276,
+            148,
+            52
+          ],
+          [
+            86,
+            178,
+            148,
+            100
+          ]
+        ]
+      },
+      "errors": [],
+      "checks": [
+        "compact frameless indicators",
+        "native lists/configuration/cancel",
+        "shortcuts restored by native save/load",
+        "controls hidden and inactive before/during result",
+        "execution C/digit ignored, single native Vigor debit",
+        "victory and EXP fully unobstructed",
+        "map return without repeat",
+        "separate target strip and cancel",
+        "native defeat"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 640,
+        "height": 480
+      },
+      "canvas": {
+        "x": 6.15625,
+        "y": 0,
+        "width": 627.6875,
+        "height": 480,
+        "top": 0,
+        "right": 633.84375,
+        "bottom": 480,
+        "left": 6.15625
+      },
+      "load": {
+        "before": {
+          "battle.1": {
+            "kind": "skill",
+            "id": 5
+          },
+          "battle.2": {
+            "kind": "skill",
+            "id": 10
+          },
+          "battle.3": {
+            "kind": "item",
+            "id": 2
+          }
+        },
+        "after": {
+          "battle.1": {
+            "kind": "skill",
+            "id": 5
+          },
+          "battle.2": {
+            "kind": "skill",
+            "id": 10
+          },
+          "battle.3": {
+            "kind": "item",
+            "id": 2
+          }
+        }
+      },
+      "panels": [
+        {
+          "rect": [
+            576,
+            226,
+            148,
+            52
+          ],
+          "opacity": 0,
+          "resources": [
+            {
+              "id": "hp",
+              "name": "Vida",
+              "current": 18,
+              "maximum": 18,
+              "color": "#B44C4C"
+            }
+          ]
+        },
+        {
+          "rect": [
+            86,
+            178,
+            148,
+            100
+          ],
+          "opacity": 0,
+          "resources": [
+            {
+              "id": "hp",
+              "name": "Vida",
+              "current": 100,
+              "maximum": 100,
+              "color": "#B44C4C"
+            },
+            {
+              "id": "mp",
+              "name": "Mana",
+              "current": 50,
+              "maximum": 50,
+              "color": "#587EBC"
+            },
+            {
+              "id": "vigor",
+              "name": "Vigor",
+              "current": 100,
+              "maximum": 100,
+              "color": "#719365"
+            }
+          ]
+        }
+      ],
+      "result": {
+        "text": "Piloto foi vitorioso!\n\\.15 EXP recebidos!",
+        "message": [
+          0,
+          444,
+          816,
+          180
+        ],
+        "windows": [
+          {
+            "name": "_arenaHotbar",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_arenaPicker",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_actorCommandWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_skillWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_itemWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_enemyWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_actorWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_statusWindow",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_arenaCategories",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_arenaBack",
+            "visible": false,
+            "active": false
+          },
+          {
+            "name": "_helpWindow",
+            "visible": false,
+            "active": false
+          }
+        ],
+        "uses": [
+          5
+        ],
+        "resources": {
+          "hp": {
+            "current": 100,
+            "maximum": 100,
+            "base": 100,
+            "growth": 0,
+            "modifiers": 0
+          },
+          "mp": {
+            "current": 50,
+            "maximum": 50,
+            "base": 50,
+            "growth": 0,
+            "modifiers": 0
+          },
+          "vigor": {
+            "current": 95,
+            "maximum": 100,
+            "base": 100,
+            "growth": 0,
+            "initialBonus": 0,
+            "modifiers": 0
+          },
+          "level": 1,
+          "baselineLevel": 1,
+          "choices": {},
+          "pending": []
+        }
+      },
+      "target": {
+        "rect": [
+          228,
+          520,
+          588,
+          104
+        ],
+        "status": [
+          0,
+          520,
+          228,
+          104
+        ],
+        "commandsVisible": false,
+        "panels": [
+          [
+            430,
+            106,
+            148,
+            52
+          ],
+          [
+            625,
+            191,
+            148,
+            52
+          ],
+          [
+            445,
+            276,
+            148,
+            52
+          ],
+          [
+            86,
+            178,
+            148,
+            100
+          ]
+        ]
+      },
+      "errors": [],
+      "checks": [
+        "compact frameless indicators",
+        "native lists/configuration/cancel",
+        "shortcuts restored by native save/load",
+        "controls hidden and inactive before/during result",
+        "execution C/digit ignored, single native Vigor debit",
+        "victory and EXP fully unobstructed",
+        "map return without repeat",
+        "separate target strip and cancel",
+        "native defeat"
+      ]
+    }
+  ],
+  "isolation": "Disposable contexts; browser-only save20; no personal saves",
+  "limits": [
+    "Visual review still required by owner",
+    "No physical A56 or editor playtest asserted"
+  ]
+}

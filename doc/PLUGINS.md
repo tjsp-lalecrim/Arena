@@ -78,3 +78,13 @@ MV_ResourceProgression0.1.0 (núcleo puro) e Arena_Resources0.1.0 (configuraçã
 ## M01-10 R03
 
 Arena_BattleMotion0.3.0 amplia a cobertura para16 identidades/3 inimigos; actionMotion por inimigo, sem novo plugin ou consumidor de custos. MV_MotionTimeline permanece inalterado. Documentação em plugins/Arena_BattleMotion.md e EXPANSAO_COMBATE_M01_10_R03.md. R02 aprovado preservado. Autoria MV abrir/gerenciador/salvar/reabrir executada, separada do navegador; playtest visual NW.js/A56 e manual das variantes pendentes.
+
+
+## M01-11
+
+MV_BattleSlots0.1.0 e Arena_BattleUI0.1.0, nessa ordem após Arena_BattleMotion, sem plugins externos. Geometria pura separada de configuração/conteúdo Arena; cartões, referências battle.1–8 pelo contrato existente, revalidação sem novo consumidor de custos. Documentação em plugins/MV_BattleSlots.md e plugins/Arena_BattleUI.md; evidências e limites em INTERFACE_BATALHA_M01_11.md.
+
+
+## M01-11 R02
+
+Arena_BattleUI0.2.0 refina composição/visibilidade, indicadores e tema local de batalha, sem novo plugin/registro/dependência ou consumidor de custos. Proteção de canvas em janela menor por extensão, sem editar motor. Ler plugins/Arena_BattleUI.md e REVISAO_INTERFACE_M01_11_R02.md. Interface ainda em avaliação visual.

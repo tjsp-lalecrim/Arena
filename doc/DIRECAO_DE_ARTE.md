@@ -234,3 +234,13 @@ Validar primeiro um exemplo por raça antes de multiplicar gêneros/direções/v
 ## Continuidade dos movimentos — M01-10 R03
 
 Expansão somente dos15 personagens/2 inimigos faltantes, mantendo piloto/rato R02 aprovado byte a byte. Referências de identidade por combinação, coreografia aprovada separada; nenhum retrato regenerado.22 prompts e masters, limites/retornos neutros reutilizados e inspeção real no motor registrados em EXPANSAO_COMBATE_M01_10_R03.md. Pranchas e vídeos de variantes são inspeção Codex, não aprovação estética do responsável. Preservar fontes e estudos incompletos; não voltar à geração artística sem necessidade concreta.
+
+
+## Apresentação M01-11, sem nova geração
+
+Nenhum retrato, participante ou animação regenerado. Atlases/tempos M01-10 preservados; inversão dos lados é transformação coerente de corpo e arma no motor. Estudo da cela R02 e ícones IA de adaga/poção reaproveitados em cenário/UI técnicos; poções recebem matiz apenas de apresentação. Ícones lineares de comandos são elementos próprios de interface. Capturas/vídeo reais em evidencias/m01-11, sem atribuir aprovação manual de animações à nova UI. Cenário ilustrado não define o layout final da dungeon.
+
+
+## Revisão de UI M01-11 R02
+
+Responsável aprova combate/animações atuais na solicitação de refinamento da interface (base30e441d). Nenhuma regeneração ou alteração de movimentos/arte nesta rodada. Indicadores compactos sem caixas; menus inferiores com molduras finas, cantos arredondados, cores escuras/seleção verde e slots identificados, conforme prints de composição. Desenho de elementos de UI próprio por código, sem importar assets/regras do projeto consultado. Isso não promove a nova UI a aprovada: aguarda avaliação visual. Referências/evidências em REVISAO_INTERFACE_M01_11_R02.md.

@@ -1,5 +1,33 @@
 # Evidências de implementação M01
 
+## Aprovação e fechamento M01-11
+
+26/10/2026: responsável testou o combate no estado25672fe e considera o resultado atual satisfatório. Escopo manual informado: combate observado nessa versão; não foram especificados todos os menus/casos, navegador, editor ou dispositivo. Não inferir teste físico A56/fullscreen nem funcionalidades posteriores. Critérios técnicos M01-11 já documentados passaram; autorização atual permite consolidar em develop. Favoritar habilidades/itens para inclusão nos atalhos fica como melhoria futura, sem implementação ou alteração das associações existentes.
+
+## 26/10/2026 — M01-11 R02, apresentação e resultado
+
+Base30e441d, mesma feature/m01-interface-batalha. Código revisado no commit a18fe76, com hashes em evidencias/m01-11-r02/fontes-testadas.json. Responsável declarou aprovados combate e animações atuais nesta solicitação; não atribuir à declaração novos testes no editor/aparelho, nem aprovação da UI. Interface ainda aguarda revisão visual. Sem merge em develop/main, release ou M01-12.
+
+Corrigida a visibilidade da barra de atalhos durante mensagens/resultado (print do responsável), com coordenação antes/depois da atualização nativa, entrada adicional bloqueada e seletores ocultos sem capturar teclas/toque. Indicadores sem caixas, barras5px/nome18/recursos14, painel inferior compacto, molduras finas/seleção verde, slots com nome e custos/quantidades. Alvos múltiplos substituem comandos na faixa inferior. Motor, registro canônico18 plugins, banco, regras, custos, atalhos persistentes e animações preservados por comparação com30e441d.
+
+Evidências novas em evidencias/m01-11-r02; R01 preservada. Teste nativo específico em1100×800/640×480 cobre salvar/carregar atalhos antes do encontro, listas/configuração/cancelamento, execução, vitória/EXP sem sobreposição, bloqueio de C/dígitos e chamada direta durante mensagem, mapa sem repetição, vários alvos/cancelamento e derrota. Janela pequena revelou o canvas fixo/recortado no MV desktop; extensão do plugin reduz somente quando necessário, mantendo proporção/coordenadas nativas, validada na viewport real. Nenhum ajuste somente na fixture para esconder o defeito.
+
+Suíte nativa de12 cenários de slots, categoria única, mouse/toque Android emulado916×412, seis/oito espaços e três/duas colunas, e regressão nativa de combate executadas nesta rodada. Validadores preservam transformação de corpos/armas/efeitos, consumidores de custos, dados e assets. Capturas reais de principal, listas, configuração, alvo e resultado inspecionadas; geometria sozinha não é aprovação visual. Falhas iniciais (estado passivo active e recorte desktop pequeno) corrigidas; somente saídas finais bem-sucedidas são usadas como evidência.
+
+REVISAO_INTERFACE_M01_11_R02.md contém fontes consultadas, roteiro e limites. Sem novo playtest visual no editor/NW.js nem Galaxy A56 físico. Autoria anterior do MV permanece identificada como evidência daquela versão. Balanceamento provisório intacto. UI continua em revisão visual do responsável.
+
+## 26/10/2026 — M01-11, slots e atalhos
+
+M01-10 revisado após a escolha explícita de concluir a expansão:17 novos perfis com seis quadros/gestos/armas,47 vídeos reais, regressões e autoria no MV; R02 aprovado preservado. Commits1533e0d/49cf6dc integrados e publicados em develop pelo merge f37018d, sem promover main. Feature/m01-interface-batalha criada dessa base. Implementação M01-11 identificada pelo commit c03e96c; capturas e suíte principal têm hashes em fontes-testadas.json. A correção final restrita à abertura da única categoria válida tem hashes próprios em fontes-testadas-categoria.json e teste nativo categoria-unica.json.
+
+Interface própria com jogador à esquerda/inimigos à direita, armas/efeitos/offsets coerentes, barras reais próximas aos corpos e painel inferior compacto. Comandos Atacar/Habilidades/Defender/Itens, cartões com ícone/nome/custo ou quantidade, filtros/descrição por seleção, seis atalhos configuráveis com referências battle.1–8 no contrato existente. Nenhum novo consumidor de recursos, bônus, retrato, animação, catálogo ou dependência externa. Arte existente reaproveitada. Trio técnico de inimigos existentes no Map007(13,8), com reinício explícito e sem patrulhas/dungeon final.
+
+Evidências em evidencias/m01-11 e roteiro em INTERFACE_BATALHA_M01_11.md: fluxo Scene_Battle nativo, custos únicos inclusive repeats2, insuficiência, navegação/configuração/cancelamento sem custo, estoque obsoleto/item sem alvos, técnicas/magias/defesa/poções, save-load de associações/recursos/aprendizado/inventário, três inimigos e derrota/game over. Mouse e toque Android genérico916×412 emulados,6/8 espaços e3/2 colunas, limites do canvas e pontos de toque verificados, ajuda≈16,51px CSS. Não é teste Galaxy A56. Capturas principal/habilidades/inventário e gravação do canvas demonstram a composição, sem aprovação manual inferida.
+
+Regressões: batalha nativa/erro/esquiva/crítico/múltiplos efeitos,628 habilidades/192 ações raciais,619 recursos,234 criação,981 bônus,27 persistência. Núcleo de slots testado sem Arena, geometria/configurações inválidas, UTF8 e18 plugins/16 anteriores idênticos. A revisão visual detectou/corrigiu textos corrompidos, recorte do botão Voltar e uma emulação sem identificação Android que recortava o canvas. Roteiro antigo passou a aguardar transferência/mapa/jogador; fixture que tentava descansar em combate foi corrigida sem liberar essa ação.
+
+Autoria MV por teclado/acessibilidade: abrir, F10/detalhes Arena_BattleUI ON, salvar, fechar, reabrir nova janela e salvar. Somente System.versionId alterado semanticamente,18 registros preservados/canônicos/UTF8 sem BOM; reformatações semânticas idênticas restauradas de cópias antes do editor, preservando adições válidas. Manual do responsável continua adiado, sem aprovação estética da UI; NW.js visual, A56/ergonomia/fullscreen/desempenho físicos pendentes. Equilíbrio continua provisório. Feature para revisão, sem integração automática ou M01-12.
+
 ## 26/10/2026 — M01-10 R03, expansão concluída tecnicamente
 
 Aprovação manual R02 associada a a61977b somente Bretã/rato, preservados byte a byte e por perfil. Escolha explícita: concluir a expansão antes de integrar.15 novas identidades/goblin/homem-lagarto agora usam R03, sete/quatro movimentos com seis células temporizadas, apoios de armas e mordida correspondente à skill11.22 prompts/masters não vazios,678 novas células,744 no conjunto, com retornos neutros reutilizados identificados. Não alegar744 desenhos exclusivos ou aprovação individual das variantes. Relato atual EXPANSAO_COMBATE_M01_10_R03.md; R01/R02 abaixo históricos.

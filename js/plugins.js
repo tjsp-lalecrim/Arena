@@ -17,5 +17,7 @@ var $plugins =
 {"name":"Arena_AbilityLab","status":true,"description":"v0.1.0 Laboratório de ações nativas M01-09","parameters":{}},
 {"name":"Arena_Battle","status":true,"description":"v0.1.0 Combate nativo, animacoes por perfil e barras","parameters":{}},
 {"name":"MV_MotionTimeline","status":true,"description":"v0.1.0 Quadros, tempos e marco visual de impacto","parameters":{}},
-{"name":"Arena_BattleMotion","status":true,"description":"v0.2.0 Movimentos e armas separados: piloto e rato","parameters":{}}
+{"name":"Arena_BattleMotion","status":true,"description":"v0.2.0 Movimentos e armas separados: piloto e rato","parameters":{}},
+{"name":"MV_BattleSlots","status":true,"description":"Geometria pura de slots, sem IDs de conteúdo.","parameters":{}},
+{"name":"Arena_BattleUI","status":true,"description":"Interface de batalha em slots, atalhos e jogador à esquerda.","parameters":{}}
 ];

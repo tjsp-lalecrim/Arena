@@ -88,3 +88,13 @@ Map004: chegada técnica provisória após criação, tileset3, sem dungeon fina
 ## Apresentação M01-10 R03
 
 ArenaBattleMotion.json agora cobre16 identidades/3 inimigos, sem modificar banco de habilidades/itens/armas/inimigos. actionMotion do homem-lagarto é bite para Mordida paralisante11; estudo de tridente não integrado. Clock/quadro/mão não são dados persistentes. System.versionId regravado pelo editor durante a validação de autoria. EXPANSAO_COMBATE_M01_10_R03.md registra células/fontes e doença original do rato ainda sem contrato no subconjunto, a avaliar em combate/balanceamento.
+
+
+## Interface de batalha M01-11
+
+ArenaBattleUI.json configura layout/slots/nomes curtos/ícones/formações; nomes/regras originais do banco preservados. Hotbar battle.1–8 usa os mesmos {kind,id}/null do contrato M01-05, sem novo schema. Dados de recursos continuam nas APIs anteriores/nativas; cache visual é transitório. Troops4 é somente trio técnico de inimigos1/2/3, Map007 evento7(13,8), reiniciado explicitamente pelo descanso. Nenhum novo inimigo, item ou valor de combate. Validadores comparam prefixos anteriores e mudanças exatas; System.versionId é a única alteração semântica extra produzida pelo roundtrip do editor.
+
+
+## Ajuste de apresentação M01-11 R02
+
+Somente commandHeight104 e hotbarHeight108 mudam em ArenaBattleUI.json em relação a30e441d; IDs, formação, prefixo battle.1–8, inventário/banco/regras e persistência são preservados. Tema e visibilidade são transitórios, sem novos campos de save.

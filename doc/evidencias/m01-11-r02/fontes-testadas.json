@@ -1,0 +1,23 @@
+{
+  "base": "30e441d",
+  "sources": {
+    "js/plugins/Arena_BattleUI.js": "6223c3a950ddc81279aab8f0118ca6783bf78dd8e831994416fd1a2136d98961",
+    "data/ArenaBattleUI.json": "3144b95ab875bc57a386ec7bac515558a861978f62759f3dbbcaee9641a6816b",
+    "js/plugins.js": "89c6853f394239ab58b18f0de0f6aeb091dc0181721c52cc2bb3d45ae6ca9b18"
+  },
+  "suites": [
+    "test-battle-ui-refinement.cjs:1100x800,640x480",
+    "test-battle-slots.cjs:12 native scenarios",
+    "test-battle-slots-pointer.cjs:mouse,916x412 Android generic touch,6/8 slots",
+    "test-battle-slots-category.cjs",
+    "test-battle.cjs native combat regression",
+    "validate-battle-ui-refinement.cjs",
+    "validate-battle-ui.cjs",
+    "validate-battle-motion.cjs",
+    "validate-battle.cjs"
+  ],
+  "owner": "Combat/animations accepted in request; R02 UI visual approval pending",
+  "editor": "No new editor/NW.js visual test this revision. Registry byte content unchanged from30e441d (normalized line endings); previous editor evidence remains versioned.",
+  "galaxyA56": "Not physically tested",
+  "personalSaves": "Not touched"
+}

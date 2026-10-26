@@ -1,0 +1,74 @@
+{
+  "browser": "156.0.8078.47",
+  "cases": [
+    {
+      "mode": "desktop mouse; alternative8slots/2columns config only in memory",
+      "metrics": {
+        "scale": 1,
+        "canvas": {
+          "x": 142,
+          "y": 88,
+          "width": 816,
+          "height": 624,
+          "top": 88,
+          "right": 958,
+          "bottom": 712,
+          "left": 142
+        },
+        "slots": 8,
+        "columns": 2,
+        "mainCommands": [
+          "Atacar",
+          "Habilidades",
+          "Defender",
+          "Itens"
+        ],
+        "helpCssFont": 25,
+        "shortcutSlotCssWidth": 70
+      },
+      "checks": [
+        "mouse/touch category selection and essential description",
+        "right-click/visible Voltar touch cancel",
+        "configure header, slot, picker and association without costs",
+        "selected shortcut description and second-tap execution",
+        "native technique5 debit5 exactly once"
+      ],
+      "errors": []
+    },
+    {
+      "mode": "Chrome landscape touch emulation, not physical A56",
+      "metrics": {
+        "scale": 0.6602564102564102,
+        "canvas": {
+          "x": 188.609375,
+          "y": 0,
+          "width": 538.765625,
+          "height": 412,
+          "top": 0,
+          "right": 727.375,
+          "bottom": 412,
+          "left": 188.609375
+        },
+        "slots": 6,
+        "columns": 3,
+        "mainCommands": [
+          "Atacar",
+          "Habilidades",
+          "Defender",
+          "Itens"
+        ],
+        "helpCssFont": 16.506410256410255,
+        "shortcutSlotCssWidth": 62.06410256410256
+      },
+      "checks": [
+        "mouse/touch category selection and essential description",
+        "right-click/visible Voltar touch cancel",
+        "configure header, slot, picker and association without costs",
+        "selected shortcut description and second-tap execution",
+        "native technique5 debit5 exactly once"
+      ],
+      "errors": []
+    }
+  ],
+  "limits": "No physical Galaxy A56; browser emulation does not validate physical ergonomics/fullscreen/performance"
+}
