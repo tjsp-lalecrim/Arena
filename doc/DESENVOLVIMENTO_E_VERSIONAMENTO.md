@@ -68,3 +68,8 @@ Antes de subir a documentação, reunir as decisões confirmadas, eliminar contr
 A documentação pode ser consolidada com decisões ainda abertas, desde que estejam explícitas. Não apresentar especificações como funcionalidades já implementadas. Informar quais verificações foram feitas e quais pendências permanecem.
 
 Para a documentação inicial, sugerir a branch feature/documentacao-inicial, criada a partir de develop, e um commit como feat: consolida documentacao inicial do projeto, respeitando as convenções existentes. O envio ao remoto só deve ocorrer após a consolidação e conforme a autorização da tarefa.
+
+
+## Integração M01-12
+
+Autorização do responsável para próximas tarefas: quando houver necessidade concreta, consulta pontual somente de leitura ao projeto Battlespire. Não alterar arquivos nem promovê-lo a fonte oficial/normativa/dependência. Reaproveitamento eventual deve ser pontual, revisado, adaptado e documentado. M01-12 não precisou dessa consulta; reutilizou APIs/tema do Arena e fluxo MV. A autorização não amplia os requisitos do backlog.

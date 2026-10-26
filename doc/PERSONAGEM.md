@@ -1,5 +1,7 @@
 # Criação e evolução do personagem
 
+Estado atual M01-12: criação/R05, recursos, habilidades e combate anteriores preservados;16 fontes animadas M01-10 já existentes. Inventário/equipamento e aparência mínima por material na feature para revisão, sem encerrar a avaliação artística. Relatos antigos de sprites estáticos abaixo descrevem etapas anteriores. Ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
 ## Criação confirmada
 
 A nova partida permitirá escolher nome, raça e gênero. Os assets serão predefinidos para cada combinação de raça e gênero; não há editor livre de rosto ou corpo previsto por esta decisão. A apresentação inicial é em Português Brasileiro.
@@ -39,3 +41,8 @@ Criação-base implementada em feature/m01-criacao-personagem: nome,8 raças,2 g
 ## Aprovação e fechamento R05
 
 O responsável autorizou P01–P08 da auditoria R04 e aprovou as artes atuais para prosseguir com ressalvas. Valores/textos sincronizados em ArenaCatalog e plugins0.2.0; decisão exata em decisoes/M01_07_APROVACAO_R05.json. Bônus derivados não crescem por nível nem acumulam ao carregar; só o Vigor inicial+10 é concedido uma vez. Sem profissões, restrições ou bônus por gênero. Recortes arredondados/heterogêneos e diferenças de orientação continuam existentes e adiados, com arquivos/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Pilotos R04B continuam estudos fora do catálogo ativo. Ver FECHAMENTO_M01_07.md para critérios/testes e BALANCEAMENTO_RACIAL_CENARIOS_M01.md para eficácia prática ainda pendente. M01-08 foi autorizado posteriormente, em rodada própria; não reabre arte ou bônus aprovados.
+
+
+## Integração M01-12
+
+Equipamento é livre entre as raças/gêneros conforme tipos de slot nativos, sem classe profissional. Couro/malha aplicam material mínimo nas imagens-base aprovadas do personagem escolhido; não alteram baseVisualId, rosto, gênero, bônus ou tempos. Ao carregar, equipamento nativo determina o material. Novas silhuetas completas de vestuário não foram produzidas; amostra em revisão e cobertura em INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

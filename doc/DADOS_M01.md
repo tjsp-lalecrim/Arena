@@ -1,5 +1,7 @@
 # Banco mínimo e convenções M01
 
+Estado atual M01-12: INVT/EQ nativos com transação/slots e material derivado mínimo nas16 identidades; banco/IDs/bônus/custos aprovados preservados. Map007/evento8 é somente técnico. M01-10/11 já integrados; afirmações de cobertura parcial/desativação antigas abaixo são históricas. Ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
 M01-10 R02: ArenaBattleMotion.json v1 configura atlas/frames/durações/impacto/mãos por movimento, armas por wtype/empunhadura e cobertura parcial(1/16 personagem,1/3 inimigo). Camada visual lê arma nativa atual; relógio/bitmap ficam no Sprite e não entram no save. Sem mudança de schema persistente, banco, valores raciais ou pagamento de custos. Referência REVISAO_COMBATE_M01_10_R02.md.
 
 Atualização M01-10 R01: ArenaBattle.json v1 mapeia16 baseVisualId e inimigos1–3 para folhas3×4/células/apoio/tempo, aliases explícitos de movimentos e kit técnico. Map007 tem encontros301 por interação, sem fuga/derrota permitida, self switch após vitória e reinício explícito. Barras consultam estado real; sem cópia persistente ou mudança de schema. Skills/Items/Enemies/Troops, valores raciais e consumidores anteriores preservados. Nenhum item novo no início da campanha. COMBATE_M01_10.md contém limites e validações.
@@ -98,3 +100,8 @@ ArenaBattleUI.json configura layout/slots/nomes curtos/ícones/formações; nome
 ## Ajuste de apresentação M01-11 R02
 
 Somente commandHeight104 e hotbarHeight108 mudam em ArenaBattleUI.json em relação a30e441d; IDs, formação, prefixo battle.1–8, inventário/banco/regras e persistência são preservados. Tema e visibilidade são transitórios, sem novos campos de save.
+
+
+## Integração M01-12
+
+M01-12 não muda Actors/Classes/Weapons/Armors/Items/Skills ou os valores aprovados. ArenaInventory.json configura IDs, kit técnico, layout e regiões de material. Map007 recebe apenas evento8(13,5) para preparar/abrir equipamentos no laboratório; anteriores preservados. Registro canônico20 plugins preserva os18 anteriores. Equipamentos/inventário nativos e aparência derivada, sem schema próprio novo. System.versionId foi regravado pelo editor. Ver INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

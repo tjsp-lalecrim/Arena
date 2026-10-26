@@ -1,5 +1,7 @@
 # Criação e documentação de plugins
 
+Estado atual M01-12:20 registros no formato canônico,18 anteriores preservados; novos MV_EquipmentTransaction e Arena_Inventory. Sem dependência externa/Battlespire. Documentação dos dois em doc/plugins e relatório INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
 M01-10 R02: MV_MotionTimeline0.1.0 (núcleo puro) e Arena_BattleMotion0.2.0 (configuração/integração), após Arena_Battle. Sem consumidores novos de recursos/efeitos ou plugins externos.16 registros canônicos,14 anteriores preservados. Documentos individuais em plugins/; perfil R02 só piloto Bretã/rato, legacyR01 explicitamente separado. REVISAO_COMBATE_M01_10_R02.md contém vídeos/testes/limites; autoria no editor continua pendente.
 
 Atualização M01-10 R01: Arena_Battle0.1.0 após Arena_Abilities/Arena_Resources. Configuração ArenaBattle.json,14 registros canônicos com os13 anteriores preservados. Sem consumidores duplicados de Vigor/Mana, plugin externo ou alteração de motor. Documentação em plugins/Arena_Battle.md; aliases genéricos de ação explícitos, perfis ausentes geram erro. Batalha real no Map007; autoria no editor desta versão pendente, separada do Chrome. M01-09 integrado em develop782ebc8.
@@ -88,3 +90,8 @@ MV_BattleSlots0.1.0 e Arena_BattleUI0.1.0, nessa ordem após Arena_BattleMotion,
 ## M01-11 R02
 
 Arena_BattleUI0.2.0 refina composição/visibilidade, indicadores e tema local de batalha, sem novo plugin/registro/dependência ou consumidor de custos. Proteção de canvas em janela menor por extensão, sem editar motor. Ler plugins/Arena_BattleUI.md e REVISAO_INTERFACE_M01_11_R02.md. Interface ainda em avaliação visual.
+
+
+## Integração M01-12
+
+MV_EquipmentTransaction0.1.0 (puro/sem IDs) e Arena_Inventory0.1.0 (adaptador/Scene/renderizador), após Arena_BattleUI. Sem dependências externas. Nova exportação ArenaBattleUI.theme reaproveita o acabamento existente. Contratos, configuração e limites em plugins/MV_EquipmentTransaction.md, plugins/Arena_Inventory.md e INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

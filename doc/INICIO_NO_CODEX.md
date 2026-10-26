@@ -1,6 +1,6 @@
 # Como usar esta documentação
 
-Estado operacional M01-11 R02: refinamento em feature/m01-interface-batalha, base30e441d. Combate/animações atuais aprovados pelo responsável nesta solicitação; UI permanece em revisão visual. Indicadores compactos sem caixas, menus harmonizados e controles ocultos/inativos durante mensagens/resultado. Ler REVISAO_INTERFACE_M01_11_R02.md e evidencias/m01-11-r02. Desenvolver somente esta revisão, sem merge em develop/main ou M01-12. Galaxy A56/NW.js visual atuais pendentes.
+Estado operacional M01-12: M01-11 integrado/publicado em develop6e59882 após aprovação do combate disponível em25672fe (ambiente/casos não detalhados). Feature/m01-inventario-equipamentos implementa inventário, troca/arrasto/prévia/remoção e aparência derivada mínima por couro/malha. M01-12 permanece em revisão, sem encerramento artístico; ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Favoritos são melhoria futura não implementada. Sem merge da nova feature ou avanço para M01-13; A56 físico/playtest visual NW.js pendentes.
 
 Histórico M01-10 R02 (superado pelo estado operacional acima): M01-09 integrado/publicado em develop782ebc8; feature/m01-combate para revisão, sem merge automático. Ler REVISAO_COMBATE_M01_10_R02.md, COMBATE_M01_10.md (R01 histórico) e backlog. Somente Bretã feminina/rato possuem novos movimentos R02 e armas por camada;15 personagens/2 inimigos mantêm R01. M01-10 em validação, M01-11 não iniciado. P01–P08/retratos com ressalvas preservados; manual adiado.
 
