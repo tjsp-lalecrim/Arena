@@ -96,11 +96,11 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
                     check(!A.confirmCurrent({ name: 'Outro', raceId: r.id, genderId: g.id }), 'idempotent-' + r.id + '-' + g.id);
                 }
             } finally { $dataSkills[10].damage.variance = oldVariance; $dataSkills[9].damage.variance = healVariance; $dataEnemies[1].params[4] = oldMat; }
-            // Laboratory saves before creation do not gain identity, vigor, or race bonuses.
+            // M01-08 gives old laboratories neutral resource defaults, never identity/racial grants.
             DataManager.setupNewGame();
             const legacy = DataManager.makeSaveContents(); delete legacy.system._persistentState.namespaces.arenaCreation;
             DataManager.extractSaveContents(legacy);
-            check(!A.isCreated() && ArenaPersistence.identity().raceId === null && Object.keys(ArenaPersistence.snapshot().resources).length === 0, 'legacy-without-creation-keeps-defaults');
+            check(!A.isCreated() && ArenaPersistence.identity().raceId === null && ArenaPersistence.snapshot().resources.vigor.maximum === 100, 'legacy-without-creation-keeps-neutral-resource-defaults');
             const actor = $gameActors.actor(1), originalFaceSetter = actor.setFaceImage, originalState = JSON.stringify($gameSystem._persistentState), originalName = actor.name();
             actor.setFaceImage = function() { throw Error('injected-image-failure'); };
             let failed = false;

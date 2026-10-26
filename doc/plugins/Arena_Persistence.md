@@ -1,5 +1,7 @@
 # Arena_Persistence 0.1.0
 
+Estado operacional M01-08: esta camada continua somente armazenamento/contratos, mas Arena_Resources0.1.0 agora consome recursos/progressão e estende setResource para separar modificador de máximo de Vigor. HP/MP continuam nativos; recursos e escolhas concretas em namespace próprio. Ler RECURSOS_E_PROGRESSAO_M01_08.md e plugins/Arena_Resources.md. O texto abaixo descreve a responsabilidade/histórico de M01-05, não ausência atual de implementação de recursos ou bônus.
+
 Arquivo js/plugins/Arena_Persistence.js. Camada de contratos/IDs de Arena, consumidor de MV_StateStore 0.1.0 (obrigatório e anterior na ordem). Sem plugins externos, parâmetros, comandos de evento, notas adicionais ou assets. Falha com mensagem explícita se o núcleo estiver ausente ou vier depois. Ordem atual: Arena_Runtime, Arena_TechnicalPreview, MV_StateStore, Arena_Persistence. Community_Basic permanece desativado.
 
 Ativar os dois arquivos no gerenciador mantendo o formato canônico de js/plugins.js. Registra namespace arena versão 1. Banco necessário: ator 1, item importante 1 e as referências item/skill atribuídas a atalhos. Não carrega ArenaCatalog.json nem aplica bônus raciais. Para outro projeto, reutilizar somente MV_StateStore e escrever consumidor com seus próprios IDs, defaults e regras; esta camada é específica de Arena.

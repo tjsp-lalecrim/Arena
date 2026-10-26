@@ -1,5 +1,7 @@
 # Arena_CharacterCreation 0.2.0
 
+Integração M01-08 R01: a base inicial de Vigor consulta opcionalmente ArenaProgression.json quando carregado por Arena_Resources; sem esse plugin conserva100. Continua somando apenas+10 Argoniano na confirmação única. Arena_Resources inicializa a separação de base/concessão/escolhas após confirmar. Valores P01–P08 e os assets não foram alterados.
+
 Arquivo `js/plugins/Arena_CharacterCreation.js`. MV1.6.1. Sem dependências externas, parâmetros ou comandos. Carregar após MV_CharacterRules, MV_StateStore, Arena_Persistence e Arena_ArtPreview. Depende de ArenaCatalog.json e ArenaCharacterVisuals.json pela fila DataManager. Não editar arquivos internos do motor.
 
 ## Funcionalidade e interface

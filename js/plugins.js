@@ -9,5 +9,7 @@ var $plugins =
 {"name":"Arena_Persistence","status":true,"description":"v0.1.0 Contratos persistentes de Arena","parameters":{}},
 {"name":"Arena_ArtPreview","status":true,"description":"v0.2.1 Galerias técnicas com legendas mobile","parameters":{"PreviewMap":"2"}},
 {"name":"MV_CharacterRules","status":true,"description":"v0.2.0 Regras puras e modificadores raciais aprovados P01–P08","parameters":{}},
-{"name":"Arena_CharacterCreation","status":true,"description":"v0.2.0 Criação pt-BR e bônus raciais provisórios P01–P08","parameters":{}}
+{"name":"Arena_CharacterCreation","status":true,"description":"v0.2.0 Criação pt-BR e bônus raciais provisórios P01–P08","parameters":{}},
+{"name":"MV_ResourceProgression","status":true,"description":"v0.1.0 Cálculo puro de recursos e escolhas por nível","parameters":{}},
+{"name":"Arena_Resources","status":true,"description":"v0.1.0 Vida, Mana, Vigor próprio e evolução por escolha","parameters":{}}
 ];
