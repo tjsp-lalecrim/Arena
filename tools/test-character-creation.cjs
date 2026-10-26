@@ -3,6 +3,7 @@ const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
 (async () => {
+    const out = process.env.ARENA_EVIDENCE_DIR || 'doc/evidencias'; fs.mkdirSync(out, { recursive: true });
     const pure = {}; vm.runInNewContext(fs.readFileSync('js/plugins/MV_CharacterRules.js', 'utf8'), pure);
     assert.equal(pure.MVCharacterRules.name("  A\u0301lvaro   d'Água  "), "Álvaro d'Água");
     for (const name of ['', '   ', 'a'.repeat(21), '\\V[1]', 'a\nb']) assert.throws(() => pure.MVCharacterRules.name(name));
@@ -38,11 +39,11 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         await page.getByRole('textbox', { name: 'Nome do personagem' }).fill("  Álvaro   d'Água  "); await key('Enter');
         await key('Enter'); await key('Enter'); await key('Enter');
         await page.waitForFunction(() => !!SceneManager._scene._confirm);
-        await page.screenshot({ path: 'doc/evidencias/m01-07-confirmacao.png' });
+        await page.screenshot({ path: out + '/m01-07-confirmacao.png' });
         await key('Escape'); assert.equal(await page.evaluate(() => !!SceneManager._scene._confirm), false);
         assert.equal(await page.evaluate(() => JSON.stringify($gameSystem._persistentState)), before);
         await page.waitForFunction(() => ImageManager.isReady());
-        await page.screenshot({ path: 'doc/evidencias/m01-07-criacao.png' });
+        await page.screenshot({ path: out + '/m01-07-criacao.png' });
         await key('Enter'); await key('Enter'); await key('Enter'); await page.waitForFunction(() => !!SceneManager._scene._confirm);
         await key('Enter'); await scene('Scene_Map');
         await page.waitForFunction(() => $gameMap.mapId() === 4 && SceneManager._scene._messageWindow.pause && SceneManager._scene._messageWindow._waitCount === 0);
@@ -115,7 +116,7 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         const result = { browser: await browser.version(), engine: 'MV1.6.1', checks, errors,
             ui: ['cancel-before-commit-no-state-change', 'empty-name-rejected', 'keyboard-race-gender-navigation', 'unicode-name-input', 'confirmation-review-preserves-draft', 'confirmed-new-game'],
             isolation: 'Disposable Chrome context; slots1/2 only here; no personal saves', editor: 'Authoring recorded separately in m01-07-editor.json; this test covers browser only', validationServer: process.env.ARENA_URL || 'http://127.0.0.1:8765/', galaxyA56: 'not tested' };
-        fs.writeFileSync('doc/evidencias/m01-07-result.json', JSON.stringify(result, null, 2));
+        fs.writeFileSync(out + '/m01-07-result.json', JSON.stringify(result, null, 2));
         console.log('PASS ' + checks.length + ' checks; UI navigation/name/cancel/confirm; zero missing files/errors.');
     } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

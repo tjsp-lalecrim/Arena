@@ -1,0 +1,383 @@
+{
+  "date": "2026-10-26",
+  "baselineCommit": "0a917f8",
+  "fixedBlock": "Retrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.",
+  "poseReference": {
+    "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+    "size": [
+      572,
+      610
+    ],
+    "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b"
+  },
+  "poseReferenceSource": "art/masters/breta-piloto-v01.png portrait quadrant; crop only; not a new owner aesthetic approval",
+  "sameRacePoseReferences": "female pose-r03 candidates used for male pose only after enlarged anatomical inspection, before any owner aesthetic approval",
+  "styleReference": {
+    "file": "art/masters/breta-piloto-v01.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912"
+  },
+  "originalPriority": "Arena remains primary; no new Skyrim influence beyond previously requested Argonian/Khajiit anatomy",
+  "requests": [
+    {
+      "request": "argonian-female",
+      "output": {
+        "file": "art/masters/retratos-pose-r03/argonian-female-pose-r03.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "3dc7ca3d9b61718fd1634e935a3d1e52d9c760fbccdbd947323621add9a79f7c"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "tmp/portrait-pose-refs/argonian-female-identity-r02.png",
+          "size": [
+            292,
+            299
+          ],
+          "sha256": "46cf7d5ff19abfd2f359badac2916f1bc9dbeca376da2ba1f3f217e4af5c9b04",
+          "role": "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+          "archivedIdenticalCopy": {
+            "file": "art/references/pose-personagens/identity-argonian-female-r02.png",
+            "size": [
+              292,
+              299
+            ],
+            "sha256": "46cf7d5ff19abfd2f359badac2916f1bc9dbeca376da2ba1f3f217e4af5c9b04"
+          }
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer."
+        },
+        {
+          "file": "art/masters/breta-piloto-v01.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912",
+          "role": "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer."
+        }
+      ]
+    },
+    {
+      "request": "khajiit-female",
+      "output": {
+        "file": "art/masters/retratos-pose-r03/khajiit-female-pose-r03.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "4db2e2c50646f2f90f0cd07ecf5b5c40f95f25ea34b36e08d0d9983d84fe0dde"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "tmp/portrait-pose-refs/khajiit-female-identity-r02.png",
+          "size": [
+            262,
+            314
+          ],
+          "sha256": "b4866fef89f731ddc517a9783f9b23fca245f5ba96366ce6f5b8a6ca1398089a",
+          "role": "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+          "archivedIdenticalCopy": {
+            "file": "art/references/pose-personagens/identity-khajiit-female-r02.png",
+            "size": [
+              262,
+              314
+            ],
+            "sha256": "b4866fef89f731ddc517a9783f9b23fca245f5ba96366ce6f5b8a6ca1398089a"
+          }
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer."
+        },
+        {
+          "file": "art/masters/breta-piloto-v01.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912",
+          "role": "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer."
+        }
+      ]
+    },
+    {
+      "request": "argonian-male",
+      "output": {
+        "file": "art/masters/retratos-pose-r03/argonian-male-pose-r03.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "a36505790619845e1a90de6c9060ca4d87d30ccd771470735c43581289c804a1"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "tmp/portrait-pose-refs/argonian-male-identity-r02.png",
+          "size": [
+            278,
+            288
+          ],
+          "sha256": "4618df18438da1f596b5fcc53c9e33ddd2393f626037bd9df6dd5e2630a85a8f",
+          "role": "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+          "archivedIdenticalCopy": {
+            "file": "art/references/pose-personagens/identity-argonian-male-r02.png",
+            "size": [
+              278,
+              288
+            ],
+            "sha256": "4618df18438da1f596b5fcc53c9e33ddd2393f626037bd9df6dd5e2630a85a8f"
+          }
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer."
+        },
+        {
+          "file": "art/masters/breta-piloto-v01.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912",
+          "role": "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer."
+        },
+        {
+          "file": "art/masters/retratos-pose-r03/argonian-female-pose-r03.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "3dc7ca3d9b61718fd1634e935a3d1e52d9c760fbccdbd947323621add9a79f7c",
+          "role": "Image4: same-race inspected provisional POSE only; not gender/identity/style approval."
+        }
+      ]
+    },
+    {
+      "request": "khajiit-male",
+      "output": {
+        "file": "art/masters/retratos-pose-r03/khajiit-male-pose-r03.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "e354046708f57586e746c62a0635e182c0d73111e14e120ca5a42385258446a9"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "tmp/portrait-pose-refs/khajiit-male-identity-r02.png",
+          "size": [
+            262,
+            295
+          ],
+          "sha256": "6aecc02a4d05095c9e97bfda16603fa6206aff84e2627f51e60e8542e9a976c0",
+          "role": "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+          "archivedIdenticalCopy": {
+            "file": "art/references/pose-personagens/identity-khajiit-male-r02.png",
+            "size": [
+              262,
+              295
+            ],
+            "sha256": "6aecc02a4d05095c9e97bfda16603fa6206aff84e2627f51e60e8542e9a976c0"
+          }
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer."
+        },
+        {
+          "file": "art/masters/breta-piloto-v01.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912",
+          "role": "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer."
+        },
+        {
+          "file": "art/masters/retratos-pose-r03/khajiit-female-pose-r03.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "4db2e2c50646f2f90f0cd07ecf5b5c40f95f25ea34b36e08d0d9983d84fe0dde",
+          "role": "Image4: same-race inspected provisional POSE only; not gender/identity/style approval."
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": "argonian.male.base",
+      "beforeFace": "Arena_argonian_male_r02",
+      "currentFace": "Arena_argonian_male_pose_r03",
+      "action": "AI pose edit",
+      "reason": "head too close to profile compared with three-quarter reference",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "argonian.female.base",
+      "beforeFace": "Arena_argonian_female_r02",
+      "currentFace": "Arena_argonian_female_pose_r03",
+      "action": "AI pose edit",
+      "reason": "head too close to profile compared with three-quarter reference",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "breton.male.base",
+      "beforeFace": "Arena_breton_male_r02",
+      "currentFace": "Arena_breton_male_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "breton.female.base",
+      "beforeFace": "Arena_breton_female_r02",
+      "currentFace": "Arena_breton_female_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "dark_elf.male.base",
+      "beforeFace": "Arena_dark_elf_male_r02",
+      "currentFace": "Arena_dark_elf_male_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "dark_elf.female.base",
+      "beforeFace": "Arena_dark_elf_female_r02",
+      "currentFace": "Arena_dark_elf_female_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "high_elf.male.base",
+      "beforeFace": "Arena_high_elf_male_r02",
+      "currentFace": "Arena_high_elf_male_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "high_elf.female.base",
+      "beforeFace": "Arena_high_elf_female_r02",
+      "currentFace": "Arena_high_elf_female_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "khajiit.male.base",
+      "beforeFace": "Arena_khajiit_male_r02",
+      "currentFace": "Arena_khajiit_male_pose_r03",
+      "action": "AI pose edit",
+      "reason": "head/chest counterrotation reported by owner; rebuild neck/shoulders/chest in same rightward three-quarter pose",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "khajiit.female.base",
+      "beforeFace": "Arena_khajiit_female_r02",
+      "currentFace": "Arena_khajiit_female_pose_r03",
+      "action": "AI pose edit",
+      "reason": "head/chest counterrotation reported by owner; rebuild neck/shoulders/chest in same rightward three-quarter pose",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "nord.male.base",
+      "beforeFace": "Arena_nord_male_r02",
+      "currentFace": "Arena_nord_male_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "nord.female.base",
+      "beforeFace": "Arena_nord_female_r02",
+      "currentFace": "Arena_nord_female_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "redguard.male.base",
+      "beforeFace": "Arena_redguard_male_r02",
+      "currentFace": "Arena_redguard_male_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "redguard.female.base",
+      "beforeFace": "Arena_redguard_female_r02",
+      "currentFace": "Arena_redguard_female_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "wood_elf.male.base",
+      "beforeFace": "Arena_wood_elf_male_r02",
+      "currentFace": "Arena_wood_elf_male_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    },
+    {
+      "id": "wood_elf.female.base",
+      "beforeFace": "Arena_wood_elf_female_r02",
+      "currentFace": "Arena_wood_elf_female_r02",
+      "action": "retained",
+      "reason": "no clear counterrotation or material yaw mismatch found in full-size/native-size inspection; retained without regeneration",
+      "manualInspection": "head/chest/shoulders/neck/gaze; anatomy, framing, scale, identity; judgment by Codex, not automated certification",
+      "ownerApproval": "pending"
+    }
+  ],
+  "limits": "All16 inspected; only4 face sheets changed. Automatic bounds/alpha do not prove anatomy. Owner aesthetic review, new editor/NW.js and physical Galaxy A56 pending."
+}

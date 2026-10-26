@@ -33,7 +33,7 @@
         ],
         "status": "static-pose-repeated-for-native-format-not-complete-motions"
       },
-      "portrait": "img/faces/Arena_argonian_male_r02.png",
+      "portrait": "img/faces/Arena_argonian_male_pose_r03.png",
       "productionReady": false,
       "baseReady": true,
       "sidePreview": "img/pictures/Arena_argonian_male_r02_side.png",
@@ -67,7 +67,7 @@
         ],
         "status": "static-pose-repeated-for-native-format-not-complete-motions"
       },
-      "portrait": "img/faces/Arena_argonian_female_r02.png",
+      "portrait": "img/faces/Arena_argonian_female_pose_r03.png",
       "productionReady": false,
       "baseReady": true,
       "sidePreview": "img/pictures/Arena_argonian_female_r02_side.png",
@@ -305,7 +305,7 @@
         ],
         "status": "static-pose-repeated-for-native-format-not-complete-motions"
       },
-      "portrait": "img/faces/Arena_khajiit_male_r02.png",
+      "portrait": "img/faces/Arena_khajiit_male_pose_r03.png",
       "productionReady": false,
       "baseReady": true,
       "sidePreview": "img/pictures/Arena_khajiit_male_r02_side.png",
@@ -339,7 +339,7 @@
         ],
         "status": "static-pose-repeated-for-native-format-not-complete-motions"
       },
-      "portrait": "img/faces/Arena_khajiit_female_r02.png",
+      "portrait": "img/faces/Arena_khajiit_female_pose_r03.png",
       "productionReady": false,
       "baseReady": true,
       "sidePreview": "img/pictures/Arena_khajiit_female_r02_side.png",
@@ -556,6 +556,6 @@
   },
   "availableBaseCombinations": 16,
   "fullAnimationCombinations": 0,
-  "revision": "r02 exports from r03 anatomy masters; pending owner visual review",
-  "previousInventory": "INVENTARIO_PERSONAGENS_M01_v01.json"
+  "revision": "pose-r03:4 portrait corrections;12 portraits and all body assets retained; pending owner review",
+  "previousInventory": "INVENTARIO_PERSONAGENS_M01_r02.json"
 }

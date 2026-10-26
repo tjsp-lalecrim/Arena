@@ -5,7 +5,7 @@ const { execFileSync } = require('node:child_process');
 const baseline = JSON.parse(execFileSync('git',['show','37e1729:data/ArenaCharacterVisuals.json'],{encoding:'utf8'}));
 const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
 (async () => {
-    const out = 'doc/evidencias/personagens-r02'; fs.mkdirSync(out, { recursive: true });
+    const out = process.env.ARENA_EVIDENCE_DIR || 'doc/evidencias/personagens-r02'; fs.mkdirSync(out, { recursive: true });
     const browser = await chromium.launch({ channel: 'chrome', headless: true });
     try {
         const page = await browser.newPage({ viewport: { width: 1100, height: 800 } });
@@ -28,13 +28,13 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
             await page.waitForTimeout(100);
             const preview = await page.evaluate(() => {
                 const s=SceneManager._scene;
-                return {native:[Graphics.width,Graphics.height],draft:s._draft,
+                return {native:[Graphics.width,Graphics.height],draft:s._draft,visual:ArenaCharacterCreation.visual(s._draft.raceId,s._draft.genderId),
                     frames:[s._face,s._mapFigure,s._side].map(p=>({rect:[p._frame.x,p._frame.y,p._frame.width,p._frame.height],scale:[p.scale.x,p.scale.y],url:p.bitmap._url}))};
             });
             assert.deepEqual(preview.native,[816,624]);
             assert.deepEqual(preview.frames.map(p=>p.rect),[[0,0,144,144],[48,0,48,64],[0,0,96,96]]);
             assert(preview.frames.every(p=>p.scale[0]===1&&p.scale[1]===1));
-            assert(preview.frames.every(p=>p.url.includes('_r02')));
+            assert.deepEqual(preview.frames.map(p=>decodeURIComponent(p.url).split('/').pop()),[preview.visual.face+'.png',preview.visual.character+'.png',preview.visual.sidePicture+'.png']);
             await page.screenshot({path:`${out}/criacao-${race}-${gender}.png`});
             results.push({id,preview});
         }
