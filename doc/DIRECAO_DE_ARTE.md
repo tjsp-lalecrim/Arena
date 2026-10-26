@@ -1,6 +1,6 @@
 # Direção de arte e padrão de geração
 
-Versão 1.2 — direção R02/R03 aprovada pelo responsável em 25/10/2026. A aprovação cobre a identidade da dungeon R02, rato R03 e Ria espectral R02, identificados por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. A rodada v0.1 continua histórica e rejeitada; M01-06 permanece em validação técnica, sem conclusão automática.
+Versão 1.3 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em 25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md; isso não aprova automaticamente novos derivados. A revisão dos personagens M01-07 descrita abaixo aguarda avaliação estética do responsável. A rodada inicial v0.1 continua histórica e rejeitada.
 
 ## Identidade visual
 
@@ -180,3 +180,13 @@ Arena é de 1994 e é executado neste ambiente por emulação DOS. Baixa defini�
 Melhorar definição/acabamento preservando silhuetas, materiais, cores características, arquitetura e função narrativa. Pixelização não é obrigatória. Detalhe ilegível permanece interpretação artística identificada, não fato confirmado. As adaptações já aprovadas de exploração 2D, turnos, interface e progressão continuam válidas. Referências de continuidade aprovadas em `arte/APROVACAO_DIRECAO_R02_R03.json`; não regenerar imagens adequadas sem necessidade concreta. Ilustrações narrativas sem protagonista, inclusive mãos, membros, silhueta, sombra/reflexo ou equipamento que fixe identidade. Revisar contexto/objetos ao implementar falas.
 
 Preservar a instalação; consultas e extrações somente em área local ignorada, sem mods ou alterações no original. Não incorporar arquivos originais ao jogo distribuído. Relatórios e decisões podem ser versionados; exports de consulta não.
+
+## Personagens M01-07 — revisão solicitada em 26/10/2026
+
+Arena permanece a referência principal de identidade, materiais, roupas, cores e atmosfera. A pedido explícito do responsável, Skyrim orienta apenas a anatomia reconhecível de Argonianos (lagarto: escamas, focinho, mandíbula reptiliana; sem máscara humana/cabeça aviária) e Khajiit (focinho, nariz, orelhas e pelagem felinos). Esta é uma adaptação autorizada, não evidência de que Arena1994 já mostrava essas mesmas cabeças. Substitui a orientação anterior de manter Khajiit predominantemente humano; os prompts v01 permanecem como histórico. Não importar roupas, equipamentos, bônus, caudas, novas opções ou regras por associação.
+
+Bosmer: orelhas pontudas e planos faciais élficos coerentes com Altmer/Dunmer do projeto, preservando pele, cabelo e trajes próprios; não copiar rostos, pele dourada/cinza ou olhos das outras raças. Os detalhes de crista, pelagem, olhos e estrutura facial dos novos assets são interpretação artística baseada nas referências indicadas em arte/REVISAO_PERSONAGENS_R02.md, não transcrição comprovada do executável.
+
+Referência de acabamento/enquadramento: retrato da bretã piloto, preservado na v01. Retratos três quartos para a direita; bustos equivalentes, linha estimada dos olhos e cabeça aparente comparáveis, com espaço para focinhos/orelhas/cristas. Combatentes do jogador para a esquerda. Cada categoria tem sua escala própria: retrato144×144; exploração48×64; combate96×96. Padronizar por escala uniforme e pivô dos pés, sem deformação nem imposição de altura racial canônica. Preservar diferenças de proporção e a movimentação já existente. Distinguir célula, figura ocupada, margem alpha e recorte/escala da interface. Ver medidas e limitações no manifesto exportacoes-personagens-revisao-r02.json.
+
+Manter mestres e exports anteriores para comparação. Apenas anatomia/pose exigem edição por IA; recorte, limpeza de matte e montagem são processamento técnico documentado. Não confundir células repetidas com animações produzidas. Aprovação geral da direção não equivale à aprovação estética desta revisão ou à validação no editor/aparelho. Ilustrações narrativas continuam sem protagonista; não foram alteradas nesta rodada.

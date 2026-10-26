@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-26",
+  "status": "pending owner visual review",
+  "requests": [
+    {
+      "id": "argonian",
+      "version": "r02",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao\\argonian-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-revision-refs\\skyrim-argonian-female.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit / identity-preserve. EDIT image1, the existing project character card, rather than replacing its visual direction. Replace the predominantly avian/leafy head treatment with unmistakable LIZARD anatomy in BOTH sexes: continuous visible scaled skin on face/neck/hands/chest, projecting reptilian muzzle with broad scaled jaw and elongated nostril-bearing snout, reptilian brow and lips, eyes integrated into lizard skull. No human wearing a mask. No bird beak, feather mane, leaf mane, human hair or whiskers. Modest backward bony/cartilaginous crest/spines only, not a huge dragon crown. Preserve blue-gray scale palette from Arena/project; male crest muted green, female crest muted copper-rust, interpreted as low reptilian crest not a hair wig. Preserve upright humanoid body/limbs and all existing clothing (male worn brown shirt, female ivory blouse; both black trousers/boots). No new tail, armor, weapons, props or customization. Image2 is a Skyrim screenshot for lizard facial anatomy/scales ONLY: ignore its leather armor, background and lighting. Keep exactly the target sheet layout:3 columns,4 equal rows,12 cells. Row0 male exploration front/back/left. Row1 male exploration right, male combat facing LEFT, male portrait3/4 facing RIGHT. Row2 female exploration front/back/left. Row3 female exploration right, female combat facing LEFT, female portrait3/4 facing RIGHT. Every full figure remains complete inside its original cell with clear transparent margins. No grid lines or labels. Preserve sober painterly figurative dark fantasy finish, colors/materials, lighting, proportions, garments, gender-specific identity, and exact pose/category count. Changes in facial anatomy must remain the same individual across portrait, front/back/side exploration poses and combat. Arena remains principal clothing/color/style source; Skyrim influence is solely the requested anatomy adaptation, not an assertion of original Arena anatomy. Portraits equivalent shoulders/bust framing, nose pointing toward image RIGHT; combatants face image LEFT, four map directions unchanged. Generous margins for muzzle/ears/crests and all feet. Transparent alpha background, no floor/shadow/fog, no text/logos/UI. No new figures, narrative scene, clothing, equipment, mechanics or options. Keep clean silhouettes for48x64 and96x96 exports and144x144 portraits. Aim 1536x2048 with equal cells; no pixel art/3D/chibi.",
+      "resultFile": "art/masters/criacao-r02/argonian-r02.png",
+      "review": "intermediate retained"
+    },
+    {
+      "id": "khajiit",
+      "version": "r02",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao\\khajiit-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-revision-refs\\skyrim-khajiit.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit / identity-preserve. EDIT image1, the existing project character card, rather than replacing its visual direction. Change BOTH characters from human-with-face-paint to clearly FELINE Khajiit anatomy, recognizable in Skyrim: coherent fur across face/neck/visible chest/hands, feline projecting muzzle and whisker pads, triangular cat nose, upright triangular furred ears located naturally on feline skull, sober feline eyes. No human ears left beneath cat ears, no human face wearing cat mask, no cartoon kitten eyes or huge lion mane. Preserve muted brown/tawny palette; male darker brown fur with subtle rust/dark forehead markings recalling the previous paint, female tawny/dark-blond fur; hair becomes short natural fur/neck ruff, not human scalp wig. Preserve original outfits exactly: male brown open-collar shirt, female ivory blouse, both black trousers and boots. Keep humanoid body/limbs; no extra tail, armor, weapons, props or customization. Image2 is a Skyrim screenshot for FACE anatomy and fur ONLY: ignore Skyrim tunic, body pose, user-interface and background. Keep exactly the target sheet layout:3 columns,4 equal rows,12 cells. Row0 male exploration front/back/left. Row1 male exploration right, male combat facing LEFT, male portrait3/4 facing RIGHT. Row2 female exploration front/back/left. Row3 female exploration right, female combat facing LEFT, female portrait3/4 facing RIGHT. Every full figure remains complete inside its original cell with clear transparent margins. No grid lines or labels. Preserve sober painterly figurative dark fantasy finish, colors/materials, lighting, proportions, garments, gender-specific identity, and exact pose/category count. Changes in facial anatomy must remain the same individual across portrait, front/back/side exploration poses and combat. Arena remains principal clothing/color/style source; Skyrim influence is solely the requested anatomy adaptation, not an assertion of original Arena anatomy. Portraits equivalent shoulders/bust framing, nose pointing toward image RIGHT; combatants face image LEFT, four map directions unchanged. Generous margins for muzzle/ears/crests and all feet. Transparent alpha background, no floor/shadow/fog, no text/logos/UI. No new figures, narrative scene, clothing, equipment, mechanics or options. Keep clean silhouettes for48x64 and96x96 exports and144x144 portraits. Aim 1536x2048 with equal cells; no pixel art/3D/chibi.",
+      "resultFile": "art/masters/criacao-r02/khajiit-r02.png",
+      "review": "intermediate retained"
+    },
+    {
+      "id": "wood_elf",
+      "version": "r02",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao\\wood_elf-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-revision-refs\\high_elf-portrait-reference.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-revision-refs\\dark_elf-portrait-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit / identity-preserve. EDIT image1, the existing project character card, rather than replacing its visual direction. Refine BOTH Bosmer faces and ears to read as ELVEN, using Images2 and3 only as existing project examples of elven facial construction and painterly finish. Clearly pointed, naturally backward-swept ears; angular cheekbones and brow, refined elongated facial planes/almond eyes in the same family of structure. Keep Bosmer-specific warm olive/tan skin, natural amber/brown eyes, male dark teal-black hair, female copper-red hair and simple green headband. DO NOT copy Altmer gold skin/face or Dunmer gray skin/red eyes; no giant ears, horns, goblin face or new adornments. Preserve every garment and body pose: male brown shirt/black trousers; female green tunic with worn ochre hem and belt, black leggings; boots intact. Identity must stay specific to these two existing Bosmer, not become another race. Keep exactly the target sheet layout:3 columns,4 equal rows,12 cells. Row0 male exploration front/back/left. Row1 male exploration right, male combat facing LEFT, male portrait3/4 facing RIGHT. Row2 female exploration front/back/left. Row3 female exploration right, female combat facing LEFT, female portrait3/4 facing RIGHT. Every full figure remains complete inside its original cell with clear transparent margins. No grid lines or labels. Preserve sober painterly figurative dark fantasy finish, colors/materials, lighting, proportions, garments, gender-specific identity, and exact pose/category count. Changes in facial anatomy must remain the same individual across portrait, front/back/side exploration poses and combat. Arena remains principal clothing/color/style source; Skyrim influence is solely the requested anatomy adaptation, not an assertion of original Arena anatomy. Portraits equivalent shoulders/bust framing, nose pointing toward image RIGHT; combatants face image LEFT, four map directions unchanged. Generous margins for muzzle/ears/crests and all feet. Transparent alpha background, no floor/shadow/fog, no text/logos/UI. No new figures, narrative scene, clothing, equipment, mechanics or options. Keep clean silhouettes for48x64 and96x96 exports and144x144 portraits. Aim 1536x2048 with equal cells; no pixel art/3D/chibi.",
+      "resultFile": "art/masters/criacao-r02/wood_elf-r02.png",
+      "review": "intermediate retained"
+    },
+    {
+      "id": "redguard-portraits",
+      "version": "r02",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-revision-refs\\redguard-portrait-reference.png"
+      ],
+      "prompt": "Use case: identity-preserve / precise-object-edit. Edit the attached transparent two-portrait sheet ONLY to correct orientation. Both the MALE portrait on the LEFT and FEMALE portrait on the RIGHT must be three-quarter busts facing toward the RIGHT side of the image (nose projects to image RIGHT), matching the majority of this project. Preserve exactly the same deep brown skin, individual facial structure, age, male short black hair/beard, female black topknot, male brown open collar shirt and female ivory blouse, same dark fantasy painterly finish/colors/light. Do not exchange the male/female cells, do not lighten skin, do not change gender or ethnicity, do not add clothing, armor or jewelry. Equivalent bust framing with eyes level, complete skull/hair silhouette and modest margins. Two equal cells in one horizontal row, one portrait per cell, full alpha transparent background, no text, borders, labels or scenery. Orientation correction only, not another identity. No bodies or map/combat poses. Intended1536x768.",
+      "resultFile": "art/masters/criacao-r02/redguard-portraits-r02.png",
+      "review": "selected; pending owner review"
+    }
+  ]
+}
