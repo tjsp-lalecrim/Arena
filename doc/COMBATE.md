@@ -10,7 +10,7 @@
 
 O combate será por turnos, com apresentação Side View e inicialmente um único personagem controlável. Adotar as regras nativas compatíveis do MV para ordem de turnos, ações e empates; documentar somente as adaptações necessárias aos requisitos específicos. Aliados serão avaliados futuramente e não fazem parte da implementação inicial. A barra de atalhos deve respeitar o fluxo de turnos aprovado.
 
-Auditoria racial R04 em AUDITORIA_BONUS_RACIAIS_M01_07.md: distinguir ATQ/AGI/HIT de modificadores de dano/acerto da ação, e ponto percentual de percentual. Incrementos, resistências e substituições propostas aguardam aprovação; não alterar balanceamento por associação com Side View ou Skyrim. Correção já executada apenas na classificação das técnicas desarmadas3/4, que não recebem bônus de arma. Sondas nativas em navegador não comprovam combate completo integrado, recursos/custos ou equilíbrio; nenhum desses sistemas foi antecipado nesta revisão.
+P01–P08 da auditoria R04 foram autorizadas e aplicadas provisoriamente em R05, conforme decisoes/M01_07_APROVACAO_R05.json. Distinguir ATQ/AGI/HIT de modificadores de dano/acerto da ação e ponto percentual de percentual. Sem bônus de arma em técnicas desarmadas3/4, magias, itens ou cura. Contratos técnicos testados; eficácia em combate integrado ainda não comprovada. BALANCEAMENTO_RACIAL_CENARIOS_M01.md exige comparar custos/turnos, arredondamento/crítico, teto de acerto/evasão, fontes reais de frio/magia/paralisia, iniciativa e vantagens excessivas em M01-09/10/20. Não importar bônus Skyrim ou criar sistemas extensos só para ativar raça. Nenhum combate/custo/progressão foi antecipado neste fechamento.
 
 ## Encontros na exploração
 

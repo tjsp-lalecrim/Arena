@@ -1,8 +1,10 @@
 # Direção de arte e padrão de geração
 
-Versão 1.5 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em 25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md; isso não aprova automaticamente novos derivados. A revisão dos personagens M01-07 descrita abaixo aguarda avaliação estética do responsável. A rodada inicial v0.1 continua histórica e rejeitada.
+Versão 1.6 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md. Em R05 o responsável aprovou as artes atuais de M01-07 **para prosseguir com ressalvas**, por arquivo/versão/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Recortes e orientações heterogêneos não foram corrigidos. Não houve novas gerações/correções nesta rodada. A rodada inicial v0.1 continua histórica e rejeitada para narrativa; a aprovação atual não reabilita usos narrativos proibidos.
 
 ## Identidade visual
+
+Exceção aceita para o conjunto atual: manter os arquivos aprovados com seus defeitos conhecidos, listados em arte/PENDENCIAS_VISUAIS_M01_07.md, sem retrabalho estético neste fechamento. As diretivas abaixo de anatomia/pose/escala, fontes, continuidade e validação continuam obrigatórias para futuras gerações. Aprovação para avançar não demonstra padronização perfeita, folhas de animação completas, recortes técnicos corrigidos ou teste físico no aparelho. R04B permanece estudo fora do catálogo ativo; não forçar substituição de sprites por um piloto incompleto.
 
 Fantasia medieval sombria, com acabamento de pintura digital figurativa, materiais críveis e formas claramente desenhadas. Referência de identidade: arte original de The Elder Scrolls: Arena. Interpretar personagens, criaturas, arquitetura e objetos em dark fantasy sem inventar características narrativas apresentadas como originais.
 

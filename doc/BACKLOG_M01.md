@@ -33,6 +33,8 @@ P0 indica base necessária para começar e integrar; P1 indica requisito de conc
 | M01-19 | P1 | Validar e corrigir experiência em navegador/mobile | 07–18 | Fluxo completo em Chrome desktop e Galaxy A56, paisagem/tela inteira quando suportada, toque utilizável e texto legível; ambiente e limitações registrados |
 | M01-20 | P1 | Balancear, testar regressões e preparar entrega M01 | 19 | Critérios de DEMO_INICIAL.md atendidos, ausência de bloqueios críticos, documentação consolidada e pacote de teste identificado; preparar release sob Git Flow conforme autorização |
 
+Os bônus P01–P08 foram autorizados como balanceamento provisório no fechamento R05. M01-08 deve preservar o+10 inicial sem regrant; M01-09/10 e M01-20 devem executar BALANCEAMENTO_RACIAL_CENARIOS_M01.md: custos/turnos, armas livres, crítico/arredondamento, teto de acerto/evasão, utilidade de AGI, fontes reais de frio/magia/paralisia e vantagens excessivas. Testes de fórmula não demonstram equilíbrio integrado. Esses itens continuam futuros, sem implementação automática.
+
 ## Detalhamento de escopo por grupo
 
 ### Base e dados — M01-01 a M01-05
@@ -99,7 +101,7 @@ O backlog não cria issues, branches, commits ou publicações automaticamente. 
 
 Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundárias, cidades posteriores, toda a campanha, catálogo completo de magias e ferramentas extensas de autoria não são pré-requisitos desta demo. Reutilizar templates na autoria da dungeon é permitido, sem implicar gerador durante a partida.
 
-## Estado verificado em 25/10/2026
+## Estado atual — fechamento M01-07 R05,26/10/2026
 
 | Item | Estado | Evidência |
 | --- | --- | --- |
@@ -109,10 +111,12 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
 | M01-05 | Concluído | Contratos/API v1, save/load nativo, save gerado pela composição anterior, campos ausentes, recibos e isolamento; VALIDACAO_M01.md e PERSISTENCIA_M01.md |
 | M01-06 | Concluído (amostra desktop) | Matriz de critérios e limites em arte/ENCERRAMENTO_AMOSTRA_M01_06.md; direção aprovada e formatos no motor. Aparelho/combate completo/biblioteca final não declarados |
-| M01-07 | Base funcional; revisão racial aberta | Nome/8 raças/2 gêneros/16 identidades-base, bônus derivados, confirmação/cancelamento, save/load e autoria anterior; M01_07_CRIACAO.md. Estética, utilidade/balanceamento racial e aparelho não homologados integralmente; auditoria R04 |
-| M01-08 a M01-20 | A fazer | Amostra não comprova aplicação racial, Vigor em combate ou campanha |
+| M01-07 | Concluído (criação-base desktop, com ressalvas aceitas) | Aprovação estética com defeitos adiados, P01–P08 provisórios implementados,981 verificações novas,234 de criação,16 roundtrips e27 de persistência; FECHAMENTO_M01_07.md. Equilíbrio de combate e aparelho continuam futuros |
+| M01-08 a M01-20 | A fazer | Aplicação racial isolada validada em M01-07; Vigor em combate, eficácia prática dos bônus e campanha continuam futuros |
 
-M01-05 e a amostra M01-06 integrados em develop; merge7e7094c preserva commits e evidências. Criação em feature/m01-criacao-personagem, sem integração automática. M01-06 encerra exemplos de formato/identidade, não biblioteca inteira, combate ou teste no aparelho. M01-07 entrega a criação-base com16 combinações, ainda sem movimentos completos/armaduras variantes. Demais itens continuam a fazer conforme dependências; não iniciar outra feature por associação nesta rodada.
+M01-05 e a amostra M01-06 já integrados em develop; merge7e7094c preserva commits e evidências. O responsável autorizou integrar a cadeia de criação/revisões após validação funcional R05, preservando commits e sem promover main/release. M01-06 encerra exemplos, não biblioteca inteira. M01-07 entrega16 combinações-base com ressalvas visuais aceitas e bônus provisórios, sem movimentos completos/armaduras variantes. Próximo elegível: **M01-08**, recursos/evolução HP/MP/Vigor, conforme dependências04/05; não iniciado neste fechamento.
+
+R05 é a atualização vigente. Os registros R02/R03/R04 abaixo são históricos: aprovações/propostas pendentes nesses relatos não revogam a decisão posterior. Fonte exata em decisoes/M01_07_APROVACAO_R05.json; arquivos visuais/hash e pendências em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json e arte/PENDENCIAS_VISUAIS_M01_07.md.
 
 Atualização26/10/2026: revisão exclusivamente dos assets de M01-07 em `feature/m01-revisao-assets-personagens`, baseada na criação ainda não integrada.16 combinações inspecionadas/padronizadas, anatomia Argoniana/Khajiit/Bosmer e retratos Redguard corrigidos; testes desktop e save/load r02 registrados em arte/REVISAO_PERSONAGENS_R02.md. **Revisão estética pendente do responsável**; a entrega funcional anterior não equivale à aprovação dos novos assets. M01-06 preservado; M01-08 e seguintes não iniciados. Animações completas, editor/NW.js desta revisão e aparelho continuam separados das evidências executadas.
 

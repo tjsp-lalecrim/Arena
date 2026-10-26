@@ -7,7 +7,8 @@ def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
 base=json.loads(subprocess.check_output(['git','show','1399af8:data/ArenaCharacterVisuals.json'],cwd=R))
 base['rules']['weaponSkillIds']=[i for i in base['rules']['weaponSkillIds'] if i not in [3,4]]
 assert read('data/ArenaCharacterVisuals.json')==base,'Only documented unarmed exclusion may change runtime config'
-assert read('data/ArenaCatalog.json')==json.loads(subprocess.check_output(['git','show','1399af8:data/ArenaCatalog.json'],cwd=R)),'No proposed racial balance/labels applied'
+catalog=read('data/ArenaCatalog.json');approval=read('doc/decisoes/M01_07_APROVACAO_R05.json')
+assert [{k:r[k] for k in ['id','bonus','bonusLabel','application']} for r in catalog['races']]==approval['races'],'R05 approved values/labels must match the recorded R04 proposal'
 log=read('doc/arte/prompts-identidade-r04.json');sources=read('doc/arte/fontes-identidade-r04.json');manifest=read('doc/arte/exportacoes-identidade-r04.json')
 assert len(log['requests'])==len(sources['requests'])==4
 for req in log['requests']:
@@ -34,4 +35,4 @@ for metric in manifest['measurements']:
 for name in ['antes-correcao','depois-correcao']:
  data=read('doc/evidencias/auditoria-racial-r04/'+name+'.json');assert len(data['rows'])==8 and not data['proposalsApplied'] and not data['errors']
  assert all(len(row['samples'])==7 for row in data['rows'])
-print('PASS4 recorded calls for2 male pilots,hashes/roles/fixed block; active visuals/catalog unchanged; only skill3/4 exclusion applied. Pilots NOT production ready, aesthetic review pending.')
+print('PASS R04 provenance preserved; active visuals unchanged; R05 catalog matches approved proposal. Pilot technical limits retained; aesthetics accepted with reservations in R05.')

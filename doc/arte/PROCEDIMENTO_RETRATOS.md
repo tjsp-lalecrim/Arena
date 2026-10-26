@@ -1,6 +1,6 @@
 # Diretiva obrigatória de pose, orientação e anatomia
 
-Versão1.0 —26/10/2026. Aplica-se a toda geração/edição de personagens do projeto, incluindo a revisão de M01-07. Direções são relativas à imagem vista pelo jogador. A aprovação geral da direção artística não dispensa esta verificação.
+Versão1.1 —26/10/2026. Aplica-se a toda geração/edição futura de personagens do projeto. Direções são relativas à imagem vista pelo jogador. No fechamento R05, o responsável aprovou os arquivos atuais para avançar **com ressalvas**, sem corrigir recortes/orientações e sem autorizar retrabalho estético nesta rodada. Exceções identificadas em APROVACAO_M01_07_COM_RESSALVAS_R05.json/PENDENCIAS_VISUAIS_M01_07.md; não viram novo padrão nem dispensam este procedimento em futuras gerações.
 
 ## Convenções por categoria
 

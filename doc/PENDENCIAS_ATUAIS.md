@@ -1,5 +1,7 @@
 # Pendências atuais após consolidação das decisões
 
+Atualização vigente R05,26/10/2026: M01-07 criação-base desktop concluída com aprovação estética do responsável **com ressalvas**. Recortes/orientações heterogêneos foram aceitos para avançar, sem correção de imagens; arquivos/versões em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json, revisão futura em arte/PENDENCIAS_VISUAIS_M01_07.md. P01–P08 da auditoria R04 autorizados e aplicados provisoriamente; fonte/valores em decisoes/M01_07_APROVACAO_R05.json. FECHAMENTO_M01_07.md separa testes técnicos de balanceamento prático pendente. M01-08 é o próximo elegível, não iniciado. Relatos antigos de rejeição/revisão/pendência abaixo são históricos e devem ser lidos com esta precedência. main/release não autorizadas por este fechamento.
+
 Atualização em 25/10/2026. Este checklist é a referência operacional de pendências e prevalece sobre listas históricas de REVISAO_DE_PRONTIDAO.md e AVALIACAO_DE_CONSISTENCIA.md. Não altera os requisitos confirmados nos documentos temáticos.
 
 ## Situação

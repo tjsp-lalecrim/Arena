@@ -1,6 +1,6 @@
 # M01-07 — criação de personagem
 
-Branch feature/m01-criacao-personagem, criada de develop após merge7e7094c da amostra M01-06. Não é dungeon final, combate, progressão ou introdução de MQ01. M01-05 preservado. Orientação1 teto/2 parede/3 piso livre registrada para M01-14 sem antecipar mapa definitivo.
+Criação iniciada em feature/m01-criacao-personagem após merge7e7094c; fechamento R05 em feature/m01-fechamento-criacao. Aprovação estética com ressalvas e bônus P01–P08 autorizados provisoriamente, conforme FECHAMENTO_M01_07.md. Não é dungeon final, combate, progressão ou introdução de MQ01. M01-05 preservado. Orientação1 teto/2 parede/3 piso livre registrada para M01-14 sem antecipar mapa definitivo.
 
 ## Escopo implementado
 
@@ -14,16 +14,16 @@ Manual.pdf p.7 da instalação original (material original), README1.07CD-ROM, r
 
 | Raça | Regra adaptada implementada |
 | --- | --- |
-| Argoniano | Vigor inicial110/110 em vez de100/100; adaptação da resistência à natação, sem sistema de natação |
-| Bretão | Dano positivo mágico recebido pela ação×0,5; cura preservada, sem saving throw |
-| Elfo negro | +floor(nível/4) dano e pontos percentuais de acerto com armas |
+| Argoniano | +10 pontos de Vigor inicial uma vez,110/110; não multiplica progressão futura |
+| Bretão | Dano positivo mágico recebido HP/MP/dreno×0,75; cura preservada, sem saving throw |
+| Elfo negro | Dano de arma×1,05 e acerto+2 p.p., sem bônus por nível |
 | Alto elfo | Imunidade ao estado3 Paralisia |
-| Khajiit | AGI×1,05, arredondamento MV; substitui escalada ausente |
-| Nórdico | Taxa de frio(elemento3)×0,5, sem saving throw |
-| Redguard | +floor(nível/3) dano/acerto corpo a corpo |
-| Elfo da floresta | +floor(nível/3) dano/acerto com arcos; sem arco cadastrado por antecipação |
+| Khajiit | AGI+1 derivada; sem movimento/ações/esquiva extras |
+| Nórdico | Dano de frio(elemento3)×0,5; cura preservada, sem saving throw |
+| Redguard | Dano de arma corpo a corpo×1,08 e acerto+3 p.p., sem bônus por nível |
+| Elfo da floresta | Acerto+4 p.p. com qualquer arma válida, sem dano extra; opção preferida P08 aprovada |
 
-Dano/acerto são conversões documentadas do original, não números copiados de um sistema por turnos que Arena não tinha.100 Vigor é base provisória, não balanceamento final ou M01-08. A classe Aventureiro é suporte técnico único; todos mantêm permissões dos dois tipos de arma/armadura cadastrados. IDs de habilidades de arma/grupos estão em ArenaCharacterVisuals.json; bônus não afetam magias/itens/desarmado.
+Dano/acerto são conversões documentadas do original, não números copiados de um sistema por turnos que Arena não tinha. R05 executa a proposta de26/10/2026 no commit1dd9a6c, preservada em decisoes/PROPOSTA_RACIAL_R04_APROVADA.md.100 Vigor e todos os números são balanceamento provisório; eficácia com custos/turnos depende das etapas de combate. A classe Aventureiro é suporte técnico único; todos mantêm permissões dos tipos de arma/armadura cadastrados. IDs de habilidades de arma/grupos estão em ArenaCharacterVisuals.json; modificadores de arma não afetam magias/itens/desarmado ou técnica incompatível. Não houve mudança de imagens nesta aprovação.
 
 ## Assets e rastreabilidade
 

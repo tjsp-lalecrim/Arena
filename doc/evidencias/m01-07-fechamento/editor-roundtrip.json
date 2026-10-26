@@ -1,0 +1,24 @@
+{
+  "method": "Windows UI automation via @oai/sky keyboard/accessibility; screenshot/click geometry unavailable",
+  "observed": [
+    "Arena project window",
+    "plugin manager viaF10",
+    "Community_Basic OFF",
+    "Arena_CharacterCreation ON",
+    "MV_CharacterRules ON",
+    "Ctrl+S no error modal",
+    "Closed editor after save",
+    "Relaunched RPGMV.exe; fresh Arena window394404",
+    "Ctrl+S after reopening; v0.2.0 plugin descriptions retained; no error dialog"
+  ],
+  "dataChanges": [
+    {
+      "file": "data/System.json",
+      "semanticFields": [
+        "versionId"
+      ]
+    }
+  ],
+  "corePluginRecordsPreserved": true,
+  "limits": "Accessibility/keyboard authoring validation; screenshot/click geometry unavailable. No visual NW.js playtest or physical Galaxy A56."
+}

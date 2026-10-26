@@ -1,5 +1,17 @@
 # Evidências de implementação M01
 
+## 26/10/2026 — fechamento M01-07 R05
+
+Decisão atual: aprovação estética com ressalvas, sem geração/correção de imagens nesta rodada. Manifesto `arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json` identifica 64 arquivos ativos e oito arquivos piloto, versões, dimensões e hashes; `arte/PENDENCIAS_VISUAIS_M01_07.md` registra bordas/recortes, orientação e o recorte do pé do piloto Khajiit. Essas falhas não foram corrigidas nem transformadas em padrão para gerações futuras. Registros R02/R03/R04 abaixo são históricos.
+
+Proposta aprovada: `AUDITORIA_BONUS_RACIAIS_M01_07.md`, R04, commit1dd9a6c, P01–P08; cópia imutável e valores exatos em `decisoes/`. Implementados em catálogo e plugins0.2.0, descrições sincronizadas: Argoniano+10 Vigor inicial único; Bretão dano mágico×0,75; Elfo Negro dano de arma×1,05/acerto+0,02; Alto Elfo imunidade ao estado3; Khajiit AGI+1; Nórdico dano frio×0,5; Redguard corpo a corpo×1,08/acerto+0,03; Bosmer precisão geral de armas+0,04 (opção preferida). Sem multiplicadores por nível novos, classes ou bloqueios raciais.
+
+Evidências novas em `evidencias/m01-07-fechamento/`: 981 verificações raciais,16 identidades/seis níveis/oito saves nativos anteriores/48 novos roundtrips;234 verificações de criação;16 prévias e16 restaurações de aparência;27 verificações de persistência; laboratório nativo preservado; mouse e toque genérico emulado. Chrome desktop156.0.8078.47, contextos descartáveis, sem saves pessoais. Testes sintéticos de combate não representam encontros completos ou balanceamento validado. Histórico R04 executado separadamente com fontes antigas, sem apresentá-lo como validação P01–P08.
+
+Autoria no editor: gerenciador abriu por F10 e leu Community_Basic OFF, MV_CharacterRules e Arena_CharacterCreation ON. Salvamento, encerramento, relançamento em nova janela Arena e novo salvamento executados por teclado/acessibilidade. Auditoria encontrou somente System.versionId como alteração semântica nativa; nomes/ordem/status/parâmetros preservados e descrições0.2.0 retidas após reabertura. `plugins.js` mantém formato canônico e UTF-8 sem BOM. Geometria de captura/clique indisponível impediu conferência visual detalhada; não declaramos playtest visual NW.js nem Galaxy A56. Relato anterior de save/load no playtest/navegador continua atribuído ao responsável e à versão histórica, sem estendê-lo aos bônus R05.
+
+M01-07 concluído no escopo funcional desktop, com ressalvas aceitas e balanceamento provisório. Critérios e limites em `FECHAMENTO_M01_07.md`. Eficácia prática e vantagens excessivas continuam dependentes de M01-08/09/10/20, com cenários em `BALANCEAMENTO_RACIAL_CENARIOS_M01.md`; aparelho físico permanece M01-19. Próximo elegível M01-08, não iniciado.
+
 ## 25/10/2026 — baseline documental (M01-01)
 
 Estado inicial confirmado: main, develop e feature/documentacao-inicial apontavam para cfd31d3; feature/documentacao-inicial ativa. Apenas .gitignore e doc/ estavam não rastreados. Nenhuma alteração de implementação preexistente foi encontrada. Motor confirmado por Game.rpgproject e Utils.RPGMAKER_VERSION: 1.6.1.

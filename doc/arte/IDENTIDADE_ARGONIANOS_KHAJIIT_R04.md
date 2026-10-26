@@ -1,5 +1,7 @@
 # Identidade Argoniana/Khajiit — pilotos R04
 
+**Atualização R05:** o responsável aprovou as artes atuais para prosseguir com ressalvas. Arquivos selecionados e limitações em APROVACAO_M01_07_COM_RESSALVAS_R05.json/PENDENCIAS_VISUAIS_M01_07.md. Nenhum asset foi corrigido/regenerado neste fechamento; R04B continua estudo fora do catálogo ativo e o pé na borda permanece pendente. O texto abaixo registra a rodada R04 e seu estado na data, não revoga a autorização posterior.
+
 26/10/2026, `feature/m01-identidade-e-auditoria-racial`, baseada em1399af8 da revisão de pose ainda não integrada. Estado inicial limpo; fetch confirmou histórico anterior publicado e main/develop preservadas. **Somente um piloto masculino por raça**, com retrato e dois estudos corporais de continuidade; sem produção em lote ou promoção a referência aprovada. Revisão estética e preparação técnica pendentes.
 
 ## Referências efetivamente inspecionadas antes de gerar

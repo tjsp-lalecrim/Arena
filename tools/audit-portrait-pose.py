@@ -39,4 +39,4 @@ for key,v in now['visuals'].items():
 assert set(changed)=={'argonian.male.base','argonian.female.base','khajiit.male.base','khajiit.female.base'}
 for metric in manifest['metrics']:
     x1,y1,x2,y2=metric['headBoundsEstimate'];assert 0<x1<x2<144 and 0<y1<y2<144
-print('PASS4 face changes only;12 face refs and all body/rules unchanged; exact fixed block,4 actual prompt/reference logs, hashes/dimensions/head margins. Anatomy remains manual inspection, owner approval pending.')
+print('PASS historical pose-r03 provenance and current unchanged visual refs; exact fixed block,4 actual prompt/reference logs, hashes/dimensions/head margins. Current R05 owner approval accepts visual reservations, not anatomical perfection.')
