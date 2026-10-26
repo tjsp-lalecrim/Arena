@@ -1,5 +1,9 @@
 # Evidências de implementação M01
 
+## 26/10/2026 — M01-12 R02, comparação visual
+
+Base35a15e6, implementação0820646, mesma feature; Arena_Inventory0.2.0. Slots com ícones/nomes e comparação Atual/Selecionado com oito parâmetros finais e diferenças assinadas. Sete cenários específicos,18 regressivos do inventário e toque emulado916×412, validador puro/estático. Capturas816×624 e nomes longos em evidencias/m01-12-r02. Consulta somente leitura ao código dos quadros/cartões do Battlespire, sem cópia/dependência. Aprovação anterior do inventário registrada, sem aprovar automaticamente R02. Testes e limites em INVENTARIO_E_EQUIPAMENTOS_M01_12.md/R02. Nenhuma nova sessão no editor ou A56; autoria anterior preservada como histórica. Sem merge ou encerramento artístico.
+
 ## 26/10/2026 — M01-12, inventário e equipamentos
 
 M01-11 consolidado após revisão/aprovação do combate informada pelo responsável; versão associada ao estado disponível25672fe, sem hash/ambiente/lista exaustiva de testes informados por ele. Fechamento74eb6f6 integrado/publicado em develop6e59882. Nova feature/m01-inventario-equipamentos, implementação c3face1 e materiais86c9143; hashes em evidencias/m01-12/fontes-testadas.json. Sem merge em develop/main ou início de M01-13. Favoritar habilidades/itens fica futuro, sem implementação.

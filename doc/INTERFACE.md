@@ -1,5 +1,9 @@
 # Interface e menus
 
+## M01-12 R02 — apresentação confirmada para implementação
+
+Slots equipados exibem identificação, ícone e nome, com vazios discretos. Confirmação de equipamento usa Atual/Selecionado e tabela de atributos finais: Atributo | Atual | Após a troca | Diferença, incluindo sinais positivos/negativos e0 sem depender apenas de cor. Prévia e cancelamento não alteram estado; somente confirmar efetiva. Fundo bloqueado durante o modal. Documentação/evidências em INVENTARIO_E_EQUIPAMENTOS_M01_12.md, sem antecipar aprovação estética da R02.
+
 Estado operacional M01-12: M01-11 integrado/publicado em develop6e59882 após aprovação do combate disponível em25672fe (ambiente/casos não detalhados). Feature/m01-inventario-equipamentos implementa inventário, troca/arrasto/prévia/remoção e aparência derivada mínima por couro/malha. M01-12 permanece em revisão, sem encerramento artístico; ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Favoritos são melhoria futura não implementada. Sem merge da nova feature ou avanço para M01-13; A56 físico/playtest visual NW.js pendentes.
 
 Histórico da direção M01-10 R02 para **M01-11, não implementada**: capturas do responsável orientam campo mais amplo/cenário visível, barras próximas aos participantes, comandos por ícones, habilidades/itens em slots com custos/quantidades/descrições e barra de atalhos. Aplicar dark fantasy/identidade Arena; não copiar personagens, assets, valores ou regras do exemplo. Não incluir Recuar/fuga ou talentos raciais ativos por aparecerem nos prints, nem fixar automaticamente oito slots. Referências locais ignoradas e consulta pontual não normativa documentadas em CONSULTA_PONTUAL_INTERFACE_M01_10_R02.md. Nenhuma nova UI de slots foi implementada nesta rodada.

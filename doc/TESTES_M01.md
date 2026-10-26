@@ -1,5 +1,9 @@
 # Execução e roteiro de testes M01
 
+## M01-12 R02 — confirmação de equipamentos
+
+Executar node tools/test-inventory-comparison.cjs com ARENA_PLAYWRIGHT/ARENA_URL do laboratório. O contexto Chrome descartável usa save20 próprio. Valida igualdade do save completo antes/depois de prévia/cancelamento, parâmetros finais com modificadores, sinais de aumento/redução/igualdade, remoção, nomes longos, geometria, modal bloqueando fundo e ícones após save/load. Regressões: test-inventory.cjs e test-inventory-touch.cjs aceitam ARENA_EVIDENCE_DIR para preservar R01; nesta revisão usar doc/evidencias/m01-12-r02. Não apresentar toque emulado ou navegador como teste físico ou autoria MV.
+
 ## Revisão vigente — M01-10 R02
 
 REVISAO_COMBATE_M01_10_R02.md contém roteiro, cobertura1/16 e1/3, gravações e limites. Rodar tools/test-motion-timeline.cjs, validate-battle-motion.cjs, test-battle-motion.cjs(10 vídeos), test-battle-motion-edge.cjs e test-battle-coverage.cjs(ARENA_EVIDENCE_DIR para preservar R01). Necessário Chrome/Playwright local e servidor da raiz; contextos descartáveis. tools/inspect-motion-videos.cjs decodifica vídeos, build-motion-video-previews.py gera recortes/GIFs; não substituem inspeção no editor/mobile. Auditoria tools/audit-motion-r02.py. Responsável mantém testes manuais adiados; não registrar aceite estético automático.

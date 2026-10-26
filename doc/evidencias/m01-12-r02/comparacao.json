@@ -1,0 +1,31 @@
+{
+  "browser": "156.0.8078.47",
+  "checks": [
+    "empty slot: both cards, eight final parameters, opening/cancel leaves full save and appearance identical",
+    "modal blocks underlying mouse, Tab and PageDown; cancellation preserves inventory, techniques, resources, appearance and shortcuts",
+    "increase +3, decrease -3, removal -6, unchanged 0; confirmed change returns previous piece once",
+    "final actor parameters include existing parameter plus, buff and equipment rate; confirmed totals equal preview without preview side effects",
+    "long-name fixtures and all eight rows fit 816x624, no button or card overlap",
+    "equipped icon/name auto-refresh after native equipment change without scene refresh",
+    "native isolated save20/load and scene reopen reconstruct equipped mail icon/name from current actor"
+  ],
+  "geometry": {
+    "width": 816,
+    "height": 624,
+    "detail": {
+      "x": 48,
+      "y": 32,
+      "width": 720,
+      "height": 490,
+      "content": 470
+    },
+    "confirm": {
+      "x": 48,
+      "y": 522,
+      "width": 720,
+      "height": 64
+    }
+  },
+  "errors": [],
+  "limits": "Disposable context, no personal saves; long names/rates injected only in test memory; no physical device or new MV editor session"
+}
