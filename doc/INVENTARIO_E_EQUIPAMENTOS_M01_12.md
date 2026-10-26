@@ -62,3 +62,6 @@ Autoria MV: abriu projeto, F10/detalhe Arena_Inventory ON, salvou, fechou/reabri
 
 
 Exportação técnica de materiais: mestres IA1254×1254 preservados em art/m01-12; arquivos consumidos de64×64 gerados por tools/pack-equipment-materials.cjs, equivalentes ao tamanho de amostragem do renderizador. Isso evita carregar os mestres de vários MB para uma pequena região de torso. Não é nova geração artística ou substituição dos sprites.
+
+
+Leitura das pranchas: são fontes de mapa/Side View em escala nativa antes do espelhamento de apresentação M01-11; o combate real mantém o jogador à esquerda olhando à direita. Chave/livros usam glifos genéricos da interface; ícones artísticos específicos, especialmente chave e espada curta, continuam candidatos de refinamento. Não confundir os glifos com novos assets finais do catálogo.

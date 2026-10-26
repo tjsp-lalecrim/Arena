@@ -96,3 +96,10 @@ tools/validate-battle-ui.cjs verifica geometria pura, UTF8,18 plugins preservand
 Executar tools/test-battle-ui-refinement.cjs e tools/validate-battle-ui-refinement.cjs. Para as suítes de slots/categoria/ponteiro e capture-battle-ui.cjs usar ARENA_UI_OUT=doc/evidencias/m01-11-r02 (capture pode usar a subpasta apresentacao); test-battle.cjs usa ARENA_EVIDENCE_DIR=doc/evidencias/m01-11-r02/regressao-combate. Não sobrescrever evidências R01. ARENA_URL aponta para o servidor local, ARENA_PLAYWRIGHT para a instalação disponível. Contextos de navegador descartáveis, sem saves pessoais.
 
 Conferir visualmente principal/habilidades/inventário/configuração/alvos/vitória e redução real640×480; execução/mensagens/resultados não podem captar atalhos/configuração, nem sobrepor mensagem/EXP. Documentar o ambiente real: emulação de toque não é Galaxy A56; autoria no editor anterior não é inspeção NW.js desta revisão. Roteiro completo e referências em REVISAO_INTERFACE_M01_11_R02.md.
+
+
+## M01-12
+
+Executar tools/validate-inventory.cjs, test-inventory.cjs, test-inventory-touch.cjs e test-inventory-appearance.cjs com ARENA_URL no servidor e ARENA_PLAYWRIGHT instalado. Saídas em evidencias/m01-12, contexto descartável sem saves pessoais. Roteiro manual em INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Regressões: test-character-creation.cjs com ARENA_EVIDENCE_DIR=evidencias/m01-12/regressao-criacao, test-persistence.cjs (saída tmp copiada), test-battle-slots.cjs com ARENA_UI_OUT=evidencias/m01-12/regressao-interface.
+
+Verificar estoque alterado após prévia, capacidade de devolução cheia, repetição, rollback de falha nativa simulada, consumível por referência estável apesar de seleção alterada, drag válido/inválido/fora e Escape durante o gesto, opção única sem lista redundante, importantes, técnicas/atalhos, consumo de poções/livros e save/load. Pranchas/pixels de16×2 materiais não provam figurino final/anatomia de todos os movimentos; manter avaliação visual separada. Autoria editor20 plugins foi observada por acessibilidade; não declarar playtest visual NW.js ou Galaxy A56 físico.
