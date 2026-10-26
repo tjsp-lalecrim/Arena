@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-26",
+  "tool": "image_gen.imagegen",
+  "model": "not reported",
+  "seed": "not reported",
+  "requests": [
+    {
+      "id": "argonian-male-piloto",
+      "version": "identity-r04",
+      "output": {
+        "file": "art/masters/identidade-r04/argonian-male-piloto-r04a.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "628fa223c77ac6024314cec52cf8ea8c33e4a7c49b4b704a96522ed01ded2033"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "art/masters/retratos-pose-r03/argonian-male-pose-r03.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "a36505790619845e1a90de6c9060ca4d87d30ccd771470735c43581289c804a1",
+          "role": "Image1: target individual identity and current right-facing portrait pose.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "art/masters/criacao-r03/argonian-r03.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "fdf4c2a28b8a5531ef1cd5c2f6583f93c9c82cfad8e6fb7072b0062ab6bba327",
+          "role": "Image2: MALE body clothing/map-front/left-facing guard continuity only; ignore all female figures and other directions.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "tmp/identity-r04-refs/skyrim-argonian-presets.jpg",
+          "size": [
+            2351,
+            2564
+          ],
+          "sha256": "daea3a9582c35cfa57c0e4ae8eb096f695467a06469503879b3313402f55876a",
+          "role": "Image3: actual Skyrim race preset screenshot compilation: craniofacial anatomy only; NO garments, accessories, UI or background copying.",
+          "distribution": "ignored consultation only",
+          "sourceUrl": "https://gaming.hwupgrade.it/articoli/videogames/3003/razza1.jpg"
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image4: explicit portrait three-quarter RIGHT pose and bust framing only; do not transfer human face/skin.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "art/masters/breta-piloto-v01.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912",
+          "role": "Image5: project painterly dark fantasy STYLE only; do not copy clothes/identity/layout.",
+          "distribution": "project generated art"
+        }
+      ],
+      "review": "Initial raw preview misread RGB under alpha0 as haze; opaque compositing/pixel checks confirmed real transparency. A had shortened sleeves, B restores them/front pose. Irregular source cells extract as separate silhouettes; Khajiit combat touches right edge. No runtime promotion."
+    },
+    {
+      "id": "khajiit-male-piloto",
+      "version": "identity-r04",
+      "output": {
+        "file": "art/masters/identidade-r04/khajiit-male-piloto-r04a.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "368a2e21ca1b904ad9ed803a606cbc10165934e1ba58f939f213640da81f13f9"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "art/masters/retratos-pose-r03/khajiit-male-pose-r03.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "e354046708f57586e746c62a0635e182c0d73111e14e120ca5a42385258446a9",
+          "role": "Image1: target individual identity and current right-facing portrait pose.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "art/masters/criacao-r03/khajiit-r03.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "8c9ff5bc929c9a0c96a197a0efdb6754494e472556ba33bf081c3ac2677444ea",
+          "role": "Image2: MALE body clothing/map-front/left-facing guard continuity only; ignore all female figures and other directions.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "tmp/identity-r04-refs/skyrim-khajiit-presets.jpg",
+          "size": [
+            938,
+            1024
+          ],
+          "sha256": "3d7de0e441613c0eac59e24e0e761b3aec356e96fd821ce47e03aee794cb6b9e",
+          "role": "Image3: actual Skyrim race preset screenshot compilation: craniofacial anatomy only; NO garments, accessories, UI or background copying.",
+          "distribution": "ignored consultation only",
+          "sourceUrl": "https://images.wikia.com/elderscrolls/images/7/7b/KhajiitCompilation-938x1024.jpg"
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image4: explicit portrait three-quarter RIGHT pose and bust framing only; do not transfer human face/skin.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "art/masters/breta-piloto-v01.png",
+          "size": [
+            1254,
+            1254
+          ],
+          "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912",
+          "role": "Image5: project painterly dark fantasy STYLE only; do not copy clothes/identity/layout.",
+          "distribution": "project generated art"
+        }
+      ],
+      "review": "Initial raw preview misread RGB under alpha0 as haze; opaque compositing/pixel checks confirmed real transparency. A had shortened sleeves, B restores them/front pose. Irregular source cells extract as separate silhouettes; Khajiit combat touches right edge. No runtime promotion."
+    },
+    {
+      "id": "argonian-male-piloto-reparo",
+      "version": "identity-r04b",
+      "output": {
+        "file": "art/masters/identidade-r04/argonian-male-piloto-r04b.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "60c5e77d0b20dd1f9e6d1aaf2352290f05ed2123db562221827c4c7e23f3dd52"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "art/masters/identidade-r04/argonian-male-piloto-r04a.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "628fa223c77ac6024314cec52cf8ea8c33e4a7c49b4b704a96522ed01ded2033",
+          "role": "Image1: edit target and project's finish/individual palette; repair its background/layout.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "tmp/identity-r04-refs/argonian-preset-selecionado.png",
+          "size": [
+            470,
+            641
+          ],
+          "sha256": "694e94886fbfa2b3caf30d7c80df7af070478fd9f4ff7c9efeef6ee5c827d6bc",
+          "role": "Image2: selected actual Skyrim race preset crop, CRANIOFACIAL STRUCTURE only; no colors/clothes/accessories transfer.",
+          "distribution": "ignored consultation only",
+          "sourceUrl": "https://gaming.hwupgrade.it/articoli/videogames/3003/razza1.jpg",
+          "crop": [
+            0,
+            0,
+            470,
+            641
+          ]
+        },
+        {
+          "file": "art/masters/criacao-r03/argonian-r03.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "fdf4c2a28b8a5531ef1cd5c2f6583f93c9c82cfad8e6fb7072b0062ab6bba327",
+          "role": "Image3: original male clothing/poses; restore full wrist-length sleeves, ignore female rows.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image4: portrait head/chest RIGHT pose only; no human identity transfer.",
+          "distribution": "project generated art"
+        }
+      ],
+      "review": "Initial raw preview misread RGB under alpha0 as haze; opaque compositing/pixel checks confirmed real transparency. A had shortened sleeves, B restores them/front pose. Irregular source cells extract as separate silhouettes; Khajiit combat touches right edge. No runtime promotion."
+    },
+    {
+      "id": "khajiit-male-piloto-reparo",
+      "version": "identity-r04b",
+      "output": {
+        "file": "art/masters/identidade-r04/khajiit-male-piloto-r04b.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "3db172b13ddf1c647e1d40340a83d93bba8d56edc0ea804412df79124da269a4"
+      },
+      "referencesActuallyProvided": [
+        {
+          "file": "art/masters/identidade-r04/khajiit-male-piloto-r04a.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "368a2e21ca1b904ad9ed803a606cbc10165934e1ba58f939f213640da81f13f9",
+          "role": "Image1: edit target and project's finish/individual palette; repair its background/layout.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "tmp/identity-r04-refs/khajiit-preset-selecionado.png",
+          "size": [
+            188,
+            256
+          ],
+          "sha256": "ebd313f16142f02149dc08e9dfb27c852433f44d5e753f8e5a05e7abd42fde65",
+          "role": "Image2: selected actual Skyrim race preset crop, CRANIOFACIAL STRUCTURE only; no colors/clothes/accessories transfer.",
+          "distribution": "ignored consultation only",
+          "sourceUrl": "https://images.wikia.com/elderscrolls/images/7/7b/KhajiitCompilation-938x1024.jpg",
+          "crop": [
+            0,
+            0,
+            188,
+            256
+          ]
+        },
+        {
+          "file": "art/masters/criacao-r03/khajiit-r03.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "8c9ff5bc929c9a0c96a197a0efdb6754494e472556ba33bf081c3ac2677444ea",
+          "role": "Image3: original male clothing/poses; restore full wrist-length sleeves, ignore female rows.",
+          "distribution": "project generated art"
+        },
+        {
+          "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+          "size": [
+            572,
+            610
+          ],
+          "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b",
+          "role": "Image4: portrait head/chest RIGHT pose only; no human identity transfer.",
+          "distribution": "project generated art"
+        }
+      ],
+      "review": "Initial raw preview misread RGB under alpha0 as haze; opaque compositing/pixel checks confirmed real transparency. A had shortened sleeves, B restores them/front pose. Irregular source cells extract as separate silhouettes; Khajiit combat touches right edge. No runtime promotion."
+    }
+  ],
+  "research": {
+    "localInsufficiency": "Prior oblique screenshots did not show frontal skull/cheek/throat geometry clearly enough.",
+    "newImages": [
+      {
+        "url": "https://gaming.hwupgrade.it/articoli/videogames/3003/razza1.jpg",
+        "local": "tmp/identity-r04-refs/skyrim-argonian-presets.jpg",
+        "context": "Hardware Upgrade Skyrim review/gallery image; article text retrieval failed Unicode decoding; image viewed directly."
+      },
+      {
+        "url": "https://images.wikia.com/elderscrolls/images/7/7b/KhajiitCompilation-938x1024.jpg",
+        "local": "tmp/identity-r04-refs/skyrim-khajiit-presets.jpg",
+        "context": "Wikia CDN Skyrim preset compilation found by image search; original publication/author not independently established. Image viewed directly; no attribution of specific NPC or row genders."
+      }
+    ],
+    "excluded": "Mod pages, fanart, unlabeled social captures and modern race gameplay bonuses were not used as original-game evidence. UESP/Fandom Skyrim NPC pages returned403/402; not claimed read. No Skyrim installation inspected or mods installed.",
+    "sourceLimits": "Preset compilations identify anatomical examples/variation, not universal mandatory horns/jewelry/markings. No original image redistributed. Arena source/manual remains primary for rules/clothes/colors."
+  },
+  "scope": "two male pilots only; no female rollout before owner review; female designs must retain own cranial/jaw/muzzle proportions, not recolored males",
+  "approval": "pending owner; real alpha verified; Khajiit source combat boot crop and full cycles/variants pending; no runtime visual changes",
+  "diagnosticCorrection": "Raw image display was insufficient to judge alpha. Historical repair prompts retained exactly as sent; actual alpha verified on opaque checkerboards."
+}

@@ -2,6 +2,8 @@
 
 Versão de esquema 1; feature/m01-dados, 25/10/2026. Banco inicial para integrar as próximas features, não catálogo completo ou balanceamento final. Os dados nativos são editáveis pelo MV 1.6.1; ArenaCatalog.json é catálogo próprio, carregado pelo consumidor Arena_CharacterCreation em M01-07. Não há classes profissionais: Aventureiro é somente o registro técnico exigido pelo MV.
 
+Atualização R04,26/10/2026: auditoria atual em AUDITORIA_BONUS_RACIAIS_M01_07.md. ArenaCatalog e números/labels raciais permanecem iguais; novas porcentagens são propostas pendentes. Correção técnica em ArenaCharacterVisuals.rules.weaponSkillIds: somente1/5/6/7/8 são ações de arma; excluir3/4, já definidos abaixo como desarmados, mesmo quando uma arma estiver equipada. Os textos históricos de bônus catalogados/visuais null descrevem a etapa inicial; a criação-base atual aplica o catálogo e mantém16 referências visuais. Os novos pilotos R04 não substituem esses visuais ativos.
+
 ## IDs estáveis
 
 | Tabela | IDs desta base | Uso |

@@ -1,0 +1,170 @@
+[
+  {
+    "file": "art/masters/identidade-r04/argonian-male-piloto-r04a.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "backgroundSamples": [
+      {
+        "xy": [
+          20,
+          20
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          540,
+          80
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          500,
+          950
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          1030,
+          50
+        ],
+        "alpha": 0
+      }
+    ],
+    "result": "Background samples alpha0; B opaque checkerboard composite confirms no visible backdrop. Initial raw RGB haze diagnosis corrected. Source cells irregular; Khajiit combat boot touches source edge."
+  },
+  {
+    "file": "art/masters/identidade-r04/argonian-male-piloto-r04b.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "backgroundSamples": [
+      {
+        "xy": [
+          20,
+          20
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          540,
+          80
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          500,
+          950
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          1030,
+          50
+        ],
+        "alpha": 0
+      }
+    ],
+    "result": "Background samples alpha0; B opaque checkerboard composite confirms no visible backdrop. Initial raw RGB haze diagnosis corrected. Source cells irregular; Khajiit combat boot touches source edge."
+  },
+  {
+    "file": "art/masters/identidade-r04/khajiit-male-piloto-r04a.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "backgroundSamples": [
+      {
+        "xy": [
+          20,
+          20
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          540,
+          80
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          500,
+          950
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          1030,
+          50
+        ],
+        "alpha": 0
+      }
+    ],
+    "result": "Background samples alpha0; B opaque checkerboard composite confirms no visible backdrop. Initial raw RGB haze diagnosis corrected. Source cells irregular; Khajiit combat boot touches source edge."
+  },
+  {
+    "file": "art/masters/identidade-r04/khajiit-male-piloto-r04b.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "backgroundSamples": [
+      {
+        "xy": [
+          20,
+          20
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          540,
+          80
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          500,
+          950
+        ],
+        "alpha": 0
+      },
+      {
+        "xy": [
+          1030,
+          50
+        ],
+        "alpha": 0
+      }
+    ],
+    "result": "Background samples alpha0; B opaque checkerboard composite confirms no visible backdrop. Initial raw RGB haze diagnosis corrected. Source cells irregular; Khajiit combat boot touches source edge."
+  }
+]

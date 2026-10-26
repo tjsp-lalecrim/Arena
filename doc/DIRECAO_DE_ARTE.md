@@ -1,6 +1,6 @@
 # Direção de arte e padrão de geração
 
-Versão 1.4 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em 25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md; isso não aprova automaticamente novos derivados. A revisão dos personagens M01-07 descrita abaixo aguarda avaliação estética do responsável. A rodada inicial v0.1 continua histórica e rejeitada.
+Versão 1.5 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em 25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md; isso não aprova automaticamente novos derivados. A revisão dos personagens M01-07 descrita abaixo aguarda avaliação estética do responsável. A rodada inicial v0.1 continua histórica e rejeitada.
 
 ## Identidade visual
 
@@ -213,3 +213,11 @@ Acrescentar identidade, escala, busto, linha dos olhos e margens. Não comprimir
 Dimensões, alpha e testes automáticos são complementares, não prova de anatomia. Assets com falha permanecem em revisão e não viram referência aprovada. A inspeção técnica pelo Codex não substitui a avaliação estética do responsável.
 
 Convenções independentes: exploração segue baixo/esquerda/direita/cima do MV; combatente do jogador atual fica à direita e aponta para esquerda, com corpo/cabeça/ação coerentes; animações mantêm proporções, apoio e identidade entre quadros. Não alterar essas categorias para copiar a pose dos retratos. A rodada pose-r03 corrige somente quatro retratos e preserva os demais assets e regras; registro em `arte/REVISAO_POSE_RETRATOS_R03.md`.
+
+## Identidade racial além do animal comum — pilotos R04
+
+Argonianos/Khajiit devem ter leitura reconhecível dos personagens dessas raças em Skyrim, conforme pedido do responsável, preservando Arena como base de roupas, cores, função e acabamento. “Lagarto/gato humanoide” genérico é insuficiente. Antes de gerar, inspecionar faces reais identificadas e comparar crânio, arcadas/maçãs, olhos, focinho, mandíbula, escamas/pelagem e marcas. Separar observação da fonte, variação de presets e interpretação do piloto; chifres/adornos de um exemplo não são obrigação universal. Não importar regras raciais de Skyrim.
+
+Diagnóstico e fontes efetivas em `arte/IDENTIDADE_ARGONIANOS_KHAJIIT_R04.md`: Argonianos precisam de planos cranianos/placas/arcadas mais definidos e garganta segmentada; Khajiit, estrutura facial menos arredondada, olhos/orelhas proporcionais e focinho/mandíbula mais marcados. A linguagem dark fantasy e a diretiva de pose1.4 permanecem obrigatórias. Preservar diferenças individuais e de masculino/feminino na estrutura facial, não apenas cor/roupa. Fontes sem legenda de sexo não comprovam dimorfismo.
+
+Validar primeiro um exemplo por raça antes de multiplicar gêneros/direções/variantes. Nesta rodada somente dois pilotos masculinos fora do catálogo ativo; não comprovam as combinações femininas. Verificar alpha por composição opaca e valores de pixels, não somente prévia bruta: cores RGB sob alfa zero foram inicialmente confundidas com halo em R04, depois corrigido o diagnóstico. As fontes têm transparência real e componentes separados; o combatente Khajiit alcança a borda e permanece pendente de correção do pé. Candidatos em art/candidates não são referência aprovada nem substituição silenciosa dos ativos. Linhas de revisão ficam nas pranchas. Não regenerar outras raças, narrativa ou biblioteca inteira por associação.

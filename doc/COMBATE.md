@@ -10,6 +10,8 @@
 
 O combate será por turnos, com apresentação Side View e inicialmente um único personagem controlável. Adotar as regras nativas compatíveis do MV para ordem de turnos, ações e empates; documentar somente as adaptações necessárias aos requisitos específicos. Aliados serão avaliados futuramente e não fazem parte da implementação inicial. A barra de atalhos deve respeitar o fluxo de turnos aprovado.
 
+Auditoria racial R04 em AUDITORIA_BONUS_RACIAIS_M01_07.md: distinguir ATQ/AGI/HIT de modificadores de dano/acerto da ação, e ponto percentual de percentual. Incrementos, resistências e substituições propostas aguardam aprovação; não alterar balanceamento por associação com Side View ou Skyrim. Correção já executada apenas na classificação das técnicas desarmadas3/4, que não recebem bônus de arma. Sondas nativas em navegador não comprovam combate completo integrado, recursos/custos ou equilíbrio; nenhum desses sistemas foi antecipado nesta revisão.
+
 ## Encontros na exploração
 
 A exploração será em 2D com vista superior e movimentação por grade. O contato com um inimigo visível no mapa inicia o combate Side View por turnos. Não adotar encontros aleatórios invisíveis como padrão. A derrota em combate leva a game over.

@@ -33,3 +33,7 @@ As escolhas de criação estão confirmadas; o catálogo visual e a regra numér
 ## Implementação atual M01-07
 
 Criação-base implementada em feature/m01-criacao-personagem: nome,8 raças,2 gêneros,16 visuais-base próprios, confirmação/revisão/cancelamento, bônus raciais derivados e save/load. Especificação/valores/fontes/roteiro em M01_07_CRIACAO.md. O inventário anterior é histórico: agora todas as combinações têm base, porém movimentos novos são estáticos e não representam biblioteca animada completa. Sem classes profissionais ou bônus por gênero. Criação termina em chegada provisória Map004, sem narrativa/dungeon final. Laboratório e galerias mantidos no título. Sem teste físico A56.
+
+## Revisão racial R04 — propostas não aplicadas
+
+`AUDITORIA_BONUS_RACIAIS_M01_07.md` registra as oito regras do manual original, código atual, atributos realmente afetados, problemas, propostas numéricas e descrições curtas para avaliação. Esses números/textos não são decisões novas e não substituem o catálogo ativo. Única correção técnica executada: excluir técnicas desarmadas3/4 da lista de habilidades com bônus de arma, conforme contrato anterior; sem alterar bônus raciais ou adicionar profissões/restrições. Identidade Argoniana/Khajiit em dois pilotos masculinos candidatos, fora do jogo, conforme arte/IDENTIDADE_ARGONIANOS_KHAJIIT_R04.md. Estética, variantes femininas e balanceamento permanecem em revisão; não considerar M01-07 integralmente homologado.

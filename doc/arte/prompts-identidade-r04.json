@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-26",
+  "status": "two pilot candidates only; pending owner review; not runtime replacements",
+  "fixedPortraitBlock": "Retrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.",
+  "requests": [
+    {
+      "id": "argonian-male-piloto",
+      "version": "identity-r04",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "seed": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\retratos-pose-r03\\argonian-male-pose-r03.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao-r03\\argonian-r03.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\identity-r04-refs\\skyrim-argonian-presets.jpg",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\breta-piloto-v01.png"
+      ],
+      "referenceRoles": [
+        "Image1: target individual identity and current right-facing portrait pose.",
+        "Image2: MALE body clothing/map-front/left-facing guard continuity only; ignore all female figures and other directions.",
+        "Image3: actual Skyrim race preset screenshot compilation: craniofacial anatomy only; NO garments, accessories, UI or background copying.",
+        "Image4: explicit portrait three-quarter RIGHT pose and bust framing only; do not transfer human face/skin.",
+        "Image5: project painterly dark fantasy STYLE only; do not copy clothes/identity/layout."
+      ],
+      "prompt": "Use case: precise-object-edit. Arena project racial identity pilot, ONLY ONE MALE individual of race argonian, shown THREE TIMES in a horizontal3-column ONE-row model card: LEFT=portrait bust; CENTER=exploration full body front looking down-screen in project's upper-oblique2D camera; RIGHT=full body combat guarded pose facing image LEFT. Three equal cells, no internal grid or labels. No female, no variants, no other poses. Transparent RGBA.\nREFERENCES: Image1 is current portrait/individual to revise; Image2 is existing body card, retain ONLY male clothes/body proportions/front and combat-left poses. Image3 is actual Skyrim preset compilation for race-specific craniofacial anatomy, not an animal photo. Image4 is portrait POSE only. Image5 is project STYLE only. Preserve dark fantasy finish, muted palette and Arena clothes. NO Skyrim armor/accessories, no jewelry, warpaint, scars, new customization options, tails or weapons.\nDIAGNOSIS TO CORRECT: Current looks like a friendly generic smooth lizard head with uniformly tiny scales, large round eye, bulbous round snout and leaf-like mane. Rebuild a Skyrim-recognizable ARGONIAN adult male head: flatter angular cranial wedge, prominent segmented brow ridge with deep-set narrow reptilian yellow eye and vertical slit pupil, broad blunt scaled muzzle with angular nostril/cheek/jaw planes rather than round pet-lizard nose; DISTINCT LARGER asymmetric polygonal head plates over smaller neck scales, light vertically segmented throat scutes. TWO small restrained backward swept bony horn/spine nubs at rear crown like modest presets, not giant dragon horns; low short muted green reptilian ridge, NOT leaf/hair/feather mane. Keep Arena/project BLUE-GRAY scales and brown shirt; do not switch whole character to Skyrim green. Masculine broad jaw and sturdy neck, natural humanoid adult proportions. Not crocodile/iguana/dragon/animal head pasted to human.\nPORTRAIT ONLY mandatory block:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nPortrait head AND torso yaw approximately35-45deg RIGHT together, chest opening/shoulders follow head; both eyes remain readable according to the race's lateral eye anatomy. Natural supported neck; no opposite chest rotation, no over-shoulder glance, no mirroring. Rightward gaze follows face. Do NOT compress muzzle/ears/horns to match human outline.\nBODY STUDIES: center retain existing MALE map-front body from Image2, right retain existing MALE guarded combat-left body/pose. Apply EXACT SAME newly revised male head identity, markings, brow/jaw/horn or ear structure consistently to all3 depictions. Clothing/body unchanged. Hands correctly scaled/scaled skin or fur as current. No wrong-direction combat, no human portrait pose on map. These are static continuity studies, not animation frames.\nOUTPUT:3 equal wide cells in1536x1024 transparent card. Each full figure fully inside its own cell with8% clear top/bottom and6% side margins. Portrait as complete bust, no cropped ears/crest/muzzle/shoulders. Technical export will be144x144 portrait eye~y52,48x64 map occupied56px/feet62,96x96 combat occupied88px/feet94. Strong readable silhouettes at real small size; fine detail not a substitute for racial structure. No text, logos, review guides, shadows on floor, fake alpha/checkerboard or colored matte. Only2 racial pilots will be made before owner review; do not generate the whole library.",
+      "resultFile": "art/masters/identidade-r04/argonian-male-piloto-r04a.png",
+      "productionReady": false
+    },
+    {
+      "id": "khajiit-male-piloto",
+      "version": "identity-r04",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "seed": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\retratos-pose-r03\\khajiit-male-pose-r03.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao-r03\\khajiit-r03.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\identity-r04-refs\\skyrim-khajiit-presets.jpg",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\breta-piloto-v01.png"
+      ],
+      "referenceRoles": [
+        "Image1: target individual identity and current right-facing portrait pose.",
+        "Image2: MALE body clothing/map-front/left-facing guard continuity only; ignore all female figures and other directions.",
+        "Image3: actual Skyrim race preset screenshot compilation: craniofacial anatomy only; NO garments, accessories, UI or background copying.",
+        "Image4: explicit portrait three-quarter RIGHT pose and bust framing only; do not transfer human face/skin.",
+        "Image5: project painterly dark fantasy STYLE only; do not copy clothes/identity/layout."
+      ],
+      "prompt": "Use case: precise-object-edit. Arena project racial identity pilot, ONLY ONE MALE individual of race khajiit, shown THREE TIMES in a horizontal3-column ONE-row model card: LEFT=portrait bust; CENTER=exploration full body front looking down-screen in project's upper-oblique2D camera; RIGHT=full body combat guarded pose facing image LEFT. Three equal cells, no internal grid or labels. No female, no variants, no other poses. Transparent RGBA.\nREFERENCES: Image1 is current portrait/individual to revise; Image2 is existing body card, retain ONLY male clothes/body proportions/front and combat-left poses. Image3 is actual Skyrim preset compilation for race-specific craniofacial anatomy, not an animal photo. Image4 is portrait POSE only. Image5 is project STYLE only. Preserve dark fantasy finish, muted palette and Arena clothes. NO Skyrim armor/accessories, no jewelry, warpaint, scars, new customization options, tails or weapons.\nDIAGNOSIS TO CORRECT: Current looks like a cute oversized housecat head with huge upright kitten ears, rounded muzzle and plush grooming. Rebuild a Skyrim-recognizable KHAJIIT adult male: broader flatter angular cheekbone and supraorbital planes, deep-set narrower almond amber eyes/slit pupils, stronger nasal bridge into a broad leathery feline nose; slightly longer squared upper muzzle and heavy whisker pads/defined chin, not round kitten snout. Smaller proportionate ears set a little wider/lower, coarse short patterned facial fur, tawny/cream palette and dark brow/nasal/cheek stripes following facial planes. Male stronger jaw/chin and cheek ruff like masculine Skyrim presets, not simply a female face with dark shirt. Preserve original individual fur colors/marking family, brown open-collar worn shirt and black trousers/boots. No lion mane, cute pet cat, plush toy, human-with-mask or panther redesign.\nPORTRAIT ONLY mandatory block:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nPortrait head AND torso yaw approximately35-45deg RIGHT together, chest opening/shoulders follow head; both eyes remain readable according to the race's lateral eye anatomy. Natural supported neck; no opposite chest rotation, no over-shoulder glance, no mirroring. Rightward gaze follows face. Do NOT compress muzzle/ears/horns to match human outline.\nBODY STUDIES: center retain existing MALE map-front body from Image2, right retain existing MALE guarded combat-left body/pose. Apply EXACT SAME newly revised male head identity, markings, brow/jaw/horn or ear structure consistently to all3 depictions. Clothing/body unchanged. Hands correctly scaled/scaled skin or fur as current. No wrong-direction combat, no human portrait pose on map. These are static continuity studies, not animation frames.\nOUTPUT:3 equal wide cells in1536x1024 transparent card. Each full figure fully inside its own cell with8% clear top/bottom and6% side margins. Portrait as complete bust, no cropped ears/crest/muzzle/shoulders. Technical export will be144x144 portrait eye~y52,48x64 map occupied56px/feet62,96x96 combat occupied88px/feet94. Strong readable silhouettes at real small size; fine detail not a substitute for racial structure. No text, logos, review guides, shadows on floor, fake alpha/checkerboard or colored matte. Only2 racial pilots will be made before owner review; do not generate the whole library.",
+      "resultFile": "art/masters/identidade-r04/khajiit-male-piloto-r04a.png",
+      "productionReady": false
+    },
+    {
+      "id": "argonian-male-piloto-reparo",
+      "version": "identity-r04b",
+      "transparent_background": true,
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\identidade-r04\\argonian-male-piloto-r04a.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\identity-r04-refs\\argonian-preset-selecionado.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao-r03\\argonian-r03.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png"
+      ],
+      "referenceRoles": [
+        "Image1: edit target and project's finish/individual palette; repair its background/layout.",
+        "Image2: selected actual Skyrim race preset crop, CRANIOFACIAL STRUCTURE only; no colors/clothes/accessories transfer.",
+        "Image3: original male clothing/poses; restore full wrist-length sleeves, ignore female rows.",
+        "Image4: portrait head/chest RIGHT pose only; no human identity transfer."
+      ],
+      "prompt": "Use case: precise-object-edit. Correct Image1, the current argonian MALE identity pilot. This is still ONE example of this race, NOT more variants. Preserve its brown open-collar shirt, black trousers, boots, individual coloration, painterly dark fantasy finish and all3 categories. Image2 is a selected ACTUAL Skyrim preset FACE to match racial skull structure rather than generic animal anatomy. Image3 shows original MALE clothing/poses: preserve shirt sleeves to the WRISTS; do not roll them to elbows or change equipment. Image4 is PORTRAIT POSE ONLY.\nMANDATORY TECHNICAL REPAIR: remove ALL the brown/gray glow/haze/background and floor shadows. Actual ZERO-ALPHA transparency everywhere outside the3 clean silhouettes, including between ears/limbs. NO semitransparent backdrop, vignette, colored clouds or floor. Re-layout into THREE equal nonoverlapping cells of ONE row on1536x1024: left one bust, center one map-front full body, right one combat-left full body. Each figure entirely inside its cell, at least6% transparent side margins and8% above/below. Portrait shoulders must not touch canvas/cell edge. Each body has BOTH complete boots. Uniformly shrink each figure to fit; do not crop it. Do not flatten the whole sheet onto a colored background.\nANATOMY REFINEMENT (same individual in all3 cells): More like Image2 CRANIAL PLANES: broad flattened angular forehead plate, large irregular interlocking skull plates distinct from fine cheek scales, stronger flat bony brow and recessed narrow slit-pupil eyes, angular wedge muzzle/nasal bridge and defined jaw corners rather than round smiling generic lizard. Clearly articulated light vertical throat scutes, not a crisscross scarf. Keep existing blue-gray palette/low green ridge, two modest small horn nubs, NO new large horns or dragon/iguana head. Shorten leaf-like mane into compact reptilian scales. Do not turn animalistic into an avian beak.\nPORTRAIT ONLY:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nBoth portrait head and chest oblique RIGHT together; gaze follows face, natural neck support, no over-shoulder pose or counterrotation. Keep muzzle/ears/horns intact, no compression to human outline. Approximate eye line52px/crown-jaw76px in144px export.\nCENTER exploration front: torso AND head face down-screen FRONT, symmetric frontal view under project's upper-oblique map camera; NOT portrait three-quarter yaw, no sideways head. RIGHT combat: body/head/action all face LEFT in coherent guarded stance, matching original male pose Image3. Apply same racial head identity across all3. No animations, extra figures, labels, review guides, watermarks or UI. Final card transparent RGBA.",
+      "resultFile": "art/masters/identidade-r04/argonian-male-piloto-r04b.png",
+      "productionReady": false
+    },
+    {
+      "id": "khajiit-male-piloto-reparo",
+      "version": "identity-r04b",
+      "transparent_background": true,
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\identidade-r04\\khajiit-male-piloto-r04a.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\identity-r04-refs\\khajiit-preset-selecionado.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao-r03\\khajiit-r03.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png"
+      ],
+      "referenceRoles": [
+        "Image1: edit target and project's finish/individual palette; repair its background/layout.",
+        "Image2: selected actual Skyrim race preset crop, CRANIOFACIAL STRUCTURE only; no colors/clothes/accessories transfer.",
+        "Image3: original male clothing/poses; restore full wrist-length sleeves, ignore female rows.",
+        "Image4: portrait head/chest RIGHT pose only; no human identity transfer."
+      ],
+      "prompt": "Use case: precise-object-edit. Correct Image1, the current khajiit MALE identity pilot. This is still ONE example of this race, NOT more variants. Preserve its brown open-collar shirt, black trousers, boots, individual coloration, painterly dark fantasy finish and all3 categories. Image2 is a selected ACTUAL Skyrim preset FACE to match racial skull structure rather than generic animal anatomy. Image3 shows original MALE clothing/poses: preserve shirt sleeves to the WRISTS; do not roll them to elbows or change equipment. Image4 is PORTRAIT POSE ONLY.\nMANDATORY TECHNICAL REPAIR: remove ALL the brown/gray glow/haze/background and floor shadows. Actual ZERO-ALPHA transparency everywhere outside the3 clean silhouettes, including between ears/limbs. NO semitransparent backdrop, vignette, colored clouds or floor. Re-layout into THREE equal nonoverlapping cells of ONE row on1536x1024: left one bust, center one map-front full body, right one combat-left full body. Each figure entirely inside its cell, at least6% transparent side margins and8% above/below. Portrait shoulders must not touch canvas/cell edge. Each body has BOTH complete boots. Uniformly shrink each figure to fit; do not crop it. Do not flatten the whole sheet onto a colored background.\nANATOMY REFINEMENT (same individual in all3 cells): More like Image2 elongated, planar KHAJIIT facial structure: broader flatter cheekbones, longer upper nasal bridge/muzzle with squared whisker pads and pronounced jaw/chin, broad leathery nose, narrow almond slit-pupil eyes under angular brow, ears about20% smaller than Image1 and more lateral, compact/coarse facial fur instead of a plush domestic cat. Preserve warm tawny/cream coloration and individual stripe family; do not copy the gray preset colors, jewelry or hairstyle. Masculine robust jaw/neck. NOT ordinary tabby cat head on a human, NOT cute kitten, no lion mane.\nPORTRAIT ONLY:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nBoth portrait head and chest oblique RIGHT together; gaze follows face, natural neck support, no over-shoulder pose or counterrotation. Keep muzzle/ears/horns intact, no compression to human outline. Approximate eye line52px/crown-jaw76px in144px export.\nCENTER exploration front: torso AND head face down-screen FRONT, symmetric frontal view under project's upper-oblique map camera; NOT portrait three-quarter yaw, no sideways head. RIGHT combat: body/head/action all face LEFT in coherent guarded stance, matching original male pose Image3. Apply same racial head identity across all3. No animations, extra figures, labels, review guides, watermarks or UI. Final card transparent RGBA.",
+      "resultFile": "art/masters/identidade-r04/khajiit-male-piloto-r04b.png",
+      "productionReady": false
+    }
+  ]
+}
