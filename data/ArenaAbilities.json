@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "balanceVersion": "M01-09/R01",
+  "actorId": 1,
+  "technicalMapId": 6,
+  "technicalTroopId": 1,
+  "techniques": [
+    {
+      "skillId": 3,
+      "weaponType": 0
+    },
+    {
+      "skillId": 4,
+      "weaponType": 0
+    },
+    {
+      "skillId": 5,
+      "weaponType": 1
+    },
+    {
+      "skillId": 6,
+      "weaponType": 1
+    },
+    {
+      "skillId": 7,
+      "weaponType": 2
+    },
+    {
+      "skillId": 8,
+      "weaponType": 2
+    }
+  ],
+  "spellIds": [
+    9,
+    10
+  ],
+  "books": [
+    {
+      "itemId": 5,
+      "skillId": 9
+    },
+    {
+      "itemId": 6,
+      "skillId": 10
+    }
+  ]
+}

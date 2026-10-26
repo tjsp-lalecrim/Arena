@@ -47,6 +47,8 @@ const {chromium}=require(process.env.ARENA_PLAYWRIGHT||'playwright');
     const chosen=JSON.stringify(s);for(let i=0;i<3;i++){DataManager.saveGame(17);DataManager.loadGame(17);eq(JSON.stringify(ArenaResources.snapshot()),chosen,'growth save/load '+i);}
     const b=$gameActors.actor(1);b.changeLevel(2,false);b.changeLevel(5,false);eq(ArenaResources.pending(),[],'down/up no duplicated entitlement');eq(ArenaResources.snapshot().hp.maximum,110,'down/up retains committed growth');
     eq(b.canPaySkillCost($dataSkills[5]),false,'map technique cannot spend');b.paySkillCost($dataSkills[5]);eq(ArenaResources.snapshot().vigor.current,17,'map direct payment guarded');
+    // M01-09 now revalidates equipment in useItem; this resource probe equips its actual dagger.
+    if(typeof ArenaAbilities!=='undefined'){$gameParty.gainItem($dataWeapons[1],1);b.changeEquip(0,$dataWeapons[1]);}
     $gameParty._inBattle=true;b.useItem($dataSkills[5]);eq(ArenaResources.snapshot().vigor.current,12,'one native use pays once');b.useItem($dataSkills[1]);eq(ArenaResources.snapshot().vigor.current,12,'basic attack free');
     ArenaPersistence.setResource('vigor',0,120+bonus);eq(b.canPaySkillCost($dataSkills[5]),false,'zero insufficient');b.paySkillCost($dataSkills[5]);eq(ArenaResources.snapshot().vigor.current,0,'cannot go negative');
     ArenaResources.recoverVigor(5);eq(b.canPaySkillCost($dataSkills[5]),true,'exact cost');b.useItem($dataSkills[5]);eq(ArenaResources.snapshot().vigor.current,0,'exact payment zero');

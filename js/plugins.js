@@ -11,5 +11,8 @@ var $plugins =
 {"name":"MV_CharacterRules","status":true,"description":"v0.2.0 Regras puras e modificadores raciais aprovados P01–P08","parameters":{}},
 {"name":"Arena_CharacterCreation","status":true,"description":"v0.2.0 Criação pt-BR e bônus raciais provisórios P01–P08","parameters":{}},
 {"name":"MV_ResourceProgression","status":true,"description":"v0.1.0 Cálculo puro de recursos e escolhas por nível","parameters":{}},
-{"name":"Arena_Resources","status":true,"description":"v0.1.0 Vida, Mana, Vigor próprio e evolução por escolha","parameters":{}}
+{"name":"Arena_Resources","status":true,"description":"v0.1.0 Vida, Mana, Vigor próprio e evolução por escolha","parameters":{}},
+{"name":"MV_AbilityRules","status":true,"description":"v0.1.0 Seleção pura de técnicas por equipamento","parameters":{}},
+{"name":"Arena_Abilities","status":true,"description":"v0.1.0 Técnicas, magias e livros transacionais","parameters":{}},
+{"name":"Arena_AbilityLab","status":true,"description":"v0.1.0 Laboratório de ações nativas M01-09","parameters":{}}
 ];

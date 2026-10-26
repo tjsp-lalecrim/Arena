@@ -1,5 +1,7 @@
 # Arena_Resources 0.1.0
 
+Integração M01-09: este código permanece inalterado e é o único consumidor de ArenaVigorCost. Arena_Abilities valida arma/conhecimento/execução e chama o percurso nativo que chega a paySkillCost. Técnicas3–8 agora ativas conforme equipamento, em vez da indisponibilidade histórica do fechamento M01-08 descrita abaixo. HABILIDADES_M01_09.md registra a continuidade sem segundo descontador.
+
 Arquivo `js/plugins/Arena_Resources.js`, desenvolvido pelo Codex, sem dependências externas. Requer MV_StateStore0.1.0, Arena_Persistence0.1.0, MV_CharacterRules0.2.0, Arena_CharacterCreation0.2.0 (com integração opcional de base Vigor), MV_ResourceProgression0.1.0, depois deles no gerenciador. O conjunto inclui os plugins de prévia/runtime existentes; não removê-los nem ativar Community_Basic. Preservar formato canônico de js/plugins.js.
 
 Sem parâmetros do gerenciador. Dados específicos/IDs/textos em `data/ArenaProgression.json`, schemaVersion1/balanceVersion M01-08/R01: ator1; baseHP100/MP50/Vigor100; incremento10; nível máximo nativo99; mapa técnico5. Quantidades por item/skill ficam no banco/notas, não no núcleo reutilizável. Valores precisam ser inteiros não negativos, incremento positivo e referências válidas; `tools/validate-resources.cjs` valida configuração e integração. Mudanças de base valem para partidas novas; escolhas guardam seu amount original.
