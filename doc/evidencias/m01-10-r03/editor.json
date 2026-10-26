@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-26",
+  "method": "Computer-use @oai/sky, keyboard and Windows accessibility; separate from Chrome runtime tests",
+  "project": "D:\\RPG Maker MV\\Projects\\Arena",
+  "observed": ["Existing MV launched, Arena project opened without read-error dialog", "F10 plugin manager opened", "Details: Arena_BattleMotion ON", "Ctrl+S", "Editor closed; window disappearance confirmed", "Relaunched fresh Arena window265688 without read-error dialog", "Ctrl+S again"],
+  "pluginRecords": 16,
+  "recordsBeforeAfterSemanticEquality": true,
+  "canonicalUtf8WithoutBom": true,
+  "semanticChanges": ["data/System.json: versionId only"],
+  "formattingOnlyDiscardedAfterExactSemanticComparison": ["data/Items.json", "data/Skills.json", "data/MapInfos.json"],
+  "limits": ["No visual NW.js playtest asserted", "No physical Galaxy A56", "No new owner manual approval inferred", "No personal saves used"]
+}
