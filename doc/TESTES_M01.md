@@ -89,3 +89,10 @@ Executar tools/test-battle-expansion-r03.cjs com ARENA_EXPANSION_FINAL=1, tools/
 ## Interface M01-11
 
 tools/validate-battle-ui.cjs verifica geometria pura, UTF8,18 plugins preservando16, mapa/tropas com somente trio/reinício e motor/regras/arte inalterados. tools/test-battle-slots.cjs executa ações nativas, configuração/atalhos/limites/cancelamento/save-load e múltiplos inimigos. tools/test-battle-slots-category.cjs valida o fallback final para categoria única e cancelamento sem custos. tools/test-battle-slots-pointer.cjs testa mouse/toque Android genérico com canvas/pontos dentro da viewport e ajuda≥16px CSS. Roteiro, capturas e gravação em INTERFACE_BATALHA_M01_11.md e evidencias/m01-11. Testes no editor por teclado/acessibilidade separados do Chrome; não declarar NW.js visual ou Galaxy A56 físico.
+
+
+## M01-11 R02 — regressão de resultado e apresentação
+
+Executar tools/test-battle-ui-refinement.cjs e tools/validate-battle-ui-refinement.cjs. Para as suítes de slots/categoria/ponteiro e capture-battle-ui.cjs usar ARENA_UI_OUT=doc/evidencias/m01-11-r02 (capture pode usar a subpasta apresentacao); test-battle.cjs usa ARENA_EVIDENCE_DIR=doc/evidencias/m01-11-r02/regressao-combate. Não sobrescrever evidências R01. ARENA_URL aponta para o servidor local, ARENA_PLAYWRIGHT para a instalação disponível. Contextos de navegador descartáveis, sem saves pessoais.
+
+Conferir visualmente principal/habilidades/inventário/configuração/alvos/vitória e redução real640×480; execução/mensagens/resultados não podem captar atalhos/configuração, nem sobrepor mensagem/EXP. Documentar o ambiente real: emulação de toque não é Galaxy A56; autoria no editor anterior não é inspeção NW.js desta revisão. Roteiro completo e referências em REVISAO_INTERFACE_M01_11_R02.md.

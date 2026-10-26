@@ -26,7 +26,7 @@ const {chromium}=require(process.env.ARENA_PLAYWRIGHT||'playwright');
   await page.evaluate(()=>{const a=$gameActors.actor(1);a.skills=uiCategoryOriginalSkills;const w=SceneManager._scene._actorCommandWindow;w._arenaSType=1;w.selectSymbol('skill');w.processOk();});
   assert.equal(await page.evaluate(()=>SceneManager._scene._skillWindow._stypeId),1);
   await key('Escape');assert.deepEqual(await page.evaluate(()=>ArenaResources.snapshot()),before);assert.deepEqual(errors,[]);
-  fs.writeFileSync('doc/evidencias/m01-11/categoria-unica.json',JSON.stringify({browser:await browser.version(),checks:['only magic available opens magic directly','cancel without resource cost','restore technique category'],isolation:'Disposable context, skills override only in memory, no saves',errors},null,2)+'\n');
+  fs.writeFileSync((process.env.ARENA_UI_OUT||'doc/evidencias/m01-11')+'/categoria-unica.json',JSON.stringify({browser:await browser.version(),checks:['only magic available opens magic directly','cancel without resource cost','restore technique category'],isolation:'Disposable context, skills override only in memory, no saves',errors},null,2)+'\n');
   console.log('PASS native category fallback, cancellation and restored techniques');
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

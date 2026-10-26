@@ -1,0 +1,25 @@
+{
+  "mode": "Read only composition consultation, non-normative. No copied assets/rules/dependencies.",
+  "files": [
+    {
+      "file": "doc\\prints\\revisao-m01-11-r02\\01-arena-resultado.png",
+      "sha256": "9aa0a4726afea393ce2fbdd28daac0fc82c9053c8d46eb975433c65a32fc26ad"
+    },
+    {
+      "file": "doc\\prints\\revisao-m01-11-r02\\02-composicao.png",
+      "sha256": "3f4e351fd345aa20194b5d31b1b26b7ee494629a7a8a8869226c930f1720fae5"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Battlespire\\js\\plugins\\BS_BattleMenu96.js",
+      "sha256": "26b629b8b44baf95523d8b33f7c942ed33202b7a076c48adc22dea39d221588a"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Battlespire\\js\\plugins\\BS_BattlePresentation94.js",
+      "sha256": "0126d486b29a734e3348b5131a35e0d512cbda5e1842bff9d104fee170325f0c"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Battlespire\\js\\plugins\\BS_MenuPanels113.js",
+      "sha256": "1fceeffb0f63d8de232c03cfa33b2d4d408bccca623adf835d1342223c3f7bdd"
+    }
+  ]
+}
