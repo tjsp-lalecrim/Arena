@@ -1,0 +1,619 @@
+{
+  "masters": [
+    {
+      "file": "art/masters/criacao/argonian-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "e23127565bec42510325950a51b1d17188bbda824e5ab25946f8da8a47319d69"
+    },
+    {
+      "file": "art/masters/criacao/breton-v01.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "0d3edb84761c8a3064ef4685f8d76e7bd9e70d2c7564866d2f2451ed56237ee9"
+    },
+    {
+      "file": "art/masters/criacao/dark_elf-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "4ccc0c375575842af2bc4c390a87d6750150724993f13e862a0205e167ec2d8a"
+    },
+    {
+      "file": "art/masters/criacao/high_elf-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "c47a9caad31ff43a932f067affd138783392f15cc78959deb90b496423865999"
+    },
+    {
+      "file": "art/masters/criacao/khajiit-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "8b72203908733e1bef613bcb46e8b4c586832911f8e10d12eeadd5f0b96a78b1"
+    },
+    {
+      "file": "art/masters/criacao/nord-v01.png",
+      "size": [
+        1087,
+        1447
+      ],
+      "sha256": "38bfb38f946ca1052db1372673c0432d6b6ef3835024a88e9acd1728fbc23a5a"
+    },
+    {
+      "file": "art/masters/criacao/redguard-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "eb2415dc59b964f089d645daee434829e3d7544e93cee156ef0d09da39a1ad29"
+    },
+    {
+      "file": "art/masters/criacao/wood_elf-v01.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "685130f9058ddd0cd0908a4979cba3d23ceb59ac6504829521997b83452fbf1a"
+    }
+  ],
+  "exports": [
+    {
+      "file": "img/characters/$Arena_argonian_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "65f1acca52cae626c329402e1c71231ebf331afec7167df494494d4aac26ba15"
+    },
+    {
+      "file": "img/faces/Arena_argonian_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "a83e5f9e692faf3e190b051a926b0009a3b08a851a62c04f7f6e7869581214ba"
+    },
+    {
+      "file": "img/pictures/Arena_argonian_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "a9ca5735db695fb1b3976645e3608c344020cde5935b599cecde836d0bc950ac"
+    },
+    {
+      "file": "img/sv_actors/Arena_argonian_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "496d657bbf0c942e025711a4bbb5170f9add27468c877ee7d5e1ef0dab83b75e"
+    },
+    {
+      "file": "img/characters/$Arena_argonian_female_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "a4fbea2cf03224dacb5076fdda80a018bca6ac8a5293930fa700684e6d03d2f8"
+    },
+    {
+      "file": "img/faces/Arena_argonian_female_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "de13e0d3f10f6ad6dbbf7a179e68684bbce43240e49863af5866175468bea219"
+    },
+    {
+      "file": "img/pictures/Arena_argonian_female_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "49c0286d1a91f5a122a3f50aadc7db87b6edd49ab418dd1613e0760f82bddbb7"
+    },
+    {
+      "file": "img/sv_actors/Arena_argonian_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "86e51c517c5e4e2956efc8564085547dace6f149b101a5d9e9023b4c78c7aaf0"
+    },
+    {
+      "file": "img/characters/$Arena_breton_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "e6113615fd866c576f6c4dca13edfe37239bb3bfb616548e1af897225aba88ec"
+    },
+    {
+      "file": "img/faces/Arena_breton_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "3e1aeb91c09c93406c6660f9b0313a63bfa8763721e5dc2b570666d5142384bd"
+    },
+    {
+      "file": "img/pictures/Arena_breton_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "20bc3df063e0df3d79bf197440dd788d5a5513be523a597e729fc8510d2bb874"
+    },
+    {
+      "file": "img/sv_actors/Arena_breton_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "283d615f4f5c64423da1af680d722fd6fc3fd61fad66c7b862749c855c2bf962"
+    },
+    {
+      "file": "img/sv_actors/Arena_breton_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "7540bb6e49700bd20327d054ee3097203f2496ac15835cb47214f52436e9eb09"
+    },
+    {
+      "file": "img/characters/$Arena_dark_elf_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "037e79af19efa8d3d9ccb0af01bf714b63960c73a5dcfe9861ecd69c46eb893e"
+    },
+    {
+      "file": "img/faces/Arena_dark_elf_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "bee0978d11530b0ef298da349d9c7a8dc346c1c2b1b039ae921c699432f654e3"
+    },
+    {
+      "file": "img/pictures/Arena_dark_elf_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "d86879a8e0246c1979ebaec9c75eb930edff321755103a0de7be5b639e320771"
+    },
+    {
+      "file": "img/sv_actors/Arena_dark_elf_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "b5fcaefed2584cfb6e7b3c9b75dd4178140a61b03ac83cb3723028d240bd7a31"
+    },
+    {
+      "file": "img/characters/$Arena_dark_elf_female_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "c1d0e9c4983c766ded9f59b471ab87b85c76e0cb90d47cd4c4fd54eb603ad963"
+    },
+    {
+      "file": "img/faces/Arena_dark_elf_female_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "f682e72d6dd194fa04afb29415686b39b8d824485441cf01277d6a5ee7a951a2"
+    },
+    {
+      "file": "img/pictures/Arena_dark_elf_female_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "f5db47fdc7c9a8102fb52c2b6d698151c9fd46e88f89b16b1d3acb06e6163846"
+    },
+    {
+      "file": "img/sv_actors/Arena_dark_elf_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "779e4228f800e80647cbb0d35f01211af3ede0d64f4353e6d885385d453594b7"
+    },
+    {
+      "file": "img/characters/$Arena_high_elf_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "0cc076873632885ec59634ecc50186ffbec83e46bcb204f3121cd4f1899abed8"
+    },
+    {
+      "file": "img/faces/Arena_high_elf_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "a08fc9c3b4dbb64f002cea306956b10cf1993132eab5368e80e42c5eaaef4e1c"
+    },
+    {
+      "file": "img/pictures/Arena_high_elf_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "263947e1265fe6820eebfc6b92962b9b58134b06d55783669eae24d83192e154"
+    },
+    {
+      "file": "img/sv_actors/Arena_high_elf_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "ecbf826d35c4509f4507cbebdbd926052bbe14eddbdfbfda5d059fb282e2df5b"
+    },
+    {
+      "file": "img/characters/$Arena_high_elf_female_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "881ccfb2c3681471fcadea5220e9feb5d38e6e30abf41ecfecc449e4731a29b7"
+    },
+    {
+      "file": "img/faces/Arena_high_elf_female_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "f1bd00e903965933b3f95c5f07eed5956bb88f280c846ebe9d50a1d1ba0641a8"
+    },
+    {
+      "file": "img/pictures/Arena_high_elf_female_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "170f4a0c66bcb10092114080b26b82756073096d20a70b70a4f2509a586f9202"
+    },
+    {
+      "file": "img/sv_actors/Arena_high_elf_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "a039a7745c32f1671c708d9a6b41ee18498696c210d4a3fd19ed5d29bacccb77"
+    },
+    {
+      "file": "img/characters/$Arena_khajiit_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "c576064597ab37eb6fff295009b9fa91512d89ccc027ed3a76319ad12d12c4e2"
+    },
+    {
+      "file": "img/faces/Arena_khajiit_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "584b376b13badd3fa96a4825087fbbc7e08ad8fb1e2e382f3cb6b368f5754f30"
+    },
+    {
+      "file": "img/pictures/Arena_khajiit_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "22c3670965f493e15406e176a8a840df9d239395cb0c6bec52c4e195735d3e7f"
+    },
+    {
+      "file": "img/sv_actors/Arena_khajiit_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "01ddba9f1335b8a9b4710d3b84eb568323e6d0ee96c86754ff9ea56ea04d8e14"
+    },
+    {
+      "file": "img/characters/$Arena_khajiit_female_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "eedace25ed6786dc6f175795b8448ba4caface85db9e641bf1a0f1bab3608ab9"
+    },
+    {
+      "file": "img/faces/Arena_khajiit_female_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "dc63a59d4fd2f51267f7d26caa994855f9a3ed019bb798b741a89d0af1a2e970"
+    },
+    {
+      "file": "img/pictures/Arena_khajiit_female_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "aa95340babdeebff2cfe06537cde3194bf460983c6dac4e2225b1b6d41be32a3"
+    },
+    {
+      "file": "img/sv_actors/Arena_khajiit_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "5281a3f756c04a368ef3822f3ffcacae33e7e265fa5cb3d77011f315146bc830"
+    },
+    {
+      "file": "img/characters/$Arena_nord_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "aeb350032d84cbd82e7525e849ec60d23e04be70e0cf0daa24b734ec1f7ec356"
+    },
+    {
+      "file": "img/faces/Arena_nord_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "6f77bb8b504120d58e21b0172c9ebcbcf64b9ff5d42ee4499f9f1afe9616c6f6"
+    },
+    {
+      "file": "img/pictures/Arena_nord_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "7414f5da8f47eb87717205466275ace172453b5efdf5d1a8d09f6c948de3dac1"
+    },
+    {
+      "file": "img/sv_actors/Arena_nord_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "b64c6f2190d45d515cb2428eaf8772af72974ae848eaebb750d4da70f80fb5f5"
+    },
+    {
+      "file": "img/characters/$Arena_nord_female_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "dec0b625a766def6ec5c46a0e61f33a2b3cc810e939945b59f23a815f405446b"
+    },
+    {
+      "file": "img/faces/Arena_nord_female_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "1bc87d27ca03ce91a746aa59bfacc7f859d9a079131a282ef1a290172292ddd3"
+    },
+    {
+      "file": "img/pictures/Arena_nord_female_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "4ff12a46d02cc5ef6f66b2910dd666ba392809ed4f1f4eb01e96143469794199"
+    },
+    {
+      "file": "img/sv_actors/Arena_nord_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "70f90b9848d59730871785f79cbce07237d99b8707a88e0e8ada7ba390956c83"
+    },
+    {
+      "file": "img/characters/$Arena_redguard_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "bf7f70b1b7b4f95558bc248018383c7b059cc9b4da3ed63c36e48efb08d910f4"
+    },
+    {
+      "file": "img/faces/Arena_redguard_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "8350d482bd25ab39a2d1d36c91334e9ac017050af2d60406a347315d62dbc0d3"
+    },
+    {
+      "file": "img/pictures/Arena_redguard_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "829302d5fa402a59b9195ce1b4b6b631e9cece7eecfdb4299c38d433034fbc29"
+    },
+    {
+      "file": "img/sv_actors/Arena_redguard_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "3b7df1940f50f9a4b601d434b9c32a702041d10f3efad121387e016592b13bc7"
+    },
+    {
+      "file": "img/characters/$Arena_redguard_female_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "d889da1ff99af47b401c7942d975107f9a0c10e0fbabd196f6b66d79dda24e3e"
+    },
+    {
+      "file": "img/faces/Arena_redguard_female_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "52d411b11dbbf8bca41d1db7bd9c4ef0fad45964de8e39ac91013f6dc19264d7"
+    },
+    {
+      "file": "img/pictures/Arena_redguard_female_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "08835feb64ad6394df1d1f0ae44ef6c2d0635ac926e01290c55147f1cca8bde4"
+    },
+    {
+      "file": "img/sv_actors/Arena_redguard_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "b4e04295fe93d1b1a071e667d9a7bcb6c5b92a53f26002ba7c5d2894f77fc282"
+    },
+    {
+      "file": "img/characters/$Arena_wood_elf_male_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "a3b7a386ac61b111d971df199072c95842f631dc1ec1917498eae578cb89f2ef"
+    },
+    {
+      "file": "img/faces/Arena_wood_elf_male_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "191cd084e9a40cc8a07a549b3100ba68743d3a46933b1a35d033a396b96bb5cc"
+    },
+    {
+      "file": "img/pictures/Arena_wood_elf_male_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "ada7f4110acb0e7c42e7dbd098523bd944d8ea2089d728d4b592e5a2602a3260"
+    },
+    {
+      "file": "img/sv_actors/Arena_wood_elf_male_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "26d7aa05a7b4b3ee4128704a6b62823f65f49edc78952b52fac13a4b1ab43ae8"
+    },
+    {
+      "file": "img/characters/$Arena_wood_elf_female_base.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "83012f3b53ed5d99c2ebe53372d121ce71998542ee35295c1959ff483e530162"
+    },
+    {
+      "file": "img/faces/Arena_wood_elf_female_base.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "acaff2ab6fd44516e0c1d491b68e9eeb56533f584633947c2fd9f16a5f0e9629"
+    },
+    {
+      "file": "img/pictures/Arena_wood_elf_female_base_side.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "d2ec4fc332f0f0990e5f184c287e464ccde76c9fdda2cf7831050b3ca3451926"
+    },
+    {
+      "file": "img/sv_actors/Arena_wood_elf_female_base.png",
+      "size": [
+        864,
+        576
+      ],
+      "sha256": "4d6854c565e58f444ac5720f4eca377422f04399f16e2e7e07edf6c6634bc51f"
+    },
+    {
+      "file": "doc/arte/personagens-m01-v01.png",
+      "size": [
+        1280,
+        768
+      ],
+      "sha256": "939828d93ca018128a5072a8b7fd91a711bb2e6153f6c2efd9850ff7a564e06b"
+    }
+  ],
+  "limitations": "15 new static directional/base-side sets; Breton female existing walk reused; repeated native svActor cells are format support, not new animation.",
+  "referencesActuallyAttached": [
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\breta-piloto-v01.png",
+      "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\revisao-r02\\dungeon-identidade-r02.png",
+      "sha256": "7fa442a9968b19edecdb4db3cd0d25cffd2ec9518a6ead1e1df523398154857d"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\argonian-original.png",
+      "sha256": "902d9f7c9c171e97697d3cc452bef2edd0407182af0c0680c882eb34518a3599"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\races-page-10.png",
+      "sha256": "6568d51001c7bc6b58847a97a4a5264c0e9ef9668e862582430d4ae9adad7d24"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\races-page-3.png",
+      "sha256": "2198e87a05bcc2d4e8c1e29eda59454309f36a7908543a28e6d3485da94f7100"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\races-page-5.png",
+      "sha256": "93338643c6a550e201cdcfcb59eebf97ee70f806046993cc1615909c83756bf8"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\races-page-6.png",
+      "sha256": "264ac1cd9eb1f322f38058a42c3fba00fa043337eab16e64300662c9b66561ef"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\races-page-7.png",
+      "sha256": "1a0bd881f00c9a5deb0854581e73d28701155738a2537ebe6c10ebd30aa31b87"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\races-page-8.png",
+      "sha256": "3b7f0933db059b16a7d66c340552821031dadf23df138945b418a05818a92637"
+    },
+    {
+      "localPath": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\character-references\\races-page-9.png",
+      "sha256": "cd841883da239d98271ad3c1a02b66e137dca3792f2a0fe0b390363857dd3701"
+    }
+  ],
+  "sourcePdfs": [
+    {
+      "localPath": "doc\\wiki\\Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "sha256": "547891b1e2fa8136c2c7b9110de0671a569b19ae40422909e9a4fc632f7ae880"
+    },
+    {
+      "localPath": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\Docs\\Manual.pdf",
+      "sha256": "3b2337481e95af1325680a9496f692178483064eb0a973105680b74197abb00c"
+    }
+  ]
+}

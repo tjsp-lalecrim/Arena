@@ -1,0 +1,39 @@
+{
+  "editor": "RPG Maker MV installed, Arena window; accessibility via @oai/sky",
+  "observedPluginDetails": [
+    {
+      "name": "Community_Basic",
+      "status": "OFF"
+    },
+    {
+      "name": "Arena_CharacterCreation",
+      "status": "ON"
+    },
+    {
+      "name": "MV_CharacterRules",
+      "status": "ON"
+    }
+  ],
+  "save": "Ctrl+S executed; native files rewritten; pre-save local snapshot compared",
+  "pluginRecordsPreserved": 8,
+  "semanticChanges": [
+    {
+      "file": "data\\MapInfos.json",
+      "fields": [
+        "editor scroll metadata"
+      ]
+    },
+    {
+      "file": "data\\System.json",
+      "fields": [
+        "versionId"
+      ]
+    }
+  ],
+  "limits": [
+    "No screenshot/playtest visual claimed",
+    "No Galaxy A56 test"
+  ],
+  "pluginsSha256": "2faa36f701edda2145b1b70d0d1d2482088593a2428a44d0121d4cd0100d16ce",
+  "reopen": "Editor closed (absence in list_windows confirmed), then launched again; Arena window returned with no error modal in accessibility."
+}

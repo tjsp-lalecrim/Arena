@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-26",
+  "fixedBlock": "Retrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.",
+  "status": "pending owner aesthetic review",
+  "requests": [
+    {
+      "id": "argonian-female",
+      "version": "pose-r03",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\portrait-pose-refs\\argonian-female-identity-r02.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\breta-piloto-v01.png"
+      ],
+      "referenceRoles": [
+        "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+        "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer.",
+        "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer."
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: ONE corrected argonian FEMALE portrait for Arena RPG Maker MV. Image1 is EDIT TARGET and IDENTITY: preserve her exact race, facial markings, colors, ivory blouse and painterly finish. Image2 is the explicit POSE/composition reference (Breton female pilot v01), not identity. Image3 provides STYLE/material finish only, not sheet layout. Do not reproduce human skin, human muzzle, human hair, vest, other poses or other figures from2/3.\nMANDATORY FIXED BLOCK:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nPOSE CONSTRUCTION: reconstruct the torso in the SAME approximately35-45 degree yaw from frontal toward image RIGHT as the reference. Near shoulder is on image LEFT and broader; far shoulder on image RIGHT recedes. Sternum, shirt opening and chest volume turn RIGHT together. Head sits over the natural base of neck, with muzzle pointing the same oblique RIGHT direction as chest. BOTH eyes should remain readable in a true THREE-QUARTER view, far eye foreshortened. Not full side profile. Gaze follows face toward image RIGHT, not back toward viewer/left. Do NOT simply flip the old image or attach a turned head to the existing opposing chest. Rebuild necessary neck/shoulder transitions naturally.\nIDENTITY: Keep blue-gray LIZARD scales, broad reptilian jaw/projecting scaled muzzle, golden eye, copper-rust short scale ridge/spines, exposed scaled neck. No beak, no hair/feather mane, no dragon head; do not erase her reptilian jaw to match human outline.\nCOMPOSITION/OUTPUT: one complete bust from upper chest, head/ears/crest entirely inside image, approximately square1024x1024 transparent PNG. Leave at least8% clear transparent margin above head and on both sides, with shoulders/bust fully inside. Target144px export eye line~52px and apparent crown-to-jaw~76px using uniform scaling only. Keep wide muzzles/ears inside safe frame; no compressed anatomy. No labels, borders, guide lines, floor, scenery, fake checkerboard, colored matte residue, extra body parts or jewelry. Soft cool light, sober painted dark fantasy matching approved project, no pixel art/anime/photographic redesign. Change only the portrait; exploration and combat are NOT requested.",
+      "resultFile": "art/masters/retratos-pose-r03/argonian-female-pose-r03.png",
+      "visualStatus": "inspected enlarged; candidate pending owner approval"
+    },
+    {
+      "id": "khajiit-female",
+      "version": "pose-r03",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\portrait-pose-refs\\khajiit-female-identity-r02.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\breta-piloto-v01.png"
+      ],
+      "referenceRoles": [
+        "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+        "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer.",
+        "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer."
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: ONE corrected khajiit FEMALE portrait for Arena RPG Maker MV. Image1 is EDIT TARGET and IDENTITY: preserve her exact race, facial markings, colors, ivory blouse and painterly finish. Image2 is the explicit POSE/composition reference (Breton female pilot v01), not identity. Image3 provides STYLE/material finish only, not sheet layout. Do not reproduce human skin, human muzzle, human hair, vest, other poses or other figures from2/3.\nMANDATORY FIXED BLOCK:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nPOSE CONSTRUCTION: reconstruct the torso in the SAME approximately35-45 degree yaw from frontal toward image RIGHT as the reference. Near shoulder is on image LEFT and broader; far shoulder on image RIGHT recedes. Sternum, shirt opening and chest volume turn RIGHT together. Head sits over the natural base of neck, with muzzle pointing the same oblique RIGHT direction as chest. BOTH eyes should remain readable in a true THREE-QUARTER view, far eye foreshortened. Not full side profile. Gaze follows face toward image RIGHT, not back toward viewer/left. Do NOT simply flip the old image or attach a turned head to the existing opposing chest. Rebuild necessary neck/shoulder transitions naturally.\nIDENTITY: Keep warm tawny striped feline fur, cream muzzle/neck, clearly feline nose, pointed furry ears, whiskers, same female face. No human mask; preserve full natural muzzle/ears, neither flatten nor shorten anatomy to a human outline.\nCOMPOSITION/OUTPUT: one complete bust from upper chest, head/ears/crest entirely inside image, approximately square1024x1024 transparent PNG. Leave at least8% clear transparent margin above head and on both sides, with shoulders/bust fully inside. Target144px export eye line~52px and apparent crown-to-jaw~76px using uniform scaling only. Keep wide muzzles/ears inside safe frame; no compressed anatomy. No labels, borders, guide lines, floor, scenery, fake checkerboard, colored matte residue, extra body parts or jewelry. Soft cool light, sober painted dark fantasy matching approved project, no pixel art/anime/photographic redesign. Change only the portrait; exploration and combat are NOT requested.",
+      "resultFile": "art/masters/retratos-pose-r03/khajiit-female-pose-r03.png",
+      "visualStatus": "inspected enlarged; candidate pending owner approval"
+    },
+    {
+      "id": "argonian-male",
+      "version": "pose-r03",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\portrait-pose-refs\\argonian-male-identity-r02.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\breta-piloto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\retratos-pose-r03\\argonian-female-pose-r03.png"
+      ],
+      "referenceRoles": [
+        "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+        "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer.",
+        "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer.",
+        "Image4: same-race inspected provisional POSE only; not gender/identity/style approval."
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: ONE corrected argonian MALE portrait for Arena RPG Maker MV. Image1 is EDIT TARGET and IDENTITY: preserve his exact race, facial markings, colors, worn brown open-collar shirt and painterly finish. Image2 is the explicit POSE/composition reference (Breton female pilot v01), not identity. Image3 provides STYLE/material finish only, not sheet layout. Do not reproduce human skin, human muzzle, human hair, vest, other poses or other figures from2/3.\nImage4 is the newly inspected argonian female pose study: use only its SAME anatomical head/chest yaw and natural neck connection as same-race pose reference. Do not transfer female face, copper crest or ivory blouse to male. Keep the male facial identity and brown shirt from Image1. Give the upper chest a CLEAR UNAMBIGUOUS rightward turn, matching head yaw; broad visible near shoulder LEFT, narrower receding far shoulder RIGHT. Both pectoral planes and sternum turn right, not an oppositely twisted neckline.\nMANDATORY FIXED BLOCK:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nPOSE CONSTRUCTION: reconstruct the torso in the SAME approximately35-45 degree yaw from frontal toward image RIGHT as the reference. Near shoulder is on image LEFT and broader; far shoulder on image RIGHT recedes. Sternum, shirt opening and chest volume turn RIGHT together. Head sits over the natural base of neck, with muzzle pointing the same oblique RIGHT direction as chest. BOTH eyes should remain readable in a true THREE-QUARTER view, far eye foreshortened. Not full side profile. Gaze follows face toward image RIGHT, not back toward viewer/left. Do NOT simply flip the old image or attach a turned head to the existing opposing chest. Rebuild necessary neck/shoulder transitions naturally.\nIDENTITY: Keep blue-gray LIZARD scales, broad reptilian jaw/projecting scaled muzzle, golden eye, muted green short scale ridge/spines, exposed scaled neck. No beak, no hair/feather mane, no dragon head; do not erase his reptilian jaw to match human outline.\nCOMPOSITION/OUTPUT: one complete bust from upper chest, head/ears/crest entirely inside image, approximately square1024x1024 transparent PNG. Leave at least8% clear transparent margin above head and on both sides, with shoulders/bust fully inside. Target144px export eye line~52px and apparent crown-to-jaw~76px using uniform scaling only. Keep wide muzzles/ears inside safe frame; no compressed anatomy. No labels, borders, guide lines, floor, scenery, fake checkerboard, colored matte residue, extra body parts or jewelry. Soft cool light, sober painted dark fantasy matching approved project, no pixel art/anime/photographic redesign. Change only the portrait; exploration and combat are NOT requested.",
+      "resultFile": "art/masters/retratos-pose-r03/argonian-male-pose-r03.png",
+      "visualStatus": "inspected enlarged; candidate pending owner approval"
+    },
+    {
+      "id": "khajiit-male",
+      "version": "pose-r03",
+      "tool": "image_gen.imagegen",
+      "model": "not reported",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\portrait-pose-refs\\khajiit-male-identity-r02.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\references\\pose-personagens\\breton-female-busto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\breta-piloto-v01.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\retratos-pose-r03\\khajiit-female-pose-r03.png"
+      ],
+      "referenceRoles": [
+        "Image1: EDIT TARGET and racial/individual IDENTITY only; previous portrait whose pose must be corrected.",
+        "Image2: POSE and BUST COMPOSITION only, no human anatomy/color/garments transfer.",
+        "Image3: STYLE/approved project dark fantasy finish continuity only; no outfit or identity transfer.",
+        "Image4: same-race inspected provisional POSE only; not gender/identity/style approval."
+      ],
+      "prompt": "Use case: precise-object-edit. Asset: ONE corrected khajiit MALE portrait for Arena RPG Maker MV. Image1 is EDIT TARGET and IDENTITY: preserve his exact race, facial markings, colors, worn brown open-collar shirt and painterly finish. Image2 is the explicit POSE/composition reference (Breton female pilot v01), not identity. Image3 provides STYLE/material finish only, not sheet layout. Do not reproduce human skin, human muzzle, human hair, vest, other poses or other figures from2/3.\nImage4 is the newly inspected khajiit female pose study: use only its SAME anatomical head/chest yaw and natural neck connection as same-race pose reference. Do not transfer female face, copper crest or ivory blouse to male. Keep the male facial identity and brown shirt from Image1. Give the upper chest a CLEAR UNAMBIGUOUS rightward turn, matching head yaw; broad visible near shoulder LEFT, narrower receding far shoulder RIGHT. Both pectoral planes and sternum turn right, not an oppositely twisted neckline.\nMANDATORY FIXED BLOCK:\nRetrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.\nPOSE CONSTRUCTION: reconstruct the torso in the SAME approximately35-45 degree yaw from frontal toward image RIGHT as the reference. Near shoulder is on image LEFT and broader; far shoulder on image RIGHT recedes. Sternum, shirt opening and chest volume turn RIGHT together. Head sits over the natural base of neck, with muzzle pointing the same oblique RIGHT direction as chest. BOTH eyes should remain readable in a true THREE-QUARTER view, far eye foreshortened. Not full side profile. Gaze follows face toward image RIGHT, not back toward viewer/left. Do NOT simply flip the old image or attach a turned head to the existing opposing chest. Rebuild necessary neck/shoulder transitions naturally.\nIDENTITY: Keep warm tawny striped feline fur, cream muzzle/neck, clearly feline nose, pointed furry ears, whiskers, same male face. No human mask; preserve full natural muzzle/ears, neither flatten nor shorten anatomy to a human outline.\nCOMPOSITION/OUTPUT: one complete bust from upper chest, head/ears/crest entirely inside image, approximately square1024x1024 transparent PNG. Leave at least8% clear transparent margin above head and on both sides, with shoulders/bust fully inside. Target144px export eye line~52px and apparent crown-to-jaw~76px using uniform scaling only. Keep wide muzzles/ears inside safe frame; no compressed anatomy. No labels, borders, guide lines, floor, scenery, fake checkerboard, colored matte residue, extra body parts or jewelry. Soft cool light, sober painted dark fantasy matching approved project, no pixel art/anime/photographic redesign. Change only the portrait; exploration and combat are NOT requested.",
+      "resultFile": "art/masters/retratos-pose-r03/khajiit-male-pose-r03.png",
+      "visualStatus": "inspected enlarged; candidate pending owner approval"
+    }
+  ]
+}

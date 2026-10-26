@@ -1,0 +1,62 @@
+# M01-07 — criação de personagem
+
+Criação iniciada em feature/m01-criacao-personagem após merge7e7094c; fechamento R05 em feature/m01-fechamento-criacao. Aprovação estética com ressalvas e bônus P01–P08 autorizados provisoriamente, conforme FECHAMENTO_M01_07.md. Não é dungeon final, combate, progressão ou introdução de MQ01. M01-05 preservado. Orientação1 teto/2 parede/3 piso livre registrada para M01-14 sem antecipar mapa definitivo.
+
+## Escopo implementado
+
+Novo jogo → nome → oito raças → gênero → revisão/confirmar.16 combinações base disponíveis; a bretã não é obrigatória. Interface pt-BR, teclado, mouse e toque emulado. Nome Unicode1–20, NFC/espaços normalizados, sem comandos/control characters. Cancelamento/revisão não mudam a partida; só o aceite final inicia nova sessão. Em seguida aparece Map004, chegada provisória de validação que encerra esta versão, com menu/save/load; não representa a cela original ou início narrativo final.
+
+Título mantém Laboratório técnico e galerias. Partidas técnicas novas não têm raça/recursos concedidos por este sistema; não escrevem saves automaticamente. A criação não redefine opções após carregar.
+
+## Fontes e adaptações
+
+Manual.pdf p.7 da instalação original (material original), README1.07CD-ROM, relatórios R05 e PDFs locais UESP Races/Character Creation. Imagens de seleção originais embutidas no PDF Races foram extraídas apenas em tmp/character-references e examinadas antes das gerações. Páginas efetivamente anexadas:2 Argoniano(recorte sem mapa),3 Bretão,5 Elfo negro,6 Alto elfo,7 Khajiit,8 Nórdico,9 Redguard,10 Elfo da floresta. A wiki é complemento de interpretação/organização; não se alegou medição dos bônus no executável DOS. Não foram importadas profissões, restrições ou bônus por gênero.
+
+| Raça | Regra adaptada implementada |
+| --- | --- |
+| Argoniano | +10 pontos de Vigor inicial uma vez,110/110; não multiplica progressão futura |
+| Bretão | Dano positivo mágico recebido HP/MP/dreno×0,75; cura preservada, sem saving throw |
+| Elfo negro | Dano de arma×1,05 e acerto+2 p.p., sem bônus por nível |
+| Alto elfo | Imunidade ao estado3 Paralisia |
+| Khajiit | AGI+1 derivada; sem movimento/ações/esquiva extras |
+| Nórdico | Dano de frio(elemento3)×0,5; cura preservada, sem saving throw |
+| Redguard | Dano de arma corpo a corpo×1,08 e acerto+3 p.p., sem bônus por nível |
+| Elfo da floresta | Acerto+4 p.p. com qualquer arma válida, sem dano extra; opção preferida P08 aprovada |
+
+Dano/acerto são conversões documentadas do original, não números copiados de um sistema por turnos que Arena não tinha. R05 executa a proposta de26/10/2026 no commit1dd9a6c, preservada em decisoes/PROPOSTA_RACIAL_R04_APROVADA.md.100 Vigor e todos os números são balanceamento provisório; eficácia com custos/turnos depende das etapas de combate. A classe Aventureiro é suporte técnico único; todos mantêm permissões dos tipos de arma/armadura cadastrados. IDs de habilidades de arma/grupos estão em ArenaCharacterVisuals.json; modificadores de arma não afetam magias/itens/desarmado ou técnica incompatível. Não houve mudança de imagens nesta aprovação.
+
+## Assets e rastreabilidade
+
+Inventário antes:16 combinações necessárias, uma piloto, zero conjuntos finais. Agora:16 identidades-base,15 conjuntos novos e piloto reutilizada; continuam zero conjuntos de animação completa. INVENTARIO_PERSONAGENS_M01.json distingue essas contagens. Oito chamadas de IA: sete pares de gêneros e um Bretão masculino, sem regenerar a piloto feminina ou Ria/dungeon/rato aprovados. Prompts completos em arte/prompts-criacao-m01.json; ferramenta image_gen.imagegen, modelo não informado; fontes/anexos efetivos e hashes em exportacoes-criacao-m01.json.
+
+As imagens originais dão identidade; dungeon R02 aprovada dá acabamento/material dark fantasy; piloto existente dá continuidade de escala. Isso não converte toda a rodada v0.1 rejeitada em nova aprovação. Na v01, Khajiit tinha aparência humana com traço/pintura felina e Argonianos pele azul-cinza/crista. Em26/10/2026, o responsável solicitou anatomia de lagarto/felina com influência restrita de Skyrim: a revisão r02 substitui essa leitura anterior explicitamente, preservando a base Arena de roupas/cores/atmosfera. Bosmer reforça orelhas e estrutura élfica sem copiar Altmer/Dunmer. Detalhes anatômicos continuam interpretações, não dados comprovados no executável. Ver arte/REVISAO_PERSONAGENS_R02.md e DIRECAO_DE_ARTE1.3. A direção geral está aprovada; a revisão destes arquivos aguarda avaliação estética do responsável.
+
+Montagem técnica com Pillow em tools/build-character-assets.py: componentes alpha≥96 com dilatação1px, alpha/cores originais preservados, escala comum por combinação, pés emy62(mapa)/94(lateral). Mapa144×256, faces576×288(slot0 com144), lateral96×96, svActor864×576. Novas direções são poses estáticas com três cópias por direção. Folha SV repete pose em54 células: suporte de formato, **não caminhada ou ataque/dano/morte animados**. Apenas a piloto retém caminhada anterior. Nenhuma forma desenhada por código substitui os personagens. Fundo/legendas de UI são código. Contact sheet arte/personagens-m01-v01.png mostra arquivos na escala de uso.
+
+## Dados e carregamento
+
+Identidade no contrato de Arena_Persistence; nome/imagens/equipamento nativos, sem duplicação. Namespace arenaCreation v1 guarda confirmação e recibo, com defaults para saves antigos. Bônus são derivados e não acumulam. Recurso Vigor inicializado somente no primeiro aceite. Carregar reconstrói aparência pela chave estável raça/gênero/base; teste salva imagens nativas vazias e verifica reparo. Laboratórios antigos não recebem identidade ou Vigor. Falha durante confirmação restaura estado próprio e campos nativos.
+
+## Validação e roteiro
+
+Automação em Chrome desktop, contexto descartável sem saves pessoais: test-character-creation cobre teclado, nome, cancelamento, confirmação/revisão,16 combinações, bônus, aplicação única, save/load, campos ausentes e rollback; test-character-pointer cobre mouse e touch Android genérico emulado. Auditoria cobre97 registros de masters/exports, cinco logs de prompts,16 IDs e margens. Resultados/screenhots m01-07-* em doc/evidencias. Os testes anteriores de laboratório usam entrada explícita arenaLab, pois Novo Jogo agora abre criação; fixtures de composição antiga continuam usando o comportamento antigo.
+
+Manual: abrir localhost ou playtest, escolher Novo Jogo, digitar nome, Enter para sair do campo, setas/Enter ou clique para raça e gênero, Confirmar, revisar ou criar. Após mensagem de chegada, Esc→Salvar; voltar ao título→Continuar e conferir nome/aparência/Vigor. Cancelar antes de criar deve retornar ao título sem nova gravação. Conferir todas as combinações, fonte no mobile, contornos e escala na avaliação artística. Não há criação livre de rosto, aliados ou quest implementados por associação.
+
+Editor: nomes/status Community_Basic OFF, MV_CharacterRules ON e Arena_CharacterCreation ON lidos em diálogos do gerenciador por acessibilidade; projeto salvo, comparação semântica preservou os8 registros, fechado/reaberto. Somente versionId e scroll de edição mudaram no banco. Catálogo canônico UTF-8 sem BOM preservado. Isso é validação de autoria, **não teste visual de playtest NW.js**. Galaxy A56 real, teclado virtual/IME físico, fullscreen e desempenho não testados. Roteiro físico permanece M01-19. Sem release ou promoção desta feature em develop/main.
+
+Diagnóstico de infraestrutura: houve timeouts de inicialização e uma falha de carregar Tilesets.json no servidor compartilhado. Causa não confirmada. Suite final passou em servidor isolado8766, com requestfailed monitorado, sem alteração de motor, scripts de jogo ou retries para mascarar erros. O servidor existente8765 foi preservado.
+
+## Revisão de assets em26/10/2026
+
+Criação-base permanece implementada; revisão visual r02 pendente do responsável. Todas as16 combinações receberam enquadramento técnico por categoria em arquivos novos, sem sobrescrever v01: retratos para direita com olhos alinhados por estimativa manual; exploração com figura nominal56px/pés y62; lateral88px/pés y94. Anatomia alterada por IA somente Argonianos/Khajiit/Bosmer e orientação dos retratos Redguard. Configuração troca apenas arquivos, mantendo chaves e regras; carregar saves de imagens v01 reconstrói r02. Inventário atual e inventário v01 separados em arte/.
+
+Revisão seguinte pose-r03: diretriz obrigatória de peito/ombros/pescoço/cabeça/olhar coerentes, com referência explícita e bloco fixo de prompt. Todos os16 foram inspecionados; somente Khajiit e Argonianos masculino/feminino receberam novo retrato. Quatro campos de face mudaram; sprites corporais, regras e chaves permanecem intactos. Arte/REVISAO_POSE_RETRATOS_R03.md registra pranchas, fontes anexadas, prompts, critérios e testes atuais; aprovação estética continua pendente. Versões r02 permanecem disponíveis e não são promovidas como pose correta por terem passado testes de formato.
+
+Chrome desktop:16 prévias e16 aparências no mapa na mesma resolução;256 amostras de direção/padrão nativo;16 save/load de imagens anteriores; criação234 verificações, ponteiro mouse/toque emulado e persistência27 passaram. Auditoria192 células direcionais/864 SV,179 registros de mestres/exports e sete logs. Pranchas, manifesto, fontes efetivamente anexadas e evidências em arte/REVISAO_PERSONAGENS_R02.md e evidencias/personagens-r02/. Novo teste carrega Map004 explicitamente antes de configurar o mapa; a primeira tentativa sem essa preparação falhou no cenário de teste, corrigido sem alterar produto/motor. Arquivos de evidência anteriores preservados. Não houve teste novo de editor/NW.js ou Galaxy A56.15 conjuntos permanecem estáticos; piloto conserva caminhada; combate completo continua fora desta rodada.
+
+## Auditoria e identidade R04
+
+Base funcional preservada, mas revisão racial aberta. `AUDITORIA_BONUS_RACIAIS_M01_07.md` contém a tabela completa das oito raças: manual original, implementação efetiva, problemas, propostas e descrições curtas. P01–P08 **não aplicadas**; ArenaCatalog/textos e todos os valores originais desta adaptação estão intactos. Correção técnica já prevista pelo contrato: `weaponSkillIds` passa a1/5/6/7/8, excluindo3/4 desarmados, inclusive quando há arma equipada. Teste reproduz antes/corrige depois em oito raças×sete níveis, sem liberar as técnicas indisponíveis ou implementar combate.
+
+Dois pilotos masculinos Argoniano/Khajiit em `arte/IDENTIDADE_ARGONIANOS_KHAJIIT_R04.md`: referências reais de presets Skyrim inspecionadas, diagnóstico e antes/depois registrados. Permanecem **fora do runtime**, pendentes de avaliação estética, correção do pé Khajiit na borda e ciclos/variantes completos. Alpha real verificado; diagnóstico inicial de halo foi corrigido após composição opaca. Nenhuma das16 referências visuais ativas mudou; femininos e outras raças preservados. Criação234 e matriz visual/save/load16 passaram em Chrome; evidências desta rodada em evidencias/auditoria-racial-r04/. Não declarar produção completa, balanceamento aprovado ou testes novos no editor/A56.

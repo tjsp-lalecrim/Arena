@@ -3,7 +3,8 @@
  * @author Codex
  * @help MV 1.6.1. Sem parâmetros, comandos, notas, assets ou dependências.
  * Carregar antes dos consumidores. API: MVStateStore.register(name, version,
- * defaults, migrate), read(name), replace(name, data), once(name, key, mutate).
+ * defaults, migrate), read(name), replace(name, data), once(name, key, mutate),
+ * hasOperation(name, key).
  * mutate recebe somente um rascunho JSON; não executar efeitos externos.
  * Saves sem campos recebem defaults. Versão futura/estrutura inválida gera
  * erro explícito, sem apagar dados. Consulte doc/plugins/MV_StateStore.md.
@@ -109,6 +110,10 @@ var MVStateStore = (function() {
             var target = entry(name);
             var next = fill(clone(data), definitions[name].defaults);
             target.data = next;
+        },
+        hasOperation: function(name, operationId) {
+            key(operationId);
+            return entry(name).operations[operationId] === true;
         },
         once: function(name, operationId, mutate) {
             key(operationId);

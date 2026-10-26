@@ -10,6 +10,8 @@
 
 O combate será por turnos, com apresentação Side View e inicialmente um único personagem controlável. Adotar as regras nativas compatíveis do MV para ordem de turnos, ações e empates; documentar somente as adaptações necessárias aos requisitos específicos. Aliados serão avaliados futuramente e não fazem parte da implementação inicial. A barra de atalhos deve respeitar o fluxo de turnos aprovado.
 
+P01–P08 da auditoria R04 foram autorizadas e aplicadas provisoriamente em R05, conforme decisoes/M01_07_APROVACAO_R05.json. Distinguir ATQ/AGI/HIT de modificadores de dano/acerto da ação e ponto percentual de percentual. Sem bônus de arma em técnicas desarmadas3/4, magias, itens ou cura. Contratos técnicos testados; eficácia em combate integrado ainda não comprovada. BALANCEAMENTO_RACIAL_CENARIOS_M01.md exige comparar custos/turnos, arredondamento/crítico, teto de acerto/evasão, fontes reais de frio/magia/paralisia, iniciativa e vantagens excessivas em M01-09/10/20. Não importar bônus Skyrim ou criar sistemas extensos só para ativar raça. Nenhum combate/custo/progressão foi antecipado neste fechamento.
+
 ## Encontros na exploração
 
 A exploração será em 2D com vista superior e movimentação por grade. O contato com um inimigo visível no mapa inicia o combate Side View por turnos. Não adotar encontros aleatórios invisíveis como padrão. A derrota em combate leva a game over.

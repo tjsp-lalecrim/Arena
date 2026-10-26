@@ -29,3 +29,11 @@ As escolhas de criação estão confirmadas; o catálogo visual e a regra numér
 ## Inventário prévio M01-07
 
 `doc/arte/INVENTARIO_PERSONAGENS_M01.json` registra16 combinações necessárias das oito raças do catálogo e duas opções históricas de gênero. Uma bretã piloto tem exploração/retrato/pose lateral; isso não valida as outras15 nem uma folha completa de combate. Nenhuma UI ou aplicação racial adicionada nesta rodada; ler `arte/FIDELIDADE_E_VALIDACAO_R05.md`. A prioridade do original e as adaptações numéricas continuam separadas; sem bônus por gênero, profissões ou restrições de equipamentos.
+
+## Implementação atual M01-07
+
+Criação-base implementada em feature/m01-criacao-personagem: nome,8 raças,2 gêneros,16 visuais-base próprios, confirmação/revisão/cancelamento, bônus raciais derivados e save/load. Especificação/valores/fontes/roteiro em M01_07_CRIACAO.md. O inventário anterior é histórico: agora todas as combinações têm base, porém movimentos novos são estáticos e não representam biblioteca animada completa. Sem classes profissionais ou bônus por gênero. Criação termina em chegada provisória Map004, sem narrativa/dungeon final. Laboratório e galerias mantidos no título. Sem teste físico A56.
+
+## Aprovação e fechamento R05
+
+O responsável autorizou P01–P08 da auditoria R04 e aprovou as artes atuais para prosseguir com ressalvas. Valores/textos sincronizados em ArenaCatalog e plugins0.2.0; decisão exata em decisoes/M01_07_APROVACAO_R05.json. Bônus derivados não crescem por nível nem acumulam ao carregar; só o Vigor inicial+10 é concedido uma vez. Sem profissões, restrições ou bônus por gênero. Recortes arredondados/heterogêneos e diferenças de orientação continuam existentes e adiados, com arquivos/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Pilotos R04B continuam estudos fora do catálogo ativo. Ver FECHAMENTO_M01_07.md para critérios/testes e BALANCEAMENTO_RACIAL_CENARIOS_M01.md para eficácia prática ainda pendente. Não iniciar M01-08 automaticamente por este fechamento.

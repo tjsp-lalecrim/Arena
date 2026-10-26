@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "base de dados; não carregado pelo motor ainda",
+  "status": "P01–P08 autorizadas pelo responsável, balanceamento provisório; eficácia prática depende de M01-08/09/10/20.",
   "races": [
     {
       "id": "argonian",
@@ -9,15 +9,17 @@
       "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
       "page": 2,
       "bonus": {
-        "kind": "vigorMultiplier",
-        "value": 1.1,
-        "adaptation": "Resistência ao nadar convertida em máximo de Vigor +10%; sem sistema de natação."
+        "kind": "initialResourceAdd",
+        "resourceId": "vigor",
+        "value": 10,
+        "adaptation": "P01: +10 pontos de Vigor inicial uma vez; sem multiplicador de progressão."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "argonian.male.base",
+        "female": "argonian.female.base"
+      },
+      "bonusLabel": "Vigor máximo inicial +10.",
+      "application": "once-at-confirmation"
     },
     {
       "id": "breton",
@@ -27,14 +29,15 @@
       "page": 4,
       "bonus": {
         "kind": "magicDamageRate",
-        "value": 0.5,
-        "adaptation": "Metade do dano mágico; não importar saving throw inexistente no MV."
+        "value": 0.75,
+        "adaptation": "P02: dano mágico positivo HP/MP/dreno x0,75 após cálculo nativo; cura/status inalterados."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "breton.male.base",
+        "female": "breton.female.base"
+      },
+      "bonusLabel": "Recebe 25% menos dano mágico.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "dark_elf",
@@ -43,16 +46,18 @@
       "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
       "page": 4,
       "bonus": {
-        "kind": "weaponLevelBonus",
-        "divisor": 4,
+        "kind": "weaponActionBonus",
         "weapon": "all",
-        "adaptation": "floor(nível/4) dano e pontos percentuais de acerto em armas, sem profissão."
+        "damageRate": 1.05,
+        "hit": 0.02,
+        "adaptation": "P03: multiplicador de fórmula positiva e pontos percentuais em ações físicas de arma válidas, sem bônus por nível."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "dark_elf.male.base",
+        "female": "dark_elf.female.base"
+      },
+      "bonusLabel": "Armas: dano +5% e acerto +2 p.p.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "high_elf",
@@ -63,13 +68,14 @@
       "bonus": {
         "kind": "stateImmunity",
         "stateId": 3,
-        "adaptation": "Imunidade nativa a Paralisia."
+        "adaptation": "P04: manter imunidade somente ao estado3."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "high_elf.male.base",
+        "female": "high_elf.female.base"
+      },
+      "bonusLabel": "Imune à paralisia.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "khajiit",
@@ -78,15 +84,17 @@
       "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
       "page": 7,
       "bonus": {
-        "kind": "agilityMultiplier",
-        "value": 1.05,
-        "adaptation": "Escalada ágil convertida em AGI +5%; escalada não implementada."
+        "kind": "parameterAdd",
+        "paramId": 6,
+        "value": 1,
+        "adaptation": "P05: AGI +1 derivada no parâmetro nativo; não aumenta acerto/esquiva/movimento ou ações."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "khajiit.male.base",
+        "female": "khajiit.female.base"
+      },
+      "bonusLabel": "Agilidade +1 na ordem dos turnos.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "nord",
@@ -95,16 +103,17 @@
       "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
       "page": 8,
       "bonus": {
-        "kind": "elementRate",
+        "kind": "damageElementRate",
         "elementId": 3,
         "value": 0.5,
-        "adaptation": "Metade do dano de frio; sem saving throw adicional."
+        "adaptation": "P06: multiplicador do elemento3 somente em dano positivo; não reduz cura."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "nord.male.base",
+        "female": "nord.female.base"
+      },
+      "bonusLabel": "Recebe 50% menos dano de frio.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "redguard",
@@ -113,16 +122,18 @@
       "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
       "page": 9,
       "bonus": {
-        "kind": "weaponLevelBonus",
-        "divisor": 3,
+        "kind": "weaponActionBonus",
         "weapon": "melee",
-        "adaptation": "floor(nível/3) dano e pontos percentuais de acerto corpo a corpo."
+        "damageRate": 1.08,
+        "hit": 0.03,
+        "adaptation": "P07: multiplicador de fórmula positiva e pontos percentuais em ações físicas de arma melee válidas, sem bônus por nível."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "redguard.male.base",
+        "female": "redguard.female.base"
+      },
+      "bonusLabel": "Armas corpo a corpo: dano +8%; acerto +3 p.p.",
+      "application": "derived-after-confirmation"
     },
     {
       "id": "wood_elf",
@@ -131,16 +142,18 @@
       "source": "Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
       "page": 10,
       "bonus": {
-        "kind": "weaponLevelBonus",
-        "divisor": 3,
-        "weapon": "bow",
-        "adaptation": "floor(nível/3) dano e pontos percentuais de acerto com arcos; nenhum arco cadastrado nesta base."
+        "kind": "weaponActionBonus",
+        "weapon": "all",
+        "damageRate": 1,
+        "hit": 0.04,
+        "adaptation": "P08: opção preferida aprovada, precisão com qualquer arma válida; sem dano extra ou dependência de arco."
       },
-      "applied": false,
       "visuals": {
-        "male": null,
-        "female": null
-      }
+        "male": "wood_elf.male.base",
+        "female": "wood_elf.female.base"
+      },
+      "bonusLabel": "Armas: acerto +4 p.p.",
+      "application": "derived-after-confirmation"
     }
   ],
   "genders": [
@@ -153,5 +166,6 @@
       "name": "Feminino"
     }
   ],
-  "notes": "Valores adaptados provisórios. Identidades e bônus aplicados em M01-07/08. Aparência em M01-06/12."
+  "notes": "Identidade e gênero preservados. Sem novas classes/restrições. Aprovação e contrato em doc/decisoes/M01_07_APROVACAO_R05.json.",
+  "balanceVersion": "M01-07/R05/P01-P08"
 }

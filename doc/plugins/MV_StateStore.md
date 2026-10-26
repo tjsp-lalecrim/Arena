@@ -32,3 +32,7 @@ Desativar consumidores/core deixa dados inertes no Game_System carregado; novos 
 ## Verificação
 
 `node tools/test-state-store.cjs` testa namespace sem Arena, repetição, abortar/falhar e tentar novamente, isolamento de cópia, rejeição de Promise/Infinity/Date/tipo inválido, migração de versão 1 para 2, defaults e versão futura sem trocar objetos atuais. Integração MV/Chrome e saves nativos em tools/test-persistence.cjs. Versão verificada do motor: 1.6.1 em Chrome desktop; NW.js, gerenciador/salvamento no editor após inclusão deste plugin e outras versões não verificados. Histórico 0.1.0: contrato inicial M01-05.
+
+## Consulta de recibo adicionada para M01-07
+
+`hasOperation(name,operationId)` retorna boolean, validando ID, sem mutação. Permite ao consumidor reconhecer confirmação já aplicada mesmo se um campo opcional faltar em save parcial. Não muda schemaVersion, defaults, operação once ou seu contrato. Testado antes/depois do recibo e com carregamento na criação; compatibilidade da persistência anterior revalidada. Não somar atributos ou conceder itens dentro da consulta.

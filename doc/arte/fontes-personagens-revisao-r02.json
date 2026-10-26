@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-26",
+  "tool": "image_gen.imagegen",
+  "model": "not reported",
+  "seed": "not reported",
+  "requests": [
+    {
+      "request": "argonian",
+      "version": "r02",
+      "output": "art/masters/criacao-r02/argonian-r02.png",
+      "outputSha256": "04ef729de4aafa7ae9e4ea4230b4a8ec64a3db99dde990397040362ca737bf5b",
+      "referencesActuallyAttached": [
+        {
+          "file": "art/masters/criacao/argonian-v01.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "e23127565bec42510325950a51b1d17188bbda824e5ab25946f8da8a47319d69",
+          "sourceUrl": null,
+          "distribution": "project generated art"
+        },
+        {
+          "file": "tmp/character-revision-refs/skyrim-argonian-female.jpg",
+          "size": [
+            800,
+            450
+          ],
+          "sha256": "832c6ce2a8f45fe4199b2e34285454610d2d63592d2b7ca265615af5f5264df8",
+          "sourceUrl": "https://i0.wp.com/geeksofdoom.com/GoD/img/2011/08/2011-08-20-argonian_female.jpg?fit=800%2C450&ssl=1",
+          "distribution": "ignored consultation only"
+        }
+      ]
+    },
+    {
+      "request": "khajiit",
+      "version": "r02",
+      "output": "art/masters/criacao-r02/khajiit-r02.png",
+      "outputSha256": "9103f3a1d2ef8fc62041b652793c275578fc9a41050efbb22ec6ab4eb7f29f48",
+      "referencesActuallyAttached": [
+        {
+          "file": "art/masters/criacao/khajiit-v01.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "8b72203908733e1bef613bcb46e8b4c586832911f8e10d12eeadd5f0b96a78b1",
+          "sourceUrl": null,
+          "distribution": "project generated art"
+        },
+        {
+          "file": "tmp/character-revision-refs/skyrim-khajiit.jpg",
+          "size": [
+            1440,
+            810
+          ],
+          "sha256": "4428de41344adf6d40e13a6bda82f0f7e01962c4b200635fd5969f5103faab1a",
+          "sourceUrl": "https://images.cgames.de/images/gsgp/287/the-elder-scrolls-5-skyrim-rassen_2259922.jpg",
+          "distribution": "ignored consultation only"
+        }
+      ]
+    },
+    {
+      "request": "wood_elf",
+      "version": "r02",
+      "output": "art/masters/criacao-r02/wood_elf-r02.png",
+      "outputSha256": "39deec01e0fc0df7d0b9be09cd870ad3d8cc6e6b4f1ead5c0fd320bd2bf8ab74",
+      "referencesActuallyAttached": [
+        {
+          "file": "art/masters/criacao/wood_elf-v01.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "685130f9058ddd0cd0908a4979cba3d23ceb59ac6504829521997b83452fbf1a",
+          "sourceUrl": null,
+          "distribution": "project generated art"
+        },
+        {
+          "file": "tmp/character-revision-refs/high_elf-portrait-reference.png",
+          "size": [
+            1536,
+            768
+          ],
+          "sha256": "df52d8acd305799dbdde0634d727309cfbcd088db733f292eca1bcea859f4e7d",
+          "sourceUrl": null,
+          "distribution": "ignored consultation only"
+        },
+        {
+          "file": "tmp/character-revision-refs/dark_elf-portrait-reference.png",
+          "size": [
+            1536,
+            768
+          ],
+          "sha256": "a69a8e5952177223005144d0a8ebd0ebeb8681c37015b06d0402d161747ef822",
+          "sourceUrl": null,
+          "distribution": "ignored consultation only"
+        }
+      ]
+    },
+    {
+      "request": "redguard-portraits",
+      "version": "r02",
+      "output": "art/masters/criacao-r02/redguard-portraits-r02.png",
+      "outputSha256": "56c63557ac387ebb1158e773094047cbaa4beae6bfdbdc7e653a161d8f2b92ad",
+      "referencesActuallyAttached": [
+        {
+          "file": "tmp/character-revision-refs/redguard-portrait-reference.png",
+          "size": [
+            1536,
+            768
+          ],
+          "sha256": "56ac308ea3d526091b640cb2afb1366389d4ca85521df34c3940a8ba570f6204",
+          "sourceUrl": null,
+          "distribution": "ignored consultation only"
+        }
+      ]
+    },
+    {
+      "request": "argonian",
+      "version": "r03",
+      "output": "art/masters/criacao-r03/argonian-r03.png",
+      "outputSha256": "fdf4c2a28b8a5531ef1cd5c2f6583f93c9c82cfad8e6fb7072b0062ab6bba327",
+      "referencesActuallyAttached": [
+        {
+          "file": "art/masters/criacao-r02/argonian-r02.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "04ef729de4aafa7ae9e4ea4230b4a8ec64a3db99dde990397040362ca737bf5b",
+          "sourceUrl": null,
+          "distribution": "project generated art"
+        }
+      ]
+    },
+    {
+      "request": "khajiit",
+      "version": "r03",
+      "output": "art/masters/criacao-r03/khajiit-r03.png",
+      "outputSha256": "8c9ff5bc929c9a0c96a197a0efdb6754494e472556ba33bf081c3ac2677444ea",
+      "referencesActuallyAttached": [
+        {
+          "file": "art/masters/criacao-r02/khajiit-r02.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "9103f3a1d2ef8fc62041b652793c275578fc9a41050efbb22ec6ab4eb7f29f48",
+          "sourceUrl": null,
+          "distribution": "project generated art"
+        }
+      ]
+    },
+    {
+      "request": "wood_elf",
+      "version": "r03",
+      "output": "art/masters/criacao-r03/wood_elf-r03.png",
+      "outputSha256": "6a633ab0bf2d663c3487c80a148df3f4d241151200aa7f28a69e1d0e1c21167e",
+      "referencesActuallyAttached": [
+        {
+          "file": "art/masters/criacao-r02/wood_elf-r02.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "39deec01e0fc0df7d0b9be09cd870ad3d8cc6e6b4f1ead5c0fd320bd2bf8ab74",
+          "sourceUrl": null,
+          "distribution": "project generated art"
+        }
+      ]
+    }
+  ],
+  "primary": "Arena1994: existing project masters derived from local UESP race PDF/screenshots; preserve clothing/color/style.",
+  "adaptation": "Skyrim lizard/feline head anatomy explicitly requested by owner; Bosmer uses existing Altmer/Dunmer project structural examples. No new gameplay rules.",
+  "limits": "Screenshot image URLs actually viewed. Full linked articles/UESP Skyrim inaccessible. No Skyrim installation examined; original Arena installation preserved, no new decoding this round."
+}

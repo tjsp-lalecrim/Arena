@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-26",
+  "providedBy": "Responsável, mensagem explícita autorizando aplicar a proposta da rodada anterior e prosseguir com arte atual com ressalvas",
+  "proposal": {
+    "file": "doc/AUDITORIA_BONUS_RACIAIS_M01_07.md",
+    "version": "R04,26/10/2026, tabela P01–P08",
+    "commit": "1dd9a6c",
+    "gitBlobSha256": "e1bc5dbb459bdefe18b8595277661d04c3237eaa549ad956524f23a7c95b6795",
+    "immutableCopy": "doc/decisoes/PROPOSTA_RACIAL_R04_APROVADA.md",
+    "p08Choice": "proposta preferida, +4 pontos percentuais de acerto em qualquer arma válida; não a alternativa de arco inativo"
+  },
+  "balanceStatus": "approved provisional, not final combat balance",
+  "races": [
+    {
+      "id": "argonian",
+      "bonus": {
+        "kind": "initialResourceAdd",
+        "resourceId": "vigor",
+        "value": 10,
+        "adaptation": "P01: +10 pontos de Vigor inicial uma vez; sem multiplicador de progressão."
+      },
+      "bonusLabel": "Vigor máximo inicial +10.",
+      "application": "once-at-confirmation"
+    },
+    {
+      "id": "breton",
+      "bonus": {
+        "kind": "magicDamageRate",
+        "value": 0.75,
+        "adaptation": "P02: dano mágico positivo HP/MP/dreno x0,75 após cálculo nativo; cura/status inalterados."
+      },
+      "bonusLabel": "Recebe 25% menos dano mágico.",
+      "application": "derived-after-confirmation"
+    },
+    {
+      "id": "dark_elf",
+      "bonus": {
+        "kind": "weaponActionBonus",
+        "weapon": "all",
+        "damageRate": 1.05,
+        "hit": 0.02,
+        "adaptation": "P03: multiplicador de fórmula positiva e pontos percentuais em ações físicas de arma válidas, sem bônus por nível."
+      },
+      "bonusLabel": "Armas: dano +5% e acerto +2 p.p.",
+      "application": "derived-after-confirmation"
+    },
+    {
+      "id": "high_elf",
+      "bonus": {
+        "kind": "stateImmunity",
+        "stateId": 3,
+        "adaptation": "P04: manter imunidade somente ao estado3."
+      },
+      "bonusLabel": "Imune à paralisia.",
+      "application": "derived-after-confirmation"
+    },
+    {
+      "id": "khajiit",
+      "bonus": {
+        "kind": "parameterAdd",
+        "paramId": 6,
+        "value": 1,
+        "adaptation": "P05: AGI +1 derivada no parâmetro nativo; não aumenta acerto/esquiva/movimento ou ações."
+      },
+      "bonusLabel": "Agilidade +1 na ordem dos turnos.",
+      "application": "derived-after-confirmation"
+    },
+    {
+      "id": "nord",
+      "bonus": {
+        "kind": "damageElementRate",
+        "elementId": 3,
+        "value": 0.5,
+        "adaptation": "P06: multiplicador do elemento3 somente em dano positivo; não reduz cura."
+      },
+      "bonusLabel": "Recebe 50% menos dano de frio.",
+      "application": "derived-after-confirmation"
+    },
+    {
+      "id": "redguard",
+      "bonus": {
+        "kind": "weaponActionBonus",
+        "weapon": "melee",
+        "damageRate": 1.08,
+        "hit": 0.03,
+        "adaptation": "P07: multiplicador de fórmula positiva e pontos percentuais em ações físicas de arma melee válidas, sem bônus por nível."
+      },
+      "bonusLabel": "Armas corpo a corpo: dano +8%; acerto +3 p.p.",
+      "application": "derived-after-confirmation"
+    },
+    {
+      "id": "wood_elf",
+      "bonus": {
+        "kind": "weaponActionBonus",
+        "weapon": "all",
+        "damageRate": 1,
+        "hit": 0.04,
+        "adaptation": "P08: opção preferida aprovada, precisão com qualquer arma válida; sem dano extra ou dependência de arco."
+      },
+      "bonusLabel": "Armas: acerto +4 p.p.",
+      "application": "derived-after-confirmation"
+    }
+  ],
+  "visualApproval": "approved to proceed WITH existing rounded/uneven portrait cutouts and orientation differences; no regeneration/correction this round",
+  "artManifest": "doc/arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json",
+  "saveContract": "No saved schema change; bonuses derived from current catalog except +10 initial vigor granted once. Preserve existing resource values/maxima on load; no regrant on level change.",
+  "scope": "close M01-07, feature publication and functional merge/push develop authorized; no main/release/new feature"
+}

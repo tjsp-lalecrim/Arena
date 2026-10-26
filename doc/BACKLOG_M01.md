@@ -33,6 +33,8 @@ P0 indica base necessária para começar e integrar; P1 indica requisito de conc
 | M01-19 | P1 | Validar e corrigir experiência em navegador/mobile | 07–18 | Fluxo completo em Chrome desktop e Galaxy A56, paisagem/tela inteira quando suportada, toque utilizável e texto legível; ambiente e limitações registrados |
 | M01-20 | P1 | Balancear, testar regressões e preparar entrega M01 | 19 | Critérios de DEMO_INICIAL.md atendidos, ausência de bloqueios críticos, documentação consolidada e pacote de teste identificado; preparar release sob Git Flow conforme autorização |
 
+Os bônus P01–P08 foram autorizados como balanceamento provisório no fechamento R05. M01-08 deve preservar o+10 inicial sem regrant; M01-09/10 e M01-20 devem executar BALANCEAMENTO_RACIAL_CENARIOS_M01.md: custos/turnos, armas livres, crítico/arredondamento, teto de acerto/evasão, utilidade de AGI, fontes reais de frio/magia/paralisia e vantagens excessivas. Testes de fórmula não demonstram equilíbrio integrado. Esses itens continuam futuros, sem implementação automática.
+
 ## Detalhamento de escopo por grupo
 
 ### Base e dados — M01-01 a M01-05
@@ -99,17 +101,25 @@ O backlog não cria issues, branches, commits ou publicações automaticamente. 
 
 Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundárias, cidades posteriores, toda a campanha, catálogo completo de magias e ferramentas extensas de autoria não são pré-requisitos desta demo. Reutilizar templates na autoria da dungeon é permitido, sem implicar gerador durante a partida.
 
-## Estado verificado em 25/10/2026
+## Estado atual — fechamento M01-07 R05,26/10/2026
 
 | Item | Estado | Evidência |
 | --- | --- | --- |
 | M01-01 | Concluído | Baseline 29fc22b, integração em develop; revisão do índice e fontes ignoradas |
 | M01-02 | Concluído | MQ01_ESPECIFICACAO.md; textos, eventos e mapas examinados; commit 29f44c3 |
-| M01-03 | Em validação no editor | Laboratório e Chrome validados; formato de plugins.js corrigido. Abertura manual do responsável; R05 abriu gerenciador, salvou/reabriu e auditou contratos. Conferência visual detalhada ainda pendente; VALIDACAO_M01.md |
+| M01-03 | Concluído (base e autoria) | Leitura de nomes/status em detalhes do gerenciador, salvar/reabrir e comparação nativa em evidencias/m01-07-editor.json; localhost regressivo. Inspeção visual de playtest não declarada |
 | M01-04 | Concluído (banco mínimo) | DADOS_M01.md, ArenaCatalog.json, validate-data e integração nativa em Chrome |
 | M01-05 | Concluído | Contratos/API v1, save/load nativo, save gerado pela composição anterior, campos ausentes, recibos e isolamento; VALIDACAO_M01.md e PERSISTENCIA_M01.md |
 | M01-06 | Concluído (amostra desktop) | Matriz de critérios e limites em arte/ENCERRAMENTO_AMOSTRA_M01_06.md; direção aprovada e formatos no motor. Aparelho/combate completo/biblioteca final não declarados |
-| M01-07 | Não iniciado; inventário prévio | 16 combinações inventariadas, uma piloto provisória e zero conjuntos completos; arte/FIDELIDADE_E_VALIDACAO_R05.md. Depende de M01-06 |
-| M01-08 a M01-20 | A fazer | Amostra não comprova aplicação racial, Vigor em combate ou campanha |
+| M01-07 | Concluído (criação-base desktop, com ressalvas aceitas) | Aprovação estética com defeitos adiados, P01–P08 provisórios implementados,981 verificações novas,234 de criação,16 roundtrips e27 de persistência; FECHAMENTO_M01_07.md. Equilíbrio de combate e aparelho continuam futuros |
+| M01-08 a M01-20 | A fazer | Aplicação racial isolada validada em M01-07; Vigor em combate, eficácia prática dos bônus e campanha continuam futuros |
 
-M01-05 integrado em develop. M01-06 foi reaberto após rejeição da v0.1. A direção R02/R03 recebeu aprovação explícita; a v0.1 permanece histórica e rejeitada. A integração técnica continua em feature/m01-amostra-visual, sem merge automático nem produção de biblioteca em lote. A conferência de autoria no editor continua explícita; a arte não autoriza produção em lote nem comprova criação de personagem/percurso até o Shift Gate. Próximas features seguem as dependências, a partir de M01-07/M01-08.
+M01-05 e a amostra M01-06 já integrados em develop; merge7e7094c preserva commits e evidências. O responsável autorizou integrar a cadeia de criação/revisões após validação funcional R05, preservando commits e sem promover main/release. M01-06 encerra exemplos, não biblioteca inteira. M01-07 entrega16 combinações-base com ressalvas visuais aceitas e bônus provisórios, sem movimentos completos/armaduras variantes. Próximo elegível: **M01-08**, recursos/evolução HP/MP/Vigor, conforme dependências04/05; não iniciado neste fechamento.
+
+R05 é a atualização vigente. Os registros R02/R03/R04 abaixo são históricos: aprovações/propostas pendentes nesses relatos não revogam a decisão posterior. Fonte exata em decisoes/M01_07_APROVACAO_R05.json; arquivos visuais/hash e pendências em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json e arte/PENDENCIAS_VISUAIS_M01_07.md.
+
+Atualização26/10/2026: revisão exclusivamente dos assets de M01-07 em `feature/m01-revisao-assets-personagens`, baseada na criação ainda não integrada.16 combinações inspecionadas/padronizadas, anatomia Argoniana/Khajiit/Bosmer e retratos Redguard corrigidos; testes desktop e save/load r02 registrados em arte/REVISAO_PERSONAGENS_R02.md. **Revisão estética pendente do responsável**; a entrega funcional anterior não equivale à aprovação dos novos assets. M01-06 preservado; M01-08 e seguintes não iniciados. Animações completas, editor/NW.js desta revisão e aparelho continuam separados das evidências executadas.
+
+Revisão pose-r03,26/10/2026: diretiva obrigatória em DIRECAO_DE_ARTE1.4/arte/PROCEDIMENTO_RETRATOS.md;16 retratos inspecionados e somente quatro corrigidos por IA (Khajiit/Argonianos, ambos os gêneros). Integração limita-se a quatro campos de face; demais assets/regras preservados. Evidências e pranchas em arte/REVISAO_POSE_RETRATOS_R03.md e evidencias/retratos-pose-r03/. **Avaliação estética continua pendente**; não concluir outra etapa ou promover candidatos a referência aprovada. Feature/m01-diretiva-pose-retratos para revisão, sem merge automático.
+
+R04 em feature/m01-identidade-e-auditoria-racial: dois pilotos masculinos Argoniano/Khajiit, com antes/depois e estudos144/48×64/96px; alpha real verificado, mas pé do combatente Khajiit alcança borda da fonte. **Sem integração ou aprovação estética**, sem ciclos/variantes completos. Todas as16 referências visuais ativas preservadas. Auditoria completa das oito raças e propostas P01–P08 não aplicadas em AUDITORIA_BONUS_RACIAIS_M01_07.md. Correção técnica separada: retirar3/4 desarmados dos bônus de arma, com reprodução antes/depois. Criação234,16 roundtrips/previews e matriz racial8×7 níveis verificadas em Chrome isolado; editor/aparelho desta rodada pendentes. M01-08 e seguintes não iniciados; sem merge/release.

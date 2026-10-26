@@ -1,0 +1,258 @@
+{
+  "baselineCommit": "1399af8",
+  "status": "review-only pilots; NO runtime integration; alpha verified; irregular source cells and clipped Khajiit combat boot",
+  "masters": [
+    {
+      "file": "art/masters/identidade-r04/argonian-male-piloto-r04a.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "628fa223c77ac6024314cec52cf8ea8c33e4a7c49b4b704a96522ed01ded2033"
+    },
+    {
+      "file": "art/masters/identidade-r04/argonian-male-piloto-r04b.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "60c5e77d0b20dd1f9e6d1aaf2352290f05ed2123db562221827c4c7e23f3dd52"
+    },
+    {
+      "file": "art/masters/identidade-r04/khajiit-male-piloto-r04a.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "368a2e21ca1b904ad9ed803a606cbc10165934e1ba58f939f213640da81f13f9"
+    },
+    {
+      "file": "art/masters/identidade-r04/khajiit-male-piloto-r04b.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "3db172b13ddf1c647e1d40340a83d93bba8d56edc0ea804412df79124da269a4"
+    }
+  ],
+  "exports": [
+    {
+      "file": "art/candidates/identidade-r04/argonian-male-portrait-preview144.png",
+      "size": [
+        144,
+        144
+      ],
+      "sha256": "eb58707286879c21ea3269cf3ce588533e9a0f8d3311cadc0da45aafa1717e16"
+    },
+    {
+      "file": "art/candidates/identidade-r04/argonian-male-map-front-study48x64.png",
+      "size": [
+        48,
+        64
+      ],
+      "sha256": "c40b2036529dcb9ccd6643fe9f606d8e2dc54f4f4b2c88ddeceb978f0ad731ed"
+    },
+    {
+      "file": "art/candidates/identidade-r04/argonian-male-side-study96.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "69b4ff64695de3af0820fc3a2a7f23145f16bcec49bdb53db8c42b73af44c500"
+    },
+    {
+      "file": "art/candidates/identidade-r04/khajiit-male-portrait-preview144.png",
+      "size": [
+        144,
+        144
+      ],
+      "sha256": "d18b2a852bcb064d6847f93ff038c5754dae0a6b8a7f9c7ab118a280ba9b88a7"
+    },
+    {
+      "file": "art/candidates/identidade-r04/khajiit-male-map-front-study48x64.png",
+      "size": [
+        48,
+        64
+      ],
+      "sha256": "6cb38c42634a16561af06e4b56cdac464c99c69942d36204ab82752dfd480b99"
+    },
+    {
+      "file": "art/candidates/identidade-r04/khajiit-male-side-study96.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "d2bbc61bb3d7a74a368c9fd75a2f643e50d90a0fe74f2503fbbf71e0ac0e93e8"
+    },
+    {
+      "file": "doc/arte/identidade-r04-antes-depois.png",
+      "size": [
+        1060,
+        1120
+      ],
+      "sha256": "e01688abae55157dcec92462052c6c9b20ee2e3d105347501ebc0d19c63cd4d1"
+    }
+  ],
+  "manualSourceLandmarks": {
+    "argonian": [
+      396,
+      350,
+      205,
+      500
+    ],
+    "khajiit": [
+      405,
+      350,
+      170,
+      520
+    ]
+  },
+  "measurements": [
+    {
+      "race": "argonian",
+      "sourceComponentBoxes": [
+        [
+          5,
+          204,
+          642,
+          847
+        ],
+        [
+          595,
+          46,
+          1018,
+          953
+        ],
+        [
+          1062,
+          128,
+          1533,
+          971
+        ]
+      ],
+      "sourceCombatTouchesRightEdge": false,
+      "portraitBox": [
+        0,
+        14,
+        144,
+        144
+      ],
+      "mapBox": [
+        11,
+        6,
+        37,
+        62
+      ],
+      "sideBox": [
+        23,
+        6,
+        72,
+        94
+      ],
+      "backgroundAlphaSamples": [
+        {
+          "xy": [
+            20,
+            20
+          ],
+          "alpha": 0
+        },
+        {
+          "xy": [
+            540,
+            80
+          ],
+          "alpha": 0
+        },
+        {
+          "xy": [
+            500,
+            950
+          ],
+          "alpha": 0
+        },
+        {
+          "xy": [
+            1030,
+            50
+          ],
+          "alpha": 0
+        }
+      ]
+    },
+    {
+      "race": "khajiit",
+      "sourceComponentBoxes": [
+        [
+          15,
+          166,
+          637,
+          876
+        ],
+        [
+          604,
+          61,
+          1023,
+          970
+        ],
+        [
+          1054,
+          140,
+          1536,
+          988
+        ]
+      ],
+      "sourceCombatTouchesRightEdge": true,
+      "portraitBox": [
+        3,
+        12,
+        138,
+        144
+      ],
+      "mapBox": [
+        11,
+        6,
+        37,
+        62
+      ],
+      "sideBox": [
+        23,
+        6,
+        73,
+        94
+      ],
+      "backgroundAlphaSamples": [
+        {
+          "xy": [
+            20,
+            20
+          ],
+          "alpha": 0
+        },
+        {
+          "xy": [
+            540,
+            80
+          ],
+          "alpha": 0
+        },
+        {
+          "xy": [
+            500,
+            950
+          ],
+          "alpha": 0
+        },
+        {
+          "xy": [
+            1030,
+            50
+          ],
+          "alpha": 0
+        }
+      ]
+    }
+  ],
+  "limitations": "2 male pilots only. All females/other races/runtime visuals unchanged. Source already transparent; no code background removal. Single front/side study frames, not complete sheets/animations. Khajiit combat boot touches source edge. Owner review required.",
+  "diagnosticCorrection": "Initial raw preview misread RGB under alpha0 as background haze. Opaque checkerboard compositing and pixel samples disproved this; source alpha is valid. Historical repair prompts retained exactly as sent."
+}

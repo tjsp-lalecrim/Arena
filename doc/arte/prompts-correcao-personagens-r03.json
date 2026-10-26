@@ -1,0 +1,42 @@
+{
+  "requests": [
+    {
+      "id": "argonian",
+      "version": "r03",
+      "reason": "Cell-edge safety; Argonian crest still read as feather mane inr02",
+      "prompt": "Use case: precise-object-edit. Correct this existing12-cell character sheet technically, preserving every character identity, pose, clothing, palette, finish and exact3-column4-row ordering. Within EACH equal cell, uniformly reduce the existing figure to about82 percent of its present occupied size and center it. Leave at least8 percent of cell height as genuinely transparent top AND bottom margin, and6 percent left/right margin. Reconstruct only tiny missing tips/soles needed to make ears, hair, hands and BOTH boots fully complete. No figure touches any canvas or cell edge. Do not scale the whole sheet into an inset border: individually reframe each of the12 existing cells. Same four directions, same left-facing combat, same RIGHT-facing3/4 portraits. NO extra people, grid lines, labels, backgrounds, floor or shadows. True alpha background. This is framing repair, NOT a redesign. ALSO correct the remaining crest problem: the heads must NOT have a long mane of leaf/feather shapes. Replace the overlapping feather-like mane on BOTH sexes with a LOW compact reptilian scaled ridge and a few SHORT blunt bony spines confined to the crown/back of skull, leaving a naturally scaled exposed neck. Keep the NEW clearly projecting lizard muzzle, reptilian nostrils/jaw and detailed blue-gray scales. Preserve green accent along male ridge and copper-rust accent along female ridge as colored SCALES, not hair/feathers/leaves. No beak, bird head, dragon crown or human hair. Preserve garments and body exactly.",
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao-r02\\argonian-r02.png"
+      ],
+      "transparent_background": true,
+      "resultFile": "art/masters/criacao-r03/argonian-r03.png",
+      "review": "selected; pending owner review"
+    },
+    {
+      "id": "khajiit",
+      "version": "r03",
+      "reason": "Cell-edge safety; Argonian crest still read as feather mane inr02",
+      "prompt": "Use case: precise-object-edit. Correct this existing12-cell character sheet technically, preserving every character identity, pose, clothing, palette, finish and exact3-column4-row ordering. Within EACH equal cell, uniformly reduce the existing figure to about82 percent of its present occupied size and center it. Leave at least8 percent of cell height as genuinely transparent top AND bottom margin, and6 percent left/right margin. Reconstruct only tiny missing tips/soles needed to make ears, hair, hands and BOTH boots fully complete. No figure touches any canvas or cell edge. Do not scale the whole sheet into an inset border: individually reframe each of the12 existing cells. Same four directions, same left-facing combat, same RIGHT-facing3/4 portraits. NO extra people, grid lines, labels, backgrounds, floor or shadows. True alpha background. This is framing repair, NOT a redesign.",
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao-r02\\khajiit-r02.png"
+      ],
+      "transparent_background": true,
+      "resultFile": "art/masters/criacao-r03/khajiit-r03.png",
+      "review": "selected; pending owner review"
+    },
+    {
+      "id": "wood_elf",
+      "version": "r03",
+      "reason": "Cell-edge safety; Argonian crest still read as feather mane inr02",
+      "prompt": "Use case: precise-object-edit. Correct this existing12-cell character sheet technically, preserving every character identity, pose, clothing, palette, finish and exact3-column4-row ordering. Within EACH equal cell, uniformly reduce the existing figure to about82 percent of its present occupied size and center it. Leave at least8 percent of cell height as genuinely transparent top AND bottom margin, and6 percent left/right margin. Reconstruct only tiny missing tips/soles needed to make ears, hair, hands and BOTH boots fully complete. No figure touches any canvas or cell edge. Do not scale the whole sheet into an inset border: individually reframe each of the12 existing cells. Same four directions, same left-facing combat, same RIGHT-facing3/4 portraits. NO extra people, grid lines, labels, backgrounds, floor or shadows. True alpha background. This is framing repair, NOT a redesign.",
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\criacao-r02\\wood_elf-r02.png"
+      ],
+      "transparent_background": true,
+      "resultFile": "art/masters/criacao-r03/wood_elf-r03.png",
+      "review": "selected; pending owner review"
+    }
+  ],
+  "tool": "image_gen.imagegen",
+  "model": "not reported"
+}

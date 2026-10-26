@@ -48,7 +48,8 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         await page.waitForFunction(() => window.SceneManager && SceneManager._scene instanceof Scene_Title &&
             SceneManager._scene._commandWindow && SceneManager._scene._commandWindow.isOpenAndActive());
         // The legacy save makes Continue the native default selection.
-        await page.evaluate(() => SceneManager._scene._commandWindow.selectSymbol('newGame'));
+        // This is the laboratory regression; newGame is covered by test-character-creation.
+        await page.evaluate(() => SceneManager._scene._commandWindow.selectSymbol('arenaLab'));
         await page.keyboard.down('Enter'); await page.waitForTimeout(80); await page.keyboard.up('Enter');
         await page.waitForFunction(() => SceneManager._scene instanceof Scene_Map && SceneManager._scene.isActive() && !$gamePlayer.isTransferring());
         const checks = await page.evaluate(() => {

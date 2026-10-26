@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-25",
-  "scope": "inventário, não registro de opções já implementadas ou aprovadas",
+  "date": "2026-10-26",
+  "scope": "16 identidades-base disponíveis na criação; poses estáticas declaradas, não biblioteca final animada.",
   "expectedCombinations": 16,
   "pilotCombinations": 1,
   "productionReadyCombinations": 0,
@@ -9,35 +9,8 @@
       "raceId": "argonian",
       "genderId": "male",
       "visualId": "argonian.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
-    },
-    {
-      "raceId": "argonian",
-      "genderId": "female",
-      "visualId": "argonian.female.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
-    },
-    {
-      "raceId": "breton",
-      "genderId": "male",
-      "visualId": "breton.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
-    },
-    {
-      "raceId": "breton",
-      "genderId": "female",
-      "visualId": "breton.female.base",
       "map": {
-        "file": "img/characters/$Arena_Breton_Pilot.png",
+        "file": "img/characters/$Arena_argonian_male_r02.png",
         "cell": [
           48,
           64
@@ -46,126 +19,543 @@
           3,
           4
         ],
-        "status": "piloto provisória, não conjunto final aprovado"
+        "status": "static-directional-and-side-studies-no-walk-cycle"
       },
       "sideView": {
-        "file": "img/pictures/arena_breta_lateral_v01.png",
+        "file": "img/sv_actors/Arena_argonian_male_r02.png",
         "cell": [
           96,
           96
         ],
-        "status": "pose isolada, não folha svActors"
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
       },
-      "portrait": "img/pictures/arena_breta_retrato_v01.png",
-      "productionReady": false
+      "portrait": "img/faces/Arena_argonian_male_pose_r03.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_argonian_male_r02_side.png",
+      "aestheticReview": "pending owner"
+    },
+    {
+      "raceId": "argonian",
+      "genderId": "female",
+      "visualId": "argonian.female.base",
+      "map": {
+        "file": "img/characters/$Arena_argonian_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_argonian_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_argonian_female_pose_r03.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_argonian_female_r02_side.png",
+      "aestheticReview": "pending owner"
+    },
+    {
+      "raceId": "breton",
+      "genderId": "male",
+      "visualId": "breton.male.base",
+      "map": {
+        "file": "img/characters/$Arena_breton_male_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_breton_male_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_breton_male_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_breton_male_r02_side.png",
+      "aestheticReview": "pending owner"
+    },
+    {
+      "raceId": "breton",
+      "genderId": "female",
+      "visualId": "breton.female.base",
+      "map": {
+        "file": "img/characters/$Arena_breton_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "pilot-walk-and-static-side"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_breton_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_breton_female_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_breton_female_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "dark_elf",
       "genderId": "male",
       "visualId": "dark_elf.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_dark_elf_male_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_dark_elf_male_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_dark_elf_male_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_dark_elf_male_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "dark_elf",
       "genderId": "female",
       "visualId": "dark_elf.female.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_dark_elf_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_dark_elf_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_dark_elf_female_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_dark_elf_female_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "high_elf",
       "genderId": "male",
       "visualId": "high_elf.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_high_elf_male_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_high_elf_male_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_high_elf_male_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_high_elf_male_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "high_elf",
       "genderId": "female",
       "visualId": "high_elf.female.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_high_elf_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_high_elf_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_high_elf_female_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_high_elf_female_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "khajiit",
       "genderId": "male",
       "visualId": "khajiit.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_khajiit_male_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_khajiit_male_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_khajiit_male_pose_r03.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_khajiit_male_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "khajiit",
       "genderId": "female",
       "visualId": "khajiit.female.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_khajiit_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_khajiit_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_khajiit_female_pose_r03.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_khajiit_female_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "nord",
       "genderId": "male",
       "visualId": "nord.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_nord_male_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_nord_male_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_nord_male_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_nord_male_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "nord",
       "genderId": "female",
       "visualId": "nord.female.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_nord_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_nord_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_nord_female_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_nord_female_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "redguard",
       "genderId": "male",
       "visualId": "redguard.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_redguard_male_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_redguard_male_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_redguard_male_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_redguard_male_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "redguard",
       "genderId": "female",
       "visualId": "redguard.female.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_redguard_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_redguard_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_redguard_female_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_redguard_female_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "wood_elf",
       "genderId": "male",
       "visualId": "wood_elf.male.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_wood_elf_male_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_wood_elf_male_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_wood_elf_male_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_wood_elf_male_r02_side.png",
+      "aestheticReview": "pending owner"
     },
     {
       "raceId": "wood_elf",
       "genderId": "female",
       "visualId": "wood_elf.female.base",
-      "map": null,
-      "sideView": null,
-      "portrait": null,
-      "productionReady": false
+      "map": {
+        "file": "img/characters/$Arena_wood_elf_female_r02.png",
+        "cell": [
+          48,
+          64
+        ],
+        "layout": [
+          3,
+          4
+        ],
+        "status": "static-directional-and-side-studies-no-walk-cycle"
+      },
+      "sideView": {
+        "file": "img/sv_actors/Arena_wood_elf_female_r02.png",
+        "cell": [
+          96,
+          96
+        ],
+        "layout": [
+          9,
+          6
+        ],
+        "status": "static-pose-repeated-for-native-format-not-complete-motions"
+      },
+      "portrait": "img/faces/Arena_wood_elf_female_r02.png",
+      "productionReady": false,
+      "baseReady": true,
+      "sidePreview": "img/pictures/Arena_wood_elf_female_r02_side.png",
+      "aestheticReview": "pending owner"
     }
-  ]
+  ],
+  "baselineBeforeCreation": {
+    "pilotCombinations": 1,
+    "productionReadyCombinations": 0
+  },
+  "availableBaseCombinations": 16,
+  "fullAnimationCombinations": 0,
+  "revision": "pose-r03:4 portrait corrections;12 portraits and all body assets retained; pending owner review",
+  "previousInventory": "INVENTARIO_PERSONAGENS_M01_r02.json"
 }

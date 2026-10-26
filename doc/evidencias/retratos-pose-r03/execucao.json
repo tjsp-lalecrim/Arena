@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26",
+  "branch": "feature/m01-diretiva-pose-retratos",
+  "baselineCommit": "0a917f8",
+  "browser": "Chrome156.0.8078.47 desktop",
+  "viewport": [1100, 800],
+  "nativeResolution": [816, 624],
+  "server": "isolated127.0.0.1:8766; existing8765 preserved",
+  "passed": [
+    "test-character-visual-revision.cjs:16 UI previews,16 native appearance save/load upgrades,16 map renders,256 direction/pattern samples; no page/request errors",
+    "test-character-creation.cjs:234 checks plus UI name/navigation/review/cancel/confirmation",
+    "audit-portrait-pose.py:4 face-only changes,12 preserved face refs/all body config/rules unchanged;4 exact prompts,actual reference hashes,head margins",
+    "audit-art-records.py:194 master/export records,8 prompt logs,canonical UTF8 plugins.js and existing scripts"
+  ],
+  "isolation": "disposable Chrome contexts; no personal saves; new evidence folder preserves earlier rounds",
+  "visualInspection": "all16 portraits inspected enlarged/native;4 edited candidates inspected in masters,comparison boards and game144px; human assessment by Codex,not automated anatomical proof",
+  "pending": ["owner aesthetic assessment", "new editor/NW.js authoring/playtest cycle for these assets", "physical Galaxy A56"],
+  "unchanged": "all exploration/combat images,gameplay rules,plugin/engine code,stable identity keys; no new animations"
+}

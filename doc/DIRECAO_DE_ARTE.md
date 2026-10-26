@@ -1,8 +1,10 @@
 # Direção de arte e padrão de geração
 
-Versão 1.2 — direção R02/R03 aprovada pelo responsável em 25/10/2026. A aprovação cobre a identidade da dungeon R02, rato R03 e Ria espectral R02, identificados por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. A rodada v0.1 continua histórica e rejeitada; M01-06 permanece em validação técnica, sem conclusão automática.
+Versão 1.6 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md. Em R05 o responsável aprovou as artes atuais de M01-07 **para prosseguir com ressalvas**, por arquivo/versão/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Recortes e orientações heterogêneos não foram corrigidos. Não houve novas gerações/correções nesta rodada. A rodada inicial v0.1 continua histórica e rejeitada para narrativa; a aprovação atual não reabilita usos narrativos proibidos.
 
 ## Identidade visual
+
+Exceção aceita para o conjunto atual: manter os arquivos aprovados com seus defeitos conhecidos, listados em arte/PENDENCIAS_VISUAIS_M01_07.md, sem retrabalho estético neste fechamento. As diretivas abaixo de anatomia/pose/escala, fontes, continuidade e validação continuam obrigatórias para futuras gerações. Aprovação para avançar não demonstra padronização perfeita, folhas de animação completas, recortes técnicos corrigidos ou teste físico no aparelho. R04B permanece estudo fora do catálogo ativo; não forçar substituição de sprites por um piloto incompleto.
 
 Fantasia medieval sombria, com acabamento de pintura digital figurativa, materiais críveis e formas claramente desenhadas. Referência de identidade: arte original de The Elder Scrolls: Arena. Interpretar personagens, criaturas, arquitetura e objetos em dark fantasy sem inventar características narrativas apresentadas como originais.
 
@@ -180,3 +182,44 @@ Arena é de 1994 e é executado neste ambiente por emulação DOS. Baixa defini�
 Melhorar definição/acabamento preservando silhuetas, materiais, cores características, arquitetura e função narrativa. Pixelização não é obrigatória. Detalhe ilegível permanece interpretação artística identificada, não fato confirmado. As adaptações já aprovadas de exploração 2D, turnos, interface e progressão continuam válidas. Referências de continuidade aprovadas em `arte/APROVACAO_DIRECAO_R02_R03.json`; não regenerar imagens adequadas sem necessidade concreta. Ilustrações narrativas sem protagonista, inclusive mãos, membros, silhueta, sombra/reflexo ou equipamento que fixe identidade. Revisar contexto/objetos ao implementar falas.
 
 Preservar a instalação; consultas e extrações somente em área local ignorada, sem mods ou alterações no original. Não incorporar arquivos originais ao jogo distribuído. Relatórios e decisões podem ser versionados; exports de consulta não.
+
+## Personagens M01-07 — revisão solicitada em 26/10/2026
+
+Arena permanece a referência principal de identidade, materiais, roupas, cores e atmosfera. A pedido explícito do responsável, Skyrim orienta apenas a anatomia reconhecível de Argonianos (lagarto: escamas, focinho, mandíbula reptiliana; sem máscara humana/cabeça aviária) e Khajiit (focinho, nariz, orelhas e pelagem felinos). Esta é uma adaptação autorizada, não evidência de que Arena1994 já mostrava essas mesmas cabeças. Substitui a orientação anterior de manter Khajiit predominantemente humano; os prompts v01 permanecem como histórico. Não importar roupas, equipamentos, bônus, caudas, novas opções ou regras por associação.
+
+Bosmer: orelhas pontudas e planos faciais élficos coerentes com Altmer/Dunmer do projeto, preservando pele, cabelo e trajes próprios; não copiar rostos, pele dourada/cinza ou olhos das outras raças. Os detalhes de crista, pelagem, olhos e estrutura facial dos novos assets são interpretação artística baseada nas referências indicadas em arte/REVISAO_PERSONAGENS_R02.md, não transcrição comprovada do executável.
+
+Referência de acabamento/enquadramento: retrato da bretã piloto, preservado na v01. Retratos três quartos para a direita; bustos equivalentes, linha estimada dos olhos e cabeça aparente comparáveis, com espaço para focinhos/orelhas/cristas. Combatentes do jogador para a esquerda. Cada categoria tem sua escala própria: retrato144×144; exploração48×64; combate96×96. Padronizar por escala uniforme e pivô dos pés, sem deformação nem imposição de altura racial canônica. Preservar diferenças de proporção e a movimentação já existente. Distinguir célula, figura ocupada, margem alpha e recorte/escala da interface. Ver medidas e limitações no manifesto exportacoes-personagens-revisao-r02.json.
+
+Manter mestres e exports anteriores para comparação. Apenas anatomia/pose exigem edição por IA; recorte, limpeza de matte e montagem são processamento técnico documentado. Não confundir células repetidas com animações produzidas. Aprovação geral da direção não equivale à aprovação estética desta revisão ou à validação no editor/aparelho. Ilustrações narrativas continuam sem protagonista; não foram alteradas nesta rodada.
+
+## Diretiva obrigatória de pose e anatomia — revisão pose-r03
+
+Seguir `arte/PROCEDIMENTO_RETRATOS.md` em toda geração/edição de personagens. Todas as direções referem-se à imagem vista pelo jogador. Retratos: **cabeça e tronco juntos** em três quartos para a direita, com peito, ombros, pescoço e olhar coerentes; cabeça naturalmente apoiada. Mesmo grau aproximado de giro entre combinações. Não basta apontar o nariz para a direita: proibir contrarrotação, olhar por cima do ombro e pescoço torcido. Não espelhar a imagem para tentar resolver relações anatômicas internas.
+
+Referência explícita de pose/composição: `art/references/pose-personagens/breton-female-busto-v01.png`, extraída do retrato da piloto v01; identidade vem do alvo de cada combinação, estilo do acabamento do projeto em `art/masters/breta-piloto-v01.png`. Separar esses papéis em cada prompt e anexar apenas imagens realmente referenciadas como fornecidas. Derivados Argoniana/Khajiit feminina pose-r03 foram inspecionados para auxiliar a pose dos masculinos, sem receber aprovação estética. Arquivos/hashes/papéis em `arte/avaliacao-retratos-pose-r03.json`.
+
+Bloco fixo obrigatório para prompts de retratos:
+
+> Retrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.
+
+Acrescentar identidade, escala, busto, linha dos olhos e margens. Não comprimir focinhos, orelhas ou cristas para contorno humano. Antes de integrar, conferir visualmente:
+
+- Cabeça e tronco no sentido definido, com peito, ombros e pescoço plausíveis.
+- Sem olhar por cima do ombro, contrarrotação ou torção involuntária; olhar acompanha o rosto.
+- Ângulo próximo do gabarito, sem misturar frontal, perfil completo e três quartos.
+- Escala aparente, linha dos olhos, busto e margens consistentes.
+- Anatomia racial preservada e continuidade com exploração/combate.
+- Leitura ampliada e nos144px reais da interface; guias somente em sobreposições de revisão.
+
+Dimensões, alpha e testes automáticos são complementares, não prova de anatomia. Assets com falha permanecem em revisão e não viram referência aprovada. A inspeção técnica pelo Codex não substitui a avaliação estética do responsável.
+
+Convenções independentes: exploração segue baixo/esquerda/direita/cima do MV; combatente do jogador atual fica à direita e aponta para esquerda, com corpo/cabeça/ação coerentes; animações mantêm proporções, apoio e identidade entre quadros. Não alterar essas categorias para copiar a pose dos retratos. A rodada pose-r03 corrige somente quatro retratos e preserva os demais assets e regras; registro em `arte/REVISAO_POSE_RETRATOS_R03.md`.
+
+## Identidade racial além do animal comum — pilotos R04
+
+Argonianos/Khajiit devem ter leitura reconhecível dos personagens dessas raças em Skyrim, conforme pedido do responsável, preservando Arena como base de roupas, cores, função e acabamento. “Lagarto/gato humanoide” genérico é insuficiente. Antes de gerar, inspecionar faces reais identificadas e comparar crânio, arcadas/maçãs, olhos, focinho, mandíbula, escamas/pelagem e marcas. Separar observação da fonte, variação de presets e interpretação do piloto; chifres/adornos de um exemplo não são obrigação universal. Não importar regras raciais de Skyrim.
+
+Diagnóstico e fontes efetivas em `arte/IDENTIDADE_ARGONIANOS_KHAJIIT_R04.md`: Argonianos precisam de planos cranianos/placas/arcadas mais definidos e garganta segmentada; Khajiit, estrutura facial menos arredondada, olhos/orelhas proporcionais e focinho/mandíbula mais marcados. A linguagem dark fantasy e a diretiva de pose1.4 permanecem obrigatórias. Preservar diferenças individuais e de masculino/feminino na estrutura facial, não apenas cor/roupa. Fontes sem legenda de sexo não comprovam dimorfismo.
+
+Validar primeiro um exemplo por raça antes de multiplicar gêneros/direções/variantes. Nesta rodada somente dois pilotos masculinos fora do catálogo ativo; não comprovam as combinações femininas. Verificar alpha por composição opaca e valores de pixels, não somente prévia bruta: cores RGB sob alfa zero foram inicialmente confundidas com halo em R04, depois corrigido o diagnóstico. As fontes têm transparência real e componentes separados; o combatente Khajiit alcança a borda e permanece pendente de correção do pé. Candidatos em art/candidates não são referência aprovada nem substituição silenciosa dos ativos. Linhas de revisão ficam nas pranchas. Não regenerar outras raças, narrativa ou biblioteca inteira por associação.
