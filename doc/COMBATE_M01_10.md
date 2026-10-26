@@ -1,5 +1,7 @@
 # M01-10 R01 — batalha integrada e conjunto mínimo de movimentos
 
+Histórico preservado. Estado vigente R02 em REVISAO_COMBATE_M01_10_R02.md: piloto Bretã/rato revisados, seis desenhos por movimento, gestos/armas separados, impacto nativo e vídeos. Outros15 personagens/2 inimigos continuam R01; não fechar M01-10 ou iniciar M01-11. Limitações abaixo descrevem8137dac, não negam a melhoria parcial posterior.
+
 26/10/2026. Feature `feature/m01-combate`, originada de develop782ebc8. M01-09 revisado: diff, critérios,628 verificações/192 ações documentadas, validadores de dados/habilidades e ausência de alterações alheias; integração autorizada no merge782ebc8, publicado em develop. Main permanece cfd31d3. Esta feature não está integrada.
 
 ## Estado e limites

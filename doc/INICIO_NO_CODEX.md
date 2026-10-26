@@ -1,6 +1,6 @@
 # Como usar esta documentação
 
-Estado operacional M01-09 R01: M01-08 revisado/integrado/publicado em develop d3c736d. Implementação atual em feature/m01-habilidades para revisão, sem merge automático ou início de M01-10. Ler HABILIDADES_M01_09.md e o estado vigente do backlog antes de trechos históricos. P01–P08 e aprovação artística com ressalvas preservadas.
+Estado operacional M01-10 R02: M01-09 integrado/publicado em develop782ebc8; feature/m01-combate para revisão, sem merge automático. Ler REVISAO_COMBATE_M01_10_R02.md, COMBATE_M01_10.md (R01 histórico) e backlog. Somente Bretã feminina/rato possuem novos movimentos R02 e armas por camada;15 personagens/2 inimigos mantêm R01. M01-10 em validação, M01-11 não iniciado. P01–P08/retratos com ressalvas preservados; manual adiado.
 
 Leia também `DIRETRIZES_DE_ADAPTACAO.md` para as decisões sobre IA, dark fantasy, base de dados e consulta a `doc/wiki/`. O arquivo `BASE_DO_PROJETO.md` reúne o contexto inicial, as decisões confirmadas, as propostas de escopo e as perguntas em aberto.
 

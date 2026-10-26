@@ -1,5 +1,7 @@
 # Criação e documentação de plugins
 
+M01-10 R02: MV_MotionTimeline0.1.0 (núcleo puro) e Arena_BattleMotion0.2.0 (configuração/integração), após Arena_Battle. Sem consumidores novos de recursos/efeitos ou plugins externos.16 registros canônicos,14 anteriores preservados. Documentos individuais em plugins/; perfil R02 só piloto Bretã/rato, legacyR01 explicitamente separado. REVISAO_COMBATE_M01_10_R02.md contém vídeos/testes/limites; autoria no editor continua pendente.
+
 Atualização M01-10 R01: Arena_Battle0.1.0 após Arena_Abilities/Arena_Resources. Configuração ArenaBattle.json,14 registros canônicos com os13 anteriores preservados. Sem consumidores duplicados de Vigor/Mana, plugin externo ou alteração de motor. Documentação em plugins/Arena_Battle.md; aliases genéricos de ação explícitos, perfis ausentes geram erro. Batalha real no Map007; autoria no editor desta versão pendente, separada do Chrome. M01-09 integrado em develop782ebc8.
 
 ## Estado operacional M01-09

@@ -1,5 +1,9 @@
 # Execução e roteiro de testes M01
 
+## Revisão vigente — M01-10 R02
+
+REVISAO_COMBATE_M01_10_R02.md contém roteiro, cobertura1/16 e1/3, gravações e limites. Rodar tools/test-motion-timeline.cjs, validate-battle-motion.cjs, test-battle-motion.cjs(10 vídeos), test-battle-motion-edge.cjs e test-battle-coverage.cjs(ARENA_EVIDENCE_DIR para preservar R01). Necessário Chrome/Playwright local e servidor da raiz; contextos descartáveis. tools/inspect-motion-videos.cjs decodifica vídeos, build-motion-video-previews.py gera recortes/GIFs; não substituem inspeção no editor/mobile. Auditoria tools/audit-motion-r02.py. Responsável mantém testes manuais adiados; não registrar aceite estético automático.
+
 ## Estado vigente — M01-10 R01
 
 Roteiro em COMBATE_M01_10.md: título Combate técnico, preparar(3,5), rato(7,5), goblin(6,8), homem-lagarto(10,8), reiniciar(11,5), novo participante(3,8). Eventos de interação, sem encontros automáticos. Confirmar novo participante inicia sessão técnica nova; cancelar preserva. Não usar saves pessoais.

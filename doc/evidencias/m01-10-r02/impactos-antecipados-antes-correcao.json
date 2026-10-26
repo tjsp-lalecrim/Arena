@@ -1,0 +1,30 @@
+[
+  {
+    "subject": "actor",
+    "skill": 5,
+    "sample": {
+      "key": "light",
+      "index": 2,
+      "tick": 12,
+      "total": 26,
+      "done": false,
+      "impactTick": 13,
+      "released": false,
+      "weaponId": 1
+    }
+  },
+  {
+    "subject": "rat",
+    "skill": 1,
+    "sample": {
+      "key": "bite",
+      "index": 2,
+      "tick": 16,
+      "total": 33,
+      "done": false,
+      "impactTick": 17,
+      "released": false,
+      "weaponId": null
+    }
+  }
+]

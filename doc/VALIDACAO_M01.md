@@ -1,5 +1,13 @@
 # Evidências de implementação M01
 
+## 26/10/2026 — revisão M01-10 R02, cobertura parcial explícita
+
+Branch inicialmente limpa8137dac. Somente breton.female.base e rato revisados:42/24 desenhos IA, seis por movimento, arma separada com apoio por quadro, leves/pesados e gestos de conjuração/poção distintos. Rejeitados/preservados dois estudos com figuras unidas/recortes; fontes/prompts/versões/hashes em arte/COMBATE_MOVIMENTOS_R02_MANIFEST.json. Todos os assets R01/retratos anteriores preservados. Outros15 personagens/2 inimigos ainda R01, não declarar cobertura R02.
+
+Chrome156.0.8078.47, jogo816×624/viewport1100×800:10 gravações completas do canvas e baseline R01, sem saves pessoais. Três encontros com troca adaga→espada→desarmado, custos5/12/Mana6, poção1, seis quadros de cada movimento observados, save/load posterior, vitória/retorno e derrota/game over. Dois efeitos/um useItem/um débito; ataque sem alvos termina sem travamento, técnica selecionada antes de perder Vigor é rejeitada. Teste detectou impacto uma atualização cedo; corrigido para aguardar o quadro exibido, não o próximo relógio. Traços finais/gravações em evidencias/m01-10-r02/resultado.json, limites.json;11 vídeos decodificados e filmstrips/GIFs inspecionados em recortes1:1. Não são replay artificial de atlas nem teste no editor.
+
+Regressões628 habilidades/192 ações raciais,619 recursos,234 criação+UI,27 persistência, StateStore/Runtime e matriz16 personagens/3 inimigos, com expectativas de seis quadros somente para piloto/rato; demais três. Núcleo alternativo de quatro quadros, validadores e66 células com alpha/margens/hash. Ajustes finais dos pontos de mão conferidos4x e em escala nativa, vídeos regravados. M01-10 continua em validação: avaliação de ritmo/peso, expansão e aprovação estética pendentes. Manual do responsável adiado; editor MV/gerenciador/salvar/reabrir/playtest NW.js/Galaxy A56 desta revisão não realizados. Canonical16/14 registros anteriores preservados verificados separadamente.
+
 ## 26/10/2026 — M01-10 R01, batalha integrada (em validação)
 
 M01-09 revisado e integrado/publicado em develop782ebc8, preservando0e9f267 e seu histórico. Branch inicial limpa e sem divergência; feature/m01-combate criada a partir desse merge. Critérios, fontes, matriz e roteiro em COMBATE_M01_10.md. Main preservada, sem release ou integração da nova feature.

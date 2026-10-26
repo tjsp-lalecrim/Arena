@@ -2,7 +2,7 @@
 
 ## Objetivo e estado
 
-Atualização vigente M01-10 R01: M01-09 revisado, integrado e publicado em develop782ebc8. M01-10 implementado funcionalmente em feature/m01-combate, **em validação**, com quatro estados mínimos para16 combinações e três inimigos; apresentação da arma/ação e revisão de continuidade ainda pendentes. Testes manuais do responsável adiados; editor/NW.js e Galaxy A56 desta versão não declarados. COMBATE_M01_10.md registra evidências e limites; relatos anteriores são históricos.
+Atualização vigente M01-10 R02: feature/m01-combate **em validação**, sem nova integração. Piloto Bretã/rato têm intermediários, gestos, armas por camada, impacto nativo e vídeos;15 personagens/goblin/homem-lagarto permanecem R01. Expansão e avaliação perceptiva pendentes, sem fechar M01-10 por contagem de quadros. Manual do responsável adiado; editor/NW.js/Galaxy A56 pendentes. REVISAO_COMBATE_M01_10_R02.md é o registro atual. M01-09 integrado/publicado em develop782ebc8; relatos anteriores históricos.
 
 Histórico do fechamento M01-08 R01 (antes da integração): M01-07 R05 já integrado, bônus aplicados e arte aceita com ressalvas; recursos concluídos na feature para revisão. Evidências preservadas em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md; a autorização posterior resultou no merge d3c736d.
 
@@ -118,7 +118,7 @@ Geração procedural em runtime, mapa/bússola/radar, aliados, quests secundári
 | M01-07 | Concluído (criação-base desktop, com ressalvas aceitas) | Aprovação estética com defeitos adiados, P01–P08 provisórios implementados,981 verificações novas,234 de criação,16 roundtrips e27 de persistência; FECHAMENTO_M01_07.md. Equilíbrio de combate e aparelho continuam futuros |
 | M01-08 | Concluído tecnicamente, integrado em develop |619 verificações, recursos/progressão; merged3c736d após revisão do fechamento. Equilíbrio prático provisório |
 | M01-09 | Concluído tecnicamente, integrado em develop782ebc8 |628 verificações/192 ações nativas, pares por arma/sem arma, Vigor único, Cura/Dardo/Mana, livros transacionais, save/load e regressões; HABILIDADES_M01_09.md. Guild e loot de livros continuam futuros |
-| M01-10 | Em validação, feature para revisão | Batalha nativa, barras,16 personagens/3 inimigos com quatro estados; cobertura nativa,18 comparações e regressões. Ação do jogador genérica sem arma desenhada; fechamento visual/continuidade e manual pendentes. COMBATE_M01_10.md |
+| M01-10 | Em validação, feature para revisão | R02: piloto Bretã/rato com seis quadros/movimento, gestos/armas, impacto sincronizado,10 vídeos e regressões;15 personagens/2 inimigos continuam R01. Expansão/avaliação perceptiva e manual pendentes. REVISAO_COMBATE_M01_10_R02.md |
 | M01-11 a M01-20 | A fazer | Atalhos, encontros de campanha, equilíbrio prático e demais sistemas continuam futuros |
 
 M01-05/06 integrados pelo merge7e7094c; M01-07 pelo mergee1be141; M01-08 pelo merged3c736d e M01-09 pelo merge782ebc8, preservando commits. M01-06 encerra exemplos, não biblioteca inteira. M01-07 preserva16 combinações-base e ressalvas aceitas. M01-10 permanece em feature própria, sem merge em develop/main ou release. Concluir sua apresentação antes de M01-11; as18 comparações de turnos/custo R01 alimentam M01-20 sem transformar fixtures em equilíbrio final.

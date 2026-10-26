@@ -1,5 +1,7 @@
 # Banco mínimo e convenções M01
 
+M01-10 R02: ArenaBattleMotion.json v1 configura atlas/frames/durações/impacto/mãos por movimento, armas por wtype/empunhadura e cobertura parcial(1/16 personagem,1/3 inimigo). Camada visual lê arma nativa atual; relógio/bitmap ficam no Sprite e não entram no save. Sem mudança de schema persistente, banco, valores raciais ou pagamento de custos. Referência REVISAO_COMBATE_M01_10_R02.md.
+
 Atualização M01-10 R01: ArenaBattle.json v1 mapeia16 baseVisualId e inimigos1–3 para folhas3×4/células/apoio/tempo, aliases explícitos de movimentos e kit técnico. Map007 tem encontros301 por interação, sem fuga/derrota permitida, self switch após vitória e reinício explícito. Barras consultam estado real; sem cópia persistente ou mudança de schema. Skills/Items/Enemies/Troops, valores raciais e consumidores anteriores preservados. Nenhum item novo no início da campanha. COMBATE_M01_10.md contém limites e validações.
 
 Atualização operacional M01-09 R01: técnicas3–8 ativas com ocasião1 e disponibilidade derivada de arma/sem arma. Custos5/12 mantidos em ArenaVigorCost; Mana/Cura/Dardo e livros preservam IDs/valores. ArenaAbilities.json separa configurações; Map006 laboratório sem Battle Scene ou campanha. ArenaLearnSkill agora usa transação de aprendizado e consumo, sem requisito de nível. Não há livros no inventário inicial. Referência atual HABILIDADES_M01_09.md; afirmações antigas de tags sem consumidores/desativação abaixo descrevem a montagem inicial, não o estado vigente.
