@@ -1,5 +1,7 @@
 # M01-08 — recursos e evolução, R01, 26/10/2026
 
+Continuidade M01-09: fechamento abaixo revisado e integrado em develop pelo merged3c736d, sem repetir a etapa ou alterar decisões. A feature de habilidades ativa técnicas3–8 conforme arma e reutiliza o mesmo consumidor de Vigor, sem alterar Arena_Resources. O relato abaixo de técnicas ainda desativadas/custo isolado permanece histórico do escopo M01-08. Detalhes atuais em HABILIDADES_M01_09.md.
+
 Base: develop e1be141, árvore limpa; feature/m01-recursos-progressao. Fechamento M01-07 R05 e P01–P08 permanecem vigentes, sem alterações de balanceamento racial ou imagens. Não inicia M01-09.
 
 ## Fonte e adaptação configurada

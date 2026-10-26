@@ -1,5 +1,7 @@
 # Contratos persistentes — M01-05
 
+Continuidade M01-09: sem novo schema/namespace. Técnicas derivadas não são escritas como aprendizado permanente; magias continuam em _skills nativo e livros no inventário. Trocar arma não esquece magia. Refresh/load invalida apenas hotbar de técnica incompatível (null). Nenhuma concessão ao carregar. Transação do livro e cenários de rollback/save anterior em HABILIDADES_M01_09.md.
+
 Atualização operacional M01-08 R01: HP/MP atuais continuam exclusivamente nativos. `arena.resources.vigor` mantém current/maximum; o namespace `arenaResources` v1 separa base, crescimento por escolhas de nível, concessão racial inicial e modificador explícito. Sem duplicar nível/EXP ou reaplicar bônus. Importação R05 preserva gasto/máximo e consolida nível anterior como baseline sem escolhas retroativas. Contrato em RECURSOS_E_PROGRESSAO_M01_08.md. O escopo histórico M01-05 abaixo não representa ausência atual de consumidor de progressão.
 
 Schema raiz 1, namespace arena versão 1. Autoridade: `$gameSystem._persistentState.namespaces.arena`; consumo pelo núcleo MV_StateStore e adaptador Arena_Persistence. Sem salvamento paralelo ou mudanças nos arquivos internos do motor. Apenas dados JSON são armazenados. API de integração para futuras features e testes; nenhuma nova interface ou cadeia de eventos foi ativada nesta rodada.

@@ -1,5 +1,7 @@
 # Combate
 
+Estado M01-09 R01: técnicas3–8 agora disponíveis por equipamento e magias9/10 por aprendizado; execução/custos/efeitos nativos validados no Map006 técnico, sem apresentação completa de batalha. O relato M01-08 abaixo refere-se ao fechamento anterior. M01-10/11 continuam responsáveis por animações, turnos integrados, barras e atalhos; HABILIDADES_M01_09.md distingue o laboratório do combate jogável e do equilíbrio final.
+
 ## Requisitos confirmados
 
 - O combate terá apresentação Side View, com visão lateral dos participantes.

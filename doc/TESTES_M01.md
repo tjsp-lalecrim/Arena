@@ -1,5 +1,11 @@
 # Execução e roteiro de testes M01
 
+## Estado operacional — M01-09 R01
+
+`tools/test-abilities.cjs`:628 verificações e192 ações por BattleManager/startAction/updateAction/invokeAction, pagamento e efeitos nativos; compara raças/armas/níveis com fixtures determinísticas e não usa só fórmulas puras. Cobertura: técnica compatível/incompatível/removida, saldo suficiente/exato/insuficiente, cancelamento/forçada/sem alvo/erro, quatro aplicações/um pagamento, custos combinados sem parcial, magia conhecida/desconhecida/Mana, Cura real, livros válidos/repetidos/estoque múltiplo/rollback e menu nativo, save anterior2561830/load/atalhos. Resultado e capturas em evidencias/m01-09/.
+
+Regressões recursos619/criação234/racial981/persistência27/laboratório, StateStore/Runtime e validadores pertinentes. O probe de recursos agora equipa adaga antes de usar skill5: a checagem de arma M01-09 é requisito, não regressão a contornar. validate-resources reconhece ocasião1 quando o consumidor M01-09 existe; validate-abilities verifica mapeamento e ativação exatos. Evidências históricas preservadas, nenhum save pessoal. Roteiro do Map006 e limites em HABILIDADES_M01_09.md. Autoria MV e aparelho não inferidos por teste do navegador.
+
 ## Estado operacional — M01-08 R01
 
 M01-07 R05 integrado e aprovado, P01–P08 aplicadas. Os registros abaixo que dizem não haver criação/bônus são históricos das versões indicadas. Não reabrir estética aceita com ressalvas.

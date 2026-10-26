@@ -1,5 +1,7 @@
 # Avaliação prática futura dos bônus raciais aprovados
 
+Atualização M01-09 R01:192 execuções nativas controladas nas16 identidades, adaga/espada, níveis1/6/12 e leve/pesada verificam dano/acerto P01–P08, custos5/12 constantes e ausência de bônus em desarmado/magia. Dardo recebido por Bretão/Nórdico exercita redução mágica0,75 e ausência de redução de fogo pelo Nórdico; fonte inimiga usa MP/MAT sintéticos em memória, não conjurador novo da campanha. Testes com variância0/RNG0,5 e HP1000 são comparações determinísticas de contrato, **não** amostra de probabilidade ou equilíbrio final. Resultados em evidencias/m01-09/resultado.json. Custo por vitória, ordem aleatória, defesa/guarda/critico em encontros e utilidade ao longo da demo permanecem M01-10/20. Nenhum valor racial foi alterado.
+
 Valores provisórios P01–P08 aprovados no fechamento R05 de M01-07, sem alegação de equilíbrio final. Fonte exata: decisoes/M01_07_APROVACAO_R05.json e cópia da proposta R04. Cenários abaixo são requisitos de avaliação futura, **não testes de combate integrado já executados**.
 
 Atualização M01-08 R01: executado o cenário técnico100/110 inicial, gasto/save-load, escolhas de+10 iguais para todas as raças, sem regrant ou multiplicador por nível, poções/descanso e AGI+1 constante.16 identidades e save R05 real cobertos em evidencias/m01-08/resultado.json. Isso encerra a parte de contrato de recursos da primeira linha, não mede utilidade/custo por vitória ou equilíbrio entre raças em encontros. As demais linhas continuam futuras. Incremento10 e custos5/12 seguem provisórios.

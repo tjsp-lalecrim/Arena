@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "method": "Windows keyboard/accessibility via @oai/sky; authoring separate from Chrome tests",
+  "observed": [
+    "Closed previous project window before loading new plugin list",
+    "Relaunched Arena project from disk without error",
+    "F10 details: Arena_AbilityLab ON",
+    "F10 details: Arena_Abilities ON",
+    "F10 details: MV_AbilityRules ON",
+    "Ctrl+S without error",
+    "Closed editor; relaunched fresh Arena window2557582 without read error",
+    "Ctrl+S after reopening; final two-line descriptions and13 plugin records retained"
+  ],
+  "pluginRecordsPreserved": 13,
+  "dataChanges": [
+    {
+      "file": "data/System.json",
+      "semanticFields": [
+        "versionId"
+      ]
+    }
+  ],
+  "limits": [
+    "Screenshot/click geometry unavailable; no visual NW.js playtest asserted",
+    "No physical Galaxy A56",
+    "No personal saves touched; isolated Chrome profiles for game saves"
+  ]
+}

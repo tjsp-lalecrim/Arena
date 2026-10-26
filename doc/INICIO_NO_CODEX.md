@@ -1,5 +1,7 @@
 # Como usar esta documentação
 
+Estado operacional M01-09 R01: M01-08 revisado/integrado/publicado em develop d3c736d. Implementação atual em feature/m01-habilidades para revisão, sem merge automático ou início de M01-10. Ler HABILIDADES_M01_09.md e o estado vigente do backlog antes de trechos históricos. P01–P08 e aprovação artística com ressalvas preservadas.
+
 Leia também `DIRETRIZES_DE_ADAPTACAO.md` para as decisões sobre IA, dark fantasy, base de dados e consulta a `doc/wiki/`. O arquivo `BASE_DO_PROJETO.md` reúne o contexto inicial, as decisões confirmadas, as propostas de escopo e as perguntas em aberto.
 
 A documentação já está em `doc/` no repositório do jogo; mantenha-a sob Git. Também é possível adicioná-la como fonte do projeto no Codex. A cópia no repositório deve ser a referência de trabalho; mantenha as fontes adicionais atualizadas quando houver mudanças.
