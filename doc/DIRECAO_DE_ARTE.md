@@ -1,6 +1,6 @@
 # Direção de arte e padrão de geração
 
-Versão 1.3 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em 25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md; isso não aprova automaticamente novos derivados. A revisão dos personagens M01-07 descrita abaixo aguarda avaliação estética do responsável. A rodada inicial v0.1 continua histórica e rejeitada.
+Versão 1.4 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em 25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md; isso não aprova automaticamente novos derivados. A revisão dos personagens M01-07 descrita abaixo aguarda avaliação estética do responsável. A rodada inicial v0.1 continua histórica e rejeitada.
 
 ## Identidade visual
 
@@ -190,3 +190,26 @@ Bosmer: orelhas pontudas e planos faciais élficos coerentes com Altmer/Dunmer d
 Referência de acabamento/enquadramento: retrato da bretã piloto, preservado na v01. Retratos três quartos para a direita; bustos equivalentes, linha estimada dos olhos e cabeça aparente comparáveis, com espaço para focinhos/orelhas/cristas. Combatentes do jogador para a esquerda. Cada categoria tem sua escala própria: retrato144×144; exploração48×64; combate96×96. Padronizar por escala uniforme e pivô dos pés, sem deformação nem imposição de altura racial canônica. Preservar diferenças de proporção e a movimentação já existente. Distinguir célula, figura ocupada, margem alpha e recorte/escala da interface. Ver medidas e limitações no manifesto exportacoes-personagens-revisao-r02.json.
 
 Manter mestres e exports anteriores para comparação. Apenas anatomia/pose exigem edição por IA; recorte, limpeza de matte e montagem são processamento técnico documentado. Não confundir células repetidas com animações produzidas. Aprovação geral da direção não equivale à aprovação estética desta revisão ou à validação no editor/aparelho. Ilustrações narrativas continuam sem protagonista; não foram alteradas nesta rodada.
+
+## Diretiva obrigatória de pose e anatomia — revisão pose-r03
+
+Seguir `arte/PROCEDIMENTO_RETRATOS.md` em toda geração/edição de personagens. Todas as direções referem-se à imagem vista pelo jogador. Retratos: **cabeça e tronco juntos** em três quartos para a direita, com peito, ombros, pescoço e olhar coerentes; cabeça naturalmente apoiada. Mesmo grau aproximado de giro entre combinações. Não basta apontar o nariz para a direita: proibir contrarrotação, olhar por cima do ombro e pescoço torcido. Não espelhar a imagem para tentar resolver relações anatômicas internas.
+
+Referência explícita de pose/composição: `art/references/pose-personagens/breton-female-busto-v01.png`, extraída do retrato da piloto v01; identidade vem do alvo de cada combinação, estilo do acabamento do projeto em `art/masters/breta-piloto-v01.png`. Separar esses papéis em cada prompt e anexar apenas imagens realmente referenciadas como fornecidas. Derivados Argoniana/Khajiit feminina pose-r03 foram inspecionados para auxiliar a pose dos masculinos, sem receber aprovação estética. Arquivos/hashes/papéis em `arte/avaliacao-retratos-pose-r03.json`.
+
+Bloco fixo obrigatório para prompts de retratos:
+
+> Retrato de busto em três quartos. O personagem inteiro está orientado para a direita da imagem: peito, ombros, pescoço, cabeça e olhar seguem a mesma orientação, com alinhamento anatômico natural. Cabeça não está virada sobre o ombro. Sem tronco voltado à esquerda, sem contrarrotação, sem pescoço torcido. Seguir a referência de pose fornecida, preservando a identidade racial e o estilo aprovado.
+
+Acrescentar identidade, escala, busto, linha dos olhos e margens. Não comprimir focinhos, orelhas ou cristas para contorno humano. Antes de integrar, conferir visualmente:
+
+- Cabeça e tronco no sentido definido, com peito, ombros e pescoço plausíveis.
+- Sem olhar por cima do ombro, contrarrotação ou torção involuntária; olhar acompanha o rosto.
+- Ângulo próximo do gabarito, sem misturar frontal, perfil completo e três quartos.
+- Escala aparente, linha dos olhos, busto e margens consistentes.
+- Anatomia racial preservada e continuidade com exploração/combate.
+- Leitura ampliada e nos144px reais da interface; guias somente em sobreposições de revisão.
+
+Dimensões, alpha e testes automáticos são complementares, não prova de anatomia. Assets com falha permanecem em revisão e não viram referência aprovada. A inspeção técnica pelo Codex não substitui a avaliação estética do responsável.
+
+Convenções independentes: exploração segue baixo/esquerda/direita/cima do MV; combatente do jogador atual fica à direita e aponta para esquerda, com corpo/cabeça/ação coerentes; animações mantêm proporções, apoio e identidade entre quadros. Não alterar essas categorias para copiar a pose dos retratos. A rodada pose-r03 corrige somente quatro retratos e preserva os demais assets e regras; registro em `arte/REVISAO_POSE_RETRATOS_R03.md`.

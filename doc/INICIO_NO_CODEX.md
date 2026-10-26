@@ -18,6 +18,8 @@ Regras ainda não especificadas seguem o padrão do RPG Maker MV 1.6.1. As decis
 
 Antes de gerar qualquer asset visual, consultar DIRECAO_DE_ARTE.md e aplicar seu padrão de estilo, referências, prompts e validação por categoria.
 
+Para gerar ou revisar personagens, é obrigatório seguir também `arte/PROCEDIMENTO_RETRATOS.md`: referências separadas de pose/identidade/estilo, bloco fixo de prompt e inspeção de cabeça, tronco, pescoço e olhar. Não aplicar a pose de retrato às folhas de exploração ou combate. Dimensões e alpha não comprovam anatomia correta.
+
 Consulte GERACAO_DE_CENARIOS.md para a avaliação técnica de templates, geração em runtime e persistência de cenários; as recomendações ainda dependem de validação prática.
 
 A instalação original em D:\SteamLibrary\steamapps\common\The Elder Scrolls Arena também é fonte de consulta. Preservar seus arquivos e registrar evidências conforme DIRETRIZES_DE_ADAPTACAO.md.
