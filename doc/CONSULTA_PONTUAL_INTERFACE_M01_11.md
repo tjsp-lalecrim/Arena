@@ -7,3 +7,6 @@ Observados: divisão compacta de painel do personagem e comandos; descrição co
 Solução própria: Scene_Battle nativa com camadas Arena existentes, geometria pura MV_BattleSlots, configuração ArenaBattleUI.json, cartões próprios, referências battle.1–8 no contrato de persistência anterior e revalidação sem novo consumidor de custos. Categorias são filtros diretos; configuração acessível por teclado e toque com Voltar visível. Cenário/ícones IA reaproveitam somente arte do Arena já aprovada; os ícones lineares dos comandos são novos elementos de interface próprios. Não houve cópia integral dos plugins observados.
 
 Hashes das fontes consultadas constam em evidencias/m01-11/consulta-battlespire.json, como identificação da consulta, sem redistribuir seus conteúdos. A fidelidade ao Arena e as decisões atuais do repositório prevalecem.
+
+
+Rodada R02: nova consulta de leitura a trechos de BS_BattleMenu96.js, BS_BattlePresentation94.js e BS_MenuPanels113.js para dimensões, indicadores sem janelas grandes e margens. Não aplicadas as regras, suavização ou componentes desses plugins. Prints adicionais do responsável em doc/prints/revisao-m01-11-r02. Hashes e limites em evidencias/m01-11-r02/referencias.json e REVISAO_INTERFACE_M01_11_R02.md. Não normativa.

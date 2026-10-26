@@ -2,7 +2,7 @@
 
 ## Objetivo e estado
 
-Estado operacional M01-11: M01-10 expandido/validado e integrado/publicado em develop f37018d. Interface em feature/m01-interface-batalha para revisão: jogador à esquerda, cartões/atalhos persistentes, controles por teclado/mouse/toque, cenário aprovado reaproveitado. Ler INTERFACE_BATALHA_M01_11.md e evidencias/m01-11. Aprovação manual R02 limitada a Bretã/rato; manual da interface/variantes, NW.js visual e Galaxy A56 pendentes. Sem integração desta feature em develop/main; M01-12 não iniciado.
+Estado operacional M01-11 R02: refinamento em feature/m01-interface-batalha, base30e441d. Combate/animações atuais aprovados pelo responsável nesta solicitação; UI permanece em revisão visual. Indicadores compactos sem caixas, menus harmonizados e controles ocultos/inativos durante mensagens/resultado. Ler REVISAO_INTERFACE_M01_11_R02.md e evidencias/m01-11-r02. Desenvolver somente esta revisão, sem merge em develop/main ou M01-12. Galaxy A56/NW.js visual atuais pendentes.
 
 Histórico do fechamento M01-08 R01 (antes da integração): M01-07 R05 já integrado, bônus aplicados e arte aceita com ressalvas; recursos concluídos na feature para revisão. Evidências preservadas em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md; a autorização posterior resultou no merge d3c736d.
 

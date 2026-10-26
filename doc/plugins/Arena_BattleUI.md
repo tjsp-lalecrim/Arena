@@ -1,4 +1,4 @@
-# Arena_BattleUI0.1.0
+# Arena_BattleUI0.2.0
 
 Plugin próprio Codex após Arena_BattleMotion e MV_BattleSlots; depende dos contratos anteriores de ArenaBattle, ArenaResources, ArenaAbilities e ArenaPersistence. Sem dependências externas, parâmetros do gerenciador ou comandos de plugin. Configuração em data/ArenaBattleUI.json; manter registro canônico em js/plugins.js.
 
@@ -29,3 +29,14 @@ Estende apresentação de Sprite_Actor/Sprite_Enemy/Sprite_Battler, Spriteset_Ba
 Map007 ganhou somente o evento de trio(13,8), tropa técnica4 com os três inimigos existentes e reinício explícito junto ao descanso. Restante do mapa/banco preservado por comparação semântica. Nenhuma patrulha, dungeon final, aliado ou alteração de balanceamento.
 
 Testes/evidências e roteiro em INTERFACE_BATALHA_M01_11.md. Validação de autoria no editor é separada do Chrome. Manual do responsável, ergonomia/fullscreen/desempenho no Galaxy A56 e playtest visual NW.js permanecem pendentes; não são inferidos da aprovação R02. A apresentação Arena depende dos contratos/dados do projeto; somente MV_BattleSlots foi validado como núcleo independente.
+
+
+## Refinamento0.2.0 — R02
+
+REVISAO_INTERFACE_M01_11_R02.md é o relato atual. Indicadores148px sem moldura, nome18/recursos14/barras5; painel228×104 somente na faixa inferior, atalhos588×108 acima dos comandos. Seis espaços mantidos (alternativa oito), agora com nome curto além de ícone/custo/quantidade. MenuChrome desenha tema em instâncias da batalha, incluindo mensagem, sem substituir windowskin global ou carregar dependências/arte externa. Não é gerador de arte nem alteração dos atlases.
+
+`syncArenaPresentation()` concilia comandos/listas/configuração/alvos/execução/mensagens/resultados antes e depois da atualização nativa. `arenaAcceptsInput()` guarda teclas/toque e chamadas adicionais; seletores também consideram visibilidade ao processar entrada. Atalhos/comandos/listas ficam ocultos e inativos durante execução/mensagem/resultado; janela nativa conserva largura integral e confirmação. Ajuda/retorno são passivos. Alvos múltiplos substituem os comandos na faixa inferior; o painel esquerdo continua separado.
+
+Extensão Graphics._updateRealScale limita redução do canvas à viewport pequena (inclusive mapa/game over), mantendo resolução lógica/proporção/mapeamento nativo de ponteiro; não força ampliação ou fullscreen. Corrige o recorte do MV desktop com stretch desligado. Base opaca da batalha cobre restos de snapshot do mapa. Corpo/arma/efeitos/relógios/custos/referências e os18 registros de plugins permanecem iguais a30e441d. Schema persistente não muda.
+
+Validar dimensões/estados/imagens em816×624 e640×480, mouse/toque emulado e regressões nativas. UI continua aguardando avaliação visual do responsável; compatibilidade estática/registro preservado não é novo teste visual no editor ou Galaxy A56. Procedimentos/limites no relatório R02.

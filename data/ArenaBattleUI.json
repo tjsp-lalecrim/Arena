@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "playerPanelWidth": 228,
-  "commandHeight": 84,
-  "hotbarHeight": 100,
+  "commandHeight": 104,
+  "hotbarHeight": 108,
   "slotCount": 6,
   "slotWidth": 0,
   "slotPrefix": "battle.",

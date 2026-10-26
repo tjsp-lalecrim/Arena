@@ -1,6 +1,6 @@
 # Como usar esta documentação
 
-Estado operacional M01-11: M01-10 expandido/validado e integrado/publicado em develop f37018d. Interface em feature/m01-interface-batalha para revisão: jogador à esquerda, cartões/atalhos persistentes, controles por teclado/mouse/toque, cenário aprovado reaproveitado. Ler INTERFACE_BATALHA_M01_11.md e evidencias/m01-11. Aprovação manual R02 limitada a Bretã/rato; manual da interface/variantes, NW.js visual e Galaxy A56 pendentes. Sem integração desta feature em develop/main; M01-12 não iniciado.
+Estado operacional M01-11 R02: refinamento em feature/m01-interface-batalha, base30e441d. Combate/animações atuais aprovados pelo responsável nesta solicitação; UI permanece em revisão visual. Indicadores compactos sem caixas, menus harmonizados e controles ocultos/inativos durante mensagens/resultado. Ler REVISAO_INTERFACE_M01_11_R02.md e evidencias/m01-11-r02. Desenvolver somente esta revisão, sem merge em develop/main ou M01-12. Galaxy A56/NW.js visual atuais pendentes.
 
 Histórico M01-10 R02 (superado pelo estado operacional acima): M01-09 integrado/publicado em develop782ebc8; feature/m01-combate para revisão, sem merge automático. Ler REVISAO_COMBATE_M01_10_R02.md, COMBATE_M01_10.md (R01 histórico) e backlog. Somente Bretã feminina/rato possuem novos movimentos R02 e armas por camada;15 personagens/2 inimigos mantêm R01. M01-10 em validação, M01-11 não iniciado. P01–P08/retratos com ressalvas preservados; manual adiado.
 

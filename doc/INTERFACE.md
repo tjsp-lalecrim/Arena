@@ -1,6 +1,8 @@
 # Interface e menus
 
-Direção registrada M01-10 R02 para **M01-11, não implementada**: capturas do responsável orientam campo mais amplo/cenário visível, barras próximas aos participantes, comandos por ícones, habilidades/itens em slots com custos/quantidades/descrições e barra de atalhos. Aplicar dark fantasy/identidade Arena; não copiar personagens, assets, valores ou regras do exemplo. Não incluir Recuar/fuga ou talentos raciais ativos por aparecerem nos prints, nem fixar automaticamente oito slots. Referências locais ignoradas e consulta pontual não normativa documentadas em CONSULTA_PONTUAL_INTERFACE_M01_10_R02.md. Nenhuma nova UI de slots foi implementada nesta rodada.
+Estado operacional M01-11 R02: refinamento em feature/m01-interface-batalha, base30e441d. Combate/animações atuais aprovados pelo responsável nesta solicitação; UI permanece em revisão visual. Indicadores compactos sem caixas, menus harmonizados e controles ocultos/inativos durante mensagens/resultado. Ler REVISAO_INTERFACE_M01_11_R02.md e evidencias/m01-11-r02. Desenvolver somente esta revisão, sem merge em develop/main ou M01-12. Galaxy A56/NW.js visual atuais pendentes.
+
+Histórico da direção M01-10 R02 para **M01-11, não implementada**: capturas do responsável orientam campo mais amplo/cenário visível, barras próximas aos participantes, comandos por ícones, habilidades/itens em slots com custos/quantidades/descrições e barra de atalhos. Aplicar dark fantasy/identidade Arena; não copiar personagens, assets, valores ou regras do exemplo. Não incluir Recuar/fuga ou talentos raciais ativos por aparecerem nos prints, nem fixar automaticamente oito slots. Referências locais ignoradas e consulta pontual não normativa documentadas em CONSULTA_PONTUAL_INTERFACE_M01_10_R02.md. Nenhuma nova UI de slots foi implementada nesta rodada.
 
 ## Direção confirmada
 

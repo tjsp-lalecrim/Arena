@@ -1,5 +1,7 @@
 # M01-11 — interface de batalha em slots e atalhos
 
+Estado atual: REVISAO_INTERFACE_M01_11_R02.md registra a revisão de composição/transições a partir de30e441d. Combate/animações atuais aprovados pelo responsável; UI R02 aguarda avaliação visual. Evidências R02 separadas em evidencias/m01-11-r02. Relato R01 abaixo preservado como histórico, incluindo seus limites e aprovação à época.
+
 26/10/2026. Base develop **f37018d**, integração autorizada/publicada de M01-10 somente após concluir a expansão R03. Feature própria **feature/m01-interface-batalha** para revisão, sem integração automática em develop/main ou release. A aprovação manual R02 de a61977b continua limitada à Bretã feminina/rato; não é aprovação da interface nem das novas variantes. Detalhes de M01-10 em EXPANSAO_COMBATE_M01_10_R03.md.
 
 ## Funcionamento
