@@ -2,6 +2,8 @@
 
 ## Objetivo e estado
 
+Diretriz vigente desta rodada: aprovação manual R02 registrada para Bretã/rato (a61977b); concluir a expansão de M01-10 antes da integração, conforme escolha explícita do responsável. M01-11 solicitado, mas aguarda essa dependência; não criar sua feature a partir de uma integração parcial. Preservar as animações aprovadas e gerar apenas participantes faltantes. Registros anteriores abaixo são históricos até o próximo fechamento técnico.
+
 Atualização vigente M01-10 R02: feature/m01-combate **em validação**, sem nova integração. Piloto Bretã/rato têm intermediários, gestos, armas por camada, impacto nativo e vídeos;15 personagens/goblin/homem-lagarto permanecem R01. Expansão e avaliação perceptiva pendentes, sem fechar M01-10 por contagem de quadros. Manual do responsável adiado; editor/NW.js/Galaxy A56 pendentes. REVISAO_COMBATE_M01_10_R02.md é o registro atual. M01-09 integrado/publicado em develop782ebc8; relatos anteriores históricos.
 
 Histórico do fechamento M01-08 R01 (antes da integração): M01-07 R05 já integrado, bônus aplicados e arte aceita com ressalvas; recursos concluídos na feature para revisão. Evidências preservadas em VALIDACAO_M01.md e RECURSOS_E_PROGRESSAO_M01_08.md; a autorização posterior resultou no merge d3c736d.

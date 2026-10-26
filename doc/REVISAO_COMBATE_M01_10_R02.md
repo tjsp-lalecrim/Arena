@@ -1,5 +1,7 @@
 # M01-10 R02 — movimentos e armas do piloto
 
+Adendo vigente: o responsável aprovou manualmente os movimentos/fluidez de R02, associados à entrega a61977b, conforme decisoes/M01_10_APROVACAO_ANIMACOES_R02.json. Isso cobre a Bretã feminina/rato, não testes de editor/mobile ou as novas variantes. O responsável escolheu concluir a expansão restante antes da integração; M01-10 permanece em execução e M01-11 aguarda a dependência. Os arquivos/tempos aprovados são preservados; pendências de aprovação do piloto no relato original abaixo estão superadas somente nesse escopo.
+
 26/10/2026. Continuidade de feature/m01-combate a partir de8137dac, inicialmente limpa/sincronizada. Sem merge em develop/main, sem release/M01-11. R01 permanece histórico preservado. **M01-10 em validação: somente Bretã feminina e rato receberam R02.** Não atribuir novos movimentos/armas aos outros15 personagens ou aos inimigos2/3, que mantêm R01.
 
 ## Entrega e cobertura
