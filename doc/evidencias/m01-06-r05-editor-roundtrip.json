@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-25",
+  "baseline": "1024422",
+  "method": "Windows UI Accessibility via @oai/sky; keyboard F10, Enter, Ctrl+S, Alt+F4, launch_app; read-only semantic comparison",
+  "observed": [
+    "Editor Arena window selected uniquely",
+    "Gerenciador de Plugins dialog exposed Lista/custom and Ok/Cancelar/Aplicar; Enter closed it",
+    "Ctrl+S changed native database and plugins.js timestamps/serialization",
+    "Alt+F4 closed editor; launch_app reopened Arena window without error modal"
+  ],
+  "limits": [
+    "No screenshot capture; coordinate click returned coordinate input geometry is unavailable",
+    "Plugin rows do not expose names through accessibility; detailed visual list/Map003/playtest appearance not verified",
+    "No Galaxy A56 test",
+    "A pre-existing playtest window was not used as proof or touched",
+    "Final screenshot capture also timed out, including retry with refreshed window: window capture timed out: timed out waiting on channel"
+  ],
+  "pluginsNamesOrderStatusParametersPreserved": true,
+  "database": [
+    {
+      "file": "data/Actors.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "3b3c7f4639a283fe7b8de8af693e09a8710632b211486e057bfae0da5027645d"
+    },
+    {
+      "file": "data/Animations.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "b8e8253afaf295f843b2ea16ea38c18571edfad242a0e62dfa0dbcb3e91ad8d3"
+    },
+    {
+      "file": "data/Armors.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "94344f9fed59f2b88e422f1ba45984dd6648e5561a6a386ef543378517ed240f"
+    },
+    {
+      "file": "data/Classes.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "cb81c3c4780c3cc0c1d51de9d1f8e541485e6b94d26cb774c8713e7e9f61ad52"
+    },
+    {
+      "file": "data/Enemies.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "fb806331ac4b7e2d255a97c0a9242e16842b7c4fc14e86e59ff61c2e35b430bb"
+    },
+    {
+      "file": "data/Items.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "3c7d3f36008326d1d485f167e05b3c6636cd8e9004862d4c8305f32d660ea790"
+    },
+    {
+      "file": "data/MapInfos.json",
+      "semanticChanges": [
+        "1.scrollY",
+        "1.scrollX"
+      ],
+      "sha256AfterNativeSave": "674ca354a0c7d5594bab64e5d36e277d2573a1cd5fd4a8142587fc9f54960af1"
+    },
+    {
+      "file": "data/Skills.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "af62be96877363456c0b60fd3a8edda103738646bcfffec178e1ad5ce28b1c3c"
+    },
+    {
+      "file": "data/States.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "d09d7eee8ca7a00faf52b293db1abb9fabc5130c521945511e66e861fe514760"
+    },
+    {
+      "file": "data/System.json",
+      "semanticChanges": [
+        "versionId",
+        "editMapId"
+      ],
+      "sha256AfterNativeSave": "36819927944625484edf440c43e88ceebc5856f01725040b30be88b121eba337"
+    },
+    {
+      "file": "data/Tilesets.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "eafc8e22de7350e3a82a17faca6aee868836930decc3a784e1474a72d873c694"
+    },
+    {
+      "file": "data/Troops.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "9c53c3fbe0b1bb4e218affb2802a6dddd66892fdb3869fe2f88724a1716822b7"
+    },
+    {
+      "file": "data/Weapons.json",
+      "semanticChanges": [],
+      "sha256AfterNativeSave": "8be019f0e708c2dac767a67f22534c56242a393200b44fb2e5883605e0bbac23"
+    }
+  ],
+  "ownLaterChange": "Arena_ArtPreview description updated to0.2.1 after native roundtrip"
+}

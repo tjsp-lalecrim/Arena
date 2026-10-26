@@ -1,6 +1,6 @@
 # Direção de arte e padrão de geração
 
-Versão 1.0. Direção estabelecida para orientar a produção; exemplos visuais ainda precisam ser gerados e validados dentro do jogo. Este guia não afirma que já exista uma biblioteca aprovada de assets.
+Versão 1.2 — direção R02/R03 aprovada pelo responsável em 25/10/2026. A aprovação cobre a identidade da dungeon R02, rato R03 e Ria espectral R02, identificados por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. A rodada v0.1 continua histórica e rejeitada; M01-06 permanece em validação técnica, sem conclusão automática.
 
 ## Identidade visual
 
@@ -156,3 +156,27 @@ Usar nomes descritivos e estáveis, por exemplo `arena_dungeon_pedra_parede_v01.
 ## Áudio
 
 Este guia padroniza os assets visuais. Não gerar vozes. Música e efeitos devem reforçar a mesma atmosfera, mas sua direção sonora ainda será especificada; não presumir que a paleta visual defina instrumentos ou composição musical.
+
+## Identidade reconhecível de Arena — refinamento 1.1
+
+Dark fantasy é tratamento, não substituição da identidade de Arena por fantasia medieval genérica. Preservar silhuetas, proporções, materiais e sinais arquitetônicos reconhecíveis nas referências originais; não adotar pixel art/baixa resolução automaticamente. Prints imperiais fornecidos pelo responsável devem ser examinados antes de gerar e efetivamente anexados ou descritos com rastreio explícito. Logos de vídeo, numeração, HUD, textos sobrepostos, armas/mãos do jogador e rotas desenhadas no mapa não são arquitetura/textura.
+
+Dungeon: piso de grandes lajes planas, sujas, marrons/ardósia com juntas largas, distinto das paredes de grandes blocos retangulares cinza-violeta em fiadas. Escala coerente com cela/corredor, poucas pedras por tile; não miniaturizar alvenaria em mosaico nem aplicar o mesmo ruído em todas as superfícies. Grades e portas retangulares, correntes grossas com argolas, nichos elevados e vestígios de prisão são marcadores; usar os confirmados para cada área. Frio, escuro e opressivo, mas com piso/passagens legíveis. Converter câmera em primeira pessoa para corte superior ortográfico sem isometria, mantendo material e função; não desenhar teto que oculte o espaço de exploração.
+
+Rato: corpo pesado arqueado, cabeça alongada baixa, focinho/dentes expostos, patas dianteiras robustas e expressão hostil conforme rat.png e vistas decodificadas. Evitar rato naturalista dócil de olhos grandes e redondos. Perfil lateral para Side View, continuidade entre quadros e leitura real96×64/escala testada. Estudos de preparação/bote/recuperação são apenas trechos, não uma animação completa de combate; ausência de dano/morte ou baixa variação deve permanecer declarada.
+
+Ilustrações narrativas reutilizáveis: NÃO mostrar o personagem do jogador, mãos, braços, silhuetas, sombras corporais ou reflexos que fixem raça, gênero ou equipamento. Usar ambientes/objetos/Ria/personagens narrativos necessários. Ria deve remeter à referência: aparição azul-fria, cabelo longo escuro e manto/tecido claro luminoso. Braços de Ria não são braços do protagonista, mas devem estar inequivocamente ligados à aparição. A regra não elimina sprites/retratos próprios da criação de personagem. A ilustração anterior com prisioneira bretã fica rejeitada para uso narrativo reutilizável.
+
+Aprovação estética do responsável é agora requisito explícito de fechamento desta revisão M01-06, separado dos testes técnicos. Conservar versões anteriores para comparação; não usar a amostra rejeitada v0.1 como imagem de estilo anexada aos novos prompts. As referências aprovadas R02/R03 são o padrão de continuidade atual. Nenhuma produção em lote antes dessa aprovação.
+
+## Continuidade após aprovação R02/R03
+
+Usar os masters e exports identificados em `arte/APROVACAO_DIRECAO_R02_R03.json` como referências de continuidade nas gerações pertinentes. Preservar prompts e fontes. Rato R02 é intermediário; R03 é a referência principal aprovada. Novos derivados técnicos não recebem automaticamente aprovação de escala, alpha, recorte ou animação. Não regenerar imagens adequadas por conveniência. Durante a implementação dos diálogos, conferir composição, objetos e contexto com a cena narrada e registrar qualquer necessidade concreta de alteração. A proibição do protagonista nas ilustrações permanece. Não buscar novos prints sem lacuna específica.
+
+## Prioridade explícita de fidelidade — atualização 25/10/2026
+
+Arena é de 1994 e é executado neste ambiente por emulação DOS. Baixa definição é limitação da fonte, não justificativa para fantasia genérica. Priorizar a instalação original, seus arquivos/materiais e capturas do jogo para identidade visual, textos, quests, objetos e locais; wiki complementa interpretação e organização. Separar observação do executável, texto do manual, documentação técnica e informação da wiki. Quando divergirem, registrar versões/contexto/evidências e decisão explícita, sem escolher silenciosamente.
+
+Melhorar definição/acabamento preservando silhuetas, materiais, cores características, arquitetura e função narrativa. Pixelização não é obrigatória. Detalhe ilegível permanece interpretação artística identificada, não fato confirmado. As adaptações já aprovadas de exploração 2D, turnos, interface e progressão continuam válidas. Referências de continuidade aprovadas em `arte/APROVACAO_DIRECAO_R02_R03.json`; não regenerar imagens adequadas sem necessidade concreta. Ilustrações narrativas sem protagonista, inclusive mãos, membros, silhueta, sombra/reflexo ou equipamento que fixe identidade. Revisar contexto/objetos ao implementar falas.
+
+Preservar a instalação; consultas e extrações somente em área local ignorada, sem mods ou alterações no original. Não incorporar arquivos originais ao jogo distribuído. Relatórios e decisões podem ser versionados; exports de consulta não.

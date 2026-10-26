@@ -38,7 +38,7 @@ A recuperação de vida ocorrerá ao acionar camas em hotéis e em algumas dunge
 
 Usar a arte original como referência para identidade, formas e características reconhecíveis. Reinterpretar a apresentação em dark fantasy, mantendo coerência entre personagens, criaturas, ambientes, equipamentos e interface.
 
-Seguir DIRECAO_DE_ARTE.md, versão 1.0: pintura digital figurativa de fantasia medieval sombria, paleta terrosa com acentos controlados, materiais envelhecidos e silhuetas claras. O guia define padrões por categoria, escalas iniciais, modelo de prompt e critérios de validação. Os exemplos visuais e os formatos de exportação ainda precisam ser testados no motor antes da produção em lote.
+Seguir a versão atual de DIRECAO_DE_ARTE.md (direção R02/R03 aprovada): pintura digital figurativa de fantasia medieval sombria, paleta terrosa com acentos controlados, materiais envelhecidos e silhuetas claras. O guia define padrões por categoria, escalas iniciais, modelo de prompt e critérios de validação. Os exemplos visuais e os formatos de exportação ainda precisam ser testados no motor antes da produção em lote.
 
 Antes de gerar cada categoria de asset, definir sua função, formato, dimensões e organização exigidos pela implementação no MV. Evitar gerar uma biblioteca extensa antes de validar exemplos dentro do jogo.
 
@@ -48,7 +48,7 @@ O estilo dark fantasy define a direção visual. A direção de músicas e efeit
 
 ## Base de dados
 
-Consultar primeiro o material disponível em `doc/wiki/` ao trabalhar com dados do original. Implementar por etapas os registros necessários ao marco atual, mantendo rastreável a relação com Arena.
+Consultar primeiro as evidências acessíveis da instalação e dos materiais originais; usar `doc/wiki/` como complemento de interpretação e organização ao trabalhar com dados do original. Implementar por etapas os registros necessários ao marco atual, mantendo rastreável a relação com Arena.
 
 Para cada registro ou sistema adaptado, documentar:
 
@@ -126,3 +126,11 @@ O responsável renomeou doc/refs para doc/wiki e adicionou doc/prints para refer
 ### Disponibilidade na inspeção
 
 Em 25/10/2026, foi confirmada a pasta `D:\RPG Maker MV\Projects\Arena\doc\wiki`. O inventário contém PDFs identificados como páginas da UESP Wiki, além de arquivos Markdown, JSON e imagens. Apenas a listagem foi inspecionada nesta etapa; o conteúdo dos arquivos ainda não foi validado. Distinguir as fontes da wiki dos demais materiais locais antes de usar informações como dados do jogo original.
+
+## Prioridade explícita de fidelidade — atualização 25/10/2026
+
+Arena é de 1994 e é executado neste ambiente por emulação DOS. Baixa definição é limitação da fonte, não justificativa para fantasia genérica. Priorizar a instalação original, seus arquivos/materiais e capturas do jogo para identidade visual, textos, quests, objetos e locais; wiki complementa interpretação e organização. Separar observação do executável, texto do manual, documentação técnica e informação da wiki. Quando divergirem, registrar versões/contexto/evidências e decisão explícita, sem escolher silenciosamente.
+
+Melhorar definição/acabamento preservando silhuetas, materiais, cores características, arquitetura e função narrativa. Pixelização não é obrigatória. Detalhe ilegível permanece interpretação artística identificada, não fato confirmado. As adaptações já aprovadas de exploração 2D, turnos, interface e progressão continuam válidas. Referências de continuidade aprovadas em `arte/APROVACAO_DIRECAO_R02_R03.json`; não regenerar imagens adequadas sem necessidade concreta. Ilustrações narrativas sem protagonista, inclusive mãos, membros, silhueta, sombra/reflexo ou equipamento que fixe identidade. Revisar contexto/objetos ao implementar falas.
+
+Preservar a instalação; consultas e extrações somente em área local ignorada, sem mods ou alterações no original. Não incorporar arquivos originais ao jogo distribuído. Relatórios e decisões podem ser versionados; exports de consulta não.

@@ -33,3 +33,19 @@ Contratos, limites e roteiro manual isolado em PERSISTENCIA_M01.md. Executar `no
 Cobertura: nova partida, identidade/nome nativo, recurso próprio, registro de progressão uma vez, etapas/objetivos/conclusão, fontes/concessões/recuperação, consumo/entrega, capacidade/rollback, inimigos/áreas sem respawn no load, atalhos e partida seguinte limpa. Testes de regressão continuam: test-runtime.cjs, validate-data.cjs e test-boot.cjs. Estado em VALIDACAO_M01.md. Não confundir a composição de plugins redirecionada somente no teste com uma alteração do arquivo real js/plugins.js, que permanece canônico com cinco registros.
 
 Autoria manual ainda necessária após esta feature: abrir o projeto no MV 1.6.1, gerenciador (Community_Basic off; Arena_Runtime, Arena_TechnicalPreview, MV_StateStore e Arena_Persistence on, nessa ordem), confirmar, salvar/reabrir e revisar os registros, depois executar novamente localhost. Usar perfil separado para o roteiro de save/load e consultar snapshot/identity no console; o teste não oferece UI nova. A confirmação manual do responsável sobre abertura da correção anterior está registrada separadamente e não valida automaticamente esses novos plugins. Galaxy A56 não testado.
+
+## Amostra artística M01-06
+
+Título → Amostra visual abre Map002 sem alterar o início/laboratório original. Roteiro e arquivos em doc/arte/AMOSTRA_M01_06.md. `node tools/test-art-preview.cjs` usa Chrome descartável: entrada, rato, movimento, colisão, save/load com imagens/HP/recurso próprio, ilustração sem quest e retorno. `tools/build-art-samples.py` exporta os mestres IA por montagem técnica e verifica dimensões/alpha/baselines. Não confundir esse teste com batalha ou folha SV completa. Conferir manualmente perspectiva/identidade, bordas, recortes, legibilidade a32/48/96px e loop. Editor e A56 com a nova amostra permanecem pendentes; confirmação manual anterior não se estende aos novos assets.
+
+## Revisão visual isolada R02/R03
+
+Abrir `/tools/art-review.html` no servidor local, zoom 100%. Conferir dungeon 576×480 com piso/parede distintos; rato 96×64 com alerta, preparação, bote e recuperação (botão pausa); Ria 768×512 sem protagonista. Comparar às fontes e versões anteriores conforme `arte/REVISAO_IDENTIDADE_R02.md`. Não é mapa jogável ou combate. Rodar `tools/test-art-review.cjs` com Playwright e Chrome instalado. Aprovação estética do responsável é requisito separado dos testes de carregamento e formato; M01-06 continua em revisão. Testes no editor e A56 não foram executados nesta rodada.
+
+## Galeria R04
+
+Título > Validação visual R04 abre Map003; Enter diante de Ria(4,9), cela(7,9), saída(1,9). Teste `tools/test-art-integration.cjs` cobre mapa/tileset, quatro quadros do rato, colisão, save/load isolado, ilustrações e retorno sem MQ01. `tools/test-art-viewport.cjs` é somente pré-teste de viewport Android genérico no desktop, não teste Galaxy. Resultados em `doc/evidencias/m01-06-r04-*.json`. Matriz de critérios, roteiro de editor e aparelho: `arte/INTEGRACAO_R04.md`. Direção aprovada é evidência separada dos testes e não conclui M01-06.
+
+## R05 — autoria e viewport
+
+`test-art-viewport.cjs` agora verifica fonte primária26px e tamanho CSS≥16 na simulação916×412, além de tocar a placa de Ria por touchscreen emulado e aguardar o percurso/abertura nativos (não inicia evento por chamada direta). Resultado/screenshot m01-06-r05-* preservam os R04. Nenhum teste físico A56. Salvar/reabrir no editor foi executado via teclado/acessibilidade com comparação semântica; conferência visual ainda pendente. Matriz e limites em `arte/FIDELIDADE_E_VALIDACAO_R05.md`. Não existe criação M01-07 para testar nesta versão.

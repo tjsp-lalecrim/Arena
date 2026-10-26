@@ -83,3 +83,15 @@ As tarefas remanescentes estão organizadas em BACKLOG_M01.md, itens M01-01 a M0
 A situação de Git descrita acima é histórica: baseline documental consolidada em 29fc22b e integrada em develop; MQ01 especificada em 29f44c3. O laboratório M01-03 passou em Chrome desktop. Consultar VALIDACAO_M01.md para estado por item e limites; este registro não declara a demo pronta.
 
 Banco mínimo M01-04 cadastrado e validado; fontes/adaptações em DADOS_M01.md. Próxima etapa M01-05: persistência própria. O estado histórico “sem commit” nos parágrafos anteriores não representa a árvore atual; consultar o Git e VALIDACAO_M01.md.
+
+## M01-06 — revisão estética prioritária
+
+A amostra anterior foi rejeitada pelo responsável. R02/R03 é candidata pequena; consultar `arte/REVISAO_IDENTIDADE_R02.md`. Não ampliar produção antes da avaliação estética. Corrigir perspectiva para exploração superior e completar estados de animação somente após validar direção. Ilustrações narrativas reutilizáveis não podem fixar identidade/equipamento do protagonista, inclusive por mãos, silhuetas ou sombras.
+
+## Estado atual — direção aprovada, M01-06 em validação técnica
+
+A aprovação explícita do responsável em25/10/2026 cobre dungeon R02, rato R03 e Ria R02; conferir `arte/APROVACAO_DIRECAO_R02_R03.json`. Substitui a espera estética da seção anterior. Preservar referências/prompts e não regenerar imagens adequadas. Revisar composição/objetos/contexto ao integrar diálogos, sempre sem protagonista. Map003 é a nova galeria técnica; limitações, testes e próximos passos em `arte/INTEGRACAO_R04.md`. Ainda pendentes: autoria no editor, leitura/toque no aparelho, acabamento de superfícies e formatos/estados completos de combate. Não marcar todo M01-06 concluído.
+
+## Atualização R05
+
+Autoria: gerenciador abriu e projeto foi salvo/fechado/reaberto pelo editor usando teclado/acessibilidade; serialização auditada. Conferência visual detalhada do gerenciador/Map003 e playtest continua pendente por limitação de captura/clique. Leitura da galeria mobile melhorada, testada com toque emulado; Galaxy A56 não testado. Ver `arte/FIDELIDADE_E_VALIDACAO_R05.md`. Inventário:16 combinações necessárias, uma piloto provisória, nenhum conjunto final completo; M01-07 não iniciado enquanto dependência M01-06 continuar em validação. Não repetir geração dos aprovados.

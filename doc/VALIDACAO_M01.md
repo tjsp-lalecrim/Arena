@@ -86,3 +86,58 @@ Limitações de autoria: a confirmação manual recebida cobre abertura no edito
 O responsável confirmou nesta rodada que conseguiu salvar e carregar a partida tanto pelo playtest do RPG Maker quanto pelo navegador. Evidência manual fornecida pelo responsável, não executada pelo Codex. Referência mais provável: feature/m01-persistencia em 99e3788, HEAD local/remoto no início desta rodada; o responsável não informou SHA, versão de navegador ou se conferiu cada campo próprio, portanto essa associação é contextual, não confirmação exata de build/cobertura. O resultado não valida conteúdo posterior de M01-06, nem gerenciador/salvamento/reabertura do projeto pelo editor (diferente de salvar a partida).
 
 Revisão M01-05: árvore limpa, remoto da feature igual ao local (0/0), diff restrito a contratos/plugins/testes/documentação. Reexecutados test-state-store, test-runtime, validate-data e 27 verificações test-persistence com sucesso. Integração em develop autorizada nesta rodada, preservando commits; main permanece no commit inicial cfd31d3, sem promoção de desenvolvimento a release.
+
+## M01-06 — primeira amostra artística e publicação das linhas Git
+
+GitHub conferido por fetch/ls-remote e API antes de agir: não havia main/develop no remoto; padrão era feature/correcao-plugins-editor; feature/m01-persistencia coincidia local/remoto. Sem alterações locais preexistentes. M01-05 revisado, evidência manual contextual registrada em aee1914, integrado em develop por merge77f120d preservando 5ee6781/99e3788. main publicado em cfd31d3 (somente baseline inicial); develop publicado em77f120d. PATCH da configuração GitHub e nova consulta API confirmaram default_branch=main; ls-remote confirmou HEAD→main. Sem force push, reescrita, tag ou release. Feature/m01-amostra-visual criada de develop; sua publicação para revisão é autorizada, sem integração automática.
+
+Geração por IA disponível e executada via image_gen.imagegen. Oito chamadas: ficha de bretã, caminhada, rato, pedra, ícones, sonho de Ria e duas correções. Prompts/referências efetivamente anexadas em doc/arte/prompts-m01-06.json; fichas/fontes/processo/limites em AMOSTRA_M01_06.md; PNGs mestres em art/masters e exports/dimensões/SHA em exportacoes-m01-06.json. Modelo/seed não informados pela ferramenta. Consultadas explicitamente wiki/prints ignoradas e README da instalação original; nenhuma fonte externa incluída por acidente. Imagens de outros jogos orientaram leitura, não estilo.
+
+| Categoria exigida | Geração/integração | Verificação realizada |
+| --- | --- | --- |
+| Personagem de exploração | Bretã piloto em folha nativa3×4 de144×256, células48×64 | Vista em escala real e no mapa; quatro direções, margens e pés emy62; passos curtos de estudo |
+| Combatente Side View | Mesma ficha, pose96×96 | Vista lateral na galeria; estática, não folha completa svActors nem combate |
+| Inimigo animado | Rato3×96×64, sequência0/1/2/1 | Capturas e GIF do motor, escala comum, caudas preservadas, apoioy60; nenhum sistema de batalha |
+| Chão/parede | Tiles48×48 na folha B de768×768, Tileset2 | Mapa repete amostras, diferencia piso/parede e respeita colisão; kit mínimo sem autotiles/cantos |
+| Arma/armadura/poção | Três ícones32×32 de IA | Inspeção visual em tamanho real na galeria; não substituem IconSet do banco ainda |
+| Ilustração | Sonho de Ria/prisioneira,816×544 | Evento nativo show/erasePicture e texto; vista na janela do jogo; MQ01 permanece etapa0 |
+
+Testes executados: build-art-samples.py, com dimensões, transparência, margens em todas as células e bases fixas; node --check do plugin; validate-data, test-state-store e test-runtime; test-art-preview em Chrome156.0.8078.47/WebGL, janela1100×800, jogo816×624, 10 verificações; test-boot e test-persistence (27 verificações) também passaram após integração. Save/load da amostra preservou Map002, posição, imagens, HP nativo e recurso próprio de prova. Retorno ao Map001 confirmado com imagens anteriores; diff de Map001/System vazio. Zero pageerror/HTTP>=400 no percurso testado. Perfis descartáveis, sem saves pessoais.
+
+Inspeção visual de capturas corrigiu sobreposição da legenda de perfil e texto da galeria aparecendo sob a cena de Ria. Um ensaio automatizado acionou a saída antes de terminar o interpretador do evento: teste passou a aguardar canMove/isEventRunning; última execução passou. Evidências finais: doc/evidencias/m01-06-arte.json, m01-06-mapa.png, m01-06-ria.png, m01-06-loop.gif. O GIF usa frames capturados no motor; não substitui a inspeção em escala final.
+
+M01-06 concluído no escopo da pequena amostra solicitada nesta rodada: todas as categorias geradas/integradas/verificadas em navegador desktop. Isso não aprova biblioteca completa nem combate: perfil é pose isolada, rato só farejo/respiração, caminhada de estudo, piso/parede com repetição perceptível sem autotiles. Variantes de armadura/base e demais combinações continuam M01-12/07; não geradas por associação a este item. Não há vozes, quest completa, novo inventário, criação de personagem ou cena narrativa final.
+
+Abertura: título → Amostra visual; Map002. Enter diante da placa Ria em(4,9) mostra arte; placa Sair em(1,9) retorna ao laboratório. Esc abre menu/salvar. Instruções e limitações em doc/arte/AMOSTRA_M01_06.md. Editor com esses novos assets/plugins, gerenciador/salvamento/reabertura do projeto e Galaxy A56 não testados. A evidência manual de playtest/browser recebida no início não foi atribuída a M01-06. M01-03 mantém pendências de autoria, sem alegar que save de partida equivale a salvar o projeto.
+
+## Revisão estética M01-06 — 2026-10-25
+
+O responsável rejeitou a identidade visual anterior. **M01-06 em revisão; não concluído artisticamente.** Formatos funcionando não substituem aprovação estética. Direção de arte 1.1 proíbe protagonista ou quaisquer membros/sombras/equipamentos dele em narrativa reutilizável.
+
+Rodada pequena: dungeon R02, rato R02 com correção R03 e Ria R02. Referências visuais inspecionadas e consulta decodificada à instalação, com limitações de associação documentadas em `arte/REVISAO_IDENTIDADE_R02.md`. Anteriores preservados. Dungeon ainda tem perspectiva convergente; rato é trecho de bote, não combate completo. Sem produção em lote nem promoção da rodada rejeitada.
+
+Visor isolado `tools/art-review.html`: Chrome desktop, imagens 1:1, carregamento, animação e pausa sem erros/404. Teste `tools/test-art-review.cjs`. Screenshot `doc/evidencias/m01-06-revisao-r02-browser.png`. Testes de persistência: 27 verificações aprovadas em contexto descartável, sem saves pessoais; testes de estado, runtime e banco mínimo aprovados. A evidência de navegador não comprova editor ou aparelho. Nenhum teste novo no editor MV ou Galaxy A56 nesta rodada. Aprovação estética, mapa ortogonal final e animação completa permanecem pendentes.
+
+## Aprovação de direção e integração R04 — 25/10/2026
+
+Responsável aprovou a direção da dungeon R02, rato R03 e Ria espectral R02 após `4faf3b2`; arquivos/dimensões/hashes exatos em `arte/APROVACAO_DIRECAO_R02_R03.json`. Essa evidência manual supersede a espera de aprovação da revisão anterior, mas não amplia a aprovação aos assets antigos ou a todos os testes técnicos. M01-06: **em validação técnica, não concluído**.
+
+Galeria nova Map003/tileset3, título “Validação visual R04”, mantém Map001/002 e anteriores. Ria/rato aprovados reutilizados sem regeneração; uma amostra de superfícies ortogonais gerada com a dungeon aprovada como referência. Documentação, prompt, avaliação e matriz das categorias em `arte/INTEGRACAO_R04.md`.
+
+Executados: `test-art-integration`, `test-art-preview`, `test-state-store`, `test-runtime`, `validate-data`, `test-persistence` (27 verificações) e `test-boot`; salvar/carregar em contexto descartável, sem saves pessoais; zero erros/arquivos faltantes. Auditoria de 27 registros e seis referências aprovadas inalteradas. Screenshots/resultados R04 em `doc/evidencias/`.
+
+Pré-teste de viewport Android genérico no Chrome desktop:916×412, canvas538,77×412; sem extravasar. Texto de painel equivale a11,22px CSS, pequeno e pendente de leitura física. **Não testado no Galaxy A56.** Editor/gerenciador/salvar projeto/reabrir/playtest da versão R04 não executados. Não transferir evidências manuais de versões anteriores para esta integração.
+
+Tentativa de autoria pelo Codex: o executável instalado abriu janela com título “Arena - RPG Maker MV”, mas `get_window_state` falhou duas vezes (incluindo recuperação com seleção renovada) com `window capture timed out: timed out waiting on channel`. Sem captura verificável, não foram feitas ações de gerenciador, salvamento/reabertura ou playtest. A janela/título isolados não comprovam leitura completa do projeto. Essas verificações continuam pendentes.
+
+## R05 — prioridade do original, autoria e leitura da galeria
+
+Em25/10/2026, consulta direta a ARENA/README.TXT (1.07 CD-ROM), Manual.pdf p.7 e Player Guide.pdf da instalação; wiki Races/Character Creation como complemento. Nova prioridade explícita em DIRETRIZES_DE_ADAPTACAO.md, DIRECAO_DE_ARTE.md e INICIO_NO_CODEX.md. Materiais do manual não são medição do executável; adaptações numéricas permanecem identificadas. Khajiit de Arena não deve ser substituído automaticamente pela aparência de títulos posteriores. Fontes extraídas ficam somente em tmp ignorado.
+
+Arena_ArtPreview0.2.1 melhora leitura mobile da galeria atual, sem regenerar imagens: texto primário26px (17,17px CSS na simulação916×412; antes11,22). Toque emulado percorre caminho nativo e abre Ria. Evidências R05 e inventário de16 combinações em `arte/FIDELIDADE_E_VALIDACAO_R05.md`; uma piloto, zero conjuntos finais completos.
+
+Editor: gerenciador abriu/fechou via teclado, Ctrl+S regravou dados, editor fechou e reabriu Arena. Comparação semântica preserva banco e contratos de plugins, exceto metadados nativos registrados. `evidencias/m01-06-r05-editor-roundtrip.json`. Captura/clique indisponíveis e nomes das linhas custom não visíveis por acessibilidade; não declarar conferência visual completa nem playtest da galeria. Galaxy A56 físico não testado. M01-06 em validação; M01-07 não iniciado, sem merge prematuro da dependência. Início normal ainda é laboratório; não há tela de criação para testar.
+
+## Encerramento da amostra M01-06
+
+Revisão do escopo conforme solicitação atual: os critérios de exemplos em motor estão atendidos pelas evidências R02–R05. Matriz em arte/ENCERRAMENTO_AMOSTRA_M01_06.md. M01-06 concluído como amostra desktop, sem converter pendências de M01-10/12/14/19 em requisitos de biblioteca inteira nesta etapa. Teste físico A56 e inspeção visual completa do editor continuam explicitamente pendentes. M01-05 permanece validado. Integração da feature visual em develop autorizada para iniciar M01-07.

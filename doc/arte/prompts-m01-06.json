@@ -1,0 +1,72 @@
+{
+  "tool": "image_gen.imagegen",
+  "model": "não informado pela ferramenta",
+  "seed": null,
+  "artGuide": "DIRECAO_DE_ARTE.md 1.0",
+  "records": [
+    {
+      "id": "pilot",
+      "master": "art/masters/breta-piloto-v01.png",
+      "referencedImagesActuallySent": [],
+      "transparentBackground": true,
+      "prompt": "PROJETO: Releitura de Arena no RPG Maker MV. ESTILO FIXO: Fantasia medieval sombria; pintura digital figurativa; materiais críveis e envelhecidos; paleta terrosa pouco saturada, sombras frias e acentos quentes; silhueta clara; sem chibi, anime, pixel art ou 3D plástico. CATEGORIA E USO: ficha piloto de continuidade, uma única mulher bretã adulta de High Rock para testar retrato e sprite em 48x64 e combatente em 96x96. IDENTIDADE: pele clara oliva, rosto comprido sóbrio, olhos castanhos, cabelo castanho muito escuro preso em trança curta, camisa de linho marfim de manga longa, colete simples de couro castanho, calça carvão, botas gastas castanhas, sem capa nem capacete. REFERÊNCIAS: descrição textual de Arena Races página 3 (bretões altos de cabelos escuros); direção de arte do projeto, nenhuma imagem de personagem anexada. CONTINUIDADE: exatamente o mesmo rosto, cabelo, roupas e proporções nos quatro painéis. CÂMERA E COMPOSIÇÃO: canvas 1024x1024, grade invisível 2x2 com quatro células iguais 512x512. Cada conteúdo isolado e centralizado com ampla margem transparente: superior esquerda retrato busto em três quartos; superior direita corpo inteiro visto de cima oblíquo, frente voltada para baixo da tela, braços relaxados; inferior esquerda o mesmo corpo em vista superior oblíqua pelas costas; inferior direita corpo inteiro de perfil voltado para a esquerda, postura lateral de combate sem arma. Corpo inteiro nunca cortado, pés em mesma linha de base dentro das células de corpo. Sem chão ou sombras projetadas. LUZe MATERIAIS: luz suave superior esquerda, tecido e couro foscos. SAÍDA: PNG com transparência alpha real, sem molduras ou linhas da grade. EVITAR: qualquer texto, letras, números, marca d'água, equipamento brilhante, fundo quadriculado pintado, diferenças de rosto/roupa, isometria nos sprites."
+    },
+    {
+      "id": "walk",
+      "master": "art/masters/breta-caminhada-v01.png",
+      "referencedImagesActuallySent": [
+        "art/masters/breta-piloto-v01.png"
+      ],
+      "transparentBackground": true,
+      "prompt": "PROJETO Arena MV. ESTILO FIXO: fantasia medieval sombria, pintura digital figurativa, tecido/couro envelhecido, paleta terrosa pouco saturada, sombras frias e luz superior esquerda, silhuetas claras, sem chibi/anime/pixel art. Derive SOMENTE a mulher bretã da referência anexada, mesmo rosto, trança castanha curta, camisa marfim, colete castanho, calça carvão e botas. SAÍDA: folha pequena de exploração com alpha transparente real, 3 colunas x 4 linhas IGUAIS, canvas retrato 768x1280. DOZE células invisíveis de 256x320. ORDEM das linhas: voltada para baixo/frente, esquerda/perfil, direita/perfil, cima/costas. ORDEM das colunas: passo perna esquerda adiante, posição central parada, passo perna direita adiante. Todos são corpos inteiros na MESMA vista superior oblíqua ortográfica de RPG de grade, câmera olhando para baixo 35 graus, sem isometria. TAMANHO E ALINHAMENTO: altura idêntica de 250px em cada célula de320px, pés na linha280 de cada célula, corpo central no eixo128, margens transparentes amplas; não mover origem ou mudar escala entre frames. Braços discretamente alternados na caminhada, não correr. Sem armas, capa, chão ou sombras projetadas. Sem moldura, separadores, textos, letras ou números. Não incluir retratos nem poses laterais de batalha. Preservar rosto/roupa exatamente da ficha. Fonte textual: Arena Races p3 mulher bretã, não classe profissional."
+    },
+    {
+      "id": "rat",
+      "master": "art/masters/rato-respiracao-v01.png",
+      "referencedImagesActuallySent": [],
+      "transparentBackground": true,
+      "prompt": "PROJETO Arena MV. ESTILO FIXO: fantasia medieval sombria, pintura digital figurativa, materiais críveis e envelhecidos; paleta terrosa pouco saturada, sombras frias, luz superior esquerda; silhueta clara; sem pixel art, cartoon, anime ou 3D plástico. CATEGORIA: minúscula amostra de animação de rato dos esgotos em visão lateral de combate, baseado na descrição de Arena Monsters p17: rato hostil comum marrom escuro, dentes pequenos, orelhas arredondadas, cauda fina comprida; nenhuma imagem anexada, sem copiar sprites originais. SAÍDA PNG alpha transparente real, canvas horizontal 1536x512, TRÊS células invisíveis iguais 512x512 em uma linha. Mesmo rato voltado para DIREITA, altura e escala rigorosamente iguais, patas na linha y400 em cada célula, margens amplas incluindo cauda, nenhuma parte cortada. Frame esquerdo: agachado alerta boca fechada. Frame central: respiração erguendo levemente cabeça e torso, patas traseiras fixas. Frame direito: de volta agachado, cauda ligeiramente curvada e boca entreaberta. Mudanças pequenas de respiração, não um salto nem deslocamento: centro de massa estável, mesmas manchas de pelagem. Amostra para loop de três frames, não folha de todos os golpes. Sem chão, sombras projetadas, linhas, letras, números, texto ou molduras."
+    },
+    {
+      "id": "tiles",
+      "master": "art/masters/pedra-piso-parede-v01.png",
+      "referencedImagesActuallySent": [],
+      "transparentBackground": false,
+      "prompt": "PROJETO Arena RPG Maker MV. ESTILO FIXO: fantasia medieval sombria em pintura digital figurativa, pedra crível envelhecida, paleta terrosa pouco saturada, sombras frias e luz suave superior esquerda. CATEGORIA: apenas dois tiles quadrados de teste de dungeon imperial, sem personagens. Canvas horizontal 1024x512, DUAS regiões quadradas iguais de512x512, borda exata emx512 sem moldura. Região ESQUERDA: textura top-down ortográfica perfeitamente repetível de piso de grandes lajes irregulares de calcário cinza-ardósia #343A40 #777568, juntas discretas, musgo muito esparso, detalhe legível quando reduzido para48x48. Região DIREITA: tile de bloco de parede sólida de alvenaria visto do mesmo topo oblíquo não isométrico, face superior escura e face vertical frontal baixa, leitura sólida distinguível do chão, ocupa toda a célula e repete horizontalmente. Luz e escala de pedras compatíveis entre dois tiles. Dungeon austera realista, sem excesso de sujeira que esconda a leitura, sem cenário em perspectiva, porta, tocha, tesouro ou objetos coletáveis, sem bordas de painel, sem texto/números. Base de identidade: Imperial Dungeons páginas2-3, corredores de pedra e alcovas; fonte textual somente, nenhuma imagem anexada. Esta é uma amostra de duas células simples, não autotiles completos."
+    },
+    {
+      "id": "icons",
+      "master": "art/masters/icones-v01.png",
+      "referencedImagesActuallySent": [],
+      "transparentBackground": true,
+      "prompt": "PROJETO Arena MV. ESTILO FIXO: fantasia medieval sombria, pintura digital figurativa com bordas legíveis, materiais críveis envelhecidos, paleta terrosa pouco saturada, sombras frias luz superior esquerda, sem pixelart/anime/chibi/3Dplástico. CATEGORIA: três ícones para leitura32x32, objetos isolados de silhueta grande. SAÍDA PNG alpha transparente real canvas1536x512, 3 células512x512 em uma linha sem linhas visíveis. ESQUERDA: adaga de aço gasto, cabo courocastanho, diagonal ponta superior direita. CENTRO: couraça de couro castanho de torso, vista frontal, sem pessoa nem braços. DIREITA: pequeno frasco de poção âmbar dourada, corpo largo e rolha simples marrom, sem rótulo ou brilho moderno. Objetos todos inteiros centralizados, cada um limitado aos 330x330px centrais de sua célula com90px de margem transparente, sem partes atravessarem células. Referências textuais Arena Base Weapons p2 Dagger, Base Armor p2 Leather Cuirass, Potions p2 Healing amarela/dourada. Mecânica de ícones separados inspirada apenas na leitura do print knight_online_inventory; nenhuma imagem anexada. Sem contornos de slots, raridade, números, letras, texto ou sombras de chão."
+    },
+    {
+      "id": "intro",
+      "master": "art/masters/ria-sonho-v01.png",
+      "referencedImagesActuallySent": [
+        "art/masters/breta-piloto-v01.png"
+      ],
+      "transparentBackground": false,
+      "prompt": "PROJETO releitura Arena MV. ESTILO FIXO: fantasia medieval sombria em pintura digital figurativa detalhada, pedra/linho/couro críveis envelhecidos, paleta terrosa pouco saturada, sombras frias e acentos quentes, sem chibi/anime/pixelart/3Dplástico. CATEGORIA: uma ilustração da introdução, sonho de Ria Silmane na cela das Masmorras Imperiais, canvas1536x1024 paisagem. IDENTIDADE E FONTES: Arena Imperial Dungeons pp2-3 e Ria Silmane p1: espírito etéreo da feiticeira morta visita prisioneiro em sonho para revelar usurpação de Jagar Tharn e orientar fuga; não é encontro físico nem combate. A mulher da imagem anexada é a PRISIONEIRA bretã, não Ria; preserve sua mesma camisa marfim, colete castanho, trança curta escura e rosto; mostrá-la sentada à direita em três quartos de costas, rosto parcialmente visível, olhando a aparição. Ria é OUTRA mulher adulta, rosto sereno pálido, cabelos escuros longos soltos, túnica antiga cinza-azulada, translúcida em névoa azul fria à esquerda central, mãos em gesto calmo. Sem armas empunhadas. Cela austera de pedra, grades discretas e plataforma junto à parede norte ao fundo com pequena chave de rubi, sem tesouro inventado. Uma única luz âmbar fraca fora das grades equilibra o azul do sonho. Região central mantém rostos legíveis; faixa inferior de20% relativamente limpa/escura para futuro texto desenhado pelo jogo. Sem letras, números, texto, molduras, HUD, símbolos de quest ou vozes. Esta é amostra narrativa artística, não introdução completa jogável."
+    },
+    {
+      "id": "walk2",
+      "master": "art/masters/breta-caminhada-v02.png",
+      "referencedImagesActuallySent": [
+        "art/masters/breta-caminhada-v01.png"
+      ],
+      "transparentBackground": true,
+      "prompt": "Corrija esta folha preservando personagem, traço, transparência, roupa, trança e todos os quadros bons. Manter EXATAMENTE 3 colunas e4 linhas iguais. Correção essencial: SEGUNDA LINHA TERCEIRA COLUNA precisa estar voltada para ESQUERDA, como os outros dois quadros dessa linha; agora está para direita. Na PRIMEIRA LINHA e na ÚLTIMA LINHA, o terceiro quadro precisa ter a perna OPOSTA à do primeiro adiante, para alternância de passos, com mesma cabeça/torso e linha dos pés. Linhas: baixo, esquerda, direita, cima; colunas: passo esquerdo, parada, passo direito. Mantenha ângulo superior oblíquo da primeira e última linhas; nos perfis adote também leve câmera superior, sem isometria. Não incluir novos objetos, textos, grade ou sombras de chão. Corpos inteiros com20% de margem transparente em cada célula, mesma altura e centro. Pintura dark fantasy figurativa, sem anime/chibi. Saída PNG com alpha real e grade invisível3x4."
+    },
+    {
+      "id": "rat2",
+      "master": "art/masters/rato-respiracao-v02.png",
+      "referencedImagesActuallySent": [
+        "art/masters/rato-respiracao-v01.png"
+      ],
+      "transparentBackground": true,
+      "prompt": "Reorganize estes MESMOS três quadros do mesmo rato em folha horizontal com3 células iguais e alpha transparente real. PRESERVAR pelagem, identidade, direção para direita, poses e acabamento pintura dark fantasy. CORRIGIR APENAS espaçamento e enquadramento: cada rato incluindo cauda e bigodes ocupa no máximo70% da largura de sua célula, com15% de margem transparente em cada lado; nenhum pixel de um rato pode entrar na célula vizinha. A cauda inteira deve permanecer visível em todos. Todas as patas apoiadas na MESMA linha de base a75% da altura da célula, a MESMA escala; centros do corpo alinhados. Canvas1536x512, três células512x512 sem linhas. O quadro central levanta a cabeça para respirar, não aumentar escala do rato. Nada de fundo, chão, sombras, letras, números ou molduras. Manter 3quadros, não espelhar a direção."
+    }
+  ]
+}

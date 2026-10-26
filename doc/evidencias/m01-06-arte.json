@@ -1,0 +1,148 @@
+{
+  "browser": "156.0.8078.47",
+  "engine": "MV 1.6.1",
+  "viewport": "1100x800",
+  "game": "816x624",
+  "checks": [
+    "title-entry-map2",
+    "native-tiles-and-character",
+    "rat-frame-sequence-0-1-2-1",
+    "movement",
+    "save-load-map-images-native-hp-and-own-resource",
+    "wall-collision",
+    "native-event-illustration",
+    "no-MQ01-progress",
+    "return-original-laboratory",
+    "zero-missing-files-and-pageerrors"
+  ],
+  "observedRatFrames": [
+    0,
+    96,
+    192,
+    96
+  ],
+  "errors": [],
+  "editor": "not executed for new sample",
+  "galaxyA56": "not executed",
+  "alphaChecks": {
+    "img/characters/$Arena_Breton_Pilot.png": [
+      [
+        11,
+        4,
+        37,
+        62
+      ],
+      [
+        10,
+        5,
+        37,
+        62
+      ],
+      [
+        11,
+        4,
+        36,
+        62
+      ],
+      [
+        8,
+        5,
+        39,
+        62
+      ],
+      [
+        15,
+        4,
+        33,
+        62
+      ],
+      [
+        8,
+        5,
+        39,
+        62
+      ],
+      [
+        8,
+        7,
+        39,
+        62
+      ],
+      [
+        15,
+        5,
+        33,
+        62
+      ],
+      [
+        8,
+        6,
+        40,
+        62
+      ],
+      [
+        10,
+        7,
+        38,
+        62
+      ],
+      [
+        10,
+        8,
+        38,
+        62
+      ],
+      [
+        10,
+        6,
+        38,
+        62
+      ]
+    ],
+    "img/pictures/arena_rato_respiracao_v01.png": [
+      [
+        5,
+        29,
+        91,
+        60
+      ],
+      [
+        5,
+        19,
+        90,
+        60
+      ],
+      [
+        4,
+        29,
+        92,
+        60
+      ]
+    ],
+    "img/pictures/arena_icones_v01.png": [
+      [
+        2,
+        5,
+        30,
+        30
+      ],
+      [
+        5,
+        2,
+        27,
+        30
+      ],
+      [
+        5,
+        2,
+        26,
+        30
+      ]
+    ]
+  },
+  "evidenceImages": [
+    "doc/evidencias/m01-06-mapa.png",
+    "doc/evidencias/m01-06-ria.png",
+    "doc/evidencias/m01-06-loop.gif"
+  ]
+}
