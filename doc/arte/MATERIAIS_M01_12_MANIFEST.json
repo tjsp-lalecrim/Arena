@@ -1,0 +1,278 @@
+{
+  "version": "M01-12/material-v01",
+  "scope": "Minimum torso material treatment, no new silhouettes or character regeneration; artistic review pending",
+  "materials": [
+    {
+      "file": "art/m01-12/couro-v01.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "67585af927504653e1c22b50ea69255430eaaec3008211bbeb660f00e7ba829a",
+      "bytes": 3930086
+    },
+    {
+      "file": "art/m01-12/malha-v01.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "aa3935505ec2ac998582b782f6ce78e4c0ad41e5f354749260e2f1619c84c0fe",
+      "bytes": 3067286
+    },
+    {
+      "file": "img/pictures/Arena_material_couro_v01.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "e06ccb84157e35c7b41b7585fbd14db92e3e6b2b81def47ef9ea18479b4f052e",
+      "bytes": 10686
+    },
+    {
+      "file": "img/pictures/Arena_material_malha_v01.png",
+      "size": [
+        64,
+        64
+      ],
+      "sha256": "c44e0b060cb3c3343d61911146475fd5637ae21166d14ee536f9218bac3b9414",
+      "bytes": 12927
+    }
+  ],
+  "baseReferences": [
+    {
+      "identity": "argonian.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_argonian_male_r02.png",
+      "sha256": "83980fc933ad5272eb8ac85181c6393774a73c1732ad55315f6e1b1c7fad3263",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "argonian.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_argonian_male_r03.png",
+      "sha256": "6052e8ad8c11bc8d2a4c0fed51d600cacfd52faed2c247c6f3ad7db5207f8c4a",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "argonian.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_argonian_female_r02.png",
+      "sha256": "5f8780c82496202397bbd4a4b0b6777e15fd7fb5e563079215fffbc14379f0b9",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "argonian.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_argonian_female_r03.png",
+      "sha256": "932402c4ad2b7c471dcea5fbcb223137dfa59b965cc2f3087253cf60fb0e68a9",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "breton.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_breton_male_r02.png",
+      "sha256": "6d79ae95ba1ee5f39052da79713d488fc4af3fe1410afa73098ef8d3b41abc52",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "breton.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_breton_male_r03.png",
+      "sha256": "bf3252e2bdbba784decfe034380cf96f1e49aad1fcdde85dd641b8c13a90163b",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "breton.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_breton_female_r02.png",
+      "sha256": "967c6c9244edd3c8205911e4a62d1d2d9179320e3075dc6d5fc99a5a357a50f0",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "breton.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_breton_female_r02.png",
+      "sha256": "d46343f5af25c51376c299a02f8837c2cffd0473deaecc41e158684ae482bc41",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "dark_elf.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_dark_elf_male_r02.png",
+      "sha256": "5e38c9de6cee32db60a44a558f3fb6a5b1eb3b77492f1bba227dfa54711d5f9b",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "dark_elf.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_dark_elf_male_r03.png",
+      "sha256": "2b9d7e69c88b44e31b42271da4269cf3ed31fa357fab5aaba86f706d5b308301",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "dark_elf.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_dark_elf_female_r02.png",
+      "sha256": "93c6dade4a5357b8e8d39bf0ddc5f3f72642b1e5a4213409069e5223ac02f165",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "dark_elf.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_dark_elf_female_r03.png",
+      "sha256": "3df79c7de3b1e851ffaad2eab0f35f1b8b92cc8a518fd68369739b8c29d2713c",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "high_elf.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_high_elf_male_r02.png",
+      "sha256": "a4fc99ef345b5adb18ef8a3cdc6e8c69ec1254130c857ec217030c001041dcc3",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "high_elf.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_high_elf_male_r03.png",
+      "sha256": "c2c913292b0e47a4c1351be13a75c0e72e3e7338aec84d455d9045a5382f6ab6",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "high_elf.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_high_elf_female_r02.png",
+      "sha256": "86614c8bc4d02847a9eea843cecd160c5d909ecdbb4c8aae5e06f912f799b579",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "high_elf.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_high_elf_female_r03.png",
+      "sha256": "e935c610ee7ddfd2d311cd9c3e1900044039dd1b1597a0c02c6682b5490d67ea",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "khajiit.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_khajiit_male_r02.png",
+      "sha256": "3d471b29ef64e1b3216a24fa3bbc2b8b17e536615a61e1b0016cc8f411734226",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "khajiit.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_khajiit_male_r03.png",
+      "sha256": "73c99372e205c356d0df973df9dd3fa16360f5e21d270a2c654d17b5b3414e7d",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "khajiit.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_khajiit_female_r02.png",
+      "sha256": "543034c53b6f349ce50df5520402eca81cc8fd87f427192bfde29bc40a21977e",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "khajiit.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_khajiit_female_r03.png",
+      "sha256": "793069cf887a9b82aa596b9ca8a8b7de82e6540f8eb7453856f4f937f141cc64",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "nord.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_nord_male_r02.png",
+      "sha256": "563655164c734c5538b763fa7f70dcd50d7c7a384d2823673347310462b188c1",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "nord.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_nord_male_r03.png",
+      "sha256": "51b7b44736d4c9bc8a7e3d54e5776d371edaee3b2f7e6b07daaa56c5b65046b7",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "nord.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_nord_female_r02.png",
+      "sha256": "790a8f2273029585e1c97dff271ac9c5109a9c6310a37c813fc1cd7a791d58d3",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "nord.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_nord_female_r03.png",
+      "sha256": "95492dec3640d458d8ce97c5ee7d26b93299a4e93b778fcb0b1869bcdc1d1362",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "redguard.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_redguard_male_r02.png",
+      "sha256": "9c4b81a0d6d5db4a59a47c624db5856d08019508119632ae239dc788c9116264",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "redguard.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_redguard_male_r03.png",
+      "sha256": "b7ca5cd58ac3757c8c0c3e057abccadbb12a78763d81cf0622fe31f7d138e506",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "redguard.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_redguard_female_r02.png",
+      "sha256": "9d018b7357a9fe247b5d9b4cb07b85bd4e901c358d4073d477cfff5a9765f90a",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "redguard.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_redguard_female_r03.png",
+      "sha256": "48d6fa890b4d8416233002a558d1d0e88bdae6681b9ff68c8553b2fe5a1ee1c9",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "wood_elf.male.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_wood_elf_male_r02.png",
+      "sha256": "7de07fced5a14a774ec470cd2f18ffd915286fa4f6906641dc3a96d5b082e986",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "wood_elf.male.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_wood_elf_male_r03.png",
+      "sha256": "50be323bd1950f31115e180aedb9c4d87cdfa8aabd3b0e89323304fc9fe3329f",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "wood_elf.female.base",
+      "kind": "map",
+      "file": "img/characters/$Arena_wood_elf_female_r02.png",
+      "sha256": "306bd018f1ee2a1fb8a59a6989efeedd45d1008a8bc2d88ebf75b9523f1927c4",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    },
+    {
+      "identity": "wood_elf.female.base",
+      "kind": "battle",
+      "file": "img/sv_actors/Arena_Combat_wood_elf_female_r03.png",
+      "sha256": "e562e1e4813ae6985e9b25e75f38031d0bcdac13b114b9c9e97e885a147a91a3",
+      "baseVersion": "6e59882: approved source, reused without modification; not supplied to imagegen material-only calls"
+    }
+  ],
+  "wiki": {
+    "file": "doc/wiki/Arena_Base Armor - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+    "pagesRead": [
+      1,
+      2
+    ],
+    "sha256": "bab0f3746e5c6ec76873945fa02d8a5ac11138988dce141d831759f725df49ec",
+    "use": "Leather/Chain identities and existing -3/-6 source; approved DEF+3/+6 retained. Original professional restrictions/weight/other armor parts not imported."
+  },
+  "technicalExport": "tools/pack-equipment-materials.cjs: browser canvas64x64, same sampler size as renderer; AI masters1254x1254 retained. No character artwork redrawn."
+}
