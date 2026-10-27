@@ -128,3 +128,7 @@ config={'schemaVersion':1,'mapId':8,'laboratory':{'mapId':7,'x':8,'y':6},'start'
 config.update(schemaVersion=3,swimming={'enabled':True,'regionId':2,'autotileKind':0,'depth':24,'offsetY':10},doorAnimationFrames=30,treasurePreviewOnly=True,attachments=attachments)
 write('data/ArenaDungeon.json',config)
 print('compiled fixed map',W,H,'doors',len(hooks),'events',len(m['events'])-1,'start',config['start'],'key',key,'gate',end)
+# Append M01-15 from the same original enemy markers after every map rebuild.
+import subprocess
+if (ROOT/'tools/build-encounters.cjs').exists():
+ subprocess.run(['node','tools/build-encounters.cjs'],cwd=ROOT,check=True)

@@ -1,0 +1,1348 @@
+{
+  "schemaVersion": 1,
+  "mapId": 8,
+  "areaId": "imperial-dungeons",
+  "completionQuestId": "MQ01",
+  "entries": [
+    {
+      "id": "imperial.enemy.01",
+      "eventId": 169,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        37,
+        16
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.02",
+      "eventId": 170,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        148,
+        16
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.03",
+      "eventId": 171,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        109,
+        19
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.04",
+      "eventId": 172,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        34,
+        22
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.05",
+      "eventId": 173,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        82,
+        22
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.06",
+      "eventId": 174,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        91,
+        22
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.07",
+      "eventId": 175,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        13,
+        25
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.08",
+      "eventId": 176,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        49,
+        25
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.09",
+      "eventId": 177,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        58,
+        25
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.10",
+      "eventId": 178,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        139,
+        25
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.11",
+      "eventId": 179,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        148,
+        25
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.12",
+      "eventId": 180,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        13,
+        28
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.13",
+      "eventId": 181,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        61,
+        28
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.14",
+      "eventId": 182,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        103,
+        28
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.15",
+      "eventId": 183,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        124,
+        28
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.16",
+      "eventId": 184,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        88,
+        31
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.17",
+      "eventId": 185,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        103,
+        31
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.18",
+      "eventId": 186,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        133,
+        31
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.19",
+      "eventId": 187,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        109,
+        34
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.20",
+      "eventId": 188,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        82,
+        37
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.21",
+      "eventId": 189,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        91,
+        37
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.22",
+      "eventId": 190,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        10,
+        40
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.23",
+      "eventId": 191,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        67,
+        43
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.24",
+      "eventId": 192,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        76,
+        43
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.25",
+      "eventId": 193,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        103,
+        43
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.26",
+      "eventId": 194,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        31,
+        46
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.27",
+      "eventId": 195,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        13,
+        49
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.28",
+      "eventId": 196,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        34,
+        49
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.29",
+      "eventId": 197,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        73,
+        49
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.30",
+      "eventId": 198,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        88,
+        52
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.31",
+      "eventId": 199,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        13,
+        58
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.32",
+      "eventId": 200,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        19,
+        58
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.33",
+      "eventId": 201,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        118,
+        58
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.34",
+      "eventId": 202,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        46,
+        61
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.35",
+      "eventId": 203,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        19,
+        64
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.36",
+      "eventId": 204,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        46,
+        64
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.37",
+      "eventId": 205,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        103,
+        79
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.38",
+      "eventId": 206,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        79,
+        82
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.39",
+      "eventId": 207,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        115,
+        91
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.40",
+      "eventId": 208,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        58,
+        94
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.41",
+      "eventId": 209,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        97,
+        97
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.42",
+      "eventId": 210,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        37,
+        100
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.43",
+      "eventId": 211,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        70,
+        100
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.44",
+      "eventId": 212,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        79,
+        100
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.45",
+      "eventId": 213,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        16,
+        103
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.46",
+      "eventId": 214,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        49,
+        103
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.47",
+      "eventId": 215,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        52,
+        103
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.48",
+      "eventId": 216,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        19,
+        106
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.49",
+      "eventId": 217,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        31,
+        106
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.50",
+      "eventId": 218,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        67,
+        106
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.51",
+      "eventId": 219,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        73,
+        109
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.52",
+      "eventId": 220,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        85,
+        109
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.53",
+      "eventId": 221,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        28,
+        115
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.54",
+      "eventId": 222,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        31,
+        115
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.55",
+      "eventId": 223,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        37,
+        115
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.56",
+      "eventId": 224,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        73,
+        115
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.57",
+      "eventId": 225,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        97,
+        115
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.58",
+      "eventId": 226,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        79,
+        118
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.59",
+      "eventId": 227,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        139,
+        118
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.60",
+      "eventId": 228,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        43,
+        121
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.61",
+      "eventId": 229,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        61,
+        121
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.62",
+      "eventId": 230,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        25,
+        124
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.63",
+      "eventId": 231,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        43,
+        124
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.64",
+      "eventId": 232,
+      "enemyId": 2,
+      "troopId": 2,
+      "origin": [
+        115,
+        127
+      ],
+      "sourceFlat": "goblin.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.6
+    },
+    {
+      "id": "imperial.enemy.65",
+      "eventId": 233,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        13,
+        130
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.66",
+      "eventId": 234,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        100,
+        133
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    },
+    {
+      "id": "imperial.enemy.67",
+      "eventId": 235,
+      "enemyId": 1,
+      "troopId": 1,
+      "origin": [
+        88,
+        136
+      ],
+      "sourceFlat": "rat.dfa",
+      "questSpecific": false,
+      "radius": 3,
+      "interval": 90,
+      "regions": [
+        3,
+        4,
+        5
+      ],
+      "scale": 0.5
+    }
+  ]
+}
