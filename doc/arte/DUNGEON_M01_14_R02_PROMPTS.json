@@ -1,0 +1,43 @@
+{
+  "round": "M01-14 R02",
+  "date": "2026-10-27",
+  "tool": "built-in image_gen",
+  "approval": {
+    "baseVersion": "4161615",
+    "scope": "Direção gráfica e fidelidade estrutural aprovadas pelo responsável; não aprovação automática das novas variantes R02."
+  },
+  "generations": [
+    {
+      "prompt": "Use case: stylized-concept. Create a production sprite atlas for Arena RPG Maker MV dungeon revision. Input1 is the APPROVED dungeon material/style reference, input2 is original Arena treasure identity reference (ignore white background; reinterpret bag, coins, folded red cloth, small weapon/equipment pile). Preserve cold charcoal masonry, aged dark wood/iron and painterly realistic dark fantasy. Transparent background, NO room backgrounds, no text, no labels, no people. Atlas exactly 1536x1536, three equal columns and SIX equal rows, each cell512x256. Leave safe transparent margins in every cell; identical size and ground pivot across columns. Fixed camera elevated topdown 2D RPG, not first person. Rows1-4: same wooden iron-bound dungeon double door, with jambs ONLY TWO wall tiles high (width144 height96 at runtime), no roof/cap/cornice. Row1 visible south face, doorway runs east-west and passage north-south; row2 north/back face, same passage, elevated camera sees back and appropriate top edge; row3 east face, doorway runs north-south and passage east-west, clearly oblique foreshortened side jamb; row4 west face, opposite side correctly lit from upperleft, not mirrored lighting. In each door row col1 CLOSED leaves block aperture, col2 HALF OPEN leaves rotating consistently about jamb hinges, col3 FULL OPEN leaves folded against jambs with aperture empty and transparent. Preserve all wood/iron/hinges across frames, no sliding whole assembly, no changes in scale. Row5: compact ORIGINAL ARENA-like treasure ground pile, not generic chest: gold coins and brown sack with folded red cloth and modest dagger/hilt detail, camera above, readable48x48; col1 available intact pile, col2 opened sack fewer coins, col3 collected remnant empty sack/redcloth only. No magical glow/rarity highlight. Row6: THREE consecutive subtle water ripple/effect frames, each an isolated low oval ring/small cool blue ripple around transparent center, 96x32 runtime, no character. No frame borders or shadows beyond object contact. Assets must occupy their own cell, never overlap, no white matte, genuine alpha. Correct orientation is critical; doors are fitted wall apertures, no brick roof above them.",
+      "inputs": [
+        {
+          "file": "art/m01-14/complementos-prisao-v01.png",
+          "role": "style/material architecture reference"
+        },
+        {
+          "file": "doc/prints/arena_loot.jfif",
+          "role": "original treasure identity; white background ignored"
+        }
+      ],
+      "output": "art/m01-14/portas-tesouros-r02-master.png",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "requestedGrid": "1536x1536 3 columns 6 rows",
+      "deviation": "Actual row spacing differs; explicit inspected crop bounds in build-dungeon-objects.py"
+    },
+    {
+      "prompt": "Use case: stylized-concept. Reference1 is approved cold gray stone/iron material style for Arena dark fantasy. Generate a transparent game object atlas, exactly1024x1024, 2x2 equal square panels, no borders/text. Same prison wall attachment in FOUR ORIENTATIONS with fixed elevated topdown RPG camera: top left SOUTH-facing wall (front visible, wall runs horizontal), top right NORTH-facing (back/upperedge visible, not a frontal duplicate), bottom left EAST-facing wall running vertical recedes north, bottom right WEST-facing wall running vertical recedes north. Each assembly is a small barred dark niche with two dangling heavy iron restraint chains and ring/manacles on cold worn stone, matching reference's lower right panel but on only TWO courses of wall, no roof/cap above. Entire object within transparent margins, size144x96 runtime. Perspective must fit topdown RPG walls, no freestanding door, floor, characters, hands or text. Correct each direction's perspective and upper-left lighting independently, no mirror-lighting. No animation necessary, heavy static chains. Include one tiny separate ruby-headed iron key lying flat on ground at bottom center of EACH panel beneath assembly, leave generous separation for cropping, same key shape in all panels; groundkey is not attached to wall. Painterly dark fantasy, coherent scale and tactile detail, no gothic ornament. True alpha.",
+      "inputs": [
+        {
+          "file": "art/m01-14/complementos-prisao-v01.png",
+          "role": "prison chain/niche material/style"
+        }
+      ],
+      "output": "art/m01-14/objetos-direcionais-r02-master.png"
+    }
+  ],
+  "preservation": "Masters v01 and approved surfaces/characters preserved; R02 files separate. No rarity glow, protagonists or reward-rule edits.",
+  "status": "R02 technical integration, aesthetic and directional fit awaiting responsible evaluation"
+}
