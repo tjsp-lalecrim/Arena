@@ -14,11 +14,14 @@ Ressalvas **não bloqueantes**, não implementadas:
 | Planta/direção e encaixes visuais | Aprovação atual aceita a R03 com as ressalvas acima; relatos R03 de estética pendente ficam históricos |
 | Caminhos, portas, colisões, pontos essenciais | Evidências R03:28 travessias,14 portas, cinco cenários integrados e seis de regressão;9045tiles conectados e1092 bordas água/sólido bloqueadas |
 | Persistência e geradores | R03: salvar na água/porta aberta, migração R02, oito outputs idênticos ao recompilar; sem novos testes de custo aquático |
+| Execução pelo MV1.6.1 | Responsável confirmou em27/10/2026 que Explorar Dungeon executou até o ponto testado; estado disponível031a58b, sem hash próprio informado. Não comprova edição/salvamento/reabertura ou percurso completo |
 | Integridade atual | validate-dungeon.cjs reexecutado com sucesso nesta rodada; regras/engine/mapas1–7/plugins.js/estrutura preservados. As baterias R03 anteriores não foram apresentadas como repetidas agora |
 | Autoria MV1.6.1 | **Ainda sem evidência de abrir Map008, editar, salvar e reabrir**. Nova tentativa encontrou janela Arena, mas captura retornou timeout e botão acessível retornou elemento indisponível no cache. Atalho de abertura não produziu confirmação de diálogo/projeto. Nenhuma escrita de projeto pelo editor foi comprovada |
-| Galaxy A56 físico | Não executado; manter separado, sem atribuir ao print |
+| Galaxy A56 físico | Pendente da integração mobile; não é bloqueio desta etapa desktop |
 
 **M01-14: visual aprovado, fechamento ainda pendente da verificação de autoria.** Em27/10/2026, o responsável respondeu à pergunta sobre abrir Map008, editar, salvar e reabrir na versão aprovada: **“Ainda não verifiquei no editor”**. Portanto, essa pendência está confirmada como não testada, e não apenas sem relato. O pedido condiciona integração a critérios atendidos; não foi feito merge em develop nem iniciado M01-15. A resposta não revoga a aprovação visual nem autoriza ignorar o teste.
+
+Posteriormente o responsável confirmou o playtest acima e autorizou teste reversível em cópia. Cópia pronta e original conferido,273 arquivos de execução iguais; a operação por acessibilidade falhou, sem novas capturas ou comandos de edição/salvamento no original. **TESTE_EDITOR_M01_14.md** contém caminho exato, nome do mapa, alteração segura e cinco passos manuais. A autorização para integrar e iniciar M01-15 permanece válida após passar essa verificação, sem nova confirmação de escopo.
 
 ## Continuidade já identificada, ainda não iniciada
 

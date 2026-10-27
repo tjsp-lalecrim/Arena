@@ -70,6 +70,13 @@
       "reviewedVersion": "b194b44",
       "answer": "Ainda não verifiquei no editor",
       "openEditSaveReopenTested": false
+    },
+    "editorExecutionReply": {
+      "date": "2026-10-27",
+      "availableVersion": "031a58b; hash próprio não informado",
+      "verified": "Execução de Explorar Dungeon pelo MV1.6.1 até o ponto testado",
+      "mapEditSaveReopenVerified": false,
+      "physicalA56Verified": false
     }
   },
   "sources": [

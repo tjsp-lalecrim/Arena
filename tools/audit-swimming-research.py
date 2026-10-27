@@ -19,6 +19,7 @@ report['approval']['runtimeFilesAtApprovedVersion']=[dict(v,file=v['file'].repla
 assert len(report['approval']['runtimeFilesAtApprovedVersion'])==5,'approval file trace must not be empty'
 previous=out/'fontes-e-condicoes.json'
 if previous.exists():
- manual=json.loads(previous.read_text(encoding='utf8')).get('approval',{}).get('editorManualReply')
- if manual:report['approval']['editorManualReply']=manual
+ recorded=json.loads(previous.read_text(encoding='utf8')).get('approval',{})
+ for key in ['editorManualReply','editorExecutionReply']:
+  if key in recorded:report['approval'][key]=recorded[key]
 (out/'fontes-e-condicoes.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('Research audit written; controlled game/editor tests remain explicitly unverified; copy differences:',different)

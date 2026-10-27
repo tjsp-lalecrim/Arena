@@ -23,7 +23,7 @@ Não foram repetidas capturas de tela. Tentou-se abertura da cópia por argument
 1. No MV1.6.1, use **Arquivo → Abrir Projeto** e escolha o **Game.rpgproject da cópia acima**, não o de Projects\Arena.
 2. Na árvore, clique com o botão direito em **M01-14 Masmorras Imperiais** (**ID008**) → **Editar…**. Em **Nome de Exibição**, altere `Masmorras Imperiais` para `Masmorras Imperiais [TESTE EDICAO]`. Não desenhe tiles nem mude eventos. Confirme com OK.
 3. Salve com **Ctrl+S**. Feche e abra novamente **a mesma cópia temporária**; volte ao mapa ID008 e confirme o nome de exibição com `[TESTE EDICAO]`, tamanho **156×156** e tileset **M01 Masmorras Imperiais**.
-4. Em modo Eventos, abra o evento **062 — door.07 / 1,2**: confirme as **duas páginas** e o self-switch **A** da segunda. Saia sem mudar o evento.
+4. Em modo Eventos, abra o evento **062 — door.07 / 1,2**, posição **(139,74)**: confirme as **duas páginas** e o self-switch **A** da segunda. Saia sem mudar o evento.
 5. Abra **Gerenciador de Plugin…** e confira que a lista abre sem erro e **Arena_Dungeon** permanece ativado; não altere plugins. Informe o resultado dos passos3–5. A alteração do nome pode ser desfeita depois, apenas na cópia; mantê-la até a conferência permite verificar o arquivo salvo.
 
 A confirmação pode ser curta: “Na cópia temporária, reabri ID008 com o nome de teste salvo, propriedades/evento062 corretos e gerenciador de plugins abrindo”. Se algo falhar, informar etapa e mensagem, sem corrigir diretamente o original.
