@@ -1,0 +1,48 @@
+{
+  "version": "M01-14/v01",
+  "status": "New supplements and derived map pending owner evaluation",
+  "sourcesAndExports": [
+    {
+      "file": "art/m01-14/complementos-prisao-v01.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "b3cda49746b01320d468c7c49af3179778406ef9d5894ddf26963d11c05a938a"
+    },
+    {
+      "file": "img/tilesets/Arena_Dungeon_M14.png",
+      "dimensions": [
+        768,
+        768
+      ],
+      "sha256": "0857bbd38f0b04850bb730a56e8eea9b441971a4c9a5f328a57360ed4a99597f"
+    },
+    {
+      "file": "img/tilesets/Arena_Prison_R04.png",
+      "dimensions": [
+        768,
+        768
+      ],
+      "sha256": "7408b6ee557ebbd1f02af77c46b810b9b6befa5f67818befcbb3a7068fc7c487"
+    },
+    {
+      "file": "art/masters/revisao-r02/dungeon-identidade-r02.png",
+      "dimensions": [
+        1374,
+        1145
+      ],
+      "sha256": "7fa442a9968b19edecdb4db3cd0d25cffd2ec9518a6ead1e1df523398154857d"
+    },
+    {
+      "file": "img/pictures/arena_icones_v01.png",
+      "dimensions": [
+        96,
+        32
+      ],
+      "sha256": "2ee86a876fd4bd904f62218d11ebb8d2691d51e45b1b3e701269dd980e6c31a5"
+    }
+  ],
+  "packer": "tools/build-dungeon-map.py",
+  "preservation": "No previous asset overwritten; no source game textures or binary distributed. Transparent empty bank0; opaque neutral void is nonvisual space, floor/cap/faces/props derive AI artwork."
+}
