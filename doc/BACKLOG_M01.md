@@ -146,3 +146,7 @@ R04 em feature/m01-identidade-e-auditoria-racial: dois pilotos masculinos Argoni
 
 
 M01-12 R02 (26/10/2026): inventário anterior considerado bom pelo responsável; refinados slots equipados com ícones e comparação visual dos parâmetros finais. Testes/evidências R02 registrados no relatório e VALIDACAO_M01. Mesma feature, sem integração automática; avaliação das mudanças R02 e cobertura artística mínima permanecem pendentes. Não iniciar M01-13.
+
+## Fechamento M01-13 — 26/10/2026
+
+Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar versão própria/dispositivo ou casos adicionais. Destaque visual de raros é melhoria futura, não implementada. Aprovação limitada ao menu; critérios funcionais revisados separadamente:11 cenários MV,24 matrizes, reservas/save/load/quest/derrota/abort/rollback e regressões registrados em evidencias/m01-13. Validador estático reexecutado neste fechamento; não alegar reexecução de todas as suítes. M01-13 concluído tecnicamente, com economia provisória e testes editor/A56 ainda separados. Integração/publicação em develop autorizadas; sem main/release.

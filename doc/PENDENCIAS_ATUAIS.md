@@ -120,3 +120,7 @@ Autoria: gerenciador abriu e projeto foi salvo/fechado/reaberto pelo editor usan
 ## Estado atual após criação M01-07
 
 M01-06 concluído como primeira amostra desktop conforme matriz ENCERRAMENTO_AMOSTRA_M01_06.md, integrado em develop. M01-07 criação-base implementada e validada em desktop em feature própria:16 combinações, nome, bônus e save/load. Relatório M01_07_CRIACAO.md. As esperas anteriores de todo catálogo/combate não bloqueiam mais os exemplos já demonstrados; biblioteca animada, visuais de armadura e A56 permanecem nos itens próprios. Novas variantes precisam de revisão estética pelo responsável, sem regenerar as aprovadas sem necessidade. Não implementar dungeon final, aliados ou outra feature nesta rodada.
+
+## Fechamento M01-13 — 26/10/2026
+
+Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar versão própria/dispositivo ou casos adicionais. Destaque visual de raros é melhoria futura, não implementada. Aprovação limitada ao menu; critérios funcionais revisados separadamente:11 cenários MV,24 matrizes, reservas/save/load/quest/derrota/abort/rollback e regressões registrados em evidencias/m01-13. Validador estático reexecutado neste fechamento; não alegar reexecução de todas as suítes. M01-13 concluído tecnicamente, com economia provisória e testes editor/A56 ainda separados. Integração/publicação em develop autorizadas; sem main/release.
