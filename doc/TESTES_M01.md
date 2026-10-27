@@ -112,3 +112,8 @@ Verificar estoque alterado após prévia, capacidade de devolução cheia, repet
 ## Integração M01-13
 
 M01-13: tools/validate-loot.cjs (24 matrizes e preservação), tools/test-loot.cjs (11 cenários nativos/contratos), tools/test-loot-presentation.cjs (mobile/reserva/rolagem), regressões test-inventory e test-inventory-touch com ARENA_EVIDENCE_DIR=doc/evidencias/m01-13/regressao-inventario. ARENA_PLAYWRIGHT aponta runtime Playwright; ARENA_URL para servidor descartável. Contextos próprios e save20, sem saves pessoais. Não trocar tabelas distribuídas para forçar raros. Manifesto/hash e limites em evidencias/m01-13 e LOOT_M01_13.md. Validação editor/A56 não inferida.
+
+
+## Atualização M01-14
+
+M01-14: tools/validate-dungeon.cjs e tools/test-dungeon.cjs; Chrome em contexto descartável, ARENA_PLAYWRIGHT/ARENA_URL, save20 isolado. Caminhada nativa pela rota, porta acionada por teclado, piso/sólidos, save/load e laboratório; ferramentas de imagem apenas montagem técnica. Editor tentativa falhou e não conta como aprovação. Evidências em evidencias/m01-14; regressões loot11/persistência27. Não sobrescrever históricos: test-loot aceita ARENA_EVIDENCE_DIR nesta revisão.

@@ -251,3 +251,8 @@ Responsável aprova combate/animações atuais na solicitação de refinamento d
 ## Integração M01-12
 
 M01-12 reutiliza pixels/poses aprovados das16 identidades. Somente dois materiais IA gerados: couro/malha, com prompts completos, hashes, dimensões, masters e arquivos de consumo em arte/MATERIAIS_M01_12_*.json e art/m01-12. Aplicação em regiões de torso é amostra técnica mínima, não silhueta completa/figurino final ou aprovação estética. Mapas/retratos/narrativa/animações não foram regenerados. Avaliar encaixe e leitura antes de expandir produção; limites e cobertura em INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+
+## Atualização M01-14
+
+M01-14 reutiliza piso/alvenaria R04 e sprites aprovados; um atlas IA complementar v01 (cap/porta/Gate quadrado azul/água/plataforma/correntes). Prompts/referências efetivas em arte/DUNGEON_M01_14_PROMPTS.json. Cor azul do Gate vem do print original, sem trocar por portal circular genérico. Não há narrativa com protagonista. Recortes/células/escala e simplificações constam em DUNGEON_M01_14.md e dependem de avaliação do responsável; não promover complementos a aprovados automaticamente.

@@ -110,3 +110,8 @@ M01-12 não muda Actors/Classes/Weapons/Armors/Items/Skills ou os valores aprova
 ## Integração M01-13
 
 M01-13: Weapons3/4 e Armors3/4 são variantes raras dos IDs1/2, mesmo tipo/arte/material, +1 provisório ATQ ou DEF, nomes/descrições/tag ArenaRare próprios. Registros anteriores intactos. ArenaLoot.json contém tabelas por espécie e referências pesadas; dificuldade não é nível de ator nem regra racial. Enemies.gold/dropItems nativos continuam zerados; plugin ignora esses pagamentos para evitar duplicação. Fonte de chave continua importante1/claimSource, sem colocação aleatória na campanha. Detalhes/fontes em LOOT_M01_13.md.
+
+
+## Atualização M01-14
+
+M01-14: Map008, MapInfos8, Tileset4/Arena_Dungeon_M14. Mapas1–7/banco de personagem/combate intactos. Config de pontos e portas em ArenaDungeon.json; topologia interpretada/autorizada em doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json. Regiões1sólido/2água/3plataforma/4piso só para diagnóstico, sem mapa-guia runtime. MIF/texturas originais não distribuídos.

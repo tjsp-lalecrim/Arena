@@ -1,0 +1,56 @@
+{
+  "comparison": "Raster cell-center solid vs open outline, not full 3D collision or object behavior",
+  "matchingCells": 2500,
+  "totalCells": 2500,
+  "differences": [],
+  "originalMifEqualsIgnoredCopy": true,
+  "sources": [
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\ARENA\\START.MIF",
+      "size": 2328,
+      "sha256": "16b4b200c0845c6aeab9af22cdf7b7655422dcaad73b5a639c1be0308389c7ee"
+    },
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\ARENA\\GLOBAL.BSA",
+      "size": 16802136,
+      "sha256": "345385c1565d9ca73e2d59d71a422498135485e2d01d4df66355ed804209042d"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\START.MIF",
+      "size": 2328,
+      "sha256": "16b4b200c0845c6aeab9af22cdf7b7655422dcaad73b5a639c1be0308389c7ee"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Imperial Dungeons (quest) - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "size": 390978,
+      "sha256": "ae00e736f5920f235bdf92aabcc607e438c884984cee6291e191e5bd8392d4e1"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\START.INF",
+      "size": 3343,
+      "sha256": "1047df797eebbf873df28f36f6ab8d74364732dc7b4e80d6ec21e968998f74e8"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\imperial dungeons map.png",
+      "size": 9473,
+      "sha256": "bd293ef20e2f3775c12f1658f6dfe2c0ec4da8ac05200e78e21622930590c275"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\imperial dungeons 07.png",
+      "size": 198201,
+      "sha256": "39d4e259f68cca16279330929c56e89a7f0ac92cfb43bd61795cecb71db76141"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\imperial dungeons exit.jfif",
+      "size": 26819,
+      "sha256": "f0a5f8e05cc6adc5e8713516385a1b03f933d9997dcbe496ced11a2a03f82fdc"
+    }
+  ],
+  "technicalReferenceUrls": [
+    "https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/Assets/MIFFile.cpp",
+    "https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/Assets/Compression.h",
+    "https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/Assets/ArenaTypes.cpp",
+    "https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/World/MapGeneration.cpp"
+  ],
+  "limits": "No DOS executable playtest; lower wet layer flattened for 2D. Original extracted images and binary layers stay ignored; generated map uses AI artwork."
+}
