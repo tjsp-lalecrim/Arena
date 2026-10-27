@@ -115,3 +115,6 @@ M01-13: Weapons3/4 e Armors3/4 são variantes raras dos IDs1/2, mesmo tipo/arte/
 ## Atualização M01-14
 
 M01-14: Map008, MapInfos8, Tileset4/Arena_Dungeon_M14. Mapas1–7/banco de personagem/combate intactos. Config de pontos e portas em ArenaDungeon.json; topologia interpretada/autorizada em doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json. Regiões1sólido/2água/3plataforma/4piso só para diagnóstico, sem mapa-guia runtime. MIF/texturas originais não distribuídos.
+
+
+M01-14 R02: ArenaDungeon schema2, regiões1sólido/2água/3plataforma/4piso/5face-vão/6cap-superior. A1tile2048 só nadável no mapa8/região2; demais colisões nativas. Estado visual/transição de portas serializado no Game_Map, A nativo nos IDs1–126. Migração R01 reconstrói218 eventos em163 sem recriar ator/inventário. Ver DUNGEON_M01_14_R02.md e plugins/Arena_Dungeon.md.

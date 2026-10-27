@@ -105,3 +105,6 @@ M01-13:22 registros canônicos,20 anteriores preservados; após Arena_Inventory,
 ## Atualização M01-14
 
 M01-14: Arena_Dungeon0.1.0 ao fim dos23 registros,22 anteriores integralmente preservados. Config ArenaDungeon.json; entrada técnica/portas nativas, sem schema novo ou código do original. Documentação em plugins/Arena_Dungeon.md. Validação do novo mapa no editor ainda pendente; formato canônico/UTF8 e referências auditados separadamente.
+
+
+Arena_Dungeon atualizado0.2.0 em M01-14 R02: portas3estados/4vistas, águaA1/natação delimitada, prévias de objetos e migração de eventos R01. Configuração/API/dependências em plugins/Arena_Dungeon.md. Sem dependências externas nem novo consumidor de recursos.

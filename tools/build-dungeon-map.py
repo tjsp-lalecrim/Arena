@@ -2,7 +2,7 @@
 AI artwork packing only; raw MIF/extracted materials stay ignored in tmp.
 """
 from pathlib import Path
-from PIL import Image
+from PIL import Image,ImageChops
 import json,copy,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 def read(p):return json.loads((ROOT/p).read_text(encoding='utf8'))
@@ -21,8 +21,26 @@ put(panel(0,1),0,2,(96,96));put(panel(1,0),0,4,(144,144));put(panel(2,0),4,4,(14
 concept=Image.open(ROOT/'art/masters/revisao-r02/dungeon-identidade-r02.png').convert('RGBA');put(concept.crop((1110,125,1230,210)),4,12,(48,48))
 put(Image.new('RGBA',(48,48),'#090c0f'),7,0,(48,48)) # nonvisual void clear; cap and walls retain AI artwork
 icons=Image.open(ROOT/'img/pictures/arena_icones_v01.png').convert('RGBA');pile=Image.new('RGBA',(48,48));pile.alpha_composite(icons.crop((0,0,64,32)).resize((48,24),Image.Resampling.LANCZOS),(0,18));put(pile,5,12,(48,48))
-sheet.save(ROOT/'img/tilesets/Arena_Dungeon_M14.png')
-tiles=read('data/Tilesets.json');t=copy.deepcopy(tiles[3]);t.update(id=4,name='M01 Masmorras Imperiais',note='Layout fixo M01-14. Teto 1 + parede 2; colisão independente; piso/corredor3. Sem autotiles.',tilesetNames=['','','','','','Arena_Dungeon_M14','','','']);t['flags']=[0]*8192;t['flags'][0]=16
+# R02 derivatives are versioned separately; approved v01 remains for comparison.
+sheet.alpha_composite(sheet.crop((192,0,240,48)),(336,48)) # cap overlay tile15
+sheet.save(ROOT/'img/tilesets/Arena_Dungeon_M14_R02.png')
+# Native A1 water, three 96x144 surface blocks. Periodic assembly of the approved
+# water panel; motion is a 2px phase shift, never independently randomized tiles.
+water=panel(0,1).resize((48,48),Image.Resampling.LANCZOS)
+water=Image.blend(water,ImageChops.offset(water,24,24),0.5)
+for y in range(48):
+ for x in range(4):
+  a=water.getpixel((x,y));b=water.getpixel((47-x,y));v=tuple((a[i]+b[i])//2 for i in range(4));water.putpixel((x,y),v);water.putpixel((47-x,y),v)
+for x in range(48):
+ for y in range(4):
+  a=water.getpixel((x,y));b=water.getpixel((x,47-y));v=tuple((a[i]+b[i])//2 for i in range(4));water.putpixel((x,y),v);water.putpixel((x,47-y),v)
+a1=Image.new('RGBA',(768,576))
+for frame in range(3):
+ phase=ImageChops.offset(water,frame*2,0)
+ for y in range(0,144,48):
+  for x in range(0,96,48):a1.alpha_composite(phase,(frame*96+x,y))
+a1.save(ROOT/'img/tilesets/Arena_Water_M14_R02_A1.png')
+tiles=read('data/Tilesets.json');t=copy.deepcopy(tiles[3]);t.update(id=4,name='M01 Masmorras Imperiais',note='R02: teto1 + parede2; portas em face2, colisão independente; natação restrita à região2/mapa8; água A1 própria.',tilesetNames=['Arena_Water_M14_R02_A1','','','','','Arena_Dungeon_M14_R02','','','']);t['flags']=[0]*8192;t['flags'][0]=16;t['flags'][15]=16
 for k in [4,5,6,7,13,14]:t['flags'][k]=15
 # Non-floor decorative bank entries, only used by event graphics.
 for r in range(4,15):
@@ -46,7 +64,7 @@ for y in range(H):
    at(x,y,0,tile);at(x,y,5,1)
   else:
    tile=1+(x%2)+(y%2)*8
-   if c=='~':tile=idat(x%2,2+y%2)
+   if c=='~':tile=2048 # native animated A1 surface, shape0
    elif c=='^':tile=idat(4+dx,8+dy)
    at(x,y,0,tile);at(x,y,5,2 if c=='~' else 3 if c=='^' else 4)
 m=copy.deepcopy(read('data/Map007.json'));m.update(width=W,height=H,data=data,displayName='Masmorras Imperiais',tilesetId=4,events=[None],encounterList=[],encounterStep=30,note='M01-14: mapa estático de teste; sem quests/patrulhas/introdução. Leia DUNGEON_M01_14.md. Esc menu/salvar.');m['scrollType']=0;m['parallaxName']='';m['specifyBattleback']=False
@@ -59,13 +77,24 @@ def event(name,x,y,tile=0,script=None,priority=0,through=True,trigger=0,openPage
  m['events'].append({'id':n,'name':name,'note':'M01-14 geometry/integration only','x':x,'y':y,'pages':pages});return n
 for door in l['doors']:
  x,y=door['cell'];px,py=center([x,y]);horizontal=cellAt(x-1,y)!='#' and cellAt(x+1,y)!='#';ids=[]
- # One collision cross-section in the 3x3 opening; other graphic pieces are through.
+ # Door aperture is a wall-plane: permanent overhead cap + two face rows.
+ # One graphic anchored on the bottom face; other events are invisible colliders.
+ for dx in range(3):
+  at(px+dx-1,py-1,2,15);at(px+dx-1,py-1,5,6)
+  for faceY in [py,py+1]:at(px+dx-1,faceY,5,5)
  for dy in range(3):
   for dx in range(3):
    collider=(dx==1 if horizontal else dy==1)
-   ids.append(event(door['id']+' / '+str(dx)+','+str(dy),px+dx-1,py+dy-1,idat(dx,4+dy),"ArenaDungeon.openDoor('%s');"%door['id'],1,not collider,0,True))
- hooks.append(dict(door,eventIds=ids,center=[px,py],axis='east-west' if horizontal else 'north-south'))
+   n=event(door['id']+' / '+str(dx)+','+str(dy),px+dx-1,py+dy-1,0,"ArenaDungeon.toggleDoor('%s');"%door['id'],1,not collider,0,True);ids.append(n)
+   m['events'][n]['pages'][1]['list']=copy.deepcopy(m['events'][n]['pages'][0]['list'])
+   if dx==1 and dy==2:
+    for p in m['events'][n]['pages']:
+     p['image'].update(characterName='!$Arena_Doors_M14_R02',direction=6 if horizontal else 2,pattern=0)
+     p['directionFix']=True;p['priorityType']=1
+     p['list']=copy.deepcopy(m['events'][n]['pages'][0]['list'])
+ hooks.append(dict(door,eventIds=ids,visualEventId=ids[7],center=[px,py],axis='east-west' if horizontal else 'north-south',capRow=py-1,faceRows=[py,py+1]))
 key=center(l['keyCell']);keyEvent=event('MQ01.key / reservado M01-16',*key,idat(4,12),"$gameMessage.add('Chave de rubi: ponto original.\\nIntegração de MQ01 em M01-16.\\nNenhum item concedido neste teste.');",0,True)
+m['events'][keyEvent]['pages'][0]['image'].update(tileId=0,characterName='!$Arena_Key_M14_R02',direction=2,pattern=1)
 gate=center(l['gateCell']);
 for dy in range(3):
  for dx in range(3):event('Shift Gate / visual',gate[0]+dx-1,gate[1]+dy-1,idat(4+dx,4+dy),None,1,True)
@@ -73,21 +102,25 @@ end=center(l['gateApproach']);gateEvent=event('Shift Gate / contato técnico',*e
 treasures=[]
 for mark in l['reserved']:
  if mark['kind']=='treasure':
-  px,py=center(mark['cell']);n=event('Tesouro / integração M01-16',px,py,idat(5,12),"$gameMessage.add('Tesouro: ponto original.\\nConcessão por fonte em M01-16.\\nNenhum loot concedido neste teste.');",0,True);treasures.append({'eventId':n,'position':[px,py],'sourceFlat':mark['sourceFlat']})
+  px,py=center(mark['cell']);n=event('Tesouro / integração M01-16',px,py,0,"ArenaDungeon.inspectTreasure(%s);"%len(treasures),0,True)
+  m['events'][n]['pages'][0]['image'].update(characterName='!$Arena_Treasure_M14_R02',direction=2,pattern=0)
+  m['events'][n]['pages'][0]['directionFix']=True
+  treasures.append({'eventId':n,'position':[px,py],'sourceFlat':mark['sourceFlat']})
  if mark['kind']=='chains':
   px,py=center(mark['cell']);
-  # Place wall niche only on actual northern solid wall, never over floor.
+  # Orient the assembly toward the source flat, on an actual solid neighbor.
   x,y=mark['cell']
-  adjacent=next(((nx,ny) for nx,ny in [(x,y-1),(x+1,y),(x-1,y),(x,y+1)] if cellAt(nx,ny)=='#'),None)
+  adjacent=next(((nx,ny,d) for nx,ny,d in [(x,y-1,2),(x+1,y,4),(x-1,y,6),(x,y+1,8)] if cellAt(nx,ny)=='#'),None)
   if adjacent:
-   wx,wy=center(adjacent)
-   for dy in range(2):
-    for dx in range(3):event('Vestígio de prisão / correntes',wx+dx-1,wy+dy,idat(dx,12+dy),None,0,True)
+   wx,wy=center(adjacent[:2]);n=event('Vestígio de prisão / correntes',wx,wy+1,0,None,0,True)
+   m['events'][n]['pages'][0]['image'].update(characterName='!$Arena_Chains_M14_R02',direction=adjacent[2],pattern=1)
+   m['events'][n]['pages'][0]['directionFix']=True
 write('data/Map008.json',m)
 infos=read('data/MapInfos.json');info={'id':8,'expanded':True,'name':'M01-14 Masmorras Imperiais','order':8,'parentId':0,'scrollX':0,'scrollY':0}
 if len(infos)==8:infos.append(info)
 else:infos[8]=info
 write('data/MapInfos.json',infos)
 config={'schemaVersion':1,'mapId':8,'laboratory':{'mapId':7,'x':8,'y':6},'start':center(l['startCell']),'key':key,'gateApproach':end,'gateCenter':gate,'keyEvent':keyEvent,'gateEvent':gateEvent,'doors':hooks,'sourceLayout':'doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json','width':W,'height':H,'integration':{'treasures':treasures,'enemies':[{'position':center(v['cell']),'sourceFlat':v['sourceFlat']} for v in l['reserved'] if v['kind']=='enemy'],'platforms':[center([x,y]) for y,r in enumerate(l['rows']) for x,c in enumerate(r) if c=='^'],'ria':center(l['startCell'])}}
+config.update(schemaVersion=2,swimming={'enabled':True,'regionId':2,'depth':24,'offsetY':10},doorAnimationFrames=24,treasurePreviewOnly=True)
 write('data/ArenaDungeon.json',config)
 print('compiled fixed map',W,H,'doors',len(hooks),'events',len(m['events'])-1,'start',config['start'],'key',key,'gate',end)
