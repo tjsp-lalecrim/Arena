@@ -1,0 +1,62 @@
+{
+  "canvas": [
+    816,
+    624
+  ],
+  "examples": [
+    {
+      "eventId": 154,
+      "position": [
+        136,
+        113
+      ],
+      "supportRegion": 1,
+      "pilot": [
+        136,
+        114
+      ],
+      "direction": 2
+    },
+    {
+      "eventId": 146,
+      "position": [
+        148,
+        68
+      ],
+      "supportRegion": 1,
+      "pilot": [
+        146,
+        68
+      ],
+      "direction": 4
+    },
+    {
+      "eventId": 139,
+      "position": [
+        31,
+        17
+      ],
+      "supportRegion": 1,
+      "pilot": [
+        33,
+        17
+      ],
+      "direction": 6
+    },
+    {
+      "eventId": 152,
+      "position": [
+        100,
+        104
+      ],
+      "supportRegion": 1,
+      "pilot": [
+        100,
+        101
+      ],
+      "direction": 8
+    }
+  ],
+  "errors": [],
+  "isolation": "Native map8 scenes, pilot located at nearby floor only for screenshots; no navigation claimed"
+}

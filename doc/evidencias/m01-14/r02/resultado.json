@@ -1,0 +1,45 @@
+{
+  "browser": "156.0.8078.48",
+  "canvas": [
+    816,
+    624
+  ],
+  "viewport": [
+    1100,
+    800
+  ],
+  "checks": [
+    "water entry from marked land, partial submersion/ripple; every water-to-wall edge remains blocked (1092)",
+    "native save19/load in water reconstructs immersion without storing duplicated resource state; exits to bank",
+    "unmarked water/config disabled cannot be entered; native vehicle methods remain untouched",
+    "keyboard and canvas click enter marked water through native movement/pathfinding",
+    "native keyboard door animation closed/half/open, open collision removed once, close restores collision, occupied swing envelope refuses closure",
+    "three readable ground treasure states are technical preview only, no real rewards or rarity changes",
+    "isolated native R01 geometry save18 upgrades218 to163 events on load, retains position and door switch, no invalid event references"
+  ],
+  "water": {
+    "x": 42,
+    "y": 12,
+    "d": 4,
+    "land": [
+      41,
+      12
+    ]
+  },
+  "swim": {
+    "depth": 24,
+    "ripple": true,
+    "opacity": 35,
+    "region": 2
+  },
+  "waterWallEdges": 1092,
+  "errors": [],
+  "video": "doc/evidencias/m01-14/r02/agua-portas.webm",
+  "isolation": "New disposable Chrome context; native save18/19 only, locate solely for scenario setup; real keyboard/click/native movement; no personal saves",
+  "pending": [
+    "MV editor open/edit/save/reopen: capture timeout",
+    "physical A56",
+    "owner evaluation of new R02 objects/door fit"
+  ],
+  "artCaveat": "Directional art is candidate, no approval inferred"
+}

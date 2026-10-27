@@ -256,3 +256,9 @@ M01-12 reutiliza pixels/poses aprovados das16 identidades. Somente dois materiai
 ## Atualização M01-14
 
 M01-14 reutiliza piso/alvenaria R04 e sprites aprovados; um atlas IA complementar v01 (cap/porta/Gate quadrado azul/água/plataforma/correntes). Prompts/referências efetivas em arte/DUNGEON_M01_14_PROMPTS.json. Cor azul do Gate vem do print original, sem trocar por portal circular genérico. Não há narrativa com protagonista. Recortes/células/escala e simplificações constam em DUNGEON_M01_14.md e dependem de avaliação do responsável; não promover complementos a aprovados automaticamente.
+
+## Convenções obrigatórias de cenário — M01-14 R02
+
+Porta é vão na faixa de parede: teto/cap separado de1tile, face de2tiles, apoio inferior e orientação explícita norte/sul/leste/oeste. Nunca pintar teto dentro dos quadros da porta. Arte pode ocupar vários tiles; collider é contrato independente e não cresce com a imagem. Quatro direções exigem perspectiva/iluminação próprias, sem espelhar por conveniência. Estados fechado/intermediário/aberto compartilham enquadramento, escala, jambas e pivô. Verificar envelope ocupado antes de fechar e inspeção do personagem nas duas extremidades. Correntes/nichos são estáticos, com vistas próprias, ancorados à massa mural; chão e tesouro usam perspectiva superior e apoio no piso.
+
+Água animada deve repetir sem emendas e usar A1 nativo quando adequado; imersão visual deriva de região explícita, não autoriza andar por toda água ou obstáculo. Não mudar Vigor em exploração. Tesouro baseia-se no original: saco/moedas/tecido/peças, sem brilho de raridade futuro. Arte nova e recortes R02 estão em revisão; aprovação da base4161615 registrada em arte/DUNGEON_M01_14_R02_PROMPTS.json. Os recortes inspecionados devem ser registrados na origem, pois a ferramenta pode não respeitar a grade solicitada. Limites/candidatos em DUNGEON_M01_14_R02.md. Sem ilustração narrativa do protagonista.

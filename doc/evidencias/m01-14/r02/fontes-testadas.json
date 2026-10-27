@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-27",
+  "base": "4161615",
+  "sources": [
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\arena_loot.jfif",
+      "bytes": 11883,
+      "sha256": "d16dcda8b2bf4a1155191b1beba2383b4f47247b62e5dfabda687b32825767b3"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\START-decoded.txt",
+      "bytes": 3343,
+      "sha256": "36df46e2edb54a6cd20367c354a34241e335a1fc252aaf29f83a1509726aa910"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\manual-consulta.txt",
+      "bytes": 9462,
+      "sha256": "80c30fc7d1ac318da81d3ebd0ba4ee2583910931855e596131660d0275fbb323"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Imperial Dungeons (quest) - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "bytes": 390978,
+      "sha256": "ae00e736f5920f235bdf92aabcc607e438c884984cee6291e191e5bd8392d4e1"
+    },
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\ARENA\\START.MIF",
+      "bytes": 2328,
+      "sha256": "16b4b200c0845c6aeab9af22cdf7b7655422dcaad73b5a639c1be0308389c7ee"
+    },
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\ARENA\\GLOBAL.BSA",
+      "bytes": 16802136,
+      "sha256": "345385c1565d9ca73e2d59d71a422498135485e2d01d4df66355ed804209042d"
+    }
+  ],
+  "originalBsaAndMifUnchanged": true,
+  "runtime": [
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\data\\Map008.json",
+      "bytes": 519962,
+      "sha256": "8fdc42efa275ec7b89c7744d686d29a58b4d39776ce877b14c95cca1f14ac33b"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\data\\ArenaDungeon.json",
+      "bytes": 7931,
+      "sha256": "c37bedd49a9177d1e594e1cc297a52ff8be6ab9a30357da9892b5421bdfa37d8"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\data\\Tilesets.json",
+      "bytes": 50117,
+      "sha256": "376a4097fbe49b2065666cc49e104d2c52872fc25e0c662aa73a0f7b74dbc31e"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\js\\plugins.js",
+      "bytes": 3211,
+      "sha256": "2b41f82d85ca04c1ef85ba9ff159c7ad0c4efb1c7a7e611283331552bd0bedd2"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\js\\plugins\\Arena_Dungeon.js",
+      "bytes": 9020,
+      "sha256": "599a09cc711f47b53ed0618e56eb80064d69355a87dcb6e981b7598fea27ad68"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tools\\build-dungeon-map.py",
+      "bytes": 9994,
+      "sha256": "62d8beeaaa52cbce3fd06d29401779b09ad6a482a5704607ff42b9cc5b98cdf1"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tools\\build-dungeon-objects.py",
+      "bytes": 2964,
+      "sha256": "df1768e2e3b974aae7d9b45da2d32b893b86826042e20d86fc90a39253d44c20"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tools\\test-dungeon-revision.cjs",
+      "bytes": 11493,
+      "sha256": "1693417c48df867a621494406e35733d67c096ac080af31b22113f5552430f05"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tools\\test-dungeon.cjs",
+      "bytes": 7533,
+      "sha256": "2cbb93560ca10c3d6e75425b047049de608b7deac30572c865e314227466cf62"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\tools\\validate-dungeon.cjs",
+      "bytes": 5641,
+      "sha256": "f91d2e3eb5efbef6ffeb24b4097b1cbac7b2b0840fd893c5e151d6d7d41b6dda"
+    }
+  ],
+  "checks": [
+    "4 directional door rows with3 distinct frames each",
+    "3 distinct native A1 surface phases",
+    "canonical plugin format/engine/maps1-7 checked separately by validate-dungeon",
+    "source layout remains unchanged vs4161615"
+  ],
+  "limits": [
+    "Source text confirms swimming exists, not executable3D geometry",
+    "No DOSBox original playtest",
+    "Pixel/dimension checks cannot approve perspective or aesthetic fit",
+    "MV editor capture failed twice; physical A56 not tested"
+  ]
+}

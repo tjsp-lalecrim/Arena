@@ -1,3 +1,7 @@
+## Revisão M01-14 R02 — 27/10/2026
+
+Responsável aprovou direção gráfica e fidelidade estrutural da base disponível4161615. R02 revisa portas/objetos/água; a aprovação da base não se estende automaticamente às variantes novas. Planta preservada. Portas com quatro vistas/três estados, tesouros inspirados no arena_loot, água A1 própria e natação restrita ao mapa8/região2, sem custo/regeneração de Vigor. Fontes, contratos, testes e limites em DUNGEON_M01_14_R02.md. M01-14 permanece em validação: captura do editor falhou novamente; autoria no MV e A56 físico não verificados. Sem merge ou avanço de backlog. Estados operacionais anteriores abaixo são históricos quando divergirem desta revisão.
+
 # M01-14 — Masmorras Imperiais em exploração superior
 
 26/10/2026. Feature **feature/m01-dungeon-inicial**, de develop **4c612ae**, após integrar/publicar M01-13. Numeração preservada. Loot: aprovação do responsável limitada ao menu no estado disponível2b0f0dc; destaque de raros fica futuro, sem implementação. Critérios funcionais anteriores revisados separadamente; fechamento76eae98 integrado. Main/release preservadas.

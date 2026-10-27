@@ -117,3 +117,7 @@ M01-13: tools/validate-loot.cjs (24 matrizes e preservação), tools/test-loot.c
 ## Atualização M01-14
 
 M01-14: tools/validate-dungeon.cjs e tools/test-dungeon.cjs; Chrome em contexto descartável, ARENA_PLAYWRIGHT/ARENA_URL, save20 isolado. Caminhada nativa pela rota, porta acionada por teclado, piso/sólidos, save/load e laboratório; ferramentas de imagem apenas montagem técnica. Editor tentativa falhou e não conta como aprovação. Evidências em evidencias/m01-14; regressões loot11/persistência27. Não sobrescrever históricos: test-loot aceita ARENA_EVIDENCE_DIR nesta revisão.
+
+## M01-14 R02
+
+Roteiro detalhado: DUNGEON_M01_14_R02.md. Executar build-dungeon-objects.py e build-dungeon-map.py antes de validate-dungeon.cjs; test-dungeon-revision.cjs grava testes isolados, capturas e canvas em evidencias/m01-14/r02. test-dungeon.cjs aceita ARENA_EVIDENCE_DIR para preservar as evidências históricas; saída desta rodada r02/regressao. Não inferir teste no editor a partir da execução Chrome. Repetir manualmente portas nos4sentidos, ocupado, piso/apoio, entrada/saída/cantos da água, teclado/clique e salvar na água; editor e aparelho físico pendentes.
