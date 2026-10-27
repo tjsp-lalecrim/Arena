@@ -121,6 +121,6 @@ if len(infos)==8:infos.append(info)
 else:infos[8]=info
 write('data/MapInfos.json',infos)
 config={'schemaVersion':1,'mapId':8,'laboratory':{'mapId':7,'x':8,'y':6},'start':center(l['startCell']),'key':key,'gateApproach':end,'gateCenter':gate,'keyEvent':keyEvent,'gateEvent':gateEvent,'doors':hooks,'sourceLayout':'doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json','width':W,'height':H,'integration':{'treasures':treasures,'enemies':[{'position':center(v['cell']),'sourceFlat':v['sourceFlat']} for v in l['reserved'] if v['kind']=='enemy'],'platforms':[center([x,y]) for y,r in enumerate(l['rows']) for x,c in enumerate(r) if c=='^'],'ria':center(l['startCell'])}}
-config.update(schemaVersion=2,swimming={'enabled':True,'regionId':2,'depth':24,'offsetY':10},doorAnimationFrames=24,treasurePreviewOnly=True)
+config.update(schemaVersion=2,swimming={'enabled':True,'regionId':2,'autotileKind':0,'depth':24,'offsetY':10},doorAnimationFrames=24,treasurePreviewOnly=True)
 write('data/ArenaDungeon.json',config)
 print('compiled fixed map',W,H,'doors',len(hooks),'events',len(m['events'])-1,'start',config['start'],'key',key,'gate',end)

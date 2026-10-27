@@ -33,7 +33,8 @@ var ArenaDungeon;
    if(!open)d.eventIds.forEach(function(n){$gameSelfSwitches.setValue([$arenaDungeon.mapId,n,'A'],false);});
    return true;
   },
-  isSwimming:function(){var s=$arenaDungeon&&$arenaDungeon.swimming;return !!($gamePlayer&&$gameMap&&s&&s.enabled&&$gameMap.mapId()===$arenaDungeon.mapId&&!$gamePlayer.isInVehicle()&&$gameMap.regionId($gamePlayer.x,$gamePlayer.y)===s.regionId);},
+  isWaterTile:function(x,y){var s=$arenaDungeon.swimming,t=$gameMap.tileId(x,y,0),kind=s&&s.autotileKind!==undefined?s.autotileKind:0;return Tilemap.isTileA1(t)&&Tilemap.getAutotileKind(t)===kind;},
+  isSwimming:function(){var s=$arenaDungeon&&$arenaDungeon.swimming;return !!($gamePlayer&&$gameMap&&s&&s.enabled&&$gameMap.mapId()===$arenaDungeon.mapId&&!$gamePlayer.isInVehicle()&&$gameMap.regionId($gamePlayer.x,$gamePlayer.y)===s.regionId&&this.isWaterTile($gamePlayer.x,$gamePlayer.y));},
   inspectTreasure:function(index){if($gameMap.mapId()!==$arenaDungeon.mapId||!$arenaDungeon.integration.treasures[index])return false;var state=$gameMap._arenaTreasurePreview||($gameMap._arenaTreasurePreview={});state[index]=((state[index]||0)+1)%3;$gameMessage.add('Prévia técnica: disponível / aberto / coletado.\nSem recompensa ou mudança de quest.\nConcessão real reservada para M01-16.');return true;},
   leave:function(){if($gameMap.mapId()!==$arenaDungeon.mapId)return false;var l=$arenaDungeon.laboratory;$gamePlayer.reserveTransfer(l.mapId,l.x,l.y,2,0);SceneManager.goto(Scene_Map);return true;}
  };
@@ -59,7 +60,7 @@ var ArenaDungeon;
   // Do not change vehicle rules, other maps, event collisions or the engine's two-sided flag checks.
   if($gameMap.mapId()===$arenaDungeon.mapId&&!this.isInVehicle()){
    var nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),s=$arenaDungeon.swimming;
-   if($gameMap.tileId(nx,ny,0)===2048&&(!s||!s.enabled||$gameMap.regionId(nx,ny)!==s.regionId))return false;
+   if(ArenaDungeon.isWaterTile(nx,ny)&&(!s||!s.enabled||$gameMap.regionId(nx,ny)!==s.regionId))return false;
   }
   return passable.apply(this,arguments);
  };
