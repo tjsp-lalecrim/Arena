@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-27",
+  "base": "1f3b29f",
+  "files": [
+    {
+      "file": "art\\m01-14\\componentes-ortogonais-r03-master.png",
+      "bytes": 2285167,
+      "sha256": "16573ee11da4abd348edce3b9c6476ad76e3b5fcfb24474fd89c47682a6f94eb",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "art\\m01-14\\tesouros-compactos-r03-master.png",
+      "bytes": 876354,
+      "sha256": "3821c0339194dabce2bb1f9dfb21a218097ab803350b0c271f12755480f7527b",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\characters\\!$Arena_Chains_M14_R03.png",
+      "bytes": 46049,
+      "sha256": "26eb877e9344530604c7d06c539dbc8500b8aa7f44b61182c21e736ca53a145a",
+      "size": [
+        288,
+        384
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\characters\\!$Arena_Doors_M14_R03.png",
+      "bytes": 123607,
+      "sha256": "50842de0af87fb0b53bf1b0748d9cc8ccb904befcddb18e51eabe9c8c896d39b",
+      "size": [
+        432,
+        576
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\characters\\!$Arena_Treasure_M14_R03.png",
+      "bytes": 11767,
+      "sha256": "5266ae850cb501b4df1900b79015aec76d51926e3c689d0d364988c85d485fe4",
+      "size": [
+        144,
+        192
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\pictures\\arena_platform_r03.png",
+      "bytes": 48076,
+      "sha256": "50ff368f84a6fc0067717bb30471b165ddaa9f46b0bba8181a288d02abb728c3",
+      "size": [
+        144,
+        144
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\tilesets\\Arena_Dungeon_M14_R03.png",
+      "bytes": 241633,
+      "sha256": "9e6cf57861546812ed03e518b2e2715a4eafd53c4e9713768d95e46cea7a8e9a",
+      "size": [
+        768,
+        768
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "treasureVisibleAlphaBounds": [
+    [
+      2,
+      12,
+      46,
+      46
+    ],
+    [
+      2,
+      13,
+      46,
+      46
+    ],
+    [
+      2,
+      16,
+      46,
+      46
+    ]
+  ],
+  "limits": [
+    "Pixels do not approve aesthetic fidelity",
+    "Original structure/style approved, door/object fit pending owner evaluation",
+    "Editor capture timeout; physical A56 pending"
+  ]
+}
