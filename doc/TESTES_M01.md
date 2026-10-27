@@ -130,3 +130,7 @@ Autoria MV1.6.1 em cópia: TESTE_EDITOR_M01_14.md. prepare-mv-authoring-copy.py 
 ## M01-15 — roteiro e evidências
 
 Executar node tools/validate-encounters.cjs e, com servidor local e Playwright, node tools/test-encounters.cjs. Contextos Chrome descartáveis/save18; não usa saves pessoais. Roteiro manual em ENCONTROS_M01_15.md. Resultado/capturas/vídeo e regressões em evidencias/m01-15. Autoria M01-14 confirmada pelo responsável não prova novos eventos/plugins. Galaxy A56 permanece integração mobile.
+
+## M01-16
+
+validate-quests.cjs cobre núcleo/contratos/UTF8/formato canônico27/plugins anteriores/alterações permitidas. test-quests.cjs executa eventos/menu/recuperação/consumo/Gate/tesouro/save-load/falhas em Chrome descartável, saves18/19, sem saves pessoais. Registro em evidencias/m01-16; regressões guardadas em subpasta própria. Native autoria MV e A56 físico não inferidos de testes de navegador. Roteiro manual em QUESTS_M01_16.md.
