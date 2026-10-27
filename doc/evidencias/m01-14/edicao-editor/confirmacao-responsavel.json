@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-27",
+  "providedBy": "responsável",
+  "availableVersion": "3bcdf81",
+  "testedHash": "não informado pelo responsável",
+  "environment": "RPG Maker MV 1.6.1",
+  "confirmed": [
+    "abertura do Map008",
+    "edição reversível",
+    "salvamento",
+    "reabertura",
+    "execução Explorar Dungeon"
+  ],
+  "notClaimed": [
+    "teste físico Galaxy A56",
+    "novas funcionalidades M01-15",
+    "lista exaustiva de eventos ou inspeção manual do gerenciador de plugins"
+  ],
+  "context": "Resposta ao roteiro de autoria em cópia temporária; nenhuma nova execução automatizada no editor é alegada."
+}

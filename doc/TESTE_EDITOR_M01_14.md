@@ -1,3 +1,7 @@
+## Fechamento vigente M01-14 — 27/10/2026
+
+Responsável confirmou abertura do Map008, edição reversível, salvamento e reabertura pelo MV1.6.1, além de Explorar Dungeon. Estado disponível3bcdf81, sem hash de teste informado. Evidência manual em evidencias/m01-14/edicao-editor/confirmacao-responsavel.json, separada das tentativas automáticas anteriores. Integridade revalidada por validate-dungeon.cjs; critérios de topologia, portas, água, persistência e geradores cobertos pelas evidências R03 revisadas. **M01-14 concluído no escopo desktop**, autorizada integração em develop e continuidade M01-15. Ressalvas futuras de legibilidade das portas laterais e investigação de natação preservadas; S01 não aplicado, Vigor aquático inalterado. Galaxy A56 físico pendente da integração mobile, não bloqueante desktop. Registros abaixo de autoria/estética pendentes são históricos quando divergirem deste fechamento. Não atribuir essa confirmação a M01-15.
+
 # Teste de edição MV1.6.1 — cópia temporária
 
 27/10/2026. Responsável informou que **Explorar Dungeon executou pelo RPG Maker MV1.6.1 até o ponto testado**. Estado disponível031a58b, sem hash próprio informado. É evidência manual de execução/playtest, não de editar/salvar/reabrir Map008, ler o gerenciador de plugins, percorrer toda a dungeon ou testar o Galaxy A56.

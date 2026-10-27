@@ -1,3 +1,7 @@
+## Fechamento vigente M01-14 — 27/10/2026
+
+Responsável confirmou abertura do Map008, edição reversível, salvamento e reabertura pelo MV1.6.1, além de Explorar Dungeon. Estado disponível3bcdf81, sem hash de teste informado. Evidência manual em evidencias/m01-14/edicao-editor/confirmacao-responsavel.json, separada das tentativas automáticas anteriores. Integridade revalidada por validate-dungeon.cjs; critérios de topologia, portas, água, persistência e geradores cobertos pelas evidências R03 revisadas. **M01-14 concluído no escopo desktop**, autorizada integração em develop e continuidade M01-15. Ressalvas futuras de legibilidade das portas laterais e investigação de natação preservadas; S01 não aplicado, Vigor aquático inalterado. Galaxy A56 físico pendente da integração mobile, não bloqueante desktop. Registros abaixo de autoria/estética pendentes são históricos quando divergirem deste fechamento. Não atribuir essa confirmação a M01-15.
+
 # Aprovação da dungeon — 27/10/2026
 
 Responsável aprovou a **estrutura e o resultado visual atuais** da dungeon, associados ao estado disponível **b194b44**, feature/m01-dungeon-inicial. Não informou hash próprio, dispositivo nem execução de ciclo de autoria no editor. Evidência visual consultada em `doc/prints/m01-14-aprovacao-ressalvas-2026-10-27-1fedef3f-c80f-4be7-9ffe-9b483790d2c4.png`; arquivo/hash, fontes de natação e condições registrados em `evidencias/m01-14/aprovacao-natacao/fontes-e-condicoes.json`. Não atribuir essa aprovação a funcionalidades posteriores.
