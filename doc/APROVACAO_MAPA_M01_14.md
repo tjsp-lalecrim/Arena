@@ -18,7 +18,7 @@ Ressalvas **não bloqueantes**, não implementadas:
 | Autoria MV1.6.1 | **Ainda sem evidência de abrir Map008, editar, salvar e reabrir**. Nova tentativa encontrou janela Arena, mas captura retornou timeout e botão acessível retornou elemento indisponível no cache. Atalho de abertura não produziu confirmação de diálogo/projeto. Nenhuma escrita de projeto pelo editor foi comprovada |
 | Galaxy A56 físico | Não executado; manter separado, sem atribuir ao print |
 
-**M01-14: visual aprovado, fechamento ainda pendente da verificação de autoria.** O pedido condiciona integração a critérios atendidos; sem confirmação desse ciclo não foi feito merge em develop, nem criado M01-15 a partir dela. Foi solicitada evidência manual específica ao responsável; ausência de resposta não é aprovação nem teste executado.
+**M01-14: visual aprovado, fechamento ainda pendente da verificação de autoria.** Em27/10/2026, o responsável respondeu à pergunta sobre abrir Map008, editar, salvar e reabrir na versão aprovada: **“Ainda não verifiquei no editor”**. Portanto, essa pendência está confirmada como não testada, e não apenas sem relato. O pedido condiciona integração a critérios atendidos; não foi feito merge em develop nem iniciado M01-15. A resposta não revoga a aprovação visual nem autoriza ignorar o teste.
 
 ## Continuidade já identificada, ainda não iniciada
 

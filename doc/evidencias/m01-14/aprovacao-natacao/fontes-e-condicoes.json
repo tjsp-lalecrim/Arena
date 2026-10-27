@@ -64,7 +64,13 @@
         ],
         "mode": "RGBA"
       }
-    ]
+    ],
+    "editorManualReply": {
+      "date": "2026-10-27",
+      "reviewedVersion": "b194b44",
+      "answer": "Ainda não verifiquei no editor",
+      "openEditSaveReopenTested": false
+    }
   },
   "sources": [
     {
