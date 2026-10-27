@@ -18,3 +18,4 @@ const entries=dungeon.integration.enemies.map((source,i)=>{
 fs.writeFileSync('data/ArenaEncounters.json',JSON.stringify({schemaVersion:1,mapId:8,areaId:'imperial-dungeons',completionQuestId:'MQ01',entries},null,2)+'\n');
 fs.writeFileSync('data/Map008.json',JSON.stringify(map)+'\n');
 console.log('Built '+entries.length+' encounters; original168 events retained');
+if(fs.existsSync('tools/build-quests.cjs'))require('node:child_process').execFileSync(process.execPath,['tools/build-quests.cjs'],{stdio:'inherit'});

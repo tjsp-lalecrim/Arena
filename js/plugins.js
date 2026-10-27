@@ -26,5 +26,7 @@ var $plugins =
 {"name":"Arena_Loot","status":true,"description":"Loot automático e resumo de vitória","parameters":{}},
 {"name":"Arena_Dungeon","status":true,"description":"Mapa estático da dungeon e entrada técnica isolada.","parameters":{}},
 {"name":"MV_EncounterRules","status":true,"description":"v0.1.0 Regras puras de encontros","parameters":{}},
-{"name":"Arena_Encounters","status":true,"description":"v0.1.0 Patrulhas e encontros persistentes","parameters":{}}
+{"name":"Arena_Encounters","status":true,"description":"v0.1.0 Patrulhas e encontros persistentes","parameters":{}},
+{"name":"MV_QuestRules","status":true,"description":"v0.1.0 Requisitos e etapas de quests","parameters":{}},
+{"name":"Arena_Quests","status":true,"description":"v0.1.0 MQ01, diario e fontes importantes","parameters":{}}
 ];
