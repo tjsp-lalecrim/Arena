@@ -265,3 +265,6 @@ Porta é vão na faixa de parede: teto/cap separado de1tile, face de2tiles, apoi
 ## Diretiva vigente R03 — ortogonal
 
 DIRETIVA_DE_MAPAS.md consolida as regras verificáveis e prevalece sobre as simplificações R02. Não usar portas/correntes com alvenaria incorporada nem vistas oblíquas/isométricas. Componentes separados de geometria; âncoras e dobradiças invariantes; projeções frontal e superior lateral próprias. Objetos de parede somente em face desenhada válida, sem flutuar no vazio; plataformas independentes sem parede traseira; tesouros RGBA em escala opaca de44×30–34px. Prompts/masters/limites em arte/DUNGEON_M01_14_R03_*.json e relatório DUNGEON_M01_14_R03.md. Sem aprovação automática de encaixes, alterações de recursos ou narrativa do protagonista.
+## Aprovação do mapa e ressalva futura — 27/10/2026
+
+Resultado visual/estrutura da R03 no estado disponívelb194b44 aprovados pelo responsável. Não regenerar os assets aprovados nesta rodada. Portas laterais têm orientação e formato corretos; futuramente avaliar espessura aparente, contraste e legibilidade, preservando âncoras, moldura, animação, projeção e colisão. Sem mudança implementada. A ressalva não bloqueia o próximo backlog; a pendência de autoria no editor é separada. Evidência/escopo em APROVACAO_MAPA_M01_14.md.
