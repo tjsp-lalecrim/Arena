@@ -17,13 +17,14 @@ def panel(c,r):return master.crop((c*512,r*512,(c+1)*512,(r+1)*512))
 def put(im,c,r,size):sheet.alpha_composite(im.resize(size,Image.Resampling.LANCZOS),(c*48,r*48))
 # Native B bank: two-by-two approved floor; cap and wall faces separate.
 put(old.crop((48,0,144,96)),1,0,(96,96));put(panel(0,0).crop((128,128,320,320)),4,0,(48,48));put(old.crop((192,0,288,96)),5,0,(96,96))
-put(panel(0,1),0,2,(96,96));put(panel(1,0),0,4,(144,144));put(panel(2,0),4,4,(144,144));put(panel(1,1),4,8,(144,144));put(panel(2,1),0,11,(144,144))
+put(panel(0,1),0,2,(96,96));put(panel(1,0),0,4,(144,144));put(panel(2,0),4,4,(144,144))
+platform=Image.open(ROOT/'img/pictures/arena_platform_r03.png').convert('RGBA');put(platform,4,8,(144,144))
 concept=Image.open(ROOT/'art/masters/revisao-r02/dungeon-identidade-r02.png').convert('RGBA');put(concept.crop((1110,125,1230,210)),4,12,(48,48))
 put(Image.new('RGBA',(48,48),'#090c0f'),7,0,(48,48)) # nonvisual void clear; cap and walls retain AI artwork
 icons=Image.open(ROOT/'img/pictures/arena_icones_v01.png').convert('RGBA');pile=Image.new('RGBA',(48,48));pile.alpha_composite(icons.crop((0,0,64,32)).resize((48,24),Image.Resampling.LANCZOS),(0,18));put(pile,5,12,(48,48))
 # R02 derivatives are versioned separately; approved v01 remains for comparison.
 sheet.alpha_composite(sheet.crop((192,0,240,48)),(336,48)) # cap overlay tile15
-sheet.save(ROOT/'img/tilesets/Arena_Dungeon_M14_R02.png')
+sheet.save(ROOT/'img/tilesets/Arena_Dungeon_M14_R03.png')
 # Native A1 water, three 96x144 surface blocks. Periodic assembly of the approved
 # water panel; motion is a 2px phase shift, never independently randomized tiles.
 water=panel(0,1).resize((48,48),Image.Resampling.LANCZOS)
@@ -40,7 +41,7 @@ for frame in range(3):
  for y in range(0,144,48):
   for x in range(0,96,48):a1.alpha_composite(phase,(frame*96+x,y))
 a1.save(ROOT/'img/tilesets/Arena_Water_M14_R02_A1.png')
-tiles=read('data/Tilesets.json');t=copy.deepcopy(tiles[3]);t.update(id=4,name='M01 Masmorras Imperiais',note='R02: teto1 + parede2; portas em face2, colisão independente; natação restrita à região2/mapa8; água A1 própria.',tilesetNames=['Arena_Water_M14_R02_A1','','','','','Arena_Dungeon_M14_R02','','','']);t['flags']=[0]*8192;t['flags'][0]=16;t['flags'][15]=16
+tiles=read('data/Tilesets.json');t=copy.deepcopy(tiles[3]);t.update(id=4,name='M01 Masmorras Imperiais',note='R03 ortogonal: teto1 + face2, corredor3; sem cap sobre vão; decoração só em face válida. Água R02 preservada.',tilesetNames=['Arena_Water_M14_R02_A1','','','','','Arena_Dungeon_M14_R03','','','']);t['flags']=[0]*8192;t['flags'][0]=16;t['flags'][15]=16
 for k in [4,5,6,7,13,14]:t['flags'][k]=15
 # Non-floor decorative bank entries, only used by event graphics.
 for r in range(4,15):
@@ -65,8 +66,8 @@ for y in range(H):
   else:
    tile=1+(x%2)+(y%2)*8
    if c=='~':tile=2048 # native animated A1 surface, shape0
-   elif c=='^':tile=idat(4+dx,8+dy)
    at(x,y,0,tile);at(x,y,5,2 if c=='~' else 3 if c=='^' else 4)
+   if c=='^':at(x,y,1,idat(4+dx,8+dy)) # low independent slab, below player
 m=copy.deepcopy(read('data/Map007.json'));m.update(width=W,height=H,data=data,displayName='Masmorras Imperiais',tilesetId=4,events=[None],encounterList=[],encounterStep=30,note='M01-14: mapa estático de teste; sem quests/patrulhas/introdução. Leia DUNGEON_M01_14.md. Esc menu/salvar.');m['scrollType']=0;m['parallaxName']='';m['specifyBattleback']=False
 base=copy.deepcopy(read('data/Map007.json')['events'][8]['pages'][0]);base['image'].update(tileId=0,characterName='',characterIndex=0,direction=2,pattern=1);base['moveType']=0;base['stepAnime']=False;base['walkAnime']=False
 hooks=[]
@@ -77,10 +78,9 @@ def event(name,x,y,tile=0,script=None,priority=0,through=True,trigger=0,openPage
  m['events'].append({'id':n,'name':name,'note':'M01-14 geometry/integration only','x':x,'y':y,'pages':pages});return n
 for door in l['doors']:
  x,y=door['cell'];px,py=center([x,y]);horizontal=cellAt(x-1,y)!='#' and cellAt(x+1,y)!='#';ids=[]
- # Door aperture is a wall-plane: permanent overhead cap + two face rows.
- # One graphic anchored on the bottom face; other events are invisible colliders.
+ # Never draw a solid ceiling across a walkable aperture. Existing neighboring
+ # map walls are the fixed jamb/frame; door components contain no masonry.
  for dx in range(3):
-  at(px+dx-1,py-1,2,15);at(px+dx-1,py-1,5,6)
   for faceY in [py,py+1]:at(px+dx-1,faceY,5,5)
  for dy in range(3):
   for dx in range(3):
@@ -89,38 +89,42 @@ for door in l['doors']:
    m['events'][n]['pages'][1]['list']=copy.deepcopy(m['events'][n]['pages'][0]['list'])
    if dx==1 and dy==2:
     for p in m['events'][n]['pages']:
-     p['image'].update(characterName='!$Arena_Doors_M14_R02',direction=6 if horizontal else 2,pattern=0)
+     p['image'].update(characterName='!$Arena_Doors_M14_R03',direction=6 if horizontal else 2,pattern=0)
      p['directionFix']=True;p['priorityType']=1
      p['list']=copy.deepcopy(m['events'][n]['pages'][0]['list'])
- hooks.append(dict(door,eventIds=ids,visualEventId=ids[7],center=[px,py],axis='east-west' if horizontal else 'north-south',capRow=py-1,faceRows=[py,py+1]))
+ hooks.append(dict(door,eventIds=ids,visualEventId=ids[7],center=[px,py],axis='east-west' if horizontal else 'north-south',faceRows=[py,py+1],visualAnchor=[px,py+1],footprint=[px-1,py-1,3,3],hingesLocal=[[72,4],[72,140]] if horizontal else [[4,144],[140,144]]))
 key=center(l['keyCell']);keyEvent=event('MQ01.key / reservado M01-16',*key,idat(4,12),"$gameMessage.add('Chave de rubi: ponto original.\\nIntegração de MQ01 em M01-16.\\nNenhum item concedido neste teste.');",0,True)
 m['events'][keyEvent]['pages'][0]['image'].update(tileId=0,characterName='!$Arena_Key_M14_R02',direction=2,pattern=1)
 gate=center(l['gateCell']);
 for dy in range(3):
  for dx in range(3):event('Shift Gate / visual',gate[0]+dx-1,gate[1]+dy-1,idat(4+dx,4+dy),None,1,True)
 end=center(l['gateApproach']);gateEvent=event('Shift Gate / contato técnico',*end,0,"$gameMessage.add('Shift Gate alcançado.\\nTeste de exploração: fim do percurso.\\nEncerramento narrativo em M01-18.');",0,True,1)
-treasures=[]
+treasures=[];attachments=[];usedFaces=set()
 for mark in l['reserved']:
  if mark['kind']=='treasure':
   px,py=center(mark['cell']);n=event('Tesouro / integração M01-16',px,py,0,"ArenaDungeon.inspectTreasure(%s);"%len(treasures),0,True)
-  m['events'][n]['pages'][0]['image'].update(characterName='!$Arena_Treasure_M14_R02',direction=2,pattern=0)
+  m['events'][n]['pages'][0]['image'].update(characterName='!$Arena_Treasure_M14_R03',direction=2,pattern=0)
   m['events'][n]['pages'][0]['directionFix']=True
   treasures.append({'eventId':n,'position':[px,py],'sourceFlat':mark['sourceFlat']})
  if mark['kind']=='chains':
   px,py=center(mark['cell']);
   # Orient the assembly toward the source flat, on an actual solid neighbor.
   x,y=mark['cell']
-  adjacent=next(((nx,ny,d) for nx,ny,d in [(x,y-1,2),(x+1,y,4),(x-1,y,6),(x,y+1,8)] if cellAt(nx,ny)=='#'),None)
+  # An opaque '#' cell is NOT sufficient: its south face must actually be drawn.
+  candidates=[(abs(nx-x)+abs(ny-y),ny,nx) for ny in range(50) for nx in range(50) if cellAt(nx,ny)=='#' and cellAt(nx,ny+1) not in ['#','G'] and abs(nx-x)+abs(ny-y)<=6 and (nx,ny) not in usedFaces]
+  adjacent=min(candidates) if candidates else None
   if adjacent:
-   wx,wy=center(adjacent[:2]);n=event('Vestígio de prisão / correntes',wx,wy+1,0,None,0,True)
-   m['events'][n]['pages'][0]['image'].update(characterName='!$Arena_Chains_M14_R02',direction=adjacent[2],pattern=1)
+   distance,wy0,wx0=adjacent;usedFaces.add((wx0,wy0));wx,wy=center([wx0,wy0]);n=event('Vestígio de prisão / correntes',wx,wy+1,0,None,0,True)
+   m['events'][n]['pages'][0]['image'].update(characterName='!$Arena_Chains_M14_R03',direction=2,pattern=1)
    m['events'][n]['pages'][0]['directionFix']=True
+   attachments.append({'eventId':n,'sourceCell':mark['cell'],'wallCell':[wx0,wy0],'position':[wx,wy+1],'sourceDistance':distance,'orientation':'south-face','category':'wall-only','sourceFlat':mark['sourceFlat']})
+  else:raise ValueError('No valid visible wall face for chain marker '+str(mark['cell']))
 write('data/Map008.json',m)
 infos=read('data/MapInfos.json');info={'id':8,'expanded':True,'name':'M01-14 Masmorras Imperiais','order':8,'parentId':0,'scrollX':0,'scrollY':0}
 if len(infos)==8:infos.append(info)
 else:infos[8]=info
 write('data/MapInfos.json',infos)
 config={'schemaVersion':1,'mapId':8,'laboratory':{'mapId':7,'x':8,'y':6},'start':center(l['startCell']),'key':key,'gateApproach':end,'gateCenter':gate,'keyEvent':keyEvent,'gateEvent':gateEvent,'doors':hooks,'sourceLayout':'doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json','width':W,'height':H,'integration':{'treasures':treasures,'enemies':[{'position':center(v['cell']),'sourceFlat':v['sourceFlat']} for v in l['reserved'] if v['kind']=='enemy'],'platforms':[center([x,y]) for y,r in enumerate(l['rows']) for x,c in enumerate(r) if c=='^'],'ria':center(l['startCell'])}}
-config.update(schemaVersion=2,swimming={'enabled':True,'regionId':2,'autotileKind':0,'depth':24,'offsetY':10},doorAnimationFrames=24,treasurePreviewOnly=True)
+config.update(schemaVersion=3,swimming={'enabled':True,'regionId':2,'autotileKind':0,'depth':24,'offsetY':10},doorAnimationFrames=30,treasurePreviewOnly=True,attachments=attachments)
 write('data/ArenaDungeon.json',config)
 print('compiled fixed map',W,H,'doors',len(hooks),'events',len(m['events'])-1,'start',config['start'],'key',key,'gate',end)

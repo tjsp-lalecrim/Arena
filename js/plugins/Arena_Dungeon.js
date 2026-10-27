@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.2.0 Dungeon: portas animadas, natação delimitada e objetos técnicos.
+ * @plugindesc v0.3.0 Dungeon: portas animadas, natação delimitada e objetos técnicos.
  * @author Codex
  * @help Após Arena_Loot. Config ArenaDungeon.json. Não implementa MQ01/respawn.
  * API ArenaDungeon.enter/startLab/openDoor/leave. Portas por self-switch nativo.
@@ -39,18 +39,18 @@ var ArenaDungeon;
   leave:function(){if($gameMap.mapId()!==$arenaDungeon.mapId)return false;var l=$arenaDungeon.laboratory;$gamePlayer.reserveTransfer(l.mapId,l.x,l.y,2,0);SceneManager.goto(Scene_Map);return true;}
  };
  var setup=Game_Map.prototype.setup;
- Game_Map.prototype.setup=function(mapId){setup.apply(this,arguments);if(mapId===$arenaDungeon.mapId)this._arenaDungeonRevision=2;};
+ Game_Map.prototype.setup=function(mapId){setup.apply(this,arguments);if(mapId===$arenaDungeon.mapId)this._arenaDungeonRevision=3;};
  var extract=DataManager.extractSaveContents;
- DataManager.extractSaveContents=function(contents){extract.apply(this,arguments);if($gameMap.mapId()===$arenaDungeon.mapId&&$gameMap._arenaDungeonRevision!==2){
+ DataManager.extractSaveContents=function(contents){extract.apply(this,arguments);if($gameMap.mapId()===$arenaDungeon.mapId&&$gameMap._arenaDungeonRevision!==3){
   // A load may be requested from a technical map scene as well as Scene_Load.
-  // Do not let that old scene refresh218 serialized events against163 new pages.
+   // Do not refresh serialized legacy events against a different set of map pages.
   $gameMap._events=[];$gameMap._needsRefresh=false;
  }};
  var mapLoaded=Scene_Map.prototype.onMapLoaded;
  Scene_Map.prototype.onMapLoaded=function(){
   // Old lab saves retain serialized Game_Event instances. Refresh geometry from
   // current Map008 without losing native position or first126 door self-switches.
-  if($gameMap.mapId()===$arenaDungeon.mapId&&$gameMap._arenaDungeonRevision!==2){$gameMap.setup($arenaDungeon.mapId);$gameMap._arenaDoorTransitions={};$gameMap._arenaTreasurePreview={};}
+  if($gameMap.mapId()===$arenaDungeon.mapId&&$gameMap._arenaDungeonRevision!==3){$gameMap.setup($arenaDungeon.mapId);$gameMap._arenaDoorTransitions={};$gameMap._arenaTreasurePreview={};}
   mapLoaded.apply(this,arguments);
  };
  var mapUpdate=Game_Map.prototype.update;
