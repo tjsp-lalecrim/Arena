@@ -1,5 +1,11 @@
 # Backlog de implementação do M01
 
+## Estado operacional — M01-13 (26/10/2026)
+
+M01-12 concluído no escopo incremental aprovado, integrado/publicado em develop90e309b. Paleta, simplificação de uso de itens e design da confirmação permanecem melhorias futuras, sem implementação. Feature/m01-loot entrega M01-13 tecnicamente, sem renumeração, para revisão e sem merge. Implementação795d80d; testes/limites em evidencias/m01-13/fontes-testadas.json. Limite por origem individual já definido em LOOT.md: até uma peça por inimigo; agregação mantém origens. Tabelas wiki/provisórias, raridade substitutiva, reserva de capacidade, fonte de missão e ledger único descritos em LOOT_M01_13.md. Testes/capturas em evidencias/m01-13; editor/A56 e balanceamento final permanecem separados e pendentes. Não iniciar M01-14.
+
+Registros abaixo são históricos quando divergirem deste estado operacional.
+
 
 ## Fechamento M01-12 — aprovação do responsável (26/10/2026)
 
@@ -140,3 +146,7 @@ R04 em feature/m01-identidade-e-auditoria-racial: dois pilotos masculinos Argoni
 
 
 M01-12 R02 (26/10/2026): inventário anterior considerado bom pelo responsável; refinados slots equipados com ícones e comparação visual dos parâmetros finais. Testes/evidências R02 registrados no relatório e VALIDACAO_M01. Mesma feature, sem integração automática; avaliação das mudanças R02 e cobertura artística mínima permanecem pendentes. Não iniciar M01-13.
+
+## Fechamento M01-13 — 26/10/2026
+
+Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar versão própria/dispositivo ou casos adicionais. Destaque visual de raros é melhoria futura, não implementada. Aprovação limitada ao menu; critérios funcionais revisados separadamente:11 cenários MV,24 matrizes, reservas/save/load/quest/derrota/abort/rollback e regressões registrados em evidencias/m01-13. Validador estático reexecutado neste fechamento; não alegar reexecução de todas as suítes. M01-13 concluído tecnicamente, com economia provisória e testes editor/A56 ainda separados. Integração/publicação em develop autorizadas; sem main/release.

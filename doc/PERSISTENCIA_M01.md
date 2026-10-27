@@ -76,3 +76,8 @@ Para a conferência de autoria, abrir Game.rpgproject no editor 1.6.1, abrir ger
 ## Integração M01-12
 
 M01-12 mantém inventário e equipamentos nativos, sem novo namespace/schema ou concessão ao carregar. Material é calculado pela peça de Corpo atual sobre imagens-base da identidade, sem snapshot de aparência persistido. Página, gesto, prévia e bitmaps não são salvos. Sem armadura ou criação anterior, não inventar itens/identidade. Testes de save/load e save antigo em evidencias/m01-12. Atalhos continuam no contrato anterior; invalidar técnicas ao trocar arma permanece Arena_Abilities.
+
+
+## Integração M01-13
+
+M01-13: namespace arenaLoot v1 separado, sequence/receipts/pending; inventário/ouro/EXP nativos. Saves sem namespace recebem defaults sem concessão. Recibo síncrono único por vitória inclui sorteios por origem, recebidos/reservados e EXP, com rollback. Reserva é direito já sorteado: collectPending/mapa/load podem entregar capacidade disponível, sem nova recompensa/EXP. ArenaPersistence.sourceStatus é getter das mesmas regras de claimSource; integração não substitui redundância de etapas/reativação de evento a conectar em M01-15/16. Ver LOOT_M01_13.md.

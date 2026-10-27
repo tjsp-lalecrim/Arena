@@ -95,3 +95,8 @@ Arena_BattleUI0.2.0 refina composição/visibilidade, indicadores e tema local d
 ## Integração M01-12
 
 MV_EquipmentTransaction0.1.0 (puro/sem IDs) e Arena_Inventory0.1.0 (adaptador/Scene/renderizador), após Arena_BattleUI. Sem dependências externas. Nova exportação ArenaBattleUI.theme reaproveita o acabamento existente. Contratos, configuração e limites em plugins/MV_EquipmentTransaction.md, plugins/Arena_Inventory.md e INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+
+## Integração M01-13
+
+M01-13:22 registros canônicos,20 anteriores preservados; após Arena_Inventory, MV_LootRules0.1.0 e Arena_Loot0.1.0. Sem plugins externos. Arena_Inventory exporta drawItemIcon para reutilizar o mesmo desenho e reconhece malha rara por mapeamento de material; Arena_Persistence adiciona getter sourceStatus sem mudar fonte/etapas/recibos. Docs individuais em plugins/ e LOOT_M01_13.md.

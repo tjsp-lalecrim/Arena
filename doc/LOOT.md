@@ -67,4 +67,9 @@ Ao implementar, garantir que reabrir a interface ou repetir uma interação não
 - O cálculo e a concessão não são repetidos indevidamente ao reabrir ou atualizar a interface.
 - Os cenários com nenhum resultado e com vários resultados são tratados sem erros.
 
-Estes requisitos ainda não foram implementados ou testados. A solução técnica e eventuais plugins devem seguir PLUGINS.md.
+Implementação M01-13 e testes técnicos em LOOT_M01_13.md e evidencias/m01-13; balanceamento definitivo e testes físicos pendentes. A configuração inicial adapta fontes de maneira identificada; seguir PLUGINS.md.
+
+
+## Resolução M01-13
+
+Mantida a definição existente de loot individual de origem: limite de uma peça por inimigo, não por batalha. Resumo agregado não perde origem no recibo. Gate low-quality item, candidatos arma/armadura e raridade substitutiva explicitados em LOOT_M01_13.md. Coleta automática após vitória, sem pagamento paralelo nativo; EXP preservada uma vez. Reserva persistente para excedentes, sem perda silenciosa no limite. Chave de MQ01 mantém evento-fonte na cela, sem drop aleatório obrigatório; integração de fonte em tabela validada somente no laboratório. Raridade2% e4 variantes +1 são balanceamento provisório, não dados do original. Esta seção substitui indefinições históricas sobre momento/resolução/apresentação/capacidade.

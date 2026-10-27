@@ -1,5 +1,7 @@
 [
 null,
 {"id":1,"atypeId":1,"description":"Proteção de couro para o torso.","etypeId":4,"traits":[],"iconIndex":0,"name":"Couraça de couro","note":"Fonte: Base Armor pp.1–2. Proteção convertida em DEF positiva provisória. Aparência em M01-12.","params":[0,0,0,3,0,0,0,0],"price":0},
-{"id":2,"atypeId":2,"description":"Proteção de anéis de metal para o torso.","etypeId":4,"traits":[],"iconIndex":0,"name":"Cota de malha","note":"Fonte: Base Armor pp.1–2. Proteção convertida em DEF positiva provisória. Aparência em M01-12.","params":[0,0,0,6,0,0,0,0],"price":0}
+{"id":2,"atypeId":2,"description":"Proteção de anéis de metal para o torso.","etypeId":4,"traits":[],"iconIndex":0,"name":"Cota de malha","note":"Fonte: Base Armor pp.1–2. Proteção convertida em DEF positiva provisória. Aparência em M01-12.","params":[0,0,0,6,0,0,0,0],"price":0},
+{"id":3,"atypeId":1,"description":"Proteção de couro para o torso. Peça rara: +1 adicional de Resistência (provisório).","etypeId":4,"traits":[],"iconIndex":0,"name":"Couraça de couro rara","note":"Fonte: Base Armor pp.1–2. Proteção convertida em DEF positiva provisória. Aparência em M01-12.\n<ArenaRare>\nM01-13: raridade adaptada, +1 provisório; não é valor transcrito do original.","params":[0,0,0,4,0,0,0,0],"price":0},
+{"id":4,"atypeId":2,"description":"Proteção de anéis de metal para o torso. Peça rara: +1 adicional de Resistência (provisório).","etypeId":4,"traits":[],"iconIndex":0,"name":"Cota de malha rara","note":"Fonte: Base Armor pp.1–2. Proteção convertida em DEF positiva provisória. Aparência em M01-12.\n<ArenaRare>\nM01-13: raridade adaptada, +1 provisório; não é valor transcrito do original.","params":[0,0,0,7,0,0,0,0],"price":0}
 ]

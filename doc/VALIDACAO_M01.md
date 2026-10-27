@@ -1,5 +1,11 @@
 # Evidências de implementação M01
 
+## Estado operacional — M01-13 (26/10/2026)
+
+M01-12 concluído no escopo incremental aprovado, integrado/publicado em develop90e309b. Paleta, simplificação de uso de itens e design da confirmação permanecem melhorias futuras, sem implementação. Feature/m01-loot entrega M01-13 tecnicamente, sem renumeração, para revisão e sem merge. Implementação795d80d; testes/limites em evidencias/m01-13/fontes-testadas.json. Limite por origem individual já definido em LOOT.md: até uma peça por inimigo; agregação mantém origens. Tabelas wiki/provisórias, raridade substitutiva, reserva de capacidade, fonte de missão e ledger único descritos em LOOT_M01_13.md. Testes/capturas em evidencias/m01-13; editor/A56 e balanceamento final permanecem separados e pendentes. Não iniciar M01-14.
+
+Registros abaixo são históricos quando divergirem deste estado operacional.
+
 
 ## Fechamento M01-12 — aprovação do responsável (26/10/2026)
 
@@ -294,3 +300,7 @@ Dois pilotos masculinos inspecionados com presets reais de Skyrim: diagnóstico,
 Auditoria mecânica das oito raças em AUDITORIA_BONUS_RACIAIS_M01_07.md, baseada no Manual.pdf original p.7, wiki local e execução MV. P01–P08 aguardam avaliação; nenhuma aplicada. Correção técnica isolada: retirar habilidades desarmadas3/4 dos bônus de arma. Evidências antes/depois em evidencias/auditoria-racial-r04/:8 raças×7 níveis, fórmulas, dano, crítico, acerto, AGI, Vigor, imunidade e resistências. Antes reconstruído com regras de1399af8 em memória; plugin intacto. Variância0, MAT+20 e ação de frio são fixtures isoladas, não conteúdo novo do jogo.
 
 Chrome desktop156.0.8078.47 em1100×800/jogo816×624: regressão234 verificações mais UI de criação;16 prévias e16 save/load,16 aparências no mapa,256 amostras nativas; sem erros de script/rede/arquivos ausentes. Evidências novas em evidencias/auditoria-racial-r04/regressao/, anteriores preservadas. Auditorias de dados, fontes/hashes, regras esperadas e imagens ativas passaram. Nenhum save pessoal. Arquivos internos de motor/plugins/plugins.js não alterados; catálogo canônico e scripts referenciados verificados. Empacotadores atualizados para não reintroduzir3/4, mas não executados sobre a arte existente. Editor/NW.js e Galaxy A56 desta rodada não testados; não atribuir os testes anteriores a esses pilotos. Nenhum combate completo, progressão ou outra feature implementada.
+
+## Fechamento M01-13 — 26/10/2026
+
+Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar versão própria/dispositivo ou casos adicionais. Destaque visual de raros é melhoria futura, não implementada. Aprovação limitada ao menu; critérios funcionais revisados separadamente:11 cenários MV,24 matrizes, reservas/save/load/quest/derrota/abort/rollback e regressões registrados em evidencias/m01-13. Validador estático reexecutado neste fechamento; não alegar reexecução de todas as suítes. M01-13 concluído tecnicamente, com economia provisória e testes editor/A56 ainda separados. Integração/publicação em develop autorizadas; sem main/release.

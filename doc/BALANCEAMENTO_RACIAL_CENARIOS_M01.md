@@ -22,3 +22,8 @@ Atualização M01-08 R01: executado o cenário técnico100/110 inicial, gasto/sa
 | M01-20 | Percurso integrado da demo, incluindo inimigos sem paralisia/frio/magia e descansos/poções | Utilidade média de cada raça ao longo da demo, recursos restantes, mortalidade e escolhas dominantes. Só então propor ajustes com evidências e nova aprovação, sem mudar silenciosamente os valores R05 |
 
 Quando houver repetição de testes aleatórios, registrar sementes quando o cenário permitir e resultados agregados. Não alterar o motor nem construir sistemas extensos exclusivamente para ativar um bônus. M01-07 prova fórmulas/contratos e persistência; M01-08 implementa evolução e recursos, incluindo pagamento técnico de Vigor. Encontros animados, custo por vitória, desempenho e equilíbrio prático permanecem nos marcos seguintes. Este documento não autoriza iniciar M01-09 automaticamente.
+
+
+## Continuidade M01-20 — loot e variantes M01-13
+
+Comparar encontros com peças-base e raras(+1 ATQ/DEF provisório), preservando P01–P08; medir sinergias raciais e vantagem excessiva sem alterar bônus automaticamente. Registrar utilidade de poções/livros por raça, ouro/equipamento por rota e a agregação por vários inimigos. Não considerar os RNGs determinísticos prova de equilíbrio estatístico.

@@ -107,3 +107,8 @@ Conferir visualmente principal/habilidades/inventário/configuração/alvos/vit�
 Executar tools/validate-inventory.cjs, test-inventory.cjs, test-inventory-touch.cjs e test-inventory-appearance.cjs com ARENA_URL no servidor e ARENA_PLAYWRIGHT instalado. Saídas em evidencias/m01-12, contexto descartável sem saves pessoais. Roteiro manual em INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Regressões: test-character-creation.cjs com ARENA_EVIDENCE_DIR=evidencias/m01-12/regressao-criacao, test-persistence.cjs (saída tmp copiada), test-battle-slots.cjs com ARENA_UI_OUT=evidencias/m01-12/regressao-interface.
 
 Verificar estoque alterado após prévia, capacidade de devolução cheia, repetição, rollback de falha nativa simulada, consumível por referência estável apesar de seleção alterada, drag válido/inválido/fora e Escape durante o gesto, opção única sem lista redundante, importantes, técnicas/atalhos, consumo de poções/livros e save/load. Pranchas/pixels de16×2 materiais não provam figurino final/anatomia de todos os movimentos; manter avaliação visual separada. Autoria editor20 plugins foi observada por acessibilidade; não declarar playtest visual NW.js ou Galaxy A56 físico.
+
+
+## Integração M01-13
+
+M01-13: tools/validate-loot.cjs (24 matrizes e preservação), tools/test-loot.cjs (11 cenários nativos/contratos), tools/test-loot-presentation.cjs (mobile/reserva/rolagem), regressões test-inventory e test-inventory-touch com ARENA_EVIDENCE_DIR=doc/evidencias/m01-13/regressao-inventario. ARENA_PLAYWRIGHT aponta runtime Playwright; ARENA_URL para servidor descartável. Contextos próprios e save20, sem saves pessoais. Não trocar tabelas distribuídas para forçar raros. Manifesto/hash e limites em evidencias/m01-13 e LOOT_M01_13.md. Validação editor/A56 não inferida.

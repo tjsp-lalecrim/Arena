@@ -8,7 +8,9 @@
   "cardHeight": 126,
   "materials": {
     "1": "Arena_material_couro_v01",
-    "2": "Arena_material_malha_v01"
+    "2": "Arena_material_malha_v01",
+    "3": "Arena_material_couro_v01",
+    "4": "Arena_material_malha_v01"
   },
   "materialStatus": "Minimum torso material treatment on original silhouettes; not new complete garment silhouettes.",
   "mapBands": [

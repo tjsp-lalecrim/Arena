@@ -105,3 +105,8 @@ Somente commandHeight104 e hotbarHeight108 mudam em ArenaBattleUI.json em relaç
 ## Integração M01-12
 
 M01-12 não muda Actors/Classes/Weapons/Armors/Items/Skills ou os valores aprovados. ArenaInventory.json configura IDs, kit técnico, layout e regiões de material. Map007 recebe apenas evento8(13,5) para preparar/abrir equipamentos no laboratório; anteriores preservados. Registro canônico20 plugins preserva os18 anteriores. Equipamentos/inventário nativos e aparência derivada, sem schema próprio novo. System.versionId foi regravado pelo editor. Ver INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+
+## Integração M01-13
+
+M01-13: Weapons3/4 e Armors3/4 são variantes raras dos IDs1/2, mesmo tipo/arte/material, +1 provisório ATQ ou DEF, nomes/descrições/tag ArenaRare próprios. Registros anteriores intactos. ArenaLoot.json contém tabelas por espécie e referências pesadas; dificuldade não é nível de ator nem regra racial. Enemies.gold/dropItems nativos continuam zerados; plugin ignora esses pagamentos para evitar duplicação. Fonte de chave continua importante1/claimSource, sem colocação aleatória na campanha. Detalhes/fontes em LOOT_M01_13.md.

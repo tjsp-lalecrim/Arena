@@ -1,0 +1,24 @@
+{
+  "browser": "156.0.8078.47",
+  "checks": [
+    "native title command",
+    "gold max-1: one received, one saved pending",
+    "item99 reserve",
+    "no native message overlapping summary",
+    "scroll fixture beyond six rows",
+    "single touch dismissal returns map without window",
+    "gold reserve delivered once"
+  ],
+  "geometry": {
+    "x": 188.609375,
+    "y": 0,
+    "width": 538.765625,
+    "height": 412,
+    "top": 0,
+    "right": 727.375,
+    "bottom": 412,
+    "left": 188.609375
+  },
+  "errors": [],
+  "limits": "Generic mobile emulation, not Galaxy A56; duplicated rows only for UI scrolling fixture, no extra item grants"
+}

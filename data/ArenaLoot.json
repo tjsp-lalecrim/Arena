@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "limitScope": "enemy-origin",
+  "unknownEnemy": "error",
+  "enemies": {
+    "1": {
+      "gold": {
+        "chance": 0,
+        "min": 0,
+        "max": 0
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "lowest",
+      "source": "Monsters p.17: loot unknown (?). Zero rewards is provisional."
+    },
+    "2": {
+      "gold": {
+        "chance": 0.19,
+        "min": 2,
+        "max": 20
+      },
+      "potions": {
+        "chance": 0.08,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "item",
+            "id": 2,
+            "weight": 3
+          },
+          {
+            "kind": "item",
+            "id": 3,
+            "weight": 1
+          },
+          {
+            "kind": "item",
+            "id": 4,
+            "weight": 2
+          }
+        ]
+      },
+      "gearChance": 0.25,
+      "equipment": {
+        "chance": 1,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "armor",
+            "id": 1,
+            "weight": 1
+          }
+        ]
+      },
+      "weapons": {
+        "chance": 1,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "weapon",
+            "id": 1,
+            "weight": 1
+          }
+        ]
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0.02,
+        "variants": {
+          "weapon:1": {
+            "kind": "weapon",
+            "id": 3
+          },
+          "weapon:2": {
+            "kind": "weapon",
+            "id": 4
+          },
+          "armor:1": {
+            "kind": "armor",
+            "id": 3
+          },
+          "armor:2": {
+            "kind": "armor",
+            "id": 4
+          }
+        },
+        "items": {
+          "chance": 0.01,
+          "min": 1,
+          "max": 1,
+          "entries": [
+            {
+              "kind": "item",
+              "id": 5,
+              "weight": 1
+            },
+            {
+              "kind": "item",
+              "id": 6,
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "difficulty": "low",
+      "source": "Monsters p.6: gold19%/2-20, low-quality item25%; remaining conversions provisional."
+    },
+    "3": {
+      "gold": {
+        "chance": 0.23,
+        "min": 2,
+        "max": 20
+      },
+      "potions": {
+        "chance": 0.12,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "item",
+            "id": 2,
+            "weight": 3
+          },
+          {
+            "kind": "item",
+            "id": 3,
+            "weight": 1
+          },
+          {
+            "kind": "item",
+            "id": 4,
+            "weight": 2
+          }
+        ]
+      },
+      "gearChance": 0.25,
+      "equipment": {
+        "chance": 1,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "armor",
+            "id": 1,
+            "weight": 2
+          },
+          {
+            "kind": "armor",
+            "id": 2,
+            "weight": 1
+          }
+        ]
+      },
+      "weapons": {
+        "chance": 1,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "weapon",
+            "id": 1,
+            "weight": 2
+          },
+          {
+            "kind": "weapon",
+            "id": 2,
+            "weight": 1
+          }
+        ]
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0.02,
+        "variants": {
+          "weapon:1": {
+            "kind": "weapon",
+            "id": 3
+          },
+          "weapon:2": {
+            "kind": "weapon",
+            "id": 4
+          },
+          "armor:1": {
+            "kind": "armor",
+            "id": 3
+          },
+          "armor:2": {
+            "kind": "armor",
+            "id": 4
+          }
+        },
+        "items": {
+          "chance": 0.02,
+          "min": 1,
+          "max": 1,
+          "entries": [
+            {
+              "kind": "item",
+              "id": 5,
+              "weight": 1
+            },
+            {
+              "kind": "item",
+              "id": 6,
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "difficulty": "medium-M01",
+      "source": "Monsters p.13: gold23%/2-20, low-quality item25%; remaining conversions provisional."
+    }
+  },
+  "technical": {
+    "mapId": 7
+  }
+}
