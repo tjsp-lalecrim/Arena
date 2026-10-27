@@ -114,3 +114,5 @@ Favoritar habilidades e itens para facilitar sua associação aos atalhos foi so
 ## M01-12 — inventário/equipamentos
 
 Cartões paginados, equipamento por arrasto ou seleção, prévia/atributos antes de confirmar, remover/substituir e descrições por seleção implementados na feature. Tema de batalha compartilhado por exportação, sem novo windowskin global. Corpo/arma compatíveis com tipos nativos; importante protegido; menus com alvo único sem etapa de personagem. Teclado/mouse/toque emulado testados. Não há favoritos, lojas, crafting ou loot novos. Aparência mínima de material em revisão, sem declarar figurino final. Roteiro e limites em INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+Pendência canônica de favoritos e revisão dos atalhos de itens/habilidades: REF01 em REFINAMENTOS_POS_INTEGRACAO_M01.md (M01-19). Suporte item/skill já existe e deve ser auditado, não refeito sem evidência.

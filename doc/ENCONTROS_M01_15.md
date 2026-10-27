@@ -48,3 +48,8 @@ Somente uma transferência real para outro mapa dispara saída; transferências 
 - Capturas de mapa/rato/goblin e quadros decodificados do vídeo inspecionados em816×624. Vídeo real8,59segundos, não reconstrução; inclui boost de ataque identificado em fixture, portanto não serve como medição de equilíbrio.
 
 Checagem adicional `tools/test-encounter-pointer.cjs`: mouse desktop e toque Android genérico916×412 emulado aproximam por pathfinding e iniciam uma única batalha nativa. Resultado em ponteiro.json; pressão120ms permite o processamento por frames do MV. Clique sintético inicial de duração zero não iniciou destino; corrigiu-se a fixture, sem mudar o motor. Não é teste físico no Galaxy A56.
+
+## Fechamento M01-15 — 27/10/2026
+
+Responsável testou o combate integrado e o considera satisfatório por enquanto. Estado disponível081222a, sem hash próprio, ambiente ou lista de casos informados; não atribuir aprovação manual de respawn, persistência ou outros critérios. Os14 cenários técnicos de encontros, duas entradas por ponteiro e regressões documentadas foram revisados; validate-encounters reexecutado passou, sem mudança de implementação. Critérios funcionais M01-15 atendidos tecnicamente; autorizada integração em develop. Autoria dos novos plugins/eventos no MV e testes físicos permanecem evidências pendentes de integração, sem serem declarados realizados. Melhorias futuras consolidadas em REFINAMENTOS_POS_INTEGRACAO_M01.md, sem implementação nesta rodada. Registros anteriores abaixo são históricos quando divergirem.
+

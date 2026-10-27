@@ -1,3 +1,7 @@
+## Fechamento M01-15 — 27/10/2026
+
+Responsável testou o combate integrado e o considera satisfatório por enquanto. Estado disponível081222a, sem hash próprio, ambiente ou lista de casos informados; não atribuir aprovação manual de respawn, persistência ou outros critérios. Os14 cenários técnicos de encontros, duas entradas por ponteiro e regressões documentadas foram revisados; validate-encounters reexecutado passou, sem mudança de implementação. Critérios funcionais M01-15 atendidos tecnicamente; autorizada integração em develop. Autoria dos novos plugins/eventos no MV e testes físicos permanecem evidências pendentes de integração, sem serem declarados realizados. Melhorias futuras consolidadas em REFINAMENTOS_POS_INTEGRACAO_M01.md, sem implementação nesta rodada. Registros anteriores abaixo são históricos quando divergirem.
+
 ## Estado vigente — M01-15 (27/10/2026)
 
 M01-14 concluído desktop: autoria manual do Map008 e Explorar Dungeon confirmados pelo responsável, estado disponível3bcdf81, sem hash próprio informado. Fechamento2ca0201 integrado/publicado em developf1f2957. M01-15 na feature/m01-encontros, com67 encontros nativos (37 ratos/30 goblins), patrulha delimitada, contato único, batalha/loot existentes, derrotas persistidas e respawn apenas na saída após conclusão aplicável. Ver ENCONTROS_M01_15.md e suas evidências para execuções/limitações. Implementado para revisão; sem merge desta feature ou início de M01-16. Autoria dos novos plugins/eventos e playtest integrado do responsável ainda não atribuídos à confirmação M01-14. Galaxy A56 físico pendente da integração mobile, não bloqueante desktop; melhorias futuras e Vigor na água inalterados. Registros abaixo são históricos quando divergirem.
@@ -178,3 +182,7 @@ M01-12 R02 (26/10/2026): inventário anterior considerado bom pelo responsável;
 ## Fechamento M01-13 — 26/10/2026
 
 Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar versão própria/dispositivo ou casos adicionais. Destaque visual de raros é melhoria futura, não implementada. Aprovação limitada ao menu; critérios funcionais revisados separadamente:11 cenários MV,24 matrizes, reservas/save/load/quest/derrota/abort/rollback e regressões registrados em evidencias/m01-13. Validador estático reexecutado neste fechamento; não alegar reexecução de todas as suítes. M01-13 concluído tecnicamente, com economia provisória e testes editor/A56 ainda separados. Integração/publicação em develop autorizadas; sem main/release.
+
+## Refinamentos pós-integração
+
+M01-19 concentra REF01(favoritos/atalhos incluindo itens), REF02(caminhada de inimigos) e REF03(fundo genérico da dungeon). M01-20 concentra REF04(balanceamento após quests/descanso/progressão) e REF05(pesquisa e tabelas de drops por inimigo). Critérios completos e registro único de favoritos em REFINAMENTOS_POS_INTEGRACAO_M01.md. Nenhuma dessas melhorias foi implementada nesta rodada.

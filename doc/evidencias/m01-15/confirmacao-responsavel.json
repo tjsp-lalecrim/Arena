@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-27",
+  "availableVersion": "081222a",
+  "testedHash": "não informado",
+  "source": "responsável",
+  "scope": "Combate integrado testado, resultado satisfatório por enquanto",
+  "notConfirmed": [
+    "respawn",
+    "persistência",
+    "demais critérios não mencionados",
+    "dispositivo/ambiente não informado"
+  ],
+  "technicalReview": "14 cenários e regressões existentes revisados, validate-encounters reexecutado passou; não alegar nova execução de todas as suítes"
+}
