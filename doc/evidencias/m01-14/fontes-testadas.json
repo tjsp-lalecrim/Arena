@@ -1,0 +1,54 @@
+{
+  "base": "4c612ae",
+  "artCommit": "13161bc",
+  "implementationCommit": "f16c254cd1d7d61d45aa6bca865f56d55edd7a74",
+  "sources": {
+    "data/Map008.json": "8ca160a6077fdd46a4eda78dbc4f2837b59234c3320126bba99f404e72359fbe",
+    "data/ArenaDungeon.json": "25c9b03be57920035b1f3f4997d768de03a364008b9a98c637a512f6e27cc4f3",
+    "data/Tilesets.json": "97453d8a8393b0bfa731614fac7af47dc822a7b39285433453ba7ea33ca6c85f",
+    "data/MapInfos.json": "cecefe097eb43e469f937fd21e3d190b97d8929bf95dc98cd8c944c0a7df33eb",
+    "js/plugins.js": "2b41f82d85ca04c1ef85ba9ff159c7ad0c4efb1c7a7e611283331552bd0bedd2",
+    "js/plugins/Arena_Dungeon.js": "40f036357b99e8d75297a4b8e4a66678e407d4d116c4dd121703066a36f52c19",
+    "doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json": "578fb9f6011fa7f077edbcc74bc3b737bd39d8d781a9931532c0e16bdc3d523f",
+    "tools/build-dungeon-map.py": "b1c518cd6b1e0248bbc7892dd9940eb6859f0721df8600f3712b30be4120cace",
+    "tools/test-dungeon.cjs": "ef23113e81e56fce44d15031978fdb8d192242e0b631069a21984bd9d42bfa4c",
+    "tools/validate-dungeon.cjs": "943017896cf5bbbffb3d6ce738295ea4ef078607d0c0d134da3dc50c9fcf85e8",
+    "img/tilesets/Arena_Dungeon_M14.png": "0857bbd38f0b04850bb730a56e8eea9b441971a4c9a5f328a57360ed4a99597f"
+  },
+  "tests": {
+    "browser": "Chrome156.0.8078.47",
+    "viewport": [
+      1100,
+      800
+    ],
+    "nativeCanvas": [
+      816,
+      624
+    ],
+    "dungeonScenarios": 6,
+    "connectedNativeWalkableTiles": 9045,
+    "blockedNativeTiles": 15291,
+    "sourceConnectedCells": 1005,
+    "sourceRasterMatchingCells": 2500,
+    "nativeDoors": 14,
+    "lootRegressionScenarios": 11,
+    "persistenceRegressionScenarios": 27
+  },
+  "scope": "Fixed authored dungeon topology, source positions, geometry doors and technical entry only; no patrol/quest grant/narrative completion.",
+  "pending": [
+    "MV editor new map open/edit/plugin read/save/reopen blocked by automation errors; see editor.json",
+    "owner evaluation of scale/art/complements",
+    "physical Galaxy A56/fullscreen/performance",
+    "original DOS layered movement verification"
+  ],
+  "isolation": "Disposable Chrome contexts, native save20, no personal saves. Existing M01-13 evidence preserved; new regression outputs copied into this directory.",
+  "visualInspection": [
+    "visao-geral.png",
+    "cela-inicial.png",
+    "corredor-agua.png",
+    "chave-plataforma.png",
+    "shift-gate.png",
+    "shift-gate-mensagem.png"
+  ],
+  "referenceComparison": "Original/wiki comparison collage retained ignored in tmp/original-review; raster audit records sources/hashes without distributing original assets."
+}

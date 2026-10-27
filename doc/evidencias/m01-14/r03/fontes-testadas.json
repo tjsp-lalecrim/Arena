@@ -1,0 +1,201 @@
+{
+  "date": "2026-10-27",
+  "base": "1f3b29f",
+  "files": [
+    {
+      "file": "art\\m01-14\\componentes-ortogonais-r03-master.png",
+      "bytes": 2285167,
+      "sha256": "16573ee11da4abd348edce3b9c6476ad76e3b5fcfb24474fd89c47682a6f94eb",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "art\\m01-14\\tesouros-compactos-r03-master.png",
+      "bytes": 876354,
+      "sha256": "3821c0339194dabce2bb1f9dfb21a218097ab803350b0c271f12755480f7527b",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\characters\\!$Arena_Chains_M14_R03.png",
+      "bytes": 46049,
+      "sha256": "26eb877e9344530604c7d06c539dbc8500b8aa7f44b61182c21e736ca53a145a",
+      "size": [
+        288,
+        384
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\characters\\!$Arena_Doors_M14_R03.png",
+      "bytes": 123607,
+      "sha256": "50842de0af87fb0b53bf1b0748d9cc8ccb904befcddb18e51eabe9c8c896d39b",
+      "size": [
+        432,
+        576
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\characters\\!$Arena_Treasure_M14_R03.png",
+      "bytes": 11767,
+      "sha256": "5266ae850cb501b4df1900b79015aec76d51926e3c689d0d364988c85d485fe4",
+      "size": [
+        144,
+        192
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\pictures\\arena_platform_r03.png",
+      "bytes": 48076,
+      "sha256": "50ff368f84a6fc0067717bb30471b165ddaa9f46b0bba8181a288d02abb728c3",
+      "size": [
+        144,
+        144
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "img\\tilesets\\Arena_Dungeon_M14_R03.png",
+      "bytes": 241633,
+      "sha256": "9e6cf57861546812ed03e518b2e2715a4eafd53c4e9713768d95e46cea7a8e9a",
+      "size": [
+        768,
+        768
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "runtime": [
+    {
+      "file": "data\\Map008.json",
+      "bytes": 523804,
+      "sha256": "09ab28b05a2b56e5f339cfd0496d17b5f0f8e8ceae6d9cde21353ef2fd38bd3a"
+    },
+    {
+      "file": "data\\ArenaDungeon.json",
+      "bytes": 11657,
+      "sha256": "f626234b3481f13a558ac6cdde458f80fe29d362ad11e8926dd75ee5aa07b002"
+    },
+    {
+      "file": "data\\Tilesets.json",
+      "bytes": 50114,
+      "sha256": "18d1154c95f9553d8c611f7da5519c6d919e1a09feb3ed9af8398a917f848c11"
+    },
+    {
+      "file": "js\\plugins.js",
+      "bytes": 3211,
+      "sha256": "2b41f82d85ca04c1ef85ba9ff159c7ad0c4efb1c7a7e611283331552bd0bedd2"
+    },
+    {
+      "file": "js\\plugins\\Arena_Dungeon.js",
+      "bytes": 9022,
+      "sha256": "6fbfbd6cf6c7e045f0eaa182a328d3839d2bf8885c768a96d2403d3abd0388db"
+    },
+    {
+      "file": "tools\\build-dungeon-map.py",
+      "bytes": 10754,
+      "sha256": "396e80ead0625e52119db41cdb5f79b19ba32174be633a91fc4a513a3d7995f1"
+    },
+    {
+      "file": "tools\\build-dungeon-r03-assets.py",
+      "bytes": 4323,
+      "sha256": "786bf474635a0b2ba21bfdb0f6e2338a37686b8b93f4de35e709fe8fd8681e62"
+    },
+    {
+      "file": "tools\\test-dungeon-r03.cjs",
+      "bytes": 9735,
+      "sha256": "22a1f831707e2150e8ac8674728f681d21cc2ce592b84422e16223ebd557d4de"
+    }
+  ],
+  "defectPrints": [
+    {
+      "file": "doc\\prints\\m01-14-revisao-2026-10-27-01-d366b18f-54cc-41d1-a612-9b6fccbe21a0.png",
+      "bytes": 361100,
+      "sha256": "a10e03ed4fff76df816da86d7a6b692f8999f8820219a8a57728eb74d5607dce",
+      "size": [
+        1025,
+        810
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "doc\\prints\\m01-14-revisao-2026-10-27-02-ef0baeb6-ad15-4191-b2b9-dcb4c8f484a0.png",
+      "bytes": 509787,
+      "sha256": "31040b8a400276585a39e09c664feba3c02f1d108d8529d79d1fdca7ae6864b4",
+      "size": [
+        1015,
+        811
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "doc\\prints\\m01-14-revisao-2026-10-27-03-3299aa9a-a903-4065-a58f-f0526762e1c6.png",
+      "bytes": 431380,
+      "sha256": "31cfb2d4a9e6f30407d20b7f8ecc343714f4da2a17d912c97cf6c90a87da0e50",
+      "size": [
+        1020,
+        577
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "doc\\prints\\m01-14-revisao-2026-10-27-04-58b5dff9-da86-4363-999f-a61223ea1f82.png",
+      "bytes": 491250,
+      "sha256": "c9570e118fb2c848383fc551b2f479ea844ad78cee9e648e68d3dad6c146062e",
+      "size": [
+        1017,
+        831
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "doc\\prints\\m01-14-revisao-2026-10-27-05-06630e3f-1cfe-43d3-ac86-b6016dd4f821.png",
+      "bytes": 383533,
+      "sha256": "d3f8d2b4bea29c121b2035ca85f454327fbd8b2b09ae9a172c20dc21a8168da8",
+      "size": [
+        1033,
+        827
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "checks": [
+    "fixed shared144x144 canvases,3 distinct frames/4 directions",
+    "hinge pixels identical in all3 stages",
+    "open centers transparent: no participant hidden",
+    "treasure actual alpha bounds, margin and foot line verified"
+  ],
+  "treasureVisibleAlphaBounds": [
+    [
+      2,
+      12,
+      46,
+      46
+    ],
+    [
+      2,
+      13,
+      46,
+      46
+    ],
+    [
+      2,
+      16,
+      46,
+      46
+    ]
+  ],
+  "limits": [
+    "Pixels do not approve aesthetic fidelity",
+    "Original structure/style approved, door/object fit pending owner evaluation",
+    "Editor capture timeout; physical A56 pending"
+  ]
+}

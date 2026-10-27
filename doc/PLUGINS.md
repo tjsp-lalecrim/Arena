@@ -100,3 +100,13 @@ MV_EquipmentTransaction0.1.0 (puro/sem IDs) e Arena_Inventory0.1.0 (adaptador/Sc
 ## Integração M01-13
 
 M01-13:22 registros canônicos,20 anteriores preservados; após Arena_Inventory, MV_LootRules0.1.0 e Arena_Loot0.1.0. Sem plugins externos. Arena_Inventory exporta drawItemIcon para reutilizar o mesmo desenho e reconhece malha rara por mapeamento de material; Arena_Persistence adiciona getter sourceStatus sem mudar fonte/etapas/recibos. Docs individuais em plugins/ e LOOT_M01_13.md.
+
+
+## Atualização M01-14
+
+M01-14: Arena_Dungeon0.1.0 ao fim dos23 registros,22 anteriores integralmente preservados. Config ArenaDungeon.json; entrada técnica/portas nativas, sem schema novo ou código do original. Documentação em plugins/Arena_Dungeon.md. Validação do novo mapa no editor ainda pendente; formato canônico/UTF8 e referências auditados separadamente.
+
+
+Arena_Dungeon atualizado0.2.0 em M01-14 R02: portas3estados/4vistas, águaA1/natação delimitada, prévias de objetos e migração de eventos R01. Configuração/API/dependências em plugins/Arena_Dungeon.md. Sem dependências externas nem novo consumidor de recursos.
+
+Arena_Dungeon0.3.0/R03: montagem ortogonal/âncoras invariantes e revisão3 de geometria; ver plugins/Arena_Dungeon.md. Nenhum novo registro em plugins.js.

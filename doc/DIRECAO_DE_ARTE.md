@@ -251,3 +251,20 @@ Responsável aprova combate/animações atuais na solicitação de refinamento d
 ## Integração M01-12
 
 M01-12 reutiliza pixels/poses aprovados das16 identidades. Somente dois materiais IA gerados: couro/malha, com prompts completos, hashes, dimensões, masters e arquivos de consumo em arte/MATERIAIS_M01_12_*.json e art/m01-12. Aplicação em regiões de torso é amostra técnica mínima, não silhueta completa/figurino final ou aprovação estética. Mapas/retratos/narrativa/animações não foram regenerados. Avaliar encaixe e leitura antes de expandir produção; limites e cobertura em INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+
+## Atualização M01-14
+
+M01-14 reutiliza piso/alvenaria R04 e sprites aprovados; um atlas IA complementar v01 (cap/porta/Gate quadrado azul/água/plataforma/correntes). Prompts/referências efetivas em arte/DUNGEON_M01_14_PROMPTS.json. Cor azul do Gate vem do print original, sem trocar por portal circular genérico. Não há narrativa com protagonista. Recortes/células/escala e simplificações constam em DUNGEON_M01_14.md e dependem de avaliação do responsável; não promover complementos a aprovados automaticamente.
+
+## Convenções obrigatórias de cenário — M01-14 R02
+
+Porta é vão na faixa de parede: teto/cap separado de1tile, face de2tiles, apoio inferior e orientação explícita norte/sul/leste/oeste. Nunca pintar teto dentro dos quadros da porta. Arte pode ocupar vários tiles; collider é contrato independente e não cresce com a imagem. Quatro direções exigem perspectiva/iluminação próprias, sem espelhar por conveniência. Estados fechado/intermediário/aberto compartilham enquadramento, escala, jambas e pivô. Verificar envelope ocupado antes de fechar e inspeção do personagem nas duas extremidades. Correntes/nichos são estáticos, com vistas próprias, ancorados à massa mural; chão e tesouro usam perspectiva superior e apoio no piso.
+
+Água animada deve repetir sem emendas e usar A1 nativo quando adequado; imersão visual deriva de região explícita, não autoriza andar por toda água ou obstáculo. Não mudar Vigor em exploração. Tesouro baseia-se no original: saco/moedas/tecido/peças, sem brilho de raridade futuro. Arte nova e recortes R02 estão em revisão; aprovação da base4161615 registrada em arte/DUNGEON_M01_14_R02_PROMPTS.json. Os recortes inspecionados devem ser registrados na origem, pois a ferramenta pode não respeitar a grade solicitada. Limites/candidatos em DUNGEON_M01_14_R02.md. Sem ilustração narrativa do protagonista.
+## Diretiva vigente R03 — ortogonal
+
+DIRETIVA_DE_MAPAS.md consolida as regras verificáveis e prevalece sobre as simplificações R02. Não usar portas/correntes com alvenaria incorporada nem vistas oblíquas/isométricas. Componentes separados de geometria; âncoras e dobradiças invariantes; projeções frontal e superior lateral próprias. Objetos de parede somente em face desenhada válida, sem flutuar no vazio; plataformas independentes sem parede traseira; tesouros RGBA em escala opaca de44×30–34px. Prompts/masters/limites em arte/DUNGEON_M01_14_R03_*.json e relatório DUNGEON_M01_14_R03.md. Sem aprovação automática de encaixes, alterações de recursos ou narrativa do protagonista.
+## Aprovação do mapa e ressalva futura — 27/10/2026
+
+Resultado visual/estrutura da R03 no estado disponívelb194b44 aprovados pelo responsável. Não regenerar os assets aprovados nesta rodada. Portas laterais têm orientação e formato corretos; futuramente avaliar espessura aparente, contraste e legibilidade, preservando âncoras, moldura, animação, projeção e colisão. Sem mudança implementada. A ressalva não bloqueia o próximo backlog; a pendência de autoria no editor é separada. Evidência/escopo em APROVACAO_MAPA_M01_14.md.

@@ -99,3 +99,8 @@ O portal original envia a uma cidade da província da raça; o M01 encerra antes
 ## Cobertura e vínculos
 
 M01-14 fixa coordenadas/colisões; M01-16 implementa etapas e diário; M01-18 integra textos e ilustrações. Testar antes da chave, após porta, após combate e antes do portal. Cobrir ação fora de ordem, chave ausente/duplicada/consumida, repetição do portal, save/load em cada etapa e isolamento entre fontes de loot. A especificação conclui M01-02; a execução desses testes pertence aos itens de implementação.
+
+
+## Atualização M01-14
+
+M01-14 verificou START.MIF/START.INF locais e planta wiki. Coordenadas textuais acima (3,19)/(4,21) são históricas: a grade local contém chave em FLOR3,20 e registro LOCK4,23. Mapeamento orientado/MV e justificativa da divergência em DUNGEON_M01_14.md. Layout inicial confirmado com cela leste e Gate sudoeste; não se assume equivalência métrica ou de colisão3D. Porta/chave/quest reais permanecem M01-16; Gate nesta etapa é contato técnico, não encerramento narrativo.

@@ -112,3 +112,17 @@ Verificar estoque alterado após prévia, capacidade de devolução cheia, repet
 ## Integração M01-13
 
 M01-13: tools/validate-loot.cjs (24 matrizes e preservação), tools/test-loot.cjs (11 cenários nativos/contratos), tools/test-loot-presentation.cjs (mobile/reserva/rolagem), regressões test-inventory e test-inventory-touch com ARENA_EVIDENCE_DIR=doc/evidencias/m01-13/regressao-inventario. ARENA_PLAYWRIGHT aponta runtime Playwright; ARENA_URL para servidor descartável. Contextos próprios e save20, sem saves pessoais. Não trocar tabelas distribuídas para forçar raros. Manifesto/hash e limites em evidencias/m01-13 e LOOT_M01_13.md. Validação editor/A56 não inferida.
+
+
+## Atualização M01-14
+
+M01-14: tools/validate-dungeon.cjs e tools/test-dungeon.cjs; Chrome em contexto descartável, ARENA_PLAYWRIGHT/ARENA_URL, save20 isolado. Caminhada nativa pela rota, porta acionada por teclado, piso/sólidos, save/load e laboratório; ferramentas de imagem apenas montagem técnica. Editor tentativa falhou e não conta como aprovação. Evidências em evidencias/m01-14; regressões loot11/persistência27. Não sobrescrever históricos: test-loot aceita ARENA_EVIDENCE_DIR nesta revisão.
+
+## M01-14 R02
+
+Roteiro detalhado: DUNGEON_M01_14_R02.md. Executar build-dungeon-objects.py e build-dungeon-map.py antes de validate-dungeon.cjs; test-dungeon-revision.cjs grava testes isolados, capturas e canvas em evidencias/m01-14/r02. test-dungeon.cjs aceita ARENA_EVIDENCE_DIR para preservar as evidências históricas; saída desta rodada r02/regressao. Não inferir teste no editor a partir da execução Chrome. Repetir manualmente portas nos4sentidos, ocupado, piso/apoio, entrada/saída/cantos da água, teclado/clique e salvar na água; editor e aparelho físico pendentes.
+M01-14 R03: validate-dungeon.cjs delega em validate-dungeon-r03.cjs; audit-dungeon-r03.py confere dobradiças/centros/alpha; test-dungeon-r03.cjs usa Chrome descartável e saves16/17 para28 travessias, encaixes, água e migração. Regressão test-dungeon.cjs com ARENA_EVIDENCE_DIR=doc/evidencias/m01-14/r03/regressao. Gerar assets com build-dungeon-r03-assets.py antes do mapa. Não sobrescrever evidências R01/R02. Editor e avaliação estética continuam separados.
+
+Pesquisa de natação27/10/2026: fontes/condições em INVESTIGACAO_NATACAO_ARENA.md e evidencias/m01-14/aprovacao-natacao. Experimento DOS de parado/movimento/zero/HP NÃO realizado por falta de janela observável; roteiro é futuro. Não aplicar S01 nem substituir gasto exclusivo de combate. Aprovação do mapa não comprova ciclo de autoria. validate-dungeon.cjs reexecutado, sem repetir as baterias R03.
+
+Autoria MV1.6.1 em cópia: TESTE_EDITOR_M01_14.md. prepare-mv-authoring-copy.py cria fixture ignorada sem sobrescrever; verify-mv-authoring-copy.py confere original/fixture/contratos e marcador, sem presumir operação do editor. Playtest Explorar Dungeon confirmado pelo responsável, sem extrapolar. Nenhuma captura repetida nesta tentativa; A56 físico não bloqueia desktop.

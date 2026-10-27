@@ -110,3 +110,13 @@ M01-12 não muda Actors/Classes/Weapons/Armors/Items/Skills ou os valores aprova
 ## Integração M01-13
 
 M01-13: Weapons3/4 e Armors3/4 são variantes raras dos IDs1/2, mesmo tipo/arte/material, +1 provisório ATQ ou DEF, nomes/descrições/tag ArenaRare próprios. Registros anteriores intactos. ArenaLoot.json contém tabelas por espécie e referências pesadas; dificuldade não é nível de ator nem regra racial. Enemies.gold/dropItems nativos continuam zerados; plugin ignora esses pagamentos para evitar duplicação. Fonte de chave continua importante1/claimSource, sem colocação aleatória na campanha. Detalhes/fontes em LOOT_M01_13.md.
+
+
+## Atualização M01-14
+
+M01-14: Map008, MapInfos8, Tileset4/Arena_Dungeon_M14. Mapas1–7/banco de personagem/combate intactos. Config de pontos e portas em ArenaDungeon.json; topologia interpretada/autorizada em doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json. Regiões1sólido/2água/3plataforma/4piso só para diagnóstico, sem mapa-guia runtime. MIF/texturas originais não distribuídos.
+
+
+M01-14 R02: ArenaDungeon schema2, regiões1sólido/2água/3plataforma/4piso/5face-vão/6cap-superior. A1tile2048 só nadável no mapa8/região2; demais colisões nativas. Estado visual/transição de portas serializado no Game_Map, A nativo nos IDs1–126. Migração R01 reconstrói218 eventos em163 sem recriar ator/inventário. Ver DUNGEON_M01_14_R02.md e plugins/Arena_Dungeon.md.
+
+R03: ArenaDungeon.schemaVersion3; campo attachments distingue sourceCell/wallCell/posição/distância/category wall-only. Cap não é desenhado sobre piso de vão; região6 antiga deixa de ser usada. sourceLayout e área sólida/caminhável preservadas, door.visualAnchor/hingesLocal/footprint explícitos; eventos168 e primeiros126 de portas estáveis. Migração mantém recursos/inventário e reconstrói somente geometria do mapa8. Plataformas41×3×3 em camada1, chão abaixo. Ver DIRETIVA_DE_MAPAS.md.

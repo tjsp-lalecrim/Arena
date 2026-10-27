@@ -4,13 +4,13 @@ const baseline='30e441d',old=p=>execFileSync('git',['show',baseline+':'+p],{enco
 const text=fs.readFileSync('js/plugins/Arena_BattleUI.js','utf8').replaceAll('\r\n','\n');
 const config=JSON.parse(fs.readFileSync('data/ArenaBattleUI.json','utf8')),prior=JSON.parse(old('data/ArenaBattleUI.json'));
 assert.equal(config.commandHeight,104);assert.equal(config.hotbarHeight,108);assert.deepEqual({...config,commandHeight:prior.commandHeight,hotbarHeight:prior.hotbarHeight},prior);
-const parse=s=>JSON.parse(s.slice(s.indexOf('['),s.lastIndexOf(']')+1)),plugins=parse(fs.readFileSync('js/plugins.js','utf8'));assert.deepEqual(plugins.slice(0,18),parse(old('js/plugins.js')));assert.deepEqual(plugins.slice(18).map(p=>[p.name,p.status,p.parameters]),[['MV_EquipmentTransaction',true,{}],['Arena_Inventory',true,{}],['MV_LootRules',true,{}],['Arena_Loot',true,{}]]);
+const parse=s=>JSON.parse(s.slice(s.indexOf('['),s.lastIndexOf(']')+1)),plugins=parse(fs.readFileSync('js/plugins.js','utf8'));assert.deepEqual(plugins.slice(0,18),parse(old('js/plugins.js')));assert.deepEqual(plugins.slice(18).map(p=>[p.name,p.status,p.parameters]),[['MV_EquipmentTransaction',true,{}],['Arena_Inventory',true,{}],['MV_LootRules',true,{}],['Arena_Loot',true,{}],['Arena_Dungeon',true,{}]]);
 function slice(s,start,end){return s.slice(s.indexOf(start),s.indexOf(end,s.indexOf(start))).trim();}
 const original=old('js/plugins/Arena_BattleUI.js');
 assert.equal(slice(text,'    function resolve(','    Input.keyMapper').replace(',theme:menuChrome',''),slice(original,'    function resolve(','    Input.keyMapper'),'availability and descriptions/cost calculation unchanged');
 assert.equal(slice(text,'    Sprite_Actor.prototype.setActorHome','    Spriteset_Battle.prototype.createBattleback'),slice(original,'    Sprite_Actor.prototype.setActorHome','    Spriteset_Battle.prototype.createBattleback'),'animation/body/weapon/effects transforms unchanged');
 assert.equal(slice(text,'    var start=BattleManager.startAction;','    Scene_Battle.prototype.arenaAcceptsInput'),slice(original,'    var start=BattleManager.startAction;','    var sceneUpdate=Scene_Battle.prototype.update;'),'native cost/revalidation guard unchanged');
-assert.equal(execFileSync('git',['diff','90e309b','--','img','art','js/rpg_core.js','js/rpg_managers.js','js/rpg_objects.js','js/rpg_scenes.js','js/rpg_sprites.js','js/rpg_windows.js','js/plugins/Arena_Resources.js','js/plugins/Arena_Abilities.js','js/plugins/Arena_BattleMotion.js','js/plugins/Arena_Battle.js','data/ArenaBattleMotion.json','data/ArenaCatalog.json','data/Skills.json','data/Items.json','data/Enemies.json','data/Troops.json'],{encoding:'utf8'}),'','rules, animations, engine, saves schema and database unchanged');
+assert.equal(execFileSync('git',['diff','90e309b','--','js/rpg_core.js','js/rpg_managers.js','js/rpg_objects.js','js/rpg_scenes.js','js/rpg_sprites.js','js/rpg_windows.js','js/plugins/Arena_Resources.js','js/plugins/Arena_Abilities.js','js/plugins/Arena_BattleMotion.js','js/plugins/Arena_Battle.js','data/ArenaBattleMotion.json','data/ArenaCatalog.json','data/Skills.json','data/Items.json','data/Enemies.json','data/Troops.json'],{encoding:'utf8'}),'','rules, animations, engine, saves schema and database unchanged');
 assert(!/Ã|Â|â€/.test(text));assert(!text.startsWith('\ufeff'));
 console.log('PASS R02 presentation invariants; prior18 plugins and transforms/cost guards/resources/races/engine/art preserved; exact loot variants/source getter audited');
 
@@ -19,3 +19,5 @@ const system=JSON.parse(fs.readFileSync('data/System.json','utf8')),priorSystem=
 const map=JSON.parse(fs.readFileSync('data/Map007.json','utf8')),oldMap=JSON.parse(old('data/Map007.json'));assert.deepEqual({...map,events:map.events.slice(0,8)},oldMap);assert.equal(map.events.length,9);assert.equal(map.events[8].name,'Equipamentos técnicos');
 
 for(const file of ['data/Weapons.json','js/plugins/Arena_Persistence.js'])assert.equal(normalizeLoot(file,fs.readFileSync(file,'utf8').replaceAll('\r\n','\n')),normalizeLoot(file,old(file)));
+
+assert.deepEqual(execFileSync('git',['diff','--name-status','4c612ae','--','img','art'],{encoding:'utf8'}).trim().split('\n'),['A\tart/m01-14/complementos-prisao-v01.png','A\timg/tilesets/Arena_Dungeon_M14.png']);

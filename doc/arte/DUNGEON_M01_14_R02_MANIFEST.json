@@ -1,0 +1,100 @@
+{
+  "round": "M01-14 R02",
+  "date": "2026-10-27",
+  "status": "new assets pending responsible review; previous4161615 graphical direction and structural fidelity approved",
+  "files": [
+    {
+      "file": "art/m01-14/portas-tesouros-r02-master.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "60e97e6f4b1353342583900b60d5a4825901ef2d501167eae36fdb6c5b6e82b7"
+    },
+    {
+      "file": "art/m01-14/objetos-direcionais-r02-master.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "8a6fd64863918392c8140cdde13fd33db82aa85b3334cacc6ccc2504323410e4"
+    },
+    {
+      "file": "img/characters/!$Arena_Chains_M14_R02.png",
+      "size": [
+        432,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "b00942feaa08b169d1f3a65a7d74916ea77a363d9dd7d4a9eeff96f8994d4ee3"
+    },
+    {
+      "file": "img/characters/!$Arena_Doors_M14_R02.png",
+      "size": [
+        432,
+        384
+      ],
+      "mode": "RGBA",
+      "sha256": "b70cc1b22539198e23c685e086b527af6958d4e7c793c6f224131956fa3b7615"
+    },
+    {
+      "file": "img/characters/!$Arena_Key_M14_R02.png",
+      "size": [
+        144,
+        192
+      ],
+      "mode": "RGBA",
+      "sha256": "1b64bc0fb7e3cc214f1550482eb7b7e377132a316b9d72de4fe90678fa6163a7"
+    },
+    {
+      "file": "img/characters/!$Arena_Ripple_M14_R02.png",
+      "size": [
+        288,
+        128
+      ],
+      "mode": "RGBA",
+      "sha256": "ee4028da11202e090c5a70077607bab8825aa3f4c919051a2b9ef85b3e44db88"
+    },
+    {
+      "file": "img/characters/!$Arena_Treasure_M14_R02.png",
+      "size": [
+        144,
+        192
+      ],
+      "mode": "RGBA",
+      "sha256": "1baa12110260625ba10d6652ebc22aa91b9c99007588b1a0f58287cbd01cfa4e"
+    },
+    {
+      "file": "img/tilesets/Arena_Dungeon_M14_R02.png",
+      "size": [
+        768,
+        768
+      ],
+      "mode": "RGBA",
+      "sha256": "980b9e6dd8b6830be3221dd0868873a8e20274003eca838787e4f914eccc6fe2"
+    },
+    {
+      "file": "img/tilesets/Arena_Water_M14_R02_A1.png",
+      "size": [
+        768,
+        576
+      ],
+      "mode": "RGBA",
+      "sha256": "9169e7d999e9d1e880cc76b2a705815b91b3f00b9a874dd031c5e421a0078de4"
+    }
+  ],
+  "packing": "tools/build-dungeon-objects.py then tools/build-dungeon-map.py; inspected explicit row bounds; native !$/A1",
+  "preserved": [
+    "art/m01-14/complementos-prisao-v01.png",
+    "img/tilesets/Arena_Dungeon_M14.png",
+    "img/tilesets/Arena_Prison_R04.png"
+  ],
+  "limitations": [
+    "Directional art is interpretation, especially rear/side fit; no automatic aesthetic approval",
+    "Treasure collected is preview, not reward ledger",
+    "No original DOS execution; swimming geometry adapted from layers/outline",
+    "MV editor capture timeout; A56 physical pending"
+  ]
+}

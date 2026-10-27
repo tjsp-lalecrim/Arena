@@ -1,0 +1,28 @@
+{
+  "browser": "156.0.8078.47",
+  "checks": [
+    "native title entry creates isolated pilot, Map008 start148,82; normal campaign/map labs unchanged",
+    "native movement to key/platform; no early quest grant, EXP or loot",
+    "closed cell blocks gate route; action-button opens cross-section natively, no quest consumption; route then connected",
+    "native tile flags: all floor/platform/water cells pass, solid/cap/faces blocked; all14 doors; route to southwest gate, no outside transfer",
+    "isolated native save20/load retains location, native doors, character/resources/inventory/quest/loot; no regrant",
+    "return laboratory and re-entry preserve technical maps, character and opened doors"
+  ],
+  "geometry": {
+    "width": 156,
+    "height": 156,
+    "floor": 9045,
+    "blocked": 15291,
+    "doors": 14
+  },
+  "sweptFloor": 9045,
+  "closed": {
+    "directions": null,
+    "visited": 138
+  },
+  "keyPath": 24,
+  "openRoute": 200,
+  "gateWalk": 190,
+  "errors": [],
+  "isolation": "Disposable context, test speed6 restored4, native save20 only; gate is integration marker, not MQ01 conclusion"
+}

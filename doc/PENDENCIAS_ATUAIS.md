@@ -1,4 +1,28 @@
+## Fechamento vigente M01-14 — 27/10/2026
+
+Responsável confirmou abertura do Map008, edição reversível, salvamento e reabertura pelo MV1.6.1, além de Explorar Dungeon. Estado disponível3bcdf81, sem hash de teste informado. Evidência manual em evidencias/m01-14/edicao-editor/confirmacao-responsavel.json, separada das tentativas automáticas anteriores. Integridade revalidada por validate-dungeon.cjs; critérios de topologia, portas, água, persistência e geradores cobertos pelas evidências R03 revisadas. **M01-14 concluído no escopo desktop**, autorizada integração em develop e continuidade M01-15. Ressalvas futuras de legibilidade das portas laterais e investigação de natação preservadas; S01 não aplicado, Vigor aquático inalterado. Galaxy A56 físico pendente da integração mobile, não bloqueante desktop. Registros abaixo de autoria/estética pendentes são históricos quando divergirem deste fechamento. Não atribuir essa confirmação a M01-15.
+
+## Playtest MV e teste de autoria em cópia — 27/10/2026
+
+Responsável confirmou execução de Explorar Dungeon pelo MV1.6.1 até o ponto testado (estado disponível031a58b). Não atribuir edição/salvamento/reabertura a essa evidência. Cópia temporária pronta em tmp/mv-editor-m01-14/Game.rpgproject, excluída do Git;273 arquivos de execução do original preservados. Nova abordagem sem capturas, por abertura separada/acessibilidade, não conseguiu operar o controle nativo. Roteiro curto e alteração segura em TESTE_EDITOR_M01_14.md; dados/propriedades/eventos/plugins da cópia verificados por arquivo, sem chamar isso de teste de autoria. M01-14 aguarda esse ciclo; sem merge ou M01-15. Autorização de continuidade permanece válida quando passar. Galaxy A56 físico é pendência da integração mobile, não bloqueio desktop. Arte aprovada e custo de Vigor na água inalterados.
+
+## Aprovação M01-14 e pesquisa de natação — 27/10/2026
+
+Estrutura/visual do estado disponívelb194b44 aprovados pelo responsável. Porta lateral fina/pouco visível é melhoria futura não bloqueante; preservar forma/encaixe/âncora/animação/colisão, sem geração nesta rodada. Pesquisa em INVESTIGACAO_NATACAO_ARENA.md confirma custo de fatigue documental, mas taxa/parado versus movimento/forma exata do afogamento não foram observados. S01 é proposta não aplicada; Vigor continua exclusivo de técnicas de combate. Ler APROVACAO_MAPA_M01_14.md. Autoria Map008 editar/salvar/reabrir no editor ainda sem comprovação; nova automação falhou. M01-14 não fechado, sem merge; M01-15 confirmado no backlog, ainda não iniciado por essa dependência. Registros anteriores de estética pendente são históricos; não transformar aprovação visual em teste funcional/editor/A56.
+
+## Correção M01-14 R03 — 27/10/2026
+
+Direção gráfica/planta permanecem aprovadas; encaixes de portas/objetos/colisões não estavam aprovados. R03 corrige os cinco prints de defeitos com componentes ortogonais, dobradiças fixas, ausência de cap sobre vão, plataformas independentes, tesouros maiores e suporte válido de decoração. Ler DIRETIVA_DE_MAPAS.md e DUNGEON_M01_14_R03.md. Sem merge, isometria ou avanço para M01-15. M01-14 em validação: testes Chrome/contratos separados de aprovação visual; captura do editor falhou duas vezes, sem comprovar editar/salvar/reabrir; A56 físico pendente. Registros anteriores são históricos quando divergirem.
+
+## Revisão M01-14 R02 — 27/10/2026
+
+Responsável aprovou direção gráfica e fidelidade estrutural da base disponível4161615. R02 revisa portas/objetos/água; a aprovação da base não se estende automaticamente às variantes novas. Planta preservada. Portas com quatro vistas/três estados, tesouros inspirados no arena_loot, água A1 própria e natação restrita ao mapa8/região2, sem custo/regeneração de Vigor. Fontes, contratos, testes e limites em DUNGEON_M01_14_R02.md. M01-14 permanece em validação: captura do editor falhou novamente; autoria no MV e A56 físico não verificados. Sem merge ou avanço de backlog. Estados operacionais anteriores abaixo são históricos quando divergirem desta revisão.
+
 # Pendências atuais após consolidação das decisões
+
+## Estado operacional M01-14 — 26/10/2026
+
+M01-13 integrado/publicado em develop4c612ae após revisão técnica e aprovação limitada ao menu; destaque de raros é melhoria futura não implementada. Feature/m01-dungeon-inicial entrega mapa8/tileset4, planta original50×50 adaptada3×3,14 portas, chave/Gate e pontos de integração. Navegação/colisões/save-load e comparação da planta testados. **M01-14 em validação, não concluído:** autoria/edição/salvar/reabrir do novo mapa no editor não confirmados por falhas da automação; avaliação de arte/escala do responsável e A56 separados. Ler DUNGEON_M01_14.md. Sem merge da nova feature, geração procedural, mapa-guia ou início de M01-15. Registros operacionais anteriores são históricos quando divergirem.
 
 ## Estado operacional — M01-13 (26/10/2026)
 
