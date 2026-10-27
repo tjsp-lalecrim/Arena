@@ -107,6 +107,11 @@ var ArenaPersistence = (function() {
                 d.quests[questId] = { stage: stage, objectives: objectives, completed: completed, receipts: q.receipts };
             });
         },
+        sourceStatus: function(sourceId) {
+            var s = source(state(), sourceId);
+            return { active: s.active, questId: s.config.questId, itemId: s.config.itemId,
+                missing: s.active ? Math.max(0, s.config.quantity - $gameParty.numItems($dataItems[s.config.itemId])) : 0 };
+        },
         claimSource: function(sourceId) {
             var d = state(), s = source(d, sourceId);
             if (!s.active) return 'inactive';

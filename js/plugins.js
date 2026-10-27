@@ -21,5 +21,7 @@ var $plugins =
 {"name":"MV_BattleSlots","status":true,"description":"Geometria pura de slots, sem IDs de conteúdo.","parameters":{}},
 {"name":"Arena_BattleUI","status":true,"description":"Interface de batalha em slots, atalhos e jogador à esquerda.","parameters":{}},
 {"name":"MV_EquipmentTransaction","status":true,"description":"v0.1.0 Transação reutilizável de equipamento por adaptador.","parameters":{}},
-{"name":"Arena_Inventory","status":true,"description":"v0.1.0 Inventário em slots, equipamentos e aparência derivada.","parameters":{}}
+{"name":"Arena_Inventory","status":true,"description":"v0.1.0 Inventário em slots, equipamentos e aparência derivada.","parameters":{}},
+{"name":"MV_LootRules","status":true,"description":"Sorteio puro de loot por origem","parameters":{}},
+{"name":"Arena_Loot","status":true,"description":"Loot automático e resumo de vitória","parameters":{}}
 ];

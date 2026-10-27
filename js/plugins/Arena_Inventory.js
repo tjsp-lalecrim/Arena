@@ -47,7 +47,7 @@ var ArenaInventory,Scene_ArenaInventory;
     }
     Game_Actor.prototype.changeEquip=function(slot,item){return exchange(this,slot,item);};
     ArenaInventory={
-        ref:ref,resolve:resolve,important:important,
+        ref:ref,resolve:resolve,important:important,drawItemIcon:icon,
         preview:function(slot,r){return r&&!resolve(r)?{ok:false,reason:'Referência inválida.'}:preview(actor(),slot,resolve(r));},
         equip:function(slot,r){if(r&&!resolve(r))return {ok:false,reason:'Referência inválida.'};return exchange(actor(),slot,resolve(r));},
         discard:function(r,n){var i=resolve(r);if(!i||important(i)||!Number.isInteger(n)||n<1||$gameParty.numItems(i)<n)return false;$gameParty.loseItem(i,n,false);return true;},
@@ -104,7 +104,7 @@ var ArenaInventory,Scene_ArenaInventory;
     function icon(w,i,x,y,size){
         if(!i)return;
         if(gear(i)){var b=ImageManager.loadPicture('arena_icones_v01'),sx=DataManager.isArmor(i)?32:0;if(b.isReady()){
-            if(DataManager.isArmor(i)&&i.id===2){var metal=ImageManager.loadPicture(config().materials['2']);if(!metal.isReady()){if(!w._waitingMail){w._waitingMail=true;metal.addLoadListener(function(){if(w.parent)w.refresh();});}return;}if(!mailIcon){mailIcon=new Bitmap(32,32);mailIcon.blt(b,32,0,32,32,0,0);var pattern=new Bitmap(32,32);pattern.blt(metal,0,0,metal.width,metal.height,0,0,32,32);var rgba=mailIcon._context.getImageData(0,0,32,32),tex=pattern._context.getImageData(0,0,32,32).data;for(var n=0;n<rgba.data.length;n+=4)if(rgba.data[n+3]){var shade=.5+(rgba.data[n]+rgba.data[n+1]+rgba.data[n+2])/384;for(var z=0;z<3;z++)rgba.data[n+z]=Math.min(255,tex[n+z]*shade);}mailIcon._context.putImageData(rgba,0,0);mailIcon._setDirty();}w.contents.blt(mailIcon,0,0,32,32,x,y,size,size);}
+            if(DataManager.isArmor(i)&&config().materials[String(i.id)]===config().materials['2']){var metal=ImageManager.loadPicture(config().materials['2']);if(!metal.isReady()){if(!w._waitingMail){w._waitingMail=true;metal.addLoadListener(function(){if(w.parent)w.refresh();});}return;}if(!mailIcon){mailIcon=new Bitmap(32,32);mailIcon.blt(b,32,0,32,32,0,0);var pattern=new Bitmap(32,32);pattern.blt(metal,0,0,metal.width,metal.height,0,0,32,32);var rgba=mailIcon._context.getImageData(0,0,32,32),tex=pattern._context.getImageData(0,0,32,32).data;for(var n=0;n<rgba.data.length;n+=4)if(rgba.data[n+3]){var shade=.5+(rgba.data[n]+rgba.data[n+1]+rgba.data[n+2])/384;for(var z=0;z<3;z++)rgba.data[n+z]=Math.min(255,tex[n+z]*shade);}mailIcon._context.putImageData(rgba,0,0);mailIcon._setDirty();}w.contents.blt(mailIcon,0,0,32,32,x,y,size,size);}
             else w.contents.blt(b,sx,0,32,32,x,y,size,size);
         }else if(!w._waitingIcons){w._waitingIcons=true;b.addLoadListener(function(){if(w.parent)w.refresh();});}}
         else if(i.id>=2&&i.id<=4){var hue={2:330,3:190,4:80}[i.id],p=ImageManager.loadPicture('arena_icones_v01',hue);if(p.isReady())w.contents.blt(p,64,0,32,32,x,y,size,size);else p.addLoadListener(function(){if(w.parent)w.refresh();});}

@@ -15,3 +15,8 @@ Fonte MQ01.ruby-key usa item 1, quantidade 1, elegível somente em MQ01 etapas 1
 Snapshot retorna cópia; identity adiciona o nome consultado do ator. Aparência equipada é derivada, não salva aqui. Nome/HP/MP/nível/EXP/equipamentos/magias aprendidas/inventário continuam nativos. Campos Game_System e desativação seguem MV_StateStore.md. Saves anteriores à estrutura recebem defaults sem adivinhar raça/gênero/etapa; não há migração dos switches reservados, que não eram usados pelo laboratório.
 
 Testes: tools/test-persistence.cjs usa Chrome isolado e saves técnicos, sem perfis pessoais, cobrindo dados próprios/nativos, recibos, legado/ausência parcial, capacidade, rollback de concessão e nova partida. tools/test-boot.cjs cobre regressão do laboratório. Validado com MV 1.6.1 em Chrome 156; editor após inclusão dos plugins, NW.js e Galaxy A56 não testados. Não declara ausência de conflitos fora do conjunto atual. Histórico: 0.1.0 contratos M01-05; sem interfaces, combate, progressão efetiva ou respawn.
+
+
+## Integração M01-13
+
+M01-13: sourceStatus(sourceId) retorna {active,questId,itemId,missing} copiando o estado e reutilizando source(), sem conceder, avançar quest ou alterar schema. Consumidor Arena_Loot chama claimSource apenas para fonte ativa/quantidade faltante. Recibos de consumo/entrega continuam autoritativos. Chave permanece fonte de cela, tabela de inimigo sem vínculo normal.

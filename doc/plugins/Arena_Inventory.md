@@ -29,3 +29,8 @@ Comparação: duas áreas Atual/Selecionado com ícone36px e nome; descrição; 
 Modal720×490 em(48,32), botões720×64 em(48,522), na tela816×624. Oito linhas com31px de passo, títulos/descrição/cartões separados. Nomes longos quebrados/ajustados, sem reticências; nomes extremos podem usar ajuste horizontal nativo. A prévia usa os dados no momento de abrir; a confirmação revalida a transação existente. Controles de fundo inativos e bloqueio do update de navegação permanecem. Consumíveis conservam confirmação textual própria.
 
 Testes e capturas R02 em evidencias/m01-12-r02; roteiro completo no relatório principal. Nenhuma alteração em plugins.js, dados, regras, arte ou animações. Autoria no editor da revisão anterior continua evidência histórica; esta revisão não declara nova sessão no editor/aparelho.
+
+
+## Integração M01-13
+
+M01-13: exportada drawItemIcon(window,item,x,y,size) para resumo reutilizar ícones atuais. Identificação do ícone de malha usa material configurado, atendendo também Armors4 sem novo asset. Materials3/4 mapeiam couro/malha. Nenhuma alteração de paleta, acesso a itens ou design do modal nesta etapa.
