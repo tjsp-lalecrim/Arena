@@ -82,3 +82,7 @@ Permanecem em aberto: quantidade de espaços, teclas ou outros controles, config
 - A interface continua legível no cenário de teste.
 
 Esses critérios orientam uma futura implementação. Nenhuma funcionalidade de combate foi implementada ou testada por este documento.
+
+## Integração vigente M01-15
+
+Encontros do Map008 usam o mesmo BattleManager, técnicas, magias, custos, UI e Arena_Loot. Contato normal de evento, canEscape/canLose false; trava até retorno ao mapa, derrotado apagado/persistido. Respawn comum somente saída após conclusão, quest-specific excluído. Não há cura/reinicialização no início do contato. ENCONTROS_M01_15.md detalha adaptações e validações.

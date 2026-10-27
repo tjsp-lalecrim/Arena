@@ -1,0 +1,5060 @@
+{
+  "browser": "156.0.8078.48",
+  "composition": "M01-09/R01",
+  "checks": [
+    "actual M01-08 save without new state",
+    "legacy incompatible shortcut invalidated on load",
+    "approved weapon hit pp",
+    "native technique argonianmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique argonianfemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique bretonfemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elfmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique dark_elffemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elfmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique high_elffemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique khajiitfemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique nordfemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique redguardfemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elfmale8 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale5 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale6 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale5 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale6 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale5 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale6 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale7 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale8 level1",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale7 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale8 level6",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale7 level12",
+    "racial initial maximum no growth/regrant",
+    "approved weapon hit pp",
+    "native technique wood_elffemale8 level12",
+    "racial initial maximum no growth/regrant",
+    "unarmed derived pair",
+    "no permanent techniques",
+    "dagger pair",
+    "sword pair and permanent magic",
+    "incompatible shortcut cleared",
+    "magic shortcut retained",
+    "stale forced action rejected",
+    "stale action no payment",
+    "removal keeps magic",
+    "weapon removed cannot force",
+    "insufficient before execution",
+    "insufficient no partial deduction",
+    "exact native action payment",
+    "exact zero",
+    "same action token cannot execute twice",
+    "selection/cancel no payment",
+    "four native applications one cost",
+    "no targets no payment",
+    "combined native and vigor costs validated before payment",
+    "no partial combined payment",
+    "miss pays once after execution begins",
+    "unknown spell forcing rejected",
+    "insufficient mana",
+    "mana no partial payment",
+    "known fire actual elemental effect",
+    "Cura actual native healing",
+    "Cura mana-only exact",
+    "missing book",
+    "valid level1 book",
+    "learn before consume exactly one",
+    "repeat refused",
+    "duplicate keeps all copies",
+    "native learned/inventory save-load",
+    "missing book",
+    "valid level1 book",
+    "learn before consume exactly one",
+    "repeat refused",
+    "duplicate keeps all copies",
+    "native learned/inventory save-load",
+    "learning exception rollback",
+    "failed learning keeps inventory and skill",
+    "consume exception rollback",
+    "failed consumption restores transaction",
+    "forced battle book cannot bypass transaction",
+    "forced book no learning or consumption",
+    "direct native useItem delegates to book transaction",
+    "direct duplicate book preserved",
+    "one direct book consumed",
+    "native Fire Dart target resistance breton",
+    "native Fire Dart target resistance nord"
+  ],
+  "matrix": [
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 977,
+            "damage": 23,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 964,
+            "damage": 36,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 977,
+            "damage": 23,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 964,
+            "damage": 36,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 977,
+            "damage": 23,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 964,
+            "damage": 36,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 975,
+            "damage": 25,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 961,
+            "damage": 39,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 975,
+            "damage": 25,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 961,
+            "damage": 39,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 975,
+            "damage": 25,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 961,
+            "damage": 39,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 977,
+            "damage": 23,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 964,
+            "damage": 36,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 977,
+            "damage": 23,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 964,
+            "damage": 36,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 977,
+            "damage": 23,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 964,
+            "damage": 36,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 975,
+            "damage": 25,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 961,
+            "damage": 39,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 975,
+            "damage": 25,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 961,
+            "damage": 39,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 975,
+            "damage": 25,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.97,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 961,
+            "damage": 39,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.95,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 974,
+            "damage": 26,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 960,
+            "damage": 40,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 974,
+            "damage": 26,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 960,
+            "damage": 40,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 974,
+            "damage": 26,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 960,
+            "damage": 40,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 974,
+            "damage": 26,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 960,
+            "damage": 40,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 974,
+            "damage": 26,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 960,
+            "damage": 40,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 974,
+            "damage": 26,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.98,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 960,
+            "damage": 40,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 978,
+            "damage": 22,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 1,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 966,
+            "damage": 34,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 1,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 6,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": false,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 976,
+            "damage": 24,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 5,
+        "hpGain": 0
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "weapon": 2,
+      "level": 12,
+      "heavy": true,
+      "hit": 0.99,
+      "result": {
+        "starts": 1,
+        "effects": 1,
+        "failure": null,
+        "enemies": [
+          {
+            "hp": 963,
+            "damage": 37,
+            "used": true
+          }
+        ],
+        "mpCost": 0,
+        "vigorCost": 12,
+        "hpGain": 0
+      }
+    }
+  ],
+  "ui": [
+    "native book menu",
+    "duplicate notice/no consumption",
+    "map6 event",
+    "selection/cancel",
+    "native action confirmation"
+  ],
+  "errors": []
+}

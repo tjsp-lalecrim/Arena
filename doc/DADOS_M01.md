@@ -120,3 +120,7 @@ M01-14: Map008, MapInfos8, Tileset4/Arena_Dungeon_M14. Mapas1–7/banco de perso
 M01-14 R02: ArenaDungeon schema2, regiões1sólido/2água/3plataforma/4piso/5face-vão/6cap-superior. A1tile2048 só nadável no mapa8/região2; demais colisões nativas. Estado visual/transição de portas serializado no Game_Map, A nativo nos IDs1–126. Migração R01 reconstrói218 eventos em163 sem recriar ator/inventário. Ver DUNGEON_M01_14_R02.md e plugins/Arena_Dungeon.md.
 
 R03: ArenaDungeon.schemaVersion3; campo attachments distingue sourceCell/wallCell/posição/distância/category wall-only. Cap não é desenhado sobre piso de vão; região6 antiga deixa de ser usada. sourceLayout e área sólida/caminhável preservadas, door.visualAnchor/hingesLocal/footprint explícitos; eventos168 e primeiros126 de portas estáveis. Migração mantém recursos/inventário e reconstrói somente geometria do mapa8. Plataformas41×3×3 em camada1, chão abaixo. Ver DIRETIVA_DE_MAPAS.md.
+
+## M01-15 — encontros
+
+ArenaEncounters.json schema1 separado do mapa/loot. Map008 mantém IDs1–168/camadas/propriedades; acrescenta eventos169–235 com trigger2 e ID estável imperial.enemy.NN. Enemies/areas reutilizam Arena_Persistence; localização/tick permanecem nativos do Game_Event. Dados e migração em ENCONTROS_M01_15.md. Nenhum item, tropa, valor racial, custo ou recompensa novo.

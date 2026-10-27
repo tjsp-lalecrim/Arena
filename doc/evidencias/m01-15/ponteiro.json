@@ -1,0 +1,26 @@
+{
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "mode": "desktop mouse click",
+      "viewport": [
+        1100,
+        800
+      ],
+      "battleStarted": true,
+      "sequence": 1,
+      "errors": []
+    },
+    {
+      "mode": "Android generic landscape emulation/tap",
+      "viewport": [
+        916,
+        412
+      ],
+      "battleStarted": true,
+      "sequence": 1,
+      "errors": []
+    }
+  ],
+  "limits": "Disposable contexts; native pathfinding/contact; Android emulation is not Galaxy A56 physical testing"
+}

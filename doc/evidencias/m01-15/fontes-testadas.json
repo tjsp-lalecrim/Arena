@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-27",
+  "base": "f1f2957",
+  "feature": "feature/m01-encontros",
+  "implementation": "16d674e",
+  "files": {
+    "js/plugins.js": "eb13f49dee6464db64272acb1f2539862d399822d0d8d21defd5d35c2c2ea8ab",
+    "js/plugins/MV_EncounterRules.js": "89e5e65f61204591cce24ae816c77cc73f3c9a845bbb4523c2a4ed3a29579a3a",
+    "js/plugins/Arena_Encounters.js": "001a50de63686ca179af90c170e3a5b965160f43802c2f050b9544baeb703607",
+    "data/Map008.json": "55811e78de73368953fc0d46cb639c67ab311360545e3476c40dd3b048489ddd",
+    "data/ArenaEncounters.json": "4ce5281ef2487c8d50c64b8fa70c9751f3d0b72916d31468da6a2def47dc5adf",
+    "tools/build-dungeon-map.py": "205790633e9f7e1df53ff510eb05de8ca2d4b6e639d774d22fdf0f089d69b9ca",
+    "tools/build-encounters.cjs": "ee84ec3a35ae7b22c0a5604acbc903654c5f67448d9bd161d2e2b36ab50abd8f",
+    "tools/validate-encounters.cjs": "7152fa19577b776922b4a1cf9689bba08d494114a37757f2d062ee6e9bf64f94",
+    "tools/validate-dungeon-r03.cjs": "06d36e2bcedeaa30bdc85ef3b1f03ecb750ca4f36563872aa5db14896edb7322",
+    "tools/test-encounters.cjs": "8bc998239029eef731e8c1201d1a3d9049a835e3b4fcb8328f18c68d0af4d2eb",
+    "tools/test-encounter-pointer.cjs": "27eb18ede0d40d8967fc4b7de3776e03bd27da47821b3f48000867eca7fd0c38"
+  },
+  "originalSources": {
+    "START_MIF": "16b4b200c0845c6aeab9af22cdf7b7655422dcaad73b5a639c1be0308389c7ee",
+    "GLOBAL_BSA": "345385c1565d9ca73e2d59d71a422498135485e2d01d4df66355ed804209042d",
+    "effect": "read-only SHA256 and local extracted START.INF inquiry; no DOS encounter observation this round"
+  },
+  "runs": {
+    "encounters": {
+      "passed": 14,
+      "patrols": 67,
+      "attemptsPerPatrol": 32,
+      "rejectedBoundaryAttempts": 1516,
+      "result": "resultado.json"
+    },
+    "resources": {
+      "passed": 619,
+      "result": "regressoes/recursos/resultado.json"
+    },
+    "abilities": {
+      "passed": 628,
+      "nativeRacialActions": 192,
+      "result": "regressoes/habilidades/resultado.json"
+    },
+    "creation": {
+      "passed": 234,
+      "result": "regressoes/criacao/m01-07-result.json"
+    },
+    "persistence": {
+      "passed": 27,
+      "result": "regressoes/persistencia.json"
+    },
+    "loot": {
+      "passed": 11,
+      "result": "regressoes/loot/resultado.json"
+    },
+    "pure": [
+      "test-state-store.cjs",
+      "test-runtime.cjs",
+      "test-motion-timeline.cjs"
+    ],
+    "static": [
+      "validate-encounters.cjs",
+      "validate-dungeon.cjs"
+    ],
+    "generation": {
+      "pipeline": "build-dungeon-map.py -> build-encounters.cjs",
+      "identicalDataFiles": 5
+    },
+    "video": {
+      "result": "video.json",
+      "visuallyInspectedSamples": [
+        0.15,
+        0.5,
+        0.85
+      ],
+      "nativeSize": [
+        816,
+        624
+      ]
+    },
+    "pointer": {
+      "passed": 2,
+      "result": "ponteiro.json",
+      "input": "desktop mouse and generic Android landscape touch,120ms press duration"
+    }
+  },
+  "failedAttempts": "Initial concurrent abilities/loot title waits timed out; serial reruns passed. Encounter fixtures were corrected to wait for native door page refresh and message input readiness. Final recorded runs passed; no runtime bypass used. Pointer fixture initially sent zero-duration down/up between engine frames;120ms press follows real frame-based MV input,then both pointer cases passed; no engine/runtime change.",
+  "pending": [
+    "Owner integrated M15 test/review",
+    "MV1.6.1 new M15 plugin/event authoring session",
+    "Galaxy A56 physical, at mobile integration",
+    "Final balance/density evaluation"
+  ],
+  "preserved": [
+    "M14 original168 events and all map layers",
+    "native engine",
+    "resources/abilities/races/loot/gear rules",
+    "approved art/animations",
+    "no water Vigor cost",
+    "future side-door readability improvement"
+  ]
+}

@@ -81,3 +81,7 @@ M01-12 mantém inventário e equipamentos nativos, sem novo namespace/schema ou 
 ## Integração M01-13
 
 M01-13: namespace arenaLoot v1 separado, sequence/receipts/pending; inventário/ouro/EXP nativos. Saves sem namespace recebem defaults sem concessão. Recibo síncrono único por vitória inclui sorteios por origem, recebidos/reservados e EXP, com rollback. Reserva é direito já sorteado: collectPending/mapa/load podem entregar capacidade disponível, sem nova recompensa/EXP. ArenaPersistence.sourceStatus é getter das mesmas regras de claimSource; integração não substitui redundância de etapas/reativação de evento a conectar em M01-15/16. Ver LOOT_M01_13.md.
+
+## Consumidor M01-15
+
+Arena_Encounters utiliza enemies/areas já previstos. IDs estáveis imperial.enemy.NN e imperial-dungeons, generation e exitRevision persistidos. Posições/cadência nativas de Game_Event; trava de transição transitória em Game_Temp. Saves M01-14 recebem eventos ausentes sem regrant/recriação do ator. Contrato/integração em ENCONTROS_M01_15.md.

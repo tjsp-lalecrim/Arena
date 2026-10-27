@@ -126,3 +126,7 @@ M01-14 R03: validate-dungeon.cjs delega em validate-dungeon-r03.cjs; audit-dunge
 Pesquisa de natação27/10/2026: fontes/condições em INVESTIGACAO_NATACAO_ARENA.md e evidencias/m01-14/aprovacao-natacao. Experimento DOS de parado/movimento/zero/HP NÃO realizado por falta de janela observável; roteiro é futuro. Não aplicar S01 nem substituir gasto exclusivo de combate. Aprovação do mapa não comprova ciclo de autoria. validate-dungeon.cjs reexecutado, sem repetir as baterias R03.
 
 Autoria MV1.6.1 em cópia: TESTE_EDITOR_M01_14.md. prepare-mv-authoring-copy.py cria fixture ignorada sem sobrescrever; verify-mv-authoring-copy.py confere original/fixture/contratos e marcador, sem presumir operação do editor. Playtest Explorar Dungeon confirmado pelo responsável, sem extrapolar. Nenhuma captura repetida nesta tentativa; A56 físico não bloqueia desktop.
+
+## M01-15 — roteiro e evidências
+
+Executar node tools/validate-encounters.cjs e, com servidor local e Playwright, node tools/test-encounters.cjs. Contextos Chrome descartáveis/save18; não usa saves pessoais. Roteiro manual em ENCONTROS_M01_15.md. Resultado/capturas/vídeo e regressões em evidencias/m01-15. Autoria M01-14 confirmada pelo responsável não prova novos eventos/plugins. Galaxy A56 permanece integração mobile.

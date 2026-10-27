@@ -1,0 +1,12 @@
+{
+  "duration": 8.591839,
+  "width": 816,
+  "height": 624,
+  "decoded": true,
+  "seekSamples": [
+    0.15,
+    0.5,
+    0.85
+  ],
+  "source": "actual native MV canvas capture; three decoded samples inspected separately"
+}

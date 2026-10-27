@@ -110,3 +110,7 @@ M01-14: Arena_Dungeon0.1.0 ao fim dos23 registros,22 anteriores integralmente pr
 Arena_Dungeon atualizado0.2.0 em M01-14 R02: portas3estados/4vistas, águaA1/natação delimitada, prévias de objetos e migração de eventos R01. Configuração/API/dependências em plugins/Arena_Dungeon.md. Sem dependências externas nem novo consumidor de recursos.
 
 Arena_Dungeon0.3.0/R03: montagem ortogonal/âncoras invariantes e revisão3 de geometria; ver plugins/Arena_Dungeon.md. Nenhum novo registro em plugins.js.
+
+## M01-15 — patrulha e encontros
+
+MV_EncounterRules0.1.0 (núcleo puro) seguido de Arena_Encounters0.1.0 (após Arena_Dungeon/combate/loot/movimentos). Config ArenaEncounters.json; contratos enemies/areas existentes, sem dependência externa. Documentação em plugins/Arena_Encounters.md. Não há novo consumidor de recursos, concessor de loot ou conclusão de quest automática.
