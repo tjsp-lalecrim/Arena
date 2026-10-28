@@ -1,3 +1,22 @@
+## Espada piloto R02 — demais ações, 28/10/2026
+
+**R01 aprovada pelo responsável no editor**, somente Bretã feminina/espada curta/Estocada pesada; evidência e associação de versão em VALIDACAO_M01.md. R02 não altera os seis registros `heavy` aprovados, os PNGs ou o runtime. Acrescenta somente `weaponPoses.breton.female.base.2.idle/light`, reutilizando a oclusão de pega R01 com recortes próprios de cada pose. No leve, apoio deslocado1px para o centro da mão nos quadros1–3 e preparação em plano frontal com mão sobre o cabo; espera mantém a mesma pega dos extremos da Estocada pesada. Ângulos/escala/âncora existentes preservados, sem interpolação independente. Configuração é mantida na raiz pelos geradores existentes; nenhum gerador de arte foi executado.
+
+| Ação / sequência existente | Revisão desta entrega |
+| --- | --- |
+| Atacar1 e Corte leve — espada7 / light | Mesmo movimento compartilhado, corrigido; cada comando executado separadamente pelo fluxo nativo |
+| Espera e Defender2 / idle | Oclusão da pega corrigida; defesa mantém espera, sem novo desenho de aparo; comando executado |
+| Estocada pesada — espada8 / heavy | Aprovação anterior preservada; registros idênticos à base4b49e5d, sem nova execução nesta tarefa |
+| Receber dano / hurt | Seis quadros observados nas respostas nativas do rato; sem novo defeito que justificasse mudar apoios nesta revisão |
+| Conjuração / cast e uso de item / item | Arma corretamente recolhida nos seis quadros de cada sequência; inspeção do Sprite, não execução de magias/itens nem concessão no piloto |
+| Derrota / defeat | Seis poses inspecionadas no Sprite; apoio no chão acompanha a queda; sem ajuste novo. Não equivale a nova validação de game over |
+
+Validação focal Chrome156, armazenamento isolado, usando **o acesso determinístico existente**, antes/depois: Atacar/Corte leve/Defender, uma execução e um efeito por comando, dano24/24/0 e Vigor0/5/0. Aleatório0,5/variância0 somente no teste; nenhum valor de balanceamento mudou. Retorno ao repouso, sincronização/planos/espelhamento, tempos iguais e dados das demais combinações preservados. Vídeo real de aproximadamente13s, reprodução1×, em evidencias/arma-piloto-r02/after/breta-espada-acoes.webm; comparação, trace e inventário de poses no mesmo diretório. Não executados testes amplos, editor ou smartphone nesta tarefa. A expectativa de oclusão em espera no teste R01 foi atualizada ao contrato R02, sem reexecutar a Estocada pesada aprovada.
+
+**Avaliação no editor:** Playtest → **Combate técnico (piloto)** → **Teste da arma: Bretã / espada** → **Combater**. Testar **Atacar**; depois **Habilidades → Corte leve — espada** (Técnicas2); depois **Defender**. Espada já equipada, Vigor100 e rato500HP; não carregar saves pessoais ou depender de drops. Novos ajustes R02 aguardam o responsável antes de ampliar; REF09 continua parcial. Não há impedimento artístico concreto no recorte corrigido, nem autorização de gerar ou rever outras combinações.
+
+As afirmações R01 abaixo sobre aprovação pendente/recorte desaparecendo ao repousar são históricas: aprovação e espera foram atualizadas acima.
+
 ## Encaixe focal R01 — v0.4.1, 28/10/2026
 
 Cobertura exclusiva: `breton.female.base`, arma2 (espada curta), movimento `heavy`/skill8 (Estocada pesada). Sem arte nova, mudanças de tempos/impacto/dano/custo ou correção em lote. `weaponPoses[baseVisualId][weaponId][motion][frame]`, opcional na raiz de ArenaBattleMotion.json, define `hand[x,y,graus]`, `weaponLayer` e `gripCover[x,y,w,h]` local à célula. Sem registro, preserva os apoios anteriores. A chave é ID exato da arma, não todo seu tipo.

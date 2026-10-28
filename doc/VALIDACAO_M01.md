@@ -1,3 +1,7 @@
+## Aprovação manual do piloto da espada — 28/10/2026
+
+O responsável informou que testou **no editor** o combate piloto da **Bretã feminina com espada curta** e que funcionou bem. Aprovação restrita ao piloto de Estocada pesada apresentado na R01; não estender a outras ações, armas/personagens ou dispositivos. Versão disponível associada:4b49e5d (acesso determinístico), contendo a correção a9531e0; o responsável não informou hash nem versão exata do editor. Sem atribuir aprovação às alterações posteriores desta entrega. Cobertura técnica/pendências em plugins/Arena_BattleMotion.md e REF09 de REFINAMENTOS_POS_INTEGRACAO_M01.md.
+
 ## Teste integrado informado pelo responsável — 28/10/2026
 
 **Evidência manual fornecida pelo responsável**, sem nova execução pelo Codex nesta tarefa. Ambiente informado: execução pelo editor do **RPG Maker MV**; o relato não especifica sua versão exata. Não é teste de navegador ou smartphone, nem comprova abertura/edição/salvamento/reabertura de mapas nesta revisão.
