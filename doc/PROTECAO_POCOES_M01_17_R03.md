@@ -1,3 +1,7 @@
+## Fechamento M01-17 — 28/10/2026
+
+Responsável aprovou a proteção R03 no estado disponível3f3bf6e, somando às aprovações de funcionamento35ba624 e feedback visualbd108c5. Não estender ao descanso/editor/dispositivos. Reexecutados9 grupos de recuperação, incluindo evento nativo da cama técnica, restauração integral dos três recursos, bloqueios, save/load e preservação de progressão/inventário; validadores de proteção/compatibilidade passaram. Evidências em evidencias/m01-17-fechamento. M01-17 concluído tecnicamente e autorizado para integração em develop. Sem cama confirmada no Map008; não inventada. Autoria manual nova no MV, Galaxy A56 físico e balanceamento permanecem verificações de integração, não declaradas realizadas. M01-18 corresponde a introdução/Ria/encerramento, sem renumeração. Estados anteriores são históricos quando divergirem.
+
 # M01-17 R03 — proteção de entrada no menu (28/10/2026)
 
 Basebd108c5, mesma feature/m01-pocoes-descanso. O responsável aprovou a correção visual R02; evidência em evidencias/m01-17-r03/aprovacao-feedback-r02.json, associada ao estado disponível, sem hash próprio/ambiente informados. Não atribuir aprovação dessa nova proteção, descanso, editor ou dispositivo físico. A composição/barras aprovadas permanecem byte a byte em Arena_Inventory0.3.0.

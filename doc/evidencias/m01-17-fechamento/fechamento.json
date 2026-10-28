@@ -1,0 +1,50 @@
+{
+  "data": "2026-10-28",
+  "estado_disponivel": "3f3bf6e",
+  "responsavel": "Proteção contra uso consecutivo aprovada; junto à confirmação de funcionamento35ba624 e feedback visualbd108c5. Sem confirmação de descanso/editor/dispositivo.",
+  "descanso": "Teste automático do evento6 Map005; não teste manual do responsável",
+  "recursos_apos_descanso": {
+    "hp": {
+      "current": 100,
+      "maximum": 100,
+      "base": 100,
+      "growth": 0,
+      "modifiers": 0
+    },
+    "mp": {
+      "current": 50,
+      "maximum": 50,
+      "base": 50,
+      "growth": 0,
+      "modifiers": 0
+    },
+    "vigor": {
+      "current": 100,
+      "maximum": 100,
+      "base": 100,
+      "growth": 0,
+      "initialBonus": 0,
+      "modifiers": 0
+    },
+    "level": 1,
+    "baselineLevel": 1,
+    "choices": {},
+    "pending": []
+  },
+  "verificacoes": [
+    "keyboard/mouse/touch each use one potion immediately via native item scene; navigation no consumption; no modal",
+    "recovery clamps at maximum; full resources refuse use without consuming any potion",
+    "stale unavailable item rejected; cancel selection preserves resources, stock, quest and progression",
+    "native save/load preserves spent three resources and inventory; no map passive regeneration",
+    "native bed event restores all three once/no changes to inventory/quest/progression; repeated rest harmless; unauthorized/battle/remote/vehicle/dialogue rejected",
+    "native save/load after rest preserves restored current/max values and eligible map",
+    "all 16 identities have no passive HP/Mana/Vigor regeneration in native turn regeneration",
+    "Argonian female +10 initial and chosen +10 growth retained once after recovery/save/load",
+    "three native battle potion turns consume once; forced unavailable/repeated/no-effect actions rejected without payment"
+  ],
+  "pendentes": [
+    "Novo ciclo manual de editor",
+    "Galaxy A56 físico M01-19",
+    "Balanceamento M01-20"
+  ]
+}
