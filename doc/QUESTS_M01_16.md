@@ -63,3 +63,7 @@ Resultados/capturas/vídeo em `evidencias/m01-16`; hashes e composição em font
 Diário e mudanças de fonte/porta inspecionados em816×624. Funcionamento técnico separado de equilíbrio e aprovação estética. **M01-16 implementado para revisão, sem merge**, sem iniciar M01-17/18. Compatibilidade estrutural/codificação dos27 plugins e eventos nativos verificadas; nova sessão de autoria dos plugins/eventos no editor e validação manual de quests pelo responsável ainda pendentes, sem atribuí-las à aprovação do combate. Galaxy A56 físico segue integração mobile M01-19. Arte, animações, fundos, atalhos, bônus e custo de Vigor aquático preservados.
 
 Execuções finais:23 cenários MQ01; regressões encontros14,loot11,persistência27,criação234; núcleos puros e validadores passaram. Pipeline completo estável reproduziu6arquivos byte a byte após normalização de finais de linha. Uma fixture de nova partida em mapa vivo foi corrigida para retornar ao título antes de reinicializar, sem alterar o motor; execução final passou. Capturas de diário/fonte/tesouro inspecionadas no tamanho real, sem inferir aprovação do responsável.
+
+## Apresentação superada pela R02 (28/10/2026)
+
+O painel textual único foi substituído por lista/filtros, descrição narrativa, passos e status real em plugin de apresentação separado; lógica de MQ01 permanece idêntica. Fontes, reestruturação J10–J40, navegação/responsividade e evidências em REVISAO_DIARIO_M01_16_R02.md. Leitura não concede ou consome itens e não avança etapas.

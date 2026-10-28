@@ -1,3 +1,7 @@
+## Diário M01-16 R02 — 28/10/2026
+
+Mesma feature/m01-quests, base2ea761d: diário com filtros Pendentes/Concluídas/Todas, lista de missões conhecidas, descrição narrativa, passos revelados com ícones e status geral do booleano completed. Modelo de leitura separado da progressão; lógica de MQ01, fontes/recuperação, recompensas e respawn preservados. Reflow de lista/detalhes/abas em640×480 e916×412 emulado, contexto transitório preservado. Ler REVISAO_DIARIO_M01_16_R02.md e DIRETIVA_DE_NAVEGACAO.md (NAV01 obrigatória para todos os menus novos/revisados). Evidências próprias em evidencias/m01-16-r02, sem sobrescrever R01. Revisão para avaliação do responsável, sem merge ou próximo backlog; editor desta UI e A56 físico pendentes. Registros de apresentação anteriores abaixo são históricos quando divergirem.
+
 ## Estado vigente — M01-16 (27/10/2026)
 
 M01-15 fechado tecnicamente e integrado/publicado em develop534ff7b após avaliação manual restrita ao combate disponível081222a; não atribuir aprovação manual de respawn/persistência/dispositivos. REF01–REF05 em REFINAMENTOS_POS_INTEGRACAO_M01.md permanecem futuros. Feature/m01-quests implementa M01-16, sem renumeração: MQ01, diário J10–J40, chave/fonte/porta/Gate, redundância saída/entrada, recuperação e recibos, tesouros pelo settlement existente e conclusão ligada à área/respawn. Ler QUESTS_M01_16.md e evidências próprias; bootstrap e migração de saves de laboratório estão explícitos. Para revisão, sem merge ou início de M01-17/18; introdução/Ria/F01 continuam M01-18. Nenhuma nova arte, revisão de bônus/drops de inimigos ou custo aquático. Editor da nova feature/manual de quests ainda pendentes; A56 físico somente integração mobile, sem bloqueio desktop. Registros abaixo são históricos quando divergirem.
@@ -190,3 +194,7 @@ Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar v
 ## Refinamentos pós-integração
 
 M01-19 concentra REF01(favoritos/atalhos incluindo itens), REF02(caminhada de inimigos) e REF03(fundo genérico da dungeon). M01-20 concentra REF04(balanceamento após quests/descanso/progressão) e REF05(pesquisa e tabelas de drops por inimigo). Critérios completos e registro único de favoritos em REFINAMENTOS_POS_INTEGRACAO_M01.md. Nenhuma dessas melhorias foi implementada nesta rodada.
+
+## Aplicação permanente NAV01
+
+M01-19 deve auditar os menus conforme DIRETIVA_DE_NAVEGACAO.md, encaminhando adequações às pendências já existentes: REF01(favoritos/atalhos), uso de itens/confirmações e refinamentos de inventário. Não criar duplicatas nem refatorar esses menus na revisão de diário. M01-16 R02 aplica a diretiva apenas ao diário; não altera as regras de MQ01 ou antecipa próximos itens.

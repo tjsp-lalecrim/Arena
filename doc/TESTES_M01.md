@@ -134,3 +134,7 @@ Executar node tools/validate-encounters.cjs e, com servidor local e Playwright, 
 ## M01-16
 
 validate-quests.cjs cobre núcleo/contratos/UTF8/formato canônico27/plugins anteriores/alterações permitidas. test-quests.cjs executa eventos/menu/recuperação/consumo/Gate/tesouro/save-load/falhas em Chrome descartável, saves18/19, sem saves pessoais. Registro em evidencias/m01-16; regressões guardadas em subpasta própria. Native autoria MV e A56 físico não inferidos de testes de navegador. Roteiro manual em QUESTS_M01_16.md.
+
+## NAV01 e diário M01-16 R02
+
+DIRETIVA_DE_NAVEGACAO.md é critério permanente de validação dos menus. Para o diário, executar validate-journal.cjs e test-journal.cjs; fixtures de muitas quests/textos/estados somente em contexto descartável/save21, sem fictícias na campanha. Testar filtros vazio/pendente/concluído/todas, seleção/leitura preservadas, estado após carregar, roda no painel correto, foco, retorno e painéis ocultos; 816×624,640×480 e Android genérico916×412 emulado. Roteiros/evidências em REVISAO_DIARIO_M01_16_R02.md. Emulação não substitui Galaxy A56 físico.
