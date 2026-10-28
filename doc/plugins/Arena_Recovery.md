@@ -1,3 +1,7 @@
+## R02 — Arena_Recovery0.2.0
+
+Após uso bem-sucedido, retorna à descrição contextual da seleção atual, sem mensagens de quantidade restante, restauração ou “operação concluída”. Quantidade já é redesenhada pelo commit nativo existente; barras pertencem ao quadro Stats de Arena_Inventory0.3.0. Falha mantém a explicação do commit. Não cria popup, consumidor ou hook de combate novo. restAt, autorização, APIs, dados e guard de batalha permanecem exatamente iguais à R01. Ver REVISAO_FEEDBACK_POCOES_M01_17_R02.md. Versão do cabeçalho de código atualizada; registros/parâmetros do gerenciador preservados.
+
 # Arena_Recovery0.1.0
 
 Plugin próprio Codex, sem dependência externa. Ordem: após Arena_Resources, Arena_Inventory, Arena_BattleUI e seus pré-requisitos; ao final dos30 registros atuais. Sem parâmetros do gerenciador. Configuração data/ArenaRecovery.json, schemaVersion1: actorId1; potionIds[2,3,4]; restPoints com id estável, mapId, eventId, technical e source documental obrigatória. Só itens consumíveis, alvo aliado único/repetição1, não livros/importantes; referências e configuração inválidas causam erro explícito de carregamento. IDs/conteúdo não ficam embutidos na lógica de interação.

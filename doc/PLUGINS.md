@@ -1,3 +1,7 @@
+## M01-17 R02
+
+Arena_Inventory0.3.0: quadro existente com barras e atributos, apresentação transitória240ms; Arena_Recovery0.2.0: sucesso sem mensagem redundante. Somente código de apresentação alterado; mesmos30 registros/parâmetros no formato canônico, sem dependência externa, namespace de save ou consumidor novo. Documentação em plugins/ e REVISAO_FEEDBACK_POCOES_M01_17_R02.md.
+
 ## Integração M01-17
 
 M01-17: Arena_Recovery0.1.0 após os29 registros preservados (total30), configuração ArenaRecovery.json. Uso direto de poções, autorização de descanso e guard de execução; nenhum consumidor duplicado ou novo save. Documentação em plugins/Arena_Recovery.md.

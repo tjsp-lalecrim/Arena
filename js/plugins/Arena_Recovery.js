@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Poções diretas e descanso em pontos autorizados (M01-17).
+ * @plugindesc v0.2.0 Poções com feedback visual e descanso autorizado (M01-17).
  * @author Codex
  * @help Após Arena_Resources, Arena_Inventory e Arena_BattleUI. Sem dependências externas.
  * Configuração: data/ArenaRecovery.json. Não há parâmetros no gerenciador.
@@ -62,10 +62,7 @@ var ArenaRecovery;
         this._pending = {kind: 'use', ref: ArenaInventory.ref(item)};
         this.commit();
         if ($gameParty.numItems(item) === count - 1) {
-            var r = ArenaResources.snapshot();
-            this._helpWindow.setText(item.name + ' utilizada · Restam ' + (count - 1) + '\n' +
-                'Vida ' + r.hp.current + '/' + r.hp.maximum + ' · Mana ' + r.mp.current + '/' +
-                r.mp.maximum + ' · Vigor ' + r.vigor.current + '/' + r.vigor.maximum);
+            this.updateDescription(); // Stock is already refreshed in the slot; bars own recovery feedback.
         }
     };
     // Forced or stale selections must not bypass stock/effect checks. Never charge here.

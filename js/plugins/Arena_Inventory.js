@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.2.0 Inventário em slots, troca atômica e material de armadura.
+ * @plugindesc v0.3.0 Inventário em slots, equipamentos e barras de recursos.
  * @author Codex
  * @help Após Arena_BattleUI e MV_EquipmentTransaction. Sem dependências externas.
  * Configuração/IDs: data/ArenaInventory.json. Não altera regras de combate.
@@ -157,8 +157,47 @@ var ArenaInventory,Scene_ArenaInventory;
     Slots.prototype.updateHelp=function(){var s=SceneManager._scene;if(this.active)s._helpWindow.setText('Escolha um slot para filtrar as peças compatíveis e remover a atual. Tab alterna o foco.');};
     function Stats(){this.initialize.apply(this,arguments);}
     Stats.prototype=Object.create(Window_Base.prototype);Stats.prototype.constructor=Stats;Stats.prototype.standardPadding=function(){return 10;};
-    Stats.prototype.refresh=function(){this.contents.clear();var a=actor();this.contents.fontSize=20;this.contents.drawText(a.name(),0,0,this.contentsWidth(),24);[2,3,4,5,6,7].forEach(function(p,n){this.contents.fontSize=16;this.contents.drawText(TextManager.param(p)+' '+a.param(p),0,27+n*23,175,23);},this);this.contents.fontSize=13;var id=materialId(a),body=a.armors().filter(function(i){return i.etypeId===4;})[0];this.contents.drawText(id?body.name:body?'Visual indisponível · base preservada':'Sem armadura equipada',0,164,this.contentsWidth(),20);};
-    Stats.prototype.update=function(){Window_Base.prototype.update.call(this);if(!ArenaCharacterCreation.isCreated())return;var a=actor(),p=ArenaBattleMotion.profile(a),bm=appearance('battle'),map=appearance('map'),stamp=a.equips().map(function(i){return i&&i.id;}).join(',')+a.characterName();if(stamp!==this._stamp){this._stamp=stamp;this.refresh();}if(bm.width>1&&map.width>1){this.contents.clearRect(185,25,this.contentsWidth()-185,135);var r=p.motions.idle.frames[0].rect;this.contents.blt(bm,r[0],r[1],r[2],r[3],180,25,128,112);this.contents.blt(map,map.width/3,0,map.width/3,map.height/4,204,96,48,64);}};
+    // Presentation only: never write interpolated values to the actor or persistence.
+    Stats.prototype.updateResourceBars=function(resources,now){
+        var bars=this._resourceBars||(this._resourceBars={});
+        ['hp','mp','vigor'].forEach(function(key){
+            var r=resources[key],b=bars[key];
+            if(!b){bars[key]={shown:r.current,from:r.current,target:r.current,maximum:r.maximum,started:now};return;}
+            var t=Math.min(1,Math.max(0,(now-b.started)/240));
+            b.shown=b.from+(b.target-b.from)*t;
+            if(b.target!==r.current||b.maximum!==r.maximum){
+                // Retarget from the current fill; no queued callbacks can restore an old value.
+                b.from=Math.min(b.shown,r.current);b.target=r.current;b.maximum=r.maximum;b.started=now;
+                b.shown=b.from;
+            }
+        });
+    };
+    Stats.prototype.refresh=function(){
+        var a=actor(),resources=ArenaResources.snapshot(),now=Date.now(),width=this.contentsWidth();
+        this.updateResourceBars(resources,now);this.contents.clear();this.resetTextColor();
+        this.contents.fontSize=20;this.contents.drawText(a.name(),0,0,width,24);
+        [['hp','Vida','#c05b5b'],['mp','Mana','#628dc3'],['vigor','Vigor','#87ad70']].forEach(function(row,n){
+            var r=resources[row[0]],b=this._resourceBars[row[0]],y=25+n*26;
+            this.contents.fontSize=18;this.contents.drawText(row[1],0,y,90,20);
+            this.contents.drawText(r.current+' / '+r.maximum,92,y,width-92,20,'right');
+            this.contents.fillRect(0,y+20,width,6,'#293237');
+            var fill=r.maximum>0?Math.round(width*Math.max(0,Math.min(1,b.shown/r.maximum))):0;
+            if(fill>0)this.contents.gradientFillRect(0,y+20,fill,6,row[2],row[2]);
+        },this);
+        [2,3,4,5,6,7].forEach(function(p,n){
+            var col=n%2,x=col*(width+12)/2,y=108+Math.floor(n/2)*18,w=(width-12)/2;
+            this.contents.fontSize=16;this.contents.drawText(TextManager.param(p),x,y,w-32,18);
+            this.contents.drawText(String(a.param(p)),x+w-32,y,32,18,'right');
+        },this);
+        this.contents.fontSize=13;var id=materialId(a),body=a.armors().filter(function(i){return i.etypeId===4;})[0];
+        this.contents.drawText(id?body.name:body?'Visual indisponível · base preservada':'Sem armadura equipada',0,164,width,16);
+    };
+    Stats.prototype.update=function(){
+        Window_Base.prototype.update.call(this);
+        var a=actor(),r=ArenaResources.snapshot(),stamp=JSON.stringify([a.name(),a.equips().map(ref),[2,3,4,5,6,7].map(function(p){return a.param(p);}),r.hp,r.mp,r.vigor]);
+        var animating=this._resourceBars&&Object.keys(this._resourceBars).some(function(k){return Math.abs(this._resourceBars[k].shown-this._resourceBars[k].target)>.001;},this);
+        if(stamp!==this._stamp||animating){this._stamp=stamp;this.refresh();}
+    };
     function Pager(){this.initialize.apply(this,arguments);}
     Pager.prototype=Object.create(Window_HorzCommand.prototype);Pager.prototype.constructor=Pager;
     Pager.prototype.windowWidth=function(){return config().leftWidth;};Pager.prototype.windowHeight=function(){return 64;};Pager.prototype.maxCols=function(){return 3;};Pager.prototype.standardPadding=function(){return 8;};Pager.prototype.standardFontSize=function(){return 18;};
@@ -194,7 +233,7 @@ var ArenaInventory,Scene_ArenaInventory;
     Scene_ArenaInventory.prototype.page=function(delta){var pages=Math.max(1,Math.ceil(this._entries.length/config().pageSize));this._page=(this._page+delta+pages)%pages;this.refreshEntries();this.focus(this._itemWindow);this._itemWindow.select(0);};
     Scene_ArenaInventory.prototype.filterSlot=function(){var slot=this._slots.index(),current=actor().equips()[slot],choices=$gameParty.equipItems().filter(function(i){return !validate(actor(),slot,i);});if(current)choices.unshift(null);if(choices.length===1){this.offer(slot,ref(choices[0]));return;}if(!choices.length){this.focus(this._slots);this._helpWindow.setText('Não há peças compatíveis disponíveis e o slot está vazio.');return;}this._filter=slot;this._mode='equipment';this._page=0;this.refreshEntries();this.focus(this._itemWindow);this._itemWindow.select(0);};
     Scene_ArenaInventory.prototype.cancelGrid=function(){if(this._filter!==null){this._filter=null;this._page=0;this.refreshEntries();this.focus(this._slots);}else this.popScene();};
-    Scene_ArenaInventory.prototype.updateDescription=function(){if(this._confirm&&this._confirm.visible)return;var i=this._itemWindow.item();this._helpWindow.setText(i?i.name+' · '+(important(i)?'Importante; não pode descartar/vender.':'Quantidade '+$gameParty.numItems(i))+ '\n'+i.description:this._filter!==null?'Remover a peça atual e devolver ao inventário.':'Inventário vazio. Tab alterna inventário, slots, páginas e comandos.');};
+    Scene_ArenaInventory.prototype.updateDescription=function(){if(this._confirm&&this._confirm.visible)return;var i=this._itemWindow.item();this._helpWindow.setText(i?i.name+(important(i)?' · Importante; não pode descartar/vender.':'')+ '\n'+i.description:this._filter!==null?'Remover a peça atual e devolver ao inventário.':'Inventário vazio. Tab alterna inventário, slots, páginas e comandos.');};
     Scene_ArenaInventory.prototype.onContentOk=function(){
         var i=this._itemWindow.item();if(!i){if(this._filter!==null&&actor().equips()[this._filter])this.offer(this._filter,null);else{this.focus(this._itemWindow);this._helpWindow.setText('Nenhuma peça equipada para remover.');}return;}
         if(gear(i)){var slots=actor().equipSlots().map(function(type,n){return type===i.etypeId?n:-1;}).filter(function(n){return n>=0;});if(slots.length===1)this.offer(slots[0],ref(i));else{this._helpWindow.setText('Escolha um slot compatível à direita.');this.focus(this._slots);}return;}

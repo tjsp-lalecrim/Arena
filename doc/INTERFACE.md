@@ -1,3 +1,9 @@
+## M01-17 R02 — recuperação visual no inventário
+
+Quadro existente do personagem com nome, três barras rotuladas/valores atuais e máximos, seis atributos em duas colunas e material da armadura. Limites336×200 preservados; fontes dos atributos16 e nome20 mantidas, rótulos das barras18. Miniaturas redundantes saem somente desse quadro para liberar espaço; aparência no mapa/combate permanece intacta. Sem novo painel/popup. Quantidade atualizada no slot e feedback de recuperação exclusivamente nas barras, com transição240ms. Mensagens de impedimento e descrições estáticas permanecem. Aplicar a diretiva de feedback sem redundância de NAV01.
+
+Responsável confirmou funcionamento do uso de poções no estado disponível35ba624, sem tipos/roteiro/ambiente informados; não atribuir confirmação do descanso ou aprovação visual desta R02. Relatório em REVISAO_FEEDBACK_POCOES_M01_17_R02.md; avaliação visual da revisão pendente.
+
 # Interface e menus
 
 ## M01-12 R02 — apresentação confirmada para implementação

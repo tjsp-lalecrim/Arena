@@ -10,7 +10,10 @@ require('./recovery-validation.cjs').baselineLab(fs.readFileSync('data/Map005.js
 for(const p of ['data/Map008.json','data/Items.json','data/Skills.json','data/ArenaProgression.json','data/ArenaCharacterCreation.json',
  'js/plugins/Arena_Resources.js','js/plugins/Arena_Inventory.js','js/plugins/Arena_BattleUI.js','js/plugins/Arena_Abilities.js','js/plugins/Arena_Persistence.js',
  'js/rpg_core.js','js/rpg_objects.js','js/rpg_managers.js','js/rpg_scenes.js','js/rpg_sprites.js','js/rpg_windows.js']) {
- if(fs.existsSync(p))assert.equal(norm(fs.readFileSync(p,'utf8')),norm(old(p)),p);
+ if(fs.existsSync(p)){
+  const current=fs.readFileSync(p,'utf8'),previous=old(p);
+  assert.equal(norm(p==='js/plugins/Arena_Inventory.js'?require('./recovery-validation.cjs').baselineInventory(current,previous):current),norm(previous),p);
+ }
 }
 const c=JSON.parse(fs.readFileSync('data/ArenaRecovery.json'));assert.deepEqual(c.potionIds,[2,3,4]);assert.equal(c.restPoints.length,1);
 assert.deepEqual([c.restPoints[0].mapId,c.restPoints[0].eventId,c.restPoints[0].technical],[5,6,true]);
