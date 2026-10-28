@@ -1,3 +1,26 @@
+## Teste integrado informado pelo responsável — 28/10/2026
+
+**Evidência manual fornecida pelo responsável**, sem nova execução pelo Codex nesta tarefa. Ambiente informado: execução pelo editor do **RPG Maker MV**; o relato não especifica sua versão exata. Não é teste de navegador ou smartphone, nem comprova abertura/edição/salvamento/reabertura de mapas nesta revisão.
+
+Versão disponível no recebimento: `7e262a0`, branch `feature/m01-narrativa-demo`, árvore limpa. Esse commit é documental; a implementação correspondente está em `61ac5cf`, com evidências publicadas em `270bbd3`. **Associação pelo estado disponível, não hash explicitamente informado pelo responsável.**
+
+| Escopo relatado | Resultado informado |
+| --- | --- |
+| Shift Gate | Ativação funcional |
+| Caminhada | Animação funcional |
+| Tesouros | Coleta e comportamento funcionais |
+| Quests | Progressão funcional |
+| Persistência | Funcional, sem pontos de save/load ou matriz de casos especificados |
+| Encontros | Funcionais, com retorno após combate |
+| Introdução e encerramento | Aprovados |
+| Mapa | Satisfatório, preservadas as ressalvas anteriores |
+
+Não inferir cobertura de todas as raças/direções, armas, tipos de encontro, respawn ou casos extremos. Funcionamento geral não encerra o defeito de pega/acompanhamento da arma, cenário de batalha ou demais ajustes. A aprovação da introdução preserva as ilustrações e admite refinamentos futuros; não constitui ordem de regeneração.
+
+Pendências com registro único: [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md), REF01–REF12. Descanso não foi mencionado como testado; locais elegíveis continuam conforme [POCOES_E_DESCANSO_M01_17.md](POCOES_E_DESCANSO_M01_17.md), com esclarecimento futuro em REF12. Galaxy A56 físico permanece no roteiro de integração **ao final do M01**, pendente e sem bloquear revisões desktop apenas por essa ausência. Sem merge, push ou início de outro backlog por este registro.
+
+Os registros anteriores abaixo preservam seus estados e escopos históricos; a aprovação manual agora recebida supera apenas as pendências correspondentes listadas nesta seção.
+
 ## Revisão vigente M01-18 R02 — 28/10/2026
 
 Mesma feature/m01-narrativa-demo, base0a0106e; sem merge ou início de M01-19. Revisão de integração:14 momentos ilustrados sem protagonista, entrada direta na cela, tesouros desaparecem por recibo e têm mínimo configurável5 ouro quando o sorteio não entrega nada, área de contato do Gate3×2 com migração de eventos antigos, caminhada nativa para16 identidades e ratos/goblins, arma em planos por pose. Localização em LOCALIZACAO_E_GLOSSARIO.md; Imperial Dungeons permanece no original no mapa/diário/árvore. Campos, fontes, prompts, versões, testes e limitações em REVISAO_INTEGRACAO_M01_18_R02.md e evidencias/m01-18-r02. Novas imagens/fluidez aguardam avaliação do responsável; autoria desta revisão no MV e Galaxy A56 físico não foram executados. Retratos/batalhas aprovados, bônus, recursos, loot de inimigos e melhorias futuras preservados. REF02 foi atendido tecnicamente por este pedido específico; sua avaliação integrada permanece M01-19. Registros anteriores são históricos quando divergirem.

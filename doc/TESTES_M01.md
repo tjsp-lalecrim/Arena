@@ -54,6 +54,8 @@ Teste reproduzível: Playwright instalado localmente + Chrome desktop, `node too
 
 ## Samsung Galaxy A56 — preparação, execução pendente
 
+Programação confirmada pelo responsável em28/10/2026: teste físico ao final do M01, no roteiro de integração. Sua ausência não bloqueia revisões desktop. O teste integrado informado nesta data ocorreu pela execução no editor MV, não no aparelho nem no navegador; escopo em VALIDACAO_M01.md.
+
 Servir projeto na rede local confiável e abrir o endereço do computador no Chrome do A56. O bind 127.0.0.1 do exemplo acima é somente desktop: para o aparelho usar explicitamente interface de rede local, sem publicar na Internet. Registrar URL/origem usada (saves são locais à origem), versão do Android, Chrome e data. Girar para paisagem. O MV oferece tela inteira pela tecla F4 no desktop; no aparelho falta integrar botão explícito acionado por toque, que será implementado/avaliado antes de M01-19. A barra do Chrome visível não conta como apresentação em tela inteira.
 
 Cobrir toque para mover, menu/cancelar, escolhas e teclado de nome; posteriormente slots, arrasto, combate e portal. Registrar leitura de textos, dimensões lógicas/CSS, escala, tempo até título/nova partida, fluidez e perdas de foco ao girar/retomar. Testar recarregamento e load após fechar aba. Não inferir sucesso no aparelho de emulação ou Chrome desktop. Não foram realizados testes no Galaxy A56 nesta etapa.

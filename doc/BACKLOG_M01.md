@@ -1,6 +1,6 @@
-## Revisão vigente M01-18 R02 — 28/10/2026
+## Estado após teste integrado — 28/10/2026
 
-Mesma feature/m01-narrativa-demo, base0a0106e; sem merge ou início de M01-19. Revisão de integração:14 momentos ilustrados sem protagonista, entrada direta na cela, tesouros desaparecem por recibo e têm mínimo configurável5 ouro quando o sorteio não entrega nada, área de contato do Gate3×2 com migração de eventos antigos, caminhada nativa para16 identidades e ratos/goblins, arma em planos por pose. Localização em LOCALIZACAO_E_GLOSSARIO.md; Imperial Dungeons permanece no original no mapa/diário/árvore. Campos, fontes, prompts, versões, testes e limitações em REVISAO_INTEGRACAO_M01_18_R02.md e evidencias/m01-18-r02. Novas imagens/fluidez aguardam avaliação do responsável; autoria desta revisão no MV e Galaxy A56 físico não foram executados. Retratos/batalhas aprovados, bônus, recursos, loot de inimigos e melhorias futuras preservados. REF02 foi atendido tecnicamente por este pedido específico; sua avaliação integrada permanece M01-19. Registros anteriores são históricos quando divergirem.
+Relato manual na execução pelo editor MV registrado em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026), com versão disponível associada e limites explícitos. Introdução/encerramento aprovados; mapa satisfatório. Pendências e critérios permanecem centralizados em [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md); não considerar arma/cenário ou outros ajustes resolvidos. Smartphone físico ao final do M01, sem bloqueio automático desktop. Sem merge, push ou início de backlog nesta tarefa. Estados anteriores abaixo são históricos quando divergirem.
 
 ## Estado vigente M01-18 — 28/10/2026
 

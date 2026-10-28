@@ -1,6 +1,6 @@
 ## Leitura operacional — processo vigente
 
-Antes de implementar, aplicar o roteiro curto e o índice de fontes principais em [DESENVOLVIMENTO_E_VERSIONAMENTO.md](DESENVOLVIMENTO_E_VERSIONAMENTO.md#operação-obrigatória--entregas-pequenas). Arte, mapas e interface têm diretivas próprias ali vinculadas; relatos antigos abaixo não as substituem. A entrega270bbd3 aguarda as impressões do responsável. Esta rodada foi exclusivamente documental, sem aprovação nova, implementação ou início de backlog. Diagnóstico breve e recortes apenas sugeridos: [REVISAO_PROCESSO_2026_10_28.md](REVISAO_PROCESSO_2026_10_28.md).
+Antes de implementar, aplicar o roteiro curto e o índice de fontes principais em [DESENVOLVIMENTO_E_VERSIONAMENTO.md](DESENVOLVIMENTO_E_VERSIONAMENTO.md#operação-obrigatória--entregas-pequenas). Arte, mapas e interface têm diretivas próprias ali vinculadas; relatos antigos abaixo não as substituem. Impressões do teste integrado recebidas em28/10/2026: consultar a evidência manual e seu escopo em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026); pendências únicas em REFINAMENTOS_POS_INTEGRACAO_M01.md. Esta atualização é documental, sem implementação ou início de backlog. Diagnóstico breve e recortes apenas sugeridos: [REVISAO_PROCESSO_2026_10_28.md](REVISAO_PROCESSO_2026_10_28.md).
 
 ## Revisão vigente M01-18 R02 — 28/10/2026
 

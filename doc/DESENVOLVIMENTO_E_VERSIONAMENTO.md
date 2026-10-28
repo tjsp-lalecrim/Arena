@@ -23,7 +23,7 @@
 
 **Regras obrigatórias** orientam novas alterações; **decisões provisórias** mantêm valores/contratos atuais até revisão autorizada; **melhorias futuras** não entram por associação; **critérios de validação** definem a evidência necessária, sem representar execução ou aprovação. Manter esses estados identificados e atualizar a fonte principal, usando links nos demais documentos em vez de repetir regras. Relatórios datados preservam o histórico; não comandam uma tarefa nova quando divergirem da diretiva vigente. Não criar novos resumos extensos de versões antigas a cada entrega.
 
-A revisão M01-18 R02 em270bbd3 aguarda as impressões do responsável. Este ajuste de processo não aprova o jogo nem inicia outro backlog. Diagnóstico e possíveis recortes: [REVISAO_PROCESSO_2026_10_28.md](REVISAO_PROCESSO_2026_10_28.md).
+O relato integrado recebido em28/10/2026 e seus limites estão em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026). O ajuste de processo não inicia outro backlog. Diagnóstico e possíveis recortes: [REVISAO_PROCESSO_2026_10_28.md](REVISAO_PROCESSO_2026_10_28.md).
 
 ## Diretrizes confirmadas
 
