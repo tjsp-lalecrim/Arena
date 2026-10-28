@@ -10830,6 +10830,266 @@
             ]
           }
         ]
+      },
+      "1": {
+        "heavy": [
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              74,
+              16,
+              -25
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              70,
+              12,
+              9,
+              9
+            ]
+          },
+          {
+            "hand": [
+              74,
+              21,
+              -25
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              70,
+              18,
+              9,
+              7
+            ]
+          },
+          {
+            "hand": [
+              33,
+              73,
+              -115
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              29,
+              69,
+              10,
+              9
+            ]
+          },
+          {
+            "hand": [
+              74,
+              48,
+              -210
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              71,
+              45,
+              8,
+              7
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          }
+        ],
+        "idle": [
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          }
+        ],
+        "light": [
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              68,
+              41,
+              10
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              64,
+              37,
+              9,
+              9
+            ]
+          },
+          {
+            "hand": [
+              33,
+              40,
+              -70
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              29,
+              36,
+              9,
+              9
+            ]
+          },
+          {
+            "hand": [
+              27,
+              38,
+              -90
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              23,
+              34,
+              9,
+              9
+            ]
+          },
+          {
+            "hand": [
+              49,
+              41,
+              -65
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              45,
+              37,
+              8,
+              9
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          }
+        ]
       }
     }
   }

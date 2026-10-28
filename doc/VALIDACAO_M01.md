@@ -1,6 +1,6 @@
-## Aprovação manual do piloto da espada — 28/10/2026
+## Aprovação manual da Bretã feminina com espada curta — 28/10/2026
 
-O responsável informou que testou **no editor** o combate piloto da **Bretã feminina com espada curta** e que funcionou bem. Aprovação restrita ao piloto de Estocada pesada apresentado na R01; não estender a outras ações, armas/personagens ou dispositivos. Versão disponível associada:4b49e5d (acesso determinístico), contendo a correção a9531e0; o responsável não informou hash nem versão exata do editor. Sem atribuir aprovação às alterações posteriores desta entrega. Cobertura técnica/pendências em plugins/Arena_BattleMotion.md e REF09 de REFINAMENTOS_POS_INTEGRACAO_M01.md.
+O responsável confirmou **Atacar também funcional no editor** e aprovou os comandos testados: **Atacar, Corte leve — espada, golpe pesado (Estocada pesada — espada) e Defender**, somente para **Bretã feminina com espada curta**. Atualiza a aprovação R01 do piloto pesado, sem duplicar evidência nem estender a outras ações, armas, personagens ou dispositivos. Estado disponível associado:112246d (demais ações), que preserva a9531e0 e o acesso4b49e5d; hash e versão exata do editor não foram informados pelo responsável. Aprovação não cobre a adaga implementada posteriormente nesta tarefa. Cobertura e pendências em plugins/Arena_BattleMotion.md e REF09 de REFINAMENTOS_POS_INTEGRACAO_M01.md.
 
 ## Teste integrado informado pelo responsável — 28/10/2026
 
