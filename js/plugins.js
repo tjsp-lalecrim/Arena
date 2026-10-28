@@ -30,5 +30,6 @@ var $plugins =
 {"name":"MV_QuestRules","status":true,"description":"v0.1.0 Requisitos e etapas de quests","parameters":{}},
 {"name":"Arena_Quests","status":true,"description":"v0.1.0 MQ01, diario e fontes importantes","parameters":{}},
 {"name":"MV_JournalModel","status":true,"description":"v0.1.0 Modelo puro de diario","parameters":{}},
-{"name":"Arena_QuestJournal","status":true,"description":"v0.2.0 Diario estruturado e responsivo","parameters":{}}
+{"name":"Arena_QuestJournal","status":true,"description":"v0.2.0 Diario estruturado e responsivo","parameters":{}},
+{"name":"Arena_Recovery","status":true,"description":"v0.1.0 Poções diretas e descanso em pontos autorizados","parameters":{}}
 ];
