@@ -1,3 +1,7 @@
+## Continuidade R03
+
+Correção visual R02 aprovada pelo responsável, estado disponívelbd108c5. Nova proteção de entrada de menu em PROTECAO_POCOES_M01_17_R03.md, sem alterar as barras, recuperação, combate ou descanso. A aprovação não cobre automaticamente essa implementação posterior; textos históricos de avaliação visual pendente abaixo foram superados somente no escopo do feedback R02.
+
 # M01-17 R02 — feedback visual de poções (28/10/2026)
 
 Mesma feature/m01-pocoes-descanso, base35ba624. Responsável confirmou que o uso de poções funcionou; tipos, roteiro, ambiente e versão exata não informados. Estado disponível associado35ba624. Evidência em evidencias/m01-17-r02/confirmacao-responsavel.json. Não atribuir aprovação do descanso, persistência, todos os casos de consumo, editor/dispositivos ou da nova apresentação R02.

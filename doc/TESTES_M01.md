@@ -1,3 +1,7 @@
+## M01-17 R03
+
+Roteiro test-potion-menu-guard.cjs para duplo clique, tecla/mouse mantidos, toques rápidos, troca de poção, gesto iniciado bloqueado/solto após prazo, novas pressões, sem fila, inválidos sem reiniciar, navegação e configuração. ARENA_URL/ARENA_EVIDENCE_DIR isolados. Regressões normais respeitam500ms; teste visual R02 usa0 somente na fixture para stress de animação com novas pressões. Dados de produção permanecem500. Não usar esse cenário de stress como prova da proteção: seu roteiro próprio usa os500ms reais. Evidências e pendências em PROTECAO_POCOES_M01_17_R03.md.
+
 ## M01-17 R02 — feedback de recuperação
 
 Executar tools/test-potion-feedback.cjs e tools/test-recovery-small.cjs, com ARENA_URL do servidor local e ARENA_EVIDENCE_DIR isolado. Validar estado/estoque imediato versus preenchimento transitório, usos consecutivos, clamp, esgotamento, mensagens de impedimento, entradas/saída e save/load sem tween antigo. Geometria não substitui leitura visual. Roteiro/evidências em REVISAO_FEEDBACK_POCOES_M01_17_R02.md. Regressões pertinentes de inventário/recuperação preservadas em pasta própria, sem sobrescrever R01.

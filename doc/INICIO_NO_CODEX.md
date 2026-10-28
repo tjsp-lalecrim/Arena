@@ -1,3 +1,7 @@
+## M01-17 R03 — proteção de uso no menu
+
+Feedback visual R02 aprovado pelo responsável no estado disponívelbd108c5; não estender ao descanso/editor/dispositivos ou à proteção nova. Arena_Recovery0.3.0 acrescenta menuIntervalMs500 configurável, prazo único entre poções, nova pressão após soltura e descarte sem fila de solicitações bloqueadas. Slots indicam brevemente indisponibilidade; navegação e barras aprovadas preservadas. Proteção exclusiva de interface, sem mudança de combate/turnos/recuperação/descanso. Ler PROTECAO_POCOES_M01_17_R03.md e evidencias/m01-17-r03. Mesma feature, sem merge ou próximo backlog; testes manuais novos/editor/A56 seguem separados e pendentes. Histórico abaixo preservado.
+
 ## Revisão vigente M01-17 R02 — 28/10/2026
 
 Responsável confirmou funcionamento do uso de poções no estado disponível35ba624; não presumir tipos/casos, ambiente, descanso, persistência ou aprovação da nova UI. R02 substitui mensagens redundantes por barras no quadro existente, com estado/estoque imediato e preenchimento visual240ms, sem bloquear navegação. Mesma feature/m01-pocoes-descanso; regras, valores, descanso, combate, save e plugins preservados. Ler REVISAO_FEEDBACK_POCOES_M01_17_R02.md e evidencias/m01-17-r02. Critérios técnicos mantidos; revisão visual do responsável, novo ciclo de editor e A56 físico continuam separados e pendentes. Sem merge ou próximo backlog. Relatos anteriores são históricos quando divergirem.

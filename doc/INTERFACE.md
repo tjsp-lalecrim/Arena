@@ -1,3 +1,7 @@
+## M01-17 R03 — proteção de entrada
+
+O responsável aprovou a correção visual R02 no estado disponívelbd108c5. Essa composição permanece inalterada. R03 adiciona somente intervalo de menu configurável500ms compartilhado pelas poções e exigência de nova pressão após soltura. Indisponibilidade breve indicada nos slots, sem mensagens/confirmadores, sem impedir navegação ou animação. Nenhum uso fica enfileirado. Não é regra de combate. Avaliação manual da proteção nova permanece pendente; detalhes em PROTECAO_POCOES_M01_17_R03.md.
+
 ## M01-17 R02 — recuperação visual no inventário
 
 Quadro existente do personagem com nome, três barras rotuladas/valores atuais e máximos, seis atributos em duas colunas e material da armadura. Limites336×200 preservados; fontes dos atributos16 e nome20 mantidas, rótulos das barras18. Miniaturas redundantes saem somente desse quadro para liberar espaço; aparência no mapa/combate permanece intacta. Sem novo painel/popup. Quantidade atualizada no slot e feedback de recuperação exclusivamente nas barras, com transição240ms. Mensagens de impedimento e descrições estáticas permanecem. Aplicar a diretiva de feedback sem redundância de NAV01.
