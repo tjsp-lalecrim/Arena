@@ -70,7 +70,7 @@ var ArenaQuests;
    ($gameMap._arenaTreasurePreview||($gameMap._arenaTreasurePreview={}))[index]=2;
    $gameMessage.add('Tesouro coletado.\n'+(lines.length?lines.join('\n'):'Nenhuma recompensa nesta fonte.')+(result.pending.length?'\nReserva salva para quando houver espaço.':''));return true;
   },
-  openJournal:function(){SceneManager.push(Scene_ArenaJournal);}
+  openJournal:function(){ArenaQuestJournal.open();}
  };
  ArenaDungeon.setDoor=function(id,open){if(cfg()&&id===cfg().doorId){if(!open)return false;return ArenaQuests.useDoor();}return nativeDoor.apply(this,arguments);};
  var inspect=ArenaDungeon.inspectTreasure;
@@ -85,19 +85,6 @@ var ArenaQuests;
   }reconcile();if(inMap())$arenaDungeon.integration.treasures.forEach(function(t,i){if(ArenaLoot.snapshot().receipts['container/MQ01.treasure.'+t.eventId])($gameMap._arenaTreasurePreview||($gameMap._arenaTreasurePreview={}))[i]=2;});};
  var there=Game_Player.prototype.checkEventTriggerThere;
  Game_Player.prototype.checkEventTriggerThere=function(triggers){if(inMap()&&triggers.indexOf(0)>=0){var s=ArenaPersistence.sourceStatus(cfg().sourceId),x=$gameMap.roundXWithDirection(this.x,this.direction()),y=$gameMap.roundYWithDirection(this.y,this.direction());if(s.active&&s.missing&&x===$arenaDungeon.key[0]&&y===$arenaDungeon.key[1]){$gameMap.event($arenaDungeon.keyEvent).start();return;}}return there.apply(this,arguments);};
- function wrapped(win,text,x,y,width,lineHeight){var words=text.split(/\s+/),line='';words.forEach(function(word){var next=line?line+' '+word:word;if(win.textWidth(next)>width&&line){win.drawText(line,x,y,width);y+=lineHeight;line=word;}else line=next;});if(line){win.drawText(line,x,y,width);y+=lineHeight;}return y;}
- function Journal(){this.initialize.apply(this,arguments);}
- Journal.prototype=Object.create(Window_Selectable.prototype);Journal.prototype.constructor=Journal;
- Journal.prototype.initialize=function(){Window_Selectable.prototype.initialize.call(this,28,48,Graphics.boxWidth-56,Graphics.boxHeight-96);this._top=0;this.refresh();this.activate();};
- Journal.prototype.refresh=function(){this.contents.clear();this.contents.fontSize=24;this.changeTextColor('#d2bf84');this.drawText(cfg().title,8,0,this.contentsWidth()-16);this.resetTextColor();this.contents.fontSize=19;var q=quest(),lines=[q.completed?'Concluída':q.stage?'Em andamento':'Não iniciada'];if(q.stage&&stage(q.stage)){cfg().stages.filter(function(s){return s.id<=q.stage;}).forEach(function(s){lines.push('',s.id<q.stage?'Etapa concluída':'Etapa atual',s.description);});if(!q.completed)lines.push('',stage(q.stage).objective);if(q.stage===20&&count()===0&&!receipt())lines.push('A chave está ausente: volte à fonte na cela.');if(q.stage>=30&&!receipt())lines.push('Registro de uso ausente: progresso bloqueado para revisão.');}else if(q.stage)lines.push('Etapa de laboratório não reconhecida.','Nenhuma transição automática será aplicada.');else lines.push('Nenhuma instrução de MQ01 recebida.');var y=44-this._top,context=this.contents._context;context.save();context.beginPath();context.rect(0,40,this.contentsWidth(),this.contentsHeight()-75);context.clip();lines.forEach(function(t){y=wrapped(this,t,8,y,this.contentsWidth()-16,28);},this);context.restore();this._total=y+this._top;this.contents.fontSize=16;this.changeTextColor('#b0b6ab');this.contents.fillRect(0,this.contentsHeight()-28,this.contentsWidth(),28,'#101c20');this.drawText('↑↓ / roda / arraste: rolar · Esc / Voltar: fechar',8,this.contentsHeight()-30,this.contentsWidth()-16);};
- Journal.prototype.update=function(){Window_Selectable.prototype.update.call(this);var delta=Input.isRepeated('down')?28:Input.isRepeated('up')?-28:TouchInput.wheelY>=20?28:TouchInput.wheelY<=-20?-28:0;if(TouchInput.isTriggered())this._dragY=TouchInput.y;if(TouchInput.isPressed()&&this._dragY!==undefined){delta+=this._dragY-TouchInput.y;this._dragY=TouchInput.y;}if(!TouchInput.isPressed())this._dragY=undefined;if(delta){this._top=Math.max(0,Math.min(Math.max(0,this._total-this.contentsHeight()+45),this._top+delta));this.refresh();}};
- function Scene_ArenaJournal(){this.initialize.apply(this,arguments);}
- Scene_ArenaJournal.prototype=Object.create(Scene_MenuBase.prototype);Scene_ArenaJournal.prototype.constructor=Scene_ArenaJournal;
- function Back(){this.initialize.apply(this,arguments);}
- Back.prototype=Object.create(Window_Command.prototype);Back.prototype.constructor=Back;
- Back.prototype.windowWidth=function(){return 150;};
- Back.prototype.makeCommandList=function(){this.addCommand('Voltar','back');};
- Scene_ArenaJournal.prototype.create=function(){Scene_MenuBase.prototype.create.call(this);this._journal=new Journal();this._journal.y=84;this._journal.height=Graphics.boxHeight-112;this._journal.createContents();this._journal.refresh();ArenaBattleUI.theme(this._journal);this._journal.setHandler('cancel',this.popScene.bind(this));this.addWindow(this._journal);var b=new Back(Graphics.boxWidth-178,0);b.setHandler('back',this.popScene.bind(this));this.addWindow(b);};
  var menu=Window_MenuCommand.prototype.addOriginalCommands;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);this.addCommand('Diário','arenaJournal',!!ArenaCharacterCreation.isCreated());};
  var create=Scene_Menu.prototype.createCommandWindow;
