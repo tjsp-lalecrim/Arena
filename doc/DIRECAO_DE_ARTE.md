@@ -1,18 +1,23 @@
-## Uso narrativo M01-18
-
-Ria R02 aprovada é reutilizada sem regeneração/edição, com quadro integral e texto em coluna separada. Nenhum protagonista nas ilustrações. Cronologia I01–I05 é textual para não apresentar a visão de Ria morta como cena da corte anterior à morte. Fonte visual original e hash/prompt já aprovado identificados em arte/USO_RIA_M01_18.md; nova composição de leitura permanece para avaliação, sem atribuir aprovação estética automática ao teste técnico.
-
 # Direção de arte e padrão de geração
 
-Estado atual M01-12: movimento/identidade atuais preservados e combate considerado satisfatório pelo responsável em rodada anterior. Gerados somente dois materiais de torso (couro/malha), sem novas poses/retratos; amostra mínima em revisão, não figurino final. Registros completos em arte/MATERIAIS_M01_12_*.json. Relatos de cobertura parcial M01-10 abaixo são históricos.
+Fonte principal de identidade visual, personagens/animações e processo de assets. Para geometria, portas e objetos, prevalece [DIRETIVA_DE_MAPAS.md](DIRETIVA_DE_MAPAS.md); para apresentação e entrada, [DIRETIVA_DE_NAVEGACAO.md](DIRETIVA_DE_NAVEGACAO.md). O fluxo de entregas está em [DESENVOLVIMENTO_E_VERSIONAMENTO.md](DESENVOLVIMENTO_E_VERSIONAMENTO.md).
 
-Aprovação posterior de animação: R02 (entrega a61977b) aprovado pelo responsável para Bretã feminina/rato; registro em decisoes/M01_10_APROVACAO_ANIMACOES_R02.json. Preservar desenhos/tempos/fluidez desses exemplos. Expansão para os15 personagens/2 inimigos restantes foi explicitamente priorizada antes de integrar M01-10 e iniciar M01-11; gerar somente o que falta. A aprovação do piloto não aprova automaticamente novas variantes nem testes não executados. Relato de R02 ainda pendente abaixo é histórico.
+## Regras obrigatórias de continuidade
 
-Adendo M01-10 R02 (vigente): revisão restrita ao piloto Bretã/rato, com desenhos novos de intermediários, gestos e duas armas separadas. Sem regenerar retratos ou produzir combinações de equipamento em lote.66 quadros auditados e vídeos nativos complementam pranchas; contagem/alpha não aprovam fluidez/anatomia. Estudos unidos/recortados rejeitados e preservados; manifesto arte/COMBATE_MOVIMENTOS_R02_MANIFEST.json. Aprovação anterior não se estende automaticamente a R02;15 personagens/2 inimigos não revisados. Restrições narrativas, identidade e dark fantasy continuam; prints de UI apenas orientam M01-11. Relatos R01/R05 abaixo são históricos.
+- Reaproveitar primeiro os assets aprovados; manter identidade Arena e acabamento dark fantasy. Fontes de baixa definição não autorizam fantasia genérica. Distinguir fato da fonte, interpretação e adaptação.
+- Projeção conforme uso: mapa superior **ortogonal**, batalha lateral e narrativa conforme a cena. A vista de personagens de exploração deve ser compatível com a grade ortogonal; não converter objetos/cenário para isometria. Jogador de batalha à esquerda voltado à direita; inimigos no lado oposto. Não aplicar a pose dos retratos às outras categorias.
+- Padronizar por categoria escala aparente, orientação, enquadramento, linha dos olhos/pés, margens e transparência real. Distinguir tamanho de arquivo/célula de pixels ocupados e recorte/escala do consumidor. Não deformar anatomia racial para caber no contorno humano.
+- Cabeça, pescoço, tronco e olhar anatomicamente coerentes; retratos seguem a seção de pose e seu bloco fixo. Espelhamento não corrige torção entre partes do corpo.
+- Animações mantêm canvas, escala, âncora e apoio estáveis. Caminhada exige articulação real, direções e fases coerentes, não imagem estática transladada. Produzir variantes direcionais quando necessárias; conferir perspectiva, luz e mão da arma antes de qualquer reflexão técnica documentada.
+- Armas acompanham a mão em aproximação, ação e retorno, com pega, posição, rotação, escala e espelhamento coerentes. Alternar frente/trás por pose quando necessário, sem prioridade global que oculte problemas. Preservar movimentos aprovados; ausência de movimento não pode ser escondida por fallback silencioso.
+- Assets isolados têm fundo transparente e não incorporam piso/parede para compensar integração incorreta. Ilustrações narrativas não representam o protagonista, inclusive partes do corpo, silhuetas, sombras ou reflexos que determinem raça, gênero ou equipamento. Não gerar vozes.
+- Corrigir também a configuração/gerador que origina o resultado, sem modificar arte aprovada para contornar erro de integração.
 
-Adendo M01-10 R01: novas folhas de combate não herdam aprovação R05. Preservados todos os retratos/exploração e fontes aprovadas; referências laterais r02 e rato r03 fornecidas à IA para continuidade. Goblin/Lizard Man usam também sprites identificados no PDF local Arena_Monsters p.6/13, somente consulta ignorada. Manifesto, prompts integrais e pranchas em arte/COMBATE_M01_10_MANIFEST.json e COMBATE_M01_10.md. Quatro estados de três quadros exercitados no motor; gesto corporal genérico sem arma desenhada ainda não encerra a apresentação. Manter revisão de identidade/roupa/apoio; nenhuma imagem nova é promovida automaticamente a referência estética. Sem novas ilustrações narrativas ou retratos.
+## Estados e validação
 
-Versão 1.6 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md. Em R05 o responsável aprovou as artes atuais de M01-07 **para prosseguir com ressalvas**, por arquivo/versão/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Recortes e orientações heterogêneos não foram corrigidos. Não houve novas gerações/correções nesta rodada. A rodada inicial v0.1 continua histórica e rejeitada para narrativa; a aprovação atual não reabilita usos narrativos proibidos.
+Aprovação estética, funcionamento técnico e cobertura são estados distintos. A direção e os arquivos anteriormente aprovados continuam preservados, inclusive suas ressalvas aceitas. M01-07 mantém recortes/orientações heterogêneos aceitos; não corrigir agora por associação. Referências e pendências: [arte/PENDENCIAS_VISUAIS_M01_07.md](arte/PENDENCIAS_VISUAIS_M01_07.md) e [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md). Novas artes/caminhada de M01-18 R02 ainda aguardam avaliação; não herdam aprovação.
+
+Dimensões iniciais e configurações de uma amostra não são padrão universal aprovado: consultar o consumidor e o registro da versão. Antes de integrar, conferir na escala real e no jogo projeção, anatomia, recortes, margens/alpha, direções, apoio/âncora, continuidade e identidade entre categorias; para armas, pega e planos ao longo da ação. Automação de dimensões não comprova anatomia ou fluidez. Registrar o que foi realmente visto/testado, separando navegador, autoria no editor e aparelho físico. Aplicar apenas os critérios pertinentes à alteração.
 
 ## Identidade visual
 
@@ -58,10 +63,10 @@ Usar bases pouco saturadas com acentos controlados. Efeitos mágicos podem ter c
 | --- | --- |
 | Ilustração narrativa | Pintura detalhada, composição com foco claro e espaço reservado à interface; sem texto gerado dentro da imagem. Base de trabalho 1536 × 1024, com ação principal na região central para permitir reenquadramento |
 | Retrato | Mesmo rosto, idade aparente, cabelo, vestuário e paleta do personagem; busto em três quartos, fundo discreto ou transparente conforme uso. Mestre 1024 × 1024 |
-| Personagem de mapa | Vista superior oblíqua compatível com o mapa 2D, sem perspectiva isométrica. Base inicial de célula 48 × 64 para humanoides, pés alinhados; frente, costas e perfis coerentes |
+| Personagem de mapa | Vista de exploração compatível com o mapa superior ortogonal, sem perspectiva isométrica. Base inicial de célula 48 × 64 para humanoides, pés alinhados; frente, costas e perfis coerentes |
 | Combatente Side View | Corpo inteiro, postura de perfil/três quartos lateral, identidade igual ao retrato e sprite de mapa. Base inicial de célula 96 × 96 para humanoides, pés na mesma linha e sem cortes de arma |
 | Inimigo | Mesmo acabamento e escala relativa dos personagens; dimensões maiores justificadas por porte. Animação própria, não apenas efeitos sobre imagem estática |
-| Ambiente e tiles | Vista superior oblíqua consistente, grade de 48 × 48 como base; superfícies repetíveis sem costuras, portas e passagens reconhecíveis. Ornamentos não devem parecer objetos coletáveis por acidente |
+| Ambiente e tiles | Vista superior ortogonal consistente, grade de 48 × 48 como base; superfícies repetíveis sem costuras, portas e passagens reconhecíveis. Ornamentos não devem parecer objetos coletáveis por acidente |
 | Fundo de batalha | Composição lateral compatível com os combatentes; primeiro plano disponível para participantes e interface; arquitetura coerente com a área explorada |
 | Ícone | Um objeto ou símbolo dominante, enquadramento central e margem consistente; mestre 256 × 256, leitura validada a 32 × 32; sem números, letras ou raridade embutidos |
 | Interface | Pedra escura, metal gasto e detalhes discretos de latão. Molduras finas, foco visível e áreas de texto limpas. Contadores, descrições e barras são desenhados pelo jogo |
@@ -152,20 +157,20 @@ Em folhas de animação, acrescentar a lista exata de movimentos, células e inv
 
 ## Processo de geração e controle de qualidade
 
-1. Selecionar conteúdo do primeiro marco e registrar fontes. Criar a ficha-base e preencher o prompt.
-2. Gerar um exemplo por categoria necessária: ilustração, personagem de mapa, combatente do jogador, inimigo, ambiente e ícones.
-3. Comparar os exemplos lado a lado e em tela de jogo. Registrar os exemplares validados como referências de estilo; não produzir a biblioteca inteira antes dessa etapa.
-4. Derivar variantes e animações preservando as fichas. Corrigir desvios antes de integrar.
-5. Validar visualmente e tecnicamente no tamanho final, incluindo legibilidade em tela mobile. Não presumir qualidade pela imagem ampliada.
-6. Registrar alterações deste guia e atualizar referências quando o padrão mudar. Não substituir assets já integrados silenciosamente.
+Fluxo obrigatório, inclusive para correções:
 
-Reprovar assets com estilo divergente, identidade inconsistente, câmera incorreta, cortes, sombras incompatíveis, anatomia quebrada, transparência falsa, costuras evidentes ou ilegibilidade no tamanho final.
+1. Identificar arquivo/versão existentes, defeito observável e critério de aceitação. Conferir as diretivas, o consumidor e a referência aprovada antes de gerar.
+2. Localizar a causa: configuração, recorte, escala, âncora, camada ou integração devem ser corrigidos nessa origem; não regenerar arte para compensar erro de código. Reaproveitar o asset adequado.
+3. Se faltar conteúdo artístico, produzir **uma unidade representativa ou pequeno conjunto coerente**, com referências efetivamente fornecidas. Preservar a versão aprovada; o protótipo fica identificado como candidato.
+4. Integrar a amostra isolada e inspecionar na escala real/contexto do jogo, incluindo animação quando aplicável. Se surgir defeito recorrente, interromper a expansão e corrigir o padrão primeiro.
+5. Apresentar o protótipo e seus limites para avaliação. **Não iniciar o lote completo na mesma entrega que apresenta um padrão visual novo ainda não aprovado.** Aprovação do protótipo autoriza continuidade somente no escopo efetivamente aprovado, sem comprovar todas as variantes.
+6. Em entrega separada e autorizada, ampliar somente o subconjunto necessário, mantendo as referências aprovadas e os critérios. Atualizar também os geradores pertinentes e conferir que a reconstrução conserva a correção.
 
 ## Registro por asset
 
-Registrar em doc/arte/ o identificador, categoria, versão deste guia, fontes, ferramenta/modelo quando disponível, prompt completo, referências efetivamente usadas, arquivo mestre, arquivo exportado, dimensões e resultado da validação. Criar essa pasta ao produzir os primeiros assets. Seeds, quando oferecidas pela ferramenta, são auxiliares e não garantia de consistência.
+Manter em doc/arte/ somente rastreabilidade útil para reproduzir e decidir: arquivo/versão (mestre e export quando distintos), referência efetivamente usada e seu papel, prompt de geração/edição, parâmetros e transformações relevantes (dimensões, recorte, escala, âncora), estado de aprovação e evidência correspondente. Indicar ferramenta/modelo/seed quando disponíveis, sem inventar dados. Não duplicar catálogos completos, hashes e relatórios a cada tentativa; referenciar o registro existente e acrescentar apenas a mudança relevante. Preservar versões aprovadas e estudos necessários à comparação, sem promovê-los a referência definitiva.
 
-Usar nomes descritivos e estáveis, por exemplo `arena_dungeon_pedra_parede_v01.png` nos mestres. Respeitar as convenções exigidas pelo motor nos arquivos exportados. Manter textos e contadores separados da arte para permitir tradução e atualização de dados.
+Nomes estáveis e descritivos, respeitando o consumidor MV. Textos/contadores separados da arte. A preservação dos registros existentes não autoriza expandir a produção.
 
 ## Áudio
 
@@ -226,7 +231,7 @@ Acrescentar identidade, escala, busto, linha dos olhos e margens. Não comprimir
 
 Dimensões, alpha e testes automáticos são complementares, não prova de anatomia. Assets com falha permanecem em revisão e não viram referência aprovada. A inspeção técnica pelo Codex não substitui a avaliação estética do responsável.
 
-Convenções independentes: exploração segue baixo/esquerda/direita/cima do MV; combatente do jogador atual fica à direita e aponta para esquerda, com corpo/cabeça/ação coerentes; animações mantêm proporções, apoio e identidade entre quadros. Não alterar essas categorias para copiar a pose dos retratos. A rodada pose-r03 corrige somente quatro retratos e preserva os demais assets e regras; registro em `arte/REVISAO_POSE_RETRATOS_R03.md`.
+Convenções independentes: exploração segue baixo/esquerda/direita/cima do MV; combatente do jogador fica à esquerda e aponta para direita (disposição vigente desde M01-11), com corpo/cabeça/ação coerentes; animações mantêm proporções, apoio e identidade entre quadros. Não alterar essas categorias para copiar a pose dos retratos. A rodada pose-r03 corrige somente quatro retratos e preserva os demais assets e regras; registro em `arte/REVISAO_POSE_RETRATOS_R03.md`.
 
 ## Identidade racial além do animal comum — pilotos R04
 
@@ -261,14 +266,10 @@ M01-12 reutiliza pixels/poses aprovados das16 identidades. Somente dois materiai
 
 M01-14 reutiliza piso/alvenaria R04 e sprites aprovados; um atlas IA complementar v01 (cap/porta/Gate quadrado azul/água/plataforma/correntes). Prompts/referências efetivas em arte/DUNGEON_M01_14_PROMPTS.json. Cor azul do Gate vem do print original, sem trocar por portal circular genérico. Não há narrativa com protagonista. Recortes/células/escala e simplificações constam em DUNGEON_M01_14.md e dependem de avaliação do responsável; não promover complementos a aprovados automaticamente.
 
-## Convenções obrigatórias de cenário — M01-14 R02
+## Cenário: fonte principal
 
-Porta é vão na faixa de parede: teto/cap separado de1tile, face de2tiles, apoio inferior e orientação explícita norte/sul/leste/oeste. Nunca pintar teto dentro dos quadros da porta. Arte pode ocupar vários tiles; collider é contrato independente e não cresce com a imagem. Quatro direções exigem perspectiva/iluminação próprias, sem espelhar por conveniência. Estados fechado/intermediário/aberto compartilham enquadramento, escala, jambas e pivô. Verificar envelope ocupado antes de fechar e inspeção do personagem nas duas extremidades. Correntes/nichos são estáticos, com vistas próprias, ancorados à massa mural; chão e tesouro usam perspectiva superior e apoio no piso.
+Encaixe de teto/parede/vão, moldura/dobradiças, orientações de objetos, água, colisão e oclusão estão consolidados em [DIRETIVA_DE_MAPAS.md](DIRETIVA_DE_MAPAS.md). Aplicações históricas e registros de arte: DUNGEON_M01_14_R02.md, DUNGEON_M01_14_R03.md e arte/DUNGEON_M01_14_R03_*.json; não recuperar suas simplificações oblíquas como regra vigente.
 
-Água animada deve repetir sem emendas e usar A1 nativo quando adequado; imersão visual deriva de região explícita, não autoriza andar por toda água ou obstáculo. Não mudar Vigor em exploração. Tesouro baseia-se no original: saco/moedas/tecido/peças, sem brilho de raridade futuro. Arte nova e recortes R02 estão em revisão; aprovação da base4161615 registrada em arte/DUNGEON_M01_14_R02_PROMPTS.json. Os recortes inspecionados devem ser registrados na origem, pois a ferramenta pode não respeitar a grade solicitada. Limites/candidatos em DUNGEON_M01_14_R02.md. Sem ilustração narrativa do protagonista.
-## Diretiva vigente R03 — ortogonal
-
-DIRETIVA_DE_MAPAS.md consolida as regras verificáveis e prevalece sobre as simplificações R02. Não usar portas/correntes com alvenaria incorporada nem vistas oblíquas/isométricas. Componentes separados de geometria; âncoras e dobradiças invariantes; projeções frontal e superior lateral próprias. Objetos de parede somente em face desenhada válida, sem flutuar no vazio; plataformas independentes sem parede traseira; tesouros RGBA em escala opaca de44×30–34px. Prompts/masters/limites em arte/DUNGEON_M01_14_R03_*.json e relatório DUNGEON_M01_14_R03.md. Sem aprovação automática de encaixes, alterações de recursos ou narrativa do protagonista.
 ## Aprovação do mapa e ressalva futura — 27/10/2026
 
 Resultado visual/estrutura da R03 no estado disponívelb194b44 aprovados pelo responsável. Não regenerar os assets aprovados nesta rodada. Portas laterais têm orientação e formato corretos; futuramente avaliar espessura aparente, contraste e legibilidade, preservando âncoras, moldura, animação, projeção e colisão. Sem mudança implementada. A ressalva não bloqueia o próximo backlog; a pendência de autoria no editor é separada. Evidência/escopo em APROVACAO_MAPA_M01_14.md.
@@ -280,3 +281,21 @@ Retratos mantêm a diretiva de pose/anatomia existente; não aplicar suas orient
 A montagem pode refletir uma pose bilateral compatível para uma fase oposta ou orientação; registrar quais células, conferir roupas, luz e mão da arma. Isso não corrige torção anatômica nem autoriza espelhar retratos indiscriminadamente. Rato possui compensação vertical norte10px, baseada nas patas/ground52, evitando ancoragem pela ponta da cauda. Animações de batalha aprovadas permanecem byte a byte.
 
 Ilustrações narrativas: sem protagonista, mãos, braços, silhuetas/reflexos que fixem sua raça/gênero/equipamento. Ria é NPC identificada. Cada momento possui imagem e texto próprios; preservar proporção, margens e legibilidade. Registrar objetos/arquitetura/heráldica interpretados, sem apresentá-los como informação visual confirmada do original. Novas imagens R02 são candidatas à avaliação, não referências automaticamente aprovadas. Prompts, arquivos, estudos não selecionados, recortes e referências efetivamente fornecidas: arte/m01-integracao-r02/.
+
+## Registros iniciais de aplicação — históricos
+
+Os relatos abaixo preservam o contexto das entregas; não substituem as regras acima nem o estado R02 em REVISAO_INTEGRACAO_M01_18_R02.md.
+
+## Uso narrativo M01-18
+
+Ria R02 aprovada é reutilizada sem regeneração/edição, com quadro integral e texto em coluna separada. Nenhum protagonista nas ilustrações. Cronologia I01–I05 é textual para não apresentar a visão de Ria morta como cena da corte anterior à morte. Fonte visual original e hash/prompt já aprovado identificados em arte/USO_RIA_M01_18.md; nova composição de leitura permanece para avaliação, sem atribuir aprovação estética automática ao teste técnico.
+
+Estado atual M01-12: movimento/identidade atuais preservados e combate considerado satisfatório pelo responsável em rodada anterior. Gerados somente dois materiais de torso (couro/malha), sem novas poses/retratos; amostra mínima em revisão, não figurino final. Registros completos em arte/MATERIAIS_M01_12_*.json. Relatos de cobertura parcial M01-10 abaixo são históricos.
+
+Aprovação posterior de animação: R02 (entrega a61977b) aprovado pelo responsável para Bretã feminina/rato; registro em decisoes/M01_10_APROVACAO_ANIMACOES_R02.json. Preservar desenhos/tempos/fluidez desses exemplos. Expansão para os15 personagens/2 inimigos restantes foi explicitamente priorizada antes de integrar M01-10 e iniciar M01-11; gerar somente o que falta. A aprovação do piloto não aprova automaticamente novas variantes nem testes não executados. Relato de R02 ainda pendente abaixo é histórico.
+
+Adendo M01-10 R02 (vigente): revisão restrita ao piloto Bretã/rato, com desenhos novos de intermediários, gestos e duas armas separadas. Sem regenerar retratos ou produzir combinações de equipamento em lote.66 quadros auditados e vídeos nativos complementam pranchas; contagem/alpha não aprovam fluidez/anatomia. Estudos unidos/recortados rejeitados e preservados; manifesto arte/COMBATE_MOVIMENTOS_R02_MANIFEST.json. Aprovação anterior não se estende automaticamente a R02;15 personagens/2 inimigos não revisados. Restrições narrativas, identidade e dark fantasy continuam; prints de UI apenas orientam M01-11. Relatos R01/R05 abaixo são históricos.
+
+Adendo M01-10 R01: novas folhas de combate não herdam aprovação R05. Preservados todos os retratos/exploração e fontes aprovadas; referências laterais r02 e rato r03 fornecidas à IA para continuidade. Goblin/Lizard Man usam também sprites identificados no PDF local Arena_Monsters p.6/13, somente consulta ignorada. Manifesto, prompts integrais e pranchas em arte/COMBATE_M01_10_MANIFEST.json e COMBATE_M01_10.md. Quatro estados de três quadros exercitados no motor; gesto corporal genérico sem arma desenhada ainda não encerra a apresentação. Manter revisão de identidade/roupa/apoio; nenhuma imagem nova é promovida automaticamente a referência estética. Sem novas ilustrações narrativas ou retratos.
+
+Versão 1.6 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md. Em R05 o responsável aprovou as artes atuais de M01-07 **para prosseguir com ressalvas**, por arquivo/versão/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Recortes e orientações heterogêneos não foram corrigidos. Não houve novas gerações/correções nesta rodada. A rodada inicial v0.1 continua histórica e rejeitada para narrativa; a aprovação atual não reabilita usos narrativos proibidos.

@@ -2,11 +2,11 @@
 
 Vigente desde M01-14 R03,27/10/2026. Complementa DIRECAO_DE_ARTE.md, GERACAO_DE_CENARIOS.md, DADOS_M01.md e os contratos em plugins/Arena_Dungeon.md. A planta e direção gráfica aprovadas não aprovam automaticamente encaixes. Fonte arquitetônica principal: Arena original; não converter para isometria para acomodar um objeto.
 
-## Grade e projeção
+## Regras obrigatórias: grade e projeção
 
 O projeto usa tile **48×48px**, confirmado no motor e em execução. Pixels de prints escalados pela janela não definem a unidade. Mundo superior ortogonal: eixos norte/sul e leste/oeste paralelos à grade; nenhuma transformação da planta em losangos. Luz superior esquerda e materiais aprovados devem se manter coerentes.
 
-Padrão: cap/teto1tile, altura de face frontal2tiles, corredor3tiles livres. As faces são projeção visual dentro de células sólidas; não aumentam colisão ou fecham caminhos. Laterais opacas usam borda superior ortogonal, conforme arquitetura existente. No vão de porta não se cria um cap sólido sobre piso: o teto real dos blocos vizinhos permanece intacto. Nunca usar uma imagem com parede/terreno incorporado para compensar falta de geometria.
+Decisão provisória para representação, sujeita a testes: cap/teto1tile, altura de face frontal2tiles, corredor3tiles livres. Preservar conectividade e exceções de largura/geometria necessárias ao original, registrando a adaptação em vez de ampliar tudo mecanicamente. As faces são projeção visual dentro de células sólidas; não aumentam colisão ou fecham caminhos. Laterais opacas usam borda superior ortogonal, conforme arquitetura existente. No vão de porta não se cria um cap sólido sobre piso: o teto real dos blocos vizinhos permanece intacto. Nunca usar uma imagem com parede/terreno incorporado para compensar falta de geometria.
 
 ## Conceitos que não são intercambiáveis
 
@@ -40,12 +40,12 @@ Nunca desenhar um cap em camada acima do jogador sobre uma passagem que deveria 
 
 Fechamento recusado enquanto jogador ou evento não-through ocupa envelope de giro. Collider bloqueado até o fim da abertura; volta a bloquear no início do fechamento aceito. Todos os quadros têm mesmo canvas/escala/âncora. Comparar pixels da dobradiça e posição da moldura, além de conferir se os quadros são diferentes. Água: A1 próprio e periódico; natação exclusivamente na região marcada, preservando flags nativas, bordas, obstáculos e veículos. Não gastar/recuperar Vigor em exploração.
 
-## Validação mínima antes de aplicar em lote
+## Critérios de validação pertinentes à alteração
 
 1. Ver um caso frontal e um lateral, ambos pelos dois lados, incluindo aberto, intermediário, fechado e travessia real.
 2. Ver o mesmo objeto de descanso isolado e junto de uma parede, sem alvenaria falsa; tesouro na escala real; canto/margem de água.
-3. Aplicar a regra às ocorrências reais e auditar todas as posições e camadas. Relatar exemplos que não puderam ser representados sem adaptação.
-4. Salvar/carregar, incluindo portas e água; testar navegação e colisão nativas. Regenerar e comparar hashes dos outputs.
+3. Submeter a amostra à avaliação antes de expandir ocorrências, conforme o fluxo de DIRECAO_DE_ARTE.md; não produzir um lote de padrão novo ainda não aprovado na mesma entrega. Na expansão autorizada, auditar posições/camadas alteradas e registrar adaptações.
+4. Salvar/carregar, incluindo portas e água; testar navegação e colisão nativas. Quando houver alteração de gerador, conferir sua saída pertinente para garantir que não desfaz o ajuste; não regenerar tudo em uma revisão sem esse risco.
 5. Inspecionar no navegador e no editor MV1.6.1. Registrar o que foi executado: teste de navegador e validação de JSON não substituem autoria no editor, nem comprovam teste físico em mobile.
 
 Recortes de revisão, linhas e rótulos pertencem somente às pranchas. Prompts devem fornecer apenas referências efetivamente usadas; prints de defeitos não são modelos de resultado. Assets com falhas permanecem em revisão até avaliação do responsável.
@@ -57,3 +57,7 @@ Resultado visual/estrutura da R03 no estado disponívelb194b44 aprovados pelo re
 ## Integração R02
 
 O Shift Gate mantém seus tiles de parede e arte; a ativação cobre o piso de aproximação3×2, sem abrir colisão nas paredes. Contatos são acrescentados sem renumerar fontes existentes e são reconstruídos em saves antigos. Não usar through no jogador para contornar acesso. Ratos/goblins usam imagens nativas de caminhada, pés/pivôs independentes da área de colisão. As ressalvas de legibilidade das portas laterais e a investigação de custos originais da natação continuam futuras; Vigor aquático permanece inalterado.
+
+## Origem das correções
+
+Corrigir também geradores/configurações que produzem coordenadas, encaixes, colisões, camadas ou animações; remendo apenas no output não encerra a correção. Não alterar planta ou assets aprovados para mascarar erro de integração. Anatomia, caminhada de participantes e armas seguem DIRECAO_DE_ARTE.md; não duplicar esses contratos aqui. Ressalvas aceitas e melhorias futuras permanecem no registro de aprovação existente e em REFINAMENTOS_POS_INTEGRACAO_M01.md, sem obrigação de regenerar agora.

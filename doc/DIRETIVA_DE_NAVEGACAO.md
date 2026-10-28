@@ -11,9 +11,15 @@ Diretiva confirmada em 28/10/2026. Aplicar a todos os menus novos ou revisados d
 - **Conteúdo variável:** tratar listas vazias, nomes/descrições longos, palavras sem espaços, muitos itens e overflow. Quebrar pelo espaço realmente disponível e oferecer rolagem visível; texto multilinha alinhado à coluna correta.
 - **Estado confiável:** prévias/leitura/cancelamento preservam personagem/inventário/progresso; apresentação reflete dados atuais, inclusive após salvar/carregar. Status não é inferido de texto ou aparência.
 
-Cada revisão de menu deve incluir evidências dos caminhos de entrada/retorno, estados vazio/preenchido, opção única, textos longos, foco, teclado/ponteiro/toque e tamanho reduzido pertinente ao projeto. Quando houver confirmação, testar cancelamento e bloqueio dos controles atrás dela. Registrar testes efetivamente executados e pendências; não chamar validação geométrica de aprovação estética.
+Critérios de validação: selecionar os casos afetados e registrar a cobertura; para menu novo ou alteração transversal de entrada/layout, incluir evidências dos caminhos de entrada/retorno, estados vazio/preenchido, opção única, textos longos, foco, teclado/ponteiro/toque e tamanho reduzido pertinente ao projeto. Quando houver confirmação, testar cancelamento e bloqueio dos controles atrás dela. Registrar testes efetivamente executados e pendências; não chamar validação geométrica de aprovação estética.
 
 Vínculos: INTERFACE.md, DESENVOLVIMENTO_E_VERSIONAMENTO.md, TESTES_M01.md e VALIDACAO_M01.md. Aplicação atual: diário M01-16 R02. Auditoria dos demais menus permanece no M01-19, ligada aos registros já existentes de REF01(favoritos/atalhos), uso de itens, paleta/confirmação e demais refinamentos; não criar pendências duplicadas nem implementar essas melhorias por associação.
+
+## Prevenção obrigatória de acionamento involuntário
+
+Fechar mensagem/modal ou mudar de contexto não pode reaproveitar a mesma pressão para acionar o controle seguinte. Exigir soltura e nova pressão onde necessário; descartar solicitações bloqueadas, sem fila de ações futuras. Não consumir recursos pela navegação, prévia ou cancelamento. Preservar navegação/retorno durante transições visuais e impedir comandos nos controles atrás de modal.
+
+A proteção de poções já aprovada é regra de interface existente, não cooldown de combate; parâmetros específicos permanecem no contrato de Arena_Recovery. Não aplicar seu intervalo indiscriminadamente a todos os menus. Preservar os padrões aprovados e suas ressalvas; paleta, confirmações, favoritos e demais melhorias permanecem em REFINAMENTOS_POS_INTEGRACAO_M01.md até tarefa própria. Uma revisão local não autoriza redesenhar o restante.
 
 ## Feedback sem redundância — 28/10/2026
 

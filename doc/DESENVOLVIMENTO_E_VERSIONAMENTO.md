@@ -1,5 +1,30 @@
 # Desenvolvimento, documentação e Git
 
+## Operação obrigatória — entregas pequenas
+
+1. Conferir branch, diff e alterações existentes; definir **um objetivo principal** e critérios curtos e verificáveis. Separar correção funcional, experimento visual e produção em lote em entregas distintas; não juntar sistemas independentes por conveniência.
+2. Ler somente as fontes e os contratos pertinentes. Antes de substituir algo, identificar a versão aprovada e a causa do defeito. Para assets, seguir o fluxo de [DIRECAO_DE_ARTE.md](DIRECAO_DE_ARTE.md#processo-de-geração-e-controle-de-qualidade).
+3. Implementar a menor unidade coerente. Se o trabalho crescer, concluir essa unidade, registrar o restante e entregar um ponto revisável, com limites explícitos; não marcar o item inteiro como concluído nem ampliar o escopo silenciosamente. Se a primeira amostra revelar falha recorrente, parar a expansão e corrigir o padrão.
+4. Selecionar verificações pelo que mudou e pelas dependências afetadas. Reutilizar evidências válidas, identificando versão e escopo; repetir verificações amplas somente por alteração ou risco concreto, com motivo registrado. Não executar baterias de jogo em tarefa exclusivamente documental.
+5. Revisar o diff, selecionar somente arquivos da tarefa e fazer commit coeso. Publicação e integração seguem a autorização da tarefa; uma aprovação parcial não aprova outras funcionalidades, assets ou dispositivos.
+6. Entregar resultado, evidência pertinente, limitações e próximo recorte sugerido. Não prometer duração ou consumo sem meios de medição; dados agregados não autorizam estimativas por atividade.
+
+## Fontes principais e estados
+
+| Assunto | Fonte principal |
+| --- | --- |
+| Escopo da entrega e Git | Este documento |
+| Identidade, anatomia, animação de participantes e fluxo de assets | [DIRECAO_DE_ARTE.md](DIRECAO_DE_ARTE.md) |
+| Grade, objetos, portas, colisão e oclusão | [DIRETIVA_DE_MAPAS.md](DIRETIVA_DE_MAPAS.md) |
+| Navegação, legibilidade, entradas e feedback | [DIRETIVA_DE_NAVEGACAO.md](DIRETIVA_DE_NAVEGACAO.md) |
+| Critérios e roteiros funcionais por item | [BACKLOG_M01.md](BACKLOG_M01.md) e [TESTES_M01.md](TESTES_M01.md) |
+| Evidências, versão e ambiente efetivamente verificados | [VALIDACAO_M01.md](VALIDACAO_M01.md), com links para resultados |
+| Melhorias adiadas | [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md) e pendências específicas ali referenciadas |
+
+**Regras obrigatórias** orientam novas alterações; **decisões provisórias** mantêm valores/contratos atuais até revisão autorizada; **melhorias futuras** não entram por associação; **critérios de validação** definem a evidência necessária, sem representar execução ou aprovação. Manter esses estados identificados e atualizar a fonte principal, usando links nos demais documentos em vez de repetir regras. Relatórios datados preservam o histórico; não comandam uma tarefa nova quando divergirem da diretiva vigente. Não criar novos resumos extensos de versões antigas a cada entrega.
+
+A revisão M01-18 R02 em270bbd3 aguarda as impressões do responsável. Este ajuste de processo não aprova o jogo nem inicia outro backlog. Diagnóstico e possíveis recortes: [REVISAO_PROCESSO_2026_10_28.md](REVISAO_PROCESSO_2026_10_28.md).
+
 ## Diretrizes confirmadas
 
 A documentação será atualizada durante o desenvolvimento. O Codex orientará a criação de branches e commits seguindo Git Flow para organizar o trabalho e separar funcionalidades.
@@ -30,7 +55,7 @@ O workflow adotado é Git Flow. Usar as seguintes funções de branches:
 | release/versao | develop | Preparar e estabilizar uma versão; integrar em main e develop, marcando a versão em main com uma tag |
 | hotfix/nome | main | Corrigir problema urgente de versão estável; integrar em main e develop, ou propagar à release ativa conforme necessário, e marcar a versão corrigida |
 
-Não desenvolver features diretamente em main. Documentação independente também é uma feature: usar feature/documentacao-inicial, originada de develop, e consolidar antes do envio ao remoto. Correções comuns de desenvolvimento podem usar feature/correcao-nome; hotfix fica reservado a urgências de versões estáveis.
+Não desenvolver features diretamente em main. Documentação independente também é uma feature, originada de develop; feature/documentacao-inicial foi o nome usado na organização inicial. Revisões documentais da entrega em análise podem permanecer em sua feature, sem integrar implementação ainda não aprovada. Correções comuns de desenvolvimento podem usar feature/correcao-nome; hotfix fica reservado a urgências de versões estáveis.
 
 Antes de cada tarefa, verificar branch atual, alterações pendentes e convenções do repositório. Preservar alterações existentes antes de trocar de branch. Separar funcionalidades independentes, mas não criar uma branch por arquivo.
 
