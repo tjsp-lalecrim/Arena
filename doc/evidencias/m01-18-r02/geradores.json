@@ -1,0 +1,49 @@
+[
+  {
+    "file": "data/Map008.json",
+    "before": "9f40e00edd8d7db72ca95b611e5d2d7cfd27f853fbedffc7e5858dc6abb0a5fa",
+    "after": "9f40e00edd8d7db72ca95b611e5d2d7cfd27f853fbedffc7e5858dc6abb0a5fa",
+    "byteIdentical": true,
+    "sameData": true
+  },
+  {
+    "file": "data/Tilesets.json",
+    "before": "18d1154c95f9553d8c611f7da5519c6d919e1a09feb3ed9af8398a917f848c11",
+    "after": "18d1154c95f9553d8c611f7da5519c6d919e1a09feb3ed9af8398a917f848c11",
+    "byteIdentical": true,
+    "sameData": true
+  },
+  {
+    "file": "data/MapInfos.json",
+    "before": "1e8aca2dac141497bbe899dd04dd2665a13d9e9a7306bb8bd5464437629190b5",
+    "after": "1e8aca2dac141497bbe899dd04dd2665a13d9e9a7306bb8bd5464437629190b5",
+    "byteIdentical": true,
+    "sameData": true
+  },
+  {
+    "file": "data/ArenaDungeon.json",
+    "before": "f626234b3481f13a558ac6cdde458f80fe29d362ad11e8926dd75ee5aa07b002",
+    "after": "f626234b3481f13a558ac6cdde458f80fe29d362ad11e8926dd75ee5aa07b002",
+    "byteIdentical": true,
+    "sameData": true
+  },
+  {
+    "file": "data/ArenaEncounters.json",
+    "before": "b38eb2d2ee8d5b24b7c8521aa73ab575041fc29a0718c3895eeeef0fb76dce7b",
+    "after": "b38eb2d2ee8d5b24b7c8521aa73ab575041fc29a0718c3895eeeef0fb76dce7b",
+    "byteIdentical": true,
+    "sameData": true
+  },
+  {
+    "file": "img/tilesets/Arena_Dungeon_M14_R03.png",
+    "before": "9e6cf57861546812ed03e518b2e2715a4eafd53c4e9713768d95e46cea7a8e9a",
+    "after": "9e6cf57861546812ed03e518b2e2715a4eafd53c4e9713768d95e46cea7a8e9a",
+    "byteIdentical": true
+  },
+  {
+    "file": "img/tilesets/Arena_Water_M14_R02_A1.png",
+    "before": "9169e7d999e9d1e880cc76b2a705815b91b3f00b9a874dd031c5e421a0078de4",
+    "after": "9169e7d999e9d1e880cc76b2a705815b91b3f00b9a874dd031c5e421a0078de4",
+    "byteIdentical": true
+  }
+]

@@ -1,3 +1,7 @@
+## Vigência R02
+
+Textos executados: seção Texto vigente — M01-18 R02 ao final deste documento. Introdução/Ria anteriores são histórico. Ver REVISAO_INTEGRACAO_M01_18_R02.md e LOCALIZACAO_E_GLOSSARIO.md para mudanças e fontes.
+
 ## Integração M01-18
 
 M01-18 confirma R01–R07 no recurso original TEMPLATE.DAT#1400 e integra I01–I05/Ria/diário/F01; textos pt-BR desta especificação preservados. HISTORY.IMG possui um contexto de guardião/aniversário17 não confirmado como sequência ativa da edição, registrado sem impor idade. INTRO.FLC não foi reproduzido com sucesso. NARRATIVA_M01_18.md separa fonte primária, transcrição complementar e adaptações. Ria R02 aprovada é reutilizada somente na visão do sonho.
@@ -112,3 +116,36 @@ M01-14 verificou START.MIF/START.INF locais e planta wiki. Coordenadas textuais 
 ## Integração M01-16
 
 J10–J40 usados no diário; eventos reais de fonte/porta/Gate e tesouros pelo ledger implementados, mantendo coordenadas verificadas M01-14. Consumo irreversível e fonte recuperável conforme esta especificação. Bootstrap técnico na entrada da dungeon até M01-18 chamar begin após Ria; não há introdução/F01/cidade ou pergunta de proteção de cópia nesta feature. QUESTS_M01_16.md separa confirmação documental, adaptações, proxy provisório de tesouros, migração e evidências. Rotas de patrulha vigentes são as M01-15 documentadas, não a proposta inicial de60quadros acima.
+
+
+## Texto vigente — M01-18 R02
+
+Revisão de integração28/10/2026: os blocos anteriores R01–R07 são históricos. O conteúdo foi repartido em R01–R09; chave visível/plataforma e explicação do Shift Gate seguem as evidências em REVISAO_INTEGRACAO_M01_18_R02.md. Nomes próprios seguem LOCALIZACAO_E_GLOSSARIO.md.
+
+**I01.** Durante séculos, facções travaram pequenas guerras e disputas de fronteira. Em 2E 896, Tiber Septim derrotou seus adversários, tomou o poder e proclamou-se Imperador. Mas os anos amargos de guerra deixaram suas marcas.
+
+**I02.** Tamriel, “Beleza da Aurora” na língua élfica, tornou-se um nome raro nos lábios aflitos. Onde vida e morte eram lados de uma moeda lançada a cada dia, o povo passou a chamar sua terra de sofrimento de Arena.
+
+**I03.** Agora, uma nova ameaça surge. Enquanto o Imperador Uriel Septim VII celebra seu quadragésimo terceiro aniversário, corações invejosos cobiçam o trono e tramam sua queda. Dizem que a esperança voa nas asas da morte. Prepare-se: como previram os Pergaminhos Ancestrais, sua aventura começa aqui.
+
+**I04.** O Imperador e Talin, líder da Guarda Imperial, atendem ao chamado do Mago de Batalha Jagar Tharn, que anuncia rumores de traição. O Imperador é traído e transportado para uma dimensão escolhida por Tharn. Após meses de preparação, o usurpador toma o trono.
+
+**I05.** Ria Silmane, antiga aprendiz de Tharn, é capturada antes de alertar o Conselho dos Anciões. Manipulando a essência da magia, Tharn assume a aparência do verdadeiro Imperador e transforma seus servos em cópias distorcidas da Guarda Imperial.
+
+**R01.** Não tema, sou eu, Ria Silmane. {nome}, escute: não resta mais ninguém para continuar esta luta. Deixaram você nesta cela para morrer.
+
+**R02.** Jagar Tharn, Mago de Batalha Imperial de Tamriel, assumiu a aparência do verdadeiro Imperador. Ele não considera você uma ameaça, por ocupar apenas um pequeno lugar na Corte Imperial. Nessa arrogância, cometeu seu primeiro erro.
+
+**R03.** Olhe para a parede norte desta cela. Há uma chave de rubi visível sobre a plataforma junto à parede. Ela abrirá a porta. Pegue-a e fuja.
+
+**R04.** Tharn usava estas passagens para esconder tesouros roubados dos cofres do Imperador. Se quiser, poderá reunir o suficiente para se sustentar longe da sede imperial. Cuidado: muitas criaturas vivem agora nos esgotos, ratos repugnantes e goblins.
+
+**R05.** Para mim é tarde demais, pois já estou morta. Somente meus poderes de feiticeira me mantêm entre esta vida e a próxima. Mas esse poder está se esvaindo. Não sucumba à ganância, ou estes túneis também poderão se tornar seu último repouso.
+
+**R06.** Ainda consigo exercer minha magia até certo ponto. Se seguir para oeste a partir desta cela e depois para sul, encontrará um Shift Gate, um portal mágico de transporte. Ele levará você para longe o bastante do centro do Império para ficar em segurança. Se sobreviver a estes esgotos, voltará a me ver.
+
+**R07.** Lembre-se, {nome}: Tharn assumiu a aparência do Imperador. Ninguém contestará a palavra dele pela sua. Voltarei a você em seus sonhos; por isso é essencial repousar de tempos em tempos. Assim poderei me comunicar e oferecer ajuda.
+
+**R08.** Você está entrando em uma arena perigosa, meu amigo, na qual os participantes são seres além da sua compreensão mortal. Não invejo seu papel. Há, porém, um poder dentro de você que ainda não foi despertado.
+
+**R09.** Procure por mim quando tiver adquirido experiência no mundo. Você é minha última e melhor esperança.

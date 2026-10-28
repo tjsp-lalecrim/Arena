@@ -53,3 +53,7 @@ Recortes de revisão, linhas e rótulos pertencem somente às pranchas. Prompts 
 ## Aprovação do mapa e ressalva futura — 27/10/2026
 
 Resultado visual/estrutura da R03 no estado disponívelb194b44 aprovados pelo responsável. Não regenerar os assets aprovados nesta rodada. Portas laterais têm orientação e formato corretos; futuramente avaliar espessura aparente, contraste e legibilidade, preservando âncoras, moldura, animação, projeção e colisão. Sem mudança implementada. A ressalva não bloqueia o próximo backlog; a pendência de autoria no editor é separada. Evidência/escopo em APROVACAO_MAPA_M01_14.md.
+
+## Integração R02
+
+O Shift Gate mantém seus tiles de parede e arte; a ativação cobre o piso de aproximação3×2, sem abrir colisão nas paredes. Contatos são acrescentados sem renumerar fontes existentes e são reconstruídos em saves antigos. Não usar through no jogador para contornar acesso. Ratos/goblins usam imagens nativas de caminhada, pés/pivôs independentes da área de colisão. As ressalvas de legibilidade das portas laterais e a investigação de custos originais da natação continuam futuras; Vigor aquático permanece inalterado.

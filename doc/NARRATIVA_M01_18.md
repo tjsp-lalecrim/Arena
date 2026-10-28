@@ -1,3 +1,7 @@
+## Revisão vigente M01-18 R02 — 28/10/2026
+
+Mesma feature/m01-narrativa-demo, base0a0106e; sem merge ou início de M01-19. Revisão de integração:14 momentos ilustrados sem protagonista, entrada direta na cela, tesouros desaparecem por recibo e têm mínimo configurável5 ouro quando o sorteio não entrega nada, área de contato do Gate3×2 com migração de eventos antigos, caminhada nativa para16 identidades e ratos/goblins, arma em planos por pose. Localização em LOCALIZACAO_E_GLOSSARIO.md; Imperial Dungeons permanece no original no mapa/diário/árvore. Campos, fontes, prompts, versões, testes e limitações em REVISAO_INTEGRACAO_M01_18_R02.md e evidencias/m01-18-r02. Novas imagens/fluidez aguardam avaliação do responsável; autoria desta revisão no MV e Galaxy A56 físico não foram executados. Retratos/batalhas aprovados, bônus, recursos, loot de inimigos e melhorias futuras preservados. REF02 foi atendido tecnicamente por este pedido específico; sua avaliação integrada permanece M01-19. Registros anteriores são históricos quando divergirem.
+
 # M01-18 — introdução, sonho de Ria e fim da demo (28/10/2026)
 
 Feature/m01-narrativa-demo, criada de develop a9d8cc0 após integração/publicação de M01-17. Numeração inalterada: corresponde ao item18 do BACKLOG_M01.md. Implementação para revisão, sem merge em develop/main, sem release ou avanço M01-19. M01-17 foi fechado tecnicamente com aprovação manual das poções separada da regressão **automática** de descanso; ver evidencias/m01-17-fechamento. Não atribuir teste manual de cama ao responsável.

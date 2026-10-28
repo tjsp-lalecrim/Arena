@@ -154,3 +154,10 @@ validate-quests.cjs cobre núcleo/contratos/UTF8/formato canônico27/plugins ant
 ## NAV01 e diário M01-16 R02
 
 DIRETIVA_DE_NAVEGACAO.md é critério permanente de validação dos menus. Para o diário, executar validate-journal.cjs e test-journal.cjs; fixtures de muitas quests/textos/estados somente em contexto descartável/save21, sem fictícias na campanha. Testar filtros vazio/pendente/concluído/todas, seleção/leitura preservadas, estado após carregar, roda no painel correto, foco, retorno e painéis ocultos; 816×624,640×480 e Android genérico916×412 emulado. Roteiros/evidências em REVISAO_DIARIO_M01_16_R02.md. Emulação não substitui Galaxy A56 físico.
+
+
+## Roteiro vigente M01-18 R02
+
+Seguir REVISAO_INTEGRACAO_M01_18_R02.md. A introdução agora tem14 momentos ilustrados e não oferece Salvar/Entrar como etapa intermediária: terminar o texto entra na cela. Saves de introdução anteriores continuam carregáveis; novos testes usam fixture isolada para esse contrato, não um botão visível inexistente. Mapa na árvore: Map008 / M01-14 Imperial Dungeons; acesso técnico Explorar Imperial Dungeons (antigo Explorar Dungeon).
+
+Executáveis: validate-narrative.cjs, test-narrative.cjs, test-narrative-small-r02.cjs, test-integration-r02.cjs, test-walk-r02.cjs, test-weapon-planes-r02.cjs. Regressões de quests/encontros/criação/persistência/aparência preservadas. Saídas novas em evidencias/m01-18-r02; usar pastas diferentes para suítes que gravam resultado.json. Teste de derrota de encontros fixa RNG0,5 no turno controlado, evitando confundir erro/esquiva aleatórios com falha do game over; não muda valores jogáveis.

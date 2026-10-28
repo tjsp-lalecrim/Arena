@@ -60,3 +60,8 @@ Verificação estática:22 plugins,20 anteriores preservados, formato canônico 
 ## Fechamento M01-13 — 26/10/2026
 
 Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar versão própria/dispositivo ou casos adicionais. Destaque visual de raros é melhoria futura, não implementada. Aprovação limitada ao menu; critérios funcionais revisados separadamente:11 cenários MV,24 matrizes, reservas/save/load/quest/derrota/abort/rollback e regressões registrados em evidencias/m01-13. Validador estático reexecutado neste fechamento; não alegar reexecução de todas as suítes. M01-13 concluído tecnicamente, com economia provisória e testes editor/A56 ainda separados. Integração/publicação em develop autorizadas; sem main/release.
+
+
+## Correção de integração M01-18 R02
+
+Tesouros de mapa somem após settlement por recibo persistente, inclusive ao retornar/carregar. Piso opcional5 ouro em ArenaQuests somente quando o sorteio não contém quantidade positiva; configuração provisória para a tabela atual. Sem piso para inimigos, sem segundo equipamento, sem alteração da raridade. Capacidade cheia mantém reserva; recibos antigos não são sorteados de novo. Itens importantes seguem recuperação independente. Ver REVISAO_INTEGRACAO_M01_18_R02.md e evidências próprias.

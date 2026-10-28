@@ -272,3 +272,11 @@ DIRETIVA_DE_MAPAS.md consolida as regras verificáveis e prevalece sobre as simp
 ## Aprovação do mapa e ressalva futura — 27/10/2026
 
 Resultado visual/estrutura da R03 no estado disponívelb194b44 aprovados pelo responsável. Não regenerar os assets aprovados nesta rodada. Portas laterais têm orientação e formato corretos; futuramente avaliar espessura aparente, contraste e legibilidade, preservando âncoras, moldura, animação, projeção e colisão. Sem mudança implementada. A ressalva não bloqueia o próximo backlog; a pendência de autoria no editor é separada. Evidência/escopo em APROVACAO_MAPA_M01_14.md.
+
+## Integração M01-18 R02 — convenções de caminhada e narrativa
+
+Retratos mantêm a diretiva de pose/anatomia existente; não aplicar suas orientações à exploração. Folhas de exploração usam baixo/esquerda/direita/cima, com repouso na coluna central e passos articulados nas pontas. Não apresentar deslocamento de figura estática como caminhada. Documentar arquivo/célula, margens, tamanho efetivo da figura e pivô separadamente. R02 usa células64×64 com altura nominal56 para15 personagens; a Bretã feminina aprovada mantém48×64. Apoio nominal62, sem deformar corpo ou comprimir focinhos/orelhas/caudas.
+
+A montagem pode refletir uma pose bilateral compatível para uma fase oposta ou orientação; registrar quais células, conferir roupas, luz e mão da arma. Isso não corrige torção anatômica nem autoriza espelhar retratos indiscriminadamente. Rato possui compensação vertical norte10px, baseada nas patas/ground52, evitando ancoragem pela ponta da cauda. Animações de batalha aprovadas permanecem byte a byte.
+
+Ilustrações narrativas: sem protagonista, mãos, braços, silhuetas/reflexos que fixem sua raça/gênero/equipamento. Ria é NPC identificada. Cada momento possui imagem e texto próprios; preservar proporção, margens e legibilidade. Registrar objetos/arquitetura/heráldica interpretados, sem apresentá-los como informação visual confirmada do original. Novas imagens R02 são candidatas à avaliação, não referências automaticamente aprovadas. Prompts, arquivos, estudos não selecionados, recortes e referências efetivamente fornecidas: arte/m01-integracao-r02/.

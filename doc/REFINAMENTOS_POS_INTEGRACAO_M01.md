@@ -15,3 +15,8 @@ Não implementadas nesta rodada. Este registro concentra as melhorias solicitada
 Preservar também as pendências anteriores de paleta, acesso/uso de itens e design da confirmação, destaque de raros, legibilidade das portas laterais e pesquisa da natação. REF01 não implementa essas outras melhorias por associação. Custos aquáticos continuam sem alteração, sujeitos a decisão explícita. Galaxy A56 físico permanece M01-19, sem alegar teste executado.
 
 M01-17 atende apenas ao uso direto das três poções existentes, dentro do escopo de recuperação. A revisão ampla de acesso a outros itens, paleta e design da confirmação continua futura; REF01(favoritos/atalhos) e REF06(notificações) permanecem sem implementação nesta rodada.
+
+
+## Atualização REF02 — pedido explícito de revisão M01-18 R02
+
+Caminhada nativa de ratos/goblins implementada e testada nesta revisão específica de integração, sem iniciar formalmente M01-19. Artes de batalha preservadas. Cobertura, arquivos, escala/pivôs e evidências em REVISAO_INTEGRACAO_M01_18_R02.md. Mantém-se para M01-19 a avaliação integrada do responsável e refinamentos que ela identificar; não duplicar um novo item de caminhada. REF01/03/04/05/06 e ressalvas anteriores continuam futuros, sem implementação nesta rodada.

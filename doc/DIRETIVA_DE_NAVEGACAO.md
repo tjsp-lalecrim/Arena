@@ -22,3 +22,8 @@ Informações já visíveis no menu não devem ser repetidas em mensagens sem ne
 Alterações de Vida, Mana e Vigor devem priorizar feedback visual nas barras correspondentes. Se já estiverem visíveis, não duplicar a mesma recuperação em mensagem/popup/outro painel. Usar popup compacto e breve com ícone/barra somente se o contexto não comportar barras visíveis. Não duplicar o feedback de combate existente.
 
 Estado real e quantidades atualizam imediatamente. Transições curtas de preenchimento são exclusivamente apresentação, sem bloquear entradas, atrasar consumo ou escrever valores no personagem. Usos consecutivos devem redirecionar a apresentação ao estado atual, respeitando o máximo; callbacks/animações antigas nunca podem restaurar alvos obsoletos. Ao reabrir/carregar, reconstruir a apresentação dos dados atuais. Priorizar composição dentro dos painéis existentes, mantendo rótulos/valores e evitando fontes menores, cortes e sobreposições.
+
+
+## Narrativa M01-18 R02
+
+A imagem ocupa área maior com texto paginado e controles visíveis por foco/clique/toque. Não depender de hover. Soltar e pressionar novamente para avançar; a entrada no mapa também limpa destino e aguarda neutralização. Última página entra diretamente na dungeon, sem menu intermediário de salvar/confirmar entrada. Salvar continua no fluxo normal posterior. Botões Voltar/Continuar conservam áreas de toque44px e foco por teclado. Textos e imagens contidos sem sobreposição em640×480/916×412 emulados; isso não substitui o teste físico.
