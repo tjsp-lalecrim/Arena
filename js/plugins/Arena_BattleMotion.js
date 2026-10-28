@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.4.0 Movimentos desenhados, armas separadas e impacto nativo.
+ * @plugindesc v0.4.1 Movimentos desenhados, armas separadas e impacto nativo.
  * @author Codex
  * @help Após Arena_Battle e MV_MotionTimeline. Sem dependências externas.
  * ArenaBattleMotion.json: cobertura explícita, frames/tempos/apoios/armas.
@@ -20,16 +20,30 @@ var ArenaBattleMotion;
         s._arenaTimeline={key:key,tick:0,released:!action,action:!!action};
     }
     function currentWeapon(b){return b.isActor()&&b.weapons()[0]||null;}
-    function updateWeapon(s,p,frame){
+    function updateWeapon(s,p,frame,motion,index){
         if(!s._battler.isActor())return;
         if(!s._arenaHeldWeapon){s._arenaHeldWeapon=new Sprite();s.addChildAt(s._arenaHeldWeapon,s.getChildIndex(s._mainSprite));}
-        var node=s._arenaHeldWeapon,w=currentWeapon(s._battler),spec=w&&$arenaBattleMotion.weapons[String(w.wtypeId)],hand=frame.hand;
+        var node=s._arenaHeldWeapon,w=currentWeapon(s._battler),spec=w&&$arenaBattleMotion.weapons[String(w.wtypeId)];
+        // Opt-in authored corrections: identity -> exact weapon ID -> motion -> frame.
+        var poses=$arenaBattleMotion.weaponPoses,identity=ArenaPersistence.identity().baseVisualId;
+        var overrides=poses&&poses[identity]&&w&&poses[identity][String(w.id)];
+        var pose=overrides&&overrides[motion]&&overrides[motion][index],hand=pose?pose.hand:frame.hand;
+        if(s._arenaGripCover)s._arenaGripCover.visible=false;
         node.visible=!!(spec&&hand);s._arenaVisibleWeapon=node.visible?w.id:null;
         if(!node.visible){node.bitmap=null;return;}
-        if(frame.weaponLayer!=='front'&&frame.weaponLayer!=='back')throw Error('Arena: plano da arma ausente na pose.');
-        if(node._arenaPlane!==frame.weaponLayer){s.removeChild(node);s.addChildAt(node,s.getChildIndex(s._mainSprite)+(frame.weaponLayer==='front'?1:0));node._arenaPlane=frame.weaponLayer;}
+        var plane=pose?pose.weaponLayer:frame.weaponLayer;
+        if(plane!=='front'&&plane!=='back')throw Error('Arena: plano da arma ausente na pose.');
+        if(node._arenaPlane!==plane){s.removeChild(node);s.addChildAt(node,s.getChildIndex(s._mainSprite)+(plane==='front'?1:0));node._arenaPlane=plane;}
         node.bitmap=ImageManager.loadPicture(spec.file);node.anchor.set(spec.grip[0]/spec.size[0],spec.grip[1]/spec.size[1]);
         node.x=hand[0]-p.cell[0]/2;node.y=hand[1]-p.cell[1];node.rotation=hand[2]*Math.PI/180;
+        if(pose&&pose.gripCover){
+            // Reuse the displayed body texture, including equipped-armour appearance.
+            // Only the fist covers the hilt; the blade keeps its authored body plane.
+            var cover=s._arenaGripCover;if(!cover){cover=s._arenaGripCover=new Sprite();s.addChild(cover);}
+            var r=pose.gripCover;cover.bitmap=s._mainSprite.bitmap;
+            cover.setFrame(frame.rect[0]+r[0],frame.rect[1]+r[1],r[2],r[3]);
+            cover.x=r[0]-p.cell[0]/2;cover.y=r[1]-p.cell[1];cover.visible=true;
+        }
     }
     function update(s,body){
         var p=profile(s._battler);if(!p)return false;
@@ -37,7 +51,7 @@ var ArenaBattleMotion;
         var t=s._arenaTimeline,m=p.motions[t.key],v=MVMotionTimeline.sample(m,t.tick);
         if(s._battler.isDead()&&t.key!=='defeat'){play(s,'defeat',false);t=s._arenaTimeline;m=p.motions.defeat;v=MVMotionTimeline.sample(m,0);}
         else if(v.done&&t.key!=='defeat'){play(s,'idle',false);t=s._arenaTimeline;m=p.motions.idle;v=MVMotionTimeline.sample(m,0);}
-        body.setFrame.apply(body,v.frame.rect);updateWeapon(s,p,v.frame);
+        body.setFrame.apply(body,v.frame.rect);updateWeapon(s,p,v.frame,t.key,v.index);
         s._arenaState=t.key==='idle'?'wait':t.key==='hurt'||t.key==='defeat'?t.key:'action';s._arenaFrame=v.index;
         s._arenaMotionSample={key:t.key,index:v.index,tick:t.tick,total:v.total,done:v.done,impactTick:MVMotionTimeline.impactTick(m),released:t.released,weaponId:s._arenaVisibleWeapon||null};
         t.tick=MVMotionTimeline.advance(m,t.tick,t.released);return true;

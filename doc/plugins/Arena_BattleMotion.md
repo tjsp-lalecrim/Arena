@@ -1,3 +1,15 @@
+## Encaixe focal R01 — v0.4.1, 28/10/2026
+
+Cobertura exclusiva: `breton.female.base`, arma2 (espada curta), movimento `heavy`/skill8 (Estocada pesada). Sem arte nova, mudanças de tempos/impacto/dano/custo ou correção em lote. `weaponPoses[baseVisualId][weaponId][motion][frame]`, opcional na raiz de ArenaBattleMotion.json, define `hand[x,y,graus]`, `weaponLayer` e `gripCover[x,y,w,h]` local à célula. Sem registro, preserva os apoios anteriores. A chave é ID exato da arma, não todo seu tipo.
+
+Reprodução: o apoio do golpe ficava5px lateralmente fora da mão e o retorno apontava a lâmina através do tronco. Corrigidos apoios/ângulos apenas nesse recorte. Na preparação, espada inteira atrás do corpo prejudicava a leitura; agora o plano da lâmina e a oclusão local da pega são separados. `gripCover` recompõe os pixels existentes da mão por cima do cabo; usa a mesma textura/quadro do corpo, inclusive material de armadura. Não altera PNG nem desenha dedos novos. Arena_BattleUI espelha também esse recorte, junto do corpo/arma. O recorte desaparece nas poses não configuradas. Âncora/escala da espada permanecem as existentes; não há interpolação independente que atrase a arma em relação ao quadro corporal.
+
+Fonte de configuração: a raiz `weaponPoses` é autoria persistente em ArenaBattleMotion.json. build-battle-motion-r02.py e build-battle-expansion-r03.py leem a configuração existente e preservam essa raiz ao reconstruir os perfis; nenhum asset foi regenerado nesta tarefa. Não transferir estes apoios para outras identidades/armas sem inspeção própria.
+
+Validação focal: Chrome156, batalha nativa, armazenamento isolado; uma Estocada pesada antes/depois, seis poses/tempos, espelhamento, pega/planos, repouso e recorte escondido ao retornar.37 dano/12 Vigor/uma ação/um efeito nos dois cenários determinísticos (variância0, aleatório0,5 e rato500HP somente no teste, sem balanceamento). Configuração sem weaponPoses idêntica à base efffa97. Não executada bateria ampla, editor ou smartphone. Aprovação estética da correção ainda pendente; REF09 não encerrada para toda a biblioteca.
+
+Para avaliar: Combate técnico → Bretã feminina → equipar Espada curta → Técnicas/Estocada pesada contra rato. Vídeo normal, comparação e resultados em evidencias/arma-piloto-r01/. `node tools/test-weapon-grip-focused.cjs` verifica somente esse recorte; ARENA_GRIP_PHASE=before serve os três arquivos históricos de efffa97 no navegador isolado, sem alterar o checkout. Registro antigo abaixo é histórico quando divergente.
+
 # Arena_BattleMotion0.3.0 — cobertura M01-10 R03
 
 Plugin próprio sem dependências externas; mesma ordem após Arena_Battle e MV_MotionTimeline, sem parâmetros/comandos novos. data/ArenaBattleMotion.json cobre16 identidades e inimigos1/2/3. Perfil de inimigo aceita actionMotion: goblin strike, homem-lagarto bite. Ausência usa bite para o rato R02 preservado; setup valida o movimento exigido, sem fallback estático. Não modifica useItem, fórmulas, custos ou persistência. Movimento atual continua transitório no Sprite, aparência reconstruída da identidade/equipamento ao carregar.

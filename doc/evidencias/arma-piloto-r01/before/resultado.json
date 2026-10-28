@@ -1,0 +1,290 @@
+{
+  "browser": "156.0.8078.73",
+  "scope": "Native skill8 only; normal speed; isolated browser storage and deterministic random/variance/enemyHP fixtures; no personal saves",
+  "editor": "not executed",
+  "physicalPhone": "not executed",
+  "result": {
+    "frames": {
+      "0": {
+        "sample": {
+          "key": "heavy",
+          "index": 0,
+          "tick": 0,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 2
+        },
+        "actor": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "anchor": [
+          0.5,
+          0.83
+        ],
+        "bodyScale": [
+          -1,
+          1
+        ],
+        "plane": "front"
+      },
+      "1": {
+        "sample": {
+          "key": "heavy",
+          "index": 1,
+          "tick": 5,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 2
+        },
+        "actor": [
+          160,
+          388
+        ],
+        "weapon": [
+          -11,
+          -96,
+          0.17453292519943295,
+          -1,
+          1
+        ],
+        "anchor": [
+          0.5,
+          0.83
+        ],
+        "bodyScale": [
+          -1,
+          1
+        ],
+        "plane": "front"
+      },
+      "2": {
+        "sample": {
+          "key": "heavy",
+          "index": 2,
+          "tick": 13,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 2
+        },
+        "actor": [
+          160,
+          388
+        ],
+        "weapon": [
+          -13,
+          -90,
+          0.4363323129985824,
+          -1,
+          1
+        ],
+        "anchor": [
+          0.5,
+          0.83
+        ],
+        "bodyScale": [
+          -1,
+          1
+        ],
+        "plane": "back"
+      },
+      "3": {
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 2
+        },
+        "actor": [
+          160,
+          388
+        ],
+        "weapon": [
+          26,
+          -38,
+          2.007128639793479,
+          -1,
+          1
+        ],
+        "anchor": [
+          0.5,
+          0.83
+        ],
+        "bodyScale": [
+          -1,
+          1
+        ],
+        "plane": "front"
+      },
+      "4": {
+        "sample": {
+          "key": "heavy",
+          "index": 4,
+          "tick": 25,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": true,
+          "weaponId": 2
+        },
+        "actor": [
+          160,
+          388
+        ],
+        "weapon": [
+          -13,
+          -62,
+          1.1344640137963142,
+          -1,
+          1
+        ],
+        "anchor": [
+          0.5,
+          0.83
+        ],
+        "bodyScale": [
+          -1,
+          1
+        ],
+        "plane": "front"
+      },
+      "5": {
+        "sample": {
+          "key": "heavy",
+          "index": 5,
+          "tick": 32,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": true,
+          "weaponId": 2
+        },
+        "actor": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "anchor": [
+          0.5,
+          0.83
+        ],
+        "bodyScale": [
+          -1,
+          1
+        ],
+        "plane": "front"
+      }
+    },
+    "uses": [
+      8
+    ],
+    "effects": [
+      {
+        "skill": 8,
+        "damage": 37,
+        "missed": false,
+        "evaded": false
+      }
+    ],
+    "before": {
+      "resources": {
+        "hp": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 100,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "enemyHp": 500
+    },
+    "home": [
+      160,
+      388
+    ],
+    "returned": true,
+    "after": {
+      "resources": {
+        "hp": {
+          "current": 95,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 50,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 88,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      },
+      "enemyHp": 463
+    },
+    "identity": {
+      "actorId": 1,
+      "raceId": "breton",
+      "genderId": "female",
+      "baseVisualId": "breton.female.base",
+      "name": "Piloto"
+    },
+    "weapon": 2,
+    "skill": "Estocada pesada — espada"
+  },
+  "errors": []
+}

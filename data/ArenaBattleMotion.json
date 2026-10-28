@@ -10568,5 +10568,97 @@
         56
       ]
     }
+  },
+  "weaponPoses": {
+    "breton.female.base": {
+      "2": {
+        "heavy": [
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          },
+          {
+            "hand": [
+              74,
+              16,
+              -25
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              70,
+              12,
+              9,
+              9
+            ]
+          },
+          {
+            "hand": [
+              74,
+              21,
+              -25
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              70,
+              18,
+              9,
+              7
+            ]
+          },
+          {
+            "hand": [
+              33,
+              73,
+              -115
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              29,
+              69,
+              10,
+              9
+            ]
+          },
+          {
+            "hand": [
+              74,
+              48,
+              -210
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              71,
+              45,
+              8,
+              7
+            ]
+          },
+          {
+            "hand": [
+              58,
+              46,
+              -35
+            ],
+            "weaponLayer": "front",
+            "gripCover": [
+              54,
+              42,
+              8,
+              10
+            ]
+          }
+        ]
+      }
+    }
   }
 }

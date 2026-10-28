@@ -45,3 +45,7 @@ Validar dimensões/estados/imagens em816×624 e640×480, mouse/toque emulado e r
 ## Reuso por M01-12
 
 Exportação aditiva ArenaBattleUI.theme(window) aplica o acabamento às janelas próprias de inventário/equipamentos. Nenhuma outra alteração no fluxo/consumo/disposição da batalha. Os18 registros anteriores permanecem iguais; os dois plugins de M01-12 são acrescentados depois. Regressão nativa da interface preservada.
+
+## Encaixe focal R01 — 28/10/2026
+
+O espelhamento do jogador inclui o recorte opcional `_arenaGripCover` produzido por Arena_BattleMotion0.4.1. Somente os apoios configurados para Bretã feminina/espada curta/Estocada pesada o utilizam; não altera comandos, custos, posição de batalha ou outras combinações. Contrato e evidência em [Arena_BattleMotion.md](Arena_BattleMotion.md).
