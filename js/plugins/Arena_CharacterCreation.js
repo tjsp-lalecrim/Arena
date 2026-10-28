@@ -220,7 +220,8 @@ var Scene_ArenaCharacterCreation;
                 bitmap.addLoadListener(function() { if (sprite.bitmap === bitmap) sprite.setFrame.apply(sprite, rect); });
             }
             frame(this._face, ImageManager.loadFace(v.face), [0, 0, 144, 144]);
-            frame(this._mapFigure, ImageManager.loadCharacter(v.character), [48, 0, 48, 64]);
+            var cell=v.mapCell||[48,64];this._mapFigure.x=210-cell[0]/2;
+            frame(this._mapFigure, ImageManager.loadCharacter(v.character), [cell[0], 0, cell[0], cell[1]]);
             frame(this._side, ImageManager.loadPicture(v.sidePicture), [0, 0, 96, 96]);
         }
     };

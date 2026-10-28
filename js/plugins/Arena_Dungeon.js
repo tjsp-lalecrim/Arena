@@ -84,11 +84,11 @@ var ArenaDungeon;
   this._arenaRipple.visible=ArenaDungeon.isSwimming();if(this._arenaRipple.visible){this._arenaRipple.setFrame(Math.floor(Graphics.frameCount/18)%3*96,0,96,32);this._arenaRipple.y=-2;if(this._lowerBody)this._lowerBody.opacity=35;}
  };
  var commands=Window_TitleCommand.prototype.makeCommandList;
- Window_TitleCommand.prototype.makeCommandList=function(){commands.apply(this,arguments);this.addCommand('Explorar dungeon','arenaDungeon');};
+ Window_TitleCommand.prototype.makeCommandList=function(){commands.apply(this,arguments);this.addCommand('Explorar Imperial Dungeons','arenaDungeon');};
  var create=Scene_Title.prototype.createCommandWindow;
  Scene_Title.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaDungeon',function(){ArenaDungeon.startLab();});};
  var menu=Window_MenuCommand.prototype.addOriginalCommands;
- Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if($gameMap.mapId()===$arenaDungeon.mapId)this.addCommand('Voltar ao laboratório','arenaDungeonExit');else if($gameMap.mapId()===$arenaDungeon.laboratory.mapId)this.addCommand('Explorar dungeon','arenaDungeonEnter');};
+ Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if($gameMap.mapId()===$arenaDungeon.mapId)this.addCommand('Voltar ao laboratório','arenaDungeonExit');else if($gameMap.mapId()===$arenaDungeon.laboratory.mapId)this.addCommand('Explorar Imperial Dungeons','arenaDungeonEnter');};
  var menuCreate=Scene_Menu.prototype.createCommandWindow;
  Scene_Menu.prototype.createCommandWindow=function(){menuCreate.apply(this,arguments);this._commandWindow.setHandler('arenaDungeonExit',function(){ArenaDungeon.leave();});this._commandWindow.setHandler('arenaDungeonEnter',function(){ArenaDungeon.enter();});};
 })();

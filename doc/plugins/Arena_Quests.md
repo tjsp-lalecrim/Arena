@@ -11,3 +11,8 @@ Estado usa quests/sources existentes do namespace arena v1 e arenaLoot v1 para c
 Aliases: Game_Party.gainItem (somente chave1), Scene_Map.start (bootstrap/migração/reconciliação), Game_Player.checkEventTriggerThere (fonte da chave imediatamente à frente), menu (Diário); wrappers das APIs ArenaDungeon.setDoor/inspectTreasure. Demais portas, inventário comum, ações de combate, armas, raça e gênero preservados.
 
 O bootstrap sem cena narrativa é técnico; M01-18 deverá iniciar pelo ponto correto de Ria usando begin e integrar F01 ao final. `reachGate()` já é idempotente e não deve ganhar um segundo consumidor de itens/recompensas. Detalhes de migração, textos, fontes, testes e limites em `../QUESTS_M01_16.md`.
+
+
+## R02 vigente — v0.2
+
+Configuração adiciona treasureMinimumGold5 e gateHalfWidth1/gateDepth2. Tesouro usa recibo estável para transparência; chave mantém fonte recuperável separada. Portal usa zona3×2 no piso de aproximação, contatos nativos236–240 e migração antes dos sprites em saves antigos. Retomar dentro da zona verifica conclusão elegível uma vez. Fonte/porta/etapas/recibo legítimo continuam necessários. Não concede recompensas de quest adicionais. Título visível Imperial Dungeons; IDs de persistência inalterados.

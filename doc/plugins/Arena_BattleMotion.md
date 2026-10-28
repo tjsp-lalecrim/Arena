@@ -19,3 +19,8 @@ Window_BattleLog.startAction reorganiza somente apresentação R02: mensagem nat
 API ArenaBattleMotion.profile(battler) consulta cobertura; sample(battler) lê key/index/tick/total/done/impactTick/released/weaponId. Estado no Sprite, sem serializar no ator/save; carregar reconstrói pela identidade/equipamento. Setup valida movimentos obrigatórios antes da batalha, sem fallback estático para movimento ausente. Arquivos ausentes continuam erro de carregamento.
 
 Testes/gravações em REVISAO_COMBATE_M01_10_R02.md. Editor/NW.js, Galaxy A56, manual e aprovação estética pendentes. Contra-ataque/reflexão e movimentos adicionais não declarados validados. Expansão para15 personagens/2 inimigos pendente; M01-10 aberto. Não é interface M01-11 ou plugin universal de combate; o núcleo puro separado é reutilizável.
+
+
+## R02 de integração — v0.4
+
+Frames com hand precisam declarar weaponLayer como front ou back. O sprite da arma muda de plano em relação a _mainSprite quando a pose exige, mantendo coordenadas de mão/pega/ângulo/tamanho e o espelhamento da disposição aprovada. Preparação leve1 e pesada2 usam back; demais apoios front. Poses sem hand recolhem a arma. Não aplica custos/dano. Todas16 identidades e ambas armas verificadas por sondagem de apoios; batalhas reais de Bretã/rato verificadas separadamente. Nenhuma imagem/temporização de batalha regenerada.

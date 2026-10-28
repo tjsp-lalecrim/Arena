@@ -13,3 +13,8 @@ Persistência: contracts `enemies/areas` de Arena_Persistence, sem novo namespac
 Apresentação: usa idle aprovado de ArenaBattleMotion em Sprite_Character, com ground e escala próprios. Perfis laterais no mapa são adaptação explícita, não caminhada superior de quatro direções. Animações e assets de batalha não são reescritos.
 
 Ver `../ENCONTROS_M01_15.md` para roteiro, fontes, testes, cobertura e pendências.
+
+
+## R02 vigente — v0.2
+
+mapVisuals[enemyId]: file($ folha única), cell[64,64], ground62, animationWait10. Rato acrescenta groundByDirection8=52 para compensar a cauda em10px. Cada evento usa imagem nativa por direção/padrão, walkAnime=true, stepAnime=false, scale1. Cadência percorre as três poses durante um passo em velocidade3; pausa mostra repouso. Sync também reconstrói imagens de saves antigos. Sem fallback para atlas de espera da batalha. Colisão, raio, intervalo90, encontros, loot e respawn preservados. Fonte de configuração/geração: build-encounters.cjs; arquivos e prompts em arte/m01-integracao-r02/.

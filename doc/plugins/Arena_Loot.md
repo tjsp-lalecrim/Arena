@@ -11,3 +11,8 @@ Resumo é apresentação transitória após mensagens nativas; seleção descrev
 A configuração atual tem3 inimigos e4 variantes raras de tipos existentes, valores provisórios. Fonte de chave não é drop normal; integração técnica de quest testada sem alterar campanha. Fonte/recuperação usa API já existente, não reinventa etapas. Ver LOOT_M01_13.md para roteiro e pendências editor/A56/balanceamento.
 
 M01-16 acrescenta claimContainer(id,table): sorteio puro existente seguido do mesmo settle atômico, token container/ID, zero EXP; repetição devolve o recibo sem sortear/conceder novamente. Não altera recompensas/tabelas de inimigos. A escolha do proxy provisório de tabela é do conteúdo MQ01, não do núcleo. Capacidade continua usando reservas existentes.
+
+
+## R02 vigente — v0.2
+
+claimContainer(id, table, minimumGold): terceiro argumento opcional inteiro positivo. Se fornecido e não houver quantidade positiva em rows, usa essa quantidade de ouro. Um resultado ouro0 também é vazio para essa finalidade. Não afeta BattleManager/sorteios de inimigos. Settlement, recibo único, limite de equipamento/raridade e reserva permanecem existentes. Recibo já resolvido não é recalculado. Garantia atual do mapa é5, provisória e configurada fora do plugin.

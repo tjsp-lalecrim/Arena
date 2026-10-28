@@ -1,0 +1,23 @@
+[
+  {
+    "id": "khajiit.male.base",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-d99966fc-8b7a-4540-b506-5f31f3fc8418.png",
+    "prompt": "Edite a folha de exploração fornecida do Khajiit masculino. Manter a MESMA identidade felina, pelagem castanha, roupa de prisioneiro bege/castanha, calças escuras e botas; acabamento dark fantasy pintado. Produza uma folha de animação real de caminhada com FUNDO TRANSPARENTE e 12 figuras inteiras, grade exata de 3 COLUNAS e 4 LINHAS, células iguais, sem legendas nem linhas. Linha1 voltado para BAIXO/de frente; linha2 para ESQUERDA; linha3 para DIREITA; linha4 para CIMA/de costas, conforme folha fornecida. Cada linha deve conter: coluna1 PASSO com perna esquerda adiantada e braços em contrafase, coluna2 REPOUSO pés juntos, coluna3 PASSO com perna direita adiantada e braços em contrafase. As pernas e braços precisam ARTICULAR, não basta deslocar ou repetir a mesma pose. Mesmo tamanho corporal, cabeça, roupa e ponto de apoio em todas as células; pés no mesmo nível relativo. Não confundir vista superior oblíqua de RPG com combate lateral. Não adicionar armas ou cenário. Não cortar orelhas, cauda, pés ou mãos. Margem transparente dentro de cada célula. Referência1 é a folha atual para identidade/direções; referência2 o estudo de identidade lateral, não copiar sua pose de luta. Canvas preferencial 768x1024, 3x4 células 256x256; cada figura humana ocupa aproximadamente180px de altura por célula. Nenhuma figura extra.",
+    "references": [
+      "img/characters/$Arena_khajiit_male_r02.png",
+      "img/pictures/Arena_khajiit_male_r02_side.png"
+    ],
+    "master": "art/masters/m01-integration-r02/walk-khajiit-male.png",
+    "target": "img/characters/$Arena_khajiit_male_walk_r02.png",
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "opposed": true,
+    "reflect": [],
+    "approval": "pending owner review"
+  }
+]

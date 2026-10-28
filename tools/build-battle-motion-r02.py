@@ -10,7 +10,7 @@ def load(name,count,cols):
 support=load('pilot-support',18,6);light=load('pilot-light',6,3);heavy=load('pilot-heavy',6,3);magic=load('pilot-magic-item',12,6);rats=load('rat',24,6)
 durations={'idle':[16,16,20,16,16,20],'light':[4,5,4,3,5,5],'heavy':[5,8,7,5,7,8],'cast':[5,7,7,5,6,6],'item':[5,6,6,8,6,5],'hurt':[3,5,6,5,4,5],'defeat':[6,7,8,7,8,12],'bite':[5,7,5,4,6,6]}
 groups=[('idle',support[:6],'pilot-support',88/(support[0][1][3]-support[0][1][1])),('light',light,'pilot-light',88/(light[0][1][3]-light[0][1][1])),('heavy',heavy,'pilot-heavy',88/(heavy[0][1][3]-heavy[0][1][1])),('cast',magic[:6],'pilot-magic-item',88/(magic[0][1][3]-magic[0][1][1])),('item',magic[6:],'pilot-magic-item',88/(magic[0][1][3]-magic[0][1][1])),('hurt',support[6:12],'pilot-support',88/(support[0][1][3]-support[0][1][1])),('defeat',support[12:],'pilot-support',88/(support[0][1][3]-support[0][1][1]))]
-config={'schemaVersion':1,'skillMotions':{str(i):('heavy' if i in [4,6,8] else 'light') for i in range(3,9)},'actors':{},'enemies':{},'weapons':{}}
+config=json.loads((R/'data/ArenaBattleMotion.json').read_text(encoding='utf8'))
 config['skillMotions'].update({'9':'cast','10':'cast'})
 records=[]
 hands=json.loads((R/'art/masters/combate-r02/hand-anchors.json').read_text(encoding='utf8'))
@@ -28,7 +28,9 @@ def pack(id,folder,file,cell,ground,groups):
    py=ground-body.height;assert px>=0 and py>0 and px+body.width<cell[0],(id,name,n,body.size,px,py)
    frame=Image.new('RGBA',cell);frame.alpha_composite(body,(px,py));sheet.alpha_composite(frame,(n*cell[0],row*cell[1]))
    frames.append({'rect':[n*cell[0],row*cell[1],*cell],'duration':durations[name][n]})
-   if folder=='sv_actors' and name in hands:frames[-1]['hand']=hands[name][n]
+   if folder=='sv_actors' and name in hands:
+    frames[-1]['hand']=hands[name][n]
+    frames[-1]['weaponLayer']='back' if (name=='light' and n==1) or (name=='heavy' and n==2) else 'front'
    records.append({'participant':id,'motion':name,'frame':n,'master':'art/masters/combate-r02/'+master+'.png','sourceRect':rect,'sourceAlphaBox':box,'densityScale':scale,'placement':[px,py],'alphaBox':frame.getbbox(),'sha256':hashlib.sha256(frame.tobytes()).hexdigest()})
   motions[name]={'frames':frames,'loop':name=='idle','impact':3 if name in ['light','heavy','cast','item','bite'] else None}
  path='img/'+folder+'/'+file+'.png';sheet.save(R/path)

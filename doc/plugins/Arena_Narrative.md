@@ -11,3 +11,8 @@ Integrações pontuais: commit da tela de criação delega ao fluxo narrativo (c
 Scene_ArenaNarrative usa Window_Base/Sprite nativos, tema existente e layout/paginação responsivos. Resolução original é restaurada ao sair. Input/escala/imagens não persistem; barreiras de entrada em Game_Temp. Ria usa arena_ria_narrativa_r02.png exatamente aprovado, sem recorte/protagonista, vozes ou nova geração. Voltar não reverte quest, apenas leitura antes da dungeon. F01 salvo/carregado é tela estática terminal; não repete encerramento lógico ou recompensas.
 
 Validação: tools/validate-narrative.cjs, test-narrative.cjs, test-narrative-small.cjs e regressões documentadas. ARENA_URL e ARENA_EVIDENCE_DIR configuram servidor/contexto isolado. Navegador não comprova nova sessão de autoria no editor nem aparelho físico. Não criar conteúdo M02 ou conceder kit técnico de campanha por esse plugin.
+
+
+## R02 vigente — v0.2
+
+ArenaNarrative.json schema2: cada seção contém picture;14 momentos(5 históricos/9 Ria), mais endingPicture. Namespace arenaNarrative v2 migra cursor/histórico v1, sem reiniciar quest ou recursos. Texto inalterado conserva cursor; frase da chave reformulada reinicia apenas essa frase. Controles de introdução Voltar/Continuar, sem botão de salvar; última página transfere diretamente. Salvar permanece normal depois e no fim. Fonte primária/arte/legibilidade/testes em REVISAO_INTEGRACAO_M01_18_R02.md. Dependências anteriores e APIs preservadas; sem vozes/plugins externos.

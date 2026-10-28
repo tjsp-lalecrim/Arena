@@ -1,0 +1,370 @@
+{
+  "version": "R02",
+  "entries": [
+    {
+      "id": "I01",
+      "prompt": "Produza uma ilustração narrativa horizontal 3:2 para a adaptação de The Elder Scrolls: Arena (1994), pintura digital dark fantasy refinada, não pixel art. BLOCO I01: séculos de guerras e a unificação de Tamriel por Tiber Septim; mostrar somente arquitetura e objetos, sem pessoas: vista elevada de uma cidadela imperial austera antiga, grandes muralhas de calcário/ardósia fria, bandeiras imperiais vermelhas escuras com emblema dracônico estilizado, restos de estandartes de guerras junto à estrada. Identidade imperial de Arena, atmosfera ameaçadora e antiga, materiais legíveis, paleta carvão cinza-violeta e vermelho envelhecido, luz fria com pequenas luzes quentes. Referência fornecida arena_ria_narrativa_r02.png é EXCLUSIVAMENTE de acabamento/paleta/material e direção aprovada; não colocar Ria nesta cena histórica. Composição ampla sem texto, HUD, moldura ou logo; centro legível, imagem autônoma. PROIBIDO representar o protagonista: nenhum personagem, mãos, braços, silhuetas humanas, sombra humana, reflexo corporal ou equipamento segurado. Não importar estética nórdica de Skyrim, nem cidade medieval genérica de telhados pitorescos. Arquitetura imperial antiga inspirada em Arena reinterpretada em definição moderna. Salvar resultado completo, não uma prancha ou mockup de interface.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-I01.png",
+      "status": "generated",
+      "runtime": "img/pictures/Arena_intro_I01_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "4e429dd925db57b0c89249cb90b23fdcbab216ce95fd47b59467ea2a3840a2fc",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "c77fb8d33bc3c941c86f92d3d77530f87a2946b8d01bdce45285724dbcc0cc16",
+      "approval": "pending owner review",
+      "source": "C:/Users/hplea/.codex/generated_images/01a174c8-fc02-7100-bd7c-ad4775302730/exec-c31e324f-c877-4081-ab06-a19c650e1d5c.png",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "I02",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Após séculos de guerras, Tamriel é chamada de Arena: vasto caminho imperial destruído, campos desertos e ruínas ao longe, estandartes caídos vermelhos envelhecidos; sem pessoas. Não mostrar batalha acontecendo. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-I02.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-0b424efe-1ced-4064-945e-1c08b46381fc.png",
+      "runtime": "img/pictures/Arena_intro_I02_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "0676da5710edd8945c5044a2f8cfb4cd7fc0737ef5f676670af9f7f99c39b242",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "24198bea76e8ea5ec42d50a3416759f9c49f4bb50b647e0982b1f60174fb7fe6",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "I03",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. A ameaça ao Imperador Uriel Septim VII: coroa imperial e um pequeno bolo cerimonial com velas sobre uma mesa de pedra, sala imperial vazia, sombras ameaçadoras, um pergaminho enrolado ao lado. Não inventar texto legível nem símbolos canônicos novos. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-I03.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-b0cbcd83-8e73-427e-8e4a-93954ecf07fc.png",
+      "runtime": "img/pictures/Arena_intro_I03_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "12a3164e546f5982eca6c4687459742c858864c5686ed4de70355d074359d265",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "d6ab28eab8867e46551b2165aa0f7daa682f2fcff8722832988a7af355797b29",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "I04",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. A traição de Jagar Tharn e o banimento do Imperador: salão do trono imperial VAZIO com fenda de magia vermelha escura e violeta, trono austero, cortinas vermelhas, cadeiras tombadas. Nenhuma pessoa; a cena usa ambiente como interpretação, sem inventar rosto ou vestuário. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-I04.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-0ef0eadf-02fb-44d3-a390-1e2e10cdc360.png",
+      "runtime": "img/pictures/Arena_intro_I04_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "b4131c21aedd848df1e5691d70f24f5abd4e1879d0a07b7079548ce1236dddb3",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "140738fd716d7ff7361db58a2f1d97488c2fb8b5fe8268e099565c4891336c49",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "I05",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. A descoberta abafada e a usurpação: aposento arcano imperial vazio, correntes de contenção abertas, um cetro abandonado, velas apagando, sombra ameaçadora da arquitetura. Sem corpo nem pessoa nem sombra humana. Objetos como metáfora da captura de Ria; não mostrar o protagonista. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-I05.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-5902526e-c0e7-4ef5-b133-5a21cb4e045c.png",
+      "runtime": "img/pictures/Arena_intro_I05_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "d654bf1275fbde4f6bc8a89112d201fed7441c128c9f27c261dca836b67cdbaf",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "df63e06325cb797f1ac5272a811d02ba174450534b850493f05d0a2e00f0c6f3",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R01",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Ria Silmane surge como espírito para falar em um sonho. Mostrar SOMENTE Ria, com o mesmo rosto, cabelo, roupa e aparência espectral da referência fornecida, em uma cela imperial opressiva, olhando para o espaço vazio à direita. Não incluir qualquer representação do interlocutor ou protagonista. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R01.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-dcd31667-9306-4298-9aaa-f716217b38d8.png",
+      "runtime": "img/pictures/Arena_intro_R01_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "f05856aefdb95a393c0ce447eebf31175f2f28dcc250bb50cfac706769d09722",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "3baa00667921fde97b18c21a29e01000d288f441d21809193463f418d72b0457",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R02",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Ria adverte que Jagar Tharn tomou a aparência do Imperador. Mostrar somente Ria espectral, mesma identidade e roupa da referência, de busto em um sonho com o salão imperial vazio dissolvido ao fundo. Não retratar Tharn nem Imperador. Não incluir protagonista. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R02.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-fea3e7be-fbbc-462c-8dc1-bf15845d77ba.png",
+      "runtime": "img/pictures/Arena_intro_R02_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "441f7ae99b7ea370dad6b6842cdd8fea37f8dcc5747b80d1fecf286856a895a2",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "387bbf594b880af36b5f90387d18541ce410553967b0979583fca3a170fcad41",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R03",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Vista objetiva da parede norte de uma cela imperial: uma pequena chave de rubi VISÍVEL sobre uma plataforma baixa de pedra junto à parede, não dentro de esconderijo. Chave metálica com gema vermelha pequena, lajes frias, alvenaria grossa, correntes. Foco claro na chave, vista oblíqua de ambiente, sem pessoas, sem Ria, sem mãos. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R03.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-b17ade67-d3a9-4e84-9f12-d1a15b1e1ef6.png",
+      "runtime": "img/pictures/Arena_intro_R03_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "924417569480bbc7ea6f16a855648ec7571dca5957441a1dc6ab2c839ae8567d",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "dfe77fb4aaf0009fd1561d370c3e47602fcc9a21deb7d98f5b1aae0ca716c22a",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R04",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Tesouros roubados nos túneis da prisão: pequeno monte legível de moedas, uma bolsa de couro aberta e equipamento abandonado junto a nicho de alvenaria, rastros de ratos no piso molhado, fundo escuro ameaçador. Nenhuma pessoa ou protagonista. Não antecipar criaturas ou baús enormes inventados. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R04.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-b3460058-3de4-4b70-b095-4839eb362d13.png",
+      "runtime": "img/pictures/Arena_intro_R04_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "ccd7be384e62f4e422c26665bc9f2064c864adb3839302be2f237e9cfce635d7",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "ad1c7182ac8a6a2a3b5d482510287a3baacd26cba9a3d427d9c6785c3afee8f9",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R05",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Ria Silmane já morta, sustentada por sua magia que se esvai: somente a mesma Ria espectral da referência, rosto sereno e cansado, bordas da roupa dissolvendo em luz azul discreta, cela imperial vazia atrás. Identidade facial e roupa preservadas, sem cadáver ou protagonista. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R05.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-992f9c5a-c24f-4813-8908-e353c01611b7.png",
+      "runtime": "img/pictures/Arena_intro_R05_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "67575e96cf195caf05f2c2e86d61d46f06fa34b49dcdb37540478d6656435282",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "2b65387a66addc768a050ceb929246856b4df27d39613b01a0ef0c79e39198be",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R06",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Passagem para o Shift Gate no extremo sudoeste da prisão: corredor frio de grandes lajes e paredes de blocos que termina em um portal mágico austero de pedra com luz azul-violeta. Grade e vestígios de prisão discretos. Sem cela pessoal, sem pessoas ou mãos. Interpretação artística do portal, sem sugerir que ele seja uma cidade ou pessoa. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R06.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-02ba9427-46d3-4605-88ec-1fa9d5e0211d.png",
+      "runtime": "img/pictures/Arena_intro_R06_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "9d5af280cac4d20e9718aa55e8bcd98ea1d4116d052103d8add63b2f712d996c",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "296a44344366ae975acfdf3eb058ba52b80b03c5e57cebc3df80d152a810f4f9",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R07",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Ria Silmane retornará nos sonhos: somente a mesma Ria espectral da referência, em plano médio à esquerda, luz azul delicada sobre pedra e correntes de prisão que se dissolvem em névoa onírica. Não mostrar pessoa dormindo, cama ocupada, protagonista ou silhueta do interlocutor. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R07-g02.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-31d9abbf-0262-45c5-b586-fa12f260e0a8.png",
+      "runtime": "img/pictures/Arena_intro_R07_r02.png",
+      "dimensions": [
+        960,
+        620
+      ],
+      "sha256": "37b8888dfeca95fa63e9f3a4721b20d2c7d94436ba4e740e9c1ea237ae9b429f",
+      "previousMaster": "art/masters/m01-integration-r02/intro-R07.png",
+      "editPrompt": "Edite SOMENTE o minúsculo rabisco que parece assinatura no canto inferior ESQUERDO desta imagem gerada. Remova esses sinais e complete discretamente a pedra escura por baixo. Preserve absolutamente toda a composição, Ria, rosto, vestuário, espectro, luz, cores, arquitetura, enquadramento e tamanho. Nenhuma nova figura ou texto. Sem assinatura, marca, logo ou HUD.",
+      "editReferences": [
+        "art/masters/m01-integration-r02/intro-R07.png"
+      ],
+      "crop": [
+        0,
+        0,
+        1536,
+        992
+      ],
+      "cropReason": "Margem inferior com artefato de escrita residual da geração; enquadramento técnico sem cortar Ria ou objetos narrativos.",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "ca88656d862d38f835e7b1719d75896ef02977ba596f821177b55300d84bc777",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R08",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Uma arena perigosa e um poder ainda adormecido: corredor imperial de esgoto deserto, nichos e sombras arquitetônicas profundas, reflexos discretos de magia na água, sem figura humana ou protagonista, sem monstros inventados. Atmosfera de perigo e potencial, materiais de prisão de Arena. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R08.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-1cf760e3-778a-4301-b4a9-0d28318a2855.png",
+      "runtime": "img/pictures/Arena_intro_R08_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "ba20a514404df85294cebb36d8d23bcf99b4526b22a4c2b9eaa39c6c60d77209",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "3019efdca079252bc428a03290cd7885d2ea83f70b0eb951659b3e996050bafe",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    },
+    {
+      "id": "R09",
+      "prompt": "Ilustração narrativa horizontal 3:2 para The Elder Scrolls: Arena, pintura digital dark fantasy refinada, definição moderna sem pixel art. Pedra fria cinza-violeta, luz fria e pequenos focos âmbar, acabamento aprovado da referência fornecida. Não copiar sua composição. Sem texto, logos, HUD ou moldura. NUNCA mostrar o protagonista, nem mãos, braços, silhuetas, sombras humanas ou reflexos que fixem sua identidade. Ambiente imperial de Arena, sem importar arquitetura nórdica de Skyrim. Última esperança: somente Ria Silmane espectral com o mesmo rosto, cabelo e vestuário da referência, afastando-se em névoa de luz fria, em uma cela imperial vazia, expressão determinada e compassiva. Não mostrar protagonista ou partes de seu corpo. Referência efetivamente fornecida: arena_ria_narrativa_r02.png; para cenas sem Ria é referência de estilo e materiais, para cenas com Ria também de identidade. As composições ambientais são interpretações, não reconstruções documentais.",
+      "references": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png"
+      ],
+      "master": "art/masters/m01-integration-r02/intro-R09.png",
+      "status": "generated",
+      "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-dc7206d1-f6b2-40d8-8bc5-7babc65626fa.png",
+      "runtime": "img/pictures/Arena_intro_R09_r02.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "sha256": "dc1c8b39194c73b9265a634dbab47b63f4f81476a54f3a7ec30894128c24d2a1",
+      "masterDimensions": [
+        1536,
+        1024
+      ],
+      "masterSha256": "6e4f7d6b23fcd74d84b4a2eab830aa9f9231fea03175aa8eeb7be3732e5fe6f1",
+      "approval": "pending owner review",
+      "referenceSha256": {
+        "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+      }
+    }
+  ],
+  "tool": "image_gen.imagegen",
+  "assetRevision": "M01-18 integration R02",
+  "date": "2026-10-28"
+}

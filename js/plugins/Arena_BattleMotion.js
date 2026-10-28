@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.3.0 Movimentos desenhados, armas separadas e impacto nativo.
+ * @plugindesc v0.4.0 Movimentos desenhados, armas separadas e impacto nativo.
  * @author Codex
  * @help Após Arena_Battle e MV_MotionTimeline. Sem dependências externas.
  * ArenaBattleMotion.json: cobertura explícita, frames/tempos/apoios/armas.
@@ -26,6 +26,8 @@ var ArenaBattleMotion;
         var node=s._arenaHeldWeapon,w=currentWeapon(s._battler),spec=w&&$arenaBattleMotion.weapons[String(w.wtypeId)],hand=frame.hand;
         node.visible=!!(spec&&hand);s._arenaVisibleWeapon=node.visible?w.id:null;
         if(!node.visible){node.bitmap=null;return;}
+        if(frame.weaponLayer!=='front'&&frame.weaponLayer!=='back')throw Error('Arena: plano da arma ausente na pose.');
+        if(node._arenaPlane!==frame.weaponLayer){s.removeChild(node);s.addChildAt(node,s.getChildIndex(s._mainSprite)+(frame.weaponLayer==='front'?1:0));node._arenaPlane=frame.weaponLayer;}
         node.bitmap=ImageManager.loadPicture(spec.file);node.anchor.set(spec.grip[0]/spec.size[0],spec.grip[1]/spec.size[1]);
         node.x=hand[0]-p.cell[0]/2;node.y=hand[1]-p.cell[1];node.rotation=hand[2]*Math.PI/180;
     }

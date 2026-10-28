@@ -1,0 +1,52 @@
+[
+  {
+    "id": "enemy.1",
+    "file": "Arena_Combat_rat_r02",
+    "prompt": "Produza uma folha de CAMINHADA de exploração 2D para o rato ameaçador de Arena da referência. Preservar EXATAMENTE pelagem castanha escura, corpo encurvado robusto, patas e cauda avermelhadas, focinho comprido, dentes e olhos, sem transformar em rato doméstico fofo. A referência é de combate; a nova perspectiva deve ser superior oblíqua de exploração por grade. Grade3colunas x4linhas com12poses completas, transparentes e separadas por margens amplas. Linha1 todas3poses olhando para BAIXO/de frente; linha2 todas3 para ESQUERDA; linha3 todas3 para DIREITA; linha4 todas3 para CIMA/de costas. Colunas: passada de patas diagonais A / apoio neutro / passada de patas diagonais B. Patas dianteiras/traseiras devem articular em oposição, dorso acompanha discretamente, cauda muda organicamente sem trocar de comprimento. Não repetir a mesma pose transladada. Não morder, saltar ou cair: somente locomoção. Mesma escala e linha de contato com chão entre quadros. Mostrar animal INTEIRO com cauda em cada célula. Corpo baixo, perspectiva suficiente para ver dorso, sem ficar uma pessoa em pé. Acabamento dark fantasy aprovado e luz neutra suave. Sem cenário, grade desenhada, nomes, assinatura, letras ou sombras de chão. Fundo transparente. Canvas3:4 preferencial768x1024.",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-031a997b-c3ee-4b8d-b36b-37635c138248.png",
+    "references": [
+      "img/enemies/Arena_Combat_rat_r02.png"
+    ],
+    "master": "art/masters/m01-integration-r02/walk-rat.png",
+    "target": "img/characters/$Arena_rat_walk_r02.png",
+    "reflect": [
+      3,
+      4,
+      5
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 40,
+    "width": 46,
+    "opposed": false,
+    "pivot": "mass"
+  },
+  {
+    "id": "enemy.2",
+    "file": "Arena_Combat_goblin_r03",
+    "prompt": "Produza uma folha de CAMINHADA de exploração 2D para o goblin de Arena da referência. Preservar pele amarela/dourada, feições alongadas ameaçadoras, orelhas e postura curvada, pequenas roupas e a mesma arma curta, sem armadura ou equipamento novo. A referência é de combate; adaptar à perspectiva superior oblíqua de RPG por grade. Grade3colunas x4linhas com12poses COMPLETAS, fundo transparente e margens amplas. Linha1 todas3 voltadas para BAIXO/de frente; linha2 TODAS3 para ESQUERDA; linha3 TODAS3 para DIREITA; linha4 todas3 para CIMA/de costas. Coluna1: passada pernaA/braçooposto; coluna2: apoio neutro pés juntos; coluna3: passada pernaB/braçooposto. Pernas e braços articulam de verdade, sem apenas deslocar figura estática. Arma acompanha mão sem cortes. Mesma identidade, tamanho e apoio dos pés em cada célula. Não atacar, pular ou cair. Não usar pose de espera de batalha como caminhada. Acabamento dark fantasy pintado, sem pixelização intencional; iluminação uniforme suave. Não incluir cenário, grade, nomes, números, assinatura ou sombra de chão. Canvas3:4 preferencial768x1024.",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-a754a328-6b6d-46f6-ae3e-1f82357ac2c6.png",
+    "references": [
+      "img/enemies/Arena_Combat_goblin_r03.png"
+    ],
+    "master": "art/masters/m01-integration-r02/walk-goblin.png",
+    "target": "img/characters/$Arena_goblin_walk_r02.png",
+    "reflect": [
+      3,
+      4,
+      5,
+      9,
+      11
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 44,
+    "width": 46,
+    "opposed": false,
+    "pivot": "mass"
+  }
+]

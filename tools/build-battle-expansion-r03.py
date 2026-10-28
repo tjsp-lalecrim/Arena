@@ -6,7 +6,12 @@ from battle_components import cutouts
 R=Path(__file__).resolve().parents[1];D=R/'art/masters/combate-r03-expansao';D.mkdir(exist_ok=True)
 cfg=json.loads((R/'data/ArenaBattleMotion.json').read_text(encoding='utf8'))
 base=json.loads(subprocess.check_output(['git','show','a61977b:data/ArenaBattleMotion.json'],cwd=R).decode('utf8'))
-assert cfg['actors']['breton.female.base']==base['actors']['breton.female.base'] and cfg['enemies']['1']==base['enemies']['1']
+def body_definition(p):
+ p=copy.deepcopy(p)
+ for motion in p['motions'].values():
+  for frame in motion['frames']:frame.pop('weaponLayer',None)
+ return p
+assert body_definition(cfg['actors']['breton.female.base'])==body_definition(base['actors']['breton.female.base']) and cfg['enemies']['1']==base['enemies']['1']
 handfile=D/'hands.json';hands=json.loads(handfile.read_text(encoding='utf8')) if handfile.exists() else {}
 template=json.loads((R/'art/masters/combate-r02/hand-anchors.json').read_text(encoding='utf8'))
 durations={k:[f['duration'] for f in m['frames']] for k,m in base['actors']['breton.female.base']['motions'].items()}
@@ -75,6 +80,11 @@ for source in sorted(D.glob('*.png')):
    (R/'tmp/expansion-guides').mkdir(exist_ok=True);board.save(R/('tmp/expansion-guides/'+key+'.png'))
   if '--integrate' in sys.argv:
    assert reviewed,('Hands not reviewed',id)
+
+   if not enemy:
+    for motion,definition in p['motions'].items():
+     for n,frame in enumerate(definition['frames']):
+      if 'hand' in frame:frame['weaponLayer']='back' if (motion=='light' and n==1) or (motion=='heavy' and n==2) else 'front'
    cfg['enemies' if enemy else 'actors'][id]=p
  except Exception as e:failures.append({'id':key,'error':str(e)})
 handfile.write_text(json.dumps(hands,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
