@@ -114,3 +114,11 @@ Arena_Dungeon0.3.0/R03: montagem ortogonal/âncoras invariantes e revisão3 de g
 ## M01-15 — patrulha e encontros
 
 MV_EncounterRules0.1.0 (núcleo puro) seguido de Arena_Encounters0.1.0 (após Arena_Dungeon/combate/loot/movimentos). Config ArenaEncounters.json; contratos enemies/areas existentes, sem dependência externa. Documentação em plugins/Arena_Encounters.md. Não há novo consumidor de recursos, concessor de loot ou conclusão de quest automática.
+
+## M01-16 — quests
+
+MV_QuestRules0.1.0 e Arena_Quests0.1.0 após Arena_Encounters e dependências anteriores. Config ArenaQuests.json; guia plugins/Arena_Quests.md. Arena_Loot recebe somente claimContainer(id,table), reutilizando settlement existente e recibo por origem. Sem outro consumidor de itens/recompensas e sem dependências externas.
+
+## Diário M01-16 R02
+
+MV_JournalModel0.1.0 (modelo de leitura/quebra de linhas) e Arena_QuestJournal0.2.0 (cena/painéis/input/reflow) após Arena_Quests. Arena_Quests mantém os consumidores de progressão, apenas delegando openJournal ao plugin de apresentação. Dados visuais separados em ArenaQuestJournal.json, sem quests fictícias distribuídas. Guide plugins/Arena_QuestJournal.md.

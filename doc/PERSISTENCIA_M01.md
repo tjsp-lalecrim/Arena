@@ -85,3 +85,7 @@ M01-13: namespace arenaLoot v1 separado, sequence/receipts/pending; inventário/
 ## Consumidor M01-15
 
 Arena_Encounters utiliza enemies/areas já previstos. IDs estáveis imperial.enemy.NN e imperial-dungeons, generation e exitRevision persistidos. Posições/cadência nativas de Game_Event; trava de transição transitória em Game_Temp. Saves M01-14 recebem eventos ausentes sem regrant/recriação do ator. Contrato/integração em ENCONTROS_M01_15.md.
+
+## Consumidor M01-16
+
+Arena_Quests utiliza quests/sources/receipts existentes (arena v1). Não duplica inventário ou recursos. Etapas/objetivos persistentes, recibo de consumo da cela, fonte derivada e rollback de saída/entrada. Ausência após consumo/entrega legítima não é perda; saneamento só item1. Migração de exploração antiga sem quest volta uma única vez ao checkpoint da cela, preservando personagem/inventário/recursos; mapas técnicos de encontros isolados. Detalhes/limites em QUESTS_M01_16.md.

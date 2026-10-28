@@ -124,3 +124,7 @@ R03: ArenaDungeon.schemaVersion3; campo attachments distingue sourceCell/wallCel
 ## M01-15 — encontros
 
 ArenaEncounters.json schema1 separado do mapa/loot. Map008 mantém IDs1–168/camadas/propriedades; acrescenta eventos169–235 com trigger2 e ID estável imperial.enemy.NN. Enemies/areas reutilizam Arena_Persistence; localização/tick permanecem nativos do Game_Event. Dados e migração em ENCONTROS_M01_15.md. Nenhum item, tropa, valor racial, custo ou recompensa novo.
+
+## M01-16 — MQ01
+
+ArenaQuests.json schema1 define títulos/J10–J40, requisitos e referências. Map008 mesmos235 eventos/IDs/geometria; somente listas127(chave) e137(Gate), e página derivada oculta da chave. Fonte MQ01.ruby-key/item1; recibo MQ01.cell-door; self-switchA de127 derivado, sem espelhamento em variáveis/switches globais. Contrato quests.MQ01/objetivos/recibos existente em arena v1; contêineres no ledger arenaLoot v1, sem segunda bolsa de inventário. Ver QUESTS_M01_16.md. Registros históricos de tags de proteção/saneamento não implementadas foram superados por M01-12/16. Nenhum novo item ou ajuste de inimigo/bônus/custo.

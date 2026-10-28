@@ -104,3 +104,7 @@ M01-14 fixa coordenadas/colisões; M01-16 implementa etapas e diário; M01-18 in
 ## Atualização M01-14
 
 M01-14 verificou START.MIF/START.INF locais e planta wiki. Coordenadas textuais acima (3,19)/(4,21) são históricas: a grade local contém chave em FLOR3,20 e registro LOCK4,23. Mapeamento orientado/MV e justificativa da divergência em DUNGEON_M01_14.md. Layout inicial confirmado com cela leste e Gate sudoeste; não se assume equivalência métrica ou de colisão3D. Porta/chave/quest reais permanecem M01-16; Gate nesta etapa é contato técnico, não encerramento narrativo.
+
+## Integração M01-16
+
+J10–J40 usados no diário; eventos reais de fonte/porta/Gate e tesouros pelo ledger implementados, mantendo coordenadas verificadas M01-14. Consumo irreversível e fonte recuperável conforme esta especificação. Bootstrap técnico na entrada da dungeon até M01-18 chamar begin após Ria; não há introdução/F01/cidade ou pergunta de proteção de cópia nesta feature. QUESTS_M01_16.md separa confirmação documental, adaptações, proxy provisório de tesouros, migração e evidências. Rotas de patrulha vigentes são as M01-15 documentadas, não a proposta inicial de60quadros acima.

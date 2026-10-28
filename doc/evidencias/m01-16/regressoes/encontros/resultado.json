@@ -1,0 +1,300 @@
+{
+  "browser": "156.0.8078.48",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "native event passability rejects 1516 solid/water/leash boundary attempts",
+    "native title technical entry,67 live persisted encounters; no quest completion",
+    "67 native event patrols ×32 attempts remain in allowed ground/radius; no wall/water/through override",
+    "native door closed/open passability for enemy; occupied swing refuses close; fixture origin restored",
+    "real clock patrol changes native map positions",
+    "player contact: one native turn battle,escape disabled,actual attack victory,loot/EXP once,erased enemy,map return without repeat",
+    "native save18/load retains spent resources,learning,inventory,loot ledger and defeated event",
+    "uncompleted exit/reentry preserves defeat; no unconditional respawn",
+    "controlled technical completion then real transfer reactivates common generation1,excludes quest-specific fixture,never completes MQ01",
+    "enemy native touch starts battle; abort gives no loot/EXP/defeat and releases transition lock",
+    "new generation and separate goblin encounter settle distinct native loot receipts; forced HP0 only for these settlement fixtures",
+    "generation1,exitRevision and quest-specific defeat persist after native save/load",
+    "legacy M14 save without enemies/areas appends67 events and defaults without resetting native actor/inventory",
+    "real enemy turn defeats actor after guard: native game over,no loot/EXP or enemy defeat"
+  ],
+  "patrol": [
+    {
+      "id": "imperial.enemy.01",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.02",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.03",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.04",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.05",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.06",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.07",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.08",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.09",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.10",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.11",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.12",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.13",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.14",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.15",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.16",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.17",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.18",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.19",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.20",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.21",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.22",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.23",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.24",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.25",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.26",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.27",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.28",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.29",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.30",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.31",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.32",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.33",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.34",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.35",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.36",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.37",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.38",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.39",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.40",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.41",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.42",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.43",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.44",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.45",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.46",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.47",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.48",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.49",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.50",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.51",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.52",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.53",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.54",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.55",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.56",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.57",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.58",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.59",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.60",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.61",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.62",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.63",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.64",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.65",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.66",
+      "moved": 32
+    },
+    {
+      "id": "imperial.enemy.67",
+      "moved": 32
+    }
+  ],
+  "errors": [],
+  "isolation": "Disposable Chrome context,save18; actor ATK boost/native guard defeat/quest-specific and completion fixtures only in memory; no personal saves",
+  "pending": [
+    "owner integrated visual/playtest",
+    "native editor authoring of new M15 events/plugins",
+    "physical Galaxy A56 at mobile integration"
+  ]
+}

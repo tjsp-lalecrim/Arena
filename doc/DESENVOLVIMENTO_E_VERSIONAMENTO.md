@@ -73,3 +73,7 @@ Para a documentação inicial, sugerir a branch feature/documentacao-inicial, cr
 ## Integração M01-12
 
 Autorização do responsável para próximas tarefas: quando houver necessidade concreta, consulta pontual somente de leitura ao projeto Battlespire. Não alterar arquivos nem promovê-lo a fonte oficial/normativa/dependência. Reaproveitamento eventual deve ser pontual, revisado, adaptado e documentado. M01-12 não precisou dessa consulta; reutilizou APIs/tema do Arena e fluxo MV. A autorização não amplia os requisitos do backlog.
+
+## Critério de interface obrigatório
+
+Toda tarefa de menu novo ou revisado deve aplicar NAV01 em DIRETIVA_DE_NAVEGACAO.md e anexar evidências pertinentes de entrada/retorno, foco, opção única, vazio, textos longos/overflow, teclado/mouse/toque e tamanho reduzido. Confirmar apenas operações relevantes/irreversíveis. Não ampliar uma revisão local para refatoração de menus não solicitados; encaminhar lacunas ao M01-19/pendências existentes sem duplicação.

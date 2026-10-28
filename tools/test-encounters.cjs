@@ -1,6 +1,6 @@
 const fs=require('node:fs'),assert=require('node:assert/strict'),{chromium}=require('playwright'),video=require('./battle-video.cjs');
 (async()=>{
-const out='doc/evidencias/m01-15';fs.mkdirSync(out,{recursive:true});const browser=await chromium.launch({channel:'chrome',headless:true});
+const out=process.env.ARENA_EVIDENCE_DIR||'doc/evidencias/m01-15';fs.mkdirSync(out,{recursive:true});const browser=await chromium.launch({channel:'chrome',headless:true});
 try{
  const p=await browser.newPage({viewport:{width:1100,height:800}}),errors=[],checks=[];p.on('pageerror',e=>{errors.push(e.stack);console.error(e.stack);});p.on('response',r=>{if(r.status()>=400)errors.push(r.url());});
  await p.goto(process.env.ARENA_URL||'http://127.0.0.1:8766');await p.waitForFunction(()=>window.ArenaEncounters&&SceneManager._scene instanceof Scene_Title);

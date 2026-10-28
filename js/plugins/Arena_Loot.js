@@ -40,7 +40,14 @@ var ArenaLoot;
     }
     var database=DataManager.isDatabaseLoaded,checked=false;
     DataManager.isDatabaseLoaded=function(){if(!database.apply(this,arguments))return false;if(!checked){validate();checked=true;}return true;};
-    ArenaLoot={snapshot:state,collectPending:collectPending,recoverSource:function(id){return ArenaPersistence.claimSource(id);},startLab:function(){ArenaBattle.startLab();$gameTemp._arenaLootLab=true;},validate:validate};
+    ArenaLoot={snapshot:state,collectPending:collectPending,recoverSource:function(id){return ArenaPersistence.claimSource(id);},startLab:function(){ArenaBattle.startLab();$gameTemp._arenaLootLab=true;},validate:validate,
+        claimContainer:function(id,table){
+            if(typeof id!=='string'||!/^[a-zA-Z0-9_.-]+$/.test(id))throw Error('Arena loot: fonte inválida.');
+            var token='container/'+id,existing=state().receipts[token];if(existing)return existing;
+            var roll=MVLootRules.roll(table);
+            return settle(token,[{origin:id,rows:roll.rows,candidates:roll.candidates,questSources:[]}],0);
+        }
+    };
     var setup=BattleManager.setup;
     BattleManager.setup=function(){setup.apply(this,arguments);var s=state();s.sequence+=1;save(s);this._arenaLootToken='battle/'+s.sequence;this._arenaLootPlan=null;this._arenaLootResult=null;this._arenaLootDisplay=null;this._arenaVictoryHandled=false;};
     BattleManager.makeRewards=function(){

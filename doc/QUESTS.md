@@ -98,3 +98,9 @@ Validar item ausente, quantidade parcial, quantidade duplicada, fonte já aciona
 ## Estado
 
 O sistema de quests e a direção do diário estão confirmados. A estrutura detalhada e os critérios acima são propostas de implementação; o primeiro marco abrange a introdução e a dungeon inicial, a primeira quest é MQ01 — Imperial Dungeons, com término da demo no Shift Gate. Detalhar eventos, objetivos e traduções na implementação a partir das fontes já identificadas. Nenhuma funcionalidade de quests foi implementada ou testada nesta etapa.
+
+## Implementação vigente M01-16
+
+MQ01/diário/requisitos e recuperação implementados em Arena_Quests + núcleo puro MV_QuestRules; detalhes, migração e fontes em QUESTS_M01_16.md. Estado0/10/20/30/40, itens conferidos na saída e entrada, fonte só repõe o que falta antes do uso legítimo. Fechamento da apresentação continua M01-18. Declarações anteriores de nenhuma funcionalidade implementada são históricas.
+
+Diário vigente M01-16 R02: filtros, lista de missões disponíveis, descrição e passos separados, indicadores explícitos e completed como autoridade do status. Textos revelados por progressão, sem exposição de futuras etapas/campanha. NAV01/REVISAO_DIARIO_M01_16_R02.md definem navegação, apresentação e validação, sem alterar regras de quest.
