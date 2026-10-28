@@ -67,3 +67,7 @@ Execuções finais:23 cenários MQ01; regressões encontros14,loot11,persistênc
 ## Apresentação superada pela R02 (28/10/2026)
 
 O painel textual único foi substituído por lista/filtros, descrição narrativa, passos e status real em plugin de apresentação separado; lógica de MQ01 permanece idêntica. Fontes, reestruturação J10–J40, navegação/responsividade e evidências em REVISAO_DIARIO_M01_16_R02.md. Leitura não concede ou consome itens e não avança etapas.
+
+## Fechamento M01-16 — 28/10/2026
+
+Responsável aprovou o **design visual** do sistema de quests; estado disponível086264e, sem hash próprio ou dispositivo informados. Evidência em evidencias/m01-16-r02/aprovacao-responsavel.json. Não atribuir a essa avaliação testes de lógica, persistência, respawn, autoria no editor ou mobile. Critérios funcionais revisados separadamente:23 cenários MQ01,5 grupos de diário e regressões identificados nas evidências R01/R02; validate-journal.cjs reexecutado neste fechamento passou. M01-16 concluído tecnicamente, autorizado para integração em develop. Nova autoria da UI no MV e Galaxy A56 físico permanecem verificações de integração, sem alegar execução. REF06 registra notificações futuras, sem implementação; REF01 permanece único para favoritos/atalhos. M01-17 corresponde a poções e descanso, sem renumeração. Estados anteriores abaixo são históricos quando divergirem.

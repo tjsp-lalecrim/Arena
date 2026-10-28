@@ -1,0 +1,15 @@
+{
+  "data": "2026-10-28",
+  "origem": "declaração do responsável nesta conversa",
+  "estado_disponivel": "086264e",
+  "versao_testada_informada": false,
+  "escopo": "Aprovação visual do novo design do sistema de quests",
+  "nao_comprova": [
+    "fluxos de quest",
+    "recuperação de itens",
+    "persistência",
+    "respawn",
+    "autoria no MV",
+    "dispositivos físicos"
+  ]
+}
