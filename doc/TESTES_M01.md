@@ -1,3 +1,7 @@
+## Integração M01-17
+
+M01-17: executar tools/validate-recovery.cjs, test-recovery.cjs e test-recovery-small.cjs (NODE_PATH do runtime com Playwright; ARENA_URL do servidor local; ARENA_EVIDENCE_DIR opcional). Contextos Chrome descartáveis/save17, sem saves pessoais. Roteiro manual curto, casos de rejeição e limites em POCOES_E_DESCANSO_M01_17.md. Regeneração nativa exercitada nas16 identidades; testes físicos e autoria do novo plugin separados.
+
 # Execução e roteiro de testes M01
 
 ## M01-12 R02 — confirmação de equipamentos

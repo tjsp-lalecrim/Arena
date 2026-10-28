@@ -1,3 +1,7 @@
+## Integração M01-17
+
+M01-17 integra recuperação sem alterar progressão/bônus: poções50 Vida/25 Mana/50 Vigor, descanso integral somente em ponto elegível. Como nenhuma cama foi confirmada nas Masmorras Imperiais, cama continua técnica no Map005; não se importa acampamento livre do original. Sem regeneração passiva ou custo aquático novo. Ver POCOES_E_DESCANSO_M01_17.md.
+
 # Criação e evolução do personagem
 
 Estado atual M01-12: criação/R05, recursos, habilidades e combate anteriores preservados;16 fontes animadas M01-10 já existentes. Inventário/equipamento e aparência mínima por material na feature para revisão, sem encerrar a avaliação artística. Relatos antigos de sprites estáticos abaixo descrevem etapas anteriores. Ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

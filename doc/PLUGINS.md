@@ -1,3 +1,7 @@
+## Integração M01-17
+
+M01-17: Arena_Recovery0.1.0 após os29 registros preservados (total30), configuração ArenaRecovery.json. Uso direto de poções, autorização de descanso e guard de execução; nenhum consumidor duplicado ou novo save. Documentação em plugins/Arena_Recovery.md.
+
 # Criação e documentação de plugins
 
 Estado atual M01-12 R02: Arena_Inventory0.2.0 refina slots/ícones e modal comparativo sem alterar APIs/save ou dados;20 registros no formato canônico,18 anteriores preservados; novos MV_EquipmentTransaction e Arena_Inventory. Sem dependência externa/Battlespire. Documentação dos dois em doc/plugins e relatório INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

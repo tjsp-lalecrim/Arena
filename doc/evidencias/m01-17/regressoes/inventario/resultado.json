@@ -1,0 +1,43 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "technical kit idempotent, no campaign grants",
+    "keyboard preview/cancel unchanged; equip one native weapon with one debit",
+    "replace weapon returns old one, changes techniques, clears incompatible shortcut, keeps learned spell",
+    "incompatible and outside drag no debit/duplication",
+    "Escape during actual drag cancels before native windows consume the input",
+    "valid drop previews before confirm; cancel no mutation; leather equipped once",
+    "mouse replace mail, DEF5+6, leather returned",
+    "native trade verification failure restores equipment, both counts, resources and shortcut ledger",
+    "invalid/stale refs, native incompatible slot and full return inventory protected",
+    "stock changed after preview rejected at confirmation; repeated equip is a no-op",
+    "slot filter and removal return one item",
+    "configured recovery potions use native effects once without confirmation; other potions remain unchanged",
+    "native potion effect/one consumption; known book kept; valid book learns once",
+    "quest item discard and sale entry points blocked, no inventory/gold mutation",
+    "native save/load retains equipment, spent HP, learned spell and shortcuts; map appearance derived",
+    "equipped mail participates in real animated battle with existing cost/action flow",
+    "only valid equipment choice skips redundant list and still previews before confirming",
+    "Map007 technical event8 opens the configured kit and equipment UI"
+  ],
+  "capacity": {
+    "before": 99,
+    "after": 99,
+    "result": {
+      "ok": false,
+      "reason": "Sem espaço para devolver o equipamento atual."
+    },
+    "equipped": 2
+  },
+  "rollback": {
+    "ok": false,
+    "reason": "A troca foi cancelada e o estado anterior restaurado.",
+    "error": "Transação não confirmada."
+  },
+  "protection": {
+    "discard": false,
+    "sell": false
+  },
+  "errors": [],
+  "isolation": "Disposable Chrome context, save20 only there; no personal saves"
+}

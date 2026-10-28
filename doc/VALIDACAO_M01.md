@@ -1,3 +1,11 @@
+## Evidência M01-17 R01
+
+Implementação b33af89; resultados finais em evidencias/m01-17/fontes-testadas.json:9 grupos de recuperação,2 telas menores,619 verificações de recursos,18 cenários de inventário,7 de comparação,13 grupos de combate,23 MQ01 e5 de diário. Validações estáticas também passaram. Detalhes, fontes e critérios em POCOES_E_DESCANSO_M01_17.md. Novo ciclo de editor e A56 físico explicitamente pendentes; não atribuídos ao responsável.
+
+## Estado vigente M01-17 — 28/10/2026
+
+M01-16 integrado/publicado em develop e69eec3, com aprovação restrita ao design do diário e REF06 futura, sem implementar notificações. M01-17 na feature/m01-pocoes-descanso: uso direto das três poções, revalidação na execução e cama técnica autorizada, reutilizando recursos/inventário/batalha/save. Sem cama confirmada no Map008; plataformas não viraram descanso. Ler POCOES_E_DESCANSO_M01_17.md e evidências próprias. Vigor aquático, bônus, arte e REF01 preservados. Concluído tecnicamente na feature para revisão; sem merge desta feature ou avanço para M01-18. Nova autoria/playtest no MV e Galaxy A56 físico permanecem pendentes, sem extrapolar a aprovação visual. Registros anteriores abaixo são históricos quando divergirem.
+
 ## Fechamento M01-16 — 28/10/2026
 
 Responsável aprovou o **design visual** do sistema de quests; estado disponível086264e, sem hash próprio ou dispositivo informados. Evidência em evidencias/m01-16-r02/aprovacao-responsavel.json. Não atribuir a essa avaliação testes de lógica, persistência, respawn, autoria no editor ou mobile. Critérios funcionais revisados separadamente:23 cenários MQ01,5 grupos de diário e regressões identificados nas evidências R01/R02; validate-journal.cjs reexecutado neste fechamento passou. M01-16 concluído tecnicamente, autorizado para integração em develop. Nova autoria da UI no MV e Galaxy A56 físico permanecem verificações de integração, sem alegar execução. REF06 registra notificações futuras, sem implementação; REF01 permanece único para favoritos/atalhos. M01-17 corresponde a poções e descanso, sem renumeração. Estados anteriores abaixo são históricos quando divergirem.

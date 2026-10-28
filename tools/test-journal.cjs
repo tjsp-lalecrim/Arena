@@ -1,5 +1,5 @@
 const fs=require('node:fs'),assert=require('node:assert/strict'),{chromium}=require('playwright');
-(async()=>{const out='doc/evidencias/m01-16-r02';fs.mkdirSync(out,{recursive:true});const b=await chromium.launch({channel:'chrome',headless:true}),checks=[],errors=[];try{
+(async()=>{const out=process.env.ARENA_EVIDENCE_DIR||'doc/evidencias/m01-16-r02';fs.mkdirSync(out,{recursive:true});const b=await chromium.launch({channel:'chrome',headless:true}),checks=[],errors=[];try{
  const c=await b.newContext({viewport:{width:1100,height:800}}),p=await c.newPage();p.on('pageerror',e=>{errors.push(e.stack);console.error(e.stack);});p.on('response',r=>{if(r.status()>=400)errors.push(r.url());});
  const key=async k=>{await p.keyboard.press(k,{delay:90});await p.waitForTimeout(120);},inspect=()=>p.evaluate(()=>ArenaQuestJournal.inspect()),shot=async n=>{await p.waitForTimeout(150);await p.locator('#GameCanvas').screenshot({path:out+'/'+n+'.png'});};
  const map=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_Map&&SceneManager._scene.isActive()&&!$gamePlayer.isTransferring());

@@ -1,3 +1,7 @@
+## Integração M01-17
+
+M01-17: este código/API e valores permanecem inalterados. Arena_Recovery autoriza o ponto antes de delegar rest(), e reutiliza a recuperação existente. A API baixa rest() continua técnica; futuros eventos de cama de campanha devem usar restAt com fonte registrada. Nenhuma regeneração passiva, estado novo, reatribuição de bônus ou consumo em natação.
+
 # Arena_Resources 0.1.0
 
 Integração M01-09: este código permanece inalterado e é o único consumidor de ArenaVigorCost. Arena_Abilities valida arma/conhecimento/execução e chama o percurso nativo que chega a paySkillCost. Técnicas3–8 agora ativas conforme equipamento, em vez da indisponibilidade histórica do fechamento M01-08 descrita abaixo. HABILIDADES_M01_09.md registra a continuidade sem segundo descontador.

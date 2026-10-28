@@ -1,3 +1,7 @@
+## Integração M01-17
+
+M01-17: Arena_Recovery opcionalmente estende onContentOk para uso direto exclusivo das poções2/3/4. Reutiliza commit e Scene_ItemBase existentes; confirmações de equipamento/livro permanecem. Menu base/código deste plugin não foram reescritos. As descrições históricas de confirmação de poções abaixo foram superadas por essa integração.
+
 # Arena_Inventory0.2.0
 
 Codex, após **Arena_BattleUI e MV_EquipmentTransaction**. Dependências reais: APIs ArenaCharacterCreation, ArenaPersistence, ArenaAbilities, ArenaResources/ArenaBattleMotion e fluxo nativo MV. Sem plugins externos/Battlespire. Sem parâmetros/comandos do gerenciador; configuração/IDs em data/ArenaInventory.json.

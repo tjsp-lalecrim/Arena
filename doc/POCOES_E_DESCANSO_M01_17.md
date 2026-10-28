@@ -52,4 +52,20 @@ Autoria/leitura do novo plugin e playtest desta versão no editor MV1.6.1 perman
 2. Título → **Laboratório de recursos**. Ficar abaixo do marcador9, olhar para cima e Enter para gastar recursos; fechar mensagens. Marcador11 adiciona kit técnico de três poções por interação, explicitamente repetível.
 3. Esc → **Itens** (inventário). Usar cada poção por Enter, clique ou toque; não há confirmação intermediária. Conferir quantidade e mensagem com recursos. Repetir cheio deve preservar o item; cancelar sem uso deve preservar tudo.
 4. Voltar, ficar em(13,6), olhar para cima e Enter no marcador13. Conferir recuperação integral; menu **Recursos / evolução** mostra atuais/máximos. Salvar/carregar e conferir inventário/recursos. Nenhuma plataforma da dungeon deve oferecer descanso.
-5. **Combate técnico** no título → preparar treinamento → encontro. Gastar recursos com ações e usar as três poções pelo inventário de batalha existente; conferir barras e redução de uma unidade. Não é preciso configurar favoritos/atalhos para esse teste.
+5. **Combate técnico (piloto)** no título → preparar treinamento → encontro. Gastar recursos com ações e usar as três poções pelo inventário de batalha existente; conferir barras e redução de uma unidade. Não é preciso configurar favoritos/atalhos para esse teste.
+
+## Fechamento técnico
+
+Critérios M01-17 atendidos na feature, para revisão; sem merge em develop/main. Evidência manual do novo design de quests permanece limitada ao visual. Não se apresenta o laboratório como cama confirmada na campanha.
+
+| Critério | Evidência |
+|---|---|
+|Três poções/consumo único/estoque/limites/cancelamento|resultado.json,9 grupos e trace de3 turnos nativos|
+|Descanso elegível/restauração integral/condições|Map005/evento6 real, bloqueios em guards; cama-recuperacao-completa.png|
+|Ausência de regeneração|16 identidades em passive, regeneração de turno e espera no mapa sem mudanças|
+|Persistência/gasto/máximos/bônus|save17 descartável antes/depois de descanso; Argoniana120=100+10+10; regressão recursos619 verificações e save R05 anterior|
+|Integração inventário/combate/quests|18 cenários inventário,7 comparação,13 grupos combate,23 MQ01,5 diário; subpasta regressoes|
+|Navegação/telas menores|Teclado/mouse/toque e telas-menores.json; sem modal para poções; capturas inspecionadas|
+|Compatibilidade de arquivos|validate-recovery/resources/data/journal/encounters→quests; novo ciclo no editor pendente, sem confundir Chrome com autoria|
+
+A suíte antiga de combate não reconhecia a janela de loot já integrada: passou usando o helper atual de batalha e espera estável antes de Enter. Timeout inicial da fixture legada MQ01 foi superado por execução serial final dos23 casos. Sem alterações no motor, dados de combate ou quests para contornar os testes. Manifesto identifica composição, hashes, contagens e limites; evidências anteriores não foram sobrescritas.
