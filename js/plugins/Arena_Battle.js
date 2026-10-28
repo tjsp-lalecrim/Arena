@@ -1,10 +1,10 @@
 /*:
- * @plugindesc v0.1.0 Batalha nativa, animações próprias por perfil e recursos reais.
+ * @plugindesc v0.1.1 Batalha nativa, animações próprias por perfil e recursos reais.
  * @author Codex
  * @help Após Arena_Abilities. Configuração ArenaBattle.json. Sem plugins externos.
  * Escape bloqueado na interface e no processamento. Derrota = game over.
  * Perfis ausentes geram erro explícito; nenhuma pose estática vira animação.
- * API ArenaBattle.resources(battler), profile(battler), startLab(), prepare().
+ * API ArenaBattle.resources(battler), profile(battler), startLab(), prepare(), startWeaponPilot().
  */
 var ArenaBattle;
 (function() {
@@ -28,6 +28,10 @@ var ArenaBattle;
             SceneManager.clearStack();
             $gamePlayer.reserveTransfer($arenaBattle.mapId,8,6,2,0);SceneManager.goto(Scene_Map);
         },
+        startWeaponPilot: function() {
+            this.startLab('breton','female');
+            $gameTemp._arenaWeaponPilot=true;
+        },
         prepare: function() {
             if($gameMap.mapId()!==$arenaBattle.mapId || $gameParty.inBattle()) return false;
             var a=$gameActors.actor(1),lab=$arenaBattle.lab,weapon=$dataWeapons[lab.weaponId];if(!a.hasWeapon(weapon)&&!$gameParty.hasItem(weapon))$gameParty.gainItem(weapon,1);
@@ -36,6 +40,18 @@ var ArenaBattle;
             lab.bookIds.forEach(function(id){var item=$dataItems[id],skill=Number(item.meta.ArenaLearnSkill);if(!a.isLearnedSkill(skill)){$gameParty.gainItem(item,1);ArenaAbilities.learnBook(a,item);}});
             lab.potionIds.forEach(function(id){$gameParty.gainItem($dataItems[id],1);});ArenaResources.rest();return true;
         }
+    };
+    var mapStart=Scene_Map.prototype.start;
+    Scene_Map.prototype.start=function(){
+        mapStart.apply(this,arguments);
+        if($gameMap.mapId()!==$arenaBattle.mapId||!$gameTemp._arenaWeaponPilot)return;
+        $gameTemp._arenaWeaponPilot=false; // One entry only; victory returns to the lab.
+        var a=$gameActors.actor(1),weapon=$dataWeapons[2];
+        $gameParty.gainItem(weapon,1);a.changeEquip(0,weapon);ArenaResources.rest();
+        BattleManager.setup(1,false,false);
+        // Native per-instance modifier; never change the enemy database or drops.
+        $gameTroop.members().forEach(function(enemy){enemy.addParam(0,500-enemy.mhp);enemy.recoverAll();});
+        SceneManager.push(Scene_Battle);
     };
     var setup=BattleManager.setup;
     BattleManager.setup=function(troopId){
@@ -145,15 +161,16 @@ var ArenaBattle;
     Profiles.prototype.windowWidth=function(){return 640;};
     Profiles.prototype.numVisibleRows=function(){return 10;};
     Profiles.prototype.makeCommandList=function(){
+        this.addCommand('Teste da arma: Bretã / espada','weaponPilot');
         $arenaCharacterCatalog.races.forEach(function(r){$arenaCharacterCatalog.genders.forEach(function(g){this.addCommand(r.name+' · '+g.name,'profile',!!$arenaBattle.actors[r.visuals[g.id]],{race:r.id,gender:g.id});},this);},this);
     };
     function Selection(){this.initialize.apply(this,arguments);}
     Selection.prototype=Object.create(Scene_MenuBase.prototype);Selection.prototype.constructor=Selection;
-    Selection.prototype.create=function(){Scene_MenuBase.prototype.create.call(this);this._profiles=new Profiles(88,48);this._profiles.setHandler('cancel',this.popScene.bind(this));this._profiles.setHandler('profile',function(){var e=this._profiles.currentExt();ArenaBattle.startLab(e.race,e.gender);}.bind(this));this.addWindow(this._profiles);};
+    Selection.prototype.create=function(){Scene_MenuBase.prototype.create.call(this);this._profiles=new Profiles(88,48);this._profiles.setHandler('cancel',this.popScene.bind(this));this._profiles.setHandler('weaponPilot',ArenaBattle.startWeaponPilot.bind(ArenaBattle));this._profiles.setHandler('profile',function(){var e=this._profiles.currentExt();ArenaBattle.startLab(e.race,e.gender);}.bind(this));this.addWindow(this._profiles);};
     ArenaBattle.selectProfile=function(){SceneManager.push(Selection);};
     var mapLayer=Spriteset_Map.prototype.createLowerLayer;
     Spriteset_Map.prototype.createLowerLayer=function(){mapLayer.apply(this,arguments);if($gameMap.mapId()!==$arenaBattle.mapId)return;var b=new Bitmap($gameMap.width()*48,$gameMap.height()*48);b.fontSize=17;$gameMap.events().forEach(function(e){b.drawText(e.event().name,e.x*48-75,e.y*48,198,40,'center');});this._baseSprite.addChild(new Sprite(b));};
     Window_TitleCommand.prototype.makeCommandList=function(){title.apply(this,arguments);this.addCommand('Combate técnico (piloto)','arenaBattle');};
     var titleWindow=Scene_Title.prototype.createCommandWindow;
-    Scene_Title.prototype.createCommandWindow=function(){titleWindow.apply(this,arguments);this._commandWindow.setHandler('arenaBattle',function(){this._commandWindow.close();ArenaBattle.startLab();}.bind(this));};
+    Scene_Title.prototype.createCommandWindow=function(){titleWindow.apply(this,arguments);this._commandWindow.setHandler('arenaBattle',function(){this._commandWindow.close();ArenaBattle.selectProfile();}.bind(this));};
 })();

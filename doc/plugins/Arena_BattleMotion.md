@@ -8,7 +8,7 @@ Fonte de configuração: a raiz `weaponPoses` é autoria persistente em ArenaBat
 
 Validação focal: Chrome156, batalha nativa, armazenamento isolado; uma Estocada pesada antes/depois, seis poses/tempos, espelhamento, pega/planos, repouso e recorte escondido ao retornar.37 dano/12 Vigor/uma ação/um efeito nos dois cenários determinísticos (variância0, aleatório0,5 e rato500HP somente no teste, sem balanceamento). Configuração sem weaponPoses idêntica à base efffa97. Não executada bateria ampla, editor ou smartphone. Aprovação estética da correção ainda pendente; REF09 não encerrada para toda a biblioteca.
 
-Para avaliar: Combate técnico → Bretã feminina → equipar Espada curta → Técnicas/Estocada pesada contra rato. Vídeo normal, comparação e resultados em evidencias/arma-piloto-r01/. `node tools/test-weapon-grip-focused.cjs` verifica somente esse recorte; ARENA_GRIP_PHASE=before serve os três arquivos históricos de efffa97 no navegador isolado, sem alterar o checkout. Registro antigo abaixo é histórico quando divergente.
+Para avaliar sem drops: seguir o acesso determinístico e os nomes exatos em [Arena_Battle.md](Arena_Battle.md) (seção Acesso determinístico à arma piloto). Vídeo normal, comparação e resultados em evidencias/arma-piloto-r01/. `node tools/test-weapon-grip-focused.cjs` verifica somente esse recorte; ARENA_GRIP_PHASE=before serve os três arquivos históricos de efffa97 no navegador isolado, sem alterar o checkout. Registro antigo abaixo é histórico quando divergente.
 
 # Arena_BattleMotion0.3.0 — cobertura M01-10 R03
 
