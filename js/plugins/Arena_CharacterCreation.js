@@ -244,6 +244,7 @@ var Scene_ArenaCharacterCreation;
         this._committed = true;
         DataManager.setupNewGame();
         ArenaCharacterCreation.confirmCurrent(this._draft);
+        if(window.ArenaNarrative){ArenaNarrative.startCampaign();this.fadeOutAll();return;}
         $gamePlayer.reserveTransfer($arenaCharacterVisuals.arrivalMapId, 4, 6, 2, 0);
         this.fadeOutAll(); SceneManager.goto(Scene_Map);
     };

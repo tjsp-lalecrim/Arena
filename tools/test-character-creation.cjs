@@ -45,15 +45,22 @@ const { chromium } = require(process.env.ARENA_PLAYWRIGHT || 'playwright');
         await page.waitForFunction(() => ImageManager.isReady());
         await page.screenshot({ path: out + '/m01-07-criacao.png' });
         await key('Enter'); await key('Enter'); await key('Enter'); await page.waitForFunction(() => !!SceneManager._scene._confirm);
-        await key('Enter'); await scene('Scene_Map');
-        await page.waitForFunction(() => $gameMap.mapId() === 4 && SceneManager._scene._messageWindow.pause && SceneManager._scene._messageWindow._waitCount === 0);
-        await key('Enter'); await page.waitForFunction(() => !$gameMessage.isBusy());
+        await key('Enter');
+        if(await page.evaluate(()=>!!window.ArenaNarrative)){
+            await scene('Scene_ArenaNarrative');
+            for(let i=0;i<80&&await page.evaluate(()=>['intro','ria'].includes(ArenaNarrative.state().phase));i++)await key('Enter');
+            await scene('Scene_Map');await page.waitForFunction(()=>$gameMap.mapId()===8&&$gamePlayer.canMove());
+        }else{
+            await scene('Scene_Map');await page.waitForFunction(()=>$gameMap.mapId()===4&&SceneManager._scene._messageWindow.pause&&SceneManager._scene._messageWindow._waitCount===0);
+            await key('Enter');await page.waitForFunction(()=>!$gameMessage.isBusy());
+        }
         const identity = await page.evaluate(() => ArenaPersistence.identity());
         assert.equal(identity.name, "Álvaro d'Água"); assert.equal(identity.raceId, 'breton'); assert.equal(identity.genderId, 'female');
+        await page.evaluate(()=>SceneManager.goto(Scene_Title));await scene('Scene_Title');
         const checks = await page.evaluate(() => {
             const checks = []; function check(value, message) { if (!value) throw Error(message); checks.push(message); }
             const A = ArenaCharacterCreation;
-            check(A.isCreated() && $gameMap.mapId() === 4, 'new-game-confirmed-arrival');
+            check(A.isCreated() && ($gameMap.mapId()===4||window.ArenaNarrative&&$gameMap.mapId()===8), 'new-game-confirmed-arrival');
             ArenaPersistence.setResource('vigor', 3, 100);
             check(A.confirmCurrent({ name: 'Duplicado', raceId: 'nord', genderId: 'male' }) === false, 'duplicate-confirmation-rejected');
             check(ArenaPersistence.identity().name === "Álvaro d'Água" && ArenaPersistence.snapshot().resources.vigor.current === 3, 'repeat-no-name-or-resource-reset');

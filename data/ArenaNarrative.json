@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "questId": "MQ01",
+  "picture": "arena_ria_narrativa_r02",
+  "sections": [
+    {
+      "id": "I01",
+      "phase": "intro",
+      "text": "Durante séculos, facções travaram pequenas guerras e disputas de fronteira. Em 2E 896, Tiber Septim derrotou seus adversários, tomou o poder e proclamou-se Imperador. Mas os anos amargos de guerra deixaram suas marcas."
+    },
+    {
+      "id": "I02",
+      "phase": "intro",
+      "text": "Tamriel, “Beleza da Aurora” na língua élfica, tornou-se um nome raro nos lábios aflitos. Onde vida e morte eram lados de uma moeda lançada a cada dia, o povo passou a chamar sua terra de sofrimento de Arena."
+    },
+    {
+      "id": "I03",
+      "phase": "intro",
+      "text": "Agora, uma nova ameaça surge. Enquanto o Imperador Uriel Septim VII celebra seu quadragésimo terceiro aniversário, corações invejosos cobiçam o trono e tramam sua queda. Dizem que a esperança voa nas asas da morte. Prepare-se: como previram os Pergaminhos Ancestrais, sua aventura começa aqui."
+    },
+    {
+      "id": "I04",
+      "phase": "intro",
+      "text": "O Imperador e Talin, líder da Guarda Imperial, atendem ao chamado do Mago de Batalha Jagar Tharn, que anuncia rumores de traição. O Imperador é traído e transportado para uma dimensão escolhida por Tharn. Após meses de preparação, o usurpador toma o trono."
+    },
+    {
+      "id": "I05",
+      "phase": "intro",
+      "text": "Ria Silmane, antiga aprendiz de Tharn, é capturada antes de alertar o Conselho dos Anciões. Manipulando a essência da magia, Tharn assume a aparência do verdadeiro Imperador e transforma seus servos em cópias distorcidas da Guarda Imperial."
+    },
+    {
+      "id": "R01",
+      "phase": "ria",
+      "text": "Não tema, sou eu, Ria Silmane. {nome}, escute: não resta mais ninguém para continuar esta luta. Deixaram você nesta cela para morrer. Jagar Tharn, Mago de Batalha Imperial de Tamriel, assumiu a aparência do verdadeiro Imperador. Ele não considera você uma ameaça, por ocupar apenas um pequeno lugar na Corte Imperial. Nessa arrogância, cometeu seu primeiro erro."
+    },
+    {
+      "id": "R02",
+      "phase": "ria",
+      "text": "Olhe para a parede norte desta cela. Você encontrará uma chave de rubi que abrirá a porta. Pegue-a e fuja. Tharn usava estas passagens para esconder tesouros roubados dos cofres do Imperador. Se quiser, poderá reunir o suficiente para se sustentar longe da sede imperial. Cuidado: muitas criaturas vivem agora nos esgotos, ratos repugnantes e goblins."
+    },
+    {
+      "id": "R03",
+      "phase": "ria",
+      "text": "Para mim é tarde demais, pois já estou morta. Somente meus poderes de feiticeira me mantêm entre esta vida e a próxima. Mas esse poder está se esvaindo. Não sucumba à ganância, ou estes túneis também poderão se tornar seu último repouso."
+    },
+    {
+      "id": "R04",
+      "phase": "ria",
+      "text": "Ainda consigo exercer minha magia até certo ponto. Se seguir para oeste a partir desta cela e depois para sul, encontrará um Shift Gate. Ele levará você para longe o bastante do centro do Império para ficar em segurança. Se sobreviver a estes esgotos, voltará a me ver."
+    },
+    {
+      "id": "R05",
+      "phase": "ria",
+      "text": "Lembre-se, {nome}: Tharn assumiu a aparência do Imperador. Ninguém contestará a palavra dele pela sua. Voltarei a você em seus sonhos; por isso é essencial repousar de tempos em tempos. Assim poderei me comunicar e oferecer ajuda."
+    },
+    {
+      "id": "R06",
+      "phase": "ria",
+      "text": "Você está entrando em uma arena perigosa, meu amigo, na qual os participantes são seres além da sua compreensão mortal. Não invejo seu papel. Há, porém, um poder dentro de você que ainda não foi despertado."
+    },
+    {
+      "id": "R07",
+      "phase": "ria",
+      "text": "Procure por mim quando tiver adquirido experiência no mundo. Você é minha última e melhor esperança."
+    }
+  ],
+  "ending": "Você alcançou o Shift Gate. Fim da demonstração M01 — a jornada de Arena continua além desta versão. Obrigado por jogar.",
+  "source": "MQ01_ESPECIFICACAO I01–I05/R01–R07/F01; TEMPLATE.DAT #1400 (offset299293) confirms Ria; UESP Main Quest PDF2 confirms introduction. F01 is product text, not original ending."
+}

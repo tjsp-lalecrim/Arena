@@ -59,7 +59,7 @@ var ArenaQuests;
   reachGate:function(){
    if(!inMap()||$gameMap.distance($gamePlayer.x,$gamePlayer.y,$arenaDungeon.gateApproach[0],$arenaDungeon.gateApproach[1])>1||quest().stage!==30)return false;
    var ok=atomic(function(){if(!move(40,view()))return false;ArenaEncounters.completeArea();return true;});
-   if(ok)$gameMessage.add('Objetivo MQ01 concluído.\nEncerramento narrativo reservado ao M01-18.');return ok;
+   if(ok){if(window.ArenaNarrative&&ArenaNarrative.isCampaign())ArenaNarrative.finish();else $gameMessage.add('MQ01 concluída neste teste técnico.\nA demo completa começa em Novo Jogo.');}return ok;
   },
   reconcile:reconcile,
   treasure:function(index){
