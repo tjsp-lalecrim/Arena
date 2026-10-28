@@ -1,3 +1,7 @@
+## Continuidade R02
+
+A confirmação do responsável cobre o funcionamento do uso de poções, não o descanso. A revisão R02 substitui as mensagens de sucesso descritas na R01 abaixo por barras animadas no quadro de atributos; consultar REVISAO_FEEDBACK_POCOES_M01_17_R02.md para implementação/evidências atuais. Regras e contratos R01 preservados.
+
 # M01-17 — poções e descanso, R01 (28/10/2026)
 
 Base: develop e69eec3, integração de M01-16 após registro da aprovação **visual** do diário disponível086264e. A aprovação não atesta fluxos de quest, persistência, respawn, autoria no MV ou dispositivos. M01-17 mantém a numeração do backlog e é desenvolvido em feature/m01-pocoes-descanso, sem integração automática.

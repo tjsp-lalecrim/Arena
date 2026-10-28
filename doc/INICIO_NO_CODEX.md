@@ -1,3 +1,7 @@
+## Revisão vigente M01-17 R02 — 28/10/2026
+
+Responsável confirmou funcionamento do uso de poções no estado disponível35ba624; não presumir tipos/casos, ambiente, descanso, persistência ou aprovação da nova UI. R02 substitui mensagens redundantes por barras no quadro existente, com estado/estoque imediato e preenchimento visual240ms, sem bloquear navegação. Mesma feature/m01-pocoes-descanso; regras, valores, descanso, combate, save e plugins preservados. Ler REVISAO_FEEDBACK_POCOES_M01_17_R02.md e evidencias/m01-17-r02. Critérios técnicos mantidos; revisão visual do responsável, novo ciclo de editor e A56 físico continuam separados e pendentes. Sem merge ou próximo backlog. Relatos anteriores são históricos quando divergirem.
+
 ## Estado vigente M01-17 — 28/10/2026
 
 M01-16 integrado/publicado em develop e69eec3, com aprovação restrita ao design do diário e REF06 futura, sem implementar notificações. M01-17 na feature/m01-pocoes-descanso: uso direto das três poções, revalidação na execução e cama técnica autorizada, reutilizando recursos/inventário/batalha/save. Sem cama confirmada no Map008; plataformas não viraram descanso. Ler POCOES_E_DESCANSO_M01_17.md e evidências próprias. Vigor aquático, bônus, arte e REF01 preservados. Concluído tecnicamente na feature para revisão; sem merge desta feature ou avanço para M01-18. Nova autoria/playtest no MV e Galaxy A56 físico permanecem pendentes, sem extrapolar a aprovação visual. Registros anteriores abaixo são históricos quando divergirem.

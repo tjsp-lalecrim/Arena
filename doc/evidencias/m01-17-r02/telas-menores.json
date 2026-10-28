@@ -1,0 +1,108 @@
+{
+  "browser": "156.0.8078.73",
+  "results": [
+    {
+      "name": "janela-menor",
+      "viewport": {
+        "width": 640,
+        "height": 480
+      },
+      "isMobile": false,
+      "result": {
+        "mp": 25,
+        "count": 0,
+        "bars": {
+          "hp": {
+            "shown": 100,
+            "from": 100,
+            "target": 100,
+            "maximum": 100,
+            "started": 1793187002684
+          },
+          "mp": {
+            "shown": 25,
+            "from": 0,
+            "target": 25,
+            "maximum": 50,
+            "started": 1793187003153
+          },
+          "vigor": {
+            "shown": 100,
+            "from": 100,
+            "target": 100,
+            "maximum": 100,
+            "started": 1793187002684
+          }
+        },
+        "stats": [
+          480,
+          424,
+          336,
+          200
+        ],
+        "modal": false,
+        "help": "Poção de Vigor\nRestaura 50 de Vigor.",
+        "canvas": {
+          "x": 6.15625,
+          "y": 0,
+          "width": 627.6875,
+          "height": 480
+        },
+        "engine": ""
+      },
+      "errors": []
+    },
+    {
+      "name": "toque-paisagem",
+      "viewport": {
+        "width": 916,
+        "height": 412
+      },
+      "isMobile": true,
+      "result": {
+        "mp": 25,
+        "count": 0,
+        "bars": {
+          "hp": {
+            "shown": 100,
+            "from": 100,
+            "target": 100,
+            "maximum": 100,
+            "started": 1793187005271
+          },
+          "mp": {
+            "shown": 25,
+            "from": 0,
+            "target": 25,
+            "maximum": 50,
+            "started": 1793187005616
+          },
+          "vigor": {
+            "shown": 100,
+            "from": 100,
+            "target": 100,
+            "maximum": 100,
+            "started": 1793187005271
+          }
+        },
+        "stats": [
+          480,
+          424,
+          336,
+          200
+        ],
+        "modal": false,
+        "help": "Poção de Vigor\nRestaura 50 de Vigor.",
+        "canvas": {
+          "x": 188.609375,
+          "y": 0,
+          "width": 538.765625,
+          "height": 412
+        },
+        "engine": ""
+      },
+      "errors": []
+    }
+  ],
+  "physicalDevice": false
+}

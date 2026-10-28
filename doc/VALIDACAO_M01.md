@@ -1,3 +1,7 @@
+## Revisão vigente M01-17 R02 — 28/10/2026
+
+Responsável confirmou funcionamento do uso de poções no estado disponível35ba624; não presumir tipos/casos, ambiente, descanso, persistência ou aprovação da nova UI. R02 substitui mensagens redundantes por barras no quadro existente, com estado/estoque imediato e preenchimento visual240ms, sem bloquear navegação. Mesma feature/m01-pocoes-descanso; regras, valores, descanso, combate, save e plugins preservados. Ler REVISAO_FEEDBACK_POCOES_M01_17_R02.md e evidencias/m01-17-r02. Critérios técnicos mantidos; revisão visual do responsável, novo ciclo de editor e A56 físico continuam separados e pendentes. Sem merge ou próximo backlog. Relatos anteriores são históricos quando divergirem.
+
 ## Evidência M01-17 R01
 
 Implementação b33af89; resultados finais em evidencias/m01-17/fontes-testadas.json:9 grupos de recuperação,2 telas menores,619 verificações de recursos,18 cenários de inventário,7 de comparação,13 grupos de combate,23 MQ01 e5 de diário. Validações estáticas também passaram. Detalhes, fontes e critérios em POCOES_E_DESCANSO_M01_17.md. Novo ciclo de editor e A56 físico explicitamente pendentes; não atribuídos ao responsável.

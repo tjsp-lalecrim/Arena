@@ -6,7 +6,7 @@ const fs=require('fs'),assert=require('node:assert/strict'),{chromium}=require('
   for(const [name,viewport,isMobile]of [['janela-menor',{width:640,height:480},false],['toque-paisagem',{width:916,height:412},true]]){
    const c=await b.newContext({viewport,hasTouch:true,isMobile,deviceScaleFactor:1}),p=await c.newPage(),errors=[];
    p.on('pageerror',e=>errors.push(e.message));
-   await p.goto(process.env.ARENA_URL||'http://127.0.0.1:8766/');await p.waitForFunction(()=>window.ArenaRecovery&&SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
+   await p.goto(process.env.ARENA_URL||'http://127.0.0.1:8766/');await p.waitForFunction(()=>window.ArenaRecovery&&SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive()&&!SceneManager._scene.isBusy()&&!SceneManager.isSceneChanging());
    await p.evaluate(()=>{ArenaBattle.startLab();$gameTemp._arenaInventoryLab=true;});await p.waitForFunction(()=>SceneManager._scene instanceof Scene_ArenaInventory&&SceneManager._scene.isActive());
    await p.evaluate(()=>{const s=SceneManager._scene,a=$gameActors.actor(1);a.setMp(0);s.setMode('inventory');s._nav.select(0);s._itemWindow.select(s._itemWindow._data.findIndex(i=>i&&DataManager.isItem(i)&&i.id===3));});
    const point=await p.evaluate(()=>{const w=SceneManager._scene._itemWindow,r=w.itemRect(w.index()),c=Graphics._canvas.getBoundingClientRect();return{x:c.x+(w.x+w.padding+r.x+r.width/2)*c.width/Graphics.width,y:c.y+(w.y+w.padding+r.y+50)*c.height/Graphics.height};});
