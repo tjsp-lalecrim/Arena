@@ -1,0 +1,31 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "real MQ01 pending,auto-selected only option,no future quest/step,empty completed filter,navigation read-only",
+    "many quests/filters,long names/paragraphs/unbroken tokens/29 revealed steps;separate wheel/keyboard scrolling,quest switch/reopen preserves reading and selection,no gameplay changes",
+    "status reads completed boolean rather than text/stage40;live progress and native save21/load refresh without regrant",
+    "640x480 reflow/list-detail tabs,hidden panels lack controls,full text sizes,canvas restored on exit,read-only",
+    "generic Android916x412 emulation uses916x412 journal,44px tabs/buttons,tap filters/back and drag correct pane,restores game resolution;not A56 physical"
+  ],
+  "errors": [],
+  "resolutions": [
+    [
+      816,
+      624
+    ],
+    [
+      640,
+      480
+    ],
+    [
+      916,
+      412
+    ]
+  ],
+  "isolation": "Disposable contexts/save21; synthetic definitions/states in memory only,production data contains only MQ01; intentional fixture progress/load separate from UI read-only checks",
+  "pending": [
+    "owner aesthetic/navigation review",
+    "native MV authoring/playtest this UI version",
+    "physical Galaxy A56"
+  ]
+}

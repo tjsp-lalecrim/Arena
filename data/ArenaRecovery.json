@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "actorId": 1,
+  "potionIds": [
+    2,
+    3,
+    4
+  ],
+  "restPoints": [
+    {
+      "id": "lab.resources.bed",
+      "mapId": 5,
+      "eventId": 6,
+      "technical": true,
+      "source": "Cama técnica isolada M01-08/17; não representa cama confirmada nas Masmorras Imperiais."
+    }
+  ],
+  "menuIntervalMs": 500
+}

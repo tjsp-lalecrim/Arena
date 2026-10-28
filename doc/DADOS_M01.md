@@ -1,3 +1,7 @@
+## Integração M01-17
+
+M01-17: Items2/3/4 mantidos em50HP/25MP/50Vigor e estoque nativo; ArenaRecovery.json contém apenas política de uso e pontos autorizados. HP/MP, inventário, Vigor e progressão não são duplicados. Map005/evento6 é o único ponto de descanso configurado; Map008 permanece sem cama confirmada. Sem nova migração. Detalhes em POCOES_E_DESCANSO_M01_17.md.
+
 # Banco mínimo e convenções M01
 
 Estado atual M01-12: INVT/EQ nativos com transação/slots e material derivado mínimo nas16 identidades; banco/IDs/bônus/custos aprovados preservados. Map007/evento8 é somente técnico. M01-10/11 já integrados; afirmações de cobertura parcial/desativação antigas abaixo são históricas. Ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

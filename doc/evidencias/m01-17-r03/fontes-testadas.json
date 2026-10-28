@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-28",
+  "base": "bd108c5",
+  "implementationCommit": "2a622c94e7386b0551efc45eb8e789400282b577",
+  "branch": "feature/m01-pocoes-descanso",
+  "browser": "156.0.8078.73",
+  "sources": {
+    "js/plugins/Arena_Recovery.js": "d783888124a65cf0c5d8c9fe257506a10be5c1b0deab62a023e555bc60c28899",
+    "js/plugins/Arena_Inventory.js": "003ea2328918fc4db084ec24d682847d51cd73b419bddc6e975556144e08bdac",
+    "js/plugins.js": "2d1563da4a1f765221fa39e1dea351d78d13585f9108daf43cc9fd528b191ca2",
+    "data/ArenaRecovery.json": "4725f6ebd2dc61790e24268392e8fc2ce888d4ab0e2145714c18dc87dae979a2",
+    "data/Items.json": "aa98e75a80e6f37b9beff9cb4ccbb3e327998edf0e67f95f0d8e8dbb2da5e480",
+    "js/plugins/Arena_Resources.js": "4e7d4bde0bf824b62957a6b6f2f0395f333b97991a72059c5135c96e85f77f4b",
+    "js/plugins/Arena_BattleUI.js": "277c914815e7885564bccc5b5357f4f506eef4c5d8288712b37bde419d388a26",
+    "js/plugins/Arena_Persistence.js": "d790ff6ded0ef0d9e17e6c3169ba6690398ac9e244da6fa91627ca9e5715f84c"
+  },
+  "runs": [
+    {
+      "script": "test-potion-menu-guard.cjs",
+      "groups": 8,
+      "result": "resultado.json",
+      "status": "passed",
+      "configuration": "default500ms; explicit100ms configurability fixture at end"
+    },
+    {
+      "script": "test-potion-feedback.cjs",
+      "groups": 5,
+      "result": "regressoes/visual/resultado.json",
+      "status": "passed",
+      "configuration": "menuIntervalMs0 only in this isolated fixture to stress bar retargeting; native fresh press/release retained"
+    },
+    {
+      "script": "test-recovery.cjs",
+      "groups": 9,
+      "result": "regressoes/recuperacao/resultado.json",
+      "status": "passed",
+      "configuration": "default500ms; normal uses wait deadline"
+    },
+    {
+      "script": "test-inventory.cjs",
+      "groups": 18,
+      "result": "regressoes/inventario/resultado.json",
+      "status": "passed",
+      "configuration": "default500ms; normal uses wait deadline"
+    },
+    {
+      "script": "test-recovery-small.cjs",
+      "viewports": [
+        [
+          640,
+          480
+        ],
+        [
+          916,
+          412
+        ]
+      ],
+      "result": "regressoes/telas/telas-menores.json",
+      "status": "passed",
+      "configuration": "default500ms"
+    }
+  ],
+  "static": [
+    "validate-potion-menu-guard.cjs",
+    "validate-potion-feedback.cjs",
+    "validate-recovery.cjs"
+  ],
+  "manual": "R02 visual feedback approval only, availablebd108c5; see aprovacao-feedback-r02.json",
+  "pending": [
+    "Owner interaction review of R03",
+    "New MV1.6.1 editor session",
+    "Physical Galaxy A56 in M01-19",
+    "Combat balancing M01-20; unchanged this task"
+  ],
+  "isolation": "Disposable Chrome contexts; no personal saves. Test-only in-memory stock/resources. Local test server infrastructure restarted after connection refusal, no runtime workaround.",
+  "queue": "No timer or queue invokes use; pending=null asserted after ignored requests and expiry; later fresh gesture required."
+}

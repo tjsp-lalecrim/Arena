@@ -1,0 +1,458 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "keyboard/mouse/touch each use one potion immediately via native item scene; navigation no consumption; no modal",
+    "recovery clamps at maximum; full resources refuse use without consuming any potion",
+    "stale unavailable item rejected; cancel selection preserves resources, stock, quest and progression",
+    "native save/load preserves spent three resources and inventory; no map passive regeneration",
+    "native bed event restores all three once/no changes to inventory/quest/progression; repeated rest harmless; unauthorized/battle/remote/vehicle/dialogue rejected",
+    "native save/load after rest preserves restored current/max values and eligible map",
+    "all 16 identities have no passive HP/Mana/Vigor regeneration in native turn regeneration",
+    "Argonian female +10 initial and chosen +10 growth retained once after recovery/save/load",
+    "three native battle potion turns consume once; forced unavailable/repeated/no-effect actions rejected without payment"
+  ],
+  "argonian": {
+    "hp": {
+      "current": 100,
+      "maximum": 100,
+      "base": 100,
+      "growth": 0,
+      "modifiers": 0
+    },
+    "mp": {
+      "current": 50,
+      "maximum": 50,
+      "base": 50,
+      "growth": 0,
+      "modifiers": 0
+    },
+    "vigor": {
+      "current": 120,
+      "maximum": 120,
+      "base": 100,
+      "growth": 10,
+      "initialBonus": 10,
+      "modifiers": 0
+    },
+    "level": 2,
+    "baselineLevel": 1,
+    "choices": {
+      "2": {
+        "resourceId": "vigor",
+        "amount": 10
+      }
+    },
+    "pending": []
+  },
+  "passive": [
+    {
+      "race": "argonian",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "before": [
+        10,
+        0,
+        0
+      ],
+      "after": [
+        10,
+        0,
+        0
+      ]
+    }
+  ],
+  "guards": [
+    {
+      "ok": false,
+      "reason": "Descanso indisponível neste local ou situação."
+    },
+    {
+      "ok": false,
+      "reason": "Descanso indisponível neste local ou situação."
+    },
+    {
+      "ok": false,
+      "reason": "Descanso indisponível neste local ou situação."
+    },
+    {
+      "ok": false,
+      "reason": "Descanso indisponível neste local ou situação."
+    }
+  ],
+  "rested": {
+    "resources": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 1,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": []
+    },
+    "items": [
+      1,
+      1,
+      1
+    ],
+    "quest": {
+      "MQ01": {
+        "stage": 0,
+        "objectives": {},
+        "completed": false,
+        "receipts": {}
+      }
+    },
+    "progression": {
+      "initialized": true,
+      "baselineLevel": 1,
+      "base": {
+        "hp": 100,
+        "mp": 50,
+        "vigor": 100
+      },
+      "initialVigorBonus": 0,
+      "choices": {},
+      "vigorModifiers": {
+        "external": 0
+      }
+    }
+  },
+  "trace": [
+    {
+      "id": 2,
+      "count": 0,
+      "resources": {
+        "hp": {
+          "current": 80,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 0,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 0,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      }
+    },
+    {
+      "id": 3,
+      "count": 0,
+      "resources": {
+        "hp": {
+          "current": 70,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 25,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 0,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      }
+    },
+    {
+      "id": 4,
+      "count": 0,
+      "resources": {
+        "hp": {
+          "current": 70,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "mp": {
+          "current": 25,
+          "maximum": 50,
+          "base": 50,
+          "growth": 0,
+          "modifiers": 0
+        },
+        "vigor": {
+          "current": 50,
+          "maximum": 100,
+          "base": 100,
+          "growth": 0,
+          "initialBonus": 0,
+          "modifiers": 0
+        },
+        "level": 1,
+        "baselineLevel": 1,
+        "choices": {},
+        "pending": []
+      }
+    }
+  ],
+  "faults": {
+    "results": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "unchanged": true
+  },
+  "errors": [],
+  "isolation": "Disposable Chrome context/save17; no personal saves; fixture grants only technical kit"
+}

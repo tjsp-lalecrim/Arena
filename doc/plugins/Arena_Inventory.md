@@ -1,3 +1,13 @@
+## R02 M01-17 — Arena_Inventory0.3.0
+
+Somente Stats e descrição de seleção foram alterados. Quadro336×200 preservado, barras Vida/Mana/Vigor em três linhas, seis atributos em duas colunas e material. Remove miniaturas desse quadro, preservando appearance(map/battle), ícones, comparação, equipamentos, drag/drop e consumo nativo. Fontes existentes mantidas. Os números vêm de ArenaResources.snapshot e mudam imediatamente; preenchimento interpola por240ms com Date.now. Mudança de destino parte do preenchimento atual, sem fila/timers/callbacks; redução se apresenta imediatamente. Entrada na cena inicia nas quantidades reais, sem animação de0. Estado gráfico _resourceBars pertence somente à janela e não é persistido. Não altera ator, máximos, TP ou APIs de recuperação.
+
+Descrições não repetem a quantidade já mostrada no slot. Confirmações necessárias/proteções não mudaram. Painel redesenha ao mudar dados/atributos/equipamentos ou durante transição; permanece navegável. Validação: test-potion-feedback, test-recovery-small e regressões M01-17 R02. Documentos abaixo de versão0.2 são históricos quando divergirem. Sem parâmetros/configuração de balanceamento novos; js/plugins.js mantém integralmente os registros existentes.
+
+## Integração M01-17
+
+M01-17: Arena_Recovery opcionalmente estende onContentOk para uso direto exclusivo das poções2/3/4. Reutiliza commit e Scene_ItemBase existentes; confirmações de equipamento/livro permanecem. Menu base/código deste plugin não foram reescritos. As descrições históricas de confirmação de poções abaixo foram superadas por essa integração.
+
 # Arena_Inventory0.2.0
 
 Codex, após **Arena_BattleUI e MV_EquipmentTransaction**. Dependências reais: APIs ArenaCharacterCreation, ArenaPersistence, ArenaAbilities, ArenaResources/ArenaBattleMotion e fluxo nativo MV. Sem plugins externos/Battlespire. Sem parâmetros/comandos do gerenciador; configuração/IDs em data/ArenaInventory.json.

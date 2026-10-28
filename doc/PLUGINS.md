@@ -1,3 +1,15 @@
+## M01-17 R03
+
+Arena_Recovery0.3.0 acrescenta proteção de entrada de poções somente no menu, configuração menuIntervalMs500 e estado transitório Game_Temp. Mesmos30 registros canônicos; sem consumidor, cooldown de combate ou dados persistentes novos. Arena_Inventory0.3.0/barras aprovadas inalterados. Ver plugins/Arena_Recovery.md e PROTECAO_POCOES_M01_17_R03.md.
+
+## M01-17 R02
+
+Arena_Inventory0.3.0: quadro existente com barras e atributos, apresentação transitória240ms; Arena_Recovery0.2.0: sucesso sem mensagem redundante. Somente código de apresentação alterado; mesmos30 registros/parâmetros no formato canônico, sem dependência externa, namespace de save ou consumidor novo. Documentação em plugins/ e REVISAO_FEEDBACK_POCOES_M01_17_R02.md.
+
+## Integração M01-17
+
+M01-17: Arena_Recovery0.1.0 após os29 registros preservados (total30), configuração ArenaRecovery.json. Uso direto de poções, autorização de descanso e guard de execução; nenhum consumidor duplicado ou novo save. Documentação em plugins/Arena_Recovery.md.
+
 # Criação e documentação de plugins
 
 Estado atual M01-12 R02: Arena_Inventory0.2.0 refina slots/ícones e modal comparativo sem alterar APIs/save ou dados;20 registros no formato canônico,18 anteriores preservados; novos MV_EquipmentTransaction e Arena_Inventory. Sem dependência externa/Battlespire. Documentação dos dois em doc/plugins e relatório INVENTARIO_E_EQUIPAMENTOS_M01_12.md.

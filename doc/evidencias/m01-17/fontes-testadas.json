@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-28",
+  "branch": "feature/m01-pocoes-descanso",
+  "base": "e69eec3",
+  "implementationCommit": "b33af895ebe897b91ca4fdca680a09694e54ca49",
+  "sources": {
+    "js/plugins.js": "2d1563da4a1f765221fa39e1dea351d78d13585f9108daf43cc9fd528b191ca2",
+    "js/plugins/Arena_Recovery.js": "60201fb142bf36a21934cc4a9a1e542a8432c805fa44426c95b9d1850d12552e",
+    "data/ArenaRecovery.json": "54e3129cdf2b000adcfa1c72a147b4e5e5f2fd31baf848dde3bcbf5be8594470",
+    "data/Map005.json": "70c15d7fb8c8fb042005a42e5fa85c3b2967ec545e7bf1e749b6b8039da2b2d6",
+    "data/Map008.json": "59c51f3465ac8b61999b6e9af8ebf72dfed8342ebc518c7ac6f1aca208a5f0a6",
+    "data/Items.json": "aa98e75a80e6f37b9beff9cb4ccbb3e327998edf0e67f95f0d8e8dbb2da5e480",
+    "js/plugins/Arena_Resources.js": "4e7d4bde0bf824b62957a6b6f2f0395f333b97991a72059c5135c96e85f77f4b",
+    "js/plugins/Arena_Inventory.js": "667f2e3ac9b22ead5836856fb4c47bb7192983eb8d9683ea4088be121e6a8973",
+    "js/plugins/Arena_Abilities.js": "fc41b0795c6c22f708e7c54f31abd785d03c72ebd1ac0d93b104d53da5dd8b60",
+    "js/plugins/Arena_Persistence.js": "d790ff6ded0ef0d9e17e6c3169ba6690398ac9e244da6fa91627ca9e5715f84c",
+    "js/plugins/Arena_BattleUI.js": "277c914815e7885564bccc5b5357f4f506eef4c5d8288712b37bde419d388a26"
+  },
+  "runs": [
+    {
+      "script": "tools/test-recovery.cjs",
+      "result": "resultado.json",
+      "checkGroups": 9,
+      "status": "passed"
+    },
+    {
+      "script": "tools/test-recovery-small.cjs",
+      "result": "telas-menores.json",
+      "checkGroups": 2,
+      "status": "passed"
+    },
+    {
+      "script": "tools/test-resources-progression.cjs",
+      "result": "regressoes/recursos/resultado.json",
+      "checkGroups": 619,
+      "status": "passed"
+    },
+    {
+      "script": "tools/test-inventory.cjs",
+      "result": "regressoes/inventario/resultado.json",
+      "checkGroups": 18,
+      "status": "passed"
+    },
+    {
+      "script": "tools/test-inventory-comparison.cjs",
+      "result": "regressoes/comparacao/comparacao.json",
+      "checkGroups": 7,
+      "status": "passed"
+    },
+    {
+      "script": "tools/test-battle.cjs",
+      "result": "regressoes/combate/resultado.json",
+      "checkGroups": 13,
+      "status": "passed"
+    },
+    {
+      "script": "tools/test-quests.cjs",
+      "result": "regressoes/quests/resultado.json",
+      "checkGroups": 23,
+      "status": "passed"
+    },
+    {
+      "script": "tools/test-journal.cjs",
+      "result": "regressoes/diario/resultado.json",
+      "checkGroups": 5,
+      "status": "passed"
+    }
+  ],
+  "static": [
+    "validate-recovery",
+    "validate-resources",
+    "validate-data",
+    "validate-journal",
+    "validate-encounters (inclui validate-quests)"
+  ],
+  "scope": "Chrome com motor MV1.6.1, contextos descartáveis; não saves pessoais ou playtest manual do responsável",
+  "pending": [
+    "Autoria/gerenciador e playtest desta versão no editor MV1.6.1",
+    "Galaxy A56 físico em M01-19",
+    "Balanceamento prático M01-20"
+  ],
+  "notes": [
+    "Regressão de batalha passou após atualizar o roteiro antigo para reconhecer o resumo de loot existente; espera de entrada estabilizada. Nenhuma correção no motor.",
+    "Timeout inicial da fixture legada de quests: execução serial final passou nos23 casos, sem mudança do código da quest.",
+    "Após regressões houve somente correção de grafia na descrição do registro novo e alinhamento da validação de configuração aos marcadores reais de itens importantes. Teste pequeno com carregamento e uso nativo reexecutado em b33af89 passou. Corpo dos fluxos de recuperação não mudou.",
+    "Rato500HP na captura de poções é fixture em memória para permitir três turnos, não balanceamento do banco."
+  ]
+}
