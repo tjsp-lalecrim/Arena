@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18 adiciona MV_NarrativePages0.1.0 e Arena_Narrative0.1.0 após os30 registros preservados (total32), dados ArenaNarrative.json e namespace arenaNarrative v1. Sem plugin externo, alteração de motor ou nova arte. Documentação em plugins/Arena_Narrative.md e NARRATIVA_M01_18.md.
+
 ## M01-17 R03
 
 Arena_Recovery0.3.0 acrescenta proteção de entrada de poções somente no menu, configuração menuIntervalMs500 e estado transitório Game_Temp. Mesmos30 registros canônicos; sem consumidor, cooldown de combate ou dados persistentes novos. Arena_Inventory0.3.0/barras aprovadas inalterados. Ver plugins/Arena_Recovery.md e PROTECAO_POCOES_M01_17_R03.md.

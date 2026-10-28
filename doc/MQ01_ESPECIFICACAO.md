@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18 confirma R01–R07 no recurso original TEMPLATE.DAT#1400 e integra I01–I05/Ria/diário/F01; textos pt-BR desta especificação preservados. HISTORY.IMG possui um contexto de guardião/aniversário17 não confirmado como sequência ativa da edição, registrado sem impor idade. INTRO.FLC não foi reproduzido com sucesso. NARRATIVA_M01_18.md separa fonte primária, transcrição complementar e adaptações. Ria R02 aprovada é reutilizada somente na visão do sonho.
+
 # MQ01 — Masmorras Imperiais
 
 Especificação M01-02, 25/10/2026. Conteúdo definido para implementação; não comprova eventos implementados. Término obrigatório: alcançar o Shift Gate, sem cidade de destino, chefe adicional ou M02.

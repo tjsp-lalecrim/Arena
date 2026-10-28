@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18: ArenaNarrative.json schemaVersion1 contém12 entradas I01–I05/R01–R07 e F01/asset. Namespace arenaNarrative v1 registra somente leitura/contexto (mode,phase,section,word,history) e operação gate. MQ01, inventário e recursos mantêm suas autoridades. Defaults de saves antigos são technical/none; novos jogos pelo commit da criação iniciam campaign/intro. Ver NARRATIVA_M01_18.md.
+
 ## Integração M01-17
 
 M01-17: Items2/3/4 mantidos em50HP/25MP/50Vigor e estoque nativo; ArenaRecovery.json contém apenas política de uso e pontos autorizados. HP/MP, inventário, Vigor e progressão não são duplicados. Map005/evento6 é o único ponto de descanso configurado; Map008 permanece sem cama confirmada. Sem nova migração. Detalhes em POCOES_E_DESCANSO_M01_17.md.

@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18 implementa o fluxo normal Novo Jogo/criação/introdução/Ria/dungeon/Gate/F01, com persistência e retorno ao título. Laboratórios no título permanecem separados. Implementação técnica para revisão; não significa M01 inteiro validado ou release. Roteiro, fonte original, limites de balanceamento/velocidade, editor e mobile em NARRATIVA_M01_18.md.
+
 # Primeiro marco: introdução e dungeon inicial
 
 Este documento especifica M01, correspondente à quest MQ01 — Imperial Dungeons e à introdução. Os marcos seguintes acompanham as demais quests principais conforme MARCOS_DO_PROJETO.md.

@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18: executar validate-narrative, test-narrative e test-narrative-small; ARENA_URL/ARENA_EVIDENCE_DIR opcionais para contexto isolado. O roteiro completo usa232 movimentos nativos com velocidade6 só para teste e não mede balanceamento; não ocorreu encontro no resultado final.8 grupos de fluxo,6 de entrada/telas menores e108 matrizes de paginação; regressões234 criação/23 MQ01/27 persistência. Roteiro manual e lacunas em NARRATIVA_M01_18.md. Nenhum save pessoal ou teste físico foi usado.
+
 ## M01-17 R03
 
 Roteiro test-potion-menu-guard.cjs para duplo clique, tecla/mouse mantidos, toques rápidos, troca de poção, gesto iniciado bloqueado/solto após prazo, novas pressões, sem fila, inválidos sem reiniciar, navegação e configuração. ARENA_URL/ARENA_EVIDENCE_DIR isolados. Regressões normais respeitam500ms; teste visual R02 usa0 somente na fixture para stress de animação com novas pressões. Dados de produção permanecem500. Não usar esse cenário de stress como prova da proteção: seu roteiro próprio usa os500ms reais. Evidências e pendências em PROTECAO_POCOES_M01_17_R03.md.

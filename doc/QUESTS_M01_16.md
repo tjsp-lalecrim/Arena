@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18 integra começo normal após Ria e encerramento em reachGate somente para modo campanha. Transações/etapas/chave/tesouros/respawn permanecem intactos. Bootstrap continua exclusivamente útil nas entradas técnicas/legadas. Game novo normal não recebe orientação duplicada em mensagem no mapa. Ver NARRATIVA_M01_18.md; o diário não virou autoridade do progresso narrativo.
+
 # M01-16 — MQ01, diário e recuperação
 
 Base integrada `develop534ff7b`, feature `feature/m01-quests`. Numeração confirmada no backlog: M01-16 é MQ01/diário/redundância de itens importantes. A avaliação do responsável sobre combate satisfatório no estado disponível081222a foi registrada em `evidencias/m01-15/confirmacao-responsavel.json`, sem atribuir teste manual de respawn, persistência, ambiente ou dispositivos. M01-15 fechado tecnicamente pelo commit7b14719, integrado/publicado em develop534ff7b; critérios sustentados pelas evidências técnicas já identificadas. Autorias novas no editor e mobile não foram presumidas.

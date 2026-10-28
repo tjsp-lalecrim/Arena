@@ -1,3 +1,7 @@
+## Uso narrativo M01-18
+
+Ria R02 aprovada é reutilizada sem regeneração/edição, com quadro integral e texto em coluna separada. Nenhum protagonista nas ilustrações. Cronologia I01–I05 é textual para não apresentar a visão de Ria morta como cena da corte anterior à morte. Fonte visual original e hash/prompt já aprovado identificados em arte/USO_RIA_M01_18.md; nova composição de leitura permanece para avaliação, sem atribuir aprovação estética automática ao teste técnico.
+
 # Direção de arte e padrão de geração
 
 Estado atual M01-12: movimento/identidade atuais preservados e combate considerado satisfatório pelo responsável em rodada anterior. Gerados somente dois materiais de torso (couro/malha), sem novas poses/retratos; amostra mínima em revisão, não figurino final. Registros completos em arte/MATERIAIS_M01_12_*.json. Relatos de cobertura parcial M01-10 abaixo são históricos.

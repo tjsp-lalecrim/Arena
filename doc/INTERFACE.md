@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18: leitura por páginas estáveis de palavras, Voltar/Salvar/Continuar e F01 com retorno ao título, reflow mínimo640×400, botões44px. Guards de soltura evitam avanço/salvamento/ativação seguinte por comando mantido; sem novas notificações de quest. Título limita a janela a6 linhas com rolagem nativa para preservar acessos técnicos e manter Novo Jogo visível. NARRATIVA_M01_18.md registra testes e avaliação visual ainda pendente.
+
 ## M01-17 R03 — proteção de entrada
 
 O responsável aprovou a correção visual R02 no estado disponívelbd108c5. Essa composição permanece inalterada. R03 adiciona somente intervalo de menu configurável500ms compartilhado pelas poções e exigência de nova pressão após soltura. Indisponibilidade breve indicada nos slots, sem mensagens/confirmadores, sem impedir navegação ou animação. Nenhum uso fica enfileirado. Não é regra de combate. Avaliação manual da proteção nova permanece pendente; detalhes em PROTECAO_POCOES_M01_17_R03.md.
