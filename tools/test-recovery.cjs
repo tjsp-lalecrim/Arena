@@ -8,11 +8,11 @@ const fs=require('fs'),assert=require('node:assert/strict'),{chromium}=require('
   p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)errors.push(r.url());});
   const key=async k=>{await p.keyboard.press(k,{delay:100});await p.waitForTimeout(180);};
   await p.goto(process.env.ARENA_URL||'http://127.0.0.1:8766/');
-  await p.waitForFunction(()=>window.ArenaRecovery&&SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
+  await p.waitForFunction(()=>window.ArenaRecovery&&SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive()&&!SceneManager._scene.isBusy()&&!SceneManager.isSceneChanging());
   await p.evaluate(()=>{ArenaBattle.startLab();$gameTemp._arenaInventoryLab=true;});
   await p.waitForFunction(()=>SceneManager._scene instanceof Scene_ArenaInventory&&SceneManager._scene.isActive());
   const snap=()=>p.evaluate(()=>({resources:ArenaResources.snapshot(),items:[2,3,4].map(id=>$gameParty.numItems($dataItems[id])),quest:ArenaPersistence.snapshot().quests,progression:MVStateStore.read('arenaResources')}));
-  const pick=async id=>p.evaluate(id=>{const s=SceneManager._scene,n=s._entries.findIndex(i=>i&&DataManager.isItem(i)&&i.id===id);if(n<0)throw Error('Missing potion '+id);s._page=Math.floor(n/$arenaInventory.pageSize);s.refreshEntries();s.focus(s._itemWindow);s._itemWindow.select(n%$arenaInventory.pageSize);},id);
+  const pick=async id=>{await p.waitForTimeout(await p.evaluate(()=>Math.max(0,($gameTemp._arenaPotionMenuGate||{}).until-Date.now()+25)||0));return p.evaluate(id=>{const s=SceneManager._scene,n=s._entries.findIndex(i=>i&&DataManager.isItem(i)&&i.id===id);if(n<0)throw Error('Missing potion '+id);s._page=Math.floor(n/$arenaInventory.pageSize);s.refreshEntries();s.focus(s._itemWindow);s._itemWindow.select(n%$arenaInventory.pageSize);},id);};
   const point=()=>p.evaluate(()=>{const w=SceneManager._scene._itemWindow,r=w.itemRect(w.index()),c=Graphics._canvas.getBoundingClientRect();return {x:c.x+(w.x+w.padding+r.x+r.width/2)*c.width/Graphics.width,y:c.y+(w.y+w.padding+r.y+40)*c.height/Graphics.height};});
   const shot=async n=>{await p.waitForTimeout(160);await p.locator('#GameCanvas').screenshot({path:out+'/'+n+'.png'});};
   await p.evaluate(()=>{[2,3,4].forEach(id=>$gameParty.gainItem($dataItems[id],3-$gameParty.numItems($dataItems[id])));const a=$gameActors.actor(1);a.setHp(20);a.setMp(0);ArenaPersistence.setResource('vigor',20,ArenaResources.snapshot().vigor.maximum);SceneManager._scene.setMode('inventory');SceneManager._scene._nav.select(0);});
@@ -52,7 +52,7 @@ const fs=require('fs'),assert=require('node:assert/strict'),{chromium}=require('
   checks.push('native bed event restores all three once/no changes to inventory/quest/progression; repeated rest harmless; unauthorized/battle/remote/vehicle/dialogue rejected');
   await p.evaluate(()=>{$gameSystem.onBeforeSave();if(!DataManager.saveGame(17)||!DataManager.loadGame(17))throw Error('save/load rest');$gameSystem.onAfterLoad();SceneManager.goto(Scene_Map);});await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Map&&SceneManager._scene.isActive());assert.deepEqual(await snap(),rested);checks.push('native save/load after rest preserves restored current/max values and eligible map');
   // Argonian's approved initial +10 Vigor survives potions, rest and save/load.
-  await p.evaluate(()=>SceneManager.goto(Scene_Title));await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
+  await p.evaluate(()=>SceneManager.goto(Scene_Title));await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive()&&!SceneManager._scene.isBusy()&&!SceneManager.isSceneChanging());
   const passive=await p.evaluate(()=>{
    const results=[];for(const r of $arenaCharacterCatalog.races)for(const gender of ['male','female']){
     DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Sem regeneração',raceId:r.id,genderId:gender});

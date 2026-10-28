@@ -14,5 +14,6 @@
       "technical": true,
       "source": "Cama técnica isolada M01-08/17; não representa cama confirmada nas Masmorras Imperiais."
     }
-  ]
+  ],
+  "menuIntervalMs": 500
 }

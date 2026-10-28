@@ -1,8 +1,9 @@
 /*:
- * @plugindesc v0.2.0 Poções com feedback visual e descanso autorizado (M01-17).
+ * @plugindesc v0.3.0 Poções com proteção de entrada no menu e descanso autorizado.
  * @author Codex
  * @help Após Arena_Resources, Arena_Inventory e Arena_BattleUI. Sem dependências externas.
  * Configuração: data/ArenaRecovery.json. Não há parâmetros no gerenciador.
+ * menuIntervalMs: inteiro >=0, padrão500; mesmo com0 exige nova pressão/soltura.
  * ArenaRecovery.restAt(id, interpreter) valida o ponto antes de ArenaResources.rest().
  * Eventos: passar this (Game_Interpreter). Não concede itens ou altera progressão.
  * Poções configuradas usam o fluxo nativo existente, sem confirmação intermediária.
@@ -31,6 +32,7 @@ var ArenaRecovery;
                             typeof p.technical !== 'boolean' || !p.source) return false;
                     ids[p.id] = true; return true;
                 })) throw new Error('Arena: configuração de recuperação inválida. Confira ArenaRecovery.json.');
+        if (c.menuIntervalMs !== undefined && (!Number.isInteger(c.menuIntervalMs) || c.menuIntervalMs < 0)) throw new Error('Arena: menuIntervalMs deve ser inteiro não negativo.');
         return true;
     };
     function actor() { return $gameActors.actor($arenaRecovery.actorId); }
@@ -54,14 +56,66 @@ var ArenaRecovery;
         }
     };
     // The inventory already owns native effect/consumption handling. Keep that single path.
+    function interval() { return $arenaRecovery.menuIntervalMs === undefined ? 500 : $arenaRecovery.menuIntervalMs; }
+    function gate() {
+        return $gameTemp._arenaPotionMenuGate || ($gameTemp._arenaPotionMenuGate = {
+            until: 0, duration: 0, awaitRelease: false, keyArmed: false, pointerArmed: false
+        });
+    }
+    function blocked() { var g=gate(); return Date.now()<g.until || g.awaitRelease; }
+    var create = Scene_ArenaInventory.prototype.create;
+    Scene_ArenaInventory.prototype.create = function() {
+        create.apply(this, arguments);
+        var scene=this,processOk=this._itemWindow.processOk;
+        this._itemWindow.processOk=function(){
+            if(!potion(this.item()))return processOk.apply(this,arguments);
+            if(blocked()||!gate().keyArmed)return;
+            scene._arenaPotionKeyboardDispatch=true;
+            try{return processOk.apply(this,arguments);}
+            finally{scene._arenaPotionKeyboardDispatch=false;}
+        };
+        var draw = this._itemWindow.drawItem;
+        this._itemWindow.drawItem = function(index) {
+            var locked=potion(this._data[index]) && blocked();
+            if(locked)this.changePaintOpacity(false);
+            draw.call(this,index);this.changePaintOpacity(true);
+            if(locked){
+                var r=this.itemRect(index),g=gate(),left=Math.max(0,g.until-Date.now());
+                this.contents.fontSize=18;this.contents.drawText('…',r.x+r.width-30,r.y+5,22,22,'right');
+                var ratio=g.duration>0?Math.min(1,left/g.duration):0;
+                this.contents.fillRect(r.x+6,r.y+r.height-5,Math.max(2,Math.round((r.width-12)*ratio)),2,'#b7a375');
+            }
+        };
+        this._itemWindow.refresh();
+    };
+    var update = Scene_ArenaInventory.prototype.update;
+    Scene_ArenaInventory.prototype.update = function() {
+        var g=gate();
+        if(!Input.isPressed('ok')&&!TouchInput.isPressed())g.awaitRelease=false;
+        // Sample before native windows advance Input during processOk.
+        g.keyArmed=Input.isTriggered('ok')&&!blocked();
+        if(TouchInput.isTriggered())g.pointerArmed=!blocked();
+        var released=TouchInput.isReleased();
+        update.apply(this,arguments);
+        if(released)g.pointerArmed=false;
+        var locked=blocked();
+        if(this._itemWindow&&(locked||locked!==this._arenaPotionLocked))this._itemWindow.refresh();
+        this._arenaPotionLocked=locked;
+    };
     var contentOk = Scene_ArenaInventory.prototype.onContentOk;
     Scene_ArenaInventory.prototype.onContentOk = function() {
         var item = this._itemWindow.item();
         if (!potion(item)) return contentOk.apply(this, arguments);
+        var g=gate(),fresh=this._arenaPotionKeyboardDispatch?g.keyArmed:(TouchInput.isReleased()&&g.pointerArmed);
+        g.keyArmed=false;
+        if(TouchInput.isReleased())g.pointerArmed=false;
+        if(blocked()||!fresh){this._itemWindow.activate();return;}
         var count = $gameParty.numItems(item);
         this._pending = {kind: 'use', ref: ArenaInventory.ref(item)};
         this.commit();
         if ($gameParty.numItems(item) === count - 1) {
+            g.duration=interval();g.until=Date.now()+g.duration;g.awaitRelease=true;
+            this._itemWindow.refresh();
             this.updateDescription(); // Stock is already refreshed in the slot; bars own recovery feedback.
         }
     };

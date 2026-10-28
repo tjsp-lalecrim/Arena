@@ -1,3 +1,9 @@
+## R03 — Arena_Recovery0.3.0
+
+Configuração opcional menuIntervalMs em ArenaRecovery.json, padrão500ms, inteiro>=0; ausência usa500. Zero retira a espera, mas mantém nova pressão após soltura. Prazo único das poções do menu, iniciado somente após consumo bem-sucedido; tentativas bloqueadas/invalidas não consomem, não estendem o prazo e não enfileiram uso. Token de entrada antes do processOk nativo (que avança Input), flag de despacho de teclado separada do gesto de ponteiro e autorização no início do toque/clique. Repetições são ignoradas antes de som/desativação da grade. Slots atenuados com reticências/linha breve, sem mensagens adicionais. Sem bloquear navegação/retorno/barras.
+
+Hooks novos: Scene_ArenaInventory.create/update e métodos drawItem/processOk apenas da instância de grade; onContentOk valida gesto/prazo e chama commit existente uma vez. Estado em Game_Temp, não salvo, compartilhado ao reabrir; nova partida/load recriam a proteção. Não altera plugins.js, Arena_Inventory, APIs de recuperação, restAt ou guard de batalha. Não é cooldown de combate. Dependências/ordem permanecem iguais; fontes/dados de recuperação e descanso não mudam. Relatório, configuração, casos e limites em PROTECAO_POCOES_M01_17_R03.md.
+
 ## R02 — Arena_Recovery0.2.0
 
 Após uso bem-sucedido, retorna à descrição contextual da seleção atual, sem mensagens de quantidade restante, restauração ou “operação concluída”. Quantidade já é redesenhada pelo commit nativo existente; barras pertencem ao quadro Stats de Arena_Inventory0.3.0. Falha mantém a explicação do commit. Não cria popup, consumidor ou hook de combate novo. restAt, autorização, APIs, dados e guard de batalha permanecem exatamente iguais à R01. Ver REVISAO_FEEDBACK_POCOES_M01_17_R02.md. Versão do cabeçalho de código atualizada; registros/parâmetros do gerenciador preservados.
