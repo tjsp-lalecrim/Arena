@@ -1,0 +1,34 @@
+{
+  "testVersion": "m01-19-web-r01",
+  "files": [
+    "index.html",
+    "fonts/gamefont.css", "fonts/mplus-1m-regular.ttf",
+    "js/main.js", "js/plugins.js", "js/rpg_core.js", "js/rpg_managers.js",
+    "js/rpg_objects.js", "js/rpg_scenes.js", "js/rpg_sprites.js", "js/rpg_windows.js",
+    "js/libs/fpsmeter.js", "js/libs/iphone-inline-video.browser.js", "js/libs/lz-string.js",
+    "js/libs/pixi-picture.js", "js/libs/pixi-tilemap.js", "js/libs/pixi.js"
+  ],
+  "trees": [
+    { "path": "data", "extensions": [".json"] },
+    { "path": "js/plugins", "extensions": [".js"] },
+    { "path": "img/animations", "extensions": [".png"] },
+    { "path": "img/battlebacks1", "extensions": [".png"] },
+    { "path": "img/battlebacks2", "extensions": [".png"] },
+    { "path": "img/characters", "extensions": [".png"] },
+    { "path": "img/enemies", "extensions": [".png"] },
+    { "path": "img/faces", "extensions": [".png"] },
+    { "path": "img/parallaxes", "extensions": [".png"] },
+    { "path": "img/pictures", "extensions": [".png"] },
+    { "path": "img/sv_actors", "extensions": [".png"] },
+    { "path": "img/sv_enemies", "extensions": [".png"] },
+    { "path": "img/system", "extensions": [".png"] },
+    { "path": "img/tilesets", "extensions": [".png"] },
+    { "path": "img/titles1", "extensions": [".png"] },
+    { "path": "img/titles2", "extensions": [".png"] },
+    { "path": "audio/bgm", "extensions": [".ogg", ".m4a"] },
+    { "path": "audio/bgs", "extensions": [".ogg", ".m4a"] },
+    { "path": "audio/me", "extensions": [".ogg", ".m4a"] },
+    { "path": "audio/se", "extensions": [".ogg", ".m4a"] },
+    { "path": "movies", "extensions": [".webm", ".mp4"] }
+  ]
+}
