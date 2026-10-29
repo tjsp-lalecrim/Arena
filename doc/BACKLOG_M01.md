@@ -5,11 +5,13 @@ Prévia [Pages](https://tjsp-lalecrim.github.io/Arena/), jogo9fab698/infraestrut
 | Situação | Evidência ou pendência |
 | --- | --- |
 | Confirmado | No Chrome PC e A56 físico, criação/introdução, exploração/combate/loot, inventário/poções em e fora de combate, diário/descanso, Gate/encerramento; somados a save/fechar/reabrir/load e saves independentes. Roteiro público mínimo concluído pelo relato, sem repetir nem atribuir testes extremos não informados. |
-| M01-20 atual | Base provisória da campanha autorizada; narrativa e M01-19 integrados em develop na ordem das dependências. E05 continua técnico/isolado, sem aprovação definitiva ou transferência. Percurso de balanceamento, distribuição de atributos e decisão/aplicação da fórmula continuam pendentes; item e marco não concluídos. |
+| M01-20 atual | Base integrada5659763; responsável concluiu dois percursos localhost (Khajiit/Elfo Negro) até Gate/encerramento, sem registros quantitativos. Balanceamento provisório, E05 isolado; distribuição/fórmula e avaliação quantitativa por marco continuam pendentes, sem repetição solicitada agora. Revisão documental de ouro/raridade, sem aplicação; item/marco não concluídos. |
 | Requisitos adiados | Paisagem e tela cheia quando suportadas: existentes no aceite de M01-19, adiados pelo responsável, sem evidência de atendimento. REF14 também reúne avaliação da área do navegador. Adiamento não dispensa o aceite; atender ou revisar explicitamente os critérios antes de fechar o item. Menu por toque e simplificação do menu permanecem melhorias futuras em REF13/15, sem execução automática. |
 | Bloqueios reais | Nenhuma falha crítica comprovada no relato. Facilidade é observação de balanceamento a investigar em20, não justificativa para alterar todos os sistemas. Apresentação adiada não bloqueia o diagnóstico autorizado nem pode ser declarada atendida. |
 
 **M01-20 — planejamento vigente:** [avaliação de percurso](AVALIACAO_BALANCEAMENTO_POR_MARCO.md), vinculada a REF04, reutiliza M01-20 sem item duplicado. Base escolhida, integrada e disponível em localhost; [commits/verificações](INTEGRACAO_REFERENCIA_PERCURSO_M01.md). Três pontos de registro e poucos encontros representativos; congelar a referência e distinguir obtenção real de drops possíveis. Sem nova execução de percurso, ajuste de gameplay ou fechamento M01 nesta tarefa. Itens M02-BAL–M10-BAL preservados, sem renumeração ou início antecipado.
+
+**Recorte atual documental, REF05/REF04:** [ouro e raridade](REVISAO_OURO_RARIDADE_M01_20.md). Ouro2–20 de inimigos já variável; tesouros vazios ainda dão5 fixo. Proposta única posterior: fallback2–8 sem mudar chances, raras ou catálogo, preservando recibos/reservas/saves. Aguardar autorização de implementação. Expansão de descanso REF12, ilustração de abertura REF16 e catálogo gradual REF05-C são frentes futuras distintas, sem execução agora.
 
 ## M01-19 — infraestrutura GitHub validada, sem deploy (29/10/2026)
 
