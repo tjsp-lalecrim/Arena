@@ -1,3 +1,7 @@
+## Candidata integrada de loot/descanso — 29/10/2026
+
+Merges locais 7fca688 e dbb014e, apenas conflitos documentais resolvidos preservando relatos. Seis grupos de fallback, quatro de legados e quatro de integração, além do guard de fontes/24 sorteios, passaram em Chrome isolado; geradores duas vezes preservam os dados reunidos. [Escopo/evidências/limites e localhost](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Piloto e relatos anteriores mantêm seus escopos; nenhuma aprovação manual antecipada, nova campanha completa, editor ou aparelho físico nesta entrega.
+
 ## Variantes provisórias fora do loot futuro — 29/10/2026
 
 ArenaLoot.json sem mapas/chance de substituição por Weapons3/4 ou Armors3/4; banco e plugins de execução intactos. Fonte validada com24 sorteios controlados; quatro grupos em Chrome156.0.8078.73 isolado ([resultado](evidencias/m01-20-retirada-raras/resultado.json)): save anterior preserva inventário/equipamentos/atributos e quatro reservas; itens legados equipam/removem e persistem; novas recompensas não geram retirados; livros e fallback2/8 funcionam. Reexecutados os seis grupos focais de ouro, com resultados em evidencias/m01-20-ouro-reserva. Sem campanha completa, batalha nova, save pessoal, asset, autoria MV ou aparelho físico. [Contrato/limites](RETIRADA_VARIANTES_RARAS_M01_20.md); nenhuma aprovação manual nova, merge/push/Pages ou retomada de outros sistemas.

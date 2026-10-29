@@ -1,3 +1,7 @@
+## Candidata de teste — loot e descanso (29/10/2026)
+
+Integration/m01-loot-descanso reúne ce1a608/e234044 e b8143f5 sobre develop5659763, sem promover develop/main. Ver [composição, testes e roteiro](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Aprovação manual do ouro variável e da expansão de descanso pendente; M01-20/M01 não concluídos. Registros anteriores das features separadas são históricos para esta candidata.
+
 ## REF12 — expansão de descanso em feature separada (29/10/2026)
 
 Feature/m01-expansao-descanso criada de develop5659763, sem incorporar lootce1a608.39 pontos adicionados/40 totais, piloto preservado e plataforma da chave excluída; lista, geradores e evidências em [EXPANSAO_DESCANSO_M01.md](EXPANSAO_DESCANSO_M01.md). Auditoria de posição/acesso dos40 e três amostras de recuperação/persistência, sem campanha completa; expansão aguarda teste integrado do responsável. Geometria, colisões, quests, tesouros e respawn preservados. **Aprovação manual do ouro variável adiada para o próximo teste integrado**, sem pedido isolado ou aprovação antecipada. Sem merge/push/Pages, outra melhoria ou fechamento M01. Registros anteriores preservam as etapas anteriores.

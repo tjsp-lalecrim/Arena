@@ -1,7 +1,7 @@
 // Focused native MV save/receipt test; synthetic old/new sessions on an ephemeral origin.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),cp=require('node:child_process'),assert=require('node:assert/strict');
 const {chromium}=require('playwright');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/m01-20-ouro-reserva');
+const root=path.resolve(__dirname,'..'),out=path.join(root,process.env.ARENA_TEST_OUT||'doc/evidencias/m01-20-ouro-reserva');
 const mime={'.html':'text/html','.js':'application/javascript','.json':'application/json','.png':'image/png','.ttf':'font/ttf','.css':'text/css','.ogg':'audio/ogg','.m4a':'audio/mp4'};
 const server=http.createServer((req,res)=>{const name=new URL(req.url,'http://localhost').pathname,file=path.resolve(root,'.'+decodeURIComponent(name==='/'?'/index.html':name));if(!file.startsWith(root+path.sep)){res.writeHead(403);return res.end();}fs.readFile(file,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream'});res.end(e?'':b);});});
 const prior='013dd25';
@@ -59,7 +59,7 @@ try{
  // Generator reads the config; run only in ignored temporary data fixture, never the project map.
  const fixture=path.join(root,'tmp/fallback-generator');fs.mkdirSync(path.join(fixture,'data'),{recursive:true});for(const file of ['Map008.json','ArenaDungeon.json','ArenaQuests.json','ArenaRecovery.json'])fs.copyFileSync(path.join(root,'data',file),path.join(fixture,'data',file));
  const configBefore=fs.readFileSync(path.join(fixture,'data/ArenaQuests.json'));cp.execFileSync(process.execPath,[path.join(root,'tools/build-quests.cjs')],{cwd:fixture});assert.ok(fs.readFileSync(path.join(fixture,'data/ArenaQuests.json')).equals(configBefore));
- for(const file of ['Enemies.json','Weapons.json','Armors.json','Items.json','Skills.json','ArenaRecovery.json','Map008.json'])assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'data',file))),JSON.parse(cp.execFileSync('git',['show',prior+':data/'+file],{cwd:root,encoding:'utf8',maxBuffer:32e6})));
+ for(const file of ['Enemies.json','Weapons.json','Armors.json','Items.json','Skills.json','ArenaRecovery.json','Map008.json']){const baseline=['ArenaRecovery.json','Map008.json'].includes(file)?(process.env.ARENA_REST_BASE||prior):prior;assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'data',file))),JSON.parse(cp.execFileSync('git',['show',baseline+':data/'+file],{cwd:root,encoding:'utf8',maxBuffer:32e6})));}
  const previousLoot=JSON.parse(cp.execFileSync('git',['show',prior+':data/ArenaLoot.json'],{cwd:root,encoding:'utf8'}));for(const t of Object.values(previousLoot.enemies)){t.rare.chance=0;t.rare.variants={};}assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'data/ArenaLoot.json'))),previousLoot);checks.push('Generator preserves approved range; only separately authorized retired-variant removal differs in loot tables; gold/chances/books/enemies/items/skills/rest/map unchanged');
  assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({browser:await browser.version(),checks,legacy:{receipts:legacy.receipts,pending:legacy.pending},controlled,roundtrip,pending,native,restored,errors,editor:'not executed',phone:'not executed',scope:'Controlled fixtures only, no campaign traversal or personal saves'},null,2)+'\n');console.log('PASS',checks.length,'focused treasure groups');
 }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}

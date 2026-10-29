@@ -1,0 +1,950 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "Save made using pre-removal reward tables retains inventory, equipped dagger3/mail4, stats and four pending rare rewards exactly",
+    "All four legacy IDs equip/remove without duplication, maintain weapon techniques/stats; four old pending items deliver unchanged once and resave",
+    "Current controlled rolls never grant retired equipment and preserve one gear per origin; normal gear, both books, valid/repeated learning, persistence and gold fallback2/8 work",
+    "All legacy database records/appearance mappings, spell books, combat stats and approved fallback config unchanged; only rare equipment generation settings removed"
+  ],
+  "legacy": {
+    "bag": [
+      99,
+      99,
+      99,
+      99
+    ],
+    "equips": [
+      {
+        "kind": "weapon",
+        "id": 3
+      },
+      null,
+      null,
+      {
+        "kind": "armor",
+        "id": 4
+      },
+      null
+    ],
+    "params": [
+      13,
+      12,
+      8,
+      5,
+      10,
+      10
+    ],
+    "loot": {
+      "sequence": 0,
+      "receipts": {
+        "container/legacy.owned.weapon3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.weapon3",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "weapon",
+              "id": 3,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.owned.weapon3"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.owned.weapon4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.weapon4",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "weapon",
+              "id": 4,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.owned.weapon4"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.owned.armor3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.armor3",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "armor",
+              "id": 3,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.owned.armor3"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.owned.armor4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.armor4",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "armor",
+              "id": 4,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.owned.armor4"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.pending.weapon3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.weapon3",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "weapon",
+              "id": 3,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.pending.weapon3"
+            }
+          ],
+          "sources": []
+        },
+        "container/legacy.pending.weapon4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.weapon4",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "weapon",
+              "id": 4,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.pending.weapon4"
+            }
+          ],
+          "sources": []
+        },
+        "container/legacy.pending.armor3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.armor3",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "armor",
+              "id": 3,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.pending.armor3"
+            }
+          ],
+          "sources": []
+        },
+        "container/legacy.pending.armor4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.armor4",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "armor",
+              "id": 4,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.pending.armor4"
+            }
+          ],
+          "sources": []
+        }
+      },
+      "pending": [
+        {
+          "kind": "weapon",
+          "id": 3,
+          "quantity": 1,
+          "category": "weapons",
+          "rare": true,
+          "origin": "legacy.pending.weapon3"
+        },
+        {
+          "kind": "weapon",
+          "id": 4,
+          "quantity": 1,
+          "category": "weapons",
+          "rare": true,
+          "origin": "legacy.pending.weapon4"
+        },
+        {
+          "kind": "armor",
+          "id": 3,
+          "quantity": 1,
+          "category": "equipment",
+          "rare": true,
+          "origin": "legacy.pending.armor3"
+        },
+        {
+          "kind": "armor",
+          "id": 4,
+          "quantity": 1,
+          "category": "equipment",
+          "rare": true,
+          "origin": "legacy.pending.armor4"
+        }
+      ]
+    }
+  },
+  "loaded": {
+    "bag": [
+      99,
+      99,
+      99,
+      99
+    ],
+    "equips": [
+      {
+        "kind": "weapon",
+        "id": 3
+      },
+      null,
+      null,
+      {
+        "kind": "armor",
+        "id": 4
+      },
+      null
+    ],
+    "params": [
+      13,
+      12,
+      8,
+      5,
+      10,
+      10
+    ],
+    "loot": {
+      "sequence": 0,
+      "receipts": {
+        "container/legacy.owned.weapon3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.weapon3",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "weapon",
+              "id": 3,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.owned.weapon3"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.owned.weapon4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.weapon4",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "weapon",
+              "id": 4,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.owned.weapon4"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.owned.armor3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.armor3",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "armor",
+              "id": 3,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.owned.armor3"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.owned.armor4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.owned.armor4",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "armor",
+              "id": 4,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.owned.armor4"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "container/legacy.pending.weapon3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.weapon3",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "weapon",
+              "id": 3,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.pending.weapon3"
+            }
+          ],
+          "sources": []
+        },
+        "container/legacy.pending.weapon4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.weapon4",
+              "rows": [
+                {
+                  "kind": "weapon",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "weapons",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "weapon",
+              "id": 4,
+              "quantity": 1,
+              "category": "weapons",
+              "rare": true,
+              "origin": "legacy.pending.weapon4"
+            }
+          ],
+          "sources": []
+        },
+        "container/legacy.pending.armor3": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.armor3",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 3,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "armor",
+              "id": 3,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.pending.armor3"
+            }
+          ],
+          "sources": []
+        },
+        "container/legacy.pending.armor4": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "legacy.pending.armor4",
+              "rows": [
+                {
+                  "kind": "armor",
+                  "id": 4,
+                  "quantity": 1,
+                  "category": "equipment",
+                  "rare": true
+                }
+              ],
+              "candidates": 1,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [
+            {
+              "kind": "armor",
+              "id": 4,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": true,
+              "origin": "legacy.pending.armor4"
+            }
+          ],
+          "sources": []
+        }
+      },
+      "pending": [
+        {
+          "kind": "weapon",
+          "id": 3,
+          "quantity": 1,
+          "category": "weapons",
+          "rare": true,
+          "origin": "legacy.pending.weapon3"
+        },
+        {
+          "kind": "weapon",
+          "id": 4,
+          "quantity": 1,
+          "category": "weapons",
+          "rare": true,
+          "origin": "legacy.pending.weapon4"
+        },
+        {
+          "kind": "armor",
+          "id": 3,
+          "quantity": 1,
+          "category": "equipment",
+          "rare": true,
+          "origin": "legacy.pending.armor3"
+        },
+        {
+          "kind": "armor",
+          "id": 4,
+          "quantity": 1,
+          "category": "equipment",
+          "rare": true,
+          "origin": "legacy.pending.armor4"
+        }
+      ]
+    }
+  },
+  "equip": {
+    "cycles": [
+      {
+        "ref": {
+          "kind": "weapon",
+          "id": 3
+        },
+        "name": "Adaga rara",
+        "params": [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actorParams": [
+          13,
+          5
+        ],
+        "skills": [
+          5,
+          6
+        ]
+      },
+      {
+        "ref": {
+          "kind": "weapon",
+          "id": 4
+        },
+        "name": "Espada curta rara",
+        "params": [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actorParams": [
+          14,
+          5
+        ],
+        "skills": [
+          7,
+          8
+        ]
+      },
+      {
+        "ref": {
+          "kind": "armor",
+          "id": 3
+        },
+        "name": "Couraça de couro rara",
+        "params": [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actorParams": [
+          10,
+          9
+        ],
+        "skills": [
+          3,
+          4
+        ]
+      },
+      {
+        "ref": {
+          "kind": "armor",
+          "id": 4
+        },
+        "name": "Cota de malha rara",
+        "params": [
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actorParams": [
+          10,
+          12
+        ],
+        "skills": [
+          3,
+          4
+        ]
+      }
+    ],
+    "paid": [
+      {
+        "kind": "weapon",
+        "id": 3,
+        "quantity": 1,
+        "category": "weapons",
+        "rare": true,
+        "origin": "legacy.pending.weapon3"
+      },
+      {
+        "kind": "weapon",
+        "id": 4,
+        "quantity": 1,
+        "category": "weapons",
+        "rare": true,
+        "origin": "legacy.pending.weapon4"
+      },
+      {
+        "kind": "armor",
+        "id": 3,
+        "quantity": 1,
+        "category": "equipment",
+        "rare": true,
+        "origin": "legacy.pending.armor3"
+      },
+      {
+        "kind": "armor",
+        "id": 4,
+        "quantity": 1,
+        "category": "equipment",
+        "rare": true,
+        "origin": "legacy.pending.armor4"
+      }
+    ],
+    "again": [],
+    "pending": []
+  },
+  "future": {
+    "rolls": 24,
+    "grant": {
+      "exp": 0,
+      "origins": [
+        {
+          "origin": "future.configured",
+          "rows": [
+            {
+              "kind": "gold",
+              "quantity": 2,
+              "category": "gold",
+              "rare": false
+            },
+            {
+              "kind": "item",
+              "id": 2,
+              "quantity": 1,
+              "category": "potions",
+              "rare": false
+            },
+            {
+              "kind": "armor",
+              "id": 1,
+              "quantity": 1,
+              "category": "equipment",
+              "rare": false
+            },
+            {
+              "kind": "item",
+              "id": 5,
+              "quantity": 1,
+              "category": "rare",
+              "rare": true
+            }
+          ],
+          "candidates": 2,
+          "questSources": []
+        }
+      ],
+      "received": [
+        {
+          "kind": "gold",
+          "quantity": 2,
+          "category": "gold",
+          "rare": false,
+          "origin": "future.configured"
+        },
+        {
+          "kind": "item",
+          "id": 2,
+          "quantity": 1,
+          "category": "potions",
+          "rare": false,
+          "origin": "future.configured"
+        },
+        {
+          "kind": "armor",
+          "id": 1,
+          "quantity": 1,
+          "category": "equipment",
+          "rare": false,
+          "origin": "future.configured"
+        },
+        {
+          "kind": "item",
+          "id": 5,
+          "quantity": 1,
+          "category": "rare",
+          "rare": true,
+          "origin": "future.configured"
+        }
+      ],
+      "pending": [],
+      "sources": []
+    },
+    "books": [
+      {
+        "id": 5,
+        "receipt": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "future.book5",
+              "rows": [
+                {
+                  "kind": "item",
+                  "id": 5,
+                  "quantity": 1,
+                  "category": "rare",
+                  "rare": true
+                }
+              ],
+              "candidates": 0,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "item",
+              "id": 5,
+              "quantity": 1,
+              "category": "rare",
+              "rare": true,
+              "origin": "future.book5"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "first": "learned",
+        "repeat": "already-known",
+        "before": 3,
+        "after": 2,
+        "final": 2
+      },
+      {
+        "id": 6,
+        "receipt": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "future.book6",
+              "rows": [
+                {
+                  "kind": "item",
+                  "id": 6,
+                  "quantity": 1,
+                  "category": "rare",
+                  "rare": true
+                }
+              ],
+              "candidates": 0,
+              "questSources": []
+            }
+          ],
+          "received": [
+            {
+              "kind": "item",
+              "id": 6,
+              "quantity": 1,
+              "category": "rare",
+              "rare": true,
+              "origin": "future.book6"
+            }
+          ],
+          "pending": [],
+          "sources": []
+        },
+        "first": "learned",
+        "repeat": "already-known",
+        "before": 2,
+        "after": 1,
+        "final": 1
+      }
+    ],
+    "fallback": [
+      2,
+      8
+    ],
+    "known": [
+      true,
+      true
+    ]
+  },
+  "errors": [],
+  "editor": "not executed",
+  "phone": "not executed",
+  "scope": "Synthetic old/current loot and saves; no full campaign/battle or assets"
+}

@@ -1,7 +1,7 @@
 // Old-generation save versus current pools: ephemeral server/profile; no personal saves.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),cp=require('node:child_process'),assert=require('node:assert/strict');
 const {chromium}=require('playwright'),validate=require('./validate-current-loot.cjs');
-const root=path.resolve(__dirname,'..'),prior='e234044',out=path.join(root,'doc/evidencias/m01-20-retirada-raras');
+const root=path.resolve(__dirname,'..'),prior='e234044',out=path.join(root,process.env.ARENA_TEST_OUT||'doc/evidencias/m01-20-retirada-raras');
 const oldConfig=JSON.parse(cp.execFileSync('git',['show',prior+':data/ArenaLoot.json'],{cwd:root,encoding:'utf8'})),current=JSON.parse(fs.readFileSync(path.join(root,'data/ArenaLoot.json'))),expected=JSON.parse(JSON.stringify(oldConfig));
 for(const t of Object.values(expected.enemies)){t.rare.chance=0;t.rare.variants={};}assert.deepEqual(current,expected);validate(current);
 const bad=JSON.parse(JSON.stringify(current));bad.enemies['2'].weapons.entries.push({kind:'weapon',id:3,weight:1});assert.throws(()=>validate(bad),/Retired/);
