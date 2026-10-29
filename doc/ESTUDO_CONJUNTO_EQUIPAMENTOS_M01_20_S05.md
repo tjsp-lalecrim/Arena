@@ -2,6 +2,8 @@
 
 Complemento de [S04](ESTUDO_ESCALA_PROGRESSAO_M01_20_S04.md), base **abbc357**, 29/10/2026. **Somente estudo:** três pontos/+1, fórmula S02 e todos os números de equipamento continuam não aprovados. E04 não executado. Não altera itens, slots, aparência, saves ou Pages.
 
+**Consolidação vigente [S06](DIRECAO_PROGRESSAO_M01_20_S06.md):** compara quatro funções de conjunto, sem usar MDF/SOR como compensação nominal; mantém categorias/fontes deste estudo como propostas. E05 é o único piloto candidato posterior, em lugar de E04, sem autorização de execução. O orçamento defensivo abaixo é um controle histórico, não decisão para os quatro perfis.
+
 ## Fontes e adaptação de categorias
 
 Consulta local, sem nova pesquisa externa ou observação de gameplay: PDFs de `doc/wiki/`, prefixos **Arena_Equipment** (pp.1–2), **Arena_Items** (pp.1–2), **Arena_Base Armor** (pp.1–3), **Arena_Base Weapons** (pp.1–3) e **Arena_Magic Items** (pp.1–2), todos com sufixo ` - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf`. Fonte primária instalada: `D:\SteamLibrary\steamapps\common\The Elder Scrolls Arena\Docs\Manual.pdf`, seção *Mouse In Character/Equipment Sheet* e *Hand grabbing icon—Use*; **Arena Codex Scientia.pdf**, página PDF140/numeração impressa133, seções *Marks, Crystals, Bracers & Rings* e *Bracelets, Belts, Torcs & Amulets*. Extrações de consulta em `tmp/m01-20-equip-fontes/`, ignorado; original intacto.
