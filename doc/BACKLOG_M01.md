@@ -1,3 +1,7 @@
+## M01-19 — pacote web local preparado (29/10/2026)
+
+Mesma feature/m01-19-isolamento-saves; relato manual Chrome8765 registrado com limites em VALIDACAO_M01.md. Preparação reproduzível por allowlist, saída ignorada dist/web/m01-19-web-r01-9fab698/Arena, execução focal em8771/Arena/ validada sem alterar gameplay/namespace ou serviço pessoal. [Procedimento, tamanho, conteúdo e evidências](PACOTE_WEB_M01_19.md). **Não fecha M01-19:** pacote aguarda avaliação, percurso integrado Chrome e testes físicos finais permanecem no roteiro. GitHub Pages/publicação são entrega posterior, sem configuração/deploy/merge/push nesta tarefa. Estados anteriores abaixo são históricos quando divergirem deste registro.
+
 ## Preparação focal M01-19 — isolamento de saves web (29/10/2026)
 
 Implementado MV_WebStorageNamespace0.1.0, parâmetro `arena:m01:save-v1`; slots, índice, configuração e backups separados das chaves genéricas. Sete grupos focais passaram no Chrome156 com perfil sintético persistente, sem bateria de gameplay. [Contrato, política e roteiro manual](plugins/MV_WebStorageNamespace.md); [resultado](evidencias/m01-19-isolamento-saves/resultado.json). Não altera conteúdo/migrações de partidas nem armazenamento por arquivos do editor.
