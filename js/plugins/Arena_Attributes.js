@@ -1,9 +1,9 @@
 /*:
- * @plugindesc v0.1.0 Pontos por nível persistentes; laboratório isolado, UI definitiva futura.
+ * @plugindesc v0.2.0 Pontos persistentes, acesso pelo inventário e laboratório isolado.
  * @author Codex
- * @help Após MV_AttributePoints, MV_StateStore, Arena_Resources e Arena_BalanceLab.
+ * @help Após MV_AttributePoints, MV_StateStore, Arena_Resources, Arena_Inventory e Arena_BalanceLab.
  * Configuração: data/ArenaAttributes.json. Namespace interno arenaAttributes v1.
- * API ArenaAttributes: snapshot(), preview(allocation), apply(preview).
+ * API ArenaAttributes: snapshot(), preview(allocation), apply(preview), canOpen(), open().
  * IDs: ATQ2 DEF3 MAT4 MDF5 AGI6 SOR7. Sem distribuição em batalha ou E05.
  * Título > Laboratório de atributos (sem saves). Guardar/carregar somente em memória.
  * Sem arquivos do motor alterados. doc/plugins/Arena_Attributes.md.
@@ -102,6 +102,7 @@ var ArenaAttributes;
         this.addCommand('Ganhar 1 nível','level1');this.addCommand('Ganhar 3 níveis','level3');
         this.addCommand('Escolha Vida/Mana/Vigor','resources');this.addCommand('Reiniciar sessão técnica','reset');
         this.addCommand('Guardar em memória','store');this.addCommand('Carregar da memória','load',!!session.memory);
+        this.addCommand('Inventário / acesso normal','inventory');
         this.addCommand('Voltar ao título','exit');
     };
     Commands.prototype.numVisibleRows=function(){return 7;};
@@ -125,6 +126,7 @@ var ArenaAttributes;
         [1,3].forEach(function(n){w.setHandler('level'+n,function(){actor().changeLevel(actor().level+n,false);self.refresh();});});
         w.setHandler('resources',function(){ArenaResources.open();});w.setHandler('reset',ArenaAttributes.startLab);
         w.setHandler('store',function(){ArenaAttributes.memorySave();self.refresh();});w.setHandler('load',function(){ArenaAttributes.memoryLoad();self.refresh();});
+        w.setHandler('inventory',function(){ArenaInventory.open('inventory');});
         w.setHandler('exit',ArenaAttributes.leaveLab);w.setHandler('cancel',ArenaAttributes.leaveLab);
         this._confirm=new Confirm((Graphics.boxWidth-320)/2,340);this._confirm.hide();this._confirm.deactivate();this.addWindow(this._confirm);
         this._confirm.setHandler('yes',function(){ArenaAttributes.apply(self._plan);self.review();});this._confirm.setHandler('cancel',this.review.bind(this));this.draw();
@@ -135,11 +137,14 @@ var ArenaAttributes;
         var s=ArenaAttributes.snapshot(),w=this._info,b=w.contents;b.clear();b.fontSize=20;
         var r=ArenaResources.snapshot();w.drawText('Atributos — laboratório sem saves · nível '+s.level+' · saldo '+s.available,0,0,w.contentsWidth());
         w.drawText('Vida '+r.hp.current+'/'+r.hp.maximum+' · Mana '+r.mp.current+'/'+r.mp.maximum+' · Vigor '+r.vigor.current+'/'+r.vigor.maximum,0,28,w.contentsWidth());
+        drawTable(w,this._plan&&this._plan.ok?this._plan.rows:s.rows);
+    };
+    function drawTable(w,items){
         w.drawText('Atributo     Base     Pontos     Equip.     Outros     Total / prévia',0,58,w.contentsWidth());
-        (this._plan&&this._plan.ok?this._plan.rows:s.rows).forEach(function(row,i){
+        items.forEach(function(row,i){
             [row.name,row.base,'+'+row.increase,'+'+row.equipment,row.otherAdditive,row.total+(row.after===undefined?'':' → '+row.after)].forEach(function(v,j){w.drawText(String(v),[0,118,230,342,454,566][j],90+i*26,j===5?180:108);});
         });
-    };
+    }
     Laboratory.prototype.refresh=function(armed){
         this._choices.refresh();this._choices.contents.fontSize=20;
         if(armed)this._choices.activate();else{this._choices.deactivate();this._armed=false;}
@@ -151,6 +156,88 @@ var ArenaAttributes;
         if(!this._armed&&!Input.isPressed('ok')&&!Input.isPressed('cancel')&&!TouchInput.isPressed()){
             this._armed=true;if(this._confirm.visible)this._confirm.activate();else this.refresh(true);
         }
+    };
+    // Same primitives/table as the pilot, but only a local draft and normal campaign actions.
+    ArenaAttributes.canOpen=function(){return !$gameParty.inBattle()&&!e05()&&ArenaCharacterCreation.isCreated();};
+    ArenaAttributes.open=function(){if(!this.canOpen())return false;SceneManager.push(Distribution);return true;};
+    function DraftCommands(scene){this._distribution=scene;this.initialize(16,312);}
+    DraftCommands.prototype=Object.create(Window_Command.prototype);DraftCommands.prototype.constructor=DraftCommands;
+    DraftCommands.prototype.windowWidth=Commands.prototype.windowWidth;
+    DraftCommands.prototype.standardFontSize=Commands.prototype.standardFontSize;
+    DraftCommands.prototype.standardPadding=function(){return 12;};
+    DraftCommands.prototype.itemHeight=function(){return 32;};
+    DraftCommands.prototype.maxCols=function(){return 2;};DraftCommands.prototype.numVisibleRows=function(){return 8;};
+    DraftCommands.prototype.makeCommandList=function(){
+        var scene=this._distribution,left=scene.remaining(),has=scene.count()>0;
+        names.forEach(function(name,i){var id=i+2,n=scene._draft[id]||0;
+            this.addCommand('+ '+name+' ('+n+')','add',left>0,id);this.addCommand('− '+name,'remove',n>0,id);
+        },this);
+        this.addCommand('Confirmar conjunto','confirm',has);this.addCommand('Limpar prévia','clear',has);this.addCommand('Voltar sem aplicar','back');
+    };
+    function Distribution(){this.initialize.apply(this,arguments);}
+    Distribution.prototype=Object.create(Scene_MenuBase.prototype);Distribution.prototype.constructor=Distribution;
+    Distribution.prototype.createBackground=Laboratory.prototype.createBackground;
+    Distribution.prototype.count=function(){return Object.keys(this._draft).reduce(function(n,k){return n+this._draft[k];}.bind(this),0);};
+    Distribution.prototype.remaining=function(){return ArenaAttributes.snapshot().available-this.count();};
+    Distribution.prototype.create=function(){
+        Scene_MenuBase.prototype.create.call(this);this._draft={};this._message='';this._armed=false;this._modal=false;
+        this._info=new Window_Base(16,8,Graphics.boxWidth-32,300);this.addWindow(this._info);
+        this._choices=new DraftCommands(this);this.addWindow(this._choices);
+        this._choices.setHandler('add',this.adjust.bind(this,1));this._choices.setHandler('remove',this.adjust.bind(this,-1));
+        this._choices.setHandler('confirm',this.ask.bind(this));this._choices.setHandler('clear',this.clearDraft.bind(this));
+        this._choices.setHandler('back',this.leave.bind(this));this._choices.setHandler('cancel',this.leave.bind(this));
+        this._confirm=new Confirm((Graphics.boxWidth-320)/2,340);this._confirm.hide();this._confirm.deactivate();this.addWindow(this._confirm);
+        this._confirm.setHandler('yes',this.commit.bind(this));this._confirm.setHandler('cancel',this.clearDraft.bind(this));this.refresh();
+    };
+    Distribution.prototype.start=function(){Scene_MenuBase.prototype.start.call(this);this.refresh();};
+    Distribution.prototype.adjust=function(delta){
+        var id=this._choices.currentExt(),n=this._draft[id]||0;
+        if(delta>0&&this.remaining()>0||delta<0&&n>0){this._draft[id]=n+delta;if(!this._draft[id])delete this._draft[id];}
+        this._message='';this.refresh();
+    };
+    Distribution.prototype.refresh=function(){
+        this._choices.refresh();this._choices.deactivate();this._armed=false;
+        var s=ArenaAttributes.snapshot(),plan=this.count()?ArenaAttributes.preview(this._draft):null,w=this._info;
+        w.contents.clear();w.contents.fontSize=20;
+        w.drawText('Distribuição — '+actor().name()+' · nível '+s.level,0,0,w.contentsWidth());
+        w.drawText(this._message||('Saldo '+s.available+' · na prévia '+this.count()+' · restante '+this.remaining()),0,28,w.contentsWidth());
+        drawTable(w,plan&&plan.ok?plan.rows:s.rows);
+    };
+    Distribution.prototype.ask=function(){
+        this._plan=ArenaAttributes.preview(this._draft);
+        if(!this._plan.ok){this._message=this._plan.reason;this.refresh();return;}
+        this._modal=true;this._choices.deactivate();this._confirm.show();this._confirm.select(0);this._confirm.deactivate();this._armed=false;
+    };
+    Distribution.prototype.clearDraft=function(){
+        this._draft={};this._plan=null;this._message='';this._modal=false;this._confirm.hide();this._confirm.deactivate();this.refresh();
+    };
+    Distribution.prototype.commit=function(){
+        var ok=ArenaAttributes.apply(this._plan);this.clearDraft();
+        if(!ok){this._message='A prévia mudou; revise a distribuição.';this.refresh();}
+    };
+    var returnToInventory=false;
+    Distribution.prototype.leave=function(){this._draft={};returnToInventory=SceneManager._stack[SceneManager._stack.length-1]===Scene_ArenaInventory;this.popScene();};
+    Distribution.prototype.update=function(){
+        Scene_MenuBase.prototype.update.call(this);
+        if(!this._armed&&!Input.isPressed('ok')&&!Input.isPressed('cancel')&&!TouchInput.isPressed()){
+            this._armed=true;if(this._modal)this._confirm.activate();else this._choices.activate();
+        }
+    };
+    var inventoryStart=Scene_ArenaInventory.prototype.start;
+    Scene_ArenaInventory.prototype.start=function(){
+        inventoryStart.apply(this,arguments);if(!returnToInventory)return;returnToInventory=false;this._attributeReturn=true;
+        [this._nav,this._itemWindow,this._slots,this._pager].forEach(function(w){w.deactivate();});
+    };
+    var inventoryUpdate=Scene_ArenaInventory.prototype.update;
+    Scene_ArenaInventory.prototype.update=function(){
+        if(this._attributeReturn){
+            Scene_ItemBase.prototype.update.call(this);
+            if(!Input.isPressed('ok')&&!Input.isPressed('cancel')&&!TouchInput.isPressed()){
+                this._attributeReturn=false;this._nav.selectSymbol('attributes');this.focus(this._nav);
+            }
+            return;
+        }
+        inventoryUpdate.apply(this,arguments);
     };
     var title=Window_TitleCommand.prototype.makeCommandList;
     Window_TitleCommand.prototype.makeCommandList=function(){title.apply(this,arguments);this.addCommand('Laboratório de atributos (sem saves)','arenaAttributeLab');};

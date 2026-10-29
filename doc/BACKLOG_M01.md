@@ -1,3 +1,7 @@
+## M01-20 — acesso funcional à distribuição na campanha (29/10/2026)
+
+Responsável aprovou somente o funcionamento do laboratório f6de74d, sem aprovação de balanceamento/design definitivo/uso na campanha. Na mesma feature, Inventário → Atributos agora oferece rascunho de conjunto, totais previstos e confirmação/cancelamento pelo núcleo aprovado. Sem comandos técnicos na campanha, redistribuição ou mudança de parâmetros. [Caminho/roteiro/evidências](plugins/Arena_Attributes.md#aprovação-do-laboratório-e-acesso-funcional-r02). Acesso funcional para avaliação; refinamento visual futuro em REF15, sem pendência duplicada. Seis grupos focais da campanha e seis regressões do núcleo; nova avaliação manual ainda pendente. M01-20/M01 abertos, lembrete obrigatório pré-release abaixo preservado.
+
 ## M01-20 — núcleo de distribuição em feature (29/10/2026)
 
 Feature/m01-distribuicao-atributos, base develop ecdc949. Implementados três pontos por nível desde2, +1 por ponto em ATQ/DEF/MAT/MDF/AGI/SOR, saldo acumulável, migração retroativa única e aplicação confirmada fora de batalha. Parâmetros provisórios autorizados; E05, fórmula, raças e equipamento preservados. [Contrato e teste técnico](plugins/Arena_Attributes.md). Seis grupos focais passaram; avaliação manual e interface definitiva pendentes. M01-20/M01 não concluídos. Histórico anterior de distribuição ausente é superado somente pelo núcleo desta feature, não por UI de campanha entregue.

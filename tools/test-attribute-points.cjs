@@ -1,6 +1,6 @@
 // Focused MV/Chrome tests; old saves are synthesized in a disposable browser profile/origin.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),cp=require('node:child_process'),vm=require('node:vm'),assert=require('node:assert/strict');
-const {chromium}=require('playwright'),root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/atributos-nucleo-r01'),base='ecdc949';
+const {chromium}=require('playwright'),root=path.resolve(__dirname,'..'),out=path.join(root,process.env.ARENA_ATTRIBUTE_EVIDENCE||'doc/evidencias/atributos-nucleo-r01'),base='ecdc949';
 const context={};vm.runInNewContext(fs.readFileSync(path.join(root,'js/plugins/MV_AttributePoints.js'),'utf8'),context);
 const R=context.MVAttributePoints,c={firstLevel:2,pointsPerLevel:3,valuePerPoint:1,attributes:[2,3,4,5,6,7]};
 let s=R.grant(R.defaults(),5,c);assert.equal(R.balance(s),12);s=R.allocate(s,{'2':3},c);assert.equal(R.balance(s),9);

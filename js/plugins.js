@@ -37,5 +37,5 @@ var $plugins =
 {"name":"Arena_Narrative","status":true,"description":"v0.1.0 Narrativa M01-18","parameters":{}},
 {"name":"Arena_BalanceLab","status":true,"description":"v0.1.0 Piloto E05 isolado — conjuntos S06, sem saves","parameters":{}},
 {"name":"MV_AttributePoints","status":true,"description":"v0.1.0 Regras puras de pontos por nível","parameters":{}},
-{"name":"Arena_Attributes","status":true,"description":"v0.1.0 Distribuição persistente e laboratório isolado","parameters":{}}
+{"name":"Arena_Attributes","status":true,"description":"v0.2.0 Pontos persistentes e acesso pelo inventário","parameters":{}}
 ];

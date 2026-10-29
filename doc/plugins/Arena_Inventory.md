@@ -1,3 +1,7 @@
+## Acesso funcional aos atributos — 0.3.1
+
+Integração opcional de Arena_Attributes0.2.0: opção Atributos (saldo) na faixa Inventário/Equipamentos/Voltar existente, sem comando extra no menu principal ou alteração da transação de itens/equipamento. Ao retornar, saldo e atributos são relidos; soltura protege a navegação de retorno. [Contrato e roteiro únicos](Arena_Attributes.md#aprovação-do-laboratório-e-acesso-funcional-r02). Não implementa a simplificação futura dos menus ou o refinamento visual definitivo.
+
 ## R02 M01-17 — Arena_Inventory0.3.0
 
 Somente Stats e descrição de seleção foram alterados. Quadro336×200 preservado, barras Vida/Mana/Vigor em três linhas, seis atributos em duas colunas e material. Remove miniaturas desse quadro, preservando appearance(map/battle), ícones, comparação, equipamentos, drag/drop e consumo nativo. Fontes existentes mantidas. Os números vêm de ArenaResources.snapshot e mudam imediatamente; preenchimento interpola por240ms com Date.now. Mudança de destino parte do preenchimento atual, sem fila/timers/callbacks; redução se apresenta imediatamente. Entrada na cena inicia nas quantidades reais, sem animação de0. Estado gráfico _resourceBars pertence somente à janela e não é persistido. Não altera ator, máximos, TP ou APIs de recuperação.

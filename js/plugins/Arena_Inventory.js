@@ -1,9 +1,10 @@
 /*:
- * @plugindesc v0.3.0 Inventário em slots, equipamentos e barras de recursos.
+ * @plugindesc v0.3.1 Inventário, equipamentos, recursos e acesso opcional aos atributos.
  * @author Codex
  * @help Após Arena_BattleUI e MV_EquipmentTransaction. Sem dependências externas.
  * Configuração/IDs: data/ArenaInventory.json. Não altera regras de combate.
  * API ArenaInventory.open/equip/preview/discard/prepareLab/appearance.
+ * Arena_Attributes opcional fornece o acesso Atributos na navegação existente.
  * Inventário/equipamentos permanecem nativos; aparência é derivada, não salva.
  */
 var ArenaInventory,Scene_ArenaInventory;
@@ -140,8 +141,8 @@ var ArenaInventory,Scene_ArenaInventory;
     };
     function Nav(){this.initialize.apply(this,arguments);}
     Nav.prototype=Object.create(Window_HorzCommand.prototype);Nav.prototype.constructor=Nav;
-    Nav.prototype.windowWidth=function(){return Graphics.boxWidth;};Nav.prototype.windowHeight=function(){return 52;};Nav.prototype.standardPadding=function(){return 6;};Nav.prototype.maxCols=function(){return 3;};Nav.prototype.standardFontSize=function(){return 21;};
-    Nav.prototype.makeCommandList=function(){this.addCommand('Inventário','inventory');this.addCommand('Equipamentos','equipment');this.addCommand('Voltar','back');};
+    Nav.prototype.windowWidth=function(){return Graphics.boxWidth;};Nav.prototype.windowHeight=function(){return 52;};Nav.prototype.standardPadding=function(){return 6;};Nav.prototype.maxCols=function(){return typeof ArenaAttributes!=='undefined'&&ArenaAttributes?4:3;};Nav.prototype.standardFontSize=function(){return 21;};
+    Nav.prototype.makeCommandList=function(){this.addCommand('Inventário','inventory');this.addCommand('Equipamentos','equipment');if(typeof ArenaAttributes!=='undefined'&&ArenaAttributes)this.addCommand('Atributos ('+ArenaAttributes.snapshot().available+')','attributes',ArenaAttributes.canOpen());this.addCommand('Voltar','back');};
     function Grid(){this.initialize.apply(this,arguments);}
     Grid.prototype=Object.create(Window_Selectable.prototype);Grid.prototype.constructor=Grid;
     Grid.prototype.standardPadding=function(){return 12;};Grid.prototype.maxCols=function(){return config().columns;};Grid.prototype.itemHeight=function(){return config().cardHeight;};Grid.prototype.maxItems=function(){return this._data?this._data.length:0;};Grid.prototype.item=function(){return this._data&&this._data[this.index()]||null;};
@@ -213,7 +214,7 @@ var ArenaInventory,Scene_ArenaInventory;
     Scene_ArenaInventory.prototype.create=function(){
         Scene_ItemBase.prototype.create.call(this);this._mode=ArenaInventory._openMode||'inventory';this._page=0;this._filter=null;
         this._helpWindow=theme(new Note(0,0,Graphics.boxWidth,88));this.addWindow(this._helpWindow);
-        this._nav=theme(new Nav(0,88));this._nav.setHandler('inventory',this.setMode.bind(this,'inventory'));this._nav.setHandler('equipment',this.setMode.bind(this,'equipment'));this._nav.setHandler('back',this.popScene.bind(this));this._nav.setHandler('cancel',this.popScene.bind(this));this.addWindow(this._nav);
+        this._nav=theme(new Nav(0,88));this._nav.setHandler('inventory',this.setMode.bind(this,'inventory'));this._nav.setHandler('equipment',this.setMode.bind(this,'equipment'));this._nav.setHandler('attributes',function(){ArenaAttributes.open();});this._nav.setHandler('back',this.popScene.bind(this));this._nav.setHandler('cancel',this.popScene.bind(this));this.addWindow(this._nav);
         this._itemWindow=theme(new Grid(0,140,config().leftWidth,420));this._itemWindow.setHelpWindow(this._helpWindow);this._itemWindow.setHandler('ok',this.onContentOk.bind(this));this._itemWindow.setHandler('cancel',this.cancelGrid.bind(this));this.addWindow(this._itemWindow);
         this._slots=theme(new Slots(config().leftWidth,140,Graphics.boxWidth-config().leftWidth,284));this._slots.setHelpWindow(this._helpWindow);this._slots.setHandler('ok',this.filterSlot.bind(this));this._slots.setHandler('cancel',this.cancelGrid.bind(this));this._slots.deactivate();this._slots.refresh();this.addWindow(this._slots);
         this._stats=theme(new Stats(config().leftWidth,424,Graphics.boxWidth-config().leftWidth,200));this._stats.refresh();this.addWindow(this._stats);
