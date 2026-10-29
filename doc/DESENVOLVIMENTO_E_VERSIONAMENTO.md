@@ -1,5 +1,7 @@
 # Desenvolvimento, documentação e Git
 
+**Antes do fechamento/release M01:** cumprir a [etapa obrigatória de discussão com o responsável](BACKLOG_M01.md#etapa-obrigatória-antes-do-fechamentorelease-do-m01). O lembrete não autoriza iniciar a discussão ou mudar plataforma/organização nesta entrega.
+
 ## Operação obrigatória — entregas pequenas
 
 1. Conferir branch, diff e alterações existentes; definir **um objetivo principal** e critérios curtos e verificáveis. Separar correção funcional, experimento visual e produção em lote em entregas distintas; não juntar sistemas independentes por conveniência.

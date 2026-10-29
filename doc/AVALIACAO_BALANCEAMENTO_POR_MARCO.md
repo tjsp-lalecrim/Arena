@@ -1,3 +1,7 @@
+## Atualização em feature — núcleo de atributos
+
+Em feature/m01-distribuicao-atributos (base ecdc949), o núcleo concede3/+1 desde nível2 com parâmetros provisórios autorizados; API e laboratório isolado em [plugins/Arena_Attributes.md](plugins/Arena_Attributes.md). A tabela histórica abaixo descreve a campanha integrada anterior. Nova feature não foi integrada/publicada; fórmula e E05 preservados. Interface de distribuição na campanha continua outra entrega. Ao avaliá-la depois, registrar pontos realmente distribuídos; testes numéricos do núcleo não demonstram balanceamento.
+
 # Avaliação de percurso e balanceamento por marco
 
 Diretriz aprovada pelo responsável,29/10/2026. Fonte principal deste processo; itens recorrentes em [MARCOS_DO_PROJETO.md](MARCOS_DO_PROJETO.md#avaliação-recorrente-de-balanceamento). Não é novo estudo de fórmulas, autorização de implementação ou teste de toda combinação. M01 usa **M01-20/REF04**, sem outro item paralelo.

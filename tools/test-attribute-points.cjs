@@ -1,0 +1,67 @@
+// Focused MV/Chrome tests; old saves are synthesized in a disposable browser profile/origin.
+const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),cp=require('node:child_process'),vm=require('node:vm'),assert=require('node:assert/strict');
+const {chromium}=require('playwright'),root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/atributos-nucleo-r01'),base='ecdc949';
+const context={};vm.runInNewContext(fs.readFileSync(path.join(root,'js/plugins/MV_AttributePoints.js'),'utf8'),context);
+const R=context.MVAttributePoints,c={firstLevel:2,pointsPerLevel:3,valuePerPoint:1,attributes:[2,3,4,5,6,7]};
+let s=R.grant(R.defaults(),5,c);assert.equal(R.balance(s),12);s=R.allocate(s,{'2':3},c);assert.equal(R.balance(s),9);
+assert.equal(JSON.stringify(R.grant(R.grant(s,2,c),5,c)),JSON.stringify(s));assert.equal(R.allocate(s,{'2':100},c),null);assert.equal(R.allocate(s,{'2':-.1},c),null);
+const types={'.html':'text/html','.js':'application/javascript','.json':'application/json','.png':'image/png','.css':'text/css','.ttf':'font/ttf','.ogg':'audio/ogg','.m4a':'audio/mp4'};
+const server=http.createServer((req,res)=>{const pathname=new URL(req.url,'http://localhost').pathname,f=path.resolve(root,'.'+decodeURIComponent(pathname==='/'?'/index.html':pathname));if(!f.startsWith(root+path.sep)){res.writeHead(403);return res.end();}fs.readFile(f,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':types[path.extname(f)]||'application/octet-stream'});res.end(e?'':b);});});
+(async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));let b;try{
+ fs.mkdirSync(out,{recursive:true});b=await chromium.launch({channel:'chrome',headless:true});const ctx=await b.newContext({hasTouch:true,viewport:{width:1000,height:800}}),p=await ctx.newPage(),errors=[],checks=['Pure grant/allocation/copy, multiple levels, high-water and invalid budgets'];p.on('pageerror',e=>errors.push(e.message));
+ const url='http://127.0.0.1:'+server.address().port+'/';
+ await p.route('**/js/plugins.js',r=>r.fulfill({contentType:'application/javascript',body:cp.execFileSync('git',['show',base+':js/plugins.js'],{cwd:root,encoding:'utf8'})}));
+ await p.goto(url);const title=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());await title();
+ const legacy=await p.evaluate(()=>{
+  DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Legado argoniano',raceId:'argonian',genderId:'female'});const a=$gameActors.actor(1);a.changeLevel(5,false);ArenaResources.choose(2,'hp');ArenaResources.choose(3,'mp');
+  $gameParty.gainItem($dataWeapons[2],1);a.changeEquip(0,$dataWeapons[2]);$gameParty.gainItem($dataArmors[2],1);a.changeEquip(3,$dataArmors[2]);a.addParam(2,3);a.addBuff(2,4);a.setHp(41);a.setMp(13);ArenaPersistence.setResource('vigor',37,ArenaResources.snapshot().vigor.maximum);
+  const state={params:[2,3,4,5,6,7].map(i=>a.param(i)),resources:ArenaResources.snapshot(),identity:ArenaPersistence.snapshot().character,inventory:[$gameParty._items,$gameParty._weapons,$gameParty._armors],equips:a.equips().map(e=>e&&e.id),native:a._paramPlus.slice(),quests:ArenaPersistence.snapshot().quests};
+  if(!DataManager.saveGame(21))throw Error('legacy save');return state;
+ });
+ await p.unroute('**/js/plugins.js');await p.reload();await title();
+ const migrated=await p.evaluate(()=>{
+  if(!DataManager.loadGame(21))throw Error('legacy load');const a=$gameActors.actor(1),snap=ArenaAttributes.snapshot();
+  const state={params:[2,3,4,5,6,7].map(i=>a.param(i)),resources:ArenaResources.snapshot(),identity:ArenaPersistence.snapshot().character,inventory:[$gameParty._items,$gameParty._weapons,$gameParty._armors],equips:a.equips().map(e=>e&&e.id),native:a._paramPlus.slice(),quests:ArenaPersistence.snapshot().quests};
+  for(let i=0;i<3;i++){if(!DataManager.saveGame(22)||!DataManager.loadGame(22))throw Error('repeated load');if(ArenaAttributes.snapshot().available!==12)throw Error('duplicate migration');}
+  return {snap,state};
+ });assert.deepEqual(migrated.state,legacy);assert.equal(migrated.snap.available,12);assert.equal(migrated.snap.highestLevel,5);checks.push('Actual pre-feature level5 Argonian save: retroactive12 once; equipment/native bonuses/buff/resource choices/current values/inventory/quest unchanged across three roundtrips');
+ const functional=await p.evaluate(()=>{
+  const eq=(a,b,m)=>{if(JSON.stringify(a)!==JSON.stringify(b))throw Error(m+': '+JSON.stringify(a));};const a=$gameActors.actor(1);
+  const raw=()=>JsonEx.stringify({system:$gameSystem,actor:a,party:$gameParty});const before=raw(),preview=ArenaAttributes.preview({'2':1,'4':1});if(!preview.ok)throw Error('preview');eq(raw(),before,'preview altered state');
+  const totals=preview.rows.map(r=>r.after);if(!ArenaAttributes.apply(preview))throw Error('apply');eq([2,3,4,5,6,7].map(i=>a.param(i)),totals,'final modifier totals');if(ArenaAttributes.apply(preview))throw Error('repeat accepted');
+  const resources=ArenaResources.snapshot();eq([a.hp,a.mp,resources.vigor.current],[41,13,37],'point healing');
+  const plan=ArenaAttributes.preview({'3':1});$gameParty._inBattle=true;if(ArenaAttributes.apply(plan)||ArenaAttributes.preview({'3':1}).ok)throw Error('battle allocation');a.changeLevel(6,false);$gameParty._inBattle=false;
+  if(ArenaAttributes.apply(plan))throw Error('stale preview accepted');eq(ArenaAttributes.snapshot().available,13,'battle-earned points');
+  a.changeLevel(2,false);a.changeLevel(6,false);eq(ArenaAttributes.snapshot().available,13,'down/up duplication');
+  for(const invalid of [{'0':1},{'8':1},{'2':-1},{'2':.5},{'2':999},{}])if(ArenaAttributes.preview(invalid).ok)throw Error('invalid');
+  const all=ArenaAttributes.preview({'2':1,'3':1,'4':1,'5':1,'6':1,'7':1});if(!all.ok||!ArenaAttributes.apply(all))throw Error('six attributes');
+  const saved=ArenaAttributes.snapshot();if(!DataManager.saveGame(23)||!DataManager.loadGame(23))throw Error('new roundtrip');eq(ArenaAttributes.snapshot(),saved,'new allocation load');
+  const pointsConfig=JSON.stringify($arenaAttributes);$arenaAttributes.pointsPerLevel=4;$arenaAttributes.valuePerPoint=2;$gameActors.actor(1).changeLevel(7,false);eq(ArenaAttributes.snapshot().available,saved.available+4,'future grant config');
+  const bonus=MVStateStore.read('arenaAttributes').increases['6'];if(!ArenaAttributes.apply(ArenaAttributes.preview({'6':1})))throw Error('config spend');eq(MVStateStore.read('arenaAttributes').increases['6'],bonus+2,'future value config');Object.assign($arenaAttributes,JSON.parse(pointsConfig));
+  // New game, several levels at once, no automatic six-attribute growth.
+  DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Novo piloto',raceId:'breton',genderId:'female'});const n=$gameActors.actor(1),initial=[2,3,4,5,6,7].map(i=>n.param(i));eq(ArenaAttributes.snapshot().available,0,'level1');n.setHp(35);n.setMp(10);ArenaPersistence.setResource('vigor',20,100);n.changeLevel(5,false);eq(ArenaAttributes.snapshot().available,12,'multi levels');eq([2,3,4,5,6,7].map(i=>n.param(i)),initial,'automatic growth');eq([n.hp,n.mp,ArenaResources.snapshot().vigor.current],[35,10,20],'level healing');
+  const resourceBefore=ArenaResources.snapshot();if(!ArenaResources.choose(2,'hp'))throw Error('resource choice');eq(ArenaAttributes.snapshot().available,12,'resource spent attributes');eq(n.hp,35,'resource healing');
+  n.changeLevel(99,false);eq(ArenaAttributes.snapshot().available,294,'max level');n.changeLevel(1,false);n.changeLevel(99,false);eq(ArenaAttributes.snapshot().available,294,'max repeat');
+  return {totals,preview,migrationSpent:saved,initial,resourceBefore,maximum:ArenaAttributes.snapshot()};
+ });checks.push('Preview is state-neutral; final native totals include equipment/race/buff; apply once, six IDs, invalid/stale/battle rejection, configuration ledgers, no healing, resource choice independent, levels2–99 high-water');
+ const e05=await p.evaluate(()=>{
+  const rows=[];for(const id of ['light','heavy','magic','hybrid']){ArenaBalanceLab.start(id);rows.push({id,attrs:ArenaBalanceLab.snapshot().attrs,grants:MVStateStore.read('arenaAttributes').grants,blocked:!ArenaAttributes.preview({'2':1}).ok});}DataManager.setupNewGame();SceneManager.goto(Scene_Title);return rows;
+ });assert.deepEqual(e05.map(r=>r.attrs),[[15,11,11,5,12,10],[15,13,11,5,10,10],[15,9,15,5,10,10],[15,10,13,5,11,10]]);assert.ok(e05.every(r=>r.blocked&&Object.keys(r.grants).length===0));checks.push('E05 four existing virtual profiles keep their exact totals and no new grants/allocation; no battle or formula changed');await title();
+  await p.evaluate(()=>{window.attributeWrites=[];for(const k of ['save','backup']){const f=StorageManager[k];StorageManager[k]=function(){attributeWrites.push(k);return f.apply(this,arguments);};}const w=SceneManager._scene._commandWindow;if(w.findSymbol('arenaAttributeLab')<0)throw Error('title access missing');w.selectSymbol('arenaAttributeLab');});await p.keyboard.press('Enter',{delay:80});
+ const labReady=()=>p.waitForFunction(()=>ArenaAttributes.labActive()&&SceneManager._scene._choices&&SceneManager._scene._choices.active);await labReady();
+  await p.evaluate(()=>SceneManager._scene._choices.selectSymbol('level3'));await p.keyboard.press('Enter',{delay:80});await p.waitForFunction(()=>!Input.isPressed('ok')&&Input._latestButton!=='ok');assert.equal(await p.evaluate(()=>ArenaAttributes.snapshot().available),9);
+ await p.evaluate(()=>SceneManager._scene._choices.selectSymbol('point'));const cancelled=await p.evaluate(()=>ArenaAttributes.snapshot());await p.keyboard.press('Enter',{delay:80});await p.waitForFunction(()=>SceneManager._scene._confirm.active);await p.locator('#GameCanvas').screenshot({path:path.join(out,'previa.png')});await p.keyboard.press('Escape',{delay:80});await labReady();assert.deepEqual(await p.evaluate(()=>ArenaAttributes.snapshot()),cancelled);
+ // Touch a real attribute row, then its confirmation. Coordinates are canvas-scaled.
+  async function tap(windowKey,index){await p.waitForFunction(()=>!TouchInput.isPressed()&&!TouchInput.isTriggered());const xy=await p.evaluate(({windowKey,index})=>{const w=SceneManager._scene[windowKey],r=w.itemRect(index),c=Graphics._canvas.getBoundingClientRect();return{x:c.x+(w.x+w.padding+r.x+r.width/2)*c.width/Graphics.width,y:c.y+(w.y+w.padding+r.y+r.height/2)*c.height/Graphics.height};},{windowKey,index});await p.touchscreen.tap(xy.x,xy.y);await p.waitForTimeout(100);}
+  await tap('_choices',1);await p.waitForFunction(()=>SceneManager._scene._choices.index()===1);await tap('_choices',1);await p.waitForFunction(()=>SceneManager._scene._confirm.active);await tap('_confirm',0);await labReady();assert.equal(await p.evaluate(()=>ArenaAttributes.snapshot().rows[1].increase),1);
+ const lab=await p.evaluate(()=>{
+  const eq=(a,b)=>{if(JSON.stringify(a)!==JSON.stringify(b))throw Error('memory mismatch');};
+  const before=ArenaAttributes.snapshot();if(!ArenaAttributes.memorySave())throw Error('memory save');$gameActors.actor(1).changeLevel(8,false);ArenaAttributes.apply(ArenaAttributes.preview({'7':1}));if(!ArenaAttributes.memoryLoad())throw Error('memory load');eq(ArenaAttributes.snapshot(),before);
+  if(DataManager.saveGame(27)||DataManager.saveGameWithoutRescue(27)||DataManager.saveGlobalInfo([]))throw Error('lab write');let blocked=false;try{DataManager.makeSaveContents();}catch(e){blocked=true;}if(!blocked||$gameSystem.isSaveEnabled())throw Error('serialize');return{before,after:ArenaAttributes.snapshot(),writes:attributeWrites.slice()};
+ });assert.deepEqual(lab.writes,[]);await p.evaluate(()=>SceneManager._scene.refresh());await p.locator('#GameCanvas').screenshot({path:path.join(out,'laboratorio.png')});
+ await p.evaluate(()=>ArenaAttributes.leaveLab());await title();const normal=await p.evaluate(()=>{DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Normal',raceId:'breton',genderId:'female'});return{lab:ArenaAttributes.labActive(),available:ArenaAttributes.snapshot().available,save:DataManager.saveGame(27)};});assert.deepEqual(normal,{lab:false,available:0,save:true});checks.push('Real keyboard cancel and touch confirmation; in-memory lab roundtrip, zero slot/backup writes, exit/new game restores normal save flow');
+ // Source protection: gameplay database, resources, racial rules, E05 and assets are untouched.
+  for(const f of ['data/Classes.json','data/Skills.json','data/Weapons.json','data/Armors.json','data/ArenaProgression.json','js/plugins/Arena_Resources.js','js/plugins/Arena_CharacterCreation.js','js/plugins/Arena_BalanceLab.js'])assert.equal(fs.readFileSync(path.join(root,f),'utf8').replace(/\r\n/g,'\n'),cp.execFileSync('git',['show',base+':'+f],{cwd:root,encoding:'utf8',maxBuffer:32e6}).replace(/\r\n/g,'\n'));
+ assert.deepEqual(errors,[]);checks.push('Protected campaign formulas/database/equipment/resource/race/E05 sources unchanged; no runtime errors');
+ fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base,browser:await b.version(),checks,legacy,migrated,functional,e05,lab,normal,errors,editor:'not executed',phone:'not executed',scope:'Focal synthetic saves and technical UI only; no campaign replay'},null,2)+'\n');console.log('PASS',checks.length,'focused attribute groups');
+}finally{if(b)await b.close();await new Promise(r=>server.close(r));}})().catch(e=>{console.error(e);process.exitCode=1;});

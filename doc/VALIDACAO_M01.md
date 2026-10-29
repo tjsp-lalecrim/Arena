@@ -1,3 +1,7 @@
+## Núcleo de atributos — 29/10/2026
+
+Base ecdc949; seis grupos focais em Chrome156.0.8078.73 isolado: regras, save anterior/migração, aplicação e modificadores, E05 preservado, UI técnica teclado/toque/memória e fontes protegidas. [Evidência](evidencias/atributos-nucleo-r01/resultado.json), [contrato/roteiro](plugins/Arena_Attributes.md). Save anterior nível5 argoniano recebe12 pontos uma vez; recursos/inventário/equipamentos/quest e escolhas preservados. Registro canônico UTF-8 sem BOM e sintaxe/presença dos36 plugins conferidos;34 registros anteriores idênticos e namespace web preservado. Capturas inspecionadas em816×624. Nenhuma aprovação manual nova, autoria no editor, teste físico ou campanha completa. Núcleo para avaliação, sem interface definitiva, balanceamento final, merge/push ou atualização do Pages.
+
 ## Confirmação manual — candidata loot/descanso, 29/10/2026
 
 Responsável confirmou descanso nas plataformas testadas e ouro variando, na referência apresentada cc29df0. Ambiente e posições não discriminados; sem inferir testes adicionais de extremos, migração ou persistência, nem todas as plataformas ou aprovação definitiva de balanceamento. [Registro e evidências técnicas preservadas](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Autorizada integração/publicação em develop; sem mudança funcional posterior não avaliada.

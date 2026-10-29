@@ -1,3 +1,11 @@
+## M01-20 — núcleo de distribuição em feature (29/10/2026)
+
+Feature/m01-distribuicao-atributos, base develop ecdc949. Implementados três pontos por nível desde2, +1 por ponto em ATQ/DEF/MAT/MDF/AGI/SOR, saldo acumulável, migração retroativa única e aplicação confirmada fora de batalha. Parâmetros provisórios autorizados; E05, fórmula, raças e equipamento preservados. [Contrato e teste técnico](plugins/Arena_Attributes.md). Seis grupos focais passaram; avaliação manual e interface definitiva pendentes. M01-20/M01 não concluídos. Histórico anterior de distribuição ausente é superado somente pelo núcleo desta feature, não por UI de campanha entregue.
+
+### Etapa obrigatória antes do fechamento/release do M01
+
+Antes de encerrar o marco ou preparar sua release, **discutir com o responsável a organização do desenvolvimento em dois chats e o uso do RPG Maker como motor e plataforma**. Lembrete obrigatório de decisão; discussão ainda não realizada, não iniciada por esta implementação. Não presumir decisão/aceite. Preservar o lembrete até registrar o resultado com o responsável.
+
 ## Loot e descanso — integrados em develop após teste (29/10/2026)
 
 Confirmação restrita do responsável em cc29df0: descanso nas plataformas testadas e quantidades de ouro variando. Incluídos fallback 2–8, retirada das quatro variantes dos novos pools com legados preservados e 40 pontos de descanso com plataforma da chave excluída. [Histórico/escopo](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Registros abaixo de candidata/adiamento são históricos; balanceamento continua provisório.

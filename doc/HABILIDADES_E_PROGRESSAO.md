@@ -1,3 +1,7 @@
+## Distribuição de atributos — núcleo autorizado M01-20
+
+Parâmetros provisórios implementados na feature: três pontos desde nível2, +1 por ponto nos seis atributos, saldo acumulável e concessão retroativa única. Escolha de Vida/Mana/Vigor permanece independente; sem crescimento automático adicional, cura, redistribuição ou restrição racial/profissional. [Fonte operacional e API](plugins/Arena_Attributes.md). Interface definitiva e equilíbrio ainda não entregues; não transferir fórmula/conjuntos E05 por associação.
+
 # Habilidades e progressão
 
 ## Revisão de progressão por marco
