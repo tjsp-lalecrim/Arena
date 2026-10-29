@@ -1,3 +1,17 @@
+## Loot e descanso — integração autorizada após teste (29/10/2026)
+
+Confirmação restrita do responsável em cc29df0: descanso nas plataformas testadas e quantidades de ouro variando. Incluídos fallback 2–8, retirada das quatro variantes dos novos pools com legados preservados e 40 pontos de descanso com plataforma da chave excluída. [Histórico/escopo](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Registros abaixo de candidata/adiamento são históricos; balanceamento continua provisório.
+
+**M01-20 continua aberto:** distribuição de atributos na campanha ainda não implementada, fórmula definitiva não decidida, avaliação/ajustes por percurso e marco e checklist/pacote final ainda não fechados. Próximo recorte recomendado: decisão dos parâmetros mínimos da distribuição para atender esse requisito antes da implementação; usar S02–S06 existentes, sem reiniciar estudos, aplicar E05 ou iniciar implementação agora. Paisagem/fullscreen exigem atendimento ou revisão explícita do critério antes do fechamento integral de M01-19; aprovação com ressalvas permite continuidade, sem declarar atendimento. Melhorias REF13–REF16 e demais ressalvas futuras não viram bloqueios/implementações por associação. Sem nova funcionalidade, main/Pages ou release.
+
+## Candidata de teste — loot e descanso (29/10/2026)
+
+Integration/m01-loot-descanso reúne ce1a608/e234044 e b8143f5 sobre develop5659763, sem promover develop/main. Ver [composição, testes e roteiro](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Aprovação manual do ouro variável e da expansão de descanso pendente; M01-20/M01 não concluídos. Registros anteriores das features separadas são históricos para esta candidata.
+
+## REF12 — expansão de descanso em feature separada (29/10/2026)
+
+Feature/m01-expansao-descanso criada de develop5659763, sem incorporar lootce1a608.39 pontos adicionados/40 totais, piloto preservado e plataforma da chave excluída; lista, geradores e evidências em [EXPANSAO_DESCANSO_M01.md](EXPANSAO_DESCANSO_M01.md). Auditoria de posição/acesso dos40 e três amostras de recuperação/persistência, sem campanha completa; expansão aguarda teste integrado do responsável. Geometria, colisões, quests, tesouros e respawn preservados. **Aprovação manual do ouro variável adiada para o próximo teste integrado**, sem pedido isolado ou aprovação antecipada. Sem merge/push/Pages, outra melhoria ou fechamento M01. Registros anteriores preservam as etapas anteriores.
+
 ## Integração em develop; referência provisória para percurso M01 (29/10/2026)
 
 Prévia [Pages](https://tjsp-lalecrim.github.io/Arena/), jogo9fab698/infraestruturaf62e026. **Responsável concluiu o roteiro funcional público e autorizou avançar ao M01-20 com ressalvas de apresentação.** Não significa atendimento integral de M01-19/paisagem/fullscreen ou fechamento M01. Publicação manual preservada, sem atualização Pages nesta tarefa. Evidências/limites em [VALIDACAO_M01.md](VALIDACAO_M01.md); REF13–REF15 permanecem adiados no registro único de refinamentos.
@@ -5,11 +19,13 @@ Prévia [Pages](https://tjsp-lalecrim.github.io/Arena/), jogo9fab698/infraestrut
 | Situação | Evidência ou pendência |
 | --- | --- |
 | Confirmado | No Chrome PC e A56 físico, criação/introdução, exploração/combate/loot, inventário/poções em e fora de combate, diário/descanso, Gate/encerramento; somados a save/fechar/reabrir/load e saves independentes. Roteiro público mínimo concluído pelo relato, sem repetir nem atribuir testes extremos não informados. |
-| M01-20 atual | Base provisória da campanha autorizada; narrativa e M01-19 integrados em develop na ordem das dependências. E05 continua técnico/isolado, sem aprovação definitiva ou transferência. Percurso de balanceamento, distribuição de atributos e decisão/aplicação da fórmula continuam pendentes; item e marco não concluídos. |
+| M01-20 atual | Base integrada5659763; dois percursos localhost até Gate/encerramento, sem dados quantitativos. Na feature: fallback2–8 preservado e quatro variantes genéricas retiradas das novas recompensas, com banco/saves legados intactos. Livros e ouro de batalhas preservados. Balanceamento provisório, E05 isolado; demais critérios pendentes. Item/marco não concluídos. |
 | Requisitos adiados | Paisagem e tela cheia quando suportadas: existentes no aceite de M01-19, adiados pelo responsável, sem evidência de atendimento. REF14 também reúne avaliação da área do navegador. Adiamento não dispensa o aceite; atender ou revisar explicitamente os critérios antes de fechar o item. Menu por toque e simplificação do menu permanecem melhorias futuras em REF13/15, sem execução automática. |
 | Bloqueios reais | Nenhuma falha crítica comprovada no relato. Facilidade é observação de balanceamento a investigar em20, não justificativa para alterar todos os sistemas. Apresentação adiada não bloqueia o diagnóstico autorizado nem pode ser declarada atendida. |
 
 **M01-20 — planejamento vigente:** [avaliação de percurso](AVALIACAO_BALANCEAMENTO_POR_MARCO.md), vinculada a REF04, reutiliza M01-20 sem item duplicado. Base escolhida, integrada e disponível em localhost; [commits/verificações](INTEGRACAO_REFERENCIA_PERCURSO_M01.md). Três pontos de registro e poucos encontros representativos; congelar a referência e distinguir obtenção real de drops possíveis. Sem nova execução de percurso, ajuste de gameplay ou fechamento M01 nesta tarefa. Itens M02-BAL–M10-BAL preservados, sem renumeração ou início antecipado.
+
+**Recorte atual concluído tecnicamente na feature, REF05:** [retirada das variantes provisórias](RETIRADA_VARIANTES_RARAS_M01_20.md). Fonte/24 sorteios controlados, quatro grupos de compatibilidade nativa e seis regressões focais do ouro; banco, equipabilidade e reservas antigas preservados. Não integrado em develop ou publicado. Aguardar avaliação; sem retomar outros sistemas. Conteúdo encantado/poções superiores, expansão REF12, abertura REF16 e catálogo REF05-C continuam futuros, sem início; M01-20/marco não concluídos.
 
 ## M01-19 — infraestrutura GitHub validada, sem deploy (29/10/2026)
 

@@ -1,3 +1,7 @@
+## Expansão vigente na feature — 29/10/2026
+
+Piloto01 preservado mais39 pontos:40 no total, excluída a plataforma da Chave de rubi. [Locais, critérios, geradores e verificação focal](EXPANSAO_DESCANSO_M01.md). A aprovação manual existente cobre o piloto; a expansão aguarda próximo teste integrado. Registros de “somente uma plataforma” abaixo são históricos; não substituem a lista atual por associação.
+
 ## Plataforma piloto autorizada — 29/10/2026
 
 Base0afb6b8, feature/m01-narrativa-demo, inicialmente limpa. Responsável autorizou uma amostra: interação em ponto definido, recuperação completa de Vida/Mana/Vigor fora de batalha, sem regeneração passiva, horas, sorteio de ataques, respawn ou restauração de tesouros. **Funcionamento confirmado pelo responsável no editor**, no acesso técnico com Enter/toque e no fluxo normal da dungeon; versão associada e limites em VALIDACAO_M01.md. REF09 da adaga permanece futura e não foi alterada.

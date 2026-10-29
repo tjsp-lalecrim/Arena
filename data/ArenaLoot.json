@@ -97,25 +97,8 @@
       },
       "questSources": [],
       "rare": {
-        "chance": 0.02,
-        "variants": {
-          "weapon:1": {
-            "kind": "weapon",
-            "id": 3
-          },
-          "weapon:2": {
-            "kind": "weapon",
-            "id": 4
-          },
-          "armor:1": {
-            "kind": "armor",
-            "id": 3
-          },
-          "armor:2": {
-            "kind": "armor",
-            "id": 4
-          }
-        },
+        "chance": 0,
+        "variants": {},
         "items": {
           "chance": 0.01,
           "min": 1,
@@ -202,25 +185,8 @@
       },
       "questSources": [],
       "rare": {
-        "chance": 0.02,
-        "variants": {
-          "weapon:1": {
-            "kind": "weapon",
-            "id": 3
-          },
-          "weapon:2": {
-            "kind": "weapon",
-            "id": 4
-          },
-          "armor:1": {
-            "kind": "armor",
-            "id": 3
-          },
-          "armor:2": {
-            "kind": "armor",
-            "id": 4
-          }
-        },
+        "chance": 0,
+        "variants": {},
         "items": {
           "chance": 0.02,
           "min": 1,

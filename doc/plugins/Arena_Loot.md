@@ -1,4 +1,8 @@
-# Arena_Loot0.1.0
+# Arena_Loot0.3.0 — fallback de tesouros
+
+`claimContainer(id, table, fallbackGold, rng?)`: terceiro argumento aceita `{min,max}` inteiros positivos; vazio recebe quantidade uniforme inclusiva. RNG opcional de teste retorna[0,1); chamada normal usa Math.random. Número positivo legado continua aceito; configuração MQ01 atual usa2–8. Recibo existente retorna antes de qualquer sorteio; pending/recibos antigos e namespace arenaLoot v1 intactos. Campo `treasureFallbackGold` substitui o escalar na configuração, com leitura compatível de `treasureMinimumGold` antigo. [Contrato/evidências atuais](../OURO_RESERVA_VARIAVEL_M01_20.md). O relato de mínimo5 abaixo é histórico. Sem alteração do loot de batalhas, raridade ou dados de itens.
+
+# Arena_Loot0.1.0 — histórico
 
 Produzido pelo Codex; após MV_LootRules e Arena_Inventory. Dependências reais: MV_StateStore, ArenaPersistence (incluindo sourceStatus), ArenaInventory.drawItemIcon/resolve/important, ArenaBattleUI.theme, ArenaBattle.startLab/prepare para entrada técnica e fluxo MV. Sem dependência externa/Battlespire. Sem parâmetros/comandos de plugin; configuração IDs/valores em data/ArenaLoot.json. Exige tabela válida para cada inimigo incluído; erro explícito em referência/chance/faixa/variante ausente, importante em pool comum ou fonte não cadastrada.
 
@@ -8,7 +12,7 @@ Aliases: BattleManager.setup/processVictory/isBusy, Scene_Battle.createAllWindow
 
 Resumo é apresentação transitória após mensagens nativas; seleção descreve conteúdo, Enter/Esc/toque fecha tudo. Não é janela de coleta individual. Sem slots vazios; origem mantida no ledger embora pilhas sejam agregadas. Reservas têm indicação explícita e se entregam no mapa, sem sorteio/EXP novos. Não salvar janelas/planos transitórios ou assumir salvamento em batalha.
 
-A configuração atual tem3 inimigos e4 variantes raras de tipos existentes, valores provisórios. Fonte de chave não é drop normal; integração técnica de quest testada sem alterar campanha. Fonte/recuperação usa API já existente, não reinventa etapas. Ver LOOT_M01_13.md para roteiro e pendências editor/A56/balanceamento.
+A configuração atual tem3 inimigos; quatro variantes provisórias permanecem **somente como banco legado**, sem referências/chance de substituição no loot futuro. Livros5/6 e suas chances continuam. [Retirada e compatibilidade](../RETIRADA_VARIANTES_RARAS_M01_20.md). Fonte de chave não é drop normal; fonte/recuperação usa API já existente, não reinventa etapas. Ver LOOT_M01_13.md para histórico de roteiro/evidências.
 
 M01-16 acrescenta claimContainer(id,table): sorteio puro existente seguido do mesmo settle atômico, token container/ID, zero EXP; repetição devolve o recibo sem sortear/conceder novamente. Não altera recompensas/tabelas de inimigos. A escolha do proxy provisório de tabela é do conteúdo MQ01, não do núcleo. Capacidade continua usando reservas existentes.
 

@@ -1,4 +1,8 @@
-## Arena_Recovery0.4.0 — uma plataforma piloto, 29/10/2026
+## Arena_Recovery0.5.0 — refúgios configurados
+
+Piloto preservado e39 pontos dungeonRefuge=true, com coordenadas/eventos únicos. nearestRefuge escolhe o mais próximo no mapa atual; a UI usa o mesmo alvo, com desempate estável pelo evento. APIs de recuperação, soltura obrigatória, feedback e políticas de poção preservadas. startRestPilot mantém o acesso01; syncRestEvents acrescenta apenas pontos configurados ausentes em saves, sem reset/cura. [40 locais, fonte, exclusão e evidências](../EXPANSAO_DESCANSO_M01.md). Geradores build-quests/build-encounters seguem a lista explícita; não há autorização por varredura procedural no jogo.
+
+## Arena_Recovery0.4.0 — uma plataforma piloto, histórico de29/10/2026
 
 Dependências existentes preservadas; o novo acesso/indicador requer Arena_Dungeon e configurações Map008 carregadas. Sem plugin externo ou alteração de plugins.js. ArenaRecovery.json acrescenta um restPoint não técnico com dungeonPilot=true, ID MQ01.refuge.01, map8/event241/(124,79), sourceCell40/25 na planta interpretada/refletida, sem afirmar coordenada F2 do executável. Campos x/y são obrigatórios para o piloto, cuja contagem máxima atual é1. O segundo registro total continua sendo a cama técnica preexistente, sem alterações.
 

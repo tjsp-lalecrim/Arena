@@ -1,0 +1,25 @@
+{
+  "candidate": "dbb014e8860009ed97e6256071a6a8e06cc0cbf1",
+  "browser": "156.0.8078.73",
+  "url": "http://127.0.0.1:8765/",
+  "checks": [
+    "Loot/configuration/legacy database exactly ce1a608; map/recovery exactly b8143f5; 40 sources and excluded Ruby Key preserved",
+    "Encounter/quest generator chain twice retains exact map, key, 40 rest events, variable fallback and retired pools",
+    "Canonical UTF-8/no-BOM registry and all referenced plugins exist/parse; web namespace unchanged",
+    "Existing localhost byte-matches candidate; isolated Chrome opens title and technical dungeon with all 40 events and current loot configuration, no JS errors"
+  ],
+  "state": {
+    "points": 40,
+    "events": true,
+    "range": {
+      "min": 2,
+      "max": 8
+    },
+    "namespace": "arena:m01:save-v1",
+    "keyNote": "M01-14 geometry/integration only"
+  },
+  "errors": [],
+  "manualApproval": "pending",
+  "editor": "not executed",
+  "phone": "not executed"
+}

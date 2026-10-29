@@ -57,7 +57,10 @@
       "exit": null
     }
   ],
-  "treasureMinimumGold": 5,
+  "treasureFallbackGold": {
+    "min": 2,
+    "max": 8
+  },
   "gateHalfWidth": 1,
   "gateDepth": 2
 }

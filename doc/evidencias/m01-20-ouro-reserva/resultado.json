@@ -1,0 +1,358 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "Actual pre-change map save: collected5/pending5 and hidden old treasure survive current load; repeat/claimPending never roll or duplicate",
+    "Seven equal-width RNG bins and exact endpoints2/8; one fallback draw; positive gold/item skips fallback; zero quantity counts as empty; legacy scalar/invalid range",
+    "Current results survive native save/load and repeat API with roll forbidden",
+    "Capacity reserve8 saved/loaded, delivered3+5 exactly once, no RNG on later delivery",
+    "MQ01 real treasure adapter uses range: deterministic8, repeated messages/interaction no payment, native map save/load keeps receipt and hidden treasure",
+    "Generator preserves approved range; only separately authorized retired-variant removal differs in loot tables; gold/chances/books/enemies/items/skills/rest/map unchanged"
+  ],
+  "legacy": {
+    "receipts": {
+      "container/MQ01.treasure.138": {
+        "exp": 0,
+        "origins": [
+          {
+            "origin": "MQ01.treasure.138",
+            "rows": [
+              {
+                "kind": "gold",
+                "quantity": 5,
+                "category": "gold",
+                "rare": false
+              }
+            ],
+            "candidates": 0,
+            "questSources": []
+          }
+        ],
+        "received": [
+          {
+            "kind": "gold",
+            "quantity": 5,
+            "category": "gold",
+            "rare": false,
+            "origin": "MQ01.treasure.138"
+          }
+        ],
+        "pending": [],
+        "sources": []
+      },
+      "container/old.collected": {
+        "exp": 0,
+        "origins": [
+          {
+            "origin": "old.collected",
+            "rows": [
+              {
+                "kind": "gold",
+                "quantity": 5,
+                "category": "gold",
+                "rare": false
+              }
+            ],
+            "candidates": 0,
+            "questSources": []
+          }
+        ],
+        "received": [
+          {
+            "kind": "gold",
+            "quantity": 5,
+            "category": "gold",
+            "rare": false,
+            "origin": "old.collected"
+          }
+        ],
+        "pending": [],
+        "sources": []
+      },
+      "container/old.pending": {
+        "exp": 0,
+        "origins": [
+          {
+            "origin": "old.pending",
+            "rows": [
+              {
+                "kind": "gold",
+                "quantity": 5,
+                "category": "gold",
+                "rare": false
+              }
+            ],
+            "candidates": 0,
+            "questSources": []
+          }
+        ],
+        "received": [],
+        "pending": [
+          {
+            "kind": "gold",
+            "quantity": 5,
+            "category": "gold",
+            "rare": false,
+            "origin": "old.pending"
+          }
+        ],
+        "sources": []
+      }
+    },
+    "pending": [
+      {
+        "kind": "gold",
+        "quantity": 5,
+        "category": "gold",
+        "rare": false,
+        "origin": "old.pending"
+      }
+    ]
+  },
+  "controlled": {
+    "range": {
+      "min": 2,
+      "max": 8
+    },
+    "values": [
+      {
+        "quantity": 2,
+        "calls": 1
+      },
+      {
+        "quantity": 3,
+        "calls": 1
+      },
+      {
+        "quantity": 4,
+        "calls": 1
+      },
+      {
+        "quantity": 5,
+        "calls": 1
+      },
+      {
+        "quantity": 6,
+        "calls": 1
+      },
+      {
+        "quantity": 7,
+        "calls": 1
+      },
+      {
+        "quantity": 8,
+        "calls": 1
+      }
+    ],
+    "low": [
+      {
+        "kind": "gold",
+        "quantity": 2,
+        "category": "gold",
+        "rare": false,
+        "origin": "low"
+      }
+    ],
+    "high": [
+      {
+        "kind": "gold",
+        "quantity": 8,
+        "category": "gold",
+        "rare": false,
+        "origin": "high"
+      }
+    ],
+    "lowCalls": 1,
+    "highCalls": 1,
+    "repeated": [
+      {
+        "kind": "gold",
+        "quantity": 8,
+        "category": "gold",
+        "rare": false,
+        "origin": "high"
+      }
+    ],
+    "goldBefore": 45,
+    "goldAfterRepeat": 45,
+    "repeatNoGain": true,
+    "positiveGold": [
+      {
+        "kind": "gold",
+        "quantity": 3,
+        "category": "gold",
+        "rare": false,
+        "origin": "positive.gold"
+      }
+    ],
+    "potion": [
+      {
+        "kind": "item",
+        "id": 2,
+        "quantity": 1,
+        "category": "potions",
+        "rare": false,
+        "origin": "positive.item"
+      }
+    ],
+    "zero": [
+      {
+        "kind": "gold",
+        "quantity": 2,
+        "category": "gold",
+        "rare": false,
+        "origin": "zero"
+      }
+    ],
+    "numeric": [
+      {
+        "kind": "gold",
+        "quantity": 5,
+        "category": "gold",
+        "rare": false,
+        "origin": "numeric.legacy"
+      }
+    ],
+    "invalid": true
+  },
+  "roundtrip": {
+    "equal": true,
+    "goldUnchanged": true
+  },
+  "pending": {
+    "record": {
+      "exp": 0,
+      "origins": [
+        {
+          "origin": "new.pending",
+          "rows": [
+            {
+              "kind": "gold",
+              "quantity": 8,
+              "category": "gold",
+              "rare": false
+            }
+          ],
+          "candidates": 0,
+          "questSources": []
+        }
+      ],
+      "received": [],
+      "pending": [
+        {
+          "kind": "gold",
+          "quantity": 8,
+          "category": "gold",
+          "rare": false,
+          "origin": "new.pending"
+        }
+      ],
+      "sources": []
+    },
+    "first": [
+      {
+        "kind": "gold",
+        "quantity": 3,
+        "category": "gold",
+        "rare": false,
+        "origin": "new.pending"
+      }
+    ],
+    "left": [
+      {
+        "kind": "gold",
+        "quantity": 5,
+        "category": "gold",
+        "rare": false,
+        "origin": "new.pending"
+      }
+    ],
+    "second": [
+      {
+        "kind": "gold",
+        "quantity": 5,
+        "category": "gold",
+        "rare": false,
+        "origin": "new.pending"
+      }
+    ],
+    "third": []
+  },
+  "native": {
+    "ok": true,
+    "calls": 1,
+    "record": {
+      "exp": 0,
+      "origins": [
+        {
+          "origin": "MQ01.treasure.138",
+          "rows": [
+            {
+              "kind": "gold",
+              "quantity": 8,
+              "category": "gold",
+              "rare": false
+            }
+          ],
+          "candidates": 0,
+          "questSources": []
+        }
+      ],
+      "received": [
+        {
+          "kind": "gold",
+          "quantity": 8,
+          "category": "gold",
+          "rare": false,
+          "origin": "MQ01.treasure.138"
+        }
+      ],
+      "pending": [],
+      "sources": []
+    },
+    "gold": 8,
+    "text": [
+      "Tesouro coletado.\nOuro ×8"
+    ],
+    "repeat": false,
+    "token": "container/MQ01.treasure.138",
+    "eventId": 138
+  },
+  "restored": {
+    "record": {
+      "exp": 0,
+      "origins": [
+        {
+          "origin": "MQ01.treasure.138",
+          "rows": [
+            {
+              "kind": "gold",
+              "quantity": 8,
+              "category": "gold",
+              "rare": false
+            }
+          ],
+          "candidates": 0,
+          "questSources": []
+        }
+      ],
+      "received": [
+        {
+          "kind": "gold",
+          "quantity": 8,
+          "category": "gold",
+          "rare": false,
+          "origin": "MQ01.treasure.138"
+        }
+      ],
+      "pending": [],
+      "sources": []
+    },
+    "hidden": true,
+    "gold": 8,
+    "repeat": false
+  },
+  "errors": [],
+  "editor": "not executed",
+  "phone": "not executed",
+  "scope": "Controlled fixtures only, no campaign traversal or personal saves"
+}

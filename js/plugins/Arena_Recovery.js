@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.4.0 Poções e descanso autorizado; uma plataforma piloto na dungeon.
+ * @plugindesc v0.5.0 Poções e descanso autorizado em refúgios configurados da dungeon.
  * @author Codex
  * @help Após Arena_Resources, Arena_Inventory e Arena_BattleUI. Sem dependências externas.
  * Configuração: data/ArenaRecovery.json. Não há parâmetros no gerenciador.
@@ -33,7 +33,13 @@ var ArenaRecovery;
                     ids[p.id] = true; return true;
                 })) throw new Error('Arena: configuração de recuperação inválida. Confira ArenaRecovery.json.');
         if (c.menuIntervalMs !== undefined && (!Number.isInteger(c.menuIntervalMs) || c.menuIntervalMs < 0)) throw new Error('Arena: menuIntervalMs deve ser inteiro não negativo.');
-        if(c.restPoints.filter(function(p){return p.dungeonPilot;}).length>1||c.restPoints.some(function(p){return p.dungeonPilot&&(!Number.isInteger(p.x)||!Number.isInteger(p.y));}))throw Error('Arena: configurar uma única plataforma piloto com coordenadas.');
+        var positions={},events={};
+        if(c.restPoints.filter(function(p){return p.dungeonPilot;}).length>1||c.restPoints.some(function(p){
+            var eventKey=p.mapId+':'+p.eventId;if(events[eventKey])return true;events[eventKey]=true;
+            if(!p.dungeonPilot&&!p.dungeonRefuge)return false;
+            var key=p.mapId+':'+p.x+':'+p.y;if(positions[key]||!Number.isInteger(p.x)||!Number.isInteger(p.y))return true;
+            positions[key]=true;return false;
+        }))throw Error('Arena: refúgios exigem coordenadas/eventos únicos e no máximo um piloto.');
         return true;
     };
     function actor() { return $gameActors.actor($arenaRecovery.actorId); }
@@ -73,6 +79,11 @@ var ArenaRecovery;
         return result;
     };
     function pilot(){return $arenaRecovery.restPoints.filter(function(p){return p.dungeonPilot;})[0];}
+    function nearestRefuge(){
+        var points=$arenaRecovery.restPoints.filter(function(p){return (p.dungeonPilot||p.dungeonRefuge)&&p.mapId===$gameMap.mapId()&&$gameMap.event(p.eventId)&&!$gameMap.event(p.eventId)._erased;});
+        points.sort(function(a,b){return $gameMap.distance($gamePlayer.x,$gamePlayer.y,a.x,a.y)-$gameMap.distance($gamePlayer.x,$gamePlayer.y,b.x,b.y)||a.eventId-b.eventId;});
+        return points[0];
+    }
     ArenaRecovery.startRestPilot=function(){
         var p=pilot();ArenaDungeon.startLab();$gameSystem._arenaEncounterTechnical=true;
         $gameTemp._arenaRestAwaitRelease=true;
@@ -81,7 +92,7 @@ var ArenaRecovery;
         ArenaPersistence.setResource('vigor',20,ArenaResources.snapshot().vigor.maximum);
     };
     function syncRestEvents(){
-        $arenaRecovery.restPoints.forEach(function(p){if(p.dungeonPilot&&$gameMap.mapId()===p.mapId&&!$gameMap.event(p.eventId)&&$dataMap.events[p.eventId])$gameMap._events[p.eventId]=new Game_Event(p.mapId,p.eventId);});
+        $arenaRecovery.restPoints.forEach(function(p){if((p.dungeonPilot||p.dungeonRefuge)&&$gameMap.mapId()===p.mapId&&!$gameMap.event(p.eventId)&&$dataMap.events[p.eventId])$gameMap._events[p.eventId]=new Game_Event(p.mapId,p.eventId);});
     }
     var mapLoaded=Scene_Map.prototype.onMapLoaded;
     Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring())syncRestEvents();mapLoaded.apply(this,arguments);};
@@ -109,7 +120,7 @@ var ArenaRecovery;
     Scene_Map.prototype.processMapTouch=function(){
         if(!TouchInput.isPressed())this._arenaRestPointer=false;
         if($gameTemp._arenaRestAwaitRelease){$gameTemp.clearDestination();this._touchCount=0;return;}
-        var label=this._arenaRestLabel,p=pilot(),e=p&&$gameMap.mapId()===p.mapId&&$gameMap.event(p.eventId);
+        var label=this._arenaRestLabel,p=nearestRefuge(),e=p&&$gameMap.event(p.eventId);
         if(TouchInput.isTriggered()&&label&&label.visible&&TouchInput.x>=label.x&&TouchInput.x<label.x+288&&TouchInput.y>=label.y&&TouchInput.y<label.y+36){
             this._arenaRestPointer=true;this._touchCount=0;$gameTemp.clearDestination();
             if(e&&$gamePlayer.canMove()&&!$gameMap.isAnyEventStarting()){
@@ -124,7 +135,7 @@ var ArenaRecovery;
     Scene_Map.prototype.update=function(){
         var ok=Input.isTriggered('ok'),interactive=this.isActive()&&$gamePlayer.canMove()&&!$gameMessage.isBusy()&&!$gameMap.isEventRunning();mapUpdate.apply(this,arguments);
         if(!Input.isPressed('ok')&&!TouchInput.isPressed())$gameTemp._arenaRestAwaitRelease=false;
-        var p=pilot(),e=p&&$gameMap.mapId()===p.mapId&&$gameMap.event(p.eventId),label=this._arenaRestLabel;
+        var p=nearestRefuge(),e=p&&$gameMap.event(p.eventId),label=this._arenaRestLabel;
         if(!label)return;var near=e&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=3;
         label.visible=!!near;if(!near)return;
         label.x=Math.max(8,Math.min(Graphics.boxWidth-296,e.screenX()-144));label.y=Math.max(8,Math.min(e.screenY()-128,$gamePlayer.screenY()-112));
