@@ -8,7 +8,7 @@ UI transitória em Scene_Map: legenda sobre a plataforma, acessível por Enter a
 
 Map008 recebe somente um evento não bloqueante, sem sprite novo. onMapLoaded acrescenta esse evento quando ausente no save, sem reconfigurar mapa, posição, tesouros ou encontros. build-quests.cjs é a origem do evento; build-encounters.cjs permite/recompõe essa nota específica ao reconstruir sua parte. Sem edição do motor, assets ou topologia. A lógica de respawn não é chamada por descanso; namespaces e contrato de HP/MP/Vigor persistentes permanecem iguais.
 
-Local, fontes, caminho de avaliação, testes e limitações em POCOES_E_DESCANSO_M01_17.md. Teste focal: tools/test-rest-platform-pilot.cjs;10 grupos e recompilação do gerador passaram. Aprovação manual do ponto ainda pendente. Os contratos históricos abaixo continuam válidos exceto onde este adendo identifica o novo comportamento.
+Local, fontes, caminho de avaliação, testes e limitações em POCOES_E_DESCANSO_M01_17.md. Teste focal: tools/test-rest-platform-pilot.cjs;10 grupos e recompilação do gerador passaram. Funcionamento do ponto confirmado pelo responsável no editor (Enter/toque técnico e fluxo normal), conforme VALIDACAO_M01.md; sem validação física de smartphone. Melhorias futuras distintas em REF12, sem alterar esta versão. Os contratos históricos abaixo continuam válidos exceto onde este adendo identifica o novo comportamento.
 
 ## R03 — Arena_Recovery0.3.0
 

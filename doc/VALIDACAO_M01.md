@@ -1,6 +1,10 @@
-## Descanso em uma plataforma — 29/10/2026
+## Descanso em uma plataforma — confirmação de29/10/2026
 
-Implementação sobre0afb6b8, na feature atual, **sem aprovação manual nova**. Um ponto em Map008(124,79), evento241, com entrada **Descanso técnico (refúgio)** e recursos reduzidos.10 grupos focais em Chrome156 passaram; detalhes, fixtures e capturas em evidencias/descanso-plataforma-r01/resultado.json e gerador.json. Recuperação integral, interação sem repetição/fila, estado cheio, guarda de batalha por flag, preservação de quest/inventário/loot/inimigos/área e save/load verificados. Só uma posição e o caminho local foram avaliados; sem bateria ampla, batalha real nova, autoria/playtest no editor ou smartphone. Posição/fontes/limites em POCOES_E_DESCANSO_M01_17.md e contrato em plugins/Arena_Recovery.md. Aguardar avaliação do responsável antes de ampliar; demais aprovações não se estendem ao novo ponto.
+**Evidência manual do responsável:** descanso técnico funcionou com **Enter e toque**, e o descanso também funcionou no **fluxo normal da dungeon**, em execução pelo **editor RPG Maker MV**. Estado disponível associado:1e6a40b, Map008(124,79)/evento241; o responsável não informou hash testado nem versão exata do editor. Não atribuir teste a smartphone, ao navegador ou a edição/salvamento/reabertura do mapa.
+
+**Critérios do piloto:** os10 grupos focais Chrome156 já registrados em evidencias/descanso-plataforma-r01/resultado.json e a recompilação em gerador.json cobrem recuperação integral, não repetição/fila, recursos cheios, guarda de batalha por flag controlado, preservação do mundo/inventário e save/load. Somados ao relato manual de acesso e uso na campanha, não foi identificado impedimento técnico restante **no escopo desse único ponto desktop**. Não foram reexecutados testes nesta tarefa documental; os resultados automáticos mantêm seu ambiente/limites originais, sem ampliar a cobertura manual. Smartphone físico permanece pendente para o fim do M01, sem bloqueio desktop.
+
+Funcionamento confirmado não implementa nem aprova novas mecânicas. Melhorias centralizadas em REF12 de REFINAMENTOS_POS_INTEGRACAO_M01.md; regras e local em POCOES_E_DESCANSO_M01_17.md. Manter recuperação completa fora de batalha, sem horas, ataques surpresa, respawn ou restauração de tesouros provocados pelo descanso. Nenhuma outra plataforma foi validada por associação.
 
 ## Aprovação manual da Bretã feminina com adaga — 28/10/2026
 

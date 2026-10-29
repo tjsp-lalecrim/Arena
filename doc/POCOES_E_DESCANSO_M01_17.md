@@ -1,6 +1,6 @@
 ## Plataforma piloto autorizada — 29/10/2026
 
-Base0afb6b8, feature/m01-narrativa-demo, inicialmente limpa. Responsável autorizou uma amostra: interação em ponto definido, recuperação completa de Vida/Mana/Vigor fora de batalha, sem regeneração passiva, horas, sorteio de ataques, respawn ou restauração de tesouros. **Implementada; avaliação manual desta versão pendente.** REF09 da adaga permanece futura e não foi alterada.
+Base0afb6b8, feature/m01-narrativa-demo, inicialmente limpa. Responsável autorizou uma amostra: interação em ponto definido, recuperação completa de Vida/Mana/Vigor fora de batalha, sem regeneração passiva, horas, sorteio de ataques, respawn ou restauração de tesouros. **Funcionamento confirmado pelo responsável no editor**, no acesso técnico com Enter/toque e no fluxo normal da dungeon; versão associada e limites em VALIDACAO_M01.md. REF09 da adaga permanece futura e não foi alterada.
 
 **Campanha:** Map008 **M01-14 Imperial Dungeons**, ponto **(124,79)**, plataforma oeste do nicho de duas plataformas, célula **(40,25) da planta50×50 interpretada/refletida do projeto** (não uma coordenada F2 verificada no DOS). Após abrir a cela, seguir a oeste e entrar pelo norte nesse recuo; há caminho local de(137,73), já fora da porta da cela. Paredes existentes a oeste/leste/sul dão abrigo geométrico; não existe verificação de ameaças, imunidade ou garantia nova contra perseguição. O piso/parede/colisões aprovados não mudaram. Nome do evento241: **Refúgio / descanso piloto**, ID estável **MQ01.refuge.01**. Nenhuma outra plataforma foi autorizada.
 
@@ -10,7 +10,7 @@ Reutiliza ArenaRecovery.restAt/ArenaResources.rest. Evento não bloqueia passage
 
 **Validação focal:**10 grupos Chrome156, armazenamento/slot28 isolados: entrada com tecla mantida e recursos reduzidos, caminhada nativa local, três recursos, teclado/clique/toque emulado, nenhuma fila, recursos completos, guarda de batalha por flag controlado, estado do mundo/inventário e save/load antes/depois/sem evento241. Um tesouro coletado e um inimigo derrotado foram preparados como fixtures para comprovar ausência de restauração/respawn; nenhum combate ou teste amplo. Geometria/propriedades/240 eventos anteriores intactos, somente241 acrescentado. Cadeia build-encounters → build-quests recomposta com dados idênticos. Evidências: evidencias/descanso-plataforma-r01/. Novo teste no editor e aparelho físico não executados pelo Codex; mobile continua no fim do M01.
 
-Fontes e distinções original/adaptação permanecem na investigação abaixo. Estudo futuro de respawn parcial ao descansar está somente em REF12, sem implementação ou alteração das condições atuais. Aguardar avaliação deste único ponto antes de ampliar.
+Fontes e distinções original/adaptação permanecem na investigação abaixo. Melhorias futuras ficam somente em REF12: fade-out/fade-in, estudo de combate surpresa com baixa probabilidade e estudo distinto de respawn parcial. Antes das duas mecânicas, decidir segurança dos locais, frequência e momento da recuperação. Nenhuma delas foi implementada; manter a cobertura de um ponto e aguardar tarefa específica antes de ampliar.
 
 ## Continuidade R03
 
