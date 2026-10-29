@@ -2,6 +2,8 @@
 
 Diretriz aprovada pelo responsável,29/10/2026. Fonte principal deste processo; itens recorrentes em [MARCOS_DO_PROJETO.md](MARCOS_DO_PROJETO.md#avaliação-recorrente-de-balanceamento). Não é novo estudo de fórmulas, autorização de implementação ou teste de toda combinação. M01 usa **M01-20/REF04**, sem outro item paralelo.
 
+**Retorno após a integração5659763:** dois percursos localhost, Khajiit/Elfo Negro, funcionaram até Gate/encerramento. Sem registros quantitativos de nível/equipamento/consumo: não preencher o modelo abaixo por inferência nem declarar equilíbrio. Balanceamento permanece provisório ao longo dos marcos. Evidência em VALIDACAO_M01.md; não solicitar repetição nesta tarefa.
+
 ## Referência e cobertura conhecida
 
 O responsável testou opções do piloto e considera **insuficiente avaliar balanceamento por poucas batalhas isoladas**. Relato identificado como “adaga, espada e híbrido”, associado ao estado disponível **bc71752**; não informou esse SHA, ambiente, percurso, número de lutas ou resultados discriminados. Não registrar aprovação definitiva de fórmula, pontos ou todos os conjuntos.

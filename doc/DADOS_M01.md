@@ -1,3 +1,11 @@
+## Equipamentos legados fora das novas recompensas — M01-20
+
+Weapons3/4 e Armors3/4 preservam integralmente IDs/propriedades e uso em saves, equipamentos e reservas. ArenaLoot.json deixa `rare.chance=0`/`rare.variants={}`; nenhum desses IDs consta dos pools novos. Livros5/6 e demais regras não mudam. Sem migração, renomeação ou reutilização de IDs. [Contrato/evidências](RETIRADA_VARIANTES_RARAS_M01_20.md).
+
+## Ouro de fallback dos tesouros — M01-20
+
+Configuração ArenaQuests.json schema1 agora usa `treasureFallbackGold:{min:2,max:8}`. Leitura do escalar antigo permanece para configurações/chamadas legadas; não é campo de save. Sorteio e recibos permanecem no contrato arenaLoot v1; valores já concedidos/em reserva e tesouros coletados não mudam. Sem novos IDs ou migração/namespace. [Detalhes e verificação focal](OURO_RESERVA_VARIAVEL_M01_20.md).
+
 ## Identificação externa do armazenamento web — M01-19
 
 Prefixo configurável `arena:m01:save-v1` para chaves de slots, índice, configuração e backups, via MV_WebStorageNamespace. É identidade externa de armazenamento, distinta dos namespaces/schemaVersion internos de MV_StateStore e da versão da build; payloads/migrações existentes não mudam. Atualização compatível mantém o prefixo. Chaves genéricas antigas não são importadas/apagadas; arquivos do editor não mudam. [Contrato e limites entre origens/perfis](plugins/MV_WebStorageNamespace.md).
