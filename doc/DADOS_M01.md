@@ -1,3 +1,7 @@
+## Ouro de fallback dos tesouros — M01-20
+
+Configuração ArenaQuests.json schema1 agora usa `treasureFallbackGold:{min:2,max:8}`. Leitura do escalar antigo permanece para configurações/chamadas legadas; não é campo de save. Sorteio e recibos permanecem no contrato arenaLoot v1; valores já concedidos/em reserva e tesouros coletados não mudam. Sem novos IDs ou migração/namespace. [Detalhes e verificação focal](OURO_RESERVA_VARIAVEL_M01_20.md).
+
 ## Identificação externa do armazenamento web — M01-19
 
 Prefixo configurável `arena:m01:save-v1` para chaves de slots, índice, configuração e backups, via MV_WebStorageNamespace. É identidade externa de armazenamento, distinta dos namespaces/schemaVersion internos de MV_StateStore e da versão da build; payloads/migrações existentes não mudam. Atualização compatível mantém o prefixo. Chaves genéricas antigas não são importadas/apagadas; arquivos do editor não mudam. [Contrato e limites entre origens/perfis](plugins/MV_WebStorageNamespace.md).

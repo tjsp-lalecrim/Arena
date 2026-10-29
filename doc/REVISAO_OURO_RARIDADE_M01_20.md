@@ -2,6 +2,8 @@
 
 29/10/2026, base de jogo **5659763**, sem alteração de execução. Dois percursos em localhost com Khajiit e Elfo Negro chegaram ao Shift Gate/encerramento conforme o responsável; sem dados quantitativos de nível/equipamento/consumo. Isso confirma funcionamento no alcance relatado, **não equilíbrio definitivo**, nem obtenção de todo item possível. Não solicitar repetição nesta tarefa.
 
+**Atualização posterior:** fallback2–8 autorizado e implementado somente na feature, com [contrato/evidências](OURO_RESERVA_VARIAVEL_M01_20.md). A tabela/proposta abaixo descreve a revisão013dd25 anterior à implementação; raridade/catálogo continuam propostas não aplicadas. Batalhas e saves existentes preservados.
+
 ## Estado real: chance não é quantidade
 
 Leitura de ArenaLoot/ArenaQuests/Enemies/Weapons/Armors/Items.json, MV_LootRules, Arena_Loot e Arena_Quests. Intervalos inteiros inclusivos; primeiro testa ocorrência, depois quantidade.

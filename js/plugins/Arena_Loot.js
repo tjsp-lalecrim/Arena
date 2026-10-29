@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.2.0 Loot automático por inimigo e resumo único após vitória.
+ * @plugindesc v0.3.0 Loot por inimigo e fallback variável de tesouros, com recibo único.
  * @author Codex
  * @help Após MV_LootRules, Arena_Inventory e Arena_Persistence. Config: ArenaLoot.json.
  * EXP nativa preservada; ouro/drops nativos substituídos, nunca somados.
@@ -41,13 +41,20 @@ var ArenaLoot;
     var database=DataManager.isDatabaseLoaded,checked=false;
     DataManager.isDatabaseLoaded=function(){if(!database.apply(this,arguments))return false;if(!checked){validate();checked=true;}return true;};
     ArenaLoot={snapshot:state,collectPending:collectPending,recoverSource:function(id){return ArenaPersistence.claimSource(id);},startLab:function(){ArenaBattle.startLab();$gameTemp._arenaLootLab=true;},validate:validate,
-        claimContainer:function(id,table,minimumGold){
+        claimContainer:function(id,table,fallbackGold,rng){
             if(typeof id!=='string'||!/^[a-zA-Z0-9_.-]+$/.test(id))throw Error('Arena loot: fonte inválida.');
             var token='container/'+id,existing=state().receipts[token];if(existing)return existing;
-            var roll=MVLootRules.roll(table);
-            // Container-only floor. Enemy rolls remain allowed to be empty.
-            if(minimumGold!==undefined&&(!Number.isInteger(minimumGold)||minimumGold<1))throw Error('Arena loot: mínimo de tesouro inválido.');
-            if(minimumGold&&!roll.rows.some(function(r){return r.quantity>0;}))roll.rows=[{kind:'gold',quantity:minimumGold,category:'gold',rare:false}];
+            // Numeric input remains supported for old callers, not for new campaign config.
+            var range=typeof fallbackGold==='number'?{min:fallbackGold,max:fallbackGold}:fallbackGold;
+            if(range!==undefined&&(!range||!Number.isInteger(range.min)||!Number.isInteger(range.max)||range.min<1||range.max<range.min))throw Error('Arena loot: faixa de reserva de tesouro inválida.');
+            rng=rng||Math.random;
+            var roll=MVLootRules.roll(table,rng);
+            // Only empty containers use the fallback; battles retain their existing rules.
+            if(range&&!roll.rows.some(function(r){return r.quantity>0;})){
+                var quantity=range.min;
+                if(range.max>range.min){var n=rng();if(!Number.isFinite(n)||n<0||n>=1)throw Error('Arena loot: sorteio de reserva inválido.');quantity+=Math.floor(n*(range.max-range.min+1));}
+                roll.rows=[{kind:'gold',quantity:quantity,category:'gold',rare:false}];
+            }
             return settle(token,[{origin:id,rows:roll.rows,candidates:roll.candidates,questSources:[]}],0);
         }
     };
