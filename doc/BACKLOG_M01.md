@@ -1,4 +1,4 @@
-## Loot e descanso — integração autorizada após teste (29/10/2026)
+## Loot e descanso — integrados em develop após teste (29/10/2026)
 
 Confirmação restrita do responsável em cc29df0: descanso nas plataformas testadas e quantidades de ouro variando. Incluídos fallback 2–8, retirada das quatro variantes dos novos pools com legados preservados e 40 pontos de descanso com plataforma da chave excluída. [Histórico/escopo](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Registros abaixo de candidata/adiamento são históricos; balanceamento continua provisório.
 

@@ -1,3 +1,7 @@
+## Integrada em develop — resultado local
+
+Merge **30f17d3bf73c2807e10aff78c474363823d361d3**, sem conflitos; árvore idêntica à integration/m01-loot-descanso em6fab1a6. Somente documentação difere de cc29df0. Verificação focal deste fechamento: guard de loot/24 sorteios, auditoria dos40 pontos, presença/sintaxe dos plugins, registro canônico sem BOM e namespace estável. Evidências técnicas de execução/geradores da candidata reutilizadas; não repetida campanha, navegador, editor ou aparelho físico. Sem falha pendente identificada neste recorte. Main permanece f62e026; workflow Pages exclusivamente manual não acionado. Resultado final de develop identificado pelo commit deste registro e confirmação remota na entrega.
+
 ## Confirmação do responsável e autorização de integração — 29/10/2026
 
 Responsável confirmou na candidata apresentada **cc29df0d89477f7c1b1556e91da2e272915f6496**: descanso funcionando nas plataformas testadas e quantidades de ouro variando. Associação à referência apresentada, sem SHA próprio ou ambiente/dispositivo discriminado no relato. Não inferir todas as plataformas, extremos 2/8, migração, persistência, reservas ou outras verificações manuais; esses casos mantêm somente as evidências técnicas já identificadas abaixo. Não significa aprovação definitiva de balanceamento. Nenhuma alteração funcional após a referência avaliada.
