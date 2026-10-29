@@ -2,6 +2,8 @@
 
 **Estudo não aprovado para implementação.** Substitui E01: aumentar Vida do goblin não foi autorizado nem executado. Referência de execução permanece9fab698; somente leitura do motor/plugins/dados locais e aritmética isolada. Não é transcrição de regras do Arena original nem pesquisa de novos drops. Sem escalonamento automático, profissões jogáveis, novos atributos ou gasto de Vigor fora das técnicas.
 
+**Complemento vigente [S03](ESTUDO_ATRIBUTOS_M01_20_S03.md):** requisito solicitado de pontos para os seis atributos, adicional aos recursos. Substitui G automático abaixo; tabela C/simulação S02 preservam a hipótese anterior, não representam a distribuição agora solicitada. E02 não executado; candidato posterior passa a ser somente E03 de S03. Demais fórmulas permanecem propostas, não aprovadas.
+
 ## 1. Modelo atual — fatos e riscos
 
 - **Atributos:** base da classe técnica + equipamento/modificadores + bônus racial, com multiplicadores/buffs e limites/arredondamento MV. Armas somam ATQ; armaduras DEF. ATQ10/DEF5/MAT8/MDF5/AGI10/Sorte10 são constantes nos níveis1–99; nível não entra no dano. AGI afeta ordem aleatória; Sorte, certos estados/debuffs. Vida sustenta sobrevivência; Mana/Vigor limitam ações, não multiplicam dano.
@@ -57,4 +59,4 @@ Reproduzir: `node tools/simulate-damage-study-m01-20.cjs`. [Saída](evidencias/m
 
 Aprovar antes de implementar: fórmula/constantes8 e20%; papel e permanência da leve; potências/penetração/custos; crítico1,5 e política do mínimo; crescimento ofensivo e tratamento de saves existentes. Nenhuma mudança em bônus raciais, Mana ou regras de recuperação foi autorizada. E01 fica apenas como histórico substituído.
 
-**E02 sugerido, não executado:** um goblin inalterado (Vida30), Bretã feminina com os três estados A/B/C em sessão técnica isolada; comparar fluxo nativo atual e modelo recomendado somente físico, sem tocar campanha/saves pessoais ou produzir assets. Registrar acertos, respostas, dano perdido/recebido, Vigor por vitória e escolhas Atacar/leve/pesada; conferir equipamento/nível perceptíveis e se a leve tem papel ou é dispensável. Medir também se a maior duração traz decisão ou somente repetição. Apresentar resultado para avaliação antes de expandir para rato, outras raças, magias ou inimigos; nenhum escalonamento. Aguardar aprovação deste estudo/recorte.
+**E02 — proposta anterior não executada, substituída como próximo candidato por E03/S03:** um goblin inalterado (Vida30), Bretã feminina com os três estados A/B/C em sessão técnica isolada; comparar fluxo nativo atual e modelo recomendado somente físico, sem tocar campanha/saves pessoais ou produzir assets. Registro histórico preservado; não executar antes da decisão sobre pontos/fórmula. O único próximo experimento recomendado está em S03.

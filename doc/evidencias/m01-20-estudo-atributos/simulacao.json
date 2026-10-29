@@ -1,0 +1,539 @@
+{
+  "model": "M01-20/S03 - proposals, not implemented",
+  "runtimeReference": "9fab698",
+  "attributeOrder": [
+    "ATQ",
+    "DEF",
+    "MAT",
+    "MDF",
+    "AGI",
+    "SOR"
+  ],
+  "proposal": {
+    "pointsPerLevel": 1,
+    "deltaPerPoint": 1,
+    "automaticSameAttributeGrowth": 0
+  },
+  "premises": "Breton female; equal budget 2 at L3 / 4 at L5; all six stats remain selectable but MDF/SOR have content utility gaps. Reference gear is not campaign starter grant. Successful neutral non-critical hits, variance0/no guard; Fire Dart known only as a comparison premise. Resource choices are independent. Initiative enumerates native speed dice, reports ties separately, no tie-break assumption. No battle or balance approval.",
+  "rows": [
+    {
+      "build": "baseline",
+      "level": 1,
+      "budget": 0,
+      "spent": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gear": "dagger+leather",
+      "attrs": [
+        12,
+        8,
+        8,
+        5,
+        10,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 10,
+            "light": 12,
+            "heavy": 16,
+            "fire": 19,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 18,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 9,
+            "light": 11,
+            "heavy": 15,
+            "fire": 17,
+            "received": 4
+          },
+          "alternative": {
+            "heavy": 18,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285,
+            "total": 49
+          }
+        }
+      ]
+    },
+    {
+      "build": "physical",
+      "level": 3,
+      "budget": 2,
+      "spent": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gear": "dagger+leather",
+      "attrs": [
+        13,
+        9,
+        8,
+        5,
+        10,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 10,
+            "light": 13,
+            "heavy": 18,
+            "fire": 19,
+            "received": 2
+          },
+          "alternative": {
+            "heavy": 20,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 9,
+            "light": 12,
+            "heavy": 16,
+            "fire": 17,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 20,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285,
+            "total": 49
+          }
+        }
+      ]
+    },
+    {
+      "build": "magic",
+      "level": 3,
+      "budget": 2,
+      "spent": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "gear": "dagger+leather",
+      "attrs": [
+        12,
+        8,
+        9,
+        6,
+        10,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 10,
+            "light": 12,
+            "heavy": 16,
+            "fire": 22,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 18,
+            "fire": 26
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 9,
+            "light": 11,
+            "heavy": 15,
+            "fire": 20,
+            "received": 4
+          },
+          "alternative": {
+            "heavy": 18,
+            "fire": 26
+          },
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285,
+            "total": 49
+          }
+        }
+      ]
+    },
+    {
+      "build": "hybrid",
+      "level": 3,
+      "budget": 2,
+      "spent": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "gear": "dagger+leather",
+      "attrs": [
+        13,
+        8,
+        9,
+        5,
+        10,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 10,
+            "light": 13,
+            "heavy": 18,
+            "fire": 22,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 20,
+            "fire": 26
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 9,
+            "light": 12,
+            "heavy": 16,
+            "fire": 20,
+            "received": 4
+          },
+          "alternative": {
+            "heavy": 20,
+            "fire": 26
+          },
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285,
+            "total": 49
+          }
+        }
+      ]
+    },
+    {
+      "build": "physical",
+      "level": 5,
+      "budget": 4,
+      "spent": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "gear": "dagger+leather",
+      "attrs": [
+        14,
+        9,
+        8,
+        5,
+        11,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 11,
+            "light": 14,
+            "heavy": 19,
+            "fire": 19,
+            "received": 2
+          },
+          "alternative": {
+            "heavy": 22,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.6938775510204082,
+            "ties": 0.10204081632653061,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 10,
+            "light": 13,
+            "heavy": 17,
+            "fire": 17,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 21,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        }
+      ]
+    },
+    {
+      "build": "magic",
+      "level": 5,
+      "budget": 4,
+      "spent": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "gear": "dagger+leather",
+      "attrs": [
+        12,
+        8,
+        10,
+        6,
+        11,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 10,
+            "light": 12,
+            "heavy": 16,
+            "fire": 24,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 18,
+            "fire": 29
+          },
+          "initiative": {
+            "strictlyFaster": 0.6938775510204082,
+            "ties": 0.10204081632653061,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 9,
+            "light": 11,
+            "heavy": 15,
+            "fire": 22,
+            "received": 4
+          },
+          "alternative": {
+            "heavy": 18,
+            "fire": 29
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        }
+      ]
+    },
+    {
+      "build": "hybrid",
+      "level": 5,
+      "budget": 4,
+      "spent": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "gear": "dagger+leather",
+      "attrs": [
+        13,
+        9,
+        9,
+        6,
+        10,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 10,
+            "light": 13,
+            "heavy": 18,
+            "fire": 22,
+            "received": 2
+          },
+          "alternative": {
+            "heavy": 20,
+            "fire": 26
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 9,
+            "light": 12,
+            "heavy": 16,
+            "fire": 20,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 20,
+            "fire": 26
+          },
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285,
+            "total": 49
+          }
+        }
+      ]
+    },
+    {
+      "build": "physical-equipment-only-delta",
+      "level": 5,
+      "budget": 4,
+      "spent": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "gear": "shortsword+mail",
+      "attrs": [
+        15,
+        12,
+        8,
+        5,
+        11,
+        10
+      ],
+      "enemies": [
+        {
+          "name": "Rato",
+          "hp": 18,
+          "recommended": {
+            "attack": 12,
+            "light": 15,
+            "heavy": 20,
+            "fire": 19,
+            "received": 2
+          },
+          "alternative": {
+            "heavy": 23,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.6938775510204082,
+            "ties": 0.10204081632653061,
+            "total": 49
+          }
+        },
+        {
+          "name": "Goblin",
+          "hp": 30,
+          "recommended": {
+            "attack": 11,
+            "light": 14,
+            "heavy": 19,
+            "fire": 17,
+            "received": 3
+          },
+          "alternative": {
+            "heavy": 23,
+            "fire": 23
+          },
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673,
+            "total": 49
+          }
+        }
+      ]
+    }
+  ],
+  "luckSensitivity": {
+    "scenario": "Enemy3 paralysis25%, enemy SOR5; NOT a current dungeon encounter",
+    "initialSor": 10,
+    "rateAtInitial": 0.24875,
+    "rateAfterOnePoint": 0.2485,
+    "rateAfterFourPoints": 0.24775
+  }
+}

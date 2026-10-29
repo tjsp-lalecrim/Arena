@@ -1,5 +1,9 @@
 # Habilidades e progressão
 
+## Requisito solicitado — distribuição de atributos (M01-20/S03)
+
+Ao subir de nível, conceder pontos distribuíveis em **ATQ/DEF/MAT/MDF/AGI/SOR**, adicionais à escolha aprovada de Vida/Mana/Vigor. **Solicitado, ainda não implementado**: quantidade, valor por ponto, retroatividade, saldo e redistribuição são propostas em [S03](ESTUDO_ATRIBUTOS_M01_20_S03.md). Não criar crescimento automático dos mesmos atributos, classes jogáveis ou restrições raciais de equipamento. Interface posterior; preservar recursos/custos existentes. S03 substitui somente a sugestão automática G de S02, não a progressão de recursos aprovada.
+
 ## Diretrizes confirmadas
 
 Estado operacional M01-09 R01: implementados desarmado3/4, adaga5/6 e espada7/8 por equipamento, custos5/12 Vigor pelo consumidor M01-08, magias Cura9/Dardo10 com Mana8/6 e livros5/6 transacionais. Revalidação no início de ações nativas e atalhos técnicos incompatíveis invalidados, sem barra nova. Guild, fontes de loot e apresentação de batalha continuam futuras. Escopo/roteiro em HABILIDADES_M01_09.md; valores provisórios, P01–P08 e arte preservados.

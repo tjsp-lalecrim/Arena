@@ -31,4 +31,4 @@ Caminhada nativa de ratos/goblins implementada e testada nesta revisão específ
 
 ## Continuidade pelo backlog
 
-O descanso piloto e o roteiro público mínimo foram confirmados em VALIDACAO_M01.md. **Fade não é a próxima implementação automática**; REF12 e REF13–REF15/paisagem/fullscreen permanecem adiados. M01-20 autorizado com ressalvas: [estudo S02](ESTUDO_DANO_PROGRESSAO_M01_20_S02.md) de dano/progressão, vinculado a REF04, substitui E01 não aprovado para execução. Fórmulas, progressão e único experimento posterior E02 aguardam aprovação. REF09/05 não são iniciados por associação; não repetir validações públicas confirmadas.
+O descanso piloto e o roteiro público mínimo foram confirmados em VALIDACAO_M01.md. **Fade não é a próxima implementação automática**; REF12 e REF13–REF15/paisagem/fullscreen seguem adiados. M01-20/REF04 continua no [complemento S03](ESTUDO_ATRIBUTOS_M01_20_S03.md): requisito de pontos adicionais aos recursos, parâmetros/fórmulas pendentes. E01/E02 não executados; somente E03 sugerido para avaliação, sem implementação de combate/interface. REF09/05 não são iniciados por associação; não repetir validações públicas confirmadas.
