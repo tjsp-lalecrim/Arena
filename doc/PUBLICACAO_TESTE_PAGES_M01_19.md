@@ -1,6 +1,18 @@
 # Prévia manual no Pages — preparação (29/10/2026)
 
-**Estado vigente: infraestrutura disponibilizada e validada no GitHub/Linux; site não publicado.** Não é release final do M01; M01-19 continua aberto, incluindo o percurso integrado restante e Galaxy A56 físico ao final do marco. Gameplay, arte, mapas, namespace e servidores pessoais não foram alterados.
+**Estado vigente: primeira prévia de teste publicada com autorização do responsável.** Não é release final do M01; M01-19 continua aberto, incluindo o percurso integrado restante e Galaxy A56 físico ao final do marco. Gameplay, arte, mapas, namespace e servidores pessoais não foram alterados.
+
+## Primeira publicação autorizada — 29/10/2026
+
+Jogo **9fab698f89f54f8bdf1dae38ad1db6e6f09f6f56** e infraestrutura/main **f62e026256ad82533412c2970fa539a519f924e0** conferidos no remoto antes da ação. Pages habilitado com **build_type=workflow**, sem domínio personalizado, HTTPS. [Execução40888132772](https://github.com/tjsp-lalecrim/Arena/actions/runs/40888132772), manual pela main, **publish=true**: build e deploy success. Nenhuma alteração dos SHAs, gameplay, assets, schema/namespace, workflow ou seus eventos; publicação continua exclusivamente manual. Main permanece apenas com a infraestrutura e runtime estável anterior, sem promover a feature ou criar release.
+
+**Jogo:** https://tjsp-lalecrim.github.io/Arena/ — [manifesto hospedado](https://tjsp-lalecrim.github.io/Arena/package-manifest.json), versão de teste **m01-19-web-r01**, namespace **arena:m01:save-v1**. Manifesto publicado com hash `acce0fed9bac1c17f81623525b94d856817de6a37ebfe504f366c4df74cddbce`, idêntico ao aprovado na validação Linux anterior. Todos os317 arquivos públicos retornaram HTTP200 e coincidiram com os tamanhos/SHA-256 do manifesto (37.819.050 bytes incluindo manifesto). Artefato desta execução12904380074:33.534.699 bytes; o ZIP pode diferir em metadados do arquivo tar entre execuções, sem diferença do conteúdo/manifesto hospedado.
+
+Chrome156.0.8078.73 headless, contexto novo isolado, viewport1100×800: título, Nova Partida/criação/confirmação e introdução textual/ilustrada abriram sem erro de página ou requisição. Capturas inspecionadas na resolução efetiva do jogo; nenhum service worker registrado. [Evidências](evidencias/m01-19-pages-primeira-publicacao/resultado.json), [título](evidencias/m01-19-pages-primeira-publicacao/titulo-publico.png), [introdução](evidencias/m01-19-pages-primeira-publicacao/introducao-publica.png). Não repetida a campanha completa nem atribuído teste de save/fechamento/reabertura ao responsável no site público. Nenhum save pessoal/local foi acessado ou transferido.
+
+**Roteiro do responsável no Chrome:** abrir o link HTTPS acima em perfil normal → Nova Partida/criação/introdução → na dungeon, **Esc → Salvar** e escolher slot → fechar o Chrome → reabrir **o mesmo perfil e endereço** → **Continuar**, escolher slot e conferir personagem/local/recursos. Slots inicialmente vazios no Pages são esperados: saves localhost não são transferidos nem apagados. Não limpar dados do site para resolver cache; F5/Ctrl+F5 ou reabrir abas permitem conferir atualização, e o manifesto identifica a versão. Registrar eventual falha e ambiente; teste físico Galaxy A56 e fechamento completo M01 permanecem pendentes.
+
+Os registros anteriores abaixo preservam preparação e validação sem deploy. As instruções de habilitar Pages/autorizar primeiro deploy foram atendidas por esta publicação; novas atualizações continuam exigindo ação manual e escopo autorizado.
 
 ## Execução autorizada — 29/10/2026
 
