@@ -1,6 +1,6 @@
 # Prévia manual no Pages — preparação (29/10/2026)
 
-**Estado vigente: primeira prévia de teste publicada com autorização do responsável.** Não é release final do M01; M01-19 continua aberto, incluindo o percurso integrado restante e Galaxy A56 físico ao final do marco. Gameplay, arte, mapas, namespace e servidores pessoais não foram alterados.
+**Estado vigente: primeira prévia de teste publicada com autorização do responsável.** Não é release final do M01; M01-19 continua aberto pela cobertura funcional restante e requisitos adiados. Chrome PC/A56 físico e persistência pública após reinício já confirmados, com limites em VALIDACAO_M01.md. Gameplay, arte, mapas, namespace e servidores pessoais não foram alterados.
 
 ## Primeira publicação autorizada — 29/10/2026
 
@@ -10,9 +10,7 @@ Jogo **9fab698f89f54f8bdf1dae38ad1db6e6f09f6f56** e infraestrutura/main **f62e02
 
 Chrome156.0.8078.73 headless, contexto novo isolado, viewport1100×800: título, Nova Partida/criação/confirmação e introdução textual/ilustrada abriram sem erro de página ou requisição. Capturas inspecionadas na resolução efetiva do jogo; nenhum service worker registrado. [Evidências](evidencias/m01-19-pages-primeira-publicacao/resultado.json), [título](evidencias/m01-19-pages-primeira-publicacao/titulo-publico.png), [introdução](evidencias/m01-19-pages-primeira-publicacao/introducao-publica.png). Não repetida a campanha completa nem atribuído teste de save/fechamento/reabertura ao responsável no site público. Nenhum save pessoal/local foi acessado ou transferido.
 
-**Roteiro do responsável no Chrome:** abrir o link HTTPS acima em perfil normal → Nova Partida/criação/introdução → na dungeon, **Esc → Salvar** e escolher slot → fechar o Chrome → reabrir **o mesmo perfil e endereço** → **Continuar**, escolher slot e conferir personagem/local/recursos. Slots inicialmente vazios no Pages são esperados: saves localhost não são transferidos nem apagados. Não limpar dados do site para resolver cache; F5/Ctrl+F5 ou reabrir abas permitem conferir atualização, e o manifesto identifica a versão. Registrar eventual falha e ambiente; teste físico Galaxy A56 e fechamento completo M01 permanecem pendentes.
-
-**Relato posterior:** responsável confirmou funcionamento público geral no navegador do PC e do smartphone, sem identificar navegador/aparelho/percurso ou reinício com save. Evidência principal em [VALIDACAO_M01.md](VALIDACAO_M01.md#relato-público-do-responsável--pc-e-smartphone-29102026). Não preenche automaticamente o roteiro de persistência acima; ajustes futuros têm registro único REF13–REF15. Nenhuma atualização Pages nesta tarefa documental.
+**Save público confirmado pelo responsável:** Chrome no PC e Samsung Galaxy A56 físico, salvar → fechar/reabrir → carregar com estado preservado nos dois, com saves independentes por dispositivo. Resolve identificação e reinício daquele roteiro; não solicitar repetição nesta versão. Evidência principal e [confirmações mínimas restantes](VALIDACAO_M01.md#roteiro-público-mínimo-restante--mesma-prévia) não presumem campanha completa ou outras funções. Ajustes REF13–REF15/paisagem/fullscreen permanecem adiados; nenhum Pages atualizado nesta tarefa documental. Saves localhost não são transferidos nem apagados; não limpar dados do site para resolver cache. O roteiro de publicação/atualização abaixo é procedimento para futuras builds autorizadas, não pedido para repetir a validação concluída agora.
 
 Os registros anteriores abaixo preservam preparação e validação sem deploy. As instruções de habilitar Pages/autorizar primeiro deploy foram atendidas por esta publicação; novas atualizações continuam exigindo ação manual e escopo autorizado.
 
