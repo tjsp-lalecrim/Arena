@@ -12,6 +12,8 @@ Chrome156.0.8078.73 headless, contexto novo isolado, viewport1100×800: título,
 
 **Roteiro do responsável no Chrome:** abrir o link HTTPS acima em perfil normal → Nova Partida/criação/introdução → na dungeon, **Esc → Salvar** e escolher slot → fechar o Chrome → reabrir **o mesmo perfil e endereço** → **Continuar**, escolher slot e conferir personagem/local/recursos. Slots inicialmente vazios no Pages são esperados: saves localhost não são transferidos nem apagados. Não limpar dados do site para resolver cache; F5/Ctrl+F5 ou reabrir abas permitem conferir atualização, e o manifesto identifica a versão. Registrar eventual falha e ambiente; teste físico Galaxy A56 e fechamento completo M01 permanecem pendentes.
 
+**Relato posterior:** responsável confirmou funcionamento público geral no navegador do PC e do smartphone, sem identificar navegador/aparelho/percurso ou reinício com save. Evidência principal em [VALIDACAO_M01.md](VALIDACAO_M01.md#relato-público-do-responsável--pc-e-smartphone-29102026). Não preenche automaticamente o roteiro de persistência acima; ajustes futuros têm registro único REF13–REF15. Nenhuma atualização Pages nesta tarefa documental.
+
 Os registros anteriores abaixo preservam preparação e validação sem deploy. As instruções de habilitar Pages/autorizar primeiro deploy foram atendidas por esta publicação; novas atualizações continuam exigindo ação manual e escopo autorizado.
 
 ## Execução autorizada — 29/10/2026
