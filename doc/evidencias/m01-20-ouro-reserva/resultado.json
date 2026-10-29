@@ -6,7 +6,7 @@
     "Current results survive native save/load and repeat API with roll forbidden",
     "Capacity reserve8 saved/loaded, delivered3+5 exactly once, no RNG on later delivery",
     "MQ01 real treasure adapter uses range: deterministic8, repeated messages/interaction no payment, native map save/load keeps receipt and hidden treasure",
-    "Generator preserves new range in temporary fixture; battle loot, enemies, equipment/rarity/items, skills, rest and real map unchanged"
+    "Generator preserves approved range; only separately authorized retired-variant removal differs in loot tables; gold/chances/books/enemies/items/skills/rest/map unchanged"
   ],
   "legacy": {
     "receipts": {

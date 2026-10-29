@@ -2,7 +2,7 @@
 
 29/10/2026, base de jogo **5659763**, sem alteração de execução. Dois percursos em localhost com Khajiit e Elfo Negro chegaram ao Shift Gate/encerramento conforme o responsável; sem dados quantitativos de nível/equipamento/consumo. Isso confirma funcionamento no alcance relatado, **não equilíbrio definitivo**, nem obtenção de todo item possível. Não solicitar repetição nesta tarefa.
 
-**Atualização posterior:** fallback2–8 autorizado e implementado somente na feature, com [contrato/evidências](OURO_RESERVA_VARIAVEL_M01_20.md). A tabela/proposta abaixo descreve a revisão013dd25 anterior à implementação; raridade/catálogo continuam propostas não aplicadas. Batalhas e saves existentes preservados.
+**Atualizações posteriores na feature:** fallback2–8 implementado em e234044; [variantes genéricas retiradas dos novos sorteios](RETIRADA_VARIANTES_RARAS_M01_20.md), mantendo os registros legados. A tabela/proposta abaixo descreve a revisão013dd25 anterior às implementações. Novos encantamentos/poções/catálogo continuam futuros; ouro/livros e saves existentes preservados.
 
 ## Estado real: chance não é quantidade
 

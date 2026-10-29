@@ -12,7 +12,7 @@ Aliases: BattleManager.setup/processVictory/isBusy, Scene_Battle.createAllWindow
 
 Resumo é apresentação transitória após mensagens nativas; seleção descreve conteúdo, Enter/Esc/toque fecha tudo. Não é janela de coleta individual. Sem slots vazios; origem mantida no ledger embora pilhas sejam agregadas. Reservas têm indicação explícita e se entregam no mapa, sem sorteio/EXP novos. Não salvar janelas/planos transitórios ou assumir salvamento em batalha.
 
-A configuração atual tem3 inimigos e4 variantes raras de tipos existentes, valores provisórios. Fonte de chave não é drop normal; integração técnica de quest testada sem alterar campanha. Fonte/recuperação usa API já existente, não reinventa etapas. Ver LOOT_M01_13.md para roteiro e pendências editor/A56/balanceamento.
+A configuração atual tem3 inimigos; quatro variantes provisórias permanecem **somente como banco legado**, sem referências/chance de substituição no loot futuro. Livros5/6 e suas chances continuam. [Retirada e compatibilidade](../RETIRADA_VARIANTES_RARAS_M01_20.md). Fonte de chave não é drop normal; fonte/recuperação usa API já existente, não reinventa etapas. Ver LOOT_M01_13.md para histórico de roteiro/evidências.
 
 M01-16 acrescenta claimContainer(id,table): sorteio puro existente seguido do mesmo settle atômico, token container/ID, zero EXP; repetição devolve o recibo sem sortear/conceder novamente. Não altera recompensas/tabelas de inimigos. A escolha do proxy provisório de tabela é do conteúdo MQ01, não do núcleo. Capacidade continua usando reservas existentes.
 

@@ -2,7 +2,7 @@
 
 ## Direção solicitada para a próxima revisão
 
-**Aplicação parcial na feature:** fallback de tesouros vazios2–8 implementado e verificado em [OURO_RESERVA_VARIAVEL_M01_20.md](OURO_RESERVA_VARIAVEL_M01_20.md). Os planos de raridade/catálogo abaixo permanecem não aplicados; prêmios anteriores e tabelas de batalha preservados.
+**Aplicação na feature:** fallback de tesouros vazios2–8 preservado; [quatro variantes genéricas retiradas do loot futuro](RETIRADA_VARIANTES_RARAS_M01_20.md), mantendo banco e saves antigos. Chances/intervalos de ouro, livros e demais categorias preservados. Novos encantamentos/poções/catálogo continuam futuros, sem implementação autorizada por associação.
 
 Evitar prêmios positivos de ouro fixos em batalhas/tesouros, mantendo ocorrência separada do intervalo de quantidade e a garantia de ao menos uma recompensa positiva nos tesouros. Raridade deve qualificar conteúdo/efeito concreto, não apenas sufixo com bônus genérico. Recibos e reservas já concedidos permanecem estáveis, inclusive em saves antigos; não renomear variantes como encantadas sem definir efeito e compatibilidade. Estado real e propostas **ainda não aplicadas** em [REVISAO_OURO_RARIDADE_M01_20.md](REVISAO_OURO_RARIDADE_M01_20.md). Ausência de loot não é prêmio fixo0 a substituir. Sem ampliação automática do catálogo.
 
