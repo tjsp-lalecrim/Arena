@@ -1,3 +1,7 @@
+## Integração para percurso M01 — 29/10/2026
+
+Responsável autorizou campanha atual como referência provisória, sem regras E05 na campanha. Merges90c9a4(narrativa67dfbe3) e2705812(M01-19/06dacca) sem conflitos, histórico preservado e árvore final exatamente igual à feature06dacca. Verificações focais: registro canônico/UTF8 sem BOM, presença/sintaxe dos34 plugins; conteúdo servido em8765 corresponde ao checkout; Chrome156.0.8078.73 isolado abriu sem erros/arquivos faltantes. Nova sessão normal com nível1/atributos-base, fórmula normal, E05 inativo, save/serialização permitidos e zero escritas. [Evidência](evidencias/integracao-percurso-m01/verificacao.json) e [identificação da referência](INTEGRACAO_REFERENCIA_PERCURSO_M01.md). Nenhuma nova campanha completa, batalha, autoria MV ou aparelho físico testado; não repetir as evidências anteriores por merge sem alterações de conteúdo. Main/Pages preservados, sem aprovação definitiva de balanceamento nem conclusão M01-20/M01.
+
 ## Relato público do responsável — PC e smartphone (29/10/2026)
 
 ### Retorno parcial do piloto e planejamento de balanceamento

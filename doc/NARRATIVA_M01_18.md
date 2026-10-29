@@ -1,3 +1,7 @@
+## Consolidação em develop — 29/10/2026
+
+Feature narrativa integrada pelo merge90c9a45477bc32b8c81b403ed2b075610f7f8529, antes de M01-19/2705812, com autorização do responsável e aprovações existentes preservadas. [Referência integrada](INTEGRACAO_REFERENCIA_PERCURSO_M01.md) não altera texto, arte ou gameplay e não declara M01-20/M01 encerrados. Pendência de consolidação nos registros abaixo é histórica; nenhuma nova avaliação estética foi inferida.
+
 ## Estado de fechamento M01-18 — 29/10/2026
 
 Critérios funcionais atendidos na feature, com introdução/encerramento aprovados pelo responsável e Gate/progressão/persistência confirmados no editor dentro do escopo relatado. Evidências técnicas R02 e limites manuais estão em VALIDACAO_M01.md e REVISAO_INTEGRACAO_M01_18_R02.md; não atribuir a esses registros um novo teste integrado Chrome da versão atual. Não foi identificado bloqueio funcional concreto de M01-18; consolidação em develop ainda pendente de workflow/autorização da tarefa correspondente. Estado/critério/prioridade da próxima unidade Chrome desktop de M01-19 em BACKLOG_M01.md. Sem novo teste, merge ou implementação nesta revisão documental; refinamentos aceitos continuam futuros. Registros anteriores abaixo são históricos quando divergirem.

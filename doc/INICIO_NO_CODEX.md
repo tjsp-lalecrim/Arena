@@ -1,6 +1,6 @@
 ## Leitura operacional — processo vigente
 
-Aplicar o roteiro e a [prioridade obrigatória pelo backlog](DESENVOLVIMENTO_E_VERSIONAMENTO.md#prioridade-obrigatória--foco-no-backlog). Estado de M01-18, pendência de consolidação Git e primeira unidade M01-19/Chrome desktop: [BACKLOG_M01.md](BACKLOG_M01.md). Evidências em VALIDACAO_M01.md; melhorias adiadas em REFINAMENTOS_POS_INTEGRACAO_M01.md, sem autorização por associação. Descanso validado não torna fade trabalho atual. Smartphone físico ao final do M01, antes do fechamento, sem bloquear desktop. Os relatos anteriores abaixo são históricos quando divergirem; esta atualização não inicia implementação.
+Aplicar o roteiro e a [prioridade obrigatória pelo backlog](DESENVOLVIMENTO_E_VERSIONAMENTO.md#prioridade-obrigatória--foco-no-backlog). Narrativa/M01-19 integrados em develop; campanha atual autorizada como referência provisória do percurso, **sem transferir E05**. Commits/acesso local/verificações em [INTEGRACAO_REFERENCIA_PERCURSO_M01.md](INTEGRACAO_REFERENCIA_PERCURSO_M01.md), próximo recorte em [BACKLOG_M01.md](BACKLOG_M01.md). M01-20 e marco não concluídos; distribuição/fórmula/balanceamento e requisitos adiados continuam pendentes. Evidências em VALIDACAO_M01.md; melhorias em REFINAMENTOS_POS_INTEGRACAO_M01.md não ganham autorização por associação. Testes públicos PC/A56 já registrados não devem ser solicitados novamente sem risco concreto; paisagem/fullscreen não declarados atendidos. Relatos anteriores abaixo são históricos quando divergirem.
 
 ## Revisão vigente M01-18 R02 — 28/10/2026
 

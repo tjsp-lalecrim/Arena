@@ -1,15 +1,15 @@
-## M01-19 funcional validado com ressalvas; M01-20 diagnóstico (29/10/2026)
+## Integração em develop; referência provisória para percurso M01 (29/10/2026)
 
 Prévia [Pages](https://tjsp-lalecrim.github.io/Arena/), jogo9fab698/infraestruturaf62e026. **Responsável concluiu o roteiro funcional público e autorizou avançar ao M01-20 com ressalvas de apresentação.** Não significa atendimento integral de M01-19/paisagem/fullscreen ou fechamento M01. Publicação manual preservada, sem atualização Pages nesta tarefa. Evidências/limites em [VALIDACAO_M01.md](VALIDACAO_M01.md); REF13–REF15 permanecem adiados no registro único de refinamentos.
 
 | Situação | Evidência ou pendência |
 | --- | --- |
 | Confirmado | No Chrome PC e A56 físico, criação/introdução, exploração/combate/loot, inventário/poções em e fora de combate, diário/descanso, Gate/encerramento; somados a save/fechar/reabrir/load e saves independentes. Roteiro público mínimo concluído pelo relato, sem repetir nem atribuir testes extremos não informados. |
-| M01-20 atual | Responsável experimentou opções do piloto e considera poucas lutas insuficientes para balanceamento. Cobertura “adaga, espada e híbrido” não equivale aos quatro conjuntos E05. Avaliação de percurso por marco aprovada como processo; base provisória ainda a escolher. Nenhuma aprovação de fórmula/pontos/conjuntos para campanha ou nova implementação. |
+| M01-20 atual | Base provisória da campanha autorizada; narrativa e M01-19 integrados em develop na ordem das dependências. E05 continua técnico/isolado, sem aprovação definitiva ou transferência. Percurso de balanceamento, distribuição de atributos e decisão/aplicação da fórmula continuam pendentes; item e marco não concluídos. |
 | Requisitos adiados | Paisagem e tela cheia quando suportadas: existentes no aceite de M01-19, adiados pelo responsável, sem evidência de atendimento. REF14 também reúne avaliação da área do navegador. Adiamento não dispensa o aceite; atender ou revisar explicitamente os critérios antes de fechar o item. Menu por toque e simplificação do menu permanecem melhorias futuras em REF13/15, sem execução automática. |
 | Bloqueios reais | Nenhuma falha crítica comprovada no relato. Facilidade é observação de balanceamento a investigar em20, não justificativa para alterar todos os sistemas. Apresentação adiada não bloqueia o diagnóstico autorizado nem pode ser declarada atendida. |
 
-**M01-20 — planejamento vigente:** [avaliação de percurso](AVALIACAO_BALANCEAMENTO_POR_MARCO.md), vinculada a REF04, reutiliza M01-20 sem item duplicado. Três pontos de registro e poucos encontros representativos; manter referência e distinguir obtenção real de drops possíveis. E05 continua isolado, com evidências técnicas anteriores preservadas. Única decisão recomendada: usar campanha localbc71752, sem E05, como linha-base provisória do percurso completo? Sem nova execução, ajuste ou fechamento M01 nesta tarefa. Itens M02-BAL–M10-BAL registrados no planejamento dos marcos, sem renumeração ou início antecipado.
+**M01-20 — planejamento vigente:** [avaliação de percurso](AVALIACAO_BALANCEAMENTO_POR_MARCO.md), vinculada a REF04, reutiliza M01-20 sem item duplicado. Base escolhida, integrada e disponível em localhost; [commits/verificações](INTEGRACAO_REFERENCIA_PERCURSO_M01.md). Três pontos de registro e poucos encontros representativos; congelar a referência e distinguir obtenção real de drops possíveis. Sem nova execução de percurso, ajuste de gameplay ou fechamento M01 nesta tarefa. Itens M02-BAL–M10-BAL preservados, sem renumeração ou início antecipado.
 
 ## M01-19 — infraestrutura GitHub validada, sem deploy (29/10/2026)
 

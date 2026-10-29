@@ -17,9 +17,9 @@ A fórmula da tabela é a base, não o dano final após todos os modificadores; 
 
 ## Roteiro curto de percurso M01 — proposto, não executado
 
-**Uma decisão antes de iniciar:** usar como base provisória a **campanha local bc71752, fora dos laboratórios, sem transferir E05**? É a recomendação: primeiro observar a jornada realmente implementada, preservando uma referência e sem atribuir ao loot real conjuntos virtuais. Aprovar essa base autoriza o recorte de avaliação, não valida seus valores definitivamente. Se a base pretendida for outra, será preciso descrevê-la e autorizar a preparação em tarefa posterior; não presumir essa escolha. Pages permanece no jogo9fab698, sem atualização por este planejamento.
+**Base provisória autorizada pelo responsável:** campanha atual integrada em develop, fora dos laboratórios, **sem transferir E05**. Histórico, identificação do commit final de referência e acesso local em [INTEGRACAO_REFERENCIA_PERCURSO_M01.md](INTEGRACAO_REFERENCIA_PERCURSO_M01.md). Conteúdo jogável igual ao estado06dacca/bc71752; integração não aprova valores definitivamente. Não pedir novamente a escolha da base. Pages permanece no jogo9fab698, sem atualização nesta integração.
 
-Após decidir a base, manter o mesmo commit/pacote durante a rodada e registrar ambiente, versão de teste, nova partida/save de origem, personagem e rota. Usar uma personagem/construção representativa; sem matriz de todas as raças/armas. Fazer o percurso **criação → introdução → dungeon/objetivos → Shift Gate/encerramento**, com três paradas:
+Manter o mesmo commit/pacote de referência durante a rodada e registrar ambiente, versão de teste, nova partida/save de origem, personagem e rota. Usar uma personagem/construção representativa; sem matriz de todas as raças/armas. Fazer o percurso **criação → introdução → dungeon/objetivos → Shift Gate/encerramento**, com três paradas:
 
 | Ponto | Registro mínimo |
 | --- | --- |
@@ -41,4 +41,4 @@ Separar **encontrou e usou**, **encontrou e não usou**, **apenas possível na t
 4. Reavaliar na escala dos marcos seguintes, preservando fortalecimento contra inimigos antigos, sem compensá-lo com escalonamento automático. Considerar recuperação e utilidade real de atributos/raças antes de alterar bônus. Valores e decisões provisórias continuam identificados.
 5. Registrar resultado, ajuste avaliado quando necessário e decisão de aceite/ressalvas ou problema aberto. Mudança futura deve tratar compatibilidade de saves e ganhos já concedidos, sem trocar namespace por rebalanceamento. Nenhuma telemetria/coleta remota ou ferramenta extensa prevista; registro manual basta inicialmente.
 
-Próximo passo recomendado: **M01-20, escolher a referência para o primeiro percurso**, critério de avaliar dificuldade/recuperação e fortalecimento na jornada integrada. A única decisão pendente é a base acima; não ampliar E05, alterar campanha ou iniciar outra rodada antes dela.
+Próximo recorte recomendado: **M01-20, avaliação manual do percurso na referência integrada**, critério de observar dificuldade/recuperação e fortalecimento reais, antes de propor ajustes de uma família por vez. Base já escolhida; não ampliar E05 ou transferi-lo à campanha por associação. Esta integração disponibiliza a versão e não declara a avaliação realizada.

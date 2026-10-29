@@ -1,0 +1,26 @@
+{
+  "browser": "156.0.8078.73",
+  "url": "http://127.0.0.1:8765/",
+  "plugins": 34,
+  "result": {
+    "e05": false,
+    "rawDamage": 17,
+    "nativeExpected": 17,
+    "saveEnabled": true,
+    "serializable": true,
+    "namespace": "arena:m01:save-v1",
+    "level": 1,
+    "attrs": [
+      10,
+      5,
+      8,
+      5,
+      10,
+      10
+    ],
+    "storageKeys": []
+  },
+  "errors": [],
+  "missing": [],
+  "scope": "Opening only, isolated browser context; no campaign/battle retest or storage writes"
+}
