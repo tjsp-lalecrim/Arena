@@ -11,4 +11,12 @@ for(let dy=0;dy<q.gateDepth;dy++)for(let dx=-q.gateHalfWidth;dx<=q.gateHalfWidth
  if(!e){e=JSON.parse(JSON.stringify(m.events[d.gateEvent]));e.id=m.events.length;e.name=name;m.events.push(e);}
  e.note='ArenaQuest:gate-contact';e.x=d.gateApproach[0]+dx;e.y=d.gateApproach[1]+dy;e.pages=JSON.parse(JSON.stringify(m.events[d.gateEvent].pages));
 }
-fs.writeFileSync('data/Map008.json',JSON.stringify(m)+'\n');console.log('Integrated MQ01 key/Gate contact area; existing IDs/tiles preserved');
+// Recovery source is explicit and rebuilt after encounter/Gate IDs, never geometry.
+const rest=JSON.parse(fs.readFileSync('data/ArenaRecovery.json','utf8')).restPoints.find(p=>p.dungeonPilot);
+if(rest){
+ let e=m.events[rest.eventId];if(e&&e.note!=='ArenaRecovery:'+rest.id)throw Error('Recovery event ID occupied');
+ if(!e){e=JSON.parse(JSON.stringify(key));e.id=rest.eventId;m.events[e.id]=e;}
+ e.name='Refúgio / descanso piloto';e.note='ArenaRecovery:'+rest.id;e.x=rest.x;e.y=rest.y;
+ const p=JSON.parse(JSON.stringify(page));p.image={characterIndex:0,characterName:'',direction:2,pattern:1,tileId:0};p.priorityType=0;p.through=true;p.trigger=0;p.list=[{code:355,indent:0,parameters:["ArenaRecovery.usePoint('"+rest.id+"',this);"]},{code:0,indent:0,parameters:[]}];e.pages=[p];
+}
+fs.writeFileSync('data/Map008.json',JSON.stringify(m)+'\n');console.log('Integrated MQ01 key/Gate and one recovery source; existing IDs/tiles preserved');

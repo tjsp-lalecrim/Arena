@@ -4,7 +4,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const dungeon=read('data/ArenaDungeon.json'), map=read('data/Map008.json');
 const firstId=169;
 const mapVisuals={'1':{file:'$Arena_rat_walk_r02',cell:[64,64],ground:62,groundByDirection:{'8':52},animationWait:10},'2':{file:'$Arena_goblin_walk_r02',cell:[64,64],ground:62,animationWait:10}};
-if(map.events.slice(firstId).some(e=>e&&!e.note.startsWith('ArenaEncounter:')&&e.note!=='ArenaQuest:gate-contact'))throw Error('Unrelated events after168; preserve them before rebuilding');
+if(map.events.slice(firstId).some(e=>e&&!e.note.startsWith('ArenaEncounter:')&&e.note!=='ArenaQuest:gate-contact'&&e.note!=='ArenaRecovery:MQ01.refuge.01'))throw Error('Unrelated events after168; preserve them before rebuilding');
 map.events=map.events.slice(0,firstId);
 const page=read('data/Map007.json').events.find(e=>e&&e.pages).pages[0];
 const entries=dungeon.integration.enemies.map((source,i)=>{

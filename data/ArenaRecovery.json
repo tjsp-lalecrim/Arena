@@ -13,6 +13,20 @@
       "eventId": 6,
       "technical": true,
       "source": "Cama técnica isolada M01-08/17; não representa cama confirmada nas Masmorras Imperiais."
+    },
+    {
+      "id": "MQ01.refuge.01",
+      "mapId": 8,
+      "eventId": 241,
+      "technical": false,
+      "dungeonPilot": true,
+      "x": 124,
+      "y": 79,
+      "sourceCell": [
+        40,
+        25
+      ],
+      "source": "Plataforma existente de START.MIF interpretada no layout M01-14; nicho com paredes a oeste/leste/sul. Camp geral e refúgios elevados documentados em POCOES_E_DESCANSO_M01_17.md; interação e restauração integral são adaptações aprovadas em29/10/2026."
     }
   ],
   "menuIntervalMs": 500
