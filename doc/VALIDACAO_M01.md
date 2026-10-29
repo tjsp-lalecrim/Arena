@@ -1,3 +1,9 @@
+## Pacote local — confirmação do responsável e preparação Pages (29/10/2026)
+
+O responsável confirmou **Chrome: abrir o pacote local, salvar, fechar o navegador, reabrir e carregar com estado preservado**. Associado ao pacote então disponível **m01-19-web-r01/runtime9fab698**, servido em8771/Arena/, não a hash explicitamente informado pelo responsável. Não atribuir esse relato a Pages, smartphone, isolamento entre jogos ou escrita concorrente. Complementa, sem reescrever, o relato anterior de8765.
+
+Workflow Pages exclusivamente manual preparado nesta feature, sem execução remota/publicação. Sintaxe/YAML, permissões, acionamento, pacote reproduzível e validações estáticas passaram localmente em Windows; **runner Linux e deploy ainda não executados**. Procedimento, branches/dependências e limites em [PUBLICACAO_TESTE_PAGES_M01_19.md](PUBLICACAO_TESTE_PAGES_M01_19.md), com [evidência focal](evidencias/m01-19-pages-preparacao/resultado.json). Aprovação local não fecha M01-19 nem aprova automaticamente a versão pública.
+
 ## Chrome localhost — relato do responsável e pacote em subpasta (29/10/2026)
 
 **Evidência manual fornecida pelo responsável**, Chrome em http://127.0.0.1:8765/: salvar/carregar retornando ao título; F5 e Ctrl+F5; abrir outra aba e criar segundo save; atualizar ambas as abas; slots disponíveis entre abas sem necessidade de recarregar a página. Associado ao estado disponível **9fab698**, não a hash ou versão do Chrome explicitamente informados pelo responsável. Não atribuir reinício completo do navegador, isolamento entre jogos, escrita concorrente no mesmo slot, editor ou smartphone. Não foi implementado novo tratamento de concorrência por este relato.

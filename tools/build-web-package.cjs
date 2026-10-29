@@ -1,7 +1,8 @@
 // Explicit runtime allowlist; no asset pruning, transforms or deployment.
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),crypto=require('node:crypto'),assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'..');process.chdir(root);
-const recipeBytes=fs.readFileSync('tools/web-package-allowlist.json'),recipe=JSON.parse(recipeBytes);
+// An independent tooling checkout can package an exact source checkout.
+const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));process.chdir(root);
+const recipeBytes=fs.readFileSync(path.join(__dirname,'web-package-allowlist.json')),recipe=JSON.parse(recipeBytes);
 const git=(...args)=>cp.execFileSync('git',args,{encoding:'utf8'}).trim();
 const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const sourceCommit=git('rev-parse','HEAD'),tracked=git('ls-files','-z').split('\0').filter(Boolean);

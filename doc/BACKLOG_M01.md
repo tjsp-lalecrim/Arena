@@ -1,3 +1,7 @@
+## M01-19 — preparação da publicação manual de teste (29/10/2026)
+
+Responsável confirmou save/fechamento/reabertura/load no pacote local disponível R01/runtime9fab698; escopo em VALIDACAO_M01.md. Workflow manual com SHA imutável, modo somente preparação por padrão, validação Linux obrigatória antes de deploy e artefato limitado ao pacote. [Procedimento e decisões pendentes](PUBLICACAO_TESTE_PAGES_M01_19.md). Sem merge/push/configuração remota/deploy/release; main/develop preservadas. M01-19 permanece aberto: execução real do workflow/Linux, teste do endereço público, percurso integrado restante e Galaxy A56 físico final não foram presumidos. Estados anteriores abaixo mantêm o contexto histórico.
+
 ## M01-19 — pacote web local preparado (29/10/2026)
 
 Mesma feature/m01-19-isolamento-saves; relato manual Chrome8765 registrado com limites em VALIDACAO_M01.md. Preparação reproduzível por allowlist, saída ignorada dist/web/m01-19-web-r01-9fab698/Arena, execução focal em8771/Arena/ validada sem alterar gameplay/namespace ou serviço pessoal. [Procedimento, tamanho, conteúdo e evidências](PACOTE_WEB_M01_19.md). **Não fecha M01-19:** pacote aguarda avaliação, percurso integrado Chrome e testes físicos finais permanecem no roteiro. GitHub Pages/publicação são entrega posterior, sem configuração/deploy/merge/push nesta tarefa. Estados anteriores abaixo são históricos quando divergirem deste registro.

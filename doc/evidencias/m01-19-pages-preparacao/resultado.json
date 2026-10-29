@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-29",
+  "branch": "feature/m01-19-isolamento-saves",
+  "baseCommit": "c404845dfe54839dbfa6d9fb00d815de5622ea6b",
+  "remoteReadOnly": {
+    "defaultBranch": "main",
+    "main": "cfd31d34b6c71f5f214921ea067094f795b34085",
+    "develop": "a9d8cc099d8d950194ccccf5a5e36c42fd8261ec",
+    "narrative": "270bbd392ad71a93d38de7cdae93dd375ccbe1bd",
+    "currentFeature": "not present",
+    "method": "GitHub connector repository metadata/branches; local git HTTPS unavailable"
+  },
+  "localPackageValidation": {
+    "platform": "win32",
+    "sourceCommit": "c404845dfe54839dbfa6d9fb00d815de5622ea6b",
+    "testVersion": "m01-19-web-r01",
+    "namespace": "arena:m01:save-v1",
+    "runtimeFiles": 317,
+    "totalBytes": 37911412,
+    "manifestSha256": "a1a5f40db98ebe661867ac35db7c3b4872bf57993306980c432c6486a9859b98",
+    "checks": [
+      "exact inventory; runtime paths only; no symlinks/saves/references",
+      "SHA-256/size of every file",
+      "path capitalization/collisions; HTML/CSS relative resources",
+      "canonical plugins registry, referenced plugin files, stable namespace"
+    ]
+  },
+  "checks": [
+    "YAML parsed; only workflow_dispatch, publish false by default",
+    "main-only workflow, full source SHA checked, artifact points only to runtime package",
+    "build contents:read; deploy pages:write/id-token:write; no saved Git credentials",
+    "concurrency pages, no cancel in progress; deploy requires validated build and explicit publish",
+    "Bash syntax checked with Git Bash -n; JS syntax checked by Node",
+    "two builds produced identical reports; external working-directory/source argument succeeded",
+    "wrong expected SHA rejected; REQUIRE_LINUX guard rejects Windows",
+    "all runtime file sizes/hashes match the approved 9fab698 package"
+  ],
+  "notExecuted": [
+    "GitHub Actions workflow/service validation",
+    "actual Linux runner",
+    "Pages enabling/configuration/deployment",
+    "campaign gameplay repeat",
+    "physical Galaxy A56"
+  ],
+  "changesToGameplay": false,
+  "pushMergeRelease": false
+}

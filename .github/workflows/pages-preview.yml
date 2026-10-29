@@ -1,0 +1,101 @@
+name: Arena - previa manual Pages
+run-name: "Pages preview ${{ inputs.source_sha }} (publicar=${{ inputs.publish }})"
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_sha:
+        description: Commit completo (40 caracteres) do jogo a conferir/publicar
+        required: true
+        type: string
+      publish:
+        description: Publicar apos validar (desmarcado = somente preparar artefato)
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      source_sha: ${{ steps.package.outputs.source_sha }}
+    steps:
+      - name: Exigir SHA imutavel
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+        run: '[[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]]'
+      - name: Infraestrutura da versao deste workflow
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: tooling
+          persist-credentials: false
+      - name: Codigo exato selecionado
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_sha }}
+          path: source
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Conferir checkout, empacotar duas vezes e validar no Linux
+        id: package
+        env:
+          EXPECTED_SOURCE_SHA: ${{ inputs.source_sha }}
+          REQUIRE_LINUX: '1'
+          WILL_PUBLISH: ${{ inputs.publish }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git -C source rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
+          node tooling/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-first.json"
+          node tooling/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-second.json"
+          cmp "$RUNNER_TEMP/package-first.json" "$RUNNER_TEMP/package-second.json"
+          PACKAGE_DIR=$(node -p 'JSON.parse(require("fs").readFileSync(process.env.RUNNER_TEMP+"/package-first.json","utf8")).directory')
+          node tooling/tools/check-web-package.cjs "$PACKAGE_DIR" > "$RUNNER_TEMP/package-validation.json"
+          cat "$RUNNER_TEMP/package-validation.json"
+          echo "directory=$PACKAGE_DIR" >> "$GITHUB_OUTPUT"
+          echo "source_sha=$EXPECTED_SOURCE_SHA" >> "$GITHUB_OUTPUT"
+          echo '### Arena - previa de teste, sem release' >> "$GITHUB_STEP_SUMMARY"
+          echo "Workflow/infraestrutura: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+          echo "Publicacao solicitada: $WILL_PUBLISH" >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          cat "$RUNNER_TEMP/package-validation.json" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - name: Enviar somente a raiz do pacote de execucao
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.package.outputs.directory }}
+          retention-days: 7
+
+  deploy:
+    if: inputs.publish
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Ler configuracao Pages previamente habilitada pelo responsavel
+        uses: actions/configure-pages@v5
+        with:
+          enablement: false
+      - name: Publicar o artefato validado nesta execucao
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,48 @@
+# Prévia manual no Pages — preparação (29/10/2026)
+
+**Estado: somente preparada, não publicada.** Não é release final do M01; M01-19 continua aberto, incluindo o percurso integrado restante e Galaxy A56 físico ao final do marco. Gameplay, arte, mapas, namespace e servidores pessoais não foram alterados.
+
+## Situação do Git e dependências
+
+Inspeção inicial limpa na feature/m01-19-isolamento-saves, base **c404845**. Consulta somente leitura ao GitHub confirmou padrão **main/cfd31d3**, develop/a9d8cc0 e feature/m01-narrativa-demo/270bbd3; correspondem às referências locais. Feature de isolamento ainda ausente no remoto. Antes desta entrega havia17 commits acima de develop, dos quais13 ainda não alcançáveis pela referência remota de narrativa (11 da narrativa/refinamentos +9fab698+c404845). A feature depende desse histórico; publicar sua branch futuramente não integra nem promove nada a develop/main. Não houve fetch/reescrita de referências ou operação remota de escrita nesta preparação. A consulta Git por HTTPS local falhou por conectividade; confirmação remota obtida pelo conector GitHub.
+
+O responsável confirmou no **Chrome**, no pacote local disponível **m01-19-web-r01/runtime9fab698**, salvar → fechar navegador → reabrir → carregar com estado preservado. É associação pelo pacote disponível, não hash informado pelo responsável. Registro e limites em [VALIDACAO_M01.md](VALIDACAO_M01.md).
+
+## Contrato do workflow
+
+`.github/workflows/pages-preview.yml`, nome **Arena - previa manual Pages**. Único evento: `workflow_dispatch`; push, PR, merge ou cron não publicam. Execução aceita somente a definição em **main**, sem exigir que o jogo selecionado esteja nela. `source_sha` exige40 caracteres hexadecimais minúsculos: checkout imutável e comparação com HEAD, sem branch móvel ou resolução implícita. `publish` inicia **false**: prepara/valida/envia o artefato, sem deploy. Para publicar, outra execução manual deve marcar **true** e usar o mesmo SHA conferido.
+
+Dois checkouts: infraestrutura do SHA da definição do workflow, e jogo do SHA selecionado. O preparador existente passa a aceitar opcionalmente o diretório de origem; a receita pertence à infraestrutura revisada. Assim pode empacotar inclusive9fab698, que não continha scripts de empacotamento. Usa a mesma allowlist, sem poda de imagens dinâmicas, nova arte ou alteração de conteúdo. Só a raiz **Arena/** gerada vira artefato Pages (não a pasta-pai, ferramentas ou repositório).
+
+Build em **ubuntu-24.04/Node24**: empacota duas vezes, compara relatórios e exige validação realmente Linux. `tools/check-web-package.cjs` verifica inventário exato, hashes/tamanhos, ausência de referências/saves/symlinks, colisões de capitalização, referências relativas HTML/CSS, registro canônico de plugins e namespace **arena:m01:save-v1**. Não substitui os testes de gameplay. Resumo da execução mostra SHA do jogo, SHA da infraestrutura, versão de teste, namespace, tamanho e hash do manifesto.
+
+Permissões: build somente `contents: read`; deploy separado somente `pages: write` e `id-token: write`, sem PAT ou credenciais Git persistidas. Grupo global `pages`, `cancel-in-progress: false`, impede execuções simultâneas e não cancela publicação em andamento; não promete fila FIFO para solicitações pendentes. Ambiente `github-pages`; `configure-pages` tem enablement:false, não habilita o site automaticamente. Artefato retido7 dias. Metadados discretos em **package-manifest.json**, sem redesenho de menus/service worker/atualização automática.
+
+## Disponibilizar a infraestrutura sem promover o jogo
+
+**Sequência proposta para uma tarefa futura autorizada; não executada agora.** O GitHub exige a definição manual na branch padrão para oferecer Run workflow. Não trocar a branch padrão nem mesclar features do jogo apenas para isso. [Regra oficial do acionamento manual](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow).
+
+1. Após revisão, publicar a feature atual (`git push -u origin feature/m01-19-isolamento-saves`), disponibilizando também seus commits ancestrais, sem mover develop/main.
+2. Preparar um commit **exclusivamente de infraestrutura** em branch própria baseada em main. Copiar da versão revisada somente: `.github/workflows/pages-preview.yml`, `tools/build-web-package.cjs`, `tools/web-package-allowlist.json`, `tools/check-web-package.cjs` e este procedimento. Não copiar runtime, dados, mapas ou assets. Revisar o diff e aprovar essa manutenção operacional separadamente de release/Git Flow do jogo.
+3. Com autorização específica posterior, levar **somente esse commit de infraestrutura** a main (por cherry-pick revisado, sem merge da feature de jogo) e publicar main. O runtime estável original permanece; não há release ou tag de versão do jogo. Essa é uma decisão operacional pendente, não permissão presumida nesta tarefa.
+
+Não basta copiar só o YAML: os três arquivos tools acima são necessários no checkout de infraestrutura. A preparação atual permanece na feature existente; não há commit/cherry-pick paralelo feito em main.
+
+## Habilitar, conferir e publicar — passos posteriores
+
+1. No repositório **Settings → Pages → Build and deployment → Source → GitHub Actions**. Não usar publicação por branch nem instalar template com evento push. Em Settings → Environments → github-pages, se houver política de branches, permitir **main**, que é a origem da definição do workflow, não a branch do jogo. Habilitação exige permissões adequadas; não foi feita nesta entrega. [Fonte oficial de configuração](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+2. **Actions → Arena - previa manual Pages → Run workflow → Branch: main**. Colar em `source_sha` o SHA completo revisado e disponível no remoto. Para a primeira prévia candidata do pacote validado: **9fab698f89f54f8bdf1dae38ad1db6e6f09f6f56**. Deixar `publish` desmarcado e executar.
+3. Conferir sucesso do build Linux e o resumo: sourceCommit exatamente igual ao solicitado, namespace, inventário e hash do manifesto. Conferir o artefato `github-pages`. Se falhar, não publicar. A validação no GitHub/Linux ainda está **pendente** nesta preparação; não foi simulada como aprovação.
+4. Executar novamente pelo botão **Run workflow**, mesmo SHA completo, **publish marcado**. Deploy depende do build válido da própria execução. Após sucesso, abrir o endereço retornado por deployment/Settings Pages; sem domínio personalizado, o endereço esperado é **https://tjsp-lalecrim.github.io/Arena/**. Confirmar o endereço efetivo, sem presumir que já existe. O fluxo usa as [ações oficiais de Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+5. Abrir `<endereço-do-site>/package-manifest.json`; conferir **sourceCommit** e **testVersion** contra o resumo. A tela de Actions/Environment pode identificar o SHA da infraestrutura: ele **não é necessariamente o SHA do jogo**. Manifesto é a identidade do runtime. Hashes Linux podem diferir de uma cópia Windows por finais de linha do checkout; comparar reproduções no mesmo ambiente/receita, não presumir identidade binária entre sistemas.
+
+## Save/load, atualização e retorno
+
+- No Chrome, no endereço HTTPS definitivo: Nova Partida → criação/introdução → dungeon → **Esc → Salvar**. Retornar ao título/Continuar, recarregar, fechar/reabrir o navegador no mesmo perfil/endereço e carregar; conferir local, personagem e recursos. Registrar commit via manifesto, navegador e resultado. Os saves de localhost **não são transferidos** para Pages; slots públicos inicialmente vazios não significam exclusão dos saves locais. Perfil privado/outro perfil/domínio/protocolo usa outro armazenamento; subpastas na mesma origem não isolam por si só.
+- Atualização compatível: publicar a branch com o novo commit após revisão, repetir preparação manual com `publish=false`, conferir o SHA e só então executar com `publish=true`. Preservar **arena:m01:save-v1**, identidade da campanha e contratos de save; número de build não muda compatibilidade. Validar um slot existente, além de Nova Partida. Publicar não apaga nem altera saves por si só. Não há sincronização/exportação/migração nesta preparação.
+- Retorno: escolher o SHA completo de uma build anterior conhecida e compatível, ainda disponível no remoto, repetir preparação/conferência/publicação manual. Isso substitui os arquivos hospedados, **não reverte saves que a build mais nova já modificou**; se houver incompatibilidade do formato, não tratar rollback como solução automática.
+- Para conferir atualização/cache, consultar o manifesto, recarregar com F5/Ctrl+F5 e fechar abas antigas quando necessário. **Não limpar dados do site/localStorage** para resolver cache: isso pode apagar os saves. Nenhum script de limpeza foi introduzido. Política principal: [MV_WebStorageNamespace](plugins/MV_WebStorageNamespace.md).
+
+## Verificações desta preparação
+
+YAML analisado por parser, conferidos evento único, permissões, dependências, publicação opcional, origem main, SHA fixo e artefato restrito ao pacote. Scripts passaram análise de sintaxe e execução focal local Windows: build reproduzido sem diferenças,317 arquivos validados, SHA incorreto recusado e guarda Linux recusou execução Windows como se fosse Linux. Runtime c404845 tem os mesmos arquivos de jogo do pacote aprovado9fab698. Não repetida campanha; nenhum workflow remoto, runner Linux, deploy, configuração remota ou teste físico executado. Evidência resumida em [resultado.json](evidencias/m01-19-pages-preparacao/resultado.json). Próximos passos dependem da revisão desta infraestrutura e da autorização de publicação.
