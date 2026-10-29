@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.3.0 Poções com proteção de entrada no menu e descanso autorizado.
+ * @plugindesc v0.4.0 Poções e descanso autorizado; uma plataforma piloto na dungeon.
  * @author Codex
  * @help Após Arena_Resources, Arena_Inventory e Arena_BattleUI. Sem dependências externas.
  * Configuração: data/ArenaRecovery.json. Não há parâmetros no gerenciador.
@@ -33,28 +33,110 @@ var ArenaRecovery;
                     ids[p.id] = true; return true;
                 })) throw new Error('Arena: configuração de recuperação inválida. Confira ArenaRecovery.json.');
         if (c.menuIntervalMs !== undefined && (!Number.isInteger(c.menuIntervalMs) || c.menuIntervalMs < 0)) throw new Error('Arena: menuIntervalMs deve ser inteiro não negativo.');
+        if(c.restPoints.filter(function(p){return p.dungeonPilot;}).length>1||c.restPoints.some(function(p){return p.dungeonPilot&&(!Number.isInteger(p.x)||!Number.isInteger(p.y));}))throw Error('Arena: configurar uma única plataforma piloto com coordenadas.');
         return true;
     };
     function actor() { return $gameActors.actor($arenaRecovery.actorId); }
     function potion(item) {
         return item && DataManager.isItem(item) && $arenaRecovery.potionIds.indexOf(item.id) >= 0;
     }
+    function restAvailable(id,interpreter) {
+        var point=$arenaRecovery.restPoints.filter(function(p){return p.id===id;})[0];
+        var event=point&&$gameMap.event(point.eventId);
+        return !!(point&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&
+            !$gamePlayer.isInVehicle()&&actor().isAlive()&&!$gameMessage.isBusy()&&
+            $gameMap.mapId()===point.mapId&&event&&!event._erased&&
+            interpreter instanceof Game_Interpreter&&interpreter._mapId===point.mapId&&
+            interpreter.eventId()===point.eventId&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,event.x,event.y)<=1);
+    }
     ArenaRecovery = {
         isPotion: potion,
         restAt: function(id, interpreter) {
-            var point = $arenaRecovery.restPoints.filter(function(p) { return p.id === id; })[0];
-            var event = point && $gameMap.event(point.eventId);
-            if (!point || $gameParty.inBattle() || $gamePlayer.isTransferring() ||
-                    $gamePlayer.isInVehicle() || !actor().isAlive() || $gameMessage.isBusy() ||
-                    $gameMap.mapId() !== point.mapId || !event || event._erased ||
-                    !(interpreter instanceof Game_Interpreter) ||
-                    interpreter._mapId !== point.mapId || interpreter.eventId() !== point.eventId ||
-                    $gameMap.distance($gamePlayer.x, $gamePlayer.y, event.x, event.y) > 1) {
+            if (!restAvailable(id,interpreter)) {
                 return {ok: false, reason: 'Descanso indisponível neste local ou situação.'};
             }
             return {ok: ArenaResources.rest()};
         }
     };
+    // Only an explicit event interaction restores resources. These presentation
+    // fields are transient; loading never grants recovery or changes the world.
+    ArenaRecovery.usePoint=function(id,interpreter){
+        if(!restAvailable(id,interpreter)||$gameTemp._arenaRestAwaitRelease)return {ok:false};
+        $gameTemp._arenaRestAwaitRelease=true;$gameTemp.clearDestination();
+        var before=ArenaResources.snapshot(),keys=['hp','mp','vigor'];
+        if(keys.every(function(k){return before[k].current===before[k].maximum;})){
+            $gameTemp._arenaRestFeedback=null;$gameTemp._arenaRestStatusUntil=Date.now()+1100;
+            return {ok:false,reason:'full'};
+        }
+        var result=this.restAt(id,interpreter);
+        if(result.ok){$gameTemp._arenaRestStatusUntil=0;$gameTemp._arenaRestFeedback={before:before,time:Date.now()};}
+        return result;
+    };
+    function pilot(){return $arenaRecovery.restPoints.filter(function(p){return p.dungeonPilot;})[0];}
+    ArenaRecovery.startRestPilot=function(){
+        var p=pilot();ArenaDungeon.startLab();$gameSystem._arenaEncounterTechnical=true;
+        $gameTemp._arenaRestAwaitRelease=true;
+        $gamePlayer.reserveTransfer(p.mapId,p.x,p.y,2,0);
+        actor().setHp(35);actor().setMp(10);
+        ArenaPersistence.setResource('vigor',20,ArenaResources.snapshot().vigor.maximum);
+    };
+    function syncRestEvents(){
+        $arenaRecovery.restPoints.forEach(function(p){if(p.dungeonPilot&&$gameMap.mapId()===p.mapId&&!$gameMap.event(p.eventId)&&$dataMap.events[p.eventId])$gameMap._events[p.eventId]=new Game_Event(p.mapId,p.eventId);});
+    }
+    var mapLoaded=Scene_Map.prototype.onMapLoaded;
+    Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring())syncRestEvents();mapLoaded.apply(this,arguments);};
+    function RestFeedback(){this.initialize.apply(this,arguments);}
+    RestFeedback.prototype=Object.create(Window_Base.prototype);RestFeedback.prototype.constructor=RestFeedback;
+    RestFeedback.prototype.initialize=function(){Window_Base.prototype.initialize.call(this,12,Graphics.boxHeight-178,Math.min(288,Graphics.boxWidth-24),164);this.hide();};
+    RestFeedback.prototype.update=function(){
+        Window_Base.prototype.update.call(this);var f=$gameTemp._arenaRestFeedback,elapsed=f?Date.now()-f.time:2000;
+        if(!f||elapsed>=1500){this.hide();return;}
+        this.show();this.opacity=this.contentsOpacity=elapsed<1300?255:Math.round(255*(1500-elapsed)/200);
+        this.contents.clear();this.contents.fontSize=20;this.drawText('Descanso',0,0,this.contentsWidth());
+        var current=ArenaResources.snapshot(),t=Math.min(1,elapsed/240),self=this;
+        [['hp','Vida','#B44C4C'],['mp','Mana','#587EBC'],['vigor','Vigor','#719365']].forEach(function(row,i){
+            var r=current[row[0]],from=f.before[row[0]].current,shown=from+(r.current-from)*t,y=28+i*32;
+            self.contents.fontSize=18;self.drawText(row[1],0,y,80);self.drawText(r.current+'/'+r.maximum,80,y,self.contentsWidth()-80,'right');
+            self.contents.fillRect(0,y+24,self.contentsWidth(),4,'#343A40');self.contents.fillRect(0,y+24,Math.round(self.contentsWidth()*shown/r.maximum),4,row[2]);
+        });
+    };
+    var mapWindows=Scene_Map.prototype.createAllWindows;
+    Scene_Map.prototype.createAllWindows=function(){
+        mapWindows.apply(this,arguments);this._arenaRestFeedback=new RestFeedback();this.addWindow(this._arenaRestFeedback);
+        this._arenaRestLabel=new Sprite(new Bitmap(288,36));this.addChild(this._arenaRestLabel);
+    };
+    var mapTouch=Scene_Map.prototype.processMapTouch;
+    Scene_Map.prototype.processMapTouch=function(){
+        if(!TouchInput.isPressed())this._arenaRestPointer=false;
+        if($gameTemp._arenaRestAwaitRelease){$gameTemp.clearDestination();this._touchCount=0;return;}
+        var label=this._arenaRestLabel,p=pilot(),e=p&&$gameMap.mapId()===p.mapId&&$gameMap.event(p.eventId);
+        if(TouchInput.isTriggered()&&label&&label.visible&&TouchInput.x>=label.x&&TouchInput.x<label.x+288&&TouchInput.y>=label.y&&TouchInput.y<label.y+36){
+            this._arenaRestPointer=true;this._touchCount=0;$gameTemp.clearDestination();
+            if(e&&$gamePlayer.canMove()&&!$gameMap.isAnyEventStarting()){
+                if($gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=1)e.start();
+                else $gameTemp.setDestination(e.x,e.y);
+            }
+            return;
+        }
+        if(!this._arenaRestPointer)mapTouch.apply(this,arguments);
+    };
+    var mapUpdate=Scene_Map.prototype.update;
+    Scene_Map.prototype.update=function(){
+        var ok=Input.isTriggered('ok'),interactive=this.isActive()&&$gamePlayer.canMove()&&!$gameMessage.isBusy()&&!$gameMap.isEventRunning();mapUpdate.apply(this,arguments);
+        if(!Input.isPressed('ok')&&!TouchInput.isPressed())$gameTemp._arenaRestAwaitRelease=false;
+        var p=pilot(),e=p&&$gameMap.mapId()===p.mapId&&$gameMap.event(p.eventId),label=this._arenaRestLabel;
+        if(!label)return;var near=e&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=3;
+        label.visible=!!near;if(!near)return;
+        label.x=Math.max(8,Math.min(Graphics.boxWidth-296,e.screenX()-144));label.y=Math.max(8,Math.min(e.screenY()-128,$gamePlayer.screenY()-112));
+        label.opacity=$gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=1?255:180;
+        var status=Date.now()<($gameTemp._arenaRestStatusUntil||0),b=label.bitmap;
+        b.clear();b.fillRect(0,0,288,36,'rgba(15,24,26,0.9)');b.fontSize=20;b.textColor='#D8CCAF';b.drawText(status?'Recursos completos':'Descansar · Enter / toque',6,0,276,36,'center');
+        if(ok&&interactive&&!$gameTemp._arenaRestAwaitRelease&&this.isActive()&&$gamePlayer.canMove()&&!$gameMap.isAnyEventStarting()&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=1){$gameTemp.clearDestination();e.start();}
+    };
+    var titleList=Window_TitleCommand.prototype.makeCommandList;
+    Window_TitleCommand.prototype.makeCommandList=function(){titleList.apply(this,arguments);this.addCommand('Descanso técnico (refúgio)','arenaRestPilot');};
+    var titleCreate=Scene_Title.prototype.createCommandWindow;
+    Scene_Title.prototype.createCommandWindow=function(){titleCreate.apply(this,arguments);this._commandWindow.setHandler('arenaRestPilot',ArenaRecovery.startRestPilot.bind(ArenaRecovery));};
     // The inventory already owns native effect/consumption handling. Keep that single path.
     function interval() { return $arenaRecovery.menuIntervalMs === undefined ? 500 : $arenaRecovery.menuIntervalMs; }
     function gate() {

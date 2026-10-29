@@ -1,3 +1,17 @@
+## Adaga no acesso existente — v0.1.2, 28/10/2026
+
+Playtest → **Combate técnico (piloto)** → **Teste da arma: Bretã / adaga** → **Combater**. Avaliar Atacar, Habilidades/Corte leve — adaga, Habilidades/Estocada pesada — adaga e Defender. Mantida a opção **Teste da arma: Bretã / espada**, sem alterar o padrão aprovado.
+
+`startWeaponPilot(weaponId)` aceita somente1(adaga) ou2(espada curta, padrão sem argumento). O sinal transitório guarda esse ID até criar uma sessão nova Bretã feminina com a arma equipada, Vigor100 e rato500HP por modificador de instância; é apagado antes da batalha. Sem mudanças em drops, banco, progresso, gravação/carregamento automático ou inventário de saves existentes. Conferido o caminho real e os quatro comandos da adaga em Chrome isolado; editor da adaga aguarda o responsável. Detalhes/evidências em Arena_BattleMotion.md e evidencias/adaga-piloto-r01/. Não sobrescrever saves pessoais com o teste.
+
+## Acesso determinístico à arma piloto — v0.1.1, 28/10/2026
+
+No editor MV, iniciar **Playtest**; na tela de título escolher **Combate técnico (piloto)** → **Teste da arma: Bretã / espada**. A batalha abre diretamente; escolher **Combater**, se apresentado, e **Habilidades** → **Estocada pesada — espada** (categoria **Técnicas (2)**). Repetir a técnica para observar preparação/golpe/retorno. Os demais perfis continuam disponíveis na mesma seleção para o laboratório normal.
+
+`ArenaBattle.startWeaponPilot()` reutiliza startLab para criar uma sessão nova, Bretã feminina, espada curta2 equipada, técnica8 concedida pela arma e recursos restaurados (Vigor100). Um sinal transitório de Game_Temp inicia uma única batalha com rato; modificador nativo de parâmetro apenas dessa instância eleva Vida a500. Não modifica banco, drops, custos, progressão, correção a9531e0 ou arquivos de save; não é modo de campanha nem requer carregar uma partida. Vitória retorna ao mapa técnico sem reinício automático; para repetir com recursos cheios, voltar ao título e escolher o acesso novamente. Não sobrescrever saves pessoais com a sessão técnica.
+
+Verificação limitada em Chrome156: caminho título/seleção/batalha, identidade, arma, técnica habilitada, Vigor100, rato500, banco/loot intactos e nenhuma chamada de gravação. Nenhuma ação de combate repetida nesta tarefa; nova execução pelo editor e avaliação da arma cabem ao responsável. Resultado em evidencias/arma-piloto-r01/acesso-tecnico.json. A primeira rotina de verificação aguardou o comando de ator antes de confirmar Combater; ajustada a rotina e conferida a entrada, sem mudança adicional no jogo.
+
 # Arena_Battle0.1.0
 
 Plugin próprio, sem dependências externas. Carregar por último após Arena_Abilities, Arena_Resources, Arena_CharacterCreation e Arena_Persistence. Exige também as camadas Runtime/TechnicalPreview atuais para a apresentação técnica. Sem parâmetros de editor ou plugin commands. Conteúdo em `data/ArenaBattle.json`: mapId, kit de teste, perfis por referência visual estável/enemyId, arquivo/célula/apoio/speed/rows e associação explícita dos18 movimentos nativos aos quatro estados mínimos. Fuga tem associação nula e execução bloqueada; movimento não representado provoca erro, sem pose estática silenciosa.

@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Encontros visíveis, patrulha, contato e respawn condicionado.
+ * @plugindesc v0.2.0 Encontros visíveis, patrulha, contato e respawn condicionado.
  * @author Codex
  * @help Após MV_EncounterRules, Arena_Dungeon, Arena_Loot e Arena_BattleMotion.
  * Configuração: data/ArenaEncounters.json. Sem dependências externas.
@@ -30,6 +30,7 @@ var ArenaEncounters;
             if(!e){e=new Game_Event(config().mapId,v.eventId);$gameMap._events[v.eventId]=e;}
             if(state(v).defeated)e.erase();
             else if(e._erased){e._erased=false;e.refresh();e.locate(v.origin[0],v.origin[1]);}
+            if(!e._erased){var visual=config().mapVisuals[String(v.enemyId)];if(!visual||typeof visual.file!=='string')throw Error('Arena: caminhada de patrulha ausente.');e.setImage(visual.file,0);e.setWalkAnime(true);e.setStepAnime(false);}
         });
     }
     function busy() { return $gameTemp._arenaEncounterLock || $gameParty.inBattle() || $gamePlayer.isTransferring() || $gameMessage.isBusy() || !(SceneManager._scene instanceof Scene_Map) || SceneManager.isSceneChanging(); }
@@ -91,14 +92,17 @@ var ArenaEncounters;
         }
     };
     var pass=Game_Event.prototype.isMapPassable;
+    var animationWait=Game_Event.prototype.animationWait;
+    Game_Event.prototype.animationWait=function(){var v=spec(this);return v?config().mapVisuals[String(v.enemyId)].animationWait:animationWait.apply(this,arguments);};
     Game_Event.prototype.isMapPassable=function(x,y,d){var v=spec(this);if(v){var nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d);if(!MVEncounterRules.within(nx,ny,v.origin,v.radius)||v.regions.indexOf($gameMap.regionId(nx,ny))<0)return false;}return pass.apply(this,arguments);};
-    var bitmap=Sprite_Character.prototype.updateBitmap,frame=Sprite_Character.prototype.updateFrame,position=Sprite_Character.prototype.updatePosition;
-    function visual(s){var v=s._character instanceof Game_Event&&spec(s._character);return v&&{spec:v,profile:$arenaBattleMotion.enemies[String(v.enemyId)]};}
+    // Native character sheets: actual movement patterns and four authored directions.
+    // Combat atlases/timelines are exclusively for battle, never map locomotion.
+    var frame=Sprite_Character.prototype.updateFrame,position=Sprite_Character.prototype.updatePosition;
+    function visual(s){return s._character instanceof Game_Event&&spec(s._character);}
     var visibility=Sprite_Character.prototype.updateVisibility;
     Sprite_Character.prototype.updateVisibility=function(){visibility.apply(this,arguments);if(visual(this)&&this._character._erased)this.visible=false;};
-    Sprite_Character.prototype.updateBitmap=function(){var v=visual(this);if(!v)return bitmap.apply(this,arguments);this.bitmap=ImageManager.loadEnemy(v.profile.file);};
-    Sprite_Character.prototype.updateFrame=function(){var v=visual(this);if(!v)return frame.apply(this,arguments);var f=MVMotionTimeline.sample(v.profile.motions.idle,Graphics.frameCount).frame;this.setFrame.apply(this,f.rect);var sign=this._character.direction()===6?-1:1;this.scale.set(v.spec.scale*sign,v.spec.scale);};
-    Sprite_Character.prototype.updatePosition=function(){position.apply(this,arguments);var v=visual(this);if(v)this.y+=(v.profile.cell[1]-v.profile.ground)*v.spec.scale;};
+    Sprite_Character.prototype.updateFrame=function(){frame.apply(this,arguments);var v=visual(this);if(v)this.scale.set(v.scale,v.scale);};
+    Sprite_Character.prototype.updatePosition=function(){position.apply(this,arguments);var v=visual(this);if(v){var p=config().mapVisuals[String(v.enemyId)],g=p.groundByDirection&&p.groundByDirection[String(this._character.direction())];if(g!==undefined)this.y+=(p.ground-g)*v.scale;}};
     var commands=Window_TitleCommand.prototype.makeCommandList;
     Window_TitleCommand.prototype.makeCommandList=function(){commands.apply(this,arguments);this.addCommand('Encontros técnicos','arenaEncounters');};
     var create=Scene_Title.prototype.createCommandWindow;

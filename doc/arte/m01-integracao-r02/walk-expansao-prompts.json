@@ -1,0 +1,337 @@
+[
+  {
+    "id": "argonian.male.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_argonian_male_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_argonian_male_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_argonian_male_pose_r03.png"
+    ],
+    "prompt": "Criar animação real de caminhada para argonian.male.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024.",
+    "master": "art/masters/m01-integration-r02/walk-argonian-male.png",
+    "target": "img/characters/$Arena_argonian_male_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-b9238465-5ec7-4ede-bd50-5235dff53c97.png",
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "argonian.female.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_argonian_female_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_argonian_female_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_argonian_female_pose_r03.png"
+    ],
+    "prompt": "Criar animação real de caminhada para argonian.female.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024.",
+    "master": "art/masters/m01-integration-r02/walk-argonian-female.png",
+    "target": "img/characters/$Arena_argonian_female_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-6ef8f9e2-4363-4dd9-827e-b28238773f76.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "breton.male.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_breton_male_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_breton_male_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_breton_male_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para breton.male.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024.",
+    "master": "art/masters/m01-integration-r02/walk-breton-male.png",
+    "target": "img/characters/$Arena_breton_male_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-7f924c90-6d49-452a-bbc4-fe7460693869.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "dark_elf.male.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_dark_elf_male_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_dark_elf_male_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_dark_elf_male_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para dark_elf.male.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024.",
+    "master": "art/masters/m01-integration-r02/walk-dark_elf-male.png",
+    "target": "img/characters/$Arena_dark_elf_male_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-5dbf2bd6-f8f0-4e9a-acd2-ef7dc93e0018.png",
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "dark_elf.female.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_dark_elf_female_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_dark_elf_female_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_dark_elf_female_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para dark_elf.female.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-dark_elf-female.png",
+    "target": "img/characters/$Arena_dark_elf_female_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-53f8fd0e-bcf9-4e09-b464-1fb06c37ee62.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "high_elf.male.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_high_elf_male_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_high_elf_male_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_high_elf_male_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para high_elf.male.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-high_elf-male.png",
+    "target": "img/characters/$Arena_high_elf_male_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-22bc4e0c-4272-4c32-9d01-67a6647022fb.png",
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "high_elf.female.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_high_elf_female_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_high_elf_female_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_high_elf_female_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para high_elf.female.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-high_elf-female.png",
+    "target": "img/characters/$Arena_high_elf_female_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-d0c88adf-9d8a-40f9-ba1a-daea8931fd52.png",
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "khajiit.female.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_khajiit_female_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_khajiit_female_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_khajiit_female_pose_r03.png"
+    ],
+    "prompt": "Criar animação real de caminhada para khajiit.female.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-khajiit-female.png",
+    "target": "img/characters/$Arena_khajiit_female_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-88fcc3f8-e7ac-40ed-b425-be762e8daf2c.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "nord.male.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_nord_male_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_nord_male_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_nord_male_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para nord.male.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-nord-male.png",
+    "target": "img/characters/$Arena_nord_male_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-883e6da7-b3aa-4bff-9d84-be23c1349c94.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "nord.female.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_nord_female_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_nord_female_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_nord_female_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para nord.female.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-nord-female.png",
+    "target": "img/characters/$Arena_nord_female_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-b681d0db-ed17-4835-82bf-311ae14314b3.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "redguard.male.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_redguard_male_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_redguard_male_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_redguard_male_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para redguard.male.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-redguard-male.png",
+    "target": "img/characters/$Arena_redguard_male_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-29f1f9c4-049a-4aaa-a789-f67fd9a21809.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "redguard.female.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_redguard_female_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_redguard_female_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_redguard_female_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para redguard.female.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-redguard-female.png",
+    "target": "img/characters/$Arena_redguard_female_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-f30fffe6-69bc-42b5-8d36-6ca0061a6844.png",
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "wood_elf.male.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_wood_elf_male_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_wood_elf_male_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_wood_elf_male_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para wood_elf.male.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-wood_elf-male.png",
+    "target": "img/characters/$Arena_wood_elf_male_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-020941bb-e644-4274-92d9-be50d4afb2a1.png",
+    "opposed": true,
+    "reflect": [
+      5,
+      8
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  },
+  {
+    "id": "wood_elf.female.base",
+    "references": [
+      "D:/RPG Maker MV/Projects/Arena/img/characters/$Arena_wood_elf_female_r02.png",
+      "D:/RPG Maker MV/Projects/Arena/img/pictures/Arena_wood_elf_female_r02_side.png",
+      "D:/RPG Maker MV/Projects/Arena/img/faces/Arena_wood_elf_female_r02.png"
+    ],
+    "prompt": "Criar animação real de caminhada para wood_elf.female.base do Arena. Referências fornecidas1 folha atual para identidade/direções,2 estudo lateral para roupa/porte,3 retrato para cabeça racial e gênero; preservar rigorosamente rosto, raça, cabelo, cores, roupa de prisioneiro e botas. Não mudar as vestimentas para roupas genéricas. Pintura dark fantasy aprovada, sem pixel art intencional. Folha com FUNDO TRANSPARENTE, grade3 COLUNAS x4 LINHAS, 12 figuras inteiras. Linha1 personagem para baixo/de frente, linha2 para esquerda, linha3 para direita, linha4 para cima/de costas. Em CADA linha: coluna1 passo perna esquerda adiantada e braço oposto, coluna2 repouso pés juntos, coluna3 passo perna direita adiantada e braço oposto. Precisam ser poses ARTICULADAS diferentes nos braços e pernas, não a mesma figura transladada. Proporção, roupa e anatomia constantes. Pés na mesma linha relativa em cada célula e alinhamento estável. Não adicionar armas. Sem cenário, nomes, números, assinatura, molduras ou grade desenhada. Não cortar nenhum membro, focinho, orelha, crista ou cauda. Vista superior oblíqua para RPG de exploração, não pose de combate. Cada figura deve ter margem transparente ampla; todas as células iguais, canvas3:4 preferencial768x1024. IMPORTANTE: na linha2 TODAS as três figuras devem ficar voltadas para ESQUERDA; na linha3 TODAS para DIREITA. A coluna central precisa ficar PARADA, pernas sem passo. Não mudar penteado ou tipo de roupa. Luz suave frontal difusa para animação em cenário escuro.",
+    "master": "art/masters/m01-integration-r02/walk-wood_elf-female.png",
+    "target": "img/characters/$Arena_wood_elf_female_walk_r02.png",
+    "status": "generated",
+    "source": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-a0d02f0a-1da9-4f8b-b09b-ddbfb11a8e3c.png",
+    "opposed": true,
+    "reflect": [],
+    "cell": [
+      64,
+      64
+    ],
+    "height": 56,
+    "width": 56,
+    "pivot": "mass",
+    "approval": "pending owner review"
+  }
+]

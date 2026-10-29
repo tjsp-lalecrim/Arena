@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "questId": "MQ01",
-  "title": "Masmorras Imperiais",
+  "title": "Imperial Dungeons",
   "sourceId": "MQ01.ruby-key",
   "itemId": 1,
   "doorId": "door.07",
@@ -12,8 +12,8 @@
     {
       "id": 10,
       "next": 20,
-      "description": "Ria Silmane apareceu em meu sonho. Jagar Tharn tomou o lugar do Imperador. Há uma chave de rubi junto à parede norte da cela. Objetivo: obter a chave.",
-      "objective": "Obtenha a chave de rubi junto à parede norte da cela.",
+      "description": "Ria Silmane apareceu em meu sonho. Jagar Tharn tomou o lugar do Imperador. Há uma chave de rubi na plataforma junto à parede norte da cela. Objetivo: obter a chave.",
+      "objective": "Obtenha a chave de rubi na plataforma junto à parede norte da cela.",
       "entry": null,
       "exit": {
         "mode": "hold",
@@ -49,12 +49,15 @@
     {
       "id": 40,
       "next": null,
-      "description": "Alcancei o Shift Gate e escapei das Masmorras Imperiais.",
+      "description": "Alcancei o Shift Gate e escapei de Imperial Dungeons.",
       "objective": "Objetivo concluído.",
       "entry": {
         "mode": "receipt"
       },
       "exit": null
     }
-  ]
+  ],
+  "treasureMinimumGold": 5,
+  "gateHalfWidth": 1,
+  "gateDepth": 2
 }

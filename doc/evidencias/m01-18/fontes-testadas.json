@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-28",
+  "branch": "feature/m01-narrativa-demo",
+  "base": "a9d8cc0",
+  "implementationCommit": "1acaadd03e0064738e79bf2f3d409cd65370f768",
+  "browser": "156.0.8078.73",
+  "engine": "MV1.6.1 JavaScript runtime in Chrome; not native editor authoring",
+  "sources": {
+    "js/plugins.js": "1b063cc20d1eb5062ff52984e90cd63bba380b6864e48085111fe9a270d3ba77",
+    "data/ArenaNarrative.json": "3f329e238f2b4064277dbf00e51e9a1556f67e844382c008465291f4f8d92099",
+    "js/plugins/MV_NarrativePages.js": "7a05b1b06adab41cecc7d3f62db7e28ceb08fe17681a022d8400851a9e77c1be",
+    "js/plugins/Arena_Narrative.js": "4ad1ee78714fdc6c467ae78b63b70590e7cc999d0db202fc5837637565dcc6f7",
+    "js/plugins/Arena_CharacterCreation.js": "5d2922c4c80d73ed1d5ed26e899f70ecd7ee82ea4d730330b3d14f3bf734da8c",
+    "js/plugins/Arena_Quests.js": "70aaf5676c86e379e04d067dce53b4c457141dca05477ca3c8027f7515c7ebe2",
+    "data/Map008.json": "59c51f3465ac8b61999b6e9af8ebf72dfed8342ebc518c7ac6f1aca208a5f0a6",
+    "data/ArenaQuestJournal.json": "45b493bc792a2c88df89c160c5b0397e1df0073b6edb67a5700ff90fc67143c4",
+    "js/plugins/Arena_Resources.js": "4e7d4bde0bf824b62957a6b6f2f0395f333b97991a72059c5135c96e85f77f4b",
+    "js/plugins/Arena_Recovery.js": "ca4cba8db605cdd239b48b8d833967cc9d2b1341c088508fd85d41f0b2c4dfa0",
+    "img/pictures/arena_ria_narrativa_r02.png": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+  },
+  "runs": [
+    {
+      "script": "test-narrative.cjs",
+      "groups": 8,
+      "result": "resultado.json",
+      "status": "passed",
+      "route": [
+        {
+          "target": [
+            142,
+            65
+          ],
+          "steps": 23,
+          "status": "goal"
+        },
+        {
+          "target": [
+            141,
+            73
+          ],
+          "steps": 9,
+          "status": "goal"
+        },
+        {
+          "target": [
+            13,
+            145
+          ],
+          "steps": 200,
+          "status": "ending"
+        }
+      ],
+      "encounters": 0
+    },
+    {
+      "script": "test-narrative-small.cjs",
+      "groups": 6,
+      "result": "telas-menores.json",
+      "status": "passed",
+      "viewports": [
+        [
+          640,
+          480
+        ],
+        [
+          916,
+          412
+        ]
+      ]
+    },
+    {
+      "script": "validate-narrative.cjs",
+      "paginationCases": 108,
+      "status": "passed"
+    },
+    {
+      "script": "test-character-creation.cjs",
+      "checks": 234,
+      "result": "regressoes/criacao/m01-07-result.json",
+      "status": "passed"
+    },
+    {
+      "script": "test-quests.cjs",
+      "checks": 23,
+      "result": "regressoes/quests/resultado.json",
+      "status": "passed"
+    },
+    {
+      "script": "test-persistence.cjs",
+      "checks": 27,
+      "result": "regressoes/persistencia.json",
+      "status": "passed"
+    }
+  ],
+  "static": [
+    "validate-journal",
+    "validate-recovery",
+    "validate-encounters -> validate-quests",
+    "validate-potion-menu-guard",
+    "validate-potion-feedback"
+  ],
+  "manualEvidence": "M01-17 potion approvals and automated bed closure are separate, recorded in m01-17-fechamento; no owner approval of M01-18 inferred",
+  "visualInspection": [
+    "intro, Ria816x624, Ria640x480/916x412 and ending",
+    "Ria approved source image and original local print",
+    "HISTORY.IMG consultation only, runtime usage unconfirmed"
+  ],
+  "pending": [
+    "Owner narrative/readability/aesthetic review",
+    "New authoring/plugin-manager/playtest cycle in MV1.6.1",
+    "Normal-speed full route with combat/recovery without test fixtures",
+    "Galaxy A56 physical landscape/fullscreen in M01-19",
+    "Provisional balancing M01-20"
+  ],
+  "scope": "No favorites/quest toasts/balance/swim cost implementation. No new art or voices. Only approved Ria image reused.",
+  "isolation": "Disposable Chrome contexts/save17/18; no personal saves. Complete path with native collision/moveStraight (speed6 for automation), no locate/through. Any encountered battle uses HP1 enemy/full HP player fixture in memory to validate integration, not balance. Narrative saves use native Save/Load scenes."
+}

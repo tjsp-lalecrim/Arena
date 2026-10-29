@@ -1,3 +1,50 @@
+## Descanso em uma plataforma — confirmação de29/10/2026
+
+**Evidência manual do responsável:** descanso técnico funcionou com **Enter e toque**, e o descanso também funcionou no **fluxo normal da dungeon**, em execução pelo **editor RPG Maker MV**. Estado disponível associado:1e6a40b, Map008(124,79)/evento241; o responsável não informou hash testado nem versão exata do editor. Não atribuir teste a smartphone, ao navegador ou a edição/salvamento/reabertura do mapa.
+
+**Critérios do piloto:** os10 grupos focais Chrome156 já registrados em evidencias/descanso-plataforma-r01/resultado.json e a recompilação em gerador.json cobrem recuperação integral, não repetição/fila, recursos cheios, guarda de batalha por flag controlado, preservação do mundo/inventário e save/load. Somados ao relato manual de acesso e uso na campanha, não foi identificado impedimento técnico restante **no escopo desse único ponto desktop**. Não foram reexecutados testes nesta tarefa documental; os resultados automáticos mantêm seu ambiente/limites originais, sem ampliar a cobertura manual. Smartphone físico permanece pendente para o fim do M01, sem bloqueio desktop.
+
+Funcionamento confirmado não implementa nem aprova novas mecânicas. Melhorias centralizadas em REF12 de REFINAMENTOS_POS_INTEGRACAO_M01.md; regras e local em POCOES_E_DESCANSO_M01_17.md. Manter recuperação completa fora de batalha, sem horas, ataques surpresa, respawn ou restauração de tesouros provocados pelo descanso. Nenhuma outra plataforma foi validada por associação.
+
+## Aprovação manual da Bretã feminina com adaga — 28/10/2026
+
+O responsável aprovou **Atacar, Defender, Corte leve — adaga e Estocada pesada — adaga**, testados **no editor**, somente para **Bretã feminina com adaga**. Confirma funcionamento e encaixe atuais; não aprova definitivamente o nome nem a identidade do movimento pesado. Estado disponível associado:0031ea0; o responsável não informou hash ou versão exata do editor. Não atribuir ao navegador/smartphone nem estender a outras combinações. Ressalvas futuras vinculadas ao registro único **REF09**, em REFINAMENTOS_POS_INTEGRACAO_M01.md: reavaliar nome conforme o movimento final e substituir futuramente a coreografia pesada herdada da espada por perfuração coerente com estocada. Começar por uma única amostra integrada antes de ampliar variantes. Nenhuma implementação ou nova execução nesta tarefa documental.
+
+## Aprovação manual da Bretã feminina com espada curta — 28/10/2026
+
+O responsável confirmou **Atacar também funcional no editor** e aprovou os comandos testados: **Atacar, Corte leve — espada, golpe pesado (Estocada pesada — espada) e Defender**, somente para **Bretã feminina com espada curta**. Atualiza a aprovação R01 do piloto pesado, sem duplicar evidência nem estender a outras ações, armas, personagens ou dispositivos. Estado disponível associado:112246d (demais ações), que preserva a9531e0 e o acesso4b49e5d; hash e versão exata do editor não foram informados pelo responsável. Aprovação não cobre a adaga implementada posteriormente nesta tarefa. Cobertura e pendências em plugins/Arena_BattleMotion.md e REF09 de REFINAMENTOS_POS_INTEGRACAO_M01.md.
+
+## Teste integrado informado pelo responsável — 28/10/2026
+
+**Evidência manual fornecida pelo responsável**, sem nova execução pelo Codex nesta tarefa. Ambiente informado: execução pelo editor do **RPG Maker MV**; o relato não especifica sua versão exata. Não é teste de navegador ou smartphone, nem comprova abertura/edição/salvamento/reabertura de mapas nesta revisão.
+
+Versão disponível no recebimento: `7e262a0`, branch `feature/m01-narrativa-demo`, árvore limpa. Esse commit é documental; a implementação correspondente está em `61ac5cf`, com evidências publicadas em `270bbd3`. **Associação pelo estado disponível, não hash explicitamente informado pelo responsável.**
+
+| Escopo relatado | Resultado informado |
+| --- | --- |
+| Shift Gate | Ativação funcional |
+| Caminhada | Animação funcional |
+| Tesouros | Coleta e comportamento funcionais |
+| Quests | Progressão funcional |
+| Persistência | Funcional, sem pontos de save/load ou matriz de casos especificados |
+| Encontros | Funcionais, com retorno após combate |
+| Introdução e encerramento | Aprovados |
+| Mapa | Satisfatório, preservadas as ressalvas anteriores |
+
+Não inferir cobertura de todas as raças/direções, armas, tipos de encontro, respawn ou casos extremos. Funcionamento geral não encerra o defeito de pega/acompanhamento da arma, cenário de batalha ou demais ajustes. A aprovação da introdução preserva as ilustrações e admite refinamentos futuros; não constitui ordem de regeneração.
+
+Pendências com registro único: [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md), REF01–REF12. Descanso não foi mencionado como testado; locais elegíveis continuam conforme [POCOES_E_DESCANSO_M01_17.md](POCOES_E_DESCANSO_M01_17.md), com esclarecimento futuro em REF12. Galaxy A56 físico permanece no roteiro de integração **ao final do M01**, pendente e sem bloquear revisões desktop apenas por essa ausência. Sem merge, push ou início de outro backlog por este registro.
+
+Os registros anteriores abaixo preservam seus estados e escopos históricos; a aprovação manual agora recebida supera apenas as pendências correspondentes listadas nesta seção.
+
+## Revisão vigente M01-18 R02 — 28/10/2026
+
+Mesma feature/m01-narrativa-demo, base0a0106e; sem merge ou início de M01-19. Revisão de integração:14 momentos ilustrados sem protagonista, entrada direta na cela, tesouros desaparecem por recibo e têm mínimo configurável5 ouro quando o sorteio não entrega nada, área de contato do Gate3×2 com migração de eventos antigos, caminhada nativa para16 identidades e ratos/goblins, arma em planos por pose. Localização em LOCALIZACAO_E_GLOSSARIO.md; Imperial Dungeons permanece no original no mapa/diário/árvore. Campos, fontes, prompts, versões, testes e limitações em REVISAO_INTEGRACAO_M01_18_R02.md e evidencias/m01-18-r02. Novas imagens/fluidez aguardam avaliação do responsável; autoria desta revisão no MV e Galaxy A56 físico não foram executados. Retratos/batalhas aprovados, bônus, recursos, loot de inimigos e melhorias futuras preservados. REF02 foi atendido tecnicamente por este pedido específico; sua avaliação integrada permanece M01-19. Registros anteriores são históricos quando divergirem.
+
+## Estado vigente M01-18 — 28/10/2026
+
+M01-17 fechado com aprovação das poções separada dos testes automáticos de descanso, integrado/publicado em develop a9d8cc0. Feature/m01-narrativa-demo implementa M01-18 sem renumeração: criação → I01–I05/Ria → MQ01/dungeon → Gate → F01/título. Rota nativa232 passos, saves de narrativa/dungeon/fim, entrada protegida e telas menores verificados. Fonte primária Ria em TEMPLATE.DAT#1400; adaptações/divergências e limites em NARRATIVA_M01_18.md. Arte Ria R02 reutilizada sem alteração/protagonista;32 plugins canônicos. Concluído tecnicamente na feature para revisão, sem merge ou início M01-19. Avaliação narrativa/visual do responsável, nova autoria/playtest no editor, teste em velocidade normal e A56 físico permanecem separados e pendentes. Melhorias futuras e Vigor aquático inalterados. Registros anteriores são históricos quando divergirem.
+
 ## Fechamento M01-17 — 28/10/2026
 
 Responsável aprovou a proteção R03 no estado disponível3f3bf6e, somando às aprovações de funcionamento35ba624 e feedback visualbd108c5. Não estender ao descanso/editor/dispositivos. Reexecutados9 grupos de recuperação, incluindo evento nativo da cama técnica, restauração integral dos três recursos, bloqueios, save/load e preservação de progressão/inventário; validadores de proteção/compatibilidade passaram. Evidências em evidencias/m01-17-fechamento. M01-17 concluído tecnicamente e autorizado para integração em develop. Sem cama confirmada no Map008; não inventada. Autoria manual nova no MV, Galaxy A56 físico e balanceamento permanecem verificações de integração, não declaradas realizadas. M01-18 corresponde a introdução/Ria/encerramento, sem renumeração. Estados anteriores são históricos quando divergirem.

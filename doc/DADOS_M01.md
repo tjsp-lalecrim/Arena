@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18: ArenaNarrative.json schemaVersion1 contém12 entradas I01–I05/R01–R07 e F01/asset. Namespace arenaNarrative v1 registra somente leitura/contexto (mode,phase,section,word,history) e operação gate. MQ01, inventário e recursos mantêm suas autoridades. Defaults de saves antigos são technical/none; novos jogos pelo commit da criação iniciam campaign/intro. Ver NARRATIVA_M01_18.md.
+
 ## Integração M01-17
 
 M01-17: Items2/3/4 mantidos em50HP/25MP/50Vigor e estoque nativo; ArenaRecovery.json contém apenas política de uso e pontos autorizados. HP/MP, inventário, Vigor e progressão não são duplicados. Map005/evento6 é o único ponto de descanso configurado; Map008 permanece sem cama confirmada. Sem nova migração. Detalhes em POCOES_E_DESCANSO_M01_17.md.
@@ -132,3 +136,12 @@ ArenaEncounters.json schema1 separado do mapa/loot. Map008 mantém IDs1–168/ca
 ## M01-16 — MQ01
 
 ArenaQuests.json schema1 define títulos/J10–J40, requisitos e referências. Map008 mesmos235 eventos/IDs/geometria; somente listas127(chave) e137(Gate), e página derivada oculta da chave. Fonte MQ01.ruby-key/item1; recibo MQ01.cell-door; self-switchA de127 derivado, sem espelhamento em variáveis/switches globais. Contrato quests.MQ01/objetivos/recibos existente em arena v1; contêineres no ledger arenaLoot v1, sem segunda bolsa de inventário. Ver QUESTS_M01_16.md. Registros históricos de tags de proteção/saneamento não implementadas foram superados por M01-12/16. Nenhum novo item ou ajuste de inimigo/bônus/custo.
+
+
+## Contratos vigentes da integração M01-18 R02
+
+arenaNarrative v2: modo/fase/seção/cursor/histórico continuam próprios; migração do cursor v1 respeita as divisões22/20 palavras e o acréscimo explicativo do Gate. Apenas a frase reformulada da chave pode reiniciar. Não armazena inventário/atributos duplicados. Saves sem namespace continuam técnicos.
+
+ArenaNarrative.json schema2: sections[14] com id/phase/text/picture; ending/endingPicture. ArenaCharacterVisuals.visuals.mapCell é opcional, legado48×64; novos64×64. ID de identidade estável, aparência reconstruída ao carregar. Materiais de armadura usam centro da célula, não outra identidade salva.
+
+ArenaQuests: treasureMinimumGold5, gateHalfWidth1/gateDepth2 relativos a ArenaDungeon.gateApproach. Recibos container/MQ01.treasure.<eventId> determinam transparência; não são marcadores de respawn. Inventário/ouro continuam nativos; reserva usa o ledger existente. Itens importantes mantêm fonte e recibos separados. Novos contatos236–240 são migrados em mapas serializados antigos. ArenaEncounters.mapVisuals associa inimigo à folha nativa/célula/ground/cadência; suporte por direção do rato não altera colisão ou recursos. ArenaBattleMotion.frame.weaponLayer define frente/trás para cada apoio de arma.

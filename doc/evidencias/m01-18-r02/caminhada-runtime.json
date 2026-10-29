@@ -1,0 +1,6399 @@
+{
+  "browser": "156.0.8078.73",
+  "rows": [
+    {
+      "id": "argonian.male.base",
+      "file": "$Arena_argonian_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 110,
+        "maximum": 110,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 10,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "argonian.female.base",
+      "file": "$Arena_argonian_female_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 110,
+        "maximum": 110,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 10,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "breton.male.base",
+      "file": "$Arena_breton_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "breton.female.base",
+      "file": "$Arena_breton_female_r02",
+      "cell": [
+        48,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "dark_elf.male.base",
+      "file": "$Arena_dark_elf_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "dark_elf.female.base",
+      "file": "$Arena_dark_elf_female_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "high_elf.male.base",
+      "file": "$Arena_high_elf_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "high_elf.female.base",
+      "file": "$Arena_high_elf_female_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "khajiit.male.base",
+      "file": "$Arena_khajiit_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "khajiit.female.base",
+      "file": "$Arena_khajiit_female_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "nord.male.base",
+      "file": "$Arena_nord_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "nord.female.base",
+      "file": "$Arena_nord_female_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "redguard.male.base",
+      "file": "$Arena_redguard_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "redguard.female.base",
+      "file": "$Arena_redguard_female_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "wood_elf.male.base",
+      "file": "$Arena_wood_elf_male_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    },
+    {
+      "id": "wood_elf.female.base",
+      "file": "$Arena_wood_elf_female_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "walk": true,
+      "step": false,
+      "patterns": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      }
+    }
+  ],
+  "patrol": {
+    "1/2": [
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      }
+    ],
+    "2/2": [
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      }
+    ],
+    "1/8": [
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      }
+    ],
+    "2/8": [
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      }
+    ],
+    "1/6": [
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      }
+    ],
+    "2/6": [
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 2,
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 0,
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      {
+        "pattern": 1,
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      }
+    ]
+  },
+  "water": {
+    "tile": [
+      57,
+      6
+    ],
+    "swimming": true,
+    "depth": 24,
+    "upper": 40,
+    "lower": 24,
+    "before": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 1,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": []
+    },
+    "after": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 1,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": []
+    }
+  },
+  "errors": [],
+  "scope": "Native keyboard movement,16 identities/all4 directions/3 patterns; armor and native save/load; actual patrols; swimming fixture",
+  "editor": "not executed",
+  "galaxyA56": "not executed"
+}

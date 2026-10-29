@@ -1,0 +1,38 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "native map event: empty container roll awards configured5 gold once; sprite hidden; enemy roll remains empty",
+    "save/load and map exit/return after common-enemy completion do not reactivate claimed treasure or duplicate reward",
+    "full capacity keeps minimum reward in persistent reserve; later collection once, never re-rolls",
+    "zero-quantity gold row also receives minimum; nonempty roll object alone is not mistaken for a reward",
+    "legitimately consumed ruby key stays resolved; container hiding/floor never reactivates required source",
+    "legacy235-event serialized map gains five invisible native Gate contacts without renumbering existing events",
+    "save already inside Gate approach resolves legitimate MQ01 once on load, no backing out/re-entry required"
+  ],
+  "capacity": {
+    "received": 0,
+    "pending": [
+      {
+        "kind": "gold",
+        "quantity": 5,
+        "category": "gold",
+        "rare": false,
+        "origin": "MQ01.treasure.142"
+      }
+    ],
+    "hidden": true
+  },
+  "source": {
+    "stage": 30,
+    "items": 0,
+    "keySource": {
+      "active": false,
+      "questId": "MQ01",
+      "itemId": 1,
+      "missing": 0
+    }
+  },
+  "errors": [],
+  "editor": "not executed",
+  "galaxyA56": "not executed"
+}

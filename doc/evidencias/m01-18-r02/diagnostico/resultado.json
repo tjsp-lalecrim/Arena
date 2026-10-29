@@ -1,0 +1,108 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "native new game/name/race/gender/confirmation enters intro; no laboratory or MQ01 before Ria; held OK advances at most one page",
+    "native Save/Load during intro resumes exact word/section/history, no repetition or map0 request",
+    "Ria illustration/name and word cursor persist through native save/load",
+    "Ria completion starts MQ01 once and transfers to original cell; technical laboratory exit hidden from campaign",
+    "native walking to key/event interaction; close-message held input fenced; stage20/save/load keeps one key and skips intro",
+    "native route through original cell door to Shift Gate, contact completes MQ01 once and opens F01 instead of M02",
+    "ending native save/load is a stable completed screen without rewards/quest replay; explicit return to title",
+    "technical exploration entry remains isolated and available without normal campaign introduction"
+  ],
+  "route": [
+    {
+      "target": [
+        142,
+        65
+      ],
+      "steps": 23,
+      "status": "goal"
+    },
+    {
+      "target": [
+        141,
+        73
+      ],
+      "steps": 9,
+      "status": "goal"
+    },
+    {
+      "target": [
+        12,
+        146
+      ],
+      "steps": 202,
+      "status": "goal"
+    },
+    {
+      "target": [
+        13,
+        145
+      ],
+      "steps": 2,
+      "status": "ending"
+    }
+  ],
+  "encounters": 0,
+  "final": {
+    "q": {
+      "stage": 40,
+      "objectives": {
+        "rubyKey": true,
+        "cellDoor": true,
+        "shiftGate": true
+      },
+      "completed": true,
+      "receipts": {
+        "MQ01.cell-door": {
+          "sourceId": "MQ01.ruby-key",
+          "itemId": 1,
+          "quantity": 1,
+          "kind": "consume"
+        }
+      }
+    },
+    "items": {},
+    "resources": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 1,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": []
+    },
+    "story": {
+      "mode": "campaign",
+      "phase": "ending",
+      "section": 0,
+      "word": 0,
+      "history": []
+    },
+    "operations": {
+      "gate": true
+    }
+  },
+  "errors": [],
+  "isolation": "Disposable Chrome contexts/save17/18; no personal saves. Complete path with native collision/moveStraight (speed6 for automation), no locate/through. Any encountered battle uses HP1 enemy/full HP player fixture in memory to validate integration, not balance. Narrative saves use native Save/Load scenes."
+}

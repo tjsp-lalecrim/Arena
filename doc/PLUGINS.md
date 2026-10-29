@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18 adiciona MV_NarrativePages0.1.0 e Arena_Narrative0.1.0 após os30 registros preservados (total32), dados ArenaNarrative.json e namespace arenaNarrative v1. Sem plugin externo, alteração de motor ou nova arte. Documentação em plugins/Arena_Narrative.md e NARRATIVA_M01_18.md.
+
 ## M01-17 R03
 
 Arena_Recovery0.3.0 acrescenta proteção de entrada de poções somente no menu, configuração menuIntervalMs500 e estado transitório Game_Temp. Mesmos30 registros canônicos; sem consumidor, cooldown de combate ou dados persistentes novos. Arena_Inventory0.3.0/barras aprovadas inalterados. Ver plugins/Arena_Recovery.md e PROTECAO_POCOES_M01_17_R03.md.
@@ -134,3 +138,8 @@ MV_QuestRules0.1.0 e Arena_Quests0.1.0 após Arena_Encounters e dependências an
 ## Diário M01-16 R02
 
 MV_JournalModel0.1.0 (modelo de leitura/quebra de linhas) e Arena_QuestJournal0.2.0 (cena/painéis/input/reflow) após Arena_Quests. Arena_Quests mantém os consumidores de progressão, apenas delegando openJournal ao plugin de apresentação. Dados visuais separados em ArenaQuestJournal.json, sem quests fictícias distribuídas. Guide plugins/Arena_QuestJournal.md.
+
+
+## Integração M01-18 R02 — alterações vigentes
+
+Nenhum plugin externo ou registro adicional:32 registros de js/plugins.js preservados no formato do editor. Arena_Narrative0.2 usa momentos ilustrados/schema2 e persistência v2; Arena_Quests0.2 liga fontes/contatos à apresentação; Arena_Loot0.2 permite piso opcional exclusivo de recipientes; Arena_Encounters0.2 usa caminhadas nativas; Arena_BattleMotion0.4 alterna planos da arma por pose. Criação e inventário reconhecem células variáveis mantendo as identidades e materiais. Parâmetros novos são dados JSON, não alterações internas do motor. Consultar páginas dos plugins e REVISAO_INTEGRACAO_M01_18_R02.md para contratos, testes e limites.

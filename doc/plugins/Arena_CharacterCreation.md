@@ -54,3 +54,8 @@ Revisão visual r02 em26/10/2026: nenhum código/parâmetro/dependência do plug
 Pose-r03 corrige apenas quatro referências `face` de Khajiit/Argonianos, ambos os gêneros. Código, API, IDs, sprites de outras categorias e regras permanecem iguais. Testes permitem pasta separada por ARENA_EVIDENCE_DIR para preservar evidências históricas e comparam os arquivos efetivos da configuração, sem supor um sufixo comum. Diretiva obrigatória e inspeção manual em doc/arte/PROCEDIMENTO_RETRATOS.md; registros atuais em REVISAO_POSE_RETRATOS_R03.md. Nenhum teste automático aprova anatomia; avaliação estética pendente.
 
 R04: auditoria em doc/AUDITORIA_BONUS_RACIAIS_M01_07.md distingue modificadores da ação e atributos nativos. Nenhum código/API/dependência do plugin mudou. Correção de conteúdo: retirar3/4 (técnicas desarmadas) de ArenaCharacterVisuals.rules.weaponSkillIds; manter1/5/6/7/8, valores, catálogo e textos. Os empacotadores também preservam a exclusão ao reconstruir configuração. test-racial-audit mede os oito casos em sete níveis, dano/acerto/crítico, AGI/recursos e resistências/imunidade, antes/depois; propostas de balanceamento pendentes. Novos pilotos visuais não estão no catálogo ativo. Evidências de autoria anteriores não são atribuídas a esta rodada.
+
+
+## Integração R02
+
+visual.mapCell opcional, default[48,64]. Novas folhas de caminhada usam[64,64]; a prévia recorta a coluna central e preserva seu centro visual, sem cortar ou comprimir a figura. Face/side/battler e ID estável permanecem; restoreAppearance reconstrói a referência de caminhada atual ao carregar. Sem mudança de bônus, raça/gênero ou regras.

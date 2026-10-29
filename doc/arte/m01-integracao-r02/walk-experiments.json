@@ -1,0 +1,24 @@
+[
+  {
+    "id": "khajiit.male.base",
+    "selected": false,
+    "master": "art/masters/m01-integration-r02/walk-khajiit-male-g02.png",
+    "prompt": "Use a PRIMEIRA imagem ($Arena_breton_female_r02.png) como gabarito EXATO de poses e grade de caminhada 3colunas x4linhas. Troque SOMENTE a identidade: todas as 12 figuras devem ser o MESMO Khajiit MASCULINO das referências2 e3, mantendo pelagem, rosto felino, orelhas, roupa castanha, calças escuras e botas dessa identidade. Não desenhar a mulher humana da referência1. Manter o gesto específico das pernas e braços de CADA CÉLULA da referência1, incluindo alternância real de pés: na linha frontal, em uma ponta o pé do LADO ESQUERDO DA IMAGEM fica mais baixo/adiantado, na outra ponta o pé do LADO DIREITO DA IMAGEM fica mais baixo/adiantado. NÃO repetir o mesmo pé adiantado nas duas pontas. Coluna central de repouso, pontas passos OPOSTOS. Linhas: frente/baixo, esquerda, direita, costas/cima. Quatro orientações corretas em TODOS os quadros, sem uma célula invertida. Preservar alinhamento e escala, corpo inteiro com margem transparente, sem cortar cauda/pés/orelhas. Pintura dark fantasy, canvas 3:4, sem linhas, letras, números, cenário ou assinatura. Criar quadros genuínos de caminhada, não poses de luta. Referência1 somente pose;2e3 somente identidade. FUNDO TRANSPARENTE.",
+    "references": [
+      "img/characters/$Arena_breton_female_r02.png",
+      "img/pictures/Arena_khajiit_male_r02_side.png",
+      "img/faces/Arena_khajiit_male_pose_r03.png"
+    ],
+    "reason": "Neutral column was changed to a stride; not integrated."
+  },
+  {
+    "id": "khajiit.male.base",
+    "selected": false,
+    "master": "art/masters/m01-integration-r02/walk-khajiit-male-opposite-g03.png",
+    "prompt": "Crie SOMENTE QUATRO figuras de corpo inteiro do MESMO Khajiit masculino da referência, numa grade2x2, fundo transparente, sem texto nem números. Não produzir folha3x4. Mesma roupa castanha, botas, pelagem e rosto. Estes são quadros de CAMINHADA para completar passos opostos aos existentes, não luta. Canto superior esquerdo: de FRENTE, avançando o pé do LADO ESQUERDO DA IMAGEM bem para baixo, com a outra perna recuada/dobrada; braço do LADO DIREITO DA IMAGEM adiantado. É O OPOSTO do passo que a referência repete nas duas pontas. Canto superior direito: caminhando voltado totalmente para ESQUERDA, com a perna PRÓXIMA DO OBSERVADOR recuada para direita e a perna distante avançada para esquerda, braço próximo avançado para esquerda. Canto inferior esquerdo: caminhando voltado totalmente para DIREITA, com a perna PRÓXIMA DO OBSERVADOR recuada para esquerda e a perna distante avançada para direita, braço próximo avançado para direita. Canto inferior direito: de COSTAS, pé do LADO DIREITO DA IMAGEM recuado/baixo e pé esquerdo levantado; braço esquerdo adiantado. Pose natural, nenhuma inversão de cabeça e tronco. Mesmas proporções/altura, cabeça sobre pescoço. Acabamento dark fantasy aprovado. Margens amplas, não cortar nenhum membro, focinho, orelhas ou cauda. Iluminação suave e uniforme. Sem armas, cenário, sombra de chão, legenda ou assinatura.",
+    "references": [
+      "art/masters/m01-integration-r02/walk-khajiit-male.png"
+    ],
+    "reason": "Four-pose opposite-leg study; not selected for native3-phase assembly."
+  }
+]

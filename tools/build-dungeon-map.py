@@ -68,7 +68,7 @@ for y in range(H):
    if c=='~':tile=2048 # native animated A1 surface, shape0
    at(x,y,0,tile);at(x,y,5,2 if c=='~' else 3 if c=='^' else 4)
    if c=='^':at(x,y,1,idat(4+dx,8+dy)) # low independent slab, below player
-m=copy.deepcopy(read('data/Map007.json'));m.update(width=W,height=H,data=data,displayName='Masmorras Imperiais',tilesetId=4,events=[None],encounterList=[],encounterStep=30,note='M01-14: mapa estático de teste; sem quests/patrulhas/introdução. Leia DUNGEON_M01_14.md. Esc menu/salvar.');m['scrollType']=0;m['parallaxName']='';m['specifyBattleback']=False
+m=copy.deepcopy(read('data/Map007.json'));m.update(width=W,height=H,data=data,displayName='Imperial Dungeons',tilesetId=4,events=[None],encounterList=[],encounterStep=30,note='M01: Imperial Dungeons; MQ01/patrulhas integradas. Configuração ArenaDungeon/ArenaQuests/ArenaEncounters. Esc menu/salvar.');m['scrollType']=0;m['parallaxName']='';m['specifyBattleback']=False
 base=copy.deepcopy(read('data/Map007.json')['events'][8]['pages'][0]);base['image'].update(tileId=0,characterName='',characterIndex=0,direction=2,pattern=1);base['moveType']=0;base['stepAnime']=False;base['walkAnime']=False
 hooks=[]
 def event(name,x,y,tile=0,script=None,priority=0,through=True,trigger=0,openPage=False):
@@ -120,7 +120,7 @@ for mark in l['reserved']:
    attachments.append({'eventId':n,'sourceCell':mark['cell'],'wallCell':[wx0,wy0],'position':[wx,wy+1],'sourceDistance':distance,'orientation':'south-face','category':'wall-only','sourceFlat':mark['sourceFlat']})
   else:raise ValueError('No valid visible wall face for chain marker '+str(mark['cell']))
 write('data/Map008.json',m)
-infos=read('data/MapInfos.json');info={'id':8,'expanded':True,'name':'M01-14 Masmorras Imperiais','order':8,'parentId':0,'scrollX':0,'scrollY':0}
+infos=read('data/MapInfos.json');info={'id':8,'expanded':True,'name':'M01-14 Imperial Dungeons','order':8,'parentId':0,'scrollX':0,'scrollY':0}
 if len(infos)==8:infos.append(info)
 else:infos[8]=info
 write('data/MapInfos.json',infos)

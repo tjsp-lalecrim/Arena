@@ -1,3 +1,7 @@
+## Estado após teste integrado — 28/10/2026
+
+Relato manual na execução pelo editor MV registrado em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026), com versão disponível associada e limites explícitos. Introdução/encerramento aprovados; mapa satisfatório. Pendências e critérios permanecem centralizados em [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md); não considerar arma/cenário ou outros ajustes resolvidos. Smartphone físico ao final do M01, sem bloqueio automático desktop. Sem merge, push ou início de backlog nesta tarefa. Estados anteriores abaixo são históricos quando divergirem.
+
 ## Diário M01-16 R02 — 28/10/2026
 
 Mesma feature/m01-quests, base2ea761d: diário com filtros Pendentes/Concluídas/Todas, lista de missões conhecidas, descrição narrativa, passos revelados com ícones e status geral do booleano completed. Modelo de leitura separado da progressão; lógica de MQ01, fontes/recuperação, recompensas e respawn preservados. Reflow de lista/detalhes/abas em640×480 e916×412 emulado, contexto transitório preservado. Ler REVISAO_DIARIO_M01_16_R02.md e DIRETIVA_DE_NAVEGACAO.md (NAV01 obrigatória para todos os menus novos/revisados). Evidências próprias em evidencias/m01-16-r02, sem sobrescrever R01. Revisão para avaliação do responsável, sem merge ou próximo backlog; editor desta UI e A56 físico pendentes. Registros de apresentação anteriores abaixo são históricos quando divergirem.

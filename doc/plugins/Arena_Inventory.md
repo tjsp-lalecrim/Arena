@@ -44,3 +44,8 @@ Testes e capturas R02 em evidencias/m01-12-r02; roteiro completo no relatório p
 ## Integração M01-13
 
 M01-13: exportada drawItemIcon(window,item,x,y,size) para resumo reutilizar ícones atuais. Identificação do ícone de malha usa material configurado, atendendo também Armors4 sem novo asset. Materials3/4 mapeiam couro/malha. Nenhuma alteração de paleta, acesso a itens ou design do modal nesta etapa.
+
+
+## Integração R02
+
+Máscara de material de mapa é relativa ao centro: deslocamento horizontal(cw-48)/2. Suporta a célula legada48 e as novas64 mantendo alpha, regiões protegidas e densidade da figura. Máscaras da batalha, transações, técnicas e recuperação permanecem existentes. Regressão16 identidades×2 armaduras verifica todas12 células de mapa e42 de batalha. Isso mantém a cobertura de material aprovada, sem alegar figurinos completos novos.

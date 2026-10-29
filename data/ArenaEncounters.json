@@ -3,6 +3,29 @@
   "mapId": 8,
   "areaId": "imperial-dungeons",
   "completionQuestId": "MQ01",
+  "mapVisuals": {
+    "1": {
+      "file": "$Arena_rat_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "ground": 62,
+      "groundByDirection": {
+        "8": 52
+      },
+      "animationWait": 10
+    },
+    "2": {
+      "file": "$Arena_goblin_walk_r02",
+      "cell": [
+        64,
+        64
+      ],
+      "ground": 62,
+      "animationWait": 10
+    }
+  },
   "entries": [
     {
       "id": "imperial.enemy.01",
@@ -22,7 +45,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.02",
@@ -42,7 +65,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.03",
@@ -62,7 +85,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.04",
@@ -82,7 +105,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.05",
@@ -102,7 +125,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.06",
@@ -122,7 +145,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.07",
@@ -142,7 +165,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.08",
@@ -162,7 +185,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.09",
@@ -182,7 +205,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.10",
@@ -202,7 +225,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.11",
@@ -222,7 +245,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.12",
@@ -242,7 +265,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.13",
@@ -262,7 +285,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.14",
@@ -282,7 +305,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.15",
@@ -302,7 +325,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.16",
@@ -322,7 +345,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.17",
@@ -342,7 +365,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.18",
@@ -362,7 +385,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.19",
@@ -382,7 +405,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.20",
@@ -402,7 +425,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.21",
@@ -422,7 +445,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.22",
@@ -442,7 +465,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.23",
@@ -462,7 +485,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.24",
@@ -482,7 +505,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.25",
@@ -502,7 +525,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.26",
@@ -522,7 +545,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.27",
@@ -542,7 +565,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.28",
@@ -562,7 +585,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.29",
@@ -582,7 +605,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.30",
@@ -602,7 +625,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.31",
@@ -622,7 +645,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.32",
@@ -642,7 +665,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.33",
@@ -662,7 +685,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.34",
@@ -682,7 +705,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.35",
@@ -702,7 +725,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.36",
@@ -722,7 +745,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.37",
@@ -742,7 +765,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.38",
@@ -762,7 +785,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.39",
@@ -782,7 +805,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.40",
@@ -802,7 +825,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.41",
@@ -822,7 +845,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.42",
@@ -842,7 +865,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.43",
@@ -862,7 +885,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.44",
@@ -882,7 +905,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.45",
@@ -902,7 +925,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.46",
@@ -922,7 +945,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.47",
@@ -942,7 +965,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.48",
@@ -962,7 +985,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.49",
@@ -982,7 +1005,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.50",
@@ -1002,7 +1025,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.51",
@@ -1022,7 +1045,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.52",
@@ -1042,7 +1065,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.53",
@@ -1062,7 +1085,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.54",
@@ -1082,7 +1105,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.55",
@@ -1102,7 +1125,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.56",
@@ -1122,7 +1145,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.57",
@@ -1142,7 +1165,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.58",
@@ -1162,7 +1185,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.59",
@@ -1182,7 +1205,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.60",
@@ -1202,7 +1225,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.61",
@@ -1222,7 +1245,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.62",
@@ -1242,7 +1265,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.63",
@@ -1262,7 +1285,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.64",
@@ -1282,7 +1305,7 @@
         4,
         5
       ],
-      "scale": 0.6
+      "scale": 1
     },
     {
       "id": "imperial.enemy.65",
@@ -1302,7 +1325,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.66",
@@ -1322,7 +1345,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     },
     {
       "id": "imperial.enemy.67",
@@ -1342,7 +1365,7 @@
         4,
         5
       ],
-      "scale": 0.5
+      "scale": 1
     }
   ]
 }

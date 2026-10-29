@@ -1,0 +1,856 @@
+{
+  "browser": "156.0.8078.73",
+  "identity": "breton.female.base",
+  "weaponId": 1,
+  "initial": {
+    "identity": "breton.female.base",
+    "weapon": 1,
+    "vigor": 100,
+    "enemyHp": 500
+  },
+  "scope": "Native commands listed in actions only; deterministic random/variance in isolated browser storage; no personal saves",
+  "actions": [
+    {
+      "command": "attack",
+      "id": 1,
+      "before": {
+        "v": 100,
+        "hp": 500
+      },
+      "after": {
+        "v": 100,
+        "hp": 478,
+        "atRest": true
+      }
+    },
+    {
+      "command": "skill",
+      "id": 5,
+      "before": {
+        "v": 100,
+        "hp": 478
+      },
+      "after": {
+        "v": 95,
+        "hp": 456,
+        "atRest": true
+      }
+    },
+    {
+      "command": "skill",
+      "id": 6,
+      "before": {
+        "v": 95,
+        "hp": 456
+      },
+      "after": {
+        "v": 83,
+        "hp": 422,
+        "atRest": true
+      }
+    },
+    {
+      "command": "guard",
+      "id": 2,
+      "before": {
+        "v": 83,
+        "hp": 422
+      },
+      "after": {
+        "v": 83,
+        "hp": 422,
+        "atRest": true
+      }
+    }
+  ],
+  "trace": {
+    "frames": {
+      "idle.3": {
+        "sample": {
+          "key": "idle",
+          "index": 3,
+          "tick": 58,
+          "total": 104,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "idle.4": {
+        "sample": {
+          "key": "idle",
+          "index": 4,
+          "tick": 68,
+          "total": 104,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "idle.5": {
+        "sample": {
+          "key": "idle",
+          "index": 5,
+          "tick": 84,
+          "total": 104,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "idle.0": {
+        "sample": {
+          "key": "idle",
+          "index": 0,
+          "tick": 104,
+          "total": 104,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "idle.1": {
+        "sample": {
+          "key": "idle",
+          "index": 1,
+          "tick": 120,
+          "total": 104,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "idle.2": {
+        "sample": {
+          "key": "idle",
+          "index": 2,
+          "tick": 136,
+          "total": 104,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "light.0": {
+        "sample": {
+          "key": "light",
+          "index": 0,
+          "tick": 0,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "light.1": {
+        "sample": {
+          "key": "light",
+          "index": 1,
+          "tick": 4,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          -5,
+          -70,
+          -0.17453292519943295,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "back",
+        "cover": false,
+        "coverAbove": false
+      },
+      "light.2": {
+        "sample": {
+          "key": "light",
+          "index": 2,
+          "tick": 9,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          32,
+          -72,
+          1.2217304763960306,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "light.3": {
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          38,
+          -74,
+          1.5707963267948966,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "light.4": {
+        "sample": {
+          "key": "light",
+          "index": 4,
+          "tick": 16,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          15,
+          -71,
+          1.1344640137963142,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "light.5": {
+        "sample": {
+          "key": "light",
+          "index": 5,
+          "tick": 21,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "hurt.0": {
+        "sample": {
+          "key": "hurt",
+          "index": 0,
+          "tick": 0,
+          "total": 28,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "hurt.1": {
+        "sample": {
+          "key": "hurt",
+          "index": 1,
+          "tick": 3,
+          "total": 28,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          -18,
+          -68,
+          0.17453292519943295,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "hurt.2": {
+        "sample": {
+          "key": "hurt",
+          "index": 2,
+          "tick": 8,
+          "total": 28,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          4,
+          -62,
+          0.7853981633974483,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "hurt.3": {
+        "sample": {
+          "key": "hurt",
+          "index": 3,
+          "tick": 14,
+          "total": 28,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -61,
+          0.6981317007977318,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "hurt.4": {
+        "sample": {
+          "key": "hurt",
+          "index": 4,
+          "tick": 19,
+          "total": 28,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "hurt.5": {
+        "sample": {
+          "key": "hurt",
+          "index": 5,
+          "tick": 23,
+          "total": 28,
+          "done": false,
+          "impactTick": null,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "heavy.0": {
+        "sample": {
+          "key": "heavy",
+          "index": 0,
+          "tick": 0,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "heavy.1": {
+        "sample": {
+          "key": "heavy",
+          "index": 1,
+          "tick": 5,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          -11,
+          -96,
+          0.17453292519943295,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "heavy.2": {
+        "sample": {
+          "key": "heavy",
+          "index": 2,
+          "tick": 13,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          -13,
+          -90,
+          0.4363323129985824,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "back",
+        "cover": false,
+        "coverAbove": false
+      },
+      "heavy.3": {
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          26,
+          -38,
+          2.007128639793479,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "heavy.4": {
+        "sample": {
+          "key": "heavy",
+          "index": 4,
+          "tick": 25,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          -13,
+          -62,
+          1.1344640137963142,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      },
+      "heavy.5": {
+        "sample": {
+          "key": "heavy",
+          "index": 5,
+          "tick": 32,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": true,
+          "weaponId": 1
+        },
+        "position": [
+          160,
+          388
+        ],
+        "home": [
+          160,
+          388
+        ],
+        "weapon": [
+          6,
+          -66,
+          0.6108652381980153,
+          -1,
+          1
+        ],
+        "visible": true,
+        "plane": "front",
+        "cover": false,
+        "coverAbove": false
+      }
+    },
+    "uses": [
+      1,
+      5,
+      6,
+      2
+    ],
+    "effects": [
+      {
+        "skill": 1,
+        "damage": 22,
+        "missed": false,
+        "evaded": false
+      },
+      {
+        "skill": 5,
+        "damage": 22,
+        "missed": false,
+        "evaded": false
+      },
+      {
+        "skill": 6,
+        "damage": 34,
+        "missed": false,
+        "evaded": false
+      },
+      {
+        "skill": 2,
+        "damage": 0,
+        "missed": false,
+        "evaded": false
+      }
+    ]
+  },
+  "inputs": {
+    "data/ArenaBattleMotion.json": "7ee240464e1da16e06e0b15d984ba04895679fa277d47c1edc8acd6c03a4291f",
+    "js/plugins/Arena_BattleMotion.js": "f4fa644e3ddacaf392bf71e9162dcb82300ae12ed27436bac3b5d48cfcdb38e9",
+    "js/plugins/Arena_BattleUI.js": "f828a74ba8ec1b09d3d49ce38bf1b1999ccaa1ae10f6b5f5a02b466ca0536f72",
+    "img/sv_actors/Arena_Combat_breton_female_r02.png": "d46343f5af25c51376c299a02f8837c2cffd0473deaecc41e158684ae482bc41",
+    "img/pictures/Arena_weapon_dagger_r02.png": "ea021d88bc2910d9123df24bc94aa22b083a4f89d528eb28b60536e31cd414cb"
+  },
+  "errors": [],
+  "editor": "not executed",
+  "physicalPhone": "not executed"
+}

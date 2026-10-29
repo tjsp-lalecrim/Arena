@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 MQ01, diário e recuperação idempotente de fontes importantes.
+ * @plugindesc v0.2.0 MQ01, diário e recuperação idempotente de fontes importantes.
  * @author Codex
  * @help Após MV_QuestRules, Arena_Persistence, Arena_Loot, Arena_Dungeon e Arena_Encounters.
  * Dados/textos: ArenaQuests.json. Sem dependências externas.
@@ -57,18 +57,19 @@ var ArenaQuests;
    $gameMessage.add(ok?'A chave de rubi abre a cela.':'A porta está trancada.\nProcure a chave junto à parede norte.');return ok;
   },
   reachGate:function(){
-   if(!inMap()||$gameMap.distance($gamePlayer.x,$gamePlayer.y,$arenaDungeon.gateApproach[0],$arenaDungeon.gateApproach[1])>1||quest().stage!==30)return false;
+   if(!inMap()||!inGateArea()||quest().stage!==30)return false;
    var ok=atomic(function(){if(!move(40,view()))return false;ArenaEncounters.completeArea();return true;});
-   if(ok)$gameMessage.add('Objetivo MQ01 concluído.\nEncerramento narrativo reservado ao M01-18.');return ok;
+   if(ok){if(window.ArenaNarrative&&ArenaNarrative.isCampaign())ArenaNarrative.finish();else $gameMessage.add('MQ01 concluída neste teste técnico.\nA demo completa começa em Novo Jogo.');}return ok;
   },
   reconcile:reconcile,
   treasure:function(index){
    if(!inMap()||[30,40].indexOf(quest().stage)<0||!receipt())return false;
    var source=$arenaDungeon.integration.treasures[index];if(!source||$gameMap.distance($gamePlayer.x,$gamePlayer.y,source.position[0],source.position[1])>1)return false;
    var id='MQ01.treasure.'+source.eventId,token='container/'+id;if(ArenaLoot.snapshot().receipts[token])return false;
-   var result=ArenaLoot.claimContainer(id,$arenaLoot.enemies[String(cfg().treasureTableEnemyId)]),lines=result.received.map(function(r){var item=r.kind==='item'?$dataItems[r.id]:r.kind==='weapon'?$dataWeapons[r.id]:r.kind==='armor'?$dataArmors[r.id]:null;return (item?item.name:'Ouro')+' ×'+r.quantity;});
+   var result=ArenaLoot.claimContainer(id,$arenaLoot.enemies[String(cfg().treasureTableEnemyId)],cfg().treasureMinimumGold),lines=result.received.map(function(r){var item=r.kind==='item'?$dataItems[r.id]:r.kind==='weapon'?$dataWeapons[r.id]:r.kind==='armor'?$dataArmors[r.id]:null;return (item?item.name:'Ouro')+' ×'+r.quantity;});
    ($gameMap._arenaTreasurePreview||($gameMap._arenaTreasurePreview={}))[index]=2;
-   $gameMessage.add('Tesouro coletado.\n'+(lines.length?lines.join('\n'):'Nenhuma recompensa nesta fonte.')+(result.pending.length?'\nReserva salva para quando houver espaço.':''));return true;
+   hideCollectedTreasures();
+   $gameMessage.add('Tesouro coletado.\n'+(lines.length?lines.join('\n'):'')+(result.pending.length?(lines.length?'\n':'')+'Reserva salva para quando houver espaço.':''));return true;
   },
   openJournal:function(){ArenaQuestJournal.open();}
  };
@@ -78,11 +79,16 @@ var ArenaQuests;
  var gain=Game_Party.prototype.gainItem;
  Game_Party.prototype.gainItem=function(item){gain.apply(this,arguments);if(cfg()&&item&&item===$dataItems[cfg().itemId])reconcile();};
  var start=Scene_Map.prototype.start;
- Scene_Map.prototype.start=function(){start.apply(this,arguments);if(inMap()&&!$gameSystem._arenaEncounterTechnical&&quest().stage===0){
+  function syncGateContacts(){if(!inMap())return;$dataMap.events.forEach(function(e){if(e&&e.note==='ArenaQuest:gate-contact'&&!$gameMap.event(e.id))$gameMap._events[e.id]=new Game_Event($arenaDungeon.mapId,e.id);});}
+  var mapLoaded=Scene_Map.prototype.onMapLoaded;
+  Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring())syncGateContacts();mapLoaded.apply(this,arguments);};
+  Scene_Map.prototype.start=function(){syncGateContacts();start.apply(this,arguments);if(inMap()&&!$gameSystem._arenaEncounterTechnical&&quest().stage===0){
    // Old unstarted exploration lab saves may be outside an already-open cell.
    // Safe checkpoint bootstrap preserves actor/resources/inventory, never invents key use.
    ArenaQuests.begin();$gamePlayer.locate($arenaDungeon.start[0],$arenaDungeon.start[1]);$gamePlayer.center($gamePlayer.x,$gamePlayer.y);var d=ArenaDungeon.door(cfg().doorId);delete ($gameMap._arenaDoorTransitions||{})[d.id];d.eventIds.forEach(function(id){$gameSelfSwitches.setValue([$arenaDungeon.mapId,id,'A'],false);});
-  }reconcile();if(inMap())$arenaDungeon.integration.treasures.forEach(function(t,i){if(ArenaLoot.snapshot().receipts['container/MQ01.treasure.'+t.eventId])($gameMap._arenaTreasurePreview||($gameMap._arenaTreasurePreview={}))[i]=2;});};
+  }reconcile();hideCollectedTreasures();if(inMap()&&inGateArea()&&quest().stage===30)ArenaQuests.reachGate();};
+ function inGateArea(){var x=$gamePlayer.x-$arenaDungeon.gateApproach[0],y=$gamePlayer.y-$arenaDungeon.gateApproach[1];return Math.abs(x)<=cfg().gateHalfWidth&&y>=0&&y<cfg().gateDepth;}
+ function hideCollectedTreasures(){if(!inMap())return;$arenaDungeon.integration.treasures.forEach(function(t,i){var collected=!!ArenaLoot.snapshot().receipts['container/MQ01.treasure.'+t.eventId],e=$gameMap.event(t.eventId);if(e)e.setTransparent(collected);if(collected)($gameMap._arenaTreasurePreview||($gameMap._arenaTreasurePreview={}))[i]=2;});}
  var there=Game_Player.prototype.checkEventTriggerThere;
  Game_Player.prototype.checkEventTriggerThere=function(triggers){if(inMap()&&triggers.indexOf(0)>=0){var s=ArenaPersistence.sourceStatus(cfg().sourceId),x=$gameMap.roundXWithDirection(this.x,this.direction()),y=$gameMap.roundYWithDirection(this.y,this.direction());if(s.active&&s.missing&&x===$arenaDungeon.key[0]&&y===$arenaDungeon.key[1]){$gameMap.event($arenaDungeon.keyEvent).start();return;}}return there.apply(this,arguments);};
  var menu=Window_MenuCommand.prototype.addOriginalCommands;

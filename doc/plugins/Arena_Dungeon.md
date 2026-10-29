@@ -22,3 +22,8 @@ API enter(): transfere personagem criado à entrada, fora de batalha; startLab()
 Integra título e comandos originais do menu para entrar/retornar. Não altera motor, movimento/colisão, atores, recursos, combate, loot ou schema de saves. Porta técnica sem chave/quest; mapa sem encontros aleatórios/contato. Self-switches nativos persistem as portas. Integrações futuras usam config.integration: tesouros, marcadores de inimigos, plataformas, ponto de Ria. Não são funcionalidades de M01-15/16/17/18 implementadas.
 
 Roteiro, fontes, dimensões, art prompts, divergências e validações em DUNGEON_M01_14.md. M01-14 permanece em validação: editor novo mapa não confirmado por falha da automação; navegador não substitui autoria. Sem mapa-guia, bússola ou geração procedural em runtime.
+
+
+## Localização na integração R02
+
+Acesso técnico Explorar Imperial Dungeons (antes: Explorar dungeon), mesmo símbolo/fluxo. Map008 na árvore: M01-14 Imperial Dungeons. Geometria, água, veículos, portas e seus assets preservados; nenhum custo aquático acrescentado.

@@ -48,7 +48,7 @@ var ArenaBattleUI;
     // Mirror the artwork and its weapon transform together, never the damage text.
     Sprite_Actor.prototype.setActorHome=function(){var p=ArenaBattleMotion.profile(this._actor),h=config().playerHome;this.setHome(h[0],h[1]+(p?p.cell[1]-p.ground:8));};
     var af=Sprite_Actor.prototype.updateFrame;
-    Sprite_Actor.prototype.updateFrame=function(){af.apply(this,arguments);this._mainSprite.scale.x=-1;var w=this._arenaHeldWeapon;if(w){w.scale.x=-1;w.x=-w.x;w.rotation=-w.rotation;}};
+    Sprite_Actor.prototype.updateFrame=function(){af.apply(this,arguments);this._mainSprite.scale.x=-1;var w=this._arenaHeldWeapon;if(w){w.scale.x=-1;w.x=-w.x;w.rotation=-w.rotation;}var cover=this._arenaGripCover;if(cover&&cover.visible){cover.scale.x=-1;cover.x=-cover.x;}};
     var damageOffset=Sprite_Actor.prototype.damageOffsetX;
     Sprite_Actor.prototype.damageOffsetX=function(){return -damageOffset.apply(this,arguments);};
     var eb=Sprite_Enemy.prototype.setBattler;

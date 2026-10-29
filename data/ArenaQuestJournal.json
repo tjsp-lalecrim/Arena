@@ -3,7 +3,7 @@
   "quests": [
     {
       "id": "MQ01",
-      "title": "Masmorras Imperiais",
+      "title": "Imperial Dungeons",
       "narrative": [
         {
           "revealAt": 10,
@@ -20,7 +20,7 @@
           "objectiveId": "rubyKey",
           "revealAt": 10,
           "doneAt": 20,
-          "text": "Obter a chave de rubi junto à parede norte da cela.",
+          "text": "Obter a chave de rubi na plataforma junto à parede norte da cela.",
           "completedText": "Chave de rubi obtida."
         },
         {
@@ -37,7 +37,7 @@
           "revealAt": 30,
           "doneAt": 40,
           "text": "Alcançar o Shift Gate, seguindo para oeste e sul.",
-          "completedText": "Shift Gate alcançado; fuga das Masmorras Imperiais concluída."
+          "completedText": "Shift Gate alcançado; fuga de Imperial Dungeons concluída."
         }
       ],
       "source": "J10-J40 e R01/R04 em MQ01_ESPECIFICACAO.md, adaptação de apresentação pt-BR. Narrativa separada de instruções,sem alterar regras."

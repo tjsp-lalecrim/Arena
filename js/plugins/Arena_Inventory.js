@@ -62,6 +62,7 @@ var ArenaInventory,Scene_ArenaInventory;
 
     // AI material sampling over small authored torso regions. Alpha/poses untouched.
     var materialCache={};
+    function mapBand(row,cw){var b=config().mapBands[row];return [b[0]+(cw-48)/2,b[1],b[2],b[3]];}
     function materialId(a){var body=a.equips().filter(function(i){return i&&i.etypeId===4;})[0];return body&&config().materials[String(body.id)]?body.id:0;}
     function appearance(kind,a){
         a=a||actor();var id=materialId(a),profile=ArenaBattleMotion.profile(a),isBattle=kind==='battle';
@@ -78,7 +79,7 @@ var ArenaInventory,Scene_ArenaInventory;
             var t=tile._context.getImageData(0,0,64,64).data,pixels=result._context.getImageData(0,0,result.width,result.height),d=pixels.data;
             var cw=isBattle?128:source.width/3,ch=isBattle?112:source.height/4,cols=isBattle?6:3,rows=isBattle?7:4;
             for(var row=0;row<rows;row++)for(var col=0;col<cols;col++){
-                var band=isBattle?config().battleBands[row][col]:config().mapBands[row];
+                var band=isBattle?config().battleBands[row][col]:mapBand(row,cw);
                 for(var y=band[1];y<band[1]+band[3];y++)for(var x=band[0];x<band[0]+band[2];x++){
                     var at=((row*ch+y)*source.width+col*cw+x)*4;if(!d[at+3])continue;
                     var lum=(d[at]+d[at+1]+d[at+2])/3;
@@ -89,7 +90,7 @@ var ArenaInventory,Scene_ArenaInventory;
                 }
             }
             // Write only authored regions; avoid RGBA premultiplication round trips elsewhere.
-            for(var rr=0;rr<rows;rr++)for(var cc=0;cc<cols;cc++){var region=isBattle?config().battleBands[rr][cc]:config().mapBands[rr];result._context.putImageData(pixels,0,0,cc*cw+region[0],rr*ch+region[1],region[2],region[3]);}
+            for(var rr=0;rr<rows;rr++)for(var cc=0;cc<cols;cc++){var region=isBattle?config().battleBands[rr][cc]:mapBand(rr,cw);result._context.putImageData(pixels,0,0,cc*cw+region[0],rr*ch+region[1],region[2],region[3]);}
             result._setDirty();result._arenaMaterialReady=true;
         }
         source.addLoadListener(render);texture.addLoadListener(render);return result;

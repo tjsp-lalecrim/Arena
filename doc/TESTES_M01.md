@@ -1,3 +1,7 @@
+## Integração M01-18
+
+M01-18: executar validate-narrative, test-narrative e test-narrative-small; ARENA_URL/ARENA_EVIDENCE_DIR opcionais para contexto isolado. O roteiro completo usa232 movimentos nativos com velocidade6 só para teste e não mede balanceamento; não ocorreu encontro no resultado final.8 grupos de fluxo,6 de entrada/telas menores e108 matrizes de paginação; regressões234 criação/23 MQ01/27 persistência. Roteiro manual e lacunas em NARRATIVA_M01_18.md. Nenhum save pessoal ou teste físico foi usado.
+
 ## M01-17 R03
 
 Roteiro test-potion-menu-guard.cjs para duplo clique, tecla/mouse mantidos, toques rápidos, troca de poção, gesto iniciado bloqueado/solto após prazo, novas pressões, sem fila, inválidos sem reiniciar, navegação e configuração. ARENA_URL/ARENA_EVIDENCE_DIR isolados. Regressões normais respeitam500ms; teste visual R02 usa0 somente na fixture para stress de animação com novas pressões. Dados de produção permanecem500. Não usar esse cenário de stress como prova da proteção: seu roteiro próprio usa os500ms reais. Evidências e pendências em PROTECAO_POCOES_M01_17_R03.md.
@@ -49,6 +53,8 @@ Validar separadamente a autoria no editor MV 1.6.1 e a execução por HTTP no Ch
 Teste reproduzível: Playwright instalado localmente + Chrome desktop, `node tools/test-boot.cjs`. Se o pacote não estiver na resolução Node, definir ARENA_PLAYWRIGHT para seu caminho. ARENA_URL substitui o endereço padrão. Servidor iniciado antes do teste. Resultados e capturas em tmp/; dependências e arquivos gerados não são versionados. O teste usa contexto isolado, sem tocar no armazenamento de partidas pessoais.
 
 ## Samsung Galaxy A56 — preparação, execução pendente
+
+Programação confirmada pelo responsável em28/10/2026: teste físico ao final do M01, no roteiro de integração. Sua ausência não bloqueia revisões desktop. O teste integrado informado nesta data ocorreu pela execução no editor MV, não no aparelho nem no navegador; escopo em VALIDACAO_M01.md.
 
 Servir projeto na rede local confiável e abrir o endereço do computador no Chrome do A56. O bind 127.0.0.1 do exemplo acima é somente desktop: para o aparelho usar explicitamente interface de rede local, sem publicar na Internet. Registrar URL/origem usada (saves são locais à origem), versão do Android, Chrome e data. Girar para paisagem. O MV oferece tela inteira pela tecla F4 no desktop; no aparelho falta integrar botão explícito acionado por toque, que será implementado/avaliado antes de M01-19. A barra do Chrome visível não conta como apresentação em tela inteira.
 
@@ -150,3 +156,10 @@ validate-quests.cjs cobre núcleo/contratos/UTF8/formato canônico27/plugins ant
 ## NAV01 e diário M01-16 R02
 
 DIRETIVA_DE_NAVEGACAO.md é critério permanente de validação dos menus. Para o diário, executar validate-journal.cjs e test-journal.cjs; fixtures de muitas quests/textos/estados somente em contexto descartável/save21, sem fictícias na campanha. Testar filtros vazio/pendente/concluído/todas, seleção/leitura preservadas, estado após carregar, roda no painel correto, foco, retorno e painéis ocultos; 816×624,640×480 e Android genérico916×412 emulado. Roteiros/evidências em REVISAO_DIARIO_M01_16_R02.md. Emulação não substitui Galaxy A56 físico.
+
+
+## Roteiro vigente M01-18 R02
+
+Seguir REVISAO_INTEGRACAO_M01_18_R02.md. A introdução agora tem14 momentos ilustrados e não oferece Salvar/Entrar como etapa intermediária: terminar o texto entra na cela. Saves de introdução anteriores continuam carregáveis; novos testes usam fixture isolada para esse contrato, não um botão visível inexistente. Mapa na árvore: Map008 / M01-14 Imperial Dungeons; acesso técnico Explorar Imperial Dungeons (antigo Explorar Dungeon).
+
+Executáveis: validate-narrative.cjs, test-narrative.cjs, test-narrative-small-r02.cjs, test-integration-r02.cjs, test-walk-r02.cjs, test-weapon-planes-r02.cjs. Regressões de quests/encontros/criação/persistência/aparência preservadas. Saídas novas em evidencias/m01-18-r02; usar pastas diferentes para suítes que gravam resultado.json. Teste de derrota de encontros fixa RNG0,5 no turno controlado, evitando confundir erro/esquiva aleatórios com falha do game over; não muda valores jogáveis.
