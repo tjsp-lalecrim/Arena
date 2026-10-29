@@ -1,0 +1,941 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "Real title/battle-lab selection, four native Scene_Battle victories and return to E05 selection; no drops required",
+    "All four exact S06 attribute vectors, same six allocated points, dagger, full110/60/100 and original goblin30",
+    "S02 raw formulas; native attack/guard/light/heavy/heal/fire, single vigor/mana charges; normal variance and HIT preserved",
+    "Save/index/serialization guards; zero storage/backup writes and unchanged synthetic normal save, index and generic key",
+    "Repeated scenario recomposes attributes/resources without cumulative growth",
+    "Exit and normal load restore native formula/save, preserving the synthetic pre-lab party",
+    "Normal saving works after exit; a new character has no experimental stats or progression"
+  ],
+  "scenarios": [
+    {
+      "id": "light",
+      "initial": {
+        "snapshot": {
+          "id": "light",
+          "name": "Leve",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            11,
+            11,
+            5,
+            12,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 110,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 60,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 100,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 3773566151,
+          "actions": []
+        },
+        "identity": {
+          "actorId": 1,
+          "raceId": "breton",
+          "genderId": "female",
+          "baseVisualId": "breton.female.base",
+          "name": "E05 · Leve"
+        },
+        "weapon": 1,
+        "enemy": [
+          {
+            "id": 2,
+            "hp": 30,
+            "params": [
+              30,
+              0,
+              7,
+              3,
+              1,
+              3,
+              10,
+              5
+            ]
+          }
+        ],
+        "skills": [
+          5,
+          6,
+          9,
+          10
+        ]
+      },
+      "formulas": [
+        {
+          "id": 1,
+          "raw": 10.90909090909091,
+          "available": true
+        },
+        {
+          "id": 5,
+          "raw": 13.636363636363637,
+          "available": true
+        },
+        {
+          "id": 6,
+          "raw": 18.731707317073173,
+          "available": true
+        },
+        {
+          "id": 10,
+          "raw": 24,
+          "available": true
+        }
+      ],
+      "sequence": [
+        [
+          "guard",
+          2
+        ],
+        [
+          "skill",
+          9
+        ],
+        [
+          "skill",
+          5
+        ],
+        [
+          "skill",
+          6
+        ]
+      ],
+      "result": {
+        "session": {
+          "id": "light",
+          "name": "Leve",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            11,
+            11,
+            5,
+            12,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 104,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 52,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 83,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 3116926397,
+          "actions": [
+            {
+              "skill": 2,
+              "actor": true,
+              "damage": 0,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 1,
+              "actor": false,
+              "damage": 1,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 9,
+              "actor": true,
+              "damage": -36,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 1,
+              "actor": false,
+              "damage": 3,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 5,
+              "actor": true,
+              "damage": 14,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 1,
+              "actor": false,
+              "damage": 3,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 6,
+              "actor": true,
+              "damage": 20,
+              "missed": false,
+              "evaded": false
+            }
+          ]
+        },
+        "writes": 0,
+        "storeUnchanged": true,
+        "randomClean": true,
+        "gold": 0,
+        "level": 3
+      }
+    },
+    {
+      "id": "heavy",
+      "initial": {
+        "snapshot": {
+          "id": "heavy",
+          "name": "Pesado",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            13,
+            11,
+            5,
+            10,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 110,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 60,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 100,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 3773566151,
+          "actions": []
+        },
+        "identity": {
+          "actorId": 1,
+          "raceId": "breton",
+          "genderId": "female",
+          "baseVisualId": "breton.female.base",
+          "name": "E05 · Pesado"
+        },
+        "weapon": 1,
+        "enemy": [
+          {
+            "id": 2,
+            "hp": 30,
+            "params": [
+              30,
+              0,
+              7,
+              3,
+              1,
+              3,
+              10,
+              5
+            ]
+          }
+        ],
+        "skills": [
+          5,
+          6,
+          9,
+          10
+        ]
+      },
+      "formulas": [
+        {
+          "id": 1,
+          "raw": 10.90909090909091,
+          "available": true
+        },
+        {
+          "id": 5,
+          "raw": 13.636363636363637,
+          "available": true
+        },
+        {
+          "id": 6,
+          "raw": 18.731707317073173,
+          "available": true
+        },
+        {
+          "id": 10,
+          "raw": 24,
+          "available": true
+        }
+      ],
+      "sequence": [
+        [
+          "attack",
+          1
+        ],
+        [
+          "skill",
+          6
+        ]
+      ],
+      "result": {
+        "session": {
+          "id": "heavy",
+          "name": "Pesado",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            13,
+            11,
+            5,
+            10,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 107,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 60,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 88,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 1670739429,
+          "actions": [
+            {
+              "skill": 1,
+              "actor": true,
+              "damage": 10,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 1,
+              "actor": false,
+              "damage": 3,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 1,
+              "actor": false,
+              "damage": 0,
+              "missed": true,
+              "evaded": false
+            },
+            {
+              "skill": 6,
+              "actor": true,
+              "damage": 20,
+              "missed": false,
+              "evaded": false
+            }
+          ]
+        },
+        "writes": 0,
+        "storeUnchanged": true,
+        "randomClean": true,
+        "gold": 0,
+        "level": 3
+      }
+    },
+    {
+      "id": "magic",
+      "initial": {
+        "snapshot": {
+          "id": "magic",
+          "name": "Vestimenta mágica",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            9,
+            15,
+            5,
+            10,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 110,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 60,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 100,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 3773566151,
+          "actions": []
+        },
+        "identity": {
+          "actorId": 1,
+          "raceId": "breton",
+          "genderId": "female",
+          "baseVisualId": "breton.female.base",
+          "name": "E05 · Vestimenta mágica"
+        },
+        "weapon": 1,
+        "enemy": [
+          {
+            "id": 2,
+            "hp": 30,
+            "params": [
+              30,
+              0,
+              7,
+              3,
+              1,
+              3,
+              10,
+              5
+            ]
+          }
+        ],
+        "skills": [
+          5,
+          6,
+          9,
+          10
+        ]
+      },
+      "formulas": [
+        {
+          "id": 1,
+          "raw": 10.90909090909091,
+          "available": true
+        },
+        {
+          "id": 5,
+          "raw": 13.636363636363637,
+          "available": true
+        },
+        {
+          "id": 6,
+          "raw": 18.731707317073173,
+          "available": true
+        },
+        {
+          "id": 10,
+          "raw": 32.72727272727273,
+          "available": true
+        }
+      ],
+      "sequence": [
+        [
+          "skill",
+          10
+        ]
+      ],
+      "result": {
+        "session": {
+          "id": "magic",
+          "name": "Vestimenta mágica",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            9,
+            15,
+            5,
+            10,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 110,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 54,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 100,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 1590035791,
+          "actions": [
+            {
+              "skill": 10,
+              "actor": true,
+              "damage": 31,
+              "missed": false,
+              "evaded": false
+            }
+          ]
+        },
+        "writes": 0,
+        "storeUnchanged": true,
+        "randomClean": true,
+        "gold": 0,
+        "level": 3
+      }
+    },
+    {
+      "id": "hybrid",
+      "initial": {
+        "snapshot": {
+          "id": "hybrid",
+          "name": "Híbrido",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            10,
+            13,
+            5,
+            11,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 110,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 60,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 100,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 3773566151,
+          "actions": []
+        },
+        "identity": {
+          "actorId": 1,
+          "raceId": "breton",
+          "genderId": "female",
+          "baseVisualId": "breton.female.base",
+          "name": "E05 · Híbrido"
+        },
+        "weapon": 1,
+        "enemy": [
+          {
+            "id": 2,
+            "hp": 30,
+            "params": [
+              30,
+              0,
+              7,
+              3,
+              1,
+              3,
+              10,
+              5
+            ]
+          }
+        ],
+        "skills": [
+          5,
+          6,
+          9,
+          10
+        ]
+      },
+      "formulas": [
+        {
+          "id": 1,
+          "raw": 10.90909090909091,
+          "available": true
+        },
+        {
+          "id": 5,
+          "raw": 13.636363636363637,
+          "available": true
+        },
+        {
+          "id": 6,
+          "raw": 18.731707317073173,
+          "available": true
+        },
+        {
+          "id": 10,
+          "raw": 28.363636363636363,
+          "available": true
+        }
+      ],
+      "sequence": [
+        [
+          "skill",
+          5
+        ],
+        [
+          "skill",
+          10
+        ]
+      ],
+      "result": {
+        "session": {
+          "id": "hybrid",
+          "name": "Híbrido",
+          "level": 3,
+          "earned": 6,
+          "spent": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          "attrs": [
+            15,
+            10,
+            13,
+            5,
+            11,
+            10
+          ],
+          "resources": {
+            "hp": {
+              "current": 107,
+              "maximum": 110,
+              "base": 100,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "mp": {
+              "current": 54,
+              "maximum": 60,
+              "base": 50,
+              "growth": 10,
+              "modifiers": 0
+            },
+            "vigor": {
+              "current": 95,
+              "maximum": 100,
+              "base": 100,
+              "growth": 0,
+              "initialBonus": 0,
+              "modifiers": 0
+            },
+            "level": 3,
+            "baselineLevel": 1,
+            "choices": {
+              "2": {
+                "resourceId": "hp",
+                "amount": 10
+              },
+              "3": {
+                "resourceId": "mp",
+                "amount": 10
+              }
+            },
+            "pending": []
+          },
+          "seed": 19720,
+          "rollState": 1670739429,
+          "actions": [
+            {
+              "skill": 5,
+              "actor": true,
+              "damage": 13,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 1,
+              "actor": false,
+              "damage": 3,
+              "missed": false,
+              "evaded": false
+            },
+            {
+              "skill": 1,
+              "actor": false,
+              "damage": 0,
+              "missed": true,
+              "evaded": false
+            },
+            {
+              "skill": 10,
+              "actor": true,
+              "damage": 29,
+              "missed": false,
+              "evaded": false
+            }
+          ]
+        },
+        "writes": 0,
+        "storeUnchanged": true,
+        "randomClean": true,
+        "gold": 0,
+        "level": 3
+      }
+    }
+  ],
+  "normal": {
+    "active": false,
+    "hp": 77,
+    "name": "Controle sintético",
+    "saveEnabled": true,
+    "raw": 17,
+    "expected": 17,
+    "serializable": true,
+    "storeUnchanged": true
+  },
+  "errors": [],
+  "missing": [],
+  "editor": "not executed",
+  "phone": "not executed",
+  "scope": "E05 only; no balance approval"
+}

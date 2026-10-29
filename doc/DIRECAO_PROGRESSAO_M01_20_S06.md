@@ -2,6 +2,8 @@
 
 29/10/2026, base **528ba4f**. Complementa [S02](ESTUDO_DANO_PROGRESSAO_M01_20_S02.md)–[S05](ESTUDO_CONJUNTO_EQUIPAMENTOS_M01_20_S05.md), sem reiniciar o diagnóstico. **Somente estudo:** nenhum parâmetro, equipamento, slot, penalidade ou experimento aprovado por este documento. Jogo/Pages/saves intactos.
 
+**Atualização posterior:** o responsável autorizou fórmula proporcional,3 pontos/+1 e quatro conjuntos **somente no laboratório E05**, implementado em [PILOTO_E05_M01_20.md](PILOTO_E05_M01_20.md). As expressões de não autorização abaixo descrevem o estado do estudo antes desse pedido. Nenhuma aprovação para a campanha, catálogo definitivo ou expansão; agrupamentos e balanceamento continuam propostas.
+
 ## Direção e modelo candidato
 
 **Requisitos preservados:** escolha de Vida/Mana/Vigor por nível; pontos distribuíveis em ATQ/DEF/MAT/MDF/AGI/SOR, sem curva automática duplicada; equipamento livre, sem profissões ou restrições raciais. Refinar ao longo dos marcos: M01 testa a faixa inicial, não valida até nível99. Skyrim é referência complementar de liberdade, fortalecimento e relevância dos equipamentos **solicitada pelo responsável**, não origem dos coeficientes. Não importar evolução por uso, perks, escalonamento ou fórmulas em tempo real. Regras dos recursos/fontes já consultadas em [M01-08](RECURSOS_E_PROGRESSAO_M01_08.md); revisão por marco centralizada em [HABILIDADES_E_PROGRESSAO.md](HABILIDADES_E_PROGRESSAO.md#revisão-de-progressão-por-marco).
