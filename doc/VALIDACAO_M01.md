@@ -1,3 +1,9 @@
+## Infraestrutura publicada e validação Linux — 29/10/2026
+
+Infraestrutura **f62e026256ad82533412c2970fa539a519f924e0** em main, sem promoção do jogo; SHA selecionado **9fab698f89f54f8bdf1dae38ad1db6e6f09f6f56**. [Run40884380819](https://github.com/tjsp-lalecrim/Arena/actions/runs/40884380819) manual na main, publish=false: build success no Ubuntu24.04/Node24, deploy skipped. Empacotamento duplo idêntico, guarda Linux, manifesto/namespace e conteúdo do artefato conferidos. ZIP33.534.667 bytes,317 arquivos + manifesto, conteúdo37.819.050 bytes, sem arquivos de desenvolvimento/saves/referências. Download/digest e SHA-256/tamanho de todos os arquivos aprovados. Em relação ao pacote Windows: mesmos caminhos,246 hashes idênticos e71 diferenças textuais apenas CRLF→LF. [Resultado](evidencias/m01-19-pages-linux/resultado.json), [procedimento atualizado](PUBLICACAO_TESTE_PAGES_M01_19.md).
+
+Somente infraestrutura: nenhum gameplay repetido/alterado, configuração Pages modificada, deploy/release ou teste público/físico. Features publicadas: m01-19-isolamento-saves e pages-infra; main avançou somente pelos cinco arquivos de infraestrutura. Desenvolvimentos M01-18/19 não integrados em develop/main por associação. Próximo passo depende de avaliação e autorização para habilitar Pages e publicar. Pendências Linux/remoto nos registros de preparação abaixo são históricas após este resultado.
+
 ## Pacote local — confirmação do responsável e preparação Pages (29/10/2026)
 
 O responsável confirmou **Chrome: abrir o pacote local, salvar, fechar o navegador, reabrir e carregar com estado preservado**. Associado ao pacote então disponível **m01-19-web-r01/runtime9fab698**, servido em8771/Arena/, não a hash explicitamente informado pelo responsável. Não atribuir esse relato a Pages, smartphone, isolamento entre jogos ou escrita concorrente. Complementa, sem reescrever, o relato anterior de8765.

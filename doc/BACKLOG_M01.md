@@ -1,3 +1,7 @@
+## M01-19 — infraestrutura GitHub validada, sem deploy (29/10/2026)
+
+Exceção autorizada executada: feature atual publicada; branch pages-infra/main recebem apenas infraestrutura **f62e026**, mantendo runtime estável e develop intactos. Workflow manual main com jogo **9fab698**/publish=false passou no Linux; deploy skipped. Artefato inspecionado,317 arquivos + manifesto, sem saves/referências/ferramentas. [Execução/evidência](VALIDACAO_M01.md#infraestrutura-publicada-e-validação-linux--29102026) e [procedimento](PUBLICACAO_TESTE_PAGES_M01_19.md). Não habilitado/configurado Pages nem publicado site/release. Aguardar avaliação antes do primeiro deploy; teste público, percurso integrado restante e Galaxy A56 final permanecem pendentes. Não fecha M01-19. Registros de preparação abaixo preservam seus estados históricos.
+
 ## M01-19 — preparação da publicação manual de teste (29/10/2026)
 
 Responsável confirmou save/fechamento/reabertura/load no pacote local disponível R01/runtime9fab698; escopo em VALIDACAO_M01.md. Workflow manual com SHA imutável, modo somente preparação por padrão, validação Linux obrigatória antes de deploy e artefato limitado ao pacote. [Procedimento e decisões pendentes](PUBLICACAO_TESTE_PAGES_M01_19.md). Sem merge/push/configuração remota/deploy/release; main/develop preservadas. M01-19 permanece aberto: execução real do workflow/Linux, teste do endereço público, percurso integrado restante e Galaxy A56 físico final não foram presumidos. Estados anteriores abaixo mantêm o contexto histórico.

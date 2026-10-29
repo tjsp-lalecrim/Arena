@@ -1,6 +1,18 @@
 # Prévia manual no Pages — preparação (29/10/2026)
 
-**Estado: somente preparada, não publicada.** Não é release final do M01; M01-19 continua aberto, incluindo o percurso integrado restante e Galaxy A56 físico ao final do marco. Gameplay, arte, mapas, namespace e servidores pessoais não foram alterados.
+**Estado vigente: infraestrutura disponibilizada e validada no GitHub/Linux; site não publicado.** Não é release final do M01; M01-19 continua aberto, incluindo o percurso integrado restante e Galaxy A56 físico ao final do marco. Gameplay, arte, mapas, namespace e servidores pessoais não foram alterados.
+
+## Execução autorizada — 29/10/2026
+
+Feature/m01-19-isolamento-saves publicada com os ancestrais necessários. Branch **feature/pages-infra**, baseada em main/cfd31d3, recebeu somente cinco arquivos: workflow, build, allowlist, validador e doc/PAGES_INFRA.md. Diff revisado antes da integração; commit **f62e026256ad82533412c2970fa539a519f924e0** publicado na branch e integrado/publicado em main por fast-forward. Nenhum dado/plugin/asset do jogo foi levado a main, nenhuma release/PR criada, nenhum force push. Develop permanece a9d8cc0. Checkout temporário separado preservou o projeto/sessão pessoal.
+
+[Execução40884380819](https://github.com/tjsp-lalecrim/Arena/actions/runs/40884380819), pela **main**, `source_sha=9fab698f89f54f8bdf1dae38ad1db6e6f09f6f56`, **publish=false**: build **success**, deploy **skipped**. Ubuntu24.04/Node24: checkout exato, duas construções idênticas, validação Linux e upload somente da raiz do pacote passaram. Não foi necessário corrigir infraestrutura. Aviso não bloqueante: ações que declaram Node20 foram executadas pelo GitHub em Node24; conclusão bem-sucedida.
+
+[Artefato github-pages/12902211445](https://github.com/tjsp-lalecrim/Arena/actions/runs/40884380819/artifacts/12902211445): ZIP **33.534.667 bytes**; conteúdo descompactado **37.819.050 bytes**,317 arquivos de runtime + manifesto. ZIP baixado e digest conferido contra metadados GitHub; inventário exato e cada tamanho/SHA-256 conferidos, sem saves/fontes/referências/ferramentas/symlinks. Namespace **arena:m01:save-v1**. Manifesto SHA-256 `acce0fed9bac1c17f81623525b94d856817de6a37ebfe504f366c4df74cddbce`. Mesmos317 caminhos do pacote Windows aprovado:246 arquivos idênticos byte a byte e71 arquivos textuais diferem somente por CRLF→LF; sem alteração artística ou de gameplay. [Evidência permanente resumida](evidencias/m01-19-pages-linux/resultado.json); ZIP/manifesto de consulta permanecem em tmp/ ignorado. Artefato remoto expira em05/11/2026; o workflow pode reconstruí-lo pelo mesmo SHA.
+
+**Antes do deploy:** aguardar avaliação/autorização do responsável; só então habilitar Pages com Source=GitHub Actions (não feito aqui) e executar manualmente com publish=true para o SHA aprovado. Conferir manifesto hospedado e repetir save/load no endereço público; saves localhost não se transferem. Configurações Pages/domínio/ambiente não foram alteradas nesta tarefa. Não limpar dados do navegador. Nenhum teste público ou físico foi inferido desta validação de infraestrutura.
+
+**Histórico:** as seções de preparação abaixo registram o estado anterior ao commit5aeaa4a e a sequência então proposta. As pendências de publicação da feature, disponibilização da infraestrutura e execução Linux ali citadas foram atendidas pelo registro acima; habilitação do Pages/deploy/teste público continuam futuros.
 
 ## Situação do Git e dependências
 
