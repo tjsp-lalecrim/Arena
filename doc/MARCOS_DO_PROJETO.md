@@ -31,6 +31,25 @@ No M02, permitir a continuação além do encerramento da demo de M01, preservan
 
 Os sistemas comuns são construídos gradualmente nas features necessárias a esses marcos. Não é obrigatório adaptar todo o catálogo do jogo para terminar M01, nem criar versões duplicadas de plugins para cada quest.
 
+## Avaliação recorrente de balanceamento
+
+Ao final de **cada marco**, executar um item explícito de **avaliação e ajuste de balanceamento**, com referência fixa, registro manual curto e aceite/ressalvas identificados. Procedimento e campos obrigatórios em [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md); não duplicar critérios em cada backlog. Ajustes concretos dependem da autorização da respectiva rodada. Não exige testes de todas as combinações nem inicia os marcos futuros agora.
+
+| Item de fechamento | Marco |
+| --- | --- |
+| **M01-20** (existente, sem novo item) | M01 — Demo inicial |
+| M02-BAL | M02 — Fang Lair |
+| M03-BAL | M03 — Labyrinthian |
+| M04-BAL | M04 — Elden Grove |
+| M05-BAL | M05 — Halls of Colossus |
+| M06-BAL | M06 — Crystal Tower |
+| M07-BAL | M07 — Crypt of Hearts |
+| M08-BAL | M08 — Murkwood |
+| M09-BAL | M09 — Dagoth-Ur |
+| M10-BAL | M10 — The Imperial Palace |
+
+Incorporar os identificadores subordinados ao detalhar os futuros backlogs; não renumerar quests ou marcos. O fechamento considera resultados do percurso, eventuais ajustes avaliados e ressalvas aceitas, sem certificar toda a campanha com os números do M01.
+
 ## Critérios comuns de conclusão
 
 - Quest jogável de ponta a ponta, incluindo acesso aos locais e aos eventos necessários.
@@ -38,6 +57,7 @@ Os sistemas comuns são construídos gradualmente nas features necessárias a es
 - Assets necessários integrados e consistentes com DIRECAO_DE_ARTE.md; ausência de recursos faltantes no fluxo validado.
 - Diário e objetivos atualizados, com itens importantes protegidos e verificações redundantes nas transições.
 - Combates, loot e respawn respeitam as regras aprovadas; recompensas e itens únicos não são duplicados indevidamente.
+- Item recorrente de balanceamento avaliado, com resultados e decisões/ressalvas registrados conforme o processo acima.
 - Salvar/carregar preserva o progresso e o estado relevante do marco.
 - Validação do fluxo em navegador e teste mobile inicial no Samsung Galaxy A56, registrando ambiente e limitações.
 - Conteúdo dos marcos anteriores continua acessível ou encerrado conforme a narrativa, sem regressões conhecidas que impeçam a campanha.

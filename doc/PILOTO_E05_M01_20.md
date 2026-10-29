@@ -2,6 +2,8 @@
 
 Implementação autorizada **exclusivamente experimental**, a partir de S06/52fbef9. Não aprova fórmula, pontos ou equipamentos para a campanha. Não encerra M01-20. Fonte dos números: [S06](DIRECAO_PROGRESSAO_M01_20_S06.md), sem revisão dos estudos ou ampliação para outros personagens/inimigos/níveis.
 
+**Retorno posterior do responsável:** testou opções e considera insuficiente avaliar balanceamento por poucas lutas isoladas. “Adaga, espada e híbrido” não identifica quatro cenários E05: todos usam adaga; os testes antigos de arma incluem espada em outro encontro. Cobertura/associação de versão e limites registrados em [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md#referência-e-cobertura-conhecida), sem pedir repetição agora. Nova direção: avaliação de percurso por marco, sem aprovação definitiva deste modelo ou transferência à campanha.
+
 ## Acesso pelo editor e comparação
 
 Abrir o projeto no MV1.6.1 → **Playtest** → **Combate técnico (piloto)** → **E05 — comparar conjuntos**. Escolher, nesta ordem sugerida:

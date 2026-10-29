@@ -4,7 +4,9 @@
 
 Em cada marco, registrar um quadro curto: níveis e equipamentos esperados; fortalecimento frente ao anterior (inclusive contra inimigos antigos); utilidade de construções físicas/mágicas/híbridas; contribuição efetiva dos seis atributos e raças; desafio e disponibilidade de poções/descanso. M01 valida somente a faixa inicial, sem extrapolar o equilíbrio para toda a campanha. Preservar escolha de recursos, pontos distribuíveis e liberdade de equipamento. Skyrim orienta complementarmente liberdade/fortalecimento, sem importar evolução por uso, perks ou escalonamento.
 
-Separar requisito de parâmetro experimental. Valores, fórmula e agrupamentos continuam sujeitos a aprovação; consolidação e único piloto candidato em [S06](DIRECAO_PROGRESSAO_M01_20_S06.md). Não anular ganhos por escalonamento automático. Antes de aplicar mudança futura, definir compatibilidade/migração, preservar alocações, equipamentos e recursos gastos, sem concessões duplicadas nem troca do namespace web por ajuste de balanceamento. Nenhum save é alterado por esta diretriz.
+**Avaliação e ajuste ao final de cada marco é diretriz aprovada**, não apenas estudo: M01-20 e M02-BAL–M10-BAL. Processo/registro manual de percurso em [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md); não exigir matriz completa de combinações. O teste parcial de E05 não aprova parâmetros para campanha.
+
+Separar requisito de parâmetro experimental. Valores, fórmula e agrupamentos continuam sujeitos a aprovação para campanha; [E05](PILOTO_E05_M01_20.md) foi autorizado/implementado somente no laboratório. Não anular ganhos por escalonamento automático. Antes de aplicar mudança futura, definir compatibilidade/migração, preservar alocações, equipamentos e recursos gastos, sem concessões duplicadas nem troca do namespace web por ajuste de balanceamento. Nenhum save é alterado por esta diretriz.
 
 ## Requisito solicitado — distribuição de atributos (M01-20/S03)
 
