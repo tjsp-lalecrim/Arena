@@ -2,6 +2,8 @@
 
 Revisa **somente a escala** de [S03](ESTUDO_ATRIBUTOS_M01_20_S03.md). Um ponto não foi aprovado e passa a ser referência, não orçamento recomendado. Não executar E03. Distribuição nos seis atributos continua requisito; todos os números abaixo são candidatos. Sem pesquisa, batalha, fórmula nova, custo crescente ou mudança de jogo/recursos/saves/Pages.
 
+**Complemento vigente [S05](ESTUDO_CONJUNTO_EQUIPAMENTOS_M01_20_S05.md):** inclui os cinco espaços equipados. Mantém espada+5 apenas como candidato condicional e recomenda rever Corpo+8 para+5 dentro de um orçamento total de conjunto, sem aplicar nada. O par5/8 e E04 abaixo permanecem como proposta anterior; E04 está suspenso até avaliação do conjunto completo. Três pontos/+1 e fórmula continuam não aprovados.
+
 ## Premissas e escolhas por nível
 
 Reutilizada a aritmética de S03: proporcional de S02, **não aprovada**, K8/piso0,20, pesada1,6 com25% penetração, Dardo3; acertos sem variância/crítico/guarda. Bretã feminina, base com adaga+couro ATQ12/DEF8/MAT8/MDF5/AGI10/SOR10; não é kit inicial concedido. Rato18 Vida/ATQ5/DEF2/MDF2/AGI9 e goblin30/7/3/3/10 permanecem inalterados. Dardo aprendido é premissa, não concessão. Escolhas de recursos preservadas e iguais: nível3=110/60/100, nível5=120/60/110; não há cura ao subir ou crescimento automático dos seis atributos.
