@@ -1,3 +1,9 @@
+## Loot e descanso — integração autorizada após teste (29/10/2026)
+
+Confirmação restrita do responsável em cc29df0: descanso nas plataformas testadas e quantidades de ouro variando. Incluídos fallback 2–8, retirada das quatro variantes dos novos pools com legados preservados e 40 pontos de descanso com plataforma da chave excluída. [Histórico/escopo](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Registros abaixo de candidata/adiamento são históricos; balanceamento continua provisório.
+
+**M01-20 continua aberto:** distribuição de atributos na campanha ainda não implementada, fórmula definitiva não decidida, avaliação/ajustes por percurso e marco e checklist/pacote final ainda não fechados. Próximo recorte recomendado: decisão dos parâmetros mínimos da distribuição para atender esse requisito antes da implementação; usar S02–S06 existentes, sem reiniciar estudos, aplicar E05 ou iniciar implementação agora. Paisagem/fullscreen exigem atendimento ou revisão explícita do critério antes do fechamento integral de M01-19; aprovação com ressalvas permite continuidade, sem declarar atendimento. Melhorias REF13–REF16 e demais ressalvas futuras não viram bloqueios/implementações por associação. Sem nova funcionalidade, main/Pages ou release.
+
 ## Candidata de teste — loot e descanso (29/10/2026)
 
 Integration/m01-loot-descanso reúne ce1a608/e234044 e b8143f5 sobre develop5659763, sem promover develop/main. Ver [composição, testes e roteiro](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Aprovação manual do ouro variável e da expansão de descanso pendente; M01-20/M01 não concluídos. Registros anteriores das features separadas são históricos para esta candidata.

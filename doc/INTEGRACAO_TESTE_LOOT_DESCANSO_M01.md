@@ -1,3 +1,9 @@
+## Confirmação do responsável e autorização de integração — 29/10/2026
+
+Responsável confirmou na candidata apresentada **cc29df0d89477f7c1b1556e91da2e272915f6496**: descanso funcionando nas plataformas testadas e quantidades de ouro variando. Associação à referência apresentada, sem SHA próprio ou ambiente/dispositivo discriminado no relato. Não inferir todas as plataformas, extremos 2/8, migração, persistência, reservas ou outras verificações manuais; esses casos mantêm somente as evidências técnicas já identificadas abaixo. Não significa aprovação definitiva de balanceamento. Nenhuma alteração funcional após a referência avaliada.
+
+Autorizada a integração em develop e publicação das branches dependentes, preservando histórico. Main/Pages/release não fazem parte desta operação. Registros de candidata pendente e adiamento anteriores são históricos diante desta confirmação, mantendo seus limites de cobertura.
+
 # Candidata local — loot e descanso
 
 29/10/2026. Branch **integration/m01-loot-descanso**, criada de develop **56597639a65fc8455aff95bffefd62d7bb3b7c1a**. Não promovida a develop/main; sem push, deploy ou release. Aprovação manual pendente.

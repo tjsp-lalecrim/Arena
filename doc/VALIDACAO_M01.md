@@ -1,3 +1,7 @@
+## Confirmação manual — candidata loot/descanso, 29/10/2026
+
+Responsável confirmou descanso nas plataformas testadas e ouro variando, na referência apresentada cc29df0. Ambiente e posições não discriminados; sem inferir testes adicionais de extremos, migração ou persistência, nem todas as plataformas ou aprovação definitiva de balanceamento. [Registro e evidências técnicas preservadas](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Autorizada integração/publicação em develop; sem mudança funcional posterior não avaliada.
+
 ## Candidata integrada de loot/descanso — 29/10/2026
 
 Merges locais 7fca688 e dbb014e, apenas conflitos documentais resolvidos preservando relatos. Seis grupos de fallback, quatro de legados e quatro de integração, além do guard de fontes/24 sorteios, passaram em Chrome isolado; geradores duas vezes preservam os dados reunidos. [Escopo/evidências/limites e localhost](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Piloto e relatos anteriores mantêm seus escopos; nenhuma aprovação manual antecipada, nova campanha completa, editor ou aparelho físico nesta entrega.
