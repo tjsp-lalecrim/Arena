@@ -1,5 +1,17 @@
 # Habilidades e progressão
 
+## Revisão de progressão por marco
+
+Em cada marco, registrar um quadro curto: níveis e equipamentos esperados; fortalecimento frente ao anterior (inclusive contra inimigos antigos); utilidade de construções físicas/mágicas/híbridas; contribuição efetiva dos seis atributos e raças; desafio e disponibilidade de poções/descanso. M01 valida somente a faixa inicial, sem extrapolar o equilíbrio para toda a campanha. Preservar escolha de recursos, pontos distribuíveis e liberdade de equipamento. Skyrim orienta complementarmente liberdade/fortalecimento, sem importar evolução por uso, perks ou escalonamento.
+
+**Avaliação e ajuste ao final de cada marco é diretriz aprovada**, não apenas estudo: M01-20 e M02-BAL–M10-BAL. Processo/registro manual de percurso em [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md); não exigir matriz completa de combinações. O teste parcial de E05 não aprova parâmetros para campanha.
+
+Separar requisito de parâmetro experimental. Valores, fórmula e agrupamentos continuam sujeitos a aprovação para campanha; [E05](PILOTO_E05_M01_20.md) foi autorizado/implementado somente no laboratório. Não anular ganhos por escalonamento automático. Antes de aplicar mudança futura, definir compatibilidade/migração, preservar alocações, equipamentos e recursos gastos, sem concessões duplicadas nem troca do namespace web por ajuste de balanceamento. Nenhum save é alterado por esta diretriz.
+
+## Requisito solicitado — distribuição de atributos (M01-20/S03)
+
+Ao subir de nível, conceder pontos distribuíveis em **ATQ/DEF/MAT/MDF/AGI/SOR**, adicionais à escolha aprovada de Vida/Mana/Vigor. **Solicitado, ainda não implementado**: [S04](ESTUDO_ESCALA_PROGRESSAO_M01_20_S04.md) compara1/2/3 pontos (+1 cada), recomenda3 para piloto, sem aprovação;1 é apenas referência. Saldo/retroatividade/redistribuição continuam propostas de S03. Não criar curva automática duplicada, classes jogáveis ou restrições raciais de equipamento. Recursos preservados; interface posterior.
+
 ## Diretrizes confirmadas
 
 Estado operacional M01-09 R01: implementados desarmado3/4, adaga5/6 e espada7/8 por equipamento, custos5/12 Vigor pelo consumidor M01-08, magias Cura9/Dardo10 com Mana8/6 e livros5/6 transacionais. Revalidação no início de ações nativas e atalhos técnicos incompatíveis invalidados, sem barra nova. Guild, fontes de loot e apresentação de batalha continuam futuras. Escopo/roteiro em HABILIDADES_M01_09.md; valores provisórios, P01–P08 e arte preservados.

@@ -1,0 +1,41 @@
+{
+  "run_id": 40884380819,
+  "run_url": "https://github.com/tjsp-lalecrim/Arena/actions/runs/40884380819",
+  "infraCommit": "f62e026256ad82533412c2970fa539a519f924e0",
+  "sourceCommit": "9fab698f89f54f8bdf1dae38ad1db6e6f09f6f56",
+  "testVersion": "m01-19-web-r01",
+  "namespace": "arena:m01:save-v1",
+  "platform": "linux",
+  "build": "success",
+  "deploy": "skipped",
+  "publish": false,
+  "artifact_id": 12902211445,
+  "artifact_name": "github-pages",
+  "artifact_size_bytes": 33534667,
+  "artifact_sha256": "66ab9a84890d368012f0b5bc780e9abcc3186938a8fb2b572bfdadec51c73c76",
+  "runtime_files": 317,
+  "files_including_manifest": 318,
+  "runtime_and_manifest_bytes": 37819050,
+  "manifest_sha256": "acce0fed9bac1c17f81623525b94d856817de6a37ebfe504f366c4df74cddbce",
+  "checks": [
+    "downloaded ZIP digest matches GitHub metadata",
+    "artifact.tar contains exact runtime inventory and manifest",
+    "all 317 runtime file sizes/SHA-256 match manifest",
+    "no saves/references/tools/symlinks or special files",
+    "source SHA and namespace match approved package"
+  ],
+  "expires_at": "2026-11-05T13:42:44Z",
+  "comparisonWithApprovedWindowsPackage": {
+    "sameByteHashes": 246,
+    "textFilesDifferOnlyCRLFtoLF": 71,
+    "allPathsIdentical": true
+  },
+  "branchPublications": [
+    "feature/m01-19-isolamento-saves",
+    "feature/pages-infra",
+    "main"
+  ],
+  "pagesSettingsChanged": false,
+  "gameplayChanged": false,
+  "warning": "GitHub warned that some actions target Node20 and were forced to Node24; build succeeded. No infrastructure correction needed."
+}

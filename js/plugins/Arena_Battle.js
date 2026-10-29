@@ -164,6 +164,7 @@ var ArenaBattle;
     Profiles.prototype.windowWidth=function(){return 640;};
     Profiles.prototype.numVisibleRows=function(){return 10;};
     Profiles.prototype.makeCommandList=function(){
+        if(window.ArenaBalanceLab)this.addCommand('E05 — comparar conjuntos','balanceE05');
         this.addCommand('Teste da arma: Bretã / espada','weaponPilot');
         this.addCommand('Teste da arma: Bretã / adaga','daggerPilot');
         $arenaCharacterCatalog.races.forEach(function(r){$arenaCharacterCatalog.genders.forEach(function(g){this.addCommand(r.name+' · '+g.name,'profile',!!$arenaBattle.actors[r.visuals[g.id]],{race:r.id,gender:g.id});},this);},this);
@@ -171,6 +172,8 @@ var ArenaBattle;
     function Selection(){this.initialize.apply(this,arguments);}
     Selection.prototype=Object.create(Scene_MenuBase.prototype);Selection.prototype.constructor=Selection;
     Selection.prototype.create=function(){Scene_MenuBase.prototype.create.call(this);this._profiles=new Profiles(88,48);this._profiles.setHandler('cancel',this.popScene.bind(this));this._profiles.setHandler('weaponPilot',ArenaBattle.startWeaponPilot.bind(ArenaBattle));this._profiles.setHandler('daggerPilot',ArenaBattle.startWeaponPilot.bind(ArenaBattle,1));this._profiles.setHandler('profile',function(){var e=this._profiles.currentExt();ArenaBattle.startLab(e.race,e.gender);}.bind(this));this.addWindow(this._profiles);};
+    var createSelection=Selection.prototype.create;
+    Selection.prototype.create=function(){createSelection.apply(this,arguments);if(window.ArenaBalanceLab)this._profiles.setHandler('balanceE05',ArenaBalanceLab.open);};
     ArenaBattle.selectProfile=function(){SceneManager.push(Selection);};
     var mapLayer=Spriteset_Map.prototype.createLowerLayer;
     Spriteset_Map.prototype.createLowerLayer=function(){mapLayer.apply(this,arguments);if($gameMap.mapId()!==$arenaBattle.mapId)return;var b=new Bitmap($gameMap.width()*48,$gameMap.height()*48);b.fontSize=17;$gameMap.events().forEach(function(e){b.drawText(e.event().name,e.x*48-75,e.y*48,198,40,'center');});this._baseSprite.addChild(new Sprite(b));};

@@ -1,3 +1,34 @@
+## M01-19 funcional validado com ressalvas; M01-20 diagnóstico (29/10/2026)
+
+Prévia [Pages](https://tjsp-lalecrim.github.io/Arena/), jogo9fab698/infraestruturaf62e026. **Responsável concluiu o roteiro funcional público e autorizou avançar ao M01-20 com ressalvas de apresentação.** Não significa atendimento integral de M01-19/paisagem/fullscreen ou fechamento M01. Publicação manual preservada, sem atualização Pages nesta tarefa. Evidências/limites em [VALIDACAO_M01.md](VALIDACAO_M01.md); REF13–REF15 permanecem adiados no registro único de refinamentos.
+
+| Situação | Evidência ou pendência |
+| --- | --- |
+| Confirmado | No Chrome PC e A56 físico, criação/introdução, exploração/combate/loot, inventário/poções em e fora de combate, diário/descanso, Gate/encerramento; somados a save/fechar/reabrir/load e saves independentes. Roteiro público mínimo concluído pelo relato, sem repetir nem atribuir testes extremos não informados. |
+| M01-20 atual | Responsável experimentou opções do piloto e considera poucas lutas insuficientes para balanceamento. Cobertura “adaga, espada e híbrido” não equivale aos quatro conjuntos E05. Avaliação de percurso por marco aprovada como processo; base provisória ainda a escolher. Nenhuma aprovação de fórmula/pontos/conjuntos para campanha ou nova implementação. |
+| Requisitos adiados | Paisagem e tela cheia quando suportadas: existentes no aceite de M01-19, adiados pelo responsável, sem evidência de atendimento. REF14 também reúne avaliação da área do navegador. Adiamento não dispensa o aceite; atender ou revisar explicitamente os critérios antes de fechar o item. Menu por toque e simplificação do menu permanecem melhorias futuras em REF13/15, sem execução automática. |
+| Bloqueios reais | Nenhuma falha crítica comprovada no relato. Facilidade é observação de balanceamento a investigar em20, não justificativa para alterar todos os sistemas. Apresentação adiada não bloqueia o diagnóstico autorizado nem pode ser declarada atendida. |
+
+**M01-20 — planejamento vigente:** [avaliação de percurso](AVALIACAO_BALANCEAMENTO_POR_MARCO.md), vinculada a REF04, reutiliza M01-20 sem item duplicado. Três pontos de registro e poucos encontros representativos; manter referência e distinguir obtenção real de drops possíveis. E05 continua isolado, com evidências técnicas anteriores preservadas. Única decisão recomendada: usar campanha localbc71752, sem E05, como linha-base provisória do percurso completo? Sem nova execução, ajuste ou fechamento M01 nesta tarefa. Itens M02-BAL–M10-BAL registrados no planejamento dos marcos, sem renumeração ou início antecipado.
+
+## M01-19 — infraestrutura GitHub validada, sem deploy (29/10/2026)
+
+Exceção autorizada executada: feature atual publicada; branch pages-infra/main recebem apenas infraestrutura **f62e026**, mantendo runtime estável e develop intactos. Workflow manual main com jogo **9fab698**/publish=false passou no Linux; deploy skipped. Artefato inspecionado,317 arquivos + manifesto, sem saves/referências/ferramentas. [Execução/evidência](VALIDACAO_M01.md#infraestrutura-publicada-e-validação-linux--29102026) e [procedimento](PUBLICACAO_TESTE_PAGES_M01_19.md). Não habilitado/configurado Pages nem publicado site/release. Aguardar avaliação antes do primeiro deploy; teste público, percurso integrado restante e Galaxy A56 final permanecem pendentes. Não fecha M01-19. Registros de preparação abaixo preservam seus estados históricos.
+
+## M01-19 — preparação da publicação manual de teste (29/10/2026)
+
+Responsável confirmou save/fechamento/reabertura/load no pacote local disponível R01/runtime9fab698; escopo em VALIDACAO_M01.md. Workflow manual com SHA imutável, modo somente preparação por padrão, validação Linux obrigatória antes de deploy e artefato limitado ao pacote. [Procedimento e decisões pendentes](PUBLICACAO_TESTE_PAGES_M01_19.md). Sem merge/push/configuração remota/deploy/release; main/develop preservadas. M01-19 permanece aberto: execução real do workflow/Linux, teste do endereço público, percurso integrado restante e Galaxy A56 físico final não foram presumidos. Estados anteriores abaixo mantêm o contexto histórico.
+
+## M01-19 — pacote web local preparado (29/10/2026)
+
+Mesma feature/m01-19-isolamento-saves; relato manual Chrome8765 registrado com limites em VALIDACAO_M01.md. Preparação reproduzível por allowlist, saída ignorada dist/web/m01-19-web-r01-9fab698/Arena, execução focal em8771/Arena/ validada sem alterar gameplay/namespace ou serviço pessoal. [Procedimento, tamanho, conteúdo e evidências](PACOTE_WEB_M01_19.md). **Não fecha M01-19:** pacote aguarda avaliação, percurso integrado Chrome e testes físicos finais permanecem no roteiro. GitHub Pages/publicação são entrega posterior, sem configuração/deploy/merge/push nesta tarefa. Estados anteriores abaixo são históricos quando divergirem deste registro.
+
+## Preparação focal M01-19 — isolamento de saves web (29/10/2026)
+
+Implementado MV_WebStorageNamespace0.1.0, parâmetro `arena:m01:save-v1`; slots, índice, configuração e backups separados das chaves genéricas. Sete grupos focais passaram no Chrome156 com perfil sintético persistente, sem bateria de gameplay. [Contrato, política e roteiro manual](plugins/MV_WebStorageNamespace.md); [resultado](evidencias/m01-19-isolamento-saves/resultado.json). Não altera conteúdo/migrações de partidas nem armazenamento por arquivos do editor.
+
+Feature dependente `feature/m01-19-isolamento-saves` criada sobre67dfbe3 (implementação atual de M01-18 e refinamentos); develop permanece a9d8cc0. Sem merge/push/deploy. **Não fecha M01-19:** avaliação manual deste isolamento e percurso integrado Chrome desktop continuam pendentes; Galaxy A56 físico ao final do M01. A prioridade da rota desktop abaixo permanece válida após esta preparação autorizada. Estados exclusivamente documentais abaixo referem-se à tarefa anterior.
+
 ## Estado e prioridade operacional — 29/10/2026
 
 Conferência exclusivamente documental sobre89ebb82, feature/m01-narrativa-demo, árvore inicialmente limpa; nenhum teste, merge ou início de implementação nesta tarefa. Aplicar a prioridade de DESENVOLVIMENTO_E_VERSIONAMENTO.md. Aprovações/ressalvas têm escopo em VALIDACAO_M01.md; melhorias futuras ficam no registro único REFINAMENTOS_POS_INTEGRACAO_M01.md.
@@ -136,7 +167,7 @@ P0 indica base necessária para começar e integrar; P1 indica requisito de conc
 | M01-17 | P1 | Integrar poções e descanso nos locais elegíveis | 02, 08, 13, 14 | Poções restauram conforme dados; cama elegível restaura totalmente os três recursos; interação, custos e condições documentados a partir das fontes |
 | M01-18 | P1 | Produzir e integrar introdução e encerramento da demo | 02, 06, 07, 16 | Introdução textual/ilustrada sem vozes; Ria e diário integrados; Shift Gate encerra explicitamente a demo uma única vez, sem continuar para M02 |
 | M01-19 | P1 | Validar e corrigir experiência em navegador/mobile | 07–18 | Fluxo completo em Chrome desktop e Galaxy A56, paisagem/tela inteira quando suportada, toque utilizável e texto legível; ambiente e limitações registrados |
-| M01-20 | P1 | Balancear, testar regressões e preparar entrega M01 | 19 | Critérios de DEMO_INICIAL.md atendidos, ausência de bloqueios críticos, documentação consolidada e pacote de teste identificado; preparar release sob Git Flow conforme autorização |
+| M01-20 | P1 | Balancear, testar regressões e preparar entrega M01 | 19 | Avaliação/ajuste do percurso conforme AVALIACAO_BALANCEAMENTO_POR_MARCO.md, com versão de referência, resultados e decisões/ressalvas registrados; critérios de DEMO_INICIAL.md atendidos, ausência de bloqueios críticos, documentação consolidada e pacote identificado; preparar release sob Git Flow conforme autorização |
 
 Os bônus P01–P08 foram autorizados como balanceamento provisório no fechamento R05. M01-08 deve preservar o+10 inicial sem regrant; M01-09/10 e M01-20 devem executar BALANCEAMENTO_RACIAL_CENARIOS_M01.md: custos/turnos, armas livres, crítico/arredondamento, teto de acerto/evasão, utilidade de AGI, fontes reais de frio/magia/paralisia e vantagens excessivas. Testes de fórmula não demonstram equilíbrio integrado. Esses itens continuam futuros, sem implementação automática.
 

@@ -1,3 +1,7 @@
+## E05 no seletor existente — 29/10/2026
+
+Adicionada opção **E05 — comparar conjuntos** quando Arena_BalanceLab está carregado. Usa o laboratório/mapa técnico e os mesmos assets, sem modificar perfis/armas anteriores. O novo plugin fornece o handler, controla apenas sua sessão e impede saves experimentais; roteiro em [PILOTO_E05_M01_20.md](../PILOTO_E05_M01_20.md). Esta integração não amplia a aprovação das armas ou do balanceamento.
+
 ## Adaga no acesso existente — v0.1.2, 28/10/2026
 
 Playtest → **Combate técnico (piloto)** → **Teste da arma: Bretã / adaga** → **Combater**. Avaliar Atacar, Habilidades/Corte leve — adaga, Habilidades/Estocada pesada — adaga e Defender. Mantida a opção **Teste da arma: Bretã / espada**, sem alterar o padrão aprovado.
