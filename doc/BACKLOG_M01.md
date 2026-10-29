@@ -1,3 +1,7 @@
+## REF12 — expansão de descanso em feature separada (29/10/2026)
+
+Feature/m01-expansao-descanso criada de develop5659763, sem incorporar lootce1a608.39 pontos adicionados/40 totais, piloto preservado e plataforma da chave excluída; lista, geradores e evidências em [EXPANSAO_DESCANSO_M01.md](EXPANSAO_DESCANSO_M01.md). Auditoria de posição/acesso dos40 e três amostras de recuperação/persistência, sem campanha completa; expansão aguarda teste integrado do responsável. Geometria, colisões, quests, tesouros e respawn preservados. **Aprovação manual do ouro variável adiada para o próximo teste integrado**, sem pedido isolado ou aprovação antecipada. Sem merge/push/Pages, outra melhoria ou fechamento M01. Registros anteriores preservam as etapas anteriores.
+
 ## Integração em develop; referência provisória para percurso M01 (29/10/2026)
 
 Prévia [Pages](https://tjsp-lalecrim.github.io/Arena/), jogo9fab698/infraestruturaf62e026. **Responsável concluiu o roteiro funcional público e autorizou avançar ao M01-20 com ressalvas de apresentação.** Não significa atendimento integral de M01-19/paisagem/fullscreen ou fechamento M01. Publicação manual preservada, sem atualização Pages nesta tarefa. Evidências/limites em [VALIDACAO_M01.md](VALIDACAO_M01.md); REF13–REF15 permanecem adiados no registro único de refinamentos.

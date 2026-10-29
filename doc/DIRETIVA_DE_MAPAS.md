@@ -1,5 +1,9 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
+## Descanso: pontos explícitos, não toda elevação
+
+Repouso usa somente a lista autorizada de ArenaRecovery.json, com origem/apoio/acesso e exclusões documentados; sem inferir descanso de objetos decorativos ou gerar pontos proceduralmente. Plataformas adjacentes podem ter sprites/superfícies próprios: conferir na escala de jogo antes de agrupar interações. Preservar funções de quest, colisão e geometria; descanso não autoriza segurança absoluta ou nova regra de ameaças. Geradores recompõem os eventos configurados sem mudar IDs anteriores. Cobertura atual e exclusão da chave em [EXPANSAO_DESCANSO_M01.md](EXPANSAO_DESCANSO_M01.md).
+
 Vigente desde M01-14 R03,27/10/2026. Complementa DIRECAO_DE_ARTE.md, GERACAO_DE_CENARIOS.md, DADOS_M01.md e os contratos em plugins/Arena_Dungeon.md. A planta e direção gráfica aprovadas não aprovam automaticamente encaixes. Fonte arquitetônica principal: Arena original; não converter para isometria para acomodar um objeto.
 
 ## Regras obrigatórias: grade e projeção

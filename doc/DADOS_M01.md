@@ -1,3 +1,7 @@
+## Refúgios configurados — expansão REF12
+
+ArenaRecovery.json schema1: piloto preservado e39 pontos dungeonRefuge=true, com ID/posição/sourceCell explícitos; restExclusions documenta a plataforma da chave. Eventos242–280 gerados por build-quests e reconhecidos por build-encounters. Runtime acrescenta instâncias ausentes em saves, sem conceder recuperação no load. Nenhum novo estado/namespace de descanso; recursos/quests/loot/respawn mantêm as autoridades existentes. [Seleção e locais](EXPANSAO_DESCANSO_M01.md).
+
 ## Identificação externa do armazenamento web — M01-19
 
 Prefixo configurável `arena:m01:save-v1` para chaves de slots, índice, configuração e backups, via MV_WebStorageNamespace. É identidade externa de armazenamento, distinta dos namespaces/schemaVersion internos de MV_StateStore e da versão da build; payloads/migrações existentes não mudam. Atualização compatível mantém o prefixo. Chaves genéricas antigas não são importadas/apagadas; arquivos do editor não mudam. [Contrato e limites entre origens/perfis](plugins/MV_WebStorageNamespace.md).

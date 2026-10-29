@@ -1,0 +1,1577 @@
+{
+  "browser": "156.0.8078.73",
+  "selection": {
+    "sourceCells": 41,
+    "adjacentGroups": 17,
+    "points": 40,
+    "added": 39,
+    "groups": [
+      {
+        "cells": [
+          [
+            11,
+            2
+          ],
+          [
+            12,
+            2
+          ]
+        ],
+        "walls": 4,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.02",
+            "mapId": 8,
+            "eventId": 242,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 37,
+            "y": 10,
+            "sourceCell": [
+              11,
+              2
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.03",
+            "mapId": 8,
+            "eventId": 243,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 40,
+            "y": 10,
+            "sourceCell": [
+              12,
+              2
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            23,
+            10
+          ],
+          [
+            24,
+            10
+          ],
+          [
+            23,
+            11
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "walls": 6,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.04",
+            "mapId": 8,
+            "eventId": 244,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 73,
+            "y": 34,
+            "sourceCell": [
+              23,
+              10
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.05",
+            "mapId": 8,
+            "eventId": 245,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 76,
+            "y": 34,
+            "sourceCell": [
+              24,
+              10
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.07",
+            "mapId": 8,
+            "eventId": 247,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 73,
+            "y": 37,
+            "sourceCell": [
+              23,
+              11
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.08",
+            "mapId": 8,
+            "eventId": 248,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 76,
+            "y": 37,
+            "sourceCell": [
+              24,
+              11
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            46,
+            10
+          ],
+          [
+            46,
+            11
+          ]
+        ],
+        "walls": 4,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.06",
+            "mapId": 8,
+            "eventId": 246,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 142,
+            "y": 34,
+            "sourceCell": [
+              46,
+              10
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.09",
+            "mapId": 8,
+            "eventId": 249,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 142,
+            "y": 37,
+            "sourceCell": [
+              46,
+              11
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            44,
+            14
+          ],
+          [
+            44,
+            15
+          ],
+          [
+            44,
+            16
+          ]
+        ],
+        "walls": 5,
+        "dryEdges": 3,
+        "points": [
+          {
+            "id": "MQ01.refuge.10",
+            "mapId": 8,
+            "eventId": 250,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 136,
+            "y": 46,
+            "sourceCell": [
+              44,
+              14
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.13",
+            "mapId": 8,
+            "eventId": 253,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 136,
+            "y": 49,
+            "sourceCell": [
+              44,
+              15
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.14",
+            "mapId": 8,
+            "eventId": 254,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 136,
+            "y": 52,
+            "sourceCell": [
+              44,
+              16
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            38,
+            15
+          ],
+          [
+            39,
+            15
+          ]
+        ],
+        "walls": 4,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.11",
+            "mapId": 8,
+            "eventId": 251,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 118,
+            "y": 49,
+            "sourceCell": [
+              38,
+              15
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.12",
+            "mapId": 8,
+            "eventId": 252,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 121,
+            "y": 49,
+            "sourceCell": [
+              39,
+              15
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            46,
+            20
+          ]
+        ],
+        "walls": 2,
+        "dryEdges": 2,
+        "points": [],
+        "exclusions": [
+          {
+            "sourceCell": [
+              46,
+              20
+            ],
+            "position": [
+              142,
+              64
+            ],
+            "reason": "Plataforma da Chave de rubi: preservar pista e interação de missão, sem indicação concorrente de descanso."
+          }
+        ]
+      },
+      {
+        "cells": [
+          [
+            13,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            13,
+            24
+          ]
+        ],
+        "walls": 5,
+        "dryEdges": 3,
+        "points": [
+          {
+            "id": "MQ01.refuge.15",
+            "mapId": 8,
+            "eventId": 255,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 43,
+            "y": 70,
+            "sourceCell": [
+              13,
+              22
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.16",
+            "mapId": 8,
+            "eventId": 256,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 43,
+            "y": 73,
+            "sourceCell": [
+              13,
+              23
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.17",
+            "mapId": 8,
+            "eventId": 257,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 43,
+            "y": 76,
+            "sourceCell": [
+              13,
+              24
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            34,
+            25
+          ],
+          [
+            34,
+            26
+          ],
+          [
+            34,
+            27
+          ],
+          [
+            34,
+            28
+          ]
+        ],
+        "walls": 5,
+        "dryEdges": 5,
+        "points": [
+          {
+            "id": "MQ01.refuge.18",
+            "mapId": 8,
+            "eventId": 258,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 106,
+            "y": 79,
+            "sourceCell": [
+              34,
+              25
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.20",
+            "mapId": 8,
+            "eventId": 260,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 106,
+            "y": 82,
+            "sourceCell": [
+              34,
+              26
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.23",
+            "mapId": 8,
+            "eventId": 263,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 106,
+            "y": 85,
+            "sourceCell": [
+              34,
+              27
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.26",
+            "mapId": 8,
+            "eventId": 266,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 106,
+            "y": 88,
+            "sourceCell": [
+              34,
+              28
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            40,
+            25
+          ],
+          [
+            41,
+            25
+          ]
+        ],
+        "walls": 4,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.01",
+            "mapId": 8,
+            "eventId": 241,
+            "technical": false,
+            "dungeonPilot": true,
+            "x": 124,
+            "y": 79,
+            "sourceCell": [
+              40,
+              25
+            ],
+            "source": "Plataforma existente de START.MIF interpretada no layout M01-14; nicho com paredes a oeste/leste/sul. Camp geral e refúgios elevados documentados em POCOES_E_DESCANSO_M01_17.md; interação e restauração integral são adaptações aprovadas em29/10/2026."
+          },
+          {
+            "id": "MQ01.refuge.19",
+            "mapId": 8,
+            "eventId": 259,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 127,
+            "y": 79,
+            "sourceCell": [
+              41,
+              25
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            8,
+            27
+          ],
+          [
+            8,
+            28
+          ]
+        ],
+        "walls": 3,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.21",
+            "mapId": 8,
+            "eventId": 261,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 28,
+            "y": 85,
+            "sourceCell": [
+              8,
+              27
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.24",
+            "mapId": 8,
+            "eventId": 264,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 28,
+            "y": 88,
+            "sourceCell": [
+              8,
+              28
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            31,
+            27
+          ],
+          [
+            31,
+            28
+          ],
+          [
+            31,
+            29
+          ]
+        ],
+        "walls": 5,
+        "dryEdges": 3,
+        "points": [
+          {
+            "id": "MQ01.refuge.22",
+            "mapId": 8,
+            "eventId": 262,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 97,
+            "y": 85,
+            "sourceCell": [
+              31,
+              27
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.25",
+            "mapId": 8,
+            "eventId": 265,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 97,
+            "y": 88,
+            "sourceCell": [
+              31,
+              28
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.29",
+            "mapId": 8,
+            "eventId": 269,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 97,
+            "y": 91,
+            "sourceCell": [
+              31,
+              29
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            23,
+            29
+          ],
+          [
+            24,
+            29
+          ],
+          [
+            23,
+            30
+          ],
+          [
+            24,
+            30
+          ]
+        ],
+        "walls": 6,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.27",
+            "mapId": 8,
+            "eventId": 267,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 73,
+            "y": 91,
+            "sourceCell": [
+              23,
+              29
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.28",
+            "mapId": 8,
+            "eventId": 268,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 76,
+            "y": 91,
+            "sourceCell": [
+              24,
+              29
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.30",
+            "mapId": 8,
+            "eventId": 270,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 73,
+            "y": 94,
+            "sourceCell": [
+              23,
+              30
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.31",
+            "mapId": 8,
+            "eventId": 271,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 76,
+            "y": 94,
+            "sourceCell": [
+              24,
+              30
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            4,
+            35
+          ]
+        ],
+        "walls": 2,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.32",
+            "mapId": 8,
+            "eventId": 272,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 16,
+            "y": 109,
+            "sourceCell": [
+              4,
+              35
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            6,
+            35
+          ]
+        ],
+        "walls": 2,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.33",
+            "mapId": 8,
+            "eventId": 273,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 22,
+            "y": 109,
+            "sourceCell": [
+              6,
+              35
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            16,
+            37
+          ],
+          [
+            17,
+            37
+          ],
+          [
+            16,
+            38
+          ],
+          [
+            17,
+            38
+          ]
+        ],
+        "walls": 6,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.34",
+            "mapId": 8,
+            "eventId": 274,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 52,
+            "y": 115,
+            "sourceCell": [
+              16,
+              37
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.35",
+            "mapId": 8,
+            "eventId": 275,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 55,
+            "y": 115,
+            "sourceCell": [
+              17,
+              37
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.36",
+            "mapId": 8,
+            "eventId": 276,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 52,
+            "y": 118,
+            "sourceCell": [
+              16,
+              38
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.37",
+            "mapId": 8,
+            "eventId": 277,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 55,
+            "y": 118,
+            "sourceCell": [
+              17,
+              38
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            20,
+            41
+          ],
+          [
+            21,
+            41
+          ]
+        ],
+        "walls": 4,
+        "dryEdges": 2,
+        "points": [
+          {
+            "id": "MQ01.refuge.38",
+            "mapId": 8,
+            "eventId": 278,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 64,
+            "y": 127,
+            "sourceCell": [
+              20,
+              41
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          },
+          {
+            "id": "MQ01.refuge.39",
+            "mapId": 8,
+            "eventId": 279,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 67,
+            "y": 127,
+            "sourceCell": [
+              21,
+              41
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      },
+      {
+        "cells": [
+          [
+            37,
+            43
+          ]
+        ],
+        "walls": 3,
+        "dryEdges": 1,
+        "points": [
+          {
+            "id": "MQ01.refuge.40",
+            "mapId": 8,
+            "eventId": 280,
+            "technical": false,
+            "dungeonRefuge": true,
+            "x": 115,
+            "y": 133,
+            "sourceCell": [
+              37,
+              43
+            ],
+            "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+          }
+        ],
+        "exclusions": []
+      }
+    ]
+  },
+  "access": [
+    {
+      "id": "MQ01.refuge.01",
+      "eventId": 241,
+      "x": 124,
+      "y": 79,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 37,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.02",
+      "eventId": 242,
+      "x": 37,
+      "y": 10,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 185,
+      "waterTiles": 97,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.03",
+      "eventId": 243,
+      "x": 40,
+      "y": 10,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 182,
+      "waterTiles": 97,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.04",
+      "eventId": 244,
+      "x": 73,
+      "y": 34,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 163,
+      "waterTiles": 61,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.05",
+      "eventId": 245,
+      "x": 76,
+      "y": 34,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 160,
+      "waterTiles": 36,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.06",
+      "eventId": 246,
+      "x": 142,
+      "y": 34,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 70,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.07",
+      "eventId": 247,
+      "x": 73,
+      "y": 37,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 166,
+      "waterTiles": 61,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.08",
+      "eventId": 248,
+      "x": 76,
+      "y": 37,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 163,
+      "waterTiles": 36,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.09",
+      "eventId": 249,
+      "x": 142,
+      "y": 37,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 67,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.10",
+      "eventId": 250,
+      "x": 136,
+      "y": 46,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 52,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.11",
+      "eventId": 251,
+      "x": 118,
+      "y": 49,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 63,
+      "waterTiles": 15,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.12",
+      "eventId": 252,
+      "x": 121,
+      "y": 49,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 60,
+      "waterTiles": 15,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.13",
+      "eventId": 253,
+      "x": 136,
+      "y": 49,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 49,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.14",
+      "eventId": 254,
+      "x": 136,
+      "y": 52,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 46,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.15",
+      "eventId": 255,
+      "x": 43,
+      "y": 70,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 147,
+      "waterTiles": 65,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.16",
+      "eventId": 256,
+      "x": 43,
+      "y": 73,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 150,
+      "waterTiles": 65,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.17",
+      "eventId": 257,
+      "x": 43,
+      "y": 76,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 153,
+      "waterTiles": 65,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.18",
+      "eventId": 258,
+      "x": 106,
+      "y": 79,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 55,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.19",
+      "eventId": 259,
+      "x": 127,
+      "y": 79,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 34,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.20",
+      "eventId": 260,
+      "x": 106,
+      "y": 82,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 58,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.21",
+      "eventId": 261,
+      "x": 28,
+      "y": 85,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 169,
+      "waterTiles": 40,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.22",
+      "eventId": 262,
+      "x": 97,
+      "y": 85,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 70,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.23",
+      "eventId": 263,
+      "x": 106,
+      "y": 85,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 61,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.24",
+      "eventId": 264,
+      "x": 28,
+      "y": 88,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 166,
+      "waterTiles": 40,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.25",
+      "eventId": 265,
+      "x": 97,
+      "y": 88,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 73,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.26",
+      "eventId": 266,
+      "x": 106,
+      "y": 88,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 64,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.27",
+      "eventId": 267,
+      "x": 73,
+      "y": 91,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 110,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.28",
+      "eventId": 268,
+      "x": 76,
+      "y": 91,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 107,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.29",
+      "eventId": 269,
+      "x": 97,
+      "y": 91,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": true,
+      "distance": 76,
+      "waterTiles": 0,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.30",
+      "eventId": 270,
+      "x": 73,
+      "y": 94,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 107,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.31",
+      "eventId": 271,
+      "x": 76,
+      "y": 94,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 104,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.32",
+      "eventId": 272,
+      "x": 16,
+      "y": 109,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 197,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.33",
+      "eventId": 273,
+      "x": 22,
+      "y": 109,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 195,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.34",
+      "eventId": 274,
+      "x": 52,
+      "y": 115,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 155,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.35",
+      "eventId": 275,
+      "x": 55,
+      "y": 115,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 152,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.36",
+      "eventId": 276,
+      "x": 52,
+      "y": 118,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 152,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.37",
+      "eventId": 277,
+      "x": 55,
+      "y": 118,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 149,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.38",
+      "eventId": 278,
+      "x": 64,
+      "y": 127,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 145,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.39",
+      "eventId": 279,
+      "x": 67,
+      "y": 127,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 142,
+      "waterTiles": 6,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "MQ01.refuge.40",
+      "eventId": 280,
+      "x": 115,
+      "y": 133,
+      "dry": true,
+      "reachable": true,
+      "dryRoute": false,
+      "distance": 100,
+      "waterTiles": 18,
+      "walkIn": [
+        2,
+        0,
+        -1
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "id": "MQ01.refuge.01",
+      "x": 124,
+      "y": 79,
+      "keyboard": true,
+      "heldCommandIgnored": true,
+      "worldPreserved": true
+    },
+    {
+      "id": "MQ01.refuge.21",
+      "x": 28,
+      "y": 85,
+      "keyboard": true,
+      "heldCommandIgnored": true,
+      "worldPreserved": true
+    },
+    {
+      "id": "MQ01.refuge.40",
+      "x": 115,
+      "y": 133,
+      "keyboard": true,
+      "heldCommandIgnored": true,
+      "worldPreserved": true
+    }
+  ],
+  "checks": [
+    "All40 configured dry supports reachable via native passability/collisions, with dry walk-in; doors opened and moving patrols ignored only in audit fixture",
+    "Three representative points: approved pilot, western water-adjacent platform, southern dead end; native walk-in and Enter, full resources, release guard, unchanged quest/inventory/treasure/enemy/area/progression",
+    "Save without new event instances gains only configured rest events, no free recovery; battle guard, nearest-point click and restored save/load preserve world",
+    "Map geometry/properties/all old events identical; generator chain idempotent twice in ignored fixture; loot feature not imported"
+  ],
+  "errors": [],
+  "editor": "not executed",
+  "phone": "not executed",
+  "scope": "Only source/position audit and three shared-behavior samples; no campaign traversal"
+}
