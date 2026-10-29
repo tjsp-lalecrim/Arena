@@ -2,7 +2,7 @@
 
 ## Requisito solicitado — distribuição de atributos (M01-20/S03)
 
-Ao subir de nível, conceder pontos distribuíveis em **ATQ/DEF/MAT/MDF/AGI/SOR**, adicionais à escolha aprovada de Vida/Mana/Vigor. **Solicitado, ainda não implementado**: quantidade, valor por ponto, retroatividade, saldo e redistribuição são propostas em [S03](ESTUDO_ATRIBUTOS_M01_20_S03.md). Não criar crescimento automático dos mesmos atributos, classes jogáveis ou restrições raciais de equipamento. Interface posterior; preservar recursos/custos existentes. S03 substitui somente a sugestão automática G de S02, não a progressão de recursos aprovada.
+Ao subir de nível, conceder pontos distribuíveis em **ATQ/DEF/MAT/MDF/AGI/SOR**, adicionais à escolha aprovada de Vida/Mana/Vigor. **Solicitado, ainda não implementado**: [S04](ESTUDO_ESCALA_PROGRESSAO_M01_20_S04.md) compara1/2/3 pontos (+1 cada), recomenda3 para piloto, sem aprovação;1 é apenas referência. Saldo/retroatividade/redistribuição continuam propostas de S03. Não criar curva automática duplicada, classes jogáveis ou restrições raciais de equipamento. Recursos preservados; interface posterior.
 
 ## Diretrizes confirmadas
 

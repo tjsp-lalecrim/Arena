@@ -1,0 +1,2192 @@
+{
+  "study": "M01-20/S04 - unapproved scale comparison",
+  "formula": "S02 proportional only, unapproved; same K8/floor0.20/powers/penetration as S03",
+  "premises": "S03 Breton reference with dagger+leather, not campaign starter grant. Successful neutral hits, no variance/critical/guard or battle. Fire learned only as comparison premise. No automatic attribute growth. Resource choices unchanged/equal by level. Initiative scores enumerated, ties separate. Level1 deduplicated across all budgets/builds. Existing upgrade +1ATQ/+3DEF; separate gear-scale proposal +3ATQ/+5DEF relative to basic.",
+  "attributeOrder": [
+    "ATQ",
+    "DEF",
+    "MAT",
+    "MDF",
+    "AGI",
+    "SOR"
+  ],
+  "rows": [
+    {
+      "pointsPerLevel": 0,
+      "level": 1,
+      "build": "no-points",
+      "equipment": "basic",
+      "totalPoints": 0,
+      "spent": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        12,
+        8,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 19,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 17,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 0,
+      "level": 1,
+      "build": "no-points",
+      "equipment": "currentUpgrade",
+      "totalPoints": 0,
+      "spent": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        13,
+        11,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 13,
+          "heavy": 18,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 12,
+          "heavy": 16,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 3,
+      "build": "physical",
+      "equipment": "basic",
+      "totalPoints": 2,
+      "spent": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        13,
+        9,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 13,
+          "heavy": 18,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.47058823529411764,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 12,
+          "heavy": 16,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.47058823529411764,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 3,
+      "build": "physical",
+      "equipment": "currentUpgrade",
+      "totalPoints": 2,
+      "spent": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        14,
+        12,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 10,
+          "light": 13,
+          "heavy": 17,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 3,
+      "build": "hybrid",
+      "equipment": "basic",
+      "totalPoints": 2,
+      "spent": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        13,
+        8,
+        9,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 13,
+          "heavy": 18,
+          "fire": 22,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 12,
+          "heavy": 16,
+          "fire": 20,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 3,
+      "build": "hybrid",
+      "equipment": "currentUpgrade",
+      "totalPoints": 2,
+      "spent": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        14,
+        11,
+        9,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 22,
+          "received": 2,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 10,
+          "light": 13,
+          "heavy": 17,
+          "fire": 20,
+          "received": 3,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "physical",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "attrs": [
+        14,
+        9,
+        8,
+        5,
+        11,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.47058823529411764,
+          "initiative": {
+            "strictlyFaster": 0.6938775510204082,
+            "ties": 0.10204081632653061
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 10,
+          "light": 13,
+          "heavy": 17,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.47058823529411764,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "physical",
+      "equipment": "currentUpgrade",
+      "totalPoints": 4,
+      "spent": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "attrs": [
+        15,
+        12,
+        8,
+        5,
+        11,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.6938775510204082,
+            "ties": 0.10204081632653061
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "hybrid",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "attrs": [
+        13,
+        9,
+        9,
+        6,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 13,
+          "heavy": 18,
+          "fire": 22,
+          "received": 2,
+          "defenseFactor": 0.47058823529411764,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 12,
+          "heavy": 16,
+          "fire": 20,
+          "received": 3,
+          "defenseFactor": 0.47058823529411764,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "hybrid",
+      "equipment": "currentUpgrade",
+      "totalPoints": 4,
+      "spent": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "attrs": [
+        14,
+        12,
+        9,
+        6,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 22,
+          "received": 2,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 10,
+          "light": 13,
+          "heavy": 17,
+          "fire": 20,
+          "received": 3,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 3,
+      "build": "physical",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        14,
+        10,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.4444444444444444,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 10,
+          "light": 13,
+          "heavy": 17,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.4444444444444444,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 3,
+      "build": "physical",
+      "equipment": "currentUpgrade",
+      "totalPoints": 4,
+      "spent": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        15,
+        13,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 3,
+      "build": "hybrid",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        14,
+        8,
+        10,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 24,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 10,
+          "light": 13,
+          "heavy": 17,
+          "fire": 22,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 3,
+      "build": "hybrid",
+      "equipment": "currentUpgrade",
+      "totalPoints": 4,
+      "spent": [
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        15,
+        11,
+        10,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 24,
+          "received": 2,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 22,
+          "received": 3,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "physical",
+      "equipment": "basic",
+      "totalPoints": 8,
+      "spent": [
+        4,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "attrs": [
+        16,
+        10,
+        8,
+        5,
+        12,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 13,
+          "light": 16,
+          "heavy": 22,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.4444444444444444,
+          "initiative": {
+            "strictlyFaster": 0.8214285714285714,
+            "ties": 0.07142857142857142
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.4444444444444444,
+          "initiative": {
+            "strictlyFaster": 0.7321428571428571,
+            "ties": 0.08928571428571429
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "physical",
+      "equipment": "currentUpgrade",
+      "totalPoints": 8,
+      "spent": [
+        4,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "attrs": [
+        17,
+        13,
+        8,
+        5,
+        12,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 14,
+          "light": 17,
+          "heavy": 23,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.8214285714285714,
+            "ties": 0.07142857142857142
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 12,
+          "light": 15,
+          "heavy": 21,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.7321428571428571,
+            "ties": 0.08928571428571429
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "hybrid",
+      "equipment": "basic",
+      "totalPoints": 8,
+      "spent": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "attrs": [
+        14,
+        10,
+        10,
+        7,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 24,
+          "received": 2,
+          "defenseFactor": 0.4444444444444444,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 10,
+          "light": 13,
+          "heavy": 17,
+          "fire": 22,
+          "received": 3,
+          "defenseFactor": 0.4444444444444444,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "hybrid",
+      "equipment": "currentUpgrade",
+      "totalPoints": 8,
+      "spent": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "attrs": [
+        15,
+        13,
+        10,
+        7,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 24,
+          "received": 2,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 22,
+          "received": 3,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 3,
+      "build": "physical",
+      "equipment": "basic",
+      "totalPoints": 6,
+      "spent": [
+        3,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        15,
+        11,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 3,
+      "build": "physical",
+      "equipment": "currentUpgrade",
+      "totalPoints": 6,
+      "spent": [
+        3,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        16,
+        14,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 13,
+          "light": 16,
+          "heavy": 22,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.36363636363636365,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.36363636363636365,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 3,
+      "build": "hybrid",
+      "equipment": "basic",
+      "totalPoints": 6,
+      "spent": [
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        15,
+        8,
+        11,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 26,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 24,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 3,
+      "build": "hybrid",
+      "equipment": "currentUpgrade",
+      "totalPoints": 6,
+      "spent": [
+        3,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        16,
+        11,
+        11,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 13,
+          "light": 16,
+          "heavy": 22,
+          "fire": 26,
+          "received": 2,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 24,
+          "received": 3,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "physical",
+      "equipment": "basic",
+      "totalPoints": 12,
+      "spent": [
+        6,
+        3,
+        0,
+        0,
+        3,
+        0
+      ],
+      "attrs": [
+        18,
+        11,
+        8,
+        5,
+        13,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 14,
+          "light": 18,
+          "heavy": 24,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.8928571428571429,
+            "ties": 0.05357142857142857
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 13,
+          "light": 16,
+          "heavy": 22,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.8214285714285714,
+            "ties": 0.07142857142857142
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "physical",
+      "equipment": "currentUpgrade",
+      "totalPoints": 12,
+      "spent": [
+        6,
+        3,
+        0,
+        0,
+        3,
+        0
+      ],
+      "attrs": [
+        19,
+        14,
+        8,
+        5,
+        13,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 15,
+          "light": 19,
+          "heavy": 26,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.36363636363636365,
+          "initiative": {
+            "strictlyFaster": 0.8928571428571429,
+            "ties": 0.05357142857142857
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 14,
+          "light": 17,
+          "heavy": 24,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.36363636363636365,
+          "initiative": {
+            "strictlyFaster": 0.8214285714285714,
+            "ties": 0.07142857142857142
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "hybrid",
+      "equipment": "basic",
+      "totalPoints": 12,
+      "spent": [
+        3,
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
+      "attrs": [
+        15,
+        11,
+        11,
+        8,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 26,
+          "received": 2,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 24,
+          "received": 3,
+          "defenseFactor": 0.42105263157894735,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "hybrid",
+      "equipment": "currentUpgrade",
+      "totalPoints": 12,
+      "spent": [
+        3,
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
+      "attrs": [
+        16,
+        14,
+        11,
+        8,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 13,
+          "light": 16,
+          "heavy": 22,
+          "fire": 26,
+          "received": 2,
+          "defenseFactor": 0.36363636363636365,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 24,
+          "received": 3,
+          "defenseFactor": 0.36363636363636365,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    }
+  ],
+  "separateEquipmentProposal": [
+    {
+      "pointsPerLevel": 0,
+      "level": 1,
+      "build": "no-points",
+      "equipment": "separateScaleProposal",
+      "totalPoints": 0,
+      "spent": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        15,
+        13,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 11,
+          "light": 14,
+          "heavy": 19,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.38095238095238093,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "physical",
+      "equipment": "separateScaleProposal",
+      "totalPoints": 12,
+      "spent": [
+        6,
+        3,
+        0,
+        0,
+        3,
+        0
+      ],
+      "attrs": [
+        21,
+        16,
+        8,
+        5,
+        13,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 17,
+          "light": 21,
+          "heavy": 28,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.3333333333333333,
+          "initiative": {
+            "strictlyFaster": 0.8928571428571429,
+            "ties": 0.05357142857142857
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 15,
+          "light": 19,
+          "heavy": 26,
+          "fire": 17,
+          "received": 2,
+          "defenseFactor": 0.3333333333333333,
+          "initiative": {
+            "strictlyFaster": 0.8214285714285714,
+            "ties": 0.07142857142857142
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "hybrid",
+      "equipment": "separateScaleProposal",
+      "totalPoints": 12,
+      "spent": [
+        3,
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
+      "attrs": [
+        18,
+        16,
+        11,
+        8,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 14,
+          "light": 18,
+          "heavy": 24,
+          "fire": 26,
+          "received": 2,
+          "defenseFactor": 0.3333333333333333,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 13,
+          "light": 16,
+          "heavy": 22,
+          "fire": 24,
+          "received": 2,
+          "defenseFactor": 0.3333333333333333,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    }
+  ],
+  "concentration": [
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "all-ATQ",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        16,
+        8,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 13,
+          "light": 16,
+          "heavy": 22,
+          "fire": 19,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 12,
+          "light": 15,
+          "heavy": 20,
+          "fire": 17,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "all-MAT",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        12,
+        8,
+        12,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 29,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 26,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "all-DEF",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        12,
+        12,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 17,
+          "received": 3,
+          "defenseFactor": 0.4,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 1,
+      "level": 5,
+      "build": "all-AGI",
+      "equipment": "basic",
+      "totalPoints": 4,
+      "spent": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "attrs": [
+        12,
+        8,
+        8,
+        5,
+        14,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 19,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.9464285714285714,
+            "ties": 0.03571428571428571
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 17,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.8928571428571429,
+            "ties": 0.05357142857142857
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "all-ATQ",
+      "equipment": "basic",
+      "totalPoints": 8,
+      "spent": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        20,
+        8,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 16,
+          "light": 20,
+          "heavy": 27,
+          "fire": 19,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 15,
+          "light": 18,
+          "heavy": 25,
+          "fire": 17,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "all-MAT",
+      "equipment": "basic",
+      "totalPoints": 8,
+      "spent": [
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        12,
+        8,
+        16,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 38,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 35,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "all-DEF",
+      "equipment": "basic",
+      "totalPoints": 8,
+      "spent": [
+        0,
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        12,
+        16,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 19,
+          "received": 2,
+          "defenseFactor": 0.3333333333333333,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 17,
+          "received": 2,
+          "defenseFactor": 0.3333333333333333,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 2,
+      "level": 5,
+      "build": "all-AGI",
+      "equipment": "basic",
+      "totalPoints": 8,
+      "spent": [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      "attrs": [
+        12,
+        8,
+        8,
+        5,
+        18,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 19,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 1,
+            "ties": 0
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 17,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 1,
+            "ties": 0
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "all-ATQ",
+      "equipment": "basic",
+      "totalPoints": 12,
+      "spent": [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        24,
+        8,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 19,
+          "light": 24,
+          "heavy": 32,
+          "fire": 19,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 17,
+          "light": 22,
+          "heavy": 30,
+          "fire": 17,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "all-MAT",
+      "equipment": "basic",
+      "totalPoints": 12,
+      "spent": [
+        0,
+        0,
+        12,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        12,
+        8,
+        20,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 48,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 44,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "all-DEF",
+      "equipment": "basic",
+      "totalPoints": 12,
+      "spent": [
+        0,
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      "attrs": [
+        12,
+        20,
+        8,
+        5,
+        10,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 19,
+          "received": 1,
+          "defenseFactor": 0.2857142857142857,
+          "initiative": {
+            "strictlyFaster": 0.5714285714285714,
+            "ties": 0.12244897959183673
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 17,
+          "received": 2,
+          "defenseFactor": 0.2857142857142857,
+          "initiative": {
+            "strictlyFaster": 0.42857142857142855,
+            "ties": 0.14285714285714285
+          }
+        }
+      ]
+    },
+    {
+      "pointsPerLevel": 3,
+      "level": 5,
+      "build": "all-AGI",
+      "equipment": "basic",
+      "totalPoints": 12,
+      "spent": [
+        0,
+        0,
+        0,
+        0,
+        12,
+        0
+      ],
+      "attrs": [
+        12,
+        8,
+        8,
+        5,
+        22,
+        10
+      ],
+      "targets": [
+        {
+          "enemy": "Rato",
+          "hp": 18,
+          "attack": 10,
+          "light": 12,
+          "heavy": 16,
+          "fire": 19,
+          "received": 3,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 1,
+            "ties": 0
+          }
+        },
+        {
+          "enemy": "Goblin",
+          "hp": 30,
+          "attack": 9,
+          "light": 11,
+          "heavy": 15,
+          "fire": 17,
+          "received": 4,
+          "defenseFactor": 0.5,
+          "initiative": {
+            "strictlyFaster": 1,
+            "ties": 0
+          }
+        }
+      ]
+    }
+  ]
+}

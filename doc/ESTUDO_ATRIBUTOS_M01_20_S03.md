@@ -2,6 +2,8 @@
 
 Complementa [S02](ESTUDO_DANO_PROGRESSAO_M01_20_S02.md), sem reiniciar o diagnóstico ou executar E02. **Requisito solicitado:** pontos por nível distribuíveis em **ATQ, DEF, MAT, MDF, AGI e SOR**, adicionais à escolha aprovada de+10 Vida/Mana/Vigor. A quantidade/valor/políticas abaixo são **propostas**, não implementação aprovada. Substituir o crescimento automático G de S02, sem duplicar os mesmos atributos. Sem classes jogáveis, bloqueios raciais, menus, escalonamento ou alteração de saves/jogo.
 
+**Escala revista em [S04](ESTUDO_ESCALA_PROGRESSAO_M01_20_S04.md):**1 ponto/+1 não foi aprovado; passa a referência diante de2/3 pontos, com3 como candidato principal. O equipamento provisório não limita esse desenho. Orçamento e exemplos S03 abaixo são históricos; políticas/lacunas permanecem propostas. E03 não executado; único candidato posterior agora E04/S04. Nenhuma mudança no jogo.
+
 ## Referências delimitadas — duas, pesquisa encerrada
 
 | Referência primária e localização | Fato confirmado / motivo da escolha | Aplicação limitada ao Arena |
@@ -57,4 +59,4 @@ Raça fica separada da alocação, sem veto de equipamento: Khajiit+1 AGI equiva
 
 **Decisões pendentes:** orçamento/valor; saldo/retroatividade/redistribuição; fórmula/papéis de ações de S02; lacunas SOR/MDF e acesso a magia. Distribuir os seis atributos já é requisito solicitado; parâmetros ainda não aprovados. Não implementar menus, mecânicas novas de Sorte ou crescimento automático ATQ/MAT.
 
-**Único experimento sugerido E03, não executado:** substitui E02 como próximo candidato, sem invalidar seu histórico. Um goblin30 e a mesma Bretã, comparando as três alocações de nível5 com orçamento4 e equipamento fixo, via ações nativas em sessão técnica isolada. Medir dano/custos/iniciativa, limiar de DEF e utilidade real de cada ação; MDF/SOR continuam lacunas identificadas, não simuladas como bônus inexistentes. Apresentar resultado antes de ampliar raças/inimigos ou interface. Aguardar avaliação.
+**E03 — proposta histórica, não executada; substituída como candidato por E04/S04:** previa um goblin30 e a mesma Bretã com três alocações de nível5/orçamento4. Não executar este recorte antes da decisão da nova escala; preservar estudo e resultados aritméticos como referência, não aprovação.
