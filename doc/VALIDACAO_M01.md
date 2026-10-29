@@ -1,3 +1,9 @@
+## Isolamento web — preparação M01-19 (29/10/2026)
+
+Base67dfbe3, feature/m01-19-isolamento-saves. Chrome156.0.8078.73 headless, resolução1100×800, origem127.0.0.1:8765 e perfil persistente sintético separado. Sete grupos passaram: save/reload/Continuar; fechamento e reabertura do processo no mesmo perfil; dois namespaces na mesma origem com configurações/backups; preservação byte a byte de chaves genéricas; build compatível; defaults existentes para payload antigo; backend nativo por arquivos comparado antes/depois em VM com fs/NW.js simulados. Sem saves pessoais, cópia de assets ou alteração da identificação da campanha. [Resultados e limites](evidencias/m01-19-isolamento-saves/resultado.json), teste reproduzível tools/test-web-storage-namespace.cjs.
+
+Verificação estática complementar: registro canônico UTF-8 sem BOM, sintaxe válida,32 registros anteriores integralmente preservados e33 arquivos de plugins presentes. Arquivos internos do motor e plugins de persistência anteriores inalterados. Servidor localhost verificado contra os arquivos locais. **Não operado o editor**, não executado percurso completo de gameplay nem teste físico no Galaxy A56 nesta rodada. Avaliação manual do novo namespace pelo responsável pendente; aprovações anteriores não são atribuídas a esta implementação. [Roteiro manual e política](plugins/MV_WebStorageNamespace.md).
+
 ## Descanso em uma plataforma — confirmação de29/10/2026
 
 **Evidência manual do responsável:** descanso técnico funcionou com **Enter e toque**, e o descanso também funcionou no **fluxo normal da dungeon**, em execução pelo **editor RPG Maker MV**. Estado disponível associado:1e6a40b, Map008(124,79)/evento241; o responsável não informou hash testado nem versão exata do editor. Não atribuir teste a smartphone, ao navegador ou a edição/salvamento/reabertura do mapa.

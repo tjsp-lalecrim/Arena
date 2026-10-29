@@ -1,0 +1,53 @@
+{
+  "browser": "156.0.8078.73",
+  "mode": "headless",
+  "origin": "http://127.0.0.1:8765",
+  "testProfile": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\arena-storage-profile-pqNB0F",
+  "namespaces": [
+    "arena:m01:save-v1",
+    "other-project:test:save-v1"
+  ],
+  "keysA": [
+    "arena:m01:save-v1:RPG Config",
+    "arena:m01:save-v1:RPG Configbak",
+    "arena:m01:save-v1:RPG File1",
+    "arena:m01:save-v1:RPG File1bak",
+    "arena:m01:save-v1:RPG Global",
+    "arena:m01:save-v1:RPG Globalbak"
+  ],
+  "checks": [
+    "Native save, global index, reload and Continue/Load restore actor/resources/inventory/settings; compressed payload untouched",
+    "Same protocol/host/port and campaign title; two namespaces isolate slots/global/config/backups, including remove/restore/clean",
+    "Generic preexisting MV keys/backups and unrelated setting preserved byte-for-byte; no import",
+    "Chrome process/context closed and reopened with same isolated persistent profile; slots/config/backups survive",
+    "Compatible build fixture changes System.versionId only; same namespace, same existing save and keys, no campaign identity change",
+    "Synthetic laboratory payload without own-state root still uses existing default/migration path inside namespace; no generic-key migration",
+    "Local file paths/methods/native file operations and .bak remain identical with/without plugin (mock filesystem)"
+  ],
+  "loadedA": {
+    "name": "Synthetic A",
+    "hp": 37,
+    "mp": 11,
+    "vigor": 23,
+    "value": "value-A",
+    "potions": 3,
+    "dash": true,
+    "volume": 41
+  },
+  "migration": {
+    "schema": 1,
+    "resources": 100
+  },
+  "local": {
+    "paths": [
+      "D:\\EditorFixture\\save\\config.rpgsave",
+      "D:\\EditorFixture\\save\\global.rpgsave",
+      "D:\\EditorFixture\\save\\file1.rpgsave"
+    ],
+    "method": "Native MV file backend, mocked fs/NW.js in VM; no actual editor or personal file writes"
+  },
+  "errors": [],
+  "editor": "not operated; mocked native local backend only",
+  "manualOwner": "pending",
+  "deployment": "not configured"
+}

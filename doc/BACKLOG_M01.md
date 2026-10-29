@@ -1,3 +1,9 @@
+## Preparação focal M01-19 — isolamento de saves web (29/10/2026)
+
+Implementado MV_WebStorageNamespace0.1.0, parâmetro `arena:m01:save-v1`; slots, índice, configuração e backups separados das chaves genéricas. Sete grupos focais passaram no Chrome156 com perfil sintético persistente, sem bateria de gameplay. [Contrato, política e roteiro manual](plugins/MV_WebStorageNamespace.md); [resultado](evidencias/m01-19-isolamento-saves/resultado.json). Não altera conteúdo/migrações de partidas nem armazenamento por arquivos do editor.
+
+Feature dependente `feature/m01-19-isolamento-saves` criada sobre67dfbe3 (implementação atual de M01-18 e refinamentos); develop permanece a9d8cc0. Sem merge/push/deploy. **Não fecha M01-19:** avaliação manual deste isolamento e percurso integrado Chrome desktop continuam pendentes; Galaxy A56 físico ao final do M01. A prioridade da rota desktop abaixo permanece válida após esta preparação autorizada. Estados exclusivamente documentais abaixo referem-se à tarefa anterior.
+
 ## Estado e prioridade operacional — 29/10/2026
 
 Conferência exclusivamente documental sobre89ebb82, feature/m01-narrativa-demo, árvore inicialmente limpa; nenhum teste, merge ou início de implementação nesta tarefa. Aplicar a prioridade de DESENVOLVIMENTO_E_VERSIONAMENTO.md. Aprovações/ressalvas têm escopo em VALIDACAO_M01.md; melhorias futuras ficam no registro único REFINAMENTOS_POS_INTEGRACAO_M01.md.

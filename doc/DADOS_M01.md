@@ -1,3 +1,7 @@
+## Identificação externa do armazenamento web — M01-19
+
+Prefixo configurável `arena:m01:save-v1` para chaves de slots, índice, configuração e backups, via MV_WebStorageNamespace. É identidade externa de armazenamento, distinta dos namespaces/schemaVersion internos de MV_StateStore e da versão da build; payloads/migrações existentes não mudam. Atualização compatível mantém o prefixo. Chaves genéricas antigas não são importadas/apagadas; arquivos do editor não mudam. [Contrato e limites entre origens/perfis](plugins/MV_WebStorageNamespace.md).
+
 ## Integração M01-18
 
 M01-18: ArenaNarrative.json schemaVersion1 contém12 entradas I01–I05/R01–R07 e F01/asset. Namespace arenaNarrative v1 registra somente leitura/contexto (mode,phase,section,word,history) e operação gate. MQ01, inventário e recursos mantêm suas autoridades. Defaults de saves antigos são technical/none; novos jogos pelo commit da criação iniciam campaign/intro. Ver NARRATIVA_M01_18.md.

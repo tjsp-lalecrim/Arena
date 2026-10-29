@@ -1,3 +1,7 @@
+## Preparação M01-19 — armazenamento web
+
+MV_WebStorageNamespace0.1.0 carregado antes de Arena_Runtime, com `Namespace=arena:m01:save-v1`. Total33 registros canônicos;32 anteriores preservados integralmente. Sem dependência externa ou alteração do motor/conteúdo das partidas. Fonte principal de configuração, ordem, política de compatibilidade e testes: [plugins/MV_WebStorageNamespace.md](plugins/MV_WebStorageNamespace.md). Contagens anteriores abaixo são históricas.
+
 ## Integração M01-18
 
 M01-18 adiciona MV_NarrativePages0.1.0 e Arena_Narrative0.1.0 após os30 registros preservados (total32), dados ArenaNarrative.json e namespace arenaNarrative v1. Sem plugin externo, alteração de motor ou nova arte. Documentação em plugins/Arena_Narrative.md e NARRATIVA_M01_18.md.
