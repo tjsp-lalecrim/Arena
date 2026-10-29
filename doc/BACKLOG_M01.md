@@ -1,8 +1,28 @@
-## Estado após teste integrado — 28/10/2026
+## Estado e prioridade operacional — 29/10/2026
 
-Relato manual na execução pelo editor MV registrado em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026), com versão disponível associada e limites explícitos. Introdução/encerramento aprovados; mapa satisfatório. Pendências e critérios permanecem centralizados em [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md); não considerar arma/cenário ou outros ajustes resolvidos. Smartphone físico ao final do M01, sem bloqueio automático desktop. Sem merge, push ou início de backlog nesta tarefa. Estados anteriores abaixo são históricos quando divergirem.
+Conferência exclusivamente documental sobre89ebb82, feature/m01-narrativa-demo, árvore inicialmente limpa; nenhum teste, merge ou início de implementação nesta tarefa. Aplicar a prioridade de DESENVOLVIMENTO_E_VERSIONAMENTO.md. Aprovações/ressalvas têm escopo em VALIDACAO_M01.md; melhorias futuras ficam no registro único REFINAMENTOS_POS_INTEGRACAO_M01.md.
 
-## Estado vigente M01-18 — 28/10/2026
+### M01-18 — critérios funcionais atendidos na feature
+
+| Critério | Evidência existente e limite |
+| --- | --- |
+| Introdução textual/ilustrada pt-BR, sem vozes/protagonista |14 momentos R02, fontes/adaptações em NARRATIVA_M01_18.md e REVISAO_INTEGRACAO_M01_18_R02.md; introdução aprovada pelo responsável |
+| Criação → Ria/diário → dungeon |8 grupos nativos em evidencias/m01-18-r02/resultado.json, incluindo Nova Partida, início único de MQ01 e entrada direta; relato integrado confirma progressão no editor |
+| Gate encerra uma vez, sem M02; retorno ao título |Mesmos resultados nativos cobrem contato lateral, F01/título e não repetição; responsável confirmou Gate e aprovou encerramento |
+| Progresso persistente e leitura/entrada utilizáveis |Save/load de narrativa/dungeon/fim, migração e prevenção de salto de páginas;4 grupos/42 layouts em narrativa-telas-menores.json. Relato manual confirma persistência no editor, sem especificar todos os pontos/casos |
+
+**Fechamento:** não há pendência funcional concreta de M01-18 identificada nesses critérios/registros. As aprovações narrativas já foram dadas; não solicitá-las novamente. A implementação permanece na feature, ainda sem consolidação em develop (local a9d8cc0/M01-17); a revisão/consolidação Git deve ser tratada conforme autorização da tarefa de continuidade, sem merge nesta execução. Ressalvas aceitas e melhorias futuras não são novos bloqueios de M01-18. Não declarar o M01 completo, todas as combinações validadas ou teste físico executado.
+
+### Próxima unidade necessária: M01-19 — Chrome desktop
+
+- **Critério:** fluxo completo no Chrome desktop, com controles funcionais e texto legível. Começar por uma rota representativa, por exemplo Bretã feminina: Nova Partida → introdução/Ria → dungeon/chave/porta/diário → Gate/encerramento/título, incluindo salvar/carregar em ponto relevante e os sistemas integrados encontrados no percurso. Não depender de drops raros nem comandos que concluam quests artificialmente.
+- **Motivo da prioridade:** M01-18 já atende ao escopo funcional; as aprovações recentes foram pelo editor. A última evidência completa Chrome R02 é anterior aos ajustes posteriores, inclusive o descanso. Testes focais recentes e execução no editor não comprovam o percurso integrado da versão atual no navegador. Identificar commit, Chrome/versão, modo de execução, resolução, entradas e evidências. Registrar bloqueios ligados ao critério antes de propor correções; não começar por redesenhar sistemas já aprovados.
+- **Dependências/workflow:** respeitar07–18 e Git Flow na futura tarefa; não abrir/integrar feature nesta atualização documental. Sem falta de nova decisão funcional identificada para essa rota, não reabrir aprovações. Fade e outros estudos sem etapa definida continuam futuros, sem implementação autorizada por esta recomendação.
+- **Mobile:** testar fisicamente no Galaxy A56 ao final do M01, antes do fechamento da entrega; não bloquear esta unidade desktop pela ausência atual do aparelho. M01-19 só fecha integralmente quando também cumprir a cobertura física, sem presumir equivalência entre editor, emulação e smartphone. Numeração e dependência de M01-20 permanecem iguais.
+
+Registros anteriores abaixo são históricos quando divergirem deste estado; não constituem novos pedidos de trabalho.
+
+## Registro anterior M01-18 — 28/10/2026
 
 M01-17 fechado com aprovação das poções separada dos testes automáticos de descanso, integrado/publicado em develop a9d8cc0. Feature/m01-narrativa-demo implementa M01-18 sem renumeração: criação → I01–I05/Ria → MQ01/dungeon → Gate → F01/título. Rota nativa232 passos, saves de narrativa/dungeon/fim, entrada protegida e telas menores verificados. Fonte primária Ria em TEMPLATE.DAT#1400; adaptações/divergências e limites em NARRATIVA_M01_18.md. Arte Ria R02 reutilizada sem alteração/protagonista;32 plugins canônicos. Concluído tecnicamente na feature para revisão, sem merge ou início M01-19. Avaliação narrativa/visual do responsável, nova autoria/playtest no editor, teste em velocidade normal e A56 físico permanecem separados e pendentes. Melhorias futuras e Vigor aquático inalterados. Registros anteriores são históricos quando divergirem.
 

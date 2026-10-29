@@ -1,6 +1,6 @@
 ## Leitura operacional — processo vigente
 
-Antes de implementar, aplicar o roteiro curto e o índice de fontes principais em [DESENVOLVIMENTO_E_VERSIONAMENTO.md](DESENVOLVIMENTO_E_VERSIONAMENTO.md#operação-obrigatória--entregas-pequenas). Arte, mapas e interface têm diretivas próprias ali vinculadas; relatos antigos abaixo não as substituem. Impressões do teste integrado recebidas em28/10/2026: consultar a evidência manual e seu escopo em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026); pendências únicas em REFINAMENTOS_POS_INTEGRACAO_M01.md. Esta atualização é documental, sem implementação ou início de backlog. Diagnóstico breve e recortes apenas sugeridos: [REVISAO_PROCESSO_2026_10_28.md](REVISAO_PROCESSO_2026_10_28.md).
+Aplicar o roteiro e a [prioridade obrigatória pelo backlog](DESENVOLVIMENTO_E_VERSIONAMENTO.md#prioridade-obrigatória--foco-no-backlog). Estado de M01-18, pendência de consolidação Git e primeira unidade M01-19/Chrome desktop: [BACKLOG_M01.md](BACKLOG_M01.md). Evidências em VALIDACAO_M01.md; melhorias adiadas em REFINAMENTOS_POS_INTEGRACAO_M01.md, sem autorização por associação. Descanso validado não torna fade trabalho atual. Smartphone físico ao final do M01, antes do fechamento, sem bloquear desktop. Os relatos anteriores abaixo são históricos quando divergirem; esta atualização não inicia implementação.
 
 ## Revisão vigente M01-18 R02 — 28/10/2026
 

@@ -9,6 +9,18 @@
 5. Revisar o diff, selecionar somente arquivos da tarefa e fazer commit coeso. Publicação e integração seguem a autorização da tarefa; uma aprovação parcial não aprova outras funcionalidades, assets ou dispositivos.
 6. Entregar resultado, evidência pertinente, limitações e próximo recorte sugerido. Não prometer duração ou consumo sem meios de medição; dados agregados não autorizam estimativas por atividade.
 
+## Prioridade obrigatória — foco no backlog
+
+1. Recomendar continuidade pelo **item ativo**, suas dependências e critérios de aceitação; conferir o estado real em BACKLOG_M01.md e as evidências pertinentes.
+2. Priorizar bloqueios e defeitos que impeçam atender a esses critérios, identificando qual critério é afetado.
+3. Ao concluir um recorte, retornar à sequência do backlog; não continuar refinando indefinidamente o mesmo sistema.
+4. Uma melhoria futura não vira trabalho atual por ser o último assunto discutido.
+5. Melhorias atribuídas explicitamente a um backlog entram na avaliação desse item, respeitando seu escopo; sem etapa definida, permanecem adiadas. Vínculo a um item não autoriza implementação automática de estudos/propostas.
+6. Aprovações com ressalvas continuam válidas. Só tratar ressalva aceita como bloqueio mediante defeito concreto e justificativa do critério afetado.
+7. Não ampliar funcionalidades, produzir variantes ou implementar estudos sem autorização correspondente; preservar os limites da tarefa.
+8. Toda recomendação de continuidade deve informar **item do backlog, critério a atender e motivo da prioridade**. Distinguir recomendação, autorização e início efetivo.
+9. Se faltar decisão ou avaliação necessária, identificar a **pergunta específica** e o que depende dela; silêncio não é aprovação. Consultar os registros antes de perguntar e não repetir pedidos já respondidos.
+
 ## Fontes principais e estados
 
 | Assunto | Fonte principal |
