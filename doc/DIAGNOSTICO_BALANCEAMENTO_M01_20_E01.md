@@ -1,6 +1,6 @@
 # M01-20 — diagnóstico e proposta E01 (29/10/2026)
 
-**Somente leitura e proposta, aguardando avaliação.** Responsável concluiu os testes públicos em Chrome PC/A56 e considerou a prévia muito fácil; não informou raça, equipamento, nível, rota ou contagens de turnos dessa avaliação. Base consultada: jogo público **9fab698**; dados/código de execução locais continuam idênticos a esse commit. Sem nova batalha, pesquisa de drops, ajuste de dados/fórmulas ou publicação. M01-20 autorizado com as ressalvas de apresentação de M01-19, sem declará-las atendidas.
+**Histórico substituído pelo [estudo S02](ESTUDO_DANO_PROGRESSAO_M01_20_S02.md): E01 não foi aprovado para execução nem executado.** Conteúdo abaixo preserva o diagnóstico/proposta do commit59de43b. Responsável concluiu os testes públicos em Chrome PC/A56 e considerou a prévia muito fácil; não informou raça, equipamento, nível, rota ou contagens de turnos dessa avaliação. Base consultada: jogo público **9fab698**. Nenhum ajuste de combate foi aplicado.
 
 ## Valores e evidências observáveis
 
@@ -34,4 +34,4 @@
 | Efeito esperado | Com acertos sem variação/crítico, pesada33 deixa de encerrar na primeira ação; projeção de2 pesadas (24 Vigor) versus3 ataques gratuitos ou3 leves (15 Vigor), permitindo mais respostas do goblin. **Projeções, não metas de turnos aprovadas.** HP maior não resolve sozinho a redundância Atacar/leve ou o baixo dano inimigo. |
 | Medir e avaliar | Primeira comparação nativa com variância0/RNG controlado igual ao precedente, somente em memória; conferir também as duas ordens de iniciativa. Registrar ações efetivas dos dois lados, Vida perdida, Vigor por vitória, dano excedente e escolhas. Se aprovado o protótipo, pequena amostra com aleatoriedade nativa/sementes registradas para verificar erro/variância. Avaliar se surge escolha útil ou apenas repetição mais longa de Atacar; encerrar e apresentar A/B antes de expandir. Preservar custo único, loot único/retorno ao mapa e apoio/animações, sem repetir matrizes completas. |
 
-Nada executado/aprovado deste experimento. Próxima decisão: aceitar ou ajustar **somente E01**; aguardar antes de modificar combate. Recompensas, raças, armas, descanso e demais inimigos permanecem provisórios e fora da alteração proposta. Pesquisa extensa de drops (REF05) continua em recorte próprio, sem iniciar por associação.
+E01 permanece somente como proposta anterior, **não autorizada para execução**. A continuidade agora é o estudo S02; não retomar o aumento de Vida por associação. Recompensas, raças, armas e descanso mantidos. Pesquisa de drops REF05 continua em recorte próprio.

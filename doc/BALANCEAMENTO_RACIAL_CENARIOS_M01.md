@@ -1,6 +1,6 @@
 # Avaliação prática futura dos bônus raciais aprovados
 
-M01-20 autorizado com ressalvas de apresentação de19: primeiro recorte é o [diagnóstico/proposta E01](DIAGNOSTICO_BALANCEAMENTO_M01_20_E01.md), somente goblin/Bretã feminina/adaga, sem alterar P01–P08 ou executar o experimento nesta entrega. Relato público de facilidade não mede bônus raciais; cenários amplos abaixo continuam futuros, com resultados históricos identificados em seus ambientes.
+M01-20 autorizado com ressalvas de apresentação de19. E01 não foi aprovado para execução; continuidade no [estudo S02](ESTUDO_DANO_PROGRESSAO_M01_20_S02.md), sem modificar P01–P08, inimigos ou progressão. Simulação pequena não é teste de eficácia racial. E02 sugerido aguarda aprovação; cenários amplos abaixo continuam futuros, com resultados históricos identificados em seus ambientes.
 
 M01-10 R01:18 batalhas Scene_Battle reais, Bretã/Elfa negra/Redguard, adaga/nível1, leve/pesada, rato/goblin/homem-lagarto. Turnos1/1,2/1,3/2 nas três raças; custos5/12 por ação. Pesada troca maior Vigor por menos turnos nos dois últimos; excesso contra rato. Bônus de dano não alteraram esses limiares; não demonstra equivalência geral entre raças. RNG0,5/variância0 são fixtures determinísticas, sem ajuste de valores. Evidência evidencias/m01-10/comparacao-encontros.json. Regressão628/192 ações e981 bônus passou; cenários estatísticos, níveis altos, frio/paralisia/magia inimiga reais e eficácia sustentada continuam pendentes M01-20. Manual do responsável adiado.
 

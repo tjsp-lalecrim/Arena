@@ -1,6 +1,6 @@
 # Prévia manual no Pages — preparação (29/10/2026)
 
-**Estado vigente: prévia publicada e roteiro funcional público confirmado no Chrome PC/A56 físico**, incluindo poções em/fora de combate e persistência após reinício. Responsável autorizou M01-20 com ressalvas de apresentação; paisagem/fullscreen e REF13–REF15 continuam adiados, não atendidos. Não é release final nem fechamento M01. Evidência e limites em VALIDACAO_M01.md; diagnóstico/proposta E01 aguarda avaliação antes de alterar combate. Nenhuma atualização Pages, gameplay, assets ou regras nesta entrega documental.
+**Estado vigente: prévia publicada e roteiro funcional público confirmado no Chrome PC/A56 físico**, incluindo poções em/fora de combate e persistência após reinício. Responsável autorizou M01-20 com ressalvas; paisagem/fullscreen e REF13–REF15 continuam adiados, não atendidos. Não é release final nem fechamento M01. Evidência em VALIDACAO_M01.md; [estudo S02](ESTUDO_DANO_PROGRESSAO_M01_20_S02.md) substitui E01 e aguarda aprovação antes de implementar. Nenhuma atualização Pages, gameplay, assets ou regras nesta entrega.
 
 ## Primeira publicação autorizada — 29/10/2026
 
