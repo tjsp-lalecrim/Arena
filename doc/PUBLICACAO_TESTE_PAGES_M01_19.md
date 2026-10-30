@@ -1,3 +1,7 @@
+## Prévia atual: RC1 do M01
+
+Atualização manual autorizada em30/10/2026: fonte e407a69, versão m01-rc1, pacote exato e namespace preservado. [Execução, infraestrutura autorizada e avaliação A56 pendente](PUBLICACAO_RC1_M01.md). Página auxiliar não publicada; dados do site não devem ser limpos, importados ou transferidos de localhost. Registros abaixo descrevem a primeira prévia9fab698 e seus testes, sem estendê-los à RC1. O workflow agora usa a receita da fonte e exige a política de bytes/manifesto aprovada antes de upload; continua somente workflow_dispatch.
+
 # Prévia manual no Pages — preparação (29/10/2026)
 
 **Estado vigente: prévia publicada e roteiro funcional público confirmado no Chrome PC/A56 físico**, incluindo poções em/fora de combate e persistência após reinício. Responsável autorizou M01-20 com ressalvas; paisagem/fullscreen e REF13–REF15 continuam adiados, não atendidos. Não é release final nem fechamento M01. Evidência em VALIDACAO_M01.md; [estudo S02](ESTUDO_DANO_PROGRESSAO_M01_20_S02.md) substitui E01 e aguarda aprovação antes de implementar. Nenhuma atualização Pages, gameplay, assets ou regras nesta entrega.

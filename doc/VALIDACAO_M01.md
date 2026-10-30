@@ -1,3 +1,11 @@
+## RC1 pública exata — 30/10/2026
+
+Run41050559624/main/manual/publish=true success, sourcee407a69193e168c6c1a160ab5809b1781b4a6478. Linux prévio e publicação coincidem exatamente com manifesto RC1 aprovado77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831.321 arquivos/hash HTTP conferidos; Chrome156 isolado abriu título e acesso técnico aos atributos sem gravar saves; página auxiliar404/excluída. [Evidência](evidencias/m01-rc1-pages/resultado.json) e [publicação/limites/roteiro](PUBLICACAO_RC1_M01.md). A56 físico continua pendente; relato do responsável foi no navegador integrado do GPT, sem inferir persistência nova ou ampliar cobertura.
+
+## Correção do ambiente do relato RC1 — 30/10/2026
+
+Responsável esclareceu que o **último teste informado da RC1 foi no navegador integrado do GPT, não no Galaxy A56**. Não ampliar os casos do relato nem convertê-lo em prova de Chrome físico/persistência. O teste físico desta candidata permanece pendente: smartphone em outra rede. Isso não revoga os testes públicos anteriores no Chrome PC/A56 da prévia9fab698, nem os testes automatizados de Chrome/perfil isolado registrados para a RC1. Publicação da candidata autorizada exclusivamente para viabilizar essa avaliação, sem aprovação final do M01.
+
 ## Preparação M01 RC1 — 30/10/2026
 
 [Pacote/limites e roteiro físico](M01_RC1.md), fonte e407a69193e168c6c1a160ab5809b1781b4a6478. Duas construções idênticas,321 arquivos/hash HTTP em /Arena/, seis grupos de núcleo e seis de acesso no pacote; suporte externo de avaliação sem save automático e recusa de saves existentes; save nativo/fechar-reabrir Chrome/carregar em perfil isolado preservou pontos/atributos. Loot/legados e descanso idênticos às versões aprovadas, evidências nativas anteriores reutilizadas; guard24 sorteios/auditoria40 passaram. HTTP200 por loopback e próprio IP LAN, sem afirmar acesso do A56. Nenhuma campanha completa, teste físico ou editor novo; nenhum defeito de gameplay corrigido. [Resumo técnico](evidencias/m01-rc1/preparacao.json).

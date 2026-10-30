@@ -1,3 +1,7 @@
+## RC1 no Pages — teste físico pendente
+
+Publicação manual autorizada de e407a69193e168c6c1a160ab5809b1781b4a6478, pacote m01-rc1 exato, run41050559624 bem-sucedido. [Resultado e roteiro](PUBLICACAO_RC1_M01.md). Último teste relatado corrigido para navegador integrado do GPT; A56 físico RC1 ainda não executado. Artefato sem página auxiliar; limitações para obter saldo sem batalha/save normal estão explícitas. Main somente com exceção de infraestrutura autorizada, sem merge da release, tag final ou encerramento do marco. Não reabrir os aceites provisórios/paisagem já dados.
+
 ## M01 RC1 preparada — aguardando avaliação
 
 Pacote **m01-rc1**, fonte **e407a69193e168c6c1a160ab5809b1781b4a6478**, em release/m01. [Identificação, evidências, rede/A56 e notas de revisão](M01_RC1.md). Artefato321 arquivos, manifesto77ca5012…; escopo do jogo idêntico à implementação aprovada. Sem tag/main/push/Pages/release publicada. Aceites abaixo registrados; falta teste físico focal e aprovação explícita desta candidata, não novo estudo ou polimento.
