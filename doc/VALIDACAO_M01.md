@@ -1,8 +1,10 @@
-## Aceites para preparar a primeira candidata — 30/10/2026
+## Preparação M01 RC1 — 30/10/2026
 
-Responsável aceita **paisagem/fullscreen não atendidos no M01**, adiados para marcos futuros, sem marco numérico definido ou alegação de atendimento técnico. Aceita balanceamento atual,3 pontos de+1 por nível e fórmula atual da campanha como **provisórios**, sujeitos à revisão futura. E05 permanece somente no laboratório. Esses aceites resolvem as duas primeiras respostas de fechamento; não aprovam ainda o commit/pacote de candidata nem a entrega final.
+[Pacote/limites e roteiro físico](M01_RC1.md), fonte e407a69193e168c6c1a160ab5809b1781b4a6478. Duas construções idênticas,321 arquivos/hash HTTP em /Arena/, seis grupos de núcleo e seis de acesso no pacote; suporte externo de avaliação sem save automático e recusa de saves existentes; save nativo/fechar-reabrir Chrome/carregar em perfil isolado preservou pontos/atributos. Loot/legados e descanso idênticos às versões aprovadas, evidências nativas anteriores reutilizadas; guard24 sorteios/auditoria40 passaram. HTTP200 por loopback e próprio IP LAN, sem afirmar acesso do A56. Nenhuma campanha completa, teste físico ou editor novo; nenhum defeito de gameplay corrigido. [Resumo técnico](evidencias/m01-rc1/preparacao.json).
 
-Documentação b65671b integrada localmente em develop pelo merge94f17ac; release/m01 criada dessa base. Escopo congelado: nenhuma funcionalidade de jogo, regra, mapa, arte ou polimento novo. Preparação/validação do pacote e suporte externo de avaliação são o único trabalho autorizado. Sem main/push/tag/release publicada/Pages. Resultados e identificação da candidata serão registrados após a construção.
+## Aceites de escopo da candidata
+
+Aceites explícitos de30/10/2026 registrados na [fonte de escopo](BACKLOG_M01.md#aceites-para-preparar-a-primeira-candidata--30102026): exceção não atendida de paisagem/fullscreen, provisórios atuais e E05 isolado. Não equivalem a teste físico ou aprovação do pacote.
 
 ## Leitura operacional da validação — consolidação 30/10/2026
 

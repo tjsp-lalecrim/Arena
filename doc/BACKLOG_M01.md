@@ -1,3 +1,7 @@
+## M01 RC1 preparada — aguardando avaliação
+
+Pacote **m01-rc1**, fonte **e407a69193e168c6c1a160ab5809b1781b4a6478**, em release/m01. [Identificação, evidências, rede/A56 e notas de revisão](M01_RC1.md). Artefato321 arquivos, manifesto77ca5012…; escopo do jogo idêntico à implementação aprovada. Sem tag/main/push/Pages/release publicada. Aceites abaixo registrados; falta teste físico focal e aprovação explícita desta candidata, não novo estudo ou polimento.
+
 ## Aceites para preparar a primeira candidata — 30/10/2026
 
 Responsável aceita **paisagem/fullscreen não atendidos no M01**, adiados para marcos futuros, sem marco numérico definido ou alegação de atendimento técnico. Aceita balanceamento atual,3 pontos de+1 por nível e fórmula atual da campanha como **provisórios**, sujeitos à revisão futura. E05 permanece somente no laboratório. Esses aceites resolvem as duas primeiras respostas de fechamento; não aprovam ainda o commit/pacote de candidata nem a entrega final.
@@ -15,8 +19,8 @@ Documentação b65671b integrada localmente em develop pelo merge94f17ac; releas
 | Critérios funcionais atendidos | Criação→introdução→dungeon/quests/combate/loot/inventário/recuperação→Gate/encerramento implementados e com evidências/aprovações nos respectivos recortes. Distribuição por inventário funcionalmente aprovada; saldo/migração/save-load cobertos tecnicamente. Reutilizar a cobertura por versão/ambiente, sem atribuir tudo ao último relato |
 | Integrações atendidas, posteriores à prévia pública | Expansão de1 para40 pontos de descanso, ouro reserva2–8 e retirada de raros provisórios integrados, legados preservados; atributos3/+1 integrados. Pilotos de arma e descanso inicial já pertenciam à base pública: não criar nova rodada para eles. Referências e limites em VALIDACAO_M01.md |
 | Ressalvas já aceitas | Artes com inconsistências conhecidas, acabamento/encaixes pontuais e portas laterais pouco visíveis; aprovação funcional não apaga esses defeitos. Balanceamento continua provisório; manter escolhas/ganhos do jogador. Não reabrir geração ou elevar toda ressalva a bloqueio |
-| Requisitos adiados, não atendidos | Paisagem/fullscreen quando suportados (M01-19/REF14). Exigem atendimento ou **aceite explícito da exceção no fechamento M01**, com registro de continuidade; autorização anterior de avançar a M01-20 não foi aceite final nem atendimento técnico |
-| Critérios de entrega ainda por encerrar | Aceite do balanceamento inicial/provisórios; verificações focais da build candidata; documentação/manifesto/pacote final identificados e aceite do commit de entrega. Não exigir fórmula definitiva para toda a campanha ou catálogo completo |
+| Requisitos adiados, não atendidos | Paisagem/fullscreen quando suportados (M01-19/REF14). **Aceite explícito concedido em30/10/2026** para fechar M01 sem esse atendimento, reservado a marcos futuros sem numeração definida; não é atendimento técnico |
+| Critérios de entrega ainda por encerrar | Balanceamento/provisórios aceitos em30/10/2026; pacote RC1 identificado e verificações técnicas registradas em M01_RC1.md. Faltam teste físico focal e aprovação do commit/pacote de candidata/entrega. Não exigir fórmula definitiva para toda a campanha ou catálogo completo |
 | Bloqueios concretos | Nenhuma falha funcional crítica comprovada nos relatos/checagens atuais. Há decisões de aceite e evidências da candidata ainda abertas, sem inventar defeito. Discussão obrigatória de dois chats/motor **cumprida** por esta retrospectiva |
 | Melhorias futuras, fora da preparação imediata | REF01/03/06/07–11/13/15/16 e demais recortes conforme registro único; apresentação dos atributos, menu intuitivo, fundo genérico, favoritos/notificações e ilustração de abertura não começam automaticamente. Catálogo/encantados e estudos de descanso/respawn permanecem futuros. Sem atribuir prazo/marco não aprovado |
 | Revisão em marcos seguintes | Manter avaliação de balanceamento ao fim de cada marco; reavaliar escalas e provisórios na faixa seguinte. Continuar no MV, sem migração antes do M02 e sem autorização automática de migrar no M02 |
@@ -33,13 +37,13 @@ Se nenhuma falha aparecer, registrar resultado por SHA/ambiente e levar os aceit
 
 ## Respostas explícitas antes da entrega final
 
-- Aceitar paisagem/fullscreen **como exceção não atendida no M01**, ou autorizar tratá-los antes do fechamento? Registrar destino futuro sem presumir M02.
-- Aceitar o balanceamento da faixa inicial e3 pontos de+1 como provisórios do M01, após o registro focal da candidata, mantendo a fórmula atual? Não pedir novamente autorização da implementação já aprovada nem promover E05.
+- **Respondida em30/10/2026:** paisagem/fullscreen podem permanecer não atendidos no M01, adiados para marcos futuros; não perguntar novamente nem presumir número do marco.
+- **Respondida em30/10/2026:** balanceamento atual,3/+1 por nível e fórmula atual aceitos como provisórios; revisar futuramente, sem promover E05.
 - Após essas decisões e os resultados focais, aprovar **o commit/pacote exato de entrega** e autorizar os passos de release/tag/publicação desejados. Nada disso foi autorizado por esta consolidação.
 
 ## Próximo recorte mínimo proposto
 
-**Preparar candidata de M01-20:** partir de uma referência congelada de develop, reconstruir pacote em diretório ignorado, identificar SHA/manifesto e executar somente o roteiro focal acima; entregar resultado para os aceites. Não incorporar melhorias ou limpar arquivos no mesmo recorte. Branch release/m01 e tag anotada m01-rc1 somente quando autorizadas e após nova conferência dos nomes; procedimentos em [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#tags-e-entrega-m01). Pages continua ação manual separada. Não criar candidata nem executar testes nesta tarefa.
+**Preparar candidata de M01-20:** partir de uma referência congelada de develop, reconstruir pacote em diretório ignorado, identificar SHA/manifesto e executar somente o roteiro focal acima; entregar resultado para os aceites. Não incorporar melhorias ou limpar arquivos no mesmo recorte. Branch release/m01 e tag anotada m01-rc1 somente quando autorizadas e após nova conferência dos nomes; procedimentos em [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#tags-e-entrega-m01). Pages continua ação manual separada. Preparação autorizada em30/10/2026 e executada como RC1, sem tag. Agora aguardar teste físico focal e aprovação explícita da referência; não expandir o escopo.
 
 ---
 

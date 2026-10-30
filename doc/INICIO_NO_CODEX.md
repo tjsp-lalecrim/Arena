@@ -35,7 +35,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e adiados**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Autorizado agora:** somente consolidar estes documentos e preparar a decisão de candidata, sem criar pacote/tag/release/deploy nesta tarefa. **Próximo recorte proposto, a autorizar:** congelar uma referência de candidata a partir de develop, reconstruir o pacote e executar o roteiro focal da matriz. Não iniciar melhorias, lotes ou migração de motor por associação. A discussão obrigatória de dois chats/motor foi realizada; [decisões da retrospectiva](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026) não equivalem a aceite final do M01.
+**Estado autorizado em30/10/2026:** documentação integrada localmente em develop e primeira candidata preparada em release/m01. Fonte/pacote e avaliação A56 em [M01_RC1.md](M01_RC1.md); aguardar aprovação explícita. Paisagem/fullscreen foram aceitos como não atendidos no M01; balanceamento/3 pontos/fórmula atual aceitos como provisórios, sem promover E05. Sem tag/main/push/Pages/release publicada. Não iniciar melhorias, lotes ou migração de motor por associação. A discussão obrigatória de dois chats/motor foi realizada; [decisões da retrospectiva](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026) não equivalem a aceite final do M01.
 
 ---
 
