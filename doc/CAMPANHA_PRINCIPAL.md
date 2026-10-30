@@ -21,6 +21,8 @@ Cada quest MQ01 a MQ10 corresponde respectivamente a um marco M01 a M10. Consult
 
 Dependência principal: MQ01 → MQ02 → MQ03 → MQ04 → MQ05 → MQ06 → MQ07 → MQ08 → MQ09 → MQ10. Cada cadeia contém etapas de obtenção, entrega e descoberta de localização; não eliminar os locais preparatórios como se fossem side quests opcionais.
 
+**Planejamento pós-M01:** entrega m01 preservada; cadeia mínima, recortes urbanos, pré-requisitos/retaliação de MQ02 e proposta de continuidade dos saves finais em [BACKLOG_M02.md](BACKLOG_M02.md). Esse plano aguarda avaliação e não inicia M02. Refinamentos em QUALIDADE-01 são separados da campanha e do MOBILE-01; não duplicam a cadeia narrativa aqui.
+
 ## Fontes por registro
 
 Os arquivos estão em doc/wiki/ e seguem o sufixo ` - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf`:

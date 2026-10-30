@@ -1,8 +1,10 @@
-# Entrada operacional do Arena — M01
+# Entrada operacional do Arena — pós-M01
 
-Atualizado em **30/10/2026**. Candidata de referência: RC1 **e407a69193e168c6c1a160ab5809b1781b4a6478**, preparada em release/m01; fonte e manifesto em [M01_RC1.md](M01_RC1.md). Develop consolidado em94f17ac tem implementação equivalente à referência anterior114cf4b; os documentos desta atualização não mudam o jogo. M01-01–18 integrados, fluxo público funcional confirmado na versão abaixo; M01 **aprovado como entrega desktop com ressalvas**; fechamento em [ENTREGA_M01.md](ENTREGA_M01.md). Paisagem/fullscreen permanecem não atendidos, em MOBILE-01; balanceamento segue provisório. Distribuição de atributos e expansão de descanso já implementadas/integradas; não são novos backlogs ausentes.
+Atualizado em **30/10/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). Esta feature altera somente planejamento, sem modificar a entrega.
 
-**Alvo vigente:** M01 fecha no navegador desktop, inicialmente Chrome. [MOBILE-01](MOBILE_01.md) concentra adaptação/validação mobile e APK, sem data/tecnologia escolhidas. Preservar toque; não exigir aparelho ou Pages a cada entrega desktop. Aprovação final da RC1 recebida explicitamente; sem bloqueio desktop identificado.
+**Trabalho atual:** avaliar [M02 mínimo](BACKLOG_M02.md) e [QUALIDADE-01](QUALIDADE_01.md). Nenhuma implementação M02 iniciada/autorizada por este plano. Primeira tarefa recomendada, após avaliação: M02-01, especificação da cadeia e política de continuidade dos saves M01, inclusive ending/ended. Não iniciar polimento por associação.
+
+**Alvo vigente:** navegador desktop, inicialmente Chrome; preservar toque. [MOBILE-01](MOBILE_01.md) concentra mobile/APK, sem data/tecnologia escolhidas ou validação física a cada entrega. Pages permanece manual, sem atualização nesta tarefa. QUALIDADE-01 é janela futura limitada, a reavaliar depois da entrega funcional M02; não é pré-requisito automático.
 
 ## Leitura curta e fontes principais
 
@@ -11,13 +13,15 @@ Ler esta entrada e somente as fontes pertinentes ao recorte. Decisões vigentes 
 | Assunto | Fonte principal |
 | --- | --- |
 | Processo, dois chats, motor, entregas pequenas, Git e tags | [DESENVOLVIMENTO_E_VERSIONAMENTO.md](DESENVOLVIMENTO_E_VERSIONAMENTO.md) |
-| Escopo/aceite M01, matriz e próximas decisões | [BACKLOG_M01.md](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026), com DEMO_INICIAL.md |
+| Entrega/aceite M01 e matriz histórica | [BACKLOG_M01.md](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026), com DEMO_INICIAL.md |
 | Aprovações, versões, ambientes e evidências | [VALIDACAO_M01.md](VALIDACAO_M01.md) |
 | Regras de personagem, progressão e dados | [Personagem](PERSONAGEM.md), [progressão](HABILIDADES_E_PROGRESSAO.md), [dados](DADOS_M01.md), [plugins](PLUGINS.md) |
 | Arte, mapa e navegação | [Arte](DIRECAO_DE_ARTE.md), [mapas](DIRETIVA_DE_MAPAS.md), [navegação](DIRETIVA_DE_NAVEGACAO.md) |
 | Provisórios de balanceamento e roteiro por marco | [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md) |
 | Melhorias/ressalvas, sem tarefas duplicadas | [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md) |
 | Plataformas mobile/Android | [MOBILE-01](MOBILE_01.md) |
+| Próxima cadeia e decisões de continuidade | [M02](BACKLOG_M02.md) |
+| Triagem/janela técnica de refinamento | [QUALIDADE-01](QUALIDADE_01.md), critérios detalhados no registro de refinamentos |
 | Pacote reproduzível e publicação manual separada | [Pacote](PACOTE_WEB_M01_19.md), [publicação](PUBLICACAO_TESTE_PAGES_M01_19.md) |
 
 ## Aprovações e limites de cobertura
@@ -39,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Estado autorizado em30/10/2026:** documentação integrada localmente em develop e primeira candidata preparada em release/m01. Fonte/pacote e avaliação A56 em [M01_RC1.md](M01_RC1.md); aprovação final explícita recebida. Paisagem/fullscreen foram aceitos como não atendidos no M01; balanceamento/3 pontos/fórmula atual aceitos como provisórios, sem promover E05. A RC1 foi publicada depois, somente para teste físico, conforme [PUBLICACAO_RC1_M01.md](PUBLICACAO_RC1_M01.md); exceção na main limitada à infraestrutura, sem integrar o jogo ou criar tag/release final. Aquele relato RC1 foi corrigido para navegador integrado do GPT; depois o responsável confirmou somente distribuição no mobile. O teste físico amplo pertence agora ao MOBILE-01 e não bloqueia a aprovação desktop. Não iniciar melhorias, lotes ou migração de motor por associação. A discussão obrigatória de dois chats/motor foi realizada; [decisões da retrospectiva](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026) não equivalem a aceite final do M01.
+**Continuidade autorizada nesta tarefa:** planejamento documental em feature derivada de develop; aguardar avaliação antes de implementar M02. Escolha de motor/dois chats já realizada; manter MV e entregas pequenas. M01 e suas aprovações não são reabertos. A política de saves M02 e as adaptações narrativas/viagem ainda são propostas em BACKLOG_M02.md; não distribuir continuação antes dessa decisão e sua validação.
 
 ---
 

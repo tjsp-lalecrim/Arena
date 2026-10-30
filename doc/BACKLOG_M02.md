@@ -1,0 +1,84 @@
+# M02 — Fang Lair: plano mínimo para avaliação
+
+**Planejado, não iniciado; aguarda avaliação do responsável.** Base: develop85940d4723956079f920d7332f68a9d5a2d75641; entrega preservada: tag anotada m01/main df539eeee2d88199312ca3a8cba98edd2b2b900b. Não altera a entrega, suas ressalvas, fórmula ou saves. Prioridade: ampliar a campanha mínima funcional, não abrir uma rodada ilimitada de polimento. Reavaliar QUALIDADE-01 depois da entrega funcional deste marco; MOBILE-01 separado.
+
+## Objetivo mínimo e fontes
+
+Continuar a fuga → orientação de Ria → localizar a corte de Rihad → obter a missão de Stonekeep → recuperar e entregar o pergaminho → revelar Fang Lair → atravessar seus dois níveis e enigmas → obter o primeiro fragmento do Staff of Chaos → sobreviver à retaliação de Tharn. Encerrar o marco em estado persistente seguro, preparado para M03, **sem implementar Labyrinthian**. Não reduzir a quest à coleta do fragmento.
+
+Fontes efetivamente consultadas nesta tarefa, sem pesquisa externa:
+
+- [Inventário da campanha](CAMPANHA_PRINCIPAL.md), MQ02 e limites de cidades/destino após o Gate.
+- `doc/wiki/Arena_Fang Lair (quest) - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf`: p.1 Quick Walkthrough/Another Vision; p.2 Where Is Fang Lair, Quid Pro Quo1 e Stonekeep; pp.3–4 entrega, dois níveis/enigmas e Ambush; p.5 Notes/Bugs/Quest Log. Captura local de20/10/2026, página revisada em20/08/2026. Identificação da fonte: https://en.uesp.net/wiki/Arena:Fang_Lair_(quest).
+- `doc/wiki/Arena_Main Quest - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf`, p.1: sequência e orientação de Ria por sonhos.
+- Retrospectiva em [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026), [entrega M01](ENTREGA_M01.md), [quests](QUESTS.md) e [avaliação por marco](AVALIACAO_BALANCEAMENTO_POR_MARCO.md).
+
+O PDF da wiki é evidência documental secundária, não uma observação nova no executável original. Nenhum mapa original de MQ02 ou diálogo foi extraído/decodificado nesta tarefa. Antes da implementação de cada local, conferir plantas, textos e posições na wiki e, quando viável, nos arquivos/jogo original, registrando divergências e adaptações. Não tratar coordenadas citadas na wiki como coordenadas MV nem usar dungeon genérica. Preservar a instalação original; extrações de consulta somente em área ignorada.
+
+### Cadeia e recortes propostos — não são decisões de implementação já aprovadas
+
+| Obrigação da cadeia / evidência local | Menor representação proposta |
+| --- | --- |
+| Visão de Ria ao primeiro sono após nível2; a fonte relata trecho omitido se o jogador já chegou ao3 (pp.1–2) | Visão única em descanso autorizado, nível≥2, preservando a explicação completa dos oito fragmentos. Não reproduzir a omissão como regra. Garantir oportunidade de obter EXP antes desse gatilho se o save chegar nível1; não elevar nível automaticamente nem iniciar ataques na cidade para isso. Local/faixa definidos na especificação |
+| Informações levam a Hammerfell, Rihad e palácio; Blubamka pede pergaminho e informa Stonekeep (p.2) | Uma chegada e um informante com essas informações; núcleo caminhável de Rihad com acesso à corte e ponto autorizado de repouso. Condensar perguntas repetidas e viagem, não a troca narrativa com a rainha. Destino do Gate varia no original: proposta de transição resumida até Rihad exige aceite abaixo |
+| Stonekeep: uma dungeon inundada, pergaminho na ilha; chave de ferro opcional; Golthog citado mas não encontrado (pp.2/5) | Preservar rota, água/ilha, fonte do pergaminho e retorno conforme planta. Não inventar chefe Golthog ou transformar a chave opcional em pré-requisito. Adaptar o salto/passagem à grade sem exigir um sistema geral de salto/levitação; explicar a solução local antes de construir |
+| Entregar pergaminho para revelar localização de Fang Lair (p.3) | Retorno real à corte, verificação/entrega única e desbloqueio persistente do destino; sem mapa mundial obrigatório |
+| Mina anã: nível1, túneis/poços, células, enigma e chave dourada que permite descer (pp.3–4) | Representar conectividade e elementos da rota principal pela planta, incluindo cela correta, chave e porta. Resposta errada libera aranhas conforme fonte; definir encontro controlado sem refazer respawn. Não reproduzir exploração de resposta vazia como acerto |
+| Nível2: enigma da luva e guardiões hell hounds antes do fragmento (p.4) | Segundo nível identificável, enigma traduzido com respostas PT aceitas e defesa do fragmento. Tradução não deve tornar a resposta impossível. Não adicionar boss original inexistente ou substituição silenciosa de espécie |
+| Visão/retaliação de Tharn após o fragmento; gatilho original ligado a encontro aleatório (pp.4–5) | Propor evento único controlado no percurso de saída e inimigo a identificar na especificação; manter ameaça e consequência. Não criar calendário, ataques surpresa gerais durante descanso ou gerador de emboscadas. O momento adaptado precisa de aceite |
+
+Não eliminar pré-requisitos/enigmas para reduzir escopo. Áreas opcionais recortadas devem constar na comparação de mapas. Lava/tesouros secretos opcionais não justificam criar travessia de lava, Passwall, doença ou catálogo de resistências agora: delimitar sua exclusão sem cortar a rota necessária. Se uma barreira/efeito for indispensável na rota escolhida, especificar adaptação e verificar sua viabilidade antes de produzir conteúdo dependente.
+
+## Separação do conteúdo
+
+| Grupo | Incluído / limite |
+| --- | --- |
+| Obrigatório | Cadeia acima, diário PT-BR, pergaminho/chave/fragmento com fontes e recibos estáveis, destinos condicionados, narrativa/transições e retaliação. Preservar conhecimento do jogador, sem spoilers futuros |
+| Compartilhados indispensáveis | Continuação M01→M02; estados de mais de uma quest/área, narrativa por trecho e recuperação por item/fonte; transferências condicionadas entre locais; save/load de entregas, enigmas e encontros. Reusar APIs, inventário, combate, loot, progressão e descanso existentes; sem duplicar consumidores |
+| Representativo suficiente | Corte/informante/repouso e acessos, não cidade inteira. Um exemplar integrado por nova arquitetura ou participante necessário, antes de ampliar. Reusar ratos/goblins e opções de personagem aprovadas; especificar mínimo de ghouls, aranhas, hell hounds e demais encontros realmente exigidos pela rota, sem converter todos em goblins. Não exigir toda espécie/variante do original em áreas opcionais |
+| Opcional | Lojas completas, guildas/serviços/cidadãos/casas, side quests, catálogo extenso, equipamentos por todos os materiais/slots originais, segredos/lava opcionais, mapa-guia/bússola/procedural, mobilidade/magia ambiental geral. Sem inclusão automática |
+
+Recuperação mínima: reusar poções existentes e repouso em pontos justificados; disponibilidade avaliada no percurso, sem loja/economia completa como dependência. Um pequeno conjunto de recompensas úteis pode reutilizar itens existentes; novo efeito só se necessário e especificado. Novos IDs sempre acrescentados, sem reutilizar os legados ou reintroduzir variantes raras retiradas. Não multiplicar equipamentos antes de decidir orçamento/slots caso o recorte realmente precise deles.
+
+## Reuso, limites e decisões estruturais
+
+Reutilizáveis: criação/16 identidades e cobertura visual registrada; recursos e3/+1 provisórios; ações e consumo único; inventário/equipamentos/atalhos; loot com recibos/reservas/fallback2–8; quest/diário/recuperação; patrulha/contato/respawn condicionado; portas/água/repouso; paginação narrativa e proteção de entrada; persistência/migrações, namespace e empacotamento manual. Reuso não certifica automaticamente uma configuração nova.
+
+Limites confirmados por leitura, não por testes novos: `ArenaQuests.json` é configuração singular MQ01; `Arena_Quests` contém objetivos/recibos/fontes e interação de mapa específicos; `ArenaNarrative.json` e `Arena_Narrative` encerram em ending/ended e voltam à cena narrativa ao carregar. Precisam de extensão **mínima por IDs estáveis** antes da segunda quest/novo encerramento, sem reescrever os núcleos reutilizáveis ou migrar motor. Configurações de dungeon/encontro/loot devem distinguir áreas; não clonar plugins completos nem reutilizar fontes MQ01 em MQ02.
+
+Antes de multiplicar conteúdo: definir (a) continuidade de saves e flags; (b) estados/destinos/itens de MQ02 e gatilhos narrativos; (c) topologia mínima e tratamento de travessias/enigmas; (d) participantes/ações indispensáveis e contratos de assets. Fórmula, pontos e equipamentos atuais continuam referência provisória; não é necessário resolver toda sua escala agora. Contribuição de MDF/AGI/SOR e concessões de equipamentos ficam na avaliação quando efetivamente usadas, sem sistemas novos para justificar atributos.
+
+### Política de saves — recomendação a aprovar antes da implementação/distribuição M02
+
+- Aceitar saves normais da entrega m01 **na mesma origem/perfil**, sem exigir reinício: preservar personagem, nível/EXP, saldo/pontos, recursos gastos, equipamentos, inventário, magias, entregas/recibos, loot e MQ01. Não curar, premiar ou redistribuir como efeito da migração.
+- Antes do Gate: manter MQ01 e oferecer continuação ao alcançá-lo na versão M02. Saves finais com MQ01 concluída e narrativa `ending`/`ended`: disponibilizar transição explícita **Continuar jornada**, aplicada uma vez e sem repetir criação/intro/Gate/recompensas. Ter assistido ao fim da demo não invalida o save; se o estado não foi salvo, retoma-se o último save real, sem reconstruir progresso perdido.
+- Não converter automaticamente sessões técnicas/E05 em campanha. Estados incompletos ou desconhecidos devem manter o save original e receber diagnóstico, sem marcar quests concluídas por conveniência. Definir comportamento recuperável para cada estado antes da migração.
+- Versionar contratos/migrações idempotentes; manter `arena:m01:save-v1` (não renomear para m02). Não alterar IDs existentes. A tag m01 continua executando a demo original; saves gravados no M02 não têm promessa de funcionar ao voltar ao binário M01. Preservar cópia de segurança antes da primeira gravação atualizada, sem apagar ou sobrescrever automaticamente os slots do usuário.
+- Não prometer transferência entre origens/dispositivos, exportação/importação ou APK. Distribuir M02 só após validar fixtures sintéticas pré-Gate/fim-M01/ending/ended e save/load M02, inclusive reaplicação da migração sem duplicações.
+
+## Backlog em pequenas entregas
+
+Cada linha é um objetivo verificável; tarefas de mapa/arte devem começar por trecho/amostra integrada e dividir a produção restante se crescer. Uma linha não autoriza um lote completo. Features próprias derivadas de develop, critérios focais e evidências por referência; percurso integrado apenas nas integrações definidas.
+
+| Item | Objetivo | Dependências | Critérios de aceitação planejados |
+| --- | --- | --- | --- |
+| M02-01 | Especificar cadeia e decisões de continuidade | Avaliação deste planejamento | Tabela de estados MQ02, fontes/entregas, gatilhos, destinos, recortes de plantas e inventário de participantes/assets; resolver decisões abaixo. Sem texto/fonte incertos apresentados como confirmados |
+| M02-02 | Continuação de saves e contratos por quest/área |01 e política aprovada | Sessão sintética pré-Gate/final-M01 transita uma vez; modo técnico não vira campanha; MQ01/recursos/itens/pontos preservados; salvar/carregar e migração repetida sem duplicação. Sem conteúdo inteiro MQ02 |
+| M02-03 | Chegada, orientação e missão de Rihad |02, gatilhos aprovados | Núcleo mínimo com informante/corte/repouso; sonho único com condições corretas; nível1 tem caminho de progressão antes do sonho. Diário libera Stonekeep sem Fang Lair antecipado; save/load do pedido |
+| M02-04 | Amostra integrada de Stonekeep |03, planta/rota em01 | Trecho entrada→água/passagem→fonte permite obter pergaminho e voltar; escala/colisão/apoio e proteção/recuperação da fonte; novos assets indispensáveis validados em contexto antes de expandir |
+| M02-05 | Stonekeep mínima e entrega na corte |04 | Completar somente áreas/participantes necessários à rota especificada; regressão focal da amostra. Entrega consome/registra conforme contrato, não repõe item entregue, revela destino uma vez. Outras áreas excluídas documentadas |
+| M02-06A | Amostra integrada das celas de Fang Lair |05, arquitetura/participantes especificados | Enigma, acerto/erro, chave dourada, porta e encontro condicionado funcionam em um trecho; save/load sem duplicações; amostra avaliada antes de ampliar |
+| M02-06B | Conectar a rota do nível1 |06A | Entrada/túneis/celas/descida conectados conforme planta e recortes registrados; preservar amostra validada. Novos trechos divididos em subentregas se excederem o recorte, sem exigir salas opcionais |
+| M02-07A | Amostra do segundo enigma e guardiões |06B, participantes especificados | Uma sala integrada aceita respostas PT definidas; erro não bloqueia permanentemente, guardiões usam combate existente; validar primeiro o exemplar necessário |
+| M02-07B | Conectar nível2 e obter fragmento |07A | Descida/sala/fragmento acessíveis conforme planta; objeto importante único, recuperação e save/load antes/depois da coleta; preservar amostra aprovada |
+| M02-08 | Retaliação e conclusão MQ02 |07B, adaptação aprovada em01 | Visão/emboscada uma vez, vitória/derrota/loot sem duplicações, fragmento mantido e diário concluído; retomada entre coleta e retaliação funciona; checkpoint seguro de fim M02, sem iniciar MQ03 |
+| M02-BAL | Avaliação/ajuste do percurso do marco |03–08 integrados | Referência fixa, três registros (chegada; retorno do pergaminho; saída/retaliação), dados reais encontrados/usados conforme processo recorrente; um grupo de parâmetros por experimento autorizado, decisão/ressalvas documentadas, ganhos frente a inimigos antigos preservados |
+| M02-FIM | Verificar delta e preparar entrega |BAL, decisão sobre janela opcional | Chrome desktop: percurso mínimo e saves de transições; compatibilidade MV/registro de plugins quando afetados; pacote identificado e aceite. Reusar provas M01, sem testar toda combinação. Reavaliar QUALIDADE-01 depois da entrega funcional; publicação/release dependem de autorização própria |
+
+## Janela de refinamento e decisões pendentes
+
+Recomendar **no máximo dois recortes não bloqueantes**: REF03 (uma amostra de fundo genérico sem elementos exclusivos da cela, para encontros onde caiba) e REF06 (notificação discreta de etapa/quest, útil na cadeia mais longa). Motivos e classificação no registro único de [refinamentos](REFINAMENTOS_POS_INTEGRACAO_M01.md#triagem-pós-m01--planejamento-do-m02). Seleção recomendada, não execução autorizada: no máximo uma entrega pequena por item, sem lotes; se crescer ou exigir regra nova, registrar restante e voltar à campanha. Não condicionar o fechamento funcional a esses dois itens.
+
+**Respostas necessárias antes de implementar:** (1) aprovar este recorte mínimo e a condensação da viagem até Rihad, preservando a informação sobre a origem; (2) aprovar a política de continuação/migração dos saves finais M01; (3) aprovar retenção de nível≥2/descanso autorizado com visão completa de Ria e retaliação única controlada, em vez de omissão/aleatoriedade originais. Especificação01 deve detalhar posições, traduções e inimigo da retaliação pelas fontes, sem inventá-los nesta proposta. Aprovar planejamento não aprova valores novos, fórmula E05 ou produção em lote.
+
+**Primeira tarefa recomendada:** M02-01, especificação documental da transição/saves e estados MQ02; prioridade porque elimina bloqueio real de continuação e evita refazer eventos/mapas antes de conteúdo. Nenhuma implementação iniciada nesta revisão; aguardar avaliação.

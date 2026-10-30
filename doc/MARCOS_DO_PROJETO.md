@@ -21,11 +21,15 @@ Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. 
 
 Os detalhes narrativos e eventos completos de cada marco devem ser especificados consultando as fontes listadas em CAMPANHA_PRINCIPAL.md. A tabela não substitui sonhos, entregas, enigmas ou emboscadas exigidos pela quest; “obter fragmento” é um resumo de aceitação, não autorização para cortar o restante da cadeia.
 
-O detalhamento do primeiro marco está em BACKLOG_M01.md. Os demais marcos receberão seus backlogs quando entrarem no planejamento de implementação.
+O fechamento do primeiro marco está em BACKLOG_M01.md e ENTREGA_M01.md (tag m01). O [backlog mínimo do M02](BACKLOG_M02.md) está proposto para avaliação, sem implementação autorizada; demais marcos receberão seus backlogs ao entrar no planejamento.
 
 ## Marco técnico independente — MOBILE-01
 
 **MOBILE-01 — adaptação mobile e APK Android**, planejado com execução a planejar. Escopo, dependências de entrada e critérios subordinados em [MOBILE_01.md](MOBILE_01.md); sem tecnologia de empacotamento escolhida. Não renumera a campanha, não bloqueia M01 desktop nem exige aparelho/Pages a cada entrega.
+
+## Marco técnico independente — QUALIDADE-01
+
+[QUALIDADE-01](QUALIDADE_01.md): janela limitada de consistência visual, navegação desktop, apresentação e manutenção focal. Planejado, não iniciado; **reavaliar execução após a entrega funcional do M02**, sem torná-lo pré-requisito para começar a campanha seguinte. Prioridades referenciam o registro único de pendências; mobile/APK continuam somente no MOBILE-01. Não é reescrita geral, catálogo completo nem compromisso de eliminar todas as ressalvas.
 
 ## Dependências e continuidade
 

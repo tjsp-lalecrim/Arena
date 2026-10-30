@@ -1,5 +1,37 @@
 # Pendências consolidadas após integração
 
+## Triagem pós-M01 — planejamento do M02
+
+M01 concluído/publicado na tag m01, com ressalvas preservadas. Esta seção é a classificação vigente; vínculos M01 nas tabelas abaixo permanecem históricos, não reabrem o marco. Não há bloqueio funcional novo confirmado nesta tarefa documental; nenhuma execução do jogo foi feita. Um defeito crítico identificado depois entra no backlog ativo, não aguarda QUALIDADE-01. Plano mínimo/decisões em [BACKLOG_M02.md](BACKLOG_M02.md); janela técnica futura em [QUALIDADE_01.md](QUALIDADE_01.md).
+
+| Pendência existente | Classificação vigente | Encaminhamento sem repetir seus critérios |
+| --- | --- | --- |
+| Continuação após fim da demo e política de saves (MARCOS_DO_PROJETO.md) | Decisão estrutural antes de expandir | M02-01/02: aprovar tratamento pré-Gate e ending/ended; limitação atual impede continuação MQ02, não invalida M01 |
+| Configuração singular de quest/narrativa/área (contratos M01) | Decisão estrutural antes de expandir | M02-01/02, extensão mínima por IDs, sem reescrita geral; preservação/migração anteriores à distribuição |
+| REF01 — favoritos/atalhos | Melhoria útil ao M02 | Conveniência, não requisito para iniciar MQ02; fora dos dois recortes recomendados. Candidata futura QUALIDADE-01; parcela física somente MOBILE-01 |
+| REF02 — caminhada | Refinamento futuro | Cobertura entregue/aprovada preservada; somente defeito específico novo autoriza revisão, não uma segunda expansão automática |
+| REF03 — cenário genérico | Melhoria útil ao M02 | **Uma das duas recomendações da janela M02**, uma amostra integrada sem elementos exclusivos da cela; sem lote. Se não selecionada, fila QUALIDADE-01 |
+| REF04 — balanceamento | Melhoria útil ao M02; avaliação é critério obrigatório do marco | M02-BAL pelo processo existente; base atual provisória preservada. Não iniciar novo estudo nem promover E05 |
+| REF05 / REF05-C — fontes e catálogo | Melhoria útil ao M02 | Configurar apenas inimigos/itens representativos necessários à rota; pesquisar efeitos/fontes antes de adicionar. Catálogo extenso e raros sem efeito concreto continuam futuros |
+| REF06 — notificações | Melhoria útil ao M02 | **Segunda recomendação da janela M02**, uma entrega pequena; sem tornar condição de progressão/fechamento. Se não selecionada, QUALIDADE-01 |
+| REF07 — introdução | Refinamento futuro | Não reabrir a introdução aprovada; fila visual QUALIDADE-01 somente com defeito concreto |
+| REF08 — porta/Gate e ilustrações | Refinamento futuro | Preservar ilustrações, gatilhos e entrega m01; candidato pontual QUALIDADE-01 |
+| REF09 — arma/continuidade/pesado da adaga | Refinamento futuro | Pilotos aprovados mantidos; restante na fila QUALIDADE-01. Se um defeito impedir participante indispensável novo, tratar esse caso no M02 antes de multiplicá-lo |
+| REF10 — apresentação dos drops | Refinamento futuro | Menu aprovado preservado; candidato QUALIDADE-01 por lacuna concreta, separado de regras/catálogo |
+| REF11 — abordagem simultânea | Decisão estrutural antes de expandir, **somente se** o novo encontro depender disso | M02-01 deve fixar encontros necessários usando fluxo atual; não assumir agregação automática. Não bloqueia toda MQ02 nem autoriza novo sistema |
+| REF12 — descanso | Refinamento futuro | Expansão integrada preservada. Fade, surpresa e respawn parcial continuam estudos distintos, fora do M02 mínimo. Sonho narrativo autorizado futuramente não implica passagem de horas/ataques |
+| REF13 — menu por toque | Refinamento futuro no alvo desktop | MOBILE-01.1, sem duplicação em QUALIDADE-01 |
+| REF14 — tela | Refinamento futuro | Parcela desktop candidata QUALIDADE-01; layout/paisagem/fullscreen mobile permanecem MOBILE-01.2/.3, não atendidos no M01 |
+| REF15 — menu/distribuição | Refinamento futuro | Parcela desktop candidata QUALIDADE-01; parcela mobile MOBILE-01.2. Sem remoção de funções ou redistribuição de pontos por associação |
+| REF16 — ilustração de abertura | Refinamento futuro | Candidata visual QUALIDADE-01, depois de amostra/aceite, sem prioridade automática sobre campanha |
+| Ressalvas anteriores: paleta, confirmação, acesso/uso de itens, destaque de raros, retratos e portas laterais | Refinamento futuro | Mantidas nos registros originais e fila QUALIDADE-01, sem novos IDs ou obrigação de corrigir todas no M02 |
+| Investigação de natação/custo aquático | Decisão estrutural **se** houver mudança de regra; adaptação atual pode ser reutilizada | M02-01 verifica travessias necessárias e preserva Vigor só em técnicas; nenhuma necessidade de custo novo demonstrada. Não reabrir pesquisa por existir água |
+| Slots/orçamento de equipamento, fórmula e bônus provisórios | Decisão estrutural antes de multiplicar conteúdo dependente | Não bloqueiam iniciar M02 com base atual. Decidir somente se o recorte exigir novas categorias/escala; balanceamento por percurso em M02-BAL, sem migração silenciosa do E05 |
+
+**Janela M02 recomendada:** no máximo REF03 e REF06, por impacto na nova ambientação e numa cadeia mais longa; uma entrega pequena por item, com aceite da amostra, sem produção em lote. A seleção ainda requer avaliação e não autoriza execução. Ao atingir o limite ou encontrar escopo maior, registrar o restante e voltar à campanha; não condicionar MQ02 a esse polimento. Reavaliar execução do QUALIDADE-01 depois da entrega funcional M02, escolhendo seus recortes conforme impacto observado.
+
+## Histórico e critérios dos registros existentes
+
 Classificação vigente em30/10/2026: atender aos aceites da [matriz de fechamento](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026); melhorias deste registro são selecionadas por impacto e janela limitada conforme workflow, sem abrir todas na preparação. Vínculos originais de backlog não foram renumerados nem transferidos silenciosamente a outro marco.
 
 Registro consolidado após o teste integrado de28/10/2026 e o relato público PC/smartphone de29/10/2026; aprovações e limites em [VALIDACAO_M01.md](VALIDACAO_M01.md). Pendências abaixo não são resolvidas pelo funcionamento geral. Este registro concentra as melhorias solicitadas e a pendência anterior de favoritos; menções históricas não criam tarefas duplicadas. Valores atuais continuam provisórios. Não são novos bloqueios funcionais de sistemas já aprovados; critérios de fechamento M01-19 permanecem em BACKLOG_M01.md.
