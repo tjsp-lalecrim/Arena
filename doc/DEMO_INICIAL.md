@@ -38,7 +38,7 @@ O fim da demo ao alcançar o Shift Gate está confirmado; o evento de encerramen
 
 ## Validação da entrega
 
-Testar abertura, nova partida, introdução, chave, porta, combate, loot, diário, salvamento/carregamento e encerramento. Validar os itens de missão nos dois pontos de transição definidos em QUESTS.md. Iniciar os testes mobile no Samsung Galaxy A56 e registrar navegador, orientação, versão do sistema e resultados.
+Testar abertura, nova partida, introdução, chave, porta, combate, loot, diário, salvamento/carregamento e encerramento. Validar os itens de missão nos dois pontos de transição definidos em QUESTS.md. M01 considera o navegador desktop como alvo obrigatório, inicialmente Chrome. Adaptações/validação física mobile e APK passam a [MOBILE-01](MOBILE_01.md); não solicitar novamente os testes físicos já válidos nem bloquear o fechamento desktop por testes mobile adicionais.
 
 Validar também menus em slots, técnicas por arma, recursos e aparência por armadura conforme os sistemas efetivamente incluídos. Bugs ou funcionalidades incompletas devem estar registrados; não declarar todo o catálogo de magias ou a campanha implementados pela conclusão deste marco.
 

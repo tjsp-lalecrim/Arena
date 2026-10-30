@@ -1,3 +1,9 @@
+## Confirmação parcial mobile e mudança de alvo — 30/10/2026
+
+Responsável informou que **testou a distribuição de pontos no mobile e confirmou funcionamento**. Associado à RC1 pública e407a69/m01-rc1, referência então disponível; não foi informado novo SHA, navegador/modelo ou ciclo de salvar/fechar/reabrir. Não atribuir nova persistência ou suporte mobile completo/APK a esse relato. A correção anterior do teste no navegador integrado do GPT continua válida para aquele relato; esta é uma confirmação posterior e delimitada.
+
+Foco vigente: testes no navegador do PC, inicialmente Chrome; M01 fecha no desktop. Testes físicos já feitos e versões permanecem válidos, sem obrigação de repetir. [MOBILE-01](MOBILE_01.md) recebe adaptação/validação mobile e APK em data a planejar. Nesta tarefa somente manifesto público RC1 e documentação foram conferidos, sem novo gameplay, smartphone ou Pages. [Matriz atual](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026).
+
 ## RC1 pública exata — 30/10/2026
 
 Run41050559624/main/manual/publish=true success, sourcee407a69193e168c6c1a160ab5809b1781b4a6478. Linux prévio e publicação coincidem exatamente com manifesto RC1 aprovado77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831.321 arquivos/hash HTTP conferidos; Chrome156 isolado abriu título e acesso técnico aos atributos sem gravar saves; página auxiliar404/excluída. [Evidência](evidencias/m01-rc1-pages/resultado.json) e [publicação/limites/roteiro](PUBLICACAO_RC1_M01.md). A56 físico continua pendente; relato do responsável foi no navegador integrado do GPT, sem inferir persistência nova ou ampliar cobertura.

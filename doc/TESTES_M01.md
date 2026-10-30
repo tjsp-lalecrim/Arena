@@ -1,3 +1,7 @@
+## Alvo vigente de testes — desktop
+
+A partir de30/10/2026, concentrar verificações no navegador do PC, inicialmente Chrome; M01 fecha nesse alvo obrigatório. Reutilizar os testes técnicos/manuais existentes. Smartphone/APK ficam no [MOBILE-01](MOBILE_01.md), sem exigir teste físico ou Pages em cada entrega desktop. Preservar toque e aplicar regressão focal emulada quando afetado, sem refatoração mobile. Roteiros físicos históricos abaixo são material para o marco técnico, não nova condição para fechar M01. Aprovações por versão em VALIDACAO_M01.md.
+
 ## Integração M01-18
 
 M01-18: executar validate-narrative, test-narrative e test-narrative-small; ARENA_URL/ARENA_EVIDENCE_DIR opcionais para contexto isolado. O roteiro completo usa232 movimentos nativos com velocidade6 só para teste e não mede balanceamento; não ocorreu encontro no resultado final.8 grupos de fluxo,6 de entrada/telas menores e108 matrizes de paginação; regressões234 criação/23 MQ01/27 persistência. Roteiro manual e lacunas em NARRATIVA_M01_18.md. Nenhum save pessoal ou teste físico foi usado.
@@ -54,9 +58,11 @@ Teste reproduzível: Playwright instalado localmente + Chrome desktop, `node too
 
 ## Samsung Galaxy A56 — preparação, execução pendente
 
+**Roteiro histórico:** planejamento abaixo registrado antes dos testes públicos; execuções posteriores e suas versões estão em VALIDACAO_M01.md. Adaptações e lacunas remanescentes pertencem agora ao MOBILE-01; não repetir verificações válidas nem exigir esta rodada para o fechamento desktop.
+
 Programação confirmada pelo responsável em28/10/2026: teste físico ao final do M01, no roteiro de integração. Sua ausência não bloqueia revisões desktop. O teste integrado informado nesta data ocorreu pela execução no editor MV, não no aparelho nem no navegador; escopo em VALIDACAO_M01.md.
 
-Servir projeto na rede local confiável e abrir o endereço do computador no Chrome do A56. O bind 127.0.0.1 do exemplo acima é somente desktop: para o aparelho usar explicitamente interface de rede local, sem publicar na Internet. Registrar URL/origem usada (saves são locais à origem), versão do Android, Chrome e data. Girar para paisagem. O MV oferece tela inteira pela tecla F4 no desktop; no aparelho falta integrar botão explícito acionado por toque, que será implementado/avaliado antes de M01-19. A barra do Chrome visível não conta como apresentação em tela inteira.
+Servir projeto na rede local confiável e abrir o endereço do computador no Chrome do A56. O bind 127.0.0.1 do exemplo acima é somente desktop: para o aparelho usar explicitamente interface de rede local, sem publicar na Internet. Registrar URL/origem usada (saves são locais à origem), versão do Android, Chrome e data. Girar para paisagem. O MV oferece tela inteira pela tecla F4 no desktop; no aparelho falta integrar botão explícito acionado por toque, cuja adaptação/avaliação fica no MOBILE-01. A barra do Chrome visível não conta como apresentação em tela inteira.
 
 Cobrir toque para mover, menu/cancelar, escolhas e teclado de nome; posteriormente slots, arrasto, combate e portal. Registrar leitura de textos, dimensões lógicas/CSS, escala, tempo até título/nova partida, fluidez e perdas de foco ao girar/retomar. Testar recarregamento e load após fechar aba. Não inferir sucesso no aparelho de emulação ou Chrome desktop. Não foram realizados testes no Galaxy A56 nesta etapa.
 

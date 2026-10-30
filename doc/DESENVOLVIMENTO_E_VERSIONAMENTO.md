@@ -12,6 +12,10 @@ Regras permanentes autorizadas pelo responsável; esta seção é a fonte do pro
 - **Prioridade e janela de refinamento:** escolher por impacto/risco e critérios do marco. Combinar uma janela limitada (tempo ou número de recortes a definir por marco); ao encerrá-la, devolver o restante ao registro futuro. Não há duração numérica aprovada nem promessa de consumo. Ressalvas aceitas não são bloqueios automáticos.
 - **Verificação e memória:** focal por mudança; percurso integrado em momentos definidos (referência congelada, integração antes de candidata e avaliação por marco, com cobertura proporcional ao delta). Reaproveitar aprovações identificadas por versão/ambiente/caso, sem pedidos repetidos. Consolidação documental ao fim de cada marco separa o vigente do histórico; não apagar evidências.
 
+## Foco de plataformas — 30/10/2026
+
+Concentrar os testes no navegador do PC, inicialmente Chrome. M01 será fechado no alvo desktop; adaptação mobile e APK pertencem a [MOBILE-01](MOBILE_01.md), sem data ou tecnologia escolhidas. Preservar toque existente e evidências por versão. Regressão focal emulada é pertinente quando a mudança afeta entrada compartilhada; não exigir testes físicos ou deploy Pages a cada entrega desktop. Pages continua manual, somente para versões escolhidas. Teste parcial mobile não equivale a suporte completo; navegador e APK têm validações/persistência próprias, sem migração automática prometida.
+
 ## Operação obrigatória — entregas pequenas
 
 1. Conferir branch, diff e alterações existentes; definir **um objetivo principal** e critérios curtos e verificáveis. Separar correção funcional, experimento visual e produção em lote em entregas distintas; não juntar sistemas independentes por conveniência.

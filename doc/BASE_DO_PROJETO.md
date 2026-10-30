@@ -16,7 +16,7 @@ Este documento é a fonte inicial de contexto para desenvolver uma releitura de 
 - Loot concede no máximo um equipamento, contando armas e armaduras, com pequena chance de raridade. Tabelas dependem da dificuldade; essa regra refina a independência anterior dos slots equipáveis.
 - Livros de magia são consumíveis de uso único, sem requisitos mínimos, obtidos por inimigos ou baús conforme dificuldade.
 - Avaliar magias ambientais como candidatas a efeitos de múltiplos alvos.
-- Mobile em paisagem e tela inteira, preferencialmente Chrome; avaliar controles de toque nos testes. Solicitar exemplos visuais adicionais conforme necessidade.
+- Prioridade de testes: navegador no PC, inicialmente Chrome; alvo obrigatório do fechamento M01 é desktop. Adaptação mobile, paisagem/fullscreen quando suportados e APK ficam no marco técnico MOBILE-01, com execução a planejar e sem tecnologia selecionada. Preservar toque existente e evidências por versão; testes parciais não certificam suporte mobile completo.
 - O estilo dark fantasy tem prioridade sobre as referências visuais de outros jogos. Consultar POLITICA_DE_VERSIONAMENTO_DE_ARQUIVOS.md para a avaliação de quais arquivos versionar.
 - A demo termina ao alcançar o Shift Gate.
 - Criar personagem com nome, raça e gênero, usando assets predefinidos por combinação; consultar PERSONAGEM.md.
@@ -51,7 +51,7 @@ Este documento é a fonte inicial de contexto para desenvolver uma releitura de 
 - O combate será por turnos.
 - Inicialmente haverá um único personagem controlável; sistemas de aliados serão avaliados futuramente.
 - O primeiro marco abrangerá a introdução do jogo e a dungeon inicial, preservando a história original.
-- As plataformas de destino são navegador e mobile, com prioridade inicial para teclado e mouse.
+- Navegador desktop é o alvo obrigatório atual, inicialmente Chrome/teclado/mouse; navegador mobile e aplicativo Android serão tratados em MOBILE-01, sem prometer transferência automática de saves.
 - O workflow seguirá Git Flow, conforme DESENVOLVIMENTO_E_VERSIONAMENTO.md.
 - O jogo terá sistema de quests com estrutura moderna inspirada em Skyrim, buscando preservar as descrições do original no diário. Consulte QUESTS.md.
 - O loot usa seis categorias lógicas por inimigo: ouro, poções, equipamentos, armas, itens de quest e raro. A regra mais recente limita a concessão a um equipamento por loot, com chance de raridade; slots vazios serão ocultados. Consulte LOOT.md.
@@ -234,7 +234,7 @@ O detalhamento operacional do M01 está em BACKLOG_M01.md, com vinte entregas, d
 | D028 | Adotar combate por turnos | Confirmada | Ritmo informado pelo responsável |
 | D029 | Começar com personagem único e avaliar aliados futuramente | Confirmada | Escopo informado pelo responsável |
 | D030 | Primeiro marco: introdução e dungeon inicial | Confirmada | Recorte informado pelo responsável |
-| D031 | Destinar o jogo a navegador e mobile, priorizando teclado e mouse inicialmente | Confirmada | Plataformas e controles informados pelo responsável |
+| D031 | Priorizar navegador desktop/Chrome; planejar navegador mobile e APK em MOBILE-01 | Confirmada, atualizada em30/10/2026 | M01 fecha no desktop; plano em MOBILE_01.md |
 | D032 | Seguir Git Flow no workflow do projeto | Confirmada | Fluxo solicitado pelo responsável |
 | D033 | Exploração em 2D | Confirmada | Perspectiva informada pelo responsável |
 | D034 | Encontros por inimigos visíveis no mapa | Confirmada | Modelo de encontros informado pelo responsável |
@@ -281,7 +281,7 @@ O detalhamento operacional do M01 está em BACKLOG_M01.md, com vinte entregas, d
 | D075 | Máximo de um equipamento por loot com pequena chance de raridade e tabelas por dificuldade | Confirmada | Refina a independência irrestrita anterior de slots equipáveis |
 | D076 | Livros consumíveis de uso único, sem requisitos, drops por dificuldade | Confirmada | Regra especificada pelo responsável |
 | D077 | Avaliar conversão de magias ambientais para múltiplos alvos | Confirmada | Tarefa de adaptação, efeitos concretos ainda em avaliação |
-| D078 | Mobile em paisagem e tela inteira, preferência Chrome, toque avaliado nos testes | Confirmada | Configuração informada pelo responsável |
+| D078 | Paisagem/fullscreen mobile quando suportados, com avaliação por toque | Confirmada e adiada para MOBILE-01 | Não atendidos no M01; exceção aceita e planejamento atualizado em30/10/2026 |
 | D079 | Usar prints de HUD, inventário, loot e quests; solicitar novos conforme necessidade | Confirmada | Processo visual definido pelo responsável |
 | D080 | Adiar decisões sobre geração procedural, mapa e bússola para próximos marcos | Confirmada | Recursos opcionais, sem bloqueio da demo M01 |
 
