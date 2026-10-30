@@ -1,6 +1,6 @@
 ## Atualização vigente — distribuição funcional aprovada
 
-Núcleo e acesso funcional pelo inventário entregues em38b3342, aprovados no escopo registrado em VALIDACAO_M01.md e autorizados para integração/publicação em develop. Concessão3/+1 desde nível2 autorizada como parâmetro provisório, sem aprovação de equilíbrio definitivo. Registrar pontos realmente distribuídos na avaliação por marco. Fórmula atual mantida e E05 isolado; refinamento visual futuro não bloqueia automaticamente a avaliação.
+Núcleo e acesso funcional pelo inventário entregues em38b3342, aprovados no escopo registrado em VALIDACAO_M01.md e integrados em develop após a aprovação funcional. Concessão3/+1 desde nível2 autorizada como parâmetro provisório, sem aprovação de equilíbrio definitivo. Registrar pontos realmente distribuídos na avaliação por marco. Fórmula atual mantida e E05 isolado; refinamento visual futuro não bloqueia automaticamente a avaliação.
 
 # Avaliação de percurso e balanceamento por marco
 
@@ -16,7 +16,7 @@ Conferência por leitura dos acessos entregues: **E05 — comparar conjuntos** t
 
 | Contexto atualmente entregue | Modelo ativo |
 | --- | --- |
-| Campanha local, fora dos laboratórios | Atacar/leve=`max(1,2×ATQ−DEF)`; pesada=`max(1,3×ATQ−DEF)`; Dardo=`max(1,3×MAT−MDF)`; Cura25+MAT. Custos0/5/12 Vigor e6/8 Mana, modificadores raciais/elementais/guarda/variância nativos preservados. Escolha+10 Vida/Mana/Vigor por nível, sem cura ao evoluir; seis atributos sem crescimento automático;3 pontos distribuíveis de+1 por nível desde2, saldo acumulável e acesso pelo inventário. Armas normaisATQ+2/+3, raras+3/+4; couro/malha DEF+3/+6, raras+4/+7. Poções/descanso existentes; Vigor só em técnicas, sem regeneração passiva. Valores provisórios. |
+| Campanha local, fora dos laboratórios | Atacar/leve=`max(1,2×ATQ−DEF)`; pesada=`max(1,3×ATQ−DEF)`; Dardo=`max(1,3×MAT−MDF)`; Cura25+MAT. Custos0/5/12 Vigor e6/8 Mana, modificadores raciais/elementais/guarda/variância nativos preservados. Escolha+10 Vida/Mana/Vigor por nível, sem cura ao evoluir; seis atributos sem crescimento automático;3 pontos distribuíveis de+1 por nível desde2, saldo acumulável e acesso pelo inventário. Armas normaisATQ+2/+3; couro/malha DEF+3/+6. Variantes legadas+3/+4 ATQ e+4/+7 DEF mantidas em saves, retiradas dos novos drops. Poções/descanso existentes; Vigor só em técnicas, sem regeneração passiva. Valores provisórios. |
 | E05 somente | Proporcional S02, alocação fixa de6 pontos ATQ3/MAT3, quatro conjuntos virtuais, Bretã3/adaga/goblin30, início110/60/100. Semente controlada, sem EXP/loot ou saves experimentais. Não há interface geral de distribuição ou peças reais novas. [Contrato E05](PILOTO_E05_M01_20.md). |
 
 A fórmula da tabela é a base, não o dano final após todos os modificadores; o piso nativo pode sofrer arredondamentos posteriores (S02). Requisitos de liberdade de equipamentos e pontos continuam válidos; **três pontos de+1 foram autorizados como parâmetro provisório para o núcleo/acesso; fórmula proporcional, agrupamentos e orçamento E05 não foram aprovados para campanha**. “Manter o combate assim” não autoriza promover regras do E05.
@@ -29,7 +29,7 @@ Manter o mesmo commit/pacote de referência durante a rodada e registrar ambient
 
 | Ponto | Registro mínimo |
 | --- | --- |
-| A — entrada na dungeon após introdução | Nível/EXP, escolhas de recursos, pontos distribuídos se implementados (hoje: não aplicável), equipamento/inventário e habilidades iniciais reais; recursos atuais/máximos. |
+| A — entrada na dungeon após introdução | Nível/EXP, escolhas de recursos, pontos distribuídos e saldo ainda não gasto, equipamento/inventário e habilidades iniciais reais; recursos atuais/máximos. |
 | B — uma pausa intermediária da exploração | Anotar local/etapa como referência da rodada; nível/EXP, novas peças/livros realmente encontrados, equipamentos/skills em uso, recursos/estoques. Contagens acumuladas de combates, derrotas/repetições, poções e descansos. Na primeira passagem escolher uma pausa natural, sem combate ou descanso artificial; reutilizar esse ponto em comparações posteriores. |
 | C — antes do Gate, com observação do encerramento | Nível/EXP e construção finais, equipamentos/itens/habilidades obtidos e utilizados, recursos/estoques restantes, totais de combates/derrotas/tentativas/descansos/poções. Dificuldade percebida, decisões úteis, opções dominantes/sem benefício e diversão. |
 

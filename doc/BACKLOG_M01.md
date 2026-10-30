@@ -1,3 +1,7 @@
+## Integração dos atributos em develop — resultado
+
+Merge **18d07d38c957d0f021cc7b4e14ce31623ee8afc6**, sem conflitos; árvore idêntica à feature em b403710. Conteúdo funcional idêntico a38b3342, aprovado no escopo abaixo. Verificações focais de integração: igualdade da árvore; presença/sintaxe dos36 plugins e formato canônico sem BOM; namespace web, configuração3/+1, fórmula/equipamentos/recursos e E05 preservados. Evidências anteriores de seis grupos do acesso e seis do núcleo reutilizadas, sem campanha/suíte de gameplay repetida. Fechamento documental posterior apenas registra este resultado; publicação confirmada na entrega. Main/Pages/release preservados.
+
 ## M01-20 — distribuição aprovada funcionalmente (29/10/2026)
 
 Feature/m01-distribuicao-atributos em38b3342 confirmada pelo responsável nos testes de ganho de três níveis, distribuição, cancelamento, reinicialização e confirmação. Sem novos testes manuais de persistência ou smartphone inferidos. Núcleo e acesso funcional pelo inventário atendidos neste recorte, autorizados para integração/publicação em develop; não permanecem requisitos ausentes. [Escopo/evidências](plugins/Arena_Attributes.md#aprovação-funcional-e-integração--29102026). Três pontos de+1 provisórios, fórmula atual e E05 isolado preservados; refinamento visual futuro em REF15. Nenhuma mudança funcional posterior não avaliada ou falha pendente identificada nesta feature.

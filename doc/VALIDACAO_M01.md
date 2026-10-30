@@ -2,7 +2,7 @@
 
 Responsável aprovou funcionalmente o acesso entregue em **38b33427d20a9b189be199dd097104147d42c0d2**, confirmando ganho de três níveis, distribuição de pontos, cancelamento, reinicialização e confirmação da distribuição. Ambiente/dispositivo não discriminados neste relato. Não atribuir persistência, migração, smartphone, percurso completo ou novos casos ao responsável; evidências técnicas existentes permanecem identificadas separadamente. Não é aprovação de equilíbrio definitivo ou do refinamento visual.
 
-Feature sem alteração funcional posterior; autorização de integração/publicação em develop. Reutilizados seis grupos do acesso e seis do núcleo em evidencias/atributos-campanha-r01, sem reexecutar campanha, navegador, editor ou aparelho físico neste fechamento. Checagens de integração/commit final em [BACKLOG_M01.md](BACKLOG_M01.md); detalhes em [contrato](plugins/Arena_Attributes.md).
+Feature sem alteração funcional posterior; autorização de integração/publicação em develop. Reutilizados seis grupos do acesso e seis do núcleo em evidencias/atributos-campanha-r01, sem reexecutar campanha, navegador, editor ou aparelho físico neste fechamento. Merge 18d07d38c957d0f021cc7b4e14ce31623ee8afc6 sem conflitos/árvore idêntica à feature; somente documentos mudaram desde38b3342. Registro canônico/36 plugins/sintaxe/namespace e fontes de fórmula/equipamentos/recursos/E05 conferidos;3/+1 preservados. Checagens e referência em [BACKLOG_M01.md](BACKLOG_M01.md); detalhes em [contrato](plugins/Arena_Attributes.md).
 
 ## Atributos — aprovação restrita e acesso de campanha R02
 
