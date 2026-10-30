@@ -8,9 +8,15 @@ if(process.argv[3]){
  const manifest=JSON.parse(bytes);assert.equal(manifest.sourceCommit,policy.sourceCommit);assert.equal(manifest.testVersion,policy.testVersion);assert.equal(manifest.namespace,'arena:m01:save-v1');
  console.log('Approved RC manifest/bytes matched: '+policy.manifestSha256);
 }else{
+ const attributes=cp.execFileSync('git',['rev-parse','--git-path','info/attributes'],{cwd:root,encoding:'utf8'}).trim();
+ const attrPath=path.resolve(root,attributes);fs.mkdirSync(path.dirname(attrPath),{recursive:true});
+ // Worktree-local conversion rules also let the unchanged clean-tree guard verify these bytes.
+ fs.appendFileSync(attrPath,'\n'+policy.crlfFiles.map(f=>JSON.stringify(f)+' text eol=crlf').join('\n')+'\n');
  for(const file of policy.crlfFiles){
   assert(!path.isAbsolute(file)&&!file.split('/').includes('..'));const target=path.resolve(root,file);assert(target.startsWith(root+path.sep));
   const text=new TextDecoder('utf-8',{fatal:true}).decode(fs.readFileSync(target));fs.writeFileSync(target,text.replace(/\r?\n/g,'\r\n'));
  }
+ const dirty=cp.execFileSync('git',['status','--porcelain','--',...policy.crlfFiles],{cwd:root,encoding:'utf8'}).trim();
+ assert.equal(dirty,'','Approved conversion must remain clean in the isolated checkout');
  console.log('Restored approved checkout line endings for '+policy.crlfFiles.length+' paths; source commit unchanged');
 }
