@@ -1,3 +1,46 @@
+# Fechamento operacional do M01 — 30/10/2026
+
+**Referência funcional:** develop114cf4bcada4ef1b30ecef2bbde1a7e381549144. Esta consolidação documental não altera sua implementação. Retrospectiva realizada e decisões registradas no [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026); não é aprovação final do marco. Entrada curta e fontes em [INICIO_NO_CODEX.md](INICIO_NO_CODEX.md).
+
+## Matriz de fechamento M01 — 30/10/2026
+
+| Classificação | Estado e ação de fechamento |
+| --- | --- |
+| Critérios funcionais atendidos | Criação→introdução→dungeon/quests/combate/loot/inventário/recuperação→Gate/encerramento implementados e com evidências/aprovações nos respectivos recortes. Distribuição por inventário funcionalmente aprovada; saldo/migração/save-load cobertos tecnicamente. Reutilizar a cobertura por versão/ambiente, sem atribuir tudo ao último relato |
+| Integrações atendidas, posteriores à prévia pública | Expansão de1 para40 pontos de descanso, ouro reserva2–8 e retirada de raros provisórios integrados, legados preservados; atributos3/+1 integrados. Pilotos de arma e descanso inicial já pertenciam à base pública: não criar nova rodada para eles. Referências e limites em VALIDACAO_M01.md |
+| Ressalvas já aceitas | Artes com inconsistências conhecidas, acabamento/encaixes pontuais e portas laterais pouco visíveis; aprovação funcional não apaga esses defeitos. Balanceamento continua provisório; manter escolhas/ganhos do jogador. Não reabrir geração ou elevar toda ressalva a bloqueio |
+| Requisitos adiados, não atendidos | Paisagem/fullscreen quando suportados (M01-19/REF14). Exigem atendimento ou **aceite explícito da exceção no fechamento M01**, com registro de continuidade; autorização anterior de avançar a M01-20 não foi aceite final nem atendimento técnico |
+| Critérios de entrega ainda por encerrar | Aceite do balanceamento inicial/provisórios; verificações focais da build candidata; documentação/manifesto/pacote final identificados e aceite do commit de entrega. Não exigir fórmula definitiva para toda a campanha ou catálogo completo |
+| Bloqueios concretos | Nenhuma falha funcional crítica comprovada nos relatos/checagens atuais. Há decisões de aceite e evidências da candidata ainda abertas, sem inventar defeito. Discussão obrigatória de dois chats/motor **cumprida** por esta retrospectiva |
+| Melhorias futuras, fora da preparação imediata | REF01/03/06/07–11/13/15/16 e demais recortes conforme registro único; apresentação dos atributos, menu intuitivo, fundo genérico, favoritos/notificações e ilustração de abertura não começam automaticamente. Catálogo/encantados e estudos de descanso/respawn permanecem futuros. Sem atribuir prazo/marco não aprovado |
+| Revisão em marcos seguintes | Manter avaliação de balanceamento ao fim de cada marco; reavaliar escalas e provisórios na faixa seguinte. Continuar no MV, sem migração antes do M02 e sem autorização automática de migrar no M02 |
+
+## Somente verificações finais justificadas pelo delta
+
+Não executadas nesta tarefa documental. A prévia pública validada é9fab698; o diff9fab698..114cf4b acrescenta expansão de descanso, revisão de loot, atributos e E05 técnico isolado; armas piloto e descanso inicial já estavam na prévia pública. Reutilizar testes técnicos existentes, Map008/editor e percurso público; **não repetir toda a campanha nem testes completos de todas as combinações**.
+
+1. **Pacote atual, Chrome desktop em /Arena/:** reconstrução pelo empacotador existente e conferência de manifesto/arquivos dinâmicos novos (ArenaAttributes.json e os plugins), caminhos/capitalização e registro canônico. É outra árvore que o pacote público, portanto sua verificação não está herdada daquele artefato.
+2. **Trecho integrado curto da candidata:** personagem com um ganho de nível, saldo/confirmar/cancelar; um encontro após distribuir; um refúgio novo e um tesouro ainda não coletado; salvar/recarregar/carregar o estado combinado. Preparar fixture/slot exclusivo de teste, sem repetir sorteios para provar limites/ausência de raros: usar evidências controladas. Foco no fortalecimento e recuperação/loot alterados; não reeditar todas as portas/mapa nem revisar artes aprovadas. Registrar o observado, sem metas novas de turnos.
+3. **Chrome/A56 físico, apenas novo acesso aos atributos:** entrar/retornar pelo inventário, montar/cancelar/confirmar conjunto e conferir foco, toque e cortes/leitura. A cobertura física da versão pública antiga continua válida para seus fluxos; não prova esta tela posterior. Não solicitar novamente todo o percurso/reinício do Chrome no aparelho sem falha ou mudança de risco correspondente. Refinamento visual amplo permanece futuro, mas impedimento concreto encontrado precisa ser triado.
+
+Se nenhuma falha aparecer, registrar resultado por SHA/ambiente e levar os aceites abaixo ao fechamento. Em risco novo concreto, definir outro recorte; não ampliar silenciosamente esta lista para uma bateria geral.
+
+## Respostas explícitas antes da entrega final
+
+- Aceitar paisagem/fullscreen **como exceção não atendida no M01**, ou autorizar tratá-los antes do fechamento? Registrar destino futuro sem presumir M02.
+- Aceitar o balanceamento da faixa inicial e3 pontos de+1 como provisórios do M01, após o registro focal da candidata, mantendo a fórmula atual? Não pedir novamente autorização da implementação já aprovada nem promover E05.
+- Após essas decisões e os resultados focais, aprovar **o commit/pacote exato de entrega** e autorizar os passos de release/tag/publicação desejados. Nada disso foi autorizado por esta consolidação.
+
+## Próximo recorte mínimo proposto
+
+**Preparar candidata de M01-20:** partir de uma referência congelada de develop, reconstruir pacote em diretório ignorado, identificar SHA/manifesto e executar somente o roteiro focal acima; entregar resultado para os aceites. Não incorporar melhorias ou limpar arquivos no mesmo recorte. Branch release/m01 e tag anotada m01-rc1 somente quando autorizadas e após nova conferência dos nomes; procedimentos em [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#tags-e-entrega-m01). Pages continua ação manual separada. Não criar candidata nem executar testes nesta tarefa.
+
+---
+
+## Histórico de andamento e critérios detalhados
+
+Os registros abaixo documentam a sequência de implementação. Seu estado de pendência/branch/ambiente vale para a versão indicada; a matriz acima é o resumo operacional. IDs M01 e critérios detalhados permanecem preservados, sem renumeração.
+
 ## Integração dos atributos em develop — resultado
 
 Merge **18d07d38c957d0f021cc7b4e14ce31623ee8afc6**, sem conflitos; árvore idêntica à feature em b403710. Conteúdo funcional idêntico a38b3342, aprovado no escopo abaixo. Verificações focais de integração: igualdade da árvore; presença/sintaxe dos36 plugins e formato canônico sem BOM; namespace web, configuração3/+1, fórmula/equipamentos/recursos e E05 preservados. Evidências anteriores de seis grupos do acesso e seis do núcleo reutilizadas, sem campanha/suíte de gameplay repetida. Fechamento documental posterior apenas registra este resultado; publicação confirmada na entrega. Main/Pages/release preservados.
@@ -8,7 +51,7 @@ Feature/m01-distribuicao-atributos em38b3342 confirmada pelo responsável nos te
 
 **Critérios ainda abertos para fechar M01:** avaliação/aceite do balanceamento da faixa inicial com a progressão distribuível agora funcional, preservando valores provisórios quando aceitos; revisão final dos critérios/evidências por versão e risco (incluindo o novo recorte em ambientes-alvo), documentação/pacote final identificado. Não exigir repetir campanhas/casos já cobertos sem risco concreto. Paisagem/fullscreen são requisitos M01-19 adiados: atender ou revisar explicitamente o aceite antes de declarar atendimento integral, sem promover melhorias por associação. Não há exigência de fórmula definitiva para toda a campanha, catálogo completo ou redesign para este fechamento.
 
-**Parada obrigatória preservada:** antes do fechamento/release, conversar com o responsável sobre desenvolvimento em dois chats e uso do RPG Maker como motor/plataforma, conforme a etapa abaixo. Não iniciada nesta tarefa. Ressalvas estéticas aceitas continuam válidas; melhorias futuras REF13–REF16 e demais refinamentos não viram bloqueios automáticos. M01-20/M01 não concluídos, sem main/Pages/release ou nova funcionalidade.
+**Estado histórico da parada:** a discussão estava pendente nesta integração; foi cumprida em30/10/2026, conforme a etapa abaixo e o workflow vigente. Ressalvas estéticas aceitas continuam válidas; melhorias futuras REF13–REF16 e demais refinamentos não viram bloqueios automáticos. M01-20/M01 não concluídos, sem main/Pages/release ou nova funcionalidade.
 
 ## M01-20 — acesso funcional à distribuição na campanha (29/10/2026)
 
@@ -20,7 +63,7 @@ Feature/m01-distribuicao-atributos, base develop ecdc949. Implementados três po
 
 ### Etapa obrigatória antes do fechamento/release do M01
 
-Antes de encerrar o marco ou preparar sua release, **discutir com o responsável a organização do desenvolvimento em dois chats e o uso do RPG Maker como motor e plataforma**. Lembrete obrigatório de decisão; discussão ainda não realizada, não iniciada por esta implementação. Não presumir decisão/aceite. Preservar o lembrete até registrar o resultado com o responsável.
+**Cumprida em30/10/2026:** discussão sobre dois chats e RPG Maker realizada; decisões autorizadas em [retrospectiva](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026). Não repetir o pedido. Isso não equivale ao aceite final do marco/release.
 
 ## Loot e descanso — integrados em develop após teste (29/10/2026)
 

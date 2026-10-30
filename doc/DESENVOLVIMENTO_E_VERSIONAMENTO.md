@@ -1,6 +1,16 @@
 # Desenvolvimento, documentação e Git
 
-**Antes do fechamento/release M01:** cumprir a [etapa obrigatória de discussão com o responsável](BACKLOG_M01.md#etapa-obrigatória-antes-do-fechamentorelease-do-m01). O lembrete não autoriza iniciar a discussão ou mudar plataforma/organização nesta entrega.
+**Discussão pré-fechamento realizada em30/10/2026:** decisões autorizadas na retrospectiva abaixo. Não repetir essa parada nem presumir aprovação final do M01. Matriz e aceites finais em [BACKLOG_M01.md](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026).
+
+## Retrospectiva aprovada — 30/10/2026
+
+Regras permanentes autorizadas pelo responsável; esta seção é a fonte do processo, sem decisão de encerramento/release:
+
+- **Dois chats principais:** análise/planejamento e desenvolvimento/execução. Chats adicionais somente para tarefa delimitada; consolidar resultados nas fontes principais do repositório antes de tratá-los como decisão vigente. O repositório é a fonte; memória de chat não o substitui.
+- **Motor:** continuar no RPG Maker MV1.6.1; nenhuma migração antes do M02. Eventual reavaliação no M02 exige decisão própria, sem migração automática nem grande refatoração por associação.
+- **Escopo:** entregas pequenas, amostra integrada antes de lote e mudança estrutural tratada antes de multiplicar conteúdo dependente. O fluxo detalhado de assets permanece em DIRECAO_DE_ARTE.md; não duplicar suas instruções aqui.
+- **Prioridade e janela de refinamento:** escolher por impacto/risco e critérios do marco. Combinar uma janela limitada (tempo ou número de recortes a definir por marco); ao encerrá-la, devolver o restante ao registro futuro. Não há duração numérica aprovada nem promessa de consumo. Ressalvas aceitas não são bloqueios automáticos.
+- **Verificação e memória:** focal por mudança; percurso integrado em momentos definidos (referência congelada, integração antes de candidata e avaliação por marco, com cobertura proporcional ao delta). Reaproveitar aprovações identificadas por versão/ambiente/caso, sem pedidos repetidos. Consolidação documental ao fim de cada marco separa o vigente do histórico; não apagar evidências.
 
 ## Operação obrigatória — entregas pequenas
 
@@ -76,6 +86,32 @@ Antes de cada tarefa, verificar branch atual, alterações pendentes e convenç�
 A organização inicial deve verificar a base de main, criar develop se ainda não existir e então abrir a feature de documentação. Registro histórico: na primeira inspeção apenas main existia. Em 25/10/2026, a execução do M01 confirmou main, develop e feature/documentacao-inicial, esta última ativa antes da consolidação. Não é necessário instalar uma extensão git-flow para seguir o fluxo.
 
 Exemplos: feature/prototipo-combate, feature/dados-equipamentos e feature/documentacao-inicial. A escolha de versão, a preparação de release e o momento de publicação devem ser definidos na tarefa correspondente.
+
+## Tags e entrega M01
+
+Convenção autorizada para documentação; nenhuma tag criada nesta tarefa. Em30/10/2026, **git tag** e **git ls-remote --tags origin** não retornaram tags. Conferir novamente local/remoto antes de reservar cada nome; não presumir disponibilidade futura.
+
+| Tag anotada | Alvo e condição |
+| --- | --- |
+| m01-rc1, m01-rc2… | Commit congelado da candidata na preparação release/m01, derivada de develop; cada revisão usa novo número, SHA/pacote/evidências identificados |
+| m01 | Commit aprovado de entrega **em main**, após integração da release conforme Git Flow e autorização final; não marcar uma feature ou apenas develop como marco entregue |
+| m01-fix1, m01-fix2… | Commit aprovado de correção posterior em main, seguindo hotfix/release aplicável e propagação a develop; novo nome, sem reutilizar m01 |
+
+Usar tags **anotadas** (metadados e mensagem com identificação/aprovação); não mover, sobrescrever ou apagar tag publicada nem usar force push. Candidata não é release final; aceite funcional não autoriza todas as operações de publicação. Preparação parte de develop; integração em main, retorno a develop, criação/publicação de tags e release exigem o escopo autorizado da entrega correspondente. Preservar históricos e saves compatíveis.
+
+**Tag não publica site:** .github/workflows/pages-preview.yml foi lido e contém somente workflow_dispatch; sem gatilho de push, tag ou release. Preservar esse contrato. Deploy continua manual, separado da tag/release, pelo SHA completo aprovado e procedimento em PUBLICACAO_TESTE_PAGES_M01_19.md; futuras alterações de workflow precisam manter essa regra. Não disparar Actions/deploy ao preparar documentos.
+
+## Candidatos concretos de limpeza — sem exclusão autorizada
+
+Inventário pontual em30/10/2026, não uma ordem de apagar:
+
+| Candidato verificado | Motivo e condição de eventual recorte |
+| --- | --- |
+| tmp/fallback-generator, tmp/rest-expansion-generator, tmp/integration-loot-rest | Fixtures JSON ignoradas, reconstruídas pelos testes focais de fallback/descanso/integração. Antes de limpar, confirmar que não foram reutilizadas por tarefa ativa; não incluir extrações originais ou perfis de navegador na mesma operação |
+| tools/test-rest-platform-pilot.cjs e tools/test-rest-expansion.cjs | Sobreposição de preparação e comportamento compartilhado, **não duplicação total comprovada**. Eventual consolidação de helpers deve preservar os casos exclusivos e suas evidências; nenhum dos scripts foi marcado para exclusão |
+| feature/m01-20-revisao-ouro-raridade, feature/m01-expansao-descanso, integration/m01-loot-descanso, feature/m01-distribuicao-atributos | Branches verificadas como ancestrais de develop114cf4b; candidatas a encerrar após preservar referência/revisão necessária. Revalidar pontas locais/remotas e worktrees no futuro recorte; não apagar agora |
+
+Nenhum estudo versionado foi comprovado descartável nesta inspeção. S02–S06 e E05 preservam justificativas/decisões provisórias. Saves, doc/wiki, doc/prints, extrações de consulta, IDs de banco, evidências necessárias e assets não são candidatos desta lista. Limpeza será outra tarefa e não integra a preparação da candidata.
 
 ## Organização de commits
 

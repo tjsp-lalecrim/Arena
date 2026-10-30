@@ -1,3 +1,7 @@
+## Leitura operacional da validação — consolidação 30/10/2026
+
+Aprovações abaixo mantêm versão/ambiente/cobertura próprios; estados anteriores de pendência são históricos quando superados por relato posterior. [Resumo operacional](INICIO_NO_CODEX.md#aprovações-e-limites-de-cobertura) e [matriz/roteiro focal final](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026) evitam repetir testes já cobertos. Retrospectiva autorizada e registrada no workflow; não é aprovação final do M01. Nesta tarefa foram conferidos somente documentação, Git/tags e gatilho manual existente do workflow; nenhum novo teste de gameplay, execução no editor/aparelho, pacote ou deploy.
+
 ## Aprovação funcional do acesso aos atributos — 29/10/2026
 
 Responsável aprovou funcionalmente o acesso entregue em **38b33427d20a9b189be199dd097104147d42c0d2**, confirmando ganho de três níveis, distribuição de pontos, cancelamento, reinicialização e confirmação da distribuição. Ambiente/dispositivo não discriminados neste relato. Não atribuir persistência, migração, smartphone, percurso completo ou novos casos ao responsável; evidências técnicas existentes permanecem identificadas separadamente. Não é aprovação de equilíbrio definitivo ou do refinamento visual.

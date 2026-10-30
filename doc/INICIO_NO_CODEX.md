@@ -1,6 +1,47 @@
-## Leitura operacional — processo vigente
+# Entrada operacional do Arena — M01
 
-Aplicar o roteiro e a [prioridade obrigatória pelo backlog](DESENVOLVIMENTO_E_VERSIONAMENTO.md#prioridade-obrigatória--foco-no-backlog). Narrativa/M01-19 integrados em develop; campanha atual autorizada como referência provisória do percurso, **sem transferir E05**. Commits/acesso local/verificações em [INTEGRACAO_REFERENCIA_PERCURSO_M01.md](INTEGRACAO_REFERENCIA_PERCURSO_M01.md), próximo recorte em [BACKLOG_M01.md](BACKLOG_M01.md). M01-20 e marco não concluídos; distribuição/fórmula/balanceamento e requisitos adiados continuam pendentes. Evidências em VALIDACAO_M01.md; melhorias em REFINAMENTOS_POS_INTEGRACAO_M01.md não ganham autorização por associação. Testes públicos PC/A56 já registrados não devem ser solicitados novamente sem risco concreto; paisagem/fullscreen não declarados atendidos. Relatos anteriores abaixo são históricos quando divergirem.
+Atualizado em **30/10/2026**. Implementação de referência: develop **114cf4bcada4ef1b30ecef2bbde1a7e381549144**; os documentos desta feature não mudam o jogo. M01-01–18 integrados, fluxo público funcional confirmado na versão abaixo; M01-19 com requisitos de apresentação adiados, M01-20 e marco **ainda abertos**. Distribuição de atributos e expansão de descanso já implementadas/integradas; não são novos backlogs ausentes.
+
+## Leitura curta e fontes principais
+
+Ler esta entrada e somente as fontes pertinentes ao recorte. Decisões vigentes do repositório prevalecem sobre históricos e chats; confirmar o Git antes de agir.
+
+| Assunto | Fonte principal |
+| --- | --- |
+| Processo, dois chats, motor, entregas pequenas, Git e tags | [DESENVOLVIMENTO_E_VERSIONAMENTO.md](DESENVOLVIMENTO_E_VERSIONAMENTO.md) |
+| Escopo/aceite M01, matriz e próximas decisões | [BACKLOG_M01.md](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026), com DEMO_INICIAL.md |
+| Aprovações, versões, ambientes e evidências | [VALIDACAO_M01.md](VALIDACAO_M01.md) |
+| Regras de personagem, progressão e dados | [Personagem](PERSONAGEM.md), [progressão](HABILIDADES_E_PROGRESSAO.md), [dados](DADOS_M01.md), [plugins](PLUGINS.md) |
+| Arte, mapa e navegação | [Arte](DIRECAO_DE_ARTE.md), [mapas](DIRETIVA_DE_MAPAS.md), [navegação](DIRETIVA_DE_NAVEGACAO.md) |
+| Provisórios de balanceamento e roteiro por marco | [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md) |
+| Melhorias/ressalvas, sem tarefas duplicadas | [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md) |
+| Pacote reproduzível e publicação manual separada | [Pacote](PACOTE_WEB_M01_19.md), [publicação](PUBLICACAO_TESTE_PAGES_M01_19.md) |
+
+## Aprovações e limites de cobertura
+
+| Referência | Confirmado pelo responsável |
+| --- | --- |
+| Prévia pública9fab698 / m01-19-web-r01 | Chrome no PC e Samsung Galaxy A56 físico: criação/introdução, exploração/combate/loot, inventário/poções, diário/descanso, Gate/encerramento; salvar, fechar/reabrir Chrome e carregar, com saves independentes |
+| Editor MV1.6.1, versões identificadas na validação | Map008: abrir/editar reversivelmente/salvar/reabrir e Explorar Dungeon; percurso integrado, narrativa/encerramento e demais recortes aprovados conforme seus relatos |
+| Localhost5659763 | Dois percursos Khajiit/Elfo Negro até encerramento; sem dados quantitativos ou ambiente discriminado |
+| Candidata cc29df0 | Descanso nas plataformas testadas e ouro variando; ambiente/posições/extremos/persistência não discriminados |
+| Atributos38b3342, somado ao laboratório f6de74d | Ganho de três níveis, distribuição, cancelamento, reinicialização e confirmação; ambiente não discriminado, sem relato adicional de persistência ou smartphone |
+
+Evidências técnicas de migração, persistência, isolamento, geradores e plugins ficam em VALIDACAO_M01.md. Não atribuir a versão pública antiga os recursos posteriores. Não pedir novamente testes já válidos sem risco concreto.
+
+## Estado provisório e continuidade
+
+Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de Vida/Mana/Vigor estão ativos; balanceamento racial/equipamentos/custos continuam provisórios. Fórmula da campanha preservada; proporcional S02/conjuntos E05 continuam **somente no laboratório**, sem autorização de transferência. Prefixo web arena:m01:save-v1 estável; atualizações compatíveis não criam outro armazenamento.
+
+Paisagem/fullscreen **não atendidos e adiados**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
+
+**Autorizado agora:** somente consolidar estes documentos e preparar a decisão de candidata, sem criar pacote/tag/release/deploy nesta tarefa. **Próximo recorte proposto, a autorizar:** congelar uma referência de candidata a partir de develop, reconstruir o pacote e executar o roteiro focal da matriz. Não iniciar melhorias, lotes ou migração de motor por associação. A discussão obrigatória de dois chats/motor foi realizada; [decisões da retrospectiva](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026) não equivalem a aceite final do M01.
+
+---
+
+## Histórico de entradas anteriores — consulta, não instrução vigente
+
+Estados datados abaixo preservam rastreabilidade. Afirmações como “a fazer”, “sem merge”, “aguarda aprovação” ou “ouro5” descrevem a versão daquela entrada; não reabrem decisões superadas pelo estado acima. Consultar somente para rastrear uma implementação/evidência.
 
 ## Revisão vigente M01-18 R02 — 28/10/2026
 
