@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26",
+  "method": "Windows keyboard/accessibility via @oai/sky",
+  "project": "Arena / RPG Maker MV1.6.1 target",
+  "observed": [
+    "Project reopened from disk before validation",
+    "F10 plugin manager",
+    "Arena_Resources ON in plugin detail",
+    "MV_ResourceProgression ON in plugin detail",
+    "Ctrl+S without error dialog",
+    "Editor closed and relaunched; fresh Arena window984338 without read error"
+  ],
+  "pluginRecordsPreserved": 10,
+  "dataChanges": [
+    {
+      "file": "data/System.json",
+      "semanticFields": [
+        "versionId"
+      ]
+    }
+  ],
+  "limits": [
+    "Screenshot/click geometry unavailable in environment; no visual NW.js playtest asserted",
+    "No physical Galaxy A56",
+    "No personal saves touched; editor test is authorship, browser tests isolated separately"
+  ]
+}

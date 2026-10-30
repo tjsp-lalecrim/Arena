@@ -1,0 +1,52 @@
+{
+  "browser": "156.0.8078.73",
+  "scope": "Only title/selector/preparation/native battle entry and displayed enabled skill; no actions executed",
+  "path": [
+    "Combate técnico (piloto)",
+    "Teste da arma: Bretã / espada",
+    "Combater",
+    "Habilidades",
+    "Estocada pesada — espada"
+  ],
+  "result": {
+    "identity": "breton.female.base",
+    "weapon": 2,
+    "weaponName": "Espada curta",
+    "skills": [
+      {
+        "id": 7,
+        "name": "Corte leve — espada",
+        "enabled": true
+      },
+      {
+        "id": 8,
+        "name": "Estocada pesada — espada",
+        "enabled": true
+      }
+    ],
+    "vigor": {
+      "current": 100,
+      "maximum": 100,
+      "base": 100,
+      "growth": 0,
+      "initialBonus": 0,
+      "modifiers": 0
+    },
+    "enemy": [
+      {
+        "hp": 500,
+        "max": 500
+      }
+    ],
+    "enemyDatabaseUnchanged": true,
+    "lootUnchanged": true,
+    "saveCalls": 0,
+    "sentinel": "unchanged",
+    "pending": false
+  },
+  "errors": [],
+  "editor": "not executed",
+  "smartphone": "not executed",
+  "base": "a9531e0",
+  "note": "Command labels checked against UI/config; native entry only, no new attack validation."
+}

@@ -1,0 +1,12 @@
+{
+  "tool": "image_gen built-in",
+  "prompt": "Use case: identity-preserve. EXACT same LEFT-facing Breton woman as reference1; reference2 is a motion study only, whose face/vest/cream blouse/dark pants/brown cuff boots/body identity must be preserved. Draw exactly SIX full-body poses in THREE columns by TWO rows. Target1536x1024 with512x512 cells. Figure standing height about350px; ALWAYS leave at least60px empty transparent margin around each figure including extended arms and boots, and100px between figures. Never cut a foot at the image edge. Same scale ALL6, feet planted on same baseline in cells. Entire falling/raised limbs fit cell. Genuinely transparent background. Preserve clothes, face, proportions; painterly dark fantasy, no pixel art. No weapons drawn: empty closed gripping fist for separate weapon layer or unarmed attack. No labels, text, grid, effects. One coherent movement across six newly drawn in-betweens, not six unrelated poses or duplicate frames. Read order left-to-right then nextrow. LIGHT attack six poses:0 neutral guard matching reference1,1 small elbow pullback,2 half forward extension of front fist,3 IMPACT fully extended fist aiming LEFT in quick waist/chest level strike,4 halfway retracting the same arm,5 exact neutral guard. Keep body rotation left and head aligned, no looking over shoulder. DO NOT add heavy raised-arm poses.",
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_breton_female_r02_side.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r02\\pilot-strikes.png"
+  ],
+  "transparent_background": true,
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-97ef826d-b946-47ce-a9a9-8057ceaef67c.png",
+  "master": "art/masters/combate-r02/pilot-light.png",
+  "reason": "Separate six-frame strip because12-frame study joins figures; repack attempt also cropped boots and was rejected."
+}

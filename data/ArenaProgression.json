@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "balanceVersion": "M01-08/R01",
+  "actorId": 1,
+  "base": {
+    "hp": 100,
+    "mp": 50,
+    "vigor": 100
+  },
+  "increase": 10,
+  "technicalMapId": 5,
+  "notes": "Escolha de um recurso por nível. Sem cura ao evoluir. EXP/nível nativos MV; sem perks, skills XP ou peso de Skyrim."
+}

@@ -1,0 +1,22 @@
+{
+  "attempted": true,
+  "project": "Arena",
+  "editor": "RPG Maker MV requested1.6.1; engine runtime separately verified",
+  "observed": [
+    "Arena editor window",
+    "native Abrir Projeto dialog and Nome field in accessibility tree"
+  ],
+  "errors": [
+    "window capture timed out: timed out waiting on channel (two attempts)",
+    "element11544 /18155 not available in cached app state for RPGMV.exe"
+  ],
+  "verified": {
+    "newMapOpened": false,
+    "newMapEdited": false,
+    "pluginsManagerRead": false,
+    "savedAndReopened": false,
+    "nativeScreenshot": false
+  },
+  "files": "No editor save/discard performed; native data/engine prior files remain baseline, new map authored by repository tooling. No indiscriminate revert.",
+  "pending": "Manual reopen Game.rpgproject, select M01-14 Masmorras Imperiais/Tileset4, inspect event/map editing, plugin manager Arena_Dungeon, save and reopen. Last accessibility observation still indicated open-file dialog; manual Esc may be necessary."
+}

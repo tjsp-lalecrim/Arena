@@ -1,0 +1,170 @@
+## Estado após teste integrado — 28/10/2026
+
+Relato manual na execução pelo editor MV registrado em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026), com versão disponível associada e limites explícitos. Introdução/encerramento aprovados; mapa satisfatório. Pendências e critérios permanecem centralizados em [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md); não considerar arma/cenário ou outros ajustes resolvidos. Smartphone físico ao final do M01, sem bloqueio automático desktop. Sem merge, push ou início de backlog nesta tarefa. Estados anteriores abaixo são históricos quando divergirem.
+
+## Diário M01-16 R02 — 28/10/2026
+
+Mesma feature/m01-quests, base2ea761d: diário com filtros Pendentes/Concluídas/Todas, lista de missões conhecidas, descrição narrativa, passos revelados com ícones e status geral do booleano completed. Modelo de leitura separado da progressão; lógica de MQ01, fontes/recuperação, recompensas e respawn preservados. Reflow de lista/detalhes/abas em640×480 e916×412 emulado, contexto transitório preservado. Ler REVISAO_DIARIO_M01_16_R02.md e DIRETIVA_DE_NAVEGACAO.md (NAV01 obrigatória para todos os menus novos/revisados). Evidências próprias em evidencias/m01-16-r02, sem sobrescrever R01. Revisão para avaliação do responsável, sem merge ou próximo backlog; editor desta UI e A56 físico pendentes. Registros de apresentação anteriores abaixo são históricos quando divergirem.
+
+## Estado vigente — M01-16 (27/10/2026)
+
+M01-15 fechado tecnicamente e integrado/publicado em develop534ff7b após avaliação manual restrita ao combate disponível081222a; não atribuir aprovação manual de respawn/persistência/dispositivos. REF01–REF05 em REFINAMENTOS_POS_INTEGRACAO_M01.md permanecem futuros. Feature/m01-quests implementa M01-16, sem renumeração: MQ01, diário J10–J40, chave/fonte/porta/Gate, redundância saída/entrada, recuperação e recibos, tesouros pelo settlement existente e conclusão ligada à área/respawn. Ler QUESTS_M01_16.md e evidências próprias; bootstrap e migração de saves de laboratório estão explícitos. Para revisão, sem merge ou início de M01-17/18; introdução/Ria/F01 continuam M01-18. Nenhuma nova arte, revisão de bônus/drops de inimigos ou custo aquático. Editor da nova feature/manual de quests ainda pendentes; A56 físico somente integração mobile, sem bloqueio desktop. Registros abaixo são históricos quando divergirem.
+
+## Fechamento M01-15 — 27/10/2026
+
+Responsável testou o combate integrado e o considera satisfatório por enquanto. Estado disponível081222a, sem hash próprio, ambiente ou lista de casos informados; não atribuir aprovação manual de respawn, persistência ou outros critérios. Os14 cenários técnicos de encontros, duas entradas por ponteiro e regressões documentadas foram revisados; validate-encounters reexecutado passou, sem mudança de implementação. Critérios funcionais M01-15 atendidos tecnicamente; autorizada integração em develop. Autoria dos novos plugins/eventos no MV e testes físicos permanecem evidências pendentes de integração, sem serem declarados realizados. Melhorias futuras consolidadas em REFINAMENTOS_POS_INTEGRACAO_M01.md, sem implementação nesta rodada. Registros anteriores abaixo são históricos quando divergirem.
+
+## Estado vigente — M01-15 (27/10/2026)
+
+M01-14 concluído desktop: autoria manual do Map008 e Explorar Dungeon confirmados pelo responsável, estado disponível3bcdf81, sem hash próprio informado. Fechamento2ca0201 integrado/publicado em developf1f2957. M01-15 na feature/m01-encontros, com67 encontros nativos (37 ratos/30 goblins), patrulha delimitada, contato único, batalha/loot existentes, derrotas persistidas e respawn apenas na saída após conclusão aplicável. Ver ENCONTROS_M01_15.md e suas evidências para execuções/limitações. Implementado para revisão; sem merge desta feature ou início de M01-16. Autoria dos novos plugins/eventos e playtest integrado do responsável ainda não atribuídos à confirmação M01-14. Galaxy A56 físico pendente da integração mobile, não bloqueante desktop; melhorias futuras e Vigor na água inalterados. Registros abaixo são históricos quando divergirem.
+
+## Fechamento vigente M01-14 — 27/10/2026
+
+Responsável confirmou abertura do Map008, edição reversível, salvamento e reabertura pelo MV1.6.1, além de Explorar Dungeon. Estado disponível3bcdf81, sem hash de teste informado. Evidência manual em evidencias/m01-14/edicao-editor/confirmacao-responsavel.json, separada das tentativas automáticas anteriores. Integridade revalidada por validate-dungeon.cjs; critérios de topologia, portas, água, persistência e geradores cobertos pelas evidências R03 revisadas. **M01-14 concluído no escopo desktop**, autorizada integração em develop e continuidade M01-15. Ressalvas futuras de legibilidade das portas laterais e investigação de natação preservadas; S01 não aplicado, Vigor aquático inalterado. Galaxy A56 físico pendente da integração mobile, não bloqueante desktop. Registros abaixo de autoria/estética pendentes são históricos quando divergirem deste fechamento. Não atribuir essa confirmação a M01-15.
+
+## Playtest MV e teste de autoria em cópia — 27/10/2026
+
+Responsável confirmou execução de Explorar Dungeon pelo MV1.6.1 até o ponto testado (estado disponível031a58b). Não atribuir edição/salvamento/reabertura a essa evidência. Cópia temporária pronta em tmp/mv-editor-m01-14/Game.rpgproject, excluída do Git;273 arquivos de execução do original preservados. Nova abordagem sem capturas, por abertura separada/acessibilidade, não conseguiu operar o controle nativo. Roteiro curto e alteração segura em TESTE_EDITOR_M01_14.md; dados/propriedades/eventos/plugins da cópia verificados por arquivo, sem chamar isso de teste de autoria. M01-14 aguarda esse ciclo; sem merge ou M01-15. Autorização de continuidade permanece válida quando passar. Galaxy A56 físico é pendência da integração mobile, não bloqueio desktop. Arte aprovada e custo de Vigor na água inalterados.
+
+## Aprovação M01-14 e pesquisa de natação — 27/10/2026
+
+Estrutura/visual do estado disponívelb194b44 aprovados pelo responsável. Porta lateral fina/pouco visível é melhoria futura não bloqueante; preservar forma/encaixe/âncora/animação/colisão, sem geração nesta rodada. Pesquisa em INVESTIGACAO_NATACAO_ARENA.md confirma custo de fatigue documental, mas taxa/parado versus movimento/forma exata do afogamento não foram observados. S01 é proposta não aplicada; Vigor continua exclusivo de técnicas de combate. Ler APROVACAO_MAPA_M01_14.md. Autoria Map008 editar/salvar/reabrir no editor ainda sem comprovação; nova automação falhou. M01-14 não fechado, sem merge; M01-15 confirmado no backlog, ainda não iniciado por essa dependência. Registros anteriores de estética pendente são históricos; não transformar aprovação visual em teste funcional/editor/A56.
+
+## Correção M01-14 R03 — 27/10/2026
+
+Direção gráfica/planta permanecem aprovadas; encaixes de portas/objetos/colisões não estavam aprovados. R03 corrige os cinco prints de defeitos com componentes ortogonais, dobradiças fixas, ausência de cap sobre vão, plataformas independentes, tesouros maiores e suporte válido de decoração. Ler DIRETIVA_DE_MAPAS.md e DUNGEON_M01_14_R03.md. Sem merge, isometria ou avanço para M01-15. M01-14 em validação: testes Chrome/contratos separados de aprovação visual; captura do editor falhou duas vezes, sem comprovar editar/salvar/reabrir; A56 físico pendente. Registros anteriores são históricos quando divergirem.
+
+## Revisão M01-14 R02 — 27/10/2026
+
+Responsável aprovou direção gráfica e fidelidade estrutural da base disponível4161615. R02 revisa portas/objetos/água; a aprovação da base não se estende automaticamente às variantes novas. Planta preservada. Portas com quatro vistas/três estados, tesouros inspirados no arena_loot, água A1 própria e natação restrita ao mapa8/região2, sem custo/regeneração de Vigor. Fontes, contratos, testes e limites em DUNGEON_M01_14_R02.md. M01-14 permanece em validação: captura do editor falhou novamente; autoria no MV e A56 físico não verificados. Sem merge ou avanço de backlog. Estados operacionais anteriores abaixo são históricos quando divergirem desta revisão.
+
+# Pendências atuais após consolidação das decisões
+
+## Estado operacional M01-14 — 26/10/2026
+
+M01-13 integrado/publicado em develop4c612ae após revisão técnica e aprovação limitada ao menu; destaque de raros é melhoria futura não implementada. Feature/m01-dungeon-inicial entrega mapa8/tileset4, planta original50×50 adaptada3×3,14 portas, chave/Gate e pontos de integração. Navegação/colisões/save-load e comparação da planta testados. **M01-14 em validação, não concluído:** autoria/edição/salvar/reabrir do novo mapa no editor não confirmados por falhas da automação; avaliação de arte/escala do responsável e A56 separados. Ler DUNGEON_M01_14.md. Sem merge da nova feature, geração procedural, mapa-guia ou início de M01-15. Registros operacionais anteriores são históricos quando divergirem.
+
+## Estado operacional — M01-13 (26/10/2026)
+
+M01-12 concluído no escopo incremental aprovado, integrado/publicado em develop90e309b. Paleta, simplificação de uso de itens e design da confirmação permanecem melhorias futuras, sem implementação. Feature/m01-loot entrega M01-13 tecnicamente, sem renumeração, para revisão e sem merge. Implementação795d80d; testes/limites em evidencias/m01-13/fontes-testadas.json. Limite por origem individual já definido em LOOT.md: até uma peça por inimigo; agregação mantém origens. Tabelas wiki/provisórias, raridade substitutiva, reserva de capacidade, fonte de missão e ledger único descritos em LOOT_M01_13.md. Testes/capturas em evidencias/m01-13; editor/A56 e balanceamento final permanecem separados e pendentes. Não iniciar M01-14.
+
+Registros abaixo são históricos quando divergirem deste estado operacional.
+
+
+## Fechamento M01-12 — aprovação do responsável (26/10/2026)
+
+Responsável aprovou inventário/equipamentos atuais, associados ao estado disponível6271f22, sem informar hash próprio, dispositivo ou lista de casos. A aprovação aceita a cobertura mínima de materiais existente para prosseguir; não transforma torso/material em figurinos completos nem comprova novos testes físicos/editor. Critérios funcionais revisados: arrasto/alternativas, troca/remoção sem perda, técnicas/atributos/aparência e save/load demonstrados nas evidências R01/R02. Validador estático/puro reexecutado com sucesso no fechamento; demais suítes identificadas são as execuções anteriores, sem alegar repetição. M01-12 concluído no escopo incremental aprovado, com ressalvas aceitas e não bloqueantes.
+
+Melhorias futuras, não implementadas: reavaliar paleta; facilitar acesso/uso de itens reduzindo confirmações constantes; melhorar design da janela de confirmação. Preservar também favoritos futuros e limitações de cobertura artística registradas. Nova sessão visual no editor e Galaxy A56 físico continuam pendentes para validação integrada, sem atribuir à aprovação do responsável. Autorizada integração em develop e publicação; sem promover main/release.
+
+Estado operacional M01-12: M01-11 integrado/publicado em develop6e59882 após aprovação do combate disponível em25672fe (ambiente/casos não detalhados). Feature/m01-inventario-equipamentos implementa inventário, troca/arrasto/prévia/remoção e aparência derivada mínima por couro/malha. M01-12 permanece em revisão, sem encerramento artístico; ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Favoritos são melhoria futura não implementada. Sem merge da nova feature ou avanço para M01-13; A56 físico/playtest visual NW.js pendentes.
+
+Histórico M01-10 R02 (superado pelo estado operacional acima): feature/m01-combate em validação, sem integração automática; revisão somente piloto Bretã/rato (gestos, intermediários, armas separadas, vídeos).15 personagens/2 inimigos ainda R01; expansão/avaliação perceptiva, manual do responsável, editor/NW.js e Galaxy A56 pendentes. M01-09 integrado/publicado em develop782ebc8. M01-11 apenas orientado pelos prints, não iniciado; sem nova UI de slots ou mecânicas do outro projeto. REVISAO_COMBATE_M01_10_R02.md e backlog prevalecem sobre os históricos abaixo. P01–P08 e retratos aprovados com ressalvas preservados.
+
+Estado operacional M01-08 R01,26/10/2026: M01-07 R05 integrado em develop e1be141, com P01–P08 vigentes e ressalvas estéticas adiadas. M01-08 implementa recursos/evolução configurável por escolha, Vigor próprio, poções e descanso; testes em RECURSOS_E_PROGRESSAO_M01_08.md. Feature para revisão/publicação, sem merge automático. Próximo item M01-09, não iniciado; técnicas completas/combate, eficácia prática e aparelho continuam pendentes. O fechamento histórico R05 abaixo indicava M01-08 ainda não iniciado naquela rodada, estado superado pela autorização atual.
+
+Atualização vigente R05,26/10/2026: M01-07 criação-base desktop concluída com aprovação estética do responsável **com ressalvas**. Recortes/orientações heterogêneos foram aceitos para avançar, sem correção de imagens; arquivos/versões em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json, revisão futura em arte/PENDENCIAS_VISUAIS_M01_07.md. P01–P08 da auditoria R04 autorizados e aplicados provisoriamente; fonte/valores em decisoes/M01_07_APROVACAO_R05.json. FECHAMENTO_M01_07.md separa testes técnicos de balanceamento prático pendente. M01-08 é o próximo elegível, não iniciado. Relatos antigos de rejeição/revisão/pendência abaixo são históricos e devem ser lidos com esta precedência. main/release não autorizadas por este fechamento.
+
+Atualização em 25/10/2026. Este checklist é a referência operacional de pendências e prevalece sobre listas históricas de REVISAO_DE_PRONTIDAO.md e AVALIACAO_DE_CONSISTENCIA.md. Não altera os requisitos confirmados nos documentos temáticos.
+
+## Situação
+
+É possível iniciar um protótipo técnico do M01. Estão definidos escopo, marcos, idioma, criação de personagem, exploração, encontros, combate, encerramento da demo, fontes de recuperação, respawn, proteção de quests e coleta automática.
+
+Regras não especificadas seguem o padrão compatível do RPG Maker MV 1.6.1. Isso evita reabrir decisões sobre regras nativas, mas não fornece automaticamente comportamentos para sistemas novos nem substitui a direção específica de progressão inspirada em Skyrim.
+
+## Situação atual das definições e tarefas restantes
+
+| Tema | O que ainda não está concreto | Quando fechar |
+| --- | --- | --- |
+| Evolução dos recursos | Modelo de Skyrim confirmado; documentar fórmulas e incrementos adaptados como especificação técnica | Durante a feature de progressão, sem reabrir a direção |
+| Loot | Máximo de um equipamento por loot, com pequena chance de raridade; tabelas por dificuldade confirmadas | Implementar conciliação e balancear probabilidades |
+| Livros de magia | Uso único, consumíveis, sem requisitos mínimos, drops de inimigos/baús conforme dificuldade | Cadastrar livros e tabelas; validar consumo após aprendizado |
+| Magias ambientais | Avaliar adaptação para múltiplos alvos, preservando identidade e balanceamento | Durante a feature de magia; hipóteses em ADAPTACAO_DE_MAGIAS.md |
+| Geração em runtime | Recurso opcional com decisão adiada | Avaliar inclusão nos próximos marcos; fora dos requisitos do M01 |
+| Mapa e bússola | Recursos opcionais com decisão adiada | Avaliar inclusão nos próximos marcos; fora dos requisitos do M01 |
+| Mobile | Paisagem, tela inteira e preferência por Chrome confirmados; toque será avaliado nos testes | Ajustar resolução lógica, escala e controles no Galaxy A56 |
+| Criação e arte | Cadastrar raças/gêneros e seus assets; usar prints existentes de HUD, inventário, loot e quests e solicitar novos exemplos se necessário | Antes da produção em lote e durante protótipos |
+
+Não é necessário decidir todos esses pontos numa única rodada. Implementar e documentar escolhas locais reversíveis; consultar o responsável quando uma proposta alterar o produto ou quando houver alternativas com impacto relevante.
+
+## Especificação e balanceamento durante a implementação
+
+- Técnicas: mínimo leve/pesado por tipo já confirmado. Cadastrar movimentos, custos e efeitos concretos; validar desarmado e armas simultâneas quando usados no marco.
+- Recursos: escolher a implementação técnica de Stamina, valores iniciais e limites. Sem regeneração passiva; poções e camas recuperam; cama restaura os três recursos por completo.
+- Magias: converter catálogo, níveis de aprendizado e custos, registrando referências e diferenças do original. Não importar bugs ou criar spellmaking por associação.
+- Loot: partir dos dados disponíveis da wiki, identificar valores provisórios e ajustar chances/quantidades em testes. Coleta automática já está definida.
+- Descanso: identificar camas, custos e condições de acesso nos locais do marco. Não reabrir a restauração completa confirmada.
+- Quest inicial: traduzir e especificar eventos, chave, portas e transições a partir das fontes; validar geometria do mapa, que ainda não foi conferida visualmente neste conjunto de tarefas.
+- Itens importantes: associar cada obrigação a seu evento-fonte; reativar enquanto necessário, preservando entregas/consumos legítimos e eliminando duplicações nas etapas. O mecanismo geral já está definido.
+- Respawn: persistir conclusão e saída de área; separar inimigos comuns dos específicos de quest e da reativação excepcional para recuperar item obrigatório.
+- Interface: definir composição, atalhos, tamanho de slots e descrições, usando doc/prints como referência de mecânicas e mantendo dark fantasy. Não tratar imagens estáticas como especificação completa.
+- Aparência por armadura: escolher folhas alternativas ou camadas, produzir duas variantes de teste e validar save/load antes de ampliar combinações.
+- Persistência: estabelecer IDs e dados salvos por feature; definir compatibilidade antes de distribuir versões que devam carregar saves anteriores.
+
+## Tarefas de prontidão, não novas decisões de design
+
+- Preparar mapa inicial e recursos necessários ao boot; executar o primeiro playtest.
+- Adequar Community_Basic à política de plugins desenvolvidos pelo Codex, mantendo o necessário de forma nativa ou por implementação própria validada.
+- Implementar as features do M01 e seus critérios de aceitação, sem considerar a documentação como prova de execução.
+- Revisar o diff e selecionar os documentos antes do primeiro commit; nenhuma publicação foi feita nesta tarefa.
+
+## Ajustes documentais identificados nesta revisão
+
+COMBATE.md ainda apresentava ordem/quantidade de ações como decisão aberta e citava troca de personagem ativo, apesar da regra padrão do MV e do personagem único. A orientação foi alinhada: adotar regras nativas compatíveis e deixar aliados fora do inicial.
+
+INTERFACE.md ainda pedia referências concretas de MMORPG, mas doc/prints já foi populada. A tarefa atual é selecionar e interpretar os exemplos existentes. A política de arquivos ainda descrevia o gitignore como não aplicado; foi atualizada nesta tarefa.
+
+Relatórios históricos continuam como registros de análise, sem apagar suas conclusões anteriores. A documentação de entrada aponta este checklist para evitar que problemas já resolvidos sejam apresentados novamente como bloqueios.
+
+## Git e fontes locais
+
+O .gitignore foi aplicado conforme GITIGNORE_PROPOSTO.txt. Foram criadas develop e feature/documentacao-inicial, com a feature ativa. Não houve commit nem envio remoto.
+
+As pastas doc/wiki e doc/prints continuam locais e disponíveis para consulta explícita. O índice FONTES_LOCAIS.md permanece versionável. Documentação própria, dados, scripts e assets finais não devem ser excluídos pelos padrões aplicados.
+
+
+As decisões de inclusão de geração procedural, mapa e bússola foram adiadas para os próximos marcos e não são pendências bloqueadoras do M01. As demais linhas acima representam detalhamento, pesquisa, implementação e balanceamento, não pedidos para redefinir regras confirmadas. Novas alternativas com impacto de produto devem ser tratadas quando surgirem.
+
+## Verificação final de prontidão
+
+Conclusão: não restam bloqueios de definição de direção para iniciar o protótipo M01. O encerramento no Shift Gate, criação de personagem, idioma, regras de recursos, aprendizado, coleta, proteção de itens e destino mobile estão confirmados. Geração procedural, mapa e bússola estão adiados para próximos marcos.
+
+Os itens da tabela atual são especificações por feature, não uma nova rodada obrigatória de perguntas antes de começar. A progressão deve concretizar o modelo Skyrim com adaptações; os números serão documentados e balanceados. A seleção de raças, gêneros, técnicas, itens e assets exige inventário das fontes e do conteúdo do M01, sem presumir opções novas como já aprovadas.
+
+Ainda há tarefas antes de declarar o M01 pronto: detalhar e traduzir eventos, validar visualmente a dungeon, preparar o boot, produzir assets consistentes, implementar plugins próprios necessários e testar os fluxos em desktop e no Galaxy A56. Nenhuma delas foi executada por esta análise.
+
+Foram corrigidos trechos ativos que ainda tratavam o fim da demo e a identidade da primeira quest como indefinidos, além das menções à independência irrestrita dos slots equipáveis. Empilhamento passa a seguir explicitamente o padrão compatível do motor. As listas históricas permanecem datadas e subordinadas a este checklist.
+
+O .gitignore e os documentos continuam sem commit na feature/documentacao-inicial; revisar e consolidar a feature é uma pendência de organização, não de design. Nenhum commit, merge ou envio foi realizado nesta verificação.
+
+
+## Planejamento de implementação do M01
+
+As tarefas remanescentes estão organizadas em BACKLOG_M01.md, itens M01-01 a M01-20. O checklist de pendências continua distinguindo regras confirmadas de especificação técnica; o backlog indica ordem, dependências e critérios para executar a demo.
+
+## Execução iniciada em 25/10/2026
+
+A situação de Git descrita acima é histórica: baseline documental consolidada em 29fc22b e integrada em develop; MQ01 especificada em 29f44c3. O laboratório M01-03 passou em Chrome desktop. Consultar VALIDACAO_M01.md para estado por item e limites; este registro não declara a demo pronta.
+
+Banco mínimo M01-04 cadastrado e validado; fontes/adaptações em DADOS_M01.md. Próxima etapa M01-05: persistência própria. O estado histórico “sem commit” nos parágrafos anteriores não representa a árvore atual; consultar o Git e VALIDACAO_M01.md.
+
+## M01-06 — revisão estética prioritária
+
+A amostra anterior foi rejeitada pelo responsável. R02/R03 é candidata pequena; consultar `arte/REVISAO_IDENTIDADE_R02.md`. Não ampliar produção antes da avaliação estética. Corrigir perspectiva para exploração superior e completar estados de animação somente após validar direção. Ilustrações narrativas reutilizáveis não podem fixar identidade/equipamento do protagonista, inclusive por mãos, silhuetas ou sombras.
+
+## Estado atual — direção aprovada, M01-06 em validação técnica
+
+A aprovação explícita do responsável em25/10/2026 cobre dungeon R02, rato R03 e Ria R02; conferir `arte/APROVACAO_DIRECAO_R02_R03.json`. Substitui a espera estética da seção anterior. Preservar referências/prompts e não regenerar imagens adequadas. Revisar composição/objetos/contexto ao integrar diálogos, sempre sem protagonista. Map003 é a nova galeria técnica; limitações, testes e próximos passos em `arte/INTEGRACAO_R04.md`. Ainda pendentes: autoria no editor, leitura/toque no aparelho, acabamento de superfícies e formatos/estados completos de combate. Não marcar todo M01-06 concluído.
+
+## Atualização R05
+
+Autoria: gerenciador abriu e projeto foi salvo/fechado/reaberto pelo editor usando teclado/acessibilidade; serialização auditada. Conferência visual detalhada do gerenciador/Map003 e playtest continua pendente por limitação de captura/clique. Leitura da galeria mobile melhorada, testada com toque emulado; Galaxy A56 não testado. Ver `arte/FIDELIDADE_E_VALIDACAO_R05.md`. Inventário:16 combinações necessárias, uma piloto provisória, nenhum conjunto final completo; M01-07 não iniciado enquanto dependência M01-06 continuar em validação. Não repetir geração dos aprovados.
+
+## Estado atual após criação M01-07
+
+M01-06 concluído como primeira amostra desktop conforme matriz ENCERRAMENTO_AMOSTRA_M01_06.md, integrado em develop. M01-07 criação-base implementada e validada em desktop em feature própria:16 combinações, nome, bônus e save/load. Relatório M01_07_CRIACAO.md. As esperas anteriores de todo catálogo/combate não bloqueiam mais os exemplos já demonstrados; biblioteca animada, visuais de armadura e A56 permanecem nos itens próprios. Novas variantes precisam de revisão estética pelo responsável, sem regenerar as aprovadas sem necessidade. Não implementar dungeon final, aliados ou outra feature nesta rodada.
+
+## Fechamento M01-13 — 26/10/2026
+
+Responsável aprovou o menu de loot no estado disponível2b0f0dc, sem informar versão própria/dispositivo ou casos adicionais. Destaque visual de raros é melhoria futura, não implementada. Aprovação limitada ao menu; critérios funcionais revisados separadamente:11 cenários MV,24 matrizes, reservas/save/load/quest/derrota/abort/rollback e regressões registrados em evidencias/m01-13. Validador estático reexecutado neste fechamento; não alegar reexecução de todas as suítes. M01-13 concluído tecnicamente, com economia provisória e testes editor/A56 ainda separados. Integração/publicação em develop autorizadas; sem main/release.

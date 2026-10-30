@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-27",
+  "sourceVersion": "031a58b",
+  "temporaryProject": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\mv-editor-m01-14\\Game.rpgproject",
+  "excluded": [
+    ".git",
+    "save",
+    "tmp",
+    "doc",
+    "art"
+  ],
+  "originalRuntimeFilesChecked": 273,
+  "originalRuntimeChanged": [],
+  "copyChangedSincePreparation": [],
+  "fixtureLabelChangeOnlyDuringPreparation": "data/System.json gameTitle labels fixture; Map008 and plugins unchanged",
+  "map": {
+    "id": 8,
+    "treeName": "M01-14 Masmorras Imperiais",
+    "size": [
+      156,
+      156
+    ],
+    "tilesetId": 4,
+    "events": 168,
+    "sampleDoor62TwoPagesAndSwitchA": true,
+    "displayName": "Masmorras Imperiais",
+    "savedTestMarkerPresent": false,
+    "propertiesAndEventsEqualExceptDisplayName": true
+  },
+  "pluginFileContracts": {
+    "canonicalUTF8AndFilesAndNameStatusParametersPreserved": true,
+    "count": 23,
+    "nativePluginManagerReadVerified": false
+  },
+  "nativeEditorOpenEditSaveReopenVerified": false,
+  "automation": {
+    "approach": "Temporary project + command-line opening attempt + accessibility only",
+    "screenshotAttemptsThisRound": 0,
+    "temporaryProjectOpenedVerified": false,
+    "error": "element 5616 is not available in cached app state for RPGMV.exe",
+    "editOrSaveCommandsSent": false
+  },
+  "ownerEvidence": {
+    "date": "2026-10-27",
+    "availableVersion": "031a58b; owner did not supply a hash",
+    "verified": "Execution of Explorar Dungeon through RPG Maker MV1.6.1 worked up to the point tested",
+    "doesNotVerify": [
+      "Map008 authoring edit/save/reopen",
+      "native plugin manager reading",
+      "entire dungeon route",
+      "physical Galaxy A56"
+    ]
+  },
+  "mobile": "Galaxy A56 physical pending integration mobile; not a desktop stage blocker",
+  "remaining": "Native editor edit/save/reopen and reading controls must be verified; static JSON checks do not prove it"
+}

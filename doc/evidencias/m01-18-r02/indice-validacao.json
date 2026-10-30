@@ -1,0 +1,813 @@
+{
+  "date": "2026-10-28",
+  "branch": "feature/m01-narrativa-demo",
+  "base": "0a0106e",
+  "scope": "R02 integration; final source snapshot, not a claim all tests ran against every file",
+  "browser": "Chrome156",
+  "manualEditorThisRevision": "pending",
+  "physicalGalaxyA56": "pending",
+  "newArtApproval": "pending",
+  "results": [
+    "resultado.json",
+    "narrativa-telas-menores.json",
+    "integracao-tesouros.json",
+    "caminhada-runtime.json",
+    "apoio-rato/caminhada-runtime.json",
+    "armaduras/aparencia.json",
+    "armas-planos-16-combinacoes.json",
+    "armas/resultado.json",
+    "regressoes/criacao/m01-07-result.json",
+    "regressoes/quests/resultado.json",
+    "regressoes/encontros/resultado.json",
+    "regressoes/persistencia.json",
+    "geradores.json",
+    "videos-decodificados.json"
+  ],
+  "sources": [
+    {
+      "file": "data/Actors.json",
+      "sha256": "3b3c7f4639a283fe7b8de8af693e09a8710632b211486e057bfae0da5027645d"
+    },
+    {
+      "file": "data/Animations.json",
+      "sha256": "b8e8253afaf295f843b2ea16ea38c18571edfad242a0e62dfa0dbcb3e91ad8d3"
+    },
+    {
+      "file": "data/ArenaAbilities.json",
+      "sha256": "a7cd397fdc8118ba7cf8b3817750c1817f5cf33a0c0635303bf36a3f7b43f366"
+    },
+    {
+      "file": "data/ArenaArtSamples.json",
+      "sha256": "d3ad825d4dcdd2ca8ef1297f355fa3eeef2bc6ea3955309b652bcc1bd94c9b7e"
+    },
+    {
+      "file": "data/ArenaBattle.json",
+      "sha256": "42870c68722f6b378317eac0ba9cbdd69fb873166fb352fbf803fc501efb9c1a"
+    },
+    {
+      "file": "data/ArenaBattleMotion.json",
+      "sha256": "9bd8330e836b4b727c3add6a831f22573b20e4cb2edb7aee4bb031798e394fea"
+    },
+    {
+      "file": "data/ArenaBattleUI.json",
+      "sha256": "3144b95ab875bc57a386ec7bac515558a861978f62759f3dbbcaee9641a6816b"
+    },
+    {
+      "file": "data/ArenaCatalog.json",
+      "sha256": "5974905050b9cd4d00494c20b3ef09634cd65ee0e735d5a5e9555a2fe778932b"
+    },
+    {
+      "file": "data/ArenaCharacterVisuals.json",
+      "sha256": "59b8b1f584736a867ff630c9a638a22f8f68ef4bcf549378c930cacd04a9e133"
+    },
+    {
+      "file": "data/ArenaDungeon.json",
+      "sha256": "f626234b3481f13a558ac6cdde458f80fe29d362ad11e8926dd75ee5aa07b002"
+    },
+    {
+      "file": "data/ArenaEncounters.json",
+      "sha256": "b38eb2d2ee8d5b24b7c8521aa73ab575041fc29a0718c3895eeeef0fb76dce7b"
+    },
+    {
+      "file": "data/ArenaInventory.json",
+      "sha256": "81fad8230e797c55ac3f16828550c5dce65c86e61d9306bd86d5b486fa4e4f70"
+    },
+    {
+      "file": "data/ArenaLoot.json",
+      "sha256": "fb8936a065fad0e74ca9ba324592224e7761d942c8d0c35414de4152950510a2"
+    },
+    {
+      "file": "data/ArenaNarrative.json",
+      "sha256": "6bbf5ed362ca172e0340f03542cf63ec4de37b19cd6985d34ae585d373301e4b"
+    },
+    {
+      "file": "data/ArenaProgression.json",
+      "sha256": "91d52bdf688b51885042a12f1b58b8e859b124a226ad40902dfdadab965ae88e"
+    },
+    {
+      "file": "data/ArenaQuestJournal.json",
+      "sha256": "ba45238be4f2b33a2ef3591caa01b4ce235cbf8cd26f7826eefba4edf9e36425"
+    },
+    {
+      "file": "data/ArenaQuests.json",
+      "sha256": "42a20e66312706c04e4d8dfb922b8427ec8c1d48cae7ccc54ca40753c54a8c12"
+    },
+    {
+      "file": "data/ArenaRecovery.json",
+      "sha256": "c365fce1c35edd445594fa51158a2aebeeb131dae33d568d8d51d8405ad4ffed"
+    },
+    {
+      "file": "data/Armors.json",
+      "sha256": "700119ef41766e80686f777727ebeb8f5407228bac7ff5c4c7b2584ef53505bf"
+    },
+    {
+      "file": "data/Classes.json",
+      "sha256": "fa329de89e04f88e3f6149a4387ec7c88c5ffe3286b9bc9d208270b76d0c8ae8"
+    },
+    {
+      "file": "data/CommonEvents.json",
+      "sha256": "13ddf8ad5a897f7b4e8b2b8002f3b01fae2bfbfd5783eb52a74b888cf7474be7"
+    },
+    {
+      "file": "data/Enemies.json",
+      "sha256": "fb806331ac4b7e2d255a97c0a9242e16842b7c4fc14e86e59ff61c2e35b430bb"
+    },
+    {
+      "file": "data/Items.json",
+      "sha256": "aa98e75a80e6f37b9beff9cb4ccbb3e327998edf0e67f95f0d8e8dbb2da5e480"
+    },
+    {
+      "file": "data/Map001.json",
+      "sha256": "5b098cf6cfc62b5b0e6f0f2cfa65e6fadbd6e56ea757ad40df4a2785dc218fcc"
+    },
+    {
+      "file": "data/Map002.json",
+      "sha256": "b813c48814f005218acc836b63d47865ac365a9a5bde31b91cdc287086562653"
+    },
+    {
+      "file": "data/Map003.json",
+      "sha256": "531f4d6b53faba10dff1f9479e5d9b97c1e269e3430ce8ff76321b855f940913"
+    },
+    {
+      "file": "data/Map004.json",
+      "sha256": "72a7336f592785dfbcecb2f6ca5b96e0ebd39a41d356978c534eb8229ba014a1"
+    },
+    {
+      "file": "data/Map005.json",
+      "sha256": "50842a074520d6220d1bc5cf7496c099ab1fd79ede5f377d054e2b80089f7af1"
+    },
+    {
+      "file": "data/Map006.json",
+      "sha256": "d1af09af0434bbeb9a965ffc301176e0b571fd8f00747863566aa619adfe0b28"
+    },
+    {
+      "file": "data/Map007.json",
+      "sha256": "a90e9e53952b1f5b5b24c39612cdc8d3ea9891ac43d34b9784969547cd62f411"
+    },
+    {
+      "file": "data/Map008.json",
+      "sha256": "9f40e00edd8d7db72ca95b611e5d2d7cfd27f853fbedffc7e5858dc6abb0a5fa"
+    },
+    {
+      "file": "data/MapInfos.json",
+      "sha256": "1e8aca2dac141497bbe899dd04dd2665a13d9e9a7306bb8bd5464437629190b5"
+    },
+    {
+      "file": "data/Skills.json",
+      "sha256": "7f881da4f0cdff0661018ce149ba4465edc8a5a6fe0778cf3652c4e18d5c274a"
+    },
+    {
+      "file": "data/States.json",
+      "sha256": "d09d7eee8ca7a00faf52b293db1abb9fabc5130c521945511e66e861fe514760"
+    },
+    {
+      "file": "data/System.json",
+      "sha256": "55ea5e2d91f2cbd9baef5a1736d081c0167bc13c6f92cb05fad0fb46aabacdd2"
+    },
+    {
+      "file": "data/Tilesets.json",
+      "sha256": "18d1154c95f9553d8c611f7da5519c6d919e1a09feb3ed9af8398a917f848c11"
+    },
+    {
+      "file": "data/Troops.json",
+      "sha256": "cc423634e6ff6934fca9a295560b3b90661605336fdf42fd006b4a70ff978755"
+    },
+    {
+      "file": "data/Weapons.json",
+      "sha256": "1934106a2a493335cb6fab3f97b6f24ed8c7a104626c60218739ceb553332733"
+    },
+    {
+      "file": "js/plugins/Arena_Abilities.js",
+      "sha256": "fc41b0795c6c22f708e7c54f31abd785d03c72ebd1ac0d93b104d53da5dd8b60"
+    },
+    {
+      "file": "js/plugins/Arena_AbilityLab.js",
+      "sha256": "fea42de0fbdbe757f1b1572eb3bfaf5253747ef7a9da042f83ab4a81dc045c20"
+    },
+    {
+      "file": "js/plugins/Arena_ArtPreview.js",
+      "sha256": "195e7c9e4ae52c226f6c9812c0b391e3c901ac683fbc612f871f8ee20220e6b0"
+    },
+    {
+      "file": "js/plugins/Arena_Battle.js",
+      "sha256": "1f8856b90da678bc5bcc3ffe06cc26860dea4222cce3dfbe158550b0fed94b4a"
+    },
+    {
+      "file": "js/plugins/Arena_BattleMotion.js",
+      "sha256": "793ee8bd74d44f563aefa3b976146f79a0126c7dabc323f43a09b85d17a9fab5"
+    },
+    {
+      "file": "js/plugins/Arena_BattleUI.js",
+      "sha256": "277c914815e7885564bccc5b5357f4f506eef4c5d8288712b37bde419d388a26"
+    },
+    {
+      "file": "js/plugins/Arena_CharacterCreation.js",
+      "sha256": "493981cee33fd91d841d1905bf6f9d2c5c2644d86ec673596682cba1f45c0f22"
+    },
+    {
+      "file": "js/plugins/Arena_Dungeon.js",
+      "sha256": "62c21de8e24e94e6998d4300869fc061da2859776a8d724847c7590b6c74923f"
+    },
+    {
+      "file": "js/plugins/Arena_Encounters.js",
+      "sha256": "c01da90d54e1c3bf13b82e0368150551aadc711a561379c95c16a231d461df3f"
+    },
+    {
+      "file": "js/plugins/Arena_Inventory.js",
+      "sha256": "25b00af48a601065aa1da2d65981d6afd1fc6ff6b46a092701702b9b7c3f5faf"
+    },
+    {
+      "file": "js/plugins/Arena_Loot.js",
+      "sha256": "4852842dc59b451ad32400008fa6956a6452cf8fa06673f57bb37d7bcdac5852"
+    },
+    {
+      "file": "js/plugins/Arena_Narrative.js",
+      "sha256": "0eb3595c7f5627bb8de4f1ef47cc407492e8e532acdece13b0d1042958fa4907"
+    },
+    {
+      "file": "js/plugins/Arena_Persistence.js",
+      "sha256": "d790ff6ded0ef0d9e17e6c3169ba6690398ac9e244da6fa91627ca9e5715f84c"
+    },
+    {
+      "file": "js/plugins/Arena_QuestJournal.js",
+      "sha256": "1adb0c331eee61ee4885f0b9c5ab6c01169e24dcd066bd1cb98f16d2dfb258a8"
+    },
+    {
+      "file": "js/plugins/Arena_Quests.js",
+      "sha256": "0dca9b2ccd3f6fd00544baa686efbe223fcffd04ad82e066ca4caa639d4372b4"
+    },
+    {
+      "file": "js/plugins/Arena_Recovery.js",
+      "sha256": "ca4cba8db605cdd239b48b8d833967cc9d2b1341c088508fd85d41f0b2c4dfa0"
+    },
+    {
+      "file": "js/plugins/Arena_Resources.js",
+      "sha256": "4e7d4bde0bf824b62957a6b6f2f0395f333b97991a72059c5135c96e85f77f4b"
+    },
+    {
+      "file": "js/plugins/Arena_Runtime.js",
+      "sha256": "458cc2dbbe5117d01c9dc21e56c0d7e07aaf09bc7375359bcddf7150b4092b72"
+    },
+    {
+      "file": "js/plugins/Arena_TechnicalPreview.js",
+      "sha256": "d29d6317ce5c35cc89c6e2b9132bbcf6d3bc847fc8cea541bd21158e5095c4fd"
+    },
+    {
+      "file": "js/plugins/Community_Basic.js",
+      "sha256": "93d25e8b1a9154da02685472c596ec9baa5a6ae2abc29ca1b8f85c5d651f0ad6"
+    },
+    {
+      "file": "js/plugins/MV_AbilityRules.js",
+      "sha256": "8967ceb53eee453b87b45d40e38f4d66e4bbb852adc8514ebe32bc731c1bd0bb"
+    },
+    {
+      "file": "js/plugins/MV_BattleSlots.js",
+      "sha256": "6408e64149ba8b4605874f3c4502ee7133f746af7746b72f4dd470d3d1ef6ff5"
+    },
+    {
+      "file": "js/plugins/MV_CharacterRules.js",
+      "sha256": "76b68ca24b99bb5eb408b9ed2190eff990784df0b5a7827bd632fea607ecaaaf"
+    },
+    {
+      "file": "js/plugins/MV_EncounterRules.js",
+      "sha256": "7d07fad7bc05ad0ce350cdfbc58a5e3b0f04920e7c2da86d22aedf29062b5982"
+    },
+    {
+      "file": "js/plugins/MV_EquipmentTransaction.js",
+      "sha256": "ffdca197b95b77ba6500fef1df1f240b33c7b78306209e0fbd44ecb24594afc0"
+    },
+    {
+      "file": "js/plugins/MV_JournalModel.js",
+      "sha256": "4720b4223d9d7ac9538454a4ff38ad53f32bd2b773298c6e29d63db571209246"
+    },
+    {
+      "file": "js/plugins/MV_LootRules.js",
+      "sha256": "a289036464840237563db673bd342ed11bf16a02cf82650df3e066eeb305e034"
+    },
+    {
+      "file": "js/plugins/MV_MotionTimeline.js",
+      "sha256": "7566f80a039d0eebb9996072e36227fb2c1c8016748d4d0d1203458e28adb029"
+    },
+    {
+      "file": "js/plugins/MV_NarrativePages.js",
+      "sha256": "7a05b1b06adab41cecc7d3f62db7e28ceb08fe17681a022d8400851a9e77c1be"
+    },
+    {
+      "file": "js/plugins/MV_QuestRules.js",
+      "sha256": "6da2ea103fa3afb7a1d2b4bb27d703a0fcb7ea3f449ed6e6251746cf05bd045b"
+    },
+    {
+      "file": "js/plugins/MV_ResourceProgression.js",
+      "sha256": "d9ff5a15bf027afd89d62d445e49daab6a6e8b8ee87009fc12aad8659f0a26a9"
+    },
+    {
+      "file": "js/plugins/MV_StateStore.js",
+      "sha256": "69ba4f16f37056fca72db2fe8780041df8085a6e320521ab16f0d6cbb507c275"
+    },
+    {
+      "file": "tools/assemble-walk-r02.py",
+      "sha256": "f8dfbf106ef5869ffc21a392387f3567bdc1d9b0a24da3f7962e759c044fc779"
+    },
+    {
+      "file": "tools/assert-loot-extensions.cjs",
+      "sha256": "a8552867015485ebdffb43307145c4add3630c2b20134f4535253c5acd09a838"
+    },
+    {
+      "file": "tools/audit-art-records.py",
+      "sha256": "1f5eec46cc0ae2a208626a15b4f0257b5a4b24d20d4f59c42d4ab6fd5a1458e2"
+    },
+    {
+      "file": "tools/audit-battle-assets.py",
+      "sha256": "419045fd55a9daf64724870b61a76d90af1376728e1f0c61ecf570fded4e1fd6"
+    },
+    {
+      "file": "tools/audit-battle-expansion-r03.py",
+      "sha256": "3ffaa351d672c528f3f29cf83210046604fa9aca6bc1aa2cbc2132d29b36b05e"
+    },
+    {
+      "file": "tools/audit-character-revision.py",
+      "sha256": "9bbf0b762eb89eaa4b1199d68910e3b4929569345eb003986ecb095953189be3"
+    },
+    {
+      "file": "tools/audit-dungeon-r03.py",
+      "sha256": "c12226c3bd6e36b47cac0a2d083074b9b033b5f55d43300dc9e7c2a1228359be"
+    },
+    {
+      "file": "tools/audit-dungeon-revision.py",
+      "sha256": "6ba6a1a4205a7da3c5e9372b529677636634ec27bbf1591534c80caae6aae599"
+    },
+    {
+      "file": "tools/audit-dungeon-sources.py",
+      "sha256": "9087f6e5f6e5eac056558c55a180599d97fc0d3640b7cec7512c8d40278dc7d0"
+    },
+    {
+      "file": "tools/audit-identity-r04.py",
+      "sha256": "5a68202d39e368c8968a2c2e57393d4931803ff091c18d8bb089729e475342d4"
+    },
+    {
+      "file": "tools/audit-motion-r02.py",
+      "sha256": "583097b9925583d274de942737a4030e8aad915516d1a18cff91569617ff1c34"
+    },
+    {
+      "file": "tools/audit-portrait-pose.py",
+      "sha256": "3b8ebd1b31f0d86f75b7fe4fc61785710eef5e6d6adb7a8cd8f60681cd6ba38b"
+    },
+    {
+      "file": "tools/audit-swimming-research.py",
+      "sha256": "4dc35fddc8778b0fed4ad18466d480daf28ccd58c72789d198d0b1b20437bea2"
+    },
+    {
+      "file": "tools/battle-test-controls.cjs",
+      "sha256": "0cdcf8b0fd43178a6f36abf5b747e8b3ce7179bf211bc6c4746b3b285dddd67e"
+    },
+    {
+      "file": "tools/battle-video.cjs",
+      "sha256": "658f1b38b6ae22e44dade90a7600c0708b32ab09c1bafb2f2f8c854c546146ec"
+    },
+    {
+      "file": "tools/battle_components.py",
+      "sha256": "d12266597ba9114b88a911b7461421d63d55740155bb2063cd127ba9cff3b57e"
+    },
+    {
+      "file": "tools/build-art-integration.py",
+      "sha256": "4acdbf75a7a605e62418381307af88ea6ae0ab376caf4226daaa5c39acb0918b"
+    },
+    {
+      "file": "tools/build-art-review.py",
+      "sha256": "eb01975cb1dc7cbce164b8ac2ff6947190ff11aa29b6f4ec4a70557fcd6a2b3a"
+    },
+    {
+      "file": "tools/build-art-samples.py",
+      "sha256": "270c8e9007ddfb6773482c8fe675d14ec89f0cb1f15b76b8c9379e7c9f901c32"
+    },
+    {
+      "file": "tools/build-battle-assets.py",
+      "sha256": "19552245b6a919a6eb7dd17747e33b8bc16b7891547ced6acdebd8e636c32612"
+    },
+    {
+      "file": "tools/build-battle-expansion-r03.py",
+      "sha256": "90c21f6f6d9e711f7e1100a55575286f843973b597428f30aa39e6514e770182"
+    },
+    {
+      "file": "tools/build-battle-expansion.py",
+      "sha256": "bfa8bfb4cab3429a97e4fb762b7d7f2c01675d49b92f7086c4a0bf21c5b55069"
+    },
+    {
+      "file": "tools/build-battle-motion-r02.py",
+      "sha256": "35b4b8cbf283b8c8242e7a36183a348aac74f0422441311ca93527bec4f0d2de"
+    },
+    {
+      "file": "tools/build-character-assets.py",
+      "sha256": "f6806ef71cfba6457c949e28ce00c908ca26ad48da3c529a4c2c63b3c792502f"
+    },
+    {
+      "file": "tools/build-character-revision.py",
+      "sha256": "b02964a9b2be0aff5678055fda693859dd8983317b8939bfa94183c1d811846b"
+    },
+    {
+      "file": "tools/build-dungeon-map.py",
+      "sha256": "8b21305670d5ab55c97520735506b6df62e83750d5a2e2f3e021779985efbc44"
+    },
+    {
+      "file": "tools/build-dungeon-objects.py",
+      "sha256": "169dc587e8525b815773d81090cd291df0c3c2ce8250b5966c1e5bc9689c12b9"
+    },
+    {
+      "file": "tools/build-dungeon-r03-assets.py",
+      "sha256": "cd6950bc123d2ed67c9bed8d647ab3670caeeb8164c0d782b07e851b8f28c8a3"
+    },
+    {
+      "file": "tools/build-encounters.cjs",
+      "sha256": "05161bec9fdee9f00cd452542a2b5db220e155158e0e4c27f80c89642080072a"
+    },
+    {
+      "file": "tools/build-expansion-video-strips.py",
+      "sha256": "5f5fbac34914013f50ee4c382fdb5c3e682fa7f1eeb31387817edfbb99f95860"
+    },
+    {
+      "file": "tools/build-identity-pilots-r04.py",
+      "sha256": "6c4c862ca1efff4191072de925b0eaa5f4774687701eef83b79363aa7a7a3688"
+    },
+    {
+      "file": "tools/build-motion-video-previews.py",
+      "sha256": "e5015ee7b8ea10f7d3e509e4bac433ede639793b05becc1d49b37c8ad2fe26bd"
+    },
+    {
+      "file": "tools/build-narrative-art-r02.py",
+      "sha256": "483d0d2baf398868d5c3d0f7b6eaca5e8937a4c3322bddd255c63dc151af872c"
+    },
+    {
+      "file": "tools/build-portrait-pose-revision.py",
+      "sha256": "743d898718a5678f8197b2b5ef30ed08dd0d8f16296e5e3948ca67d4eff5be48"
+    },
+    {
+      "file": "tools/build-quests.cjs",
+      "sha256": "e4af26a312d49ef3b8dd3333e823d22b5455cbba1f97bd859658d2b558c33a1e"
+    },
+    {
+      "file": "tools/build-walk-r02.py",
+      "sha256": "46b3017eb9a3d990eb31df4d2190e798ac49c4740dd150c5bf86817aeeff4519"
+    },
+    {
+      "file": "tools/capture-battle-ui.cjs",
+      "sha256": "72c0d38be4cc4270096a0bfb505777250d82386df379bdbe5f274f912a9cf501"
+    },
+    {
+      "file": "tools/capture-dungeon-objects.cjs",
+      "sha256": "fb63351e534da636b126c9d782fc51b6771af338c8ab55098e413febe3c2a8e5"
+    },
+    {
+      "file": "tools/capture-dungeon-r03-attachments.cjs",
+      "sha256": "8c128b9b1ca979042fef8fcf9b72f0e96e85ff506512ac5456278c9bb7877050"
+    },
+    {
+      "file": "tools/capture-previews-r02.cjs",
+      "sha256": "e27dbb33506e735307431d2a62ff3b9f345854f7027b4c4430b82f2cdfa1dd48"
+    },
+    {
+      "file": "tools/export-motion-review.cjs",
+      "sha256": "033e5d0c5bdf47afa3fa688c92c06ca3ae07f9c84cbb24e891869429c7625d9b"
+    },
+    {
+      "file": "tools/inspect-battle-ui-video.cjs",
+      "sha256": "814b4d2697af14ac5e3a5a9d4ba65217c36e82066287d24721b94840f76b15d2"
+    },
+    {
+      "file": "tools/inspect-expansion-videos.cjs",
+      "sha256": "59c2fcb74c117b87113769526b579e23addad288ec22b054acfa2b136d87b29c"
+    },
+    {
+      "file": "tools/inspect-integration-videos-r02.cjs",
+      "sha256": "fde983c22e76785bdd1f276480a8e3096ca6c8b75ee64beb113b9b42a4202460"
+    },
+    {
+      "file": "tools/inspect-motion-videos.cjs",
+      "sha256": "53405da371a0ec3a26c9f42a7862a13549b85bd695b76da8f22d450f32dad0a0"
+    },
+    {
+      "file": "tools/narrative-validation.cjs",
+      "sha256": "bbad0199c2077e2fadf71142457a664282a1e57bf3f1f22218d511631405c155"
+    },
+    {
+      "file": "tools/pack-equipment-materials.cjs",
+      "sha256": "df9d9afc604277ac6dc01d8f3064c353e75c15a40cb69043e0d495ba4c3bba75"
+    },
+    {
+      "file": "tools/prepare-mv-authoring-copy.py",
+      "sha256": "1735a5cc304a6ef89b1ccea1f253f755f18fe5a3128a6d1ef6f876482a28d9c1"
+    },
+    {
+      "file": "tools/record-battle-before.cjs",
+      "sha256": "84ceeb9bae1662ebe6cca3c9965fd7f483e9ac8c72c0c310e6022b26495d7423"
+    },
+    {
+      "file": "tools/recovery-validation.cjs",
+      "sha256": "1468a2c1550799e59ca1c3d91e5cd6af98ce5edf3b706c6701e77f8a7cc31da9"
+    },
+    {
+      "file": "tools/render-dungeon-overview.py",
+      "sha256": "ed172d1de4dc103aecf7620fe44c347cf40229776782522133274822e6f1eefc"
+    },
+    {
+      "file": "tools/render-dungeon-r03-review.py",
+      "sha256": "5b9d03cd7edad5a76d8aa050abf9bba072139838fc955cf185224df7899c9e1c"
+    },
+    {
+      "file": "tools/render-dungeon-review.py",
+      "sha256": "1127cb295d014b0384b1f3c17d67537e8a31c15008f7d08c1771abf854c3b216"
+    },
+    {
+      "file": "tools/reproduce-gate-before-r02.cjs",
+      "sha256": "c457885452daed55acdb7084258a76c2d23dc5aaf451def2ea84c84f5a91d318"
+    },
+    {
+      "file": "tools/test-abilities.cjs",
+      "sha256": "c9eb513ca5db063500fc3a86782e942ffdec53aa713c724bfdd22f36ddb61f8b"
+    },
+    {
+      "file": "tools/test-approved-races.cjs",
+      "sha256": "1586d712ff2f66f1d54d7a77c54fcaecf77ca5ef96567df423184d577b92ce6f"
+    },
+    {
+      "file": "tools/test-art-integration.cjs",
+      "sha256": "c47d87f26c55f731110a6a2644834e69a52b4e836bac8b28077800ecefda2f28"
+    },
+    {
+      "file": "tools/test-art-preview.cjs",
+      "sha256": "bacb9af708bfe79f2b60cbbc66b3dc9aef124399d2df8bd6cdb3aca9189ae0c7"
+    },
+    {
+      "file": "tools/test-art-review.cjs",
+      "sha256": "30b7b4312be9a4ff1450a28c11aad739687124eea464c7fec6c858b96d4c6607"
+    },
+    {
+      "file": "tools/test-art-viewport.cjs",
+      "sha256": "314c43bcb39bc3d98f682f0d54404aeb6f2eb33362d2daa82f449ed2231feec0"
+    },
+    {
+      "file": "tools/test-battle-comparison.cjs",
+      "sha256": "fdc672724d9a0fc71041d257e513f5d07ef085d4d37dc264833c406fcbe0f2af"
+    },
+    {
+      "file": "tools/test-battle-coverage.cjs",
+      "sha256": "6b6fe1325bd737c709542873bea554570bc4a7954539a02a4d575afe0d74683c"
+    },
+    {
+      "file": "tools/test-battle-expansion-r03.cjs",
+      "sha256": "f7981feb2f874337c2ee07b502e8c21a438987793fcd9ad81a4282d0574d4d8c"
+    },
+    {
+      "file": "tools/test-battle-motion-edge.cjs",
+      "sha256": "e83079641623d3ad37eb5305732a5146c6329ca2d69f9f0309920237d2d4e081"
+    },
+    {
+      "file": "tools/test-battle-motion.cjs",
+      "sha256": "ca8fa95afb874765415c2019a1c43cd42065c2d8a2c523dfb82e62493c216a0e"
+    },
+    {
+      "file": "tools/test-battle-slots-category.cjs",
+      "sha256": "212f055d436591461d59497d6156b67337b18fc951c43f349694410aab99f89d"
+    },
+    {
+      "file": "tools/test-battle-slots-pointer.cjs",
+      "sha256": "5d53c3af9cb1672a67626fcb502ee626dad5e31f499e65530270a6692a8b9379"
+    },
+    {
+      "file": "tools/test-battle-slots.cjs",
+      "sha256": "b051b6ca237ce2518bb1ecced7ff3b06f32418a4d704c3bf05e58b7a56cba077"
+    },
+    {
+      "file": "tools/test-battle-ui-refinement.cjs",
+      "sha256": "f73911fd1b2c97beff8dee3ef5660ed24b92f6427615ba89e7884c9bf37ddc6a"
+    },
+    {
+      "file": "tools/test-battle-ui.cjs",
+      "sha256": "989732bb7fdd3fb5ed61df55747d5f1f10e94a1d0a360c1eabc469eb8b48b220"
+    },
+    {
+      "file": "tools/test-battle.cjs",
+      "sha256": "da5b49ea1f82269ff1b8e2ff2c16fe871500077b98e8ce860731517fe48550b4"
+    },
+    {
+      "file": "tools/test-boot.cjs",
+      "sha256": "61dbad1f2a2254e6702bd754889b06a709b0e3f6d21ba5278da106485a8a2755"
+    },
+    {
+      "file": "tools/test-character-creation.cjs",
+      "sha256": "4f43e2cbe3c285f3f0876156018de2472b8b64c5bc344219701a683fdbbf9bfc"
+    },
+    {
+      "file": "tools/test-character-pointer.cjs",
+      "sha256": "ebfe797f9c0353622dcb29c7c2cc5ba0663ee0e9dbe45c8d25f2a83ef1988175"
+    },
+    {
+      "file": "tools/test-character-visual-revision.cjs",
+      "sha256": "e49af0662e3d9f464c1e08ec5aee014d17f886af9866d369d88f7013f0ea241d"
+    },
+    {
+      "file": "tools/test-dungeon-r03.cjs",
+      "sha256": "5845d0a4fdf03f96bd28f2b2da1b391ca131f27373d885c207e3a951619e5239"
+    },
+    {
+      "file": "tools/test-dungeon-revision.cjs",
+      "sha256": "cadfbe8c91ebcb9ee57fc1b070368767f59e91722b4664a93964e02551f166b9"
+    },
+    {
+      "file": "tools/test-dungeon.cjs",
+      "sha256": "2cbb93560ca10c3d6e75425b047049de608b7deac30572c865e314227466cf62"
+    },
+    {
+      "file": "tools/test-encounter-pointer.cjs",
+      "sha256": "af4b07783e1cdeff91f3fa8ba9c75a6e6338dd08abeb1f776bae153d85bdf43f"
+    },
+    {
+      "file": "tools/test-encounters.cjs",
+      "sha256": "0e74132109e5003c3986f6d55c61b6c2ece9656a4161427574788ee99790b74b"
+    },
+    {
+      "file": "tools/test-integration-r02.cjs",
+      "sha256": "9e9f94c8442b87baeb431cc4452e312803ee5363f5e19340f7eed265a7f68e79"
+    },
+    {
+      "file": "tools/test-inventory-appearance.cjs",
+      "sha256": "e81d0f202f4f7ae6e7c069977c1465e132478df825b77b625eb69b05a8723005"
+    },
+    {
+      "file": "tools/test-inventory-comparison.cjs",
+      "sha256": "4fd17118e711bd2c62aa198712083e68595b166c94905cee47b1bb9f24e65fff"
+    },
+    {
+      "file": "tools/test-inventory-touch.cjs",
+      "sha256": "cb4dc184419685768446870f4dac083b544994e080b429314fa9e0eba571731d"
+    },
+    {
+      "file": "tools/test-inventory.cjs",
+      "sha256": "cb32e706fd37ccf1d73d511fddd671cb6389a5bc2b3714a37a2fd726bd1ac922"
+    },
+    {
+      "file": "tools/test-journal.cjs",
+      "sha256": "e358c48573260d1a23d50f52bdecb34f059d61f809769f2ea236569c62abf42d"
+    },
+    {
+      "file": "tools/test-loot-presentation.cjs",
+      "sha256": "1d87884e73b6f87474b17369e4f7d71feb6c32337cfd182045367d820739a246"
+    },
+    {
+      "file": "tools/test-loot.cjs",
+      "sha256": "7a7267878a9f85e3873b43c8ef6e026b3a3691392eda59a872c325973155ca1a"
+    },
+    {
+      "file": "tools/test-motion-timeline.cjs",
+      "sha256": "efa0b3a4fd4a51e5c365a3b224cd30a8c4f35618419b20c7b8ed31d1e4a60a0b"
+    },
+    {
+      "file": "tools/test-narrative-small-r02.cjs",
+      "sha256": "b75e9b249e1f3ce6a2fa6dc5eec86a15e5c5c707fa8970bdd3d7fdea89e6f087"
+    },
+    {
+      "file": "tools/test-narrative-small.cjs",
+      "sha256": "937eb51597fa6b265e1503da195732d41ee2ddc215d338fead28f679083f5484"
+    },
+    {
+      "file": "tools/test-narrative.cjs",
+      "sha256": "c2a57c07319ae384804e429308472f6dd4ff3ff11d2a4c77e80ccb2c63cf1010"
+    },
+    {
+      "file": "tools/test-persistence.cjs",
+      "sha256": "2e0aa15321b34fa95d0f8778934863446892d90f05f2cc3cd78b7d10cb39eaed"
+    },
+    {
+      "file": "tools/test-potion-feedback.cjs",
+      "sha256": "bcaf7ddb0fbe64d1d8093cb5abee5a93c6c391d6f5312f7f90c73e872a2b0574"
+    },
+    {
+      "file": "tools/test-potion-menu-guard.cjs",
+      "sha256": "49c8e58e97886500f1f5fd8827465058232be8e05833b537a26a36239880a2c4"
+    },
+    {
+      "file": "tools/test-quests.cjs",
+      "sha256": "8f4893d4a2fac039dc0bba58ea0a6d52df2fdf3cc7bfc86137f4024ec3a7c918"
+    },
+    {
+      "file": "tools/test-racial-audit.cjs",
+      "sha256": "904a54cd7e2f5febbb62a9c7ace95d078e39512b29bc275367a66e42b007c8ba"
+    },
+    {
+      "file": "tools/test-recovery-small.cjs",
+      "sha256": "1315ec6eca255ff16c1e4f5c72ddaf9c1ffd9ef1a5241876007565ebb64d2acc"
+    },
+    {
+      "file": "tools/test-recovery.cjs",
+      "sha256": "f6d69b30ec7513eb17a33d114ecdff81313d9c29ad2dc01ba47f4766ac2fc62f"
+    },
+    {
+      "file": "tools/test-resources-progression.cjs",
+      "sha256": "3e6a0a59921dea40cba00bb4d6bd29f28a7949f5c13d8216214772c0f28adbf6"
+    },
+    {
+      "file": "tools/test-runtime.cjs",
+      "sha256": "ceea147de69ef3eb16c1551f84a68162ec5a3ba045b93d1226785e2076e70f4c"
+    },
+    {
+      "file": "tools/test-state-store.cjs",
+      "sha256": "750348515ece734135e2f0a9c005073e86d7b8dea10c5520d30490b93286eb27"
+    },
+    {
+      "file": "tools/test-walk-pilot-r02.cjs",
+      "sha256": "51b62b70d471374ff404ee538f47b2659e7f943828b47fb3600089456bbd97d9"
+    },
+    {
+      "file": "tools/test-walk-r02.cjs",
+      "sha256": "3dfc1353badf1a3ce77cde06253acbd2a181bfab6cd4f72db3df428a707985fa"
+    },
+    {
+      "file": "tools/test-weapon-planes-r02.cjs",
+      "sha256": "de32114b9d3d2f158cbccb6a2f9722669e2049d85a5c86b1ffe1d78f3131fe6a"
+    },
+    {
+      "file": "tools/validate-abilities.cjs",
+      "sha256": "c6c95aedcbf0cc77120ac16838baef42b2a3b6a32e05c1be4fffb95af450050a"
+    },
+    {
+      "file": "tools/validate-battle-motion.cjs",
+      "sha256": "d8c326b4c4dd5a3ce04cf4e35f5174819df75499dff8032fae011f24bea6f3a3"
+    },
+    {
+      "file": "tools/validate-battle-ui-refinement.cjs",
+      "sha256": "f394c91e58aa7bf58a1d66fa0d55a4b30972288736bf2d8be0fd3815403c9a1f"
+    },
+    {
+      "file": "tools/validate-battle-ui.cjs",
+      "sha256": "ea569680d7c0d98e327245ed0842504b3aa33c1f3dd5d41fbdecd8add9d892c8"
+    },
+    {
+      "file": "tools/validate-battle.cjs",
+      "sha256": "dccfa440abbb9616456f307d760c38211bf5b978dd5f07a374c683fb000289a2"
+    },
+    {
+      "file": "tools/validate-data.cjs",
+      "sha256": "0f3576e8ec2653fdd810ae3c3e34c7527885e141dfb13e7c66869f1e34edeb15"
+    },
+    {
+      "file": "tools/validate-dungeon-r03.cjs",
+      "sha256": "df0f423b6f2f6132c77e1cb6a2a43eba3265149882a124a9ff0cdeab69adca8c"
+    },
+    {
+      "file": "tools/validate-dungeon.cjs",
+      "sha256": "e494f0b39013813c8479b40fba2118338c6e783f6ac68c803cbc8f4dccc65435"
+    },
+    {
+      "file": "tools/validate-encounters.cjs",
+      "sha256": "f5510fa2c19bf6029cd70816cef7f288edacc388ad5726090827e6ffa8a2a055"
+    },
+    {
+      "file": "tools/validate-integration-r02.cjs",
+      "sha256": "b382b4d21df3edc647266bff162511b4acb62877bfd2f61547c804ea4ac72ee9"
+    },
+    {
+      "file": "tools/validate-inventory.cjs",
+      "sha256": "443cbefec36d98534ff3fa3ac7bf25997f009188b035017738149f30e1d97d2e"
+    },
+    {
+      "file": "tools/validate-journal.cjs",
+      "sha256": "dd6745861bc23ce84b47f3f4eb8bb799c93356af424b276e5535b562e069b83a"
+    },
+    {
+      "file": "tools/validate-loot.cjs",
+      "sha256": "c2685341cd5f3b1f71e3024561d64a64d75a1c64fad557f997440d17d7640a24"
+    },
+    {
+      "file": "tools/validate-m01-07-closure.py",
+      "sha256": "ff1d3665f66e95ebc1e6a09cb181d2582e0135cd37bcf9fafa3fa3c981645bbd"
+    },
+    {
+      "file": "tools/validate-narrative.cjs",
+      "sha256": "dd4f9686dcb68bc048332d772e863e35a20e9dc076458f9d4dbc52e29380abdb"
+    },
+    {
+      "file": "tools/validate-potion-feedback.cjs",
+      "sha256": "e25be2ea9cc754d25fa4c291bbc99b453924d483bb7070d1822245be9e3f6ff5"
+    },
+    {
+      "file": "tools/validate-potion-menu-guard.cjs",
+      "sha256": "328d90518d37ea3c629bd8b30c614ae636405aa15fba9c5327438c38a750747b"
+    },
+    {
+      "file": "tools/validate-quests.cjs",
+      "sha256": "8ce4924044746bd0953bc7ad3137bc1f0ec993589fa584f39387b9514c31e3da"
+    },
+    {
+      "file": "tools/validate-recovery.cjs",
+      "sha256": "5fa70e5bf800721673c120af5db16776e1f555479dc3d9d1dfc6ab7d069c532f"
+    },
+    {
+      "file": "tools/validate-resources.cjs",
+      "sha256": "f7725db579918da4dbc782a6b098b2cb6a48aca252219b890aa4c26669184600"
+    },
+    {
+      "file": "tools/verify-mv-authoring-copy.py",
+      "sha256": "50b2552e3579a269e762728a42e35945ef62f3f830c86e55048e69a2f5c6529b"
+    }
+  ],
+  "implementationCommit": "61ac5cf"
+}

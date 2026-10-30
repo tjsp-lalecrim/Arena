@@ -1,0 +1,13 @@
+{
+  "version": "M01-10/R02",
+  "tool": "image_gen built-in",
+  "transparent_background": true,
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_breton_female_r02_side.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\breton-female.png"
+  ],
+  "prompt": "Use case: identity-preserve. Production 2D SIDE VIEW articulated animation poses for Arena dark fantasy. Reference1 exact Breton woman's identity/style/outfit/LEFT-facing orientation; reference2 old motion study only for identity continuity, NOT its limited animation. Preserve adult woman, brown tied-back hair, cream blouse, brown leather vest, dark trousers, brown cuff boots. No portrait redesign. Exactly SIX equal columns, specified rows. Each cell contains ONE fully separated whole body, transparent margins, no touching neighbors, no clipped hands/hair/boots. Same anatomical scale across ALL cells, same ground baseline per cell, camera and body size never change. Meaningful new in-between drawings, NOT repeated images or translated rigid figures. Figurative painterly dark fantasy matching supplied exact woman, no pixel art/anime/3D. All poses face LEFT; spine/neck natural, no mirrored facing right. No background/text/grid/shadows/speed lines, no drawn weapons: gripping hand empty for a separate weapon layer. Feet in same planted locations whenever standing; rotate torso/arms naturally rather than sliding feet. Target1536x1024. Exactly TWO rows of6 frames. Row1 LIGHT strike: neutral guard; small elbow withdrawal anticipation; half extension; IMPACT with front gripping fist extended LEFT in a quick waist-level diagonal slash/punch; partial retract; exact neutral guard. Row2 HEAVY strike: neutral guard; strong raised arm/elbow windup; torso loading with hand high near shoulder; IMPACT forceful downward-forward empty-grip strike to LEFT; follow-through and torso recovery; exact neutral guard. Heavy clearly differs from light in arm arc/body loading. Main attacking hand is anatomically closed around an EMPTY grip, usable with separate dagger/sword artwork composited later, and as fist when unarmed. Do NOT draw a sword/dagger/stick or a blade-shaped hand. Front hand visible for reliable attachment; no crossed/intersecting arms. All six poses per row follow one actual motion, not unrelated attacks.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-2df44ad1-32b4-48d1-af35-cd2727437e86.png",
+  "master": "art/masters/combate-r02/pilot-strikes.png",
+  "approval": "Candidate; no owner visual approval. Inspect actual cells and native sequences before expansion."
+}

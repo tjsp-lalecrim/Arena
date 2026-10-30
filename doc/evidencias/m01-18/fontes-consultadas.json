@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-28",
+  "sources": [
+    {
+      "path": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\ARENA\\TEMPLATE.DAT",
+      "sha256": "dae070edf25b137daa2d023c8335d2e276aa6a8bd1f64ef05011ce7cc1254bd7"
+    },
+    {
+      "path": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\ARENA\\GLOBAL.BSA",
+      "sha256": "345385c1565d9ca73e2d59d71a422498135485e2d01d4df66355ed804209042d"
+    },
+    {
+      "path": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\ARENA\\INTRO.FLC",
+      "sha256": "9524a6b1eab39109c36a25036efbabebbd600056de58c5f11a7b6b07e80879f2"
+    },
+    {
+      "path": "doc\\wiki\\Arena_Main Quest - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "sha256": "1c8537dd8162044e350a5c9e239e6a3fc9985127269d25aafa89fdbf5886b6de"
+    },
+    {
+      "path": "doc\\wiki\\Arena_Imperial Dungeons (quest) - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "sha256": "ae00e736f5920f235bdf92aabcc607e438c884984cee6291e191e5bd8392d4e1"
+    },
+    {
+      "path": "doc\\wiki\\Arena_Ria Silmane - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "sha256": "1f9cee8e84af2cf4be85f62b3ffd4a552720e4be148c4aa7c547936eb7600ac0"
+    },
+    {
+      "path": "doc\\prints\\ria silmane.jfif",
+      "sha256": "6e26b9ccd873bddead247b6ce916e496627a6ed9aa23dac1b7403720edcb0441"
+    }
+  ],
+  "primaryDialogue": {
+    "file": "TEMPLATE.DAT",
+    "block": "#1400",
+    "offsetStart": 299293,
+    "offsetEndExclusive": 301156,
+    "encoding": "ASCII content in CP437 file; CR line breaks normalized for consultation",
+    "confirms": "Ria identity, usurpation, ruby key at north wall, west/south Gate, creatures, death/waning magic, dreams and hope"
+  },
+  "localExports": "tmp/original-review/, ignored; no original binary distributed",
+  "limits": [
+    "No DOS cutscene execution observed this round.",
+    "INTRO.FLC Pillow reading failed despite recognizing320x200/76frames; do not claim playback.",
+    "INTRO1/INTRO01 IMG palettes not confirmed; not evidence of colors. HISTORY.IMG embedded palette and text visible, but usage in active CD flow not confirmed."
+  ]
+}

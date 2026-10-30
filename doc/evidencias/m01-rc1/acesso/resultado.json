@@ -1,0 +1,451 @@
+{
+  "base": "f6de74d",
+  "browser": "156.0.8078.73",
+  "checks": [
+    "Normal campaign map -> menu Inventário -> Atributos via existing Tab/keyboard path; no extra root menu or technical controls",
+    "Multi-attribute draft changes no actor state; held Enter cannot confirm through modal, controls behind are inactive; Escape cancels entire set",
+    "Mouse/touch build and reduce a mixed set; one confirmation applies all3 once, leaves3 unspent, correct native buff/equipment totals, no resource/inventory/quest changes",
+    "Unconfirmed exit cancels; inventory balance refreshes; normal native save/load preserves allocations and unspent points; reopen by touch",
+    "Zero balance remains readable; allocation/open rejected in battle; unchanged internal816x624 layout stays inside bounds at916x412 viewport (physical readability pending)",
+    "Deterministic title laboratory -> +3 levels -> actual inventory -> same campaign allocation screen, normal saves remain blocked"
+  ],
+  "before": {
+    "points": {
+      "level": 3,
+      "highestLevel": 3,
+      "granted": 6,
+      "available": 6,
+      "revision": 2,
+      "rows": [
+        {
+          "id": 2,
+          "name": "ATQ",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 3,
+          "otherAdditive": 3,
+          "rate": 1.25,
+          "total": 20
+        },
+        {
+          "id": 3,
+          "name": "DEF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 6,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 11
+        },
+        {
+          "id": 4,
+          "name": "MAT",
+          "base": 8,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 8
+        },
+        {
+          "id": 5,
+          "name": "MDF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 6,
+          "name": "AGI",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        },
+        {
+          "id": 7,
+          "name": "SOR",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        }
+      ],
+      "excluded": false
+    },
+    "resources": {
+      "hp": {
+        "current": 35,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 10,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 20,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 3,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": [
+        2,
+        3
+      ]
+    },
+    "inventory": [
+      {},
+      {},
+      {}
+    ],
+    "equips": [
+      2,
+      null,
+      null,
+      2,
+      null
+    ],
+    "native": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "identity": {
+      "actorId": 1,
+      "raceId": "breton",
+      "genderId": "female",
+      "baseVisualId": "breton.female.base"
+    },
+    "quests": {
+      "MQ01": {
+        "stage": 10,
+        "objectives": {},
+        "completed": false,
+        "receipts": {}
+      }
+    }
+  },
+  "pending": {
+    "allocation": {
+      "2": 1,
+      "4": 2
+    },
+    "plan": {
+      "ok": true,
+      "revision": 2,
+      "config": "{\"schemaVersion\":1,\"balanceVersion\":\"M01-20/atributos-piloto-R01\",\"actorId\":1,\"firstLevel\":2,\"pointsPerLevel\":3,\"valuePerPoint\":1,\"attributes\":[2,3,4,5,6,7],\"notes\":\"Parâmetros provisórios autorizados. Sem redistribuição; concessões e aumentos guardam seus valores originais. HP/MP/Vigor seguem Arena_Resources.\"}",
+      "allocation": {
+        "2": 1,
+        "4": 2
+      },
+      "rows": [
+        {
+          "id": 2,
+          "name": "ATQ",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 3,
+          "otherAdditive": 3,
+          "rate": 1.25,
+          "total": 20,
+          "after": 21
+        },
+        {
+          "id": 3,
+          "name": "DEF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 6,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 11,
+          "after": 11
+        },
+        {
+          "id": 4,
+          "name": "MAT",
+          "base": 8,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 8,
+          "after": 10
+        },
+        {
+          "id": 5,
+          "name": "MDF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5,
+          "after": 5
+        },
+        {
+          "id": 6,
+          "name": "AGI",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10,
+          "after": 10
+        },
+        {
+          "id": 7,
+          "name": "SOR",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10,
+          "after": 10
+        }
+      ],
+      "available": 3
+    }
+  },
+  "applied": {
+    "points": {
+      "level": 3,
+      "highestLevel": 3,
+      "granted": 6,
+      "available": 3,
+      "revision": 3,
+      "rows": [
+        {
+          "id": 2,
+          "name": "ATQ",
+          "base": 10,
+          "spent": 1,
+          "increase": 1,
+          "equipment": 3,
+          "otherAdditive": 3,
+          "rate": 1.25,
+          "total": 21
+        },
+        {
+          "id": 3,
+          "name": "DEF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 6,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 11
+        },
+        {
+          "id": 4,
+          "name": "MAT",
+          "base": 8,
+          "spent": 2,
+          "increase": 2,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        },
+        {
+          "id": 5,
+          "name": "MDF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 6,
+          "name": "AGI",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        },
+        {
+          "id": 7,
+          "name": "SOR",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        }
+      ],
+      "excluded": false
+    },
+    "resources": {
+      "hp": {
+        "current": 35,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 10,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 20,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 3,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": [
+        2,
+        3
+      ]
+    },
+    "inventory": [
+      {},
+      {},
+      {}
+    ],
+    "equips": [
+      2,
+      null,
+      null,
+      2,
+      null
+    ],
+    "native": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "identity": {
+      "actorId": 1,
+      "raceId": "breton",
+      "genderId": "female",
+      "baseVisualId": "breton.female.base"
+    },
+    "quests": {
+      "MQ01": {
+        "stage": 10,
+        "objectives": {},
+        "completed": false,
+        "receipts": {}
+      }
+    }
+  },
+  "menu": [
+    "item",
+    "skill",
+    "equip",
+    "status",
+    "arenaResources",
+    "arenaJournal",
+    "options",
+    "save",
+    "gameEnd"
+  ],
+  "symbols": [
+    "add",
+    "remove",
+    "add",
+    "remove",
+    "add",
+    "remove",
+    "add",
+    "remove",
+    "add",
+    "remove",
+    "add",
+    "remove",
+    "confirm",
+    "clear",
+    "back"
+  ],
+  "bounds": [
+    {
+      "x": 16,
+      "y": 8,
+      "width": 784,
+      "height": 300,
+      "inside": true
+    },
+    {
+      "x": 16,
+      "y": 312,
+      "width": 784,
+      "height": 312,
+      "inside": true
+    }
+  ],
+  "blocked": {
+    "open": false,
+    "preview": false,
+    "apply": false,
+    "unchanged": true
+  },
+  "empty": {
+    "balance": 0,
+    "adds": true,
+    "confirm": false
+  },
+  "errors": [],
+  "editor": "not executed",
+  "phone": "not executed",
+  "scope": "Synthetic normal campaign level/map fixture and lab access; no repeated campaign/battles/personal saves"
+}

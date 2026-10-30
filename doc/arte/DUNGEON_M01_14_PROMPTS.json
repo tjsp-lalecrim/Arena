@@ -1,0 +1,25 @@
+{
+  "version": "M01-14/complementos-v01",
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Generate ONE technical supplementary sprite atlas for Arena M01 dungeon, six equal square panels, exact 3 columns by 2 rows, no gutters, no text, no logos, no UI. Target 1536x1024 (each panel512). Image1 supplied is the approved project architecture/style reference (large brown floor slabs, cold dark grey masonry, aged iron, no pixel art). Image2 supplied is the ORIGINAL Arena Shift Gate reference: preserve its characteristic vivid cobalt-blue rectangular rim surrounding an almost black void, square architectural opening; do not turn it into a fantasy circular green portal. Do NOT reproduce reference screenshots or backgrounds, use only material/architectural identity. Six panels in precise reading order: TOP LEFT seamless orthographic top-view dark cold grey stone roof/cap texture, broad masonry, darker than floor, no perspective; TOP MIDDLE front-facing closed dungeon door aged dark wood and black iron straps in a flat stone frame, complete rectangle fills panel, no floor or corridor; TOP RIGHT straight front-facing square Shift Gate, luminous uneven cobalt-blue rectangle around black void, restrained weathered grey stone framing, no other environment; BOTTOM LEFT seamless orthographic top-down shallow opaque dark blue-brown sewer water, subtle ripples, no objects, no banks; BOTTOM MIDDLE orthographic top-down raised worn stone resting platform in prison, plain stone ledge, no bed, no furniture, no character; BOTTOM RIGHT front-facing prison wall with iron barred niche and two hanging chains, cold grey blocks matching reference1, whole square, no floor. High definition painterly dark fantasy, tactile realistic aged materials, readable at48px/96px, controlled contrast, keep reference1 palette and finish, Arena1994 architecture over generic gothic embellishment. No protagonist, no people, hands, silhouettes, animals, lettering or new equipment. Opaque atlas, not transparent. Separate panels exactly as specified for technical cropping.",
+  "generationInputs": [
+    {
+      "file": "art/masters/revisao-r02/dungeon-identidade-r02.png",
+      "role": "approved architecture/style",
+      "sha256": "7fa442a9968b19edecdb4db3cd0d25cffd2ec9518a6ead1e1df523398154857d"
+    },
+    {
+      "file": "doc/prints/imperial dungeons exit.jfif",
+      "role": "original square cobalt Shift Gate identity",
+      "sha256": "f0a5f8e05cc6adc5e8713516385a1b03f933d9997dcbe496ced11a2a03f82fdc"
+    }
+  ],
+  "master": "art/m01-14/complementos-prisao-v01.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "runtime": "img/tilesets/Arena_Dungeon_M14.png",
+  "packing": "tools/build-dungeon-map.py; existing approved R04 floor/wall; AI complement panels; existing concept key crop and item atlas pile; neutral void clear is not architectural artwork",
+  "status": "New complements and derived map pending owner evaluation; existing direction remains approved. No narrative protagonist."
+}

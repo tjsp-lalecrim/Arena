@@ -1,0 +1,222 @@
+{
+  "runtimeReference": "9fab698",
+  "model": "M01-20/S02 - unapproved study",
+  "premises": "Breton female, no physical racial bonus; successful non-critical physical hits; variance zero; neutral elements/pdr; no guard/healing/actions/initiative simulated. Gear is reference equipment, not initial campaign grant. Level5 uses approved +10 choices: HP twice, MP once, vigor once; full resources assumed after recovery, not granted by leveling.",
+  "proposals": {
+    "K": 8,
+    "minimumArmorFactor": 0.2,
+    "powers": {
+      "attack": 1,
+      "light": 1.25,
+      "heavy": 1.6
+    },
+    "heavyDefenseFactor": 0.75,
+    "offensiveGrowth": "floor((level-1)/2) to ATK and MAT, not implemented"
+  },
+  "rows": [
+    {
+      "scenario": "initial",
+      "level": 1,
+      "weapon": "Adaga",
+      "armor": "Couraça de couro",
+      "hp": 100,
+      "atkCurrent": 12,
+      "atkProposed": 12,
+      "def": 8,
+      "enemy": "Rato",
+      "enemyHp": 18,
+      "current": {
+        "attack": 22,
+        "light": 22,
+        "heavy": 34
+      },
+      "recommended": {
+        "attack": 10,
+        "light": 12,
+        "heavy": 16
+      },
+      "successfulAttacksToDefeat": {
+        "current": 1,
+        "recommended": 2
+      },
+      "received": {
+        "current": 2,
+        "recommended": 3
+      },
+      "successfulEnemyHitsToDefeatPlayer": {
+        "current": 50,
+        "recommended": 34
+      }
+    },
+    {
+      "scenario": "initial",
+      "level": 1,
+      "weapon": "Adaga",
+      "armor": "Couraça de couro",
+      "hp": 100,
+      "atkCurrent": 12,
+      "atkProposed": 12,
+      "def": 8,
+      "enemy": "Goblin",
+      "enemyHp": 30,
+      "current": {
+        "attack": 21,
+        "light": 21,
+        "heavy": 33
+      },
+      "recommended": {
+        "attack": 9,
+        "light": 11,
+        "heavy": 15
+      },
+      "successfulAttacksToDefeat": {
+        "current": 2,
+        "recommended": 4
+      },
+      "received": {
+        "current": 6,
+        "recommended": 4
+      },
+      "successfulEnemyHitsToDefeatPlayer": {
+        "current": 17,
+        "recommended": 25
+      }
+    },
+    {
+      "scenario": "gear",
+      "level": 1,
+      "weapon": "Espada curta",
+      "armor": "Cota de malha",
+      "hp": 100,
+      "atkCurrent": 13,
+      "atkProposed": 13,
+      "def": 11,
+      "enemy": "Rato",
+      "enemyHp": 18,
+      "current": {
+        "attack": 24,
+        "light": 24,
+        "heavy": 37
+      },
+      "recommended": {
+        "attack": 10,
+        "light": 13,
+        "heavy": 18
+      },
+      "successfulAttacksToDefeat": {
+        "current": 1,
+        "recommended": 2
+      },
+      "received": {
+        "current": 1,
+        "recommended": 2
+      },
+      "successfulEnemyHitsToDefeatPlayer": {
+        "current": 100,
+        "recommended": 50
+      }
+    },
+    {
+      "scenario": "gear",
+      "level": 1,
+      "weapon": "Espada curta",
+      "armor": "Cota de malha",
+      "hp": 100,
+      "atkCurrent": 13,
+      "atkProposed": 13,
+      "def": 11,
+      "enemy": "Goblin",
+      "enemyHp": 30,
+      "current": {
+        "attack": 23,
+        "light": 23,
+        "heavy": 36
+      },
+      "recommended": {
+        "attack": 9,
+        "light": 12,
+        "heavy": 16
+      },
+      "successfulAttacksToDefeat": {
+        "current": 2,
+        "recommended": 4
+      },
+      "received": {
+        "current": 3,
+        "recommended": 3
+      },
+      "successfulEnemyHitsToDefeatPlayer": {
+        "current": 34,
+        "recommended": 34
+      }
+    },
+    {
+      "scenario": "levels",
+      "level": 5,
+      "weapon": "Espada curta",
+      "armor": "Cota de malha",
+      "hp": 120,
+      "atkCurrent": 13,
+      "atkProposed": 15,
+      "def": 11,
+      "enemy": "Rato",
+      "enemyHp": 18,
+      "current": {
+        "attack": 24,
+        "light": 24,
+        "heavy": 37
+      },
+      "recommended": {
+        "attack": 12,
+        "light": 15,
+        "heavy": 20
+      },
+      "successfulAttacksToDefeat": {
+        "current": 1,
+        "recommended": 2
+      },
+      "received": {
+        "current": 1,
+        "recommended": 2
+      },
+      "successfulEnemyHitsToDefeatPlayer": {
+        "current": 120,
+        "recommended": 60
+      }
+    },
+    {
+      "scenario": "levels",
+      "level": 5,
+      "weapon": "Espada curta",
+      "armor": "Cota de malha",
+      "hp": 120,
+      "atkCurrent": 13,
+      "atkProposed": 15,
+      "def": 11,
+      "enemy": "Goblin",
+      "enemyHp": 30,
+      "current": {
+        "attack": 23,
+        "light": 23,
+        "heavy": 36
+      },
+      "recommended": {
+        "attack": 11,
+        "light": 14,
+        "heavy": 19
+      },
+      "successfulAttacksToDefeat": {
+        "current": 2,
+        "recommended": 3
+      },
+      "received": {
+        "current": 3,
+        "recommended": 3
+      },
+      "successfulEnemyHitsToDefeatPlayer": {
+        "current": 40,
+        "recommended": 40
+      }
+    }
+  ]
+}

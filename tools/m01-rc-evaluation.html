@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arena — avaliação isolada M01</title>
+<style>body{background:#12171a;color:#e4dfcd;font:16px sans-serif;margin:12px}button,a{font:inherit;margin:4px;padding:10px;color:#ece4c9;background:#293237;border:1px solid #a58a55}iframe{width:100%;height:76vh;border:1px solid #a58a55}p{margin:8px 0;max-width:1000px}code{overflow-wrap:anywhere}</style>
+<h1>Arena — suporte local de avaliação</h1>
+<p id="version">Conferindo pacote…</p>
+<p>Use somente esta origem de teste. A preparação não salva nem importa partidas. Os saves feitos por você no menu ficam nesta origem; não sobrescreva partidas pessoais.</p>
+<button id="prepare" disabled>Preparar avaliação — nível 3, seis pontos</button>
+<a href="/Arena/" target="_blank" rel="noopener">Abrir jogo / carregar save existente</a>
+<p id="status" role="status">Aguardando o título do jogo.</p>
+<p>Após preparar: menu → Inventário → Atributos. No PC, Esc abre o menu; no A56, o gesto atual é com dois dedos. Depois: menu → Salvar. Reabra este endereço e use o link do jogo → Continuar; não prepare outra sessão.</p>
+<iframe id="game" title="Arena — pacote de avaliação" src="/Arena/"></iframe>
+<script>
+'use strict';
+const frame=document.getElementById('game'),button=document.getElementById('prepare'),status=document.getElementById('status');
+let manifest,prepared=false;
+fetch('/Arena/package-manifest.json').then(r=>{if(!r.ok)throw Error('Manifesto indisponível');return r.json();}).then(m=>{
+ manifest=m;document.getElementById('version').textContent=m.testVersion+' · '+m.sourceCommit+' · '+location.origin;
+}).catch(e=>{status.textContent=e.message;});
+function savedKeys(){
+ // Includes generic/other MV prefixes and backups; never deletes or overwrites any key.
+ return Object.keys(localStorage).filter(k=>/(?:^|:)RPG (?:File\d+|Global)(?:bak)?$/.test(k));
+}
+setInterval(()=>{
+ try{
+  const w=frame.contentWindow,ready=!!(manifest&&w.Scene_Title&&w.SceneManager._scene instanceof w.Scene_Title&&w.SceneManager._scene._commandWindow&&w.SceneManager._scene._commandWindow.isOpenAndActive());
+  const existing=savedKeys();button.disabled=prepared||!ready||existing.length>0;
+  if(!prepared&&existing.length)status.textContent='Há registros de save nesta origem. Preparação bloqueada; use Continuar no jogo ou outro perfil/origem. Nenhum dado foi alterado.';
+ }catch(e){button.disabled=true;}
+},250);
+button.addEventListener('click',async()=>{
+ button.disabled=true;
+ try{
+  if(prepared||savedKeys().length)throw Error('Preparação recusada: sessão já preparada ou saves existentes.');
+  const w=frame.contentWindow;if(!manifest||!w.Scene_Title||!(w.SceneManager._scene instanceof w.Scene_Title))throw Error('Aguarde o título.');
+  // Reuse the existing resource laboratory map; no new event, item, fixture save or campaign rule.
+  w.DataManager.setupNewGame();
+  w.ArenaCharacterCreation.confirmCurrent({name:'Avaliação M01',raceId:'breton',genderId:'female'});
+  const actor=w.$gameActors.actor(1);actor.changeLevel(3,false);
+  w.$gamePlayer.reserveTransfer(w.$arenaProgression.technicalMapId,8,6,2,0);
+  w.SceneManager.clearStack();w.SceneManager.goto(w.Scene_Map);prepared=true;
+  status.textContent='Sessão técnica preparada no mapa de recursos existente: nível3, saldo6. Use o menu normal; nada foi salvo automaticamente. Guarde pelo menu apenas neste ambiente de teste.';
+  frame.focus();
+ }catch(e){status.textContent=e.message;}
+});
+</script></html>

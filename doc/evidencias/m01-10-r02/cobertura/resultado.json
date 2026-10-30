@@ -1,0 +1,983 @@
+{
+  "sourceSnapshot": {
+    "js/plugins/Arena_Battle.js": "9e16553301514c7a86bbc1266452887c649a2ef8df7c812c0c6b67ea1c959fa5",
+    "data/ArenaBattle.json": "42870c68722f6b378317eac0ba9cbdd69fb873166fb352fbf803fc501efb9c1a",
+    "data/Map007.json": "cf96c2b81b22e3b994bfbc3a830fcf49fa08a6901811410be4885d26056aa133",
+    "js/plugins.js": "2e03ffef9c7911db8dcf687789594d27fecf1369ade3bd82a385b90f63070f7e"
+  },
+  "browser": "156.0.8078.47",
+  "cases": [
+    {
+      "race": "argonian",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "argonian",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "breton",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "dark_elf",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "high_elf",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "khajiit",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "nord",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "redguard",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "male",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "race": "wood_elf",
+      "gender": "female",
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2
+        ],
+        "actor.action": [
+          0,
+          1,
+          2
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "enemy": 1,
+      "trace": {
+        "enemy.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.defeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "enemy": 2,
+      "trace": {
+        "actor.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2
+        ],
+        "enemy.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "enemy": 3,
+      "trace": {
+        "actor.wait": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.wait": [
+          0,
+          1,
+          2
+        ],
+        "enemy.action": [
+          0,
+          1,
+          2
+        ],
+        "actor.hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "actor.action": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "enemy.hurt": [
+          0,
+          1,
+          2
+        ],
+        "enemy.defeat": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

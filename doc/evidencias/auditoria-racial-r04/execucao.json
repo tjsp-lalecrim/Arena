@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "branch": "feature/m01-identidade-e-auditoria-racial",
+  "baselineCommit": "1399af8",
+  "runtimeChange": "only remove unarmed skillIds3/4 from weapon bonus classification; racial values/labels and16 active visual refs unchanged",
+  "balanceProposalsApplied": false,
+  "art": "2 male pilots/4 calls,review only; actual transparency verified after correction of preliminary raw-preview diagnosis; Khajiit combat foot touches source edge; no runtime replacements",
+  "passed": [
+    "test-racial-audit.cjs --record-before-fix:8 races x7 levels, historical1399af8 rules in isolated memory; bug reproduced",
+    "test-racial-audit.cjs:8 races x7 levels,skill3/4 no weapon bonus with/without equipment; damage/hit/critical/resources/AGI/resistances/immunity",
+    "test-character-creation.cjs:234 checks plus UI name/navigation/review/cancel/confirm",
+    "test-character-visual-revision.cjs:16 active previews,16 save/load rebuilds,16 map renders,256 pattern/direction samples",
+    "audit-identity-r04.py:provenance,4 calls for2 pilots,catalog and active visuals unchanged,only declared technical fix",
+    "audit-art-records.py:205 hashes/dimensions,9 prompt logs,canonical plugins.js; candidate provenance is not production validity",
+    "audit-character-revision.py,audit-portrait-pose.py:active native frames/alpha/approved rules with explicit R04 exclusion",
+    "validate-data.cjs:JSON,IDs,references,equipment,source catalog and lab map"
+  ],
+  "environment": "desktop Chrome156.0.8078.47;1100x800 viewport,816x624 game;isolated127.0.0.1:8766 helper; existing8765 preserved",
+  "isolation": "disposable contexts,personal saves untouched; synthetic variance0/MAT+20/cold probes in memory only",
+  "notPerformed": [
+    "production integration of R04 pilots",
+    "female/new-direction rollout",
+    "new editor/NW.js roundtrip/playtest",
+    "physical Galaxy A56",
+    "full combat balance validation"
+  ],
+  "approval": "aesthetic and numeric proposals pending owner; no main/develop merge or release"
+}

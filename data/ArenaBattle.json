@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "mapId": 7,
+  "lab": {
+    "weaponId": 1,
+    "additionalWeaponIds": [
+      2
+    ],
+    "bookIds": [
+      5,
+      6
+    ],
+    "potionIds": [
+      2,
+      3,
+      4
+    ]
+  },
+  "nativeMotionStates": [
+    "wait",
+    "wait",
+    "action",
+    "wait",
+    "hurt",
+    "hurt",
+    "action",
+    "action",
+    "action",
+    "action",
+    "action",
+    "action",
+    null,
+    "wait",
+    "wait",
+    "wait",
+    "wait",
+    "defeat"
+  ],
+  "coverage": "technical-candidates-owner-manual-tests-pending",
+  "actors": {
+    "breton.male.base": {
+      "file": "Arena_Combat_breton_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "argonian.male.base": {
+      "file": "Arena_Combat_argonian_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "argonian.female.base": {
+      "file": "Arena_Combat_argonian_female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "dark_elf.male.base": {
+      "file": "Arena_Combat_dark_elf_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "dark_elf.female.base": {
+      "file": "Arena_Combat_dark_elf_female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "high_elf.male.base": {
+      "file": "Arena_Combat_high_elf_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "high_elf.female.base": {
+      "file": "Arena_Combat_high_elf_female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "khajiit.male.base": {
+      "file": "Arena_Combat_khajiit_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "khajiit.female.base": {
+      "file": "Arena_Combat_khajiit_female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "nord.male.base": {
+      "file": "Arena_Combat_nord_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "nord.female.base": {
+      "file": "Arena_Combat_nord_female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "redguard.male.base": {
+      "file": "Arena_Combat_redguard_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "redguard.female.base": {
+      "file": "Arena_Combat_redguard_female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "wood_elf.male.base": {
+      "file": "Arena_Combat_wood_elf_male_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "wood_elf.female.base": {
+      "file": "Arena_Combat_wood_elf_female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "breton.female.base": {
+      "file": "Arena_Combat_breton-female_r01",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    }
+  },
+  "enemies": {
+    "2": {
+      "file": "Arena_Combat_enemy_2_r01",
+      "cell": [
+        192,
+        112
+      ],
+      "ground": 104,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "3": {
+      "file": "Arena_Combat_enemy_3_r01",
+      "cell": [
+        192,
+        128
+      ],
+      "ground": 120,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
+    "1": {
+      "file": "Arena_Combat_rat_r01",
+      "cell": [
+        128,
+        80
+      ],
+      "ground": 74,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    }
+  }
+}

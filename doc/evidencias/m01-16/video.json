@@ -1,0 +1,12 @@
+{
+  "duration": 6.900636,
+  "width": 816,
+  "height": 624,
+  "decoded": true,
+  "samples": [
+    0.2,
+    0.6,
+    0.9
+  ],
+  "source": "native MV canvas capture with locate setup; not a complete dungeon traversal"
+}

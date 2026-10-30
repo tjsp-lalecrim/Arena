@@ -1,0 +1,56 @@
+{
+  "sourceCommit": "e407a69193e168c6c1a160ab5809b1781b4a6478",
+  "infrastructure": "43284f3ca3c6b1f82fae0a537e8f3a5e2b691e64",
+  "changedMainPaths": [
+    ".github/workflows/pages-preview.yml",
+    "tools/finalize-pages-package.cjs",
+    "tools/pages-package-policy.json"
+  ],
+  "manualOnly": true,
+  "approvedManifest": "77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831",
+  "linuxValidation": {
+    "run": 41050143414,
+    "url": "https://github.com/tjsp-lalecrim/Arena/actions/runs/41050143414",
+    "conclusion": "success",
+    "deploy": "skipped",
+    "files": 321,
+    "totalBytes": 37996040,
+    "manifestMatched": true
+  },
+  "earlierNonDeployRuns": [
+    {
+      "run": 41048501621,
+      "result": "success but byte/metadata mismatch; not deployed"
+    },
+    {
+      "run": 41049101909,
+      "result": "failed checkout-clean guard; not deployed"
+    },
+    {
+      "run": 41049637613,
+      "result": "failed checkout-clean guard; not deployed"
+    },
+    {
+      "run": 41050088170,
+      "result": "old main infrastructure retry failed; not deployed"
+    }
+  ],
+  "physicalTestCorrection": "Owner latest RC1 test was GPT integrated browser, not A56; physical RC1 pending",
+  "namespace": "arena:m01:save-v1",
+  "auxiliaryPage": "excluded from allowlist; must be HTTP404 after deploy",
+  "nativeTestPath": {
+    "profile": "Bretão · Feminino in Combate técnico (piloto), not E05",
+    "training": [
+      3,
+      5
+    ],
+    "enemy": [
+      10,
+      8
+    ],
+    "enemyExp": 50,
+    "level2Exp": 50,
+    "balanceAfterOneVictory": 3,
+    "validation": "Read-only database/native EXP formula inspection; no battle replay this task"
+  }
+}

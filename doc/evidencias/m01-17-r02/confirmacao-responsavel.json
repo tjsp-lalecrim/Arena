@@ -1,0 +1,17 @@
+{
+  "data": "2026-10-28",
+  "origem": "declaração do responsável nesta conversa",
+  "estado_disponivel": "35ba624",
+  "versao_exata_informada": false,
+  "evidencia": "O uso de poções funcionou.",
+  "escopo": "Funcionamento do uso de poções; tipos, roteiro e ambiente não informados.",
+  "nao_comprova": [
+    "descanso",
+    "nova composição R02 ou animação de barras",
+    "consumo único em todos os cenários",
+    "persistência desta revisão",
+    "autoria no editor",
+    "Galaxy A56 físico",
+    "balanceamento"
+  ]
+}

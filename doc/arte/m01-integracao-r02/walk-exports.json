@@ -1,0 +1,518 @@
+[
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-khajiit-male.png",
+    "target": "img\\characters\\$Arena_khajiit_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        714,
+        1086
+      ],
+      [
+        0,
+        361,
+        722,
+        1063,
+        1448
+      ]
+    ],
+    "scale": 0.15954415954415954,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "600d8cce0cd1daba202fc474939a7faf4e567478e502091c77f5518009683747",
+    "id": "khajiit.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-argonian-male.png",
+    "target": "img\\characters\\$Arena_argonian_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        385,
+        722,
+        1086
+      ],
+      [
+        0,
+        362,
+        724,
+        1086,
+        1448
+      ]
+    ],
+    "scale": 0.1590909090909091,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "sha256": "0be98630151f93eef2205a5deef07ac56452952e5f28f008e9d740fed3b75e97",
+    "id": "argonian.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-argonian-female.png",
+    "target": "img\\characters\\$Arena_argonian_female_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        398,
+        724,
+        1086
+      ],
+      [
+        0,
+        362,
+        722,
+        1050,
+        1448
+      ]
+    ],
+    "scale": 0.15864022662889518,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "d034c4959bf145bcc67a5e050a8d0636c4bef918429da7c3af46fd2302f84874",
+    "id": "argonian.female.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-breton-male.png",
+    "target": "img\\characters\\$Arena_breton_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        364,
+        724,
+        1083,
+        1449
+      ]
+    ],
+    "scale": 0.16184971098265896,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "7ed8d70521a3c00bfe55aaea10bf28cdf7f0f64b5f855ddb3f09f965c7cd3dd7",
+    "id": "breton.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-dark_elf-male.png",
+    "target": "img\\characters\\$Arena_dark_elf_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        362,
+        724,
+        1086,
+        1448
+      ]
+    ],
+    "scale": 0.16470588235294117,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "sha256": "5ed341ac8f571a0475589afc7598b2ce14dd9bf34b3e1dcf3143b84b59291248",
+    "id": "dark_elf.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-dark_elf-female.png",
+    "target": "img\\characters\\$Arena_dark_elf_female_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        372,
+        723,
+        1086
+      ],
+      [
+        0,
+        361,
+        711,
+        1058,
+        1448
+      ]
+    ],
+    "scale": 0.1564245810055866,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "db083cfe40af5adaafc6edf43bd19976da1b9bd1e96b742b007ea16bffb13fb3",
+    "id": "dark_elf.female.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-high_elf-male.png",
+    "target": "img\\characters\\$Arena_high_elf_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        375,
+        724,
+        1086
+      ],
+      [
+        0,
+        362,
+        702,
+        1037,
+        1448
+      ]
+    ],
+    "scale": 0.1590909090909091,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "sha256": "29e2e2e4740e1d432d1cb060d039b24f53c94cab911a174eb290e4b5eddc314d",
+    "id": "high_elf.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-high_elf-female.png",
+    "target": "img\\characters\\$Arena_high_elf_female_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        367,
+        724,
+        1086
+      ],
+      [
+        0,
+        361,
+        709,
+        1053,
+        1448
+      ]
+    ],
+    "scale": 0.16231884057971013,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "sha256": "f2fb8fbb5d7e7072bb5d7803bd3fef42975d199f114396e269938c921567c2cc",
+    "id": "high_elf.female.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-khajiit-female.png",
+    "target": "img\\characters\\$Arena_khajiit_female_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        415,
+        681,
+        1086
+      ],
+      [
+        0,
+        360,
+        698,
+        1031,
+        1448
+      ]
+    ],
+    "scale": 0.15819209039548024,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "724c3a0d9e2f7662b2c77c2529e8d1756467848ea0d824bd4a7eb05403d244a0",
+    "id": "khajiit.female.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-nord-male.png",
+    "target": "img\\characters\\$Arena_nord_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        362,
+        709,
+        1054,
+        1448
+      ]
+    ],
+    "scale": 0.15300546448087432,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "d339ca2a73d2f4e4b34721140ba786cef0d47ce83ecb4122b0c4e761a5f03eba",
+    "id": "nord.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-nord-female.png",
+    "target": "img\\characters\\$Arena_nord_female_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        365,
+        724,
+        1059,
+        1448
+      ]
+    ],
+    "scale": 0.15426997245179064,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "02f7c2cb6ebf90c3f85f9b6befe1784ae0576b29f6d40a3b722d7fc5d8efc6ff",
+    "id": "nord.female.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-redguard-male.png",
+    "target": "img\\characters\\$Arena_redguard_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        362,
+        716,
+        1057,
+        1448
+      ]
+    ],
+    "scale": 0.1564245810055866,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "e00e323a7132bd8fc9f0d1ca001d4a2b97c0fb16414513af019e38a54f9dc1c2",
+    "id": "redguard.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-redguard-female.png",
+    "target": "img\\characters\\$Arena_redguard_female_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        361,
+        714,
+        1064,
+        1448
+      ]
+    ],
+    "scale": 0.15469613259668508,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [
+      5
+    ],
+    "sha256": "252009f5c7b121f4a70897d009b20530142d00d730b4354a631f7436e89f9d5c",
+    "id": "redguard.female.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-wood_elf-male.png",
+    "target": "img\\characters\\$Arena_wood_elf_male_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        359,
+        706,
+        1046,
+        1448
+      ]
+    ],
+    "scale": 0.15053763440860216,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [
+      5,
+      8
+    ],
+    "sha256": "7411b8282ea7fb59179b679b5f5c51b9ed51a0a9769f8ef58566007f66b01582",
+    "id": "wood_elf.male.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-wood_elf-female.png",
+    "target": "img\\characters\\$Arena_wood_elf_female_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        362,
+        714,
+        1050,
+        1448
+      ]
+    ],
+    "scale": 0.15469613259668508,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": true,
+    "reflect": [],
+    "sha256": "58c1e70cb91a09d67e669fe9472c6ae77a391df132254c907f8db78201a18748",
+    "id": "wood_elf.female.base"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-rat.png",
+    "target": "img\\characters\\$Arena_rat_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        362,
+        724,
+        1086
+      ],
+      [
+        0,
+        389,
+        724,
+        1044,
+        1448
+      ]
+    ],
+    "scale": 0.11396011396011396,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": false,
+    "reflect": [
+      3,
+      4,
+      5
+    ],
+    "sha256": "a5f777b894ecf32234f66a848bf76bf3aff60f397770f878b008577b1bf9a3a1",
+    "id": "enemy.1"
+  },
+  {
+    "master": "art\\masters\\m01-integration-r02\\walk-goblin.png",
+    "target": "img\\characters\\$Arena_goblin_walk_r02.png",
+    "gutters": [
+      [
+        0,
+        377,
+        724,
+        1086
+      ],
+      [
+        0,
+        370,
+        724,
+        1079,
+        1448
+      ]
+    ],
+    "scale": 0.12979351032448377,
+    "cell": [
+      64,
+      64
+    ],
+    "baseline": 62,
+    "opposed": false,
+    "reflect": [
+      3,
+      4,
+      5,
+      9,
+      11
+    ],
+    "sha256": "ad925a8d469e4f118f3588ddaca744fe6ab78b34dec1be11334a9c7cb562d724",
+    "id": "enemy.2"
+  }
+]

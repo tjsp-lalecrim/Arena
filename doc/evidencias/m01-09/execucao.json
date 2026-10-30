@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-26",
+  "baseline": "develop d3c736d after review and authorized M01-08 merge/push",
+  "feature": "feature/m01-habilidades",
+  "configuration": "M01-09/R01",
+  "checks": 628,
+  "nativeActionsMatrix": 192,
+  "regressions": {
+    "resources": 619,
+    "creation": 234,
+    "approvedRaces": 981,
+    "persistence": 27,
+    "laboratory": "PASS",
+    "stateStore": "PASS",
+    "runtime": "PASS"
+  },
+  "commands": [
+    "node tools/test-abilities.cjs",
+    "node tools/test-resources-progression.cjs",
+    "node tools/test-character-creation.cjs",
+    "node tools/test-approved-races.cjs",
+    "node tools/test-persistence.cjs",
+    "node tools/test-boot.cjs",
+    "node tools/test-state-store.cjs",
+    "node tools/test-runtime.cjs",
+    "node tools/validate-abilities.cjs",
+    "node tools/validate-resources.cjs",
+    "node tools/validate-data.cjs",
+    "node --check (3 new plugins)"
+  ],
+  "browser": "156.0.8078.47",
+  "game": [
+    816,
+    624
+  ],
+  "viewport": [
+    1100,
+    800
+  ],
+  "profiles": "Disposable Chrome contexts only; no personal saves",
+  "legacy": "Native slot19 generated under previous2561830 plugin list, learned Cura/two books/spent Vigor; incompatible technical shortcut cleared on load",
+  "editor": "Actual Windows UI authoring cycle in editor.json; browser is separate evidence",
+  "limitations": [
+    "No visual NW.js playtest",
+    "No physical Galaxy A56",
+    "No full combat presentation, animations, enemy turn, XP or loot",
+    "No Mages Guild/environmental spells; future city milestones",
+    "Book acquisition drops/chests M01-13",
+    "Balance provisional, formulas deterministic fixtures not final encounter statistics",
+    "No automatic feature merge or M01-10 implementation"
+  ],
+  "files": [
+    {
+      "file": "data/ArenaAbilities.json",
+      "sha256Utf8Lf": "2b65fbd30dfada92c750506218bb99b61b52b13f3aba647fb21f9bbe9aa6f51b"
+    },
+    {
+      "file": "data/Skills.json",
+      "sha256Utf8Lf": "7f881da4f0cdff0661018ce149ba4465edc8a5a6fe0778cf3652c4e18d5c274a"
+    },
+    {
+      "file": "data/Items.json",
+      "sha256Utf8Lf": "aa98e75a80e6f37b9beff9cb4ccbb3e327998edf0e67f95f0d8e8dbb2da5e480"
+    },
+    {
+      "file": "data/Map006.json",
+      "sha256Utf8Lf": "80566fbbee42d8f0405108d8f04e352eb1638045c24fc62861e85e54f197e5d4"
+    },
+    {
+      "file": "js/plugins.js",
+      "sha256Utf8Lf": "770bb4168b55f83f0d4cb984b44cf9149ef795b72ec147c4da81fc4757a01f98"
+    },
+    {
+      "file": "js/plugins/MV_AbilityRules.js",
+      "sha256Utf8Lf": "fcee8e2f32e42bdb8c68922766f0714514977b68b20fe44dea61b6f5be35b77d"
+    },
+    {
+      "file": "js/plugins/Arena_Abilities.js",
+      "sha256Utf8Lf": "9ac449f8ec78c22ac76dedf273dab906cdd24d91753053d7b20b388afb4b7cf9"
+    },
+    {
+      "file": "js/plugins/Arena_AbilityLab.js",
+      "sha256Utf8Lf": "ddbb105814df854868209235cfc3cd0541062027fbca44050130fe2732a93d42"
+    }
+  ]
+}

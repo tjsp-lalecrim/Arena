@@ -1,0 +1,2965 @@
+{
+  "browser": "156.0.8078.47",
+  "engine": "MV1.6.1",
+  "viewport": [
+    1100,
+    800
+  ],
+  "native": [
+    816,
+    624
+  ],
+  "results": [
+    {
+      "id": "argonian.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "argonian",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "argonian.male.base",
+          "ready": true,
+          "character": "$Arena_argonian_male_r02",
+          "face": "Arena_argonian_male_pose_r03",
+          "sidePicture": "Arena_argonian_male_r02_side",
+          "battler": "Arena_argonian_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_argonian_male_pose_r03.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_argonian_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_argonian_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_argonian_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "argonian.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "argonian",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "argonian.female.base",
+          "ready": true,
+          "character": "$Arena_argonian_female_r02",
+          "face": "Arena_argonian_female_pose_r03",
+          "sidePicture": "Arena_argonian_female_r02_side",
+          "battler": "Arena_argonian_female_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_argonian_female_pose_r03.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_argonian_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_argonian_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_argonian_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "breton.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "breton",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "breton.male.base",
+          "ready": true,
+          "character": "$Arena_breton_male_r02",
+          "face": "Arena_breton_male_r02",
+          "sidePicture": "Arena_breton_male_r02_side",
+          "battler": "Arena_breton_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_breton_male_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_breton_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_breton_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_breton_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "breton.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "breton",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "breton.female.base",
+          "ready": true,
+          "character": "$Arena_breton_female_r02",
+          "face": "Arena_breton_female_r02",
+          "sidePicture": "Arena_breton_female_r02_side",
+          "battler": "Arena_breton_female_r02",
+          "poseStatus": "pilot-walk-and-static-side",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_breton_female_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_breton_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_breton_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_breton_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "dark_elf.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "dark_elf",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "dark_elf.male.base",
+          "ready": true,
+          "character": "$Arena_dark_elf_male_r02",
+          "face": "Arena_dark_elf_male_r02",
+          "sidePicture": "Arena_dark_elf_male_r02_side",
+          "battler": "Arena_dark_elf_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_dark_elf_male_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_dark_elf_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_dark_elf_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_dark_elf_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "dark_elf.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "dark_elf",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "dark_elf.female.base",
+          "ready": true,
+          "character": "$Arena_dark_elf_female_r02",
+          "face": "Arena_dark_elf_female_r02",
+          "sidePicture": "Arena_dark_elf_female_r02_side",
+          "battler": "Arena_dark_elf_female_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_dark_elf_female_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_dark_elf_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_dark_elf_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_dark_elf_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "high_elf.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "high_elf",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "high_elf.male.base",
+          "ready": true,
+          "character": "$Arena_high_elf_male_r02",
+          "face": "Arena_high_elf_male_r02",
+          "sidePicture": "Arena_high_elf_male_r02_side",
+          "battler": "Arena_high_elf_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_high_elf_male_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_high_elf_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_high_elf_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_high_elf_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "high_elf.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "high_elf",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "high_elf.female.base",
+          "ready": true,
+          "character": "$Arena_high_elf_female_r02",
+          "face": "Arena_high_elf_female_r02",
+          "sidePicture": "Arena_high_elf_female_r02_side",
+          "battler": "Arena_high_elf_female_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_high_elf_female_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_high_elf_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_high_elf_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_high_elf_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "khajiit.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "khajiit",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "khajiit.male.base",
+          "ready": true,
+          "character": "$Arena_khajiit_male_r02",
+          "face": "Arena_khajiit_male_pose_r03",
+          "sidePicture": "Arena_khajiit_male_r02_side",
+          "battler": "Arena_khajiit_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_khajiit_male_pose_r03.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_khajiit_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_khajiit_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_khajiit_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "khajiit.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "khajiit",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "khajiit.female.base",
+          "ready": true,
+          "character": "$Arena_khajiit_female_r02",
+          "face": "Arena_khajiit_female_pose_r03",
+          "sidePicture": "Arena_khajiit_female_r02_side",
+          "battler": "Arena_khajiit_female_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_khajiit_female_pose_r03.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_khajiit_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_khajiit_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_khajiit_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "nord.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "nord",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "nord.male.base",
+          "ready": true,
+          "character": "$Arena_nord_male_r02",
+          "face": "Arena_nord_male_r02",
+          "sidePicture": "Arena_nord_male_r02_side",
+          "battler": "Arena_nord_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_nord_male_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_nord_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_nord_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_nord_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "nord.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "nord",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "nord.female.base",
+          "ready": true,
+          "character": "$Arena_nord_female_r02",
+          "face": "Arena_nord_female_r02",
+          "sidePicture": "Arena_nord_female_r02_side",
+          "battler": "Arena_nord_female_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_nord_female_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_nord_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_nord_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_nord_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "redguard.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "redguard",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "redguard.male.base",
+          "ready": true,
+          "character": "$Arena_redguard_male_r02",
+          "face": "Arena_redguard_male_r02",
+          "sidePicture": "Arena_redguard_male_r02_side",
+          "battler": "Arena_redguard_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_redguard_male_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_redguard_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_redguard_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_redguard_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "redguard.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "redguard",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "redguard.female.base",
+          "ready": true,
+          "character": "$Arena_redguard_female_r02",
+          "face": "Arena_redguard_female_r02",
+          "sidePicture": "Arena_redguard_female_r02_side",
+          "battler": "Arena_redguard_female_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_redguard_female_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_redguard_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_redguard_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_redguard_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wood_elf.male.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "wood_elf",
+          "genderId": "male"
+        },
+        "visual": {
+          "id": "wood_elf.male.base",
+          "ready": true,
+          "character": "$Arena_wood_elf_male_r02",
+          "face": "Arena_wood_elf_male_r02",
+          "sidePicture": "Arena_wood_elf_male_r02_side",
+          "battler": "Arena_wood_elf_male_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_wood_elf_male_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_wood_elf_male_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_wood_elf_male_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_wood_elf_male_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "id": "wood_elf.female.base",
+      "preview": {
+        "native": [
+          816,
+          624
+        ],
+        "draft": {
+          "name": "",
+          "raceId": "wood_elf",
+          "genderId": "female"
+        },
+        "visual": {
+          "id": "wood_elf.female.base",
+          "ready": true,
+          "character": "$Arena_wood_elf_female_r02",
+          "face": "Arena_wood_elf_female_r02",
+          "sidePicture": "Arena_wood_elf_female_r02_side",
+          "battler": "Arena_wood_elf_female_r02",
+          "poseStatus": "static-directional-and-side-studies-no-walk-cycle",
+          "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+        },
+        "frames": [
+          {
+            "rect": [
+              0,
+              0,
+              144,
+              144
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/faces/Arena_wood_elf_female_r02.png"
+          },
+          {
+            "rect": [
+              48,
+              0,
+              48,
+              64
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/characters/$Arena_wood_elf_female_r02.png"
+          },
+          {
+            "rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "url": "img/pictures/Arena_wood_elf_female_r02_side.png"
+          }
+        ]
+      },
+      "map": {
+        "file": "img/characters/$Arena_wood_elf_female_r02.png",
+        "frame": [
+          48,
+          64
+        ],
+        "anchor": [
+          0.5,
+          1
+        ]
+      }
+    }
+  ],
+  "saves": [
+    "argonian.male.base",
+    "argonian.female.base",
+    "breton.male.base",
+    "breton.female.base",
+    "dark_elf.male.base",
+    "dark_elf.female.base",
+    "high_elf.male.base",
+    "high_elf.female.base",
+    "khajiit.male.base",
+    "khajiit.female.base",
+    "nord.male.base",
+    "nord.female.base",
+    "redguard.male.base",
+    "redguard.female.base",
+    "wood_elf.male.base",
+    "wood_elf.female.base"
+  ],
+  "patterns": [
+    {
+      "id": "argonian.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "argonian.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "breton.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "breton.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "pilot-walk-and-static-side",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "dark_elf.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "dark_elf.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "high_elf.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "high_elf.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "khajiit.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "khajiit.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "nord.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "nord.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "redguard.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "redguard.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "wood_elf.male.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    {
+      "id": "wood_elf.female.base",
+      "anchor": [
+        0.5,
+        1
+      ],
+      "frames": [
+        [
+          0,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          96,
+          0,
+          48,
+          64
+        ],
+        [
+          48,
+          0,
+          48,
+          64
+        ],
+        [
+          0,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          96,
+          64,
+          48,
+          64
+        ],
+        [
+          48,
+          64,
+          48,
+          64
+        ],
+        [
+          0,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          96,
+          128,
+          48,
+          64
+        ],
+        [
+          48,
+          128,
+          48,
+          64
+        ],
+        [
+          0,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ],
+        [
+          96,
+          192,
+          48,
+          64
+        ],
+        [
+          48,
+          192,
+          48,
+          64
+        ]
+      ],
+      "declared": "static-directional-and-side-studies-no-walk-cycle",
+      "combat": "static-pose-repeated-for-native-format-not-complete-motions"
+    }
+  ],
+  "errors": [],
+  "isolation": "Disposable browser context/localStorage, native slot1 only in this context; no personal saves.",
+  "limits": "Desktop browser only. Static sets do not acquire walking/combat animation. Editor and Galaxy A56 not tested in this revision. Artistic acceptance pending owner."
+}

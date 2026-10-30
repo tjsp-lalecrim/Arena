@@ -1,0 +1,344 @@
+{
+  "who": "high_elf.male.base",
+  "browser": "156.0.8078.47",
+  "native": "MV1.6.1 Scene_Battle",
+  "fixture": "RNG0.5/variance0/enemy HP+4000 in memory only",
+  "profileVersion": "r03-expansion",
+  "trace": {
+    "motions": {
+      "enemy.idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.light": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "enemy.hurt": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "enemy.bite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.hurt": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.heavy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.cast": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.item": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.defeat": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "impacts": [
+      {
+        "actor": true,
+        "skill": 5,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 6,
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 7,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 2
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 8,
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 2
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 3,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 4,
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 10,
+        "sample": {
+          "key": "cast",
+          "index": 3,
+          "tick": 19,
+          "total": 36,
+          "done": false,
+          "impactTick": 19,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 2,
+        "sample": {
+          "key": "item",
+          "index": 3,
+          "tick": 17,
+          "total": 36,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      }
+    ],
+    "uses": [
+      5,
+      6,
+      7,
+      8,
+      3,
+      4,
+      10,
+      2,
+      2
+    ]
+  },
+  "errors": [],
+  "ownerApproval": "No new variant approval inferred from approved R02 pilot"
+}

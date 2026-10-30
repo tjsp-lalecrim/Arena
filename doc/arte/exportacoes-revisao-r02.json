@@ -1,0 +1,114 @@
+{
+  "status": "em revisão estética, sem aprovação",
+  "masters": [
+    {
+      "file": "art/masters/revisao-r02/dungeon-identidade-r02.png",
+      "size": [
+        1374,
+        1145
+      ],
+      "sha256": "7fa442a9968b19edecdb4db3cd0d25cffd2ec9518a6ead1e1df523398154857d"
+    },
+    {
+      "file": "art/masters/revisao-r02/rato-ameaca-r02.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "ed9454d16e464ae9985fc997247e4c8757c6a6ca06aad3f58542ffba2be0065e"
+    },
+    {
+      "file": "art/masters/revisao-r02/rato-ameaca-r03.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "98e43e99f8d0942cd00347c95f4664235cde0ca04d04b4aaee8ca74d3e8a9b16"
+    },
+    {
+      "file": "art/masters/revisao-r02/ria-sem-protagonista-r02.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "00719dcb076ecc529c24c6934a9070788a034d8751ca190641af55d98f62de0a"
+    }
+  ],
+  "exports": [
+    {
+      "file": "img/pictures/arena_dungeon_estudo_r02.png",
+      "size": [
+        576,
+        480
+      ],
+      "sha256": "d73c2820e8a69f2458425f85da566752b6b73c7a2784c4e4cebb4474a2e17579"
+    },
+    {
+      "file": "img/pictures/arena_ria_narrativa_r02.png",
+      "size": [
+        768,
+        512
+      ],
+      "sha256": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+    },
+    {
+      "file": "img/pictures/arena_rato_bote_r03.png",
+      "size": [
+        384,
+        64
+      ],
+      "sha256": "da8cd24d4209da4dd71901521c159b466eda0a38ecc8d0d4182bd6f4ce8a88f0"
+    }
+  ],
+  "reference_inventory": [
+    {
+      "file": "doc/prints/imperial dungeons 01.jfif",
+      "sha256": "1d9d0b807049b2cb62516fe6aed1f2b5b3da866dd946baef30f23bc24e80d4e3"
+    },
+    {
+      "file": "doc/prints/imperial dungeons 02.jfif",
+      "sha256": "d568fe318f1410fa84660180e6e8d77166d60b89bdf89bbca8c631a419035bd8"
+    },
+    {
+      "file": "doc/prints/imperial dungeons 03.jfif",
+      "sha256": "b139b3a1536a5cf909efa66788848206c0a678d16c076d559022a9a050526763"
+    },
+    {
+      "file": "doc/prints/imperial dungeons 04.jfif",
+      "sha256": "d317f16c913f87e6c9f86674b4d0bace35962d98939a70e4062a5be19523aace"
+    },
+    {
+      "file": "doc/prints/imperial dungeons 05.jfif",
+      "sha256": "8e0c974516c43fff6fe7315d7449f73e20a3d3b02a6e8f3f37dceac5976a847a"
+    },
+    {
+      "file": "doc/prints/imperial dungeons 07.png",
+      "sha256": "39d4e259f68cca16279330929c56e89a7f0ac92cfb43bd61795cecb71db76141"
+    },
+    {
+      "file": "doc/prints/imperial dungeons 08.jfif",
+      "sha256": "545367814e08516787a65b5bf67425a3f3da1d751efd648caf7dc6efaff8fb9d"
+    },
+    {
+      "file": "doc/prints/imperial dungeons 09.jpg",
+      "sha256": "69a9733dd646d388ed16c5be952f6f1d81134ce0eb70a0e2531565aaee63bca9"
+    },
+    {
+      "file": "doc/prints/imperial dungeons exit.jfif",
+      "sha256": "f0a5f8e05cc6adc5e8713516385a1b03f933d9997dcbe496ced11a2a03f82fdc"
+    },
+    {
+      "file": "doc/prints/imperial dungeons map.png",
+      "sha256": "bd293ef20e2f3775c12f1658f6dfe2c0ec4da8ac05200e78e21622930590c275"
+    },
+    {
+      "file": "doc/prints/rat.png",
+      "sha256": "69429d7d008adc43e16a63ac9e2f7ddf4d51951a231b1e06c6341b850614295e"
+    },
+    {
+      "file": "doc/prints/ria silmane.jfif",
+      "sha256": "6e26b9ccd873bddead247b6ce916e496627a6ed9aa23dac1b7403720edcb0441"
+    }
+  ],
+  "packing": "LANCZOS; rato: componente alpha >=96 dilatado 1px, cores/alpha originais preservados; escala comum, base y60; sem redesenho"
+}

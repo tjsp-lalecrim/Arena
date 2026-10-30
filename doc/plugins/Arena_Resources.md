@@ -1,0 +1,21 @@
+## Integração M01-17
+
+M01-17: este código/API e valores permanecem inalterados. Arena_Recovery autoriza o ponto antes de delegar rest(), e reutiliza a recuperação existente. A API baixa rest() continua técnica; futuros eventos de cama de campanha devem usar restAt com fonte registrada. Nenhuma regeneração passiva, estado novo, reatribuição de bônus ou consumo em natação.
+
+# Arena_Resources 0.1.0
+
+Integração M01-09: este código permanece inalterado e é o único consumidor de ArenaVigorCost. Arena_Abilities valida arma/conhecimento/execução e chama o percurso nativo que chega a paySkillCost. Técnicas3–8 agora ativas conforme equipamento, em vez da indisponibilidade histórica do fechamento M01-08 descrita abaixo. HABILIDADES_M01_09.md registra a continuidade sem segundo descontador.
+
+Arquivo `js/plugins/Arena_Resources.js`, desenvolvido pelo Codex, sem dependências externas. Requer MV_StateStore0.1.0, Arena_Persistence0.1.0, MV_CharacterRules0.2.0, Arena_CharacterCreation0.2.0 (com integração opcional de base Vigor), MV_ResourceProgression0.1.0, depois deles no gerenciador. O conjunto inclui os plugins de prévia/runtime existentes; não removê-los nem ativar Community_Basic. Preservar formato canônico de js/plugins.js.
+
+Sem parâmetros do gerenciador. Dados específicos/IDs/textos em `data/ArenaProgression.json`, schemaVersion1/balanceVersion M01-08/R01: ator1; baseHP100/MP50/Vigor100; incremento10; nível máximo nativo99; mapa técnico5. Quantidades por item/skill ficam no banco/notas, não no núcleo reutilizável. Valores precisam ser inteiros não negativos, incremento positivo e referências válidas; `tools/validate-resources.cjs` valida configuração e integração. Mudanças de base valem para partidas novas; escolhas guardam seu amount original.
+
+Namespace próprio arenaResources v1, sem duplicar HP/MP atuais/nivel/EXP/equipamentos/inventário. Contratos/migração/formulação em `RECURSOS_E_PROGRESSAO_M01_08.md`. Mantém arena.resources.vigor v1 e o setter técnico de máximo preexistente. Não reaplica bônus R05. Configuração não é uma curva automática de classe.
+
+API: `snapshot()` diferencia atuais/máximos/base/crescimento/modificadores e escolhas pendentes; `pending()` lista níveis disponíveis; `choose(level,'hp'|'mp'|'vigor')` retorna boolean; `recoverVigor(quantidade>=0)` retorna quanto recuperou; `rest()` retorna false em batalha e true fora; `open()` abre UI mínima fora de batalha. Comandos de evento `ArenaResources Open` e `ArenaResources Rest`. Notas de skill `<ArenaVigorCost: 5>` e item `<ArenaVigorRestore: 50>` usam a metadata nativa. Não chamar paySkillCost manualmente para uma ação já paga pelo motor.
+
+Extensões por aliases: fila DataManager._databaseFiles, isDatabaseLoaded/extractSaveContents; ArenaCharacterCreation.confirmCurrent; ArenaPersistence.setResource; Game_Actor.paramBase/paramMax/levelUp; Game_BattlerBase.canPaySkillCost/paySkillCost; Game_Action.hasItemAnyValidEffects/apply; Window_MenuCommand.addOriginalCommands; Scene_Menu.createCommandWindow; Scene_Map.createAllWindows (somente cabeçalho e marcadores técnicos no Map005); título e Game_Interpreter.pluginCommand. Não altera arquivos internos do motor. Nenhum hook em TP/regenerate/caminhada: a ausência de ligação é deliberada. `rest` não limpa estados ou TP.
+
+O novo comando do menu oferece as três escolhas e confirmação/revisão/voltar. Sem reformulação de inventário/batalha/atalhos. Laboratório separado no título e Map005, sem assumir cama/XP da campanha. Técnicas3–8 continuam desativadas até M01-09; o teste técnico usa o custo de uma ação, não cria batalha. Requisitos de arma/turno/alvos serão integrados nas features próprias.
+
+Testes em Chrome desktop MV1.6.1: `test-resources-progression.cjs`, regressões criação/persistência/bônus/laboratório, `validate-resources.cjs`, `validate-data.cjs`. Não declarar eficácia de combate ou mobile por esses testes. Evidência exata de editor e limitações em `evidencias/m01-08/editor.json` e VALIDACAO_M01.md. Desativar o plugin faz os máximos próprios e a UI deixarem de funcionar; não suportado salvar a mesma partida com plugin desativado.

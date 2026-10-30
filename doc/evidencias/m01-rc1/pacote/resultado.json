@@ -1,0 +1,389 @@
+{
+  "sourceCommit": "e407a69193e168c6c1a160ab5809b1781b4a6478",
+  "testVersion": "m01-rc1",
+  "manifestSha256": "77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831",
+  "url": "http://127.0.0.1:8773/Arena/",
+  "browser": "156.0.8078.73",
+  "runtimeFiles": 321,
+  "checks": [
+    "Every packaged file HTTP/SHA-256 verified under /Arena/; wrong case/references/saves rejected",
+    "Explicit support-page preparation uses Map005, creates6 points in RAM only, no automatic save or lab-save bypass",
+    "Actual inventory -> attributes -> confirm batch -> native menu save",
+    "Close/reopen Chrome same isolated profile -> native Continue/Load preserves points/attributes/resources/inventory",
+    "Existing save blocks support-page preparation, including forced button event; stable namespace"
+  ],
+  "before": {
+    "level": 3,
+    "attributes": {
+      "level": 3,
+      "highestLevel": 3,
+      "granted": 6,
+      "available": 6,
+      "revision": 2,
+      "rows": [
+        {
+          "id": 2,
+          "name": "ATQ",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        },
+        {
+          "id": 3,
+          "name": "DEF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 4,
+          "name": "MAT",
+          "base": 8,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 8
+        },
+        {
+          "id": 5,
+          "name": "MDF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 6,
+          "name": "AGI",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        },
+        {
+          "id": 7,
+          "name": "SOR",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        }
+      ],
+      "excluded": false
+    },
+    "resources": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 3,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": [
+        2,
+        3
+      ]
+    },
+    "equips": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "inventory": [
+      {},
+      {},
+      {}
+    ]
+  },
+  "after": {
+    "level": 3,
+    "attributes": {
+      "level": 3,
+      "highestLevel": 3,
+      "granted": 6,
+      "available": 4,
+      "revision": 3,
+      "rows": [
+        {
+          "id": 2,
+          "name": "ATQ",
+          "base": 10,
+          "spent": 1,
+          "increase": 1,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 11
+        },
+        {
+          "id": 3,
+          "name": "DEF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 4,
+          "name": "MAT",
+          "base": 8,
+          "spent": 1,
+          "increase": 1,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 9
+        },
+        {
+          "id": 5,
+          "name": "MDF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 6,
+          "name": "AGI",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        },
+        {
+          "id": 7,
+          "name": "SOR",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        }
+      ],
+      "excluded": false
+    },
+    "resources": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 3,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": [
+        2,
+        3
+      ]
+    },
+    "equips": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "inventory": [
+      {},
+      {},
+      {}
+    ]
+  },
+  "restored": {
+    "level": 3,
+    "attributes": {
+      "level": 3,
+      "highestLevel": 3,
+      "granted": 6,
+      "available": 4,
+      "revision": 3,
+      "rows": [
+        {
+          "id": 2,
+          "name": "ATQ",
+          "base": 10,
+          "spent": 1,
+          "increase": 1,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 11
+        },
+        {
+          "id": 3,
+          "name": "DEF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 4,
+          "name": "MAT",
+          "base": 8,
+          "spent": 1,
+          "increase": 1,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 9
+        },
+        {
+          "id": 5,
+          "name": "MDF",
+          "base": 5,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 5
+        },
+        {
+          "id": 6,
+          "name": "AGI",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        },
+        {
+          "id": 7,
+          "name": "SOR",
+          "base": 10,
+          "spent": 0,
+          "increase": 0,
+          "equipment": 0,
+          "otherAdditive": 0,
+          "rate": 1,
+          "total": 10
+        }
+      ],
+      "excluded": false
+    },
+    "resources": {
+      "hp": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 3,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": [
+        2,
+        3
+      ]
+    },
+    "equips": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "inventory": [
+      {},
+      {},
+      {}
+    ]
+  },
+  "keys": [
+    "arena:m01:save-v1:RPG File1",
+    "arena:m01:save-v1:RPG Global"
+  ],
+  "profile": "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\m01-rc1-profile-uP2JmD",
+  "errors": [],
+  "phone": "pending physical test",
+  "scope": "Candidate packaging and deterministic normal save evaluation only; no full campaign"
+}

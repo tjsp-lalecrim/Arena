@@ -1,0 +1,63 @@
+{
+  "base": "90e309b",
+  "implementationCommit": "795d80d9f8a216a82ed9f2ff62648c78f3d0525c",
+  "sources": {
+    "js/plugins/MV_LootRules.js": "fbae0c926f74646839e1c72c7bed98edfceec967620bebfe9754ead4f194ccf2",
+    "js/plugins/Arena_Loot.js": "04459899e1a4ba0e97b2c777e76b33e9339a4bd80c8f95c2ab6b4de95246b7ae",
+    "js/plugins/Arena_Inventory.js": "667f2e3ac9b22ead5836856fb4c47bb7192983eb8d9683ea4088be121e6a8973",
+    "js/plugins/Arena_Persistence.js": "d790ff6ded0ef0d9e17e6c3169ba6690398ac9e244da6fa91627ca9e5715f84c",
+    "js/plugins.js": "03c95e5e76f86321ad71ca8e9dc1365a710cc0c2f8ad99d34f45ae21052b54dd",
+    "data/ArenaLoot.json": "fb8936a065fad0e74ca9ba324592224e7761d942c8d0c35414de4152950510a2",
+    "data/Weapons.json": "1934106a2a493335cb6fab3f97b6f24ed8c7a104626c60218739ceb553332733",
+    "data/Armors.json": "700119ef41766e80686f777727ebeb8f5407228bac7ff5c4c7b2584ef53505bf",
+    "data/ArenaInventory.json": "81fad8230e797c55ac3f16828550c5dce65c86e61d9306bd86d5b486fa4e4f70",
+    "tools/test-loot.cjs": "6821208dfb5c6a2db44908bb0cb5d549f39d13c75f72b7f20dfb0b568dc0a98a",
+    "tools/test-loot-presentation.cjs": "864f59f7f344a38ee9d16dd59342e92ea5c440568b7c24be06ccbc51e27b60c1",
+    "tools/validate-loot.cjs": "a0aef4dcf1e0d89dcfb959d88e7193eed4888cdb0e5d8ab569164af91b0ceb5a",
+    "tools/assert-loot-extensions.cjs": "a8552867015485ebdffb43307145c4add3630c2b20134f4535253c5acd09a838"
+  },
+  "wiki": {
+    "file": "Arena_Monsters - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+    "sha256": "e28a20a2fc5ad9616ea9c81401770ebfd9622c5cc239972a45b80fee6d425cef",
+    "pages": [
+      6,
+      13,
+      17
+    ],
+    "noOriginalAssetsDistributed": true
+  },
+  "tests": {
+    "pureRollMatrices": 24,
+    "nativeLootIntegrationScenarios": 11,
+    "inventoryRegressionScenarios": 18,
+    "persistenceRegressionScenarios": 27,
+    "creationRegressionChecks": 234,
+    "presentation": [
+      "generic mobile916x412",
+      "gold/item capacity reserve",
+      "scroll fixture",
+      "touch dismissal"
+    ],
+    "static": [
+      "canonical22/20 preserved",
+      "native equipment prefixes exact",
+      "rare3/4 exact copies plus1 and tags",
+      "additive sourceStatus only",
+      "shared icon API and mapped mail only",
+      "engine/rules/approved art/motion unchanged"
+    ]
+  },
+  "scope": "One equipment per enemy-origin according to existing LOOT.md, not a new per-battle cap; quest key remains cell source, enemy quest link tested in memory only.",
+  "isolation": "Disposable Chrome contexts; controlled RNG/native-gold/quest-source fixtures and isolated save20. No personal saves.",
+  "pending": [
+    "owner evaluation of new loot",
+    "new MV editor authoring/playtest session",
+    "physical Galaxy A56/fullscreen/performance",
+    "M01-20 economy and rare+1 balance"
+  ],
+  "visualInspection": [
+    "resumo-recompensas.png",
+    "inventario-recebido.png",
+    "resumo-mobile-reserva.png"
+  ]
+}

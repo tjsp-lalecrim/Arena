@@ -1,0 +1,61 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "held Enter beyond interval consumes once; slot switch while held cannot bypass; release/fresh press works",
+    "double click and different potion during500ms ignored; deadline not extended; no queued use at expiry",
+    "rapid cross-slot touches dropped; blocked gesture held beyond expiry stays rejected; fresh touch works",
+    "invalid full-resource use preserves item/reason and does not restart or impose interval",
+    "navigation/return/bar transition work; menu reopen keeps same transient deadline",
+    "configured100ms applied to next successful uses, recovery/max/stock unchanged",
+    "browser dblclick consumes exactly one potion",
+    "held mouse does not repeat; click begun during interval cannot execute when released after expiry"
+  ],
+  "first": {
+    "counts": [
+      7,
+      8,
+      8
+    ],
+    "r": {
+      "hp": {
+        "current": 60,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 0,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 0,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 1,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": []
+    },
+    "g": {
+      "until": 1793188468456,
+      "duration": 500,
+      "awaitRelease": true,
+      "keyArmed": false,
+      "pointerArmed": false
+    },
+    "active": true,
+    "locked": true,
+    "pending": null,
+    "help": "Poção de cura\nRestaura 50 de vida."
+  },
+  "errors": [],
+  "isolation": "Disposable Chrome context; stock/resources only test fixtures, default500ms except explicit100ms test. No personal saves, no combat cooldown."
+}

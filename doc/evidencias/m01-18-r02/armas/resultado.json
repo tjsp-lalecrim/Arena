@@ -1,0 +1,633 @@
+{
+  "browser": "156.0.8078.73",
+  "engine": "MV1.6.1",
+  "viewport": [
+    1100,
+    800
+  ],
+  "canvas": [
+    816,
+    624
+  ],
+  "inputs": {
+    "js/plugins/MV_MotionTimeline.js": "7566f80a039d0eebb9996072e36227fb2c1c8016748d4d0d1203458e28adb029",
+    "js/plugins/Arena_BattleMotion.js": "7e3e12b519c2329ff87d68bfda07300609c6ad879623b69c411af6f971acfa9d",
+    "data/ArenaBattleMotion.json": "9bd8330e836b4b727c3add6a831f22573b20e4cb2edb7aee4bb031798e394fea",
+    "js/plugins.js": "1b063cc20d1eb5062ff52984e90cd63bba380b6864e48085111fe9a270d3ba77"
+  },
+  "coverage": {
+    "nativeActionActors": [
+      "breton.female.base"
+    ],
+    "nativeActionEnemies": [
+      1
+    ],
+    "otherActors": "pose/weapon probes in armas-planos-16-combinacoes.json; approved body assets preserved",
+    "otherEnemies": [
+      2,
+      3
+    ]
+  },
+  "checks": [
+    "adaga native light/heavy, costs5/12, equipped layer refreshed, native postbattle save/load",
+    "espada native light/heavy, costs5/12, equipped layer refreshed, native postbattle save/load",
+    "desarmado native light/heavy, costs5/12, equipped layer refreshed, native postbattle save/load",
+    "native cast Mana6 and potion1 unit; weapon stowed during gestures",
+    "two native effects, one useItem and one debit5",
+    "native rat defeat animation and victory return",
+    "native actor defeat to game over"
+  ],
+  "clips": [
+    "adaga-leve.webm",
+    "adaga-pesada.webm",
+    "espada-leve.webm",
+    "espada-pesada.webm",
+    "desarmado-leve.webm",
+    "desarmado-pesada.webm",
+    "conjuracao.webm",
+    "pocao.webm",
+    "derrota-rato.webm",
+    "derrota-jogador.webm"
+  ],
+  "trace": {
+    "frames": {
+      "rat.idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.light": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rat.hurt": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rat.bite": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.hurt": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.heavy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rat.defeat": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.cast": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.item": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.defeat": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "impacts": [
+      {
+        "subject": "actor",
+        "skill": 5,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 6,
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 1,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 7,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 2
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 8,
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": 2
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 1,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 2
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 3,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 4,
+        "sample": {
+          "key": "heavy",
+          "index": 3,
+          "tick": 20,
+          "total": 40,
+          "done": false,
+          "impactTick": 20,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 1,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 10,
+        "sample": {
+          "key": "cast",
+          "index": 3,
+          "tick": 19,
+          "total": 36,
+          "done": false,
+          "impactTick": 19,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 2,
+        "sample": {
+          "key": "item",
+          "index": 3,
+          "tick": 17,
+          "total": 36,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 5,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "subject": "actor",
+        "skill": 1,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "subject": "rat",
+        "skill": 1,
+        "sample": {
+          "key": "bite",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      }
+    ],
+    "costs": [
+      {
+        "kind": "skill",
+        "id": 5
+      },
+      {
+        "kind": "skill",
+        "id": 6
+      },
+      {
+        "kind": "skill",
+        "id": 1
+      },
+      {
+        "kind": "skill",
+        "id": 7
+      },
+      {
+        "kind": "skill",
+        "id": 8
+      },
+      {
+        "kind": "skill",
+        "id": 1
+      },
+      {
+        "kind": "skill",
+        "id": 3
+      },
+      {
+        "kind": "skill",
+        "id": 4
+      },
+      {
+        "kind": "skill",
+        "id": 1
+      },
+      {
+        "kind": "skill",
+        "id": 10
+      },
+      {
+        "kind": "item",
+        "id": 2
+      },
+      {
+        "kind": "skill",
+        "id": 5
+      },
+      {
+        "kind": "skill",
+        "id": 1
+      },
+      {
+        "kind": "skill",
+        "id": 2
+      }
+    ],
+    "applications": [
+      {
+        "subject": "actor",
+        "id": 5
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 6
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 7
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 8
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 3
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 4
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 10
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 2
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 5
+      },
+      {
+        "subject": "actor",
+        "id": 5
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 1
+      },
+      {
+        "subject": "actor",
+        "id": 2
+      },
+      {
+        "subject": "rat",
+        "id": 1
+      }
+    ]
+  },
+  "errors": [],
+  "manualOwner": "approved body motion preserved; new weapon layering not yet reviewed",
+  "editor": "not tested",
+  "galaxyA56": "not tested",
+  "coverageMetadataCorrection": "Legacy labels replaced with actual native-action coverage; existing execution and input hashes retained, not a new run."
+}

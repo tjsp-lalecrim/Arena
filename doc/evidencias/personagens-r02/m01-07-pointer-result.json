@@ -1,0 +1,59 @@
+{
+  "browser": "156.0.8078.47",
+  "validationServer": "http://127.0.0.1:8766/",
+  "results": [
+    {
+      "mode": "desktop mouse",
+      "bounds": {
+        "x": 142,
+        "y": 88,
+        "width": 816,
+        "height": 624
+      },
+      "input": {
+        "x": 174,
+        "y": 156,
+        "width": 752,
+        "height": 44
+      },
+      "checks": [
+        "race-single-click",
+        "gender-single-click",
+        "preview-loaded",
+        "confirm-review-retains-name",
+        "cancel-no-state-write",
+        "input-removed",
+        "no-missing-files"
+      ],
+      "errors": []
+    },
+    {
+      "mode": "Android generic emulation on desktop Chrome; NOT Galaxy A56",
+      "bounds": {
+        "x": 188.609375,
+        "y": 0,
+        "width": 538.765625,
+        "height": 412
+      },
+      "input": {
+        "x": 209.734375,
+        "y": 44.890625,
+        "width": 496.5,
+        "height": 29.046875
+      },
+      "checks": [
+        "race-single-click",
+        "gender-single-click",
+        "preview-loaded",
+        "confirm-review-retains-name",
+        "cancel-no-state-write",
+        "input-removed",
+        "no-missing-files"
+      ],
+      "errors": []
+    }
+  ],
+  "galaxyA56": "not tested; no physical keyboard/fullscreen/performance test",
+  "revisionExecutionDate": "2026-10-26",
+  "assetRevision": "characters-r02"
+}

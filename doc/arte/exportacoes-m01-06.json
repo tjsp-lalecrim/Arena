@@ -1,0 +1,286 @@
+{
+  "masters": [
+    {
+      "file": "art/masters/breta-caminhada-v01.png",
+      "size": [
+        972,
+        1619
+      ],
+      "sha256": "f0d53af44e6e60e84fa31a9f6e91fab2579bfdcc6b4b80b35480925c75619eb4"
+    },
+    {
+      "file": "art/masters/breta-caminhada-v02.png",
+      "size": [
+        972,
+        1619
+      ],
+      "sha256": "90182f34c5f7130b1209ae83e00fcf53f7716e4e510fe7d042cb65f4a2a629fa"
+    },
+    {
+      "file": "art/masters/breta-piloto-v01.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "9968a31c6eb8f37ec0a1a14614a9ef170cffd24fc73fcc319c51d179b64dc912"
+    },
+    {
+      "file": "art/masters/icones-v01.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "a42b7c67c277b60a55531cf32ded89e2b7e71829a405e797f53cc18ae54a25db"
+    },
+    {
+      "file": "art/masters/pedra-piso-parede-v01.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "c88c110a790421f8e4a8fcb4167b309aa0bcd5a2c0709cd5e03d6c3f020d3961"
+    },
+    {
+      "file": "art/masters/rato-respiracao-v01.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "f08a15364284a8ea1760f3d373083d2fedcf74f7d7c76f5928e22f301273197d"
+    },
+    {
+      "file": "art/masters/rato-respiracao-v02.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "382becf8abc84cb675f0b96b67f921d6d49da699309049cdcee74f0def4f7353"
+    },
+    {
+      "file": "art/masters/ria-sonho-v01.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "ed19741385929c32a428734c23c54d336ec294b9d3060fb0ff560b55a8839c95"
+    }
+  ],
+  "exports": [
+    {
+      "file": "img/pictures/arena_breta_retrato_v01.png",
+      "size": [
+        144,
+        144
+      ],
+      "sha256": "0bfece512090b639f2bd2903674e777da14f68f1daba6d3c4b25153f21e6a724"
+    },
+    {
+      "file": "img/pictures/arena_breta_lateral_v01.png",
+      "size": [
+        96,
+        96
+      ],
+      "sha256": "86b9de8c63467067ba7d8bb6970f780b6de3b48c949ddc1c46e6e69ed46e14ad"
+    },
+    {
+      "file": "img/faces/Arena_Breton_Pilot.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "d6f8afcbabe99cfc5ab2fb61ff0e2f3079f08b49131fda6628177bda1d64e09a"
+    },
+    {
+      "file": "img/characters/$Arena_Breton_Pilot.png",
+      "size": [
+        144,
+        256
+      ],
+      "sha256": "7727f63219ce63042dbcbbb33f92c012d67571b2478e2f176f155c373c3305c4"
+    },
+    {
+      "file": "img/pictures/arena_breta_frente_v01.png",
+      "size": [
+        48,
+        64
+      ],
+      "sha256": "876d4006c66db21f6ea8d9d14aaaebf669c401d69588dd9bee44b199ba0b0c11"
+    },
+    {
+      "file": "img/pictures/arena_breta_costas_v01.png",
+      "size": [
+        48,
+        64
+      ],
+      "sha256": "c0e46fbdcfa925bdec36862aec27996d2b519a0a645f0143f78966d064cac832"
+    },
+    {
+      "file": "img/pictures/arena_rato_respiracao_v01.png",
+      "size": [
+        288,
+        64
+      ],
+      "sha256": "d872872268c5e695c27c37794b258b8ecf99325275d42bbb9b20627ca3b577b8"
+    },
+    {
+      "file": "img/tilesets/Arena_Stone_M01.png",
+      "size": [
+        768,
+        768
+      ],
+      "sha256": "fd2825c59e2a4c4d90dc6be0d7beb9505b0ba2c0d22ed9e52556c4c76a11833c"
+    },
+    {
+      "file": "img/pictures/arena_icones_v01.png",
+      "size": [
+        96,
+        32
+      ],
+      "sha256": "2ee86a876fd4bd904f62218d11ebb8d2691d51e45b1b3e701269dd980e6c31a5"
+    },
+    {
+      "file": "img/pictures/arena_ria_sonho_v01.png",
+      "size": [
+        816,
+        544
+      ],
+      "sha256": "d7a2b321260e68b85e1bcc6cf8db777cca18fc12f46055e99801d133a6f1d86d"
+    }
+  ],
+  "ratSourceBoxes": [
+    [
+      20,
+      299,
+      702,
+      547
+    ],
+    [
+      750,
+      219,
+      1425,
+      548
+    ],
+    [
+      1447,
+      298,
+      2147,
+      548
+    ]
+  ],
+  "alphaBoxes": {
+    "img/characters/$Arena_Breton_Pilot.png": [
+      [
+        11,
+        4,
+        37,
+        62
+      ],
+      [
+        10,
+        5,
+        37,
+        62
+      ],
+      [
+        11,
+        4,
+        36,
+        62
+      ],
+      [
+        8,
+        5,
+        39,
+        62
+      ],
+      [
+        15,
+        4,
+        33,
+        62
+      ],
+      [
+        8,
+        5,
+        39,
+        62
+      ],
+      [
+        8,
+        7,
+        39,
+        62
+      ],
+      [
+        15,
+        5,
+        33,
+        62
+      ],
+      [
+        8,
+        6,
+        40,
+        62
+      ],
+      [
+        10,
+        7,
+        38,
+        62
+      ],
+      [
+        10,
+        8,
+        38,
+        62
+      ],
+      [
+        10,
+        6,
+        38,
+        62
+      ]
+    ],
+    "img/pictures/arena_rato_respiracao_v01.png": [
+      [
+        5,
+        29,
+        91,
+        60
+      ],
+      [
+        5,
+        19,
+        90,
+        60
+      ],
+      [
+        4,
+        29,
+        92,
+        60
+      ]
+    ],
+    "img/pictures/arena_icones_v01.png": [
+      [
+        2,
+        5,
+        30,
+        30
+      ],
+      [
+        5,
+        2,
+        27,
+        30
+      ],
+      [
+        5,
+        2,
+        26,
+        30
+      ]
+    ]
+  }
+}

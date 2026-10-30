@@ -1,0 +1,317 @@
+{
+  "browser": "156.0.8078.48",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "small real subset: keyboard open/close, orthogonal front and overhead side, native traversal, fixed map frame",
+    "all14 actual doors: closed blocks, open permits native4-step crossing from both sides, close restores collision, event/sprite anchor stable (28 crossings)",
+    "independent rest slab rendered alone on valid room floor and at original near-wall platforms; temporary setup restored, no bed/healing mechanic added",
+    "water region/native margins/corners preserved (1092 blocked edges); save/load in water with opened door retained, exit and native canvas click re-entry",
+    "native R02 save16 migrates to R03 event geometry; disposable saves only"
+  ],
+  "traversals": [
+    [
+      "door.01",
+      -1
+    ],
+    [
+      "door.01",
+      1
+    ],
+    [
+      "door.02",
+      -1
+    ],
+    [
+      "door.02",
+      1
+    ],
+    [
+      "door.03",
+      -1
+    ],
+    [
+      "door.03",
+      1
+    ],
+    [
+      "door.04",
+      -1
+    ],
+    [
+      "door.04",
+      1
+    ],
+    [
+      "door.05",
+      -1
+    ],
+    [
+      "door.05",
+      1
+    ],
+    [
+      "door.06",
+      -1
+    ],
+    [
+      "door.06",
+      1
+    ],
+    [
+      "door.07",
+      -1
+    ],
+    [
+      "door.07",
+      1
+    ],
+    [
+      "door.08",
+      -1
+    ],
+    [
+      "door.08",
+      1
+    ],
+    [
+      "door.09",
+      -1
+    ],
+    [
+      "door.09",
+      1
+    ],
+    [
+      "door.10",
+      -1
+    ],
+    [
+      "door.10",
+      1
+    ],
+    [
+      "door.11",
+      -1
+    ],
+    [
+      "door.11",
+      1
+    ],
+    [
+      "door.12",
+      -1
+    ],
+    [
+      "door.12",
+      1
+    ],
+    [
+      "door.13",
+      -1
+    ],
+    [
+      "door.13",
+      1
+    ],
+    [
+      "door.14",
+      -1
+    ],
+    [
+      "door.14",
+      1
+    ]
+  ],
+  "geometry": {
+    "count": 9045,
+    "edges": 1092,
+    "attachments": [
+      {
+        "source": [
+          46,
+          3
+        ],
+        "wall": [
+          46,
+          1
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          47,
+          3
+        ],
+        "wall": [
+          47,
+          1
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          10,
+          4
+        ],
+        "wall": [
+          10,
+          2
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          27,
+          7
+        ],
+        "wall": [
+          27,
+          5
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          27,
+          9
+        ],
+        "wall": [
+          26,
+          5
+        ],
+        "distance": 5
+      },
+      {
+        "source": [
+          47,
+          21
+        ],
+        "wall": [
+          47,
+          19
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          27,
+          25
+        ],
+        "wall": [
+          27,
+          22
+        ],
+        "distance": 3
+      },
+      {
+        "source": [
+          47,
+          25
+        ],
+        "wall": [
+          48,
+          25
+        ],
+        "distance": 1
+      },
+      {
+        "source": [
+          46,
+          26
+        ],
+        "wall": [
+          46,
+          29
+        ],
+        "distance": 3
+      },
+      {
+        "source": [
+          32,
+          32
+        ],
+        "wall": [
+          32,
+          34
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          25,
+          36
+        ],
+        "wall": [
+          25,
+          34
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          44,
+          37
+        ],
+        "wall": [
+          44,
+          36
+        ],
+        "distance": 1
+      },
+      {
+        "source": [
+          21,
+          39
+        ],
+        "wall": [
+          20,
+          38
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          8,
+          40
+        ],
+        "wall": [
+          8,
+          38
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          29,
+          41
+        ],
+        "wall": [
+          30,
+          42
+        ],
+        "distance": 2
+      },
+      {
+        "source": [
+          14,
+          44
+        ],
+        "wall": [
+          14,
+          43
+        ],
+        "distance": 1
+      }
+    ]
+  },
+  "errors": [],
+  "isolation": "Disposable Chrome context, saves16/17; locate for setup and screenshots only,28 native crossings; temporary platform stamp restored",
+  "pending": [
+    "MV editor open/edit/save/reopen",
+    "owner visual approval",
+    "Galaxy A56 physical"
+  ]
+}

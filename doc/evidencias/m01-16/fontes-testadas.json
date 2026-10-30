@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-27",
+  "base": "534ff7b",
+  "feature": "feature/m01-quests",
+  "implementation": "4df5979",
+  "normalization": "Text SHA256 after CRLF -> LF; no BOM",
+  "files": {
+    "js/plugins.js": "824d142946377b03a9cd47322488939670dcfb8dae054aaac6c08cb78276e86f",
+    "js/plugins/Arena_Loot.js": "1f8adc40042f023449280ee5ca39550d9e65dc0c5fa1e5eb7c0ce6d5348c2318",
+    "js/plugins/Arena_Quests.js": "d25b160e2a6017b83976d4b503a6a217344224909b0a6e64cab7a990991bf493",
+    "js/plugins/MV_QuestRules.js": "bb06e01c69dc874bdb835b319f807c7f8650d65b407d30df3a1157196186fc1a",
+    "data/ArenaQuests.json": "5c24cd955dc30b22ecbe82efbef81f60ceda7ecd08474c1f3dfdf1de61b644d8",
+    "data/Map008.json": "34d0771339eb0501aee71ea4d8341738b39a9bcad00363c49761cef15e1bbf38",
+    "tools/build-quests.cjs": "aeb5a2f480bd5e4c7523ebb2f2165fad0f169e7bdcab6cab2b564e9d55ccdf6e",
+    "tools/build-encounters.cjs": "5d34ae181d5c3474b76aa61195d1c1225f2826acf9df735aa7b51cdf0b6ffa93",
+    "tools/test-quests.cjs": "86f24d9a1231d31abee9ce5f289002f578cb7f9ed58e33ccb7bf5de08ee54a4c",
+    "tools/validate-quests.cjs": "664dbc475a72bcb9e472f98dc7f8754315df242a07ce89b49842cf296c41c13a",
+    "tools/validate-encounters.cjs": "2ee479d5a0209ca984dbaa1ad5c13348d2e9ed19d0b46248780f92faf50564c5",
+    "tools/validate-dungeon-r03.cjs": "2ede5e2752c1ec5826f16aaf2f8a85e19789baa56cdb77cbbb81da36a5deacce"
+  },
+  "runs": {
+    "MQ01": {
+      "passed": 23,
+      "result": "resultado.json",
+      "native": "event127,cell door scripts,Gate137,menu Diario,keyboard scroll/mouse back,native saves18/19"
+    },
+    "encounters": {
+      "passed": 14,
+      "result": "regressoes/encontros/resultado.json"
+    },
+    "loot": {
+      "passed": 11,
+      "result": "regressoes/loot/resultado.json"
+    },
+    "persistence": {
+      "passed": 27,
+      "result": "regressoes/persistencia.json"
+    },
+    "creation": {
+      "passed": 234,
+      "result": "regressoes/criacao/m01-07-result.json"
+    },
+    "pure": [
+      "test-state-store.cjs",
+      "test-runtime.cjs",
+      "MVQuestRules checks in validate-quests.cjs"
+    ],
+    "static": [
+      "validate-quests.cjs",
+      "validate-dungeon.cjs",
+      "validate-encounters.cjs"
+    ],
+    "generation": {
+      "pipeline": "build-dungeon-map.py -> build-encounters.cjs -> build-quests.cjs",
+      "stableByteIdenticalDataFiles": 6,
+      "firstComparison": "ArenaEncounters CRLF checkout -> LF generator; no semantic difference. Stable regeneration then exact."
+    },
+    "video": {
+      "result": "video.json",
+      "decoded": true,
+      "nativeSize": [
+        816,
+        624
+      ]
+    }
+  },
+  "isolation": "Disposable Chrome contexts,save18/19; actual M15 plugin/map/loot composition generated legacy fixture. Native events/menu after locate setup; faults/capacity/delivery/RNG/enemy state fixtures only in memory. No personal saves.",
+  "visualInspection": [
+    "diario-etapa20.png",
+    "diario-concluido-rolagem.png",
+    "fonte-recuperada.png",
+    "tesouro-concedido.png"
+  ],
+  "historicalEvidence": "M15 rerun initially used default output directory; new run copied to m16/regressoes/encontros and only changed outputs of that run restored exactly from HEAD; M15 historical evidence retained.",
+  "failedAttempts": "One fixture initially reset new game from a live map instead of title,causing stale map sprites/null tileset; corrected fixture to return title before new game,without changing engine. One old-composition boot timed out; diagnostic/serial final run passed. No final browser errors.",
+  "sources": {
+    "wiki": "Local Imperial Dungeons quest PDF p.3; approved J10-J40 in MQ01_ESPECIFICACAO.md",
+    "original": "START.MIF SHA25616b4b200c0845c6aeab9af22cdf7b7655422dcaad73b5a639c1be0308389c7ee checked read-only; no new DOS quest observation or decoded dialogue claim",
+    "treasureProxy": "Existing enemy2 table reused unchanged as provisional container content; no enemy drop values changed"
+  },
+  "pending": [
+    "owner quests/journal assessment",
+    "new M16 MV1.6.1 plugin/event authoring",
+    "physical Galaxy A56 at M01-19",
+    "intro/Ria/F01 in M01-18",
+    "final balance and researched drops in REF04/REF05"
+  ],
+  "preserved": [
+    "engine",
+    "map geometry235 event IDs",
+    "approved art and battle animation",
+    "weapon/racial/resource/shortcut rules",
+    "enemy loot tables",
+    "water Vigor rule"
+  ]
+}

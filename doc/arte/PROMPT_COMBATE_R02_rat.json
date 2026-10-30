@@ -1,0 +1,12 @@
+{
+  "version": "M01-10/R02",
+  "tool": "image_gen built-in",
+  "transparent_background": true,
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\rat.png"
+  ],
+  "prompt": "Use case: identity-preserve. Create a more fluid TWENTY-FOUR-frame motion study of the EXACT threatening RIGHT-facing Arena rat in the supplied reference. Keep same hunched dark-brown coarse fur, red-brown naked curved tail, red paws/ears, teeth/incisors, proportions and painterly dark fantasy. Exactly SIX columns by FOUR rows, one whole cutout per cell, all tails/paws contained with large transparent gaps. Row1 IDLE6: smooth subtle breathing and alert head/ears cycle, planted paws. Row2 BITE6: neutral crouch, load/compress, half extension, full extended bite IMPACT, retract half, exact neutral crouch. Row3 HURT6: neutral, impact flinch, maximum recoil, halfway recover, almost recover, neutral. Row4 DEFEAT6: neutral weakening, sag, start topple, fall on side, settle, fully still on side. All poses progressive, no repeated frames, rigid sprite translations, scale changes, perspective shifts or cute mouse anatomy. Head remains same rat, tail anatomically attached and not cut. Target1536x1024, equal cells256x256, rat occupies about200x125. Genuinely transparent background, no text/grid/effects/shadows.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-7f020dd4-bded-4fd1-baa5-02ff18ba973d.png",
+  "master": "art/masters/combate-r02/rat.png",
+  "approval": "Candidate; no owner visual approval. Inspect actual cells and native sequences before expansion."
+}

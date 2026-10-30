@@ -1,0 +1,18 @@
+{
+  "browser": "156.0.8078.48",
+  "checks": [
+    "rat zero configured drops, empty categories hidden; native EXP retained and return map has no loot window",
+    "real native attack/turn victory: gold2 not native999, potion, single rare armor replaces competing weapon; book; repeated victory/make/gain paths do not regrant EXP or items",
+    "rare reward equips through native transaction with DEF+4 and mapped map/battle material; removal returns same rare ID once",
+    "three enemies: one equipment per defeated enemy origin, two actual pieces from goblin/lizard, aggregation preserves both origins in receipt",
+    "quest blocked at stage0, eligible at10 once, owned blocked, important discard protected, consumed receipt prevents later drop/recovery",
+    "required-source recovery only missing quantity, repeat idempotent, no gold/EXP, stage30 blocks; no final map/quest invented",
+    "capacity99 creates saved entitlement, native save/load preserves grants and reserve, collect only missing capacity once",
+    "abort has no loot or experience",
+    "injected mid-grant exception rolls back gold/items/EXP/source receipts and ledger; retry uses same roll and commits once",
+    "legacy native save contents without loot namespace load defaults without regranting native inventory",
+    "defeat game over has no loot/EXP"
+  ],
+  "errors": [],
+  "limits": "Disposable Chrome context, native save20 isolated; RNG/source/native-gold fixtures in memory only; not physical device/editor validation"
+}

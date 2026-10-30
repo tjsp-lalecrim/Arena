@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "questId": "MQ01",
+  "title": "Imperial Dungeons",
+  "sourceId": "MQ01.ruby-key",
+  "itemId": 1,
+  "doorId": "door.07",
+  "receiptId": "MQ01.cell-door",
+  "treasureTableEnemyId": 2,
+  "source": "MQ01_ESPECIFICACAO.md J10-J40; UESP Imperial Dungeons pp.2-4; START.MIF/START.INF for positions; item consumption and stages are approved adaptations",
+  "stages": [
+    {
+      "id": 10,
+      "next": 20,
+      "description": "Ria Silmane apareceu em meu sonho. Jagar Tharn tomou o lugar do Imperador. Há uma chave de rubi na plataforma junto à parede norte da cela. Objetivo: obter a chave.",
+      "objective": "Obtenha a chave de rubi na plataforma junto à parede norte da cela.",
+      "entry": null,
+      "exit": {
+        "mode": "hold",
+        "quantity": 1
+      }
+    },
+    {
+      "id": 20,
+      "next": 30,
+      "description": "Encontrei a chave de rubi. Preciso abrir a porta da cela. Objetivo: abrir a porta.",
+      "objective": "Use a chave para abrir a porta da cela.",
+      "entry": {
+        "mode": "hold",
+        "quantity": 1
+      },
+      "exit": {
+        "mode": "hold",
+        "quantity": 1
+      }
+    },
+    {
+      "id": 30,
+      "next": 40,
+      "description": "Ria disse que devo seguir para oeste e depois sul até o Shift Gate. Os esgotos abrigam criaturas e tesouros; a ganância pode ser fatal. Objetivo: alcançar o Shift Gate.",
+      "objective": "Alcance o Shift Gate, seguindo para oeste e sul.",
+      "entry": {
+        "mode": "receipt"
+      },
+      "exit": {
+        "mode": "receipt"
+      }
+    },
+    {
+      "id": 40,
+      "next": null,
+      "description": "Alcancei o Shift Gate e escapei de Imperial Dungeons.",
+      "objective": "Objetivo concluído.",
+      "entry": {
+        "mode": "receipt"
+      },
+      "exit": null
+    }
+  ],
+  "treasureFallbackGold": {
+    "min": 2,
+    "max": 8
+  },
+  "gateHalfWidth": 1,
+  "gateDepth": 2
+}

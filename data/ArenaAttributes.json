@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "balanceVersion": "M01-20/atributos-piloto-R01",
+  "actorId": 1,
+  "firstLevel": 2,
+  "pointsPerLevel": 3,
+  "valuePerPoint": 1,
+  "attributes": [2, 3, 4, 5, 6, 7],
+  "notes": "Parâmetros provisórios autorizados. Sem redistribuição; concessões e aumentos guardam seus valores originais. HP/MP/Vigor seguem Arena_Resources."
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-26",
+  "method": "Installed RPG Maker MV, computer-use @oai/sky keyboard/accessibility; no visual playtest asserted",
+  "observed": [
+    "Fresh Arena window3479678 opened",
+    "F10 manager opened",
+    "End/Up/Return details read Arena_Inventory ON",
+    "Esc detail and manager, Ctrl+S saved, Alt+F4 closed; absence confirmed",
+    "Fresh window1317156 reopened Arena without read-error dialog; then closed"
+  ],
+  "plugins": 20,
+  "recordsBeforeAfterSemanticEquality": true,
+  "nativeSemanticChanges": [
+    "System.versionId only"
+  ],
+  "formattingOnly": "Restored byte copies only after JSON semantic equality; no indiscriminate checkout",
+  "limits": [
+    "A screenshot capture timed out; editor reading verified by accessibility instead",
+    "No NW.js visual playtest or physical Galaxy A56",
+    "Technical event8 added afterwards and validated by native browser, not claimed as editor map inspection"
+  ]
+}

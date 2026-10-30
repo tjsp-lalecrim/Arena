@@ -1,0 +1,181 @@
+{
+  "scope": "Native creation preview,16 race/gender selections; frame crop/centering; no confirmation",
+  "rows": [
+    {
+      "id": "argonian.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "argonian.female.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "breton.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "breton.female.base",
+      "cell": [
+        48,
+        64
+      ],
+      "expected": [
+        48,
+        64
+      ]
+    },
+    {
+      "id": "dark_elf.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "dark_elf.female.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "high_elf.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "high_elf.female.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "khajiit.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "khajiit.female.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "nord.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "nord.female.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "redguard.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "redguard.female.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "wood_elf.male.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "wood_elf.female.base",
+      "cell": [
+        64,
+        64
+      ],
+      "expected": [
+        64,
+        64
+      ]
+    }
+  ]
+}

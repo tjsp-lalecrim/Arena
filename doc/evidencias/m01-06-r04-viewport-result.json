@@ -1,0 +1,26 @@
+{
+  "browser": "156.0.8078.47",
+  "mode": "Desktop Chrome mobile viewport emulation only; NOT a Galaxy A56 test",
+  "bounds": {
+    "x": 188.609375,
+    "y": 0,
+    "width": 538.765625,
+    "height": 412,
+    "viewport": [
+      916,
+      412
+    ]
+  },
+  "estimatedPanelFontCssPx": 11.224283854166666,
+  "checks": [
+    "canvas-fits-viewport",
+    "map-and-narrative-load",
+    "zero-missing-files"
+  ],
+  "limitations": [
+    "Small panel text requires physical readability test",
+    "No physical touch, fullscreen or performance validation",
+    "Generic Android test user agent; no Galaxy device identity or certification"
+  ],
+  "errors": []
+}

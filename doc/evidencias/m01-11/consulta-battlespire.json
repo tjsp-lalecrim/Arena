@@ -1,0 +1,13 @@
+{
+  "mode": "read only; not an official/normative Arena source",
+  "files": [
+    {
+      "file": "D:/RPG Maker MV/Projects/Battlespire/js/plugins/BS_BattleMenu96.js",
+      "sha256": "26b629b8b44baf95523d8b33f7c942ed33202b7a076c48adc22dea39d221588a"
+    },
+    {
+      "file": "D:/RPG Maker MV/Projects/Battlespire/js/plugins/BS_MenuFlow175.js",
+      "sha256": "2aa774d25aaac9a5b6196136836e9abd9823c97a4fbb2147f43bd1130d7739f5"
+    }
+  ]
+}

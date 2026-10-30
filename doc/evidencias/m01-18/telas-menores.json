@@ -1,0 +1,127 @@
+{
+  "browser": "156.0.8078.73",
+  "title": {
+    "x": 188,
+    "y": 276,
+    "width": 440,
+    "height": 252,
+    "rows": 6,
+    "items": 13
+  },
+  "checks": [
+    "native title fits, keeps technical commands with wheel scrolling and visible normal new-game entry",
+    "640x480 readable22px logical font/pagination; touch release advances once; resizing preserves exact word position and remaining text",
+    "mouse back preserves history; saved mid-section reload resumes stable word after resolution change",
+    "keyboard focus and mouse/touch controls with44px hit targets, margins and no overflow",
+    "native save cancel while OK held preserves page; shared load list remains usable without stale save-input fence",
+    "legacy absence migrates to isolated technical mode without fabricated narrative progress"
+  ],
+  "read": {
+    "state": {
+      "mode": "campaign",
+      "phase": "ria",
+      "section": 0,
+      "word": 36,
+      "history": [
+        {
+          "phase": "intro",
+          "section": 0,
+          "word": 0
+        },
+        {
+          "phase": "intro",
+          "section": 1,
+          "word": 0
+        },
+        {
+          "phase": "intro",
+          "section": 2,
+          "word": 0
+        },
+        {
+          "phase": "intro",
+          "section": 3,
+          "word": 0
+        },
+        {
+          "phase": "intro",
+          "section": 4,
+          "word": 0
+        },
+        {
+          "phase": "ria",
+          "section": 0,
+          "word": 0
+        }
+      ]
+    },
+    "page": {
+      "lines": [
+        "Imperador. Ele não considera você uma",
+        "ameaça, por ocupar apenas um pequeno",
+        "lugar na Corte Imperial. Nessa",
+        "arrogância, cometeu seu primeiro erro."
+      ],
+      "next": 58,
+      "total": 58
+    },
+    "width": 916,
+    "height": 412,
+    "body": [
+      365,
+      80,
+      527,
+      252
+    ],
+    "lineWidths": [
+      444,
+      432,
+      360,
+      456
+    ],
+    "available": 495,
+    "buttons": [
+      {
+        "id": "back",
+        "text": "Voltar",
+        "disabled": false,
+        "rect": {
+          "x": 40,
+          "y": 348,
+          "width": 278.6666666666667,
+          "height": 44
+        }
+      },
+      {
+        "id": "save",
+        "text": "Salvar",
+        "rect": {
+          "x": 318.6666666666667,
+          "y": 348,
+          "width": 278.6666666666667,
+          "height": 44
+        }
+      },
+      {
+        "id": "next",
+        "text": "Continuar",
+        "rect": {
+          "x": 597.3333333333334,
+          "y": 348,
+          "width": 278.6666666666667,
+          "height": 44
+        }
+      }
+    ]
+  },
+  "legacy": {
+    "mode": "technical",
+    "phase": "none",
+    "section": 0,
+    "word": 0,
+    "history": []
+  },
+  "errors": [],
+  "physicalDevice": false,
+  "isolation": "Disposable Chrome, save17 only in context; in-memory identity fixture; no personal saves"
+}

@@ -1,0 +1,292 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "native use updates HP/stock/painted slot synchronously; 240ms fill; consecutive recovery retargets; full-resource reason without consumption",
+    "keyboard near-maximum recovery shows only actual +2, last item disappears immediately",
+    "mouse/keyboard Mana and touch/keyboard Vigor update native resources/stock once, each independent fill converges",
+    "original panel bounds/fonts retained; three bars and all attributes/material fit without clipping",
+    "exit during animation never blocks; native save/load and reopen reconstruct actual values with no old tween"
+  ],
+  "immediate": {
+    "hp": 60,
+    "count": 2,
+    "bar": {
+      "shown": 10,
+      "from": 10,
+      "target": 60,
+      "maximum": 100,
+      "started": 1793186957307
+    },
+    "painted": [
+      "Chave de rubi",
+      "Importante",
+      "Poção de cura",
+      "×2",
+      "Poção de",
+      "restaurar",
+      "×3",
+      "Poção de Vigor",
+      "×3",
+      "Livro de Cura",
+      "×1",
+      "Livro de Dardo",
+      "de fogo",
+      "×1",
+      "Adaga",
+      "×1",
+      "Espada curta",
+      "×1",
+      "Couraça de",
+      "couro",
+      "×1"
+    ],
+    "help": "Poção de cura\nRestaura 50 de vida."
+  },
+  "middle": {
+    "bars": {
+      "hp": {
+        "shown": 30,
+        "from": 10,
+        "target": 60,
+        "maximum": 100,
+        "started": 1793186957307
+      },
+      "mp": {
+        "shown": 0,
+        "from": 0,
+        "target": 0,
+        "maximum": 50,
+        "started": 1793186957083
+      },
+      "vigor": {
+        "shown": 0,
+        "from": 0,
+        "target": 0,
+        "maximum": 100,
+        "started": 1793186957083
+      }
+    },
+    "r": {
+      "hp": {
+        "current": 60,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 0,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 0,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 1,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": []
+    },
+    "stock": [
+      2,
+      3,
+      3
+    ],
+    "help": "Poção de cura\nRestaura 50 de vida.",
+    "modal": false
+  },
+  "consecutive": {
+    "bar": {
+      "shown": 58.541666666666664,
+      "from": 58.541666666666664,
+      "target": 100,
+      "maximum": 100,
+      "started": 1793186957540
+    },
+    "hp": 100,
+    "count": 1
+  },
+  "geometry": {
+    "rows": [
+      {
+        "text": "Piloto",
+        "x": 0,
+        "y": 0,
+        "width": 316,
+        "height": 24,
+        "font": 20
+      },
+      {
+        "text": "Vida",
+        "x": 0,
+        "y": 25,
+        "width": 90,
+        "height": 20,
+        "font": 18
+      },
+      {
+        "text": "100 / 100",
+        "x": 92,
+        "y": 25,
+        "width": 224,
+        "height": 20,
+        "font": 18
+      },
+      {
+        "text": "Mana",
+        "x": 0,
+        "y": 51,
+        "width": 90,
+        "height": 20,
+        "font": 18
+      },
+      {
+        "text": "50 / 50",
+        "x": 92,
+        "y": 51,
+        "width": 224,
+        "height": 20,
+        "font": 18
+      },
+      {
+        "text": "Vigor",
+        "x": 0,
+        "y": 77,
+        "width": 90,
+        "height": 20,
+        "font": 18
+      },
+      {
+        "text": "100 / 100",
+        "x": 92,
+        "y": 77,
+        "width": 224,
+        "height": 20,
+        "font": 18
+      },
+      {
+        "text": "Força",
+        "x": 0,
+        "y": 108,
+        "width": 120,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "10",
+        "x": 120,
+        "y": 108,
+        "width": 32,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "Resistência",
+        "x": 164,
+        "y": 108,
+        "width": 120,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "5",
+        "x": 284,
+        "y": 108,
+        "width": 32,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "Inteligência",
+        "x": 0,
+        "y": 126,
+        "width": 120,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "8",
+        "x": 120,
+        "y": 126,
+        "width": 32,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "Res. Mágica",
+        "x": 164,
+        "y": 126,
+        "width": 120,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "5",
+        "x": 284,
+        "y": 126,
+        "width": 32,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "Agilidade",
+        "x": 0,
+        "y": 144,
+        "width": 120,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "10",
+        "x": 120,
+        "y": 144,
+        "width": 32,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "Sorte",
+        "x": 164,
+        "y": 144,
+        "width": 120,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "10",
+        "x": 284,
+        "y": 144,
+        "width": 32,
+        "height": 18,
+        "font": 16
+      },
+      {
+        "text": "Sem armadura equipada",
+        "x": 0,
+        "y": 164,
+        "width": 316,
+        "height": 16,
+        "font": 13
+      }
+    ],
+    "content": [
+      316,
+      180
+    ],
+    "window": [
+      480,
+      424,
+      336,
+      200
+    ]
+  },
+  "errors": [],
+  "isolation": "Disposable Chrome/save17; only technical stock, no personal saves. Video uses real canvas; controlled resource fixtures in memory."
+}

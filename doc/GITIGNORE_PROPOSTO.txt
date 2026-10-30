@@ -1,0 +1,36 @@
+# Proposta: copiar para .gitignore na raiz após revisão.
+# Referências externas locais; manter índice em doc/FONTES_LOCAIS.md.
+/doc/wiki/
+/doc/prints/
+
+# Partidas e configuração de execução local do RPG Maker MV.
+/save/
+
+# Dependências instaladas e caches de ferramentas.
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Saídas temporárias e pacotes de distribuição, se usados nestas pastas.
+/tmp/
+/temp/
+/dist/
+/build/
+/output/
+
+# Logs de ferramentas e arquivos temporários.
+*.log
+*.tmp
+*.bak
+*~
+
+# Metadados do sistema operacional.
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Credenciais locais; manter modelos sem valores secretos.
+.env
+.env.*
+!.env.example

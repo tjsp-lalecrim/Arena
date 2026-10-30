@@ -1,0 +1,14 @@
+[
+  {
+    "file": "data/Map008.json",
+    "sameData": true,
+    "shaBefore": "13d0683098e8c5b1ea79e0a7aac894d244dabb2f8d18e508ebbcc2b22a0fc8cf",
+    "shaAfter": "13d0683098e8c5b1ea79e0a7aac894d244dabb2f8d18e508ebbcc2b22a0fc8cf"
+  },
+  {
+    "file": "data/ArenaEncounters.json",
+    "sameData": true,
+    "shaBefore": "b38eb2d2ee8d5b24b7c8521aa73ab575041fc29a0718c3895eeeef0fb76dce7b",
+    "shaAfter": "b38eb2d2ee8d5b24b7c8521aa73ab575041fc29a0718c3895eeeef0fb76dce7b"
+  }
+]

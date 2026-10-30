@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-27",
+  "reviewedVersion": "b194b44",
+  "approval": {
+    "source": {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\m01-14-aprovacao-ressalvas-2026-10-27-1fedef3f-c80f-4be7-9ffe-9b483790d2c4.png",
+      "bytes": 393175,
+      "sha256": "1744d478c3fc421803832f1fac901394fa3760c4f4095381788e47ca426d49ed"
+    },
+    "scope": "Structure/current visual approved; lateral door apparent thickness/contrast/legibility is accepted non-blocking future work",
+    "notEvidenceOf": [
+      "editor open/edit/save/reopen",
+      "physical Galaxy A56",
+      "original DOS swimming experiment"
+    ],
+    "runtimeFilesAtApprovedVersion": [
+      {
+        "file": "img/characters/!$Arena_Chains_M14_R03.png",
+        "bytes": 46049,
+        "sha256": "26eb877e9344530604c7d06c539dbc8500b8aa7f44b61182c21e736ca53a145a",
+        "size": [
+          288,
+          384
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "img/characters/!$Arena_Doors_M14_R03.png",
+        "bytes": 123607,
+        "sha256": "50842de0af87fb0b53bf1b0748d9cc8ccb904befcddb18e51eabe9c8c896d39b",
+        "size": [
+          432,
+          576
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "img/characters/!$Arena_Treasure_M14_R03.png",
+        "bytes": 11767,
+        "sha256": "5266ae850cb501b4df1900b79015aec76d51926e3c689d0d364988c85d485fe4",
+        "size": [
+          144,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "img/pictures/arena_platform_r03.png",
+        "bytes": 48076,
+        "sha256": "50ff368f84a6fc0067717bb30471b165ddaa9f46b0bba8181a288d02abb728c3",
+        "size": [
+          144,
+          144
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "file": "img/tilesets/Arena_Dungeon_M14_R03.png",
+        "bytes": 241633,
+        "sha256": "9e6cf57861546812ed03e518b2e2715a4eafd53c4e9713768d95e46cea7a8e9a",
+        "size": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      }
+    ],
+    "editorManualReply": {
+      "date": "2026-10-27",
+      "reviewedVersion": "b194b44",
+      "answer": "Ainda não verifiquei no editor",
+      "openEditSaveReopenTested": false
+    },
+    "editorExecutionReply": {
+      "date": "2026-10-27",
+      "availableVersion": "031a58b; hash próprio não informado",
+      "verified": "Execução de Explorar Dungeon pelo MV1.6.1 até o ponto testado",
+      "mapEditSaveReopenVerified": false,
+      "physicalA56Verified": false
+    }
+  },
+  "sources": [
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Combat - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "bytes": 195087,
+      "sha256": "95ba3a0b13207fef1caefb83916b1812214c4d3bbae2b16a503e9d1cce9ce89f",
+      "pdfPages": [
+        3,
+        4
+      ]
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "bytes": 1014182,
+      "sha256": "547891b1e2fa8136c2c7b9110de0671a569b19ae40422909e9a4fc632f7ae880",
+      "pdfPages": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Magical Effects - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "bytes": 216876,
+      "sha256": "eb9c4490a07a28d698541a17f360deda9b1864e6a59e92330a96754584384cfe",
+      "pdfPages": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Unofficial FAQ - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "bytes": 412796,
+      "sha256": "c54ecc972c757e8cbb97562ae010b748dcabbd839d9c075b1836f3082f90473e",
+      "pdfPages": [
+        10
+      ]
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Fang Lair (quest) - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "bytes": 1008400,
+      "sha256": "623b7ff191c51f47176f02b4fae35a9b51f953d37c71fb6445a0b711cb55c1ae",
+      "pdfPages": [
+        2,
+        5
+      ]
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\wiki\\Arena_Halls of Colossus - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "bytes": 387758,
+      "sha256": "df6b624e6ea349b10601aa264e33bb780df920d689f0f494012347bc21a4059b",
+      "pdfPages": [
+        3,
+        4
+      ]
+    },
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\Docs\\Manual.pdf",
+      "bytes": 1527000,
+      "sha256": "3b2337481e95af1325680a9496f692178483064eb0a973105680b74197abb00c",
+      "pdfPages": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\Docs\\Player Guide.pdf",
+      "bytes": 1108106,
+      "sha256": "084d850d63fa3d43faff96a324b3602ade8a36505460c475f4246f87954a66b2",
+      "pdfPages": [
+        19,
+        20,
+        21,
+        22,
+        28,
+        67,
+        68
+      ]
+    },
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\Docs\\Arena Codex Scientia.pdf",
+      "bytes": 51196426,
+      "sha256": "039b39e2b261dab355ba0b6bbb95aa464d4b6556125d7d745c188dbf5893de27",
+      "pdfPages": [
+        22
+      ]
+    }
+  ],
+  "originalPreservation": {
+    "gameFilesComparedToIgnoredCopy": 277,
+    "differentGameFiles": [],
+    "originalMifAndBsaMatchPriorRecordedHashes": true,
+    "dosboxBinaryEqualsIgnoredCopy": true,
+    "configurationEqualsIgnoredCopy": true,
+    "incidentalLogs": [
+      {
+        "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\DOSBox-0.74\\stdout.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "file": "D:\\SteamLibrary\\steamapps\\common\\The Elder Scrolls Arena\\DOSBox-0.74\\stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "logCaveat": "First direct emulator launch touched/recreated stdout/stderr. No prior backup; not deleted or restored speculatively. Subsequent emulator and game execution used ignored copies."
+  },
+  "observation": {
+    "controlledSwimmingExperimentPerformed": false,
+    "reason": "DOSBox process started with local-copy mounts, but no observable targetable game window was available. No stationary/moving/zero-fatigue/HP measurement."
+  },
+  "editorAttempt": {
+    "launched": true,
+    "screenshotError": "FrameArrived timed out: timed out waiting on channel",
+    "pluginControlError": "element is not available in cached app state for RPGMV.exe",
+    "mapOpenEditSaveReopenVerified": false,
+    "noProjectFileWrites": true
+  },
+  "proposal": {
+    "conditions": "Static authored Map008, doors assumed open, no enemies/quests/running stamina cost; not runtime observation",
+    "shortestRouteSteps": 214,
+    "waterStepsOnThisShortestRoute": 6,
+    "proposedCostPerWaterStep": 2,
+    "proposedCostForThisRoute": 12
+  },
+  "runtimeChange": "None: no cost, resource, race, map asset, quest completion or encounter code changed",
+  "m01_14": "Visual approved; editor authoring evidence remains pending",
+  "m01_15": "Not started: requested dependency condition has not yet been verified"
+}

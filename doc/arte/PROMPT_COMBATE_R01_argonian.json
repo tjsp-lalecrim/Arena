@@ -1,0 +1,12 @@
+{
+  "id": "argonian",
+  "tool": "image_gen built-in",
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_argonian_male_r02_side.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\img\\pictures\\Arena_argonian_female_r02_side.png"
+  ],
+  "prompt": "Use case: identity-preserve. Asset: actual 2D Side View animation sheet for Arena dark fantasy. Input image1 is the EXACT male identity/clothes/colors/body/face reference. Input image2 is the EXACT female identity/clothes/colors/body/face reference. Preserve reptilian gray-blue heads, preserve exact current snout/scales/head ridges and no invented costume. Not portraits. Exactly SIX columns by FOUR rows, 24 full-body frames. In each row columns1-3 are the male's three successive frames and columns4-6 are the female's corresponding three frames. Do not interchange genders or outfits. Landscape1536x1024, equal256x256 cells. Row1 idle: clearly distinct gentle breathing with planted feet. Row2 action: anticipation, forward unarmed strike reaching LEFT, recovery. Row3 hurt: flinch, compressed recoil, recovery. Row4 defeat: kneeling, collapsing, fully lying still. ALL characters face LEFT for the player's right-hand side. This is a FOUR-state animation study, not rows of repeated identical poses. Clear anatomical articulation of shoulders, elbows, knees; same body volume and same scale in all frames. Common ground baseline within every cell. Generous transparent margins: fully contain hands, hair, boots, ears, snouts, falling bodies; no clipped limbs or neighboring frames crossing cells. Figurative painterly dark fantasy matching the supplied exact sprites, no pixelization, anime, chibi or plastic3D. No weapons/effects, no added armor, no costume redesign, no text or labels or borders. Transparent background with clean alpha. Preserve racial and gender differences; do not borrow a human head for a beast race. Do not add portraits or other characters. Standing figure occupies ~80% cell height and never changes scale. Defeat frames retain the same full-body proportions rather than shrinking the character.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-f9a0488c-a9c8-4fc6-a1e8-46369090d7fe.png",
+  "master": "art/masters/combate-r01/argonian.png",
+  "approval": "No owner approval claimed; technical animation validation pending export"
+}

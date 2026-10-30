@@ -1,0 +1,50 @@
+## Correção M01-14 R03 — 27/10/2026
+
+Direção gráfica/planta permanecem aprovadas; encaixes de portas/objetos/colisões não estavam aprovados. R03 corrige os cinco prints de defeitos com componentes ortogonais, dobradiças fixas, ausência de cap sobre vão, plataformas independentes, tesouros maiores e suporte válido de decoração. Ler DIRETIVA_DE_MAPAS.md e DUNGEON_M01_14_R03.md. Sem merge, isometria ou avanço para M01-15. M01-14 em validação: testes Chrome/contratos separados de aprovação visual; captura do editor falhou duas vezes, sem comprovar editar/salvar/reabrir; A56 físico pendente. Registros anteriores são históricos quando divergirem.
+
+# M01-14 R02 — portas, objetos e água
+
+27/10/2026. Continuação de `feature/m01-dungeon-inicial`, base disponível **4161615**. O responsável aprovou a direção gráfica e a fidelidade estrutural dessa base. A aprovação não declara corrigidos os objetos, portas ou água, nem aprova automaticamente as variantes novas desta revisão. Sem merge, mudança de planta ou início de M01-15.
+
+## Fontes e limites da investigação
+
+Relidos backlog, validação, relatório M01-14, instruções de desenvolvimento, arte, mapa fixo e código do MV. Inspecionados visualmente `doc/prints/arena_loot.jfif` e o master complementar v01. A referência de loot mostra saco, moedas, tecido vermelho e peças de equipamento; fundo branco e pixelização não foram incorporados. Não se trata de baú nem de destaque de raridade.
+
+Consultados novamente a wiki local Imperial Dungeons, texto e planta já extraídos em `tmp/original-review`, manual de consulta e START-decoded.txt. A wiki descreve pilhas de loot e plataformas elevadas para descanso. START.INF decodificado identifica `*WETCHASM / swater.img`, sons de splash/swimming e famílias de portas; o manual menciona natação. Esses dados confirmam a existência de água/natação no original, **não cada margem, profundidade ou passagem sob blocos no executável**. As classificações FLOR/MAP1 e a correspondência da planta registradas em M01-14 são preservadas. Não houve playtest DOS nem alteração do original; exportações continuam ignoradas, fora do jogo distribuído.
+
+## Construção e convenções
+
+- Planta50×50 e transformação3×3 preservadas; início148,82, chave142,64 e Gate13,145. Os9045 tiles transitáveis continuam conectados após abrir portas. Corredor3livres, teto1 e face2 mantidos.
+- Cada porta representa um **vão na faixa de parede** da célula D original: cap separado na fileira anterior e sprite de face com célula144×96, ancorado na fileira inferior. O sprite não contém teto e não ocupa a fileira do cap. Região5 identifica face/vão;6 identifica cap superior do vão; o cap é desenho acima da passagem, não um novo obstáculo. A colisão permanece na seção transversal original de3 tiles, independente da altura desenhada.
+- Quatro vistas geradas: sul/frente, norte/verso, leste e oeste. A vista corresponde ao eixo da porta e ao lado que iniciou a interação, mantida durante o ciclo. Não há espelhamento automático. As laterais são interpretação oblíqua da perspectiva superior; o encaixe artístico permanece sujeito à avaliação, especialmente ao mudar de lado em torno de porta já aberta.
+- Os9 eventos por porta preservam IDs nativos e self-switches;8 podem ser controladores invisíveis. Apenas1 desenha a face de2tiles. Abertura/fechamento:3 quadros realmente distintos em24 atualizações; collider permanece fechado até terminar de abrir e é bloqueado ao iniciar fechamento. Fechamento recusado com jogador/evento não-through no envelope3×3. Interações repetidas durante transição são ignoradas. Sem travas, recompensa, chave consumida ou custo.
+- Correntes/nichos usam sprites estáticos direcionais144×96, ancorados somente em célula sólida adjacente, sem ampliar colisão. Não há animação artificial de correntes. A vista norte mostra a parte traseira da montagem; não fingir que todas as faces possuem exatamente o mesmo desenho frontal.
+- Chave e pilhas têm ponto de apoio no chão, alpha e escala próprios. Pilha ocupa44×36 em célula48×48; não bloqueia piso. As3 aparências disponível/aberto/coletado são **prévia técnica**, acionada pela interação, com aviso explícito: nenhuma concessão, quest ou regra de loot mudou. Integração real por fontes continua reservada ao M01-16.
+
+## Natação mínima configurável
+
+Antes a água era um tile B transitável comum, sem distinção corporal. Agora os canais explicitamente transcritos como `~` usam água A1 própria e região2. A configuração `swimming` em ArenaDungeon.json delimita mapa8, enabled, regionId2, autotileKind0 (todas as48 formas nativas), depth24 e offsetY10. O plugin **restringe** entrada em A1 não marcado ou desabilitado; a passagem continua dependendo das flags de origem/destino e dos eventos nativos. Não há through, salto de parede, alteração de diagonal ou liberação global de autotiles. Outros mapas e veículos usam seus métodos nativos.
+
+Entrada/saída por margem caminhável, movimento por grade, corpo parcialmente submerso e ondulação própria. Sem gastar/recuperar Vigor, sem regeneração, afogamento, oxigênio, velocidade/bônus racial de natação ou nova regra de combate. O bônus aprovado dos Argonianos não foi alterado. A profundidade é uma adaptação visual: não comprova geometria vertical do DOS. Desabilitar swimming bloqueia entrada; fazê-lo com personagem já na água permite sair para margem válida, sem aprisioná-lo.
+
+Água usa A1 nativo768×576: três fases da superfície, ciclo do motor0–1–2–1. A textura IA aprovada é montada periodicamente, com ajuste técnico de bordas e deslocamento de fase2px. Efeito corporal usa três ondulações IA; não substitui a superfície por efeitos aleatórios por tile. Não foram reintroduzidos assets padrão do MV. Observar a repetição em áreas extensas durante a avaliação estética.
+
+## Assets e origem reproduzível
+
+Masters anteriores preservados. Dois novos masters IA versionados em `art/m01-14`, prompts completos e imagens realmente fornecidas em `arte/DUNGEON_M01_14_R02_PROMPTS.json`. A ferramenta retornou atlas com espaçamento diferente do solicitado: o empacotador usa recortes **inspecionados**, não divisão cega da altura pedida. `tools/build-dungeon-objects.py` monta folhas nativas; `tools/build-dungeon-map.py` monta mapa, tileset e água. Executar nessa ordem. As folhas têm `$` para personagem único e `!` para apoio sem deslocamento nativo de6px. Escala e margens são específicas por categoria. Nenhuma imagem original foi distribuída.
+
+O gerador reescreve Map008 inteiro. Preservar futuras edições manuais válidas incorporando-as à origem antes de recompilar. Região, cap, face, orientação e collider são contratos de origem, não remendos apenas no JSON gerado. A visão geral offline é material de revisão, nunca mapa-guia dentro do jogo.
+
+## Persistência e validação
+
+Estado aberto por self-switches nativos; transição e vista pertencem ao Game_Map/Game_Event serializado. Imersão deriva de posição/região e não duplica recursos. Saves laboratoriais da revisão anterior precisam reconstruir os eventos de Map008, preservando posição e os IDs1–126 das portas; o plugin detecta revisão anterior antes de criar os sprites. Prévia de tesouro não equivale a ledger de recompensa.
+
+Resultados executados: `evidencias/m01-14/r02/resultado.json` (**7cenários**) e `r02/regressao/resultado.json` (**6cenários**). Chrome156.0.8078.48 desktop, canvas816×624. Cenários isolados, slots18/19/20 em contexto descartável, sem saves pessoais. Teste da planta/9045tiles, portas, rotas, recursos/inventário e chave/Gate separado da avaliação estética. Foram verificadas1092 bordas água→sólido bloqueadas. Migração de saveR01 com218 eventos para163 passou, incluindo porta e posição na água; um refresh prematuro de eventos antigos foi prevenido pelo hook de carregamento. Capturas na resolução real e gravação do canvas, não reconstrução ilustrada de combate/mapa. Mais4 capturas nativas de correntes/nichos nas orientações realmente presentes:2sul/5oeste/2leste/2norte no mapa; setup por locate só para enquadrar, sem alegar navegação por esse método. Vídeo curto de aproximadamente20segundos em agua-portas.webm; duração exata disponível no player.
+
+`validate-dungeon.cjs`: formato canônico/UTF8/plugins presentes, motor/regras/mapas1–7/arte anterior preservados, planta, cap separado, arquivos e atlas. `audit-dungeon-revision.py`: hashes, original MIF/BSA inalterados, frames distintos. Reexecutados empacotador/compilador e comparados os10 outputs gerados por SHA256: **byte a byte idênticos**. Isso complementa a inspeção de escala/recortes em orientacoes-escala-real.png e capturas do motor; não aprova anatomia/perspectiva por algoritmo. Gate continua marcador visual estático; ativação narrativa/encerramento permanecem no backlog próprio.
+
+**Editor pendente:** MV foi iniciado, janela retornada com título Arena. Duas tentativas renovadas de captura falharam com `FrameArrived timed out: timed out waiting on channel` e `window capture timed out: timed out waiting on channel`. Não foi possível inspecionar Map008, editar, salvar/reabrir ou ler gerenciador nesta rodada. O título da janela não comprova esses passos. Motor e formato canônico de plugins.js preservados e auditados; isso não substitui validação de autoria. Galaxy A56 físico e aprovação dos novos complementos pendentes. **M01-14 permanece em validação.**
+
+## Roteiro do responsável
+
+Abrir Game.rpgproject no MV1.6.1, selecionar Map008 **M01-14 Masmorras Imperiais**, Tileset4, inspecionar camadas/regiões e salvar/reabrir. No navegador ou playtest, título **Explorar dungeon** inicia piloto isolado; menu do laboratório usa personagem atual. Setas/clique movem; Enter/clique interagem. Observar portas nas duas extremidades de cada eixo, abrir/fechar de fora do vão, tentar fechar ocupado, conferir cap intacto e corpo não encoberto. Inspecionar chão/apoio dos tesouros e as prévias sem recompensa. Nos canais, entrar, mover junto a margens/cantos, clicar em parede (sem atravessar), sair e salvar/carregar na água. Nenhuma regra de Vigor deve mudar. Refinamentos posteriores de integração não estão presumidos aprovados.

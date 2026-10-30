@@ -1,0 +1,167 @@
+## Pontos de atributos — núcleo M01-20
+
+ArenaAttributes.json schema1 configura ator/primeiro nível/quantidade/valor/IDs. Namespace interno arenaAttributes v1 guarda maior nível, concessões por nível, pontos gastos/aumentos por parâmetro e revisão. Defaults pelo MV_StateStore; migração concede saldo retroativo dos níveis atuais sem distribuir, curar ou mexer em estados anteriores. Base, equipamento e modificadores mantêm suas autoridades; curvas seis atributos continuam planas. Prefixo web inalterado. [Contrato principal](plugins/Arena_Attributes.md).
+
+## Equipamentos legados fora das novas recompensas — M01-20
+
+Weapons3/4 e Armors3/4 preservam integralmente IDs/propriedades e uso em saves, equipamentos e reservas. ArenaLoot.json deixa `rare.chance=0`/`rare.variants={}`; nenhum desses IDs consta dos pools novos. Livros5/6 e demais regras não mudam. Sem migração, renomeação ou reutilização de IDs. [Contrato/evidências](RETIRADA_VARIANTES_RARAS_M01_20.md).
+
+## Ouro de fallback dos tesouros — M01-20
+
+Configuração ArenaQuests.json schema1 agora usa `treasureFallbackGold:{min:2,max:8}`. Leitura do escalar antigo permanece para configurações/chamadas legadas; não é campo de save. Sorteio e recibos permanecem no contrato arenaLoot v1; valores já concedidos/em reserva e tesouros coletados não mudam. Sem novos IDs ou migração/namespace. [Detalhes e verificação focal](OURO_RESERVA_VARIAVEL_M01_20.md).
+
+## Refúgios configurados — expansão REF12
+
+ArenaRecovery.json schema1: piloto preservado e39 pontos dungeonRefuge=true, com ID/posição/sourceCell explícitos; restExclusions documenta a plataforma da chave. Eventos242–280 gerados por build-quests e reconhecidos por build-encounters. Runtime acrescenta instâncias ausentes em saves, sem conceder recuperação no load. Nenhum novo estado/namespace de descanso; recursos/quests/loot/respawn mantêm as autoridades existentes. [Seleção e locais](EXPANSAO_DESCANSO_M01.md).
+
+## Identificação externa do armazenamento web — M01-19
+
+Prefixo configurável `arena:m01:save-v1` para chaves de slots, índice, configuração e backups, via MV_WebStorageNamespace. É identidade externa de armazenamento, distinta dos namespaces/schemaVersion internos de MV_StateStore e da versão da build; payloads/migrações existentes não mudam. Atualização compatível mantém o prefixo. Chaves genéricas antigas não são importadas/apagadas; arquivos do editor não mudam. [Contrato e limites entre origens/perfis](plugins/MV_WebStorageNamespace.md).
+
+## Integração M01-18
+
+M01-18: ArenaNarrative.json schemaVersion1 contém12 entradas I01–I05/R01–R07 e F01/asset. Namespace arenaNarrative v1 registra somente leitura/contexto (mode,phase,section,word,history) e operação gate. MQ01, inventário e recursos mantêm suas autoridades. Defaults de saves antigos são technical/none; novos jogos pelo commit da criação iniciam campaign/intro. Ver NARRATIVA_M01_18.md.
+
+## Integração M01-17
+
+M01-17: Items2/3/4 mantidos em50HP/25MP/50Vigor e estoque nativo; ArenaRecovery.json contém apenas política de uso e pontos autorizados. HP/MP, inventário, Vigor e progressão não são duplicados. Map005/evento6 é o único ponto de descanso configurado; Map008 permanece sem cama confirmada. Sem nova migração. Detalhes em POCOES_E_DESCANSO_M01_17.md.
+
+# Banco mínimo e convenções M01
+
+Estado atual M01-12: INVT/EQ nativos com transação/slots e material derivado mínimo nas16 identidades; banco/IDs/bônus/custos aprovados preservados. Map007/evento8 é somente técnico. M01-10/11 já integrados; afirmações de cobertura parcial/desativação antigas abaixo são históricas. Ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+M01-10 R02: ArenaBattleMotion.json v1 configura atlas/frames/durações/impacto/mãos por movimento, armas por wtype/empunhadura e cobertura parcial(1/16 personagem,1/3 inimigo). Camada visual lê arma nativa atual; relógio/bitmap ficam no Sprite e não entram no save. Sem mudança de schema persistente, banco, valores raciais ou pagamento de custos. Referência REVISAO_COMBATE_M01_10_R02.md.
+
+Atualização M01-10 R01: ArenaBattle.json v1 mapeia16 baseVisualId e inimigos1–3 para folhas3×4/células/apoio/tempo, aliases explícitos de movimentos e kit técnico. Map007 tem encontros301 por interação, sem fuga/derrota permitida, self switch após vitória e reinício explícito. Barras consultam estado real; sem cópia persistente ou mudança de schema. Skills/Items/Enemies/Troops, valores raciais e consumidores anteriores preservados. Nenhum item novo no início da campanha. COMBATE_M01_10.md contém limites e validações.
+
+Atualização operacional M01-09 R01: técnicas3–8 ativas com ocasião1 e disponibilidade derivada de arma/sem arma. Custos5/12 mantidos em ArenaVigorCost; Mana/Cura/Dardo e livros preservam IDs/valores. ArenaAbilities.json separa configurações; Map006 laboratório sem Battle Scene ou campanha. ArenaLearnSkill agora usa transação de aprendizado e consumo, sem requisito de nível. Não há livros no inventário inicial. Referência atual HABILIDADES_M01_09.md; afirmações antigas de tags sem consumidores/desativação abaixo descrevem a montagem inicial, não o estado vigente.
+
+Versão de esquema 1; feature/m01-dados, 25/10/2026. Banco inicial para integrar as próximas features, não catálogo completo ou balanceamento final. Os dados nativos são editáveis pelo MV 1.6.1; ArenaCatalog.json é catálogo próprio, carregado pelo consumidor Arena_CharacterCreation em M01-07. Não há classes profissionais: Aventureiro é somente o registro técnico exigido pelo MV.
+
+Atualização R05,26/10/2026: P01–P08 da auditoria R04 foram autorizadas e aplicadas como balanceamento provisório; referência/versionamento em decisoes/M01_07_APROVACAO_R05.json. ArenaCatalog mantém schemaVersion1 e identifica balanceVersion M01-07/R05/P01-P08. ArenaCharacterVisuals.rules.weaponSkillIds permanece1/5/6/7/8, excluindo3/4 desarmados. As16 referências visuais foram preservadas, com aprovação estética e ressalvas registradas. Pilotos R04B não substituem automaticamente as folhas ativas.
+
+## IDs estáveis
+
+| Tabela | IDs desta base | Uso |
+| --- | --- | --- |
+| Actors / Classes | 1 / 1 | Viajante / suporte técnico Aventureiro |
+| Items | 1 | Chave de rubi, importante, única por regra da quest |
+| Items | 2, 3, 4 | Poções de cura, restaurar poder, Vigor |
+| Items | 5, 6 | Livros de Cura e Dardo de fogo |
+| Weapons / weaponTypes | 1, 2 / 1, 2 | Adaga, espada curta / Adaga, Espada |
+| Armors / armorTypes | 1, 2 / 1, 2 | Couraça de couro, cota de malha / Couro, Malha |
+| Skills | 1, 2 | Ataque/defesa nas posições exigidas pelo MV |
+| Skills | 3–4, 5–6, 7–8 | Leve/pesado: desarmado, adaga, espada |
+| Skills | 9, 10, 11 | Cura, Dardo de fogo, mordida paralisante |
+| States | 1, 2, 3 | Incapacitado (death nativo), Defesa, Paralisia |
+| Enemies / Troops | 1, 2, 3 | Rato, goblin, homem-lagarto; um inimigo por tropa |
+| Tilesets / Map | 1 / 1 | Diagnóstico vazio / laboratório técnico 17×13 |
+| Animations | somente null | Nenhum efeito referenciado; arte/animação em M01-06/10 |
+
+Não renumerar IDs existentes ao expandir. Novos registros usam próximo ID livre. Slots de equipamento: 1 Arma, 2 Escudo, 3 Cabeça, 4 Corpo, 5 Acessório; ambas as armaduras desta base são Corpo. Tipos são permissões técnicas, nunca raça/profissão. Todos os tipos cadastrados são equipáveis pela classe técnica. Não foi adicionado arco nem dual wield por associação: regras serão tratadas se o conteúdo os incluir.
+
+Elementos: 1 Físico, 2 Fogo, 3 Frio, 4 Choque, 5 Magia. Tipos de habilidade: 1 Técnicas, 2 Magias. TP não é Vigor e seu display continua desligado. M01-08 implementa Vigor próprio, sem regeneração ou ligação com ganhos/reset de TP. Técnicas não geram TP.
+
+Switches 1–4 reservados para Ria, porta aberta, MQ01 concluída e encerramento mostrado. Variáveis 1–3 reservadas para etapa/raça/gênero; nenhum evento usa esses campos ainda. M01-05 define a autoridade própria em Game_System via MV_StateStore/Arena_Persistence, conforme PERSISTENCIA_M01.md; os switches/variáveis permanecem reservados, sem espelhamento automático. Self-switches A/B/C/D seguem o padrão MV para eventos locais, nunca como única fonte do estado da quest. Notas previstas: ArenaRecord, ArenaQuest, ArenaUnique, ArenaVigorCost, ArenaWeaponType, ArenaVigorRestore, ArenaLearnSkill. Por enquanto são metadados; sem consumidor próprio. Não apresentar tag como funcionalidade implementada.
+
+## Fontes e conversões
+
+Todas as fontes abaixo estão em doc/wiki/, preservadas fora do Git. URLs e atribuição de traduções em MQ01_ESPECIFICACAO.md e nos PDFs UESP. Valores marcados adaptados são escolhas técnicas provisórias, não estatísticas transcritas.
+
+- Imperial Dungeons (quest), p.3: chave de rubi; item 1 importante, preço 0, sem uso/consumo no menu. O uso pela porta é responsabilidade de M01-16; a tag Unique ainda não implementa saneamento.
+- Base Weapons, p.2: Dagger 1–6 e Shortsword 1–8 de dano. Convertidos em ATQ +2 e +3; ataque base `max(1, 2*ATQ - DEF)`. Essa escala substitui o dano em tempo real e será balanceada; não importar peso/deterioração ou bloqueios de classe. Preço 0 indica item fora de comércio neste laboratório, não preço original.
+- Base Armor, pp.1–2: couro -3 e malha -6 de armor rating convertidos em DEF +3/+6 na peça de corpo. A redução de chance de acerto original não equivale a DEF do MV; escolha provisória documentada. Visual por peça depende de M01-12.
+- Potions, p.1: cura preço50/recupera50 Vida (adaptado), restaurar poder preço75/recupera25 Mana (quantidade nominal original em escala diferente), Vigor preço25/recupera50 (adaptado). Item4 ativado em M01-08, ocasião0, nota ArenaVigorRestore50; recuperação limitada ao máximo, sem efeito em TP. Sem distribuir loot de campanha.
+- The Known Spellbook, pp.2–3: Fire Dart custo-base original 164/nível e Heal 125/nível; dano/cura variáveis por nível no original. Aqui Dardo custa 6 mana, dano `max(1,3*MAT-MDF)`, elemento fogo, alvo inimigo; Cura custa 8 mana e recupera `25+MAT`, alvo usuário, sem recuperar Vigor. Esses valores/alvos são adaptações para personagem único. Critérios de balanceamento em M01-09. Livros são adaptação moderna confirmada, de uso único, sem requisito de nível; efeitos nativos de aprender skill testados, mas aquisição por loot e integração final ainda pendentes.
+- Técnicas são adaptações do projeto: leve5 Vigor, pesado12, fórmulas de ATQ2/3; desarmado, adaga e espada. M01-09 ativa ocasião1, disponibilidade por equipamento e revalidação no início da execução. Não concedidas por aprendizado permanente da classe. Consumidor de custo continua somente Arena_Resources.
+- Monsters, pp.6/13/17: goblin HP 1–8, dano 1–5, EXP HP*5+60; homem-lagarto HP 10–20, dano 1–8, EXP HP*10+75 e paralisia; rato HP 1–6, dano 1–4, EXP HP*5+35 e doença. Convertidos para valores provisórios abaixo; doença ainda não adaptada, deve ser avaliada/documentada em combate antes de concluir M01-10. Paralisia: 25% por mordida e um turno, removida após batalha (adaptação). Não inferir equivalência de EXP original.
+
+| Inimigo | HP | MP | ATQ | DEF | MAT | MDF | AGI | Sorte | EXP |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Rato | 18 | 0 | 5 | 2 | 0 | 2 | 9 | 5 | 15 |
+| Goblin | 30 | 0 | 7 | 3 | 0 | 3 | 10 | 5 | 25 |
+| Homem-lagarto | 55 | 0 | 10 | 5 | 0 | 5 | 14 | 5 | 50 |
+
+Sem ouro ou drops nativos: loot por fonte deve respeitar seis categorias e um equipamento em M01-13. Probabilidades originais consultadas (goblin 19% de 2–20 ouro, 25% item de baixa qualidade; homem-lagarto 23% de 2–20 ouro, 25% item de baixa qualidade) são insumos, não tabelas já implementadas. Recompensa de EXP nativa é provisória. Fontes de item importante não dependem dessas tabelas.
+
+Classe técnica conserva dados100 Vida/50 Mana,10 ATQ/5 DEF/8 MAT/5 MDF/10 AGI/10 sorte, constantes. M01-08 substitui a fonte de HP/MP máximos do ator1 por base e escolhas explícitas persistentes em ArenaProgression.json/arenaResources v1. Os outros parâmetros, EXP e modificadores continuam nativos, incluindo AGI Khajiit+1. Teto de Mana ampliado999→9999 para comportar98 escolhas sem truncar. Vigor100 (+10 Argoniano inicial),+10 por escolha, separado de TP. Valores provisórios; contrato em RECURSOS_E_PROGRESSAO_M01_08.md. Map005 é laboratório isolado, não nova área de campanha.
+
+## Catálogo racial e visuais
+
+ArenaCatalog.json inventaria as oito raças de Arena, províncias, páginas da fonte Races, bônus e duas combinações de gênero por raça. Não adiciona Imperial ou Orc jogáveis. Masculino/feminino correspondem às combinações de customização nas fontes; sem bônus por gênero. A base inicial usava visuais null; atualmente as16 chaves apontam para assets próprios existentes via ArenaCharacterVisuals, sem caminhos ausentes.
+
+Bônus ativos R05: Argoniano initialResourceAdd/vigor+10 uma vez; Bretão magicDamageRate0,75; elfo negro weaponActionBonus/all/damageRate1,05/hit0,02; Alto elfo stateImmunity/3; Khajiit parameterAdd/6/+1; Nórdico damageElementRate/3/0,5, só dano; Redguard weaponActionBonus/melee/1,08/0,03; Bosmer weaponActionBonus/all/1/0,04. Acerto é soma de probabilidade, não percentual do atributo; dano é multiplicador de fórmula positiva, não pontos extras ou ATQ. Sem incrementos raciais por nível, saving throw, natação/escalada ou equipamento bloqueado. Vigor inicial existe; consumo/evolução são M01-08/09. Os valores R04 anteriores estão preservados na proposta imutável, não continuam como regra ativa.
+
+## Validação e limites
+
+`node tools/validate-data.cjs`: JSON, ID/índice, referências entre banco, permissões, fontes raciais, mapa e ausência de drops nativos. A checagem de fontes requer doc/wiki local; clones precisam repor referências pelo índice. `tools/test-boot.cjs` testa novamente boot e integração do banco com Game_Actor/Game_Action: quatro equipamentos permitidos, adaga/cota equipadas, cura e livro, rejeição nativa de livro já aprendido.
+
+M01-04 pode concluir o banco mínimo sem afirmar M01-07/08/09/10/12/13 prontos. Nenhuma batalha ou aparência é atestada por esses testes. Sem animação/asset referenciado até sua integração; não usar combatentes vazios como arte final. O fluxo técnico continua disponível. Compatibilidade dos saves de desenvolvimento é limitada ao contrato explícito. O contrato de M01-05 está em PERSISTENCIA_M01.md: saves do laboratório sem a estrutura recebem defaults sem efeitos; não há promessa de compatibilidade com futuros schemas sem migração.
+
+## Estado próprio implementado em M01-05
+
+Plugins MV_StateStore e Arena_Persistence guardam contratos sem duplicar nome, inventário, equipamentos, magias, HP/MP, máximos nativos, nível ou EXP. Recursos próprios iniciam vazios; exemplo de Vigor no teste não é balanceamento nem mecânica M01-08. Identidade racial/gênero/visual inicia null. Aparência equipada será derivada, não snapshot visual salvo. MQ01 inicia etapa 0; fonte lógica MQ01.ruby-key aponta para item 1 nas etapas 10/20, sem evento de mapa ativado. Nenhum ID do banco foi alterado. IDs de inimigos/áreas nos testes são técnicos e não definem o mapa final. Contratos/API e limites em PERSISTENCIA_M01.md.
+
+## Acréscimos da amostra M01-06
+
+Map002 e Tileset2 são exclusivamente técnicos. B tem tile0 transparente (flag16), tile1 piso passável (flag0), tile2 parede bloqueada (flag15). Nenhuma tabela de personagem/itens/inimigos foi renumerada ou alterada. Os ícones da galeria não são ainda ícones do banco. Map001 e início padrão preservados. Imagens nativas do ator são atribuídas somente na entrada do mapa de amostra e limpas no evento de retorno; contratos próprios não recebem raça/visual obrigatório por essa visualização. Formatos em doc/arte/AMOSTRA_M01_06.md.
+
+## Dados da galeria R04
+
+Map003/tileset3 reservados para validação visual. Map001 e002 preservados. Folha B Arena_Prison_R04: tile0 transparente/flag16; pisos1,2,9,10 passáveis/flag0; paredes4,5,12,13 bloqueadas/flag15. O MV divide o B em metades de8 colunas: a segunda linha usa +8, não +16. `ArenaArtSamples.json` separa os perfis visuais e sequências da lógica do plugin. Dados derivados de animação não são persistidos; HP/inventário/imagens continuam nativos e contratos próprios inalterados. Não houve renumeração de itens, atores ou quests.
+
+## Criação M01-07
+
+Map004: chegada técnica provisória após criação, tileset3, sem dungeon final. ArenaCharacterVisuals.json v1:16 chaves estáveis `<race>.<gender>.base`, referências de character/face/picture/svActor e grupos/skills de arma. Actor1/Class1 preservados como suporte técnico; nenhum registro por profissão/raça ou restrição de equipamento. ArenaCatalog passa a ter labels pt-BR e application=derived-after-confirmation, sem confundir aplicado com flag global do catálogo. Estado runtime segue Arena_Persistence e namespace arenaCreation v1. Vigor inicial100 (110 Argoniano) é adaptação provisória, sem gasto/progressão M01-08. Nomes/equipamentos/atributos/imagens nativos não são duplicados.
+
+
+## Apresentação M01-10 R03
+
+ArenaBattleMotion.json agora cobre16 identidades/3 inimigos, sem modificar banco de habilidades/itens/armas/inimigos. actionMotion do homem-lagarto é bite para Mordida paralisante11; estudo de tridente não integrado. Clock/quadro/mão não são dados persistentes. System.versionId regravado pelo editor durante a validação de autoria. EXPANSAO_COMBATE_M01_10_R03.md registra células/fontes e doença original do rato ainda sem contrato no subconjunto, a avaliar em combate/balanceamento.
+
+
+## Interface de batalha M01-11
+
+ArenaBattleUI.json configura layout/slots/nomes curtos/ícones/formações; nomes/regras originais do banco preservados. Hotbar battle.1–8 usa os mesmos {kind,id}/null do contrato M01-05, sem novo schema. Dados de recursos continuam nas APIs anteriores/nativas; cache visual é transitório. Troops4 é somente trio técnico de inimigos1/2/3, Map007 evento7(13,8), reiniciado explicitamente pelo descanso. Nenhum novo inimigo, item ou valor de combate. Validadores comparam prefixos anteriores e mudanças exatas; System.versionId é a única alteração semântica extra produzida pelo roundtrip do editor.
+
+
+## Ajuste de apresentação M01-11 R02
+
+Somente commandHeight104 e hotbarHeight108 mudam em ArenaBattleUI.json em relação a30e441d; IDs, formação, prefixo battle.1–8, inventário/banco/regras e persistência são preservados. Tema e visibilidade são transitórios, sem novos campos de save.
+
+
+## Integração M01-12
+
+M01-12 não muda Actors/Classes/Weapons/Armors/Items/Skills ou os valores aprovados. ArenaInventory.json configura IDs, kit técnico, layout e regiões de material. Map007 recebe apenas evento8(13,5) para preparar/abrir equipamentos no laboratório; anteriores preservados. Registro canônico20 plugins preserva os18 anteriores. Equipamentos/inventário nativos e aparência derivada, sem schema próprio novo. System.versionId foi regravado pelo editor. Ver INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+
+## Integração M01-13
+
+M01-13: Weapons3/4 e Armors3/4 são variantes raras dos IDs1/2, mesmo tipo/arte/material, +1 provisório ATQ ou DEF, nomes/descrições/tag ArenaRare próprios. Registros anteriores intactos. ArenaLoot.json contém tabelas por espécie e referências pesadas; dificuldade não é nível de ator nem regra racial. Enemies.gold/dropItems nativos continuam zerados; plugin ignora esses pagamentos para evitar duplicação. Fonte de chave continua importante1/claimSource, sem colocação aleatória na campanha. Detalhes/fontes em LOOT_M01_13.md.
+
+
+## Atualização M01-14
+
+M01-14: Map008, MapInfos8, Tileset4/Arena_Dungeon_M14. Mapas1–7/banco de personagem/combate intactos. Config de pontos e portas em ArenaDungeon.json; topologia interpretada/autorizada em doc/mapas/IMPERIAL_DUNGEONS_LAYOUT_M01.json. Regiões1sólido/2água/3plataforma/4piso só para diagnóstico, sem mapa-guia runtime. MIF/texturas originais não distribuídos.
+
+
+M01-14 R02: ArenaDungeon schema2, regiões1sólido/2água/3plataforma/4piso/5face-vão/6cap-superior. A1tile2048 só nadável no mapa8/região2; demais colisões nativas. Estado visual/transição de portas serializado no Game_Map, A nativo nos IDs1–126. Migração R01 reconstrói218 eventos em163 sem recriar ator/inventário. Ver DUNGEON_M01_14_R02.md e plugins/Arena_Dungeon.md.
+
+R03: ArenaDungeon.schemaVersion3; campo attachments distingue sourceCell/wallCell/posição/distância/category wall-only. Cap não é desenhado sobre piso de vão; região6 antiga deixa de ser usada. sourceLayout e área sólida/caminhável preservadas, door.visualAnchor/hingesLocal/footprint explícitos; eventos168 e primeiros126 de portas estáveis. Migração mantém recursos/inventário e reconstrói somente geometria do mapa8. Plataformas41×3×3 em camada1, chão abaixo. Ver DIRETIVA_DE_MAPAS.md.
+
+## M01-15 — encontros
+
+ArenaEncounters.json schema1 separado do mapa/loot. Map008 mantém IDs1–168/camadas/propriedades; acrescenta eventos169–235 com trigger2 e ID estável imperial.enemy.NN. Enemies/areas reutilizam Arena_Persistence; localização/tick permanecem nativos do Game_Event. Dados e migração em ENCONTROS_M01_15.md. Nenhum item, tropa, valor racial, custo ou recompensa novo.
+
+## M01-16 — MQ01
+
+ArenaQuests.json schema1 define títulos/J10–J40, requisitos e referências. Map008 mesmos235 eventos/IDs/geometria; somente listas127(chave) e137(Gate), e página derivada oculta da chave. Fonte MQ01.ruby-key/item1; recibo MQ01.cell-door; self-switchA de127 derivado, sem espelhamento em variáveis/switches globais. Contrato quests.MQ01/objetivos/recibos existente em arena v1; contêineres no ledger arenaLoot v1, sem segunda bolsa de inventário. Ver QUESTS_M01_16.md. Registros históricos de tags de proteção/saneamento não implementadas foram superados por M01-12/16. Nenhum novo item ou ajuste de inimigo/bônus/custo.
+
+
+## Contratos vigentes da integração M01-18 R02
+
+arenaNarrative v2: modo/fase/seção/cursor/histórico continuam próprios; migração do cursor v1 respeita as divisões22/20 palavras e o acréscimo explicativo do Gate. Apenas a frase reformulada da chave pode reiniciar. Não armazena inventário/atributos duplicados. Saves sem namespace continuam técnicos.
+
+ArenaNarrative.json schema2: sections[14] com id/phase/text/picture; ending/endingPicture. ArenaCharacterVisuals.visuals.mapCell é opcional, legado48×64; novos64×64. ID de identidade estável, aparência reconstruída ao carregar. Materiais de armadura usam centro da célula, não outra identidade salva.
+
+ArenaQuests: treasureMinimumGold5, gateHalfWidth1/gateDepth2 relativos a ArenaDungeon.gateApproach. Recibos container/MQ01.treasure.<eventId> determinam transparência; não são marcadores de respawn. Inventário/ouro continuam nativos; reserva usa o ledger existente. Itens importantes mantêm fonte e recibos separados. Novos contatos236–240 são migrados em mapas serializados antigos. ArenaEncounters.mapVisuals associa inimigo à folha nativa/célula/ground/cadência; suporte por direção do rato não altera colisão ou recursos. ArenaBattleMotion.frame.weaponLayer define frente/trás para cada apoio de arma.

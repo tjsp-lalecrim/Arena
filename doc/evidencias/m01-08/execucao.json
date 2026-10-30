@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "baseline": "develop e1be141 (clean)",
+  "feature": "feature/m01-recursos-progressao",
+  "configuration": "M01-08/R01",
+  "resourceChecks": 619,
+  "identities": 16,
+  "regressions": {
+    "creation": 234,
+    "approvedRaces": 981,
+    "persistence": 27,
+    "laboratory": "PASS native movement/menu/equip/save/load",
+    "stateStore": "PASS",
+    "runtime": "PASS"
+  },
+  "commands": [
+    "node tools/test-resources-progression.cjs",
+    "node tools/test-character-creation.cjs",
+    "node tools/test-approved-races.cjs",
+    "node tools/test-persistence.cjs",
+    "node tools/test-boot.cjs",
+    "node tools/test-state-store.cjs",
+    "node tools/test-runtime.cjs",
+    "node tools/validate-data.cjs",
+    "node tools/validate-resources.cjs",
+    "node --check (3 changed/new plugins)"
+  ],
+  "browser": "156.0.8078.47",
+  "server": "isolated localhost8766; existing8765 preserved",
+  "saves": "Disposable Chrome contexts only; legacy native slot18 created under preceding R05 plugins; no personal saves",
+  "source": "Official Skyrim Legendary Edition manual p.6/PDF7: choice of resource; numeric increment10 is provisional project configuration",
+  "editor": "See editor.json; keyboard/accessibility authoring cycle; browser is not editor evidence",
+  "limits": [
+    "No visual NW.js playtest",
+    "No physical Galaxy A56",
+    "No complete combat/technique catalog or practical final balance",
+    "M01-09 not started"
+  ],
+  "files": [
+    {
+      "file": "js/plugins/Arena_Resources.js",
+      "sha256": "9bc824c797fb42af6e854e446081d9232ad2a35b7d0ac27f8cfbcab7b123ac30"
+    },
+    {
+      "file": "js/plugins/MV_ResourceProgression.js",
+      "sha256": "765d3759e11e9d0f502399ba385ee935f44be6b5b63764243713f1b8fa52ad21"
+    },
+    {
+      "file": "js/plugins/Arena_CharacterCreation.js",
+      "sha256": "6c79623e19627f9970acf8bce39c0bf6f13d9281087cb1ee6954253ff841eecc"
+    },
+    {
+      "file": "js/plugins.js",
+      "sha256": "f7edf5bbafd022e28def30c4318c7d3fe962564b28808c0bf14c841ccbae79f6"
+    },
+    {
+      "file": "data/ArenaProgression.json",
+      "sha256": "91d52bdf688b51885042a12f1b58b8e859b124a226ad40902dfdadab965ae88e"
+    },
+    {
+      "file": "data/ArenaCatalog.json",
+      "sha256": "5974905050b9cd4d00494c20b3ef09634cd65ee0e735d5a5e9555a2fe778932b"
+    },
+    {
+      "file": "data/Map005.json",
+      "sha256": "6d20ad0894d917e9ad58747fdd6f0d8d2f0b0b00b5f82569378c6e5b35798d88"
+    },
+    {
+      "file": "data/Items.json",
+      "sha256": "6c9c8e7c6cbac5580f58c8335f3812b8d37a530b735032577f379c02ee08a5e8"
+    }
+  ]
+}

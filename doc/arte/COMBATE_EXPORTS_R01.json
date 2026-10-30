@@ -1,0 +1,662 @@
+[
+  {
+    "id": "breton-female",
+    "source": "art/masters/combate-r01/breton-female.png",
+    "file": "img/sv_actors/Arena_Combat_breton-female_r01.png",
+    "size": [
+      384,
+      448
+    ],
+    "cell": [
+      128,
+      112
+    ],
+    "ground": 104,
+    "scale": 0.2543352601156069,
+    "frames": [
+      {
+        "index": 0,
+        "sourceRect": [
+          0,
+          0,
+          362,
+          380
+        ],
+        "sourceAlphaBox": [
+          125,
+          24,
+          323,
+          370
+        ],
+        "exportAlphaBox": [
+          44,
+          16,
+          94,
+          104
+        ],
+        "placement": [
+          44,
+          16
+        ],
+        "sha256": "fddd8fd22f052819dcd58c1b335e8a469a280971df06edf83d49ccd0c2a29c9e"
+      },
+      {
+        "index": 1,
+        "sourceRect": [
+          362,
+          0,
+          724,
+          380
+        ],
+        "sourceAlphaBox": [
+          107,
+          21,
+          292,
+          371
+        ],
+        "exportAlphaBox": [
+          44,
+          15,
+          91,
+          104
+        ],
+        "placement": [
+          44,
+          15
+        ],
+        "sha256": "6317a1c5901212e09f7137e6553b32df69741abece2c3ae148c4efefb059f568"
+      },
+      {
+        "index": 2,
+        "sourceRect": [
+          724,
+          0,
+          1086,
+          380
+        ],
+        "sourceAlphaBox": [
+          86,
+          29,
+          281,
+          372
+        ],
+        "exportAlphaBox": [
+          44,
+          17,
+          94,
+          104
+        ],
+        "placement": [
+          44,
+          17
+        ],
+        "sha256": "fde85b6bbab87d572ae02444b78f8cb9e17f97cb2a71a512e745bf839e80f024"
+      },
+      {
+        "index": 3,
+        "sourceRect": [
+          0,
+          380,
+          362,
+          748
+        ],
+        "sourceAlphaBox": [
+          112,
+          13,
+          349,
+          348
+        ],
+        "exportAlphaBox": [
+          44,
+          19,
+          104,
+          104
+        ],
+        "placement": [
+          44,
+          19
+        ],
+        "sha256": "ca3fa3dd4b52b7feb5b4cbc581afa87eb2dc3358371832472060d2fd77da35f7"
+      },
+      {
+        "index": 4,
+        "sourceRect": [
+          362,
+          380,
+          724,
+          748
+        ],
+        "sourceAlphaBox": [
+          43,
+          6,
+          346,
+          348
+        ],
+        "exportAlphaBox": [
+          26,
+          17,
+          103,
+          104
+        ],
+        "placement": [
+          26,
+          17
+        ],
+        "sha256": "32a8643ff3890da4991c8c233e95627d996507b43e10265dfcf4a663e36dafb1"
+      },
+      {
+        "index": 5,
+        "sourceRect": [
+          724,
+          380,
+          1086,
+          748
+        ],
+        "sourceAlphaBox": [
+          88,
+          7,
+          298,
+          349
+        ],
+        "exportAlphaBox": [
+          44,
+          17,
+          97,
+          104
+        ],
+        "placement": [
+          44,
+          17
+        ],
+        "sha256": "8eada65729e9980a0a1b413fd18ca8964ca0bdb663baa6367c051c027f457b11"
+      },
+      {
+        "index": 6,
+        "sourceRect": [
+          0,
+          748,
+          362,
+          1115
+        ],
+        "sourceAlphaBox": [
+          116,
+          23,
+          319,
+          334
+        ],
+        "exportAlphaBox": [
+          44,
+          25,
+          96,
+          104
+        ],
+        "placement": [
+          44,
+          25
+        ],
+        "sha256": "a6d2676d251cfe3e9ed03edb6eb513b530de7be96b97f69d9fe98ffa5e51e014"
+      },
+      {
+        "index": 7,
+        "sourceRect": [
+          362,
+          748,
+          724,
+          1115
+        ],
+        "sourceAlphaBox": [
+          96,
+          37,
+          299,
+          336
+        ],
+        "exportAlphaBox": [
+          38,
+          28,
+          90,
+          104
+        ],
+        "placement": [
+          38,
+          28
+        ],
+        "sha256": "e85f4390425f5a0968d669dc62b618e6799b4e2076a968e0d8fec4d9c1db4b1d"
+      },
+      {
+        "index": 8,
+        "sourceRect": [
+          724,
+          748,
+          1086,
+          1115
+        ],
+        "sourceAlphaBox": [
+          95,
+          9,
+          282,
+          336
+        ],
+        "exportAlphaBox": [
+          44,
+          21,
+          92,
+          104
+        ],
+        "placement": [
+          44,
+          21
+        ],
+        "sha256": "107850a0f0c6110f5024ba240bb57c6b9dfe34a09b5c511aff33efbdce4cec93"
+      },
+      {
+        "index": 9,
+        "sourceRect": [
+          0,
+          1115,
+          362,
+          1448
+        ],
+        "sourceAlphaBox": [
+          47,
+          29,
+          331,
+          261
+        ],
+        "exportAlphaBox": [
+          28,
+          45,
+          100,
+          104
+        ],
+        "placement": [
+          28,
+          45
+        ],
+        "sha256": "f1a29073dde7cd021908e062b6548f35c043c1b7b60b300c0f359ec4941e74b8"
+      },
+      {
+        "index": 10,
+        "sourceRect": [
+          362,
+          1115,
+          724,
+          1448
+        ],
+        "sourceAlphaBox": [
+          13,
+          102,
+          362,
+          266
+        ],
+        "exportAlphaBox": [
+          19,
+          62,
+          108,
+          104
+        ],
+        "placement": [
+          19,
+          62
+        ],
+        "sha256": "3e8ee658114c6a65c30fd5d9d7def88afe7b7462827e5a4fb0b980cdfe529940"
+      },
+      {
+        "index": 11,
+        "sourceRect": [
+          724,
+          1115,
+          1086,
+          1448
+        ],
+        "sourceAlphaBox": [
+          0,
+          159,
+          342,
+          264
+        ],
+        "exportAlphaBox": [
+          20,
+          77,
+          107,
+          104
+        ],
+        "placement": [
+          20,
+          77
+        ],
+        "sha256": "a135ebb20df2b476dab1beeae838e7f0db05c3e837580fdef158d7447d691aab"
+      }
+    ],
+    "sha256": "b39041aac80a8dd54acc79326d415f83a931e73c791a407a4e654ae157ca52af"
+  },
+  {
+    "id": "rat",
+    "source": "art/masters/combate-r01/rat.png",
+    "file": "img/enemies/Arena_Combat_rat_r01.png",
+    "size": [
+      384,
+      320
+    ],
+    "cell": [
+      128,
+      80
+    ],
+    "ground": 74,
+    "scale": 0.26519337016574585,
+    "frames": [
+      {
+        "index": 0,
+        "sourceRect": [
+          0,
+          0,
+          362,
+          380
+        ],
+        "sourceAlphaBox": [
+          18,
+          213,
+          354,
+          364
+        ],
+        "exportAlphaBox": [
+          16,
+          34,
+          105,
+          74
+        ],
+        "placement": [
+          16,
+          34
+        ],
+        "sha256": "c050a1bd6a82ebcd61d54b86db5016b929ec627904397146dc195648aba2f0a6"
+      },
+      {
+        "index": 1,
+        "sourceRect": [
+          362,
+          0,
+          724,
+          380
+        ],
+        "sourceAlphaBox": [
+          21,
+          212,
+          348,
+          361
+        ],
+        "exportAlphaBox": [
+          20,
+          34,
+          107,
+          74
+        ],
+        "placement": [
+          20,
+          34
+        ],
+        "sha256": "b55286c060c1c5eb02db1dc2cca021f3e4d80f2258a62b4106e2d8fac239b12f"
+      },
+      {
+        "index": 2,
+        "sourceRect": [
+          724,
+          0,
+          1086,
+          380
+        ],
+        "sourceAlphaBox": [
+          20,
+          218,
+          344,
+          363
+        ],
+        "exportAlphaBox": [
+          18,
+          36,
+          104,
+          74
+        ],
+        "placement": [
+          18,
+          36
+        ],
+        "sha256": "32fd95f51b76c5e7040c5dcb212869c5ce87717107b8d95f335e2b49577cd96b"
+      },
+      {
+        "index": 3,
+        "sourceRect": [
+          0,
+          380,
+          362,
+          748
+        ],
+        "sourceAlphaBox": [
+          31,
+          170,
+          362,
+          313
+        ],
+        "exportAlphaBox": [
+          25,
+          36,
+          113,
+          74
+        ],
+        "placement": [
+          25,
+          36
+        ],
+        "sha256": "5fab8c76e040d0751750b942bd47b5e2dbcbb2831d7db24ca17d5068ccf0c70d"
+      },
+      {
+        "index": 4,
+        "sourceRect": [
+          362,
+          380,
+          724,
+          748
+        ],
+        "sourceAlphaBox": [
+          0,
+          167,
+          362,
+          313
+        ],
+        "exportAlphaBox": [
+          22,
+          35,
+          118,
+          74
+        ],
+        "placement": [
+          22,
+          35
+        ],
+        "sha256": "7f35735b6d562c9209011bb596f205dc741a06d0b5555554608c09886d33cdc6"
+      },
+      {
+        "index": 5,
+        "sourceRect": [
+          724,
+          380,
+          1086,
+          748
+        ],
+        "sourceAlphaBox": [
+          0,
+          173,
+          342,
+          317
+        ],
+        "exportAlphaBox": [
+          32,
+          36,
+          123,
+          74
+        ],
+        "placement": [
+          32,
+          36
+        ],
+        "sha256": "c9810ef69cfa88dcf71767d5180e10749d6592afe0375dfec8d068c039a85981"
+      },
+      {
+        "index": 6,
+        "sourceRect": [
+          0,
+          748,
+          362,
+          1115
+        ],
+        "sourceAlphaBox": [
+          36,
+          56,
+          318,
+          294
+        ],
+        "exportAlphaBox": [
+          24,
+          11,
+          99,
+          74
+        ],
+        "placement": [
+          24,
+          11
+        ],
+        "sha256": "358b8ac000a7d11da241a14f11ab0f83d53fb02a2a3d19be216fefd0aa4d2899"
+      },
+      {
+        "index": 7,
+        "sourceRect": [
+          362,
+          748,
+          724,
+          1115
+        ],
+        "sourceAlphaBox": [
+          33,
+          136,
+          311,
+          294
+        ],
+        "exportAlphaBox": [
+          28,
+          32,
+          102,
+          74
+        ],
+        "placement": [
+          28,
+          32
+        ],
+        "sha256": "048b2ce26ced2a8acc815b3845f0e6120221041c69005e4d0cee9dcddeb018e9"
+      },
+      {
+        "index": 8,
+        "sourceRect": [
+          724,
+          748,
+          1086,
+          1115
+        ],
+        "sourceAlphaBox": [
+          26,
+          152,
+          343,
+          296
+        ],
+        "exportAlphaBox": [
+          22,
+          36,
+          106,
+          74
+        ],
+        "placement": [
+          22,
+          36
+        ],
+        "sha256": "b1474c567684c90e30f80cf1455d44ef758811b89bffc609c4ed7f965cc252dd"
+      },
+      {
+        "index": 9,
+        "sourceRect": [
+          0,
+          1115,
+          362,
+          1448
+        ],
+        "sourceAlphaBox": [
+          17,
+          70,
+          345,
+          237
+        ],
+        "exportAlphaBox": [
+          20,
+          30,
+          107,
+          74
+        ],
+        "placement": [
+          20,
+          30
+        ],
+        "sha256": "8820513cc4d1b9cd82e462de5a43f31a8067beab420280874ff6a3584c318bee"
+      },
+      {
+        "index": 10,
+        "sourceRect": [
+          362,
+          1115,
+          724,
+          1448
+        ],
+        "sourceAlphaBox": [
+          14,
+          89,
+          349,
+          237
+        ],
+        "exportAlphaBox": [
+          19,
+          35,
+          108,
+          74
+        ],
+        "placement": [
+          19,
+          35
+        ],
+        "sha256": "4c6473c91de6e352be301ca52f4361db191cd412b5be212484064e79db56aa56"
+      },
+      {
+        "index": 11,
+        "sourceRect": [
+          724,
+          1115,
+          1086,
+          1448
+        ],
+        "sourceAlphaBox": [
+          10,
+          126,
+          345,
+          237
+        ],
+        "exportAlphaBox": [
+          19,
+          45,
+          108,
+          74
+        ],
+        "placement": [
+          19,
+          45
+        ],
+        "sha256": "0bcf956d78a0e4e800d30dbf4fbb8512cdf889d0a9ac3f0872c4b0a0a0eb54a7"
+      }
+    ],
+    "sha256": "b3e823dfdecbc01a004e47fb4e168679e898f441b60c69c10b181b563b44a68b"
+  }
+]

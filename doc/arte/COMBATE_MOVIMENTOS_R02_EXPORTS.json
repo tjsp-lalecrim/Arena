@@ -1,0 +1,1982 @@
+[
+  {
+    "participant": "breton.female.base",
+    "motion": "idle",
+    "frame": 0,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      45,
+      27,
+      232,
+      351
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      187,
+      324
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      95,
+      104
+    ],
+    "sha256": "15d814d983be1655a7d4b5f356b2dccae9c9e52752621c4c77f2bae0f0f786fa"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "idle",
+    "frame": 1,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      283,
+      27,
+      467,
+      351
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      184,
+      324
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      94,
+      104
+    ],
+    "sha256": "521e36c021256a0ce891ebf032b690e2f08cc83790cc91e8d37f8fca13fd312c"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "idle",
+    "frame": 2,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      518,
+      26,
+      708,
+      351
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      190,
+      325
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      96,
+      104
+    ],
+    "sha256": "cf59ed864417ecdee95232411b2bfccb86c138abea54ae1abac7de628add56be"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "idle",
+    "frame": 3,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      767,
+      26,
+      961,
+      351
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      194,
+      325
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      97,
+      104
+    ],
+    "sha256": "88ce0718671ec592635dec1f934d87bca1cdcdb7f9d81cffb0e295311c1bc7ee"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "idle",
+    "frame": 4,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      1022,
+      26,
+      1214,
+      351
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      192,
+      325
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      96,
+      104
+    ],
+    "sha256": "27168f455cd1736ac5db5456108d8cd1f8bedcf56dd7b410539d5d8735f7076c"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "idle",
+    "frame": 5,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      1291,
+      27,
+      1482,
+      351
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      191,
+      324
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      96,
+      104
+    ],
+    "sha256": "b67112a66de760166684531a995573de20a9af11db7def9c2cbd474bb3572b30"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "light",
+    "frame": 0,
+    "master": "art/masters/combate-r02/pilot-light.png",
+    "sourceRect": [
+      167,
+      54,
+      455,
+      513
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      288,
+      459
+    ],
+    "densityScale": 0.19172113289760348,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      99,
+      104
+    ],
+    "sha256": "768ecb046408931c6d7b8678a30fd3719478e56f91e20985d4edb9ffc4a87c33"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "light",
+    "frame": 1,
+    "master": "art/masters/combate-r02/pilot-light.png",
+    "sourceRect": [
+      616,
+      54,
+      918,
+      513
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      302,
+      459
+    ],
+    "densityScale": 0.19172113289760348,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      102,
+      104
+    ],
+    "sha256": "54e9f4ed1ffd35a87832c4283cea959f32f08d803404543266322add90720ce9"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "light",
+    "frame": 2,
+    "master": "art/masters/combate-r02/pilot-light.png",
+    "sourceRect": [
+      1079,
+      63,
+      1457,
+      513
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      378,
+      450
+    ],
+    "densityScale": 0.19172113289760348,
+    "placement": [
+      30,
+      18
+    ],
+    "alphaBox": [
+      30,
+      18,
+      102,
+      104
+    ],
+    "sha256": "c94802c40a102784e86ea93355ce2749333b319b3d26462cb6b8ddb2cea5c7f1"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "light",
+    "frame": 3,
+    "master": "art/masters/combate-r02/pilot-light.png",
+    "sourceRect": [
+      82,
+      538,
+      496,
+      982
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      414,
+      444
+    ],
+    "densityScale": 0.19172113289760348,
+    "placement": [
+      24,
+      19
+    ],
+    "alphaBox": [
+      24,
+      19,
+      103,
+      104
+    ],
+    "sha256": "41face5df9be714d10c96f0627c296baf94534178606e3fb909ecfabc9d9f8f8"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "light",
+    "frame": 4,
+    "master": "art/masters/combate-r02/pilot-light.png",
+    "sourceRect": [
+      650,
+      535,
+      961,
+      982
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      311,
+      447
+    ],
+    "densityScale": 0.19172113289760348,
+    "placement": [
+      43,
+      18
+    ],
+    "alphaBox": [
+      43,
+      18,
+      103,
+      104
+    ],
+    "sha256": "a98ca48e89cfd738706a8244d1434c37c7fa9f6cb88e7d1894287062f0e20937"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "light",
+    "frame": 5,
+    "master": "art/masters/combate-r02/pilot-light.png",
+    "sourceRect": [
+      1153,
+      530,
+      1442,
+      982
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      289,
+      452
+    ],
+    "densityScale": 0.19172113289760348,
+    "placement": [
+      44,
+      17
+    ],
+    "alphaBox": [
+      44,
+      17,
+      99,
+      104
+    ],
+    "sha256": "355f67c01e13adf84adcd4b7edeb1f3b846b1c9fdd751ad1e34b42e49c5b4cc1"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "heavy",
+    "frame": 0,
+    "master": "art/masters/combate-r02/pilot-heavy.png",
+    "sourceRect": [
+      147,
+      46,
+      466,
+      515
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      319,
+      469
+    ],
+    "densityScale": 0.18763326226012794,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      104,
+      104
+    ],
+    "sha256": "7bec73381327b0b3837af1caeff5d18d860a1ae6e13d2e0805a13cdaecd43c67"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "heavy",
+    "frame": 1,
+    "master": "art/masters/combate-r02/pilot-heavy.png",
+    "sourceRect": [
+      620,
+      23,
+      953,
+      515
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      333,
+      492
+    ],
+    "densityScale": 0.18763326226012794,
+    "placement": [
+      44,
+      12
+    ],
+    "alphaBox": [
+      44,
+      12,
+      106,
+      104
+    ],
+    "sha256": "16d1fd23b66594f81021b7d1b30dae74cb8aaec2b6fa2fd06f5f611cb68f40bb"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "heavy",
+    "frame": 2,
+    "master": "art/masters/combate-r02/pilot-heavy.png",
+    "sourceRect": [
+      1119,
+      56,
+      1456,
+      515
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      337,
+      459
+    ],
+    "densityScale": 0.18763326226012794,
+    "placement": [
+      44,
+      18
+    ],
+    "alphaBox": [
+      44,
+      18,
+      107,
+      104
+    ],
+    "sha256": "da55e1f42fc103125cfc70e5a26b0b11e2436787e0f500d5ab3172b5471491b5"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "heavy",
+    "frame": 3,
+    "master": "art/masters/combate-r02/pilot-heavy.png",
+    "sourceRect": [
+      133,
+      606,
+      541,
+      1005
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      408,
+      399
+    ],
+    "densityScale": 0.18763326226012794,
+    "placement": [
+      35,
+      29
+    ],
+    "alphaBox": [
+      35,
+      29,
+      112,
+      104
+    ],
+    "sha256": "35f28efa2a961534cac219f845397a52ad5ca9d737f0bc4bba9833b613fbd445"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "heavy",
+    "frame": 4,
+    "master": "art/masters/combate-r02/pilot-heavy.png",
+    "sourceRect": [
+      638,
+      561,
+      984,
+      1006
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      346,
+      445
+    ],
+    "densityScale": 0.18763326226012794,
+    "placement": [
+      44,
+      21
+    ],
+    "alphaBox": [
+      44,
+      21,
+      109,
+      104
+    ],
+    "sha256": "06881a2a9cd362631a3b6c479c5e4b7626c38f203e4773ea3a869455a4e912e1"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "heavy",
+    "frame": 5,
+    "master": "art/masters/combate-r02/pilot-heavy.png",
+    "sourceRect": [
+      1154,
+      553,
+      1471,
+      1009
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      317,
+      456
+    ],
+    "densityScale": 0.18763326226012794,
+    "placement": [
+      44,
+      18
+    ],
+    "alphaBox": [
+      44,
+      18,
+      103,
+      104
+    ],
+    "sha256": "517980aea0a95381bedf38ff79696e46f398334c9bafff51352d4f8911f7af15"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "cast",
+    "frame": 0,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      14,
+      55,
+      251,
+      490
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      237,
+      435
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      92,
+      104
+    ],
+    "sha256": "89ff04e6e06b851f825f1b3fad6769b57ec304b840ee1806f0149b7cb76e52ff"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "cast",
+    "frame": 1,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      283,
+      54,
+      521,
+      489
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      238,
+      435
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      92,
+      104
+    ],
+    "sha256": "ec1936853c490f5119c5090c680d1c8d3b710bfe5da8cbc2944f6cf6a9ecf1e1"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "cast",
+    "frame": 2,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      546,
+      51,
+      785,
+      490
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      239,
+      439
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      43,
+      15
+    ],
+    "alphaBox": [
+      43,
+      15,
+      91,
+      104
+    ],
+    "sha256": "ae4fcfab0764500ee69203546606f963b608d7a5a89a6ca9e364298f05663d9b"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "cast",
+    "frame": 3,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      759,
+      50,
+      1066,
+      490
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      307,
+      440
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      30,
+      15
+    ],
+    "alphaBox": [
+      30,
+      15,
+      92,
+      104
+    ],
+    "sha256": "f3730deeee1837b06743e70703873ba4e8273deeafd3ca8f7dd70e57c9b99cb0"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "cast",
+    "frame": 4,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      1091,
+      52,
+      1320,
+      490
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      229,
+      438
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      43,
+      15
+    ],
+    "alphaBox": [
+      43,
+      15,
+      89,
+      104
+    ],
+    "sha256": "df2bef11fc240fdb5ea4f0c30cbe60229523f771836a99ef075829c58f1ec018"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "cast",
+    "frame": 5,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      1323,
+      51,
+      1535,
+      489
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      212,
+      438
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      15
+    ],
+    "alphaBox": [
+      44,
+      15,
+      87,
+      104
+    ],
+    "sha256": "5ea91bda88eafb449e1a0209291173c3a041f9e0ed05cb030decf5940f26d353"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "item",
+    "frame": 0,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      14,
+      544,
+      251,
+      981
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      237,
+      437
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      92,
+      104
+    ],
+    "sha256": "554a11ee7819557833be2cabebd29b072637d17f1f214997f05d28d9b3111028"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "item",
+    "frame": 1,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      283,
+      559,
+      521,
+      981
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      238,
+      422
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      19
+    ],
+    "alphaBox": [
+      44,
+      19,
+      92,
+      104
+    ],
+    "sha256": "7286005f4e20c25c28e74aa18535482c26a194d91b3ee7520a16f4c186ea20d3"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "item",
+    "frame": 2,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      552,
+      544,
+      785,
+      981
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      233,
+      437
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      16
+    ],
+    "alphaBox": [
+      44,
+      16,
+      91,
+      104
+    ],
+    "sha256": "f3680b4a88e4c48b0204536960f7bd9eea5760fb587b9c34a310780e415ce37a"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "item",
+    "frame": 3,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      808,
+      544,
+      1044,
+      982
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      236,
+      438
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      15
+    ],
+    "alphaBox": [
+      44,
+      15,
+      92,
+      104
+    ],
+    "sha256": "72eace1efe53eb86a16d1430659e72e1f68d611a6ee922915935026f66349be9"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "item",
+    "frame": 4,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      1090,
+      555,
+      1321,
+      981
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      231,
+      426
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      18
+    ],
+    "alphaBox": [
+      44,
+      18,
+      91,
+      104
+    ],
+    "sha256": "94bdb5693ddb376a3c1054209e03b5cfe0a3f655a980a285b43b8f1cb7a7eee1"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "item",
+    "frame": 5,
+    "master": "art/masters/combate-r02/pilot-magic-item.png",
+    "sourceRect": [
+      1322,
+      542,
+      1535,
+      982
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      213,
+      440
+    ],
+    "densityScale": 0.20229885057471264,
+    "placement": [
+      44,
+      15
+    ],
+    "alphaBox": [
+      44,
+      15,
+      87,
+      104
+    ],
+    "sha256": "b3c02aa57b08aad6b2e28fa84e0804966b41ca4b41e1c7614c0cda83d88a2447"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "hurt",
+    "frame": 0,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      45,
+      372,
+      231,
+      693
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      186,
+      321
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      17
+    ],
+    "alphaBox": [
+      44,
+      17,
+      95,
+      104
+    ],
+    "sha256": "10b3e7523b4d084c36ff985c679513fd990bce90889f5581815de4a9f19a63b7"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "hurt",
+    "frame": 1,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      281,
+      374,
+      484,
+      694
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      203,
+      320
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      17
+    ],
+    "alphaBox": [
+      44,
+      17,
+      99,
+      104
+    ],
+    "sha256": "00c607a2d723e02074091069298f6e4244bf23a66928022b82f88d51d4935c14"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "hurt",
+    "frame": 2,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      540,
+      402,
+      734,
+      693
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      194,
+      291
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      25
+    ],
+    "alphaBox": [
+      44,
+      25,
+      97,
+      104
+    ],
+    "sha256": "da3cdd0a7359f8e7f0d9dad3b87850a5f1974b2eb4f6ff2f278f0b214a565e65"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "hurt",
+    "frame": 3,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      783,
+      386,
+      987,
+      693
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      204,
+      307
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      21
+    ],
+    "alphaBox": [
+      44,
+      21,
+      99,
+      104
+    ],
+    "sha256": "d67d943f663e9a5a321ba590096d3c2dce129a3c1b4945162f267de97277a313"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "hurt",
+    "frame": 4,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      1030,
+      371,
+      1230,
+      693
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      200,
+      322
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      17
+    ],
+    "alphaBox": [
+      44,
+      17,
+      98,
+      104
+    ],
+    "sha256": "0d3e15cc14c1494c92651a4abd4d9a46deda775d23fef7dddbaa238e21390d1c"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "hurt",
+    "frame": 5,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      1291,
+      371,
+      1483,
+      693
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      192,
+      322
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      17
+    ],
+    "alphaBox": [
+      44,
+      17,
+      96,
+      104
+    ],
+    "sha256": "ad7cd9fc0a03d201f688dc4c77c1fe9496e56f311a8994013bbb578014d2f27a"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "defeat",
+    "frame": 0,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      42,
+      704,
+      229,
+      1011
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      187,
+      307
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      44,
+      21
+    ],
+    "alphaBox": [
+      44,
+      21,
+      95,
+      104
+    ],
+    "sha256": "67478b8ee2587c1818ff50e13df693de2c4333461b481e0c2bd74e8b2e774f80"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "defeat",
+    "frame": 1,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      282,
+      721,
+      461,
+      1011
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      179,
+      290
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      42,
+      25
+    ],
+    "alphaBox": [
+      42,
+      25,
+      91,
+      104
+    ],
+    "sha256": "2ae37c221f3f19e3266ea4313f571d620e31962aa1276d38937149708f78a7d0"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "defeat",
+    "frame": 2,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      512,
+      793,
+      717,
+      1008
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      205,
+      215
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      42,
+      46
+    ],
+    "alphaBox": [
+      42,
+      46,
+      98,
+      104
+    ],
+    "sha256": "90c10fef86b33e0c5475a5ee3c5041d07c80f97a3bb9301c6bdc63e84aafe094"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "defeat",
+    "frame": 3,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      734,
+      855,
+      971,
+      1008
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      237,
+      153
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      32,
+      62
+    ],
+    "alphaBox": [
+      32,
+      62,
+      96,
+      104
+    ],
+    "sha256": "69abf19e70731f929aa64f7f6313e6451b4f8c4ecd06b792269b67758164a00d"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "defeat",
+    "frame": 4,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      967,
+      890,
+      1244,
+      996
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      277,
+      106
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      26,
+      75
+    ],
+    "alphaBox": [
+      26,
+      75,
+      101,
+      104
+    ],
+    "sha256": "af34fa02c430f2962b48ab189953d0fae74de16b88f9120d9f50eac4082148a6"
+  },
+  {
+    "participant": "breton.female.base",
+    "motion": "defeat",
+    "frame": 5,
+    "master": "art/masters/combate-r02/pilot-support.png",
+    "sourceRect": [
+      1244,
+      921,
+      1533,
+      1004
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      289,
+      83
+    ],
+    "densityScale": 0.2716049382716049,
+    "placement": [
+      25,
+      81
+    ],
+    "alphaBox": [
+      25,
+      81,
+      103,
+      104
+    ],
+    "sha256": "4056601d32f86ce763c1793deb141595e58e6adf534233a237f6f9b23daa6b07"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "idle",
+    "frame": 0,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      12,
+      124,
+      264,
+      247
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      252,
+      123
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      18,
+      33
+    ],
+    "alphaBox": [
+      18,
+      33,
+      103,
+      74
+    ],
+    "sha256": "cc993378a085586b670b12adf10446277948d44d793d8a30675c682809c6dbd8"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "idle",
+    "frame": 1,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      273,
+      120,
+      510,
+      245
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      237,
+      125
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      20,
+      32
+    ],
+    "alphaBox": [
+      20,
+      32,
+      100,
+      74
+    ],
+    "sha256": "e5742050c5c99a387dd0fad45e6f568b23dd879fbedd356d74fe3a433740bf79"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "idle",
+    "frame": 2,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      529,
+      118,
+      765,
+      245
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      236,
+      127
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      22,
+      31
+    ],
+    "alphaBox": [
+      22,
+      31,
+      101,
+      74
+    ],
+    "sha256": "6bb1228fbe6e4b6b5aeb7212f02f12836af209d68435b3b7762287edbd686a9d"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "idle",
+    "frame": 3,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      779,
+      123,
+      1024,
+      246
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      245,
+      123
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      20,
+      33
+    ],
+    "alphaBox": [
+      20,
+      33,
+      103,
+      74
+    ],
+    "sha256": "5e98ae786b10239ac7abff11fc41e3ccf6cb9f613e639687a784394620cb72f6"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "idle",
+    "frame": 4,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1029,
+      125,
+      1278,
+      247
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      249,
+      122
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      21,
+      33
+    ],
+    "alphaBox": [
+      21,
+      33,
+      105,
+      74
+    ],
+    "sha256": "ddc9c110a74dd1fd32820097bafb1012eb4c825aa6fa7c52217a90483f1c35f0"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "idle",
+    "frame": 5,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1280,
+      126,
+      1527,
+      247
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      247,
+      121
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      18,
+      33
+    ],
+    "alphaBox": [
+      18,
+      33,
+      101,
+      74
+    ],
+    "sha256": "5767a9c6e22f57deea201648d9505419b4e48b5a6f5fc284dae2094bd7bed3d0"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "bite",
+    "frame": 0,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      12,
+      352,
+      262,
+      479
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      250,
+      127
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      18,
+      31
+    ],
+    "alphaBox": [
+      18,
+      31,
+      102,
+      74
+    ],
+    "sha256": "898e591233c970ceae973ea1e8b9eec9b78c94b77dc575703dbc6482efaa8cb1"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "bite",
+    "frame": 1,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      261,
+      357,
+      503,
+      480
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      242,
+      123
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      19,
+      33
+    ],
+    "alphaBox": [
+      19,
+      33,
+      101,
+      74
+    ],
+    "sha256": "00e35f04c5c5d627cb1c931397f39cc73fef88b9ebb9af3c080ea50374bc33bc"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "bite",
+    "frame": 2,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      509,
+      354,
+      764,
+      479
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      255,
+      125
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      26,
+      32
+    ],
+    "alphaBox": [
+      26,
+      32,
+      112,
+      74
+    ],
+    "sha256": "88b76b24a538b973340bfdd248f55f856f37c562a07d4001300d399b8768312b"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "bite",
+    "frame": 3,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      777,
+      358,
+      1062,
+      482
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      285,
+      124
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      26,
+      32
+    ],
+    "alphaBox": [
+      26,
+      32,
+      122,
+      74
+    ],
+    "sha256": "91b8013c3358ffa809588f927d0b4a9b19c899d7f15da285ca38ca56ddfe6bc2"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "bite",
+    "frame": 4,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1073,
+      366,
+      1293,
+      483
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      220,
+      117
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      24,
+      35
+    ],
+    "alphaBox": [
+      24,
+      35,
+      98,
+      74
+    ],
+    "sha256": "fd98c8376a583a544e8ae4b5b968c8965ada490737fc17d7a681686215245292"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "bite",
+    "frame": 5,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1279,
+      356,
+      1528,
+      482
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      249,
+      126
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      18,
+      32
+    ],
+    "alphaBox": [
+      18,
+      32,
+      102,
+      74
+    ],
+    "sha256": "c63aa8ae4109c225e69d55d48a0c19ed46e09ca91889bc5f96368705d22560d5"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "hurt",
+    "frame": 0,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      13,
+      616,
+      264,
+      740
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      251,
+      124
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      18,
+      32
+    ],
+    "alphaBox": [
+      18,
+      32,
+      103,
+      74
+    ],
+    "sha256": "5926ea5fc92e8e513657f23a89a7d281670f766d9c2a4fa3f2a5e8969352333e"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "hurt",
+    "frame": 1,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      263,
+      597,
+      489,
+      740
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      226,
+      143
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      12,
+      26
+    ],
+    "alphaBox": [
+      12,
+      26,
+      88,
+      74
+    ],
+    "sha256": "86273db13a1cbb2431970d761a070aeb4e7008b2327b5a90f93293c91a223425"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "hurt",
+    "frame": 2,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      527,
+      544,
+      767,
+      742
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      240,
+      198
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      19,
+      7
+    ],
+    "alphaBox": [
+      19,
+      7,
+      100,
+      74
+    ],
+    "sha256": "798a748edd4825a65ade65dbfd6190c8b4f86f4b1b6248b819b644c0a0b93e17"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "hurt",
+    "frame": 3,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      779,
+      596,
+      1007,
+      740
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      228,
+      144
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      10,
+      25
+    ],
+    "alphaBox": [
+      10,
+      25,
+      87,
+      74
+    ],
+    "sha256": "7bb93b3b5da60f52e1651615e0d5cc45f605cdc0828f122cec84a011cb51a1d5"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "hurt",
+    "frame": 4,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1031,
+      612,
+      1281,
+      741
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      250,
+      129
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      22,
+      31
+    ],
+    "alphaBox": [
+      22,
+      31,
+      106,
+      74
+    ],
+    "sha256": "832ff960866660955fca52404fe43699641106fba9259b23fbc550f6b7fd1781"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "hurt",
+    "frame": 5,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1279,
+      615,
+      1528,
+      741
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      249,
+      126
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      18,
+      32
+    ],
+    "alphaBox": [
+      18,
+      32,
+      102,
+      74
+    ],
+    "sha256": "9ebe2474bca7e5c6bf532797c8ea289920c25d2a826cf5bc0f196b9763f9bcee"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "defeat",
+    "frame": 0,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      11,
+      825,
+      258,
+      948
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      247,
+      123
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      19,
+      33
+    ],
+    "alphaBox": [
+      19,
+      33,
+      102,
+      74
+    ],
+    "sha256": "960d671d219233faf282f206d2e246f9866dd794e631cf9ee6e28e9f6a7e18a8"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "defeat",
+    "frame": 1,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      263,
+      828,
+      510,
+      954
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      247,
+      126
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      17,
+      32
+    ],
+    "alphaBox": [
+      17,
+      32,
+      100,
+      74
+    ],
+    "sha256": "9e01720f49f71577f95ad594a647b78f9d1d66cd7f21d80454644e527a2ececa"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "defeat",
+    "frame": 2,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      516,
+      834,
+      760,
+      959
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      244,
+      125
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      22,
+      32
+    ],
+    "alphaBox": [
+      22,
+      32,
+      104,
+      74
+    ],
+    "sha256": "5372fdbc3633b4589b99b10e169d27d09461ca516d529d452062200ea02f768f"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "defeat",
+    "frame": 3,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      770,
+      840,
+      1011,
+      957
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      241,
+      117
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      23,
+      35
+    ],
+    "alphaBox": [
+      23,
+      35,
+      104,
+      74
+    ],
+    "sha256": "ea986c7c0d8b45d397690c3688f253497e561f3dfaa4d581aff646b7218bdfef"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "defeat",
+    "frame": 4,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1018,
+      849,
+      1269,
+      954
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      251,
+      105
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      21,
+      39
+    ],
+    "alphaBox": [
+      21,
+      39,
+      106,
+      74
+    ],
+    "sha256": "16d8b6db696b0aaf0c0d79c3638f07113a4be32eb2299d81aeb1b92f676fc1d3"
+  },
+  {
+    "participant": "enemy.1",
+    "motion": "defeat",
+    "frame": 5,
+    "master": "art/masters/combate-r02/rat.png",
+    "sourceRect": [
+      1277,
+      859,
+      1527,
+      952
+    ],
+    "sourceAlphaBox": [
+      0,
+      0,
+      250,
+      93
+    ],
+    "densityScale": 0.3368421052631579,
+    "placement": [
+      22,
+      43
+    ],
+    "alphaBox": [
+      22,
+      43,
+      106,
+      74
+    ],
+    "sha256": "eb2281bdb0935ff46759dac51fdc1f2f1c1e5c553a15573c6275c94d480a29e9"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "who": "enemy.2",
+  "browser": "156.0.8078.47",
+  "native": "MV1.6.1 Scene_Battle",
+  "fixture": "RNG0.5/variance0/enemy HP+4000 in memory only",
+  "profileVersion": "r03-expansion",
+  "trace": {
+    "motions": {
+      "enemy.idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "enemy.strike": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.hurt": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "actor.light": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "enemy.hurt": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "enemy.defeat": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "impacts": [
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "strike",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 5,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        }
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "sample": {
+          "key": "strike",
+          "index": 3,
+          "tick": 17,
+          "total": 33,
+          "done": false,
+          "impactTick": 17,
+          "released": false,
+          "weaponId": null
+        }
+      },
+      {
+        "actor": true,
+        "skill": 1,
+        "sample": {
+          "key": "light",
+          "index": 3,
+          "tick": 13,
+          "total": 26,
+          "done": false,
+          "impactTick": 13,
+          "released": false,
+          "weaponId": 1
+        }
+      }
+    ],
+    "uses": [
+      2,
+      5,
+      1
+    ]
+  },
+  "errors": [],
+  "ownerApproval": "No new variant approval inferred from approved R02 pilot"
+}

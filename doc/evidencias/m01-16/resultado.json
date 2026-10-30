@@ -1,0 +1,40 @@
+{
+  "browser": "156.0.8078.48",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "new game: quest not started,no early key or active source",
+    "created Argonian female enters with her identity and110Vigor preserved;no mandatory pilot replacement",
+    "real M15 save migrates by safe unstarted checkpoint;47HP,3potions,identity preserved; no key use invented",
+    "exploration entry bootstraps stage10 with locked original door and active key source; no intro/cutscene fabricated",
+    "native out-of-order Gate contact cannot complete quest/area",
+    "native locked door without key refuses advancement and consumption",
+    "native adjacent Enter grants exactly1 key,stage20,hidden source; repeat does not regrant",
+    "PT-BR journal stage20/history opens and cancels without inventory/resources mutation; future stages not selected",
+    "missing key save/load retains stage20,blocks door,reactivates source without automatic grant",
+    "native recovery grants only missing1 and preserves completed obtain objective,no EXP/gold replay",
+    "unique key duplicates normalized only by ID1;important item remains protected",
+    "native door checks exit item and entry receipt,consumes1 exactly,permanently opens and reaches30",
+    "consumption/load/reentry never recovers spent key or duplicates receipt;post-consumption duplicate removed,cell cannot relock",
+    "quest actions and recovery change no HP/MP/Vigor,EXP,gold,gear or unrelated inventory",
+    "optional native treasure source uses unique existing loot ledger,one rare gear max,no EXP,repeat/load no extra reward",
+    "native menu Diario,keyboard scroll and mouse Voltar leave quest/inventory unchanged",
+    "native Gate completes40/area once,does not end demo or re-spawn while inside; completion persists",
+    "real exit after MQ01 completion triggers common respawn integration;reentry keeps quest complete and source retired",
+    "loss at stage20 entry recheck rolls back stage/source/inventory atomically;source remains recoverable",
+    "exception during native grant rolls back quest/source/item without duplicate recovery",
+    "missing receipt at next-stage entry rolls back key consumption/stage/door;valid retry remains possible",
+    "source capacity failure keeps missing item recoverable and does not increment grants",
+    "generic legitimate delivery receipt fixture is recognized after load,not recreated;actual MQ01 uses consumption"
+  ],
+  "errors": [],
+  "isolation": "Disposable Chrome context,saves18/19; real preceding M15 composition fixture; locate for event setup,actual keyboard interactions; faults/RNG/enemy defeated only in memory",
+  "pending": [
+    "owner quest/journal review",
+    "native MV authoring of M16 plugins/events",
+    "physical Galaxy A56 at integration",
+    "M01-18 intro/ending presentation"
+  ]
+}

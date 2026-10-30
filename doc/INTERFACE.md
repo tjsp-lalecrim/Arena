@@ -1,0 +1,136 @@
+## Integração M01-18
+
+M01-18: leitura por páginas estáveis de palavras, Voltar/Salvar/Continuar e F01 com retorno ao título, reflow mínimo640×400, botões44px. Guards de soltura evitam avanço/salvamento/ativação seguinte por comando mantido; sem novas notificações de quest. Título limita a janela a6 linhas com rolagem nativa para preservar acessos técnicos e manter Novo Jogo visível. NARRATIVA_M01_18.md registra testes e avaliação visual ainda pendente.
+
+## M01-17 R03 — proteção de entrada
+
+O responsável aprovou a correção visual R02 no estado disponívelbd108c5. Essa composição permanece inalterada. R03 adiciona somente intervalo de menu configurável500ms compartilhado pelas poções e exigência de nova pressão após soltura. Indisponibilidade breve indicada nos slots, sem mensagens/confirmadores, sem impedir navegação ou animação. Nenhum uso fica enfileirado. Não é regra de combate. Avaliação manual da proteção nova permanece pendente; detalhes em PROTECAO_POCOES_M01_17_R03.md.
+
+## M01-17 R02 — recuperação visual no inventário
+
+Quadro existente do personagem com nome, três barras rotuladas/valores atuais e máximos, seis atributos em duas colunas e material da armadura. Limites336×200 preservados; fontes dos atributos16 e nome20 mantidas, rótulos das barras18. Miniaturas redundantes saem somente desse quadro para liberar espaço; aparência no mapa/combate permanece intacta. Sem novo painel/popup. Quantidade atualizada no slot e feedback de recuperação exclusivamente nas barras, com transição240ms. Mensagens de impedimento e descrições estáticas permanecem. Aplicar a diretiva de feedback sem redundância de NAV01.
+
+Responsável confirmou funcionamento do uso de poções no estado disponível35ba624, sem tipos/roteiro/ambiente informados; não atribuir confirmação do descanso ou aprovação visual desta R02. Relatório em REVISAO_FEEDBACK_POCOES_M01_17_R02.md; avaliação visual da revisão pendente.
+
+# Interface e menus
+
+## M01-12 R02 — apresentação confirmada para implementação
+
+Slots equipados exibem identificação, ícone e nome, com vazios discretos. Confirmação de equipamento usa Atual/Selecionado e tabela de atributos finais: Atributo | Atual | Após a troca | Diferença, incluindo sinais positivos/negativos e0 sem depender apenas de cor. Prévia e cancelamento não alteram estado; somente confirmar efetiva. Fundo bloqueado durante o modal. Documentação/evidências em INVENTARIO_E_EQUIPAMENTOS_M01_12.md, sem antecipar aprovação estética da R02.
+
+Estado operacional M01-12: M01-11 integrado/publicado em develop6e59882 após aprovação do combate disponível em25672fe (ambiente/casos não detalhados). Feature/m01-inventario-equipamentos implementa inventário, troca/arrasto/prévia/remoção e aparência derivada mínima por couro/malha. M01-12 permanece em revisão, sem encerramento artístico; ler INVENTARIO_E_EQUIPAMENTOS_M01_12.md. Favoritos são melhoria futura não implementada. Sem merge da nova feature ou avanço para M01-13; A56 físico/playtest visual NW.js pendentes.
+
+Histórico da direção M01-10 R02 para **M01-11, não implementada**: capturas do responsável orientam campo mais amplo/cenário visível, barras próximas aos participantes, comandos por ícones, habilidades/itens em slots com custos/quantidades/descrições e barra de atalhos. Aplicar dark fantasy/identidade Arena; não copiar personagens, assets, valores ou regras do exemplo. Não incluir Recuar/fuga ou talentos raciais ativos por aparecerem nos prints, nem fixar automaticamente oito slots. Referências locais ignoradas e consulta pontual não normativa documentadas em CONSULTA_PONTUAL_INTERFACE_M01_10_R02.md. Nenhuma nova UI de slots foi implementada nesta rodada.
+
+## Direção confirmada
+
+O menu de jogo e o menu de batalha serão refatorados para priorizar a organização em slots, com representação por ícones, descrições e quantidades onde forem cabíveis. Jogos de MMORPG são a referência para essa organização visual e interação.
+
+Essa referência não acrescenta multijogador ao escopo. Exemplos de jogos estão disponíveis em doc/prints; selecionar e registrar os aspectos usados. Composição das telas, quantidade de slots e controles serão detalhados na implementação.
+
+## Plataformas e controles
+
+O alvo obrigatório atual é navegador desktop, inicialmente Chrome/teclado/mouse. Preservar o suporte por toque existente. Adaptações de navegação/layout mobile, paisagem/fullscreen quando suportados e APK pertencem a [MOBILE-01](MOBILE_01.md), com data a planejar; nenhuma refatoração mobile é autorizada por esta decisão. Funcionamento parcial ou emulação não certificam suporte mobile pleno.
+
+Projetar a interface de forma que ações essenciais não dependam exclusivamente de hover. Refinar o comportamento em telas menores durante a implementação, sem presumir empacotamento como aplicativo nativo.
+
+Dispositivo físico de referência do MOBILE-01: Samsung Galaxy A56. Nos testes desse marco, registrar navegador/runtime, versão do sistema, orientação, build e resultados, reutilizando evidências anteriores. Não exigir aparelho ou publicação Pages a cada entrega desktop. A tela inteira deve adaptar a apresentação ao espaço disponível, mantendo proporções e legibilidade. A resolução lógica interna e a escala serão escolhas técnicas validadas em teste; não igualar automaticamente a resolução interna à resolução física do aparelho. Considerar áreas seguras e limitações do navegador ao solicitar fullscreen.
+
+Idioma inicial de menus, diálogos e diário: somente Português Brasileiro.
+
+## Aplicação nos menus
+
+Apresentar itens, habilidades e equipamentos em slots quando essa organização ajudar o jogador a localizar, comparar e usar o conteúdo. Priorizar ícones reconhecíveis, com nome e descrição acessíveis na seleção ou no foco. Não depender exclusivamente de passar o mouse para revelar informações essenciais.
+
+Exibir quantidades para conteúdos contabilizáveis, como pilhas de itens, sem usar contadores sem significado em comandos ou habilidades. Usar o padrão compatível do MV para contagem e limites iniciais, documentando adaptações apenas quando necessárias aos requisitos; validar a coleta automática nos limites do inventário.
+
+Na batalha, integrar essa linguagem visual à barra de atalhos descrita em COMBATE.md. A representação em slots deve respeitar custos, disponibilidade, seleção de alvo e regras de uso. O detalhamento visual de indisponibilidade será definido na implementação; o estado precisa ser compreensível para o jogador.
+
+Como orientação de implementação, distinguir slot vazio, conteúdo selecionado e conteúdo indisponível. Manter legíveis ícones, descrições, quantidades e barras de recursos, em coerência com a direção dark fantasy.
+
+## Menu de equipamentos: arrastar e soltar
+
+O menu de equipamentos deve permitir arrastar equipamentos do inventário para os slots de equipamento do personagem, seguindo a referência de interação dos MMORPGs. Esta funcionalidade está confirmada para equipamentos; não implica arrastar e soltar em todos os demais menus.
+
+Com teclado e mouse como prioridade inicial, iniciar o arrasto com o mouse e concluir a tentativa ao soltar sobre um slot. Indicar visualmente o equipamento arrastado e os destinos compatíveis. A compatibilidade deve considerar o tipo de slot e as regras de uso simultâneo aprovadas, sem reintroduzir restrições por raça ou classe.
+
+Ao soltar em um destino válido, equipar o item e atualizar inventário, ícones e atributos exibidos. No caso de armaduras, atualizar também o sprite do jogador conforme DIRECAO_DE_ARTE.md; a mesma atualização deve ocorrer por seleção e confirmação. Se o slot já estiver ocupado, aplicar a troca conforme as regras de equipamento, devolvendo o item anterior ao inventário. Uma tentativa inválida, um cancelamento ou uma soltura fora dos slots não deve alterar o equipamento, perder itens ou duplicá-los.
+
+Revalidar a disponibilidade do item e a compatibilidade do destino ao concluir a operação. A ação deve ocorrer uma única vez, sem equipar durante a simples passagem do cursor sobre um slot.
+
+Manter uma alternativa de seleção e confirmação para navegação por teclado, coerente com a regra de acesso rápido. Para mobile, detalhar e validar o gesto de toque e arrasto e a alternativa por seleção antes de declarar esse suporte concluído; evitar depender de hover para informações essenciais.
+
+Arrastar para remover equipamentos, trocar diretamente entre slots e configurar atalhos por arrasto permanecem possibilidades a avaliar, não requisitos desta decisão.
+
+## Diálogos e ilustrações
+
+Priorizar diálogos em texto e ilustrações bem detalhadas, sem geração de vozes. Organizar a apresentação para que o texto continue legível e acessível durante a navegação, sem sobreposição indevida pelas ilustrações. Validar o enquadramento e a leitura nas telas de destino, conforme DIRETRIZES_DE_ADAPTACAO.md.
+
+## Diário de quests
+
+O diário seguirá a direção de QUESTS.md: organização moderna inspirada em Skyrim e preservação das descrições originais sempre que possível. Priorizar leitura clara e acesso rápido às informações da quest; definir a composição visual sem forçar textos longos a uma representação somente por ícones.
+
+## Mapa e bússola em avaliação
+
+Consultar MAPA_E_BUSSOLA.md para a avaliação de mapa local, minimapa e radar de objetivos. A inclusão ainda não está confirmada. Se adotados, respeitar a legibilidade em mobile, os controles acessíveis e as regras de conhecimento do jogador, sem sobrecarregar a interface.
+
+## Proteção de itens importantes
+
+Itens obrigatórios devem aparecer como itens importantes e não oferecer descarte ou venda comuns. Aplicar a proteção também no processamento da ação, não apenas na apresentação dos comandos. Entrega ou consumo de quest deve seguir a regra específica em QUESTS.md.
+
+Ao trocar de arma, atualizar habilidades físicas e atalhos conforme HABILIDADES_E_PROGRESSAO.md. Uma técnica indisponível não pode continuar utilizável por um atalho desatualizado.
+
+## Interface de loot
+
+O loot usa seis categorias lógicas conforme LOOT.md, com coleta automática e concessão de no máximo um equipamento por loot, que pode ser raro. A conciliação das categorias equipáveis respeita essa regra mais recente. Na apresentação das recompensas, ocultar os slots vazios e mostrar apenas os resultados gerados, usando ícones, descrições e quantidades cabíveis. Essa regra de ocultação é específica do loot; não determina a ocultação de espaços vazios configuráveis da barra de atalhos ou de outras telas.
+
+## Acesso rápido e etapas de seleção
+
+Os menus de jogo e de batalha devem favorecer o acesso rápido. Pular etapas de seleção quando houver somente uma opção válida no contexto, encaminhando o jogador diretamente à próxima decisão necessária.
+
+Exemplos: abrir diretamente a tela do único personagem elegível, selecionar automaticamente o único alvo válido de uma ação já escolhida e evitar uma tela intermediária cujo único comando disponível apenas continue o fluxo. Contar opções válidas para a ação, não apenas o total de personagens, alvos ou entradas existentes.
+
+Quando houver várias opções válidas, manter a escolha do jogador. Quando não houver nenhuma, informar a indisponibilidade e impedir a execução. Selecionar automaticamente uma opção única não deve disparar uma ação antes de o jogador solicitá-la, nem consumir itens ou recursos durante a simples navegação.
+
+Revalidar alvo, disponibilidade e custos no momento de executar a ação. Ao cancelar, retornar à última etapa com uma escolha real, sem prender o jogador em uma etapa pulada. A configuração exata de confirmações adicionais permanece a definir; não adicionar confirmações redundantes ao fluxo por padrão.
+
+## Critérios de aceitação
+
+- Menu de jogo e menu de batalha adotam slots para o conteúdo definido na especificação das telas.
+- Os ícones permitem identificar o conteúdo, com nome e descrição acessíveis durante a navegação.
+- Quantidades cabíveis correspondem aos dados atuais e se atualizam após alterações.
+- É possível selecionar e usar conteúdo pelos controles aprovados, sem executar ações indevidas em slots vazios ou indisponíveis.
+- A barra de atalhos de combate segue os mesmos padrões de representação.
+- Com uma única opção válida, a etapa de seleção é pulada; com várias, a escolha é preservada; sem opções válidas, a ação não é executada.
+- Cancelar retorna à última escolha real e a navegação não consome recursos nem executa ações involuntárias.
+- É possível arrastar um equipamento do inventário para um slot compatível, inclusive substituindo o item anteriormente equipado, com atualização correta dos dados exibidos.
+- Arrastos inválidos ou cancelados preservam inventário e equipamentos; trocas não perdem nem duplicam itens.
+- O fluxo de equipamento também é acessível por seleção e confirmação, sem depender exclusivamente do arrasto.
+- A interface permanece legível na resolução de destino e com os controles definidos para o projeto.
+
+## Decisões pendentes
+
+Selecionar os aspectos das referências em doc/prints e definir estrutura de cada tela, tamanho e quantidade de slots, paginação ou rolagem, posição das descrições, controles e eventual personalização. Arrastar equipamentos para slots de equipamento está confirmado. Arrastar e soltar em outros contextos, recargas, filtros e ordenação permanecem possibilidades a avaliar.
+
+Este documento especifica a direção da interface; os menus ainda não foram implementados ou testados.
+
+
+## Implementação M01-11
+
+Direção de batalha implementada tecnicamente em feature/m01-interface-batalha; o texto anterior é especificação/histórico para os demais menus. Quatro comandos existentes, filtros/cartões/quantidades/descrição, seis atalhos configuráveis e alvo único automático após ação solicitada. Teclado/mouse/toque com Voltar visível; sem Recuar/talentos ativos/aparo novo. Integração nativa, limites da emulação e roteiro em INTERFACE_BATALHA_M01_11.md. Inventário de exploração/equipamento por arrasto permanecem M01-12, sem antecipação nesta feature.
+
+
+## Melhoria futura — favoritos
+
+Favoritar habilidades e itens para facilitar sua associação aos atalhos foi solicitado como pendência futura em26/10/2026. Não implementar em M01-12; referências battle.1–8 e fluxo atual preservados. Combate considerado satisfatório pelo responsável na versão25672fe, sem inferir cobertura manual de todos os menus ou dispositivos.
+
+
+## M01-12 — inventário/equipamentos
+
+Cartões paginados, equipamento por arrasto ou seleção, prévia/atributos antes de confirmar, remover/substituir e descrições por seleção implementados na feature. Tema de batalha compartilhado por exportação, sem novo windowskin global. Corpo/arma compatíveis com tipos nativos; importante protegido; menus com alvo único sem etapa de personagem. Teclado/mouse/toque emulado testados. Não há favoritos, lojas, crafting ou loot novos. Aparência mínima de material em revisão, sem declarar figurino final. Roteiro e limites em INVENTARIO_E_EQUIPAMENTOS_M01_12.md.
+
+Pendência canônica de favoritos e revisão dos atalhos de itens/habilidades: REF01 em REFINAMENTOS_POS_INTEGRACAO_M01.md (M01-19). Suporte item/skill já existe e deve ser auditado, não refeito sem evidência.
+
+## Diretiva permanente NAV01 — 28/10/2026
+
+Obrigatório aplicar DIRETIVA_DE_NAVEGACAO.md a menus novos/revisados: caminhos curtos, confirmação proporcional, seleção única automática, foco/retorno/contexto, teclado/mouse/toque, reflow legível e tratamento de vazio/texto longo/overflow. Não refatorar todos os menus nesta tarefa. O diário M01-16 R02 aplica lista/filtros, descrição narrativa, passos com ícones e status real separados; detalhes em REVISAO_DIARIO_M01_16_R02.md. Adequações anteriores seguem os registros já consolidados (incluindo REF01), sem duplicar pendências.

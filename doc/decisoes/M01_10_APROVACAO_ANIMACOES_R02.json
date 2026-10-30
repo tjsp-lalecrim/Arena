@@ -1,0 +1,12 @@
+{
+  "version": "M01-10/R02",
+  "recordedDate": "2026-10-26",
+  "evidenceType": "manual declaration supplied by the responsible person in this conversation",
+  "statement": "A animação revisada foi aprovada pelo responsável.",
+  "associatedDeliveryCommit": "a61977b5c3cbe7e0a1fbeb8e8402f499dca30103",
+  "versionAssociation": "Last delivered R02; responsible person did not supply a different commit hash.",
+  "scope": {"actors": ["breton.female.base"], "enemies": [1], "motions": "Existing R02 drawings, fluency and timing; preserve without regeneration."},
+  "assetManifest": "doc/arte/COMBATE_MOVIMENTOS_R02_MANIFEST.json",
+  "notImplied": ["Expansion to the other15 actors/two enemies", "Editor roundtrip", "NW.js visual test", "Galaxy A56 physical test", "M01-10 fully completed"],
+  "dependencyDecision": "Responsible person explicitly chose to finish M01-10 expansion before integration; no partial integration into develop and no M01-11 branch yet."
+}

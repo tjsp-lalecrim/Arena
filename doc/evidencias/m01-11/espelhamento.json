@@ -1,0 +1,56 @@
+{
+  "checkedRecordedFrames": {
+    "light": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "heavy": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cast": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "item": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "hurt": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "defeat": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "weaponGrip": "Each recorded non-stowed hand frame checked against -(handX-64) in approved profile",
+  "bodyAndEnemyScales": -1,
+  "timingsAndAtlasFiles": "Unchanged from develop f37018d",
+  "approval": "Technical inspection only; no new owner approval"
+}

@@ -1,0 +1,577 @@
+{
+  "sourceCommit": "e407a69193e168c6c1a160ab5809b1781b4a6478",
+  "remoteMain": "f62e026256ad82533412c2970fa539a519f924e0",
+  "approved": {
+    "version": "m01-rc1",
+    "manifestSha256": "77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831",
+    "runtimeFiles": 321,
+    "totalBytes": 37996040
+  },
+  "predictedLinuxUsingCurrentMain": {
+    "version": "m01-19-web-r01",
+    "manifestSha256": "a28f8f2d0e2666a6de6b05a82bbde47901c1884ec8acc02b23cf32142bd2afcb",
+    "runtimeFiles": 321,
+    "totalBytes": 37901276
+  },
+  "changedFileCount": 79,
+  "allRuntimeDifferencesAreLineEndings": true,
+  "allChangedFilesMatchWithCRLF": true,
+  "differences": [
+    {
+      "path": "data/ArenaAbilities.json",
+      "gitBytes": 630,
+      "approvedBytes": 677,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaArtSamples.json",
+      "gitBytes": 194,
+      "approvedBytes": 195,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaAttributes.json",
+      "gitBytes": 357,
+      "approvedBytes": 367,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaBattle.json",
+      "gitBytes": 5726,
+      "approvedBytes": 6055,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaBattleMotion.json",
+      "gitBytes": 229229,
+      "approvedBytes": 240325,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaBattleUI.json",
+      "gitBytes": 2694,
+      "approvedBytes": 2861,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaCatalog.json",
+      "gitBytes": 5560,
+      "approvedBytes": 5731,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaCharacterVisuals.json",
+      "gitBytes": 7684,
+      "approvedBytes": 7924,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaDungeon.json",
+      "gitBytes": 11656,
+      "approvedBytes": 11657,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaEncounters.json",
+      "gitBytes": 23210,
+      "approvedBytes": 24581,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaInventory.json",
+      "gitBytes": 3976,
+      "approvedBytes": 4329,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaLoot.json",
+      "gitBytes": 4198,
+      "approvedBytes": 4413,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaNarrative.json",
+      "gitBytes": 5318,
+      "approvedBytes": 5411,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaProgression.json",
+      "gitBytes": 311,
+      "approvedBytes": 324,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaQuestJournal.json",
+      "gitBytes": 1491,
+      "approvedBytes": 1537,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaQuests.json",
+      "gitBytes": 1927,
+      "approvedBytes": 1993,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/ArenaRecovery.json",
+      "gitBytes": 16776,
+      "approvedBytes": 17368,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Armors.json",
+      "gitBytes": 1469,
+      "approvedBytes": 1476,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map001.json",
+      "gitBytes": 4075,
+      "approvedBytes": 4076,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map002.json",
+      "gitBytes": 4988,
+      "approvedBytes": 4989,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map003.json",
+      "gitBytes": 6246,
+      "approvedBytes": 6247,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map004.json",
+      "gitBytes": 4905,
+      "approvedBytes": 4906,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map005.json",
+      "gitBytes": 8722,
+      "approvedBytes": 8723,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map006.json",
+      "gitBytes": 4029,
+      "approvedBytes": 4030,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map007.json",
+      "gitBytes": 12948,
+      "approvedBytes": 12949,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Map008.json",
+      "gitBytes": 616647,
+      "approvedBytes": 616648,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/MapInfos.json",
+      "gitBytes": 881,
+      "approvedBytes": 892,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Tilesets.json",
+      "gitBytes": 50107,
+      "approvedBytes": 50114,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Troops.json",
+      "gitBytes": 1506,
+      "approvedBytes": 1513,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "data/Weapons.json",
+      "gitBytes": 1527,
+      "approvedBytes": 1534,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "fonts/gamefont.css",
+      "gitBytes": 236,
+      "approvedBytes": 246,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "index.html",
+      "gitBytes": 1590,
+      "approvedBytes": 1618,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/libs/iphone-inline-video.browser.js",
+      "gitBytes": 3664,
+      "approvedBytes": 3666,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/libs/pixi-picture.js",
+      "gitBytes": 22927,
+      "approvedBytes": 23354,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/libs/pixi-tilemap.js",
+      "gitBytes": 42752,
+      "approvedBytes": 43638,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/libs/pixi.js",
+      "gitBytes": 1295220,
+      "approvedBytes": 1335538,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins.js",
+      "gitBytes": 4706,
+      "approvedBytes": 4747,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Abilities.js",
+      "gitBytes": 8051,
+      "approvedBytes": 8192,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_AbilityLab.js",
+      "gitBytes": 10120,
+      "approvedBytes": 10245,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_ArtPreview.js",
+      "gitBytes": 6841,
+      "approvedBytes": 6968,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Attributes.js",
+      "gitBytes": 18991,
+      "approvedBytes": 19237,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_BalanceLab.js",
+      "gitBytes": 9818,
+      "approvedBytes": 9952,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Battle.js",
+      "gitBytes": 15273,
+      "approvedBytes": 15456,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_BattleMotion.js",
+      "gitBytes": 9601,
+      "approvedBytes": 9709,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_BattleUI.js",
+      "gitBytes": 35437,
+      "approvedBytes": 35681,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_CharacterCreation.js",
+      "gitBytes": 17766,
+      "approvedBytes": 18034,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Dungeon.js",
+      "gitBytes": 8948,
+      "approvedBytes": 9042,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Encounters.js",
+      "gitBytes": 8986,
+      "approvedBytes": 9100,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Inventory.js",
+      "gitBytes": 34873,
+      "approvedBytes": 35146,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Loot.js",
+      "gitBytes": 14042,
+      "approvedBytes": 14139,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Narrative.js",
+      "gitBytes": 13948,
+      "approvedBytes": 14108,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Persistence.js",
+      "gitBytes": 9194,
+      "approvedBytes": 9358,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_QuestJournal.js",
+      "gitBytes": 19818,
+      "approvedBytes": 19971,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Quests.js",
+      "gitBytes": 9271,
+      "approvedBytes": 9370,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Recovery.js",
+      "gitBytes": 15605,
+      "approvedBytes": 15842,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Resources.js",
+      "gitBytes": 16143,
+      "approvedBytes": 16416,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_Runtime.js",
+      "gitBytes": 1178,
+      "approvedBytes": 1211,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Arena_TechnicalPreview.js",
+      "gitBytes": 5495,
+      "approvedBytes": 5614,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/Community_Basic.js",
+      "gitBytes": 4105,
+      "approvedBytes": 4241,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_AbilityRules.js",
+      "gitBytes": 478,
+      "approvedBytes": 489,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_AttributePoints.js",
+      "gitBytes": 3008,
+      "approvedBytes": 3060,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_BattleSlots.js",
+      "gitBytes": 944,
+      "approvedBytes": 962,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_CharacterRules.js",
+      "gitBytes": 2242,
+      "approvedBytes": 2285,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_EncounterRules.js",
+      "gitBytes": 1286,
+      "approvedBytes": 1317,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_EquipmentTransaction.js",
+      "gitBytes": 715,
+      "approvedBytes": 728,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_JournalModel.js",
+      "gitBytes": 1869,
+      "approvedBytes": 1901,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_LootRules.js",
+      "gitBytes": 1890,
+      "approvedBytes": 1910,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_MotionTimeline.js",
+      "gitBytes": 1828,
+      "approvedBytes": 1855,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_NarrativePages.js",
+      "gitBytes": 846,
+      "approvedBytes": 863,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_QuestRules.js",
+      "gitBytes": 998,
+      "approvedBytes": 1021,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_ResourceProgression.js",
+      "gitBytes": 992,
+      "approvedBytes": 1017,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_StateStore.js",
+      "gitBytes": 6916,
+      "approvedBytes": 7048,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/plugins/MV_WebStorageNamespace.js",
+      "gitBytes": 1192,
+      "approvedBytes": 1216,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/rpg_core.js",
+      "gitBytes": 235076,
+      "approvedBytes": 244396,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/rpg_managers.js",
+      "gitBytes": 81146,
+      "approvedBytes": 83985,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/rpg_objects.js",
+      "gitBytes": 293675,
+      "approvedBytes": 304315,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/rpg_scenes.js",
+      "gitBytes": 78715,
+      "approvedBytes": 81404,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/rpg_sprites.js",
+      "gitBytes": 77867,
+      "approvedBytes": 80558,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    },
+    {
+      "path": "js/rpg_windows.js",
+      "gitBytes": 176619,
+      "approvedBytes": 182643,
+      "lineEndingsOnly": true,
+      "autocrlfWouldMatch": true
+    }
+  ],
+  "method": "Read-only reconstruction of manifest from git blobs as default Linux checkout, current immutable main recipe; not an Actions run",
+  "deploy": "not dispatched; requires explicit infrastructure decision before replacing approved package",
+  "manualCorrection": "Latest owner test was GPT integrated browser, not A56. Physical RC1 test remains pending; phone on another network."
+}

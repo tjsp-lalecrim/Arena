@@ -1,0 +1,2897 @@
+{
+  "version": "M01-10/R01; Breton male defeat R03, Lizard packing R02",
+  "status": "technical candidates; owner manual tests pending; no aesthetic approval inherited",
+  "records": [
+    {
+      "id": "breton-female",
+      "file": "img/sv_actors/Arena_Combat_breton-female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            94,
+            104
+          ],
+          "sha256": "fddd8fd22f052819dcd58c1b335e8a469a280971df06edf83d49ccd0c2a29c9e"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            15,
+            91,
+            104
+          ],
+          "sha256": "6317a1c5901212e09f7137e6553b32df69741abece2c3ae148c4efefb059f568"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            17,
+            94,
+            104
+          ],
+          "sha256": "fde85b6bbab87d572ae02444b78f8cb9e17f97cb2a71a512e745bf839e80f024"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            19,
+            104,
+            104
+          ],
+          "sha256": "ca3fa3dd4b52b7feb5b4cbc581afa87eb2dc3358371832472060d2fd77da35f7"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            26,
+            17,
+            103,
+            104
+          ],
+          "sha256": "32a8643ff3890da4991c8c233e95627d996507b43e10265dfcf4a663e36dafb1"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            17,
+            97,
+            104
+          ],
+          "sha256": "8eada65729e9980a0a1b413fd18ca8964ca0bdb663baa6367c051c027f457b11"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            25,
+            96,
+            104
+          ],
+          "sha256": "a6d2676d251cfe3e9ed03edb6eb513b530de7be96b97f69d9fe98ffa5e51e014"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            38,
+            28,
+            90,
+            104
+          ],
+          "sha256": "e85f4390425f5a0968d669dc62b618e6799b4e2076a968e0d8fec4d9c1db4b1d"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            21,
+            92,
+            104
+          ],
+          "sha256": "107850a0f0c6110f5024ba240bb57c6b9dfe34a09b5c511aff33efbdce4cec93"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            28,
+            45,
+            100,
+            104
+          ],
+          "sha256": "f1a29073dde7cd021908e062b6548f35c043c1b7b60b300c0f359ec4941e74b8"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            19,
+            62,
+            108,
+            104
+          ],
+          "sha256": "3e8ee658114c6a65c30fd5d9d7def88afe7b7462827e5a4fb0b980cdfe529940"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            20,
+            77,
+            107,
+            104
+          ],
+          "sha256": "a135ebb20df2b476dab1beeae838e7f0db05c3e837580fdef158d7447d691aab"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/breton-female.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "7508fa1f45f8be8ea55369493d0f66d3803b1a0bdef83805f3af94ff9c8422ce"
+        }
+      ],
+      "sha256": "b39041aac80a8dd54acc79326d415f83a931e73c791a407a4e654ae157ca52af"
+    },
+    {
+      "id": "rat",
+      "file": "img/enemies/Arena_Combat_rat_r01.png",
+      "cell": [
+        128,
+        80
+      ],
+      "ground": 74,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            16,
+            34,
+            105,
+            74
+          ],
+          "sha256": "c050a1bd6a82ebcd61d54b86db5016b929ec627904397146dc195648aba2f0a6"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            20,
+            34,
+            107,
+            74
+          ],
+          "sha256": "b55286c060c1c5eb02db1dc2cca021f3e4d80f2258a62b4106e2d8fac239b12f"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            18,
+            36,
+            104,
+            74
+          ],
+          "sha256": "32fd95f51b76c5e7040c5dcb212869c5ce87717107b8d95f335e2b49577cd96b"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            25,
+            36,
+            113,
+            74
+          ],
+          "sha256": "5fab8c76e040d0751750b942bd47b5e2dbcbb2831d7db24ca17d5068ccf0c70d"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            22,
+            35,
+            118,
+            74
+          ],
+          "sha256": "7f35735b6d562c9209011bb596f205dc741a06d0b5555554608c09886d33cdc6"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            32,
+            36,
+            123,
+            74
+          ],
+          "sha256": "c9810ef69cfa88dcf71767d5180e10749d6592afe0375dfec8d068c039a85981"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            24,
+            11,
+            99,
+            74
+          ],
+          "sha256": "358b8ac000a7d11da241a14f11ab0f83d53fb02a2a3d19be216fefd0aa4d2899"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            28,
+            32,
+            102,
+            74
+          ],
+          "sha256": "048b2ce26ced2a8acc815b3845f0e6120221041c69005e4d0cee9dcddeb018e9"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            22,
+            36,
+            106,
+            74
+          ],
+          "sha256": "b1474c567684c90e30f80cf1455d44ef758811b89bffc609c4ed7f965cc252dd"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            20,
+            30,
+            107,
+            74
+          ],
+          "sha256": "8820513cc4d1b9cd82e462de5a43f31a8067beab420280874ff6a3584c318bee"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            19,
+            35,
+            108,
+            74
+          ],
+          "sha256": "4c6473c91de6e352be301ca52f4361db191cd412b5be212484064e79db56aa56"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            19,
+            45,
+            108,
+            74
+          ],
+          "sha256": "0bcf956d78a0e4e800d30dbf4fbb8512cdf889d0a9ac3f0872c4b0a0a0eb54a7"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/rat.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "2198d8ab1c3838bb231a00f0c5a670000fb6133c9c33f052c474df6bacd382b8"
+        }
+      ],
+      "sha256": "b3e823dfdecbc01a004e47fb4e168679e898f441b60c69c10b181b563b44a68b"
+    },
+    {
+      "id": "breton.male.base",
+      "file": "img/sv_actors/Arena_Combat_breton_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "9f903fba29ed5528137e6530cf642bfd948d62bd110c2ddd94f292475a11a3f5"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            99,
+            104
+          ],
+          "sha256": "e48fa254a6e399372c55192f77607e7e9a291bb7c2e0757ae4ac7f75ffc2a47c"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            99,
+            104
+          ],
+          "sha256": "44d36f6f31d7c8bd397047e0ed8471739a68377190705298c2fbf9cc572fe812"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            21,
+            108,
+            104
+          ],
+          "sha256": "dd83c09e4c8b9a1a67a30e44c508a27a169b618837a96d55973ce35a8d952b0d"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            23,
+            23,
+            111,
+            104
+          ],
+          "sha256": "dfc38b96b3be8449db22df6ea0294bfded2c5b1a563cfbf8755ca68fd233240b"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            21,
+            100,
+            104
+          ],
+          "sha256": "e56d77451203f3eef74114e530d92b747f953ec4b7180e5b931cafcb01054787"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            15,
+            103,
+            104
+          ],
+          "sha256": "b10ccaa0e2b51606733339bffcc420126d6d7a5562a28fe58f334b9096446b29"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            44,
+            28,
+            97,
+            104
+          ],
+          "sha256": "148bed82baa6353a1a127b1e1881849cd61f7b6931112f07b72f5c6158f10751"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            21,
+            101,
+            104
+          ],
+          "sha256": "4acee0e8994818531a7b11a9a0280ef653a861f8c24806dc6b51f5931b232dfd"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            34,
+            54,
+            93,
+            104
+          ],
+          "sha256": "ed57f4bf5b937db5f4b53a80b0da565881d1ec821a934a2af4d7b53708e51535"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            26,
+            65,
+            101,
+            104
+          ],
+          "sha256": "3f1ca64de9527903b9b1d4d3ea9f756bcbc4d11324e9e31dd949433241fe36e2"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            22,
+            80,
+            106,
+            104
+          ],
+          "sha256": "795cd18dc8d69af83ecad0b9b5fe66c9ae8f9b2a7ce9f8f3ac8e6f6a9ee59147"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/breton-male-r02.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "d7ea564111f4bb0321385231fb61172435b3ff5e45ab72e4ef324d4f2e03a9de"
+        },
+        {
+          "file": "art/masters/combate-r01/breton-male-defeat-r03.png",
+          "size": [
+            2172,
+            724
+          ],
+          "sha256": "ec695491dd84334b6b7be80bea2e97bd41ca9c386972cbf54691eca5a0e8b505"
+        }
+      ],
+      "sha256": "7183db9195b8329ece5db464ffbdc5f1b890e1c404c1ac5affd233dd57d6c4b7"
+    },
+    {
+      "id": "argonian.male.base",
+      "file": "img/sv_actors/Arena_Combat_argonian_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ],
+          "sha256": "d6a9923db6b4979ec5389cd10758d65dc3f29826b5cbbe068e2dfbf1e9e2e686"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "e81fb592e3cc554f951ce854ef51391c042c06e56aa6ec9ed51e10eb5e5451f0"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "7399004f327f29ea80f40add96442deca2327405340fb58dd0c6ea01386395ba"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            43,
+            21,
+            112,
+            104
+          ],
+          "sha256": "bdbc72d05590c9b320b35bc3b9648697b510e5752a7e05ac4881a7826be4e001"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            25,
+            24,
+            120,
+            104
+          ],
+          "sha256": "b813631ae8e513a2153d912745a89ef4d74151a944020bad0d85b4385c8f413b"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            20,
+            106,
+            104
+          ],
+          "sha256": "199072b384a160fd1c2515136861260ff670b8332659ffa13415da02c500438e"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            24,
+            105,
+            104
+          ],
+          "sha256": "d00259f9ab030712bcd29151d8e437009a49cbfbc92bebed03612c50f4470d32"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            44,
+            36,
+            102,
+            104
+          ],
+          "sha256": "61a7984a44ca3b9e6e18c46fbbbbb632413aa02d9e7c4a968398daafe89ad817"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            17,
+            103,
+            104
+          ],
+          "sha256": "3c799408b0b579811963854c83c30e561067a0acdd82709d8ba1eca34d4575c7"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            27,
+            49,
+            100,
+            104
+          ],
+          "sha256": "be0e41c5fc1a898e399add84bdb644a8c76b22f325888a9ab1da009814c20538"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            24,
+            64,
+            104,
+            104
+          ],
+          "sha256": "224582f3129cf9234eaa16842325714b686a47f4442f0461e25d2c1f2c5b10ad"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            14,
+            75,
+            113,
+            104
+          ],
+          "sha256": "b3a0d59f5ce6bff4970d3c3de1d523ce112c024528ed659241e5b1b25138716a"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/argonian.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "bbb53a8a09431a2b61832a4e98aeb1b2c5490725e022b7607103a8235781e36f"
+        }
+      ],
+      "sha256": "e2dec9772b6d5a167157087d94af5aff5f7f4c0393ef92e6cc3026d97da201f3"
+    },
+    {
+      "id": "argonian.female.base",
+      "file": "img/sv_actors/Arena_Combat_argonian_female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "4283e14374a4c73be3cdc5bc04915058da69f64a657ac6c1e973cd227dec8f31"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "734b37ee61525942da7267423f914b25ac1e047a9e50a2db61ce1df4f4bdcbdd"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ],
+          "sha256": "cbbcbd2dae0183be12a92f3631cc054fe037b6e8e44ca81c0f4cf807e994e6fc"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            22,
+            112,
+            104
+          ],
+          "sha256": "a083a4fb7936b1463c8720ddefb5736db6ea641f9162ebabc09087831201cb50"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            27,
+            22,
+            116,
+            104
+          ],
+          "sha256": "5b1b5bf23bd109be367126135eb8967288aa7d749123c2c684ac93df26045b93"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            20,
+            104,
+            104
+          ],
+          "sha256": "f04c355637d9784432447ef57b7f335872be93fdc70d63f720679dc0d5a635cf"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            25,
+            106,
+            104
+          ],
+          "sha256": "7a7d97cba268a8c8234f73c3a5c8f0315cb6b4ac1557deb72e68ab35e01d14e5"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            44,
+            40,
+            101,
+            104
+          ],
+          "sha256": "6380364c57b0debb192d6045edd7499dbe59b90b0337f3600d0e8448f4417adb"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            17,
+            103,
+            104
+          ],
+          "sha256": "ca6b52ec979106828bcaacbd6a81c9045b651b8bf2bda9e1480f06ce1ed37dd1"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            27,
+            49,
+            100,
+            104
+          ],
+          "sha256": "161ad3c14b712bf71cdef56dc0a4d733e8302d1503e1d8cd776b3815852048df"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            25,
+            68,
+            103,
+            104
+          ],
+          "sha256": "0f5c4dc5cebe53a5e0e6e27bf97845a41bad3287e014e6c8d9e15685c4bc2624"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            17,
+            78,
+            111,
+            104
+          ],
+          "sha256": "263df388ec30fb4cba8aaea215ff2a30da164698d687c069bd5ce97cc3c80913"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/argonian.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "bbb53a8a09431a2b61832a4e98aeb1b2c5490725e022b7607103a8235781e36f"
+        }
+      ],
+      "sha256": "895176070c4c0bc924b7825a049b6bf7c1143102636a92fe75105093b76ebbec"
+    },
+    {
+      "id": "dark_elf.male.base",
+      "file": "img/sv_actors/Arena_Combat_dark_elf_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "5a40bbd041ad39c8c4cdab0a3469b8515821be4c09cb68c870cb682137e40b5d"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "d1ab83e1bddd89197b87230febf63112a086a0f3bf6b4dc3e5a1d2e64a39fa8d"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "f4bb5b06af046e4418fdb1412a09e679a2fa4f336969b7eb70558612e97ba499"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            17,
+            107,
+            104
+          ],
+          "sha256": "bc402f8e152853bc1d1b30d705f98b9b2dbee436d2eff5693a3ea5c116516b24"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            20,
+            19,
+            110,
+            104
+          ],
+          "sha256": "ce4caaaba262cbd7730c8729999fc2cddfb8409aa4bc64fd9911409b3e0f5395"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            17,
+            106,
+            104
+          ],
+          "sha256": "59f96f254b38a035290b3bc3a52aaaa2faa7a3953d011b9f5dfa46a0ff631f94"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            21,
+            98,
+            104
+          ],
+          "sha256": "7ba291669f1298fcb4fd85e961d0d31d8c2bfaf3199f1bdb6e0fb8565a9e4575"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            44,
+            32,
+            95,
+            104
+          ],
+          "sha256": "b06595f627b2daf9fad091b12692e98ff1eadee12113301f851c0327c9c7b7f8"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            18,
+            105,
+            104
+          ],
+          "sha256": "dff1161bdc9e7f19527ee54ecc61d63fab71a0dccdea07e58f9f52ace98f4a78"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            33,
+            49,
+            95,
+            104
+          ],
+          "sha256": "18d49d89632a6d1b72e61ed2e4d625a6c6ed07f83fb4450c0d7ad6a4158d4d0b"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            21,
+            65,
+            107,
+            104
+          ],
+          "sha256": "bf0c197b9c50a54b9d19f040bc91b24d441ed0472a5b0f7b38c810e7c2c70f88"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            19,
+            80,
+            108,
+            104
+          ],
+          "sha256": "4d108a7ed815d9a7ad74d64809410e5ac92db3ca8a53d2a131371ffbca9c7d6f"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/dark_elf.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "81ee2b3c96c0dc8f362043eedd16a22cbf3ecb36a8318ede2666aecbdb86e621"
+        }
+      ],
+      "sha256": "449ea2fca205235b0bc004b29c81a6b56fedf8e4b132ce4ed104615af3bd2773"
+    },
+    {
+      "id": "dark_elf.female.base",
+      "file": "img/sv_actors/Arena_Combat_dark_elf_female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ],
+          "sha256": "2f346c8ce45debfe80b7d3e0d94696ede557804876cc1cb79c0059aaf37f0ef1"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "a5dd2bbab3d2a477993cc7beb51305cbb1d1c52e916f39df2fa375ce2ca1656e"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "be24b3f064a733ed4031e67d431b84e91a6cdede675b79327c8ad6d47fb77c3e"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            18,
+            109,
+            104
+          ],
+          "sha256": "1822072c6e481b9967d0c45963492eecedbf7d0d26584f55ec127195a7b52841"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            24,
+            18,
+            109,
+            104
+          ],
+          "sha256": "6e3792cda47c9a3fa4bd2e274ca336be1c6f2083a5e60a1235bf03fef96648f4"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            17,
+            104,
+            104
+          ],
+          "sha256": "820286e0d4d0c2aba179fa977dc266671a16d5883b69b108d56421b8630b51fe"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            17,
+            95,
+            104
+          ],
+          "sha256": "fcc4b6258e81af2a61d78216cdcc7a4f79febb976bf54f974559142225266abd"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            42,
+            32,
+            96,
+            104
+          ],
+          "sha256": "e815decacc0eab5713ebeb370337161dd7ca67a68fd162a235f6bdd1c2414c75"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            17,
+            104,
+            104
+          ],
+          "sha256": "f350e3fbe8ca44efba84b99f49c2bc5a808b4b80512a20fafdc663bde98ed5e8"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            31,
+            53,
+            97,
+            104
+          ],
+          "sha256": "8aaa358b1549428de8224dff06232d6ac9f91290155fb7cfdc0e67360fb9c3eb"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            25,
+            71,
+            103,
+            104
+          ],
+          "sha256": "c4441ab17afa3550d52cef68207dc1d85823b9cead1331405717911d26c8584d"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            23,
+            81,
+            104,
+            104
+          ],
+          "sha256": "7440570aa73a6e702f33c2d1328ea318077c129ae43bafbba807b54d8ebcd77c"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/dark_elf.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "81ee2b3c96c0dc8f362043eedd16a22cbf3ecb36a8318ede2666aecbdb86e621"
+        }
+      ],
+      "sha256": "ae6a8366c675d354502bc24be28e6d3ea8d6389f56fe35a3dccf2d19f239d5be"
+    },
+    {
+      "id": "high_elf.male.base",
+      "file": "img/sv_actors/Arena_Combat_high_elf_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "9aa9b3dd3079234c432c75985109220e94e99faac7f423adcd081094083f958b"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            14,
+            105,
+            104
+          ],
+          "sha256": "e4aa40291ccc60ad8223ff61521af7ec29be97306bb6d14fc2f2fb702fadafc6"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ],
+          "sha256": "3564326f2f34767862ec7052d6d7a31e23cc54ccbd3fbed58a7ac8aedb85ef12"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            20,
+            113,
+            104
+          ],
+          "sha256": "2aa08ab9ae7f543afb93362a26449eb18f4fdd9c477eb335a74bc29ee88fefa7"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            33,
+            20,
+            118,
+            104
+          ],
+          "sha256": "fdd7963b281b78745ef571f0f8b72a655b5d1952b19a295802a39c8ecbecf129"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            20,
+            105,
+            104
+          ],
+          "sha256": "c53bb8d08639bd27e60ff82a4fd839b3692fbe1bf466a5d7674d1080751b9132"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            18,
+            103,
+            104
+          ],
+          "sha256": "48e4290f5028825e2a93da796ae2ee937b2d6ec3c19b3d7cc86afcdf2416e0b1"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            42,
+            35,
+            102,
+            104
+          ],
+          "sha256": "069532de1ad3eadb2ccafdcb82af00aa64a91b43e7f2968987ae82176636f96b"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "a87aaa944e23266f7288718dd450e76a5e434211a75d7c499412e58d97896806"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            30,
+            52,
+            98,
+            104
+          ],
+          "sha256": "e2cf3e4d6133e9f645ca4d8a9752b91f3f0ff54d766dbe336ab7652098098be8"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            20,
+            75,
+            108,
+            104
+          ],
+          "sha256": "34df7793fcd8fedc220176ce6b5401500ae6079232d493c94eb5d947f290d60e"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            18,
+            80,
+            109,
+            104
+          ],
+          "sha256": "9b41b4637063490a407ccdbb7310c663b1f25e622efc450742058a1dfe377693"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/high_elf.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "2cac874e99141ed0be64c038565d6526279093dc68c83afef915ca79b94d0042"
+        }
+      ],
+      "sha256": "12448873c0009eb7280ddad85005a920d6b465e7f88eaaf75ab45888caf5d5c8"
+    },
+    {
+      "id": "high_elf.female.base",
+      "file": "img/sv_actors/Arena_Combat_high_elf_female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            17,
+            101,
+            104
+          ],
+          "sha256": "ecc97ae804c20b95ed83d9bf44e9b6dbb307fb7fc201a31437146bc894dd6012"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ],
+          "sha256": "b1aa03358ca17fbeefea4639222cbe2e5a167edd3cd220d14fbf61a147e57531"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "423005e8d0b19c3da5c72ee6096f2bd285b5536caccab89b501cdb76b3bfb71a"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            20,
+            108,
+            104
+          ],
+          "sha256": "8df1d2d9c0cb6a532d84195444ffeb487d69f1adf0466077e291046cb275b6aa"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            33,
+            20,
+            113,
+            104
+          ],
+          "sha256": "3ab9a281747a5851c89e7942b99a66389a5553d8a1858495a9019bedad875d71"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            19,
+            105,
+            104
+          ],
+          "sha256": "8f619383674bbb673ca222d278ba9695d5d566ccb716fefea2ee378443d4b05b"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            21,
+            98,
+            104
+          ],
+          "sha256": "20d6e8695df2c332dd3126c555899d09fce963a99c46265fc5ac77d394dc465b"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            42,
+            35,
+            97,
+            104
+          ],
+          "sha256": "eb0d9dda6a271992299203e90dbd16bd58d6e7e1e383427748388b8fdc5970d2"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            15,
+            103,
+            104
+          ],
+          "sha256": "1f868d0c1a7cbaa7a1bcf43832fddcc1e03ef1c10062bad0516947b42bc745b9"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            33,
+            56,
+            95,
+            104
+          ],
+          "sha256": "a09eaa8636fdf1199895881acb8c475d6723066e19fd13b26d0b06ccfdfaa1e1"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            20,
+            76,
+            108,
+            104
+          ],
+          "sha256": "aa85d41c7c68ca05d4a58b8c68e77c974ce8aa78483f68c158e06dcde155cfcf"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            18,
+            81,
+            109,
+            104
+          ],
+          "sha256": "cb0b7242003a05516b384637397e65b27c7ceb178327a5f4b5eff08822becfc6"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/high_elf.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "2cac874e99141ed0be64c038565d6526279093dc68c83afef915ca79b94d0042"
+        }
+      ],
+      "sha256": "3cb749d712c9bb51aa16682421ce54f80f417a243936151460c3aaa7ffe09ced"
+    },
+    {
+      "id": "khajiit.male.base",
+      "file": "img/sv_actors/Arena_Combat_khajiit_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "3c2473cccebf192c5461f7cdf00e049e0466fd314b0e0db2c78282cfb8e9dede"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            17,
+            105,
+            104
+          ],
+          "sha256": "dfd1d1eeadf2cab92bfe389b954556824f8b9511f02e7b5824e71795014f4e72"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            105,
+            104
+          ],
+          "sha256": "0fa7d3340282a685eab33229312494033821be07ba07880ac7ffb22feb587c36"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            15,
+            111,
+            104
+          ],
+          "sha256": "227e593fe3b0cb4ae200b4998e9c496ac54f8451e97c63076bc791c7a5b35742"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            23,
+            17,
+            113,
+            104
+          ],
+          "sha256": "14f774c6431671a85f39f6bcc0c1101dbf5bfbe53cf6dc14d0befe60dae7194c"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            15,
+            108,
+            104
+          ],
+          "sha256": "0c5d1f9010709b80ee6841edc485e8767d64630b9919f2586ef40bc2aeb852ac"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            19,
+            104,
+            104
+          ],
+          "sha256": "59aaf2332766a36c84ce352a7b8e011fe6093de5bbf2c85bd724ea089cfef95a"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            40,
+            32,
+            106,
+            104
+          ],
+          "sha256": "023cf3f4e1221fe3bd92c293f8fa8f3b76afb6119aa7bd60cddabdc8d2496fd9"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            19,
+            106,
+            104
+          ],
+          "sha256": "da4bbf2acb381d9325bfc929b909c32333708fd7140b597cc77ad69bb5342415"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            28,
+            48,
+            100,
+            104
+          ],
+          "sha256": "fb19cce281f3136a265a71c21b9271908c57c446552abd380bd9ceb6c65bacf4"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            32,
+            59,
+            96,
+            104
+          ],
+          "sha256": "4edefd37668fa14dcc7c67f24a16745138d8eae6c545350f6149d2d5dca4369d"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            11,
+            72,
+            117,
+            104
+          ],
+          "sha256": "afb54a41223fcd4e2f4a91848a71ad3ec1d10ebacc3c106f6d79d43c1574c251"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/khajiit.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "25b9e652c0589f7ed419aa8dd9b6da152c01402c975915417b8dda73bfa61e6d"
+        }
+      ],
+      "sha256": "eb09d163e25875dd2cfbdfe15730934c140b34941335d459c1e8113a2c3ad4e2"
+    },
+    {
+      "id": "khajiit.female.base",
+      "file": "img/sv_actors/Arena_Combat_khajiit_female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "3988d10f95f9594c9dd4c98d70ca14d39e163b1d6a953169e881472a0d6f5ec8"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "a5ecba1c66b4ed5f2a48514e41c1dda3c9cd575f93c3daee11857b8944a977a8"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            105,
+            104
+          ],
+          "sha256": "6e0c458a9aa43c2261f309aa24696f0905ac31aa4ac561cfa4199dee2696626f"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            41,
+            17,
+            109,
+            104
+          ],
+          "sha256": "cc8d43c6932a270b136b727861d55d6d022aceed90d64a85e0bceeddacc06190"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            22,
+            18,
+            109,
+            104
+          ],
+          "sha256": "fe28cd7bc6e19e4fb50a22db305356db6f0e84347aa1ed17ce94b9590479bda2"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            14,
+            107,
+            104
+          ],
+          "sha256": "840e5808e5938088ef1320b3ae751f1592bb1a674f388ada04ba04b5b298393a"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            25,
+            104,
+            104
+          ],
+          "sha256": "494f9591f8a4f632580a2360c3a797fbdb946aa0b0c662d651e0020d40041bc2"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            40,
+            34,
+            105,
+            104
+          ],
+          "sha256": "3611a710e24277e1e8e0ceb20262b6897897515794815c9e0c14e0147c3bd2d9"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            17,
+            106,
+            104
+          ],
+          "sha256": "1273bbfa0bebdaa16352d78f291f05dffc97f619ecd6ce4ee42d23aa63bd191d"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            33,
+            48,
+            95,
+            104
+          ],
+          "sha256": "3c6ede7fa296eef1e1df7c7620b42199e02c7587dfdf3a3a9f6d1a4d7d73797d"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            21,
+            71,
+            106,
+            104
+          ],
+          "sha256": "8d77133dcdd7f1033f5570bc3ceae75ea79d9bd4c009af27bfa18651817e63fb"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            15,
+            76,
+            112,
+            104
+          ],
+          "sha256": "bf9cc7eb50143dab1ccdfcd125a24f32e7a69a72bc4c57beae61e0f2b7c6b3cc"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/khajiit.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "25b9e652c0589f7ed419aa8dd9b6da152c01402c975915417b8dda73bfa61e6d"
+        }
+      ],
+      "sha256": "d862c1ef88ea9fd54483c647be8e386ad15c63027e201732efb43c9589e83196"
+    },
+    {
+      "id": "nord.male.base",
+      "file": "img/sv_actors/Arena_Combat_nord_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "c973a08f2345c4d1c506926b4d84a48459bb20fdd805a52996933c06d8e83336"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "57ec906f62e126adc9648417195c9c560c526e85b7576356433474058613dbdd"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            17,
+            101,
+            104
+          ],
+          "sha256": "e6059f30b23a17240c73109c6ff798b6a0f9ee942bbc19b8323ed8629575a6a7"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "2dcecb6c22fd71f006cf262ceab458ea8efd263e0c55889764daf301ca8f670c"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            20,
+            16,
+            109,
+            104
+          ],
+          "sha256": "530766d597aa92d17d47fb8eafc9d85b6e4e588ec750a5cc96f68dc469853ef6"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            15,
+            103,
+            104
+          ],
+          "sha256": "da2e3c92210cf1650f3f5bbeee3058bee879f441d4eb92fd1d17e6ba650031b9"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            17,
+            99,
+            104
+          ],
+          "sha256": "870d13ee2b86f3bee3d0af77d3a82487d5f5df25c5ed139aaaae5d1fe44ef8e7"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            42,
+            32,
+            93,
+            104
+          ],
+          "sha256": "5edfdf2fee919a7a3002fb0301cdbdfa49510e3ea506213b8c52f1a288129855"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            13,
+            104,
+            104
+          ],
+          "sha256": "fe7d39a5ebe9972c65ce43c12b7c1d123b7cadb1017b56413cade794d78fd853"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            30,
+            58,
+            97,
+            104
+          ],
+          "sha256": "dc19e2ffac95b697e56e081e5e16e85d9c374878895cfb37e11ce2f319dccfbe"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            26,
+            70,
+            102,
+            104
+          ],
+          "sha256": "37f51cfaee4e85e05e06a58ad999e96b1fd6b0a199a0b07b5b17cf97d207d3ab"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            15,
+            79,
+            112,
+            104
+          ],
+          "sha256": "8b663b11e93c5b89418b3fade98a15c2839ff03ccc2da264b03eef3b234f742a"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/nord.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "d8ec56e95af74d3ce14a5771efc002a0b8557c354325abc7ee332a63e4bcf990"
+        }
+      ],
+      "sha256": "fbd53cf2d27d82fda60703b42b5cf7a32b940b1f87f71cab027cd9610217b60f"
+    },
+    {
+      "id": "nord.female.base",
+      "file": "img/sv_actors/Arena_Combat_nord_female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "de9b2af3795f6da6215f7c9421bcf910357d882e453fe3afad8e686ff6358cb9"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "386baad9a07014f976a993123247219b78146f4361959e469fe38dbe7b1f4d85"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "f4c662f554433c5445d0d5440620cc4e83a97dafd93997fad0102a158da6cba9"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            19,
+            106,
+            104
+          ],
+          "sha256": "4c835a61652159063b0f491109621bf50d23383e7196ebf6c66874f2bd25c86c"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            21,
+            18,
+            109,
+            104
+          ],
+          "sha256": "0b34f8deffa944ec3b99334721baeef976a220829f39abc7ce5221ba5ee203f0"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "63efd33245f8626c46adfe7731dabe453af52d6b73bca3987f2e9f142ec2574b"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            19,
+            98,
+            104
+          ],
+          "sha256": "773e9c85d261c6395526dbfdc90cdac904b47bdce3346a5d9e12177bef7e952c"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            41,
+            33,
+            96,
+            104
+          ],
+          "sha256": "7439bd3d2fb090fc2f0e9eaeb3bebb056e148eee383c8beb10dd66dd91093be8"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            15,
+            105,
+            104
+          ],
+          "sha256": "660e3a610a6e27ab48c43433be59f325bef62d64f7abbc1949dca77f5050b0f6"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            32,
+            58,
+            95,
+            104
+          ],
+          "sha256": "8b7259b5859a8ec024236af13be82d755279b027f07c836966643ccfe15ec213"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            23,
+            72,
+            105,
+            104
+          ],
+          "sha256": "f5893f29fe6aad469ff098a04a9d8cf68764ca13991e315fe7416cc528043ba9"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            22,
+            80,
+            105,
+            104
+          ],
+          "sha256": "82ca466148def5635f98b270f7212f4eae17a3bb49c9061d39a1a139e83bddf6"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/nord.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "d8ec56e95af74d3ce14a5771efc002a0b8557c354325abc7ee332a63e4bcf990"
+        }
+      ],
+      "sha256": "e555a412712b4d78be08e1cfd6e2e8699d478569ce36d318adaedbcae6030334"
+    },
+    {
+      "id": "redguard.male.base",
+      "file": "img/sv_actors/Arena_Combat_redguard_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            106,
+            104
+          ],
+          "sha256": "f75f93adaced3bb2932b27f9d830427501b6a90e9f5334179b73ffa716bce1c2"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "bd925121a16a9012903d3e223937ac1c87abd6ab5e8b313bdbad9a8dde2ed5c2"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            104,
+            104
+          ],
+          "sha256": "c44d9dfdc6b5ef4727ab089aad64d18769612fa902c9207fa9a336202790bea5"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            17,
+            111,
+            104
+          ],
+          "sha256": "f1f689c1efc3ab107c51b2fe3848a0f2f6d5dd08b6e0c427657164ce2dd37a4f"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            24,
+            18,
+            113,
+            104
+          ],
+          "sha256": "a6d7a9a13bae793bc949dc674b75bf074de00131ff3a774177812db9f18ffe60"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            17,
+            111,
+            104
+          ],
+          "sha256": "a950b99963513a6b6b16b68531a95cc4fdf94f3d90e0cb44b8246c39d75bd9f2"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            17,
+            99,
+            104
+          ],
+          "sha256": "ef2c2b3d5521ee445cdb24b20863feb819f5ba1a5faa7dbd165af3ba0b241d21"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            44,
+            31,
+            102,
+            104
+          ],
+          "sha256": "8a0821c4542e66777559fdba111763bc4a2aa94cfe262e4498d22c663142bf2a"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            16,
+            105,
+            104
+          ],
+          "sha256": "071334593c556003d31640189da3b8956cdcd3e1dcd5d4a37fdfb218d0edab23"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            33,
+            47,
+            95,
+            104
+          ],
+          "sha256": "dfbd2f759f033d16b32e5c1ce2807c96f663e5d980bd4657d0a7c6f17961d9cc"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            28,
+            60,
+            99,
+            104
+          ],
+          "sha256": "2fd804d5cf78e59135197d028f60079b7878b8bfd3870dd5e7d03f65c5e1733b"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            14,
+            79,
+            113,
+            104
+          ],
+          "sha256": "e5e8f48499f8dd7b098272ea7c4c84a9716fae63a72a5c42dbab535b5453ff5a"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/redguard.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "b020fa1449ebf5878c2a42c15ccd982b007992c972e54a21c3583bb18ed0f62e"
+        }
+      ],
+      "sha256": "0d93a33f525aa3cc5609577375d47ef047c071967a8f3d4fed4b39320b40b54a"
+    },
+    {
+      "id": "redguard.female.base",
+      "file": "img/sv_actors/Arena_Combat_redguard_female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            15,
+            106,
+            104
+          ],
+          "sha256": "ccb688ac4b4a4b404ce610ecccf73585387a052af5ae59d555280f377232972a"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            107,
+            104
+          ],
+          "sha256": "2fefd7c07720b8ab1e31f6fdcdbbfdc48eab831e924747e59ed8474fdea5dca7"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            103,
+            104
+          ],
+          "sha256": "a8eb1770fd1c5fd5177ce83f73319a2149ac7414d5451c1afa741dc4337d0c51"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            18,
+            111,
+            104
+          ],
+          "sha256": "691df6019f1bee0a95659c9c16fd16ba7e0e1dbf539e20e9d5a63d5fa16ac7ab"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            22,
+            17,
+            113,
+            104
+          ],
+          "sha256": "78a95dd7fe79ff6b814e81b7f22c318af961008bf686b58d73454637089ad587"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            17,
+            104,
+            104
+          ],
+          "sha256": "fbef35acc3596158fd65ed72cd94bfd17161fbae64ae61e3422beeb0b3032132"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            18,
+            94,
+            104
+          ],
+          "sha256": "c739a1f4eb1c84b99a177ef34daab72d755d70443fae6c3b3337b36849e30854"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            43,
+            32,
+            100,
+            104
+          ],
+          "sha256": "6c2d7ef74bca2c90fb7bf2d1ad80b3de8f8e2d32ed76dadc375f2c878c4fc843"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            19,
+            102,
+            104
+          ],
+          "sha256": "6c0e274c4e5d6b3ae5a1b0bd2318d5747ddbf5b7d8ec0bbb88d1155a8eb9eb70"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            37,
+            46,
+            91,
+            104
+          ],
+          "sha256": "72339b5d10c3ae0d0123c361343a36d04c78e475c98a86c7e7a60ecdd544f7fc"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            26,
+            70,
+            102,
+            104
+          ],
+          "sha256": "df01681fa0d2235f7758a345e0436df207938d248fe23471be73d6f3da89c3e1"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            17,
+            82,
+            110,
+            104
+          ],
+          "sha256": "7fc8019621a397aae63857e4c5564127cdad611b4e3c7931d948a91294274e30"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/redguard.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "b020fa1449ebf5878c2a42c15ccd982b007992c972e54a21c3583bb18ed0f62e"
+        }
+      ],
+      "sha256": "b917ea325afd1374b056d9f4e79c955b25e1ecbd829a135cfa56b34d88551b80"
+    },
+    {
+      "id": "wood_elf.male.base",
+      "file": "img/sv_actors/Arena_Combat_wood_elf_male_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ],
+          "sha256": "3fc8a29adeee10e37ffae4c93f6b742f3be4090e6f846dca39ac733d5b4b9087"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "ef7e3e59596a9ad4a87a7c1389bffdc35187df8973440527d49bc8e82b653b0f"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            102,
+            104
+          ],
+          "sha256": "cba3932a16f97a44a277672bfc738d40323ce1975c070ea4fdec4ee7fdb47349"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            44,
+            21,
+            106,
+            104
+          ],
+          "sha256": "ba6baacef7ae670738af2195547075a16ca0aa41b7aa78fa24f15bd559adf80d"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            24,
+            22,
+            112,
+            104
+          ],
+          "sha256": "4f5dd06583944c6a515de1af37a22ce0e2e423625c967a3e474066c455473226"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            19,
+            102,
+            104
+          ],
+          "sha256": "782c728a3de1075830de2bb99b386647dc19d06298895abf61f701648d55d3d0"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            44,
+            22,
+            106,
+            104
+          ],
+          "sha256": "9466debd056ae653285c9c4f47693140e8773c26217a8c41ffb101c00c6a87bf"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            28,
+            38,
+            88,
+            104
+          ],
+          "sha256": "11cea812a51a5efe4695a9848590a0ada0eb94674a2d9404c267c22668dd0af4"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            22,
+            103,
+            104
+          ],
+          "sha256": "0e7762a3923a745f25803687bcf614054a06f2e3e704a84cd59c59eb1d4c36dc"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            28,
+            57,
+            99,
+            104
+          ],
+          "sha256": "7ac43b9d5028f3f5d4ed1e8a0e76ffa60c307077953ab06b725531032373639a"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            24,
+            74,
+            104,
+            104
+          ],
+          "sha256": "44346fc557a129079bb4b53f624b5ae60842b41ee557663ad270d23c2bc47464"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            19,
+            81,
+            108,
+            104
+          ],
+          "sha256": "95f307799583d7ada31ee7d70edf13c3e9793191556c79fd47b708a8b72864a2"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/wood_elf.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "1b391cf46116cf54cb3717ed9aad1a1ee80a8fdf54e2582219d39a518582a170"
+        }
+      ],
+      "sha256": "65cf829fd9942a8c62973e882a582a291da9e2ace8d9e2445a092d05b656d17e"
+    },
+    {
+      "id": "wood_elf.female.base",
+      "file": "img/sv_actors/Arena_Combat_wood_elf_female_r01.png",
+      "cell": [
+        128,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "97f57e63cd49e333f2a512085e28d25c09e59f479dd15504a31ec7c876624e1a"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "b3dc568488f304de9e420b92e9935b282de1ba7f49b91d92824532afacc8721c"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            44,
+            16,
+            101,
+            104
+          ],
+          "sha256": "0ebc0d9977bc64b441dad59ed680401b8832c3c0fa85e89935b32ddd9a121f06"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            42,
+            22,
+            109,
+            104
+          ],
+          "sha256": "157d9c8a1abbd2f40044be6efbbed39733c10d78fa5f17409d03a9faed50674a"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            23,
+            23,
+            109,
+            104
+          ],
+          "sha256": "d88437d024aba83d49f9b2e3f57454d3a165ad83a76ae62493920f43e055e233"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            44,
+            20,
+            100,
+            104
+          ],
+          "sha256": "0de40832ffac5aa1e0e7a08c1180c17b3e86a329a70b562019afc9b2f63687e5"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            43,
+            26,
+            102,
+            104
+          ],
+          "sha256": "33504a286612fdad3515f008e221893a4a34c80295859ee490508818357f8136"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            37,
+            43,
+            97,
+            104
+          ],
+          "sha256": "688288b349e4556f50b10c80d52e9547209af71ebb58a375fea89cc42d4abf54"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            44,
+            23,
+            100,
+            104
+          ],
+          "sha256": "0654df7d7486f7d19ca4ead48439d17bf31dd7c9adb0e52abeb641470250272d"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            30,
+            59,
+            97,
+            104
+          ],
+          "sha256": "6e90cebf43fd574c361597e3f64fcdca6ecb340657c8636b4bb869bf5206ced9"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            21,
+            77,
+            107,
+            104
+          ],
+          "sha256": "890516f98698c558c96423f752e3b0b7c14a4eac59b1b5b729232661169e08f3"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            18,
+            81,
+            110,
+            104
+          ],
+          "sha256": "a09f0754cc6f9ce63da89b1eb59984ded789f49dd8be693515162f0ef48e2795"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/wood_elf.png",
+          "size": [
+            1536,
+            1024
+          ],
+          "sha256": "1b391cf46116cf54cb3717ed9aad1a1ee80a8fdf54e2582219d39a518582a170"
+        }
+      ],
+      "sha256": "18a50ad7556c2d9154c7bd2396d4ca772d3b4647787fcbd46f15be199a8a2e95"
+    },
+    {
+      "id": "enemy.2",
+      "file": "img/enemies/Arena_Combat_enemy_2_r01.png",
+      "cell": [
+        192,
+        112
+      ],
+      "ground": 104,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            47,
+            32,
+            96,
+            104
+          ],
+          "sha256": "074ad02b30116144d02edf427a2327a9e4f738d3b6e1c142c57b27e37ca73321"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            45,
+            30,
+            96,
+            104
+          ],
+          "sha256": "1eefa9ea272cbdf84f0ee1426dcc0079c076f70afc3223568d8ce2714267e0e9"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            48,
+            34,
+            97,
+            104
+          ],
+          "sha256": "7a92d5c6a2a516392f72c5957575448277c41d05f971e565420cbc85b2a30cb8"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            57,
+            27,
+            110,
+            104
+          ],
+          "sha256": "c90fa1b6462b81fe3d7210021b67e4dfb1351d30e108b4fbababc5efaaba72f8"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            60,
+            52,
+            164,
+            104
+          ],
+          "sha256": "ea548a3e70528082394ae437d001a89bb6d3aa583aac503cced0937a518435ce"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            60,
+            51,
+            118,
+            104
+          ],
+          "sha256": "11059586f559f1990f5ced509f3fd162541dc9320a47b9ae5e780571f2ad348b"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            37,
+            40,
+            101,
+            104
+          ],
+          "sha256": "692f5bac33d29f99e5d5af353a42ef4f25e74deb493cb18643ba2467cab44d46"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            60,
+            56,
+            116,
+            104
+          ],
+          "sha256": "2baa4c143bc88ab1a35d28b956419881aa0074b1964526f417c1549943b83982"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            59,
+            52,
+            106,
+            104
+          ],
+          "sha256": "ef00198046aae9f82ecedcce12e23fd88ff5ef8d9b97c5f129f6aff22476928d"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            61,
+            43,
+            130,
+            104
+          ],
+          "sha256": "f7901427e4f4aee7718efe45bf9495dd5f6b3465a728f5e237687e269aa4a4a1"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            60,
+            63,
+            131,
+            104
+          ],
+          "sha256": "4a96ec3cb73b1c115bcfb7e88a591d145bdeacf9dda7bee1f006c940c4a36b4b"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            55,
+            83,
+            137,
+            104
+          ],
+          "sha256": "5637670d0a70d6366b784b0a077d60a91cf1556688000c7d2a8eaa83a51cc492"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/goblin.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "3b75c2d6f3084dfa555a66527fd7e909501735874cd2133d88eba31a880cc14b"
+        }
+      ],
+      "sha256": "e8f6db65e2fb1fbfa527713454619d326083f1433cee6a369cfc65e10a8cece4"
+    },
+    {
+      "id": "enemy.3",
+      "file": "img/enemies/Arena_Combat_enemy_3_r01.png",
+      "cell": [
+        192,
+        128
+      ],
+      "ground": 120,
+      "frames": [
+        {
+          "index": 0,
+          "alphaBox": [
+            47,
+            32,
+            145,
+            120
+          ],
+          "sha256": "ad4f606fb0ca9dbd3506ba7e08c4fa995b150bc8c3ba8afb3d9448ffe5316642"
+        },
+        {
+          "index": 1,
+          "alphaBox": [
+            50,
+            31,
+            143,
+            120
+          ],
+          "sha256": "c27652aa3602dbf963784797f349af6cd735c5f19d237e0b2c905144f2ecf858"
+        },
+        {
+          "index": 2,
+          "alphaBox": [
+            48,
+            32,
+            142,
+            120
+          ],
+          "sha256": "92d21784ed0fd0c65420ad93b395769d3c9875d1fc2b06c578307a79bdbe1f54"
+        },
+        {
+          "index": 3,
+          "alphaBox": [
+            50,
+            25,
+            143,
+            120
+          ],
+          "sha256": "600aae7b3044a3d457e84e45dcc28a6d10e172a053fe03ab8b73e1e0bce96593"
+        },
+        {
+          "index": 4,
+          "alphaBox": [
+            47,
+            46,
+            184,
+            120
+          ],
+          "sha256": "ded6d2e40785ca04a690453d4d3555f6d2568535cb12bbe99485a7d4fcff9c2d"
+        },
+        {
+          "index": 5,
+          "alphaBox": [
+            60,
+            44,
+            152,
+            120
+          ],
+          "sha256": "d668a1badc80b075ba1c177af4fd9656d792843fb5a7cfeaa8ac98cbefcdd646"
+        },
+        {
+          "index": 6,
+          "alphaBox": [
+            49,
+            26,
+            149,
+            120
+          ],
+          "sha256": "148a725d7a0f3f670bc97627032ff997444e7231d82ebcda2b5534eccff056f6"
+        },
+        {
+          "index": 7,
+          "alphaBox": [
+            55,
+            38,
+            135,
+            120
+          ],
+          "sha256": "5b37fe067e69ed8650c67759fe03ee349ae788a149b6be72bbee78f6ae1a5c9e"
+        },
+        {
+          "index": 8,
+          "alphaBox": [
+            48,
+            38,
+            140,
+            120
+          ],
+          "sha256": "2bdcd5ccf53703c124caae0fb6837160f00dcc08565347941f23f8811b8c50a4"
+        },
+        {
+          "index": 9,
+          "alphaBox": [
+            49,
+            36,
+            143,
+            120
+          ],
+          "sha256": "e861419a32746159438d29010348d65006c5b7955c208e540efa39cc8197c3d5"
+        },
+        {
+          "index": 10,
+          "alphaBox": [
+            47,
+            66,
+            145,
+            120
+          ],
+          "sha256": "85e27e3f31c8346ad16e13c509e0fa69fcc307db0429e277949dd87a10162826"
+        },
+        {
+          "index": 11,
+          "alphaBox": [
+            43,
+            77,
+            149,
+            120
+          ],
+          "sha256": "d1c4c2e68750e4e00d49954963d72fa4d1029019f3a024e7cd1cabd690964876"
+        }
+      ],
+      "sources": [
+        {
+          "file": "art/masters/combate-r01/lizard-man-r02.png",
+          "size": [
+            1086,
+            1448
+          ],
+          "sha256": "21748d8b08f25f82d1c65ab33c6e1074af8cdf2c917bf864163fcd6304aa3e1b"
+        }
+      ],
+      "sha256": "faafe2532a41e1d69d207e767841d9a6220d380c25b7189e6f6128fdaaee2bdc"
+    }
+  ],
+  "mastersIncludingPreviousVersions": [
+    {
+      "file": "art/masters/combate-r01/argonian.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "bbb53a8a09431a2b61832a4e98aeb1b2c5490725e022b7607103a8235781e36f"
+    },
+    {
+      "file": "art/masters/combate-r01/breton-female.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "7508fa1f45f8be8ea55369493d0f66d3803b1a0bdef83805f3af94ff9c8422ce"
+    },
+    {
+      "file": "art/masters/combate-r01/breton-male-defeat-r03.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "ec695491dd84334b6b7be80bea2e97bd41ca9c386972cbf54691eca5a0e8b505"
+    },
+    {
+      "file": "art/masters/combate-r01/breton-male-r02.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "d7ea564111f4bb0321385231fb61172435b3ff5e45ab72e4ef324d4f2e03a9de"
+    },
+    {
+      "file": "art/masters/combate-r01/breton-male.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "24fff712290b6d118bdb2fb837b102cd461704fd566df3146e5170792434a231"
+    },
+    {
+      "file": "art/masters/combate-r01/dark_elf.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "81ee2b3c96c0dc8f362043eedd16a22cbf3ecb36a8318ede2666aecbdb86e621"
+    },
+    {
+      "file": "art/masters/combate-r01/goblin.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "3b75c2d6f3084dfa555a66527fd7e909501735874cd2133d88eba31a880cc14b"
+    },
+    {
+      "file": "art/masters/combate-r01/high_elf.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "2cac874e99141ed0be64c038565d6526279093dc68c83afef915ca79b94d0042"
+    },
+    {
+      "file": "art/masters/combate-r01/khajiit.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "25b9e652c0589f7ed419aa8dd9b6da152c01402c975915417b8dda73bfa61e6d"
+    },
+    {
+      "file": "art/masters/combate-r01/lizard-man-r02.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "21748d8b08f25f82d1c65ab33c6e1074af8cdf2c917bf864163fcd6304aa3e1b"
+    },
+    {
+      "file": "art/masters/combate-r01/lizard-man.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "43e67bd860a5e8e1e06c420f990aab093fe9d0d1dd05e82ff392de08dd1e421e"
+    },
+    {
+      "file": "art/masters/combate-r01/nord.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "d8ec56e95af74d3ce14a5771efc002a0b8557c354325abc7ee332a63e4bcf990"
+    },
+    {
+      "file": "art/masters/combate-r01/rat.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "sha256": "2198d8ab1c3838bb231a00f0c5a670000fb6133c9c33f052c474df6bacd382b8"
+    },
+    {
+      "file": "art/masters/combate-r01/redguard.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "b020fa1449ebf5878c2a42c15ccd982b007992c972e54a21c3583bb18ed0f62e"
+    },
+    {
+      "file": "art/masters/combate-r01/wood_elf.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "1b391cf46116cf54cb3717ed9aad1a1ee80a8fdf54e2582219d39a518582a170"
+    }
+  ],
+  "prompts": [
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_argonian.json",
+      "sha256": "3d87da1d0d311b2a16765f89c747a130a6a580f4ce85f0526849647adc130dc7"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_breton-female.md",
+      "sha256": "f16e1eb9d216c613b901c846c68317135bb646ebeb9e98552fcf01f52f5083c0"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_breton-male.json",
+      "sha256": "0363dfacc85cb96e548dd29a9f081039644a5cd4a0c63c26b4f3d3330ae1d1fa"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_dark_elf.json",
+      "sha256": "cb131b36b052745152a7073219bc1604f2071eb27f0abe504f227d1b6cfdebfe"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_goblin.json",
+      "sha256": "9dff08f5ad41e2bc6901f643f1ad72e85f76e7f68090a7366b8553167b5d0d0b"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_high_elf.json",
+      "sha256": "01f15f710d959da5361f119d7fa34edf5cb12e9d8357fb488e5d917a087a16fe"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_khajiit.json",
+      "sha256": "4bfad1609938b10893df1ac0e391ac6c118d52eb310f1befb27abb28bb1a86ab"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_lizard-man.json",
+      "sha256": "2d2fd2a54dbc9d08e647868290f4f1f2ed5102da9d64b97efea6e3a652198393"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_nord.json",
+      "sha256": "fd538b127ca6ce5160f8a87cedc653383deade1c664fcf239bfea96f2bf941f0"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_rat.md",
+      "sha256": "6924c4909b8d28f75781c8a4c502b17be2242ef883442fa92df1490146c1293c"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_redguard.json",
+      "sha256": "4542b533b7092cb69ffae0c63627a016f5fcf7a8e745b6edd18dfe488fb174f4"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R01_wood_elf.json",
+      "sha256": "1245808b5d722865d1f66add5985c626573a91bd0058f60e520872aa14393786"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_breton-male.json",
+      "sha256": "0b4122e84aef4d218c8f2b1dd933502ea188328d0c7a127c3f2189eaab71f9a4"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R02_lizard-man.json",
+      "sha256": "353aca2cb43c15701c317121de56268d2cd80b5dc13f75b0ff229acebdb18e26"
+    },
+    {
+      "file": "doc/arte/PROMPT_COMBATE_R03_breton-male.json",
+      "sha256": "adbfd5f6f2dc91e244384ea150fcce5df7bb2c1407a4e13de58b17c1fc31ebd9"
+    }
+  ],
+  "limits": "Unique pixels and safe margins complement visual/native motion inspection; do not prove anatomy, support foot stability or identity on their own."
+}

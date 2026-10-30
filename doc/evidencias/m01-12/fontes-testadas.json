@@ -1,0 +1,45 @@
+{
+  "base": "6e59882",
+  "sourceHashes": {
+    "js/plugins/Arena_Inventory.js": "3b11a1ce0e1c268ee92a11660054383fe990d6c53acf0e55d65b7ab5687a74da",
+    "js/plugins/MV_EquipmentTransaction.js": "fce8e9098afe6cac23e2843f8fdcf81fc23a11d54a4b97868792c5f3b1f695b0",
+    "js/plugins/Arena_BattleUI.js": "277c914815e7885564bccc5b5357f4f506eef4c5d8288712b37bde419d388a26",
+    "data/ArenaInventory.json": "8ad69ec71765ebecc6b07f25e10abae69245275c5fe4ae91090006e1ba63eb04",
+    "data/Map007.json": "a90e9e53952b1f5b5b24c39612cdc8d3ea9891ac43d34b9784969547cd62f411",
+    "data/System.json": "55ea5e2d91f2cbd9baef5a1736d081c0167bc13c6f92cb05fad0fb46aabacdd2",
+    "js/plugins.js": "b0f6207ae2ff5ba570d113ea721ed64891cd0b55b5b868c8c8ed5e065c28fb8d",
+    "img/pictures/Arena_material_couro_v01.png": "e06ccb84157e35c7b41b7585fbd14db92e3e6b2b81def47ef9ea18479b4f052e",
+    "img/pictures/Arena_material_malha_v01.png": "c44e0b060cb3c3343d61911146475fd5637ae21166d14ee536f9218bac3b9414"
+  },
+  "nativeInventoryScenarios": 18,
+  "appearanceIdentities": 16,
+  "materialsPerIdentity": 2,
+  "mapCellsPerIdentity": 12,
+  "battleCellsPerIdentity": 42,
+  "viewportDesktop": [
+    1100,
+    800
+  ],
+  "logicalResolution": [
+    816,
+    624
+  ],
+  "touchEmulation": [
+    916,
+    412
+  ],
+  "regressions": {
+    "creation": 234,
+    "persistence": 27,
+    "battleUI": 12
+  },
+  "limits": [
+    "M01-12 appearance is a minimum material treatment, not new full garment silhouettes",
+    "No owner approval inferred for M01-12",
+    "No physical Galaxy A56/fullscreen/performance test",
+    "Editor authoring is separate from NW.js visual playtest"
+  ],
+  "isolation": "Disposable contexts and technical map; no personal saves",
+  "implementationCommit": "c3face1",
+  "artCommit": "86c9143"
+}

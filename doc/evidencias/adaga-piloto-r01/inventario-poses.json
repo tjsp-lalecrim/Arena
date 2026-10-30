@@ -1,0 +1,137 @@
+{
+  "method": "Native Sprite pose inspection only, not action execution; one Breton female/dagger",
+  "rows": [
+    {
+      "key": "cast",
+      "index": 0,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "cast",
+      "index": 1,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "cast",
+      "index": 2,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "cast",
+      "index": 3,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "cast",
+      "index": 4,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "cast",
+      "index": 5,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "item",
+      "index": 0,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "item",
+      "index": 1,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "item",
+      "index": 2,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "item",
+      "index": 3,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "item",
+      "index": 4,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "item",
+      "index": 5,
+      "visible": false,
+      "hand": null
+    },
+    {
+      "key": "defeat",
+      "index": 0,
+      "visible": true,
+      "hand": [
+        58,
+        46,
+        -35
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 1,
+      "visible": true,
+      "hand": [
+        62,
+        57,
+        -45
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 2,
+      "visible": true,
+      "hand": [
+        61,
+        75,
+        -65
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 3,
+      "visible": true,
+      "hand": [
+        45,
+        98,
+        -90
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 4,
+      "visible": true,
+      "hand": [
+        36,
+        101,
+        -90
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 5,
+      "visible": true,
+      "hand": [
+        35,
+        101,
+        -90
+      ]
+    }
+  ]
+}

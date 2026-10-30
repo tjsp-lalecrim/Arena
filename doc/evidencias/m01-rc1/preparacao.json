@@ -1,0 +1,43 @@
+{
+  "directory": "D:\\RPG Maker MV\\Projects\\Arena\\dist\\web\\m01-rc1-e407a69\\Arena",
+  "sourceCommit": "e407a69193e168c6c1a160ab5809b1781b4a6478",
+  "testVersion": "m01-rc1",
+  "runtimeFiles": 321,
+  "runtimeBytes": 37940326,
+  "totalBytes": 37996040,
+  "manifestSha256": "77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831",
+  "sourceRuntimeEqualTo": "38b3342 / develop114cf4b",
+  "documentationIntegration": "94f17ac0be932be3cb1b3fe0f919384c102f3582",
+  "buildsIdentical": true,
+  "local": "http://127.0.0.1:8773/Arena/",
+  "lan": "http://192.168.1.100:8773/avaliacao/",
+  "server": {
+    "pid": 25792,
+    "bind": "0.0.0.0",
+    "port": 8773
+  },
+  "network": {
+    "wifi": "192.168.1.100/24",
+    "gateway": "192.168.1.1",
+    "profile": "Private",
+    "httpLoopback": 200,
+    "httpOwnLanAddress": 200,
+    "firewall": "Read-only check found enabled private TCP allow rule for the exact node.exe executable. No firewall command changed rules.",
+    "physicalRemoteDevice": "not tested; same-Wi-Fi and router client isolation remain to verify"
+  },
+  "checks": [
+    "No gameplay/data/map/assets change versus approved implementation",
+    "Same recipe rebuilt identical manifest and bytes",
+    "Existing check-web-package passed on Windows; no claim of Linux execution in this round",
+    "Packaged loot/fallback/legacy IDs equal ce1a608; map/rest equal b8143f5;40 points/key preserved",
+    "Source guard and24 controlled rolls passed; previous native reward/rest evidence reused",
+    "Six core groups and six campaign-access groups ran against this /Arena/ package",
+    "All321 HTTP hashes verified; external support prepares only in RAM and refuses existing saves",
+    "Native menu save, close/reopen isolated Chrome and native Continue/Load preserve the allocated state"
+  ],
+  "limits": [
+    "A56 physical pending",
+    "No full campaign replay or new editor test",
+    "No main merge/push/tag/release publication/Pages"
+  ]
+}

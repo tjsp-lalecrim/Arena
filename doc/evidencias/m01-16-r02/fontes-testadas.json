@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-28",
+  "base": "2ea761d",
+  "branch": "feature/m01-quests",
+  "implementation": "edc95b5",
+  "sources": [
+    {
+      "file": "doc/prints/m01-16-diario-2026-10-28-atual-562e72e4-3349-4fa1-8b14-e031ef6bf182.png",
+      "sha256": "461211f5c2477d9548500e5368db75a5b59702cc68d6c4d410bf7469e25bb881",
+      "usage": "Current UI diagnosis"
+    },
+    {
+      "file": "doc/prints/m01-16-diario-2026-10-28-referencia-skyrim-d09808dd-a49e-4fba-b0a2-45cc73a15bf0.png",
+      "sha256": "563fe9f8e0cb219b5b922244365aa0d29ab0de6dfa00a03675a53a5a40591b78",
+      "usage": "Visual composition,dividers,hierarchy only"
+    }
+  ],
+  "art": "No artwork generated/edited. Custom code-native UI lines/diamonds; original images/fonts/rules not imported from Skyrim.",
+  "files": {
+    "js/plugins.js": "a5c0eddd221d2f02e82b6949b3c1435cd923564b154f9441f021f0e543f3f63c",
+    "js/plugins/Arena_Quests.js": "46da1cf6ab8fc431f26a60c76db4902bb34a13e8cb9ef38d622710b88714379a",
+    "js/plugins/MV_JournalModel.js": "608ea18b6a6039a21e1cfceab7e3bea16f7682bea646c2eefc693bc9b07fbdc1",
+    "js/plugins/Arena_QuestJournal.js": "1cf530ce244016ad668da4a9dd47d2b01ad31ca9c1bfe4cab7457fcdfeb9f5b9",
+    "data/ArenaQuestJournal.json": "b72200705253768ce2b102f7cb6f55fc7f2bc24c631442e68d7ab1960886bdf7",
+    "tools/validate-journal.cjs": "0d0479abcc2cd17bc8472c5917cea9d65b363fb1d02e51485bc94f43bf28899d",
+    "tools/test-journal.cjs": "3af68b3e98edd4295519670d981af826c3a9a4e13963a82de49d5cb3966fac92",
+    "tools/test-quests.cjs": "b80a76e45a93781480332f037690b6c019183391c70590c8017fc12dcb56b4cd",
+    "tools/validate-quests.cjs": "f4e2eee8a2cf6389d9f59388a72a2ced1eed6244fc2438de0a0f5b128e85df21"
+  },
+  "runs": {
+    "UI": {
+      "groups": 5,
+      "result": "resultado.json",
+      "cases": [
+        "real pending/complete/empty filters",
+        "multiple known quests without closing;unstarted hidden",
+        "narrative vs objectives separated;missing-key notice in steps",
+        "long titles/paragraphs/unbroken words/29 of30 steps",
+        "keyboard focus/filter/quest choice/scroll",
+        "wheel correct panel;click/drag/release",
+        "selection/filter/reading/tab context preserved on reopen",
+        "completed flag independent of text/stage",
+        "native save21/load refresh",
+        "640x480 reflow;hidden panels no targets;restore original dimensions",
+        "generic Android916x412 tap multi-quest/filters/back,drag scroll and Esc/reopen context",
+        "scroll reaches last revealed step and list end;native font measurements fit content columns;all panel rectangles inside screen/footer bounds"
+      ]
+    },
+    "regressionMQ01": {
+      "passed": 23,
+      "result": "regressoes/mq01/resultado.json",
+      "scope": "same native gameplay cases;only journal UI segment adapted to new completed filter instead of obsolete private _top property"
+    },
+    "pure": [
+      "MV_JournalModel filters/reveal/status/wrap/immutability in validate-journal.cjs",
+      "test-state-store.cjs",
+      "test-runtime.cjs"
+    ],
+    "static": [
+      "validate-journal.cjs",
+      "validate-quests.cjs",
+      "validate-dungeon.cjs"
+    ]
+  },
+  "preservation": "validate-journal compares original gameplay after removing UI-only old block and normalizing openJournal delegation. Map,quest definitions,inventory/loot/resources/encounters/engine/art byte-equivalent to base.",
+  "isolation": "Disposable Chrome contexts,save21 UI and18/19 MQ01. Synthetic quests/text/states in memory only;shipped presentation config contains MQ01 alone. Native MQ01 Gate flow separately tested;no personal saves.",
+  "captures": {
+    "pendente.png": "real initial MQ01 state",
+    "concluida-mq01.png": "presentation completed fixture,only MQ01 definition shown",
+    "concluida.png": "includes explicitly named test quests",
+    "janela-menor.png": "640x480,includes presentation fixtures",
+    "janela-menor-passos.png": "640x480 compact details,fixtures",
+    "toque-paisagem.png": "916x412 emulation,only MQ01 definition visible after testing multiple in-memory quests",
+    "regressoes/mq01/diario-concluido-rolagem.png": "native MQ01 completion after actual Gate contact with locate setup,not a full walking traversal"
+  },
+  "visualInspection": [
+    "pendente.png",
+    "concluida-mq01.png",
+    "concluida.png",
+    "textos-passos-longos.png",
+    "janela-menor-passos.png",
+    "toque-paisagem.png",
+    "aviso-item-ausente.png"
+  ],
+  "developmentFailuresCorrected": [
+    "Graphics.resize absent in MV: use native width/height setters",
+    "MV TouchInput hover position stale for wheel: scene-local wheel coordinates and listener cleanup",
+    "Tab initially transferred browser focus: prevent default only in journal",
+    "Compact resize fixture now follows actual current list/detail context;completion fixture world switches normalized by explicit test setup,not UI"
+  ],
+  "pending": [
+    "owner aesthetic/navigation assessment",
+    "native MV1.6.1 authoring/playtest this UI",
+    "Galaxy A56 physical at M01-19",
+    "viewports below540x400 logical or portrait not homologated"
+  ],
+  "noMerge": true
+}

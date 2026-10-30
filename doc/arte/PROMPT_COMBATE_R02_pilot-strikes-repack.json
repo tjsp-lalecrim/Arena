@@ -1,0 +1,9 @@
+{
+  "tool": "image_gen built-in",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit. TECHNICAL REPACK of the supplied12-frame Breton woman's light/heavy motion study. Preserve EXACTLY the same12 articulated poses, face, tied brown hair, cream blouse, brown vest, dark pants, boots, LEFT facing, proportions and style. Do not redesign or invent a different attack. Input has TWO rows of6 poses with feet touching between cells. Repack into exactly THREE columns and FOUR rows. Row1 = original light frames0,1,2. Row2 = light3,4,5. Row3 = heavy0,1,2. Row4 = heavy3,4,5. Separate EACH full figure with at least70px empty transparent gaps. No figure, boot, fist, elbow or hair may touch a neighbor. Figures may be smaller within cells but all12 have EXACT SAME scale. Keep chronological poses and planted feet, don't mirror or crop. No added weapons, text, grid or background. Truly transparent. Target1536x2048.",
+  "reference": "art/masters/combate-r02/pilot-strikes.png",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-02142cd9-35f6-4836-95b5-ee722d350712.png",
+  "master": "art/masters/combate-r02/pilot-strikes-repack.png",
+  "reason": "Only strike source has touching figures (11 components for12); preserve source and repack before export."
+}

@@ -1,0 +1,253 @@
+{
+  "baselineCommit": "0a917f8",
+  "approval": "pending owner; technical inspection is not aesthetic approval",
+  "masters": [
+    {
+      "file": "art/masters/retratos-pose-r03/argonian-male-pose-r03.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a36505790619845e1a90de6c9060ca4d87d30ccd771470735c43581289c804a1"
+    },
+    {
+      "file": "art/masters/retratos-pose-r03/argonian-female-pose-r03.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3dc7ca3d9b61718fd1634e935a3d1e52d9c760fbccdbd947323621add9a79f7c"
+    },
+    {
+      "file": "art/masters/retratos-pose-r03/khajiit-male-pose-r03.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e354046708f57586e746c62a0635e182c0d73111e14e120ca5a42385258446a9"
+    },
+    {
+      "file": "art/masters/retratos-pose-r03/khajiit-female-pose-r03.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4db2e2c50646f2f90f0cd07ecf5b5c40f95f25ea34b36e08d0d9983d84fe0dde"
+    },
+    {
+      "file": "art/references/pose-personagens/breton-female-busto-v01.png",
+      "size": [
+        572,
+        610
+      ],
+      "sha256": "17b076e87aab0c412d842daeb2015169db9c712b619b913e44d263d81afd323b"
+    },
+    {
+      "file": "art/references/pose-personagens/identity-argonian-female-r02.png",
+      "size": [
+        292,
+        299
+      ],
+      "sha256": "46cf7d5ff19abfd2f359badac2916f1bc9dbeca376da2ba1f3f217e4af5c9b04"
+    },
+    {
+      "file": "art/references/pose-personagens/identity-argonian-male-r02.png",
+      "size": [
+        278,
+        288
+      ],
+      "sha256": "4618df18438da1f596b5fcc53c9e33ddd2393f626037bd9df6dd5e2630a85a8f"
+    },
+    {
+      "file": "art/references/pose-personagens/identity-khajiit-female-r02.png",
+      "size": [
+        262,
+        314
+      ],
+      "sha256": "b4866fef89f731ddc517a9783f9b23fca245f5ba96366ce6f5b8a6ca1398089a"
+    },
+    {
+      "file": "art/references/pose-personagens/identity-khajiit-male-r02.png",
+      "size": [
+        262,
+        295
+      ],
+      "sha256": "6aecc02a4d05095c9e97bfda16603fa6206aff84e2627f51e60e8542e9a976c0"
+    }
+  ],
+  "exports": [
+    {
+      "file": "img/faces/Arena_argonian_male_pose_r03.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "6f80ff5c35ee976f512aafca7ed06e24dd1f55d6c61f50030535e3044555ccf2"
+    },
+    {
+      "file": "img/faces/Arena_argonian_female_pose_r03.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "cce9bcc430c97ea1e40aeeea85dc2d724e10134762fbe02ca58ac588fc01b334"
+    },
+    {
+      "file": "img/faces/Arena_khajiit_male_pose_r03.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "5dbf7182638e7e7674f053297588ddbda6140016c7a6b767daa4a1c10acc0a7e"
+    },
+    {
+      "file": "img/faces/Arena_khajiit_female_pose_r03.png",
+      "size": [
+        576,
+        288
+      ],
+      "sha256": "b6be187944803bce3b6bc868947792c6191b714d40fb1e94339dddf06df37020"
+    },
+    {
+      "file": "doc/arte/retratos-pose-r03-todos.png",
+      "size": [
+        880,
+        760
+      ],
+      "sha256": "0e83984a7c4b82560a0c43641a906be08bafb714d56afaae23bad91808869ef6"
+    },
+    {
+      "file": "doc/arte/retratos-pose-r03-antes-depois.png",
+      "size": [
+        960,
+        1440
+      ],
+      "sha256": "cb45012a9867c4bda12e14c0d9fdbbc2fa31b4c529fe96f99fdd70ace2eb328c"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "argonian.male.base",
+      "manualProbeAnchors": [
+        88,
+        32,
+        3,
+        65
+      ],
+      "scaleUniform": 0.1488403323727723,
+      "offset": [
+        -17,
+        15
+      ],
+      "eyeTargetEstimate": [
+        88,
+        52
+      ],
+      "headBoundsEstimate": [
+        18,
+        15,
+        133,
+        92
+      ],
+      "alphaBox": [
+        0,
+        15,
+        144,
+        144
+      ]
+    },
+    {
+      "id": "argonian.female.base",
+      "manualProbeAnchors": [
+        88,
+        32,
+        6,
+        61
+      ],
+      "scaleUniform": 0.16121212121212122,
+      "offset": [
+        -31,
+        16
+      ],
+      "eyeTargetEstimate": [
+        88,
+        52
+      ],
+      "headBoundsEstimate": [
+        13,
+        16,
+        134,
+        92
+      ],
+      "alphaBox": [
+        0,
+        16,
+        144,
+        144
+      ]
+    },
+    {
+      "id": "khajiit.male.base",
+      "manualProbeAnchors": [
+        88,
+        48,
+        5,
+        82
+      ],
+      "scaleUniform": 0.11382357346113524,
+      "offset": [
+        8,
+        7
+      ],
+      "eyeTargetEstimate": [
+        88,
+        52
+      ],
+      "headBoundsEstimate": [
+        42,
+        7,
+        117,
+        86
+      ],
+      "alphaBox": [
+        8,
+        7,
+        137,
+        144
+      ]
+    },
+    {
+      "id": "khajiit.female.base",
+      "manualProbeAnchors": [
+        88,
+        48,
+        5,
+        80
+      ],
+      "scaleUniform": 0.11666666666666667,
+      "offset": [
+        7,
+        5
+      ],
+      "eyeTargetEstimate": [
+        88,
+        52
+      ],
+      "headBoundsEstimate": [
+        37,
+        5,
+        115,
+        84
+      ],
+      "alphaBox": [
+        7,
+        5,
+        137,
+        144
+      ]
+    }
+  ],
+  "scope": "4 face sheets only; all other runtime assets and12 face references unchanged",
+  "matte": "2-source-pixel perimeter cleanup and antialias, as previous revision; no mirroring/deformation",
+  "guides": "external overlays on review boards only"
+}

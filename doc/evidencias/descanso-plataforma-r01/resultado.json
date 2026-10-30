@@ -1,0 +1,25 @@
+{
+  "browser": "156.0.8078.73",
+  "label": "Descanso técnico (refúgio)",
+  "location": [
+    124,
+    79
+  ],
+  "routeSteps": 19,
+  "checks": [
+    "Held launch command does not activate rest on entry",
+    "Native local walk from west of cell door; no geometry bypass or passive recovery",
+    "Keyboard restores all three once; held command and release do not queue another use",
+    "Full resources: status only, no restoration call or fictitious bar fill",
+    "Quest, inventory, equipment, progression, loot ledger, collected treasure, defeated enemy and area generation unchanged",
+    "In-battle API guard rejected recovery (controlled flag, not a new battle test)",
+    "Mouse and held emulated touch use the label; no queued use or stale destination",
+    "Native save/load before and after rest; no recovery on load or world-state changes",
+    "Old serialized map without new event gains only the rest event; no free recovery",
+    "Map geometry/properties/all previous events intact; exactly one nonblocking rest event appended"
+  ],
+  "errors": [],
+  "fixtures": "Isolated context: one optional treasure receipt and one defeated enemy seeded through persistence APIs before snapshots; no normal campaign progression invented",
+  "editor": "not executed",
+  "phone": "not executed"
+}

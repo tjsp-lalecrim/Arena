@@ -1,0 +1,8 @@
+{
+  "js/plugins/Arena_BattleUI.js": "e2f0384e4edfd55c0d56df635672e6ccd4354ff81f7dec44f5e3d31d672a6b95",
+  "js/plugins/MV_BattleSlots.js": "bd8dd59a2b1c5baf53ca7ca15d5d7e9e317c2fe0113e7f30346d47eb47deb744",
+  "data/ArenaBattleUI.json": "d42ee212c501f9501b80b473e0a26bbfc8c8e7180f47002affaf82b884e63aee",
+  "data/Map007.json": "f4566fe2617b0f5ae8a5c1b219be2a5f3be24c6ba746e292e49ce638b477df7c",
+  "data/Troops.json": "cc423634e6ff6934fca9a295560b3b90661605336fdf42fd006b4a70ff978755",
+  "js/plugins.js": "89c6853f394239ab58b18f0de0f6aeb091dc0181721c52cc2bb3d45ae6ca9b18"
+}

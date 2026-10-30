@@ -1,0 +1,13 @@
+{
+  "version": "R03-expansion",
+  "tool": "image_gen",
+  "id": "lizard-bite",
+  "prompt": "Use case: identity-preserve. Create exactly SIX chronological frames of a BITE attack for the EXACT stocky RIGHT-facing dark olive-green Arena Lizard Man shown in reference1. Reference2 original confirms creature/equipment identity. Preserve exact head/snout, teeth, scales, proportions, tail interpretation, round shield and golden-shaft trident. Current game action is a paralysing BITE, so the MOUTH attacks, NOT a trident stab. THREE columns by TWO rows, transparent1536x1024, equal512x512 cells, standing creature about300px tall including gear; generous60px transparent margins ALL sides. Same scale and grounded hind feet in every pose. Frames0 neutral ready stance with trident/shield close to body;1 shoulders/head withdraw and jaw begins to open;2 extend neck/torso partway to RIGHT, open mouth;3 IMPACT strong forward open-jaw snapping bite to RIGHT, trident held back (not thrust forward), shield attached to other forearm;4 retract head/jaw halfway;5 exact neutral ready stance. Natural reptilian neck/torso articulation, not detached head or sliding rigid body. No extreme added neck length, no new anatomy/gear, no cropped trident prongs/tail/shield/feet, no touching figures. Match painterly dark fantasy source finish, not pixel art, cute lizard or humanoid mask. No text/grid/background/effects/blood.",
+  "referencesActuallyProvided": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\lizard-man-r02.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\monsters\\page13-1.png"
+  ],
+  "generatedFile": "exec-4453824b-addc-405a-884a-e178901f2d30.png",
+  "destination": "art/masters/combate-r03-expansao/lizard-bite.png",
+  "status": "generated; technical and perceptual review required"
+}

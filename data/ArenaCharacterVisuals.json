@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "arrivalMapId": 4,
+  "rules": {
+    "weaponSkillIds": [
+      1,
+      5,
+      6,
+      7,
+      8
+    ],
+    "meleeWeaponTypeIds": [
+      1,
+      2
+    ],
+    "bowWeaponTypeIds": []
+  },
+  "visuals": {
+    "argonian.male.base": {
+      "id": "argonian.male.base",
+      "ready": true,
+      "character": "$Arena_argonian_male_walk_r02",
+      "face": "Arena_argonian_male_pose_r03",
+      "sidePicture": "Arena_argonian_male_r02_side",
+      "battler": "Arena_argonian_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "argonian.female.base": {
+      "id": "argonian.female.base",
+      "ready": true,
+      "character": "$Arena_argonian_female_walk_r02",
+      "face": "Arena_argonian_female_pose_r03",
+      "sidePicture": "Arena_argonian_female_r02_side",
+      "battler": "Arena_argonian_female_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "breton.male.base": {
+      "id": "breton.male.base",
+      "ready": true,
+      "character": "$Arena_breton_male_walk_r02",
+      "face": "Arena_breton_male_r02",
+      "sidePicture": "Arena_breton_male_r02_side",
+      "battler": "Arena_breton_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "breton.female.base": {
+      "id": "breton.female.base",
+      "ready": true,
+      "character": "$Arena_breton_female_r02",
+      "face": "Arena_breton_female_r02",
+      "sidePicture": "Arena_breton_female_r02_side",
+      "battler": "Arena_breton_female_r02",
+      "poseStatus": "pilot-walk-and-static-side",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions"
+    },
+    "dark_elf.male.base": {
+      "id": "dark_elf.male.base",
+      "ready": true,
+      "character": "$Arena_dark_elf_male_walk_r02",
+      "face": "Arena_dark_elf_male_r02",
+      "sidePicture": "Arena_dark_elf_male_r02_side",
+      "battler": "Arena_dark_elf_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "dark_elf.female.base": {
+      "id": "dark_elf.female.base",
+      "ready": true,
+      "character": "$Arena_dark_elf_female_walk_r02",
+      "face": "Arena_dark_elf_female_r02",
+      "sidePicture": "Arena_dark_elf_female_r02_side",
+      "battler": "Arena_dark_elf_female_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "high_elf.male.base": {
+      "id": "high_elf.male.base",
+      "ready": true,
+      "character": "$Arena_high_elf_male_walk_r02",
+      "face": "Arena_high_elf_male_r02",
+      "sidePicture": "Arena_high_elf_male_r02_side",
+      "battler": "Arena_high_elf_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "high_elf.female.base": {
+      "id": "high_elf.female.base",
+      "ready": true,
+      "character": "$Arena_high_elf_female_walk_r02",
+      "face": "Arena_high_elf_female_r02",
+      "sidePicture": "Arena_high_elf_female_r02_side",
+      "battler": "Arena_high_elf_female_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "khajiit.male.base": {
+      "id": "khajiit.male.base",
+      "ready": true,
+      "character": "$Arena_khajiit_male_walk_r02",
+      "face": "Arena_khajiit_male_pose_r03",
+      "sidePicture": "Arena_khajiit_male_r02_side",
+      "battler": "Arena_khajiit_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "khajiit.female.base": {
+      "id": "khajiit.female.base",
+      "ready": true,
+      "character": "$Arena_khajiit_female_walk_r02",
+      "face": "Arena_khajiit_female_pose_r03",
+      "sidePicture": "Arena_khajiit_female_r02_side",
+      "battler": "Arena_khajiit_female_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "nord.male.base": {
+      "id": "nord.male.base",
+      "ready": true,
+      "character": "$Arena_nord_male_walk_r02",
+      "face": "Arena_nord_male_r02",
+      "sidePicture": "Arena_nord_male_r02_side",
+      "battler": "Arena_nord_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "nord.female.base": {
+      "id": "nord.female.base",
+      "ready": true,
+      "character": "$Arena_nord_female_walk_r02",
+      "face": "Arena_nord_female_r02",
+      "sidePicture": "Arena_nord_female_r02_side",
+      "battler": "Arena_nord_female_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "redguard.male.base": {
+      "id": "redguard.male.base",
+      "ready": true,
+      "character": "$Arena_redguard_male_walk_r02",
+      "face": "Arena_redguard_male_r02",
+      "sidePicture": "Arena_redguard_male_r02_side",
+      "battler": "Arena_redguard_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "redguard.female.base": {
+      "id": "redguard.female.base",
+      "ready": true,
+      "character": "$Arena_redguard_female_walk_r02",
+      "face": "Arena_redguard_female_r02",
+      "sidePicture": "Arena_redguard_female_r02_side",
+      "battler": "Arena_redguard_female_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "wood_elf.male.base": {
+      "id": "wood_elf.male.base",
+      "ready": true,
+      "character": "$Arena_wood_elf_male_walk_r02",
+      "face": "Arena_wood_elf_male_r02",
+      "sidePicture": "Arena_wood_elf_male_r02_side",
+      "battler": "Arena_wood_elf_male_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    },
+    "wood_elf.female.base": {
+      "id": "wood_elf.female.base",
+      "ready": true,
+      "character": "$Arena_wood_elf_female_walk_r02",
+      "face": "Arena_wood_elf_female_r02",
+      "sidePicture": "Arena_wood_elf_female_r02_side",
+      "battler": "Arena_wood_elf_female_r02",
+      "poseStatus": "r02-native-three-phase-walk",
+      "battlerStatus": "static-pose-repeated-for-native-format-not-complete-motions",
+      "mapCell": [
+        64,
+        64
+      ]
+    }
+  }
+}

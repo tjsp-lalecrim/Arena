@@ -1,0 +1,66 @@
+{
+  "round": "M01-14 R03",
+  "date": "2026-10-27",
+  "base": "1f3b29f",
+  "tool": "built-in image_gen",
+  "status": "Correção para revisão, sem aprovação estética automática.",
+  "generations": [
+    {
+      "prompt": "Use case: stylized-concept. Create a COMPONENT atlas for an ORTHOGONAL top-down 2D RPG Maker map, not isometric, matching reference1 Arena dark fantasy aged wood, charcoal stone and rusty iron. True transparent background, no text, no floor/background squares, no characters. Six distinct assets in a 3-column 2-row atlas, each panel512 square, canvas1536x1024. Preserve generous transparent gaps. Top-left: ONLY the two wooden leaves of a closed double dungeon door, straight orthographic FRONT elevation, rectangle aspect3:2. Iron braces and small hinge straps, central seam. No stone, jambs, masonry, arch, lintel or roof. Vertical and horizontal lines parallel to image edges, NO foreshortening or diagonal edges. Top-center: same door from BACK, matching dimensions/material, closed pair of leaves, rear planks/brace identity; again no wall or frame, exact rectangle3:2. Top-right: same door seen DIRECTLY FROM ABOVE for an east-facing opening: two closed leaves form one long vertical narrow top-edge strip, length144px width12px at runtime. Show only aged wood thickness and tiny iron hinge hardware, no frontal panel, NO diamond/diagonal/isometric silhouette. Bottom-left: equivalent directly-overhead west-facing top edge, upperleft coherent lighting independently, same physical proportions; no frontal picture rotated. Bottom-center: independent low rectangular stone sleeping/resting PLATFORM, top-down orthogonal square stone slab with rough coldgray large slabs, thin visible south lip only, height8px at runtime144px square; fully transparent outside slab. NO incorporated back wall, upright stone, roof, floor surround, mattress, room or isometric diamond. Must work isolated in center of room. Bottom-right: ONLY two hanging rusty prison restraint chains with small wall-fastening plates and lower rings/manacles, orthographic frontal, no masonry or wall behind them, transparent gaps between chain links, no barred niche/frame. Both chains fit width48 height96 runtime. All assets painterly realistic dark fantasy as reference, readable small, muted palette. Do not depict any object's surrounding architecture. These are components, not animation frames: animation will use fixed hinges so never redraw frames.",
+      "inputs": [
+        {
+          "file": "art/m01-14/complementos-prisao-v01.png",
+          "role": "approved material/style only; not object geometry"
+        }
+      ],
+      "output": "art/m01-14/componentes-ortogonais-r03-master.png",
+      "actualSize": [
+        1536,
+        1024
+      ],
+      "packing": "tools/build-dungeon-r03-assets.py; one fixed source window per component before all frames; front/back shortened by fixed orthographic crop, overhead texture pivot projection, no redrawn masonry"
+    },
+    {
+      "prompt": "Use case: stylized-concept. Create one compact treasure pile in THREE states for an orthogonal top-down RPG. Input1 original Arena treasure identity (white background is not artwork); input2 style/color/treasure identity continuity ONLY, ignore doors and ripples. Transparent background, NO masonry/floor square, text, labels, frame, characters or rarity glow. One horizontal strip1536x512, three equally spaced512x512 cells, same ground baseline and camera. Col1 available treasure: bulging upright brown sack at back, substantial folded crimson cloth and a modest gold coin mound, dark blue small equipment object and dagger/hilt accents, identifiable like original Arena. COMPACT nearly square occupied silhouette, not a wide flat scattered puddle: actual object width to height ratio about1.10, so it reads44x40px runtime in48px tile. Col2 same pile opened sack, fewer coins, same cloth and support/pivot, still compact nearly square. Col3 collected remnant of empty slumped sack and folded cloth, recognizable but no gold reward duplication; compose footprint close to same44x40 occupied extent, do not stretch anything. Fixed orthogonal overhead camera slightly elevated ONLY to reveal sack mouth; no isometric diamond or diagonal floor. Painterly dark fantasy, match input2 red cloth/aged leather/metal palette and finish. True alpha everywhere outside objects, small transparent margins, no contact with neighboring cells.",
+      "inputs": [
+        {
+          "file": "doc/prints/arena_loot.jfif",
+          "role": "Arena treasure identity; background ignored"
+        },
+        {
+          "file": "art/m01-14/portas-tesouros-r02-master.png",
+          "role": "continuity of approved pile finish/colors; doors ignored"
+        }
+      ],
+      "output": "art/m01-14/tesouros-compactos-r03-master.png",
+      "actualSize": [
+        2172,
+        724
+      ],
+      "packing": "three source cells, proportional44x44 fit, fixed2px margins/foot support; no floor"
+    }
+  ],
+  "defectReferenceFiles": [
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\m01-14-revisao-2026-10-27-01-d366b18f-54cc-41d1-a612-9b6fccbe21a0.png",
+      "role": "defect diagnosis only; NOT provided as positive reference to generation tool"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\m01-14-revisao-2026-10-27-02-ef0baeb6-ad15-4191-b2b9-dcb4c8f484a0.png",
+      "role": "defect diagnosis only; NOT provided as positive reference to generation tool"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\m01-14-revisao-2026-10-27-03-3299aa9a-a903-4065-a58f-f0526762e1c6.png",
+      "role": "defect diagnosis only; NOT provided as positive reference to generation tool"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\m01-14-revisao-2026-10-27-04-58b5dff9-da86-4363-999f-a61223ea1f82.png",
+      "role": "defect diagnosis only; NOT provided as positive reference to generation tool"
+    },
+    {
+      "file": "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\m01-14-revisao-2026-10-27-05-06630e3f-1cfe-43d3-ac86-b6016dd4f821.png",
+      "role": "defect diagnosis only; NOT provided as positive reference to generation tool"
+    }
+  ],
+  "preserved": "R01/R02 masters and runtime images retained; no actor/portrait/narrative or reward-rule changes."
+}

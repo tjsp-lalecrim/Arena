@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen",
+  "model": "não informado pela ferramenta",
+  "version": "R04",
+  "purpose": "correção técnica da câmera e separação de superfícies para amostra em grade; sem regenerar ilustração aprovada",
+  "transparent_background": false,
+  "referenced_image_paths": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\revisao-r02\\dungeon-identidade-r02.png"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: small orthographic RPG Maker MV dungeon surface study derived from the attached APPROVED Arena dungeon painting. Image 1 is the approved style/material/identity continuity reference, NOT a scene to regenerate. Create ONE opaque landscape sheet split into exactly two equal square panels with no gap or border. LEFT square: strictly overhead orthographic floor of large worn brown slate prison slabs; only TWO large slabs across and TWO large slabs vertically, wide dark mortar joints, flat surface, subtle damp wear. RIGHT square: orthographic frontal elevation material swatch of the same cold gray-violet large rectangular masonry blocks from the approved prison walls; two horizontal courses, only two blocks across per course, staggered joins, almost flat frontal lighting with relief edges. These are material swatches for technical assembly into a small 2D top view map, NOT a perspective room, no converging lines, no floor visible in right panel, no wall visible in left panel. Keep the original recognizable Arena identity: brown large paving slabs clearly different from purple-gray prison masonry. Painterly dark fantasy, muted, readable at final48px tiles, simplified detail, no pixel art, no photorealistic plastic. Every square must fill edge to edge without margin, decorative frames, text, letters, numbers, objects, protagonists, doors or chains; these are just the two required surfaces. Tileable material at each panel's opposite edges, consistent scale, no highlights or vignettes at sheet edges. Preserve approved materials/colors while correcting camera and making surfaces technically packable. Output intended 1536x768, left768x768 and right768x768, opaque."
+}

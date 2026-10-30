@@ -1,0 +1,43 @@
+{
+  "base": "35a15e6",
+  "implementationCommit": "082064631997c389ac50865bc189882dda86b2ca",
+  "resolution": [
+    816,
+    624
+  ],
+  "sources": {
+    "js/plugins/Arena_Inventory.js": "a89d0c27afc67452277fd307d1292ec9cd3c3956a09643dcd50204f69b2356ff",
+    "js/plugins.js": "b0f6207ae2ff5ba570d113ea721ed64891cd0b55b5b868c8c8ed5e065c28fb8d",
+    "tools/test-inventory-comparison.cjs": "8f09568c6d3dba8352326d26618bd2107f5f09ce3ebca4bce5d20f8cc8fee11a",
+    "tools/test-inventory.cjs": "3f7bed1359678c5d63e828fd8bf70cfd9eba19878d42f635265cecf3dcafa71e",
+    "tools/test-inventory-touch.cjs": "cb4dc184419685768446870f4dac083b544994e080b429314fa9e0eba571731d"
+  },
+  "consultation": {
+    "status": "read-only code observation, no copy or runtime UI claim; not official/normative/dependency",
+    "files": {
+      "BS_Inventory108.js": "90a3b5c79e4e62056449c5f27c15a68b308f9a9a12e13413dc465f2550ef6b94",
+      "BS_MenuPanels113.js": "1fceeffb0f63d8de232c03cfa33b2d4d408bccca623adf835d1342223c3f7bdd"
+    }
+  },
+  "results": [
+    "comparacao.json: 7 scenarios",
+    "resultado.json: 18 native inventory scenarios",
+    "toque.json: generic Android 916x412 emulation",
+    "validate-inventory.cjs: PASS; canonical plugin list, existing rules/art/engine unchanged"
+  ],
+  "visualInspection": [
+    "equipamentos-icones.png",
+    "equipamentos-nomes-longos.png",
+    "comparacao-couro-malha.png",
+    "comparacao-slot-vazio.png",
+    "comparacao-nomes-longos.png",
+    "mobile-comparacao.png"
+  ],
+  "pending": [
+    "owner evaluation of R02",
+    "new MV editor session/playtest for R02",
+    "physical Galaxy A56/fullscreen/ergonomics",
+    "existing material/silhouette artistic scope remains limited"
+  ],
+  "isolation": "Disposable Chrome contexts; test save20 never accesses personal saves; long name, buff and rate fixtures in memory only."
+}

@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen.imagegen",
+  "model": "não informado",
+  "artGuide": "1.1",
+  "status": "em revisão; não aprovado",
+  "requests": [
+    {
+      "id": "dungeon-r02",
+      "file": "dungeon-identidade-r02.png",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\imperial dungeons 01.jfif",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\chains-reference.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\niche-architecture-reference.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\imperial dungeons exit.jfif"
+      ],
+      "prompt": "PROJETO: releitura The Elder Scrolls Arena em RPG Maker MV; DIREÇÃO 1.1 em revisão, NÃO fantasia medieval genérica. Use case stylized-concept. CATEGORIA: UM trecho de prisão para exploração superior 2D, pintura digital dark fantasy figurativa, não pixel art nem reprodução da resolução do original. REFERÊNCIAS ANEXADAS: 1 cela original para materiais/chão/paredes; 2 recorte das correntes para argolas e peso; 3 arquitetura/nichos recortada sem HUD; 4 corredor de saída apenas para alvenaria/material, NÃO colocar o portal nesta cela. COMPOSIÇÃO: imagem retangular 1152x960 representando corte superior ortográfico de pequena cela aberta a um corredor inferior, vista de cima levemente oblíqua, norte para cima, SEM isometria, SEM ponto de fuga, SEM teto. Será exibida a576x480; pensar numa grade lógica12x10 de48px na escala final, sem desenhar grade. Paredes ocupam faixa norte de2células e laterais de1; corredor/chão acessível no centro e ao sul. IDENTIDADE ARENA: grandes lajes planas marrons/ardósia levemente quentes no PISO, juntas largas, cada laje ainda grande na escala final; poucas lajes por área, não mosaico de pedrinhas. PAREDES distintas em fiadas de GRANDES blocos retangulares cinza-violeta frio, sem a mesma textura do piso. Grade de ferro retangular enferrujada numa cela lateral à esquerda, porta de madeira escura com cintas de ferro à direita, duas correntes grossas com argolas penduradas na parede norte, plataforma/nicho elevado junto à parede norte à direita com pequena chave de rubi. Chão úmido, pedra lascada, prisão antiga austera. Luz fria escura/opressiva, fundo dos nichos quase negro, realces suficientes para distinguir piso/barreiras/objetos, pouco musgo nas juntas, sem vegetação decorativa. Sem arquiteturas góticas exageradas/castelo genérico, caveiras decorativas ou colecionáveis inventados. MATERIAIS da referência, acabamento pintado moderno, silhuetas legíveis. NÃO mostrar personagem do jogador, mãos, braços, sombra corporal, silhueta, armas seguradas, NPCs, inimigos ou reflexos humanos. Ignorar quaisquer logos/HUD/textos das fontes. Sem texto, letras, números, marca-d'água, interface ou borda. Esta é amostra de trecho, NÃO cópia do mapa inteiro nem cena em primeira pessoa."
+    },
+    {
+      "id": "rato-r02",
+      "file": "rato-ameaca-r02.png",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\rat.png",
+        "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\rat-side-reference.png"
+      ],
+      "prompt": "PROJETO The Elder Scrolls Arena reinterpretado em dark fantasy figurativo moderno; guia1.1 em revisão. CATEGORIA: pequena amostra de rato de esgoto ameaçador em Side View, não animação de combate completa. REFERÊNCIAS ANEXADAS: 1 captura original frontal rat.png, para expressão, dentes, patas e proporções; 2 quadro lateral REAL de RAT3.CFA decodificado comPAL.COL ampliado só para consulta, para silhueta/estrutura; NÃO copiar pixels nem baixa resolução. Não usar os ratos fofos/naturalistas da amostra rejeitada. IDENTIDADE: dorso pesado muito arqueado e escuro, focinho alongado baixo anguloso, antebraços e patas dianteiras robustos cor ferrugem, olhos pequenos vermelhos hostis, boca escura com incisivos compridos amarelados claramente expostos; cauda fina longa marrom avermelhada, orelhas pequenas discretas, pelagem áspera carvão/marrom-oliva. Animal perigoso, não mascote, não rato doméstico de olhos grandes, sem espinhos/fantasia mutante/sabre de felino. SAÍDA PNG alpha transparente real, uma linha de QUATRO células iguais em canvas2048x512. Mesma criatura lateral voltada DIREITA, MESMA escala e apoio das patas na linha80% da altura, no máximo75% da largura em cada célula INCLUINDO cauda, ampla margem, sem cortes. QUADROS distintos: 1 alerta agachado com dentes expostos; 2 preparação, patas comprimidas e cabeça recuada, boca começando a abrir; 3 bote/mordida, peito e cabeça projetados à frente com maxilar aberto e dentes muito legíveis, sem translacionar todo o corpo para fora da célula; 4 recuperação, patas reassentam e cabeça volta à guarda. Variação expressiva e mecânica clara, não quatro fotos quase iguais de respiração. Mesmas marcas/pelagem/anatomia entre quadros. Pintura digital, materiais críveis, paleta escura pouco saturada, luz fria superior esquerda com contorno suficiente para leitura a96x64 por quadro. Sem piso, sombra projetada, cenário, inimigo humano, sangue, legendas, textos, números, grade ou moldura. A amostra cobre APENAS preparação/bote/recuperação; não inferir dano/morte completos."
+    },
+    {
+      "id": "ria-r02",
+      "file": "ria-sem-protagonista-r02.png",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\ria silmane.jfif",
+        "D:\\RPG Maker MV\\Projects\\Arena\\doc\\prints\\imperial dungeons 01.jfif"
+      ],
+      "prompt": "PROJETO The Elder Scrolls Arena, direção dark fantasy figurativa1.1 em revisão. Use case illustration-story. CATEGORIA: ilustração narrativa reutilizável do sonho de Ria Silmane nas Masmorras Imperiais, SEM protagonista. REFERÊNCIAS ANEXADAS: 1 Ria Silmane original, para identidade reconhecível de aparição, rosto, cabelo longo escuro ondulado, manto muito claro/ivório luminoso e atmosfera azul-nuvem; 2 cela original para pedra/correntes/nicho. Não usar ilustração anterior com prisioneira nem rosto da bretã piloto. COMPOSIÇÃO1536x1024: cela fria vazia de pedra, visão ambiental frontal neutra sem elementos corporais do observador; Ria aparece como visão de busto/torso translúcido entre névoa azul fria no centro-esquerda, manto amplo claro envolvendo os ombros, rosto sereno e grave remetendo à referência original, não modelo genérica em vestido medieval azul ornado. À direita, parede de grandes blocos cinza-violeta, correntes com argolas e plataforma/nicho com pequena chave de rubi, sugerindo sua orientação de fuga. Piso em grandes lajes marrons/ardósia, distinto das paredes. Escuro opressivo com iluminação espectral legível e mínima luz quente distante, acabamento de pintura digital moderna, não pixelart nem fotomontagem. Região inferior20% relativamente limpa para texto posterior do jogo. Ria é a ÚNICA figura visível e deve parecer espírito, não pessoa física sentada. Se suas mãos aparecerem, devem estar claramente ligadas ao próprio torso de Ria, etéreas; NÃO mãos em primeiro plano. PROIBIDO mostrar jogador/prisioneiro: nenhum rosto, corpo, mãos, braços, silhueta, sombra corporal, reflexo ou equipamento que fixe raça/gênero/equipamento do protagonista. Nenhum acompanhante/guarda/arma segurada. Não incluir texto, logos, HUD, números, letras, molduras ou marcas-d'água. Preservar contexto do sonho, não um encontro físico nem magia de combate."
+    }
+  ]
+}

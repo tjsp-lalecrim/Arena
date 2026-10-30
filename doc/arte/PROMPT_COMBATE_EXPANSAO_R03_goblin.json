@@ -1,0 +1,13 @@
+{
+  "version": "M01-10/R03 expansion prerequisite to M01-11",
+  "tool": "image_gen built-in",
+  "transparent_background": true,
+  "references": [
+    "D:\\RPG Maker MV\\Projects\\Arena\\art\\masters\\combate-r01\\goblin.png",
+    "D:\\RPG Maker MV\\Projects\\Arena\\tmp\\original-review\\monsters\\page6-1.png"
+  ],
+  "prompt": "Use case: identity-preserve. Expand supplied Arena goblin's animation, preserving EXACT creature silhouette, yellow/olive skin, broad pointed ears, blue eyes, teeth, reddish loincloth and steel sword from image1. Image2 original Arena sprite confirms identity/materials, NOT source resolution to copy. SIX columns by FOUR rows = EXACTLY24 distinct full-body cutouts, chronological LEFT to RIGHT in each row. Creature faces RIGHT in every cell. Transparent PNG1536x1024, cells256x256; figure about160px tall including sword, generous25px margins so blade/ears/feet NEVER touch neighbors or crop. Same scale and ground baseline within every cell. Row1 idle6 breathing/alert cycle with grounded feet and sword held naturally. Row2 sword strike6: neutral, raise sword anticipation, prepare torque, extended slash IMPACT to RIGHT, half recover, exact neutral. Clear intermediate articulated arm/body poses, not sliding/duplicating one sprite. Row3 hurt6: neutral, recoil, compressed flinch, half recover, almost neutral, neutral. Row4 defeat6: neutral weakening, losing balance, knees fall, hand supports ground, fall on side, completely lying still with whole sword contained. Natural attachment of blade to gripping hand throughout. Preserve proportions/gear and painterly dark fantasy style of image1. No extra weapons/shield/clothes, no player, no text/grid/effects/background. No mirrored facing left.",
+  "generatedPath": "C:\\Users\\hplea\\.codex\\generated_images\\01a174c8-fc02-7100-bd7c-ad4775302730\\exec-6ec92d08-eedd-47cc-b7c8-f24c673237c2.png",
+  "master": "art/masters/combate-r03-expansao/goblin.png",
+  "approval": "New candidate, not covered by approval of original pilot R02."
+}

@@ -1,0 +1,209 @@
+{
+  "method": "Native sprite pose inspection only, not action execution; one Breton female/short sword",
+  "rows": [
+    {
+      "key": "cast",
+      "index": 0,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        -6,
+        -66
+      ]
+    },
+    {
+      "key": "cast",
+      "index": 1,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        6,
+        -66
+      ]
+    },
+    {
+      "key": "cast",
+      "index": 2,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        -6,
+        -66
+      ]
+    },
+    {
+      "key": "cast",
+      "index": 3,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        6,
+        -66
+      ]
+    },
+    {
+      "key": "cast",
+      "index": 4,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        -6,
+        -66
+      ]
+    },
+    {
+      "key": "cast",
+      "index": 5,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        6,
+        -66
+      ]
+    },
+    {
+      "key": "item",
+      "index": 0,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        -6,
+        -66
+      ]
+    },
+    {
+      "key": "item",
+      "index": 1,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        6,
+        -66
+      ]
+    },
+    {
+      "key": "item",
+      "index": 2,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        -6,
+        -66
+      ]
+    },
+    {
+      "key": "item",
+      "index": 3,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        6,
+        -66
+      ]
+    },
+    {
+      "key": "item",
+      "index": 4,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        -6,
+        -66
+      ]
+    },
+    {
+      "key": "item",
+      "index": 5,
+      "visible": false,
+      "hand": null,
+      "weapon": [
+        6,
+        -66
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 0,
+      "visible": true,
+      "hand": [
+        58,
+        46,
+        -35
+      ],
+      "weapon": [
+        6,
+        -66
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 1,
+      "visible": true,
+      "hand": [
+        62,
+        57,
+        -45
+      ],
+      "weapon": [
+        2,
+        -55
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 2,
+      "visible": true,
+      "hand": [
+        61,
+        75,
+        -65
+      ],
+      "weapon": [
+        3,
+        -37
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 3,
+      "visible": true,
+      "hand": [
+        45,
+        98,
+        -90
+      ],
+      "weapon": [
+        19,
+        -14
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 4,
+      "visible": true,
+      "hand": [
+        36,
+        101,
+        -90
+      ],
+      "weapon": [
+        28,
+        -11
+      ]
+    },
+    {
+      "key": "defeat",
+      "index": 5,
+      "visible": true,
+      "hand": [
+        35,
+        101,
+        -90
+      ],
+      "weapon": [
+        29,
+        -11
+      ]
+    }
+  ]
+}

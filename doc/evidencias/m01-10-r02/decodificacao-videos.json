@@ -1,0 +1,61 @@
+{
+  "browser": "156.0.8078.47",
+  "method": "Chrome HTMLVideoElement decoder; actual recorded pixels; player/enemy crops1:1, no reconstructed motion",
+  "videos": [
+    {
+      "name": "antes-r01-leve-pesada",
+      "decodedFrames": 61,
+      "lastTime": 8.23
+    },
+    {
+      "name": "adaga-leve",
+      "decodedFrames": 50,
+      "lastTime": 5.899
+    },
+    {
+      "name": "adaga-pesada",
+      "decodedFrames": 65,
+      "lastTime": 6.033
+    },
+    {
+      "name": "espada-pesada",
+      "decodedFrames": 62,
+      "lastTime": 6.066
+    },
+    {
+      "name": "conjuracao",
+      "decodedFrames": 62,
+      "lastTime": 6.1
+    },
+    {
+      "name": "pocao",
+      "decodedFrames": 62,
+      "lastTime": 6.065
+    },
+    {
+      "name": "derrota-rato",
+      "decodedFrames": 81,
+      "lastTime": 7.998
+    },
+    {
+      "name": "derrota-jogador",
+      "decodedFrames": 72,
+      "lastTime": 7.095
+    },
+    {
+      "name": "espada-leve",
+      "decodedFrames": 58,
+      "lastTime": 5.966
+    },
+    {
+      "name": "desarmado-leve",
+      "decodedFrames": 60,
+      "lastTime": 5.933
+    },
+    {
+      "name": "desarmado-pesada",
+      "decodedFrames": 61,
+      "lastTime": 6
+    }
+  ]
+}

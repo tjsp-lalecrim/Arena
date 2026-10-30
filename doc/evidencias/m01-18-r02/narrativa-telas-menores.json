@@ -1,0 +1,1610 @@
+{
+  "browser": "156.0.8078.73",
+  "checks": [
+    "touch release advances once; held touch and idle do not queue pages; story contains only Back/Continue",
+    "mouse Next/Back and keyboard focus across two buttons; navigation itself preserves narrative state",
+    "all14 illustrated moments: contained art, text wrapping, no overlap at640x480/916x412/desktop; contextual key/portal images captured",
+    "v1 save migrates old R02 word30 to new R04 word10; exact cursor of unchanged text/resources/quest/inventory preserved"
+  ],
+  "layouts": [
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "I01",
+      "picture": "Arena_intro_I01_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        176,
+        176,
+        198,
+        121,
+        176,
+        187,
+        143,
+        220,
+        220
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "I02",
+      "picture": "Arena_intro_I02_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        209,
+        187,
+        220,
+        220,
+        220,
+        209,
+        209,
+        176,
+        209
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "I03",
+      "picture": "Arena_intro_I03_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        165,
+        143,
+        220,
+        176,
+        121,
+        132,
+        88,
+        132,
+        198
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "I04",
+      "picture": "Arena_intro_I04_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        220,
+        165,
+        220,
+        198,
+        220,
+        209,
+        143,
+        220,
+        187
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "I05",
+      "picture": "Arena_intro_I05_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        209,
+        220,
+        198,
+        198,
+        132,
+        143,
+        198,
+        154,
+        132
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R01",
+      "picture": "Arena_intro_R01_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        187,
+        209,
+        187,
+        187,
+        220,
+        209,
+        187
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R02",
+      "picture": "Arena_intro_R02_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        220,
+        209,
+        198,
+        132,
+        110,
+        198,
+        198,
+        198,
+        187
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R03",
+      "picture": "Arena_intro_R03_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        198,
+        220,
+        187,
+        165,
+        198,
+        220,
+        176,
+        55
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R04",
+      "picture": "Arena_intro_R04_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        187,
+        154,
+        187,
+        209,
+        176,
+        154,
+        209,
+        187,
+        143
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R05",
+      "picture": "Arena_intro_R05_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        176,
+        165,
+        220,
+        165,
+        220,
+        209,
+        187,
+        143,
+        143
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R06",
+      "picture": "Arena_intro_R06_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        143,
+        209,
+        209,
+        209,
+        209,
+        176,
+        209,
+        165,
+        99
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R07",
+      "picture": "Arena_intro_R07_r02",
+      "art": {
+        "x": 24,
+        "y": 136.66666666666669,
+        "width": 320,
+        "height": 206.66666666666666
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        187,
+        165,
+        132,
+        198,
+        220,
+        154,
+        198,
+        176,
+        176
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R08",
+      "picture": "Arena_intro_R08_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        198,
+        132,
+        220,
+        110,
+        187,
+        187,
+        209,
+        154,
+        220
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 640,
+        "height": 480
+      },
+      "id": "R09",
+      "picture": "Arena_intro_R09_r02",
+      "art": {
+        "x": 24,
+        "y": 133.33333333333334,
+        "width": 320,
+        "height": 213.33333333333331
+      },
+      "body": {
+        "x": 360,
+        "y": 80,
+        "width": 256,
+        "height": 320
+      },
+      "canvas": [
+        640,
+        480
+      ],
+      "widths": [
+        165,
+        132,
+        99,
+        154,
+        209,
+        165,
+        110
+      ],
+      "available": 224,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "I01",
+      "picture": "Arena_intro_I01_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        288,
+        324,
+        336,
+        312,
+        300,
+        240,
+        264
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "I02",
+      "picture": "Arena_intro_I02_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        324,
+        324,
+        276,
+        312,
+        276,
+        312,
+        336
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "I03",
+      "picture": "Arena_intro_I03_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        348,
+        312,
+        264,
+        252,
+        252,
+        324,
+        348
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "I04",
+      "picture": "Arena_intro_I04_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        348,
+        324,
+        312,
+        288,
+        252,
+        240,
+        252
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "I05",
+      "picture": "Arena_intro_I05_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        336,
+        324,
+        300,
+        264,
+        288,
+        252,
+        264
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R01",
+      "picture": "Arena_intro_R01_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        252,
+        324,
+        276,
+        348,
+        336
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R02",
+      "picture": "Arena_intro_R02_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        336,
+        336,
+        300,
+        336,
+        324,
+        312,
+        252
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R03",
+      "picture": "Arena_intro_R03_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        288,
+        324,
+        240,
+        312,
+        348,
+        60
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R04",
+      "picture": "Arena_intro_R04_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        324,
+        264,
+        264,
+        336,
+        324,
+        276,
+        300
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R05",
+      "picture": "Arena_intro_R05_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        348,
+        336,
+        288,
+        312,
+        336,
+        312,
+        300
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R06",
+      "picture": "Arena_intro_R06_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        324,
+        300,
+        312,
+        348,
+        336,
+        336,
+        336
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R07",
+      "picture": "Arena_intro_R07_r02",
+      "art": {
+        "x": 60.903225806451616,
+        "y": 80,
+        "width": 390.19354838709677,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        276,
+        264,
+        348,
+        288,
+        276,
+        336,
+        348
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R08",
+      "picture": "Arena_intro_R08_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        300,
+        348,
+        300,
+        348,
+        348,
+        348,
+        264
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 916,
+        "height": 412
+      },
+      "id": "R09",
+      "picture": "Arena_intro_R09_r02",
+      "art": {
+        "x": 67,
+        "y": 80,
+        "width": 378,
+        "height": 252
+      },
+      "body": {
+        "x": 504,
+        "y": 80,
+        "width": 388,
+        "height": 252
+      },
+      "canvas": [
+        916,
+        412
+      ],
+      "widths": [
+        336,
+        288,
+        336,
+        204
+      ],
+      "available": 356,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "I01",
+      "picture": "Arena_intro_I01_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        732,
+        612,
+        708,
+        528
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "I02",
+      "picture": "Arena_intro_I02_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        696,
+        732,
+        672,
+        348
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "I03",
+      "picture": "Arena_intro_I03_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        672,
+        684,
+        720,
+        660
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "I04",
+      "picture": "Arena_intro_I04_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        684,
+        708,
+        672,
+        684
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "I05",
+      "picture": "Arena_intro_I05_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        708,
+        684,
+        684,
+        648
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R01",
+      "picture": "Arena_intro_R01_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        720,
+        696,
+        144
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R02",
+      "picture": "Arena_intro_R02_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        708,
+        732,
+        732,
+        528
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R03",
+      "picture": "Arena_intro_R03_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        684,
+        660,
+        264
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R04",
+      "picture": "Arena_intro_R04_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        708,
+        612,
+        732,
+        732
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R05",
+      "picture": "Arena_intro_R05_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        696,
+        720,
+        708,
+        684
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R06",
+      "picture": "Arena_intro_R06_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        720,
+        720,
+        684,
+        732
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R07",
+      "picture": "Arena_intro_R07_r02",
+      "art": {
+        "x": 196.6451612903226,
+        "y": 80,
+        "width": 422.7096774193548,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        684,
+        708,
+        696,
+        624
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R08",
+      "picture": "Arena_intro_R08_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        720,
+        696,
+        720,
+        300
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    },
+    {
+      "size": {
+        "width": 1100,
+        "height": 800
+      },
+      "id": "R09",
+      "picture": "Arena_intro_R09_r02",
+      "art": {
+        "x": 203.25,
+        "y": 80,
+        "width": 409.5,
+        "height": 273
+      },
+      "body": {
+        "x": 24,
+        "y": 363,
+        "width": 768,
+        "height": 181
+      },
+      "canvas": [
+        816,
+        624
+      ],
+      "widths": [
+        720,
+        468
+      ],
+      "available": 736,
+      "buttons": [
+        "back",
+        "next"
+      ]
+    }
+  ],
+  "migration": {
+    "state": {
+      "mode": "campaign",
+      "phase": "ria",
+      "section": 3,
+      "word": 10,
+      "history": []
+    },
+    "before": {
+      "q": {
+        "stage": 0,
+        "objectives": {},
+        "completed": false,
+        "receipts": {}
+      },
+      "items": {},
+      "hp": 100
+    },
+    "after": {
+      "q": {
+        "stage": 0,
+        "objectives": {},
+        "completed": false,
+        "receipts": {}
+      },
+      "items": {},
+      "hp": 100
+    }
+  },
+  "errors": [],
+  "physicalGalaxyA56": "pending",
+  "editor": "not executed"
+}
