@@ -4,7 +4,7 @@
 
 Cada quest principal constitui um marco do projeto. A sequência acompanha CAMPANHA_PRINCIPAL.md. Cidades, serviços, locais preparatórios, eventos e recursos necessários à quest fazem parte do respectivo marco; não são tratados como conteúdo secundário dispensável.
 
-Todos os marcos estão planejados, sem conclusão ou implementação certificada nesta documentação. Não há datas ou prazos definidos.
+Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. Estado vigente: M01 aprovado como entrega desktop com ressalvas, registrado em [ENTREGA_M01.md](ENTREGA_M01.md); M02–M10 planejados, sem início autorizado. Evidências/cobertura ficam no backlog e na validação, não são certificadas só por esta tabela. Não há datas ou prazos definidos.
 
 | Marco | Quest | Entrega de conteúdo | Condição principal de conclusão |
 | --- | --- | --- | --- |
@@ -22,6 +22,10 @@ Todos os marcos estão planejados, sem conclusão ou implementação certificada
 Os detalhes narrativos e eventos completos de cada marco devem ser especificados consultando as fontes listadas em CAMPANHA_PRINCIPAL.md. A tabela não substitui sonhos, entregas, enigmas ou emboscadas exigidos pela quest; “obter fragmento” é um resumo de aceitação, não autorização para cortar o restante da cadeia.
 
 O detalhamento do primeiro marco está em BACKLOG_M01.md. Os demais marcos receberão seus backlogs quando entrarem no planejamento de implementação.
+
+## Marco técnico independente — MOBILE-01
+
+**MOBILE-01 — adaptação mobile e APK Android**, planejado com execução a planejar. Escopo, dependências de entrada e critérios subordinados em [MOBILE_01.md](MOBILE_01.md); sem tecnologia de empacotamento escolhida. Não renumera a campanha, não bloqueia M01 desktop nem exige aparelho/Pages a cada entrega.
 
 ## Dependências e continuidade
 
@@ -59,7 +63,7 @@ Incorporar os identificadores subordinados ao detalhar os futuros backlogs; não
 - Combates, loot e respawn respeitam as regras aprovadas; recompensas e itens únicos não são duplicados indevidamente.
 - Item recorrente de balanceamento avaliado, com resultados e decisões/ressalvas registrados conforme o processo acima.
 - Salvar/carregar preserva o progresso e o estado relevante do marco.
-- Validação do fluxo em navegador e teste mobile inicial no Samsung Galaxy A56, registrando ambiente e limitações.
+- Validação do fluxo no navegador desktop, inicialmente Chrome. M01 fecha nesse alvo obrigatório; adaptação/validação mobile e APK pertencem ao MOBILE-01. Preservar toque e evidências físicas já existentes, sem inferir suporte pleno ou exigir smartphone em toda entrega desktop.
 - Conteúdo dos marcos anteriores continua acessível ou encerrado conforme a narrativa, sem regressões conhecidas que impeçam a campanha.
 - Documentação consolidada, resultados de validação e problemas conhecidos registrados.
 

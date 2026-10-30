@@ -1,6 +1,8 @@
 # Entrada operacional do Arena — M01
 
-Atualizado em **30/10/2026**. Implementação de referência: develop **114cf4bcada4ef1b30ecef2bbde1a7e381549144**; os documentos desta feature não mudam o jogo. M01-01–18 integrados, fluxo público funcional confirmado na versão abaixo; M01-19 com requisitos de apresentação adiados, M01-20 e marco **ainda abertos**. Distribuição de atributos e expansão de descanso já implementadas/integradas; não são novos backlogs ausentes.
+Atualizado em **30/10/2026**. Candidata de referência: RC1 **e407a69193e168c6c1a160ab5809b1781b4a6478**, preparada em release/m01; fonte e manifesto em [M01_RC1.md](M01_RC1.md). Develop consolidado em94f17ac tem implementação equivalente à referência anterior114cf4b; os documentos desta atualização não mudam o jogo. M01-01–18 integrados, fluxo público funcional confirmado na versão abaixo; M01 **aprovado como entrega desktop com ressalvas**; fechamento em [ENTREGA_M01.md](ENTREGA_M01.md). Paisagem/fullscreen permanecem não atendidos, em MOBILE-01; balanceamento segue provisório. Distribuição de atributos e expansão de descanso já implementadas/integradas; não são novos backlogs ausentes.
+
+**Alvo vigente:** M01 fecha no navegador desktop, inicialmente Chrome. [MOBILE-01](MOBILE_01.md) concentra adaptação/validação mobile e APK, sem data/tecnologia escolhidas. Preservar toque; não exigir aparelho ou Pages a cada entrega desktop. Aprovação final da RC1 recebida explicitamente; sem bloqueio desktop identificado.
 
 ## Leitura curta e fontes principais
 
@@ -15,6 +17,7 @@ Ler esta entrada e somente as fontes pertinentes ao recorte. Decisões vigentes 
 | Arte, mapa e navegação | [Arte](DIRECAO_DE_ARTE.md), [mapas](DIRETIVA_DE_MAPAS.md), [navegação](DIRETIVA_DE_NAVEGACAO.md) |
 | Provisórios de balanceamento e roteiro por marco | [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md) |
 | Melhorias/ressalvas, sem tarefas duplicadas | [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md) |
+| Plataformas mobile/Android | [MOBILE-01](MOBILE_01.md) |
 | Pacote reproduzível e publicação manual separada | [Pacote](PACOTE_WEB_M01_19.md), [publicação](PUBLICACAO_TESTE_PAGES_M01_19.md) |
 
 ## Aprovações e limites de cobertura
@@ -25,6 +28,7 @@ Ler esta entrada e somente as fontes pertinentes ao recorte. Decisões vigentes 
 | Editor MV1.6.1, versões identificadas na validação | Map008: abrir/editar reversivelmente/salvar/reabrir e Explorar Dungeon; percurso integrado, narrativa/encerramento e demais recortes aprovados conforme seus relatos |
 | Localhost5659763 | Dois percursos Khajiit/Elfo Negro até encerramento; sem dados quantitativos ou ambiente discriminado |
 | Candidata cc29df0 | Descanso nas plataformas testadas e ouro variando; ambiente/posições/extremos/persistência não discriminados |
+| RC1 pública, confirmação posterior mobile | Distribuição de pontos funcionou; sem novo relato de salvar/reabrir, navegador/modelo não discriminados; não certifica mobile pleno |
 | Atributos38b3342, somado ao laboratório f6de74d | Ganho de três níveis, distribuição, cancelamento, reinicialização e confirmação; ambiente não discriminado, sem relato adicional de persistência ou smartphone |
 
 Evidências técnicas de migração, persistência, isolamento, geradores e plugins ficam em VALIDACAO_M01.md. Não atribuir a versão pública antiga os recursos posteriores. Não pedir novamente testes já válidos sem risco concreto.
@@ -33,9 +37,9 @@ Evidências técnicas de migração, persistência, isolamento, geradores e plug
 
 Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de Vida/Mana/Vigor estão ativos; balanceamento racial/equipamentos/custos continuam provisórios. Fórmula da campanha preservada; proporcional S02/conjuntos E05 continuam **somente no laboratório**, sem autorização de transferência. Prefixo web arena:m01:save-v1 estável; atualizações compatíveis não criam outro armazenamento.
 
-Paisagem/fullscreen **não atendidos e adiados**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
+Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Autorizado agora:** somente consolidar estes documentos e preparar a decisão de candidata, sem criar pacote/tag/release/deploy nesta tarefa. **Próximo recorte proposto, a autorizar:** congelar uma referência de candidata a partir de develop, reconstruir o pacote e executar o roteiro focal da matriz. Não iniciar melhorias, lotes ou migração de motor por associação. A discussão obrigatória de dois chats/motor foi realizada; [decisões da retrospectiva](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026) não equivalem a aceite final do M01.
+**Estado autorizado em30/10/2026:** documentação integrada localmente em develop e primeira candidata preparada em release/m01. Fonte/pacote e avaliação A56 em [M01_RC1.md](M01_RC1.md); aprovação final explícita recebida. Paisagem/fullscreen foram aceitos como não atendidos no M01; balanceamento/3 pontos/fórmula atual aceitos como provisórios, sem promover E05. A RC1 foi publicada depois, somente para teste físico, conforme [PUBLICACAO_RC1_M01.md](PUBLICACAO_RC1_M01.md); exceção na main limitada à infraestrutura, sem integrar o jogo ou criar tag/release final. Aquele relato RC1 foi corrigido para navegador integrado do GPT; depois o responsável confirmou somente distribuição no mobile. O teste físico amplo pertence agora ao MOBILE-01 e não bloqueia a aprovação desktop. Não iniciar melhorias, lotes ou migração de motor por associação. A discussão obrigatória de dois chats/motor foi realizada; [decisões da retrospectiva](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026) não equivalem a aceite final do M01.
 
 ---
 

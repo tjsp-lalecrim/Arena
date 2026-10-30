@@ -60,10 +60,12 @@ jobs:
         run: |
           set -euo pipefail
           test "$(git -C source rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
-          node tooling/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-first.json"
-          node tooling/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-second.json"
+          node source/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-first.json"
+          node source/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-second.json"
           cmp "$RUNNER_TEMP/package-first.json" "$RUNNER_TEMP/package-second.json"
           PACKAGE_DIR=$(node -p 'JSON.parse(require("fs").readFileSync(process.env.RUNNER_TEMP+"/package-first.json","utf8")).directory')
+          # Reproduce the approved package, without modifying its source checkout.
+          node tooling/tools/finalize-pages-package.cjs source "$PACKAGE_DIR"
           node tooling/tools/check-web-package.cjs "$PACKAGE_DIR" > "$RUNNER_TEMP/package-validation.json"
           cat "$RUNNER_TEMP/package-validation.json"
           echo "directory=$PACKAGE_DIR" >> "$GITHUB_OUTPUT"

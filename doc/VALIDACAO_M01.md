@@ -1,3 +1,29 @@
+## Aceite final da entrega desktop — 30/10/2026
+
+Responsável aprovou explicitamente a RC1 como entrega M01 no navegador desktop, com ressalvas. Fonte funcional e407a69193e168c6c1a160ab5809b1781b4a6478 e manifesto77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831 preservados. Não é novo relato de execução, persistência ou dispositivo; reutilizadas evidências válidas. Integração/artefato/tag/release são conferências de entrega em [ENTREGA_M01.md](ENTREGA_M01.md), sem campanha repetida ou deploy Pages. Mobile/APK em MOBILE-01, paisagem/fullscreen não atendidos; balanceamento/3 pontos/+1/fórmula atual provisórios, E05 isolado.
+
+## Confirmação parcial mobile e mudança de alvo — 30/10/2026
+
+Responsável informou que **testou a distribuição de pontos no mobile e confirmou funcionamento**. Associado à RC1 pública e407a69/m01-rc1, referência então disponível; não foi informado novo SHA, navegador/modelo ou ciclo de salvar/fechar/reabrir. Não atribuir nova persistência ou suporte mobile completo/APK a esse relato. A correção anterior do teste no navegador integrado do GPT continua válida para aquele relato; esta é uma confirmação posterior e delimitada.
+
+Foco vigente: testes no navegador do PC, inicialmente Chrome; M01 fecha no desktop. Testes físicos já feitos e versões permanecem válidos, sem obrigação de repetir. [MOBILE-01](MOBILE_01.md) recebe adaptação/validação mobile e APK em data a planejar. Nesta tarefa somente manifesto público RC1 e documentação foram conferidos, sem novo gameplay, smartphone ou Pages. [Matriz atual](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026).
+
+## RC1 pública exata — 30/10/2026
+
+Run41050559624/main/manual/publish=true success, sourcee407a69193e168c6c1a160ab5809b1781b4a6478. Linux prévio e publicação coincidem exatamente com manifesto RC1 aprovado77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831.321 arquivos/hash HTTP conferidos; Chrome156 isolado abriu título e acesso técnico aos atributos sem gravar saves; página auxiliar404/excluída. [Evidência](evidencias/m01-rc1-pages/resultado.json) e [publicação/limites/roteiro](PUBLICACAO_RC1_M01.md). A56 físico continua pendente; relato do responsável foi no navegador integrado do GPT, sem inferir persistência nova ou ampliar cobertura.
+
+## Correção do ambiente do relato RC1 — 30/10/2026
+
+Responsável esclareceu que o **último teste informado da RC1 foi no navegador integrado do GPT, não no Galaxy A56**. Não ampliar os casos do relato nem convertê-lo em prova de Chrome físico/persistência. O teste físico desta candidata permanece pendente: smartphone em outra rede. Isso não revoga os testes públicos anteriores no Chrome PC/A56 da prévia9fab698, nem os testes automatizados de Chrome/perfil isolado registrados para a RC1. Publicação da candidata autorizada exclusivamente para viabilizar essa avaliação, sem aprovação final do M01.
+
+## Preparação M01 RC1 — 30/10/2026
+
+[Pacote/limites e roteiro físico](M01_RC1.md), fonte e407a69193e168c6c1a160ab5809b1781b4a6478. Duas construções idênticas,321 arquivos/hash HTTP em /Arena/, seis grupos de núcleo e seis de acesso no pacote; suporte externo de avaliação sem save automático e recusa de saves existentes; save nativo/fechar-reabrir Chrome/carregar em perfil isolado preservou pontos/atributos. Loot/legados e descanso idênticos às versões aprovadas, evidências nativas anteriores reutilizadas; guard24 sorteios/auditoria40 passaram. HTTP200 por loopback e próprio IP LAN, sem afirmar acesso do A56. Nenhuma campanha completa, teste físico ou editor novo; nenhum defeito de gameplay corrigido. [Resumo técnico](evidencias/m01-rc1/preparacao.json).
+
+## Aceites de escopo da candidata
+
+Aceites explícitos de30/10/2026 registrados na [fonte de escopo](BACKLOG_M01.md#aceites-para-preparar-a-primeira-candidata--30102026): exceção não atendida de paisagem/fullscreen, provisórios atuais e E05 isolado. Não equivalem a teste físico ou aprovação do pacote.
+
 ## Leitura operacional da validação — consolidação 30/10/2026
 
 Aprovações abaixo mantêm versão/ambiente/cobertura próprios; estados anteriores de pendência são históricos quando superados por relato posterior. [Resumo operacional](INICIO_NO_CODEX.md#aprovações-e-limites-de-cobertura) e [matriz/roteiro focal final](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026) evitam repetir testes já cobertos. Retrospectiva autorizada e registrada no workflow; não é aprovação final do M01. Nesta tarefa foram conferidos somente documentação, Git/tags e gatilho manual existente do workflow; nenhum novo teste de gameplay, execução no editor/aparelho, pacote ou deploy.

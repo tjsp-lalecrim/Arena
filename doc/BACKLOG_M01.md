@@ -1,39 +1,39 @@
 # Fechamento operacional do M01 — 30/10/2026
 
-**Referência funcional:** develop114cf4bcada4ef1b30ecef2bbde1a7e381549144. Esta consolidação documental não altera sua implementação. Retrospectiva realizada e decisões registradas no [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026); não é aprovação final do marco. Entrada curta e fontes em [INICIO_NO_CODEX.md](INICIO_NO_CODEX.md).
+**M01 aprovado pelo responsável como entrega para navegador desktop em30/10/2026, com ressalvas explícitas.** Fechamento autorizado por Git Flow/tag/release; registro da entrega em [ENTREGA_M01.md](ENTREGA_M01.md). M01-01–20 encerrados no escopo desktop aceito; revisão de balanceamento continua nos marcos seguintes.
+
+RC1 publicada: **e407a69193e168c6c1a160ab5809b1781b4a6478**, m01-rc1; [resultado de publicação](PUBLICACAO_RC1_M01.md). Manifesto público conferido novamente nesta atualização, mesmo hash77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831. Sem novo teste de gameplay ou atualização do Pages.
+
+## Alvo de fechamento vigente
+
+M01 será fechado considerando **navegador desktop, inicialmente Chrome**, como alvo obrigatório. Adaptações mobile e APK pertencem ao marco técnico [MOBILE-01](MOBILE_01.md), execução a planejar, sem renumerar a campanha. Preservar o toque existente e evidências por versão; não exigir testes físicos ou Pages a cada entrega desktop. Funcionamento parcial mobile não equivale a suporte pleno.
+
+## Aceites para preparar a primeira candidata — 30/10/2026
+
+Balanceamento atual,3 pontos de+1 por nível e fórmula atual aceitos como provisórios, com revisão futura; E05 isolado. Paisagem/fullscreen aceitos como **não atendidos no M01**, agora vinculados a MOBILE-01. Retrospectiva de dois chats/motor realizada; MV preservado, sem migração antes do M02. Nenhum desses aceites substitui aprovação final desta candidata.
 
 ## Matriz de fechamento M01 — 30/10/2026
 
-| Classificação | Estado e ação de fechamento |
+| Classificação | Estado atual |
 | --- | --- |
-| Critérios funcionais atendidos | Criação→introdução→dungeon/quests/combate/loot/inventário/recuperação→Gate/encerramento implementados e com evidências/aprovações nos respectivos recortes. Distribuição por inventário funcionalmente aprovada; saldo/migração/save-load cobertos tecnicamente. Reutilizar a cobertura por versão/ambiente, sem atribuir tudo ao último relato |
-| Integrações atendidas, posteriores à prévia pública | Expansão de1 para40 pontos de descanso, ouro reserva2–8 e retirada de raros provisórios integrados, legados preservados; atributos3/+1 integrados. Pilotos de arma e descanso inicial já pertenciam à base pública: não criar nova rodada para eles. Referências e limites em VALIDACAO_M01.md |
-| Ressalvas já aceitas | Artes com inconsistências conhecidas, acabamento/encaixes pontuais e portas laterais pouco visíveis; aprovação funcional não apaga esses defeitos. Balanceamento continua provisório; manter escolhas/ganhos do jogador. Não reabrir geração ou elevar toda ressalva a bloqueio |
-| Requisitos adiados, não atendidos | Paisagem/fullscreen quando suportados (M01-19/REF14). Exigem atendimento ou **aceite explícito da exceção no fechamento M01**, com registro de continuidade; autorização anterior de avançar a M01-20 não foi aceite final nem atendimento técnico |
-| Critérios de entrega ainda por encerrar | Aceite do balanceamento inicial/provisórios; verificações focais da build candidata; documentação/manifesto/pacote final identificados e aceite do commit de entrega. Não exigir fórmula definitiva para toda a campanha ou catálogo completo |
-| Bloqueios concretos | Nenhuma falha funcional crítica comprovada nos relatos/checagens atuais. Há decisões de aceite e evidências da candidata ainda abertas, sem inventar defeito. Discussão obrigatória de dois chats/motor **cumprida** por esta retrospectiva |
-| Melhorias futuras, fora da preparação imediata | REF01/03/06/07–11/13/15/16 e demais recortes conforme registro único; apresentação dos atributos, menu intuitivo, fundo genérico, favoritos/notificações e ilustração de abertura não começam automaticamente. Catálogo/encantados e estudos de descanso/respawn permanecem futuros. Sem atribuir prazo/marco não aprovado |
-| Revisão em marcos seguintes | Manter avaliação de balanceamento ao fim de cada marco; reavaliar escalas e provisórios na faixa seguinte. Continuar no MV, sem migração antes do M02 e sem autorização automática de migrar no M02 |
+| Desktop atendido | Fluxo de criação até Gate/encerramento, sistemas e integrações com evidências/aprovações por recorte. Núcleo/acesso de atributos aprovados funcionalmente; migração/persistência cobertas tecnicamente. RC1 exata validada em Chrome desktop, Linux e publicação, conforme VALIDACAO_M01.md |
+| Critérios desktop ainda pendentes | **Nenhum impedimento funcional ou teste desktop adicional justificado identificado.** Fonte/manifesto permanecem os validados. Aprovação final explícita recebida; não repetir a campanha |
+| Ressalvas aceitas | Balanceamento e3/+1/fórmula atual provisórios; artes/interfaces com inconsistências conhecidas. Paisagem/fullscreen permanecem não atendidos e fora do fechamento desktop, encaminhados a MOBILE-01 |
+| Mobile/APK | Marco MOBILE-01 planejado, não iniciado; não é bloqueio M01. Distribuição de pontos confirmada pelo responsável em mobile nesta rodada, sem nova confirmação de salvar/reabrir. Preservar testes físicos públicos anteriores com suas versões |
+| Melhorias futuras | Refinamentos e pendências no registro único REFINAMENTOS_POS_INTEGRACAO_M01.md; somente parcelas mobile vinculadas a MOBILE-01. Não implementar polimento, catálogo, estudos de descanso ou migração por associação |
+| Aprovação final | **Recebida explicitamente:** RC1/e407a69 aprovada como entrega M01 desktop com ressalvas; autorizados integração main/develop, tag anotada m01 e GitHub Release. Conferência externa da conclusão pelas referências da entrega; Pages não é atualizado |
 
 ## Somente verificações finais justificadas pelo delta
 
-Não executadas nesta tarefa documental. A prévia pública validada é9fab698; o diff9fab698..114cf4b acrescenta expansão de descanso, revisão de loot, atributos e E05 técnico isolado; armas piloto e descanso inicial já estavam na prévia pública. Reutilizar testes técnicos existentes, Map008/editor e percurso público; **não repetir toda a campanha nem testes completos de todas as combinações**.
-
-1. **Pacote atual, Chrome desktop em /Arena/:** reconstrução pelo empacotador existente e conferência de manifesto/arquivos dinâmicos novos (ArenaAttributes.json e os plugins), caminhos/capitalização e registro canônico. É outra árvore que o pacote público, portanto sua verificação não está herdada daquele artefato.
-2. **Trecho integrado curto da candidata:** personagem com um ganho de nível, saldo/confirmar/cancelar; um encontro após distribuir; um refúgio novo e um tesouro ainda não coletado; salvar/recarregar/carregar o estado combinado. Preparar fixture/slot exclusivo de teste, sem repetir sorteios para provar limites/ausência de raros: usar evidências controladas. Foco no fortalecimento e recuperação/loot alterados; não reeditar todas as portas/mapa nem revisar artes aprovadas. Registrar o observado, sem metas novas de turnos.
-3. **Chrome/A56 físico, apenas novo acesso aos atributos:** entrar/retornar pelo inventário, montar/cancelar/confirmar conjunto e conferir foco, toque e cortes/leitura. A cobertura física da versão pública antiga continua válida para seus fluxos; não prova esta tela posterior. Não solicitar novamente todo o percurso/reinício do Chrome no aparelho sem falha ou mudança de risco correspondente. Refinamento visual amplo permanece futuro, mas impedimento concreto encontrado precisa ser triado.
-
-Se nenhuma falha aparecer, registrar resultado por SHA/ambiente e levar os aceites abaixo ao fechamento. Em risco novo concreto, definir outro recorte; não ampliar silenciosamente esta lista para uma bateria geral.
+Verificações da candidata registradas em M01_RC1.md e VALIDACAO_M01.md continuam válidas; não repetidas. O antigo roteiro físico da RC1 fica como material para MOBILE-01, não requisito desktop. Não solicitar novamente validação mobile para encerrar M01. Nova verificação somente se uma alteração/falha concreta posterior justificar outro recorte.
 
 ## Respostas explícitas antes da entrega final
 
-- Aceitar paisagem/fullscreen **como exceção não atendida no M01**, ou autorizar tratá-los antes do fechamento? Registrar destino futuro sem presumir M02.
-- Aceitar o balanceamento da faixa inicial e3 pontos de+1 como provisórios do M01, após o registro focal da candidata, mantendo a fórmula atual? Não pedir novamente autorização da implementação já aprovada nem promover E05.
-- Após essas decisões e os resultados focais, aprovar **o commit/pacote exato de entrega** e autorizar os passos de release/tag/publicação desejados. Nada disso foi autorizado por esta consolidação.
+Paisagem/fullscreen, provisórios e alvo desktop já decididos; não perguntar novamente. Aprovação final do commit/pacote RC1 recebida explicitamente, junto da autorização para finalizar release/m01 em main/develop, publicar tag m01 e GitHub Release. Não resta decisão de fechamento desktop; MOBILE-01 continua separado.
 
 ## Próximo recorte mínimo proposto
 
-**Preparar candidata de M01-20:** partir de uma referência congelada de develop, reconstruir pacote em diretório ignorado, identificar SHA/manifesto e executar somente o roteiro focal acima; entregar resultado para os aceites. Não incorporar melhorias ou limpar arquivos no mesmo recorte. Branch release/m01 e tag anotada m01-rc1 somente quando autorizadas e após nova conferência dos nomes; procedimentos em [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#tags-e-entrega-m01). Pages continua ação manual separada. Não criar candidata nem executar testes nesta tarefa.
+Finalizar somente integração/tag/release autorizadas, sem atualizar Pages ou iniciar M02. Após a confirmação externa, nenhuma nova implementação está autorizada. Datas e primeiras entregas de MOBILE-01 serão planejadas em tarefa própria.
 
 ---
 
@@ -249,7 +249,7 @@ P0 indica base necessária para começar e integrar; P1 indica requisito de conc
 | M01-16 | P1 | Implementar MQ01, diário e redundância dos itens importantes | 02, 05, 13, 14 | Objetivos e textos pt-BR, chave/porta e transições corretos; verificar itens ao concluir e iniciar etapas; reativar fonte quando necessário sem repetir recompensas |
 | M01-17 | P1 | Integrar poções e descanso nos locais elegíveis | 02, 08, 13, 14 | Poções restauram conforme dados; cama elegível restaura totalmente os três recursos; interação, custos e condições documentados a partir das fontes |
 | M01-18 | P1 | Produzir e integrar introdução e encerramento da demo | 02, 06, 07, 16 | Introdução textual/ilustrada sem vozes; Ria e diário integrados; Shift Gate encerra explicitamente a demo uma única vez, sem continuar para M02 |
-| M01-19 | P1 | Validar e corrigir experiência em navegador/mobile | 07–18 | Fluxo completo em Chrome desktop e Galaxy A56, paisagem/tela inteira quando suportada, toque utilizável e texto legível; ambiente e limitações registrados |
+| M01-19 | P1 | Validar experiência em navegador desktop | 07–18 | Fluxo completo em Chrome desktop, ambientes/evidências e limitações registrados. Toque existente preservado; adaptações mobile, paisagem/fullscreen e APK vinculados ao MOBILE-01, sem atendimento técnico presumido no M01 |
 | M01-20 | P1 | Balancear, testar regressões e preparar entrega M01 | 19 | Avaliação/ajuste do percurso conforme AVALIACAO_BALANCEAMENTO_POR_MARCO.md, com versão de referência, resultados e decisões/ressalvas registrados; critérios de DEMO_INICIAL.md atendidos, ausência de bloqueios críticos, documentação consolidada e pacote identificado; preparar release sob Git Flow conforme autorização |
 
 Os bônus P01–P08 foram autorizados como balanceamento provisório no fechamento R05. M01-08 deve preservar o+10 inicial sem regrant; M01-09/10 e M01-20 devem executar BALANCEAMENTO_RACIAL_CENARIOS_M01.md: custos/turnos, armas livres, crítico/arredondamento, teto de acerto/evasão, utilidade de AGI, fontes reais de frio/magia/paralisia e vantagens excessivas. Testes de fórmula não demonstram equilíbrio integrado. Esses itens continuam futuros, sem implementação automática.
@@ -296,7 +296,7 @@ Testar desde os primeiros protótipos, sem esperar M01-19 para descobrir problem
 
 Cobertura final mínima: criação, introdução, movimentação, patrulha/contato, vitória, game over, técnicas leves/pesadas, uso de item, coleta automática, equipamentos por arrasto, aparência por armadura, chave/porta, diário, recuperação de item ausente, eliminação de duplicação, salvar/carregar e encerramento no Shift Gate.
 
-Registrar tempos de carregamento, fluidez e leitura no Galaxy A56 em Chrome, incluindo versão do navegador/sistema, orientação, escala e dificuldades do toque. Não declarar suporte mobile apenas por teste em desktop. Não há orçamento de desempenho numérico aprovado; registrar as medições e corrigir impedimentos de uso.
+Alvo vigente: navegador desktop, inicialmente Chrome. Registrar ambiente, carregamento, fluidez e leitura quando pertinentes ao recorte; não há orçamento numérico aprovado. Medições físicas, orientação/fullscreen e adaptação do toque ficam no MOBILE-01, reutilizando evidências por versão. Não declarar suporte mobile apenas por testes parciais nem exigir nova rodada física para fechar M01 desktop.
 
 ## Ordem de execução recomendada
 

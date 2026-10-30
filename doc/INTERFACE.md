@@ -30,11 +30,11 @@ Essa referência não acrescenta multijogador ao escopo. Exemplos de jogos estã
 
 ## Plataformas e controles
 
-O jogo tem como destinos navegador e mobile. A prioridade inicial de interação é teclado e mouse. A orientação é paisagem, com apresentação ocupando a tela inteira e navegador preferencial Chrome. Controles de toque serão avaliados nos testes; mobile não deve ser considerado validado apenas por funcionar em um navegador de desktop.
+O alvo obrigatório atual é navegador desktop, inicialmente Chrome/teclado/mouse. Preservar o suporte por toque existente. Adaptações de navegação/layout mobile, paisagem/fullscreen quando suportados e APK pertencem a [MOBILE-01](MOBILE_01.md), com data a planejar; nenhuma refatoração mobile é autorizada por esta decisão. Funcionamento parcial ou emulação não certificam suporte mobile pleno.
 
 Projetar a interface de forma que ações essenciais não dependam exclusivamente de hover. Refinar o comportamento em telas menores durante a implementação, sem presumir empacotamento como aplicativo nativo.
 
-Primeiro dispositivo de teste mobile: Samsung Galaxy A56. Registrar navegador, versão do sistema, orientação e resultados de cada teste. A tela inteira deve adaptar a apresentação ao espaço disponível, mantendo proporções e legibilidade. A resolução lógica interna e a escala serão escolhas técnicas validadas em teste; não igualar automaticamente a resolução interna à resolução física do aparelho. Considerar áreas seguras e limitações do navegador ao solicitar fullscreen.
+Dispositivo físico de referência do MOBILE-01: Samsung Galaxy A56. Nos testes desse marco, registrar navegador/runtime, versão do sistema, orientação, build e resultados, reutilizando evidências anteriores. Não exigir aparelho ou publicação Pages a cada entrega desktop. A tela inteira deve adaptar a apresentação ao espaço disponível, mantendo proporções e legibilidade. A resolução lógica interna e a escala serão escolhas técnicas validadas em teste; não igualar automaticamente a resolução interna à resolução física do aparelho. Considerar áreas seguras e limitações do navegador ao solicitar fullscreen.
 
 Idioma inicial de menus, diálogos e diário: somente Português Brasileiro.
 
