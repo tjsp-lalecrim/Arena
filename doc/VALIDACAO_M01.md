@@ -1,3 +1,7 @@
+## Aceite final da entrega desktop — 30/10/2026
+
+Responsável aprovou explicitamente a RC1 como entrega M01 no navegador desktop, com ressalvas. Fonte funcional e407a69193e168c6c1a160ab5809b1781b4a6478 e manifesto77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831 preservados. Não é novo relato de execução, persistência ou dispositivo; reutilizadas evidências válidas. Integração/artefato/tag/release são conferências de entrega em [ENTREGA_M01.md](ENTREGA_M01.md), sem campanha repetida ou deploy Pages. Mobile/APK em MOBILE-01, paisagem/fullscreen não atendidos; balanceamento/3 pontos/+1/fórmula atual provisórios, E05 isolado.
+
 ## Confirmação parcial mobile e mudança de alvo — 30/10/2026
 
 Responsável informou que **testou a distribuição de pontos no mobile e confirmou funcionamento**. Associado à RC1 pública e407a69/m01-rc1, referência então disponível; não foi informado novo SHA, navegador/modelo ou ciclo de salvar/fechar/reabrir. Não atribuir nova persistência ou suporte mobile completo/APK a esse relato. A correção anterior do teste no navegador integrado do GPT continua válida para aquele relato; esta é uma confirmação posterior e delimitada.

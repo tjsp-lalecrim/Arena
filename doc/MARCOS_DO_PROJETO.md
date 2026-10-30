@@ -4,7 +4,7 @@
 
 Cada quest principal constitui um marco do projeto. A sequência acompanha CAMPANHA_PRINCIPAL.md. Cidades, serviços, locais preparatórios, eventos e recursos necessários à quest fazem parte do respectivo marco; não são tratados como conteúdo secundário dispensável.
 
-Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. Estado vigente: M01 em candidata aguardando aprovação desktop; M02–M10 planejados. Evidências/cobertura ficam no backlog e na validação, não são certificadas só por esta tabela. Não há datas ou prazos definidos.
+Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. Estado vigente: M01 aprovado como entrega desktop com ressalvas, registrado em [ENTREGA_M01.md](ENTREGA_M01.md); M02–M10 planejados, sem início autorizado. Evidências/cobertura ficam no backlog e na validação, não são certificadas só por esta tabela. Não há datas ou prazos definidos.
 
 | Marco | Quest | Entrega de conteúdo | Condição principal de conclusão |
 | --- | --- | --- | --- |

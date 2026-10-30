@@ -1,5 +1,7 @@
 # Fechamento operacional do M01 — 30/10/2026
 
+**M01 aprovado pelo responsável como entrega para navegador desktop em30/10/2026, com ressalvas explícitas.** Fechamento autorizado por Git Flow/tag/release; registro da entrega em [ENTREGA_M01.md](ENTREGA_M01.md). M01-01–20 encerrados no escopo desktop aceito; revisão de balanceamento continua nos marcos seguintes.
+
 RC1 publicada: **e407a69193e168c6c1a160ab5809b1781b4a6478**, m01-rc1; [resultado de publicação](PUBLICACAO_RC1_M01.md). Manifesto público conferido novamente nesta atualização, mesmo hash77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831. Sem novo teste de gameplay ou atualização do Pages.
 
 ## Alvo de fechamento vigente
@@ -15,11 +17,11 @@ Balanceamento atual,3 pontos de+1 por nível e fórmula atual aceitos como provi
 | Classificação | Estado atual |
 | --- | --- |
 | Desktop atendido | Fluxo de criação até Gate/encerramento, sistemas e integrações com evidências/aprovações por recorte. Núcleo/acesso de atributos aprovados funcionalmente; migração/persistência cobertas tecnicamente. RC1 exata validada em Chrome desktop, Linux e publicação, conforme VALIDACAO_M01.md |
-| Critérios desktop ainda pendentes | **Nenhum impedimento funcional ou teste desktop adicional justificado identificado.** Fonte/manifesto permanecem os validados. Falta somente aprovação explícita da candidata para autorizar o fechamento, não repetir a campanha |
+| Critérios desktop ainda pendentes | **Nenhum impedimento funcional ou teste desktop adicional justificado identificado.** Fonte/manifesto permanecem os validados. Aprovação final explícita recebida; não repetir a campanha |
 | Ressalvas aceitas | Balanceamento e3/+1/fórmula atual provisórios; artes/interfaces com inconsistências conhecidas. Paisagem/fullscreen permanecem não atendidos e fora do fechamento desktop, encaminhados a MOBILE-01 |
 | Mobile/APK | Marco MOBILE-01 planejado, não iniciado; não é bloqueio M01. Distribuição de pontos confirmada pelo responsável em mobile nesta rodada, sem nova confirmação de salvar/reabrir. Preservar testes físicos públicos anteriores com suas versões |
 | Melhorias futuras | Refinamentos e pendências no registro único REFINAMENTOS_POS_INTEGRACAO_M01.md; somente parcelas mobile vinculadas a MOBILE-01. Não implementar polimento, catálogo, estudos de descanso ou migração por associação |
-| Aprovação final | **Pendente do responsável:** aprovar RC1/e407a69 como entrega M01 desktop com essas ressalvas. Marco não concluído automaticamente; sem merge em main, tag final ou release por esta atualização |
+| Aprovação final | **Recebida explicitamente:** RC1/e407a69 aprovada como entrega M01 desktop com ressalvas; autorizados integração main/develop, tag anotada m01 e GitHub Release. Conferência externa da conclusão pelas referências da entrega; Pages não é atualizado |
 
 ## Somente verificações finais justificadas pelo delta
 
@@ -27,11 +29,11 @@ Verificações da candidata registradas em M01_RC1.md e VALIDACAO_M01.md continu
 
 ## Respostas explícitas antes da entrega final
 
-Paisagem/fullscreen, provisórios e alvo desktop já decididos; não perguntar novamente. A única resposta necessária agora é a **aprovação final do commit/pacote RC1**. Não pressupõe ações de Git/publicação não solicitadas.
+Paisagem/fullscreen, provisórios e alvo desktop já decididos; não perguntar novamente. Aprovação final do commit/pacote RC1 recebida explicitamente, junto da autorização para finalizar release/m01 em main/develop, publicar tag m01 e GitHub Release. Não resta decisão de fechamento desktop; MOBILE-01 continua separado.
 
 ## Próximo recorte mínimo proposto
 
-Aguardar a aprovação final da candidata; não iniciar implementação, testes ou publicação. Datas e primeiras entregas de MOBILE-01 serão planejadas em tarefa própria.
+Finalizar somente integração/tag/release autorizadas, sem atualizar Pages ou iniciar M02. Após a confirmação externa, nenhuma nova implementação está autorizada. Datas e primeiras entregas de MOBILE-01 serão planejadas em tarefa própria.
 
 ---
 

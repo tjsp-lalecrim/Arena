@@ -1,4 +1,4 @@
-# Prévia RC1 no Pages — aprovação final desktop pendente
+# Prévia RC1 no Pages — conteúdo aprovado para entrega desktop
 
 **Planejamento vigente:** testes concentrados no navegador do PC/Chrome. Adaptação mobile/APK em [MOBILE-01](MOBILE_01.md), sem data ou tecnologia definida; não exigir smartphone/Pages em cada entrega desktop. Nova confirmação do responsável: distribuição de pontos funcionou no mobile, sem novo relato de salvar/reabrir. O antigo roteiro físico abaixo fica reservado ao marco técnico; não bloqueia M01 desktop.
 
@@ -8,7 +8,7 @@
 
 Validação Linux prévia [41050143414](https://github.com/tjsp-lalecrim/Arena/actions/runs/41050143414), publish=false, confirmou esse mesmo hash antes de publicar. Verificação pós-deploy: todos os321 arquivos HTTP200/tamanho/SHA-256 correspondem, título e caminho existente laboratório→inventário→atributos abriram no Chrome156 isolado, zero escritas em saves. /Arena/avaliacao/ e o HTML de suporte retornam404 e não constam do artefato. Não houve campanha completa, nova batalha, teste de persistência pessoal ou A56 físico nesta publicação. [Evidência pública](evidencias/m01-rc1-pages/resultado.json), [diagnóstico inicial e infraestrutura](evidencias/m01-rc1-publicacao-preparacao/infraestrutura.json).
 
-Branches release/m01 e feature/pages-rc1-infra publicadas; main recebeu **somente infraestrutura**, sem ser descendente da RC1 e sem dados/código/assets de jogo. Nenhuma tag ou GitHub Release criada. Publicação continua exclusivamente manual; novo pacote exige política/hash explicitamente aprovado. **Estado atual: candidata aguardando aprovação final desktop; mobile segue no MOBILE-01, não M01 concluído automaticamente.**
+Branches release/m01 e feature/pages-rc1-infra publicadas; main recebeu **somente infraestrutura**, sem ser descendente da RC1 e sem dados/código/assets de jogo. Nenhuma tag ou GitHub Release criada. Publicação continua exclusivamente manual; novo pacote exige política/hash explicitamente aprovado. **Estado atual: RC1 aprovada explicitamente para entrega desktop; formalização em [ENTREGA_M01.md](ENTREGA_M01.md). Pages permanece nesta publicação, sem novo deploy. Mobile segue no MOBILE-01.**
 
 
 
