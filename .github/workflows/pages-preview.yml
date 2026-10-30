@@ -62,12 +62,13 @@ jobs:
           test "$(git -C source rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
           # Match the approved MV/Windows checkout bytes without changing its commit.
           git -C source config core.autocrlf true
-          git -C source checkout-index --all --force
+          node tooling/tools/prepare-pages-checkout.cjs source
           node source/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-first.json"
           node source/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-second.json"
           cmp "$RUNNER_TEMP/package-first.json" "$RUNNER_TEMP/package-second.json"
           PACKAGE_DIR=$(node -p 'JSON.parse(require("fs").readFileSync(process.env.RUNNER_TEMP+"/package-first.json","utf8")).directory')
           node tooling/tools/check-web-package.cjs "$PACKAGE_DIR" > "$RUNNER_TEMP/package-validation.json"
+          node tooling/tools/prepare-pages-checkout.cjs source "$PACKAGE_DIR"
           cat "$RUNNER_TEMP/package-validation.json"
           echo "directory=$PACKAGE_DIR" >> "$GITHUB_OUTPUT"
           echo "source_sha=$EXPECTED_SOURCE_SHA" >> "$GITHUB_OUTPUT"
