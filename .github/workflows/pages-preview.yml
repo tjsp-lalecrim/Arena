@@ -61,7 +61,8 @@ jobs:
           set -euo pipefail
           test "$(git -C source rev-parse HEAD)" = "$EXPECTED_SOURCE_SHA"
           # Match the approved MV/Windows checkout bytes without changing its commit.
-          git -C source -c core.autocrlf=true checkout-index --all --force
+          git -C source config core.autocrlf true
+          git -C source checkout-index --all --force
           node source/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-first.json"
           node source/tools/build-web-package.cjs source > "$RUNNER_TEMP/package-second.json"
           cmp "$RUNNER_TEMP/package-first.json" "$RUNNER_TEMP/package-second.json"
