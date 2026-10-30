@@ -1,3 +1,17 @@
+## Aprovação funcional do acesso aos atributos — 29/10/2026
+
+Responsável aprovou funcionalmente o acesso entregue em **38b33427d20a9b189be199dd097104147d42c0d2**, confirmando ganho de três níveis, distribuição de pontos, cancelamento, reinicialização e confirmação da distribuição. Ambiente/dispositivo não discriminados neste relato. Não atribuir persistência, migração, smartphone, percurso completo ou novos casos ao responsável; evidências técnicas existentes permanecem identificadas separadamente. Não é aprovação de equilíbrio definitivo ou do refinamento visual.
+
+Feature sem alteração funcional posterior; autorização de integração/publicação em develop. Reutilizados seis grupos do acesso e seis do núcleo em evidencias/atributos-campanha-r01, sem reexecutar campanha, navegador, editor ou aparelho físico neste fechamento. Checagens de integração/commit final em [BACKLOG_M01.md](BACKLOG_M01.md); detalhes em [contrato](plugins/Arena_Attributes.md).
+
+## Atributos — aprovação restrita e acesso de campanha R02
+
+Responsável aprovou funcionamento do laboratório f6de74d; sem ambiente/casos discriminados e sem presumir balanceamento, design definitivo ou uso na campanha aprovados. R02 testada em Chrome156.0.8078.73 isolado: seis grupos de acesso normal, lote/cancelamento, teclado/mouse/toque emulado, saldo, save/load e bloqueios, mais seis regressões focais do núcleo por compartilhamento de tabela/acesso técnico. [Contrato/limites](plugins/Arena_Attributes.md#aprovação-do-laboratório-e-acesso-funcional-r02), [resultado](evidencias/atributos-campanha-r01/resultado.json). Nível/etapa narrativa da partida normal preparados como fixture, sem percurso completo ou saves pessoais. Campanha/UI novas aguardam responsável; nenhuma nova autoria MV/aparelho físico declarada, merge/push/Pages ou mudança de balanceamento.
+
+## Núcleo de atributos — 29/10/2026
+
+Base ecdc949; seis grupos focais em Chrome156.0.8078.73 isolado: regras, save anterior/migração, aplicação e modificadores, E05 preservado, UI técnica teclado/toque/memória e fontes protegidas. [Evidência](evidencias/atributos-nucleo-r01/resultado.json), [contrato/roteiro](plugins/Arena_Attributes.md). Save anterior nível5 argoniano recebe12 pontos uma vez; recursos/inventário/equipamentos/quest e escolhas preservados. Registro canônico UTF-8 sem BOM e sintaxe/presença dos36 plugins conferidos;34 registros anteriores idênticos e namespace web preservado. Capturas inspecionadas em816×624. Nenhuma aprovação manual nova, autoria no editor, teste físico ou campanha completa. Núcleo para avaliação, sem interface definitiva, balanceamento final, merge/push ou atualização do Pages.
+
 ## Confirmação manual — candidata loot/descanso, 29/10/2026
 
 Responsável confirmou descanso nas plataformas testadas e ouro variando, na referência apresentada cc29df0. Ambiente e posições não discriminados; sem inferir testes adicionais de extremos, migração ou persistência, nem todas as plataformas ou aprovação definitiva de balanceamento. [Registro e evidências técnicas preservadas](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Autorizada integração/publicação em develop; sem mudança funcional posterior não avaliada.

@@ -1,3 +1,23 @@
+## M01-20 — distribuição aprovada funcionalmente (29/10/2026)
+
+Feature/m01-distribuicao-atributos em38b3342 confirmada pelo responsável nos testes de ganho de três níveis, distribuição, cancelamento, reinicialização e confirmação. Sem novos testes manuais de persistência ou smartphone inferidos. Núcleo e acesso funcional pelo inventário atendidos neste recorte, autorizados para integração/publicação em develop; não permanecem requisitos ausentes. [Escopo/evidências](plugins/Arena_Attributes.md#aprovação-funcional-e-integração--29102026). Três pontos de+1 provisórios, fórmula atual e E05 isolado preservados; refinamento visual futuro em REF15. Nenhuma mudança funcional posterior não avaliada ou falha pendente identificada nesta feature.
+
+**Critérios ainda abertos para fechar M01:** avaliação/aceite do balanceamento da faixa inicial com a progressão distribuível agora funcional, preservando valores provisórios quando aceitos; revisão final dos critérios/evidências por versão e risco (incluindo o novo recorte em ambientes-alvo), documentação/pacote final identificado. Não exigir repetir campanhas/casos já cobertos sem risco concreto. Paisagem/fullscreen são requisitos M01-19 adiados: atender ou revisar explicitamente o aceite antes de declarar atendimento integral, sem promover melhorias por associação. Não há exigência de fórmula definitiva para toda a campanha, catálogo completo ou redesign para este fechamento.
+
+**Parada obrigatória preservada:** antes do fechamento/release, conversar com o responsável sobre desenvolvimento em dois chats e uso do RPG Maker como motor/plataforma, conforme a etapa abaixo. Não iniciada nesta tarefa. Ressalvas estéticas aceitas continuam válidas; melhorias futuras REF13–REF16 e demais refinamentos não viram bloqueios automáticos. M01-20/M01 não concluídos, sem main/Pages/release ou nova funcionalidade.
+
+## M01-20 — acesso funcional à distribuição na campanha (29/10/2026)
+
+Responsável aprovou somente o funcionamento do laboratório f6de74d, sem aprovação de balanceamento/design definitivo/uso na campanha. Na mesma feature, Inventário → Atributos agora oferece rascunho de conjunto, totais previstos e confirmação/cancelamento pelo núcleo aprovado. Sem comandos técnicos na campanha, redistribuição ou mudança de parâmetros. [Caminho/roteiro/evidências](plugins/Arena_Attributes.md#aprovação-do-laboratório-e-acesso-funcional-r02). Acesso funcional para avaliação; refinamento visual futuro em REF15, sem pendência duplicada. Seis grupos focais da campanha e seis regressões do núcleo; nova avaliação manual ainda pendente. M01-20/M01 abertos, lembrete obrigatório pré-release abaixo preservado.
+
+## M01-20 — núcleo de distribuição em feature (29/10/2026)
+
+Feature/m01-distribuicao-atributos, base develop ecdc949. Implementados três pontos por nível desde2, +1 por ponto em ATQ/DEF/MAT/MDF/AGI/SOR, saldo acumulável, migração retroativa única e aplicação confirmada fora de batalha. Parâmetros provisórios autorizados; E05, fórmula, raças e equipamento preservados. [Contrato e teste técnico](plugins/Arena_Attributes.md). Seis grupos focais passaram; avaliação manual e interface definitiva pendentes. M01-20/M01 não concluídos. Histórico anterior de distribuição ausente é superado somente pelo núcleo desta feature, não por UI de campanha entregue.
+
+### Etapa obrigatória antes do fechamento/release do M01
+
+Antes de encerrar o marco ou preparar sua release, **discutir com o responsável a organização do desenvolvimento em dois chats e o uso do RPG Maker como motor e plataforma**. Lembrete obrigatório de decisão; discussão ainda não realizada, não iniciada por esta implementação. Não presumir decisão/aceite. Preservar o lembrete até registrar o resultado com o responsável.
+
 ## Loot e descanso — integrados em develop após teste (29/10/2026)
 
 Confirmação restrita do responsável em cc29df0: descanso nas plataformas testadas e quantidades de ouro variando. Incluídos fallback 2–8, retirada das quatro variantes dos novos pools com legados preservados e 40 pontos de descanso com plataforma da chave excluída. [Histórico/escopo](INTEGRACAO_TESTE_LOOT_DESCANSO_M01.md). Registros abaixo de candidata/adiamento são históricos; balanceamento continua provisório.

@@ -1,3 +1,11 @@
+## Acesso de campanha aos atributos — R02
+
+Arena_Attributes0.2.0 e integração opcional Arena_Inventory0.3.1: Inventário → Atributos, rascunho de lote sem comandos de laboratório. Núcleo/configuração/namespace e36 registros preservados; descrição do registro próprio atualizada no formato canônico. [Contrato e dependências](plugins/Arena_Attributes.md). Sem plugin externo, novos assets ou redesenho dos outros menus.
+
+## Núcleo de atributos — M01-20
+
+MV_AttributePoints0.1.0 (regras puras) e Arena_Attributes0.1.0 (dados/persistência/hooks/laboratório) acrescentados após Arena_BalanceLab;36 registros,34 anteriores integralmente preservados. Configuração ArenaAttributes.json e namespace arenaAttributes v1. Sem dependência externa, motor/asset novo ou mudança do prefixo web. [Funcionalidades, parâmetros e dependências](plugins/Arena_Attributes.md). UI definitiva futura.
+
 ## Piloto E05 — M01-20
 
 Arena_BalanceLab0.1.0 acrescentado como registro34, após os33 anteriores preservados. Experimento exclusivamente técnico autorizado; fórmula/pontos/conjuntos virtuais sem save e sem efeito de campanha. Dependências/hooks/API em [plugins/Arena_BalanceLab.md](plugins/Arena_BalanceLab.md); roteiro/evidências em [PILOTO_E05_M01_20.md](PILOTO_E05_M01_20.md). Sem plugin externo, assets novos ou alteração do motor. Contagens anteriores abaixo são históricas.

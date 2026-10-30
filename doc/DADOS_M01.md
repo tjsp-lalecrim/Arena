@@ -1,3 +1,7 @@
+## Pontos de atributos — núcleo M01-20
+
+ArenaAttributes.json schema1 configura ator/primeiro nível/quantidade/valor/IDs. Namespace interno arenaAttributes v1 guarda maior nível, concessões por nível, pontos gastos/aumentos por parâmetro e revisão. Defaults pelo MV_StateStore; migração concede saldo retroativo dos níveis atuais sem distribuir, curar ou mexer em estados anteriores. Base, equipamento e modificadores mantêm suas autoridades; curvas seis atributos continuam planas. Prefixo web inalterado. [Contrato principal](plugins/Arena_Attributes.md).
+
 ## Equipamentos legados fora das novas recompensas — M01-20
 
 Weapons3/4 e Armors3/4 preservam integralmente IDs/propriedades e uso em saves, equipamentos e reservas. ArenaLoot.json deixa `rare.chance=0`/`rare.variants={}`; nenhum desses IDs consta dos pools novos. Livros5/6 e demais regras não mudam. Sem migração, renomeação ou reutilização de IDs. [Contrato/evidências](RETIRADA_VARIANTES_RARAS_M01_20.md).
