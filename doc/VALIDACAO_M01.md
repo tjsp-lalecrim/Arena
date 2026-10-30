@@ -1,3 +1,9 @@
+## Aceites para preparar a primeira candidata — 30/10/2026
+
+Responsável aceita **paisagem/fullscreen não atendidos no M01**, adiados para marcos futuros, sem marco numérico definido ou alegação de atendimento técnico. Aceita balanceamento atual,3 pontos de+1 por nível e fórmula atual da campanha como **provisórios**, sujeitos à revisão futura. E05 permanece somente no laboratório. Esses aceites resolvem as duas primeiras respostas de fechamento; não aprovam ainda o commit/pacote de candidata nem a entrega final.
+
+Documentação b65671b integrada localmente em develop pelo merge94f17ac; release/m01 criada dessa base. Escopo congelado: nenhuma funcionalidade de jogo, regra, mapa, arte ou polimento novo. Preparação/validação do pacote e suporte externo de avaliação são o único trabalho autorizado. Sem main/push/tag/release publicada/Pages. Resultados e identificação da candidata serão registrados após a construção.
+
 ## Leitura operacional da validação — consolidação 30/10/2026
 
 Aprovações abaixo mantêm versão/ambiente/cobertura próprios; estados anteriores de pendência são históricos quando superados por relato posterior. [Resumo operacional](INICIO_NO_CODEX.md#aprovações-e-limites-de-cobertura) e [matriz/roteiro focal final](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026) evitam repetir testes já cobertos. Retrospectiva autorizada e registrada no workflow; não é aprovação final do M01. Nesta tarefa foram conferidos somente documentação, Git/tags e gatilho manual existente do workflow; nenhum novo teste de gameplay, execução no editor/aparelho, pacote ou deploy.

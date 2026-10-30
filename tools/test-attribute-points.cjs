@@ -9,7 +9,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
 const server=http.createServer((req,res)=>{const pathname=new URL(req.url,'http://localhost').pathname,f=path.resolve(root,'.'+decodeURIComponent(pathname==='/'?'/index.html':pathname));if(!f.startsWith(root+path.sep)){res.writeHead(403);return res.end();}fs.readFile(f,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':types[path.extname(f)]||'application/octet-stream'});res.end(e?'':b);});});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));let b;try{
  fs.mkdirSync(out,{recursive:true});b=await chromium.launch({channel:'chrome',headless:true});const ctx=await b.newContext({hasTouch:true,viewport:{width:1000,height:800}}),p=await ctx.newPage(),errors=[],checks=['Pure grant/allocation/copy, multiple levels, high-water and invalid budgets'];p.on('pageerror',e=>errors.push(e.message));
- const url='http://127.0.0.1:'+server.address().port+'/';
+ const url=process.env.ARENA_URL||'http://127.0.0.1:'+server.address().port+'/';
  await p.route('**/js/plugins.js',r=>r.fulfill({contentType:'application/javascript',body:cp.execFileSync('git',['show',base+':js/plugins.js'],{cwd:root,encoding:'utf8'})}));
  await p.goto(url);const title=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());await title();
  const legacy=await p.evaluate(()=>{

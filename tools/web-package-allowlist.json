@@ -1,5 +1,5 @@
 {
-  "testVersion": "m01-19-web-r01",
+  "testVersion": "m01-rc1",
   "files": [
     "index.html",
     "fonts/gamefont.css", "fonts/mplus-1m-regular.ttf",

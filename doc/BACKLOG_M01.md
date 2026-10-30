@@ -1,3 +1,9 @@
+## Aceites para preparar a primeira candidata — 30/10/2026
+
+Responsável aceita **paisagem/fullscreen não atendidos no M01**, adiados para marcos futuros, sem marco numérico definido ou alegação de atendimento técnico. Aceita balanceamento atual,3 pontos de+1 por nível e fórmula atual da campanha como **provisórios**, sujeitos à revisão futura. E05 permanece somente no laboratório. Esses aceites resolvem as duas primeiras respostas de fechamento; não aprovam ainda o commit/pacote de candidata nem a entrega final.
+
+Documentação b65671b integrada localmente em develop pelo merge94f17ac; release/m01 criada dessa base. Escopo congelado: nenhuma funcionalidade de jogo, regra, mapa, arte ou polimento novo. Preparação/validação do pacote e suporte externo de avaliação são o único trabalho autorizado. Sem main/push/tag/release publicada/Pages. Resultados e identificação da candidata serão registrados após a construção.
+
 # Fechamento operacional do M01 — 30/10/2026
 
 **Referência funcional:** develop114cf4bcada4ef1b30ecef2bbde1a7e381549144. Esta consolidação documental não altera sua implementação. Retrospectiva realizada e decisões registradas no [workflow](DESENVOLVIMENTO_E_VERSIONAMENTO.md#retrospectiva-aprovada--30102026); não é aprovação final do marco. Entrada curta e fontes em [INICIO_NO_CODEX.md](INICIO_NO_CODEX.md).

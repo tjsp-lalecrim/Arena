@@ -1,11 +1,11 @@
 // Normal campaign objects, controlled level/map fixture; isolated native saves and UI inputs.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),cp=require('node:child_process'),assert=require('node:assert/strict');
-const {chromium}=require('playwright'),root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/atributos-campanha-r01');
+const {chromium}=require('playwright'),root=path.resolve(__dirname,'..'),out=path.join(root,process.env.ARENA_ATTRIBUTE_EVIDENCE||'doc/evidencias/atributos-campanha-r01');
 const types={'.html':'text/html','.js':'application/javascript','.json':'application/json','.png':'image/png','.css':'text/css','.ttf':'font/ttf','.ogg':'audio/ogg','.m4a':'audio/mp4'};
 const server=http.createServer((req,res)=>{const n=new URL(req.url,'http://localhost').pathname,f=path.resolve(root,'.'+decodeURIComponent(n==='/'?'/index.html':n));if(!f.startsWith(root+path.sep)){res.writeHead(403);return res.end();}fs.readFile(f,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':types[path.extname(f)]||'application/octet-stream'});res.end(e?'':b);});});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));let b;try{
  fs.mkdirSync(out,{recursive:true});b=await chromium.launch({channel:'chrome',headless:true});const context=await b.newContext({hasTouch:true,viewport:{width:1000,height:800}}),p=await context.newPage(),errors=[],checks=[];p.on('pageerror',e=>errors.push(e.message));
- await p.goto('http://127.0.0.1:'+server.address().port+'/');await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
+ await p.goto(process.env.ARENA_URL||'http://127.0.0.1:'+server.address().port+'/');await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
  await p.evaluate(()=>{DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Piloto de campanha',raceId:'breton',genderId:'female'});const a=$gameActors.actor(1);a.changeLevel(3,false);$gameParty.gainItem($dataWeapons[2],1);a.changeEquip(0,$dataWeapons[2]);$gameParty.gainItem($dataArmors[2],1);a.changeEquip(3,$dataArmors[2]);a.addParam(2,3);a.addBuff(2,4);a.setHp(35);a.setMp(10);ArenaPersistence.setResource('vigor',20,100);
   MVStateStore.replace('arenaNarrative',{...ArenaNarrative.state(),mode:'campaign',phase:'dungeon'});$gamePlayer.reserveTransfer(8,148,82,4,0);SceneManager.goto(Scene_Map);
  });
