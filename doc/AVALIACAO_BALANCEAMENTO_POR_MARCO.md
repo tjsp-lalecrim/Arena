@@ -1,6 +1,6 @@
-## Atualização em feature — núcleo de atributos
+## Atualização vigente — distribuição funcional aprovada
 
-Em feature/m01-distribuicao-atributos (base ecdc949), o núcleo concede3/+1 desde nível2 com parâmetros provisórios autorizados; API e laboratório isolado em [plugins/Arena_Attributes.md](plugins/Arena_Attributes.md). A tabela histórica abaixo descreve a campanha integrada anterior. Nova feature não foi integrada/publicada; fórmula e E05 preservados. Interface de distribuição na campanha continua outra entrega. Ao avaliá-la depois, registrar pontos realmente distribuídos; testes numéricos do núcleo não demonstram balanceamento.
+Núcleo e acesso funcional pelo inventário entregues em38b3342, aprovados no escopo registrado em VALIDACAO_M01.md e autorizados para integração/publicação em develop. Concessão3/+1 desde nível2 autorizada como parâmetro provisório, sem aprovação de equilíbrio definitivo. Registrar pontos realmente distribuídos na avaliação por marco. Fórmula atual mantida e E05 isolado; refinamento visual futuro não bloqueia automaticamente a avaliação.
 
 # Avaliação de percurso e balanceamento por marco
 
@@ -16,14 +16,14 @@ Conferência por leitura dos acessos entregues: **E05 — comparar conjuntos** t
 
 | Contexto atualmente entregue | Modelo ativo |
 | --- | --- |
-| Campanha local, fora dos laboratórios | Atacar/leve=`max(1,2×ATQ−DEF)`; pesada=`max(1,3×ATQ−DEF)`; Dardo=`max(1,3×MAT−MDF)`; Cura25+MAT. Custos0/5/12 Vigor e6/8 Mana, modificadores raciais/elementais/guarda/variância nativos preservados. Escolha+10 Vida/Mana/Vigor por nível, sem cura ao evoluir; seis atributos sem crescimento por nível/pontos distribuíveis ainda não implementados. Armas normaisATQ+2/+3, raras+3/+4; couro/malha DEF+3/+6, raras+4/+7. Poções/descanso existentes; Vigor só em técnicas, sem regeneração passiva. Valores provisórios. |
+| Campanha local, fora dos laboratórios | Atacar/leve=`max(1,2×ATQ−DEF)`; pesada=`max(1,3×ATQ−DEF)`; Dardo=`max(1,3×MAT−MDF)`; Cura25+MAT. Custos0/5/12 Vigor e6/8 Mana, modificadores raciais/elementais/guarda/variância nativos preservados. Escolha+10 Vida/Mana/Vigor por nível, sem cura ao evoluir; seis atributos sem crescimento automático;3 pontos distribuíveis de+1 por nível desde2, saldo acumulável e acesso pelo inventário. Armas normaisATQ+2/+3, raras+3/+4; couro/malha DEF+3/+6, raras+4/+7. Poções/descanso existentes; Vigor só em técnicas, sem regeneração passiva. Valores provisórios. |
 | E05 somente | Proporcional S02, alocação fixa de6 pontos ATQ3/MAT3, quatro conjuntos virtuais, Bretã3/adaga/goblin30, início110/60/100. Semente controlada, sem EXP/loot ou saves experimentais. Não há interface geral de distribuição ou peças reais novas. [Contrato E05](PILOTO_E05_M01_20.md). |
 
-A fórmula da tabela é a base, não o dano final após todos os modificadores; o piso nativo pode sofrer arredondamentos posteriores (S02). Requisitos de liberdade de equipamentos e pontos continuam válidos; **três pontos, fórmula proporcional, agrupamentos e orçamento não estão aprovados para campanha**. “Manter o combate assim” não autoriza promover regras do E05.
+A fórmula da tabela é a base, não o dano final após todos os modificadores; o piso nativo pode sofrer arredondamentos posteriores (S02). Requisitos de liberdade de equipamentos e pontos continuam válidos; **três pontos de+1 foram autorizados como parâmetro provisório para o núcleo/acesso; fórmula proporcional, agrupamentos e orçamento E05 não foram aprovados para campanha**. “Manter o combate assim” não autoriza promover regras do E05.
 
 ## Roteiro curto de percurso M01 — proposto, não executado
 
-**Base provisória autorizada pelo responsável:** campanha atual integrada em develop, fora dos laboratórios, **sem transferir E05**. Histórico, identificação do commit final de referência e acesso local em [INTEGRACAO_REFERENCIA_PERCURSO_M01.md](INTEGRACAO_REFERENCIA_PERCURSO_M01.md). Conteúdo jogável igual ao estado06dacca/bc71752; integração não aprova valores definitivamente. Não pedir novamente a escolha da base. Pages permanece no jogo9fab698, sem atualização nesta integração.
+**Base provisória autorizada pelo responsável:** campanha atual integrada em develop, fora dos laboratórios, **sem transferir E05**. Histórico, identificação do commit final de referência e acesso local em [INTEGRACAO_REFERENCIA_PERCURSO_M01.md](INTEGRACAO_REFERENCIA_PERCURSO_M01.md). A referência anterior06dacca/bc71752 é histórica; ao avaliar após a integração dos atributos, congelar o commit atual de develop. Integração não aprova valores definitivamente. Não pedir novamente a escolha da base. Pages permanece no jogo9fab698, sem atualização nesta integração.
 
 Manter o mesmo commit/pacote de referência durante a rodada e registrar ambiente, versão de teste, nova partida/save de origem, personagem e rota. Usar uma personagem/construção representativa; sem matriz de todas as raças/armas. Fazer o percurso **criação → introdução → dungeon/objetivos → Shift Gate/encerramento**, com três paradas:
 

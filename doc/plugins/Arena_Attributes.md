@@ -1,5 +1,12 @@
 # Pontos de atributos — núcleo e acesso funcional
 
+## Aprovação funcional e integração — 29/10/2026
+
+Responsável aprovou funcionalmente o acesso entregue em **38b33427d20a9b189be199dd097104147d42c0d2**, confirmando ganho de três níveis, distribuição de pontos, cancelamento, reinicialização e confirmação da distribuição. Ambiente/dispositivo não discriminados neste relato. Não atribuir persistência, migração, smartphone, percurso completo ou novos casos ao responsável; evidências técnicas existentes permanecem identificadas separadamente. Não é aprovação de equilíbrio definitivo ou do refinamento visual.
+
+Nenhuma mudança funcional após38b3342. Integração/publicação em develop autorizada com histórico preservado. Três pontos de+1 desde nível2 continuam parâmetros provisórios; fórmula da campanha, E05 isolado e refinamento futuro REF15 preservados. Os relatos de avaliação pendente abaixo são históricos anteriores a esta confirmação, sem ampliar seu escopo.
+
+
 Implementação Codex, sem plugins externos. **MV_AttributePoints 0.1.0** contém regras puras reutilizáveis, sem IDs de ator, armazenamento, menus ou hooks. **Arena_Attributes 0.2.0** integra essas regras a MV_StateStore, Arena_CharacterCreation e Arena_Resources; requer também Arena_Inventory0.3.1 para o acesso funcional e carrega após Arena_BalanceLab para excluir explicitamente o E05. Configuração de Arena e laboratório no segundo plugin. Nenhum arquivo interno do motor alterado.
 
 ## Parâmetros provisórios autorizados
