@@ -21,7 +21,7 @@ Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. 
 
 Os detalhes narrativos e eventos completos de cada marco devem ser especificados consultando as fontes listadas em CAMPANHA_PRINCIPAL.md. A tabela não substitui sonhos, entregas, enigmas ou emboscadas exigidos pela quest; “obter fragmento” é um resumo de aceitação, não autorização para cortar o restante da cadeia.
 
-O fechamento do primeiro marco está em BACKLOG_M01.md e ENTREGA_M01.md (tag m01). O [backlog mínimo do M02](BACKLOG_M02.md) está proposto para avaliação, sem implementação autorizada; demais marcos receberão seus backlogs ao entrar no planejamento.
+O fechamento do primeiro marco está em BACKLOG_M01.md e ENTREGA_M01.md (tag m01). O escopo mínimo do [M02](BACKLOG_M02.md) foi aprovado; [M02-01](MQ02_ESPECIFICACAO.md) especifica estados/viagens/saves para avaliação, sem implementação autorizada; demais marcos receberão seus backlogs ao entrar no planejamento.
 
 ## Marco técnico independente — MOBILE-01
 
@@ -35,7 +35,7 @@ O fechamento do primeiro marco está em BACKLOG_M01.md e ENTREGA_M01.md (tag m01
 
 Ordem de aceitação: M01 → M02 → M03 → M04 → M05 → M06 → M07 → M08 → M09 → M10. A pesquisa ou preparação de assets de marcos posteriores pode ocorrer antes, sem declarar concluída uma quest que ainda não funciona na campanha integrada.
 
-No M02, permitir a continuação além do encerramento da demo de M01, preservando uma identificação clara de versão. Definir e registrar a política de continuidade de saves antes de distribuir uma versão que deva aceitar saves anteriores.
+No M02, continuar além do encerramento exclusivo da demo, sem mudar a tag m01. Viagem condensada e gatilhos de Ria/Tharn aprovados; detalhes em MQ02_ESPECIFICACAO.md. Compatibilidade entre versões de desenvolvimento é desejável quando o custo for limitado, não universalmente obrigatória; preservação obrigatória começa em versão oficial ainda a definir. Fonte da política: [PERSISTENCIA_M01.md](PERSISTENCIA_M01.md#política-vigente-de-compatibilidade--31102026). Avaliar a recomendação específica antes de distribuir M02; salvar/carregar dentro da versão atual continua obrigatório.
 
 Os sistemas comuns são construídos gradualmente nas features necessárias a esses marcos. Não é obrigatório adaptar todo o catálogo do jogo para terminar M01, nem criar versões duplicadas de plugins para cada quest.
 

@@ -1,8 +1,8 @@
 # Entrada operacional do Arena — pós-M01
 
-Atualizado em **30/10/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). Esta feature altera somente planejamento, sem modificar a entrega.
+Atualizado em **31/10/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). Esta feature altera somente planejamento, sem modificar a entrega.
 
-**Trabalho atual:** avaliar [M02 mínimo](BACKLOG_M02.md) e [QUALIDADE-01](QUALIDADE_01.md). Nenhuma implementação M02 iniciada/autorizada por este plano. Primeira tarefa recomendada, após avaliação: M02-01, especificação da cadeia e política de continuidade dos saves M01, inclusive ending/ended. Não iniciar polimento por associação.
+**Trabalho atual:** [M02-01 especificado](MQ02_ESPECIFICACAO.md), aguardando avaliação. Escopo mínimo/viagem condensada e eventos de Ria/Tharn aprovados; não pedir novamente. Compatibilidade de desenvolvimento flexibilizada, com preservação simples recomendada para saves normais m01. Próximo recorte sugerido após avaliação/autorização: M02-02A, continuação mínima por acesso técnico, sem cidade/arte. M02 não implementado; QUALIDADE-01 e refinamentos opcionais permanecem futuros.
 
 **Alvo vigente:** navegador desktop, inicialmente Chrome; preservar toque. [MOBILE-01](MOBILE_01.md) concentra mobile/APK, sem data/tecnologia escolhidas ou validação física a cada entrega. Pages permanece manual, sem atualização nesta tarefa. QUALIDADE-01 é janela futura limitada, a reavaliar depois da entrega funcional M02; não é pré-requisito automático.
 
@@ -20,7 +20,7 @@ Ler esta entrada e somente as fontes pertinentes ao recorte. Decisões vigentes 
 | Provisórios de balanceamento e roteiro por marco | [AVALIACAO_BALANCEAMENTO_POR_MARCO.md](AVALIACAO_BALANCEAMENTO_POR_MARCO.md) |
 | Melhorias/ressalvas, sem tarefas duplicadas | [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md) |
 | Plataformas mobile/Android | [MOBILE-01](MOBILE_01.md) |
-| Próxima cadeia e decisões de continuidade | [M02](BACKLOG_M02.md) |
+| Cadeia, viagens e decisões de continuidade | [M02](BACKLOG_M02.md), [especificação M02-01](MQ02_ESPECIFICACAO.md) |
 | Triagem/janela técnica de refinamento | [QUALIDADE-01](QUALIDADE_01.md), critérios detalhados no registro de refinamentos |
 | Pacote reproduzível e publicação manual separada | [Pacote](PACOTE_WEB_M01_19.md), [publicação](PUBLICACAO_TESTE_PAGES_M01_19.md) |
 
@@ -43,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade autorizada nesta tarefa:** planejamento documental em feature derivada de develop; aguardar avaliação antes de implementar M02. Escolha de motor/dois chats já realizada; manter MV e entregas pequenas. M01 e suas aprovações não são reabertos. A política de saves M02 e as adaptações narrativas/viagem ainda são propostas em BACKLOG_M02.md; não distribuir continuação antes dessa decisão e sua validação.
+**Continuidade autorizada nesta tarefa:** somente especificação M02-01; aguardar avaliação antes de M02-02. Manter MV, entregas pequenas, intro M01 e aprovações preservadas. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura de versão exige comunicação/avaliação e rejeição controlada, nunca corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi migrada.
 
 ---
 
