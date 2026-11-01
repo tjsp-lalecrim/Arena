@@ -1,0 +1,252 @@
+{
+  "file": "Arena_Combat_skeleton_v01",
+  "cell": [
+    192,
+    128
+  ],
+  "ground": 120,
+  "motions": {
+    "idle": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            0,
+            192,
+            128
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            192,
+            0,
+            192,
+            128
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            384,
+            0,
+            192,
+            128
+          ],
+          "duration": 20
+        },
+        {
+          "rect": [
+            576,
+            0,
+            192,
+            128
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            768,
+            0,
+            192,
+            128
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            960,
+            0,
+            192,
+            128
+          ],
+          "duration": 20
+        }
+      ],
+      "loop": true,
+      "impact": null
+    },
+    "strike": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            128,
+            192,
+            128
+          ],
+          "duration": 6
+        },
+        {
+          "rect": [
+            192,
+            128,
+            192,
+            128
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            384,
+            128,
+            192,
+            128
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            576,
+            128,
+            192,
+            128
+          ],
+          "duration": 5
+        },
+        {
+          "rect": [
+            768,
+            128,
+            192,
+            128
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            960,
+            128,
+            192,
+            128
+          ],
+          "duration": 7
+        }
+      ],
+      "loop": false,
+      "impact": 3
+    },
+    "hurt": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            256,
+            192,
+            128
+          ],
+          "duration": 4
+        },
+        {
+          "rect": [
+            192,
+            256,
+            192,
+            128
+          ],
+          "duration": 5
+        },
+        {
+          "rect": [
+            384,
+            256,
+            192,
+            128
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            576,
+            256,
+            192,
+            128
+          ],
+          "duration": 6
+        },
+        {
+          "rect": [
+            768,
+            256,
+            192,
+            128
+          ],
+          "duration": 5
+        },
+        {
+          "rect": [
+            960,
+            256,
+            192,
+            128
+          ],
+          "duration": 5
+        }
+      ],
+      "loop": false,
+      "impact": null
+    },
+    "defeat": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            384,
+            192,
+            128
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            192,
+            384,
+            192,
+            128
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            384,
+            384,
+            192,
+            128
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            576,
+            384,
+            192,
+            128
+          ],
+          "duration": 9
+        },
+        {
+          "rect": [
+            768,
+            384,
+            192,
+            128
+          ],
+          "duration": 10
+        },
+        {
+          "rect": [
+            960,
+            384,
+            192,
+            128
+          ],
+          "duration": 18
+        }
+      ],
+      "loop": false,
+      "impact": null
+    }
+  },
+  "version": "stonekeep-skeleton-v01",
+  "actionMotion": "strike"
+}

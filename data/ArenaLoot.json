@@ -207,6 +207,45 @@
       },
       "difficulty": "medium-M01",
       "source": "Monsters p.13: gold23%/2-20, low-quality item25%; remaining conversions provisional."
+    },
+    "4": {
+      "gold": {
+        "chance": 0,
+        "min": 0,
+        "max": 0
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "technical skeleton pilot; campaign table pending",
+      "source": "Player Guide PDF88/printed80: resistant to edged weapons; wiki Monsters18: half damage daggers/swords/axes/bows, HP25–45, loot unknown. Numeric MV parameters provisional. EXP/drops0 in technical pilot only; campaign reward adaptation pending."
     }
   },
   "technical": {

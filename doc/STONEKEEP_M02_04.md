@@ -84,3 +84,7 @@ Menu **Guardar teste em RAM / Carregar teste da RAM** funciona em Rihad/Stonekee
 `node tools/test-stonekeep-sample.cjs` requer Playwright/Chrome; usa servidor/origem/perfil efêmeros, RAM e slot16 sintético separado. `render-stonekeep-sample.py` gera somente a visão de revisão a partir dos tiles existentes, não novos assets. Reutilizadas evidências anteriores de núcleo/persistência, sem campanha completa ou batalhas novas.
 
 **Pendentes:** avaliação do responsável da amostra/topologia/adaptação; sprite/ícone final do pergaminho, decoração específica e guardiões; novo playtest/autoria no MV não executado; nenhum teste físico mobile novo. A expansão M02-05 e a entrega na corte aguardam avaliação e recorte próprio. Não declarar Stonekeep ou M02 concluídos.
+
+## Próximo participante — unidade de batalha, não encontro concluído
+
+[Esqueleto V01](SKELETON_M02.md), sobrecd63553: um exemplar animado e batalha nativa em laboratório RAM, resistência específica configurável, sem nova fórmula. Exploração, patrulha/contato, estado persistente do encontro e recompensas de campanha ainda pendentes; não adicionou evento/inimigo lateral ao mapa nem bloqueou a fonte. Aguarda avaliação antes de ampliar.

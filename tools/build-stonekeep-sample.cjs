@@ -18,6 +18,7 @@ function build(){
  const items=read('data/Items.json');if(items[7]&&!items[7].note.includes('MQ02.parchment'))throw Error('ID7 ocupado');
  items[7]={...items[1],id:7,name:'Pergaminho de Stonekeep',description:'Pergaminho roubado da corte de Rihad. Necessário para decifrar a localização de Fang Lair.',note:'<ArenaQuest: MQ02>\n<ArenaUnique>\nMQ02.parchment / stonekeep.parchment. Entrega somente por evento autorizado.',itypeId:2,consumable:false,price:0};write('data/Items.json',items);
  write('data/ArenaStonekeep.json',{schemaVersion:1,areaId:'stonekeep',sourceId:'stonekeep.parchment',itemId:7,mapId:12,entry:{id:'stonekeep.entry',mapId:12,x:entry[0],y:entry[1],direction:2},exitEventId:1,sourceEventId:2,travelEventId:3,return:{id:'rihad.stonekeep.return',mapId:9,x:10,y:11,direction:8},source,exit,wallSamples:walls.patches.map(p=>({id:p.id,entry:p.entry,bounds:p.bounds})),visualSample:{version:visual.version,entry:{id:'stonekeep.visual.sample',mapId:visual.mapId,x:visual.reviewPoints.aposento[0],y:visual.reviewPoints.aposento[1],direction:4},bounds:visual.bounds},breach:center(l.anchors.breach),shore:center(l.anchors.shore),island:center(l.anchors.island),swimming:{enabled:true,regionId:5,autotileKind:0,depth:32,offsetY:8}});
- console.log('Stonekeep Map012, fonte7 e vínculo recompostos; sem guardiões ou entrega.');
+ require('./build-stonekeep-skeleton.cjs')();
+ console.log('Stonekeep recomposta; piloto de batalha separado, sem encontro no mapa ou entrega.');
 }
 module.exports=build;if(require.main===module)build();

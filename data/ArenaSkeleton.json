@@ -1,0 +1,10 @@
+{
+  "version":"stonekeep-skeleton-v01",
+  "enemyId":4,
+  "troopId":5,
+  "enemy":{"name":"Esqueleto","params":[45,0,9,4,0,4,9,5],"exp":0,"hit":0.9},
+  "resistance":{"edgedRate":0.5,"weaponTypes":[1,2]},
+  "lab":{"mapId":12,"x":75,"y":39,"direction":4},
+  "source":"Player Guide PDF88/printed80: resistant to edged weapons; wiki Monsters18: half damage daggers/swords/axes/bows, HP25–45, loot unknown. Numeric MV parameters provisional. EXP/drops0 in technical pilot only; campaign reward adaptation pending.",
+  "coverage":"battle-pilot-only; walking atlas, patrol/contact and persistent encounter not implemented"
+}

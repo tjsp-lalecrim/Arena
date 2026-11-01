@@ -27,3 +27,5 @@ Extensões: BattleManager.setup valida participante único/perfis, força canEsc
 Window_BattleStatus e painel EnemyResources acompanham valores atuais e mantêm recursos esgotados. Suporte validado: um jogador/um inimigo; painel inimigo limitado a260px, **sem validação de múltiplos inimigos**, que exige revisão de layout antes de novas tropas. Não altera inventário ou schema do save; identidade e recursos são reconstruídos pelos plugins anteriores. Salvar continua no mapa. Desativar não é modo suportado para validar combate desta versão.
 
 O plugin depende do conteúdo Arena para identidade/kit, não foi declarado plugin universal. Layout/rows/células ficam em configuração, sem alterar o motor. Testes, limites, fontes e roteiro em COMBATE_M01_10.md. Canonical14/UTF8 e arquivo presente não substituem roundtrip no editor desta versão. Manual do responsável, NW.js e Galaxy A56 pendentes.
+
+Extensão compatível para o piloto de Stonekeep: prepare(technicalMapId) aceita outro mapa somente em sessão ArenaContinuation.labActive; sem argumento mantém o comportamento anterior. Nenhum preparo/cura/concessão em outro mapa da campanha. [Consumidor e limites](Arena_Skeleton.md).

@@ -1,0 +1,520 @@
+{
+  "source": "art/masters/stonekeep-skeleton-v01/sheet-v01.png",
+  "sourceSha256": "85a15256140a38ced2237c05e883090a12b437030b0b90042b821bb92833717b",
+  "output": "img/enemies/Arena_Combat_skeleton_v01.png",
+  "outputSha256": "04aadc9af05bffe82e5251f8f4a672f29c7eb9724aba1118be18cc835c496dca",
+  "scale": 0.38095238095238093,
+  "cell": [
+    192,
+    128
+  ],
+  "ground": 120,
+  "frames": [
+    {
+      "motion": "idle",
+      "frame": 0,
+      "sourceRect": [
+        48,
+        18,
+        184,
+        249
+      ],
+      "alphaBox": [
+        49,
+        32,
+        101,
+        120
+      ],
+      "placement": [
+        49,
+        32
+      ],
+      "sha256": "c5ca55454610d19e9b73271b133e26d9080a0d2e2b3c7c06e4afbe34e32da014"
+    },
+    {
+      "motion": "idle",
+      "frame": 1,
+      "sourceRect": [
+        315,
+        19,
+        446,
+        249
+      ],
+      "alphaBox": [
+        51,
+        32,
+        101,
+        120
+      ],
+      "placement": [
+        51,
+        32
+      ],
+      "sha256": "dd203b5943148dc4f0b1b75716b63e2e975a7dc52f9a44e1e052a11be24469e8"
+    },
+    {
+      "motion": "idle",
+      "frame": 2,
+      "sourceRect": [
+        574,
+        14,
+        705,
+        249
+      ],
+      "alphaBox": [
+        52,
+        30,
+        102,
+        120
+      ],
+      "placement": [
+        52,
+        30
+      ],
+      "sha256": "95a6afb7207ac4c1b67be804c6edf837552d0d143bae6ad62173ccdbf9e113c4"
+    },
+    {
+      "motion": "idle",
+      "frame": 3,
+      "sourceRect": [
+        834,
+        18,
+        952,
+        249
+      ],
+      "alphaBox": [
+        52,
+        32,
+        97,
+        120
+      ],
+      "placement": [
+        52,
+        32
+      ],
+      "sha256": "643ceac5aa01cf0dcda7b367e032dc494e40fc6684aa4841e031132fd2d00974"
+    },
+    {
+      "motion": "idle",
+      "frame": 4,
+      "sourceRect": [
+        1102,
+        19,
+        1236,
+        249
+      ],
+      "alphaBox": [
+        51,
+        32,
+        102,
+        120
+      ],
+      "placement": [
+        51,
+        32
+      ],
+      "sha256": "b615db8af8d18033d411137c4eab8b53faf1f79ee338fa510109203f805a87f1"
+    },
+    {
+      "motion": "idle",
+      "frame": 5,
+      "sourceRect": [
+        1363,
+        18,
+        1498,
+        249
+      ],
+      "alphaBox": [
+        51,
+        32,
+        102,
+        120
+      ],
+      "placement": [
+        51,
+        32
+      ],
+      "sha256": "f029e101ac93305d98ba81d85f89f0133a6b43a936115e364b36c68e1a0c4462"
+    },
+    {
+      "motion": "strike",
+      "frame": 0,
+      "sourceRect": [
+        48,
+        275,
+        177,
+        507
+      ],
+      "alphaBox": [
+        50,
+        32,
+        99,
+        120
+      ],
+      "placement": [
+        50,
+        32
+      ],
+      "sha256": "8bb253e10867336da5102aa52909b62047cb6015cb8457ba6de52197d4cedcd7"
+    },
+    {
+      "motion": "strike",
+      "frame": 1,
+      "sourceRect": [
+        314,
+        271,
+        453,
+        507
+      ],
+      "alphaBox": [
+        48,
+        30,
+        101,
+        120
+      ],
+      "placement": [
+        48,
+        30
+      ],
+      "sha256": "a451ac687c1ef1a9b32e49170faac900f5e220387060fad963ca98175eca8882"
+    },
+    {
+      "motion": "strike",
+      "frame": 2,
+      "sourceRect": [
+        557,
+        261,
+        705,
+        506
+      ],
+      "alphaBox": [
+        49,
+        27,
+        105,
+        120
+      ],
+      "placement": [
+        49,
+        27
+      ],
+      "sha256": "363223852b5477a955d9da9974d47b30547a618513bc57a8a5e2e2eec6106baa"
+    },
+    {
+      "motion": "strike",
+      "frame": 3,
+      "sourceRect": [
+        790,
+        305,
+        1088,
+        508
+      ],
+      "alphaBox": [
+        58,
+        43,
+        172,
+        120
+      ],
+      "placement": [
+        58,
+        43
+      ],
+      "sha256": "f1c1d5f0e0820c1c5382b4175770ef122bdb973b3ad2d7e4dac345041103423e"
+    },
+    {
+      "motion": "strike",
+      "frame": 4,
+      "sourceRect": [
+        1070,
+        304,
+        1306,
+        504
+      ],
+      "alphaBox": [
+        55,
+        44,
+        145,
+        120
+      ],
+      "placement": [
+        55,
+        44
+      ],
+      "sha256": "10b3ff39e0820a246b12cb7a27db44517fe79bad7aa1968ac1a8c70114c89041"
+    },
+    {
+      "motion": "strike",
+      "frame": 5,
+      "sourceRect": [
+        1363,
+        276,
+        1498,
+        507
+      ],
+      "alphaBox": [
+        51,
+        32,
+        102,
+        120
+      ],
+      "placement": [
+        51,
+        32
+      ],
+      "sha256": "3731d857878c52ec1931888eb5338ef62288bdf0551f33dd4d6f9af312ab51de"
+    },
+    {
+      "motion": "hurt",
+      "frame": 0,
+      "sourceRect": [
+        48,
+        533,
+        179,
+        764
+      ],
+      "alphaBox": [
+        50,
+        32,
+        100,
+        120
+      ],
+      "placement": [
+        50,
+        32
+      ],
+      "sha256": "78412a60d269fdb972951e9223468e9d0c6558f3455caae9f21a2936105ae517"
+    },
+    {
+      "motion": "hurt",
+      "frame": 1,
+      "sourceRect": [
+        340,
+        552,
+        452,
+        765
+      ],
+      "alphaBox": [
+        57,
+        39,
+        100,
+        120
+      ],
+      "placement": [
+        57,
+        39
+      ],
+      "sha256": "b3064a47b47c8279cd2f47670a1cdea3e1358054b40d99a246016f10f6c80f75"
+    },
+    {
+      "motion": "hurt",
+      "frame": 2,
+      "sourceRect": [
+        580,
+        578,
+        731,
+        765
+      ],
+      "alphaBox": [
+        51,
+        49,
+        109,
+        120
+      ],
+      "placement": [
+        51,
+        49
+      ],
+      "sha256": "571d394f8d0be084eebf6f3bf3991ae30819dcbf8f93262af7420a39dc394033"
+    },
+    {
+      "motion": "hurt",
+      "frame": 3,
+      "sourceRect": [
+        823,
+        557,
+        958,
+        764
+      ],
+      "alphaBox": [
+        54,
+        41,
+        105,
+        120
+      ],
+      "placement": [
+        54,
+        41
+      ],
+      "sha256": "33c2546b148a429fefabdb31c405ec80424495b18bb11cda6631e329c7ff321f"
+    },
+    {
+      "motion": "hurt",
+      "frame": 4,
+      "sourceRect": [
+        1103,
+        532,
+        1225,
+        765
+      ],
+      "alphaBox": [
+        54,
+        31,
+        100,
+        120
+      ],
+      "placement": [
+        54,
+        31
+      ],
+      "sha256": "e0369e97988e8545f0c891baead8793bbb6624a73569a5dfe2bfc897aefd356e"
+    },
+    {
+      "motion": "hurt",
+      "frame": 5,
+      "sourceRect": [
+        1363,
+        534,
+        1498,
+        764
+      ],
+      "alphaBox": [
+        51,
+        32,
+        102,
+        120
+      ],
+      "placement": [
+        51,
+        32
+      ],
+      "sha256": "aadfee97bf6056b3d4f9438379c17ff416e7990470e2a0f186127a25c8747684"
+    },
+    {
+      "motion": "defeat",
+      "frame": 0,
+      "sourceRect": [
+        61,
+        799,
+        200,
+        998
+      ],
+      "alphaBox": [
+        69,
+        44,
+        122,
+        120
+      ],
+      "placement": [
+        69,
+        44
+      ],
+      "sha256": "626f9e1c77b5c101d5286087940709a39fc2ce6cddf371f054287f471f3dc7ca"
+    },
+    {
+      "motion": "defeat",
+      "frame": 1,
+      "sourceRect": [
+        280,
+        834,
+        504,
+        997
+      ],
+      "alphaBox": [
+        53,
+        58,
+        138,
+        120
+      ],
+      "placement": [
+        53,
+        58
+      ],
+      "sha256": "b6a76d5a9bc702e8c8155d135dc9e4d42bb9eb53e5bd6715e859876d85258242"
+    },
+    {
+      "motion": "defeat",
+      "frame": 2,
+      "sourceRect": [
+        551,
+        866,
+        774,
+        999
+      ],
+      "alphaBox": [
+        53,
+        69,
+        138,
+        120
+      ],
+      "placement": [
+        53,
+        69
+      ],
+      "sha256": "0a00c7cf9e5cdeb44c3194dede055c7e1e893d6b8c75597ad047427d18abbdee"
+    },
+    {
+      "motion": "defeat",
+      "frame": 3,
+      "sourceRect": [
+        790,
+        891,
+        1021,
+        996
+      ],
+      "alphaBox": [
+        52,
+        80,
+        140,
+        120
+      ],
+      "placement": [
+        52,
+        80
+      ],
+      "sha256": "68273a7125671755896459d4194731ef536afc38ffd82406d74f7072a364cf6f"
+    },
+    {
+      "motion": "defeat",
+      "frame": 4,
+      "sourceRect": [
+        1031,
+        916,
+        1302,
+        998
+      ],
+      "alphaBox": [
+        44,
+        89,
+        147,
+        120
+      ],
+      "placement": [
+        44,
+        89
+      ],
+      "sha256": "9e180a26686f64bb97d8e019956e0602de3a2bb451bdf0e34e9d2f5d135471c5"
+    },
+    {
+      "motion": "defeat",
+      "frame": 5,
+      "sourceRect": [
+        1298,
+        932,
+        1528,
+        997
+      ],
+      "alphaBox": [
+        52,
+        95,
+        140,
+        120
+      ],
+      "placement": [
+        52,
+        95
+      ],
+      "sha256": "6db69262c91948bdb90c9ac3264ffe704badbd65c444185cec254f2af6344526"
+    }
+  ],
+  "approval": "pending",
+  "coverage": "battle only; no walking/patrol/contact"
+}

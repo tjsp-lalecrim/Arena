@@ -280,6 +280,21 @@
     }
   },
   "enemies": {
+    "1": {
+      "file": "Arena_Combat_rat_r01",
+      "cell": [
+        128,
+        80
+      ],
+      "ground": 74,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
+    },
     "2": {
       "file": "Arena_Combat_enemy_2_r01",
       "cell": [
@@ -310,13 +325,13 @@
         "defeat": 3
       }
     },
-    "1": {
-      "file": "Arena_Combat_rat_r01",
+    "4": {
+      "file": "Arena_Combat_skeleton_v01",
       "cell": [
-        128,
-        80
+        192,
+        128
       ],
-      "ground": 74,
+      "ground": 120,
       "speed": 8,
       "rows": {
         "wait": 0,
