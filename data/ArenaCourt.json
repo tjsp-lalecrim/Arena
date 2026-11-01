@@ -11,15 +11,15 @@
   ],
   "accepted": [
     "Excelente. Stonekeep fica perto de Rihad. Tenha cuidado: Golthog é astuto e maligno. Há até rumores de que seja um necromante a serviço do Underking. Quando tiver o pergaminho, volte aqui e descobrirei a localização de Fang Lair para você.",
-    "Stonekeep é agora um destino conhecido. Sua exploração e a viagem ainda não estão disponíveis nesta versão de teste. O pedido permanece em andamento."
+    "Stonekeep é agora um destino conhecido. Viaje pela estrada ao sul da esplanada. A amostra permite recuperar o pergaminho; os guardiões e a entrega ainda não estão integrados."
   ],
   "decline": [
     "Lamento que não possa ajudar agora. Se mudar de ideia, volte a perguntar sobre Fang Lair. Ficarei satisfeita com outra oportunidade de recuperar o pergaminho."
   ],
   "pending": [
-    "Nosso acordo continua: recupere o pergaminho em Stonekeep e volte à corte. Stonekeep é um destino conhecido, mas a viagem e sua exploração ainda não estão disponíveis nesta versão de teste."
+    "Nosso acordo continua: recupere o pergaminho em Stonekeep e volte à corte. Siga pela estrada ao sul da esplanada para viajar."
   ],
   "future": [
-    "O atendimento desta etapa será integrado em outro recorte. Seu progresso foi preservado; nenhuma entrega ou conclusão será simulada nesta versão."
+    "A entrega do pergaminho será integrada no próximo recorte. Seu progresso foi preservado; nenhuma entrega, recompensa ou conclusão será simulada nesta versão."
   ]
 }

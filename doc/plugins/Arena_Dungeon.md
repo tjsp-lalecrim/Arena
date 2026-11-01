@@ -1,3 +1,7 @@
+## Extensão M02-04 — natação por mapa
+
+Contrato aditivo `registerSwimming(mapId,config)` / `swimmingConfiguration()` reutiliza os mesmos hooks de passabilidade, bush, posição e ondulação para o consumidor Stonekeep. Map008 continua usando ArenaDungeon.json; mapas não registrados e veículos não recebem esse estado. Nenhum custo/regeneração, edição do motor ou nova migração de save. Portas/tesouros/reconstrução continuam limitados a Map008. [Consumidor, configuração e regressão focal](Arena_Stonekeep.md).
+
 ## Arena_Dungeon0.3.0 — R03 (vigente)
 
 Geometria e assets ortogonais conforme DIRETIVA_DE_MAPAS.md e DUNGEON_M01_14_R03.md. Schema/revisão do mapa3, animação30atualizações, mesmas APIs e regras de água R02. Saves anteriores reconstruídos em168 eventos, mantendo126 IDs de porta e recursos/inventário. A reconstrução é limitada ao mapa8. attachments registra16 fontes e faces válidas; primeira folha visual é independente de colisão e ponto lógico. Instâncias de parede são wall-only; lajes na camada1, tesouros abaixo do jogador. Pipeline build-dungeon-r03-assets.py → build-dungeon-map.py; não reempacotar R03 com o gerador histórico R02. Nenhuma dependência externa ou mudança de loot/consumo. Atualização de esquema é da geometria do laboratório, não dos sistemas de progressão.

@@ -2,7 +2,7 @@
 
 Atualizado em **01/11/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). A feature atual contém as dependências02A/02B e a chegada, arredores, visão e audiência M02-03A/B/C/D; a entrega m01 permanece intacta.
 
-**Trabalho atual:** [M02-03D — audiência mínima](CORTE_RIHAD_M02_03D.md), implementada sobre65e0c12 e entregue em fe99ac3; responsável confirmou diálogo funcional e atualização da quest, sem informar ambiente/hash. A entrega inclui acesso à corte, oferta/recusa/aceite explícito e diário30→40. Stonekeep conhecida logicamente, sem mapa ou viagem. Apresentação provisória de reuso; sem nova arte. Visão ad4af0e mantém aprovação funcional/artística; Cajado do Caos aplicado aos textos ativos conforme glossário, sem alterar a release m01. Aprovação estética dos placeholders, nova autoria MV e outros casos não presumidos. Novos assets narrativos pertinentes seguem as diretivas atualizadas, inclusive para diálogos; revisão visual retroativa permanece futura em REF07.
+**Trabalho atual:** [M02-04 — amostra de Stonekeep](STONEKEEP_M02_04.md), sobre faccbec: estrada condicionada à missão, passagem/água/ilha, fonte única do pergaminho e retorno/diário50. Map012 usa contorno recortado do original e materiais de reuso. Guardiões e arte do item pendentes, sem substituição de espécies ou entrega na corte. Audiência fe99ac3 mantém confirmação de diálogo/quest e limites estéticos; visão ad4af0e preservada. Amostra nova aguarda avaliação, sem inferir teste no editor/mobile.
 
 **Alvo vigente:** navegador desktop, inicialmente Chrome; preservar toque. [MOBILE-01](MOBILE_01.md) concentra mobile/APK, sem data/tecnologia escolhidas ou validação física a cada entrega. Pages permanece manual, sem atualização nesta tarefa. QUALIDADE-01 é janela futura limitada, a reavaliar depois da entrega funcional M02; não é pré-requisito automático.
 
@@ -43,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade:** próximo recorte recomendado é a amostra M02-04 de Stonekeep, para permitir a rota até o pergaminho e retorno; ainda não iniciado. A aplicação visual da corte não é bloqueio. Sem expansão, variantes, merge, push ou Pages nesta entrega. Refinamentos REF07 permanecem futuros; M01 e aprovações preservados.
+**Continuidade:** aguardar avaliação da amostra M02-04 antes de ampliar Stonekeep/M02-05. Guardiões exigem recorte artístico próprio; nenhuma expansão autorizada automaticamente. Sem merge, push ou Pages nesta entrega. Refinamentos de corte/REF07 continuam futuros e não bloqueantes.
 
 ---
 

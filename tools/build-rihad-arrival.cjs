@@ -65,3 +65,5 @@ write('data/ArenaRihad.json',{schemaVersion:1,areaId:'rihad',arrival:{id:'rihad.
  outskirts:{areaId:'rihad.outskirts',entry:{id:'rihad.outskirts.entry',mapId:10,x:3,y:9,direction:6},return:{id:'rihad.outskirts.return',mapId:9,x:17,y:9,direction:4},accessEventId:4,returnEventId:1}});
 console.log('Map009/010, acesso/retorno e quatro encontros recompostos; repousos/áreas anteriores preservados.');
 require('./build-rihad-court.cjs')();
+
+require('./build-stonekeep-sample.cjs')();

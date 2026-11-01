@@ -1,25 +1,245 @@
 {
   "schemaVersion": 1,
-  "quests": [{"id":"MQ02","title":"Fang Lair","stages":[
-    {"id":0,"next":10},{"id":10,"next":20},{"id":20,"next":30},{"id":30,"next":40},
-    {"id":40,"next":50},{"id":50,"next":60},{"id":60,"next":70},{"id":70,"next":80},
-    {"id":80,"next":90},{"id":90,"next":100},{"id":100,"next":110},{"id":110,"next":null}
-  ]}],
+  "quests": [
+    {
+      "id": "MQ02",
+      "title": "Fang Lair",
+      "stages": [
+        {
+          "id": 0,
+          "next": 10
+        },
+        {
+          "id": 10,
+          "next": 20
+        },
+        {
+          "id": 20,
+          "next": 30
+        },
+        {
+          "id": 30,
+          "next": 40
+        },
+        {
+          "id": 40,
+          "next": 50
+        },
+        {
+          "id": 50,
+          "next": 60
+        },
+        {
+          "id": 60,
+          "next": 70
+        },
+        {
+          "id": 70,
+          "next": 80
+        },
+        {
+          "id": 80,
+          "next": 90
+        },
+        {
+          "id": 90,
+          "next": 100
+        },
+        {
+          "id": 100,
+          "next": 110
+        },
+        {
+          "id": 110,
+          "next": null
+        }
+      ]
+    }
+  ],
   "areas": [
-    {"id":"rihad.court","questId":"MQ02","mapId":11},
-    {"id":"rihad","questId":"MQ02","mapId":9},
-    {"id":"rihad.outskirts","questId":"MQ02","mapId":10,"encounters":{"schemaVersion":1,"mapId":10,"areaId":"rihad.outskirts","completionQuestId":"MQ02","mapVisuals":{"1":{"file":"$Arena_rat_walk_r02","cell":[64,64],"ground":62,"groundByDirection":{"8":52},"animationWait":10}},"entries":[{"id":"rihad.approach.rat.01","eventId":2,"enemyId":1,"troopId":1,"origin":[10,5],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1},{"id":"rihad.approach.rat.02","eventId":3,"enemyId":1,"troopId":1,"origin":[18,5],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1},{"id":"rihad.approach.rat.03","eventId":4,"enemyId":1,"troopId":1,"origin":[10,11],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1},{"id":"rihad.approach.rat.04","eventId":5,"enemyId":1,"troopId":1,"origin":[18,11],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1}]}},
-    {"id":"stonekeep","questId":"MQ02","mapId":null},
-    {"id":"fang-lair.upper","questId":"MQ02","mapId":null},
-    {"id":"fang-lair.lower","questId":"MQ02","mapId":null}
+    {
+      "id": "rihad.court",
+      "questId": "MQ02",
+      "mapId": 11
+    },
+    {
+      "id": "rihad",
+      "questId": "MQ02",
+      "mapId": 9
+    },
+    {
+      "id": "rihad.outskirts",
+      "questId": "MQ02",
+      "mapId": 10,
+      "encounters": {
+        "schemaVersion": 1,
+        "mapId": 10,
+        "areaId": "rihad.outskirts",
+        "completionQuestId": "MQ02",
+        "mapVisuals": {
+          "1": {
+            "file": "$Arena_rat_walk_r02",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "groundByDirection": {
+              "8": 52
+            },
+            "animationWait": 10
+          }
+        },
+        "entries": [
+          {
+            "id": "rihad.approach.rat.01",
+            "eventId": 2,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              10,
+              5
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "rihad.approach.rat.02",
+            "eventId": 3,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              18,
+              5
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "rihad.approach.rat.03",
+            "eventId": 4,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              10,
+              11
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "rihad.approach.rat.04",
+            "eventId": 5,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              18,
+              11
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "stonekeep",
+      "questId": "MQ02",
+      "mapId": 12
+    },
+    {
+      "id": "fang-lair.upper",
+      "questId": "MQ02",
+      "mapId": null
+    },
+    {
+      "id": "fang-lair.lower",
+      "questId": "MQ02",
+      "mapId": null
+    }
   ],
   "sources": [
-    {"id":"stonekeep.parchment","questId":"MQ02","areaId":"stonekeep","itemKey":"MQ02.parchment","itemId":null,"quantity":1,"stages":[40,50],"receiptIds":["MQ02.rihad.parchment"]},
-    {"id":"fang.cell2.key","questId":"MQ02","areaId":"fang-lair.upper","itemKey":"MQ02.gold-key","itemId":null,"quantity":1,"stages":[70],"receiptIds":["MQ02.fang.lower-door"]},
-    {"id":"fang.staff-piece-1","questId":"MQ02","areaId":"fang-lair.lower","itemKey":"MQ02.staff-piece-1","itemId":null,"quantity":1,"stages":[90,100,110],"requiredAfterCompletion":true,"receiptIds":[]}
+    {
+      "id": "stonekeep.parchment",
+      "questId": "MQ02",
+      "areaId": "stonekeep",
+      "itemKey": "MQ02.parchment",
+      "itemId": 7,
+      "quantity": 1,
+      "stages": [
+        40,
+        50
+      ],
+      "receiptIds": [
+        "MQ02.rihad.parchment"
+      ]
+    },
+    {
+      "id": "fang.cell2.key",
+      "questId": "MQ02",
+      "areaId": "fang-lair.upper",
+      "itemKey": "MQ02.gold-key",
+      "itemId": null,
+      "quantity": 1,
+      "stages": [
+        70
+      ],
+      "receiptIds": [
+        "MQ02.fang.lower-door"
+      ]
+    },
+    {
+      "id": "fang.staff-piece-1",
+      "questId": "MQ02",
+      "areaId": "fang-lair.lower",
+      "itemKey": "MQ02.staff-piece-1",
+      "itemId": null,
+      "quantity": 1,
+      "stages": [
+        90,
+        100,
+        110
+      ],
+      "requiredAfterCompletion": true,
+      "receiptIds": []
+    }
   ],
   "receipts": [
-    {"id":"MQ02.rihad.parchment","questId":"MQ02","sourceId":"stonekeep.parchment","kind":"deliver"},
-    {"id":"MQ02.fang.lower-door","questId":"MQ02","sourceId":"fang.cell2.key","kind":"consume"}
+    {
+      "id": "MQ02.rihad.parchment",
+      "questId": "MQ02",
+      "sourceId": "stonekeep.parchment",
+      "kind": "deliver"
+    },
+    {
+      "id": "MQ02.fang.lower-door",
+      "questId": "MQ02",
+      "sourceId": "fang.cell2.key",
+      "kind": "consume"
+    }
   ]
 }

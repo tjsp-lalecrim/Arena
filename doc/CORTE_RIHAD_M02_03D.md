@@ -1,5 +1,7 @@
 # M02-03D — audiência mínima de Rihad
 
+**Continuidade M02-04:** [amostra Stonekeep](STONEKEEP_M02_04.md) agora habilita a viagem pelo acesso da estrada após o aceite e atualiza os avisos/diário correspondentes. A indisponibilidade descrita no registro03D abaixo é histórica. Entrega do pergaminho permanece ausente; aprovação funcional e ausência de aprovação estética desta corte preservadas.
+
 **Confirmação do responsável —01/11/2026:** diálogo da audiência funciona e a quest atualiza. Referência entregue/disponível **fe99ac3**; o relato não informou hash nem ambiente. Não atribuir aprovação estética dos placeholders ou testes adicionais de persistência, recusa, transferências, editor ou dispositivo. Evidências automatizadas abaixo permanecem identificadas separadamente.
 
 01/11/2026. Feature `feature/m02-corte-rihad`, sobre **65e0c12**, preservando ad4af0e e as dependências02A/02B/03A/B/C. Registro da implementação original, anterior à confirmação acima; a aprovação funcional/artística da visão de Ria não se estende à estética desta audiência. Tag/release m01 intactas. Sem Stonekeep, novas batalhas, arte gerada ou redesign narrativo.

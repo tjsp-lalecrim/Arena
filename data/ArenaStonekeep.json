@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "areaId": "stonekeep",
+  "sourceId": "stonekeep.parchment",
+  "itemId": 7,
+  "mapId": 12,
+  "entry": {
+    "id": "stonekeep.entry",
+    "mapId": 12,
+    "x": 129,
+    "y": 15,
+    "direction": 2
+  },
+  "exitEventId": 1,
+  "sourceEventId": 2,
+  "travelEventId": 3,
+  "return": {
+    "id": "rihad.stonekeep.return",
+    "mapId": 9,
+    "x": 10,
+    "y": 11,
+    "direction": 8
+  },
+  "source": [
+    30,
+    72
+  ],
+  "exit": [
+    129,
+    9
+  ],
+  "breach": [
+    75,
+    39
+  ],
+  "shore": [
+    66,
+    39
+  ],
+  "island": [
+    36,
+    45
+  ],
+  "swimming": {
+    "enabled": true,
+    "regionId": 5,
+    "autotileKind": 0,
+    "depth": 32,
+    "offsetY": 8
+  }
+}

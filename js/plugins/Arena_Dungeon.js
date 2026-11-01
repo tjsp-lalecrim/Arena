@@ -10,7 +10,10 @@ var ArenaDungeon;
  'use strict';
  if(!window.ArenaCharacterCreation)throw Error('Arena_Dungeon requer Arena_CharacterCreation.');
  DataManager._databaseFiles.push({name:'$arenaDungeon',src:'ArenaDungeon.json'});
+ var swimmingMaps={};
  ArenaDungeon={
+  registerSwimming:function(mapId,config){if(!Number.isInteger(mapId)||mapId<1||!config||!Number.isInteger(config.regionId))throw Error("Natação: configuração inválida");swimmingMaps[mapId]=Object.assign({},config);},
+  swimmingConfiguration:function(){return $gameMap&&($gameMap.mapId()===$arenaDungeon.mapId?$arenaDungeon.swimming:swimmingMaps[$gameMap.mapId()])||null;},
   enter:function(){if($gameParty.inBattle()||!ArenaCharacterCreation.isCreated())return false;$gamePlayer.reserveTransfer($arenaDungeon.mapId,$arenaDungeon.start[0],$arenaDungeon.start[1],4,0);SceneManager.goto(Scene_Map);return true;},
   startLab:function(){DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Explorador',raceId:'breton',genderId:'female'});SceneManager.clearStack();this.enter();},
   door:function(id){return $arenaDungeon.doors.filter(function(v){return v.id===id;})[0];},
@@ -33,8 +36,8 @@ var ArenaDungeon;
    if(!open)d.eventIds.forEach(function(n){$gameSelfSwitches.setValue([$arenaDungeon.mapId,n,'A'],false);});
    return true;
   },
-  isWaterTile:function(x,y){var s=$arenaDungeon.swimming,t=$gameMap.tileId(x,y,0),kind=s&&s.autotileKind!==undefined?s.autotileKind:0;return Tilemap.isTileA1(t)&&Tilemap.getAutotileKind(t)===kind;},
-  isSwimming:function(){var s=$arenaDungeon&&$arenaDungeon.swimming;return !!($gamePlayer&&$gameMap&&s&&s.enabled&&$gameMap.mapId()===$arenaDungeon.mapId&&!$gamePlayer.isInVehicle()&&$gameMap.regionId($gamePlayer.x,$gamePlayer.y)===s.regionId&&this.isWaterTile($gamePlayer.x,$gamePlayer.y));},
+  isWaterTile:function(x,y){var s=this.swimmingConfiguration(),t=$gameMap.tileId(x,y,0),kind=s&&s.autotileKind!==undefined?s.autotileKind:0;return Tilemap.isTileA1(t)&&Tilemap.getAutotileKind(t)===kind;},
+  isSwimming:function(){var s=$arenaDungeon&&this.swimmingConfiguration();return !!($gamePlayer&&$gameMap&&s&&s.enabled&&!$gamePlayer.isInVehicle()&&$gameMap.regionId($gamePlayer.x,$gamePlayer.y)===s.regionId&&this.isWaterTile($gamePlayer.x,$gamePlayer.y));},
   inspectTreasure:function(index){if($gameMap.mapId()!==$arenaDungeon.mapId||!$arenaDungeon.integration.treasures[index])return false;var state=$gameMap._arenaTreasurePreview||($gameMap._arenaTreasurePreview={});state[index]=((state[index]||0)+1)%3;$gameMessage.add('Prévia técnica: disponível / aberto / coletado.\nSem recompensa ou mudança de quest.\nConcessão real reservada para M01-16.');return true;},
   leave:function(){if($gameMap.mapId()!==$arenaDungeon.mapId)return false;var l=$arenaDungeon.laboratory;$gamePlayer.reserveTransfer(l.mapId,l.x,l.y,2,0);SceneManager.goto(Scene_Map);return true;}
  };
@@ -58,14 +61,14 @@ var ArenaDungeon;
  var passable=Game_Player.prototype.isMapPassable;
  Game_Player.prototype.isMapPassable=function(x,y,d){
   // Do not change vehicle rules, other maps, event collisions or the engine's two-sided flag checks.
-  if($gameMap.mapId()===$arenaDungeon.mapId&&!this.isInVehicle()){
-   var nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),s=$arenaDungeon.swimming;
+  if(ArenaDungeon.swimmingConfiguration()&&!this.isInVehicle()){
+   var nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),s=ArenaDungeon.swimmingConfiguration();
    if(ArenaDungeon.isWaterTile(nx,ny)&&(!s||!s.enabled||$gameMap.regionId(nx,ny)!==s.regionId))return false;
   }
   return passable.apply(this,arguments);
  };
  var bush=Game_Player.prototype.refreshBushDepth;
- Game_Player.prototype.refreshBushDepth=function(){bush.apply(this,arguments);if(ArenaDungeon.isSwimming()&&!this.isJumping())this._bushDepth=$arenaDungeon.swimming.depth;};
+ Game_Player.prototype.refreshBushDepth=function(){bush.apply(this,arguments);if(ArenaDungeon.isSwimming()&&!this.isJumping())this._bushDepth=ArenaDungeon.swimmingConfiguration().depth;};
  var frame=Sprite_Character.prototype.characterPatternX;
  var directionRow=Sprite_Character.prototype.characterPatternY;
  Sprite_Character.prototype.characterPatternY=function(){var c=this._character;return c._arenaDoorDirection?(c._arenaDoorDirection-2)/2:directionRow.apply(this,arguments);};
@@ -77,7 +80,7 @@ var ArenaDungeon;
   }return frame.apply(this,arguments);
  };
  var position=Sprite_Character.prototype.updatePosition;
- Sprite_Character.prototype.updatePosition=function(){position.apply(this,arguments);if(this._character===$gamePlayer&&ArenaDungeon.isSwimming())this.y+=$arenaDungeon.swimming.offsetY;};
+ Sprite_Character.prototype.updatePosition=function(){position.apply(this,arguments);if(this._character===$gamePlayer&&ArenaDungeon.isSwimming())this.y+=ArenaDungeon.swimmingConfiguration().offsetY;};
  var update=Sprite_Character.prototype.update;
  Sprite_Character.prototype.update=function(){update.apply(this,arguments);if(this._character!==$gamePlayer)return;
   if(!this._arenaRipple){this._arenaRipple=new Sprite(ImageManager.loadCharacter('!$Arena_Ripple_M14_R02'));this._arenaRipple.anchor.set(0.5,1);this.addChild(this._arenaRipple);}

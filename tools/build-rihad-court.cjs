@@ -23,6 +23,6 @@ function build(){
  const p=path.join(root,'data/ArenaCampaign.json'),raw=fs.readFileSync(p,'utf8'),a={id:c.areaId,questId:'MQ02',mapId:11},existing=read('data/ArenaCampaign.json').areas.find(a=>a.id===c.areaId);
  if(existing){if(JSON.stringify(existing)!==JSON.stringify(a))throw Error('Vínculo da corte divergente; preservar configuração.');}
  else fs.writeFileSync(p,raw.replace('"areas": [','"areas": [\n    '+JSON.stringify(a)+','));
- console.log('Corte Map011 e acesso5/porta6 recompostos; Stonekeep continua sem mapa.');
+ console.log('Corte Map011 e acesso5/porta6 recompostos; destinos adicionais preservados.');
 }
 module.exports=build;if(require.main===module)build();

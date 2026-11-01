@@ -1,0 +1,10 @@
+{
+  "base": "faccbec568671a42f26b77c8495117c3b553c6a8",
+  "checks": [
+    "44 canonical MV plugins; all43 previous records exactly preserved and files present; UTF-8 without BOM",
+    "Original crop conforms to decoded MAP1/FLOR except the three documented breach cells; original MIF hash unchanged",
+    "Previous maps/tiles/swim config unchanged; only Stonekeep binding and new important item appended; legacy items intact",
+    "No engine/art/combat/resource rules or namespace changes; tag m01 preserved",
+    "New generators and runtime parse; full parent pipeline byte-idempotent after compact map export"
+  ]
+}

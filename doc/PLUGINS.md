@@ -1,3 +1,7 @@
+## Stonekeep M02-04 — estado vigente
+
+Arena_Stonekeep0.1.0 acrescentado após43 registros anteriores integralmente preservados (total44). [Configuração/API/dependências](plugins/Arena_Stonekeep.md): rota real, fonte existente vinculada, fixture RAM e natação compartilhada. Arena_Dungeon ganha seleção de natação por mapa, mantendo configuração/portas MQ01. Sem plugin externo, motor, namespace ou consumidor de recursos novo. [Recorte/evidências/limites](STONEKEEP_M02_04.md). Descrições anteriores de destino ausente são históricas.
+
 ## Corte de Rihad M02-03D — estado vigente
 
 Arena_Court0.1.0 acrescenta um registro, total43;42 anteriores mantêm nomes, ordem, status e parâmetros no formato canônico MV. Usa mensagens/choices/transferências nativas e núcleos existentes, sem dependência externa ou namespace de save novo. Configuração separada dos textos/posições, aceitação idempotente e destino somente lógico. [API/contratos](plugins/Arena_Court.md), [fontes/roteiro](CORTE_RIHAD_M02_03D.md). Contagens/ausência de corte abaixo são históricas.

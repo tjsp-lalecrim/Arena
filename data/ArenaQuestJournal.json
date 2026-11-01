@@ -60,7 +60,11 @@
         },
         {
           "revealAt": 40,
-          "text": "A rainha Blubamka pediu que eu recupere o pergaminho roubado pelos goblins em Stonekeep. Ele permitirá decifrar a localização de Fang Lair. Stonekeep é um destino conhecido; a viagem ainda está indisponível nesta versão de teste."
+          "text": "A rainha Blubamka pediu que eu recupere o pergaminho roubado pelos goblins em Stonekeep. Ele permitirá decifrar a localização de Fang Lair. Posso viajar pela estrada de Rihad."
+        },
+        {
+          "revealAt": 50,
+          "text": "Encontrei o pergaminho na ilha de Stonekeep. Devo voltar à corte de Rihad. A entrega será integrada no próximo recorte; o pedido continua em andamento."
         }
       ],
       "steps": [
@@ -92,8 +96,16 @@
           "id": "recover-parchment",
           "revealAt": 40,
           "doneAt": 50,
-          "text": "Recuperar o pergaminho em Stonekeep. Viagem e exploração ainda indisponíveis nesta versão.",
-          "completedText": "Pergaminho recuperado."
+          "text": "Recuperar o pergaminho na ilha de Stonekeep.",
+          "completedText": "Pergaminho recuperado.",
+          "objectiveId": "parchmentRecovered"
+        },
+        {
+          "id": "return-parchment",
+          "revealAt": 50,
+          "doneAt": 60,
+          "text": "Voltar à corte de Rihad com o pergaminho. A entrega ainda não está integrada.",
+          "completedText": "Pergaminho entregue à corte."
         }
       ],
       "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas."

@@ -1,0 +1,61 @@
+/*:
+ * @plugindesc v0.1.0 Stonekeep: viagem condicionada, passagem e fonte do pergaminho.
+ * @author Codex
+ * @help Após Arena_Court/Arena_Rihad/Arena_Dungeon/Arena_Persistence.
+ * Dados ArenaStonekeep.json; fonte no registro ArenaCampaign. Sem plugins externos.
+ * Natação nativa delimitada; sem guardiões, entrega ou revelação de Fang Lair.
+ * Fixture Stonekeep · passagem (RAM), saves pessoais bloqueados. doc/STONEKEEP_M02_04.md.
+ */
+var ArenaStonekeep;
+(function(){
+ 'use strict';DataManager._databaseFiles.push({name:'$arenaStonekeep',src:'ArenaStonekeep.json'});
+ function c(){return $arenaStonekeep;}
+ function here(){return $gameMap&&$gameMap.mapId()===c().mapId;}
+ function valid(i,mapId,eventId){var e=$gameMap.event(eventId);return ArenaNarrative.isCampaign()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&!$gameMessage.isBusy()&&$gameMap.mapId()===mapId&&i instanceof Game_Interpreter&&i._mapId===mapId&&i.eventId()===eventId&&e&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;}
+ function message(i,text){var w=SceneManager._scene._messageWindow,list=[];w.resetFontSettings();MVJournalModel.wrap(text,w.contentsWidth()-8,w.textWidth.bind(w)).forEach(function(t,n){if(n%4===0)list.push({code:101,indent:0,parameters:['',0,0,2]});list.push({code:401,indent:0,parameters:[t]});});list.push({code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;}
+ function transfer(to){$gameTemp.clearDestination();$gameTemp._arenaCourtTravelFence=true;$gamePlayer.reserveTransfer(to.mapId,to.x,to.y,to.direction,0);return true;}
+ ArenaStonekeep={
+  known:function(){return ArenaQuests.snapshot('MQ02').stage>=40;},
+  offer:function(i){if(!valid(i,c().return.mapId,c().travelEventId)||!this.known())return false;
+   i.setupChild([{code:101,indent:0,parameters:['',0,0,2]},{code:401,indent:0,parameters:['Viajar até Stonekeep?']},{code:401,indent:0,parameters:['Amostra da rota; guardiões ainda não integrados.']},
+    {code:102,indent:0,parameters:[['Viajar para Stonekeep','Ficar em Rihad'],1,1,2,0]},
+    {code:402,indent:0,parameters:[0,'Viajar para Stonekeep']},{code:355,indent:1,parameters:['ArenaStonekeep.travel(this);']},
+    {code:402,indent:0,parameters:[1,'Ficar em Rihad']},{code:404,indent:0,parameters:[]},{code:0,indent:0,parameters:[]}],i.eventId());return true;
+  },
+  travel:function(i){return valid(i,c().return.mapId,c().travelEventId)&&i._branch[0]===0&&this.known()?transfer(c().entry):false;},
+  leave:function(i){return valid(i,c().mapId,c().exitEventId)?transfer(c().return):false;},
+  collect:function(i){
+   if(!valid(i,c().mapId,c().sourceEventId))return false;
+   var q=ArenaQuests.snapshot('MQ02'),status=ArenaPersistence.sourceStatus(c().sourceId);
+   if(!status.active)return false;if(!status.missing)return message(i,'O pergaminho já está no inventário.');
+   var backup=JsonEx.makeDeepCopy($gameSystem._persistentState),items=Object.assign({},$gameParty._items);
+   try{if(ArenaPersistence.claimSource(c().sourceId)!=='granted')return false;
+    if(q.stage===40)ArenaPersistence.setQuest('MQ02',50,Object.assign({},q.objectives,{parchmentRecovered:true}),false);
+   }catch(e){$gameSystem._persistentState=backup;$gameParty._items=items;throw e;}
+   return message(i,'Você encontrou o pergaminho que a corte de Rihad pode usar para descobrir a localização de Fang Lair. Volte à corte. A entrega pertence ao próximo recorte.');
+  },
+  preview:function(){if(!ArenaCourt.preview())return false;var q=ArenaQuests.snapshot('MQ02');ArenaPersistence.setQuest('MQ02',40,Object.assign({},q.objectives,{parchmentRequest:true}),false);return true;}
+ };
+ var loaded=DataManager.isDatabaseLoaded,registered=false;
+ DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!registered){var cfg=c(),a=ArenaCampaignConfig.area(cfg.areaId),s=ArenaCampaignConfig.source(cfg.sourceId);if(!a.ok||a.config.mapId!==cfg.mapId||!s.ok||s.config.itemId!==cfg.itemId||!$dataItems[cfg.itemId]||$dataItems[cfg.itemId].itypeId!==2)throw Error('Stonekeep: vínculos inválidos');ArenaDungeon.registerSwimming(cfg.mapId,cfg.swimming);registered=true;}return true;};
+ var destination=ArenaCourt.destination;
+ ArenaCourt.destination=function(){var d=destination();if(window.$arenaStonekeep&&ArenaCampaignConfig.area(c().areaId).ok)d.available=d.known;return d.available?{id:d.id,known:d.known,available:true}:d;};
+ var notice=ArenaRihad.arrivalNotice;
+ ArenaRihad.arrivalNotice=function(i){return ArenaStonekeep.known()?ArenaStonekeep.offer(i):notice.apply(this,arguments);};
+ var choice=Window_ChoiceList.prototype.start;
+ Window_ChoiceList.prototype.start=function(){choice.apply(this,arguments);if($gameMap.mapId()===c().return.mapId&&$gameMap._interpreter.eventId()===c().travelEventId){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
+ var terminate=Window_Message.prototype.terminateMessage;
+ Window_Message.prototype.terminateMessage=function(){terminate.apply(this,arguments);if(here()||$gameMap.mapId()===c().return.mapId){$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();}};
+ var title=Window_TitleCommand.prototype.makeCommandList,create=Scene_Title.prototype.createCommandWindow;
+ Window_TitleCommand.prototype.makeCommandList=function(){title.apply(this,arguments);this.addCommand('Stonekeep · passagem (RAM)','arenaStonekeep');};
+ Scene_Title.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeep',ArenaStonekeep.preview);};
+ var menu=Window_MenuCommand.prototype.addOriginalCommands;
+ Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(here()&&ArenaContinuation.labActive()){this.addCommand('Guardar teste em RAM','arenaRihadStore');this.addCommand('Carregar teste da RAM','arenaRihadLoad');}};
+ var display=Scene_Map.prototype.createDisplayObjects,update=Scene_Map.prototype.update;
+ Scene_Map.prototype.createDisplayObjects=function(){display.apply(this,arguments);if(here()||$gameMap.mapId()===c().return.mapId){this._stoneLabels=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._stoneLabels);}};
+ Scene_Map.prototype.update=function(){update.apply(this,arguments);if(!this._stoneLabels)return;var b=this._stoneLabels.bitmap;b.clear();this._stoneLabels.visible=!$gameMessage.isBusy();
+  function label(x,y,t){var px=$gameMap.adjustX(x)*48+24,py=$gameMap.adjustY(y)*48-26;if(px<0||px>b.width||py<72||py>b.height)return;b.fontSize=17;b.fillRect(px-155,py,310,26,'rgba(8,14,18,.9)');b.textColor='#ead9b5';b.drawText(t,px-151,py,302,26,'center');}
+  if(here()){b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Stonekeep — amostra da passagem e ilha',16,3,b.width-32,30);b.fontSize=16;b.drawText('Arte de reuso · sem guardiões · coleta não conclui a missão',16,37,b.width-32,26);if(ArenaPersistence.sourceStatus(c().sourceId).missing)label(c().source[0],c().source[1],'Pergaminho · marcador provisório');label(c().exit[0],c().exit[1],'Retornar a Rihad ↑');}
+  else if(ArenaStonekeep.known())label(10,12,'Estrada · Stonekeep ↓');
+ };
+})();
