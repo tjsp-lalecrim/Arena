@@ -1,5 +1,7 @@
 # M02-04 — amostra integrada de Stonekeep
 
+**Levantamento visual posterior01/11/2026:** [referências e primeiro conjunto de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md): seis prints inspecionados, INFO→STKEEP1.INF e associações pontuais de materiais/portas/pergaminho. Proposta limitada a aposento/passagem/margem, sem geração ou mudança do layout nesta consulta; origem das incertezas registrada. Próxima tarefa visual deverá começar pela amostra integrada antes de expandir. Não acrescenta aprovação da amostra funcional.
+
 ## Correção confirmada — cache HTTP de Items.json
 
 Responsável informou a resposta da aba afetada: `http://127.0.0.1:8774/data/Items.json`, **200 OK (from disk cache)**, Content-Length2902, Date01/11/2026 12:12:32GMT, Last-Modified26/10/2026 21:44:49GMT, IDs1–6 sem7. [Relato exato](evidencias/m02-04-items-cache/relato-responsavel.json). No disco e no servidor atual:3425bytes, IDs1–7, item7=Pergaminho de Stonekeep/itypeId2, SHA256 `9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746`. Não foi apagado ou recriado genericamente: o cadastro contratado já existia. O relato **não aprova a amostra**.
