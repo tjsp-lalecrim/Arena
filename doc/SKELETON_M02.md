@@ -1,5 +1,7 @@
 # Stonekeep — exemplar de esqueleto
 
+**Relato posterior:** responsável testou **Stonekeep · patrulha (RAM)** e confirmou funcionamento, associado à referência disponível **443e43b**. Não foram discriminados ambiente, encontros individuais, persistência ou recompensas; não atribuir testes específicos nem aprovação de balanceamento. Evidências técnicas abaixo permanecem separadas do relato.
+
 ## Passagem representada — sete encontros, sobre d800a8f
 
 **Cobertura vigente:** grupo da passagem aplicado com os mesmos sprites, caminhada, batalha e parâmetros do exemplar aprovado. Sem perseguição, reforços, agregação por proximidade ou múltiplos participantes por encontro. A avaliação de navegação do hub d800a8f funcionou segundo o responsável; ambiente e outros casos não discriminados. Não estender esse relato às novas posições ou ao balanceamento.

@@ -246,6 +246,45 @@
       },
       "difficulty": "campaign exemplar; item/gold loot unknown, deliberately empty",
       "source": "Player Guide PDF88/printed80: resistance to edged weapons; wiki Monsters18: HP25-45, EXP=HP*15+250 (625-925), loot unknown. MV EXP50 is a provisional campaign adaptation to existing rat15/goblin25/lizard50 scale, not a direct conversion or balance approval. No item/gold reward inferred. Direct battle RAM fixture alone suppresses EXP."
+    },
+    "5": {
+      "gold": {
+        "chance": 0,
+        "min": 0,
+        "max": 0
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "laboratory only; campaign reward configuration deferred",
+      "source": "Original Player Guide PDF88/printed80: carrion eater, cunning, bite may transmit disease. Local Monsters wiki PDF5: HP45-75, damage5-20, EXP=HP*20+1000, gold24%7-70 and low-quality item5%. Original GHOUL1/3/6.CFA consulted with PAL.COL: hunched olive humanoid, long arms, red eyes, spiked club, overhead action and collapse. Numeric MV parameters provisional, not direct conversions. Disease/new resistances absent. EXP/loot0 only in battle RAM laboratory; campaign configuration pending."
     }
   },
   "technical": {

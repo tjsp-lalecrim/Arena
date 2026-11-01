@@ -1,3 +1,7 @@
+## Ghoul M02 — piloto de batalha
+
+Arena_Ghoul0.1.0 após Arena_DebugHub: um consumidor de batalha RAM com novo registro pela API do hub, sem comando adicional no título. Enemy5/Troop6 e perfis próprios; sem doença, caminhada, encontros da ilha ou recompensa de campanha. [Contrato](plugins/Arena_Ghoul.md), [fontes/arte/testes](GHOUL_M02.md). Contagens anteriores abaixo são históricas; consultar js/plugins.js para a lista real.
+
 ## Hub técnico M02 — estado vigente
 
 Arena_DebugHub0.1.0 após os provedores existentes: registro central de22 acessos, título com uma entrada técnica, sem copiar fixtures. Configuração explícita e perfil jogador desabilitado no empacotamento; namespace e regras de salvamento anteriores intactos. [Contrato, inventário, caminhos e verificações](plugins/Arena_DebugHub.md). Formato MV canônico e registros anteriores preservados. Contagens abaixo são históricas.

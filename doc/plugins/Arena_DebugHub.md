@@ -9,10 +9,12 @@ Título → **Testes / Debug**. Três categorias:
 | Categoria | Acessos preservados |
 | --- | --- |
 | Personagem (5) | Laboratório técnico, recursos, habilidades, inventário e atributos |
-| Combate (4) | Combate técnico/pilotos de armas/E05, loot, encontros e esqueleto de batalha direta |
+| Combate (5) | Combate técnico/pilotos de armas/E05, loot, encontros, esqueleto e ghoul de batalha direta |
 | Campanha e mapas (13) | Duas amostras de arte, Imperial Dungeons, descanso, continuidade M02, chegada de Rihad, visão de Ria, audiência, Stonekeep passagem/materiais/CASK/CASL e patrulha |
 
 Registro principal: [ArenaDebugHub.json](../../data/ArenaDebugHub.json). Nomes visíveis e disponibilidade são obtidos dos comandos anteriores, não renomeados por heurística. [Inventário completo e evidências](../evidencias/m02-debug-hub/resultado.json) compara os22 acessos com o título anterior ao plugin. Novo Jogo, Continuar e Opções mantêm nomes, handlers e condições normais.
+
+Atualização posterior:23 acessos no total com **Stonekeep · ghoul (RAM)**, registrado por Arena_Ghoul pela API central. [Escopo e teste focal do novo acesso](../GHOUL_M02.md); os22 anteriores e a configuração do hub não foram alterados. Não é caminhada ou integração de ilha.
 
 **Stonekeep:** Testes / Debug → Campanha e mapas → **Stonekeep · passagem (RAM)** para a viagem; materiais/CASK/CASL para consulta visual. **Esqueleto:** mesma categoria → **Stonekeep · patrulha (RAM)**; batalha direta em **Combate → Stonekeep · esqueleto (RAM)**. O preparo e as recompensas continuam sendo os de cada fixture original.
 
