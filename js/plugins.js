@@ -39,5 +39,7 @@ var $plugins =
 {"name":"MV_AttributePoints","status":true,"description":"v0.1.0 Regras puras de pontos por nível","parameters":{}},
 {"name":"Arena_Attributes","status":true,"description":"v0.2.0 Pontos persistentes e acesso pelo inventário","parameters":{}},
 {"name":"MV_ChapterContinuation","status":true,"description":"v0.1.0 Regras puras de continuidade","parameters":{}},
-{"name":"Arena_Continuation","status":true,"description":"v0.1.0 M02-02A continuidade técnica isolada","parameters":{"TechnicalDestination":"{\"id\":\"technical.resources.arrival\",\"mapId\":5,\"x\":4,\"y\":7,\"direction\":2}"}}
+{"name":"Arena_Continuation","status":true,"description":"v0.1.0 M02-02A continuidade técnica isolada","parameters":{"TechnicalDestination":"{\"id\":\"technical.resources.arrival\",\"mapId\":5,\"x\":4,\"y\":7,\"direction\":2}"}},
+{"name":"MV_CampaignConfig","status":true,"description":"v0.1.0 Índices puros de configuração","parameters":{}},
+{"name":"Arena_CampaignConfig","status":true,"description":"v0.1.0 Contratos por quest e área","parameters":{}}
 ];

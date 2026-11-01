@@ -1,0 +1,93 @@
+{
+  "browser": "156.0.8078.76",
+  "initial": {
+    "diagnostics": [],
+    "q1": "MQ01",
+    "q2": "MQ02",
+    "q2state": {
+      "stage": 0,
+      "objectives": {},
+      "completed": false,
+      "receipts": {}
+    },
+    "area": "imperial-dungeons",
+    "unbound": {
+      "ok": false,
+      "code": "unbound_encounters",
+      "id": "rihad"
+    },
+    "unknown": {
+      "ok": false,
+      "code": "unknown_quests",
+      "id": "absent"
+    },
+    "unknownArea": {
+      "ok": false,
+      "code": "unknown_areas",
+      "id": "absent"
+    },
+    "unknownSource": {
+      "ok": false,
+      "code": "unknown_sources",
+      "id": "absent"
+    },
+    "claim": "unbound",
+    "noMutation": true,
+    "nullQuest": false,
+    "emptyQuest": false,
+    "nullArea": false,
+    "emptyArea": false
+  },
+  "checks": [
+    "Pure registry: unique sources/receipts/maps, quest/stage references, rejected extension atomic with MQ01 intact",
+    "Production MQ02 contracts present but unbound; selection and absent lookups do not initialize quest, grant items, create areas or enable travel",
+    "MQ01 default configuration unchanged",
+    "MQ01 source grant",
+    "MQ01 repeated grant no duplicate",
+    "MQ02 independent source grant",
+    "MQ02 repeated grant no duplicate",
+    "Wrong-quest receipt rejected",
+    "Rejected receipt did not consume",
+    "MQ02 delivery consumed once",
+    "MQ02 duplicate delivery rejected",
+    "Delivered source retired",
+    "MQ01 receipts/stage untouched by MQ02",
+    "MQ01 original receipt signature retained",
+    "Gold-key source distinct from parchment",
+    "Same-quest wrong-source receipt rejected",
+    "Gold-key receipt consumed once",
+    "Independent item quantities return to prior amounts",
+    "Explicit post-completion fragment requirement supported",
+    "Fragment not duplicated",
+    "MQ01 remains retired",
+    "MQ01 unaffected by all MQ02 operations",
+    "Selected stage graph uses existing quest kernel",
+    "Map5 selects synthetic Rihad",
+    "Map7 selects synthetic Stonekeep",
+    "Unknown map does not fallback to MQ01",
+    "MQ01 area/enemy unaffected by selected-area exit",
+    "Existing respawn kernel preserves quest-specific enemy",
+    "Missing area fails recoverably",
+    "Missing-area operations mutate nothing",
+    "No resource/actor/gold changes from selection and grants",
+    "Synthetic native save",
+    "Synthetic native load",
+    "Persistent state unchanged across load",
+    "Delivered source not regranted after load",
+    "Fragment not regranted after load",
+    "Synthetic native load",
+    "Persistent state unchanged across load",
+    "Delivered source not regranted after load",
+    "Fragment not regranted after load",
+    "Synthetic native load",
+    "Persistent state unchanged across load",
+    "Delivered source not regranted after load",
+    "Fragment not regranted after load",
+    "Missing/invalid/colliding extension leaves MQ01 playable; no silent fallback to another quest or area"
+  ],
+  "errors": [],
+  "scope": "Synthetic JSON responses/items/maps in disposable browser only; no new maps/assets/battles or personal saves",
+  "manual": "not requested for internal contracts",
+  "editor": "not executed",
+  "phone": "not executed"
+}

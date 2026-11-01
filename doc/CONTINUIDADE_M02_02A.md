@@ -1,5 +1,7 @@
 # M02-02A — núcleo de continuidade em laboratório
 
+**Relato posterior01/11/2026:** responsável executou o laboratório, não compreendeu claramente os resultados e autorizou avançar ao02B. Registrar autorização, não aprovação manual dos detalhes técnicos. Evidências abaixo preservadas; não exigir repetição de estruturas internas. [Continuidade02B](CONFIGURACOES_M02_02B.md). O estado anterior abaixo é histórico do recorte.
+
 01/11/2026. Implementado para **avaliação do responsável**, sem avanço a M02-02B. Feature/m02-02a-continuidade deriva de develop85940d4 pelos dois commits apenas documentais c8bf765/34c2f95, preservados como dependências. Nenhuma integração em develop/main, push, release ou atualização Pages nesta entrega. Tag m01 continua df539eeee2d88199312ca3a8cba98edd2b2b900b.
 
 Regras aprovadas em [MQ02_ESPECIFICACAO.md](MQ02_ESPECIFICACAO.md); API, configuração e dependências em [plugins/Arena_Continuation.md](plugins/Arena_Continuation.md). O núcleo separa pré-requisito/identificadores de efeitos de mapa, e o adaptador reconhece os estados normais M01 sem curar, premiar ou redistribuir. Somente novo namespace interno e recibos de transição são acrescentados; nenhum namespace web alterado.

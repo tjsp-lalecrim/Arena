@@ -1,5 +1,9 @@
 # Contratos persistentes — M01-05
 
+## Seleção de contratos M02-02B — 01/11/2026
+
+Fontes novas resolvidas por quest/área em ArenaCampaign.json; sem mudar schema1/namespace web ou iniciar MQ02 por consulta. IDs de recibo/fonte validados antes de novos consumos; legado MQ01 preservado. Fontes sem item vinculado não concedem nada; fragmento tem obrigação explícita após conclusão, mantendo recibos legítimos. [Contratos/API](plugins/Arena_CampaignConfig.md), [validação](CONFIGURACOES_M02_02B.md). Não é migração de partidas pessoais.
+
 ## Extensão técnica M02-02A — 01/11/2026
 
 Namespace interno arenaContinuation v1 acrescentado: phase/transição/destino e recibos, sem duplicar dados nativos/MQ01 ou trocar namespace web. Defaults e migrações existentes reutilizados; normal m01 reconhecido, narrativa1→2 preservada. Laboratório bloqueia slots normais e usa RAM; falha de load restaura a sessão anterior sem escrita. [Contrato/API](plugins/Arena_Continuation.md), [evidências/limites](CONTINUIDADE_M02_02A.md). Não é migração executada de saves pessoais nem continuação real habilitada.

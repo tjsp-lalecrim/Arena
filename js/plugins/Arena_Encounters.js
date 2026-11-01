@@ -11,15 +11,23 @@ var ArenaEncounters;
     'use strict';
     if (!window.MVEncounterRules || !window.ArenaDungeon || !window.ArenaLoot || !window.ArenaBattleMotion) throw Error('Arena_Encounters: dependência ausente');
     DataManager._databaseFiles.push({name:'$arenaEncounters',src:'ArenaEncounters.json'});
-    function config() { return window.$arenaEncounters; }
+    function configuration(areaId) {
+        if(window.ArenaCampaignConfig&&ArenaCampaignConfig.ready())return ArenaCampaignConfig.encounters(areaId===undefined?$arenaEncounters.areaId:areaId);
+        return areaId===undefined||areaId===$arenaEncounters.areaId?{ok:true,config:$arenaEncounters}:{ok:false,code:'unknown_areas'};
+    }
+    function config() {
+        if(!window.ArenaCampaignConfig||!ArenaCampaignConfig.ready())return window.$arenaEncounters;
+        var r=ArenaCampaignConfig.forMap($gameMap&&$gameMap.mapId());
+        return r.ok&&configuration(r.config.id).ok?configuration(r.config.id).config:null;
+    }
     function entries() { return config().entries; }
     function spec(e) { return config() && e && e._mapId===config().mapId && entries().filter(function(v){return v.eventId===e.eventId();})[0]; }
-    function area() { return ArenaPersistence.snapshot().areas[config().areaId] || {completed:false,exitRevision:0,generation:0}; }
+    function area(c) { return ArenaPersistence.snapshot().areas[(c||config()).areaId] || {completed:false,exitRevision:0,generation:0}; }
     function state(v) { return ArenaPersistence.snapshot().enemies[v.id]; }
-    function storeArea(a) { ArenaPersistence.setArea(config().areaId,a.completed,a.exitRevision,a.generation); }
-    function ensure() {
-        var a=area();storeArea(a);
-        entries().forEach(function(v){if(!state(v))ArenaPersistence.setEnemy(v.id,config().areaId,v.questSpecific,false,a.generation);});
+    function storeArea(a,c) { ArenaPersistence.setArea((c||config()).areaId,a.completed,a.exitRevision,a.generation); }
+    function ensure(c) {
+        c=c||config();var a=area(c);storeArea(a,c);
+        c.entries.forEach(function(v){if(!state(v))ArenaPersistence.setEnemy(v.id,c.areaId,v.questSpecific,false,a.generation);});
     }
     function sync() {
         if (!config() || $gameMap.mapId()!==config().mapId) return;
@@ -35,31 +43,34 @@ var ArenaEncounters;
     }
     function busy() { return $gameTemp._arenaEncounterLock || $gameParty.inBattle() || $gamePlayer.isTransferring() || $gameMessage.isBusy() || !(SceneManager._scene instanceof Scene_Map) || SceneManager.isSceneChanging(); }
     ArenaEncounters={
+        configuration:configuration,
+        currentConfiguration:function(){var c=config();return c?{ok:true,config:c}:{ok:false,code:'unknown_map'};},
         start:function(id) {
             if(!config() || $gameMap.mapId()!==config().mapId || busy())return false;
-            var v=entries().filter(function(v){return v.id===id;})[0];if(!v)return false;
+            var c=config(),v=entries().filter(function(v){return v.id===id;})[0];if(!v)return false;
             ensure();var e=$gameMap.event(v.eventId);
             if(!e || e._erased || state(v).defeated || $gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1)return false;
             $gameTemp._arenaEncounterLock={id:id};
             BattleManager.setup(v.troopId,false,false);
             BattleManager.setEventCallback(function(result){
                 if(result===0 && $gameTroop.isAllDead()){
-                    ArenaPersistence.setEnemy(v.id,config().areaId,v.questSpecific,true,state(v).generation);
+                    ArenaPersistence.setEnemy(v.id,c.areaId,v.questSpecific,true,state(v).generation);
                     e.erase();
                 }
                 // Keep the transition locked until the map actually resumes.
             });
             $gamePlayer.makeEncounterCount();SceneManager.push(Scene_Battle);return true;
         },
-        completeArea:function() { var a=area();a.completed=true;storeArea(a); },
-        onExit:function() {
-            ensure();var a=area(),q=ArenaPersistence.snapshot().quests[config().completionQuestId];
+        completeArea:function(areaId) { var r=configuration(areaId);if(!r.ok)return false;var a=area(r.config);a.completed=true;storeArea(a,r.config); },
+        onExit:function(areaId) {
+            var r=configuration(areaId);if(!r.ok)return false;var c=r.config;
+            ensure(c);var a=area(c),q=ArenaPersistence.snapshot().quests[c.completionQuestId];
             a.completed=a.completed||!!(q&&q.completed);
-            var all={};entries().forEach(function(v){all[v.id]=state(v);});
-            var next=MVEncounterRules.exit(a,all);storeArea(next.area);
+            var all={};c.entries.forEach(function(v){all[v.id]=state(v);});
+            var next=MVEncounterRules.exit(a,all);storeArea(next.area,c);
             Object.keys(next.enemies).forEach(function(id){var v=next.enemies[id];ArenaPersistence.setEnemy(id,v.areaId,v.questSpecific,v.defeated,v.generation);});
         },
-        startLab:function() { ArenaDungeon.startLab();$gameSystem._arenaEncounterTechnical=true;$gamePlayer.reserveTransfer(config().mapId,35,16,6,0); },
+        startLab:function() { ArenaDungeon.startLab();$gameSystem._arenaEncounterTechnical=true;$gamePlayer.reserveTransfer($arenaEncounters.mapId,35,16,6,0); },
         sync:sync
     };
     var setup=Game_Map.prototype.setup;
@@ -74,7 +85,7 @@ var ArenaEncounters;
     Scene_Map.prototype.start=function(){start.apply(this,arguments);$gameTemp._arenaEncounterLock=null;sync();};
     var transfer=Game_Player.prototype.performTransfer;
     Game_Player.prototype.performTransfer=function(){
-        if(config() && this.isTransferring() && $gameMap.mapId()===config().mapId && this._newMapId!==config().mapId)ArenaEncounters.onExit();
+        if(config() && this.isTransferring() && $gameMap.mapId()===config().mapId && this._newMapId!==config().mapId)ArenaEncounters.onExit(config().areaId);
         transfer.apply(this,arguments);
     };
     var move=Game_Event.prototype.updateSelfMovement;

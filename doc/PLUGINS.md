@@ -1,3 +1,7 @@
+## Configurações M02-02B — quest/área
+
+MV_CampaignConfig e Arena_CampaignConfig0.1.0, após os38 anteriores preservados (total40). ArenaCampaign.json contém contratos MQ02 sem vínculos de item/mapa; seletores contextuais e fontes/recibos isolados integram os adaptadores existentes sem cloná-los. Sem novo namespace de save, dependência externa, mapa ou ativação de campanha. [APIs/contratos](plugins/Arena_CampaignConfig.md), [resultados](CONFIGURACOES_M02_02B.md).
+
 ## Continuidade M02-02A — técnica isolada
 
 MV_ChapterContinuation0.1.0 e Arena_Continuation0.1.0 adicionados após Arena_Attributes;38 registros canônicos,36 anteriores preservados. Núcleo puro sem IDs de Arena, adaptador/laboratório com destino configurável em mapa existente e namespace interno arenaContinuation v1. Sem dependência externa, novo consumidor de recursos ou mudança no prefixo web. [API/parâmetro/hooks](plugins/Arena_Continuation.md), [roteiro/evidências](CONTINUIDADE_M02_02A.md). Campanha mantém o fim M01; autoria MV/manual do responsável pendentes.

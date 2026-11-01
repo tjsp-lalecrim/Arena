@@ -1,3 +1,7 @@
+## Seleção de contratos M02-02B
+
+M02-02B: configuration(id) e snapshot(id) permitem consulta contextual; assinatura sem ID e ações da chave/porta/Gate continuam MQ01. Sem quest ativa global ou implementação narrativa MQ02. [Contrato e APIs](Arena_CampaignConfig.md), [evidências](../CONFIGURACOES_M02_02B.md).
+
 # Arena_Quests0.1.0 e MV_QuestRules0.1.0
 
 Codex, sem plugins externos. Ordem: contratos MV_StateStore/Arena_Persistence, personagem/recursos/combate/loot/UI, Arena_Dungeon, Arena_Encounters, MV_QuestRules, Arena_Quests. Sem parâmetros de editor. Config/textos em `data/ArenaQuests.json`, schema1, conteúdo MQ01 separado das regras puras.

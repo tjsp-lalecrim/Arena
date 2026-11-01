@@ -42,8 +42,12 @@ var ArenaPersistence = (function() {
     }
     function source(data, sourceId) {
         id(sourceId);
-        if (!Object.prototype.hasOwnProperty.call(sources, sourceId)) throw new Error('Arena: fonte desconhecida');
         var config = sources[sourceId];
+        if (!config && window.ArenaCampaignConfig && ArenaCampaignConfig.ready()) {
+            var selected = ArenaCampaignConfig.source(sourceId);
+            if (selected.ok) config = selected.config;
+        }
+        if (!config) throw new Error('Arena: fonte desconhecida');
         var q = quest(data, config.questId);
         var record = data.sources[sourceId] || { grants: 0, retired: false };
         // A preserved delivery/consumption receipt remains authoritative even if
@@ -54,7 +58,7 @@ var ArenaPersistence = (function() {
                 ['consume', 'deliver'].indexOf(receipt.kind) >= 0;
         });
         return { config: config, quest: q, record: record,
-            active: !q.completed && !record.retired && !settled && config.stages.indexOf(q.stage) >= 0 };
+            active: config.itemId !== null && (!q.completed || config.requiredAfterCompletion === true) && !record.retired && !settled && config.stages.indexOf(q.stage) >= 0 };
     }
     // Only a single native item stack participates. Roll back it if validation or
     // a plugin throws; save/load is synchronous and cannot interleave this call.
@@ -75,6 +79,7 @@ var ArenaPersistence = (function() {
     }
     return {
         snapshot: state,
+        sourceDefinitions: function() { return JSON.parse(JSON.stringify(sources)); },
         identity: function() {
             var c = state().character;
             c.name = $gameActors.actor(c.actorId).name();
@@ -114,7 +119,7 @@ var ArenaPersistence = (function() {
         },
         claimSource: function(sourceId) {
             var d = state(), s = source(d, sourceId);
-            if (!s.active) return 'inactive';
+            if (!s.active) return s.config.itemId === null ? 'unbound' : 'inactive';
             var item = $dataItems[s.config.itemId];
             if (!item) throw new Error('Arena: item ausente');
             var missing = Math.max(0, s.config.quantity - $gameParty.numItems(item));
@@ -127,6 +132,10 @@ var ArenaPersistence = (function() {
             id(receiptId);
             if (['consume', 'deliver'].indexOf(kind) < 0) throw new Error('Arena: tipo de recibo inválido');
             var d = state(), s = source(d, sourceId);
+            if (s.config.receiptIds) {
+                var r = window.ArenaCampaignConfig && ArenaCampaignConfig.receipt(receiptId);
+                if (!r || !r.ok || s.config.receiptIds.indexOf(receiptId) < 0 || r.config.questId !== s.config.questId || r.config.sourceId !== sourceId || r.config.kind !== kind) return 'incompatible-receipt';
+            }
             if (Object.prototype.hasOwnProperty.call(s.quest.receipts, receiptId)) return 'duplicate';
             if (!s.active) return 'inactive';
             var item = $dataItems[s.config.itemId];

@@ -2,7 +2,7 @@
 
 Atualizado em **01/11/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). A feature atual implementa somente M02-02A técnico; a entrega m01 permanece intacta.
 
-**Trabalho atual:** [M02-02A implementado para avaliação](CONTINUIDADE_M02_02A.md), conforme especificação34c2f95 aprovada para este recorte. Título → Continuidade M02 (sem saves), fixtures descartáveis/guardar RAM, destino técnico Map005; campanha sem continuação real. Oito grupos focais passaram; avaliação do responsável e autoria dos novos plugins no editor pendentes. Aguardar avaliação antes de M02-02B; sem Rihad, arte ou refinamentos opcionais.
+**Trabalho atual:** [M02-02B entregue](CONFIGURACOES_M02_02B.md): seleção por quest/área e fontes/recibos separados;45 verificações sintéticas+23 cenários MQ01. Responsável executou02A, não compreendeu claramente os resultados e autorizou avançar; não é aprovação manual dos detalhes técnicos. Sem repetir laboratório/campanha inteira. Próximo conteúdo recomendado: M02-03, primeira chegada/orientação em Rihad, aguardando autorização. Nenhum destino novo ou refinamento iniciado.
 
 **Alvo vigente:** navegador desktop, inicialmente Chrome; preservar toque. [MOBILE-01](MOBILE_01.md) concentra mobile/APK, sem data/tecnologia escolhidas ou validação física a cada entrega. Pages permanece manual, sem atualização nesta tarefa. QUALIDADE-01 é janela futura limitada, a reavaliar depois da entrega funcional M02; não é pré-requisito automático.
 
@@ -43,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade autorizada nesta tarefa:** somente implementação técnica M02-02A; aguardar avaliação antes de ampliar. Manter MV, entregas pequenas, intro M01 e aprovações preservadas. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura de versão exige comunicação/avaliação e rejeição controlada, nunca corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi migrada.
+**Continuidade autorizada nesta tarefa:** somente infraestrutura M02-02B; não pedir avaliação manual de IDs/estruturas nem ampliar para conteúdo sem autorização. Manter MV, entregas pequenas, intro M01 e aprovações preservadas. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura de versão exige comunicação/avaliação e rejeição controlada, nunca corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi migrada.
 
 ---
 
