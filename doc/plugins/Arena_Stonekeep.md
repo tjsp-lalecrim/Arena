@@ -2,6 +2,8 @@
 
 Adaptador M02-04 após Arena_Court, Arena_Rihad, Arena_Dungeon, Arena_CampaignConfig e Arena_Persistence/Quests. Sem dependências externas/parâmetros de Plugin Manager. [Fontes, recorte, limitações e roteiro](../STONEKEEP_M02_04.md).
 
+**Revisão HTTP de conteúdo:** em HTTP/HTTPS, a entrada nativa de Items recebe `?arena-data=stonekeep-parchment-v1` para não reutilizar o banco M01 ainda fresco no cache. Não modifica payload, saves, namespace ou path file:// do MV; não usa nonce por abertura/build. Mantém validação e erro em configuração inválida. Conferir essa revisão quando o contrato do banco mudar; [causa, headers e teste de cache/reconstrução](../STONEKEEP_M02_04.md#correção-confirmada--cache-http-de-itemsjson).
+
 `ArenaStonekeep.json` schema1: mapId, areaId, sourceId/itemId, IDs de eventos, entry/return com IDs lógicos e coordenadas, source/exit/breach/shore/island e swimming. Fonte/etapas/recibo em ArenaCampaign.json, item importante em Items7. Valida vínculos no boot; registro de natação não entra no save. Após29e38db, cada falha informa a condição exata e os valores observados (área/mapa, fonte/item, existência/classificação, disponibilidade/diagnostics do registro), preservando a interrupção. Sem defaults ou mensagem no fluxo válido. [Investigação e regressão de abertura real](../STONEKEEP_M02_04.md#investigação-de-inicialização-após29e38db--01112026).
 
 - `known()`: MQ02≥40; conhecimento deriva da etapa persistida. `ArenaCourt.destination()` passa a refletir a viagem existente; sem duplicar flag.

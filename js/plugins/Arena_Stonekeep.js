@@ -9,6 +9,14 @@
 var ArenaStonekeep;
 (function(){
  'use strict';DataManager._databaseFiles.push({name:'$arenaStonekeep',src:'ArenaStonekeep.json'});
+ // Content revision, not a save namespace/build. Unversioned M01 Items.json can
+ // remain fresh in Chrome's HTTP cache after the server publishes item7.
+ // Keep native file URLs unchanged for MV editor/playtest.
+ if(/^https?:$/.test(window.location.protocol)){
+  var itemsFile=DataManager._databaseFiles.filter(function(f){return f.name==='$dataItems';})[0];
+  if(!itemsFile||itemsFile.src!=='Items.json')throw Error('Stonekeep: configuração de carregamento de Items.json inesperada.');
+  itemsFile.src='Items.json?arena-data=stonekeep-parchment-v1';
+ }
  function c(){return $arenaStonekeep;}
  function here(){return $gameMap&&$gameMap.mapId()===c().mapId;}
  function valid(i,mapId,eventId){var e=$gameMap.event(eventId);return ArenaNarrative.isCampaign()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&!$gameMessage.isBusy()&&$gameMap.mapId()===mapId&&i instanceof Game_Interpreter&&i._mapId===mapId&&i.eventId()===eventId&&e&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;}

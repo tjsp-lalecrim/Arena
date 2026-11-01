@@ -1,6 +1,20 @@
 # M02-04 — amostra integrada de Stonekeep
 
-## Investigação de inicialização após29e38db —01/11/2026
+## Correção confirmada — cache HTTP de Items.json
+
+Responsável informou a resposta da aba afetada: `http://127.0.0.1:8774/data/Items.json`, **200 OK (from disk cache)**, Content-Length2902, Date01/11/2026 12:12:32GMT, Last-Modified26/10/2026 21:44:49GMT, IDs1–6 sem7. [Relato exato](evidencias/m02-04-items-cache/relato-responsavel.json). No disco e no servidor atual:3425bytes, IDs1–7, item7=Pergaminho de Stonekeep/itypeId2, SHA256 `9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746`. Não foi apagado ou recriado genericamente: o cadastro contratado já existia. O relato **não aprova a amostra**.
+
+**Causa comprovada:** resposta antiga reutilizada pelo cache HTTP, não ausência atual no disco nem alteração posterior de $dataItems. Busca nos plugins não encontrou escritor que removesse o item; o carregador nativo faz JSON.parse da resposta recebida. A reprodução controlada com bytes históricos de faccbec, Last-Modified antigo e ausência de Cache-Control (comportamento do servidor Python) demonstrou abertura nativa falhando com item7 ausente/transferSize0, enquanto uma leitura sem cache recebia7. [Antes da correção](evidencias/m02-04-items-cache/reproducao-anterior.json). A confirmação do cache na aba pessoal vem dos headers fornecidos pelo responsável, não de inferência sobre o teste isolado.
+
+**Correção:** Arena_Stonekeep passa a solicitar somente em HTTP/HTTPS `data/Items.json?arena-data=stonekeep-parchment-v1`. É revisão explícita do conteúdo exigido, não timestamp, versão de build, namespace ou migração de save. URL antiga e seu cache continuam intactos; arquivos/file:// do editor permanecem com o caminho nativo. Contrato inválido ainda interrompe com diagnóstico específico; não há item/default inventado, recarga automática ou remoção da validação. Em nova alteração do contrato de Items, revisar essa chave de conteúdo na entrega pertinente, sem trocar o namespace de partidas.
+
+**Verificação focal:** `node tools/test-stonekeep-items-cache.cjs` aquece o cache com o arquivo histórico numa origem/perfil descartáveis e publica os bytes atuais em servidor estático de teste, sem interceptar o navegador nem injetar registro. Scene_Boot inicializa antes do laboratório. O jogo abre com7, a URL antiga continua retornando1–6 do cache (prova de que não foi limpo), e a opção RAM permite viagem real/coleta única/diário50 sem mudar MQ01 ou gravar slots. [Resultado e reconstrução](evidencias/m02-04-items-cache/resultado.json), [coleta](evidencias/m02-04-items-cache/coleta.png). A reconstrução pelo gerador pai ocorre em cópia mínima de dados/ferramentas, sem assets:7 ausente é recomposto com os campos contratados,1–6 e um8 sintético de marco posterior são preservados, repetição é idempotente. Nenhum gerador que removesse7 no projeto atual foi identificado; essa regressão protege contra truncamento futuro.
+
+A regressão de abertura no **servidor real8774** também foi repetida: bytes HTTP iguais ao disco, título, laboratório, viagem e fonte disponíveis, MQ01/storage preservados. [Resultado atualizado](evidencias/m02-04-boot/resultado.json). Nenhum save/dado do site foi apagado; sem editor/mobile/campanha completa nesta correção. A lacuna dos testes anteriores era perfil vazio/servidor no-store, sem cache de versão anterior. Amostra permanece aguardando avaliação do responsável.
+
+Conferência dos processos revelou dois Python HTTP com o mesmo diretório Arena/porta8774. A checagem anterior por Get-NetTCPConnection não os detectou e foi incorreto registrar a porta como livre. Somente o duplicado19428, iniciado pelo agente, foi encerrado; servidor original10096 preservado e oito requisições novas conferidas. A duplicidade não explica a resposta antiga do item: o header informado confirma **disk cache**.
+
+## Histórico — investigação de inicialização após29e38db —01/11/2026
 
 Responsável encontrou “Stonekeep: vínculos inválidos” em localhost e não conseguiu avaliar a amostra; **nenhuma aprovação registrada**. Na árvore limpa29e38db, uma abertura nativa em Chrome novo no servidor existente `http://127.0.0.1:8774/` chegou ao título **antes da alteração**: registro pronto/diagnostics vazio, área stonekeep/mapId12, fonte stonekeep.parchment/itemId7, item7 existente/itypeId2. Ordem final CampaignConfig→Rihad→Ria→Court→Stonekeep correta. Bytes HTTP de configurações/plugins conferidos com o diretório atual. Não foi possível identificar qual condição falhou na aba original do relato; cache/arquivo divergente é hipótese, não causa confirmada. Endereço e diagnóstico daquela execução ainda necessários se o erro persistir.
 
@@ -43,7 +57,7 @@ Origem: `node tools/build-stonekeep-sample.cjs`; o gerador pai `node tools/build
 
 ## Avaliação curta
 
-**http://127.0.0.1:8774/**. Porta conferida livre; servidor deste projeto iniciado nesta tarefa, PID19428, permanece ativo. Para encerrá-lo: PowerShell `Stop-Process -Id 19428` (conferir o processo caso a sessão já tenha terminado). Outros serviços não foram encerrados. Editor: playtest do projeto atual; nome na árvore **M02-04 Stonekeep — amostra**.
+**http://127.0.0.1:8774/**. Servidor original deste projeto **PID10096** preservado; duplicado19428 iniciado pelo agente foi encerrado na correção acima. A antiga indicação de porta livre estava incorreta. Para encerrar o servidor original quando desejado: PowerShell `Stop-Process -Id 10096` (conferir o processo caso a sessão já tenha terminado). Editor: playtest do projeto atual; nome na árvore **M02-04 Stonekeep — amostra**.
 
 1. Título → **Stonekeep · passagem (RAM)**. Prepara missão aceita e Bretã nível2, sem repetir dungeon/Ria/combates. Recursos parcialmente gastos, sem cura pela viagem. Sessão separada dos slots pessoais.
 2. Caminhar ao sul até (10,12), pressionar Enter ou clicar/tocar o destino da estrada; escolher **Viajar para Stonekeep**. Escape cancela.
