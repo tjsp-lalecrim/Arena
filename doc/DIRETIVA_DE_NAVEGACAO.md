@@ -32,4 +32,12 @@ Estado real e quantidades atualizam imediatamente. Transições curtas de preenc
 
 ## Narrativa M01-18 R02
 
+### Composição narrativa futura
+
+Direção aprovada para refinamento futuro em01/11/2026, vinculada à **REF07**: usar a ilustração como fundo da cena, com proporção preservada e enquadramento adequado ao espaço disponível. Ajustar escala/recorte com áreas seguras para personagens e elementos narrativos, sem deformar a imagem. **Remover bordas das caixas de texto**; garantir contraste por sombra discreta ou degradê localizado junto ao texto, evitando escurecer desnecessariamente toda a arte.
+
+Preservar margens, legibilidade, controles visíveis, foco, teclado/mouse/toque, soltura/nova pressão e paginação/overflow de textos longos. Ao implementar, validar composição e leitura em enquadramentos distintos, sem cortes relevantes ou controles sobrepostos. Uma amostra integrada precede expansão. Não é redesign autorizado nesta tarefa, não substitui o layout vigente já aprovado e não bloqueia continuidade da campanha. Critérios e planejamento únicos em [REF07](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa); conteúdo das imagens em DIRECAO_DE_ARTE.md.
+
+### Implementação histórica R02
+
 A imagem ocupa área maior com texto paginado e controles visíveis por foco/clique/toque. Não depender de hover. Soltar e pressionar novamente para avançar; a entrada no mapa também limpa destino e aguarda neutralização. Última página entra diretamente na dungeon, sem menu intermediário de salvar/confirmar entrada. Salvar continua no fluxo normal posterior. Botões Voltar/Continuar conservam áreas de toque44px e foco por teclado. Textos e imagens contidos sem sobreposição em640×480/916×412 emulados; isso não substitui o teste físico.

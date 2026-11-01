@@ -2,7 +2,7 @@
 
 Atualizado em **01/11/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). A feature atual contém as dependências02A/02B e a chegada, arredores e visão M02-03A/B/C; a entrega m01 permanece intacta.
 
-**Trabalho atual:** [M02-03C — visão de Ria](VISAO_RIA_M02_03C.md), feature/m02-visao-ria sobre3022750. Repouso nível2+, texto original completo dividido em8 blocos,14 grupos focais, cursor MQ02 separado e avanço20/informante30. Um piloto artísticoV01, sete blocos com a mesma composição provisória; aguardar avaliação antes de variantes. Manuais recentes adiados pelo responsável para sequência com conteúdo novo, sem aprovação inferida nem bloqueio do avanço técnico. Só estrada/informante03A têm confirmação parcial anterior. Corte/audiência não implementadas.
+**Trabalho atual:** visão M02-03C/ad4af0e aprovada pelo responsável no funcionamento e direção artística; [cobertura](VISAO_RIA_M02_03C.md). Não inferir ambiente ou casos de save/recortes anteriores não relatados. Cajado do Caos aprovado em LOCALIZACAO_E_GLOSSARIO.md. Ilustrações próprias por bloco e composição de tela são refinamentos futuros REF07; preservam o piloto/layout atual, sem produção automática ou bloqueio da corte. Próximo recorte recomendado: M02-03, audiência mínima em Rihad, ainda não iniciado.
 
 **Alvo vigente:** navegador desktop, inicialmente Chrome; preservar toque. [MOBILE-01](MOBILE_01.md) concentra mobile/APK, sem data/tecnologia escolhidas ou validação física a cada entrega. Pages permanece manual, sem atualização nesta tarefa. QUALIDADE-01 é janela futura limitada, a reavaliar depois da entrega funcional M02; não é pré-requisito automático.
 
@@ -43,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade autorizada nesta tarefa:** somente visão de Ria M02-03C; encerrado o recorte, aguardar avaliação artística antes de variantes. Manuais podem ser agrupados à próxima entrega de conteúdo; corte exige autorização própria. Manter MV, M01 e aprovações preservados. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura exige avaliação, sem corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi usada nos testes.
+**Continuidade autorizada nesta tarefa:** somente registrar aprovação/localização/diretivas e planejar refinamentos. Sem implementação ou variantes; próxima audiência exige seu recorte próprio. M01, saves e aprovações preservados; não reabrir testes já cobertos nem atribuir novos ambientes ao relato.
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
   "version": "v01",
-  "status": "Candidata; aguarda avaliação estética do responsável. Não produzir variantes nesta entrega.",
+  "status": "Direção artística aprovada pelo responsável para a visão ad4af0e; pilotoV01 preservado. Sem autorização automática de variantes/lote.",
   "tool": "image_gen.imagegen — ferramenta integrada, edição referenciada",
   "prompt": "Criar UMA ilustração narrativa-piloto horizontal 1536x1024 para o jogo Arena, dark fantasy de acabamento pictórico refinado, não pixel art. Referência fornecida 1: img/pictures/arena_ria_narrativa_r02.png, APENAS para identidade e acabamento aprovado de Ria Silmane: preservar seu rosto reconhecível, cabelo longo escuro flutuante, brincos discretos, manto branco translúcido luminoso e presença espectral azul-fria. Referência fornecida 2: doc/prints/ria silmane.jfif, captura do Arena original, APENAS para identidade da aparição, cabelos, tecido e atmosfera onírica; não reproduzir baixa resolução. MUDAR O CONTEXTO da referência1: esta é uma visão em sonho durante repouso em Rihad, não a prisão inicial. Mostrar somente Ria surgindo numa extensão ampla de névoa azul-prateada e sombra carvão abstrata, ambiente de sonho sem local arquitetônico identificável. Composição: Ria central levemente à esquerda, busto/meio corpo, rosto sereno e urgente legível no jogo, cabelo e manto dissolvendo nas brumas, boa área de respiro à direita, olhos com definição natural, luz fria coerente. Sua roupa envolve o próprio corpo; não acrescentar mãos soltas. Nenhum protagonista ou outra pessoa, nenhum corpo ou silhueta de observador, sem mãos/braços de jogador, reflexos de pessoas, armas, equipamentos, cela, grades, correntes, chave rubi, altar, porta ou cenário de masmorra. Não mostrar o Staff, fragmentos, mapa, localização ou símbolos inventados. Sem texto, logos, molduras ou interface. Preservar a identidade espectral aprovada de Ria e cores frias, sem fantasia medieval genérica, sem aparência de fotografia/3D. A imagem deverá ocupar um quadro amplo com proporção preservada; personagem não cortada nas bordas do rosto/cabelos.",
   "referencesProvided": [
@@ -56,5 +56,12 @@
       "path": "img/pictures/Arena_intro_R09_r02.png",
       "evaluation": "Conferência adicional: cela/correntes/grade e leito de palha; preservada, não fornecida à ferramenta."
     }
-  ]
+  ],
+  "approval": {
+    "date": "2026-11-01",
+    "providedBy": "responsável, confirmação explícita nesta conversa",
+    "version": "ad4af0e688352ca4cf02dfeca9c40d8c4a493ad2",
+    "scope": "Teste funcional satisfatório da visão e direção artística aprovados; pilotoV01 identificado pelo output/outputSha256 já registrados.",
+    "limits": "Sem ambiente, dispositivo, percurso ou casos adicionais de persistência discriminados no relato. Não aprova imagens ainda não produzidas nem autoriza automaticamente variantes. Reuso atual permanece aceito; refinamentos futuros em REF07."
+  }
 }

@@ -1,4 +1,4 @@
-# Localização vigente — M01, revisão R02
+# Localização e glossário — decisões vigentes
 
 Diretriz obrigatória: nomes próprios de personagens e locais permanecem no original. Diálogos, descrições, objetivos, títulos comuns e termos funcionais são apresentados em Português Brasileiro. Nomes de objetos, organizações e conceitos exigem decisão individual registrada neste glossário; não fazer substituições globais sem revisar contexto. Documentos históricos preservam a redação da versão que descrevem.
 
@@ -12,6 +12,9 @@ Diretriz obrigatória: nomes próprios de personagens e locais permanecem no ori
 | ruby key | chave de rubi | Objeto comum. Visível sobre plataforma, não tesouro oculto. A gema vermelha é interpretação artística coerente com o brilho de rubi; wiki observa que o sprite parece amarelo. |
 | Shift Gate | Shift Gate; explicado como “portal mágico de transporte” | Objeto/conceito mágico, não pessoa, cidade ou nome da dungeon. Manter o termo reconhecível de Arena e explicar sua função em português na primeira orientação. |
 | Elder Scrolls | Pergaminhos Ancestrais | Conceito/artefato próprio avaliado individualmente: conservar tradução descritiva já adotada na introdução; não afeta nome do produto The Elder Scrolls: Arena. |
+| Staff of Chaos | **Cajado do Caos** | Tradução explicitamente aprovada pelo responsável em01/11/2026, após a visão ad4af0e. Decisão individual de localização de artefato; nomes próprios de personagens/localizações continuam no original. Usar em novos textos e revisões autorizadas; não substituir citações, prompts históricos ou arquivos da release m01 retroativamente. |
+
+Decisão vigente acima é documental nesta rodada: os textos de execução de ad4af0e não foram alterados. A aplicação da tradução nesses dados fica para um recorte de implementação autorizado; não é uma nova decisão pendente de tradução.
 
 ## Fontes e limites
 

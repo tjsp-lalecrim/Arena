@@ -1,5 +1,9 @@
 # M02-03C — visão de Ria em Rihad
 
+**Aprovação posterior do responsável —01/11/2026, versão explícita ad4af0e:** teste funcional satisfatório e direção artística aprovados. PilotoV01/arquivo/hash no [registro de arte](arte/MQ02_RIA_PILOTO_V01.json). Ambiente, dispositivo e casos técnicos adicionais não foram discriminados; não estender a aprovação aos testes manuais de chegada/arredores, persistência ou outras combinações. A aprovação do piloto não autoriza produzir variantes.
+
+**Decisões vigentes:** [glossário](LOCALIZACAO_E_GLOSSARIO.md) aprova **Cajado do Caos** para Staff of Chaos. Texto de execução e transcrição abaixo conservam a versão ad4af0e nesta tarefa documental; nenhuma troca foi aplicada ao jogo ou à release m01. Ilustrações por bloco/composição futura estão no registro único [REF07](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa): refinamentos não bloqueantes para a corte. Relato e limites anteriores abaixo descrevem a entrega antes desta aprovação.
+
 01/11/2026. Feature `feature/m02-visao-ria`, sobre **3022750**, com02A/02B/03A/03B preservados. **Implementada para avaliação**, não aprovação manual nem conclusão de M02-03. Responsável adiou a avaliação dos recortes recentes para uma sequência com conteúdo novo; o adiamento não bloqueia este avanço técnico. Confirmação anterior continua restrita ao acesso da estrada/informante03A. Descanso/RAM dessa chegada, arredores e visão não receberam aprovação manual inferida.
 
 ## Fonte, tradução e recorte
@@ -36,7 +40,7 @@ Configuração principal: [ArenaRiaVision.json](../data/ArenaRiaVision.json), sc
 
 Única geração: **img/pictures/Arena_MQ02_Ria_piloto_v01.png**,1536×1024. Ferramenta integrada `image_gen.imagegen`, duas referências efetivamente fornecidas: RiaR02 aprovada (`arena_ria_narrativa_r02.png`) e print original `doc/prints/ria silmane.jfif`. [Prompt completo, papéis, hashes e inspeção](arte/MQ02_RIA_PILOTO_V01.json). V01 preserva rosto/cabelo/manto e luz espectral; troca a cela por bruma onírica abstrata, sem protagonista/mãos/silhuetas do jogador. O arquivo antigo com prisioneira e a pintura com grades/chave foram inspecionados e não usados como cena ativa. As versões anteriores permanecem intactas.
 
-**Piloto artístico, ainda não aprovado.** Bloco01 apresenta a amostra integrada;02–08 reutilizam explicitamente a **mesma composição provisória**, não oito ilustrações concluídas. Não houve lote/variantes/vozes. A identidade aprovada anterior é referência de continuidade, não aprovação automática deste asset.
+**Estado na entrega original ad4af0e, antes da aprovação acima: piloto artístico ainda não aprovado.** Bloco01 apresenta a amostra integrada;02–08 reutilizam explicitamente a **mesma composição provisória**, não oito ilustrações concluídas. Não houve lote/variantes/vozes. A identidade aprovada anterior é referência de continuidade, não aprovação automática deste asset.
 
 Usa Scene_ArenaNarrative e MV_NarrativePages existentes. Somente o provedor MQ02 utiliza área sem cabeçalho, imagem proporcional ampla e painel de texto paginado com margens; intro/fim M01 preservam layout e arquivos anteriores. Teclado, clique e toque, foco visível e soltura/nova pressão. Em campanha há Salvar no rodapé; na fixture há Guardar/Carregar RAM. A última página oferece Despertar, sem confirmação adicional.
 
@@ -67,4 +71,4 @@ RAM se perde ao fechar/recarregar/sair ao título. Na **campanha normal**, repou
 
 Capturas reais: [piloto integrado](evidencias/m02-03c/visao-piloto.png), [leitura em640×400](evidencias/m02-03c/leitura-menor.png). [Integridade estática](evidencias/m02-03c/contratos.json): mapas/encontros/recursos/arte antiga/namespace e dados M01 preservados;42 plugins canônicos.
 
-**Aplicado:** gatilhos/contratos e integração funcional autorizados. **Para avaliação:** tradução pt-BR, pilotoV01 e composição reutilizada; sem alegar acabamento definitivo ou aprovação estética. **Pendente:** avaliação manual agrupada e novo teste de autoria no MV; nenhum teste físico nesta rodada. M02-03 continua parcial. Aguardar avaliação da amostra antes de variantes; próxima audiência exige recorte próprio, não iniciado.
+**Estado atual após a confirmação:** funcionamento da visão e direção artística aprovados em ad4af0e; Cajado do Caos é tradução aprovada no glossário, com aplicação aos dados ainda fora desta tarefa. Ilustrações próprias por bloco e nova composição são refinamentos futuros REF07; o reuso/layout atual aceito continua válido. Evidências técnicas/editor/dispositivos mantêm suas coberturas, sem testes adicionais atribuídos ao responsável. M02-03 parcial: próximo recorte recomendado é a audiência mínima na corte, não iniciado. Não produzir variantes automaticamente.

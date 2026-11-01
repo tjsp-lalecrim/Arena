@@ -15,6 +15,14 @@ Fonte principal de identidade visual, personagens/animações e processo de asse
 
 ## Estados e validação
 
+### Narrativa futura — ilustração própria por bloco
+
+Decisão do responsável em01/11/2026: **cada bloco narrativo deverá ter sua própria ilustração, coerente com o conteúdo**, quando sua produção for autorizada. Antes de gerar, separar fatos sustentados pelas fontes de representações simbólicas; preservar ausência do protagonista, identidade dos personagens e acabamento dark fantasy. Imagens não podem antecipar soluções, localização exata ou informações futuras. Detalhes visuais não confirmados devem ser identificados como interpretação, não evidência do original.
+
+Planejamento dos temas da visão de Ria e critérios de aceite ficam na **REF07**, em [refinamentos](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa). A composição de tela tem fonte principal na [diretiva de navegação](DIRETIVA_DE_NAVEGACAO.md#composição-narrativa-futura). São refinamentos futuros: não invalidam imagens/entregas já aprovadas nem exigem produção em lote ou retrabalho automático. Reaproveitamento provisório aceito da visão atual permanece válido até o recorte autorizado.
+
+Visão **ad4af0e**: responsável aprovou teste funcional satisfatório e direção artística, incluindo `img/pictures/Arena_MQ02_Ria_piloto_v01.png`, versãoV01/hash no [registro](arte/MQ02_RIA_PILOTO_V01.json). A aprovação torna o piloto referência de continuidade, **não autorização para todas as variantes**. Cobertura e limites em [visão de Ria](VISAO_RIA_M02_03C.md).
+
 Aprovação estética, funcionamento técnico e cobertura são estados distintos. A direção e os arquivos anteriormente aprovados continuam preservados, inclusive suas ressalvas aceitas. M01-07 mantém recortes/orientações heterogêneos aceitos; não corrigir agora por associação. Referências e pendências: [arte/PENDENCIAS_VISUAIS_M01_07.md](arte/PENDENCIAS_VISUAIS_M01_07.md) e [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md). Introdução/encerramento aprovados e caminhada funcional no relato integrado de28/10/2026; escopo exato em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026). Isso não aprova o encaixe da arma nem todas as variantes/casos. Preservar ilustrações; melhorias futuras estão no registro único citado.
 
 Dimensões iniciais e configurações de uma amostra não são padrão universal aprovado: consultar o consumidor e o registro da versão. Antes de integrar, conferir na escala real e no jogo projeção, anatomia, recortes, margens/alpha, direções, apoio/âncora, continuidade e identidade entre categorias; para armas, pega e planos ao longo da ação. Automação de dimensões não comprova anatomia ou fluidez. Registrar o que foi realmente visto/testado, separando navegador, autoria no editor e aparelho físico. Aplicar apenas os critérios pertinentes à alteração.
