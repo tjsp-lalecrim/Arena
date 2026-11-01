@@ -1,6 +1,8 @@
 # M02-03D — audiência mínima de Rihad
 
-01/11/2026. Feature `feature/m02-corte-rihad`, sobre **65e0c12**, preservando ad4af0e e as dependências02A/02B/03A/B/C. Implementação para avaliação; a aprovação funcional/artística da visão de Ria não aprova esta audiência. Tag/release m01 intactas. Sem Stonekeep, novas batalhas, arte gerada ou redesign narrativo.
+**Confirmação do responsável —01/11/2026:** diálogo da audiência funciona e a quest atualiza. Referência entregue/disponível **fe99ac3**; o relato não informou hash nem ambiente. Não atribuir aprovação estética dos placeholders ou testes adicionais de persistência, recusa, transferências, editor ou dispositivo. Evidências automatizadas abaixo permanecem identificadas separadamente.
+
+01/11/2026. Feature `feature/m02-corte-rihad`, sobre **65e0c12**, preservando ad4af0e e as dependências02A/02B/03A/B/C. Registro da implementação original, anterior à confirmação acima; a aprovação funcional/artística da visão de Ria não se estende à estética desta audiência. Tag/release m01 intactas. Sem Stonekeep, novas batalhas, arte gerada ou redesign narrativo.
 
 ## Conteúdo e fontes
 
@@ -22,6 +24,21 @@ Adaptações explícitas: indicar um destino lógico substitui marcar o mapa mun
 
 Origem reconstruível: `node tools/build-rihad-arrival.cjs` também chama `build-rihad-court.cjs`. Ambos preservam chegada, repouso, arredores e registros anteriores. Carregar um save antigo de Map009 acrescenta somente os eventos5/6 ausentes antes dos sprites, sem reconstruir suas outras interações.
 
+## Planejamento visual futuro — REF07
+
+Aplicação posterior delimitada, vinculada à [REF07](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa); padrões e processo nas fontes principais DIRECAO_DE_ARTE.md e DIRETIVA_DE_NAVEGACAO.md. Não é autorização de produção nem bloqueio de Stonekeep. A identidade regional é adaptação autorizada; raça, aparência e traje canônicos de Blubamka ainda exigem evidência específica, não inferência por Rihad ou pelo sprite emprestado.
+
+Correspondência preliminar a conferir com fontes antes de gerar; blocos não equivalem a cada frase/página da janela:
+
+| Bloco significativo | Composição planejada e limites |
+| --- | --- |
+| Apresentação da rainha e situação de Rihad | Blubamka no ambiente da corte; Papel/pedido em #1315 e nome Blubamka na wiki local. Arquitetura, fisionomia e roupa só serão canônicas com fonte; demais detalhes são interpretação regional. Não incluir protagonista |
+| Roubo do pergaminho e acordo de recuperação | Blubamka e contexto do pedido; objeto/reconstituição do roubo somente após conferir referências e identificar representação simbólica. #1315 sustenta o acontecimento, não a aparência exata. Sem mostrar a localização de Fang Lair ou antecipar a entrega |
+| Aceitação e advertência | Contexto da rainha advertindo, apoiado em #1316. Não ilustrar o rumor como fato comprovado, inventar chefe Golthog ou revelar conteúdo futuro |
+| Recusa, orientação prematura e lembrete | Reutilizar composição adequada do bloco correspondente; sem imagem diferente para cada resposta repetitiva |
+
+Primeira produção futura: escolher **uma** amostra — personagem da corte ou ilustração representativa da audiência —, listar arquivo/conteúdo/finalidade e apresentar integrada ou em mockup na escala prevista. Conferir a correspondência acima antes da autorização da produção; não reunir personagem, arquitetura e todas as ilustrações num lote. A preparação dos novos assets segue o padrão visual vigente; a troca dos placeholders e a mudança da interface permanecem entregas próprias.
+
 ## Avaliação curta em localhost/editor
 
 Servidor já existente conferido: **http://127.0.0.1:8774/**, mantido ativo. No editor, abrir o projeto normalmente e executar o playtest. Nenhum save pessoal precisa ser aberto.
@@ -38,4 +55,4 @@ Servidor já existente conferido: **http://127.0.0.1:8774/**, mantido ativo. No 
 
 Cobertura: etapas10/20/30/40, recusa/Escape/aceite único, teclado/mouse/toque emulado, soltura, texto completo antes da escolha, conectividade/colisão, ida/volta, diário, preservação dos dados anteriores, RAM, salvar/F5/carregar em campanha sintética, complemento do acesso em save antigo e idempotência do gerador pai. A primeira inspeção visual identificou reinício da última linha ao desativar a escolha durante a proteção; corrigido mantendo a propriedade nativa da janela, com teste específico de término do texto.
 
-**Pendentes:** avaliação do responsável desta audiência/apresentação provisória e novo playtest/autoria no editor MV. Chrome automatizado não comprova autoria no editor; nenhum teste físico mobile novo. Arte/layout narrativos aprovados e refinamentos REF07 preservados. Próximo recorte recomendado: **M02-04, amostra integrada de Stonekeep**, após avaliação desta entrega; não iniciado.
+**Pendentes:** aprovação estética dos placeholders não concedida; aplicação visual futura em REF07, sem bloqueio de conteúdo. Novo playtest/autoria no editor MV não foi informado. Chrome automatizado não comprova autoria no editor; nenhum teste físico mobile novo. Arte/layout narrativos aprovados e refinamentos REF07 preservados. Próximo recorte recomendado: **M02-04, amostra integrada de Stonekeep**, por dar continuidade ao objetivo do pergaminho já aceito; não iniciado. A confirmação funcional acima não amplia as aprovações manuais dos recortes anteriores.

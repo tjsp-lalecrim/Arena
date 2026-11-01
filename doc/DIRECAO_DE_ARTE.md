@@ -15,11 +15,11 @@ Fonte principal de identidade visual, personagens/animações e processo de asse
 
 ## Estados e validação
 
-### Narrativa futura — ilustração própria por bloco
+### Ilustrações por bloco — padrão para novas gerações
 
-Decisão do responsável em01/11/2026: **cada bloco narrativo deverá ter sua própria ilustração, coerente com o conteúdo**, quando sua produção for autorizada. Antes de gerar, separar fatos sustentados pelas fontes de representações simbólicas; preservar ausência do protagonista, identidade dos personagens e acabamento dark fantasy. Imagens não podem antecipar soluções, localização exata ou informações futuras. Detalhes visuais não confirmados devem ser identificados como interpretação, não evidência do original.
+Decisão do responsável em01/11/2026: **cada bloco narrativo significativo deverá ter ilustração coerente com o conteúdo**, incluindo diálogos relevantes como a audiência de Blubamka, quando sua produção for autorizada. Antes de produzir, explicitar a correspondência entre blocos, personagens citados e imagens; frases curtas, escolhas e respostas repetitivas não exigem uma imagem nova cada uma. Antes de gerar, separar fatos sustentados pelas fontes de representações simbólicas; preservar ausência do protagonista, identidade dos personagens e acabamento dark fantasy. Imagens não podem antecipar soluções, localização exata ou informações futuras. Detalhes visuais não confirmados devem ser identificados como interpretação, não evidência do original.
 
-Planejamento dos temas da visão de Ria e critérios de aceite ficam na **REF07**, em [refinamentos](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa). A composição de tela tem fonte principal na [diretiva de navegação](DIRETIVA_DE_NAVEGACAO.md#composição-narrativa-futura). São refinamentos futuros: não invalidam imagens/entregas já aprovadas nem exigem produção em lote ou retrabalho automático. Reaproveitamento provisório aceito da visão atual permanece válido até o recorte autorizado.
+Planejamento dos temas da visão de Ria e critérios de aceite ficam na **REF07**, em [refinamentos](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa). A composição de tela tem fonte principal na [diretiva de navegação](DIRETIVA_DE_NAVEGACAO.md#composição-narrativa-futura). **Aplicação:** a direção visual aprovada é padrão obrigatório para novas gerações pertinentes e autorizadas, mesmo com a revisão das artes antigas adiada. Preparar composição para fundo amplo e área de leitura sem depender de molduras, conforme a diretiva de navegação. A revisão retroativa continua futura; alterar código/interface exige entrega própria. Não invalidar imagens/entregas já aprovadas, implementar mecânicas futuras ou iniciar lotes por associação. Reaproveitamento provisório aceito da visão atual permanece válido até o recorte autorizado.
 
 Visão **ad4af0e**: responsável aprovou teste funcional satisfatório e direção artística, incluindo `img/pictures/Arena_MQ02_Ria_piloto_v01.png`, versãoV01/hash no [registro](arte/MQ02_RIA_PILOTO_V01.json). A aprovação torna o piloto referência de continuidade, **não autorização para todas as variantes**. Cobertura e limites em [visão de Ria](VISAO_RIA_M02_03C.md).
 
@@ -36,6 +36,10 @@ Fantasia medieval sombria, com acabamento de pintura digital figurativa, materia
 Adotar uma mesma linguagem pictórica para ilustrações, retratos, cenários, sprites e ícones. Variar a quantidade de detalhe conforme a escala de exibição. Ilustrações narrativas são ricas em detalhes; sprites e ícones simplificam os detalhes para manter silhueta e leitura. Não misturar pixel art, anime, cartoon e renderização 3D fotográfica entre categorias.
 
 O tom é antigo, austero e ameaçador. A sensação de perigo vem da composição, da luz, da escala e do desgaste dos materiais; não depender de escuridão excessiva ou de violência gráfica.
+
+### Cortes e personagens regionais
+
+Adaptação autorizada: substituir apresentações genéricas das cortes por personagens e ambientes coerentes com a região e, quando conhecida pelas fontes, a raça do personagem. Preservar nomes, papéis e acontecimentos originais. Antes de afirmar raça, aparência ou vestuário como canônicos, registrar a fonte localizável; cidade/província não comprova a raça de um indivíduo. Na ausência de evidência, identificar a escolha como interpretação artística, preservando continuidade entre representações. O sprite emprestado de Blubamka em M02-03D não é evidência de sua raça/traje. A aplicação visual é recorte posterior em REF07, sem refazer automaticamente os placeholders.
 
 ## Paleta-base
 
@@ -169,8 +173,8 @@ Fluxo obrigatório, inclusive para correções:
 
 1. Identificar arquivo/versão existentes, defeito observável e critério de aceitação. Conferir as diretivas, o consumidor e a referência aprovada antes de gerar.
 2. Localizar a causa: configuração, recorte, escala, âncora, camada ou integração devem ser corrigidos nessa origem; não regenerar arte para compensar erro de código. Reaproveitar o asset adequado.
-3. Se faltar conteúdo artístico, produzir **uma unidade representativa ou pequeno conjunto coerente**, com referências efetivamente fornecidas. Preservar a versão aprovada; o protótipo fica identificado como candidato.
-4. Integrar a amostra isolada e inspecionar na escala real/contexto do jogo, incluindo animação quando aplicável. Se surgir defeito recorrente, interromper a expansão e corrigir o padrão primeiro.
+3. Antes de gerar, listar o pequeno conjunto, finalidade e cobertura, separando personagem, arquitetura e ilustrações em recortes próprios. Se faltar conteúdo artístico, começar por **uma amostra representativa por novo padrão**, com referências efetivamente fornecidas; não reunir personagens, arquitetura e várias ilustrações em uma produção extensa. Preservar a versão aprovada; o protótipo fica identificado como candidato.
+4. Apresentar a amostra integrada ou em mockup na escala prevista antes de ampliar variantes; inspecionar no contexto do jogo antes da expansão, incluindo animação quando aplicável. Se surgir defeito recorrente, interromper a expansão e corrigir o padrão primeiro.
 5. Apresentar o protótipo e seus limites para avaliação. **Não iniciar o lote completo na mesma entrega que apresenta um padrão visual novo ainda não aprovado.** Aprovação do protótipo autoriza continuidade somente no escopo efetivamente aprovado, sem comprovar todas as variantes.
 6. Em entrega separada e autorizada, ampliar somente o subconjunto necessário, mantendo as referências aprovadas e os critérios. Atualizar também os geradores pertinentes e conferir que a reconstrução conserva a correção.
 

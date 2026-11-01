@@ -14,7 +14,7 @@ M01 concluído/publicado na tag m01, com ressalvas preservadas. Esta seção é 
 | REF04 — balanceamento | Melhoria útil ao M02; avaliação é critério obrigatório do marco | M02-BAL pelo processo existente; base atual provisória preservada. Não iniciar novo estudo nem promover E05 |
 | REF05 / REF05-C — fontes e catálogo | Melhoria útil ao M02 | Configurar apenas inimigos/itens representativos necessários à rota; pesquisar efeitos/fontes antes de adicionar. Catálogo extenso e raros sem efeito concreto continuam futuros |
 | REF06 — notificações | Melhoria útil ao M02 | **Segunda recomendação da janela M02**, uma entrega pequena; sem tornar condição de progressão/fechamento. Se não selecionada, QUALIDADE-01 |
-| REF07 — introdução/narrativa | Refinamento futuro | Aprovações M01 e visão ad4af0e preservadas. Ilustrações por bloco/composição em REF07 abaixo; candidato QUALIDADE-01 ou recorte específico autorizado, sem bloquear corte ou ampliar a janela M02 automaticamente |
+| REF07 — introdução/narrativa | Refinamento futuro | Aprovações M01 e visão ad4af0e preservadas. Ilustrações por bloco, identidade regional das cortes e composição em REF07 abaixo; padrão para novas gerações em DIRECAO_DE_ARTE.md, revisão retroativa futura. Candidato QUALIDADE-01 ou recorte específico autorizado, sem bloquear Stonekeep ou ampliar a janela M02 automaticamente |
 | REF08 — porta/Gate e ilustrações | Refinamento futuro | Preservar ilustrações, gatilhos e entrega m01; candidato pontual QUALIDADE-01 |
 | REF09 — arma/continuidade/pesado da adaga | Refinamento futuro | Pilotos aprovados mantidos; restante na fila QUALIDADE-01. Se um defeito impedir participante indispensável novo, tratar esse caso no M02 antes de multiplicá-lo |
 | REF10 — apresentação dos drops | Refinamento futuro | Menu aprovado preservado; candidato QUALIDADE-01 por lacuna concreta, separado de regras/catálogo |
@@ -83,7 +83,7 @@ O descanso piloto e os percursos públicos/localhost relatados foram confirmados
 
 Atualização01/11/2026: visão ad4af0e aprovada pelo responsável no funcionamento e na direção artística; pilotoV01 permanece referência válida. Os itens abaixo são **planejamento futuro**, não defeitos bloqueantes nem autorização de lote; preservam a entrega atual e a tag m01. Vinculados ao mesmo REF07, sem criar outra pendência. Seleção em QUALIDADE-01 ou recorte específico a autorizar; não entram automaticamente entre as duas recomendações da janela M02.
 
-**REF07-A — ilustrações próprias por bloco.** Fonte da regra: DIRECAO_DE_ARTE.md. Antes da produção, mapear os oito blocos da visão para imagens próprias, conferir fontes e distinguir narrativa confirmada de composição simbólica. Temas planejados, sem aprovar ainda desenho ou distribuição definitiva entre os blocos:
+**REF07-A — ilustrações próprias por bloco, inclusive diálogos relevantes.** Fonte da regra e do padrão obrigatório para novas gerações: DIRECAO_DE_ARTE.md. Revisão das artes antigas continua futura; código/interface em REF07-B. Antes da produção, mapear os oito blocos da visão para imagens próprias, conferir fontes e distinguir narrativa confirmada de composição simbólica. Temas planejados, sem aprovar ainda desenho ou distribuição definitiva entre os blocos:
 
 | Tema | Evidência e cuidado antes de produzir |
 | --- | --- |
@@ -94,5 +94,7 @@ Atualização01/11/2026: visão ad4af0e aprovada pelo responsável no funcioname
 | Primeiro fragmento | A existência em Fang Lair é confirmada. Conferir forma nas fontes; composição do objeto pode ser simbólica, sem revelar sala, guardiões ou solução de acesso |
 
 Aceite futuro: uma ilustração coerente por bloco, sem protagonista/mãos/silhuetas do jogador, sem spoilers, mantendo identidade/dark fantasy; fontes e interpretações registradas. Validar primeiro a amostra integrada escolhida e seu enquadramento, depois obter autorização para ampliar. Aprovação do piloto de Ria não aprova automaticamente essas cinco imagens ou todas as demais variantes.
+
+Audiência de Blubamka: [correspondência preliminar entre blocos significativos e imagens](CORTE_RIHAD_M02_03D.md#planejamento-visual-futuro--ref07), com identidade regional e fontes a conferir antes da amostra. Diálogo/quest confirmados pelo responsável, associados à referência disponível fe99ac3; placeholders não receberam aprovação estética. Personagem, arquitetura e ilustrações serão recortes separados; não criar outra pendência ou produzir o conjunto inteiro nesta autorização documental.
 
 **REF07-B — composição de tela.** Fonte principal: DIRETIVA_DE_NAVEGACAO.md#composição-narrativa-futura. Aceite futuro: arte de fundo proporcional/enquadrada, texto sem bordas com contraste localizado, margens e controles/foco preservados; textos longos e enquadramentos distintos sem cortes/overflow ou escurecimento global desnecessário. Começar por uma cena; sem redesign geral ou alteração retroativa do M01.
