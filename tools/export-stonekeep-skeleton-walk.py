@@ -24,7 +24,7 @@ for i,index in enumerate(order):
     metrics.append({'direction':[2,4,6,8][row],'pattern':col,'sourceIndex':index,'sourceRect':rect,'placement':[px,py],'alphaBox':bbox,'sha256':hashlib.sha256(frame.tobytes()).hexdigest()})
 assert len({m['sha256'] for m in metrics})==12
 dest=R/'img/characters/$Arena_skeleton_walk_v01.png';sheet.save(dest)
-meta={'source':src.relative_to(R).as_posix(),'sourceSha256':hashlib.sha256(src.read_bytes()).hexdigest(),'output':dest.relative_to(R).as_posix(),'outputSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'scale':scale,'cell':[64,64],'ground':62,'rows':[2,4,6,8],'order':order,'frames':metrics,'approval':'pending owner evaluation; battle approval does not cover walking'}
+meta={'source':src.relative_to(R).as_posix(),'sourceSha256':hashlib.sha256(src.read_bytes()).hexdigest(),'output':dest.relative_to(R).as_posix(),'outputSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'scale':scale,'cell':[64,64],'ground':62,'rows':[2,4,6,8],'order':order,'frames':metrics,'approval':json.loads((R/'doc/arte/skeleton-walk-v01/prompt.json').read_text(encoding='utf8'))['approval']}
 (R/'doc/arte/skeleton-walk-v01/exports.json').write_text(json.dumps(meta,indent=2)+'\n',encoding='utf8')
 bg=Image.new('RGBA',sheet.size,'#29333a');bg.alpha_composite(sheet)
 bg.convert('RGB').save(R/'doc/evidencias/m02-skeleton-walk-v01/atlas-escala-real.png')

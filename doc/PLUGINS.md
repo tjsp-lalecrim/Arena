@@ -1,3 +1,7 @@
+## Hub técnico M02 — estado vigente
+
+Arena_DebugHub0.1.0 após os provedores existentes: registro central de22 acessos, título com uma entrada técnica, sem copiar fixtures. Configuração explícita e perfil jogador desabilitado no empacotamento; namespace e regras de salvamento anteriores intactos. [Contrato, inventário, caminhos e verificações](plugins/Arena_DebugHub.md). Formato MV canônico e registros anteriores preservados. Contagens abaixo são históricas.
+
 ## Stonekeep M02-04 — estado vigente
 
 Arena_Stonekeep0.1.0 acrescentado após43 registros anteriores integralmente preservados (total44). [Configuração/API/dependências](plugins/Arena_Stonekeep.md): rota real, fonte existente vinculada, fixture RAM e natação compartilhada. Arena_Dungeon ganha seleção de natação por mapa, mantendo configuração/portas MQ01. Sem plugin externo, motor, namespace ou consumidor de recursos novo. [Recorte/evidências/limites](STONEKEEP_M02_04.md). Descrições anteriores de destino ausente são históricas.

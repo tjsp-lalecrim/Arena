@@ -1,0 +1,202 @@
+{
+  "base": "6956516",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "inventory": [
+    {
+      "symbol": "arenaLab",
+      "name": "Laboratório técnico",
+      "category": "character",
+      "description": "Laboratório original do banco mínimo, sem criar um personagem da campanha.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaResourceLab",
+      "name": "Laboratório de recursos",
+      "category": "character",
+      "description": "Vida, Mana, Vigor e escolhas de evolução no mapa de recursos.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaAbilityLab",
+      "name": "Laboratório de habilidades",
+      "category": "character",
+      "description": "Armas, técnicas, magias e livros no laboratório existente.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaInventory",
+      "name": "Inventário técnico",
+      "category": "character",
+      "description": "Inventário e equipamentos com o preparo técnico existente.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaAttributeLab",
+      "name": "Laboratório de atributos (sem saves)",
+      "category": "character",
+      "description": "Pontos, prévia e confirmação. Retorno pelo próprio laboratório.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaBattle",
+      "name": "Combate técnico (piloto)",
+      "category": "combat",
+      "description": "Seleção de participantes, pilotos de armas e E05. Esc na seleção volta ao título.",
+      "saving": "E05 sem saves · demais pilotos preservam suas regras de salvamento",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaLoot",
+      "name": "Loot técnico",
+      "category": "combat",
+      "description": "Recompensas dos encontros técnicos já existentes.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaEncounters",
+      "name": "Encontros técnicos",
+      "category": "combat",
+      "description": "Patrulhas e contato em Imperial Dungeons, sem repetir a campanha.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaSkeleton",
+      "name": "Stonekeep · esqueleto (RAM)",
+      "category": "combat",
+      "description": "Batalha direta do esqueleto aprovado; retorno à passagem. Sem EXP neste piloto.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "artCurrent",
+      "name": "Validação visual R04",
+      "category": "campaign",
+      "description": "Validação visual R04: personagem, cenário e animações da amostra.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "artPreview",
+      "name": "Amostra anterior",
+      "category": "campaign",
+      "description": "Amostra artística anterior, preservada para comparação.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaDungeon",
+      "name": "Explorar Imperial Dungeons",
+      "category": "campaign",
+      "description": "Explorar Imperial Dungeons com o piloto técnico existente.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaRestPilot",
+      "name": "Descanso técnico (refúgio)",
+      "category": "campaign",
+      "description": "Refúgio aprovado com recursos reduzidos para observar o descanso.",
+      "saving": "Sessão técnica · salvamento normal disponível; use slots de teste",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaContinuationLab",
+      "name": "Continuidade M02 (sem saves)",
+      "category": "campaign",
+      "description": "Fixtures de continuidade M01→M02. Nenhuma partida pessoal é carregada.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaRihadPreview",
+      "name": "Rihad · chegada nível 1 (RAM)",
+      "category": "campaign",
+      "description": "Chegada nível1, informante, descanso e acesso aos arredores.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaRiaVisionPreview",
+      "name": "Rihad · visão de Ria (RAM)",
+      "category": "campaign",
+      "description": "Acesso determinístico à visão de Ria no descanso autorizado.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaCourtPreview",
+      "name": "Rihad · audiência (RAM)",
+      "category": "campaign",
+      "description": "Audiência de Blubamka, aceitação e diário da missão.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaStonekeep",
+      "name": "Stonekeep · passagem (RAM)",
+      "category": "campaign",
+      "description": "Viagem a Stonekeep pela estrada de Rihad, com missão aceita.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaStonekeepMaterials",
+      "name": "Stonekeep · materiais (RAM)",
+      "category": "campaign",
+      "description": "Aposento, passagem e margem para observar os materiais aprovados.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaStonekeepCask",
+      "name": "Stonekeep · CASK (RAM)",
+      "category": "campaign",
+      "description": "Acesso direto à parede quase negra CASK.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaStonekeepCasl",
+      "name": "Stonekeep · CASL (RAM)",
+      "category": "campaign",
+      "description": "Acesso direto à parede clara irregular CASL.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    },
+    {
+      "symbol": "arenaSkeletonPatrol",
+      "name": "Stonekeep · patrulha (RAM)",
+      "category": "campaign",
+      "description": "Esqueleto único na passagem: caminhada, contato e retorno após vitória.",
+      "saving": "Somente RAM · slots normais bloqueados",
+      "enabled": true
+    }
+  ],
+  "checks": [
+    "All22 legacy commands/labels/availability registered exactly; three normal commands preserved plus one Debug",
+    "Neutral input fence, keyboard focus/cancel, scroll to last map entry and selection restored on reopening",
+    "Character: original Attributes RAM lab opens/exits; normal slots blocked and storage untouched",
+    "Combat: existing profile/weapon/E05 selector reachable, cancellation returns to title without executing battle",
+    "Campaign: Continuation fixture and Stonekeep patrol launch unchanged; native menu/title return and RAM save block preserved",
+    "Mouse and emulated touch category activation/cancel; descriptions visible by selection",
+    "Explicit disabled configuration at same origin: only normal title commands, no technical handlers, hub cannot open"
+  ],
+  "errors": [],
+  "missing": [],
+  "pending": [
+    "Owner navigation evaluation",
+    "No new MV editor or physical mobile test"
+  ],
+  "isolation": "Disposable Chrome context/origin; synthetic RAM labs only, no save written"
+}

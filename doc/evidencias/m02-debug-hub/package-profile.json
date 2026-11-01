@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "player default disables hub only in output",
+    "explicit technical preview enables hub",
+    "two reproducible builds per profile and manifest/hash validation",
+    "source config/plugins and save namespace unchanged"
+  ],
+  "packages": [
+    {
+      "profile": "player",
+      "files": 20,
+      "bytes": 3962016,
+      "enabled": false
+    },
+    {
+      "profile": "technical-preview",
+      "files": 20,
+      "bytes": 3962025,
+      "enabled": true
+    }
+  ],
+  "scope": "Minimal temporary tracked fixture; no actual distribution/deploy, no assets/saves copied",
+  "platform": "win32"
+}

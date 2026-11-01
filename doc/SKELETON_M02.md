@@ -2,6 +2,8 @@
 
 ## Exploração V01 — 01/11/2026, sobre f198987
 
+**Avaliação posterior do responsável:** patrulha de **6956516 aprovada**. Ambiente e casos adicionais não discriminados; não atribuir aprovação de balanceamento, recompensas ou persistência ao relato. Aprovações anteriores de combate/visual f198987 permanecem válidas. Acesso agora em **Testes / Debug → Campanha e mapas → Stonekeep · patrulha (RAM)**; batalha direta em **Testes / Debug → Combate → Stonekeep · esqueleto (RAM)**. A espera de avaliação abaixo descreve a entrega inicial, superada somente no escopo de patrulha informado. Contrato de navegação no [hub](plugins/Arena_DebugHub.md).
+
 O responsável confirmou o funcionamento do combate e **aprovou explicitamente o visual de f198987**. Cobertura: piloto de batalha; ambiente não discriminado neste relato. Não aprova balanceamento, recompensas nem a caminhada nova. Mestre e atlas de batalha preservados byte a byte.
 
 Um encontro comum `stonekeep.passage.skeleton.01`, evento3 de Map012, origem **(75,39)**, passagem entre aposentos e água. A espécie e relação espacial vêm da wiki da quest (pp.2/5); o tile exato e patrulha são adaptação representativa, não posição original comprovada. Raio Manhattan2, intervalo90 atualizações ativas, velocidade nativa3, somente piso/região4. Não nada nem atravessa paredes; rota de três tiles continua contornável. Fonte do pergaminho e etapas não exigem derrotá-lo.
