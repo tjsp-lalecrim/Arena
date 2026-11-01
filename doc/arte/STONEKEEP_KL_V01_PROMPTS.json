@@ -1,7 +1,12 @@
 {
   "version": "stonekeep-kl-v01",
   "tool": "image_gen built-in",
-  "approval": "pendente do responsável",
+  "approval": {
+    "reference": "90ad460",
+    "environment": "editor RPG Maker MV, conforme relato do responsável",
+    "scope": "ambas amostras testadas, assets considerados bons e avanço autorizado",
+    "limits": "não estender a outros elementos ou casos/dispositivos não relatados"
+  },
   "generations": [
     {
       "key": "cask",

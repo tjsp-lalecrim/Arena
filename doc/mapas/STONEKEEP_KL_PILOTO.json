@@ -1,6 +1,6 @@
 {
   "version": "stonekeep-kl-v01",
-  "status": "duas amostras, aprovação visual pendente",
+  "status": "CASK/CASL aprovadas visualmente em90ad460; aplicação nas ocorrências confirmadas do recorte existente",
   "sheet": "Arena_Stonekeep_KL_V01_D",
   "masters": "art/masters/stonekeep-kl-v01",
   "patches": [
@@ -42,5 +42,18 @@
         "direction": 8
       }
     }
-  ]
+  ],
+  "application": "confirmed-families",
+  "applicationBounds": [
+    2,
+    2,
+    139,
+    100
+  ],
+  "approval": {
+    "reference": "90ad460",
+    "environment": "editor RPG Maker MV, conforme relato do responsável",
+    "scope": "ambas amostras testadas, assets considerados bons e avanço autorizado",
+    "limits": "não estender a outros elementos ou casos/dispositivos não relatados"
+  }
 }

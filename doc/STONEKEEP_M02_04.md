@@ -59,6 +59,8 @@ Origem: `node tools/build-stonekeep-sample.cjs`; o gerador pai `node tools/build
 
 ## Avaliação curta
 
+**CASK/CASL aprovadas em90ad460 e ampliadas:** responsável testou ambas no editor e aprovou os assets, sem outros elementos/casos presumidos. Agora cobrem todas as ocorrências regulares K/L do recorte, mantendo os painéis decorados provisórios. [Delta, capturas e verificações](arte/STONEKEEP_REFERENCIAS_M02_04.md#caskcasl--aprovação-e-ampliação-após90ad460). Não exige nova aprovação dos mesmos materiais nem repetir a rota; próximo requisito funcional é o encontro da passagem/esqueletos, antes da entrega do pergaminho de M02-05. Não iniciado aqui.
+
 **Pilotos CASK/CASL apósbc3e4d7:** responsável testou R02 pelo editor e autorizou avanço, sem detalhar casos ou aprovar assets ausentes. Agora há duas pequenas amostras novas para avaliação visual, sem ampliar planta ou demais ocorrências: título **Stonekeep · CASK (RAM)** em(84,93) e **Stonekeep · CASL (RAM)** em(129,66). [Fontes, limites, comparação e testes focais](arte/STONEKEEP_REFERENCIAS_M02_04.md#pilotos-caskcasl--vigente-apósbc3e4d7). Nenhum novo teste de editor/mobile atribuído a esta arte.
 
 **Aplicação ampliada R02:** responsável aprovou a direção dos materiais73ae86e, sem estender a assets ausentes ou declarar ambiente. Os mesmos pixels agora cobrem as famílias confirmadas no recorte jogável existente; carpetes/painéis/famílias faltantes seguem explícitos e provisórios. [Cobertura, exclusões, capturas e testes focais](arte/STONEKEEP_REFERENCIAS_M02_04.md#aplicação-ampliada-r02--vigente-após73ae86e). Sem expansão da planta, coleta/recompensas novas ou alterações em Rihad/Imperial Dungeons.

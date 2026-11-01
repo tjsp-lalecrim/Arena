@@ -40,7 +40,7 @@ if c.get('applicationRevision'):
     overview=Image.new('RGBA',(terrain.width,terrain.height+38),'#10171a');overview.alpha_composite(terrain,(0,38))
     # Redraw small review labels after scaling; never alter runtime tiles.
     dd=ImageDraw.Draw(overview);small=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',16)
-    dd.text((8,8),'Stonekeep — materiais V01 / aplicacao R02 / mesmo recorte construido',font=small,fill='#ead9b5')
+    dd.text((8,8),sys.argv[2] if len(sys.argv)>2 else 'Stonekeep — materiais V01 / aplicacao R02 / mesmo recorte construido',font=small,fill='#ead9b5')
     for name in ['entrada','passagem','ilha']:
         x,y=c['reviewPoints'][name];px=round((x-x0+.5)*48*ratio);py=round((y-y0+.5)*48*ratio)+38
         dd.ellipse((px-4,py-4,px+4,py+4),outline='#edc86f',width=2)

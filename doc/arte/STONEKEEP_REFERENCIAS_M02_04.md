@@ -69,7 +69,28 @@ Organização recomendada, **sem mover arquivos ou criar infraestrutura agora**:
 
 ## Reuso, substituição e primeiro conjunto
 
+### CASK/CASL — aprovação e ampliação após90ad460
+
+**Aprovação visual do responsável:** testou ambas as amostras90ad460 no editor, considerou os assets bons e autorizou prosseguir. Aprovação limitada aos dois materiais e exportações; não presume autoria/salvamento/reabertura de mapa, mobile ou aprovação de outros elementos. [Hashes e aprovação](STONEKEEP_KL_V01_EXPORTS.json); mestres, pixels, recortes e iluminação não alterados nesta ampliação.
+
+Aplicação de CASK#0/#1 e CASL#0/#1 em **todas as ocorrências sólidas identificadas no mesmo recorte construído**, sem ampliar planta. [Configuração](../mapas/STONEKEEP_KL_PILOTO.json) mantém os dois pontos de acesso como referências e usa `application=confirmed-families`; a origem de materiais em STONEKEEP_MATERIAIS_M02.json separa agora **K=alvenaria CASK**, **k=painel CASK#2**, **L=CASL**. As cinco células-fonte decoradas de CASK#2 já identificadas no MAP1 — vista(34,28),(36,28),(32,29),(36,31),(30,32) — ficam explicitamente provisórias, sem fabricar/apagar painéis por substituição de alvenaria.
+
+| Família aprovada | Aplicação total / delta desde90ad460 |
+| --- | --- |
+| CASK quase negra |19células-fonte/171tiles; **+144tiles** além do piloto |
+| CASL clara irregular |35células-fonte/315tiles; **+279tiles** além do piloto |
+
+Mesmo módulo48px, cap1/face2 e fase de repetição do material. Só423entradas da camada0 mudaram; cantos e transições derivam da geometria existente, sem colisões/oclusões adicionais. Distinguir famílias não significa aplicar CASK lisa ao painel decorado. CASA/CASF, pisos, margem/água, fonte e eventos permanecem intactos, assim como Imperial Dungeons/Rihad.
+
+**Verificação só do delta:** [resultado](../evidencias/m02-04-walls-expansao/resultado.json), [visão geral](../evidencias/m02-04-walls-expansao/visao-geral.png), capturas [CASK](../evidencias/m02-04-walls-expansao/cask.png), [CASL norte](../evidencias/m02-04-walls-expansao/casl-norte.png) e [CASL sul/margem](../evidencias/m02-04-walls-expansao/casl-sul.png). Chrome, canvas816×624/tiles48, perfil isolado e sessão RAM no servidor existente8774; capturas preparadas diretamente nos pontos de inspeção, não um novo percurso de gameplay. Conferidos135limites novos de parede pelo `canPass` nativo, cobertura/família e altura de cada ocorrência, camadas/eventos/água/fonte e demais mapas/tilesets sem mudança,8outputs do gerador pai estáveis e hashes exatos dos sete mestres/C/D/água preservados. Estado de personagem/quests/inventário e armazenamento pessoal inalterados. Sem erros JS/HTTP faltante. Inspeção Codex não identificou problema novo de composição/continuidade; **não é necessário repetir a aprovação dos assets ou o percurso**. Pilotos90ad460 cobrem os acessos/movimento/checkpoint; evidências anteriores da água/coleta continuam válidas. Nenhum novo teste editor/mobile ou bateria de persistência executados.
+
+Reconstrução: `node tools/build-stonekeep-sample.cjs`, também chamada pelo pai Rihad; validação focal `node tools/test-stonekeep-kl-expansion.cjs`. Não precisa exportar/regerar arte para reconstruir. Acessos **Stonekeep · CASK (RAM)** e **Stonekeep · CASL (RAM)** em `http://127.0.0.1:8774/` continuam disponíveis para consulta opcional, com Ctrl+F5 sem limpar dados. Sem servidor pessoal substituído.
+
+**Ainda provisórios:** painéis CASK#2/CASF#3, outros materiais não cobertos/limites selados e nove células-fonte de piso; carpetes, portas, objetos/pergaminho e guardiões ausentes. Não promovê-los automaticamente a novo bloqueio de acabamento. **Retorno ao backlog funcional:** permanece o encontro da passagem com esqueletos (M02-04, participante/encontro ainda ausente, sem substituir espécie); a entrega única do pergaminho na corte é M02-05. Delimitar esse encontro como próximo recorte antes de concluir Stonekeep mínima; nenhuma implementação iniciada nesta ampliação.
+
 ### Pilotos CASK/CASL — vigente apósbc3e4d7
+
+Registro histórico da produção/pilotos90ad460; aprovação e aplicação atuais na seção acima.
 
 **Relato do responsável:** testou a aplicação **bc3e4d7 pelo editor RPG Maker MV** e autorizou prosseguir. Não detalhou casos, autoria/edição/salvamento de mapas ou dispositivo adicional; não presumir essas verificações nem aprovação de elementos ausentes. As duas novas amostras abaixo **aguardam aprovação visual**, sem autorizar substituir as demais ocorrências.
 

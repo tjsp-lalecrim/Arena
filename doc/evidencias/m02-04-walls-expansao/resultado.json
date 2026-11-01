@@ -1,0 +1,32 @@
+{
+  "base": "90ad460",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "newWallTiles": {
+    "cask": 144,
+    "casl": 279
+  },
+  "totalAppliedTiles": {
+    "K": 171,
+    "L": 315
+  },
+  "changedWallEdgesChecked": 135,
+  "checks": [
+    "All regular K/L solid cells covered, correct cap/face and family",
+    "Only layer0 changed in new K/L occurrences; panels k untouched",
+    "Other maps, tilesets, Items, bindings, events, water and regions unchanged",
+    "Approved masters/C/D/water exact hashes unchanged",
+    "Parent generator stable for8 outputs",
+    "Chrome local snapshots and native canPass on new wall boundaries; RAM state/storage unchanged"
+  ],
+  "errors": [],
+  "missing": [],
+  "reused": "90ad460 pilot access/movement/RAM checkpoint; earlier swimming/source tests; no repeated route, battle, collection or persistence suite",
+  "limits": [
+    "No fresh editor/mobile test",
+    "No new visual approval required for the same approved assets; no new composition problem identified"
+  ]
+}
