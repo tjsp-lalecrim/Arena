@@ -1,0 +1,165 @@
+{
+  "url": "http://127.0.0.1:8774/",
+  "browser": "156.0.8078.76",
+  "boot": {
+    "ready": true,
+    "area": {
+      "ok": true,
+      "config": {
+        "id": "stonekeep",
+        "questId": "MQ02",
+        "mapId": 12
+      }
+    },
+    "source": {
+      "ok": true,
+      "config": {
+        "id": "stonekeep.parchment",
+        "questId": "MQ02",
+        "areaId": "stonekeep",
+        "itemKey": "MQ02.parchment",
+        "itemId": 7,
+        "quantity": 1,
+        "stages": [
+          40,
+          50
+        ],
+        "receiptIds": [
+          "MQ02.rihad.parchment"
+        ]
+      }
+    },
+    "item": {
+      "id": 7,
+      "itypeId": 2
+    },
+    "diagnostics": [],
+    "order": [
+      "Arena_Continuation",
+      "MV_CampaignConfig",
+      "Arena_CampaignConfig",
+      "Arena_Rihad",
+      "Arena_RiaVision",
+      "Arena_Court",
+      "Arena_Stonekeep"
+    ],
+    "storage": "{}"
+  },
+  "source": {
+    "status": {
+      "active": true,
+      "questId": "MQ02",
+      "itemId": 7,
+      "missing": 1
+    },
+    "event": true,
+    "nativeSaveAllowed": false,
+    "q1": "{\"stage\":40,\"objectives\":{\"rubyKey\":true,\"cellDoor\":true,\"shiftGate\":true},\"completed\":true,\"receipts\":{\"MQ01.cell-door\":{\"sourceId\":\"MQ01.ruby-key\",\"itemId\":1,\"quantity\":1,\"kind\":\"consume\"}}}",
+    "storage": "{}"
+  },
+  "responses": [
+    {
+      "file": "js/plugins.js",
+      "status": 200,
+      "servedSha256": "9fd3b415ccd7e2cab968430127a0b322d16b8adbe1db612ab070b58a768f304d",
+      "localSha256": "9fd3b415ccd7e2cab968430127a0b322d16b8adbe1db612ab070b58a768f304d"
+    },
+    {
+      "file": "js/plugins/Arena_CampaignConfig.js",
+      "status": 200,
+      "servedSha256": "4506f63631ee5ad067fbea248a54c11b72bfd6e2d68d545ee0a614dfcefb324a",
+      "localSha256": "4506f63631ee5ad067fbea248a54c11b72bfd6e2d68d545ee0a614dfcefb324a"
+    },
+    {
+      "file": "js/plugins/Arena_Stonekeep.js",
+      "status": 200,
+      "servedSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040",
+      "localSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040"
+    },
+    {
+      "file": "js/plugins/Arena_Stonekeep.js",
+      "status": 200,
+      "servedSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040",
+      "localSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040"
+    },
+    {
+      "file": "data/Items.json",
+      "status": 200,
+      "servedSha256": "9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746",
+      "localSha256": "9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746"
+    },
+    {
+      "file": "data/ArenaCampaign.json",
+      "status": 200,
+      "servedSha256": "09a485abb7e57c513b85954f417bd88c8ff76600bbac8a2ddc3d98dbbf310b18",
+      "localSha256": "09a485abb7e57c513b85954f417bd88c8ff76600bbac8a2ddc3d98dbbf310b18"
+    },
+    {
+      "file": "data/ArenaStonekeep.json",
+      "status": 200,
+      "servedSha256": "966be344324373b1499618c6e57ee6d28dc87650557f69e247109fe9b5e734b7",
+      "localSha256": "966be344324373b1499618c6e57ee6d28dc87650557f69e247109fe9b5e734b7"
+    },
+    {
+      "file": "data/Map012.json",
+      "status": 200,
+      "servedSha256": "044b5cf81a6146f661e6e88e09e5131ee0122bd810e6029d4c1b912ea479987b",
+      "localSha256": "044b5cf81a6146f661e6e88e09e5131ee0122bd810e6029d4c1b912ea479987b"
+    },
+    {
+      "file": "js/plugins.js",
+      "status": 200,
+      "servedSha256": "9fd3b415ccd7e2cab968430127a0b322d16b8adbe1db612ab070b58a768f304d",
+      "localSha256": "9fd3b415ccd7e2cab968430127a0b322d16b8adbe1db612ab070b58a768f304d"
+    },
+    {
+      "file": "js/plugins/Arena_CampaignConfig.js",
+      "status": 200,
+      "servedSha256": "4506f63631ee5ad067fbea248a54c11b72bfd6e2d68d545ee0a614dfcefb324a",
+      "localSha256": "4506f63631ee5ad067fbea248a54c11b72bfd6e2d68d545ee0a614dfcefb324a"
+    },
+    {
+      "file": "js/plugins/Arena_Stonekeep.js",
+      "status": 200,
+      "servedSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040",
+      "localSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040"
+    },
+    {
+      "file": "js/plugins/Arena_Stonekeep.js",
+      "status": 200,
+      "servedSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040",
+      "localSha256": "325332020636be770e7a8279e097fc6c548c48fa860c06a384c4e02547ffd040"
+    },
+    {
+      "file": "data/Items.json",
+      "status": 200,
+      "servedSha256": "9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746",
+      "localSha256": "9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746"
+    },
+    {
+      "file": "data/ArenaCampaign.json",
+      "status": 200,
+      "servedSha256": "09a485abb7e57c513b85954f417bd88c8ff76600bbac8a2ddc3d98dbbf310b18",
+      "localSha256": "09a485abb7e57c513b85954f417bd88c8ff76600bbac8a2ddc3d98dbbf310b18"
+    },
+    {
+      "file": "data/ArenaStonekeep.json",
+      "status": 200,
+      "servedSha256": "966be344324373b1499618c6e57ee6d28dc87650557f69e247109fe9b5e734b7",
+      "localSha256": "966be344324373b1499618c6e57ee6d28dc87650557f69e247109fe9b5e734b7"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "Native cold boot before lab, no injected registry/fixtures/mocks",
+    "All six binding conditions valid with native initialization and plugin order",
+    "Actual localhost bytes match working tree, including Map012",
+    "Existing title lab and native road choice load Stonekeep/source",
+    "MQ01 and web storage untouched; RAM session blocks normal saves",
+    "Normal reload reaches title again without clearing browser data"
+  ],
+  "limits": [
+    "Does not establish the failing condition in an earlier personal tab",
+    "No editor/mobile test or full campaign replay"
+  ]
+}

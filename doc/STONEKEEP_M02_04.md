@@ -1,5 +1,15 @@
 # M02-04 — amostra integrada de Stonekeep
 
+## Investigação de inicialização após29e38db —01/11/2026
+
+Responsável encontrou “Stonekeep: vínculos inválidos” em localhost e não conseguiu avaliar a amostra; **nenhuma aprovação registrada**. Na árvore limpa29e38db, uma abertura nativa em Chrome novo no servidor existente `http://127.0.0.1:8774/` chegou ao título **antes da alteração**: registro pronto/diagnostics vazio, área stonekeep/mapId12, fonte stonekeep.parchment/itemId7, item7 existente/itypeId2. Ordem final CampaignConfig→Rihad→Ria→Court→Stonekeep correta. Bytes HTTP de configurações/plugins conferidos com o diretório atual. Não foi possível identificar qual condição falhou na aba original do relato; cache/arquivo divergente é hipótese, não causa confirmada. Endereço e diagnóstico daquela execução ainda necessários se o erro persistir.
+
+Alteração limitada: substituir a validação genérica por diagnósticos separados de configuração/registro, consulta e mapId da área, consulta e itemId da fonte, existência/classificação do item, incluindo diagnostics do registro quando houver. Mantém bloqueio de configuração inválida, sem defaults, reconstrução automática do registro ou liberação forçada da viagem. Não se apresenta como correção comprovada da causa ainda não reproduzida. Nenhuma informação nova no fluxo sem erro.
+
+Regressão única `node tools/test-stonekeep-boot.cjs` (ARENA_BOOT_URL opcional): usa o **servidor real**, perfil Chrome descartável/cache normal e abertura nativa **antes** de qualquer seleção de laboratório; sem init script, interceptação HTTP, mocks ou registro pré-carregado. Confere seis condições, bytes servidos, opção RAM, escolha de viagem, Map012/fonte ativa, MQ01/armazenamento inalterados, bloqueio de save técnico e recarregamento normal. [Resultado](evidencias/m02-04-boot/resultado.json), [título](evidencias/m02-04-boot/titulo.png) e [chegada](evidencias/m02-04-boot/chegada.png). Todos passaram após o detalhamento. Nenhum save pessoal aberto/modificado ou dado do site apagado.
+
+A evidência anterior é válida para seu servidor efêmero com Cache-Control:no-store e arquivos do diretório, mas **não cobria os bytes/cache do servidor pessoal** nem identifica a falha relatada. Não havia pré-registro ou fixture antes do boot no teste anterior; as fixtures vinham depois do título. A lacuna corrigida na verificação é o uso do endereço real e a comparação dos arquivos servidos, não uma prova retroativa de causa ou aprovação manual. Novo editor/mobile e campanha completa não testados nesta investigação. O restante abaixo registra a amostra29e38db.
+
 01/11/2026. Feature `feature/m02-stonekeep-amostra`, sobre **faccbec**, com dependências02A/02B/03A–D preservadas. Amostra caminhável/coleta/retorno **para avaliação**, não dungeon ou encontros concluídos. Tag m01 intacta; sem entrega do pergaminho, Fang Lair, arte nova ou alteração de combate.
 
 ## Recorte registrado antes da construção

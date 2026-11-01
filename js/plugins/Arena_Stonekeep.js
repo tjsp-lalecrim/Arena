@@ -36,8 +36,24 @@ var ArenaStonekeep;
   },
   preview:function(){if(!ArenaCourt.preview())return false;var q=ArenaQuests.snapshot('MQ02');ArenaPersistence.setQuest('MQ02',40,Object.assign({},q.objectives,{parchmentRequest:true}),false);return true;}
  };
+ function validateBindings(){
+  var cfg=c(),registry=ArenaCampaignConfig;
+  function fail(detail){var diagnostics=registry&&typeof registry.diagnostics==='function'?registry.diagnostics():[];throw Error('Stonekeep: '+detail+(diagnostics.length?' Registro ArenaCampaign: '+diagnostics.join('; '):'')+' Confira os arquivos servidos ArenaCampaign.json, ArenaStonekeep.json e Items.json.');}
+  if(!cfg||cfg.schemaVersion!==1)fail('ArenaStonekeep.json ausente ou com versão inválida.');
+  if(!registry||typeof registry.ready!=='function')fail('Arena_CampaignConfig ausente; confira a ordem dos plugins.');
+  if(!registry.ready())fail('registro ArenaCampaign ainda não inicializado.');
+  var area=registry.area(cfg.areaId);
+  if(!area.ok)fail('área "'+cfg.areaId+'" não encontrada ('+area.code+').');
+  if(area.config.mapId!==cfg.mapId)fail('área "'+cfg.areaId+'": mapId='+JSON.stringify(area.config.mapId)+'; esperado '+JSON.stringify(cfg.mapId)+'.');
+  var source=registry.source(cfg.sourceId);
+  if(!source.ok)fail('fonte "'+cfg.sourceId+'" não encontrada ('+source.code+').');
+  if(source.config.itemId!==cfg.itemId)fail('fonte "'+cfg.sourceId+'": itemId='+JSON.stringify(source.config.itemId)+'; esperado '+JSON.stringify(cfg.itemId)+'.');
+  var item=$dataItems[cfg.itemId];
+  if(!item)fail('item '+cfg.itemId+' ausente em Items.json.');
+  if(item.itypeId!==2)fail('item '+cfg.itemId+' não é importante: itypeId='+JSON.stringify(item.itypeId)+'; esperado 2.');
+ }
  var loaded=DataManager.isDatabaseLoaded,registered=false;
- DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!registered){var cfg=c(),a=ArenaCampaignConfig.area(cfg.areaId),s=ArenaCampaignConfig.source(cfg.sourceId);if(!a.ok||a.config.mapId!==cfg.mapId||!s.ok||s.config.itemId!==cfg.itemId||!$dataItems[cfg.itemId]||$dataItems[cfg.itemId].itypeId!==2)throw Error('Stonekeep: vínculos inválidos');ArenaDungeon.registerSwimming(cfg.mapId,cfg.swimming);registered=true;}return true;};
+ DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!registered){validateBindings();ArenaDungeon.registerSwimming(c().mapId,c().swimming);registered=true;}return true;};
  var destination=ArenaCourt.destination;
  ArenaCourt.destination=function(){var d=destination();if(window.$arenaStonekeep&&ArenaCampaignConfig.area(c().areaId).ok)d.available=d.known;return d.available?{id:d.id,known:d.known,available:true}:d;};
  var notice=ArenaRihad.arrivalNotice;
