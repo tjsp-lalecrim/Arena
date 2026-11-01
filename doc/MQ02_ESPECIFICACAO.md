@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Atualização01/11/2026:** especificação aprovada para implementar somente M02-02A. [Núcleo técnico entregue para avaliação](CONTINUIDADE_M02_02A.md); nenhum destino real, quest/área nova ou arte. O texto abaixo preserva a especificação de31/10; propostas de outros recortes não foram promovidas a implementação.
+
 31/10/2026. **Para avaliação, sem implementação**, base c8bf765. Tag m01 preservada. Escopo/viagem condensada, Ria completa após nível2 em descanso autorizado e retaliação única controlada **aprovados**; demais soluções abaixo são especificação, não autorização de M02-02. [Backlog](BACKLOG_M02.md), [política de saves](PERSISTENCIA_M01.md#política-vigente-de-compatibilidade--31102026).
 
 ## Evidência e adaptação

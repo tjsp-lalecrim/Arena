@@ -1,3 +1,7 @@
+## Continuidade M02-02A — técnica isolada
+
+MV_ChapterContinuation0.1.0 e Arena_Continuation0.1.0 adicionados após Arena_Attributes;38 registros canônicos,36 anteriores preservados. Núcleo puro sem IDs de Arena, adaptador/laboratório com destino configurável em mapa existente e namespace interno arenaContinuation v1. Sem dependência externa, novo consumidor de recursos ou mudança no prefixo web. [API/parâmetro/hooks](plugins/Arena_Continuation.md), [roteiro/evidências](CONTINUIDADE_M02_02A.md). Campanha mantém o fim M01; autoria MV/manual do responsável pendentes.
+
 ## Acesso de campanha aos atributos — R02
 
 Arena_Attributes0.2.0 e integração opcional Arena_Inventory0.3.1: Inventário → Atributos, rascunho de lote sem comandos de laboratório. Núcleo/configuração/namespace e36 registros preservados; descrição do registro próprio atualizada no formato canônico. [Contrato e dependências](plugins/Arena_Attributes.md). Sem plugin externo, novos assets ou redesenho dos outros menus.

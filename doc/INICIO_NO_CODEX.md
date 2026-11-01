@@ -1,8 +1,8 @@
 # Entrada operacional do Arena — pós-M01
 
-Atualizado em **31/10/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). Esta feature altera somente planejamento, sem modificar a entrega.
+Atualizado em **01/11/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). A feature atual implementa somente M02-02A técnico; a entrega m01 permanece intacta.
 
-**Trabalho atual:** [M02-01 especificado](MQ02_ESPECIFICACAO.md), aguardando avaliação. Escopo mínimo/viagem condensada e eventos de Ria/Tharn aprovados; não pedir novamente. Compatibilidade de desenvolvimento flexibilizada, com preservação simples recomendada para saves normais m01. Próximo recorte sugerido após avaliação/autorização: M02-02A, continuação mínima por acesso técnico, sem cidade/arte. M02 não implementado; QUALIDADE-01 e refinamentos opcionais permanecem futuros.
+**Trabalho atual:** [M02-02A implementado para avaliação](CONTINUIDADE_M02_02A.md), conforme especificação34c2f95 aprovada para este recorte. Título → Continuidade M02 (sem saves), fixtures descartáveis/guardar RAM, destino técnico Map005; campanha sem continuação real. Oito grupos focais passaram; avaliação do responsável e autoria dos novos plugins no editor pendentes. Aguardar avaliação antes de M02-02B; sem Rihad, arte ou refinamentos opcionais.
 
 **Alvo vigente:** navegador desktop, inicialmente Chrome; preservar toque. [MOBILE-01](MOBILE_01.md) concentra mobile/APK, sem data/tecnologia escolhidas ou validação física a cada entrega. Pages permanece manual, sem atualização nesta tarefa. QUALIDADE-01 é janela futura limitada, a reavaliar depois da entrega funcional M02; não é pré-requisito automático.
 
@@ -43,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade autorizada nesta tarefa:** somente especificação M02-01; aguardar avaliação antes de M02-02. Manter MV, entregas pequenas, intro M01 e aprovações preservadas. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura de versão exige comunicação/avaliação e rejeição controlada, nunca corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi migrada.
+**Continuidade autorizada nesta tarefa:** somente implementação técnica M02-02A; aguardar avaliação antes de ampliar. Manter MV, entregas pequenas, intro M01 e aprovações preservadas. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura de versão exige comunicação/avaliação e rejeição controlada, nunca corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi migrada.
 
 ---
 

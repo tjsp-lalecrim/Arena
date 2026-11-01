@@ -1,5 +1,9 @@
 # Contratos persistentes — M01-05
 
+## Extensão técnica M02-02A — 01/11/2026
+
+Namespace interno arenaContinuation v1 acrescentado: phase/transição/destino e recibos, sem duplicar dados nativos/MQ01 ou trocar namespace web. Defaults e migrações existentes reutilizados; normal m01 reconhecido, narrativa1→2 preservada. Laboratório bloqueia slots normais e usa RAM; falha de load restaura a sessão anterior sem escrita. [Contrato/API](plugins/Arena_Continuation.md), [evidências/limites](CONTINUIDADE_M02_02A.md). Não é migração executada de saves pessoais nem continuação real habilitada.
+
 ## Política vigente de compatibilidade — 31/10/2026
 
 Decisão do responsável: compatibilidade **entre versões de desenvolvimento** é desejável, não obrigatória se exigir manutenção desproporcional. Preservar quando bastar extensão simples dos contratos; quebra precisa de recomendação explícita, motivo e avaliação antes de distribuir, com rejeição controlada do save incompatível, sem apagar/sobrescrever slots ou mudar silenciosamente o namespace. Isso não flexibiliza salvar/carregar sem perda ou corrupção **dentro da versão atual**. A versão oficial a partir da qual a preservação de saves antigos será obrigatória ainda será definida; não presumir essa fronteira apenas porque m01 foi publicada.

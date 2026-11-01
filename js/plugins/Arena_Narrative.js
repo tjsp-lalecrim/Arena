@@ -26,7 +26,9 @@ var ArenaNarrative,Scene_ArenaNarrative;
  function state(){var s=MVStateStore.read('arenaNarrative');if(['technical','campaign'].indexOf(s.mode)<0||['none','intro','ria','dungeon','ending','ended'].indexOf(s.phase)<0||!Number.isInteger(s.section)||s.section<0||!Number.isInteger(s.word)||s.word<0)throw Error('Arena: estado narrativo incompatível no save.');return s;}
  function store(s){MVStateStore.replace('arenaNarrative',s);}
  function campaign(){return !!$gameSystem&&state().mode==='campaign';}
- function active(){return campaign()&&['intro','ria','ending','ended'].indexOf(state().phase)>=0;}
+ // The disposable continuation lab keeps original narrative data intact while
+ // previewing an existing technical map. Normal campaign routing is unchanged.
+ function active(){return campaign()&&!(window.ArenaContinuation&&ArenaContinuation.labActive())&&['intro','ria','ending','ended'].indexOf(state().phase)>=0;}
  function section(s){return $arenaNarrative.sections.filter(function(v){return v.phase===s.phase;})[s.section];}
  function fence(){$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();}
  ArenaNarrative={
