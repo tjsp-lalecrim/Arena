@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.2.0 Ghoul: um encontro de ilha e acessos RAM, sem doença.
+ * @plugindesc v0.2.1 Ghoul: seis encontros de ilha e acessos RAM, sem doença.
  * @author Codex
  * @help Após Arena_DebugHub, Stonekeep e núcleos de combate existentes.
  * ArenaGhoul.json; startLab() reutiliza o preparo técnico e bloqueio RAM.
@@ -29,5 +29,5 @@ var ArenaGhoul;
   }
  };
  ArenaDebugHub.register({symbol:'arenaGhoul',name:'Stonekeep · ghoul (RAM)',category:'combat',description:'Um ghoul: espera, clava, dano e derrota. Sem doença, EXP ou loot neste piloto.',saving:'Somente RAM · slots normais bloqueados'},ArenaGhoul.startLab);
- ArenaDebugHub.register({symbol:'arenaGhoulPatrol',name:'Stonekeep · ghoul na ilha (RAM)',category:'campaign',description:'Um ghoul no piso da ilha: caminhada, contato e recompensas de campanha provisórias.',saving:'Somente RAM · slots normais bloqueados'},ArenaGhoul.startPatrolLab);
+ ArenaDebugHub.register({symbol:'arenaGhoulPatrol',name:'Stonekeep · ghoul na ilha (RAM)',category:'campaign',description:'Seis ghouls no piso da ilha; pergaminho acessível sem eliminar todos. Recompensas provisórias.',saving:'Somente RAM · slots normais bloqueados'},ArenaGhoul.startPatrolLab);
 })();

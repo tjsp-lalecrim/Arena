@@ -150,5 +150,117 @@
     "x": 40,
     "y": 60,
     "direction": 4
-  }
+  },
+  "additionalEncounters": [
+    {
+      "id": "stonekeep.island.ghoul.02",
+      "eventId": 11,
+      "enemyId": 5,
+      "troopId": 6,
+      "origin": [
+        27,
+        60
+      ],
+      "sourceOriginal": [
+        73,
+        19
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.island.ghoul.03",
+      "eventId": 12,
+      "enemyId": 5,
+      "troopId": 6,
+      "origin": [
+        12,
+        60
+      ],
+      "sourceOriginal": [
+        78,
+        19
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.island.ghoul.04",
+      "eventId": 13,
+      "enemyId": 5,
+      "troopId": 6,
+      "origin": [
+        24,
+        66
+      ],
+      "sourceOriginal": [
+        74,
+        21
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.island.ghoul.05",
+      "eventId": 14,
+      "enemyId": 5,
+      "troopId": 6,
+      "origin": [
+        21,
+        84
+      ],
+      "sourceOriginal": [
+        75,
+        27
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.island.ghoul.06",
+      "eventId": 15,
+      "enemyId": 5,
+      "troopId": 6,
+      "origin": [
+        30,
+        87
+      ],
+      "sourceOriginal": [
+        72,
+        28
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ]
 }

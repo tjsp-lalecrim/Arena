@@ -1,8 +1,10 @@
-# Arena_Ghoul0.2.0
+# Arena_Ghoul0.2.1
 
-Configura um encontro de ilha/evento10 com Arena_Encounters e um segundo acesso RAM por ArenaDebugHub.register (`arenaGhoulPatrol`), sem comando novo no título. `startPatrolLab()` prepara a chegada(40,60); `startLab()` preserva a batalha direta antiga. Pendência de lançamento é limpa antes de iniciar/transferir; o retorno não prepara outra batalha nem restaura recursos.
+Configura seis encontros da ilha/eventos10–15 com Arena_Encounters e um segundo acesso RAM por ArenaDebugHub.register (`arenaGhoulPatrol`), sem comando novo no título. `startPatrolLab()` prepara a chegada(40,60); `startLab()` preserva a batalha direta antiga. Pendência de lançamento é limpa antes de iniciar/transferir; o retorno não prepara outra batalha nem restaura recursos.
 
 EXP75/tabela de campanha são explícitas em ArenaGhoul.json; a flag transitória `_arenaGhoulBattlePilot` na instância de Game_Enemy mantém somente o piloto antigo em0 EXP/loot. Usa `ArenaLoot.tableForEnemy` para selecionar a tabela vazia sem mutação global ou outro concessor. Atores, custos e recibos permanecem nos núcleos existentes. Sem doença, schema ou namespace novo. [Fontes, valores provisórios, caminhada e testes](../GHOUL_M02.md).
+
+`ArenaGhoul.json` mantém `encounter` para o piloto e `additionalEncounters` para as cinco posições declaradas restantes. Todos usam Enemy5/Troop6, caminhada e recompensas do mesmo exemplar; IDs estáveis e estados independentes no núcleo de encontros. O gerador valida duplicidade de ID/evento/origem e piso permitido, preservando os sete esqueletos. O acesso reconhecível do hub permanece o mesmo; não existem seis laboratórios nem concessor adicional. Evidências focais em GHOUL_M02.md.
 
 ## Histórico — versão0.1 / somente batalha
 

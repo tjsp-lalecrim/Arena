@@ -1,6 +1,44 @@
 # Stonekeep — ghoul
 
-## Exploração e encontro de ilha V01 — sobre8ea06c9
+## Grupo da ilha — continuação sobre 99203b2
+
+**Relato do responsável:** testou o ghoul na ilha e confirmou funcionamento. Referência disponível **99203b2**, associada ao relato; sem ambiente ou casos adicionais informados. Preservada a aprovação explícita da animação de batalha de8ea06c9. Não inferir aprovação definitiva de balanceamento, recompensas ou persistência. As evidências técnicas anteriores continuam válidas para o exemplar; não repetida a matriz artística/de combate.
+
+**Seis encontros**, IDs `stonekeep.island.ghoul.01` a `.06`, eventos10–15/Map012. O primeiro mantém posição/ID; acrescentados cinco. Mesmos sprites, animações,65PV, atributos, ação e recompensas provisórias do exemplar. Nenhuma fórmula, doença, perseguição ou batalha agregada nova.
+
+| ID final / evento | Célula original MIF | Origem no MV (base zero) |
+| --- | --- | --- |
+|01 /10 |70,18 |36,57 |
+|02 /11 |73,19 |27,60 |
+|03 /12 |78,19 |12,60 |
+|04 /13 |74,21 |24,66 |
+|05 /14 |75,27 |21,84 |
+|06 /15 |72,28 |30,87 |
+
+**Fonte:** referências já consultadas,39699021.MIF/MAP1 `0x803c` e STKEEP1.INF/flat60=`ghoul.dfa` (ITEM41). Reutilizadas camadas decodificadas; hash do MIF instalado conferido. São as seis ocorrências declaradas na componente de piso da ilha do pergaminho, não contagem inferida pela cor do automapa. Outra ocorrência no recorte, MIF(82,2)/MV(0,9), fica fora dessa ilha e foi excluída. [Proveniência e projeção](evidencias/m02-stonekeep-ilha/fontes.json). Não houve nova observação DOS. A projeção para centros de células, o raio2 e intervalo90 são adaptações da grade; não se afirma que reproduzam a patrulha original.
+
+Terreno permitido continua região4/piso, colisão nativa, sem água ou paredes; origens distintas e leitos de patrulha separados. Derrotas/recibos independentes; trava compartilhada impede outro contato durante a transição. Sem condição de matar todos: fonte(30,72) preserva elegibilidade, unidade necessária e recuperação. Descanso e simples retorno antes de concluir MQ02 não reativam encontros. Cada vitória pode conceder75EXP: **até450EXP opcionais** no grupo, contra75 do piloto; avaliar consumo/descanso e progressão no M02-BAL, sem aprovação de equilíbrio antecipada.
+
+### Acesso e avaliação curta
+
+[Localhost existente](http://127.0.0.1:8774/) → **Testes / Debug → Campanha e mapas → Stonekeep · ghoul na ilha (RAM)**. Mantido o nome reconhecível e o início(40,60); descrição agora informa o grupo. Batalha direta antiga em Combate continua sem EXP/loot. Nenhum comando novo no título nem alteração de slots pessoais/namespace.
+
+1. Circular a partir da margem:01 a noroeste,02/03 mais a oeste,04 no centro;05/06 ao sul. Usar [visão geral](evidencias/m02-stonekeep-ilha/visao-geral.png), sem exigir todas as batalhas.
+2. Contornar guardiões e interagir com o **Pergaminho · marcador provisório**, em(30,72). Diário deve pedir retorno à corte, sem exigência de eliminar o grupo.
+3. Se desejar avaliar uma derrota independente, guardar checkpoint pelo menu **Guardar teste em RAM**, vencer um contato, retornar e usar **Carregar teste da RAM**. Essa memória só existe na sessão; slots normais continuam bloqueados. Nova entrada no hub reinicia a fixture.
+
+### Verificação focal executada
+
+`node tools/test-stonekeep-island-encounters.cjs`: Chrome156 isolado/origem efêmera, canvas816×624, cinco grupos. Conferidos seis eventos/perfis, circulação e aproximação de cada ponto, patrulha no piso/raio sem sobreposição observada; fonte e saída alcançáveis com os13 guardiões vivos. Coleta pelo evento nativo, repetição sem duplicar e recuperação do faltante mantiveram etapa50. Save anterior sintético com só o exemplar acrescentou os eventos ausentes sem alterar personagem/MQ01/MQ02/recursos/inventário/recibos.
+
+Dois contatos reais, uma batalha por vez; tentativa concorrente de outro ID bloqueada. Vitórias controladas pelo fluxo nativo (não avaliação de dificuldade) concederam exatamente150EXP,14ouro e duas armaduras de couro, com RNG técnico fixado apenas na sessão isolada. Repetir concessão não alterou estado; os outros quatro ghouls e sete esqueletos permaneceram vivos. RAM e Save16/F5/Load sintéticos preservaram derrotas/recibos; saída/retorno antes da conclusão não provocou respawn. Sem erros JS/HTTP faltante. [Resultados](evidencias/m02-stonekeep-ilha/resultado.json), [captura em execução](evidencias/m02-stonekeep-ilha/grupo.png).
+
+Geradores independentes do esqueleto, ghoul e pai Rihad reconstruíram os mesmos dados. Mapas008–011, camadas/colisão de012, eventos anteriores, bancos, recompensas e batalha aprovados inalterados. `build-stonekeep-ghoul.cjs` lê `encounter` + `additionalEncounters`, rejeita IDs/eventos/origens duplicados e preserva entradas alheias. Servidor8774 existente manteve-se ativo; arquivos HTTP conferidos contra disco, sem substituir servidor ou limpar dados.
+
+**Limites/próximo requisito:** grupo aplicado e tecnicamente verificado; circulação manual ampliada pode compor a integração de Stonekeep. Sem novo teste no editor/mobile. A rota construída já permite ida, travessia, coleta e retorno; não falta decoração para iniciar **M02-05: entrega do pergaminho na corte**, que ainda deve consumir uma unidade/aposentar fonte legitimamente, registrar recibo, avançar50→60 e revelar Fang Lair uma vez. A cobertura de ratos/lobos dos aposentos continua não implementada: delimitar sua necessidade na rota mínima em M02-05, sem substituição silenciosa nem exigir catálogo de alas opcionais. Não declarar Stonekeep inteira ou M02 concluídos; balanceamento acumulado permanece M02-BAL.
+
+## Histórico — exploração e encontro de ilha V01 (99203b2)
+
 
 **Aprovação do responsável:** animação de batalha de **8ea06c9 explicitamente aprovada**. Não atribuir aprovação de balanceamento, recompensas ou comportamentos de exploração ao relato. Mestre, atlas e perfil de batalha preservados byte a byte/semanticamente; o registro de aprovação foi atualizado nos metadados, sem reexportar a batalha.
 
