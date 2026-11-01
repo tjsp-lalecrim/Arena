@@ -20,7 +20,8 @@ module.exports=function(){const c=read('data/ArenaSkeleton.json'),enemies=read('
  map.events[v.eventId]=event;
  });
  const area=campaign.areas.find(a=>a.id==='stonekeep');if(!area||area.mapId!==12)throw Error('Stonekeep area unavailable');
- area.encounters={schemaVersion:1,mapId:12,areaId:'stonekeep',completionQuestId:'MQ02',mapVisuals:{[c.enemyId]:c.walk},entries:entries.map(v=>({...v,enemyId:c.enemyId,troopId:c.troopId}))};
+ const previous=area.encounters||{mapVisuals:{},entries:[]};
+ area.encounters={schemaVersion:1,mapId:12,areaId:'stonekeep',completionQuestId:'MQ02',mapVisuals:{...previous.mapVisuals,[c.enemyId]:c.walk},entries:entries.map(v=>({...v,enemyId:c.enemyId,troopId:c.troopId})).concat(previous.entries.filter(v=>!ids.has(v.id)))};
  // Keep the map's compact layout and prior records unchanged.
  fs.writeFileSync(path.join(R,'data/Map012.json'),JSON.stringify(map)+'\n');write('data/ArenaCampaign.json',campaign);
  for(const [f,v]of Object.entries({'Enemies':enemies,'Troops':troops,'ArenaBattle':battle,'ArenaBattleMotion':motion,'ArenaLoot':loot}))write('data/'+f+'.json',v);

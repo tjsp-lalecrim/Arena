@@ -1,4 +1,40 @@
-# Stonekeep — ghoul, piloto de batalha V01
+# Stonekeep — ghoul
+
+## Exploração e encontro de ilha V01 — sobre8ea06c9
+
+**Aprovação do responsável:** animação de batalha de **8ea06c9 explicitamente aprovada**. Não atribuir aprovação de balanceamento, recompensas ou comportamentos de exploração ao relato. Mestre, atlas e perfil de batalha preservados byte a byte/semanticamente; o registro de aprovação foi atualizado nos metadados, sem reexportar a batalha.
+
+**Um único encontro** `stonekeep.island.ghoul.01`, evento10/Map012, origem **(36,57)**. Referência declarada no original: 39699021.MIF MAP1 `0x803c`, flat60 de STKEEP1.INF=ghoul.dfa, anotação ITEM41, célula MIF(70,18). Projeção existente: vista(19,18), margem2/escala3 → MV(36,57), coordenadas em base zero. [Hash do original, INF e limites](evidencias/m02-ghoul-walk-v01/fontes.json); camadas já decodificadas reutilizadas após conferir o hash do MIF e a leitura do INF no original. Não houve nova observação DOS; os demais guardiões declarados não foram populados.
+
+Patrulha adaptada com raio Manhattan2, intervalo90 atualizações ativas, velocidade3, somente **piso/região4**, colisões nativas, sem água/parede/through. Mesmo núcleo de encontros/contato/lock/persistência; nenhuma perseguição ou agregação. Vitória remove só esse ID, derrota continua game over e fuga permanece desabilitada. Respawn comum continua condicionado à conclusão aplicável e saída; descanso/reentrada antecipada não reativam. Pergaminho continua acessível com o ghoul vivo; fonte e critérios de coleta não receberam requisito de derrotar guardiões.
+
+### Recompensas: fonte e adaptação explícitas
+
+| Campo | Configuração atual |
+| --- | --- |
+| Atributos/ação/fórmula |65PV,11/5/0/5/10/5 e HIT90%, Atacar: **inalterados**, provisórios; doença/resistências novas ausentes |
+| EXP de campanha |**75 provisórios**, escala local acima do esqueleto50. Não conversão direta dos1900–2500 citados na wiki. Avaliar ganho e consumo no M02-BAL |
+| Ouro |**24%**, quantidade inteira uniforme **7–70** inclusiva, conforme wiki Monsters PDF5; chance e quantidade são cálculos distintos |
+| Item de baixa qualidade |**5%** da fonte, adaptados provisoriamente a **uma** adaga1 ou armadura de couro1 já existentes, com escolha equiprovável entre candidatos. A fonte não confirma esse catálogo específico. Sem itens/variantes raras novos, poções ou livros acrescentados |
+| Batalha direta RAM |Continua **0 EXP/loot**, por flag da instância e tabela técnica explícita; não altera temporariamente o banco nem a tabela da campanha |
+
+Uma pequena seleção reutilizável `ArenaLoot.tableForEnemy(enemy)` permite ao adaptador escolher a tabela vazia **somente** na antiga fixture de batalha direta. Sorteio, concessão, reservas e recibos continuam exclusivamente no núcleo de Loot. Encontro de mapa, inclusive no acesso RAM de patrulha, usa a configuração de campanha. Nenhum schema/namespace novo; recibos existentes não são reprocessados. Os sete esqueletos e demais tabelas permanecem inalterados.
+
+### Caminhada e reprodução
+
+Uma folha de12 desenhos, quatro direções/3fases, em `art/masters/stonekeep-ghoul-walk-v01/`. V01 é a geração inicial; uma edição V02 corrigiu **somente a pose neutra sul**, que levantava um joelho. O exportador usa essa célula da V02 e preserva as outras11 da V01; não são variantes do personagem. [Prompts completos/referências efetivamente fornecidas](arte/ghoul-walk-v01/prompt.json), [fontes por quadro/recortes/hashes](arte/ghoul-walk-v01/exports.json). Identidade fornecida: recorte do mestre aprovado de batalha, com postura, pele, proporções e clava preservadas; câmera superior é adaptação nova.
+
+`img/characters/$Arena_ghoul_walk_v01.png`:192×256, células64×64, apoio62 e altura máxima56px, escala única, ordem MV sul/oeste/leste/norte. Sem espelhamento ou animação por translação de uma pose. Neutra ocupa coluna central. Transparência, recortes e leitura inspecionados a1:1 no motor; caminhada/encontro **aguardam avaliação**, sem ampliar grupo. Reconstrução: `python tools/export-stonekeep-ghoul-walk.py`; `node tools/build-stonekeep-ghoul.cjs`. O gerador do esqueleto agora preserva entradas/perfis alheios; reconstruções isoladas e pelo pai preservam o ghoul, sete esqueletos e fonte.
+
+### Acesso e verificações focais
+
+**http://127.0.0.1:8774/** → recarregar sem apagar dados → **Testes / Debug → Campanha e mapas → Stonekeep · ghoul na ilha (RAM)**. Início(40,60), Bretã feminina nível2/adaga e recursos técnicos completos. Observar o ghoul a noroeste; aproximar-se para contato. Vitória remove só ele e usa as recompensas provisórias acima. **Guardar/Carregar teste em RAM** permite checkpoint antes/depois; slots pessoais bloqueados, memória somente da sessão. Reabrir o acesso reinicia a fixture. A opção anterior **Combate → Stonekeep · ghoul (RAM)** continua sendo batalha direta sem recompensa.
+
+[Vídeo≈17s normal](evidencias/m02-ghoul-walk-v01/caminhada-contato-normal.webm), [ilha](evidencias/m02-ghoul-walk-v01/ilha.png), [contato](evidencias/m02-ghoul-walk-v01/contato.png), [atlas1:1](evidencias/m02-ghoul-walk-v01/atlas-escala-real.png), [resultado focal](evidencias/m02-ghoul-walk-v01/resultado.json), [QA de vídeo](evidencias/m02-ghoul-walk-v01/video-qa.json). Chrome156 isolado/origem efêmera; nenhuma partida pessoal. Gravação de canvas nativo30fps, tempo normal, patrulha natural/contato por teclado; decodificação em4x só para inspeção. Sete grupos passaram: geometria/circulação e acesso ao pergaminho; limites controlados de loot7/70 e um equipamento; contato único; um ataque nativo e vitória controlada com recompensa única/remoção; RAM e Save16/F5/Load sintéticos preservando derrota/recibos/recursos; respawn condicionado; padrões0/1/2 nas quatro direções e antiga batalha técnica com0 EXP/loot. Sem erro JS/HTTP faltante. Banco, batalha aprovada, outros mapas e reconstrução conferidos; validador de dados passou.
+
+Não repetidos os testes completos de animação de batalha ou matriz de personagens; game over reutiliza o contrato/cobertura válida de8ea06c9, com canLose=false conferido no contato atual. Nenhum novo teste no editor ou smartphone declarado. Recompensas controladas não comprovam equilíbrio, nem o vídeo de contato comprova todo o percurso. Pendentes: avaliação desta caminhada/posição, demais guardiões e conteúdo da ilha, entrega na corte e avaliação acumulada M02-BAL. **Não ampliar antes da avaliação.**
+
+## Histórico — piloto de batalha V01 (8ea06c9)
 
 Sobre **443e43b**, feature `feature/m02-ghoul-piloto`, preservando dependências ainda não integradas. **Um exemplar de batalha somente**, aguardando avaliação funcional e visual. Sem caminhada, evento de mapa, grupo da ilha, nova espécie, doença ou alteração da fórmula. Não conclui M02-04 nem habilita a entrega do pergaminho.
 

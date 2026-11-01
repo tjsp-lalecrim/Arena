@@ -58,11 +58,14 @@ var ArenaLoot;
             return settle(token,[{origin:id,rows:roll.rows,candidates:roll.candidates,questSources:[]}],0);
         }
     };
+    // Content adapters may select an explicit per-instance technical table.
+    // Sorting/settlement/receipts remain exclusively in this existing pipeline.
+    ArenaLoot.tableForEnemy=function(enemy){return $arenaLoot.enemies[String(enemy.enemyId())];};
     var setup=BattleManager.setup;
     BattleManager.setup=function(){setup.apply(this,arguments);var s=state();s.sequence+=1;save(s);this._arenaLootToken='battle/'+s.sequence;this._arenaLootPlan=null;this._arenaLootResult=null;this._arenaLootDisplay=null;this._arenaVictoryHandled=false;};
     BattleManager.makeRewards=function(){
         if(!this._arenaVictory)return false;
-        if(!this._arenaLootPlan){this._arenaLootPlan=$gameTroop.deadMembers().filter(function(e){return e.isAppeared();}).map(function(e){var table=$arenaLoot.enemies[String(e.enemyId())];if(!table)throw Error('Arena loot: tabela ausente para '+e.enemyId());var roll=MVLootRules.roll(table);return {origin:'enemy/'+e.index(),enemyId:e.enemyId(),rows:roll.rows,candidates:roll.candidates,questSources:table.questSources.slice()};});}
+        if(!this._arenaLootPlan){this._arenaLootPlan=$gameTroop.deadMembers().filter(function(e){return e.isAppeared();}).map(function(e){var table=ArenaLoot.tableForEnemy(e);if(!table)throw Error('Arena loot: tabela ausente para '+e.enemyId());var roll=MVLootRules.roll(table);return {origin:'enemy/'+e.index(),enemyId:e.enemyId(),rows:roll.rows,candidates:roll.candidates,questSources:table.questSources.slice()};});}
         this._rewards={gold:0,items:[],exp:$gameTroop.expTotal()};
     };
     BattleManager.displayRewards=function(){}; // Summary follows native victory/level messages after receipt.

@@ -1,0 +1,30 @@
+{
+  "version": "ghoul-walk-v01",
+  "tool": "image_gen built-in",
+  "prompt": "ONE walking spritesheet for the SAME Arena ghoul in the supplied approved battle identity reference. Reference is identity/style only: hunched sinewy olive-ochre green undead, very long arms, angular head with small pointed ears, small red eyes, bare clawed feet, same tapered reddish-brown club with one pale downward spike. Preserve posture, proportions, club, colors and dark fantasy painted finish. NOT a generic human zombie, not armored goblin; no new clothes/accessories. Camera is orthogonal TOP DOWN slightly overhead for a 2D grid map: see top of head and shoulders, no isometric camera or first-person perspective, no side-view battle sheet. Exactly12 full-body transparent cutouts in a regular 3-column by4-row sheet. Row1 SOUTH toward viewer from overhead; row2 WEST facing image-left; row3 EAST facing image-right; row4 NORTH walking away, back of head/shoulders, no face visible. Columns: left-foot step, neutral feet supported, right-foot step. Real articulated different leg and arm phases, not identical images shifted or mirrored. Club travels naturally low with anatomical RIGHT hand, free arm counterbalances; right hand appears image-left in south view and image-right in north view. Never swap club hand between frames. Consistent canvas, body density, head height, body axis and feet support line within each equal cell; actual poses with stable proportions not independently resized. Club spike and both feet fully contained, generous transparent margins and gaps between12 cutouts. Restrained overhead-left illumination consistent on all views; no painted floor, pedestal, background, detached drop shadow, grid, labels or text. Same identity in every drawing. No attack, death, alternate outfit, gore or extra species. Final display roughly56px body height in64px square native cells; emphasize readable silhouette and real stride at that scale. Portrait3:4 sheet format,3columns4rows. Actual alpha transparent background.",
+  "references": [
+    {
+      "file": "tmp/ghoul-walk-review/identity.png",
+      "derivedFrom": "art/masters/stonekeep-ghoul-v01/sheet-v01.png",
+      "sourceRect": [
+        43,
+        28,
+        236,
+        255
+      ],
+      "role": "approved battle ghoul identity/style only; overhead walking is new adaptation"
+    }
+  ],
+  "master": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+  "correction": {
+    "prompt": "Edit this spritesheet only to correct the idle pose in the TOP ROW MIDDLE CELL (south-facing neutral). That one ghoul must stand naturally hunched with BOTH feet planted, a compact stable stance, knees slightly bent, no raised knee or floating foot. Keep the same approved head, body proportions, olive skin, right-hand club, overhead camera and scale. Preserve all other eleven figures, their gait articulation, layout, colors, and transparent background exactly. Do not add variants, rows or labels. The top-middle pose is the native idle frame, while top-left and top-right remain real stride phases. Preserve generous cell margins and baseline and full club/spike. Same 3x4 portrait sheet, same transparent canvas. No other changes.",
+    "references": [
+      "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png"
+    ],
+    "output": "art/masters/stonekeep-ghoul-walk-v01/sheet-v02.png",
+    "used": "only top-middle south neutral frame; remaining eleven come from v01",
+    "reason": "v01 south neutral raised one knee and was unsuitable for native idle"
+  },
+  "approval": "pending owner walking/island evaluation; battle approval limited to8ea06c9",
+  "scope": "one twelve-frame walk exemplar, no variants or battle edits"
+}

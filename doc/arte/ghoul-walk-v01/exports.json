@@ -1,0 +1,314 @@
+{
+  "source": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+  "sourceSha256": "fa9e931da3b083faad01a7bbb25c350048751e294d002446523848d3582345d7",
+  "editedSource": "art/masters/stonekeep-ghoul-walk-v01/sheet-v02.png",
+  "editedSha256": "49f4617d610ddf11d17caf866c287df3afcf1360b01a1d7d8a815e2efc5a4695",
+  "editScope": "only south neutral index1; all other eleven frames from original master",
+  "output": "img/characters/$Arena_ghoul_walk_v01.png",
+  "outputSha256": "f0ad48a6010a6aab9d13ae6d7a384bc11a1b274b825669a06422df74257cd16b",
+  "scale": 0.1564245810055866,
+  "cell": [
+    64,
+    64
+  ],
+  "ground": 62,
+  "rows": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "frames": [
+    {
+      "direction": 2,
+      "pattern": 0,
+      "sourceIndex": 0,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        119,
+        24,
+        330,
+        316
+      ],
+      "placement": [
+        14,
+        16
+      ],
+      "alphaBox": [
+        14,
+        16,
+        47,
+        62
+      ],
+      "sha256": "ebd2617f1280ab1a8c9a379de5be5c36f314a7b17eadd23182fef0e3fd42a830"
+    },
+    {
+      "direction": 2,
+      "pattern": 1,
+      "sourceIndex": 1,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v02.png",
+      "sourceRect": [
+        440,
+        31,
+        646,
+        317
+      ],
+      "placement": [
+        15,
+        17
+      ],
+      "alphaBox": [
+        15,
+        17,
+        47,
+        62
+      ],
+      "sha256": "954177b17683b275e540957f8169b2e36ddb9bbb69a7984ddb07ea3ca30e0a39"
+    },
+    {
+      "direction": 2,
+      "pattern": 2,
+      "sourceIndex": 2,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        772,
+        27,
+        973,
+        314
+      ],
+      "placement": [
+        15,
+        17
+      ],
+      "alphaBox": [
+        15,
+        17,
+        46,
+        62
+      ],
+      "sha256": "298dfddc0c2b3b39d89e177a97685aca6fd9ae956f4ef9e4ac798a75cb0e8c4d"
+    },
+    {
+      "direction": 4,
+      "pattern": 0,
+      "sourceIndex": 3,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        52,
+        349,
+        355,
+        649
+      ],
+      "placement": [
+        12,
+        15
+      ],
+      "alphaBox": [
+        12,
+        15,
+        59,
+        62
+      ],
+      "sha256": "ddfceeb3d6b192fd08b6f46e20f988f03a448b67fbb39d877bff5a20369a0c18"
+    },
+    {
+      "direction": 4,
+      "pattern": 1,
+      "sourceIndex": 4,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        402,
+        355,
+        671,
+        649
+      ],
+      "placement": [
+        13,
+        16
+      ],
+      "alphaBox": [
+        13,
+        16,
+        55,
+        62
+      ],
+      "sha256": "21c92f440ce85c7e29f6c861ac8b617dc7cfe8d1c628d8413968de1596c44338"
+    },
+    {
+      "direction": 4,
+      "pattern": 2,
+      "sourceIndex": 5,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        754,
+        358,
+        1038,
+        654
+      ],
+      "placement": [
+        11,
+        16
+      ],
+      "alphaBox": [
+        11,
+        16,
+        55,
+        62
+      ],
+      "sha256": "77d07287775fa14d1510b2a727a1ec2bacaaff0403545314e0fa51b9d5e961e3"
+    },
+    {
+      "direction": 6,
+      "pattern": 0,
+      "sourceIndex": 6,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        67,
+        685,
+        376,
+        993
+      ],
+      "placement": [
+        3,
+        14
+      ],
+      "alphaBox": [
+        3,
+        14,
+        51,
+        62
+      ],
+      "sha256": "aed75bf3b920233e9f37785a62c45d0ee72afc3a8ea3ee9cced4585aa5f2aab9"
+    },
+    {
+      "direction": 6,
+      "pattern": 1,
+      "sourceIndex": 7,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        418,
+        693,
+        705,
+        997
+      ],
+      "placement": [
+        9,
+        14
+      ],
+      "alphaBox": [
+        9,
+        14,
+        54,
+        62
+      ],
+      "sha256": "5d91cdd69e55fe3071e8d4f761cba7656075dc938bf4515d48abb76ba4dfd877"
+    },
+    {
+      "direction": 6,
+      "pattern": 2,
+      "sourceIndex": 8,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        738,
+        690,
+        1045,
+        989
+      ],
+      "placement": [
+        6,
+        15
+      ],
+      "alphaBox": [
+        6,
+        15,
+        54,
+        62
+      ],
+      "sha256": "365cb783b97d153a2a62224412a03848ad865c17be6313dff61f1426357c2dab"
+    },
+    {
+      "direction": 8,
+      "pattern": 0,
+      "sourceIndex": 9,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        104,
+        1027,
+        342,
+        1383
+      ],
+      "placement": [
+        14,
+        6
+      ],
+      "alphaBox": [
+        14,
+        6,
+        51,
+        62
+      ],
+      "sha256": "2237138a99db7dfacfc9db3c02a55c91b5efb4b64f78d40d76b970ab7cb08d09"
+    },
+    {
+      "direction": 8,
+      "pattern": 1,
+      "sourceIndex": 10,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        432,
+        1031,
+        680,
+        1389
+      ],
+      "placement": [
+        16,
+        6
+      ],
+      "alphaBox": [
+        16,
+        6,
+        55,
+        62
+      ],
+      "sha256": "d91145e41fb3e6569e92b35335f610f75c48a055516765287aba7876592785c1"
+    },
+    {
+      "direction": 8,
+      "pattern": 2,
+      "sourceIndex": 11,
+      "sourceFile": "art/masters/stonekeep-ghoul-walk-v01/sheet-v01.png",
+      "sourceRect": [
+        759,
+        1027,
+        1042,
+        1376
+      ],
+      "placement": [
+        14,
+        7
+      ],
+      "alphaBox": [
+        14,
+        7,
+        58,
+        62
+      ],
+      "sha256": "b76ee4381fc46120ad205a3bcf86e967acb96eff5183eaf3ce6249d6b92ee5be"
+    }
+  ],
+  "approval": "pending owner evaluation of walking/island exemplar"
+}

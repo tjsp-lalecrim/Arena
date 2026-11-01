@@ -1,6 +1,6 @@
 # M02-04 — amostra integrada de Stonekeep
 
-**Estado atual dos encontros:** sete esqueletos do agrupamento da passagem, conforme [fontes, posições e verificações](SKELETON_M02.md). Wiki aproxima a seis; mapa original declara sete. Sem bloqueio kill-all. As referências a guardiões ausentes/piloto único abaixo são históricas; ilha e demais participantes necessários continuam pendentes. Layout e materiais aprovados preservados.
+**Estado atual dos encontros:** sete esqueletos do agrupamento da passagem, conforme [fontes, posições e verificações](SKELETON_M02.md), e **um ghoul de ilha em(36,57)**, com [caminhada/recompensas/integração para avaliação](GHOUL_M02.md). Animação de batalha8ea06c9 aprovada, sem inferir aprovação da exploração. Demais guardiões/participantes continuam pendentes; nenhum kill-all exigido, layout/materiais preservados. As referências a guardiões ausentes/piloto único abaixo são históricas.
 
 **Levantamento visual posterior01/11/2026:** [referências e primeiro conjunto de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md): seis prints inspecionados, INFO→STKEEP1.INF e associações pontuais de materiais/portas/pergaminho. Proposta limitada a aposento/passagem/margem, sem geração ou mudança do layout nesta consulta; origem das incertezas registrada. Próxima tarefa visual deverá começar pela amostra integrada antes de expandir. Não acrescenta aprovação da amostra funcional.
 

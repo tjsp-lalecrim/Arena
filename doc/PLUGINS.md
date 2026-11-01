@@ -1,6 +1,6 @@
 ## Ghoul M02 — piloto de batalha
 
-Arena_Ghoul0.1.0 após Arena_DebugHub: um consumidor de batalha RAM com novo registro pela API do hub, sem comando adicional no título. Enemy5/Troop6 e perfis próprios; sem doença, caminhada, encontros da ilha ou recompensa de campanha. [Contrato](plugins/Arena_Ghoul.md), [fontes/arte/testes](GHOUL_M02.md). Contagens anteriores abaixo são históricas; consultar js/plugins.js para a lista real.
+Arena_Ghoul0.2.0 após Arena_DebugHub: um encontro de ilha e dois acessos RAM pela API do hub, sem comando adicional no título. Enemy5/Troop6 e batalha aprovada intactos; caminhada nova, recompensas de campanha explícitas e tabela vazia por instância somente na antiga batalha técnica. Sem doença/grupo. Pequeno seletor ArenaLoot.tableForEnemy mantém um único pipeline de concessão. [Contrato](plugins/Arena_Ghoul.md), [fontes/arte/testes](GHOUL_M02.md). Contagens anteriores abaixo são históricas; consultar js/plugins.js para a lista real.
 
 ## Hub técnico M02 — estado vigente
 

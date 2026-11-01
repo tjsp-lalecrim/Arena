@@ -19,7 +19,11 @@
     }
   ],
   "master": "art/masters/stonekeep-ghoul-v01/sheet-v01.png",
-  "approval": "pending owner visual and functional evaluation",
+  "approval": {
+    "status": "owner explicitly approved battle animation",
+    "version": "8ea06c9",
+    "scope": "battle animation only; no balance, rewards or walking/island validation inferred"
+  },
   "scope": "one battle exemplar; no walk/group",
   "interpretation": "Detailed skin/face finish, hurt/return and six-frame collapse are artistic adaptation; no new disease mechanic or supernatural power inferred."
 }

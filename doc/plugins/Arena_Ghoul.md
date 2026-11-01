@@ -1,4 +1,10 @@
-# Arena_Ghoul0.1.0
+# Arena_Ghoul0.2.0
+
+Configura um encontro de ilha/evento10 com Arena_Encounters e um segundo acesso RAM por ArenaDebugHub.register (`arenaGhoulPatrol`), sem comando novo no título. `startPatrolLab()` prepara a chegada(40,60); `startLab()` preserva a batalha direta antiga. Pendência de lançamento é limpa antes de iniciar/transferir; o retorno não prepara outra batalha nem restaura recursos.
+
+EXP75/tabela de campanha são explícitas em ArenaGhoul.json; a flag transitória `_arenaGhoulBattlePilot` na instância de Game_Enemy mantém somente o piloto antigo em0 EXP/loot. Usa `ArenaLoot.tableForEnemy` para selecionar a tabela vazia sem mutação global ou outro concessor. Atores, custos e recibos permanecem nos núcleos existentes. Sem doença, schema ou namespace novo. [Fontes, valores provisórios, caminhada e testes](../GHOUL_M02.md).
+
+## Histórico — versão0.1 / somente batalha
 
 Adaptador de um piloto de batalha, após Arena_DebugHub e os núcleos de Stonekeep, Continuation, Battle/BattleMotion, Resources, Abilities e Loot. Sem dependências externas. [Configuração, fontes, valores e limites](../GHOUL_M02.md) são a fonte principal.
 

@@ -515,6 +515,10 @@
       "sha256": "0d47bb887ecec807a1dbca1cf5415fe2832bba8fd0bf186b17f42576a43674a9"
     }
   ],
-  "approval": "pending owner visual and functional evaluation",
+  "approval": {
+    "status": "owner explicitly approved battle animation",
+    "version": "8ea06c9",
+    "scope": "battle animation only; no balance, rewards or walking/island validation inferred"
+  },
   "coverage": "battle only; no walking/patrol/contact"
 }

@@ -184,6 +184,15 @@
             ],
             "ground": 62,
             "animationWait": 10
+          },
+          "5": {
+            "file": "$Arena_ghoul_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
           }
         },
         "entries": [
@@ -340,6 +349,28 @@
             ],
             "enemyId": 4,
             "troopId": 5
+          },
+          {
+            "id": "stonekeep.island.ghoul.01",
+            "eventId": 10,
+            "enemyId": 5,
+            "troopId": 6,
+            "origin": [
+              36,
+              57
+            ],
+            "sourceOriginal": [
+              70,
+              18
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
           }
         ]
       }
