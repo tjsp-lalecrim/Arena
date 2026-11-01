@@ -43,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade:** [levantamento visual de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md) com índice técnico delimitado de reuso, separando declarações INF de uso em camadas. Encerrar a pesquisa e voltar à amostra de paredes/pisos/margem, sem lote ou geração nesta consulta. Preservar o layout funcional existente e aguardar avaliação da amostra M02-04 antes de ampliar Stonekeep/M02-05. Guardiões exigem recorte artístico próprio; nenhuma expansão autorizada automaticamente. Sem merge, push ou Pages nesta entrega. Refinamentos de corte/REF07 continuam futuros e não bloqueantes.
+**Continuidade:** [levantamento visual de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md) com índice delimitado de reuso e primeira amostra visual V01 integrada somente em X59–92/Y32–49. Cinco mestres IA/folha C própria, água e layout preservados; avaliação visual pendente. Acesso direto: título → Stonekeep · materiais (RAM), aposento(84,42) → passagem(75,39) → margem(66,39). Não ampliar nem gerar variantes antes da avaliação. Preservar o layout funcional existente e aguardar avaliação da amostra M02-04 antes de ampliar Stonekeep/M02-05. Guardiões exigem recorte artístico próprio; nenhuma expansão autorizada automaticamente. Sem merge, push ou Pages nesta entrega. Refinamentos de corte/REF07 continuam futuros e não bloqueantes.
 
 ---
 

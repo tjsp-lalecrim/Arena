@@ -1,0 +1,18 @@
+{
+  "version": "stonekeep-visual-v01",
+  "status": "amostra integrada, aprovação visual pendente",
+  "mapId": 12,
+  "tilesetId": 5,
+  "baseTilesetId": 4,
+  "sheet": "Arena_Shared_Castle_Stone_V01_C",
+  "bounds": [59, 32, 92, 49],
+  "paleFloorThroughX": 71,
+  "lightWallFromX": 79,
+  "wallHeight": 2,
+  "ceilingDepth": 1,
+  "tileSize": 48,
+  "reviewPoints": {"aposento": [84, 42], "passagem": [75, 39], "margem": [66, 39]},
+  "reason": "Aposento FLCASC/CASA → passagem CASF → margem FLCAS_E1/WCAS. Limites de aplicação são recorte autoral de demonstração; não reconstrução automática de todos os materiais MIF.",
+  "masters": "art/masters/stonekeep-v01",
+  "exporter": "tools/export-stonekeep-visual.py"
+}

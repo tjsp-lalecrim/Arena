@@ -5,6 +5,7 @@ Fonte principal de identidade visual, personagens/animações e processo de asse
 ## Regras obrigatórias de continuidade
 
 - Reaproveitar primeiro os assets aprovados; manter identidade Arena e acabamento dark fantasy. Fontes de baixa definição não autorizam fantasia genérica. Distinguir fato da fonte, interpretação e adaptação.
+- Antes de gerar materiais de uma dungeon, conferir referências visuais, recursos do original e reuso entre mapas, separando material compartilhado de composição local. Seguir o [procedimento delimitado de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md#índice-técnico-de-reuso--complemento-a-6ec25fc), sem catálogo geral; vale também para um futuro levantamento realmente necessário de Imperial Dungeons, sem revisar seus assets agora.
 - Projeção conforme uso: mapa superior **ortogonal**, batalha lateral e narrativa conforme a cena. A vista de personagens de exploração deve ser compatível com a grade ortogonal; não converter objetos/cenário para isometria. Jogador de batalha à esquerda voltado à direita; inimigos no lado oposto. Não aplicar a pose dos retratos às outras categorias.
 - Padronizar por categoria escala aparente, orientação, enquadramento, linha dos olhos/pés, margens e transparência real. Distinguir tamanho de arquivo/célula de pixels ocupados e recorte/escala do consumidor. Não deformar anatomia racial para caber no contorno humano.
 - Cabeça, pescoço, tronco e olhar anatomicamente coerentes; retratos seguem a seção de pose e seu bloco fixo. Espelhamento não corrige torção entre partes do corpo.

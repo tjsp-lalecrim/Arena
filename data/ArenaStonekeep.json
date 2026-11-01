@@ -29,6 +29,22 @@
     129,
     9
   ],
+  "visualSample": {
+    "version": "stonekeep-visual-v01",
+    "entry": {
+      "id": "stonekeep.visual.sample",
+      "mapId": 12,
+      "x": 84,
+      "y": 42,
+      "direction": 4
+    },
+    "bounds": [
+      59,
+      32,
+      92,
+      49
+    ]
+  },
   "breach": [
     75,
     39

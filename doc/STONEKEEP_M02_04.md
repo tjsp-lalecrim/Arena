@@ -59,6 +59,8 @@ Origem: `node tools/build-stonekeep-sample.cjs`; o gerador pai `node tools/build
 
 ## Avaliação curta
 
+**Amostra visual V01 posterior ao levantamento e23aed6:** apenas aposento→passagem→margem, X59–92/Y32–49. Cinco materiais IA, tileset5/C próprio; água, natação, fonte e layout preservados. O restante continua provisório. [Arquivos, prompts, reconstrução, comparação e sete grupos focais](arte/STONEKEEP_REFERENCIAS_M02_04.md#reuso-substituição-e-primeiro-conjunto). Avaliação direta: título → **Stonekeep · materiais (RAM)**, início(84,42); não depende de refazer a rota inteira. Aprovação visual do responsável ainda pendente, sem expansão autorizada.
+
 **http://127.0.0.1:8774/**. Servidor original deste projeto **PID10096** preservado; duplicado19428 iniciado pelo agente foi encerrado na correção acima. A antiga indicação de porta livre estava incorreta. Para encerrar o servidor original quando desejado: PowerShell `Stop-Process -Id 10096` (conferir o processo caso a sessão já tenha terminado). Editor: playtest do projeto atual; nome na árvore **M02-04 Stonekeep — amostra**.
 
 1. Título → **Stonekeep · passagem (RAM)**. Prepara missão aceita e Bretã nível2, sem repetir dungeon/Ria/combates. Recursos parcialmente gastos, sem cura pela viagem. Sessão separada dos slots pessoais.
