@@ -26,9 +26,9 @@ var ArenaNarrative,Scene_ArenaNarrative;
  function state(){var s=MVStateStore.read('arenaNarrative');if(['technical','campaign'].indexOf(s.mode)<0||['none','intro','ria','dungeon','ending','ended'].indexOf(s.phase)<0||!Number.isInteger(s.section)||s.section<0||!Number.isInteger(s.word)||s.word<0)throw Error('Arena: estado narrativo incompatível no save.');return s;}
  function store(s){MVStateStore.replace('arenaNarrative',s);}
  function campaign(){return !!$gameSystem&&state().mode==='campaign';}
- // The disposable continuation lab keeps original narrative data intact while
- // previewing an existing technical map. Normal campaign routing is unchanged.
- function active(){return campaign()&&!(window.ArenaContinuation&&ArenaContinuation.labActive())&&['intro','ria','ending','ended'].indexOf(state().phase)>=0;}
+ // A lab or a registered chapter destination owns routing after continuation;
+ // the original M01 cursor/history remain preserved in their namespace.
+ function active(){return campaign()&&!(window.ArenaContinuation&&(ArenaContinuation.labActive()||ArenaContinuation.campaignActive()))&&['intro','ria','ending','ended'].indexOf(state().phase)>=0;}
  function section(s){return $arenaNarrative.sections.filter(function(v){return v.phase===s.phase;})[s.section];}
  function fence(){$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();}
  ArenaNarrative={
@@ -97,6 +97,7 @@ var ArenaNarrative,Scene_ArenaNarrative;
   if(this._picture!==picture){this._picture=picture;this._art.bitmap=ImageManager.loadPicture(picture);this._art.bitmap.addLoadListener(function(){if(!this._terminated)this.placeArt();}.bind(this));}
   this._art.visible=true;this.placeArt();
   this._buttons=end?[{id:'save',text:'Salvar'},{id:'title',text:'Voltar ao título'}]:[{id:'back',text:'Voltar',disabled:!s.history.length},{id:'next',text:'Continuar'}];
+  if(end&&window.ArenaContinuation&&ArenaContinuation.canContinueCampaign())this._buttons.unshift({id:'journey',text:'Continuar jornada'});
   this._focus=Math.min(this._focus,this._buttons.length-1);
   var n=this._buttons.length,width=this._footer.contentsWidth()/n;
   this._buttons.forEach(function(b,i){var x=i*width;b.rect={x:this._footer.x+16+x,y:this._footer.y+8,width:width,height:44};if(i===this._focus)this._footer.contents.fillRect(x,0,width-6,28,'#285052');paint(this._footer,b.text,x+4,0,width-14,28,20,b.disabled?'#66716d':null,'center');},this);
@@ -105,6 +106,7 @@ var ArenaNarrative,Scene_ArenaNarrative;
  Scene_ArenaNarrative.prototype.action=function(id){
   var s=state(),b=this._buttons.filter(function(v){return v.id===id;})[0];if(!b||b.disabled)return;
   this.waitFresh();
+  if(id==='journey'){ArenaContinuation.beginCampaign();return;}
   if(id==='save'){$gameTemp._arenaNarrativeSaveFence=true;SceneManager.push(Scene_Save);return;}
   if(id==='title'){s.phase='ended';store(s);$gameTemp._arenaNarrativeTitleFence=true;SceneManager.clearStack();SceneManager.goto(Scene_Title);return;}
   if(id==='back'){var prev=s.history.pop();s.phase=prev.phase;s.section=prev.section;s.word=prev.word;store(s);this.draw();return;}

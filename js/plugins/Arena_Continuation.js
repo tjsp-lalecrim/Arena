@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 M02-02A: continuidade isolada, destino técnico e snapshots em RAM.
+ * @plugindesc v0.2.0 Continuidade M01/M02, destino registrado e laboratório em RAM.
  * @author Codex
  * @param TechnicalDestination
  * @type string
@@ -8,13 +8,14 @@
  * Namespace interno arenaContinuation v1; namespace web não muda.
  * Título > Continuidade M02 (sem saves). Somente fixtures sintéticas.
  * Destino configurável somente em mapas técnicos 1/5 existentes; não é Rihad.
- * Nenhuma ativação na campanha. API/status e limites: doc/plugins/Arena_Continuation.md.
+ * Campanha: destino registrado por Arena_Rihad; laboratório mantém isolamento.
+ * API/status e limites: doc/plugins/Arena_Continuation.md.
  */
 var ArenaContinuation;
 (function() {
     'use strict';
     var ns='arenaContinuation',beginId='campaign/MQ02.begin',arrivalId='campaign/MQ02.arrive';
-    var session=null,restoring=false,lastError='',memoryMaker=DataManager.makeSaveContents;
+    var session=null,restoring=false,lastError='',memoryMaker=DataManager.makeSaveContents,campaignDestination=null;
     var globals=['$gameTemp','$gameSystem','$gameScreen','$gameTimer','$gameMessage','$gameSwitches','$gameVariables','$gameSelfSwitches','$gameActors','$gameParty','$gameTroop','$gameMap','$gamePlayer'];
     MVStateStore.register(ns,1,MVChapterContinuation.defaults());
     function active(){return !!(session&&session.system===$gameSystem);}
@@ -96,14 +97,38 @@ var ArenaContinuation;
         if(map.meta&&map.meta.TechnicalPreview)pass=map.data[(5*map.height+d.y)*map.width+d.x]!==1;
         if(!pass||map.events.some(function(e){return e&&e.x===d.x&&e.y===d.y;}))throw Error('Chegada bloqueada por tile/evento.');
     }
+    function campaignActive(){
+        if(!campaignDestination||!$gameSystem||active())return false;
+        var s=MVStateStore.read(ns);
+        return s.destinationId===campaignDestination.id&&s.phase!=='idle';
+    }
+    function beginCampaign(){
+        if(!campaignDestination||active()||$gameParty.inBattle()||!status().eligible)return false;
+        var d=campaignDestination;
+        var applied=MVStateStore.once(ns,beginId,function(s){Object.assign(s,MVChapterContinuation.begin(s,beginId,d.id));});
+        if(applied!=='applied')return false;
+        $gameTemp.clearDestination();$gamePlayer.reserveTransfer(d.mapId,d.x,d.y,d.direction,0);
+        SceneManager.clearStack();SceneManager.goto(Scene_Map);return true;
+    }
+    function resumeCampaign(){
+        if(!campaignActive()||MVStateStore.read(ns).phase!=='travelling')return;
+        var d=campaignDestination;$gamePlayer.reserveTransfer(d.mapId,d.x,d.y,d.direction,0);
+    }
+    function completeCampaignArrival(){
+        var d=campaignDestination;
+        if(!d||!campaignActive()||MVStateStore.read(ns).phase!=='travelling'||$gameMap.mapId()!==d.mapId||$gamePlayer.x!==d.x||$gamePlayer.y!==d.y)return;
+        MVStateStore.once(ns,arrivalId,function(s){Object.assign(s,MVChapterContinuation.arrive(s));});
+        if(!ArenaPersistence.snapshot().quests.MQ02)ArenaPersistence.setQuest('MQ02',10,{},false);
+    }
     var mapLoaded=Scene_Map.prototype.onMapLoaded;
     Scene_Map.prototype.onMapLoaded=function(){
         mapLoaded.apply(this,arguments);
+        completeCampaignArrival();
         if(active()&&session.request){
             var d=session.request;
             if($gameMap.mapId()===d.mapId&&$gamePlayer.x===d.x&&$gamePlayer.y===d.y){
                 MVStateStore.once(ns,arrivalId,function(s){Object.assign(s,MVChapterContinuation.arrive(s));});
-                session.message='Chegada técnica concluída. Não é Rihad; dados preservados.';session.request=null;
+                session.message=d.id==='rihad.arrival'?'Amostra de Rihad concluída; snapshots só em RAM.':'Chegada técnica concluída. Não é Rihad; dados preservados.';session.request=null;
             }
         }
     };
@@ -120,6 +145,8 @@ var ArenaContinuation;
     };
     var failed=Scene_Load.prototype.onLoadFailure;
     Scene_Load.prototype.onLoadFailure=function(){failed.apply(this,arguments);if(lastError&&this._helpWindow)this._helpWindow.setText('Save incompatível; dados preservados.');};
+    var loadSuccess=Scene_Load.prototype.onLoadSuccess;
+    Scene_Load.prototype.onLoadSuccess=function(){loadSuccess.apply(this,arguments);resumeCampaign();};
     ['saveGame','saveGameWithoutRescue','saveGlobalInfo'].forEach(function(key){var f=DataManager[key];DataManager[key]=function(){return active()?false:f.apply(this,arguments);};});
     DataManager.makeSaveContents=function(){if(active())throw Error('Continuidade: laboratório sem saves normais.');return memoryMaker.apply(this,arguments);};
     ['save','backup','remove','restoreBackup','cleanBackup'].forEach(function(key){var f=StorageManager[key];StorageManager[key]=function(){return active()?false:f.apply(this,arguments);};});
@@ -236,5 +263,16 @@ var ArenaContinuation;
     var menuCreate=Scene_Menu.prototype.createCommandWindow;
     Scene_Menu.prototype.createCommandWindow=function(){menuCreate.apply(this,arguments);this._commandWindow.setHandler('arenaContinuationReturn',function(){SceneManager.goto(Laboratory);});};
     ArenaContinuation={status:status,inspectContents:inspectContents,begin:begin,arrive:arrive,labActive:active,fixture:fixture,
-        memorySave:memorySave,memoryLoad:memoryLoad,simulateGate:simulateGate,leaveLab:leave,lastError:function(){return lastError;},destination:destination};
+        memorySave:memorySave,memoryLoad:memoryLoad,simulateGate:simulateGate,leaveLab:leave,lastError:function(){return lastError;},destination:destination,
+        campaignActive:campaignActive,beginCampaign:beginCampaign,
+        canContinueCampaign:function(){return !!campaignDestination&&!active()&&status().eligible;},
+        registerCampaignDestination:function(d){
+            if(!d||d.id!=='rihad.arrival'||!Number.isInteger(d.mapId)||!$dataMapInfos[d.mapId]||!Number.isInteger(d.x)||!Number.isInteger(d.y)||d.x<0||d.y<0||[2,4,6,8].indexOf(d.direction)<0)throw Error('Destino de campanha inválido.');
+            campaignDestination=Object.freeze(Object.assign({},d));
+        },
+        previewArrival:function(d){
+            if(!fixture('ending'))return false;
+            MVStateStore.once(ns,beginId,function(s){Object.assign(s,MVChapterContinuation.begin(s,beginId,d.id));});
+            session.request=d;DataManager.loadMapData(d.mapId);return true;
+        }};
 })();

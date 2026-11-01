@@ -6,7 +6,7 @@
     {"id":80,"next":90},{"id":90,"next":100},{"id":100,"next":110},{"id":110,"next":null}
   ]}],
   "areas": [
-    {"id":"rihad","questId":"MQ02","mapId":null},
+    {"id":"rihad","questId":"MQ02","mapId":9},
     {"id":"rihad.outskirts","questId":"MQ02","mapId":null},
     {"id":"stonekeep","questId":"MQ02","mapId":null},
     {"id":"fang-lair.upper","questId":"MQ02","mapId":null},

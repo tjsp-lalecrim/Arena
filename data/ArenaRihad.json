@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "areaId": "rihad",
+  "arrival": {
+    "id": "rihad.arrival",
+    "mapId": 9,
+    "x": 10,
+    "y": 11,
+    "direction": 8
+  },
+  "informantEventId": 1,
+  "restPointId": "MQ02.rihad.rest"
+}

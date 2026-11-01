@@ -573,6 +573,16 @@
         43
       ],
       "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+    },
+    {
+      "id": "MQ02.rihad.rest",
+      "mapId": 9,
+      "eventId": 2,
+      "x": 15,
+      "y": 10,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "MQ02_ESPECIFICACAO: repouso autorizado na chegada; posição e plataforma são adaptação provisória."
     }
   ],
   "menuIntervalMs": 500,

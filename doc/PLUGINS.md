@@ -1,3 +1,7 @@
+## Chegada M02-03A — estado vigente
+
+Arena_Rihad0.1.0 acrescentado como41º registro; Arena_Continuation0.2.0 aceita destino registrado e confirmação de campanha. Nomes/ordem/status/parâmetros dos40 anteriores preservados. Arena_Recovery reconhece authorizedRefuge sem mudar os pontos MQ01. Nenhum motor, namespace web ou consumidor de recursos novo. [Plugin](plugins/Arena_Rihad.md), [contratos de continuação](plugins/Arena_Continuation.md), [amostra/evidências](CHEGADA_RIHAD_M02_03A.md). Contagens/ausência de destino nos registros abaixo são históricas.
+
 ## Configurações M02-02B — quest/área
 
 MV_CampaignConfig e Arena_CampaignConfig0.1.0, após os38 anteriores preservados (total40). ArenaCampaign.json contém contratos MQ02 sem vínculos de item/mapa; seletores contextuais e fontes/recibos isolados integram os adaptadores existentes sem cloná-los. Sem novo namespace de save, dependência externa, mapa ou ativação de campanha. [APIs/contratos](plugins/Arena_CampaignConfig.md), [resultados](CONFIGURACOES_M02_02B.md).

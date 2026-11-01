@@ -1,3 +1,11 @@
+# Continuação — v0.2.0 / M02-03A
+
+Delta atual: `registerCampaignDestination(d)` registra somente rihad.arrival, a partir de ArenaRihad.json; `canContinueCampaign()` verifica campanha elegível fora do laboratório; `beginCampaign()` registra operação e transfere uma única vez. `campaignActive()` entrega o roteamento ao capítulo após confirmação, preservando fase/cursor/histórico M01. Load em travelling retoma o destino; arrived conserva a posição salva. Chegada cria MQ02 em10 somente se ausente, sem recursos/EXP/prêmios.
+
+`previewArrival(d)` reutiliza fixture ending explicitamente pedida pelo título e o isolamento RAM do laboratório; não transforma saves técnicos/E05 em campanha. APIs02A e TechnicalDestination continuam para o laboratório anterior, sem alteração de schema/namespace. A troca de cena narrativa acrescenta Continuar jornada somente quando elegível; título/salvar continuam disponíveis. [Configuração, roteiro e evidências](../CHEGADA_RIHAD_M02_03A.md).
+
+## Contrato02A preservado — histórico da unidade original
+
 # Continuação de capítulo — M02-02A / 0.1.0
 
 Implementação técnica isolada; nenhuma continuação M02 habilitada na campanha. [Roteiro e evidências](../CONTINUIDADE_M02_02A.md). Base documental34c2f95; fonte funcional develop85940d4, sem mudanças de mapas/banco/assets. Tag m01 preservada.
