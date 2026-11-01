@@ -1,5 +1,43 @@
 # Stonekeep — exemplar de esqueleto
 
+## Passagem representada — sete encontros, sobre d800a8f
+
+**Cobertura vigente:** grupo da passagem aplicado com os mesmos sprites, caminhada, batalha e parâmetros do exemplar aprovado. Sem perseguição, reforços, agregação por proximidade ou múltiplos participantes por encontro. A avaliação de navegação do hub d800a8f funcionou segundo o responsável; ambiente e outros casos não discriminados. Não estender esse relato às novas posições ou ao balanceamento.
+
+### Fontes, quantidade e posições
+
+Wiki local `Arena_Fang Lair (quest)…pdf`, p.2: após a abertura e virar à direita, “half a dozen skeletons”; p.5: planta de Stonekeep. Nova leitura **somente leitura** de `ARENA/39699021.MIF` confirmou o hash já registrado; as camadas MAP1/FLOR foram novamente decodificadas com o leitor existente e coincidem com o cache. `STKEEP1.INF`, lido do GLOBAL.BSA com o leitor existente, declara **flat57=skeleton.dfa, anotação ITEM38**. Sete células MAP1 `0x8039` estão no agrupamento norte X da vista27–33/Y2–5, dentro da planta já construída. [Hashes, origem e posições](evidencias/m02-stonekeep-passagem/fontes.json).
+
+**Diferença explícita:** a wiki aproxima a quantidade a seis; o arquivo declara sete neste agrupamento. Adotados os sete registros, sem importar esqueletos de outras alas. Isso confirma referências/posições declaradas, não uma nova observação de população ou patrulha em partida DOS. O índice de flat não é o número da anotação ITEM nem o ID de inimigo MV.
+
+Projeção existente, sem alterar planta: vistaX=89−originalX; MVX=3+(vistaX−8)×3; MVY=3+originalY×3. Coordenadas da tabela em base zero, conforme arrays e grade MV. Cada encontro usa uma tropa de **um** esqueleto.
+
+| Sufixo do ID estável `stonekeep.passage.skeleton.` | Evento Map012 | Original MIF (X,Y) | MV (X,Y) |
+| --- | --- | --- | --- |
+|01 |3 |61,2 |63,9 |
+|02 |4 |62,2 |60,9 |
+|03 |5 |60,3 |66,12 |
+|04 |6 |56,4 |78,15 |
+|05 |7 |62,4 |60,15 |
+|06 |8 |56,5 |78,18 |
+|07 |9 |61,5 |63,18 |
+
+O piloto01 antes ocupava uma posição representativa em(75,39), junto à abertura. Agora corresponde ao primeiro registro original. Mantidos ID/evento e derrotas/recibos: ao carregar, somente uma instância **viva** ainda no antigo raio do piloto é reposicionada; derrotados não são revividos. Eventos novos são acrescentados pelo sync existente. Nenhuma alteração de recursos, EXP, inventário ou quest por essa adequação.
+
+### Comportamento e avaliação curta
+
+Patrulha continua raio Manhattan2, intervalo90 atualizações ativas, velocidade3, somente piso/região4 e colisões nativas entre eventos. Origem sem sobreposição e distância mínima3tiles. Percurso não exige derrotar todos: o teste coletou o pergaminho com os sete vivos. Descanso/reentrada não provocam respawn; a regra anterior de conclusão aplicável mais saída permanece intacta. Não há gatilho de vitória de grupo ou recompensa coletiva.
+
+**Valores provisórios preservados:**45PV, ATQ9/DEF4, demais parâmetros e resistência existentes;50 EXP por vitória, sem ouro/itens por loot original desconhecido. Se derrotados os sete, são **350 EXP opcionais**, comparados aos50 do piloto. Avaliar em **M02-BAL** o ganho acumulado, custo/uso real de Mana/Vigor/poções e frequência de retorno/descanso; não são novos valores aprovados nem meta de dificuldade. Não alterar atributos/fórmula para compensar essa expansão nesta entrega.
+
+Mesmo acesso, sem novo comando: **Testes / Debug → Campanha e mapas → Stonekeep · patrulha (RAM)**. Prepara a sessão em **(69,21)** entre as duas ramificações, com recursos técnicos completos. Roteiro: guardar checkpoint RAM; circular para oeste/norte até01/02/03/05/07 e pela ramificação leste até04/06; observar colisões e escolher um contato. Vitória remove só esse encontro. Retornar/carregar o checkpoint permite comparar posições. Não é necessário repetir a viagem nem todos os combates. O acesso **Stonekeep · passagem (RAM)** mantém a avaliação desde Rihad; salvamento normal da campanha permanece disponível fora das sessões RAM.
+
+[Visão geral anotada](evidencias/m02-stonekeep-passagem/visao-geral.png), [captura no motor](evidencias/m02-stonekeep-passagem/grupo.png), [cinco grupos focais](evidencias/m02-stonekeep-passagem/resultado.json). Chrome156, contexto/origem descartáveis; RAM e slot16 normal sintético, sem saves pessoais. Dois contatos e vitórias controladas pelo processamento nativo validam callback/recompensas independentes; não são teste de duração/dano ou reexecução das animações. Conectividade com todos vivos, patrulha, coleta sem kill-all, migração do piloto vivo/derrotado, save/F5/load, saída/retorno e gerador pai passaram. Sem erro JS/HTTP faltante. Sem novo teste de editor ou smartphone atribuído ao responsável.
+
+Configuração em ArenaSkeleton.json; build-stonekeep-skeleton monta os sete eventos/perfil e é chamado pelo gerador pai, sem alterar outros mapas, tiles, banco de inimigos ou regras. Prancha é somente revisão com arte existente. **Pendentes da dungeon:** participantes/guardiões da ilha e demais encontros indispensáveis à rota, aparência final do pergaminho e entrega na corte (M02-05), conforme recortes autorizados futuros. Não iniciar ghouls ou polimento opcional por associação. Avaliação manual extensa das novas posições pode ser agrupada à integração de Stonekeep.
+
+## Histórico — exploração V01 / piloto único
+
 ## Exploração V01 — 01/11/2026, sobre f198987
 
 **Avaliação posterior do responsável:** patrulha de **6956516 aprovada**. Ambiente e casos adicionais não discriminados; não atribuir aprovação de balanceamento, recompensas ou persistência ao relato. Aprovações anteriores de combate/visual f198987 permanecem válidas. Acesso agora em **Testes / Debug → Campanha e mapas → Stonekeep · patrulha (RAM)**; batalha direta em **Testes / Debug → Combate → Stonekeep · esqueleto (RAM)**. A espera de avaliação abaixo descreve a entrega inicial, superada somente no escopo de patrulha informado. Contrato de navegação no [hub](plugins/Arena_DebugHub.md).

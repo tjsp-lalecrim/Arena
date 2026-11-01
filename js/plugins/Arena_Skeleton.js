@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.2.0 Exemplar do esqueleto; resistência e acessos técnicos RAM.
+ * @plugindesc v0.3.0 Esqueletos de Stonekeep; resistência e acessos RAM.
  * @author Codex
  * @help Após Arena_Stonekeep/BattleMotion/Abilities/Loot. ArenaSkeleton.json.
  * Encontro de campanha usa Arena_Encounters; laboratório não altera saves.
@@ -26,6 +26,17 @@ var ArenaSkeleton;
  Game_Enemy.prototype.exp=function(){return this._arenaSkeletonBattlePilot?0:exp.apply(this,arguments);};
  function lab(kind){if(!ArenaStonekeep.previewMaterials())return false;pending=kind;return true;}
  ArenaSkeleton={resistanceRate:rate,startLab:function(){return lab('battle');},startPatrolLab:function(){return lab('patrol');}};
+ // The representative pilot used a proxy near the breach. Retain its stable ID
+ // and defeat/reward records; only relocate a living saved event in that old area.
+ var mapLoaded=Scene_Map.prototype.onMapLoaded;
+ Scene_Map.prototype.onMapLoaded=function(){
+  var old=c().legacyPatrol;
+  if(old&&!$gamePlayer.isTransferring()&&$gameMap.mapId()===c().lab.mapId){
+   var e=$gameMap.event(old.eventId),s=ArenaPersistence.snapshot().enemies[old.id];
+   if(e&&!e._erased&&!(s&&s.defeated)&&MVEncounterRules.within(e.x,e.y,old.origin,old.radius))e.locate(c().encounter.origin[0],c().encounter.origin[1]);
+  }
+  mapLoaded.apply(this,arguments);
+ };
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===c().lab.mapId&&!$gamePlayer.isTransferring()){var kind=pending,p=kind==='battle'?c().lab:c().patrolLab;pending=null;$gamePlayer.locate(p.x,p.y);$gamePlayer.center(p.x,p.y);$gamePlayer.setDirection(p.direction);$gameTemp.clearDestination();ArenaBattle.prepare(c().lab.mapId);if(kind==='battle'){BattleManager.setup(c().troopId,false,false);$gameTroop.members().forEach(function(e){e._arenaSkeletonBattlePilot=true;});SceneManager.push(Scene_Battle);}}};
  var commands=Window_TitleCommand.prototype.makeCommandList,create=Scene_Title.prototype.createCommandWindow;

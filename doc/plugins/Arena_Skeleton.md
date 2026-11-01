@@ -1,4 +1,8 @@
-# Arena_Skeleton0.2.0
+# Arena_Skeleton0.3.0
+
+Passagem expandida sobre d800a8f: `encounter` preserva o piloto01/evento3 e `additionalEncounters` acrescenta seis IDs distintos. Fonte das posições e limites em [SKELETON_M02.md](../SKELETON_M02.md). Gerador publica as sete entradas no perfil da área; núcleo compartilhado de encontros intacto. `legacyPatrol` descreve somente a antiga posição representativa do piloto: onMapLoaded reposiciona uma instância viva salva naquele raio, mantendo ID, derrotas e recibos. Não revive derrotados nem concede recursos/prêmios. `startPatrolLab()` usa o mesmo hub/fixture em(69,21); nenhum acesso novo.
+
+## Histórico — versão0.2 / um exemplar
 
 Atualização sobre f198987: `startPatrolLab()` prepara a chegada RAM(80,39), sem iniciar batalha automaticamente. `startLab()` mantém batalha direta com0 EXP usando flag da instância `Game_Enemy`; inimigo de campanha continua com50 EXP provisórios. Ambos reutilizam preparo existente, sem alterar saves normais. O encontro único é configurado em `ArenaSkeleton.json` e gerado no evento3/área stonekeep de ArenaCampaign; patrulha, contato, lock, derrota e respawn pertencem a Arena_Encounters/MV_EncounterRules. Caminhada nativa3×4, diferente do atlas de batalha. Não há schema/namespace novo. Fontes, aprovação parcial e testes vigentes em [SKELETON_M02.md](../SKELETON_M02.md).
 

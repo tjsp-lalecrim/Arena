@@ -29,6 +29,6 @@
     {"symbol":"arenaStonekeepMaterials","category":"campaign","description":"Aposento, passagem e margem para observar os materiais aprovados.","saving":"Somente RAM · slots normais bloqueados"},
     {"symbol":"arenaStonekeepCask","category":"campaign","description":"Acesso direto à parede quase negra CASK.","saving":"Somente RAM · slots normais bloqueados"},
     {"symbol":"arenaStonekeepCasl","category":"campaign","description":"Acesso direto à parede clara irregular CASL.","saving":"Somente RAM · slots normais bloqueados"},
-    {"symbol":"arenaSkeletonPatrol","category":"campaign","description":"Esqueleto único na passagem: caminhada, contato e retorno após vitória.","saving":"Somente RAM · slots normais bloqueados"}
+    {"symbol":"arenaSkeletonPatrol","category":"campaign","description":"Sete esqueletos na passagem: posições do original, circulação e contatos independentes.","saving":"Somente RAM · slots normais bloqueados"}
   ]
 }

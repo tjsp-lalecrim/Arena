@@ -1,0 +1,56 @@
+{
+  "map": "39699021.MIF",
+  "mapSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "inf": "STKEEP1.INF",
+  "infSha256": "1b8842b438e37d14bc9f9abeea7ff28e629d5b279dca313daa3eee0d58bebd5c",
+  "freshOriginalRead": true,
+  "decodedLayersMatchCache": true,
+  "flatIndex": 57,
+  "itemAnnotation": 38,
+  "flat": "skeleton.dfa",
+  "rawMap1": "0x8039",
+  "groupBoundsDisplay": {
+    "x": [
+      27,
+      33
+    ],
+    "y": [
+      2,
+      5
+    ]
+  },
+  "originalPositions": [
+    [
+      61,
+      2
+    ],
+    [
+      62,
+      2
+    ],
+    [
+      60,
+      3
+    ],
+    [
+      56,
+      4
+    ],
+    [
+      62,
+      4
+    ],
+    [
+      56,
+      5
+    ],
+    [
+      61,
+      5
+    ]
+  ],
+  "projection": "displayX=89-originalX; MV x=3+(displayX-8)*3, y=3+originalY*3",
+  "wiki": "Local Fang Lair quest PDF2: half a dozen after breach; PDF5 plan",
+  "difference": "Wiki gives approximate six; original declares seven in this represented northern passage group. No new DOS playtest; patrol/collision/turn-based encounters are adaptations. Other rooms excluded.",
+  "decoderReference": "Existing local MapGeneration.cpp, MAP1 flatIndex=map1Voxel & 0x00FF; existing INF/decompression readers reused; no original media distributed."
+}

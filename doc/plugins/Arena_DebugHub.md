@@ -43,4 +43,4 @@ O pacote/Pages/tag m01 já publicados não foram modificados. O workflow remoto 
 
 `node tools/test-debug-package.cjs`: fixture temporária mínima versionada, sem copiar biblioteca de assets/saves; dois builds reproduzíveis por perfil, manifesto/hashes conferidos, fonte e namespace preservados. [Resultado](../evidencias/m02-debug-hub/package-profile.json). Não é um novo pacote de distribuição do jogo nem deploy.
 
-Avaliação de navegação pelo responsável pendente. Nenhuma nova inspeção no editor MV1.6.1 ou dispositivo físico declarada. Formato canônico e registros anteriores de js/plugins.js preservados; o plugin próprio é o único acréscimo, sem dependência externa. Não ampliar ferramentas antes da avaliação.
+Responsável confirmou que a navegação de **d800a8f funcionou**. Ambiente e outros casos não informados; não ampliar a cobertura do relato. Nenhuma nova inspeção no editor MV1.6.1 ou dispositivo físico declarada. Formato canônico e registros anteriores de js/plugins.js preservados; o plugin próprio é o único acréscimo, sem dependência externa. Esta confirmação não autoriza ampliar ferramentas.
