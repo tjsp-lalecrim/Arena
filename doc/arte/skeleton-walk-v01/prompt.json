@@ -1,0 +1,22 @@
+{
+  "version": "skeleton-walk-v01",
+  "tool": "image_gen built-in",
+  "prompt": "Create ONE transparent RPG Maker walking spritesheet for the SAME bare skeleton in the supplied approved battle identity reference. Reference role: identity, simple sword in anatomical RIGHT hand, weathered ivory/gray bones, dark fantasy painterly finish, proportions; NOT lateral battle camera. Exploration camera must be orthogonal TOP DOWN slightly overhead, seeing skull top/shoulder tops, compatible with top-down 2D maps, never isometric. Exactly 12 clearly separated full-body cutouts in 3 columns by 4 rows. Rows strictly: 1 walking SOUTH toward viewer, 2 walking WEST image left, 3 walking EAST image right, 4 walking NORTH away showing back of skull/ribs/spine. Columns strictly: left stride, neutral feet together, right stride. Every stride is a genuinely articulated different drawing with opposite legs and arms moving, NOT repeated poses or translated copies. Maintain bone proportions, body size, equipment and light from upper left throughout; no glowing eyes, armor, shield, horns, clothes or new accessories. Simple straight metal sword held low in same RIGHT hand in every view; right hand appears image-left in south view and image-right in north view. Stable head height and feet support line within equal cells, clear gaps and generous margins for sword. No floor, pedestal, shadows on a background, labels or borders. Transparent background with actual alpha. Faithful The Elder Scrolls Arena skeleton identity with approved dark fantasy finish. Target final display ~56 pixels tall, prioritize strong readable forms over microscopic detail. Preserve recognizable humanoid skeletal anatomy and slight hunched posture. Sheet portrait ratio 3:4, evenly spaced 3x4 grid.",
+  "references": [
+    {
+      "file": "tmp/skeleton-walk-review/approved-identity.png",
+      "derivedFrom": "art/masters/stonekeep-skeleton-v01/sheet-v01.png",
+      "sourceRect": [
+        48,
+        18,
+        184,
+        249
+      ],
+      "role": "approved battle identity/finish only; top-down poses newly interpreted"
+    }
+  ],
+  "output": "art/masters/stonekeep-skeleton-walk-v01/sheet-v01.png",
+  "approval": "pending owner evaluation; no batch expansion",
+  "interpretation": "four-direction overhead adaptation and walking choreography; source does not confirm individual top-down poses",
+  "masterOrder": "south,east,west,north; exporter explicitly reorders to MV without mirror"
+}

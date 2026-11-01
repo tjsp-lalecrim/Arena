@@ -244,8 +244,8 @@
           "entries": []
         }
       },
-      "difficulty": "technical skeleton pilot; campaign table pending",
-      "source": "Player Guide PDF88/printed80: resistant to edged weapons; wiki Monsters18: half damage daggers/swords/axes/bows, HP25–45, loot unknown. Numeric MV parameters provisional. EXP/drops0 in technical pilot only; campaign reward adaptation pending."
+      "difficulty": "campaign exemplar; item/gold loot unknown, deliberately empty",
+      "source": "Player Guide PDF88/printed80: resistance to edged weapons; wiki Monsters18: HP25-45, EXP=HP*15+250 (625-925), loot unknown. MV EXP50 is a provisional campaign adaptation to existing rat15/goblin25/lizard50 scale, not a direct conversion or balance approval. No item/gold reward inferred. Direct battle RAM fixture alone suppresses EXP."
     }
   },
   "technical": {

@@ -1,4 +1,8 @@
-# Arena_Skeleton0.1.0
+# Arena_Skeleton0.2.0
+
+Atualização sobre f198987: `startPatrolLab()` prepara a chegada RAM(80,39), sem iniciar batalha automaticamente. `startLab()` mantém batalha direta com0 EXP usando flag da instância `Game_Enemy`; inimigo de campanha continua com50 EXP provisórios. Ambos reutilizam preparo existente, sem alterar saves normais. O encontro único é configurado em `ArenaSkeleton.json` e gerado no evento3/área stonekeep de ArenaCampaign; patrulha, contato, lock, derrota e respawn pertencem a Arena_Encounters/MV_EncounterRules. Caminhada nativa3×4, diferente do atlas de batalha. Não há schema/namespace novo. Fontes, aprovação parcial e testes vigentes em [SKELETON_M02.md](../SKELETON_M02.md).
+
+## Histórico — API0.1 e piloto de batalha
 
 Consumidor delimitado de Battle/BattleMotion, Resources, Abilities, Loot e laboratório de Continuation/Stonekeep, carregado depois deles. Sem plugin externo. Configuração ArenaSkeleton.json; [fontes, valores provisórios e limites](../SKELETON_M02.md) são a fonte principal desta unidade.
 

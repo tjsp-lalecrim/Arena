@@ -515,6 +515,11 @@
       "sha256": "6db69262c91948bdb90c9ac3264ffe704badbd65c444185cec254f2af6344526"
     }
   ],
-  "approval": "pending",
+  "approval": {
+    "status": "approved by owner",
+    "version": "f198987",
+    "scope": "battle visual and functional pilot only; no balance, drops or exploration approval",
+    "reported": "2026-11-01"
+  },
   "coverage": "battle only; no walking/patrol/contact"
 }

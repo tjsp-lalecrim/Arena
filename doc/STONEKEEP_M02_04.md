@@ -1,5 +1,7 @@
 # M02-04 — amostra integrada de Stonekeep
 
+**Estado atual dos encontros:** um esqueleto de passagem integrado, conforme [registro vigente](SKELETON_M02.md). As referências a guardiões ausentes na descrição inicial abaixo retratam a primeira amostra; o grupo completo e a ilha continuam pendentes. Layout e materiais aprovados preservados.
+
 **Levantamento visual posterior01/11/2026:** [referências e primeiro conjunto de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md): seis prints inspecionados, INFO→STKEEP1.INF e associações pontuais de materiais/portas/pergaminho. Proposta limitada a aposento/passagem/margem, sem geração ou mudança do layout nesta consulta; origem das incertezas registrada. Próxima tarefa visual deverá começar pela amostra integrada antes de expandir. Não acrescenta aprovação da amostra funcional.
 
 ## Correção confirmada — cache HTTP de Items.json
@@ -85,6 +87,6 @@ Menu **Guardar teste em RAM / Carregar teste da RAM** funciona em Rihad/Stonekee
 
 **Pendentes:** avaliação do responsável da amostra/topologia/adaptação; sprite/ícone final do pergaminho, decoração específica e guardiões; novo playtest/autoria no MV não executado; nenhum teste físico mobile novo. A expansão M02-05 e a entrega na corte aguardam avaliação e recorte próprio. Não declarar Stonekeep ou M02 concluídos.
 
-## Próximo participante — unidade de batalha, não encontro concluído
+## Esqueleto — um encontro integrado, grupo pendente
 
-[Esqueleto V01](SKELETON_M02.md), sobrecd63553: um exemplar animado e batalha nativa em laboratório RAM, resistência específica configurável, sem nova fórmula. Exploração, patrulha/contato, estado persistente do encontro e recompensas de campanha ainda pendentes; não adicionou evento/inimigo lateral ao mapa nem bloqueou a fonte. Aguarda avaliação antes de ampliar.
+[Esqueleto V01](SKELETON_M02.md): combate e visual de f198987 confirmados/aprovados pelo responsável, sem aprovação de balanceamento ou drops. Continuação: caminhada superior3×4, encontro único em(75,39), patrulha/contato e derrota persistente pelos núcleos existentes; EXP50 provisórios e loot vazio por ausência de informação confirmada. Acesso direto **Stonekeep · patrulha (RAM)**. Nova exploração aguarda avaliação; grupo completo e ghouls continuam ausentes. Não bloqueia artificialmente a fonte nem altera layout/materiais/água. Evidências e configuração no registro do exemplar.

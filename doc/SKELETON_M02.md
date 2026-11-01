@@ -1,4 +1,35 @@
-# Stonekeep — esqueleto, piloto de batalha V01
+# Stonekeep — exemplar de esqueleto
+
+## Exploração V01 — 01/11/2026, sobre f198987
+
+O responsável confirmou o funcionamento do combate e **aprovou explicitamente o visual de f198987**. Cobertura: piloto de batalha; ambiente não discriminado neste relato. Não aprova balanceamento, recompensas nem a caminhada nova. Mestre e atlas de batalha preservados byte a byte.
+
+Um encontro comum `stonekeep.passage.skeleton.01`, evento3 de Map012, origem **(75,39)**, passagem entre aposentos e água. A espécie e relação espacial vêm da wiki da quest (pp.2/5); o tile exato e patrulha são adaptação representativa, não posição original comprovada. Raio Manhattan2, intervalo90 atualizações ativas, velocidade nativa3, somente piso/região4. Não nada nem atravessa paredes; rota de três tiles continua contornável. Fonte do pergaminho e etapas não exigem derrotá-lo.
+
+Configuração da área em ArenaCampaign, usando Arena_Encounters sem clonar patrulha/contato. Vitória marca derrota persistente e apaga o evento; derrota usa game over; fuga indisponível. Descanso e saída/reentrada durante MQ02 não reativam. Respawn comum permanece condicionado à conclusão aplicável e saída real do cenário; nenhuma quest concluída artificialmente no fluxo normal. Saves anteriores no mapa recebem o evento faltante pelo sync já existente.
+
+**Recompensas da campanha:** 50 EXP provisórios, na escala local rato15/goblin25/homem-lagarto50. A fonte original cita625–925 EXP (Vida×15+250), sem equivalência direta à curva MV; não foi copiada para evitar saltos desproporcionais na faixa inicial. Não é balanceamento aprovado. Loot de itens/ouro deliberadamente vazio porque a fonte registra desconhecido(?); não inventados drops, habilidades ou variantes raras. O antigo acesso de batalha direta mantém0 EXP por flag transitória da instância, sem mudar o banco compartilhado. O acesso de patrulha usa as recompensas da campanha para observação.
+
+### Arte e reconstrução
+
+- Mestre novo: `art/masters/stonekeep-skeleton-walk-v01/sheet-v01.png` (1086×1448),12 desenhos IA; [prompt/referência efetivamente fornecida](arte/skeleton-walk-v01/prompt.json). Referência recortada do mestre de batalha aprovado, não arte nova do original.
+- Exportação nativa `$Arena_skeleton_walk_v01.png`,192×256, células64×64, linha de apoio62, altura máxima56px. Uma escala comum; coluna central neutra, laterais passos articulados. Ordem MV sul/oeste/leste/norte. O mestre veio sul/leste/oeste/norte: exportador troca as linhas, **sem espelhamento**, preservando a mão da espada. Crânio serve de eixo de composição; nenhuma pose deformada para uniformizar silhueta.
+- [Recortes, hashes e âncoras](arte/skeleton-walk-v01/exports.json). Exportação `python tools/export-stonekeep-skeleton-walk.py`; montagem de evento/perfil/recompensas `node tools/build-stonekeep-skeleton.cjs`, chamado pelo gerador Stonekeep e pai Rihad. Não regenerar batalha para reconstruir caminhada.
+- Inspeção a1:1: silhueta, espada, margens/alpha e apoio legíveis ao lado da Bretã. Perspectiva superior adaptada, com vistas laterais simplificadas; coreografia e detalhes ósseos são interpretação artística. **Nova caminhada aguarda avaliação do responsável**, sem expansão do grupo.
+
+### Avaliação direta e limites
+
+`http://127.0.0.1:8774/` → Ctrl+F5 sem apagar dados → título **Stonekeep · patrulha (RAM)**. Bretã feminina nível2/adaga, recursos completos e preparo técnico existente; início(80,39), olhando para o exemplar à esquerda. Observar os passos e aproximar-se para contato. Testar Atacar/técnica/magia; vitória remove o encontro e acrescenta50 EXP. Menu → **Guardar teste em RAM / Carregar teste da RAM** permite checkpoint antes/depois. Slots normais bloqueados neste acesso; memória dura somente na sessão. Título e nova entrada reiniciam o cenário, sem drops/percurso/saves pessoais. O acesso **Stonekeep · esqueleto (RAM)** continua disponível para batalha direta, agora com retorno seguro(80,39), separado do inimigo de mapa.
+
+Servidor8774 existente preservado: resposta HTTP de ArenaSkeleton.json conferida contra a configuração desta entrega, com Cache-Control:no-store. Nenhum serviço alheio encerrado/substituído. A tentativa de iniciar outro serviço retornou porta ocupada e terminou; não há segundo servidor desta revisão para encerrar.
+
+[Resultado focal](evidencias/m02-skeleton-walk-v01/resultado.json), [mapa](evidencias/m02-skeleton-walk-v01/patrulha.png), [contato](evidencias/m02-skeleton-walk-v01/contato.png), [vídeo normal](evidencias/m02-skeleton-walk-v01/patrulha-contato-normal.webm), [atlas1:1](evidencias/m02-skeleton-walk-v01/atlas-escala-real.png). Teste isolado Chrome, origem temporária e slot sintético16 somente; nenhum save pessoal. Verificação nativa de contato/turnos/vitória, custos, EXP/recibo únicos, derrota, RAM e Save/F5/Load, respawn condicionado e reconstrução. Inspeção automática de dimensões não substitui a avaliação da caminhada. Nenhum novo teste de editor ou smartphone atribuído ao responsável.
+
+Sete grupos focais passaram em Chrome156, canvas816×624; os três padrões de cada uma das quatro direções foram observados em movimento nativo. Vídeo19,7s,30fps, sem acelerar o motor; [decodificação/tempos](evidencias/m02-skeleton-walk-v01/video-qa.json) e [quadros de revisão](evidencias/m02-skeleton-walk-v01/video-quadros.png). Inspeção do decoder em4x não altera o arquivo entregue. RNG controlado apenas nas batalhas automatizadas após a gravação, para verificar vitória/derrota sem depender de erro aleatório. `node tools/test-stonekeep-skeleton-walk.cjs` executa o delta; `--data-only` confere preservação dos mapas/banco/arte anteriores, lista canônica de plugins e reconstrução pelo gerador pai. `validate-data.cjs` passou. Não repetida a campanha inteira.
+
+M02-04 continua parcial: um exemplar, sem grupo completo, ghouls ou entrega do pergaminho na corte. Próximo recorte só após avaliação: cobertura dos encontros exigidos pela passagem/ilha, delimitando um participante por vez. Não promover acabamento opcional a bloqueio.
+
+## Histórico — piloto de batalha V01 (f198987)
 
 Base **cd63553**, feature `feature/m02-stonekeep-esqueleto`, derivada da feature de Stonekeep para preservar suas dependências ainda não integradas. **Unidade entregue: batalha somente**, divisão autorizada para manter um exemplar pequeno. Não há sprite de exploração, patrulha, contato nem estado persistente de encontro. Nenhum perfil lateral foi apresentado como caminhada. M02-04 não está concluído e a fonte do pergaminho não foi bloqueada.
 

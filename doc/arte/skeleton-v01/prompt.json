@@ -13,6 +13,11 @@
   ],
   "prompt": "Use case: stylized-concept. ONE animation sprite atlas for The Elder Scrolls Arena adaptation, enemy Skeleton, dark fantasy hand-painted finish. Image1 original Arena skeleton sprite is IDENTITY reference: bare human skeleton, narrow ribcage, long thin bony limbs, subtly hunched posture, empty eye sockets, single simple straight worn sword in its right hand, NO armor, shield, helmet, glowing eyes or invented ornaments. Image2 approved Arena project goblin combat atlas is FORMAT/PAINTED STYLE reference only, do not copy goblin anatomy, colors or clothing. True lateral battle view, ALL skeletons face RIGHT in this source atlas, matching the reference and the project's native atlas convention; game mirrors enemy at runtime. Exactly 6 columns by 4 rows,24 clearly separated complete figure cutouts on TRANSPARENT background, evenly spaced cells, wide safety margins for sword and extended limbs. Same skeleton, sword proportions, bone color and body scale throughout. Feet share a stable baseline in every cell; use same body center, no camera change, no scene, shadows detached from figure, text, grid lines or labels. Old cold gray/ivory bones with restrained weathering, clear silhouette at88px actual character height, not pixel art. Row1 six DIFFERENT idle animation drawings, subtle sway at hips, ribcage and sword hand, return to initial guard at end. Row2 six sequential sword attack drawings: 1guard,2windup arm drawn back,3high windup,4clear forward slash/thrust extending sword rightward (impact),5followthrough,6return to SAME guard as row1. Body, hand and sword move together; no missing sword or unattached blade. Row3 six hurt/recovery drawings:1guard,2small backwards recoil,3peak recoil with bent knees,4recovery halfway,5straightening,6same guard. Row4 six defeat drawings:1knees buckle,2kneeling,3lower torso collapses,4ribs and skull descending,5collapsed bones,6stable pile of same bones and sword lying on the baseline. Real articulated body changes, no duplicated static frames passed as animation. Preserve bone/sword identity through fall; no gore, flame, particles or ghost. All24 figures must fit completely in their separate cells without overlap.",
   "master": "art/masters/stonekeep-skeleton-v01/sheet-v01.png",
-  "approval": "pending",
+  "approval": {
+    "status": "approved by owner",
+    "version": "f198987",
+    "scope": "battle visual and functional pilot only; no balance, drops or exploration approval",
+    "reported": "2026-11-01"
+  },
   "scope": "battle only; no exploration generation"
 }

@@ -23,6 +23,6 @@ for name in motions:assert len({f['sha256'] for f in metrics if f['motion']==nam
 dest=R/'img/enemies/Arena_Combat_skeleton_v01.png';sheet.save(dest)
 profile={'file':dest.stem,'cell':list(cell),'ground':ground,'motions':motions,'version':'stonekeep-skeleton-v01','actionMotion':'strike'}
 (R/'doc/arte/skeleton-v01/profile.json').write_text(json.dumps(profile,indent=2)+'\n',encoding='utf8')
-(R/'doc/arte/skeleton-v01/exports.json').write_text(json.dumps({'source':src.relative_to(R).as_posix(),'sourceSha256':hashlib.sha256(src.read_bytes()).hexdigest(),'output':dest.relative_to(R).as_posix(),'outputSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'scale':scale,'cell':list(cell),'ground':ground,'frames':metrics,'approval':'pending','coverage':'battle only; no walking/patrol/contact'},indent=2)+'\n',encoding='utf8')
+(R/'doc/arte/skeleton-v01/exports.json').write_text(json.dumps({'source':src.relative_to(R).as_posix(),'sourceSha256':hashlib.sha256(src.read_bytes()).hexdigest(),'output':dest.relative_to(R).as_posix(),'outputSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'scale':scale,'cell':list(cell),'ground':ground,'frames':metrics,'approval':json.loads((R/'doc/arte/skeleton-v01/prompt.json').read_text(encoding='utf8'))['approval'],'coverage':'battle only; no walking/patrol/contact'},indent=2)+'\n',encoding='utf8')
 bg=Image.new('RGBA',sheet.size,'#23303a');bg.alpha_composite(sheet);bg.convert('RGB').save(R/'doc/evidencias/m02-skeleton-v01/atlas-escala-real.png')
 print('24 authored frames packed; all distinct motions, no exploration atlas.')
