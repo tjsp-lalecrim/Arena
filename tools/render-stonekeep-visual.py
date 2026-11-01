@@ -16,7 +16,7 @@ def tile(t):
         for i,(x,y) in enumerate([(2,4),(1,4),(2,3),(1,3)]):
             a.alpha_composite(images[0].crop((x*24,y*24,x*24+24,y*24+24)),(i%2*24,i//2*24))
         return a
-    assert 0<=t<512
+    assert 0<=t<768
     x=((t//128%2)*8+t%8)*48;y=(t%256//8)*48
     return images[5+t//256].crop((x,y,x+48,y+48))
 x0,y0,x1,y1=c['bounds'];w=(x1-x0+1)*48;h=(y1-y0+1)*48

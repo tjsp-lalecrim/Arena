@@ -69,6 +69,29 @@ Organização recomendada, **sem mover arquivos ou criar infraestrutura agora**:
 
 ## Reuso, substituição e primeiro conjunto
 
+### Pilotos CASK/CASL — vigente apósbc3e4d7
+
+**Relato do responsável:** testou a aplicação **bc3e4d7 pelo editor RPG Maker MV** e autorizou prosseguir. Não detalhou casos, autoria/edição/salvamento de mapas ou dispositivo adicional; não presumir essas verificações nem aprovação de elementos ausentes. As duas novas amostras abaixo **aguardam aprovação visual**, sem autorizar substituir as demais ocorrências.
+
+| Amostra / associação do levantamento | Aplicação delimitada / avaliação direta |
+| --- | --- |
+| CASK quase negra — referências CASK.SET#0/#1, índices55/56 do STKEEP1 | **X83–91/Y89–94**, somente células K:27tiles/3células-fonte, vista35–37/y29–30. Células selecionadas usam CASK#1. Exclui painel CASK#2 em36,28. Canto com piso de lajes e transição ao material legado; início **(84,93)**, voltado à direita |
+| CASL clara irregular — CASL.SET#0/#1, índices58/59 | **X122–130/Y59–64**, somente células L:36tiles/4células-fonte, vista48–50/y19–20; inclui a referência49,19. Trecho com irregularidade/canto e transição ao legado; início **(129,66)**, voltado ao norte |
+
+**Arte:** dois mestres selecionados1254×1254 em `art/masters/stonekeep-kl-v01/cask.png` e `casl.png`. CASK conserva alvenaria regular escura azul/cinza; CASL usa blocos claros de dimensões e fiadas desiguais, distinta de CASA regular e CASF castanha. Original e mestre claro aprovado fornecidos com papéis separados; nenhuma pesquisa geral. [Prompts completos/referências efetivas](STONEKEEP_KL_V01_PROMPTS.json). Primeira CASL ficou regular demais: estudo rejeitado preservado em `art/studies/stonekeep-kl-v01/casl-regular-rejected.png`; uma edição IA corrigiu só essa candidata. Não regenerados os cinco materiais aprovados.
+
+**Exportação:** [transformações/hashes](STONEKEEP_KL_V01_EXPORTS.json). Recorte quadrado768×768 reduzido uniformemente a face96×96 (quatro tiles48px), sem espremer proporções; cap96×48 ocupa uma fileira, face duas. Cap CASK com brilho relativo0,68 para evitar massa preta sem leitura; CASL0,43 como no conjunto. Correção técnica de borda horizontal de1pixel, sem pintura substituta por código. Nova folha nativa D `img/tilesets/Arena_Stonekeep_KL_V01_D.png`,384×768,12células usadas; vazio periférico transparente. C/CASA/CASF/pisos/margem, seus mestres e água permanecem byte a byte iguais.
+
+**Interpretações e limites:** acabamento mineral, desgaste, luz superior esquerda, escala das fiadas e plano de cap são adaptações artísticas/técnicas; não afirmar material mineral específico. Um mestre por família não recria cada variante SET. A borda de aplicação contra o legado é provisória e intencional; repetição/contraste final dependem da avaliação. CASK permanece legível por blocos/juntas, sem confundi-la com vazio preto. Demais K/L continuam legadas; painéis, carpetes, portas, objetos, pergaminho e participantes não produzidos.
+
+**Reconstrução:** `python tools/export-stonekeep-kl.py`; `node tools/build-stonekeep-sample.cjs` (também pelo pai Rihad). [Configuração exclusiva dos dois patches](../mapas/STONEKEEP_KL_PILOTO.json), aplicada pelo módulo pequeno stonekeep-kl-sample.cjs após os materiais aprovados; não é um sistema geral de temas. API de campanha/saves/namespace intactos. O plugin acrescenta apenas os dois acessos RAM e compartilha a transferência técnica assíncrona existente.
+
+**Verificação focal:** [resultado Chrome](../evidencias/m02-04-walls-v01/resultado.json), canvas816×624/tiles48px; [CASK antes/depois](../evidencias/m02-04-walls-v01/comparacao-cask.png), [CASL antes/depois](../evidencias/m02-04-walls-v01/comparacao-casl.png). Inspeção pelo Codex com personagem: proporção, leitura das faces/cap, canto, encaixe com pisos e transição de amostra.45bordas nativas de parede verificadas; ambos acessos, movimento local e checkpoint RAM sem alterar recursos/quest/inventário ou escrever slots. Comparação integral confirma apenas63tiles da camada0 alterados e12flags bloqueadas/folha D no tileset5; eventos, fonte e demais camadas/posições, mapas008–011, tilesets0–4, Items e água preservados. Gerador pai estável em8outputs; PNG D idempotente e12células referenciadas não vazias. Sem erros JS/HTTP faltante. **Sem novo teste no editor ou mobile**, sem repetição de campanha/coleta/batalhas.
+
+Comparativo com texturas originais em **`tmp/stonekeep-kl-v01/comparacao-fontes.png`**, somente consulta local ignorada; não versionar/distribuir imagens originais. `tools/render-stonekeep-kl-review.py` recompõe pranchas, mantendo esse limite.
+
+**Acesso curto:** `http://127.0.0.1:8774/` → Ctrl+F5, sem limpar dados → título **Stonekeep · CASK (RAM)** ou **Stonekeep · CASL (RAM)**. Saves pessoais não são carregados; checkpoint pelo menu Guardar/Carregar teste em RAM, perdido ao fechar/recarregar. Para trocar de ponto, voltar ao título e selecionar a outra opção; não exige percurso. Conferir também os limites contra o material legado. Aguardar avaliação visual antes de ampliar qualquer família.
+
 ### Aplicação ampliada R02 — vigente após73ae86e
 
 **Aprovação do responsável:** testou a amostra73ae86e e considerou os materiais coerentes com o original. A direção visual dos **cinco mestres e sua exportação V01** está aprovada; hashes em STONEKEEP_VISUAL_V01_EXPORTS.json. Não foram informados ambiente/dispositivo ou casos adicionais. Não estender a aprovação a guardiões, pergaminho, portas, carpetes, decoração ou famílias ainda ausentes. A aplicação ampliada abaixo continua para avaliação; não houve nova geração nem alteração dos pixels aprovados.

@@ -7,7 +7,7 @@ root=Path(__file__).resolve().parents[1]
 read=lambda p:json.loads((root/p).read_text(encoding='utf8'))
 m=read('data/Map012.json');c=read('data/ArenaStonekeep.json');l=read('doc/mapas/STONEKEEP_AMOSTRA_M02.json')
 names=read('data/Tilesets.json')[m['tilesetId']]['tilesetNames']
-sheets={i:Image.open(root/('img/tilesets/'+names[i]+'.png')).convert('RGBA') for i in [5,6] if names[i]}
+sheets={i:Image.open(root/('img/tilesets/'+names[i]+'.png')).convert('RGBA') for i in [5,6,7] if names[i]}
 water=Image.open(root/('img/tilesets/'+names[0]+'.png')).convert('RGBA')
 scale=6;w,h=m['width'],m['height'];out=Image.new('RGBA',(w*scale,h*scale+46),'#10171a');cache={}
 for y in range(h):

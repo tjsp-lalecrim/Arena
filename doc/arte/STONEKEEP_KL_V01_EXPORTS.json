@@ -1,0 +1,66 @@
+{
+  "version": "stonekeep-kl-v01",
+  "approval": "pendente do responsável",
+  "tool": "image_gen built-in; packing/crop/downscale Pillow",
+  "masters": [
+    {
+      "master": "art/masters/stonekeep-kl-v01/cask.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "762ed5809b375dd69126785d1d9dac056590054858eac4328a7da3874ff9b29d",
+      "crop": [
+        0,
+        0,
+        768,
+        768
+      ],
+      "face": [
+        96,
+        96
+      ],
+      "cap": [
+        96,
+        48
+      ],
+      "capBrightness": 0.68
+    },
+    {
+      "master": "art/masters/stonekeep-kl-v01/casl.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "18c17f6c77c047d75f9295a7c479885a326711f23dc4e57b72869f1738d334c8",
+      "crop": [
+        0,
+        0,
+        768,
+        768
+      ],
+      "face": [
+        96,
+        96
+      ],
+      "cap": [
+        96,
+        48
+      ],
+      "capBrightness": 0.43
+    }
+  ],
+  "output": {
+    "file": "img/tilesets/Arena_Stonekeep_KL_V01_D.png",
+    "size": [
+      384,
+      768
+    ],
+    "sha256": "6c6535107750a0ba7b6e6303b8695be784efce47b9b5f716b5925dc25ec23e49"
+  },
+  "interpretation": [
+    "Plano do cap é adaptação técnica; CASK .68 preserva leitura acima do preto/vazio, CASL .43 mantém o contraste do conjunto aprovado.",
+    "Desgaste e tom mineral são interpretação; arquivos de consulta só serviram de referência, sem pixels originais no runtime.",
+    "Um único mestre por família; não reproduz todas as variantes SET nem amplia a aplicação."
+  ]
+}

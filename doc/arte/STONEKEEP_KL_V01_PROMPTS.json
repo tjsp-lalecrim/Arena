@@ -1,0 +1,36 @@
+{
+  "version": "stonekeep-kl-v01",
+  "tool": "image_gen built-in",
+  "approval": "pendente do responsável",
+  "generations": [
+    {
+      "key": "cask",
+      "prompt": "Use case: stylized-concept. Generate ONE seamless opaque square wall MATERIAL texture master, for Stonekeep in The Elder Scrolls Arena adapted to RPG Maker MV. Reference images1/2: confirmed original CASK.SET frames0/1, the identity and palette target. Image3: already approved CASA light-wall master, for painted finish, scale of rectangular blocks, narrow recessed mortar and diffuse upper-left lighting ONLY, do NOT copy its pale palette. CASK must remain recognizably different: almost-black cold charcoal masonry, faint navy/slate-blue and muted violet in the block faces, thin cool gray mortar, subtle slate worn edges. Maintain sufficient low-key midtone detail to distinguish masonry from absolute-black void when reduced to 48px tiles; do NOT make a flat black silhouette. Small even rectangular blocks in regular running-bond horizontal courses, around nine courses across the full square, like original CASK, no huge random rocks. Refined restrained dark fantasy painted finish matching the approved set, not pixel art or photographic concrete. FLAT ORTHOGRAPHIC material elevation, perfectly parallel horizontal/vertical axes, intended for two-cell-high96px frontal wall face in orthogonal top-down2D; NO perspective, vanishing point, isometric edges or rendered room. Repeat seamlessly on all four edges. Even diffuse light, no vignette, spotlight, image-wide gradient, framing, labels or text. Fill whole opaque canvas. No ornament or emblems, doors, carpet, floor, water, props or characters.",
+      "refs": [
+        "tmp/stonekeep-review/texture-55-CASK.SET.png",
+        "tmp/stonekeep-review/texture-56-CASK.SET.png",
+        "art/masters/stonekeep-v01/light-wall.png"
+      ]
+    },
+    {
+      "key": "casl",
+      "prompt": "Use case: stylized-concept. Generate ONE seamless opaque square wall MATERIAL texture master for Stonekeep in The Elder Scrolls Arena adapted to RPG Maker MV. Reference images1/2 are confirmed original CASL.SET frames0/1: identity, palette and irregular geometry target. Image3 is the approved CASA light-wall master: use ONLY its restrained dark fantasy painted finish and diffuse upper-left lighting, NOT its regular evenly sized masonry. CASL must be distinct from CASA: irregular pale silvery-gray stone blocks with uneven widths, broken/chipped angular edges and unequal course heights, deep charcoal mortar and dark recesses, controlled pale worn facets. Preserve recognizable bright irregular bonded blocks from original CASL; do not use rounded cobblestones or warm tan rubble, and do not copy the regular light brick pattern of CASA. Keep broadly horizontal running courses, around nine across the full square; variance in individual blocks, never slanted perspective lines. Detail readable at48px. Flat ORTHOGRAPHIC elevation for two-cell-high96px wall faces in a TOP-DOWN ORTHOGONAL dungeon, no perspective, isometric bevelled room, diagonal grid, protruding columns or scenery. Seamlessly repeating full opaque material with uniform diffuse illumination, no border, vignette, spotlight, large gradient, symbols, writing, heraldry, doors, floors, water, carpet, furniture or characters. Fine painterly weathering, not pixel art; deep joints but not dirty black dominance.",
+      "refs": [
+        "tmp/stonekeep-review/texture-58-CASL.SET.png",
+        "tmp/stonekeep-review/texture-59-CASL.SET.png",
+        "art/masters/stonekeep-v01/light-wall.png"
+      ]
+    }
+  ],
+  "edit": {
+    "target": "art/studies/stonekeep-kl-v01/casl-regular-rejected.png",
+    "reason": "CASL regular demais, semelhante a CASA; manter estudo rejeitado fora do runtime.",
+    "references": [
+      "art/studies/stonekeep-kl-v01/casl-regular-rejected.png",
+      "tmp/stonekeep-review/texture-58-CASL.SET.png",
+      "tmp/stonekeep-review/texture-59-CASL.SET.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Edit image1, an unapproved CASL texture candidate. Preserve the cold pale/silvery gray palette, dark mortar and dark fantasy painted finish, flat orthographic elevation and opaque square canvas. Correct ONLY masonry geometry to follow the original CASL identity in images2/3. The current image1 has uniform straight courses and regular rectangular bricks, too similar to CASA. Replace this with noticeably IRREGULAR angular cut stone blocks: alternating narrow and very wide blocks, some taller rectangular stones spanning two small courses, uneven stepped course boundaries and occasional trapezoidal chipped edges; substantial dark joints and recessed gaps, white worn angular facets like the original. A heterogeneous bonded wall, NOT uniform bricks with random texture, NOT round boulders or random loose rubble. Broad direction remains horizontal, no global diagonal or converging lines, no isometric/depth camera. No dramatic directional shadows: diffuse upper-left light only, no vignette. Target3–4 irregular courses per96px wall face; artwork fills the whole square and repeats seamlessly on all four boundaries. No protruding corner scene, floor, objects, arch, door, emblems, writing, people or border. Keep general rendering style/contrast matching the existing project; make the silhouette of the individual stone arrangement visibly distinct from a regular brick grid.",
+    "selected": "art/masters/stonekeep-kl-v01/casl.png"
+  }
+}

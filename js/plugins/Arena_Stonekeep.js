@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.1 Stonekeep: viagem, fonte e amostra visual delimitada.
+ * @plugindesc v0.1.2 Stonekeep: viagem, fonte e amostras visuais delimitadas.
  * @author Codex
  * @help Após Arena_Court/Arena_Rihad/Arena_Dungeon/Arena_Persistence.
  * Dados ArenaStonekeep.json; fonte no registro ArenaCampaign. Sem plugins externos.
@@ -8,7 +8,7 @@
  */
 var ArenaStonekeep;
 (function(){
- 'use strict';DataManager._databaseFiles.push({name:'$arenaStonekeep',src:/^https?:$/.test(window.location.protocol)?'ArenaStonekeep.json?arena-data=visual-v01':'ArenaStonekeep.json'});
+ 'use strict';DataManager._databaseFiles.push({name:'$arenaStonekeep',src:/^https?:$/.test(window.location.protocol)?'ArenaStonekeep.json?arena-data=walls-v01':'ArenaStonekeep.json'});
  // Content revision, not a save namespace/build. Unversioned M01 Items.json can
  // remain fresh in Chrome's HTTP cache after the server publishes item7.
  // Keep native file URLs unchanged for MV editor/playtest.
@@ -17,7 +17,7 @@ var ArenaStonekeep;
   if(!itemsFile||itemsFile.src!=='Items.json')throw Error('Stonekeep: configuração de carregamento de Items.json inesperada.');
   itemsFile.src='Items.json?arena-data=stonekeep-parchment-v1';
  }
- var materialsPending=false;
+ var materialsPending=null;
  function c(){return $arenaStonekeep;}
  function here(){return $gameMap&&$gameMap.mapId()===c().mapId;}
  function valid(i,mapId,eventId){var e=$gameMap.event(eventId);return ArenaNarrative.isCampaign()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&!$gameMessage.isBusy()&&$gameMap.mapId()===mapId&&i instanceof Game_Interpreter&&i._mapId===mapId&&i.eventId()===eventId&&e&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;}
@@ -44,7 +44,8 @@ var ArenaStonekeep;
    return message(i,'Você encontrou o pergaminho que a corte de Rihad pode usar para descobrir a localização de Fang Lair. Volte à corte. A entrega pertence ao próximo recorte.');
   },
   preview:function(){if(!ArenaCourt.preview())return false;var q=ArenaQuests.snapshot('MQ02');ArenaPersistence.setQuest('MQ02',40,Object.assign({},q.objectives,{parchmentRequest:true}),false);return true;},
-  previewMaterials:function(){if(!ArenaStonekeep.preview())return false;materialsPending=true;return true;}
+  previewMaterials:function(){if(!ArenaStonekeep.preview())return false;materialsPending=c().visualSample.entry;return true;},
+  previewWall:function(id){var p=(c().wallSamples||[]).filter(function(p){return p.id===id;})[0];if(!p||!ArenaStonekeep.preview())return false;materialsPending=p.entry;return true;}
  };
  function validateBindings(){
   var cfg=c(),registry=ArenaCampaignConfig;
@@ -73,14 +74,14 @@ var ArenaStonekeep;
  var terminate=Window_Message.prototype.terminateMessage;
  Window_Message.prototype.terminateMessage=function(){terminate.apply(this,arguments);if(here()||$gameMap.mapId()===c().return.mapId){$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();}};
  var title=Window_TitleCommand.prototype.makeCommandList,create=Scene_Title.prototype.createCommandWindow;
- Window_TitleCommand.prototype.makeCommandList=function(){title.apply(this,arguments);this.addCommand('Stonekeep · passagem (RAM)','arenaStonekeep');this.addCommand('Stonekeep · materiais (RAM)','arenaStonekeepMaterials');};
- Scene_Title.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeep',ArenaStonekeep.preview);this._commandWindow.setHandler('arenaStonekeepMaterials',ArenaStonekeep.previewMaterials);};
+ Window_TitleCommand.prototype.makeCommandList=function(){title.apply(this,arguments);this.addCommand('Stonekeep · passagem (RAM)','arenaStonekeep');this.addCommand('Stonekeep · materiais (RAM)','arenaStonekeepMaterials');this.addCommand('Stonekeep · CASK (RAM)','arenaStonekeepCask');this.addCommand('Stonekeep · CASL (RAM)','arenaStonekeepCasl');};
+ Scene_Title.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeep',ArenaStonekeep.preview);this._commandWindow.setHandler('arenaStonekeepMaterials',ArenaStonekeep.previewMaterials);this._commandWindow.setHandler('arenaStonekeepCask',function(){ArenaStonekeep.previewWall('cask');});this._commandWindow.setHandler('arenaStonekeepCasl',function(){ArenaStonekeep.previewWall('casl');});};
  var menu=Window_MenuCommand.prototype.addOriginalCommands;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(here()&&ArenaContinuation.labActive()){this.addCommand('Guardar teste em RAM','arenaRihadStore');this.addCommand('Carregar teste da RAM','arenaRihadLoad');}};
  // The existing lab validates/loads Rihad asynchronously. Wait for that arrival
  // before requesting the optional visual sample; never replace its pending map.
  var start=Scene_Map.prototype.start;
- Scene_Map.prototype.start=function(){start.apply(this,arguments);if(materialsPending&&ArenaContinuation.labActive()&&$gameMap.mapId()===c().return.mapId){materialsPending=false;transfer(c().visualSample.entry);}};
+ Scene_Map.prototype.start=function(){start.apply(this,arguments);if(materialsPending&&ArenaContinuation.labActive()&&$gameMap.mapId()===c().return.mapId){var d=materialsPending;materialsPending=null;transfer(d);}};
  var display=Scene_Map.prototype.createDisplayObjects,update=Scene_Map.prototype.update;
  Scene_Map.prototype.createDisplayObjects=function(){
   // A saved Game_Map keeps its old tilesetId even when Map012 now uses C.

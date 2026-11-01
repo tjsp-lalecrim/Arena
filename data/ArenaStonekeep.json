@@ -29,6 +29,40 @@
     129,
     9
   ],
+  "wallSamples": [
+    {
+      "id": "cask",
+      "entry": {
+        "id": "stonekeep.sample.cask",
+        "mapId": 12,
+        "x": 84,
+        "y": 93,
+        "direction": 6
+      },
+      "bounds": [
+        83,
+        89,
+        91,
+        94
+      ]
+    },
+    {
+      "id": "casl",
+      "entry": {
+        "id": "stonekeep.sample.casl",
+        "mapId": 12,
+        "x": 129,
+        "y": 66,
+        "direction": 8
+      },
+      "bounds": [
+        122,
+        59,
+        130,
+        64
+      ]
+    }
+  ],
   "visualSample": {
     "version": "stonekeep-visual-v01",
     "entry": {

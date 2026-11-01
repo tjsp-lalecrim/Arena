@@ -1,0 +1,24 @@
+{
+  "idempotentBytes": true,
+  "tileSize": 48,
+  "DReferencedCells": [
+    512,
+    513,
+    514,
+    515,
+    520,
+    521,
+    522,
+    523,
+    528,
+    529,
+    530,
+    531
+  ],
+  "sheetSize": [
+    384,
+    768
+  ],
+  "blankAlpha": true,
+  "sha256": "6c6535107750a0ba7b6e6303b8695be784efce47b9b5f716b5925dc25ec23e49"
+}

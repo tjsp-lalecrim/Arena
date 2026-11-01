@@ -32,6 +32,7 @@ module.exports=function(map){
    if(mask)put(x,y,1,320+mask);
   }
  }
+ require('./stonekeep-kl-sample.cjs')(map,t,materials,layout);
  sets[c.tilesetId]=t;fs.writeFileSync(path.join(root,'data/Tilesets.json'),'[\n'+sets.map(x=>JSON.stringify(x)).join(',\n')+'\n]\n');
  map.tilesetId=c.tilesetId;
  return map;

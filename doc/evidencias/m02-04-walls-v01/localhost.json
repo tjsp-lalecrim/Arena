@@ -1,0 +1,31 @@
+{
+  "url": "http://127.0.0.1:8774/",
+  "existingServerPreserved": true,
+  "records": [
+    {
+      "file": "data/ArenaStonekeep.json",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "data/Map012.json",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "data/Tilesets.json",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "js/plugins/Arena_Stonekeep.js",
+      "status": 200,
+      "match": true
+    },
+    {
+      "file": "img/tilesets/Arena_Stonekeep_KL_V01_D.png",
+      "status": 200,
+      "match": true
+    }
+  ]
+}

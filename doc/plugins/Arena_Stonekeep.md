@@ -1,4 +1,4 @@
-# Arena_Stonekeep0.1.1
+# Arena_Stonekeep0.1.2
 
 Adaptador M02-04 após Arena_Court, Arena_Rihad, Arena_Dungeon, Arena_CampaignConfig e Arena_Persistence/Quests. Sem dependências externas/parâmetros de Plugin Manager. [Fontes, recorte, limitações e roteiro](../STONEKEEP_M02_04.md).
 
@@ -6,7 +6,7 @@ Adaptador M02-04 após Arena_Court, Arena_Rihad, Arena_Dungeon, Arena_CampaignCo
 
 `ArenaStonekeep.json` schema1: mapId, areaId, sourceId/itemId, IDs de eventos, entry/return com IDs lógicos e coordenadas, source/exit/breach/shore/island e swimming. Fonte/etapas/recibo em ArenaCampaign.json, item importante em Items7. Valida vínculos no boot; registro de natação não entra no save. Após29e38db, cada falha informa a condição exata e os valores observados (área/mapa, fonte/item, existência/classificação, disponibilidade/diagnostics do registro), preservando a interrupção. Sem defaults ou mensagem no fluxo válido. [Investigação e regressão de abertura real](../STONEKEEP_M02_04.md#investigação-de-inicialização-após29e38db--01112026).
 
-V01 visual acrescenta `visualSample:{version,entry,bounds}` à configuração, sem mudar schema de saves. Sua revisão HTTP estável é `ArenaStonekeep.json?arena-data=visual-v01`; file:// permanece sem query. `previewMaterials()` reutiliza o preparo de `preview()` e aguarda a chegada assíncrona do laboratório antes da transferência técnica. Título **Stonekeep · materiais (RAM)**; saves normais continuam bloqueados e não há alteração da viagem da campanha. Cabeçalho distingue o trecho V01 do restante provisório. Folha C/tileset5 e reconstrução documentados no [registro de arte](../arte/STONEKEEP_REFERENCIAS_M02_04.md#reuso-substituição-e-primeiro-conjunto).
+V01 visual acrescenta `visualSample:{version,entry,bounds}` à configuração, sem mudar schema de saves. Sua revisão HTTP estável é `ArenaStonekeep.json?arena-data=walls-v01`; file:// permanece sem query. `previewMaterials()` reutiliza o preparo de `preview()` e aguarda a chegada assíncrona do laboratório antes da transferência técnica. Título **Stonekeep · materiais (RAM)**; saves normais continuam bloqueados e não há alteração da viagem da campanha. Cabeçalho distingue o trecho V01 do restante provisório. Folha C/tileset5 e reconstrução documentados no [registro de arte](../arte/STONEKEEP_REFERENCIAS_M02_04.md#reuso-substituição-e-primeiro-conjunto).
 
 - `known()`: MQ02≥40; conhecimento deriva da etapa persistida. `ArenaCourt.destination()` passa a refletir a viagem existente; sem duplicar flag.
 - `offer(interpreter)` / `travel(interpreter)`: evento3 da estrada, campanha válida, mapa/proximidade, fora de batalha/transferência/mensagem, destino conhecido; escolha explícita0. Cancelamento não viaja. Reusa janela nativa e proteção de soltura já existente.
@@ -23,3 +23,5 @@ Gerador `build-stonekeep-sample.cjs`, também chamado pelo pai Rihad, lê o reco
 Ao criar a apresentação de Map012, um Game_Map salvo com tileset4 é sincronizado ao5 da V01 antes de carregar bitmaps. Não reposiciona/recria eventos nem altera inventário/quest/recursos; só a revisão visual conhecida4→5. Caso sintético serializado em RAM coberto no teste focal.
 
 Aplicação de materiais R02 mantém a API/viagem e o esquema; `visualSample.bounds` acompanha o mesmo recorte físico já construído, sem ampliar geometria. A atribuição do gerador usa STONEKEEP_MATERIAIS_M02.json, com famílias confirmadas e provisórios explícitos; folha C/mestres não mudam.
+
+Pilotos CASK/CASL: `wallSamples:[{id,entry,bounds}]` vem da configuração versionada STONEKEEP_KL_PILOTO.json; `previewWall(id)` aceita somente a entrada cadastrada e reutiliza o preparo RAM existente. `materialsPending` guarda o destino escolhido e é consumido uma vez após a chegada técnica. Duas opções no título, sem mudar viagem normal, consumo, estado de quest ou formato do save. Revisão HTTP de configuração walls-v01 evita configuração anterior sem os acessos; file:// continua intacto. Sheet D e flags pertencem só ao tileset5 de Stonekeep.
