@@ -1,3 +1,7 @@
+## Fixture opcional nível1 — M02-03B
+
+previewArrival(destination,true) pede ao preparador uma personagem recém-criada nível1, sem conceder os níveis/itens/ouro/magia de teste do02A. A fixture ainda simula o fim MQ01 somente para demonstrar a chegada e mantém os bloqueios de armazenamento; não é migração de uma partida nem EXP grátis. Chamadas existentes sem segundo argumento continuam usando a fixture nível3 anterior. Campanha e critérios de continuação não alterados. [Roteiro](../ARREDORES_RIHAD_M02_03B.md).
+
 # Continuação — v0.2.0 / M02-03A
 
 Delta atual: `registerCampaignDestination(d)` registra somente rihad.arrival, a partir de ArenaRihad.json; `canContinueCampaign()` verifica campanha elegível fora do laboratório; `beginCampaign()` registra operação e transfere uma única vez. `campaignActive()` entrega o roteamento ao capítulo após confirmação, preservando fase/cursor/histórico M01. Load em travelling retoma o destino; arrived conserva a posição salva. Chegada cria MQ02 em10 somente se ausente, sem recursos/EXP/prêmios.

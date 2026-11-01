@@ -9,5 +9,24 @@
     "direction": 8
   },
   "informantEventId": 1,
-  "restPointId": "MQ02.rihad.rest"
+  "restPointId": "MQ02.rihad.rest",
+  "outskirts": {
+    "areaId": "rihad.outskirts",
+    "entry": {
+      "id": "rihad.outskirts.entry",
+      "mapId": 10,
+      "x": 3,
+      "y": 9,
+      "direction": 6
+    },
+    "return": {
+      "id": "rihad.outskirts.return",
+      "mapId": 9,
+      "x": 17,
+      "y": 9,
+      "direction": 4
+    },
+    "accessEventId": 4,
+    "returnEventId": 1
+  }
 }

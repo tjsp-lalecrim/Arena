@@ -7,7 +7,7 @@
   ]}],
   "areas": [
     {"id":"rihad","questId":"MQ02","mapId":9},
-    {"id":"rihad.outskirts","questId":"MQ02","mapId":null},
+    {"id":"rihad.outskirts","questId":"MQ02","mapId":10,"encounters":{"schemaVersion":1,"mapId":10,"areaId":"rihad.outskirts","completionQuestId":"MQ02","mapVisuals":{"1":{"file":"$Arena_rat_walk_r02","cell":[64,64],"ground":62,"groundByDirection":{"8":52},"animationWait":10}},"entries":[{"id":"rihad.approach.rat.01","eventId":2,"enemyId":1,"troopId":1,"origin":[10,5],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1},{"id":"rihad.approach.rat.02","eventId":3,"enemyId":1,"troopId":1,"origin":[18,5],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1},{"id":"rihad.approach.rat.03","eventId":4,"enemyId":1,"troopId":1,"origin":[10,11],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1},{"id":"rihad.approach.rat.04","eventId":5,"enemyId":1,"troopId":1,"origin":[18,11],"sourceFlat":"adaptação MQ02: estrada de Rihad","questSpecific":false,"radius":2,"interval":90,"regions":[4],"scale":1}]}},
     {"id":"stonekeep","questId":"MQ02","mapId":null},
     {"id":"fang-lair.upper","questId":"MQ02","mapId":null},
     {"id":"fang-lair.lower","questId":"MQ02","mapId":null}

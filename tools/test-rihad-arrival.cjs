@@ -16,9 +16,10 @@ try{
  const world=()=>page.evaluate(()=>JSON.stringify({actor:$gameActors,party:$gameParty,q1:ArenaQuests.snapshot(),arena:ArenaPersistence.snapshot(),resources:MVStateStore.read('arenaResources'),attributes:ArenaAttributes.snapshot()}));
  const menu=async symbol=>{await key('Escape');await page.waitForFunction(()=>SceneManager._scene instanceof Scene_Menu&&SceneManager._scene._commandWindow.active);await page.evaluate(s=>{const w=SceneManager._scene._commandWindow;w.selectSymbol(s);w.processOk();},symbol);await ready();};
  await title();const storage=await page.evaluate(()=>JSON.stringify(localStorage));
- await page.evaluate(()=>{const w=SceneManager._scene._commandWindow;w.selectSymbol('arenaRihadPreview');w.processOk();});await ready();
+ // Keep this older unit's level3 fixture explicit; the current level1 title path is covered by test-rihad-outskirts.cjs.
+ await page.evaluate(()=>ArenaContinuation.previewArrival($arenaRihad.arrival,false));await ready();
  assert.deepEqual(await page.evaluate(()=>[$gameMap.mapId(),$gamePlayer.x,$gamePlayer.y,ArenaContinuation.status().code,ArenaQuests.snapshot('MQ02').stage]),[9,10,11,'arrived',10]);
- assert.deepEqual(await resources(),[31,12,23]);checks.push('Title preview reaches Map009/rihad.arrival at10,11, MQ02=10, resources still spent (31/12/23)');
+ assert.deepEqual(await resources(),[31,12,23]);checks.push('Explicit legacy-level3 preview reaches Map009/rihad.arrival at10,11, MQ02=10, resources still spent (31/12/23)');
  assert.equal(await page.evaluate(()=>DataManager.saveGame(1)),false);assert.equal(await page.evaluate(()=>JSON.stringify(localStorage)),storage);checks.push('Preview uses old isolated laboratory; native slots blocked, no browser storage writes');
  await page.locator('#GameCanvas').screenshot({path:path.join(out,'chegada.png')});
  // Reach every walking cell from arrival, using native collision (not visual pixels).

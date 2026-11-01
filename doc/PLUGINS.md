@@ -1,3 +1,7 @@
+## Arredores M02-03B — estado vigente
+
+Arena_Rihad0.2.0 reutiliza Arena_Encounters sem clonagem/alteração: perfil rihad.outskirts, acesso/retorno fixos e fixture nível1 opcional no laboratório existente. Registro permanece41 entradas, nomes/ordem/status/parâmetros preservados; somente descrição da versão própria atualizada. Sem novas imagens, fórmula, prêmios paralelos ou namespace. [Roteiro/contratos](ARREDORES_RIHAD_M02_03B.md).
+
 ## Chegada M02-03A — estado vigente
 
 Arena_Rihad0.1.0 acrescentado como41º registro; Arena_Continuation0.2.0 aceita destino registrado e confirmação de campanha. Nomes/ordem/status/parâmetros dos40 anteriores preservados. Arena_Recovery reconhece authorizedRefuge sem mudar os pontos MQ01. Nenhum motor, namespace web ou consumidor de recursos novo. [Plugin](plugins/Arena_Rihad.md), [contratos de continuação](plugins/Arena_Continuation.md), [amostra/evidências](CHEGADA_RIHAD_M02_03A.md). Contagens/ausência de destino nos registros abaixo são históricas.

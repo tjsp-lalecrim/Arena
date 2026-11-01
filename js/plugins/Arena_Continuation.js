@@ -172,7 +172,7 @@ var ArenaContinuation;
         var q=ArenaQuests.snapshot();q.objectives.shiftGate=true;ArenaPersistence.setQuest('MQ01',40,q.objectives,true);ArenaNarrative.finish();
         session.message='Gate simulado somente nesta fixture; sem prêmio/viagem.';return true;
     }
-    function fixture(id){
+    function fixture(id,arrivalLevel1){
         if(['pre_gate','ending','ended','intro','technical','incompatible'].indexOf(id)<0||!active()&&!(SceneManager._scene instanceof Scene_Title)||$gameParty&&$gameParty.inBattle())return false;
         if(id==='incompatible'){
             if(!active())return false;
@@ -182,9 +182,12 @@ var ArenaContinuation;
         var previous=active()?session.previousSlot:DataManager._lastAccessedId;
         DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Continuidade piloto',raceId:'breton',genderId:'female'});$gamePlayer.clearTransferInfo();
         session={system:$gameSystem,previousSlot:previous,memory:null,message:'Fixture sintética; nenhuma partida pessoal foi carregada.',request:null,fixture:id};
-        var a=$gameActors.actor(1);a.changeLevel(3,false);ArenaResources.choose(2,'hp');ArenaResources.choose(3,'mp');ArenaAttributes.apply(ArenaAttributes.preview({'2':1,'4':1}));
-        $gameParty.gainItem($dataWeapons[1],1);a.changeEquip(0,$dataWeapons[1]);$gameParty.gainItem($dataItems[2],3);$gameParty.gainGold(37);a.learnSkill(9);
-        a.setHp(31);a.setMp(12);ArenaPersistence.setResource('vigor',23,ArenaResources.snapshot().vigor.maximum);
+        var a=$gameActors.actor(1);
+        if(!arrivalLevel1){
+            a.changeLevel(3,false);ArenaResources.choose(2,'hp');ArenaResources.choose(3,'mp');ArenaAttributes.apply(ArenaAttributes.preview({'2':1,'4':1}));
+            $gameParty.gainItem($dataWeapons[1],1);a.changeEquip(0,$dataWeapons[1]);$gameParty.gainItem($dataItems[2],3);$gameParty.gainGold(37);a.learnSkill(9);
+            a.setHp(31);a.setMp(12);ArenaPersistence.setResource('vigor',23,ArenaResources.snapshot().vigor.maximum);
+        }
         if(id==='intro')MVStateStore.replace('arenaNarrative',{mode:'campaign',phase:'intro',section:1,word:5,history:[]});
         else if(id!=='technical'){
             ArenaPersistence.setQuest('MQ01',20,{rubyKey:true},false);ArenaPersistence.claimSource('MQ01.ruby-key');ArenaPersistence.consumeImportant('MQ01.ruby-key','MQ01.cell-door','consume');
@@ -270,8 +273,8 @@ var ArenaContinuation;
             if(!d||d.id!=='rihad.arrival'||!Number.isInteger(d.mapId)||!$dataMapInfos[d.mapId]||!Number.isInteger(d.x)||!Number.isInteger(d.y)||d.x<0||d.y<0||[2,4,6,8].indexOf(d.direction)<0)throw Error('Destino de campanha inválido.');
             campaignDestination=Object.freeze(Object.assign({},d));
         },
-        previewArrival:function(d){
-            if(!fixture('ending'))return false;
+        previewArrival:function(d,arrivalLevel1){
+            if(!fixture('ending',arrivalLevel1===true))return false;
             MVStateStore.once(ns,beginId,function(s){Object.assign(s,MVChapterContinuation.begin(s,beginId,d.id));});
             session.request=d;DataManager.loadMapData(d.mapId);return true;
         }};

@@ -1,5 +1,7 @@
 # M02-03A — primeira chegada a Rihad
 
+**Relato posterior do responsável:** acesso à chegada pela estrada e ao informante confirmado, associado à referência disponível b8738b9. Descanso e guardar/carregar na chegada **não explicitamente confirmados**; não registrar aprovação completa. Ambiente/SHA não informados no relato. [M02-03B](ARREDORES_RIHAD_M02_03B.md) acrescenta arredores e atualiza o mesmo acesso para nível1/RAM; roteiro e limites abaixo descrevem a unidade03A original.
+
 01/11/2026. Feature `feature/m02-chegada-rihad`, derivada de **4ff291a**, preservando as dependências02A/02B sem integrar branches. **Amostra para avaliação, não aprovação estética nem conclusão de M02-03.** Tag m01 intacta; nenhum push/Pages.
 
 ## Conteúdo e fontes

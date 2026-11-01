@@ -42,5 +42,5 @@ var $plugins =
 {"name":"Arena_Continuation","status":true,"description":"v0.2.0 Continuidade M01/M02 e laboratório isolado","parameters":{"TechnicalDestination":"{\"id\":\"technical.resources.arrival\",\"mapId\":5,\"x\":4,\"y\":7,\"direction\":2}"}},
 {"name":"MV_CampaignConfig","status":true,"description":"v0.1.0 Índices puros de configuração","parameters":{}},
 {"name":"Arena_CampaignConfig","status":true,"description":"v0.1.0 Contratos por quest e área","parameters":{}},
-{"name":"Arena_Rihad","status":true,"description":"v0.1.0 M02-03A chegada mínima a Rihad","parameters":{}}
+{"name":"Arena_Rihad","status":true,"description":"v0.2.0 Rihad e arredores iniciais","parameters":{}}
 ];

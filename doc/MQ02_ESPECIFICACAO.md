@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Implementação posterior01/11/2026:** [M02-03B](ARREDORES_RIHAD_M02_03B.md) disponibiliza os quatro ratos previstos, sem alterar curva/15 EXP ou iniciar Ria. IDs/rotas e recorte adaptado documentados; estágio permanece10.
+
 **Implementação posterior01/11/2026:** [M02-03A](CHEGADA_RIHAD_M02_03A.md) vincula rihad.arrival a Map009/(10,11), chegada10, informante e repouso. Amostra autorizada, para avaliação; planta/arquitetura/NPC provisórios e próximos gatilhos ausentes, sem aprovação inferida do M02-03 completo.
 
 **Atualização posterior01/11/2026:** M02-02B autorizado e [contratos implementados](CONFIGURACOES_M02_02B.md), sem aprovação manual inferida dos detalhes02A. Infraestrutura de seleção apenas; destinos e conteúdo continuam futuros.

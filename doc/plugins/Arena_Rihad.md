@@ -1,3 +1,11 @@
+## v0.2.0 — arredores M02-03B
+
+Delta: ArenaRihad.json.outskirts identifica entradas/retorno e eventos; visitOutskirts(interpreter)/returnToArrival(interpreter) validam mapa/evento/distância, MQ02≥10, campanha e ausência de batalha/transferência. Transferências nativas não curam/premiam. Somente dois acessos fixos, sem sistema geral de viagem. Perfil de quatro ratos em ArenaCampaign.json usa integralmente Arena_Encounters e loot existentes; completionQuestId MQ02 impede que conclusão MQ01 reative a área durante MQ02.
+
+Preview chama ArenaContinuation.previewArrival(d,true): fixture de criação nível1, sem o preparo nível3/itens/magia do laboratório02A. O argumento opcional não altera o padrão anterior. RAM no menu dos dois mapas, gravação normal bloqueada nessa sessão. OnMapLoaded acrescenta somente evento4 ausente em saves03A, antes dos sprites. O gerador build-rihad-arrival.cjs passou a recompor Map009/010 e ambos os vínculos, sem desfazer acesso/repouso.
+
+[Posições, roteiro e15 verificações focais](../ARREDORES_RIHAD_M02_03B.md). Trecho anterior abaixo é o contrato03A preservado.
+
 # Arena_Rihad v0.1.0
 
 Amostra M02-03A. Dependências: Arena_CampaignConfig, Arena_Continuation v0.2, Arena_Recovery e suas dependências já existentes. Sem plugin externo/parâmetros. Configuração em `data/ArenaRihad.json`: schema1, área `rihad`, destino `rihad.arrival`/Map009/(10,11)/direção8, evento do informante e ID de repouso.
