@@ -2,7 +2,7 @@
 
 **Aprovação posterior do responsável —01/11/2026, versão explícita ad4af0e:** teste funcional satisfatório e direção artística aprovados. PilotoV01/arquivo/hash no [registro de arte](arte/MQ02_RIA_PILOTO_V01.json). Ambiente, dispositivo e casos técnicos adicionais não foram discriminados; não estender a aprovação aos testes manuais de chegada/arredores, persistência ou outras combinações. A aprovação do piloto não autoriza produzir variantes.
 
-**Decisões vigentes:** [glossário](LOCALIZACAO_E_GLOSSARIO.md) aprova **Cajado do Caos** para Staff of Chaos. Texto de execução e transcrição abaixo conservam a versão ad4af0e nesta tarefa documental; nenhuma troca foi aplicada ao jogo ou à release m01. Ilustrações por bloco/composição futura estão no registro único [REF07](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa): refinamentos não bloqueantes para a corte. Relato e limites anteriores abaixo descrevem a entrega antes desta aprovação.
+**Decisões vigentes:** [glossário](LOCALIZACAO_E_GLOSSARIO.md) aprova **Cajado do Caos** para Staff of Chaos. Em M02-03D, a tradução foi aplicada aos textos ativos de Ria/diário, mantendo IDs, imagens e contagem de palavras/cursor por bloco. A transcrição abaixo é histórica de ad4af0e; a release m01 permanece intacta. Ilustrações por bloco/composição futura estão no registro único [REF07](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa): refinamentos não bloqueantes para a corte. Relato e limites anteriores abaixo descrevem a entrega antes desta aprovação.
 
 01/11/2026. Feature `feature/m02-visao-ria`, sobre **3022750**, com02A/02B/03A/03B preservados. **Implementada para avaliação**, não aprovação manual nem conclusão de M02-03. Responsável adiou a avaliação dos recortes recentes para uma sequência com conteúdo novo; o adiamento não bloqueia este avanço técnico. Confirmação anterior continua restrita ao acesso da estrada/informante03A. Descanso/RAM dessa chegada, arredores e visão não receberam aprovação manual inferida.
 
@@ -18,7 +18,7 @@ Fonte primária lida diretamente em `D:\SteamLibrary\steamapps\common\The Elder 
 
 ## Textos utilizados
 
-Configuração principal: [ArenaRiaVision.json](../data/ArenaRiaVision.json), schema1, IDs MQ02.ria.01–08. Transcrição v1 para revisão; sincronizar se o texto dessa configuração mudar:
+Configuração principal: [ArenaRiaVision.json](../data/ArenaRiaVision.json), schema1, IDs MQ02.ria.01–08. Transcrição histórica v1 de ad4af0e; configuração ativa recebeu somente a tradução aprovada Cajado do Caos em M02-03D:
 
 1. Vejo que seus braços e sua mente se fortaleceram. É hora de começarmos esta jornada.
 

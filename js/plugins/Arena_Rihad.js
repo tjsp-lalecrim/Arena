@@ -39,9 +39,9 @@ var ArenaRihad;
    var q=ArenaQuests.snapshot('MQ02'),stage=q&&q.stage||0;
    if(stage<20)return message(i,['Você chegou a Rihad, no sul de Hammerfell.','Há um lugar de repouso na plataforma a leste.',
     'Há ratos nos arredores, pelo acesso a leste.',
-    'Recupere suas forças aqui; a corte virá depois.']);
+    'Busque notícias entre os moradores antes da audiência.']);
    return message(i,['Procura notícias de Fang Lair? Pergunte na corte.','O palácio fica junto à muralha da cidade.',
-    'A corte ainda não está acessível nesta amostra.']);
+    'A entrada da corte fica ao norte da esplanada.']);
   },
   arrivalNotice:function(i){return message(i,['Rihad · chegada após viagem condensada.','Esta estrada não é uma saída física da prisão.',
    'Amostra provisória; sem retorno à prisão.']);},

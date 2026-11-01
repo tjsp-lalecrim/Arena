@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Implementação vigente01/11/2026:** [M02-03D](CORTE_RIHAD_M02_03D.md) acrescenta corte mínima Map011 e aceitação explícita30→40. Pedido/orientação no diário; stonekeep.entry conhecida, mas sem mapa/viagem. Textos primários#1315–17, reuso provisório de arte; nenhum chefe Golthog ou entrega simulados. A visão ad4af0e mantém sua aprovação; novos critérios manuais não são presumidos. Entradas seguintes são marcos de implementação históricos.
+
 **Implementação posterior01/11/2026:** [M02-03C](VISAO_RIA_M02_03C.md) implementa repouso/Ria nível2+, fala primária #1500/#1294 completa, cursor separado e transições20/30. Uma ilustração-piloto para avaliação, demais blocos com reuso provisório; manuais adiados, sem inferir aprovação. Corte e missão continuam futuras.
 
 **Implementação posterior01/11/2026:** [M02-03B](ARREDORES_RIHAD_M02_03B.md) disponibiliza os quatro ratos previstos, sem alterar curva/15 EXP ou iniciar Ria. IDs/rotas e recorte adaptado documentados; estágio permanece10.

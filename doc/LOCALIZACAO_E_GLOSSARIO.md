@@ -14,7 +14,7 @@ Diretriz obrigatória: nomes próprios de personagens e locais permanecem no ori
 | Elder Scrolls | Pergaminhos Ancestrais | Conceito/artefato próprio avaliado individualmente: conservar tradução descritiva já adotada na introdução; não afeta nome do produto The Elder Scrolls: Arena. |
 | Staff of Chaos | **Cajado do Caos** | Tradução explicitamente aprovada pelo responsável em01/11/2026, após a visão ad4af0e. Decisão individual de localização de artefato; nomes próprios de personagens/localizações continuam no original. Usar em novos textos e revisões autorizadas; não substituir citações, prompts históricos ou arquivos da release m01 retroativamente. |
 
-Decisão vigente acima é documental nesta rodada: os textos de execução de ad4af0e não foram alterados. A aplicação da tradução nesses dados fica para um recorte de implementação autorizado; não é uma nova decisão pendente de tradução.
+Aplicação em M02-03D: Cajado do Caos substitui o termo nos textos ativos de ArenaRiaVision.json e no resumo do diário. Mesmos IDs/imagens e contagem de palavras por bloco preservam cursores. Citações/transcrições históricas continuam identificando a versão ad4af0e; nenhum arquivo da release m01 foi alterado.
 
 ## Fontes e limites
 

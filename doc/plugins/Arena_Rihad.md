@@ -1,3 +1,7 @@
+## Integração M02-03D — corte
+
+Arena_Court usa ArenaRihad.json.court para entrada/saída identificadas, sem substituir a chegada ou repouso. Falas do informante apontam a entrada ao norte após a visão/orientação; eventos anteriores e transição20→30 preservados. O gerador pai agora recompõe também Map011/acesso5/porta6, sem desfazer Map010 ou repouso. [Contrato/cobertura](Arena_Court.md). Descrições dos recortes anteriores abaixo conservam seu escopo histórico.
+
 ## Integração opcional Ria M02-03C
 
 Arena_RiaVision envolve a interação de repouso e orientação. Informante pré-visão mantém instruções de chegada/repouso/arredores; depois da leitura aponta corte e a consulta válida avança20→30. Sem tocar em access/return/patrulha/receipts. Novo acesso de título Rihad · visão de Ria (RAM) prepara nível2 somente na fixture, mantendo chegada nível1 disponível. [Um roteiro agrupado](../VISAO_RIA_M02_03C.md); manuais adiados, sem aprovação inferida.

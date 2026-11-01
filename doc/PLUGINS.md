@@ -1,3 +1,7 @@
+## Corte de Rihad M02-03D — estado vigente
+
+Arena_Court0.1.0 acrescenta um registro, total43;42 anteriores mantêm nomes, ordem, status e parâmetros no formato canônico MV. Usa mensagens/choices/transferências nativas e núcleos existentes, sem dependência externa ou namespace de save novo. Configuração separada dos textos/posições, aceitação idempotente e destino somente lógico. [API/contratos](plugins/Arena_Court.md), [fontes/roteiro](CORTE_RIHAD_M02_03D.md). Contagens/ausência de corte abaixo são históricas.
+
 ## Visão de Ria M02-03C — estado vigente
 
 Arena_RiaVision0.1.0 acrescenta um registro (42 no total). Arena_Narrative0.3.0 compartilha cena/paginação com um provedor MQ02; API state()/schema2 de MQ01 intactos. Namespace novo arenaMQ02Narrative v1, mesma raiz/web arena:m01:save-v1; somente adaptador de repouso validado, sem consumidor de recursos adicional. [Contrato/dependências](plugins/Arena_RiaVision.md), [textos/arte/14 verificações](VISAO_RIA_M02_03C.md). Sem vozes, corte, batalhas novas ou dependências externas.

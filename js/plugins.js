@@ -43,5 +43,6 @@ var $plugins =
 {"name":"MV_CampaignConfig","status":true,"description":"v0.1.0 Índices puros de configuração","parameters":{}},
 {"name":"Arena_CampaignConfig","status":true,"description":"v0.1.0 Contratos por quest e área","parameters":{}},
 {"name":"Arena_Rihad","status":true,"description":"v0.2.0 Rihad e arredores iniciais","parameters":{}},
-{"name":"Arena_RiaVision","status":true,"description":"v0.1.0 Visão de Ria MQ02 por descanso","parameters":{}}
+{"name":"Arena_RiaVision","status":true,"description":"v0.1.0 Visão de Ria MQ02 por descanso","parameters":{}},
+{"name":"Arena_Court","status":true,"description":"v0.1.0 Audiência mínima em Rihad","parameters":{}}
 ];

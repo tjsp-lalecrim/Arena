@@ -28,5 +28,27 @@
     },
     "accessEventId": 4,
     "returnEventId": 1
+  },
+  "court": {
+    "areaId": "rihad.court",
+    "entry": {
+      "id": "rihad.court.entry",
+      "mapId": 11,
+      "x": 8,
+      "y": 10,
+      "direction": 8
+    },
+    "exit": {
+      "id": "rihad.court.exit",
+      "mapId": 9,
+      "x": 10,
+      "y": 5,
+      "direction": 2
+    },
+    "accessEventId": 5,
+    "doorEventId": 6,
+    "exitEventId": 1,
+    "queenEventId": 2,
+    "destinationId": "stonekeep.entry"
   }
 }

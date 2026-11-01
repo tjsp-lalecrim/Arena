@@ -64,3 +64,4 @@ recovery.restPoints=recovery.restPoints.filter(p=>p.id!==point.id).concat(point)
 write('data/ArenaRihad.json',{schemaVersion:1,areaId:'rihad',arrival:{id:'rihad.arrival',mapId:9,x:10,y:11,direction:8},informantEventId:1,restPointId:point.id,
  outskirts:{areaId:'rihad.outskirts',entry:{id:'rihad.outskirts.entry',mapId:10,x:3,y:9,direction:6},return:{id:'rihad.outskirts.return',mapId:9,x:17,y:9,direction:4},accessEventId:4,returnEventId:1}});
 console.log('Map009/010, acesso/retorno e quatro encontros recompostos; repousos/áreas anteriores preservados.');
+require('./build-rihad-court.cjs')();

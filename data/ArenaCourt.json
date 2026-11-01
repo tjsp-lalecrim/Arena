@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "notReady": [
+    "Antes de tratar de Fang Lair na corte, busque orientação com o informante da esplanada e recupere suas forças."
+  ],
+  "offer": [
+    "Blubamka: Boas-vindas a Rihad. Sou a rainha Blubamka e concordo em lhe falar de Fang Lair, em troca de um favor.",
+    "Há pouco tempo, goblins liderados por Golthog the Dark atacaram esta fortaleza. Levaram muitos tesouros, inclusive um pergaminho com pistas para decifrar a parte dos Pergaminhos Ancestrais que fala da localização de Fang Lair.",
+    "Golthog e seus goblins fugiram para uma fortaleza antiga e arruinada chamada Stonekeep, fora da cidade. Temo que um grande grupo de mercenários ou soldados não consiga encontrá-los. Uma pessoa sozinha, porém, teria mais chances.",
+    "Talvez sua chegada seja oportuna. Se concordar em recuperar o pergaminho, indicarei onde fica Stonekeep. Se voltar com ele, poderei decifrar a localização de Fang Lair. Prometo dar essa informação em troca de sua ajuda. Você aceita?"
+  ],
+  "accepted": [
+    "Excelente. Stonekeep fica perto de Rihad. Tenha cuidado: Golthog é astuto e maligno. Há até rumores de que seja um necromante a serviço do Underking. Quando tiver o pergaminho, volte aqui e descobrirei a localização de Fang Lair para você.",
+    "Stonekeep é agora um destino conhecido. Sua exploração e a viagem ainda não estão disponíveis nesta versão de teste. O pedido permanece em andamento."
+  ],
+  "decline": [
+    "Lamento que não possa ajudar agora. Se mudar de ideia, volte a perguntar sobre Fang Lair. Ficarei satisfeita com outra oportunidade de recuperar o pergaminho."
+  ],
+  "pending": [
+    "Nosso acordo continua: recupere o pergaminho em Stonekeep e volte à corte. Stonekeep é um destino conhecido, mas a viagem e sua exploração ainda não estão disponíveis nesta versão de teste."
+  ],
+  "future": [
+    "O atendimento desta etapa será integrado em outro recorte. Seu progresso foi preservado; nenhuma entrega ou conclusão será simulada nesta versão."
+  ]
+}

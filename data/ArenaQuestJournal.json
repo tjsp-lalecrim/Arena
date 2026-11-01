@@ -52,11 +52,15 @@
         },
         {
           "revealAt": 20,
-          "text": "Ria explicou que o Staff of Chaos foi dividido em oito fragmentos. O primeiro está em Fang Lair, mas ela não sabe a localização exata."
+          "text": "Ria explicou que o Cajado do Caos foi dividido em oito fragmentos. O primeiro está em Fang Lair, mas ela não sabe a localização exata."
         },
         {
           "revealAt": 30,
-          "text": "Um morador indicou a corte de Rihad, junto à muralha, para buscar notícias de Fang Lair. A audiência ainda não está disponível nesta versão de teste."
+          "text": "Um morador indicou a corte de Rihad, junto à muralha, para buscar notícias de Fang Lair."
+        },
+        {
+          "revealAt": 40,
+          "text": "A rainha Blubamka pediu que eu recupere o pergaminho roubado pelos goblins em Stonekeep. Ele permitirá decifrar a localização de Fang Lair. Stonekeep é um destino conhecido; a viagem ainda está indisponível nesta versão de teste."
         }
       ],
       "steps": [
@@ -80,11 +84,19 @@
           "id": "reach-court",
           "revealAt": 30,
           "doneAt": 40,
-          "text": "Procurar a corte de Rihad. Audiência ainda indisponível nesta amostra.",
-          "completedText": "Audiência obtida."
+          "text": "Falar com Blubamka e decidir sobre o pedido do pergaminho.",
+          "completedText": "Pedido de Blubamka aceito; Stonekeep conhecida.",
+          "objectiveId": "parchmentRequest"
+        },
+        {
+          "id": "recover-parchment",
+          "revealAt": 40,
+          "doneAt": 50,
+          "text": "Recuperar o pergaminho em Stonekeep. Viagem e exploração ainda indisponíveis nesta versão.",
+          "completedText": "Pergaminho recuperado."
         }
       ],
-      "source": "TEMPLATE.DAT #1500/#1294, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas."
+      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas."
     }
   ]
 }
