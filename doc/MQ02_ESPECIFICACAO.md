@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Implementação vigente M02-05:** [entrega na corte](ENTREGA_PERGAMINHO_M02_05.md), sobre18473c2: confirmação explícita, item7/recibo/aposentadoria/50→60 consistentes, diário e Fang Lair conhecida sem mapa/viagem. Coleta confirmada pelo responsável, sem outros testes inferidos; extensão atual para avaliação. Referências a entrega ausente nas entradas anteriores abaixo são históricas.
+
 **Implementação vigente M02-04:** [amostra de Stonekeep](STONEKEEP_M02_04.md) vincula stonekeep.entry/Map012 e fonte stonekeep.parchment/item7. Recorte original adaptado, natação por região, coleta40→50, diário de retorno e recuperação enquanto necessário. Guardiões/arte específica e entrega permanecem pendentes. Entradas anteriores abaixo são históricas, inclusive a indisponibilidade de viagem na entrega03D.
 
 **Implementação vigente01/11/2026:** [M02-03D](CORTE_RIHAD_M02_03D.md) acrescenta corte mínima Map011 e aceitação explícita30→40. Pedido/orientação no diário; stonekeep.entry conhecida, mas sem mapa/viagem. Textos primários#1315–17, reuso provisório de arte; nenhum chefe Golthog ou entrega simulados. A visão ad4af0e mantém sua aprovação; novos critérios manuais não são presumidos. Entradas seguintes são marcos de implementação históricos.

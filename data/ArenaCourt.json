@@ -11,7 +11,7 @@
   ],
   "accepted": [
     "Excelente. Stonekeep fica perto de Rihad. Tenha cuidado: Golthog é astuto e maligno. Há até rumores de que seja um necromante a serviço do Underking. Quando tiver o pergaminho, volte aqui e descobrirei a localização de Fang Lair para você.",
-    "Stonekeep é agora um destino conhecido. Viaje pela estrada ao sul da esplanada. A amostra permite recuperar o pergaminho; os guardiões e a entrega ainda não estão integrados."
+    "Stonekeep é agora um destino conhecido. Viaje pela estrada ao sul da esplanada e volte à corte com o pergaminho."
   ],
   "decline": [
     "Lamento que não possa ajudar agora. Se mudar de ideia, volte a perguntar sobre Fang Lair. Ficarei satisfeita com outra oportunidade de recuperar o pergaminho."
@@ -21,5 +21,37 @@
   ],
   "future": [
     "A entrega do pergaminho será integrada no próximo recorte. Seu progresso foi preservado; nenhuma entrega, recompensa ou conclusão será simulada nesta versão."
-  ]
+  ],
+  "delivery": {
+    "questId": "MQ02",
+    "sourceId": "stonekeep.parchment",
+    "receiptId": "MQ02.rihad.parchment",
+    "from": 50,
+    "to": 60,
+    "destination": {
+      "id": "fang.entry",
+      "areaId": "fang-lair.upper"
+    },
+    "offer": [
+      "Blubamka: Você trouxe o pergaminho de Stonekeep?"
+    ],
+    "missing": [
+      "Você ainda precisa trazer o pergaminho. Procure-o na ilha de Stonekeep e volte à corte. Nosso acordo permanece."
+    ],
+    "declined": [
+      "Guarde o pergaminho por enquanto. Quando quiser concluir nossa troca, volte a falar comigo."
+    ],
+    "delivered": [
+      "Blubamka: Você recuperou o pergaminho! Espero que também tenha enviado Golthog para uma sepultura precoce. De todo modo, cumprirei minha parte do acordo.",
+      "Blubamka chama um cortesão, que se curva e traz uma pena. Ela examina o pergaminho e indica a localização de Fang Lair, em Hammerfell.",
+      "Fang Lair é agora um destino conhecido. Sua viagem e exploração ainda não estão disponíveis nesta versão de teste."
+    ],
+    "repeat": [
+      "Nossa troca está concluída. Já lhe indiquei a localização de Fang Lair, em Hammerfell. A viagem ainda não está disponível nesta versão de teste."
+    ],
+    "blocked": [
+      "Não foi possível confirmar a entrega do pergaminho. Nenhum item ou progresso foi alterado. Volte ao título e carregue sua partida para tentar novamente."
+    ],
+    "source": "TEMPLATE.DAT #1319 (264839), #1320; wiki Fang Lair quest PDF p3 Quid Pro Quo2. Portuguese translation/condensation; location known in journal replaces original map marking. No extra reward or invented Golthog battle."
+  }
 }

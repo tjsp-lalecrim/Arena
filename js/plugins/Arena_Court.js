@@ -17,6 +17,7 @@ var ArenaCourt;
  function textCommands(texts,indent){var w=SceneManager._scene._messageWindow,list=[];w.resetFontSettings();texts.forEach(function(text){var lines=MVJournalModel.wrap(text,w.contentsWidth()-8,w.textWidth.bind(w));for(var n=0;n<lines.length;n+=4){list.push({code:101,indent:indent,parameters:['',0,0,2]});lines.slice(n,n+4).forEach(function(t){list.push({code:401,indent:indent,parameters:[t]});});}});return list;}
  function show(i,texts){var list=textCommands(texts,0);list.push({code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;}
  ArenaCourt={
+  show:show,
   enter:function(i){var c=cfg();return transfer(i,c.exit.mapId,c.accessEventId,c.entry);},
   leave:function(i){var c=cfg();return transfer(i,c.entry.mapId,c.exitEventId,c.exit);},
   destination:function(){return {id:cfg().destinationId,known:ArenaQuests.snapshot('MQ02').stage>=40,available:false,reason:'destination_not_implemented'};},

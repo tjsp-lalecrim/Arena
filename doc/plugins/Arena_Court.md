@@ -2,6 +2,8 @@
 
 Adaptador mínimo M02-03D, sem dependência externa. Após Arena_RiaVision, Arena_Rihad, Arena_Persistence/Arena_Quests, Arena_CampaignConfig e MV_JournalModel; utiliza intérprete, mensagens, escolhas e transferências nativos MV1.6.1. Não clona núcleos nem altera arquivos do motor. [Conteúdo, fontes e roteiro](../CORTE_RIHAD_M02_03D.md).
 
+**Extensão vigente M02-05:** [Arena_CourtDelivery](Arena_CourtDelivery.md) reutiliza `show(interpreter,texts)` e intercepta somente50+, sem alterar aceitação anterior. Dados/recibo e destino conhecido em [entrega](../ENTREGA_PERGAMINHO_M02_05.md). As indisponibilidades da implementação03D abaixo são históricas.
+
 ## Configuração e APIs
 
 Sem parâmetros Plugin Manager nesta versão. `data/ArenaCourt.json` schema1 contém os grupos textuais notReady/offer/accepted/decline/pending/future. `ArenaRihad.json.court` define área, mapas, eventos, coordenadas/direções e destinationId. `ArenaCampaign.json` registra `rihad.court`/Map011/MQ02; Stonekeep permanece mapId=null. Os grupos/área são validados após carregar a base; configuração inválida é erro explícito, sem fallback silencioso.

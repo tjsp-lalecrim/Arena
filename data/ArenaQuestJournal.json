@@ -64,7 +64,11 @@
         },
         {
           "revealAt": 50,
-          "text": "Encontrei o pergaminho na ilha de Stonekeep. Devo voltar à corte de Rihad. A entrega será integrada no próximo recorte; o pedido continua em andamento."
+          "text": "Encontrei o pergaminho na ilha de Stonekeep. Devo voltar à corte de Rihad para entregá-lo a Blubamka."
+        },
+        {
+          "revealAt": 60,
+          "text": "Entreguei o pergaminho a Blubamka. Ela cumpriu o acordo e indicou a localização de Fang Lair, em Hammerfell. A viagem ainda não está disponível nesta versão de teste."
         }
       ],
       "steps": [
@@ -104,11 +108,20 @@
           "id": "return-parchment",
           "revealAt": 50,
           "doneAt": 60,
-          "text": "Voltar à corte de Rihad com o pergaminho. A entrega ainda não está integrada.",
-          "completedText": "Pergaminho entregue à corte."
+          "text": "Entregar o pergaminho a Blubamka na corte de Rihad.",
+          "completedText": "Pergaminho entregue à corte.",
+          "objectiveId": "parchmentDelivered"
+        },
+        {
+          "id": "reach-fang-lair",
+          "objectiveId": "fangLairEntered",
+          "revealAt": 60,
+          "doneAt": 70,
+          "text": "Prosseguir para Fang Lair quando a viagem estiver disponível.",
+          "completedText": "Alcancei Fang Lair."
         }
       ],
-      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas."
+      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação."
     }
   ]
 }

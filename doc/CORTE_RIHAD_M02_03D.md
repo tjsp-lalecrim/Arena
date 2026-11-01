@@ -1,5 +1,7 @@
 # M02-03D — audiência mínima de Rihad
 
+**Extensão vigente M02-05:** [entrega do pergaminho](ENTREGA_PERGAMINHO_M02_05.md) implementa50→60, recibo/fonte aposentada e Fang Lair conhecida sem viagem. Audiência/ilustrações continuam provisórias; cobertura manual anterior não aprova a extensão. A indisponibilidade da entrega abaixo preserva o histórico03D.
+
 **Continuidade M02-04:** [amostra Stonekeep](STONEKEEP_M02_04.md) agora habilita a viagem pelo acesso da estrada após o aceite e atualiza os avisos/diário correspondentes. A indisponibilidade descrita no registro03D abaixo é histórica. Entrega do pergaminho permanece ausente; aprovação funcional e ausência de aprovação estética desta corte preservadas.
 
 **Confirmação do responsável —01/11/2026:** diálogo da audiência funciona e a quest atualiza. Referência entregue/disponível **fe99ac3**; o relato não informou hash nem ambiente. Não atribuir aprovação estética dos placeholders ou testes adicionais de persistência, recusa, transferências, editor ou dispositivo. Evidências automatizadas abaixo permanecem identificadas separadamente.

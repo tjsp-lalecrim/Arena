@@ -199,3 +199,7 @@ Nenhum plugin externo ou registro adicional:32 registros de js/plugins.js preser
 ## Stonekeep — esqueleto de batalha V01
 
 Arena_Skeleton0.1.0 após Arena_Stonekeep e dependências Battle/Motion/Abilities/Loot. Config ArenaSkeleton.json; resistência limitada ao novo inimigo e acesso RAM, sem recurso/consumo duplicado. [Guia](plugins/Arena_Skeleton.md) e [cobertura realmente entregue](SKELETON_M02.md).
+
+## M02-05 — entrega do pergaminho
+
+Arena_CourtDelivery0.1.0 após Arena_DebugHub/Court/Stonekeep: extensão focal da conversa, consumo/recibo/progresso existentes e acesso RAM centralizado. Sem prêmio ou viagem a mapa ausente. [Guia e dependências](plugins/Arena_CourtDelivery.md). Formato canônico do registro preservado.

@@ -41,7 +41,7 @@ var ArenaStonekeep;
    try{if(ArenaPersistence.claimSource(c().sourceId)!=='granted')return false;
     if(q.stage===40)ArenaPersistence.setQuest('MQ02',50,Object.assign({},q.objectives,{parchmentRecovered:true}),false);
    }catch(e){$gameSystem._persistentState=backup;$gameParty._items=items;throw e;}
-   return message(i,'Você encontrou o pergaminho que a corte de Rihad pode usar para descobrir a localização de Fang Lair. Volte à corte. A entrega pertence ao próximo recorte.');
+   return message(i,'Você encontrou o pergaminho que a corte de Rihad pode usar para descobrir a localização de Fang Lair. Volte à corte para entregar o pergaminho a Blubamka.');
   },
   preview:function(){if(!ArenaCourt.preview())return false;var q=ArenaQuests.snapshot('MQ02');ArenaPersistence.setQuest('MQ02',40,Object.assign({},q.objectives,{parchmentRequest:true}),false);return true;},
   previewMaterials:function(){if(!ArenaStonekeep.preview())return false;materialsPending=c().visualSample.entry;return true;},
