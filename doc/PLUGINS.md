@@ -1,3 +1,7 @@
+## Visão de Ria M02-03C — estado vigente
+
+Arena_RiaVision0.1.0 acrescenta um registro (42 no total). Arena_Narrative0.3.0 compartilha cena/paginação com um provedor MQ02; API state()/schema2 de MQ01 intactos. Namespace novo arenaMQ02Narrative v1, mesma raiz/web arena:m01:save-v1; somente adaptador de repouso validado, sem consumidor de recursos adicional. [Contrato/dependências](plugins/Arena_RiaVision.md), [textos/arte/14 verificações](VISAO_RIA_M02_03C.md). Sem vozes, corte, batalhas novas ou dependências externas.
+
 ## Arredores M02-03B — estado vigente
 
 Arena_Rihad0.2.0 reutiliza Arena_Encounters sem clonagem/alteração: perfil rihad.outskirts, acesso/retorno fixos e fixture nível1 opcional no laboratório existente. Registro permanece41 entradas, nomes/ordem/status/parâmetros preservados; somente descrição da versão própria atualizada. Sem novas imagens, fórmula, prêmios paralelos ou namespace. [Roteiro/contratos](ARREDORES_RIHAD_M02_03B.md).

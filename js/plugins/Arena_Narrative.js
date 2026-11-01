@@ -1,15 +1,16 @@
 /*:
- * @plugindesc v0.2.0 Introdução, sonho de Ria e encerramento M01 persistentes.
+ * @plugindesc v0.3.0 Narrativa M01 e apresentação compartilhada da visão MQ02.
  * @author Codex
  * @help Após MV_NarrativePages, MV_StateStore, Arena_Quests e criação.
  * Configuração ArenaNarrative.json. Namespace arenaNarrative v2. Sem parâmetros.
- * API startCampaign/state/isCampaign/finish. Sem vozes, recompensas ou conteúdo M02.
+ * API startCampaign/state/isCampaign/finish/registerChapterSequence. Sem vozes/prêmios.
+ * Leitura MQ02 usa provedor/namespace próprios, mantendo dados e cursor M01.
  * Saves anteriores continuam técnicos; nunca simula introdução já presenciada.
  * Veja doc/plugins/Arena_Narrative.md e NARRATIVA_M01_18.md.
  */
 var ArenaNarrative,Scene_ArenaNarrative;
 (function(){
- 'use strict';
+ 'use strict';var chapterSequence=null;
  DataManager._databaseFiles.push({name:'$arenaNarrative',src:'ArenaNarrative.json'});
  MVStateStore.register('arenaNarrative',2,{mode:'technical',phase:'none',section:0,word:0,history:[]},function(s,version){
   if(version===1&&s){var p=migratePosition(s);s.section=p.section;s.word=p.word;s.history=(s.history||[]).map(migratePosition);}
@@ -28,11 +29,15 @@ var ArenaNarrative,Scene_ArenaNarrative;
  function campaign(){return !!$gameSystem&&state().mode==='campaign';}
  // A lab or a registered chapter destination owns routing after continuation;
  // the original M01 cursor/history remain preserved in their namespace.
- function active(){return campaign()&&!(window.ArenaContinuation&&(ArenaContinuation.labActive()||ArenaContinuation.campaignActive()))&&['intro','ria','ending','ended'].indexOf(state().phase)>=0;}
- function section(s){return $arenaNarrative.sections.filter(function(v){return v.phase===s.phase;})[s.section];}
+ function chapter(){return chapterSequence&&chapterSequence.active()?chapterSequence:null;}
+ function viewState(){var c=chapter();return c?c.read():state();}
+ function storeView(s){var c=chapter();if(c)c.write(s);else store(s);}
+ function active(){return !!chapter()||campaign()&&!(window.ArenaContinuation&&(ArenaContinuation.labActive()||ArenaContinuation.campaignActive()))&&['intro','ria','ending','ended'].indexOf(state().phase)>=0;}
+ function section(s){var c=chapter();return c?c.sections()[s.section]:$arenaNarrative.sections.filter(function(v){return v.phase===s.phase;})[s.section];}
  function fence(){$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();}
  ArenaNarrative={
   state:state,isCampaign:campaign,
+  registerChapterSequence:function(sequence){if(chapterSequence)throw Error('Sequência de capítulo já registrada.');chapterSequence=sequence;},
   startCampaign:function(){
    if(!ArenaCharacterCreation.isCreated()||state().phase!=='none')return false;
    store({mode:'campaign',phase:'intro',section:0,word:0,history:[]});
@@ -51,6 +56,10 @@ var ArenaNarrative,Scene_ArenaNarrative;
  };
  function layout(){
   var w=Graphics.boxWidth,h=Graphics.boxHeight,wide=h<500;
+  if(chapter()){
+   if(wide){var cw=Math.floor(w*.52);return {w:w,h:h,x:cw+24,y:12,width:w-cw-48,height:h-96,art:{x:24,y:12,width:cw-24,height:h-96}};}
+   var ch=Math.floor((h-96)*.59);return {w:w,h:h,x:24,y:24+ch,width:w-48,height:h-108-ch,art:{x:24,y:12,width:w-48,height:ch}};
+  }
   if(wide){var iw=Math.floor(w*.52);return {w:w,h:h,x:iw+28,y:80,width:w-iw-52,height:h-160,art:{x:24,y:80,width:iw-12,height:h-160}};}
   var ih=Math.floor((h-160)*.59);return {w:w,h:h,x:24,y:80+ih+10,width:w-48,height:h-170-ih,art:{x:24,y:80,width:w-48,height:ih}};
  }
@@ -70,7 +79,7 @@ var ArenaNarrative,Scene_ArenaNarrative;
  };
  Scene_ArenaNarrative.prototype.create=function(){
   this._original={width:Graphics.width,height:Graphics.height,boxWidth:Graphics.boxWidth,boxHeight:Graphics.boxHeight};this.size();
-  Scene_MenuBase.prototype.create.call(this);this._focus=1;
+  Scene_MenuBase.prototype.create.call(this);this._focus=chapter()?(ArenaContinuation.labActive()?3:2):1;
   this._art=new Sprite();this.addChildAt(this._art,1);
   this.build();this.waitFresh();
  };
@@ -83,12 +92,12 @@ var ArenaNarrative,Scene_ArenaNarrative;
   this.draw();
  };
  Scene_ArenaNarrative.prototype.draw=function(){
-  var s=state(),end=['ending','ended'].indexOf(s.phase)>=0,entry=end?null:section(s),l=layout();
+  var c=chapter(),s=viewState(),end=!c&&['ending','ended'].indexOf(s.phase)>=0,entry=end?null:section(s),l=layout();
   if(!end&&!entry)throw Error('Arena: posição narrativa inválida no save.');
   if(this._body.x!==l.x||this._body.width!==l.width||this._body.height!==l.height){this._body.move(l.x,l.y,l.width,l.height);this._body.createContents();}
   [this._header,this._body,this._footer].forEach(function(w){w.contents.clear();});
   var title=end?'Fim da demonstração M01':s.phase==='ria'?'Ria Silmane · Em um sonho':'Arena · Antes da prisão';
-  paint(this._header,title,0,0,this._header.contentsWidth(),32,26);
+  this._header.visible=!c;if(!c)paint(this._header,title,0,0,this._header.contentsWidth(),32,26);
   var text=end?$arenaNarrative.ending:entry.text.replace(/\{nome\}/g,$gameActors.actor(1).name());
   var font=l.w<700?22:24,line=font+7;this._body.contents.fontSize=font;
   this._page=MVNarrativePages.page(text,s.word,this._body.contentsWidth(),Math.max(1,Math.floor(this._body.contentsHeight()/line)),this._body.textWidth.bind(this._body));
@@ -97,21 +106,29 @@ var ArenaNarrative,Scene_ArenaNarrative;
   if(this._picture!==picture){this._picture=picture;this._art.bitmap=ImageManager.loadPicture(picture);this._art.bitmap.addLoadListener(function(){if(!this._terminated)this.placeArt();}.bind(this));}
   this._art.visible=true;this.placeArt();
   this._buttons=end?[{id:'save',text:'Salvar'},{id:'title',text:'Voltar ao título'}]:[{id:'back',text:'Voltar',disabled:!s.history.length},{id:'next',text:'Continuar'}];
+  if(c){this._buttons=[{id:'back',text:'Voltar',disabled:!s.history.length}];
+   if(ArenaContinuation.labActive())this._buttons.push({id:'storeRAM',text:'Guardar RAM'},{id:'loadRAM',text:'Carregar RAM'});
+   else this._buttons.push({id:'save',text:'Salvar'});
+   this._buttons.push({id:'next',text:s.section===c.sections().length-1&&this._page.next>=this._page.total?'Despertar':'Continuar'});
+  }
   if(end&&window.ArenaContinuation&&ArenaContinuation.canContinueCampaign())this._buttons.unshift({id:'journey',text:'Continuar jornada'});
   this._focus=Math.min(this._focus,this._buttons.length-1);
   var n=this._buttons.length,width=this._footer.contentsWidth()/n;
-  this._buttons.forEach(function(b,i){var x=i*width;b.rect={x:this._footer.x+16+x,y:this._footer.y+8,width:width,height:44};if(i===this._focus)this._footer.contents.fillRect(x,0,width-6,28,'#285052');paint(this._footer,b.text,x+4,0,width-14,28,20,b.disabled?'#66716d':null,'center');},this);
+  this._buttons.forEach(function(b,i){var x=i*width;b.rect={x:this._footer.x+16+x,y:this._footer.y+8,width:width,height:44};if(i===this._focus)this._footer.contents.fillRect(x,0,width-6,28,'#285052');paint(this._footer,b.text,x+4,0,width-14,28,c?18:20,b.disabled?'#66716d':null,'center');},this);
  };
  Scene_ArenaNarrative.prototype.placeArt=function(){var a=layout().art,b=this._art.bitmap;if(!b||!b.width)return;var scale=Math.min(a.width/b.width,a.height/b.height);this._art.scale.set(scale,scale);this._art.x=a.x+(a.width-b.width*scale)/2;this._art.y=a.y+(a.height-b.height*scale)/2;};
  Scene_ArenaNarrative.prototype.action=function(id){
-  var s=state(),b=this._buttons.filter(function(v){return v.id===id;})[0];if(!b||b.disabled)return;
+  var c=chapter(),s=viewState(),b=this._buttons.filter(function(v){return v.id===id;})[0];if(!b||b.disabled)return;
   this.waitFresh();
   if(id==='journey'){ArenaContinuation.beginCampaign();return;}
+  if(id==='storeRAM'){ArenaContinuation.memorySave();this.draw();return;}
+  if(id==='loadRAM'){if(ArenaContinuation.memoryLoad())SceneManager.goto(chapter()?Scene_ArenaNarrative:Scene_Map);else SoundManager.playBuzzer();return;}
   if(id==='save'){$gameTemp._arenaNarrativeSaveFence=true;SceneManager.push(Scene_Save);return;}
   if(id==='title'){s.phase='ended';store(s);$gameTemp._arenaNarrativeTitleFence=true;SceneManager.clearStack();SceneManager.goto(Scene_Title);return;}
-  if(id==='back'){var prev=s.history.pop();s.phase=prev.phase;s.section=prev.section;s.word=prev.word;store(s);this.draw();return;}
+  if(id==='back'){var prev=s.history.pop();s.phase=prev.phase;s.section=prev.section;s.word=prev.word;storeView(s);this.draw();return;}
   s.history.push({phase:s.phase,section:s.section,word:s.word});
   if(this._page.next<this._page.total)s.word=this._page.next;
+  else if(c&&s.section===c.sections().length-1){c.finish();fence();SceneManager.goto(Scene_Map);return;}
   else if(s.phase==='intro'&&s.section===$arenaNarrative.sections.filter(function(v){return v.phase==='intro';}).length-1){s.phase='ria';s.section=0;s.word=0;}
   else if(s.phase==='ria'&&s.section===$arenaNarrative.sections.filter(function(v){return v.phase==='ria';}).length-1){
    if(ArenaQuests.snapshot().stage===0)ArenaQuests.begin();
@@ -119,7 +136,7 @@ var ArenaNarrative,Scene_ArenaNarrative;
    s.phase='dungeon';s.section=0;s.word=0;s.history=[];store(s);
    $gamePlayer.reserveTransfer($arenaDungeon.mapId,$arenaDungeon.start[0],$arenaDungeon.start[1],4,0);fence();SceneManager.clearStack();SceneManager.goto(Scene_Map);return;
   }else{s.section++;s.word=0;}
-  store(s);this.draw();
+  storeView(s);this.draw();
  };
  Scene_ArenaNarrative.prototype.update=function(){
   if(this.size())this.build();Scene_MenuBase.prototype.update.call(this);

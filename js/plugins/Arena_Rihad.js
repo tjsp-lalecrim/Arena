@@ -3,7 +3,7 @@
  * @author Codex
  * @help Após Arena_CampaignConfig e Arena_Continuation. ArenaRihad.json.
  * Chegada real conserva recursos. Amostra técnica usa fixtures/RAM existentes;
- * slots e backups normais permanecem bloqueados nela. Sem corte/visão de Ria.
+ * slots e backups normais permanecem bloqueados nela. Sem corte; Ria em plugin próprio.
  * Veja doc/CHEGADA_RIHAD_M02_03A.md. Sem parâmetros/dependências externas.
  */
 var ArenaRihad;
@@ -39,7 +39,7 @@ var ArenaRihad;
    var q=ArenaQuests.snapshot('MQ02'),stage=q&&q.stage||0;
    if(stage<20)return message(i,['Você chegou a Rihad, no sul de Hammerfell.','Há um lugar de repouso na plataforma a leste.',
     'Há ratos nos arredores, pelo acesso a leste.',
-    'A visão de Ria e a corte ainda não estão disponíveis.']);
+    'Recupere suas forças aqui; a corte virá depois.']);
    return message(i,['Procura notícias de Fang Lair? Pergunte na corte.','O palácio fica junto à muralha da cidade.',
     'A corte ainda não está acessível nesta amostra.']);
   },

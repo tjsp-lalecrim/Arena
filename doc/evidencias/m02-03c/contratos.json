@@ -1,0 +1,13 @@
+{
+  "base": "30227500f858a7a35466268e3c8f88a00065fdfc",
+  "checks": [
+    "Maps/arrivals/rest/enemies/rewards/resources/progression/E05/MQ01 narrative data and web namespace files unchanged",
+    "MQ01 journal definition untouched; only MQ02 added",
+    "Canonical MV JSON/UTF8 without BOM:42 plugins,41 previous names/order/status/parameters preserved; narrative description/version updated",
+    "Touched runtime/test scripts pass syntax checks",
+    "Eight stable sections reference one existing1536x1024 pilot; prompt/provided sources/output hash recorded",
+    "m01 tag preserved"
+  ],
+  "artSha256": "a086741174e75d106c0e5658b860e4d80ca5b0912f6a73e116cac5342f93d431",
+  "originalTextSha256": "dae070edf25b137daa2d023c8335d2e276aa6a8bd1f64ef05011ce7cc1254bd7"
+}

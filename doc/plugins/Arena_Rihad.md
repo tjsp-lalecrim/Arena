@@ -1,3 +1,7 @@
+## Integração opcional Ria M02-03C
+
+Arena_RiaVision envolve a interação de repouso e orientação. Informante pré-visão mantém instruções de chegada/repouso/arredores; depois da leitura aponta corte e a consulta válida avança20→30. Sem tocar em access/return/patrulha/receipts. Novo acesso de título Rihad · visão de Ria (RAM) prepara nível2 somente na fixture, mantendo chegada nível1 disponível. [Um roteiro agrupado](../VISAO_RIA_M02_03C.md); manuais adiados, sem aprovação inferida.
+
 ## v0.2.0 — arredores M02-03B
 
 Delta: ArenaRihad.json.outskirts identifica entradas/retorno e eventos; visitOutskirts(interpreter)/returnToArrival(interpreter) validam mapa/evento/distância, MQ02≥10, campanha e ausência de batalha/transferência. Transferências nativas não curam/premiam. Somente dois acessos fixos, sem sistema geral de viagem. Perfil de quatro ratos em ArenaCampaign.json usa integralmente Arena_Encounters e loot existentes; completionQuestId MQ02 impede que conclusão MQ01 reative a área durante MQ02.

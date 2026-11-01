@@ -41,6 +41,50 @@
         }
       ],
       "source": "J10-J40 e R01/R04 em MQ01_ESPECIFICACAO.md, adaptação de apresentação pt-BR. Narrativa separada de instruções,sem alterar regras."
+    },
+    {
+      "id": "MQ02",
+      "title": "Fang Lair",
+      "narrative": [
+        {
+          "revealAt": 10,
+          "text": "Cheguei a Rihad após minha fuga. Posso recuperar as forças antes de prosseguir."
+        },
+        {
+          "revealAt": 20,
+          "text": "Ria explicou que o Staff of Chaos foi dividido em oito fragmentos. O primeiro está em Fang Lair, mas ela não sabe a localização exata."
+        },
+        {
+          "revealAt": 30,
+          "text": "Um morador indicou a corte de Rihad, junto à muralha, para buscar notícias de Fang Lair. A audiência ainda não está disponível nesta versão de teste."
+        }
+      ],
+      "steps": [
+        {
+          "id": "ria-vision",
+          "objectiveId": "riaVision",
+          "revealAt": 10,
+          "doneAt": 20,
+          "text": "Fortalecer-me e repousar no local autorizado de Rihad.",
+          "completedText": "Ouvi a visão de Ria sobre os oito fragmentos."
+        },
+        {
+          "id": "ask-rihad",
+          "objectiveId": "askRihad",
+          "revealAt": 20,
+          "doneAt": 30,
+          "text": "Procurar informações sobre Fang Lair em Rihad.",
+          "completedText": "Recebi orientação para procurar a corte."
+        },
+        {
+          "id": "reach-court",
+          "revealAt": 30,
+          "doneAt": 40,
+          "text": "Procurar a corte de Rihad. Audiência ainda indisponível nesta amostra.",
+          "completedText": "Audiência obtida."
+        }
+      ],
+      "source": "TEMPLATE.DAT #1500/#1294, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas."
     }
   ]
 }

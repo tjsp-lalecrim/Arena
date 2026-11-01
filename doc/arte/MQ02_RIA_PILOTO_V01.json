@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-01",
+  "version": "v01",
+  "status": "Candidata; aguarda avaliação estética do responsável. Não produzir variantes nesta entrega.",
+  "tool": "image_gen.imagegen — ferramenta integrada, edição referenciada",
+  "prompt": "Criar UMA ilustração narrativa-piloto horizontal 1536x1024 para o jogo Arena, dark fantasy de acabamento pictórico refinado, não pixel art. Referência fornecida 1: img/pictures/arena_ria_narrativa_r02.png, APENAS para identidade e acabamento aprovado de Ria Silmane: preservar seu rosto reconhecível, cabelo longo escuro flutuante, brincos discretos, manto branco translúcido luminoso e presença espectral azul-fria. Referência fornecida 2: doc/prints/ria silmane.jfif, captura do Arena original, APENAS para identidade da aparição, cabelos, tecido e atmosfera onírica; não reproduzir baixa resolução. MUDAR O CONTEXTO da referência1: esta é uma visão em sonho durante repouso em Rihad, não a prisão inicial. Mostrar somente Ria surgindo numa extensão ampla de névoa azul-prateada e sombra carvão abstrata, ambiente de sonho sem local arquitetônico identificável. Composição: Ria central levemente à esquerda, busto/meio corpo, rosto sereno e urgente legível no jogo, cabelo e manto dissolvendo nas brumas, boa área de respiro à direita, olhos com definição natural, luz fria coerente. Sua roupa envolve o próprio corpo; não acrescentar mãos soltas. Nenhum protagonista ou outra pessoa, nenhum corpo ou silhueta de observador, sem mãos/braços de jogador, reflexos de pessoas, armas, equipamentos, cela, grades, correntes, chave rubi, altar, porta ou cenário de masmorra. Não mostrar o Staff, fragmentos, mapa, localização ou símbolos inventados. Sem texto, logos, molduras ou interface. Preservar a identidade espectral aprovada de Ria e cores frias, sem fantasia medieval genérica, sem aparência de fotografia/3D. A imagem deverá ocupar um quadro amplo com proporção preservada; personagem não cortada nas bordas do rosto/cabelos.",
+  "referencesProvided": [
+    {
+      "path": "img/pictures/arena_ria_narrativa_r02.png",
+      "role": "identidade/acabamento aprovados; arquitetura excluída",
+      "sha256": "e3b60a23eeb8c57d7b662f91a5d95a90de78a2afbca71da77cf4d1989fad6983"
+    },
+    {
+      "path": "doc/prints/ria silmane.jfif",
+      "role": "identidade da aparição original",
+      "sha256": "6e26b9ccd873bddead247b6ce916e496627a6ed9aa23dac1b7403720edcb0441"
+    }
+  ],
+  "output": "img/pictures/Arena_MQ02_Ria_piloto_v01.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "reuse": "Primeiro bloco: piloto integrado. Demais sete: mesma composição provisória, não novas ilustrações específicas.",
+  "visualInspection": "Somente Ria, cabelos escuros, manto luminoso, brumas azuis. Sem cela, chaves, protagonista, membros de observador, texto ou Staff inventado. Arte original preservada.",
+  "sourcesText": [
+    "ARENA/TEMPLATE.DAT #1500 e #1294",
+    "wiki local Arena_Fang Lair (quest), pp.1–2"
+  ],
+  "outputSha256": "a086741174e75d106c0e5658b860e4d80ca5b0912f6a73e116cac5342f93d431",
+  "originalTextFileSha256": "dae070edf25b137daa2d023c8335d2e276aa6a8bd1f64ef05011ce7cc1254bd7",
+  "textOffsets": {
+    "block1500": [
+      247099,
+      247794
+    ],
+    "block1294": [
+      247795,
+      248496
+    ]
+  },
+  "existingAssetsInspected": [
+    {
+      "path": "img/pictures/arena_ria_sonho_v01.png",
+      "evaluation": "Contém protagonista e cela; excluída."
+    },
+    {
+      "path": "img/pictures/arena_ria_narrativa_r02.png",
+      "evaluation": "Identidade aprovada, mas cela/grade/correntes/chave não adequadas ao repouso em Rihad; somente identidade fornecida à ferramenta."
+    },
+    {
+      "path": "img/pictures/Arena_intro_R07_r02.png",
+      "evaluation": "Conferência adicional: aparição entre grades/correntes/jaula; preservada, não fornecida à ferramenta."
+    },
+    {
+      "path": "img/pictures/Arena_intro_R09_r02.png",
+      "evaluation": "Conferência adicional: cela/correntes/grade e leito de palha; preservada, não fornecida à ferramenta."
+    }
+  ]
+}

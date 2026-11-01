@@ -1,5 +1,7 @@
 # M02-03B — arredores de Rihad para progressão inicial
 
+**Atualização posterior:** manuais adiados expressamente pelo responsável; sem aprovação presumida do trecho ou descanso/RAM. [M02-03C](VISAO_RIA_M02_03C.md) integra a visão após nível2 e traz **um roteiro agrupado vigente**; abaixo permanece a referência3022750, na qual o sonho ainda estava ausente. Não exigir repetir os recortes antigos separadamente.
+
 01/11/2026. Feature `feature/m02-arredores-rihad`, sobre **b8738b9**, preservando02A/02B/03A e a tag m01. **Implementado tecnicamente para avaliação**, sem merge/push/Pages. M02-03 permanece parcial: sonho de Ria, corte e missão ausentes.
 
 ## Relato do responsável e adaptação

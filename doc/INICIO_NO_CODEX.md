@@ -1,8 +1,8 @@
 # Entrada operacional do Arena — pós-M01
 
-Atualizado em **01/11/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). A feature atual contém as dependências02A/02B e a chegada e os arredores M02-03A/B; a entrega m01 permanece intacta.
+Atualizado em **01/11/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). A feature atual contém as dependências02A/02B e a chegada, arredores e visão M02-03A/B/C; a entrega m01 permanece intacta.
 
-**Trabalho atual:** [M02-03B — arredores de Rihad](ARREDORES_RIHAD_M02_03B.md), feature/m02-arredores-rihad sobreb8738b9. Quatro ratos/60 EXP, retorno/repouso e fixture nível1 no acesso RAM existente;15 grupos focais Chrome, sem mudar campanha/balanceamento. Responsável confirmou acesso à estrada/informante03A, não descanso/RAM nem aprovação completa. Aguardar avaliação antes de Ria/corte/variantes. Dependências02A/02B preservadas; autorização de avanço02A não foi aprovação técnica manual.
+**Trabalho atual:** [M02-03C — visão de Ria](VISAO_RIA_M02_03C.md), feature/m02-visao-ria sobre3022750. Repouso nível2+, texto original completo dividido em8 blocos,14 grupos focais, cursor MQ02 separado e avanço20/informante30. Um piloto artísticoV01, sete blocos com a mesma composição provisória; aguardar avaliação antes de variantes. Manuais recentes adiados pelo responsável para sequência com conteúdo novo, sem aprovação inferida nem bloqueio do avanço técnico. Só estrada/informante03A têm confirmação parcial anterior. Corte/audiência não implementadas.
 
 **Alvo vigente:** navegador desktop, inicialmente Chrome; preservar toque. [MOBILE-01](MOBILE_01.md) concentra mobile/APK, sem data/tecnologia escolhidas ou validação física a cada entrega. Pages permanece manual, sem atualização nesta tarefa. QUALIDADE-01 é janela futura limitada, a reavaliar depois da entrega funcional M02; não é pré-requisito automático.
 
@@ -43,7 +43,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade autorizada nesta tarefa:** somente arredores M02-03B; encerrado o recorte, aguardar avaliação antes de Ria/corte. Manter MV, M01 e aprovações preservados. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura exige avaliação, sem corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi usada nos testes.
+**Continuidade autorizada nesta tarefa:** somente visão de Ria M02-03C; encerrado o recorte, aguardar avaliação artística antes de variantes. Manuais podem ser agrupados à próxima entrega de conteúdo; corte exige autorização própria. Manter MV, M01 e aprovações preservados. Política global de saves em PERSISTENCIA_M01.md: preservar quando simples; ruptura exige avaliação, sem corrupção ou namespace alterado silenciosamente. Nenhuma partida pessoal foi usada nos testes.
 
 ---
 
