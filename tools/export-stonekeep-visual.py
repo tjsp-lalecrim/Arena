@@ -58,7 +58,7 @@ dest=ROOT/('img/tilesets/'+c['sheet']+'.png')
 sheet.save(dest)
 manifest={
     'version':c['version'],'tool':'image_gen built-in; export técnico Pillow',
-    'approval':'pendente do responsável','tileSize':48,'sheetSize':list(sheet.size),
+    'approval':c.get('directionApproval','pendente do responsável'),'tileSize':48,'sheetSize':list(sheet.size),
     'shoreCrop':list(bounds),'shoreExport':[48,8],
     'wallFace':[96,96],'wallCap':[96,48],'capBrightness':.43,
     'masters':{p.name:{'size':list(Image.open(p).size),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(masters.glob('*.png'))},
@@ -66,7 +66,7 @@ manifest={
     'reused':['img/tilesets/Arena_Water_M14_R02_A1.png','img/tilesets/Arena_Dungeon_M14_R03.png','img/characters/!$Arena_Ripple_M14_R02.png'],
     'notes':['Somente pixels gerados por IA nos novos materiais; consultas originais não exportadas.',
              'Cap derivado técnico da alvenaria, escurecido; não identificação de teto original.',
-             'Atribuição regional explícita para demonstração, não materialização completa do MIF.',
+             'Atribuição por configuração: materiais confirmados separados de superfícies e ornamentos ausentes.',
              'Sem decoração, portas, carpete, item ou inimigo novos.']
 }
 (ROOT/'doc/arte/STONEKEEP_VISUAL_V01_EXPORTS.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf8')

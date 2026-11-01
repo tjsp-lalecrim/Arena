@@ -1,7 +1,12 @@
 {
   "version": "stonekeep-visual-v01",
   "tool": "image_gen built-in; export técnico Pillow",
-  "approval": "pendente do responsável",
+  "approval": {
+    "reference": "73ae86e",
+    "scope": "direção visual dos cinco materiais testados, coerência com original",
+    "limits": "não aprova assets ausentes, aplicação ampliada, autoria MV ou dispositivo não informado",
+    "status": "aprovada pelo responsável"
+  },
   "tileSize": 48,
   "sheetSize": [
     384,
@@ -75,7 +80,7 @@
   "notes": [
     "Somente pixels gerados por IA nos novos materiais; consultas originais não exportadas.",
     "Cap derivado técnico da alvenaria, escurecido; não identificação de teto original.",
-    "Atribuição regional explícita para demonstração, não materialização completa do MIF.",
+    "Atribuição por configuração: materiais confirmados separados de superfícies e ornamentos ausentes.",
     "Sem decoração, portas, carpete, item ou inimigo novos."
   ]
 }

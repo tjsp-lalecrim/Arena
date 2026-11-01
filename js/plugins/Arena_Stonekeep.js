@@ -90,7 +90,7 @@ var ArenaStonekeep;
  };
  Scene_Map.prototype.update=function(){update.apply(this,arguments);if(!this._stoneLabels)return;var b=this._stoneLabels.bitmap;b.clear();this._stoneLabels.visible=!$gameMessage.isBusy();
   function label(x,y,t){var px=$gameMap.adjustX(x)*48+24,py=$gameMap.adjustY(y)*48-26;if(px<0||px>b.width||py<72||py>b.height)return;b.fontSize=17;b.fillRect(px-155,py,310,26,'rgba(8,14,18,.9)');b.textColor='#ead9b5';b.drawText(t,px-151,py,302,26,'center');}
-  if(here()){b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Stonekeep — amostra da passagem e ilha',16,3,b.width-32,30);b.fontSize=16;b.drawText('Trecho V01: aposento → margem · restante provisório · sem guardiões',16,37,b.width-32,26);if(ArenaPersistence.sourceStatus(c().sourceId).missing)label(c().source[0],c().source[1],'Pergaminho · marcador provisório');label(c().exit[0],c().exit[1],'Retornar a Rihad ↑');}
+  if(here()){b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Stonekeep — amostra da passagem e ilha',16,3,b.width-32,30);b.fontSize=16;b.drawText('Materiais V01 · variantes/objetos provisórios · sem guardiões',16,37,b.width-32,26);if(ArenaPersistence.sourceStatus(c().sourceId).missing)label(c().source[0],c().source[1],'Pergaminho · marcador provisório');label(c().exit[0],c().exit[1],'Retornar a Rihad ↑');}
   else if(ArenaStonekeep.known())label(10,12,'Estrada · Stonekeep ↓');
  };
 })();

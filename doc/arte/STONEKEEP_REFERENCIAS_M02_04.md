@@ -1,6 +1,6 @@
 # Stonekeep — levantamento visual delimitado
 
-01/11/2026, base **7a19c1a**, feature `feature/m02-stonekeep-amostra`. Consulta/planejamento apenas: nenhum asset artístico gerado, mapa ou regra alterados. Não registra aprovação da amostra. Fonte do processo/estilo: [DIRECAO_DE_ARTE.md](../DIRECAO_DE_ARTE.md); geometria: [DIRETIVA_DE_MAPAS.md](../DIRETIVA_DE_MAPAS.md); recorte funcional: [M02-04](../STONEKEEP_M02_04.md). Este é o registro principal dos materiais, não um novo backlog de polimento.
+01/11/2026, base **7a19c1a**, feature `feature/m02-stonekeep-amostra`. Registro inicial de consulta/planejamento: naquela etapa nenhum asset artístico foi gerado, mapa ou regra alterados. Estado vigente e aprovação posterior na aplicação R02 abaixo. Fonte do processo/estilo: [DIRECAO_DE_ARTE.md](../DIRECAO_DE_ARTE.md); geometria: [DIRETIVA_DE_MAPAS.md](../DIRETIVA_DE_MAPAS.md); recorte funcional: [M02-04](../STONEKEEP_M02_04.md). Este é o registro principal dos materiais, não um novo backlog de polimento.
 
 ## Prints → elementos → amostra
 
@@ -68,6 +68,31 @@ Organização recomendada, **sem mover arquivos ou criar infraestrutura agora**:
 **O primeiro conjunto não muda:** dois tipos de parede, dois pisos e margem no trecho já escolhido. A possibilidade de reuso futuro evita duplicação, mas não acrescenta variações/locais ao lote e não substitui fidelidade aos seis prints de Stonekeep. Encerrar esta consulta e voltar à amostra visual integrada; sem outra rodada de pesquisa automática.
 
 ## Reuso, substituição e primeiro conjunto
+
+### Aplicação ampliada R02 — vigente após73ae86e
+
+**Aprovação do responsável:** testou a amostra73ae86e e considerou os materiais coerentes com o original. A direção visual dos **cinco mestres e sua exportação V01** está aprovada; hashes em STONEKEEP_VISUAL_V01_EXPORTS.json. Não foram informados ambiente/dispositivo ou casos adicionais. Não estender a aprovação a guardiões, pergaminho, portas, carpetes, decoração ou famílias ainda ausentes. A aplicação ampliada abaixo continua para avaliação; não houve nova geração nem alteração dos pixels aprovados.
+
+Aplicação em todo o **mesmo recorte construído** de Map012, X2–139/Y2–100; nenhuma ampliação de planta. [Atribuição por célula](../mapas/STONEKEEP_MATERIAIS_M02.json) usa as camadas de consulta existentes do primeiro MAP1/FLOR e STKEEP1.INF, Xespelhado, escala3. Não depende de tmp nem do original para reconstruir. Substitui as faixas artísticas por X do piloto; direção visual aprovada não transforma aquelas faixas em distribuição original confirmada.
+
+| Material / função | Aplicação e limite |
+| --- | --- |
+| Piso manchado FLCASC#0/#1 |198 células-fonte de piso; expansão3×. Interior/apartamentos e corredores conforme FLOR, sem pintar também a margem com esse material |
+| Lajes claras FLCAS_E1 |248 células-fonte: margem e ilha, incluindo o pergaminho. Conectividade e plano de apoio existentes preservados |
+| Parede clara CASA#0 |13 células sólidas-fonte, incluindo BOXSIDE3; face2/cap1 nativos da geometria adaptada. Não converter todas as paredes claras em CASA |
+| Parede castanha CASF#0–2 |310 células sólidas-fonte. A exportação aprovada de CASF#2 representa a família; diferenças entre os quadros0/1 não foram produzidas |
+| Margem WCAS/R04 adaptada |458 células terrestres adjacentes à água recebem a faixa/cantos existentes; água A1, ondulação e natação intactas. Não torna outra área nadável |
+| Provisórios explícitos |55 células-fonte com REDRUG recebem **somente piso manchado de suporte**, não um carpete fictício;88 de CASF#3 têm base castanha sem o painel.24 CASK,35 CASL e47 outras/limite selado conservam material legado;9 pisos não cobertos também. Esses números são células-fonte do recorte, não contagem de NPCs ou arte nova |
+
+Essas associações delimitam o material declarado/usado, não a visibilidade no original. Face2/cap1, expansão3×, piso de suporte sob carpete ausente e tratamento de blocos elevados permanecem adaptações identificadas. Teto continua derivado técnico escurecido; não é uma nova textura original confirmada. Não foram inventadas portas, objetos ou obstáculos para preencher lacunas.
+
+**Verificação R02:** [resultado focal](../evidencias/m02-04-visual-r02/resultado.json), [reconstrução e hashes](../evidencias/m02-04-visual-r02/contratos.json), [visão geral](../evidencias/m02-04-visual-r02/visao-geral.png). Mesmo canvas816×624/tiles48px no Chrome, sessão isolada em RAM. Entrada, aposentos, passagem, margem e ilha acessíveis por trajeto nativo; fonte/evento mantidos, sem repetir coleta.1404 bordas de paredes conferidas, água entra/sai pelo teclado, movimento/quadros nativos mantidos; checkpoint e estados preservados. Comparação integral das camadas de colisão/eventos/posição da fonte e mapas008–011/tilesets0–4 sem mudanças. Gerador pai recompõe os dez outputs pertinentes de modo estável; folha, cinco mestres e água mantêm hashes. Sem campanha/batalhas ou novo teste físico/editor. Capturas inspecionadas: continuidade modular, cantos, diferenciação de planos e personagem; áreas legadas continuam visivelmente provisórias, não defeitos mascarados como arte concluída.
+
+Reconstrução mantém `tools/export-stonekeep-visual.py` (bytes artísticos iguais), `node tools/build-stonekeep-sample.cjs` e o pai Rihad. Para evidência nova: `node tools/test-stonekeep-visual.cjs m02-04-visual-r02` e `python tools/render-stonekeep-visual.py m02-04-visual-r02`; pranchas V01 preservadas. Acesso em localhost8774 permanece **Stonekeep · materiais (RAM)** para o aposento e **Stonekeep · passagem (RAM)** para iniciar pela estrada/entrada. Ctrl+F5 atualiza os arquivos sem limpar saves.
+
+**Próximo conjunto indispensável recomendado, não iniciado:** duas amostras de parede — CASK quase negra e CASL clara irregular — para substituir os materiais legados dessas famílias sem confundi-las com CASA/CASF. Carpete, painéis, portas, objetos e guardiões ficam em recortes próprios posteriores; aprovação deste conjunto não os autoriza automaticamente. Aguardar avaliação da aplicação R02 antes de outra produção artística.
+
+### Histórico do piloto V01
 
 **Atualização de produção V01 — 01/11/2026, sobre e23aed6:** primeiro conjunto gerado e integrado somente em **Map012, X59–92/Y32–49**, aposento(84,42) → passagem(75,39) → margem(66,39). **Aprovação visual pendente**; não autoriza expansão/variantes. Este bloco atualiza o estado de produção; o levantamento acima permanece evidência de consulta.
 

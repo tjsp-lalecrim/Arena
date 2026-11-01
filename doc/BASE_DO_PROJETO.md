@@ -6,6 +6,8 @@ Este documento é a fonte inicial de contexto para desenvolver uma releitura de 
 
 ## Decisões confirmadas
 
+- Cidades preservam a topologia original, com eventos mínimos da campanha; interiores fora do recorte podem ficar inacessíveis. [Fonte principal e aplicação futura em Rihad](DIRETIVA_DE_MAPAS.md#cidades-topologia-original-e-recorte-de-eventos).
+
 - Motor: RPG Maker MV 1.6.1.
 - Direção: releitura de Arena com escopo reduzido.
 - O projeto do jogo já foi criado.

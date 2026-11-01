@@ -59,6 +59,8 @@ Origem: `node tools/build-stonekeep-sample.cjs`; o gerador pai `node tools/build
 
 ## Avaliação curta
 
+**Aplicação ampliada R02:** responsável aprovou a direção dos materiais73ae86e, sem estender a assets ausentes ou declarar ambiente. Os mesmos pixels agora cobrem as famílias confirmadas no recorte jogável existente; carpetes/painéis/famílias faltantes seguem explícitos e provisórios. [Cobertura, exclusões, capturas e testes focais](arte/STONEKEEP_REFERENCIAS_M02_04.md#aplicação-ampliada-r02--vigente-após73ae86e). Sem expansão da planta, coleta/recompensas novas ou alterações em Rihad/Imperial Dungeons.
+
 **Amostra visual V01 posterior ao levantamento e23aed6:** apenas aposento→passagem→margem, X59–92/Y32–49. Cinco materiais IA, tileset5/C próprio; água, natação, fonte e layout preservados. O restante continua provisório. [Arquivos, prompts, reconstrução, comparação e sete grupos focais](arte/STONEKEEP_REFERENCIAS_M02_04.md#reuso-substituição-e-primeiro-conjunto). Avaliação direta: título → **Stonekeep · materiais (RAM)**, início(84,42); não depende de refazer a rota inteira. Aprovação visual do responsável ainda pendente, sem expansão autorizada.
 
 **http://127.0.0.1:8774/**. Servidor original deste projeto **PID10096** preservado; duplicado19428 iniciado pelo agente foi encerrado na correção acima. A antiga indicação de porta livre estava incorreta. Para encerrar o servidor original quando desejado: PowerShell `Stop-Process -Id 10096` (conferir o processo caso a sessão já tenha terminado). Editor: playtest do projeto atual; nome na árvore **M02-04 Stonekeep — amostra**.

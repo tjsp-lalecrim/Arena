@@ -1,18 +1,50 @@
 {
   "version": "stonekeep-visual-v01",
-  "status": "amostra integrada, aprovação visual pendente",
+  "status": "direção dos cinco materiais aprovada em73ae86e; aplicação ampliada para avaliação",
   "mapId": 12,
   "tilesetId": 5,
   "baseTilesetId": 4,
   "sheet": "Arena_Shared_Castle_Stone_V01_C",
-  "bounds": [59, 32, 92, 49],
-  "paleFloorThroughX": 71,
-  "lightWallFromX": 79,
+  "bounds": [
+    2,
+    2,
+    139,
+    100
+  ],
   "wallHeight": 2,
   "ceilingDepth": 1,
   "tileSize": 48,
-  "reviewPoints": {"aposento": [84, 42], "passagem": [75, 39], "margem": [66, 39]},
-  "reason": "Aposento FLCASC/CASA → passagem CASF → margem FLCAS_E1/WCAS. Limites de aplicação são recorte autoral de demonstração; não reconstrução automática de todos os materiais MIF.",
+  "reviewPoints": {
+    "aposento": [
+      84,
+      42
+    ],
+    "passagem": [
+      75,
+      39
+    ],
+    "margem": [
+      66,
+      39
+    ],
+    "entrada": [
+      129,
+      15
+    ],
+    "ilha": [
+      30,
+      72
+    ]
+  },
+  "reason": "Ampliação dentro do mesmo recorte construído. Famílias confirmadas do MAP1/FLOR; famílias ausentes mantêm representação provisória explícita.",
   "masters": "art/masters/stonekeep-v01",
-  "exporter": "tools/export-stonekeep-visual.py"
+  "exporter": "tools/export-stonekeep-visual.py",
+  "applicationRevision": "coverage-r02",
+  "materialAssignment": "doc/mapas/STONEKEEP_MATERIAIS_M02.json",
+  "directionApproval": {
+    "reference": "73ae86e",
+    "scope": "direção visual dos cinco materiais testados, coerência com original",
+    "limits": "não aprova assets ausentes, aplicação ampliada, autoria MV ou dispositivo não informado",
+    "status": "aprovada pelo responsável"
+  }
 }

@@ -21,3 +21,5 @@ Contrato compartilhado acrescentado em Arena_Dungeon: `registerSwimming(mapId,co
 Gerador `build-stonekeep-sample.cjs`, também chamado pelo pai Rihad, lê o recorte autoral versionado e atualiza Map012/MapInfos, vínculos mínimos e item7. Nenhum dado de personagem é gerado. [Teste focal](../evidencias/m02-04/resultado.json); namespace de saves e motor intactos. Arte de guardiões/objeto e autoria MV continuam pendentes.
 
 Ao criar a apresentação de Map012, um Game_Map salvo com tileset4 é sincronizado ao5 da V01 antes de carregar bitmaps. Não reposiciona/recria eventos nem altera inventário/quest/recursos; só a revisão visual conhecida4→5. Caso sintético serializado em RAM coberto no teste focal.
+
+Aplicação de materiais R02 mantém a API/viagem e o esquema; `visualSample.bounds` acompanha o mesmo recorte físico já construído, sem ampliar geometria. A atribuição do gerador usa STONEKEEP_MATERIAIS_M02.json, com famílias confirmadas e provisórios explícitos; folha C/mestres não mudam.

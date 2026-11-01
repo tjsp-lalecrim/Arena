@@ -1,5 +1,9 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
+## Cidades: topologia original e recorte de eventos
+
+Diretriz aprovada pelo responsável: preservar a estrutura dos mapas urbanos originais; nesta fase, acrescentar somente eventos necessários à campanha principal. Não substituir a topologia por um mapa pequeno genérico. Interiores dispensáveis podem permanecer inacessíveis, identificados como fora do recorte. Documentar fontes e adaptações. Rihad existente permanece provisória e será adequada quando seu mapa voltar ao backlog; esta decisão não autoriza alterá-la agora.
+
 ## Descanso: pontos explícitos, não toda elevação
 
 Repouso usa somente a lista autorizada de ArenaRecovery.json, com origem/apoio/acesso e exclusões documentados; sem inferir descanso de objetos decorativos ou gerar pontos proceduralmente. Plataformas adjacentes podem ter sprites/superfícies próprios: conferir na escala de jogo antes de agrupar interações. Preservar funções de quest, colisão e geometria; descanso não autoriza segurança absoluta ou nova regra de ameaças. Geradores recompõem os eventos configurados sem mudar IDs anteriores. Cobertura atual e exclusão da chave em [EXPANSAO_DESCANSO_M01.md](EXPANSAO_DESCANSO_M01.md).

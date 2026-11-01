@@ -1,6 +1,6 @@
 // Focal V01 checks: isolated Chrome/origin, existing RAM lab, no personal saves.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),crypto=require('crypto'),assert=require('assert/strict'),{chromium}=require('playwright');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/m02-04-visual-v01');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias',process.argv[2]||'m02-04-visual-v01');
 const read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
 const old=f=>JSON.parse(cp.execFileSync('git',['show','e23aed6:'+f],{cwd:root,encoding:'utf8'}));
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
@@ -43,7 +43,7 @@ const server=http.createServer((req,res)=>{const rel=decodeURIComponent(new URL(
  await p.keyboard.press('ArrowRight',{delay:65});await p.waitForTimeout(350);assert.equal(await p.evaluate(()=>ArenaDungeon.isSwimming()),false);await shot('saida-agua');
  await p.evaluate(()=>$gameTemp.setDestination(66,39));await p.waitForFunction(()=>$gamePlayer.x===66&&$gamePlayer.y===39&&!$gamePlayer.isMoving());
  assert.equal(await state(),initial);
- const walls=await p.evaluate(()=>{let tested=0;for(let y=32;y<=49;y++)for(let x=59;x<=92;x++)if($gameMap.regionId(x,y)!==1)for(const [d,dx,dy]of [[2,0,1],[4,-1,0],[6,1,0],[8,0,-1]])if($gameMap.regionId(x+dx,y+dy)===1){if($gamePlayer.canPass(x,y,d))throw Error('Wall bypass');tested++;}return tested;});assert(walls>0);
+ const walls=await p.evaluate(bounds=>{let tested=0;for(let y=bounds[1];y<=bounds[3];y++)for(let x=bounds[0];x<=bounds[2];x++)if($gameMap.regionId(x,y)!==1)for(const [d,dx,dy]of [[2,0,1],[4,-1,0],[6,1,0],[8,0,-1]])if($gameMap.regionId(x+dx,y+dy)===1){if($gamePlayer.canPass(x,y,d))throw Error('Wall bypass');tested++;}return tested;},c.bounds);assert(walls>0);
  checks.push('Native title option opens correct RAM scene at84,42; normal save blocked, personal web storage unchanged');
  checks.push('Native movement reaches room/passage/shore; keyboard enters and leaves water, destination path reaches adjacent land; wall edges remain blocked');
  checks.push('MQ01/MQ02, resources, attributes and inventory unchanged during sample traversal');
@@ -55,5 +55,5 @@ const server=http.createServer((req,res)=>{const rel=decodeURIComponent(new URL(
  await p.evaluate(()=>$gameMap.changeTileset(4));assert.equal(await p.evaluate(()=>ArenaContinuation.memorySave()),true);assert.equal(await p.evaluate(()=>ArenaContinuation.memoryLoad()),true);await p.evaluate(()=>SceneManager.goto(Scene_Map));await ready();await p.waitForFunction(()=>$gameMap.tilesetId()===5);assert.equal(await p.evaluate(()=>$gameMap.tilesetId()),5);assert.equal(await state(),initial);
  checks.push('Existing RAM checkpoint restores position/state; serialized legacy tileset4 updates only to visual5 without normal-slot writes');
  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);
- fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({version:c.version,browser:browser.version(),resolution:[816,624],base:'e23aed6',bounds:c.bounds,changedEntries:changed,shoreCells:shores,wallEdges: walls,checks,errors,missing,pending:['owner visual approval','native MV editor authoring/playtest not executed','no new physical mobile test'],scope:'Focal material sample only; no campaign/battles or source collection replay'},null,2)+'\n');console.log(JSON.stringify({checks:checks.length,changed,shores,walls,errors,missing}));
+ fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({version:c.version,applicationRevision:c.applicationRevision||'pilot',browser:browser.version(),resolution:[816,624],base:'e23aed6',bounds:c.bounds,changedEntries:changed,shoreCells:shores,wallEdges: walls,checks,errors,missing,pending:['owner expanded-application review; five-material direction already approved','native MV editor authoring/playtest not executed','no new physical mobile test'],scope:'Focal material application only; native route to all five points; no campaign/battles or source collection replay'},null,2)+'\n');console.log(JSON.stringify({checks:checks.length,changed,shores,walls,errors,missing}));
 }finally{if(browser)await browser.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -2,7 +2,7 @@
   "date": "2026-11-01",
   "version": "stonekeep-visual-v01",
   "tool": "image_gen built-in",
-  "approved": false,
+  "approved": true,
   "scope": "Cinco mestres; nenhuma outra categoria ou variante artística. Projeção e cores adaptadas às referências.",
   "jobs": [
     {
@@ -54,5 +54,6 @@
       "transparent": true,
       "master": "art/masters/stonekeep-v01/shore.png"
     }
-  ]
+  ],
+  "approvalScope": "Direção visual do conjunto testado em73ae86e; não aprova assets ausentes ou a aplicação ampliada R02."
 }

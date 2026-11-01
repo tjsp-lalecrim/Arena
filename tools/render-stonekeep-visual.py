@@ -1,11 +1,11 @@
 """Review boards only; captions/coordinates never enter the game tilesheet."""
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
-import json
+import json,sys
 ROOT=Path(__file__).resolve().parents[1]
 read=lambda p:json.loads((ROOT/p).read_text(encoding='utf8'))
 c=read('doc/mapas/STONEKEEP_VISUAL_V01.json');m=read('data/Map012.json')
-out=ROOT/'doc/evidencias/m02-04-visual-v01';out.mkdir(parents=True,exist_ok=True)
+out=ROOT/'doc/evidencias'/(sys.argv[1] if len(sys.argv)>1 else 'm02-04-visual-v01');out.mkdir(parents=True,exist_ok=True)
 font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',20)
 names=read('data/Tilesets.json')[m['tilesetId']]['tilesetNames']
 images={i:Image.open(ROOT/('img/tilesets/'+n+'.png')).convert('RGBA') for i,n in enumerate(names) if n}
@@ -30,10 +30,24 @@ for y in range(y0,y1+1):
             if t not in cache:cache[t]=tile(t)
             im.alpha_composite(cache[t],((x-x0)*48,(y-y0)*48+38))
 d=ImageDraw.Draw(im)
-for name,(x,y) in c['reviewPoints'].items():
+for name,(x,y) in (c['reviewPoints'].items() if not c.get('applicationRevision') else []):
     px,py=(x-x0)*48+24,(y-y0)*48+62
     d.ellipse((px-8,py-8,px+8,py+8),outline='#edc86f',width=3)
     d.text((px+12,py-22),f'{name} ({x},{y})',font=font,fill='#fff4d5',stroke_width=2,stroke_fill='#17191d')
+if c.get('applicationRevision'):
+    # Whole existing crop overview only; native size is inspected in game shots.
+    ratio=min(1,1600/w);terrain=im.crop((0,38,w,h+38)).resize((round(w*ratio),round(h*ratio)),Image.Resampling.LANCZOS)
+    overview=Image.new('RGBA',(terrain.width,terrain.height+38),'#10171a');overview.alpha_composite(terrain,(0,38))
+    # Redraw small review labels after scaling; never alter runtime tiles.
+    dd=ImageDraw.Draw(overview);small=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',16)
+    dd.text((8,8),'Stonekeep — materiais V01 / aplicacao R02 / mesmo recorte construido',font=small,fill='#ead9b5')
+    for name in ['entrada','passagem','ilha']:
+        x,y=c['reviewPoints'][name];px=round((x-x0+.5)*48*ratio);py=round((y-y0+.5)*48*ratio)+38
+        dd.ellipse((px-4,py-4,px+4,py+4),outline='#edc86f',width=2)
+        dd.text((min(px+8,overview.width-150),py-22),name,font=small,fill='#fff4d5',stroke_width=2,stroke_fill='#17191d')
+    overview.convert('RGB').save(out/'visao-geral.png')
+    print('Expanded overview written; no runtime artwork generated.')
+    raise SystemExit(0)
 im.convert('RGB').save(out/'visao-geral.png')
 board=Image.new('RGB',(1632,3*662),'#10171a');d=ImageDraw.Draw(board)
 for row,name in enumerate(['aposento','passagem','margem']):
