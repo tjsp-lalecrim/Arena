@@ -4,7 +4,7 @@
 
 ## Recorte atual — abertura REF16 (individual, sem avanço de setores)
 
-Uma ilustração V01 integrada em [Arena_TitleArt](plugins/Arena_TitleArt.md), baseada no TITLE.IMG original; quatro grupos focais Chrome passaram, aprovação artística pendente. Não autoriza outra imagem nem polimento geral. **Testes manuais de Stonekeep adiados pelo responsável para versão mais completa**, sem aprovação presumida. [Pendência de fidelidade/conectividade](STONEKEEP_M02_04.md#estado-manual-e-pendência-de-conectividade-após-eb81e7a): investigar futuramente caminhos aquáticos sob paredes nas fontes/instalação original antes de decidir adaptação, sem pesquisa/implementação agora. Setores e ordem posterior Stonekeep→levantamento de Rihad preservados, sem iniciar outro backlog nesta entrega.
+**Ilustração de fundo a39d71e aprovada explicitamente pelo responsável.** O recorte atual é somente a proposta única do título/logo separado, baseada nas letras originais, integrada em [Arena_TitleArt0.2.0](plugins/Arena_TitleArt.md); fundo intocado, título pendente de avaliação. Sem nova ilustração, outro setor ou polimento geral. **Testes manuais de Stonekeep adiados para versão mais completa**, sem aprovação presumida. [Pendência de fidelidade/conectividade](STONEKEEP_M02_04.md#estado-manual-e-pendência-de-conectividade-após-eb81e7a): investigar futuramente caminhos aquáticos sob paredes antes de decidir adaptação, sem pesquisa/implementação agora. Ordem Stonekeep→levantamento de Rihad preservada.
 
 ## M02-04C2.1/04C3.1 — faixa A2-E funcional
 
