@@ -339,9 +339,9 @@
     },
     "7": {
       "gold": {
-        "chance": 0,
-        "min": 0,
-        "max": 0
+        "chance": 0.25,
+        "min": 4,
+        "max": 40
       },
       "potions": {
         "chance": 0,
@@ -373,8 +373,8 @@
           "entries": []
         }
       },
-      "difficulty": "isolated battle pilot only",
-      "source": "Orc battle laboratory only; future campaign EXP/loot not configured. Do not transfer zeros silently."
+      "difficulty": "provisional-M02-BAL",
+      "source": "Monsters local PDF16: gold25%/4-40 confirmed. Only gold category configured for initial campaign integration; equipment/magic tables deferred, not absence in original."
     },
     "8": {
       "gold": {

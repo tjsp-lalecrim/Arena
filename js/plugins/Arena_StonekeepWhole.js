@@ -56,5 +56,5 @@ var ArenaStonekeepWhole;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(here())this.addCommand('Stonekeep: pontos da base integral','arenaStonekeepWholePoints');};
  var create=Scene_Menu.prototype.createCommandWindow;
  Scene_Menu.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeepWholePoints',function(){SceneManager.goto(Points);});};
- ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,49 encontros/32 portas. A2/B2: fechaduras comuns e passagem seca funcionais; espécies pendentes. Esc: pontos/RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
+ ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,58 encontros/32 portas. A2/B2: encontros, fechaduras comuns e passagem seca; demais alas pendentes. Esc: pontos/RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
 })();

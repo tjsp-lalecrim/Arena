@@ -1,0 +1,301 @@
+{
+  "version": 1,
+  "base": "f5ebdba",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "bounds": [
+    30,
+    0,
+    59,
+    59
+  ],
+  "scope": "A2/B2 only;9 remaining source refs, no added doors/geometry",
+  "sectors": {
+    "A2": {
+      "originalEncounters": 19,
+      "originalDoors": 13,
+      "remainingDoors": 0
+    },
+    "B2": {
+      "originalEncounters": 25,
+      "originalDoors": 18,
+      "remainingDoors": 0
+    }
+  },
+  "entries": [
+    {
+      "id": "stonekeep.b2.enemy.mif48.37",
+      "eventId": 340,
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceOriginal": [
+        48,
+        37
+      ],
+      "view": [
+        41,
+        37
+      ],
+      "origin": [
+        126,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif49.37",
+      "eventId": 341,
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceOriginal": [
+        49,
+        37
+      ],
+      "view": [
+        40,
+        37
+      ],
+      "origin": [
+        123,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif50.37",
+      "eventId": 342,
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceOriginal": [
+        50,
+        37
+      ],
+      "view": [
+        39,
+        37
+      ],
+      "origin": [
+        120,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif58.37",
+      "eventId": 343,
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceOriginal": [
+        58,
+        37
+      ],
+      "view": [
+        31,
+        37
+      ],
+      "origin": [
+        96,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif58.38",
+      "eventId": 344,
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceOriginal": [
+        58,
+        38
+      ],
+      "view": [
+        31,
+        38
+      ],
+      "origin": [
+        96,
+        117
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif34.46",
+      "eventId": 345,
+      "enemyId": 3,
+      "troopId": 3,
+      "sourceOriginal": [
+        34,
+        46
+      ],
+      "view": [
+        55,
+        46
+      ],
+      "origin": [
+        168,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif43.46",
+      "eventId": 346,
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceOriginal": [
+        43,
+        46
+      ],
+      "view": [
+        46,
+        46
+      ],
+      "origin": [
+        141,
+        141
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif44.46",
+      "eventId": 347,
+      "enemyId": 3,
+      "troopId": 3,
+      "sourceOriginal": [
+        44,
+        46
+      ],
+      "view": [
+        45,
+        46
+      ],
+      "origin": [
+        138,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif34.47",
+      "eventId": 348,
+      "enemyId": 3,
+      "troopId": 3,
+      "sourceOriginal": [
+        34,
+        47
+      ],
+      "view": [
+        55,
+        47
+      ],
+      "origin": [
+        168,
+        144
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "points": [
+    {
+      "name": "B2 · orcs norte",
+      "position": [
+        125,
+        113
+      ]
+    },
+    {
+      "name": "B2 · orcs oeste",
+      "position": [
+        98,
+        113
+      ]
+    },
+    {
+      "name": "B2 · orc e homem-lagarto",
+      "position": [
+        140,
+        140
+      ]
+    },
+    {
+      "name": "B2 · homens-lagarto leste",
+      "position": [
+        167,
+        140
+      ]
+    }
+  ],
+  "sourceConfidence": "MIF MAP1 + STKEEP1.INF declared references, not new DOS observation; whole=(3+3*(89-X),3+3*Y), zero-based",
+  "adaptation": "Existing radius2/interval90/dry region4; no group mechanic or all-kills gate"
+}
