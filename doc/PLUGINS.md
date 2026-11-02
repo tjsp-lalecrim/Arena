@@ -1,3 +1,7 @@
+## Acessos de Stonekeep — consumidor explícito Map015
+
+Arena_StonekeepAccess após Arena_StonekeepWhole: cinco fechaduras comuns verificadas, ação de força determinística adaptada e estado A/B nativo. Sem chaves fictícias, novo namespace ou alterações no motor/MQ01. [Contrato e diferenças do original](plugins/Arena_StonekeepAccess.md). Contagens históricas abaixo não substituem js/plugins.js.
+
 ## Ghoul M02 — piloto de batalha
 
 Arena_Ghoul0.2.0 após Arena_DebugHub: um encontro de ilha e dois acessos RAM pela API do hub, sem comando adicional no título. Enemy5/Troop6 e batalha aprovada intactos; caminhada nova, recompensas de campanha explícitas e tabela vazia por instância somente na antiga batalha técnica. Sem doença/grupo. Pequeno seletor ArenaLoot.tableForEnemy mantém um único pipeline de concessão. [Contrato](plugins/Arena_Ghoul.md), [fontes/arte/testes](GHOUL_M02.md). Contagens anteriores abaixo são históricas; consultar js/plugins.js para a lista real.

@@ -1,0 +1,87 @@
+{
+  "base": "9031298",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "checks": [
+    "Clean native boot/plugin order;5 LOCK values1/2/3 explicitly registered; old256 events/47 encounters/23 doors and tables/campaign unchanged; reconstruction stable",
+    "5 locks: direct opening blocked, cancellation unchanged, native choice/force/progress/unlock; legitimate passage/reclose both ways, no resource/item/EXP/reward cost, no repeat force; LOCK3 work survives RAM save/load",
+    "Native B unlocked/A opened states restore independently, old256-event RAM array appends45 components; campaign resources/quest/receipts and normal save isolation preserved"
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.access.door.mif51.15",
+      "lockValue": 1,
+      "side": -1,
+      "forced": true,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif51.15",
+      "lockValue": 1,
+      "side": 1,
+      "forced": false,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif51.19",
+      "lockValue": 1,
+      "side": -1,
+      "forced": true,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif51.19",
+      "lockValue": 1,
+      "side": 1,
+      "forced": false,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif54.19",
+      "lockValue": 1,
+      "side": -1,
+      "forced": true,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif54.19",
+      "lockValue": 1,
+      "side": 1,
+      "forced": false,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif39.44",
+      "lockValue": 2,
+      "side": -1,
+      "forced": true,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif39.44",
+      "lockValue": 2,
+      "side": 1,
+      "forced": false,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif39.49",
+      "lockValue": 3,
+      "side": -1,
+      "forced": true,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.access.door.mif39.49",
+      "lockValue": 3,
+      "side": 1,
+      "forced": false,
+      "crossed": true
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "adaptation": "Universal deterministic force45frames per LOCK level; no class/weapon/item/stat/resource requirement, no original chance/wear copied",
+  "originalObservation": "None; documentary/data evidence distinguished",
+  "manual": "Deferred; quick map assessment is preliminary only"
+}
