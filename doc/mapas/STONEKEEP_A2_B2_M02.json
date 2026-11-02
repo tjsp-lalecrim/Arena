@@ -939,7 +939,7 @@
       ],
       "species": "orc",
       "sourceFlat": "ORC.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
     },
     {
       "sourceOriginal": [
@@ -956,7 +956,7 @@
       ],
       "species": "orc",
       "sourceFlat": "ORC.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
     },
     {
       "sourceOriginal": [
@@ -973,7 +973,7 @@
       ],
       "species": "orc",
       "sourceFlat": "ORC.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
     },
     {
       "sourceOriginal": [
@@ -990,7 +990,7 @@
       ],
       "species": "orc",
       "sourceFlat": "ORC.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
     },
     {
       "sourceOriginal": [
@@ -1007,7 +1007,7 @@
       ],
       "species": "orc",
       "sourceFlat": "ORC.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
     },
     {
       "sourceOriginal": [
@@ -1024,7 +1024,7 @@
       ],
       "species": "homem-lagarto",
       "sourceFlat": "LIZRDMAN.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
     },
     {
       "sourceOriginal": [
@@ -1041,7 +1041,7 @@
       ],
       "species": "orc",
       "sourceFlat": "ORC.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
     },
     {
       "sourceOriginal": [
@@ -1058,7 +1058,7 @@
       ],
       "species": "homem-lagarto",
       "sourceFlat": "LIZRDMAN.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
     },
     {
       "sourceOriginal": [
@@ -1075,7 +1075,7 @@
       ],
       "species": "homem-lagarto",
       "sourceFlat": "LIZRDMAN.DFA",
-      "dependency": "Species exploration/battle pilot absent; do not substitute"
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
     },
     {
       "sourceOriginal": [

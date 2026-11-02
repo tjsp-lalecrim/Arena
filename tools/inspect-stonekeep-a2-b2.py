@@ -78,7 +78,9 @@ for e in inv['enemies']:
     ox,y=e['original'];u=89-ox;raw=M[y][ox];center=[3+3*u,3+3*y]
     assert raw==0x8000+e['flat'] and tex['flats'][e['flat']].upper()==e['resource'].upper()
     item=dict(sourceOriginal=[ox,y],view=[u,y],origin=center,species=e['species'],sourceFlat=e['resource'])
-    if e['species'] not in known:item['dependency']='Species exploration/battle pilot absent; do not substitute';missing.append(item)
+    if e['species'] not in known:
+        item['dependency']='Exploration walking absent; battle asset already exists, validate consumer later' if e['species']=='homem-lagarto' else 'Orc exploration/battle pilot absent; do not substitute'
+        missing.append(item)
     elif tuple(center) not in seen:item['dependency']='Disconnected conservative pocket; no new passage inferred';missing.append(item)
     else:
         enemyId,troopId=known[e['species']]

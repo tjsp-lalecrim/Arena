@@ -2,13 +2,18 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
-## Recorte atual — portas de A2 centro
+## Recorte atual — bloco A2→B2 (exceção temporária de tamanho)
 
-Base66352d2 preservada: **7/70 portas e33/180 encontros** no Map015. Três portas semLOCK/TRIG do grupo MIF(42,12),(44,14),(47,17), acessíveis nos dois sentidos; reutilizam componente,24frames e persistência individual. [Coordenadas/matriz/validação](STONEKEEP_M02_04.md#a2-centro--três-portas-sem-lock). Somente27regiões de soleira4→6 e27eventos acrescentados; camadas visuais/colisões de parede, água e demais setores intactos. Campanha segue Map012; testes manuais continuam adiados.
+Base55e42e4, terreno/portas em **d82d9a3**, seguido dos encontros/integração na mesma feature. **47/180encontros e23/70portas** no Map015:16portas adicionais (4A2+12B2),14encontros B2 de espécies existentes (11goblins/2ratos/1esqueleto). [Delimitação, matriz, acesso e evidências](STONEKEEP_M02_04.md#bloco-a2b2--ampliação-temporária-autorizada). Materiais aprovados reutilizados, sem mudar alturas/água/parede para forçar passagem ou alterar campanha Map012. Testes manuais continuam adiados; a autorização maior não substitui permanentemente as entregas pequenas.
 
-A2:6/13 portas concluídas,4semLOCK pendentes e3LOCK1 com dependência de chave/fechadura ainda não resolvida. Não inventar chave ou sistema. **Próximo recorte independente:** par semLOCK MIF(49,15)/(49,19), mundo(123,48)/(123,60), ligado ao corredor oeste; conferir lados e conexões antes de configurar. Faltam63portas/147encontros no total. Após Stonekeep completa, levantamento integral de Rihad antes da solução técnica.
+| Área | Cobertura | Pendência funcional |
+|---|---|---|
+|A2 |19/19encontros;10/13portas (todas semLOCK) |3LOCK1/chave/regra e revisão de alturas/detalhes, sem setor concluído |
+|B2 |14/25encontros;12/18portas |6orcs/3caminhadas de homem-lagarto;2goblins+4portas na bolsa desconectada;2LOCK2/3 |
 
-**A1 preservado:**33/180 encontros incluem os dois ghouls da ligação por água aberta; folga sob quatro elevados MIF(86..83,8) continua não comprovada e não teve colisão alterada. [Pesquisa e limites](STONEKEEP_M02_04.md#a1-oeste--ligação-aberta-e-dois-ghouls). Não generalizar passagem sob paredes nem apagar candidato; resolver a evidência antes de fechar as alturas correspondentes.
+**Dependência de acesso explícita:** apenas3goblins do norte B2 são independentes de LOCK; os11encontros restantes e12portas preparadas usam a abertura provisória herdada de MIF(39,44)/LOCK2. Não foi criada chave nem regra para essa passagem, e ela não está concluída. Verificação distingue grafo com aberturas provisórias e grafo com LOCKs bloqueadas. Total restante133encontros/47portas; a região não é declarada pronta para campanha.
+
+**Próximo bloco funcional recomendado:** resolver contrato de fechaduras/chave A2/B2 e conexão da bolsa sudoeste, por condicionarem o conteúdo já preparado; investigar somente as coordenadas consumidoras, sem novo estudo geral ou arte. Orc e caminhada de homem-lagarto ficam em pilotos próprios posteriores. Após Stonekeep completa, levantamento integral de Rihad antes da solução técnica. **A1 aquática inalterada:** folga de MIF86..83,8 continua incerta, sem generalização ou alteração de colisão. Melhorias opcionais não entram por associação.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 

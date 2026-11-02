@@ -1,3 +1,7 @@
+## Consumidor do bloco A2/B2 — extensão de configuração
+
+Dezesseis portas adicionais semLOCK próprio usam o mesmo componente9partes/24frames e as APIs existentes. `stonekeep-door-components.cjs` extrai somente a montagem offline já usada por A2 centro, preservando seus bytes/eventos, e é reutilizado pelo compilador do bloco; nenhuma mudança no plugin de execução ou nova mecânica de chave. As portas de acesso LOCK2/3 permanecem passagens provisórias não registradas como concluídas. [Cobertura, dependências e evidências por unidade](../STONEKEEP_M02_04.md#bloco-a2b2--ampliação-temporária-autorizada). Região6 nas soleiras mantém patrulhas fora das dobradiças. Map008 e campanha Map012 inalterados.
+
 ## Consumidor A2 centro — configuração, sem mudança de API
 
 Map015 acrescenta3portas semLOCK/TRIG em `STONEKEEP_A2_PORTAS_CENTRO_M02.json`, compiladas por `stonekeep-a2-central-doors.cjs` a partir do componente9partes já registrado. Mesmos24frames, orientação pelos lados, proteção de envelope e self-switches individuais. Sem lógica nova de chave/fechadura: as3LOCK1 pendentes não entram neste registro. [Coordenadas, limites e cinco grupos focais](../STONEKEEP_M02_04.md#a2-centro--três-portas-sem-lock). Snapshots RAM antigos recebem os novos IDs pelo hook existente de Arena_StonekeepWhole; Map008/Map012 preservados.

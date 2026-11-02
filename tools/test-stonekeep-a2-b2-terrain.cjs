@@ -6,8 +6,8 @@ const s=read('doc/mapas/STONEKEEP_A2_B2_M02.json'),c=read('data/ArenaStonekeepWh
 const out=path.join(R,'doc/evidencias/m02-stonekeep-a2-b2/terrain'),url='http://127.0.0.1:8774/';fs.mkdirSync(out,{recursive:true});
 assert.equal(c.doors.length,23);assert.equal(c.coverage.implementedDoors,23);
 assert.deepEqual(c.doors.slice(0,7),prior('data/ArenaStonekeepWhole.json').doors);
-assert.deepEqual(c.encounters,prior('data/ArenaStonekeepWhole.json').encounters);
-assert.deepEqual(m.events.slice(0,99),old.events);assert.equal(m.events.filter(Boolean).length,242);
+const appended=c.a2b2.enemyIds?s.enemies.length:0;assert.deepEqual(c.encounters.entries.slice(0,33),prior('data/ArenaStonekeepWhole.json').encounters.entries);assert.equal(c.encounters.entries.length,33+appended);
+assert.deepEqual(m.events.slice(0,99),old.events);assert.equal(m.events.filter(Boolean).length,242+appended);
 const materials=new Set(s.materialCells.map(v=>v.view.join(',')));
 const changed=new Set(s.doors.flatMap(d=>Array.from({length:9},(_,i)=>[d.center[0]+i%3-1,d.center[1]+Math.floor(i/3)-1].join(','))));
 let delta=0;for(let z=0;z<6;z++)for(let y=0;y<274;y++)for(let x=0;x<274;x++){
@@ -20,6 +20,7 @@ for(const d of s.doors){const src=inv.doors.find(v=>v.original.join(',')===d.sou
 for(const d of s.deferredDoors){assert.equal(inv.doors.find(v=>v.original.join(',')===d.sourceOriginal.join(',')).lockValue,d.lockValue);assert(!c.doors.some(v=>v.sourceOriginal.join(',')===d.sourceOriginal.join(',')));}
 const files=['Map015','ArenaStonekeepWhole','Map012','ArenaCampaign','Items','MapInfos'],bytes=files.map(n=>fs.readFileSync(path.join(R,'data/'+n+'.json'),'utf8'));
 cp.execFileSync(process.execPath,['tools/build-stonekeep-sample.cjs'],{cwd:R});files.forEach((n,i)=>assert.equal(fs.readFileSync(path.join(R,'data/'+n+'.json'),'utf8'),bytes[i],n+' rebuild'));
+if(process.argv.includes('--data-only')){console.log('PASS terrain boundaries/component extraction/reconstruction, with',appended,'declared later encounters');process.exit(0);}
 (async()=>{let b;try{
  assert.equal((await(await fetch(url+'__arena_dev/status')).json()).root,R);
  b=await chromium.launch({channel:'chrome',headless:true});const p=await b.newPage({viewport:{width:1080,height:850}}),errors=[],missing=[],checks=[];p.setDefaultTimeout(20000);
@@ -76,7 +77,7 @@ cp.execFileSync(process.execPath,['tools/build-stonekeep-sample.cjs'],{cwd:R});f
  for(const d of c.doors)await settle(d.id);
  assert.deepEqual(await core(),saved);assert.deepEqual(await p.evaluate(()=>$arenaStonekeepWhole.doors.map(d=>$gameSelfSwitches.value([15,d.eventIds[0],'A']))),states);
  await p.evaluate(()=>{$gameMap._events.length=99;});assert.equal(await p.evaluate(()=>ArenaContinuation.memorySave()),true);assert.equal(await p.evaluate(()=>ArenaContinuation.memoryLoad()),true);await p.evaluate(()=>SceneManager.goto(Scene_Map));await ready();await lock();
- assert.equal(await p.evaluate(()=>$gameMap.events().length),242);assert.deepEqual(await p.evaluate(()=>$arenaStonekeepWhole.doors.map(d=>$gameSelfSwitches.value([15,d.eventIds[0],'A']))),states);
+ assert.equal(await p.evaluate(()=>$gameMap.events().length),242+appended);assert.deepEqual(await p.evaluate(()=>$arenaStonekeepWhole.doors.map(d=>$gameSelfSwitches.value([15,d.eventIds[0],'A']))),states);
  for(const d of c.doors)await settle(d.id);
  checks.push('23 independent door states (open/closed) restore in RAM; old98-event snapshot appends144 components before sprite creation, preserves quests/character/receipts/items/resources');
  await p.evaluate(()=>{$gamePlayer.reserveTransfer(9,10,11,8,0);});await p.waitForFunction(()=>$gameMap.mapId()===9&&!$gamePlayer.isTransferring());await ready();
@@ -85,5 +86,5 @@ cp.execFileSync(process.execPath,['tools/build-stonekeep-sample.cjs'],{cwd:R});f
  for(const point of s.points){assert.equal(await p.evaluate(name=>ArenaStonekeepWhole.jump($arenaStonekeepWhole.points.findIndex(p=>p.name===name)),point.name),true,point.name);assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]),point.position);}
  checks.push('Area return preserves states/no repeated rewards;5 inspection points valid, normal save blocked, localStorage untouched, campaign still Map012');
  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);
- fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'55e42e4',browser:b.version(),url,environment:'headless Chrome, disposable profile, existing RAM session; no battles or campaign retest',checks,doors:report,graph,states,errors,missing,pending:['Manual evaluation deferred','A1 raised-water clearance unchanged/unconfirmed','A2 LOCK1 and B2 LOCK2/3 unresolved; downstream access provisional, no key invented','4 southwest B2 doors disconnected inside this block; no speculative passage','Door artwork reused provisionally for DCAS5, no generation']},null,2)+'\n');console.log('PASS',checks.length,'groups');
+ fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'55e42e4',browser:b.version(),url,environment:'headless Chrome, disposable profile, existing RAM session; no battles or campaign retest',checks,doors:report,graph,states,errors,missing,pending:['Manual evaluation deferred','A1 raised-water clearance unchanged/unconfirmed','A2 LOCK1 and B2 LOCK2/3 unresolved; downstream access provisional, no key invented','4 southwest B2 doors disconnected inside this block; no speculative passage','Door artwork reused provisionally for DCAS2/3/5, no generation']},null,2)+'\n');console.log('PASS',checks.length,'groups');
  }finally{if(b)await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
