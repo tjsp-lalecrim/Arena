@@ -25,7 +25,7 @@
     {"symbol":"arenaRihadPreview","category":"campaign","description":"Chegada nível1, informante, descanso e acesso aos arredores.","saving":"Somente RAM · slots normais bloqueados"},
     {"symbol":"arenaRiaVisionPreview","category":"campaign","description":"Acesso determinístico à visão de Ria no descanso autorizado.","saving":"Somente RAM · slots normais bloqueados"},
     {"symbol":"arenaCourtPreview","category":"campaign","description":"Audiência de Blubamka, aceitação e diário da missão.","saving":"Somente RAM · slots normais bloqueados"},
-    {"symbol":"arenaStonekeep","category":"campaign","description":"Viagem a Stonekeep pela estrada de Rihad, com missão aceita.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaStonekeep","category":"campaign","description":"Viagem pela estrada com missão aceita; 3 ratos nos aposentos, lobos ainda ausentes.","saving":"Somente RAM · slots normais bloqueados"},
     {"symbol":"arenaStonekeepMaterials","category":"campaign","description":"Aposento, passagem e margem para observar os materiais aprovados.","saving":"Somente RAM · slots normais bloqueados"},
     {"symbol":"arenaStonekeepCask","category":"campaign","description":"Acesso direto à parede quase negra CASK.","saving":"Somente RAM · slots normais bloqueados"},
     {"symbol":"arenaStonekeepCasl","category":"campaign","description":"Acesso direto à parede clara irregular CASL.","saving":"Somente RAM · slots normais bloqueados"},

@@ -18,7 +18,8 @@ module.exports=function(){const c=read('data/ArenaGhoul.json'),enemies=read('dat
  if(map.data[(5*map.height+v.origin[1])*map.width+v.origin[0]]!==4)throw Error('Ghoul requires island floor');
  const event=JSON.parse(JSON.stringify(read('data/Map008.json').events[169]));Object.assign(event,{id:v.eventId,name:'Ghoul / '+v.id,note:'ArenaEncounter:'+v.id,x:v.origin[0],y:v.origin[1]});event.pages[0].list=[{code:355,indent:0,parameters:["ArenaEncounters.start('"+v.id+"');"]},{code:0,indent:0,parameters:[]}];map.events[v.eventId]=event;
  }
- area.encounters.mapVisuals[String(c.enemyId)]=c.walk;area.encounters.entries=area.encounters.entries.filter(e=>!ids.has(e.id)).concat(entries);
+ area.encounters.mapVisuals[String(c.enemyId)]=c.walk;const existing=new Set(area.encounters.entries.map(e=>e.id));
+ area.encounters.entries=area.encounters.entries.map(e=>entries.find(v=>v.id===e.id)||e).concat(entries.filter(v=>!existing.has(v.id)));
  fs.writeFileSync(path.join(R,'data/Map012.json'),JSON.stringify(map)+'\n');write('ArenaCampaign',campaign);
  for(const [name,v]of Object.entries({Enemies:enemies,Troops:troops,ArenaBattle:battle,ArenaBattleMotion:motion,ArenaLoot:loot}))write(name,v);
 };if(require.main===module)module.exports();

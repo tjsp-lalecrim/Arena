@@ -2,7 +2,9 @@
 
 Feature `feature/m02-entrega-pergaminho`, sobre **18473c2**, preservando as dependências M02 não integradas e a tag m01. Recorte funcional entregue **para avaliação**; não conclui todo o M02-05 nem habilita Fang Lair.
 
-**Relato do responsável:** a coleta do pergaminho foi testada e funcionou. Associação à referência disponível18473c2; o relato não informou ambiente, hash ou outros casos. Não atribuir a ele persistência, recuperação, equilíbrio ou aprovação desta entrega ainda nova. Aprovações anteriores dos exemplares/arte permanecem com suas coberturas.
+**Confirmação posterior:** o responsável testou a entrega de **4357999** e confirmou funcionamento, sem ambiente/casos adicionais informados. As evidências técnicas abaixo mantêm cobertura própria; não atribuir persistência/rollback ou outros testes ao relato.
+
+**Relato anterior do responsável:** a coleta do pergaminho foi testada e funcionou. Associação à referência disponível18473c2; o relato não informou ambiente, hash ou outros casos. Não atribuir a ele persistência, recuperação, equilíbrio ou aprovação desta entrega ainda nova. Aprovações anteriores dos exemplares/arte permanecem com suas coberturas.
 
 ## Conteúdo e fontes
 
@@ -41,6 +43,6 @@ Reconstrução pelo pai Rihad preservou mapas, encontros, item7, configuração 
 
 ## Pendências funcionais e continuidade
 
-A rota construída já permite viagem, água, coleta e retorno, com sete esqueletos e seis ghouls, sem kill-all. A coleta tem confirmação manual; a entrega atual aguarda avaliação. **Ratos/lobos dos aposentos ainda não estão representados:** delimitar necessidade na rota mínima de M02-05 conforme fontes, sem declarar cobertura completa ou exigir catálogo de alas opcionais. Não há defeito técnico aberto de travessia identificado neste recorte. Balanceamento acumulado pertence ao M02-BAL.
+A rota construída já permite viagem, água, coleta e retorno, com sete esqueletos e seis ghouls, sem kill-all. A coleta tem confirmação manual; a entrega4357999 tem confirmação de funcionamento. [Delimitação dos aposentos](STONEKEEP_APOSENTOS_M02_05.md): três ratos confirmados incluídos; quatro lobos confirmados no trecho continuam dependência artística/funcional. Não exigir catálogo de alas opcionais. Não há defeito técnico aberto de travessia identificado neste recorte. Balanceamento acumulado pertence ao M02-BAL.
 
 Após avaliação e delimitação funcional de M02-05, próximo conteúdo **M02-06A — amostra das celas de Fang Lair**, com rota/arquitetura/participantes próprios antes de habilitar viagem. Ilustrações da corte, decoração, portas elaboradas e aparência final do pergaminho permanecem futuras, sem virar bloqueios automaticamente. Retaliação de Tharn permanece exclusivamente M02-08, com orientação registrada no backlog.

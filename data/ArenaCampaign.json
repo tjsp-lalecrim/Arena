@@ -176,6 +176,18 @@
         "areaId": "stonekeep",
         "completionQuestId": "MQ02",
         "mapVisuals": {
+          "1": {
+            "file": "$Arena_rat_walk_r02",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "groundByDirection": {
+              "8": 52
+            },
+            "animationWait": 10
+          },
           "4": {
             "file": "$Arena_skeleton_walk_v01",
             "cell": [
@@ -349,6 +361,72 @@
             ],
             "enemyId": 4,
             "troopId": 5
+          },
+          {
+            "id": "stonekeep.apartments.rat.01",
+            "eventId": 16,
+            "enemyId": 1,
+            "troopId": 1,
+            "sourceOriginal": [
+              44,
+              11
+            ],
+            "origin": [
+              114,
+              36
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+            "questSpecific": false,
+            "radius": 1,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.rat.02",
+            "eventId": 17,
+            "enemyId": 1,
+            "troopId": 1,
+            "sourceOriginal": [
+              44,
+              12
+            ],
+            "origin": [
+              114,
+              39
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+            "questSpecific": false,
+            "radius": 1,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.rat.03",
+            "eventId": 18,
+            "enemyId": 1,
+            "troopId": 1,
+            "sourceOriginal": [
+              43,
+              13
+            ],
+            "origin": [
+              117,
+              42
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+            "questSpecific": false,
+            "radius": 1,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
           },
           {
             "id": "stonekeep.island.ghoul.01",

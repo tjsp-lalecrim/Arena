@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Atualização de cobertura:** entrega4357999 testada pelo responsável e funcional, sem novos casos inferidos. [Delimitação dos aposentos](STONEKEEP_APOSENTOS_M02_05.md):3 ratos confirmados incluídos e4 lobos confirmados ainda sem exemplar; layout, fontes/recibos e etapa60 preservados.
+
 **Implementação vigente M02-05:** [entrega na corte](ENTREGA_PERGAMINHO_M02_05.md), sobre18473c2: confirmação explícita, item7/recibo/aposentadoria/50→60 consistentes, diário e Fang Lair conhecida sem mapa/viagem. Coleta confirmada pelo responsável, sem outros testes inferidos; extensão atual para avaliação. Referências a entrega ausente nas entradas anteriores abaixo são históricas.
 
 **Implementação vigente M02-04:** [amostra de Stonekeep](STONEKEEP_M02_04.md) vincula stonekeep.entry/Map012 e fonte stonekeep.parchment/item7. Recorte original adaptado, natação por região, coleta40→50, diário de retorno e recuperação enquanto necessário. Guardiões/arte específica e entrega permanecem pendentes. Entradas anteriores abaixo são históricas, inclusive a indisponibilidade de viagem na entrega03D.
