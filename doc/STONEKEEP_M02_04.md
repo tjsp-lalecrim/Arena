@@ -69,7 +69,11 @@ Reusar as cinco caminhadas/batalhas ratos/goblins/lobos/esqueletos/ghouls existe
 |Textos ambientais |31 registros TRIG de texto:1 prisão,1 inundação,4 baú,6 escritórios,9 aviso sul,7 aviso norte,1 entrada,1 aposento real,1 chave;24 registros com text255/índice de som | Contexto/placas opcionais podem ser adiados; nomes não são novas quests. O efeito exato dos flags/sons não foi todo comprovado; não criar armadilhas apenas a partir de índice de som |
 |Fontes opcionais / decoração |Além da chave/pergaminho:22 referências de cadáver/equipamento/tesouro/baú sob flats marcados ITEM, e194 flats decorativos sem função comprovada | Loot opcional pode ser adiado, com área/posição preservadas; não inventar recompensa. Colunas, ossos, luzes, móveis e fontes não viram inimigos, cura, obstáculos ou gatilhos sem evidência. O rótulo decorativo não garante ausência de colisão; conferir flags/forma/contexto de colunas e móveis antes de escolher through. Classificação e posições no índice |
 
-### Organização técnica recomendada — proposta, não implementada
+### Organização técnica — prova posterior de mapa único
+
+**Decisão e evidência posteriores:** responsável prioriza exploração contínua e aceita reduzir dependência do editor. [Map014274×274 isolado](PROVA_MAPA_UNICO_STONEKEEP.md) passou no runtime atual sem patch de limite, inclusive180 patrulhas/serialização. Limite do editor não comprovou limite do motor. A divisão abaixo fica como **alternativa histórica de autoria**, não pré-requisito da campanha. Integração definitiva de Map012, fidelidade final e migração de coordenadas não foram feitas; editor274 continua com operação real pendente, sem risco ao original.
+
+#### Alternativa histórica de quatro mapas — não escolhida nesta prova
 
 Escala3/margem2 requereria **274×274 tiles** num mapa único. A ajuda **oficial instalada** do MV, `RPGMV/Help/page/01_07_03.html`, seção Map Size (também01_07.html), limita edição a256 por dimensão. Não reduzir toda a escala, apagar alas ou exceder esse contrato silenciosamente.
 
@@ -90,12 +94,12 @@ Renderização nativa Tilemap/ShaderTilemap pinta a janela visível (`js/rpg_cor
 
 ### Pequenas entregas propostas e próximo setor
 
-1. Após **M02-03E1** (referência urbana, conforme ordem vigente), uma unidade **04C2.0** para organização das quatro macros, coordenadas/contratos internos e política de saves, antes de multiplicar o conteúdo. A recomendação de quatro mapas precisa ser confirmada antes da construção; não há decisão nova sobre quais mapas a campanha deve conter.
+1. Após **M02-03E1** (referência urbana, conforme ordem vigente), uma unidade **04C2.0** para integração do mapa único/coordenadas e política de saves, antes de multiplicar o conteúdo. A direção de exploração contínua já foi autorizada, mas a prova não substitui Map012 automaticamente; não há decisão nova sobre quais mapas a campanha deve conter.
 2. **04C3.0**, fechar omissões no terreno já construído: os seis goblins deA2 e o esqueleto da ilhaA1, com assets existentes/IDs novos, sem refazer arte ou exigir todas as mortes. Pode ser dividido por setor se necessário; posições exatas no CSV. Não declarado executado.
 3. **Primeiro setor novo: A2-E**, faixa **u54–59/Y0–29** (MIF X30–35/Y0–29), continuação leste dos aposentos. Encosta à amostra em u53/54 com acessos em Y12,16–19,21–29; usar **Y16–19** como aproximação inicial reconhecível, sem apagar os demais. Inclui3 ratos originais(32,11),(30,14),(30,16) e1 goblin(35,23), todos com assets existentes. Geometria/conexões primeiro (**04C2.1**), encontros/estado depois (**04C3.1**); nenhuma nova espécie ou arte é pré-requisito dessa faixa.
 4. Fechar restante deA1/A2/B1/B2 por setores contíguos; depois A3/B3/C1/C2/C3 e conexões entre macros. Antes de um setor com espécie ausente, entregar o exemplar necessário isoladamente. Portas/chave/apoios recebem recortes funcionais próprios, sem polimento REF17. Concluir com05I e M02-BAL; expansão de Fang Lair continua adiada.
 
-**Decisão necessária antes da geometria:** confirmar a divisão proposta em quatro mapas e tratar a continuidade das posições antigas na mesma unidade técnica. **Dúvidas de fonte, não pedidos de escopo:** vínculo exato da chave/fechaduras, transitabilidade de elevações/diagonais e qualificação de refúgios diferentes do padrãoM01; investigar somente no setor consumidor antes de torná-los bloqueios. Não falta aprovação artística para reaproveitar os exemplares atuais; não pedir novamente teste de combate já válido.
+**Antes da geometria definitiva:** tratar continuidade das posições antigas na unidade técnica de integração do mapa único. Não solicitar novamente a escolha entre dividir/mapa único, já esclarecida pela direção posterior. **Dúvidas de fonte, não pedidos de escopo:** vínculo exato da chave/fechaduras, transitabilidade de elevações/diagonais e qualificação de refúgios diferentes do padrãoM01; investigar somente no setor consumidor antes de torná-los bloqueios. Não falta aprovação artística para reaproveitar os exemplares atuais; não pedir novamente teste de combate já válido.
 
 **Verificações desta entrega:** hash/tamanho do MIF, decodificação nova=cache,8100 células particionadas uma vez, nove espécies/180 posições únicas,20 IDs atuais preservados,70 portas/12LOCK, fontes/índices, coordenada do esqueleto e vizinhos secos dos candidatos. Visão geral inspecionada e saídas reconstruíveis conferidas. Sem testes de gameplay/editor/mobile ou geração por IA. Script e evidências são documentação/ferramenta de consulta; nenhum gerador do jogo foi executado.
 

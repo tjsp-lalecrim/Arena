@@ -16,6 +16,10 @@ Regras permanentes autorizadas pelo responsável; esta seção é a fonte do pro
 
 Concentrar os testes no navegador do PC, inicialmente Chrome. M01 será fechado no alvo desktop; adaptação mobile e APK pertencem a [MOBILE-01](MOBILE_01.md), sem data ou tecnologia escolhidas. Preservar toque existente e evidências por versão. Regressão focal emulada é pertinente quando a mudança afeta entrada compartilhada; não exigir testes físicos ou deploy Pages a cada entrega desktop. Pages continua manual, somente para versões escolhidas. Teste parcial mobile não equivale a suporte completo; navegador e APK têm validações/persistência próprias, sem migração automática prometida.
 
+## Ferramentas externas e mapa contínuo — prova autorizada02/11/2026
+
+O responsável prioriza exploração contínua de Stonekeep e aceita reduzir a dependência do editor: gerar mapas/dados por ferramentas externas, mantendo inicialmente o motor MV. JavaScript executa o jogo no navegador; Python pode apoiar geração/validação. [Prova técnica274](PROVA_MAPA_UNICO_STONEKEEP.md) não autoriza trocar motor, fundir plugins ao código-base, refatorar amplamente ou integrar mapa experimental à campanha. Distinguir limite de autoria do editor de limite de runtime e medir antes de criar patch de constante. Operação no editor acima do contrato documentado só em cópia descartável, nunca sobre a campanha.
+
 ## Operação obrigatória — entregas pequenas
 
 1. Conferir branch, diff e alterações existentes; definir **um objetivo principal** e critérios curtos e verificáveis. Separar correção funcional, experimento visual e produção em lote em entregas distintas; não juntar sistemas independentes por conveniência.

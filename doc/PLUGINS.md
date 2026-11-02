@@ -213,3 +213,7 @@ Arena_Wolf0.1.0 depois de Arena_DebugHub/Ghoul e núcleos existentes; Enemy6/Tro
 ## Fang Lair — celas M02-06A
 
 Arena_FangCells0.1.0 após CourtDelivery e núcleos existentes: Map013, chave importante8, enigma e recibo do portal, acesso RAM pelo hub. Sem novo motor de quest ou encontros simulados; aranhas/arte local ainda pendentes. [Contrato](plugins/Arena_FangCells.md), [fontes/limites/evidências](FANG_CELAS_M02_06A.md).
+
+## Prova Stonekeep274 — isolada
+
+Arena_StonekeepRuntimeProof0.1.0 após FangCells/DebugHub: Map014, HUD/comandos, carga sintética0/60/180, natação registrada pelas APIs existentes e checkpoint em sessionStorage separado. Sem patch de limite/motor ou novo consumidor de combate. Contratos, reconstrução, medições e limites em [PROVA_MAPA_UNICO_STONEKEEP.md](PROVA_MAPA_UNICO_STONEKEEP.md).

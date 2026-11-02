@@ -1,0 +1,284 @@
+{
+  "base": "a808f8b",
+  "browser": "156.0.8078.76",
+  "headless": true,
+  "os": {
+    "platform": "win32",
+    "release": "10.0.19045",
+    "arch": "x64",
+    "cpu": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+    "logicalCpus": 8,
+    "totalRAMBytes": 17039499264
+  },
+  "load": {
+    "mapRequestToReadyMs": 233.30000001192093,
+    "hubToReadyMs": 1128.5,
+    "resource": [
+      {
+        "durationMs": 4,
+        "encodedBodySize": 1091680,
+        "decodedBodySize": 1091680,
+        "transferSize": 1091980
+      }
+    ],
+    "renderer": "WebGLRenderer",
+    "viewport": [
+      816,
+      624
+    ],
+    "tilemap": [
+      856,
+      664
+    ],
+    "coordinates": [
+      274,
+      274
+    ],
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1050 Ti (0x00001C8C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "limits": {
+      "maxTextureSize": 16384
+    }
+  },
+  "phases": [
+    {
+      "density": 0,
+      "elapsedMs": 8001.599999976159,
+      "samples": 480,
+      "rafMeanMs": 16.666666666666668,
+      "p50Ms": 16.69999999999891,
+      "p95Ms": 16.899999999999636,
+      "p99Ms": 17,
+      "over33Ms": 0,
+      "engineFrames": 481,
+      "activeEvents": 0,
+      "heapBefore": 14544632,
+      "heapAfter": 19256836,
+      "rendererTaskSeconds": 1.198931
+    },
+    {
+      "density": 60,
+      "elapsedMs": 8007.299999999999,
+      "samples": 480,
+      "rafMeanMs": 16.666458333333328,
+      "p50Ms": 16.69999999999709,
+      "p95Ms": 16.900000000001455,
+      "p99Ms": 17,
+      "over33Ms": 0,
+      "engineFrames": 481,
+      "activeEvents": 60,
+      "heapBefore": 14588368,
+      "heapAfter": 17540776,
+      "rendererTaskSeconds": 1.476351
+    },
+    {
+      "density": 180,
+      "elapsedMs": 8006.500000023843,
+      "samples": 480,
+      "rafMeanMs": 16.666250000000005,
+      "p50Ms": 16.69999999999709,
+      "p95Ms": 16.900000000001455,
+      "p99Ms": 17,
+      "over33Ms": 0,
+      "engineFrames": 481,
+      "activeEvents": 180,
+      "heapBefore": 21409932,
+      "heapAfter": 16378740,
+      "rendererTaskSeconds": 1.5477769999999995
+    }
+  ],
+  "stations": [
+    {
+      "position": [
+        153,
+        15
+      ],
+      "map": 14,
+      "region": 4,
+      "display": [
+        145,
+        9
+      ],
+      "through": false,
+      "swimming": false,
+      "name": "Entrada"
+    },
+    {
+      "position": [
+        54,
+        72
+      ],
+      "map": 14,
+      "region": 4,
+      "display": [
+        46,
+        66
+      ],
+      "through": false,
+      "swimming": false,
+      "name": "Ilha / fonte sem evento"
+    },
+    {
+      "position": [
+        9,
+        9
+      ],
+      "map": 14,
+      "region": 4,
+      "display": [
+        1,
+        3
+      ],
+      "through": false,
+      "swimming": false,
+      "name": "Noroeste"
+    },
+    {
+      "position": [
+        243,
+        18
+      ],
+      "map": 14,
+      "region": 4,
+      "display": [
+        235,
+        12
+      ],
+      "through": false,
+      "swimming": false,
+      "name": "Nordeste"
+    },
+    {
+      "position": [
+        21,
+        261
+      ],
+      "map": 14,
+      "region": 4,
+      "display": [
+        13,
+        255
+      ],
+      "through": false,
+      "swimming": false,
+      "name": "Sudoeste"
+    },
+    {
+      "position": [
+        255,
+        264
+      ],
+      "map": 14,
+      "region": 4,
+      "display": [
+        247,
+        258
+      ],
+      "through": false,
+      "swimming": false,
+      "name": "Sudeste"
+    },
+    {
+      "position": [
+        138,
+        141
+      ],
+      "map": 14,
+      "region": 4,
+      "display": [
+        130,
+        135
+      ],
+      "through": false,
+      "swimming": false,
+      "name": "Centro / sul dos aposentos"
+    },
+    {
+      "position": [
+        84,
+        39
+      ],
+      "map": 14,
+      "region": 5,
+      "display": [
+        76,
+        33
+      ],
+      "through": false,
+      "swimming": true,
+      "name": "Água da bacia"
+    }
+  ],
+  "crossing": {
+    "x": 11,
+    "y": 8,
+    "d": 4,
+    "land": [
+      10,
+      8
+    ]
+  },
+  "checkpointBytes": 12055,
+  "checks": [
+    "Real native map load274, integer coordinates beyond255, eight distant stations on one map, native camera scrolling and bounded validity; swimming scoped to region5 with through=false",
+    "Native keyboard shore exit/re-entry and wall collision; no pass-through, vehicle or stamina override",
+    "Comparable 8s rAF/engine/JS-heap samples at identical point with0/60/180 active autonomous patrols; approved sheets reused, unsupported species explicit load stand-ins, no combat/rewards",
+    "Native full MV RAM serialization preserves274 dimensions, coordinate>255 and erased patrol states; independent sessionStorage checkpoint validates before apply, corrupt record rejected without mutation; normal slots/localStorage/quests/resources unchanged",
+    "F5/new technical session restores tab-only checkpoint beyond255; normal campaign/title unchanged on leaving laboratory"
+  ],
+  "errors": [],
+  "missing": [],
+  "limitations": [
+    "Headless isolated Chrome benchmark, not user visual/Galaxy test",
+    "rAF time/renderer TaskDuration and JS heap only; not total browser/GPU memory or total machine CPU",
+    "Map geometry heights/diagonals provisional,70 doorways open; not campaign completion or balance",
+    "180 synthetic patrols; unsupported-species stand-ins are technical load only",
+    "Tab sessionStorage checkpoint covers coordinates/patrols; full native contents roundtrip tested in RAM only"
+  ],
+  "editorInvestigation": {
+    "copy": "tmp/stonekeep-runtime-editor/Game.rpgproject",
+    "onlyCopyPrepared": true,
+    "openedCopyInEditor": false,
+    "appLaunch": "Installed RPGMV.exe window detected; original project not edited",
+    "inputFailure": "coordinate input geometry is unavailable",
+    "captureFailure": "FrameArrived timed out: timed out waiting on channel",
+    "result": "UI operation stopped after recovery attempt; cannot certify open/save/reopen of274 map. Official installed Help/page/01_07_03.html bounds editing0..256.",
+    "manualCheck": "Open the disposable project, select DESCARTAVEL Map014274, inspect Properties; save/reopen only this copy; compare width/height/data length to274/274/450456. Never use campaign project for this check."
+  },
+  "boundaryFollowup": {
+    "maximum": [
+      257,
+      261
+    ],
+    "minimum": [
+      0,
+      0
+    ],
+    "expectedMax": [
+      257,
+      261
+    ],
+    "borderPass": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "technicalPreview": false
+  },
+  "localServerCheck": {
+    "url": "http://127.0.0.1:8774/",
+    "freshTitleAndProof": true,
+    "configEqualsDisk": true
+  },
+  "panelCheckpointFollowup": {
+    "position": [
+      255,
+      264
+    ],
+    "density": 60,
+    "active": 60,
+    "nativeField": 60,
+    "normalSave": false,
+    "storageKeys": []
+  }
+}
