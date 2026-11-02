@@ -1,3 +1,7 @@
+## Homem-lagarto M02 — caminhada e exemplar RAM
+
+Arena_LizardPatrol0.1.0: Enemy3/Troop3/batalha R03 preservados;12poses, uma área de inspeção privada no Map016 reutilizado. Sem distribuição de campanha; EXP/loot normais restaurados fora do contexto. [Contrato](plugins/Arena_LizardPatrol.md), [fontes/arte/testes](HOMEM_LAGARTO_M02.md).
+
 ## Orc M02 — piloto de batalha RAM
 
 Arena_Orc0.2.0: Enemy7/Troop8/batalha aprovada preservados; doze poses e um exemplar de patrulha Map016/RAM, contrato de área somente na sessão. Reutiliza preparo, encontros, combate, isolamento e hub. Sem distribuição dos seis B2/recompensas de campanha. [Contrato](plugins/Arena_Orc.md), [fontes/arte/testes](ORC_M02.md).

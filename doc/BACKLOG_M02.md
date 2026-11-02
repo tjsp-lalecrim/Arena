@@ -6,9 +6,11 @@
 
 Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada): por dungeon, uma espécie por entrega, combate+caminhada juntos quando ambos faltarem e avaliação antes da próxima. Reuso aprovado após correspondência nas fontes; não bestiário geral/variantes. **Depois** retomar distribuição dos encontros, portas e eventos. Loot/tesouros/descanso continuam posteriores.
 
-**Orc:** responsável aprovou explicitamente animações de combate42b857f, sem aprovação de balanceamento/encontros por consequência. Caminhada12poses e um exemplar Map016/RAM implementados para avaliação; sem distribuição dos seis B2. [Acesso/evidências](ORC_M02.md). Map012/015 e cobertura49/180encontros/32/70portas preservados. Cinco grupos focais, sem exigir percurso manual agora. Forçar a porta determinístico/sem consumo continua adaptação pendente de avaliação integrada.
+**Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados e seis B2 não distribuídos.
 
-**Sequência proposta pela [matriz existente de nove espécies](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies):** avaliar orc atual → homem-lagarto(caminhada; batalha existente, três B2) → ogro(combate+caminhada; dois B1 contíguos) → aranha(combate+caminhada; nove A3). Cada espécie aguarda avaliação; somente então distribuição de encontros/portas/eventos por bloco. Não implementar a próxima automaticamente ou marcar seis orcs concluídos pela inspeção técnica.
+**Entrega atual — homem-lagarto:** [caminhada V01 e um exemplar RAM](HOMEM_LAGARTO_M02.md), preservando combate R03 legado, sem reuso de Argoniano. Reutiliza sala técnica em memória; zero alterações de distribuição, mapas/bancos, loot/balanceamento/descanso. Seis grupos focais passaram; **avaliação artística da caminhada pendente**. Cobertura49/180encontros/32/70portas,19referências de homem-lagarto ainda sem distribuição. Forçar a porta determinístico/sem consumo segue pendente de avaliação integrada; não exigir teste manual do restante agora.
+
+**Próximas espécies pela [matriz de nove espécies](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies):** após avaliar homem-lagarto, **ogro → aranha**, ambos com combate+caminhada juntos, uma espécie/entrega e avaliação antes da próxima. Depois retomar distribuição de encontros/portas/eventos; loot/tesouros/descanso depois. Não produzir novos assets ou espécies automaticamente.
 
 ## Histórico42b857f — piloto de batalha do orc
 

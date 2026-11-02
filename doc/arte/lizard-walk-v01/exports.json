@@ -1,0 +1,309 @@
+{
+  "source": "art/masters/stonekeep-lizard-walk-v01/sheet-v01.png",
+  "sourceSHA256": "5c6b05e1980a574c30ea4d48f0990c910df693cdcbe2a01f6cd873746650ed62",
+  "output": "img/characters/$Arena_lizard_man_walk_v01.png",
+  "outputSHA256": "3bcb0ed40e1362d9252d8d14425ece638e435b58ab74148225ad2cde80105d4e",
+  "cell": [
+    96,
+    96
+  ],
+  "scale": 0.24,
+  "ground": 94,
+  "groundByDirection": {
+    "2": 84,
+    "4": 84,
+    "6": 84,
+    "8": 78
+  },
+  "frames": [
+    {
+      "direction": 2,
+      "pattern": 0,
+      "sourceRect": [
+        57,
+        51,
+        284,
+        325
+      ],
+      "sourceBodyAxis": 190,
+      "sourceClawSupport": 325,
+      "targetSupport": 84,
+      "placement": [
+        16,
+        18
+      ],
+      "alphaBox": [
+        16,
+        18,
+        70,
+        84
+      ],
+      "sha256": "a31186a59ae41fdf348ffd733ca28cdf8dd3bfc92a9ace5070e95daab7ea0edb"
+    },
+    {
+      "direction": 2,
+      "pattern": 1,
+      "sourceRect": [
+        415,
+        51,
+        639,
+        307
+      ],
+      "sourceBodyAxis": 550,
+      "sourceClawSupport": 307,
+      "targetSupport": 84,
+      "placement": [
+        16,
+        23
+      ],
+      "alphaBox": [
+        16,
+        23,
+        70,
+        84
+      ],
+      "sha256": "242d6ccbb62d43f8feef81a15d936b3be5f98e2a239f6c7b429adf1af03a68a2"
+    },
+    {
+      "direction": 2,
+      "pattern": 2,
+      "sourceRect": [
+        778,
+        51,
+        992,
+        324
+      ],
+      "sourceBodyAxis": 910,
+      "sourceClawSupport": 324,
+      "targetSupport": 84,
+      "placement": [
+        16,
+        18
+      ],
+      "alphaBox": [
+        16,
+        18,
+        67,
+        84
+      ],
+      "sha256": "dfdafe903be7da58abb8b12b3f05b205d59c1aef94ff4ecf51e2d61aa1afd2fa"
+    },
+    {
+      "direction": 4,
+      "pattern": 0,
+      "sourceRect": [
+        56,
+        438,
+        323,
+        649
+      ],
+      "sourceBodyAxis": 187,
+      "sourceClawSupport": 649,
+      "targetSupport": 84,
+      "placement": [
+        17,
+        33
+      ],
+      "alphaBox": [
+        17,
+        33,
+        81,
+        84
+      ],
+      "sha256": "edb0773bb2447887a79438e986a765ff7f9a2a03c567bb185e3c69cc864c7f54"
+    },
+    {
+      "direction": 4,
+      "pattern": 1,
+      "sourceRect": [
+        414,
+        438,
+        678,
+        661
+      ],
+      "sourceBodyAxis": 545,
+      "sourceClawSupport": 661,
+      "targetSupport": 84,
+      "placement": [
+        17,
+        30
+      ],
+      "alphaBox": [
+        17,
+        30,
+        80,
+        84
+      ],
+      "sha256": "d56127fbe7c4bd892705ca628c76b08cce28a1bd6b5b1f810381dbd1eec556a5"
+    },
+    {
+      "direction": 4,
+      "pattern": 2,
+      "sourceRect": [
+        763,
+        438,
+        1035,
+        657
+      ],
+      "sourceBodyAxis": 899,
+      "sourceClawSupport": 657,
+      "targetSupport": 84,
+      "placement": [
+        15,
+        31
+      ],
+      "alphaBox": [
+        15,
+        31,
+        80,
+        84
+      ],
+      "sha256": "008f498b78465a87151fa2f7575462001e5bd4ef9f301d37607d21bf9bf25ad2"
+    },
+    {
+      "direction": 6,
+      "pattern": 0,
+      "sourceRect": [
+        51,
+        790,
+        319,
+        1014
+      ],
+      "sourceBodyAxis": 190,
+      "sourceClawSupport": 1014,
+      "targetSupport": 84,
+      "placement": [
+        15,
+        30
+      ],
+      "alphaBox": [
+        15,
+        30,
+        79,
+        84
+      ],
+      "sha256": "be7d07339708efae432bc49a14285ecc8a7b093301cc323e458be6af53ba83f7"
+    },
+    {
+      "direction": 6,
+      "pattern": 1,
+      "sourceRect": [
+        413,
+        789,
+        664,
+        1011
+      ],
+      "sourceBodyAxis": 550,
+      "sourceClawSupport": 1011,
+      "targetSupport": 84,
+      "placement": [
+        15,
+        31
+      ],
+      "alphaBox": [
+        15,
+        31,
+        75,
+        84
+      ],
+      "sha256": "ab6ddff22383bdc4dd8972cd9be1b808fab73768c7e45aaa95c82bc96b222fd8"
+    },
+    {
+      "direction": 6,
+      "pattern": 2,
+      "sourceRect": [
+        772,
+        788,
+        1023,
+        1015
+      ],
+      "sourceBodyAxis": 910,
+      "sourceClawSupport": 1015,
+      "targetSupport": 84,
+      "placement": [
+        15,
+        30
+      ],
+      "alphaBox": [
+        15,
+        30,
+        75,
+        84
+      ],
+      "sha256": "787d4833f1aa5091bae2ed623698b7750326545effc8720b2abfea455207b4ef"
+    },
+    {
+      "direction": 8,
+      "pattern": 0,
+      "sourceRect": [
+        98,
+        1123,
+        307,
+        1403
+      ],
+      "sourceBodyAxis": 186,
+      "sourceClawSupport": 1344,
+      "targetSupport": 78,
+      "placement": [
+        27,
+        25
+      ],
+      "alphaBox": [
+        27,
+        25,
+        77,
+        92
+      ],
+      "sha256": "c3b017a727417ff1e1d28ee4fe740d731e60e77d8f353b8ce3fcbb64e0dd830e"
+    },
+    {
+      "direction": 8,
+      "pattern": 1,
+      "sourceRect": [
+        451,
+        1126,
+        656,
+        1401
+      ],
+      "sourceBodyAxis": 543,
+      "sourceClawSupport": 1350,
+      "targetSupport": 78,
+      "placement": [
+        26,
+        24
+      ],
+      "alphaBox": [
+        26,
+        24,
+        75,
+        90
+      ],
+      "sha256": "af772178025067461c511df586892a2d1e4a7f11f0ecc301f94c8cde2ebf5161"
+    },
+    {
+      "direction": 8,
+      "pattern": 2,
+      "sourceRect": [
+        799,
+        1125,
+        999,
+        1402
+      ],
+      "sourceBodyAxis": 892,
+      "sourceClawSupport": 1370,
+      "targetSupport": 78,
+      "placement": [
+        26,
+        19
+      ],
+      "alphaBox": [
+        26,
+        19,
+        74,
+        85
+      ],
+      "sha256": "377b614f990760cffe2ffd7a41b606bbb197f37facf957f06fc9410a0322e662"
+    }
+  ],
+  "approval": "Walking pending owner evaluation; existing R03 enemy battle preserved, no playable Argonian appearance reused"
+}

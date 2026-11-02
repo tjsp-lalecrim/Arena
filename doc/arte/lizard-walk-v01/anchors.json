@@ -1,0 +1,10 @@
+{
+  "source": "art/masters/stonekeep-lizard-walk-v01/sheet-v01.png",
+  "cell": [96,96],
+  "scale": 0.24,
+  "bodyAxisAndSupport": [[190,325],[550,307],[910,324],[187,649],[545,661],[899,657],[190,1014],[550,1011],[910,1015],[186,1344],[543,1350],[892,1370]],
+  "sourceSupportMeaning": "Authored body axis and claw support, not tail tip or trident extremities; original master pixels. No per-pose rescale.",
+  "groundByDirection": {"2":84,"4":84,"6":84,"8":78},
+  "nominalGround": 94,
+  "groundMeaning": "Native cell padding is not body size. Existing Encounter sprite hook compensates nominalGround minus directional support; north keeps transparent room for tail beyond toes."
+}

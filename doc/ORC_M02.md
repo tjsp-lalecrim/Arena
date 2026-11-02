@@ -2,7 +2,7 @@
 
 ## Aprovação recebida e cobertura atual
 
-O responsável **aprovou explicitamente as animações de combate entregues em42b857f**. Ambiente/casos adicionais não foram informados; não estender a aprovação a balanceamento, recompensas, encontros ou caminhada. Mestres/atlas/perfil de batalha preservados; somente metadados de aprovação atualizados. A nova caminhada e patrulha **aguardam avaliação**.
+O responsável **aprovou explicitamente as animações de combate entregues em42b857f**. Ambiente/casos adicionais não foram informados; não estender a aprovação de combate a balanceamento, recompensas ou encontros. Mestres/atlas/perfil de batalha preservados; somente metadados de aprovação atualizados. A patrulha de **6794a81 foi explicitamente aprovada pelo responsável**; sem ambiente ou casos adicionais informados. Não inferir aprovação de balanceamento, recompensas ou distribuição dos seis B2.
 
 Uma folha de **12desenhos, quatro direções e três fases**, com o mesmo orc, elmo, paleta azul/oliva, maça à direita e escudo à esquerda. Fonte cardinal: ORC1–5.CFA do original instalado, leitor/paleta existentes; [hashes e referências](arte/orc-walk-v01/sources.json). Vista superior ortogonal é adaptação à grade, não câmera lateral da batalha. Sem nova observação DOS, variante ou outra espécie gerada.
 
@@ -32,7 +32,7 @@ Mesmos Enemy7/Troop8,40PV/ATQ10/DEF5/MAT0/MDF3/AGI8/SOR5/HIT90% e ação nativa 
 
 Comparação à base42b857f confirma assets de batalha byte a byte e perfil/dados semanticamente iguais; bancos/Map012/015/cobertura preservados. Pai `build-rihad-arrival` recompõe Map016 e mantém todos os dados anteriores; não repetida campanha/matriz de combate. A primeira tentativa de teste leu cedo demais a janela ainda aberta após vitória; runner passou a aguardar a transição nativa, sem alterar o combate. Apenas verificação técnica, sem novo teste no editor/mobile, balanceamento ou aprovação manual da caminhada.
 
-[Vídeo≈16s normal](evidencias/m02-orc-walk-v01/caminhada-contato-normal.webm), [sala](evidencias/m02-orc-walk-v01/patrulha.png), [contato](evidencias/m02-orc-walk-v01/contato.png), [atlas1:1](evidencias/m02-orc-walk-v01/atlas-escala-real.png), [resultado](evidencias/m02-orc-walk-v01/resultado.json), [QA](evidencias/m02-orc-walk-v01/video-qa.json). Vídeo do canvas nativo30fps/velocidade normal: demonstração controlada de quatro direções, patrulha natural e contato; vitória controlada ocorre depois da gravação. Decodificado localmente a4x só para inspeção, sem alterar o vídeo; servidor não expõe evidências. **Aguardar avaliação da caminhada antes da próxima espécie**; depois homem-lagarto, ogro e aranha conforme matriz. Não distribuir os seis B2 agora.
+[Vídeo≈16s normal](evidencias/m02-orc-walk-v01/caminhada-contato-normal.webm), [sala](evidencias/m02-orc-walk-v01/patrulha.png), [contato](evidencias/m02-orc-walk-v01/contato.png), [atlas1:1](evidencias/m02-orc-walk-v01/atlas-escala-real.png), [resultado](evidencias/m02-orc-walk-v01/resultado.json), [QA](evidencias/m02-orc-walk-v01/video-qa.json). Vídeo do canvas nativo30fps/velocidade normal: demonstração controlada de quatro direções, patrulha natural e contato; vitória controlada ocorre depois da gravação. Decodificado localmente a4x só para inspeção, sem alterar o vídeo; servidor não expõe evidências. **Patrulha6794a81 aprovada; caminhada do homem-lagarto é a entrega atual**, seguida de ogro e aranha conforme matriz, com avaliação entre espécies. Não distribuir os seis B2 agora.
 
 ---
 

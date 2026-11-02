@@ -1,0 +1,97 @@
+{
+  "version": "lizard-patrol-v01",
+  "enemyId": 3,
+  "troopId": 3,
+  "entry": {
+    "id": "technical.stonekeep.lizard.walk.arrival",
+    "mapId": 16,
+    "x": 4,
+    "y": 9,
+    "direction": 8
+  },
+  "roomSourceEventNote": "ArenaEncounter:technical.stonekeep.orc.walk.01",
+  "labLoot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "isolated battle pilot only",
+    "source": "Empty rewards only in Lizard Man RAM inspection; preserve existing enemy3 campaign table and EXP50."
+  },
+  "encounters": {
+    "schemaVersion": 1,
+    "mapId": 16,
+    "areaId": "technical.stonekeep.lizard.walk",
+    "completionQuestId": "MQ02",
+    "mapVisuals": {
+      "3": {
+        "file": "$Arena_lizard_man_walk_v01",
+        "cell": [
+          96,
+          96
+        ],
+        "ground": 94,
+        "groundByDirection": {
+          "2": 84,
+          "4": 84,
+          "6": 84,
+          "8": 78
+        },
+        "animationWait": 10
+      }
+    },
+    "entries": [
+      {
+        "id": "technical.stonekeep.lizard.walk.01",
+        "eventId": 1,
+        "enemyId": 3,
+        "troopId": 3,
+        "origin": [
+          9,
+          6
+        ],
+        "sourceFlat": "Inspection only; original Stonekeep LIZRDMAN.DFA references remain unplaced",
+        "questSpecific": true,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          4
+        ],
+        "scale": 1
+      }
+    ]
+  },
+  "campaignIntegration": false,
+  "source": "Enemy Lizard Man R03 reused, not playable Argonian; current stats/actions/rewards unchanged outside the RAM inspection. No Stonekeep encounter placed."
+}

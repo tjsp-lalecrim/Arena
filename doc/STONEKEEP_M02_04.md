@@ -2,25 +2,29 @@
 
 ## Matriz operacional de assets — nove espécies
 
-**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 continua **49/180encontros e32/70portas**; a inspeção RAM do orc não entra nessa contagem.
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 continua **49/180encontros e32/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
 
 | Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
 |---|---|---|---|---|
 |Rato /52 /16 |Disponível R02 |Disponível R02 |Combate R02 aprovado (associação a61977b); exploração e entrega M01 preservadas, sem nova aprovação específica inferida |Reutilizar; nenhuma geração necessária agora |
 |Goblin /53 /32 |Disponível R03 |Disponível R02 |Legado da entrega M01; não inventar aprovação artística individual nova a partir de testes gerais |Reutilizar; manter ressalvas/evidências M01 |
-|Homem-lagarto /54 /19 |Disponível R03 |**Ausente** |Combate legado disponível; não inferir aprovação de caminhada inexistente |Uma caminhada coerente com batalha/original + exemplar RAM; não regenerar batalha por associação |
+|Homem-lagarto /54 /19 |Disponível R03, preservado |Disponível V01, **aguarda avaliação** |Legado de combate sem aprovação artística individual identificada; seis grupos técnicos da caminhada não são aprovação manual |Avaliar [um exemplar RAM](HOMEM_LAGARTO_M02.md); nenhum dos19distribuído |
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
-|Orc /56 /22 |**Aprovado42b857f** |Disponível V01, **aguarda avaliação** |Relato atual aprova animações de combate; não aprova equilíbrio, recompensas ou encontros |Avaliar esta caminhada/um exemplar RAM; seis B2 continuam ausentes |
+|Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar os assets; seis B2 continuam ausentes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
 |Ogro /58 /8 |**Ausente** |**Ausente** |Nenhum exemplar aprovado |Uma entrega com combate+caminhada do mesmo exemplar e inspeção RAM; avaliar antes de outra espécie |
 |Aranha /59 /20 |**Ausente** |**Ausente** |Nenhum exemplar aprovado |Uma entrega com combate+caminhada do mesmo exemplar, sem presumir outra aranha/franquia equivalente |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência proposta:**(1) concluir avaliação da caminhada do orc desta entrega;(2) homem-lagarto, pois três referências faltam em B2 e a batalha já existe;(3) ogro, para as dependências da região B1 adjacente a B2 (dois dos oito);(4) aranha, incluindo nove referências A3. Ogro/aranha recebem combate+caminhada juntos, um exemplar por entrega e avaliação entre espécies. Não é autorização de bestiário/lotes antecipados. Depois retomar distribuição dos encontros, portas e eventos por blocos contíguos; não declarar áreas completas com base nos assets. Loot/tesouros/descanso continuam depois; Forçar a porta permanece adaptação pendente de avaliação no teste integrado.
+**Sequência vigente:** orc preparado/aprovado; caminhada do homem-lagarto entregue para avaliação. Após seu feedback, **ogro e depois aranha**, cada um com combate+caminhada juntos em uma entrega e avaliação antes da próxima. Ogro atende dois B1 contíguos a B2; aranha inclui nove A3. Depois retomar distribuição de encontros, portas e eventos por blocos; assets disponíveis não concluem áreas. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+
+## Entrega atual — homem-lagarto, caminhada e inspeção RAM
+
+Sobre6794a81: [12poses, um exemplar na sala técnica reutilizada](HOMEM_LAGARTO_M02.md), sem personagem Argoniano, novo combate ou encontros da campanha. Batalha R03 e assets de orc preservados. Seis grupos focais passaram; caminhada/patrulha do homem-lagarto **aguardam avaliação**. Cobertura49/180encontros/32/70portas inalterada. Não solicitar percurso manual da dungeon agora.
 
 ## Orc atual — caminhada e inspeção RAM
 
-Responsável **aprovou explicitamente as animações de combate de42b857f**, sem ambiente adicional informado ou aprovação de balanceamento/encontros. [Caminhada e exemplar isolado](ORC_M02.md): quatro direções, doze desenhos, um encontro técnico no Map016, via hub. Batalha/mestres/atlas aprovados intactos; Map012/015 e os seis IDs B2 não foram modificados. Caminhada/patrulha aguardam avaliação, sem exigir percurso manual da dungeon agora.
+Responsável **aprovou explicitamente as animações de combate de42b857f**, sem ambiente adicional informado ou aprovação de balanceamento/encontros. [Caminhada e exemplar isolado](ORC_M02.md): quatro direções, doze desenhos, um encontro técnico no Map016, via hub. Batalha/mestres/atlas aprovados intactos; Map012/015 e os seis IDs B2 não foram modificados. Patrulha6794a81 explicitamente aprovada no relato atual, sem ambiente/casos adicionais inferidos ou distribuição dos seis B2.
 
 ### Histórico — piloto de batalha do orc
 
