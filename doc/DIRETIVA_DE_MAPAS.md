@@ -58,7 +58,7 @@ Fechamento recusado enquanto jogador ou evento não-through ocupa envelope de gi
 2. Ver o mesmo objeto de descanso isolado e junto de uma parede, sem alvenaria falsa; tesouro na escala real; canto/margem de água.
 3. Submeter a amostra à avaliação antes de expandir ocorrências, conforme o fluxo de DIRECAO_DE_ARTE.md; não produzir um lote de padrão novo ainda não aprovado na mesma entrega. Na expansão autorizada, auditar posições/camadas alteradas e registrar adaptações.
 4. Salvar/carregar, incluindo portas e água; testar navegação e colisão nativas. Quando houver alteração de gerador, conferir sua saída pertinente para garantir que não desfaz o ajuste; não regenerar tudo em uma revisão sem esse risco.
-5. Inspecionar no navegador e no editor MV1.6.1. Registrar o que foi executado: teste de navegador e validação de JSON não substituem autoria no editor, nem comprovam teste físico em mobile.
+5. Verificar no navegador desktop e validar os dados/geradores pertinentes. **Editor opcional**, compatibilidade não obrigatória pela decisão de02/11/2026 em DESENVOLVIMENTO_E_VERSIONAMENTO.md. Registrar uso do editor se ocorrer, sem exigir autoria como bloqueio ou atribuir teste físico mobile. Não apagar evidências históricas.
 
 Recortes de revisão, linhas e rótulos pertencem somente às pranchas. Prompts devem fornecer apenas referências efetivamente usadas; prints de defeitos não são modelos de resultado. Assets com falhas permanecem em revisão até avaliação do responsável.
 

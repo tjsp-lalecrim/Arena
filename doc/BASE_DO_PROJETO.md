@@ -8,7 +8,8 @@ Este documento é a fonte inicial de contexto para desenvolver uma releitura de 
 
 - Cidades preservam a topologia original, com eventos mínimos da campanha; interiores fora do recorte podem ficar inacessíveis. [Fonte principal e aplicação futura em Rihad](DIRETIVA_DE_MAPAS.md#cidades-topologia-original-e-recorte-de-eventos).
 
-- Motor: RPG Maker MV 1.6.1.
+- Fonte oficial: código, dados e geradores versionados; decisões/evidências na documentação do repositório.
+- Runtime inicial: MV1.6.1 e módulos próprios preservados. Navegador desktop é principal; editor RPG Maker opcional, sem compatibilidade obrigatória. Alteração da base do motor exige apresentar motivo, alternativas e impacto para avaliação prévia; sem refatoração ampla. [Diretiva operacional](DESENVOLVIMENTO_E_VERSIONAMENTO.md#fonte-oficial-execução-e-motor--decisão-vigente02112026).
 - Direção: releitura de Arena com escopo reduzido.
 - O projeto do jogo já foi criado.
 - O projeto já utiliza Git para versionamento.

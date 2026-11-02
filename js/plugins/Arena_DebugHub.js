@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Hub de acessos técnicos; registro central e título compacto.
+ * @plugindesc v0.1.1 Hub de acessos técnicos; registro central e título compacto.
  * @author Codex
  * @help Após os plugins que registram os acessos antigos. ArenaDebugHub.json.
  * enabled é explícito; não depende da origem/localhost. Pacote jogador: false.
@@ -12,6 +12,18 @@ var ArenaDebugHub;
  'use strict';
  DataManager._databaseFiles.push({name:'$arenaDebugHub',src:'ArenaDebugHub.json'});
  var extra=[],available=[],pending=null,selection={category:0,items:{}},boot=DataManager.isDatabaseLoaded;
+ // Injected only by tools/serve-dev.cjs; published HTML/runtime stays unchanged.
+ function devHeading(scene,disk){
+  var loaded=window.ArenaDevBuild;if(!loaded)return;
+  var h=scene._heading;h.contents.clear();h.contents.fontSize=22;h.contents.drawText('Testes / Debug',0,0,280,24);h.contents.fontSize=14;h.contents.drawText('Enter: abrir · Esc: voltar · rolagem ↓',288,0,h.contentsWidth()-288,24);
+  function label(v){return v.short+(v.dirty?'*':'')+'/'+v.fingerprint.slice(0,8);}
+  var text='Aba '+label(loaded)+(disk?' · disco '+label(disk)+(disk.fingerprint===loaded.fingerprint?' · runtime confere':' · alterado: F5 quando seguro'):' · conferindo servidor…');
+  h.contents.fontSize=14;h.contents.textColor=disk&&disk.fingerprint!==loaded.fingerprint?'#e2b77b':'#c4c0b5';h.contents.drawText(text,0,24,h.contentsWidth(),16);h.resetTextColor();
+ }
+ function checkDevVersion(scene){
+  if(!window.ArenaDevBuild)return;devHeading(scene,null);var xhr=new XMLHttpRequest();xhr.open('GET','/__arena_dev/version.json');
+  xhr.onload=function(){if(xhr.status!==200||SceneManager._scene!==scene||!scene._heading.contents)return;try{var v=JSON.parse(xhr.responseText);if(v.kind==='arena-dev-server'&&v.version){scene._arenaDevDiskVersion=v.version;devHeading(scene,v.version);}}catch(e){}};xhr.send();
+ }
  function config(){return $arenaDebugHub;}
  function enabled(){return !!(window.$arenaDebugHub&&config().enabled===true);}
  function definitions(){return config().entries.concat(extra.map(function(e){return e.entry;}));}
@@ -74,6 +86,7 @@ var ArenaDebugHub;
   config().categories.forEach(function(c){self._categories.setHandler(c.id,function(){self.focusEntries();});});this._categories.setHandler('back',this.popScene.bind(this));this._categories.setHandler('cancel',this.popScene.bind(this));this.addWindow(this._categories);
   this._entries=new Panel(264,104,w-280,h-272,[]);this._entries.deactivate();this._entries.changed=function(){self.describe();};this._entries.setHandler('cancel',this.focusCategories.bind(this));this.addWindow(this._entries);
   this._categoryId=null;this._categories.select(Math.min(selection.category,categories.length-2));this.changeCategory();this.focusCategories();
+  checkDevVersion(this);
  };
  Scene_ArenaDebugHub.prototype.arm=function(focus){this._focus=focus;this._awaitNeutral=true;this._categories.deactivate();this._entries.deactivate();};
  Scene_ArenaDebugHub.prototype.changeCategory=function(){

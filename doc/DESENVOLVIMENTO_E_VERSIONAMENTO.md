@@ -2,12 +2,18 @@
 
 **Discussão pré-fechamento realizada em30/10/2026:** decisões autorizadas na retrospectiva abaixo. Não repetir essa parada nem presumir aprovação final do M01. Matriz e aceites finais em [BACKLOG_M01.md](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026).
 
+## Fonte oficial, execução e motor — decisão vigente02/11/2026
+
+**Código, dados e geradores versionados são a fonte oficial do projeto.** Documentação registra decisões/diretivas e a cobertura das evidências; chats não substituem o repositório. Navegador desktop, inicialmente Chrome, é o ambiente principal de execução e testes. **Editor RPG Maker é opcional; sua compatibilidade deixou de ser requisito obrigatório.** Preservar registros históricos de autoria/validação sem atribuir testes não executados ou exigir repeti-los.
+
+Manter inicialmente o runtime MV e os módulos próprios existentes; JavaScript executa o jogo e Python pode apoiar geração/validação. Se surgir necessidade de alterar a base do motor, **comunicar motivo, alternativas e impacto para avaliação antes de executar**. Não iniciar migração, consolidação geral de plugins ou refatoração ampla por associação. Execução local tem um único procedimento em [EXECUCAO_LOCAL.md](EXECUCAO_LOCAL.md), sem limpeza de dados/namespace ou reload automático.
+
 ## Retrospectiva aprovada — 30/10/2026
 
 Regras permanentes autorizadas pelo responsável; esta seção é a fonte do processo, sem decisão de encerramento/release:
 
 - **Dois chats principais:** análise/planejamento e desenvolvimento/execução. Chats adicionais somente para tarefa delimitada; consolidar resultados nas fontes principais do repositório antes de tratá-los como decisão vigente. O repositório é a fonte; memória de chat não o substitui.
-- **Motor:** continuar no RPG Maker MV1.6.1; nenhuma migração antes do M02. Eventual reavaliação no M02 exige decisão própria, sem migração automática nem grande refatoração por associação.
+- **Motor:** runtime MV inicialmente preservado; editor opcional conforme decisão vigente acima. Mudança de base exige avaliação prévia de motivo/alternativas/impacto, sem migração automática ou refatoração ampla.
 - **Escopo:** entregas pequenas, amostra integrada antes de lote e mudança estrutural tratada antes de multiplicar conteúdo dependente. O fluxo detalhado de assets permanece em DIRECAO_DE_ARTE.md; não duplicar suas instruções aqui.
 - **Prioridade e janela de refinamento:** escolher por impacto/risco e critérios do marco. Combinar uma janela limitada (tempo ou número de recortes a definir por marco); ao encerrá-la, devolver o restante ao registro futuro. Não há duração numérica aprovada nem promessa de consumo. Ressalvas aceitas não são bloqueios automáticos.
 - **Verificação e memória:** focal por mudança; percurso integrado em momentos definidos (referência congelada, integração antes de candidata e avaliação por marco, com cobertura proporcional ao delta). Reaproveitar aprovações identificadas por versão/ambiente/caso, sem pedidos repetidos. Consolidação documental ao fim de cada marco separa o vigente do histórico; não apagar evidências.

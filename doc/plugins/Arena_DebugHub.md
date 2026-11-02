@@ -52,3 +52,7 @@ Responsável confirmou que a navegação de **d800a8f funcionou**. Ambiente e ou
 **Lobo M02:** registro `arenaWolf`, **Stonekeep · lobo (RAM)**, em Combate;26 acessos com o anterior da entrega, sem comando novo no título. [Piloto e restrições](../LOBO_M02.md); o modo jogador desabilitado permanece preservado.
 
 **Lobo de exploração:** `arenaWolfPatrol`, **Stonekeep · lobo na passagem (RAM)**, categoria Campanha e mapas;27 acessos ao todo. Preserva a antiga batalha direta, fixtures/retorno e bloqueio de slots; nenhuma nova opção no título. [Cobertura](../LOBO_M02.md).
+
+## Versão 0.1.1 — identidade local discreta
+
+Com metadados `window.ArenaDevBuild` injetados exclusivamente pelo servidor de desenvolvimento, o cabeçalho mostra SHA curto/árvore alterada/assinatura dos arquivos carregados e consulta uma vez a versão em disco ao abrir o hub. Diferença sugere F5 quando seguro, sem reload automático ou limpeza de dados. Sem os metadados, conserva a apresentação anterior e não consulta endpoint local (Pages/editor inalterados). [Contrato do servidor e procedimento](../EXECUCAO_LOCAL.md). Sem novo plugin, consumidores de recursos ou alterações nas fixtures/slots.

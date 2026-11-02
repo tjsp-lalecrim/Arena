@@ -68,6 +68,8 @@ Incorporar os identificadores subordinados ao detalhar os futuros backlogs; não
 
 ## Critérios comuns de conclusão
 
+Diretriz técnica vigente: código/dados/geradores como fonte oficial, navegador desktop principal, editor opcional sem compatibilidade obrigatória. Runtime MV/módulos preservados; mudança de base só após apresentação de motivo/alternativas/impacto para avaliação. Fonte principal: DESENVOLVIMENTO_E_VERSIONAMENTO.md. Essa decisão não reescreve testes/aceites históricos do M01.
+
 - Quest jogável de ponta a ponta; cobertura dos mapas e encontros conforme o escopo mínimo funcional acima, com matriz original→adaptado e lacunas resolvidas.
 - Textos em Português Brasileiro, com fontes e adaptações documentadas.
 - Assets necessários integrados e consistentes com DIRECAO_DE_ARTE.md; ausência de recursos faltantes no fluxo validado.

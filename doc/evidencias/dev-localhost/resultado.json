@@ -1,0 +1,242 @@
+{
+  "base": "1bcf1f9",
+  "url": "http://127.0.0.1:8774/",
+  "browser": "156.0.8078.76",
+  "mode": "headless disposable Chrome context",
+  "server": {
+    "kind": "arena-dev-server",
+    "pid": 29316,
+    "root": "D:\\RPG Maker MV\\Projects\\Arena"
+  },
+  "headers": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 1984,
+      "sha256": "305cb492d647e275011220ccd4d7a6d2f7524ee4a416baf1e9dfa99cd96a641c"
+    },
+    {
+      "file": "js/main.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 270,
+      "sha256": "dcab1427f95c4bcedf1ed595b828d0c423d4c8d1767452c9a4e651a9c07a3ab9"
+    },
+    {
+      "file": "js/plugins/Arena_DebugHub.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 10904,
+      "sha256": "8963db3db9c08e34619947110a38e114f162f333f6acc877893b301379d2c3f9"
+    },
+    {
+      "file": "data/Items.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 3919,
+      "sha256": "7ef018dd3b888223108b86f3492848a55b634cd96ae1dc9d1b2824f6a0b362c6"
+    },
+    {
+      "file": "img/characters/$Arena_wolf_walk_v01.png",
+      "status": 200,
+      "type": "image/png",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 32097,
+      "sha256": "2fc180d133dc3f5582658587e8f8c5bd192aeaee68c628f22fbfe4d80860fa99"
+    },
+    {
+      "file": "fonts/gamefont.css",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 246,
+      "sha256": "75e4e7577b837aefbc959ec6355301e163910fd62367217cd23731fc0d5b8792"
+    },
+    {
+      "file": "fonts/mplus-1m-regular.ttf",
+      "status": 200,
+      "type": "font/ttf",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 1541768,
+      "sha256": "7f2096495dab49c7150cd0609f2f8d6b03ebf2fa7561ea34b3cca1e09eb0bae5"
+    },
+    {
+      "file": "__arena_dev/version.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 463,
+      "sha256": "fb70464d3e3ad8612ca60b7c8fac7fc0cf518f685ac52668acb33192a425a0bb"
+    },
+    {
+      "file": "not-found.json",
+      "status": 404,
+      "type": "text/plain",
+      "cacheControl": "no-store, max-age=0",
+      "pragma": "no-cache",
+      "expires": "0",
+      "bytes": 9,
+      "sha256": "e3ebaa16dd9d9b9fc107c42183fb6cf9d22927e1af03dbbdfa0ccc38e4e4ac31"
+    }
+  ],
+  "mechanisms": {
+    "serviceWorkers": [],
+    "cacheStorage": [],
+    "controlled": false,
+    "appCacheManifest": null
+  },
+  "loadedVersion": {
+    "commit": "1bcf1f97332a2d7855c3d5127d634c7400abf1ee",
+    "short": "1bcf1f9",
+    "branch": "feature/dev-localhost-sem-cache",
+    "dirty": true,
+    "fingerprint": "a3f216ef95f767cf0e625e3a342bb82510e7d47cb514222ac9868991e06cb92f",
+    "runtimeFiles": 362,
+    "instance": "7da92b5933390aa3d4fd1efa",
+    "canonicalOrigin": "http://127.0.0.1:8774"
+  },
+  "changedDiskVersion": {
+    "commit": "1bcf1f97332a2d7855c3d5127d634c7400abf1ee",
+    "short": "1bcf1f9",
+    "branch": "feature/dev-localhost-sem-cache",
+    "dirty": true,
+    "fingerprint": "ac3ace07db1e2881e0b96098d329aefa33c4ee4cb1015028117208b2ea99491d",
+    "runtimeFiles": 362
+  },
+  "technicalResponses": [
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:8774/data/ArenaStonekeepRuntimeProof.json",
+      "headers": {
+        "cache-control": "no-store, max-age=0",
+        "pragma": "no-cache",
+        "x-arena-content-sha256": "eb94d2d83ca12133fb5f2b81976a3ae9346721505aef5804a5434eef77268f0b",
+        "connection": "keep-alive",
+        "x-content-type-options": "nosniff",
+        "expires": "0",
+        "content-length": "23624",
+        "keep-alive": "timeout=5",
+        "x-arena-dev-server": "arena-dev-server",
+        "date": "Mon, 02 Nov 2026 12:16:54 GMT",
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:8774/data/ArenaStonekeepRuntimeProof.json",
+      "headers": {
+        "cache-control": "no-store, max-age=0",
+        "pragma": "no-cache",
+        "x-arena-content-sha256": "a902d29fee06784864cd40b6103120f2c3d447b3ee4df6230d1c3c0210b651f3",
+        "connection": "keep-alive",
+        "x-content-type-options": "nosniff",
+        "expires": "0",
+        "content-length": "23625",
+        "keep-alive": "timeout=5",
+        "x-arena-dev-server": "arena-dev-server",
+        "date": "Mon, 02 Nov 2026 12:16:56 GMT",
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:8774/data/ArenaStonekeepRuntimeProof.json",
+      "headers": {
+        "cache-control": "no-store, max-age=0",
+        "pragma": "no-cache",
+        "x-arena-content-sha256": "2e3afeafbc485d58a42c30ea1d0fe43f628213e379e0a2475f0f3726a3887d9d",
+        "connection": "keep-alive",
+        "x-content-type-options": "nosniff",
+        "expires": "0",
+        "content-length": "23592",
+        "keep-alive": "timeout=5",
+        "x-arena-dev-server": "arena-dev-server",
+        "date": "Mon, 02 Nov 2026 12:16:58 GMT",
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:8774/data/ArenaStonekeepRuntimeProof.json",
+      "headers": {
+        "cache-control": "no-store, max-age=0",
+        "pragma": "no-cache",
+        "x-arena-content-sha256": "2e3afeafbc485d58a42c30ea1d0fe43f628213e379e0a2475f0f3726a3887d9d",
+        "connection": "keep-alive",
+        "x-content-type-options": "nosniff",
+        "expires": "0",
+        "content-length": "23592",
+        "keep-alive": "timeout=5",
+        "x-arena-dev-server": "arena-dev-server",
+        "date": "Mon, 02 Nov 2026 12:17:01 GMT",
+        "content-type": "application/json; charset=utf-8"
+      }
+    }
+  ],
+  "saved": {
+    "name": "Cache focal",
+    "hp": 47,
+    "mp": 13,
+    "vigor": {
+      "current": 22,
+      "maximum": 100,
+      "base": 100,
+      "growth": 0,
+      "initialBonus": 0,
+      "modifiers": 0
+    },
+    "map": 8,
+    "position": [
+      148,
+      82
+    ],
+    "quest": {
+      "stage": 10,
+      "objectives": {},
+      "completed": false,
+      "receipts": {}
+    },
+    "variable": 123456
+  },
+  "saveKeys": [
+    "arena:m01:save-v1:RPG File16",
+    "arena:m01:save-v1:RPG Global"
+  ],
+  "checks": [
+    "Exclusive existing Arena server reused; fixed port, no alternate port/process kill by CLI",
+    "HTML/JS/JSON/PNG/CSS/font/metadata/404 no-store; conditional requests still200/full bytes; content hashes match",
+    "Real controlled technical JSON first→second across ordinary reload; original bytes restored exactly",
+    "Debug loaded-page identity differs from disk without reloading or interrupting game, then matches after normal reload",
+    "No service worker/cache storage/appcache in disposable profile; no registration in current source",
+    "Native normal-campaign Menu Save16, normal reload, Title Continue/Load16 preserve identity, spent resources, location, quest and synthetic variable",
+    "Namespace stable; zero personal-profile access and no storage clearing; Pages/deployment untouched"
+  ],
+  "errors": [],
+  "limits": [
+    "No inspection/removal of service workers in personal profile",
+    "No full campaign, mobile or browser-restart retest",
+    "Existing native in-memory DB/images remain loaded until user reloads; no hot reload"
+  ],
+  "technicalFileRestored": true
+}
