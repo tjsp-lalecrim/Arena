@@ -18,8 +18,10 @@ Critérios detalhados permanecem em [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAM
 |1 | REF09 | Continuidade de arma/pose nas combinações efetivamente utilizadas e não cobertas pelos pilotos; começar por um caso defeituoso identificado. Preservar os comandos aprovados e registrar separadamente identidade/nome do pesado da adaga; não expandir biblioteca automaticamente |
 |2 | REF03 / REF10 | Apresentação contextual de batalha ou resumo de loot: escolher **um** problema concreto, sem misturar fundo, regras de loot e catálogo. Se REF03 já for entregue na janela M02, reutilizar sua evidência e retirar o recorte atendido da seleção |
 |3 | REF15, parcela desktop | Inventário das funções do menu e proposta de simplificação, ou um recorte visual da distribuição; preservar opções exclusivas/dados/atalhos. Não é autorização de remover menus nem redesenhar todos eles |
-|4 | REF07/REF08/REF16 e ressalvas de portas/objetos | Uma inconsistência visual identificada em escala real; preservar ilustrações e encaixe/animação/colisão. Tela de título e introdução são assuntos distintos; não regenerar artes adequadas |
+|4 | REF07/REF08/REF16/REF17 e ressalvas de portas/objetos | Uma inconsistência visual identificada em escala real; preservar ilustrações e encaixe/animação/colisão. Tela de título e introdução são assuntos distintos; não regenerar artes adequadas |
 |5 | REF01 / REF06 e REF14 desktop | Conveniência/navegação/feedback selecionados conforme uso real. Se notificação já entregue no M02, não repetir. Aproveitamento da tela exige distinguir canvas, resolução interna e fullscreen; não incorporar a parcela mobile |
+
+**REF17/Stonekeep:** contraste moderado do piso para identificação do lobo; critérios e registro únicos em REFINAMENTOS_POS_INTEGRACAO_M01.md. Melhoria futura, não iniciada e não bloqueante para a campanha.
 
 Manutenção focal entra somente quando sustentada por falha, duplicação ou custo recorrente concreto que afete o recorte; não inventariar/refatorar todo o motor. Novos problemas terão fonte única no registro de pendências, sem relatório paralelo por conveniência.
 

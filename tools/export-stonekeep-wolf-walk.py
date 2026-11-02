@@ -22,7 +22,7 @@ for i,(cut,box,rect) in enumerate(parts):
     metrics.append({'direction':[2,4,6,8][row],'pattern':col,'sourceRect':rect,'torsoAxis':axis,'sourceRowGround':row_ground[row],'placement':[px,py],'alphaBox':bbox,'sha256':hashlib.sha256(frame.tobytes()).hexdigest()})
 assert len({v['sha256'] for v in metrics})==12
 dest=R/'img/characters/$Arena_wolf_walk_v01.png';sheet.save(dest)
-meta={'source':src.relative_to(R).as_posix(),'sourceSha256':hashlib.sha256(src.read_bytes()).hexdigest(),'output':dest.relative_to(R).as_posix(),'outputSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'scale':scale,'cell':[64,64],'ground':62,'order':[2,4,6,8],'frames':metrics,'approval':'walking/patrol pending owner; battle aaea451 approved and unchanged'}
+meta={'source':src.relative_to(R).as_posix(),'sourceSha256':hashlib.sha256(src.read_bytes()).hexdigest(),'output':dest.relative_to(R).as_posix(),'outputSha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'scale':scale,'cell':[64,64],'ground':62,'order':[2,4,6,8],'frames':metrics,'approval':json.loads((R/'doc/arte/wolf-walk-v01/prompt.json').read_text(encoding='utf8'))['approval']}
 (R/'doc/arte/wolf-walk-v01/exports.json').write_text(json.dumps(meta,indent=2)+'\n',encoding='utf8')
 bg=Image.new('RGBA',sheet.size,'#29333a');bg.alpha_composite(sheet);bg.convert('RGB').save(R/'doc/evidencias/m02-wolf-walk-v01/atlas-escala-real.png')
 print('12 genuine walk phases packed with shared density and stable source-row support.')

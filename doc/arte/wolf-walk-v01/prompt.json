@@ -22,7 +22,7 @@
     }
   ],
   "master": "art/masters/stonekeep-wolf-walk-v01/sheet-v01.png",
-  "approval": "walking/patrol pending owner evaluation; approved battle aaea451 preserved",
+  "approval": "Owner approved patrol of d27eb5f; battle aaea451 approval preserved. No implied approval of group, balance or rewards.",
   "coverage": "12 actual directional walking drawings, one new specimen, no battle edit or variants",
   "masterSha256": "5b7881bedabbf70d49e85f735ee6f5fff411eac78b4556103e3338cf71d6be50"
 }

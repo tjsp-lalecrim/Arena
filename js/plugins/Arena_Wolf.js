@@ -1,9 +1,9 @@
 /*:
- * @plugindesc v0.2.0 Lobo comum: um encontro e acessos técnicos isolados.
+ * @plugindesc v0.2.0 Lobo comum: quatro encontros e acessos técnicos isolados.
  * @author Codex
  * @help Após Arena_DebugHub, Stonekeep e núcleos de combate/recursos/loot.
  * ArenaWolf.json; um exemplar, ações nativas, sem mecânicas novas.
- * Um evento de mapa; batalha direta RAM sem recompensas.
+ * Quatro eventos de mapa; batalha direta RAM sem recompensas.
  */
 var ArenaWolf;
 (function(){'use strict';
@@ -23,5 +23,5 @@ var ArenaWolf;
   if(kind==='battle'){BattleManager.setup(c.troopId,false,false);$gameTroop.members().forEach(function(e){e._arenaWolfBattlePilot=true;});SceneManager.push(Scene_Battle);}
  }};
  ArenaDebugHub.register({symbol:'arenaWolf',name:'Stonekeep · lobo (RAM)',category:'combat',description:'Batalha direta do lobo aprovado. Sem EXP ou loot nesta sessão técnica.',saving:'Somente RAM · slots normais bloqueados'},ArenaWolf.startLab);
- ArenaDebugHub.register({symbol:'arenaWolfPatrol',name:'Stonekeep · lobo na passagem (RAM)',category:'campaign',description:'Um lobo em(90,51): caminhada, patrulha e contato. EXP25 provisória; drops desconhecidos, vazios.',saving:'Somente RAM · slots normais bloqueados'},ArenaWolf.startPatrolLab);
+ ArenaDebugHub.register({symbol:'arenaWolfPatrol',name:'Stonekeep · lobo na passagem (RAM)',category:'campaign',description:'Quatro lobos nas posições originais: circulação e contatos independentes. EXP25 por lobo provisória; drops desconhecidos.',saving:'Somente RAM · slots normais bloqueados'},ArenaWolf.startPatrolLab);
 })();

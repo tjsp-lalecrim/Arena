@@ -1,10 +1,10 @@
-# Arena_Wolf0.2.0 — um encontro e dois acessos isolados
+# Arena_Wolf0.2.0 — quatro encontros e dois acessos isolados
 
-`ArenaWolf.json.encounter` vincula somente o evento19/Map012(90,51), Enemy6/Troop7; `walk` usa o sprite64px direcional novo. `campaign.loot` contém tabela vazia por incerteza e `enemy.exp=25` é provisório. Instância `_arenaWolfBattlePilot` mantém0EXP/loot pela consulta contextual, sem trocar configurações globais. Os demais inimigos delegam às funções anteriores.
+`ArenaWolf.json.encounter` preserva o piloto e `additionalEncounters` acrescenta eventos20–22/Map012(114,54),(99,54),(96,54), todos Enemy6/Troop7; `walk` usa o sprite64px direcional novo. `campaign.loot` contém tabela vazia por incerteza e `enemy.exp=25` é provisório. Instância `_arenaWolfBattlePilot` mantém0EXP/loot pela consulta contextual, sem trocar configurações globais. Os demais inimigos delegam às funções anteriores.
 
-`startPatrolLab()` reutiliza a fixture de materiais, aguarda Map012, limpa pendência, posiciona96,51 e prepara recursos sem iniciar batalha. `startLab()` preserva a batalha direta e sua flag. Ambos usam isolamento RAM existente. Novo registro `arenaWolfPatrol`: **Stonekeep · lobo na passagem (RAM)**, em Campanha e mapas; registro anterior/controles do hub preservados.
+`startPatrolLab()` reutiliza a fixture de materiais, aguarda Map012, limpa pendência, posiciona94,46 e prepara recursos sem iniciar batalha. `startLab()` preserva a batalha direta e sua flag. Ambos usam isolamento RAM existente. Novo registro `arenaWolfPatrol`: **Stonekeep · lobo na passagem (RAM)**, em Campanha e mapas; registro anterior/controles do hub preservados.
 
-Gerador mantém eventos/entradas alheias e um único ID estável. Patrulha/contato/derrota/respawn/persistência pertencem a Arena_Encounters; custos e recibos continuam nos núcleos existentes. Nenhum segundo consumidor ou schema/namespace novo. Fontes, aprovação recebida e verificações atuais em [LOBO_M02.md](../LOBO_M02.md).
+Gerador mantém eventos/entradas alheias e quatro IDs estáveis, rejeitando IDs/eventos/origens duplicados. Patrulha/contato/derrota/respawn/persistência pertencem a Arena_Encounters; custos e recibos continuam nos núcleos existentes. Nenhum segundo consumidor ou schema/namespace novo. Fontes, aprovação recebida e verificações atuais em [LOBO_M02.md](../LOBO_M02.md).
 
 ## Histórico — versão0.1 somente batalha
 

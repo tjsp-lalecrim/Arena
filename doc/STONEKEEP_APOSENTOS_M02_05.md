@@ -1,5 +1,7 @@
 # Stonekeep — delimitação dos encontros dos aposentos
 
+**Atualização após d27eb5f:** patrulha aprovada; os [quatro lobos confirmados foram integrados](LOBO_M02.md), eventos19–22, mesmos assets/valores. Teste manual do conjunto adiado para integração, não aprovado antecipadamente. As dependências/ausências abaixo registram o histórico da delimitação.
+
 **Continuação sobreaaea451:** responsável aprovou animação/combate; [caminhada e um encontro](LOBO_M02.md) implementados para avaliação, evento19 em(90,51), sem ocupar as outras três posições. EXP25 provisórios/loot vazio por incerteza; laboratório de batalha continua0EXP/loot. Tabela de posições abaixo preserva a delimitação histórica.
 
 **Continuação sobre2644185:** [um piloto de batalha do lobo](LOBO_M02.md) implementado para avaliação visual; não acrescenta caminhada ou os quatro encontros. Testes manuais adiados pelo responsável, sem aprovação presumida. As referências à ausência de exemplar abaixo registram a delimitação original.

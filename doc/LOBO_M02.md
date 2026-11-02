@@ -1,6 +1,32 @@
-# Stonekeep — lobo comum, piloto de batalha V01
+# Stonekeep — lobo comum
 
-## Caminhada e encontro único V01 — sobre aaea451
+## Quatro encontros confirmados — sobre d27eb5f
+
+**Aprovação recebida:** responsável aprovou a **patrulha do lobo** da última referência disponível **d27eb5f**. Aprovação anterior de animação/combate deaaea451 preservada. Não inferir aprovação definitiva de balanceamento, recompensas ou validações manuais não relatadas. O **conjunto ampliado ainda não foi aprovado**: seus testes manuais podem aguardar o próximo teste integrado, conforme autorizado.
+
+| ID final | Evento/Map012 | Origem MV | Original MIF |
+| --- | --- | --- | --- |
+|wolf.01 |19 |90,51 |52,16 |
+|wolf.02 |20 |114,54 |44,17 |
+|wolf.03 |21 |99,54 |49,17 |
+|wolf.04 |22 |96,54 |50,17 |
+
+IDs completos `stonekeep.apartments.wolf.01–04`. Fontes/projeção já confirmadas em [delimitação dos aposentos](STONEKEEP_APOSENTOS_M02_05.md) e [evidência original](evidencias/m02-stonekeep-aposentos/fontes.json): MAP1 de39699021.MIF, `0x8037`, STKEEP1.INF flat55=`wolf.dfa`/ITEM35. Mantido o primeiro encontro, acrescentados somente os três restantes. Mesmo raio2/intervalo90, piso/região4, colisões nativas, escala e assets aprovados. Territórios próximos dos pontos03/04 continuam usando colisão nativa; não há matilha, reforço, perseguição ou agregação. Nenhuma exigência de derrotar todos para acessar o pergaminho.
+
+Mesmos25EXP provisórios por encontro (**até100EXP opcionais** no conjunto), tabela vazia por incerteza das fontes e recibo único por batalha. Batalha direta RAM continua0EXP/loot. Fórmula/atributos, fonte/recuperação/entrega, outros16 encontros e respawn preservados. Novas posições/derrotas são independentes e estáveis; não reprocessam recibos anteriores.
+
+**Acesso mantido:** [localhost](http://127.0.0.1:8774/) → **Testes / Debug → Campanha e mapas → Stonekeep · lobo na passagem (RAM)**. Início técnico ajustado para **(94,46)**, piso válido fora dos raios de contato inicial; o ponto antigo(96,51) ficaria próximo ao novo wolf.04. Descrição informa quatro lobos, sem laboratório/comando novo. Contornar os pontos, observar um contato e, se desejado, usar o checkpoint **Guardar/Carregar teste em RAM**; slots pessoais bloqueados. Não é solicitado teste manual extenso agora.
+
+**Verificação focal:** `node tools/test-stonekeep-wolf-group.cjs`, Chrome156 isolado/origem efêmera,816×624, quatro grupos. Quatro origens/IDs/perfis distintos; aproximação/patrulha permitida para cada um, posições sem sobreposição observada, rota ao pergaminho/saída com os20 encontros vivos. Save sintético anterior só com wolf.01 acrescenta três eventos sem alterar personagem, quests, recursos, inventário ou recibos. Dois contatos nativos separados, tentativa concorrente bloqueada, uma instância por batalha; vitórias controladas concedem50EXP/dois recibos vazios uma única vez, removendo somente19/20; outros18 encontros permanecem vivos. RAM e Save16/F5/Load sintéticos preservam derrotas/recibos; saída/retorno antes da conclusão não provoca respawn. [Resultado](evidencias/m02-stonekeep-wolves/resultado.json), [captura](evidencias/m02-stonekeep-wolves/grupo.png).
+
+Geradores independentes esqueleto/ghoul/aposentos/lobo e pai Rihad preservam a reconstrução; mapas anteriores/camadas de012, bancos, perfis/loot e arte inalterados. Mestres e PNGs aprovados comparados byte a byte comd27eb5f. Exportador de caminhada passou a ler o registro de aprovação ao reconstruir os metadados; **não reexportada a arte**. Sem erros JS/HTTP faltante, novo teste no editor/mobile ou repetição da matriz de combate/animação.
+
+**Melhoria adiada:** contraste moderado dos pisos para identificar melhor o lobo, preservando fidelidade/direção. Fonte única **REF17**, vinculada ao QUALIDADE-01; não bloqueia a rota nem autoriza mudar pisos/assets agora.
+
+**Próximo requisito:** cobertura mínima dos encontros de Stonekeep agora implementada, coleta/entrega já confirmadas com suas coberturas. Avaliação manual ampliada fica para integração, sem marcar o conjunto aprovado. Próximo item de conteúdo **M02-06A — amostra integrada das celas de Fang Lair**, com planta/participantes, enigma, chave e porta; destino só será habilitado com mapa existente. Não iniciado nesta entrega. Balanceamento acumulado permanece M02-BAL, sem transformar REF17 ou decoração em bloqueio.
+
+## Histórico — caminhada e encontro único V01 (d27eb5f)
+
 
 **02/11/2026 — aprovação recebida:** responsável aprovou explicitamente **a animação e o combate do lobo de aaea451**. Não ampliar a aprovação a balanceamento, recompensas ou exploração. Mestre, atlas e perfil de batalha foram preservados; só os registros de aprovação mudaram. A nova caminhada/patrulha aguarda avaliação antes de ocupar as outras três posições. Não é solicitado repetir o teste do combate aprovado.
 
