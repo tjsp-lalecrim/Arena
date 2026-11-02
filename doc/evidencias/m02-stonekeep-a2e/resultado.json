@@ -1,0 +1,124 @@
+{
+  "base": "8f28207",
+  "url": "http://127.0.0.1:8774/",
+  "browser": "156.0.8078.76",
+  "mode": "headless disposable Chrome profile; native RAM only",
+  "checks": [
+    "All4 native door interactions open/close with stable anchors, both orientations, blocked/clear threshold, occupied-swing closing refused; no state/resource changes",
+    "Restricted sector+declared connectors native passability reaches all4 encounters, no detour through other wings/internal transfer",
+    "Actual contact for1 rat+goblin, native controlled victories/return, independent defeats, unchanged EXP/loot tables; repeated reward paths do not grant again",
+    "Native RAM restore preserves open/closed doors,2 independent defeats/receipts, character/resources/quest/inventory; no normal storage writes",
+    "Existing Map015 snapshot with22 old events gains new event IDs, preserves defeated logical states and door switches",
+    "Leaving/reentering same area before MQ02 completion preserves individual states, doors and source, no repeated rewards/respawn",
+    "M01 native door API still resolves Map008 and animates its original IDs/self-switches; other maps/data unchanged"
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.door.36.12",
+      "center": [
+        162,
+        39
+      ],
+      "horizontal": true,
+      "visual": 34,
+      "closedBlocked": true,
+      "anchor": [
+        162,
+        40
+      ],
+      "direction": 6
+    },
+    {
+      "id": "stonekeep.door.34.14",
+      "center": [
+        168,
+        45
+      ],
+      "horizontal": false,
+      "visual": 43,
+      "closedBlocked": true,
+      "anchor": [
+        168,
+        46
+      ],
+      "direction": 2
+    },
+    {
+      "id": "stonekeep.door.31.17",
+      "center": [
+        177,
+        54
+      ],
+      "horizontal": true,
+      "visual": 52,
+      "closedBlocked": true,
+      "anchor": [
+        177,
+        55
+      ],
+      "direction": 6
+    },
+    {
+      "id": "stonekeep.door.29.15",
+      "center": [
+        183,
+        48
+      ],
+      "horizontal": false,
+      "visual": 61,
+      "closedBlocked": true,
+      "anchor": [
+        183,
+        49
+      ],
+      "direction": 2
+    }
+  ],
+  "graph": {
+    "count": 631,
+    "encounters": [
+      {
+        "id": "stonekeep.a2east.rat.01",
+        "origin": [
+          174,
+          36
+        ],
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.a2east.rat.02",
+        "origin": [
+          180,
+          45
+        ],
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.a2east.rat.03",
+        "origin": [
+          180,
+          51
+        ],
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.a2east.goblin.01",
+        "origin": [
+          165,
+          72
+        ],
+        "reachable": true
+      }
+    ],
+    "map": 15
+  },
+  "expAwarded": 40,
+  "errors": [],
+  "missing": [],
+  "pending": [
+    "User manual evaluation of whole base/sector deferred, not approved",
+    "No campaign promotion, browser restart, mobile or full route retest",
+    "Door art reused as provisional DCAS5 interpretation; decoration remains omitted",
+    "Balance remains provisional; no engine file changes"
+  ]
+}

@@ -37,9 +37,11 @@ var ArenaStonekeepWhole;
  var loaded=DataManager.isDatabaseLoaded,registered=false;
  DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!registered){
   var cfg=c(),original=ArenaCampaignConfig.encounters('stonekeep');
-  if(!cfg||cfg.version!==1||cfg.mapId!==15||!$dataMapInfos[15]||cfg.context.mapId!==15||cfg.context.sourceId!==$arenaStonekeep.sourceId||!original.ok||JSON.stringify(cfg.encounters.entries.map(function(e){return e.id;}))!==JSON.stringify(original.config.entries.map(function(e){return e.id;})))throw Error('Stonekeep integral: vínculos de mapa/fonte/encontros inválidos. Reconstrua build-stonekeep-whole.');
-  ArenaDungeon.registerSwimming(cfg.mapId,cfg.context.swimming);registered=true;
+  if(!cfg||cfg.version!==1||cfg.mapId!==15||!$dataMapInfos[15]||cfg.context.mapId!==15||cfg.context.sourceId!==$arenaStonekeep.sourceId||!original.ok||JSON.stringify(cfg.encounters.entries.slice(0,original.config.entries.length).map(function(e){return e.id;}))!==JSON.stringify(original.config.entries.map(function(e){return e.id;})))throw Error('Stonekeep integral: vínculos de mapa/fonte/encontros inválidos. Reconstrua build-stonekeep-whole.');
+  ArenaDungeon.registerSwimming(cfg.mapId,cfg.context.swimming);ArenaDungeon.registerDoors(cfg.mapId,{mapId:cfg.mapId,doors:cfg.doors,doorAnimationFrames:cfg.doorAnimationFrames});registered=true;
  }return true;};
+ var onMapLoaded=Scene_Map.prototype.onMapLoaded;
+ Scene_Map.prototype.onMapLoaded=function(){if(here()&&!$gamePlayer.isTransferring())c().doors.forEach(function(d){d.eventIds.forEach(function(id){if(!$gameMap.event(id))$gameMap._events[id]=new Game_Event(c().mapId,id);});});onMapLoaded.apply(this,arguments);};
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===$arenaStonekeep.return.mapId&&!$gamePlayer.isTransferring()){
   pending=false;$gameSystem._arenaStonekeepWholeSession=true;var d=c().context.entry;neutral();$gamePlayer.reserveTransfer(d.mapId,d.x,d.y,d.direction,0);
@@ -54,5 +56,5 @@ var ArenaStonekeepWhole;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(here())this.addCommand('Stonekeep: pontos da base integral','arenaStonekeepWholePoints');};
  var create=Scene_Menu.prototype.createCommandWindow;
  Scene_Menu.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeepWholePoints',function(){SceneManager.goto(Points);});};
- ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,20 encontros reais e pergaminho transferidos. Portas e demais encontros ainda pendentes. Esc: pontos/guardar/carregar RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
+ ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,24 encontros reais e pergaminho transferidos. Portas e demais encontros ainda pendentes. Esc: pontos/guardar/carregar RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
 })();

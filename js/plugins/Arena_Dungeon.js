@@ -10,30 +10,32 @@ var ArenaDungeon;
  'use strict';
  if(!window.ArenaCharacterCreation)throw Error('Arena_Dungeon requer Arena_CharacterCreation.');
  DataManager._databaseFiles.push({name:'$arenaDungeon',src:'ArenaDungeon.json'});
- var swimmingMaps={};
+ var swimmingMaps={},doorMaps={};
  ArenaDungeon={
+  registerDoors:function(mapId,config){if(!Number.isInteger(mapId)||mapId<1||!config||config.mapId!==mapId||!Array.isArray(config.doors))throw Error('Portas: configuração inválida');doorMaps[mapId]=config;},
+  doorConfiguration:function(){return $gameMap&&($gameMap.mapId()===$arenaDungeon.mapId?$arenaDungeon:doorMaps[$gameMap.mapId()])||null;},
   registerSwimming:function(mapId,config){if(!Number.isInteger(mapId)||mapId<1||!config||!Number.isInteger(config.regionId))throw Error("Natação: configuração inválida");swimmingMaps[mapId]=Object.assign({},config);},
   swimmingConfiguration:function(){return $gameMap&&($gameMap.mapId()===$arenaDungeon.mapId?$arenaDungeon.swimming:swimmingMaps[$gameMap.mapId()])||null;},
   enter:function(){if($gameParty.inBattle()||!ArenaCharacterCreation.isCreated())return false;$gamePlayer.reserveTransfer($arenaDungeon.mapId,$arenaDungeon.start[0],$arenaDungeon.start[1],4,0);SceneManager.goto(Scene_Map);return true;},
   startLab:function(){DataManager.setupNewGame();ArenaCharacterCreation.confirmCurrent({name:'Explorador',raceId:'breton',genderId:'female'});SceneManager.clearStack();this.enter();},
-  door:function(id){return $arenaDungeon.doors.filter(function(v){return v.id===id;})[0];},
+  door:function(id){return (this.doorConfiguration()||$arenaDungeon).doors.filter(function(v){return v.id===id;})[0];},
   openDoor:function(id){return this.setDoor(id,true);},
   closeDoor:function(id){return this.setDoor(id,false);},
-  toggleDoor:function(id){var d=this.door(id);return d?this.setDoor(id,!$gameSelfSwitches.value([$arenaDungeon.mapId,d.eventIds[0],'A'])):false;},
+  toggleDoor:function(id){var cfg=this.doorConfiguration(),d=this.door(id);return cfg&&d?this.setDoor(id,!$gameSelfSwitches.value([cfg.mapId,d.eventIds[0],'A'])):false;},
   setDoor:function(id,open){
-   if($gameMap.mapId()!==$arenaDungeon.mapId)return false;
+   var cfg=this.doorConfiguration();if(!cfg)return false;
    var d=this.door(id);if(!d)return false;
    var transitions=$gameMap._arenaDoorTransitions||($gameMap._arenaDoorTransitions={});
    if(transitions[id])return false;
-   if($gameSelfSwitches.value([$arenaDungeon.mapId,d.eventIds[0],'A'])===open)return true;
+   if($gameSelfSwitches.value([cfg.mapId,d.eventIds[0],'A'])===open)return true;
    // Closing is refused if any non-through actor occupies the entire swing envelope.
    if(!open){var cx=d.center[0],cy=d.center[1],occupied=function(c){return Math.abs(c.x-cx)<=1&&Math.abs(c.y-cy)<=1;};
     if(occupied($gamePlayer)||$gameMap.events().some(function(e){return d.eventIds.indexOf(e.eventId())<0&&!e.isThrough()&&occupied(e);}))return false;
    }
    var visual=$gameMap.event(d.visualEventId),dir=d.axis==='east-west'?($gamePlayer.x<d.center[0]?4:6):($gamePlayer.y<d.center[1]?8:2);
    if(visual){visual._direction=dir;visual._arenaDoorDirection=dir;}
-   transitions[id]={open:open,remaining:$arenaDungeon.doorAnimationFrames||24};
-   if(!open)d.eventIds.forEach(function(n){$gameSelfSwitches.setValue([$arenaDungeon.mapId,n,'A'],false);});
+   transitions[id]={open:open,remaining:cfg.doorAnimationFrames||24};
+   if(!open)d.eventIds.forEach(function(n){$gameSelfSwitches.setValue([cfg.mapId,n,'A'],false);});
    return true;
   },
   isWaterTile:function(x,y){var s=this.swimmingConfiguration(),t=$gameMap.tileId(x,y,0),kind=s&&s.autotileKind!==undefined?s.autotileKind:0;return Tilemap.isTileA1(t)&&Tilemap.getAutotileKind(t)===kind;},
@@ -57,7 +59,7 @@ var ArenaDungeon;
   mapLoaded.apply(this,arguments);
  };
  var mapUpdate=Game_Map.prototype.update;
- Game_Map.prototype.update=function(sceneActive){mapUpdate.apply(this,arguments);if(this.mapId()!==$arenaDungeon.mapId)return;var transitions=this._arenaDoorTransitions||{};Object.keys(transitions).forEach(function(id){var t=transitions[id];if(--t.remaining<=0){var d=ArenaDungeon.door(id);if(d)d.eventIds.forEach(function(n){$gameSelfSwitches.setValue([$arenaDungeon.mapId,n,'A'],t.open);});delete transitions[id];}});};
+ Game_Map.prototype.update=function(sceneActive){mapUpdate.apply(this,arguments);var cfg=ArenaDungeon.doorConfiguration();if(!cfg)return;var transitions=this._arenaDoorTransitions||{};Object.keys(transitions).forEach(function(id){var t=transitions[id];if(--t.remaining<=0){var d=ArenaDungeon.door(id);if(d)d.eventIds.forEach(function(n){$gameSelfSwitches.setValue([cfg.mapId,n,'A'],t.open);});delete transitions[id];}});};
  var passable=Game_Player.prototype.isMapPassable;
  Game_Player.prototype.isMapPassable=function(x,y,d){
   // Do not change vehicle rules, other maps, event collisions or the engine's two-sided flag checks.
@@ -73,9 +75,11 @@ var ArenaDungeon;
  var directionRow=Sprite_Character.prototype.characterPatternY;
  Sprite_Character.prototype.characterPatternY=function(){var c=this._character;return c._arenaDoorDirection?(c._arenaDoorDirection-2)/2:directionRow.apply(this,arguments);};
  Sprite_Character.prototype.characterPatternX=function(){
-  var c=this._character;if($gameMap.mapId()===$arenaDungeon.mapId&&c instanceof Game_Event){
-   var d=$arenaDungeon.doors.filter(function(v){return v.visualEventId===c.eventId();})[0];
-   if(d){var t=($gameMap._arenaDoorTransitions||{})[d.id];if(t){var elapsed=($arenaDungeon.doorAnimationFrames||24)-t.remaining,stage=Math.min(2,Math.floor(elapsed/(($arenaDungeon.doorAnimationFrames||24)/3)));return t.open?stage:2-stage;}return $gameSelfSwitches.value([$arenaDungeon.mapId,d.eventIds[0],'A'])?2:0;}
+  var c=this._character,cfg=ArenaDungeon.doorConfiguration();if(cfg&&c instanceof Game_Event){
+   var d=cfg.doors.filter(function(v){return v.visualEventId===c.eventId();})[0];
+   if(d){var t=($gameMap._arenaDoorTransitions||{})[d.id];if(t){var elapsed=(cfg.doorAnimationFrames||24)-t.remaining,stage=Math.min(2,Math.floor(elapsed/((cfg.doorAnimationFrames||24)/3)));return t.open?stage:2-stage;}return $gameSelfSwitches.value([cfg.mapId,d.eventIds[0],'A'])?2:0;}
+  }
+  if($gameMap.mapId()===$arenaDungeon.mapId&&c instanceof Game_Event){
    var i=$arenaDungeon.integration.treasures.findIndex(function(v){return v.eventId===c.eventId();});if(i>=0)return ($gameMap._arenaTreasurePreview||{})[i]||0;
   }return frame.apply(this,arguments);
  };

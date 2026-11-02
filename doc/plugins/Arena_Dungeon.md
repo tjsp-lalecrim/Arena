@@ -1,3 +1,7 @@
+## Extensão A2-E — portas por mapa (M02)
+
+`registerDoors(mapId,{mapId,doors,doorAnimationFrames})` e `doorConfiguration()` acrescentam somente o consumidor Map015/Stonekeep. Map008 continua autoritativo em ArenaDungeon.json. APIs door/open/close/toggle usam o mapa corrente; self-switches carregam o mapId correto, mesmas nove partes, envelope e24frames. Nenhum registro para outros mapas, nenhuma mudança de motor ou geração artística. Tesouros/chave/revisão de MQ01 continuam exclusivos de Map008. A seleção por mapa é derivada e não gravada no save; transições do Game_Map e self-switches nativos continuam serializados. Regressão focal Map008 executada; [cobertura/fontes](../STONEKEEP_M02_04.md#faixa-a2-e--primeiro-setor-funcional-no-map015).
+
 ## Extensão M02-04 — natação por mapa
 
 Contrato aditivo `registerSwimming(mapId,config)` / `swimmingConfiguration()` reutiliza os mesmos hooks de passabilidade, bush, posição e ondulação para o consumidor Stonekeep. Map008 continua usando ArenaDungeon.json; mapas não registrados e veículos não recebem esse estado. Nenhum custo/regeneração, edição do motor ou nova migração de save. Portas/tesouros/reconstrução continuam limitados a Map008. [Consumidor, configuração e regressão focal](Arena_Stonekeep.md).

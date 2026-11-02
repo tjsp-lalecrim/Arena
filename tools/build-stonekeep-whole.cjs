@@ -19,9 +19,10 @@ function build(){
  if(encounters.entries.length!==20||map.events.filter(Boolean).length!==22||new Set(encounters.entries.map(e=>e.id)).size!==20)throw Error('Stonekeep integral: conteúdo funcional mudou; revisar correspondência.');
  for(const e of encounters.entries)if(map.events[e.eventId].note!=='ArenaEncounter:'+e.id||map.events[e.eventId].x!==e.origin[0]||map.events[e.eventId].y!==e.origin[1]||map.data[(5*274+e.origin[1])*274+e.origin[0]]!==4)throw Error('Stonekeep integral: vínculo/piso inválido '+e.id);
  const config={version:1,mapId:15,areaId:'stonekeep',context,encounters,coordinates:{oldMapId:12,delta:[delta,0],original:'zero-based MIF; wholeX=3+3*(89-originalX), wholeY=3+3*originalY'},mapping,geometry:{input:'Map014',sourceSha256:proof.sourceSha256,inputDataSha256:hash(base.data),crop:'Map012 interior x2..139/y2..100; unchanged layers at x+24',preservedTerrainAdjustments:terrainAdjustments},coverage:{implementedEncounters:20,originalReferences:180,implementedDoors:0,originalDoorReferences:70},points:[{name:'Entrada',position:[context.entry.x,context.entry.y]},{name:'Aposentos / lobos',position:[117,48]},{name:'Margem / passagem',position:[context.breach[0],context.breach[1]]},{name:'Ilha / pergaminho',position:[context.source[0],context.source[1]-1]},...proof.points.slice(2,6)]};
+ require('./stonekeep-sector-a2e.cjs')(map,config);
  for(const p of config.points)if(![4,5].includes(map.data[(5*274+p.position[1])*274+p.position[0]]))throw Error('Stonekeep integral: ponto técnico fora do piso '+p.name);
  const infos=read('data/MapInfos.json');if(infos[15]&&infos[15].name!=='Stonekeep integral — base isolada')throw Error('Map015 ocupado');infos[15]={id:15,name:'Stonekeep integral — base isolada',expanded:true,order:15,parentId:0,scrollX:0,scrollY:0};
  for(const [file,obj]of [['Map015',map],['ArenaStonekeepWhole',config],['MapInfos',infos]])fs.writeFileSync(path.join(R,'data/'+file+'.json'),(file==='MapInfos'?'[\n'+obj.map(v=>JSON.stringify(v)).join(',\n')+'\n]':JSON.stringify(obj))+'\n');
- console.log('Map015274x274;22 eventos reais/20 encontros; IDs preservados;153 tiles de adaptações antigas preservados.');return config;
+ console.log('Map015274x274;24 encontros/4 portas; A2-E conectado, IDs anteriores preservados.');return config;
 }
 module.exports=build;if(require.main===module)build();

@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "id": "stonekeep.a2-east",
+  "coordinates": "zero-based view u=89-MIFx; world=[3+3*u,3+3*y]",
+  "bounds": [
+    54,
+    0,
+    59,
+    29
+  ],
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "cells": [
+    {"view":[54,0],"mapRaw":28789,"floorRaw":768},
+    {"view":[55,0],"mapRaw":28789,"floorRaw":512},
+    {"view":[56,0],"mapRaw":28789,"floorRaw":768},
+    {"view":[57,0],"mapRaw":28789,"floorRaw":512},
+    {"view":[58,0],"mapRaw":28789,"floorRaw":512},
+    {"view":[59,0],"mapRaw":28789,"floorRaw":768},
+    {"view":[54,1],"mapRaw":10537,"floorRaw":512},
+    {"view":[55,1],"mapRaw":10023,"floorRaw":512},
+    {"view":[56,1],"mapRaw":10537,"floorRaw":512},
+    {"view":[57,1],"mapRaw":10023,"floorRaw":512},
+    {"view":[58,1],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,1],"mapRaw":10280,"floorRaw":512},
+    {"view":[54,2],"mapRaw":9766,"floorRaw":512},
+    {"view":[55,2],"mapRaw":10023,"floorRaw":512},
+    {"view":[56,2],"mapRaw":9766,"floorRaw":512},
+    {"view":[57,2],"mapRaw":10537,"floorRaw":512},
+    {"view":[58,2],"mapRaw":10537,"floorRaw":512},
+    {"view":[59,2],"mapRaw":9766,"floorRaw":512},
+    {"view":[54,3],"mapRaw":10280,"floorRaw":512},
+    {"view":[55,3],"mapRaw":10023,"floorRaw":512},
+    {"view":[56,3],"mapRaw":10537,"floorRaw":512},
+    {"view":[57,3],"mapRaw":10280,"floorRaw":512},
+    {"view":[58,3],"mapRaw":10023,"floorRaw":512},
+    {"view":[59,3],"mapRaw":10537,"floorRaw":512},
+    {"view":[54,4],"mapRaw":10023,"floorRaw":512},
+    {"view":[55,4],"mapRaw":10280,"floorRaw":512},
+    {"view":[56,4],"mapRaw":9766,"floorRaw":512},
+    {"view":[57,4],"mapRaw":9766,"floorRaw":512},
+    {"view":[58,4],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,4],"mapRaw":9766,"floorRaw":512},
+    {"view":[54,5],"mapRaw":10280,"floorRaw":512},
+    {"view":[55,5],"mapRaw":9766,"floorRaw":512},
+    {"view":[56,5],"mapRaw":10023,"floorRaw":512},
+    {"view":[57,5],"mapRaw":10023,"floorRaw":512},
+    {"view":[58,5],"mapRaw":10023,"floorRaw":768},
+    {"view":[59,5],"mapRaw":10023,"floorRaw":768},
+    {"view":[54,6],"mapRaw":9766,"floorRaw":512},
+    {"view":[55,6],"mapRaw":10280,"floorRaw":512},
+    {"view":[56,6],"mapRaw":9766,"floorRaw":512},
+    {"view":[57,6],"mapRaw":10537,"floorRaw":768},
+    {"view":[58,6],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,6],"mapRaw":10023,"floorRaw":512},
+    {"view":[54,7],"mapRaw":9766,"floorRaw":512},
+    {"view":[55,7],"mapRaw":10023,"floorRaw":512},
+    {"view":[56,7],"mapRaw":10537,"floorRaw":512},
+    {"view":[57,7],"mapRaw":9766,"floorRaw":512},
+    {"view":[58,7],"mapRaw":10023,"floorRaw":512},
+    {"view":[59,7],"mapRaw":9766,"floorRaw":512},
+    {"view":[54,8],"mapRaw":10023,"floorRaw":512},
+    {"view":[55,8],"mapRaw":9766,"floorRaw":512},
+    {"view":[56,8],"mapRaw":9766,"floorRaw":512},
+    {"view":[57,8],"mapRaw":10023,"floorRaw":512},
+    {"view":[58,8],"mapRaw":10280,"floorRaw":768},
+    {"view":[59,8],"mapRaw":10537,"floorRaw":512},
+    {"view":[54,9],"mapRaw":10023,"floorRaw":512},
+    {"view":[55,9],"mapRaw":10280,"floorRaw":512},
+    {"view":[56,9],"mapRaw":10280,"floorRaw":512},
+    {"view":[57,9],"mapRaw":10023,"floorRaw":512},
+    {"view":[58,9],"mapRaw":10537,"floorRaw":768},
+    {"view":[59,9],"mapRaw":10023,"floorRaw":512},
+    {"view":[54,10],"mapRaw":0,"floorRaw":512},
+    {"view":[55,10],"mapRaw":0,"floorRaw":512},
+    {"view":[56,10],"mapRaw":32776,"floorRaw":512},
+    {"view":[57,10],"mapRaw":32776,"floorRaw":512},
+    {"view":[58,10],"mapRaw":10537,"floorRaw":512},
+    {"view":[59,10],"mapRaw":10023,"floorRaw":512},
+    {"view":[54,11],"mapRaw":0,"floorRaw":512},
+    {"view":[55,11],"mapRaw":0,"floorRaw":512},
+    {"view":[56,11],"mapRaw":0,"floorRaw":768},
+    {"view":[57,11],"mapRaw":32820,"floorRaw":512},
+    {"view":[58,11],"mapRaw":10023,"floorRaw":512},
+    {"view":[59,11],"mapRaw":8419,"floorRaw":512},
+    {"view":[54,12],"mapRaw":0,"floorRaw":512},
+    {"view":[55,12],"mapRaw":32813,"floorRaw":512},
+    {"view":[56,12],"mapRaw":0,"floorRaw":768},
+    {"view":[57,12],"mapRaw":0,"floorRaw":512},
+    {"view":[58,12],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,12],"mapRaw":8419,"floorRaw":768},
+    {"view":[54,13],"mapRaw":0,"floorRaw":512},
+    {"view":[55,13],"mapRaw":0,"floorRaw":512},
+    {"view":[56,13],"mapRaw":0,"floorRaw":512},
+    {"view":[57,13],"mapRaw":32814,"floorRaw":512},
+    {"view":[58,13],"mapRaw":9766,"floorRaw":512},
+    {"view":[59,13],"mapRaw":32778,"floorRaw":512},
+    {"view":[54,14],"mapRaw":9766,"floorRaw":512},
+    {"view":[55,14],"mapRaw":45072,"floorRaw":512},
+    {"view":[56,14],"mapRaw":9766,"floorRaw":512},
+    {"view":[57,14],"mapRaw":10023,"floorRaw":512},
+    {"view":[58,14],"mapRaw":10023,"floorRaw":512},
+    {"view":[59,14],"mapRaw":32820,"floorRaw":512},
+    {"view":[54,15],"mapRaw":0,"floorRaw":512},
+    {"view":[55,15],"mapRaw":0,"floorRaw":512},
+    {"view":[56,15],"mapRaw":0,"floorRaw":512},
+    {"view":[57,15],"mapRaw":32774,"floorRaw":512},
+    {"view":[58,15],"mapRaw":10023,"floorRaw":768},
+    {"view":[59,15],"mapRaw":10280,"floorRaw":768},
+    {"view":[54,16],"mapRaw":0,"floorRaw":512},
+    {"view":[55,16],"mapRaw":0,"floorRaw":512},
+    {"view":[56,16],"mapRaw":0,"floorRaw":512},
+    {"view":[57,16],"mapRaw":0,"floorRaw":512},
+    {"view":[58,16],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,16],"mapRaw":32820,"floorRaw":512},
+    {"view":[54,17],"mapRaw":0,"floorRaw":512},
+    {"view":[55,17],"mapRaw":0,"floorRaw":512},
+    {"view":[56,17],"mapRaw":0,"floorRaw":512},
+    {"view":[57,17],"mapRaw":0,"floorRaw":512},
+    {"view":[58,17],"mapRaw":45072,"floorRaw":768},
+    {"view":[59,17],"mapRaw":0,"floorRaw":512},
+    {"view":[54,18],"mapRaw":32813,"floorRaw":512},
+    {"view":[55,18],"mapRaw":0,"floorRaw":512},
+    {"view":[56,18],"mapRaw":0,"floorRaw":512},
+    {"view":[57,18],"mapRaw":0,"floorRaw":512},
+    {"view":[58,18],"mapRaw":9766,"floorRaw":768},
+    {"view":[59,18],"mapRaw":0,"floorRaw":512},
+    {"view":[54,19],"mapRaw":0,"floorRaw":768},
+    {"view":[55,19],"mapRaw":0,"floorRaw":512},
+    {"view":[56,19],"mapRaw":0,"floorRaw":768},
+    {"view":[57,19],"mapRaw":32774,"floorRaw":512},
+    {"view":[58,19],"mapRaw":10023,"floorRaw":512},
+    {"view":[59,19],"mapRaw":10280,"floorRaw":512},
+    {"view":[54,20],"mapRaw":15163,"floorRaw":512},
+    {"view":[55,20],"mapRaw":15420,"floorRaw":512},
+    {"view":[56,20],"mapRaw":15420,"floorRaw":512},
+    {"view":[57,20],"mapRaw":15420,"floorRaw":768},
+    {"view":[58,20],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,20],"mapRaw":32778,"floorRaw":512},
+    {"view":[54,21],"mapRaw":0,"floorRaw":512},
+    {"view":[55,21],"mapRaw":15163,"floorRaw":512},
+    {"view":[56,21],"mapRaw":10537,"floorRaw":512},
+    {"view":[57,21],"mapRaw":9766,"floorRaw":512},
+    {"view":[58,21],"mapRaw":9766,"floorRaw":512},
+    {"view":[59,21],"mapRaw":0,"floorRaw":512},
+    {"view":[54,22],"mapRaw":0,"floorRaw":512},
+    {"view":[55,22],"mapRaw":15420,"floorRaw":768},
+    {"view":[56,22],"mapRaw":9766,"floorRaw":512},
+    {"view":[57,22],"mapRaw":10023,"floorRaw":512},
+    {"view":[58,22],"mapRaw":10023,"floorRaw":512},
+    {"view":[59,22],"mapRaw":8419,"floorRaw":512},
+    {"view":[54,23],"mapRaw":32821,"floorRaw":512},
+    {"view":[55,23],"mapRaw":15163,"floorRaw":512},
+    {"view":[56,23],"mapRaw":10023,"floorRaw":768},
+    {"view":[57,23],"mapRaw":9766,"floorRaw":512},
+    {"view":[58,23],"mapRaw":10537,"floorRaw":512},
+    {"view":[59,23],"mapRaw":8419,"floorRaw":512},
+    {"view":[54,24],"mapRaw":0,"floorRaw":2048},
+    {"view":[55,24],"mapRaw":15163,"floorRaw":768},
+    {"view":[56,24],"mapRaw":10537,"floorRaw":512},
+    {"view":[57,24],"mapRaw":10023,"floorRaw":512},
+    {"view":[58,24],"mapRaw":9766,"floorRaw":512},
+    {"view":[59,24],"mapRaw":10023,"floorRaw":512},
+    {"view":[54,25],"mapRaw":0,"floorRaw":2048},
+    {"view":[55,25],"mapRaw":15420,"floorRaw":768},
+    {"view":[56,25],"mapRaw":10280,"floorRaw":512},
+    {"view":[57,25],"mapRaw":10280,"floorRaw":768},
+    {"view":[58,25],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,25],"mapRaw":10537,"floorRaw":512},
+    {"view":[54,26],"mapRaw":0,"floorRaw":2048},
+    {"view":[55,26],"mapRaw":15163,"floorRaw":768},
+    {"view":[56,26],"mapRaw":9766,"floorRaw":512},
+    {"view":[57,26],"mapRaw":9766,"floorRaw":512},
+    {"view":[58,26],"mapRaw":10280,"floorRaw":512},
+    {"view":[59,26],"mapRaw":9766,"floorRaw":512},
+    {"view":[54,27],"mapRaw":0,"floorRaw":2048},
+    {"view":[55,27],"mapRaw":15163,"floorRaw":512},
+    {"view":[56,27],"mapRaw":15420,"floorRaw":512},
+    {"view":[57,27],"mapRaw":15163,"floorRaw":512},
+    {"view":[58,27],"mapRaw":15420,"floorRaw":512},
+    {"view":[59,27],"mapRaw":15163,"floorRaw":512},
+    {"view":[54,28],"mapRaw":0,"floorRaw":2048},
+    {"view":[55,28],"mapRaw":0,"floorRaw":512},
+    {"view":[56,28],"mapRaw":15163,"floorRaw":768},
+    {"view":[57,28],"mapRaw":0,"floorRaw":2048},
+    {"view":[58,28],"mapRaw":0,"floorRaw":2048},
+    {"view":[59,28],"mapRaw":0,"floorRaw":2048},
+    {"view":[54,29],"mapRaw":0,"floorRaw":2048},
+    {"view":[55,29],"mapRaw":0,"floorRaw":2048},
+    {"view":[56,29],"mapRaw":0,"floorRaw":2048},
+    {"view":[57,29],"mapRaw":0,"floorRaw":2048},
+    {"view":[58,29],"mapRaw":0,"floorRaw":3328},
+    {"view":[59,29],"mapRaw":0,"floorRaw":3328},
+    {"view":[53,12],"mapRaw":45072,"floorRaw":512},
+    {"view":[60,14],"mapRaw":0,"floorRaw":512},
+    {"view":[60,15],"mapRaw":45070,"floorRaw":768},
+    {"view":[60,16],"mapRaw":0,"floorRaw":512},
+    {"view":[53,17],"mapRaw":0,"floorRaw":2048},
+    {"view":[53,18],"mapRaw":0,"floorRaw":2048},
+    {"view":[53,19],"mapRaw":0,"floorRaw":2048},
+    {"view":[53,20],"mapRaw":0,"floorRaw":2048},
+    {"view":[53,21],"mapRaw":0,"floorRaw":2048}
+  ],
+  "enemies": [
+    {
+      "id": "stonekeep.a2east.rat.01",
+      "eventId": 23,
+      "enemyId": 1,
+      "troopId": 1,
+      "sourceOriginal": [
+        32,
+        11
+      ],
+      "view": [
+        57,
+        11
+      ],
+      "sourceFlat": "RAT.DFA"
+    },
+    {
+      "id": "stonekeep.a2east.rat.02",
+      "eventId": 24,
+      "enemyId": 1,
+      "troopId": 1,
+      "sourceOriginal": [
+        30,
+        14
+      ],
+      "view": [
+        59,
+        14
+      ],
+      "sourceFlat": "RAT.DFA"
+    },
+    {
+      "id": "stonekeep.a2east.rat.03",
+      "eventId": 25,
+      "enemyId": 1,
+      "troopId": 1,
+      "sourceOriginal": [
+        30,
+        16
+      ],
+      "view": [
+        59,
+        16
+      ],
+      "sourceFlat": "RAT.DFA"
+    },
+    {
+      "id": "stonekeep.a2east.goblin.01",
+      "eventId": 26,
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceOriginal": [
+        35,
+        23
+      ],
+      "view": [
+        54,
+        23
+      ],
+      "sourceFlat": "GOBLIN.DFA"
+    }
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.door.36.12",
+      "sourceOriginal": [
+        36,
+        12
+      ],
+      "view": [
+        53,
+        12
+      ],
+      "axis": "east-west",
+      "role": "west connection",
+      "raw": "0xb010",
+      "texture": {
+        "file": "DCAS5.IMG",
+        "index": null
+      },
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.door.34.14",
+      "sourceOriginal": [
+        34,
+        14
+      ],
+      "view": [
+        55,
+        14
+      ],
+      "axis": "north-south",
+      "role": "sector",
+      "raw": "0xb010",
+      "texture": {
+        "file": "DCAS5.IMG",
+        "index": null
+      },
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.door.31.17",
+      "sourceOriginal": [
+        31,
+        17
+      ],
+      "view": [
+        58,
+        17
+      ],
+      "axis": "east-west",
+      "role": "sector",
+      "raw": "0xb010",
+      "texture": {
+        "file": "DCAS5.IMG",
+        "index": null
+      },
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.door.29.15",
+      "sourceOriginal": [
+        29,
+        15
+      ],
+      "view": [
+        60,
+        15
+      ],
+      "axis": "north-south",
+      "role": "east connection to rat59,14",
+      "raw": "0xb00e",
+      "texture": {
+        "file": "DCAS3.IMG",
+        "index": null
+      },
+      "lockValue": null
+    }
+  ],
+  "raisedPolicy": "0x20e3 remains solid/low obstruction, no jump or climb; outer0x7075 remains solid boundary",
+  "optionalOmitted": "EQUIPMEN/TREASRE2/SKEL03/TABLE1/NCOLUMN1; no required MQ02 effect documented",
+  "westExistingCorridor": {
+    "viewCells": [
+      [
+        53,
+        17
+      ],
+      [
+        53,
+        18
+      ],
+      [
+        53,
+        19
+      ],
+      [
+        53,
+        20
+      ],
+      [
+        53,
+        21
+      ]
+    ],
+    "reason": "Existing carpet-underlay passage links south goblin room around original solid wall54..57,y20; no corridor carving or new encounter."
+  }
+}

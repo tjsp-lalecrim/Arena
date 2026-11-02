@@ -1,5 +1,45 @@
 # M02-04 — amostra integrada de Stonekeep
 
+## Faixa A2-E — primeiro setor funcional no Map015
+
+Base **8f28207**; responsável autorizou continuidade e adiou a avaliação manual da base integral. **Não há aprovação presumida da transferência ou deste setor.** Implementação técnica delimitada04C2.1/04C3.1: vista da planta u54–59/Y0–29 (MIF X30–35/Y0–29), mundo Map015 X164–181/Y2–91, centros `3+3×u,3+3×Y`. Mesma escala, layout contínuo e campanha ainda no Map012. Sem arte nova, fórmulas ou arquivos internos do motor alterados.
+
+[Origem autoral/reconstruível](mapas/STONEKEEP_A2_E_M02.json). O primeiro MAP1/FLOR de39699021.MIF foi conferido novamente com o decodificador existente contra o cache; SHA e180células do setor mais conexões batem com o inventário a808f8b. STKEEP1.INF sustenta RAT.DFA/GOBLIN.DFA e DCAS5.IMG. Wiki local quest Fang Lair p2/p5 reutilizada como referência já identificada no levantamento, sem nova observação DOS ou suposição por cor do automapa.
+
+| Encontro | MIF original | Vista da planta | Map015 / evento |
+|---|---|---|---|
+| Rato01 |32,11 |57,11 |174,36 /23 |
+| Rato02 |30,14 |59,14 |180,45 /24 |
+| Rato03 |30,16 |59,16 |180,51 /25 |
+| Goblin01 |35,23 |54,23 |165,72 /26 |
+
+IDs `stonekeep.a2east.rat.01..03` e `stonekeep.a2east.goblin.01`, sem sobreposição inicial. Patrola em piso seco/região4, raio2/intervalo90 adaptados, mesma caminhada/batalha e tabelas correntes. EXP15/rato e25/goblin, **até70EXP opcionais somados**; configuração provisória para M02-BAL, não ajuste de dificuldade nem aprovação de recompensas. Não adicionar o rato de A3(60,13) apenas por estar perto da conexão.
+
+| Porta / função | MIF | Vista | Centro Map015 / eixo |
+|---|---|---|---|
+| Ligação oeste ao aposento |36,12 |53,12 |162,39 / leste-oeste |
+| Interna do aposento norte |34,14 |55,14 |168,45 / norte-sul |
+| Interna lateral leste |31,17 |58,17 |177,54 / leste-oeste |
+| Ligação imediata A3 para rato02 |29,15 |60,15 |183,48 / norte-sul |
+
+Todas as4 são0xB010/DCAS5, **sem LOCK declarado**; não recebem fechadura/chave inventada. São necessárias à circulação normal do setor. Fora dos180células só se usam a célula da porta oeste(53,12), três células imediatas a leste(60,14–16) e cinco do corredor já existente(53,17–21). Este último contorna a parede original Y20 para alcançar o goblin, **sem abrir atalho ou deslocar paredes**. Não há conteúdo novo nas outras alas. O grafo restrito somente a essas células e ao setor alcança os quatro encontros,631tiles no modelo nativo com portas abertas; não depende de uma volta por A3/B2.
+
+Portas reutilizam a folha aprovada `!$Arena_Doors_M14_R03`, suas nove partes, âncoras e animação24frames; a arte é **provisória para DCAS5**, não uma reprodução canônica do sprite original. Folha opaca só nas faces, cap transparente e moldura/dobradiça estáveis; colisão3células na seção fechada, passagem livre quando aberta. Interação de ambos os lados, sem mensagens/confirmações; fechamento recusa envelope3×3 ocupado. Soleiras secas usam região6, separada da água5; patrulhas de piso4 não invadem dobradiças. Sem refazer arte das portas laterais finas, pendência de qualidade preservada.
+
+Materiais: CASF0–2 castanhos e CASL0–1 claros aprovados aplicados segundo as referências; FLCASC0/1 manchado e margem da água aprovados reutilizados. CASF3 continua com alvenaria de base sem painel e REDRUG com piso de base, **provisórios decorativos**, não impedimentos funcionais. As4 células0x20e3 preservam apoio e colisão sólida, com leitura baixa adaptada (uma face, não parede inteira); não há salto/escalada nova nem liberação silenciosa. Limite elevado0x7075 mantém o bloqueio. Sem diagonais/arestas adicionais nesta faixa. Equipamentos/tesouros decorativos opcionais e TABLE1/NCOLUMN1/SKEL03 não geram eventos ou recompensas.
+
+**Reconstrução:** build-stonekeep-whole chama `tools/stonekeep-sector-a2e.cjs` depois de transferir o recorte antigo. A configuração fonte contém só este setor/conexões, os quatro encontros e quatro portas; os20 encontros/eventos antigos são imutáveis. O gerador pai de amostra continua recompondo a candidata. `ArenaDungeon.registerDoors(mapId,cfg)` permite reutilizar o mecanismo de portas já existente no Map015, mantendo Map008 padrão; nenhum patch em js/rpg_*.js. IDs lógicos individuais e self-switches nativos[mapId,eventId,A] persistem. RAM antiga com22eventos recebe os IDs novos ao restaurar, sem duplicar derrotas/recibos. Campanha/saves pessoais/namespace permanecem intocados.
+
+**Verificações:** [sete grupos focais](evidencias/m02-stonekeep-a2e/resultado.json), Chrome156 headless/perfil descartável no servidor canônico, sem campanha completa: quatro portas por interação nativa, bloqueio/abertura/fechamento/envelope ocupado, âncoras nos dois eixos; caminho restrito e travessia oeste por teclado; contato real com um rato e o goblin, vitórias nativas controladas/40EXP/2recibos únicos, repetição sem prêmio; RAM restaura portas abertas/fechadas e derrotas individuais; snapshot antigo incorpora eventos; retorno à área sem respawn/recompensas novas; regressão do mecanismo original de portas no Map008. [Capturas/checagem das portas](evidencias/m02-stonekeep-a2e/portas.json). JSONs de mapas008–014, quests/recibos/loot/banco/equipamentos e assets preservados; reconstrução estável. Evidências anteriores dos movimentos/combate são reutilizadas. Sem teste manual novo, mobile ou reinício de navegador.
+
+**Acesso mantido:** http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → **Stonekeep · base integral (RAM)** → Esc → **Stonekeep: pontos da base integral** → **A2-E · conexão oeste (160,39)** ou **A2-E · aposentos (165,66)**. Enter/clique/toque interage com portas; Guardar/Carregar RAM pelo menu; sair pelo menu de pontos → título. Teste manual pode aguardar a próxima integração, sem repetição exigida agora.
+
+**Cobertura:**24/180 encontros e4/70 portas no Map015; setor A2-E funcional tecnicamente, sem declarar decoração definitiva. Faltam156 referências e66 portas na dungeon, interpretação das LOCK/alturas e demais setores. Próximo recorte: omissões conhecidas na área antiga (6goblins+esqueleto76,22), usando o mesmo mapa. Depois de completar Stonekeep, levantar Rihad inteira e medir dimensões/eventos/desempenho antes de escolher a implementação. Não promover polimento ou ilustrações a bloqueio.
+
+[Conexão](evidencias/m02-stonekeep-a2e/conexao.png) · [Aposentos](evidencias/m02-stonekeep-a2e/aposentos.png) · [Porta frontal](evidencias/m02-stonekeep-a2e/porta-frontal.png) · [Porta lateral](evidencias/m02-stonekeep-a2e/porta-lateral.png)
+
+---
+
 ## M02-04C2.0 — base integral funcional isolada (02/11/2026)
 
 Base **60f969b**, dependências a808f8b/1bcf1f9 preservadas. **Map015, 274×274**, reúne a geometria completa da prova e o conteúdo real existente. Candidata de transferência, **não Stonekeep concluída nem substituição da campanha**. Map012 permanece no percurso normal; Map014 continua como prova histórica separada. Não houve arte nova, expansão de catálogo, mudança de motor, fórmula, recompensas ou namespace.

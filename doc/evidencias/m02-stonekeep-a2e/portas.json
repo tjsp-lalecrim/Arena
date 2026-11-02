@@ -1,0 +1,71 @@
+{
+  "base": "8f28207",
+  "browser": "156.0.8078.76",
+  "doors": [
+    {
+      "id": "stonekeep.door.36.12",
+      "center": [
+        162,
+        39
+      ],
+      "horizontal": true,
+      "visual": 34,
+      "closedBlocked": true,
+      "anchor": [
+        162,
+        40
+      ],
+      "direction": 6
+    },
+    {
+      "id": "stonekeep.door.34.14",
+      "center": [
+        168,
+        45
+      ],
+      "horizontal": false,
+      "visual": 43,
+      "closedBlocked": true,
+      "anchor": [
+        168,
+        46
+      ],
+      "direction": 2
+    },
+    {
+      "id": "stonekeep.door.31.17",
+      "center": [
+        177,
+        54
+      ],
+      "horizontal": true,
+      "visual": 52,
+      "closedBlocked": true,
+      "anchor": [
+        177,
+        55
+      ],
+      "direction": 6
+    },
+    {
+      "id": "stonekeep.door.29.15",
+      "center": [
+        183,
+        48
+      ],
+      "horizontal": false,
+      "visual": 61,
+      "closedBlocked": true,
+      "anchor": [
+        183,
+        49
+      ],
+      "direction": 2
+    }
+  ],
+  "checks": [
+    "All4 native door interactions open/close with stable anchors, both orientations, blocked/clear threshold, occupied-swing closing refused; no state/resource changes"
+  ],
+  "errors": [],
+  "missing": []
+}

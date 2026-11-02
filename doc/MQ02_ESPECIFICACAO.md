@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Delta A2-E posterior a8f28207:** Map015 isolado com24 encontros/4portas; base integral com avaliação manual adiada, avanço autorizado. [Cobertura e conexões](STONEKEEP_M02_04.md#faixa-a2-e--primeiro-setor-funcional-no-map015). Map012/quest/recibos mantidos. Completar Stonekeep antes do levantamento integral/dimensionamento de Rihad, sem expansão de Fang Lair por associação.
+
 **Candidata de transferência M02-04C2.0:** [Stonekeep integral](STONEKEEP_M02_04.md#m02-04c20--base-integral-funcional-isolada-02112026) em Map015274×274, somente laboratório, preserva IDs de quest/fonte/recibo e20 encontros transferidos. Map012 continua ativo na campanha. Não modifica etapas, exige morte de todos ou conclui a dungeon; portas/encontros ausentes continuam pendentes.
 
 **Revisão de escopo02/11/2026:** mapas completos e todos os encontros aplicáveis passam a ser requisito, conforme MARCOS_DO_PROJETO.md; recortes abaixo descrevem as amostras históricas, não a entrega cartográfica final. Estados/recibos/viagem condensada preservados. Prioridade: auditar e concluir Stonekeep/Rihad conforme BACKLOG_M02.md, antes de expandir Fang Lair. Exceção de ordem exige dependência concreta documentada; não há uma identificada agora.
