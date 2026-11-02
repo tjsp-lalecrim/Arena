@@ -2,18 +2,18 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
-## Recorte atual — bloco A2→B2 (exceção temporária de tamanho)
+## Recorte atual — acessos A2/B2 resolvidos no Map015
 
-Base55e42e4, terreno/portas em **d82d9a3**, seguido dos encontros/integração na mesma feature. **47/180encontros e23/70portas** no Map015:16portas adicionais (4A2+12B2),14encontros B2 de espécies existentes (11goblins/2ratos/1esqueleto). [Delimitação, matriz, acesso e evidências](STONEKEEP_M02_04.md#bloco-a2b2--ampliação-temporária-autorizada). Materiais aprovados reutilizados, sem mudar alturas/água/parede para forçar passagem ou alterar campanha Map012. Testes manuais continuam adiados; a autorização maior não substitui permanentemente as entregas pequenas.
+Base9031298; fechaduras comuns em **54a1374**, seguidas da ligação seca e bolsa sudoeste na mesma feature. **49/180encontros e32/70portas**, com **131encontros/38portas restantes**. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
 
 | Área | Cobertura | Pendência funcional |
 |---|---|---|
-|A2 |19/19encontros;10/13portas (todas semLOCK) |3LOCK1/chave/regra e revisão de alturas/detalhes, sem setor concluído |
-|B2 |14/25encontros;12/18portas |6orcs/3caminhadas de homem-lagarto;2goblins+4portas na bolsa desconectada;2LOCK2/3 |
+|A2 |19/19encontros;13/13portas |Revisão geométrica/detalhes e integração ainda parciais; contagem não conclui setor |
+|B2 |16/25encontros;18/18portas |6orcs sem piloto e3caminhadas de homem-lagarto; demais revisões da geometria conforme levantamento |
 
-**Dependência de acesso explícita:** apenas3goblins do norte B2 são independentes de LOCK; os11encontros restantes e12portas preparadas usam a abertura provisória herdada de MIF(39,44)/LOCK2. Não foi criada chave nem regra para essa passagem, e ela não está concluída. Verificação distingue grafo com aberturas provisórias e grafo com LOCKs bloqueadas. Total restante133encontros/47portas; a região não é declarada pronta para campanha.
+Cinco LOCK1/2/3 são fechaduras comuns, não IDs de chaves: **Forçar a porta / Voltar**, universal e determinístico,45atualizações×LOCK provisórias, sem custos/prêmios ou chave inventada. MIF39,44 deixa de ser abertura provisória. Bolsa sudoeste agora conectada pelas nove células **secas suspensas** MIF56,41..49, com piso e cobertura separados, além de4portas/2goblins. Fonte geométrica e tabelas do executável sustentam folga; não houve observação DOS nova. A1 aquática permanece incerta e intocada. Nenhum loot, descanso, atributo, motor ou asset alterado.
 
-**Próximo bloco funcional recomendado:** resolver contrato de fechaduras/chave A2/B2 e conexão da bolsa sudoeste, por condicionarem o conteúdo já preparado; investigar somente as coordenadas consumidoras, sem novo estudo geral ou arte. Orc e caminhada de homem-lagarto ficam em pilotos próprios posteriores. Após Stonekeep completa, levantamento integral de Rihad antes da solução técnica. **A1 aquática inalterada:** folga de MIF86..83,8 continua incerta, sem generalização ou alteração de colisão. Melhorias opcionais não entram por associação.
+**Próximo recorte necessário:** piloto isolado de **orc**, dependência de6referências B2, começando por exemplar de batalha antes de expansão;3homens-lagarto dependem de caminhada (batalha existente). Manter ordem autorizada: **encontros e portas, depois revisão de loots/tesouros e pontos de descanso**. Não iniciar arte por associação; aprovação do exemplar precede lote. Após Stonekeep completa, levantar Rihad integral antes de definir técnica. Campanha continua Map012; hub/base integral RAM no Map015. Qualidade e ilustrações continuam futuras.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 

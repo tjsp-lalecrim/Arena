@@ -40,7 +40,7 @@ for n,(x,y) in enumerate([(55,54),(58,55)]):
 cfg=dict(version=1,sourceSha256=sha,mapId=15,lockedDoors=locked,pocketDoors=pocket,pocketEnemies=enemies,
          force=dict(framesPerLockLevel=45,ordinaryLevels=[1,2,3],policy='Deterministic universal force, no class/item/resource requirement; adapted, not original probability/wear formula'),
          dryPassage=dict(cells=corridor,worldBounds=[101,125,103,151],bottomUnits=75,thicknessUnits=25,ceilingUnits=150,
-                         technicalStandingHeadUnits=61,classification='Geometry confirmed from MIF+ACD tables, clearance corroborated by OpenTESArena; no DOS observation',roofOpacityInside=176),
+                         technicalStandingHeadUnits=61,classification='Geometry confirmed from MIF+ACD tables, clearance corroborated by OpenTESArena; no DOS observation',roofOpacityInside=112),
          points=[dict(name='Aposentos / lobos',position=[117,45]),dict(name='B2 · porta LOCK2',position=[153,132]),
                  dict(name='B2 · porta LOCK3',position=[153,147]),dict(name='B2 · corredor sob estrutura',position=[102,123]),
                  dict(name='B2 · bolsa sudoeste',position=[105,168])])

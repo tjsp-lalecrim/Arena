@@ -2,7 +2,7 @@
 
 ## Estado manual e pendência de conectividade após eb81e7a
 
-O responsável adiou os testes manuais de Stonekeep para uma versão mais completa. Preservar as evidências técnicas de8f28207/eb81e7a; **não registrar aprovação da base ou do setor por autorização de avanço**. Abertura e título REF16 aprovados; modernização futura no registro de refinamentos. O delta atual de encontros está abaixo; avaliação manual da base/setores continua adiada.
+O responsável adiou os testes manuais detalhados de Stonekeep para uma versão mais completa. Posteriormente fez teste rápido e considerou a construção satisfatória até o momento, na referência disponível9031298: avaliação preliminar, sem ambiente/hash explicitamente informado ou aprovação integral de colisões, encontros e persistência. Preservar as evidências técnicas de8f28207/eb81e7a; **não registrar aprovação da base ou do setor por autorização de avanço**. Abertura e título REF16 aprovados; modernização futura no registro de refinamentos. O delta atual de encontros está abaixo; avaliação manual da base/setores continua adiada.
 
 **Investigação futura: caminhos pela água sob paredes no original.** Pendência de fidelidade/conectividade da cobertura completa, vinculada à revisão de água/alturas abaixo. Verificar na wiki local e, quando viável, no jogo instalado quais posições/rotas permitem essa travessia e suas condições; separar observação original, interpretação de MAP1/FLOR e adaptação à grade. A investigação local de A1 oeste está registrada abaixo; ainda não há confirmação da folga nessas quatro células ou solução geral aprovada. Não tornar paredes/água globalmente atravessáveis, inventar túnel, alterar colisão/oclusão ou custo de Vigor nesta entrega. Investigar no setor efetivamente afetado antes de definir sua colisão; a consulta A1 oeste abaixo não resolve a folga dos quatro blocos.
 
@@ -18,9 +18,46 @@ O responsável adiou os testes manuais de Stonekeep para uma versão mais comple
 - B nativo por(15,eventId) registra destravamento; A conserva estado aberto/fechado. Trabalho serializado no Game_Map; cancelar antes não altera estado, repetir durante/depois não cria trabalho novo. APIs diretas de abertura recusam fechadura ainda trancada. Estados antigos sem B entram trancados, sem migração de inventário/recursos e sem namespace novo.
 - A consulta da conexão sudoeste identificou **nove blocos elevados secos** MIF(56,41..49), vista(33,41..49), MAP1=0x1E4D, FLOR2/3/6. O leitor conservador os tratava como parede inteira. Tabela de alturas do ACD.EXE instalado extraída em memória pela leitura PKLITE de consulta: base75, espessura25, teto150unidades; arrays espelhados conferidos. Referência técnica OpenTESArena usa topo da cabeça61unidades, corroborando folga sob essa estrutura. São dados/interpretação geométrica, **não nova observação de partida DOS**. Extrações/decodificador/terceiros ficam só em tmp ignorado. A1 aquática é outro caso e não recebeu mudança/conclusão por associação.
 
-[Configuração autoral e coordenadas](mapas/STONEKEEP_ACESSOS_A2_B2_M02.json), recomposta por `tools/inspect-stonekeep-access.py`; fontes principais anteriores preservadas. A primeira unidade implementa as cinco fechaduras comuns no plugin próprio `Arena_StonekeepAccess`, sem editar o motor ou os valores de combate. A ligação seca/portas da bolsa e seus dois goblins formam a segunda unidade desta entrega; não incluir espécies substitutas.
+[Configuração autoral e coordenadas](mapas/STONEKEEP_ACESSOS_A2_B2_M02.json), recomposta por `tools/inspect-stonekeep-access.py`; fontes principais anteriores preservadas. A primeira unidade, commit54a1374, implementa as cinco fechaduras comuns no plugin próprio `Arena_StonekeepAccess`, sem editar o motor ou os valores de combate. A ligação seca/portas da bolsa e seus dois goblins formam a segunda unidade desta entrega; não incluir espécies substitutas.
+
+### Segunda unidade — ligação seca e bolsa sudoeste
+
+**Resultado:** quatro portas semLOCK e dois goblins confirmados, após abrir a conexão comprovada pelos dados, sem expandir outro setor. Transformação zero-based preservada: vista(u,Y)=(89−X,Y), Map015=(3+3u,3+3Y).
+
+| Conteúdo | MIF | Map015 / eventos |
+|---|---|---|
+|Corredor seco sob estrutura |56,41..49 |81tiles, limites101,125–103,151; cobertura independente |
+|Portas da bolsa |57,52 /52,53 /52,56 /54,56 |99,159 /114,162 /114,171 /108,171; eventos302–337 |
+|Goblin `stonekeep.b2.enemy.mif55.54` |55,54 |105,165; evento338 |
+|Goblin `stonekeep.b2.enemy.mif58.55` |58,55 |96,168; evento339 |
+
+As fechaduras da primeira unidade são eventos257–301, preservando os256anteriores. Corredor usa os pisos e caps CASK aprovados: colisão apenas no piso, sem through global; cobertura local144×1296 com transparência112/255 ao estar sob ela. Entradas/saídas e bloqueios laterais preservados. A primeira tentativa com Tilemap auxiliar não respeitou visualmente a opacidade no WebGL; substituída por Bitmap/Sprite local e conferida por pixels reais, sem motor/tileset global ou arte nova. A folga seca não autoriza abrir quatro candidatos aquáticos A1/MIF86..83,8.
+
+Goblins reutilizam enemy2/troop2,25EXP cada e tabela de loot vigente, raio2/intervalo90/terreno4. **50EXP opcionais adicionais**, sem revisão de balanceamento/recompensas; M02-BAL avaliará efeito acumulado. Os dois encontros têm IDs/recibos independentes e não são pré-requisito da coleta. Fonte do pergaminho, quest e ausência de exigência de matar todos permanecem.
+
+**Reconstrução:** `build-stonekeep-whole.cjs` aplica `stonekeep-access-locks.cjs` e `stonekeep-access-pocket.cjs`; origem de coordenadas/alturas em `inspect-stonekeep-access.py`. O extrator do bloco anterior `inspect-stonekeep-a2-b2.py` consulta sua base histórica55e42e4 ao delimitar o componente, em vez de ampliar a seleção quando o corredor atual passa a ser transitável. Origem anterior não é reescrita para fingir que já resolvia acessos; configuração final remove as dependências superadas. Gerador pai e recompilação final conferidos sem perder alterações anteriores ou modificar outros mapas.
+
+### Cobertura vigente e verificações
+
+[Matriz das250referências](evidencias/m02-stonekeep-acessos/cobertura.json) · [visão geral anotada](evidencias/m02-stonekeep-acessos/visao-geral.png). Substituem as contagens históricas da seção seguinte.
+
+| Área | Encontros | Portas | Ainda não concluído |
+|---|---|---|---|
+|A2 |19/19 |13/13 |Geometria/detalhes e avaliação integrada; não declarar setor inteiro aprovado |
+|B2 |16/25 |18/18 |6orcs sem piloto,3homens-lagarto sem caminhada; revisões geométricas do levantamento |
+|Stonekeep inteira |**49/180** |**32/70** |**131encontros/38portas**, outros setores/eventos e validação integrada |
+
+[Fechaduras:3grupos](evidencias/m02-stonekeep-acessos/locks/resultado.json), `test-stonekeep-locks.cjs`: abertura limpa, cinco portas pelos dois lados, cancelamento, trabalho/estados A/B restaurados e recusa de chamadas repetidas. [Bolsa:6grupos](evidencias/m02-stonekeep-acessos/pocket/resultado.json), `test-stonekeep-pocket.cjs`: abertura nativa de LOCK2 por força antes do acesso contínuo A2→B2→corredor→bolsa, sem through/transferência; travessia seca nos dois sentidos/colisões laterais,4portas×2lados/recusa de fechamento ocupado,2patrulhas/contatos individuais/vitórias controladas/retorno/2recibos/50EXP; repetição de concessão não altera estado. RAM durante travessia e snapshot anterior com menos eventos restauram portas/destravamento, derrotas, quest, pontos, inventário e recursos; saída/retorno não provoca respawn. Slots normais bloqueados/localStorage vazio em perfil descartável, sem saves pessoais.
+
+Renderização **WebGL padrão e Canvas** conferidas separadamente: diferença de pixels com/sem personagem e cobertura demonstra contraste remanescente de56%, coerente com alpha112/255. Evidências `pocket/webgl-pixels.json` e `canvas-pixels.json`, verificação `check-stonekeep-roof.py`; capturas na escala real inspecionadas. Não basta comparar o campo alpha. Não se repetiram campanha inteira, matriz artística, smartphone/editor ou avaliação manual. Essas verificações não aprovam balanceamento nem constituem observação DOS.
+
+**Acesso observável, sem exigência de teste manual agora:** http://127.0.0.1:8774/ → **Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM)** → Esc → **Stonekeep: pontos da base integral**. Pontos **B2 · porta LOCK2 (153,132)**, **B2 · porta LOCK3 (153,147)**, **B2 · corredor sob estrutura (102,123)** e **B2 · bolsa sudoeste (105,168)**. Interagir com porta → Forçar a porta ou Voltar; aguardar barra breve, atravessar e fechar se desocupada. Guardar/Carregar teste no menu usa RAM; voltar ao título encerra a sessão técnica. Origem/namespace/saves pessoais preservados; servidor canônico existente reutilizado.
+
+**Próxima dependência:** piloto isolado de orc para as6referências B2; caminhada do homem-lagarto para3referências posteriores. Não substituir espécie ou gerar grupo antes da aprovação do exemplar. Encontros/portas têm prioridade; loot/tesouros/descanso depois. Pendências visuais opcionais não bloqueiam por associação.
 
 ## Bloco A2→B2 — ampliação temporária autorizada
+
+**Registro histórico9031298:** condições provisórias e contagens abaixo descrevem aquela entrega. A seção vigente de acessos acima resolve as cinco fechaduras e a bolsa sudoeste, sem apagar as evidências anteriores.
 
 **Base55e42e4; exceção desta entrega à cadência pequena, não nova regra permanente.** Delimitação antes da edição: vista u30–59/Y0–59, somente A2 e o componente conservador conectado de B2 no Map015. Não expandir A3/B1/B3/C ou alterar campanha Map012. [Configuração/fonte](mapas/STONEKEEP_A2_B2_M02.json), `tools/inspect-stonekeep-a2-b2.py`: MIF/hash e MAP1/FLOR/LOCK/TRIG relidos pelo decoder existente, espécies e texturas conferidas no STKEEP1.INF já identificado. Sem observação DOS nova, geração de arte, mudança de valores, motor ou namespace.
 

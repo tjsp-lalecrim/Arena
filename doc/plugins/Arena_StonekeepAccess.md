@@ -1,4 +1,4 @@
-# Arena_StonekeepAccess0.1.0 — acessos explícitos do Map015
+# Arena_StonekeepAccess0.2.0 — acessos explícitos do Map015
 
 Após Arena_StonekeepWhole e Arena_Dungeon, sem biblioteca externa ou edição do motor. Configuração gerada em `ArenaStonekeepWhole.access`, origem em `doc/mapas/STONEKEEP_ACESSOS_A2_B2_M02.json`. Valida na abertura as cinco fechaduras comuns registradas e seu parâmetro de tempo; configuração ausente/inválida produz erro específico, sem chave/default silenciosos. Só opera na sessão integral Map015; campanha Map012, E05 e MQ01 não recebem esta regra.
 
@@ -8,4 +8,6 @@ Self-switch **B** registra destravamento nas9partes; **A** permanece aberto/fech
 
 APIs de consulta: `working()`, `isUnlocked(id)`. IDs desconhecidos, sessão errada, ação duplicada, porta já destravada, batalha ou posição inválida retornam false sem consumir/alterar recursos. Interface de tentativa não é catálogo de fechaduras, lockpicking geral ou magia Open; não se aplica a portais mágicos/enigmas. Fontes e diferenças em [Stonekeep](../STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca).
 
-Validação focal em `tools/test-stonekeep-locks.cjs`: abertura limpa, cancelamento por Esc, ação pelas escolhas nativas, rejeição de abertura direta/repetição, travessias nos dois lados, RAM durante LOCK3, estados A/B individuais e snapshot antigo. Slots normais bloqueados nas fixtures, perfil descartável, sem saves pessoais.
+`access.dryPassage` delimita somente MIF(56,41..49):81tiles de piso seco e81peças visuais suspensas. `Spriteset_Map` compõe os caps CASK existentes num Bitmap/Sprite local144×1296, acima dos personagens, com posição derivada do mundo; opacidade112/255 dentro e255fora. Não muda flags do tileset, camada global, motor ou natação. Um Tilemap auxiliar foi descartado: sua opacidade não preservava a leitura no WebGL; o Sprite foi conferido por diferença real de pixels em WebGL e Canvas. Não é sistema geral de alturas nem prova de folga em A1.
+
+Validação focal em `tools/test-stonekeep-locks.cjs`: três grupos, abertura limpa, cancelamento por Esc, ação pelas escolhas nativas, rejeição de abertura direta/repetição, travessias nos dois lados, RAM durante LOCK3, estados A/B individuais e snapshot antigo. `--data-only` reconstrói o mapa final sem repetir as interações. `tools/test-stonekeep-pocket.cjs`: seis grupos, acesso por LOCK2 legitimamente forçada, travessia seca contínua/nos dois sentidos, quatro portas×dois lados, dois contatos/vitórias/recibos, restauração de snapshot anterior e renderizadores. `tools/check-stonekeep-roof.py` verifica contraste efetivo do personagem sob a cobertura, incluindo Canvas. Slots normais bloqueados nas fixtures, perfil descartável, sem saves pessoais.

@@ -3,7 +3,7 @@ Reuses ignored decoder; reads original MIF, emits authoring JSON only.
 """
 from pathlib import Path
 from collections import deque
-import hashlib, json, struct
+import hashlib, json, struct, subprocess
 
 R=Path(__file__).resolve().parents[1]
 read=lambda f:json.loads((R/f).read_text(encoding='utf8'))
@@ -24,7 +24,8 @@ locks={tuple(r[:2]):r[2] for r in records('LOCK',3)}
 triggers=records('TRIG',4)
 inv=read('doc/evidencias/m02-stonekeep-cobertura/inventario.json')
 tex=read('tmp/stonekeep-review/texture-associations.json')
-mp=read('data/Map015.json');region=lambda x,y:mp['data'][(5*274+y)*274+x]
+# Preserve this historical source block even after later explicit access adaptations.
+mp=json.loads(subprocess.check_output(['git','show','55e42e4:data/Map015.json'],cwd=R));region=lambda x,y:mp['data'][(5*274+y)*274+x]
 # Existing conservative geometry, only inside A2+B2. Not a rule opening unknown heights.
 todo=deque([(153,15)]);seen=set(todo)
 while todo:

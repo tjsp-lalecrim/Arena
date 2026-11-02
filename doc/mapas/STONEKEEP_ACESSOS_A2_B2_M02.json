@@ -399,7 +399,7 @@
     "ceilingUnits": 150,
     "technicalStandingHeadUnits": 61,
     "classification": "Geometry confirmed from MIF+ACD tables, clearance corroborated by OpenTESArena; no DOS observation",
-    "roofOpacityInside": 176
+    "roofOpacityInside": 112
   },
   "points": [
     {

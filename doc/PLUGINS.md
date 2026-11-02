@@ -1,6 +1,6 @@
 ## Acessos de Stonekeep — consumidor explícito Map015
 
-Arena_StonekeepAccess após Arena_StonekeepWhole: cinco fechaduras comuns verificadas, ação de força determinística adaptada e estado A/B nativo. Sem chaves fictícias, novo namespace ou alterações no motor/MQ01. [Contrato e diferenças do original](plugins/Arena_StonekeepAccess.md). Contagens históricas abaixo não substituem js/plugins.js.
+Arena_StonekeepAccess0.2.0 após Arena_StonekeepWhole: cinco fechaduras comuns verificadas, ação de força determinística adaptada, estado A/B nativo e cobertura visual local do corredor seco suspenso. Sem chaves fictícias, flags globais alteradas, novo namespace ou alterações no motor/MQ01. [Contrato e diferenças do original](plugins/Arena_StonekeepAccess.md). Contagens históricas abaixo não substituem js/plugins.js.
 
 ## Ghoul M02 — piloto de batalha
 
