@@ -1,3 +1,7 @@
+## Orc M02 — piloto de batalha RAM
+
+Arena_Orc0.1.0: um exemplar Enemy7/Troop8, quatro movimentos/24desenhos; reutiliza preparo, combate, isolamento e hub existentes. Sem caminhada/encontros/recompensas de campanha. [Contrato](plugins/Arena_Orc.md), [fontes/arte/testes](ORC_M02.md).
+
 ## Acessos de Stonekeep — consumidor explícito Map015
 
 Arena_StonekeepAccess0.2.0 após Arena_StonekeepWhole: cinco fechaduras comuns verificadas, ação de força determinística adaptada, estado A/B nativo e cobertura visual local do corredor seco suspenso. Sem chaves fictícias, flags globais alteradas, novo namespace ou alterações no motor/MQ01. [Contrato e diferenças do original](plugins/Arena_StonekeepAccess.md). Contagens históricas abaixo não substituem js/plugins.js.

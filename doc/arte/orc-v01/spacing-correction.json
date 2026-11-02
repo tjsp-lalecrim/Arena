@@ -1,0 +1,8 @@
+{
+  "method": "built-in image_gen targeted spacing correction, same exemplar",
+  "prompt": "Precise production correction of this ONE same sprite atlas, not another proposal. Preserve this exact orc identity, finish, all24poses and equipment. Fix ONLY spacing: the bottom-row fallen silhouettes currently touch each other between columns4 and5. Re-layout the SAME24drawings in a WIDER atlas, ideally2048x1024, still6columns by4rows, at UNCHANGED drawing scale. Every figure, shield and mace must have at least24transparent pixels clearance from its cell edges and every adjacent figure. Do not crop, overlap, join the corpses or resize individual figures. Keep all other identities, anatomy, poses, armor, colors, orientation RIGHT, lighting, sequence, mace gripped and full transparent background. No new poses, variants, text, floor or props. Retain true alpha transparency, clean cutout edges. Shared stationary foot baseline for standing, collapsed corpses resting on same baseline.",
+  "reason": "First atlas had two joined fallen silhouettes; rejected by cutouts24 component validation.",
+  "input": "art/masters/stonekeep-orc-v01/sheet-v01.png",
+  "output": "art/masters/stonekeep-orc-v01/sheet-v02-spacing.png",
+  "approval": "pending"
+}

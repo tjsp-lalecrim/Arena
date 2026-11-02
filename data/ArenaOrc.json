@@ -1,0 +1,70 @@
+{
+  "version": "stonekeep-orc-v01",
+  "enemyId": 7,
+  "troopId": 8,
+  "enemy": {
+    "name": "Orc",
+    "params": [
+      40,
+      0,
+      10,
+      5,
+      0,
+      3,
+      8,
+      5
+    ],
+    "hit": 0.9
+  },
+  "lab": {
+    "mapId": 12,
+    "x": 80,
+    "y": 39,
+    "direction": 4
+  },
+  "labLoot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "isolated battle pilot only",
+    "source": "Orc battle laboratory only; future campaign EXP/loot not configured. Do not transfer zeros silently."
+  },
+  "campaign": {
+    "enabled": false,
+    "exp": null,
+    "loot": null
+  },
+  "source": "ORC1/3/6.CFA and Monsters PDF15-16. HP40 uses upper wiki range15-40; ATQ10/DEF5/MDF3/AGI8/SOR5/HIT90% are provisional MV adaptations, not original conversions. Basic attack only, no special resistance. EXP0/empty loot solely for RAM battle; campaign rewards NOT configured."
+}

@@ -2,7 +2,13 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
-## Recorte atual — acessos A2/B2 resolvidos no Map015
+## Recorte atual — piloto de batalha do orc, aguardando avaliação visual
+
+Sobre7ec5051, [piloto V01](ORC_M02.md): Enemy7/Troop8,24desenhos, somente batalha RAM no hub. Cinco grupos focais passaram; atributos provisórios e recompensas técnicas0, sem configuração de campanha. **Os seis orcs de B2 continuam ausentes**; caminhada e um encontro piloto dependem da avaliação visual antes da distribuição. Contagem49/180encontros/32/70portas inalterada. Não presumir aprovação artística, de balanceamento ou de persistência de encontros ainda inexistentes.
+
+**Forçar a porta determinístico e sem consumo** é adaptação ainda pendente de avaliação do responsável no próximo teste integrado. Não reabrir o restante da dungeon para avaliação isolada agora. Manter encontros/portas como prioridade, loot/tesouros e descanso depois; três caminhadas de homem-lagarto também continuam dependência. Acesso: Testes / Debug → Combate → Stonekeep · orc (RAM). Próximo recorte, somente após feedback do exemplar: caminhada direcional e um encontro piloto de orc, sem lote automático.
+
+## Base preservada — acessos A2/B2 resolvidos no Map015
 
 Base9031298; fechaduras comuns em **54a1374**, seguidas da ligação seca e bolsa sudoeste na mesma feature. **49/180encontros e32/70portas**, com **131encontros/38portas restantes**. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
 

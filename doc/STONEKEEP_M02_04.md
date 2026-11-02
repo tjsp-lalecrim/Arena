@@ -1,5 +1,9 @@
 # M02-04 — amostra integrada de Stonekeep
 
+## Piloto atual do orc — batalha somente
+
+Sobre7ec5051: [um exemplar/24desenhos para avaliação](ORC_M02.md), sem caminhada ou evento de mapa. Os seis orcs B2 continuam ausentes e a cobertura49/180encontros/32/70portas não mudou. Aguardar avaliação visual antes da caminhada e expansão. Testes focais de batalha não aprovam balanceamento ou recompensas. **Forçar a porta**, determinístico/sem consumo, continua adaptação pendente de avaliação do responsável no teste integrado; não exigir novos testes manuais do restante agora. Encontros/portas primeiro; revisão de loot/tesouros e descanso depois.
+
 ## Estado manual e pendência de conectividade após eb81e7a
 
 O responsável adiou os testes manuais detalhados de Stonekeep para uma versão mais completa. Posteriormente fez teste rápido e considerou a construção satisfatória até o momento, na referência disponível9031298: avaliação preliminar, sem ambiente/hash explicitamente informado ou aprovação integral de colisões, encontros e persistência. Preservar as evidências técnicas de8f28207/eb81e7a; **não registrar aprovação da base ou do setor por autorização de avanço**. Abertura e título REF16 aprovados; modernização futura no registro de refinamentos. O delta atual de encontros está abaixo; avaliação manual da base/setores continua adiada.
