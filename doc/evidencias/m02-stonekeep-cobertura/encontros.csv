@@ -28,7 +28,7 @@ aranha,SPIDER.DFA,8,16,81,16,A3,False,,,,NE,66,51
 rato,RAT.DFA,28,16,61,16,A3,False,,,,NE,6,51
 rato,RAT.DFA,30,16,59,16,A2,False,,,,NW,180,51
 lobo,WOLF.DFA,52,16,37,16,A2,True,stonekeep.apartments.wolf.01,90,51,NW,114,51
-ogro,OGRE.DFA,24,17,65,17,A3,False,,,,NE,18,54
+minotauro,OGRE.DFA,24,17,65,17,A3,False,,,,NE,18,54
 rato,RAT.DFA,26,17,63,17,A3,False,,,,NE,12,54
 rato,RAT.DFA,28,17,61,17,A3,False,,,,NE,6,54
 lobo,WOLF.DFA,44,17,45,17,A2,True,stonekeep.apartments.wolf.02,114,54,NW,138,54
@@ -56,8 +56,8 @@ esqueleto,SKELETON.DFA,14,30,75,30,B3,False,,,,NE,48,93
 esqueleto,SKELETON.DFA,18,30,71,30,B3,False,,,,NE,36,93
 esqueleto,SKELETON.DFA,8,33,81,33,B3,False,,,,NE,66,102
 esqueleto,SKELETON.DFA,12,34,77,34,B3,False,,,,NE,54,105
-ogro,OGRE.DFA,19,34,70,34,B3,False,,,,NE,33,105
-ogro,OGRE.DFA,25,36,64,36,B3,False,,,,NE,15,111
+minotauro,OGRE.DFA,19,34,70,34,B3,False,,,,NE,33,105
+minotauro,OGRE.DFA,25,36,64,36,B3,False,,,,NE,15,111
 orc,ORC.DFA,48,37,41,37,B2,False,,,,NW,126,114
 orc,ORC.DFA,49,37,40,37,B2,False,,,,NW,123,114
 orc,ORC.DFA,50,37,39,37,B2,False,,,,NW,120,114
@@ -95,10 +95,10 @@ goblin,GOBLIN.DFA,55,54,34,54,B2,False,,,,NW,105,165
 goblin,GOBLIN.DFA,67,54,22,54,B1,False,,,,NW,69,165
 goblin,GOBLIN.DFA,72,54,17,54,B1,False,,,,NW,54,165
 goblin,GOBLIN.DFA,58,55,31,55,B2,False,,,,NW,96,168
-ogro,OGRE.DFA,64,55,25,55,B1,False,,,,NW,78,168
+minotauro,OGRE.DFA,64,55,25,55,B1,False,,,,NW,78,168
 ghoul,GHOUL.DFA,3,56,86,56,B3,False,,,,NE,81,171
 goblin,GOBLIN.DFA,40,56,49,56,B2,False,,,,NW,150,171
-ogro,OGRE.DFA,64,56,25,56,B1,False,,,,NW,78,171
+minotauro,OGRE.DFA,64,56,25,56,B1,False,,,,NW,78,171
 ghoul,GHOUL.DFA,4,57,85,57,B3,False,,,,NE,78,174
 goblin,GOBLIN.DFA,67,57,22,57,B1,False,,,,NW,69,174
 goblin,GOBLIN.DFA,71,57,18,57,B1,False,,,,NW,57,174
@@ -123,9 +123,9 @@ orc,ORC.DFA,46,64,43,64,C2,False,,,,SW,132,15
 homem-lagarto,LIZRDMAN.DFA,28,65,61,65,C3,False,,,,SE,6,18
 goblin,GOBLIN.DFA,42,65,47,65,C2,False,,,,SW,144,18
 orc,ORC.DFA,46,65,43,65,C2,False,,,,SW,132,18
-ogro,OGRE.DFA,86,65,3,65,C1,False,,,,SW,12,18
+minotauro,OGRE.DFA,86,65,3,65,C1,False,,,,SW,12,18
 homem-lagarto,LIZRDMAN.DFA,6,67,83,67,C3,False,,,,SE,72,24
-ogro,OGRE.DFA,86,67,3,67,C1,False,,,,SW,12,24
+minotauro,OGRE.DFA,86,67,3,67,C1,False,,,,SW,12,24
 homem-lagarto,LIZRDMAN.DFA,5,68,84,68,C3,False,,,,SE,75,27
 homem-lagarto,LIZRDMAN.DFA,5,69,84,69,C3,False,,,,SE,75,30
 homem-lagarto,LIZRDMAN.DFA,33,69,56,69,C2,False,,,,SW,171,30
@@ -135,7 +135,7 @@ lobo,WOLF.DFA,20,70,69,70,C3,False,,,,SE,30,33
 homem-lagarto,LIZRDMAN.DFA,34,70,55,70,C2,False,,,,SW,168,33
 aranha,SPIDER.DFA,48,70,41,70,C2,False,,,,SW,126,33
 esqueleto,SKELETON.DFA,69,70,20,70,C1,False,,,,SW,63,33
-ogro,OGRE.DFA,78,70,11,70,C1,False,,,,SW,36,33
+minotauro,OGRE.DFA,78,70,11,70,C1,False,,,,SW,36,33
 lobo,WOLF.DFA,21,71,68,71,C3,False,,,,SE,27,36
 homem-lagarto,LIZRDMAN.DFA,33,71,56,71,C2,False,,,,SW,171,36
 aranha,SPIDER.DFA,48,71,41,71,C2,False,,,,SW,126,36

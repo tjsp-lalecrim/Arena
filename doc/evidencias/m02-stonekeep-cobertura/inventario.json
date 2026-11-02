@@ -125,7 +125,7 @@
         "ghoul": 2,
         "esqueleto": 2,
         "rato": 5,
-        "ogro": 1
+        "minotauro": 1
       },
       "implementedEnemies": 0,
       "doors": 5,
@@ -159,7 +159,7 @@
       "species": {
         "orc": 3,
         "goblin": 5,
-        "ogro": 2
+        "minotauro": 2
       },
       "implementedEnemies": 0,
       "doors": 4,
@@ -228,7 +228,7 @@
       },
       "species": {
         "esqueleto": 10,
-        "ogro": 2,
+        "minotauro": 2,
         "homem-lagarto": 2,
         "lobo": 2,
         "ghoul": 2,
@@ -265,7 +265,7 @@
       },
       "species": {
         "goblin": 2,
-        "ogro": 3,
+        "minotauro": 3,
         "esqueleto": 4,
         "lobo": 3,
         "ghoul": 3,
@@ -1878,7 +1878,7 @@
         54
       ],
       "floorRaw": "0x0200",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,
@@ -2586,7 +2586,7 @@
         105
       ],
       "floorRaw": "0x0600",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,
@@ -2609,7 +2609,7 @@
         111
       ],
       "floorRaw": "0x0200",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,
@@ -3483,7 +3483,7 @@
         168
       ],
       "floorRaw": "0x0200",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,
@@ -3552,7 +3552,7 @@
         171
       ],
       "floorRaw": "0x0200",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,
@@ -4127,7 +4127,7 @@
         18
       ],
       "floorRaw": "0x0600",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,
@@ -4173,7 +4173,7 @@
         24
       ],
       "floorRaw": "0x0600",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,
@@ -4403,7 +4403,7 @@
         33
       ],
       "floorRaw": "0x0600",
-      "species": "ogro",
+      "species": "minotauro",
       "flat": 58,
       "resource": "OGRE.DFA",
       "implemented": false,

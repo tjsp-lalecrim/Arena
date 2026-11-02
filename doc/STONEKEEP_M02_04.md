@@ -8,19 +8,25 @@
 |---|---|---|---|---|
 |Rato /52 /16 |Disponível R02 |Disponível R02 |Combate R02 aprovado (associação a61977b); exploração e entrega M01 preservadas, sem nova aprovação específica inferida |Reutilizar; nenhuma geração necessária agora |
 |Goblin /53 /32 |Disponível R03 |Disponível R02 |Legado da entrega M01; não inventar aprovação artística individual nova a partir de testes gerais |Reutilizar; manter ressalvas/evidências M01 |
-|Homem-lagarto /54 /19 |Disponível R03, preservado |Disponível V01, **aguarda avaliação** |Legado de combate sem aprovação artística individual identificada; seis grupos técnicos da caminhada não são aprovação manual |Avaliar [um exemplar RAM](HOMEM_LAGARTO_M02.md); nenhum dos19distribuído |
+|Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; nenhum dos19distribuído |
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
 |Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar os assets; seis B2 continuam ausentes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
-|Ogro /58 /8 |**Ausente** |**Ausente** |Nenhum exemplar aprovado |Uma entrega com combate+caminhada do mesmo exemplar e inspeção RAM; avaliar antes de outra espécie |
+|Minotauro /58 /8 (alias OGRE.DFA) |Disponível V01 |Disponível V01 |Correção de identidade autorizada; exemplar artístico **aguarda avaliação** |[Combate e patrulha RAM](MINOTAURO_M02.md); oito posições ainda ausentes |
 |Aranha /59 /20 |**Ausente** |**Ausente** |Nenhum exemplar aprovado |Uma entrega com combate+caminhada do mesmo exemplar, sem presumir outra aranha/franquia equivalente |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** orc preparado/aprovado; caminhada do homem-lagarto entregue para avaliação. Após seu feedback, **ogro e depois aranha**, cada um com combate+caminhada juntos em uma entrega e avaliação antes da próxima. Ogro atende dois B1 contíguos a B2; aranha inclui nove A3. Depois retomar distribuição de encontros, portas e eventos por blocos; assets disponíveis não concluem áreas. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente:** orc e homem-lagarto com combate/patrulha aprovados; avaliar o exemplar completo de **Minotauro**, depois preparar aranha (combate+caminhada juntos). Minotauro atende dois B1 contíguos a B2; aranha inclui nove A3. Depois retomar distribuição de encontros, portas e eventos por blocos; assets disponíveis não concluem áreas. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
 
-## Entrega atual — homem-lagarto, caminhada e inspeção RAM
+## Entrega atual — Minotauro, combate e caminhada RAM
 
-Sobre6794a81: [12poses, um exemplar na sala técnica reutilizada](HOMEM_LAGARTO_M02.md), sem personagem Argoniano, novo combate ou encontros da campanha. Batalha R03 e assets de orc preservados. Seis grupos focais passaram; caminhada/patrulha do homem-lagarto **aguardam avaliação**. Cobertura49/180encontros/32/70portas inalterada. Não solicitar percurso manual da dungeon agora.
+[Um exemplar integrado](MINOTAURO_M02.md):24quadros laterais e12poses direcionais, Enemy8/Troop9, sem distribuição na campanha. Doze grupos focais passaram em Chrome isolado, sem mudança de motor ou recompensas existentes. Arte aguarda avaliação.
+
+**Correção autorizada do levantamento:** flat58 `OGRE.DFA` é alias; `ITEM39` → índice7 do executável → **Minotaur / PAT@.CFA**. Não é prova de um ogro. As oito coordenadas/contagens permanecem iguais; inventário/CSV/visão geral e leitor foram corrigidos. [Prova e hashes](arte/minotaur-v01/sources.json). Menções antigas a ogro abaixo são históricas, substituídas por esta identificação. Não houve observação DOS nova.
+
+## Entrega anterior — homem-lagarto, caminhada e inspeção RAM
+
+Sobre6794a81: [12poses, um exemplar na sala técnica reutilizada](HOMEM_LAGARTO_M02.md), sem personagem Argoniano, novo combate ou encontros da campanha. Batalha R03 e assets de orc preservados. Seis grupos focais passaram; combate/patrulha do homem-lagarto **aprovados explicitamente na referência8b309cc**, sem extensão ao balanceamento. Cobertura49/180encontros/32/70portas inalterada. Não solicitar percurso manual da dungeon agora.
 
 ## Orc atual — caminhada e inspeção RAM
 

@@ -229,3 +229,7 @@ Arena_FangCells0.1.0 após CourtDelivery e núcleos existentes: Map013, chave im
 ## Prova Stonekeep274 — isolada
 
 Arena_StonekeepRuntimeProof0.1.0 após FangCells/DebugHub: Map014, HUD/comandos, carga sintética0/60/180, natação registrada pelas APIs existentes e checkpoint em sessionStorage separado. Sem patch de limite/motor ou novo consumidor de combate. Contratos, reconstrução, medições e limites em [PROVA_MAPA_UNICO_STONEKEEP.md](PROVA_MAPA_UNICO_STONEKEEP.md).
+
+## Minotauro de Stonekeep — exemplar RAM
+
+Arena_Minotaur0.1.0: combate e patrulha do mesmo exemplar; sala Map016 selecionada só em memória, sem distribuir os oito encontros ou configurar recompensas de campanha. [Contrato/dependências](plugins/Arena_Minotaur.md), [arte/fontes/verificações](MINOTAURO_M02.md).

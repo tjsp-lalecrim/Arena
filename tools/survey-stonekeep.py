@@ -31,7 +31,11 @@ M, F = layers['MAP1'], layers['FLOR']
 current = json.loads((ROOT / 'data/Map012.json').read_text())
 layout = json.loads((ROOT / 'doc/mapas/STONEKEEP_AMOSTRA_M02.json').read_text())
 assert layout['crop']['displayX'] == [8, 53] and layout['crop']['y'] == [0, 32]
-source_names = {52:'rato',53:'goblin',54:'homem-lagarto',55:'lobo',56:'orc',57:'esqueleto',58:'ogro',59:'aranha',60:'ghoul'}
+# INF resource names can be legacy aliases. ITEM39 resolves the executable's
+# creature index7: Minotaur/PAT@.CFA, not an Ogre named after OGRE.DFA.
+identity=json.loads((ROOT/'doc/arte/minotaur-v01/sources.json').read_text())
+assert tex['flats'][58].upper()=='OGRE.DFA' and identity['itemIndex']==39 and identity['creatureIndex']==7 and identity['creatureName']=='Minotaur' and identity['animationPattern']=='pat@.cfa'
+source_names = {52:'rato',53:'goblin',54:'homem-lagarto',55:'lobo',56:'orc',57:'esqueleto',58:'minotauro',59:'aranha',60:'ghoul'}
 configured = {}
 apartments = json.loads((ROOT / 'doc/mapas/STONEKEEP_APOSENTOS_M02.json').read_text())
 for e in apartments['entries']:
@@ -98,7 +102,7 @@ assert sum(e['implemented'] for e in enemies)==20
 assert [tex['textures'][i]['file'] for i in (17,18)]==['CASD.IMG','CASU.IMG']
 assert [(x,y) for y,row in enumerate(M) for x,v in enumerate(row) if v==0x1313]==[(39,1)]
 assert not any(v==0x1212 for row in M for v in row)
-assert Counter(e['species'] for e in enemies)==Counter({'rato':16,'goblin':32,'homem-lagarto':19,'lobo':13,'orc':22,'esqueleto':29,'ogro':8,'aranha':20,'ghoul':21})
+assert Counter(e['species'] for e in enemies)==Counter({'rato':16,'goblin':32,'homem-lagarto':19,'lobo':13,'orc':22,'esqueleto':29,'minotauro':8,'aranha':20,'ghoul':21})
 assert len(doors)==70 and len(locks)==12 and len(platforms)==7
 special=next(e for e in enemies if e['original']==[76,22]);assert special['species']=='esqueleto' and not special['implemented'] and special['currentRegion']==4
 triggers=[dict(**position(x,y),textIndex=t,soundIndex=s) for x,y,t,s in records('TRIG',4)]
@@ -156,7 +160,7 @@ for s in sectors:
 d.rectangle((ox+8*sz,oy,ox+54*sz-1,oy+33*sz-1),outline='#62f3a2',width=4)
 for p in doors:
     x,y=p['view'];cx,cy=ox+x*sz+6,oy+y*sz+6;d.line((cx-4,cy,cx+4,cy),fill='#171717',width=3)
-colors={'rato':'#85280e','goblin':'#d1c100','homem-lagarto':'#208044','lobo':'#433426','orc':'#276118','esqueleto':'#f4f4f4','ogro':'#be5318','aranha':'#662477','ghoul':'#285acb'}
+colors={'rato':'#85280e','goblin':'#d1c100','homem-lagarto':'#208044','lobo':'#433426','orc':'#276118','esqueleto':'#f4f4f4','minotauro':'#be5318','aranha':'#662477','ghoul':'#285acb'}
 for e in enemies:
     x,y=e['view'];cx,cy=ox+x*sz+6,oy+y*sz+6;d.ellipse((cx-4,cy-4,cx+4,cy+4),fill=colors[e['species']],outline='#111111')
     if e['implemented']:d.rectangle((cx-5,cy-5,cx+5,cy+5),outline='#00ff99',width=1)

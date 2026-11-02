@@ -8,9 +8,9 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados e seis B2 não distribuídos.
 
-**Entrega atual — homem-lagarto:** [caminhada V01 e um exemplar RAM](HOMEM_LAGARTO_M02.md), preservando combate R03 legado, sem reuso de Argoniano. Reutiliza sala técnica em memória; zero alterações de distribuição, mapas/bancos, loot/balanceamento/descanso. Seis grupos focais passaram; **avaliação artística da caminhada pendente**. Cobertura49/180encontros/32/70portas,19referências de homem-lagarto ainda sem distribuição. Forçar a porta determinístico/sem consumo segue pendente de avaliação integrada; não exigir teste manual do restante agora.
+**Entrega atual — Minotauro:** [combate e caminhada de um exemplar RAM](MINOTAURO_M02.md), após correção explicitamente autorizada do alias OGRE.DFA/ITEM39 para Minotaur/PAT@.CFA. Oito posições preservadas, nenhuma distribuída. Combate e patrulha do homem-lagarto8b309cc **aprovados explicitamente**, sem aprovação de equilíbrio/recompensas. Minotauro aguarda avaliação visual/funcional; depois, aranha com combate+caminhada em uma entrega, antes de distribuir encontros/portas/eventos. Cobertura49/180encontros e32/70portas mantida; loot/descanso depois; Forçar a porta pendente de avaliação integrada.
 
-**Próximas espécies pela [matriz de nove espécies](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies):** após avaliar homem-lagarto, **ogro → aranha**, ambos com combate+caminhada juntos, uma espécie/entrega e avaliação antes da próxima. Depois retomar distribuição de encontros/portas/eventos; loot/tesouros/descanso depois. Não produzir novos assets ou espécies automaticamente.
+**Próximas espécies:** avaliar Minotauro; depois aranha, conforme a [matriz vigente](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies). Não iniciar automaticamente outra produção.
 
 ## Histórico42b857f — piloto de batalha do orc
 

@@ -1,0 +1,8 @@
+{
+  "tool": "image_gen built-in targeted correction, same exemplar",
+  "prompt": "Precise correction of SAME12figure3x4 Minotaur atlas, not a variant. Preserve identity, golden human body/human feet, chestnut bullhead/pale horns, brown loincloth, right-hand CLEAVER, left hand empty, camera, scale, upper-left light, transparent background. Correct ROW2 ALL THREE FIGURES to WEST: heads, muzzles, torsos, pelvis, knees and toes must face IMAGE LEFT, NOT RIGHT. Near arm is anatomical LEFT and EMPTY; right arm holding cleaver is farther/top side, naturally visible around torso, do NOT simply mirror East (hands and illumination cannot swap). Keep clear real gait right-leg-step / planted neutral / opposite left-leg-step. ALL three row2 muzzles and toes point LEFT. Also correct row1 column3 SOUTH: boot on IMAGE RIGHT advanced DOWN/viewer, imageLEFT foot back/up, the opposite of row1column1 which has imageLEFT foot down. Correct row4column3 NORTH: boot on IMAGE RIGHT is DOWN toward viewer while imageLEFT foot is UP away (reverse current stride); preserve right hand blade imageRIGHT. Other seven figures must remain the SAME. No missing horns, feet or blade, no giant hooves/tail/armor, no cropping. Uniform independent poses anchored at same support/body axes; not shifted static copies. Generous transparency margins and gaps. Only these corrections, no new characters, extra poses, text or background.",
+  "input": "art/masters/stonekeep-minotaur-walk-v01/sheet-v01.png",
+  "output": "art/masters/stonekeep-minotaur-walk-v01/sheet-v02-directions.png",
+  "selection": "West row3poses and opposite South/North stride, preserve the other7poses from V01",
+  "approval": "pending"
+}

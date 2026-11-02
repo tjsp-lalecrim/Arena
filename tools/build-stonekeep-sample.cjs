@@ -23,6 +23,7 @@ function build(){
  require('./build-stonekeep-apartments.cjs')();
  require('./build-stonekeep-wolf.cjs')();
  require('./build-stonekeep-orc.cjs')();
+ require('./build-stonekeep-minotaur.cjs')();
  // Once the isolated full-map candidate exists, keep its transferred crop/events in sync.
  if(fs.existsSync(path.join(root,'data/ArenaStonekeepWhole.json')))require('./build-stonekeep-whole.cjs')();
  console.log('Stonekeep recomposta; sete esqueletos, seis ghouls e três ratos; lobos pendentes.');

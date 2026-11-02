@@ -57,5 +57,6 @@ var $plugins =
 {"name":"Arena_StonekeepAccess","status":true,"description":"v0.2.0 Fechaduras comuns e corredor seco sob estrutura em Stonekeep","parameters":{}},
 {"name":"Arena_TitleArt","status":true,"description":"v0.2.0 Fundo aprovado e título vetorial REF16","parameters":{}},
 {"name":"Arena_Orc","status":true,"description":"v0.2.0 Batalha do orc e exemplar de caminhada, somente RAM","parameters":{}},
-{"name":"Arena_LizardPatrol","status":true,"description":"v0.1.0 Exemplar de caminhada do homem-lagarto, somente RAM","parameters":{}}
+{"name":"Arena_LizardPatrol","status":true,"description":"v0.1.0 Exemplar de caminhada do homem-lagarto, somente RAM","parameters":{}},
+{"name":"Arena_Minotaur","status":true,"description":"v0.1.0 Minotauro: combate e patrulha RAM, alias OGRE.DFA corrigido","parameters":{}}
 ];
