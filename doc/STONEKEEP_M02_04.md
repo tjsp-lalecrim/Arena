@@ -2,9 +2,47 @@
 
 ## Estado manual e pendência de conectividade após eb81e7a
 
-O responsável adiou os testes manuais de Stonekeep para uma versão mais completa. Preservar as evidências técnicas de8f28207/eb81e7a; **não registrar aprovação da base ou do setor por autorização de avanço**. O recorte atual é somente a abertura REF16; mapas, encontros, portas e água permanecem intocados.
+O responsável adiou os testes manuais de Stonekeep para uma versão mais completa. Preservar as evidências técnicas de8f28207/eb81e7a; **não registrar aprovação da base ou do setor por autorização de avanço**. Abertura e título REF16 aprovados; modernização futura no registro de refinamentos. O delta atual de encontros está abaixo; avaliação manual da base/setores continua adiada.
 
 **Investigação futura: caminhos pela água sob paredes no original.** Pendência de fidelidade/conectividade da cobertura completa, vinculada à revisão de água/alturas abaixo. Verificar na wiki local e, quando viável, no jogo instalado quais posições/rotas permitem essa travessia e suas condições; separar observação original, interpretação de MAP1/FLOR e adaptação à grade. Ainda não há solução aprovada nem confirmação geral desse comportamento. Não tornar paredes/água globalmente atravessáveis, inventar túnel, alterar colisão/oclusão ou custo de Vigor nesta entrega. Planejar depois da evidência, no setor efetivamente afetado, sem nova pesquisa agora.
+
+## M02-04C3.0 — sete omissões da área antiga no Map015
+
+Base901dfcb, preservando eb81e7a/a39d71e e dependências. **31/180 encontros**,4/70 portas; faltam149 referências e66 portas. Campanha permanece no Map012. Somente sete novos eventos63–69 no Map015, sem alteração de tiles/camadas, colisões, portas, água, atributos, loot ou assets. Não exige derrotar todos para coletar o pergaminho.
+
+Fonte conferida novamente em leitura:39699021.MIF, SHA4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b; decoder existente recompôs MAP1/FLOR. Os seis MAP1=0x8035 são flat53/GOBLIN.DFA e o0x8039 é flat57/SKELETON.DFA conforme associações STKEEP1.INF já confirmadas. [Configuração autoral](mapas/STONEKEEP_OMISSOES_ANTIGAS_M02.json) guarda raw, origem e coordenadas. Não confundir com os esqueletos decorativos.
+
+| Encontro / sufixo do ID | MIF zero-based | Vista u=89−X | Map015 / evento |
+|---|---|---|---|
+| goblin.01 |37,21 |52,21 |159,66 /63 |
+| goblin.02 |41,21 |48,21 |147,66 /64 |
+| goblin.03 |38,23 |51,23 |156,72 /65 |
+| goblin.04 |39,23 |50,23 |153,72 /66 |
+| goblin.05 |40,23 |49,23 |150,72 /67 |
+| goblin.06 |42,23 |47,23 |144,72 /68 |
+| skeleton.01 |76,22 |13,22 |42,69 /69 |
+
+Prefixo estável `stonekeep.legacycrop.`; mundo `X=3+3×u,Y=3+3×Yoriginal`. Assim o esqueleto MIF(76,22) não é MV(76,22): Map012 projetado(18,69), depois X+24 → Map015(42,69). Não colide com nenhum dos24 encontros anteriores. Piso seco4, raio2/intervalo90, caminhadas/combates e configurações atuais reutilizados: goblin enemy2/troop2; esqueleto enemy4/troop5. EXP e loot permanecem provisórios para M02-BAL; sete vitórias adicionam200EXP, sem novo valor/recompensa inventados.
+
+**Circulação e água:** grafo nativo com portas implementadas abertas alcança as sete origens e a fonte desde a entrada; patrulhas restritas ao piso4. Não foi necessária nenhuma conexão/colisão nova. Isso confirma acesso no runtime, não resolve fidelidade de todas as rotas originais. A investigação de água sob paredes acima continua pendente, sem bloquear/apagar caminhos pela aparência. Deve ocorrer **antes de fixar colisões/conexões do próximo recorte aquático A1 oeste**, para evitar retrabalho; verificar evidência local e condições antes de qualquer adaptação.
+
+**Reconstrução/estados:** `build-stonekeep-whole.cjs` aplica `stonekeep-legacycrop-encounters.cjs` após A2-E; gerador pai conserva ambas as entregas. Map012/dados da campanha inalterados. IDs lógicos novos independentes usam os mesmos recibos/estados e política de respawn existentes; snapshots RAM antigos incorporam eventos ausentes pelo sync já existente. Sem namespace novo ou escrita em saves pessoais.
+
+**Verificações focais:** [seis grupos Chrome156/headless/perfil descartável](evidencias/m02-stonekeep-omissoes/resultado.json), `tools/test-stonekeep-legacycrop.cjs`: posições únicas/origem; grafo de circulação seco/natação; passo legal de patrulha dos7; contato real por teclado individual, bloqueio duplicado, vitórias nativas controladas/retorno;7derrotas/recibos independentes, repetição sem EXP/ouro/itens extras; Guardar/Carregar RAM e snapshot sem eventos novos restauram estados; retorno à área sem respawn, MQ01/fonte/quest preservados, slots normais bloqueados/localStorage vazio. Gerador pai idempotente; tiles e eventos anteriores idênticos. Não é teste de dificuldade, campanha completa ou aprovação manual. [Goblins](evidencias/m02-stonekeep-omissoes/goblins.png) · [Esqueleto](evidencias/m02-stonekeep-omissoes/esqueleto.png).
+
+**Matriz vigente** (o inventário a808f8b continua evidência histórica, não reescrito): [180 referências reconciliadas](evidencias/m02-stonekeep-omissoes/cobertura.json).
+
+| Setor | Implementados / declarados |
+|---|---|
+| A1 |12/14 |
+| A2 |19/19 |
+| A3 |0/19 |
+| B1 / B2 / B3 |0/10 ·0/25 ·0/20 |
+| C1 / C2 / C3 |0/19 ·0/32 ·0/22 |
+
+Encontros A2 cobertos não significam geometria/portas do setor concluídas. **Próximo recorte recomendado04C2.n/04C3.n:** conexão/limites de A1 oeste e dois ghouls restantes MIF(82,2)/(83,3), vista(7,2)/(6,3), com assets existentes. Primeiro conferir circulação aquática/alturas na conexão consumidora, antes de definir colisões definitivas; não iniciar outra espécie ou polimento. Nenhum novo teste manual exigido agora.
+
+**Acesso:** http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM). Esc → Stonekeep: pontos da base integral → **Área antiga · seis goblins (147,69)** ou **Ilha · esqueleto MIF76,22 (42,72)**. Guardar/Carregar teste em RAM no menu; sair pelo menu de pontos → título. Servidor canônico iniciado após confirmar porta livre; encerrar por `tools\arena-local.cmd stop`. Avaliação manual continua adiada, sem aprovação presumida.
 
 ## Faixa A2-E — primeiro setor funcional no Map015
 

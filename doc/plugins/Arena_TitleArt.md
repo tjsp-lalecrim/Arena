@@ -1,6 +1,6 @@
-# Arena_TitleArt0.2.0 — fundo aprovado, título vetorial para avaliação
+# Arena_TitleArt0.2.0 — fundo e título aprovados
 
-**Aprovação explícita do responsável:** ilustração do menu entregue em **a39d71e**. Ambiente e novos testes não informados neste relato; não inferir outra validação. Mestre e PNG do fundo permanecem byte a byte idênticos. **O logotipo separado V01 ainda aguarda avaliação artística**, sem nova proposta/ilustração automática.
+**Aprovação explícita do responsável:** ilustração do menu entregue em **a39d71e**. Ambiente e novos testes não informados neste relato; não inferir outra validação. Mestre e PNG do fundo permanecem byte a byte idênticos. **Título V01 de901dfcb e ilustração de abertura explicitamente aprovados no relato desta entrega.** Não inferir novos testes/ambiente. Modernização do título é melhoria futura vinculada à REF16, sem alteração da arte ou nova proposta autorizada agora.
 
 Proposta única: letras desenhadas da tela instalada TITLE.IMG, reconstruídas como contornos SVG e exportadas em PNG com alpha real. Não há fonte medieval substituta nem texto gerado por IA. Preserva The Elder / Scrolls / Arena e proporções relativas das letras da abertura; retira somente o texto introdutório “Chapter One: The”, copyright e moldura. Dourado envelhecido/bronze e contorno escuro são adaptação do acabamento. Não pretende representar logos de todas as edições. [Referência, método, adaptações e hashes](../arte/TITULO_REF16_V01.json).
 

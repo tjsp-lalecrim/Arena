@@ -1,6 +1,6 @@
 {
   "version": "v01",
-  "status": "Proposta única de título vetorial integrada; avaliação artística pendente",
+  "status": "Título de901dfcb explicitamente aprovado pelo responsável; fundo a39d71e também aprovado",
   "base": "a39d71e",
   "backgroundApproval": "Responsável aprovou explicitamente a ilustração do menu de a39d71e; ambiente não especificado, sem estender a outras funções",
   "master": "art/masters/ref16-logo-v01/title-logo-v01.svg",
@@ -37,5 +37,5 @@
     "doc/evidencias/ref16-logo-v01/resultado.json",
     "doc/evidencias/ref16-logo-v01/alpha.json"
   ],
-  "pending": "Avaliação do responsável antes de outra proposta/entrega artística; nenhuma nova ilustração ou setor autorizado por associação."
+  "pending": "Modernização do título como melhoria futura na REF16, sem alteração da arte nesta entrega; nenhum novo teste/ambiente inferido."
 }

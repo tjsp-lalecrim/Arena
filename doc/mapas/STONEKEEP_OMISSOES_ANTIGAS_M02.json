@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "id": "stonekeep.legacycrop.missing",
+  "source": "39699021.MIF MAP1 + STKEEP1.INF flat53/57; FLOR",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "coordinates": "zero-based MIF; view=(89-x,y); Map015=(3+3*viewX,3+3*y); Map012 x=Map015x-24",
+  "entries": [
+    {
+      "id": "stonekeep.legacycrop.goblin.01",
+      "eventId": 63,
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceOriginal": [
+        37,
+        21
+      ],
+      "view": [
+        52,
+        21
+      ],
+      "origin": [
+        159,
+        66
+      ],
+      "sourceFlat": "GOBLIN.DFA",
+      "mapRaw": 32821,
+      "floorRaw": 512,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.02",
+      "eventId": 64,
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceOriginal": [
+        41,
+        21
+      ],
+      "view": [
+        48,
+        21
+      ],
+      "origin": [
+        147,
+        66
+      ],
+      "sourceFlat": "GOBLIN.DFA",
+      "mapRaw": 32821,
+      "floorRaw": 512,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.03",
+      "eventId": 65,
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceOriginal": [
+        38,
+        23
+      ],
+      "view": [
+        51,
+        23
+      ],
+      "origin": [
+        156,
+        72
+      ],
+      "sourceFlat": "GOBLIN.DFA",
+      "mapRaw": 32821,
+      "floorRaw": 768,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.04",
+      "eventId": 66,
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceOriginal": [
+        39,
+        23
+      ],
+      "view": [
+        50,
+        23
+      ],
+      "origin": [
+        153,
+        72
+      ],
+      "sourceFlat": "GOBLIN.DFA",
+      "mapRaw": 32821,
+      "floorRaw": 512,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.05",
+      "eventId": 67,
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceOriginal": [
+        40,
+        23
+      ],
+      "view": [
+        49,
+        23
+      ],
+      "origin": [
+        150,
+        72
+      ],
+      "sourceFlat": "GOBLIN.DFA",
+      "mapRaw": 32821,
+      "floorRaw": 512,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.06",
+      "eventId": 68,
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceOriginal": [
+        42,
+        23
+      ],
+      "view": [
+        47,
+        23
+      ],
+      "origin": [
+        144,
+        72
+      ],
+      "sourceFlat": "GOBLIN.DFA",
+      "mapRaw": 32821,
+      "floorRaw": 2048,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.legacycrop.skeleton.01",
+      "eventId": 69,
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceOriginal": [
+        76,
+        22
+      ],
+      "view": [
+        13,
+        22
+      ],
+      "origin": [
+        42,
+        69
+      ],
+      "sourceFlat": "SKELETON.DFA",
+      "mapRaw": 32825,
+      "floorRaw": 1536,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ]
+}
