@@ -1,5 +1,61 @@
 # M02-04 — amostra integrada de Stonekeep
 
+## M02-04C2.0 — base integral funcional isolada (02/11/2026)
+
+Base **60f969b**, dependências a808f8b/1bcf1f9 preservadas. **Map015, 274×274**, reúne a geometria completa da prova e o conteúdo real existente. Candidata de transferência, **não Stonekeep concluída nem substituição da campanha**. Map012 permanece no percurso normal; Map014 continua como prova histórica separada. Não houve arte nova, expansão de catálogo, mudança de motor, fórmula, recompensas ou namespace.
+
+**Acesso:** [localhost canônico](http://127.0.0.1:8774/) → **Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM)**. Abrir/recarregar normalmente para ler os novos arquivos, sem limpar dados. Servidor/procedimento único em [EXECUCAO_LOCAL.md](EXECUCAO_LOCAL.md). Sessão sintética nova, MQ02=40, personagem/recursos do preparo técnico já existente; a transferência em si não cura nem concede EXP/itens. Esc → **Stonekeep: pontos da base integral** permite observar extremos sem repetir caminhada longa; não há seletor de carga, patrulhas substitutas, controles de densidade ou checkpoint da prova. O menu conserva **Guardar teste em RAM / Carregar teste da RAM**. Sair pelo menu de pontos → **Sair da sessão → título** encerra o isolamento.
+
+### Coordenadas, conteúdo e origem de reconstrução
+
+Mesma escala3/margem2, zero-based: **Xnovo=Xantigo+24, Ynovo=Yantigo**. Original MIF → Xnovo=3+3×(89−Xoriginal), Ynovo=3+3×Yoriginal. IDs lógicos, IDs dos22 eventos, scripts, páginas e configurações dos20 encontros preservados (3 ratos,7 esqueletos,6 ghouls,4 lobos). Identificadores de fonte/recibo/área continuam `stonekeep.parchment`, os contratos de entrega existentes e `stonekeep`. [Correspondência individual completa](../data/ArenaStonekeepWhole.json), campos `mapping` e `encounters`; nenhuma nova identidade de recompensa para o mesmo encontro.
+
+| Ponto | Map012 antigo | Map015 integral |
+|---|---|---|
+| Chegada |129,15 |153,15 |
+| Saída/Rihad, evento1 |129,9 |153,9 |
+| Pergaminho, evento2 |30,72 |54,72 |
+| Primeiro esqueleto, evento3 |63,9 |87,9 |
+| Primeiro ghoul, evento10 |36,57 |60,57 |
+| Primeiro rato, evento16 |114,36 |138,36 |
+| Primeiro lobo, evento19 |90,51 |114,51 |
+| Abertura / margem |75,39 /66,39 |99,39 /90,39 |
+
+`tools/build-stonekeep-whole.cjs` lê a geometria versionada de Map014 (somente tiles/dimensões, **nunca seus180 eventos**) e preserva todas as seis camadas do interior de Map012, X2..139/Y2..100, em X+24. Desconsidera apenas a borda artificial do recorte. São153 tiles/17 células originais com adaptações locais já existentes, mantidas e identificadas em `geometry.preservedTerrainAdjustments`; não achatamentos novos. Isso conserva passagens/água/materiais aprovados, inclusive a diagonal já adaptada, enquanto o restante mantém a geometria conservadora da prova. Materiais fora do trecho antigo são reutilizados **provisórios**, não aprovação visual nova. Animação de água/natação usa a API existente, sem gasto de Vigor.
+
+Reconstrução: executar o gerador existente `tools/build-stonekeep-sample.cjs`; ele recompõe os participantes e então chama o gerador integral, quando o contrato existe. Para reconstruir só a candidata: `tools/build-stonekeep-whole.cjs`. Ambos usam Node funcional (`process.execPath` nos testes; runtime instalado conforme EXECUCAO_LOCAL.md). A origem completa de consulta continua39699021.MIF/hash do levantamento; Map014/data e seu gerador Python são entradas de geometria já versionadas, não dependência de patrulhas de carga. A reconstrução não copia extrações para assets. `tools/render-stonekeep-whole.py` gera apenas a visão geral de revisão abaixo, sem alterar arquivos de jogo.
+
+### Integração e estados
+
+`Arena_StonekeepWhole` fornece uma visão de configuração **apenas enquanto o laboratório está ativo**, sem modificar ArenaCampaign.json ou os contratos da campanha: mapId15 usa encontros/posições transferidos, mas a mesma área lógica e os mesmos IDs. `ArenaStonekeep.configuration()` mantém Map012 como padrão; fonte, coleta, viagem e retorno continuam nos mecanismos existentes. Retornar a Rihad e viajar novamente nessa sessão volta ao Map015; fora dela volta ao comportamento anterior. A saída real mantém `onExit` e suas regras, inclusive incremento de revisão de saída sem respawn incondicional. A simples troca técnica Map012→Map015 da mesma área não é saída nem chance de respawn.
+
+**Saves:** nenhum save pessoal é carregado/migrado; campanha antiga e seu Map012 não mudaram. Testes usam somente RAM e perfil descartável no mesmo endereço. Snapshots nativos preservam mapa274, coordenadas, estados, recursos gastos, pontos/equipamentos, quests e recibos; slots normais seguem bloqueados. `ArenaStonekeepWhole.transferFromSample()` é um adaptador técnico restrito ao laboratório já em Map012: desloca jogador+24 e reaproveita estados lógicos; eventos vivos reiniciam patrulha na origem nova, derrotados não retornam. Não importa save pessoal ou converte E05. A promoção futura à campanha ainda deverá definir a troca do mapa ativo e os estados espaciais dos saves; não foi implementada migração automática de slots. Não há checkpoint novo em localStorage/sessionStorage, limpeza de dados ou mudança de `arena:m01:save-v1`.
+
+### Verificações executadas e cobertura restante
+
+[Resultado focal](evidencias/m02-stonekeep-integral/resultado.json): Chrome156.0.8078.76 headless, perfil descartável, servidor canônico no-store. Oito grupos passaram: abertura real/hub, registros dos20 encontros e bloqueio de saves; grafo nativo de transitabilidade (29160 tiles alcançáveis da entrada, saída/fonte/vizinhança de todos os encontros e regiões ampliadas até X262/Y265); travessia de uma junção do recorte e entrada/saída de água por teclado; um contato/batalha/vitória controlada pelo fluxo nativo, derrota individual e recibo/EXP/loot único; coleta nativa40→50/uma unidade/repetição; restauração JsonEx/RAM; saída real/retorno por escolha explícita; aposentadoria da fonte pelo recibo existente; retorno ao padrão Map012 e transferência técnica de estado antigo. Vitória foi controlada para verificar integração, **não equilíbrio nem matriz completa de combate**. Na comparação de viagem, revisão de saída incrementa conforme regra existente; recursos/quest/recibos permanecem. Não é nova aprovação manual, teste mobile, reinício de navegador ou percurso completo.
+
+Reconstrução byte a byte estável para Map015/contrato e mapas/dados protegidos; Map008–014, ArenaCampaign/Stonekeep, inimigos, loot, equipamentos, itens e demais dados de campanha preservados. Arquivos internos do motor intactos. Não repetidas animações/benchmark aprovados. [Delta de navegação](evidencias/m02-stonekeep-integral/navegacao.json): oito pontos de inspeção válidos, seleção pelo menu nativo, sem controles de carga e sem mutação dos estados; o menu aguarda soltura antes de aceitar comando. Comando focal `tools/test-stonekeep-whole.cjs` (Playwright/Chrome do ambiente, perfil descartável); opções `--data-only` para reconstrução/geometria e `--navigation-only` para pontos/menu sem repetir batalha.
+
+| Cobertura restante | Estado real / próximo recorte |
+|---|---|
+| Encontros |20/180 referências implementadas;160 ainda ausentes. Primeiro delta já conhecido:6 goblins+esqueleto MIF(76,22) no trecho antigo. Novo esqueleto será Map015(42,69), não o antigo(18,69). Novas espécies exigem piloto próprio; não há substitutos ocultos |
+| Portas |**0 portas funcionais transferidas**, pois Map012 não tinha nenhuma.70 vãos continuam abertos/provisórios,12LOCK precisam de interpretação e acesso recuperável antes de fechar. Não declarados concluídos |
+| Geometria detalhada |Planta inteira presente, mas alturas/diagonais/arestas e conexões originais precisam de revisão por setor; grafo alcançável não prova reprodução de toda mobilidade original. Sem transições internas |
+| Descanso/objetos |7 refúgios apenas candidatos visuais, nenhum descanso novo habilitado. Chave de ferro opcional, textos/tesouros/decoração e função dos elementos continuam classificados no levantamento; não inventar eventos |
+| Materiais |Trecho aprovado preservado. Áreas ampliadas reutilizam tiles provisórios; sem gerar arte ou mexer em Imperial Dungeons/Rihad |
+| Campanha |Transferência isolada aguarda avaliação antes de substituir Map012. Não marcar dungeon/M02 concluídos |
+
+Próximas ampliações ficam em **setores lógicos do mesmo Map015**, nunca em mapas separados: após avaliar esta transferência,04C3.0 cobre omissões no recorte antigo e04C2.1/04C3.1 a faixa A2-E (vistaX54–59/Y0–29). A geometria-base já existe; revisar os vínculos/portas/alturas e integrar encontros desse setor, em recortes próprios. A ordem geral de Rihad03E1 permanece no backlog, sem iniciar outra tarefa aqui.
+
+**Roteiro manual curto:** abrir a base integral; caminhar/contatar um encontro; alcançar margem/ilha e coletar o pergaminho (não é necessário matar todos); Esc → Guardar RAM, mudar posição e Carregar RAM; voltar pela saída(153,9), escolher Stonekeep na estrada e conferir continuidade. Menu de pontos permite inspecionar áreas distantes sem mudar estado de quest/recursos. A avaliação pode focar a transferência, não repetir todas as animações/combates.
+
+![Visão geral anotada — sobreposição apenas de revisão](evidencias/m02-stonekeep-integral/visao-geral.png)
+
+[Entrada](evidencias/m02-stonekeep-integral/entrada.png) · [Água](evidencias/m02-stonekeep-integral/agua.png) · [Fonte](evidencias/m02-stonekeep-integral/fonte.png)
+
+---
+
 ## M02-04C1 — levantamento completo,02/11/2026
 
 Base **c2d7673**, feature `feature/m02-stonekeep-levantamento-completo`. Levantamento **documental concluído**, não conclusão do mapa. Sem alterações de gameplay, geometria, encontros, Rihad/Fang Lair ou assets do motor; sem teste novo de jogo. Aprovações existentes e manuais dos grupos adiados à integração preservados. A análise limitada anterior de79 referências cobria quatro espécies; este inventário a substitui para planejar a dungeon inteira.

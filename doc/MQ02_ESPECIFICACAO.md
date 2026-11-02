@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Candidata de transferência M02-04C2.0:** [Stonekeep integral](STONEKEEP_M02_04.md#m02-04c20--base-integral-funcional-isolada-02112026) em Map015274×274, somente laboratório, preserva IDs de quest/fonte/recibo e20 encontros transferidos. Map012 continua ativo na campanha. Não modifica etapas, exige morte de todos ou conclui a dungeon; portas/encontros ausentes continuam pendentes.
+
 **Revisão de escopo02/11/2026:** mapas completos e todos os encontros aplicáveis passam a ser requisito, conforme MARCOS_DO_PROJETO.md; recortes abaixo descrevem as amostras históricas, não a entrega cartográfica final. Estados/recibos/viagem condensada preservados. Prioridade: auditar e concluir Stonekeep/Rihad conforme BACKLOG_M02.md, antes de expandir Fang Lair. Exceção de ordem exige dependência concreta documentada; não há uma identificada agora.
 
 **Levantamento posterior M02-04C1:** [mapa90×90 e índice de cobertura](STONEKEEP_M02_04.md#m02-04c1--levantamento-completo02112026), sem mudar estados/viagens:180 referências estáticas/9 espécies,70 portas e refúgios candidatos; proposta anterior de4 mapas por limite do editor; [prova posterior de mapa único274](PROVA_MAPA_UNICO_STONEKEEP.md) passou no runtime sem alterar o motor. Exploração contínua autorizada, sem integração definitiva. O esqueleto(76,22) é coordenada MIF e falta no Map012(18,69). Rihad/Fang Lair preservadas; não tratar a amostra como mapa completo.

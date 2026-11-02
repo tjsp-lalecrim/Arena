@@ -18,12 +18,13 @@ var ArenaStonekeep;
   itemsFile.src='Items.json?arena-data=stonekeep-parchment-v1';
  }
  var materialsPending=null;
- function c(){return $arenaStonekeep;}
+ function c(){return ArenaStonekeep.configuration();}
  function here(){return $gameMap&&$gameMap.mapId()===c().mapId;}
  function valid(i,mapId,eventId){var e=$gameMap.event(eventId);return ArenaNarrative.isCampaign()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&!$gameMessage.isBusy()&&$gameMap.mapId()===mapId&&i instanceof Game_Interpreter&&i._mapId===mapId&&i.eventId()===eventId&&e&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;}
  function message(i,text){var w=SceneManager._scene._messageWindow,list=[];w.resetFontSettings();MVJournalModel.wrap(text,w.contentsWidth()-8,w.textWidth.bind(w)).forEach(function(t,n){if(n%4===0)list.push({code:101,indent:0,parameters:['',0,0,2]});list.push({code:401,indent:0,parameters:[t]});});list.push({code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;}
  function transfer(to){$gameTemp.clearDestination();$gameTemp._arenaCourtTravelFence=true;$gamePlayer.reserveTransfer(to.mapId,to.x,to.y,to.direction,0);return true;}
  ArenaStonekeep={
+  configuration:function(){return $arenaStonekeep;},
   known:function(){return ArenaQuests.snapshot('MQ02').stage>=40;},
   offer:function(i){if(!valid(i,c().return.mapId,c().travelEventId)||!this.known())return false;
    i.setupChild([{code:101,indent:0,parameters:['',0,0,2]},{code:401,indent:0,parameters:['Viajar até Stonekeep?']},{code:401,indent:0,parameters:['Passagem com esqueletos e ilha com ghouls.']},
@@ -91,7 +92,7 @@ var ArenaStonekeep;
  };
  Scene_Map.prototype.update=function(){update.apply(this,arguments);if(!this._stoneLabels)return;var b=this._stoneLabels.bitmap;b.clear();this._stoneLabels.visible=!$gameMessage.isBusy();
   function label(x,y,t){var px=$gameMap.adjustX(x)*48+24,py=$gameMap.adjustY(y)*48-26;if(px<0||px>b.width||py<72||py>b.height)return;b.fontSize=17;b.fillRect(px-155,py,310,26,'rgba(8,14,18,.9)');b.textColor='#ead9b5';b.drawText(t,px-151,py,302,26,'center');}
-  if(here()){b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Stonekeep — amostra da passagem e ilha',16,3,b.width-32,30);b.fontSize=16;b.drawText('3 ratos · 7 esqueletos · 6 ghouls · lobos pendentes',16,37,b.width-32,26);if(ArenaPersistence.sourceStatus(c().sourceId).missing)label(c().source[0],c().source[1],'Pergaminho · marcador provisório');label(c().exit[0],c().exit[1],'Retornar a Rihad ↑');}
+  if(here()){b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText(c().caption||'Stonekeep — amostra da passagem e ilha',16,3,b.width-32,30);b.fontSize=16;b.drawText(c().coverage||'3 ratos · 7 esqueletos · 6 ghouls · lobos pendentes',16,37,b.width-32,26);if(ArenaPersistence.sourceStatus(c().sourceId).missing)label(c().source[0],c().source[1],'Pergaminho · marcador provisório');label(c().exit[0],c().exit[1],'Retornar a Rihad ↑');}
   else if(ArenaStonekeep.known())label(10,12,'Estrada · Stonekeep ↓');
  };
 })();
