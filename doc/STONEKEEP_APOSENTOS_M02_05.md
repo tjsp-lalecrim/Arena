@@ -1,5 +1,7 @@
 # Stonekeep — delimitação dos encontros dos aposentos
 
+**Cobertura posterior M02-04C1:** a exclusão das posições fora do recorte abaixo era limite da amostra, não da entrega final. [Levantamento completo](STONEKEEP_M02_04.md#m02-04c1--levantamento-completo02112026) registra todas as9 espécies/180 posições, incluindo6goblins e1esqueleto ainda ausentes dentro do retângulo atual. Preservar os IDs/aprovações existentes; nenhum encontro foi acrescentado na consulta documental.
+
 **Atualização após d27eb5f:** patrulha aprovada; os [quatro lobos confirmados foram integrados](LOBO_M02.md), eventos19–22, mesmos assets/valores. Teste manual do conjunto adiado para integração, não aprovado antecipadamente. As dependências/ausências abaixo registram o histórico da delimitação.
 
 **Continuação sobreaaea451:** responsável aprovou animação/combate; [caminhada e um encontro](LOBO_M02.md) implementados para avaliação, evento19 em(90,51), sem ocupar as outras três posições. EXP25 provisórios/loot vazio por incerteza; laboratório de batalha continua0EXP/loot. Tabela de posições abaixo preserva a delimitação histórica.

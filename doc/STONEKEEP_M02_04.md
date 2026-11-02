@@ -1,26 +1,103 @@
 # M02-04 — amostra integrada de Stonekeep
 
-## Cobertura vigente — mapa completo ainda pendente (02/11/2026)
+## M02-04C1 — levantamento completo,02/11/2026
 
-A aprovação de materiais e dos exemplares permanece válida; o recorte **não é Stonekeep completa**. A decisão de mapas completos em MARCOS_DO_PROJETO.md substitui as exclusões geográficas da amostra abaixo. Não houve alteração de mapas, assets ou encontros nesta revisão.
+Base **c2d7673**, feature `feature/m02-stonekeep-levantamento-completo`. Levantamento **documental concluído**, não conclusão do mapa. Sem alterações de gameplay, geometria, encontros, Rihad/Fang Lair ou assets do motor; sem teste novo de jogo. Aprovações existentes e manuais dos grupos adiados à integração preservados. A análise limitada anterior de79 referências cobria quatro espécies; este inventário a substitui para planejar a dungeon inteira.
 
-- Original **39699021.MIF90×90**; amostra Map012 cobre vistaX8–53/Y0–32 (**46×33 células originais**, não porcentagem de área caminhável). Faltam as demais alas/perímetro e a restauração das conexões hoje seladas pela borda do recorte; prisão, aposento real e região da chave de ferro(40,30) eram exclusões explícitas. Conferir portas/chaves necessárias à circulação da planta completa, sem converter conteúdo opcional em objetivo obrigatório da quest.
-- Comparação documental: wiki local Fang Lair p2/p5, planta e registros deste documento; `doc/mapas/STONEKEEP_AMOSTRA_M02.json`, configurações dos quatro participantes e fontes dos aposentos. Reutilizadas camadas MAP1 de `tmp/stonekeep-review/39699021-layers.json`, com SHA256 do MIF instalado reconferido: `4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b`. Associações STKEEP1.INF já confirmadas: flats52/55/57/60. Nenhum novo playtest do original ou varredura de outros mapas.
+### Evidências, cobertura e coordenadas
 
-| Referência estática de espécie | MAP1 inteiro | Dentro do retângulo atual | Encontros configurados | Lacuna identificada |
-| --- | ---: | ---: | ---: | --- |
-| Rato / flat52 |16 |3 |3 |13 fora |
-| Lobo / flat55 |13 |4 |4 |9 fora |
-| Esqueleto / flat57 |29 |8 |7 |21 fora; referência adicional **(76,22)** dentro do recorte, fora do grupo de7 da passagem, ainda a reconciliar com piso/posição e integrar |
-| Ghoul / flat60 |21 |6 |6 |15 fora |
+- Wiki local `Arena_Fang Lair (quest)…pdf` **p2**, descrição/planta Stonekeep; **p5, quinta imagem**, collage Stonekeep/Codex Scientia e legenda. As primeiras quatro imagens da p5 são Fang Lair e não foram confundidas com Stonekeep. Comparadas entrada ao norte, bacia/ilha a oeste, aposentos centrais e salas/ramificações do sul/leste. Texto sustenta um nível, pergaminho/ilha, chave de ferro opcional e prisão/aposento real. Prints de materiais anteriores continuam no levantamento visual, sem nova pesquisa artística.
+- Original instalado **39699021.MIF**, dimensões90×90; SHA256 `4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b`. MAP1/FLOR do primeiro bloco **redecodificados com o leitor existente e comparados célula a célula ao cache**. STKEEP1.INF e seu índice de texturas/flats já conferidos foram reutilizados; TRIG/LOCK relidos diretamente no MIF. Nenhuma nova observação DOS.
+- O MIF contém dois LEVL/INFO (`STKEEP1.INF`, `SKEEP2.INF`), mas **não autoriza inferir dois andares jogáveis**: a wiki descreve um nível, a planta confere com o primeiro90×90 e nele só foi localizada a transição UP(39,1), nenhuma DOWN pela textura declarada. O segundo bloco fica como registro não ligado confirmado, não uma expansão assumida ou prova de inexistência absoluta de acesso oculto.
+- **MIF original `(ox,y)`**, base0. **Vista da planta `(u,y)=(89−ox,y)`**, norte para cima. Amostra atual: u8–53/y0–32; **1518/8100 células do retângulo**, sem interpretar isso como porcentagem de área caminhável. MV atual: `x=3+3×(u−8)`, `y=3+3×yOriginal`, somente dentro desse recorte. Setores A/B/C são faixas Y0–29/30–59/60–89; colunas1/2/3 são u0–29/30–59/60–89. Seus nomes são organizacionais, não nomes canônicos de salas.
 
-São **79 referências declaradas dessas quatro espécies**, contra20 encontros atuais; não afirmar catálogo completo, condições de spawn ou79 inimigos observados em execução. O inventário completo seguinte deve cruzar MAP1/INF/condições, localizar cada posição e conferir outras referências antes de fechar a lista. Não criar encontros aleatórios, novas levas ou exigir matar todos. Quantidades e patrulhas adaptadas ficam identificadas; EXP/recuperação acumuladas vão ao M02-BAL, sem ajuste agora.
+![Levantamento90×90, com cobertura e encontros](evidencias/m02-stonekeep-cobertura/visao-geral.png)
 
-**Definitivo no sentido de aprovado/reutilizável:** direção dos materiais, exemplares aprovados, IDs/recibos/fonte e fluxo de coleta/entrega nas coberturas registradas. **Ainda provisório:** extensão/cartografia, passagens sem estados de porta na amostra, aparência do pergaminho/decoração/painéis ausentes, recompensas e balanceamento. Aprovações não transformam placeholders em arte final. O inventário de cobertura separará objetos apenas decorativos adiados dos componentes necessários à navegação.
+Índice operacional: [inventário integral e conexões](evidencias/m02-stonekeep-cobertura/inventario.json), [180 posições de encontros](evidencias/m02-stonekeep-cobertura/encontros.csv), [setores](evidencias/m02-stonekeep-cobertura/setores.csv). Só contornos e anotações derivados; nenhuma textura/imagem original distribuída. Reproduzir com `python tools/survey-stonekeep.py`, Pillow e as consultas ignoradas existentes em tmp/original-review e tmp/stonekeep-review. O script só escreve nesta pasta de evidências.
 
-Próximas unidades **M02-04C1–C3**, na ordem/dependências de BACKLOG_M02.md: inventário completo, geometria por setor, encontros/conexões por setor e integração. Não refazer amostras aprovadas nem produzir novos assets nesta revisão.
+### Matriz dos setores e conexões
 
+|Setor / vista (base0) |Área no recorte* |Portas |Água FLOR* |Encontros declarados / atuais |Conexões potenciais** |
+|---|---:|---:|---:|---|---|
+|A1 [0, 0, 29, 29] |660/900 |0 |514 |14/11 |A2, B1 |
+|A2 [30, 0, 59, 29] |720/900 |13 |36 |19/9 |A1, A3, B2 |
+|A3 [60, 0, 89, 29] |0/900 |5 |152 |19/0 |A2, B3 |
+|B1 [0, 30, 29, 59] |66/900 |4 |364 |10/0 |A1, B2, C1 |
+|B2 [30, 30, 59, 59] |72/900 |18 |76 |25/0 |A2, B1, B3, C2 |
+|B3 [60, 30, 89, 59] |0/900 |20 |117 |20/0 |A3, B2, C3 |
+|C1 [0, 60, 29, 89] |0/900 |6 |25 |19/0 |B1, C2 |
+|C2 [30, 60, 59, 89] |0/900 |4 |8 |32/0 |B2, C1, C3 |
+|C3 [60, 60, 89, 89] |0/900 |0 |283 |22/0 |B3, C2 |
 
+*“Área no recorte” não certifica todos os elementos implementados: o terreno base está adaptado, mas faltam encontros e as portas são passagens abertas. FLOR13 marca1575 células de água, inclusive sob geometria sólida/elevada; não significa1575 células automaticamente nadáveis. Fora do recorte a geometria está ausente, mesmo onde já existe material artístico reutilizável.
+
+São39 segmentos de contato entre setores estão listados no índice com eixo, linha, intervalo e piso/água; por exemplo A1↔A2 em u29/30,Y6 e12, A2↔A3 em u59/60,Y13–14,16–18,20–21,28–29. São conexões **potenciais do modelo2D** (piso/flats/portas), não uma prova de travessia das fechaduras/alturas no original. Células de elevação/diagonal/aresta não foram liberadas silenciosamente pelo modelo. Portas de cada setor têm coordenada, textura e LOCK quando presente no índice; validar lados acessíveis ao adaptar.
+
+A borda atual corta conexões documentadas: u53↔54 em Y12,16–19,21–32; Y32↔33 em u8–26,32–35,40–53. Preservar todas as continuações e não inventar teleporte/novo corredor. A1/B1 contêm bacia, A2 aposentos/entrada; B2 recebe o gatilho “Prisons” em vista59,42, C2 “Royal Bedchamber” em vista50,60. Esses pontos identificam mensagens, **não os limites canônicos completos desses ambientes**.
+
+### Encontros — lista estática completa do primeiro MAP1
+
+|Espécie / flat STKEEP1 |Total |Dentro do recorte |Configurados |Dependência para o restante |
+|---|---:|---:|---:|---|
+|rato /52 |16 |3 |3 |reuso |
+|goblin /53 |32 |6 |0 |reuso mapa/batalha |
+|homem-lagarto /54 |19 |0 |0 |batalha existente; caminhada própria ausente |
+|lobo /55 |13 |4 |4 |reuso |
+|orc /56 |22 |0 |0 |exemplar de batalha e exploração ausentes |
+|esqueleto /57 |29 |8 |7 |reuso; reconciliar também(76,22) |
+|ogro /58 |8 |0 |0 |exemplar de batalha e exploração ausentes |
+|aranha /59 |20 |0 |0 |exemplar de batalha e exploração ausentes |
+|ghoul /60 |21 |6 |6 |reuso |
+
+Total **180 posições declaradas /20 configuradas**, em nove espécies. Dentro do recorte existem27 referências: faltam **seis goblins** originais(37,21),(41,21),(38,23),(39,23),(40,23),(42,23) e o esqueleto abaixo. Os outros153 pontos estão fora. Quantidades são dados MAP1→flat→INF, não deduzidas da descrição genérica; não equivalem a180 encontros observados em uma partida DOS, nem incluem encontros aleatórios/respawn. Cada registro tem posição original/vista/setor, FLOR e, quando existente, ID persistente/MV atual. As180 referências estão em FLOR de piso seco; não foi necessário supor espécie nadadora. Novos IDs devem ser estáveis por referência, mantendo os20 anteriores; não gerar mais de uma leva ou converter espécie por conveniência.
+
+**Esqueleto(76,22) resolvido:** coordenada **MIF**, não MV nem vista. MAP1=`0x8039` → flat57 `SKELETON.DFA`; FLOR=`0x0600`, chão de lajes. Vista **(13,22)**, setorA1/ilha; centro atual **Map012(18,69)**, região4/piso na implementação. Não consta nos sete IDs da passagem e não é um osso decorativo (`SKEL01.IMG`/`SKEL03.IMG`, outros flats). A ausência é real no cadastro, não ambiguidade de espelhamento. Na macropropostaNW o mesmo centro será(42,69), ainda sem implementação. Preservar acesso ao pergaminho sem exigir matar todos.
+
+Reusar as cinco caminhadas/batalhas ratos/goblins/lobos/esqueletos/ghouls existentes. Homem-lagarto tem batalha existente mas falta folha de exploração no catálogo; orc, ogro e aranha carecem de exemplar mapa/batalha. Cada dependência será entrega própria, começando por um piloto; não criar arte ou novo sistema agora. Patrulha/raios e recompensas são adaptações ainda provisórias; impacto dos180 pontos é do M02-BAL, sem transferir números originais diretamente ao MV ou aprovar equilíbrio.
+
+### Portas, água, repouso e eventos
+
+| Elemento | Evidência / cobertura atual | Tratamento de planejamento |
+|---|---|---|
+|70 portas MAP1 tipoB |11 no recorte atual, **nenhuma com estado funcional próprio**: passagens abertas provisórias;59 fora | Restaurar cada vão/porta e seus lados, sem reproduzir textura por rotação imprópria. Estados e colisão por APIs existentes; sem gerar lote artístico |
+|12 LOCK |Originais(39,44)=2;(39,49)=3;(39,61)=3;(65,68)=1;(29,42)=2;(25,46)=1;(10,33)=2;(12,46)=2;(21,42)=2;(51,15)=1;(54,19)=1;(51,19)=1. Últimas3 no recorte | Valores brutos, não dificuldade/ID de chave presumidos. Wiki confirma chave abre uma dentre portas residenciais; a ligação exata não foi comprovada nesta consulta. Antes de configurar fechadas, garantir acesso/retorno sem novo sistema geral de arrombamento ou bloqueio irrecuperável |
+|Água / elevações |Água animada/natação já funcionais somente no trecho adaptado;676 células de elevação,27 diagonais e5 arestas no original | Manter margens, ilhas, circulação e altura visual separadas da colisão. Não tratar toda elevação como parede alta nem toda FLOR13 como água livre. Diagonal(59,5) original já está dentro do recorte e foi achatada como piso; rever a representação de canto no setor, sem gerar mobilidade nova. Travessia local já adaptada preservada |
+|Refúgios candidatos |**7 células0x1808**, mesmo padrão dos refúgios M01; todas com piso seco e ao menos um vizinho seco no modelo: originais(87,44),(82,51),(50,60),(19,65),(3,66),(31,70),(82,77) | Nenhum descanso registrado no Map012 atual. São candidatos, **não7 leitos canônicos confirmados**; usar regra de pontos definidos após conferir apoio/alcance por setor. Outros24 blocos0x1873 e1 bloco0x18e8 têm altura/espessura semelhantes, mas topos/laterais diferentes: não autorizar descanso por classificação de altura apenas. Todas as676 elevações estão indexadas |
+|Saída / chegada |UP original(39,1), vista50,1; interação atual um tile original para dentro em vista50,2/MV129,9; chegada50,4/MV129,15 | Preservar aproximação fora do trigger e ligação a Rihad; não criar descida só porque há outro INFO |
+|Pergaminho, obrigatório |Flat61 `PARCHFLT.IMG` original(72,23), vista17,23, atualMV30,72. Coleta/recuperação/recibo e entrega já funcionais | Manter `stonekeep.parchment`, item7 e recibo de entrega, sem novo sorteio/duplicação ou Golthog inventado. É o único item obrigatório de campanha nesse mapa |
+|Chave de ferro, opcional para MQ02 |Flat5 em original(40,30), vista49,30, MV projetado126,93; TRIG/TEXT8 `+2`, pisoFLOR5 | Está **dentro do retângulo**, mas não implementada; corrigir a leitura antiga de exclusão geográfica. Não torná-la requisito da coleta. Se necessária a portas da planta completa, especificar fonte/uso/recuperação em recorte próprio |
+|Textos ambientais |31 registros TRIG de texto:1 prisão,1 inundação,4 baú,6 escritórios,9 aviso sul,7 aviso norte,1 entrada,1 aposento real,1 chave;24 registros com text255/índice de som | Contexto/placas opcionais podem ser adiados; nomes não são novas quests. O efeito exato dos flags/sons não foi todo comprovado; não criar armadilhas apenas a partir de índice de som |
+|Fontes opcionais / decoração |Além da chave/pergaminho:22 referências de cadáver/equipamento/tesouro/baú sob flats marcados ITEM, e194 flats decorativos sem função comprovada | Loot opcional pode ser adiado, com área/posição preservadas; não inventar recompensa. Colunas, ossos, luzes, móveis e fontes não viram inimigos, cura, obstáculos ou gatilhos sem evidência. O rótulo decorativo não garante ausência de colisão; conferir flags/forma/contexto de colunas e móveis antes de escolher through. Classificação e posições no índice |
+
+### Organização técnica recomendada — proposta, não implementada
+
+Escala3/margem2 requereria **274×274 tiles** num mapa único. A ajuda **oficial instalada** do MV, `RPGMV/Help/page/01_07_03.html`, seção Map Size (também01_07.html), limita edição a256 por dimensão. Não reduzir toda a escala, apagar alas ou exceder esse contrato silenciosamente.
+
+Recomendo **quatro mapas nativos contíguos**, mantendo os nove setores acima só como unidades de levantamento/entrega:
+
+|Macro proposta / vista |Tamanho MV |Referências de inimigos |
+|---|---:|---:|
+|NW u0–59/Y0–59, contém a amostra inteira |184×184 |68 |
+|NE u60–89/Y0–59 |94×184 |39 |
+|SW u0–59/Y60–89 |184×94 |51 |
+|SE u60–89/Y60–89 |94×94 |22 |
+
+Centro local proposto: `x=3+3×(u−origemU)`, `y=3+3×(Y−origemY)`, origens0 ou60. IDs de mapas adicionais ainda não atribuídos. Fronteiras devem ser passagens bidirecionais que preservam cada faixa livre (índice de conexões), inclusive água, sem portais fictícios; não transformar transferências internas em saída do cenário/respawn. O jogador deve aparecer na célula correspondente, com direção, imersão e recursos preservados; prever soltura/fence contra transferência de retorno involuntária. Nenhuma travessia foi implementada agora.
+
+**Custo concreto antes de ampliar:** manter Map012 comoNW desloca os20 eventos/fonte/entrada atuais em **+24tilesX**, Y inalterado. Ajustar juntos geometria, configurações/geradores e estados nativos de posição de saves anteriores; IDs/recibos/derrotas não mudam. Novas áreas usam contratos existentes por mapId/quest, sem clonar plugins; requer extensão focal para distinguir transferência interna de saída real. Compatibilidade antiga desejável com custo limitado; apresentar migração aditiva de coordenadas ou quebra explícita para decisão, nunca apagar/mover saves pessoais ou mudar namespace. São dependências de organização, não uma refatoração geral.
+
+Renderização nativa Tilemap/ShaderTilemap pinta a janela visível (`js/rpg_core.js`); eventos ativos ainda têm atualização nativa. Maior área ativa184×184 com até68 referências evita carregar os180 eventos em um único mapa, mas **não comprova FPS/desempenho**. Teste focal de navegação/transferência e uma medição desktop serão feitos na implementação; não criar sistema de streaming/telemetria agora.
+
+### Pequenas entregas propostas e próximo setor
+
+1. Após **M02-03E1** (referência urbana, conforme ordem vigente), uma unidade **04C2.0** para organização das quatro macros, coordenadas/contratos internos e política de saves, antes de multiplicar o conteúdo. A recomendação de quatro mapas precisa ser confirmada antes da construção; não há decisão nova sobre quais mapas a campanha deve conter.
+2. **04C3.0**, fechar omissões no terreno já construído: os seis goblins deA2 e o esqueleto da ilhaA1, com assets existentes/IDs novos, sem refazer arte ou exigir todas as mortes. Pode ser dividido por setor se necessário; posições exatas no CSV. Não declarado executado.
+3. **Primeiro setor novo: A2-E**, faixa **u54–59/Y0–29** (MIF X30–35/Y0–29), continuação leste dos aposentos. Encosta à amostra em u53/54 com acessos em Y12,16–19,21–29; usar **Y16–19** como aproximação inicial reconhecível, sem apagar os demais. Inclui3 ratos originais(32,11),(30,14),(30,16) e1 goblin(35,23), todos com assets existentes. Geometria/conexões primeiro (**04C2.1**), encontros/estado depois (**04C3.1**); nenhuma nova espécie ou arte é pré-requisito dessa faixa.
+4. Fechar restante deA1/A2/B1/B2 por setores contíguos; depois A3/B3/C1/C2/C3 e conexões entre macros. Antes de um setor com espécie ausente, entregar o exemplar necessário isoladamente. Portas/chave/apoios recebem recortes funcionais próprios, sem polimento REF17. Concluir com05I e M02-BAL; expansão de Fang Lair continua adiada.
+
+**Decisão necessária antes da geometria:** confirmar a divisão proposta em quatro mapas e tratar a continuidade das posições antigas na mesma unidade técnica. **Dúvidas de fonte, não pedidos de escopo:** vínculo exato da chave/fechaduras, transitabilidade de elevações/diagonais e qualificação de refúgios diferentes do padrãoM01; investigar somente no setor consumidor antes de torná-los bloqueios. Não falta aprovação artística para reaproveitar os exemplares atuais; não pedir novamente teste de combate já válido.
+
+**Verificações desta entrega:** hash/tamanho do MIF, decodificação nova=cache,8100 células particionadas uma vez, nove espécies/180 posições únicas,20 IDs atuais preservados,70 portas/12LOCK, fontes/índices, coordenada do esqueleto e vizinhos secos dos candidatos. Visão geral inspecionada e saídas reconstruíveis conferidas. Sem testes de gameplay/editor/mobile ou geração por IA. Script e evidências são documentação/ferramenta de consulta; nenhum gerador do jogo foi executado.
 
 **Estado atual dos encontros:** sete esqueletos da passagem ([registro](SKELETON_M02.md)) e **seis ghouls da ilha**, conforme [posições/fontes/evidências](GHOUL_M02.md). Exemplar99203b2 testado e funcional segundo o responsável; animação8ea06c9 aprovada. Sem inferir aprovação de balanceamento/recompensas/persistência. Grupo usa posições declaradas, patrulha adaptada, IDs independentes e fonte sem kill-all; layout/materiais preservados. [Aposentos delimitados](STONEKEEP_APOSENTOS_M02_05.md): três ratos incluídos, quatro lobos em posições confirmadas: animação/combate aaea451 aprovados; patrulha d27eb5f aprovada e [quatro lobos confirmados](LOBO_M02.md) integrados, sem nova arte. Recompensas/equilíbrio provisórios e teste manual do conjunto adiado, não aprovado por inferência. Entrega na corte4357999 confirmada funcional pelo responsável, sem ampliar o relato. Referências a guardiões ausentes/piloto único abaixo são históricas.
 

@@ -2,6 +2,8 @@
 
 **Revisão de escopo02/11/2026:** mapas completos e todos os encontros aplicáveis passam a ser requisito, conforme MARCOS_DO_PROJETO.md; recortes abaixo descrevem as amostras históricas, não a entrega cartográfica final. Estados/recibos/viagem condensada preservados. Prioridade: auditar e concluir Stonekeep/Rihad conforme BACKLOG_M02.md, antes de expandir Fang Lair. Exceção de ordem exige dependência concreta documentada; não há uma identificada agora.
 
+**Levantamento posterior M02-04C1:** [mapa90×90 e índice de cobertura](STONEKEEP_M02_04.md#m02-04c1--levantamento-completo02112026), sem mudar estados/viagens:180 referências estáticas/9 espécies,70 portas e refúgios candidatos; proposta de4 mapas respeitando limite do MV, sem implementar. O esqueleto(76,22) é coordenada MIF e falta no Map012(18,69). Rihad/Fang Lair preservadas; não tratar a amostra como mapa completo.
+
 **Implementação disponível af17b4b:** amostra das celas/Map013, MQ02 até80 sem conclusão; aranhas sinalizadas sem combate, materiais provisórios. Stonekeep tem3 ratos/7 esqueletos/6 ghouls/4 lobos no recorte e entrega funcional; isso não comprova cobertura total. Demais registros datados a seguir são históricos quando descrevem conteúdo antes ausente.
 
 **Atualização de cobertura:** entrega4357999 testada pelo responsável e funcional, sem novos casos inferidos. [Delimitação dos aposentos](STONEKEEP_APOSENTOS_M02_05.md):3 ratos confirmados incluídos e4 lobos confirmados ainda sem exemplar; layout, fontes/recibos e etapa60 preservados.
