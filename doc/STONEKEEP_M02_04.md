@@ -2,25 +2,42 @@
 
 ## Matriz operacional de assets — nove espécies
 
-**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 continua **49/180encontros e32/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **58/180encontros e32/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
 
 | Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
 |---|---|---|---|---|
 |Rato /52 /16 |Disponível R02 |Disponível R02 |Combate R02 aprovado (associação a61977b); exploração e entrega M01 preservadas, sem nova aprovação específica inferida |Reutilizar; nenhuma geração necessária agora |
 |Goblin /53 /32 |Disponível R03 |Disponível R02 |Legado da entrega M01; não inventar aprovação artística individual nova a partir de testes gerais |Reutilizar; manter ressalvas/evidências M01 |
-|Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; nenhum dos19distribuído |
+|Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; três B2 distribuídos,16restantes |
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
-|Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar os assets; seis B2 continuam ausentes |
+|Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; seis B2 distribuídos,16restantes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
 |Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; oito posições ainda ausentes |
-|Aranha /59 /20 |Disponível V01 |Disponível V01 |Spider/SPIDER@.CFA confirmado; **aguarda avaliação** dos dois conjuntos |[Um exemplar RAM](ARANHA_M02.md), sem vinte encontros ou reuso em Fang Lair |
+|Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar quando chegar ao setor; vinte encontros ainda ausentes |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** orc, homem-lagarto e Minotauro com combate/patrulha aprovados; avaliar o exemplar completo de **aranha**. As nove espécies passam a ter os dois conjuntos disponíveis; aranha ainda sem aprovação, demais coberturas conforme linhas acima. Não restam conjuntos inteiramente ausentes nesta matriz. Aranha inclui nove A3; Minotauro atende dois B1 contíguos a B2. Depois retomar distribuição de encontros, portas e eventos por blocos; assets disponíveis não concluem áreas. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 agora completos em encontros/portas, sem concluir todos os sistemas/setores. Próximo bloco contíguo: B1,10encontros/4portas, começando pela conexão com B2 e configuração de campanha dos dois Minotauros. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
 
-## Entrega atual — aranha, combate e caminhada RAM
+## Entrega atual — conclusão de encontros/portas de A2/B2
 
-[Um exemplar integrado](ARANHA_M02.md): Spider confirmada por flat59/ITEM40 → índice8 do executável, SPIDER@.CFA. Somente laboratório, sem distribuição ou alteração de campanha/Fang Lair. Cobertura49/180encontros e32/70portas inalterada. Aguardar avaliação antes de ampliar.
+Sobre f5ebdba, [configuração/fonte](mapas/STONEKEEP_A2_B2_CONCLUSAO_M02.json) e `inspect-stonekeep-a2-b2-completion.py`: conferidos MAP1/INF e inventário completo; faltavam somente nove referências B2. **A2=19/19encontros+13/13portas; B2=25/25+18/18. Total58/180encontros,32/70portas**, restam122/38 nos demais setores. Não havia outra porta faltante neste bloco; as31portas e conexões necessárias já estavam configuradas. Nenhum tile, porta, altura ou passagem foi alterado. Isso não conclui o mapa, os eventos futuros, loot/descanso ou a avaliação manual integrada.
+
+|Espécie / MIF0-based → Map015 |IDs novos / eventos |
+|---|---|
+|Orcs (48,37)→(126,114);(49,37)→(123,114);(50,37)→(120,114);(58,37)→(96,114);(58,38)→(96,117);(43,46)→(141,141) |`stonekeep.b2.enemy.mifXX.YY`;340–344,346 |
+|Homens-lagarto (34,46)→(168,141);(44,46)→(138,141);(34,47)→(168,144) |mesmo padrão;345,347,348 |
+
+Transformação preservada: vista=(89−X,Y), Map015=(3+3vistaX,3+3Y). Fontes declaradas confirmadas, sem nova observação DOS. Raio2/intervalo90/piso4, contatos individuais e condições comuns de respawn mantidos; não é grupo ou objetivo de matar todos. Quarenta e nove encontros/339eventos anteriores preservados. Fonte/recibos/pergaminho e campanha Map012 intactos.
+
+Orc mantém parâmetros aprovados/provisórios do piloto. **EXP40** é adaptação mínima à escala atual (goblin25, homem-lagarto50), não a fórmula DOS; ouro **25%/4–40** confirmado no Monsters PDF16. Somente essa categoria habilitada; equipamentos/mágicos ficam adiados, não negados como conteúdo original. Seis orcs=240EXP; três homens-lagarto reutilizam50EXP/tabela3=150EXP; **390EXP opcionais acumulados**, avaliar no M02-BAL. Inspeções próprias de batalha/patrulha de orc continuam0EXP/tabela vazia por contexto/instância. Sem revisão geral de loot/balanceamento.
+
+**8grupos focais**, Chrome156/perfil descartável/RAM: abertura, reconstrução idempotente, geometria/32portas e PNGs aprovados protegidos; snapshot sintético anterior recebe nove eventos/estados sem recompensa/cura; cinco fechaduras preservam condição de força; travessia contínua A2→norte/oeste/leste B2→bolsa seca→A2 sem through/transfers; nove patrulhas e contatos reais por teclado, vitórias controladas/retorno, nove derrotas/recibos e390EXP, concessão repetida inócua; RAM/retorno de área sem respawn; laboratórios do orc continuam vazios. [Resultado](evidencias/m02-stonekeep-a2-b2-conclusao/resultado.json), [visão geral](evidencias/m02-stonekeep-a2-b2-conclusao/visao-geral.png). Reutilizadas evidências de animação e portas inalteradas; sem campanha inteira ou novo teste manual.
+
+**Acesso:** http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM) → Esc → Stonekeep: pontos da base integral. Novos pontos: **B2 · orcs norte / orcs oeste / orc e homem-lagarto / homens-lagarto leste**. Circular, contato individual, vitória, Guardar/Carregar teste em RAM; slots pessoais bloqueados. Avaliação manual continua adiada, sem aprovação integral inferida. Pendência aquática A1 e Forçar a porta ainda aguardam avaliação original/integrada conforme registros existentes.
+
+## Entrega anterior — aranha, combate e caminhada RAM
+
+[Um exemplar integrado](ARANHA_M02.md): Spider confirmada por flat59/ITEM40 → índice8 do executável, SPIDER@.CFA. Somente laboratório, sem distribuição ou alteração de campanha/Fang Lair nessa entrega. Aprovação posterior com ressalva registrada na matriz; ativa preservada.
 
 ## Entrega anterior — Minotauro, combate e caminhada RAM
 
@@ -47,6 +64,8 @@ O responsável adiou os testes manuais detalhados de Stonekeep para uma versão 
 **Investigação futura: caminhos pela água sob paredes no original.** Pendência de fidelidade/conectividade da cobertura completa, vinculada à revisão de água/alturas abaixo. Verificar na wiki local e, quando viável, no jogo instalado quais posições/rotas permitem essa travessia e suas condições; separar observação original, interpretação de MAP1/FLOR e adaptação à grade. A investigação local de A1 oeste está registrada abaixo; ainda não há confirmação da folga nessas quatro células ou solução geral aprovada. Não tornar paredes/água globalmente atravessáveis, inventar túnel, alterar colisão/oclusão ou custo de Vigor nesta entrega. Investigar no setor efetivamente afetado antes de definir sua colisão; a consulta A1 oeste abaixo não resolve a folga dos quatro blocos.
 
 ## Acessos A2/B2 — fechaduras e ligação seca
+
+**Registro histórico de acesso/cobertura49, mantido como evidência. Totais/dependências vigentes estão na conclusão A2/B2 acima.**
 
 **Base9031298 preservada.** Responsável fez teste rápido e considerou a construção satisfatória até o momento: **avaliação preliminar**, sem aprovação integral de colisões/encontros/persistência ou ambiente inferido. Prioridade autorizada: **encontros e portas primeiro; revisão de loot/tesouros e pontos de descanso depois**. Recompensas permanecem provisórias e inalteradas. Campanha continua Map012, amostra integral no Map015/RAM.
 
@@ -93,7 +112,7 @@ Renderização **WebGL padrão e Canvas** conferidas separadamente: diferença d
 
 **Acesso observável, sem exigência de teste manual agora:** http://127.0.0.1:8774/ → **Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM)** → Esc → **Stonekeep: pontos da base integral**. Pontos **B2 · porta LOCK2 (153,132)**, **B2 · porta LOCK3 (153,147)**, **B2 · corredor sob estrutura (102,123)** e **B2 · bolsa sudoeste (105,168)**. Interagir com porta → Forçar a porta ou Voltar; aguardar barra breve, atravessar e fechar se desocupada. Guardar/Carregar teste no menu usa RAM; voltar ao título encerra a sessão técnica. Origem/namespace/saves pessoais preservados; servidor canônico existente reutilizado.
 
-**Próxima dependência:** piloto isolado de orc para as6referências B2; caminhada do homem-lagarto para3referências posteriores. Não substituir espécie ou gerar grupo antes da aprovação do exemplar. Encontros/portas têm prioridade; loot/tesouros/descanso depois. Pendências visuais opcionais não bloqueiam por associação.
+**Dependência daquela entrega, agora superada:** piloto de orc para6referências B2 e caminhada do homem-lagarto para3referências. Não substituir espécie ou gerar grupo antes da aprovação do exemplar. Encontros/portas têm prioridade; loot/tesouros/descanso depois. Pendências visuais opcionais não bloqueiam por associação.
 
 ## Bloco A2→B2 — ampliação temporária autorizada
 

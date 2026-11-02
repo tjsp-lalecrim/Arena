@@ -2,34 +2,34 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
-## Recorte atual — preparar assets das espécies de Stonekeep
+## Recorte atual — retomar encontros e portas de Stonekeep
 
 Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada): por dungeon, uma espécie por entrega, combate+caminhada juntos quando ambos faltarem e avaliação antes da próxima. Reuso aprovado após correspondência nas fontes; não bestiário geral/variantes. **Depois** retomar distribuição dos encontros, portas e eventos. Loot/tesouros/descanso continuam posteriores.
 
-**Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados e seis B2 não distribuídos.
+**Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados; seis B2 agora integrados, parâmetros provisórios.
 
-**Entrega atual — aranha:** [combate e patrulha RAM](ARANHA_M02.md), flat59/ITEM40 → Spider/SPIDER@.CFA confirmados. Um exemplar, nenhum dos20encontros distribuído e nenhum reuso em Fang Lair. Minotauro569e382: combate e patrulha explicitamente aprovados, nomenclatura corrigida/assets preservados, sem equilíbrio/recompensas/distribuição aprovados. As nove espécies têm os dois conjuntos disponíveis; aranha aguarda avaliação. Depois retornar ao bloco de encontros/portas (seis orcs e três homens-lagarto de B2), sem nova produção artística automática. Cobertura49/180+32/70; loot/descanso posteriores e Forçar a porta pendente de avaliação integrada.
+**Entrega atual — A2/B2:** [nove encontros restantes integrados](STONEKEEP_M02_04.md#entrega-atual--conclusão-de-encontrosportas-de-a2b2), seis orcs e três homens-lagarto. A2=19/19+13/13portas; B2=25/25+18/18. Total58/180encontros/32/70portas, nenhuma porta/tile novo necessário;49IDs anteriores preservados. Orc: EXP40 provisória/ouro25%4–40; laboratórios próprios continuam0EXP/loot.8grupos focais passaram, manuais adiados; campanha Map012 preservada. Aranha f5ebdba aprovada com ressalva: primeira geração de batalha preferida; [mestres A/B](arte/spider-v01/comparacao-futura.json) preservados, sem trocar ativa. Próximo bloco: conexão B2→B1 e seus10encontros/4portas, em recorte próprio. Loot/descanso depois; pendências aquáticas A1/Forçar a porta mantidas.
 
-**Próxima dependência:** avaliação do exemplar de aranha; depois retomar encontros/portas conforme matriz, sem antecipar loot/descanso ou arte opcional.
+**Próxima dependência:** B1 contíguo a B2; conferir acesso/4portas/10referências e configurar recompensas mínimas do Minotauro antes da distribuição, sem expandir agora.
 
 ## Histórico42b857f — piloto de batalha do orc
 
 Sobre7ec5051, [piloto V01](ORC_M02.md): Enemy7/Troop8,24desenhos, somente batalha RAM no hub. Cinco grupos focais passaram; atributos provisórios e recompensas técnicas0, sem configuração de campanha. **Os seis orcs de B2 continuam ausentes**; caminhada e um encontro piloto dependem da avaliação visual antes da distribuição. Contagem49/180encontros/32/70portas inalterada. Não presumir aprovação artística, de balanceamento ou de persistência de encontros ainda inexistentes.
 
-**Forçar a porta determinístico e sem consumo** é adaptação ainda pendente de avaliação do responsável no próximo teste integrado. Não reabrir o restante da dungeon para avaliação isolada agora. Manter encontros/portas como prioridade, loot/tesouros e descanso depois; três caminhadas de homem-lagarto também continuam dependência. Acesso: Testes / Debug → Combate → Stonekeep · orc (RAM). Próximo recorte, somente após feedback do exemplar: caminhada direcional e um encontro piloto de orc, sem lote automático.
+**Forçar a porta determinístico e sem consumo** é adaptação ainda pendente de avaliação do responsável no próximo teste integrado. Não reabrir o restante da dungeon para avaliação isolada agora. Manter encontros/portas como prioridade, loot/tesouros e descanso depois; a dependência das três caminhadas foi resolvida e sua distribuição consta na entrega atual. Acesso: Testes / Debug → Combate → Stonekeep · orc (RAM). Próximo recorte, somente após feedback do exemplar: caminhada direcional e um encontro piloto de orc, sem lote automático.
 
-## Base preservada — acessos A2/B2 resolvidos no Map015
+## Cobertura operacional — encontros e portas A2/B2 no Map015
 
-Base9031298; fechaduras comuns em **54a1374**, seguidas da ligação seca e bolsa sudoeste na mesma feature. **49/180encontros e32/70portas**, com **131encontros/38portas restantes**. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
+Base9031298 e fechaduras/ligação seca preservadas; conclusão posterior dos nove encontros após f5ebdba. **58/180encontros e32/70portas**, com **122encontros/38portas restantes**. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
 
 | Área | Cobertura | Pendência funcional |
 |---|---|---|
 |A2 |19/19encontros;13/13portas |Revisão geométrica/detalhes e integração ainda parciais; contagem não conclui setor |
-|B2 |16/25encontros;18/18portas |6orcs sem piloto e3caminhadas de homem-lagarto; demais revisões da geometria conforme levantamento |
+|B2 |25/25encontros;18/18portas |Avaliação integrada/itens de outros sistemas ainda pendentes; nenhum encontro/porta faltante neste bloco |
 
 Cinco LOCK1/2/3 são fechaduras comuns, não IDs de chaves: **Forçar a porta / Voltar**, universal e determinístico,45atualizações×LOCK provisórias, sem custos/prêmios ou chave inventada. MIF39,44 deixa de ser abertura provisória. Bolsa sudoeste agora conectada pelas nove células **secas suspensas** MIF56,41..49, com piso e cobertura separados, além de4portas/2goblins. Fonte geométrica e tabelas do executável sustentam folga; não houve observação DOS nova. A1 aquática permanece incerta e intocada. Nenhum loot, descanso, atributo, motor ou asset alterado.
 
-**Próximo recorte necessário:** piloto isolado de **orc**, dependência de6referências B2, começando por exemplar de batalha antes de expansão;3homens-lagarto dependem de caminhada (batalha existente). Manter ordem autorizada: **encontros e portas, depois revisão de loots/tesouros e pontos de descanso**. Não iniciar arte por associação; aprovação do exemplar precede lote. Após Stonekeep completa, levantar Rihad integral antes de definir técnica. Campanha continua Map012; hub/base integral RAM no Map015. Qualidade e ilustrações continuam futuras.
+**Próximo recorte necessário:** conexão contígua B2→B1 e seus10encontros/4portas, com configuração mínima do Minotauro. Manter ordem autorizada: **encontros e portas, depois revisão de loots/tesouros e pontos de descanso**. Não iniciar arte por associação; aprovação do exemplar precede lote. Após Stonekeep completa, levantar Rihad integral antes de definir técnica. Campanha continua Map012; hub/base integral RAM no Map015. Qualidade e ilustrações continuam futuras.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 

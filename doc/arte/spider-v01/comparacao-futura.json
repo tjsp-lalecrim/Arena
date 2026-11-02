@@ -1,0 +1,34 @@
+{
+  "feedback": "Owner approved battle and patrol with reservation, availablef5ebdba; first battle generation considered visually better. No explicit new environment/balance/persistence approval.",
+  "status": "Future quality review, non-blocking; do not regenerate or switch active asset now",
+  "firstGeneration": {
+    "master": "art/masters/stonekeep-spider-v01/sheet-v01.png",
+    "sha256": "986ba013c011e79adcadc544b618e03e75b871664580a6bbc40da3cb1661253b",
+    "prompt": "doc/arte/spider-v01/prompt.json",
+    "references": [
+      "tmp/spider-review/original-identity.png",
+      "tmp/spider-review/SPIDER3.CFA.png",
+      "img/enemies/Arena_Combat_minotaur_v01.png"
+    ],
+    "knownTechnicalReservation": "Prior review found only six traceable legs in some lateral poses; visual preference does not approve this defect."
+  },
+  "activeGeneration": {
+    "master": "art/masters/stonekeep-spider-v01/sheet-v04-alpha.png",
+    "sha256": "9572a520965dc8692d7cceb8ba00a55d8dc10f2c5f40216e89afd720a6f9fe25",
+    "runtime": "img/enemies/Arena_Combat_spider_v01.png",
+    "runtimeSHA256": "8146a4cdec7b81118cc8d1a671d6ee3b16209d1c0989f703888a201982ddae8c",
+    "prompts": [
+      "doc/arte/spider-v01/corrections.json",
+      "doc/arte/spider-v01/alpha-prompt.json"
+    ],
+    "references": [
+      "art/masters/stonekeep-spider-walk-v01/sheet-v01.png",
+      "tmp/spider-review/original-identity.png"
+    ]
+  },
+  "intermediatesPreserved": [
+    "art/masters/stonekeep-spider-v01/sheet-v02-legs.png",
+    "art/masters/stonekeep-spider-v01/sheet-v03-eight-legs.png"
+  ],
+  "futureAcceptance": "Compare first lateral composition/finish against current eight-leg continuity, animation, alpha and native scale. One sample in a separately authorized task; no automatic revert or batch."
+}

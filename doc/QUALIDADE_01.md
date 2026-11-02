@@ -35,3 +35,5 @@ Manutenção focal entra somente quando sustentada por falha, duplicação ou cu
 ## Fora de escopo
 
 Reescrita geral, troca de motor, catálogo completo, produção de todas as variantes, revisão geral de fórmulas/raças/progressão, lojas/crafting/novos sistemas, telemetria, limpeza indiscriminada e promessa de eliminar todas as pendências. Avaliação de balanceamento permanece por marco (M02-BAL etc.); mobile/APK no MOBILE-01. Estudos de ataques surpresa/respawn parcial/custos aquáticos não viram funcionalidades por este plano. Nenhuma mudança na tag/entrega m01 ou no Pages.
+
+**Aranha/Stonekeep — revisão futura não bloqueante:** combate e patrulha f5ebdba aprovados com ressalva; responsável prefere visualmente a primeira geração de batalha. [Registro e critérios únicos](ARANHA_M02.md), [mestres/referências A/B](arte/spider-v01/comparacao-futura.json). Preservar versão ativa e comparar antes de qualquer amostra autorizada; não é bloqueio de encontros/portas.

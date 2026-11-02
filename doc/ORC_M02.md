@@ -1,3 +1,5 @@
+**Atualização posterior — integração A2/B2:** seis encontros agora no Map015, cobertura58/180+32/70, mantendo a campanha normal Map012. EXP40 provisória e ouro25%/4–40 (wiki local p16) explicitamente separados das inspeções próprias0EXP/loot; demais categorias adiadas. Parâmetros/arte aprovados intactos. [Fonte operacional vigente](STONEKEEP_M02_04.md#entrega-atual--conclusão-de-encontrosportas-de-a2b2). O texto abaixo documenta a entrega original do piloto.
+
 # Stonekeep — orc: caminhada e inspeção RAM V01
 
 ## Aprovação recebida e cobertura atual
