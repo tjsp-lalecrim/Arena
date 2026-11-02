@@ -49,5 +49,6 @@ var $plugins =
 {"name":"Arena_Skeleton","status":true,"description":"v0.1.0 Piloto de batalha do esqueleto","parameters":{}},
 {"name":"Arena_DebugHub","status":true,"description":"v0.1.0 Hub de acessos técnicos e título compacto","parameters":{}},
 {"name":"Arena_CourtDelivery","status":true,"description":"v0.1.0 Entrega do pergaminho e destino conhecido","parameters":{}},
-{"name":"Arena_Ghoul","status":true,"description":"v0.1.0 Piloto de batalha RAM do ghoul","parameters":{}}
+{"name":"Arena_Ghoul","status":true,"description":"v0.1.0 Piloto de batalha RAM do ghoul","parameters":{}},
+{"name":"Arena_Wolf","status":true,"description":"v0.1.0 Piloto de batalha RAM do lobo","parameters":{}}
 ];

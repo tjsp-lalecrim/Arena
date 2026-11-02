@@ -1,0 +1,200 @@
+{
+  "base": "2644185",
+  "browser": "156.0.8078.76",
+  "engine": "MV1.6.1",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Clean native boot and Debug > Combat route; one ordinary Wolf25HP, deterministic full resource fixture, normal slots blocked",
+    "Five authored idle drawings and six each attack/hurt/defeat, native impact timing and damage; guard/attack/heavy cost exactly once, no disease/bleeding/group behaviour or new resistance",
+    "Victory returns safely without repeat; one empty reward receipt, EXP/items/gold/storage unchanged",
+    "Separate fresh magic action consumes6MP once and invokes damage once; any surviving target ended by controlled victory, no campaign changes",
+    "Reopening same hub entry resets pilot for repeat; native defeat/game over from1HP fixture"
+  ],
+  "initial": {
+    "mp": 50,
+    "vigor": 100,
+    "exp": 50,
+    "gold": 0,
+    "items": "{\"2\":1,\"3\":1,\"4\":1}",
+    "storage": "{}"
+  },
+  "result": {
+    "trace": {
+      "frames": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "strike": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "defeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "uses": [
+        2,
+        1,
+        6
+      ],
+      "damage": [
+        {
+          "actor": true,
+          "skill": 1,
+          "value": 6
+        },
+        {
+          "actor": true,
+          "skill": 1,
+          "value": 6
+        },
+        {
+          "actor": false,
+          "skill": 1,
+          "value": 21
+        },
+        {
+          "actor": true,
+          "skill": 1,
+          "value": 12
+        },
+        {
+          "actor": false,
+          "skill": 6,
+          "value": 34
+        }
+      ],
+      "impacts": [
+        {
+          "key": "strike",
+          "index": 3,
+          "tick": 21,
+          "total": 40,
+          "done": false,
+          "impactTick": 21,
+          "released": false,
+          "weaponId": null
+        },
+        {
+          "key": "strike",
+          "index": 3,
+          "tick": 21,
+          "total": 40,
+          "done": false,
+          "impactTick": 21,
+          "released": false,
+          "weaponId": null
+        },
+        {
+          "key": "strike",
+          "index": 3,
+          "tick": 21,
+          "total": 40,
+          "done": false,
+          "impactTick": 21,
+          "released": false,
+          "weaponId": null
+        }
+      ]
+    },
+    "mp": 50,
+    "vigor": 88,
+    "exp": 50,
+    "gold": 0,
+    "items": "{\"2\":1,\"3\":1,\"4\":1}",
+    "storage": "{}",
+    "position": [
+      12,
+      80,
+      39
+    ],
+    "receipts": 1
+  },
+  "magic": {
+    "frames": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "strike": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hurt": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "uses": [
+      10
+    ],
+    "damage": [
+      {
+        "actor": true,
+        "skill": 1,
+        "value": 10
+      },
+      {
+        "actor": false,
+        "skill": 10,
+        "value": 21
+      }
+    ],
+    "impacts": [
+      {
+        "key": "strike",
+        "index": 3,
+        "tick": 21,
+        "total": 40,
+        "done": false,
+        "impactTick": 21,
+        "released": false,
+        "weaponId": null
+      }
+    ]
+  },
+  "errors": [],
+  "missing": [],
+  "recording": "Native canvas30fps, normal engine time; RNG .5 only in automated battle, no time/stat acceleration (except separate defeat fixture1HP)",
+  "pending": [
+    "Owner visual evaluation; manual functional tests deferred by authorization, no implied approval",
+    "No walking/map/four apartment positions",
+    "Campaign EXP/loot not configured; disease/bleeding/group systems not introduced",
+    "No new MV editor/mobile test"
+  ]
+}

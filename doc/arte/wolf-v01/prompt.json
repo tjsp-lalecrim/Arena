@@ -1,0 +1,33 @@
+{
+  "version": "stonekeep-wolf-v01",
+  "tool": "built-in image_gen",
+  "useCase": "stylized-concept",
+  "prompt": "Create ONE production sprite sheet for a SINGLE ordinary Wolf from The Elder Scrolls: Arena (1994), reinterpreted in the approved Arena project's dark fantasy painterly style. This is a battle animation pilot only, not a walking sheet. Use reference1 WOLF03.CFA contact sheet as primary identity/silhouette: low quadruped, muscular long torso, thick dark charcoal-grey fur and neck ruff, raised shoulder mass, sloped hindquarters, bushy downward tail, large wedge-shaped canine head with pale grey muzzle/cheeks, black nose, small pointed ears, red eyes and visible teeth. Reference2 WOLF01.CFA first frame anchors face colours and menacing proportions; don't turn this into a white snow wolf, pet dog, werewolf, lion, giant warg or generic fantasy beast. Reference3 approved ghoul crop is ONLY brushwork, lighting, dark fantasy finish and clear scale presentation, NOT anatomy, colour or equipment.\nOutput a strictly organized 6 columns by 4 rows atlas (24 separate full-body drawings) on REAL TRANSPARENT ALPHA, ideally 1536x1024. No painted background, checkerboard, scene, labels, numbers, frames, grid lines, floor, ground shadows, gore or other objects. Exactly one same wolf per cell, always SIDE VIEW facing RIGHT in the source; runtime will mirror enemy once for its battle side. Each invisible cell has generous transparent padding and consistent ground line. Entire nose, tail, ears and all paws fully visible. Do not draw between cells. Identical anatomy, fur markings, head size, body length, density and lighting throughout. Head, neck, torso and action point together; quadrupedal anatomy with coherent near/far legs, no extra legs. Painted sharp readable forms, not pixel art or glossy 3D. Consistent neutral illumination, detailed enough but silhouette must work when reduced to about 140px long and 60px high.\nRows read left to right as real animation sequences, 6 unique drawings each:\nRow1 IDLE LOOP: 1 alert neutral four grounded paws, 2 chest inhale/head slightly rising, 3 fullest breath with small shoulder lift, 4 exhale lower neck, 5 subtle weight shift and ear/tail articulation, 6 settle back to same stance as1. Subtle real body articulation, no rescaled clones or sliding feet.\nRow2 BITE ATTACK: 1 low preparation hind legs compress, 2 head draws back and jaw opens, 3 forequarters extend forward into a short low lunge, 4 unmistakable bite impact with muzzle extended and jaws closing, 5 recoil/retract head and regain four-paw support, 6 return to row1 neutral. Same body length/scale, clear grounded paw anchors in preparation and return; use articulated leg joint movement during lunge rather than lengthening the body. No projectile or magical effect.\nRow3 HURT: 1 brace, 2 head/flank recoil backward, 3 strongest shoulder flinch and bent legs, 4 regain balance, 5 rise to support, 6 return neutral. Real distinct poses and readable recoil, not just opacity or an overlaid flash.\nRow4 DEFEAT ONCE: 1 stagger low, 2 forelegs buckle, 3 chest sinks and hind legs fold, 4 roll/sink onto one side without changing orientation, 5 settle limp on ground with head down, 6 final still corpse lying on its side. Final two drawings may be subtle settling but must not sit or appear alert. No blood, severed limbs or disappearing tail. Preserve the fixed support line while body collapses; never float corpse at former standing head height.\nAll animations are of the one ordinary Arena wolf and only these four actions. Do not add directional walking, variants, clothes, accessories or scenery.",
+  "references": [
+    {
+      "file": "tmp/wolf-review/WOLF03.CFA.png",
+      "role": "identity and silhouette; decoded ordinary wolf contact, not Snow Wolf",
+      "sha256": "a83a0c52aa5d1976aa5c9ca46911ec8e05b65eb868d10c60ec2646ac922c5f9a"
+    },
+    {
+      "file": "tmp/wolf-review/WOLF01.CFA-frame0.png",
+      "role": "face and colour",
+      "sha256": "1232a92024202f82af210ded81df9fd43a42e78a27516a58b9219e91750de530"
+    },
+    {
+      "file": "tmp/wolf-review/approved-style-ghoul.png",
+      "role": "approved finish only; crop [0,0,256,256] from art/masters/stonekeep-ghoul-v01/sheet-v01.png",
+      "sha256": "3a5e4cdcb99c75b77c8c0937794e83f3e49220e40a2b85f4fdc4e1dd36feb953"
+    }
+  ],
+  "output": "art/masters/stonekeep-wolf-v01/sheet-v01.png",
+  "approval": "pending owner visual evaluation; manual functional tests explicitly deferred, advance authorized only",
+  "coverage": "one battle wolf; idle5 usable authored drawings, strike6, hurt6, defeat6; no walking or placements",
+  "exclusions": [
+    {
+      "sourceIndex": 5,
+      "reason": "last idle drawing touches source right edge and clips muzzle; preserved in master but excluded from runtime, not repaired or hidden as fallback"
+    }
+  ],
+  "masterSha256": "269f2d3564b8434c125758aa34b06c63cef40ac188049a79d3ae5db37e5f92cf"
+}

@@ -21,6 +21,7 @@ function build(){
  require('./build-stonekeep-skeleton.cjs')();
  require('./build-stonekeep-ghoul.cjs')();
  require('./build-stonekeep-apartments.cjs')();
+ require('./build-stonekeep-wolf.cjs')();
  console.log('Stonekeep recomposta; sete esqueletos, seis ghouls e três ratos; lobos pendentes.');
 }
 module.exports=build;if(require.main===module)build();

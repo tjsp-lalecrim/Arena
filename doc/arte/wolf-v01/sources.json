@@ -1,0 +1,39 @@
+{
+  "original": [
+    {
+      "file": "WOLF01.CFA",
+      "width": 61,
+      "height": 92,
+      "frames": 12,
+      "sha256": "e844ce48e0e445c6b2e58878cce9d4df69281f17c9dfee03e2a398ddc20a95b8",
+      "palette": "PAL.COL and own CFA lookup at76",
+      "decoded": "Existing RLE/MSB bitpacking; no DOS playtest"
+    },
+    {
+      "file": "WOLF03.CFA",
+      "width": 157,
+      "height": 70,
+      "frames": 8,
+      "sha256": "241cb23e94e958965b446081141c8dc81c57b7d2266af21f2c850fe1100e2785",
+      "palette": "PAL.COL and own CFA lookup at76",
+      "decoded": "Existing RLE/MSB bitpacking; no DOS playtest"
+    },
+    {
+      "file": "WOLF06.CFA",
+      "width": 97,
+      "height": 93,
+      "frames": 3,
+      "sha256": "5b26c0f5d2fc4fd83d4d2408f0515113107c7f3282baa867ec95fb87880ce9ca",
+      "palette": "PAL.COL and own CFA lookup at76",
+      "decoded": "Existing RLE/MSB bitpacking; no DOS playtest"
+    }
+  ],
+  "wiki": "doc/wiki/Arena_Monsters - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+  "pages": [
+    23,
+    24
+  ],
+  "facts": "Ordinary wolf, not Snow Wolf; wiki HP10-25, damage1-10, EXP HP*10+100, loot unknown. No disease/bleeding/group mechanic inferred. Decode uses ordinary WOLF01/03/06.CFA, not SWOLF.",
+  "visual": "Charcoal grey, broad pale muzzle, pointed ears, red eyes, thick neck/shoulders and low tail observed in decoded frames; interpolation/painterly fur and lateral bite timing are adaptation.",
+  "consultation": "Read-only installed GLOBAL.BSA/PAL.COL and local wiki; no new DOS playtest, original exports remain ignored in tmp/wolf-review."
+}

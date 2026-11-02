@@ -203,3 +203,7 @@ Arena_Skeleton0.1.0 após Arena_Stonekeep e dependências Battle/Motion/Abilitie
 ## M02-05 — entrega do pergaminho
 
 Arena_CourtDelivery0.1.0 após Arena_DebugHub/Court/Stonekeep: extensão focal da conversa, consumo/recibo/progresso existentes e acesso RAM centralizado. Sem prêmio ou viagem a mapa ausente. [Guia e dependências](plugins/Arena_CourtDelivery.md). Formato canônico do registro preservado.
+
+## Stonekeep — lobo comum de batalha V01
+
+Arena_Wolf0.1.0 depois de Arena_DebugHub/Ghoul e núcleos existentes; Enemy6/Troop7, ArenaWolf.json e acesso RAM centralizado. Sem caminhada/mapa ou recompensas de campanha. [Guia e dependências](plugins/Arena_Wolf.md), [cobertura/limites](LOBO_M02.md).

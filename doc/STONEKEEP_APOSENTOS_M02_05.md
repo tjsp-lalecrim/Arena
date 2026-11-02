@@ -1,5 +1,7 @@
 # Stonekeep — delimitação dos encontros dos aposentos
 
+**Continuação sobre2644185:** [um piloto de batalha do lobo](LOBO_M02.md) implementado para avaliação visual; não acrescenta caminhada ou os quatro encontros. Testes manuais adiados pelo responsável, sem aprovação presumida. As referências à ausência de exemplar abaixo registram a delimitação original.
+
 Feature `feature/m02-stonekeep-aposentos`, sobre **4357999**. **Relato do responsável:** testou a entrega do pergaminho de4357999 e confirmou funcionamento. Sem ambiente/casos adicionais informados; preservadas as seis verificações técnicas anteriores, sem atribuir seu conteúdo ao relato manual.
 
 ## Fonte e recorte

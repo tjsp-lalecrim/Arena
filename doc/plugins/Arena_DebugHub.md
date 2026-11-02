@@ -48,3 +48,5 @@ O pacote/Pages/tag m01 já publicados não foram modificados. O workflow remoto 
 Responsável confirmou que a navegação de **d800a8f funcionou**. Ambiente e outros casos não informados; não ampliar a cobertura do relato. Nenhuma nova inspeção no editor MV1.6.1 ou dispositivo físico declarada. Formato canônico e registros anteriores de js/plugins.js preservados; o plugin próprio é o único acréscimo, sem dependência externa. Esta confirmação não autoriza ampliar ferramentas.
 
 **M02-05:** registro adicional `arenaCourtDelivery`, **Rihad · entregar pergaminho (RAM)**, categoria Campanha e mapas. Reutiliza fixture/guardas existentes;25 acessos ao todo com os dois do ghoul, sem ampliar o título. [Roteiro](../ENTREGA_PERGAMINHO_M02_05.md).
+
+**Lobo M02:** registro `arenaWolf`, **Stonekeep · lobo (RAM)**, em Combate;26 acessos com o anterior da entrega, sem comando novo no título. [Piloto e restrições](../LOBO_M02.md); o modo jogador desabilitado permanece preservado.

@@ -297,6 +297,45 @@
       },
       "difficulty": "provisional island exemplar",
       "source": "Monsters wiki PDF5: gold24%/7-70 and low-quality item5%; mapping low-quality to existing basic dagger1/leather armor1 is provisional adaptation, not confirmed original catalogue. Gear shared limit and retired rare variants preserved."
+    },
+    "6": {
+      "gold": {
+        "chance": 0,
+        "min": 0,
+        "max": 0
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "isolated battle pilot only",
+      "source": "No campaign configuration yet. Empty laboratory rewards explicitly; do not transfer zeros silently to campaign."
     }
   },
   "technical": {

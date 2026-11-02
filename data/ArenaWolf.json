@@ -1,0 +1,68 @@
+{
+  "version": "stonekeep-wolf-v01",
+  "enemyId": 6,
+  "troopId": 7,
+  "enemy": {
+    "name": "Lobo",
+    "params": [
+      25,
+      0,
+      8,
+      3,
+      0,
+      3,
+      12,
+      5
+    ],
+    "exp": 0,
+    "hit": 0.9
+  },
+  "lab": {
+    "mapId": 12,
+    "x": 80,
+    "y": 39,
+    "direction": 4
+  },
+  "labLoot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "isolated battle pilot only",
+    "source": "No campaign configuration yet. Empty laboratory rewards explicitly; do not transfer zeros silently to campaign."
+  },
+  "campaign": null,
+  "source": "Ordinary Wolf from Monsters PDF23-24 and WOLF01/03/06.CFA. HP25 uses upper wiki range only as pilot baseline; ATQ8/DEF3/MDF3/AGI12/HIT90% are provisional MV adaptations relative to existing rat/goblin. No magic/disease/bleeding/group behaviour. EXP and loot0 are laboratory only.",
+  "coverage": "one battle-only pilot; no walk, no event, no four positions; pending visual approval and deferred manual functional evaluation"
+}

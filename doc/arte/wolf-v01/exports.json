@@ -1,0 +1,499 @@
+{
+  "source": "art/masters/stonekeep-wolf-v01/sheet-v01.png",
+  "sourceSha256": "269f2d3564b8434c125758aa34b06c63cef40ac188049a79d3ae5db37e5f92cf",
+  "output": "img/enemies/Arena_Combat_wolf_v01.png",
+  "outputSha256": "fac82d590cadcde7374e0c9617daf554d22e33b6d6813d191c73a6d4532784fb",
+  "scale": 0.4383561643835616,
+  "cell": [
+    192,
+    128
+  ],
+  "ground": 120,
+  "frames": [
+    {
+      "motion": "idle",
+      "frame": 0,
+      "sourceRect": [
+        9,
+        138,
+        261,
+        284
+      ],
+      "alphaBox": [
+        42,
+        56,
+        152,
+        120
+      ],
+      "placement": [
+        42,
+        56
+      ],
+      "sha256": "ee0b7951e62d65cc7cf4bfdb5e523c522ae3ad0b77c12b34248af8c9828912f3"
+    },
+    {
+      "motion": "idle",
+      "frame": 1,
+      "sourceRect": [
+        273,
+        130,
+        513,
+        284
+      ],
+      "alphaBox": [
+        42,
+        52,
+        147,
+        120
+      ],
+      "placement": [
+        42,
+        52
+      ],
+      "sha256": "c18810a1048d0d4f54c5a1e05a41ddc72d043f3e91058470869b0f60ff68c9b0"
+    },
+    {
+      "motion": "idle",
+      "frame": 2,
+      "sourceRect": [
+        524,
+        128,
+        763,
+        285
+      ],
+      "alphaBox": [
+        39,
+        51,
+        144,
+        120
+      ],
+      "placement": [
+        39,
+        51
+      ],
+      "sha256": "8585d368111db02bbf3c8c27e038309fb3d64bc1f165092dfc886af81df6f9ee"
+    },
+    {
+      "motion": "idle",
+      "frame": 3,
+      "sourceRect": [
+        775,
+        140,
+        1026,
+        285
+      ],
+      "alphaBox": [
+        39,
+        56,
+        149,
+        120
+      ],
+      "placement": [
+        39,
+        56
+      ],
+      "sha256": "9bd2b09edce66e48d57f21053cc9644c82ca8668909926889252b2282b167f77"
+    },
+    {
+      "motion": "idle",
+      "frame": 4,
+      "sourceRect": [
+        1033,
+        137,
+        1281,
+        285
+      ],
+      "alphaBox": [
+        42,
+        55,
+        151,
+        120
+      ],
+      "placement": [
+        42,
+        55
+      ],
+      "sha256": "7a8e930394d917468b9c286361330777faff21b969106a7337fc2e6378d337c4"
+    },
+    {
+      "motion": "strike",
+      "frame": 0,
+      "sourceRect": [
+        10,
+        406,
+        261,
+        518
+      ],
+      "alphaBox": [
+        47,
+        71,
+        157,
+        120
+      ],
+      "placement": [
+        47,
+        71
+      ],
+      "sha256": "632454d1d168a0901e4eb93d962f7895a2f07ca6bc687019fd52a68a9aa9ec7a"
+    },
+    {
+      "motion": "strike",
+      "frame": 1,
+      "sourceRect": [
+        264,
+        375,
+        480,
+        518
+      ],
+      "alphaBox": [
+        60,
+        57,
+        155,
+        120
+      ],
+      "placement": [
+        60,
+        57
+      ],
+      "sha256": "5db9db5f653d51b977695afaedd14e38ef36376534411643f52caeb4738f8650"
+    },
+    {
+      "motion": "strike",
+      "frame": 2,
+      "sourceRect": [
+        486,
+        381,
+        767,
+        517
+      ],
+      "alphaBox": [
+        45,
+        60,
+        168,
+        120
+      ],
+      "placement": [
+        45,
+        60
+      ],
+      "sha256": "3d90019de717169c184b266c5fe6a84c259f1cfd64a732f1af56d4f5f896f5af"
+    },
+    {
+      "motion": "strike",
+      "frame": 3,
+      "sourceRect": [
+        766,
+        405,
+        1046,
+        517
+      ],
+      "alphaBox": [
+        46,
+        71,
+        169,
+        120
+      ],
+      "placement": [
+        46,
+        71
+      ],
+      "sha256": "f41c9d9863ae20c3f4f0d4903ef6d71ab7ebd96c3047bf96ef5d46fd20a77834"
+    },
+    {
+      "motion": "strike",
+      "frame": 4,
+      "sourceRect": [
+        1046,
+        383,
+        1289,
+        521
+      ],
+      "alphaBox": [
+        34,
+        60,
+        141,
+        120
+      ],
+      "placement": [
+        34,
+        60
+      ],
+      "sha256": "8098f4246ff43fbb515e62e7dac639942c71e4c58854cbf06c84c697bbafe24f"
+    },
+    {
+      "motion": "strike",
+      "frame": 5,
+      "sourceRect": [
+        1289,
+        375,
+        1534,
+        522
+      ],
+      "alphaBox": [
+        42,
+        56,
+        149,
+        120
+      ],
+      "placement": [
+        42,
+        56
+      ],
+      "sha256": "f934b09aa9d713f1179c084d1bba8adb58fbc34c2b65498d41b39397e02e4a05"
+    },
+    {
+      "motion": "hurt",
+      "frame": 0,
+      "sourceRect": [
+        8,
+        619,
+        262,
+        763
+      ],
+      "alphaBox": [
+        41,
+        57,
+        152,
+        120
+      ],
+      "placement": [
+        41,
+        57
+      ],
+      "sha256": "b3ce3fdc230f894d1ad3fd80a5c956cd9b5245e5471e667bc4c36972887126b3"
+    },
+    {
+      "motion": "hurt",
+      "frame": 1,
+      "sourceRect": [
+        270,
+        579,
+        506,
+        760
+      ],
+      "alphaBox": [
+        60,
+        41,
+        163,
+        120
+      ],
+      "placement": [
+        60,
+        41
+      ],
+      "sha256": "0599fb88883e9ee1a0e8ebd6fe3795b7b3fe6c9515f1c93ca3398673da550234"
+    },
+    {
+      "motion": "hurt",
+      "frame": 2,
+      "sourceRect": [
+        517,
+        608,
+        745,
+        760
+      ],
+      "alphaBox": [
+        60,
+        53,
+        160,
+        120
+      ],
+      "placement": [
+        60,
+        53
+      ],
+      "sha256": "ba428123755cbd1883ea80abc41e6f16d44bdc162d065fefa43a3a512ec5c460"
+    },
+    {
+      "motion": "hurt",
+      "frame": 3,
+      "sourceRect": [
+        765,
+        625,
+        1016,
+        763
+      ],
+      "alphaBox": [
+        43,
+        60,
+        153,
+        120
+      ],
+      "placement": [
+        43,
+        60
+      ],
+      "sha256": "7b11243fa5de9991b52f7b99129300a0797f07ea07fa2f8aca63df3861dffc39"
+    },
+    {
+      "motion": "hurt",
+      "frame": 4,
+      "sourceRect": [
+        1024,
+        620,
+        1285,
+        763
+      ],
+      "alphaBox": [
+        41,
+        57,
+        155,
+        120
+      ],
+      "placement": [
+        41,
+        57
+      ],
+      "sha256": "2e35dc59fb5d619cb016180d4b329ab40924c52ee113d0ee9515cc36e23f53d4"
+    },
+    {
+      "motion": "hurt",
+      "frame": 5,
+      "sourceRect": [
+        1286,
+        615,
+        1533,
+        763
+      ],
+      "alphaBox": [
+        41,
+        55,
+        149,
+        120
+      ],
+      "placement": [
+        41,
+        55
+      ],
+      "sha256": "11e673eecf5d24101a1a1541b139a60e492155155c08d00702bf51f289f44df6"
+    },
+    {
+      "motion": "defeat",
+      "frame": 0,
+      "sourceRect": [
+        8,
+        843,
+        260,
+        978
+      ],
+      "alphaBox": [
+        41,
+        61,
+        151,
+        120
+      ],
+      "placement": [
+        41,
+        61
+      ],
+      "sha256": "04903f1b3be75c432869396a8768cb2db7ac3644b8812823a0f1a8ca62c0a566"
+    },
+    {
+      "motion": "defeat",
+      "frame": 1,
+      "sourceRect": [
+        263,
+        851,
+        510,
+        978
+      ],
+      "alphaBox": [
+        42,
+        64,
+        150,
+        120
+      ],
+      "placement": [
+        42,
+        64
+      ],
+      "sha256": "bbc7b79c3a26a4473c203d46f14f83906f1fcac611b183f3e6d17b4e86f6743f"
+    },
+    {
+      "motion": "defeat",
+      "frame": 2,
+      "sourceRect": [
+        511,
+        871,
+        768,
+        978
+      ],
+      "alphaBox": [
+        39,
+        73,
+        152,
+        120
+      ],
+      "placement": [
+        39,
+        73
+      ],
+      "sha256": "3b65cb0fd381c67ef7f1b2360c2e8de8782e24154f545e5a2680ab0706e00d9b"
+    },
+    {
+      "motion": "defeat",
+      "frame": 3,
+      "sourceRect": [
+        773,
+        885,
+        1003,
+        980
+      ],
+      "alphaBox": [
+        45,
+        78,
+        146,
+        120
+      ],
+      "placement": [
+        45,
+        78
+      ],
+      "sha256": "e4ce73bf2dfae44f36842ab4f8bedec3c594cf9eb3a47231171282e5ea72cdf1"
+    },
+    {
+      "motion": "defeat",
+      "frame": 4,
+      "sourceRect": [
+        1010,
+        895,
+        1267,
+        978
+      ],
+      "alphaBox": [
+        39,
+        84,
+        152,
+        120
+      ],
+      "placement": [
+        39,
+        84
+      ],
+      "sha256": "c31f9d8d37ad21f57a4e0eec2255b5f46a5910e92d4ab6719bdac42eaf8b6611"
+    },
+    {
+      "motion": "defeat",
+      "frame": 5,
+      "sourceRect": [
+        1273,
+        901,
+        1531,
+        976
+      ],
+      "alphaBox": [
+        39,
+        87,
+        152,
+        120
+      ],
+      "placement": [
+        39,
+        87
+      ],
+      "sha256": "66325ae7c90a96462e93bbb20b01361ea888fdc7183847d07df184f3e020971c"
+    }
+  ],
+  "approval": "pending owner visual evaluation; manual functional tests explicitly deferred, advance authorized only",
+  "coverage": "battle only; idle5, strike6, hurt6, defeat6; source idle index5 excluded for clipped muzzle; no walking/patrol/contact"
+}
