@@ -67,3 +67,4 @@ console.log('Map009/010, acesso/retorno e quatro encontros recompostos; repousos
 require('./build-rihad-court.cjs')();
 
 require('./build-stonekeep-sample.cjs')();
+require('./build-fang-cells.cjs')();

@@ -69,6 +69,14 @@
         {
           "revealAt": 60,
           "text": "Entreguei o pergaminho a Blubamka. Ela cumpriu o acordo e indicou a localização de Fang Lair, em Hammerfell. A viagem ainda não está disponível nesta versão de teste."
+        },
+        {
+          "revealAt": 70,
+          "text": "Resolvi o enigma do portal. A chave dourada está na Cela 2; ela abre a passagem junto às celas."
+        },
+        {
+          "revealAt": 80,
+          "text": "Usei a chave dourada e abri o portal. A escada para o nível inferior ainda não está conectada nesta amostra; minha jornada continua."
         }
       ],
       "steps": [
@@ -114,14 +122,30 @@
         },
         {
           "id": "reach-fang-lair",
-          "objectiveId": "fangLairEntered",
+          "objectiveId": "fangCellsSolved",
           "revealAt": 60,
           "doneAt": 70,
-          "text": "Prosseguir para Fang Lair quando a viagem estiver disponível.",
-          "completedText": "Alcancei Fang Lair."
+          "text": "Explorar Fang Lair e resolver o enigma das celas.",
+          "completedText": "Enigma resolvido; Cela 2 aberta."
+        },
+        {
+          "id": "fang-gold-key",
+          "objectiveId": "fangPortalOpened",
+          "revealAt": 70,
+          "doneAt": 80,
+          "text": "Obter a chave dourada da Cela 2 e abrir o portal.",
+          "completedText": "Portal aberto com a chave dourada."
+        },
+        {
+          "id": "fang-lower-route",
+          "objectiveId": "fangLowerExplored",
+          "revealAt": 80,
+          "doneAt": 90,
+          "text": "Prosseguir pela escada quando o nível inferior estiver disponível.",
+          "completedText": "Alcancei a passagem do nível inferior."
         }
       ],
-      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação."
+      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação. Celas: FANG1.INF TEXT5–10 e wiki p3/5; tradução e escolhas adaptadas."
     }
   ]
 }

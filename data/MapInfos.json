@@ -11,5 +11,6 @@ null,
 {"id":9,"expanded":true,"name":"M02-03 Rihad — chegada (amostra)","order":9,"parentId":0,"scrollX":0,"scrollY":0},
 {"id":10,"expanded":true,"name":"M02-03 Arredores de Rihad (amostra)","order":10,"parentId":0,"scrollX":0,"scrollY":0},
 {"id":11,"expanded":true,"name":"M02-03 Corte de Rihad (provisória)","order":11,"parentId":0,"scrollX":0,"scrollY":0},
-{"id":12,"expanded":true,"name":"M02-04 Stonekeep — amostra","order":12,"parentId":0,"scrollX":0,"scrollY":0}
+{"id":12,"expanded":true,"name":"M02-04 Stonekeep — amostra","order":12,"parentId":0,"scrollX":0,"scrollY":0},
+{"id":13,"expanded":true,"name":"M02-06 Fang Lair — celas (provisório)","order":13,"parentId":0,"scrollX":0,"scrollY":0}
 ]

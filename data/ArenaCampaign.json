@@ -663,7 +663,7 @@
     {
       "id": "fang-lair.upper",
       "questId": "MQ02",
-      "mapId": null
+      "mapId": 13
     },
     {
       "id": "fang-lair.lower",
@@ -692,7 +692,7 @@
       "questId": "MQ02",
       "areaId": "fang-lair.upper",
       "itemKey": "MQ02.gold-key",
-      "itemId": null,
+      "itemId": 8,
       "quantity": 1,
       "stages": [
         70
