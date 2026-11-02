@@ -2,7 +2,7 @@
 
 ## Matriz operacional de assets — nove espécies
 
-**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **58/180encontros e32/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **68/180encontros e36/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
 
 | Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
 |---|---|---|---|---|
@@ -10,15 +10,52 @@
 |Goblin /53 /32 |Disponível R03 |Disponível R02 |Legado da entrega M01; não inventar aprovação artística individual nova a partir de testes gerais |Reutilizar; manter ressalvas/evidências M01 |
 |Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; três B2 distribuídos,16restantes |
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
-|Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; seis B2 distribuídos,16restantes |
+|Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; nove distribuídos (6B2+3B1),13restantes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
-|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; oito posições ainda ausentes |
+|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; duas B1 distribuídas, seis restantes |
 |Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar quando chegar ao setor; vinte encontros ainda ausentes |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 agora completos em encontros/portas, sem concluir todos os sistemas/setores. Próximo bloco contíguo: B1,10encontros/4portas, começando pela conexão com B2 e configuração de campanha dos dois Minotauros. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. Próximo bloco proposto: C1 norte/Y60–69, conferir conexões/LOCK1. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
 
-## Entrega atual — conclusão de encontros/portas de A2/B2
+## Entrega atual — B1 conectado a B2
+
+Base90317c8. Responsável autorizou avanço e validará a dungeon quando estiver completa; **não há aprovação manual nova da integração**. **Relato pendente de localização:** uma porta não abriu; prints/coordenadas virão no próximo teste. Sem causa atribuída, correção presumida ou alteração de outras áreas para tentar resolvê-la. O diagnóstico abaixo ajuda a identificar o local; não constitui resolução desse relato.
+
+[Contrato/fonte B1](mapas/STONEKEEP_B1_M02.json), `tools/inspect-stonekeep-b1.py`: MIF39699021/MAP1/FLOR/LOCK/TRIG e STKEEP1.INF relidos; **3orcs+5goblins+2Minotauros**, quatro portas DCAS2 declaradas. Zero LOCK nas quatro posições e nenhum TRIG na própria célula: interação comum, sem chave/quest inventada. As duas placas TEXT5 e sons ambientais do bloco são opcionais, não condições de porta, e permanecem adiados. Sem nova observação DOS.
+
+|Conteúdo |MIF zero-based → Map015 |IDs/eventos |
+|---|---|---|
+|Portas |(72,52)→(54,159);(62,53)→(84,162);(68,56)→(66,171);(73,56)→(51,171) |`stonekeep.b1.door.mifXX.YY`;349–384,9partes cada. Três eixos norte–sul; última leste–oeste |
+|Orcs |(67,47)→(69,144);(68,47)→(66,144);(68,48)→(66,147) |`stonekeep.b1.enemy.mifXX.YY`;385–387 |
+|Goblins |(67,54)→(69,165);(72,54)→(54,165);(67,57)→(69,174);(71,57)→(57,174);(64,59)→(78,180) |388,389,392–394 |
+|Minotauros |(64,55)→(78,168);(64,56)→(78,171) |390–391 |
+
+Transformação preservada: vista=(89−X,Y), mundo=(3+3vistaX,3+3Y). **B1=10/10encontros+4/4portas; total68/180 e36/70**, restam112encontros/34portas em outros setores. Os58encontros/348eventos/32portas anteriores permanecem iguais. Só36tiles de soleira mudam de região4 para6; piso, paredes, água, alturas e colisões externas a esses vãos não foram alterados. Materiais/decoração da base integral ainda parcialmente provisórios. Isso não conclui toda a dungeon ou seus demais sistemas.
+
+### Conectividade seca e aquática
+
+A ligação direta B2→salas do sul de B1 cruza MIF59↔60 nas linhas Y54–55, MAP1 vazio e piso seco. A sala dos três orcs ao norte é outro componente dentro do setor: alcançada continuamente por **A2→A1→água aberta de B1**, sem transições entre mapas ou criação de atalho pelo sul. Os blocos MIF68,51–52 (`0x2808`) permanecem sólidos, sem inventar salto/rampa/folga.
+
+A auditoria da rota mais curta encontrou **MIF(67,26)/0x1008** projetado como água transitável na amostra antiga. A folga original desse volume **não foi comprovada**. Foi mantido intacto e acrescentado à pendência de fidelidade aquática, junto dos quatro candidatos A1 anteriores, sem tratar todos como equivalentes. Há uma alternativa por água aberta: o leitor seleciona rotas cuja célula molhada tem MAP1=0, e o teste nativo evita explicitamente os volumes incertos. Norte/sul e volta foram percorridos nessa alternativa; isso comprova a circulação da adaptação existente, não uma observação do comportamento DOS. Nenhum mergulho, oxigênio, tecla, custo de Vigor ou regra global de água foi criado.
+
+### Portas e diagnóstico técnico
+
+Quatro componentes aprovados, folhas/batentes/âncoras/animações preservados, estados A individuais. `ArenaStonekeepWhole.interactB1Door` mantém as regras nativas e explica aproximação pelo lado errado, movimento ainda em curso ou ocupação que impeça fechar. Sucesso não produz mensagem redundante. Não há condição original de chave nessas quatro portas.
+
+**Somente no debug Map015/RAM**, ao se aproximar de uma das70referências, painel informa MIF/MV e estado: implementada aberta/fechada/em movimento/trancada com Forçar/Voltar, ou **não implementada · pendência de desenvolvimento**. São36implementadas/34pendentes. Leitura apenas; não abre, fecha ou bloqueia portas desconhecidas, nem cria uma condição fictícia de campanha. Painel oculto fora da base integral.
+
+### Recompensas mínimas e validação
+
+Orcs/goblins reutilizam parâmetros e tabelas existentes:40/25EXP cada. Minotauro mantém todos os atributos/ação/arte aprovados; **EXP60** provisória na escala MV, acima do orc40/homem-lagarto50, não a fórmula original Vida×20+300. Ouro **25%/6–60** conforme Monsters local p14–15; demais categorias originais adiadas. Somente a configuração de campanha8 foi habilitada; laboratórios próprios de combate/patrulha continuam0EXP/tabela vazia por instância/contexto. **365EXP opcionais** no bloco (120+125+120), para M02-BAL; sem rebalanceamento geral ou revisão de loot de cenário/descanso.
+
+**8grupos focais**, Chrome156/perfil descartável/RAM: abertura/reconstrução, IDs/PNG aprovados preservados e delta limitado às soleiras; quatro portas×dois lados por Enter, colisão/fechamento/feedback; diagnóstico implementada/pendente; circulação seca e alternativa aquática nos dois sentidos, margens sólidas/guardar-carregar na água sem gasto; dez patrulhas/contatos reais por teclado, vitórias controladas/retorno,10derrotas/recibos e365EXP, chamadas repetidas sem concessão; restauração de arrays antigos/retorno de área sem respawn; laboratório do Minotauro vazio e campanha60EXP restaurada. [Resultado](evidencias/m02-stonekeep-b1/resultado.json). [Suplemento focal](evidencias/m02-stonekeep-b1/portas-persistencia.json): três portas fechadas/uma aberta preservadas em RAM com array anterior, páginas de colisão e estados individuais restaurados. Não repetir matriz artística/combate, campanha completa ou testes editor/mobile.
+
+**Acesso:** http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM) → Esc → Stonekeep: pontos da base integral. Novos pontos **B1 · conexão seca B2 / salas e portas / Minotauros / orcs — chegada da água / água norte**. Guardar/Carregar teste usa RAM; slots pessoais bloqueados, namespace e Map012 preservados. Avaliação manual continua adiada. [Visão geral](evidencias/m02-stonekeep-b1/visao-geral.png).
+
+**Próximo bloco contíguo proposto:** C1 norte, Y60–69,5encontros (2goblins/2Minotauros/1esqueleto) e6portas, uma LOCK1; conferir conexão/condições antes de implementar. Não iniciar agora. Relato da porta sem localização e fidelidade aquática continuam pendentes; loot/descanso depois de encontros/portas, artes aprovadas e ressalva da aranha preservadas.
+
+## Entrega anterior — conclusão de encontros/portas de A2/B2
 
 Sobre f5ebdba, [configuração/fonte](mapas/STONEKEEP_A2_B2_CONCLUSAO_M02.json) e `inspect-stonekeep-a2-b2-completion.py`: conferidos MAP1/INF e inventário completo; faltavam somente nove referências B2. **A2=19/19encontros+13/13portas; B2=25/25+18/18. Total58/180encontros,32/70portas**, restam122/38 nos demais setores. Não havia outra porta faltante neste bloco; as31portas e conexões necessárias já estavam configuradas. Nenhum tile, porta, altura ou passagem foi alterado. Isso não conclui o mapa, os eventos futuros, loot/descanso ou a avaliação manual integrada.
 

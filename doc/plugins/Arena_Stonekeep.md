@@ -41,3 +41,9 @@ Reconstrução pelo gerador build-stonekeep-whole a partir das camadas de Map014
 ### Delta A2-E no contrato integral
 
 Map015:24 encontros/4 portas, configuração setorial de fonte versionada em STONEKEEP_A2_E_M02.json. O registro de portas usa ArenaDungeon.registerDoors; restauração de RAM anterior acrescenta apenas Game_Event ausentes antes de criar sprites, preservando self-switches e estados lógicos. Validação de boot conserva os20 IDs originais como prefixo, permitindo os quatro novos IDs declarados. Novos pontos de inspeção no menu existente; sem novo laboratório/título. A base8f28207 tem avaliação manual adiada, avanço autorizado, sem aprovação presumida.
+
+## B1 e diagnóstico de portas
+
+`stonekeep-b1.cjs` acrescenta quatro portas (349–384) e dez encontros (385–394), preservando os348eventos anteriores. Contrato em `doc/mapas/STONEKEEP_B1_M02.json`; fonte/limites em [registro principal](../STONEKEEP_M02_04.md#entrega-atual--b1-conectado-a-b2). Total68encontros/36portas. Nenhuma conexão ou altura é liberada globalmente.
+
+`interactB1Door(id)` aceita somente as quatro portas explícitas e delega toggle nativo; feedback explica lado inválido, transição ou ocupação. `doorDiagnostic()` é leitura somente no Map015/RAM, consulta70referências compiladas e retorna MIF/MV/status da mais próxima (até4tiles Manhattan). Window_Base informativo, sem foco, só no Scene_Map técnico e oculto durante mensagens; pendência de desenvolvimento é distinguida de fechadura real. Não altera Map012, portas desconhecidas ou snapshots. Novos pontos no hub existente, sem comandos no título.

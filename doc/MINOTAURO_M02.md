@@ -1,3 +1,5 @@
+**Atualização B1 posterior:** dois encontros em Map015 (MIF64,55/64,56), mantendo os atributos/arte; EXP60 provisória e ouro25%/6–60 confirmados na fonte local. Laboratórios próprios continuam0EXP/tabela vazia por contexto/instância. Seis referências ainda fora da distribuição. [Fonte operacional vigente](STONEKEEP_M02_04.md#entrega-atual--b1-conectado-a-b2). O texto abaixo preserva a entrega original do exemplar.
+
 # Stonekeep — Minotauro V01, combate e patrulha
 
 Base8b309cc; feature `feature/m02-minotauro-piloto`. O responsável aprovou explicitamente combate e patrulha do homem-lagarto; não se inferem ambiente adicional, equilíbrio, recompensas ou distribuição. Seus assets foram preservados.
