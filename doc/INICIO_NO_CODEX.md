@@ -2,7 +2,9 @@
 
 Atualizado em **02/11/2026**. **M01 concluído/publicado**, tag anotada [m01](https://github.com/tjsp-lalecrim/Arena/releases/tag/m01), main **df539eeee2d88199312ca3a8cba98edd2b2b900b**, develop integrado **85940d4723956079f920d7332f68a9d5a2d75641**. Fonte funcional aprovada e407a69; pacote e ressalvas em [ENTREGA_M01.md](ENTREGA_M01.md). A feature atual contém as dependências02A/02B e a chegada, arredores, visão e audiência M02-03A/B/C/D; a entrega m01 permanece intacta.
 
-**Recorte atual:** [M02-06A — celas de Fang Lair](FANG_CELAS_M02_06A.md), feature/m02-fang-lair-celas sobre **f27e9a9**. Map013 recorta as celas do primeiro nível conforme42068779.MIF/FANG1.INF e planta local. Enigma, chave importante8 e portal60→70→80 implementados; acesso Testes / Debug → Campanha e mapas → Fang Lair · celas (RAM). Materiais/portas provisórios. Erro libera portas e sinaliza quatro aranhas sem substituir espécies; exemplar/combate condicionado ainda pendentes, portanto M02-06A parcial. Verificações focais de Chrome/estado/gerador concluídas; avaliação manual da amostra pendente. Sem rota completa da mina, nível2, fragmento ou retaliação.
+**Prioridade vigente — consolidação documental após af17b4b:** [replanejamento do M02](BACKLOG_M02.md#replanejamento-de-cobertura--decisão02112026). Mapas completos das cidades/dungeons da campanha e todos os encontros aplicáveis são obrigatórios; amostras aprovadas não concluem mapas. Primeiro inventariar/concluir Stonekeep e Rihad, preservando seus sistemas/aprovações. Próximo recorte recomendado **M02-04C1**, matriz completa de Stonekeep por setores, sem implementação iniciada nesta revisão. Não falta decisão de escopo; faltam correspondências cartográficas/fontes a conferir.
+
+**Última implementação preservada:** [M02-06A/af17b4b](FANG_CELAS_M02_06A.md), Map013/celas, resposta correta/erro, chave8 e portal até MQ02=80, sem conclusão. Materiais provisórios e aranhas sem combate; avaliação manual pendente. **Expansão de Fang Lair adiada** até cobertura anterior resolvida, salvo dependência concreta documentada; nenhuma identificada agora. Não descartar a amostra ou pedir avaliação dos detalhes internos para iniciar o inventário anterior.
 
 **Cobertura preservada:** quatro lobos f27e9a9 nas posições confirmadas; patrulha do exemplar d27eb5f aprovada, animação/combate aaea451 preservados. Testes manuais do conjunto de inimigos de Stonekeep continuam adiados para integração, sem inferência de aprovação de equilíbrio/recompensas/persistência. REF17/contraste permanece em QUALIDADE-01; sem alteração visual.
 
@@ -47,7 +49,7 @@ Três pontos de+1 por nível desde2, saldo acumulável e escolha independente de
 
 Paisagem/fullscreen **não atendidos e vinculados a MOBILE-01**. Ressalvas aceitas não revogam aprovações. Pendências/decisões e verificações finais estritamente justificadas estão na matriz do backlog; refinamento visual dos atributos é futuro (REF15).
 
-**Continuidade:** avaliar a amostra das celas antes de ampliar. Próxima dependência funcional de M02-06A: exemplar de aranha e encontro condicionado ao erro. M02-06B conectará entrada/túneis/celas/descida após essa unidade; não ampliar por acabamento opcional. Stonekeep/material e recortes anteriores permanecem nos respectivos registros; Rihad não ganha viagem a uma entrada de Fang Lair ainda ausente. REF07/REF17 continuam futuros e não bloqueantes.
+**Continuidade:** seguir M02-04C1 →03E1 (referência urbana) → setores/conexões/encontros de Stonekeep e Rihad → integração05I → retomar Fang Lair06A/B e nível2/retaliação. Ordem e critérios em BACKLOG_M02.md; amostra funcional não dispensa cartografia completa. Uma ilustração por entrega, aguardar avaliação antes da próxima (DIRECAO_DE_ARTE.md); abertura ausente tem pendência própria REF16, sem misturar com mapas. REF07/REF17 e demais melhorias continuam classificados, sem execução automática.
 
 ---
 

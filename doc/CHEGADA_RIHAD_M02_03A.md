@@ -1,5 +1,16 @@
 # M02-03A — primeira chegada a Rihad
 
+## Cobertura vigente de Rihad — revisão02/11/2026
+
+A chegada e suas interações são uma **amostra funcional**, não a cidade completa exigida agora. A fonte local Fang Lair p2 sustenta cidade/corte junto à muralha e a troca narrativa, mas não fornece aqui correspondência cartográfica completa de Rihad. Map009 **21×15** é esplanada autoral; Map011 é interior mínimo da corte; Map010 é um trecho adaptado com quatro ratos para a progressão inicial, não cópia de população/encontros urbanos originais. Nenhum deles comprova a planta completa.
+
+Faltam: identificar a planta urbana de referência e seus arquivos/geração no original; registrar ruas/quarteirões, muralhas/portões, edifícios/acessos e suas conexões; depois integrar chegada, informante, descanso e corte em posições justificadas. Não há inventário completo confirmado de encontros da cidade nos materiais já registrados: **quantidade desconhecida**, não zero ou população a preencher. Se o original usar geração/condições variáveis, escolher uma referência reproduzível e documentar a adaptação finita antes de implementar; sem introduzir encontros aleatórios/novos sistemas.
+
+Preservar funções, estados e aprovações anteriores; manter os quatro ratos como adaptação identificada e verificar sua ligação espacial na adequação, sem convertê-los em evidência do original. Não assumir orientação do portão de chegada. Interiores sem função na campanha podem permanecer inacessíveis, com edifícios/acessos preservados e identificados na planta. Placeholder/NPC/repouso e posição atual continuam provisórios; não há autorização para lote artístico.
+
+Planejamento: **M02-03E1** identifica referência/cobertura; **03E2** implementa a estrutura por setores; **03E3** religa eventos/transições/encontros aplicáveis e verifica persistência, conforme BACKLOG_M02.md. Nenhum mapa foi alterado nesta consolidação.
+
+
 **Relato posterior do responsável:** acesso à chegada pela estrada e ao informante confirmado, associado à referência disponível b8738b9. Descanso e guardar/carregar na chegada **não explicitamente confirmados**; não registrar aprovação completa. Ambiente/SHA não informados no relato. [M02-03B](ARREDORES_RIHAD_M02_03B.md) acrescenta arredores e atualiza o mesmo acesso para nível1/RAM; roteiro e limites abaixo descrevem a unidade03A original.
 
 01/11/2026. Feature `feature/m02-chegada-rihad`, derivada de **4ff291a**, preservando as dependências02A/02B sem integrar branches. **Amostra para avaliação, não aprovação estética nem conclusão de M02-03.** Tag m01 intacta; nenhum push/Pages.

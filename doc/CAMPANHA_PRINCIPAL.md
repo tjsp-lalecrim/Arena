@@ -21,7 +21,7 @@ Cada quest MQ01 a MQ10 corresponde respectivamente a um marco M01 a M10. Consult
 
 Dependência principal: MQ01 → MQ02 → MQ03 → MQ04 → MQ05 → MQ06 → MQ07 → MQ08 → MQ09 → MQ10. Cada cadeia contém etapas de obtenção, entrega e descoberta de localização; não eliminar os locais preparatórios como se fossem side quests opcionais.
 
-**Planejamento pós-M01:** entrega m01 preservada; cadeia mínima, recortes urbanos, pré-requisitos/retaliação de MQ02 e proposta de continuidade dos saves finais em [BACKLOG_M02.md](BACKLOG_M02.md). Esse plano aguarda avaliação e não inicia M02. Refinamentos em QUALIDADE-01 são separados da campanha e do MOBILE-01; não duplicam a cadeia narrativa aqui.
+**Planejamento pós-M01:** entrega m01 preservada; cadeia mínima, recortes urbanos, pré-requisitos/retaliação de MQ02 e proposta de continuidade dos saves finais em [BACKLOG_M02.md](BACKLOG_M02.md). O M02 está em desenvolvimento; a revisão de cobertura em seu backlog precede nova expansão de Fang Lair. Refinamentos em QUALIDADE-01 são separados da campanha e do MOBILE-01; não duplicam a cadeia narrativa aqui.
 
 ## Fontes por registro
 
@@ -42,6 +42,6 @@ URLs originais estão preservadas nos PDFs. Consultar as seções completas ao e
 
 ## Recorte e limites
 
-As cidades listadas são centros da campanha; não implicam reproduzir todos os edifícios e cidadãos. O destino após a prisão varia no original conforme a origem do personagem; a adaptação desse destino ainda precisa ser documentada quando houver continuação além da demo.
+As cidades e dungeons listadas exigem estrutura completa conforme o [escopo vigente](MARCOS_DO_PROJETO.md#escopo-mínimo-funcional-vigente--decisão-de02112026). Eventos/população/serviços opcionais não se tornam obrigatórios; preservar edifícios/acessos urbanos mesmo com interiores sem função na campanha ainda inacessíveis. A viagem condensada até Rihad já está autorizada em MQ02_ESPECIFICACAO.md; não justifica reduzir a cidade.
 
 O primeiro marco termina na introdução e dungeon inicial. Cidades e demais quests entram em entregas posteriores. Os identificadores MQxx são propostos para planejamento; não são IDs já implantados no banco de dados.

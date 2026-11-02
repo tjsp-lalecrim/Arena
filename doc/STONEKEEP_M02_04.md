@@ -1,5 +1,27 @@
 # M02-04 — amostra integrada de Stonekeep
 
+## Cobertura vigente — mapa completo ainda pendente (02/11/2026)
+
+A aprovação de materiais e dos exemplares permanece válida; o recorte **não é Stonekeep completa**. A decisão de mapas completos em MARCOS_DO_PROJETO.md substitui as exclusões geográficas da amostra abaixo. Não houve alteração de mapas, assets ou encontros nesta revisão.
+
+- Original **39699021.MIF90×90**; amostra Map012 cobre vistaX8–53/Y0–32 (**46×33 células originais**, não porcentagem de área caminhável). Faltam as demais alas/perímetro e a restauração das conexões hoje seladas pela borda do recorte; prisão, aposento real e região da chave de ferro(40,30) eram exclusões explícitas. Conferir portas/chaves necessárias à circulação da planta completa, sem converter conteúdo opcional em objetivo obrigatório da quest.
+- Comparação documental: wiki local Fang Lair p2/p5, planta e registros deste documento; `doc/mapas/STONEKEEP_AMOSTRA_M02.json`, configurações dos quatro participantes e fontes dos aposentos. Reutilizadas camadas MAP1 de `tmp/stonekeep-review/39699021-layers.json`, com SHA256 do MIF instalado reconferido: `4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b`. Associações STKEEP1.INF já confirmadas: flats52/55/57/60. Nenhum novo playtest do original ou varredura de outros mapas.
+
+| Referência estática de espécie | MAP1 inteiro | Dentro do retângulo atual | Encontros configurados | Lacuna identificada |
+| --- | ---: | ---: | ---: | --- |
+| Rato / flat52 |16 |3 |3 |13 fora |
+| Lobo / flat55 |13 |4 |4 |9 fora |
+| Esqueleto / flat57 |29 |8 |7 |21 fora; referência adicional **(76,22)** dentro do recorte, fora do grupo de7 da passagem, ainda a reconciliar com piso/posição e integrar |
+| Ghoul / flat60 |21 |6 |6 |15 fora |
+
+São **79 referências declaradas dessas quatro espécies**, contra20 encontros atuais; não afirmar catálogo completo, condições de spawn ou79 inimigos observados em execução. O inventário completo seguinte deve cruzar MAP1/INF/condições, localizar cada posição e conferir outras referências antes de fechar a lista. Não criar encontros aleatórios, novas levas ou exigir matar todos. Quantidades e patrulhas adaptadas ficam identificadas; EXP/recuperação acumuladas vão ao M02-BAL, sem ajuste agora.
+
+**Definitivo no sentido de aprovado/reutilizável:** direção dos materiais, exemplares aprovados, IDs/recibos/fonte e fluxo de coleta/entrega nas coberturas registradas. **Ainda provisório:** extensão/cartografia, passagens sem estados de porta na amostra, aparência do pergaminho/decoração/painéis ausentes, recompensas e balanceamento. Aprovações não transformam placeholders em arte final. O inventário de cobertura separará objetos apenas decorativos adiados dos componentes necessários à navegação.
+
+Próximas unidades **M02-04C1–C3**, na ordem/dependências de BACKLOG_M02.md: inventário completo, geometria por setor, encontros/conexões por setor e integração. Não refazer amostras aprovadas nem produzir novos assets nesta revisão.
+
+
+
 **Estado atual dos encontros:** sete esqueletos da passagem ([registro](SKELETON_M02.md)) e **seis ghouls da ilha**, conforme [posições/fontes/evidências](GHOUL_M02.md). Exemplar99203b2 testado e funcional segundo o responsável; animação8ea06c9 aprovada. Sem inferir aprovação de balanceamento/recompensas/persistência. Grupo usa posições declaradas, patrulha adaptada, IDs independentes e fonte sem kill-all; layout/materiais preservados. [Aposentos delimitados](STONEKEEP_APOSENTOS_M02_05.md): três ratos incluídos, quatro lobos em posições confirmadas: animação/combate aaea451 aprovados; patrulha d27eb5f aprovada e [quatro lobos confirmados](LOBO_M02.md) integrados, sem nova arte. Recompensas/equilíbrio provisórios e teste manual do conjunto adiado, não aprovado por inferência. Entrega na corte4357999 confirmada funcional pelo responsável, sem ampliar o relato. Referências a guardiões ausentes/piloto único abaixo são históricas.
 
 **Levantamento visual posterior01/11/2026:** [referências e primeiro conjunto de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md): seis prints inspecionados, INFO→STKEEP1.INF e associações pontuais de materiais/portas/pergaminho. Proposta limitada a aposento/passagem/margem, sem geração ou mudança do layout nesta consulta; origem das incertezas registrada. Próxima tarefa visual deverá começar pela amostra integrada antes de expandir. Não acrescenta aprovação da amostra funcional.

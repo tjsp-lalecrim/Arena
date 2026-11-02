@@ -1,5 +1,9 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Revisão de escopo02/11/2026:** mapas completos e todos os encontros aplicáveis passam a ser requisito, conforme MARCOS_DO_PROJETO.md; recortes abaixo descrevem as amostras históricas, não a entrega cartográfica final. Estados/recibos/viagem condensada preservados. Prioridade: auditar e concluir Stonekeep/Rihad conforme BACKLOG_M02.md, antes de expandir Fang Lair. Exceção de ordem exige dependência concreta documentada; não há uma identificada agora.
+
+**Implementação disponível af17b4b:** amostra das celas/Map013, MQ02 até80 sem conclusão; aranhas sinalizadas sem combate, materiais provisórios. Stonekeep tem3 ratos/7 esqueletos/6 ghouls/4 lobos no recorte e entrega funcional; isso não comprova cobertura total. Demais registros datados a seguir são históricos quando descrevem conteúdo antes ausente.
+
 **Atualização de cobertura:** entrega4357999 testada pelo responsável e funcional, sem novos casos inferidos. [Delimitação dos aposentos](STONEKEEP_APOSENTOS_M02_05.md):3 ratos confirmados incluídos e4 lobos confirmados ainda sem exemplar; layout, fontes/recibos e etapa60 preservados.
 
 **Implementação vigente M02-05:** [entrega na corte](ENTREGA_PERGAMINHO_M02_05.md), sobre18473c2: confirmação explícita, item7/recibo/aposentadoria/50→60 consistentes, diário e Fang Lair conhecida sem mapa/viagem. Coleta confirmada pelo responsável, sem outros testes inferidos; extensão atual para avaliação. Referências a entrega ausente nas entradas anteriores abaixo são históricas.
@@ -77,7 +81,7 @@ IDs numéricos novos serão acrescentados, sem reutilizar legados. Itens importa
 | Fang Lair / sala do fragmento | Porta do segundo enigma | Etapa≥90 | `fang.staff-room.entry`; fonte fora do trigger da porta | Bidirecional, sem novo enigma depois de aberto |
 | Fang Lair / saída com fragmento | Mesma saída usada para Rihad | Etapa100, fragmento presente | Visão/encontro na área da entrada, `fang.retaliation`; sem teleporte até vitória | Vitória conclui110; nova pressão permite viajar para `rihad.arrival`. Sem nova visão após load ou nova vitória para sair |
 
-Preservar rotas/elementos das plantas de Stonekeep (um nível inundado) e Fang Lair (mina anã, dois níveis), sem dungeon genérica. Registrar recortes opcionais/lava nas entregas de mapas. Fuga desabilitada em batalha não proíbe retorno entre locais fora dela.
+Preservar rotas/elementos das plantas de Stonekeep (um nível inundado) e Fang Lair (mina anã, dois níveis), sem dungeon genérica. Preservar também as alas antes excluídas como opcionais; documentar travessias, lava e limites sustentados pelas fontes, sem recortar a planta para reduzir a entrega. Fuga desabilitada em batalha não proíbe retorno entre locais fora dela.
 
 ### Chegada no nível1 — solução mínima definida
 
@@ -98,7 +102,7 @@ IDs `rihad.approach.rat.01–04`, derrotas persistentes, sem reativação por de
 | `MQ02.staff`, coleta válida | Fragmento escuro reage e aguarda as outras sete peças. Objeto/ambiente, nunca “na mão do jogador” na ilustração |
 | `MQ02.tharn`, saída na etapa100 | Ameaça de Tharn após a coleta e encontro controlado; imagem de Tharn/visão, não Ria como substituto. Visão lida e vitória são registros separados, para não repetir fala ou concluir por apenas assisti-la |
 
-Seguir [diretivas da introdução](DIRETIVA_DE_NAVEGACAO.md#narrativa-m01-18-r02): paginação/controles existentes, foco e soltura/nova pressão, imagem ampla sem deformação, texto curto/margens legíveis e **sem cabeçalho redundante**. Imagem deve corresponder à cena; diário só revela conhecimento adquirido. Intro M01 preservada; redesign geral das caixas fica em QUALIDADE-01.
+Seguir [diretivas da introdução](DIRETIVA_DE_NAVEGACAO.md#narrativa-m01-18-r02): paginação/controles existentes, foco e soltura/nova pressão, imagem ampla sem deformação, texto curto/margens legíveis e **sem cabeçalho redundante**. Imagem deve corresponder à cena; diário só revela conhecimento adquirido. Intro M01 preservada; redesign geral das caixas fica em QUALIDADE-01. Uma ilustração por entrega e avaliação antes da próxima, conforme DIRECAO_DE_ARTE.md; sem lote.
 
 Persistir bloco/cursor e operações: retomar leitura, não repetir fala concluída, manter encontro pendente entre visão e batalha. Sem save em batalha ou fila de comandos herdados da narrativa. Sem vozes/protagonista, inclusive mãos/silhuetas que fixem identidade.
 
@@ -125,7 +129,7 @@ Versão oficial de corte para compatibilidade obrigatória ainda a definir; não
 
 ## Participantes, assets e próximo recorte
 
-Reusar as16 identidades/roupas aprovadas, Ria espectral como referência de continuidade, ratos/goblins e sistemas existentes. Necessários à representação: informante sem biografia/sistema de rumor geral; Blubamka; Ria; Tharn; ghouls da ilha, aranhas das celas e dois hell hounds da sala final. Esqueletos/lobos somente se fizerem parte da rota efetivamente representada; não exigir catálogo fora dela. O servo da retaliação precisa de definição antes de M02-08: o guia diz um servo, mas não identifica sua espécie. Não escolher automaticamente um homem-lagarto nem inventar um chefe canônico.
+Reusar as16 identidades/roupas aprovadas, Ria espectral como referência de continuidade, ratos/goblins e sistemas existentes. Necessários à representação: informante sem biografia/sistema de rumor geral; Blubamka; Ria; Tharn; ghouls da ilha, aranhas das celas e dois hell hounds da sala final. Inventariar também esqueletos/lobos e demais espécies declaradas fora da rota principal nos mapas completos; exemplares já aprovados devem ser reutilizados, sem pressupor um catálogo integral de variantes. O servo da retaliação precisa de definição antes de M02-08: o guia diz um servo, mas não identifica sua espécie. Não escolher automaticamente um homem-lagarto nem inventar um chefe canônico.
 
 Inventário mínimo de arte futura: núcleo de Rihad/corte/repouso e acessos; trecho inundado de Stonekeep e pergaminho; mina anã/dragon gate/celas/escadas e chave/fragmento; figuras/interações dos NPCs; atlas de exploração e movimentos de batalha necessários aos novos inimigos; ilustrações dos blocos acima. Conferir arquivos existentes antes de gerar; nenhum desses novos assets está declarado pronto. **Primeiro uma amostra integrada por novo padrão necessário**, sem lotes ou regeneração da intro aprovada.
 

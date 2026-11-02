@@ -1,8 +1,12 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
+## Cobertura completa e amostras
+
+Aplicar o [escopo mínimo funcional vigente](MARCOS_DO_PROJETO.md#escopo-mínimo-funcional-vigente--decisão-de02112026): cidades/dungeons da campanha com mapas completos e encontros previstos, não apenas rota principal. Construir por setores pequenos com comparação original→MV, portas/conexões e inventário dos encontros; amostra aprovada não conclui o mapa. Eventos opcionais podem ser adiados sem apagar sua geometria. Não criar população infinita ou encontros aleatórios para preencher lacunas. Prioridade atual e dependências em BACKLOG_M02.md.
+
 ## Cidades: topologia original e recorte de eventos
 
-Diretriz aprovada pelo responsável: preservar a estrutura dos mapas urbanos originais; nesta fase, acrescentar somente eventos necessários à campanha principal. Não substituir a topologia por um mapa pequeno genérico. Interiores dispensáveis podem permanecer inacessíveis, identificados como fora do recorte. Documentar fontes e adaptações. Rihad existente permanece provisória e será adequada quando seu mapa voltar ao backlog; esta decisão não autoriza alterá-la agora.
+Diretriz aprovada pelo responsável: preservar a estrutura dos mapas urbanos originais; nesta fase, acrescentar somente eventos necessários à campanha principal. Não substituir a topologia por um mapa pequeno genérico. Interiores dispensáveis podem permanecer inacessíveis, identificados como fora do recorte. Documentar fontes e adaptações. Rihad existente permanece provisória; sua cobertura original voltou à prioridade no BACKLOG_M02.md. Esta consolidação não altera o mapa.
 
 ## Descanso: pontos explícitos, não toda elevação
 
