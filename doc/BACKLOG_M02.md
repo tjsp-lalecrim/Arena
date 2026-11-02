@@ -2,13 +2,13 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
-## Recorte atual — A1 oeste, ligação aberta e dois ghouls
+## Recorte atual — portas de A2 centro
 
-Basec81f477 preservada. **33/180 encontros e4/70 portas no Map015**; A1=14/14 e A2=19/19 encontros, ainda sem equivaler a geometria/portas concluídas. [Fontes, limites, acesso e sete grupos focais](STONEKEEP_M02_04.md#a1-oeste--ligação-aberta-e-dois-ghouls). Novos ghouls MIF(82,2)/(83,3) em mundo(24,9)/(21,12), IDs70/71; materiais existentes aplicados à margem/ligação. Sem colisão/água/andar superior, campanha Map012 ou atributos alterados. Manuais continuam adiados, sem aprovação presumida.
+Base66352d2 preservada: **7/70 portas e33/180 encontros** no Map015. Três portas semLOCK/TRIG do grupo MIF(42,12),(44,14),(47,17), acessíveis nos dois sentidos; reutilizam componente,24frames e persistência individual. [Coordenadas/matriz/validação](STONEKEEP_M02_04.md#a2-centro--três-portas-sem-lock). Somente27regiões de soleira4→6 e27eventos acrescentados; camadas visuais/colisões de parede, água e demais setores intactos. Campanha segue Map012; testes manuais continuam adiados.
 
-**Resultado da investigação aquática:** ligação por piso/água aberta sustentada por MAP1/FLOR e testada nos dois sentidos. Quatro elevados sobre água MIF(86..83,8) ainda têm folga incerta; sem observação DOS, sem abertura ou fechamento definitivo inventado. Não são essenciais ao acesso dos2ghouls. Antes de fechar alturas de A1 ou reproduzir esse padrão em outra área, conferir a folga/entradas/saídas no original; dependência de fidelidade permanece visível. Não afirmar que todo bloco sobre água permite passagem.
+A2:6/13 portas concluídas,4semLOCK pendentes e3LOCK1 com dependência de chave/fechadura ainda não resolvida. Não inventar chave ou sistema. **Próximo recorte independente:** par semLOCK MIF(49,15)/(49,19), mundo(123,48)/(123,60), ligado ao corredor oeste; conferir lados e conexões antes de configurar. Faltam63portas/147encontros no total. Após Stonekeep completa, levantamento integral de Rihad antes da solução técnica.
 
-**Próximo recorte funcional:** portas/conexões restantes de A2 em unidade pequena, conferindo LOCK/chave antes de configurar; sem espécie/arte nova por associação. Faltam147 encontros e66 portas no total. Depois de Stonekeep completa, levantamento integral de Rihad antes da solução técnica.
+**A1 preservado:**33/180 encontros incluem os dois ghouls da ligação por água aberta; folga sob quatro elevados MIF(86..83,8) continua não comprovada e não teve colisão alterada. [Pesquisa e limites](STONEKEEP_M02_04.md#a1-oeste--ligação-aberta-e-dois-ghouls). Não generalizar passagem sob paredes nem apagar candidato; resolver a evidência antes de fechar as alturas correspondentes.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 

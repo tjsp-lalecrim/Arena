@@ -6,6 +6,42 @@ O responsável adiou os testes manuais de Stonekeep para uma versão mais comple
 
 **Investigação futura: caminhos pela água sob paredes no original.** Pendência de fidelidade/conectividade da cobertura completa, vinculada à revisão de água/alturas abaixo. Verificar na wiki local e, quando viável, no jogo instalado quais posições/rotas permitem essa travessia e suas condições; separar observação original, interpretação de MAP1/FLOR e adaptação à grade. A investigação local de A1 oeste está registrada abaixo; ainda não há confirmação da folga nessas quatro células ou solução geral aprovada. Não tornar paredes/água globalmente atravessáveis, inventar túnel, alterar colisão/oclusão ou custo de Vigor nesta entrega. Investigar no setor efetivamente afetado antes de definir sua colisão; a consulta A1 oeste abaixo não resolve a folga dos quatro blocos.
 
+## A2 centro — três portas sem LOCK
+
+Base **66352d2** preservada. Grupo contíguo dentro de A2: três portas de aposentos entre a conexão funcional(160,39) e o corredor oeste. **7/70 portas** no Map015, sendo6/13 de A2 (a sétima global pertence a A3).33/180 encontros inalterados. Campanha permanece no Map012; testes manuais da base/setores continuam adiados, sem aprovação presumida.
+
+[Configuração autoral](mapas/STONEKEEP_A2_PORTAS_CENTRO_M02.json) recomposta por `tools/inspect-stonekeep-a2-doors.py`: consulta direta/hash39699021.MIF, decoder existente, MAP1/FLOR e registros LOCK/TRIG. STKEEP1.INF/índice já confirmado resolve0xB010→DCAS5.IMG. Mesma transformação zero-based: vista(u,Y)=(89−Xoriginal,Y), mundo=(3+3u,3+3Y). Não houve nova observação de partida DOS. Eixo de circulação derivado das paredes sólidas nos flancos e das células abertas nos dois lados; não da cor do automapa.
+
+| ID `stonekeep.a2central.door.*` | MIF | Vista | Centro Map015 | Circulação / eventos |
+|---|---|---|---|---|
+|01 |42,12 |47,12 |144,39 |oeste↔leste /72–80 |
+|02 |44,14 |45,14 |138,45 |norte↔sul /81–89 |
+|03 |47,17 |42,17 |129,54 |oeste↔leste /90–98 |
+
+**Condição:** nenhuma das três coordenadas tem LOCK ou TRIG declarado. Adotada interação comum, inicialmente fechada e sem chave/consumo; estado inicial e animação são adaptação MV, não teste do executável original. Lados válidos livres e conectados no grupo, sem água/condição de quest nova. Sem inventar ligação entre chave e porta.
+
+**Reuso:** o compilador `stonekeep-a2-central-doors.cjs` copia as nove partes da porta Map015 já existente (mesmo componente derivado de Map008), trocando só IDs, posição, orientação e referência do handler. Mantém a folha `!$Arena_Doors_M14_R03`,24frames, âncoras/moldura, topo transparente e face2tiles, batentes de geometria intactos. Arte reutilizada **provisória para DCAS5**, sem geração/polimento. Colisão3tiles na seção transversal fechada, passagem aberta nos mesmos tiles;9self-switches nativos por porta. Fechamento recusa envelope3×3 ocupado. Soleiras27tiles passam de região4 para6 para impedir patrulha na dobradiça; camadas0–4, água, paredes e todos os eventos anteriores permanecem idênticos. Nenhuma conexão foi escavada ou setor expandido.
+
+**Reconstrução/persistência:** gerador pai→build-stonekeep-whole→módulo acima, após A1 oeste;33encontros/IDs/recibos e4portas anteriores intactos. Restauração RAM usa a extensão já existente para acrescentar27componentes antes dos sprites, mantendo estados por(15,eventId,A). Não há novo sistema/plugin de fechadura, migração de dados pessoais ou namespace.
+
+### Dependências e matriz vigente
+
+[Índice das70portas](evidencias/m02-stonekeep-portas-a2-centro/cobertura.json):7implementadas,63pendentes. A2 tem6implementadas,4semLOCK ainda ausentes e3comLOCK=1 adiadas:
+
+| MIF / centro Map015 | Condição declarada | Falta antes de implementar |
+|---|---|---|
+|51,15 /117,48 |LOCK1 |Confirmar relação da chave de ferro original e regra de fechadura |
+|51,19 /117,60 |LOCK1 |Mesmo contrato, sem presumir que uma chave abra todas |
+|54,19 /108,60 |LOCK1 |Mesmo contrato; não criar chave fictícia ou lockpick silencioso |
+
+Wiki local Fang Lair(quest),p2, já consultada no levantamento, registra chave de ferro em(40,30), não essencial ao pergaminho, capaz de abrir uma de várias portas dos aposentos; **não identifica aqui uma correspondência exata**. As três portas acima continuam passagens provisórias como antes, não novas portas concluídas nem fechaduras removidas. Essa dependência não bloqueia portas semLOCK. Próximo recorte independente recomendado: par MIF(49,15)/(49,19), mundo(123,48)/(123,60), também semLOCK, no corredor imediatamente a oeste; confirmar lados e conexão na sua unidade antes de configurar. Os quatro elevados A1/MIF(86..83,8) continuam com folga não comprovada e colisões intocadas.
+
+**Verificações focais:** [cinco grupos Chrome156/headless/perfil isolado](evidencias/m02-stonekeep-portas-a2-centro/resultado.json), `tools/test-stonekeep-a2-central-doors.cjs`: fonte e condições; saídas idempotentes do gerador pai; três portas×dois lados por Enter, bloqueio fechado, abertura/fechamento e repetição durante transição recusada, travessia real nos dois sentidos, âncoras9partes estáveis, fechamento sobre personagem recusado e limites laterais preservados. Grafo restrito a831tiles, limites Map015(126,35)–(164,62), alcança ambos os lados das3portas desde(160,39) sem outra ala/transferência. RAM restaura estados mistos das7portas e acrescenta componentes em snapshot antigo; retorno à área preserva estados/quest/recibos/recursos. Três pontos técnicos válidos; saves normais bloqueados e localStorage vazio. Nenhuma batalha, percurso completo, geração artística, teste manual/editor/mobile ou nova aprovação realizada. Comparação visual das capturas na escala816×624; sem mudança ao asset fino lateral aprovado/ressalvado.
+
+**Acesso preservado:** http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → **Stonekeep · base integral (RAM)** → Esc → **Stonekeep: pontos da base integral** → **A2 centro · porta leste (147,39)**, **porta intermediária (138,42)** ou **porta oeste (132,54)**. Enter/clique/toque pelas interações existentes; Guardar/Carregar teste em RAM no menu. Servidor canônico existente reutilizado. Avaliação manual pode aguardar a versão mais completa.
+
+[Porta lateral fechada](evidencias/m02-stonekeep-portas-a2-centro/01-fechada.png) · [Frontal fechada](evidencias/m02-stonekeep-portas-a2-centro/02-fechada.png) · [Frontal aberta](evidencias/m02-stonekeep-portas-a2-centro/02-aberta.png).
+
 ## A1 oeste — ligação aberta e dois ghouls
 
 Base **c81f477** preservada. Delta delimitado no Map015: vista **u0–7/Y0–13**, ligação ao trecho antigo por u8, com os dois ghouls restantes de A1. [Configuração fonte](mapas/STONEKEEP_A1_OESTE_M02.json) e `tools/inspect-stonekeep-a1.py` recompõem112células do MIF/hash já aprovado usando o leitor existente; consulta original em leitura, extrações somente em tmp ignorado. Escala3/margem2 mantida; campanha continua Map012. **Acesso por piso/água aberta implementado; passagens sob estruturas ainda não confirmadas**, não declarar toda geometria de A1 definitiva.

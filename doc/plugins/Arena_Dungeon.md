@@ -1,3 +1,7 @@
+## Consumidor A2 centro — configuração, sem mudança de API
+
+Map015 acrescenta3portas semLOCK/TRIG em `STONEKEEP_A2_PORTAS_CENTRO_M02.json`, compiladas por `stonekeep-a2-central-doors.cjs` a partir do componente9partes já registrado. Mesmos24frames, orientação pelos lados, proteção de envelope e self-switches individuais. Sem lógica nova de chave/fechadura: as3LOCK1 pendentes não entram neste registro. [Coordenadas, limites e cinco grupos focais](../STONEKEEP_M02_04.md#a2-centro--três-portas-sem-lock). Snapshots RAM antigos recebem os novos IDs pelo hook existente de Arena_StonekeepWhole; Map008/Map012 preservados.
+
 ## Extensão A2-E — portas por mapa (M02)
 
 `registerDoors(mapId,{mapId,doors,doorAnimationFrames})` e `doorConfiguration()` acrescentam somente o consumidor Map015/Stonekeep. Map008 continua autoritativo em ArenaDungeon.json. APIs door/open/close/toggle usam o mapa corrente; self-switches carregam o mapId correto, mesmas nove partes, envelope e24frames. Nenhum registro para outros mapas, nenhuma mudança de motor ou geração artística. Tesouros/chave/revisão de MQ01 continuam exclusivos de Map008. A seleção por mapa é derivada e não gravada no save; transições do Game_Map e self-switches nativos continuam serializados. Regressão focal Map008 executada; [cobertura/fontes](../STONEKEEP_M02_04.md#faixa-a2-e--primeiro-setor-funcional-no-map015).

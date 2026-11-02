@@ -22,9 +22,10 @@ function build(){
  require('./stonekeep-sector-a2e.cjs')(map,config);
  require('./stonekeep-legacycrop-encounters.cjs')(map,config);
  require('./stonekeep-a1-west.cjs')(map,config);
+ require('./stonekeep-a2-central-doors.cjs')(map,config);
  for(const p of config.points)if(![4,5].includes(map.data[(5*274+p.position[1])*274+p.position[0]]))throw Error('Stonekeep integral: ponto técnico fora do piso '+p.name);
  const infos=read('data/MapInfos.json');if(infos[15]&&infos[15].name!=='Stonekeep integral — base isolada')throw Error('Map015 ocupado');infos[15]={id:15,name:'Stonekeep integral — base isolada',expanded:true,order:15,parentId:0,scrollX:0,scrollY:0};
  for(const [file,obj]of [['Map015',map],['ArenaStonekeepWhole',config],['MapInfos',infos]])fs.writeFileSync(path.join(R,'data/'+file+'.json'),(file==='MapInfos'?'[\n'+obj.map(v=>JSON.stringify(v)).join(',\n')+'\n]':JSON.stringify(obj))+'\n');
- console.log('Map015274x274;33 encontros/4 portas; A1 oeste por água aberta, alturas ainda parciais.');return config;
+ console.log('Map015274x274;33 encontros/7 portas; A2 centro sem LOCK, fechaduras restantes pendentes.');return config;
 }
 module.exports=build;if(require.main===module)build();
