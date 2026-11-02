@@ -1,6 +1,6 @@
 ## Orc M02 — piloto de batalha RAM
 
-Arena_Orc0.1.0: um exemplar Enemy7/Troop8, quatro movimentos/24desenhos; reutiliza preparo, combate, isolamento e hub existentes. Sem caminhada/encontros/recompensas de campanha. [Contrato](plugins/Arena_Orc.md), [fontes/arte/testes](ORC_M02.md).
+Arena_Orc0.2.0: Enemy7/Troop8/batalha aprovada preservados; doze poses e um exemplar de patrulha Map016/RAM, contrato de área somente na sessão. Reutiliza preparo, encontros, combate, isolamento e hub. Sem distribuição dos seis B2/recompensas de campanha. [Contrato](plugins/Arena_Orc.md), [fontes/arte/testes](ORC_M02.md).
 
 ## Acessos de Stonekeep — consumidor explícito Map015
 

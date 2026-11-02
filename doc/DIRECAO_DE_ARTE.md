@@ -16,6 +16,12 @@ Fonte principal de identidade visual, personagens/animações e processo de asse
 
 ## Estados e validação
 
+### Preparação de inimigos por dungeon — organização aprovada
+
+Ao trabalhar uma dungeon, identificar nas fontes as espécies confirmadas e registrar na matriz existente combate, caminhada, aprovações e dependências. Preparar somente os assets ausentes, **uma espécie por entrega**, aguardando avaliação antes da próxima. Quando combate e caminhada estiverem ambos ausentes, entregar os dois juntos para um único exemplar integrado, sem antecipar o grupo. Reutilizar assets aprovados entre dungeons após conferir a correspondência nas fontes; não produzir bestiário geral ou variantes sem necessidade comprovada. Após preparar as espécies da dungeon, retomar distribuição de encontros, portas e eventos. Exemplo operacional vigente: [matriz de Stonekeep](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies).
+
+Essa organização substitui para os próximos exemplares a separação automática entre piloto de batalha e caminhada. Não reabre conjuntos aprovados nem declara encontros concluídos por disponibilidade dos assets.
+
 ### Ilustrações por bloco — padrão para novas gerações
 
 **Cadência obrigatória, decisão de02/11/2026:** implementar **uma única ilustração por entrega** e aguardar avaliação do responsável antes de produzir a próxima. Cada bloco significativo continua com sua imagem própria; dividir a produção em entregas sucessivas, sem lote antecipado mesmo após aprovação de um piloto. Referenciar o bloco e apresentar a imagem integrada. Não invalidar as artes já aprovadas nem iniciar revisão retroativa por associação. Tela de abertura tem pendência própria REF16, separada da conclusão dos mapas. **Fundo V01 de a39d71e aprovado explicitamente pelo responsável**; preservado sem regeneração. [Título vetorial separado e fontes](plugins/Arena_TitleArt.md) de901dfcb também explicitamente aprovado. Modernização futura fica na REF16, sem alterar a arte agora. Não autoriza outra imagem, proposta ou revisão retroativa.

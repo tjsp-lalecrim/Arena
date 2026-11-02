@@ -1,0 +1,21 @@
+{
+  "version": "orc-walk-v01",
+  "tool": "image_gen built-in",
+  "prompt": "Use case: stylized-concept, game sprite walking animation. Produce ONE walking sheet for the SAME Arena1994 orc from image1, approved battle identity. Image2 decoded ORC1..5.CFA is original equipment/front/side/back identity reference, NOT target camera or pixel style. Image3 existing skeleton walk sheet is orthogonal overhead camera/native3x4format reference ONLY, NOT anatomy. Preserve stocky muscular olive-green orc, angular face small red eyes, silver domed helmet brass trim, silver shoulder armor and segmented waist protection, dark blue sleeves/tunic, crossed ochre straps, olive trousers, dark boots. Same brown-handled spiked metal MACE in anatomical RIGHT hand, small round burgundy/brown shield on LEFT forearm. No axe, horns, giant tusks, skull ornaments, modern Skyrim armor or new accessories. Painted figurative dark fantasy finish, coherent with approved battle, not pixel art or glossy3D. Camera orthogonal overhead for 2D top-down grid, about60degrees elevation seeing top of helmet, shoulders/back, no isometric/diagonal orientation or lateral battle camera. Exactly12 full-body transparent figures in three evenly spaced columns and four rows, portrait3:4 sheet ideally1024x1536, generous transparent gaps/margins, full boots/shield/mace in each cell. Row1 SOUTH toward image bottom, head/body aligned, mace on imageLEFT and shield imageRIGHT. Row2 WEST facing imageLEFT, proper near/far arms: shield nearer south/bottom side, mace farther north side. Row3 EAST facing imageRIGHT, mace nearer south/bottom side, shield farther north. Row4 NORTH facing imageTOP, back of helmet/shoulders, NO backward-looking face; mace on imageRIGHT and shield imageLEFT. Preserve straps and same armor/equipment across directions. Do NOT mirror a direction: illumination upper-left remains coherent, hands never swap. EACH row: column1 real left-foot-forward walking step with bent hips/knees/ankles and restrained arm/gear counterbalance, column2 stationary neutral grounded support with both boots clearly planted and no lifted knee, column3 opposite right-foot-forward step, clearly different leg articulation. Compact natural strides, no static copies translated/rotated, no sliding torso. Stable shared head/body axis and foot-support line within row; same body scale/proportions across all12figures, never individually scale to fill cells. Maul remains firmly gripped, shield stays attached to forearm, no detached gear/extra limbs. Body up to56pixels tall in final64x64cells, preserve clarity of silhouette and foot articulation at that size. Truly transparent alpha, no floor, pedestal, shadows, background, labels, grid, text or extra poses. Only this one orc and its12walking/neutral drawings; NO battle regeneration, variants, other enemies or scenery.",
+  "references": [
+    {
+      "file": "tmp/orc-walk-review/approved-identity.png",
+      "derivedFrom": "art/masters/stonekeep-orc-v01/sheet-v02-spacing.png",
+      "role": "battle identity explicitly approved at42b857f"
+    },
+    {
+      "file": "tmp/orc-walk-review/original-directions.png",
+      "role": "original ORC1..5.CFA cardinal equipment evidence"
+    },
+    {
+      "file": "img/characters/$Arena_skeleton_walk_v01.png",
+      "role": "camera/native format only"
+    }
+  ],
+  "approval": "Battle explicitly approved; walking pending owner evaluation"
+}

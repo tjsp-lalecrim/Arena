@@ -1,4 +1,46 @@
-# Stonekeep — orc, piloto de batalha V01
+# Stonekeep — orc: caminhada e inspeção RAM V01
+
+## Aprovação recebida e cobertura atual
+
+O responsável **aprovou explicitamente as animações de combate entregues em42b857f**. Ambiente/casos adicionais não foram informados; não estender a aprovação a balanceamento, recompensas, encontros ou caminhada. Mestres/atlas/perfil de batalha preservados; somente metadados de aprovação atualizados. A nova caminhada e patrulha **aguardam avaliação**.
+
+Uma folha de **12desenhos, quatro direções e três fases**, com o mesmo orc, elmo, paleta azul/oliva, maça à direita e escudo à esquerda. Fonte cardinal: ORC1–5.CFA do original instalado, leitor/paleta existentes; [hashes e referências](arte/orc-walk-v01/sources.json). Vista superior ortogonal é adaptação à grade, não câmera lateral da batalha. Sem nova observação DOS, variante ou outra espécie gerada.
+
+## Exportação e limites artísticos
+
+Folha `img/characters/$Arena_orc_walk_v01.png`,192×256, células64×64, apoio62, escala única1/6 após normalização de resolução da correção leste. Ordem nativa sul/oeste/leste/norte; neutra na coluna central. Doze desenhos distintos, sem espelhar direções ou transladar uma pose estática. Cabeça/torso têm eixo estável, passos articulam pernas e equipamento acompanha os braços. Pintura foi inspecionada no atlas1:1 e no vídeo, sem substituir avaliação do responsável.
+
+Produção pelo **image_gen integrado**. Primeiro mestre repetia parte das fases; correções dirigidas selecionaram somente sul/oeste passoB daV02, norte passoB daV03 e uma pose leste de resolução maior, mantendo as outras oito daV01. O exportador normaliza a resolução dessa última pela largura do elmo da neutra leste antes da escala comum; não estica cada pose para preencher a célula. Partes não selecionadas, incluindo um recorte de borda daV03, não entram no motor. [Prompt](arte/orc-walk-v01/prompt.json), [primeira correção](arte/orc-walk-v01/stride-correction.json), [correções/seleção finais](arte/orc-walk-v01/final-corrections.json), [recortes, densidade e hashes](arte/orc-walk-v01/exports.json). Não são variantes ou quatro propostas de espécie. Reconstruir só a caminhada: `python tools/export-stonekeep-orc-walk.py`; dados/sala: `node tools/build-stonekeep-orc.cjs`. Não reexportar a batalha aprovada por associação.
+
+## Um exemplar de inspeção, sem distribuir B2
+
+**Map016**, sala técnica17×13, piso/parede/água existentes, pilar e margens para conferir colisão. Não representa topologia original nem substitui qualquer trecho da campanha. Entrada(4,9), orc(9,6), ID **technical.stonekeep.orc.walk.01**, evento1; raio Manhattan3/intervalo90, somente região4/piso e colisões nativas. Água/pilar são obstáculos de inspeção; não se alterou a natação da dungeon. Área técnica própria, sem colisão de IDs/recibos com Stonekeep.
+
+Mesmos Enemy7/Troop8,40PV/ATQ10/DEF5/MAT0/MDF3/AGI8/SOR5/HIT90% e ação nativa aprovados como piloto, **ainda provisórios**. EXP0/loot vazio somente no laboratório; configuração de campanha continua desabilitada/não definida. Contato usa Arena_Encounters, trava compartilhada, batalha aprovada e vitória apaga somente esse ID; derrota mantém game over. Nenhuma mecânica nova, distribuição dos seis, revisão de loot ou descanso. Cobertura real Map015 permanece **49/180encontros e32/70portas**. Para concluir Stonekeep, seguir a [matriz de nove espécies](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies) antes de retomar distribuição/encontros/portas/eventos. Forçar a porta determinístico/sem consumo continua adaptação pendente de avaliação no teste integrado.
+
+## Acesso e avaliação curta
+
+**http://127.0.0.1:8774/** → **Testes / Debug → Campanha e mapas → Stonekeep · orc — patrulha (RAM)**. Servidor canônico existente reutilizado, sem limpeza de dados. A batalha direta antiga continua em **Combate → Stonekeep · orc (RAM)**. Fixture Bretã feminina nível2/adaga/recursos completos, separada dos saves pessoais.
+
+1. Observar o único orc patrulhar e caminhar ao redor para conferir sul, oeste, leste e norte, maça/escudo, escala e apoio. O pilar e a água não devem ser atravessados pelo orc.
+2. Encostar para entrar no combate já aprovado; não é necessário repetir sua avaliação artística. Vencer retorna à sala e remove o exemplar técnico.
+3. **Guardar teste em RAM / Carregar teste da RAM**, no menu, mantêm posição e derrota; sair pelo menu para o título encerra a sessão. Reentrar no hub reinicia o exemplar. Não grava/carrega slots pessoais. Não exige percurso da dungeon ou novo teste manual do restante.
+
+## Verificação focal desta entrega
+
+`tools/test-stonekeep-orc-walk.cjs`, **5grupos**, Chrome156/WebGL/perfil descartável/canvas816×624: caminho real no hub, uma única instância; quatro direções e padrões0/1/2 pelo movimento nativo; patrulha natural e bloqueios de pilar/água/raio, passos amostrados sempre em piso permitido. Contato por teclado, tentativa concorrente recusada, um ataque e vitória controlada/retorno; um recibo vazio,0 EXP/loot, repetição sem prêmio. Guardar/Carregar RAM antes/depois restaura posição, derrota, recursos, pontos, inventário e quests; título remove contrato técnico e volta à configuração normal. Save16 recusado, localStorage vazio, zero erros JS/HTTP faltantes.
+
+Comparação à base42b857f confirma assets de batalha byte a byte e perfil/dados semanticamente iguais; bancos/Map012/015/cobertura preservados. Pai `build-rihad-arrival` recompõe Map016 e mantém todos os dados anteriores; não repetida campanha/matriz de combate. A primeira tentativa de teste leu cedo demais a janela ainda aberta após vitória; runner passou a aguardar a transição nativa, sem alterar o combate. Apenas verificação técnica, sem novo teste no editor/mobile, balanceamento ou aprovação manual da caminhada.
+
+[Vídeo≈16s normal](evidencias/m02-orc-walk-v01/caminhada-contato-normal.webm), [sala](evidencias/m02-orc-walk-v01/patrulha.png), [contato](evidencias/m02-orc-walk-v01/contato.png), [atlas1:1](evidencias/m02-orc-walk-v01/atlas-escala-real.png), [resultado](evidencias/m02-orc-walk-v01/resultado.json), [QA](evidencias/m02-orc-walk-v01/video-qa.json). Vídeo do canvas nativo30fps/velocidade normal: demonstração controlada de quatro direções, patrulha natural e contato; vitória controlada ocorre depois da gravação. Decodificado localmente a4x só para inspeção, sem alterar o vídeo; servidor não expõe evidências. **Aguardar avaliação da caminhada antes da próxima espécie**; depois homem-lagarto, ogro e aranha conforme matriz. Não distribuir os seis B2 agora.
+
+---
+
+## Histórico — piloto de batalha42b857f
+
+O registro abaixo preserva os parâmetros/evidências da entrega anterior. Sua espera de avaliação artística foi superada somente pela aprovação explícita do combate relatada acima.
+
+### Piloto de batalha V01
 
 Base **7ec5051**, dependências preservadas na feature `feature/m02-orc-piloto`. Um exemplar de batalha para avaliação visual: **não implementa caminhada nem os seis encontros de B2**. Cobertura do Map015 continua49/180encontros e32/70portas; campanha normal permanece Map012. Prioridade mantida: encontros/portas antes de revisão de loot, tesouros e descanso. **Forçar a porta**, determinístico e sem consumo, continua adaptação pendente de avaliação do responsável no teste integrado. O relato rápido anterior do mapa é preliminar, sem aprovação integral de colisões, encontros ou persistência.
 

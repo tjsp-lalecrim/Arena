@@ -66,5 +66,60 @@
     "exp": null,
     "loot": null
   },
-  "source": "ORC1/3/6.CFA and Monsters PDF15-16. HP40 uses upper wiki range15-40; ATQ10/DEF5/MDF3/AGI8/SOR5/HIT90% are provisional MV adaptations, not original conversions. Basic attack only, no special resistance. EXP0/empty loot solely for RAM battle; campaign rewards NOT configured."
+  "source": "ORC1/3/6.CFA and Monsters PDF15-16. HP40 uses upper wiki range15-40; ATQ10/DEF5/MDF3/AGI8/SOR5/HIT90% are provisional MV adaptations, not original conversions. Basic attack only, no special resistance. EXP0/empty loot solely for RAM battle; campaign rewards NOT configured.",
+  "walk": {
+    "file": "$Arena_orc_walk_v01",
+    "cell": [
+      64,
+      64
+    ],
+    "ground": 62,
+    "animationWait": 10
+  },
+  "walkLab": {
+    "entry": {
+      "id": "technical.stonekeep.orc.walk.arrival",
+      "mapId": 16,
+      "x": 4,
+      "y": 9,
+      "direction": 8
+    },
+    "encounters": {
+      "schemaVersion": 1,
+      "mapId": 16,
+      "areaId": "technical.stonekeep.orc.walk",
+      "completionQuestId": "MQ02",
+      "mapVisuals": {
+        "7": {
+          "file": "$Arena_orc_walk_v01",
+          "cell": [
+            64,
+            64
+          ],
+          "ground": 62,
+          "animationWait": 10
+        }
+      },
+      "entries": [
+        {
+          "id": "technical.stonekeep.orc.walk.01",
+          "eventId": 1,
+          "enemyId": 7,
+          "troopId": 8,
+          "origin": [
+            9,
+            6
+          ],
+          "sourceFlat": "Technical inspection specimen only, not one of the original Stonekeep positions",
+          "questSpecific": true,
+          "radius": 3,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ]
+    }
+  }
 }

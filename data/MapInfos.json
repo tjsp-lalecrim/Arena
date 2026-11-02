@@ -14,5 +14,6 @@ null,
 {"id":12,"expanded":true,"name":"M02-04 Stonekeep — amostra","order":12,"parentId":0,"scrollX":0,"scrollY":0},
 {"id":13,"expanded":true,"name":"M02-06 Fang Lair — celas (provisório)","order":13,"parentId":0,"scrollX":0,"scrollY":0},
 {"id":14,"name":"Prova Stonekeep 274 (técnica)","expanded":true,"order":14,"parentId":0,"scrollX":0,"scrollY":0},
-{"id":15,"name":"Stonekeep integral — base isolada","expanded":true,"order":15,"parentId":0,"scrollX":0,"scrollY":0}
+{"id":15,"name":"Stonekeep integral — base isolada","expanded":true,"order":15,"parentId":0,"scrollX":0,"scrollY":0},
+{"id":16,"name":"Orc — inspeção RAM","expanded":true,"order":16,"parentId":0,"scrollX":0,"scrollY":0}
 ]

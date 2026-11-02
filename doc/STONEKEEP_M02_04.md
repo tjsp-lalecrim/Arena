@@ -1,6 +1,28 @@
 # M02-04 — amostra integrada de Stonekeep
 
-## Piloto atual do orc — batalha somente
+## Matriz operacional de assets — nove espécies
+
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 continua **49/180encontros e32/70portas**; a inspeção RAM do orc não entra nessa contagem.
+
+| Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
+|---|---|---|---|---|
+|Rato /52 /16 |Disponível R02 |Disponível R02 |Combate R02 aprovado (associação a61977b); exploração e entrega M01 preservadas, sem nova aprovação específica inferida |Reutilizar; nenhuma geração necessária agora |
+|Goblin /53 /32 |Disponível R03 |Disponível R02 |Legado da entrega M01; não inventar aprovação artística individual nova a partir de testes gerais |Reutilizar; manter ressalvas/evidências M01 |
+|Homem-lagarto /54 /19 |Disponível R03 |**Ausente** |Combate legado disponível; não inferir aprovação de caminhada inexistente |Uma caminhada coerente com batalha/original + exemplar RAM; não regenerar batalha por associação |
+|Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
+|Orc /56 /22 |**Aprovado42b857f** |Disponível V01, **aguarda avaliação** |Relato atual aprova animações de combate; não aprova equilíbrio, recompensas ou encontros |Avaliar esta caminhada/um exemplar RAM; seis B2 continuam ausentes |
+|Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
+|Ogro /58 /8 |**Ausente** |**Ausente** |Nenhum exemplar aprovado |Uma entrega com combate+caminhada do mesmo exemplar e inspeção RAM; avaliar antes de outra espécie |
+|Aranha /59 /20 |**Ausente** |**Ausente** |Nenhum exemplar aprovado |Uma entrega com combate+caminhada do mesmo exemplar, sem presumir outra aranha/franquia equivalente |
+|Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
+
+**Sequência proposta:**(1) concluir avaliação da caminhada do orc desta entrega;(2) homem-lagarto, pois três referências faltam em B2 e a batalha já existe;(3) ogro, para as dependências da região B1 adjacente a B2 (dois dos oito);(4) aranha, incluindo nove referências A3. Ogro/aranha recebem combate+caminhada juntos, um exemplar por entrega e avaliação entre espécies. Não é autorização de bestiário/lotes antecipados. Depois retomar distribuição dos encontros, portas e eventos por blocos contíguos; não declarar áreas completas com base nos assets. Loot/tesouros/descanso continuam depois; Forçar a porta permanece adaptação pendente de avaliação no teste integrado.
+
+## Orc atual — caminhada e inspeção RAM
+
+Responsável **aprovou explicitamente as animações de combate de42b857f**, sem ambiente adicional informado ou aprovação de balanceamento/encontros. [Caminhada e exemplar isolado](ORC_M02.md): quatro direções, doze desenhos, um encontro técnico no Map016, via hub. Batalha/mestres/atlas aprovados intactos; Map012/015 e os seis IDs B2 não foram modificados. Caminhada/patrulha aguardam avaliação, sem exigir percurso manual da dungeon agora.
+
+### Histórico — piloto de batalha do orc
 
 Sobre7ec5051: [um exemplar/24desenhos para avaliação](ORC_M02.md), sem caminhada ou evento de mapa. Os seis orcs B2 continuam ausentes e a cobertura49/180encontros/32/70portas não mudou. Aguardar avaliação visual antes da caminhada e expansão. Testes focais de batalha não aprovam balanceamento ou recompensas. **Forçar a porta**, determinístico/sem consumo, continua adaptação pendente de avaliação do responsável no teste integrado; não exigir novos testes manuais do restante agora. Encontros/portas primeiro; revisão de loot/tesouros e descanso depois.
 

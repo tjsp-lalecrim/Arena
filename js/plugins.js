@@ -56,5 +56,5 @@ var $plugins =
 {"name":"Arena_StonekeepWhole","status":true,"description":"v0.1.0 Stonekeep integral em avaliação isolada","parameters":{}},
 {"name":"Arena_StonekeepAccess","status":true,"description":"v0.2.0 Fechaduras comuns e corredor seco sob estrutura em Stonekeep","parameters":{}},
 {"name":"Arena_TitleArt","status":true,"description":"v0.2.0 Fundo aprovado e título vetorial REF16","parameters":{}},
-{"name":"Arena_Orc","status":true,"description":"v0.1.0 Piloto de batalha do orc, somente RAM","parameters":{}}
+{"name":"Arena_Orc","status":true,"description":"v0.2.0 Batalha do orc e exemplar de caminhada, somente RAM","parameters":{}}
 ];

@@ -1,23 +1,32 @@
 /*:
- * @plugindesc v0.1.0 Orc de Stonekeep: somente piloto de batalha RAM.
+ * @plugindesc v0.2.0 Orc de Stonekeep: batalha aprovada e inspeção de caminhada RAM.
  * @author Codex
  * @help Após DebugHub, Stonekeep e núcleos de combate. Sem encontros de campanha.
- * Reutiliza preparo/retorno técnico; nenhuma caminhada ou recompensa de campanha.
+ * Reutiliza preparo/retorno técnico; somente um exemplar no Map016, sem campanha.
  */
 var ArenaOrc;
 (function(){'use strict';
  DataManager._databaseFiles.push({name:'$arenaOrc',src:'ArenaOrc.json'});
  var pending=false,loaded=DataManager.isDatabaseLoaded;
+ function walking(){return !!($gameSystem&&$gameSystem._arenaOrcWalkSession&&ArenaContinuation.labActive());}
+ function here(){return walking()&&$gameMap.mapId()===$arenaOrc.walkLab.entry.mapId;}
  DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;var c=$arenaOrc;
-  if(!c||!$dataEnemies[c.enemyId]||!$dataTroops[c.troopId]||!$arenaBattleMotion.enemies[c.enemyId]||!$arenaLoot.enemies[c.enemyId]||c.campaign.enabled!==false)throw Error('Orc: vínculos do piloto RAM inválidos. Reconstrua com build-stonekeep-orc.');return true;};
- ArenaOrc={startLab:function(){if(!ArenaStonekeep.previewMaterials())return false;pending=true;return true;}};
+  if(!c||!$dataEnemies[c.enemyId]||!$dataTroops[c.troopId]||!$arenaBattleMotion.enemies[c.enemyId]||!$arenaLoot.enemies[c.enemyId]||c.campaign.enabled!==false||!c.walkLab||!$dataMapInfos[c.walkLab.entry.mapId]||c.walkLab.encounters.entries.length!==1)throw Error('Orc: vínculos do piloto RAM inválidos. Reconstrua com build-stonekeep-orc.');return true;};
+ ArenaOrc={startLab:function(){if(!ArenaStonekeep.previewMaterials())return false;pending='battle';return true;},
+  startWalkLab:function(){if(!ArenaContinuation.previewArrival($arenaOrc.walkLab.entry,true))return false;$gameSystem._arenaOrcWalkSession=true;$gameActors.actor(1).changeLevel(2,false);pending='walk';return true;},walkLabActive:walking};
+ // Session-only contract: no mutation of the campaign registry, map or six B2 IDs.
+ var forMap=ArenaCampaignConfig.forMap,encounters=ArenaCampaignConfig.encounters;
+ ArenaCampaignConfig.forMap=function(mapId){var c=$arenaOrc;if(walking()&&mapId===c.walkLab.entry.mapId)return{ok:true,config:{id:c.walkLab.encounters.areaId,questId:'MQ02',mapId:mapId,encounters:c.walkLab.encounters}};return forMap.apply(this,arguments);};
+ ArenaCampaignConfig.encounters=function(areaId){return here()&&areaId===$arenaOrc.walkLab.encounters.areaId?{ok:true,config:$arenaOrc.walkLab.encounters}:encounters.apply(this,arguments);};
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);var c=$arenaOrc;
-  if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===c.lab.mapId&&!$gamePlayer.isTransferring()){
+  if(pending==='walk'&&here()&&!$gamePlayer.isTransferring()){pending=false;if(!ArenaBattle.prepare(c.walkLab.entry.mapId))throw Error('Orc: preparo de patrulha indisponível.');}
+  if(pending==='battle'&&ArenaContinuation.labActive()&&$gameMap.mapId()===c.lab.mapId&&!$gamePlayer.isTransferring()){
    pending=false;$gamePlayer.locate(c.lab.x,c.lab.y);$gamePlayer.center(c.lab.x,c.lab.y);$gamePlayer.setDirection(c.lab.direction);$gameTemp.clearDestination();
    if(!ArenaBattle.prepare(c.lab.mapId))throw Error('Orc: preparo técnico indisponível.');
    BattleManager.setup(c.troopId,false,false);SceneManager.push(Scene_Battle);
   }
  };
- ArenaDebugHub.register({symbol:'arenaOrc',name:'Stonekeep · orc (RAM)',category:'combat',description:'Exemplar de batalha: espera, maça, dano e derrota. Atributos provisórios; sem EXP/loot. Caminhada e seis encontros B2 ainda ausentes.',saving:'Somente RAM · slots normais bloqueados'},ArenaOrc.startLab);
+ ArenaDebugHub.register({symbol:'arenaOrc',name:'Stonekeep · orc (RAM)',category:'combat',description:'Batalha aprovada do exemplar; atributos provisórios e sem EXP/loot. Não distribui os seis encontros de B2.',saving:'Somente RAM · slots normais bloqueados'},ArenaOrc.startLab);
+ ArenaDebugHub.register({symbol:'arenaOrcWalk',name:'Stonekeep · orc — patrulha (RAM)',category:'campaign',description:'Um orc em sala de inspeção, quatro direções e contato com a batalha aprovada. Sem EXP/loot; não é um dos seis encontros de B2.',saving:'Somente RAM · Guardar/Carregar teste · slots normais bloqueados'},ArenaOrc.startWalkLab);
 })();
