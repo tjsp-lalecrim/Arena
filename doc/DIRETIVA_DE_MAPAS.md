@@ -52,6 +52,14 @@ Nunca desenhar um cap em camada acima do jogador sobre uma passagem que deveria 
 
 Fechamento recusado enquanto jogador ou evento não-through ocupa envelope de giro. Collider bloqueado até o fim da abertura; volta a bloquear no início do fechamento aceito. Todos os quadros têm mesmo canvas/escala/âncora. Comparar pixels da dobradiça e posição da moldura, além de conferir se os quadros são diferentes. Água: A1 próprio e periódico; natação exclusivamente na região marcada, preservando flags nativas, bordas, obstáculos e veículos. Não gastar/recuperar Vigor em exploração.
 
+## Água sob estruturas — regra de construção por evidência
+
+Não confundir FLOR aquático com passagem: MAP1/altura/espessura/apoios podem continuar bloqueando. Registrar coordenada original, camada de piso e volume superior separadamente. Primeiro conferir wiki/planta/dados e, quando viável, travessia no original. Distinguir fato observado, interpretação de formato e incerteza; uma regra confirmada em outra dungeon não prova cada ocorrência local.
+
+Somente onde a folga/conectividade estiver comprovada, compilar água transitável na lista explícita e estrutura em sobreposição visual independente, preservando bordas/apoios sólidos, acesso dos dois lados e uma entrada/saída legível. Isso é exceção documentada à oclusão de passagens, não liberação global de paredes/água nem `through` no jogador. Testar camadas e travessia nos dois sentidos; manter natação/recurso/veículos existentes. Não introduzir mergulho, oxigênio ou teclas por associação.
+
+Se a evidência não resolver a folga, conservar o candidato como **geometria provisória**, sem inventar abertura/fechamento definitivo. Continuar o trabalho independente quando houver caminho original aberto sustentado pelos dados; se for a única conexão, registrar a dependência concreta antes de fixá-la. Aprendizado aplicado e limites do A1 oeste em [Stonekeep](STONEKEEP_M02_04.md#a1-oeste--ligação-aberta-e-dois-ghouls). Nenhum underpass foi implementado nessa entrega: quatro blocos seguem candidatos não resolvidos, não referência aprovada de colisão.
+
 ## Critérios de validação pertinentes à alteração
 
 1. Ver um caso frontal e um lateral, ambos pelos dois lados, incluindo aberto, intermediário, fechado e travessia real.

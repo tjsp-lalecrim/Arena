@@ -1,0 +1,33 @@
+{
+  "sourceMifSHA256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "consulted": [
+    {
+      "file": "doc/wiki/Arena_Fang Lair (quest) - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "sha256": "623b7ff191c51f47176f02b4fae35a9b51f953d37c71fb6445a0b711cb55c1ae",
+      "coverage": "p2/5:Stonekeep/planta/natação; nenhuma passagem específica sob parede identificada"
+    },
+    {
+      "file": "doc/wiki/Arena_Halls of Colossus - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "sha256": "df6b624e6ea349b10601aa264e33bb780df920d689f0f494012347bc21a4059b",
+      "coverage": "p3:overhang atravessável no original, em outra dungeon; não prova coordenada em Stonekeep"
+    },
+    {
+      "file": "tmp/original-review/MapGeneration.cpp",
+      "sha256": "6ed666a503ddce27e49c8c4aedf18ca522a88ee61c5337141ee18e771259e378",
+      "coverage": "writeVoxelInfoForMAP1:parede regular bytes iguais versus Raised; altura e espessura lidas separadamente"
+    },
+    {
+      "file": "tmp/stonekeep-review/ExeData.cpp",
+      "sha256": "24c57c018bbac9de583be48b10104b8150571c300510c27aa06cbd7ce1e0ceb1",
+      "coverage": "OpenTESArena pin4f11a858:BoxArrays/heightsInterior/thicknessesInterior; não fornece valores numéricos sem extrair tabela do executável"
+    }
+  ],
+  "originalObservation": {
+    "attempt": "Cópia existente em tmp/swimming-review, incluindo emulador; originais não montados. Primeira sondagem sem janela. Abordagem alterada para janela visível (Normal), aguardando3s; sky.list_windows continuou sem retornar DOSBox. Processos identificados9444/15396, ambos da cópia desta tarefa, encerrados. Sem tentativa de captura sem alvo válido.",
+    "result": "Sem observação de partida DOS, travessia ou folga vertical.",
+    "readOnlyOriginal": true
+  },
+  "confirmed": "MAP1/FLOR lidos novamente do MIF90x90 e comparados ao cache; posições2ghouls e caminho aberto.",
+  "interpretation": "Raised sobre FLOR13 é candidato, não prova de passagem; slots height0/1 e thickness2/3 nos quatro blocos.",
+  "unresolved": "Folga original em MIF(86,8),(85,8),(84,8),(83,8) e se o personagem em natação passa sob cada bloco. Não essencial à rota aberta implementada."
+}

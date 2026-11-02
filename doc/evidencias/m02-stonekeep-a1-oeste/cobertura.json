@@ -1,0 +1,165 @@
+{
+  "base": "c81f477",
+  "mapId": 15,
+  "implemented": 33,
+  "total": 180,
+  "remaining": 147,
+  "doorsImplemented": 4,
+  "doorsTotal": 70,
+  "sectors": [
+    {
+      "sector": "A1",
+      "implemented": 14,
+      "total": 14
+    },
+    {
+      "sector": "A2",
+      "implemented": 19,
+      "total": 19
+    },
+    {
+      "sector": "A3",
+      "implemented": 0,
+      "total": 19
+    },
+    {
+      "sector": "B1",
+      "implemented": 0,
+      "total": 10
+    },
+    {
+      "sector": "B2",
+      "implemented": 0,
+      "total": 25
+    },
+    {
+      "sector": "B3",
+      "implemented": 0,
+      "total": 20
+    },
+    {
+      "sector": "C1",
+      "implemented": 0,
+      "total": 19
+    },
+    {
+      "sector": "C2",
+      "implemented": 0,
+      "total": 32
+    },
+    {
+      "sector": "C3",
+      "implemented": 0,
+      "total": 22
+    }
+  ],
+  "added": [
+    {
+      "id": "stonekeep.a1west.ghoul.01",
+      "eventId": 70,
+      "enemyId": 5,
+      "troopId": 6,
+      "sourceOriginal": [
+        82,
+        2
+      ],
+      "view": [
+        7,
+        2
+      ],
+      "origin": [
+        24,
+        9
+      ],
+      "sourceFlat": "GHOUL.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.a1west.ghoul.02",
+      "eventId": 71,
+      "enemyId": 5,
+      "troopId": 6,
+      "sourceOriginal": [
+        83,
+        3
+      ],
+      "view": [
+        6,
+        3
+      ],
+      "origin": [
+        21,
+        12
+      ],
+      "sourceFlat": "GHOUL.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "priorMatrix": "doc/evidencias/m02-stonekeep-omissoes/cobertura.json",
+  "underStructure": [
+    {
+      "view": [
+        3,
+        8
+      ],
+      "sourceOriginal": [
+        86,
+        8
+      ],
+      "mapRaw": 4104,
+      "floorRaw": 3328,
+      "status": "Raised MAP1 over wet FLOR; swimming clearance unconfirmed. Existing collision unchanged, not a definitive closure."
+    },
+    {
+      "view": [
+        4,
+        8
+      ],
+      "sourceOriginal": [
+        85,
+        8
+      ],
+      "mapRaw": 6408,
+      "floorRaw": 3328,
+      "status": "Raised MAP1 over wet FLOR; swimming clearance unconfirmed. Existing collision unchanged, not a definitive closure."
+    },
+    {
+      "view": [
+        5,
+        8
+      ],
+      "sourceOriginal": [
+        84,
+        8
+      ],
+      "mapRaw": 6408,
+      "floorRaw": 3328,
+      "status": "Raised MAP1 over wet FLOR; swimming clearance unconfirmed. Existing collision unchanged, not a definitive closure."
+    },
+    {
+      "view": [
+        6,
+        8
+      ],
+      "sourceOriginal": [
+        83,
+        8
+      ],
+      "mapRaw": 4104,
+      "floorRaw": 3328,
+      "status": "Raised MAP1 over wet FLOR; swimming clearance unconfirmed. Existing collision unchanged, not a definitive closure."
+    }
+  ]
+}

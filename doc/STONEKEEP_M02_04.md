@@ -4,7 +4,49 @@
 
 O responsável adiou os testes manuais de Stonekeep para uma versão mais completa. Preservar as evidências técnicas de8f28207/eb81e7a; **não registrar aprovação da base ou do setor por autorização de avanço**. Abertura e título REF16 aprovados; modernização futura no registro de refinamentos. O delta atual de encontros está abaixo; avaliação manual da base/setores continua adiada.
 
-**Investigação futura: caminhos pela água sob paredes no original.** Pendência de fidelidade/conectividade da cobertura completa, vinculada à revisão de água/alturas abaixo. Verificar na wiki local e, quando viável, no jogo instalado quais posições/rotas permitem essa travessia e suas condições; separar observação original, interpretação de MAP1/FLOR e adaptação à grade. Ainda não há solução aprovada nem confirmação geral desse comportamento. Não tornar paredes/água globalmente atravessáveis, inventar túnel, alterar colisão/oclusão ou custo de Vigor nesta entrega. Planejar depois da evidência, no setor efetivamente afetado, sem nova pesquisa agora.
+**Investigação futura: caminhos pela água sob paredes no original.** Pendência de fidelidade/conectividade da cobertura completa, vinculada à revisão de água/alturas abaixo. Verificar na wiki local e, quando viável, no jogo instalado quais posições/rotas permitem essa travessia e suas condições; separar observação original, interpretação de MAP1/FLOR e adaptação à grade. A investigação local de A1 oeste está registrada abaixo; ainda não há confirmação da folga nessas quatro células ou solução geral aprovada. Não tornar paredes/água globalmente atravessáveis, inventar túnel, alterar colisão/oclusão ou custo de Vigor nesta entrega. Investigar no setor efetivamente afetado antes de definir sua colisão; a consulta A1 oeste abaixo não resolve a folga dos quatro blocos.
+
+## A1 oeste — ligação aberta e dois ghouls
+
+Base **c81f477** preservada. Delta delimitado no Map015: vista **u0–7/Y0–13**, ligação ao trecho antigo por u8, com os dois ghouls restantes de A1. [Configuração fonte](mapas/STONEKEEP_A1_OESTE_M02.json) e `tools/inspect-stonekeep-a1.py` recompõem112células do MIF/hash já aprovado usando o leitor existente; consulta original em leitura, extrações somente em tmp ignorado. Escala3/margem2 mantida; campanha continua Map012. **Acesso por piso/água aberta implementado; passagens sob estruturas ainda não confirmadas**, não declarar toda geometria de A1 definitiva.
+
+### Investigação antes das colisões
+
+| Evidência | Resultado / limite |
+|---|---|
+| Wiki local Fang Lair(quest),PDFp2 e planta p5 | Stonekeep inundada, natação/ilha confirmadas documentalmente; planta consultada visualmente. Não identifica uma passagem sob parede nesta coordenada |
+| Wiki local Halls of Colossus,PDFp3 | Descreve natação sob overhang e bloqueio por criatura. Confirma existência desse comportamento em Arena, **não sua aplicação a todo bloco nem a A1 de Stonekeep** |
+|39699021.MIF, MAP1/FLOR decodificados novamente | Ghouls0x803c/flat60 em piso FLOR6; ligação superior por células vazias/flats e água FLOR13. Os dois destinos são acessíveis sem atravessar bloco elevado |
+| Blocos vista(3..6,8), MIF(86..83,8) | MAP1=0x1008,0x1908,0x1908,0x1008, todos sobre FLOR13. São elevados, não paredes regulares de bytes iguais. Índices altura0/1 e espessura2/3; isso sozinho **não confirma folga de natação** |
+| Interpretação técnica OpenTESArena | `MapGeneration.cpp/writeVoxelInfoForMAP1` separa sólidos/Raised, altura e espessura; `ExeData.cpp` lê tabelas do executável. Auxílio técnico, não teste do DOS. [Revisão fixa das tabelas](https://github.com/afritz1/OpenTESArena/blob/4f11a858f401ea23b2211e2d0485cadb58b32296/OpenTESArena/src/Assets/ExeData.cpp#L977), arquivos auxiliares só em tmp |
+| Tentativa no original instalado | Reutilizada cópia de consulta do jogo **e do DOSBox** em tmp, sem montar pasta original; sondagem alterada para janela visível com espera, mas a interface de controle não retornou janela do DOSBox. Processos da cópia identificados e encerrados. **Não houve observação de partida/travessia no DOS** |
+
+[Fontes, hashes e condições](evidencias/m02-stonekeep-a1-oeste/fontes.json). Dúvida concreta restante: o personagem nadando passa sob cada um dos quatro blocos MIF(86..83,8), com quais entradas/saídas e folga vertical? A consulta disponível não resolve isso. Não liberar nem declarar encerrada essa rota. Colisão provisória desses quatro blocos e qualquer outra parede permanece idêntica ao estado anterior; nenhum candidato foi eliminado ou fechado adicionalmente. **Não é dependência dos dois ghouls**, que têm acesso comprovável pelo caminho aberto dos dados. Reavaliar antes de fechar as alturas de A1 ou reutilizar esse padrão em outro setor; não usar aparência do automapa como decisão de colisão. Regra reutilizável na DIRETIVA_DE_MAPAS.md.
+
+### Implementação independente e cobertura
+
+| Encontro / ID | MIF original | Vista | Map015 / evento |
+|---|---|---|---|
+| `stonekeep.a1west.ghoul.01` |82,2 |7,2 |24,9 /70 |
+| `stonekeep.a1west.ghoul.02` |83,3 |6,3 |21,12 /71 |
+
+Centros `3+3×u,3+3×y`; sem sobreposição com31encontros anteriores. Mesmos enemy5/troop6, folhas, batalha, raio2/intervalo90/região4 e EXP75/loot do exemplar existente; **até150EXP adicionais opcionais**, provisórios para M02-BAL, sem alterar valores. Não exigem mortes para o pergaminho. IDs/recibos/respawn existentes reutilizados, sem nova identidade para encontros já implementados.
+
+A ligação seca da borda norte e a entrada/saída da água ao lado já existiam na geometria; não foi necessário abrir paredes ou escavar conexão. Aplicação delimitada dos materiais aprovados: lajes em FLOR6, CASF0–2 nos blocos regulares correspondentes e margem nos limites secos/molhados. Água A1 animada, mecânica de natação e estados de imersão reutilizados. Sem assets novos. CASF3/ornamentos e blocos elevados ficam provisórios. **Nenhum tile de região/colisão nem camada superior foi alterado**, nenhuma oclusão de underpass foi acrescentada; não há solução visual definitiva inventada para os candidatos.
+
+Reconstrução: gerador pai → `build-stonekeep-whole.cjs` → `stonekeep-a1-west.cjs`, após os deltas anteriores. Atualiza somente esta aplicação de material e eventos70/71. Matriz vigente: [33/180 encontros,147 ausentes;4/70 portas](evidencias/m02-stonekeep-a1-oeste/cobertura.json); A1=14/14 encontros, A2=19/19, demais setores ainda sem encontros reais. **Não equivale a mapas/setores concluídos**: portas, LOCK, alturas/diagonais/água sob estruturas e outros conteúdos continuam parciais.
+
+### Verificações e acesso
+
+[Sete grupos focais](evidencias/m02-stonekeep-a1-oeste/resultado.json), Chrome156/headless/perfil descartável/RAM: reconstrução idempotente;31encontros/eventos anteriores e mapas/campanha/assets intactos; grafo nativo alcança os dois centros/fonte;12passos reais por teclado margem→água→margem oeste e volta, sem through, com profundidade/ripple somente na água e recursos preservados; limites laterais/norte mantidos; passos de patrulha legais para ambos; contatos individuais, bloqueio de repetição, vitórias nativas **controladas**, retorno e2recibos/150EXP únicos; Guardar/Carregar RAM na água, estados/quest/inventário/pontos/recibos e inclusão dos novos eventos ausentes em snapshots antigos; saída/retorno sem respawn/prêmio. Sem teste amplo de dificuldade ou campanha, sem observação DOS, sem aprovação manual nova. Inspeção das capturas na escala816×624: margens e natação legíveis, personagens sem oclusão adicional; teste sob estrutura **não realizado**, pois folga não confirmada.
+
+http://127.0.0.1:8774/ → **Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM)** → Esc → **Stonekeep: pontos da base integral**:
+
+- **A1 oeste · chegada à margem (30,9):** explorar a ligação; três passos para sul entram na água e três para oeste alcançam a margem, caminho reversível.
+- **A1 oeste · ilha dos ghouls (21,15):** observar patrulhas e contato com os dois encontros.
+- **A1 oeste · estrutura pendente (18,30):** inspecionar o bloco elevado ainda provisório; não apresentado como passagem implementada.
+
+Guardar/Carregar teste em RAM pelo menu; slots normais bloqueados. Servidor canônico existente reutilizado, sem tocar saves pessoais/namespace. [Água](evidencias/m02-stonekeep-a1-oeste/agua.png) · [Margem](evidencias/m02-stonekeep-a1-oeste/margem.png) · [Ghouls](evidencias/m02-stonekeep-a1-oeste/ghouls.png) · [Estrutura pendente](evidencias/m02-stonekeep-a1-oeste/estrutura-pendente.png). **Avaliação manual da base e setores continua adiada**, sem exigir teste agora. Próximo recorte funcional pode tratar portas/conexões restantes de A2, com LOCK/chave conferidas por unidade; antes de declarar A1 definitivo, resolver a folga dos quatro blocos, sem generalização.
 
 ## M02-04C3.0 — sete omissões da área antiga no Map015
 

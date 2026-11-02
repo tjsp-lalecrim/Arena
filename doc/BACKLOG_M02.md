@@ -2,11 +2,13 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
-## Recorte atual — M02-04C3.0, omissões da área antiga
+## Recorte atual — A1 oeste, ligação aberta e dois ghouls
 
-**31/180 encontros e4/70 portas no Map015**: seis goblins e esqueleto MIF(76,22)→vista(13,22)→mundo(42,69) acrescentados, IDs/recibos independentes; geometria/campanha Map012 intactas. [Matriz vigente, fontes, acesso e seis grupos focais](STONEKEEP_M02_04.md#m02-04c30--sete-omissões-da-área-antiga-no-map015). A1=12/14 e A2=19/19 encontros; faltam149 referências/66 portas no total, sem inferir geometria/setores concluídos. Testes manuais da base e setores continuam adiados.
+Basec81f477 preservada. **33/180 encontros e4/70 portas no Map015**; A1=14/14 e A2=19/19 encontros, ainda sem equivaler a geometria/portas concluídas. [Fontes, limites, acesso e sete grupos focais](STONEKEEP_M02_04.md#a1-oeste--ligação-aberta-e-dois-ghouls). Novos ghouls MIF(82,2)/(83,3) em mundo(24,9)/(21,12), IDs70/71; materiais existentes aplicados à margem/ligação. Sem colisão/água/andar superior, campanha Map012 ou atributos alterados. Manuais continuam adiados, sem aprovação presumida.
 
-**Próximo recorte necessário04C2.n/04C3.n:** conexão A1 oeste e dois ghouls restantes MIF(82,2)/(83,3), com assets existentes. Investigar localmente a pendência de água sob paredes **antes de fixar as colisões/conexões aquáticas dessa unidade**, sem fechar passagem potencial por aparência. Não expandir outras alas ou promover acabamento a bloqueio. Depois de Stonekeep completa, levantamento integral de Rihad antes da solução técnica.
+**Resultado da investigação aquática:** ligação por piso/água aberta sustentada por MAP1/FLOR e testada nos dois sentidos. Quatro elevados sobre água MIF(86..83,8) ainda têm folga incerta; sem observação DOS, sem abertura ou fechamento definitivo inventado. Não são essenciais ao acesso dos2ghouls. Antes de fechar alturas de A1 ou reproduzir esse padrão em outra área, conferir a folga/entradas/saídas no original; dependência de fidelidade permanece visível. Não afirmar que todo bloco sobre água permite passagem.
+
+**Próximo recorte funcional:** portas/conexões restantes de A2 em unidade pequena, conferindo LOCK/chave antes de configurar; sem espécie/arte nova por associação. Faltam147 encontros e66 portas no total. Depois de Stonekeep completa, levantamento integral de Rihad antes da solução técnica.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 

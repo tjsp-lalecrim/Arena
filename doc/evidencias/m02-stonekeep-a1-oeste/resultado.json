@@ -1,0 +1,218 @@
+{
+  "base": "c81f477",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "environment": "headless Chrome, disposable profile, isolated RAM, controlled native victories, no campaign run",
+  "checks": [
+    "Source-backed2 ghoul IDs/origins, no overlaps; old31 entries/events, collision/upper layers/water/doors/campaign/assets untouched; only declared floor/masonry/bank application; parent reconstruction stable",
+    "Native dry/swim passability graph reaches2 ghouls and parchment; unresolved raised cells not opened and not needed by this route",
+    "12 real keyboard steps cross open water/banks both ways; swimming depth/ripple active only in marked water, no resources changed; lateral/north wall collisions retained, no new overhead layer",
+    "Both reused patrols make legal region4 steps within radius2, existing collisions retained",
+    "Actual individual keyboard contacts for both ghouls, duplicate transition refused, native controlled victories/returns,2 independent defeats and receipts; repeat reward paths/start do not duplicate EXP/gold/items",
+    "RAM save/restore while swimming at30,12 preserves position/depth, quest/character/items/resources/points/receipts/2 defeats; older event arrays append IDs without resurrecting defeated encounters",
+    "Area return before quest completion does not respawn or repeat rewards; parchment still needed/available, MQ01 preserved, normal saves blocked and localStorage untouched"
+  ],
+  "graph": {
+    "tiles": 29160,
+    "encounters": [
+      {
+        "id": "stonekeep.a1west.ghoul.01",
+        "origin": [
+          24,
+          9
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "stonekeep.a1west.ghoul.02",
+        "origin": [
+          21,
+          12
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "sourceReachable": true
+  },
+  "waterFrames": [
+    {
+      "position": [
+        30,
+        10
+      ],
+      "swimming": false,
+      "depth": 0,
+      "ripple": false,
+      "characterZ": 3,
+      "region": 4
+    },
+    {
+      "position": [
+        30,
+        11
+      ],
+      "swimming": true,
+      "depth": 32,
+      "ripple": true,
+      "characterZ": 3,
+      "region": 5
+    },
+    {
+      "position": [
+        30,
+        12
+      ],
+      "swimming": true,
+      "depth": 32,
+      "ripple": true,
+      "characterZ": 3,
+      "region": 5
+    },
+    {
+      "position": [
+        29,
+        12
+      ],
+      "swimming": true,
+      "depth": 32,
+      "ripple": true,
+      "characterZ": 3,
+      "region": 5
+    },
+    {
+      "position": [
+        28,
+        12
+      ],
+      "swimming": false,
+      "depth": 0,
+      "ripple": false,
+      "characterZ": 3,
+      "region": 4
+    },
+    {
+      "position": [
+        27,
+        12
+      ],
+      "swimming": false,
+      "depth": 0,
+      "ripple": false,
+      "characterZ": 3,
+      "region": 4
+    },
+    {
+      "position": [
+        28,
+        12
+      ],
+      "swimming": false,
+      "depth": 0,
+      "ripple": false,
+      "characterZ": 3,
+      "region": 4
+    },
+    {
+      "position": [
+        29,
+        12
+      ],
+      "swimming": true,
+      "depth": 32,
+      "ripple": true,
+      "characterZ": 3,
+      "region": 5
+    },
+    {
+      "position": [
+        30,
+        12
+      ],
+      "swimming": true,
+      "depth": 32,
+      "ripple": true,
+      "characterZ": 3,
+      "region": 5
+    },
+    {
+      "position": [
+        30,
+        11
+      ],
+      "swimming": true,
+      "depth": 32,
+      "ripple": true,
+      "characterZ": 3,
+      "region": 5
+    },
+    {
+      "position": [
+        30,
+        10
+      ],
+      "swimming": false,
+      "depth": 0,
+      "ripple": false,
+      "characterZ": 3,
+      "region": 4
+    },
+    {
+      "position": [
+        30,
+        9
+      ],
+      "swimming": false,
+      "depth": 0,
+      "ripple": false,
+      "characterZ": 3,
+      "region": 4
+    }
+  ],
+  "patrol": [
+    {
+      "id": "stonekeep.a1west.ghoul.01",
+      "before": [
+        24,
+        9
+      ],
+      "after": [
+        24,
+        10
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.a1west.ghoul.02",
+      "before": [
+        21,
+        12
+      ],
+      "after": [
+        21,
+        13
+      ],
+      "region": 4
+    }
+  ],
+  "expAwarded": 150,
+  "defeats": [
+    "stonekeep.a1west.ghoul.01",
+    "stonekeep.a1west.ghoul.02"
+  ],
+  "errors": [],
+  "missing": [],
+  "manual": "Deferred by responsible; no approval inferred",
+  "water": "Open-water bidirectional traversal tested; raised candidates at view3..6/y8 remain unconfirmed and unchanged; no DOS observation"
+}
