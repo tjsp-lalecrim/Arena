@@ -1,5 +1,7 @@
 # Stonekeep — delimitação dos encontros dos aposentos
 
+**Continuação sobreaaea451:** responsável aprovou animação/combate; [caminhada e um encontro](LOBO_M02.md) implementados para avaliação, evento19 em(90,51), sem ocupar as outras três posições. EXP25 provisórios/loot vazio por incerteza; laboratório de batalha continua0EXP/loot. Tabela de posições abaixo preserva a delimitação histórica.
+
 **Continuação sobre2644185:** [um piloto de batalha do lobo](LOBO_M02.md) implementado para avaliação visual; não acrescenta caminhada ou os quatro encontros. Testes manuais adiados pelo responsável, sem aprovação presumida. As referências à ausência de exemplar abaixo registram a delimitação original.
 
 Feature `feature/m02-stonekeep-aposentos`, sobre **4357999**. **Relato do responsável:** testou a entrega do pergaminho de4357999 e confirmou funcionamento. Sem ambiente/casos adicionais informados; preservadas as seis verificações técnicas anteriores, sem atribuir seu conteúdo ao relato manual.

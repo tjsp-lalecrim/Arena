@@ -1,0 +1,55 @@
+{
+  "original": [
+    {
+      "file": "WOLF01.CFA",
+      "sha256": "e844ce48e0e445c6b2e58878cce9d4df69281f17c9dfee03e2a398ddc20a95b8",
+      "frames": 12,
+      "decoded": "Existing RLE/MSB bitpacking, first pose for direction reference only"
+    },
+    {
+      "file": "WOLF02.CFA",
+      "sha256": "9d9a7ed63edb0f2dd6719194fc676a6000807a9fd4da99ecca296a8ab3997700",
+      "frames": 8,
+      "decoded": "Existing RLE/MSB bitpacking, first pose for direction reference only"
+    },
+    {
+      "file": "WOLF03.CFA",
+      "sha256": "241cb23e94e958965b446081141c8dc81c57b7d2266af21f2c850fe1100e2785",
+      "frames": 8,
+      "decoded": "Existing RLE/MSB bitpacking, first pose for direction reference only"
+    },
+    {
+      "file": "WOLF04.CFA",
+      "sha256": "60d2551a6a05efce3f6b0c0ca29991d970e2f423bb6eb3116c18f15215a98779",
+      "frames": 8,
+      "decoded": "Existing RLE/MSB bitpacking, first pose for direction reference only"
+    },
+    {
+      "file": "WOLF05.CFA",
+      "sha256": "3283a8d88258d703b589b6607991e6aa106c0fd94448f79ef7545b20e1b6c58e",
+      "frames": 8,
+      "decoded": "Existing RLE/MSB bitpacking, first pose for direction reference only"
+    }
+  ],
+  "appearance": "Approved battle aaea451 plus original front/side/back poses; overhead orthogonal projection is adaptation, no new DOS playtest. Ordinary Wolf, not Snow Wolf.",
+  "rewards": {
+    "wiki": "Arena_Monsters local PDF23-24, Wolf",
+    "originalReportedExp": "HP*10+100 =200-350 for HP10-25",
+    "drops": "unknown (?) in available source; no original drop table confirmed",
+    "adaptation": "25EXP provisional MV scale, between rat15 and skeleton50, matching existing goblin25; not direct conversion. Campaign drops deliberately empty pending evidence; not a claim of original absence. Direct battle RAM stays0EXP/loot."
+  },
+  "placement": {
+    "source": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa ITEM35; prior bounded references reused",
+    "original": [
+      52,
+      16
+    ],
+    "mv": [
+      90,
+      51
+    ],
+    "eventId": 19,
+    "id": "stonekeep.apartments.wolf.01",
+    "adaptation": "Existing crop centre projection, floor region4 only, radius2/interval90. Other three declared wolf positions untouched."
+  }
+}

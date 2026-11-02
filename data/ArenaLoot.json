@@ -334,8 +334,8 @@
           "entries": []
         }
       },
-      "difficulty": "isolated battle pilot only",
-      "source": "No campaign configuration yet. Empty laboratory rewards explicitly; do not transfer zeros silently to campaign."
+      "difficulty": "provisional campaign wolf exemplar; drops unknown",
+      "source": "Monsters local PDF24 lists loot as unknown (?). Intentionally empty until evidence/configuration, not a claim that original wolves cannot drop. EXP25 is provisional MV adaptation; original HP*10+100 is not used directly."
     }
   },
   "technical": {

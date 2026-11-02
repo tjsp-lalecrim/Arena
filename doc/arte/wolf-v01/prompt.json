@@ -21,7 +21,7 @@
     }
   ],
   "output": "art/masters/stonekeep-wolf-v01/sheet-v01.png",
-  "approval": "pending owner visual evaluation; manual functional tests explicitly deferred, advance authorized only",
+  "approval": "Owner explicitly approved battle animation and combat of aaea451 on2026-11-02; no balance/rewards/walking approval inferred",
   "coverage": "one battle wolf; idle5 usable authored drawings, strike6, hurt6, defeat6; no walking or placements",
   "exclusions": [
     {

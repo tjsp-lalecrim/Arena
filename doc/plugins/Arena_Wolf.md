@@ -1,3 +1,13 @@
+# Arena_Wolf0.2.0 — um encontro e dois acessos isolados
+
+`ArenaWolf.json.encounter` vincula somente o evento19/Map012(90,51), Enemy6/Troop7; `walk` usa o sprite64px direcional novo. `campaign.loot` contém tabela vazia por incerteza e `enemy.exp=25` é provisório. Instância `_arenaWolfBattlePilot` mantém0EXP/loot pela consulta contextual, sem trocar configurações globais. Os demais inimigos delegam às funções anteriores.
+
+`startPatrolLab()` reutiliza a fixture de materiais, aguarda Map012, limpa pendência, posiciona96,51 e prepara recursos sem iniciar batalha. `startLab()` preserva a batalha direta e sua flag. Ambos usam isolamento RAM existente. Novo registro `arenaWolfPatrol`: **Stonekeep · lobo na passagem (RAM)**, em Campanha e mapas; registro anterior/controles do hub preservados.
+
+Gerador mantém eventos/entradas alheias e um único ID estável. Patrulha/contato/derrota/respawn/persistência pertencem a Arena_Encounters; custos e recibos continuam nos núcleos existentes. Nenhum segundo consumidor ou schema/namespace novo. Fontes, aprovação recebida e verificações atuais em [LOBO_M02.md](../LOBO_M02.md).
+
+## Histórico — versão0.1 somente batalha
+
 # Arena_Wolf0.1.0
 
 Piloto de batalha do lobo comum, após Arena_DebugHub, Arena_Stonekeep e núcleos existentes de batalha/movimentos/ações/recursos/loot/continuidade. Sem dependências externas. Dados **ArenaWolf.json**, perfil **doc/arte/wolf-v01/profile.json**. Fonte principal de identidade/configuração/cobertura: [LOBO_M02.md](../LOBO_M02.md).

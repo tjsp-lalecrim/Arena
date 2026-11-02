@@ -1,0 +1,297 @@
+{
+  "source": "art/masters/stonekeep-wolf-walk-v01/sheet-v01.png",
+  "sourceSha256": "5b7881bedabbf70d49e85f735ee6f5fff411eac78b4556103e3338cf71d6be50",
+  "output": "img/characters/$Arena_wolf_walk_v01.png",
+  "outputSha256": "2fc180d133dc3f5582658587e8f8c5bd192aeaee68c628f22fbfe4d80860fa99",
+  "scale": 0.14285714285714285,
+  "cell": [
+    64,
+    64
+  ],
+  "ground": 62,
+  "order": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "frames": [
+    {
+      "direction": 2,
+      "pattern": 0,
+      "sourceRect": [
+        117,
+        71,
+        255,
+        457
+      ],
+      "torsoAxis": 69.51333449891375,
+      "sourceRowGround": 457,
+      "placement": [
+        22,
+        7
+      ],
+      "alphaBox": [
+        22,
+        7,
+        42,
+        62
+      ],
+      "sha256": "8831f6d45d9c243159613b17630c5a75c6a4792208b558d8336af6857282c676"
+    },
+    {
+      "direction": 2,
+      "pattern": 1,
+      "sourceRect": [
+        444,
+        64,
+        581,
+        422
+      ],
+      "torsoAxis": 67.59364720665886,
+      "sourceRowGround": 457,
+      "placement": [
+        22,
+        6
+      ],
+      "alphaBox": [
+        22,
+        6,
+        42,
+        57
+      ],
+      "sha256": "c59ed3862cc89c22d396f7d9c7e16cca815253abfeca5a39951406efbd50d640"
+    },
+    {
+      "direction": 2,
+      "pattern": 2,
+      "sourceRect": [
+        770,
+        64,
+        906,
+        456
+      ],
+      "torsoAxis": 67.38077265592747,
+      "sourceRowGround": 457,
+      "placement": [
+        22,
+        6
+      ],
+      "alphaBox": [
+        22,
+        6,
+        41,
+        62
+      ],
+      "sha256": "67357fc76cba070776aba1240dddcec2e7c5d563586391e210b196d055389d24"
+    },
+    {
+      "direction": 4,
+      "pattern": 0,
+      "sourceRect": [
+        23,
+        542,
+        341,
+        718
+      ],
+      "torsoAxis": 160.48508848566019,
+      "sourceRowGround": 718,
+      "placement": [
+        9,
+        37
+      ],
+      "alphaBox": [
+        9,
+        37,
+        54,
+        62
+      ],
+      "sha256": "73be115733434a47934c7ecb11649b58546ff30fe80a5c9ba18a8a930ae18ebf"
+    },
+    {
+      "direction": 4,
+      "pattern": 1,
+      "sourceRect": [
+        354,
+        541,
+        665,
+        699
+      ],
+      "torsoAxis": 153.64404456034234,
+      "sourceRowGround": 718,
+      "placement": [
+        10,
+        37
+      ],
+      "alphaBox": [
+        10,
+        37,
+        54,
+        60
+      ],
+      "sha256": "7f1f37585d4ebb06ca349c30cd3be32eaab7888c15a9528eaed0437dfb4ea79f"
+    },
+    {
+      "direction": 4,
+      "pattern": 2,
+      "sourceRect": [
+        681,
+        542,
+        1006,
+        710
+      ],
+      "torsoAxis": 156.20078254539573,
+      "sourceRowGround": 718,
+      "placement": [
+        10,
+        37
+      ],
+      "alphaBox": [
+        10,
+        37,
+        56,
+        61
+      ],
+      "sha256": "bdc97fad42e0623050985fa1aff5529e3175c5a85bf73a005b0dc706ee390f8b"
+    },
+    {
+      "direction": 6,
+      "pattern": 0,
+      "sourceRect": [
+        17,
+        807,
+        352,
+        986
+      ],
+      "torsoAxis": 172.44402249595746,
+      "sourceRowGround": 986,
+      "placement": [
+        7,
+        36
+      ],
+      "alphaBox": [
+        7,
+        36,
+        55,
+        62
+      ],
+      "sha256": "d7b0565e84b5fa428dff2419a4524930e5c3571e987dd620b048d870e63bccbb"
+    },
+    {
+      "direction": 6,
+      "pattern": 1,
+      "sourceRect": [
+        361,
+        809,
+        674,
+        970
+      ],
+      "torsoAxis": 162.02087878916214,
+      "sourceRowGround": 986,
+      "placement": [
+        9,
+        37
+      ],
+      "alphaBox": [
+        9,
+        37,
+        54,
+        60
+      ],
+      "sha256": "a1f4020da14af3f8c3f900765e5c00d56a45a599fdb2b15253aff184e7c1eb60"
+    },
+    {
+      "direction": 6,
+      "pattern": 2,
+      "sourceRect": [
+        688,
+        807,
+        1017,
+        985
+      ],
+      "torsoAxis": 166.97046015786745,
+      "sourceRowGround": 986,
+      "placement": [
+        8,
+        36
+      ],
+      "alphaBox": [
+        8,
+        36,
+        55,
+        61
+      ],
+      "sha256": "998824fd3386ab627a454306bd84af5e5f9f9beef4f9ac30563b78cd6465aaca"
+    },
+    {
+      "direction": 8,
+      "pattern": 0,
+      "sourceRect": [
+        130,
+        1042,
+        265,
+        1434
+      ],
+      "torsoAxis": 67.62578683342157,
+      "sourceRowGround": 1434,
+      "placement": [
+        22,
+        6
+      ],
+      "alphaBox": [
+        22,
+        6,
+        41,
+        62
+      ],
+      "sha256": "8adfc317e16cdc0b4b4022984ae3812c65273baa40310d120dd2fea6a7de5610"
+    },
+    {
+      "direction": 8,
+      "pattern": 1,
+      "sourceRect": [
+        445,
+        1041,
+        580,
+        1413
+      ],
+      "torsoAxis": 67.46184941153194,
+      "sourceRowGround": 1434,
+      "placement": [
+        22,
+        6
+      ],
+      "alphaBox": [
+        22,
+        6,
+        41,
+        59
+      ],
+      "sha256": "ee13ce3ec6dbcaba35c8da1e12248668ee3b31aa3abc530fb182355efc4dcde4"
+    },
+    {
+      "direction": 8,
+      "pattern": 2,
+      "sourceRect": [
+        766,
+        1042,
+        900,
+        1432
+      ],
+      "torsoAxis": 66.445326786319,
+      "sourceRowGround": 1434,
+      "placement": [
+        23,
+        6
+      ],
+      "alphaBox": [
+        23,
+        6,
+        42,
+        62
+      ],
+      "sha256": "04df6f6c5234081198cf4f2f172f48e5f6edd669bc72160a07f2e70ad6bea07a"
+    }
+  ],
+  "approval": "walking/patrol pending owner; battle aaea451 approved and unchanged"
+}

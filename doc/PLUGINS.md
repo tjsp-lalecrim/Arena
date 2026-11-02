@@ -207,3 +207,5 @@ Arena_CourtDelivery0.1.0 após Arena_DebugHub/Court/Stonekeep: extensão focal d
 ## Stonekeep — lobo comum de batalha V01
 
 Arena_Wolf0.1.0 depois de Arena_DebugHub/Ghoul e núcleos existentes; Enemy6/Troop7, ArenaWolf.json e acesso RAM centralizado. Sem caminhada/mapa ou recompensas de campanha. [Guia e dependências](plugins/Arena_Wolf.md), [cobertura/limites](LOBO_M02.md).
+
+**Atualização do lobo0.2:** um evento em Stonekeep, folha direcional própria e dois acessos RAM. EXP25/tabela de campanha explícitos; instância técnica da batalha direta continua0EXP/loot. Demais sistemas/arte aprovados inalterados. [Contrato](plugins/Arena_Wolf.md).

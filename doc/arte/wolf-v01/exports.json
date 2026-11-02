@@ -494,6 +494,6 @@
       "sha256": "66325ae7c90a96462e93bbb20b01361ea888fdc7183847d07df184f3e020971c"
     }
   ],
-  "approval": "pending owner visual evaluation; manual functional tests explicitly deferred, advance authorized only",
+  "approval": "Owner explicitly approved battle animation and combat of aaea451 on2026-11-02; original master/atlas/profile unchanged",
   "coverage": "battle only; idle5, strike6, hurt6, defeat6; source idle index5 excluded for clipped muzzle; no walking/patrol/contact"
 }
