@@ -1,5 +1,11 @@
 # M02-04 — amostra integrada de Stonekeep
 
+## Estado manual e pendência de conectividade após eb81e7a
+
+O responsável adiou os testes manuais de Stonekeep para uma versão mais completa. Preservar as evidências técnicas de8f28207/eb81e7a; **não registrar aprovação da base ou do setor por autorização de avanço**. O recorte atual é somente a abertura REF16; mapas, encontros, portas e água permanecem intocados.
+
+**Investigação futura: caminhos pela água sob paredes no original.** Pendência de fidelidade/conectividade da cobertura completa, vinculada à revisão de água/alturas abaixo. Verificar na wiki local e, quando viável, no jogo instalado quais posições/rotas permitem essa travessia e suas condições; separar observação original, interpretação de MAP1/FLOR e adaptação à grade. Ainda não há solução aprovada nem confirmação geral desse comportamento. Não tornar paredes/água globalmente atravessáveis, inventar túnel, alterar colisão/oclusão ou custo de Vigor nesta entrega. Planejar depois da evidência, no setor efetivamente afetado, sem nova pesquisa agora.
+
 ## Faixa A2-E — primeiro setor funcional no Map015
 
 Base **8f28207**; responsável autorizou continuidade e adiou a avaliação manual da base integral. **Não há aprovação presumida da transferência ou deste setor.** Implementação técnica delimitada04C2.1/04C3.1: vista da planta u54–59/Y0–29 (MIF X30–35/Y0–29), mundo Map015 X164–181/Y2–91, centros `3+3×u,3+3×Y`. Mesma escala, layout contínuo e campanha ainda no Map012. Sem arte nova, fórmulas ou arquivos internos do motor alterados.

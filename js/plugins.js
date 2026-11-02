@@ -53,5 +53,6 @@ var $plugins =
 {"name":"Arena_Wolf","status":true,"description":"v0.1.0 Piloto de batalha RAM do lobo","parameters":{}},
 {"name":"Arena_FangCells","status":true,"description":"v0.1.0 Enigma, chave e portal das celas","parameters":{}},
 {"name":"Arena_StonekeepRuntimeProof","status":true,"description":"v0.1.0 Prova técnica isolada274x274","parameters":{}},
-{"name":"Arena_StonekeepWhole","status":true,"description":"v0.1.0 Stonekeep integral em avaliação isolada","parameters":{}}
+{"name":"Arena_StonekeepWhole","status":true,"description":"v0.1.0 Stonekeep integral em avaliação isolada","parameters":{}},
+{"name":"Arena_TitleArt","status":true,"description":"v0.1.0 Ilustração de abertura REF16 V01","parameters":{}}
 ];

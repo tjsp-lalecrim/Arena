@@ -2,6 +2,10 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
+## Recorte atual — abertura REF16 (individual, sem avanço de setores)
+
+Uma ilustração V01 integrada em [Arena_TitleArt](plugins/Arena_TitleArt.md), baseada no TITLE.IMG original; quatro grupos focais Chrome passaram, aprovação artística pendente. Não autoriza outra imagem nem polimento geral. **Testes manuais de Stonekeep adiados pelo responsável para versão mais completa**, sem aprovação presumida. [Pendência de fidelidade/conectividade](STONEKEEP_M02_04.md#estado-manual-e-pendência-de-conectividade-após-eb81e7a): investigar futuramente caminhos aquáticos sob paredes nas fontes/instalação original antes de decidir adaptação, sem pesquisa/implementação agora. Setores e ordem posterior Stonekeep→levantamento de Rihad preservados, sem iniciar outro backlog nesta entrega.
+
 ## M02-04C2.1/04C3.1 — faixa A2-E funcional
 
 Sobre8f28207: vistaX54–59/Y0–29 confirmada no MIF,3ratos+1goblin;2portas internas e2nas conexões indispensáveis, mais corredor oeste já existente reutilizado, sem ampliar alas. Map015 permanece contínuo/isolado,24/180 encontros e4/70 portas,IDs anteriores preservados. [Cobertura/fontes/testes](STONEKEEP_M02_04.md#faixa-a2-e--primeiro-setor-funcional-no-map015). Setor concluído **tecnicamente no recorte funcional**, materiais/decorativos provisórios identificados; avaliação da base8f28207 e deste delta **adiada pelo responsável, sem aprovação presumida**. Não bloqueia avanço tecnicamente verificado; campanha segue Map012. Restam156 encontros e66 portas no mapa inteiro, alturas e detalhes por setor. Próximo recorte necessário de Stonekeep:04C3.0,6goblins+esqueleto MIF76,22 faltantes na área antiga, em unidade própria; não repetir nem ampliar A2-E por polimento.
