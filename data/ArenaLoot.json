@@ -378,9 +378,9 @@
     },
     "8": {
       "gold": {
-        "chance": 0,
-        "min": 0,
-        "max": 0
+        "chance": 0.25,
+        "min": 6,
+        "max": 60
       },
       "potions": {
         "chance": 0,
@@ -412,8 +412,8 @@
           "entries": []
         }
       },
-      "difficulty": "isolated battle pilot only",
-      "source": "Empty rewards only for this Minotaur laboratory. Campaign EXP/loot not configured; do not transfer zero silently."
+      "difficulty": "provisional-M02-BAL",
+      "source": "Monsters local PDF14-15:25%6-60gold. Other original categories deferred; not absence in original."
     },
     "9": {
       "gold": {

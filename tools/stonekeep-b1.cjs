@@ -1,0 +1,9 @@
+// Source-bound B1 delta only; no expansion to other sectors or speculative water openings.
+const fs=require('fs'),path=require('path'),R=path.resolve(__dirname,'..'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),copy=v=>JSON.parse(JSON.stringify(v));
+module.exports=function(map,c){
+ const s=read('doc/mapas/STONEKEEP_B1_M02.json'),mino=read('data/ArenaMinotaur.json');if(map.events.length!==349||c.encounters.entries.length!==58||c.doors.length!==32)throw Error('B1: base coverage mismatch');
+ for(const d of s.doors){require('./stonekeep-door-components.cjs')(map,c,d);const added=c.doors.at(-1);for(const id of added.eventIds)for(const p of map.events[id].pages)p.list[0].parameters=["ArenaStonekeepWhole.interactB1Door('"+d.id+"');"];}
+ c.encounters.mapVisuals['8']=copy(mino.encounters.mapVisuals['8']);const donor=map.events[c.encounters.entries[0].eventId];
+ for(const v of s.entries){if(map.events[v.eventId]||c.encounters.entries.some(e=>e.id===v.id||e.origin.join(',')===v.origin.join(','))||map.data[(5*map.height+v.origin[1])*map.width+v.origin[0]]!==4)throw Error('B1: occupied ID or non-dry origin '+v.id);const e=copy(donor);Object.assign(e,{id:v.eventId,name:v.species+' / '+v.id,note:'ArenaEncounter:'+v.id,x:v.origin[0],y:v.origin[1]});e.pages[0].list=[{code:355,indent:0,parameters:["ArenaEncounters.start('"+v.id+"');"]},{code:0,indent:0,parameters:[]}];map.events[v.eventId]=e;c.encounters.entries.push(copy(v));}
+ c.b1={source:'doc/mapas/STONEKEEP_B1_M02.json',doorIds:s.doors.map(v=>v.id),enemyIds:s.entries.map(v=>v.id),water:copy(s.water)};c.doorReferences=copy(s.doorReferences);c.points.push(...copy(s.points));c.coverage.implementedEncounters=c.encounters.entries.length;c.coverage.implementedDoors=c.doors.length;c.context.coverage='68 encontros ·36 portas · B1 integrado; outras alas/eventos pendentes';
+};
