@@ -2,6 +2,8 @@
 
 Base8b309cc; feature `feature/m02-minotauro-piloto`. O responsável aprovou explicitamente combate e patrulha do homem-lagarto; não se inferem ambiente adicional, equilíbrio, recompensas ou distribuição. Seus assets foram preservados.
 
+**Aprovação posterior:** o responsável aprovou explicitamente as animações de combate e patrulha da entrega569e382. Não se estende a balanceamento, recompensas, encontros ou ambientes adicionais não relatados; assets preservados.
+
 ## Identidade corrigida, com autorização explícita
 
 O nome anterior “ogro” foi inferido indevidamente do alias **OGRE.DFA**, flat58 de STKEEP1.INF. O registro contém **ITEM39**; o mapeamento é creatureID=ITEM−31=8, índice7. As tabelas do ACD.EXE instalado identificam **Minotaur / PAT@.CFA**. O responsável autorizou: **“Corrigir para Minotauro e continuar”**. O inventário, CSV, visão geral e leitor agora refletem essa identidade; as oito coordenadas originais MIF0-based permanecem **(24,17),(19,34),(25,36),(64,55),(64,56),(86,65),(86,67),(78,70)**. Nenhuma foi distribuída nesta entrega.
@@ -46,4 +48,4 @@ Gravações canvas30fps em velocidade normal: [combate≈20s](evidencias/m02-min
 
 `tools/test-stonekeep-minotaur-identity.cjs` confirmou que o inventário difere da base somente pelos oito rótulos corrigidos e totais por setor; coordenadas, estados e IDs anteriores permanecem iguais. Os rótulos da antiga prova sintética Map014 permanecem como registro histórico, sem efeito na campanha ou neste exemplar.
 
-**Pendente:** avaliação visual/funcional deste exemplar; oito posições e configuração de campanha; aranha (combate+caminhada) como próxima espécie somente após avaliação. Sem percurso completo, editor/mobile ou novo balanceamento. Depois dos assets, retomar encontros/portas/eventos; loot/descanso posteriores. “Forçar a porta” continua pendente de avaliação integrada.
+**Pendente:** oito posições e configuração de campanha; aranha (combate+caminhada) como próxima espécie em entrega própria. Sem percurso completo, editor/mobile ou novo balanceamento. Depois dos assets, retomar encontros/portas/eventos; loot/descanso posteriores. “Forçar a porta” continua pendente de avaliação integrada.

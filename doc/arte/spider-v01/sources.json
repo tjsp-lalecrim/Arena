@@ -1,0 +1,142 @@
+{
+  "flat": 59,
+  "alias": "SPIDER.DFA",
+  "itemIndex": 40,
+  "creatureID": 9,
+  "creatureIndex": 8,
+  "creatureName": "Spider",
+  "animationPattern": "spider@.cfa",
+  "scale": 320,
+  "nameOffset": "0x36DBE",
+  "animationOffset": "0x3E7FF",
+  "scaleOffset": "0x3E63A",
+  "exeSHA256": "40dfed48a66154feeda2dc33b9549570b4392874750101f264e7de25ece98a7d",
+  "unpackedSHA256": "8999c88aef7a55c7d45b0da7383457b2d81e1824509036a8f9032be80ae981ca",
+  "animations": [
+    {
+      "file": "SPIDER1.CFA",
+      "width": 110,
+      "height": 68,
+      "frames": 12,
+      "sha256": "549ed04b1643afdc39677de6a4c45b8dbada63ad1d61b9e4fafb48be50feb19a"
+    },
+    {
+      "file": "SPIDER2.CFA",
+      "width": 130,
+      "height": 67,
+      "frames": 8,
+      "sha256": "f3980f9f564bf4253d6bd64257366f9b5728298dccf1fad2a82cdb7f3797b343"
+    },
+    {
+      "file": "SPIDER3.CFA",
+      "width": 127,
+      "height": 73,
+      "frames": 8,
+      "sha256": "b6fe04b87c328730e4792b88a5adf7c4c0575d069a331fb054f45a2adf950f08"
+    },
+    {
+      "file": "SPIDER4.CFA",
+      "width": 113,
+      "height": 67,
+      "frames": 8,
+      "sha256": "9fe1b963b5c8474cbdfe52d901ff82821765928d357b86c00ab8871ec7ce9e3e"
+    },
+    {
+      "file": "SPIDER5.CFA",
+      "width": 110,
+      "height": 63,
+      "frames": 8,
+      "sha256": "f9ba9cf75bbb5f955b99c95fa1fd793878584a07903c9e4f8afa914ea6382333"
+    },
+    {
+      "file": "SPIDER6.CFA",
+      "width": 80,
+      "height": 62,
+      "frames": 3,
+      "sha256": "0495e418ee0d0a93e9b22858db257be3d2106c3b3a8affecfd4e9db96cb94498"
+    }
+  ],
+  "originalObservation": "Read-only binary tables and CFA decode; no DOS gameplay observation",
+  "positions": [
+    [
+      18,
+      5
+    ],
+    [
+      10,
+      6
+    ],
+    [
+      16,
+      6
+    ],
+    [
+      17,
+      12
+    ],
+    [
+      18,
+      13
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      8,
+      16
+    ],
+    [
+      8,
+      21
+    ],
+    [
+      48,
+      70
+    ],
+    [
+      48,
+      71
+    ],
+    [
+      30,
+      78
+    ],
+    [
+      31,
+      78
+    ],
+    [
+      47,
+      79
+    ],
+    [
+      30,
+      80
+    ],
+    [
+      23,
+      81
+    ],
+    [
+      59,
+      81
+    ],
+    [
+      23,
+      82
+    ],
+    [
+      61,
+      82
+    ],
+    [
+      59,
+      85
+    ]
+  ]
+}

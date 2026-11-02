@@ -17,5 +17,5 @@
     }
   ],
   "decision": "Owner explicitly authorized correction from Ogre to Minotaur and continuation; original aliasOGRE.DFA/ITEM39 maps creatureIndex7/Minotaur/PAT@.CFA. Preserve all8positions.",
-  "approval": "Battle and walk pilot pending owner evaluation; no campaign distribution"
+  "approval": "Owner explicitly approved both Minotaur battle and patrol at569e382; no balance, rewards, distribution or additional environment approval inferred"
 }

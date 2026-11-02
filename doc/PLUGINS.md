@@ -233,3 +233,7 @@ Arena_StonekeepRuntimeProof0.1.0 após FangCells/DebugHub: Map014, HUD/comandos,
 ## Minotauro de Stonekeep — exemplar RAM
 
 Arena_Minotaur0.1.0: combate e patrulha do mesmo exemplar; sala Map016 selecionada só em memória, sem distribuir os oito encontros ou configurar recompensas de campanha. [Contrato/dependências](plugins/Arena_Minotaur.md), [arte/fontes/verificações](MINOTAURO_M02.md).
+
+## Aranha de Stonekeep — exemplar RAM
+
+Arena_Spider0.1.0: um exemplar de batalha/patrulha, Enemy9/Troop10, área privada em Map016 só em memória. Sem vinte encontros da campanha, efeitos novos ou reuso em Fang Lair. [Contrato](plugins/Arena_Spider.md), [fontes/arte/verificações](ARANHA_M02.md).

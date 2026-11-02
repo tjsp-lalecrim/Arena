@@ -1,0 +1,21 @@
+{
+  "selectedBattleMaster": "art/masters/stonekeep-spider-v01/sheet-v04-alpha.png",
+  "walkingMaster": "art/masters/stonekeep-spider-walk-v01/sheet-v01.png",
+  "inspected": [
+    "source original SPIDER1..6/CFA contact sheets",
+    "selected master and exported atlases at actual scale",
+    "native battle screenshot and156decoded video samples",
+    "native patrol screenshot and38decoded video samples"
+  ],
+  "findings": [
+    "V01/V02 battle rejected for six traceable legs; corrected specimen uses elevated three-quarter battle view for four pairs",
+    "V03 backdrop haze rejected; V04 true alpha cutout selected,16separate figures with margins",
+    "Walking4directions/3articulated phases, eight legs, shared density and leg-root anchor, native ground compensation; no mirrored directions",
+    "Attached leg chains/occlusion inspected across poses, including curled defeat; no anatomy repair by code",
+    "Same rust-brown/gray-mottled identity, no extra poison/web effects; native scale and margins inspected"
+  ],
+  "limits": [
+    "Manual visual inspection is not a formal guarantee of anatomical perfection; owner evaluation pending",
+    "No campaign distribution, Fang Lair reuse or broad dungeon/mobile/editor validation"
+  ]
+}

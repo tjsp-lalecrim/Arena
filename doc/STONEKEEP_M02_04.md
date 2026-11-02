@@ -12,15 +12,19 @@
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
 |Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar os assets; seis B2 continuam ausentes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
-|Minotauro /58 /8 (alias OGRE.DFA) |Disponível V01 |Disponível V01 |Correção de identidade autorizada; exemplar artístico **aguarda avaliação** |[Combate e patrulha RAM](MINOTAURO_M02.md); oito posições ainda ausentes |
-|Aranha /59 /20 |**Ausente** |**Ausente** |Nenhum exemplar aprovado |Uma entrega com combate+caminhada do mesmo exemplar, sem presumir outra aranha/franquia equivalente |
+|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; oito posições ainda ausentes |
+|Aranha /59 /20 |Disponível V01 |Disponível V01 |Spider/SPIDER@.CFA confirmado; **aguarda avaliação** dos dois conjuntos |[Um exemplar RAM](ARANHA_M02.md), sem vinte encontros ou reuso em Fang Lair |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** orc e homem-lagarto com combate/patrulha aprovados; avaliar o exemplar completo de **Minotauro**, depois preparar aranha (combate+caminhada juntos). Minotauro atende dois B1 contíguos a B2; aranha inclui nove A3. Depois retomar distribuição de encontros, portas e eventos por blocos; assets disponíveis não concluem áreas. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente:** orc, homem-lagarto e Minotauro com combate/patrulha aprovados; avaliar o exemplar completo de **aranha**. As nove espécies passam a ter os dois conjuntos disponíveis; aranha ainda sem aprovação, demais coberturas conforme linhas acima. Não restam conjuntos inteiramente ausentes nesta matriz. Aranha inclui nove A3; Minotauro atende dois B1 contíguos a B2. Depois retomar distribuição de encontros, portas e eventos por blocos; assets disponíveis não concluem áreas. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
 
-## Entrega atual — Minotauro, combate e caminhada RAM
+## Entrega atual — aranha, combate e caminhada RAM
 
-[Um exemplar integrado](MINOTAURO_M02.md):24quadros laterais e12poses direcionais, Enemy8/Troop9, sem distribuição na campanha. Doze grupos focais passaram em Chrome isolado, sem mudança de motor ou recompensas existentes. Arte aguarda avaliação.
+[Um exemplar integrado](ARANHA_M02.md): Spider confirmada por flat59/ITEM40 → índice8 do executável, SPIDER@.CFA. Somente laboratório, sem distribuição ou alteração de campanha/Fang Lair. Cobertura49/180encontros e32/70portas inalterada. Aguardar avaliação antes de ampliar.
+
+## Entrega anterior — Minotauro, combate e caminhada RAM
+
+[Um exemplar integrado](MINOTAURO_M02.md):24quadros laterais e12poses direcionais, Enemy8/Troop9, sem distribuição na campanha. Doze grupos focais passaram em Chrome isolado, sem mudança de motor ou recompensas existentes. Combate e patrulha569e382 explicitamente aprovados pelo responsável; sem aprovação de balanceamento ou distribuição.
 
 **Correção autorizada do levantamento:** flat58 `OGRE.DFA` é alias; `ITEM39` → índice7 do executável → **Minotaur / PAT@.CFA**. Não é prova de um ogro. As oito coordenadas/contagens permanecem iguais; inventário/CSV/visão geral e leitor foram corrigidos. [Prova e hashes](arte/minotaur-v01/sources.json). Menções antigas a ogro abaixo são históricas, substituídas por esta identificação. Não houve observação DOS nova.
 

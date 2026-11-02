@@ -8,9 +8,9 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados e seis B2 não distribuídos.
 
-**Entrega atual — Minotauro:** [combate e caminhada de um exemplar RAM](MINOTAURO_M02.md), após correção explicitamente autorizada do alias OGRE.DFA/ITEM39 para Minotaur/PAT@.CFA. Oito posições preservadas, nenhuma distribuída. Combate e patrulha do homem-lagarto8b309cc **aprovados explicitamente**, sem aprovação de equilíbrio/recompensas. Minotauro aguarda avaliação visual/funcional; depois, aranha com combate+caminhada em uma entrega, antes de distribuir encontros/portas/eventos. Cobertura49/180encontros e32/70portas mantida; loot/descanso depois; Forçar a porta pendente de avaliação integrada.
+**Entrega atual — aranha:** [combate e patrulha RAM](ARANHA_M02.md), flat59/ITEM40 → Spider/SPIDER@.CFA confirmados. Um exemplar, nenhum dos20encontros distribuído e nenhum reuso em Fang Lair. Minotauro569e382: combate e patrulha explicitamente aprovados, nomenclatura corrigida/assets preservados, sem equilíbrio/recompensas/distribuição aprovados. As nove espécies têm os dois conjuntos disponíveis; aranha aguarda avaliação. Depois retornar ao bloco de encontros/portas (seis orcs e três homens-lagarto de B2), sem nova produção artística automática. Cobertura49/180+32/70; loot/descanso posteriores e Forçar a porta pendente de avaliação integrada.
 
-**Próximas espécies:** avaliar Minotauro; depois aranha, conforme a [matriz vigente](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies). Não iniciar automaticamente outra produção.
+**Próxima dependência:** avaliação do exemplar de aranha; depois retomar encontros/portas conforme matriz, sem antecipar loot/descanso ou arte opcional.
 
 ## Histórico42b857f — piloto de batalha do orc
 

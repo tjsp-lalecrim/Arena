@@ -515,6 +515,6 @@
       "sha256": "28942929261e99ef38deb1b3a2c4f3c6a116b0755f66c12aa25c668314169c6b"
     }
   ],
-  "approval": "Battle and walk pilot pending owner evaluation; no campaign distribution",
+  "approval": "Owner explicitly approved both Minotaur battle and patrol at569e382; no balance, rewards, distribution or additional environment approval inferred",
   "coverage": "battle only; no walking/patrol/contact"
 }

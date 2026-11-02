@@ -399,6 +399,21 @@
         "hurt": 2,
         "defeat": 3
       }
+    },
+    "9": {
+      "file": "Arena_Combat_spider_v01",
+      "cell": [
+        224,
+        160
+      ],
+      "ground": 152,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
     }
   }
 }
