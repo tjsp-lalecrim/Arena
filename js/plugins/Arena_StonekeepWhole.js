@@ -22,14 +22,17 @@ var ArenaStonekeepWhole;
   transferFromSample:transfer,
   jump:function(i){if(!here()||$gameParty.inBattle()||$gameMessage.isBusy()||!c().points[i])return false;var p=c().points[i].position;if([4,5].indexOf($gameMap.regionId(p[0],p[1]))<0||$gameMap.eventsXyNt(p[0],p[1]).some(function(e){return e.isNormalPriority();}))return false;neutral();$gamePlayer.locate(p[0],p[1]);$gamePlayer.center(p[0],p[1]);$gamePlayer.refreshBushDepth();return true;}
  };
- // B1 ordinary doors only: explain real refusal without changing native opening rules.
- ArenaStonekeepWhole.interactB1Door=function(id){
-  if(!here()||$gameParty.inBattle()||$gamePlayer.isTransferring()||$gameMessage.isBusy()||!c().b1||c().b1.doorIds.indexOf(id)<0)return false;
+ // Two bounded sector consumers, preserving the existing B1 API and native mechanisms.
+ function interactSectorDoor(id,ids){
+  if(!here()||$gameParty.inBattle()||$gamePlayer.isTransferring()||$gameMessage.isBusy()||ids.indexOf(id)<0)return false;
   var d=ArenaDungeon.door(id),dx=Math.abs($gamePlayer.x-d.center[0]),dy=Math.abs($gamePlayer.y-d.center[1]),valid=d.axis==='east-west'?dx===2&&dy<=1:dy===2&&dx<=1;
   if(!valid){$gameMessage.add('Aproxime-se pelo lado do vão da porta.');return false;}
   if($gameMap._arenaDoorTransitions&&$gameMap._arenaDoorTransitions[id]){$gameMessage.add('Aguarde a porta terminar de se mover.');return false;}
+  if(d.lockValue!==null&&!ArenaStonekeepAccess.isUnlocked(id))return ArenaStonekeepAccess.interactDoor(id);
   var result=ArenaDungeon.toggleDoor(id);if(!result)$gameMessage.add('O vão ou a área de movimento da porta está ocupado.');return result;
  };
+ ArenaStonekeepWhole.interactB1Door=function(id){return interactSectorDoor(id,c().b1?c().b1.doorIds:[]);};
+ ArenaStonekeepWhole.interactC1Door=function(id){return interactSectorDoor(id,c().c1North?c().c1North.doorIds:[]);};
  ArenaStonekeepWhole.doorDiagnostic=function(){
   if(!here()||!c().doorReferences)return null;var nearest=null,distance=5;
   c().doorReferences.forEach(function(v){var d=Math.abs($gamePlayer.x-v.center[0])+Math.abs($gamePlayer.y-v.center[1]);if(d<distance){distance=d;nearest=v;}});
@@ -78,5 +81,5 @@ var ArenaStonekeepWhole;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(here())this.addCommand('Stonekeep: pontos da base integral','arenaStonekeepWholePoints');};
  var create=Scene_Menu.prototype.createCommandWindow;
  Scene_Menu.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeepWholePoints',function(){SceneManager.goto(Points);});};
- ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,68 encontros/36 portas. B1 integrado; portas próximas identificadas no debug, pendências distintas de fechaduras. Esc: pontos/RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
+ ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,73 encontros/42 portas. C1 norte integrado; portas próximas com coordenadas/status; demais trechos pendentes. Esc: pontos/RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
 })();
