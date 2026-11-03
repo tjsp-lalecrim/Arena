@@ -47,3 +47,9 @@ Map015:24 encontros/4 portas, configuração setorial de fonte versionada em STO
 `stonekeep-b1.cjs` acrescenta quatro portas (349–384) e dez encontros (385–394), preservando os348eventos anteriores. Contrato em `doc/mapas/STONEKEEP_B1_M02.json`; fonte/limites em [registro principal](../STONEKEEP_M02_04.md#entrega-atual--b1-conectado-a-b2). Total68encontros/36portas. Nenhuma conexão ou altura é liberada globalmente.
 
 `interactB1Door(id)` aceita somente as quatro portas explícitas e delega toggle nativo; feedback explica lado inválido, transição ou ocupação. `doorDiagnostic()` é leitura somente no Map015/RAM, consulta70referências compiladas e retorna MIF/MV/status da mais próxima (até4tiles Manhattan). Window_Base informativo, sem foco, só no Scene_Map técnico e oculto durante mensagens; pendência de desenvolvimento é distinguida de fechadura real. Não altera Map012, portas desconhecidas ou snapshots. Novos pontos no hub existente, sem comandos no título.
+
+## C1 norte
+
+`stonekeep-c1-north.cjs`, após B1, acrescenta54partes de portas (395–448) e5encontros (449–453); total73/42. LOCK1 MIF65,68 é anexada à lista explícita de Arena_StonekeepAccess, sem mudar force/ordinaryLevels/estados anteriores. `interactC1Door` e a assinatura B1 delegam a auxiliar limitado por IDs dos dois setores; preserva condições de lado, animação/ocupação e força já existente. Fonte em `doc/mapas/STONEKEEP_C1_NORTE_M02.json`; nenhum hook do motor, migração/namespace ou tabela de recompensas novo.
+
+[Conexões e limites](../STONEKEEP_M02_04.md#entrega-atual--c1-norte-y6069): eventos restritos aY60–69, corredor já existente Y70–71 só usado na circulação, rotas de água aberta evitam volumes incertos. Pontos no hub existente; indicador de portas agora42implementadas/28pendentes, relato sem localização ainda não resolvido.

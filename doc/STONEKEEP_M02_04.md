@@ -2,7 +2,7 @@
 
 ## Matriz operacional de assets — nove espécies
 
-**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **68/180encontros e36/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **73/180encontros e42/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
 
 | Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
 |---|---|---|---|---|
@@ -12,13 +12,49 @@
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
 |Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; nove distribuídos (6B2+3B1),13restantes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
-|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; duas B1 distribuídas, seis restantes |
+|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; quatro distribuídas (2B1+2C1 norte), quatro restantes |
 |Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar quando chegar ao setor; vinte encontros ainda ausentes |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. Próximo bloco proposto: C1 norte/Y60–69, conferir conexões/LOCK1. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. C1 norte/Y60–69 integrado; próximo bloco proposto C1 central/Y70–79,8referências. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
 
-## Entrega atual — B1 conectado a B2
+## Entrega atual — C1 norte Y60–69
+
+Sobre f0d7470; [configuração/fonte](mapas/STONEKEEP_C1_NORTE_M02.json), `tools/inspect-stonekeep-c1-north.py`. MIF39699021/MAP1/FLOR/LOCK/TRIG e STKEEP1.INF relidos, hash preservado. **Cinco referências e seis portas** confirmadas; única LOCK=(65,68,1), nível de fechadura comum, não ID de chave. Sem TRIG na própria célula das portas. Placa TEXT4 em(65,63) permanece opcional/adiada, não foi convertida em condição de acesso. Texturas declaradas DCAS2 nas cinco comuns e DCAS3 na LOCK1; índice de textura de porta no MIF é1-based, conferido com inventário/INF. Reutiliza componentes aprovados, aparência compartilhada ainda provisória; nenhuma arte nova ou troca visual.
+
+|Conteúdo |MIF zero-based → Map015 |Eventos / orientação |
+|---|---|---|
+|Portas comuns |(61,60)→(87,183);(66,60)→(72,183);(73,62)→(51,189);(63,63)→(81,192);(71,63)→(57,192) |395–439,9partes cada; norte–sul nas1ª/4ª/5ª, leste–oeste nas2ª/3ª |
+|LOCK1 |(65,68)→(75,207) |440–448, norte–sul |
+|Goblins |(71,60)→(57,183);(62,61)→(84,186) |449–450 |
+|Minotauros |(86,65)→(12,198);(86,67)→(12,204) |451–452 |
+|Esqueleto |(70,69)→(60,210) |453 |
+
+IDs `stonekeep.c1n.door.mifXX.YY` e `stonekeep.c1n.enemy.mifXX.YY`; vista=(89−X,Y), mundo=(3+3vistaX,3+3Y). **73/180encontros,42/70portas**, restam107/28. C1 inteiro:5/19encontros e6/6portas; os14encontros restantes não foram declarados concluídos. Os68encontros/394eventos/36portas anteriores permanecem iguais. Só54tiles de soleira mudam de região4 para6; nenhuma camada gráfica, parede, piso, altura ou água foi alterada. Arte/atributos/tabelas de recompensa e campanha Map012 intactos.
+
+### Acessos e água
+
+Não há corredor único entre todos os participantes. A ligação de B1 atende as salas leste; os Minotauros usam aproximação pela água aberta já existente, e a sala do esqueleto é alcançada pelo **corredor existente que passa por Y70–71**. A validação percorreu esse corredor, sem novos encontros, portas ou alteração geométrica fora de Y60–69. Isso não conclui o conteúdo de Y70–71 nem presume ausência de inimigos ali no original.
+
+O leitor e o percurso técnico excluem células molhadas cujo MAP1 seja diferente de0, preservando o volume incerto(67,26)/0x1008 e demais candidatos antigos. Entrada/saída, margens e restauração dentro da água verificadas; sem liberar passagem sob paredes, alterar colisão, custo de Vigor, veículos ou mecânica aquática. Rotas são evidência do modelo adaptado e registros originais, **não nova observação DOS**. Materiais/volumes conservadores ainda têm limitações já documentadas.
+
+### Portas, estados e escopo
+
+LOCK1 reutiliza `ArenaStonekeepAccess`: **Forçar a porta / Voltar**, Voltar inicialmente selecionado,45atualizações no nível1, sem chave inventada, recursos, EXP ou sorteio. Cancelar não destrava; B registra destravamento e A abertura individual. APIs diretas não contornam a fechadura. As cinco portas comuns usam interação; feedback existente explica lado inválido, movimento em curso ou ocupação. Auxiliar limitado compartilhado preserva `interactB1Door(id)` e acrescenta `interactC1Door(id)`, delegando à força existente somente enquanto trancada; sem novo sistema geral de portas.
+
+Debug continua indicando MIF/MV e situação:42portas implementadas/28pendentes. **A porta relatada sem localização continua em aberto**, aguardando prints/coordenadas no próximo teste, sem causa, solução ou aprovação presumida. Não se abriu outra área para tentar corrigir esse relato.
+
+Encontros reutilizam Goblin2/Troop2, Minotauro8/Troop9 e Esqueleto4/Troop5, animações/patrulhas e tabelas atuais. Raio2/intervalo90/piso4, contato individual/derrotas independentes/recibos e respawn condicionado preservados; nenhuma exigência de matar todos. EXP total potencial **220** (2×25+2×60+50), valores já existentes/provisórios para M02-BAL. Não houve revisão de loot, descanso, atributos ou balanceamento; recompensas técnicas continuam separadas pelas regras já verificadas em B1.
+
+### Validação e continuidade
+
+**10grupos focais**, Chrome156/perfil descartável/RAM: abertura e reconstrução idempotente; delta de54soleiras e IDs anteriores/PNGs/bancos protegidos; uma porta B1 abre/fecha pela API preservada; LOCK1 recusa bypass, cancela sem efeitos e força uma vez; seis portas×dois lados por Enter/circulação/colisão/feedback; diagnóstico implementada/pendente; B1↔C1 norte por piso/água aberta e corredor Y70–71 sem through/transferências internas, guardar/carregar na água sem consumo; cinco patrulhas/contatos reais por teclado, vitórias controladas, cinco derrotas/recibos e220EXP, chamadas repetidas inócuas; RAM com array anterior restaura453eventos, portas abertas/fechadas/destravamento B, derrotas, quest, inventário e recursos; retorno de área sem respawn. [Resultado](evidencias/m02-stonekeep-c1-norte/resultado.json). [Capturas/roteamento dos pontos](evidencias/m02-stonekeep-c1-norte/capturas.json), [LOCK1](evidencias/m02-stonekeep-c1-norte/lock1.png) e [Minotauros](evidencias/m02-stonekeep-c1-norte/minotauros.png) conferidos na escala real; Voltar preservado como opção inicial. Não se repetiram campanha completa, matriz artística, editor/mobile ou laboratórios de combate inalterados. Avaliação manual continua adiada, sem aprovação presumida.
+
+**Acesso:** http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM) → Esc → Stonekeep: pontos da base integral. Novos pontos **C1 norte · entrada de B1 / portas centrais / LOCK1 / Minotauros / sala do esqueleto**. Guardar/Carregar teste em RAM; slots pessoais/namespace intactos, nenhuma ferramenta nova no título. Sem exigência de teste manual agora.
+
+**Próximo bloco contíguo proposto:** C1 central, Y70–79,8encontros (3esqueletos/1Minotauro/3lobos/1ghoul), nenhuma porta adicional no levantamento; conferir acessos/posições antes de implementar. Depois C1 sul/Y80–89 com6referências restantes; nenhuma ampliação iniciada. Loot/descanso e refinamentos artísticos continuam futuros.
+
+## Entrega anterior — B1 conectado a B2
 
 Base90317c8. Responsável autorizou avanço e validará a dungeon quando estiver completa; **não há aprovação manual nova da integração**. **Relato pendente de localização:** uma porta não abriu; prints/coordenadas virão no próximo teste. Sem causa atribuída, correção presumida ou alteração de outras áreas para tentar resolvê-la. O diagnóstico abaixo ajuda a identificar o local; não constitui resolução desse relato.
 

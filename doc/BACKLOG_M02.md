@@ -8,9 +8,9 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados; seis B2 agora integrados, parâmetros provisórios.
 
-**Entrega atual — B1:** [dez encontros e quatro portas integrados](STONEKEEP_M02_04.md#entrega-atual--b1-conectado-a-b2), fontes MIF/INF conferidas. B1=10/10+4/4; total68/180encontros e36/70portas. Sul via ligação seca B2/Y54–55; orcs do norte por rota alternativa de água aberta via A2/A1, evitando volume antigo incerto MIF67,26/0x1008, sem alterar suas colisões. Debug identifica portas próximas implementadas ou pendentes por MIF/MV; relato de uma porta que não abre ainda sem localização, sem causa/correção presumidas. Minotauro EXP60 provisória/ouro25%6–60, labs próprios continuam vazios. Testes manuais adiados; campanha Map012 preservada, nenhuma arte nova. Próximo bloco contíguo proposto: C1 norte/Y60–69,5encontros/6portas, após conferir acesso/LOCK1. Loot/descanso e ressalvas artísticas permanecem futuros.
+**Entrega atual — C1 norte:** [Y60–69 integrada](STONEKEEP_M02_04.md#entrega-atual--c1-norte-y6069),5encontros/6portas, incluindo LOCK1 MIF65,68 com Forçar/Voltar já existente. Total73/180encontros e42/70portas; C1=5/19encontros e6/6portas. Ligações B1/C1 preservadas: aproximação aquática aberta aos Minotauros e corredor existente Y70–71 até a sala do esqueleto, sem novos eventos fora da faixa ou mudança de água/alturas.10grupos focais passaram; normal Map012, recompensas/arte/atributos e saves pessoais preservados, manuais adiados. Porta relatada sem localização e volumes aquáticos incertos continuam pendentes. Próximo recorte proposto: C1 central/Y70–79,8encontros, sem portas novas no levantamento; loot/descanso depois.
 
-**Próxima dependência:** C1 norte, Y60–69:5encontros/6portas na matriz (uma LOCK1), conferir conexão/condições antes de implementar. Não iniciar automaticamente.
+**Próxima dependência:** C1 central/Y70–79,8encontros de espécies disponíveis e já configuradas, após conferir conexão/posições. Restam14encontros de C1 em Y70–89; não iniciar automaticamente.
 
 ## Histórico42b857f — piloto de batalha do orc
 
@@ -18,19 +18,20 @@ Sobre7ec5051, [piloto V01](ORC_M02.md): Enemy7/Troop8,24desenhos, somente batalh
 
 **Forçar a porta determinístico e sem consumo** é adaptação ainda pendente de avaliação do responsável no próximo teste integrado. Não reabrir o restante da dungeon para avaliação isolada agora. Manter encontros/portas como prioridade, loot/tesouros e descanso depois; a dependência das três caminhadas foi resolvida e sua distribuição consta na entrega atual. Acesso: Testes / Debug → Combate → Stonekeep · orc (RAM). Próximo recorte, somente após feedback do exemplar: caminhada direcional e um encontro piloto de orc, sem lote automático.
 
-## Cobertura operacional — encontros e portas A2/B2 no Map015
+## Cobertura operacional — blocos integrados no Map015
 
-Base9031298 e fechaduras/ligação seca preservadas; conclusão posterior dos nove encontros após f5ebdba. **68/180encontros e36/70portas**, com **112encontros/34portas restantes**, após o delta B1. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
+Base9031298 e fechaduras/ligação seca preservadas; conclusão posterior dos nove encontros após f5ebdba. **73/180encontros e42/70portas**, com **107encontros/28portas restantes**, após C1 norte. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
 
 | Área | Cobertura | Pendência funcional |
 |---|---|---|
 |A2 |19/19encontros;13/13portas |Revisão geométrica/detalhes e integração ainda parciais; contagem não conclui setor |
 |B2 |25/25encontros;18/18portas |Avaliação integrada/itens de outros sistemas ainda pendentes; nenhum encontro/porta faltante neste bloco |
 |B1 |10/10encontros;4/4portas |Validação manual adiada; acessos norte/sul distintos, volume aquático antigo67,26 ainda incerto e evitado na rota técnica |
+|C1 |5/19encontros;6/6portas |Faixa Y60–69 integrada tecnicamente;14encontros em Y70–89 ainda ausentes, avaliação manual adiada |
 
 Cinco LOCK1/2/3 são fechaduras comuns, não IDs de chaves: **Forçar a porta / Voltar**, universal e determinístico,45atualizações×LOCK provisórias, sem custos/prêmios ou chave inventada. MIF39,44 deixa de ser abertura provisória. Bolsa sudoeste agora conectada pelas nove células **secas suspensas** MIF56,41..49, com piso e cobertura separados, além de4portas/2goblins. Fonte geométrica e tabelas do executável sustentam folga; não houve observação DOS nova. A1 aquática permanece incerta e intocada. Naquela unidade de acesso, nenhum loot, descanso, atributo, motor ou asset foi alterado; a configuração mínima de campanha atual está na entrega B1 acima.
 
-**Próximo recorte necessário:** C1 norte/Y60–69,5encontros/6portas conforme matriz; conferir entrada e LOCK1, reutilizando espécies/configurações existentes. Manter ordem autorizada: **encontros e portas, depois revisão de loots/tesouros e pontos de descanso**. Não iniciar arte por associação; aprovação do exemplar precede lote. Após Stonekeep completa, levantar Rihad integral antes de definir técnica. Campanha continua Map012; hub/base integral RAM no Map015. Qualidade e ilustrações continuam futuras.
+**Próximo recorte necessário:** C1 central/Y70–79,8encontros (3esqueletos,1Minotauro,3lobos,1ghoul); conferir acessos/posições, sem novas portas previstas. Manter ordem autorizada: **encontros e portas, depois revisão de loots/tesouros e pontos de descanso**. Não iniciar arte por associação; aprovação do exemplar precede lote. Após Stonekeep completa, levantar Rihad integral antes de definir técnica. Campanha continua Map012; hub/base integral RAM no Map015. Qualidade e ilustrações continuam futuras.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 
