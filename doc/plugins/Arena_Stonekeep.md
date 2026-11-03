@@ -53,3 +53,7 @@ Map015:24 encontros/4 portas, configuração setorial de fonte versionada em STO
 `stonekeep-c1-north.cjs`, após B1, acrescenta54partes de portas (395–448) e5encontros (449–453); total73/42. LOCK1 MIF65,68 é anexada à lista explícita de Arena_StonekeepAccess, sem mudar force/ordinaryLevels/estados anteriores. `interactC1Door` e a assinatura B1 delegam a auxiliar limitado por IDs dos dois setores; preserva condições de lado, animação/ocupação e força já existente. Fonte em `doc/mapas/STONEKEEP_C1_NORTE_M02.json`; nenhum hook do motor, migração/namespace ou tabela de recompensas novo.
 
 [Conexões e limites](../STONEKEEP_M02_04.md#entrega-atual--c1-norte-y6069): eventos restritos aY60–69, corredor já existente Y70–71 só usado na circulação, rotas de água aberta evitam volumes incertos. Pontos no hub existente; indicador de portas agora42implementadas/28pendentes, relato sem localização ainda não resolvido.
+
+## C1 central
+
+`stonekeep-c1-central.cjs`, após C1 norte, acrescenta somente eventos454–461 (8encontros), com IDs `stonekeep.c1c.enemy.mifXX.YY`; total81/42. Fonte/rotas em `doc/mapas/STONEKEEP_C1_CENTRAL_M02.json`, conferência reproduzível por `tools/inspect-stonekeep-c1-central.py`. Camadas, portas e configurações de campanha intactas; restauração de eventos e derrotas usa o núcleo existente. Cinco pontos no menu RAM existente; sem novo comando de título. [Cobertura/limites](../STONEKEEP_M02_04.md#entrega-atual--c1-central-y7079).

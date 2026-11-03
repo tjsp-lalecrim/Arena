@@ -2,7 +2,7 @@
 
 ## Matriz operacional de assets — nove espécies
 
-**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **73/180encontros e42/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **81/180encontros e42/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
 
 | Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
 |---|---|---|---|---|
@@ -12,13 +12,46 @@
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
 |Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; nove distribuídos (6B2+3B1),13restantes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
-|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; quatro distribuídas (2B1+2C1 norte), quatro restantes |
+|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; cinco distribuídos (2B1+2C1 norte+1C1 central), três restantes |
 |Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar quando chegar ao setor; vinte encontros ainda ausentes |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. C1 norte/Y60–69 integrado; próximo bloco proposto C1 central/Y70–79,8referências. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. C1 norte/central Y60–79 integrados; próximo bloco proposto C1 sul/Y80–89,6referências. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
 
-## Entrega atual — C1 norte Y60–69
+## Entrega atual — C1 central Y70–79
+
+Sobre6a31fa9; [contrato de fonte](mapas/STONEKEEP_C1_CENTRAL_M02.json), `tools/inspect-stonekeep-c1-central.py`. Original39699021.MIF relido, hash4eb604e…7d45b conferido, MAP1/FLOR/STKEEP1.INF comparados ao inventário. Oito referências confirmadas, **nenhuma porta/LOCK nessa faixa**. Coordenadas originais zero-based; vista=(89−X,Y), mundo Map015=(3+3vistaX,3+3Y). Sem nova observação no DOS. Registros TRIG preservados no contrato como evidência, sem transformá-los em condições ou eventos adicionais neste recorte.
+
+|Espécie |MIF → Map015 |Evento |
+|---|---|---|
+|Esqueleto |(69,70)→(63,213) |454 |
+|Minotauro |(78,70)→(36,213) |455 |
+|Lobo |(82,73)→(24,222) |456 |
+|Lobo |(81,74)→(27,225) |457 |
+|Lobo |(82,75)→(24,228) |458 |
+|Esqueleto |(64,76)→(78,231) |459 |
+|Esqueleto |(64,77)→(78,234) |460 |
+|Ghoul |(86,79)→(12,240) |461 |
+
+IDs `stonekeep.c1c.enemy.mifXX.YY`. O esqueleto(69,70) é distinto do anterior(70,69)/evento453. O gerador rejeita ID, origem ou evento ocupado. **81/180encontros e42/70portas**, restam99/28; C1=13/19encontros e6/6portas. Os453eventos,73encontros e42portas anteriores permanecem iguais; **todas as camadas do mapa, colisões, alturas e água são idênticas** à base. Map012/campanha, arte e dados de combate/recompensas preservados.
+
+### Circulação e cobertura
+
+Ligação pelo corredor já existente entre C1 norte/central. Os aposentos inferiores e o acesso ao ghoul usam a borda do **corredor existente Y80/MV242**, sem portas, encontros ou alteração geométrica acrescentados fora deY70–79. Rotas do contrato evitam qualquer célula de água com MAP1 não vazio; nenhuma passagem sob parede foi liberada. Pendências aquáticas de A1 e MIF67,26 continuam intactas. Sem transferências internas ou obrigação de eliminar todos.
+
+Patrulhas reutilizadas: raio2, intervalo90, somente região4; contato individual. Esqueleto4/Troop5, Minotauro8/9, Lobo6/7, Ghoul5/6. EXP potencial360 (3×50+60+3×25+75), **valores existentes/provisórios**, não aprovação de balanceamento. Configuração normal e fixtures mantêm separação existente; nenhuma tabela de loot foi revista.
+
+### Validação e acesso
+
+[Resultado focal](evidencias/m02-stonekeep-c1-central/resultado.json),6grupos e conferência suplementar dos5pontos: Chrome isolado no endereço canônico; reconstrução idempotente e comparação de dados/assets, circulação nativa até os oito encontros vivos e retorno ao norte, patrulhas secas, contatos por teclado com bloqueio de duplicação, vitórias controladas/retorno,8derrotas/recibos independentes, chamadas repetidas sem recompensa e360EXP. Guardar/carregar RAM com array anterior reconstrói eventos ausentes e preserva estados/quests/inventário/recursos/pontos; retorno à área não provoca respawn. Movimento acelerado somente no teste e vitórias controladas; não é nova avaliação artística ou de balanceamento. Evidências válidas de portas/fechadura e sistemas compartilhados da entrega anterior reutilizadas, sem repetir campanha/editor/mobile.
+
+Hub: **http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM)**; Esc → **Stonekeep: pontos da base integral**. Pontos **C1 central · corredor norte / Minotauro / lobos / esqueletos / ghoul sul**. [Roteamento focal dos pontos](evidencias/m02-stonekeep-c1-central/pontos.json). Guardar/Carregar teste usa RAM, slots pessoais bloqueados; nenhuma modificação de saves pessoais/namespace. Servidor de desenvolvimento no-store; encerrar por `tools\arena-local.cmd stop`.
+
+Avaliação manual da dungeon segue adiada; não há nova aprovação presumida. **Porta relatada sem localização permanece pendente**, sem causa ou solução atribuída. Próximo bloco contíguo: **C1 sul/Y80–89**,6referências (2ghouls/1aranha/3orcs), sem novas portas; conferir acessos e configuração mínima da aranha antes de distribuir, sem copiar recompensas vazias do laboratório. Loot/descanso e refinamentos continuam posteriores.
+
+<a id="entrega-atual--c1-norte-y6069"></a>
+
+## Entrega anterior — C1 norte Y60–69
 
 Sobre f0d7470; [configuração/fonte](mapas/STONEKEEP_C1_NORTE_M02.json), `tools/inspect-stonekeep-c1-north.py`. MIF39699021/MAP1/FLOR/LOCK/TRIG e STKEEP1.INF relidos, hash preservado. **Cinco referências e seis portas** confirmadas; única LOCK=(65,68,1), nível de fechadura comum, não ID de chave. Sem TRIG na própria célula das portas. Placa TEXT4 em(65,63) permanece opcional/adiada, não foi convertida em condição de acesso. Texturas declaradas DCAS2 nas cinco comuns e DCAS3 na LOCK1; índice de textura de porta no MIF é1-based, conferido com inventário/INF. Reutiliza componentes aprovados, aparência compartilhada ainda provisória; nenhuma arte nova ou troca visual.
 
