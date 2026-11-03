@@ -1,0 +1,11 @@
+{
+  "base": "b8a87de",
+  "browser": "156.0.8078.76",
+  "checks": [
+    "battle: real laboratory entry/contact,0EXP/empty loot and controlled victory unchanged, normal slots blocked",
+    "walk: real laboratory entry/contact,0EXP/empty loot and controlled victory unchanged, normal slots blocked",
+    "After leaving labs, campaign Spider80EXP/gold16%6-60 restored; personal browser storage untouched"
+  ],
+  "errors": [],
+  "limits": "Synthetic RAM, controlled native victories only; no new art/combat approval or full campaign."
+}

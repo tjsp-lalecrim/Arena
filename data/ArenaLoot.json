@@ -417,9 +417,9 @@
     },
     "9": {
       "gold": {
-        "chance": 0,
-        "min": 0,
-        "max": 0
+        "chance": 0.16,
+        "min": 6,
+        "max": 60
       },
       "potions": {
         "chance": 0,
@@ -451,8 +451,8 @@
           "entries": []
         }
       },
-      "difficulty": "isolated battle pilot only",
-      "source": "Empty rewards only for this Spider laboratory. Campaign EXP/loot not configured; do not transfer zero silently."
+      "difficulty": "provisional-M02-BAL",
+      "source": "Local Arena_Monsters PDF20:16% chance6-60gold. Only this documented reward enabled; no new items/effects."
     }
   },
   "technical": {
