@@ -8,9 +8,9 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados; seis B2 agora integrados, parâmetros provisórios.
 
-**Entrega atual — C1 sul:** [Y80–89 integrada](STONEKEEP_M02_04.md#entrega-atual--c1-sul-y8089),6encontros (2ghouls,1aranha,3orcs), sem novas portas ou alterações de geometria/água. Total87/180encontros e42/70portas; C1=19/19encontros e6/6portas inventariados, não conclusão integral de geometria/eventos. Aranha mantém assets/atributos aprovados com ressalva; configuração mínima de campanha80EXP provisórios e ouro16%6–60 documentado, laboratórios separados0EXP/loot. Verificações focais em Chrome/RAM, sem aprovação manual presumida; campanha Map012 preservada. Porta sem localização e volumes aquáticos incertos permanecem pendentes. Próximo bloco proposto: C2 norte/Y60–69,9encontros/4portas, incluindo LOCK3, a conferir antes de configurar.
+**Entrega atual — C2 norte:** [Y60–69 integrada](STONEKEEP_M02_04.md#entrega-atual--c2-norte-y6069),9encontros (5goblins,2orcs,1homem-lagarto,1esqueleto) e4portas, incluindo LOCK3 MIF39,61. Total96/180encontros e46/70portas; C2=9/32encontros e4/4portas inventariados, não conclusão integral de geometria/eventos. Forçar/Voltar reutilizado,135atualizações/sem custo; assets e configurações de campanha intactos. Rotas contínuas usam corredores já existentes atéY85, sem conteúdo novo fora da faixa ou alteração aquática. Verificações focais em Chrome/RAM, avaliação manual adiada; Map012 e saves pessoais preservados. Porta sem localização permanece pendente. Próximo bloco proposto: C2 central/Y70–74,6encontros, sem novas portas.
 
-**Próxima dependência:** C2 norte/Y60–69,9referências e4portas no inventário, conexão C1↔C2 e LOCK3 MIF39,61; conferir fontes e acessos antes de implementar. Sem início automático.
+**Próxima dependência:** C2 central/Y70–74,6referências de espécies existentes e sem portas novas no inventário; conferir acessos/posições antes de implementar. Sem início automático.
 
 ## Histórico42b857f — piloto de batalha do orc
 
@@ -20,7 +20,7 @@ Sobre7ec5051, [piloto V01](ORC_M02.md): Enemy7/Troop8,24desenhos, somente batalh
 
 ## Cobertura operacional — blocos integrados no Map015
 
-Base9031298 e fechaduras/ligação seca preservadas; conclusão posterior dos nove encontros após f5ebdba. **87/180encontros e42/70portas**, com **93encontros/28portas restantes**, após C1 sul. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
+Base9031298 e fechaduras/ligação seca preservadas; conclusão posterior dos nove encontros após f5ebdba. **96/180encontros e46/70portas**, com **84encontros/24portas restantes**, após C2 norte. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
 
 | Área | Cobertura | Pendência funcional |
 |---|---|---|
@@ -28,11 +28,11 @@ Base9031298 e fechaduras/ligação seca preservadas; conclusão posterior dos no
 |B2 |25/25encontros;18/18portas |Avaliação integrada/itens de outros sistemas ainda pendentes; nenhum encontro/porta faltante neste bloco |
 |B1 |10/10encontros;4/4portas |Validação manual adiada; acessos norte/sul distintos, volume aquático antigo67,26 ainda incerto e evitado na rota técnica |
 |C1 |19/19encontros;6/6portas |Referências de encontros/portas cobertas, geometria/eventos ainda parciais; avaliação manual adiada |
-|C2 |0/32encontros;0/4portas |Próximo bloco contíguo: norte/Y60–69; não implementado nesta entrega |
+|C2 |9/32encontros;4/4portas |Faixa Y60–69 integrada tecnicamente;23encontros em Y70–89 ausentes. Geometria/eventos e avaliação manual ainda parciais |
 
 Cinco LOCK1/2/3 são fechaduras comuns, não IDs de chaves: **Forçar a porta / Voltar**, universal e determinístico,45atualizações×LOCK provisórias, sem custos/prêmios ou chave inventada. MIF39,44 deixa de ser abertura provisória. Bolsa sudoeste agora conectada pelas nove células **secas suspensas** MIF56,41..49, com piso e cobertura separados, além de4portas/2goblins. Fonte geométrica e tabelas do executável sustentam folga; não houve observação DOS nova. A1 aquática permanece incerta e intocada. Naquela unidade de acesso, nenhum loot, descanso, atributo, motor ou asset foi alterado; a configuração mínima de campanha atual está na entrega B1 acima.
 
-**Próximo recorte necessário:** C2 norte/Y60–69,9encontros e4portas. Critério: integrar a conexão C1↔C2 e o primeiro bloco conectado, conferindo orientações/LOCK3 MIF39,61 e registros existentes; prioridade por continuidade de encontros/portas. Sem novos assets. Loot/tesouros/descanso depois; Rihad integral após Stonekeep; campanha ainda Map012.
+**Próximo recorte necessário:** C2 central/Y70–74,6encontros (2homens-lagarto,2aranhas,2esqueletos), sem novas portas. Critério: completar o primeiro trecho contíguo dos23encontros de C2 restantes; prioridade por continuidade e acessos já usados na circulação. Conferir fontes/posições antes de configurar; nenhuma produção artística necessária. Loot/tesouros/descanso depois; Rihad integral após Stonekeep; campanha ainda Map012.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 

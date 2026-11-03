@@ -61,3 +61,7 @@ Map015:24 encontros/4 portas, configuração setorial de fonte versionada em STO
 ## C1 sul
 
 `stonekeep-c1-south.cjs`, após central, acrescenta somente eventos462–467 e o visual aprovado da aranha ao Map015; total87/42, C1=19/19encontros e6/6portas, não conclusão de geometria/eventos. Fonte `doc/mapas/STONEKEEP_C1_SUL_M02.json`, inspeção `tools/inspect-stonekeep-c1-south.py`; configuração de campanha da aranha exigida explicitamente. Camadas/portas/estados anteriores preservados. Três pontos no hub RAM, sem novo comando de título. [Fonte, configuração mínima e testes](../STONEKEEP_M02_04.md#entrega-atual--c1-sul-y8089).
+
+## C2 norte
+
+`stonekeep-c2-north.cjs`, após C1 sul: quatro portas/36componentes468–503 e nove encontros504–512, total96/46. Fonte `doc/mapas/STONEKEEP_C2_NORTE_M02.json`, inspeção `tools/inspect-stonekeep-c2-north.py`. `interactC2Door` aceita somente os4IDs do setor e delega ao auxiliar existente; B1/C1 preservados. LOCK3 MIF39,61 anexada à lista explícita de Arena_StonekeepAccess, mesma força45×nível e self-switchesA/B; sem novo sistema. Só soleiras região4→6, demais camadas intactas. Quatro pontos no hub RAM e restauração de eventos pelo mecanismo existente; nenhum comando extra no título ou mudança de saves. [Fontes, rotas e limites](../STONEKEEP_M02_04.md#entrega-atual--c2-norte-y6069).
