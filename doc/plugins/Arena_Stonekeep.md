@@ -57,3 +57,7 @@ Map015:24 encontros/4 portas, configuração setorial de fonte versionada em STO
 ## C1 central
 
 `stonekeep-c1-central.cjs`, após C1 norte, acrescenta somente eventos454–461 (8encontros), com IDs `stonekeep.c1c.enemy.mifXX.YY`; total81/42. Fonte/rotas em `doc/mapas/STONEKEEP_C1_CENTRAL_M02.json`, conferência reproduzível por `tools/inspect-stonekeep-c1-central.py`. Camadas, portas e configurações de campanha intactas; restauração de eventos e derrotas usa o núcleo existente. Cinco pontos no menu RAM existente; sem novo comando de título. [Cobertura/limites](../STONEKEEP_M02_04.md#entrega-atual--c1-central-y7079).
+
+## C1 sul
+
+`stonekeep-c1-south.cjs`, após central, acrescenta somente eventos462–467 e o visual aprovado da aranha ao Map015; total87/42, C1=19/19encontros e6/6portas, não conclusão de geometria/eventos. Fonte `doc/mapas/STONEKEEP_C1_SUL_M02.json`, inspeção `tools/inspect-stonekeep-c1-south.py`; configuração de campanha da aranha exigida explicitamente. Camadas/portas/estados anteriores preservados. Três pontos no hub RAM, sem novo comando de título. [Fonte, configuração mínima e testes](../STONEKEEP_M02_04.md#entrega-atual--c1-sul-y8089).

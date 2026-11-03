@@ -1,4 +1,4 @@
-# Arena_Spider0.1.0
+# Arena_Spider0.2.0
 
 Exemplar RAM: Enemy9/Troop10, combate e caminhada do mesmo Spider confirmado nas fontes. [Cobertura/fontes/arte](../ARANHA_M02.md).
 
@@ -6,4 +6,4 @@ Dependências reais: Arena_DebugHub, Arena_Stonekeep, Arena_Continuation, Arena_
 
 `ArenaSpider.startLab()` reutiliza previewMaterials e inicia batalha10; `startWalkLab()` reutiliza previewArrival, flag própria e sala Map016. Registro das duas entradas somente no hub, sem ampliar título. `active()` exige flag própria+laboratório; contratos de mapa/área delegam fora desse contexto. Evento1 é copiado somente em memória e validado contra nota original do orc; ganha ID `technical.stonekeep.spider.walk.01`. Arquivo Map016 permanece intacto. Área própria e IDs/recibos separados; nenhuma configuração sintética entra nas áreas normais.
 
-Visual usa células96px, ground94/groundByDirection72 nas quatro direções, compensação já suportada em Arena_Encounters. A âncora das pernas permanece no centro do piso; área visual não muda colisão. Reentrada de Orc/Lizard/Minotaur e saída ao título verificadas. Guardar/Carregar RAM usa mecanismo existente; nenhum save pessoal/slot normal é gravado. Campanha desabilitada/EXP e loot futuros nulos; tabela vazia somente para laboratório. Validação de banco falha explicitamente se vínculos estiverem ausentes; builder protege IDs ocupados e impede habilitação de campanha por acidente.
+Visual usa células96px, ground94/groundByDirection72 nas quatro direções, compensação já suportada em Arena_Encounters. A âncora das pernas permanece no centro do piso; área visual não muda colisão. Reentrada de Orc/Lizard/Minotaur e saída ao título verificadas. Guardar/Carregar RAM usa mecanismo existente; nenhum save pessoal/slot normal é gravado. Campanha explícita em `campaign`:80EXP provisórios e ouro16%6–60. `Game_Enemy.exp` e `ArenaLoot.tableForEnemy` delegam normalmente, exceto para Enemy9 marcado `_arenaSpiderBattlePilot` ou na sala própria (`here()`). Esses dois laboratórios conservam0EXP/tabela vazia; Map015 usa as recompensas de campanha. Validação de banco falha explicitamente se vínculos estiverem ausentes; builder protege IDs ocupados e exige EXP positiva/tabela explícita para campanha.
