@@ -1,0 +1,56 @@
+{
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Clean native boot/hub,96 logical IDs, normal slots blocked; campaign Minotaur60EXP/gold25%6-60 separate from technical lab",
+    "Four existing hub RAM points route correctly without occupied landings",
+    "Existing C1 public door API still opens/closes normally after bounded helper reuse",
+    "New source LOCK3: direct bypass refused, Voltar default/cancel preserves state, native Forçar unlocks once in135ticks with no resource/EXP/item cost; no fictitious key",
+    "Four C2 north doors x2 valid sides, native Enter/open/cross/reclose; closed collision and individual switches; invalid side and occupied swing give truthful brief feedback, source LOCK3 kept explicit",
+    "Player in doorway prevents closing; all four9-part component positions/anchors unchanged across both-side opening/closing",
+    "Debug distinguishes unimplemented development door from implemented closed/open/locked state, MIF/MV coordinates visible; no door is silently opened by diagnostics"
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.c2n.door.mif59.60",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.c2n.door.mif59.60",
+      "side": 1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.c2n.door.mif39.61",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.c2n.door.mif39.61",
+      "side": 1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.c2n.door.mif55.63",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.c2n.door.mif55.63",
+      "side": 1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.c2n.door.mif59.63",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.c2n.door.mif59.63",
+      "side": 1,
+      "crossed": true
+    }
+  ],
+  "errors": [],
+  "missing": []
+}

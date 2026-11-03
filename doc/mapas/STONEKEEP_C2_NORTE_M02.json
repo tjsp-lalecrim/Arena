@@ -1,0 +1,1666 @@
+{
+  "version": 1,
+  "base": "b644857",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "bounds": [
+    30,
+    60,
+    59,
+    69
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.c2n.door.mif59.60",
+      "sourceOriginal": [
+        59,
+        60
+      ],
+      "view": [
+        30,
+        60
+      ],
+      "center": [
+        93,
+        183
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "lockPolicy": null,
+      "triggerAtDoor": null
+    },
+    {
+      "id": "stonekeep.c2n.door.mif39.61",
+      "sourceOriginal": [
+        39,
+        61
+      ],
+      "view": [
+        50,
+        61
+      ],
+      "center": [
+        153,
+        186
+      ],
+      "axis": "north-south",
+      "raw": 45073,
+      "texture": "DCAS6.IMG",
+      "lockValue": 3,
+      "lockPolicy": "forceableOrdinary",
+      "triggerAtDoor": null
+    },
+    {
+      "id": "stonekeep.c2n.door.mif55.63",
+      "sourceOriginal": [
+        55,
+        63
+      ],
+      "view": [
+        34,
+        63
+      ],
+      "center": [
+        105,
+        192
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "lockPolicy": null,
+      "triggerAtDoor": null
+    },
+    {
+      "id": "stonekeep.c2n.door.mif59.63",
+      "sourceOriginal": [
+        59,
+        63
+      ],
+      "view": [
+        30,
+        63
+      ],
+      "center": [
+        93,
+        192
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "lockPolicy": null,
+      "triggerAtDoor": null
+    }
+  ],
+  "entries": [
+    {
+      "id": "stonekeep.c2n.enemy.mif56.62",
+      "eventId": 504,
+      "sourceOriginal": [
+        56,
+        62
+      ],
+      "origin": [
+        102,
+        189
+      ],
+      "species": "goblin",
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceFlat": "GOBLIN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif38.63",
+      "eventId": 505,
+      "sourceOriginal": [
+        38,
+        63
+      ],
+      "origin": [
+        156,
+        192
+      ],
+      "species": "goblin",
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceFlat": "GOBLIN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif42.63",
+      "eventId": 506,
+      "sourceOriginal": [
+        42,
+        63
+      ],
+      "origin": [
+        144,
+        192
+      ],
+      "species": "goblin",
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceFlat": "GOBLIN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif40.64",
+      "eventId": 507,
+      "sourceOriginal": [
+        40,
+        64
+      ],
+      "origin": [
+        150,
+        195
+      ],
+      "species": "goblin",
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceFlat": "GOBLIN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif46.64",
+      "eventId": 508,
+      "sourceOriginal": [
+        46,
+        64
+      ],
+      "origin": [
+        132,
+        195
+      ],
+      "species": "orc",
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif42.65",
+      "eventId": 509,
+      "sourceOriginal": [
+        42,
+        65
+      ],
+      "origin": [
+        144,
+        198
+      ],
+      "species": "goblin",
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceFlat": "GOBLIN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif46.65",
+      "eventId": 510,
+      "sourceOriginal": [
+        46,
+        65
+      ],
+      "origin": [
+        132,
+        198
+      ],
+      "species": "orc",
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif33.69",
+      "eventId": 511,
+      "sourceOriginal": [
+        33,
+        69
+      ],
+      "origin": [
+        171,
+        210
+      ],
+      "species": "homem-lagarto",
+      "enemyId": 3,
+      "troopId": 3,
+      "sourceFlat": "LIZRDMAN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2n.enemy.mif53.69",
+      "eventId": 512,
+      "sourceOriginal": [
+        53,
+        69
+      ],
+      "origin": [
+        111,
+        210
+      ],
+      "species": "esqueleto",
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceFlat": "SKELETON.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "points": [
+    {
+      "name": "C2 norte · ligação C1",
+      "position": [
+        90,
+        186
+      ]
+    },
+    {
+      "name": "C2 norte · portas oeste",
+      "position": [
+        105,
+        189
+      ]
+    },
+    {
+      "name": "C2 norte · LOCK3",
+      "position": [
+        153,
+        184
+      ]
+    },
+    {
+      "name": "C2 norte · encontros sul",
+      "position": [
+        108,
+        210
+      ]
+    }
+  ],
+  "water": {
+    "sourceRoutes": {
+      "stonekeep.c2n.enemy.mif56.62": {
+        "steps": 18,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              92,
+              186
+            ],
+            "original": [
+              59,
+              61
+            ]
+          }
+        ],
+        "maxOriginalY": 62,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 0
+      },
+      "stonekeep.c2n.enemy.mif38.63": {
+        "steps": 179,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              154,
+              182
+            ],
+            "original": [
+              39,
+              60
+            ]
+          }
+        ],
+        "maxOriginalY": 63,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 0
+      },
+      "stonekeep.c2n.enemy.mif42.63": {
+        "steps": 183,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              152,
+              182
+            ],
+            "original": [
+              39,
+              60
+            ]
+          }
+        ],
+        "maxOriginalY": 63,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 0
+      },
+      "stonekeep.c2n.enemy.mif40.64": {
+        "steps": 180,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              152,
+              182
+            ],
+            "original": [
+              39,
+              60
+            ]
+          }
+        ],
+        "maxOriginalY": 64,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 0
+      },
+      "stonekeep.c2n.enemy.mif46.64": {
+        "steps": 724,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "water",
+            "world": [
+              143,
+              109
+            ],
+            "original": [
+              42,
+              35
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "water",
+            "world": [
+              143,
+              91
+            ],
+            "original": [
+              42,
+              29
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "floor",
+            "world": [
+              143,
+              76
+            ],
+            "original": [
+              42,
+              24
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              91,
+              40
+            ],
+            "original": [
+              60,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "water",
+            "world": [
+              88,
+              40
+            ],
+            "original": [
+              61,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              61,
+              40
+            ],
+            "original": [
+              70,
+              12
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              92
+            ],
+            "original": [
+              75,
+              30
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              44,
+              98
+            ],
+            "original": [
+              75,
+              32
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              107
+            ],
+            "original": [
+              75,
+              35
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              41,
+              125
+            ],
+            "original": [
+              76,
+              41
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              41,
+              140
+            ],
+            "original": [
+              76,
+              46
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              38,
+              182
+            ],
+            "original": [
+              77,
+              60
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "water",
+            "world": [
+              31,
+              197
+            ],
+            "original": [
+              80,
+              65
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              32,
+              206
+            ],
+            "original": [
+              79,
+              68
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              92,
+              233
+            ],
+            "original": [
+              59,
+              77
+            ]
+          }
+        ],
+        "maxOriginalY": 80,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 61
+      },
+      "stonekeep.c2n.enemy.mif42.65": {
+        "steps": 189,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              152,
+              182
+            ],
+            "original": [
+              39,
+              60
+            ]
+          }
+        ],
+        "maxOriginalY": 65,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 0
+      },
+      "stonekeep.c2n.enemy.mif46.65": {
+        "steps": 721,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "water",
+            "world": [
+              143,
+              109
+            ],
+            "original": [
+              42,
+              35
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "water",
+            "world": [
+              143,
+              91
+            ],
+            "original": [
+              42,
+              29
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "floor",
+            "world": [
+              143,
+              76
+            ],
+            "original": [
+              42,
+              24
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              91,
+              40
+            ],
+            "original": [
+              60,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "water",
+            "world": [
+              88,
+              40
+            ],
+            "original": [
+              61,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              61,
+              40
+            ],
+            "original": [
+              70,
+              12
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              92
+            ],
+            "original": [
+              75,
+              30
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              44,
+              98
+            ],
+            "original": [
+              75,
+              32
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              107
+            ],
+            "original": [
+              75,
+              35
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              41,
+              125
+            ],
+            "original": [
+              76,
+              41
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              41,
+              140
+            ],
+            "original": [
+              76,
+              46
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              38,
+              182
+            ],
+            "original": [
+              77,
+              60
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "water",
+            "world": [
+              31,
+              197
+            ],
+            "original": [
+              80,
+              65
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              32,
+              206
+            ],
+            "original": [
+              79,
+              68
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              92,
+              233
+            ],
+            "original": [
+              59,
+              77
+            ]
+          }
+        ],
+        "maxOriginalY": 80,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 61
+      },
+      "stonekeep.c2n.enemy.mif33.69": {
+        "steps": 804,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "water",
+            "world": [
+              143,
+              109
+            ],
+            "original": [
+              42,
+              35
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "water",
+            "world": [
+              143,
+              91
+            ],
+            "original": [
+              42,
+              29
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "floor",
+            "world": [
+              143,
+              76
+            ],
+            "original": [
+              42,
+              24
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              91,
+              40
+            ],
+            "original": [
+              60,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "water",
+            "world": [
+              88,
+              40
+            ],
+            "original": [
+              61,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              61,
+              40
+            ],
+            "original": [
+              70,
+              12
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              92
+            ],
+            "original": [
+              75,
+              30
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              44,
+              98
+            ],
+            "original": [
+              75,
+              32
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              107
+            ],
+            "original": [
+              75,
+              35
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              41,
+              125
+            ],
+            "original": [
+              76,
+              41
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              41,
+              140
+            ],
+            "original": [
+              76,
+              46
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              38,
+              182
+            ],
+            "original": [
+              77,
+              60
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "water",
+            "world": [
+              31,
+              197
+            ],
+            "original": [
+              80,
+              65
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              32,
+              206
+            ],
+            "original": [
+              79,
+              68
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              92,
+              251
+            ],
+            "original": [
+              59,
+              83
+            ]
+          }
+        ],
+        "maxOriginalY": 85,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 97
+      },
+      "stonekeep.c2n.enemy.mif53.69": {
+        "steps": 668,
+        "runs": [
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              87,
+              186
+            ],
+            "original": [
+              61,
+              61
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              79,
+              181
+            ],
+            "original": [
+              64,
+              59
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "floor",
+            "world": [
+              92,
+              169
+            ],
+            "original": [
+              59,
+              55
+            ]
+          },
+          {
+            "sector": "B2",
+            "terrain": "water",
+            "world": [
+              143,
+              109
+            ],
+            "original": [
+              42,
+              35
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "water",
+            "world": [
+              143,
+              91
+            ],
+            "original": [
+              42,
+              29
+            ]
+          },
+          {
+            "sector": "A2",
+            "terrain": "floor",
+            "world": [
+              143,
+              76
+            ],
+            "original": [
+              42,
+              24
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              91,
+              40
+            ],
+            "original": [
+              60,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "water",
+            "world": [
+              88,
+              40
+            ],
+            "original": [
+              61,
+              12
+            ]
+          },
+          {
+            "sector": "A1",
+            "terrain": "floor",
+            "world": [
+              61,
+              40
+            ],
+            "original": [
+              70,
+              12
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              92
+            ],
+            "original": [
+              75,
+              30
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              44,
+              98
+            ],
+            "original": [
+              75,
+              32
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              44,
+              107
+            ],
+            "original": [
+              75,
+              35
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "water",
+            "world": [
+              41,
+              125
+            ],
+            "original": [
+              76,
+              41
+            ]
+          },
+          {
+            "sector": "B1",
+            "terrain": "floor",
+            "world": [
+              41,
+              140
+            ],
+            "original": [
+              76,
+              46
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              38,
+              182
+            ],
+            "original": [
+              77,
+              60
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "water",
+            "world": [
+              31,
+              197
+            ],
+            "original": [
+              80,
+              65
+            ]
+          },
+          {
+            "sector": "C1",
+            "terrain": "floor",
+            "world": [
+              32,
+              206
+            ],
+            "original": [
+              79,
+              68
+            ]
+          },
+          {
+            "sector": "C2",
+            "terrain": "floor",
+            "world": [
+              92,
+              233
+            ],
+            "original": [
+              59,
+              77
+            ]
+          }
+        ],
+        "maxOriginalY": 80,
+        "wetNonEmptyOriginal": [],
+        "outsideEventBandCells": 50
+      }
+    },
+    "avoidWetCells": [
+      {
+        "sourceOriginal": [
+          67,
+          3
+        ],
+        "center": [
+          69,
+          12
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          67,
+          4
+        ],
+        "center": [
+          69,
+          15
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          67,
+          5
+        ],
+        "center": [
+          69,
+          18
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          64,
+          26
+        ],
+        "center": [
+          78,
+          81
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          65,
+          26
+        ],
+        "center": [
+          75,
+          81
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          66,
+          26
+        ],
+        "center": [
+          72,
+          81
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          67,
+          26
+        ],
+        "center": [
+          69,
+          81
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          68,
+          26
+        ],
+        "center": [
+          66,
+          81
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          69,
+          26
+        ],
+        "center": [
+          63,
+          81
+        ],
+        "raw": 4104
+      },
+      {
+        "sourceOriginal": [
+          61,
+          31
+        ],
+        "center": [
+          87,
+          96
+        ],
+        "raw": 10537
+      },
+      {
+        "sourceOriginal": [
+          62,
+          31
+        ],
+        "center": [
+          84,
+          96
+        ],
+        "raw": 10023
+      },
+      {
+        "sourceOriginal": [
+          61,
+          32
+        ],
+        "center": [
+          87,
+          99
+        ],
+        "raw": 9766
+      },
+      {
+        "sourceOriginal": [
+          62,
+          32
+        ],
+        "center": [
+          84,
+          99
+        ],
+        "raw": 9766
+      }
+    ],
+    "policy": "Existing native open-water approaches only; no water volumes/collision changes. Existing uncertain67,26 avoided; old A1 candidates unchanged."
+  },
+  "connection": "C2 north events only. Skeleton approach uses existing corridor Y70-71, no new event/geometry there; no sector transfers.",
+  "triggersInBand": [
+    [
+      35,
+      62,
+      2,
+      255
+    ],
+    [
+      36,
+      62,
+      2,
+      255
+    ],
+    [
+      39,
+      67,
+      4,
+      255
+    ],
+    [
+      39,
+      60,
+      7,
+      255
+    ]
+  ],
+  "confidence": "Read-only MIF MAP1/FLOR/LOCK/TRIG + STKEEP1.INF, declared records and adaptation, no new DOS observation"
+}
