@@ -2,23 +2,54 @@
 
 ## Matriz operacional de assets — nove espécies
 
-**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **96/180encontros e46/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **102/180encontros e46/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
 
 | Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
 |---|---|---|---|---|
 |Rato /52 /16 |Disponível R02 |Disponível R02 |Combate R02 aprovado (associação a61977b); exploração e entrega M01 preservadas, sem nova aprovação específica inferida |Reutilizar; nenhuma geração necessária agora |
 |Goblin /53 /32 |Disponível R03 |Disponível R02 |Legado da entrega M01; não inventar aprovação artística individual nova a partir de testes gerais |Reutilizar; manter ressalvas/evidências M01 |
-|Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; quatro distribuídos (3B2+1C2 norte),15restantes |
+|Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; seis distribuídos (3B2+1C2 norte+2C2 central),13restantes |
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
 |Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; quatorze distribuídos (6B2+3B1+3C1 sul+2C2 norte),8restantes |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
 |Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; cinco distribuídos (2B1+2C1 norte+1C1 central), três restantes |
-|Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar; um C1 sul distribuído,19encontros ainda ausentes |
+|Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar; três distribuídos (1C1 sul+2C2 central),17encontros ainda ausentes |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. C1 com19/19encontros e6/6portas, C2 norte com9/32encontros e4/4portas configurados; próximo bloco C2 central/Y70–74,6encontros. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. C1 com19/19encontros e6/6portas, C2 Y60–74 com15/32encontros e4/4portas configurados; próximo bloco C2 central/Y75–79,7encontros. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
 
-## Entrega atual — C2 norte Y60–69
+## Entrega atual — C2 central Y70–74
+
+Sobre09b6ed7; [contrato/fonte](mapas/STONEKEEP_C2_CENTRAL_M02.json), `tools/inspect-stonekeep-c2-central.py`. MIF39699021/MAP1/FLOR e associações STKEEP1.INF relidos e comparados ao inventário, hash4eb604e…7d45b preservado. Seis referências confirmadas, nenhuma porta/LOCK na faixa. TRIG54,71/255,19 preservado como registro, sem novo evento ou condição inferida. Sem nova observação DOS. Coordenadas MIF zero-based → vista=(89−X,Y) → Map015=(3+3vistaX,3+3Y).
+
+|Encontro |MIF → Map015 |Evento |
+|---|---|---|
+|Homem-lagarto |(34,70)→(168,213) |513 |
+|Aranha |(48,70)→(126,213) |514 |
+|Homem-lagarto |(33,71)→(171,216) |515 |
+|Aranha |(48,71)→(126,216) |516 |
+|Esqueleto |(43,72)→(141,219) |517 |
+|Esqueleto |(43,74)→(141,225) |518 |
+
+IDs `stonekeep.c2c.enemy.mifXX.YY`; conferência prévia/gerador rejeitam origens e IDs ocupados. **102/180encontros e46/70portas**, restam78/24; C2=15/32encontros e4/4portas, sem declarar geometria ou demais eventos concluídos. Os512eventos/96encontros anteriores, portas/self-switches e **todas as camadas do mapa** permanecem idênticos. Nenhuma conexão, altura, parede, água ou colisão precisou ser alterada.
+
+### Circulação, configuração e limites
+
+Corredores existentes ligam C2 norte/central. A aproximação às salas dos homens-lagarto e ao esqueleto sul passa por corredores atéY85; não foi criado atalho na parede entre os dois esqueletos. Rotas fora deY70–74 são somente circulação existente, sem novos eventos nessa área ou transições internas. A prova de rota evita água com MAP1 não vazio; dúvidas aquáticas de A1/MIF67,26 intactas. Fonte do pergaminho, condições de acesso e recibos preservados; não exige eliminar todos.
+
+Reuso de Homem-lagarto3/Troop3, Aranha9/10 e Esqueleto4/5, raio2/intervalo90/região4. Assets ativos/aprovações com ressalvas preservados, inclusive comparação futura da aranha; nenhuma nova mecânica ou revisão de balanceamento. Potencial360EXP (2×50+2×80+2×50), valores existentes/provisórios. Tabelas e separação campanha/laboratórios são idênticas à base; evidências de isolamento da aranha em C1 sul reutilizadas. Map012, namespace e saves pessoais intocados.
+
+### Verificações e acesso
+
+[Sete grupos focais](evidencias/m02-stonekeep-c2-central/resultado.json), Chrome isolado: boot/IDs e bloqueio de slots; três pontos do hub; circulação nativa até os seis encontros vivos e retorno ao norte; patrulhas secas válidas; seis contatos por teclado/troops corretos/transição repetida recusada; vitórias controladas/retorno,6derrotas/recibos/360EXP e chamadas repetidas sem concessão; guardar/carregar RAM reconstrói eventos de array anterior e preserva derrotas/recibos/portas/quests/inventário/recursos/pontos, retorno de área sem respawn; saída mantém diagnóstico restrito e armazenamento pessoal vazio no perfil isolado. Comparação de dados/assets e reconstrução idempotente passaram; combate artístico e portas inalterados usam evidências anteriores. Movimento acelerado e vitórias/RNG controlados somente no teste; sem campanha completa/editor/mobile ou aprovação manual presumida.
+
+**http://127.0.0.1:8774/ → Testes / Debug → Campanha e mapas → Stonekeep · base integral (RAM)** → Esc → **Stonekeep: pontos da base integral** → **C2 central · homens-lagarto / aranhas / esqueletos**. Guardar/Carregar teste usa RAM, slots pessoais bloqueados. [Captura das aranhas](evidencias/m02-stonekeep-c2-central/aranhas.png). Porta8774 estava livre, servidor de desenvolvimento iniciado pelo procedimento oficial; permanece ativo, encerrar por `tools\arena-local.cmd stop`.
+
+Avaliação manual da dungeon continua adiada. **Porta relatada sem localização permanece pendente**, sem causa/correção presumida. Próximo bloco contíguo proposto: **C2 central/Y75–79**,7encontros (1orc,1esqueleto,2ghouls,3aranhas), sem novas portas; conferir posições/acessos antes de configurar. Loot de cenário/descanso seguem depois dos encontros/portas. Não iniciar outra melhoria automaticamente.
+
+<a id="entrega-atual--c2-norte-y6069"></a>
+
+## Entrega anterior — C2 norte Y60–69
 
 Sobreb644857; [contrato/fonte](mapas/STONEKEEP_C2_NORTE_M02.json), `tools/inspect-stonekeep-c2-north.py`. MIF39699021/MAP1/FLOR/LOCK/TRIG e vínculos STKEEP1.INF relidos, hash4eb604e…7d45b preservado. **Nove referências e quatro portas**, única fechadura nessa faixa LOCK=(39,61,3), sem TRIG nas células das portas. Referências declaradas no original, não nova observação DOS. Coordenadas MIF zero-based → vista=(89−X,Y) → Map015=(3+3vistaX,3+3Y).
 

@@ -65,3 +65,7 @@ Map015:24 encontros/4 portas, configuração setorial de fonte versionada em STO
 ## C2 norte
 
 `stonekeep-c2-north.cjs`, após C1 sul: quatro portas/36componentes468–503 e nove encontros504–512, total96/46. Fonte `doc/mapas/STONEKEEP_C2_NORTE_M02.json`, inspeção `tools/inspect-stonekeep-c2-north.py`. `interactC2Door` aceita somente os4IDs do setor e delega ao auxiliar existente; B1/C1 preservados. LOCK3 MIF39,61 anexada à lista explícita de Arena_StonekeepAccess, mesma força45×nível e self-switchesA/B; sem novo sistema. Só soleiras região4→6, demais camadas intactas. Quatro pontos no hub RAM e restauração de eventos pelo mecanismo existente; nenhum comando extra no título ou mudança de saves. [Fontes, rotas e limites](../STONEKEEP_M02_04.md#entrega-atual--c2-norte-y6069).
+
+## C2 central Y70–74
+
+`stonekeep-c2-central.cjs`, após C2 norte: eventos513–518, IDs `stonekeep.c2c.enemy.mifXX.YY`, total102/46. Fonte `doc/mapas/STONEKEEP_C2_CENTRAL_M02.json`, inspeção `tools/inspect-stonekeep-c2-central.py`. Sem novas portas, camadas, regras ou tabela de recompensas; composição/persistência e restauração de eventos reutilizadas. Três pontos no hub RAM existente; campanha continua Map012. [Cobertura/rotas/evidências](../STONEKEEP_M02_04.md#entrega-atual--c2-central-y7074).
