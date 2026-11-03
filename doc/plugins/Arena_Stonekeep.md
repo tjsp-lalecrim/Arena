@@ -69,3 +69,7 @@ Map015:24 encontros/4 portas, configuração setorial de fonte versionada em STO
 ## C2 central Y70–74
 
 `stonekeep-c2-central.cjs`, após C2 norte: eventos513–518, IDs `stonekeep.c2c.enemy.mifXX.YY`, total102/46. Fonte `doc/mapas/STONEKEEP_C2_CENTRAL_M02.json`, inspeção `tools/inspect-stonekeep-c2-central.py`. Sem novas portas, camadas, regras ou tabela de recompensas; composição/persistência e restauração de eventos reutilizadas. Três pontos no hub RAM existente; campanha continua Map012. [Cobertura/rotas/evidências](../STONEKEEP_M02_04.md#entrega-atual--c2-central-y7074).
+
+## C2 central Y75–79
+
+`stonekeep-c2-central-south.cjs`, após Y70–74, acrescenta eventos519–525/IDs `stonekeep.c2c2.enemy.mifXX.YY`, total109/46. Fonte `doc/mapas/STONEKEEP_C2_CENTRAL_SUL_M02.json`; inspeção `tools/inspect-stonekeep-c2-central-south.py`. Nenhuma nova porta, camada ou tabela de recompensa. Núcleos existentes tratam patrulha, contato e restauração RAM; quatro pontos no menu existente, sem comando adicional no título. [Fontes, acesso e limites](../STONEKEEP_M02_04.md#entrega-atual--c2-central-y7579).

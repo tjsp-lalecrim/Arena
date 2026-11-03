@@ -34,6 +34,8 @@ Estado real e quantidades atualizam imediatamente. Transições curtas de preenc
 
 ### Composição narrativa futura
 
+O planejamento dos blocos identificados/ordenados e a orientação visual anterior à geração seguem a [regra principal de arte](DIRECAO_DE_ARTE.md#ilustrações-por-bloco--padrão-para-novas-gerações); esta seção não autoriza antecipar imagens nem revisar telas aprovadas.
+
 Direção aprovada para refinamento futuro em01/11/2026, vinculada à **REF07**: usar a ilustração como fundo da cena, com proporção preservada e enquadramento adequado ao espaço disponível. Ajustar escala/recorte com áreas seguras para personagens e elementos narrativos, sem deformar a imagem. **Remover bordas das caixas de texto**; garantir contraste por sombra discreta ou degradê localizado junto ao texto, evitando escurecer desnecessariamente toda a arte.
 
 Aplicar essa preparação visual também a novos assets de diálogos narrativos relevantes, conforme DIRECAO_DE_ARTE.md, reservando área de leitura sem depender de molduras. Preservar margens, legibilidade, controles visíveis, foco, teclado/mouse/toque, soltura/nova pressão e paginação/overflow de textos longos. Ao implementar, validar composição e leitura em enquadramentos distintos, sem cortes relevantes ou controles sobrepostos. Uma amostra integrada precede expansão. O padrão de composição dos novos assets não autoriza alterar o código/interface: remover bordas e mudar a apresentação exigem entrega própria. A revisão das telas existentes continua futura, preservando o layout aprovado e a continuidade da campanha. Critérios e planejamento únicos em [REF07](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa); conteúdo das imagens em DIRECAO_DE_ARTE.md.
