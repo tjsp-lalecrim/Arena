@@ -16,7 +16,7 @@
 |Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar; vinte registros distribuídos |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente.** Stonekeep está disponível para avaliação pela campanha. Após este teste, o próximo trabalho é M02-03E1, levantamento integral de Rihad e dos assets que faltam. Balanceamento fica para depois da avaliação do percurso.
+**Sequência vigente.** Stonekeep está disponível para avaliação pela campanha. O levantamento M02-03E1 está documentado. O próximo recorte de conteúdo é M02-03E2, ligar o portão urbano à corte com os recursos existentes. Balanceamento fica para depois da avaliação do percurso.
 
 ## Stonekeep na campanha — integração de 10/11/2026
 
@@ -51,13 +51,33 @@ Ao carregar um save normal dentro do Map012, o jogo abre o Map015 e traduz a pos
 
 A automação em Chrome usa uma chegada sintética de nível 2, interações normais de MQ02 e slots descartáveis. Confere cobertura e acesso, persistência do delta, ida e volta a Stonekeep, entrega do pergaminho e retomada de um save sintético gravado pelo roteamento anterior. A vitória amostral e a velocidade de deslocamento foram controladas. [Evidências da integração](evidencias/m02-stonekeep-campanha/resultado.json)
 
+
+### Candidata de promoção pelo Git Flow
+
+Fonte funcional congelada `f27fd349ec49404a51e90fbd83d029d83ca0aa2b`. Bases verificadas `develop=85940d4723956079f920d7332f68a9d5a2d75641` e `main=df539eeee2d88199312ca3a8cba98edd2b2b900b`. `main` é ancestral de `develop`, que é ancestral da feature. São **74 commits de M02** e **744 arquivos** em cada diff de merge da fonte funcional. `git merge-tree --write-tree` com cada base produziu a mesma árvore da candidata, `d3bd36338595bbd71dad4c53cb7bcbfe216a8f27`, sem conflito. O delta funcional não altera o motor MV nem o workflow do Pages. A presente revisão editorial permanece na mesma feature.
+
+| Classe | Dependências e decisão de integração |
+| --- | --- |
+| Campanha e dados compartilhados | Continuação e registro de áreas/quest `91bad86`/`4ff291a`, chegada/arredores/visão/corte `b8738b9`…`fe99ac3`, fontes, água e item 7 a partir de `29e38db` (inclui diagnóstico e correção de cache), entrega e recibo `4357999`, base e gerador Map015 `8f28207`, materiais, encontros, nove espécies e dados de combate, cobertura/provisões/roteamento `babb12d`…`b296bb5`. O mesmo Map015 atende campanha e inspeção técnica. Map012 preserva a base do gerador e dos testes antigos. Não promover só os quatro commits finais sobre M01 |
+| Conteúdo de jogador já visível | Abertura/título aprovados `a39d71e` e `901dfcb` estão no histórico e entram no pacote do jogador. Textos da campanha em Rihad e no retorno do pergaminho também entram. Em etapa 60 a descoberta de Fang Lair está registrada, mas a viagem permanece indisponível |
+| Desenvolvimento e experimentos | Hub `d800a8f` e inspeção RAM, Map014 da prova `1bcf1f9`, Map013/amostra isolada de Fang Lair `af17b4b`, E05 herdado, fixtures, servidor local `60f969b` e geradores. O perfil padrão desabilita o hub. O allowlist ainda inclui mapas/dados/plugins técnicos necessários ao boot ou compartilhados. Guardar uma revisão específica se a distribuição precisar removê-los fisicamente. Referências e estudos ficam fora do pacote |
+
+**Prova da embalagem para jogador.** `node tools/build-web-package.cjs` e `node tools/check-web-package.cjs dist/web/m01-rc1-f27fd34/Arena` passaram em Windows com **385 arquivos de runtime**, 49.086.616 bytes com manifesto e namespace `arena:m01:save-v1`. SHA-256 do manifesto `8063e4e1c788c096a118035ab3f2ac0b62be3ea8a1467fe9af51dba926c86274`. Em origem descartável `/Arena/`, Chrome 157 abriu sem erro JS/HTTP e apresentou só Novo Jogo, Continuar e Opções, com hub desabilitado e armazenamento inicialmente vazio. O rótulo `m01-rc1` vem da receita vigente e identifica apenas a prova local nesta tarefa. Definir rótulo de candidata próprio na preparação de release. O percurso integrado e a retomada de saves continuam sustentados pelas evidências abaixo, sem repetir a campanha.
+
+**Sequência para promover após o aceite.**
+
+1. Confirmar o [roteiro integrado](#roteiro-de-avaliação-no-navegador) no SHA funcional e aceitar as ressalvas da matriz, incluindo acessos opcionais, grades provisórias e limite de Fang Lair. Investigar a porta relatada se o teste a localizar e identificar impacto na rota. Atualizar a evidência na feature.
+2. Conferir referências remotas e o diff. Integrar a feature revisada em `develop`, preservando o histórico. Repetir a comparação de runtime e o teste focal se a árvore da candidata mudar.
+3. Em uma etapa autorizada de estabilização, preparar `release/<versão>` a partir de `develop`, conferir o pacote de jogador e usar a release branch para promover a `main` pelo Git Flow, com retorno de correções a `develop`. O recorte termina na entrega do pergaminho e não constitui fechamento de M02.
+4. Tratar tag/GitHub Release e publicação no Pages em decisões próprias. Pages segue manual, pelo SHA completo da versão escolhida. Uma mudança de branch não é autorização de deploy.
+
 ### Roteiro de avaliação no navegador
 
 1. Abra o [Arena local](http://127.0.0.1:8774/) e carregue uma partida anterior à entrega do pergaminho ou use **Novo Jogo**. Se chegar a Rihad no nível 1, use os encontros dos arredores para ganhar experiência. No nível 2, descanse na esplanada para ouvir Ria, fale com o informante e aceite o pedido de Blubamka na corte.
 2. Na esplanada, aproxime-se da estrada ao sul e interaja sobre o ponto de saída. Escolha **Viajar para Stonekeep**. Explore os aposentos e a passagem dos esqueletos, atravesse a água até a ilha e recolha o pergaminho. Abra um tesouro, use um refúgio com recursos gastos e salve em um slot de teste. Recarregue para conferir posição, recursos, recompensas e derrotas.
 3. Volte pela saída junto à entrada, retorne à corte e entregue o pergaminho a Blubamka. Confira a conclusão da etapa no diário e o recibo único ao falar novamente. Se uma porta impedir a passagem, registre o lugar e a ação que antecedeu o bloqueio para reproduzir no hub existente.
 
-Avaliação manual e revisão de balanceamento aguardam esse teste. Depois, iniciar M02-03E1 pelo levantamento de Rihad e dos assets que realmente faltam.
+A avaliação manual precede a promoção. A revisão de balanceamento fica após o teste integrado. O próximo recorte de conteúdo usa a [planta reconstruída de Rihad](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).
 
 <a id="entrega-atual--c2-sul-y8089"></a>
 
