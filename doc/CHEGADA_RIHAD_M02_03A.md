@@ -1,6 +1,43 @@
 # M02-03A — primeira chegada a Rihad
 
-## Cobertura vigente de Rihad — revisão02/11/2026
+## M02-03E1 — planta reconstruída e inventário visual
+
+**Identificação no original.** `CITYDATA.65`, registro a partir do byte 1356, identifica Rihad em Hammerfell (província 1, cidade-estado local 4, ID global 36, posição provincial 207,180). A tabela costeira do `ACD.EXE` instalado inclui 36. Sua semente `0x00CF00B4` seleciona o modelo `CITYW1.MIF` do GLOBAL.BSA. O modelo é **128×128**, com grade **6×6 de quarteirões de 20×20**, começando em (3,3). Os índices 29, 33, 34 e 35 ficam reservados no modelo. A reconstrução determinística produziu 16.384 células por camada. O SHA-256 do MAP1 composto, em palavras de 16 bits little-endian antes do retoque dos portões, é `5d224c5e3cd48b1f7f382a2195d9548ed592efa2d38fc8634f4938a6f03b1bac`. A rota e as dimensões foram aferidas em dados, sem observação ao vivo em DOS. As tabelas costeira, modelos, origens e reservas vêm respectivamente de `0x401E2`, `0x4021C`, `0x4028F` e `0x402C8` do executável descompactado. A interpretação usa [CityDataFile](https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/Assets/CityDataFile.cpp), [LocationDefinition](https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/WorldMap/LocationDefinition.cpp) e [ArenaCityUtils](https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/World/ArenaCityUtils.cpp) como referências técnicas.
+
+**Planta de referência.** Linhas na ordem Y crescente e colunas em X MIF crescente. Cada célula dá o nome sem `.MIF`. R preserva o conteúdo do modelo. Os 32 blocos incluem 12 residenciais, 6 nobres, 5 de equipamento, 4 tavernas, 3 templos, 1 área livre e 1 Guilda dos Magos. A contagem é de blocos, pois um bloco pode conter vários acessos.
+
+| Y | X3 | X23 | X43 | X63 | X83 | X103 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 3 | TPBD9C | TPBD11B | NBBD1C | BSBD14C | TSBD6C | BSBD18D |
+| 23 | TPBD8B | BSBD12A | MGBD4D | EQBD10D | BSBD19A | TVBD14B |
+| 43 | TVBD7B | BSBD6A | NBBD9D | BSBD7A | NBBD1A | EQBD12D |
+| 63 | EQBD1B | BSBD7C | NBBD1D | BSBD6C | BSBD1A | EQBD8B |
+| 83 | BSBD18A | NBBD3D | BSBD6B | EQBD9D | TVBD6B | R |
+| 103 | NBBD7B | BSBD16A | TVBD7D | R | R | R |
+
+- **Acessos MIF.** Portão urbano em (13,0)/(14,0), pelo `*MENU 8/7` de DCN. O conjunto do palácio está na borda oposta em (8,127)/(9,127), atrás de uma entrada interna em (8,124)/(9,124). No grafo conservador de pisos secos, células vazias e decorações, há 139 passos de (13,1) a (8,123), antes de tratar as portas de acesso. A passagem foi deduzida dos dados, sem testar colisões adaptadas. Espelhar X por `127−X` na leitura superior adotada nas dungeons. Com escala 3 e margem 2, a referência dá **388×388 tiles**, contra 274×274 já testados em Stonekeep. Medir a carga antes de fixar escala e distribuição de eventos.
+- **Delta da amostra.** Map009 e Map011 preservam a chegada e a audiência já jogáveis, mas a estrada, o repouso e o informante têm coordenadas autorais. Reposicionar seus eventos pela rota identificada. Manter as fachadas e acessos urbanos, incluindo os quarteirões sem serviço implementado. Confirmar a variante e o interior do palácio, a margem costeira e a prioridade de decoração antes da arte final.
+- **Entidades.** A composição MAP1 resolve 367 referências a flats no DCN, entre NPCs e objetos, **zero registros de criatura hostil por ITEM 32–54 ou inimigo humano por ITEM 55–72**. O arquivo declara `RAT1.DFA`, mas esse flat não está colocado. Os quatro ratos de Map010 são uma adaptação já coberta pelo catálogo. O dado não conta guardas e encontros dinâmicos do executável ou interiores não abertos.
+
+### Famílias visuais de Rihad
+
+`DCN.INF` é a referência desértica de céu limpo. A reconstituição tem piso de rua, passeio, terreno seco e margem inundada. As texturas de clima e os detalhes dos interiores ficam fora desta contagem. Famílias são conjuntos funcionais de módulos, não a quantidade de arquivos IMG/SET declarados.
+
+| Família | Referência original | Decisão frente aos atlas existentes |
+| --- | --- | --- |
+| 1. Rua, passeio e terreno aberto | NROADD, NSIDWALD, NGRASSD | **Nova**. O piso claro de `Arena_Dungeon_M14_R03` serve na prova de percurso, como placeholder |
+| 2. Fachadas, coberturas e vãos comuns | DMBS1–3, DMEQUIP, DMTAVERN, DMMUGUIL, DMTEMPLE, DMNOBLE | **Nova**. Separar módulos residenciais e institucionais. Adaptar componentes de portas onde a silhueta for compatível |
+| 3. Muralha, portão e fachada da corte | CITYWALD, DLGTD, DRGTD, DGATE, BK01/02PALD | **Nova**. Reaproveitar o contrato de colisão/âncora das portas. O atlas castelhano de Stonekeep só serve como referência modular |
+| 4. Costa e transições | SEAWALLD, FLOR 13 | **Adaptar** a superfície existente `Arena_Water_M14_R02_A1` e conferir margem/porto antes de escolher o acabamento |
+| 5. Adereços urbanos e flora | NLAMP1, NWELL, NFOUNT, CACTUS, PALM | **Mista**. Reusar vasos, luzes e pedra onde houver equivalência. Poço, fonte, palmeira e cacto exigem desenho próprio quando necessários ao setor |
+| 6. Interior obrigatório da corte | Conjunto de palácio original, variante ainda a conferir | **Em confirmação**. O Map011 permanece utilizável como corte provisória |
+
+**Contagem de planejamento.** Seis famílias urbanas. Um atlas modular exterior novo é a unidade mínima para rua, fachada e fortificação. Costa pode dividir esse atlas com a superfície já existente. Um atlas interior separado depende da variante do palácio e da capacidade de acomodar suas peças. Informante e Blubamka têm representações provisórias reutilizáveis no teste de mapa. A caracterização futura de Blubamka não é item do atlas nem exige imagem narrativa agora.
+
+**Próximo recorte jogável.** Importar a estrutura da cidade com os tiles disponíveis como provisórios, testar carregamento e medir a rota contínua **portão urbano → esplanada → portão interno → corte existente**. Transferir os gatilhos de chegada, informante, repouso e estrada por seus IDs atuais. Começar por essa ligação antes de finalizar outros quarteirões, mantendo-os no inventário da planta. [Contagem conjunta de criaturas do M02](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) e [texto da campanha](CAMPANHA_PRINCIPAL.md#inventário-textual).
+<a id="cobertura-vigente-de-rihad--revisão02112026"></a>
+
+## Histórico da cobertura — revisão de 02/11/2026
 
 A chegada e suas interações são uma **amostra funcional**, não a cidade completa exigida agora. A fonte local Fang Lair p2 sustenta cidade/corte junto à muralha e a troca narrativa, mas não fornece aqui correspondência cartográfica completa de Rihad. Map009 **21×15** é esplanada autoral; Map011 é interior mínimo da corte; Map010 é um trecho adaptado com quatro ratos para a progressão inicial, não cópia de população/encontros urbanos originais. Nenhum deles comprova a planta completa.
 

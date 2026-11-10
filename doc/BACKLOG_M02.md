@@ -10,7 +10,9 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Entrega atual.** Stonekeep está ligada à campanha no Map015. O inventário de 180 encontros e 70 portas está registrado, com 165 encontros alcançáveis na auditoria. Há 17 tesouros e seis refúgios ativos. A rota do pergaminho está conectada. A avaliação manual integrada está pendente. [Matriz, limites, saves e roteiro único](STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026)
 
-**Próximo trabalho.** M02-03E1, levantamento integral de Rihad e inventário dos assets que faltam. A revisão de balanceamento depende do teste de campanha.
+**Preparação de promoção.** Revisão de ancestralidade, dependências e pacote de jogador concluída. Aguarda confirmação do percurso e aceite das ressalvas. [Procedimento de integração](STONEKEEP_M02_04.md#candidata-de-promoção-pelo-git-flow)
+
+**Próximo recorte jogável.** M02-03E2, ligação do portão urbano ao acesso da corte sobre a planta de Rihad, com tiles provisórios. M02-03E1 identificou a composição e as famílias de assets. Fang Lair tem duas espécies novas confirmadas, cada uma com combate e patrulha pendentes. O servo permanece incerto. [Rihad](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) · [Assets](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) · [Blocos narrativos](CAMPANHA_PRINCIPAL.md#inventário-textual)
 
 ## Histórico42b857f — piloto de batalha do orc
 
@@ -41,15 +43,15 @@ Fonte da regra: [escopo mínimo funcional](MARCOS_DO_PROJETO.md#escopo-mínimo-f
 | Local | Cobertura atual / falta | Fonte principal |
 | --- | --- | --- |
 | Stonekeep | **Map015 em avaliação de campanha.** Planta 90×90, nove setores, 180 encontros registrados e 70 portas alcançadas. Acessos opcionais, refúgio e tesouros pendentes na matriz. | [Matriz vigente](STONEKEEP_M02_04.md#matriz-vigente) |
-| Rihad | Esplanada21×15 e corte mínima, não topologia urbana original. Identificar planta/arquivos, inventariar ruas/portões/edifícios e encontros aplicáveis, preservar eventos já funcionais | [Cobertura e lacunas](CHEGADA_RIHAD_M02_03A.md#cobertura-vigente-de-rihad--revisão02112026) |
-| Fang Lair | af17b4b: celas/enigma, chave8 e portal até etapa80. Recorte preservado; materiais provisórios, aranhas sem combate, sem entrada completa/nível2/fragmento/retaliação. Não aprovado manualmente nem concluído | [M02-06A parcial](FANG_CELAS_M02_06A.md) |
+| Rihad | Planta original reconstruída, ainda sem importação para o runtime. Esplanada e corte mínima seguem jogáveis. Integrar o acesso pelo portão urbano e preservar os eventos já funcionais | [Planta e lacunas](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) |
+| Fang Lair | af17b4b: celas/enigma, chave8 e portal até etapa80. Recorte preservado; materiais provisórios, aranhas da amostra ainda sem ligação ao combate disponível, sem entrada completa/nível 2/fragmento/retaliação. Não aprovado manualmente nem concluído | [M02-06A parcial](FANG_CELAS_M02_06A.md) |
 
 ### Ordem revisada — sem renumerar as entregas anteriores
 
 | Ordem / item | Unidade pequena | Dependência | Critério de saída |
 | --- | --- | --- | --- |
 |1 — **M02-04C1** | Levantamento completo entregue, somente documental | Basec2d7673, dependências atuais | [Índice/roteiro](STONEKEEP_M02_04.md#m02-04c1--levantamento-completo02112026):8100 células,9setores/39 contatos potenciais,180 referências por posição; esqueleto(76,22) confirmado/ausente, MV18,69. MAP1/FLOR novos=cache; sem declaração de mapa completo ou novo teste manual |
-|2 — **M02-03E1** | Identificar referência urbana completa de Rihad e delta da amostra |03A–D, regra de cobertura | Planta/arquivo ou composição original identificados, chegada/corte/repouso e conexões mapeados; encontros condicionais e interiores adiados discriminados; se a fonte variar, registrar a referência escolhida. Não inventar topologia ou contagem |
+|2 — **M02-03E1** | Levantamento urbano entregue |03A–D, regra de cobertura | Composição CITYW1 + 32 blocos identificada e inventário de assets registrado. A etapa de mapa confere colisões, posiciona chegada e repouso e mede o desempenho da escala adotada |
 |3 — **M02-04C2.n** | Completar geometria de Stonekeep por setor contíguo |04C1 | Um setor por entrega, mesmos materiais adequados ou placeholder explícito; conexões com trecho anterior, colisão/água/portas e reconstrução conferidas. Não lote de assets nem expansão sem matriz de referência |
 |4 — **M02-04C3.n** | Completar encontros/estados no setor correspondente |04C1 + setor04C2.n | Posicionamento e IDs individuais, condições, contato, concessão única e persistência; reutilizar nove espécies disponíveis. Preparação de assets por dungeon conforme matriz: uma espécie/entrega, combate+caminhada juntos se ambos faltarem, avaliar antes da próxima e antes da distribuição. Não criar objetivo de matar todos |
 |5 — **M02-03E2.n /03E3** | Rihad por setores, depois religar os eventos da campanha |03E1 | Ruas/muralhas/edifícios/acessos completos; corte/repouso/viagens e encontros aplicáveis conectados sem repetir narrativa, missões ou recompensas. Interiores não necessários identificados como inacessíveis |
@@ -63,7 +65,7 @@ A prova de mapa único antecedeu a base isolada 04C2.0 e os primeiros blocos 04C
 
 ## Histórico de entregas e evidências — cobertura limitada às versões citadas
 
-**Registro da última implementação — M02-06A parcial:** [celas de Fang Lair](FANG_CELAS_M02_06A.md), sobre f27e9a9. Enigma/acerto/erro, chave8, portal e persistência implementados no recorte original; materiais/portas provisórios e acesso RAM centralizado. Erro abre celas e registra liberação, mas o exemplar de aranha/combate condicionado ainda falta; não declarar o critério inteiro concluído. Amostra aguarda avaliação, sem rota completa ou próximo nível. Grupos de Stonekeep permanecem com manuais adiados à integração; REF17 futura.
+**Registro da última implementação — M02-06A parcial:** [celas de Fang Lair](FANG_CELAS_M02_06A.md), sobre f27e9a9. Enigma/acerto/erro, chave8, portal e persistência implementados no recorte original; materiais/portas provisórios e acesso RAM centralizado. Erro abre celas e registra liberação, mas os encontros condicionados ainda precisam ser ligados ao exemplar de Stonekeep. Amostra aguarda avaliação, sem rota completa ou próximo nível. Grupos de Stonekeep permanecem com manuais adiados à integração; REF17 futura.
 
 **Bloqueio de inicialização — causa/correção confirmadas:** responsável comprovou Items.json antigo1–6 vindo de disk cache/2902bytes; disco/servidor atuais contêm7/3425bytes. Revisão da URL HTTP do banco preserva payload/validação/saves. [Reprodução, viagem/coleta e reconstrução preservando IDs futuros](STONEKEEP_M02_04.md#correção-confirmada--cache-http-de-itemsjson). Amostra continua pendente de avaliação; registros de causa desconhecida abaixo são históricos. Nenhum conteúdo novo.
 
