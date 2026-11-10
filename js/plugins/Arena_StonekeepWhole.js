@@ -67,8 +67,45 @@ var ArenaStonekeepWhole;
   if(!cfg||cfg.version!==1||cfg.mapId!==15||!$dataMapInfos[15]||cfg.context.mapId!==15||cfg.context.sourceId!==$arenaStonekeep.sourceId||!original.ok||JSON.stringify(cfg.encounters.entries.slice(0,original.config.entries.length).map(function(e){return e.id;}))!==JSON.stringify(original.config.entries.map(function(e){return e.id;})))throw Error('Stonekeep integral: vínculos de mapa/fonte/encontros inválidos. Reconstrua build-stonekeep-whole.');
   ArenaDungeon.registerSwimming(cfg.mapId,cfg.context.swimming);ArenaDungeon.registerDoors(cfg.mapId,{mapId:cfg.mapId,doors:cfg.doors,doorAnimationFrames:cfg.doorAnimationFrames});registered=true;
  }return true;};
+ ArenaStonekeepWhole.collectTreasure=function(interpreter){
+  if(!here()||!(interpreter instanceof Game_Interpreter)||interpreter._mapId!==c().mapId||
+     $gameParty.inBattle()||$gamePlayer.isTransferring()||$gameMessage.isBusy())return false;
+  var point=c().treasures.find(function(t){return t.eventId===interpreter.eventId();});
+  var event=point&&$gameMap.event(point.eventId);
+  if(!event||event._erased||$gameMap.distance(event.x,event.y,$gamePlayer.x,$gamePlayer.y)>1||
+     ArenaLoot.snapshot().receipts['container/'+point.id])return false;
+  var table=$arenaLoot.enemies[String($arenaQuests.treasureTableEnemyId)];
+  var result=ArenaLoot.claimContainer(point.id,table,$arenaQuests.treasureFallbackGold);
+  event.erase();
+  $gameMessage.add('Tesouro coletado.');
+  result.received.forEach(function(row){
+   var item=row.kind==='gold'?null:ArenaInventory.resolve(row);
+   $gameMessage.add((item?item.name:'Ouro')+' ×'+row.quantity);
+  });
+  if(result.pending.length)$gameMessage.add('Reserva salva para quando houver espaço.');
+  return true;
+ };
  var onMapLoaded=Scene_Map.prototype.onMapLoaded;
- Scene_Map.prototype.onMapLoaded=function(){if(here()&&!$gamePlayer.isTransferring())c().doors.forEach(function(d){d.eventIds.forEach(function(id){if(!$gameMap.event(id))$gameMap._events[id]=new Game_Event(c().mapId,id);});});onMapLoaded.apply(this,arguments);};
+ Scene_Map.prototype.onMapLoaded=function(){
+  if(here()&&!$gamePlayer.isTransferring()){
+   c().doors.forEach(function(d){d.eventIds.forEach(function(id){
+    if(!$gameMap.event(id))$gameMap._events[id]=new Game_Event(c().mapId,id);
+   });});
+   var receipts=ArenaLoot.snapshot().receipts;
+   c().treasures.forEach(function(t){
+    if(!$gameMap.event(t.eventId))$gameMap._events[t.eventId]=new Game_Event(c().mapId,t.eventId);
+    if(receipts['container/'+t.id])$gameMap.event(t.eventId).erase();
+   });
+  }
+  onMapLoaded.apply(this,arguments);
+ };
+ var setup=Game_Map.prototype.setup;
+ Game_Map.prototype.setup=function(mapId){
+  setup.apply(this,arguments);
+  if(!here())return;
+  var receipts=ArenaLoot.snapshot().receipts;
+  c().treasures.forEach(function(t){if(receipts['container/'+t.id])$gameMap.event(t.eventId).erase();});
+ };
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===$arenaStonekeep.return.mapId&&!$gamePlayer.isTransferring()){
   pending=false;$gameSystem._arenaStonekeepWholeSession=true;var d=c().context.entry;neutral();$gamePlayer.reserveTransfer(d.mapId,d.x,d.y,d.direction,0);
