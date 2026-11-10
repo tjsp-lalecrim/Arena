@@ -8,32 +8,19 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados; seis B2 agora integrados, parâmetros provisórios.
 
-**Entrega atual — C2 sul/Y80–89:** [10encontros integrados](STONEKEEP_M02_04.md#entrega-atual--c2-sul-y8089) (3aranhas,2ghouls,2lobos,3orcs), nenhuma porta nova. Total119/180encontros e46/70portas; C2=32/32encontros e4/4portas inventariados, sem concluir geometria/eventos. Todas as camadas, colisões, portas, assets e configurações de campanha preservados. Sete grupos focais Chrome/RAM passaram; testes manuais adiados, Map012 e saves pessoais intactos. Porta sem localização e volumes aquáticos incertos continuam pendentes. Próximo bloco proposto: C3 central/Y70–74,4encontros, sem portas novas, conferindo ligação seca com C2.
+**Entrega atual.** Stonekeep está ligada à campanha no Map015. O inventário de 180 encontros e 70 portas está registrado, com 165 encontros alcançáveis na auditoria. Há 17 tesouros e seis refúgios ativos. A rota do pergaminho está conectada. A avaliação manual integrada está pendente. [Matriz, limites, saves e roteiro único](STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026)
 
-**Próxima dependência:** C3 central/Y70–74,4referências (2lobos,2orcs), sem portas novas. Conferir ligação seca C2↔C3 em MIF29/30,Y73, circulação e posições antes de configurar; sem início automático.
+**Próximo trabalho.** M02-03E1, levantamento integral de Rihad e inventário dos assets que faltam. A revisão de balanceamento depende do teste de campanha.
 
 ## Histórico42b857f — piloto de batalha do orc
 
 Sobre7ec5051, [piloto V01](ORC_M02.md): Enemy7/Troop8,24desenhos, somente batalha RAM no hub. Cinco grupos focais passaram; atributos provisórios e recompensas técnicas0, sem configuração de campanha. **Os seis orcs de B2 continuam ausentes**; caminhada e um encontro piloto dependem da avaliação visual antes da distribuição. Contagem49/180encontros/32/70portas inalterada. Não presumir aprovação artística, de balanceamento ou de persistência de encontros ainda inexistentes.
 
-**Forçar a porta determinístico e sem consumo** é adaptação ainda pendente de avaliação do responsável no próximo teste integrado. Não reabrir o restante da dungeon para avaliação isolada agora. Manter encontros/portas como prioridade, loot/tesouros e descanso depois; a dependência das três caminhadas foi resolvida e sua distribuição consta na entrega atual. Acesso: Testes / Debug → Combate → Stonekeep · orc (RAM). Próximo recorte, somente após feedback do exemplar: caminhada direcional e um encontro piloto de orc, sem lote automático.
+**Forçar a porta determinístico e sem consumo** permanece uma adaptação para avaliar no percurso integrado. O piloto histórico continua em **Testes / Debug → Combate → Stonekeep · orc (RAM)**. A patrulha e os encontros de orcs já constam na matriz vigente.
 
-## Cobertura operacional — blocos integrados no Map015
+## Cobertura operacional do Map015
 
-Base9031298 e fechaduras/ligação seca preservadas; conclusão posterior dos nove encontros após f5ebdba. **119/180encontros e46/70portas**, com **61encontros/24portas restantes**, após C2 sul/Y80–89. [Fontes, adaptação, matriz e evidências](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca). O teste rápido do responsável considera a construção satisfatória até o momento: avaliação preliminar, sem aprovação integral de colisões, encontros ou persistência e sem ambiente inferido. Testes manuais detalhados continuam adiados.
-
-| Área | Cobertura | Pendência funcional |
-|---|---|---|
-|A2 |19/19encontros;13/13portas |Revisão geométrica/detalhes e integração ainda parciais; contagem não conclui setor |
-|B2 |25/25encontros;18/18portas |Avaliação integrada/itens de outros sistemas ainda pendentes; nenhum encontro/porta faltante neste bloco |
-|B1 |10/10encontros;4/4portas |Validação manual adiada; acessos norte/sul distintos, volume aquático antigo67,26 ainda incerto e evitado na rota técnica |
-|C1 |19/19encontros;6/6portas |Referências de encontros/portas cobertas, geometria/eventos ainda parciais; avaliação manual adiada |
-|C2 |32/32encontros;4/4portas |Referências cobertas individualmente; geometria/eventos e avaliação manual ainda parciais |
-|C3 |0/22encontros;0/0portas |Primeiro bloco proposto Y70–74 conectado a C2; não implementado nesta entrega |
-
-Cinco LOCK1/2/3 são fechaduras comuns, não IDs de chaves: **Forçar a porta / Voltar**, universal e determinístico,45atualizações×LOCK provisórias, sem custos/prêmios ou chave inventada. MIF39,44 deixa de ser abertura provisória. Bolsa sudoeste agora conectada pelas nove células **secas suspensas** MIF56,41..49, com piso e cobertura separados, além de4portas/2goblins. Fonte geométrica e tabelas do executável sustentam folga; não houve observação DOS nova. A1 aquática permanece incerta e intocada. Naquela unidade de acesso, nenhum loot, descanso, atributo, motor ou asset foi alterado; a configuração mínima de campanha atual está na entrega B1 acima.
-
-**Próximo recorte necessário:** C3 central/Y70–74,4encontros (2lobos,2orcs), sem portas novas. Critério: integrar o primeiro bloco contíguo de C3 e seus estados individuais; prioridade pela ligação seca declarada C2↔C3 em Y73, sem depender da conexão aquática Y81–82. Conferir fontes/posições e condições antes de implementar; reutilizar assets/configurações existentes. Loot/tesouros/descanso depois; Rihad integral após Stonekeep; campanha ainda Map012.
+A [matriz vigente](STONEKEEP_M02_04.md#matriz-vigente) reúne a cobertura por setor. Permanecem 15 encontros e quatro tesouros sem acesso comprovado em componentes opcionais, um refúgio sem aproximação verificada, detalhes de alturas/diagonais e o relato da porta sem localização. O percurso de MQ02 tem prioridade para a avaliação integrada.
 
 **REF16:** ilustração de abertura e título901dfcb explicitamente aprovados. Modernização do título permanece melhoria futura na REF16; nenhuma arte alterada agora. Demais evidências e ressalvas preservadas.
 
@@ -53,7 +40,7 @@ Fonte da regra: [escopo mínimo funcional](MARCOS_DO_PROJETO.md#escopo-mínimo-f
 
 | Local | Cobertura atual / falta | Fonte principal |
 | --- | --- | --- |
-| Stonekeep | **04C1 documental concluído:**90×90 inventariados,9 setores,180 referências/9 espécies,20 encontros no levantamento histórico; cobertura vigente31/180 no Map015, incluindo27/27 referências do recorte antigo.70 portas/12LOCK,7 refúgios candidatos e lacunas indexadas. Mapa continua incompleto; [prova Map014274](PROVA_MAPA_UNICO_STONEKEEP.md) passou no runtime nativo; quatro mapas não são exigência técnica por causa do limite do editor | [Matriz, visão geral e dependências](STONEKEEP_M02_04.md#m02-04c1--levantamento-completo02112026) |
+| Stonekeep | **Map015 em avaliação de campanha.** Planta 90×90, nove setores, 180 encontros registrados e 70 portas alcançadas. Acessos opcionais, refúgio e tesouros pendentes na matriz. | [Matriz vigente](STONEKEEP_M02_04.md#matriz-vigente) |
 | Rihad | Esplanada21×15 e corte mínima, não topologia urbana original. Identificar planta/arquivos, inventariar ruas/portões/edifícios e encontros aplicáveis, preservar eventos já funcionais | [Cobertura e lacunas](CHEGADA_RIHAD_M02_03A.md#cobertura-vigente-de-rihad--revisão02112026) |
 | Fang Lair | af17b4b: celas/enigma, chave8 e portal até etapa80. Recorte preservado; materiais provisórios, aranhas sem combate, sem entrada completa/nível2/fragmento/retaliação. Não aprovado manualmente nem concluído | [M02-06A parcial](FANG_CELAS_M02_06A.md) |
 
@@ -64,13 +51,13 @@ Fonte da regra: [escopo mínimo funcional](MARCOS_DO_PROJETO.md#escopo-mínimo-f
 |1 — **M02-04C1** | Levantamento completo entregue, somente documental | Basec2d7673, dependências atuais | [Índice/roteiro](STONEKEEP_M02_04.md#m02-04c1--levantamento-completo02112026):8100 células,9setores/39 contatos potenciais,180 referências por posição; esqueleto(76,22) confirmado/ausente, MV18,69. MAP1/FLOR novos=cache; sem declaração de mapa completo ou novo teste manual |
 |2 — **M02-03E1** | Identificar referência urbana completa de Rihad e delta da amostra |03A–D, regra de cobertura | Planta/arquivo ou composição original identificados, chegada/corte/repouso e conexões mapeados; encontros condicionais e interiores adiados discriminados; se a fonte variar, registrar a referência escolhida. Não inventar topologia ou contagem |
 |3 — **M02-04C2.n** | Completar geometria de Stonekeep por setor contíguo |04C1 | Um setor por entrega, mesmos materiais adequados ou placeholder explícito; conexões com trecho anterior, colisão/água/portas e reconstrução conferidas. Não lote de assets nem expansão sem matriz de referência |
-|4 — **M02-04C3.n** | Completar encontros/estados no setor correspondente |04C1 + setor04C2.n | Posicionamento e IDs individuais, condições, contato, concessão única e persistência; reutilizar quatro espécies aprovadas. Preparação de assets por dungeon conforme matriz: uma espécie/entrega, combate+caminhada juntos se ambos faltarem, avaliar antes da próxima e antes da distribuição. Não criar objetivo de matar todos |
+|4 — **M02-04C3.n** | Completar encontros/estados no setor correspondente |04C1 + setor04C2.n | Posicionamento e IDs individuais, condições, contato, concessão única e persistência; reutilizar nove espécies disponíveis. Preparação de assets por dungeon conforme matriz: uma espécie/entrega, combate+caminhada juntos se ambos faltarem, avaliar antes da próxima e antes da distribuição. Não criar objetivo de matar todos |
 |5 — **M02-03E2.n /03E3** | Rihad por setores, depois religar os eventos da campanha |03E1 | Ruas/muralhas/edifícios/acessos completos; corte/repouso/viagens e encontros aplicáveis conectados sem repetir narrativa, missões ou recompensas. Interiores não necessários identificados como inacessíveis |
-|6 — **M02-05I** | Integração Stonekeep↔Rihad |04C2/3 e03E2/3 | Matriz sem lacunas de geometria/encontros, percurso/entrega/recibos e save/load do delta; reutilizar aprovações. Testes manuais anteriores dos grupos continuam adiados até essa integração, não aprovados por inferência |
+|6 — **M02-05I** | Integração Stonekeep↔Rihad |04C2/3 e03E2/3 | Map015 ligado ao percurso de MQ02 para teste de campanha, com coleta/entrega e retomada de saves verificadas. Avaliação manual e pendências de acesso/visual na matriz vigente |
 |7 — **M02-06A/B,07A/B,08** | Retomar amostra de celas e concluir Fang Lair completa/MQ02 |05I; feedback da amostra antes de ampliação pertinente | Preservar af17b4b; resolver aranha condicionada, entrada e **todo** nível1/2 com encontros aplicáveis, segundo enigma/fragmento/retaliação. Uma unidade/piloto por entrega; não somente rota até o fragmento |
 |8 — **M02-BAL /M02-FIM** | Percurso e fechamento | Mapas completos e cadeia integrada | Avaliar recursos/EXP encontrados, todos os encontros configurados e equilíbrio provisório; cobertura/pendências explícitas antes de fechar |
 
-**Sequência anterior (substituída pela ordem autorizada no A2-E acima): M02-03E1**, referência urbana de Rihad;04C1 foi entregue documentalmente. Para a construção de Stonekeep, **04C2.0** tem candidata isolada entregue conforme registro acima, sem promoção à campanha, seguida de **04C3.0**, omissões no recorte (6goblins+1esqueleto), e primeira faixa nova **04C2.1 A2-E**, vistaX54–59/Y0–29, conectada à amostra e com3ratos+1goblin reutilizáveis. Critérios e dependências em STONEKEEP_M02_04.md. Exploração contínua priorizada pelo responsável; geração externa aceita sem troca de motor ou consolidação geral de plugins. Prova passou com0/60/180 patrulhas; não autoriza integração definitiva ou declara geometria/campanha concluída. Definir continuidade das posições antes de substituir Map012; não pedir novamente decisão entre setores/mapa único. Avaliação de Fang Lair segue pendente, sem bloquear os levantamentos anteriores. Nenhuma implementação iniciada nesta entrega.
+A prova de mapa único antecedeu a base isolada 04C2.0 e os primeiros blocos 04C3.0 e 04C2.1. [Histórico de implementação e fontes](STONEKEEP_M02_04.md#m02-04c20--base-integral-funcional-isolada-02112026). A amostra de Fang Lair aguarda retomada após Stonekeep e Rihad.
 
 **Ilustrações:** fonte principal DIRECAO_DE_ARTE.md: uma ilustração integrada por entrega, aguardar avaliação antes da próxima; cada bloco significativo tem imagem própria, sem lotes. Abertura/título **REF16 aprovados**, modernização futura no registro único; não misturar com completar mapas. REF07/REF17/QUALIDADE-01 preservados, sem virar bloqueios por associação.
 

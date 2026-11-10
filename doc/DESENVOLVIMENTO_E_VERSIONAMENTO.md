@@ -8,6 +8,10 @@
 
 Manter inicialmente o runtime MV e os módulos próprios existentes; JavaScript executa o jogo e Python pode apoiar geração/validação. **Autorização vigente na continuação A2-E (posterior a60f969b): alterações de capacidade necessárias aos mapas completos e à exploração contínua estão autorizadas**, sem exigir nova aprovação prévia por mudança. Fundamentar em inspeção e testes, limitar/documentar o delta e comunicar seus impactos. Não iniciar migração, consolidação geral de plugins ou refatoração ampla por associação. Execução local tem um único procedimento em [EXECUCAO_LOCAL.md](EXECUCAO_LOCAL.md), sem limpeza de dados/namespace ou reload automático.
 
+## Entregas integradas
+
+Quando o responsável autorizar a integração de etapas dependentes, reunir o trabalho numa feature e fazer commits por etapa. Em Stonekeep, a ordem é encontros e portas, tesouros e descanso, ligação à campanha. Concentrar as verificações em cobertura e acesso, persistência e percurso de campanha. A avaliação manual fica para o percurso integrado. Registrar ambiguidades e avançar nas partes independentes. Pedir decisão somente quando faltar uma condição do caminho obrigatório ou for preciso mudar o escopo.
+
 ## Retrospectiva aprovada — 30/10/2026
 
 Regras permanentes autorizadas pelo responsável; esta seção é a fonte do processo, sem decisão de encerramento/release:

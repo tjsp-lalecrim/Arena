@@ -1,5 +1,7 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
+**Implementação atual de Stonekeep.** A estrada de Rihad leva ao Map015 na campanha. A rota de MQ02 segue até a entrega do pergaminho em Rihad. Os registros de implementação anteriores abaixo são históricos. [Integração, matriz e roteiro](STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026).
+
 **Delta A2-E posterior a8f28207:** Map015 isolado com24 encontros/4portas; base integral com avaliação manual adiada, avanço autorizado. [Cobertura e conexões](STONEKEEP_M02_04.md#faixa-a2-e--primeiro-setor-funcional-no-map015). Map012/quest/recibos mantidos. Completar Stonekeep antes do levantamento integral/dimensionamento de Rihad, sem expansão de Fang Lair por associação.
 
 **Candidata de transferência M02-04C2.0:** [Stonekeep integral](STONEKEEP_M02_04.md#m02-04c20--base-integral-funcional-isolada-02112026) em Map015274×274, somente laboratório, preserva IDs de quest/fonte/recibo e20 encontros transferidos. Map012 continua ativo na campanha. Não modifica etapas, exige morte de todos ou conclui a dungeon; portas/encontros ausentes continuam pendentes.

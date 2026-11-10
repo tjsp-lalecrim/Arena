@@ -1,5 +1,7 @@
 # Arena_Stonekeep0.1.2
 
+**Integração de campanha.** Arena_StonekeepWhole resolve a área lógica de Stonekeep para Map015 em partidas normais e no laboratório da base integral. O Map012 continua como origem de reconstrução e dos laboratórios antigos. Viagem, saída e fonte consultam o contexto ativo. Ao retomar uma partida normal dentro de Map012, a posição é traduzida em X+24 ou volta à entrada se estiver bloqueada no mapa integral. [Matriz, roteiro e compatibilidade](../STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026).
+
 Adaptador M02-04 após Arena_Court, Arena_Rihad, Arena_Dungeon, Arena_CampaignConfig e Arena_Persistence/Quests. Sem dependências externas/parâmetros de Plugin Manager. [Fontes, recorte, limitações e roteiro](../STONEKEEP_M02_04.md).
 
 **Revisão HTTP de conteúdo:** em HTTP/HTTPS, a entrada nativa de Items recebe `?arena-data=stonekeep-parchment-v1` para não reutilizar o banco M01 ainda fresco no cache. Não modifica payload, saves, namespace ou path file:// do MV; não usa nonce por abertura/build. Mantém validação e erro em configuração inválida. Conferir essa revisão quando o contrato do banco mudar; [causa, headers e teste de cache/reconstrução](../STONEKEEP_M02_04.md#correção-confirmada--cache-http-de-itemsjson).
@@ -10,7 +12,7 @@ V01 visual acrescenta `visualSample:{version,entry,bounds}` à configuração, s
 
 - `known()`: MQ02≥40; conhecimento deriva da etapa persistida. `ArenaCourt.destination()` passa a refletir a viagem existente; sem duplicar flag.
 - `offer(interpreter)` / `travel(interpreter)`: evento3 da estrada, campanha válida, mapa/proximidade, fora de batalha/transferência/mensagem, destino conhecido; escolha explícita0. Cancelamento não viaja. Reusa janela nativa e proteção de soltura já existente.
-- `leave(interpreter)`: somente evento de saída de Map012. Retorno permitido sem item, sem prêmio/cura ou `onExit` de respawn.
+- `leave(interpreter)`: somente o evento de saída do mapa ativo de Stonekeep. Retorno permitido sem item, sem prêmio/cura ou `onExit` de respawn.
 - `collect(interpreter)`: somente fonte real. `sourceStatus/claimSource` autoritativos; snapshot de estado/inventário para rollback se falhar o avanço40→50. Fonte recuperável em50; nenhuma entrega automática ou recibo inventado. Repetir com posse não aumenta grants.
 - `preview()`: fixture RAM explicitamente selecionada no título; reutiliza preparo de audiência e marca aceite só nessa sessão. Gravação normal bloqueada, checkpoint RAM existente reutilizado.
 

@@ -2,23 +2,66 @@
 
 ## Matriz operacional de assets — nove espécies
 
-**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **119/180encontros e46/70portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
+**Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **180/180 encontros registrados e 70/70 portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.
 
 | Espécie / flat / total original | Combate | Caminhada | Aprovação/cobertura conhecida | Próxima dependência de assets |
 |---|---|---|---|---|
 |Rato /52 /16 |Disponível R02 |Disponível R02 |Combate R02 aprovado (associação a61977b); exploração e entrega M01 preservadas, sem nova aprovação específica inferida |Reutilizar; nenhuma geração necessária agora |
 |Goblin /53 /32 |Disponível R03 |Disponível R02 |Legado da entrega M01; não inventar aprovação artística individual nova a partir de testes gerais |Reutilizar; manter ressalvas/evidências M01 |
-|Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; seis distribuídos (3B2+1C2 norte+2C2 central),13restantes |
+|Homem-lagarto /54 /19 |**Aprovado R03** |**Aprovado V01** |Aprovação explícita posterior à entrega8b309cc, sem equilíbrio/recompensas/distribuição |Reutilizar; dezenove registros distribuídos |
 |Lobo /55 /13 |Disponível V01 |Disponível V01 |Animação/combate aaea451 e patrulha d27eb5f aprovados; conjunto ampliado/manual posterior adiado |Reutilizar; sem novo lote |
-|Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; dezoito distribuídos (6B2+3B1+3C1 sul+2C2 norte+1C2 central+3C2 sul),4restantes |
+|Orc /56 /22 |**Aprovado42b857f** |**Patrulha6794a81 aprovada** |Aprovações explícitas de combate e patrulha; sem ampliar a equilíbrio/recompensas/encontros |Reutilizar; vinte e dois registros distribuídos |
 |Esqueleto /57 /29 |Disponível V01 |Disponível V01 |Combate/visual f198987 e patrulha6956516 aprovados; funcionamento do grupo relatado em443e43b, sem testes específicos presumidos |Reutilizar |
-|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; cinco distribuídos (2B1+2C1 norte+1C1 central), três restantes |
-|Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar; nove distribuídos (1C1 sul+5C2 central+3C2 sul),11encontros ainda ausentes |
+|Minotauro /58 /8 (alias OGRE.DFA) |**Aprovado V01** |**Aprovado V01** |Aprovação explícita de combate e patrulha569e382; sem balanceamento/recompensas/distribuição |Reutilizar; oito registros distribuídos |
+|Aranha /59 /20 |**Aprovado com ressalva** |**Aprovado com ressalva** |f5ebdba: preferência pela primeira geração de batalha; [revisão futura](ARANHA_M02.md), ativa preservada |Reutilizar; vinte registros distribuídos |
 |Ghoul /60 /21 |Disponível V01 |Disponível V01 |Batalha8ea06c9 aprovada; ghoul na ilha99203b2 e coleta relatados funcionais, sem aprovação de equilíbrio/persistência por inferência |Reutilizar |
 
-**Sequência vigente:** assets das nove espécies disponíveis; aranha aprovada com ressalva não bloqueante. A2/B2 e B1 com encontros/portas configurados, sem concluir todos os sistemas/setores ou validar manualmente a dungeon. C1 com19/19encontros e6/6portas, C2 com32/32encontros e4/4portas configurados; próximo bloco C3 central/Y70–74,4encontros. Demais coberturas conforme linhas acima; não iniciar produção artística automática. Não produzir bestiário/variantes por antecipação. Loot/descanso continuam posteriores; Forçar a porta permanece adaptação pendente de avaliação integrada.
+**Sequência vigente.** Stonekeep está disponível para avaliação pela campanha. Após este teste, o próximo trabalho é M02-03E1, levantamento integral de Rihad e dos assets que faltam. Balanceamento fica para depois da avaliação do percurso.
 
-## Entrega atual — C2 sul Y80–89
+## Stonekeep na campanha — integração de 10/11/2026
+
+A estrada de Rihad usa o Map015 depois de aceitar o pedido de Blubamka. A saída de Stonekeep retorna à esplanada. A coleta e a entrega do pergaminho conservam a fonte `stonekeep.parchment`, o item 7 e o recibo `MQ02.rihad.parchment`. Os contratos de origem do Map012 continuam disponíveis para reconstrução e laboratórios antigos. A campanha resolve a mesma área lógica para o Map015. O hub RAM continua disponível para diagnóstico.
+
+### Matriz vigente
+
+| Setor | Encontros registrados | Alcançáveis no grafo | Portas alcançadas |
+| --- | ---: | ---: | ---: |
+| A1 | 14/14 | 14 | 0/0 |
+| A2 | 19/19 | 19 | 13/13 |
+| A3 | 19/19 | 7 | 5/5 |
+| B1 | 10/10 | 10 | 4/4 |
+| B2 | 25/25 | 25 | 18/18 |
+| B3 | 20/20 | 20 | 20/20 |
+| C1 | 19/19 | 19 | 6/6 |
+| C2 | 32/32 | 32 | 4/4 |
+| C3 | 22/22 | 19 | 0/0 |
+| **Total** | **180/180** | **165** | **70/70** |
+
+A base 9c9b802 tinha 119 encontros e 46 portas. A extensão começa por C3 central/Y70–74, pela passagem seca MIF 30↔29/Y73 (MV 181↔182/Y222), completa C3 e segue pelas conexões de B3 e A3. Os 61 encontros e as 24 portas foram anexados aos IDs anteriores. Posições, espécies, eixos e LOCK foram conferidos no MIF/INF. Doze grades PORTCULS usam provisoriamente as portas existentes. Cinco LOCK de B3 reutilizam a ação de forçar, conforme o nível declarado. [Fonte das alas leste](mapas/STONEKEEP_ALAS_LESTE_M02.json)
+
+A auditoria abre cada porta a partir de um lado já alcançável e respeita as fechaduras. Usa passabilidade nativa, considera as portas fechadas como bloqueios e desconsidera ocupação de patrulhas para medir a topologia. As rotas excluem volumes aquáticos incertos. Permanecem 12 encontros registrados num componente de A3 e três na sala C3 de MIF (14,77), (12,78) e (13,78), sem ligação comprovada no modelo atual. O grafo confirma a saída e o acesso ao pergaminho. A lista de IDs pendentes está no contrato das alas leste. As alturas e diagonais próximas precisam de evidência adicional antes de mudar colisões. O relato da porta sem localização continua aberto.
+
+### Provisões, saves e verificação
+
+Os 17 tesouros acessíveis correspondem aos ITEM2–8 de STKEEP1.INF, incluindo pilhas, equipamento, corpos e baús. Usam a tabela aprovada de tesouros e a reserva de 2–8 moedas quando a rolagem vier vazia. O recibo é individual por coordenada. Os baús usam a interação de tesouro existente, sem fechadura específica de baú. Quatro tesouros de A3 ficam pendentes de acesso. A chave de ferro de MIF (40,30) continua opcional e seu vínculo com uma fechadura específica segue sem confirmação.
+
+Seis plataformas secas acessíveis do tipo 0x1808 usam o descanso autorizado. MIF (50,60) é o sétimo candidato e aguarda comprovação de acesso. Recuperação ocorre por interação e preserva derrotas, quest e recibos. Balanceamento de provisões e encontros fica para depois do teste integrado.
+
+Ao carregar um save normal dentro do Map012, o jogo abre o Map015 e traduz a posição em X+24. Se a posição cair sobre um bloqueio ou evento, usa a entrada de Stonekeep. A troca de mapa durante a retomada preserva o estado lógico, sem registrar uma saída. O arquivo do slot só muda ao salvar. Saves fora de Stonekeep usam o Map015 na próxima viagem. Os laboratórios permanecem isolados em RAM.
+
+A automação em Chrome usa uma chegada sintética de nível 2, interações normais de MQ02 e slots descartáveis. Confere cobertura e acesso, persistência do delta, ida e volta a Stonekeep, entrega do pergaminho e retomada de um save sintético gravado pelo roteamento anterior. A vitória amostral e a velocidade de deslocamento foram controladas. [Evidências da integração](evidencias/m02-stonekeep-campanha/resultado.json)
+
+### Roteiro de avaliação no navegador
+
+1. Abra o [Arena local](http://127.0.0.1:8774/) e carregue uma partida anterior à entrega do pergaminho ou use **Novo Jogo**. Se chegar a Rihad no nível 1, use os encontros dos arredores para ganhar experiência. No nível 2, descanse na esplanada para ouvir Ria, fale com o informante e aceite o pedido de Blubamka na corte.
+2. Na esplanada, aproxime-se da estrada ao sul e interaja sobre o ponto de saída. Escolha **Viajar para Stonekeep**. Explore os aposentos e a passagem dos esqueletos, atravesse a água até a ilha e recolha o pergaminho. Abra um tesouro, use um refúgio com recursos gastos e salve em um slot de teste. Recarregue para conferir posição, recursos, recompensas e derrotas.
+3. Volte pela saída junto à entrada, retorne à corte e entregue o pergaminho a Blubamka. Confira a conclusão da etapa no diário e o recibo único ao falar novamente. Se uma porta impedir a passagem, registre o lugar e a ação que antecedeu o bloqueio para reproduzir no hub existente.
+
+Avaliação manual e revisão de balanceamento aguardam esse teste. Depois, iniciar M02-03E1 pelo levantamento de Rihad e dos assets que realmente faltam.
+
+<a id="entrega-atual--c2-sul-y8089"></a>
+
+## Histórico — C2 sul Y80–89
 
 Sobredd2c3b8; [contrato/fonte](mapas/STONEKEEP_C2_SUL_M02.json), `tools/inspect-stonekeep-c2-south.py`. Original39699021.MIF relido, hash4eb604e…7d45b preservado; MAP1/FLOR e vínculos STKEEP1.INF conferidos com o inventário. Dez referências confirmadas, nenhuma porta/LOCK nessa faixa. TRIG32,81/255,18 e46,81/255,18 preservados como dados, sem novos eventos ou condições inferidas. Sem nova observação DOS. Coordenadas originais zero-based → vista=(89−X,Y) → Map015=(3+3vistaX,3+3Y).
 
