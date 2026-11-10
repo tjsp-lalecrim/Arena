@@ -34,6 +34,7 @@ var ArenaStonekeepWhole;
  ArenaStonekeepWhole.interactB1Door=function(id){return interactSectorDoor(id,c().b1?c().b1.doorIds:[]);};
  ArenaStonekeepWhole.interactC1Door=function(id){return interactSectorDoor(id,c().c1North?c().c1North.doorIds:[]);};
  ArenaStonekeepWhole.interactC2Door=function(id){return interactSectorDoor(id,c().c2North?c().c2North.doorIds:[]);};
+ ArenaStonekeepWhole.interactEasternDoor=function(id){return interactSectorDoor(id,c().easternWings.doorIds);};
  ArenaStonekeepWhole.doorDiagnostic=function(){
   if(!here()||!c().doorReferences)return null;var nearest=null,distance=5;
   c().doorReferences.forEach(function(v){var d=Math.abs($gamePlayer.x-v.center[0])+Math.abs($gamePlayer.y-v.center[1]);if(d<distance){distance=d;nearest=v;}});
@@ -82,5 +83,5 @@ var ArenaStonekeepWhole;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(here())this.addCommand('Stonekeep: pontos da base integral','arenaStonekeepWholePoints');};
  var create=Scene_Menu.prototype.createCommandWindow;
  Scene_Menu.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeepWholePoints',function(){SceneManager.goto(Points);});};
- ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,119 encontros/46 portas. C2 sul integrado; portas próximas com coordenadas/status; demais trechos pendentes. Esc: pontos/RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
+ ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,180 encontros/70 portas. Portas próximas com coordenadas e estado. Esc: pontos/RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha ainda no Map012'},ArenaStonekeepWhole.preview);
 })();
