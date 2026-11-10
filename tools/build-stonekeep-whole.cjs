@@ -4,7 +4,7 @@ const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),copy=v=>JSON.pa
 function build(){
  const base=read('data/Map014.json'),sample=read('data/Map012.json'),proof=read('data/ArenaStonekeepRuntimeProof.json'),old=read('data/ArenaStonekeep.json'),campaign=read('data/ArenaCampaign.json');
  if(base.width!==274||base.height!==274||base.data.length!==274*274*6||sample.width!==142||sample.height!==103||proof.sourceSha256!=='4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b')throw Error('Stonekeep integral: geometria de origem não corresponde ao contrato revisado.');
- const map={...copy(base),tilesetId:sample.tilesetId,events:copy(sample.events),note:'Stonekeep integral: base de produção em avaliação isolada. Sem carga sintética. Portas/diagonais/alturas ainda com cobertura parcial.',displayName:''},delta=24,terrainAdjustments=[];
+ const map={...copy(base),tilesetId:sample.tilesetId,events:copy(sample.events),note:'Stonekeep: mapa integral da campanha. Diagonais, alturas e ligações incertas seguem na matriz de cobertura.',displayName:''},delta=24,terrainAdjustments=[];
  // Preserve every approved tile/layer of the playable crop, except its artificial outer border.
  for(let y=2;y<sample.height-2;y++)for(let x=2;x<sample.width-2;x++){
   const a=sample.data[(5*sample.height+y)*sample.width+x],b=map.data[(5*274+y)*274+x+delta];
