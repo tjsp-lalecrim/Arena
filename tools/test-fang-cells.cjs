@@ -1,8 +1,11 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-segundo-enigma'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-fragmento'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
-assert.deepEqual(read('data/Items.json'),base('data/Items.json'));assert.equal(read('data/Items.json')[8].itypeId,2);
+const staff=c.lower.staffPiece,items=read('data/Items.json');
+assert.deepEqual(items.slice(0,staff.itemId),base('data/Items.json'));
+assert.equal(items[staff.itemId].itypeId,2);assert.equal(items[staff.itemId].occasion,3);
+assert.equal(items[staff.itemId].consumable,false);assert.equal(items[staff.itemId].price,0);
 for(const n of ['Map008','Map009','Map010','Map011','Map012','Weapons','Armors','Skills','Enemies','Troops','ArenaLoot','ArenaRecovery'])assert.deepEqual(read('data/'+n+'.json'),base('data/'+n+'.json'),n);
 const stable=['Items','Map008','Map009','Map010','Map011','Map012','Map013','Map017','MapInfos','ArenaCampaign','ArenaRecovery'],before=stable.map(n=>JSON.stringify(read('data/'+n+'.json')));cp.execFileSync(process.execPath,['tools/build-rihad-arrival.cjs'],{cwd:R});stable.forEach((n,i)=>assert.equal(JSON.stringify(read('data/'+n+'.json')),before[i],'rebuild '+n));
 for(const g of c.gates){assert.equal(map.events[g.eventId].x,g.origin[0]);assert.deepEqual(g.origin,[3+(99-g.sourceOriginal[0])*3,3+g.sourceOriginal[1]*3]);}
@@ -135,6 +138,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.deepEqual(await snapshot(),s);
  await walk(lower.approach);
  assert.equal(await tilePassable(lower.door),false);
+ assert.equal(await p.evaluate(([x,y])=>[2,4,6,8].some(d=>$gamePlayer.canPass(x,y,d)),lower.door),false);
  async function askLower(index){
   await p.evaluate(()=>$gamePlayer.setDirection(2));
   await press('Enter');
@@ -156,14 +160,59 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.equal(await tilePassable(lower.door),true);
  await p.evaluate(()=>$gamePlayer.setDirection(2));await press('Enter');await messages();await ready();
  assert.deepEqual(await snapshot(),solved);
+ const oldLower=JSON.parse(cp.execFileSync('git',['show','9d89eae:data/Map017.json'],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+ await p.evaluate(oldMap=>{
+  const current=$dataMap;
+  try{$dataMap=oldMap;$gameMap.setup(17);}
+  finally{$dataMap=current;}
+ },oldLower);
+ await save(20);await load(20);
+ assert.deepEqual(await position(),savedPosition);assert.deepEqual(await snapshot(),solved);
+ assert.equal(await p.evaluate(id=>!!$gameMap.event(id),staff.eventId),true);
  await walk(lower.door);
  assert.equal(await mapId(),lower.mapId);
- assert.equal(await tilePassable([lower.door[0],lower.door[1]+2]),false);
+ await walk(staff.position);
+ const staffState=()=>p.evaluate(({itemId,sourceId})=>{
+  const persistent=ArenaPersistence.snapshot(),quest=ArenaQuests.snapshot('MQ02');
+  return {quest,count:$gameParty.numItems($dataItems[itemId]),mq01:persistent.quests.MQ01,
+   grants:persistent.sources[sourceId]?.grants||0,loot:ArenaLoot.snapshot(),
+   journal:MVJournalModel.entry($arenaQuestJournal.quests.find(q=>q.id==='MQ02'),quest)};
+ },staff);
+ const beforeStaff=await staffState();assert.equal(beforeStaff.count,0);
+ assert.equal(beforeStaff.journal.steps.find(s=>s.id==='fang-staff-piece').done,false);
+ await save(21);await load(21);assert.deepEqual(await staffState(),beforeStaff);
+ await press('Enter');await p.waitForFunction(()=>$gameMessage.isBusy());
+ const message=await p.evaluate(()=>{
+  const w=SceneManager._scene._messageWindow;
+  return {text:$gameMessage.allText().replace(/\s+/g,' '),face:$gameMessage.faceName(),width:w.width,screen:Graphics.boxWidth};
+ });
+ assert.deepEqual(message,{text:staff.text[0],face:'',width:message.screen,screen:message.screen});
+ await messages();await ready();
+ const collected=await staffState();
+ assert.equal(collected.count,1);assert.equal(collected.grants,1);assert.equal(collected.quest.stage,100);
+ assert.equal(collected.quest.objectives.fangStaffPieceRecovered,true);assert.equal(collected.quest.completed,false);
+ assert.deepEqual(collected.quest.receipts,solved.q.receipts);
+ assert.deepEqual(collected.mq01,beforeStaff.mq01);assert.deepEqual(collected.loot,beforeStaff.loot);
+ assert.equal(collected.journal.steps.find(s=>s.id==='fang-staff-piece').done,true);
+ assert.equal(collected.journal.steps.find(s=>s.id==='fang-retaliation').done,false);
+ await press('Enter');await ready();assert.deepEqual(await staffState(),collected);
+ await save(22);await load(22);assert.deepEqual(await position(),staff.position);
+ await press('Enter');await ready();assert.deepEqual(await staffState(),collected);
+ // Simulate a missing item in the disposable fixture, not a second quest completion.
+ await p.evaluate(id=>$gameParty.loseItem($dataItems[id],1),staff.itemId);
+ await press('Enter');await ready();
+ const recovered={...collected,grants:2};assert.deepEqual(await staffState(),recovered);
  await stairs(lower.stair,c.mapId,2);await stairs(c.limit,lower.mapId,2);
- assert.deepEqual(await snapshot(),solved);
+ assert.deepEqual(await staffState(),recovered);
  assert.equal(await p.evaluate(id=>ArenaPersistence.snapshot().enemies[id].defeated,skeleton.id),true);
+ await stairs(lower.stair,c.mapId,2);
+ await walk(c.entry);await press('Enter');await p.waitForFunction(()=>$gameMap.mapId()===9&&!$gamePlayer.isTransferring());await ready();
+ assert.deepEqual(await staffState(),recovered);
  checks.push('Bidirectional stairs preserve the first portal receipt; the original route skeleton uses the existing encounter and remains defeated');
- checks.push('Second riddle wrong and Escape preserve the closed door; correct advances once to 90, persists through save and reentry and stops at the threshold');
- console.log('PASS segundo enigma, save e reentrada');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'42eabf6',browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, fragment room, Hell Hounds, definitive art and Tharn']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ checks.push('Second riddle wrong and Escape preserve the closed door; correct advances once to 90 and persists through save and reentry');
+ checks.push('Legacy Map017 save rebuilds events in place with the door and prior defeats preserved');
+ checks.push('Native collection and full-width PT-BR text grant one protected fragment, advance MQ02 to 100 and update the journal without completing the quest');
+ checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and exit to Rihad preserve state and the prior receipts');
+ console.log('PASS sala do fragmento, diário, save e retorno');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'9d89eae',browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, definitive art and Tharn']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

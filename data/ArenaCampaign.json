@@ -860,7 +860,7 @@
       "questId": "MQ02",
       "areaId": "fang-lair.lower",
       "itemKey": "MQ02.staff-piece-1",
-      "itemId": null,
+      "itemId": 9,
       "quantity": 1,
       "stages": [
         90,

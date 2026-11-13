@@ -300,6 +300,18 @@
       "opened": [
         "A porta está aberta. O fragmento está além desta passagem."
       ]
+    },
+    "staffPiece": {
+      "sourceId": "fang.staff-piece-1",
+      "itemId": 9,
+      "eventId": 5,
+      "position": [
+        78,
+        18
+      ],
+      "text": [
+        "O primeiro fragmento do Cajado do Caos brilha uma vez e se apaga, revelando um pedaço de ébano opaco. Ele pulsa, como se aguardasse a união com os outros sete."
+      ]
     }
   }
 }

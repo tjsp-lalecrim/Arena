@@ -2,9 +2,31 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
-## Segundo nível até o enigma — M02-07A
+## Sala e primeiro fragmento — M02-07B, trecho de campanha
 
-Após abrir o primeiro portal, interaja com a escada para descer ao Map017. O recibo da chave autoriza a travessia. A escada inversa retorna ao patamar do Map013. A porta inferior abre na etapa 90 e permite pisar no batente. A próxima entrega continuará a partir dali.
+A porta do enigma abre o acesso à sala no Map017. O percurso mantém a escala e a transformação existentes: MV (78,9) é a porta MIF (64,72); MV (78,12) é o vestíbulo MIF (64,73); MV (78,18) é o fragmento MIF (64,75). O vestíbulo de uma célula e o salão de 3×3 seguem a planta do segundo `LEVL` de `42068779.MIF`. O contorno usa `MAP1` (parede perimetral `0x70B7` e ombreiras `0x3131/0x3030`) e mantém o retorno pela mesma porta. As superfícies existentes e o marcador textual do fragmento são provisórios. [Planta e âncoras](mapas/FANG_NIVEL2_M02.json)
+
+| Evidência local | Consequência no recorte |
+| --- | --- |
+| `FANG2.INF`, `MAP1 0x8066` em (64,75), flat102 `CHAOS1.DFA / ITEM13` | Fonte estável `fang.staff-piece-1`, item importante 9 do projeto, sem venda, descarte ou uso |
+| `MAP1 0x8039` em (63,74) e (65,74), flat57 `HELLHOUN.DFA / ITEM42` | Posições originais em MV (81,15) e (75,15). São encontros da sala. O guia descreve formas de evitar o ataque; o corredor central e o fragmento são registros independentes. A única `LOCK` da sala é a da porta e o `TRIG 64,73,255,28` fica no vestíbulo. A função exata desse gatilho não foi verificada no executável. Ambos os encontros seguem pendentes de combate e patrulha da espécie |
+| `TEMPLATE.DAT #1371`, arquivo da instalação original, e guia local de Fang Lair, p.4 | A coleta usa o bloco PT-BR `MQ02.fang.fragment.take`, em largura integral, com a ilustração pendente. A referência tátil do original foi condensada na pulsação do fragmento |
+
+A coleta registra o item e a passagem 90 → 100 em conjunto. O diário marca o fragmento como obtido e indica a saída. A missão segue em andamento. Se faltar a peça na etapa 100, a mesma fonte repõe apenas a unidade ausente, sem repetir a narração ou avançar a missão. Um save anterior do Map017 carrega a nova lista de eventos mantendo posição, direção e estados individuais.
+
+**Ponto seguro de retomada.** Após coletar, suba e salve no patamar do primeiro nível (Map013, MV 36,296). A retaliação fica para M02-08, na interação de saída da mina com a peça em posse. Na versão atual, essa saída ainda permite retornar a Rihad. A partir de Rihad, será preciso voltar à mina para testar o futuro gatilho.
+
+### Continuação do roteiro no Chrome
+
+1. Continue do segundo enigma pelo roteiro abaixo. Atravesse a porta após escolher **Uma luva ou manopla** e siga pelo vestíbulo até **Primeiro fragmento · Interagir**.
+2. Interaja, leia a mensagem e confira em **Inventário** e **Diário** que há um fragmento e que a missão segue pendente na saída. Interaja de novo, salve, recarregue e confira que a quantidade continua sendo um.
+3. Volte pela porta e suba a escada. Guarde o teste no patamar para retomar a campanha no próximo recorte.
+
+Validação focal no Chrome em origem e perfil descartáveis. Foram conferidos o mapa serializado da versão anterior, a coleta e leitura sem imagem, o diário, salvar/carregar antes e depois, a recuperação sem nova narração e o retorno pela escada até Rihad. Avaliação manual pendente. [Evidências](evidencias/m02-fang-fragmento/resultado.json)
+
+## Segundo nível até o enigma — M02-07A (histórico)
+
+Após abrir o primeiro portal, interaja com a escada para descer ao Map017. O recibo da chave autoriza a travessia. A escada inversa retorna ao patamar do Map013. A porta inferior abre na etapa 90 e permite prosseguir à sala do fragmento.
 
 A planta usa o segundo `LEVL` de `42068779.MIF` e `FANG2.INF`. A textura `MSU.IMG` identifica a escada de retorno em MIF (88,98). O gatilho `TRIG 64,71,0,18` referencia TEXT0. O `LOCK 64,72,255` e a célula MAP1 `0xB013` identificam a porta. A rota selecionada percorre 51 células, contando as extremidades (88,97) e (64,71). [Planta e âncoras](mapas/FANG_NIVEL2_M02.json)
 
@@ -16,11 +38,11 @@ A janela paginada usa toda a largura de leitura. As respostas do original em tor
 
 1. Após entregar o pergaminho a Blubamka, vá ao portão de Rihad e escolha **Viajar para Fang Lair**. Siga até as celas. Se for testar as aranhas na mesma sessão, escolha **Cela 1** ou **Cela 3** e confira que uma derrota é preservada ao salvar e carregar. Resolva o enigma com **Cela 2**, recolha a chave dourada e use-a no primeiro portal. [Arena local](http://127.0.0.1:8774/)
 2. Desça a escada. Suba logo em seguida para conferir o retorno ao patamar e desça novamente. Siga até a porta do segundo enigma.
-3. Escolha uma resposta incorreta, depois tente novamente e cancele. A porta deve continuar fechada nas duas tentativas. Escolha **Uma luva ou manopla**, salve em outro slot e recarregue. A porta deve permanecer aberta e o diário deve apontar para o fragmento. O batente é o limite jogável.
+3. Escolha uma resposta incorreta, depois tente novamente e cancele. A porta deve continuar fechada nas duas tentativas. Escolha **Uma luva ou manopla**, salve em outro slot e recarregue. A porta deve permanecer aberta e o diário deve apontar para o fragmento. Depois do batente, siga o roteiro da sala acima.
 
 Sete grupos passaram em Chrome isolado, incluindo a rota anterior das celas, a descida e subida, o esqueleto, erro, cancelamento, acerto, save e reentrada com a porta aberta. A vitória amostral e a caminhada foram aceleradas no teste. [Evidências](evidencias/m02-fang-segundo-enigma/resultado.json).
 
-Avaliação manual pendente. O primeiro nível cobre a entrada, o corredor adaptado, as celas, quatro aranhas condicionadas e a escada. O segundo cobre a escada, o caminho seco, um esqueleto e a porta. Faltam as demais alas e encontros aplicáveis, a sala do fragmento, os dois Hell Hounds e seus assets, a coleta do fragmento e a retaliação de Tharn. Fantasma e arte definitiva continuam registrados no inventário.
+Cobertura deste recorte histórico: entrada, corredor, celas, quatro aranhas condicionadas e escada no primeiro nível; caminho seco, esqueleto e porta no segundo. A seção M02-07B acima registra a cobertura atual e o que ainda falta.
 
 ## Histórico do primeiro trecho
 
