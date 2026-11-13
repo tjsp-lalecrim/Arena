@@ -44,7 +44,7 @@ Fonte da regra: [escopo mínimo funcional](MARCOS_DO_PROJETO.md#escopo-mínimo-f
 | --- | --- | --- |
 | Stonekeep | **Map015 em avaliação de campanha.** Planta 90×90, nove setores, 180 encontros registrados e 70 portas alcançadas. Acessos opcionais, refúgio e tesouros pendentes na matriz. | [Matriz vigente](STONEKEEP_M02_04.md#matriz-vigente) |
 | Rihad | Planta original reconstruída, ainda sem importação para o runtime. Esplanada e corte mínima seguem jogáveis. Integrar o acesso pelo portão urbano e preservar os eventos já funcionais | [Planta e lacunas](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) |
-| Fang Lair | af17b4b: celas/enigma, chave8 e portal até etapa80. Recorte preservado; materiais provisórios, aranhas da amostra ainda sem ligação ao combate disponível, sem entrada completa/nível 2/fragmento/retaliação. Não aprovado manualmente nem concluído | [M02-06A parcial](FANG_CELAS_M02_06A.md) |
+| Fang Lair | Portão de Rihad ligado à mina e às celas. Enigma, quatro aranhas condicionadas, chave, portal e patamar jogáveis até etapa 80. Demais setores, arte, nível 2, fragmento e retaliação pendentes | [M02-06B, trecho integrado](FANG_CELAS_M02_06A.md#entrada-e-celas-na-campanha--m02-06b-primeiro-trecho) |
 
 ### Ordem revisada — sem renumerar as entregas anteriores
 
