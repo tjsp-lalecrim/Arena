@@ -104,7 +104,7 @@ var ArenaRihad;
    var informant=$gameMap.event(c.informantEventId),rest=$gameMap.event(2);
    var road=$gameMap.event(3),outskirts=$gameMap.event(c.outskirts.accessEventId);
    markers=[[informant.x,informant.y,'Informante'],[rest.x,rest.y,'Repouso'],
-    [road.x,road.y,ArenaStonekeep.known()?'Estrada · Stonekeep':'Portão urbano',76],
+    [road.x,road.y,window.ArenaFangCells&&ArenaFangCells.destination().available?'Estrada · Viagens':ArenaStonekeep.known()?'Estrada · Stonekeep':'Portão urbano',76],
     [outskirts.x,outskirts.y,'Arredores',112]];
   }
   markers.forEach(function(p){

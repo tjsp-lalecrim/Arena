@@ -7,36 +7,36 @@
   "receiptId": "MQ02.fang.lower-door",
   "itemId": 8,
   "entry": [
-    18,
-    3
+    288,
+    9
   ],
   "lab": {
-    "x": 33,
-    "y": 48,
+    "x": 36,
+    "y": 288,
     "direction": 2
   },
   "riddleEventId": 2,
   "riddle": [
-    33,
-    48
+    36,
+    288
   ],
   "keyEventId": 3,
   "key": [
-    15,
-    57
+    18,
+    297
   ],
   "limitEventId": 4,
   "limit": [
-    33,
-    57
+    36,
+    297
   ],
   "gates": [
     {
       "id": "spider.w1",
       "eventId": 10,
       "origin": [
-        12,
-        9
+        15,
+        249
       ],
       "sourceOriginal": [
         95,
@@ -49,8 +49,8 @@
       "id": "spider.e1",
       "eventId": 11,
       "origin": [
-        24,
-        9
+        27,
+        249
       ],
       "sourceOriginal": [
         91,
@@ -63,8 +63,8 @@
       "id": "spider.w2",
       "eventId": 12,
       "origin": [
-        12,
-        21
+        15,
+        261
       ],
       "sourceOriginal": [
         95,
@@ -77,8 +77,8 @@
       "id": "spider.e2",
       "eventId": 13,
       "origin": [
-        24,
-        21
+        27,
+        261
       ],
       "sourceOriginal": [
         91,
@@ -91,8 +91,8 @@
       "id": "spider.w2.south",
       "eventId": 14,
       "origin": [
-        9,
-        27
+        12,
+        267
       ],
       "sourceOriginal": [
         96,
@@ -105,8 +105,8 @@
       "id": "spider.e2.south",
       "eventId": 15,
       "origin": [
-        27,
-        27
+        30,
+        267
       ],
       "sourceOriginal": [
         90,
@@ -119,8 +119,8 @@
       "id": "cell3",
       "eventId": 16,
       "origin": [
-        6,
-        51
+        9,
+        291
       ],
       "sourceOriginal": [
         97,
@@ -133,8 +133,8 @@
       "id": "cell1",
       "eventId": 17,
       "origin": [
-        24,
-        51
+        27,
+        291
       ],
       "sourceOriginal": [
         91,
@@ -147,8 +147,8 @@
       "id": "cell2",
       "eventId": 18,
       "origin": [
-        15,
-        51
+        18,
+        291
       ],
       "sourceOriginal": [
         94,
@@ -161,8 +161,8 @@
       "id": "portal",
       "eventId": 19,
       "origin": [
-        33,
-        51
+        36,
+        291
       ],
       "sourceOriginal": [
         88,
@@ -172,60 +172,9 @@
       "opensWith": "receipt"
     }
   ],
-  "pendingSpiders": [
-    {
-      "id": "fang.cells.spider.01",
-      "eventId": 30,
-      "origin": [
-        9,
-        12
-      ],
-      "sourceOriginal": [
-        96,
-        83
-      ]
-    },
-    {
-      "id": "fang.cells.spider.02",
-      "eventId": 31,
-      "origin": [
-        27,
-        12
-      ],
-      "sourceOriginal": [
-        90,
-        83
-      ]
-    },
-    {
-      "id": "fang.cells.spider.03",
-      "eventId": 32,
-      "origin": [
-        9,
-        24
-      ],
-      "sourceOriginal": [
-        96,
-        87
-      ]
-    },
-    {
-      "id": "fang.cells.spider.04",
-      "eventId": 33,
-      "origin": [
-        27,
-        24
-      ],
-      "sourceOriginal": [
-        90,
-        87
-      ]
-    }
-  ],
   "texts": {
     "intro": [
-      "Você encontra uma sala com celas dos dois lados. Em cada uma parece haver uma aranha faminta. Três outras celas ficam ao sul, junto a um portal escuro.",
-      "Nesta amostra, materiais e portas são provisórios. As aranhas ainda não possuem exemplar artístico e combate integrados; sua liberação será sinalizada, sem substituição por outra espécie."
+      "Você encontra uma sala com celas dos dois lados. Em cada uma parece haver uma aranha faminta. Três outras celas ficam ao sul, junto a um portal escuro."
     ],
     "warning": [
       "Prove seu valor para prosseguir ao Subterrâneo. A resposta correta abrirá a cela da chave dourada, que abre o portal.",
@@ -240,8 +189,7 @@
       "Sabendo que nem tudo o que foi dito pode ser verdadeiro, qual cela contém a chave dourada?"
     ],
     "wrong": [
-      "Você ouve o rangido do metal: as portas das celas das aranhas destrancam e se abrem...",
-      "Liberação registrada uma única vez. O combate das aranhas ainda não está integrado nesta amostra. Você pode tentar responder novamente."
+      "Você ouve o rangido do metal: as portas das celas das aranhas destrancam e se abrem..."
     ],
     "correct": [
       "Você está correto, mortal. A chave na Cela 2 é sua..."
@@ -250,10 +198,71 @@
       "A chave dourada está na Cela 2, ao sul. Pegue-a para abrir o portal."
     ],
     "opened": [
-      "A chave dourada abre o portal. A passagem está livre; a escada é o limite desta amostra."
+      "A chave dourada abre o portal. A passagem para a escada está livre."
     ],
     "limit": [
-      "A escada para o nível inferior ainda não está conectada. A amostra termina aqui, com seu progresso preservado; a quest continua em andamento."
+      "A escada desce às profundezas da mina. Por enquanto, a jornada termina neste patamar. Você pode retornar a Rihad."
+    ],
+    "arrival": [
+      "Diante do portal do dragão de Fang Lair, a antiga fortaleza anã parece abandonada há muito. A pedra racha com o tempo. Em algum lugar dessas profundezas úmidas repousa o primeiro fragmento do Cajado do Caos."
     ]
-  }
+  },
+  "spiders": [
+    {
+      "id": "fang.cells.spider.01",
+      "eventId": 30,
+      "origin": [
+        12,
+        252
+      ],
+      "sourceOriginal": [
+        96,
+        83
+      ]
+    },
+    {
+      "id": "fang.cells.spider.02",
+      "eventId": 31,
+      "origin": [
+        30,
+        252
+      ],
+      "sourceOriginal": [
+        90,
+        83
+      ]
+    },
+    {
+      "id": "fang.cells.spider.03",
+      "eventId": 32,
+      "origin": [
+        12,
+        264
+      ],
+      "sourceOriginal": [
+        96,
+        87
+      ]
+    },
+    {
+      "id": "fang.cells.spider.04",
+      "eventId": 33,
+      "origin": [
+        30,
+        264
+      ],
+      "sourceOriginal": [
+        90,
+        87
+      ]
+    }
+  ],
+  "cellsEntry": [
+    21,
+    243
+  ],
+  "arrivalText": [
+    288,
+    12
+  ]
 }

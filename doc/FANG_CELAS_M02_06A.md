@@ -2,6 +2,32 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Entrada e celas na campanha — M02-06B, primeiro trecho
+
+Após a entrega do pergaminho, o portão de Rihad oferece **Viajar para Fang Lair**, **Viajar para Stonekeep** e **Ficar em Rihad**. Fang Lair exige a etapa 60 ou posterior e o recibo íntegro da entrega. A volta à cidade usa a entrada da mina. Map013 conserva o ID da amostra e leva até o patamar da escada. MQ02 permanece em andamento.
+
+### Planta e adaptações
+
+A entrada usa a posição inicial MIF (4,2), derivada do cabeçalho em unidades de 64. A descrição fica em (4,3), posição de TRIG para FANG1 TEXT0. A rota usa MAP1/FLOR de `42068779.MIF`, primeiro nível, e a planta do PDF de Fang Lair p.5. Ela segue corredores secos selecionados até MIF (93,80), onde encontra a planta das celas de `af17b4b`. A transformação é MV `(3 + 3 × (99 − X), 3 + 3 × Y)`. A entrada fica em (288,9), o enigma em (36,288), a chave em (18,297) e o patamar em (36,297).
+
+A leitura de pisos e paredes não conecta sozinha os dois extremos. Quatro ligações curtas unem trechos adjacentes na adaptação ortogonal, sem alegar que sejam passagens abertas no original. As sete células modificadas estão registradas com valores MAP1 em [FANG_ENTRADA_M02.json](mapas/FANG_ENTRADA_M02.json). As ligações passam pelas faixas MIF (24,25), (44–45,51), (62,43) e (69–71,67). A rota evita poços, outras alas e a implementação de escalada. A reconstrução usa as duas plantas versionadas e os tiles provisórios já disponíveis.
+
+### Enigma, aranhas e saves
+
+O erro ativa quatro encontros já posicionados em FANG1 nas celas do trecho. Os dados associam o flat 55 a `SPIDER.DFA / ITEM40`, o mesmo vínculo da aranha de Stonekeep. Reuso de patrulha, batalha e recompensas provisórias. As aranhas permanecem nas posições iniciais até o erro e suas derrotas são persistidas separadamente. A etapa 60 continua ativa e permite tentar novamente. O acerto abre a Cela 2. A chave importante pode ser recuperada enquanto necessária, e abrir o portal a consome uma vez, com recibo e avanço para 80.
+
+As falas usam os blocos do [inventário textual](CAMPANHA_PRINCIPAL.md#inventário-textual). A chegada e a descrição das celas aparecem em mensagens paginadas de largura total. O mapa antigo da amostra, quando encontrado em um save, é reconstruído e retoma na entrada da mina, mantendo objetivos, derrotas, chave e recibos.
+
+### Roteiro único no Chrome
+
+1. Entregue o pergaminho a Blubamka e volte ao portão urbano. Escolha **Viajar para Fang Lair**. Passe pelo portal da entrada e siga o corredor até as celas. [Arena local](http://127.0.0.1:8774/)
+2. Leia o enigma e escolha **Cela 1** ou **Cela 3** para liberar as quatro aranhas. Derrote uma se quiser conferir a persistência. Salve em outro slot e carregue. As celas liberadas devem continuar abertas e a aranha derrotada deve continuar ausente.
+3. Responda **Cela 2**, pegue a chave dourada e volte ao portal. A abertura consome a chave uma vez. Siga ao patamar e interaja com a escada. Para conferir o retorno, volte pelo mesmo corredor e interaja na entrada para regressar a Rihad.
+
+Cinco grupos passaram em Chrome 157 com perfil e slots descartáveis. O teste usou a entrega real a partir de uma fixture com pergaminho e acelerou apenas a caminhada e uma vitória. Cobriu cancelamento, travessia, combate, saves antes e depois da abertura, retorno e retomada de um Map013 da amostra. A reconstrução também passou. [Resultado automatizado](evidencias/m02-fang-campanha/resultado.json).
+
+O teste manual continua pendente. Para completar Fang Lair, faltam os demais setores, conexões e encontros do primeiro nível, arte definitiva, segundo nível, segundo enigma, fragmento e retaliação. Fantasma e hell hound ainda precisam de combate e patrulha. O servo de Tharn segue sem identificação.
+
 ## Inventário de criaturas e materiais do M02
 
 Leitura direta de `42068779.MIF`: **dois níveis de 100×100**, vinculados a FANG1/FANG2 do GLOBAL.BSA. SHA-256 da fonte MIF `582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7`. Contagem pelo MAP1, nibble alto 8 e índice do flat, resolvido no `@FLATS` com `*ITEM`. Um registro de posição não equivale a um turno, grupo ou encontro aleatório. Os arquivos declaram outros monstros que não aparecem colocados. Usar [mapeamento de criaturas](https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/Entities/ArenaAnimUtils.cpp) apenas como referência técnica, verificando o vínculo original de cada flat.

@@ -68,7 +68,7 @@
         },
         {
           "revealAt": 60,
-          "text": "Entreguei o pergaminho a Blubamka. Ela cumpriu o acordo e indicou a localização de Fang Lair, em Hammerfell. A viagem ainda não está disponível nesta versão de teste."
+          "text": "Entreguei o pergaminho a Blubamka. Ela cumpriu o acordo e indicou a localização de Fang Lair, em Hammerfell. Posso viajar pelo portão de Rihad."
         },
         {
           "revealAt": 70,
@@ -76,7 +76,7 @@
         },
         {
           "revealAt": 80,
-          "text": "Usei a chave dourada e abri o portal. A escada para o nível inferior ainda não está conectada nesta amostra; minha jornada continua."
+          "text": "Usei a chave dourada e abri o portal. A passagem até a escada está livre."
         }
       ],
       "steps": [
@@ -141,7 +141,7 @@
           "objectiveId": "fangLowerExplored",
           "revealAt": 80,
           "doneAt": 90,
-          "text": "Prosseguir pela escada quando o nível inferior estiver disponível.",
+          "text": "Chegar à escada no fim da passagem.",
           "completedText": "Alcancei a passagem do nível inferior."
         }
       ],

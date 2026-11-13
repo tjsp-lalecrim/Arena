@@ -1,9 +1,8 @@
 /*:
- * @plugindesc v0.1.0 Fang Lair: amostra do enigma, chave e portal; aranhas pendentes.
+ * @plugindesc v0.2.0 Fang Lair: viagem, mina, celas e aranhas condicionadas.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
- * ArenaFangCells.json; Map013 isolado, sem entrada da mina ou nível2.
- * Não substitui aranhas por outra espécie nem simula combate ausente.
+ * ArenaFangCells.json; Map013, da entrada da mina à escada.
  */
 var ArenaFangCells;
 (function(){'use strict';var pending=false;
@@ -14,14 +13,74 @@ var ArenaFangCells;
  function here(){return $gameMap&&$gameMap.mapId()===c().mapId;}
  function q(){return ArenaQuests.snapshot(c().questId);}
  function receipt(){var r=q().receipts[c().receiptId];return !!r&&r.sourceId===c().sourceId&&r.itemId===c().itemId&&r.quantity===1&&r.kind==='consume';}
- function eligible(){var v=q(),r=v.receipts['MQ02.rihad.parchment'];return v.stage>=60&&!v.completed&&r&&r.sourceId==='stonekeep.parchment'&&r.kind==='deliver';}
+ var knownDestination=ArenaCourtDelivery.destination;
+ function destination(){
+  var result=knownDestination.call(ArenaCourtDelivery),area=ArenaCampaignConfig.area(c().areaId);
+  if(result.known&&area.ok&&area.config.mapId===c().mapId) return {id:result.id,known:true,available:true};
+  return result;
+ }
+ ArenaCourtDelivery.destination=destination;
+ function eligible(){return destination().available&&!q().completed;}
+ function road(i){
+  var route=ArenaStonekeep.configuration(),e=$gameMap.event(route.travelEventId);
+  return eligible()&&ArenaNarrative.isCampaign()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&!$gameMessage.isBusy()&&
+   $gameMap.mapId()===$arenaRihad.arrival.mapId&&i instanceof Game_Interpreter&&i._mapId===$gameMap.mapId()&&
+   i.eventId()===route.travelEventId&&e&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;
+ }
+ function transfer(to){
+  $gameTemp.clearDestination();
+  $gameTemp._arenaCourtTravelFence=true;
+  $gamePlayer.reserveTransfer(to.mapId,to.x,to.y,to.direction,0);
+  return true;
+ }
  function valid(i,id){var e=$gameMap.event(id);return here()&&eligible()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&ArenaNarrative.isCampaign()&&i instanceof Game_Interpreter&&i._mapId===c().mapId&&i.eventId()===id&&e&&!e._erased&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;}
  function show(i,texts){return ArenaCourt.show(i,texts);}
  function atomic(fn){var state=JsonEx.makeDeepCopy($gameSystem._persistentState),items=Object.assign({},$gameParty._items);try{var result=fn();if(result===false){$gameSystem._persistentState=state;$gameParty._items=items;}return result;}catch(e){$gameSystem._persistentState=state;$gameParty._items=items;throw e;}}
  function update(stage,flags){var v=q();ArenaPersistence.setQuest(c().questId,stage,Object.assign({},v.objectives,flags),false);}
  function opened(g){var v=q();return g.opensWith==='receipt'?receipt():g.opensWith==='correct'?v.stage>=70&&!!v.objectives.fangCellsSolved:!!v.objectives.fangSpidersReleased;}
- function sync(){if(!here())return;c().gates.forEach(function(g){var key=[c().mapId,g.eventId,'A'],value=opened(g);if($gameSelfSwitches.value(key)!==value)$gameSelfSwitches.setValue(key,value);});}
+ function sync(){
+  if(!here())return;
+  c().gates.forEach(function(g){
+   var key=[c().mapId,g.eventId,'A'],value=opened(g);
+   if($gameSelfSwitches.value(key)!==value)$gameSelfSwitches.setValue(key,value);
+  });
+  var released=!!q().objectives.fangSpidersReleased;
+  var changed=false;
+  c().spiders.forEach(function(spider){
+   var key=[c().mapId,spider.eventId,'B'];
+   if($gameSelfSwitches.value(key)===released)return;
+   $gameSelfSwitches.setValue(key,released);
+   changed=true;
+  });
+  if(changed){
+   $gameMap.refresh();
+   ArenaEncounters.sync();
+  }
+ }
  ArenaFangCells={
+  destination:destination,
+  offerTravel:function(i){
+   if(!road(i))return false;
+   i.setupChild([
+    {code:102,indent:0,parameters:[['Viajar para Fang Lair','Viajar para Stonekeep','Ficar em Rihad'],2,2,2,0]},
+    {code:402,indent:0,parameters:[0,'Viajar para Fang Lair']},
+    {code:355,indent:1,parameters:['ArenaFangCells.travel(this);']},
+    {code:402,indent:0,parameters:[1,'Viajar para Stonekeep']},
+    {code:355,indent:1,parameters:['ArenaStonekeep.offer(this);']},
+    {code:402,indent:0,parameters:[2,'Ficar em Rihad']},
+    {code:404,indent:0,parameters:[]},{code:0,indent:0,parameters:[]}
+   ],i.eventId());return true;
+  },
+  travel:function(i){
+   return road(i)&&i._branch[0]===0&&transfer({mapId:c().mapId,x:c().entry[0],y:c().entry[1],direction:2});
+  },
+  describe:function(i,block){
+   var id=block==='arrival'?7:8,flag=block==='arrival'?'fangEntryRead':'fangCellsSeen';
+   if(!valid(i,id)||$gameMessage.isBusy()||q().objectives[flag])return false;
+   var flags={};flags[flag]=true;
+   update(q().stage,flags);
+   return show(i,c().texts[block]);
+  },
   preview:function(){if(!ArenaCourtDelivery.preview())return false;pending=true;return true;},
   interact:function(i){if(!valid(i,c().riddleEventId)||$gameMessage.isBusy())return false;
    var v=q();if(v.stage>=80)return show(i,c().texts.limit);
@@ -45,8 +104,11 @@ var ArenaFangCells;
   },
   limit:function(i){return valid(i,c().limitEventId)?show(i,c().texts.limit):false;},
   brass:function(i){return valid(i,i.eventId())?show(i,['Latão sem valor. Este objeto não é a chave dourada.']):false;},
-  spiderInfo:function(i){return valid(i,i.eventId())?show(i,['Aranha desta cela: encontro condicionado ainda pendente de exemplar artístico e integração. Nenhuma batalha substituta será iniciada.']):false;},
-  leave:function(i){if(!valid(i,1))return false;if(ArenaContinuation.labActive())ArenaContinuation.leaveLab();else SceneManager.goto(Scene_Title);return true;},
+  leave:function(i){
+   if(!valid(i,1)||$gameMessage.isBusy())return false;
+   if(ArenaContinuation.labActive()){ArenaContinuation.leaveLab();return true;}
+   return transfer($arenaRihad.arrival);
+  },
   sync:sync,
   gateOpen:function(id){var g=c().gates.filter(function(v){return v.id===id;})[0];return !!g&&opened(g);}
  };
@@ -54,6 +116,16 @@ var ArenaFangCells;
  DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;var cfg=c(),a=cfg&&ArenaCampaignConfig.area(cfg.areaId),s=cfg&&ArenaCampaignConfig.source(cfg.sourceId),r=cfg&&ArenaCampaignConfig.receipt(cfg.receiptId);
   var problem=!cfg?'ArenaFangCells.json ausente':!a.ok?'área '+cfg.areaId+' ausente':a.config.mapId!==cfg.mapId?'mapa da área não corresponde a Map'+cfg.mapId:!s.ok?'fonte '+cfg.sourceId+' ausente':s.config.itemId!==cfg.itemId||s.config.areaId!==cfg.areaId||s.config.questId!==cfg.questId||s.config.quantity!==1?'fonte da chave não corresponde a item/área/quest/quantidade':!r.ok||r.config.kind!=='consume'||r.config.sourceId!==cfg.sourceId||r.config.questId!==cfg.questId?'recibo do portal incompatível':!$dataItems[cfg.itemId]?'item '+cfg.itemId+' ausente em Items.json':$dataItems[cfg.itemId].itypeId!==2?'item '+cfg.itemId+' não é importante':null;
   if(problem)throw Error('Fang Lair: '+problem+'. Confira os arquivos de dados servidos e build-fang-cells.');return true;};
+ // A serialized copy of the isolated crop has incompatible event coordinates.
+ var createMap=Scene_Map.prototype.create;
+ Scene_Map.prototype.create=function(){
+  var portal=here()&&$gameMap.event(c().riddleEventId);
+  if(portal&&portal.x===33&&(!$gamePlayer.isTransferring()||$gamePlayer.newMapId()===c().mapId)){
+   $gamePlayer.reserveTransfer(c().mapId,c().entry[0],c().entry[1],2,0);
+   $gamePlayer.requestMapReload();
+  }
+  createMap.apply(this,arguments);
+ };
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===$arenaRihad.court.entry.mapId&&!$gamePlayer.isTransferring()){
   pending=false;$gamePlayer.locate(8,6);var i=new Game_Interpreter();i.setup([],2);i._branch[0]=0;if(!ArenaCourtDelivery.deliver(i))throw Error('Fang Lair: fixture de entrega falhou.');var p=c().lab;$gameTemp.clearDestination();$gamePlayer.reserveTransfer(c().mapId,p.x,p.y,p.direction,0);
@@ -61,18 +133,17 @@ var ArenaFangCells;
  var passage=Game_Map.prototype.isPassable;
  Game_Map.prototype.isPassable=function(x,y,d){if(here()&&c().gates.some(function(g){return !opened(g)&&Math.abs(x-g.origin[0])<=1&&Math.abs(y-g.origin[1])<=1;}))return false;return passage.apply(this,arguments);};
  var choice=Window_ChoiceList.prototype.start;
- Window_ChoiceList.prototype.start=function(){choice.apply(this,arguments);if(here()){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
+ Window_ChoiceList.prototype.start=function(){choice.apply(this,arguments);if(here()||($gameMap.mapId()===$arenaRihad.arrival.mapId&&$gameMap._interpreter.eventId()===ArenaStonekeep.configuration().travelEventId)){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
  var end=Window_Message.prototype.terminateMessage;
  Window_Message.prototype.terminateMessage=function(){end.apply(this,arguments);if(here()){$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();}};
  var menu=Window_MenuCommand.prototype.addOriginalCommands;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(here()&&ArenaContinuation.labActive()){this.addCommand('Guardar teste em RAM','arenaRihadStore');this.addCommand('Carregar teste da RAM','arenaRihadLoad');}};
  var create=Scene_Map.prototype.createDisplayObjects,updateMap=Scene_Map.prototype.update;
  Scene_Map.prototype.createDisplayObjects=function(){create.apply(this,arguments);if(here()){this._fangLabels=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._fangLabels);}};
- Scene_Map.prototype.update=function(){updateMap.apply(this,arguments);if(!this._fangLabels)return;var b=this._fangLabels.bitmap;b.clear();this._fangLabels.visible=!$gameMessage.isBusy();if(!this._fangLabels.visible)return;b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Fang Lair — celas / amostra funcional',16,4,b.width-32,30);b.fontSize=16;b.drawText('Materiais/portas provisórios · aranhas sem combate · Esc: menu',16,38,b.width-32,24);
+ Scene_Map.prototype.update=function(){updateMap.apply(this,arguments);if(!this._fangLabels)return;var b=this._fangLabels.bitmap;b.clear();this._fangLabels.visible=!$gameMessage.isBusy();if(!this._fangLabels.visible)return;b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Fang Lair',16,4,b.width-32,30);b.fontSize=16;b.drawText('Materiais provisórios · Esc: menu',16,38,b.width-32,24);
   function label(p,text){var x=$gameMap.adjustX(p[0])*48+24,y=$gameMap.adjustY(p[1])*48-28;if(y<75||y>b.height||x<0||x>b.width)return;b.fontSize=16;b.fillRect(Math.max(0,x-148),y,296,24,'rgba(8,14,18,.85)');b.drawText(text,Math.max(0,x-144),y,288,24,'center');}
-  label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,'Retornar ao título');label(c().limit,'Escada / limite');
-  [[6,48,'Cela 3'],[15,48,'Cela 2'],[24,48,'Cela 1']].forEach(function(p){label(p,p[2]);});if(ArenaPersistence.sourceStatus(c().sourceId).active)label(c().key,'Chave dourada · provisório');
-  if(q().objectives.fangSpidersReleased)c().pendingSpiders.forEach(function(v){label(v.origin,'Aranha · encontro pendente');});
+  label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,ArenaContinuation.labActive()?'Retornar ao título':'Retornar a Rihad');label(c().limit,'Escada / limite');
+  [[9,288,'Cela 3'],[18,288,'Cela 2'],[27,288,'Cela 1']].forEach(function(p){label(p,p[2]);});if(ArenaPersistence.sourceStatus(c().sourceId).active)label(c().key,'Chave dourada · provisório');
  };
- ArenaDebugHub.register({symbol:'arenaFangCells',name:'Fang Lair · celas (RAM)',category:'campaign',description:'Enigma, chave da Cela 2 e portal. Materiais provisórios; liberação de aranhas registrada, combate pendente.',saving:'Somente RAM · slots normais bloqueados'},ArenaFangCells.preview);
+ ArenaDebugHub.register({symbol:'arenaFangCells',name:'Fang Lair · celas (RAM)',category:'campaign',description:'Enigma, chave da Cela 2 e portal. Liberação das aranhas e combate com o exemplar existente.',saving:'Somente RAM · slots normais bloqueados'},ArenaFangCells.preview);
 })();

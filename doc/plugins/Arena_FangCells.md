@@ -1,4 +1,8 @@
-# Arena_FangCells 0.1.0
+# Arena_FangCells 0.2.0
+
+`offerTravel/travel` ligam o portão de Rihad ao Map013 após validar o recibo. O mapa mantém os IDs da amostra, com recarga no portão da mina para snapshots antigos. As páginas das aranhas usam self-switch B derivado de `fangSpidersReleased`. O perfil de encontros usa os quatro IDs existentes e o exemplar de Stonekeep. [Contrato e teste](../FANG_CELAS_M02_06A.md#entrada-e-celas-na-campanha--m02-06b-primeiro-trecho).
+
+## Histórico da amostra 0.1.0
 
 Núcleo focal de M02-06A; [fontes, mapa, limites e roteiro](../FANG_CELAS_M02_06A.md). Após Arena_DebugHub, Arena_CourtDelivery/Court/Continuation, Arena_CampaignConfig, Arena_Persistence/Quests/QuestJournal. Sem biblioteca externa ou alterações do motor.
 

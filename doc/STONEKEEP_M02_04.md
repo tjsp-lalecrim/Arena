@@ -72,7 +72,7 @@ Integrar a feature em `develop` e promover por branch de estabilização. Revali
 
 A árvore funcional de `fb3f92d` cobre a chegada pelo portão urbano, Ria e o informante na esplanada, a audiência, a coleta em Stonekeep e a entrega única do pergaminho. Em Chrome isolado, o teste percorreu as ruas e o Map015 com movimento nativo, restaurou a posição e o estado da missão em Rihad com o item, retomou saves sintéticos dos mapas antigos e confirmou o recibo da entrega. A vitória amostral e a velocidade de deslocamento foram controladas. A reconstrução dos dados e o pacote local de jogador passaram nas verificações. [Resultado integrado](evidencias/m02-rihad-percurso/resultado.json).
 
-A promoção à main leva os dois trechos e as dependências de MQ02 da feature de Stonekeep. A rota urbana usa acabamento provisório e a corte existente. Stonekeep mantém as lacunas de acesso da matriz e o relato da porta sem localização. Fang Lair fica conhecida após a entrega, com a viagem ainda pendente. A avaliação manual usa o roteiro abaixo.
+A promoção à main leva os dois trechos e as dependências de MQ02 da feature de Stonekeep. A rota urbana usa acabamento provisório e a corte existente. Stonekeep mantém as lacunas de acesso da matriz e o relato da porta sem localização. O trecho posterior liga a viagem após a entrega até a escada. [Fang Lair](FANG_CELAS_M02_06A.md#entrada-e-celas-na-campanha--m02-06b-primeiro-trecho). A avaliação manual usa o roteiro abaixo.
 
 ### Roteiro de avaliação no navegador
 

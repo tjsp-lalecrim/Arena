@@ -663,7 +663,120 @@
     {
       "id": "fang-lair.upper",
       "questId": "MQ02",
-      "mapId": 13
+      "mapId": 13,
+      "encounters": {
+        "schemaVersion": 1,
+        "mapId": 13,
+        "areaId": "fang-lair.upper",
+        "completionQuestId": "MQ02",
+        "mapVisuals": {
+          "9": {
+            "file": "$Arena_spider_walk_v01",
+            "cell": [
+              96,
+              96
+            ],
+            "ground": 94,
+            "animationWait": 10,
+            "groundByDirection": {
+              "2": 72,
+              "4": 72,
+              "6": 72,
+              "8": 72
+            }
+          }
+        },
+        "entries": [
+          {
+            "id": "fang.cells.spider.01",
+            "eventId": 30,
+            "origin": [
+              12,
+              252
+            ],
+            "sourceOriginal": [
+              96,
+              83
+            ],
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+          },
+          {
+            "id": "fang.cells.spider.02",
+            "eventId": 31,
+            "origin": [
+              30,
+              252
+            ],
+            "sourceOriginal": [
+              90,
+              83
+            ],
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+          },
+          {
+            "id": "fang.cells.spider.03",
+            "eventId": 32,
+            "origin": [
+              12,
+              264
+            ],
+            "sourceOriginal": [
+              96,
+              87
+            ],
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+          },
+          {
+            "id": "fang.cells.spider.04",
+            "eventId": 33,
+            "origin": [
+              30,
+              264
+            ],
+            "sourceOriginal": [
+              90,
+              87
+            ],
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+          }
+        ]
+      }
     },
     {
       "id": "fang-lair.lower",
