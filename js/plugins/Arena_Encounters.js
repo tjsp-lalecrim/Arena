@@ -38,7 +38,7 @@ var ArenaEncounters;
             if(!e){e=new Game_Event(config().mapId,v.eventId);$gameMap._events[v.eventId]=e;}
             if(state(v).defeated)e.erase();
             else if(e._erased){e._erased=false;e.refresh();e.locate(v.origin[0],v.origin[1]);}
-            if(!e._erased){var visual=config().mapVisuals[String(v.enemyId)];if(!visual||typeof visual.file!=='string')throw Error('Arena: caminhada de patrulha ausente.');e.setImage(visual.file,0);e.setWalkAnime(true);e.setStepAnime(false);}
+            if(!e._erased&&e.page()){var visual=config().mapVisuals[String(v.enemyId)];if(!visual||typeof visual.file!=='string')throw Error('Arena: caminhada de patrulha ausente.');e.setImage(visual.file,0);e.setWalkAnime(true);e.setStepAnime(false);}
         });
     }
     function busy() { return $gameTemp._arenaEncounterLock || $gameParty.inBattle() || $gamePlayer.isTransferring() || $gameMessage.isBusy() || !(SceneManager._scene instanceof Scene_Map) || SceneManager.isSceneChanging(); }
@@ -49,7 +49,7 @@ var ArenaEncounters;
             if(!config() || $gameMap.mapId()!==config().mapId || busy())return false;
             var c=config(),v=entries().filter(function(v){return v.id===id;})[0];if(!v)return false;
             ensure();var e=$gameMap.event(v.eventId);
-            if(!e || e._erased || state(v).defeated || $gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1)return false;
+            if(!e || !e.page() || e._erased || state(v).defeated || $gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1)return false;
             $gameTemp._arenaEncounterLock={id:id};
             BattleManager.setup(v.troopId,false,false);
             BattleManager.setEventCallback(function(result){
@@ -91,7 +91,7 @@ var ArenaEncounters;
     var move=Game_Event.prototype.updateSelfMovement;
     Game_Event.prototype.updateSelfMovement=function(){
         var v=spec(this);if(!v)return move.apply(this,arguments);
-        if(this._erased || this._locked || this.isMoving() || !this.isNearTheScreen() || busy() || $gameMap.isEventRunning())return;
+        if(this._erased || !this.page() || this._locked || this.isMoving() || !this.isNearTheScreen() || busy() || $gameMap.isEventRunning())return;
         this._arenaPatrolTick=(this._arenaPatrolTick||0)+1;
         if(this._arenaPatrolTick%v.interval!==0)return;
         var dirs=MVEncounterRules.directions(this._arenaPatrolTick/v.interval);
