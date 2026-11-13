@@ -1,0 +1,24 @@
+{
+  "base": "42eabf6",
+  "browser": "157.0.8103.51",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Native parchment delivery, travel cancel, travel to the dragon gate, text events and connected route to the cells",
+    "Native riddle cancel leaves stage 60, key and gates unchanged",
+    "Wrong choice activates four original spiders, native battle defeats one, reload and repeated error preserve independent defeats and loot",
+    "Legacy Map013 save resumes at the mine entrance and preserves portal receipt and independent spider defeat",
+    "Correct answer, one key, recovery while needed, save before consumption, portal receipt, save after consumption and return to Rihad/reentry",
+    "Bidirectional stairs preserve the first portal receipt; the original route skeleton uses the existing encounter and remains defeated",
+    "Second riddle wrong and Escape preserve the closed door; correct advances once to 90, persists through save and reentry and stops at the threshold"
+  ],
+  "errors": [],
+  "missing": [],
+  "scope": "Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only",
+  "pending": [
+    "Manual Chrome campaign evaluation",
+    "Remaining wings, fragment room, Hell Hounds, definitive art and Tharn"
+  ]
+}
