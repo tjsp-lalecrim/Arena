@@ -1,4 +1,6 @@
-# Arena_FangCells 0.2.0
+# Arena_FangCells 0.3.0
+
+`takeStaffPiece` valida a porta, a etapa e a fonte. A coleta vincula o item importante 9 à etapa 100 e reusa a mensagem em largura integral. O Map017 mantém as dimensões e coordenadas anteriores, recarregando a lista de eventos quando um save ainda não tem a fonte. [Sala e fragmento](../FANG_CELAS_M02_06A.md#sala-e-primeiro-fragmento--m02-07b-trecho-de-campanha).
 
 A escada conecta Map013 e Map017. `lowerRiddle/lowerAnswer` usam a etapa 80 e o recibo anterior como precondições. A etapa 90 e `fangLowerExplored` determinam abertura, colisão e página da porta. [Segundo nível](../FANG_CELAS_M02_06A.md#segundo-nível-até-o-enigma--m02-07a).
 
@@ -12,8 +14,8 @@ Configuração `data/ArenaFangCells.json`, geometria `doc/mapas/FANG_CELAS_M02.j
 
 `preview()` registra acesso centralizado ao hub, sessão RAM pela fixture existente de entrega; não cria slots ou modifica namespace. `interact/answer/takeKey/openPortal/limit/leave` exigem contexto de evento/mapa, proximidade, personagem de campanha, etapa elegível com recibo do pergaminho e ausência de batalha. Escolhas nativas e fence de soltura reutilizam Court; mensagem encerrada limpa destino e impede acionamento imediato. `sync/gateOpen` derivam páginas/colisão do estado da quest/recibo, não de switches como segunda fonte de verdade. Collider3×3 centrado na célula lógica; arte144px apoiada uma linha abaixo do centro. Exclusivo de Map013, sem alterar veículos/outros mapas.
 
-Persistência existente: MQ02.objectives `fangCellsSolved`, `fangSpidersReleased`, `fangKeyFound`, `fangPortalOpened`; chave8 e fonte `fang.cell2.key`; recibo `MQ02.fang.lower-door`. Transações protegem estado/inventário com rollback; consumo+recibo+etapa síncronos. Nenhuma migração de formato ou IDs antigos. Erro só sinaliza/libera quatro aranhas **ainda sem participante de combate**; não cadastrar marcadores como inimigos derrotáveis.
+Persistência existente: MQ02.objectives `fangCellsSolved`, `fangSpidersReleased`, `fangKeyFound`, `fangPortalOpened`; chave8 e fonte `fang.cell2.key`; recibo `MQ02.fang.lower-door`. Transações protegem estado/inventário com rollback; consumo+recibo+etapa síncronos. Nenhuma migração de formato ou IDs antigos. A amostra original só sinalizava a liberação das aranhas. O trecho de campanha passou a vinculá-las a encontros persistentes.
 
-HTTP: URL de Items revisada para `Items.json?arena-data=fang-gold-key-v1`, seguindo a correção prévia de Stonekeep para dados antigos em cache. Identifica a revisão do cadastro, não uma nova versão/namespace de saves; editor continua `Items.json`. Validação bloqueia inicialização se vínculos de mapa/fonte/recibo/item importante forem inválidos.
+HTTP: URL de Items revisada para `Items.json?arena-data=fang-staff-piece-v1`, seguindo a correção prévia de Stonekeep para dados antigos em cache. Identifica a revisão do cadastro, não uma nova versão/namespace de saves; editor continua `Items.json`. Validação bloqueia inicialização se vínculos de mapa/fonte/recibo/item importante forem inválidos.
 
-Teste focal: `node tools/test-fang-cells.cjs` (Playwright/Chrome instalados). Origem/perfil isolados, RAM e slot16 sintético; não usa saves pessoais. Verificações e evidências no documento principal. Rihad não habilita viagem ao `fang.entry` ainda inexistente; Map013 é somente a amostra das celas.
+Teste focal: `node tools/test-fang-cells.cjs` (Playwright/Chrome instalados). Origem e perfil isolados, com saves sintéticos. O cenário entra pela campanha a partir de uma fixture de entrega do pergaminho. Verificações e evidências no documento principal.
