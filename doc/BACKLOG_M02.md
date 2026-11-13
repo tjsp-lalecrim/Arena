@@ -10,9 +10,9 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Entrega atual.** Stonekeep está ligada à campanha no Map015. O inventário de 180 encontros e 70 portas está registrado, com 165 encontros alcançáveis na auditoria. Há 17 tesouros e seis refúgios ativos. A rota do pergaminho está conectada. A avaliação manual integrada está pendente. [Matriz, limites, saves e roteiro único](STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026)
 
-**Preparação de promoção.** Revisão de ancestralidade, dependências e pacote de jogador concluída. Aguarda confirmação do percurso e aceite das ressalvas. [Procedimento de integração](STONEKEEP_M02_04.md#candidata-de-promoção-pelo-git-flow)
+**Promoção de trechos.** Aplicar o fluxo de entregas integradas aprovado no M02-03E2. Registrar verificações essenciais, ressalvas e cobertura manual na [matriz do percurso](STONEKEEP_M02_04.md).
 
-**Próximo recorte jogável.** M02-03E2, ligação do portão urbano ao acesso da corte sobre a planta de Rihad, com tiles provisórios. M02-03E1 identificou a composição e as famílias de assets. Fang Lair tem duas espécies novas confirmadas, cada uma com combate e patrulha pendentes. O servo permanece incerto. [Rihad](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) · [Assets](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) · [Blocos narrativos](CAMPANHA_PRINCIPAL.md#inventário-textual)
+**M02-03E2.** O portão urbano, a esplanada e a corte estão ligados na campanha. Próximo recorte urbano é conferir os setores e seus acessos, começando pela leitura visual e circulação da rota entregue. M02-03E1 identificou a composição e as famílias de assets. Fang Lair tem duas espécies novas confirmadas, cada uma com combate e patrulha pendentes. O servo permanece incerto. [Rihad](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) · [Assets](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) · [Blocos narrativos](CAMPANHA_PRINCIPAL.md#inventário-textual)
 
 ## Histórico42b857f — piloto de batalha do orc
 

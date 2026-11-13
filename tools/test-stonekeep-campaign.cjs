@@ -7,8 +7,8 @@ const { coverage, url } = require('./test-stonekeep-coverage.cjs');
 const battleControls = require('./battle-test-controls.cjs');
 
 const root = path.resolve(__dirname, '..');
-const output = path.join(root, 'doc/evidencias/m02-stonekeep-campanha/resultado.json');
-const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaStonekeepWhole']
+const output = path.join(root, 'doc/evidencias/m02-rihad-percurso/resultado.json');
+const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
     .map(name => path.join(root, 'data', name + '.json'));
 const bytes = generated.map(file => fs.readFileSync(file));
 execFileSync(process.execPath, ['tools/build-rihad-arrival.cjs'], { cwd: root });
@@ -166,9 +166,20 @@ async function run() {
             await page.evaluate(d => $gamePlayer.setDirection(d), direction);
             await key('Enter');
         }
+        const eventPosition = (id, dy = 0) => page.evaluate(({id, dy}) => {
+            const e = $gameMap.event(id);
+            return [e.x, e.y + dy];
+        }, {id, dy});
+        const position = () => page.evaluate(() => [$gamePlayer.x, $gamePlayer.y]);
+        async function approachCourt() {
+            const steps = await walk(await eventPosition(5, -1));
+            await key('ArrowDown');
+            await map(11);
+            return steps;
+        }
         async function travel(target) {
-            await walk([10,12]);
-            await talk(2);
+            await walk(await eventPosition(3));
+            await talk(8);
             await chooseFirst();
             await map(target);
         }
@@ -227,7 +238,22 @@ async function run() {
 
         await fixtureAsCampaign(() => ArenaRiaVision.preview());
         assert.equal(await stage(), 10);
-        await walk([15,11]);
+        const city = await page.evaluate(() => ({
+            dimensions: [$gameMap.width(), $gameMap.height()],
+            arrival: [$arenaRihad.arrival.x, $arenaRihad.arrival.y],
+            arrivalSideWall: !$gamePlayer.canPass($arenaRihad.arrival.x + 1, $arenaRihad.arrival.y, 6)
+        }));
+        assert.deepEqual(city.dimensions, [388,388]);
+        assert.deepEqual(await position(), city.arrival);
+        assert.equal(city.arrivalSideWall, true);
+        await walk(await eventPosition(4, 1));
+        await key('ArrowUp');
+        await map(10);
+        await walk([3,9]);
+        await key('ArrowLeft');
+        await map(9);
+        assert.deepEqual(await position(), city.arrival);
+        await walk(await eventPosition(2, 1));
         await talk(8);
         for (let i = 0; i < 30 && await page.evaluate(() => ArenaRiaVision.active()); i++) {
             await page.waitForFunction(() => SceneManager._scene instanceof Scene_ArenaNarrative &&
@@ -241,13 +267,11 @@ async function run() {
         }
         await map(9);
         assert.equal(await stage(), 20);
-        await walk([9,8]);
+        await walk(await eventPosition(1, 1));
         await talk(8);
         await settle();
         assert.equal(await stage(), 30);
-        await walk([10,5]);
-        await key('ArrowUp');
-        await map(11);
+        const citySteps = await approachCourt();
         await walk([8,6]);
         await talk(8);
         await chooseFirst();
@@ -342,9 +366,16 @@ async function run() {
         const home = await walk([route.exit[0],route.exit[1]+1], true);
         await key('ArrowUp');
         await map(9);
-        await walk([10,5]);
-        await key('ArrowUp');
-        await map(11);
+        assert.deepEqual(await position(), city.arrival);
+        const beforeCitySave = await state();
+        await walk(await eventPosition(2, 1));
+        const citySavePosition = await position();
+        await save(18);
+        await reload(18, 9);
+        assert.deepEqual(await position(), citySavePosition);
+        assert.deepEqual(await state(), beforeCitySave);
+        const cityReturnSteps = await approachCourt();
+        checks.push('Map009 388×388, portão e arredores, esplanada e corte por caminhada nativa, posição e estado restaurados em Rihad com pergaminho');
         await walk([8,6]);
         await talk(8);
         await chooseFirst();
@@ -360,6 +391,29 @@ async function run() {
         checks.push('Percurso contínuo dentro de Stonekeep até o pergaminho e de volta à saída; recuperação antes da entrega, entrega explícita 50→60 retira uma unidade e aposenta a fonte');
 
         console.log('PASS entrega e retorno');
+        await walk([8,10]);
+        await key('ArrowDown');
+        await map(9);
+        const oldCity = JSON.parse(execFileSync('git', ['show', '1f0fef4:data/Map009.json'], { cwd: root, encoding:'utf8' }));
+        await page.evaluate(oldCity => {
+            const current = $dataMap;
+            try {
+                $dataMap = oldCity;
+                $gameMap.setup(9);
+                $gamePlayer.locate(10,11);
+            } finally {
+                $dataMap = current;
+            }
+        }, oldCity);
+        const oldCityState = await state();
+        await save(19);
+        await reload(19, 9);
+        assert.deepEqual(await position(), city.arrival);
+        assert.deepEqual(await state(), oldCityState);
+        assert.deepEqual(await eventPosition(3), [city.arrival[0],city.arrival[1]-3]);
+        checks.push('Save com Map009 antigo retoma no portão urbano e preserva etapa 60, pergaminho entregue e recibos');
+        console.log('PASS retomada do Map009 anterior');
+
         const oldPlugin = execFileSync('git', ['show', '9c9b802:js/plugins/Arena_StonekeepWhole.js'], { cwd: root });
         const pattern = '**/js/plugins/Arena_StonekeepWhole.js';
         await page.route(pattern, route => route.fulfill({ contentType: 'application/javascript', body: oldPlugin }));
@@ -393,7 +447,7 @@ async function run() {
         assert.deepEqual(missing, []);
         fs.mkdirSync(path.dirname(output), { recursive: true });
         fs.writeFileSync(output, JSON.stringify({ base:'9c9b802', browser:browser.version(), checks,
-            topology, steps:{ outward, home }, routeDoors, sample:{ enemy, treasure:treasure.id, refuge:refuge.id },
+            topology, steps:{ outward, home, citySteps, cityReturnSteps }, routeDoors, sample:{ enemy, treasure:treasure.id, refuge:refuge.id },
             errors, missing }, null, 2) + '\n');
         console.log(checks.join('\n'));
     } finally {

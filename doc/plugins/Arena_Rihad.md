@@ -10,6 +10,8 @@ Arena_RiaVision envolve a interação de repouso e orientação. Informante pré
 
 Delta: ArenaRihad.json.outskirts identifica entradas/retorno e eventos; visitOutskirts(interpreter)/returnToArrival(interpreter) validam mapa/evento/distância, MQ02≥10, campanha e ausência de batalha/transferência. Transferências nativas não curam/premiam. Somente dois acessos fixos, sem sistema geral de viagem. Perfil de quatro ratos em ArenaCampaign.json usa integralmente Arena_Encounters e loot existentes; completionQuestId MQ02 impede que conclusão MQ01 reative a área durante MQ02.
 
+O Map009 ativo usa a planta da cidade, e seus pontos de entrada, saída e repouso vêm do gerador. A esplanada antiga é reconhecida pela posição do evento da estrada. A recarga desse mapa recompõe seus eventos e retoma no portão urbano. [M02-03E2](../CHEGADA_RIHAD_M02_03A.md#m02-03e2--do-portão-urbano-à-corte)
+
 Preview chama ArenaContinuation.previewArrival(d,true): fixture de criação nível1, sem o preparo nível3/itens/magia do laboratório02A. O argumento opcional não altera o padrão anterior. RAM no menu dos dois mapas, gravação normal bloqueada nessa sessão. OnMapLoaded acrescenta somente evento4 ausente em saves03A, antes dos sprites. O gerador build-rihad-arrival.cjs passou a recompor Map009/010 e ambos os vínculos, sem desfazer acesso/repouso.
 
 [Posições, roteiro e15 verificações focais](../ARREDORES_RIHAD_M02_03B.md). Trecho anterior abaixo é o contrato03A preservado.

@@ -12,6 +12,8 @@ Manter inicialmente o runtime MV e os módulos próprios existentes; JavaScript 
 
 Quando o responsável autorizar a integração de etapas dependentes, reunir o trabalho numa feature e fazer commits por etapa. Em Stonekeep, a ordem é encontros e portas, tesouros e descanso, ligação à campanha. Concentrar as verificações em cobertura e acesso, persistência e percurso de campanha. A avaliação manual fica para o percurso integrado. Registrar ambiguidades e avançar nas partes independentes. Pedir decisão somente quando faltar uma condição do caminho obrigatório ou for preciso mudar o escopo.
 
+A partir de M02-03E2, integrar cada trecho jogável à campanha. Promover trechos com verificações essenciais aprovadas de feature para develop e depois para main por branch de estabilização. Avaliar trechos independentes separadamente quando outro estiver bloqueado. Registrar o alcance técnico, ressalvas e teste manual pendente. Tag, release pública e Pages seguem em etapas próprias.
+
 ## Retrospectiva aprovada — 30/10/2026
 
 Regras permanentes autorizadas pelo responsável; esta seção é a fonte do processo, sem decisão de encerramento/release:

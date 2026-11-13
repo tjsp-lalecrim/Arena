@@ -1,5 +1,27 @@
 # M02-03A — primeira chegada a Rihad
 
+
+## M02-03E2 — do portão urbano à corte
+
+Map009 usa a planta reconstruída inteira como base de 388×388 tiles, com escala 3 e margem 2. [Planta e âncoras versionadas](mapas/RIHAD_PERCURSO_M02.json). A grade preserva o traçado das células secas, a costa bloqueada, o portão urbano e o acesso ao palácio. As fachadas usam alvenaria provisória. Adereços, interiores opcionais, alturas e acabamentos urbanos ficam para etapas posteriores. Map011 fornece a audiência já jogável.
+
+| Função | MIF | Map009 |
+| --- | --- | --- |
+| Estrada para Stonekeep | (13,0) | (345,3) |
+| Saída para os arredores | (14,0) | (342,3) |
+| Chegada e retorno à cidade | (13,1) | (345,6) |
+| Esplanada e informante | (12,3) | (348,12) |
+| Repouso | (10,4) | (354,15) |
+| Portão interno do palácio | (8,124) e (9,124) | (360,375) e (357,375) |
+| Acesso à corte | (8,127) | (360,384) |
+| Retorno da corte | (8,126) | (360,381) |
+
+IDs de mapas, eventos, fonte, item, recibo e destinos foram preservados. As falas do informante foram ajustadas nos trechos que indicavam a geografia da amostra. As mensagens curtas sem imagem usam a janela nativa de largura total, incluindo as escolhas da audiência. Ria usa a cena ilustrada existente. O gerador de Rihad recompõe a planta, os vínculos e a saída de Stonekeep sem extrações locais.
+
+Em Chrome 157, uma partida sintética elegível iniciou a transição por **Continuar jornada** e chegou a (345,6) na etapa 10. O pacote local de `fb3f92d` passou na conferência do manifesto e abriu em subpasta com o hub de debug desabilitado. [Roteiro e evidências](STONEKEEP_M02_04.md#roteiro-de-avaliação-no-navegador).
+
+No primeiro carregamento de um save da antiga esplanada, o jogo retoma no portão urbano. O terreno novo tem outra escala e outro traçado. Saves feitos no mapa novo retomam na posição registrada. [Roteiro único](STONEKEEP_M02_04.md#roteiro-de-avaliação-no-navegador).
+
 ## M02-03E1 — planta reconstruída e inventário visual
 
 **Identificação no original.** `CITYDATA.65`, registro a partir do byte 1356, identifica Rihad em Hammerfell (província 1, cidade-estado local 4, ID global 36, posição provincial 207,180). A tabela costeira do `ACD.EXE` instalado inclui 36. Sua semente `0x00CF00B4` seleciona o modelo `CITYW1.MIF` do GLOBAL.BSA. O modelo é **128×128**, com grade **6×6 de quarteirões de 20×20**, começando em (3,3). Os índices 29, 33, 34 e 35 ficam reservados no modelo. A reconstrução determinística produziu 16.384 células por camada. O SHA-256 do MAP1 composto, em palavras de 16 bits little-endian antes do retoque dos portões, é `5d224c5e3cd48b1f7f382a2195d9548ed592efa2d38fc8634f4938a6f03b1bac`. A rota e as dimensões foram aferidas em dados, sem observação ao vivo em DOS. As tabelas costeira, modelos, origens e reservas vêm respectivamente de `0x401E2`, `0x4021C`, `0x4028F` e `0x402C8` do executável descompactado. A interpretação usa [CityDataFile](https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/Assets/CityDataFile.cpp), [LocationDefinition](https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/WorldMap/LocationDefinition.cpp) e [ArenaCityUtils](https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/World/ArenaCityUtils.cpp) como referências técnicas.
