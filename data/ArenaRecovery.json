@@ -578,11 +578,11 @@
       "id": "MQ02.rihad.rest",
       "mapId": 9,
       "eventId": 2,
-      "x": 15,
-      "y": 10,
+      "x": 354,
+      "y": 15,
       "technical": false,
       "authorizedRefuge": true,
-      "source": "MQ02_ESPECIFICACAO: repouso autorizado na chegada; posição e plataforma são adaptação provisória."
+      "source": "MQ02-03E2: repouso autorizado na esplanada inicial de Rihad, posição adaptada."
     },
     {
       "id": "MQ02.stonekeep.refuge.87.44",

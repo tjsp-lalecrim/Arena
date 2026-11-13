@@ -4,9 +4,9 @@
   "arrival": {
     "id": "rihad.arrival",
     "mapId": 9,
-    "x": 10,
-    "y": 11,
-    "direction": 8
+    "x": 345,
+    "y": 6,
+    "direction": 2
   },
   "informantEventId": 1,
   "restPointId": "MQ02.rihad.rest",
@@ -22,9 +22,9 @@
     "return": {
       "id": "rihad.outskirts.return",
       "mapId": 9,
-      "x": 17,
-      "y": 9,
-      "direction": 4
+      "x": 345,
+      "y": 6,
+      "direction": 2
     },
     "accessEventId": 4,
     "returnEventId": 1
@@ -41,9 +41,9 @@
     "exit": {
       "id": "rihad.court.exit",
       "mapId": 9,
-      "x": 10,
-      "y": 5,
-      "direction": 2
+      "x": 360,
+      "y": 381,
+      "direction": 8
     },
     "accessEventId": 5,
     "doorEventId": 6,

@@ -12,14 +12,17 @@ function build(){
  arrival.events[6]=event(6,'Porta da corte — provisória',10,3,null,'!$Arena_Doors_M14_R03');
  arrival.events[6].pages[0].priorityType=0;arrival.events[6].pages[0].through=true;
  arrival.events[6].pages[0].image.pattern=0;arrival.events[6].pages[0].walkAnime=false;
- write('data/Map009.json',arrival);
+ const cfg=read('data/ArenaRihad.json');
+ cfg.court=c;
+ require('./rihad-city-route.cjs').build(arrival,cfg,read('data/ArenaRecovery.json'));
+ fs.writeFileSync(path.join(root,'data/Map009.json'),JSON.stringify(arrival)+'\n');
  const width=17,height=13,data=Array(width*height*6).fill(0),open=(x,y)=>x>=2&&x<=14&&y>=4&&y<=11;
  for(let y=0;y<height;y++)for(let x=0;x<width;x++){data[y*width+x]=open(x,y)?1+x%2+y%2*8:open(x,y+1)?13+x%2:open(x,y+2)?5+x%2:4;data[(5*height+y)*width+x]=open(x,y)?4:1;}
  for(let y=0;y<3;y++)for(let x=0;x<3;x++)data[(height+4+y)*width+7+x]=68+x+y*8;
  const map={...read('data/Map001.json'),width,height,data,tilesetId:4,displayName:'',note:'M02-03D — corte mínima provisória. Materiais e NPC de reuso, não representação definitiva de Blubamka/palácio. Sem encontros.',encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events:[null,event(1,'Sair para Rihad',8,11,'ArenaCourt.leave(this);','',1),event(2,'Rainha Blubamka — sprite provisório',8,5,'ArenaCourt.talk(this);','$Arena_redguard_female_walk_r02')]};
  write('data/Map011.json',map);
- const infos=read('data/MapInfos.json');infos[11]={id:11,expanded:true,name:'M02-03 Corte de Rihad (provisória)',order:11,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
- const cfg=read('data/ArenaRihad.json');cfg.court=c;write('data/ArenaRihad.json',cfg);
+ const infos=read('data/MapInfos.json');infos[9].name='M02-03 Rihad — percurso urbano';infos[11]={id:11,expanded:true,name:'M02-03 Corte de Rihad (provisória)',order:11,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
+ write('data/ArenaRihad.json',cfg);
  const p=path.join(root,'data/ArenaCampaign.json'),raw=fs.readFileSync(p,'utf8'),a={id:c.areaId,questId:'MQ02',mapId:11},existing=read('data/ArenaCampaign.json').areas.find(a=>a.id===c.areaId);
  if(existing){if(JSON.stringify(existing)!==JSON.stringify(a))throw Error('Vínculo da corte divergente; preservar configuração.');}
  else fs.writeFileSync(p,raw.replace('"areas": [','"areas": [\n    '+JSON.stringify(a)+','));

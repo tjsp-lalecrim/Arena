@@ -37,14 +37,13 @@ var ArenaRihad;
  ArenaRihad={
   inform:function(i){
    var q=ArenaQuests.snapshot('MQ02'),stage=q&&q.stage||0;
-   if(stage<20)return message(i,['Você chegou a Rihad, no sul de Hammerfell.','Há um lugar de repouso na plataforma a leste.',
-    'Há ratos nos arredores, pelo acesso a leste.',
+   if(stage<20)return message(i,['Você chegou a Rihad, no sul de Hammerfell.','Há um lugar de repouso na esplanada, a leste.',
+    'Há ratos nos arredores, pela passagem ao lado do portão.',
     'Busque notícias entre os moradores antes da audiência.']);
    return message(i,['Procura notícias de Fang Lair? Pergunte na corte.','O palácio fica junto à muralha da cidade.',
-    'A entrada da corte fica ao norte da esplanada.']);
+    'Siga para o sul pelo interior da cidade até o portão da corte.']);
   },
-  arrivalNotice:function(i){return message(i,['Rihad · chegada após viagem condensada.','Esta estrada não é uma saída física da prisão.',
-   'Amostra provisória; sem retorno à prisão.']);},
+  arrivalNotice:function(i){return message(i,['Você chegou a Rihad, no sul de Hammerfell.']);},
   preview:function(){return ArenaContinuation.previewArrival($arenaRihad.arrival,true);},
   visitOutskirts:function(i){var o=$arenaRihad.outskirts;return route(i,$arenaRihad.arrival.mapId,o.accessEventId,o.entry);},
   returnToArrival:function(i){var o=$arenaRihad.outskirts;return route(i,o.entry.mapId,o.returnEventId,o.return);}
@@ -53,6 +52,19 @@ var ArenaRihad;
  Window_Message.prototype.terminateMessage=function(){terminateMessage.apply(this,arguments);if(here()||outside()){
   $gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();
  }};
+ // Map009 kept its logical ID. Recreate the map only for a serialized
+ // copy of the old esplanade, leaving quest state and current saves intact.
+ var createMap=Scene_Map.prototype.create;
+ Scene_Map.prototype.create=function(){
+  var arrival=$arenaRihad.arrival;
+  var road=here()&&$gameMap.event(3);
+  var staysInRihad=!$gamePlayer.isTransferring()||$gamePlayer.newMapId()===arrival.mapId;
+  if(road&&road.x===10&&road.y===12&&staysInRihad){
+   $gamePlayer.reserveTransfer(arrival.mapId,arrival.x,arrival.y,arrival.direction,0);
+   $gamePlayer.requestMapReload();
+  }
+  createMap.apply(this,arguments);
+ };
  var mapLoaded=Scene_Map.prototype.onMapLoaded;
  Scene_Map.prototype.onMapLoaded=function(){
   if(!$gamePlayer.isTransferring()&&here()&&!$gameMap.event($arenaRihad.outskirts.accessEventId)&&$dataMap.events[$arenaRihad.outskirts.accessEventId]){
@@ -86,9 +98,19 @@ var ArenaRihad;
   b.drawText((here()?'Rihad · Hammerfell':'Arredores de Rihad')+' — amostra provisória',18,4,b.width-36,30);
   b.fontSize=17;b.drawText('Materiais de reuso · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM, sem saves pessoais':''),18,36,b.width-36,26);
   b=this._rihadMarkers.bitmap;b.clear();b.fontSize=18;b.textColor='#ead9b5';
-  var markers=here()?[[9,7,'Informante'],[15,10,'Repouso'],[10,12,'Chegada pela estrada'],[18,9,'Arredores →',-96]]:[[2,9,'← Esplanada de Rihad']];
+  var markers=[[2,9,'Voltar a Rihad']];
+  if(here()){
+   var c=$arenaRihad;
+   var informant=$gameMap.event(c.informantEventId),rest=$gameMap.event(2);
+   var road=$gameMap.event(3),outskirts=$gameMap.event(c.outskirts.accessEventId);
+   markers=[[informant.x,informant.y,'Informante'],[rest.x,rest.y,'Repouso'],
+    [road.x,road.y,ArenaStonekeep.known()?'Estrada · Stonekeep':'Portão urbano',76],
+    [outskirts.x,outskirts.y,'Arredores',112]];
+  }
   markers.forEach(function(p){
-   var x=Math.max(8,Math.min(Graphics.boxWidth-224,$gameMap.adjustX(p[0])*48+24-108)),y=$gameMap.adjustY(p[1])*48+(p[3]||-30);
+   var px=$gameMap.adjustX(p[0])*48+24,y=$gameMap.adjustY(p[1])*48+(p[3]||-30);
+   if(px<0||px>Graphics.boxWidth||y<72||y>Graphics.boxHeight-26)return;
+   var x=Math.max(8,Math.min(Graphics.boxWidth-224,px-108));
    b.fillRect(x,y,216,26,'rgba(12,16,18,0.82)');b.drawText(p[2],x+4,y,208,26,'center');
   });
   this._rihadMarkers.visible=!$gameMessage.isBusy();

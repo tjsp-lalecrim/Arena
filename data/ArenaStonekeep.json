@@ -17,9 +17,9 @@
   "return": {
     "id": "rihad.stonekeep.return",
     "mapId": 9,
-    "x": 10,
-    "y": 11,
-    "direction": 8
+    "x": 345,
+    "y": 6,
+    "direction": 2
   },
   "source": [
     30,
