@@ -81,6 +81,10 @@
         {
           "revealAt": 90,
           "text": "Resolvi o segundo enigma e abri a porta. O primeiro fragmento do Cajado do Caos está adiante."
+        },
+        {
+          "revealAt": 100,
+          "text": "Recolhi o primeiro fragmento do Cajado do Caos em Fang Lair. Ainda preciso sair da mina com ele."
         }
       ],
       "steps": [
@@ -147,9 +151,24 @@
           "doneAt": 90,
           "text": "Descer a escada e resolver o segundo enigma.",
           "completedText": "Resolvi o segundo enigma e abri a porta."
+        },
+        {
+          "id": "fang-staff-piece",
+          "objectiveId": "fangStaffPieceRecovered",
+          "revealAt": 90,
+          "doneAt": 100,
+          "text": "Recuperar o primeiro fragmento do Cajado do Caos na sala além da porta.",
+          "completedText": "Recuperei o primeiro fragmento do Cajado do Caos."
+        },
+        {
+          "id": "fang-retaliation",
+          "revealAt": 100,
+          "doneAt": 110,
+          "text": "Sair de Fang Lair com o primeiro fragmento.",
+          "completedText": "Saí de Fang Lair com o primeiro fragmento e superei a retaliação."
         }
       ],
-      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação. Celas: FANG1.INF TEXT5–10 e wiki p3/5; tradução e escolhas adaptadas."
+      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação. Celas: FANG1.INF TEXT5–10 e wiki p3/5; tradução e escolhas adaptadas. Segundo nível e fragmento: FANG2.INF TEXT0, TEMPLATE.DAT #1371 e wiki p.4."
     }
   ]
 }

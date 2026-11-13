@@ -1,14 +1,14 @@
 /*:
- * @plugindesc v0.2.0 Fang Lair: viagem, mina, celas e aranhas condicionadas.
+ * @plugindesc v0.3.0 Fang Lair: da viagem à coleta do primeiro fragmento.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
- * ArenaFangCells.json; Map013 e Map017, da entrada ao segundo enigma.
+ * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
  */
 var ArenaFangCells;
 (function(){'use strict';var pending=false;
  DataManager._databaseFiles.push({name:'$arenaFangCells',src:'ArenaFangCells.json'});
  // Content-contract revision only. Editor/file storage and save namespace unchanged.
- if(/^https?:$/.test(location.protocol))DataManager._databaseFiles.forEach(function(f){if(f.name==='$dataItems')f.src='Items.json?arena-data=fang-gold-key-v1';});
+ if(/^https?:$/.test(location.protocol))DataManager._databaseFiles.forEach(function(f){if(f.name==='$dataItems')f.src='Items.json?arena-data=fang-staff-piece-v1';});
  function c(){return $arenaFangCells;}
  function here(){return $gameMap&&$gameMap.mapId()===c().mapId;}
  function below(){return $gameMap&&$gameMap.mapId()===c().lower.mapId;}
@@ -156,6 +156,18 @@ var ArenaFangCells;
    syncLower();
    return show(i,texts.correct);
   },
+  takeStaffPiece:function(i){
+   var staff=c().lower.staffPiece;
+   if(!lowerValid(i,staff.eventId)||!lowerDoorOpen())return false;
+   var first=q().stage===90,status=ArenaPersistence.sourceStatus(staff.sourceId);
+   if(!status.active||!status.missing&&!first)return false;
+   var ok=atomic(function(){
+    if(status.missing&&ArenaPersistence.claimSource(staff.sourceId)!=='granted')return false;
+    if(first)update(100,{fangStaffPieceRecovered:true});
+    return true;
+   });
+   return ok&&first?show(i,staff.text):ok;
+  },
   brass:function(i){return valid(i,i.eventId())?show(i,['Latão sem valor. Este objeto não é a chave dourada.']):false;},
   leave:function(i){
    if(!valid(i,1)||$gameMessage.isBusy())return false;
@@ -170,6 +182,11 @@ var ArenaFangCells;
   var problem=!cfg?'ArenaFangCells.json ausente':!a.ok?'área '+cfg.areaId+' ausente':a.config.mapId!==cfg.mapId?'mapa da área não corresponde a Map'+cfg.mapId:!s.ok?'fonte '+cfg.sourceId+' ausente':s.config.itemId!==cfg.itemId||s.config.areaId!==cfg.areaId||s.config.questId!==cfg.questId||s.config.quantity!==1?'fonte da chave não corresponde a item/área/quest/quantidade':!r.ok||r.config.kind!=='consume'||r.config.sourceId!==cfg.sourceId||r.config.questId!==cfg.questId?'recibo do portal incompatível':!$dataItems[cfg.itemId]?'item '+cfg.itemId+' ausente em Items.json':$dataItems[cfg.itemId].itypeId!==2?'item '+cfg.itemId+' não é importante':null;
   var lower=cfg&&cfg.lower,lowerArea=lower&&ArenaCampaignConfig.area(lower.areaId);
   if(!problem&&(!lowerArea||!lowerArea.ok||lowerArea.config.mapId!==lower.mapId||!$dataMapInfos[lower.mapId]))problem='vínculo do segundo nível inválido';
+  if(!problem){
+   var staff=lower.staffPiece,source=staff&&ArenaCampaignConfig.source(staff.sourceId),item=staff&&$dataItems[staff.itemId];
+   if(!source||!source.ok||source.config.questId!==cfg.questId||source.config.areaId!==lower.areaId||source.config.itemId!==staff.itemId||source.config.quantity!==1)problem='fonte do fragmento incompatível';
+   else if(!item||item.itypeId!==2||item.consumable||item.occasion!==3||item.price!==0)problem='item importante '+staff.itemId+' do fragmento inválido';
+  }
   if(problem)throw Error('Fang Lair: '+problem+'. Confira os arquivos de dados servidos e build-fang-cells.');return true;};
  // A serialized copy of the isolated crop has incompatible event coordinates.
  var createMap=Scene_Map.prototype.create;
@@ -177,6 +194,12 @@ var ArenaFangCells;
   var portal=here()&&$gameMap.event(c().riddleEventId);
   if(portal&&portal.x===33&&(!$gamePlayer.isTransferring()||$gamePlayer.newMapId()===c().mapId)){
    $gamePlayer.reserveTransfer(c().mapId,c().entry[0],c().entry[1],2,0);
+   $gamePlayer.requestMapReload();
+  }
+  // Saves of the previous Map017 contain the old event list. Reload it in place.
+  var lower=c().lower;
+  if(below()&&!$gamePlayer.isTransferring()&&!$gameMap.event(lower.staffPiece.eventId)){
+   $gamePlayer.reserveTransfer(lower.mapId,$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction(),2);
    $gamePlayer.requestMapReload();
   }
   createMap.apply(this,arguments);
@@ -201,7 +224,9 @@ var ArenaFangCells;
   function label(p,text){var x=$gameMap.adjustX(p[0])*48+24,y=$gameMap.adjustY(p[1])*48-28;if(y<75||y>b.height||x<0||x>b.width)return;b.fontSize=16;b.fillRect(Math.max(0,x-148),y,296,24,'rgba(8,14,18,.85)');b.drawText(text,Math.max(0,x-144),y,288,24,'center');}
   if(below()){
    label(c().lower.stair,'Subir para o primeiro nível');
-   label(c().lower.approach,lowerDoorOpen()?'Porta aberta':'Segundo enigma');
+   if(!lowerDoorOpen())label(c().lower.approach,'Segundo enigma');
+   var staff=c().lower.staffPiece;
+   if(lowerDoorOpen()&&ArenaPersistence.sourceStatus(staff.sourceId).missing)label(staff.position,'Primeiro fragmento · Interagir');
    return;
   }
   label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,ArenaContinuation.labActive()?'Retornar ao título':'Retornar a Rihad');label(c().limit,'Descer para o segundo nível');
