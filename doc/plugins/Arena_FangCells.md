@@ -1,5 +1,7 @@
 # Arena_FangCells 0.2.0
 
+A escada conecta Map013 e Map017. `lowerRiddle/lowerAnswer` usam a etapa 80 e o recibo anterior como precondições. A etapa 90 e `fangLowerExplored` determinam abertura, colisão e página da porta. [Segundo nível](../FANG_CELAS_M02_06A.md#segundo-nível-até-o-enigma--m02-07a).
+
 `offerTravel/travel` ligam o portão de Rihad ao Map013 após validar o recibo. O mapa mantém os IDs da amostra, com recarga no portão da mina para snapshots antigos. As páginas das aranhas usam self-switch B derivado de `fangSpidersReleased`. O perfil de encontros usa os quatro IDs existentes e o exemplar de Stonekeep. [Contrato e teste](../FANG_CELAS_M02_06A.md#entrada-e-celas-na-campanha--m02-06b-primeiro-trecho).
 
 ## Histórico da amostra 0.1.0

@@ -2,6 +2,28 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Segundo nível até o enigma — M02-07A
+
+Após abrir o primeiro portal, interaja com a escada para descer ao Map017. O recibo da chave autoriza a travessia. A escada inversa retorna ao patamar do Map013. A porta inferior abre na etapa 90 e permite pisar no batente. A próxima entrega continuará a partir dali.
+
+A planta usa o segundo `LEVL` de `42068779.MIF` e `FANG2.INF`. A textura `MSU.IMG` identifica a escada de retorno em MIF (88,98). O gatilho `TRIG 64,71,0,18` referencia TEXT0. O `LOCK 64,72,255` e a célula MAP1 `0xB013` identificam a porta. A rota selecionada percorre 51 células, contando as extremidades (88,97) e (64,71). [Planta e âncoras](mapas/FANG_NIVEL2_M02.json)
+
+O recorte espelha X e usa escala 3, margem 2 e tiles provisórios. As células registradas como `adaptedBoxes` representam volumes do MAP1 convertidos em piso caminhável na grade, incluindo a aproximação seca da porta. Lava, alas adjacentes e a sala além do batente ficaram fora do recorte. O esqueleto na posição original (86,75), `SKELETON.DFA / ITEM38`, usa patrulha, batalha e recompensas existentes. O enigma depende da resposta, sem condição de derrotar o encontro.
+
+A janela paginada usa toda a largura de leitura. As respostas do original em torno de `glove` e `gauntlet` correspondem a **Uma luva ou manopla**. As outras alternativas são adaptações para o seletor nativo. Erro e cancelamento preservam etapa 80. O acerto registra `fangLowerExplored` e avança para 90. A etapa e o objetivo persistido determinam a colisão e a aparência da porta após carregar ou retornar. O diário aponta para o fragmento.
+
+### Roteiro único no Chrome
+
+1. Após entregar o pergaminho a Blubamka, vá ao portão de Rihad e escolha **Viajar para Fang Lair**. Siga até as celas. Se for testar as aranhas na mesma sessão, escolha **Cela 1** ou **Cela 3** e confira que uma derrota é preservada ao salvar e carregar. Resolva o enigma com **Cela 2**, recolha a chave dourada e use-a no primeiro portal. [Arena local](http://127.0.0.1:8774/)
+2. Desça a escada. Suba logo em seguida para conferir o retorno ao patamar e desça novamente. Siga até a porta do segundo enigma.
+3. Escolha uma resposta incorreta, depois tente novamente e cancele. A porta deve continuar fechada nas duas tentativas. Escolha **Uma luva ou manopla**, salve em outro slot e recarregue. A porta deve permanecer aberta e o diário deve apontar para o fragmento. O batente é o limite jogável.
+
+Sete grupos passaram em Chrome isolado, incluindo a rota anterior das celas, a descida e subida, o esqueleto, erro, cancelamento, acerto, save e reentrada com a porta aberta. A vitória amostral e a caminhada foram aceleradas no teste. [Evidências](evidencias/m02-fang-segundo-enigma/resultado.json).
+
+Avaliação manual pendente. O primeiro nível cobre a entrada, o corredor adaptado, as celas, quatro aranhas condicionadas e a escada. O segundo cobre a escada, o caminho seco, um esqueleto e a porta. Faltam as demais alas e encontros aplicáveis, a sala do fragmento, os dois Hell Hounds e seus assets, a coleta do fragmento e a retaliação de Tharn. Fantasma e arte definitiva continuam registrados no inventário.
+
+## Histórico do primeiro trecho
+
 ## Entrada e celas na campanha — M02-06B, primeiro trecho
 
 Após a entrega do pergaminho, o portão de Rihad oferece **Viajar para Fang Lair**, **Viajar para Stonekeep** e **Ficar em Rihad**. Fang Lair exige a etapa 60 ou posterior e o recibo íntegro da entrega. A volta à cidade usa a entrada da mina. Map013 conserva o ID da amostra e leva até o patamar da escada. MQ02 permanece em andamento.
