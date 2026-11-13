@@ -1,0 +1,91 @@
+{
+  "base": "8b309cc",
+  "correctionApproved": "Owner explicitly authorized correcting to Minotauro and continuing, retaining all8positions",
+  "alias": "OGRE.DFA",
+  "flat": 58,
+  "itemIndex": 39,
+  "creatureID": 8,
+  "creatureIndex": 7,
+  "mapping": "itemIndex-31 = creatureID; creatureID-1 = index",
+  "creatureName": "Minotaur",
+  "animationPattern": "pat@.cfa",
+  "scales": {
+    "MinotaurIndex7": 280,
+    "OrcIndex5": 300
+  },
+  "nameOffset": "0x36DBE",
+  "animationOffset": "0x3E7FF",
+  "scaleOffset": "0x3E63A",
+  "exeSHA256": "40dfed48a66154feeda2dc33b9549570b4392874750101f264e7de25ece98a7d",
+  "unpackedSHA256": "8999c88aef7a55c7d45b0da7383457b2d81e1824509036a8f9032be80ae981ca",
+  "infPackedSHA256": "1b8842b438e37d14bc9f9abeea7ff28e629d5b279dca313daa3eee0d58bebd5c",
+  "infDecodedSHA256": "b14320bebf4d760c73f79775119d1420ea8b61d1565dc215f98b5107b208bd63",
+  "positions": [
+    [
+      24,
+      17
+    ],
+    [
+      19,
+      34
+    ],
+    [
+      25,
+      36
+    ],
+    [
+      64,
+      55
+    ],
+    [
+      64,
+      56
+    ],
+    [
+      86,
+      65
+    ],
+    [
+      86,
+      67
+    ],
+    [
+      78,
+      70
+    ]
+  ],
+  "technicalMappingSource": "OpenTESArena4f11a858f401ea23b2211e2d0485cadb58b32296 ArenaAnimUtils.cpp869-877",
+  "technicalSourceSHA256": "3902859cfaaf5e46058625613d323e058922ffd718efb493f21cc849da8a4910",
+  "originalAnimationFiles": [
+    {
+      "file": "PAT1.CFA",
+      "width": 108,
+      "height": 121,
+      "frames": 12,
+      "sha256": "e0d9c33a96e1c28f2f30f0833d724648970a59f04fb510eaaa7d6b654625ad75"
+    },
+    {
+      "file": "PAT3.CFA",
+      "width": 107,
+      "height": 93,
+      "frames": 8,
+      "sha256": "82c63b5d4158281042f0700d1acb674cdc7067a20033fae032815dbfc2a85e4a"
+    },
+    {
+      "file": "PAT5.CFA",
+      "width": 83,
+      "height": 83,
+      "frames": 8,
+      "sha256": "99db45174e0b29a9b18f9c43eeb7d96e1447f77ea0683855cb146bca312617a6"
+    },
+    {
+      "file": "PAT6.CFA",
+      "width": 111,
+      "height": 95,
+      "frames": 3,
+      "sha256": "f5f2e56e795a7b356fd74645df4d8883968e751620bf3b8c7a3ba80084844e18"
+    }
+  ],
+  "wiki": "Arena Monsters local PDF14-15",
+  "originalObservation": "Binary tables/read-only CFA decoding, not live DOS observation; unpacking reader reused, original executable never run"
+}

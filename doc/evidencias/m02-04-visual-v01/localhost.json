@@ -1,0 +1,34 @@
+{
+  "url": "http://127.0.0.1:8774/",
+  "server": "Existing project server preserved; no process started/stopped",
+  "files": [
+    {
+      "file": "data/Map012.json",
+      "status": 200,
+      "match": true,
+      "servedSha256": "b2efea67cad9eadc9e6c17adb3e336cd90de34bbc08fa8d2daa61ff8e27c9941",
+      "localSha256": "b2efea67cad9eadc9e6c17adb3e336cd90de34bbc08fa8d2daa61ff8e27c9941"
+    },
+    {
+      "file": "data/ArenaStonekeep.json",
+      "status": 200,
+      "match": true,
+      "servedSha256": "bc69a42af7b8c964f2df0f26175346ebf16bad3283f84c7786a314d2c5b11020",
+      "localSha256": "bc69a42af7b8c964f2df0f26175346ebf16bad3283f84c7786a314d2c5b11020"
+    },
+    {
+      "file": "js/plugins/Arena_Stonekeep.js",
+      "status": 200,
+      "match": true,
+      "servedSha256": "893f46bbffa768431e6197dc98ad9b7e53e752fd8fc91e3efe8bc5bf440ec062",
+      "localSha256": "893f46bbffa768431e6197dc98ad9b7e53e752fd8fc91e3efe8bc5bf440ec062"
+    },
+    {
+      "file": "img/tilesets/Arena_Shared_Castle_Stone_V01_C.png",
+      "status": 200,
+      "match": true,
+      "servedSha256": "2c88cd935b7a56ad4fcde0675ea410020c692d678f45fd2b146c596e5c3892fd",
+      "localSha256": "2c88cd935b7a56ad4fcde0675ea410020c692d678f45fd2b146c596e5c3892fd"
+    }
+  ]
+}

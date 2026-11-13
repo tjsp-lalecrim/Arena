@@ -1,0 +1,20 @@
+{
+  "version": "stonekeep-orc-v01",
+  "method": "built-in image_gen; one exemplar atlas, no variants",
+  "prompt": "Use case: stylized-concept, game sprite animation. Create ONE transparent sprite atlas, exactly 6 columns by 4 rows,24 distinct full-body drawings of one Arena1994 ORC battle exemplar. Input1 decoded ORC1.CFA = identity and overhead mace attack evidence. Input2 ORC3.CFA = lateral profile/silhouette. Input3 approved ghoul sheet = painted dark fantasy finish and evenly spaced atlas format ONLY, NOT species identity. Preserve original orc: stocky muscular humanoid, olive green face, broad angular jaw and small red eyes, simple silver-gray domed helmet with gold/brass edges framing face, silver shoulder pieces, dark blue long-sleeve tunic, crossed ochre/brass chest straps, segmented gray waist/hip protection, olive green trousers, dark blue-black boots, wooden-handled spiked metal mace in right hand and small round dark burgundy/brown shield in left. No giant tusks, horns, skull ornaments, modern Skyrim armor, axe or added equipment. Figurative painted dark fantasy, crisp readable silhouette, worn steel, muted saturated blue visible, warm olive flesh, soft upper-left light. True side-view facing RIGHT in every drawing, slight three-quarter depth allowed for shield readability; engine mirrors enemy once to face left. Same anatomy, helmet, armor, mace, shield, sizes and lighting in all frames. Grid equal cells with ample alpha gaps, raised weapon headroom, no crop, no text/grid/background/floor/drop shadows. Row1 six idle articulated breathing drawings: neutral, inhale, peak, exhale,settle,neutral, feet planted at same level. Row2 six attack drawings:guard,draw mace back,raise mace overhead bent elbow,forward-downward strike to right impact,follow-through,return guard. Mace continuously gripped, same shield stays on left forearm, no detached weapon, extra limbs or changing hands. Row3 six damage/recovery drawings:guard,recoil,peak recoil,bend recovering,straighten,guard, shield/weapon retained. Row4 six defeat drawings:knees buckle,kneel,side collapse,torso lowers,settle,stable fallen pose with shield and mace on floor baseline; no gore or dismemberment. Real articulation, not shifted/rotated copies. Shared stable support baseline in every cell, fallen body lower rather than zoomed. Atlas landscape3:2 around1536x1024, six evenly spaced columns and four rows, only this ONE exemplar, no walking or variants. Intended final cell192x128, idle figure about90pixels tall, allow headroom for mace. Truly transparent background.",
+  "references": [
+    {
+      "file": "tmp/orc-review/ORC1.CFA.png",
+      "role": "original identity and overhead mace attack"
+    },
+    {
+      "file": "tmp/orc-review/ORC3.CFA.png",
+      "role": "original lateral silhouette"
+    },
+    {
+      "file": "art/masters/stonekeep-ghoul-v01/sheet-v01.png",
+      "role": "approved finish and atlas format only"
+    }
+  ],
+  "approval": "Owner explicitly approved battle animations delivered at42b857f; no balance, rewards, walking or encounter approval inferred."
+}

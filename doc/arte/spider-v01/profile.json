@@ -1,0 +1,180 @@
+{
+  "file": "Arena_Combat_spider_v01",
+  "cell": [
+    224,
+    160
+  ],
+  "ground": 152,
+  "motions": {
+    "idle": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            0,
+            224,
+            160
+          ],
+          "duration": 26
+        },
+        {
+          "rect": [
+            224,
+            0,
+            224,
+            160
+          ],
+          "duration": 26
+        },
+        {
+          "rect": [
+            448,
+            0,
+            224,
+            160
+          ],
+          "duration": 26
+        },
+        {
+          "rect": [
+            672,
+            0,
+            224,
+            160
+          ],
+          "duration": 26
+        }
+      ],
+      "loop": true,
+      "impact": null
+    },
+    "strike": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            160,
+            224,
+            160
+          ],
+          "duration": 12
+        },
+        {
+          "rect": [
+            224,
+            160,
+            224,
+            160
+          ],
+          "duration": 10
+        },
+        {
+          "rect": [
+            448,
+            160,
+            224,
+            160
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            672,
+            160,
+            224,
+            160
+          ],
+          "duration": 10
+        }
+      ],
+      "loop": false,
+      "impact": 2
+    },
+    "hurt": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            320,
+            224,
+            160
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            224,
+            320,
+            224,
+            160
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            448,
+            320,
+            224,
+            160
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            672,
+            320,
+            224,
+            160
+          ],
+          "duration": 8
+        }
+      ],
+      "loop": false,
+      "impact": null
+    },
+    "defeat": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            480,
+            224,
+            160
+          ],
+          "duration": 14
+        },
+        {
+          "rect": [
+            224,
+            480,
+            224,
+            160
+          ],
+          "duration": 14
+        },
+        {
+          "rect": [
+            448,
+            480,
+            224,
+            160
+          ],
+          "duration": 14
+        },
+        {
+          "rect": [
+            672,
+            480,
+            224,
+            160
+          ],
+          "duration": 18
+        }
+      ],
+      "loop": false,
+      "impact": null
+    }
+  },
+  "version": "stonekeep-spider-v01",
+  "actionMotion": "strike"
+}

@@ -1,0 +1,86 @@
+{
+  "version": "stonekeep-visual-v01",
+  "tool": "image_gen built-in; export técnico Pillow",
+  "approval": {
+    "reference": "73ae86e",
+    "scope": "direção visual dos cinco materiais testados, coerência com original",
+    "limits": "não aprova assets ausentes, aplicação ampliada, autoria MV ou dispositivo não informado",
+    "status": "aprovada pelo responsável"
+  },
+  "tileSize": 48,
+  "sheetSize": [
+    384,
+    768
+  ],
+  "shoreCrop": [
+    0,
+    275,
+    2172,
+    447
+  ],
+  "shoreExport": [
+    48,
+    8
+  ],
+  "wallFace": [
+    96,
+    96
+  ],
+  "wallCap": [
+    96,
+    48
+  ],
+  "capBrightness": 0.43,
+  "masters": {
+    "brown-wall.png": {
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a674e4c2f001fb0deb88f271d1761dce4045aadbaba661789ea4b4fa85652f02"
+    },
+    "light-wall.png": {
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "7d8ef3094c05c9f10bbe8b7069e74b321b90db2253c198216f2b44412e923199"
+    },
+    "mottled-floor.png": {
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "2f2db792a8a8002952c84307b3e0548370dffd6d36c5d7071c5bb1be02818f88"
+    },
+    "pale-slabs.png": {
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "187f7418c76cc1db83fa72cafbf9249561df63ce7b8d66d50011547b60ffc25a"
+    },
+    "shore.png": {
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "5614f0122cab1ac719e0d50c836052744adaf0db3db3d34833fd7dbf4dae9050"
+    }
+  },
+  "output": {
+    "file": "img/tilesets/Arena_Shared_Castle_Stone_V01_C.png",
+    "sha256": "2c88cd935b7a56ad4fcde0675ea410020c692d678f45fd2b146c596e5c3892fd"
+  },
+  "reused": [
+    "img/tilesets/Arena_Water_M14_R02_A1.png",
+    "img/tilesets/Arena_Dungeon_M14_R03.png",
+    "img/characters/!$Arena_Ripple_M14_R02.png"
+  ],
+  "notes": [
+    "Somente pixels gerados por IA nos novos materiais; consultas originais não exportadas.",
+    "Cap derivado técnico da alvenaria, escurecido; não identificação de teto original.",
+    "Atribuição por configuração: materiais confirmados separados de superfícies e ornamentos ausentes.",
+    "Sem decoração, portas, carpete, item ou inimigo novos."
+  ]
+}

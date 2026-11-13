@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-02T12:26:31.067Z",
+  "commands": [
+    "tools\\arena-local.cmd stop",
+    "tools\\arena-local.cmd start",
+    "tools\\arena-local.cmd status"
+  ],
+  "result": "Own identified server stopped and restarted by launcher; status reused same canonical address",
+  "status": {
+    "kind": "arena-dev-server",
+    "protocolVersion": 1,
+    "root": "D:\\RPG Maker MV\\Projects\\Arena",
+    "url": "http://127.0.0.1:8774/",
+    "pid": 8980,
+    "instance": "49e1de3eee7655d48bc5d0bd",
+    "startedAt": "2026-11-02T12:25:57.425Z",
+    "noStore": true
+  }
+}

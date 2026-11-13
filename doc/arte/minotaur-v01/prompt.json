@@ -1,0 +1,21 @@
+{
+  "version": "stonekeep-minotaur-v01",
+  "tool": "image_gen built-in, one exemplar",
+  "prompt": "Use case: stylized-concept, game battle sprite animation. Create ONE transparent6columns x4rows atlas,24 full-body drawings of the SAME MINOTAUR from original Arena1994. Input1 PAT1.CFA = exact original identity/equipment/overhead attack evidence. Input2 PAT3.CFA = profile/human-body proportions. Input3 approved painted orc atlas = finish/format ONLY, never orc identity/equipment. This is the Minotaur associated with original alias OGRE.DFA, NOT an ogre, generic giant or a Minotaur from later Elder Scrolls games. Preserve original reddish dark chestnut BULL HEAD with broad black bovine muzzle, small eyes, two short pale ivory horns spreading sideways and curving gently up, visible small bovine ears, powerful golden ochre HUMAN torso/arms/legs, defined muscles and restrained skin texture, HUMAN bare feet and hands, brown simple waist band/brief loincloth. No cloven hooves/digitigrade animal legs, body fur coat, nose ring, skull ornaments, heavy armor, shield or extra equipment. One short broad gray steel CLEAVER/broad chopping blade with simple dark handle in anatomical RIGHT hand; LEFT hand free. No axe/club/two-handed sword. Original golden body is warm ochre living skin, not metallic golden armor or neon yellow. Painterly figurative dark fantasy, worn steel and muted gold/chestnut, same approved clear forms/readable silhouette and soft upper-left lighting. Robust humanoid stature, not gigantic inflated body, consistent head-to-body anatomy. All source drawings face RIGHT in true lateral side battle view with slight3/4 depth; game mirrors enemy once. Each equal cell has LARGE transparent gutters and margins, all horn/blade/feet fully contained. Body about170px tall inside256px source cells, do NOT fill cells; fallen poses compact bent legs so no adjacent silhouettes touch. Sheet1536x1024 ideal,6x4 evenly spaced. Row1 SIX idle actual breathing/weight drawings:neutral,inhale,peak,exhale,settle,neutral; feet planted. Row2 SIX cleaver attack drawings:guard,draw right hand/blade back,raise above head,down-forward strike right IMPACT,followthrough,returnguard. Keep right-hand grip/short blade anatomy connected, no swapping hands or extra limbs. Row3 SIX hurt/recovery drawings:guard,small torso recoil,peakrecoil,bent recovering,straightening,guard. Row4 SIX defeat drawings:knees weaken,kneel,curl sideways,lower torso,settle,stable fallen body with bent legs and cleaver on same baseline; no gore,dismemberment or vanishing. Preserve same anatomy/equipment sizes/colors throughout. Real articulated new drawings, not shifted or rotated static copies. Same scale and foot support line per cell, no size/camera drift. Actual transparent alpha, no text/grid/background/floor/drop shadow. Only ONE Minotaur exemplar and these4actions; NO walking,variants or other enemies in this image.",
+  "references": [
+    {
+      "file": "tmp/ogre-review/PAT1.CFA.png",
+      "role": "Original Minotaur identity/attack, not an Ogre"
+    },
+    {
+      "file": "tmp/ogre-review/PAT3.CFA.png",
+      "role": "Original lateral body/equipment"
+    },
+    {
+      "file": "art/masters/stonekeep-orc-v01/sheet-v02-spacing.png",
+      "role": "approved finish/format only"
+    }
+  ],
+  "decision": "Owner explicitly authorized correction from Ogre to Minotaur and continuation; original aliasOGRE.DFA/ITEM39 maps creatureIndex7/Minotaur/PAT@.CFA. Preserve all8positions.",
+  "approval": "Owner explicitly approved both Minotaur battle and patrol at569e382; no balance, rewards, distribution or additional environment approval inferred"
+}

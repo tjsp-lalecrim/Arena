@@ -1,0 +1,178 @@
+{
+  "base": "99203b2",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Existing hub route; six distinct floor positions, contact access, parchment/exit reachable with all thirteen guardians alive; bounded patrol without overlap",
+    "Parchment collected by native event with every guardian alive; unique collection/recovery preserved, no kill-all condition, test checkpoint restored",
+    "Synthetic pre-expansion save appends five missing events without changing character, quests, resources, inventory or receipts",
+    "Two native contacts, single participant/transition; controlled native victories mark independent defeats and grant EXP75/receipt once each, other four ghouls and all seven skeletons alive",
+    "Synthetic native Save16/F5/Load preserves independent defeats/receipts; defeated pilot and second encounter not revived; real transfer out/back before MQ02 completion does not respawn"
+  ],
+  "placement": {
+    "points": [
+      {
+        "id": "stonekeep.island.ghoul.01",
+        "eventId": 10,
+        "origin": [
+          36,
+          57
+        ],
+        "actual": [
+          36,
+          57
+        ],
+        "file": "$Arena_ghoul_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.island.ghoul.02",
+        "eventId": 11,
+        "origin": [
+          27,
+          60
+        ],
+        "actual": [
+          27,
+          60
+        ],
+        "file": "$Arena_ghoul_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.island.ghoul.03",
+        "eventId": 12,
+        "origin": [
+          12,
+          60
+        ],
+        "actual": [
+          12,
+          60
+        ],
+        "file": "$Arena_ghoul_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.island.ghoul.04",
+        "eventId": 13,
+        "origin": [
+          24,
+          66
+        ],
+        "actual": [
+          24,
+          66
+        ],
+        "file": "$Arena_ghoul_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.island.ghoul.05",
+        "eventId": 14,
+        "origin": [
+          21,
+          84
+        ],
+        "actual": [
+          21,
+          84
+        ],
+        "file": "$Arena_ghoul_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.island.ghoul.06",
+        "eventId": 15,
+        "origin": [
+          30,
+          87
+        ],
+        "actual": [
+          30,
+          87
+        ],
+        "file": "$Arena_ghoul_walk_v01",
+        "defeated": false
+      }
+    ],
+    "source": true,
+    "exit": true,
+    "contactAccess": [
+      [
+        "stonekeep.island.ghoul.01",
+        true
+      ],
+      [
+        "stonekeep.island.ghoul.02",
+        true
+      ],
+      [
+        "stonekeep.island.ghoul.03",
+        true
+      ],
+      [
+        "stonekeep.island.ghoul.04",
+        true
+      ],
+      [
+        "stonekeep.island.ghoul.05",
+        true
+      ],
+      [
+        "stonekeep.island.ghoul.06",
+        true
+      ]
+    ]
+  },
+  "patrol": [
+    [
+      "stonekeep.island.ghoul.01",
+      36,
+      59
+    ],
+    [
+      "stonekeep.island.ghoul.02",
+      27,
+      62
+    ],
+    [
+      "stonekeep.island.ghoul.03",
+      12,
+      60
+    ],
+    [
+      "stonekeep.island.ghoul.04",
+      24,
+      68
+    ],
+    [
+      "stonekeep.island.ghoul.05",
+      21,
+      84
+    ],
+    [
+      "stonekeep.island.ghoul.06",
+      30,
+      87
+    ]
+  ],
+  "defeated": [
+    "stonekeep.island.ghoul.01",
+    "stonekeep.island.ghoul.02"
+  ],
+  "expPerEnemy": 75,
+  "optionalGroupExp": 450,
+  "errors": [],
+  "missing": [],
+  "scope": "Disposable origin/context, RAM checkpoint and synthetic native slot16; two controlled native victories only, no full battle/animation replay",
+  "pending": [
+    "Manual positioning/circulation evaluation can join Stonekeep integration",
+    "M02-BAL: cumulative EXP and resource/return/rest impact",
+    "Court parchment delivery absent; assess only still-required route participants, not optional bestiary",
+    "No new MV editor/mobile test"
+  ]
+}

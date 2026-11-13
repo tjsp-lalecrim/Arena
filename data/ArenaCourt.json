@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "notReady": [
+    "Antes de tratar de Fang Lair na corte, busque orientação com o informante da esplanada e recupere suas forças."
+  ],
+  "offer": [
+    "Blubamka: Boas-vindas a Rihad. Sou a rainha Blubamka e concordo em lhe falar de Fang Lair, em troca de um favor.",
+    "Há pouco tempo, goblins liderados por Golthog the Dark atacaram esta fortaleza. Levaram muitos tesouros, inclusive um pergaminho com pistas para decifrar a parte dos Pergaminhos Ancestrais que fala da localização de Fang Lair.",
+    "Golthog e seus goblins fugiram para uma fortaleza antiga e arruinada chamada Stonekeep, fora da cidade. Temo que um grande grupo de mercenários ou soldados não consiga encontrá-los. Uma pessoa sozinha, porém, teria mais chances.",
+    "Talvez sua chegada seja oportuna. Se concordar em recuperar o pergaminho, indicarei onde fica Stonekeep. Se voltar com ele, poderei decifrar a localização de Fang Lair. Prometo dar essa informação em troca de sua ajuda. Você aceita?"
+  ],
+  "accepted": [
+    "Excelente. Stonekeep fica perto de Rihad. Tenha cuidado: Golthog é astuto e maligno. Há até rumores de que seja um necromante a serviço do Underking. Quando tiver o pergaminho, volte aqui e descobrirei a localização de Fang Lair para você.",
+    "Stonekeep é agora um destino conhecido. Viaje pela estrada ao sul da esplanada e volte à corte com o pergaminho."
+  ],
+  "decline": [
+    "Lamento que não possa ajudar agora. Se mudar de ideia, volte a perguntar sobre Fang Lair. Ficarei satisfeita com outra oportunidade de recuperar o pergaminho."
+  ],
+  "pending": [
+    "Nosso acordo continua: recupere o pergaminho em Stonekeep e volte à corte. Siga pela estrada ao sul da esplanada para viajar."
+  ],
+  "future": [
+    "A entrega do pergaminho será integrada no próximo recorte. Seu progresso foi preservado; nenhuma entrega, recompensa ou conclusão será simulada nesta versão."
+  ],
+  "delivery": {
+    "questId": "MQ02",
+    "sourceId": "stonekeep.parchment",
+    "receiptId": "MQ02.rihad.parchment",
+    "from": 50,
+    "to": 60,
+    "destination": {
+      "id": "fang.entry",
+      "areaId": "fang-lair.upper"
+    },
+    "offer": [
+      "Blubamka: Você trouxe o pergaminho de Stonekeep?"
+    ],
+    "missing": [
+      "Você ainda precisa trazer o pergaminho. Procure-o na ilha de Stonekeep e volte à corte. Nosso acordo permanece."
+    ],
+    "declined": [
+      "Guarde o pergaminho por enquanto. Quando quiser concluir nossa troca, volte a falar comigo."
+    ],
+    "delivered": [
+      "Blubamka: Você recuperou o pergaminho! Espero que também tenha enviado Golthog para uma sepultura precoce. De todo modo, cumprirei minha parte do acordo.",
+      "Blubamka chama um cortesão, que se curva e traz uma pena. Ela examina o pergaminho e indica a localização de Fang Lair, em Hammerfell.",
+      "Fang Lair é agora um destino conhecido. Sua viagem e exploração ainda não estão disponíveis nesta versão de teste."
+    ],
+    "repeat": [
+      "Nossa troca está concluída. Já lhe indiquei a localização de Fang Lair, em Hammerfell. A viagem ainda não está disponível nesta versão de teste."
+    ],
+    "blocked": [
+      "Não foi possível confirmar a entrega do pergaminho. Nenhum item ou progresso foi alterado. Volte ao título e carregue sua partida para tentar novamente."
+    ],
+    "source": "TEMPLATE.DAT #1319 (264839), #1320; wiki Fang Lair quest PDF p3 Quid Pro Quo2. Portuguese translation/condensation; location known in journal replaces original map marking. No extra reward or invented Golthog battle."
+  }
+}

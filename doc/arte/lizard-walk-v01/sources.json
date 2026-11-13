@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "file": "LIZARD1.CFA",
+      "sha256": "b52720a7e16805326999d3656b6bca876cd599cce41c1c0163dfe928d4e7e9c8",
+      "size": [
+        113,
+        127
+      ],
+      "frames": 12,
+      "consultation": "Cardinal identity/equipment only, existing RLE/MSB+palette reader; no DOS observation"
+    },
+    {
+      "file": "LIZARD2.CFA",
+      "sha256": "cac5838e84561f145603be7fdaae65980937148f6ee0e823298a0243330d86be",
+      "size": [
+        121,
+        119
+      ],
+      "frames": 8,
+      "consultation": "Cardinal identity/equipment only, existing RLE/MSB+palette reader; no DOS observation"
+    },
+    {
+      "file": "LIZARD3.CFA",
+      "sha256": "20c7c4177400470da6fa9dd80179b676b71f58e3279928c98fac1deb7a9fd3ed",
+      "size": [
+        135,
+        106
+      ],
+      "frames": 8,
+      "consultation": "Cardinal identity/equipment only, existing RLE/MSB+palette reader; no DOS observation"
+    },
+    {
+      "file": "LIZARD4.CFA",
+      "sha256": "df63becb7f6977d7fbb28f8cc00d53fb888d6330c44717890c6567092492ddee",
+      "size": [
+        135,
+        107
+      ],
+      "frames": 8,
+      "consultation": "Cardinal identity/equipment only, existing RLE/MSB+palette reader; no DOS observation"
+    },
+    {
+      "file": "LIZARD5.CFA",
+      "sha256": "44bb0a9570e3ec3d11d58f5993f74931756ffc04a742044dac8a7da7e2765062",
+      "size": [
+        107,
+        130
+      ],
+      "frames": 8,
+      "consultation": "Cardinal identity/equipment only, existing RLE/MSB+palette reader; no DOS observation"
+    }
+  ],
+  "wiki": "doc/wiki/Arena_Monsters - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+  "page": 13,
+  "references": [
+    {
+      "file": "tmp/lizard-walk-review/battle-identity.png",
+      "sha256": "69400b946e9451fec861a2c3cc5bdf492b3ee01d4ee3d8453ce9c9a9ea00c587"
+    },
+    {
+      "file": "tmp/lizard-walk-review/original-directions.png",
+      "sha256": "1b3e18cd88248627f6264daca957924d1f20042e40934e8eed6088f1e8931627"
+    }
+  ],
+  "battle": "R03 legacy available, no individual artistic approval inferred; unchanged",
+  "observation": "Original CFA/lookup/PAL read only; no new DOS gameplay observation",
+  "identity": "Enemy Lizard Man, not playable Argonian. Existing battle tail interpretation preserved; original also visibly has a tail/spines."
+}

@@ -5,6 +5,7 @@ Fonte principal de identidade visual, personagens/animações e processo de asse
 ## Regras obrigatórias de continuidade
 
 - Reaproveitar primeiro os assets aprovados; manter identidade Arena e acabamento dark fantasy. Fontes de baixa definição não autorizam fantasia genérica. Distinguir fato da fonte, interpretação e adaptação.
+- Antes de gerar materiais de uma dungeon, conferir referências visuais, recursos do original e reuso entre mapas, separando material compartilhado de composição local. Seguir o [procedimento delimitado de Stonekeep](arte/STONEKEEP_REFERENCIAS_M02_04.md#índice-técnico-de-reuso--complemento-a-6ec25fc), sem catálogo geral; vale também para um futuro levantamento realmente necessário de Imperial Dungeons, sem revisar seus assets agora.
 - Projeção conforme uso: mapa superior **ortogonal**, batalha lateral e narrativa conforme a cena. A vista de personagens de exploração deve ser compatível com a grade ortogonal; não converter objetos/cenário para isometria. Jogador de batalha à esquerda voltado à direita; inimigos no lado oposto. Não aplicar a pose dos retratos às outras categorias.
 - Padronizar por categoria escala aparente, orientação, enquadramento, linha dos olhos/pés, margens e transparência real. Distinguir tamanho de arquivo/célula de pixels ocupados e recorte/escala do consumidor. Não deformar anatomia racial para caber no contorno humano.
 - Cabeça, pescoço, tronco e olhar anatomicamente coerentes; retratos seguem a seção de pose e seu bloco fixo. Espelhamento não corrige torção entre partes do corpo.
@@ -14,6 +15,24 @@ Fonte principal de identidade visual, personagens/animações e processo de asse
 - Corrigir também a configuração/gerador que origina o resultado, sem modificar arte aprovada para contornar erro de integração.
 
 ## Estados e validação
+
+### Preparação de inimigos por dungeon — organização aprovada
+
+Ao trabalhar uma dungeon, identificar nas fontes as espécies confirmadas e registrar na matriz existente combate, caminhada, aprovações e dependências. Preparar somente os assets ausentes, **uma espécie por entrega**, aguardando avaliação antes da próxima. Quando combate e caminhada estiverem ambos ausentes, entregar os dois juntos para um único exemplar integrado, sem antecipar o grupo. Reutilizar assets aprovados entre dungeons após conferir a correspondência nas fontes; não produzir bestiário geral ou variantes sem necessidade comprovada. Após preparar as espécies da dungeon, retomar distribuição de encontros, portas e eventos. Exemplo operacional vigente: [matriz de Stonekeep](STONEKEEP_M02_04.md#matriz-operacional-de-assets--nove-espécies).
+
+Essa organização substitui para os próximos exemplares a separação automática entre piloto de batalha e caminhada. Não reabre conjuntos aprovados nem declara encontros concluídos por disponibilidade dos assets.
+
+### Ilustrações por bloco — padrão para novas gerações
+
+**Preparação obrigatória, decisão de03/11/2026:** antes de gerar imagens de uma sequência, definir e apresentar os blocos de texto/diálogo **identificados e ordenados**, com fontes e adaptações. Aguardar a orientação visual do responsável para cada bloco antes da geração correspondente. Não antecipar imagens de blocos ainda não apresentados e orientados. Depois, seguir a cadência abaixo: uma ilustração por entrega, com avaliação antes da próxima. Essa regra não reabre narrativas ou artes aprovadas.
+
+**Cadência obrigatória, decisão de02/11/2026:** implementar **uma única ilustração por entrega** e aguardar avaliação do responsável antes de produzir a próxima. Cada bloco significativo continua com sua imagem própria; dividir a produção em entregas sucessivas, sem lote antecipado mesmo após aprovação de um piloto. Referenciar o bloco e apresentar a imagem integrada. Não invalidar as artes já aprovadas nem iniciar revisão retroativa por associação. Tela de abertura tem pendência própria REF16, separada da conclusão dos mapas. **Fundo V01 de a39d71e aprovado explicitamente pelo responsável**; preservado sem regeneração. [Título vetorial separado e fontes](plugins/Arena_TitleArt.md) de901dfcb também explicitamente aprovado. Modernização futura fica na REF16, sem alterar a arte agora. Não autoriza outra imagem, proposta ou revisão retroativa.
+
+Decisão do responsável em01/11/2026: **cada bloco narrativo significativo deverá ter ilustração coerente com o conteúdo**, incluindo diálogos relevantes como a audiência de Blubamka, quando sua produção for autorizada. Antes de produzir, explicitar a correspondência entre blocos, personagens citados e imagens; frases curtas, escolhas e respostas repetitivas não exigem uma imagem nova cada uma. Antes de gerar, separar fatos sustentados pelas fontes de representações simbólicas; preservar ausência do protagonista, identidade dos personagens e acabamento dark fantasy. Imagens não podem antecipar soluções, localização exata ou informações futuras. Detalhes visuais não confirmados devem ser identificados como interpretação, não evidência do original.
+
+Planejamento dos temas da visão de Ria e critérios de aceite ficam na **REF07**, em [refinamentos](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa). A composição de tela tem fonte principal na [diretiva de navegação](DIRETIVA_DE_NAVEGACAO.md#composição-narrativa-futura). **Aplicação:** a direção visual aprovada é padrão obrigatório para novas gerações pertinentes e autorizadas, mesmo com a revisão das artes antigas adiada. Preparar composição para fundo amplo e área de leitura sem depender de molduras, conforme a diretiva de navegação. A revisão retroativa continua futura; alterar código/interface exige entrega própria. Não invalidar imagens/entregas já aprovadas, implementar mecânicas futuras ou iniciar lotes por associação. Reaproveitamento provisório aceito da visão atual permanece válido até o recorte autorizado.
+
+Visão **ad4af0e**: responsável aprovou teste funcional satisfatório e direção artística, incluindo `img/pictures/Arena_MQ02_Ria_piloto_v01.png`, versãoV01/hash no [registro](arte/MQ02_RIA_PILOTO_V01.json). A aprovação torna o piloto referência de continuidade, **não autorização para todas as variantes**. Cobertura e limites em [visão de Ria](VISAO_RIA_M02_03C.md).
 
 Aprovação estética, funcionamento técnico e cobertura são estados distintos. A direção e os arquivos anteriormente aprovados continuam preservados, inclusive suas ressalvas aceitas. M01-07 mantém recortes/orientações heterogêneos aceitos; não corrigir agora por associação. Referências e pendências: [arte/PENDENCIAS_VISUAIS_M01_07.md](arte/PENDENCIAS_VISUAIS_M01_07.md) e [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAMENTOS_POS_INTEGRACAO_M01.md). Introdução/encerramento aprovados e caminhada funcional no relato integrado de28/10/2026; escopo exato em [VALIDACAO_M01.md](VALIDACAO_M01.md#teste-integrado-informado-pelo-responsável--28102026). Isso não aprova o encaixe da arma nem todas as variantes/casos. Preservar ilustrações; melhorias futuras estão no registro único citado.
 
@@ -28,6 +47,10 @@ Fantasia medieval sombria, com acabamento de pintura digital figurativa, materia
 Adotar uma mesma linguagem pictórica para ilustrações, retratos, cenários, sprites e ícones. Variar a quantidade de detalhe conforme a escala de exibição. Ilustrações narrativas são ricas em detalhes; sprites e ícones simplificam os detalhes para manter silhueta e leitura. Não misturar pixel art, anime, cartoon e renderização 3D fotográfica entre categorias.
 
 O tom é antigo, austero e ameaçador. A sensação de perigo vem da composição, da luz, da escala e do desgaste dos materiais; não depender de escuridão excessiva ou de violência gráfica.
+
+### Cortes e personagens regionais
+
+Adaptação autorizada: substituir apresentações genéricas das cortes por personagens e ambientes coerentes com a região e, quando conhecida pelas fontes, a raça do personagem. Preservar nomes, papéis e acontecimentos originais. Antes de afirmar raça, aparência ou vestuário como canônicos, registrar a fonte localizável; cidade/província não comprova a raça de um indivíduo. Na ausência de evidência, identificar a escolha como interpretação artística, preservando continuidade entre representações. O sprite emprestado de Blubamka em M02-03D não é evidência de sua raça/traje. A aplicação visual é recorte posterior em REF07, sem refazer automaticamente os placeholders.
 
 ## Paleta-base
 
@@ -161,8 +184,8 @@ Fluxo obrigatório, inclusive para correções:
 
 1. Identificar arquivo/versão existentes, defeito observável e critério de aceitação. Conferir as diretivas, o consumidor e a referência aprovada antes de gerar.
 2. Localizar a causa: configuração, recorte, escala, âncora, camada ou integração devem ser corrigidos nessa origem; não regenerar arte para compensar erro de código. Reaproveitar o asset adequado.
-3. Se faltar conteúdo artístico, produzir **uma unidade representativa ou pequeno conjunto coerente**, com referências efetivamente fornecidas. Preservar a versão aprovada; o protótipo fica identificado como candidato.
-4. Integrar a amostra isolada e inspecionar na escala real/contexto do jogo, incluindo animação quando aplicável. Se surgir defeito recorrente, interromper a expansão e corrigir o padrão primeiro.
+3. Antes de gerar, listar o pequeno conjunto, finalidade e cobertura, separando personagem, arquitetura e ilustrações em recortes próprios. Se faltar conteúdo artístico, começar por **uma amostra representativa por novo padrão**, com referências efetivamente fornecidas; não reunir personagens, arquitetura e várias ilustrações em uma produção extensa. Preservar a versão aprovada; o protótipo fica identificado como candidato.
+4. Apresentar a amostra integrada ou em mockup na escala prevista antes de ampliar variantes; inspecionar no contexto do jogo antes da expansão, incluindo animação quando aplicável. Se surgir defeito recorrente, interromper a expansão e corrigir o padrão primeiro.
 5. Apresentar o protótipo e seus limites para avaliação. **Não iniciar o lote completo na mesma entrega que apresenta um padrão visual novo ainda não aprovado.** Aprovação do protótipo autoriza continuidade somente no escopo efetivamente aprovado, sem comprovar todas as variantes.
 6. Em entrega separada e autorizada, ampliar somente o subconjunto necessário, mantendo as referências aprovadas e os critérios. Atualizar também os geradores pertinentes e conferir que a reconstrução conserva a correção.
 
@@ -299,3 +322,7 @@ Adendo M01-10 R02 (vigente): revisão restrita ao piloto Bretã/rato, com desenh
 Adendo M01-10 R01: novas folhas de combate não herdam aprovação R05. Preservados todos os retratos/exploração e fontes aprovadas; referências laterais r02 e rato r03 fornecidas à IA para continuidade. Goblin/Lizard Man usam também sprites identificados no PDF local Arena_Monsters p.6/13, somente consulta ignorada. Manifesto, prompts integrais e pranchas em arte/COMBATE_M01_10_MANIFEST.json e COMBATE_M01_10.md. Quatro estados de três quadros exercitados no motor; gesto corporal genérico sem arma desenhada ainda não encerra a apresentação. Manter revisão de identidade/roupa/apoio; nenhuma imagem nova é promovida automaticamente a referência estética. Sem novas ilustrações narrativas ou retratos.
 
 Versão 1.6 — 26/10/2026. A direção da dungeon R02, rato R03 e Ria espectral R02 foi aprovada em25/10/2026, por arquivo/hash em arte/APROVACAO_DIRECAO_R02_R03.json. M01-06 encerrou a amostra desktop conforme arte/ENCERRAMENTO_AMOSTRA_M01_06.md. Em R05 o responsável aprovou as artes atuais de M01-07 **para prosseguir com ressalvas**, por arquivo/versão/hash em arte/APROVACAO_M01_07_COM_RESSALVAS_R05.json. Recortes e orientações heterogêneos não foram corrigidos. Não houve novas gerações/correções nesta rodada. A rodada inicial v0.1 continua histórica e rejeitada para narrativa; a aprovação atual não reabilita usos narrativos proibidos.
+
+### Identidade de inimigos nos recursos originais
+
+Nomes de arquivo INF podem ser aliases: confirmar ITEM, nome e animação correspondentes no executável antes de classificar a espécie. [Caso Stonekeep: OGRE.DFA → Minotauro](MINOTAURO_M02.md). Preservar evidência e distinguir interpretação artística; não importar aparência de outra criatura/franquia pelo nome do recurso.

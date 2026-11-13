@@ -1,5 +1,11 @@
 # Pacote web local — M01-19 R01 (29/10/2026)
 
+## Atualização M02 — perfil explícito do hub técnico
+
+O procedimento atual mantém o hub **desabilitado por padrão no pacote de jogador**, independentemente da origem. `node tools/build-web-package.cjs [diretório-da-fonte]` aplica somente `ArenaDebugHub.json.enabled=false` na saída, sem mudar a fonte. Para prévia técnica deliberada, acrescentar `--technical-preview`: saída separada com sufixo `-technical`, enabled=true e perfil explícito no manifesto. Hashes descrevem os bytes finais e o hash da configuração de origem fica registrado. `check-web-package.cjs` confere a correspondência. Saves/namespace e conteúdo dinâmico preservados. [Contrato/testes](plugins/Arena_DebugHub.md). Nenhum pacote já publicado, política RC/Pages ou tag m01 foi alterado nesta manutenção.
+
+As instruções e evidências de M01 abaixo permanecem históricas.
+
 Preparação para futura avaliação de publicação; **sem deploy, GitHub Pages, release, merge ou push**. Mesma feature/m01-19-isolamento-saves. Nenhum código de gameplay, mapa, asset, parâmetro de plugin ou namespace foi alterado nesta entrega.
 
 ## Conteúdo e identificação

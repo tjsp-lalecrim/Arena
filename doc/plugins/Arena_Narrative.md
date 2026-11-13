@@ -1,3 +1,7 @@
+## v0.3 — provedor MQ02 concreto, sem redesign M01
+
+registerChapterSequence({active,read,write,sections,finish}) aceita somente um consumidor, Arena_RiaVision. A cena usa estado/seções do provedor apenas quando ativo; state()/startCampaign()/finish() M01 continuam no namespace2 original, dados/introdução/fim preservados. Provedor usa painel sem cabeçalho e rodapé com Save/RAM, mantendo paginação por palavra, layout proporcional, entrada e fence existentes. [Regras e limites](Arena_RiaVision.md), [14 verificações focais](../VISAO_RIA_M02_03C.md). Histórico das unidades anteriores abaixo.
+
 # Arena_Narrative0.1.0 e MV_NarrativePages0.1.0
 
 Plugins próprios Codex, sem dependências externas. Ordem:30 registros existentes preservados, depois MV_NarrativePages e Arena_Narrative. Dependências reais: MV_StateStore, Arena_CharacterCreation, Arena_Quests, Arena_Dungeon/Arena_Encounters e tema Arena_BattleUI. Sem parâmetros do gerenciador; dados pt-BR/asset em data/ArenaNarrative.json, schemaVersion1. Sem vozes ou assets externos novos.

@@ -34,8 +34,9 @@ var ArenaBattle;
             this.startLab('breton','female');
             $gameTemp._arenaWeaponPilot=weaponId;
         },
-        prepare: function() {
-            if($gameMap.mapId()!==$arenaBattle.mapId || $gameParty.inBattle()) return false;
+        prepare: function(technicalMapId) {
+            var map=technicalMapId!==undefined&&window.ArenaContinuation&&ArenaContinuation.labActive()?technicalMapId:$arenaBattle.mapId;
+            if($gameMap.mapId()!==map || $gameParty.inBattle()) return false;
             var a=$gameActors.actor(1),lab=$arenaBattle.lab,weapon=$dataWeapons[lab.weaponId];if(!a.hasWeapon(weapon)&&!$gameParty.hasItem(weapon))$gameParty.gainItem(weapon,1);
             a.changeEquip(0,weapon);
             lab.additionalWeaponIds.forEach(function(id){var w=$dataWeapons[id];if(!a.hasWeapon(w)&&!$gameParty.hasItem(w))$gameParty.gainItem(w,1);});

@@ -1,0 +1,403 @@
+{
+  "version": 1,
+  "base": "dd2c3b8",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "bounds": [
+    30,
+    80,
+    59,
+    89
+  ],
+  "doors": [],
+  "entries": [
+    {
+      "id": "stonekeep.c2s.enemy.mif30.80",
+      "eventId": 526,
+      "sourceOriginal": [
+        30,
+        80
+      ],
+      "origin": [
+        180,
+        243
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif59.81",
+      "eventId": 527,
+      "sourceOriginal": [
+        59,
+        81
+      ],
+      "origin": [
+        93,
+        246
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif37.83",
+      "eventId": 528,
+      "sourceOriginal": [
+        37,
+        83
+      ],
+      "origin": [
+        159,
+        252
+      ],
+      "species": "ghoul",
+      "enemyId": 5,
+      "troopId": 6,
+      "sourceFlat": "GHOUL.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif36.84",
+      "eventId": 529,
+      "sourceOriginal": [
+        36,
+        84
+      ],
+      "origin": [
+        162,
+        255
+      ],
+      "species": "ghoul",
+      "enemyId": 5,
+      "troopId": 6,
+      "sourceFlat": "GHOUL.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif45.84",
+      "eventId": 530,
+      "sourceOriginal": [
+        45,
+        84
+      ],
+      "origin": [
+        135,
+        255
+      ],
+      "species": "lobo",
+      "enemyId": 6,
+      "troopId": 7,
+      "sourceFlat": "WOLF.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif48.84",
+      "eventId": 531,
+      "sourceOriginal": [
+        48,
+        84
+      ],
+      "origin": [
+        126,
+        255
+      ],
+      "species": "orc",
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif49.84",
+      "eventId": 532,
+      "sourceOriginal": [
+        49,
+        84
+      ],
+      "origin": [
+        123,
+        255
+      ],
+      "species": "orc",
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif44.85",
+      "eventId": 533,
+      "sourceOriginal": [
+        44,
+        85
+      ],
+      "origin": [
+        138,
+        258
+      ],
+      "species": "lobo",
+      "enemyId": 6,
+      "troopId": 7,
+      "sourceFlat": "WOLF.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif48.85",
+      "eventId": 534,
+      "sourceOriginal": [
+        48,
+        85
+      ],
+      "origin": [
+        126,
+        258
+      ],
+      "species": "orc",
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2s.enemy.mif59.85",
+      "eventId": 535,
+      "sourceOriginal": [
+        59,
+        85
+      ],
+      "origin": [
+        93,
+        258
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "points": [
+    {
+      "name": "C2 sul · aranha leste",
+      "position": [
+        180,
+        246
+      ]
+    },
+    {
+      "name": "C2 sul · aranhas oeste",
+      "position": [
+        96,
+        246
+      ]
+    },
+    {
+      "name": "C2 sul · ghouls",
+      "position": [
+        159,
+        255
+      ]
+    },
+    {
+      "name": "C2 sul · lobos e orcs",
+      "position": [
+        132,
+        255
+      ]
+    }
+  ],
+  "routes": {
+    "stonekeep.c2s.enemy.mif30.80": {
+      "steps": 141,
+      "bounds": [
+        108,
+        210,
+        180,
+        257
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif59.81": {
+      "steps": 91,
+      "bounds": [
+        79,
+        210,
+        108,
+        251
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif37.83": {
+      "steps": 111,
+      "bounds": [
+        108,
+        210,
+        159,
+        257
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif36.84": {
+      "steps": 115,
+      "bounds": [
+        108,
+        210,
+        162,
+        257
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif45.84": {
+      "steps": 80,
+      "bounds": [
+        108,
+        210,
+        135,
+        255
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif48.84": {
+      "steps": 71,
+      "bounds": [
+        108,
+        210,
+        126,
+        255
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif49.84": {
+      "steps": 68,
+      "bounds": [
+        108,
+        210,
+        123,
+        255
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif44.85": {
+      "steps": 86,
+      "bounds": [
+        108,
+        210,
+        138,
+        258
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif48.85": {
+      "steps": 74,
+      "bounds": [
+        108,
+        210,
+        126,
+        258
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2s.enemy.mif59.85": {
+      "steps": 91,
+      "bounds": [
+        93,
+        210,
+        122,
+        258
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    }
+  },
+  "locksInBand": [],
+  "triggersInBand": [
+    [
+      32,
+      81,
+      255,
+      18
+    ],
+    [
+      46,
+      81,
+      255,
+      18
+    ]
+  ],
+  "connection": "Existing C2 central/south corridors. No new geometry, doors or water, no sector transfers. No new DOS observation.",
+  "confidence": "Original MAP1/FLOR and inventory/STKEEP1.INF declarations; source coordinates mirrored then scaled3x3"
+}

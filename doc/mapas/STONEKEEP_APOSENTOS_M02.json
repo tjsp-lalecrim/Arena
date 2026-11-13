@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "mapId": 12,
+  "areaId": "stonekeep",
+  "source": "39699021.MIF MAP1; STKEEP1.INF @FLATS zero-based52 rat.dfa (ITEM32),55 wolf.dfa (ITEM35). Declared placements, not new DOS observation. Projection preserves existing crop; radius1 floor-only patrol is adaptation.",
+  "projection": "MV x=3+(89-originalX-8)*3, y=3+originalY*3; zero-based cell centres, scale3/margin2.",
+  "entries": [
+    {
+      "id": "stonekeep.apartments.rat.01",
+      "eventId": 16,
+      "enemyId": 1,
+      "troopId": 1,
+      "sourceOriginal": [
+        44,
+        11
+      ],
+      "origin": [
+        114,
+        36
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+      "questSpecific": false,
+      "radius": 1,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.apartments.rat.02",
+      "eventId": 17,
+      "enemyId": 1,
+      "troopId": 1,
+      "sourceOriginal": [
+        44,
+        12
+      ],
+      "origin": [
+        114,
+        39
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+      "questSpecific": false,
+      "radius": 1,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.apartments.rat.03",
+      "eventId": 18,
+      "enemyId": 1,
+      "troopId": 1,
+      "sourceOriginal": [
+        43,
+        13
+      ],
+      "origin": [
+        117,
+        42
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+      "questSpecific": false,
+      "radius": 1,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "deferredWolves": [
+    {
+      "sourceOriginal": [
+        52,
+        16
+      ],
+      "origin": [
+        90,
+        51
+      ]
+    },
+    {
+      "sourceOriginal": [
+        44,
+        17
+      ],
+      "origin": [
+        114,
+        54
+      ]
+    },
+    {
+      "sourceOriginal": [
+        49,
+        17
+      ],
+      "origin": [
+        99,
+        54
+      ]
+    },
+    {
+      "sourceOriginal": [
+        50,
+        17
+      ],
+      "origin": [
+        96,
+        54
+      ]
+    }
+  ],
+  "excludedOriginal": {
+    "rat": [
+      [
+        32,
+        11
+      ],
+      [
+        29,
+        13
+      ],
+      [
+        30,
+        14
+      ],
+      [
+        28,
+        16
+      ],
+      [
+        30,
+        16
+      ],
+      [
+        26,
+        17
+      ],
+      [
+        28,
+        17
+      ],
+      [
+        29,
+        21
+      ],
+      [
+        45,
+        51
+      ],
+      [
+        44,
+        52
+      ],
+      [
+        22,
+        61
+      ],
+      [
+        24,
+        61
+      ],
+      [
+        23,
+        62
+      ]
+    ],
+    "wolf": [
+      [
+        25,
+        53
+      ],
+      [
+        25,
+        54
+      ],
+      [
+        20,
+        70
+      ],
+      [
+        21,
+        71
+      ],
+      [
+        82,
+        73
+      ],
+      [
+        81,
+        74
+      ],
+      [
+        82,
+        75
+      ],
+      [
+        45,
+        84
+      ],
+      [
+        44,
+        85
+      ]
+    ]
+  }
+}

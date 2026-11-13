@@ -1,0 +1,191 @@
+{
+  "base": "8ea06c9",
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Clean hub arrival, RAM blocks slots; one Ghoul plus unchanged seven skeletons, bounded floor-only collision, parchment reachable alive",
+    "Controlled loot boundaries7/70, optional gold/gear, one basic equipment, no rare variants; other enemies resolve their unchanged tables",
+    "Native natural walking and keyboard contact, one transition/participant, no escape/canLose; normal-speed video, approved battle unchanged",
+    "One native attack reused; controlled native victory grants75 EXP, gold7/basic armor once, erases only Ghoul, no resource reset or duplicate reward",
+    "RAM plus synthetic native Save16/F5/Load retain enemy/rewards/resources; rest/early exit do not respawn, controlled completed-area exit does",
+    "All four authored directions and three native walk patterns observed with stable frames/support",
+    "Original direct battle RAM access still grants0 EXP/loot by instance without mutating campaign table"
+  ],
+  "geometry": {
+    "blocked": 272,
+    "sourceReachable": true,
+    "file": "$Arena_ghoul_walk_v01",
+    "encounters": 8
+  },
+  "rolls": {
+    "goldMin": {
+      "rows": [
+        {
+          "kind": "gold",
+          "quantity": 7,
+          "category": "gold",
+          "rare": false
+        },
+        {
+          "kind": "armor",
+          "id": 1,
+          "quantity": 1,
+          "category": "equipment",
+          "rare": false
+        }
+      ],
+      "candidates": 2,
+      "equipment": {
+        "kind": "armor",
+        "id": 1,
+        "quantity": 1,
+        "category": "equipment",
+        "rare": false
+      }
+    },
+    "goldMax": {
+      "rows": [
+        {
+          "kind": "gold",
+          "quantity": 70,
+          "category": "gold",
+          "rare": false
+        },
+        {
+          "kind": "weapon",
+          "id": 1,
+          "quantity": 1,
+          "category": "weapons",
+          "rare": false
+        }
+      ],
+      "candidates": 2,
+      "equipment": {
+        "kind": "weapon",
+        "id": 1,
+        "quantity": 1,
+        "category": "weapons",
+        "rare": false
+      }
+    },
+    "empty": {
+      "rows": [],
+      "candidates": 0,
+      "equipment": null
+    },
+    "other": true
+  },
+  "natural": {
+    "2": [
+      1,
+      2,
+      0
+    ],
+    "6": [
+      1,
+      2,
+      0
+    ],
+    "8": [
+      2,
+      1,
+      0
+    ]
+  },
+  "directions": {
+    "2": [
+      1,
+      2,
+      0
+    ],
+    "4": [
+      1,
+      2,
+      0
+    ],
+    "6": [
+      2,
+      1,
+      0
+    ],
+    "8": [
+      2,
+      1,
+      0
+    ]
+  },
+  "victory": {
+    "exp": 125,
+    "gold": 7,
+    "armor": 1,
+    "hp": 82,
+    "resources": {
+      "hp": {
+        "current": 82,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 50,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 100,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 2,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": [
+        2
+      ]
+    },
+    "receipts": 1,
+    "enemy": {
+      "areaId": "stonekeep",
+      "questSpecific": false,
+      "defeated": true,
+      "generation": 0
+    },
+    "erased": true,
+    "otherDefeated": false,
+    "storage": "{}"
+  },
+  "persistence": true,
+  "respawn": {
+    "early": {
+      "areaId": "stonekeep",
+      "questSpecific": false,
+      "defeated": true,
+      "generation": 0
+    },
+    "completed": {
+      "areaId": "stonekeep",
+      "questSpecific": false,
+      "defeated": false,
+      "generation": 1
+    }
+  },
+  "lab": {
+    "exp": 0,
+    "rows": [],
+    "campaign": 0.24
+  },
+  "errors": [],
+  "missing": [],
+  "recording": "Native canvas30fps, normal engine timing, natural patrol and keyboard contact; only later victory loot controlled, no accelerated battle replay",
+  "pending": [
+    "Owner walking/island evaluation",
+    "Campaign reward values/mapping provisional for M02-BAL",
+    "Remaining island guardians absent",
+    "No new MV editor/mobile test"
+  ]
+}

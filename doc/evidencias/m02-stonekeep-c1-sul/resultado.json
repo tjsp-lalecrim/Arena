@@ -1,0 +1,215 @@
+{
+  "base": "b8a87de",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "checks": [
+    "Clean native boot/hub,87 logical IDs, normal slots blocked; campaign Minotaur60EXP/gold25%6-60 separate from technical lab",
+    "Three inspection points route through the existing RAM hub without occupied landing tiles",
+    "Native C1 central/south circulation and access to six live encounters, return path, no through or internal transfer; existing corridors only",
+    "Six approved patrols take valid dry native steps within radius2, no source overlap/substitution; original raised blocks and other sectors untouched",
+    "Six individual keyboard contacts/correct troops/duplicate transition refused, controlled native victories/return,6 independent receipts/350EXP including provisional Spider80; repeated grants unchanged",
+    "RAM save/load reconstructs new events from pre-south array, preserves six independent defeats/receipts/old door states, quest/inventory/resources/points; area return has no respawn",
+    "Diagnostics scoped and personal storage untouched; explicit Spider reward isolation verified separately"
+  ],
+  "routes": [
+    {
+      "from": [
+        15,
+        240
+      ],
+      "to": [
+        13,
+        243
+      ],
+      "steps": 5,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false,
+      "id": "stonekeep.c1s.enemy.mif86.80"
+    },
+    {
+      "from": [
+        13,
+        243
+      ],
+      "to": [
+        14,
+        246
+      ],
+      "steps": 4,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false,
+      "id": "stonekeep.c1s.enemy.mif85.81"
+    },
+    {
+      "from": [
+        14,
+        246
+      ],
+      "to": [
+        87,
+        250
+      ],
+      "steps": 103,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false,
+      "id": "stonekeep.c1s.enemy.mif61.82"
+    },
+    {
+      "from": [
+        87,
+        250
+      ],
+      "to": [
+        46,
+        258
+      ],
+      "steps": 69,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false,
+      "id": "stonekeep.c1s.enemy.mif75.85"
+    },
+    {
+      "from": [
+        46,
+        258
+      ],
+      "to": [
+        42,
+        259
+      ],
+      "steps": 5,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false,
+      "id": "stonekeep.c1s.enemy.mif76.85"
+    },
+    {
+      "from": [
+        42,
+        259
+      ],
+      "to": [
+        44,
+        261
+      ],
+      "steps": 4,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false,
+      "id": "stonekeep.c1s.enemy.mif75.86"
+    },
+    {
+      "from": [
+        44,
+        261
+      ],
+      "to": [
+        15,
+        238
+      ],
+      "steps": 52,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        15,
+        238
+      ],
+      "to": [
+        15,
+        239
+      ],
+      "steps": 1,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false
+    }
+  ],
+  "patrol": [
+    {
+      "id": "stonekeep.c1s.enemy.mif86.80",
+      "before": [
+        12,
+        243
+      ],
+      "after": [
+        12,
+        244
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.c1s.enemy.mif85.81",
+      "before": [
+        15,
+        246
+      ],
+      "after": [
+        15,
+        247
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.c1s.enemy.mif61.82",
+      "before": [
+        87,
+        249
+      ],
+      "after": [
+        87,
+        250
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.c1s.enemy.mif75.85",
+      "before": [
+        45,
+        258
+      ],
+      "after": [
+        45,
+        259
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.c1s.enemy.mif76.85",
+      "before": [
+        42,
+        258
+      ],
+      "after": [
+        42,
+        259
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.c1s.enemy.mif75.86",
+      "before": [
+        45,
+        261
+      ],
+      "after": [
+        45,
+        262
+      ],
+      "region": 4
+    }
+  ],
+  "expAwarded": 350,
+  "encounters": 87,
+  "implementedDoors": 42,
+  "unimplementedDoors": 28,
+  "errors": [],
+  "missing": [],
+  "limits": "Isolated Chrome/RAM; native movement accelerated, victories controlled. No new DOS observation or owner dungeon validation. Unlocated door report remains pending, no inferred cause."
+}

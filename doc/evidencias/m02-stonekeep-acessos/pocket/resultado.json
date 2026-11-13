@@ -1,0 +1,195 @@
+{
+  "base": "54a1374",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "mode": "Isolated Chrome/RAM; movement accelerated, victories controlled; no full campaign or balance test",
+  "checks": [
+    "Fresh LOCK2 refused direct open; native force allows legitimate bounded route to dry corridor/pocket; native accelerated walking both directions, no through/transfers, lateral solids retained; no resource/quest/item changes",
+    "Local144x1296 cap sprite above characters, pixel-verified alpha112/255 while inside, normal outside; base tileset flags unchanged, dry/non-swimming, RAM reload under roof restores position/state",
+    "4 pocket doors x2 sides: native interaction/collision/traversal/reclose, occupied closing refused; existing anchors/assets and old doors untouched",
+    "2 goblin patrols/contact, controlled native victories/return, independent deaths/2 receipts/50EXP; duplicate reward calls unchanged, current loot tables preserved",
+    "RAM migration/return preserve states,2 receipts, unlocked LOCK2, character/resources/points/quest; no respawn/all-kills gate, normal saves blocked/localStorage untouched",
+    "Canvas fallback clean boot and overhead rendering checked separately; main run uses native default renderer"
+  ],
+  "routes": [
+    {
+      "from": [
+        153,
+        133
+      ],
+      "to": [
+        105,
+        141
+      ],
+      "steps": 56,
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "from": [
+        105,
+        141
+      ],
+      "to": [
+        102,
+        123
+      ],
+      "steps": 21,
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "from": [
+        102,
+        123
+      ],
+      "to": [
+        102,
+        147
+      ],
+      "steps": 24,
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "from": [
+        102,
+        147
+      ],
+      "to": [
+        102,
+        153
+      ],
+      "steps": 6,
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "from": [
+        102,
+        153
+      ],
+      "to": [
+        102,
+        123
+      ],
+      "steps": 30,
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "from": [
+        102,
+        123
+      ],
+      "to": [
+        105,
+        168
+      ],
+      "steps": 48,
+      "through": false,
+      "mapId": 15
+    }
+  ],
+  "roof": {
+    "alpha": 0.4392156862745098,
+    "aboveCharacters": true,
+    "size": [
+      144,
+      1296
+    ],
+    "baseFlags": 15,
+    "swimming": false
+  },
+  "webglPixels": {
+    "crop": [
+      386,
+      258,
+      430,
+      326
+    ],
+    "characterDifferenceUnderRoof": 57876,
+    "characterDifferenceWithoutRoof": 103205,
+    "ratio": 0.5607867835860666,
+    "expected": "local alpha112/255; character remains readable through roof"
+  },
+  "doors": [
+    {
+      "id": "stonekeep.access.door.mif57.52",
+      "side": -1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    },
+    {
+      "id": "stonekeep.access.door.mif57.52",
+      "side": 1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    },
+    {
+      "id": "stonekeep.access.door.mif52.53",
+      "side": -1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    },
+    {
+      "id": "stonekeep.access.door.mif52.53",
+      "side": 1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    },
+    {
+      "id": "stonekeep.access.door.mif52.56",
+      "side": -1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    },
+    {
+      "id": "stonekeep.access.door.mif52.56",
+      "side": 1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    },
+    {
+      "id": "stonekeep.access.door.mif54.56",
+      "side": -1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    },
+    {
+      "id": "stonekeep.access.door.mif54.56",
+      "side": 1,
+      "crossed": true,
+      "occupiedCloseRefused": true
+    }
+  ],
+  "patrol": [
+    {
+      "before": [
+        105,
+        165
+      ],
+      "after": [
+        105,
+        166
+      ],
+      "region": 4
+    },
+    {
+      "before": [
+        96,
+        168
+      ],
+      "after": [
+        96,
+        169
+      ],
+      "region": 4
+    }
+  ],
+  "expAwarded": 50,
+  "errors": [],
+  "missing": [],
+  "originalObservation": "No DOS traversal observation; source geometry and adaptation distinguished",
+  "manual": "Preliminary map feedback only; detailed manual validation deferred"
+}

@@ -1,0 +1,38 @@
+{
+  "original": [
+    {
+      "file": "GHOUL1.CFA",
+      "width": 101,
+      "height": 108,
+      "frames": 12,
+      "palette": "PAL.COL, own CFA lookup at76",
+      "decoded": "existing RLE/bitpacking reader, no executable observation",
+      "sha256": "d7963a48b88daacd03e9644c906f3c7471f66653cc504c192ae09aeb6612f1bf"
+    },
+    {
+      "file": "GHOUL3.CFA",
+      "width": 106,
+      "height": 104,
+      "frames": 8,
+      "palette": "PAL.COL, own CFA lookup at76",
+      "decoded": "existing RLE/bitpacking reader, no executable observation",
+      "sha256": "bfd6ae87292d96c657d76146bcfdc293e7326340776f424fd4b4e81f297db8ab"
+    },
+    {
+      "file": "GHOUL6.CFA",
+      "width": 87,
+      "height": 91,
+      "frames": 3,
+      "palette": "PAL.COL, own CFA lookup at76",
+      "decoded": "existing RLE/bitpacking reader, no executable observation",
+      "sha256": "0ad36a442bff82ad6157c748801aa44502f69eadce2be767010371bec27b9810"
+    }
+  ],
+  "palette": {
+    "file": "PAL.COL",
+    "sha256": "e2ac903f3580024ed5a50b03066786a52d48558f2a326d898693803c9044641a"
+  },
+  "manual": "Original Docs/Player Guide.pdf PDF88/printed80, viewed; original read-only",
+  "wiki": "Local Arena_Monsters PDF4-5, viewed; image crop [745,175,925,373] from render1500px, enlarged2x nearest for reference",
+  "status": "References decoded with existing reader; no original DOS execution or distributed extracted art; interpretation distinguished in GHOUL_M02.md"
+}

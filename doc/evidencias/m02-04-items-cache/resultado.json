@@ -1,0 +1,85 @@
+{
+  "browser": "156.0.8078.76",
+  "warm": {
+    "status": 200,
+    "ids": [
+      null,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "headers": {
+      "connection": "keep-alive",
+      "content-length": "2902",
+      "content-type": "application/json",
+      "date": "Sun, 01 Nov 2026 16:53:31 GMT",
+      "keep-alive": "timeout=5",
+      "last-modified": "Mon, 26 Oct 2026 16:53:30 GMT"
+    }
+  },
+  "boot": {
+    "id": 7,
+    "name": "Pergaminho de Stonekeep",
+    "itypeId": 2,
+    "diagnostics": [],
+    "resource": [
+      {
+        "url": "http://127.0.0.1:55807/data/Items.json?arena-data=stonekeep-parchment-v1",
+        "transferSize": 3725,
+        "encodedBodySize": 3425
+      }
+    ],
+    "storage": "{}"
+  },
+  "stillCached": {
+    "status": 200,
+    "ids": [
+      null,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "requests": [
+    {
+      "url": "/data/Items.json",
+      "status": 200,
+      "bytes": 2902
+    },
+    {
+      "url": "/data/Items.json?arena-data=stonekeep-parchment-v1",
+      "status": 200,
+      "bytes": 3425
+    }
+  ],
+  "collected": {
+    "count": 1,
+    "stage": 50,
+    "mq01": "{\"stage\":40,\"objectives\":{\"rubyKey\":true,\"cellDoor\":true,\"shiftGate\":true},\"completed\":true,\"receipts\":{\"MQ01.cell-door\":{\"sourceId\":\"MQ01.ruby-key\",\"itemId\":1,\"quantity\":1,\"kind\":\"consume\"}}}",
+    "storage": "{}",
+    "normalSave": false
+  },
+  "rebuild": {
+    "isolated": true,
+    "legacyIdsPreserved": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "parchment7Recreated": true,
+    "future8Preserved": true,
+    "idempotent": true,
+    "realItemsSha256": "9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746"
+  },
+  "errors": [],
+  "scope": "Real cache warmed with historical file; native boot before lab; no registry injection or personal saves. Static test server models Python Last-Modified/no Cache-Control. Rebuild only in ignored data/tools copy."
+}

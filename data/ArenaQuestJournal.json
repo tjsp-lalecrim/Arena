@@ -41,6 +41,111 @@
         }
       ],
       "source": "J10-J40 e R01/R04 em MQ01_ESPECIFICACAO.md, adaptação de apresentação pt-BR. Narrativa separada de instruções,sem alterar regras."
+    },
+    {
+      "id": "MQ02",
+      "title": "Fang Lair",
+      "narrative": [
+        {
+          "revealAt": 10,
+          "text": "Cheguei a Rihad após minha fuga. Posso recuperar as forças antes de prosseguir."
+        },
+        {
+          "revealAt": 20,
+          "text": "Ria explicou que o Cajado do Caos foi dividido em oito fragmentos. O primeiro está em Fang Lair, mas ela não sabe a localização exata."
+        },
+        {
+          "revealAt": 30,
+          "text": "Um morador indicou a corte de Rihad, junto à muralha, para buscar notícias de Fang Lair."
+        },
+        {
+          "revealAt": 40,
+          "text": "A rainha Blubamka pediu que eu recupere o pergaminho roubado pelos goblins em Stonekeep. Ele permitirá decifrar a localização de Fang Lair. Posso viajar pela estrada de Rihad."
+        },
+        {
+          "revealAt": 50,
+          "text": "Encontrei o pergaminho na ilha de Stonekeep. Devo voltar à corte de Rihad para entregá-lo a Blubamka."
+        },
+        {
+          "revealAt": 60,
+          "text": "Entreguei o pergaminho a Blubamka. Ela cumpriu o acordo e indicou a localização de Fang Lair, em Hammerfell. A viagem ainda não está disponível nesta versão de teste."
+        },
+        {
+          "revealAt": 70,
+          "text": "Resolvi o enigma do portal. A chave dourada está na Cela 2; ela abre a passagem junto às celas."
+        },
+        {
+          "revealAt": 80,
+          "text": "Usei a chave dourada e abri o portal. A escada para o nível inferior ainda não está conectada nesta amostra; minha jornada continua."
+        }
+      ],
+      "steps": [
+        {
+          "id": "ria-vision",
+          "objectiveId": "riaVision",
+          "revealAt": 10,
+          "doneAt": 20,
+          "text": "Fortalecer-me e repousar no local autorizado de Rihad.",
+          "completedText": "Ouvi a visão de Ria sobre os oito fragmentos."
+        },
+        {
+          "id": "ask-rihad",
+          "objectiveId": "askRihad",
+          "revealAt": 20,
+          "doneAt": 30,
+          "text": "Procurar informações sobre Fang Lair em Rihad.",
+          "completedText": "Recebi orientação para procurar a corte."
+        },
+        {
+          "id": "reach-court",
+          "revealAt": 30,
+          "doneAt": 40,
+          "text": "Falar com Blubamka e decidir sobre o pedido do pergaminho.",
+          "completedText": "Pedido de Blubamka aceito; Stonekeep conhecida.",
+          "objectiveId": "parchmentRequest"
+        },
+        {
+          "id": "recover-parchment",
+          "revealAt": 40,
+          "doneAt": 50,
+          "text": "Recuperar o pergaminho na ilha de Stonekeep.",
+          "completedText": "Pergaminho recuperado.",
+          "objectiveId": "parchmentRecovered"
+        },
+        {
+          "id": "return-parchment",
+          "revealAt": 50,
+          "doneAt": 60,
+          "text": "Entregar o pergaminho a Blubamka na corte de Rihad.",
+          "completedText": "Pergaminho entregue à corte.",
+          "objectiveId": "parchmentDelivered"
+        },
+        {
+          "id": "reach-fang-lair",
+          "objectiveId": "fangCellsSolved",
+          "revealAt": 60,
+          "doneAt": 70,
+          "text": "Explorar Fang Lair e resolver o enigma das celas.",
+          "completedText": "Enigma resolvido; Cela 2 aberta."
+        },
+        {
+          "id": "fang-gold-key",
+          "objectiveId": "fangPortalOpened",
+          "revealAt": 70,
+          "doneAt": 80,
+          "text": "Obter a chave dourada da Cela 2 e abrir o portal.",
+          "completedText": "Portal aberto com a chave dourada."
+        },
+        {
+          "id": "fang-lower-route",
+          "objectiveId": "fangLowerExplored",
+          "revealAt": 80,
+          "doneAt": 90,
+          "text": "Prosseguir pela escada quando o nível inferior estiver disponível.",
+          "completedText": "Alcancei a passagem do nível inferior."
+        }
+      ],
+      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação. Celas: FANG1.INF TEXT5–10 e wiki p3/5; tradução e escolhas adaptadas."
     }
   ]
 }

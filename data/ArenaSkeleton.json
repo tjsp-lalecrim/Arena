@@ -1,0 +1,200 @@
+{
+  "version": "stonekeep-skeleton-v01",
+  "enemyId": 4,
+  "troopId": 5,
+  "enemy": {
+    "name": "Esqueleto",
+    "params": [
+      45,
+      0,
+      9,
+      4,
+      0,
+      4,
+      9,
+      5
+    ],
+    "exp": 50,
+    "hit": 0.9
+  },
+  "resistance": {
+    "edgedRate": 0.5,
+    "weaponTypes": [
+      1,
+      2
+    ]
+  },
+  "lab": {
+    "mapId": 12,
+    "x": 80,
+    "y": 39,
+    "direction": 4
+  },
+  "source": "Player Guide PDF88/printed80: resistance to edged weapons; wiki Monsters18: HP25-45, EXP=HP*15+250 (625-925), loot unknown. MV EXP50 is a provisional campaign adaptation to existing rat15/goblin25/lizard50 scale, not a direct conversion or balance approval. No item/gold reward inferred. Direct battle RAM fixture alone suppresses EXP.",
+  "coverage": "seven independently persisted passage skeleton encounters at declared original positions; approved assets/actions unchanged",
+  "walk": {
+    "file": "$Arena_skeleton_walk_v01",
+    "cell": [
+      64,
+      64
+    ],
+    "ground": 62,
+    "animationWait": 10
+  },
+  "encounter": {
+    "id": "stonekeep.passage.skeleton.01",
+    "eventId": 3,
+    "origin": [
+      63,
+      9
+    ],
+    "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+    "questSpecific": false,
+    "radius": 2,
+    "interval": 90,
+    "regions": [
+      4
+    ],
+    "scale": 1,
+    "sourceOriginal": [
+      61,
+      2
+    ]
+  },
+  "patrolLab": {
+    "x": 69,
+    "y": 21,
+    "direction": 8
+  },
+  "additionalEncounters": [
+    {
+      "id": "stonekeep.passage.skeleton.02",
+      "eventId": 4,
+      "origin": [
+        60,
+        9
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "sourceOriginal": [
+        62,
+        2
+      ]
+    },
+    {
+      "id": "stonekeep.passage.skeleton.03",
+      "eventId": 5,
+      "origin": [
+        66,
+        12
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "sourceOriginal": [
+        60,
+        3
+      ]
+    },
+    {
+      "id": "stonekeep.passage.skeleton.04",
+      "eventId": 6,
+      "origin": [
+        78,
+        15
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "sourceOriginal": [
+        56,
+        4
+      ]
+    },
+    {
+      "id": "stonekeep.passage.skeleton.05",
+      "eventId": 7,
+      "origin": [
+        60,
+        15
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "sourceOriginal": [
+        62,
+        4
+      ]
+    },
+    {
+      "id": "stonekeep.passage.skeleton.06",
+      "eventId": 8,
+      "origin": [
+        78,
+        18
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "sourceOriginal": [
+        56,
+        5
+      ]
+    },
+    {
+      "id": "stonekeep.passage.skeleton.07",
+      "eventId": 9,
+      "origin": [
+        63,
+        18
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "sourceOriginal": [
+        61,
+        5
+      ]
+    }
+  ],
+  "legacyPatrol": {
+    "eventId": 3,
+    "id": "stonekeep.passage.skeleton.01",
+    "origin": [
+      75,
+      39
+    ],
+    "radius": 2
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "sources": [
+    {
+      "file": "art/masters/stonekeep-minotaur-walk-v01/sheet-v01.png",
+      "sha256": "a559602082922069e9653b5eabe928577b8609abbabee4bd18b6880ffb33a4ab"
+    },
+    {
+      "file": "art/masters/stonekeep-minotaur-walk-v01/sheet-v02-directions.png",
+      "sha256": "2dfc029dd13d00017ddac63a651f61654f841aa59b46ca1c7d32abb3c4a5318c"
+    }
+  ],
+  "output": "img/characters/$Arena_minotaur_walk_v01.png",
+  "outputSHA256": "42d457f15e7d6d8f883c8298d0af0520501a5cbebd387c86c54ab01746540495",
+  "cell": [
+    96,
+    96
+  ],
+  "ground": 94,
+  "scale": 0.19076923076923077,
+  "rows": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "frames": [
+    {
+      "direction": 2,
+      "pattern": 0,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        125,
+        41,
+        302,
+        339
+      ],
+      "axis": 88.5,
+      "placement": [
+        31,
+        37
+      ],
+      "alphaBox": [
+        31,
+        37,
+        65,
+        94
+      ],
+      "sha256": "1ac54b1266df822b69b469293789c799f11048a8ac975f31df40b7dfc7615035"
+    },
+    {
+      "direction": 2,
+      "pattern": 1,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        455,
+        39,
+        628,
+        320
+      ],
+      "axis": 88.5,
+      "placement": [
+        31,
+        40
+      ],
+      "alphaBox": [
+        31,
+        40,
+        64,
+        94
+      ],
+      "sha256": "5a005294bfd6b44c8498c8f4369fe5fb2516d252d388da341ce22252043c686f"
+    },
+    {
+      "direction": 2,
+      "pattern": 2,
+      "sourceFile": "sheet-v02-directions.png",
+      "sourceRect": [
+        783,
+        37,
+        963,
+        342
+      ],
+      "axis": 87.0,
+      "placement": [
+        31,
+        36
+      ],
+      "alphaBox": [
+        31,
+        36,
+        65,
+        94
+      ],
+      "sha256": "7f77a7cc64accaca10d7b1808fc117fa73b14a70d4a509b39d9be470aa22e650"
+    },
+    {
+      "direction": 4,
+      "pattern": 0,
+      "sourceFile": "sheet-v02-directions.png",
+      "sourceRect": [
+        126,
+        374,
+        326,
+        685
+      ],
+      "axis": 72.0,
+      "placement": [
+        34,
+        35
+      ],
+      "alphaBox": [
+        34,
+        35,
+        72,
+        94
+      ],
+      "sha256": "5f496e98c551714b9d34a6a1409d56e61336a2c4bdcb34c30e3f007c1a91f52f"
+    },
+    {
+      "direction": 4,
+      "pattern": 1,
+      "sourceFile": "sheet-v02-directions.png",
+      "sourceRect": [
+        464,
+        374,
+        616,
+        689
+      ],
+      "axis": 70.5,
+      "placement": [
+        35,
+        34
+      ],
+      "alphaBox": [
+        35,
+        34,
+        64,
+        94
+      ],
+      "sha256": "a8f4f8c2cb1147786bbe0531387802281689f7dfa5150ae9d7a95a7d1a9931ca"
+    },
+    {
+      "direction": 4,
+      "pattern": 2,
+      "sourceFile": "sheet-v02-directions.png",
+      "sourceRect": [
+        784,
+        374,
+        987,
+        684
+      ],
+      "axis": 77.0,
+      "placement": [
+        33,
+        35
+      ],
+      "alphaBox": [
+        33,
+        35,
+        72,
+        94
+      ],
+      "sha256": "9e5c2fe5c0a88642c0121e17e4f49a29f5bb7e8ee1da11a03ae6f7ce79c31539"
+    },
+    {
+      "direction": 6,
+      "pattern": 0,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        110,
+        726,
+        298,
+        1044
+      ],
+      "axis": 104.5,
+      "placement": [
+        28,
+        33
+      ],
+      "alphaBox": [
+        28,
+        33,
+        64,
+        94
+      ],
+      "sha256": "e943c73320d74d5695ff5fea4fbb1a520cd78b5d2852d31b0cfa52d7de9ab516"
+    },
+    {
+      "direction": 6,
+      "pattern": 1,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        490,
+        725,
+        614,
+        1044
+      ],
+      "axis": 71.5,
+      "placement": [
+        34,
+        33
+      ],
+      "alphaBox": [
+        34,
+        33,
+        58,
+        94
+      ],
+      "sha256": "5988f30d4f79ecb1f670721274a39b51f9d77a7b5905ba422a9210c1a594a712"
+    },
+    {
+      "direction": 6,
+      "pattern": 2,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        776,
+        725,
+        983,
+        1031
+      ],
+      "axis": 115.5,
+      "placement": [
+        26,
+        36
+      ],
+      "alphaBox": [
+        26,
+        36,
+        65,
+        94
+      ],
+      "sha256": "12b74dbb12ada6b09daf3a7663db7120677fb37998b24ff32ea22b0ff780f464"
+    },
+    {
+      "direction": 8,
+      "pattern": 0,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        130,
+        1090,
+        298,
+        1410
+      ],
+      "axis": 86.5,
+      "placement": [
+        31,
+        33
+      ],
+      "alphaBox": [
+        31,
+        33,
+        63,
+        94
+      ],
+      "sha256": "7fd7febebbecaa2f04e28e3c2d6ff0f41accf623ba8ea41fd4516f13bcd91401"
+    },
+    {
+      "direction": 8,
+      "pattern": 1,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        461,
+        1091,
+        627,
+        1390
+      ],
+      "axis": 81.5,
+      "placement": [
+        32,
+        37
+      ],
+      "alphaBox": [
+        32,
+        37,
+        64,
+        94
+      ],
+      "sha256": "646af2e0b3f18d72d88ff0a53a9d107c2afa3a412ff23cf5e26f90837bdaf2d7"
+    },
+    {
+      "direction": 8,
+      "pattern": 2,
+      "sourceFile": "sheet-v02-directions.png",
+      "sourceRect": [
+        788,
+        1088,
+        962,
+        1413
+      ],
+      "axis": 83.5,
+      "placement": [
+        32,
+        32
+      ],
+      "alphaBox": [
+        32,
+        32,
+        65,
+        94
+      ],
+      "sha256": "c30964da0a7cba690e0dd6a5287a57f290274490b0e65a47621e130b18fbb619"
+    }
+  ],
+  "approval": "Owner explicitly approved both Minotaur battle and patrol at569e382; no balance, rewards, distribution or additional environment approval inferred"
+}

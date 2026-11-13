@@ -1,0 +1,59 @@
+{
+  "version": "stonekeep-kl-v01",
+  "status": "CASK/CASL aprovadas visualmente em90ad460; aplicação nas ocorrências confirmadas do recorte existente",
+  "sheet": "Arena_Stonekeep_KL_V01_D",
+  "masters": "art/masters/stonekeep-kl-v01",
+  "patches": [
+    {
+      "id": "cask",
+      "family": "K",
+      "bounds": [
+        83,
+        89,
+        91,
+        94
+      ],
+      "offset": 0,
+      "source": "CASK.SET#0/#1; vista35–37,y29–30. Somente K; exclui painel CASK#2 de36,28.",
+      "entry": {
+        "id": "stonekeep.sample.cask",
+        "mapId": 12,
+        "x": 84,
+        "y": 93,
+        "direction": 6
+      }
+    },
+    {
+      "id": "casl",
+      "family": "L",
+      "bounds": [
+        122,
+        59,
+        130,
+        64
+      ],
+      "offset": 2,
+      "source": "CASL.SET#0/#1; vista48–50,y19–20, inclui o exemplo49,19 do levantamento. Só células L.",
+      "entry": {
+        "id": "stonekeep.sample.casl",
+        "mapId": 12,
+        "x": 129,
+        "y": 66,
+        "direction": 8
+      }
+    }
+  ],
+  "application": "confirmed-families",
+  "applicationBounds": [
+    2,
+    2,
+    139,
+    100
+  ],
+  "approval": {
+    "reference": "90ad460",
+    "environment": "editor RPG Maker MV, conforme relato do responsável",
+    "scope": "ambas amostras testadas, assets considerados bons e avanço autorizado",
+    "limits": "não estender a outros elementos ou casos/dispositivos não relatados"
+  }
+}

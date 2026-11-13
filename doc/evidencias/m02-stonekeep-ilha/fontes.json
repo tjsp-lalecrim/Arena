@@ -1,0 +1,38 @@
+{
+  "map": "39699021.MIF",
+  "mapSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "inf": "GLOBAL.BSA/STKEEP1.INF",
+  "infSha256": "1b8842b438e37d14bc9f9abeea7ff28e629d5b279dca313daa3eee0d58bebd5c",
+  "flatIndex": 60,
+  "itemAnnotation": 41,
+  "raw": "0x803c",
+  "originalPositions": [
+    [
+      70,
+      18
+    ],
+    [
+      73,
+      19
+    ],
+    [
+      78,
+      19
+    ],
+    [
+      74,
+      21
+    ],
+    [
+      75,
+      27
+    ],
+    [
+      72,
+      28
+    ]
+  ],
+  "projection": "MV x=3+(89-originalX-8)*3; y=3+originalY*3. Base zero. Same crop and layout.",
+  "scope": "Six declared MAP1 ghoul flats on the connected floor component containing the parchment. A seventh cropped flat at original(82,2)/MV(0,9) is outside this island and excluded. Reused decoded layers and INF association; original MIF hash checked. No new DOS observation or claim of original patrol paths.",
+  "adaptation": "Cell-centre projection, radius2 floor-only native patrol, interval90; no kill-all objective. Stats/rewards reused unchanged from99203b2."
+}

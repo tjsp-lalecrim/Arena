@@ -1,0 +1,300 @@
+{
+  "base": "90317c8",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "checks": [
+    "Clean native boot/hub,68 logical IDs, normal slots blocked; campaign Minotaur60EXP/gold25%6-60 separate from technical lab",
+    "Four B1 doors x2 valid sides, native Enter/open/cross/reclose; closed collision and individual switches; invalid side and occupied swing give truthful brief feedback, no invented locks",
+    "Debug distinguishes unimplemented development door from implemented closed/open/locked state, MIF/MV coordinates visible; no door is silently opened by diagnostics",
+    "Continuous B2/southern B1 and existing A2/A1 OPEN-water alternative to northern Orc room, explicitly avoiding uncertain wet volumes, both directions without through/transfer/new under-wall opening; water margins block solids, RAM inside water restores state, no resource cost",
+    "Ten approved patrols take valid dry native steps within radius2, no source overlap/substitution; original raised blocks and other sectors untouched",
+    "Ten individual keyboard contacts/correct troops/duplicate transition refused, controlled native victories/return,10 independent receipts/365 provisionalEXP; repeated grants unchanged",
+    "RAM state/event-array restoration and area return preserve defeats/receipts/doors/quests, no respawn/all-kills gate; personal slots blocked",
+    "Minotaur direct/patrol labs remain0EXP/empty loot; normal60EXP restored after title; door diagnostic hidden outside whole-map RAM, storage empty"
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.b1.door.mif72.52",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.b1.door.mif72.52",
+      "side": 1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.b1.door.mif62.53",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.b1.door.mif62.53",
+      "side": 1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.b1.door.mif68.56",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.b1.door.mif68.56",
+      "side": 1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.b1.door.mif73.56",
+      "side": -1,
+      "crossed": true
+    },
+    {
+      "id": "stonekeep.b1.door.mif73.56",
+      "side": 1,
+      "crossed": true
+    }
+  ],
+  "routes": [
+    {
+      "from": [
+        105,
+        168
+      ],
+      "to": [
+        90,
+        168
+      ],
+      "steps": 17,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        90,
+        168
+      ],
+      "to": [
+        57,
+        162
+      ],
+      "steps": 49,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        57,
+        162
+      ],
+      "to": [
+        80,
+        168
+      ],
+      "steps": 39,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        80,
+        168
+      ],
+      "to": [
+        105,
+        168
+      ],
+      "steps": 27,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        105,
+        168
+      ],
+      "to": [
+        69,
+        114
+      ],
+      "steps": 336,
+      "swimming": 100,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        69,
+        114
+      ],
+      "to": [
+        69,
+        138
+      ],
+      "steps": 24,
+      "swimming": 10,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        69,
+        138
+      ],
+      "to": [
+        70,
+        144
+      ],
+      "steps": 7,
+      "swimming": 0,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        70,
+        144
+      ],
+      "to": [
+        105,
+        168
+      ],
+      "steps": 365,
+      "swimming": 114,
+      "mapId": 15,
+      "through": false
+    }
+  ],
+  "patrol": [
+    {
+      "id": "stonekeep.b1.enemy.mif67.47",
+      "before": [
+        69,
+        144
+      ],
+      "after": [
+        69,
+        145
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif68.47",
+      "before": [
+        66,
+        144
+      ],
+      "after": [
+        66,
+        145
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif68.48",
+      "before": [
+        66,
+        147
+      ],
+      "after": [
+        66,
+        148
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif67.54",
+      "before": [
+        69,
+        165
+      ],
+      "after": [
+        69,
+        166
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif72.54",
+      "before": [
+        54,
+        165
+      ],
+      "after": [
+        54,
+        166
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif64.55",
+      "before": [
+        78,
+        168
+      ],
+      "after": [
+        78,
+        169
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif64.56",
+      "before": [
+        78,
+        171
+      ],
+      "after": [
+        78,
+        172
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif67.57",
+      "before": [
+        69,
+        174
+      ],
+      "after": [
+        69,
+        175
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif71.57",
+      "before": [
+        57,
+        174
+      ],
+      "after": [
+        57,
+        175
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b1.enemy.mif64.59",
+      "before": [
+        78,
+        180
+      ],
+      "after": [
+        78,
+        181
+      ],
+      "region": 4
+    }
+  ],
+  "expAwarded": 365,
+  "encounters": 68,
+  "implementedDoors": 36,
+  "unimplementedDoors": 34,
+  "errors": [],
+  "missing": [],
+  "limits": "Isolated Chrome/RAM; native movement accelerated, victories controlled. No new DOS observation or owner dungeon validation. Unlocated door report remains pending, no inferred cause."
+}

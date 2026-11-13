@@ -1,0 +1,208 @@
+{
+  "base": "8b309cc",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Clean boot and native hub routing; one technical Map016 specimen, scoped contract, normal slots blocked and storage empty; Map012/015/49 encounters unchanged",
+    "Four authored directions/all three native phases, normal-time controlled direction demonstration plus natural patrol; native pillar/water/radius collisions, all sampled steps on floor within radius3",
+    "Existing Guardar/Carregar RAM restores specimen coordinate, actor/resources/points/quests and scoped session without writing slots",
+    "Native keyboard contact, one transition/Minotaur, existing R03 battle retained; one attack then controlled native victory/return, only technical ID erased, one empty receipt and0 EXP/loot, repeat grant unchanged",
+    "RAM defeat/receipt persist; leaving to title removes session-only contract, normal Stonekeep configuration restored, personal storage/namespace untouched",
+    "After leaving inspection, normal Lizard Man EXP50/loot table restored; approved Orc RAM entry reloads unmodified room/event/profile, no cross-species contract leak",
+    "Approved Lizard Man RAM entry also restores its own event/profile after Minotaur/Orc sessions; no inspection cross-talk"
+  ],
+  "collision": [
+    {
+      "from": [
+        8,
+        5
+      ],
+      "direction": 4,
+      "allowed": false
+    },
+    {
+      "from": [
+        12,
+        6
+      ],
+      "direction": 6,
+      "allowed": false
+    },
+    {
+      "from": [
+        9,
+        3
+      ],
+      "direction": 8,
+      "allowed": false
+    }
+  ],
+  "alignment": [
+    {
+      "direction": 2,
+      "width": 96,
+      "height": 96,
+      "y": 474,
+      "expectedY": 474,
+      "scale": 1
+    },
+    {
+      "direction": 4,
+      "width": 96,
+      "height": 96,
+      "y": 474,
+      "expectedY": 474,
+      "scale": 1
+    },
+    {
+      "direction": 6,
+      "width": 96,
+      "height": 96,
+      "y": 474,
+      "expectedY": 474,
+      "scale": 1
+    },
+    {
+      "direction": 8,
+      "width": 96,
+      "height": 96,
+      "y": 474,
+      "expectedY": 474,
+      "scale": 1
+    }
+  ],
+  "normal": {
+    "exp": 50,
+    "loot": {
+      "gold": {
+        "chance": 0.23,
+        "min": 2,
+        "max": 20
+      },
+      "potions": {
+        "chance": 0.12,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "item",
+            "id": 2,
+            "weight": 3
+          },
+          {
+            "kind": "item",
+            "id": 3,
+            "weight": 1
+          },
+          {
+            "kind": "item",
+            "id": 4,
+            "weight": 2
+          }
+        ]
+      },
+      "gearChance": 0.25,
+      "equipment": {
+        "chance": 1,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "armor",
+            "id": 1,
+            "weight": 2
+          },
+          {
+            "kind": "armor",
+            "id": 2,
+            "weight": 1
+          }
+        ]
+      },
+      "weapons": {
+        "chance": 1,
+        "min": 1,
+        "max": 1,
+        "entries": [
+          {
+            "kind": "weapon",
+            "id": 1,
+            "weight": 2
+          },
+          {
+            "kind": "weapon",
+            "id": 2,
+            "weight": 1
+          }
+        ]
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0.02,
+          "min": 1,
+          "max": 1,
+          "entries": [
+            {
+              "kind": "item",
+              "id": 5,
+              "weight": 1
+            },
+            {
+              "kind": "item",
+              "id": 6,
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "difficulty": "medium-M01",
+      "source": "Monsters p.13: gold23%/2-20, low-quality item25%; remaining conversions provisional."
+    }
+  },
+  "directions": {
+    "2": [
+      1,
+      2,
+      0
+    ],
+    "4": [
+      1,
+      2,
+      0
+    ],
+    "6": [
+      1,
+      2,
+      0
+    ],
+    "8": [
+      2,
+      1,
+      0
+    ]
+  },
+  "patrolSamples": 217,
+  "normalStorage": "empty/disposable profile",
+  "campaignCoverage": {
+    "enemies": 49,
+    "doors": 32,
+    "orcCampaignEncounters": 0,
+    "minotaurCampaignEncounters": 0
+  },
+  "errors": [],
+  "missing": [],
+  "recording": "Native canvas30fps/normal engine speed. Four direction moves controlled then natural patrol and keyboard contact. Later victory controlled; no battle matrix repeated.",
+  "pending": [
+    "Owner walking/patrol evaluation",
+    "All8 Minotaur campaign references remain unplaced; existing rewards unchanged outside inspection",
+    "Other species preparation per matrix before distributing encounters",
+    "No full dungeon/mobile/editor tests"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Existing RAM point jumps reach C1 Minotaurs and LOCK1",
+    "Actual native locked-door choices captured; Voltar remains selected by default and cancellation leaves lock intact"
+  ]
+}

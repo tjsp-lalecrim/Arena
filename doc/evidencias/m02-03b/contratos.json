@@ -1,0 +1,12 @@
+{
+  "base": "b8738b9acaa6b8793ecbe4b823347b840db10371",
+  "checks": [
+    "Enemy15EXP/curve/gear/skills/racial adapter, loot, all rest records, Map008, narrative/E05 and web namespace files preserved",
+    "Map009 appends only access event4; geometry, arrival, informant and authorized rest event intact",
+    "Only outskirts area binding/profile changed; other area/quest/source/receipt contracts unchanged",
+    "Canonical MV UTF8/noBOM, 41 plugins; names/order/status/parameters intact, only Rihad version description updated",
+    "Syntax of touched plugins, generator and focal test scripts passed",
+    "Previous map IDs/properties preserved; Map010 appended",
+    "m01 tag unchanged"
+  ]
+}

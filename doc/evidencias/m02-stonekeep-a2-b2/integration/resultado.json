@@ -1,0 +1,668 @@
+{
+  "base": "d82d9a3",
+  "sourceBase": "55e42e4",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "environment": "Disposable headless Chrome/RAM; native traversal accelerated, native victories controlled; no full campaign/balance/art matrix",
+  "checks": [
+    "14 source-confirmed encounters, unique IDs/origins;33 old encounters and23 doors/geometry unchanged; campaign/tables/assets untouched; full parent reconstruction stable",
+    "Native bounded graph reaches14 with existing provisional openings; exactly3 northern goblins independent of unresolved LOCKs; no key/unlock silently supplied",
+    "Continuous A2->B2 north->central/west->south traversal, no transfers/through; native movement accelerated in test, patrols temporarily held to isolate topology; any inherited LOCK crossing recorded",
+    "All14 reused patrols can take legal native steps within radius2/region4, no spawn overlap",
+    "14 actual individual contacts/native controlled victories and map returns; correct troop and no escape/duplicate transition;14 independent defeats/receipts, repeated gain paths preserve EXP/gold/items",
+    "RAM serialization/restore, old array migration and area return preserve14 defeats, receipts, quest/character/resources/points/inventory/23 door states; no respawn, normal saves blocked/localStorage empty, parchment still needed"
+  ],
+  "topology": {
+    "provisional": {
+      "tiles": 6543,
+      "reachable": [
+        "stonekeep.b2.enemy.mif40.38",
+        "stonekeep.b2.enemy.mif41.39",
+        "stonekeep.b2.enemy.mif36.40",
+        "stonekeep.b2.enemy.mif47.40",
+        "stonekeep.b2.enemy.mif31.41",
+        "stonekeep.b2.enemy.mif48.41",
+        "stonekeep.b2.enemy.mif46.46",
+        "stonekeep.b2.enemy.mif48.46",
+        "stonekeep.b2.enemy.mif46.47",
+        "stonekeep.b2.enemy.mif45.51",
+        "stonekeep.b2.enemy.mif38.52",
+        "stonekeep.b2.enemy.mif44.52",
+        "stonekeep.b2.enemy.mif40.56",
+        "stonekeep.b2.enemy.mif38.58"
+      ]
+    },
+    "withoutUnresolvedLocks": {
+      "tiles": 4293,
+      "reachable": [
+        "stonekeep.b2.enemy.mif40.38",
+        "stonekeep.b2.enemy.mif41.39",
+        "stonekeep.b2.enemy.mif36.40"
+      ]
+    }
+  },
+  "traversal": [
+    {
+      "name": "A2 → B2 · ligação norte",
+      "position": [
+        150,
+        93
+      ],
+      "from": [
+        126,
+        54
+      ],
+      "to": [
+        150,
+        93
+      ],
+      "steps": 63,
+      "crossedUnresolvedLocks": [],
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "name": "B2 · aposentos centrais",
+      "position": [
+        150,
+        120
+      ],
+      "from": [
+        150,
+        93
+      ],
+      "to": [
+        150,
+        120
+      ],
+      "steps": 31,
+      "crossedUnresolvedLocks": [],
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "name": "B2 · oeste (acesso provisório)",
+      "position": [
+        123,
+        129
+      ],
+      "from": [
+        150,
+        120
+      ],
+      "to": [
+        123,
+        129
+      ],
+      "steps": 66,
+      "crossedUnresolvedLocks": [
+        "39,44"
+      ],
+      "through": false,
+      "mapId": 15
+    },
+    {
+      "name": "B2 · sul (acesso provisório)",
+      "position": [
+        150,
+        174
+      ],
+      "from": [
+        123,
+        129
+      ],
+      "to": [
+        150,
+        174
+      ],
+      "steps": 72,
+      "crossedUnresolvedLocks": [],
+      "through": false,
+      "mapId": 15
+    }
+  ],
+  "patrol": [
+    {
+      "id": "stonekeep.b2.enemy.mif40.38",
+      "before": [
+        150,
+        117
+      ],
+      "after": [
+        150,
+        118
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif41.39",
+      "before": [
+        147,
+        120
+      ],
+      "after": [
+        147,
+        121
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif36.40",
+      "before": [
+        162,
+        123
+      ],
+      "after": [
+        162,
+        124
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif47.40",
+      "before": [
+        129,
+        123
+      ],
+      "after": [
+        129,
+        124
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif31.41",
+      "before": [
+        177,
+        126
+      ],
+      "after": [
+        177,
+        127
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif48.41",
+      "before": [
+        126,
+        126
+      ],
+      "after": [
+        126,
+        127
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif46.46",
+      "before": [
+        132,
+        141
+      ],
+      "after": [
+        132,
+        142
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif48.46",
+      "before": [
+        126,
+        141
+      ],
+      "after": [
+        126,
+        142
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif46.47",
+      "before": [
+        132,
+        144
+      ],
+      "after": [
+        132,
+        145
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif45.51",
+      "before": [
+        135,
+        156
+      ],
+      "after": [
+        135,
+        157
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif38.52",
+      "before": [
+        156,
+        159
+      ],
+      "after": [
+        156,
+        160
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif44.52",
+      "before": [
+        138,
+        159
+      ],
+      "after": [
+        138,
+        160
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif40.56",
+      "before": [
+        150,
+        171
+      ],
+      "after": [
+        150,
+        172
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif38.58",
+      "before": [
+        156,
+        177
+      ],
+      "after": [
+        156,
+        178
+      ],
+      "region": 4
+    }
+  ],
+  "expAwarded": 355,
+  "defeated": 14,
+  "errors": [],
+  "missing": [],
+  "manual": "Deferred, no approval inferred",
+  "limitations": [
+    {
+      "sourceOriginal": [
+        51,
+        15
+      ],
+      "view": [
+        38,
+        15
+      ],
+      "center": [
+        117,
+        48
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        51,
+        19
+      ],
+      "view": [
+        38,
+        19
+      ],
+      "center": [
+        117,
+        60
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        54,
+        19
+      ],
+      "view": [
+        35,
+        19
+      ],
+      "center": [
+        108,
+        60
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        39,
+        44
+      ],
+      "view": [
+        50,
+        44
+      ],
+      "center": [
+        153,
+        135
+      ],
+      "axis": "north-south",
+      "raw": 45073,
+      "texture": "DCAS6.IMG",
+      "lockValue": 2,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        39,
+        49
+      ],
+      "view": [
+        50,
+        49
+      ],
+      "center": [
+        153,
+        150
+      ],
+      "axis": "north-south",
+      "raw": 45073,
+      "texture": "DCAS6.IMG",
+      "lockValue": 3,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        57,
+        52
+      ],
+      "view": [
+        32,
+        52
+      ],
+      "center": [
+        99,
+        159
+      ],
+      "axis": "east-west",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        52,
+        53
+      ],
+      "view": [
+        37,
+        53
+      ],
+      "center": [
+        114,
+        162
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        52,
+        56
+      ],
+      "view": [
+        37,
+        56
+      ],
+      "center": [
+        114,
+        171
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        54,
+        56
+      ],
+      "view": [
+        35,
+        56
+      ],
+      "center": [
+        108,
+        171
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        48,
+        37
+      ],
+      "view": [
+        41,
+        37
+      ],
+      "origin": [
+        126,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        49,
+        37
+      ],
+      "view": [
+        40,
+        37
+      ],
+      "origin": [
+        123,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        50,
+        37
+      ],
+      "view": [
+        39,
+        37
+      ],
+      "origin": [
+        120,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        37
+      ],
+      "view": [
+        31,
+        37
+      ],
+      "origin": [
+        96,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        38
+      ],
+      "view": [
+        31,
+        38
+      ],
+      "origin": [
+        96,
+        117
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        34,
+        46
+      ],
+      "view": [
+        55,
+        46
+      ],
+      "origin": [
+        168,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        43,
+        46
+      ],
+      "view": [
+        46,
+        46
+      ],
+      "origin": [
+        141,
+        141
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        44,
+        46
+      ],
+      "view": [
+        45,
+        46
+      ],
+      "origin": [
+        138,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        34,
+        47
+      ],
+      "view": [
+        55,
+        47
+      ],
+      "origin": [
+        168,
+        144
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Species exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        55,
+        54
+      ],
+      "view": [
+        34,
+        54
+      ],
+      "origin": [
+        105,
+        165
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "dependency": "Disconnected conservative pocket; no new passage inferred"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        55
+      ],
+      "view": [
+        31,
+        55
+      ],
+      "origin": [
+        96,
+        168
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "dependency": "Disconnected conservative pocket; no new passage inferred"
+    }
+  ]
+}

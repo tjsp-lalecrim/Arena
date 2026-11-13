@@ -1,0 +1,166 @@
+/*:
+ * @plugindesc v0.2.0 Stonekeep integral: campanha no Map015 e inspeção RAM.
+ * @author Codex
+ * @help Após Stonekeep, Encounters, DebugHub e RuntimeProof. Map015/ArenaStonekeepWhole.json.
+ * Usa IDs lógicos e mecanismos existentes; slots pessoais bloqueados pelo laboratório.
+ * Sem alterações de motor, recompensas, carga sintética ou transições internas.
+ */
+var ArenaStonekeepWhole;
+(function(){'use strict';var pending=false;
+ DataManager._databaseFiles.push({name:'$arenaStonekeepWhole',src:'ArenaStonekeepWhole.json'});
+ function c(){return $arenaStonekeepWhole;}
+ function active(){return !!($gameSystem&&$gameSystem._arenaStonekeepWholeSession&&ArenaContinuation.labActive());}
+ function campaign(){return ArenaNarrative.isCampaign()&&!ArenaContinuation.labActive();}
+ function useWholeMap(){return active()||campaign();}
+ function here(){return $gameMap&&$gameMap.mapId()===c().mapId&&useWholeMap();}
+ function neutral(){Input.clear();TouchInput.clear();$gameTemp.clearDestination();$gameTemp._arenaNarrativeFence={until:Date.now()+180};}
+ function transfer(){
+  if(!ArenaContinuation.labActive()||$gameParty.inBattle()||$gamePlayer.isTransferring()||$gameMessage.isBusy()||$gameMap.mapId()!==$arenaStonekeep.mapId)return false;
+  var x=$gamePlayer.x+c().coordinates.delta[0],y=$gamePlayer.y+c().coordinates.delta[1],direction=$gamePlayer.direction();
+  $gameSystem._arenaStonekeepWholeSession=true;neutral();$gamePlayer.reserveTransfer(c().mapId,x,y,direction,0);return true;
+ }
+ ArenaStonekeepWhole={active:active,here:here,
+  preview:function(){if(!ArenaStonekeep.preview())return false;pending=true;return true;},
+  transferFromSample:transfer,
+  jump:function(i){if(!active()||!here()||$gameParty.inBattle()||$gameMessage.isBusy()||!c().points[i])return false;var p=c().points[i].position;if([4,5].indexOf($gameMap.regionId(p[0],p[1]))<0||$gameMap.eventsXyNt(p[0],p[1]).some(function(e){return e.isNormalPriority();}))return false;neutral();$gamePlayer.locate(p[0],p[1]);$gamePlayer.center(p[0],p[1]);$gamePlayer.refreshBushDepth();return true;}
+ };
+ // Bounded sector consumers, preserving the existing B1 API and native mechanisms.
+ function interactSectorDoor(id,ids){
+  if(!here()||$gameParty.inBattle()||$gamePlayer.isTransferring()||$gameMessage.isBusy()||ids.indexOf(id)<0)return false;
+  var d=ArenaDungeon.door(id),dx=Math.abs($gamePlayer.x-d.center[0]),dy=Math.abs($gamePlayer.y-d.center[1]),valid=d.axis==='east-west'?dx===2&&dy<=1:dy===2&&dx<=1;
+  if(!valid){$gameMessage.add('Aproxime-se pelo lado do vão da porta.');return false;}
+  if($gameMap._arenaDoorTransitions&&$gameMap._arenaDoorTransitions[id]){$gameMessage.add('Aguarde a porta terminar de se mover.');return false;}
+  if(d.lockValue!==null&&!ArenaStonekeepAccess.isUnlocked(id))return ArenaStonekeepAccess.interactDoor(id);
+  var result=ArenaDungeon.toggleDoor(id);if(!result)$gameMessage.add('O vão ou a área de movimento da porta está ocupado.');return result;
+ };
+ ArenaStonekeepWhole.interactB1Door=function(id){return interactSectorDoor(id,c().b1?c().b1.doorIds:[]);};
+ ArenaStonekeepWhole.interactC1Door=function(id){return interactSectorDoor(id,c().c1North?c().c1North.doorIds:[]);};
+ ArenaStonekeepWhole.interactC2Door=function(id){return interactSectorDoor(id,c().c2North?c().c2North.doorIds:[]);};
+ ArenaStonekeepWhole.interactEasternDoor=function(id){return interactSectorDoor(id,c().easternWings.doorIds);};
+ ArenaStonekeepWhole.doorDiagnostic=function(){
+  if(!active()||!here()||!c().doorReferences)return null;var nearest=null,distance=5;
+  c().doorReferences.forEach(function(v){var d=Math.abs($gamePlayer.x-v.center[0])+Math.abs($gamePlayer.y-v.center[1]);if(d<distance){distance=d;nearest=v;}});
+  if(!nearest)return null;var door=c().doors.filter(function(d){return d.sourceOriginal.join(',')===nearest.sourceOriginal.join(',');})[0],status;
+  if(!door)status='não implementada · pendência de desenvolvimento';
+  else if(door.lockValue!==null&&!$gameSelfSwitches.value([15,door.eventIds[0],'B']))status='implementada · trancada: Forçar a porta / Voltar';
+  else if($gameMap._arenaDoorTransitions&&$gameMap._arenaDoorTransitions[door.id])status='implementada · em movimento';
+  else status='implementada · '+($gameSelfSwitches.value([15,door.eventIds[0],'A'])?'aberta':'fechada');
+  return {original:nearest.sourceOriginal,world:nearest.center,implemented:!!door,status:status,text:'Porta MIF('+nearest.sourceOriginal.join(',')+') / MV('+nearest.center.join(',')+') · '+status};
+ };
+ var createWindows=Scene_Map.prototype.createAllWindows;
+ Scene_Map.prototype.createAllWindows=function(){createWindows.apply(this,arguments);var w=this._stonekeepDoorInfo=new Window_Base(8,72,Graphics.boxWidth-16,72);w.contents.fontSize=16;w.hide();this.addWindow(w);};
+ var updateDoorInfo=Scene_Map.prototype.update;
+ Scene_Map.prototype.update=function(){updateDoorInfo.apply(this,arguments);var w=this._stonekeepDoorInfo;if(!w)return;var info=ArenaStonekeepWhole.doorDiagnostic();w.visible=!!info&&!$gameMessage.isBusy();if(w.visible&&w._key!==info.text){w._key=info.text;w.contents.clear();w.contents.drawText(info.text,0,0,w.contentsWidth(),28);}};
+ // The registry retains the authored crop for regeneration and older labs.
+ // Resolve the same logical area to its full map in the campaign.
+ var configuration=ArenaStonekeep.configuration;
+ ArenaStonekeep.configuration=function(){return useWholeMap()?c().context:configuration.apply(this,arguments);};
+ var area=ArenaCampaignConfig.area,forMap=ArenaCampaignConfig.forMap,encounters=ArenaCampaignConfig.encounters;
+ ArenaCampaignConfig.area=function(id){
+  var result=area.apply(this,arguments);
+  if(id!==c().areaId||!result.ok||!useWholeMap())return result;
+  return {ok:true,config:Object.assign({},result.config,{mapId:c().mapId,encounters:c().encounters})};
+ };
+ ArenaCampaignConfig.forMap=function(mapId){
+  return mapId===c().mapId&&useWholeMap()?ArenaCampaignConfig.area(c().areaId):forMap.apply(this,arguments);
+ };
+ ArenaCampaignConfig.encounters=function(areaId){
+  if(areaId===c().areaId&&useWholeMap()&&$gameMap.mapId()!==c().coordinates.oldMapId)
+   return {ok:true,config:c().encounters};
+  return encounters.apply(this,arguments);
+ };
+ // Load the rebased map before MV creates sprites. A new door or event can
+ // occupy a legacy tile, so validate the translated position on Map015.
+ var createMap=Scene_Map.prototype.create;
+ Scene_Map.prototype.create=function(){
+  if(campaign()){
+   var transferring=$gamePlayer.isTransferring(),target=transferring?$gamePlayer.newMapId():$gameMap.mapId();
+   if(target===c().coordinates.oldMapId){
+    var delta=c().coordinates.delta;
+    this._stonekeepRebase=true;
+    $gamePlayer.reserveTransfer(c().mapId,
+     (transferring?$gamePlayer._newX:$gamePlayer.x)+delta[0],
+     (transferring?$gamePlayer._newY:$gamePlayer.y)+delta[1],
+     (transferring?$gamePlayer._newDirection:$gamePlayer.direction())||$gamePlayer.direction(),0);
+   }
+  }
+  createMap.apply(this,arguments);
+ };
+ var onExit=ArenaEncounters.onExit;
+ ArenaEncounters.onExit=function(areaId){
+  // Rebase of the same physical area is not an exit/respawn opportunity.
+  if(useWholeMap()&&areaId===c().areaId&&$gameMap.mapId()===c().coordinates.oldMapId&&$gamePlayer.isTransferring()&&$gamePlayer._newMapId===c().mapId)return false;
+  return onExit.apply(this,arguments);
+ };
+ var loaded=DataManager.isDatabaseLoaded,registered=false;
+ DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!registered){
+  var cfg=c(),original=ArenaCampaignConfig.encounters('stonekeep');
+  if(!cfg||cfg.version!==1||cfg.mapId!==15||!$dataMapInfos[15]||cfg.context.mapId!==15||cfg.context.sourceId!==$arenaStonekeep.sourceId||!original.ok||JSON.stringify(cfg.encounters.entries.slice(0,original.config.entries.length).map(function(e){return e.id;}))!==JSON.stringify(original.config.entries.map(function(e){return e.id;})))throw Error('Stonekeep integral: vínculos de mapa/fonte/encontros inválidos. Reconstrua build-stonekeep-whole.');
+  ArenaDungeon.registerSwimming(cfg.mapId,cfg.context.swimming);ArenaDungeon.registerDoors(cfg.mapId,{mapId:cfg.mapId,doors:cfg.doors,doorAnimationFrames:cfg.doorAnimationFrames});registered=true;
+ }return true;};
+ ArenaStonekeepWhole.collectTreasure=function(interpreter){
+  if(!here()||!(interpreter instanceof Game_Interpreter)||interpreter._mapId!==c().mapId||
+     $gameParty.inBattle()||$gamePlayer.isTransferring()||$gameMessage.isBusy())return false;
+  var point=c().treasures.find(function(t){return t.eventId===interpreter.eventId();});
+  var event=point&&$gameMap.event(point.eventId);
+  if(!event||event._erased||$gameMap.distance(event.x,event.y,$gamePlayer.x,$gamePlayer.y)>1||
+     ArenaLoot.snapshot().receipts['container/'+point.id])return false;
+  var table=$arenaLoot.enemies[String($arenaQuests.treasureTableEnemyId)];
+  var result=ArenaLoot.claimContainer(point.id,table,$arenaQuests.treasureFallbackGold);
+  event.erase();
+  $gameMessage.add('Tesouro coletado.');
+  result.received.forEach(function(row){
+   var item=row.kind==='gold'?null:ArenaInventory.resolve(row);
+   $gameMessage.add((item?item.name:'Ouro')+' ×'+row.quantity);
+  });
+  if(result.pending.length)$gameMessage.add('Reserva salva para quando houver espaço.');
+  return true;
+ };
+ var onMapLoaded=Scene_Map.prototype.onMapLoaded;
+ Scene_Map.prototype.onMapLoaded=function(){
+  if(this._stonekeepRebase){
+   var x=$gamePlayer._newX,y=$gamePlayer._newY,map=$dataMap;
+   var region=map.data[(5*map.height+y)*map.width+x];
+   var occupied=map.events.some(function(e){
+    return e&&e.x===x&&e.y===y&&e.pages.some(function(page){return page.priorityType===1&&!page.through;});
+   });
+   if(x<0||x>=map.width||y<0||y>=map.height||[4,5].indexOf(region)<0||occupied){
+    var entry=c().context.entry;
+    $gamePlayer.reserveTransfer(entry.mapId,entry.x,entry.y,entry.direction,0);
+   }
+  }
+  if(here()&&!$gamePlayer.isTransferring()){
+   c().doors.forEach(function(d){d.eventIds.forEach(function(id){
+    if(!$gameMap.event(id))$gameMap._events[id]=new Game_Event(c().mapId,id);
+   });});
+   var receipts=ArenaLoot.snapshot().receipts;
+   c().treasures.forEach(function(t){
+    if(!$gameMap.event(t.eventId))$gameMap._events[t.eventId]=new Game_Event(c().mapId,t.eventId);
+    if(receipts['container/'+t.id])$gameMap.event(t.eventId).erase();
+   });
+  }
+  onMapLoaded.apply(this,arguments);
+ };
+ var setup=Game_Map.prototype.setup;
+ Game_Map.prototype.setup=function(mapId){
+  setup.apply(this,arguments);
+  if(!here())return;
+  var receipts=ArenaLoot.snapshot().receipts;
+  c().treasures.forEach(function(t){if(receipts['container/'+t.id])$gameMap.event(t.eventId).erase();});
+ };
+ var start=Scene_Map.prototype.start;
+ Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===$arenaStonekeep.return.mapId&&!$gamePlayer.isTransferring()){
+  pending=false;$gameSystem._arenaStonekeepWholeSession=true;var d=c().context.entry;neutral();$gamePlayer.reserveTransfer(d.mapId,d.x,d.y,d.direction,0);
+ }};
+ function Commands(){this.initialize.apply(this,arguments);}Commands.prototype=Object.create(Window_Command.prototype);Commands.prototype.constructor=Commands;
+ Commands.prototype.windowWidth=function(){return Graphics.boxWidth-32;};Commands.prototype.windowHeight=function(){return Graphics.boxHeight-104;};Commands.prototype.standardFontSize=function(){return 20;};Commands.prototype.itemHeight=function(){return 32;};
+ Commands.prototype.makeCommandList=function(){c().points.forEach(function(p,i){this.addCommand(p.name+' ('+p.position.join(',')+')','point',true,i);},this);this.addCommand('Voltar à exploração','cancel');this.addCommand('Sair da sessão → título','leave');};
+ function Points(){this.initialize.apply(this,arguments);}Points.prototype=Object.create(Scene_MenuBase.prototype);Points.prototype.constructor=Points;
+ Points.prototype.create=function(){Scene_MenuBase.prototype.create.call(this);var help=new Window_Base(16,8,Graphics.boxWidth-32,72);help.contents.fontSize=18;help.drawText('Base integral · pontos de inspeção · sem controles de carga',0,0,help.contentsWidth());this.addWindow(help);var w=this._choices=new Commands(16,88);w.setHandler('point',function(){if(ArenaStonekeepWhole.jump(w.currentExt()))SceneManager.pop();else{SoundManager.playBuzzer();w.activate();}});w.setHandler('cancel',function(){neutral();SceneManager.pop();});w.setHandler('leave',function(){neutral();ArenaContinuation.leaveLab();});this.addWindow(w);w.deactivate();this._armed=false;};
+ Points.prototype.update=function(){Scene_MenuBase.prototype.update.call(this);if(!this._armed&&!Input.isPressed('ok')&&!Input.isPressed('cancel')&&!TouchInput.isPressed()){this._armed=true;this._choices.activate();}};
+ var menu=Window_MenuCommand.prototype.addOriginalCommands;
+ Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if(active()&&here())this.addCommand('Stonekeep: pontos da base integral','arenaStonekeepWholePoints');};
+ var create=Scene_Menu.prototype.createCommandWindow;
+ Scene_Menu.prototype.createCommandWindow=function(){create.apply(this,arguments);this._commandWindow.setHandler('arenaStonekeepWholePoints',function(){SceneManager.goto(Points);});};
+ ArenaDebugHub.register({symbol:'arenaStonekeepWhole',name:'Stonekeep · base integral (RAM)',category:'campaign',description:'Planta274×274 contínua,180 encontros/70 portas. Portas próximas com coordenadas e estado. Esc: pontos/RAM.',saving:'Somente sessão RAM · slots normais bloqueados · campanha no Map015'},ArenaStonekeepWhole.preview);
+})();

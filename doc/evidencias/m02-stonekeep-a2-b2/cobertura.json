@@ -1,0 +1,710 @@
+{
+  "sourceBase": "55e42e4",
+  "terrainCommit": "d82d9a3",
+  "mapId": 15,
+  "enemiesImplemented": 47,
+  "enemiesTotal": 180,
+  "enemiesRemaining": 133,
+  "doorsImplemented": 23,
+  "doorsTotal": 70,
+  "doorsRemaining": 47,
+  "sectors": [
+    {
+      "sector": "A1",
+      "enemiesImplemented": 14,
+      "enemiesTotal": 14,
+      "doorsImplemented": 0,
+      "doorsTotal": 0,
+      "complete": false
+    },
+    {
+      "sector": "A2",
+      "enemiesImplemented": 19,
+      "enemiesTotal": 19,
+      "doorsImplemented": 10,
+      "doorsTotal": 13,
+      "complete": false
+    },
+    {
+      "sector": "A3",
+      "enemiesImplemented": 0,
+      "enemiesTotal": 19,
+      "doorsImplemented": 1,
+      "doorsTotal": 5,
+      "complete": false
+    },
+    {
+      "sector": "B1",
+      "enemiesImplemented": 0,
+      "enemiesTotal": 10,
+      "doorsImplemented": 0,
+      "doorsTotal": 4,
+      "complete": false
+    },
+    {
+      "sector": "B2",
+      "enemiesImplemented": 14,
+      "enemiesTotal": 25,
+      "doorsImplemented": 12,
+      "doorsTotal": 18,
+      "complete": false
+    },
+    {
+      "sector": "B3",
+      "enemiesImplemented": 0,
+      "enemiesTotal": 20,
+      "doorsImplemented": 0,
+      "doorsTotal": 20,
+      "complete": false
+    },
+    {
+      "sector": "C1",
+      "enemiesImplemented": 0,
+      "enemiesTotal": 19,
+      "doorsImplemented": 0,
+      "doorsTotal": 6,
+      "complete": false
+    },
+    {
+      "sector": "C2",
+      "enemiesImplemented": 0,
+      "enemiesTotal": 32,
+      "doorsImplemented": 0,
+      "doorsTotal": 4,
+      "complete": false
+    },
+    {
+      "sector": "C3",
+      "enemiesImplemented": 0,
+      "enemiesTotal": 22,
+      "doorsImplemented": 0,
+      "doorsTotal": 0,
+      "complete": false
+    }
+  ],
+  "blockComplete": false,
+  "manual": "Deferred, no approval inferred",
+  "deferredDoors": [
+    {
+      "sourceOriginal": [
+        51,
+        15
+      ],
+      "view": [
+        38,
+        15
+      ],
+      "center": [
+        117,
+        48
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        51,
+        19
+      ],
+      "view": [
+        38,
+        19
+      ],
+      "center": [
+        117,
+        60
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        54,
+        19
+      ],
+      "view": [
+        35,
+        19
+      ],
+      "center": [
+        108,
+        60
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        39,
+        44
+      ],
+      "view": [
+        50,
+        44
+      ],
+      "center": [
+        153,
+        135
+      ],
+      "axis": "north-south",
+      "raw": 45073,
+      "texture": "DCAS6.IMG",
+      "lockValue": 2,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        39,
+        49
+      ],
+      "view": [
+        50,
+        49
+      ],
+      "center": [
+        153,
+        150
+      ],
+      "axis": "north-south",
+      "raw": 45073,
+      "texture": "DCAS6.IMG",
+      "lockValue": 3,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        57,
+        52
+      ],
+      "view": [
+        32,
+        52
+      ],
+      "center": [
+        99,
+        159
+      ],
+      "axis": "east-west",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        52,
+        53
+      ],
+      "view": [
+        37,
+        53
+      ],
+      "center": [
+        114,
+        162
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        52,
+        56
+      ],
+      "view": [
+        37,
+        56
+      ],
+      "center": [
+        114,
+        171
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        54,
+        56
+      ],
+      "view": [
+        35,
+        56
+      ],
+      "center": [
+        108,
+        171
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    }
+  ],
+  "deferredEnemies": [
+    {
+      "sourceOriginal": [
+        48,
+        37
+      ],
+      "view": [
+        41,
+        37
+      ],
+      "origin": [
+        126,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        49,
+        37
+      ],
+      "view": [
+        40,
+        37
+      ],
+      "origin": [
+        123,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        50,
+        37
+      ],
+      "view": [
+        39,
+        37
+      ],
+      "origin": [
+        120,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        37
+      ],
+      "view": [
+        31,
+        37
+      ],
+      "origin": [
+        96,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        38
+      ],
+      "view": [
+        31,
+        38
+      ],
+      "origin": [
+        96,
+        117
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        34,
+        46
+      ],
+      "view": [
+        55,
+        46
+      ],
+      "origin": [
+        168,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
+    },
+    {
+      "sourceOriginal": [
+        43,
+        46
+      ],
+      "view": [
+        46,
+        46
+      ],
+      "origin": [
+        141,
+        141
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        44,
+        46
+      ],
+      "view": [
+        45,
+        46
+      ],
+      "origin": [
+        138,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
+    },
+    {
+      "sourceOriginal": [
+        34,
+        47
+      ],
+      "view": [
+        55,
+        47
+      ],
+      "origin": [
+        168,
+        144
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
+    },
+    {
+      "sourceOriginal": [
+        55,
+        54
+      ],
+      "view": [
+        34,
+        54
+      ],
+      "origin": [
+        105,
+        165
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "dependency": "Disconnected conservative pocket; no new passage inferred"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        55
+      ],
+      "view": [
+        31,
+        55
+      ],
+      "origin": [
+        96,
+        168
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "dependency": "Disconnected conservative pocket; no new passage inferred"
+    }
+  ],
+  "references": [
+    {"kind": "enemy", "mif": [61, 2], "view": [28, 2], "sector": "A1", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.passage.skeleton.01", "map015": [87, 9], "accessDependency": null},
+    {"kind": "enemy", "mif": [62, 2], "view": [27, 2], "sector": "A1", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.passage.skeleton.02", "map015": [84, 9], "accessDependency": null},
+    {"kind": "enemy", "mif": [82, 2], "view": [7, 2], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.a1west.ghoul.01", "map015": [24, 9], "accessDependency": null},
+    {"kind": "enemy", "mif": [60, 3], "view": [29, 3], "sector": "A1", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.passage.skeleton.03", "map015": [90, 12], "accessDependency": null},
+    {"kind": "enemy", "mif": [83, 3], "view": [6, 3], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.a1west.ghoul.02", "map015": [21, 12], "accessDependency": null},
+    {"kind": "enemy", "mif": [56, 4], "view": [33, 4], "sector": "A2", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.passage.skeleton.04", "map015": [102, 15], "accessDependency": null},
+    {"kind": "enemy", "mif": [62, 4], "view": [27, 4], "sector": "A1", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.passage.skeleton.05", "map015": [84, 15], "accessDependency": null},
+    {"kind": "enemy", "mif": [18, 5], "view": [71, 5], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [56, 5], "view": [33, 5], "sector": "A2", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.passage.skeleton.06", "map015": [102, 18], "accessDependency": null},
+    {"kind": "enemy", "mif": [61, 5], "view": [28, 5], "sector": "A1", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.passage.skeleton.07", "map015": [87, 18], "accessDependency": null},
+    {"kind": "enemy", "mif": [10, 6], "view": [79, 6], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [16, 6], "view": [73, 6], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [20, 6], "view": [69, 6], "sector": "A3", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [20, 7], "view": [69, 7], "sector": "A3", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [20, 10], "view": [69, 10], "sector": "A3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [32, 11], "view": [57, 11], "sector": "A2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.a2east.rat.01", "map015": [174, 36], "accessDependency": null},
+    {"kind": "enemy", "mif": [44, 11], "view": [45, 11], "sector": "A2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.apartments.rat.01", "map015": [138, 36], "accessDependency": null},
+    {"kind": "enemy", "mif": [17, 12], "view": [72, 12], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [44, 12], "view": [45, 12], "sector": "A2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.apartments.rat.02", "map015": [138, 39], "accessDependency": null},
+    {"kind": "enemy", "mif": [18, 13], "view": [71, 13], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [29, 13], "view": [60, 13], "sector": "A3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [43, 13], "view": [46, 13], "sector": "A2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.apartments.rat.03", "map015": [141, 42], "accessDependency": null},
+    {"kind": "enemy", "mif": [30, 14], "view": [59, 14], "sector": "A2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.a2east.rat.02", "map015": [180, 45], "accessDependency": null},
+    {"kind": "enemy", "mif": [9, 15], "view": [80, 15], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [11, 15], "view": [78, 15], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [8, 16], "view": [81, 16], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [28, 16], "view": [61, 16], "sector": "A3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [30, 16], "view": [59, 16], "sector": "A2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.a2east.rat.03", "map015": [180, 51], "accessDependency": null},
+    {"kind": "enemy", "mif": [52, 16], "view": [37, 16], "sector": "A2", "species": "lobo", "lock": null, "implemented": true, "id": "stonekeep.apartments.wolf.01", "map015": [114, 51], "accessDependency": null},
+    {"kind": "enemy", "mif": [24, 17], "view": [65, 17], "sector": "A3", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [26, 17], "view": [63, 17], "sector": "A3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [28, 17], "view": [61, 17], "sector": "A3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [44, 17], "view": [45, 17], "sector": "A2", "species": "lobo", "lock": null, "implemented": true, "id": "stonekeep.apartments.wolf.02", "map015": [138, 54], "accessDependency": null},
+    {"kind": "enemy", "mif": [49, 17], "view": [40, 17], "sector": "A2", "species": "lobo", "lock": null, "implemented": true, "id": "stonekeep.apartments.wolf.03", "map015": [123, 54], "accessDependency": null},
+    {"kind": "enemy", "mif": [50, 17], "view": [39, 17], "sector": "A2", "species": "lobo", "lock": null, "implemented": true, "id": "stonekeep.apartments.wolf.04", "map015": [120, 54], "accessDependency": null},
+    {"kind": "enemy", "mif": [70, 18], "view": [19, 18], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.island.ghoul.01", "map015": [60, 57], "accessDependency": null},
+    {"kind": "enemy", "mif": [73, 19], "view": [16, 19], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.island.ghoul.02", "map015": [51, 60], "accessDependency": null},
+    {"kind": "enemy", "mif": [78, 19], "view": [11, 19], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.island.ghoul.03", "map015": [36, 60], "accessDependency": null},
+    {"kind": "enemy", "mif": [8, 21], "view": [81, 21], "sector": "A3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [29, 21], "view": [60, 21], "sector": "A3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [37, 21], "view": [52, 21], "sector": "A2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.legacycrop.goblin.01", "map015": [159, 66], "accessDependency": null},
+    {"kind": "enemy", "mif": [41, 21], "view": [48, 21], "sector": "A2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.legacycrop.goblin.02", "map015": [147, 66], "accessDependency": null},
+    {"kind": "enemy", "mif": [74, 21], "view": [15, 21], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.island.ghoul.04", "map015": [48, 66], "accessDependency": null},
+    {"kind": "enemy", "mif": [76, 22], "view": [13, 22], "sector": "A1", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.legacycrop.skeleton.01", "map015": [42, 69], "accessDependency": null},
+    {"kind": "enemy", "mif": [35, 23], "view": [54, 23], "sector": "A2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.a2east.goblin.01", "map015": [165, 72], "accessDependency": null},
+    {"kind": "enemy", "mif": [38, 23], "view": [51, 23], "sector": "A2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.legacycrop.goblin.03", "map015": [156, 72], "accessDependency": null},
+    {"kind": "enemy", "mif": [39, 23], "view": [50, 23], "sector": "A2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.legacycrop.goblin.04", "map015": [153, 72], "accessDependency": null},
+    {"kind": "enemy", "mif": [40, 23], "view": [49, 23], "sector": "A2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.legacycrop.goblin.05", "map015": [150, 72], "accessDependency": null},
+    {"kind": "enemy", "mif": [42, 23], "view": [47, 23], "sector": "A2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.legacycrop.goblin.06", "map015": [144, 72], "accessDependency": null},
+    {"kind": "enemy", "mif": [75, 27], "view": [14, 27], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.island.ghoul.05", "map015": [45, 84], "accessDependency": null},
+    {"kind": "enemy", "mif": [20, 28], "view": [69, 28], "sector": "A3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [72, 28], "view": [17, 28], "sector": "A1", "species": "ghoul", "lock": null, "implemented": true, "id": "stonekeep.island.ghoul.06", "map015": [54, 87], "accessDependency": null},
+    {"kind": "enemy", "mif": [12, 30], "view": [77, 30], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [14, 30], "view": [75, 30], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [18, 30], "view": [71, 30], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [8, 33], "view": [81, 33], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [12, 34], "view": [77, 34], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [19, 34], "view": [70, 34], "sector": "B3", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [25, 36], "view": [64, 36], "sector": "B3", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [48, 37], "view": [41, 37], "sector": "B2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [49, 37], "view": [40, 37], "sector": "B2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [50, 37], "view": [39, 37], "sector": "B2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [58, 37], "view": [31, 37], "sector": "B2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [8, 38], "view": [81, 38], "sector": "B3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [40, 38], "view": [49, 38], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif40.38", "map015": [150, 117], "accessDependency": null},
+    {"kind": "enemy", "mif": [58, 38], "view": [31, 38], "sector": "B2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [9, 39], "view": [80, 39], "sector": "B3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [41, 39], "view": [48, 39], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif41.39", "map015": [147, 120], "accessDependency": null},
+    {"kind": "enemy", "mif": [20, 40], "view": [69, 40], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [36, 40], "view": [53, 40], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif36.40", "map015": [162, 123], "accessDependency": null},
+    {"kind": "enemy", "mif": [47, 40], "view": [42, 40], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif47.40", "map015": [129, 123], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [9, 41], "view": [80, 41], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [11, 41], "view": [78, 41], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [31, 41], "view": [58, 41], "sector": "B2", "species": "esqueleto", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif31.41", "map015": [177, 126], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [48, 41], "view": [41, 41], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif48.41", "map015": [126, 126], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [29, 44], "view": [60, 44], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [29, 45], "view": [60, 45], "sector": "B3", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [34, 46], "view": [55, 46], "sector": "B2", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [43, 46], "view": [46, 46], "sector": "B2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [44, 46], "view": [45, 46], "sector": "B2", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [46, 46], "view": [43, 46], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif46.46", "map015": [132, 141], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [48, 46], "view": [41, 46], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif48.46", "map015": [126, 141], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [34, 47], "view": [55, 47], "sector": "B2", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [46, 47], "view": [43, 47], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif46.47", "map015": [132, 144], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [67, 47], "view": [22, 47], "sector": "B1", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [68, 47], "view": [21, 47], "sector": "B1", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [68, 48], "view": [21, 48], "sector": "B1", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [45, 51], "view": [44, 51], "sector": "B2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif45.51", "map015": [135, 156], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [38, 52], "view": [51, 52], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif38.52", "map015": [156, 159], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [44, 52], "view": [45, 52], "sector": "B2", "species": "rato", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif44.52", "map015": [138, 159], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [25, 53], "view": [64, 53], "sector": "B3", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [25, 54], "view": [64, 54], "sector": "B3", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [55, 54], "view": [34, 54], "sector": "B2", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [67, 54], "view": [22, 54], "sector": "B1", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [72, 54], "view": [17, 54], "sector": "B1", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [58, 55], "view": [31, 55], "sector": "B2", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [64, 55], "view": [25, 55], "sector": "B1", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [3, 56], "view": [86, 56], "sector": "B3", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [40, 56], "view": [49, 56], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif40.56", "map015": [150, 171], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [64, 56], "view": [25, 56], "sector": "B1", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [4, 57], "view": [85, 57], "sector": "B3", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [67, 57], "view": [22, 57], "sector": "B1", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [71, 57], "view": [18, 57], "sector": "B1", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [38, 58], "view": [51, 58], "sector": "B2", "species": "goblin", "lock": null, "implemented": true, "id": "stonekeep.b2.enemy.mif38.58", "map015": [156, 177], "accessDependency": "Upstream unresolved LOCK; current access is provisional"},
+    {"kind": "enemy", "mif": [16, 59], "view": [73, 59], "sector": "B3", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [17, 59], "view": [72, 59], "sector": "B3", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [64, 59], "view": [25, 59], "sector": "B1", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [71, 60], "view": [18, 60], "sector": "C1", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [22, 61], "view": [67, 61], "sector": "C3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [24, 61], "view": [65, 61], "sector": "C3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [62, 61], "view": [27, 61], "sector": "C1", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [5, 62], "view": [84, 62], "sector": "C3", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [23, 62], "view": [66, 62], "sector": "C3", "species": "rato", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [56, 62], "view": [33, 62], "sector": "C2", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [38, 63], "view": [51, 63], "sector": "C2", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [42, 63], "view": [47, 63], "sector": "C2", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [7, 64], "view": [82, 64], "sector": "C3", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [27, 64], "view": [62, 64], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [28, 64], "view": [61, 64], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [40, 64], "view": [49, 64], "sector": "C2", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [46, 64], "view": [43, 64], "sector": "C2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [28, 65], "view": [61, 65], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [42, 65], "view": [47, 65], "sector": "C2", "species": "goblin", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [46, 65], "view": [43, 65], "sector": "C2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [86, 65], "view": [3, 65], "sector": "C1", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [6, 67], "view": [83, 67], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [86, 67], "view": [3, 67], "sector": "C1", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [5, 68], "view": [84, 68], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [5, 69], "view": [84, 69], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [33, 69], "view": [56, 69], "sector": "C2", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [53, 69], "view": [36, 69], "sector": "C2", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [70, 69], "view": [19, 69], "sector": "C1", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [20, 70], "view": [69, 70], "sector": "C3", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [34, 70], "view": [55, 70], "sector": "C2", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [48, 70], "view": [41, 70], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [69, 70], "view": [20, 70], "sector": "C1", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [78, 70], "view": [11, 70], "sector": "C1", "species": "ogro", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [21, 71], "view": [68, 71], "sector": "C3", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [33, 71], "view": [56, 71], "sector": "C2", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [48, 71], "view": [41, 71], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [43, 72], "view": [46, 72], "sector": "C2", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [28, 73], "view": [61, 73], "sector": "C3", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [29, 73], "view": [60, 73], "sector": "C3", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [82, 73], "view": [7, 73], "sector": "C1", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [43, 74], "view": [46, 74], "sector": "C2", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [81, 74], "view": [8, 74], "sector": "C1", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [30, 75], "view": [59, 75], "sector": "C2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [42, 75], "view": [47, 75], "sector": "C2", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [56, 75], "view": [33, 75], "sector": "C2", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [82, 75], "view": [7, 75], "sector": "C1", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [55, 76], "view": [34, 76], "sector": "C2", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [64, 76], "view": [25, 76], "sector": "C1", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [5, 77], "view": [84, 77], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [14, 77], "view": [75, 77], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [64, 77], "view": [25, 77], "sector": "C1", "species": "esqueleto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [5, 78], "view": [84, 78], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [12, 78], "view": [77, 78], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [13, 78], "view": [76, 78], "sector": "C3", "species": "homem-lagarto", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [30, 78], "view": [59, 78], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [31, 78], "view": [58, 78], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [47, 79], "view": [42, 79], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [86, 79], "view": [3, 79], "sector": "C1", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [30, 80], "view": [59, 80], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [86, 80], "view": [3, 80], "sector": "C1", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [23, 81], "view": [66, 81], "sector": "C3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [59, 81], "view": [30, 81], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [85, 81], "view": [4, 81], "sector": "C1", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [23, 82], "view": [66, 82], "sector": "C3", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [61, 82], "view": [28, 82], "sector": "C1", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [37, 83], "view": [52, 83], "sector": "C2", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [36, 84], "view": [53, 84], "sector": "C2", "species": "ghoul", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [45, 84], "view": [44, 84], "sector": "C2", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [48, 84], "view": [41, 84], "sector": "C2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [49, 84], "view": [40, 84], "sector": "C2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [44, 85], "view": [45, 85], "sector": "C2", "species": "lobo", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [48, 85], "view": [41, 85], "sector": "C2", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [59, 85], "view": [30, 85], "sector": "C2", "species": "aranha", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [75, 85], "view": [14, 85], "sector": "C1", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [76, 85], "view": [13, 85], "sector": "C1", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "enemy", "mif": [75, 86], "view": [14, 86], "sector": "C1", "species": "orc", "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [36, 12], "view": [53, 12], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.door.36.12", "map015": [162, 39], "accessDependency": null},
+    {"kind": "door", "mif": [42, 12], "view": [47, 12], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2central.door.01", "map015": [144, 39], "accessDependency": null},
+    {"kind": "door", "mif": [34, 14], "view": [55, 14], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.door.34.14", "map015": [168, 45], "accessDependency": null},
+    {"kind": "door", "mif": [44, 14], "view": [45, 14], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2central.door.02", "map015": [138, 45], "accessDependency": null},
+    {"kind": "door", "mif": [26, 15], "view": [63, 15], "sector": "A3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [29, 15], "view": [60, 15], "sector": "A3", "species": null, "lock": null, "implemented": true, "id": "stonekeep.door.29.15", "map015": [183, 48], "accessDependency": null},
+    {"kind": "door", "mif": [49, 15], "view": [40, 15], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif49.15", "map015": [123, 48], "accessDependency": null},
+    {"kind": "door", "mif": [51, 15], "view": [38, 15], "sector": "A2", "species": null, "lock": 1, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [54, 15], "view": [35, 15], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif54.15", "map015": [108, 48], "accessDependency": null},
+    {"kind": "door", "mif": [25, 17], "view": [64, 17], "sector": "A3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [31, 17], "view": [58, 17], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.door.31.17", "map015": [177, 54], "accessDependency": null},
+    {"kind": "door", "mif": [47, 17], "view": [42, 17], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2central.door.03", "map015": [129, 54], "accessDependency": null},
+    {"kind": "door", "mif": [55, 17], "view": [34, 17], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif55.17", "map015": [105, 54], "accessDependency": null},
+    {"kind": "door", "mif": [26, 19], "view": [63, 19], "sector": "A3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [29, 19], "view": [60, 19], "sector": "A3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [49, 19], "view": [40, 19], "sector": "A2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif49.19", "map015": [123, 60], "accessDependency": null},
+    {"kind": "door", "mif": [51, 19], "view": [38, 19], "sector": "A2", "species": null, "lock": 1, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [54, 19], "view": [35, 19], "sector": "A2", "species": null, "lock": 1, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [12, 31], "view": [77, 31], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [15, 31], "view": [74, 31], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [18, 31], "view": [71, 31], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [20, 31], "view": [69, 31], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [10, 33], "view": [79, 33], "sector": "B3", "species": null, "lock": 2, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [56, 34], "view": [33, 34], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif56.34", "map015": [102, 105], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [10, 35], "view": [79, 35], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [55, 37], "view": [34, 37], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif55.37", "map015": [105, 114], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [10, 38], "view": [79, 38], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [25, 38], "view": [64, 38], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [56, 39], "view": [33, 39], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif56.39", "map015": [102, 120], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [10, 42], "view": [79, 42], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [21, 42], "view": [68, 42], "sector": "B3", "species": null, "lock": 2, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [29, 42], "view": [60, 42], "sector": "B3", "species": null, "lock": 2, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [10, 44], "view": [79, 44], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [39, 44], "view": [50, 44], "sector": "B2", "species": null, "lock": 2, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [48, 44], "view": [41, 44], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif48.44", "map015": [126, 135], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [51, 44], "view": [38, 44], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif51.44", "map015": [117, 135], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [12, 46], "view": [77, 46], "sector": "B3", "species": null, "lock": 2, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [15, 46], "view": [74, 46], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [17, 46], "view": [72, 46], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [25, 46], "view": [64, 46], "sector": "B3", "species": null, "lock": 1, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [54, 46], "view": [35, 46], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif54.46", "map015": [108, 141], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [24, 49], "view": [65, 49], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [26, 49], "view": [63, 49], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [32, 49], "view": [57, 49], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif32.49", "map015": [174, 150], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [39, 49], "view": [50, 49], "sector": "B2", "species": null, "lock": 3, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [45, 49], "view": [44, 49], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif45.49", "map015": [135, 150], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [37, 51], "view": [52, 51], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif37.51", "map015": [159, 156], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [42, 52], "view": [47, 52], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif42.52", "map015": [144, 159], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [57, 52], "view": [32, 52], "sector": "B2", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [72, 52], "view": [17, 52], "sector": "B1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [52, 53], "view": [37, 53], "sector": "B2", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [62, 53], "view": [27, 53], "sector": "B1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [24, 56], "view": [65, 56], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [26, 56], "view": [63, 56], "sector": "B3", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [36, 56], "view": [53, 56], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif36.56", "map015": [162, 171], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [52, 56], "view": [37, 56], "sector": "B2", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [54, 56], "view": [35, 56], "sector": "B2", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [68, 56], "view": [21, 56], "sector": "B1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [73, 56], "view": [16, 56], "sector": "B1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [41, 57], "view": [48, 57], "sector": "B2", "species": null, "lock": null, "implemented": true, "id": "stonekeep.a2b2.door.mif41.57", "map015": [147, 174], "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"},
+    {"kind": "door", "mif": [59, 60], "view": [30, 60], "sector": "C2", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [61, 60], "view": [28, 60], "sector": "C1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [66, 60], "view": [23, 60], "sector": "C1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [39, 61], "view": [50, 61], "sector": "C2", "species": null, "lock": 3, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [73, 62], "view": [16, 62], "sector": "C1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [55, 63], "view": [34, 63], "sector": "C2", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [59, 63], "view": [30, 63], "sector": "C2", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [63, 63], "view": [26, 63], "sector": "C1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [71, 63], "view": [18, 63], "sector": "C1", "species": null, "lock": null, "implemented": false, "id": null, "map015": null, "accessDependency": null},
+    {"kind": "door", "mif": [65, 68], "view": [24, 68], "sector": "C1", "species": null, "lock": 1, "implemented": false, "id": null, "map015": null, "accessDependency": null}
+  ]
+}

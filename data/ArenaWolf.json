@@ -1,0 +1,212 @@
+{
+  "version": "stonekeep-wolf-v01",
+  "enemyId": 6,
+  "troopId": 7,
+  "enemy": {
+    "name": "Lobo",
+    "params": [
+      25,
+      0,
+      8,
+      3,
+      0,
+      3,
+      12,
+      5
+    ],
+    "exp": 25,
+    "hit": 0.9
+  },
+  "lab": {
+    "mapId": 12,
+    "x": 80,
+    "y": 39,
+    "direction": 4
+  },
+  "labLoot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "isolated battle pilot only",
+    "source": "No campaign configuration yet. Empty laboratory rewards explicitly; do not transfer zeros silently to campaign."
+  },
+  "campaign": {
+    "loot": {
+      "gold": {
+        "chance": 0,
+        "min": 0,
+        "max": 0
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "provisional campaign wolf exemplar; drops unknown",
+      "source": "Monsters local PDF24 lists loot as unknown (?). Intentionally empty until evidence/configuration, not a claim that original wolves cannot drop. EXP25 is provisional MV adaptation; original HP*10+100 is not used directly."
+    }
+  },
+  "source": "Ordinary Wolf from Monsters PDF23-24 and WOLF01/03/06.CFA. HP25 uses upper wiki range only as pilot baseline; ATQ8/DEF3/MDF3/AGI12/HIT90% are provisional MV adaptations relative to existing rat/goblin. No magic/disease/bleeding/group behaviour. EXP and loot0 are laboratory only.",
+  "coverage": "four confirmed wolf encounters; approved battle aaea451 and patrol d27eb5f reused unchanged; group manual evaluation pending; campaign25EXP/unknown drops empty, direct battle RAM0EXP/loot",
+  "walk": {
+    "file": "$Arena_wolf_walk_v01",
+    "cell": [
+      64,
+      64
+    ],
+    "ground": 62,
+    "animationWait": 10
+  },
+  "encounter": {
+    "id": "stonekeep.apartments.wolf.01",
+    "eventId": 19,
+    "enemyId": 6,
+    "troopId": 7,
+    "origin": [
+      90,
+      51
+    ],
+    "sourceOriginal": [
+      52,
+      16
+    ],
+    "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+    "questSpecific": false,
+    "radius": 2,
+    "interval": 90,
+    "regions": [
+      4
+    ],
+    "scale": 1
+  },
+  "patrolLab": {
+    "x": 94,
+    "y": 46,
+    "direction": 4
+  },
+  "additionalEncounters": [
+    {
+      "id": "stonekeep.apartments.wolf.02",
+      "eventId": 20,
+      "enemyId": 6,
+      "troopId": 7,
+      "origin": [
+        114,
+        54
+      ],
+      "sourceOriginal": [
+        44,
+        17
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.apartments.wolf.03",
+      "eventId": 21,
+      "enemyId": 6,
+      "troopId": 7,
+      "origin": [
+        99,
+        54
+      ],
+      "sourceOriginal": [
+        49,
+        17
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.apartments.wolf.04",
+      "eventId": 22,
+      "enemyId": 6,
+      "troopId": 7,
+      "origin": [
+        96,
+        54
+      ],
+      "sourceOriginal": [
+        50,
+        17
+      ],
+      "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ]
+}

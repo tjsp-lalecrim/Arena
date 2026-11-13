@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "areaId": "stonekeep",
+  "sourceId": "stonekeep.parchment",
+  "itemId": 7,
+  "mapId": 12,
+  "entry": {
+    "id": "stonekeep.entry",
+    "mapId": 12,
+    "x": 129,
+    "y": 15,
+    "direction": 2
+  },
+  "exitEventId": 1,
+  "sourceEventId": 2,
+  "travelEventId": 3,
+  "return": {
+    "id": "rihad.stonekeep.return",
+    "mapId": 9,
+    "x": 345,
+    "y": 6,
+    "direction": 2
+  },
+  "source": [
+    30,
+    72
+  ],
+  "exit": [
+    129,
+    9
+  ],
+  "wallSamples": [
+    {
+      "id": "cask",
+      "entry": {
+        "id": "stonekeep.sample.cask",
+        "mapId": 12,
+        "x": 84,
+        "y": 93,
+        "direction": 6
+      },
+      "bounds": [
+        83,
+        89,
+        91,
+        94
+      ]
+    },
+    {
+      "id": "casl",
+      "entry": {
+        "id": "stonekeep.sample.casl",
+        "mapId": 12,
+        "x": 129,
+        "y": 66,
+        "direction": 8
+      },
+      "bounds": [
+        122,
+        59,
+        130,
+        64
+      ]
+    }
+  ],
+  "visualSample": {
+    "version": "stonekeep-visual-v01",
+    "entry": {
+      "id": "stonekeep.visual.sample",
+      "mapId": 12,
+      "x": 84,
+      "y": 42,
+      "direction": 4
+    },
+    "bounds": [
+      2,
+      2,
+      139,
+      100
+    ]
+  },
+  "breach": [
+    75,
+    39
+  ],
+  "shore": [
+    66,
+    39
+  ],
+  "island": [
+    36,
+    45
+  ],
+  "swimming": {
+    "enabled": true,
+    "regionId": 5,
+    "autotileKind": 0,
+    "depth": 32,
+    "offsetY": 8
+  }
+}

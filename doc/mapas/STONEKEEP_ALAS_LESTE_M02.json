@@ -1,0 +1,1938 @@
+{
+  "pendingAccess": [
+    "stonekeep.c3.enemy.mif14.77",
+    "stonekeep.c3.enemy.mif12.78",
+    "stonekeep.c3.enemy.mif13.78",
+    "stonekeep.a3.enemy.mif18.05",
+    "stonekeep.a3.enemy.mif10.06",
+    "stonekeep.a3.enemy.mif16.06",
+    "stonekeep.a3.enemy.mif20.06",
+    "stonekeep.a3.enemy.mif20.07",
+    "stonekeep.a3.enemy.mif20.10",
+    "stonekeep.a3.enemy.mif17.12",
+    "stonekeep.a3.enemy.mif18.13",
+    "stonekeep.a3.enemy.mif09.15",
+    "stonekeep.a3.enemy.mif11.15",
+    "stonekeep.a3.enemy.mif08.16",
+    "stonekeep.a3.enemy.mif08.21"
+  ],
+  "uncertainWater": [
+    "67,3",
+    "67,4",
+    "67,5",
+    "64,26",
+    "65,26",
+    "66,26",
+    "67,26",
+    "68,26",
+    "69,26",
+    "61,31",
+    "62,31",
+    "61,32",
+    "62,32"
+  ],
+  "base": "9c9b802",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "dryCrossing": [
+    [
+      181,
+      222
+    ],
+    [
+      182,
+      222
+    ]
+  ],
+  "blocks": [
+    {
+      "name": "C3 central",
+      "sector": "C3",
+      "entries": [
+        {
+          "id": "stonekeep.c3.enemy.mif20.70",
+          "sourceOriginal": [
+            20,
+            70
+          ],
+          "origin": [
+            210,
+            213
+          ],
+          "species": "lobo",
+          "enemyId": 6,
+          "troopId": 7,
+          "sourceFlat": "WOLF.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif21.71",
+          "sourceOriginal": [
+            21,
+            71
+          ],
+          "origin": [
+            207,
+            216
+          ],
+          "species": "lobo",
+          "enemyId": 6,
+          "troopId": 7,
+          "sourceFlat": "WOLF.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif28.73",
+          "sourceOriginal": [
+            28,
+            73
+          ],
+          "origin": [
+            186,
+            222
+          ],
+          "species": "orc",
+          "enemyId": 7,
+          "troopId": 8,
+          "sourceFlat": "ORC.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif29.73",
+          "sourceOriginal": [
+            29,
+            73
+          ],
+          "origin": [
+            183,
+            222
+          ],
+          "species": "orc",
+          "enemyId": 7,
+          "troopId": 8,
+          "sourceFlat": "ORC.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ],
+      "doors": []
+    },
+    {
+      "name": "C3 norte",
+      "sector": "C3",
+      "entries": [
+        {
+          "id": "stonekeep.c3.enemy.mif22.61",
+          "sourceOriginal": [
+            22,
+            61
+          ],
+          "origin": [
+            204,
+            186
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif24.61",
+          "sourceOriginal": [
+            24,
+            61
+          ],
+          "origin": [
+            198,
+            186
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif05.62",
+          "sourceOriginal": [
+            5,
+            62
+          ],
+          "origin": [
+            255,
+            189
+          ],
+          "species": "ghoul",
+          "enemyId": 5,
+          "troopId": 6,
+          "sourceFlat": "GHOUL.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif23.62",
+          "sourceOriginal": [
+            23,
+            62
+          ],
+          "origin": [
+            201,
+            189
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif07.64",
+          "sourceOriginal": [
+            7,
+            64
+          ],
+          "origin": [
+            249,
+            195
+          ],
+          "species": "ghoul",
+          "enemyId": 5,
+          "troopId": 6,
+          "sourceFlat": "GHOUL.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif27.64",
+          "sourceOriginal": [
+            27,
+            64
+          ],
+          "origin": [
+            189,
+            195
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif28.64",
+          "sourceOriginal": [
+            28,
+            64
+          ],
+          "origin": [
+            186,
+            195
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif28.65",
+          "sourceOriginal": [
+            28,
+            65
+          ],
+          "origin": [
+            186,
+            198
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif06.67",
+          "sourceOriginal": [
+            6,
+            67
+          ],
+          "origin": [
+            252,
+            204
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif05.68",
+          "sourceOriginal": [
+            5,
+            68
+          ],
+          "origin": [
+            255,
+            207
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif05.69",
+          "sourceOriginal": [
+            5,
+            69
+          ],
+          "origin": [
+            255,
+            210
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ],
+      "doors": []
+    },
+    {
+      "name": "C3 central sul",
+      "sector": "C3",
+      "entries": [
+        {
+          "id": "stonekeep.c3.enemy.mif05.77",
+          "sourceOriginal": [
+            5,
+            77
+          ],
+          "origin": [
+            255,
+            234
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif14.77",
+          "sourceOriginal": [
+            14,
+            77
+          ],
+          "origin": [
+            228,
+            234
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif05.78",
+          "sourceOriginal": [
+            5,
+            78
+          ],
+          "origin": [
+            255,
+            237
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif12.78",
+          "sourceOriginal": [
+            12,
+            78
+          ],
+          "origin": [
+            234,
+            237
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif13.78",
+          "sourceOriginal": [
+            13,
+            78
+          ],
+          "origin": [
+            231,
+            237
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ],
+      "doors": []
+    },
+    {
+      "name": "C3 sul",
+      "sector": "C3",
+      "entries": [
+        {
+          "id": "stonekeep.c3.enemy.mif23.81",
+          "sourceOriginal": [
+            23,
+            81
+          ],
+          "origin": [
+            201,
+            246
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.c3.enemy.mif23.82",
+          "sourceOriginal": [
+            23,
+            82
+          ],
+          "origin": [
+            201,
+            249
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ],
+      "doors": []
+    },
+    {
+      "name": "B3",
+      "sector": "B3",
+      "entries": [
+        {
+          "id": "stonekeep.b3.enemy.mif12.30",
+          "sourceOriginal": [
+            12,
+            30
+          ],
+          "origin": [
+            234,
+            93
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif14.30",
+          "sourceOriginal": [
+            14,
+            30
+          ],
+          "origin": [
+            228,
+            93
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif18.30",
+          "sourceOriginal": [
+            18,
+            30
+          ],
+          "origin": [
+            216,
+            93
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif08.33",
+          "sourceOriginal": [
+            8,
+            33
+          ],
+          "origin": [
+            246,
+            102
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif12.34",
+          "sourceOriginal": [
+            12,
+            34
+          ],
+          "origin": [
+            234,
+            105
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif19.34",
+          "sourceOriginal": [
+            19,
+            34
+          ],
+          "origin": [
+            213,
+            105
+          ],
+          "species": "minotauro",
+          "enemyId": 8,
+          "troopId": 9,
+          "sourceFlat": "OGRE.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif25.36",
+          "sourceOriginal": [
+            25,
+            36
+          ],
+          "origin": [
+            195,
+            111
+          ],
+          "species": "minotauro",
+          "enemyId": 8,
+          "troopId": 9,
+          "sourceFlat": "OGRE.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif08.38",
+          "sourceOriginal": [
+            8,
+            38
+          ],
+          "origin": [
+            246,
+            117
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif09.39",
+          "sourceOriginal": [
+            9,
+            39
+          ],
+          "origin": [
+            243,
+            120
+          ],
+          "species": "homem-lagarto",
+          "enemyId": 3,
+          "troopId": 3,
+          "sourceFlat": "LIZRDMAN.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif20.40",
+          "sourceOriginal": [
+            20,
+            40
+          ],
+          "origin": [
+            210,
+            123
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif09.41",
+          "sourceOriginal": [
+            9,
+            41
+          ],
+          "origin": [
+            243,
+            126
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif11.41",
+          "sourceOriginal": [
+            11,
+            41
+          ],
+          "origin": [
+            237,
+            126
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif29.44",
+          "sourceOriginal": [
+            29,
+            44
+          ],
+          "origin": [
+            183,
+            135
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif29.45",
+          "sourceOriginal": [
+            29,
+            45
+          ],
+          "origin": [
+            183,
+            138
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif25.53",
+          "sourceOriginal": [
+            25,
+            53
+          ],
+          "origin": [
+            195,
+            162
+          ],
+          "species": "lobo",
+          "enemyId": 6,
+          "troopId": 7,
+          "sourceFlat": "WOLF.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif25.54",
+          "sourceOriginal": [
+            25,
+            54
+          ],
+          "origin": [
+            195,
+            165
+          ],
+          "species": "lobo",
+          "enemyId": 6,
+          "troopId": 7,
+          "sourceFlat": "WOLF.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif03.56",
+          "sourceOriginal": [
+            3,
+            56
+          ],
+          "origin": [
+            261,
+            171
+          ],
+          "species": "ghoul",
+          "enemyId": 5,
+          "troopId": 6,
+          "sourceFlat": "GHOUL.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif04.57",
+          "sourceOriginal": [
+            4,
+            57
+          ],
+          "origin": [
+            258,
+            174
+          ],
+          "species": "ghoul",
+          "enemyId": 5,
+          "troopId": 6,
+          "sourceFlat": "GHOUL.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif16.59",
+          "sourceOriginal": [
+            16,
+            59
+          ],
+          "origin": [
+            222,
+            180
+          ],
+          "species": "orc",
+          "enemyId": 7,
+          "troopId": 8,
+          "sourceFlat": "ORC.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.b3.enemy.mif17.59",
+          "sourceOriginal": [
+            17,
+            59
+          ],
+          "origin": [
+            219,
+            180
+          ],
+          "species": "orc",
+          "enemyId": 7,
+          "troopId": 8,
+          "sourceFlat": "ORC.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ],
+      "doors": [
+        {
+          "id": "stonekeep.b3.door.mif12.31",
+          "sourceOriginal": [
+            12,
+            31
+          ],
+          "view": [
+            77,
+            31
+          ],
+          "center": [
+            234,
+            96
+          ],
+          "axis": "north-south",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif15.31",
+          "sourceOriginal": [
+            15,
+            31
+          ],
+          "view": [
+            74,
+            31
+          ],
+          "center": [
+            225,
+            96
+          ],
+          "axis": "north-south",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif18.31",
+          "sourceOriginal": [
+            18,
+            31
+          ],
+          "view": [
+            71,
+            31
+          ],
+          "center": [
+            216,
+            96
+          ],
+          "axis": "north-south",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif20.31",
+          "sourceOriginal": [
+            20,
+            31
+          ],
+          "view": [
+            69,
+            31
+          ],
+          "center": [
+            210,
+            96
+          ],
+          "axis": "north-south",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.33",
+          "sourceOriginal": [
+            10,
+            33
+          ],
+          "view": [
+            79,
+            33
+          ],
+          "center": [
+            240,
+            102
+          ],
+          "axis": "east-west",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": 2,
+          "lockPolicy": "forceableOrdinary",
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.35",
+          "sourceOriginal": [
+            10,
+            35
+          ],
+          "view": [
+            79,
+            35
+          ],
+          "center": [
+            240,
+            108
+          ],
+          "axis": "east-west",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.38",
+          "sourceOriginal": [
+            10,
+            38
+          ],
+          "view": [
+            79,
+            38
+          ],
+          "center": [
+            240,
+            117
+          ],
+          "axis": "east-west",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif25.38",
+          "sourceOriginal": [
+            25,
+            38
+          ],
+          "view": [
+            64,
+            38
+          ],
+          "center": [
+            195,
+            117
+          ],
+          "axis": "north-south",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.42",
+          "sourceOriginal": [
+            10,
+            42
+          ],
+          "view": [
+            79,
+            42
+          ],
+          "center": [
+            240,
+            129
+          ],
+          "axis": "east-west",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif21.42",
+          "sourceOriginal": [
+            21,
+            42
+          ],
+          "view": [
+            68,
+            42
+          ],
+          "center": [
+            207,
+            129
+          ],
+          "axis": "east-west",
+          "raw": 45071,
+          "texture": "DCAS4.IMG",
+          "lockValue": 2,
+          "lockPolicy": "forceableOrdinary",
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif29.42",
+          "sourceOriginal": [
+            29,
+            42
+          ],
+          "view": [
+            60,
+            42
+          ],
+          "center": [
+            183,
+            129
+          ],
+          "axis": "east-west",
+          "raw": 45071,
+          "texture": "DCAS4.IMG",
+          "lockValue": 2,
+          "lockPolicy": "forceableOrdinary",
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.44",
+          "sourceOriginal": [
+            10,
+            44
+          ],
+          "view": [
+            79,
+            44
+          ],
+          "center": [
+            240,
+            135
+          ],
+          "axis": "east-west",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif12.46",
+          "sourceOriginal": [
+            12,
+            46
+          ],
+          "view": [
+            77,
+            46
+          ],
+          "center": [
+            234,
+            141
+          ],
+          "axis": "north-south",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": 2,
+          "lockPolicy": "forceableOrdinary",
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif15.46",
+          "sourceOriginal": [
+            15,
+            46
+          ],
+          "view": [
+            74,
+            46
+          ],
+          "center": [
+            225,
+            141
+          ],
+          "axis": "north-south",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif17.46",
+          "sourceOriginal": [
+            17,
+            46
+          ],
+          "view": [
+            72,
+            46
+          ],
+          "center": [
+            219,
+            141
+          ],
+          "axis": "north-south",
+          "raw": 45204,
+          "texture": "PORTCULS.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif25.46",
+          "sourceOriginal": [
+            25,
+            46
+          ],
+          "view": [
+            64,
+            46
+          ],
+          "center": [
+            195,
+            141
+          ],
+          "axis": "north-south",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": 1,
+          "lockPolicy": "forceableOrdinary",
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif24.49",
+          "sourceOriginal": [
+            24,
+            49
+          ],
+          "view": [
+            65,
+            49
+          ],
+          "center": [
+            198,
+            150
+          ],
+          "axis": "east-west",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif26.49",
+          "sourceOriginal": [
+            26,
+            49
+          ],
+          "view": [
+            63,
+            49
+          ],
+          "center": [
+            192,
+            150
+          ],
+          "axis": "east-west",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif24.56",
+          "sourceOriginal": [
+            24,
+            56
+          ],
+          "view": [
+            65,
+            56
+          ],
+          "center": [
+            198,
+            171
+          ],
+          "axis": "east-west",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.b3.door.mif26.56",
+          "sourceOriginal": [
+            26,
+            56
+          ],
+          "view": [
+            63,
+            56
+          ],
+          "center": [
+            192,
+            171
+          ],
+          "axis": "east-west",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        }
+      ]
+    },
+    {
+      "name": "A3",
+      "sector": "A3",
+      "entries": [
+        {
+          "id": "stonekeep.a3.enemy.mif18.05",
+          "sourceOriginal": [
+            18,
+            5
+          ],
+          "origin": [
+            216,
+            18
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif10.06",
+          "sourceOriginal": [
+            10,
+            6
+          ],
+          "origin": [
+            240,
+            21
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif16.06",
+          "sourceOriginal": [
+            16,
+            6
+          ],
+          "origin": [
+            222,
+            21
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif20.06",
+          "sourceOriginal": [
+            20,
+            6
+          ],
+          "origin": [
+            210,
+            21
+          ],
+          "species": "ghoul",
+          "enemyId": 5,
+          "troopId": 6,
+          "sourceFlat": "GHOUL.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif20.07",
+          "sourceOriginal": [
+            20,
+            7
+          ],
+          "origin": [
+            210,
+            24
+          ],
+          "species": "ghoul",
+          "enemyId": 5,
+          "troopId": 6,
+          "sourceFlat": "GHOUL.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif20.10",
+          "sourceOriginal": [
+            20,
+            10
+          ],
+          "origin": [
+            210,
+            33
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif17.12",
+          "sourceOriginal": [
+            17,
+            12
+          ],
+          "origin": [
+            219,
+            39
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif18.13",
+          "sourceOriginal": [
+            18,
+            13
+          ],
+          "origin": [
+            216,
+            42
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif29.13",
+          "sourceOriginal": [
+            29,
+            13
+          ],
+          "origin": [
+            183,
+            42
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif09.15",
+          "sourceOriginal": [
+            9,
+            15
+          ],
+          "origin": [
+            243,
+            48
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif11.15",
+          "sourceOriginal": [
+            11,
+            15
+          ],
+          "origin": [
+            237,
+            48
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif08.16",
+          "sourceOriginal": [
+            8,
+            16
+          ],
+          "origin": [
+            246,
+            51
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif28.16",
+          "sourceOriginal": [
+            28,
+            16
+          ],
+          "origin": [
+            186,
+            51
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif24.17",
+          "sourceOriginal": [
+            24,
+            17
+          ],
+          "origin": [
+            198,
+            54
+          ],
+          "species": "minotauro",
+          "enemyId": 8,
+          "troopId": 9,
+          "sourceFlat": "OGRE.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif26.17",
+          "sourceOriginal": [
+            26,
+            17
+          ],
+          "origin": [
+            192,
+            54
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif28.17",
+          "sourceOriginal": [
+            28,
+            17
+          ],
+          "origin": [
+            186,
+            54
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif08.21",
+          "sourceOriginal": [
+            8,
+            21
+          ],
+          "origin": [
+            246,
+            66
+          ],
+          "species": "aranha",
+          "enemyId": 9,
+          "troopId": 10,
+          "sourceFlat": "SPIDER.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif29.21",
+          "sourceOriginal": [
+            29,
+            21
+          ],
+          "origin": [
+            183,
+            66
+          ],
+          "species": "rato",
+          "enemyId": 1,
+          "troopId": 1,
+          "sourceFlat": "RAT.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        },
+        {
+          "id": "stonekeep.a3.enemy.mif20.28",
+          "sourceOriginal": [
+            20,
+            28
+          ],
+          "origin": [
+            210,
+            87
+          ],
+          "species": "esqueleto",
+          "enemyId": 4,
+          "troopId": 5,
+          "sourceFlat": "SKELETON.DFA",
+          "questSpecific": false,
+          "radius": 2,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ],
+      "doors": [
+        {
+          "id": "stonekeep.a3.door.mif26.15",
+          "sourceOriginal": [
+            26,
+            15
+          ],
+          "view": [
+            63,
+            15
+          ],
+          "center": [
+            192,
+            48
+          ],
+          "axis": "north-south",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.a3.door.mif25.17",
+          "sourceOriginal": [
+            25,
+            17
+          ],
+          "view": [
+            64,
+            17
+          ],
+          "center": [
+            195,
+            54
+          ],
+          "axis": "east-west",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.a3.door.mif26.19",
+          "sourceOriginal": [
+            26,
+            19
+          ],
+          "view": [
+            63,
+            19
+          ],
+          "center": [
+            192,
+            60
+          ],
+          "axis": "north-south",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        },
+        {
+          "id": "stonekeep.a3.door.mif29.19",
+          "sourceOriginal": [
+            29,
+            19
+          ],
+          "view": [
+            60,
+            19
+          ],
+          "center": [
+            183,
+            60
+          ],
+          "axis": "north-south",
+          "raw": 45070,
+          "texture": "DCAS3.IMG",
+          "lockValue": null,
+          "lockPolicy": null,
+          "triggerAtDoor": null
+        }
+      ]
+    }
+  ]
+}

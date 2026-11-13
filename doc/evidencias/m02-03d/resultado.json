@@ -1,0 +1,32 @@
+{
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Existing RAM preparation reaches arrival with Ria read/orientation30; only explicit fixture is prepared, no personal save loaded",
+    "Native north access -> court8,10, held input cannot move/bounce; actor/resources/quests/receipts unchanged",
+    "All intended court floor connected, queen/wall collision enforced; no through on player",
+    "Synthetic earlier stages10/20 get orientation only; no offer, acceptance, early destination or quest mutation",
+    "Full original-based offer and completed last text, default decline and held-input fence; Escape cancels even with Accept highlighted, preserving stage30/world",
+    "Explicit mouse selection/confirmation advances30->40 once, marks Stonekeep known but unavailable; no gold/EXP/items/recovery or MQ01/Ria mutation",
+    "Repeated audience/acceptance produces reminder only; no duplicate objectives or rewards",
+    "Diary records accepted request/current parchment objective, not delivery/conclusion; Stonekeep has no map/transfer",
+    "Court RAM restores stage/destination/actor; normal slots remain blocked and personal keys untouched",
+    "Native court exit returns to arrival10,5 outside the entrance trigger, without healing/bounce or quest effects",
+    "Emulated touch decline keeps request unaccepted; controlled fixture restored for persistence checks",
+    "Normal synthetic campaign native Save16/F5/Load retains court, accepted stage40 and known/unavailable destination, with resources and prior progress intact",
+    "Older arrival save receives only access5/door6; rest, Ria, actor and collected/defeated state preserved",
+    "Parent arrival generator also rebuilds court and preserves all earlier area/rest/outskirts outputs"
+  ],
+  "connectivity": {
+    "missing": [],
+    "queenBlocked": true,
+    "wallBlocked": true
+  },
+  "errors": [],
+  "missing": [],
+  "isolation": "Fresh Chrome context/origin; explicit RAM fixture, synthetic stages10/20/30 and native slot16 only; no battles or personal saves",
+  "pending": [
+    "owner court evaluation",
+    "new MV authoring/playtest not executed",
+    "no physical mobile test"
+  ]
+}

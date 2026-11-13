@@ -1,0 +1,218 @@
+{
+  "base": "901dfcb",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "environment": "headless Chrome, disposable profile, isolated RAM, controlled native victories, no campaign run",
+  "checks": [
+    "Source-backed7 IDs/origins, no initial overlaps; old24 entries/events, geometry/water/doors/campaign/assets untouched; parent reconstruction stable",
+    "Native dry/swim passability graph from entrance reaches7 origins and parchment, existing declared doors open; no geometry/under-wall adaptation required",
+    "All7 reused patrols make legal region4 steps within radius2, existing collisions retained",
+    "Actual individual keyboard contacts for all7, duplicate transition refused, native controlled victories/returns,7 independent defeats and receipts; repeat reward paths/start do not duplicate EXP/gold/items",
+    "RAM save/restore preserves quest/character/items/resources/points/receipts/7 defeats; older event arrays append new IDs without resurrecting defeated encounters",
+    "Area return before quest completion does not respawn or repeat rewards; parchment still needed/available, MQ01 preserved, normal saves blocked and localStorage untouched"
+  ],
+  "graph": {
+    "tiles": 29160,
+    "encounters": [
+      {
+        "id": "stonekeep.legacycrop.goblin.01",
+        "origin": [
+          159,
+          66
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "stonekeep.legacycrop.goblin.02",
+        "origin": [
+          147,
+          66
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "stonekeep.legacycrop.goblin.03",
+        "origin": [
+          156,
+          72
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "stonekeep.legacycrop.goblin.04",
+        "origin": [
+          153,
+          72
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "stonekeep.legacycrop.goblin.05",
+        "origin": [
+          150,
+          72
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "stonekeep.legacycrop.goblin.06",
+        "origin": [
+          144,
+          72
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "stonekeep.legacycrop.skeleton.01",
+        "origin": [
+          42,
+          69
+        ],
+        "reachable": true,
+        "approach": [
+          2,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "sourceReachable": true
+  },
+  "patrol": [
+    {
+      "id": "stonekeep.legacycrop.goblin.01",
+      "before": [
+        159,
+        66
+      ],
+      "after": [
+        159,
+        67
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.02",
+      "before": [
+        147,
+        66
+      ],
+      "after": [
+        147,
+        67
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.03",
+      "before": [
+        156,
+        72
+      ],
+      "after": [
+        156,
+        73
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.04",
+      "before": [
+        153,
+        72
+      ],
+      "after": [
+        153,
+        73
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.05",
+      "before": [
+        150,
+        72
+      ],
+      "after": [
+        150,
+        73
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.legacycrop.goblin.06",
+      "before": [
+        144,
+        72
+      ],
+      "after": [
+        144,
+        73
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.legacycrop.skeleton.01",
+      "before": [
+        42,
+        69
+      ],
+      "after": [
+        42,
+        70
+      ],
+      "region": 4
+    }
+  ],
+  "expAwarded": 200,
+  "defeats": [
+    "stonekeep.legacycrop.goblin.01",
+    "stonekeep.legacycrop.goblin.02",
+    "stonekeep.legacycrop.goblin.03",
+    "stonekeep.legacycrop.goblin.04",
+    "stonekeep.legacycrop.goblin.05",
+    "stonekeep.legacycrop.goblin.06",
+    "stonekeep.legacycrop.skeleton.01"
+  ],
+  "errors": [],
+  "missing": [],
+  "manual": "Deferred by responsible; no approval inferred",
+  "water": "No geometry changes; under-wall original routes remain investigation pending"
+}

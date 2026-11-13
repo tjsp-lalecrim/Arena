@@ -1,0 +1,29 @@
+{
+  "version": "ghoul-v01",
+  "tool": "image_gen built-in",
+  "prompt": "Use case: game sprite animation. Produce ONE 6-column by 4-row transparent atlas, exactly24 distinct full-body ghoul drawings. References: image1 original Arena wiki sprite is IDENTITY (olive/mustard mottled skin, lean but sinewy hunched humanoid, very long low-reaching arms, angular head and small pointed ears/head silhouette, red eyes, bare clawed feet, simple reddish-brown tapered CLUB with one pale metal/bone spike, no armor/clothes/shield). Image2 decoded original GHOUL3.CFA is MOTION/SILHOUETTE evidence: stooped posture and club raised with both hands above head before striking, low lunging body. Image3 approved skeleton atlas is painted dark fantasy FINISH, equal-cell FORMAT and support-line reference only, NOT species identity; do not make this ghoul skeletal or holding a sword. Clear true lateral battle view; every source figure faces RIGHT, game mirrors the enemy once to face left. Preserve Arena ghoul identity, NOT generic human zombie, not green goblin in armor. Modern dark fantasy figurative painted finish, muted olive ochre skin, subtle mottled texture, lean long limbs and hunched back, threatening compact angular face and small red eyes WITHOUT giant glow. Same ghoul and SAME club proportions throughout. Wide separate cells and transparent margins, no cut limbs or club, no floor/shadow/background/text/grid. Row1 six actual articulated idle drawings with restrained breathing at chest/shoulders and low club sway, returning to initial guard. Row2 six attack sequence drawings:1 low guard,2draw club back,3overhead windup with both hands holding same club,4strong forward/downward strike to right with hunched body (impact),5low followthrough,6return same guard. Keep grip/club connected to hands, no detached weapon or extra arm. Row3 six hurt/recover drawings:guard,small recoil,peak recoil,bent recovering,straightening,same guard. Row4 six coherent defeat drawings: knees weaken, bent kneel, side collapse, torso lowering,settling,stable collapsed body and club on baseline; no gore, dismemberment or dissolving effect. Anatomical articulation in each frame, not static copies shifted/rotated. Same canvas, figure scale, illumination upper left and foot baseline across all cells, no involuntary camera/size changes. Source atlas landscape3:2, 6x4 clearly separated evenly spaced figures. Final engine cells192x128, neutral body about88px tall; allow headroom for raised club and generous horizontal action margins. Actual alpha transparent background. Only this one exemplar, no exploration or variants.",
+  "references": [
+    {
+      "file": "tmp/ghoul-review/identity.png",
+      "source": "local Arena_Monsters wiki PDF5, cropped sprite",
+      "role": "identity/color/silhouette; original low-resolution limits acknowledged"
+    },
+    {
+      "file": "tmp/ghoul-review/GHOUL3.CFA.png",
+      "source": "GLOBAL.BSA/GHOUL3.CFA decoded with existing reader and original PAL.COL",
+      "role": "overhead club motion and hunched/long-arm proportions"
+    },
+    {
+      "file": "art/masters/stonekeep-skeleton-v01/sheet-v01.png",
+      "role": "approved finish/layout/support only, not species identity"
+    }
+  ],
+  "master": "art/masters/stonekeep-ghoul-v01/sheet-v01.png",
+  "approval": {
+    "status": "owner explicitly approved battle animation",
+    "version": "8ea06c9",
+    "scope": "battle animation only; no balance, rewards or walking/island validation inferred"
+  },
+  "scope": "one battle exemplar; no walk/group",
+  "interpretation": "Detailed skin/face finish, hurt/return and six-frame collapse are artistic adaptation; no new disease mechanic or supernatural power inferred."
+}

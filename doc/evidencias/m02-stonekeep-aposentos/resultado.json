@@ -1,0 +1,122 @@
+{
+  "base": "4357999",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Existing hub route; three distinct floor positions, contact access, parchment/exit reachable with all sixteen encounters alive; bounded patrol without overlap",
+    "Synthetic pre-expansion save appends three missing events without changing character, quests, resources, inventory or receipts",
+    "Two native contacts, single participant/transition; controlled native victories mark independent defeats and grant EXP15/receipt once each, third rat, six ghouls and seven skeletons alive",
+    "Synthetic native Save16/F5/Load preserves independent defeats/receipts; first and second rat not revived; real transfer out/back before MQ02 completion does not respawn"
+  ],
+  "placement": {
+    "points": [
+      {
+        "id": "stonekeep.apartments.rat.01",
+        "eventId": 16,
+        "origin": [
+          114,
+          36
+        ],
+        "actual": [
+          114,
+          36
+        ],
+        "file": "$Arena_rat_walk_r02",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.apartments.rat.02",
+        "eventId": 17,
+        "origin": [
+          114,
+          39
+        ],
+        "actual": [
+          114,
+          39
+        ],
+        "file": "$Arena_rat_walk_r02",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.apartments.rat.03",
+        "eventId": 18,
+        "origin": [
+          117,
+          42
+        ],
+        "actual": [
+          117,
+          42
+        ],
+        "file": "$Arena_rat_walk_r02",
+        "defeated": false
+      }
+    ],
+    "source": true,
+    "exit": true,
+    "contactAccess": [
+      [
+        "stonekeep.apartments.rat.01",
+        true
+      ],
+      [
+        "stonekeep.apartments.rat.02",
+        true
+      ],
+      [
+        "stonekeep.apartments.rat.03",
+        true
+      ]
+    ]
+  },
+  "patrol": [
+    [
+      "stonekeep.apartments.rat.01",
+      114,
+      36
+    ],
+    [
+      "stonekeep.apartments.rat.02",
+      114,
+      39
+    ],
+    [
+      "stonekeep.apartments.rat.03",
+      117,
+      42
+    ]
+  ],
+  "trace": {
+    "16": [
+      "114,36",
+      "114,37"
+    ],
+    "17": [
+      "114,39",
+      "114,40"
+    ],
+    "18": [
+      "117,42",
+      "117,43"
+    ]
+  },
+  "defeated": [
+    "stonekeep.apartments.rat.01",
+    "stonekeep.apartments.rat.02"
+  ],
+  "expPerEnemy": 15,
+  "optionalGroupExp": 45,
+  "errors": [],
+  "missing": [],
+  "scope": "Disposable origin/context, RAM checkpoint and synthetic native slot16; two controlled native victories only, no full battle/animation replay",
+  "pending": [
+    "Manual positioning/circulation evaluation can join Stonekeep integration",
+    "M02-BAL: cumulative EXP and resource/return/rest impact",
+    "Four confirmed wolves in constructed rooms still need an approved art/combat/map exemplar",
+    "No new MV editor/mobile test"
+  ]
+}

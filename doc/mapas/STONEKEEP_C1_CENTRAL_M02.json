@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "base": "6a31fa9",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "bounds": [
+    0,
+    70,
+    29,
+    79
+  ],
+  "doors": [],
+  "entries": [
+    {
+      "id": "stonekeep.c1c.enemy.mif69.70",
+      "eventId": 454,
+      "sourceOriginal": [
+        69,
+        70
+      ],
+      "origin": [
+        63,
+        213
+      ],
+      "species": "esqueleto",
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceFlat": "SKELETON.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c1c.enemy.mif78.70",
+      "eventId": 455,
+      "sourceOriginal": [
+        78,
+        70
+      ],
+      "origin": [
+        36,
+        213
+      ],
+      "species": "minotauro",
+      "enemyId": 8,
+      "troopId": 9,
+      "sourceFlat": "OGRE.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c1c.enemy.mif82.73",
+      "eventId": 456,
+      "sourceOriginal": [
+        82,
+        73
+      ],
+      "origin": [
+        24,
+        222
+      ],
+      "species": "lobo",
+      "enemyId": 6,
+      "troopId": 7,
+      "sourceFlat": "WOLF.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c1c.enemy.mif81.74",
+      "eventId": 457,
+      "sourceOriginal": [
+        81,
+        74
+      ],
+      "origin": [
+        27,
+        225
+      ],
+      "species": "lobo",
+      "enemyId": 6,
+      "troopId": 7,
+      "sourceFlat": "WOLF.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c1c.enemy.mif82.75",
+      "eventId": 458,
+      "sourceOriginal": [
+        82,
+        75
+      ],
+      "origin": [
+        24,
+        228
+      ],
+      "species": "lobo",
+      "enemyId": 6,
+      "troopId": 7,
+      "sourceFlat": "WOLF.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c1c.enemy.mif64.76",
+      "eventId": 459,
+      "sourceOriginal": [
+        64,
+        76
+      ],
+      "origin": [
+        78,
+        231
+      ],
+      "species": "esqueleto",
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceFlat": "SKELETON.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c1c.enemy.mif64.77",
+      "eventId": 460,
+      "sourceOriginal": [
+        64,
+        77
+      ],
+      "origin": [
+        78,
+        234
+      ],
+      "species": "esqueleto",
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceFlat": "SKELETON.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c1c.enemy.mif86.79",
+      "eventId": 461,
+      "sourceOriginal": [
+        86,
+        79
+      ],
+      "origin": [
+        12,
+        240
+      ],
+      "species": "ghoul",
+      "enemyId": 5,
+      "troopId": 6,
+      "sourceFlat": "GHOUL.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "points": [
+    {
+      "name": "C1 central · corredor norte",
+      "position": [
+        63,
+        216
+      ]
+    },
+    {
+      "name": "C1 central · Minotauro",
+      "position": [
+        36,
+        216
+      ]
+    },
+    {
+      "name": "C1 central · lobos",
+      "position": [
+        27,
+        222
+      ]
+    },
+    {
+      "name": "C1 central · esqueletos",
+      "position": [
+        75,
+        234
+      ]
+    },
+    {
+      "name": "C1 central · ghoul sul",
+      "position": [
+        15,
+        240
+      ]
+    }
+  ],
+  "routes": {
+    "stonekeep.c1c.enemy.mif69.70": {
+      "steps": 3,
+      "bounds": [
+        63,
+        213,
+        63,
+        216
+      ],
+      "outsideBand": [],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c1c.enemy.mif78.70": {
+      "steps": 36,
+      "bounds": [
+        36,
+        211,
+        63,
+        216
+      ],
+      "outsideBand": [],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c1c.enemy.mif82.73": {
+      "steps": 57,
+      "bounds": [
+        24,
+        211,
+        63,
+        222
+      ],
+      "outsideBand": [],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c1c.enemy.mif81.74": {
+      "steps": 55,
+      "bounds": [
+        27,
+        216,
+        63,
+        230
+      ],
+      "outsideBand": [],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c1c.enemy.mif82.75": {
+      "steps": 55,
+      "bounds": [
+        24,
+        216,
+        63,
+        230
+      ],
+      "outsideBand": [],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c1c.enemy.mif64.76": {
+      "steps": 62,
+      "bounds": [
+        58,
+        216,
+        78,
+        242
+      ],
+      "outsideBand": [
+        [
+          64,
+          80
+        ],
+        [
+          65,
+          80
+        ],
+        [
+          66,
+          80
+        ],
+        [
+          67,
+          80
+        ]
+      ],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c1c.enemy.mif64.77": {
+      "steps": 59,
+      "bounds": [
+        58,
+        216,
+        78,
+        242
+      ],
+      "outsideBand": [
+        [
+          64,
+          80
+        ],
+        [
+          65,
+          80
+        ],
+        [
+          66,
+          80
+        ],
+        [
+          67,
+          80
+        ]
+      ],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c1c.enemy.mif86.79": {
+      "steps": 81,
+      "bounds": [
+        12,
+        216,
+        63,
+        242
+      ],
+      "outsideBand": [
+        [
+          82,
+          80
+        ],
+        [
+          83,
+          80
+        ],
+        [
+          84,
+          80
+        ],
+        [
+          85,
+          80
+        ],
+        [
+          86,
+          80
+        ]
+      ],
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    }
+  },
+  "locksInBand": [],
+  "triggersInBand": [
+    [
+      63,
+      70,
+      2,
+      255
+    ],
+    [
+      62,
+      71,
+      2,
+      255
+    ],
+    [
+      66,
+      71,
+      4,
+      255
+    ],
+    [
+      79,
+      75,
+      5,
+      255
+    ],
+    [
+      72,
+      70,
+      5,
+      255
+    ],
+    [
+      80,
+      72,
+      255,
+      18
+    ],
+    [
+      60,
+      77,
+      255,
+      19
+    ]
+  ],
+  "connection": "Native C1 north corridor into central; lower rooms use existing edge corridor Y80 (MV242), without new content there. No new geometry/doors/water; no DOS observation.",
+  "confidence": "Original MAP1/FLOR and inventory/STKEEP1.INF declarations; source coordinates mirrored then scaled3x3"
+}

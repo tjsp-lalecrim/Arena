@@ -1,0 +1,160 @@
+{
+  "version": "spider-v01",
+  "enemyId": 9,
+  "troopId": 10,
+  "enemy": {
+    "name": "Aranha",
+    "params": [
+      65,
+      0,
+      12,
+      4,
+      0,
+      4,
+      16,
+      5
+    ],
+    "hit": 0.9
+  },
+  "lab": {
+    "mapId": 12,
+    "x": 80,
+    "y": 39,
+    "direction": 4
+  },
+  "entry": {
+    "id": "technical.stonekeep.spider.walk.arrival",
+    "mapId": 16,
+    "x": 4,
+    "y": 9,
+    "direction": 8
+  },
+  "roomSourceEventNote": "ArenaEncounter:technical.stonekeep.orc.walk.01",
+  "labLoot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "isolated battle pilot only",
+    "source": "Empty rewards only for Spider battle/patrol laboratories; campaign uses its explicit separate configuration."
+  },
+  "campaign": {
+    "enabled": true,
+    "exp": 80,
+    "loot": {
+      "gold": {
+        "chance": 0.16,
+        "min": 6,
+        "max": 60
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "provisional-M02-BAL",
+      "source": "Local Arena_Monsters PDF20:16% chance6-60gold. Only this documented reward enabled; no new items/effects."
+    },
+    "source": "EXP80 provisional MV scale, slightly above Minotaur60/Ghoul75: original Spider HP40-70 and HP*20+500 exceed Minotaur base HP*20+300, not a direct conversion. Gold16%6-60 from local Monsters PDF20. Combat stats/assets unchanged; paralysis deferred."
+  },
+  "encounters": {
+    "schemaVersion": 1,
+    "mapId": 16,
+    "areaId": "technical.stonekeep.spider.walk",
+    "completionQuestId": "MQ02",
+    "mapVisuals": {
+      "9": {
+        "file": "$Arena_spider_walk_v01",
+        "cell": [
+          96,
+          96
+        ],
+        "ground": 94,
+        "animationWait": 10,
+        "groundByDirection": {
+          "2": 72,
+          "4": 72,
+          "6": 72,
+          "8": 72
+        }
+      }
+    },
+    "entries": [
+      {
+        "id": "technical.stonekeep.spider.walk.01",
+        "eventId": 1,
+        "enemyId": 9,
+        "troopId": 10,
+        "origin": [
+          9,
+          6
+        ],
+        "sourceFlat": "Inspection only; original flat59 SPIDER.DFA/ITEM40 -> Spider/SPIDER@.CFA,20 campaign positions remain unplaced.",
+        "questSpecific": true,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          4
+        ],
+        "scale": 1
+      }
+    ]
+  },
+  "source": "Original flat59 SPIDER.DFA/ITEM40 -> creatureIndex8 Spider/SPIDER@.CFA; Monsters local PDF19-20 HP40-70/damage4-20, high speed/agility. HP65/ATQ12/DEF4/MDF4/AGI16/HIT90 provisional turn-based adaptation, no paralysis/venom/webs. Lab-only0EXP/loot; campaign EXP80 provisional, gold16%6-60 from Monsters local PDF20; no new effects."
+}

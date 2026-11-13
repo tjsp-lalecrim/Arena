@@ -1,0 +1,36 @@
+{
+  "browser": "156.0.8078.76",
+  "base": "faccbec",
+  "checks": [
+    "Explicit RAM lab prepares accepted MQ02; all44 plugins/configs load, no personal save",
+    "Unknown Stonekeep cannot travel; orientation unchanged before acceptance",
+    "Road travel defaults to decline; Escape preserves position, quest and all resources",
+    "Accepted road interaction reaches real stonekeep.entry with state unchanged; return remains available without item",
+    "Native exit before collection returns safely to Rihad, no mission completion/recovery/rewards",
+    "Original breach/shore route connects to registered water; native submersion/ripple and keyboard step, no resource cost/regeneration",
+    "Native BFS reaches source/exit; all reachable water-wall edges blocked, unmarked water blocked",
+    "Shared swim registry selects original Map008 config unchanged, excludes unregistered maps and preserves vehicle exclusion",
+    "Lab blocks slots; separate synthetic normal Save16/F5/Load retains swimming position/resources/MQ02",
+    "Native source interaction grants one important item/stage50; repeated collection no grant; discard/sale protected",
+    "Controlled missing-item fixture reopens same source, restores only one needed unit, no stage/reward repetition",
+    "Return/diary point to court; save/reload preserves recovered item and active quest; no delivery/Fang Lair",
+    "Synthetic legitimate receipt prevents recovery after delivery; fixture only, no delivery event in campaign",
+    "Parent generator retains Stonekeep bindings/map/item and prior arrival/court/rest/outskirts outputs"
+  ],
+  "collisions": {
+    "sourceReachable": true,
+    "exitReachable": true,
+    "waterWall": 255,
+    "waterCount": 4419,
+    "unmarked": true
+  },
+  "errors": [],
+  "missing": [],
+  "isolation": "Disposable origin/context, RAM lab then synthetic normal slot16 only; no personal save, battle or campaign replay",
+  "pending": [
+    "owner sample evaluation",
+    "ghoul/skeleton/wolf/rat route encounters not represented",
+    "new MV authoring/playtest not executed",
+    "physical mobile not tested"
+  ]
+}

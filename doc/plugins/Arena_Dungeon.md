@@ -1,3 +1,19 @@
+## Consumidor do bloco A2/B2 — extensão de configuração
+
+Dezesseis portas adicionais semLOCK próprio usam o mesmo componente9partes/24frames e as APIs existentes. `stonekeep-door-components.cjs` extrai somente a montagem offline já usada por A2 centro, preservando seus bytes/eventos, e é reutilizado pelo compilador do bloco; nenhuma mudança no plugin de execução ou nova mecânica de chave. As portas de acesso LOCK2/3 permanecem passagens provisórias não registradas como concluídas. [Cobertura, dependências e evidências por unidade](../STONEKEEP_M02_04.md#bloco-a2b2--ampliação-temporária-autorizada). Região6 nas soleiras mantém patrulhas fora das dobradiças. Map008 e campanha Map012 inalterados.
+
+## Consumidor A2 centro — configuração, sem mudança de API
+
+Map015 acrescenta3portas semLOCK/TRIG em `STONEKEEP_A2_PORTAS_CENTRO_M02.json`, compiladas por `stonekeep-a2-central-doors.cjs` a partir do componente9partes já registrado. Mesmos24frames, orientação pelos lados, proteção de envelope e self-switches individuais. Sem lógica nova de chave/fechadura: as3LOCK1 pendentes não entram neste registro. [Coordenadas, limites e cinco grupos focais](../STONEKEEP_M02_04.md#a2-centro--três-portas-sem-lock). Snapshots RAM antigos recebem os novos IDs pelo hook existente de Arena_StonekeepWhole; Map008/Map012 preservados.
+
+## Extensão A2-E — portas por mapa (M02)
+
+`registerDoors(mapId,{mapId,doors,doorAnimationFrames})` e `doorConfiguration()` acrescentam somente o consumidor Map015/Stonekeep. Map008 continua autoritativo em ArenaDungeon.json. APIs door/open/close/toggle usam o mapa corrente; self-switches carregam o mapId correto, mesmas nove partes, envelope e24frames. Nenhum registro para outros mapas, nenhuma mudança de motor ou geração artística. Tesouros/chave/revisão de MQ01 continuam exclusivos de Map008. A seleção por mapa é derivada e não gravada no save; transições do Game_Map e self-switches nativos continuam serializados. Regressão focal Map008 executada; [cobertura/fontes](../STONEKEEP_M02_04.md#faixa-a2-e--primeiro-setor-funcional-no-map015).
+
+## Extensão M02-04 — natação por mapa
+
+Contrato aditivo `registerSwimming(mapId,config)` / `swimmingConfiguration()` reutiliza os mesmos hooks de passabilidade, bush, posição e ondulação para o consumidor Stonekeep. Map008 continua usando ArenaDungeon.json; mapas não registrados e veículos não recebem esse estado. Nenhum custo/regeneração, edição do motor ou nova migração de save. Portas/tesouros/reconstrução continuam limitados a Map008. [Consumidor, configuração e regressão focal](Arena_Stonekeep.md).
+
 ## Arena_Dungeon0.3.0 — R03 (vigente)
 
 Geometria e assets ortogonais conforme DIRETIVA_DE_MAPAS.md e DUNGEON_M01_14_R03.md. Schema/revisão do mapa3, animação30atualizações, mesmas APIs e regras de água R02. Saves anteriores reconstruídos em168 eventos, mantendo126 IDs de porta e recursos/inventário. A reconstrução é limitada ao mapa8. attachments registra16 fontes e faces válidas; primeira folha visual é independente de colisão e ponto lógico. Instâncias de parede são wall-only; lajes na camada1, tesouros abaixo do jogador. Pipeline build-dungeon-r03-assets.py → build-dungeon-map.py; não reempacotar R03 com o gerador histórico R02. Nenhuma dependência externa ou mudança de loot/consumo. Atualização de esquema é da geometria do laboratório, não dos sistemas de progressão.

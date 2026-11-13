@@ -1,0 +1,299 @@
+{
+  "source": "art/masters/stonekeep-skeleton-walk-v01/sheet-v01.png",
+  "sourceSha256": "fcf0eb7ba678558e0eaa87261edf674c850be826ba255c9dc0c92a981d09a533",
+  "output": "img/characters/$Arena_skeleton_walk_v01.png",
+  "outputSha256": "e5aea50aaf77ec52cce5e7b6b00311329acdee4287bbb3f6eafa9558dae531d8",
+  "scale": 0.15730337078651685,
+  "cell": [
+    64,
+    64
+  ],
+  "ground": 62,
+  "rows": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "order": [
+    0,
+    1,
+    2,
+    6,
+    7,
+    8,
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
+  ],
+  "frames": [
+    {
+      "direction": 2,
+      "pattern": 0,
+      "sourceIndex": 0,
+      "sourceRect": [
+        128,
+        16,
+        328,
+        328
+      ],
+      "placement": [
+        16,
+        13
+      ],
+      "alphaBox": [
+        16,
+        13,
+        47,
+        62
+      ],
+      "sha256": "4bc7a954cf42df65068d6810061600f43859de40d0f03d8df96682f0c53e9cc3"
+    },
+    {
+      "direction": 2,
+      "pattern": 1,
+      "sourceIndex": 1,
+      "sourceRect": [
+        455,
+        17,
+        634,
+        320
+      ],
+      "placement": [
+        19,
+        14
+      ],
+      "alphaBox": [
+        19,
+        14,
+        47,
+        62
+      ],
+      "sha256": "1fb9c98a1b5b942e81029790134015504e7133d6f1481f1c16ca99f1d774eded"
+    },
+    {
+      "direction": 2,
+      "pattern": 2,
+      "sourceIndex": 2,
+      "sourceRect": [
+        770,
+        21,
+        958,
+        331
+      ],
+      "placement": [
+        18,
+        13
+      ],
+      "alphaBox": [
+        18,
+        13,
+        48,
+        62
+      ],
+      "sha256": "4f01b84f92bc6bbcf8b61e277f66d9d54a5a0c663fac7e5fab0d5dff185f3588"
+    },
+    {
+      "direction": 4,
+      "pattern": 0,
+      "sourceIndex": 6,
+      "sourceRect": [
+        108,
+        701,
+        327,
+        1040
+      ],
+      "placement": [
+        18,
+        9
+      ],
+      "alphaBox": [
+        18,
+        9,
+        52,
+        62
+      ],
+      "sha256": "62658fbf1b8d2ea566d5fc2901e4d995ac46ef27692956def6cf8b752a8b4cbf"
+    },
+    {
+      "direction": 4,
+      "pattern": 1,
+      "sourceIndex": 7,
+      "sourceRect": [
+        446,
+        694,
+        610,
+        1034
+      ],
+      "placement": [
+        16,
+        9
+      ],
+      "alphaBox": [
+        16,
+        9,
+        42,
+        62
+      ],
+      "sha256": "090c4fdeb3403661a8c00e3168e848134298267f85e452caffa1aa43a9501c1c"
+    },
+    {
+      "direction": 4,
+      "pattern": 2,
+      "sourceIndex": 8,
+      "sourceRect": [
+        782,
+        694,
+        979,
+        1037
+      ],
+      "placement": [
+        21,
+        8
+      ],
+      "alphaBox": [
+        21,
+        8,
+        52,
+        62
+      ],
+      "sha256": "c3d052152e320775550827c63009e71594c67f27cc044b4647cec21e396cafca"
+    },
+    {
+      "direction": 6,
+      "pattern": 0,
+      "sourceIndex": 3,
+      "sourceRect": [
+        110,
+        346,
+        302,
+        684
+      ],
+      "placement": [
+        13,
+        9
+      ],
+      "alphaBox": [
+        13,
+        9,
+        43,
+        62
+      ],
+      "sha256": "62ec6fb86d7ec72fdf21e5794e52a1e46e0c9465fffed024292e9e94564c178d"
+    },
+    {
+      "direction": 6,
+      "pattern": 1,
+      "sourceIndex": 4,
+      "sourceRect": [
+        478,
+        343,
+        629,
+        682
+      ],
+      "placement": [
+        22,
+        9
+      ],
+      "alphaBox": [
+        22,
+        9,
+        46,
+        62
+      ],
+      "sha256": "c946d815e91fed6342a05bed4091087892edec890ab9bb2f24b9786849a104a6"
+    },
+    {
+      "direction": 6,
+      "pattern": 2,
+      "sourceIndex": 5,
+      "sourceRect": [
+        765,
+        342,
+        956,
+        681
+      ],
+      "placement": [
+        12,
+        9
+      ],
+      "alphaBox": [
+        12,
+        9,
+        42,
+        62
+      ],
+      "sha256": "7e7ecdb91c18205597197b2ec896235b757e38af7360ed5bca00b9a23c524a2e"
+    },
+    {
+      "direction": 8,
+      "pattern": 0,
+      "sourceIndex": 9,
+      "sourceRect": [
+        120,
+        1047,
+        374,
+        1403
+      ],
+      "placement": [
+        17,
+        6
+      ],
+      "alphaBox": [
+        17,
+        6,
+        57,
+        62
+      ],
+      "sha256": "e83ced78c4c169d13bfbf5c5e9ce985d1c4bd3e9e787e17c5787a1a55bffe10e"
+    },
+    {
+      "direction": 8,
+      "pattern": 1,
+      "sourceIndex": 10,
+      "sourceRect": [
+        456,
+        1051,
+        683,
+        1389
+      ],
+      "placement": [
+        18,
+        9
+      ],
+      "alphaBox": [
+        18,
+        9,
+        54,
+        62
+      ],
+      "sha256": "ada192de33b5e5bdfb99a3cb69c74803f3982663e0f7d63ef13860c072dfb3db"
+    },
+    {
+      "direction": 8,
+      "pattern": 2,
+      "sourceIndex": 11,
+      "sourceRect": [
+        773,
+        1047,
+        1026,
+        1398
+      ],
+      "placement": [
+        17,
+        7
+      ],
+      "alphaBox": [
+        17,
+        7,
+        57,
+        62
+      ],
+      "sha256": "25dc49b582c6f7c48ed5a8f477f05dc2f7ff9ed5fb9c3ab12871d3a31fe5d3fb"
+    }
+  ],
+  "approval": "Owner approved patrol in 6956516; no additional balance, reward or persistence coverage reported. No group expansion authorized."
+}

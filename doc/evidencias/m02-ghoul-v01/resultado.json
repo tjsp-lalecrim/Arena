@@ -1,0 +1,136 @@
+{
+  "base": "443e43b",
+  "browser": "156.0.8078.76",
+  "engine": "MV1.6.1",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Clean native boot and Debug > Combat route; one Ghoul, deterministic full resource fixture, normal slots blocked",
+    "All6 authored frames in wait/attack/hurt/defeat, native impact timing and damage; attack/heavy/fire cost exactly once, no disease or new resistance",
+    "Victory returns safely without repeat; one empty reward receipt, EXP/items/gold/storage unchanged",
+    "Reopening same hub entry resets pilot for repeat; native defeat/game over from1HP fixture"
+  ],
+  "initial": {
+    "mp": 50,
+    "vigor": 100,
+    "exp": 50,
+    "gold": 0,
+    "items": "{\"2\":1,\"3\":1,\"4\":1}",
+    "storage": "{}"
+  },
+  "result": {
+    "trace": {
+      "frames": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "strike": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "defeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "uses": [
+        1,
+        6,
+        10
+      ],
+      "damage": [
+        {
+          "actor": false,
+          "skill": 1,
+          "value": 20
+        },
+        {
+          "actor": true,
+          "skill": 1,
+          "value": 18
+        },
+        {
+          "actor": false,
+          "skill": 6,
+          "value": 32
+        },
+        {
+          "actor": true,
+          "skill": 1,
+          "value": 18
+        },
+        {
+          "actor": false,
+          "skill": 10,
+          "value": 20
+        }
+      ],
+      "impacts": [
+        {
+          "key": "strike",
+          "index": 3,
+          "tick": 21,
+          "total": 40,
+          "done": false,
+          "impactTick": 21,
+          "released": false,
+          "weaponId": null
+        },
+        {
+          "key": "strike",
+          "index": 3,
+          "tick": 21,
+          "total": 40,
+          "done": false,
+          "impactTick": 21,
+          "released": false,
+          "weaponId": null
+        }
+      ]
+    },
+    "mp": 44,
+    "vigor": 88,
+    "exp": 50,
+    "gold": 0,
+    "items": "{\"2\":1,\"3\":1,\"4\":1}",
+    "storage": "{}",
+    "position": [
+      12,
+      80,
+      39
+    ],
+    "receipts": 1
+  },
+  "errors": [],
+  "missing": [],
+  "recording": "Native canvas30fps, normal engine time; RNG .5 only in automated battle, no time/stat acceleration (except separate defeat fixture1HP)",
+  "pending": [
+    "Owner functional/visual evaluation",
+    "No walking/map/island group",
+    "Campaign EXP/loot and disease adaptation not implemented",
+    "No new MV editor/mobile test"
+  ]
+}

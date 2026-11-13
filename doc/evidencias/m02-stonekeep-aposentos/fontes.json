@@ -1,0 +1,193 @@
+{
+  "map": "39699021.MIF",
+  "mapSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "inf": "GLOBAL.BSA/STKEEP1.INF",
+  "infDecodedRawSha256": "dde24f1c598acf3d3901e8ba5fdd14989c9af54b60a395fc84a35f218ee3d4f1",
+  "infNormalizedLfSha256": "dde24f1c598acf3d3901e8ba5fdd14989c9af54b60a395fc84a35f218ee3d4f1",
+  "infCheck": "Fresh read/decrypt from installed GLOBAL.BSA equals previously decoded STKEEP1 after CRCRLF normalization. Raw bytes and normalized text have separate hashes.",
+  "flats": {
+    "rat": {
+      "index": 52,
+      "itemAnnotation": 32,
+      "raw": "0x8034",
+      "resource": "rat.dfa"
+    },
+    "wolf": {
+      "index": 55,
+      "itemAnnotation": 35,
+      "raw": "0x8037",
+      "resource": "wolf.dfa"
+    }
+  },
+  "included": {
+    "rat": [
+      {
+        "sourceOriginal": [
+          44,
+          11
+        ],
+        "origin": [
+          114,
+          36
+        ]
+      },
+      {
+        "sourceOriginal": [
+          44,
+          12
+        ],
+        "origin": [
+          114,
+          39
+        ]
+      },
+      {
+        "sourceOriginal": [
+          43,
+          13
+        ],
+        "origin": [
+          117,
+          42
+        ]
+      }
+    ],
+    "wolf": [
+      {
+        "sourceOriginal": [
+          52,
+          16
+        ],
+        "origin": [
+          90,
+          51
+        ]
+      },
+      {
+        "sourceOriginal": [
+          44,
+          17
+        ],
+        "origin": [
+          114,
+          54
+        ]
+      },
+      {
+        "sourceOriginal": [
+          49,
+          17
+        ],
+        "origin": [
+          99,
+          54
+        ]
+      },
+      {
+        "sourceOriginal": [
+          50,
+          17
+        ],
+        "origin": [
+          96,
+          54
+        ]
+      }
+    ]
+  },
+  "outsideCrop": {
+    "rat": [
+      [
+        32,
+        11
+      ],
+      [
+        29,
+        13
+      ],
+      [
+        30,
+        14
+      ],
+      [
+        28,
+        16
+      ],
+      [
+        30,
+        16
+      ],
+      [
+        26,
+        17
+      ],
+      [
+        28,
+        17
+      ],
+      [
+        29,
+        21
+      ],
+      [
+        45,
+        51
+      ],
+      [
+        44,
+        52
+      ],
+      [
+        22,
+        61
+      ],
+      [
+        24,
+        61
+      ],
+      [
+        23,
+        62
+      ]
+    ],
+    "wolf": [
+      [
+        25,
+        53
+      ],
+      [
+        25,
+        54
+      ],
+      [
+        20,
+        70
+      ],
+      [
+        21,
+        71
+      ],
+      [
+        82,
+        73
+      ],
+      [
+        81,
+        74
+      ],
+      [
+        82,
+        75
+      ],
+      [
+        45,
+        84
+      ],
+      [
+        44,
+        85
+      ]
+    ]
+  },
+  "scope": "Bounded MAP1 rat/wolf references only. Exact declared cells; existing floor connectivity checked. No new DOS gameplay or claim of original patrol trajectories. No species inferred from general wiki prose."
+}

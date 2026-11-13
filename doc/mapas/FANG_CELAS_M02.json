@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "source": "42068779.MIF first MAP1/FLOR, FANG1.INF TEXT5/6/7, TRIG and LOCK, compared to local quest wiki PDF3/5",
+  "mapSha256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7",
+  "crop": {
+    "displayX": [
+      1,
+      12
+    ],
+    "y": [
+      80,
+      98
+    ],
+    "displayXRule": "99-originalX"
+  },
+  "scale": 3,
+  "margin": 2,
+  "rows": [
+    "####...#####",
+    "#..#...#..##",
+    "#.........##",
+    "#..#...#..##",
+    "####...#####",
+    "#..#...#..##",
+    "#.........##",
+    "#..#...#..##",
+    "##.#...#.###",
+    "#..........#",
+    "#..........#",
+    "#..........#",
+    "#..........#",
+    "#........#.#",
+    "#........#.#",
+    "#........#.#",
+    "#.##.##.##.#",
+    "#.##.##.##.#",
+    "#.##.##.##.#"
+  ],
+  "adaptations": [
+    "Existing materials/doors only as marked functional placeholders, not confirmed Fang Lair materials",
+    "Lab entry near riddle, not full Fang Lair entrance or travel from Rihad",
+    "Physical door cells scaled3x3; existing144px artwork has transparent ceiling row and two wall-face rows, collision kept separate",
+    "Four spider release markers, no substitute species or fake completed battle; conditioned encounters await own exemplar",
+    "Top optional pair of cells y77-79 and full mine route outside crop; no lower level"
+  ]
+}

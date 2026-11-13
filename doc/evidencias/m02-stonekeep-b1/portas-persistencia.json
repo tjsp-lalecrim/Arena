@@ -1,0 +1,15 @@
+{
+  "browser": "156.0.8078.76",
+  "expected": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "checks": [
+    "Locked implemented door correctly identified as Forçar a porta, not a development placeholder",
+    "Three closed/one open B1 doors survive native RAM serialization with pre-B1 event array",
+    "36 missing door parts and10 encounters rebuilt;394 events, native collider pages match individual self-switch states",
+    "Character/quest/resources/receipts unchanged; no personal slots used"
+  ]
+}

@@ -1,7 +1,10 @@
-// Explicit runtime allowlist; no asset pruning, transforms or deployment.
+// Explicit runtime allowlist; only the declared debug profile is overridden.
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 // An independent tooling checkout can package an exact source checkout.
-const root=path.resolve(process.argv[2]||path.join(__dirname,'..'));process.chdir(root);
+const technical=process.argv.includes('--technical-preview'),args=process.argv.slice(2).filter(a=>a!=='--technical-preview');
+const root=path.resolve(args[0]||path.join(__dirname,'..'));process.chdir(root);
+const profile=require('./web-debug-profile.cjs');
+const runtimeBytes=file=>profile.apply(file,fs.readFileSync(file),technical);
 const recipeBytes=fs.readFileSync(path.join(__dirname,'web-package-allowlist.json')),recipe=JSON.parse(recipeBytes);
 const git=(...args)=>cp.execFileSync('git',args,{encoding:'utf8'}).trim();
 const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
@@ -16,11 +19,12 @@ for(const file of files){
  assert(fs.lstatSync(file).isFile(),'Not a regular file: '+file);
  assert(!/^(doc|art|tmp|tools|save|\.git)\//i.test(file));
 }
-const manifest={testVersion:recipe.testVersion,sourceCommit,recipeSha256:sha(recipeBytes),namespace:'arena:m01:save-v1',files:files.map(file=>{const bytes=fs.readFileSync(file);return{path:file,bytes:bytes.length,sha256:sha(bytes)};})};
+const manifest={testVersion:recipe.testVersion,sourceCommit,recipeSha256:sha(recipeBytes),namespace:'arena:m01:save-v1',files:files.map(file=>{const bytes=runtimeBytes(file);return{path:file,bytes:bytes.length,sha256:sha(bytes)};})};
 const plugins=fs.readFileSync('js/plugins.js','utf8'),entries=JSON.parse(plugins.slice(plugins.indexOf('['),plugins.lastIndexOf(']')+1));
 assert.equal(entries.find(p=>p.name==='MV_WebStorageNamespace').parameters.Namespace,manifest.namespace);
 for(const p of entries)assert(selected.has('js/plugins/'+p.name+'.js'),'Plugin absent: '+p.name);
-const dest=path.resolve('dist/web',recipe.testVersion+'-'+sourceCommit.slice(0,7),'Arena');
+if(selected.has('data/ArenaDebugHub.json'))manifest.debugHub={enabled:technical,profile:technical?'technical-preview':'player',sourceSha256:sha(fs.readFileSync('data/ArenaDebugHub.json'))};
+const dest=path.resolve('dist/web',recipe.testVersion+'-'+sourceCommit.slice(0,7)+(technical?'-technical':''),'Arena');
 assert(dest.startsWith(path.resolve('dist/web')+path.sep));
 const serialized=JSON.stringify(manifest,null,2)+'\n';
 if(fs.existsSync(dest)){
@@ -30,7 +34,7 @@ if(fs.existsSync(dest)){
  for(const f of manifest.files)assert.equal(sha(fs.readFileSync(path.join(dest,f.path))),f.sha256,'Output differs: '+f.path);
 }else{
  fs.mkdirSync(dest,{recursive:true});
- for(const file of files){const target=path.join(dest,file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(file,target);}
+ for(const file of files){const target=path.join(dest,file);fs.mkdirSync(path.dirname(target),{recursive:true});if(file==='data/ArenaDebugHub.json')fs.writeFileSync(target,runtimeBytes(file));else fs.copyFileSync(file,target);}
  fs.writeFileSync(path.join(dest,'package-manifest.json'),serialized);
 }
 console.log(JSON.stringify({directory:dest,sourceCommit,testVersion:recipe.testVersion,runtimeFiles:files.length,runtimeBytes:manifest.files.reduce((n,f)=>n+f.bytes,0),totalBytes:manifest.files.reduce((n,f)=>n+f.bytes,0)+Buffer.byteLength(serialized),manifestSha256:sha(serialized)},null,2));

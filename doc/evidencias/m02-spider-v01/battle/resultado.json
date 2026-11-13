@@ -1,0 +1,254 @@
+{
+  "base": "569e382",
+  "assetProof": {
+    "spider-v01": {
+      "source": "art/masters/stonekeep-spider-v01/sheet-v04-alpha.png",
+      "sourceSHA256": "9572a520965dc8692d7cceb8ba00a55d8dc10f2c5f40216e89afd720a6f9fe25",
+      "output": "img/enemies/Arena_Combat_spider_v01.png",
+      "outputSHA256": "8146a4cdec7b81118cc8d1a671d6ee3b16209d1c0989f703888a201982ddae8c"
+    },
+    "spider-walk-v01": {
+      "source": "art/masters/stonekeep-spider-walk-v01/sheet-v01.png",
+      "sourceSHA256": "286dc0dcace5898d18522e77eb77fb90413c9afc7a3a531f30b6defd6723a747",
+      "output": "img/characters/$Arena_spider_walk_v01.png",
+      "outputSHA256": "a7f68305be9b7a302c746f7a31ae7a743c2c04fdeea2da690eef7071c685b1ff"
+    }
+  },
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "canvas": [
+    816,
+    624
+  ],
+  "fixture": {
+    "identity": {
+      "actorId": 1,
+      "raceId": "breton",
+      "genderId": "female",
+      "baseVisualId": "breton.female.base",
+      "name": "Continuidade piloto"
+    },
+    "level": 2,
+    "weapon": [
+      {
+        "id": 1,
+        "name": "Adaga"
+      }
+    ],
+    "params": [
+      100,
+      50,
+      12,
+      5,
+      8,
+      5,
+      10,
+      10
+    ],
+    "enemy": [
+      65,
+      0,
+      12,
+      4,
+      0,
+      4,
+      16,
+      5
+    ],
+    "webgl": true
+  },
+  "checks": [
+    "Clean native boot and actual Debug > Combat routing; one Spider65HP, full resources, no escape, RAM/normal slots blocked",
+    "16 actual drawings sampled:4 idle/strike/hurt/defeat; native bite impacts and each action damage/cost once, no added ability/resistance",
+    "Native victory returns to RAM; one empty receipt, zero lab EXP/items/gold; repeated reward calls unchanged",
+    "Fresh magic test consumes6MP and invokes damage once; surviving target ended by controlled native victory only",
+    "Repeat entry resets the exemplar; native defeat/game over from separate1HP fixture"
+  ],
+  "initial": {
+    "mp": 50,
+    "vigor": 100,
+    "exp": 50,
+    "gold": 0,
+    "items": "{\"2\":1,\"3\":1,\"4\":1}",
+    "storage": "{}"
+  },
+  "result": {
+    "mp": 50,
+    "vigor": 88,
+    "exp": 50,
+    "gold": 0,
+    "items": "{\"2\":1,\"3\":1,\"4\":1}",
+    "storage": "{}"
+  },
+  "trace": {
+    "frames": {
+      "idle": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "strike": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hurt": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "defeat": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "uses": [
+      2,
+      1,
+      6,
+      1
+    ],
+    "damage": [
+      {
+        "actor": true,
+        "skill": 1,
+        "value": 10
+      },
+      {
+        "actor": true,
+        "skill": 1,
+        "value": 10
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "value": 20
+      },
+      {
+        "actor": true,
+        "skill": 1,
+        "value": 20
+      },
+      {
+        "actor": false,
+        "skill": 6,
+        "value": 33
+      },
+      {
+        "actor": true,
+        "skill": 1,
+        "value": 20
+      },
+      {
+        "actor": false,
+        "skill": 1,
+        "value": 20
+      }
+    ],
+    "impacts": [
+      {
+        "key": "strike",
+        "index": 2,
+        "tick": 22,
+        "total": 40,
+        "done": false,
+        "impactTick": 22,
+        "released": false,
+        "weaponId": null
+      },
+      {
+        "key": "strike",
+        "index": 2,
+        "tick": 22,
+        "total": 40,
+        "done": false,
+        "impactTick": 22,
+        "released": false,
+        "weaponId": null
+      },
+      {
+        "key": "strike",
+        "index": 2,
+        "tick": 22,
+        "total": 40,
+        "done": false,
+        "impactTick": 22,
+        "released": false,
+        "weaponId": null
+      },
+      {
+        "key": "strike",
+        "index": 2,
+        "tick": 22,
+        "total": 40,
+        "done": false,
+        "impactTick": 22,
+        "released": false,
+        "weaponId": null
+      }
+    ]
+  },
+  "magic": {
+    "frames": {
+      "idle": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "strike": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hurt": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "uses": [
+      10
+    ],
+    "damage": [
+      {
+        "actor": true,
+        "skill": 1,
+        "value": 19
+      },
+      {
+        "actor": false,
+        "skill": 10,
+        "value": 18
+      }
+    ],
+    "impacts": [
+      {
+        "key": "strike",
+        "index": 2,
+        "tick": 22,
+        "total": 40,
+        "done": false,
+        "impactTick": 22,
+        "released": false,
+        "weaponId": null
+      }
+    ]
+  },
+  "errors": [],
+  "missing": [],
+  "recording": "Native canvas30fps/normal engine speed; RNG .5 for reproducibility; separate1HP defeat and controlled end of magic test only",
+  "pending": [
+    "Visual evaluation of one Spider exemplar",
+    "Walking covered separately in this delivery; all20 campaign references remain unplaced",
+    "Campaign EXP/loot not configured",
+    "No balance approval/full dungeon/editor/mobile test"
+  ]
+}

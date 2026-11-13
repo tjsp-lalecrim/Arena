@@ -1,0 +1,41 @@
+{
+  "version": "v01",
+  "status": "Título de901dfcb explicitamente aprovado pelo responsável; fundo a39d71e também aprovado",
+  "base": "a39d71e",
+  "backgroundApproval": "Responsável aprovou explicitamente a ilustração do menu de a39d71e; ambiente não especificado, sem estender a outras funções",
+  "master": "art/masters/ref16-logo-v01/title-logo-v01.svg",
+  "glyphMapping": "art/masters/ref16-logo-v01/lettering.json",
+  "runtime": "img/titles2/Arena_logo_v01.png",
+  "reference": {
+    "original": "TITLE.IMG",
+    "sha256": "1058d2a9fd6e9202c3dd2f9526a7a282ed4e78b40e001f207424bf6bf7e50f25",
+    "consultation": "tmp/title-review/TITLE-consulta-3x.png (ignorado)",
+    "role": "Formas específicas das letras, serifas, swashes, hierarquia da abertura instalada; não fonte medieval substituta"
+  },
+  "method": "Vetorização de contornos do lettering original com acabamento novo; não houve geração por IA, fonte genérica ou bitmap original incorporado no SVG. Fonte original consultada em leitura; SVG editável é a fonte para exportações futuras.",
+  "adaptations": [
+    "Três linhas centralizadas The Elder / Scrolls / Arena, escala relativa comum preservada.",
+    "Arena isolado do texto introdutório Chapter One: The; sem subtítulo/ornamento novo, copyright ou moldura incorporada.",
+    "Suavização de contornos e retirada de resíduos pequenos do bevel/linha vizinha; dourado envelhecido, bronze, contorno escuro e sombra discreta em resolução nova.",
+    "Posição superior com16px de margem e altura limitada pela altura do canvas/posição do menu; sem corte ou escala não uniforme.",
+    "drawGameTitle substitui apenas o texto desenhado, por sprite filho transparente; não desenha Arena nativo por baixo."
+  ],
+  "build": "tools/build-title-logo.py (origem instalada, hash conferido; opcional para refazer traçado)",
+  "export": "tools/export-title-logo.cjs (SVG autônomo→PNG RGBA2x via Chromium; sem fontes externas)",
+  "masterSHA256": "15e73278d612e968f30c1fb842e9053df9353344d3c1f6032b8eee99cd383809",
+  "runtimeSHA256": "6b8f3765cb2502c242d500b66660e4bb6550295216863c78433608a2a2874a3f",
+  "masterSize": [
+    1000,
+    620
+  ],
+  "runtimeSize": [
+    2000,
+    1240
+  ],
+  "runtimeBytes": 196422,
+  "validation": [
+    "doc/evidencias/ref16-logo-v01/resultado.json",
+    "doc/evidencias/ref16-logo-v01/alpha.json"
+  ],
+  "pending": "Modernização do título como melhoria futura na REF16, sem alteração da arte nesta entrega; nenhum novo teste/ambiente inferido."
+}

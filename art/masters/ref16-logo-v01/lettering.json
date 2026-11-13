@@ -1,0 +1,58 @@
+{
+  "text": "The Elder Scrolls: Arena",
+  "source": "TITLE.IMG",
+  "sourceSHA256": "1058d2a9fd6e9202c3dd2f9526a7a282ed4e78b40e001f207424bf6bf7e50f25",
+  "canvas": [
+    1000,
+    620
+  ],
+  "lines": [
+    {
+      "label": "The Elder",
+      "referenceBox": [
+        81,
+        16,
+        240,
+        52
+      ],
+      "translation": [
+        102.5,
+        42
+      ],
+      "scale": 5,
+      "contours": 13
+    },
+    {
+      "label": "Scrolls",
+      "referenceBox": [
+        98,
+        52,
+        208,
+        88
+      ],
+      "translation": [
+        225,
+        236
+      ],
+      "scale": 5,
+      "contours": 8
+    },
+    {
+      "label": "Arena",
+      "referenceBox": [
+        207,
+        104,
+        264,
+        126
+      ],
+      "translation": [
+        357.5,
+        444
+      ],
+      "scale": 5,
+      "contours": 6
+    }
+  ],
+  "method": "Original drawn outlines, palette-isolated, vector contours simplified at0.85source-pixel, bounded quadratic corner refinement0.42pixel, new gold/bronze gradients/outline; no AI lettering, no font or embedded raster.",
+  "adaptation": "Three centred lines, same relative glyph scale. Omit Chapter One: The (intro caption), copyright and frame; no added subtitle/symbol."
+}

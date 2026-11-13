@@ -1,5 +1,19 @@
 # Contratos persistentes — M01-05
 
+## Seleção de contratos M02-02B — 01/11/2026
+
+Fontes novas resolvidas por quest/área em ArenaCampaign.json; sem mudar schema1/namespace web ou iniciar MQ02 por consulta. IDs de recibo/fonte validados antes de novos consumos; legado MQ01 preservado. Fontes sem item vinculado não concedem nada; fragmento tem obrigação explícita após conclusão, mantendo recibos legítimos. [Contratos/API](plugins/Arena_CampaignConfig.md), [validação](CONFIGURACOES_M02_02B.md). Não é migração de partidas pessoais.
+
+## Extensão técnica M02-02A — 01/11/2026
+
+Namespace interno arenaContinuation v1 acrescentado: phase/transição/destino e recibos, sem duplicar dados nativos/MQ01 ou trocar namespace web. Defaults e migrações existentes reutilizados; normal m01 reconhecido, narrativa1→2 preservada. Laboratório bloqueia slots normais e usa RAM; falha de load restaura a sessão anterior sem escrita. [Contrato/API](plugins/Arena_Continuation.md), [evidências/limites](CONTINUIDADE_M02_02A.md). Não é migração executada de saves pessoais nem continuação real habilitada.
+
+## Política vigente de compatibilidade — 31/10/2026
+
+Decisão do responsável: compatibilidade **entre versões de desenvolvimento** é desejável, não obrigatória se exigir manutenção desproporcional. Preservar quando bastar extensão simples dos contratos; quebra precisa de recomendação explícita, motivo e avaliação antes de distribuir, com rejeição controlada do save incompatível, sem apagar/sobrescrever slots ou mudar silenciosamente o namespace. Isso não flexibiliza salvar/carregar sem perda ou corrupção **dentro da versão atual**. A versão oficial a partir da qual a preservação de saves antigos será obrigatória ainda será definida; não presumir essa fronteira apenas porque m01 foi publicada.
+
+Recomendação para M02: preservar os saves normais da tag m01, sem garantia universal para todos os laboratórios/estados históricos. Custo por componente e tratamento de pré-Gate/ending/ended em [MQ02_ESPECIFICACAO.md](MQ02_ESPECIFICACAO.md#saves-recomendação-e-custo-técnico-concreto), para avaliação antes de M02-02. Nenhum save pessoal foi carregado ou migrado nesta tarefa; política não é implementação. Namespace `arena:m01:save-v1` preservado, sem sincronização/transferência automática de outras origens ou dispositivos. Contratos e evidências históricos abaixo continuam identificados por versão.
+
 Continuidade M01-09: sem novo schema/namespace. Técnicas derivadas não são escritas como aprendizado permanente; magias continuam em _skills nativo e livros no inventário. Trocar arma não esquece magia. Refresh/load invalida apenas hotbar de técnica incompatível (null). Nenhuma concessão ao carregar. Transação do livro e cenários de rollback/save anterior em HABILIDADES_M01_09.md.
 
 Atualização operacional M01-08 R01: HP/MP atuais continuam exclusivamente nativos. `arena.resources.vigor` mantém current/maximum; o namespace `arenaResources` v1 separa base, crescimento por escolhas de nível, concessão racial inicial e modificador explícito. Sem duplicar nível/EXP ou reaplicar bônus. Importação R05 preserva gasto/máximo e consolida nível anterior como baseline sem escolhas retroativas. Contrato em RECURSOS_E_PROGRESSAO_M01_08.md. O escopo histórico M01-05 abaixo não representa ausência atual de consumidor de progressão.

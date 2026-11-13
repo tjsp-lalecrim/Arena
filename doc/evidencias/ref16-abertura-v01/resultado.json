@@ -1,0 +1,299 @@
+{
+  "base": "eb81e7a",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "mode": "headless disposable profile",
+  "checks": [
+    "Real title at3 desktop viewport proportions; native816×624 preserved, proportional canvas/cover, existing title/menu in bounds and no missing resources",
+    "Keyboard NewGame→creation→cancel, Options→return; mouse Debug→hub→return, native handlers unchanged",
+    "Normal synthetic campaign native Save16/F5/title Continue/Load16 preserves state in disposable profile, same namespace; no personal storage access",
+    "Technical title-only cover stress at4:3/16:9/1:1 internal ratios; uniform scale/crop, menu bounds; project resolution/System unchanged"
+  ],
+  "metrics": [
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "internal": [
+        816,
+        624
+      ],
+      "image": [
+        1440,
+        960
+      ],
+      "scale": [
+        0.65,
+        0.65
+      ],
+      "center": [
+        408,
+        312
+      ],
+      "canvas": [
+        816,
+        624
+      ],
+      "menu": [
+        188,
+        348,
+        440,
+        180
+      ],
+      "commands": [
+        {
+          "name": "Novo Jogo",
+          "symbol": "newGame",
+          "enabled": true
+        },
+        {
+          "name": "Continuar",
+          "symbol": "continue",
+          "enabled": false
+        },
+        {
+          "name": "Opções",
+          "symbol": "options",
+          "enabled": true
+        },
+        {
+          "name": "Testes / Debug",
+          "symbol": "arenaDebugHub",
+          "enabled": true
+        }
+      ],
+      "sourceVisible": [
+        1255.3846153846152,
+        960
+      ]
+    },
+    {
+      "viewport": [
+        1440,
+        810
+      ],
+      "internal": [
+        816,
+        624
+      ],
+      "image": [
+        1440,
+        960
+      ],
+      "scale": [
+        0.65,
+        0.65
+      ],
+      "center": [
+        408,
+        312
+      ],
+      "canvas": [
+        816,
+        624
+      ],
+      "menu": [
+        188,
+        348,
+        440,
+        180
+      ],
+      "commands": [
+        {
+          "name": "Novo Jogo",
+          "symbol": "newGame",
+          "enabled": true
+        },
+        {
+          "name": "Continuar",
+          "symbol": "continue",
+          "enabled": false
+        },
+        {
+          "name": "Opções",
+          "symbol": "options",
+          "enabled": true
+        },
+        {
+          "name": "Testes / Debug",
+          "symbol": "arenaDebugHub",
+          "enabled": true
+        }
+      ],
+      "sourceVisible": [
+        1255.3846153846152,
+        960
+      ]
+    },
+    {
+      "viewport": [
+        900,
+        1000
+      ],
+      "internal": [
+        816,
+        624
+      ],
+      "image": [
+        1440,
+        960
+      ],
+      "scale": [
+        0.65,
+        0.65
+      ],
+      "center": [
+        408,
+        312
+      ],
+      "canvas": [
+        816,
+        624
+      ],
+      "menu": [
+        188,
+        348,
+        440,
+        180
+      ],
+      "commands": [
+        {
+          "name": "Novo Jogo",
+          "symbol": "newGame",
+          "enabled": true
+        },
+        {
+          "name": "Continuar",
+          "symbol": "continue",
+          "enabled": false
+        },
+        {
+          "name": "Opções",
+          "symbol": "options",
+          "enabled": true
+        },
+        {
+          "name": "Testes / Debug",
+          "symbol": "arenaDebugHub",
+          "enabled": true
+        }
+      ],
+      "sourceVisible": [
+        1255.3846153846152,
+        960
+      ]
+    },
+    {
+      "internal": [
+        1024,
+        768
+      ],
+      "scale": [
+        0.8,
+        0.8
+      ],
+      "menu": [
+        292,
+        492,
+        440,
+        180
+      ],
+      "bounds": [
+        -64,
+        0,
+        1088,
+        768
+      ]
+    },
+    {
+      "internal": [
+        1280,
+        720
+      ],
+      "scale": [
+        0.8888888888888888,
+        0.8888888888888888
+      ],
+      "menu": [
+        420,
+        444,
+        440,
+        180
+      ],
+      "bounds": [
+        0,
+        -66.66666666666663,
+        1280,
+        786.6666666666666
+      ]
+    },
+    {
+      "internal": [
+        800,
+        800
+      ],
+      "scale": [
+        0.8333333333333334,
+        0.8333333333333334
+      ],
+      "menu": [
+        180,
+        524,
+        440,
+        180
+      ],
+      "bounds": [
+        -200,
+        0,
+        1000,
+        800
+      ]
+    }
+  ],
+  "shots": [
+    "desktop-1280x800.png",
+    "desktop-16x9.png",
+    "desktop-vertical.png",
+    "recorte-4x3.png",
+    "recorte-16x9.png",
+    "recorte-1x1.png"
+  ],
+  "saved": {
+    "name": "Título focal",
+    "hp": 43,
+    "mp": 17,
+    "vigor": {
+      "current": 29,
+      "maximum": 100,
+      "base": 100,
+      "growth": 0,
+      "initialBonus": 0,
+      "modifiers": 0
+    },
+    "quest": {
+      "stage": 10,
+      "objectives": {},
+      "completed": false,
+      "receipts": {}
+    },
+    "position": [
+      8,
+      148,
+      82
+    ]
+  },
+  "saveKeys": [
+    "arena:m01:save-v1:RPG File16",
+    "arena:m01:save-v1:RPG Global",
+    "arena:m01:save-v1:RPG Config"
+  ],
+  "errors": [],
+  "missing": [],
+  "limitations": [
+    "Artistic approval pending, one generated image only",
+    "No physical mobile/fullscreen requirement or desktop global responsive redesign",
+    "Alternate internal ratios are presentation stress fixtures only, normal project816x624 unchanged",
+    "No full campaign or browser-restart retest"
+  ]
+}

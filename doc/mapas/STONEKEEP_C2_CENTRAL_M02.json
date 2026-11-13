@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "base": "09b6ed7",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "bounds": [
+    30,
+    70,
+    59,
+    74
+  ],
+  "doors": [],
+  "entries": [
+    {
+      "id": "stonekeep.c2c.enemy.mif34.70",
+      "eventId": 513,
+      "sourceOriginal": [
+        34,
+        70
+      ],
+      "origin": [
+        168,
+        213
+      ],
+      "species": "homem-lagarto",
+      "enemyId": 3,
+      "troopId": 3,
+      "sourceFlat": "LIZRDMAN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c.enemy.mif48.70",
+      "eventId": 514,
+      "sourceOriginal": [
+        48,
+        70
+      ],
+      "origin": [
+        126,
+        213
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c.enemy.mif33.71",
+      "eventId": 515,
+      "sourceOriginal": [
+        33,
+        71
+      ],
+      "origin": [
+        171,
+        216
+      ],
+      "species": "homem-lagarto",
+      "enemyId": 3,
+      "troopId": 3,
+      "sourceFlat": "LIZRDMAN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c.enemy.mif48.71",
+      "eventId": 516,
+      "sourceOriginal": [
+        48,
+        71
+      ],
+      "origin": [
+        126,
+        216
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c.enemy.mif43.72",
+      "eventId": 517,
+      "sourceOriginal": [
+        43,
+        72
+      ],
+      "origin": [
+        141,
+        219
+      ],
+      "species": "esqueleto",
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceFlat": "SKELETON.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c.enemy.mif43.74",
+      "eventId": 518,
+      "sourceOriginal": [
+        43,
+        74
+      ],
+      "origin": [
+        141,
+        225
+      ],
+      "species": "esqueleto",
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceFlat": "SKELETON.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "points": [
+    {
+      "name": "C2 central · homens-lagarto",
+      "position": [
+        174,
+        216
+      ]
+    },
+    {
+      "name": "C2 central · aranhas",
+      "position": [
+        129,
+        216
+      ]
+    },
+    {
+      "name": "C2 central · esqueletos",
+      "position": [
+        144,
+        219
+      ]
+    }
+  ],
+  "routes": {
+    "stonekeep.c2c.enemy.mif34.70": {
+      "steps": 181,
+      "bounds": [
+        108,
+        210,
+        179,
+        257
+      ],
+      "outsideBandCells": 44,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c.enemy.mif48.70": {
+      "steps": 37,
+      "bounds": [
+        108,
+        210,
+        126,
+        221
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c.enemy.mif33.71": {
+      "steps": 175,
+      "bounds": [
+        108,
+        210,
+        179,
+        257
+      ],
+      "outsideBandCells": 44,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c.enemy.mif48.71": {
+      "steps": 34,
+      "bounds": [
+        108,
+        210,
+        126,
+        221
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c.enemy.mif43.72": {
+      "steps": 50,
+      "bounds": [
+        108,
+        210,
+        141,
+        221
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c.enemy.mif43.74": {
+      "steps": 230,
+      "bounds": [
+        108,
+        210,
+        179,
+        257
+      ],
+      "outsideBandCells": 52,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    }
+  },
+  "locksInBand": [],
+  "triggersInBand": [
+    [
+      54,
+      71,
+      255,
+      19
+    ]
+  ],
+  "connection": "Existing C2 north/central corridors; approaches to the eastern rooms and southern skeleton reuse corridors as far as Y85. No new content outside Y70-74, geometry, doors or water. No new DOS observation.",
+  "confidence": "Original MAP1/FLOR and inventory/STKEEP1.INF declarations; source coordinates mirrored then scaled3x3"
+}

@@ -1,0 +1,70 @@
+{
+  "originals": [
+    {
+      "file": "ORC1.CFA",
+      "sha256": "a922a7a6a1ef857779f7363560ff607411c4f04e09800bace9b058e90978ff3e",
+      "size": [
+        72,
+        119
+      ],
+      "frames": 12,
+      "consultation": "first frame for cardinal identity only; existing RLE/MSB reader, no new DOS observation"
+    },
+    {
+      "file": "ORC2.CFA",
+      "sha256": "ef6cfcd2381d4c461f2a615d0bf0db5cb1f1243f6b2b66af0e89eeb16671536a",
+      "size": [
+        77,
+        95
+      ],
+      "frames": 8,
+      "consultation": "first frame for cardinal identity only; existing RLE/MSB reader, no new DOS observation"
+    },
+    {
+      "file": "ORC3.CFA",
+      "sha256": "0617d9dd60aa2d3551b7b73b8c75b96dff9833d428b14fb038936665126e9644",
+      "size": [
+        114,
+        93
+      ],
+      "frames": 8,
+      "consultation": "first frame for cardinal identity only; existing RLE/MSB reader, no new DOS observation"
+    },
+    {
+      "file": "ORC4.CFA",
+      "sha256": "954ff3da461b7eea18b8dad399d043a47a78f5ad0718c910f873a625c20052c8",
+      "size": [
+        117,
+        93
+      ],
+      "frames": 8,
+      "consultation": "first frame for cardinal identity only; existing RLE/MSB reader, no new DOS observation"
+    },
+    {
+      "file": "ORC5.CFA",
+      "sha256": "5139c0fea1ea82a32db0db2695813712a4b1f3d1fc5349ae3a6ef0522a830e62",
+      "size": [
+        58,
+        93
+      ],
+      "frames": 8,
+      "consultation": "first frame for cardinal identity only; existing RLE/MSB reader, no new DOS observation"
+    }
+  ],
+  "approvedBattle": "42b857f",
+  "references": [
+    {
+      "file": "tmp/orc-walk-review/approved-identity.png",
+      "sha256": "e3dffedc392cc5337a210179d2c8c9ea215393d290ed1c0db97c66e00fc40df6"
+    },
+    {
+      "file": "tmp/orc-walk-review/original-directions.png",
+      "sha256": "2c1eea99632e3727728f0051ec71e53d092fc97e2107bfe002586c0ced6a19ba"
+    },
+    {
+      "file": "img/characters/$Arena_skeleton_walk_v01.png",
+      "sha256": "e5aea50aaf77ec52cce5e7b6b00311329acdee4287bbb3f6eafa9558dae531d8"
+    }
+  ],
+  "scope": "Read-only original first frames and approved battle identity; overhead walking camera is adaptation, no new DOS observation"
+}

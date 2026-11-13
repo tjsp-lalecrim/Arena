@@ -1,0 +1,463 @@
+{
+  "source": "art/masters/stonekeep-spider-v01/sheet-v04-alpha.png",
+  "sourceSHA256": "9572a520965dc8692d7cceb8ba00a55d8dc10f2c5f40216e89afd720a6f9fe25",
+  "output": "img/enemies/Arena_Combat_spider_v01.png",
+  "outputSHA256": "8146a4cdec7b81118cc8d1a671d6ee3b16209d1c0989f703888a201982ddae8c",
+  "scale": 0.47368421052631576,
+  "cell": [
+    224,
+    160
+  ],
+  "ground": 152,
+  "frames": [
+    {
+      "motion": "idle",
+      "frame": 0,
+      "sourceRect": [
+        39,
+        21,
+        343,
+        238
+      ],
+      "bodyCore": [
+        40,
+        24,
+        203,
+        135
+      ],
+      "axis": 121.5,
+      "placement": [
+        54,
+        49
+      ],
+      "alphaBox": [
+        54,
+        49,
+        198,
+        152
+      ],
+      "sha256": "c14180c586c8cad6f082e438858e2e6552162f153519fc9f65ddac7cee8de588"
+    },
+    {
+      "motion": "idle",
+      "frame": 1,
+      "sourceRect": [
+        425,
+        21,
+        717,
+        236
+      ],
+      "bodyCore": [
+        35,
+        21,
+        197,
+        119
+      ],
+      "axis": 116.0,
+      "placement": [
+        57,
+        50
+      ],
+      "alphaBox": [
+        57,
+        50,
+        195,
+        152
+      ],
+      "sha256": "2cfa52c552a4e0600151072a9f10ee6e3a9a147577644f5c261601a9e1a1aca5"
+    },
+    {
+      "motion": "idle",
+      "frame": 2,
+      "sourceRect": [
+        780,
+        33,
+        1078,
+        239
+      ],
+      "bodyCore": [
+        34,
+        19,
+        193,
+        125
+      ],
+      "axis": 113.5,
+      "placement": [
+        58,
+        54
+      ],
+      "alphaBox": [
+        58,
+        54,
+        199,
+        152
+      ],
+      "sha256": "9087837865dc076fc02d386d1cc5d907ca682e6a570ca6af2ba0de7d92dfd28c"
+    },
+    {
+      "motion": "idle",
+      "frame": 3,
+      "sourceRect": [
+        1161,
+        30,
+        1463,
+        238
+      ],
+      "bodyCore": [
+        38,
+        19,
+        199,
+        124
+      ],
+      "axis": 118.5,
+      "placement": [
+        56,
+        53
+      ],
+      "alphaBox": [
+        56,
+        53,
+        199,
+        152
+      ],
+      "sha256": "8b3f9e7db7447d4c8846a6de5707258d31296fa5cee7184df7555477f8089014"
+    },
+    {
+      "motion": "strike",
+      "frame": 0,
+      "sourceRect": [
+        39,
+        287,
+        346,
+        489
+      ],
+      "bodyCore": [
+        39,
+        19,
+        201,
+        117
+      ],
+      "axis": 120.0,
+      "placement": [
+        55,
+        56
+      ],
+      "alphaBox": [
+        55,
+        56,
+        200,
+        152
+      ],
+      "sha256": "53a9162793457d67b0543365e98f752929b88d3c6179c5ad432b5aedbcfe4d95"
+    },
+    {
+      "motion": "strike",
+      "frame": 1,
+      "sourceRect": [
+        424,
+        282,
+        721,
+        492
+      ],
+      "bodyCore": [
+        44,
+        18,
+        189,
+        117
+      ],
+      "axis": 116.5,
+      "placement": [
+        57,
+        53
+      ],
+      "alphaBox": [
+        57,
+        53,
+        198,
+        152
+      ],
+      "sha256": "7f058be6cd4fbdf8b0f1cf42b53cfd6c988f54e32568019c7ce2d85b7bad3658"
+    },
+    {
+      "motion": "strike",
+      "frame": 2,
+      "sourceRect": [
+        776,
+        303,
+        1100,
+        496
+      ],
+      "bodyCore": [
+        44,
+        9,
+        209,
+        123
+      ],
+      "axis": 126.5,
+      "placement": [
+        52,
+        61
+      ],
+      "alphaBox": [
+        52,
+        61,
+        205,
+        152
+      ],
+      "sha256": "a391ba3002206d9e2b82c2dcae0d22e827af92365f42018a6052660308f3bc8c"
+    },
+    {
+      "motion": "strike",
+      "frame": 3,
+      "sourceRect": [
+        1161,
+        291,
+        1462,
+        489
+      ],
+      "bodyCore": [
+        41,
+        16,
+        200,
+        123
+      ],
+      "axis": 120.5,
+      "placement": [
+        55,
+        58
+      ],
+      "alphaBox": [
+        55,
+        58,
+        198,
+        152
+      ],
+      "sha256": "8efeb5c71855c4dd3ac0e83fc61ce1b23172e09368c088468deb95af793ef5ce"
+    },
+    {
+      "motion": "hurt",
+      "frame": 0,
+      "sourceRect": [
+        41,
+        548,
+        342,
+        750
+      ],
+      "bodyCore": [
+        39,
+        15,
+        200,
+        121
+      ],
+      "axis": 119.5,
+      "placement": [
+        55,
+        56
+      ],
+      "alphaBox": [
+        55,
+        56,
+        198,
+        152
+      ],
+      "sha256": "fa9d56951d09074b6116ebe9ec4c555c245cc405677fa1dfed14bde5b8e2f47d"
+    },
+    {
+      "motion": "hurt",
+      "frame": 1,
+      "sourceRect": [
+        423,
+        533,
+        716,
+        737
+      ],
+      "bodyCore": [
+        36,
+        11,
+        179,
+        102
+      ],
+      "axis": 107.5,
+      "placement": [
+        61,
+        55
+      ],
+      "alphaBox": [
+        61,
+        55,
+        200,
+        152
+      ],
+      "sha256": "5ec3625a22d98e2fc862648be607c8ee14d20fc15647e82ce717d3f095c02e1c"
+    },
+    {
+      "motion": "hurt",
+      "frame": 2,
+      "sourceRect": [
+        779,
+        551,
+        1082,
+        750
+      ],
+      "bodyCore": [
+        34,
+        14,
+        197,
+        114
+      ],
+      "axis": 115.5,
+      "placement": [
+        57,
+        58
+      ],
+      "alphaBox": [
+        57,
+        58,
+        201,
+        152
+      ],
+      "sha256": "57707116579546e2fdcd610606902a6c0f49ca6846638b323b808ff1f0677de3"
+    },
+    {
+      "motion": "hurt",
+      "frame": 3,
+      "sourceRect": [
+        1161,
+        544,
+        1462,
+        751
+      ],
+      "bodyCore": [
+        38,
+        17,
+        200,
+        119
+      ],
+      "axis": 119.0,
+      "placement": [
+        56,
+        54
+      ],
+      "alphaBox": [
+        56,
+        54,
+        199,
+        152
+      ],
+      "sha256": "ede9d596d3b90c238560b1300ec974b0b4745aac4b52758917b9b56ca53bddb0"
+    },
+    {
+      "motion": "defeat",
+      "frame": 0,
+      "sourceRect": [
+        41,
+        818,
+        347,
+        1007
+      ],
+      "bodyCore": [
+        40,
+        9,
+        199,
+        123
+      ],
+      "axis": 119.5,
+      "placement": [
+        55,
+        62
+      ],
+      "alphaBox": [
+        55,
+        62,
+        200,
+        152
+      ],
+      "sha256": "7c9c237e5384cf8b1a46a25b0e5258aedfb1d020865430961b65c99967e1585e"
+    },
+    {
+      "motion": "defeat",
+      "frame": 1,
+      "sourceRect": [
+        416,
+        837,
+        739,
+        1006
+      ],
+      "bodyCore": [
+        51,
+        9,
+        213,
+        117
+      ],
+      "axis": 132.0,
+      "placement": [
+        49,
+        72
+      ],
+      "alphaBox": [
+        49,
+        72,
+        202,
+        152
+      ],
+      "sha256": "8f588263e8947227ea9b159e779b22aa3980f90638983fc4e1034322a45a4b1d"
+    },
+    {
+      "motion": "defeat",
+      "frame": 2,
+      "sourceRect": [
+        765,
+        851,
+        1092,
+        1004
+      ],
+      "bodyCore": [
+        50,
+        9,
+        251,
+        109
+      ],
+      "axis": 150.5,
+      "placement": [
+        41,
+        80
+      ],
+      "alphaBox": [
+        41,
+        80,
+        196,
+        152
+      ],
+      "sha256": "bf2721f1e8fb995e1fa35c2697fe55c0955ae75f1f210e15ce311ed3444a143d"
+    },
+    {
+      "motion": "defeat",
+      "frame": 3,
+      "sourceRect": [
+        1140,
+        874,
+        1482,
+        997
+      ],
+      "bodyCore": [
+        58,
+        9,
+        242,
+        102
+      ],
+      "axis": 150.0,
+      "placement": [
+        41,
+        94
+      ],
+      "alphaBox": [
+        41,
+        94,
+        203,
+        152
+      ],
+      "sha256": "b1978e2258e763875b60b00470f2f7d5f07d737d5556ca1c8104d9d058e4092c"
+    }
+  ],
+  "approval": "Owner explicitly approved Spider combat and patrol atf5ebdba WITH reservation: first battle generation visually preferred; future comparison only, no active asset replacement, no balance/reward/encounter approval inferred"
+}

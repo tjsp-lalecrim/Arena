@@ -1,0 +1,734 @@
+{
+  "schemaVersion": 1,
+  "quests": [
+    {
+      "id": "MQ02",
+      "title": "Fang Lair",
+      "stages": [
+        {
+          "id": 0,
+          "next": 10
+        },
+        {
+          "id": 10,
+          "next": 20
+        },
+        {
+          "id": 20,
+          "next": 30
+        },
+        {
+          "id": 30,
+          "next": 40
+        },
+        {
+          "id": 40,
+          "next": 50
+        },
+        {
+          "id": 50,
+          "next": 60
+        },
+        {
+          "id": 60,
+          "next": 70
+        },
+        {
+          "id": 70,
+          "next": 80
+        },
+        {
+          "id": 80,
+          "next": 90
+        },
+        {
+          "id": 90,
+          "next": 100
+        },
+        {
+          "id": 100,
+          "next": 110
+        },
+        {
+          "id": 110,
+          "next": null
+        }
+      ]
+    }
+  ],
+  "areas": [
+    {
+      "id": "rihad.court",
+      "questId": "MQ02",
+      "mapId": 11
+    },
+    {
+      "id": "rihad",
+      "questId": "MQ02",
+      "mapId": 9
+    },
+    {
+      "id": "rihad.outskirts",
+      "questId": "MQ02",
+      "mapId": 10,
+      "encounters": {
+        "schemaVersion": 1,
+        "mapId": 10,
+        "areaId": "rihad.outskirts",
+        "completionQuestId": "MQ02",
+        "mapVisuals": {
+          "1": {
+            "file": "$Arena_rat_walk_r02",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "groundByDirection": {
+              "8": 52
+            },
+            "animationWait": 10
+          }
+        },
+        "entries": [
+          {
+            "id": "rihad.approach.rat.01",
+            "eventId": 2,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              10,
+              5
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "rihad.approach.rat.02",
+            "eventId": 3,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              18,
+              5
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "rihad.approach.rat.03",
+            "eventId": 4,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              10,
+              11
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "rihad.approach.rat.04",
+            "eventId": 5,
+            "enemyId": 1,
+            "troopId": 1,
+            "origin": [
+              18,
+              11
+            ],
+            "sourceFlat": "adaptação MQ02: estrada de Rihad",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "stonekeep",
+      "questId": "MQ02",
+      "mapId": 12,
+      "encounters": {
+        "schemaVersion": 1,
+        "mapId": 12,
+        "areaId": "stonekeep",
+        "completionQuestId": "MQ02",
+        "mapVisuals": {
+          "1": {
+            "file": "$Arena_rat_walk_r02",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "groundByDirection": {
+              "8": 52
+            },
+            "animationWait": 10
+          },
+          "4": {
+            "file": "$Arena_skeleton_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
+          },
+          "5": {
+            "file": "$Arena_ghoul_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
+          },
+          "6": {
+            "file": "$Arena_wolf_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
+          }
+        },
+        "entries": [
+          {
+            "id": "stonekeep.passage.skeleton.01",
+            "eventId": 3,
+            "origin": [
+              63,
+              9
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              61,
+              2
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          },
+          {
+            "id": "stonekeep.passage.skeleton.02",
+            "eventId": 4,
+            "origin": [
+              60,
+              9
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              62,
+              2
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          },
+          {
+            "id": "stonekeep.passage.skeleton.03",
+            "eventId": 5,
+            "origin": [
+              66,
+              12
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              60,
+              3
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          },
+          {
+            "id": "stonekeep.passage.skeleton.04",
+            "eventId": 6,
+            "origin": [
+              78,
+              15
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              56,
+              4
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          },
+          {
+            "id": "stonekeep.passage.skeleton.05",
+            "eventId": 7,
+            "origin": [
+              60,
+              15
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              62,
+              4
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          },
+          {
+            "id": "stonekeep.passage.skeleton.06",
+            "eventId": 8,
+            "origin": [
+              78,
+              18
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              56,
+              5
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          },
+          {
+            "id": "stonekeep.passage.skeleton.07",
+            "eventId": 9,
+            "origin": [
+              63,
+              18
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8039 -> STKEEP1.INF flat57 skeleton.dfa; coordinate projected through existing crop (mirror X, scale3, margin2). Patrol is a turn-based/grid adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              61,
+              5
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          },
+          {
+            "id": "stonekeep.apartments.rat.01",
+            "eventId": 16,
+            "enemyId": 1,
+            "troopId": 1,
+            "sourceOriginal": [
+              44,
+              11
+            ],
+            "origin": [
+              114,
+              36
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+            "questSpecific": false,
+            "radius": 1,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.rat.02",
+            "eventId": 17,
+            "enemyId": 1,
+            "troopId": 1,
+            "sourceOriginal": [
+              44,
+              12
+            ],
+            "origin": [
+              114,
+              39
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+            "questSpecific": false,
+            "radius": 1,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.rat.03",
+            "eventId": 18,
+            "enemyId": 1,
+            "troopId": 1,
+            "sourceOriginal": [
+              43,
+              13
+            ],
+            "origin": [
+              117,
+              42
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8034 -> STKEEP1.INF flat52 rat.dfa (ITEM32)",
+            "questSpecific": false,
+            "radius": 1,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.island.ghoul.01",
+            "eventId": 10,
+            "enemyId": 5,
+            "troopId": 6,
+            "origin": [
+              36,
+              57
+            ],
+            "sourceOriginal": [
+              70,
+              18
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.island.ghoul.02",
+            "eventId": 11,
+            "enemyId": 5,
+            "troopId": 6,
+            "origin": [
+              27,
+              60
+            ],
+            "sourceOriginal": [
+              73,
+              19
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.island.ghoul.03",
+            "eventId": 12,
+            "enemyId": 5,
+            "troopId": 6,
+            "origin": [
+              12,
+              60
+            ],
+            "sourceOriginal": [
+              78,
+              19
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.island.ghoul.04",
+            "eventId": 13,
+            "enemyId": 5,
+            "troopId": 6,
+            "origin": [
+              24,
+              66
+            ],
+            "sourceOriginal": [
+              74,
+              21
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.island.ghoul.05",
+            "eventId": 14,
+            "enemyId": 5,
+            "troopId": 6,
+            "origin": [
+              21,
+              84
+            ],
+            "sourceOriginal": [
+              75,
+              27
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.island.ghoul.06",
+            "eventId": 15,
+            "enemyId": 5,
+            "troopId": 6,
+            "origin": [
+              30,
+              87
+            ],
+            "sourceOriginal": [
+              72,
+              28
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x803c -> STKEEP1.INF flat60 ghoul.dfa (ITEM41); existing mirrored crop scale3/margin2. Patrol radius is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.wolf.01",
+            "eventId": 19,
+            "enemyId": 6,
+            "troopId": 7,
+            "origin": [
+              90,
+              51
+            ],
+            "sourceOriginal": [
+              52,
+              16
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.wolf.02",
+            "eventId": 20,
+            "enemyId": 6,
+            "troopId": 7,
+            "origin": [
+              114,
+              54
+            ],
+            "sourceOriginal": [
+              44,
+              17
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.wolf.03",
+            "eventId": 21,
+            "enemyId": 6,
+            "troopId": 7,
+            "origin": [
+              99,
+              54
+            ],
+            "sourceOriginal": [
+              49,
+              17
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "stonekeep.apartments.wolf.04",
+            "eventId": 22,
+            "enemyId": 6,
+            "troopId": 7,
+            "origin": [
+              96,
+              54
+            ],
+            "sourceOriginal": [
+              50,
+              17
+            ],
+            "sourceFlat": "39699021.MIF MAP1 0x8037 -> STKEEP1.INF flat55 wolf.dfa (ITEM35); existing crop centre projection. Floor-only radius2 is adaptation.",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "fang-lair.upper",
+      "questId": "MQ02",
+      "mapId": 13
+    },
+    {
+      "id": "fang-lair.lower",
+      "questId": "MQ02",
+      "mapId": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "stonekeep.parchment",
+      "questId": "MQ02",
+      "areaId": "stonekeep",
+      "itemKey": "MQ02.parchment",
+      "itemId": 7,
+      "quantity": 1,
+      "stages": [
+        40,
+        50
+      ],
+      "receiptIds": [
+        "MQ02.rihad.parchment"
+      ]
+    },
+    {
+      "id": "fang.cell2.key",
+      "questId": "MQ02",
+      "areaId": "fang-lair.upper",
+      "itemKey": "MQ02.gold-key",
+      "itemId": 8,
+      "quantity": 1,
+      "stages": [
+        70
+      ],
+      "receiptIds": [
+        "MQ02.fang.lower-door"
+      ]
+    },
+    {
+      "id": "fang.staff-piece-1",
+      "questId": "MQ02",
+      "areaId": "fang-lair.lower",
+      "itemKey": "MQ02.staff-piece-1",
+      "itemId": null,
+      "quantity": 1,
+      "stages": [
+        90,
+        100,
+        110
+      ],
+      "requiredAfterCompletion": true,
+      "receiptIds": []
+    }
+  ],
+  "receipts": [
+    {
+      "id": "MQ02.rihad.parchment",
+      "questId": "MQ02",
+      "sourceId": "stonekeep.parchment",
+      "kind": "deliver"
+    },
+    {
+      "id": "MQ02.fang.lower-door",
+      "questId": "MQ02",
+      "sourceId": "fang.cell2.key",
+      "kind": "consume"
+    }
+  ]
+}

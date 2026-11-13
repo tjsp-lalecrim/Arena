@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:8774/data/Items.json",
+  "status": "200 OK (from disk cache)",
+  "contentLength": 2902,
+  "contentType": "application/json",
+  "date": "Sun, 01 Nov 2026 12:12:32 GMT",
+  "lastModified": "Mon, 26 Oct 2026 21:44:49 GMT",
+  "server": "SimpleHTTP/0.6 Python/3.12.14",
+  "reportedIds": [
+    null,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "error": "Stonekeep: item 7 ausente em Items.json.",
+  "evidence": "Responsável copiou dados da aba afetada; não informou hash nem Cache-Control. Não é aprovação da amostra."
+}

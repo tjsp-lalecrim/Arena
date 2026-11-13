@@ -1,0 +1,231 @@
+{
+  "base": "f5ebdba",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "checks": [
+    "Clean Chrome boot, Map015 RAM/58 IDs, normal slots blocked; Orc campaign40EXP/gold25%4-40 separate from technical rewards",
+    "Synthetic pre-addition RAM snapshot: nine missing events/states initialized once, prior defeated encounter and character/quest/receipts preserved; no heal/EXP/migration reward",
+    "Five inherited locks still refuse bypass and open through existing force condition; no resource/item/EXP cost or NPC at a door footprint;32 authored door records/geometry unchanged",
+    "Continuous A2 -> B2 north/orcs/west/lizards/dry pocket -> A2, native passability/movement accelerated only for test; no through/transfers or all-kills requirement",
+    "Nine approved patrol sprites can step on dry region4/radius2, no initial overlaps; approved animation matrices reused",
+    "Nine keyboard contacts/correct troops/duplicate transition refused; controlled native victories,9 independent defeats/receipts,390 provisionalEXP and deterministic loot; repeated rewards unchanged",
+    "RAM roundtrip and area return preserve independent defeats/loot/resources/quests/door unlocks, no respawn or new all-kills gate, normal storage untouched",
+    "Direct Orc battle and patrol inspection retain0EXP/empty table; after title normal40EXP restored, no technical reward leakage"
+  ],
+  "routes": [
+    {
+      "from": [
+        126,
+        54
+      ],
+      "to": [
+        150,
+        93
+      ],
+      "steps": 63,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        150,
+        93
+      ],
+      "to": [
+        125,
+        113
+      ],
+      "steps": 109,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        125,
+        113
+      ],
+      "to": [
+        98,
+        113
+      ],
+      "steps": 27,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        98,
+        113
+      ],
+      "to": [
+        140,
+        140
+      ],
+      "steps": 69,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        140,
+        140
+      ],
+      "to": [
+        167,
+        140
+      ],
+      "steps": 27,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        167,
+        140
+      ],
+      "to": [
+        105,
+        168
+      ],
+      "steps": 94,
+      "mapId": 15,
+      "through": false
+    },
+    {
+      "from": [
+        105,
+        168
+      ],
+      "to": [
+        126,
+        54
+      ],
+      "steps": 191,
+      "mapId": 15,
+      "through": false
+    }
+  ],
+  "locks": [
+    "stonekeep.access.door.mif51.15",
+    "stonekeep.access.door.mif51.19",
+    "stonekeep.access.door.mif54.19",
+    "stonekeep.access.door.mif39.44",
+    "stonekeep.access.door.mif39.49"
+  ],
+  "patrol": [
+    {
+      "id": "stonekeep.b2.enemy.mif48.37",
+      "before": [
+        126,
+        114
+      ],
+      "after": [
+        126,
+        115
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif49.37",
+      "before": [
+        123,
+        114
+      ],
+      "after": [
+        123,
+        115
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif50.37",
+      "before": [
+        120,
+        114
+      ],
+      "after": [
+        120,
+        115
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif58.37",
+      "before": [
+        96,
+        114
+      ],
+      "after": [
+        96,
+        115
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif58.38",
+      "before": [
+        96,
+        117
+      ],
+      "after": [
+        96,
+        118
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif34.46",
+      "before": [
+        168,
+        141
+      ],
+      "after": [
+        168,
+        142
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif43.46",
+      "before": [
+        141,
+        141
+      ],
+      "after": [
+        141,
+        142
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif44.46",
+      "before": [
+        138,
+        141
+      ],
+      "after": [
+        138,
+        142
+      ],
+      "region": 4
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif34.47",
+      "before": [
+        168,
+        144
+      ],
+      "after": [
+        168,
+        145
+      ],
+      "region": 4
+    }
+  ],
+  "expAwarded": 390,
+  "encounters": 58,
+  "doors": 32,
+  "errors": [],
+  "missing": [],
+  "limits": "Synthetic isolated Chrome/RAM; native collision/movement accelerated, individual victories controlled. No broad campaign/art/balance test, no new owner approval."
+}

@@ -1,0 +1,201 @@
+{
+  "base": "d800a8f",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Existing hub route; seven distinct floor positions, contact access, parchment/exit reachable with all alive; bounded patrol without overlap",
+    "Parchment collected by native event with every skeleton alive; no kill-all condition, test checkpoint restored",
+    "Old living event3 relocated from proxy with stable ID; missing events added, character/resources/quests/inventory/receipts unchanged",
+    "Two native contacts, single participant/transition; controlled native victories mark independent defeats and grant EXP50/receipt once each, other five alive",
+    "Synthetic native Save16/F5/Load preserves independent defeats/receipts; old defeated pilot not revived; real transfer out/back before MQ02 completion does not respawn"
+  ],
+  "placement": {
+    "points": [
+      {
+        "id": "stonekeep.passage.skeleton.01",
+        "eventId": 3,
+        "origin": [
+          63,
+          9
+        ],
+        "actual": [
+          63,
+          9
+        ],
+        "file": "$Arena_skeleton_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.passage.skeleton.02",
+        "eventId": 4,
+        "origin": [
+          60,
+          9
+        ],
+        "actual": [
+          60,
+          9
+        ],
+        "file": "$Arena_skeleton_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.passage.skeleton.03",
+        "eventId": 5,
+        "origin": [
+          66,
+          12
+        ],
+        "actual": [
+          66,
+          12
+        ],
+        "file": "$Arena_skeleton_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.passage.skeleton.04",
+        "eventId": 6,
+        "origin": [
+          78,
+          15
+        ],
+        "actual": [
+          78,
+          15
+        ],
+        "file": "$Arena_skeleton_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.passage.skeleton.05",
+        "eventId": 7,
+        "origin": [
+          60,
+          15
+        ],
+        "actual": [
+          60,
+          15
+        ],
+        "file": "$Arena_skeleton_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.passage.skeleton.06",
+        "eventId": 8,
+        "origin": [
+          78,
+          18
+        ],
+        "actual": [
+          78,
+          18
+        ],
+        "file": "$Arena_skeleton_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.passage.skeleton.07",
+        "eventId": 9,
+        "origin": [
+          63,
+          18
+        ],
+        "actual": [
+          63,
+          18
+        ],
+        "file": "$Arena_skeleton_walk_v01",
+        "defeated": false
+      }
+    ],
+    "source": true,
+    "exit": true,
+    "contactAccess": [
+      [
+        "stonekeep.passage.skeleton.01",
+        true
+      ],
+      [
+        "stonekeep.passage.skeleton.02",
+        true
+      ],
+      [
+        "stonekeep.passage.skeleton.03",
+        true
+      ],
+      [
+        "stonekeep.passage.skeleton.04",
+        true
+      ],
+      [
+        "stonekeep.passage.skeleton.05",
+        true
+      ],
+      [
+        "stonekeep.passage.skeleton.06",
+        true
+      ],
+      [
+        "stonekeep.passage.skeleton.07",
+        true
+      ]
+    ]
+  },
+  "patrol": [
+    [
+      "stonekeep.passage.skeleton.01",
+      63,
+      11
+    ],
+    [
+      "stonekeep.passage.skeleton.02",
+      60,
+      11
+    ],
+    [
+      "stonekeep.passage.skeleton.03",
+      66,
+      14
+    ],
+    [
+      "stonekeep.passage.skeleton.04",
+      78,
+      17
+    ],
+    [
+      "stonekeep.passage.skeleton.05",
+      60,
+      17
+    ],
+    [
+      "stonekeep.passage.skeleton.06",
+      79,
+      19
+    ],
+    [
+      "stonekeep.passage.skeleton.07",
+      63,
+      20
+    ]
+  ],
+  "defeated": [
+    "stonekeep.passage.skeleton.01",
+    "stonekeep.passage.skeleton.02"
+  ],
+  "expPerEnemy": 50,
+  "optionalGroupExp": 350,
+  "errors": [],
+  "missing": [],
+  "scope": "Disposable origin/context, RAM checkpoint and synthetic native slot16; two controlled native victories only, no full battle/animation replay",
+  "pending": [
+    "Manual positioning/circulation evaluation can join Stonekeep integration",
+    "M02-BAL: cumulative EXP and resource/return/rest impact",
+    "Island guardians and other required route participants absent",
+    "No new MV editor/mobile test"
+  ]
+}
