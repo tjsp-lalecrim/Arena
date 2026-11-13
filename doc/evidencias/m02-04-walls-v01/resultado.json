@@ -1,0 +1,52 @@
+{
+  "base": "bc3e4d7",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "changedWallTiles": {
+    "cask": 27,
+    "casl": 36
+  },
+  "checks": [
+    {
+      "sample": "cask",
+      "entry": {
+        "id": "stonekeep.sample.cask",
+        "mapId": 12,
+        "x": 84,
+        "y": 93,
+        "direction": 6
+      },
+      "wallEdges": 13,
+      "ramSave": true,
+      "personalStorageUntouched": true
+    },
+    {
+      "sample": "casl",
+      "entry": {
+        "id": "stonekeep.sample.casl",
+        "mapId": 12,
+        "x": 129,
+        "y": 66,
+        "direction": 8
+      },
+      "wallEdges": 32,
+      "ramSave": true,
+      "personalStorageUntouched": true
+    }
+  ],
+  "staticChecks": [
+    "Only layer0 in selected K/L patches; all other map entries/events preserved",
+    "Only D sheet/12 flags added to tileset5; other tilesets/maps/Items unchanged",
+    "Parent reconstruction stable across8 outputs",
+    "Approved five masters/C sheet/native water unchanged"
+  ],
+  "errors": [],
+  "missing": [],
+  "pending": [
+    "owner visual approval of CASK/CASL",
+    "no new native editor authoring or physical mobile test"
+  ]
+}

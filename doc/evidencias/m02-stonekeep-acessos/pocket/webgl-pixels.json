@@ -1,0 +1,12 @@
+{
+  "crop": [
+    386,
+    258,
+    430,
+    326
+  ],
+  "characterDifferenceUnderRoof": 57876,
+  "characterDifferenceWithoutRoof": 103205,
+  "ratio": 0.5607867835860666,
+  "expected": "local alpha112/255; character remains readable through roof"
+}

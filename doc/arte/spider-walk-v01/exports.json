@@ -1,0 +1,398 @@
+{
+  "source": "art/masters/stonekeep-spider-walk-v01/sheet-v01.png",
+  "sourceSHA256": "286dc0dcace5898d18522e77eb77fb90413c9afc7a3a531f30b6defd6723a747",
+  "output": "img/characters/$Arena_spider_walk_v01.png",
+  "outputSHA256": "a7f68305be9b7a302c746f7a31ae7a743c2c04fdeea2da690eef7071c685b1ff",
+  "scale": 0.2576271186440678,
+  "cell": [
+    96,
+    96
+  ],
+  "legRootAnchor": [
+    48,
+    50
+  ],
+  "nominalGround": 94,
+  "groundByDirection": {
+    "2": 72,
+    "4": 72,
+    "6": 72,
+    "8": 72
+  },
+  "placement": "Existing groundByDirection hook adds22px: leg-root anchor rests24px above event screenY (tile floor center). Legspan visual only, collision remains one cell.",
+  "frames": [
+    {
+      "direction": 2,
+      "pattern": 0,
+      "sourceRect": [
+        47,
+        35,
+        315,
+        330
+      ],
+      "bodyCore": [
+        102,
+        14,
+        173,
+        161
+      ],
+      "anchor": [
+        137.5,
+        137.5
+      ],
+      "placement": [
+        13,
+        15
+      ],
+      "alphaBox": [
+        13,
+        15,
+        82,
+        91
+      ],
+      "sha256": "84f4d91ea6dae75ecf080b41c4ef6206115c8a9320ec7e667ec24afcdc116d35"
+    },
+    {
+      "direction": 2,
+      "pattern": 1,
+      "sourceRect": [
+        412,
+        35,
+        675,
+        323
+      ],
+      "bodyCore": [
+        96,
+        14,
+        166,
+        161
+      ],
+      "anchor": [
+        131.0,
+        137.5
+      ],
+      "placement": [
+        14,
+        15
+      ],
+      "alphaBox": [
+        14,
+        15,
+        82,
+        89
+      ],
+      "sha256": "4088f29ced2245bd124ec539bdf1233f8e8ae593158604a78f3d00374d023064"
+    },
+    {
+      "direction": 2,
+      "pattern": 2,
+      "sourceRect": [
+        756,
+        35,
+        1023,
+        330
+      ],
+      "bodyCore": [
+        111,
+        14,
+        181,
+        161
+      ],
+      "anchor": [
+        146.0,
+        137.5
+      ],
+      "placement": [
+        10,
+        15
+      ],
+      "alphaBox": [
+        10,
+        15,
+        79,
+        91
+      ],
+      "sha256": "6bd2fc5543deb366b5b2c0e85e4576b191e50b7d3c2d4a8b6472c3ca6765ead8"
+    },
+    {
+      "direction": 4,
+      "pattern": 0,
+      "sourceRect": [
+        20,
+        417,
+        305,
+        646
+      ],
+      "bodyCore": [
+        117,
+        65,
+        270,
+        132
+      ],
+      "anchor": [
+        143.5,
+        98.5
+      ],
+      "placement": [
+        11,
+        25
+      ],
+      "alphaBox": [
+        11,
+        25,
+        84,
+        84
+      ],
+      "sha256": "3cf9e4f2d6b375fd84861695562ce836f038e9ef2f1e56b72e1421000d6fdc79"
+    },
+    {
+      "direction": 4,
+      "pattern": 1,
+      "sourceRect": [
+        383,
+        418,
+        666,
+        653
+      ],
+      "bodyCore": [
+        114,
+        66,
+        265,
+        132
+      ],
+      "anchor": [
+        139.5,
+        99.0
+      ],
+      "placement": [
+        12,
+        24
+      ],
+      "alphaBox": [
+        12,
+        24,
+        85,
+        85
+      ],
+      "sha256": "8021d76da1dbccd2f04006bc721fd5cfc419e194ec788b6efff97776e4771861"
+    },
+    {
+      "direction": 4,
+      "pattern": 2,
+      "sourceRect": [
+        753,
+        411,
+        1040,
+        657
+      ],
+      "bodyCore": [
+        105,
+        71,
+        254,
+        137
+      ],
+      "anchor": [
+        129.5,
+        104.0
+      ],
+      "placement": [
+        15,
+        23
+      ],
+      "alphaBox": [
+        15,
+        23,
+        89,
+        86
+      ],
+      "sha256": "0cdb8a40e661404ae87186653efe670f1aa61ee966547538d72a4b0b595f040c"
+    },
+    {
+      "direction": 6,
+      "pattern": 0,
+      "sourceRect": [
+        50,
+        775,
+        337,
+        1004
+      ],
+      "bodyCore": [
+        26,
+        67,
+        178,
+        133
+      ],
+      "anchor": [
+        152.0,
+        100.0
+      ],
+      "placement": [
+        9,
+        24
+      ],
+      "alphaBox": [
+        9,
+        24,
+        83,
+        83
+      ],
+      "sha256": "ae67bc80a722d936bb2b34adb6f24226be65f4dac54ff864cf81dc985eca06d7"
+    },
+    {
+      "direction": 6,
+      "pattern": 1,
+      "sourceRect": [
+        410,
+        776,
+        697,
+        1013
+      ],
+      "bodyCore": [
+        28,
+        68,
+        179,
+        132
+      ],
+      "anchor": [
+        153.5,
+        100.0
+      ],
+      "placement": [
+        8,
+        24
+      ],
+      "alphaBox": [
+        8,
+        24,
+        82,
+        85
+      ],
+      "sha256": "3cbbbcdfcc054ae51c5a3d5217e8de01cc4d30ca3d8307c67d1847e51e470920"
+    },
+    {
+      "direction": 6,
+      "pattern": 2,
+      "sourceRect": [
+        765,
+        778,
+        1052,
+        1023
+      ],
+      "bodyCore": [
+        36,
+        66,
+        185,
+        130
+      ],
+      "anchor": [
+        160.5,
+        98.0
+      ],
+      "placement": [
+        7,
+        25
+      ],
+      "alphaBox": [
+        7,
+        25,
+        81,
+        88
+      ],
+      "sha256": "817c46aef9ab936260dbc3131f4f7b3b1fa41e831b192a959cd2d3c60eebb057"
+    },
+    {
+      "direction": 8,
+      "pattern": 0,
+      "sourceRect": [
+        49,
+        1100,
+        314,
+        1392
+      ],
+      "bodyCore": [
+        100,
+        101,
+        170,
+        251
+      ],
+      "anchor": [
+        135.0,
+        126.0
+      ],
+      "placement": [
+        13,
+        18
+      ],
+      "alphaBox": [
+        13,
+        18,
+        81,
+        93
+      ],
+      "sha256": "8e87c2efd01a419f7586b22ddf8e37d90aeedfc259bf507a120777b3c2bae25f"
+    },
+    {
+      "direction": 8,
+      "pattern": 1,
+      "sourceRect": [
+        409,
+        1121,
+        670,
+        1387
+      ],
+      "bodyCore": [
+        99,
+        80,
+        169,
+        230
+      ],
+      "anchor": [
+        134.0,
+        105.0
+      ],
+      "placement": [
+        13,
+        23
+      ],
+      "alphaBox": [
+        13,
+        23,
+        80,
+        92
+      ],
+      "sha256": "7bb0757fba7e08a197cf16d4cebb43c802422661b3ddbcc02c9a3d0e83e1a6f0"
+    },
+    {
+      "direction": 8,
+      "pattern": 2,
+      "sourceRect": [
+        768,
+        1114,
+        1044,
+        1397
+      ],
+      "bodyCore": [
+        99,
+        91,
+        168,
+        243
+      ],
+      "anchor": [
+        133.5,
+        117.0
+      ],
+      "placement": [
+        14,
+        20
+      ],
+      "alphaBox": [
+        14,
+        20,
+        85,
+        93
+      ],
+      "sha256": "5a9d228b129ffc0afc536ccecb4e52e80bc2174c0a577ae93dba5540f96dbaf6"
+    }
+  ],
+  "approval": "Owner explicitly approved Spider combat and patrol atf5ebdba WITH reservation: first battle generation visually preferred; future comparison only, no active asset replacement, no balance/reward/encounter approval inferred"
+}

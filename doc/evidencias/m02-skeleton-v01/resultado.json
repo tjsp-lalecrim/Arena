@@ -1,0 +1,365 @@
+{
+  "base": "cd63553",
+  "browser": "156.0.8078.76",
+  "engine": "MV1.6.1",
+  "canvas": [
+    816,
+    624
+  ],
+  "rates": [
+    {
+      "weapon": 1,
+      "id": 1,
+      "crit": false,
+      "base": 20,
+      "rate": 0.5,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "weapon": 1,
+      "id": 1,
+      "crit": true,
+      "base": 60,
+      "rate": 0.5,
+      "actual": 30,
+      "expected": 30
+    },
+    {
+      "weapon": 1,
+      "id": 5,
+      "crit": false,
+      "base": 20,
+      "rate": 0.5,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "weapon": 1,
+      "id": 5,
+      "crit": true,
+      "base": 60,
+      "rate": 0.5,
+      "actual": 30,
+      "expected": 30
+    },
+    {
+      "weapon": 1,
+      "id": 6,
+      "crit": false,
+      "base": 33,
+      "rate": 0.5,
+      "actual": 17,
+      "expected": 17
+    },
+    {
+      "weapon": 1,
+      "id": 6,
+      "crit": true,
+      "base": 97,
+      "rate": 0.5,
+      "actual": 49,
+      "expected": 49
+    },
+    {
+      "weapon": 1,
+      "id": 9,
+      "crit": false,
+      "base": -33,
+      "rate": 1,
+      "actual": -33,
+      "expected": -33
+    },
+    {
+      "weapon": 1,
+      "id": 9,
+      "crit": true,
+      "base": -99,
+      "rate": 1,
+      "actual": -99,
+      "expected": -99
+    },
+    {
+      "weapon": 1,
+      "id": 10,
+      "crit": false,
+      "base": 20,
+      "rate": 1,
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "weapon": 1,
+      "id": 10,
+      "crit": true,
+      "base": 60,
+      "rate": 1,
+      "actual": 60,
+      "expected": 60
+    },
+    {
+      "weapon": 2,
+      "id": 1,
+      "crit": false,
+      "base": 22,
+      "rate": 0.5,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "weapon": 2,
+      "id": 1,
+      "crit": true,
+      "base": 66,
+      "rate": 0.5,
+      "actual": 33,
+      "expected": 33
+    },
+    {
+      "weapon": 2,
+      "id": 7,
+      "crit": false,
+      "base": 22,
+      "rate": 0.5,
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "weapon": 2,
+      "id": 7,
+      "crit": true,
+      "base": 66,
+      "rate": 0.5,
+      "actual": 33,
+      "expected": 33
+    },
+    {
+      "weapon": 2,
+      "id": 8,
+      "crit": false,
+      "base": 36,
+      "rate": 0.5,
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "weapon": 2,
+      "id": 8,
+      "crit": true,
+      "base": 105,
+      "rate": 0.5,
+      "actual": 53,
+      "expected": 53
+    },
+    {
+      "weapon": 0,
+      "id": 1,
+      "crit": false,
+      "base": 17,
+      "rate": 1,
+      "actual": 17,
+      "expected": 17
+    },
+    {
+      "weapon": 0,
+      "id": 1,
+      "crit": true,
+      "base": 48,
+      "rate": 1,
+      "actual": 48,
+      "expected": 48
+    },
+    {
+      "weapon": 0,
+      "id": 3,
+      "crit": false,
+      "base": 17,
+      "rate": 1,
+      "actual": 17,
+      "expected": 17
+    },
+    {
+      "weapon": 0,
+      "id": 3,
+      "crit": true,
+      "base": 48,
+      "rate": 1,
+      "actual": 48,
+      "expected": 48
+    },
+    {
+      "weapon": 0,
+      "id": 4,
+      "crit": false,
+      "base": 26,
+      "rate": 1,
+      "actual": 26,
+      "expected": 26
+    },
+    {
+      "weapon": 0,
+      "id": 4,
+      "crit": true,
+      "base": 79,
+      "rate": 1,
+      "actual": 79,
+      "expected": 79
+    }
+  ],
+  "resourceCosts": {
+    "mpStart": 50,
+    "mpCost": 6,
+    "mpEnd": 44,
+    "vigorStart": 100,
+    "vigorEnd": 88
+  },
+  "victory": {
+    "trace": {
+      "frames": {
+        "idle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "hurt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "strike": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "defeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "costs": [
+        1,
+        6,
+        10
+      ],
+      "impacts": [
+        {
+          "key": "strike",
+          "index": 3,
+          "tick": 21,
+          "total": 40,
+          "done": false,
+          "impactTick": 21,
+          "released": false,
+          "weaponId": null
+        },
+        {
+          "key": "strike",
+          "index": 3,
+          "tick": 21,
+          "total": 40,
+          "done": false,
+          "impactTick": 21,
+          "released": false,
+          "weaponId": null
+        }
+      ]
+    },
+    "resources": {
+      "hp": {
+        "current": 72,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "mp": {
+        "current": 44,
+        "maximum": 50,
+        "base": 50,
+        "growth": 0,
+        "modifiers": 0
+      },
+      "vigor": {
+        "current": 88,
+        "maximum": 100,
+        "base": 100,
+        "growth": 0,
+        "initialBonus": 0,
+        "modifiers": 0
+      },
+      "level": 2,
+      "baselineLevel": 1,
+      "choices": {},
+      "pending": [
+        2
+      ]
+    },
+    "mp": 44,
+    "exp": 50,
+    "enemyDead": true,
+    "loot": {
+      "sequence": 1,
+      "receipts": {
+        "battle/1": {
+          "exp": 0,
+          "origins": [
+            {
+              "origin": "enemy/0",
+              "enemyId": 4,
+              "rows": [],
+              "candidates": 0,
+              "questSources": []
+            }
+          ],
+          "received": [],
+          "pending": [],
+          "sources": []
+        }
+      },
+      "pending": []
+    },
+    "position": [
+      12,
+      75,
+      39
+    ],
+    "canEscape": false,
+    "storage": "{}"
+  },
+  "persistence": {
+    "restored": true,
+    "receiptCount": 1
+  },
+  "checks": [
+    "Native title RAM battle, no normal saves",
+    "Native attack/heavy/fire and one charge per action",
+    "Edged half damage including critical; unarmed/magic/heal/other enemies unchanged",
+    "All6 frames of all4 states and native impact synchronization",
+    "Victory returns to passage; reward receipt unique with0 EXP/drops",
+    "Resources/quest/items/receipt survive RAM save/load, no repeated battle",
+    "Native guard at1HP leads to game over",
+    "Existing database/maps/skills and canonical plugins preserved; builder idempotent"
+  ],
+  "errors": [],
+  "missing": [],
+  "pending": [
+    "owner visual/functional evaluation",
+    "exploration art/patrol/contact/encounter-state persistence",
+    "campaign rewards/EXP configuration",
+    "new editor/mobile test not performed"
+  ],
+  "recording": "Actual MV canvas30fps, normal engine timing; RNG fixed .5 only in automated battle, no stats/time acceleration"
+}

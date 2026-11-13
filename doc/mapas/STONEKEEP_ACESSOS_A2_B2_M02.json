@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "mapId": 15,
+  "lockedDoors": [
+    {
+      "id": "stonekeep.access.door.mif51.15",
+      "sourceOriginal": [
+        51,
+        15
+      ],
+      "view": [
+        38,
+        15
+      ],
+      "center": [
+        117,
+        48
+      ],
+      "raw": 45070,
+      "axis": "north-south",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "lockPolicy": "forceableOrdinary"
+    },
+    {
+      "id": "stonekeep.access.door.mif51.19",
+      "sourceOriginal": [
+        51,
+        19
+      ],
+      "view": [
+        38,
+        19
+      ],
+      "center": [
+        117,
+        60
+      ],
+      "raw": 45070,
+      "axis": "north-south",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "lockPolicy": "forceableOrdinary"
+    },
+    {
+      "id": "stonekeep.access.door.mif54.19",
+      "sourceOriginal": [
+        54,
+        19
+      ],
+      "view": [
+        35,
+        19
+      ],
+      "center": [
+        108,
+        60
+      ],
+      "raw": 45070,
+      "axis": "north-south",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "lockPolicy": "forceableOrdinary"
+    },
+    {
+      "id": "stonekeep.access.door.mif39.44",
+      "sourceOriginal": [
+        39,
+        44
+      ],
+      "view": [
+        50,
+        44
+      ],
+      "center": [
+        153,
+        135
+      ],
+      "raw": 45073,
+      "axis": "north-south",
+      "lockValue": 2,
+      "triggerAtDoor": null,
+      "lockPolicy": "forceableOrdinary"
+    },
+    {
+      "id": "stonekeep.access.door.mif39.49",
+      "sourceOriginal": [
+        39,
+        49
+      ],
+      "view": [
+        50,
+        49
+      ],
+      "center": [
+        153,
+        150
+      ],
+      "raw": 45073,
+      "axis": "north-south",
+      "lockValue": 3,
+      "triggerAtDoor": null,
+      "lockPolicy": "forceableOrdinary"
+    }
+  ],
+  "pocketDoors": [
+    {
+      "id": "stonekeep.access.door.mif57.52",
+      "sourceOriginal": [
+        57,
+        52
+      ],
+      "view": [
+        32,
+        52
+      ],
+      "center": [
+        99,
+        159
+      ],
+      "raw": 45069,
+      "axis": "east-west",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "lockPolicy": null
+    },
+    {
+      "id": "stonekeep.access.door.mif52.53",
+      "sourceOriginal": [
+        52,
+        53
+      ],
+      "view": [
+        37,
+        53
+      ],
+      "center": [
+        114,
+        162
+      ],
+      "raw": 45069,
+      "axis": "north-south",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "lockPolicy": null
+    },
+    {
+      "id": "stonekeep.access.door.mif52.56",
+      "sourceOriginal": [
+        52,
+        56
+      ],
+      "view": [
+        37,
+        56
+      ],
+      "center": [
+        114,
+        171
+      ],
+      "raw": 45069,
+      "axis": "north-south",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "lockPolicy": null
+    },
+    {
+      "id": "stonekeep.access.door.mif54.56",
+      "sourceOriginal": [
+        54,
+        56
+      ],
+      "view": [
+        35,
+        56
+      ],
+      "center": [
+        108,
+        171
+      ],
+      "raw": 45069,
+      "axis": "north-south",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "lockPolicy": null
+    }
+  ],
+  "pocketEnemies": [
+    {
+      "id": "stonekeep.b2.enemy.mif55.54",
+      "eventId": 338,
+      "sourceOriginal": [
+        55,
+        54
+      ],
+      "origin": [
+        105,
+        165
+      ],
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceFlat": "GOBLIN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.b2.enemy.mif58.55",
+      "eventId": 339,
+      "sourceOriginal": [
+        58,
+        55
+      ],
+      "origin": [
+        96,
+        168
+      ],
+      "enemyId": 2,
+      "troopId": 2,
+      "sourceFlat": "GOBLIN.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "force": {
+    "framesPerLockLevel": 45,
+    "ordinaryLevels": [
+      1,
+      2,
+      3
+    ],
+    "policy": "Deterministic universal force, no class/item/resource requirement; adapted, not original probability/wear formula"
+  },
+  "dryPassage": {
+    "cells": [
+      {
+        "sourceOriginal": [
+          56,
+          41
+        ],
+        "view": [
+          33,
+          41
+        ],
+        "center": [
+          102,
+          126
+        ],
+        "raw": 7757,
+        "floorRaw": 512
+      },
+      {
+        "sourceOriginal": [
+          56,
+          42
+        ],
+        "view": [
+          33,
+          42
+        ],
+        "center": [
+          102,
+          129
+        ],
+        "raw": 7757,
+        "floorRaw": 512
+      },
+      {
+        "sourceOriginal": [
+          56,
+          43
+        ],
+        "view": [
+          33,
+          43
+        ],
+        "center": [
+          102,
+          132
+        ],
+        "raw": 7757,
+        "floorRaw": 768
+      },
+      {
+        "sourceOriginal": [
+          56,
+          44
+        ],
+        "view": [
+          33,
+          44
+        ],
+        "center": [
+          102,
+          135
+        ],
+        "raw": 7757,
+        "floorRaw": 512
+      },
+      {
+        "sourceOriginal": [
+          56,
+          45
+        ],
+        "view": [
+          33,
+          45
+        ],
+        "center": [
+          102,
+          138
+        ],
+        "raw": 7757,
+        "floorRaw": 512
+      },
+      {
+        "sourceOriginal": [
+          56,
+          46
+        ],
+        "view": [
+          33,
+          46
+        ],
+        "center": [
+          102,
+          141
+        ],
+        "raw": 7757,
+        "floorRaw": 1536
+      },
+      {
+        "sourceOriginal": [
+          56,
+          47
+        ],
+        "view": [
+          33,
+          47
+        ],
+        "center": [
+          102,
+          144
+        ],
+        "raw": 7757,
+        "floorRaw": 512
+      },
+      {
+        "sourceOriginal": [
+          56,
+          48
+        ],
+        "view": [
+          33,
+          48
+        ],
+        "center": [
+          102,
+          147
+        ],
+        "raw": 7757,
+        "floorRaw": 768
+      },
+      {
+        "sourceOriginal": [
+          56,
+          49
+        ],
+        "view": [
+          33,
+          49
+        ],
+        "center": [
+          102,
+          150
+        ],
+        "raw": 7757,
+        "floorRaw": 512
+      }
+    ],
+    "worldBounds": [
+      101,
+      125,
+      103,
+      151
+    ],
+    "bottomUnits": 75,
+    "thicknessUnits": 25,
+    "ceilingUnits": 150,
+    "technicalStandingHeadUnits": 61,
+    "classification": "Geometry confirmed from MIF+ACD tables, clearance corroborated by OpenTESArena; no DOS observation",
+    "roofOpacityInside": 112
+  },
+  "points": [
+    {
+      "name": "Aposentos / lobos",
+      "position": [
+        117,
+        45
+      ]
+    },
+    {
+      "name": "B2 · porta LOCK2",
+      "position": [
+        153,
+        132
+      ]
+    },
+    {
+      "name": "B2 · porta LOCK3",
+      "position": [
+        153,
+        147
+      ]
+    },
+    {
+      "name": "B2 · corredor sob estrutura",
+      "position": [
+        102,
+        123
+      ]
+    },
+    {
+      "name": "B2 · bolsa sudoeste",
+      "position": [
+        105,
+        168
+      ]
+    }
+  ]
+}

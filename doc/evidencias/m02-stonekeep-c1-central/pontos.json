@@ -1,0 +1,46 @@
+{
+  "checks": [
+    "Clean native boot/hub,81 logical IDs, normal slots blocked; campaign Minotaur60EXP/gold25%6-60 separate from technical lab",
+    "Five inspection points route through the existing RAM hub without occupied landing tiles"
+  ],
+  "points": [
+    {
+      "name": "C1 central · corredor norte",
+      "position": [
+        63,
+        216
+      ]
+    },
+    {
+      "name": "C1 central · Minotauro",
+      "position": [
+        36,
+        216
+      ]
+    },
+    {
+      "name": "C1 central · lobos",
+      "position": [
+        27,
+        222
+      ]
+    },
+    {
+      "name": "C1 central · esqueletos",
+      "position": [
+        75,
+        234
+      ]
+    },
+    {
+      "name": "C1 central · ghoul sul",
+      "position": [
+        15,
+        240
+      ]
+    }
+  ],
+  "browser": "156.0.8078.76",
+  "errors": [],
+  "missing": []
+}

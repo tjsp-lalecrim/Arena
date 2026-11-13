@@ -1,0 +1,5370 @@
+{
+  "version": 1,
+  "id": "stonekeep.a2-b2.connected",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "bounds": [
+    30,
+    0,
+    59,
+    59
+  ],
+  "selection": "A2 plus connected conservative B2 component; excludes southwest pocket; only3 northern B2 goblins independent of unresolved LOCK openings",
+  "doors": [
+    {
+      "sourceOriginal": [
+        49,
+        15
+      ],
+      "view": [
+        40,
+        15
+      ],
+      "center": [
+        123,
+        48
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif49.15",
+      "accessDependency": null
+    },
+    {
+      "sourceOriginal": [
+        54,
+        15
+      ],
+      "view": [
+        35,
+        15
+      ],
+      "center": [
+        108,
+        48
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif54.15",
+      "accessDependency": null
+    },
+    {
+      "sourceOriginal": [
+        55,
+        17
+      ],
+      "view": [
+        34,
+        17
+      ],
+      "center": [
+        105,
+        54
+      ],
+      "axis": "east-west",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif55.17",
+      "accessDependency": null
+    },
+    {
+      "sourceOriginal": [
+        49,
+        19
+      ],
+      "view": [
+        40,
+        19
+      ],
+      "center": [
+        123,
+        60
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif49.19",
+      "accessDependency": null
+    },
+    {
+      "sourceOriginal": [
+        56,
+        34
+      ],
+      "view": [
+        33,
+        34
+      ],
+      "center": [
+        102,
+        105
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif56.34",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        55,
+        37
+      ],
+      "view": [
+        34,
+        37
+      ],
+      "center": [
+        105,
+        114
+      ],
+      "axis": "east-west",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif55.37",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        56,
+        39
+      ],
+      "view": [
+        33,
+        39
+      ],
+      "center": [
+        102,
+        120
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif56.39",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        48,
+        44
+      ],
+      "view": [
+        41,
+        44
+      ],
+      "center": [
+        126,
+        135
+      ],
+      "axis": "north-south",
+      "raw": 45072,
+      "texture": "DCAS5.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif48.44",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        51,
+        44
+      ],
+      "view": [
+        38,
+        44
+      ],
+      "center": [
+        117,
+        135
+      ],
+      "axis": "north-south",
+      "raw": 45072,
+      "texture": "DCAS5.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif51.44",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        54,
+        46
+      ],
+      "view": [
+        35,
+        46
+      ],
+      "center": [
+        108,
+        141
+      ],
+      "axis": "east-west",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif54.46",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        32,
+        49
+      ],
+      "view": [
+        57,
+        49
+      ],
+      "center": [
+        174,
+        150
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif32.49",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        45,
+        49
+      ],
+      "view": [
+        44,
+        49
+      ],
+      "center": [
+        135,
+        150
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif45.49",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        37,
+        51
+      ],
+      "view": [
+        52,
+        51
+      ],
+      "center": [
+        159,
+        156
+      ],
+      "axis": "east-west",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif37.51",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        42,
+        52
+      ],
+      "view": [
+        47,
+        52
+      ],
+      "center": [
+        144,
+        159
+      ],
+      "axis": "east-west",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif42.52",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        36,
+        56
+      ],
+      "view": [
+        53,
+        56
+      ],
+      "center": [
+        162,
+        171
+      ],
+      "axis": "east-west",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif36.56",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    },
+    {
+      "sourceOriginal": [
+        41,
+        57
+      ],
+      "view": [
+        48,
+        57
+      ],
+      "center": [
+        147,
+        174
+      ],
+      "axis": "east-west",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "id": "stonekeep.a2b2.door.mif41.57",
+      "accessDependency": "Upstream unresolved LOCK; current access uses inherited provisional opening, not a completed gate"
+    }
+  ],
+  "deferredDoors": [
+    {
+      "sourceOriginal": [
+        51,
+        15
+      ],
+      "view": [
+        38,
+        15
+      ],
+      "center": [
+        117,
+        48
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        51,
+        19
+      ],
+      "view": [
+        38,
+        19
+      ],
+      "center": [
+        117,
+        60
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        54,
+        19
+      ],
+      "view": [
+        35,
+        19
+      ],
+      "center": [
+        108,
+        60
+      ],
+      "axis": "north-south",
+      "raw": 45070,
+      "texture": "DCAS3.IMG",
+      "lockValue": 1,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        39,
+        44
+      ],
+      "view": [
+        50,
+        44
+      ],
+      "center": [
+        153,
+        135
+      ],
+      "axis": "north-south",
+      "raw": 45073,
+      "texture": "DCAS6.IMG",
+      "lockValue": 2,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        39,
+        49
+      ],
+      "view": [
+        50,
+        49
+      ],
+      "center": [
+        153,
+        150
+      ],
+      "axis": "north-south",
+      "raw": 45073,
+      "texture": "DCAS6.IMG",
+      "lockValue": 3,
+      "triggerAtDoor": null,
+      "dependency": "LOCK unresolved; no invented key/lock mechanic"
+    },
+    {
+      "sourceOriginal": [
+        57,
+        52
+      ],
+      "view": [
+        32,
+        52
+      ],
+      "center": [
+        99,
+        159
+      ],
+      "axis": "east-west",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        52,
+        53
+      ],
+      "view": [
+        37,
+        53
+      ],
+      "center": [
+        114,
+        162
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        52,
+        56
+      ],
+      "view": [
+        37,
+        56
+      ],
+      "center": [
+        114,
+        171
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    },
+    {
+      "sourceOriginal": [
+        54,
+        56
+      ],
+      "view": [
+        35,
+        56
+      ],
+      "center": [
+        108,
+        171
+      ],
+      "axis": "north-south",
+      "raw": 45069,
+      "texture": "DCAS2.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "dependency": "Disconnected conservative pocket; connection/height evidence pending, no other-sector detour"
+    }
+  ],
+  "enemies": [
+    {
+      "sourceOriginal": [
+        40,
+        38
+      ],
+      "view": [
+        49,
+        38
+      ],
+      "origin": [
+        150,
+        117
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif40.38",
+      "eventId": 243,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": null
+    },
+    {
+      "sourceOriginal": [
+        41,
+        39
+      ],
+      "view": [
+        48,
+        39
+      ],
+      "origin": [
+        147,
+        120
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif41.39",
+      "eventId": 244,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": null
+    },
+    {
+      "sourceOriginal": [
+        36,
+        40
+      ],
+      "view": [
+        53,
+        40
+      ],
+      "origin": [
+        162,
+        123
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif36.40",
+      "eventId": 245,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": null
+    },
+    {
+      "sourceOriginal": [
+        47,
+        40
+      ],
+      "view": [
+        42,
+        40
+      ],
+      "origin": [
+        129,
+        123
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif47.40",
+      "eventId": 246,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        31,
+        41
+      ],
+      "view": [
+        58,
+        41
+      ],
+      "origin": [
+        177,
+        126
+      ],
+      "species": "esqueleto",
+      "sourceFlat": "SKELETON.DFA",
+      "id": "stonekeep.b2.enemy.mif31.41",
+      "eventId": 247,
+      "enemyId": 4,
+      "troopId": 5,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        48,
+        41
+      ],
+      "view": [
+        41,
+        41
+      ],
+      "origin": [
+        126,
+        126
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif48.41",
+      "eventId": 248,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        46,
+        46
+      ],
+      "view": [
+        43,
+        46
+      ],
+      "origin": [
+        132,
+        141
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif46.46",
+      "eventId": 249,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        48,
+        46
+      ],
+      "view": [
+        41,
+        46
+      ],
+      "origin": [
+        126,
+        141
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif48.46",
+      "eventId": 250,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        46,
+        47
+      ],
+      "view": [
+        43,
+        47
+      ],
+      "origin": [
+        132,
+        144
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif46.47",
+      "eventId": 251,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        45,
+        51
+      ],
+      "view": [
+        44,
+        51
+      ],
+      "origin": [
+        135,
+        156
+      ],
+      "species": "rato",
+      "sourceFlat": "RAT.DFA",
+      "id": "stonekeep.b2.enemy.mif45.51",
+      "eventId": 252,
+      "enemyId": 1,
+      "troopId": 1,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        38,
+        52
+      ],
+      "view": [
+        51,
+        52
+      ],
+      "origin": [
+        156,
+        159
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif38.52",
+      "eventId": 253,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        44,
+        52
+      ],
+      "view": [
+        45,
+        52
+      ],
+      "origin": [
+        138,
+        159
+      ],
+      "species": "rato",
+      "sourceFlat": "RAT.DFA",
+      "id": "stonekeep.b2.enemy.mif44.52",
+      "eventId": 254,
+      "enemyId": 1,
+      "troopId": 1,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        40,
+        56
+      ],
+      "view": [
+        49,
+        56
+      ],
+      "origin": [
+        150,
+        171
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif40.56",
+      "eventId": 255,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    },
+    {
+      "sourceOriginal": [
+        38,
+        58
+      ],
+      "view": [
+        51,
+        58
+      ],
+      "origin": [
+        156,
+        177
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "id": "stonekeep.b2.enemy.mif38.58",
+      "eventId": 256,
+      "enemyId": 2,
+      "troopId": 2,
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1,
+      "accessDependency": "Upstream unresolved LOCK; current access is provisional"
+    }
+  ],
+  "deferredEnemies": [
+    {
+      "sourceOriginal": [
+        48,
+        37
+      ],
+      "view": [
+        41,
+        37
+      ],
+      "origin": [
+        126,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        49,
+        37
+      ],
+      "view": [
+        40,
+        37
+      ],
+      "origin": [
+        123,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        50,
+        37
+      ],
+      "view": [
+        39,
+        37
+      ],
+      "origin": [
+        120,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        37
+      ],
+      "view": [
+        31,
+        37
+      ],
+      "origin": [
+        96,
+        114
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        38
+      ],
+      "view": [
+        31,
+        38
+      ],
+      "origin": [
+        96,
+        117
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        34,
+        46
+      ],
+      "view": [
+        55,
+        46
+      ],
+      "origin": [
+        168,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
+    },
+    {
+      "sourceOriginal": [
+        43,
+        46
+      ],
+      "view": [
+        46,
+        46
+      ],
+      "origin": [
+        141,
+        141
+      ],
+      "species": "orc",
+      "sourceFlat": "ORC.DFA",
+      "dependency": "Orc exploration/battle pilot absent; do not substitute"
+    },
+    {
+      "sourceOriginal": [
+        44,
+        46
+      ],
+      "view": [
+        45,
+        46
+      ],
+      "origin": [
+        138,
+        141
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
+    },
+    {
+      "sourceOriginal": [
+        34,
+        47
+      ],
+      "view": [
+        55,
+        47
+      ],
+      "origin": [
+        168,
+        144
+      ],
+      "species": "homem-lagarto",
+      "sourceFlat": "LIZRDMAN.DFA",
+      "dependency": "Exploration walking absent; battle asset already exists, validate consumer later"
+    },
+    {
+      "sourceOriginal": [
+        55,
+        54
+      ],
+      "view": [
+        34,
+        54
+      ],
+      "origin": [
+        105,
+        165
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "dependency": "Disconnected conservative pocket; no new passage inferred"
+    },
+    {
+      "sourceOriginal": [
+        58,
+        55
+      ],
+      "view": [
+        31,
+        55
+      ],
+      "origin": [
+        96,
+        168
+      ],
+      "species": "goblin",
+      "sourceFlat": "GOBLIN.DFA",
+      "dependency": "Disconnected conservative pocket; no new passage inferred"
+    }
+  ],
+  "materialCells": [
+    {
+      "view": [
+        31,
+        33
+      ],
+      "mapRaw": 10307,
+      "floorRaw": 1536
+    },
+    {
+      "view": [
+        32,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 1536
+    },
+    {
+      "view": [
+        33,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 1536
+    },
+    {
+      "view": [
+        34,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 1536
+    },
+    {
+      "view": [
+        35,
+        33
+      ],
+      "mapRaw": 32791,
+      "floorRaw": 1536
+    },
+    {
+      "view": [
+        36,
+        33
+      ],
+      "mapRaw": 14906,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        33
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        41,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        42,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        43,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        44,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        45,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        46,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        47,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        48,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        49,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        50,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        51,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        52,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        53,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        54,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        55,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        56,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        57,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        58,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        59,
+        33
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        31,
+        34
+      ],
+      "mapRaw": 14906,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        32,
+        34
+      ],
+      "mapRaw": 14649,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        34
+      ],
+      "mapRaw": 45069,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        34
+      ],
+      "mapRaw": 14906,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        34
+      ],
+      "mapRaw": 14392,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        39,
+        34
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        40,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        41,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        42,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        43,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        44,
+        34
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        47,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        48,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        49,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        50,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        51,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        52,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        53,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        54,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        55,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        56,
+        34
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        58,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        59,
+        34
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        30,
+        35
+      ],
+      "mapRaw": 14649,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        31,
+        35
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        32,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        34,
+        35
+      ],
+      "mapRaw": 14392,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        40,
+        35
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        35
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        35
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        35
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        45,
+        35
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        47,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        48,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        49,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        50,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        51,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        52,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        53,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 3328
+    },
+    {
+      "view": [
+        54,
+        35
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        55,
+        35
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        35
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        35
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        35
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        30,
+        36
+      ],
+      "mapRaw": 10307,
+      "floorRaw": 553
+    },
+    {
+      "view": [
+        31,
+        36
+      ],
+      "mapRaw": 10307,
+      "floorRaw": 554
+    },
+    {
+      "view": [
+        32,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        36
+      ],
+      "mapRaw": 14649,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        36
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        36
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        36
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        36
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        36
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        36
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        36
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        36
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        45,
+        36
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        47,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        48,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        49,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        50,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        51,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        53,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        54,
+        36
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        55,
+        36
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        30,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        31,
+        37
+      ],
+      "mapRaw": 32824,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        32,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        37
+      ],
+      "mapRaw": 45069,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        36,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        37
+      ],
+      "mapRaw": 32824,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        37
+      ],
+      "mapRaw": 32824,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        37
+      ],
+      "mapRaw": 32824,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        37
+      ],
+      "mapRaw": 53543,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        37
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        37
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        48,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        49,
+        37
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        37
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        51,
+        37
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        37
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        53,
+        37
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        37
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        30,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        31,
+        38
+      ],
+      "mapRaw": 32824,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        32,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        38
+      ],
+      "mapRaw": 14392,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        38
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        38
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        38
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        38
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        38
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        42,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        38
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        46,
+        38
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        38
+      ],
+      "mapRaw": 32787,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        48,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        49,
+        38
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        51,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        52,
+        38
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        53,
+        38
+      ],
+      "mapRaw": 32787,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        54,
+        38
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        30,
+        39
+      ],
+      "mapRaw": 32793,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        31,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        32,
+        39
+      ],
+      "mapRaw": 14649,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        39
+      ],
+      "mapRaw": 45069,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        39
+      ],
+      "mapRaw": 14392,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        39
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        39
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        39
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        39,
+        39
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        40,
+        39
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        41,
+        39
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        39
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        39
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        39
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        49,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        51,
+        39
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        53,
+        39
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        39
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        30,
+        40
+      ],
+      "mapRaw": 14649,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        31,
+        40
+      ],
+      "mapRaw": 14906,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        32,
+        40
+      ],
+      "mapRaw": 14392,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        40
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        40
+      ],
+      "mapRaw": 14649,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        40
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        36,
+        40
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        40
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        40
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        40
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        40
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        40
+      ],
+      "mapRaw": 8261,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        40
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        40
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        40
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        40
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        40
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        48,
+        40
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        49,
+        40
+      ],
+      "mapRaw": 8269,
+      "floorRaw": 563
+    },
+    {
+      "view": [
+        50,
+        40
+      ],
+      "mapRaw": 8269,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        51,
+        40
+      ],
+      "mapRaw": 8269,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        40
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        53,
+        40
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        40
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        40
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        40
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        41
+      ],
+      "mapRaw": 7757,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        41
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        36,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        41
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        38,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        41
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        41
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        41
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        41
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        47,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        48,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        49,
+        41
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        41
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        51,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        53,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        54,
+        41
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        41
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        41
+      ],
+      "mapRaw": 32825,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        41
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        42
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        41,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        43,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        42
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        42
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        42
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        49,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        50,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        52,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        53,
+        42
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        42
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        42
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        42
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        43
+      ],
+      "mapRaw": 53544,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        42,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        43
+      ],
+      "mapRaw": 53287,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        43
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        43
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        43
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        43
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        43
+      ],
+      "mapRaw": 15163,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        53,
+        43
+      ],
+      "mapRaw": 15420,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        43
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        43
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        44
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        38,
+        44
+      ],
+      "mapRaw": 45072,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        44
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        44
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        44
+      ],
+      "mapRaw": 45072,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        44
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        44
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        44
+      ],
+      "mapRaw": 45073,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        44
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        44
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        44
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        44
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        45
+      ],
+      "mapRaw": 14906,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        45
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        45
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        45
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        39,
+        45
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        40,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        45
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        45
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        45
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        45
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        47,
+        45
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        48,
+        45
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        45
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        45
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        52,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        53,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        45
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        45
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        45
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        57,
+        45
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        45
+      ],
+      "mapRaw": 10314,
+      "floorRaw": 515
+    },
+    {
+      "view": [
+        59,
+        45
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        33,
+        46
+      ],
+      "mapRaw": 7757,
+      "floorRaw": 1536
+    },
+    {
+      "view": [
+        34,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 1536
+    },
+    {
+      "view": [
+        35,
+        46
+      ],
+      "mapRaw": 45070,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        38,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        39,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        46
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        42,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        46
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        46
+      ],
+      "mapRaw": 32822,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        46,
+        46
+      ],
+      "mapRaw": 32824,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        48,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        50,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        53,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        46
+      ],
+      "mapRaw": 32822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        57,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        46
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        34,
+        47
+      ],
+      "mapRaw": 14906,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        35,
+        47
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        38,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        39,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        47
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        47
+      ],
+      "mapRaw": 32790,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        47
+      ],
+      "mapRaw": 32790,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        53,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        47
+      ],
+      "mapRaw": 32822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        47
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        47
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        59,
+        47
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        36,
+        48
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        37,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        38,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        39,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        40,
+        48
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        41,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        42,
+        48
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        48
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        45,
+        48
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        48
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        49,
+        48
+      ],
+      "mapRaw": 12079,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        48
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        48
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        52,
+        48
+      ],
+      "mapRaw": 11822,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        48
+      ],
+      "mapRaw": 12336,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        48
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        48
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        48
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        48
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        48
+      ],
+      "mapRaw": 11565,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        49
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        49
+      ],
+      "mapRaw": 45070,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        49
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        49
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        49
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        49
+      ],
+      "mapRaw": 45073,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        49
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        54,
+        49
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        49
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        49
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        49
+      ],
+      "mapRaw": 45070,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        49
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        50
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        44,
+        50
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        50
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        50
+      ],
+      "mapRaw": 32806,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        50
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        50
+      ],
+      "mapRaw": 13107,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        50
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        50
+      ],
+      "mapRaw": 13107,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        50
+      ],
+      "mapRaw": 12850,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        50
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        50
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        55,
+        50
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        50
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        50
+      ],
+      "mapRaw": 32815,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        50
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        51
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        44,
+        51
+      ],
+      "mapRaw": 32820,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        51
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        51
+      ],
+      "mapRaw": 12593,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        51
+      ],
+      "mapRaw": 45070,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        51
+      ],
+      "mapRaw": 32804,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        51
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        51
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        52
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        52
+      ],
+      "mapRaw": 32820,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        47,
+        52
+      ],
+      "mapRaw": 45070,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        52
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        52
+      ],
+      "mapRaw": 12850,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        52
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        52
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        58,
+        52
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        53
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        53
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        53
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        53
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        53
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        53
+      ],
+      "mapRaw": 12850,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        53
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        53
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        53
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        53
+      ],
+      "mapRaw": 12850,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        53
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        53
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        53
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        53
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        54
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        54
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        54
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        54
+      ],
+      "mapRaw": 13107,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        54
+      ],
+      "mapRaw": 32813,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        54
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        54
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        54
+      ],
+      "mapRaw": 12593,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        54
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        54
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        56,
+        54
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        54
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        55
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        46,
+        55
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        55
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        55
+      ],
+      "mapRaw": 13107,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        55
+      ],
+      "mapRaw": 13107,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        55
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        55
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        55
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        43,
+        56
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        56
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        56
+      ],
+      "mapRaw": 32792,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        56
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        56
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        56
+      ],
+      "mapRaw": 13364,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        56
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        50,
+        56
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        56
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        56
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        56
+      ],
+      "mapRaw": 45070,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        56
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        56
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        56
+      ],
+      "mapRaw": 32811,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        56
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        57
+      ],
+      "mapRaw": 16392,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        47,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        57
+      ],
+      "mapRaw": 45070,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        57
+      ],
+      "mapRaw": 12593,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        57
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        57
+      ],
+      "mapRaw": 32814,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        57
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        57,
+        57
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        43,
+        58
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        58
+      ],
+      "mapRaw": 32804,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        45,
+        58
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        46,
+        58
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        58
+      ],
+      "mapRaw": 10023,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        58
+      ],
+      "mapRaw": 13107,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        58
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        58
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        58
+      ],
+      "mapRaw": 32821,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        52,
+        58
+      ],
+      "mapRaw": 12850,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        54,
+        58
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        55,
+        58
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        58
+      ],
+      "mapRaw": 0,
+      "floorRaw": 768
+    },
+    {
+      "view": [
+        57,
+        58
+      ],
+      "mapRaw": 10537,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        44,
+        59
+      ],
+      "mapRaw": 10280,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        47,
+        59
+      ],
+      "mapRaw": 12850,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        48,
+        59
+      ],
+      "mapRaw": 32797,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        49,
+        59
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        50,
+        59
+      ],
+      "mapRaw": 0,
+      "floorRaw": 2048
+    },
+    {
+      "view": [
+        51,
+        59
+      ],
+      "mapRaw": 0,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        52,
+        59
+      ],
+      "mapRaw": 32797,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        53,
+        59
+      ],
+      "mapRaw": 13107,
+      "floorRaw": 512
+    },
+    {
+      "view": [
+        56,
+        59
+      ],
+      "mapRaw": 9766,
+      "floorRaw": 512
+    }
+  ],
+  "points": [
+    {
+      "name": "A2 oeste · portas restantes",
+      "position": [
+        126,
+        54
+      ]
+    },
+    {
+      "name": "A2 → B2 · ligação norte",
+      "position": [
+        150,
+        93
+      ]
+    },
+    {
+      "name": "B2 · aposentos centrais",
+      "position": [
+        150,
+        120
+      ]
+    },
+    {
+      "name": "B2 · oeste (acesso provisório)",
+      "position": [
+        123,
+        129
+      ]
+    },
+    {
+      "name": "B2 · sul (acesso provisório)",
+      "position": [
+        150,
+        174
+      ]
+    }
+  ]
+}

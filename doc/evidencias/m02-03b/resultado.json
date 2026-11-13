@@ -1,0 +1,81 @@
+{
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Existing RAM title access starts level1/EXP0/points0, initial creation gear and full resources; no fixture level/reward grants; threshold50, four rats60",
+    "Real access tile transfers to safe outskirts arrival3,9 without EXP/healing or automatic battle",
+    "Four stable IDs select own area; 12 native patrol attempts each respect radius/terrain/collision; no MQ01 profile reused",
+    "rihad.approach.rat.01: native player contact, real Atacar victory, +15 EXP and one loot receipt, no duplicate reward/start",
+    "rihad.approach.rat.02: native enemy contact, real Atacar victory, +15 EXP and one loot receipt, no duplicate reward/start",
+    "rihad.approach.rat.03: native player contact, real Atacar victory, +15 EXP and one loot receipt, no duplicate reward/start",
+    "rihad.approach.rat.04: native enemy contact, real Atacar victory, +15 EXP and one loot receipt, no duplicate reward/start",
+    "Four ordinary victories yield EXP60/level2/three unspent attribute points and four receipts; MQ01 and MQ02 stage10 unchanged",
+    "Existing Inventory -> Atributos displays level2 and three available points without applying a distribution",
+    "Real return reaches17,9 safely; authorized rest fills resources, preserving defeats, rewards, quests, inventory and EXP",
+    "Simple return/reentry and rest do not respawn any of four rats while MQ02 is active",
+    "RAM restore recovers level/points/loot/defeats exactly; personal slots/keys never written, no reroll or new EXP",
+    "Normal synthetic campaign save14/F5/native Load retains Map010, all defeats, level/points/resources/receipts; same web namespace, no personal saves",
+    "Existing Map009 snapshot gains only access event4 on load, preserving actor/quests/inventory/resources/receipts",
+    "Shared arrival/outskirts generator reproducible; does not undo arrival access, rest or other area contracts"
+  ],
+  "battles": [
+    {
+      "id": "rihad.approach.rat.01",
+      "expBefore": 0,
+      "actions": 2,
+      "expAfter": 15,
+      "hpAfter": 95
+    },
+    {
+      "id": "rihad.approach.rat.02",
+      "expBefore": 15,
+      "actions": 1,
+      "expAfter": 30,
+      "hpAfter": 95
+    },
+    {
+      "id": "rihad.approach.rat.03",
+      "expBefore": 30,
+      "actions": 3,
+      "expAfter": 45,
+      "hpAfter": 80
+    },
+    {
+      "id": "rihad.approach.rat.04",
+      "expBefore": 45,
+      "actions": 1,
+      "expAfter": 60,
+      "hpAfter": 80
+    }
+  ],
+  "threshold": 50,
+  "patrol": [
+    {
+      "id": "rihad.approach.rat.01",
+      "moves": 12,
+      "blocked": 18
+    },
+    {
+      "id": "rihad.approach.rat.02",
+      "moves": 12,
+      "blocked": 18
+    },
+    {
+      "id": "rihad.approach.rat.03",
+      "moves": 12,
+      "blocked": 18
+    },
+    {
+      "id": "rihad.approach.rat.04",
+      "moves": 12,
+      "blocked": 18
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "scope": "Disposable Chrome/context/origin; four real native contact battles, only actor/player placement controlled; no forced damage/EXP/level or enemy changes; RAM and synthetic native slot14",
+  "pending": [
+    "owner playtest of outskirts",
+    "editor authoring/playtest not executed",
+    "physical mobile not required in desktop slice"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "count": 237,
+  "lastTime": 17.081507,
+  "width": 816,
+  "height": 624,
+  "times": [
+    0.248,
+    3.281,
+    6.347,
+    9.414,
+    12.48,
+    15.482
+  ],
+  "note": "Original recording normal engine timing/30fps. Decoder4x only for inspection, not delivered video."
+}

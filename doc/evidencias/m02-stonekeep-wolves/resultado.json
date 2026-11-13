@@ -1,0 +1,151 @@
+{
+  "base": "d27eb5f",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Existing hub route; four distinct floor positions, contact access, parchment/exit reachable with all twenty encounters alive; bounded patrol without overlap",
+    "Synthetic pre-expansion save appends three missing events, retaining the approved pilot without changing character, quests, resources, inventory or receipts",
+    "Two native contacts, single participant/transition; controlled native victories mark independent defeats and grant EXP25/receipt once each, other two wolves and sixteen previous encounters alive",
+    "Synthetic native Save16/F5/Load preserves independent defeats/receipts; first and second wolf not revived; real transfer out/back before MQ02 completion does not respawn"
+  ],
+  "placement": {
+    "points": [
+      {
+        "id": "stonekeep.apartments.wolf.01",
+        "eventId": 19,
+        "origin": [
+          90,
+          51
+        ],
+        "actual": [
+          90,
+          51
+        ],
+        "file": "$Arena_wolf_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.apartments.wolf.02",
+        "eventId": 20,
+        "origin": [
+          114,
+          54
+        ],
+        "actual": [
+          114,
+          54
+        ],
+        "file": "$Arena_wolf_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.apartments.wolf.03",
+        "eventId": 21,
+        "origin": [
+          99,
+          54
+        ],
+        "actual": [
+          99,
+          54
+        ],
+        "file": "$Arena_wolf_walk_v01",
+        "defeated": false
+      },
+      {
+        "id": "stonekeep.apartments.wolf.04",
+        "eventId": 22,
+        "origin": [
+          96,
+          54
+        ],
+        "actual": [
+          96,
+          54
+        ],
+        "file": "$Arena_wolf_walk_v01",
+        "defeated": false
+      }
+    ],
+    "source": true,
+    "exit": true,
+    "contactAccess": [
+      [
+        "stonekeep.apartments.wolf.01",
+        true
+      ],
+      [
+        "stonekeep.apartments.wolf.02",
+        true
+      ],
+      [
+        "stonekeep.apartments.wolf.03",
+        true
+      ],
+      [
+        "stonekeep.apartments.wolf.04",
+        true
+      ]
+    ]
+  },
+  "patrol": [
+    [
+      "stonekeep.apartments.wolf.01",
+      90,
+      53
+    ],
+    [
+      "stonekeep.apartments.wolf.02",
+      114,
+      54
+    ],
+    [
+      "stonekeep.apartments.wolf.03",
+      99,
+      56
+    ],
+    [
+      "stonekeep.apartments.wolf.04",
+      96,
+      56
+    ]
+  ],
+  "trace": {
+    "19": [
+      "90,51",
+      "90,52",
+      "90,53"
+    ],
+    "20": [
+      "114,54"
+    ],
+    "21": [
+      "99,54",
+      "99,55",
+      "99,56"
+    ],
+    "22": [
+      "96,54",
+      "96,55",
+      "96,56"
+    ]
+  },
+  "defeated": [
+    "stonekeep.apartments.wolf.01",
+    "stonekeep.apartments.wolf.02"
+  ],
+  "expPerEnemy": 25,
+  "optionalGroupExp": 100,
+  "errors": [],
+  "missing": [],
+  "scope": "Disposable origin/context, RAM checkpoint and synthetic native slot16; two controlled native victories only, no full battle/animation replay",
+  "pending": [
+    "Manual positioning/circulation evaluation can join Stonekeep integration",
+    "M02-BAL: cumulative EXP and resource/return/rest impact",
+    "Group manual evaluation deferred to next integrated test; approved assets not retested",
+    "No new MV editor/mobile test"
+  ]
+}

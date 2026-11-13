@@ -1,0 +1,103 @@
+{
+  "base": "66352d2",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "environment": "headless Chrome, disposable profile, existing RAM session; no battles or campaign retest",
+  "checks": [
+    "Source/LOCK/TRIG, old33 encounters/71 events/4 doors unchanged, only27 dry-threshold regions changed; parent reconstruction stable, campaign/assets/A1 preserved",
+    "3 doors x2 sides: native Enter open/close, duplicate transition refused, blocked/clear collision,8 real steps each, stable9 anchors, no closing on character, lateral solid walls retained; state/resources unchanged",
+    "Restricted connected A2 room graph from established160,39 reaches both valid sides of all3 doors; no internal transfers or other sector detour",
+    "7 independent door states (open/closed) restore in RAM; old71-event snapshot appends27 components before sprite creation, preserves quests/character/receipts/items/resources",
+    "Area return preserves states/no repeated rewards;3 inspection points valid, normal save blocked, localStorage untouched, campaign still Map012"
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.a2central.door.01",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2central.door.01",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2central.door.02",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2central.door.02",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2central.door.03",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2central.door.03",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    }
+  ],
+  "graph": {
+    "tiles": 831,
+    "bounds": [
+      126,
+      35,
+      164,
+      62
+    ],
+    "doors": [
+      {
+        "id": "stonekeep.a2central.door.01",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2central.door.02",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2central.door.03",
+        "bothSides": true
+      }
+    ]
+  },
+  "states": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+  ],
+  "errors": [],
+  "missing": [],
+  "pending": [
+    "Manual evaluation deferred",
+    "A1 raised-water clearance unchanged/unconfirmed",
+    "3 A2 LOCK=1 require key mapping/lock mechanic decision; not implemented",
+    "Door artwork reused provisionally for DCAS5, no generation"
+  ]
+}

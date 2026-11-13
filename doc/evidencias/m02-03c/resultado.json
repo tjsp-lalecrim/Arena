@@ -1,0 +1,27 @@
+{
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Level1 authorized rest restores resources without consuming/blocking dream or changing MQ02",
+    "Same level1-rested fixture, now level2/full resources, starts vision without fictitious recovery; no prior-level lock",
+    "Level2 fixture reaches rest with spent resources; one recovery opens eight-block vision; held launch input does not advance; wide image/no redundant header",
+    "Pre-vision RAM load restores unseen event/spent resources, without another recovery or wrong M01 scene",
+    "Fresh keyboard and mouse advance/back preserve resources, MQ01 cursor and rewards",
+    "Emulated touch and 640x400 reflow; native word/page cursor and history restored by RAM without replaying recovery or touching MQ01",
+    "Only finishing complete text moves MQ02 10->20 once; no EXP/items/recovery, MQ01 and actor/loot/enemies unchanged",
+    "Full-resource rest after completion neither fabricates recovery nor repeats vision",
+    "Post-vision RAM restore retains completion and bars, no duplicate begin/finish/rewards; personal browser keys never written",
+    "Native campaign slot15/load resumes exact mid-read cursor at changed resolution; spent resource fixture remains43/7/19, no recovery on load",
+    "Normal vision footer opens native Save and returns to unchanged reading cursor",
+    "Native post-completion load returns to Rihad, retains completion/quest20 and does not reopen vision",
+    "Informant after vision advances20->30 once, points to court without exact Fang Lair/Stonekeep; journal reveals only learned information",
+    "Shared scene M01 partial intro retains old header/cursor/back/next and MQ01 namespace; no broad intro/gameplay rerun"
+  ],
+  "errors": [],
+  "missing": [],
+  "pending": [
+    "manual recortes03A/B/C deferred by owner; no inferred approvals",
+    "pilot art/composition awaiting assessment",
+    "no editor authoring or physical-device test"
+  ],
+  "isolation": "Disposable origin/profile; RAM + synthetic native slot15, no personal saves; no new battles"
+}

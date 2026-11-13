@@ -1,3 +1,7 @@
+## Extensão M02-03A
+
+`authorizedRefuge:true` habilita indicação/proteção e recomposição de evento também fora da dungeon. Única nova origem: MQ02.rihad.rest/Map009/evento2/(15,10); sem alterar40 pontos MQ01, regras, recursos ou respawn. [Configuração/limites](Arena_Rihad.md).
+
 ## Arena_Recovery0.5.0 — refúgios configurados
 
 Piloto preservado e39 pontos dungeonRefuge=true, com coordenadas/eventos únicos. nearestRefuge escolhe o mais próximo no mapa atual; a UI usa o mesmo alvo, com desempate estável pelo evento. APIs de recuperação, soltura obrigatória, feedback e políticas de poção preservadas. startRestPilot mantém o acesso01; syncRestEvents acrescenta apenas pontos configurados ausentes em saves, sem reset/cura. [40 locais, fonte, exclusão e evidências](../EXPANSAO_DESCANSO_M01.md). Geradores build-quests/build-encounters seguem a lista explícita; não há autorização por varredura procedural no jogo.

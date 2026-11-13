@@ -1,0 +1,252 @@
+{
+  "file": "Arena_Combat_minotaur_v01",
+  "cell": [
+    224,
+    160
+  ],
+  "ground": 152,
+  "motions": {
+    "idle": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            0,
+            224,
+            160
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            224,
+            0,
+            224,
+            160
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            448,
+            0,
+            224,
+            160
+          ],
+          "duration": 20
+        },
+        {
+          "rect": [
+            672,
+            0,
+            224,
+            160
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            896,
+            0,
+            224,
+            160
+          ],
+          "duration": 16
+        },
+        {
+          "rect": [
+            1120,
+            0,
+            224,
+            160
+          ],
+          "duration": 20
+        }
+      ],
+      "loop": true,
+      "impact": null
+    },
+    "strike": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            160,
+            224,
+            160
+          ],
+          "duration": 6
+        },
+        {
+          "rect": [
+            224,
+            160,
+            224,
+            160
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            448,
+            160,
+            224,
+            160
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            672,
+            160,
+            224,
+            160
+          ],
+          "duration": 5
+        },
+        {
+          "rect": [
+            896,
+            160,
+            224,
+            160
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            1120,
+            160,
+            224,
+            160
+          ],
+          "duration": 7
+        }
+      ],
+      "loop": false,
+      "impact": 3
+    },
+    "hurt": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            320,
+            224,
+            160
+          ],
+          "duration": 4
+        },
+        {
+          "rect": [
+            224,
+            320,
+            224,
+            160
+          ],
+          "duration": 5
+        },
+        {
+          "rect": [
+            448,
+            320,
+            224,
+            160
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            672,
+            320,
+            224,
+            160
+          ],
+          "duration": 6
+        },
+        {
+          "rect": [
+            896,
+            320,
+            224,
+            160
+          ],
+          "duration": 5
+        },
+        {
+          "rect": [
+            1120,
+            320,
+            224,
+            160
+          ],
+          "duration": 5
+        }
+      ],
+      "loop": false,
+      "impact": null
+    },
+    "defeat": {
+      "frames": [
+        {
+          "rect": [
+            0,
+            480,
+            224,
+            160
+          ],
+          "duration": 7
+        },
+        {
+          "rect": [
+            224,
+            480,
+            224,
+            160
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            448,
+            480,
+            224,
+            160
+          ],
+          "duration": 8
+        },
+        {
+          "rect": [
+            672,
+            480,
+            224,
+            160
+          ],
+          "duration": 9
+        },
+        {
+          "rect": [
+            896,
+            480,
+            224,
+            160
+          ],
+          "duration": 10
+        },
+        {
+          "rect": [
+            1120,
+            480,
+            224,
+            160
+          ],
+          "duration": 18
+        }
+      ],
+      "loop": false,
+      "impact": null
+    }
+  },
+  "version": "stonekeep-minotaur-v01",
+  "actionMotion": "strike"
+}

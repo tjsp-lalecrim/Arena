@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen edit",
+  "target": "art/masters/stonekeep-spider-v01/sheet-v03-eight-legs.png",
+  "prompt": "EDIT the attached spider animation sheet ONLY to remove its background. Preserve EXACTLY the existing16drawings, every individual leg, anatomy, identity, colors, poses, positions, pixel geometry, scale and4x4 layout. Do not redraw or simplify the spider or change eight-leg counts. Remove the entire gray/beige backdrop, diffuse glow/halo, inter-cell background and floor/shadows, including semitransparent background haze. Output TRUE CLEAN ALPHA TRANSPARENCY: all background pixels between and around spiders must have alpha ZERO, including spaces BETWEEN LEGS and grid gutters. Keep antialiased solid sprite edges; don't erase thin legtips or fangs. No white/black/colored backdrop, no checkerboard, no glow. Maintain source1536x1024 with same margins and all16wholefigures. This is only a transparent-background cutout correction of the EXACT sheet, not another design or variant.",
+  "selectedOutput": "art/masters/stonekeep-spider-v01/sheet-v04-alpha.png",
+  "approval": "pending"
+}

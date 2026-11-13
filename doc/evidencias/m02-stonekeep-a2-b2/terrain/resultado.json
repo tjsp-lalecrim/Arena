@@ -1,0 +1,380 @@
+{
+  "base": "55e42e4",
+  "browser": "156.0.8078.76",
+  "url": "http://127.0.0.1:8774/",
+  "environment": "headless Chrome, disposable profile, existing RAM session; no battles or campaign retest",
+  "checks": [
+    "Source/LOCK/TRIG, Old33 encounters/98 events/7 doors unchanged;144 threshold regions plus bounded approved materials, no height changes; parent reconstruction stable, campaign/assets/A1 preserved",
+    "16 doors x2 sides: native Enter open/close, duplicate transition refused, blocked/clear collision,8 real steps each, stable9 anchors, no closing on character, lateral solid walls retained; state/resources unchanged",
+    "Restricted native A2/B2 graph reaches both sides of16 doors within block; paths beyond unresolved LOCK use inherited provisional openings, not new unlock rules",
+    "23 independent door states (open/closed) restore in RAM; old98-event snapshot appends144 components before sprite creation, preserves quests/character/receipts/items/resources",
+    "Area return preserves states/no repeated rewards;5 inspection points valid, normal save blocked, localStorage untouched, campaign still Map012"
+  ],
+  "doors": [
+    {
+      "id": "stonekeep.a2b2.door.mif49.15",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif49.15",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif54.15",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif54.15",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif55.17",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif55.17",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif49.19",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif49.19",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif56.34",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif56.34",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif55.37",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif55.37",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif56.39",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif56.39",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif48.44",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif48.44",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif51.44",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif51.44",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif54.46",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif54.46",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif32.49",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif32.49",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif45.49",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif45.49",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif37.51",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif37.51",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif42.52",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif42.52",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif36.56",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif36.56",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif41.57",
+      "side": "west/north",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    },
+    {
+      "id": "stonekeep.a2b2.door.mif41.57",
+      "side": "east/south",
+      "blockedClosed": true,
+      "crossedOpen": true,
+      "occupiedCloseRefused": true,
+      "stableAnchors": true
+    }
+  ],
+  "graph": {
+    "tiles": 6543,
+    "bounds": [
+      92,
+      2,
+      181,
+      181
+    ],
+    "doors": [
+      {
+        "id": "stonekeep.a2b2.door.mif49.15",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif54.15",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif55.17",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif49.19",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif56.34",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif55.37",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif56.39",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif48.44",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif51.44",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif54.46",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif32.49",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif45.49",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif37.51",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif42.52",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif36.56",
+        "bothSides": true
+      },
+      {
+        "id": "stonekeep.a2b2.door.mif41.57",
+        "bothSides": true
+      }
+    ]
+  },
+  "states": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "errors": [],
+  "missing": [],
+  "pending": [
+    "Manual evaluation deferred",
+    "A1 raised-water clearance unchanged/unconfirmed",
+    "A2 LOCK1 and B2 LOCK2/3 unresolved; downstream access provisional, no key invented",
+    "4 southwest B2 doors disconnected inside this block; no speculative passage",
+    "Door artwork reused provisionally for DCAS5, no generation"
+  ]
+}

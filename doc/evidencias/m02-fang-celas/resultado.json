@@ -1,0 +1,30 @@
+{
+  "base": "f27e9a9",
+  "browser": "156.0.8078.76",
+  "canvas": [
+    816,
+    624
+  ],
+  "checks": [
+    "Clean real Chrome boot; existing hub fixture delivers parchment, stage60; RAM blocks normal saves; all ten gates closed; cancel leaves state intact",
+    "Both wrong answers use native choices, open wrong-cell gates once; gold cell/portal still block; four pending spider positions reachable, no substituted/fake combat",
+    "Correct answer opens only Cell2, unique key pickup/recovery, native portal interaction consumes exactly one; authoritative receipt retires source, stage80 incomplete, stairs now reachable, repeat has no effect",
+    "RAM load before consumption restores key and closed portal; reopening gives one receipt; limit neither transfers to absent map nor completes quest; MQ01/actor/resources/other items/loot/defeats unchanged",
+    "Native synthetic Save16/F5/Load preserves state, receipt and open portal; retired source remains inactive; Rihad trip still disabled until full mine route"
+  ],
+  "errors": [],
+  "missing": [],
+  "scope": "Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only",
+  "pending": [
+    "Manual editor/Chrome evaluation of crop",
+    "Spider battle exemplar + conditioned encounters: not implemented, M02-06A remains partial",
+    "Mine entrance route / lower level / fragment / Tharn outside delivery",
+    "No new editor or mobile test"
+  ],
+  "localServerCheck": {
+    "url": "http://127.0.0.1:8774/",
+    "result": "Fresh disposable Chrome title boots; Items8 and plugin bindings present; no page errors; HTTP configuration200/no-store",
+    "personalStorageTouched": false
+  },
+  "dataValidation": "tools/validate-data.cjs PASS"
+}

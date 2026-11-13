@@ -1,5 +1,7 @@
 # Arena_Loot0.3.0 — fallback de tesouros
 
+Extensão focal M02: `tableForEnemy(enemy)` retorna por padrão a tabela existente do ID. `makeRewards` passa por esse seletor; a concessão/recibo/transação não mudou. Arena_Ghoul o estende somente para uma instância marcada da batalha RAM antiga, com tabela vazia explícita, enquanto a campanha usa suas recompensas próprias. Não trocar `$arenaLoot.enemies` temporariamente nem criar outro sorteador/concessor. Outros inimigos e saves mantêm o comportamento anterior. [Consumidor/evidências](Arena_Ghoul.md).
+
 `claimContainer(id, table, fallbackGold, rng?)`: terceiro argumento aceita `{min,max}` inteiros positivos; vazio recebe quantidade uniforme inclusiva. RNG opcional de teste retorna[0,1); chamada normal usa Math.random. Número positivo legado continua aceito; configuração MQ01 atual usa2–8. Recibo existente retorna antes de qualquer sorteio; pending/recibos antigos e namespace arenaLoot v1 intactos. Campo `treasureFallbackGold` substitui o escalar na configuração, com leitura compatível de `treasureMinimumGold` antigo. [Contrato/evidências atuais](../OURO_RESERVA_VARIAVEL_M01_20.md). O relato de mínimo5 abaixo é histórico. Sem alteração do loot de batalhas, raridade ou dados de itens.
 
 # Arena_Loot0.1.0 — histórico

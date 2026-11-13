@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-01",
+  "version": "stonekeep-visual-v01",
+  "tool": "image_gen built-in",
+  "approved": true,
+  "scope": "Cinco mestres; nenhuma outra categoria ou variante artística. Projeção e cores adaptadas às referências.",
+  "jobs": [
+    {
+      "key": "light",
+      "prompt": "Use case: stylized-concept. Generate ONE production texture master for an RPG Maker MV orthogonal top-down dungeon, Stonekeep in The Elder Scrolls Arena. References supplied: image1 original screenshot R03 for pale wall masonry color/proportions ONLY (ignore perspective, red carpet, glyphs and furnishings); image2 original CASA.SET#0 decoded consultation for the same material. Create a seamless square texture filling entire canvas: pale cold gray stone masonry in horizontal running-bond courses, rectangular blocks with dark thin recessed joints, restrained white worn facets, slightly irregular chiseled edges. Preserve the distinctive pale masonry of Arena, refined dark fantasy digital painting, legible at 48px, not generic brown medieval stones, not pixel art. Completely FLAT ORTHOGRAPHIC material elevation usable for the two-tile vertical wall face in a top-down 2D game: parallel horizontal and vertical lines, NO camera convergence, NO diagonal/isometric edges. Aim four courses across a 96px-high game wall. Even diffuse upper-left light, NO baked vignette, no spotlights, no cast shadows across tile edges. Tile left/right AND top/bottom seamlessly. No frame, labels, grid overlay, furniture, doors, heraldry, carpet, characters, floor, water or scenery. This is an opaque material sample, not an illustration of a room.",
+      "refs": [
+        "doc/prints/stonekeep-original-ref-03-ed3b93b2-3c5a-4695-89c0-4e938bd5904d.png",
+        "tmp/stonekeep-review/CASA.SET-0.png"
+      ],
+      "master": "art/masters/stonekeep-v01/light-wall.png"
+    },
+    {
+      "key": "brown",
+      "prompt": "Use case: stylized-concept. ONE seamless opaque square texture master for Stonekeep in The Elder Scrolls Arena, RPG Maker MV top-down orthogonal dungeon. Image1 original screenshot R02 provides brown masonry colors and proportions ONLY: ignore perspective, carpet, emblem, letters and furnishings. Image2 CASF.SET#2 is the confirmed original material. Produce dark chestnut/umber brown rectangular masonry blocks in horizontal running-bond courses, black recessed narrow mortar, subtle ochre worn edges, cold brown-gray shadowed faces. Preserve the recognizable brown versus pale Stonekeep wall contrast, detailed restrained dark fantasy painted finish consistent with pale stone material, legible at 48px; not generic black rocks. Flat ORTHOGRAPHIC elevation, all horizontal/vertical edges parallel to image axes, NO convergence or isometric surfaces. Seamless repeat on all four edges. Uniform diffuse upper-left light, no vignette, no spotlight or gradient, no border. Wall MATERIAL ONLY filling whole canvas. No symbols, banners, carpet, doors, floor, water, furniture, objects, people, text, grid labels or scenery.",
+      "refs": [
+        "doc\\prints\\stonekeep-original-ref-02-a1d0a56c-7f65-49a7-9214-60516b2f5159.png",
+        "tmp\\stonekeep-review\\texture-39-CASF.SET.png"
+      ],
+      "master": "art/masters/stonekeep-v01/brown-wall.png"
+    },
+    {
+      "key": "mottled",
+      "prompt": "Use case: stylized-concept. ONE production square seamless FLOOR material master for Stonekeep, The Elder Scrolls Arena adapted to RPG Maker MV top-down orthogonal 48px tiles. Image1 R01 and image2 R06 show the original floor ONLY, ignore all walls, furniture, carpet, writing, people and treasure. Image3 FLCASC.SET#0 and image4 FLCASC.SET#1 are the exact original reference. Generate a flat slab floor viewed DIRECTLY FROM ABOVE: dark slate-gray mineral surface with irregular milky white/silver flowing veins and restrained deep burgundy/red-brown mottling, matching these original colors; four large square slabs across by four down, narrow straight orthogonal charcoal joints. Restrained refined dark fantasy digital painted texture, physical stone not glossy black mirror, readable at 48px. Vein texture is subordinate to slab division. No perspective, no wall faces or depth extrusion, no decorative border, no yellow sandstone or brown prison floor, no carpet or random rubble. Entire canvas opaque and filled, evenly lit, seamless repeat on all four edges, no vignette, gradients, labels, symbols, text or objects.",
+      "refs": [
+        "doc\\prints\\stonekeep-original-ref-01-9f3eb83f-743a-44e6-90fa-a4327c128c6f.png",
+        "doc\\prints\\stonekeep-original-ref-06-8e5a8938-d0ad-499e-9519-255b6c89c3aa.png",
+        "tmp\\stonekeep-review\\texture-2-FLCASC.SET.png",
+        "tmp\\stonekeep-review\\texture-3-FLCASC.SET.png"
+      ],
+      "master": "art/masters/stonekeep-v01/mottled-floor.png"
+    },
+    {
+      "key": "slabs",
+      "prompt": "Use case: stylized-concept. ONE production square seamless FLOOR material master for Stonekeep in The Elder Scrolls Arena, top-down orthogonal RPG Maker MV adaptation, 48px game tiles. Image1 original screenshot R04 is reference for PALE FLOOR SLABS bordering the water only, NOT perspective or whole scene. Image2 confirmed FLCAS_E1.IMG is material identity reference. Create an evenly lit planar surface of pale warm-gray large square stone slabs in an exact four by four orthogonal grid, subtle muted mauve-gray wear, fine mineral grain, slightly softened worn edges with narrow gray recessed joints, restrained chipped corners. True directly overhead view with no perspective or isometric depth. Clear contrast with the dark gray/white/burgundy mottled interior floor. Dark fantasy digital painted finish, not photorealistic CGI, no rough cobblestones, no mottled black marble, no dirty brown prison paving. Full opaque canvas, seamless on all four edges, no border, spotlight or vignette, no water, wall, vegetation, carpet, text, markings, objects, props or people.",
+      "refs": [
+        "doc\\prints\\stonekeep-original-ref-04-6969850b-9c6f-4622-98ee-9d944b171426.png",
+        "tmp\\stonekeep-review\\texture-6-FLCAS_E1.IMG.png"
+      ],
+      "master": "art/masters/stonekeep-v01/pale-slabs.png"
+    },
+    {
+      "key": "shore",
+      "prompt": "Use case: stylized-concept. ONE independent shoreline stone coping strip for Stonekeep, The Elder Scrolls Arena, orthogonal top-down RPG Maker MV 48px grid. Image1 R04 original screenshot: reference ONLY to pale slab shore and its narrow dark gray damp vertical edge beside blue water. Image2 WCAS.IMG is confirmed SIDE edge material, NOT a complete water-surface reference. Image3 FLCAS_E1.IMG is pale paving reference. Generate a HORIZONTAL STRIP on a genuinely transparent canvas: repeating pale warm-gray stone coping slabs seen directly from above, long straight upper and lower boundaries parallel to image edges, about 1/5 of image height, centered vertically, extending exactly to left and right image edges for seamless lateral repeat. Thin dark cold damp lower lip under the pale worn upper rim, restrained muted blue reflected edge, no projecting perspective depth. Fine restrained dark fantasy painted finish, broad clean readable stones. No surrounding floor, NO painted water or ripples, no black backdrop, no isometric camera, no perspective, no plants, foam, furniture, characters, text, symbols, doors or decorative objects. Intended to crop alpha bounds and reduce to a 48x8px overlay strip above the existing animated blue water, preserving native animation; keep a straight stable support edge. All visible pixels belong to stone coping only.",
+      "refs": [
+        "doc\\prints\\stonekeep-original-ref-04-6969850b-9c6f-4622-98ee-9d944b171426.png",
+        "tmp\\stonekeep-review\\texture-10-WCAS.IMG.png",
+        "tmp\\stonekeep-review\\texture-6-FLCAS_E1.IMG.png"
+      ],
+      "transparent": true,
+      "master": "art/masters/stonekeep-v01/shore.png"
+    }
+  ],
+  "approvalScope": "Direção visual do conjunto testado em73ae86e; não aprova assets ausentes ou a aplicação ampliada R02."
+}

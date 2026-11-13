@@ -1,0 +1,27 @@
+{
+  "mode": "RGBA",
+  "size": [
+    2000,
+    1240
+  ],
+  "alphaBounds": [
+    246,
+    96,
+    1783,
+    1089
+  ],
+  "transparentPixels": 2090251,
+  "antialiasedPixels": 60953,
+  "opaquePixels": 328796,
+  "emptyBorderConfirmed": true,
+  "glyphOrder": [
+    "The Elder",
+    "Scrolls",
+    "Arena"
+  ],
+  "expectedName": "The Elder Scrolls: Arena",
+  "visualSpelling": "Conferida na captura integrada e visualização quadriculada; não é inferida apenas dos labels SVG",
+  "method": "Contornos vetoriais derivados das letras desenhadas, sem fonte ou texto por IA",
+  "PNG_SHA256": "6b8f3765cb2502c242d500b66660e4bb6550295216863c78433608a2a2874a3f",
+  "SVG_SHA256": "15e73278d612e968f30c1fb842e9053df9353344d3c1f6032b8eee99cd383809"
+}

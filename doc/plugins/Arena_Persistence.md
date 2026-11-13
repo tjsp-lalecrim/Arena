@@ -1,3 +1,7 @@
+## Seleção de contratos M02-02B
+
+M02-02B: fontes MQ02 por configuração e validação de recibos; sourceDefinitions expõe cópia do legado. Sem schema/namespace novo; métodos MQ01 preservados. [Contrato e APIs](Arena_CampaignConfig.md), [evidências](../CONFIGURACOES_M02_02B.md).
+
 # Arena_Persistence 0.1.0
 
 Estado operacional M01-08: esta camada continua somente armazenamento/contratos, mas Arena_Resources0.1.0 agora consome recursos/progressão e estende setResource para separar modificador de máximo de Vigor. HP/MP continuam nativos; recursos e escolhas concretas em namespace próprio. Ler RECURSOS_E_PROGRESSAO_M01_08.md e plugins/Arena_Resources.md. O texto abaixo descreve a responsabilidade/histórico de M01-05, não ausência atual de implementação de recursos ou bônus.

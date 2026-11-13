@@ -1,0 +1,60 @@
+{
+  "original": "42068779.MIF",
+  "sha256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7",
+  "info": "FANG1.INF",
+  "textRecords": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "acceptedOriginal": [
+    "cell 2",
+    "2",
+    "cell2",
+    "the second cell",
+    "the 2nd cell",
+    "c2"
+  ],
+  "triggers": {
+    "riddleOriginal": [
+      88,
+      95
+    ],
+    "cell1": [
+      91,
+      95
+    ],
+    "cell2": [
+      94,
+      95
+    ],
+    "cell3": [
+      97,
+      95
+    ]
+  },
+  "lockRecords": {
+    "goldCell": [
+      94,
+      96,
+      30
+    ],
+    "portal": [
+      88,
+      96,
+      29
+    ]
+  },
+  "goldKeyTrigger": [
+    94,
+    98,
+    1
+  ],
+  "goldKeyTextOpcode": "+29",
+  "riddleOpcode": "^30 10",
+  "scope": "Fresh decode of first MAP1/FLOR equals previously decoded100x100 layers; raw TRIG/LOCK coordinates agree with INF text and local wiki plan. Does not claim full format/flag semantics or new DOS gameplay.",
+  "surfaceReferences": "FANG1.INF declares MFLOORA/MFLOORD, minea/mined/minec and MCELL/ MDOOR/ MSD etc; no equivalence to Stonekeep claimed. Existing runtime tiles and doors temporary."
+}

@@ -1,0 +1,10 @@
+{
+  "base": "4ff291a393da6cff9bbbd6171aaaa03b48706455",
+  "checks": [
+    "Map008, MQ01/encounters/loot data, items/equipment and unchanged pure/persistence/quest kernels identical to4ff291a (EOL normalized)",
+    "All old rest records intact; exactly one Rihad point appended",
+    "Canonical MV JSON/UTF8 without BOM, 41 plugins, 40 previous names/order/status/parameters unchanged; only continuation version description updated",
+    "Syntax of all touched plugins/scripts valid",
+    "m01 tag unchanged"
+  ]
+}

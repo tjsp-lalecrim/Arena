@@ -1,0 +1,60 @@
+{
+  "version": "v01",
+  "status": "Ilustração do menu explicitamente aprovada pelo responsável após a39d71e; arquivos V01 preservados. Não estende aprovação ao logotipo separado.",
+  "tool": "image_gen.imagegen — ferramenta integrada, uma chamada; sem CLI/API fallback ou montagem",
+  "generationId": "exec-b9097847-fed2-4fe1-9b93-57ad87f32df2",
+  "prompt": "Use case: illustration-story. Produce exactly ONE finished title-screen background illustration for the Arena project, landscape 1536x1024. Reference image 1 (TITLE-consulta-3x.png) is the actual decoded TITLE.IMG from The Elder Scrolls Arena 1994 and is authoritative for subject, composition, silhouette and atmosphere, NOT its low resolution or its overlaid text. Reference image 2 (Arena_MQ02_Ria_piloto_v01.png) is ONLY the project's approved finely detailed dark-fantasy digital-painting finish, natural material definition and coherent atmospheric lighting; do NOT copy Ria, magic, ghosts, clouds shaped as people or any subject from image2. Reimagine the source opening faithfully at modern illustration definition: a heavy dark stone medieval fortress/keep with squat square crenellated towers concentrated right of centre, low adjoining ramparts receding toward the left, a smaller rampart/tower at the far right, rocky rising ground beneath the main keep; coarse grasses and weeds silhouetted across the lower foreground. Broad gently luminous blue-violet/lavender twilight sky, pale warm glow along the low left horizon, subdued mossy olive and ochre grass, weathered charcoal-grey stone. Original keeps and walls are the subject; no new palace, city skyline, cathedral, mountains, giant moon, banners, dragons, enemies or invented narrative landmarks. The main fortress should remain recognizably related to the compact battlement silhouette in image1, not a generic sprawling fantasy castle. Dark fantasy, austere, atmospheric, finely articulated masonry and vegetation, painterly detailed high-definition finish consistent with approved project art; not pixel art, not 3D/cartoon, do not recreate dithering or low-resolution blur. Composition: retain the large calm sky across the upper half; quiet clear upper-central region around x25–75%, y18–35% for the game's existing independently rendered Arena title. Keep silhouette readable around x55–80%, y45–67%, with breathing room above and to the right. Existing opaque command panel will occupy central x23–77%, y56–86%, so reserve subdued low-detail tones there and leave recognizable crenellations visible above it. Wider environment at both lateral edges, safe centre crop to approximately4:3 without chopping the main tower. Foreground grass may frame bottom corners but must not obscure the keep. Full-bleed opaque illustration; do NOT paint frame/border, logos, letters, title, menu, captions, copyright text, watermarks or UI. The gold meander frame and typography in reference1 are original screen graphic overlays, not environmental objects: exclude them from the image, game UI remains separate. No people, no observer/protagonist, no hands, silhouettes, faces, statues shaped as people, racial/gender indicators, or voices. One single coherent artwork, no contact sheet, no alternatives.",
+  "master": "art/masters/ref16-title-v01/title-v01.png",
+  "runtime": "img/titles1/Arena_title_v01.png",
+  "references": [
+    {
+      "role": "Composição/identidade original",
+      "file": "TITLE.IMG",
+      "consultation": "tmp/title-review/TITLE-consulta-3x.png",
+      "sha256": "1058d2a9fd6e9202c3dd2f9526a7a282ed4e78b40e001f207424bf6bf7e50f25",
+      "size": [
+        320,
+        200
+      ],
+      "decoding": "Tipo04 conforme Compression.h local reutilizado; paleta embutida RGB6bit. Extração somente em tmp ignorado, não distribuída.",
+      "observed": "Fortaleza/ameias à direita do centro, muralha baixa à esquerda, torre/muralha à direita, vegetação em primeiro plano, céu azul-violeta e horizonte claro; título/moldura dourados sobrepostos; sem protagonista."
+    },
+    {
+      "role": "Somente acabamento dark fantasy aprovado, sem copiar personagem/tema",
+      "file": "img/pictures/Arena_MQ02_Ria_piloto_v01.png",
+      "approval": "Direção aprovada em ad4af0e; não autoriza variantes.",
+      "sha256": "a086741174e75d106c0e5658b860e4d80ca5b0912f6a73e116cac5342f93d431"
+    }
+  ],
+  "adaptations": [
+    "Remover tipografia/copyright/moldura meandro da pintura: título e comandos atuais continuam separados; não trocar pelo logo original por associação.",
+    "Interpretar textura de alvenaria/ervas e luz crepuscular dourada/violeta em alta definição; relevo distante não identifica local canônico nem acrescenta cenário narrativo nomeado.",
+    "Expandir laterais para recorte cover uniforme; manter a fortaleza identificadora acima da faixa do menu.",
+    "Nenhum protagonista ou novo personagem; sem texto dentro da imagem, vozes ou assets de mapas."
+  ],
+  "export": {
+    "tool": "tools/export-title-art.py",
+    "masterSize": [
+      1536,
+      1024
+    ],
+    "runtimeSize": [
+      1440,
+      960
+    ],
+    "format": "RGB PNG otimizado, opaco; redução Lanczos com razão3:2 idêntica",
+    "runtimeSHA256": "9dc35345fd48f40a42c4acfd3321009cd300e2b94b49caaf60b2bec7242e7e7a"
+  },
+  "integration": "Arena_TitleArt v0.1.0; só background Scene_Title, escala uniforme max(largura/imagem,altura/imagem), centro, sem novos handlers/saves/resolução global.",
+  "masterSHA256": "bdf1a552f6a0fa0f3cdb47403a6c668a027dc50730eb1cc061c421b18ee930bd",
+  "masterBytes": 2532197,
+  "runtimeSHA256": "9dc35345fd48f40a42c4acfd3321009cd300e2b94b49caaf60b2bec7242e7e7a",
+  "runtimeBytes": 2046065,
+  "validation": "doc/evidencias/ref16-abertura-v01/resultado.json",
+  "approval": {
+    "referenceAvailable": "a39d71e",
+    "scope": "Ilustração/fundo do menu aprovada explicitamente",
+    "environment": "Não especificado neste relato",
+    "excludes": "Não inferir novos testes de persistência/mobile ou aprovação do logotipo."
+  }
+}

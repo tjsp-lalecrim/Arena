@@ -1,0 +1,9 @@
+# Arena_CourtDelivery0.1.0
+
+Consumidor mínimo M02-05, depois de Arena_DebugHub, Arena_Court, Arena_Stonekeep e núcleos Persistence/Quests/CampaignConfig/Journal. Sem dependências externas ou arquivos do motor alterados. Dados em **ArenaCourt.json.delivery**, validados contra fonte/item importante7, recibo e transição da MQ02; apresentação usa `ArenaCourt.show(interpreter,texts)` e escolhas nativas.
+
+`ArenaCourt.talk` delega às regras anteriores antes50; em50 oferece entrega ou orientação se faltar o item; em60+ apresenta lembrete somente com recibo correspondente. `ArenaCourtDelivery.deliver(interpreter)` exige ramo explícito0 e contexto válido, revalida etapa/posse, chama o único consumidor `ArenaPersistence.consumeImportant`, depois `setQuest`. O bloco síncrono restaura `_persistentState`/itens em exceção; não cria ledger paralelo nem concede prêmios. Receipt/source/quantity existentes são preservados. Caso inconsistente não é reparado por prêmio ou entrega silenciosa.
+
+`destination()` é consulta: `fang.entry`, `known` depende de etapa60+ e recibo íntegro, `available:false`. Não reserva transferência, mesmo com destino conhecido. `preview()` reutiliza a fixture isolada de Stonekeep/Court e a fonte, agenda uma única chegada à corte após preparo de Rihad e limpa a pendência antes da transferência. Nome no hub: **Rihad · entregar pergaminho (RAM)**, categoria Campanha e mapas; slots bloqueados pelo isolamento já existente. Não existe novo comando no título.
+
+Persistência nos contratos MQ02/source/receipt já existentes; sem migração, namespace ou sincronização nova. Configuração textual é fonte autoral; geradores atuais de mapas a preservam, conforme regressão `tools/test-court-delivery.cjs`. Guia/roteiro e cobertura: [ENTREGA_PERGAMINHO_M02_05.md](../ENTREGA_PERGAMINHO_M02_05.md). Remover o plugin não é uma migração suportada de partidas posteriores à entrega.

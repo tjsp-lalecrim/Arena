@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "normalTitleSymbols": ["newGame", "continue", "options"],
+  "categories": [
+    {"id":"character","name":"Personagem"},
+    {"id":"combat","name":"Combate"},
+    {"id":"campaign","name":"Campanha e mapas"}
+  ],
+  "entries": [
+    {"symbol":"arenaLab","category":"character","description":"Laboratório original do banco mínimo, sem criar um personagem da campanha.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaResourceLab","category":"character","description":"Vida, Mana, Vigor e escolhas de evolução no mapa de recursos.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaAbilityLab","category":"character","description":"Armas, técnicas, magias e livros no laboratório existente.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaInventory","category":"character","description":"Inventário e equipamentos com o preparo técnico existente.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaAttributeLab","category":"character","description":"Pontos, prévia e confirmação. Retorno pelo próprio laboratório.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaBattle","category":"combat","description":"Seleção de participantes, pilotos de armas e E05. Esc na seleção volta ao título.","saving":"E05 sem saves · demais pilotos preservam suas regras de salvamento"},
+    {"symbol":"arenaLoot","category":"combat","description":"Recompensas dos encontros técnicos já existentes.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaEncounters","category":"combat","description":"Patrulhas e contato em Imperial Dungeons, sem repetir a campanha.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaSkeleton","category":"combat","description":"Batalha direta do esqueleto aprovado; retorno à passagem. Sem EXP neste piloto.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"artCurrent","category":"campaign","description":"Validação visual R04: personagem, cenário e animações da amostra.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"artPreview","category":"campaign","description":"Amostra artística anterior, preservada para comparação.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaDungeon","category":"campaign","description":"Explorar Imperial Dungeons com o piloto técnico existente.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaRestPilot","category":"campaign","description":"Refúgio aprovado com recursos reduzidos para observar o descanso.","saving":"Sessão técnica · salvamento normal disponível; use slots de teste"},
+    {"symbol":"arenaContinuationLab","category":"campaign","description":"Fixtures de continuidade M01→M02. Nenhuma partida pessoal é carregada.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaRihadPreview","category":"campaign","description":"Chegada nível1, informante, descanso e acesso aos arredores.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaRiaVisionPreview","category":"campaign","description":"Acesso determinístico à visão de Ria no descanso autorizado.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaCourtPreview","category":"campaign","description":"Audiência de Blubamka, aceitação e diário da missão.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaStonekeep","category":"campaign","description":"Viagem pela estrada com missão aceita; 3 ratos nos aposentos, lobos ainda ausentes.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaStonekeepMaterials","category":"campaign","description":"Aposento, passagem e margem para observar os materiais aprovados.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaStonekeepCask","category":"campaign","description":"Acesso direto à parede quase negra CASK.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaStonekeepCasl","category":"campaign","description":"Acesso direto à parede clara irregular CASL.","saving":"Somente RAM · slots normais bloqueados"},
+    {"symbol":"arenaSkeletonPatrol","category":"campaign","description":"Sete esqueletos na passagem: posições do original, circulação e contatos independentes.","saving":"Somente RAM · slots normais bloqueados"}
+  ]
+}

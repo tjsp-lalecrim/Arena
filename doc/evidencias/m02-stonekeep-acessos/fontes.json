@@ -1,0 +1,152 @@
+{
+  "base": "9031298",
+  "mif": "39699021.MIF",
+  "mifSHA256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "exeReadOnly": {
+    "exeSHA256": "40dfed48a66154feeda2dc33b9549570b4392874750101f264e7de25ece98a7d",
+    "unpackedSHA256": "8999c88aef7a55c7d45b0da7383457b2d81e1824509036a8f9032be80ae981ca",
+    "length": 305520,
+    "boxArraysOffset": "0x48594",
+    "heightsInterior": [
+      0,
+      12,
+      25,
+      37,
+      50,
+      62,
+      75,
+      87
+    ],
+    "thicknessesInterior": [
+      6,
+      13,
+      19,
+      25,
+      31,
+      38,
+      44,
+      50,
+      56,
+      63,
+      69,
+      75,
+      81,
+      88,
+      94,
+      100
+    ]
+  },
+  "technicalReaderRevision": "OpenTESArena4f11a858f401ea23b2211e2d0485cadb58b32296",
+  "consultationOnly": [
+    {
+      "path": "tmp/original-review/ArenaTypes.cpp",
+      "sha256": "aef7357dd6670845f57f27ca4b782e88b6df7fcb4a32ed7defd78b3d62d061d8"
+    },
+    {
+      "path": "tmp/original-review/MapGeneration.cpp",
+      "sha256": "6ed666a503ddce27e49c8c4aedf18ca522a88ee61c5337141ee18e771259e378"
+    },
+    {
+      "path": "tmp/stonekeep-review/ExeUnpacker.cpp",
+      "sha256": "95bb7dd09516454e0703e62e2072621d421210096fbec2dc6345e4f4390231ec"
+    },
+    {
+      "path": "tmp/stonekeep-review/acdExeStrings.txt",
+      "sha256": "51c248b281c65690b218b600f32f70c23ae9da4e502eed2709007b67225949b7"
+    },
+    {
+      "path": "tmp/stonekeep-review/ArenaPlayerUtils.h",
+      "sha256": "87d3860d7b128a0055ba3dcad54bcd2c43d35443ee6bd4d6106b98be117157af"
+    }
+  ],
+  "documentary": [
+    {
+      "file": "Installed Docs/Manual.pdf",
+      "pages": [
+        4,
+        5
+      ],
+      "coverage": "Lock assessment and attempt; relevant attributes in original"
+    },
+    {
+      "file": "Installed Docs/Player Guide.pdf",
+      "pages": [
+        45,
+        77
+      ],
+      "coverage": "Locked interactions, Open and Wizard Lock; no import of spell system"
+    },
+    {
+      "file": "doc/wiki/Arena_Controls - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "pages": [
+        3
+      ],
+      "coverage": "Attempt to unlock barrier"
+    },
+    {
+      "file": "doc/wiki/Arena_Unofficial FAQ - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "pages": [
+        9
+      ],
+      "coverage": "Forcing doors/chests with weapon breakage in original"
+    },
+    {
+      "file": "doc/wiki/Arena_Fang Lair (quest) - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "pages": [
+        2
+      ],
+      "coverage": "Iron key40,30 optional for parchment; exact target not established"
+    }
+  ],
+  "lockConclusion": "Third-byte lockLevel supported by format reader and original lock mechanics, not a numeric key assignment. Exact original chance/formula/key correspondence not claimed.",
+  "dryPassage": {
+    "mif": [
+      [
+        56,
+        41
+      ],
+      [
+        56,
+        42
+      ],
+      [
+        56,
+        43
+      ],
+      [
+        56,
+        44
+      ],
+      [
+        56,
+        45
+      ],
+      [
+        56,
+        46
+      ],
+      [
+        56,
+        47
+      ],
+      [
+        56,
+        48
+      ],
+      [
+        56,
+        49
+      ]
+    ],
+    "mapRaw": "0x1e4d",
+    "heightIndex": 6,
+    "thicknessIndex": 3,
+    "bottomUnits": 75,
+    "thicknessUnits": 25,
+    "ceilingUnits": 150,
+    "technicalHeadReference": 61,
+    "evidence": "Source volume and clearance interpretation; not DOS observation"
+  },
+  "observation": "No new DOS observation; prior visible/hidden copy attempts did not expose controllable window. No repeated capture attempt or original write.",
+  "adaptation": "Only explicit5 ordinary locks get deterministic universal force45frames per level, no resources/item/stat/class/wear. Dry volume projected to explicit underpass; A1 wet candidates unchanged."
+}

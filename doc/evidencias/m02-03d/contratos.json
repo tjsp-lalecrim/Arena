@@ -1,0 +1,11 @@
+{
+  "base": "65e0c12370a846aeb9f102d2143127b315e23ddb",
+  "checks": [
+    "plugins.js canonical UTF-8 without BOM; prior42 records exactly retained; all43 plugin files exist",
+    "Arrival geometry/events0..4 unchanged; only access5/visual6 added",
+    "MQ01 diary intact; no engine, M01 map, assets, outskirts map or recovery configuration changes",
+    "Ria localization only; IDs/images and word counts intact",
+    "Court uniquely bound to Map011; Stonekeep null; JSON valid",
+    "Focal scripts parse; m01 unchanged"
+  ]
+}

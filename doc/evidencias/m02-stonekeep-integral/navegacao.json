@@ -1,0 +1,60 @@
+{
+  "base": "60f969b",
+  "browser": "156.0.8078.76",
+  "points": [
+    [
+      153,
+      15
+    ],
+    [
+      117,
+      48
+    ],
+    [
+      99,
+      39
+    ],
+    [
+      54,
+      71
+    ],
+    [
+      9,
+      9
+    ],
+    [
+      243,
+      18
+    ],
+    [
+      21,
+      261
+    ],
+    [
+      255,
+      264
+    ]
+  ],
+  "commands": [
+    "item",
+    "skill",
+    "equip",
+    "status",
+    "arenaResources",
+    "arenaJournal",
+    "arenaContinuationReturn",
+    "arenaRihadStore",
+    "arenaRihadLoad",
+    "arenaStonekeepWholePoints",
+    "options",
+    "save",
+    "gameEnd"
+  ],
+  "checks": [
+    "All8 registered inspection points on valid unoccupied floor/water",
+    "Native Esc menu→points waits for Enter release, then Aposentos changes location only",
+    "No proof/load controls, RAM store/load retained; Map015 and persistent state unchanged"
+  ],
+  "errors": [],
+  "missing": []
+}

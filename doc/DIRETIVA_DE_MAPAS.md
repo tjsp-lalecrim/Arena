@@ -1,5 +1,13 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
+## Cobertura completa e amostras
+
+Aplicar o [escopo mínimo funcional vigente](MARCOS_DO_PROJETO.md#escopo-mínimo-funcional-vigente--decisão-de02112026): cidades/dungeons da campanha com mapas completos e encontros previstos, não apenas rota principal. Construir por setores pequenos com comparação original→MV, portas/conexões e inventário dos encontros; amostra aprovada não conclui o mapa. Eventos opcionais podem ser adiados sem apagar sua geometria. Não criar população infinita ou encontros aleatórios para preencher lacunas. Prioridade atual e dependências em BACKLOG_M02.md.
+
+## Cidades: topologia original e recorte de eventos
+
+Diretriz aprovada pelo responsável: preservar a estrutura dos mapas urbanos originais; nesta fase, acrescentar somente eventos necessários à campanha principal. Não substituir a topologia por um mapa pequeno genérico. Interiores dispensáveis podem permanecer inacessíveis, identificados como fora do recorte. Documentar fontes e adaptações. Rihad existente permanece provisória; sua cobertura original voltou à prioridade no BACKLOG_M02.md. Esta consolidação não altera o mapa.
+
 ## Descanso: pontos explícitos, não toda elevação
 
 Repouso usa somente a lista autorizada de ArenaRecovery.json, com origem/apoio/acesso e exclusões documentados; sem inferir descanso de objetos decorativos ou gerar pontos proceduralmente. Plataformas adjacentes podem ter sprites/superfícies próprios: conferir na escala de jogo antes de agrupar interações. Preservar funções de quest, colisão e geometria; descanso não autoriza segurança absoluta ou nova regra de ameaças. Geradores recompõem os eventos configurados sem mudar IDs anteriores. Cobertura atual e exclusão da chave em [EXPANSAO_DESCANSO_M01.md](EXPANSAO_DESCANSO_M01.md).
@@ -40,9 +48,17 @@ Objetos de piso só em regiões de piso/plataforma autorizadas. Uma célula sól
 
 ## Oclusão e animação
 
-Nunca desenhar um cap em camada acima do jogador sobre uma passagem que deveria estar aberta. Em porta aberta, o centro do vão deve ser transparente. Partes fechadas podem ocultar apenas conforme apoio/profundidade coerentes; não corrigir desaparecimento ativando through. Decoração de parede deve ficar confinada à massa sólida; plataforma e tesouro abaixo dos pés. Testar a figura completa nas aproximações e na travessia, não apenas o ponto lógico.
+Não desenhar cap opaco sobre um vão aberto. Em porta aberta, o centro do vão deve ser transparente. Exceção documentada: estrutura realmente suspensa, com piso e folga sustentados pelas fontes, pode usar cobertura visual independente e transparência localizada enquanto o jogador está embaixo. [Stonekeep A2/B2](STONEKEEP_M02_04.md#acessos-a2b2--fechaduras-e-ligação-seca) explicita nove células secas, sem alterar flags globais ou generalizar para paredes sobre água. Partes fechadas podem ocultar apenas conforme apoio/profundidade coerentes; não corrigir desaparecimento ativando through. Decoração de parede deve ficar confinada à massa sólida; plataforma e tesouro abaixo dos pés. Testar a figura completa nas aproximações e na travessia, não apenas o ponto lógico; validar pixels no renderizador usado, não somente a propriedade de opacidade.
 
 Fechamento recusado enquanto jogador ou evento não-through ocupa envelope de giro. Collider bloqueado até o fim da abertura; volta a bloquear no início do fechamento aceito. Todos os quadros têm mesmo canvas/escala/âncora. Comparar pixels da dobradiça e posição da moldura, além de conferir se os quadros são diferentes. Água: A1 próprio e periódico; natação exclusivamente na região marcada, preservando flags nativas, bordas, obstáculos e veículos. Não gastar/recuperar Vigor em exploração.
+
+## Água sob estruturas — regra de construção por evidência
+
+Não confundir FLOR aquático com passagem: MAP1/altura/espessura/apoios podem continuar bloqueando. Registrar coordenada original, camada de piso e volume superior separadamente. Primeiro conferir wiki/planta/dados e, quando viável, travessia no original. Distinguir fato observado, interpretação de formato e incerteza; uma regra confirmada em outra dungeon não prova cada ocorrência local.
+
+Somente onde a folga/conectividade estiver comprovada, compilar água transitável na lista explícita e estrutura em sobreposição visual independente, preservando bordas/apoios sólidos, acesso dos dois lados e uma entrada/saída legível. Isso é exceção documentada à oclusão de passagens, não liberação global de paredes/água nem `through` no jogador. Testar camadas e travessia nos dois sentidos; manter natação/recurso/veículos existentes. Não introduzir mergulho, oxigênio ou teclas por associação.
+
+Se a evidência não resolver a folga, conservar o candidato como **geometria provisória**, sem inventar abertura/fechamento definitivo. Continuar o trabalho independente quando houver caminho original aberto sustentado pelos dados; se for a única conexão, registrar a dependência concreta antes de fixá-la. Aprendizado aplicado e limites do A1 oeste em [Stonekeep](STONEKEEP_M02_04.md#a1-oeste--ligação-aberta-e-dois-ghouls). Nenhum underpass foi implementado nessa entrega: quatro blocos seguem candidatos não resolvidos, não referência aprovada de colisão.
 
 ## Critérios de validação pertinentes à alteração
 
@@ -50,7 +66,7 @@ Fechamento recusado enquanto jogador ou evento não-through ocupa envelope de gi
 2. Ver o mesmo objeto de descanso isolado e junto de uma parede, sem alvenaria falsa; tesouro na escala real; canto/margem de água.
 3. Submeter a amostra à avaliação antes de expandir ocorrências, conforme o fluxo de DIRECAO_DE_ARTE.md; não produzir um lote de padrão novo ainda não aprovado na mesma entrega. Na expansão autorizada, auditar posições/camadas alteradas e registrar adaptações.
 4. Salvar/carregar, incluindo portas e água; testar navegação e colisão nativas. Quando houver alteração de gerador, conferir sua saída pertinente para garantir que não desfaz o ajuste; não regenerar tudo em uma revisão sem esse risco.
-5. Inspecionar no navegador e no editor MV1.6.1. Registrar o que foi executado: teste de navegador e validação de JSON não substituem autoria no editor, nem comprovam teste físico em mobile.
+5. Verificar no navegador desktop e validar os dados/geradores pertinentes. **Editor opcional**, compatibilidade não obrigatória pela decisão de02/11/2026 em DESENVOLVIMENTO_E_VERSIONAMENTO.md. Registrar uso do editor se ocorrer, sem exigir autoria como bloqueio ou atribuir teste físico mobile. Não apagar evidências históricas.
 
 Recortes de revisão, linhas e rótulos pertencem somente às pranchas. Prompts devem fornecer apenas referências efetivamente usadas; prints de defeitos não são modelos de resultado. Assets com falhas permanecem em revisão até avaliação do responsável.
 

@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "base": "d216471",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "bounds": [
+    30,
+    75,
+    59,
+    79
+  ],
+  "doors": [],
+  "entries": [
+    {
+      "id": "stonekeep.c2c2.enemy.mif30.75",
+      "eventId": 519,
+      "sourceOriginal": [
+        30,
+        75
+      ],
+      "origin": [
+        180,
+        228
+      ],
+      "species": "orc",
+      "enemyId": 7,
+      "troopId": 8,
+      "sourceFlat": "ORC.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c2.enemy.mif42.75",
+      "eventId": 520,
+      "sourceOriginal": [
+        42,
+        75
+      ],
+      "origin": [
+        144,
+        228
+      ],
+      "species": "esqueleto",
+      "enemyId": 4,
+      "troopId": 5,
+      "sourceFlat": "SKELETON.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c2.enemy.mif56.75",
+      "eventId": 521,
+      "sourceOriginal": [
+        56,
+        75
+      ],
+      "origin": [
+        102,
+        228
+      ],
+      "species": "ghoul",
+      "enemyId": 5,
+      "troopId": 6,
+      "sourceFlat": "GHOUL.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c2.enemy.mif55.76",
+      "eventId": 522,
+      "sourceOriginal": [
+        55,
+        76
+      ],
+      "origin": [
+        105,
+        231
+      ],
+      "species": "ghoul",
+      "enemyId": 5,
+      "troopId": 6,
+      "sourceFlat": "GHOUL.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c2.enemy.mif30.78",
+      "eventId": 523,
+      "sourceOriginal": [
+        30,
+        78
+      ],
+      "origin": [
+        180,
+        237
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c2.enemy.mif31.78",
+      "eventId": 524,
+      "sourceOriginal": [
+        31,
+        78
+      ],
+      "origin": [
+        177,
+        237
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    },
+    {
+      "id": "stonekeep.c2c2.enemy.mif47.79",
+      "eventId": 525,
+      "sourceOriginal": [
+        47,
+        79
+      ],
+      "origin": [
+        129,
+        240
+      ],
+      "species": "aranha",
+      "enemyId": 9,
+      "troopId": 10,
+      "sourceFlat": "SPIDER.DFA",
+      "questSpecific": false,
+      "radius": 2,
+      "interval": 90,
+      "regions": [
+        4
+      ],
+      "scale": 1
+    }
+  ],
+  "points": [
+    {
+      "name": "C2 central sul · orc e aranhas leste",
+      "position": [
+        180,
+        231
+      ]
+    },
+    {
+      "name": "C2 central sul · esqueleto",
+      "position": [
+        144,
+        231
+      ]
+    },
+    {
+      "name": "C2 central sul · ghouls",
+      "position": [
+        105,
+        228
+      ]
+    },
+    {
+      "name": "C2 central sul · aranha oeste",
+      "position": [
+        126,
+        240
+      ]
+    }
+  ],
+  "routes": {
+    "stonekeep.c2c2.enemy.mif30.75": {
+      "steps": 156,
+      "bounds": [
+        108,
+        210,
+        180,
+        257
+      ],
+      "outsideBandCells": 32,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c2.enemy.mif42.75": {
+      "steps": 224,
+      "bounds": [
+        108,
+        210,
+        179,
+        257
+      ],
+      "outsideBandCells": 32,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c2.enemy.mif56.75": {
+      "steps": 24,
+      "bounds": [
+        102,
+        210,
+        108,
+        228
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c2.enemy.mif55.76": {
+      "steps": 24,
+      "bounds": [
+        105,
+        210,
+        108,
+        231
+      ],
+      "outsideBandCells": 0,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c2.enemy.mif30.78": {
+      "steps": 147,
+      "bounds": [
+        108,
+        210,
+        180,
+        257
+      ],
+      "outsideBandCells": 32,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c2.enemy.mif31.78": {
+      "steps": 144,
+      "bounds": [
+        108,
+        210,
+        177,
+        257
+      ],
+      "outsideBandCells": 31,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    },
+    "stonekeep.c2c2.enemy.mif47.79": {
+      "steps": 91,
+      "bounds": [
+        108,
+        210,
+        131,
+        254
+      ],
+      "outsideBandCells": 15,
+      "terrain": "native floor/door/open water only, excludes all wet cells with nonzero MAP1"
+    }
+  },
+  "locksInBand": [],
+  "triggersInBand": [
+    [
+      39,
+      76,
+      255,
+      18
+    ],
+    [
+      30,
+      76,
+      255,
+      19
+    ],
+    [
+      51,
+      79,
+      255,
+      19
+    ]
+  ],
+  "connection": "Existing C2 north/central corridors; approaches to the eastern rooms and southern skeleton reuse corridors as far as Y85. No new content outside Y75-79, geometry, doors or water. No new DOS observation.",
+  "confidence": "Original MAP1/FLOR and inventory/STKEEP1.INF declarations; source coordinates mirrored then scaled3x3"
+}

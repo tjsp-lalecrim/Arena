@@ -1,0 +1,17 @@
+{
+  "version": "minotaur-walk-v01",
+  "tool": "image_gen built-in",
+  "prompt": "Use case: stylized-concept, game walking sprite. Create exactly ONE twelve-pose3columns x4rows transparent walking sheet for the SAME MINOTAUR in image1, the newly integrated battle exemplar. Image2 original Arena PAT1/PAT3/PAT5 confirms Minotaur identity/front/side/back and human limbs, not target camera/pixel style. Preserve dark chestnut-red bovine head, broad dark muzzle, two short pale ivory horns sideways/up, small ears/eyes, powerful golden-ochre HUMAN torso/arms/legs, simple brown waist band/brief loincloth, HUMAN bare feet with toes/hands. SAME short broad rectangular gray steel CLEAVER in RIGHT hand, LEFT hand empty. No hooves/digitigrade legs, tail, shield, armor, necklace, nose ring, extra accessories or generic Ogre. Warm ochre living flesh, not golden metal armor or yellow neon. Dark fantasy figurative painted finish consistent with battle, soft upper-left world light. Camera ORTHOGONAL TOP-DOWN for a grid map, about60degree elevation seeing tops of horns/head/shoulders/back, NOT lateral battle, isometric/diagonal or first-person. Exactly3columns4rows of full cutouts, equal spacing/physical scale, ample transparent gutters and outer margins, complete horns/blade/feet in everycell. Row1 SOUTH facing imageBOTTOM, right-hand cleaver appears imageLEFT. Row2 WEST facing imageLEFT, blade on farther/north anatomical right side. Row3 EAST facing imageRIGHT, blade on nearer/south right side. Row4 NORTH walking away imageTOP: back of bullhead/horns/shoulders, NO face turned back; blade imageRIGHT. Body/head/hips aligned to same direction, don't mirror gear or world lighting. COLUMN1: right foot advanced in actual walking stride, left foot retracted. COLUMN2: stationary NEUTRAL, BOTH bare human feet clearly grounded, no lifted knee. COLUMN3: LEFT foot advanced, RIGHT foot retracted, unmistakably OPPOSITE phase to column1. SOUTH column1 image-left foot advanced downward, column3 image-right foot advanced down. NORTH column1 image-right foot forward/up, column3 image-left foot forward/up. WEST/EAST opposing near/far leg strides. Real articulated hip/knee/ankle/toes and slight shoulder/left arm counterbalance, cleaver remains gripped low near waist with tiny natural sway, no attacking or raised weapon. Stable torso axis/support plane, no sliding/warping, no repeated static copies shifted. Muscular humanoid stature, larger/robuster silhouette than small enemies but not a grotesque giant. Body62px tall at runtime in96x96 cells, enough transparent room for horns/cleaver; do not enlarge individual poses to fill cells. All12 same anatomy, density, colors and equipment; true alpha transparency, no floor, pedestal, background, shadows, grid, text or labels. One Minotaur only; no battle regeneration, variants, other species or scenery.",
+  "references": [
+    {
+      "file": "tmp/ogre-review/minotaur-identity.png",
+      "derivedFrom": "art/masters/stonekeep-minotaur-v01/sheet-v01.png first neutral",
+      "role": "same exemplar identity for both uses"
+    },
+    {
+      "file": "tmp/ogre-review/minotaur-directions.png",
+      "role": "original PAT1/PAT3/PAT5 direction/body evidence"
+    }
+  ],
+  "approval": "Owner explicitly approved both Minotaur battle and patrol at569e382; no balance, rewards, distribution or additional environment approval inferred"
+}

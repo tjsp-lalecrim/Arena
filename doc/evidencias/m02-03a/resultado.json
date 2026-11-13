@@ -1,0 +1,36 @@
+{
+  "browser": "156.0.8078.76",
+  "environment": "Chrome desktop headless; fresh disposable origin/context, emulated touch only",
+  "checks": [
+    "Title preview reaches Map009/rihad.arrival at10,11, MQ02=10, resources still spent (31/12/23)",
+    "Preview uses old isolated laboratory; native slots blocked, no browser storage writes",
+    "All intended walking cells connected; wall/cap, exterior boundary and NPC collision enforced",
+    "Native action-button conversation explains place/rest/version limit without Ria/court reveal or stage advance",
+    "Mouse click-to-walk reaches rest approach using native pathfinding",
+    "Existing rest interaction fills all resources; RAM menu restores position/spent resources/quests/inventory/attributes without slots",
+    "Same held pressure cannot recover twice or enqueue another use",
+    "Existing rest label works with emulated touch",
+    "Battle guard rejects rest; no battle launched",
+    "Normal campaign saves Map009 through native menu/save scene in isolated Chrome slot11",
+    "F5 + native Load restores Rihad position, spent resources, all actor state and unique arrival; does not reroute or reoffer",
+    "ending: title cancels without beginning; explicit continuation reaches Rihad once without healing/EXP/rewards or MQ01 mutation",
+    "ended: title cancels without beginning; explicit continuation reaches Rihad once without healing/EXP/rewards or MQ01 mutation",
+    "Native interrupted-transfer save/load resumes stable destination once",
+    "No uncaught browser errors or missing runtime requests",
+    "Arrival generator is reproducible and preserves other configured areas/rest points"
+  ],
+  "connectivity": {
+    "count": 121,
+    "unreachable": [],
+    "walls": true,
+    "npc": true,
+    "boundary": true
+  },
+  "errors": [],
+  "missing": [],
+  "limitations": [
+    "No native editor authoring or physical mobile test",
+    "Architecture and NPC placeholders require owner evaluation",
+    "No court/Ria/outskirts/Stonekeep progression"
+  ]
+}

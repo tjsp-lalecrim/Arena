@@ -10543,13 +10543,1444 @@
       },
       "version": "r03-expansion",
       "actionMotion": "bite"
+    },
+    "4": {
+      "file": "Arena_Combat_skeleton_v01",
+      "cell": [
+        192,
+        128
+      ],
+      "ground": 120,
+      "motions": {
+        "idle": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                192,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                384,
+                0,
+                192,
+                128
+              ],
+              "duration": 20
+            },
+            {
+              "rect": [
+                576,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                768,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                960,
+                0,
+                192,
+                128
+              ],
+              "duration": 20
+            }
+          ],
+          "loop": true,
+          "impact": null
+        },
+        "strike": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                128,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                192,
+                128,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                128,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                768,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                960,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            }
+          ],
+          "loop": false,
+          "impact": 3
+        },
+        "hurt": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                256,
+                192,
+                128
+              ],
+              "duration": 4
+            },
+            {
+              "rect": [
+                192,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                384,
+                256,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                256,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                768,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                960,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            }
+          ],
+          "loop": false,
+          "impact": null
+        },
+        "defeat": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                384,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                192,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                576,
+                384,
+                192,
+                128
+              ],
+              "duration": 9
+            },
+            {
+              "rect": [
+                768,
+                384,
+                192,
+                128
+              ],
+              "duration": 10
+            },
+            {
+              "rect": [
+                960,
+                384,
+                192,
+                128
+              ],
+              "duration": 18
+            }
+          ],
+          "loop": false,
+          "impact": null
+        }
+      },
+      "version": "stonekeep-skeleton-v01",
+      "actionMotion": "strike"
+    },
+    "5": {
+      "file": "Arena_Combat_ghoul_v01",
+      "cell": [
+        192,
+        128
+      ],
+      "ground": 120,
+      "motions": {
+        "idle": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                192,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                384,
+                0,
+                192,
+                128
+              ],
+              "duration": 20
+            },
+            {
+              "rect": [
+                576,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                768,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                960,
+                0,
+                192,
+                128
+              ],
+              "duration": 20
+            }
+          ],
+          "loop": true,
+          "impact": null
+        },
+        "strike": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                128,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                192,
+                128,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                128,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                768,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                960,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            }
+          ],
+          "loop": false,
+          "impact": 3
+        },
+        "hurt": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                256,
+                192,
+                128
+              ],
+              "duration": 4
+            },
+            {
+              "rect": [
+                192,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                384,
+                256,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                256,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                768,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                960,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            }
+          ],
+          "loop": false,
+          "impact": null
+        },
+        "defeat": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                384,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                192,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                576,
+                384,
+                192,
+                128
+              ],
+              "duration": 9
+            },
+            {
+              "rect": [
+                768,
+                384,
+                192,
+                128
+              ],
+              "duration": 10
+            },
+            {
+              "rect": [
+                960,
+                384,
+                192,
+                128
+              ],
+              "duration": 18
+            }
+          ],
+          "loop": false,
+          "impact": null
+        }
+      },
+      "version": "stonekeep-ghoul-v01",
+      "actionMotion": "strike"
+    },
+    "6": {
+      "file": "Arena_Combat_wolf_v01",
+      "cell": [
+        192,
+        128
+      ],
+      "ground": 120,
+      "motions": {
+        "idle": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                192,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                384,
+                0,
+                192,
+                128
+              ],
+              "duration": 20
+            },
+            {
+              "rect": [
+                576,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                768,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            }
+          ],
+          "loop": true,
+          "impact": null
+        },
+        "strike": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                128,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                192,
+                128,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                128,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                768,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                960,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            }
+          ],
+          "loop": false,
+          "impact": 3
+        },
+        "hurt": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                256,
+                192,
+                128
+              ],
+              "duration": 4
+            },
+            {
+              "rect": [
+                192,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                384,
+                256,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                256,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                768,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                960,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            }
+          ],
+          "loop": false,
+          "impact": null
+        },
+        "defeat": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                384,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                192,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                576,
+                384,
+                192,
+                128
+              ],
+              "duration": 9
+            },
+            {
+              "rect": [
+                768,
+                384,
+                192,
+                128
+              ],
+              "duration": 10
+            },
+            {
+              "rect": [
+                960,
+                384,
+                192,
+                128
+              ],
+              "duration": 18
+            }
+          ],
+          "loop": false,
+          "impact": null
+        }
+      },
+      "version": "stonekeep-wolf-v01",
+      "actionMotion": "strike"
+    },
+    "7": {
+      "file": "Arena_Combat_orc_v01",
+      "cell": [
+        192,
+        128
+      ],
+      "ground": 120,
+      "motions": {
+        "idle": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                192,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                384,
+                0,
+                192,
+                128
+              ],
+              "duration": 20
+            },
+            {
+              "rect": [
+                576,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                768,
+                0,
+                192,
+                128
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                960,
+                0,
+                192,
+                128
+              ],
+              "duration": 20
+            }
+          ],
+          "loop": true,
+          "impact": null
+        },
+        "strike": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                128,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                192,
+                128,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                128,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                768,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                960,
+                128,
+                192,
+                128
+              ],
+              "duration": 7
+            }
+          ],
+          "loop": false,
+          "impact": 3
+        },
+        "hurt": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                256,
+                192,
+                128
+              ],
+              "duration": 4
+            },
+            {
+              "rect": [
+                192,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                384,
+                256,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                576,
+                256,
+                192,
+                128
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                768,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                960,
+                256,
+                192,
+                128
+              ],
+              "duration": 5
+            }
+          ],
+          "loop": false,
+          "impact": null
+        },
+        "defeat": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                384,
+                192,
+                128
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                192,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                384,
+                192,
+                128
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                576,
+                384,
+                192,
+                128
+              ],
+              "duration": 9
+            },
+            {
+              "rect": [
+                768,
+                384,
+                192,
+                128
+              ],
+              "duration": 10
+            },
+            {
+              "rect": [
+                960,
+                384,
+                192,
+                128
+              ],
+              "duration": 18
+            }
+          ],
+          "loop": false,
+          "impact": null
+        }
+      },
+      "version": "stonekeep-orc-v01",
+      "actionMotion": "strike"
+    },
+    "8": {
+      "file": "Arena_Combat_minotaur_v01",
+      "cell": [
+        224,
+        160
+      ],
+      "ground": 152,
+      "motions": {
+        "idle": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                224,
+                160
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                224,
+                0,
+                224,
+                160
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                448,
+                0,
+                224,
+                160
+              ],
+              "duration": 20
+            },
+            {
+              "rect": [
+                672,
+                0,
+                224,
+                160
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                896,
+                0,
+                224,
+                160
+              ],
+              "duration": 16
+            },
+            {
+              "rect": [
+                1120,
+                0,
+                224,
+                160
+              ],
+              "duration": 20
+            }
+          ],
+          "loop": true,
+          "impact": null
+        },
+        "strike": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                160,
+                224,
+                160
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                224,
+                160,
+                224,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                448,
+                160,
+                224,
+                160
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                672,
+                160,
+                224,
+                160
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                896,
+                160,
+                224,
+                160
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                1120,
+                160,
+                224,
+                160
+              ],
+              "duration": 7
+            }
+          ],
+          "loop": false,
+          "impact": 3
+        },
+        "hurt": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                320,
+                224,
+                160
+              ],
+              "duration": 4
+            },
+            {
+              "rect": [
+                224,
+                320,
+                224,
+                160
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                448,
+                320,
+                224,
+                160
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                672,
+                320,
+                224,
+                160
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                896,
+                320,
+                224,
+                160
+              ],
+              "duration": 5
+            },
+            {
+              "rect": [
+                1120,
+                320,
+                224,
+                160
+              ],
+              "duration": 5
+            }
+          ],
+          "loop": false,
+          "impact": null
+        },
+        "defeat": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                480,
+                224,
+                160
+              ],
+              "duration": 7
+            },
+            {
+              "rect": [
+                224,
+                480,
+                224,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                448,
+                480,
+                224,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                672,
+                480,
+                224,
+                160
+              ],
+              "duration": 9
+            },
+            {
+              "rect": [
+                896,
+                480,
+                224,
+                160
+              ],
+              "duration": 10
+            },
+            {
+              "rect": [
+                1120,
+                480,
+                224,
+                160
+              ],
+              "duration": 18
+            }
+          ],
+          "loop": false,
+          "impact": null
+        }
+      },
+      "version": "stonekeep-minotaur-v01",
+      "actionMotion": "strike"
+    },
+    "9": {
+      "file": "Arena_Combat_spider_v01",
+      "cell": [
+        224,
+        160
+      ],
+      "ground": 152,
+      "motions": {
+        "idle": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                224,
+                160
+              ],
+              "duration": 26
+            },
+            {
+              "rect": [
+                224,
+                0,
+                224,
+                160
+              ],
+              "duration": 26
+            },
+            {
+              "rect": [
+                448,
+                0,
+                224,
+                160
+              ],
+              "duration": 26
+            },
+            {
+              "rect": [
+                672,
+                0,
+                224,
+                160
+              ],
+              "duration": 26
+            }
+          ],
+          "loop": true,
+          "impact": null
+        },
+        "strike": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                160,
+                224,
+                160
+              ],
+              "duration": 12
+            },
+            {
+              "rect": [
+                224,
+                160,
+                224,
+                160
+              ],
+              "duration": 10
+            },
+            {
+              "rect": [
+                448,
+                160,
+                224,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                672,
+                160,
+                224,
+                160
+              ],
+              "duration": 10
+            }
+          ],
+          "loop": false,
+          "impact": 2
+        },
+        "hurt": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                320,
+                224,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                224,
+                320,
+                224,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                448,
+                320,
+                224,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                672,
+                320,
+                224,
+                160
+              ],
+              "duration": 8
+            }
+          ],
+          "loop": false,
+          "impact": null
+        },
+        "defeat": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                480,
+                224,
+                160
+              ],
+              "duration": 14
+            },
+            {
+              "rect": [
+                224,
+                480,
+                224,
+                160
+              ],
+              "duration": 14
+            },
+            {
+              "rect": [
+                448,
+                480,
+                224,
+                160
+              ],
+              "duration": 14
+            },
+            {
+              "rect": [
+                672,
+                480,
+                224,
+                160
+              ],
+              "duration": 18
+            }
+          ],
+          "loop": false,
+          "impact": null
+        }
+      },
+      "version": "stonekeep-spider-v01",
+      "actionMotion": "strike"
     }
   },
   "weapons": {
     "1": {
       "file": "Arena_weapon_dagger_r02",
       "grip": [
-        6.0,
+        6,
         28.080000000000002
       ],
       "size": [
@@ -10571,7 +12002,7 @@
   },
   "weaponPoses": {
     "breton.female.base": {
-      "2": {
+      "1": {
         "heavy": [
           {
             "hand": [
@@ -10831,7 +12262,7 @@
           }
         ]
       },
-      "1": {
+      "2": {
         "heavy": [
           {
             "hand": [

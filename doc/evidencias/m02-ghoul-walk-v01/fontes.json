@@ -1,0 +1,23 @@
+{
+  "map": "39699021.MIF",
+  "mapSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "inf": "GLOBAL.BSA/STKEEP1.INF",
+  "infSha256": "1b8842b438e37d14bc9f9abeea7ff28e629d5b279dca313daa3eee0d58bebd5c",
+  "flatIndex": 60,
+  "itemAnnotation": 41,
+  "raw": "0x803c",
+  "original": [
+    70,
+    18
+  ],
+  "display": [
+    19,
+    18
+  ],
+  "mv": [
+    36,
+    57
+  ],
+  "scope": "One declared island flat selected; no new DOS playtest, no claim of actual patrol path. Existing decoded layers reused after original map hash and INF checks. Other guardian positions not populated.",
+  "lootSource": "Local Monsters PDF5: gold24%/7-70 and low-quality item5%; gear pool is explicitly adapted, EXP75 provisional local scale."
+}

@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "mapId": 13,
+  "areaId": "fang-lair.upper",
+  "questId": "MQ02",
+  "sourceId": "fang.cell2.key",
+  "receiptId": "MQ02.fang.lower-door",
+  "itemId": 8,
+  "entry": [
+    18,
+    3
+  ],
+  "lab": {
+    "x": 33,
+    "y": 48,
+    "direction": 2
+  },
+  "riddleEventId": 2,
+  "riddle": [
+    33,
+    48
+  ],
+  "keyEventId": 3,
+  "key": [
+    15,
+    57
+  ],
+  "limitEventId": 4,
+  "limit": [
+    33,
+    57
+  ],
+  "gates": [
+    {
+      "id": "spider.w1",
+      "eventId": 10,
+      "origin": [
+        12,
+        9
+      ],
+      "sourceOriginal": [
+        95,
+        82
+      ],
+      "direction": 6,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "spider.e1",
+      "eventId": 11,
+      "origin": [
+        24,
+        9
+      ],
+      "sourceOriginal": [
+        91,
+        82
+      ],
+      "direction": 4,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "spider.w2",
+      "eventId": 12,
+      "origin": [
+        12,
+        21
+      ],
+      "sourceOriginal": [
+        95,
+        86
+      ],
+      "direction": 6,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "spider.e2",
+      "eventId": 13,
+      "origin": [
+        24,
+        21
+      ],
+      "sourceOriginal": [
+        91,
+        86
+      ],
+      "direction": 4,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "spider.w2.south",
+      "eventId": 14,
+      "origin": [
+        9,
+        27
+      ],
+      "sourceOriginal": [
+        96,
+        88
+      ],
+      "direction": 8,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "spider.e2.south",
+      "eventId": 15,
+      "origin": [
+        27,
+        27
+      ],
+      "sourceOriginal": [
+        90,
+        88
+      ],
+      "direction": 8,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "cell3",
+      "eventId": 16,
+      "origin": [
+        6,
+        51
+      ],
+      "sourceOriginal": [
+        97,
+        96
+      ],
+      "direction": 8,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "cell1",
+      "eventId": 17,
+      "origin": [
+        24,
+        51
+      ],
+      "sourceOriginal": [
+        91,
+        96
+      ],
+      "direction": 8,
+      "opensWith": "wrong"
+    },
+    {
+      "id": "cell2",
+      "eventId": 18,
+      "origin": [
+        15,
+        51
+      ],
+      "sourceOriginal": [
+        94,
+        96
+      ],
+      "direction": 8,
+      "opensWith": "correct"
+    },
+    {
+      "id": "portal",
+      "eventId": 19,
+      "origin": [
+        33,
+        51
+      ],
+      "sourceOriginal": [
+        88,
+        96
+      ],
+      "direction": 8,
+      "opensWith": "receipt"
+    }
+  ],
+  "pendingSpiders": [
+    {
+      "id": "fang.cells.spider.01",
+      "eventId": 30,
+      "origin": [
+        9,
+        12
+      ],
+      "sourceOriginal": [
+        96,
+        83
+      ]
+    },
+    {
+      "id": "fang.cells.spider.02",
+      "eventId": 31,
+      "origin": [
+        27,
+        12
+      ],
+      "sourceOriginal": [
+        90,
+        83
+      ]
+    },
+    {
+      "id": "fang.cells.spider.03",
+      "eventId": 32,
+      "origin": [
+        9,
+        24
+      ],
+      "sourceOriginal": [
+        96,
+        87
+      ]
+    },
+    {
+      "id": "fang.cells.spider.04",
+      "eventId": 33,
+      "origin": [
+        27,
+        24
+      ],
+      "sourceOriginal": [
+        90,
+        87
+      ]
+    }
+  ],
+  "texts": {
+    "intro": [
+      "Você encontra uma sala com celas dos dois lados. Em cada uma parece haver uma aranha faminta. Três outras celas ficam ao sul, junto a um portal escuro.",
+      "Nesta amostra, materiais e portas são provisórios. As aranhas ainda não possuem exemplar artístico e combate integrados; sua liberação será sinalizada, sem substituição por outra espécie."
+    ],
+    "warning": [
+      "Prove seu valor para prosseguir ao Subterrâneo. A resposta correta abrirá a cela da chave dourada, que abre o portal.",
+      "Não se apresse, mortal. A escolha errada abrirá as celas das aranhas..."
+    ],
+    "riddle": [
+      "Ao se aproximar, a própria porta fala:",
+      "Ouça meu enigma, mortal, e prove que merece meu serviço.",
+      "Se a Cela 3 contém latão sem valor, a Cela 2 contém a chave dourada.",
+      "Se a Cela 1 contém a chave dourada, a Cela 3 contém latão sem valor.",
+      "Se a Cela 2 contém latão sem valor, a Cela 1 contém a chave dourada.",
+      "Sabendo que nem tudo o que foi dito pode ser verdadeiro, qual cela contém a chave dourada?"
+    ],
+    "wrong": [
+      "Você ouve o rangido do metal: as portas das celas das aranhas destrancam e se abrem...",
+      "Liberação registrada uma única vez. O combate das aranhas ainda não está integrado nesta amostra. Você pode tentar responder novamente."
+    ],
+    "correct": [
+      "Você está correto, mortal. A chave na Cela 2 é sua..."
+    ],
+    "missing": [
+      "A chave dourada está na Cela 2, ao sul. Pegue-a para abrir o portal."
+    ],
+    "opened": [
+      "A chave dourada abre o portal. A passagem está livre; a escada é o limite desta amostra."
+    ],
+    "limit": [
+      "A escada para o nível inferior ainda não está conectada. A amostra termina aqui, com seu progresso preservado; a quest continua em andamento."
+    ]
+  }
+}

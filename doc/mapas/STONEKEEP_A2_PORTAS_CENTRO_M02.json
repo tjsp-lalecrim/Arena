@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "id": "stonekeep.a2central.doors",
+  "sourceSha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b",
+  "coordinates": "MIF zero-based -> view=(89-x,y) -> Map015=(3+3*viewX,3+3*y)",
+  "doors": [
+    {
+      "id": "stonekeep.a2central.door.01",
+      "sourceOriginal": [
+        42,
+        12
+      ],
+      "view": [
+        47,
+        12
+      ],
+      "center": [
+        144,
+        39
+      ],
+      "axis": "east-west",
+      "raw": 45072,
+      "texture": "DCAS5.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "access": "west/east",
+      "condition": "No LOCK or TRIG at this coordinate; ordinary interaction, not a new key rule.",
+      "neighborhood": [
+        {
+          "view": [
+            46,
+            11
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            47,
+            11
+          ],
+          "mapRaw": 10023,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            48,
+            11
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            46,
+            12
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            47,
+            12
+          ],
+          "mapRaw": 45072,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            48,
+            12
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            46,
+            13
+          ],
+          "mapRaw": 32820,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            47,
+            13
+          ],
+          "mapRaw": 10537,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            48,
+            13
+          ],
+          "mapRaw": 0,
+          "floorRaw": 768
+        }
+      ]
+    },
+    {
+      "id": "stonekeep.a2central.door.02",
+      "sourceOriginal": [
+        44,
+        14
+      ],
+      "view": [
+        45,
+        14
+      ],
+      "center": [
+        138,
+        45
+      ],
+      "axis": "north-south",
+      "raw": 45072,
+      "texture": "DCAS5.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "access": "north/south",
+      "condition": "No LOCK or TRIG at this coordinate; ordinary interaction, not a new key rule.",
+      "neighborhood": [
+        {
+          "view": [
+            44,
+            13
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            45,
+            13
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            46,
+            13
+          ],
+          "mapRaw": 32820,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            44,
+            14
+          ],
+          "mapRaw": 10537,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            45,
+            14
+          ],
+          "mapRaw": 45072,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            46,
+            14
+          ],
+          "mapRaw": 10537,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            44,
+            15
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            45,
+            15
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            46,
+            15
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        }
+      ]
+    },
+    {
+      "id": "stonekeep.a2central.door.03",
+      "sourceOriginal": [
+        47,
+        17
+      ],
+      "view": [
+        42,
+        17
+      ],
+      "center": [
+        129,
+        54
+      ],
+      "axis": "east-west",
+      "raw": 45072,
+      "texture": "DCAS5.IMG",
+      "lockValue": null,
+      "triggerAtDoor": null,
+      "access": "west/east",
+      "condition": "No LOCK or TRIG at this coordinate; ordinary interaction, not a new key rule.",
+      "neighborhood": [
+        {
+          "view": [
+            41,
+            16
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            42,
+            16
+          ],
+          "mapRaw": 10537,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            43,
+            16
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            41,
+            17
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            42,
+            17
+          ],
+          "mapRaw": 45072,
+          "floorRaw": 768
+        },
+        {
+          "view": [
+            43,
+            17
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            41,
+            18
+          ],
+          "mapRaw": 0,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            42,
+            18
+          ],
+          "mapRaw": 10023,
+          "floorRaw": 512
+        },
+        {
+          "view": [
+            43,
+            18
+          ],
+          "mapRaw": 0,
+          "floorRaw": 768
+        }
+      ]
+    }
+  ],
+  "pendingLocked": [
+    {
+      "sourceOriginal": [
+        51,
+        15
+      ],
+      "view": [
+        38,
+        15
+      ],
+      "center": [
+        117,
+        48
+      ],
+      "lockValue": 1,
+      "dependency": "Original iron-key mapping/lock interaction unresolved; no invented key or lock system."
+    },
+    {
+      "sourceOriginal": [
+        51,
+        19
+      ],
+      "view": [
+        38,
+        19
+      ],
+      "center": [
+        117,
+        60
+      ],
+      "lockValue": 1,
+      "dependency": "Original iron-key mapping/lock interaction unresolved; no invented key or lock system."
+    },
+    {
+      "sourceOriginal": [
+        54,
+        19
+      ],
+      "view": [
+        35,
+        19
+      ],
+      "center": [
+        108,
+        60
+      ],
+      "lockValue": 1,
+      "dependency": "Original iron-key mapping/lock interaction unresolved; no invented key or lock system."
+    }
+  ],
+  "points": [
+    {
+      "name": "A2 centro · porta leste",
+      "position": [
+        147,
+        39
+      ]
+    },
+    {
+      "name": "A2 centro · porta intermediária",
+      "position": [
+        138,
+        42
+      ]
+    },
+    {
+      "name": "A2 centro · porta oeste",
+      "position": [
+        132,
+        54
+      ]
+    }
+  ]
+}

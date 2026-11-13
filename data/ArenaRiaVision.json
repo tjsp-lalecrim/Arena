@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "MQ02.ria",
+  "sections": [
+    {
+      "id": "MQ02.ria.01",
+      "text": "Vejo que seus braços e sua mente se fortaleceram. É hora de começarmos esta jornada.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "piloto para avaliação"
+    },
+    {
+      "id": "MQ02.ria.02",
+      "text": "O Cajado do Caos é o único objeto capaz de abrir a passagem entre este mundo e a dimensão para a qual o Imperador foi banido. Tharn o usou para destruir minha forma corpórea quando tentei alertar o Conselho.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "mesma composição provisória, sem ilustração específica"
+    },
+    {
+      "id": "MQ02.ria.03",
+      "text": "Tharn sabia que o Staff era quase indestrutível, pois fora criado da própria essência da terra. Mas nisso encontrou a chave: assim como a terra está dividida, ele o partiu em oito fragmentos perfeitamente formados.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "mesma composição provisória, sem ilustração específica"
+    },
+    {
+      "id": "MQ02.ria.04",
+      "text": "Ele espalhou os fragmentos pelo reino. Consegui descobrir onde está o primeiro: em um lugar chamado Fang Lair.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "mesma composição provisória, sem ilustração específica"
+    },
+    {
+      "id": "MQ02.ria.05",
+      "text": "Dizem que Fang Lair foi construído pelos anões de Kragen. Segundo a lenda, um grande dragão expulsou-os de seu lar nas Dragon’s Teeth e tomou o lugar para si.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "mesma composição provisória, sem ilustração específica"
+    },
+    {
+      "id": "MQ02.ria.06",
+      "text": "Quem me dera conhecer sua localização exata. Talvez algum sábio ou estudioso saiba onde fica. Em suas profundezas úmidas repousa o primeiro fragmento do Cajado do Caos.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "mesma composição provisória, sem ilustração específica"
+    },
+    {
+      "id": "MQ02.ria.07",
+      "text": "Desejo-lhe sorte. Não creio que Tharn saiba de sua fuga, mas pouco mais posso fazer nesta forma. Tentei ocultar sua identidade com um feitiço; não sei quanto isso poderá proteger você.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "mesma composição provisória, sem ilustração específica"
+    },
+    {
+      "id": "MQ02.ria.08",
+      "text": "Tome cuidado: Tharn pode estar à sua procura. Siga com as bênçãos do verdadeiro Imperador e as minhas.",
+      "picture": "Arena_MQ02_Ria_piloto_v01",
+      "artStatus": "mesma composição provisória, sem ilustração específica"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "version": "orc-walk-v01",
+  "sources": [
+    {
+      "file": "art/masters/stonekeep-orc-walk-v01/sheet-v01.png",
+      "sha256": "fdbf1a3cad515fd9469bf196498cc5d2a4a2e352e3cd2c4f4d6f10e747f66315"
+    },
+    {
+      "file": "art/masters/stonekeep-orc-walk-v01/sheet-v02-stride.png",
+      "sha256": "a62760c31a71cc14a56d4e630c38e53aaac549084eb9555c2def4b2f8b5acf04"
+    },
+    {
+      "file": "art/masters/stonekeep-orc-walk-v01/east-stride-v04.png",
+      "sha256": "f39576f566d88b5c2b2e78a43103f5ddf1c098daedabd2f5dd55ca81995420f5"
+    },
+    {
+      "file": "art/masters/stonekeep-orc-walk-v01/sheet-v03-stride.png",
+      "sha256": "65fb15006f40e60bf57f9fd90fbbc32da5bea51a310d8cfca6d62ce543ae7c5b"
+    }
+  ],
+  "eastPatchRasterNormalization": 0.21836228287841192,
+  "normalizationBasis": "helmet width of neutral east source; no per-frame pose-fit rescaling",
+  "scale": 0.16666666666666666,
+  "cell": [
+    64,
+    64
+  ],
+  "ground": 62,
+  "rows": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "output": "img/characters/$Arena_orc_walk_v01.png",
+  "outputSHA256": "bcd2c759b409a1cf1f8cc4bd36ffaaeb4b17d77df89d9b82c479d1b9b5e31174",
+  "frames": [
+    {
+      "direction": 2,
+      "pattern": 0,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        82,
+        49,
+        297,
+        336
+      ],
+      "axis": 97.5,
+      "placement": [
+        16,
+        14
+      ],
+      "alphaBox": [
+        16,
+        14,
+        52,
+        62
+      ],
+      "sha256": "336b13b99d7686d749c8d845a498bf120b479b10e38d092e05216e05850e128c"
+    },
+    {
+      "direction": 2,
+      "pattern": 1,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        439,
+        49,
+        650,
+        316
+      ],
+      "axis": 105.0,
+      "placement": [
+        14,
+        18
+      ],
+      "alphaBox": [
+        14,
+        18,
+        49,
+        62
+      ],
+      "sha256": "86e61ac7b25444fe0e0d7bd48a647c77e045e9d9c848686d598ed9ac2cf9911a"
+    },
+    {
+      "direction": 2,
+      "pattern": 2,
+      "sourceFile": "sheet-v02-stride.png",
+      "sourceRect": [
+        824,
+        48,
+        1049,
+        351
+      ],
+      "axis": 104.5,
+      "placement": [
+        15,
+        12
+      ],
+      "alphaBox": [
+        15,
+        12,
+        53,
+        62
+      ],
+      "sha256": "2da2a12d36e48e8adddc004a0fb1feba6956fef2ffded6159037ac2e3f9a3dd4"
+    },
+    {
+      "direction": 4,
+      "pattern": 0,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        50,
+        378,
+        287,
+        659
+      ],
+      "axis": 132.0,
+      "placement": [
+        10,
+        15
+      ],
+      "alphaBox": [
+        10,
+        15,
+        50,
+        62
+      ],
+      "sha256": "dea45044726e140ebdf376346eedfb2bb8564086370c9dd240479e090e5da893"
+    },
+    {
+      "direction": 4,
+      "pattern": 1,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        437,
+        379,
+        619,
+        666
+      ],
+      "axis": 103.5,
+      "placement": [
+        15,
+        14
+      ],
+      "alphaBox": [
+        15,
+        14,
+        45,
+        62
+      ],
+      "sha256": "2bd0cf955d50b3c4bd4f068bbf44dc2e1cc3194c8150457dd2a0edc0bc8f0479"
+    },
+    {
+      "direction": 4,
+      "pattern": 2,
+      "sourceFile": "sheet-v02-stride.png",
+      "sourceRect": [
+        799,
+        389,
+        1030,
+        668
+      ],
+      "axis": 118.0,
+      "placement": [
+        12,
+        16
+      ],
+      "alphaBox": [
+        12,
+        16,
+        50,
+        62
+      ],
+      "sha256": "4e68532ec0b47a742d9e1ec3fdc884bffe435deaccd4e2ee0bd7911a804fe151"
+    },
+    {
+      "direction": 6,
+      "pattern": 0,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        73,
+        707,
+        309,
+        998
+      ],
+      "axis": 108.0,
+      "placement": [
+        14,
+        14
+      ],
+      "alphaBox": [
+        14,
+        14,
+        53,
+        62
+      ],
+      "sha256": "fab633fa8172c6462a5b1a70dc6939fe33920768ce92cba2ae52299a6aee73cc"
+    },
+    {
+      "direction": 6,
+      "pattern": 1,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        468,
+        710,
+        652,
+        990
+      ],
+      "axis": 87.0,
+      "placement": [
+        18,
+        15
+      ],
+      "alphaBox": [
+        18,
+        15,
+        49,
+        62
+      ],
+      "sha256": "29e60ba67115d5ba111d97c2ae56309949100f928672aa06fa0118642521387c"
+    },
+    {
+      "direction": 6,
+      "pattern": 2,
+      "sourceFile": "east-stride-v04.png",
+      "sourceRect": [
+        34,
+        107,
+        1005,
+        1373
+      ],
+      "axis": 116.0,
+      "placement": [
+        13,
+        16
+      ],
+      "alphaBox": [
+        13,
+        16,
+        48,
+        62
+      ],
+      "sha256": "0245ebc3780cdf626f70d7b67e2e8d7561b267ff4d58fed94bf9dc5cd4b8482b"
+    },
+    {
+      "direction": 8,
+      "pattern": 0,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        79,
+        1040,
+        336,
+        1376
+      ],
+      "axis": 105.0,
+      "placement": [
+        14,
+        6
+      ],
+      "alphaBox": [
+        14,
+        6,
+        57,
+        62
+      ],
+      "sha256": "b4781ea2a086e6669a06241a62825bcaa35b69cdd7821f16f2c4e61ae8873a09"
+    },
+    {
+      "direction": 8,
+      "pattern": 1,
+      "sourceFile": "sheet-v01.png",
+      "sourceRect": [
+        440,
+        1043,
+        691,
+        1324
+      ],
+      "axis": 103.0,
+      "placement": [
+        15,
+        15
+      ],
+      "alphaBox": [
+        15,
+        15,
+        57,
+        62
+      ],
+      "sha256": "94aa81b728604155c1334882d0c09c1a81a581666243bc766a2fb5076d9c65c5"
+    },
+    {
+      "direction": 8,
+      "pattern": 2,
+      "sourceFile": "sheet-v03-stride.png",
+      "sourceRect": [
+        820,
+        1096,
+        1079,
+        1432
+      ],
+      "axis": 114.0,
+      "placement": [
+        13,
+        6
+      ],
+      "alphaBox": [
+        13,
+        6,
+        56,
+        62
+      ],
+      "sha256": "a73f3fa42eb0d1c39522e0e27d15ffe1fbbe4cad1e08eeb98a804be1aeba98f3"
+    }
+  ],
+  "approval": "Owner explicitly approved Orc patrol delivered at6794a81; battle42b857f also approved. No balance, rewards or six B2 encounter approval inferred."
+}

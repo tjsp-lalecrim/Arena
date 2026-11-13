@@ -1,0 +1,39 @@
+{
+  "checks": [
+    "Clean native boot/hub,109 logical IDs, normal slots blocked; campaign Minotaur60EXP/gold25%6-60 separate from technical lab",
+    "Four inspection points route through the existing RAM hub without occupied landing tiles"
+  ],
+  "points": [
+    {
+      "name": "C2 central sul · orc e aranhas leste",
+      "position": [
+        180,
+        231
+      ]
+    },
+    {
+      "name": "C2 central sul · esqueleto",
+      "position": [
+        144,
+        231
+      ]
+    },
+    {
+      "name": "C2 central sul · ghouls",
+      "position": [
+        105,
+        228
+      ]
+    },
+    {
+      "name": "C2 central sul · aranha oeste",
+      "position": [
+        126,
+        240
+      ]
+    }
+  ],
+  "browser": "156.0.8078.80",
+  "errors": [],
+  "missing": []
+}

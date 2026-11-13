@@ -1,0 +1,110 @@
+{
+  "base": "73ae86e",
+  "applicationRevision": "coverage-r02",
+  "changedLayerEntriesSincePilot": 8267,
+  "mapSize": [
+    142,
+    103
+  ],
+  "eventsAndGeometry": "unchanged",
+  "assignment": {
+    "wall:?": 47,
+    "wall:B": 310,
+    "wall:D": 88,
+    "floor:S": 248,
+    "floor:R": 55,
+    "floor:M": 198,
+    "wall:A": 13,
+    "wall:L": 35,
+    "wall:K": 24,
+    "floor:?": 9
+  },
+  "reconstruction": {
+    "parent": "tools/build-rihad-arrival.cjs",
+    "stableOutputs": [
+      "data/Map008.json",
+      "data/Map009.json",
+      "data/Map010.json",
+      "data/Map011.json",
+      "data/Map012.json",
+      "data/MapInfos.json",
+      "data/Tilesets.json",
+      "data/ArenaStonekeep.json",
+      "data/ArenaRecovery.json",
+      "data/Items.json"
+    ]
+  },
+  "unchanged": [
+    {
+      "file": "data/Map008.json",
+      "comparison": "JSON structural equality (checkout line endings may differ)",
+      "workingSha256": "b8cf8132b69bb0898e22943b7e07886c2bfb41178f50d1c4bb6d2e7122686ef9"
+    },
+    {
+      "file": "data/Map009.json",
+      "comparison": "JSON structural equality (checkout line endings may differ)",
+      "workingSha256": "023cb31f363b6c26bb23aabfc92e3ecc9b9bc0429e0420a573d09fa892425d0f"
+    },
+    {
+      "file": "data/Map010.json",
+      "comparison": "JSON structural equality (checkout line endings may differ)",
+      "workingSha256": "5c7fbf47144e12ef5eee54f2192afa9ac1337f3e845c136f88db4c279c56605c"
+    },
+    {
+      "file": "data/Map011.json",
+      "comparison": "JSON structural equality (checkout line endings may differ)",
+      "workingSha256": "b87ed286bb3940c4792bba2838325b2e10886e9d972d76812010dac5af53c24f"
+    },
+    {
+      "file": "data/Tilesets.json",
+      "comparison": "JSON structural equality (checkout line endings may differ)",
+      "workingSha256": "5ecbfdb6bcebe43c3c3cda504b76601d1548689947ab041cf011591f72db3e23"
+    },
+    {
+      "file": "data/Items.json",
+      "comparison": "JSON structural equality (checkout line endings may differ)",
+      "workingSha256": "9fa45c1ac5a91395ad85c75d97c67a83d8e997ee44ee7e90913437625566e746"
+    },
+    {
+      "file": "js/plugins.js",
+      "comparison": "text equality normalized LF",
+      "workingSha256": "9fd3b415ccd7e2cab968430127a0b322d16b8adbe1db612ab070b58a768f304d"
+    },
+    {
+      "file": "img/tilesets/Arena_Shared_Castle_Stone_V01_C.png",
+      "comparison": "binary sha256",
+      "workingSha256": "2c88cd935b7a56ad4fcde0675ea410020c692d678f45fd2b146c596e5c3892fd"
+    },
+    {
+      "file": "img/tilesets/Arena_Water_M14_R02_A1.png",
+      "comparison": "binary sha256",
+      "workingSha256": "9169e7d999e9d1e880cc76b2a705815b91b3f00b9a874dd031c5e421a0078de4"
+    },
+    {
+      "file": "art/masters/stonekeep-v01/brown-wall.png",
+      "comparison": "binary sha256",
+      "workingSha256": "a674e4c2f001fb0deb88f271d1761dce4045aadbaba661789ea4b4fa85652f02"
+    },
+    {
+      "file": "art/masters/stonekeep-v01/light-wall.png",
+      "comparison": "binary sha256",
+      "workingSha256": "7d8ef3094c05c9f10bbe8b7069e74b321b90db2253c198216f2b44412e923199"
+    },
+    {
+      "file": "art/masters/stonekeep-v01/mottled-floor.png",
+      "comparison": "binary sha256",
+      "workingSha256": "2f2db792a8a8002952c84307b3e0548370dffd6d36c5d7071c5bb1be02818f88"
+    },
+    {
+      "file": "art/masters/stonekeep-v01/pale-slabs.png",
+      "comparison": "binary sha256",
+      "workingSha256": "187f7418c76cc1db83fa72cafbf9249561df63ce7b8d66d50011547b60ffc25a"
+    },
+    {
+      "file": "art/masters/stonekeep-v01/shore.png",
+      "comparison": "binary sha256",
+      "workingSha256": "5614f0122cab1ac719e0d50c836052744adaf0db3db3d34833fd7dbf4dae9050"
+    }
+  ],
+  "limits": "No fresh editor or mobile test; visual direction approval only for five V01 materials"
+}

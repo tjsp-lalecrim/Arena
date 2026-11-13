@@ -1,0 +1,3031 @@
+{
+  "base": "901dfcb",
+  "mapId": 15,
+  "implemented": 31,
+  "total": 180,
+  "remaining": 149,
+  "implementedDoors": 4,
+  "totalDoors": 70,
+  "sectors": [
+    {
+      "sector": "A1",
+      "implemented": 12,
+      "total": 14
+    },
+    {
+      "sector": "A2",
+      "implemented": 19,
+      "total": 19
+    },
+    {
+      "sector": "A3",
+      "implemented": 0,
+      "total": 19
+    },
+    {
+      "sector": "B1",
+      "implemented": 0,
+      "total": 10
+    },
+    {
+      "sector": "B2",
+      "implemented": 0,
+      "total": 25
+    },
+    {
+      "sector": "B3",
+      "implemented": 0,
+      "total": 20
+    },
+    {
+      "sector": "C1",
+      "implemented": 0,
+      "total": 19
+    },
+    {
+      "sector": "C2",
+      "implemented": 0,
+      "total": 32
+    },
+    {
+      "sector": "C3",
+      "implemented": 0,
+      "total": 22
+    }
+  ],
+  "entries": [
+    {
+      "original": [
+        61,
+        2
+      ],
+      "view": [
+        28,
+        2
+      ],
+      "sector": "A1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.passage.skeleton.01",
+      "map015": [
+        87,
+        9
+      ]
+    },
+    {
+      "original": [
+        62,
+        2
+      ],
+      "view": [
+        27,
+        2
+      ],
+      "sector": "A1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.passage.skeleton.02",
+      "map015": [
+        84,
+        9
+      ]
+    },
+    {
+      "original": [
+        82,
+        2
+      ],
+      "view": [
+        7,
+        2
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        60,
+        3
+      ],
+      "view": [
+        29,
+        3
+      ],
+      "sector": "A1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.passage.skeleton.03",
+      "map015": [
+        90,
+        12
+      ]
+    },
+    {
+      "original": [
+        83,
+        3
+      ],
+      "view": [
+        6,
+        3
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        56,
+        4
+      ],
+      "view": [
+        33,
+        4
+      ],
+      "sector": "A2",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.passage.skeleton.04",
+      "map015": [
+        102,
+        15
+      ]
+    },
+    {
+      "original": [
+        62,
+        4
+      ],
+      "view": [
+        27,
+        4
+      ],
+      "sector": "A1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.passage.skeleton.05",
+      "map015": [
+        84,
+        15
+      ]
+    },
+    {
+      "original": [
+        18,
+        5
+      ],
+      "view": [
+        71,
+        5
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        56,
+        5
+      ],
+      "view": [
+        33,
+        5
+      ],
+      "sector": "A2",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.passage.skeleton.06",
+      "map015": [
+        102,
+        18
+      ]
+    },
+    {
+      "original": [
+        61,
+        5
+      ],
+      "view": [
+        28,
+        5
+      ],
+      "sector": "A1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.passage.skeleton.07",
+      "map015": [
+        87,
+        18
+      ]
+    },
+    {
+      "original": [
+        10,
+        6
+      ],
+      "view": [
+        79,
+        6
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        16,
+        6
+      ],
+      "view": [
+        73,
+        6
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        20,
+        6
+      ],
+      "view": [
+        69,
+        6
+      ],
+      "sector": "A3",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        20,
+        7
+      ],
+      "view": [
+        69,
+        7
+      ],
+      "sector": "A3",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        20,
+        10
+      ],
+      "view": [
+        69,
+        10
+      ],
+      "sector": "A3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        32,
+        11
+      ],
+      "view": [
+        57,
+        11
+      ],
+      "sector": "A2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.a2east.rat.01",
+      "map015": [
+        174,
+        36
+      ]
+    },
+    {
+      "original": [
+        44,
+        11
+      ],
+      "view": [
+        45,
+        11
+      ],
+      "sector": "A2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.apartments.rat.01",
+      "map015": [
+        138,
+        36
+      ]
+    },
+    {
+      "original": [
+        17,
+        12
+      ],
+      "view": [
+        72,
+        12
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        44,
+        12
+      ],
+      "view": [
+        45,
+        12
+      ],
+      "sector": "A2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.apartments.rat.02",
+      "map015": [
+        138,
+        39
+      ]
+    },
+    {
+      "original": [
+        18,
+        13
+      ],
+      "view": [
+        71,
+        13
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        29,
+        13
+      ],
+      "view": [
+        60,
+        13
+      ],
+      "sector": "A3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        43,
+        13
+      ],
+      "view": [
+        46,
+        13
+      ],
+      "sector": "A2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.apartments.rat.03",
+      "map015": [
+        141,
+        42
+      ]
+    },
+    {
+      "original": [
+        30,
+        14
+      ],
+      "view": [
+        59,
+        14
+      ],
+      "sector": "A2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.a2east.rat.02",
+      "map015": [
+        180,
+        45
+      ]
+    },
+    {
+      "original": [
+        9,
+        15
+      ],
+      "view": [
+        80,
+        15
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        11,
+        15
+      ],
+      "view": [
+        78,
+        15
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        8,
+        16
+      ],
+      "view": [
+        81,
+        16
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        28,
+        16
+      ],
+      "view": [
+        61,
+        16
+      ],
+      "sector": "A3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        30,
+        16
+      ],
+      "view": [
+        59,
+        16
+      ],
+      "sector": "A2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.a2east.rat.03",
+      "map015": [
+        180,
+        51
+      ]
+    },
+    {
+      "original": [
+        52,
+        16
+      ],
+      "view": [
+        37,
+        16
+      ],
+      "sector": "A2",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.apartments.wolf.01",
+      "map015": [
+        114,
+        51
+      ]
+    },
+    {
+      "original": [
+        24,
+        17
+      ],
+      "view": [
+        65,
+        17
+      ],
+      "sector": "A3",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        26,
+        17
+      ],
+      "view": [
+        63,
+        17
+      ],
+      "sector": "A3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        28,
+        17
+      ],
+      "view": [
+        61,
+        17
+      ],
+      "sector": "A3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        44,
+        17
+      ],
+      "view": [
+        45,
+        17
+      ],
+      "sector": "A2",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.apartments.wolf.02",
+      "map015": [
+        138,
+        54
+      ]
+    },
+    {
+      "original": [
+        49,
+        17
+      ],
+      "view": [
+        40,
+        17
+      ],
+      "sector": "A2",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.apartments.wolf.03",
+      "map015": [
+        123,
+        54
+      ]
+    },
+    {
+      "original": [
+        50,
+        17
+      ],
+      "view": [
+        39,
+        17
+      ],
+      "sector": "A2",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.apartments.wolf.04",
+      "map015": [
+        120,
+        54
+      ]
+    },
+    {
+      "original": [
+        70,
+        18
+      ],
+      "view": [
+        19,
+        18
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.island.ghoul.01",
+      "map015": [
+        60,
+        57
+      ]
+    },
+    {
+      "original": [
+        73,
+        19
+      ],
+      "view": [
+        16,
+        19
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.island.ghoul.02",
+      "map015": [
+        51,
+        60
+      ]
+    },
+    {
+      "original": [
+        78,
+        19
+      ],
+      "view": [
+        11,
+        19
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.island.ghoul.03",
+      "map015": [
+        36,
+        60
+      ]
+    },
+    {
+      "original": [
+        8,
+        21
+      ],
+      "view": [
+        81,
+        21
+      ],
+      "sector": "A3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        29,
+        21
+      ],
+      "view": [
+        60,
+        21
+      ],
+      "sector": "A3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        37,
+        21
+      ],
+      "view": [
+        52,
+        21
+      ],
+      "sector": "A2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.legacycrop.goblin.01",
+      "map015": [
+        159,
+        66
+      ]
+    },
+    {
+      "original": [
+        41,
+        21
+      ],
+      "view": [
+        48,
+        21
+      ],
+      "sector": "A2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.legacycrop.goblin.02",
+      "map015": [
+        147,
+        66
+      ]
+    },
+    {
+      "original": [
+        74,
+        21
+      ],
+      "view": [
+        15,
+        21
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.island.ghoul.04",
+      "map015": [
+        48,
+        66
+      ]
+    },
+    {
+      "original": [
+        76,
+        22
+      ],
+      "view": [
+        13,
+        22
+      ],
+      "sector": "A1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.legacycrop.skeleton.01",
+      "map015": [
+        42,
+        69
+      ]
+    },
+    {
+      "original": [
+        35,
+        23
+      ],
+      "view": [
+        54,
+        23
+      ],
+      "sector": "A2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.a2east.goblin.01",
+      "map015": [
+        165,
+        72
+      ]
+    },
+    {
+      "original": [
+        38,
+        23
+      ],
+      "view": [
+        51,
+        23
+      ],
+      "sector": "A2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.legacycrop.goblin.03",
+      "map015": [
+        156,
+        72
+      ]
+    },
+    {
+      "original": [
+        39,
+        23
+      ],
+      "view": [
+        50,
+        23
+      ],
+      "sector": "A2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.legacycrop.goblin.04",
+      "map015": [
+        153,
+        72
+      ]
+    },
+    {
+      "original": [
+        40,
+        23
+      ],
+      "view": [
+        49,
+        23
+      ],
+      "sector": "A2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.legacycrop.goblin.05",
+      "map015": [
+        150,
+        72
+      ]
+    },
+    {
+      "original": [
+        42,
+        23
+      ],
+      "view": [
+        47,
+        23
+      ],
+      "sector": "A2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.legacycrop.goblin.06",
+      "map015": [
+        144,
+        72
+      ]
+    },
+    {
+      "original": [
+        75,
+        27
+      ],
+      "view": [
+        14,
+        27
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.island.ghoul.05",
+      "map015": [
+        45,
+        84
+      ]
+    },
+    {
+      "original": [
+        20,
+        28
+      ],
+      "view": [
+        69,
+        28
+      ],
+      "sector": "A3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        72,
+        28
+      ],
+      "view": [
+        17,
+        28
+      ],
+      "sector": "A1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": true,
+      "logicalId": "stonekeep.island.ghoul.06",
+      "map015": [
+        54,
+        87
+      ]
+    },
+    {
+      "original": [
+        12,
+        30
+      ],
+      "view": [
+        77,
+        30
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        14,
+        30
+      ],
+      "view": [
+        75,
+        30
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        18,
+        30
+      ],
+      "view": [
+        71,
+        30
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        8,
+        33
+      ],
+      "view": [
+        81,
+        33
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        12,
+        34
+      ],
+      "view": [
+        77,
+        34
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        19,
+        34
+      ],
+      "view": [
+        70,
+        34
+      ],
+      "sector": "B3",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        25,
+        36
+      ],
+      "view": [
+        64,
+        36
+      ],
+      "sector": "B3",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        48,
+        37
+      ],
+      "view": [
+        41,
+        37
+      ],
+      "sector": "B2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        49,
+        37
+      ],
+      "view": [
+        40,
+        37
+      ],
+      "sector": "B2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        50,
+        37
+      ],
+      "view": [
+        39,
+        37
+      ],
+      "sector": "B2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        58,
+        37
+      ],
+      "view": [
+        31,
+        37
+      ],
+      "sector": "B2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        8,
+        38
+      ],
+      "view": [
+        81,
+        38
+      ],
+      "sector": "B3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        40,
+        38
+      ],
+      "view": [
+        49,
+        38
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        58,
+        38
+      ],
+      "view": [
+        31,
+        38
+      ],
+      "sector": "B2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        9,
+        39
+      ],
+      "view": [
+        80,
+        39
+      ],
+      "sector": "B3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        41,
+        39
+      ],
+      "view": [
+        48,
+        39
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        20,
+        40
+      ],
+      "view": [
+        69,
+        40
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        36,
+        40
+      ],
+      "view": [
+        53,
+        40
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        47,
+        40
+      ],
+      "view": [
+        42,
+        40
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        9,
+        41
+      ],
+      "view": [
+        80,
+        41
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        11,
+        41
+      ],
+      "view": [
+        78,
+        41
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        31,
+        41
+      ],
+      "view": [
+        58,
+        41
+      ],
+      "sector": "B2",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        48,
+        41
+      ],
+      "view": [
+        41,
+        41
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        29,
+        44
+      ],
+      "view": [
+        60,
+        44
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        29,
+        45
+      ],
+      "view": [
+        60,
+        45
+      ],
+      "sector": "B3",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        34,
+        46
+      ],
+      "view": [
+        55,
+        46
+      ],
+      "sector": "B2",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        43,
+        46
+      ],
+      "view": [
+        46,
+        46
+      ],
+      "sector": "B2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        44,
+        46
+      ],
+      "view": [
+        45,
+        46
+      ],
+      "sector": "B2",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        46,
+        46
+      ],
+      "view": [
+        43,
+        46
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        48,
+        46
+      ],
+      "view": [
+        41,
+        46
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        34,
+        47
+      ],
+      "view": [
+        55,
+        47
+      ],
+      "sector": "B2",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        46,
+        47
+      ],
+      "view": [
+        43,
+        47
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        67,
+        47
+      ],
+      "view": [
+        22,
+        47
+      ],
+      "sector": "B1",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        68,
+        47
+      ],
+      "view": [
+        21,
+        47
+      ],
+      "sector": "B1",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        68,
+        48
+      ],
+      "view": [
+        21,
+        48
+      ],
+      "sector": "B1",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        45,
+        51
+      ],
+      "view": [
+        44,
+        51
+      ],
+      "sector": "B2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        38,
+        52
+      ],
+      "view": [
+        51,
+        52
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        44,
+        52
+      ],
+      "view": [
+        45,
+        52
+      ],
+      "sector": "B2",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        25,
+        53
+      ],
+      "view": [
+        64,
+        53
+      ],
+      "sector": "B3",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        25,
+        54
+      ],
+      "view": [
+        64,
+        54
+      ],
+      "sector": "B3",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        55,
+        54
+      ],
+      "view": [
+        34,
+        54
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        67,
+        54
+      ],
+      "view": [
+        22,
+        54
+      ],
+      "sector": "B1",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        72,
+        54
+      ],
+      "view": [
+        17,
+        54
+      ],
+      "sector": "B1",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        58,
+        55
+      ],
+      "view": [
+        31,
+        55
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        64,
+        55
+      ],
+      "view": [
+        25,
+        55
+      ],
+      "sector": "B1",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        3,
+        56
+      ],
+      "view": [
+        86,
+        56
+      ],
+      "sector": "B3",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        40,
+        56
+      ],
+      "view": [
+        49,
+        56
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        64,
+        56
+      ],
+      "view": [
+        25,
+        56
+      ],
+      "sector": "B1",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        4,
+        57
+      ],
+      "view": [
+        85,
+        57
+      ],
+      "sector": "B3",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        67,
+        57
+      ],
+      "view": [
+        22,
+        57
+      ],
+      "sector": "B1",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        71,
+        57
+      ],
+      "view": [
+        18,
+        57
+      ],
+      "sector": "B1",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        38,
+        58
+      ],
+      "view": [
+        51,
+        58
+      ],
+      "sector": "B2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        16,
+        59
+      ],
+      "view": [
+        73,
+        59
+      ],
+      "sector": "B3",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        17,
+        59
+      ],
+      "view": [
+        72,
+        59
+      ],
+      "sector": "B3",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        64,
+        59
+      ],
+      "view": [
+        25,
+        59
+      ],
+      "sector": "B1",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        71,
+        60
+      ],
+      "view": [
+        18,
+        60
+      ],
+      "sector": "C1",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        22,
+        61
+      ],
+      "view": [
+        67,
+        61
+      ],
+      "sector": "C3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        24,
+        61
+      ],
+      "view": [
+        65,
+        61
+      ],
+      "sector": "C3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        62,
+        61
+      ],
+      "view": [
+        27,
+        61
+      ],
+      "sector": "C1",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        5,
+        62
+      ],
+      "view": [
+        84,
+        62
+      ],
+      "sector": "C3",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        23,
+        62
+      ],
+      "view": [
+        66,
+        62
+      ],
+      "sector": "C3",
+      "species": "rato",
+      "resource": "RAT.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        56,
+        62
+      ],
+      "view": [
+        33,
+        62
+      ],
+      "sector": "C2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        38,
+        63
+      ],
+      "view": [
+        51,
+        63
+      ],
+      "sector": "C2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        42,
+        63
+      ],
+      "view": [
+        47,
+        63
+      ],
+      "sector": "C2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        7,
+        64
+      ],
+      "view": [
+        82,
+        64
+      ],
+      "sector": "C3",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        27,
+        64
+      ],
+      "view": [
+        62,
+        64
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        28,
+        64
+      ],
+      "view": [
+        61,
+        64
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        40,
+        64
+      ],
+      "view": [
+        49,
+        64
+      ],
+      "sector": "C2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        46,
+        64
+      ],
+      "view": [
+        43,
+        64
+      ],
+      "sector": "C2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        28,
+        65
+      ],
+      "view": [
+        61,
+        65
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        42,
+        65
+      ],
+      "view": [
+        47,
+        65
+      ],
+      "sector": "C2",
+      "species": "goblin",
+      "resource": "GOBLIN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        46,
+        65
+      ],
+      "view": [
+        43,
+        65
+      ],
+      "sector": "C2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        86,
+        65
+      ],
+      "view": [
+        3,
+        65
+      ],
+      "sector": "C1",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        6,
+        67
+      ],
+      "view": [
+        83,
+        67
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        86,
+        67
+      ],
+      "view": [
+        3,
+        67
+      ],
+      "sector": "C1",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        5,
+        68
+      ],
+      "view": [
+        84,
+        68
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        5,
+        69
+      ],
+      "view": [
+        84,
+        69
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        33,
+        69
+      ],
+      "view": [
+        56,
+        69
+      ],
+      "sector": "C2",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        53,
+        69
+      ],
+      "view": [
+        36,
+        69
+      ],
+      "sector": "C2",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        70,
+        69
+      ],
+      "view": [
+        19,
+        69
+      ],
+      "sector": "C1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        20,
+        70
+      ],
+      "view": [
+        69,
+        70
+      ],
+      "sector": "C3",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        34,
+        70
+      ],
+      "view": [
+        55,
+        70
+      ],
+      "sector": "C2",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        48,
+        70
+      ],
+      "view": [
+        41,
+        70
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        69,
+        70
+      ],
+      "view": [
+        20,
+        70
+      ],
+      "sector": "C1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        78,
+        70
+      ],
+      "view": [
+        11,
+        70
+      ],
+      "sector": "C1",
+      "species": "ogro",
+      "resource": "OGRE.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        21,
+        71
+      ],
+      "view": [
+        68,
+        71
+      ],
+      "sector": "C3",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        33,
+        71
+      ],
+      "view": [
+        56,
+        71
+      ],
+      "sector": "C2",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        48,
+        71
+      ],
+      "view": [
+        41,
+        71
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        43,
+        72
+      ],
+      "view": [
+        46,
+        72
+      ],
+      "sector": "C2",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        28,
+        73
+      ],
+      "view": [
+        61,
+        73
+      ],
+      "sector": "C3",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        29,
+        73
+      ],
+      "view": [
+        60,
+        73
+      ],
+      "sector": "C3",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        82,
+        73
+      ],
+      "view": [
+        7,
+        73
+      ],
+      "sector": "C1",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        43,
+        74
+      ],
+      "view": [
+        46,
+        74
+      ],
+      "sector": "C2",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        81,
+        74
+      ],
+      "view": [
+        8,
+        74
+      ],
+      "sector": "C1",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        30,
+        75
+      ],
+      "view": [
+        59,
+        75
+      ],
+      "sector": "C2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        42,
+        75
+      ],
+      "view": [
+        47,
+        75
+      ],
+      "sector": "C2",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        56,
+        75
+      ],
+      "view": [
+        33,
+        75
+      ],
+      "sector": "C2",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        82,
+        75
+      ],
+      "view": [
+        7,
+        75
+      ],
+      "sector": "C1",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        55,
+        76
+      ],
+      "view": [
+        34,
+        76
+      ],
+      "sector": "C2",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        64,
+        76
+      ],
+      "view": [
+        25,
+        76
+      ],
+      "sector": "C1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        5,
+        77
+      ],
+      "view": [
+        84,
+        77
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        14,
+        77
+      ],
+      "view": [
+        75,
+        77
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        64,
+        77
+      ],
+      "view": [
+        25,
+        77
+      ],
+      "sector": "C1",
+      "species": "esqueleto",
+      "resource": "SKELETON.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        5,
+        78
+      ],
+      "view": [
+        84,
+        78
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        12,
+        78
+      ],
+      "view": [
+        77,
+        78
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        13,
+        78
+      ],
+      "view": [
+        76,
+        78
+      ],
+      "sector": "C3",
+      "species": "homem-lagarto",
+      "resource": "LIZRDMAN.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        30,
+        78
+      ],
+      "view": [
+        59,
+        78
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        31,
+        78
+      ],
+      "view": [
+        58,
+        78
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        47,
+        79
+      ],
+      "view": [
+        42,
+        79
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        86,
+        79
+      ],
+      "view": [
+        3,
+        79
+      ],
+      "sector": "C1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        30,
+        80
+      ],
+      "view": [
+        59,
+        80
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        86,
+        80
+      ],
+      "view": [
+        3,
+        80
+      ],
+      "sector": "C1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        23,
+        81
+      ],
+      "view": [
+        66,
+        81
+      ],
+      "sector": "C3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        59,
+        81
+      ],
+      "view": [
+        30,
+        81
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        85,
+        81
+      ],
+      "view": [
+        4,
+        81
+      ],
+      "sector": "C1",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        23,
+        82
+      ],
+      "view": [
+        66,
+        82
+      ],
+      "sector": "C3",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        61,
+        82
+      ],
+      "view": [
+        28,
+        82
+      ],
+      "sector": "C1",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        37,
+        83
+      ],
+      "view": [
+        52,
+        83
+      ],
+      "sector": "C2",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        36,
+        84
+      ],
+      "view": [
+        53,
+        84
+      ],
+      "sector": "C2",
+      "species": "ghoul",
+      "resource": "GHOUL.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        45,
+        84
+      ],
+      "view": [
+        44,
+        84
+      ],
+      "sector": "C2",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        48,
+        84
+      ],
+      "view": [
+        41,
+        84
+      ],
+      "sector": "C2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        49,
+        84
+      ],
+      "view": [
+        40,
+        84
+      ],
+      "sector": "C2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        44,
+        85
+      ],
+      "view": [
+        45,
+        85
+      ],
+      "sector": "C2",
+      "species": "lobo",
+      "resource": "WOLF.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        48,
+        85
+      ],
+      "view": [
+        41,
+        85
+      ],
+      "sector": "C2",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        59,
+        85
+      ],
+      "view": [
+        30,
+        85
+      ],
+      "sector": "C2",
+      "species": "aranha",
+      "resource": "SPIDER.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        75,
+        85
+      ],
+      "view": [
+        14,
+        85
+      ],
+      "sector": "C1",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        76,
+        85
+      ],
+      "view": [
+        13,
+        85
+      ],
+      "sector": "C1",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    },
+    {
+      "original": [
+        75,
+        86
+      ],
+      "view": [
+        14,
+        86
+      ],
+      "sector": "C1",
+      "species": "orc",
+      "resource": "ORC.DFA",
+      "implemented": false,
+      "logicalId": null,
+      "map015": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Arena_LizardPatrol0.1.0
+
+Após Arena_Orc/DebugHub/Continuation/CampaignConfig/Encounters/Battle/Loot; sem biblioteca externa. Carrega `ArenaLizardPatrol.json`, valida Enemy3/Troop3/perfil e sala. Não cadastra inimigo/ação/recompensa de campanha. `startLab()` usa previewArrival/fixture e preparo de batalha existentes, nível2/recursos completos somente na sessão. Hub registra `arenaLizardPatrol`, categoria Campanha e mapas; título permanece com uma entrada técnica.
+
+Flag `_arenaLizardPatrolSession` + laboratório ativo delimitam os adaptadores `forMap/encounters`. Antes da montagem nativa, cria visão privada de `$dataMap` para Map016: cópia de um evento, nome e ID/script técnicos. Valida a nota da sala original ou sua cópia própria; não substitui mapas desconhecidos ou escreve no disco. RAM/retorno de batalha reaplicam essa visão; nova carga do orc usa o arquivo original intacto. Área/ID `technical.stonekeep.lizard.walk` não colidem com campanha/orc. Núcleo de encontros mantém patrulha/contato/derrota/recibos; núcleo de persistência mantém Guardar/Carregar RAM e bloqueio dos slots.
+
+Somente em contexto ativo/mapa técnico, `Game_Enemy.exp`/`ArenaLoot.tableForEnemy` retornam0/tabela vazia para Enemy3; fora dele delegam integralmente aos métodos anteriores. Não alteram `$dataEnemies`, `$arenaLoot` ou recibos existentes. Saída ao título remove contexto. Regressão verifica o contrato normal e reentrada no orc depois da inspeção.
+
+Exportador `tools/export-stonekeep-lizard-walk.py`, PNG `$Arena_lizard_man_walk_v01` de288×384/células96×96, densidade única e compensação `groundByDirection` já suportada por Arena_Encounters. Sem novo mapa, motor, classe jogável ou fallback de Argoniano. Fonte/âncoras, parâmetros preservados, acesso e testes em [HOMEM_LAGARTO_M02.md](../HOMEM_LAGARTO_M02.md).

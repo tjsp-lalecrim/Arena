@@ -80,7 +80,7 @@ var ArenaRecovery;
     };
     function pilot(){return $arenaRecovery.restPoints.filter(function(p){return p.dungeonPilot;})[0];}
     function nearestRefuge(){
-        var points=$arenaRecovery.restPoints.filter(function(p){return (p.dungeonPilot||p.dungeonRefuge)&&p.mapId===$gameMap.mapId()&&$gameMap.event(p.eventId)&&!$gameMap.event(p.eventId)._erased;});
+        var points=$arenaRecovery.restPoints.filter(function(p){return (p.dungeonPilot||p.dungeonRefuge||p.authorizedRefuge)&&p.mapId===$gameMap.mapId()&&$gameMap.event(p.eventId)&&!$gameMap.event(p.eventId)._erased;});
         points.sort(function(a,b){return $gameMap.distance($gamePlayer.x,$gamePlayer.y,a.x,a.y)-$gameMap.distance($gamePlayer.x,$gamePlayer.y,b.x,b.y)||a.eventId-b.eventId;});
         return points[0];
     }
@@ -92,7 +92,7 @@ var ArenaRecovery;
         ArenaPersistence.setResource('vigor',20,ArenaResources.snapshot().vigor.maximum);
     };
     function syncRestEvents(){
-        $arenaRecovery.restPoints.forEach(function(p){if((p.dungeonPilot||p.dungeonRefuge)&&$gameMap.mapId()===p.mapId&&!$gameMap.event(p.eventId)&&$dataMap.events[p.eventId])$gameMap._events[p.eventId]=new Game_Event(p.mapId,p.eventId);});
+        $arenaRecovery.restPoints.forEach(function(p){if((p.dungeonPilot||p.dungeonRefuge||p.authorizedRefuge)&&$gameMap.mapId()===p.mapId&&!$gameMap.event(p.eventId)&&$dataMap.events[p.eventId])$gameMap._events[p.eventId]=new Game_Event(p.mapId,p.eventId);});
     }
     var mapLoaded=Scene_Map.prototype.onMapLoaded;
     Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring())syncRestEvents();mapLoaded.apply(this,arguments);};

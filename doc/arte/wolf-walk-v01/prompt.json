@@ -1,0 +1,28 @@
+{
+  "version": "wolf-walk-v01",
+  "tool": "built-in image_gen",
+  "prompt": "ONE walking spritesheet, SAME ordinary Arena wolf as approved identity reference1. Ref1 locks dark charcoal-grey fur, broad pale-grey muzzle/cheeks, black nose, red eyes, pointed ears, thick shoulder/neck ruff, lean muscular quadruped body and low bushy tail, and dark fantasy painterly finish. Reference2 is original ordinary WOLF01/02/03/04/05.CFA first poses: identity/colour/front/back anatomy evidence, not target camera or pixel style. Do not copy pixelation; do not make a snow wolf, pet dog, werewolf or generic different animal.\nCreate exactly12 FULL quadruped figures, in a very regular THREE COLUMN by FOUR ROW portrait sheet (ideally1024x1536). Actual TRANSPARENT ALPHA. NO background, floor, pedestal, drop shadows, grid, text, labels, numbers or extra animals/objects. Very generous transparent gutters and margin in every cell; every nose, ear, paw and tail fully inside the image. Consistent anatomy, markings and density, restrained overhead-left lighting. Never resize individual poses to fill cells. Equal physical scale across directions: side views are naturally wider, front/back views naturally taller.\nCamera: orthogonal TOP-DOWN game-map view from above (approximately60degrees elevation), see the TOP of skull, back and shoulders. NOT side-view battle, not isometric or diagonal facing. Four cardinal orientations for native RPG Maker grid movement. Row1 SOUTH walking toward bottom of image: face/muzzle toward viewer-bottom, top of back visible behind, tail away/up. Row2 WEST: face to image-left, tail to image-right, body axis exactly horizontal in map plane, top of back visible. Row3 EAST: face image-right, tail image-left, same overhead projection, independently coherent lighting/anatomy, do not simply mirror west. Row4 NORTH walking away/top: back of head/ears and back visible, muzzle/eyes NOT turned around, tail toward bottom/viewer. Body and head follow same direction naturally.\nThree columns of real gait for EACH direction: LEFT=fore-left plus hind-right advance in a diagonal walking step, MIDDLE=compact NEUTRAL support with all FOUR PAWS GROUNDED and relaxed slightly bent joints, RIGHT=fore-right plus hind-left advance, opposing stride. Four anatomically coherent legs always, correct canine hock joints, no human limbs, extra limbs, reversed joints or interchanged leg lengths. Neutral is true stationary support; no lifted knee or hovering paws. Stride phases must articulate shoulders/hips/paws and counterbalance tail, not merely translate the same image. Feet supported on same implied ground plane within each row, torso/hips position and canvas pivot remain stable while legs move. Keep stride compact for64px final native cells, maximum body extent about56px including tail. Clear readable silhouette at that size.\nOnly this one wolf and twelve walking/neutral drawings. No bite, hurt, death, variants, scenery, collar, clothing or weapon. Preserve approved identity and finish while adapting camera correctly; no change to existing battle artwork.",
+  "references": [
+    {
+      "file": "tmp/wolf-walk-review/approved-identity.png",
+      "derivedFrom": "art/masters/stonekeep-wolf-v01/sheet-v01.png",
+      "sourceRect": [
+        9,
+        138,
+        261,
+        284
+      ],
+      "role": "approved identity/style only",
+      "sha256": "31336b1a31eb571d827c5b54743b5301f6a13629c355458adefe38ea5d79340d"
+    },
+    {
+      "file": "tmp/wolf-walk-review/original-angles.png",
+      "role": "ordinary original WOLF01/02/03/04/05.CFA consultation, not target map camera",
+      "sha256": "b900db835c8815e0d1a352ec1dd8f2b4e321f415d0cdf2d6381f7c1b0fc6f4b2"
+    }
+  ],
+  "master": "art/masters/stonekeep-wolf-walk-v01/sheet-v01.png",
+  "approval": "Owner approved patrol of d27eb5f; battle aaea451 approval preserved. No implied approval of group, balance or rewards.",
+  "coverage": "12 actual directional walking drawings, one new specimen, no battle edit or variants",
+  "masterSha256": "5b7881bedabbf70d49e85f735ee6f5fff411eac78b4556103e3338cf71d6be50"
+}

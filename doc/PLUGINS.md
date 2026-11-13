@@ -1,3 +1,51 @@
+## Homem-lagarto M02 — caminhada e exemplar RAM
+
+Arena_LizardPatrol0.1.0: Enemy3/Troop3/batalha R03 preservados;12poses, uma área de inspeção privada no Map016 reutilizado. Sem distribuição de campanha; EXP/loot normais restaurados fora do contexto. [Contrato](plugins/Arena_LizardPatrol.md), [fontes/arte/testes](HOMEM_LAGARTO_M02.md).
+
+## Orc M02 — piloto de batalha RAM
+
+Arena_Orc0.2.0: Enemy7/Troop8/batalha aprovada preservados; doze poses e um exemplar de patrulha Map016/RAM, contrato de área somente na sessão. Reutiliza preparo, encontros, combate, isolamento e hub. Sem distribuição dos seis B2/recompensas de campanha. [Contrato](plugins/Arena_Orc.md), [fontes/arte/testes](ORC_M02.md).
+
+## Acessos de Stonekeep — consumidor explícito Map015
+
+Arena_StonekeepAccess0.2.0 após Arena_StonekeepWhole: cinco fechaduras comuns verificadas, ação de força determinística adaptada, estado A/B nativo e cobertura visual local do corredor seco suspenso. Sem chaves fictícias, flags globais alteradas, novo namespace ou alterações no motor/MQ01. [Contrato e diferenças do original](plugins/Arena_StonekeepAccess.md). Contagens históricas abaixo não substituem js/plugins.js.
+
+## Ghoul M02 — piloto de batalha
+
+Arena_Ghoul0.2.0 após Arena_DebugHub: um encontro de ilha e dois acessos RAM pela API do hub, sem comando adicional no título. Enemy5/Troop6 e batalha aprovada intactos; caminhada nova, recompensas de campanha explícitas e tabela vazia por instância somente na antiga batalha técnica. Sem doença/grupo. Pequeno seletor ArenaLoot.tableForEnemy mantém um único pipeline de concessão. [Contrato](plugins/Arena_Ghoul.md), [fontes/arte/testes](GHOUL_M02.md). Contagens anteriores abaixo são históricas; consultar js/plugins.js para a lista real.
+
+## Hub técnico M02 — estado vigente
+
+Arena_DebugHub0.1.0 após os provedores existentes: registro central de22 acessos, título com uma entrada técnica, sem copiar fixtures. Configuração explícita e perfil jogador desabilitado no empacotamento; namespace e regras de salvamento anteriores intactos. [Contrato, inventário, caminhos e verificações](plugins/Arena_DebugHub.md). Formato MV canônico e registros anteriores preservados. Contagens abaixo são históricas.
+
+## Stonekeep M02-04 — estado vigente
+
+Arena_Stonekeep0.1.0 acrescentado após43 registros anteriores integralmente preservados (total44). [Configuração/API/dependências](plugins/Arena_Stonekeep.md): rota real, fonte existente vinculada, fixture RAM e natação compartilhada. Arena_Dungeon ganha seleção de natação por mapa, mantendo configuração/portas MQ01. Sem plugin externo, motor, namespace ou consumidor de recursos novo. [Recorte/evidências/limites](STONEKEEP_M02_04.md). Descrições anteriores de destino ausente são históricas.
+
+## Corte de Rihad M02-03D — estado vigente
+
+Arena_Court0.1.0 acrescenta um registro, total43;42 anteriores mantêm nomes, ordem, status e parâmetros no formato canônico MV. Usa mensagens/choices/transferências nativas e núcleos existentes, sem dependência externa ou namespace de save novo. Configuração separada dos textos/posições, aceitação idempotente e destino somente lógico. [API/contratos](plugins/Arena_Court.md), [fontes/roteiro](CORTE_RIHAD_M02_03D.md). Contagens/ausência de corte abaixo são históricas.
+
+## Visão de Ria M02-03C — estado vigente
+
+Arena_RiaVision0.1.0 acrescenta um registro (42 no total). Arena_Narrative0.3.0 compartilha cena/paginação com um provedor MQ02; API state()/schema2 de MQ01 intactos. Namespace novo arenaMQ02Narrative v1, mesma raiz/web arena:m01:save-v1; somente adaptador de repouso validado, sem consumidor de recursos adicional. [Contrato/dependências](plugins/Arena_RiaVision.md), [textos/arte/14 verificações](VISAO_RIA_M02_03C.md). Sem vozes, corte, batalhas novas ou dependências externas.
+
+## Arredores M02-03B — estado vigente
+
+Arena_Rihad0.2.0 reutiliza Arena_Encounters sem clonagem/alteração: perfil rihad.outskirts, acesso/retorno fixos e fixture nível1 opcional no laboratório existente. Registro permanece41 entradas, nomes/ordem/status/parâmetros preservados; somente descrição da versão própria atualizada. Sem novas imagens, fórmula, prêmios paralelos ou namespace. [Roteiro/contratos](ARREDORES_RIHAD_M02_03B.md).
+
+## Chegada M02-03A — estado vigente
+
+Arena_Rihad0.1.0 acrescentado como41º registro; Arena_Continuation0.2.0 aceita destino registrado e confirmação de campanha. Nomes/ordem/status/parâmetros dos40 anteriores preservados. Arena_Recovery reconhece authorizedRefuge sem mudar os pontos MQ01. Nenhum motor, namespace web ou consumidor de recursos novo. [Plugin](plugins/Arena_Rihad.md), [contratos de continuação](plugins/Arena_Continuation.md), [amostra/evidências](CHEGADA_RIHAD_M02_03A.md). Contagens/ausência de destino nos registros abaixo são históricas.
+
+## Configurações M02-02B — quest/área
+
+MV_CampaignConfig e Arena_CampaignConfig0.1.0, após os38 anteriores preservados (total40). ArenaCampaign.json contém contratos MQ02 sem vínculos de item/mapa; seletores contextuais e fontes/recibos isolados integram os adaptadores existentes sem cloná-los. Sem novo namespace de save, dependência externa, mapa ou ativação de campanha. [APIs/contratos](plugins/Arena_CampaignConfig.md), [resultados](CONFIGURACOES_M02_02B.md).
+
+## Continuidade M02-02A — técnica isolada
+
+MV_ChapterContinuation0.1.0 e Arena_Continuation0.1.0 adicionados após Arena_Attributes;38 registros canônicos,36 anteriores preservados. Núcleo puro sem IDs de Arena, adaptador/laboratório com destino configurável em mapa existente e namespace interno arenaContinuation v1. Sem dependência externa, novo consumidor de recursos ou mudança no prefixo web. [API/parâmetro/hooks](plugins/Arena_Continuation.md), [roteiro/evidências](CONTINUIDADE_M02_02A.md). Campanha mantém o fim M01; autoria MV/manual do responsável pendentes.
+
 ## Acesso de campanha aos atributos — R02
 
 Arena_Attributes0.2.0 e integração opcional Arena_Inventory0.3.1: Inventário → Atributos, rascunho de lote sem comandos de laboratório. Núcleo/configuração/namespace e36 registros preservados; descrição do registro próprio atualizada no formato canônico. [Contrato e dependências](plugins/Arena_Attributes.md). Sem plugin externo, novos assets ou redesenho dos outros menus.
@@ -159,3 +207,33 @@ MV_JournalModel0.1.0 (modelo de leitura/quebra de linhas) e Arena_QuestJournal0.
 ## Integração M01-18 R02 — alterações vigentes
 
 Nenhum plugin externo ou registro adicional:32 registros de js/plugins.js preservados no formato do editor. Arena_Narrative0.2 usa momentos ilustrados/schema2 e persistência v2; Arena_Quests0.2 liga fontes/contatos à apresentação; Arena_Loot0.2 permite piso opcional exclusivo de recipientes; Arena_Encounters0.2 usa caminhadas nativas; Arena_BattleMotion0.4 alterna planos da arma por pose. Criação e inventário reconhecem células variáveis mantendo as identidades e materiais. Parâmetros novos são dados JSON, não alterações internas do motor. Consultar páginas dos plugins e REVISAO_INTEGRACAO_M01_18_R02.md para contratos, testes e limites.
+
+## Stonekeep — esqueleto de batalha V01
+
+Arena_Skeleton0.1.0 após Arena_Stonekeep e dependências Battle/Motion/Abilities/Loot. Config ArenaSkeleton.json; resistência limitada ao novo inimigo e acesso RAM, sem recurso/consumo duplicado. [Guia](plugins/Arena_Skeleton.md) e [cobertura realmente entregue](SKELETON_M02.md).
+
+## M02-05 — entrega do pergaminho
+
+Arena_CourtDelivery0.1.0 após Arena_DebugHub/Court/Stonekeep: extensão focal da conversa, consumo/recibo/progresso existentes e acesso RAM centralizado. Sem prêmio ou viagem a mapa ausente. [Guia e dependências](plugins/Arena_CourtDelivery.md). Formato canônico do registro preservado.
+
+## Stonekeep — lobo comum de batalha V01
+
+Arena_Wolf0.1.0 depois de Arena_DebugHub/Ghoul e núcleos existentes; Enemy6/Troop7, ArenaWolf.json e acesso RAM centralizado. Sem caminhada/mapa ou recompensas de campanha. [Guia e dependências](plugins/Arena_Wolf.md), [cobertura/limites](LOBO_M02.md).
+
+**Atualização do lobo0.2:** um evento em Stonekeep, folha direcional própria e dois acessos RAM. EXP25/tabela de campanha explícitos; instância técnica da batalha direta continua0EXP/loot. Demais sistemas/arte aprovados inalterados. [Contrato](plugins/Arena_Wolf.md).
+
+## Fang Lair — celas M02-06A
+
+Arena_FangCells0.1.0 após CourtDelivery e núcleos existentes: Map013, chave importante8, enigma e recibo do portal, acesso RAM pelo hub. Sem novo motor de quest ou encontros simulados; aranhas/arte local ainda pendentes. [Contrato](plugins/Arena_FangCells.md), [fontes/limites/evidências](FANG_CELAS_M02_06A.md).
+
+## Prova Stonekeep274 — isolada
+
+Arena_StonekeepRuntimeProof0.1.0 após FangCells/DebugHub: Map014, HUD/comandos, carga sintética0/60/180, natação registrada pelas APIs existentes e checkpoint em sessionStorage separado. Sem patch de limite/motor ou novo consumidor de combate. Contratos, reconstrução, medições e limites em [PROVA_MAPA_UNICO_STONEKEEP.md](PROVA_MAPA_UNICO_STONEKEEP.md).
+
+## Minotauro de Stonekeep — exemplar RAM
+
+Arena_Minotaur0.1.0: combate e patrulha do mesmo exemplar; sala Map016 selecionada só em memória, sem distribuir os oito encontros ou configurar recompensas de campanha. [Contrato/dependências](plugins/Arena_Minotaur.md), [arte/fontes/verificações](MINOTAURO_M02.md).
+
+## Aranha de Stonekeep — exemplar RAM
+
+Arena_Spider0.2.0: um exemplar de batalha/patrulha, Enemy9/Troop10, área privada em Map016 só em memória. Um encontro real C1 sul, demais19ainda ausentes; recompensas de campanha separadas dos dois laboratórios0EXP/loot. Sem efeitos novos ou reuso em Fang Lair. [Contrato](plugins/Arena_Spider.md), [fontes/arte/verificações](ARANHA_M02.md).

@@ -11,7 +11,16 @@ var ArenaQuests;
  if(!window.MVQuestRules||!window.ArenaEncounters)throw Error('Arena_Quests: dependências ausentes');
  DataManager._databaseFiles.push({name:'$arenaQuests',src:'ArenaQuests.json'});
  function cfg(){return window.$arenaQuests;}
- function quest(){return ArenaPersistence.snapshot().quests[cfg().questId];}
+ function configuration(id){
+  if(id===undefined)id=cfg().questId;
+  if(id===cfg().questId)return {ok:true,config:cfg()};
+  return window.ArenaCampaignConfig?ArenaCampaignConfig.quest(id):{ok:false,code:'not_ready'};
+ }
+ function quest(id){
+  if(id===undefined||id===cfg().questId)return ArenaPersistence.snapshot().quests[cfg().questId];
+  if(!configuration(id).ok)return null;
+  return ArenaPersistence.snapshot().quests[id]||{stage:0,objectives:{},completed:false,receipts:{}};
+ }
  function count(){return $gameParty.numItems($dataItems[cfg().itemId]);}
  function receipt(){var q=quest();return Object.keys(q.receipts).some(function(k){var r=q.receipts[k];return r.sourceId===cfg().sourceId&&r.itemId===cfg().itemId&&r.quantity===1&&['consume','deliver'].indexOf(r.kind)>=0;});}
  function view(){return {count:count(),receipt:receipt()};}
@@ -40,6 +49,7 @@ var ArenaQuests;
  var nativeDoor=ArenaDungeon.setDoor;
  ArenaQuests={
   snapshot:quest,
+  configuration:configuration,
   begin:function(){if(quest().stage!==0)return false;ArenaPersistence.setQuest(cfg().questId,10,{},false);reconcile();return true;},
   takeKey:function(){
    if(!inMap()||$gameMap.distance($gamePlayer.x,$gamePlayer.y,$arenaDungeon.key[0],$arenaDungeon.key[1])>1)return false;

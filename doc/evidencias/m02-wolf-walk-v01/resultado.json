@@ -1,0 +1,100 @@
+{
+  "base": "aaea451",
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Clean hub arrival, RAM blocks slots; one Wolf plus unchanged sixteen encounters, bounded floor-only collision, parchment reachable alive",
+    "Campaign EXP25 with deliberately empty unknown drops; other enemy tables unchanged",
+    "All four authored directions and three native phases observed in controlled floor-only movement",
+    "Native natural walking and keyboard contact, one transition/participant, no escape/canLose; normal-speed video, approved battle unchanged",
+    "One native attack/cost then controlled victory: Wolf19 removed, EXP25/receipt once; other sixteen, inventory and quests unchanged",
+    "RAM and synthetic native Save16/F5/Load preserve defeat/receipt; rest and early exit do not respawn",
+    "Original direct battle RAM access still grants0 EXP/loot by instance without mutating campaign table"
+  ],
+  "geometry": {
+    "blocked": 276,
+    "sourceReachable": true,
+    "file": "$Arena_wolf_walk_v01",
+    "encounters": 17
+  },
+  "rolls": {
+    "rows": [],
+    "candidates": 0,
+    "equipment": null
+  },
+  "natural": {
+    "2": [
+      1,
+      2,
+      0
+    ],
+    "4": [
+      1,
+      2,
+      0
+    ],
+    "6": [
+      2,
+      1,
+      0
+    ],
+    "8": [
+      2,
+      1,
+      0
+    ]
+  },
+  "directions": {
+    "2": [
+      1,
+      2,
+      0
+    ],
+    "4": [
+      1,
+      2,
+      0
+    ],
+    "6": [
+      2,
+      1,
+      0
+    ],
+    "8": [
+      2,
+      1,
+      0
+    ]
+  },
+  "victory": {
+    "exp": 75,
+    "gold": 0,
+    "items": "{\"2\":1,\"3\":1,\"4\":1}",
+    "storage": "{}",
+    "q1": "{\"stage\":40,\"objectives\":{\"rubyKey\":true,\"cellDoor\":true,\"shiftGate\":true},\"completed\":true,\"receipts\":{\"MQ01.cell-door\":{\"sourceId\":\"MQ01.ruby-key\",\"itemId\":1,\"quantity\":1,\"kind\":\"consume\"}}}",
+    "q2": "{\"stage\":40,\"objectives\":{\"riaVision\":true,\"askRihad\":true,\"parchmentRequest\":true},\"completed\":false,\"receipts\":{}}",
+    "receipts": 1,
+    "dead": true,
+    "others": 0
+  },
+  "persistence": true,
+  "respawn": {
+    "areaId": "stonekeep",
+    "questSpecific": false,
+    "defeated": true,
+    "generation": 0
+  },
+  "lab": {
+    "exp": 0,
+    "rows": [],
+    "campaign": 25
+  },
+  "errors": [],
+  "missing": [],
+  "recording": "Native canvas30fps, normal engine timing, natural patrol and keyboard contact; only later victory loot controlled, no accelerated battle replay",
+  "pending": [
+    "Owner walking/patrol evaluation; battle already approved",
+    "Campaign EXP25 provisional; original drops unknown, intentionally empty; M02-BAL",
+    "Three other confirmed wolf positions unoccupied",
+    "No new MV editor/mobile test"
+  ]
+}

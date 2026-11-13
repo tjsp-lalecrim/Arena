@@ -1,0 +1,164 @@
+{
+  "version": "stonekeep-orc-v01",
+  "enemyId": 7,
+  "troopId": 8,
+  "enemy": {
+    "name": "Orc",
+    "params": [
+      40,
+      0,
+      10,
+      5,
+      0,
+      3,
+      8,
+      5
+    ],
+    "hit": 0.9
+  },
+  "lab": {
+    "mapId": 12,
+    "x": 80,
+    "y": 39,
+    "direction": 4
+  },
+  "labLoot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "isolated battle pilot only",
+    "source": "Orc battle laboratory only; future campaign EXP/loot not configured. Do not transfer zeros silently."
+  },
+  "campaign": {
+    "enabled": true,
+    "exp": 40,
+    "loot": {
+      "gold": {
+        "chance": 0.25,
+        "min": 4,
+        "max": 40
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "provisional-M02-BAL",
+      "source": "Monsters local PDF16: gold25%/4-40 confirmed. Only gold category configured for initial campaign integration; equipment/magic tables deferred, not absence in original."
+    },
+    "source": "HP40/ATQ10 and approved combat unchanged. EXP40 provisional local scale (goblin25, lizard50), not original HP*15+200; six orcs240EXP. Gold25%/4-40 from Monsters PDF16; other categories intentionally deferred."
+  },
+  "source": "ORC1/3/6.CFA and Monsters PDF15-16. HP40 uses upper wiki range15-40; ATQ10/DEF5/MDF3/AGI8/SOR5/HIT90% are provisional MV adaptations, not original conversions. Basic attack only, no special resistance. EXP0/empty loot solely for RAM battle; campaign EXP40 provisional; gold25%/4-40 from Monsters PDF16. Other reward categories deferred.",
+  "walk": {
+    "file": "$Arena_orc_walk_v01",
+    "cell": [
+      64,
+      64
+    ],
+    "ground": 62,
+    "animationWait": 10
+  },
+  "walkLab": {
+    "entry": {
+      "id": "technical.stonekeep.orc.walk.arrival",
+      "mapId": 16,
+      "x": 4,
+      "y": 9,
+      "direction": 8
+    },
+    "encounters": {
+      "schemaVersion": 1,
+      "mapId": 16,
+      "areaId": "technical.stonekeep.orc.walk",
+      "completionQuestId": "MQ02",
+      "mapVisuals": {
+        "7": {
+          "file": "$Arena_orc_walk_v01",
+          "cell": [
+            64,
+            64
+          ],
+          "ground": 62,
+          "animationWait": 10
+        }
+      },
+      "entries": [
+        {
+          "id": "technical.stonekeep.orc.walk.01",
+          "eventId": 1,
+          "enemyId": 7,
+          "troopId": 8,
+          "origin": [
+            9,
+            6
+          ],
+          "sourceFlat": "Technical inspection specimen only, not one of the original Stonekeep positions",
+          "questSpecific": true,
+          "radius": 3,
+          "interval": 90,
+          "regions": [
+            4
+          ],
+          "scale": 1
+        }
+      ]
+    }
+  }
+}

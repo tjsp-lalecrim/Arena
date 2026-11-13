@@ -1,0 +1,9 @@
+// C1 north only; existing corridors reused, no terrain expansion or new reward tables.
+const fs=require('fs'),path=require('path'),R=path.resolve(__dirname,'..'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),copy=v=>JSON.parse(JSON.stringify(v));
+module.exports=function(map,c){
+ const s=read('doc/mapas/STONEKEEP_C1_NORTE_M02.json');if(map.events.length!==395||c.encounters.entries.length!==68||c.doors.length!==36)throw Error('C1 north: base coverage mismatch');
+ for(const d of s.doors){require('./stonekeep-door-components.cjs')(map,c,d);const added=c.doors.at(-1);for(const id of added.eventIds)for(const p of map.events[id].pages)p.list[0].parameters=["ArenaStonekeepWhole.interactC1Door('"+d.id+"');"];if(d.lockValue!==null)c.access.lockedDoorIds.push(d.id);}
+ const donor=map.events[c.encounters.entries[0].eventId];
+ for(const v of s.entries){if(map.events[v.eventId]||c.encounters.entries.some(e=>e.id===v.id||e.origin.join(',')===v.origin.join(','))||map.data[(5*map.height+v.origin[1])*map.width+v.origin[0]]!==4)throw Error('C1 north: occupied ID/origin or non-dry floor '+v.id);const e=copy(donor);Object.assign(e,{id:v.eventId,name:v.species+' / '+v.id,note:'ArenaEncounter:'+v.id,x:v.origin[0],y:v.origin[1]});e.pages[0].list=[{code:355,indent:0,parameters:["ArenaEncounters.start('"+v.id+"');"]},{code:0,indent:0,parameters:[]}];map.events[v.eventId]=e;c.encounters.entries.push(copy(v));}
+ c.c1North={source:'doc/mapas/STONEKEEP_C1_NORTE_M02.json',doorIds:s.doors.map(d=>d.id),enemyIds:s.entries.map(e=>e.id),water:copy(s.water),connection:s.connection};c.coverage.implementedEncounters=c.encounters.entries.length;c.coverage.implementedDoors=c.doors.length;c.points.push(...copy(s.points));c.context.coverage='73 encontros ·42 portas · C1 norte integrado; outros trechos pendentes';
+};

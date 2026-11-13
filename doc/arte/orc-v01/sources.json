@@ -1,0 +1,46 @@
+{
+  "originalFiles": [
+    {
+      "file": "ORC1.CFA",
+      "width": 72,
+      "height": 119,
+      "frames": 12,
+      "sha256": "a922a7a6a1ef857779f7363560ff607411c4f04e09800bace9b058e90978ff3e"
+    },
+    {
+      "file": "ORC3.CFA",
+      "width": 114,
+      "height": 93,
+      "frames": 8,
+      "sha256": "0617d9dd60aa2d3551b7b73b8c75b96dff9833d428b14fb038936665126e9644"
+    },
+    {
+      "file": "ORC6.CFA",
+      "width": 89,
+      "height": 81,
+      "frames": 3,
+      "sha256": "737efa0ac49cd979edd2f65d44930fd652355d56f672105979b8ef3bad0e7e22"
+    }
+  ],
+  "wiki": "doc/wiki/Arena_Monsters - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+  "pages": [
+    15,
+    16
+  ],
+  "originalObservation": "Read-only CFA+palette decoding; no DOS gameplay observation",
+  "references": [
+    {
+      "path": "tmp/orc-review/ORC1.CFA.png",
+      "sha256": "720fdc5590eb36e1f551fe5378c512abcfef127340575a6252ceff23bec5c86f"
+    },
+    {
+      "path": "tmp/orc-review/ORC3.CFA.png",
+      "sha256": "353c8a2f75d68ce13f2abf26b65840cfd7f076403092beb449c7c68480367a49"
+    },
+    {
+      "path": "art/masters/stonekeep-ghoul-v01/sheet-v01.png",
+      "sha256": "b3480ad3e42e135447cc64e900f92423b875674697826ea30eb157843199efcd"
+    }
+  ],
+  "paletteSHA256": "e2ac903f3580024ed5a50b03066786a52d48558f2a326d898693803c9044641a"
+}

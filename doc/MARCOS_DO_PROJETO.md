@@ -1,10 +1,18 @@
 # Marcos do projeto
 
+## Escopo mínimo funcional vigente — decisão de02/11/2026
+
+“Versão mínima funcional” inclui **mapas completos das dungeons e cidades previstas na campanha**, preservando a estrutura original, **todos os encontros aplicáveis a esses mapas** segundo as fontes/adaptações documentadas e os eventos obrigatórios da quest principal. Não acrescenta locais fora da campanha. Substitui a permissão anterior de encerrar um local com apenas um recorte da rota; amostras continuam unidades de produção/avaliação, nunca prova de mapa completo.
+
+Eventos opcionais, quests secundárias e atividades sem função necessária à campanha podem ser adiados. Preservar ruas, alas, salas, conexões e acessos do original; interiores urbanos sem função necessária podem permanecer inacessíveis e identificados, sem apagar seus edifícios/acessos da planta. Portas, chaves ou travessias necessárias à circulação do mapa completo exigem solução documentada; não selar alas apenas por estarem fora da rota da quest.
+
+“Todos os encontros” não cria encontros aleatórios, população infinita, respawn novo ou espécies por suposição. Inventariar referências de entidades/condições do original, distinguir presença declarada de observação em execução e registrar cada adaptação finita; ausência de evidência não é ausência confirmada. Aprovação de materiais/pilotos não aprova cobertura cartográfica ou equilíbrio. Tag m01 e ressalvas da entrega permanecem preservadas; esta decisão não altera retroativamente a release.
+
 ## Organização confirmada
 
 Cada quest principal constitui um marco do projeto. A sequência acompanha CAMPANHA_PRINCIPAL.md. Cidades, serviços, locais preparatórios, eventos e recursos necessários à quest fazem parte do respectivo marco; não são tratados como conteúdo secundário dispensável.
 
-Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. Estado vigente: M01 aprovado como entrega desktop com ressalvas, registrado em [ENTREGA_M01.md](ENTREGA_M01.md); M02–M10 planejados, sem início autorizado. Evidências/cobertura ficam no backlog e na validação, não são certificadas só por esta tabela. Não há datas ou prazos definidos.
+Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. Estado vigente: M01 aprovado como entrega desktop com ressalvas, registrado em [ENTREGA_M01.md](ENTREGA_M01.md); M02 em desenvolvimento conforme seu backlog; M03–M10 planejados. Evidências/cobertura ficam no backlog e na validação, não são certificadas só por esta tabela. Não há datas ou prazos definidos.
 
 | Marco | Quest | Entrega de conteúdo | Condição principal de conclusão |
 | --- | --- | --- | --- |
@@ -17,21 +25,25 @@ Os marcos da campanha não são renumerados pela inclusão de marcos técnicos. 
 | M07 — Crypt of Hearts | MQ07 | Camlorn, Brotherhood of Seth, Mines of Khuras e Crypt of Hearts | Obter o sexto fragmento e concluir a cadeia correspondente |
 | M08 — Murkwood | MQ08 | Stormhold, Conclave of Baal, Vaults of Gemin e Murkwood | Obter o sétimo fragmento e concluir a cadeia correspondente |
 | M09 — Dagoth-Ur | MQ09 | Ebonheart, Black Gate, cadeia do Hammer of Gharen e Dagoth-Ur | Obter o oitavo fragmento e concluir os eventos que preparam a etapa final |
-| M10 — The Imperial Palace | MQ10 | Imperial City no recorte necessário, Imperial Palace e desfecho | Concluir a resolução do Jewel of Fire e apresentar o encerramento da campanha |
+| M10 — The Imperial Palace | MQ10 | Imperial City com estrutura original completa e eventos de campanha, Imperial Palace e desfecho | Concluir a resolução do Jewel of Fire e apresentar o encerramento da campanha |
 
 Os detalhes narrativos e eventos completos de cada marco devem ser especificados consultando as fontes listadas em CAMPANHA_PRINCIPAL.md. A tabela não substitui sonhos, entregas, enigmas ou emboscadas exigidos pela quest; “obter fragmento” é um resumo de aceitação, não autorização para cortar o restante da cadeia.
 
-O detalhamento do primeiro marco está em BACKLOG_M01.md. Os demais marcos receberão seus backlogs quando entrarem no planejamento de implementação.
+O fechamento do primeiro marco está em BACKLOG_M01.md e ENTREGA_M01.md (tag m01). O escopo mínimo do [M02](BACKLOG_M02.md) foi aprovado; [M02-01](MQ02_ESPECIFICACAO.md) especifica estados/viagens/saves; implementação e cobertura parciais registradas no backlog; demais marcos receberão seus backlogs ao entrar no planejamento.
 
 ## Marco técnico independente — MOBILE-01
 
 **MOBILE-01 — adaptação mobile e APK Android**, planejado com execução a planejar. Escopo, dependências de entrada e critérios subordinados em [MOBILE_01.md](MOBILE_01.md); sem tecnologia de empacotamento escolhida. Não renumera a campanha, não bloqueia M01 desktop nem exige aparelho/Pages a cada entrega.
 
+## Marco técnico independente — QUALIDADE-01
+
+[QUALIDADE-01](QUALIDADE_01.md): janela limitada de consistência visual, navegação desktop, apresentação e manutenção focal. Planejado, não iniciado; **reavaliar execução após a entrega funcional do M02**, sem torná-lo pré-requisito para começar a campanha seguinte. Prioridades referenciam o registro único de pendências; mobile/APK continuam somente no MOBILE-01. Não é reescrita geral, catálogo completo nem compromisso de eliminar todas as ressalvas.
+
 ## Dependências e continuidade
 
 Ordem de aceitação: M01 → M02 → M03 → M04 → M05 → M06 → M07 → M08 → M09 → M10. A pesquisa ou preparação de assets de marcos posteriores pode ocorrer antes, sem declarar concluída uma quest que ainda não funciona na campanha integrada.
 
-No M02, permitir a continuação além do encerramento da demo de M01, preservando uma identificação clara de versão. Definir e registrar a política de continuidade de saves antes de distribuir uma versão que deva aceitar saves anteriores.
+No M02, continuar além do encerramento exclusivo da demo, sem mudar a tag m01. Viagem condensada e gatilhos de Ria/Tharn aprovados; detalhes em MQ02_ESPECIFICACAO.md. Compatibilidade entre versões de desenvolvimento é desejável quando o custo for limitado, não universalmente obrigatória; preservação obrigatória começa em versão oficial ainda a definir. Fonte da política: [PERSISTENCIA_M01.md](PERSISTENCIA_M01.md#política-vigente-de-compatibilidade--31102026). Avaliar a recomendação específica antes de distribuir M02; salvar/carregar dentro da versão atual continua obrigatório.
 
 Os sistemas comuns são construídos gradualmente nas features necessárias a esses marcos. Não é obrigatório adaptar todo o catálogo do jogo para terminar M01, nem criar versões duplicadas de plugins para cada quest.
 
@@ -56,7 +68,9 @@ Incorporar os identificadores subordinados ao detalhar os futuros backlogs; não
 
 ## Critérios comuns de conclusão
 
-- Quest jogável de ponta a ponta, incluindo acesso aos locais e aos eventos necessários.
+Diretriz técnica vigente: código/dados/geradores como fonte oficial, navegador desktop principal, editor opcional sem compatibilidade obrigatória. Runtime MV/módulos preservados; ajustes necessários de capacidade para mapas completos/contínuos autorizados mediante inspeção/testes, pequenos e documentados, com impactos comunicados; não autoriza troca de motor/refatoração geral. Fonte principal: DESENVOLVIMENTO_E_VERSIONAMENTO.md. Essa decisão não reescreve testes/aceites históricos do M01.
+
+- Quest jogável de ponta a ponta; cobertura dos mapas e encontros conforme o escopo mínimo funcional acima, com matriz original→adaptado e lacunas resolvidas.
 - Textos em Português Brasileiro, com fontes e adaptações documentadas.
 - Assets necessários integrados e consistentes com DIRECAO_DE_ARTE.md; ausência de recursos faltantes no fluxo validado.
 - Diário e objetivos atualizados, com itens importantes protegidos e verificações redundantes nas transições.

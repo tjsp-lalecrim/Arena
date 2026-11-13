@@ -1,0 +1,432 @@
+{
+  "base": "60f969b",
+  "url": "http://127.0.0.1:8774/",
+  "browser": "156.0.8078.76",
+  "profile": "disposable Chrome headless; RAM full native serialization only, no personal/normal slots",
+  "checks": [
+    "Real clean boot/hub; Map015274;20 real encounter bindings, no synthetic load/control, RAM save isolation",
+    "Continuous native passability from entry to source/exit/all20 contacts and expanded areas beyond255, no internal transfers",
+    "Keyboard crossing old-crop boundary plus native swimming entry/exit; same mapId and unchanged resources/quests/inventory",
+    "Actual contact/battle/controlled native victory, one independent defeat/EXP/loot receipt; repeated reward path grants nothing",
+    "Source native event40→50, one item/grant; repeat unchanged; JsonEx/native RAM restore retains whole map, player, spent resources, attributes, defeats, receipts and MQ01/MQ02",
+    "Exit native trigger→Rihad, explicit travel choice→Map015; no healing/reward/quest replay or respawn",
+    "Existing delivery receipt retires transferred source, including RAM reload; no duplicate logical source/quest",
+    "Leaving lab restores Map012 campaign contracts; explicit old-lab transfer keeps logical state and shifts position+24 without migration/rewards"
+  ],
+  "placements": [
+    {
+      "id": "stonekeep.passage.skeleton.01",
+      "eventId": 3,
+      "origin": [
+        87,
+        9
+      ],
+      "actual": [
+        87,
+        9
+      ],
+      "region": 4,
+      "file": "$Arena_skeleton_walk_v01"
+    },
+    {
+      "id": "stonekeep.passage.skeleton.02",
+      "eventId": 4,
+      "origin": [
+        84,
+        9
+      ],
+      "actual": [
+        84,
+        9
+      ],
+      "region": 4,
+      "file": "$Arena_skeleton_walk_v01"
+    },
+    {
+      "id": "stonekeep.passage.skeleton.03",
+      "eventId": 5,
+      "origin": [
+        90,
+        12
+      ],
+      "actual": [
+        90,
+        12
+      ],
+      "region": 4,
+      "file": "$Arena_skeleton_walk_v01"
+    },
+    {
+      "id": "stonekeep.passage.skeleton.04",
+      "eventId": 6,
+      "origin": [
+        102,
+        15
+      ],
+      "actual": [
+        102,
+        15
+      ],
+      "region": 4,
+      "file": "$Arena_skeleton_walk_v01"
+    },
+    {
+      "id": "stonekeep.passage.skeleton.05",
+      "eventId": 7,
+      "origin": [
+        84,
+        15
+      ],
+      "actual": [
+        84,
+        15
+      ],
+      "region": 4,
+      "file": "$Arena_skeleton_walk_v01"
+    },
+    {
+      "id": "stonekeep.passage.skeleton.06",
+      "eventId": 8,
+      "origin": [
+        102,
+        18
+      ],
+      "actual": [
+        102,
+        18
+      ],
+      "region": 4,
+      "file": "$Arena_skeleton_walk_v01"
+    },
+    {
+      "id": "stonekeep.passage.skeleton.07",
+      "eventId": 9,
+      "origin": [
+        87,
+        18
+      ],
+      "actual": [
+        87,
+        18
+      ],
+      "region": 4,
+      "file": "$Arena_skeleton_walk_v01"
+    },
+    {
+      "id": "stonekeep.apartments.rat.01",
+      "eventId": 16,
+      "origin": [
+        138,
+        36
+      ],
+      "actual": [
+        138,
+        36
+      ],
+      "region": 4,
+      "file": "$Arena_rat_walk_r02"
+    },
+    {
+      "id": "stonekeep.apartments.rat.02",
+      "eventId": 17,
+      "origin": [
+        138,
+        39
+      ],
+      "actual": [
+        138,
+        39
+      ],
+      "region": 4,
+      "file": "$Arena_rat_walk_r02"
+    },
+    {
+      "id": "stonekeep.apartments.rat.03",
+      "eventId": 18,
+      "origin": [
+        141,
+        42
+      ],
+      "actual": [
+        141,
+        42
+      ],
+      "region": 4,
+      "file": "$Arena_rat_walk_r02"
+    },
+    {
+      "id": "stonekeep.island.ghoul.01",
+      "eventId": 10,
+      "origin": [
+        60,
+        57
+      ],
+      "actual": [
+        60,
+        57
+      ],
+      "region": 4,
+      "file": "$Arena_ghoul_walk_v01"
+    },
+    {
+      "id": "stonekeep.island.ghoul.02",
+      "eventId": 11,
+      "origin": [
+        51,
+        60
+      ],
+      "actual": [
+        51,
+        60
+      ],
+      "region": 4,
+      "file": "$Arena_ghoul_walk_v01"
+    },
+    {
+      "id": "stonekeep.island.ghoul.03",
+      "eventId": 12,
+      "origin": [
+        36,
+        60
+      ],
+      "actual": [
+        36,
+        60
+      ],
+      "region": 4,
+      "file": "$Arena_ghoul_walk_v01"
+    },
+    {
+      "id": "stonekeep.island.ghoul.04",
+      "eventId": 13,
+      "origin": [
+        48,
+        66
+      ],
+      "actual": [
+        48,
+        66
+      ],
+      "region": 4,
+      "file": "$Arena_ghoul_walk_v01"
+    },
+    {
+      "id": "stonekeep.island.ghoul.05",
+      "eventId": 14,
+      "origin": [
+        45,
+        84
+      ],
+      "actual": [
+        45,
+        84
+      ],
+      "region": 4,
+      "file": "$Arena_ghoul_walk_v01"
+    },
+    {
+      "id": "stonekeep.island.ghoul.06",
+      "eventId": 15,
+      "origin": [
+        54,
+        87
+      ],
+      "actual": [
+        54,
+        87
+      ],
+      "region": 4,
+      "file": "$Arena_ghoul_walk_v01"
+    },
+    {
+      "id": "stonekeep.apartments.wolf.01",
+      "eventId": 19,
+      "origin": [
+        114,
+        51
+      ],
+      "actual": [
+        114,
+        51
+      ],
+      "region": 4,
+      "file": "$Arena_wolf_walk_v01"
+    },
+    {
+      "id": "stonekeep.apartments.wolf.02",
+      "eventId": 20,
+      "origin": [
+        138,
+        54
+      ],
+      "actual": [
+        138,
+        54
+      ],
+      "region": 4,
+      "file": "$Arena_wolf_walk_v01"
+    },
+    {
+      "id": "stonekeep.apartments.wolf.03",
+      "eventId": 21,
+      "origin": [
+        123,
+        54
+      ],
+      "actual": [
+        123,
+        54
+      ],
+      "region": 4,
+      "file": "$Arena_wolf_walk_v01"
+    },
+    {
+      "id": "stonekeep.apartments.wolf.04",
+      "eventId": 22,
+      "origin": [
+        120,
+        54
+      ],
+      "actual": [
+        120,
+        54
+      ],
+      "region": 4,
+      "file": "$Arena_wolf_walk_v01"
+    }
+  ],
+  "circulation": {
+    "reachableTiles": 29160,
+    "source": true,
+    "exit": true,
+    "expanded": true,
+    "beyond255": true,
+    "max": [
+      262,
+      265
+    ],
+    "encounters": [
+      {
+        "id": "stonekeep.passage.skeleton.01",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.passage.skeleton.02",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.passage.skeleton.03",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.passage.skeleton.04",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.passage.skeleton.05",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.passage.skeleton.06",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.passage.skeleton.07",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.apartments.rat.01",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.apartments.rat.02",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.apartments.rat.03",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.island.ghoul.01",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.island.ghoul.02",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.island.ghoul.03",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.island.ghoul.04",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.island.ghoul.05",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.island.ghoul.06",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.apartments.wolf.01",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.apartments.wolf.02",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.apartments.wolf.03",
+        "reachable": true
+      },
+      {
+        "id": "stonekeep.apartments.wolf.04",
+        "reachable": true
+      }
+    ],
+    "swimming": {
+      "enabled": true,
+      "regionId": 5,
+      "autotileKind": 0,
+      "depth": 32,
+      "offsetY": 8
+    }
+  },
+  "paths": {
+    "seam": {
+      "from": [
+        163,
+        38
+      ],
+      "to": [
+        164,
+        38
+      ],
+      "d": 6
+    },
+    "water": {
+      "from": [
+        10,
+        8
+      ],
+      "to": [
+        11,
+        8
+      ],
+      "d": 6
+    }
+  },
+  "errors": [],
+  "missing": [],
+  "limits": [
+    "No full campaign or balance/animation matrix",
+    "Map015 is isolated candidate; Map012 unchanged",
+    "No new door implementation;70 original doors unresolved",
+    "160 original encounter references not yet integrated",
+    "Expanded materials/heights/diagonals remain provisional per geometry proof;17 old adapted source cells preserved",
+    "No full-map persistent save migration or browser-restart claim; technical session RAM only"
+  ]
+}

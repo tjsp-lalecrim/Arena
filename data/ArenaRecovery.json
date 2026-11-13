@@ -573,6 +573,100 @@
         43
       ],
       "source": "Plataforma ^ de START.MIF interpretado; apoio seco/acesso e contexto de parede auditados. Repouso por interação é adaptação; não garante imunidade no DOS."
+    },
+    {
+      "id": "MQ02.rihad.rest",
+      "mapId": 9,
+      "eventId": 2,
+      "x": 354,
+      "y": 15,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "MQ02-03E2: repouso autorizado na esplanada inicial de Rihad, posição adaptada."
+    },
+    {
+      "id": "MQ02.stonekeep.refuge.87.44",
+      "eventId": 831,
+      "x": 9,
+      "y": 135,
+      "sourceOriginal": [
+        87,
+        44
+      ],
+      "mapId": 15,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "STKEEP1 0x1808. Refúgio adaptado com apoio seco e acesso auditado."
+    },
+    {
+      "id": "MQ02.stonekeep.refuge.82.51",
+      "eventId": 832,
+      "x": 24,
+      "y": 156,
+      "sourceOriginal": [
+        82,
+        51
+      ],
+      "mapId": 15,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "STKEEP1 0x1808. Refúgio adaptado com apoio seco e acesso auditado."
+    },
+    {
+      "id": "MQ02.stonekeep.refuge.19.65",
+      "eventId": 833,
+      "x": 213,
+      "y": 198,
+      "sourceOriginal": [
+        19,
+        65
+      ],
+      "mapId": 15,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "STKEEP1 0x1808. Refúgio adaptado com apoio seco e acesso auditado."
+    },
+    {
+      "id": "MQ02.stonekeep.refuge.3.66",
+      "eventId": 834,
+      "x": 261,
+      "y": 201,
+      "sourceOriginal": [
+        3,
+        66
+      ],
+      "mapId": 15,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "STKEEP1 0x1808. Refúgio adaptado com apoio seco e acesso auditado."
+    },
+    {
+      "id": "MQ02.stonekeep.refuge.31.70",
+      "eventId": 835,
+      "x": 177,
+      "y": 213,
+      "sourceOriginal": [
+        31,
+        70
+      ],
+      "mapId": 15,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "STKEEP1 0x1808. Refúgio adaptado com apoio seco e acesso auditado."
+    },
+    {
+      "id": "MQ02.stonekeep.refuge.82.77",
+      "eventId": 836,
+      "x": 24,
+      "y": 234,
+      "sourceOriginal": [
+        82,
+        77
+      ],
+      "mapId": 15,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "STKEEP1 0x1808. Refúgio adaptado com apoio seco e acesso auditado."
     }
   ],
   "menuIntervalMs": 500,

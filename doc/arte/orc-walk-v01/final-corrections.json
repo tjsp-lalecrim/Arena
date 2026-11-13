@@ -1,0 +1,20 @@
+{
+  "tool": "image_gen built-in",
+  "corrections": [
+    {
+      "prompt": "Targeted correction, keep this same12figure3x4atlas and identity, transparent. Change ONLY figure row3 column3 EAST and figure row4 column3 NORTH; all other10figures unchanged. EAST row3column3: REVERSE its current stride. Its NEAR leg, which currently extends right/down, must instead bend and extend BACK toward imageLEFT; its FAR leg must extend FORWARD toward imageRIGHT. This must be clearly the opposite leg configuration from row3column1, not another same-leg-forward pose. NORTH row4column3: REVERSE its current stride so the boot on IMAGE RIGHT is DOWN closest to viewer and boot on IMAGE LEFT is UP away from viewer. Presently IMAGE LEFT boot is down, same as column1: correct that. Keep hips/top body level, SAME hands with mace right hand and shield left, no mirroring torso or moving body. Orthogonal overhead top view and approved anatomy, armor and color unchanged. Both legs/boots visible with real bent knee/ankle articulation, no clones, extra legs or static translations. Give mace in row4column3 at least24transparent pixels margin from right edge so it is NOT clipped; compact arm carry permitted in that figure only. No new images, pose rows, walking directions, text or background. Same source scale and generous alpha margins.",
+      "input": "art/masters/stonekeep-orc-walk-v01/sheet-v02-stride.png",
+      "output": "art/masters/stonekeep-orc-walk-v01/sheet-v03-stride.png",
+      "selection": "North right-stride cell11 only; other frames preserve earlier sources"
+    },
+    {
+      "prompt": "Edit this exact neutral orc cutout into ONE east-facing WALKING STRIDE pose, same overhead orthogonal projection, anatomy, blue/olive/silver/brass armor, mace in right hand, shield left. Change ONLY legs/boots. Keep helmet, head, shoulders, arms, hips height and body size the SAME. Crucial: the leg NEAREST VIEWER (lower side of this right-facing body) swings BACK, its boot placed visibly to the LEFT of the hips with knee extended backward. The FAR leg steps FORWARD, its boot visibly to the RIGHT of hips. Two clearly separated boots on opposing sides of hips: near boot LEFT/back, far boot RIGHT/forward. This reverses the usual near-leg-forward pose. Do NOT put the near boot right/forward. Do not mirror whole character, no added leg/weapon. One figure only, entire mace/shield/boots visible, generous transparent margins on all four sides, same soft upper-left lighting. Alpha transparent background, no floor/shadows/text. Real joint articulation, not moving the figure.",
+      "input": "tmp/orc-walk-review/east-neutral.png",
+      "derivedFrom": "sheet-v01 neutral east cell7",
+      "output": "art/masters/stonekeep-orc-walk-v01/east-stride-v04.png",
+      "selection": "One east opposite-stride, normalized from higher source resolution before shared atlas scale"
+    }
+  ],
+  "scope": "Targeted gait corrections of one exemplar, not variants or additional assets",
+  "approval": "pending walking evaluation"
+}

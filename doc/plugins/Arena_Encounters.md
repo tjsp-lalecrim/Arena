@@ -1,3 +1,7 @@
+## Seleção de contratos M02-02B
+
+M02-02B: perfis selecionados pelo mapa/área, com completeArea(areaId)/onExit(areaId) opcionais; chamadas antigas sem ID continuam MQ01. Sem novo encontro/respawn ou mapa. [Contrato e APIs](Arena_CampaignConfig.md), [evidências](../CONFIGURACOES_M02_02B.md).
+
 # Arena_Encounters0.1.0 e MV_EncounterRules0.1.0
 
 Codex; sem dependências externas. Ordem: MV_StateStore/Arena_Persistence, recursos/habilidades/combate/movimentos/UI/inventário/loot, Arena_Dungeon, MV_EncounterRules, Arena_Encounters. Mantém os consumidores originais de custos e recompensas. Sem parâmetros no gerenciador; dados em `data/ArenaEncounters.json`.

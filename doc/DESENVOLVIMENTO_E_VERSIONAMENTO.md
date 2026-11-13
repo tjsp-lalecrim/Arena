@@ -2,12 +2,24 @@
 
 **Discussão pré-fechamento realizada em30/10/2026:** decisões autorizadas na retrospectiva abaixo. Não repetir essa parada nem presumir aprovação final do M01. Matriz e aceites finais em [BACKLOG_M01.md](BACKLOG_M01.md#matriz-de-fechamento-m01--30102026).
 
+## Fonte oficial, execução e motor — decisão vigente02/11/2026
+
+**Código, dados e geradores versionados são a fonte oficial do projeto.** Documentação registra decisões/diretivas e a cobertura das evidências; chats não substituem o repositório. Navegador desktop, inicialmente Chrome, é o ambiente principal de execução e testes. **Editor RPG Maker é opcional; sua compatibilidade deixou de ser requisito obrigatório.** Preservar registros históricos de autoria/validação sem atribuir testes não executados ou exigir repeti-los.
+
+Manter inicialmente o runtime MV e os módulos próprios existentes; JavaScript executa o jogo e Python pode apoiar geração/validação. **Autorização vigente na continuação A2-E (posterior a60f969b): alterações de capacidade necessárias aos mapas completos e à exploração contínua estão autorizadas**, sem exigir nova aprovação prévia por mudança. Fundamentar em inspeção e testes, limitar/documentar o delta e comunicar seus impactos. Não iniciar migração, consolidação geral de plugins ou refatoração ampla por associação. Execução local tem um único procedimento em [EXECUCAO_LOCAL.md](EXECUCAO_LOCAL.md), sem limpeza de dados/namespace ou reload automático.
+
+## Entregas integradas
+
+Quando o responsável autorizar a integração de etapas dependentes, reunir o trabalho numa feature e fazer commits por etapa. Em Stonekeep, a ordem é encontros e portas, tesouros e descanso, ligação à campanha. Concentrar as verificações em cobertura e acesso, persistência e percurso de campanha. A avaliação manual fica para o percurso integrado. Registrar ambiguidades e avançar nas partes independentes. Pedir decisão somente quando faltar uma condição do caminho obrigatório ou for preciso mudar o escopo.
+
+A partir de M02-03E2, integrar cada trecho jogável à campanha. Promover trechos com verificações essenciais aprovadas de feature para develop e depois para main por branch de estabilização. Avaliar trechos independentes separadamente quando outro estiver bloqueado. Registrar o alcance técnico, ressalvas e teste manual pendente. Tag, release pública e Pages seguem em etapas próprias.
+
 ## Retrospectiva aprovada — 30/10/2026
 
 Regras permanentes autorizadas pelo responsável; esta seção é a fonte do processo, sem decisão de encerramento/release:
 
 - **Dois chats principais:** análise/planejamento e desenvolvimento/execução. Chats adicionais somente para tarefa delimitada; consolidar resultados nas fontes principais do repositório antes de tratá-los como decisão vigente. O repositório é a fonte; memória de chat não o substitui.
-- **Motor:** continuar no RPG Maker MV1.6.1; nenhuma migração antes do M02. Eventual reavaliação no M02 exige decisão própria, sem migração automática nem grande refatoração por associação.
+- **Motor:** runtime MV inicialmente preservado; editor opcional conforme decisão vigente acima. Capacidade segue a autorização delimitada acima; sem troca de motor, migração automática ou refatoração geral.
 - **Escopo:** entregas pequenas, amostra integrada antes de lote e mudança estrutural tratada antes de multiplicar conteúdo dependente. O fluxo detalhado de assets permanece em DIRECAO_DE_ARTE.md; não duplicar suas instruções aqui.
 - **Prioridade e janela de refinamento:** escolher por impacto/risco e critérios do marco. Combinar uma janela limitada (tempo ou número de recortes a definir por marco); ao encerrá-la, devolver o restante ao registro futuro. Não há duração numérica aprovada nem promessa de consumo. Ressalvas aceitas não são bloqueios automáticos.
 - **Verificação e memória:** focal por mudança; percurso integrado em momentos definidos (referência congelada, integração antes de candidata e avaliação por marco, com cobertura proporcional ao delta). Reaproveitar aprovações identificadas por versão/ambiente/caso, sem pedidos repetidos. Consolidação documental ao fim de cada marco separa o vigente do histórico; não apagar evidências.
@@ -15,6 +27,10 @@ Regras permanentes autorizadas pelo responsável; esta seção é a fonte do pro
 ## Foco de plataformas — 30/10/2026
 
 Concentrar os testes no navegador do PC, inicialmente Chrome. M01 será fechado no alvo desktop; adaptação mobile e APK pertencem a [MOBILE-01](MOBILE_01.md), sem data ou tecnologia escolhidas. Preservar toque existente e evidências por versão. Regressão focal emulada é pertinente quando a mudança afeta entrada compartilhada; não exigir testes físicos ou deploy Pages a cada entrega desktop. Pages continua manual, somente para versões escolhidas. Teste parcial mobile não equivale a suporte completo; navegador e APK têm validações/persistência próprias, sem migração automática prometida.
+
+## Ferramentas externas e mapa contínuo — prova autorizada02/11/2026
+
+O responsável prioriza exploração contínua de Stonekeep e aceita reduzir a dependência do editor: gerar mapas/dados por ferramentas externas, mantendo inicialmente o motor MV. JavaScript executa o jogo no navegador; Python pode apoiar geração/validação. [Prova técnica274](PROVA_MAPA_UNICO_STONEKEEP.md) não autoriza trocar motor, fundir plugins ao código-base, refatorar amplamente ou integrar mapa experimental à campanha. Distinguir limite de autoria do editor de limite de runtime e medir antes de criar patch de constante. Operação no editor acima do contrato documentado só em cópia descartável, nunca sobre a campanha.
 
 ## Operação obrigatória — entregas pequenas
 

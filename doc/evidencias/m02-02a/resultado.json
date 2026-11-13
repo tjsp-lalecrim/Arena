@@ -1,0 +1,44 @@
+{
+  "browser": "156.0.8078.76",
+  "checks": [
+    "Pure context/state validation and non-mutating one-way transitions",
+    "Title/keyboard/mouse/emulated-touch access; old pre-Gate, partial intro and technical snapshots recognized; no premature continuation; synthetic Gate alters only expected quest/narrative state",
+    "Ending/ended offer until confirmation; held input cannot confirm twice; cancel changes nothing; begin commits once with stable IDs, without healing/EXP/rewards",
+    "All normal writes/index/backup/removal/serialization blocked; RAM checkpoint restores travelling after native transfer to existing Map005; actor, points, resources, quests, receipts and items unchanged",
+    "Malformed state rejected preserving current session; out-of-bounds destination rejected recoverably; arrived checkpoint can be restored repeatedly without re-offer, relocation, rewards or state loss",
+    "Normal native save/reload/load of a pre-plugin m01 fixture keeps data and original ending UI; no campaign continuation enabled; leaving lab restores normal slot selection",
+    "Synthetic travelling/arrived native slots survive repeated save/load, preserving receipts and all other data; no lab save path or campaign transition enabled",
+    "Future-version native save fails with recoverable load-screen feedback, without replacing active objects, changing slot or writing data; partial intro resumes cursor and existing narrative-v1 migration remains valid; attributes lab and simulated E05 context cannot become campaign"
+  ],
+  "receipt": {
+    "state": {
+      "phase": "travelling",
+      "transitionId": "campaign/MQ02.begin",
+      "destinationId": "technical.resources.arrival"
+    },
+    "begin": true,
+    "arrival": false
+  },
+  "blocked": {
+    "normal": false,
+    "direct": false,
+    "index": false,
+    "backup": false,
+    "write": false,
+    "remove": false,
+    "serialized": true,
+    "enabled": false
+  },
+  "invalidNative": {
+    "ok": false,
+    "same": true,
+    "diskSame": true,
+    "slotSame": true,
+    "error": "Versão de continuação incompatível."
+  },
+  "errors": [],
+  "namespace": "arena:m01:save-v1 unchanged",
+  "editor": "not executed",
+  "phone": "not executed",
+  "scope": "Synthetic snapshots, native isolated storage and RAM; no battles/full campaign/personal saves"
+}
