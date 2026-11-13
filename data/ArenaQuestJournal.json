@@ -76,7 +76,11 @@
         },
         {
           "revealAt": 80,
-          "text": "Usei a chave dourada e abri o portal. A passagem até a escada está livre."
+          "text": "Usei a chave dourada e abri o portal. A escada leva ao segundo nível de Fang Lair."
+        },
+        {
+          "revealAt": 90,
+          "text": "Resolvi o segundo enigma e abri a porta. O primeiro fragmento do Cajado do Caos está adiante."
         }
       ],
       "steps": [
@@ -141,8 +145,8 @@
           "objectiveId": "fangLowerExplored",
           "revealAt": 80,
           "doneAt": 90,
-          "text": "Chegar à escada no fim da passagem.",
-          "completedText": "Alcancei a passagem do nível inferior."
+          "text": "Descer a escada e resolver o segundo enigma.",
+          "completedText": "Resolvi o segundo enigma e abri a porta."
         }
       ],
       "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação. Celas: FANG1.INF TEXT5–10 e wiki p3/5; tradução e escolhas adaptadas."

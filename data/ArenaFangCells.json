@@ -200,9 +200,6 @@
     "opened": [
       "A chave dourada abre o portal. A passagem para a escada está livre."
     ],
-    "limit": [
-      "A escada desce às profundezas da mina. Por enquanto, a jornada termina neste patamar. Você pode retornar a Rihad."
-    ],
     "arrival": [
       "Diante do portal do dragão de Fang Lair, a antiga fortaleza anã parece abandonada há muito. A pedra racha com o tempo. Em algum lugar dessas profundezas úmidas repousa o primeiro fragmento do Cajado do Caos."
     ]
@@ -264,5 +261,45 @@
   "arrivalText": [
     288,
     12
-  ]
+  ],
+  "lower": {
+    "mapId": 17,
+    "areaId": "fang-lair.lower",
+    "entry": [
+      6,
+      84
+    ],
+    "stair": [
+      6,
+      87
+    ],
+    "approach": [
+      78,
+      6
+    ],
+    "door": [
+      78,
+      9
+    ],
+    "return": [
+      36,
+      296
+    ],
+    "texts": {
+      "riddle": [
+        "Uma pergunta simples para ti.",
+        "O que não é peixe nem carne, nem pena nem osso, mas tem dedos e polegares próprios?",
+        "Qual é a tua resposta, mortal?"
+      ],
+      "correct": [
+        "Tens de fato o engenho para continuar. Podes prosseguir…"
+      ],
+      "wrong": [
+        "Estás errado, mortal. Pensa bem antes de tentar outra resposta…"
+      ],
+      "opened": [
+        "A porta está aberta. O fragmento está além desta passagem."
+      ]
+    }
+  }
 }

@@ -781,7 +781,48 @@
     {
       "id": "fang-lair.lower",
       "questId": "MQ02",
-      "mapId": null
+      "mapId": 17,
+      "encounters": {
+        "schemaVersion": 1,
+        "mapId": 17,
+        "areaId": "fang-lair.lower",
+        "completionQuestId": "MQ02",
+        "mapVisuals": {
+          "4": {
+            "file": "$Arena_skeleton_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
+          }
+        },
+        "entries": [
+          {
+            "id": "fang.lower.approach.skeleton.01",
+            "eventId": 3,
+            "origin": [
+              12,
+              18
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "questSpecific": false,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1,
+            "sourceOriginal": [
+              86,
+              75
+            ],
+            "enemyId": 4,
+            "troopId": 5
+          }
+        ]
+      }
     }
   ],
   "sources": [
