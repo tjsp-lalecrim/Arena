@@ -1,4 +1,6 @@
-# Arena_FangCells 0.7.0
+# Arena_FangCells 0.8.0
+
+Os montes das alas secas usam o mesmo evento e recibo dos tesouros das celas, com posições geradas pela matriz. Saves anteriores recebem os eventos novos no Map013 sem mudar a posição. [Cobertura dos tesouros](../FANG_CELAS_M02_06A.md#tesouros-das-alas-secas--primeiro-nível).
 
 As celas opcionais reutilizam chaves, portas e tesouros da campanha. A chave de latão é o item 10. As portas têm self-switch A próprio e os quatro montes são reconciliados pelo recibo `container/<id>`. [Fontes e roteiro](../FANG_CELAS_M02_06A.md#celas-opcionais-de-tesouro--primeiro-nível).
 
