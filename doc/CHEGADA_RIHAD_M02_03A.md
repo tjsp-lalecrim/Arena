@@ -1,9 +1,19 @@
 # M02-03A — primeira chegada a Rihad
 
+## Fechamento funcional de Rihad
+
+Os dois vãos de jardim são `0x913B` (`GARDENGD.IMG`, atravessável) entre sebes sólidas `0x903A`. Cada um tem piso seco em uma face e parede sólida `DMNOBLE.SET` na face oposta, sem sobreposição em MAP2. O Map009 conserva os 30 arcos que ligam dois pisos e deixa estes dois sem travessia:
+
+| Vão MIF → MV | Única face livre | Volume oposto |
+| --- | --- | --- |
+| (52,8) → (228,27), NBBD1C | Oeste | MIF (53,8), MAP1 `0x3838` |
+| (57,72) → (213,219), NBBD1D | Norte | MIF (57,73), MAP1 `0x3939` |
+
+O Map011 usa o salão de `PALACE2.MIF`. O acesso de Rihad segue pelo mesmo portão urbano. [Seleção, planta e limites da corte](CORTE_RIHAD_M02_03D.md#interior-palace2--referência-vigente)
 
 ## M02-03E2 — passagens de jardim e quarteirões contíguos
 
-A auditoria da composição CITYW1 +32 MIF confirmou o SHA-256 da composição MAP1. Em `DCN.INF`, `NHEDGED.IMG` corresponde ao registro sólido `0x903A`. O recurso seguinte, `GARDENGD.IMG`, tem `*TRANSWALKTHRU` e aparece como `0x913B`. A conversão anterior tratava todos esses arcos como paredes. A revisão abre os **30 arcos** que ligam pisos secos em faces opostas, começando pelos quarteirões do templo próximo à esplanada e da ala nobre próxima à corte. O vão provisório tem uma faixa central de um tile e mantém as laterais sólidas. Os dois arcos que terminam diretamente em volume sólido, em MIF (52,8) e (57,72), foram registrados para confirmação antes de abrir. [Planta e lista de conexões](mapas/RIHAD_PERCURSO_M02.json)
+A auditoria da composição CITYW1 +32 MIF confirmou o SHA-256 da composição MAP1. Em `DCN.INF`, `NHEDGED.IMG` corresponde ao registro sólido `0x903A`. O recurso seguinte, `GARDENGD.IMG`, tem `*TRANSWALKTHRU` e aparece como `0x913B`. A conversão anterior tratava todos esses arcos como paredes. A revisão abre os **30 arcos** que ligam pisos secos em faces opostas, começando pelos quarteirões do templo próximo à esplanada e da ala nobre próxima à corte. O vão provisório tem uma faixa central de um tile e mantém as laterais sólidas. Os dois arcos que terminam diretamente em volume sólido, em MIF (52,8) e (57,72), foram confirmados como vãos sem travessia na planta. [Planta e lista de conexões](mapas/RIHAD_PERCURSO_M02.json)
 
 | Quarteirão original | Arcos abertos | Células MIF alcançáveis a mais |
 | --- | ---: | ---: |
@@ -17,7 +27,7 @@ A auditoria da composição CITYW1 +32 MIF confirmou o SHA-256 da composição M
 
 Da chegada, o grafo passa de **7.357 para 7.795** centros MIF alcançáveis. Os 388×388 tiles e os IDs e coordenadas dos eventos permanecem. Nenhum novo diálogo ou interior opcional foi adicionado. O corredor da campanha mantém Ria, informante, repouso, Blubamka, Stonekeep, Fang Lair e seus retornos. Saves dos setores existentes mantêm a posição e usam a nova colisão ao carregar.
 
-**Próximo recorte de materiais.** Rua e passeio, muro baixo e arco de jardim, além de módulos de fachada com vãos legíveis, precisam de um atlas exterior de Rihad. A costa permanece bloqueada na margem prevista. Os acessos comerciais e residenciais mantêm o exterior, com interiores fora do recorte. O interior original da corte e os dois arcos sem saída permanecem em conferência. [Famílias visuais](#famílias-visuais-de-rihad)
+**Próximo recorte de materiais.** Rua e passeio, muro baixo e arco de jardim, além de módulos de fachada com vãos legíveis, precisam de um atlas exterior de Rihad. A costa permanece bloqueada na margem prevista. Os acessos comerciais e residenciais mantêm o exterior, com interiores fora do recorte. A variante da corte e os dois vãos sem saída foram verificados no [fechamento funcional](#fechamento-funcional-de-rihad). [Famílias visuais](#famílias-visuais-de-rihad)
 
 **Avaliação integrada pendente.** A partir da chegada, siga para o pátio do templo pelo arco MIF (13,35), MV (345,108), atravesse e volte pelo mesmo vão. Continue pela cidade até a corte, preservando os passos normais da missão. [Arena local](http://127.0.0.1:8774/) · [Teste Rihad e Stonekeep](evidencias/m02-rihad-passagens/resultado.json) · [Teste Fang Lair e retorno a Rihad](evidencias/m02-rihad-passagens/fang-lair.json)
 
@@ -58,7 +68,7 @@ No primeiro carregamento de um save da antiga esplanada, o jogo retoma no portã
 | 103 | NBBD7B | BSBD16A | TVBD7D | R | R | R |
 
 - **Acessos MIF.** Portão urbano em (13,0)/(14,0), pelo `*MENU 8/7` de DCN. O conjunto do palácio está na borda oposta em (8,127)/(9,127), atrás de uma entrada interna em (8,124)/(9,124). No grafo conservador de pisos secos, células vazias e decorações, há 139 passos de (13,1) a (8,123), antes de tratar as portas de acesso. A passagem foi deduzida dos dados, sem testar colisões adaptadas. Espelhar X por `127−X` na leitura superior adotada nas dungeons. Com escala 3 e margem 2, a referência dá **388×388 tiles**, contra 274×274 já testados em Stonekeep. Medir a carga antes de fixar escala e distribuição de eventos.
-- **Delta da amostra.** Map009 e Map011 preservam a chegada e a audiência já jogáveis, mas a estrada, o repouso e o informante têm coordenadas autorais. Reposicionar seus eventos pela rota identificada. Manter as fachadas e acessos urbanos, incluindo os quarteirões sem serviço implementado. Confirmar a variante e o interior do palácio, a margem costeira e a prioridade de decoração antes da arte final.
+- **Delta da amostra.** O levantamento orientou o reposicionamento da chegada, repouso e informante pela rota identificada. Fachadas e acessos urbanos permanecem representados nos quarteirões sem serviços. A variante da corte foi verificada; margem costeira e decoração ainda dependem da etapa de arte.
 - **Entidades.** A composição MAP1 resolve 367 referências a flats no DCN, entre NPCs e objetos, **zero registros de criatura hostil por ITEM 32–54 ou inimigo humano por ITEM 55–72**. O arquivo declara `RAT1.DFA`, mas esse flat não está colocado. Os quatro ratos de Map010 são uma adaptação já coberta pelo catálogo. O dado não conta guardas e encontros dinâmicos do executável ou interiores não abertos.
 
 ### Famílias visuais de Rihad
@@ -67,16 +77,16 @@ No primeiro carregamento de um save da antiga esplanada, o jogo retoma no portã
 
 | Família | Referência original | Decisão frente aos atlas existentes |
 | --- | --- | --- |
-| 1. Rua, passeio e terreno aberto | NROADD, NSIDWALD, NGRASSD | **Nova**. O piso claro de `Arena_Dungeon_M14_R03` serve na prova de percurso, como placeholder |
-| 2. Fachadas, coberturas e vãos comuns | DMBS1–3, DMEQUIP, DMTAVERN, DMMUGUIL, DMTEMPLE, DMNOBLE | **Nova**. Separar módulos residenciais e institucionais. Adaptar componentes de portas onde a silhueta for compatível |
-| 3. Muralha, portão e fachada da corte | CITYWALD, DLGTD, DRGTD, DGATE, BK01/02PALD | **Nova**. Reaproveitar o contrato de colisão/âncora das portas. O atlas castelhano de Stonekeep só serve como referência modular |
+| 1. Rua, passeio e terreno aberto · prioridade alta | NROADD, NSIDWALD, NGRASSD | **Nova**. Começar por piso, borda reta, esquina e junção de rua/passeio reaproveitáveis. O piso claro de `Arena_Dungeon_M14_R03` serve na prova de percurso, como placeholder |
+| 2. Fachadas, coberturas e vãos comuns · prioridade alta | DMBS1–3, DMEQUIP, DMTAVERN, DMMUGUIL, DMTEMPLE, DMNOBLE, NHEDGED, GARDENGD | **Nova**. Começar por base de parede, cimalha, canto e vão padrão reaproveitáveis. Separar ornamentos residenciais e institucionais, sebes e arcos de jardim. Adaptar componentes de portas onde a silhueta for compatível |
+| 3. Muralha, portão e fachada da corte | CITYWALD, DLGTD, DRGTD, DGATE, BK01/02PALD | **Nova**. Reaproveitar batente e contrato de colisão/âncora; portão monumental e fachada do palácio preservam composição local. O atlas castelhano de Stonekeep só serve como referência modular |
 | 4. Costa e transições | SEAWALLD, FLOR 13 | **Adaptar** a superfície existente `Arena_Water_M14_R02_A1` e conferir margem/porto antes de escolher o acabamento |
 | 5. Adereços urbanos e flora | NLAMP1, NWELL, NFOUNT, CACTUS, PALM | **Mista**. Reusar vasos, luzes e pedra onde houver equivalência. Poço, fonte, palmeira e cacto exigem desenho próprio quando necessários ao setor |
-| 6. Interior obrigatório da corte | Conjunto de palácio original, variante ainda a conferir | **Em confirmação**. O Map011 permanece utilizável como corte provisória |
+| 6. Interior obrigatório da corte | `PALACE2.MIF` / `CASTLE.INF` | **Mista**. Reusar pisos e paredes existentes provisoriamente. Priorizar piso modular, tapete com bordas, degrau e batente, aproveitáveis em palácios com a mesma família. Trono, ornamentos e caracterização de Blubamka ficam no conjunto local |
 
-**Contagem de planejamento.** Seis famílias urbanas. Um atlas modular exterior novo é a unidade mínima para rua, fachada e fortificação. Costa pode dividir esse atlas com a superfície já existente. Um atlas interior separado depende da variante do palácio e da capacidade de acomodar suas peças. Informante e Blubamka têm representações provisórias reutilizáveis no teste de mapa. A caracterização futura de Blubamka não é item do atlas nem exige imagem narrativa agora.
+**Contagem de planejamento.** Seis famílias urbanas. Um atlas modular exterior novo é a unidade mínima para rua, fachada e fortificação. Costa pode dividir esse atlas com a superfície já existente. A variante de palácio está identificada. Confirmar o espaço disponível nos atlas existentes antes de reservar um atlas interior separado. Informante e Blubamka têm representações provisórias reutilizáveis no teste de mapa. A caracterização futura de Blubamka não é item do atlas nem exige imagem narrativa agora.
 
-**Próximo recorte jogável.** Importar a estrutura da cidade com os tiles disponíveis como provisórios, testar carregamento e medir a rota contínua **portão urbano → esplanada → portão interno → corte existente**. Transferir os gatilhos de chegada, informante, repouso e estrada por seus IDs atuais. Começar por essa ligação antes de finalizar outros quarteirões, mantendo-os no inventário da planta. [Contagem conjunta de criaturas do M02](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) e [texto da campanha](CAMPANHA_PRINCIPAL.md#inventário-textual).
+**Plano anterior à integração urbana.** Importar a estrutura da cidade com os tiles disponíveis como provisórios, testar carregamento e medir a rota contínua **portão urbano → esplanada → portão interno → corte existente**. Transferir os gatilhos de chegada, informante, repouso e estrada por seus IDs atuais. Começar por essa ligação antes de finalizar outros quarteirões, mantendo-os no inventário da planta. [Contagem conjunta de criaturas do M02](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) e [texto da campanha](CAMPANHA_PRINCIPAL.md#inventário-textual).
 <a id="cobertura-vigente-de-rihad--revisão02112026"></a>
 
 ## Histórico da cobertura — revisão de 02/11/2026

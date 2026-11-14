@@ -1,6 +1,6 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-rihad-passagens'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-rihad-corte'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
 const coverage=read('doc/mapas/FANG_COBERTURA_M02.json');
 const sourcePassages=coverage.levels[0].passages;
@@ -25,7 +25,7 @@ const staff=c.lower.staffPiece,items=read('data/Items.json');
 assert.deepEqual(items.slice(0,staff.itemId),base('data/Items.json'));
 assert.equal(items[staff.itemId].itypeId,2);assert.equal(items[staff.itemId].occasion,3);
 assert.equal(items[staff.itemId].consumable,false);assert.equal(items[staff.itemId].price,0);
-for(const n of ['Map008','Map010','Map011','Map012','Weapons','Armors','Skills','Enemies','Troops','ArenaLoot','ArenaRecovery'])assert.deepEqual(read('data/'+n+'.json'),base('data/'+n+'.json'),n);
+for(const n of ['Map008','Map010','Map012','Weapons','Armors','Skills','Enemies','Troops','ArenaLoot','ArenaRecovery'])assert.deepEqual(read('data/'+n+'.json'),base('data/'+n+'.json'),n);
 const stable=['ArenaFangCells','Items','Map008','Map009','Map010','Map011','Map012','Map013','Map017','MapInfos','ArenaCampaign','ArenaRecovery'],before=stable.map(n=>JSON.stringify(read('data/'+n+'.json')));cp.execFileSync(process.execPath,['tools/build-rihad-arrival.cjs'],{cwd:R});stable.forEach((n,i)=>assert.equal(JSON.stringify(read('data/'+n+'.json')),before[i],'rebuild '+n));
 for(const g of c.gates){assert.equal(map.events[g.eventId].x,g.origin[0]);assert.deepEqual(g.origin,[3+(99-g.sourceOriginal[0])*3,3+g.sourceOriginal[1]*3]);}
 const types={'.html':'text/html','.js':'application/javascript','.json':'application/json','.png':'image/png','.css':'text/css','.ttf':'font/ttf'},server=http.createServer((req,res)=>{const u=decodeURIComponent(new URL(req.url,'http://test').pathname),f=path.resolve(R,'.'+(u==='/'?'/index.html':u));if(!f.startsWith(R+path.sep)){res.writeHead(403);return res.end();}fs.readFile(f,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':types[path.extname(f)]||'application/octet-stream','Cache-Control':'no-store'});res.end(e?'':b);});});
@@ -104,10 +104,10 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  await p.evaluate(text=>{DataManager.extractSaveContents(JsonEx.parse(text));SceneManager.goto(Scene_Map);},fixture);await ready();
  assert.equal(await p.evaluate(()=>ArenaContinuation.labActive()),false);
  assert.equal(await p.evaluate(()=>ArenaCourtDelivery.destination().available),false);
- await walk([8,6]);await p.evaluate(()=>$gamePlayer.setDirection(8));await press('Enter');await select(0);await messages();await ready();
+ await walk(await p.evaluate(()=>{const e=$gameMap.event($arenaRihad.court.queenEventId);return [e.x,e.y+1];}));await p.evaluate(()=>$gamePlayer.setDirection(8));await press('Enter');await select(0);await messages();await ready();
  assert.equal(await p.evaluate(()=>ArenaCourtDelivery.destination().available),true);
  assert.equal(await p.evaluate(()=>$gameParty.numItems($dataItems[7])),0);
- await walk([8,10]);await press('ArrowDown');await p.waitForFunction(()=>$gameMap.mapId()===9&&!$gamePlayer.isTransferring());await ready();
+ await walk(await p.evaluate(()=>{const e=$gameMap.event($arenaRihad.court.exitEventId);return [e.x,e.y-1];}));await press('ArrowDown');await p.waitForFunction(()=>$gameMap.mapId()===9&&!$gamePlayer.isTransferring());await ready();
  await travel(2);await ready();assert.equal(await p.evaluate(()=>$gameMap.mapId()),9);
  await travel(0);await p.waitForFunction(()=>$gameMap.mapId()===13&&!$gamePlayer.isTransferring());await ready();
  assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]),c.entry);
@@ -486,5 +486,5 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
  checks.push('All new placements are reachable on their respective levels; one real contact and persistent defeat per level in a disposable save');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'fang-lair.json'),JSON.stringify({base:'fea73e0',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'fang-lair.json'),JSON.stringify({base:'84176ea',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

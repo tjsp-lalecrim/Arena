@@ -7,7 +7,7 @@ const { coverage, url } = require('./test-stonekeep-coverage.cjs');
 const battleControls = require('./battle-test-controls.cjs');
 
 const root = path.resolve(__dirname, '..');
-const output = path.join(root, 'doc/evidencias/m02-rihad-passagens/resultado.json');
+const output = path.join(root, 'doc/evidencias/m02-rihad-corte/resultado.json');
 const { gardenAccess } = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
 const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
     .map(name => path.join(root, 'data', name + '.json'));
@@ -325,13 +325,32 @@ async function run() {
         assert.deepEqual(await position(), [x,y+2]);
         checks.push('30 vãos de jardim conectados ao portão, só nos lados confirmados. Travessia por teclado e save/load no pátio do templo sem mudar MQ02.');
         const citySteps = await approachCourt();
-        await walk([8,6]);
+        const inCourt = await state();
+        const courtEntry = await position();
+        const oldCourt = JSON.parse(execFileSync('git', ['show', '84176ea:data/Map011.json'], { cwd: root, encoding: 'utf8' }));
+        await page.evaluate(oldCourt => {
+            const current = $dataMap;
+            try {
+                $dataMap = oldCourt;
+                $gameMap.setup(11);
+                $gamePlayer.locate(8,6);
+            } finally {
+                $dataMap = current;
+            }
+        }, oldCourt);
+        await save(20);
+        await reload(20, 11);
+        assert.deepEqual(await position(), courtEntry);
+        assert.deepEqual(await state(), inCourt);
+        assert.deepEqual(await eventPosition(2), [81,90]);
+        checks.push('Save do antigo Map011 retoma na entrada de PALACE2 e preserva personagem, inventário, MQ02 e recibos.');
+        await walk(await eventPosition(2, 1));
         await talk(8);
         await chooseFirst();
         await settle();
         assert.equal(await stage(), 40);
         console.log('PASS pedido da corte');
-        await walk([8,10]);
+        await walk(await eventPosition(1, -1));
         await key('ArrowDown');
         await map(9);
         const beforeTravel = await state();
@@ -429,7 +448,7 @@ async function run() {
         assert.deepEqual(await state(), beforeCitySave);
         const cityReturnSteps = await approachCourt();
         checks.push('Map009 388×388, portão e arredores, esplanada e corte por caminhada nativa, posição e estado restaurados em Rihad com pergaminho');
-        await walk([8,6]);
+        await walk(await eventPosition(2, 1));
         await talk(8);
         await chooseFirst();
         await settle();
@@ -438,13 +457,18 @@ async function run() {
         assert.equal(await page.evaluate(() => ArenaPersistence.sourceStatus('stonekeep.parchment').active), false);
         assert((await state()).arena.quests.MQ02.receipts['MQ02.rihad.parchment']);
         const delivered = await state();
+        const audiencePosition = await position();
+        await save(20);
+        await reload(20, 11);
+        assert.deepEqual(await position(), audiencePosition);
+        assert.deepEqual(await state(), delivered);
         await talk(8);
         await settle();
         assert.deepEqual(await state(), delivered);
         checks.push('Percurso contínuo dentro de Stonekeep até o pergaminho e de volta à saída; recuperação antes da entrega, entrega explícita 50→60 retira uma unidade e aposenta a fonte');
 
         console.log('PASS entrega e retorno');
-        await walk([8,10]);
+        await walk(await eventPosition(1, -1));
         await key('ArrowDown');
         await map(9);
         const oldCity = JSON.parse(execFileSync('git', ['show', '1f0fef4:data/Map009.json'], { cwd: root, encoding:'utf8' }));
@@ -499,7 +523,7 @@ async function run() {
         assert.deepEqual(errors, []);
         assert.deepEqual(missing, []);
         fs.mkdirSync(path.dirname(output), { recursive: true });
-        fs.writeFileSync(output, JSON.stringify({ base:'fea73e0', browser:browser.version(), checks, garden,
+        fs.writeFileSync(output, JSON.stringify({ base:'84176ea', browser:browser.version(), checks, garden,
             topology, steps:{ outward, home, citySteps, cityReturnSteps }, routeDoors, sample:{ enemy, treasure:treasure.id, refuge:refuge.id },
             errors, missing }, null, 2) + '\n');
         console.log(checks.join('\n'));
