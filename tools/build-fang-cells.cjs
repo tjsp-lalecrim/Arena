@@ -4,9 +4,17 @@ const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),write=(n,v)=>fs
 function terrain(rows,s,m){
  const w=rows[0].length*s+2*m,h=rows.length*s+2*m,data=Array(w*h*6).fill(0);
  const cell=(x,y)=>rows[Math.floor((y-m)/s)]?.[Math.floor((x-m)/s)]||'#';
+ // 3×3 elbows. A closed side keeps its full border solid, including the
+ // corner tile, so finer MV movement cannot connect a third source cell.
+ const cornerMasks={'1':['#..','#..','###'],'2':['..#','..#','###'],
+                    '3':['###','#..','#..'],'4':['###','..#','..#']};
+ function solidAt(x,y){
+  const value=cell(x,y),mask=cornerMasks[value];
+  return mask?mask[(y-m)%s][(x-m)%s]==='#':value==='#';
+ }
  for(let y=0;y<h;y++)for(let x=0;x<w;x++){
-  const value=cell(x,y),solid=value==='#',dy=(y-m+s)%s;
-  data[y*w+x]=solid?(cell(x,y+s)!=='#'?(dy===0?4:5+x%2+(dy-1)*8):4):value==='='||value==='+'?9:1+x%2+y%2*8;
+  const value=cell(x,y),solid=solidAt(x,y),dy=(y-m+s)%s;
+  data[y*w+x]=solid?(cell(x,y)==='#'&&cell(x,y+s)!=='#'?(dy===0?4:5+x%2+(dy-1)*8):4):value==='='||value==='+'?9:1+x%2+y%2*8;
   data[(5*h+y)*w+x]=solid?1:4;
  }
  return {width:w,height:h,data};

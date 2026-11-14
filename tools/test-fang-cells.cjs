@@ -1,8 +1,26 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-alas'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-conexoes'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
 const coverage=read('doc/mapas/FANG_COBERTURA_M02.json');
+const sourcePassages=coverage.levels[0].passages;
+const originalBase=JSON.parse(cp.execFileSync('git',['show','37a5272:doc/mapas/FANG_COBERTURA_M02.json'],{cwd:R,encoding:'utf8'}));
+assert.deepEqual(coverage.levels.map(level=>level.encounters),originalBase.levels.map(level=>level.encounters));
+const mv=([x,y])=>[3+3*(99-x),3+3*y];
+const tileRegion=(x,y)=>map.data[(5*map.height+y)*map.width+x];
+assert.equal(sourcePassages.corners.length,138);
+for(const [x,y,word,faces] of sourcePassages.corners){
+ const [mx,my]=mv([x,y]);
+ assert.match(word,/^D[01][0-9A-F]{2}$/);
+ assert.equal(tileRegion(mx,my),4);
+ for(const [face,dx,dy] of [['N',0,-1],['S',0,1],['E',-1,0],['W',1,0]]){
+  const edge=[-1,0,1].map(n=>tileRegion(mx+dx+(dy?n:0),my+dy+(dx?n:0)));
+  assert.equal(edge.some(region=>region===4),faces.includes(face),`corner ${x},${y} ${face}`);
+ }
+}
+for(const [x,y] of [[3,7],[7,6],[67,43],[92,38],[6,49],[7,49],[18,77],[73,80],[22,88],[23,88]]){
+ assert.equal(tileRegion(...mv([x,y])),1,`unconfirmed crossing ${x},${y}`);
+}
 const staff=c.lower.staffPiece,items=read('data/Items.json');
 assert.deepEqual(items.slice(0,staff.itemId),base('data/Items.json'));
 assert.equal(items[staff.itemId].itypeId,2);assert.equal(items[staff.itemId].occasion,3);
@@ -95,6 +113,24 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]),c.entry);
  await walk([c.arrivalText[0],c.arrivalText[1]-1]);await press('ArrowDown');await p.waitForFunction(()=>$gameMessage.isBusy());await messages();await ready();
  assert.equal((await snapshot()).q.objectives.fangEntryRead,true);
+ // Simulate a Map013 save created before the terrain changed. Its events and
+ // coordinates were deliberately retained. The map file must supply the new floor.
+ const landing=mv([4,5]),island=mv([4,8]);
+ await walk(landing);
+ const facing=await p.evaluate(()=>$gamePlayer.direction());
+ const priorPitState=await snapshot();
+ await save(29);await load(29);
+ assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction()]),[...landing,facing]);
+ await walk(mv([4,6]));await walk(island);
+ await walk(mv([4,13]));await walk(mv([4,14]));
+ await walk(mv([4,13]));await walk(island);await walk(mv([4,6]));await walk(landing);
+ const corner=sourcePassages.corners.find(([x,y])=>x===9&&y===3);
+ assert(corner);
+ await walk(mv([9,3]));
+ assert.deepEqual(await p.evaluate(()=>[2,4,6,8].filter(d=>$gamePlayer.canPass($gamePlayer.x,$gamePlayer.y,d))),[2,6]);
+ await walk(landing);
+ assert.deepEqual(await snapshot(),priorPitState);
+ checks.push('Both dry-pit crossings are traversable in each direction after save/load; rounded corner exposes its two source faces and preserves quest state');
  await walk([c.cellsEntry[0],c.cellsEntry[1]-1]);await press('ArrowDown');await p.waitForFunction(()=>$gameMessage.isBusy());await messages();await ready();
  assert.equal((await snapshot()).q.objectives.fangCellsSeen,true);
  let s=await snapshot();assert.equal(s.q.stage,60);assert.equal(s.count,0);assert.equal(s.q.completed,false);
@@ -103,7 +139,9 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  const upperWings=await inspectWings(1);
  const upperDefeat=await defeatWing([24,2]);
  const upperLoot=await p.evaluate(()=>ArenaLoot.snapshot());
+ const upperBeforeReload=await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction()]);
  await save(26);await load(26);
+ assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction()]),upperBeforeReload);
  assert.equal(await p.evaluate(id=>ArenaPersistence.snapshot().enemies[id].defeated,upperDefeat),true);
  assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),upperLoot);
  console.log('PASS viagem e circulação, ala superior');
@@ -356,5 +394,5 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
  checks.push('All new placements are reachable on their respective levels; one real contact and persistent defeat per level in a disposable save');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'cb05410',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'37a5272',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
