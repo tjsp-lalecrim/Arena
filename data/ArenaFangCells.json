@@ -325,7 +325,12 @@
         "text": "Usarei a mesma ponte dos sonhos para enviar meus servos através do tempo e do espaço. Eles vêm tomar o fragmento. Entregue-o e sua morte será rápida. Resista e sofrerá a ponto de implorar pelo fim."
       }
     ],
-    "pending": "A retaliação de Tharn continua pendente. Você pode salvar aqui e retomar deste ponto quando o encontro estiver disponível.",
-    "missing": "O fragmento não está no inventário. Volte à sala do segundo nível para recuperá-lo."
+    "missing": "O fragmento não está no inventário. Volte à sala do segundo nível para recuperá-lo.",
+    "encounter": {
+      "id": "fang.retaliation",
+      "name": "Servo de Tharn",
+      "troopId": 5,
+      "enemyId": 4
+    }
   }
 }
