@@ -2,6 +2,20 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Ilha dos ghouls — verificação da travessia de lava
+
+O guia local de Fang Lair (PDF p.5, *Notes* e planta do segundo nível) descreve a ida e a volta por um longo trecho de lava usando **uma poção de resistência ao fogo para cada sentido**. Como alternativa, descreve abrir um túnel com **Passwall**. O guia confirma a travessia no original, mas não indica as células exatas ou uma passagem específica sob a parede. A leitura abaixo usa o segundo `LEVL` de `42068779.MIF`, com o SHA-256 já registrado, e `FANG2.INF` no `GLOBAL.BSA` (`*LAVACHASM MLAVA.IMG`). [Matriz e coordenadas](mapas/FANG_COBERTURA_M02.json)
+
+| Trecho | Evidência em coordenadas MIF |
+| --- | --- |
+| Margem da rota atual | (72,58) é piso seco e (72,57) é lava aberta, `FLOR 0x0E00` com MAP1 vazio. |
+| Separação | A lava de (72,56), X72–86/Y55 e (86,56) coincide com MAP1 de parede sólida. A rota cardinal via FLOR de lava só conecta os lados se ignorar pelo menos 17 dessas células com parede. |
+| Margem da ilha e retorno | X84–88/Y57–58 é lava aberta. Ao sul há uma sala seca de 5×5 (X84–88/Y59–63). Os ghouls ficam em (84,61) e (87,61), MAP1 `0x8038` → `GHOUL.DFA / ITEM41`. A região seca e sua margem não se conectam à rota principal com a colisão atual em nenhum sentido. |
+
+A verificação cardinal no plano encontrou dois componentes separados, com 200 células de lava aberta do lado da campanha e dez do lado dos ghouls. Esse resultado é uma leitura das camadas e da grade, sem observação da travessia no executável. Uma adaptação precisaria primeiro localizar a passagem legítima e definir como representar sua folga, ou tratar Passwall como mecânica própria. A natação atual é de água e o piso de dano nativo não oferece resistência ao fogo na travessia. Abrir o trecho como água ou piso comum removeria o risco documentado.
+
+O Map017 e os saves permanecem iguais. A cobertura segue em **15/19** no segundo nível. O próximo recorte independente com os recursos atuais é o par de **celas de tesouro do primeiro nível** em (91,78)/(95,78). O guia (PDF p.4) e `FANG1.INF TEXT3` vinculam as chaves de latão opcionais ao `LOCK 15`. As salas secas, as portas e os componentes de chave/tesouro existentes permitem trabalhar essa ala sem avançar o enigma principal.
+
 ## Conexões do primeiro nível — revisão de 14/11/2026
 
 A revisão cruza MAP1 e FLOR de `42068779.MIF`, `FANG1.INF`, a planta publicada no guia local de Fang Lair (PDF p.5) e a descrição de salto do `Manual.pdf` instalado (PDF p.4). O layout do Map013 preserva dimensões, projeção, IDs e a rota anterior. [Matriz de passagens](mapas/FANG_COBERTURA_M02.json)

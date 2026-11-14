@@ -2501,7 +2501,92 @@
           66,
           76
         ]
-      ]
+      ],
+      "lavaAccessAudit": {
+        "base": "86c02c7",
+        "sources": [
+          "42068779.MIF second LEVL: MAP1/FLOR",
+          "GLOBAL.BSA: FANG2.INF *LAVACHASM MLAVA.IMG",
+          "doc/wiki/Arena_Fang Lair (quest), PDF p.5: map and Notes"
+        ],
+        "dryAccessFromCampaign": [
+          72,
+          58
+        ],
+        "rimFromCampaign": [
+          72,
+          57
+        ],
+        "islandDryBounds": [
+          84,
+          88,
+          59,
+          63
+        ],
+        "islandLavaBounds": [
+          84,
+          88,
+          57,
+          58
+        ],
+        "encounters": [
+          [
+            84,
+            61
+          ],
+          [
+            87,
+            61
+          ]
+        ],
+        "wallOverLava": [
+          {
+            "x": [
+              72,
+              86
+            ],
+            "y": 55
+          },
+          {
+            "x": [
+              72,
+              72
+            ],
+            "y": 56
+          },
+          {
+            "x": [
+              86,
+              86
+            ],
+            "y": 56
+          }
+        ],
+        "classification": {
+          "lavaFloor": "FLOR high byte 0x0E",
+          "wall": "MAP1 same nonzero high and low bytes, here 0x1717–0x1A1A",
+          "lavaWithWallIsCandidateNotConfirmed": "The same coordinate declares both a lava floor and a wall volume. Underpass clearance or another legitimate crossing is unverified."
+        },
+        "graph": {
+          "adjacency": "cardinal, source coordinates, plus previously adapted campaign floor; open MAP1/flat/0x91xx only",
+          "campaignComponent": {
+            "cells": 899,
+            "openLavaCells": 200
+          },
+          "islandComponent": {
+            "cells": 35,
+            "openLavaCells": 10
+          },
+          "connected": false,
+          "minimumWallOverLavaCellsIfIgnoringTheirCollision": 17
+        },
+        "guide": "The guide describes swimming both ways using Resist Fire, or carving a tunnel with Passwall. It does not identify the crossing cells.",
+        "blockedBy": [
+          "No verified crossing of the separating wall volumes",
+          "No implemented map lava damage with protection or Passwall. Normal water and native floor damage do not supply these rules."
+        ],
+        "decision": "pending; preserve the existing Map017 and both ghoul placements without adding encounters"
+      }
     }
   ],
   "coordinates": "MIF original zero-based. MV x=3+3*(crop.maxX-x), y=3+3*(y-crop.minY). crop=[minX,maxX,minY,maxY].",
@@ -2582,7 +2667,7 @@
         59,
         63
       ],
-      "dependency": "lava, bordas e regra segura de travessia"
+      "dependency": "rota de lava separada por MAP1 sólido; confirmar passagem e regra de lava/proteção ou Passwall (levels[1].lavaAccessAudit)"
     },
     {
       "level": 2,
