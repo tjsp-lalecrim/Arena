@@ -16,7 +16,22 @@ function build(map, config, recovery) {
     const width = rows[0].length * scale + 2 * margin;
     const height = rows.length * scale + 2 * margin;
     const data = Array(width * height * 6).fill(0);
-    const cell = (x, y) => rows[Math.floor((y - margin) / scale)]?.[Math.floor((x - margin) / scale)] ?? '#';
+    const passages = new Map(source.gardenAccess.passages.map(({ original: [x, y], axis }) => [
+        y * rows[0].length + rows[0].length - 1 - x, axis,
+    ]));
+    function cell(x, y) {
+        const tileX = x - margin;
+        const tileY = y - margin;
+        const col = Math.floor(tileX / scale);
+        const row = Math.floor(tileY / scale);
+        const value = rows[row]?.[col] ?? '#';
+        if (col < 0 || col >= rows[0].length) return value;
+        const axis = passages.get(row * rows[0].length + col);
+        if (!axis) return value;
+        // Keep the edge of the hedge on both sides of the original opening.
+        const cross = axis === 'north-south' ? tileX : tileY;
+        return cross % scale === Math.floor(scale / 2) ? '2' : '#';
+    }
     const isSolid = value => value === '#' || value === '~';
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < width; x++) {
@@ -53,7 +68,7 @@ function build(map, config, recovery) {
     Object.assign(restPoint, rest, { source: 'MQ02-03E2: repouso autorizado na esplanada inicial de Rihad, posição adaptada.' });
     Object.assign(map, {
         width, height, data,
-        note: 'M02-03E2: CITYW1 e 32 quarteirões. Pisos, fachadas, portões e eventos provisórios. Map009 urbano.',
+        note: 'M02-03E2: CITYW1 e 32 quarteirões; passagens de jardim DCN e fachadas provisórias. Map009 urbano.',
     });
     fs.writeFileSync(path.join(root, 'data/ArenaRecovery.json'), JSON.stringify(recovery, null, 2) + '\n');
 }
