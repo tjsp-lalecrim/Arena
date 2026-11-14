@@ -313,5 +313,19 @@
         "O primeiro fragmento do Cajado do Caos brilha uma vez e se apaga, revelando um pedaço de ébano opaco. Ele pulsa, como se aguardasse a união com os outros sete."
       ]
     }
+  },
+  "retaliation": {
+    "blocks": [
+      {
+        "id": "MQ02.fang.retaliation.01",
+        "text": "Jagar Tharn: Não sei quem você é, mas cometeu um erro fatal. Ria Silmane e seus poderes frágeis não podem protegê-lo. Eu deveria ter destruído a forma dela quando tive a chance."
+      },
+      {
+        "id": "MQ02.fang.retaliation.02",
+        "text": "Usarei a mesma ponte dos sonhos para enviar meus servos através do tempo e do espaço. Eles vêm tomar o fragmento. Entregue-o e sua morte será rápida. Resista e sofrerá a ponto de implorar pelo fim."
+      }
+    ],
+    "pending": "A retaliação de Tharn continua pendente. Você pode salvar aqui e retomar deste ponto quando o encontro estiver disponível.",
+    "missing": "O fragmento não está no inventário. Volte à sala do segundo nível para recuperá-lo."
   }
 }
