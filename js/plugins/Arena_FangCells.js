@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.5.0 Fang Lair: da viagem à retaliação de Tharn.
+ * @plugindesc v0.6.0 Fang Lair: alas secas, enigmas e retaliação.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
  * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
@@ -232,10 +232,18 @@ var ArenaFangCells;
    $gamePlayer.reserveTransfer(c().mapId,c().entry[0],c().entry[1],2,0);
    $gamePlayer.requestMapReload();
   }
-  // Saves of the previous Map017 contain the old event list. Reload it in place.
-  var lower=c().lower;
-  if(below()&&!$gamePlayer.isTransferring()&&!$gameMap.event(lower.staffPiece.eventId)){
-   $gamePlayer.reserveTransfer(lower.mapId,$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction(),2);
+  // The expanded lower crop preserves every prior source cell, translated in MV.
+  var lower=c().lower,stair=below()&&$gameMap.event(1);
+  if(stair&&stair.x===lower.previousStair[0]&&stair.y===lower.previousStair[1]&&
+     (!$gamePlayer.isTransferring()||$gamePlayer.newMapId()===lower.mapId)){
+   var x=$gamePlayer.isTransferring()?$gamePlayer._newX:$gamePlayer.x;
+   var y=$gamePlayer.isTransferring()?$gamePlayer._newY:$gamePlayer.y;
+   var direction=$gamePlayer.isTransferring()?$gamePlayer._newDirection:$gamePlayer.direction();
+   x+=lower.stair[0]-stair.x;
+   y+=lower.stair[1]-stair.y;
+   var wall=lower.legacyWallRelocation;
+   if(x>=wall.x[0]&&x<=wall.x[1]&&y>=wall.y[0]&&y<=wall.y[1])x=wall.safeX;
+   $gamePlayer.reserveTransfer(lower.mapId,x,y,direction,2);
    $gamePlayer.requestMapReload();
   }
   createMap.apply(this,arguments);
@@ -246,8 +254,8 @@ var ArenaFangCells;
  }sync();if(below())syncLower();};
  var passage=Game_Map.prototype.isPassable;
  Game_Map.prototype.isPassable=function(x,y,d){
-  if(below()&&!lowerDoorOpen()&&Math.abs(x-c().lower.door[0])<=1&&Math.abs(y-c().lower.door[1])<=1)return false;
-  if(here()&&c().gates.some(function(g){return !opened(g)&&Math.abs(x-g.origin[0])<=1&&Math.abs(y-g.origin[1])<=1;}))return false;return passage.apply(this,arguments);};
+  if(below()&&Math.abs(x-c().lower.door[0])<=1&&Math.abs(y-c().lower.door[1])<=1&&!lowerDoorOpen())return false;
+  if(here()&&c().gates.some(function(g){return Math.abs(x-g.origin[0])<=1&&Math.abs(y-g.origin[1])<=1&&!opened(g);}))return false;return passage.apply(this,arguments);};
  var choice=Window_ChoiceList.prototype.start;
  Window_ChoiceList.prototype.start=function(){choice.apply(this,arguments);if(here()||below()||($gameMap.mapId()===$arenaRihad.arrival.mapId&&$gameMap._interpreter.eventId()===ArenaStonekeep.configuration().travelEventId)){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
  var end=Window_Message.prototype.terminateMessage;
