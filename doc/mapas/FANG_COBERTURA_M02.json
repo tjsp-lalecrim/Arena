@@ -2172,7 +2172,171 @@
             }
           ]
         }
-      ]
+      ],
+      "treasures": [
+        {
+          "original": [
+            71,
+            4
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "status": "pending",
+          "area": "nordeste de aranhas",
+          "dependency": "passagem da ala ainda não confirmada"
+        },
+        {
+          "original": [
+            57,
+            19
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "id": "fang.treasure.mif.57.19",
+          "eventId": 76,
+          "status": "dry"
+        },
+        {
+          "original": [
+            13,
+            21
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "id": "fang.treasure.mif.13.21",
+          "eventId": 77,
+          "status": "dry"
+        },
+        {
+          "original": [
+            96,
+            34
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "status": "pending",
+          "area": "nordeste de aranhas",
+          "dependency": "passagem da ala ainda não confirmada"
+        },
+        {
+          "original": [
+            5,
+            51
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "status": "pending",
+          "area": "câmara do Fantasma",
+          "dependency": "passagem da ala ainda não confirmada"
+        },
+        {
+          "original": [
+            89,
+            77
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "id": "fang.treasure.mif.89.77",
+          "eventId": 22,
+          "status": "optional-cell"
+        },
+        {
+          "original": [
+            96,
+            77
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "id": "fang.treasure.mif.96.77",
+          "eventId": 26,
+          "status": "optional-cell"
+        },
+        {
+          "original": [
+            90,
+            79
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "id": "fang.treasure.mif.90.79",
+          "eventId": 23,
+          "status": "optional-cell"
+        },
+        {
+          "original": [
+            97,
+            79
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "id": "fang.treasure.mif.97.79",
+          "eventId": 27,
+          "status": "optional-cell"
+        },
+        {
+          "original": [
+            7,
+            97
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "status": "pending",
+          "area": "salas secretas ao sul",
+          "dependency": "passagem da ala ainda não confirmada"
+        },
+        {
+          "original": [
+            8,
+            97
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "status": "pending",
+          "area": "salas secretas ao sul",
+          "dependency": "passagem da ala ainda não confirmada"
+        },
+        {
+          "original": [
+            7,
+            98
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "status": "pending",
+          "area": "salas secretas ao sul",
+          "dependency": "passagem da ala ainda não confirmada"
+        },
+        {
+          "original": [
+            8,
+            98
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "status": "pending",
+          "area": "salas secretas ao sul",
+          "dependency": "passagem da ala ainda não confirmada"
+        }
+      ],
+      "treasureCoverage": {
+        "total": 13,
+        "optional-cell": 4,
+        "dry": 2,
+        "pending": 7
+      }
     },
     {
       "level": 2,
@@ -2650,6 +2814,86 @@
           "No implemented map lava damage with protection or Passwall. Normal water and native floor damage do not supply these rules."
         ],
         "decision": "pending; preserve the existing Map017 and both ghoul placements without adding encounters"
+      },
+      "treasures": [
+        {
+          "original": [
+            85,
+            60
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "status": "pending",
+          "area": "ilha dos ghouls",
+          "dependency": "acesso pela lava"
+        },
+        {
+          "original": [
+            88,
+            60
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "status": "pending",
+          "area": "ilha dos ghouls",
+          "dependency": "acesso pela lava"
+        },
+        {
+          "original": [
+            84,
+            62
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "status": "pending",
+          "area": "ilha dos ghouls",
+          "dependency": "acesso pela lava"
+        },
+        {
+          "original": [
+            85,
+            62
+          ],
+          "resource": "CHESTC.IMG",
+          "item": 7,
+          "flat": 22,
+          "status": "pending",
+          "area": "ilha dos ghouls",
+          "dependency": "acesso pela lava; verificar também o componente de baú"
+        },
+        {
+          "original": [
+            86,
+            62
+          ],
+          "resource": "TREASRE2.IMG",
+          "item": 5,
+          "flat": 10,
+          "status": "pending",
+          "area": "ilha dos ghouls",
+          "dependency": "acesso pela lava"
+        },
+        {
+          "original": [
+            88,
+            63
+          ],
+          "resource": "TREASRE3.IMG",
+          "item": 6,
+          "flat": 11,
+          "status": "pending",
+          "area": "ilha dos ghouls",
+          "dependency": "acesso pela lava"
+        }
+      ],
+      "treasureCoverage": {
+        "total": 6,
+        "optional-cell": 0,
+        "dry": 0,
+        "pending": 6
       }
     }
   ],

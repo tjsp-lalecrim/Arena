@@ -448,5 +448,23 @@
         ]
       }
     ]
-  }
+  },
+  "dryTreasures": [
+    {
+      "id": "fang.treasure.mif.57.19",
+      "eventId": 76,
+      "original": [
+        57,
+        19
+      ]
+    },
+    {
+      "id": "fang.treasure.mif.13.21",
+      "eventId": 77,
+      "original": [
+        13,
+        21
+      ]
+    }
+  ]
 }

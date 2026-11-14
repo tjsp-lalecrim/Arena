@@ -42,6 +42,15 @@ module.exports=function(){
   taken.conditions.selfSwitchValid=true;taken.conditions.selfSwitchCh='A';taken.image.characterName='';
   taken.list=[{code:0,indent:0,parameters:[]}];e.pages.push(taken);return e;
  }
+ function addTreasure(chest){
+  const position=toMap(upperPlan,chest.original);
+  if(events[chest.eventId]||events.some(e=>e&&e.x===position[0]&&e.y===position[1])||
+     upperPlan.rows[chest.original[1]-upperPlan.crop[2]][upperPlan.crop[1]-chest.original[0]]==='#'){
+   throw Error('Fang: invalid treasure placement '+chest.id);
+  }
+  events[chest.eventId]=collectible(chest.eventId,'Tesouro / '+chest.id,position,'ArenaFangCells.takeTreasure(this);',
+   read('data/Map008.json').events[138].pages[0].image);
+ }
  for(const key of optional.keys){
   const position=toMap(upperPlan,key.original);
   const e=collectible(key.eventId,'Chave de latão',position,'ArenaFangCells.brass(this);',read('data/Map008.json').events[127].pages[0].image);
@@ -63,10 +72,7 @@ module.exports=function(){
   interact.pages[0].through=false;
   // Open state belongs to the actual door; runtime makes the access event passable.
   events[cell.interactEventId]=interact;
-  for(const chest of cell.treasures){
-   events[chest.eventId]=collectible(chest.eventId,'Tesouro / '+chest.id,toMap(upperPlan,chest.original),'ArenaFangCells.takeTreasure(this);',
-    read('data/Map008.json').events[138].pages[0].image);
-  }
+  cell.treasures.forEach(addTreasure);
  }
  events[7]=event(7,'Chegada à mina',c.arrivalText,'ArenaFangCells.describe(this, "arrival");');
  events[8]=event(8,'Sala das celas',c.cellsEntry,'ArenaFangCells.describe(this, "intro");');
@@ -95,6 +101,9 @@ module.exports=function(){
   });
  }
  const entries=addEncounters(upperPlan,events,c.spiders);
+ const dryTreasures=upperPlan.treasures.filter(chest=>chest.status==='dry').map(({id,eventId,original})=>({id,eventId,original}));
+ dryTreasures.forEach(addTreasure);
+ write('ArenaFangCells',{...c,dryTreasures});
  if(read('data/MapInfos.json')[13]&&read('data/MapInfos.json')[13].name!=='M02-06 Fang Lair — celas (provisório)')throw Error('Map013 ID occupied');
  write('Map013',{...read('data/Map001.json'),...terrain(upperPlan.rows,3,2),tilesetId:4,displayName:'',note:'Fang Lair: entrada, alas secas e celas. Materiais provisórios.',encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events});
  const infos=read('data/MapInfos.json');infos[13]={id:13,expanded:true,name:'M02-06 Fang Lair — celas (provisório)',order:13,parentId:0,scrollX:0,scrollY:0};
