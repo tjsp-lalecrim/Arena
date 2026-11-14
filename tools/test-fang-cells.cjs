@@ -1,6 +1,6 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-conexoes'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-celas-tesouro'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
 const coverage=read('doc/mapas/FANG_COBERTURA_M02.json');
 const sourcePassages=coverage.levels[0].passages;
@@ -145,6 +145,31 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.equal(await p.evaluate(id=>ArenaPersistence.snapshot().enemies[id].defeated,upperDefeat),true);
  assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),upperLoot);
  console.log('PASS viagem e circulação, ala superior');
+ const optional=c.optionalTreasure;
+ const brass=()=>p.evaluate(id=>$gameParty.numItems($dataItems[id]),optional.itemId);
+ const open=cell=>p.evaluate(id=>$gameSelfSwitches.value([13,id,'A']),cell.doorEventId);
+ const interactDoor=async cell=>{
+  const side=Math.sign(cell.approach[0]-cell.origin[0]);
+  await walk([cell.origin[0]+2*side,cell.origin[1]]);
+  await p.evaluate(d=>$gamePlayer.setDirection(d),side<0?6:4);
+  await press('Enter');await messages();await ready();
+ };
+ const priorUpper=JSON.parse(cp.execFileSync('git',['show','86c02c7:data/Map013.json'],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+ const upperPosition=await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]);
+ await p.evaluate(oldMap=>{
+  const current=$dataMap;
+  try{$dataMap=oldMap;$gameMap._events=$gameMap._events.filter(e=>!e||oldMap.events[e.eventId()]);}
+  finally{$dataMap=current;}
+ },priorUpper);
+ await save(30);await load(30);
+ assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]),upperPosition);
+ assert.deepEqual(await snapshot(),s);
+ assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),upperLoot);
+ for(const cell of optional.cells){
+  await interactDoor(cell);assert.equal(await open(cell),false);
+  assert.equal(await p.evaluate(([x,y])=>$gameMap.isPassable(x,y,4),cell.origin),false);
+ }
+ assert.equal(await brass(),0);
  await riddle(3);assert.deepEqual(await snapshot(),s);checks.push('Native riddle cancel leaves stage 60, key and gates unchanged');
  await riddle(0);s=await snapshot();assert.equal(s.q.stage,60);assert.equal(s.q.objectives.fangSpidersReleased,true);assert.equal(s.count,0);
  assert.deepEqual((await reachable()).spiders,[true,true,true,true]);
@@ -166,6 +191,38 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),loot);
  checks.push('Wrong choice activates four original spiders, native battle defeats one, reload and repeated error preserve independent defeats and loot');
  console.log('PASS erro, aranhas e save');
+ const optionalBefore=await snapshot();
+ for(const key of optional.keys){
+  await walk(mv(key.original));await press('Enter');await messages();await ready();
+  const count=await brass();await press('Enter');await messages();await ready();assert.equal(await brass(),count);
+ }
+ assert.equal(await brass(),2);
+ await save(31);await load(31);assert.equal(await brass(),2);
+ for(const [n,cell] of optional.cells.entries()){
+  await interactDoor(cell);assert.equal(await open(cell),true);assert.equal(await brass(),1-n);
+  assert.equal(await open(optional.cells[1]),n===1);
+  for(const chest of cell.treasures){
+   await walk(mv(chest.original));await press('Enter');await messages();await ready();
+   const loot=await p.evaluate(()=>ArenaLoot.snapshot());
+   const record=loot.receipts['container/'+chest.id];
+   assert(record&&(record.received.length||record.pending.length),'Each source has at least one reward');
+   await press('Enter');await messages();await ready();
+   assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),loot);
+  }
+ }
+ const optionalLoot=await p.evaluate(()=>ArenaLoot.snapshot());
+ await save(32);await load(32);
+ for(const cell of optional.cells){
+  assert.equal(await open(cell),true);
+  await walk(cell.origin);
+  for(const chest of cell.treasures){
+   await walk(mv(chest.original));await press('Enter');await messages();await ready();
+  }
+ }
+ assert.equal(await brass(),0);assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),optionalLoot);
+ assert.deepEqual(await snapshot(),optionalBefore);
+ checks.push('Legacy upper save retains location and opens a registry with both optional cells; no key leaves the locks closed');
+ checks.push('Wrong choice opens access to the two brass keys, each opens exactly one lock; four single-roll receipts and doors survive save/load without changing MQ02');
  await riddle(1);s=await snapshot();assert.equal(s.q.stage,70);assert.equal(s.count,0);assert.equal(s.source.active,true);assert.equal((await reachable()).key,true);assert.equal((await reachable()).limit,false);await walk(c.key);await press('Enter');await messages();await ready();assert.equal((await snapshot()).count,1);await press('Enter');await messages();assert.equal((await snapshot()).count,1);
  // The source can restore a lost key only before the portal consumes it.
  await p.evaluate(()=>$gameParty.loseItem($dataItems[8],1));await press('Enter');await messages();
@@ -394,5 +451,5 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
  checks.push('All new placements are reachable on their respective levels; one real contact and persistent defeat per level in a disposable save');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'37a5272',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'86c02c7',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

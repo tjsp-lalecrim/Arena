@@ -347,5 +347,106 @@
       "troopId": 5,
       "enemyId": 4
     }
+  },
+  "optionalTreasure": {
+    "itemId": 10,
+    "keys": [
+      {
+        "eventId": 5,
+        "original": [
+          91,
+          98
+        ],
+        "cellGateId": "cell1"
+      },
+      {
+        "eventId": 6,
+        "original": [
+          97,
+          98
+        ],
+        "cellGateId": "cell3"
+      }
+    ],
+    "cells": [
+      {
+        "id": "fang.treasure-cell.91",
+        "original": [
+          91,
+          78
+        ],
+        "approachOriginal": [
+          92,
+          78
+        ],
+        "doorEventId": 20,
+        "interactEventId": 21,
+        "treasures": [
+          {
+            "id": "fang.treasure.mif.89.77",
+            "original": [
+              89,
+              77
+            ],
+            "eventId": 22
+          },
+          {
+            "id": "fang.treasure.mif.90.79",
+            "original": [
+              90,
+              79
+            ],
+            "eventId": 23
+          }
+        ],
+        "origin": [
+          27,
+          237
+        ],
+        "approach": [
+          24,
+          237
+        ]
+      },
+      {
+        "id": "fang.treasure-cell.95",
+        "original": [
+          95,
+          78
+        ],
+        "approachOriginal": [
+          94,
+          78
+        ],
+        "doorEventId": 24,
+        "interactEventId": 25,
+        "treasures": [
+          {
+            "id": "fang.treasure.mif.96.77",
+            "original": [
+              96,
+              77
+            ],
+            "eventId": 26
+          },
+          {
+            "id": "fang.treasure.mif.97.79",
+            "original": [
+              97,
+              79
+            ],
+            "eventId": 27
+          }
+        ],
+        "origin": [
+          15,
+          237
+        ],
+        "approach": [
+          18,
+          237
+        ]
+      }
+    ]
   }
 }
