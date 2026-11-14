@@ -7,7 +7,8 @@ const { coverage, url } = require('./test-stonekeep-coverage.cjs');
 const battleControls = require('./battle-test-controls.cjs');
 
 const root = path.resolve(__dirname, '..');
-const output = path.join(root, 'doc/evidencias/m02-rihad-percurso/resultado.json');
+const output = path.join(root, 'doc/evidencias/m02-rihad-passagens/resultado.json');
+const { gardenAccess } = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
 const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
     .map(name => path.join(root, 'data', name + '.json'));
 const bytes = generated.map(file => fs.readFileSync(file));
@@ -15,7 +16,7 @@ execFileSync(process.execPath, ['tools/build-rihad-arrival.cjs'], { cwd: root })
 generated.forEach((file, i) => assert.deepEqual(fs.readFileSync(file), bytes[i], file));
 for (const name of ['Map012', 'Enemies', 'Troops', 'ArenaLoot', 'ArenaCampaign']) {
     const file = 'data/' + name + '.json';
-    const prior = execFileSync('git', ['show', '9c9b802:' + file], { cwd: root, encoding: 'utf8' });
+    const prior = execFileSync('git', ['show', 'fea73e0:' + file], { cwd: root, encoding: 'utf8' });
     assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root, file))), JSON.parse(prior), file);
 }
 
@@ -271,6 +272,58 @@ async function run() {
         await talk(8);
         await settle();
         assert.equal(await stage(), 30);
+        const garden = await page.evaluate(({ passages, deadEnds }) => {
+            const valid = (x, y, d) => $gamePlayer.isMapPassable(x, y, d);
+            const toMap = ([x, y]) => [3 + 3 * (127 - x), 3 + 3 * y];
+            const dims = [$gameMap.width(), $gameMap.height()];
+            const [width, height] = dims;
+            const queue = [$gamePlayer.y * width + $gamePlayer.x];
+            const seen = new Uint8Array(width * height);
+            seen[queue[0]] = 1;
+            for (let i = 0; i < queue.length; i++) {
+                const x = queue[i] % width;
+                const y = Math.floor(queue[i] / width);
+                for (const d of [2, 4, 6, 8]) {
+                    const nx = $gameMap.xWithDirection(x, d);
+                    const ny = $gameMap.yWithDirection(y, d);
+                    const key = ny * width + nx;
+                    if ($gameMap.isValid(nx, ny) && !seen[key] && valid(x, y, d)) {
+                        seen[key] = 1;
+                        queue.push(key);
+                    }
+                }
+            }
+            let reachableCenters = 0;
+            for (let y = 3; y < height; y += 3) {
+                for (let x = 3; x < width; x += 3) reachableCenters += seen[y * width + x];
+            }
+            const failed = passages.filter(({ original, axis }) => {
+                const [x, y] = toMap(original);
+                const directions = [2, 4, 6, 8].filter(d => valid(x, y, d));
+                return !seen[y * width + x] || directions.join() !== (axis === 'north-south' ? '2,8' : '4,6');
+            });
+            return { reachableCenters, failed, blocked: deadEnds.every(({ original }) => {
+                const [x, y] = toMap(original);
+                return [2, 4, 6, 8].every(d => !valid(x, y, d));
+            }) };
+        }, gardenAccess);
+        assert.deepEqual(garden.failed, []);
+        assert.equal(garden.blocked, true);
+        assert.equal(garden.reachableCenters, gardenAccess.reachableFromArrivalAfter);
+
+        // Original temple garden gate at (13,35), close to the campaign route.
+        const [x, y] = [345, 108];
+        await walk([x,y+2]);
+        const beforeGarden = await state();
+        for (let step = 0; step < 4; step++) await key('ArrowUp');
+        assert.deepEqual(await position(), [x,y-2]);
+        await save(20);
+        await reload(20, 9);
+        assert.deepEqual(await position(), [x,y-2]);
+        assert.deepEqual(await state(), beforeGarden);
+        for (let step = 0; step < 4; step++) await key('ArrowDown');
+        assert.deepEqual(await position(), [x,y+2]);
+        checks.push('30 vãos de jardim conectados ao portão, só nos lados confirmados. Travessia por teclado e save/load no pátio do templo sem mudar MQ02.');
         const citySteps = await approachCourt();
         await walk([8,6]);
         await talk(8);
@@ -446,7 +499,7 @@ async function run() {
         assert.deepEqual(errors, []);
         assert.deepEqual(missing, []);
         fs.mkdirSync(path.dirname(output), { recursive: true });
-        fs.writeFileSync(output, JSON.stringify({ base:'9c9b802', browser:browser.version(), checks,
+        fs.writeFileSync(output, JSON.stringify({ base:'fea73e0', browser:browser.version(), checks, garden,
             topology, steps:{ outward, home, citySteps, cityReturnSteps }, routeDoors, sample:{ enemy, treasure:treasure.id, refuge:refuge.id },
             errors, missing }, null, 2) + '\n');
         console.log(checks.join('\n'));

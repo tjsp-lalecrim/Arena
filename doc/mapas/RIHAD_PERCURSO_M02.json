@@ -171,5 +171,270 @@
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1111111111111111111111111111111111112221212###11###222##",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#################################################22########",
     "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#################################################22GG22######"
-  ]
+  ],
+  "gardenAccess": {
+    "resource": "GARDENGD.IMG",
+    "map1": "0x913B",
+    "infDirective": "TRANSWALKTHRU",
+    "passages": [
+      {
+        "original": [
+          47,
+          4
+        ],
+        "block": "NBBD1C.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          49,
+          12
+        ],
+        "block": "NBBD1C.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          55,
+          12
+        ],
+        "block": "NBBD1C.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          44,
+          14
+        ],
+        "block": "NBBD1C.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          59,
+          17
+        ],
+        "block": "NBBD1C.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          55,
+          19
+        ],
+        "block": "NBBD1C.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          49,
+          21
+        ],
+        "block": "NBBD1C.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          14,
+          26
+        ],
+        "block": "TPBD8B.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          21,
+          30
+        ],
+        "block": "TPBD8B.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          17,
+          33
+        ],
+        "block": "TPBD8B.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          13,
+          35
+        ],
+        "block": "TPBD8B.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          96,
+          44
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          90,
+          46
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          86,
+          48
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          101,
+          51
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          90,
+          53
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          96,
+          53
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          107,
+          54
+        ],
+        "block": "EQBD12D.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          93,
+          57
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          98,
+          61
+        ],
+        "block": "NBBD1A.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          51,
+          64
+        ],
+        "block": "NBBD1D.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          61,
+          67
+        ],
+        "block": "NBBD1D.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          44,
+          69
+        ],
+        "block": "NBBD1D.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          53,
+          69
+        ],
+        "block": "NBBD1D.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          46,
+          75
+        ],
+        "block": "NBBD1D.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          53,
+          75
+        ],
+        "block": "NBBD1D.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          48,
+          79
+        ],
+        "block": "NBBD1D.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          10,
+          107
+        ],
+        "block": "NBBD7B.MIF",
+        "axis": "east-west"
+      },
+      {
+        "original": [
+          16,
+          111
+        ],
+        "block": "NBBD7B.MIF",
+        "axis": "north-south"
+      },
+      {
+        "original": [
+          12,
+          118
+        ],
+        "block": "NBBD7B.MIF",
+        "axis": "east-west"
+      }
+    ],
+    "deadEnds": [
+      {
+        "original": [
+          52,
+          8
+        ],
+        "block": "NBBD1C.MIF"
+      },
+      {
+        "original": [
+          57,
+          72
+        ],
+        "block": "NBBD1D.MIF"
+      }
+    ],
+    "reachableFromArrivalBefore": 7357,
+    "reachableFromArrivalAfter": 7795
+  }
 }
