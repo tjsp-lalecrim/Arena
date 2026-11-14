@@ -44,7 +44,7 @@ Fonte da regra: [escopo mínimo funcional](MARCOS_DO_PROJETO.md#escopo-mínimo-f
 | --- | --- | --- |
 | Stonekeep | **Map015 em avaliação de campanha.** Planta 90×90, nove setores, 180 encontros registrados e 70 portas alcançadas. Acessos opcionais, refúgio e tesouros pendentes na matriz. | [Matriz vigente](STONEKEEP_M02_04.md#matriz-vigente) |
 | Rihad | Planta original reconstruída, ainda sem importação para o runtime. Esplanada e corte mínima seguem jogáveis. Integrar o acesso pelo portão urbano e preservar os eventos já funcionais | [Planta e lacunas](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) |
-| Fang Lair | Percurso de MQ02 concluível até Rihad. Map013: 40/76 encontros originais. Map017: 15/19. Faltam 40 posições, incluindo Fantasma, Hell Hounds e ghouls da ilha de lava; demais alas/volumes, tesouros e arte definitiva seguem separados. Avaliação manual em paralelo | [Matriz e dependências](FANG_CELAS_M02_06A.md#alas-secas-dos-dois-níveis--m02-06b-e-m02-07b) |
+| Fang Lair | Percurso de MQ02 concluível até Rihad. Map013: 40/76 encontros e 2.352 células MIF transitáveis em parte ou por inteiro, incluindo 138 cantos e o patamar da entrada. Map017: 15/19. As demais ligações do primeiro nível ainda cruzam paredes ou desníveis sem acesso demonstrado. Fantasma, Hell Hounds, lava, tesouros e arte definitiva seguem separados. Avaliação manual em paralelo | [Matriz e dependências](FANG_CELAS_M02_06A.md#conexões-do-primeiro-nível--revisão-de-14112026) |
 
 ### Ordem revisada — sem renumerar as entregas anteriores
 
