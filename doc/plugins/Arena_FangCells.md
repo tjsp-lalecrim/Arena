@@ -1,4 +1,6 @@
-# Arena_FangCells 0.6.0
+# Arena_FangCells 0.7.0
+
+As celas opcionais reutilizam chaves, portas e tesouros da campanha. A chave de latão é o item 10. As portas têm self-switch A próprio e os quatro montes são reconciliados pelo recibo `container/<id>`. [Fontes e roteiro](../FANG_CELAS_M02_06A.md#celas-opcionais-de-tesouro--primeiro-nível).
 
 A cobertura de Map013 e Map017 é gerada pela matriz `doc/mapas/FANG_COBERTURA_M02.json`. A ampliação de Map017 traduz os saves anteriores em (+9,+51) antes de recarregar o mapa, preservando os IDs de eventos da quest. [Cobertura](../FANG_CELAS_M02_06A.md#alas-secas-dos-dois-níveis--m02-06b-e-m02-07b).
 

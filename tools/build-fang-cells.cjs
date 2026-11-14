@@ -25,8 +25,49 @@ module.exports=function(){
  const toMap=(plan,[x,y])=>[3+3*(plan.crop[1]-x),3+3*(y-plan.crop[2])];
  const base=read('data/Map008.json').events[241].pages[0],event=(id,name,p,script,normal=false)=>{const page=JSON.parse(JSON.stringify(base));page.image.characterName='';page.priorityType=normal?1:0;page.through=true;page.trigger=0;page.list=script?[{code:355,indent:0,parameters:[script]},{code:0,indent:0,parameters:[]}]:[{code:0,indent:0,parameters:[]}];return{id,name,note:'M02-06A — arte provisória, fonte FANG1/42068779',x:p[0],y:p[1],pages:[page]};};
  const events=[null,event(1,'Retornar a Rihad',c.entry,'ArenaFangCells.leave(this);'),event(2,'Portal falante / enigma',[c.riddle[0],c.riddle[1]+1],'ArenaFangCells.interact(this);',true),event(3,'Chave dourada / fang.cell2.key',c.key,'ArenaFangCells.takeKey(this);'),event(4,'Descer para o segundo nível',c.limit,'ArenaFangCells.descend(this);')];
- c.gates.forEach(g=>{const e=event(g.eventId,'Porta provisória / '+g.id,[g.origin[0],g.origin[1]+1],null);e.pages[0].image={characterName:'!$Arena_Doors_M14_R03',characterIndex:0,direction:g.direction,pattern:0,tileId:0};e.pages[0].priorityType=1;e.pages[0].walkAnime=false;e.pages[0].directionFix=true;const open=JSON.parse(JSON.stringify(e.pages[0]));open.conditions.selfSwitchValid=true;open.conditions.selfSwitchCh='A';open.image.pattern=2;e.pages.push(open);events[g.eventId]=e;});
- events[5]=event(5,'Latão / Cela1',[27,297],'ArenaFangCells.brass(this);');events[6]=event(6,'Latão / Cela3',[9,297],'ArenaFangCells.brass(this);');
+ function door(id,name,origin,direction){
+  const e=event(id,name,[origin[0],origin[1]+1],null,true);
+  const page=e.pages[0];
+  page.image={characterName:'!$Arena_Doors_M14_R03',characterIndex:0,direction,pattern:0,tileId:0};
+  page.walkAnime=false;page.directionFix=true;
+  const open=JSON.parse(JSON.stringify(page));open.conditions.selfSwitchValid=true;open.conditions.selfSwitchCh='A';
+  open.image.pattern=2;e.pages.push(open);return e;
+ }
+ c.gates.forEach(g=>{events[g.eventId]=door(g.eventId,'Porta provisória / '+g.id,g.origin,g.direction);});
+ const optional=c.optionalTreasure;
+ function collectible(id,name,origin,script,image){
+  const e=event(id,name,origin,script),page=e.pages[0];
+  page.image={...image};page.walkAnime=false;page.directionFix=true;
+  const taken=JSON.parse(JSON.stringify(page));
+  taken.conditions.selfSwitchValid=true;taken.conditions.selfSwitchCh='A';taken.image.characterName='';
+  taken.list=[{code:0,indent:0,parameters:[]}];e.pages.push(taken);return e;
+ }
+ for(const key of optional.keys){
+  const position=toMap(upperPlan,key.original);
+  const e=collectible(key.eventId,'Chave de latão',position,'ArenaFangCells.brass(this);',read('data/Map008.json').events[127].pages[0].image);
+  // While the cell is closed or the key has been taken, keep its art hidden.
+  const empty=e.pages[1];e.pages=[{...empty,conditions:{...empty.conditions,selfSwitchValid:false}},e.pages[0],empty];
+  e.pages[1].conditions.selfSwitchValid=true;e.pages[1].conditions.selfSwitchCh='B';
+  events[key.eventId]=e;
+ }
+ for(const cell of optional.cells){
+  const planned=upperPlan.optionalTreasureCells.find(v=>v.id===cell.id);
+  const {origin,approach}=cell;
+  if(!planned||JSON.stringify(planned.treasures)!==JSON.stringify(cell.treasures)||
+     origin.join()!==toMap(upperPlan,planned.original).join()||approach.join()!==toMap(upperPlan,planned.approachOriginal).join()){
+   throw Error('Fang: optional cell differs from source plan '+cell.id);
+  }
+  const side=Math.sign(approach[0]-origin[0]);
+  events[cell.doorEventId]=door(cell.doorEventId,'Cela de tesouro / '+cell.id,origin,side<0?6:4);
+  const interact=event(cell.interactEventId,'Fechadura de latão',[origin[0]+side,origin[1]],'ArenaFangCells.openTreasureCell(this);',true);
+  interact.pages[0].through=false;
+  // Open state belongs to the actual door; runtime makes the access event passable.
+  events[cell.interactEventId]=interact;
+  for(const chest of cell.treasures){
+   events[chest.eventId]=collectible(chest.eventId,'Tesouro / '+chest.id,toMap(upperPlan,chest.original),'ArenaFangCells.takeTreasure(this);',
+    read('data/Map008.json').events[138].pages[0].image);
+  }
+ }
  events[7]=event(7,'Chegada à mina',c.arrivalText,'ArenaFangCells.describe(this, "arrival");');
  events[8]=event(8,'Sala das celas',c.cellsEntry,'ArenaFangCells.describe(this, "intro");');
  events[7].pages[0].trigger=1;
@@ -96,6 +137,10 @@ module.exports=function(){
   description:'Fragmento de ébano recuperado em Fang Lair. É a primeira das oito partes do Cajado do Caos.',
   note:'<ArenaQuest: MQ02>\n<ArenaUnique>\n'+staffSource.itemKey+' / '+staff.sourceId};
  staffSource.itemId=staff.itemId;
+ if(items[optional.itemId]&&!items[optional.itemId].note.includes('fang.brass-key'))throw Error('Brass key item ID occupied');
+ items[optional.itemId]={...items[8],id:optional.itemId,name:'Chave de latão de Fang Lair',
+  description:'Abre uma das duas celas opcionais de tesouro. Uma chave é usada por fechadura.',
+  note:'fang.brass-key'};
  write('Items',items);
  Object.assign(campaign.areas.find(area=>area.id===lower.areaId),{mapId:lower.mapId,encounters:{
   schemaVersion:1,mapId:lower.mapId,areaId:lower.areaId,completionQuestId:c.questId,

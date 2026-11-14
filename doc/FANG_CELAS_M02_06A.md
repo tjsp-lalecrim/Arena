@@ -2,6 +2,33 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Celas opcionais de tesouro — primeiro nível
+
+O primeiro `LEVL` de `42068779.MIF` registra as duas portas com MAP1 `0xB016` e `LOCK 15`. As chaves das Celas 1 e 3 aparecem como `KEY.IMG` em (91,98) e (97,98), com `TRIG TEXT3`. Em `FANG1.INF TEXT3`, `+15` corresponde a essas fechaduras. A chave dourada em (94,98) usa `TEXT1 +29` e o portal usa `LOCK 29`. O guia local (*Fang Lair*, PDF p.4) descreve liberar as celas das chaves pelas opções erradas e usar as chaves nos compartimentos de tesouro. [Matriz de cobertura](mapas/FANG_COBERTURA_M02.json)
+
+| Porta MIF | Tesouros MIF e flats |
+| --- | --- |
+| (91,78) | (89,77) `TREASRE3.IMG / ITEM6` e (90,79) `TREASRE2.IMG / ITEM5` |
+| (95,78) | (96,77) `TREASRE2.IMG / ITEM5` e (97,79) `TREASRE3.IMG / ITEM6` |
+
+A adaptação usa as celas erradas já liberadas pelo fluxo existente de MQ02. As duas fontes concedem o mesmo item de latão, uma unidade por fonte. Qualquer uma abre qualquer fechadura 15 e consome uma unidade. O fluxo normal da chave dourada continua separado. A entrada de cada compartimento usa a face voltada ao corredor, e a folha reutiliza o sprite existente. A geometria reabre as 14 células da planta, incluindo os dois vãos. As portas e a coleta das chaves usam self-switches individuais. Os quatro tesouros usam recibos de loot independentes, a tabela já usada pelos tesouros da campanha e a reserva de 2–8 moedas. Essa tabela é uma adaptação do projeto. Saves de Map013 anteriores recarregam os eventos novos na mesma posição.
+
+**Roteiro.** No corredor antes da sala das aranhas, tente abrir uma cela de tesouro. A porta deve pedir latão. No enigma principal, escolha **Cela 1** ou **Cela 3**, vá às extremidades da sala ao sul e recolha as chaves. Volte às portas de tesouro, abra uma com cada chave e recolha os dois montes em cada sala. Salve e carregue. As portas continuam abertas e os montes recolhidos ficam ausentes. Em seguida, resolva o enigma com **Cela 2** e prossiga normalmente. [Arena local](http://127.0.0.1:8774/) · [Evidências automatizadas](evidencias/m02-fang-celas-tesouro/resultado.json)
+
+## Ilha dos ghouls — verificação da travessia de lava
+
+O guia local de Fang Lair (PDF p.5, *Notes* e planta do segundo nível) descreve a ida e a volta por um longo trecho de lava usando **uma poção de resistência ao fogo para cada sentido**. Como alternativa, descreve abrir um túnel com **Passwall**. O guia confirma a travessia no original, mas não indica as células exatas ou uma passagem específica sob a parede. A leitura abaixo usa o segundo `LEVL` de `42068779.MIF`, com o SHA-256 já registrado, e `FANG2.INF` no `GLOBAL.BSA` (`*LAVACHASM MLAVA.IMG`). [Matriz e coordenadas](mapas/FANG_COBERTURA_M02.json)
+
+| Trecho | Evidência em coordenadas MIF |
+| --- | --- |
+| Margem da rota atual | (72,58) é piso seco e (72,57) é lava aberta, `FLOR 0x0E00` com MAP1 vazio. |
+| Separação | A lava de (72,56), X72–86/Y55 e (86,56) coincide com MAP1 de parede sólida. A rota cardinal via FLOR de lava só conecta os lados se ignorar pelo menos 17 dessas células com parede. |
+| Margem da ilha e retorno | X84–88/Y57–58 é lava aberta. Ao sul há uma sala seca de 5×5 (X84–88/Y59–63). Os ghouls ficam em (84,61) e (87,61), MAP1 `0x8038` → `GHOUL.DFA / ITEM41`. A região seca e sua margem não se conectam à rota principal com a colisão atual em nenhum sentido. |
+
+A verificação cardinal no plano encontrou dois componentes separados, com 200 células de lava aberta do lado da campanha e dez do lado dos ghouls. Esse resultado é uma leitura das camadas e da grade, sem observação da travessia no executável. Uma adaptação precisaria primeiro localizar a passagem legítima e definir como representar sua folga, ou tratar Passwall como mecânica própria. A natação atual é de água e o piso de dano nativo não oferece resistência ao fogo na travessia. Abrir o trecho como água ou piso comum removeria o risco documentado.
+
+O Map017 e os saves permanecem iguais. A cobertura segue em **15/19** no segundo nível. As celas de tesouro LOCK 15 do primeiro nível foram integradas separadamente, conforme o registro acima.
+
 ## Conexões do primeiro nível — revisão de 14/11/2026
 
 A revisão cruza MAP1 e FLOR de `42068779.MIF`, `FANG1.INF`, a planta publicada no guia local de Fang Lair (PDF p.5) e a descrição de salto do `Manual.pdf` instalado (PDF p.4). O layout do Map013 preserva dimensões, projeção, IDs e a rota anterior. [Matriz de passagens](mapas/FANG_COBERTURA_M02.json)
@@ -25,7 +52,7 @@ A [matriz de cobertura](mapas/FANG_COBERTURA_M02.json) vincula as 95 posições 
 
 Os novos encontros usam os perfis, inimigos e tabelas de recompensa existentes, com IDs individuais. IDs das quatro aranhas, do primeiro esqueleto, dos itens, recibos e etapas foram mantidos. O Servo de Tharn é um encontro narrativo separado dos 95. O Map017 ampliado desloca a projeção anterior em (+9,+51); saves no recorte antigo são convertidos pelo ponto da escada, preservando posição relativa, direção e derrotas. No entorno da sala, três células (66,74–76) foram restauradas conforme o muro do MAP1, retirando a adaptação antiga que, junto ao piso novo, permitiria contornar a porta do enigma. Saves sobre essas três células retomam no corredor seco adjacente.
 
-As duas celas de tesouro LOCK 15 no primeiro nível seguem pendentes. No segundo, os dez LOCK 10 registrados sobre MAP1 de parede são mantidos na matriz sem abrir vãos por suposição; só a porta confirmada do enigma está ativa. Permanecem pendentes a travessia de poços/desníveis e lava, materiais de mina, ferragens/objetos, arte definitiva das duas espécies e outros elementos opcionais da planta.
+As duas celas de tesouro LOCK 15 no primeiro nível já estão integradas. No segundo, os dez LOCK 10 registrados sobre MAP1 de parede são mantidos na matriz sem abrir vãos por suposição; só a porta confirmada do enigma está ativa. Permanecem pendentes a travessia de poços/desníveis e lava, materiais de mina, ferragens/objetos, arte definitiva das duas espécies e outros elementos opcionais da planta.
 
 **Avaliação no Chrome pelo fluxo normal.** A partir da entrada, explore o ramal seco que leva ao ghoul em MIF (24,2), MV (228,9). Após descer as celas, explore o corredor seco até o esqueleto em MIF (55,90), MV (114,114). Salve após uma vitória e confira que o encontro fica ausente ao carregar. A avaliação manual do percurso principal pode ocorrer em paralelo pelo roteiro abaixo. [Arena local](http://127.0.0.1:8774/) · [Teste integrado](evidencias/m02-fang-alas/resultado.json)
 
