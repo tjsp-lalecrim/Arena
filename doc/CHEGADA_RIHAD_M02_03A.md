@@ -1,6 +1,26 @@
 # M02-03A — primeira chegada a Rihad
 
 
+## M02-03E2 — passagens de jardim e quarteirões contíguos
+
+A auditoria da composição CITYW1 +32 MIF confirmou o SHA-256 da composição MAP1. Em `DCN.INF`, `NHEDGED.IMG` corresponde ao registro sólido `0x903A`. O recurso seguinte, `GARDENGD.IMG`, tem `*TRANSWALKTHRU` e aparece como `0x913B`. A conversão anterior tratava todos esses arcos como paredes. A revisão abre os **30 arcos** que ligam pisos secos em faces opostas, começando pelos quarteirões do templo próximo à esplanada e da ala nobre próxima à corte. O vão provisório tem uma faixa central de um tile e mantém as laterais sólidas. Os dois arcos que terminam diretamente em volume sólido, em MIF (52,8) e (57,72), foram registrados para confirmação antes de abrir. [Planta e lista de conexões](mapas/RIHAD_PERCURSO_M02.json)
+
+| Quarteirão original | Arcos abertos | Células MIF alcançáveis a mais |
+| --- | ---: | ---: |
+| TPBD8B, junto ao percurso | 4 | 57 |
+| NBBD7B, junto à ala da corte | 3 | 3 |
+| NBBD1C | 7 | 121 |
+| NBBD1A | 8 | 134 |
+| NBBD1D | 7 | 120 |
+| EQBD12D | 1 | 3 |
+| Total | **30** | **438** |
+
+Da chegada, o grafo passa de **7.357 para 7.795** centros MIF alcançáveis. Os 388×388 tiles e os IDs e coordenadas dos eventos permanecem. Nenhum novo diálogo ou interior opcional foi adicionado. O corredor da campanha mantém Ria, informante, repouso, Blubamka, Stonekeep, Fang Lair e seus retornos. Saves dos setores existentes mantêm a posição e usam a nova colisão ao carregar.
+
+**Próximo recorte de materiais.** Rua e passeio, muro baixo e arco de jardim, além de módulos de fachada com vãos legíveis, precisam de um atlas exterior de Rihad. A costa permanece bloqueada na margem prevista. Os acessos comerciais e residenciais mantêm o exterior, com interiores fora do recorte. O interior original da corte e os dois arcos sem saída permanecem em conferência. [Famílias visuais](#famílias-visuais-de-rihad)
+
+**Avaliação integrada pendente.** A partir da chegada, siga para o pátio do templo pelo arco MIF (13,35), MV (345,108), atravesse e volte pelo mesmo vão. Continue pela cidade até a corte, preservando os passos normais da missão. [Arena local](http://127.0.0.1:8774/) · [Teste Rihad e Stonekeep](evidencias/m02-rihad-passagens/resultado.json) · [Teste Fang Lair e retorno a Rihad](evidencias/m02-rihad-passagens/fang-lair.json)
+
 ## M02-03E2 — do portão urbano à corte
 
 Map009 usa a planta reconstruída inteira como base de 388×388 tiles, com escala 3 e margem 2. [Planta e âncoras versionadas](mapas/RIHAD_PERCURSO_M02.json). A grade preserva o traçado das células secas, a costa bloqueada, o portão urbano e o acesso ao palácio. As fachadas usam alvenaria provisória. Adereços, interiores opcionais, alturas e acabamentos urbanos ficam para etapas posteriores. Map011 fornece a audiência já jogável.
