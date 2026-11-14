@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.7.0 Fang Lair: celas opcionais de tesouro.
+ * @plugindesc v0.8.0 Fang Lair: celas e tesouros das alas secas.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
  * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
@@ -80,14 +80,16 @@ var ArenaFangCells;
    var gate=c().gates.find(function(g){return g.id===key.cellGateId;}),sw=treasureSwitch(key.eventId,'B');
    if($gameSelfSwitches.value(sw)!==opened(gate))$gameSelfSwitches.setValue(sw,opened(gate));
   });
+  function syncChest(chest){
+   var sw=treasureSwitch(chest.eventId),taken=!!receipts['container/'+chest.id];
+   if($gameSelfSwitches.value(sw)!==taken)$gameSelfSwitches.setValue(sw,taken);
+  }
   optional.cells.forEach(function(cell){
    var access=$gameMap.event(cell.interactEventId);
    if(access)access.setThrough(treasureCellOpen(cell));
-   cell.treasures.forEach(function(chest){
-    var sw=treasureSwitch(chest.eventId),taken=!!receipts['container/'+chest.id];
-    if($gameSelfSwitches.value(sw)!==taken)$gameSelfSwitches.setValue(sw,taken);
-   });
+   cell.treasures.forEach(syncChest);
   });
+  c().dryTreasures.forEach(syncChest);
  }
  function sync(){
   if(!here())return;
@@ -227,10 +229,15 @@ var ArenaFangCells;
    return true;
   },
   takeTreasure:function(i){
-   var cells=c().optionalTreasure.cells;
-   var cell=cells.find(function(v){return v.treasures.some(function(t){return t.eventId===i.eventId();});});
-   if(!cell||!valid(i,i.eventId())||$gameMessage.isBusy()||!treasureCellOpen(cell))return false;
-   var chest=cell.treasures.find(function(t){return t.eventId===i.eventId();});
+   var eventId=i.eventId();
+   if(!valid(i,eventId)||$gameMessage.isBusy())return false;
+   function matches(chest){return chest.eventId===eventId;}
+   var chest=c().dryTreasures.find(matches);
+   if(!chest){
+    var cell=c().optionalTreasure.cells.find(function(v){return v.treasures.some(matches);});
+    if(!cell||!treasureCellOpen(cell))return false;
+    chest=cell.treasures.find(matches);
+   }
    if(ArenaLoot.snapshot().receipts['container/'+chest.id])return false;
    var result=ArenaLoot.claimContainer(chest.id,$arenaLoot.enemies[String($arenaQuests.treasureTableEnemyId)],$arenaQuests.treasureFallbackGold);
    syncTreasure();
@@ -287,8 +294,8 @@ var ArenaFangCells;
    $gamePlayer.reserveTransfer(c().mapId,c().entry[0],c().entry[1],2,0);
    $gamePlayer.requestMapReload();
   }
-  // Earlier campaign saves have the same upper-floor positions but no treasure events.
-  if(here()&&!$gameMap.event(c().optionalTreasure.cells[0].doorEventId)){
+  // Campaign saves serialize events; refresh the map in place if a chest was added.
+  if(here()&&c().dryTreasures.some(function(chest){return !$gameMap.event(chest.eventId);})){
    if(!$gamePlayer.isTransferring())$gamePlayer.reserveTransfer(c().mapId,$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction(),2);
    if($gamePlayer.newMapId()===c().mapId)$gamePlayer.requestMapReload();
   }

@@ -1,6 +1,6 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-celas-tesouro'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-tesouros-secos'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
 const coverage=read('doc/mapas/FANG_COBERTURA_M02.json');
 const sourcePassages=coverage.levels[0].passages;
@@ -26,7 +26,7 @@ assert.deepEqual(items.slice(0,staff.itemId),base('data/Items.json'));
 assert.equal(items[staff.itemId].itypeId,2);assert.equal(items[staff.itemId].occasion,3);
 assert.equal(items[staff.itemId].consumable,false);assert.equal(items[staff.itemId].price,0);
 for(const n of ['Map008','Map009','Map010','Map011','Map012','Weapons','Armors','Skills','Enemies','Troops','ArenaLoot','ArenaRecovery'])assert.deepEqual(read('data/'+n+'.json'),base('data/'+n+'.json'),n);
-const stable=['Items','Map008','Map009','Map010','Map011','Map012','Map013','Map017','MapInfos','ArenaCampaign','ArenaRecovery'],before=stable.map(n=>JSON.stringify(read('data/'+n+'.json')));cp.execFileSync(process.execPath,['tools/build-rihad-arrival.cjs'],{cwd:R});stable.forEach((n,i)=>assert.equal(JSON.stringify(read('data/'+n+'.json')),before[i],'rebuild '+n));
+const stable=['ArenaFangCells','Items','Map008','Map009','Map010','Map011','Map012','Map013','Map017','MapInfos','ArenaCampaign','ArenaRecovery'],before=stable.map(n=>JSON.stringify(read('data/'+n+'.json')));cp.execFileSync(process.execPath,['tools/build-rihad-arrival.cjs'],{cwd:R});stable.forEach((n,i)=>assert.equal(JSON.stringify(read('data/'+n+'.json')),before[i],'rebuild '+n));
 for(const g of c.gates){assert.equal(map.events[g.eventId].x,g.origin[0]);assert.deepEqual(g.origin,[3+(99-g.sourceOriginal[0])*3,3+g.sourceOriginal[1]*3]);}
 const types={'.html':'text/html','.js':'application/javascript','.json':'application/json','.png':'image/png','.css':'text/css','.ttf':'font/ttf'},server=http.createServer((req,res)=>{const u=decodeURIComponent(new URL(req.url,'http://test').pathname),f=path.resolve(R,'.'+(u==='/'?'/index.html':u));if(!f.startsWith(R+path.sep)){res.writeHead(403);return res.end();}fs.readFile(f,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':types[path.extname(f)]||'application/octet-stream','Cache-Control':'no-store'});res.end(e?'':b);});});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));let b;try{
@@ -223,6 +223,35 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.deepEqual(await snapshot(),optionalBefore);
  checks.push('Legacy upper save retains location and opens a registry with both optional cells; no key leaves the locks closed');
  checks.push('Wrong choice opens access to the two brass keys, each opens exactly one lock; four single-roll receipts and doors survive save/load without changing MQ02');
+ const dryKeys=c.dryTreasures.map(chest=>'container/'+chest.id);
+ assert.equal(dryKeys.length,2);
+ for(const chest of c.dryTreasures){
+  await walk(mv(chest.original)); // Normal collision and route, with the portal still locked.
+  await press('Enter');await messages();await ready();
+  const loot=await p.evaluate(()=>ArenaLoot.snapshot());
+  const record=loot.receipts['container/'+chest.id];
+  assert(record&&(record.received.length||record.pending.length));
+  assert.equal(await p.evaluate(id=>$gameMap.event(id).characterName(),chest.eventId),'');
+  await press('Enter');await messages();await ready();
+  assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),loot);
+ }
+ const dryLoot=await p.evaluate(()=>ArenaLoot.snapshot());
+ await save(33);await load(33);
+ for(const chest of c.dryTreasures)assert.equal(await p.evaluate(id=>$gameMap.event(id).characterName(),chest.eventId),'');
+ assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),dryLoot);
+ assert.deepEqual(await snapshot(),optionalBefore);
+ // Recreate the immediately preceding event layout while retaining doors and receipts.
+ const lastUpper=JSON.parse(cp.execFileSync('git',['show','ce99efc:data/Map013.json'],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+ const dryPosition=await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction()]);
+ await p.evaluate(oldMap=>{
+  for(const e of $gameMap.events())if(!oldMap.events[e.eventId()])delete $gameMap._events[e.eventId()];
+ },lastUpper);
+ await save(34);await load(34);
+ assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction()]),dryPosition);
+ for(const cell of optional.cells)assert.equal(await open(cell),true);
+ for(const chest of c.dryTreasures)assert.equal(await p.evaluate(id=>$gameMap.event(id).characterName(),chest.eventId),'');
+ assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),dryLoot);
+ checks.push('Both dry treasure piles are reachable before solving the riddle, each settles once, and their images and receipts survive current and prior map saves');
  await riddle(1);s=await snapshot();assert.equal(s.q.stage,70);assert.equal(s.count,0);assert.equal(s.source.active,true);assert.equal((await reachable()).key,true);assert.equal((await reachable()).limit,false);await walk(c.key);await press('Enter');await messages();await ready();assert.equal((await snapshot()).count,1);await press('Enter');await messages();assert.equal((await snapshot()).count,1);
  // The source can restore a lost key only before the portal consumes it.
  await p.evaluate(()=>$gameParty.loseItem($dataItems[8],1));await press('Enter');await messages();
@@ -238,6 +267,12 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  await walk(c.entry);await press('Enter');await p.waitForFunction(()=>$gameMap.mapId()===9&&!$gamePlayer.isTransferring());await ready();
  await travel(0);await p.waitForFunction(()=>$gameMap.mapId()===13&&!$gamePlayer.isTransferring());await ready();
  assert.deepEqual(await snapshot(),s);assert.deepEqual((await reachable()).spiders,[false,true,true,true]);
+ for(const chest of c.dryTreasures){
+  assert.equal(await p.evaluate(id=>$gameMap.event(id).characterName(),chest.eventId),'');
+  await walk(mv(chest.original));await press('Enter');await messages();await ready();
+ }
+ assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),dryLoot);
+
  const oldMap=base('data/Map013.json');
  await p.evaluate(oldMap=>{
   const current=$dataMap;
@@ -451,5 +486,5 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
  checks.push('All new placements are reachable on their respective levels; one real contact and persistent defeat per level in a disposable save');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'86c02c7',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'ce99efc',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
