@@ -2,21 +2,23 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
-## Visão de Jagar Tharn — M02-08, primeira parte
+## Retaliação de Jagar Tharn — M02-08
 
-No original, após a coleta do fragmento, a visão pode ocorrer onde um encontro aleatório seria possível. O guia local de Fang Lair descreve um ataque por um servo após a visão (pp.4–5). O `TEMPLATE.DAT #1392` da instalação confirma a fala, a ponte dos sonhos, a ameaça de tomar a peça e a chegada dos servos. O texto e o guia consultados não identificam a espécie ou a regra de seleção do atacante, nem documentam um desfecho narrativo próprio após a vitória. A última fala é uma ameaça de Tharn; a interação não oferece entregar o fragmento. Nenhuma observação do executável confirmou a identidade.
+No original, após a coleta do fragmento, a visão pode ocorrer onde um encontro aleatório seria possível. O guia local de Fang Lair descreve o ataque de um servo após a visão (pp.4–5). O `TEMPLATE.DAT #1392` da instalação confirma a fala, a ponte dos sonhos, a ameaça de tomar a peça e a chegada dos servos. A espécie e a regra de seleção do atacante não foram confirmadas. [Inventário textual](CAMPANHA_PRINCIPAL.md#inventário-textual)
 
-A adaptação aprovada usa **Saída da mina**, no Map013 (288,9), como gatilho quando MQ02 está na etapa 100 e o fragmento está no inventário. A janela sem imagem usa a largura toda e apresenta, em ordem, os blocos `MQ02.fang.retaliation.01` e `MQ02.fang.retaliation.02`. A fala em PT-BR segue o inventário textual, que condensa parte da ameaça original. Orientação visual e ilustrações ficam para outra entrega. [Inventário textual](CAMPANHA_PRINCIPAL.md#inventário-textual)
+Na campanha, **Saída da mina** (Map013, MV 288,9) dispara a visão na etapa 100 com o fragmento no inventário. Os blocos `MQ02.fang.retaliation.01` e `MQ02.fang.retaliation.02` usam a janela em largura integral. Ao fechar o último bloco, o jogo registra `fangTharnVisionRead` e inicia a batalha. Um save anterior com essa leitura já registrada entra diretamente no combate ao interagir com a saída. Se faltar a peça, o jogador pode voltar à fonte no segundo nível.
 
-Ao fechar a última página, `fangTharnVisionRead` registra a leitura. A etapa continua 100 e o passo da retaliação segue pendente no diário. `fangRetaliationWon` pertence ao resultado futuro do encontro. A confirmação da visão não a marca como vencida nem altera inventário, loot ou recibos. A saída fica aguardando o encontro. Se a peça faltar, o jogo orienta a voltar à fonte e a leitura permanece como estava. As rotas pela mina e pela escada continuam disponíveis.
+O **Servo de Tharn** usa o esqueleto existente (Enemy 4, Troop 5) como adaptação provisória. O visual de morto-vivo combina com a ameaça de Tharn e reaproveita o exemplar já presente nas profundezas de Fang Lair. O nome é exclusivo da instância desta batalha. Mantém os parâmetros do esqueleto de campanha, com **50 EXP e sem sorteio de ouro ou itens**. A arte definitiva e a orientação visual dos blocos ficam para outra entrega.
+
+A derrota segue para Game Over. Uma vitória legítima registra `fangRetaliationWon`, conclui MQ02 na etapa 110 e atualiza o diário. O fragmento permanece no inventário. Ao voltar ao mapa, uma nova interação com a saída leva a Rihad. É possível voltar à mina após a conclusão e sair novamente sem repetir visão, batalha ou recompensas. Nenhuma quest seguinte é iniciada.
 
 ### Roteiro no Chrome a partir de um save com o fragmento
 
-1. Carregue a partida normal com o primeiro fragmento. Suba a escada se estiver no segundo nível e volte à entrada da mina no primeiro. Se um save anterior já estiver em Rihad, viaje novamente para Fang Lair pelo portão. [Arena local](http://127.0.0.1:8774/)
-2. Interaja com **Saída da mina** e leia os dois blocos. Confira um fragmento no inventário e a retaliação pendente no diário. Salve na entrada da mina após fechar a mensagem.
-3. Recarregue e interaja outra vez. Deve aparecer apenas o aviso de encontro pendente. Esse save é o ponto de retomada para o combate futuro.
+1. Carregue um save com o primeiro fragmento e volte à **Saída da mina**, no primeiro nível. Se a partida estiver em Rihad, viaje para Fang Lair pelo portão. [Arena local](http://127.0.0.1:8774/)
+2. Interaja com a saída. Feche o último bloco da visão para entrar na batalha contra **Servo de Tharn**. Se a visão já tinha sido lida no save, a batalha começa diretamente.
+3. Vença, confira a missão concluída no **Diário** e o fragmento no **Inventário**. Salve, recarregue e interaja com a saída. A volta a Rihad deve ocorrer sem nova batalha. Para conferir derrota em separado, use o save anterior à vitória.
 
-O Chrome automatizado verificou gatilho e posse, leitura integral antes do registro, persistência antes e depois da visão, repetição sem efeitos e retorno à escada. Avaliação manual pendente. [Evidências](evidencias/m02-fang-tharn/resultado.json)
+A rota principal de MQ02 está completa. Ainda faltam alas e encontros aplicáveis dos dois níveis, incluindo os dois Hell Hounds na sala do fragmento, e a arte definitiva. Avaliação manual pendente. [Evidências](evidencias/m02-fang-tharn-encontro/resultado.json)
 
 ## Sala e primeiro fragmento — M02-07B, trecho de campanha
 
@@ -28,9 +30,9 @@ A porta do enigma abre o acesso à sala no Map017. O percurso mantém a escala e
 | `MAP1 0x8039` em (63,74) e (65,74), flat57 `HELLHOUN.DFA / ITEM42` | Posições originais em MV (81,15) e (75,15). São encontros da sala. O guia descreve formas de evitar o ataque; o corredor central e o fragmento são registros independentes. A única `LOCK` da sala é a da porta e o `TRIG 64,73,255,28` fica no vestíbulo. A função exata desse gatilho não foi verificada no executável. Ambos os encontros seguem pendentes de combate e patrulha da espécie |
 | `TEMPLATE.DAT #1371`, arquivo da instalação original, e guia local de Fang Lair, p.4 | A coleta usa o bloco PT-BR `MQ02.fang.fragment.take`, em largura integral, com a ilustração pendente. A referência tátil do original foi condensada na pulsação do fragmento |
 
-A coleta registra o item e a passagem 90 → 100 em conjunto. O diário marca o fragmento como obtido e indica a saída. A missão segue em andamento. Se faltar a peça na etapa 100, a mesma fonte repõe apenas a unidade ausente, sem repetir a narração ou avançar a missão. Um save anterior do Map017 carrega a nova lista de eventos mantendo posição, direção e estados individuais.
+A coleta registra o item e a passagem 90 → 100 em conjunto. O diário marca o fragmento como obtido e indica a saída. A missão segue em andamento até a vitória contra o Servo de Tharn. Se faltar a peça na etapa 100, a mesma fonte repõe apenas a unidade ausente, sem repetir a narração ou avançar a missão. Um save anterior do Map017 carrega a nova lista de eventos mantendo posição, direção e estados individuais.
 
-**Ponto seguro de retomada.** Após coletar, suba e salve no patamar do primeiro nível (Map013, MV 36,296). A visão de Tharn intercepta a saída da mina com a peça em posse. O combate da retaliação continua pendente. Se o save já estiver em Rihad, volte à mina para testar o gatilho.
+**Ponto seguro de retomada.** Após coletar, suba e salve no patamar do primeiro nível (Map013, MV 36,296). A visão de Tharn intercepta a saída da mina com a peça em posse. A batalha começa ao fechar o último bloco. Se o save já estiver em Rihad, volte à mina para testar o gatilho.
 
 ### Continuação do roteiro no Chrome
 

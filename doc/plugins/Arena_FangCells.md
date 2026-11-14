@@ -1,6 +1,6 @@
-# Arena_FangCells 0.4.0
+# Arena_FangCells 0.5.0
 
-`leave` usa a posse do fragmento para interceptar a saída na etapa 100. `finishTharnVision` registra a leitura após a última página. A etapa e o resultado do encontro são independentes, com o combate pendente. [Visão de Tharn](../FANG_CELAS_M02_06A.md#visão-de-jagar-tharn--m02-08-primeira-parte).
+`leave` usa a posse do fragmento para interceptar a saída na etapa 100. `finishTharnVision` registra a leitura após a última página e inicia o encontro. Saves com a leitura registrada entram diretamente pela saída. O callback nativo de vitória avança 100 → 110 e conclui a quest; a próxima interação libera Rihad. O esqueleto reutilizado mantém combate e recompensas existentes. [Retaliação](../FANG_CELAS_M02_06A.md#retaliação-de-jagar-tharn--m02-08).
 
 `takeStaffPiece` valida a porta, a etapa e a fonte. A coleta vincula o item importante 9 à etapa 100 e reusa a mensagem em largura integral. O Map017 mantém as dimensões e coordenadas anteriores, recarregando a lista de eventos quando um save ainda não tem a fonte. [Sala e fragmento](../FANG_CELAS_M02_06A.md#sala-e-primeiro-fragmento--m02-07b-trecho-de-campanha).
 

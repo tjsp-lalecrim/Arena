@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.4.0 Fang Lair: da viagem à visão de Tharn.
+ * @plugindesc v0.5.0 Fang Lair: da viagem à retaliação de Tharn.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
  * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
@@ -26,10 +26,9 @@ var ArenaFangCells;
   return result;
  }
  ArenaCourtDelivery.destination=destination;
- function eligible(){return destination().available&&!q().completed;}
  function road(i){
   var route=ArenaStonekeep.configuration(),e=$gameMap.event(route.travelEventId);
-  return eligible()&&ArenaNarrative.isCampaign()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&!$gameMessage.isBusy()&&
+  return destination().available&&ArenaNarrative.isCampaign()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&!$gameMessage.isBusy()&&
    $gameMap.mapId()===$arenaRihad.arrival.mapId&&i instanceof Game_Interpreter&&i._mapId===$gameMap.mapId()&&
    i.eventId()===route.travelEventId&&e&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;
  }
@@ -42,7 +41,7 @@ var ArenaFangCells;
  function valid(i,id,mapId){
   mapId=mapId||c().mapId;
   var e=$gameMap.event(id);
-  return $gameMap.mapId()===mapId&&eligible()&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&
+  return $gameMap.mapId()===mapId&&destination().available&&!$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&
    ArenaNarrative.isCampaign()&&i instanceof Game_Interpreter&&i._mapId===mapId&&i.eventId()===id&&
    e&&!e._erased&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;
  }
@@ -51,6 +50,24 @@ var ArenaFangCells;
  }
  function canLeave(i){return valid(i,1)&&!$gameMessage.isBusy();}
  function hasStaffPiece(){return $gameParty.hasItem($dataItems[c().lower.staffPiece.itemId]);}
+ function startRetaliation(){
+  if($gameTemp._arenaEncounterLock||SceneManager.isSceneChanging())return false;
+  var encounter=c().retaliation.encounter;
+  $gameTemp._arenaEncounterLock={id:encounter.id};
+  BattleManager.setup(encounter.troopId,false,false);
+  // Local to this battle. Other skeletons keep their original name and data.
+  $gameTroop.members()[0].originalName=function(){return encounter.name;};
+  BattleManager.setEventCallback(function(result){
+   if(result!==0||!$gameTroop.isAllDead()||$gameParty.isAllDead()||!hasStaffPiece())return;
+   var quest=q();
+   if(quest.stage!==100||quest.completed||!quest.objectives.fangTharnVisionRead)return;
+   ArenaPersistence.setQuest(c().questId,110,Object.assign({},quest.objectives,{fangRetaliationWon:true}),true);
+  });
+  $gamePlayer.makeEncounterCount();
+  $gameTemp.clearDestination();
+  SceneManager.push(Scene_Battle);
+  return true;
+ }
  function show(i,texts){return ArenaCourt.show(i,texts);}
  function atomic(fn){var state=JsonEx.makeDeepCopy($gameSystem._persistentState),items=Object.assign({},$gameParty._items);try{var result=fn();if(result===false){$gameSystem._persistentState=state;$gameParty._items=items;}return result;}catch(e){$gameSystem._persistentState=state;$gameParty._items=items;throw e;}}
  function update(stage,flags){var v=q();ArenaPersistence.setQuest(c().questId,stage,Object.assign({},v.objectives,flags),false);}
@@ -178,7 +195,7 @@ var ArenaFangCells;
    if(quest.stage!==100)return transfer($arenaRihad.arrival);
    var scene=c().retaliation;
    if(!hasStaffPiece())return show(i,[scene.missing]);
-   if(quest.objectives.fangTharnVisionRead)return show(i,[scene.pending]);
+   if(quest.objectives.fangTharnVisionRead)return startRetaliation();
    show(i,scene.blocks.map(function(block){return block.text;}));
    var list=i._childInterpreter._list;
    list.splice(list.length-1,0,{code:355,indent:0,parameters:['ArenaFangCells.finishTharnVision(this);']});
@@ -187,7 +204,7 @@ var ArenaFangCells;
   finishTharnVision:function(i){
    if(!canLeave(i)||ArenaContinuation.labActive()||q().stage!==100||q().objectives.fangTharnVisionRead||!hasStaffPiece())return false;
    update(100,{fangTharnVisionRead:true});
-   return show(i,[c().retaliation.pending]);
+   return startRetaliation();
   },
   sync:sync,
   gateOpen:function(id){var g=c().gates.filter(function(v){return v.id===id;})[0];return !!g&&opened(g);}
@@ -201,6 +218,10 @@ var ArenaFangCells;
    var staff=lower.staffPiece,source=staff&&ArenaCampaignConfig.source(staff.sourceId),item=staff&&$dataItems[staff.itemId];
    if(!source||!source.ok||source.config.questId!==cfg.questId||source.config.areaId!==lower.areaId||source.config.itemId!==staff.itemId||source.config.quantity!==1)problem='fonte do fragmento incompatível';
    else if(!item||item.itypeId!==2||item.consumable||item.occasion!==3||item.price!==0)problem='item importante '+staff.itemId+' do fragmento inválido';
+  }
+  if(!problem){
+   var encounter=cfg.retaliation&&cfg.retaliation.encounter,troop=encounter&&$dataTroops[encounter.troopId];
+   if(!troop||troop.members.length!==1||troop.members[0].hidden||troop.members[0].enemyId!==encounter.enemyId||!$dataEnemies[encounter.enemyId])problem='tropa do Servo de Tharn incompatível';
   }
   if(problem)throw Error('Fang Lair: '+problem+'. Confira os arquivos de dados servidos e build-fang-cells.');return true;};
  // A serialized copy of the isolated crop has incompatible event coordinates.
