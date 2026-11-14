@@ -1,8 +1,10 @@
-# Arena_FangCells 0.5.0
+# Arena_FangCells 0.6.0
+
+A cobertura de Map013 e Map017 é gerada pela matriz `doc/mapas/FANG_COBERTURA_M02.json`. A ampliação de Map017 traduz os saves anteriores em (+9,+51) antes de recarregar o mapa, preservando os IDs de eventos da quest. [Cobertura](../FANG_CELAS_M02_06A.md#alas-secas-dos-dois-níveis--m02-06b-e-m02-07b).
 
 `leave` usa a posse do fragmento para interceptar a saída na etapa 100. `finishTharnVision` registra a leitura após a última página e inicia o encontro. Saves com a leitura registrada entram diretamente pela saída. O callback nativo de vitória avança 100 → 110 e conclui a quest; a próxima interação libera Rihad. O esqueleto reutilizado mantém combate e recompensas existentes. [Retaliação](../FANG_CELAS_M02_06A.md#retaliação-de-jagar-tharn--m02-08).
 
-`takeStaffPiece` valida a porta, a etapa e a fonte. A coleta vincula o item importante 9 à etapa 100 e reusa a mensagem em largura integral. O Map017 mantém as dimensões e coordenadas anteriores, recarregando a lista de eventos quando um save ainda não tem a fonte. [Sala e fragmento](../FANG_CELAS_M02_06A.md#sala-e-primeiro-fragmento--m02-07b-trecho-de-campanha).
+`takeStaffPiece` valida a porta, a etapa e a fonte. A coleta vincula o item importante 9 à etapa 100 e reusa a mensagem em largura integral. A fonte mantém o ID de evento ao expandir Map017. [Sala e fragmento](../FANG_CELAS_M02_06A.md#sala-e-primeiro-fragmento--m02-07b-trecho-de-campanha).
 
 A escada conecta Map013 e Map017. `lowerRiddle/lowerAnswer` usam a etapa 80 e o recibo anterior como precondições. A etapa 90 e `fangLowerExplored` determinam abertura, colisão e página da porta. [Segundo nível](../FANG_CELAS_M02_06A.md#segundo-nível-até-o-enigma--m02-07a).
 

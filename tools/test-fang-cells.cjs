@@ -1,7 +1,8 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-tharn-encontro'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-alas'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
+const coverage=read('doc/mapas/FANG_COBERTURA_M02.json');
 const staff=c.lower.staffPiece,items=read('data/Items.json');
 assert.deepEqual(items.slice(0,staff.itemId),base('data/Items.json'));
 assert.equal(items[staff.itemId].itypeId,2);assert.equal(items[staff.itemId].occasion,3);
@@ -19,6 +20,42 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  const snapshot=()=>p.evaluate(()=>({q:ArenaQuests.snapshot('MQ02'),count:$gameParty.numItems($dataItems[8]),source:ArenaPersistence.sourceStatus('fang.cell2.key')}));
  const reachable=()=>p.evaluate(()=>{const todo=[[$gamePlayer.x,$gamePlayer.y]],seen=new Set([todo[0].join(',')]);for(let n=0;n<todo.length;n++){const[x,y]=todo[n];for(const d of [2,4,6,8]){const nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),k=nx+','+ny;if(!seen.has(k)&&$gamePlayer.canPass(x,y,d)){seen.add(k);todo.push([nx,ny]);}}}return{entry:seen.has($arenaFangCells.entry.join(',')),key:seen.has($arenaFangCells.key.join(',')),limit:seen.has($arenaFangCells.limit.join(',')),spiders:$arenaFangCells.spiders.map(v=>!!$gameMap.event(v.eventId).page()&&!$gameMap.event(v.eventId)._erased)};});
  async function walk(target){const route=await p.evaluate(target=>{const todo=[[$gamePlayer.x,$gamePlayer.y,[]]],seen=new Set([todo[0].slice(0,2).join(',')]);for(let n=0;n<todo.length;n++){const[x,y,route]=todo[n];if(x===target[0]&&y===target[1])return route;for(const d of [2,4,6,8]){const nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),k=nx+','+ny;if(!seen.has(k)&&$gamePlayer.canPass(x,y,d)){seen.add(k);todo.push([nx,ny,route.concat(d)]);}}}return null;},target);assert(route,'No native path to '+target);await p.evaluate(route=>route.forEach(d=>{$gamePlayer.moveStraight(d);while($gamePlayer.isMoving())$gamePlayer.updateMove();}),route);await p.waitForTimeout(200);}
+ async function inspectWings(level){
+  const plan=coverage.levels[level-1];
+  const result=await p.evaluate(plan=>{
+   const {entries}=ArenaEncounters.currentConfiguration().config;
+   const w=$gameMap.width(),h=$gameMap.height(),seen=new Uint8Array(w*h);
+   const todo=[$gamePlayer.y*w+$gamePlayer.x];seen[todo[0]]=1;
+   for(let n=0;n<todo.length;n++){
+    const x=todo[n]%w,y=Math.floor(todo[n]/w);
+    for(const d of [2,4,6,8]){
+     const nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),key=ny*w+nx;
+     if($gameMap.isValid(nx,ny)&&!seen[key]&&$gameMap.isPassable(x,y,d)&&$gameMap.isPassable(nx,ny,10-d)){
+      seen[key]=1;todo.push(key);
+     }
+    }
+   }
+   return {count:entries.length,reachable:entries.filter(e=>e.eventId>=40&&seen[e.origin[1]*w+e.origin[0]]).map(e=>e.sourceOriginal),
+    staffReachable:plan.level===2&&!!seen[$arenaFangCells.lower.staffPiece.position[1]*w+$arenaFangCells.lower.staffPiece.position[0]],
+    active:entries.map(e=>e.sourceOriginal),walkable:plan.rows.flatMap((row,y)=>Array.from(row,(v,x)=>v==='#'?null:[3+3*x,3+3*y])).filter(v=>v&&seen[v[1]*w+v[0]]).length};
+  },plan);
+  assert.deepEqual(result.active,plan.encounters.filter(e=>e.status!=='pending').map(e=>e.original));
+  assert.deepEqual(result.reachable,plan.encounters.filter(e=>e.status==='added').map(e=>e.original));
+  return result;
+ }
+ async function defeatWing(original){
+  const enemy=await p.evaluate(original=>{
+   const e=ArenaEncounters.currentConfiguration().config.entries.find(e=>e.sourceOriginal.join(',')===original.join(','));
+   const event=$gameMap.event(e.eventId);event._locked=true;event.locate(...e.origin);
+   return {id:e.id,origin:e.origin};
+  },original);
+  await walk([enemy.origin[0]-1,enemy.origin[1]]);await press('ArrowRight');
+  await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Battle&&SceneManager._scene.isActive());
+  await p.evaluate(()=>{$gameTroop.members().forEach(e=>e.gainHp(-e.hp));BattleManager.processVictory();BattleManager.processVictory();});
+  assert.equal(await require('./battle-test-controls.cjs')(p).ready(),'map');await ready();
+  assert.equal(await p.evaluate(id=>ArenaPersistence.snapshot().enemies[id].defeated,enemy.id),true);
+  return enemy.id;
+ }
  async function riddle(index){await walk(c.riddle);await p.evaluate(()=>$gamePlayer.setDirection(2));await press('Enter');await messages(true);await p.evaluate(index=>{const w=SceneManager._scene._messageWindow._choiceWindow;w.select(index);},index);await press('Enter');await messages();await ready();}
  const raw=()=>p.evaluate(()=>JsonEx.stringify({system:$gameSystem,screen:$gameScreen,timer:$gameTimer,switches:$gameSwitches,variables:$gameVariables,selfSwitches:$gameSelfSwitches,actors:$gameActors,party:$gameParty,map:$gameMap,player:$gamePlayer}));
  async function load(slot){
@@ -63,7 +100,13 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  let s=await snapshot();assert.equal(s.q.stage,60);assert.equal(s.count,0);assert.equal(s.q.completed,false);
  assert.deepEqual(await reachable(),{entry:true,key:false,limit:false,spiders:[false,false,false,false]});
  checks.push('Native parchment delivery, travel cancel, travel to the dragon gate, text events and connected route to the cells');
- console.log('PASS viagem e circulação');
+ const upperWings=await inspectWings(1);
+ const upperDefeat=await defeatWing([24,2]);
+ const upperLoot=await p.evaluate(()=>ArenaLoot.snapshot());
+ await save(26);await load(26);
+ assert.equal(await p.evaluate(id=>ArenaPersistence.snapshot().enemies[id].defeated,upperDefeat),true);
+ assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),upperLoot);
+ console.log('PASS viagem e circulação, ala superior');
  await riddle(3);assert.deepEqual(await snapshot(),s);checks.push('Native riddle cancel leaves stage 60, key and gates unchanged');
  await riddle(0);s=await snapshot();assert.equal(s.q.stage,60);assert.equal(s.q.objectives.fangSpidersReleased,true);assert.equal(s.count,0);
  assert.deepEqual((await reachable()).spiders,[true,true,true,true]);
@@ -103,7 +146,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  const oldMap=base('data/Map013.json');
  await p.evaluate(oldMap=>{
   const current=$dataMap;
-  try{$dataMap=oldMap;$gameMap.setup(13);$gamePlayer.locate(33,48);}
+  try{$dataMap=oldMap;$gameMap._events=oldMap.events.map(e=>e?new Game_Event(13,e.id):null);$gamePlayer.locate(33,48);}
   finally{$dataMap=current;}
  },oldMap);
  await save(18);await load(18);
@@ -126,7 +169,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  await stairs(c.limit,lower.mapId,2);
  console.log('PASS descida e retorno');
  const skeleton=await p.evaluate(()=>{
-  const e=ArenaEncounters.currentConfiguration().config.entries[0],event=$gameMap.event(e.eventId);
+  const e=ArenaEncounters.currentConfiguration().config.entries.find(e=>e.eventId===3),event=$gameMap.event(e.eventId);
   event._locked=true;event.locate(...e.origin);
   return {id:e.id,origin:e.origin};
  });
@@ -146,6 +189,8 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
   else await select(index);
   await messages();await ready();
  }
+ const beforeSecondGate=await inspectWings(2);
+ assert.equal(beforeSecondGate.staffReachable,false);
  await askLower(0);assert.deepEqual(await snapshot(),s);
  await askLower(null);assert.deepEqual(await snapshot(),s);
  assert.equal(await tilePassable(lower.door),false);
@@ -160,15 +205,32 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.equal(await tilePassable(lower.door),true);
  await p.evaluate(()=>$gamePlayer.setDirection(2));await press('Enter');await messages();await ready();
  assert.deepEqual(await snapshot(),solved);
- const oldLower=JSON.parse(cp.execFileSync('git',['show','9d89eae:data/Map017.json'],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+ const oldLower=JSON.parse(cp.execFileSync('git',['show','cb05410:data/Map017.json'],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
  await p.evaluate(oldMap=>{
   const current=$dataMap;
-  try{$dataMap=oldMap;$gameMap.setup(17);}
+  try{$dataMap=oldMap;$gameMap._events=oldMap.events.map(e=>e?new Game_Event(17,e.id):null);}
   finally{$dataMap=current;}
+  $gamePlayer.locate($gamePlayer.x-9,$gamePlayer.y-51);
  },oldLower);
  await save(20);await load(20);
  assert.deepEqual(await position(),savedPosition);assert.deepEqual(await snapshot(),solved);
  assert.equal(await p.evaluate(id=>!!$gameMap.event(id),staff.eventId),true);
+ await p.evaluate(oldMap=>{
+  const current=$dataMap;
+  try{$dataMap=oldMap;$gameMap._events=oldMap.events.map(e=>e?new Game_Event(17,e.id):null);}
+  finally{$dataMap=current;}
+  $gamePlayer.locate(72,15); // Old projection of MIF (66,75), now a wall.
+ },oldLower);
+ await save(28);await load(28);
+ assert.deepEqual(await position(),[78,66]);assert.deepEqual(await snapshot(),solved);
+ const lowerWings=await inspectWings(2);
+ assert.equal(lowerWings.staffReachable,true);
+ assert.equal(lowerWings.walkable,coverage.levels[1].walkable);
+ const lowerDefeat=await defeatWing([55,90]);
+ const lowerLoot=await p.evaluate(()=>ArenaLoot.snapshot());
+ await save(27);await load(27);
+ assert.equal(await p.evaluate(id=>ArenaPersistence.snapshot().enemies[id].defeated,lowerDefeat),true);
+ assert.deepEqual(await p.evaluate(()=>ArenaLoot.snapshot()),lowerLoot);
  await walk(lower.door);
  assert.equal(await mapId(),lower.mapId);
  await walk(staff.position);
@@ -293,5 +355,6 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Native collection and full-width PT-BR text grant one protected fragment, advance MQ02 to 100 and update the journal without completing the quest');
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'93c0166',browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ checks.push('All new placements are reachable on their respective levels; one real contact and persistent defeat per level in a disposable save');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({base:'cb05410',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

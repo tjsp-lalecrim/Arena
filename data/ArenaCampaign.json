@@ -670,6 +670,42 @@
         "areaId": "fang-lair.upper",
         "completionQuestId": "MQ02",
         "mapVisuals": {
+          "4": {
+            "file": "$Arena_skeleton_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
+          },
+          "5": {
+            "file": "$Arena_ghoul_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
+          },
+          "7": {
+            "file": "$Arena_orc_walk_v01",
+            "cell": [
+              64,
+              64
+            ],
+            "ground": 62,
+            "animationWait": 10
+          },
+          "8": {
+            "file": "$Arena_minotaur_walk_v01",
+            "cell": [
+              96,
+              96
+            ],
+            "ground": 94,
+            "animationWait": 10
+          },
           "9": {
             "file": "$Arena_spider_walk_v01",
             "cell": [
@@ -688,16 +724,655 @@
         },
         "entries": [
           {
-            "id": "fang.cells.spider.01",
-            "eventId": 30,
+            "id": "fang.1.enemy.mif24.2",
+            "eventId": 40,
             "origin": [
-              12,
-              252
+              228,
+              9
             ],
             "sourceOriginal": [
-              96,
-              83
+              24,
+              2
             ],
+            "sourceFlat": "FANG1 flat56 GHOUL.DFA / ITEM41",
+            "enemyId": 5,
+            "troopId": 6,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif24.4",
+            "eventId": 41,
+            "origin": [
+              228,
+              15
+            ],
+            "sourceOriginal": [
+              24,
+              4
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif38.6",
+            "eventId": 42,
+            "origin": [
+              186,
+              21
+            ],
+            "sourceOriginal": [
+              38,
+              6
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif18.7",
+            "eventId": 43,
+            "origin": [
+              246,
+              24
+            ],
+            "sourceOriginal": [
+              18,
+              7
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif19.7",
+            "eventId": 44,
+            "origin": [
+              243,
+              24
+            ],
+            "sourceOriginal": [
+              19,
+              7
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif16.21",
+            "eventId": 45,
+            "origin": [
+              252,
+              66
+            ],
+            "sourceOriginal": [
+              16,
+              21
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif17.22",
+            "eventId": 46,
+            "origin": [
+              249,
+              69
+            ],
+            "sourceOriginal": [
+              17,
+              22
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif33.22",
+            "eventId": 47,
+            "origin": [
+              201,
+              69
+            ],
+            "sourceOriginal": [
+              33,
+              22
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif42.24",
+            "eventId": 48,
+            "origin": [
+              174,
+              75
+            ],
+            "sourceOriginal": [
+              42,
+              24
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif56.27",
+            "eventId": 49,
+            "origin": [
+              132,
+              84
+            ],
+            "sourceOriginal": [
+              56,
+              27
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif9.28",
+            "eventId": 50,
+            "origin": [
+              273,
+              87
+            ],
+            "sourceOriginal": [
+              9,
+              28
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif8.29",
+            "eventId": 51,
+            "origin": [
+              276,
+              90
+            ],
+            "sourceOriginal": [
+              8,
+              29
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif41.34",
+            "eventId": 52,
+            "origin": [
+              177,
+              105
+            ],
+            "sourceOriginal": [
+              41,
+              34
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif40.46",
+            "eventId": 53,
+            "origin": [
+              180,
+              141
+            ],
+            "sourceOriginal": [
+              40,
+              46
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif28.47",
+            "eventId": 54,
+            "origin": [
+              216,
+              144
+            ],
+            "sourceOriginal": [
+              28,
+              47
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif28.49",
+            "eventId": 55,
+            "origin": [
+              216,
+              150
+            ],
+            "sourceOriginal": [
+              28,
+              49
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif19.52",
+            "eventId": 56,
+            "origin": [
+              243,
+              159
+            ],
+            "sourceOriginal": [
+              19,
+              52
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif33.57",
+            "eventId": 57,
+            "origin": [
+              201,
+              174
+            ],
+            "sourceOriginal": [
+              33,
+              57
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif40.57",
+            "eventId": 58,
+            "origin": [
+              180,
+              174
+            ],
+            "sourceOriginal": [
+              40,
+              57
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif14.59",
+            "eventId": 59,
+            "origin": [
+              258,
+              180
+            ],
+            "sourceOriginal": [
+              14,
+              59
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif63.59",
+            "eventId": 60,
+            "origin": [
+              111,
+              180
+            ],
+            "sourceOriginal": [
+              63,
+              59
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif14.60",
+            "eventId": 61,
+            "origin": [
+              258,
+              183
+            ],
+            "sourceOriginal": [
+              14,
+              60
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif59.60",
+            "eventId": 62,
+            "origin": [
+              123,
+              183
+            ],
+            "sourceOriginal": [
+              59,
+              60
+            ],
+            "sourceFlat": "FANG1 flat56 GHOUL.DFA / ITEM41",
+            "enemyId": 5,
+            "troopId": 6,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif64.60",
+            "eventId": 63,
+            "origin": [
+              108,
+              183
+            ],
+            "sourceOriginal": [
+              64,
+              60
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif72.63",
+            "eventId": 64,
+            "origin": [
+              84,
+              192
+            ],
+            "sourceOriginal": [
+              72,
+              63
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif72.64",
+            "eventId": 65,
+            "origin": [
+              84,
+              195
+            ],
+            "sourceOriginal": [
+              72,
+              64
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif28.67",
+            "eventId": 66,
+            "origin": [
+              216,
+              204
+            ],
+            "sourceOriginal": [
+              28,
+              67
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif19.74",
+            "eventId": 67,
+            "origin": [
+              243,
+              225
+            ],
+            "sourceOriginal": [
+              19,
+              74
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif20.75",
+            "eventId": 68,
+            "origin": [
+              240,
+              228
+            ],
+            "sourceOriginal": [
+              20,
+              75
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif66.77",
+            "eventId": 69,
+            "origin": [
+              102,
+              234
+            ],
+            "sourceOriginal": [
+              66,
+              77
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
             "enemyId": 9,
             "troopId": 10,
             "questSpecific": true,
@@ -706,8 +1381,139 @@
             "regions": [
               4
             ],
-            "scale": 1,
-            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif65.78",
+            "eventId": 70,
+            "origin": [
+              105,
+              237
+            ],
+            "sourceOriginal": [
+              65,
+              78
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif66.78",
+            "eventId": 71,
+            "origin": [
+              102,
+              237
+            ],
+            "sourceOriginal": [
+              66,
+              78
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif44.79",
+            "eventId": 72,
+            "origin": [
+              168,
+              240
+            ],
+            "sourceOriginal": [
+              44,
+              79
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif29.81",
+            "eventId": 73,
+            "origin": [
+              213,
+              246
+            ],
+            "sourceOriginal": [
+              29,
+              81
+            ],
+            "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif77.81",
+            "eventId": 74,
+            "origin": [
+              69,
+              246
+            ],
+            "sourceOriginal": [
+              77,
+              81
+            ],
+            "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
+            "enemyId": 7,
+            "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif74.83",
+            "eventId": 75,
+            "origin": [
+              78,
+              252
+            ],
+            "sourceOriginal": [
+              74,
+              83
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
           },
           {
             "id": "fang.cells.spider.02",
@@ -720,6 +1526,7 @@
               90,
               83
             ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
             "enemyId": 9,
             "troopId": 10,
             "questSpecific": true,
@@ -728,20 +1535,20 @@
             "regions": [
               4
             ],
-            "scale": 1,
-            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+            "scale": 1
           },
           {
-            "id": "fang.cells.spider.03",
-            "eventId": 32,
+            "id": "fang.cells.spider.01",
+            "eventId": 30,
             "origin": [
               12,
-              264
+              252
             ],
             "sourceOriginal": [
               96,
-              87
+              83
             ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
             "enemyId": 9,
             "troopId": 10,
             "questSpecific": true,
@@ -750,8 +1557,7 @@
             "regions": [
               4
             ],
-            "scale": 1,
-            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+            "scale": 1
           },
           {
             "id": "fang.cells.spider.04",
@@ -764,6 +1570,7 @@
               90,
               87
             ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
             "enemyId": 9,
             "troopId": 10,
             "questSpecific": true,
@@ -772,8 +1579,29 @@
             "regions": [
               4
             ],
-            "scale": 1,
-            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40"
+            "scale": 1
+          },
+          {
+            "id": "fang.cells.spider.03",
+            "eventId": 32,
+            "origin": [
+              12,
+              264
+            ],
+            "sourceOriginal": [
+              96,
+              87
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
           }
         ]
       }
@@ -788,6 +1616,21 @@
         "areaId": "fang-lair.lower",
         "completionQuestId": "MQ02",
         "mapVisuals": {
+          "3": {
+            "file": "$Arena_lizard_man_walk_v01",
+            "cell": [
+              96,
+              96
+            ],
+            "ground": 94,
+            "groundByDirection": {
+              "2": 84,
+              "4": 84,
+              "6": 84,
+              "8": 78
+            },
+            "animationWait": 10
+          },
           "4": {
             "file": "$Arena_skeleton_walk_v01",
             "cell": [
@@ -800,26 +1643,334 @@
         },
         "entries": [
           {
-            "id": "fang.lower.approach.skeleton.01",
-            "eventId": 3,
+            "id": "fang.2.enemy.mif55.58",
+            "eventId": 40,
             "origin": [
-              12,
+              114,
               18
             ],
+            "sourceOriginal": [
+              55,
+              58
+            ],
             "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
-            "questSpecific": false,
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
             "radius": 2,
             "interval": 90,
             "regions": [
               4
             ],
-            "scale": 1,
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.59",
+            "eventId": 41,
+            "origin": [
+              114,
+              21
+            ],
+            "sourceOriginal": [
+              55,
+              59
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.64",
+            "eventId": 42,
+            "origin": [
+              114,
+              36
+            ],
+            "sourceOriginal": [
+              55,
+              64
+            ],
+            "sourceFlat": "FANG2 flat49 LIZRDMAN.DFA / ITEM34",
+            "enemyId": 3,
+            "troopId": 3,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.65",
+            "eventId": 43,
+            "origin": [
+              114,
+              39
+            ],
+            "sourceOriginal": [
+              55,
+              65
+            ],
+            "sourceFlat": "FANG2 flat49 LIZRDMAN.DFA / ITEM34",
+            "enemyId": 3,
+            "troopId": 3,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.73",
+            "eventId": 44,
+            "origin": [
+              114,
+              63
+            ],
+            "sourceOriginal": [
+              55,
+              73
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.74",
+            "eventId": 45,
+            "origin": [
+              114,
+              66
+            ],
+            "sourceOriginal": [
+              55,
+              74
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif85.74",
+            "eventId": 46,
+            "origin": [
+              24,
+              66
+            ],
+            "sourceOriginal": [
+              85,
+              74
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif88.74",
+            "eventId": 47,
+            "origin": [
+              15,
+              66
+            ],
+            "sourceOriginal": [
+              88,
+              74
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.75",
+            "eventId": 48,
+            "origin": [
+              114,
+              69
+            ],
+            "sourceOriginal": [
+              55,
+              75
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.lower.approach.skeleton.01",
+            "eventId": 3,
+            "origin": [
+              21,
+              69
+            ],
             "sourceOriginal": [
               86,
               75
             ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
             "enemyId": 4,
-            "troopId": 5
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.76",
+            "eventId": 49,
+            "origin": [
+              114,
+              72
+            ],
+            "sourceOriginal": [
+              55,
+              76
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.83",
+            "eventId": 50,
+            "origin": [
+              114,
+              93
+            ],
+            "sourceOriginal": [
+              55,
+              83
+            ],
+            "sourceFlat": "FANG2 flat49 LIZRDMAN.DFA / ITEM34",
+            "enemyId": 3,
+            "troopId": 3,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.84",
+            "eventId": 51,
+            "origin": [
+              114,
+              96
+            ],
+            "sourceOriginal": [
+              55,
+              84
+            ],
+            "sourceFlat": "FANG2 flat49 LIZRDMAN.DFA / ITEM34",
+            "enemyId": 3,
+            "troopId": 3,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.90",
+            "eventId": 52,
+            "origin": [
+              114,
+              114
+            ],
+            "sourceOriginal": [
+              55,
+              90
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif55.91",
+            "eventId": 53,
+            "origin": [
+              114,
+              117
+            ],
+            "sourceOriginal": [
+              55,
+              91
+            ],
+            "sourceFlat": "FANG2 flat53 SKELETON.DFA / ITEM38",
+            "enemyId": 4,
+            "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
           }
         ]
       }

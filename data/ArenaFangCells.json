@@ -266,20 +266,20 @@
     "mapId": 17,
     "areaId": "fang-lair.lower",
     "entry": [
-      6,
-      84
+      15,
+      135
     ],
     "stair": [
-      6,
-      87
+      15,
+      138
     ],
     "approach": [
-      78,
-      6
+      87,
+      57
     ],
     "door": [
-      78,
-      9
+      87,
+      60
     ],
     "return": [
       36,
@@ -306,12 +306,27 @@
       "itemId": 9,
       "eventId": 5,
       "position": [
-        78,
-        18
+        87,
+        69
       ],
       "text": [
         "O primeiro fragmento do Cajado do Caos brilha uma vez e se apaga, revelando um pedaço de ébano opaco. Ele pulsa, como se aguardasse a união com os outros sete."
       ]
+    },
+    "previousStair": [
+      6,
+      87
+    ],
+    "legacyWallRelocation": {
+      "x": [
+        80,
+        82
+      ],
+      "y": [
+        62,
+        70
+      ],
+      "safeX": 78
     }
   },
   "retaliation": {

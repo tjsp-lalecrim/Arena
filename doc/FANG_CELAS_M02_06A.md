@@ -2,6 +2,21 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Alas secas dos dois níveis — M02-06B e M02-07B
+
+A [matriz de cobertura](mapas/FANG_COBERTURA_M02.json) vincula as 95 posições originais a andar, coordenadas MIF de base zero, flat, espécie, estado e dependência. As áreas excluídas estão delimitadas nela. A leitura de MAP1/FLOR dos dois pisos de `42068779.MIF` foi cruzada com FANG1/FANG2.INF e com as âncoras anteriores. Abrimos somente os pisos secos ligados cardinalmente ao percurso, incluindo o suporte atravessável MAP1 `0x91xx` como passagem provisória. Paredes diagonais, desníveis sem equivalência confirmada e FLOR 12/13/14 de poço/água/lava ficaram fora das novas ligações. Os tiles existentes continuam provisórios.
+
+| Andar | Geometria disponível | Encontros originais ativos | Pendentes |
+| --- | --- | ---: | --- |
+| Map013 | 304×301 tiles, 2.196 células MIF projetadas. Ramais da entrada e túneis centrais, corredores de acesso às celas. Coordenadas MV anteriores preservadas | 40/76; 36 novos, 4 aranhas condicionadas já existentes | 36 incluindo Fantasma (3,49), câmara junto ao poço seco. Outras bolsas e ligações nos quadrantes das aranhas do nordeste, leste, oeste sul, centro sul e salas sul |
+| Map017 | 124×142 tiles, 665 células MIF projetadas. Corredores secos centrais, oeste e sul conectados à escada e à aproximação do enigma | 15/19; 14 novos, 1 esqueleto já existente | Hell Hounds (63,74)/(65,74) na sala do fragmento; 2 ghouls (84,61)/(87,61) na ilha cuja travessia por lava ainda falta |
+
+Os novos encontros usam os perfis, inimigos e tabelas de recompensa existentes, com IDs individuais. IDs das quatro aranhas, do primeiro esqueleto, dos itens, recibos e etapas foram mantidos. O Servo de Tharn é um encontro narrativo separado dos 95. O Map017 ampliado desloca a projeção anterior em (+9,+51); saves no recorte antigo são convertidos pelo ponto da escada, preservando posição relativa, direção e derrotas. No entorno da sala, três células (66,74–76) foram restauradas conforme o muro do MAP1, retirando a adaptação antiga que, junto ao piso novo, permitiria contornar a porta do enigma. Saves sobre essas três células retomam no corredor seco adjacente.
+
+As duas celas de tesouro LOCK 15 no primeiro nível seguem pendentes. No segundo, os dez LOCK 10 registrados sobre MAP1 de parede são mantidos na matriz sem abrir vãos por suposição; só a porta confirmada do enigma está ativa. Permanecem pendentes a travessia de poços/desníveis e lava, materiais de mina, ferragens/objetos, arte definitiva das duas espécies e outros elementos opcionais da planta.
+
+**Avaliação no Chrome pelo fluxo normal.** A partir da entrada, explore o ramal seco que leva ao ghoul em MIF (24,2), MV (228,9). Após descer as celas, explore o corredor seco até o esqueleto em MIF (55,90), MV (114,114). Salve após uma vitória e confira que o encontro fica ausente ao carregar. A avaliação manual do percurso principal pode ocorrer em paralelo pelo roteiro abaixo. [Arena local](http://127.0.0.1:8774/) · [Teste integrado](evidencias/m02-fang-alas/resultado.json)
+
 ## Retaliação de Jagar Tharn — M02-08
 
 No original, após a coleta do fragmento, a visão pode ocorrer onde um encontro aleatório seria possível. O guia local de Fang Lair descreve o ataque de um servo após a visão (pp.4–5). O `TEMPLATE.DAT #1392` da instalação confirma a fala, a ponte dos sonhos, a ameaça de tomar a peça e a chegada dos servos. A espécie e a regra de seleção do atacante não foram confirmadas. [Inventário textual](CAMPANHA_PRINCIPAL.md#inventário-textual)
@@ -106,7 +121,7 @@ Leitura direta de `42068779.MIF`: **dois níveis de 100×100**, vinculados a FAN
 | Hell hound, HELLHOUN.DFA / ITEM42, MIF (63,74)/(65,74) | 0 | 2 | 2 | **Novo** | **Nova** |
 | **Total** | **76** | **19** | **95** | **2 espécies pendentes** | **2 espécies pendentes** |
 
-O fragmento em MIF (64,75) resolve `CHAOS1.DFA` / ITEM13 e fica fora da contagem de criaturas. A aranha das celas foi identificada como a mesma espécie de Stonekeep pela combinação **SPIDER.DFA + ITEM40**. Quatro das 24 posições ficam nas celas condicionadas do recorte atual. Falta ligá-las a encontros persistentes no jogo. A matriz de Stonekeep tem 9 espécies com ambos os conjuntos disponíveis. O M02 soma **11 espécies distintas confirmadas** até aqui, das quais **2 precisam de combate e patrulha**, **0 só de combate** e **0 só de patrulha**. Os arredores adaptados de Rihad reaproveitam o rato. [Levantamento urbano](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).
+O fragmento em MIF (64,75) resolve `CHAOS1.DFA` / ITEM13 e fica fora da contagem de criaturas. A aranha das celas foi identificada como a mesma espécie de Stonekeep pela combinação **SPIDER.DFA + ITEM40**. Quatro das 24 posições ficam nas celas condicionadas e usam encontros persistentes. A tabela acima registra a situação dos demais encontros. A matriz de Stonekeep tem 9 espécies com ambos os conjuntos disponíveis. O M02 soma **11 espécies distintas confirmadas** até aqui, das quais **2 precisam de combate e patrulha**, **0 só de combate** e **0 só de patrulha**. Os arredores adaptados de Rihad reaproveitam o rato. [Levantamento urbano](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).
 
 O servo de Tharn fica **fora da contagem** até identificar a espécie ou regra de seleção. O relato da wiki e TEMPLATE #1392 estabelecem a retaliação, sem associá-la ao fantasma, aos hell hounds ou a uma criatura específica. Registrar também o possível comportamento de fogo dos hell hounds como dependência de design, sem decidir regras de combate neste inventário.
 
@@ -123,7 +138,7 @@ O servo de Tharn fica **fora da contagem** até identificar a espécie ou regra 
 
 **Contagem de planejamento.** Seis famílias na mina. Planejar **um atlas novo modular de Fang Lair** para superfícies comuns aos dois andares. Dimensionar o atlas de animação de lava à parte após confirmar a travessia e o formato A1. Portais complexos, props e ícone do fragmento podem ser sprites separados. Não contar cada SET original como um atlas. Com Rihad, o mínimo para iniciar a identidade dos mapas é **dois atlas novos**, um por ambiente. O total definitivo depende da corte, da lava e da aplicação dos recursos declarados nas áreas ainda sem pareamento visual.
 
-A fonte primária confirma presença/posição das criaturas e recursos declarados. Uso exato de cada variante de superfície, volume e enquadramento continua para o levantamento setorial. O núcleo das celas já pode receber os **quatro encontros de aranha** com o exemplar existente quando o backlog voltar a Fang Lair, sem esperar as duas espécies inéditas. A prioridade atual continua na ligação urbana de Rihad.
+A fonte primária confirma presença/posição das criaturas e recursos declarados. Uso exato de cada variante de superfície, volume e enquadramento continua para o levantamento setorial. O núcleo das celas reaproveita o exemplar de aranha existente. As espécies inéditas mantêm suas posições na matriz de cobertura.
 ## Fontes e recorte, definidos antes da construção
 
 | Evidência localizável | Confirmação e correspondência |
