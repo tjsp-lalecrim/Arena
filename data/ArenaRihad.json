@@ -34,8 +34,8 @@
     "entry": {
       "id": "rihad.court.entry",
       "mapId": 11,
-      "x": 8,
-      "y": 10,
+      "x": 81,
+      "y": 123,
       "direction": 8
     },
     "exit": {
