@@ -2,6 +2,22 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Visão de Jagar Tharn — M02-08, primeira parte
+
+No original, após a coleta do fragmento, a visão pode ocorrer onde um encontro aleatório seria possível. O guia local de Fang Lair descreve um ataque por um servo após a visão (pp.4–5). O `TEMPLATE.DAT #1392` da instalação confirma a fala, a ponte dos sonhos, a ameaça de tomar a peça e a chegada dos servos. O texto e o guia consultados não identificam a espécie ou a regra de seleção do atacante, nem documentam um desfecho narrativo próprio após a vitória. A última fala é uma ameaça de Tharn; a interação não oferece entregar o fragmento. Nenhuma observação do executável confirmou a identidade.
+
+A adaptação aprovada usa **Saída da mina**, no Map013 (288,9), como gatilho quando MQ02 está na etapa 100 e o fragmento está no inventário. A janela sem imagem usa a largura toda e apresenta, em ordem, os blocos `MQ02.fang.retaliation.01` e `MQ02.fang.retaliation.02`. A fala em PT-BR segue o inventário textual, que condensa parte da ameaça original. Orientação visual e ilustrações ficam para outra entrega. [Inventário textual](CAMPANHA_PRINCIPAL.md#inventário-textual)
+
+Ao fechar a última página, `fangTharnVisionRead` registra a leitura. A etapa continua 100 e o passo da retaliação segue pendente no diário. `fangRetaliationWon` pertence ao resultado futuro do encontro. A confirmação da visão não a marca como vencida nem altera inventário, loot ou recibos. A saída fica aguardando o encontro. Se a peça faltar, o jogo orienta a voltar à fonte e a leitura permanece como estava. As rotas pela mina e pela escada continuam disponíveis.
+
+### Roteiro no Chrome a partir de um save com o fragmento
+
+1. Carregue a partida normal com o primeiro fragmento. Suba a escada se estiver no segundo nível e volte à entrada da mina no primeiro. Se um save anterior já estiver em Rihad, viaje novamente para Fang Lair pelo portão. [Arena local](http://127.0.0.1:8774/)
+2. Interaja com **Saída da mina** e leia os dois blocos. Confira um fragmento no inventário e a retaliação pendente no diário. Salve na entrada da mina após fechar a mensagem.
+3. Recarregue e interaja outra vez. Deve aparecer apenas o aviso de encontro pendente. Esse save é o ponto de retomada para o combate futuro.
+
+O Chrome automatizado verificou gatilho e posse, leitura integral antes do registro, persistência antes e depois da visão, repetição sem efeitos e retorno à escada. Avaliação manual pendente. [Evidências](evidencias/m02-fang-tharn/resultado.json)
+
 ## Sala e primeiro fragmento — M02-07B, trecho de campanha
 
 A porta do enigma abre o acesso à sala no Map017. O percurso mantém a escala e a transformação existentes: MV (78,9) é a porta MIF (64,72); MV (78,12) é o vestíbulo MIF (64,73); MV (78,18) é o fragmento MIF (64,75). O vestíbulo de uma célula e o salão de 3×3 seguem a planta do segundo `LEVL` de `42068779.MIF`. O contorno usa `MAP1` (parede perimetral `0x70B7` e ombreiras `0x3131/0x3030`) e mantém o retorno pela mesma porta. As superfícies existentes e o marcador textual do fragmento são provisórios. [Planta e âncoras](mapas/FANG_NIVEL2_M02.json)
@@ -14,7 +30,7 @@ A porta do enigma abre o acesso à sala no Map017. O percurso mantém a escala e
 
 A coleta registra o item e a passagem 90 → 100 em conjunto. O diário marca o fragmento como obtido e indica a saída. A missão segue em andamento. Se faltar a peça na etapa 100, a mesma fonte repõe apenas a unidade ausente, sem repetir a narração ou avançar a missão. Um save anterior do Map017 carrega a nova lista de eventos mantendo posição, direção e estados individuais.
 
-**Ponto seguro de retomada.** Após coletar, suba e salve no patamar do primeiro nível (Map013, MV 36,296). A retaliação fica para M02-08, na interação de saída da mina com a peça em posse. Na versão atual, essa saída ainda permite retornar a Rihad. A partir de Rihad, será preciso voltar à mina para testar o futuro gatilho.
+**Ponto seguro de retomada.** Após coletar, suba e salve no patamar do primeiro nível (Map013, MV 36,296). A visão de Tharn intercepta a saída da mina com a peça em posse. O combate da retaliação continua pendente. Se o save já estiver em Rihad, volte à mina para testar o gatilho.
 
 ### Continuação do roteiro no Chrome
 
