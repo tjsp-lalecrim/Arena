@@ -2,6 +2,18 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Conexões do primeiro nível — revisão de 14/11/2026
+
+A revisão cruza MAP1 e FLOR de `42068779.MIF`, `FANG1.INF`, a planta publicada no guia local de Fang Lair (PDF p.5) e a descrição de salto do `Manual.pdf` instalado (PDF p.4). O layout do Map013 preserva dimensões, projeção, IDs e a rota anterior. [Matriz de passagens](mapas/FANG_COBERTURA_M02.json)
+
+- **138 cantos transitáveis.** A orientação MAP1 `0xD0xx/0xD1xx` e as duas faces secas adjacentes determinam a passagem. Cada canto foi adaptado como um cotovelo 3×3 com dois lados livres. O eixo X continua espelhado. Sem acesso pela face sólida, sem liberar cantos isolados ou vizinhos de uma fechadura.
+- **Patamar junto à entrada.** As duas ligações MIF (4,6) e (4,13) são vãos de uma célula com MAP1 vazio, FLOR `0x0C00` e piso seco nas duas extremidades. O original permite salto; nesta projeção, apenas esses dois vãos foram representados como passagens locais com o piso de transição existente. O restante do poço fica fechado. Isso torna acessível o patamar seco de 16 células entre Y7–12. A travessia exata no executável não foi testada. No [Arena local](http://127.0.0.1:8774/), entre em Fang Lair e siga ao sul pela coluna de chegada até o primeiro vão. No patamar, contorne a reentrância pelo centro para alcançar o segundo vão e volte pela rota externa.
+- **Desníveis e alas pendentes.** Os blocos da praça nordeste `0x2065/0x4065/0x5865` têm diferenças de espessura confirmadas na tabela do executável, e os volumes `0x7021/0x7026` abrangem a borda da planta. A matriz mantém as paredes sólidas que cortam as rotas candidatas, incluindo o corredor sob suspeita em (82,57)–(82,59). A presença de FLOR de poço nessas células não demonstra passagem sob a parede. A ligação local (3,62) continuaria isolada da campanha. A matriz identifica os candidatos e obstruções para as seis áreas com encontros pendentes.
+
+A cobertura do primeiro nível passa de 2.196 a **2.352 células MIF com piso transitável parcial ou integral**. O patamar não contém encontros confirmados. A cobertura de encontros permanece em **40/76** no primeiro nível e **15/19** no segundo. O Fantasma, os Hell Hounds e a travessia de lava permanecem dependências separadas. O segundo nível manteve a geometria e os eventos.
+
+**Verificação.** O teste integrado percorre as duas travessias em ambos os sentidos, verifica as faces dos 138 cantos, recarrega um save no Map013 e repete a rota de MQ02 até Rihad. [Evidências](evidencias/m02-fang-conexoes/resultado.json)
+
 ## Alas secas dos dois níveis — M02-06B e M02-07B
 
 A [matriz de cobertura](mapas/FANG_COBERTURA_M02.json) vincula as 95 posições originais a andar, coordenadas MIF de base zero, flat, espécie, estado e dependência. As áreas excluídas estão delimitadas nela. A leitura de MAP1/FLOR dos dois pisos de `42068779.MIF` foi cruzada com FANG1/FANG2.INF e com as âncoras anteriores. Abrimos somente os pisos secos ligados cardinalmente ao percurso, incluindo o suporte atravessável MAP1 `0x91xx` como passagem provisória. Paredes diagonais, desníveis sem equivalência confirmada e FLOR 12/13/14 de poço/água/lava ficaram fora das novas ligações. Os tiles existentes continuam provisórios.
