@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.6.0 Fang Lair: alas secas, enigmas e retaliação.
+ * @plugindesc v0.7.0 Fang Lair: celas opcionais de tesouro.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
  * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
@@ -8,7 +8,7 @@ var ArenaFangCells;
 (function(){'use strict';var pending=false;
  DataManager._databaseFiles.push({name:'$arenaFangCells',src:'ArenaFangCells.json'});
  // Content-contract revision only. Editor/file storage and save namespace unchanged.
- if(/^https?:$/.test(location.protocol))DataManager._databaseFiles.forEach(function(f){if(f.name==='$dataItems')f.src='Items.json?arena-data=fang-staff-piece-v1';});
+ if(/^https?:$/.test(location.protocol))DataManager._databaseFiles.forEach(function(f){if(f.name==='$dataItems')f.src='Items.json?arena-data=fang-brass-key-v1';});
  function c(){return $arenaFangCells;}
  function here(){return $gameMap&&$gameMap.mapId()===c().mapId;}
  function below(){return $gameMap&&$gameMap.mapId()===c().lower.mapId;}
@@ -72,8 +72,26 @@ var ArenaFangCells;
  function atomic(fn){var state=JsonEx.makeDeepCopy($gameSystem._persistentState),items=Object.assign({},$gameParty._items);try{var result=fn();if(result===false){$gameSystem._persistentState=state;$gameParty._items=items;}return result;}catch(e){$gameSystem._persistentState=state;$gameParty._items=items;throw e;}}
  function update(stage,flags){var v=q();ArenaPersistence.setQuest(c().questId,stage,Object.assign({},v.objectives,flags),false);}
  function opened(g){var v=q();return g.opensWith==='receipt'?receipt():g.opensWith==='correct'?v.stage>=70&&!!v.objectives.fangCellsSolved:!!v.objectives.fangSpidersReleased;}
+ function treasureSwitch(eventId,letter){return [c().mapId,eventId,letter||'A'];}
+ function treasureCellOpen(cell){return $gameSelfSwitches.value(treasureSwitch(cell.doorEventId));}
+ function syncTreasure(){
+  var optional=c().optionalTreasure,receipts=ArenaLoot.snapshot().receipts;
+  optional.keys.forEach(function(key){
+   var gate=c().gates.find(function(g){return g.id===key.cellGateId;}),sw=treasureSwitch(key.eventId,'B');
+   if($gameSelfSwitches.value(sw)!==opened(gate))$gameSelfSwitches.setValue(sw,opened(gate));
+  });
+  optional.cells.forEach(function(cell){
+   var access=$gameMap.event(cell.interactEventId);
+   if(access)access.setThrough(treasureCellOpen(cell));
+   cell.treasures.forEach(function(chest){
+    var sw=treasureSwitch(chest.eventId),taken=!!receipts['container/'+chest.id];
+    if($gameSelfSwitches.value(sw)!==taken)$gameSelfSwitches.setValue(sw,taken);
+   });
+  });
+ }
  function sync(){
   if(!here())return;
+  syncTreasure();
   c().gates.forEach(function(g){
    var key=[c().mapId,g.eventId,'A'],value=opened(g);
    if($gameSelfSwitches.value(key)!==value)$gameSelfSwitches.setValue(key,value);
@@ -187,7 +205,42 @@ var ArenaFangCells;
    });
    return ok&&first?show(i,staff.text):ok;
   },
-  brass:function(i){return valid(i,i.eventId())?show(i,['Latão sem valor. Este objeto não é a chave dourada.']):false;},
+  brass:function(i){
+   var optional=c().optionalTreasure,key=optional.keys.find(function(k){return k.eventId===i.eventId();});
+   if(!key||!valid(i,key.eventId)||$gameMessage.isBusy()||$gameSelfSwitches.value(treasureSwitch(key.eventId)))return false;
+   var gate=c().gates.find(function(g){return g.id===key.cellGateId;});
+   if(!opened(gate))return false;
+   var item=$dataItems[optional.itemId],count=$gameParty.numItems(item);
+   $gameParty.gainItem(item,1);
+   if($gameParty.numItems(item)!==count+1)return false;
+   $gameSelfSwitches.setValue(treasureSwitch(key.eventId),true);
+   return show(i,['Você recolheu uma chave de latão. Ela abre uma cela de tesouro.']);
+  },
+  openTreasureCell:function(i){
+   var optional=c().optionalTreasure,cell=optional.cells.find(function(v){return v.interactEventId===i.eventId();});
+   if(!cell||!valid(i,cell.interactEventId)||$gameMessage.isBusy()||treasureCellOpen(cell))return false;
+   var item=$dataItems[optional.itemId];
+   if(!$gameParty.hasItem(item))return show(i,['A fechadura exige uma chave de latão.']);
+   $gameParty.loseItem(item,1);
+   $gameSelfSwitches.setValue(treasureSwitch(cell.doorEventId),true);
+   $gameMap.event(cell.interactEventId).setThrough(true);
+   return true;
+  },
+  takeTreasure:function(i){
+   var cells=c().optionalTreasure.cells;
+   var cell=cells.find(function(v){return v.treasures.some(function(t){return t.eventId===i.eventId();});});
+   if(!cell||!valid(i,i.eventId())||$gameMessage.isBusy()||!treasureCellOpen(cell))return false;
+   var chest=cell.treasures.find(function(t){return t.eventId===i.eventId();});
+   if(ArenaLoot.snapshot().receipts['container/'+chest.id])return false;
+   var result=ArenaLoot.claimContainer(chest.id,$arenaLoot.enemies[String($arenaQuests.treasureTableEnemyId)],$arenaQuests.treasureFallbackGold);
+   syncTreasure();
+   var lines=result.received.map(function(row){
+    var item=row.kind==='gold'?null:ArenaInventory.resolve(row);
+    return (item?item.name:'Ouro')+' ×'+row.quantity;
+   });
+   if(result.pending.length)lines.push('Reserva salva para quando houver espaço.');
+   return show(i,lines);
+  },
   leave:function(i){
    if(!canLeave(i))return false;
    if(ArenaContinuation.labActive()){ArenaContinuation.leaveLab();return true;}
@@ -223,6 +276,8 @@ var ArenaFangCells;
    var encounter=cfg.retaliation&&cfg.retaliation.encounter,troop=encounter&&$dataTroops[encounter.troopId];
    if(!troop||troop.members.length!==1||troop.members[0].hidden||troop.members[0].enemyId!==encounter.enemyId||!$dataEnemies[encounter.enemyId])problem='tropa do Servo de Tharn incompatível';
   }
+  var optional=cfg&&cfg.optionalTreasure,brass=optional&&$dataItems[optional.itemId];
+  if(!problem&&(!brass||brass.itypeId!==2))problem='chave de latão importante incompatível';
   if(problem)throw Error('Fang Lair: '+problem+'. Confira os arquivos de dados servidos e build-fang-cells.');return true;};
  // A serialized copy of the isolated crop has incompatible event coordinates.
  var createMap=Scene_Map.prototype.create;
@@ -231,6 +286,11 @@ var ArenaFangCells;
   if(portal&&portal.x===33&&(!$gamePlayer.isTransferring()||$gamePlayer.newMapId()===c().mapId)){
    $gamePlayer.reserveTransfer(c().mapId,c().entry[0],c().entry[1],2,0);
    $gamePlayer.requestMapReload();
+  }
+  // Earlier campaign saves have the same upper-floor positions but no treasure events.
+  if(here()&&!$gameMap.event(c().optionalTreasure.cells[0].doorEventId)){
+   if(!$gamePlayer.isTransferring())$gamePlayer.reserveTransfer(c().mapId,$gamePlayer.x,$gamePlayer.y,$gamePlayer.direction(),2);
+   if($gamePlayer.newMapId()===c().mapId)$gamePlayer.requestMapReload();
   }
   // The expanded lower crop preserves every prior source cell, translated in MV.
   var lower=c().lower,stair=below()&&$gameMap.event(1);
@@ -255,7 +315,9 @@ var ArenaFangCells;
  var passage=Game_Map.prototype.isPassable;
  Game_Map.prototype.isPassable=function(x,y,d){
   if(below()&&Math.abs(x-c().lower.door[0])<=1&&Math.abs(y-c().lower.door[1])<=1&&!lowerDoorOpen())return false;
-  if(here()&&c().gates.some(function(g){return Math.abs(x-g.origin[0])<=1&&Math.abs(y-g.origin[1])<=1&&!opened(g);}))return false;return passage.apply(this,arguments);};
+  if(here()&&c().gates.some(function(g){return Math.abs(x-g.origin[0])<=1&&Math.abs(y-g.origin[1])<=1&&!opened(g);}))return false;
+  if(here()&&c().optionalTreasure.cells.some(function(cell){return Math.abs(x-cell.origin[0])<=1&&Math.abs(y-cell.origin[1])<=1&&!treasureCellOpen(cell);}))return false;
+  return passage.apply(this,arguments);};
  var choice=Window_ChoiceList.prototype.start;
  Window_ChoiceList.prototype.start=function(){choice.apply(this,arguments);if(here()||below()||($gameMap.mapId()===$arenaRihad.arrival.mapId&&$gameMap._interpreter.eventId()===ArenaStonekeep.configuration().travelEventId)){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
  var end=Window_Message.prototype.terminateMessage;
@@ -273,6 +335,7 @@ var ArenaFangCells;
    if(lowerDoorOpen()&&ArenaPersistence.sourceStatus(staff.sourceId).missing)label(staff.position,'Primeiro fragmento · Interagir');
    return;
   }
+  if(c().optionalTreasure.cells.some(function(cell){return !treasureCellOpen(cell);}))label([21,237],'Celas de tesouro');
   label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,ArenaContinuation.labActive()?'Retornar ao título':q().stage===100?'Saída da mina':'Retornar a Rihad');label(c().limit,'Descer para o segundo nível');
   [[9,288,'Cela 3'],[18,288,'Cela 2'],[27,288,'Cela 1']].forEach(function(p){label(p,p[2]);});if(ArenaPersistence.sourceStatus(c().sourceId).active)label(c().key,'Chave dourada · provisório');
  };
