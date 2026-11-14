@@ -44,7 +44,7 @@ Fonte da regra: [escopo mínimo funcional](MARCOS_DO_PROJETO.md#escopo-mínimo-f
 | --- | --- | --- |
 | Stonekeep | **Map015 em avaliação de campanha.** Planta 90×90, nove setores, 180 encontros registrados e 70 portas alcançadas. Acessos opcionais, refúgio e tesouros pendentes na matriz. | [Matriz vigente](STONEKEEP_M02_04.md#matriz-vigente) |
 | Rihad | Planta original reconstruída, ainda sem importação para o runtime. Esplanada e corte mínima seguem jogáveis. Integrar o acesso pelo portão urbano e preservar os eventos já funcionais | [Planta e lacunas](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) |
-| Fang Lair | Nível 1 liga entrada, celas, quatro aranhas e escada. Nível 2 liga escada, esqueleto no corredor, segundo enigma e sala do fragmento até etapa 100. A rota principal segue pela retaliação no primeiro nível, conclui MQ02 na etapa 110 e retorna a Rihad. A cobertura do mapa ainda exige alas e encontros aplicáveis nos dois níveis, incluindo Hell Hounds em (63,74)/(65,74) no segundo nível, e arte definitiva | [M02-07B, trecho integrado](FANG_CELAS_M02_06A.md#sala-e-primeiro-fragmento--m02-07b-trecho-de-campanha) |
+| Fang Lair | Percurso de MQ02 concluível até Rihad. Map013: 40/76 encontros originais. Map017: 15/19. Faltam 40 posições, incluindo Fantasma, Hell Hounds e ghouls da ilha de lava; demais alas/volumes, tesouros e arte definitiva seguem separados. Avaliação manual em paralelo | [Matriz e dependências](FANG_CELAS_M02_06A.md#alas-secas-dos-dois-níveis--m02-06b-e-m02-07b) |
 
 ### Ordem revisada — sem renumerar as entregas anteriores
 
