@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.3.0 Fang Lair: da viagem à coleta do primeiro fragmento.
+ * @plugindesc v0.4.0 Fang Lair: da viagem à visão de Tharn.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
  * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
@@ -49,6 +49,8 @@ var ArenaFangCells;
  function lowerValid(i,id){
   return valid(i,id,c().lower.mapId)&&receipt()&&q().stage>=80&&!$gameMessage.isBusy();
  }
+ function canLeave(i){return valid(i,1)&&!$gameMessage.isBusy();}
+ function hasStaffPiece(){return $gameParty.hasItem($dataItems[c().lower.staffPiece.itemId]);}
  function show(i,texts){return ArenaCourt.show(i,texts);}
  function atomic(fn){var state=JsonEx.makeDeepCopy($gameSystem._persistentState),items=Object.assign({},$gameParty._items);try{var result=fn();if(result===false){$gameSystem._persistentState=state;$gameParty._items=items;}return result;}catch(e){$gameSystem._persistentState=state;$gameParty._items=items;throw e;}}
  function update(stage,flags){var v=q();ArenaPersistence.setQuest(c().questId,stage,Object.assign({},v.objectives,flags),false);}
@@ -170,9 +172,22 @@ var ArenaFangCells;
   },
   brass:function(i){return valid(i,i.eventId())?show(i,['Latão sem valor. Este objeto não é a chave dourada.']):false;},
   leave:function(i){
-   if(!valid(i,1)||$gameMessage.isBusy())return false;
+   if(!canLeave(i))return false;
    if(ArenaContinuation.labActive()){ArenaContinuation.leaveLab();return true;}
-   return transfer($arenaRihad.arrival);
+   var quest=q();
+   if(quest.stage!==100)return transfer($arenaRihad.arrival);
+   var scene=c().retaliation;
+   if(!hasStaffPiece())return show(i,[scene.missing]);
+   if(quest.objectives.fangTharnVisionRead)return show(i,[scene.pending]);
+   show(i,scene.blocks.map(function(block){return block.text;}));
+   var list=i._childInterpreter._list;
+   list.splice(list.length-1,0,{code:355,indent:0,parameters:['ArenaFangCells.finishTharnVision(this);']});
+   return true;
+  },
+  finishTharnVision:function(i){
+   if(!canLeave(i)||ArenaContinuation.labActive()||q().stage!==100||q().objectives.fangTharnVisionRead||!hasStaffPiece())return false;
+   update(100,{fangTharnVisionRead:true});
+   return show(i,[c().retaliation.pending]);
   },
   sync:sync,
   gateOpen:function(id){var g=c().gates.filter(function(v){return v.id===id;})[0];return !!g&&opened(g);}
@@ -229,7 +244,7 @@ var ArenaFangCells;
    if(lowerDoorOpen()&&ArenaPersistence.sourceStatus(staff.sourceId).missing)label(staff.position,'Primeiro fragmento · Interagir');
    return;
   }
-  label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,ArenaContinuation.labActive()?'Retornar ao título':'Retornar a Rihad');label(c().limit,'Descer para o segundo nível');
+  label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,ArenaContinuation.labActive()?'Retornar ao título':q().stage===100?'Saída da mina':'Retornar a Rihad');label(c().limit,'Descer para o segundo nível');
   [[9,288,'Cela 3'],[18,288,'Cela 2'],[27,288,'Cela 1']].forEach(function(p){label(p,p[2]);});if(ArenaPersistence.sourceStatus(c().sourceId).active)label(c().key,'Chave dourada · provisório');
  };
  ArenaDebugHub.register({symbol:'arenaFangCells',name:'Fang Lair · celas (RAM)',category:'campaign',description:'Enigma, chave da Cela 2 e portal. Liberação das aranhas e combate com o exemplar existente.',saving:'Somente RAM · slots normais bloqueados'},ArenaFangCells.preview);

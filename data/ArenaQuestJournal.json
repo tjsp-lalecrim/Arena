@@ -161,14 +161,23 @@
           "completedText": "Recuperei o primeiro fragmento do Cajado do Caos."
         },
         {
+          "id": "fang-tharn-vision",
+          "objectiveId": "fangTharnVisionRead",
+          "revealAt": 100,
+          "doneAt": 110,
+          "text": "Levar o fragmento à saída de Fang Lair.",
+          "completedText": "Jagar Tharn apareceu em uma visão e ameaçou tomar o fragmento."
+        },
+        {
           "id": "fang-retaliation",
           "revealAt": 100,
           "doneAt": 110,
-          "text": "Sair de Fang Lair com o primeiro fragmento.",
-          "completedText": "Saí de Fang Lair com o primeiro fragmento e superei a retaliação."
+          "text": "Superar a retaliação de Tharn e sair com o primeiro fragmento.",
+          "completedText": "Saí de Fang Lair com o primeiro fragmento e superei a retaliação.",
+          "objectiveId": "fangRetaliationWon"
         }
       ],
-      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação. Celas: FANG1.INF TEXT5–10 e wiki p3/5; tradução e escolhas adaptadas. Segundo nível e fragmento: FANG2.INF TEXT0, TEMPLATE.DAT #1371 e wiki p.4."
+      "source": "TEMPLATE.DAT #1500/#1294/#1315–17, wiki Fang Lair pp.1–2; apresentação e etapas MQ02 adaptadas. Entrega: TEMPLATE.DAT#1319 e wiki p3 Quid Pro Quo2; destino conhecido sem viagem é adaptação. Celas: FANG1.INF TEXT5–10 e wiki p3/5; tradução e escolhas adaptadas. Segundo nível e fragmento: FANG2.INF TEXT0, TEMPLATE.DAT #1371 e wiki p.4. Retaliação: TEMPLATE.DAT #1392 e wiki pp.4–5."
     }
   ]
 }
