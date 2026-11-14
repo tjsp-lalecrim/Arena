@@ -2,6 +2,19 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Tesouros das alas secas — primeiro nível
+
+A leitura dos dois `LEVL` de `42068779.MIF` e dos flats de FANG1/FANG2.INF confirma os montes `TREASRE2.IMG / ITEM5` e `TREASRE3.IMG / ITEM6`. A matriz registra separadamente o baú `CHESTC.IMG / ITEM7` do segundo nível. Objetos `EQUIPMEN.IMG / ITEM3` e `DEADBODY.IMG / ITEM2` ficam fora desta contagem de montes e baú. [Matriz](mapas/FANG_COBERTURA_M02.json)
+
+| Andar | Integrados | Pendentes |
+| --- | --- | --- |
+| Primeiro | 6 de 13 montes. Dois novos `TREASRE2` em MIF (13,21) → MV (261,66) e (57,19) → (129,60), mais os quatro das celas LOCK 15 | Sete montes em alas cuja ligação ainda precisa ser confirmada. Posições na matriz |
+| Segundo | 0 de 6 fontes | Cinco montes e um baú na ilha dos ghouls. A travessia de lava é uma dependência comum e o baú ainda requer conferir seu componente |
+
+Os dois montes novos ficam em pisos secos acessíveis pelo percurso normal, antes do portal. Reutilizam o sprite, a tabela de tesouros e a reserva de 2–8 moedas. Cada posição tem um ID persistente. O recibo controla a ocultação e impede uma segunda concessão. Saves de Map013 anteriores recebem os eventos mantendo posição, direção, portas, inventário e recibos.
+
+**Roteiro combinado.** Depois de chegar a Fang Lair pelo portão de Rihad, siga os ramais secos do primeiro nível até os montes em (261,66) e (129,60) na grade MV. Interaja para recolher cada um. Continue para o [teste das celas](#celas-opcionais-de-tesouro--primeiro-nível). Salve, carregue e, ao sair e voltar de Rihad, confira que os montes coletados continuam ausentes. [Arena local](http://127.0.0.1:8774/) · [Evidências](evidencias/m02-fang-tesouros-secos/resultado.json)
+
 ## Celas opcionais de tesouro — primeiro nível
 
 O primeiro `LEVL` de `42068779.MIF` registra as duas portas com MAP1 `0xB016` e `LOCK 15`. As chaves das Celas 1 e 3 aparecem como `KEY.IMG` em (91,98) e (97,98), com `TRIG TEXT3`. Em `FANG1.INF TEXT3`, `+15` corresponde a essas fechaduras. A chave dourada em (94,98) usa `TEXT1 +29` e o portal usa `LOCK 29`. O guia local (*Fang Lair*, PDF p.4) descreve liberar as celas das chaves pelas opções erradas e usar as chaves nos compartimentos de tesouro. [Matriz de cobertura](mapas/FANG_COBERTURA_M02.json)
