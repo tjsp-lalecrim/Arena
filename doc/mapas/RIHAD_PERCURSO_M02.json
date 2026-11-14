@@ -424,14 +424,42 @@
           52,
           8
         ],
-        "block": "NBBD1C.MIF"
+        "block": "NBBD1C.MIF",
+        "mv": [
+          228,
+          27
+        ],
+        "status": "sem passagem na planta",
+        "openFace": "oeste",
+        "solidNeighbor": [
+          53,
+          8
+        ],
+        "solidMap1": "0x3838",
+        "solidTexture": "DMNOBLE.SET",
+        "map2": 0,
+        "sideWalls": "NHEDGED.IMG (0x903A)"
       },
       {
         "original": [
           57,
           72
         ],
-        "block": "NBBD1D.MIF"
+        "block": "NBBD1D.MIF",
+        "mv": [
+          213,
+          219
+        ],
+        "status": "sem passagem na planta",
+        "openFace": "norte",
+        "solidNeighbor": [
+          57,
+          73
+        ],
+        "solidMap1": "0x3939",
+        "solidTexture": "DMNOBLE.SET",
+        "map2": 0,
+        "sideWalls": "NHEDGED.IMG (0x903A)"
       }
     ],
     "reachableFromArrivalBefore": 7357,

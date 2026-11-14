@@ -317,7 +317,7 @@ var ArenaFangCells;
  };
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===$arenaRihad.court.entry.mapId&&!$gamePlayer.isTransferring()){
-  pending=false;$gamePlayer.locate(8,6);var i=new Game_Interpreter();i.setup([],2);i._branch[0]=0;if(!ArenaCourtDelivery.deliver(i))throw Error('Fang Lair: fixture de entrega falhou.');var p=c().lab;$gameTemp.clearDestination();$gamePlayer.reserveTransfer(c().mapId,p.x,p.y,p.direction,0);
+  pending=false;var queenId=$arenaRihad.court.queenEventId,queen=$gameMap.event(queenId);$gamePlayer.locate(queen.x,queen.y+1);var i=new Game_Interpreter();i.setup([],queenId);i._branch[0]=0;if(!ArenaCourtDelivery.deliver(i))throw Error('Fang Lair: fixture de entrega falhou.');var p=c().lab;$gameTemp.clearDestination();$gamePlayer.reserveTransfer(c().mapId,p.x,p.y,p.direction,0);
  }sync();if(below())syncLower();};
  var passage=Game_Map.prototype.isPassable;
  Game_Map.prototype.isPassable=function(x,y,d){

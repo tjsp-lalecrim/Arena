@@ -1,8 +1,14 @@
-// Minimal provisional court; callable after the arrival generator, never artwork production.
+const plan = require('../doc/mapas/RIHAD_CORTE_M02.json');
 const fs=require('node:fs'),path=require('node:path'),root=path.resolve(__dirname,'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8')),write=(p,v)=>fs.writeFileSync(path.join(root,p),JSON.stringify(v,null,2)+'\n');
+function position([x, y]) {
+ const center = Math.floor(plan.scale / 2);
+ return { x: plan.margin + (plan.rows[0].length - 1 - x) * plan.scale + center,
+          y: plan.margin + y * plan.scale + center };
+}
+
 function build(){
- const c={areaId:'rihad.court',entry:{id:'rihad.court.entry',mapId:11,x:8,y:10,direction:8},exit:{id:'rihad.court.exit',mapId:9,x:10,y:5,direction:2},accessEventId:5,doorEventId:6,exitEventId:1,queenEventId:2,destinationId:'stonekeep.entry'};
+ const c={areaId:'rihad.court',entry:{id:'rihad.court.entry',mapId:11,...position(plan.anchors.entry),direction:8},exit:{id:'rihad.court.exit',mapId:9,x:10,y:5,direction:2},accessEventId:5,doorEventId:6,exitEventId:1,queenEventId:2,destinationId:'stonekeep.entry'};
  const base=read('data/Map008.json').events[241].pages[0];
  function event(id,name,x,y,script,characterName='',trigger=0){const p=JSON.parse(JSON.stringify(base));p.image.characterName=characterName;p.image.direction=2;p.trigger=trigger;p.priorityType=characterName?1:0;p.through=!characterName;p.directionFix=true;p.walkAnime=!!characterName;p.list=script?[{code:355,indent:0,parameters:[script]},{code:0,indent:0,parameters:[]}]:[{code:0,indent:0,parameters:[]}];return {id,name,note:'M02-03D — representação provisória, sem planta/fisionomia canônica',x,y,pages:[p]};}
  const arrival=read('data/Map009.json');
@@ -16,12 +22,44 @@ function build(){
  cfg.court=c;
  require('./rihad-city-route.cjs').build(arrival,cfg,read('data/ArenaRecovery.json'));
  fs.writeFileSync(path.join(root,'data/Map009.json'),JSON.stringify(arrival)+'\n');
- const width=17,height=13,data=Array(width*height*6).fill(0),open=(x,y)=>x>=2&&x<=14&&y>=4&&y<=11;
- for(let y=0;y<height;y++)for(let x=0;x<width;x++){data[y*width+x]=open(x,y)?1+x%2+y%2*8:open(x,y+1)?13+x%2:open(x,y+2)?5+x%2:4;data[(5*height+y)*width+x]=open(x,y)?4:1;}
- for(let y=0;y<3;y++)for(let x=0;x<3;x++)data[(height+4+y)*width+7+x]=68+x+y*8;
- const map={...read('data/Map001.json'),width,height,data,tilesetId:4,displayName:'',note:'M02-03D — corte mínima provisória. Materiais e NPC de reuso, não representação definitiva de Blubamka/palácio. Sem encontros.',encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events:[null,event(1,'Sair para Rihad',8,11,'ArenaCourt.leave(this);','',1),event(2,'Rainha Blubamka — sprite provisório',8,5,'ArenaCourt.talk(this);','$Arena_redguard_female_walk_r02')]};
- write('data/Map011.json',map);
- const infos=read('data/MapInfos.json');infos[9].name='M02-03 Rihad — percurso urbano';infos[11]={id:11,expanded:true,name:'M02-03 Corte de Rihad (provisória)',order:11,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
+ const width = plan.rows[0].length * plan.scale + plan.margin * 2;
+ const height = plan.rows.length * plan.scale + plan.margin * 2;
+ const data = Array(width * height * 6).fill(0);
+ function cell(x, y) {
+  const localX = x - plan.margin;
+  const localY = y - plan.margin;
+  const column = Math.floor(localX / plan.scale);
+  const row = Math.floor(localY / plan.scale);
+  const originalX = plan.rows[0].length - 1 - column;
+  const value = plan.rows[row]?.[originalX] ?? '#';
+  if (value === 'E') return localX % plan.scale === 1 ? 'c' : '#';
+  if (value !== 'D') return value;
+  // The source's six ordinary door thresholds have no LOCK records.
+  const northSouth = plan.rows[row - 1][originalX] !== '#' &&
+      plan.rows[row + 1][originalX] !== '#';
+  const offset = northSouth ? localX : localY;
+  return offset % plan.scale === 1 ? '.' : '#';
+ }
+ const solid = value => value === '#' || value === '~';
+ const floorTiles = { '.': 1, c: 9, r: 2 };
+ for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+  const value = cell(x, y);
+  const index = y * width + x;
+  data[index] = value === '~' ? 4 : solid(value) ?
+      (!solid(cell(x,y+1)) ? 13 : !solid(cell(x,y+2)) ? 5 : 4) : floorTiles[value];
+  data[5 * width * height + index] = solid(value) ? 1 : 4;
+ }
+ const exit = position(plan.anchors.exit);
+ const queen = position(plan.anchors.queen);
+ const map = {
+  ...read('data/Map001.json'), width, height, data, tilesetId: 4,
+  displayName: '', note: 'PALACE2.MIF / caslev1: planta pública da corte, materiais e NPC provisórios.',
+  encounterList: [], scrollType: 0, parallaxName: '', specifyBattleback: false,
+  events: [null, event(1, 'Sair para Rihad', exit.x, exit.y, 'ArenaCourt.leave(this);', '', 1),
+   event(2, 'Rainha Blubamka — sprite provisório', queen.x, queen.y, 'ArenaCourt.talk(this);', '$Arena_redguard_female_walk_r02')]
+ };
+ fs.writeFileSync(path.join(root,'data/Map011.json'), JSON.stringify(map)+'\n');
+ const infos=read('data/MapInfos.json');infos[9].name='M02-03 Rihad — percurso urbano';infos[11]={id:11,expanded:true,name:'M02-03 Corte de Rihad (PALACE2)',order:11,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
  write('data/ArenaRihad.json',cfg);
  const p=path.join(root,'data/ArenaCampaign.json'),raw=fs.readFileSync(p,'utf8'),a={id:c.areaId,questId:'MQ02',mapId:11},existing=read('data/ArenaCampaign.json').areas.find(a=>a.id===c.areaId);
  if(existing){if(JSON.stringify(existing)!==JSON.stringify(a))throw Error('Vínculo da corte divergente; preservar configuração.');}
