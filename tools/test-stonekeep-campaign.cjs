@@ -7,7 +7,8 @@ const { coverage, url } = require('./test-stonekeep-coverage.cjs');
 const battleControls = require('./battle-test-controls.cjs');
 
 const root = path.resolve(__dirname, '..');
-const output = path.join(root, 'doc/evidencias/m02-rihad-corte/resultado.json');
+const output = path.join(root, 'doc/evidencias/m02-rihad-atlas/resultado.json');
+const rihadTileset = require('../doc/arte/m02-tilesets/rihad.json').tilesetId;
 const { gardenAccess } = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
 const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
     .map(name => path.join(root, 'data', name + '.json'));
@@ -45,6 +46,12 @@ async function run() {
             !$gamePlayer.isTransferring() && $gamePlayer.canMove() &&
             (!id || $gameMap.mapId() === id), id);
         const key = async k => { await page.keyboard.press(k, { delay: 90 }); await page.waitForTimeout(175); };
+        async function captureCity(name) {
+            fs.mkdirSync(path.dirname(output), { recursive: true });
+            await page.evaluate(() => $gamePlayer.center($gamePlayer.x, $gamePlayer.y));
+            await page.waitForTimeout(400);
+            await page.locator('#GameCanvas').screenshot({ path: path.join(path.dirname(output), name + '.png') });
+        }
         const stage = () => page.evaluate(() => ArenaQuests.snapshot('MQ02').stage);
         const state = () => page.evaluate(() => ({
             arena: ArenaPersistence.snapshot(), loot: ArenaLoot.snapshot(),
@@ -259,6 +266,8 @@ async function run() {
         assert.deepEqual(city.dimensions, [388,388]);
         assert.deepEqual(await position(), city.arrival);
         assert.equal(city.arrivalSideWall, true);
+        assert.equal(await page.evaluate(() => $gameMap.tilesetId()), rihadTileset);
+        await captureCity('portao');
         await walk(await eventPosition(4, 1));
         await key('ArrowUp');
         await map(10);
@@ -327,6 +336,7 @@ async function run() {
         const [x, y] = [345, 108];
         await walk([x,y+2]);
         const beforeGarden = await state();
+        await captureCity('jardim');
         for (let step = 0; step < 4; step++) await key('ArrowUp');
         assert.deepEqual(await position(), [x,y-2]);
         await save(20);
@@ -336,6 +346,8 @@ async function run() {
         for (let step = 0; step < 4; step++) await key('ArrowDown');
         assert.deepEqual(await position(), [x,y+2]);
         checks.push('30 vãos de jardim conectados ao portão, só nos lados confirmados. Travessia por teclado e save/load no pátio do templo sem mudar MQ02.');
+        await walk(await eventPosition(5, -1));
+        await captureCity('corte-exterior');
         const citySteps = await approachCourt();
         const inCourt = await state();
         const courtEntry = await position();
@@ -454,8 +466,13 @@ async function run() {
         const beforeCitySave = await state();
         await walk(await eventPosition(2, 1));
         const citySavePosition = await position();
+        // Mimic the serialized tileset value a pre-atlas Map009 save carries.
+        await page.evaluate(() => $gameMap._tilesetId = 4);
         await save(18);
         await reload(18, 9);
+        assert.equal(await page.evaluate(() => $gameMap.tilesetId()), rihadTileset);
+        await captureCity('esplanada');
+        checks.push('Save pré-atlas no Map009 adota o C atual sem remapear posição ou estado.');
         assert.deepEqual(await position(), citySavePosition);
         assert.deepEqual(await state(), beforeCitySave);
         const cityReturnSteps = await approachCourt();
@@ -535,7 +552,7 @@ async function run() {
         assert.deepEqual(errors, []);
         assert.deepEqual(missing, []);
         fs.mkdirSync(path.dirname(output), { recursive: true });
-        fs.writeFileSync(output, JSON.stringify({ base:'84176ea', browser:browser.version(), checks, garden,
+        fs.writeFileSync(output, JSON.stringify({ base:'f87f2f0', browser:browser.version(), checks, garden,
             topology, steps:{ outward, home, citySteps, cityReturnSteps }, routeDoors, sample:{ enemy, treasure:treasure.id, refuge:refuge.id },
             errors, missing }, null, 2) + '\n');
         console.log(checks.join('\n'));
