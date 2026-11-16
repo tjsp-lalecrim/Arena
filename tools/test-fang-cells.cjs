@@ -396,10 +396,10 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.deepEqual(present.map(e=>e.origin),[[90,66],[84,66]]);
  assert(present.every(e=>e.alive&&e.present&&e.radius===1&&e.file===hound.mapVisual.file));
  fs.mkdirSync(out,{recursive:true});
- await p.locator('#GameCanvas').screenshot({path:path.join(out,'sala.png')});
  const beforeStaff=await staffState();assert.equal(beforeStaff.count,0);
  assert.equal(beforeStaff.journal.steps.find(s=>s.id==='fang-staff-piece').done,false);
  await save(21);await load(21);assert.deepEqual(await staffState(),beforeStaff);
+ await p.locator('#GameCanvas').screenshot({path:path.join(out,'sala.png')});
  await press('Enter');await p.waitForFunction(()=>$gameMessage.isBusy());
  const message=await p.evaluate(()=>{
   const w=SceneManager._scene._messageWindow;
@@ -574,6 +574,6 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Native collection and full-width PT-BR text grant one protected fragment, advance MQ02 to 100 and update the journal without completing the quest');
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
- checks.push('All new placements are reachable on their respective levels; one real contact and persistent defeat per level in a disposable save');
+ checks.push('All new placements are reachable on their respective levels; contacts and persistent defeats verified in a disposable save');
  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'fang-lair.json'),JSON.stringify({base:'f78de8d',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Ghost, and definitive environment art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

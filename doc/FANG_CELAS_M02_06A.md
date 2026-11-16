@@ -17,6 +17,8 @@ O original registra nível 7, 50–75 de Vida, dano 5–25, EXP-base 1.250 e mul
 
 Foram gerados dois mestres de um único exemplar. O atlas de batalha tem 16 desenhos de espera, ataque, dano e derrota. O atlas de mapa tem 12 desenhos em sul, oeste, leste e norte. O exportador mantém escala comum por folha, apoio fixo e transparência, espelhando somente o atlas lateral para a convenção do motor. [Prompts e referências](arte/hell-hound-v01/prompt.json) · [Exportação](arte/hell-hound-v01/exports.json).
 
+No Chrome isolado, 22 grupos passaram, incluindo acesso ao fragmento com ambos vivos, as quatro animações de combate, dois retornos e recibos de 90 EXP, e save/load e reentrada com as derrotas preservadas. O teste usou caminhada acelerada e condições controladas para as vitórias. [Resultado](evidencias/m02-fang-hell-hound/fang-lair.json) · [Patrulha](evidencias/m02-fang-hell-hound/sala.png) · [Batalha](evidencias/m02-fang-hell-hound/batalha.png).
+
 **Avaliação visual no próximo teste integrado.** No [passo do fragmento](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome), observe a patrulha de ambos os lados e recolha a peça pelo centro. Se quiser avaliar a animação lateral, salve com a peça e aproxime-se de um dos dois. Observe espera, mordida, reação ao dano e queda em brasas. A aparência, todos os quadros em movimento no contexto da campanha e o balanceamento seguem para avaliação do responsável.
 
 ## Tesouros das alas secas — primeiro nível
