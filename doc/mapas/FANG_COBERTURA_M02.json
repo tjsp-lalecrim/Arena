@@ -2495,9 +2495,9 @@
           "flat": 57,
           "resource": "HELLHOUN.DFA",
           "item": 42,
-          "status": "pending",
+          "status": "added",
           "area": "sala do fragmento",
-          "dependency": "hell-hound-assets"
+          "eventId": 54
         },
         {
           "original": [
@@ -2507,9 +2507,9 @@
           "flat": 57,
           "resource": "HELLHOUN.DFA",
           "item": 42,
-          "status": "pending",
+          "status": "added",
           "area": "sala do fragmento",
-          "dependency": "hell-hound-assets"
+          "eventId": 55
         },
         {
           "original": [

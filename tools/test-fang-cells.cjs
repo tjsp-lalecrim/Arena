@@ -1,11 +1,18 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-rihad-corte'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-hell-hound'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
 const coverage=read('doc/mapas/FANG_COBERTURA_M02.json');
 const sourcePassages=coverage.levels[0].passages;
 const originalBase=JSON.parse(cp.execFileSync('git',['show','37a5272:doc/mapas/FANG_COBERTURA_M02.json'],{cwd:R,encoding:'utf8'}));
-assert.deepEqual(coverage.levels.map(level=>level.encounters),originalBase.levels.map(level=>level.encounters));
+const hounds=coverage.levels[1].encounters.filter(row=>row.item===42);
+assert.deepEqual(hounds.map(({original,eventId,status})=>[original,eventId,status]),
+ [[[63,74],54,'added'],[[65,74],55,'added']]);
+for(const [i, level] of coverage.levels.entries()){
+ const normalize=rows=>rows.map(({eventId,status,dependency,...row})=>row);
+ assert.deepEqual(normalize(level.encounters),normalize(originalBase.levels[i].encounters));
+ assert.deepEqual(level.encounters.filter(row=>row.item!==42),originalBase.levels[i].encounters.filter(row=>row.item!==42));
+}
 const mv=([x,y])=>[3+3*(99-x),3+3*y];
 const tileRegion=(x,y)=>map.data[(5*map.height+y)*map.width+x];
 assert.equal(sourcePassages.corners.length,138);
@@ -25,8 +32,18 @@ const staff=c.lower.staffPiece,items=read('data/Items.json');
 assert.deepEqual(items.slice(0,staff.itemId),base('data/Items.json'));
 assert.equal(items[staff.itemId].itypeId,2);assert.equal(items[staff.itemId].occasion,3);
 assert.equal(items[staff.itemId].consumable,false);assert.equal(items[staff.itemId].price,0);
-for(const n of ['Map008','Map010','Map012','Weapons','Armors','Skills','Enemies','Troops','ArenaLoot','ArenaRecovery'])assert.deepEqual(read('data/'+n+'.json'),base('data/'+n+'.json'),n);
-const stable=['ArenaFangCells','Items','Map008','Map009','Map010','Map011','Map012','Map013','Map017','MapInfos','ArenaCampaign','ArenaRecovery'],before=stable.map(n=>JSON.stringify(read('data/'+n+'.json')));cp.execFileSync(process.execPath,['tools/build-rihad-arrival.cjs'],{cwd:R});stable.forEach((n,i)=>assert.equal(JSON.stringify(read('data/'+n+'.json')),before[i],'rebuild '+n));
+for(const n of ['Map008','Map010','Map012','Weapons','Armors','Skills','ArenaRecovery'])assert.deepEqual(read('data/'+n+'.json'),base('data/'+n+'.json'),n);
+const hound=read('doc/arte/hell-hound-v01/config.json');
+for(const n of ['Enemies','Troops']){
+ const old=base('data/'+n+'.json'),current=read('data/'+n+'.json');
+ assert.deepEqual(current.slice(0,old.length),old,n);
+ assert.equal(current.length,old.length+1,n);
+}
+const oldLoot=base('data/ArenaLoot.json'), newLoot=read('data/ArenaLoot.json');
+assert.deepEqual(newLoot.enemies[hound.enemyId],hound.loot);
+delete newLoot.enemies[hound.enemyId];
+assert.deepEqual(newLoot,oldLoot);
+const stable=['ArenaBattle','ArenaBattleMotion','ArenaLoot','Enemies','Troops','ArenaFangCells','Items','Map008','Map009','Map010','Map011','Map012','Map013','Map017','MapInfos','ArenaCampaign','ArenaRecovery'],before=stable.map(n=>JSON.stringify(read('data/'+n+'.json')));cp.execFileSync(process.execPath,['tools/build-rihad-arrival.cjs'],{cwd:R});stable.forEach((n,i)=>assert.equal(JSON.stringify(read('data/'+n+'.json')),before[i],'rebuild '+n));
 for(const g of c.gates){assert.equal(map.events[g.eventId].x,g.origin[0]);assert.deepEqual(g.origin,[3+(99-g.sourceOriginal[0])*3,3+g.sourceOriginal[1]*3]);}
 const types={'.html':'text/html','.js':'application/javascript','.json':'application/json','.png':'image/png','.css':'text/css','.ttf':'font/ttf'},server=http.createServer((req,res)=>{const u=decodeURIComponent(new URL(req.url,'http://test').pathname),f=path.resolve(R,'.'+(u==='/'?'/index.html':u));if(!f.startsWith(R+path.sep)){res.writeHead(403);return res.end();}fs.readFile(f,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':types[path.extname(f)]||'application/octet-stream','Cache-Control':'no-store'});res.end(e?'':b);});});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));let b;try{
@@ -38,7 +55,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  const snapshot=()=>p.evaluate(()=>({q:ArenaQuests.snapshot('MQ02'),count:$gameParty.numItems($dataItems[8]),source:ArenaPersistence.sourceStatus('fang.cell2.key')}));
  const reachable=()=>p.evaluate(()=>{const todo=[[$gamePlayer.x,$gamePlayer.y]],seen=new Set([todo[0].join(',')]);for(let n=0;n<todo.length;n++){const[x,y]=todo[n];for(const d of [2,4,6,8]){const nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),k=nx+','+ny;if(!seen.has(k)&&$gamePlayer.canPass(x,y,d)){seen.add(k);todo.push([nx,ny]);}}}return{entry:seen.has($arenaFangCells.entry.join(',')),key:seen.has($arenaFangCells.key.join(',')),limit:seen.has($arenaFangCells.limit.join(',')),spiders:$arenaFangCells.spiders.map(v=>!!$gameMap.event(v.eventId).page()&&!$gameMap.event(v.eventId)._erased)};});
  async function walk(target){const route=await p.evaluate(target=>{const todo=[[$gamePlayer.x,$gamePlayer.y,[]]],seen=new Set([todo[0].slice(0,2).join(',')]);for(let n=0;n<todo.length;n++){const[x,y,route]=todo[n];if(x===target[0]&&y===target[1])return route;for(const d of [2,4,6,8]){const nx=$gameMap.roundXWithDirection(x,d),ny=$gameMap.roundYWithDirection(y,d),k=nx+','+ny;if(!seen.has(k)&&$gamePlayer.canPass(x,y,d)){seen.add(k);todo.push([nx,ny,route.concat(d)]);}}}return null;},target);assert(route,'No native path to '+target);await p.evaluate(route=>route.forEach(d=>{$gamePlayer.moveStraight(d);while($gamePlayer.isMoving())$gamePlayer.updateMove();}),route);await p.waitForTimeout(200);}
- async function inspectWings(level){
+ async function inspectWings(level, gatedItem=null){
   const plan=coverage.levels[level-1];
   const result=await p.evaluate(plan=>{
    const {entries}=ArenaEncounters.currentConfiguration().config;
@@ -58,7 +75,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
     active:entries.map(e=>e.sourceOriginal),walkable:plan.rows.flatMap((row,y)=>Array.from(row,(v,x)=>v==='#'?null:[3+3*x,3+3*y])).filter(v=>v&&seen[v[1]*w+v[0]]).length};
   },plan);
   assert.deepEqual(result.active,plan.encounters.filter(e=>e.status!=='pending').map(e=>e.original));
-  assert.deepEqual(result.reachable,plan.encounters.filter(e=>e.status==='added').map(e=>e.original));
+  assert.deepEqual(result.reachable,plan.encounters.filter(e=>e.status==='added'&&e.item!==gatedItem).map(e=>e.original));
   return result;
  }
  async function defeatWing(original){
@@ -319,7 +336,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
   else await select(index);
   await messages();await ready();
  }
- const beforeSecondGate=await inspectWings(2);
+ const beforeSecondGate=await inspectWings(2,42);
  assert.equal(beforeSecondGate.staffReachable,false);
  await askLower(0);assert.deepEqual(await snapshot(),s);
  await askLower(null);assert.deepEqual(await snapshot(),s);
@@ -370,6 +387,16 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
    grants:persistent.sources[sourceId]?.grants||0,loot:ArenaLoot.snapshot(),
    journal:MVJournalModel.entry($arenaQuestJournal.quests.find(q=>q.id==='MQ02'),quest)};
  },staff);
+ const houndState=()=>p.evaluate(id=>ArenaEncounters.currentConfiguration().config.entries.filter(e=>e.enemyId===id).map(e=>{
+  const ev=$gameMap.event(e.eventId),state=ArenaPersistence.snapshot().enemies[e.id];
+  return {id:e.id,origin:e.origin,eventId:e.eventId,radius:e.radius,alive:!state.defeated,present:!ev._erased,
+   file:ev.characterName()};
+ }),hound.enemyId);
+ const present=await houndState();
+ assert.deepEqual(present.map(e=>e.origin),[[90,66],[84,66]]);
+ assert(present.every(e=>e.alive&&e.present&&e.radius===1&&e.file===hound.mapVisual.file));
+ fs.mkdirSync(out,{recursive:true});
+ await p.locator('#GameCanvas').screenshot({path:path.join(out,'sala.png')});
  const beforeStaff=await staffState();assert.equal(beforeStaff.count,0);
  assert.equal(beforeStaff.journal.steps.find(s=>s.id==='fang-staff-piece').done,false);
  await save(21);await load(21);assert.deepEqual(await staffState(),beforeStaff);
@@ -385,6 +412,8 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.equal(collected.quest.objectives.fangStaffPieceRecovered,true);assert.equal(collected.quest.completed,false);
  assert.deepEqual(collected.quest.receipts,solved.q.receipts);
  assert.deepEqual(collected.mq01,beforeStaff.mq01);assert.deepEqual(collected.loot,beforeStaff.loot);
+ assert.deepEqual(await houndState(),present);
+ checks.push('Both optional Hell Hounds are live in their source cells; the normal corridor and collection work without either victory');
  assert.equal(collected.journal.steps.find(s=>s.id==='fang-staff-piece').done,true);
  assert.equal(collected.journal.steps.find(s=>s.id==='fang-retaliation').done,false);
  await press('Enter');await ready();assert.deepEqual(await staffState(),collected);
@@ -394,6 +423,66 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  await p.evaluate(id=>$gameParty.loseItem($dataItems[id],1),staff.itemId);
  await press('Enter');await ready();
  const recovered={...collected,grants:2};assert.deepEqual(await staffState(),recovered);
+ await save(20);
+ const houndExp=()=>p.evaluate(()=>$gameActors.actor(1).currentExp());
+ const beforeHounds=await houndExp();
+ const localControls=require('./battle-test-controls.cjs')(p);
+ for(const [index, entry] of present.entries()){
+  await p.evaluate(entry=>{
+   const e=$gameMap.event(entry.eventId);e._locked=true;e.locate(...entry.origin);
+  },entry);
+  await walk([entry.origin[0],entry.origin[1]+1]);
+  await press('ArrowUp');
+  await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Battle&&SceneManager._scene.isActive());
+  assert.equal(await p.evaluate(()=>$gameTroop.members()[0].enemyId()),hound.enemyId);
+  if(index===0){
+   await p.evaluate(()=>{Math.random=()=>.5;$gameActors.actor(1).setHp($gameActors.actor(1).mhp);});
+   assert.equal(await localControls.ready(),'actor');
+   const enemySprite=await p.evaluate(()=>SceneManager._scene._spriteset._enemySprites[0]._arenaMotionSample?.key);
+   assert.equal(enemySprite,'idle');
+   await p.locator('#GameCanvas').screenshot({path:path.join(out,'batalha.png')});
+   await p.evaluate(enemyId=>{
+    const found=new Set();
+    const render=Sprite_Enemy.prototype.updateFrame;
+    Sprite_Enemy.prototype.updateFrame=function(){
+     render.apply(this,arguments);
+     if(this._battler?.enemyId()===enemyId&&this._arenaMotionSample)found.add(this._arenaMotionSample.key);
+    };
+    window.houndMotions=found;
+   },hound.enemyId);
+   assert.equal(await localControls.choose('guard'),'actor');
+   assert(await p.evaluate(()=>houndMotions.has('strike')));
+   assert.equal(await localControls.choose('attack'),'actor');
+   assert(await p.evaluate(()=>houndMotions.has('hurt')));
+
+   await p.evaluate(()=>$gameTroop.members()[0].setHp(1));
+   assert.equal(await localControls.choose('attack'),'map');
+  }else{
+   await p.evaluate(()=>{$gameTroop.members().forEach(e=>e.gainHp(-e.hp));BattleManager.processVictory();BattleManager.processVictory();});
+   assert.equal(await localControls.ready(),'map');
+  }
+  await ready();
+  assert.equal(await houndExp(),beforeHounds+hound.exp*(index+1));
+  assert.deepEqual((await houndState()).map(e=>e.alive),index===0?[false,true]:[false,false]);
+  assert.equal(await p.evaluate(id=>ArenaEncounters.start(id),entry.id),false);
+ }
+ assert(await p.evaluate(()=>houndMotions.has('defeat')));
+ checks.push('Integrated Hell Hound sprites exercise idle, attack, hurt and defeat in an actual encounter with controlled RNG/HP');
+ const afterHounds=await staffState();
+ const newReceipts=Object.entries(afterHounds.loot.receipts).filter(([key])=>!recovered.loot.receipts[key]);
+ assert.deepEqual(newReceipts.map(([, receipt])=>receipt.exp),[hound.exp,hound.exp]);
+ assert.deepEqual(afterHounds.quest,recovered.quest);
+ await save(21);await load(21);
+ assert.deepEqual(await staffState(),afterHounds);
+ assert.equal(await houndExp(),beforeHounds+hound.exp*2);
+ assert((await houndState()).every(e=>!e.alive&&!e.present));
+ await stairs(lower.stair,c.mapId,2);await stairs(c.limit,lower.mapId,2);
+ assert.deepEqual(await staffState(),afterHounds);
+ assert((await houndState()).every(e=>!e.alive&&!e.present));
+ checks.push('Two native Hell Hound contacts and returns give separate 90 EXP receipts once; reload and reentry retain defeats and the fragment');
+ await load(20);
+ assert.deepEqual(await staffState(),recovered);
+ assert.deepEqual(await houndState(),present);
  await stairs(lower.stair,c.mapId,2);await stairs(c.limit,lower.mapId,2);
  assert.deepEqual(await staffState(),recovered);
  assert.equal(await p.evaluate(id=>ArenaPersistence.snapshot().enemies[id].defeated,skeleton.id),true);
@@ -486,5 +575,5 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
  checks.push('All new placements are reachable on their respective levels; one real contact and persistent defeat per level in a disposable save');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'fang-lair.json'),JSON.stringify({base:'84176ea',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Hell Hounds, and definitive art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'fang-lair.json'),JSON.stringify({base:'f78de8d',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Ghost, and definitive environment art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -2,6 +2,23 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Hell Hounds da sala do fragmento
+
+O `FANG2.INF` vincula `MAP1 0x8039` ao flat 57, `HELLHOUN.DFA / ITEM42`. O índice 10 no `ACD.EXE` instalado identifica **Hell Hound** e `HOUND@.CFA`. A consulta de `HOUND1–6.CFA` no `GLOBAL.BSA`, com `PAL.COL`, mostra o corpo canino alongado, ombros pesados, pelagem azul-negra, olhos vermelhos e derrota em brasas. O acabamento em carvão com luz fria, a mordida lateral e a projeção superior são adaptações. [Arquivos e tabelas de origem](arte/hell-hound-v01/sources.json).
+
+| MIF | Map017 | Encontro persistente |
+| --- | --- | --- |
+| (63,74) | (90,66) | `fang.2.enemy.mif63.74`, evento 54 |
+| (65,74) | (84,66) | `fang.2.enemy.mif65.74`, evento 55 |
+
+Cada encontro patrulha a até um tile de sua posição em piso seco. A faixa central (X87) fica fora das duas patrulhas e permite obter o fragmento com ambos vivos. O contato e a derrota usam o registro da área, com recibo individual. A coleta e a retaliação de Tharn mantêm suas condições próprias.
+
+O original registra nível 7, 50–75 de Vida, dano 5–25, EXP-base 1.250 e multiplicador 25. A adaptação provisória usa 70 de Vida, ATQ 14, DEF 6, MDF 5, AGI 14, SOR 5 e 90 EXP por vitória. Usa o ataque físico existente. O campo de magia original fica registrado para avaliação posterior e a recompensa atual se limita a EXP enquanto a composição do loot não for definida no balanceamento do M02.
+
+Foram gerados dois mestres de um único exemplar. O atlas de batalha tem 16 desenhos de espera, ataque, dano e derrota. O atlas de mapa tem 12 desenhos em sul, oeste, leste e norte. O exportador mantém escala comum por folha, apoio fixo e transparência, espelhando somente o atlas lateral para a convenção do motor. [Prompts e referências](arte/hell-hound-v01/prompt.json) · [Exportação](arte/hell-hound-v01/exports.json).
+
+**Avaliação visual no próximo teste integrado.** No [passo do fragmento](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome), observe a patrulha de ambos os lados e recolha a peça pelo centro. Se quiser avaliar a animação lateral, salve com a peça e aproxime-se de um dos dois. Observe espera, mordida, reação ao dano e queda em brasas. A aparência, todos os quadros em movimento no contexto da campanha e o balanceamento seguem para avaliação do responsável.
+
 ## Tesouros das alas secas — primeiro nível
 
 A leitura dos dois `LEVL` de `42068779.MIF` e dos flats de FANG1/FANG2.INF confirma os montes `TREASRE2.IMG / ITEM5` e `TREASRE3.IMG / ITEM6`. A matriz registra separadamente o baú `CHESTC.IMG / ITEM7` do segundo nível. Objetos `EQUIPMEN.IMG / ITEM3` e `DEADBODY.IMG / ITEM2` ficam fora desta contagem de montes e baú. [Matriz](mapas/FANG_COBERTURA_M02.json)
@@ -40,7 +57,7 @@ O guia local de Fang Lair (PDF p.5, *Notes* e planta do segundo nível) descreve
 
 A verificação cardinal no plano encontrou dois componentes separados, com 200 células de lava aberta do lado da campanha e dez do lado dos ghouls. Esse resultado é uma leitura das camadas e da grade, sem observação da travessia no executável. Uma adaptação precisaria primeiro localizar a passagem legítima e definir como representar sua folga, ou tratar Passwall como mecânica própria. A natação atual é de água e o piso de dano nativo não oferece resistência ao fogo na travessia. Abrir o trecho como água ou piso comum removeria o risco documentado.
 
-O Map017 e os saves permanecem iguais. A cobertura segue em **15/19** no segundo nível. As celas de tesouro LOCK 15 do primeiro nível foram integradas separadamente, conforme o registro acima.
+Na entrega da verificação de lava, o Map017 e os saves permaneceram iguais, com 15/19 encontros. A cobertura atual está na tabela abaixo. As celas de tesouro LOCK 15 do primeiro nível foram integradas separadamente, conforme o registro acima.
 
 ## Conexões do primeiro nível — revisão de 14/11/2026
 
@@ -50,7 +67,7 @@ A revisão cruza MAP1 e FLOR de `42068779.MIF`, `FANG1.INF`, a planta publicada 
 - **Patamar junto à entrada.** As duas ligações MIF (4,6) e (4,13) são vãos de uma célula com MAP1 vazio, FLOR `0x0C00` e piso seco nas duas extremidades. O original permite salto; nesta projeção, apenas esses dois vãos foram representados como passagens locais com o piso de transição existente. O restante do poço fica fechado. Isso torna acessível o patamar seco de 16 células entre Y7–12. A travessia exata no executável não foi testada. No [Arena local](http://127.0.0.1:8774/), entre em Fang Lair e siga ao sul pela coluna de chegada até o primeiro vão. No patamar, contorne a reentrância pelo centro para alcançar o segundo vão e volte pela rota externa.
 - **Desníveis e alas pendentes.** Os blocos da praça nordeste `0x2065/0x4065/0x5865` têm diferenças de espessura confirmadas na tabela do executável, e os volumes `0x7021/0x7026` abrangem a borda da planta. A matriz mantém as paredes sólidas que cortam as rotas candidatas, incluindo o corredor sob suspeita em (82,57)–(82,59). A presença de FLOR de poço nessas células não demonstra passagem sob a parede. A ligação local (3,62) continuaria isolada da campanha. A matriz identifica os candidatos e obstruções para as seis áreas com encontros pendentes.
 
-A cobertura do primeiro nível passa de 2.196 a **2.352 células MIF com piso transitável parcial ou integral**. O patamar não contém encontros confirmados. A cobertura de encontros permanece em **40/76** no primeiro nível e **15/19** no segundo. O Fantasma, os Hell Hounds e a travessia de lava permanecem dependências separadas. O segundo nível manteve a geometria e os eventos.
+A cobertura do primeiro nível passa de 2.196 a **2.352 células MIF com piso transitável parcial ou integral**. O patamar não contém encontros confirmados. A cobertura do primeiro nível permaneceu em **40/76** encontros. A travessia de lava e o Fantasma permanecem dependências separadas. O segundo nível manteve a geometria e os eventos nessa revisão.
 
 **Verificação.** O teste integrado percorre as duas travessias em ambos os sentidos, verifica as faces dos 138 cantos, recarrega um save no Map013 e repete a rota de MQ02 até Rihad. [Evidências](evidencias/m02-fang-conexoes/resultado.json)
 
@@ -61,11 +78,11 @@ A [matriz de cobertura](mapas/FANG_COBERTURA_M02.json) vincula as 95 posições 
 | Andar | Geometria disponível | Encontros originais ativos | Pendentes |
 | --- | --- | ---: | --- |
 | Map013 | 304×301 tiles, 2.196 células MIF projetadas. Ramais da entrada e túneis centrais, corredores de acesso às celas. Coordenadas MV anteriores preservadas | 40/76; 36 novos, 4 aranhas condicionadas já existentes | 36 incluindo Fantasma (3,49), câmara junto ao poço seco. Outras bolsas e ligações nos quadrantes das aranhas do nordeste, leste, oeste sul, centro sul e salas sul |
-| Map017 | 124×142 tiles, 665 células MIF projetadas. Corredores secos centrais, oeste e sul conectados à escada e à aproximação do enigma | 15/19; 14 novos, 1 esqueleto já existente | Hell Hounds (63,74)/(65,74) na sala do fragmento; 2 ghouls (84,61)/(87,61) na ilha cuja travessia por lava ainda falta |
+| Map017 | 124×142 tiles, 665 células MIF projetadas. Corredores secos centrais, oeste e sul conectados à escada e à aproximação do enigma | 17/19, incluindo os dois Hell Hounds da sala do fragmento | 2 ghouls (84,61)/(87,61) na ilha cuja travessia por lava ainda falta |
 
 Os novos encontros usam os perfis, inimigos e tabelas de recompensa existentes, com IDs individuais. IDs das quatro aranhas, do primeiro esqueleto, dos itens, recibos e etapas foram mantidos. O Servo de Tharn é um encontro narrativo separado dos 95. O Map017 ampliado desloca a projeção anterior em (+9,+51); saves no recorte antigo são convertidos pelo ponto da escada, preservando posição relativa, direção e derrotas. No entorno da sala, três células (66,74–76) foram restauradas conforme o muro do MAP1, retirando a adaptação antiga que, junto ao piso novo, permitiria contornar a porta do enigma. Saves sobre essas três células retomam no corredor seco adjacente.
 
-As duas celas de tesouro LOCK 15 no primeiro nível já estão integradas. No segundo, os dez LOCK 10 registrados sobre MAP1 de parede são mantidos na matriz sem abrir vãos por suposição; só a porta confirmada do enigma está ativa. Permanecem pendentes a travessia de poços/desníveis e lava, materiais de mina, ferragens/objetos, arte definitiva das duas espécies e outros elementos opcionais da planta.
+As duas celas de tesouro LOCK 15 no primeiro nível já estão integradas. No segundo, os dez LOCK 10 registrados sobre MAP1 de parede são mantidos na matriz sem abrir vãos por suposição; só a porta confirmada do enigma está ativa. Permanecem pendentes a travessia de poços/desníveis e lava, materiais de mina, ferragens/objetos, arte do Fantasma e avaliação visual dos Hell Hounds e outros elementos opcionais da planta.
 
 **Avaliação no Chrome pelo fluxo normal.** A partir da entrada, explore o ramal seco que leva ao ghoul em MIF (24,2), MV (228,9). Após descer as celas, explore o corredor seco até o esqueleto em MIF (55,90), MV (114,114). Salve após uma vitória e confira que o encontro fica ausente ao carregar. A avaliação manual do percurso principal pode ocorrer em paralelo pelo roteiro abaixo. [Arena local](http://127.0.0.1:8774/) · [Teste integrado](evidencias/m02-fang-alas/resultado.json)
 
@@ -85,16 +102,16 @@ A derrota segue para Game Over. Uma vitória legítima registra `fangRetaliation
 2. Interaja com a saída. Feche o último bloco da visão para entrar na batalha contra **Servo de Tharn**. Se a visão já tinha sido lida no save, a batalha começa diretamente.
 3. Vença, confira a missão concluída no **Diário** e o fragmento no **Inventário**. Salve, recarregue e interaja com a saída. A volta a Rihad deve ocorrer sem nova batalha. Para conferir derrota em separado, use o save anterior à vitória.
 
-A rota principal de MQ02 está completa. Ainda faltam alas e encontros aplicáveis dos dois níveis, incluindo os dois Hell Hounds na sala do fragmento, e a arte definitiva. Avaliação manual pendente. [Evidências](evidencias/m02-fang-tharn-encontro/resultado.json)
+A rota principal de MQ02 está completa. Ainda faltam alas e encontros aplicáveis dos dois níveis, e a arte definitiva de ambientes. Avaliação manual pendente. [Evidências](evidencias/m02-fang-tharn-encontro/resultado.json)
 
 ## Sala e primeiro fragmento — M02-07B, trecho de campanha
 
-A porta do enigma abre o acesso à sala no Map017. O percurso mantém a escala e a transformação existentes: MV (78,9) é a porta MIF (64,72); MV (78,12) é o vestíbulo MIF (64,73); MV (78,18) é o fragmento MIF (64,75). O vestíbulo de uma célula e o salão de 3×3 seguem a planta do segundo `LEVL` de `42068779.MIF`. O contorno usa `MAP1` (parede perimetral `0x70B7` e ombreiras `0x3131/0x3030`) e mantém o retorno pela mesma porta. As superfícies existentes e o marcador textual do fragmento são provisórios. [Planta e âncoras](mapas/FANG_NIVEL2_M02.json)
+A porta do enigma abre o acesso à sala no Map017. O percurso mantém a escala e a transformação existentes: na projeção atual, MV (87,60) é a porta MIF (64,72), MV (87,63) é o vestíbulo MIF (64,73) e MV (87,69) é o fragmento MIF (64,75). O vestíbulo de uma célula e o salão de 3×3 seguem a planta do segundo `LEVL` de `42068779.MIF`. O contorno usa `MAP1` (parede perimetral `0x70B7` e ombreiras `0x3131/0x3030`) e mantém o retorno pela mesma porta. As superfícies existentes e o marcador textual do fragmento são provisórios. [Planta e âncoras](mapas/FANG_NIVEL2_M02.json)
 
 | Evidência local | Consequência no recorte |
 | --- | --- |
 | `FANG2.INF`, `MAP1 0x8066` em (64,75), flat102 `CHAOS1.DFA / ITEM13` | Fonte estável `fang.staff-piece-1`, item importante 9 do projeto, sem venda, descarte ou uso |
-| `MAP1 0x8039` em (63,74) e (65,74), flat57 `HELLHOUN.DFA / ITEM42` | Posições originais em MV (81,15) e (75,15). São encontros da sala. O guia descreve formas de evitar o ataque; o corredor central e o fragmento são registros independentes. A única `LOCK` da sala é a da porta e o `TRIG 64,73,255,28` fica no vestíbulo. A função exata desse gatilho não foi verificada no executável. Ambos os encontros seguem pendentes de combate e patrulha da espécie |
+| `MAP1 0x8039` em (63,74) e (65,74), flat57 `HELLHOUN.DFA / ITEM42` | Posições originais em MV (90,66) e (84,66). São encontros da sala. O guia descreve formas de evitar o ataque; o corredor central e o fragmento são registros independentes. A única `LOCK` da sala é a da porta e o `TRIG 64,73,255,28` fica no vestíbulo. A função exata desse gatilho não foi verificada no executável. Os dois encontros foram integrados posteriormente, conforme o registro acima |
 | `TEMPLATE.DAT #1371`, arquivo da instalação original, e guia local de Fang Lair, p.4 | A coleta usa o bloco PT-BR `MQ02.fang.fragment.take`, em largura integral, com a ilustração pendente. A referência tátil do original foi condensada na pulsação do fragmento |
 
 A coleta registra o item e a passagem 90 → 100 em conjunto. O diário marca o fragmento como obtido e indica a saída. A missão segue em andamento até a vitória contra o Servo de Tharn. Se faltar a peça na etapa 100, a mesma fonte repõe apenas a unidade ausente, sem repetir a narração ou avançar a missão. Um save anterior do Map017 carrega a nova lista de eventos mantendo posição, direção e estados individuais.
@@ -170,7 +187,7 @@ Leitura direta de `42068779.MIF`: **dois níveis de 100×100**, vinculados a FAN
 | Ghoul | 9 | 2 | 11 | Reuso | Reuso |
 | Homem-lagarto | 0 | 4 | 4 | Reuso | Reuso |
 | Fantasma, GHOST.DFA / ITEM43, MIF (3,49) | 1 | 0 | 1 | **Novo** | **Nova** |
-| Hell hound, HELLHOUN.DFA / ITEM42, MIF (63,74)/(65,74) | 0 | 2 | 2 | **Novo** | **Nova** |
+| Hell hound, HELLHOUN.DFA / ITEM42, MIF (63,74)/(65,74) | 0 | 2 | 2 | **Integrado** | **Integrada** |
 | **Total** | **76** | **19** | **95** | **2 espécies pendentes** | **2 espécies pendentes** |
 
 O fragmento em MIF (64,75) resolve `CHAOS1.DFA` / ITEM13 e fica fora da contagem de criaturas. A aranha das celas foi identificada como a mesma espécie de Stonekeep pela combinação **SPIDER.DFA + ITEM40**. Quatro das 24 posições ficam nas celas condicionadas e usam encontros persistentes. A tabela acima registra a situação dos demais encontros. A matriz de Stonekeep tem 9 espécies com ambos os conjuntos disponíveis. O M02 soma **11 espécies distintas confirmadas** até aqui, das quais **2 precisam de combate e patrulha**, **0 só de combate** e **0 só de patrulha**. Os arredores adaptados de Rihad reaproveitam o rato. [Levantamento urbano](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).

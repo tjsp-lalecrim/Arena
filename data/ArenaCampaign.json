@@ -1639,6 +1639,15 @@
             ],
             "ground": 62,
             "animationWait": 10
+          },
+          "10": {
+            "file": "$Arena_hell_hound_walk_v01",
+            "cell": [
+              80,
+              80
+            ],
+            "ground": 76,
+            "animationWait": 10
           }
         },
         "entries": [
@@ -1768,6 +1777,50 @@
             "troopId": 5,
             "questSpecific": true,
             "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif63.74",
+            "eventId": 54,
+            "origin": [
+              90,
+              66
+            ],
+            "sourceOriginal": [
+              63,
+              74
+            ],
+            "sourceFlat": "FANG2 flat57 HELLHOUN.DFA / ITEM42",
+            "enemyId": 10,
+            "troopId": 11,
+            "questSpecific": true,
+            "radius": 1,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.2.enemy.mif65.74",
+            "eventId": 55,
+            "origin": [
+              84,
+              66
+            ],
+            "sourceOriginal": [
+              65,
+              74
+            ],
+            "sourceFlat": "FANG2 flat57 HELLHOUN.DFA / ITEM42",
+            "enemyId": 10,
+            "troopId": 11,
+            "questSpecific": true,
+            "radius": 1,
             "interval": 90,
             "regions": [
               4
