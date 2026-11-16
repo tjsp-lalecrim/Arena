@@ -1,0 +1,28 @@
+{
+  "name": "Rihad exterior V01",
+  "sheet": "Arena_Rihad_Exterior_V01_C",
+  "tilesetId": 6,
+  "master": "art/masters/rihad-exterior-v01/atlas-source.png",
+  "floors": {
+    "road": 0,
+    "walk": 1,
+    "earth": 2,
+    "threshold": 13
+  },
+  "wallCap": 3,
+  "trim": 13,
+  "walls": {
+    "a": 4,
+    "b": 5,
+    "p": 6,
+    "n": 7,
+    "m": 8,
+    "c": 9,
+    "h": 10,
+    "j": 11,
+    "g": 12,
+    "t": 7,
+    "i": 14,
+    "l": 13
+  }
+}

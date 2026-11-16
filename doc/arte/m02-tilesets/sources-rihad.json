@@ -1,0 +1,29 @@
+{
+  "tool": "ImageGen integrado",
+  "prompt": "Make one Rihad exterior terrain MATERIAL SOURCE ATLAS for a 48px top-down orthogonal dark fantasy game using the given decoded Elder Scrolls Arena DCN.INF original contact as color/layout inspiration. EXACT full-bleed opaque equal 4 columns by 4 rows, no borders, no whitespace, no labels, no perspective, no scenery, no elevations cast across a cell, no lighting gradients. Each cell filled edge to edge by its own texture; I will crop mathematically into equal quarters and tile each surface periodically. Rows top to bottom exactly as follows. Row1: pale warm old gravel road (NROADD), dark charcoal ashlar sidewalk joint pattern (NSIDWALD), subdued dry ochre earth (NGRASSD), sandy-gray roof cap stone slabs seen directly overhead. Row2: everyday reddish rough adobe stone facade (DMEQUIP), cool gray small stacked blocks facade (DMBS1), desaturated sandstone plaster facade (DMBS2), flat fine gray sandstone with restrained thin dark red and dusky turquoise horizontal bands for noble homes (DMNOBLE). Row3: weathered cool-gray large regular battered city-wall brick courses with warm rust mortar (CITYWALD), brighter pale ashlar for palace tower wall, tight low muted green hedge (NHEDGED), reddish masonry voussoir texture (GARDENGD). Row4: dark warm hardwood planks of fortified gate (DLGTD/DRGTD), neutral dressed sandstone for modular corner trim, dark desaturated blue-gray ironwork and a narrow brass accent referencing DGATE, weathered brown terracotta roof material. Make subdued, medium contrast, readable at 48px, painted medieval dark fantasy texture pack, evenly lit upper left. Each facade is an orthographic face-on MATERIAL sample and each floor is straight overhead. Architecture details readable in broad texture, subtle physically plausible weathering, consistent brick/mortar density. No object assets, no text, no frames, no labels. Directly adjacent cells throughout the flat 4x4 layout.",
+  "original": "Instalação local do Arena e GLOBAL.BSA, consulta somente leitura; PAL.COL para pranchas de referência",
+  "originalResources": {
+    "DCN.INF": "fed1752e7e417ff7ec89937c9252ebc8bcd3101d7ac80d49bc5cfe2de6e73d36",
+    "CITYW1.MIF": "0fb5bcdedf24b2a2c4ce45f8478d12c8f40bfa6c77d04cd8d70aff9e588630fb",
+    "NROADD.IMG": "6fae2ef0d227a1871d440185c85ef09c8922f57249ee1e9145e2a996888497cd",
+    "NSIDWALD.IMG": "62321abc3011172e5d27a4a62423da58f308a88cd4b920f91a2f965e6bc01069",
+    "NGRASSD.IMG": "4a9769df272ae021009f384eb67aa6c816a44d27fe57a8758f94a8a46fbf0079",
+    "DMEQUIP.SET": "1c0b5540e8c9f0601f798b9fc0314c1f4c706914c32a5b8911599e2d2e9e98a0",
+    "DMTEMPLE.SET": "4aaa2cc56be1c3e7bac744841aa5c7687b11ce4300e035f550ab3b94e34eaff4",
+    "DMBS1.SET": "f21f8d0af3c34c866d61ef5ab394d3370703346db43aeb7981a18db89ae9a0a2",
+    "DMBS2.SET": "6e7a6c952232e2f74584d933d53cd39c349c316cdc3c0080c5f78469cc150f8b",
+    "DMNOBLE.SET": "127fb75c690a1860057591ffe948fd6565e9e58ed41f07eb219f88402a120b5c",
+    "NHEDGED.IMG": "cb8a64381089ffc9d825e043bbc001654525acb3e56437470fa64942cbd904e3",
+    "GARDENGD.IMG": "616e83c0113cb6b320fcf14f6e2fce0b2e0bdb2131f106c5b56e557b2e422e4c",
+    "CITYWALD.IMG": "09c379f27ca5b0af21bb951cee4736ae4dfd0d85526f989fdd80218f2d95abe0",
+    "DLGTD.IMG": "51b6ca306aec43d2d4fb016f0c1fbe19374fae2708fb7218ee37b9c1b682d541",
+    "DRGTD.IMG": "e26057d4aa099ac4f5b5b361c74c380d3415e8b19e2b8521f960f6e985e0a2a6",
+    "DGATE.IMG": "af3175cc34f488312b63ac70aadde7f34fad2aba07530253d7fcba6f44a0919e",
+    "BK01PALD.IMG": "0e77d9031b71f2226604e6b3c3e046a11030b7c82f37abb59c9e698cf62ccbbb",
+    "BK02PALD.IMG": "d5021971fc911ec8ec36dd641c4855d19df39c8d9d378f52d89d6be588bad512"
+  },
+  "referenceBoard": "tmp/m02-tilesets/rihad-refs.png",
+  "styleReference": "img/tilesets/Arena_Shared_Castle_Stone_V01_C.png",
+  "master": "art/masters/rihad-exterior-v01/atlas-source.png",
+  "manualVisualReview": "pendente"
+}

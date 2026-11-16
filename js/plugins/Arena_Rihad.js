@@ -67,6 +67,10 @@ var ArenaRihad;
  };
  var mapLoaded=Scene_Map.prototype.onMapLoaded;
  Scene_Map.prototype.onMapLoaded=function(){
+  // Same-map load uses serialized Game_Map settings with the current tile data.
+  if(!$gamePlayer.isTransferring()&&here()&&$gameMap.tilesetId()!==$dataMap.tilesetId){
+   $gameMap.changeTileset($dataMap.tilesetId);
+  }
   if(!$gamePlayer.isTransferring()&&here()&&!$gameMap.event($arenaRihad.outskirts.accessEventId)&&$dataMap.events[$arenaRihad.outskirts.accessEventId]){
    var id=$arenaRihad.outskirts.accessEventId;$gameMap._events[id]=new Game_Event($gameMap.mapId(),id);
   }
@@ -95,8 +99,8 @@ var ArenaRihad;
  var update=Scene_Map.prototype.update;
  Scene_Map.prototype.update=function(){update.apply(this,arguments);if(!(here()||outside())||!this._rihadCaption)return;
   var b=this._rihadCaption.bitmap;b.clear();b.fillRect(0,0,b.width,72,'rgba(12,16,18,0.92)');b.fontSize=23;b.textColor='#e1d2ae';
-  b.drawText((here()?'Rihad · Hammerfell':'Arredores de Rihad')+' — amostra provisória',18,4,b.width-36,30);
-  b.fontSize=17;b.drawText('Materiais de reuso · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM, sem saves pessoais':''),18,36,b.width-36,26);
+  b.drawText(here()?'Rihad · Hammerfell':'Arredores de Rihad — amostra provisória',18,4,b.width-36,30);
+  b.fontSize=17;b.drawText((here()?'Exterior V01':'Materiais de reuso')+' · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM, sem saves pessoais':''),18,36,b.width-36,26);
   b=this._rihadMarkers.bitmap;b.clear();b.fontSize=18;b.textColor='#ead9b5';
   var markers=[[2,9,'Voltar a Rihad']];
   if(here()){
