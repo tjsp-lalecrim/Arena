@@ -2,6 +2,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const source = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
+const materialPlan = require('../doc/mapas/RIHAD_MATERIAIS_M02.json');
+const materialSpec = require('../doc/arte/m02-tilesets/rihad.json');
+const installAtlas = require('./m02-surface-atlas.cjs');
 
 function position(name) {
     const [x, y] = source.anchors[name];
@@ -13,6 +16,13 @@ function position(name) {
 
 function build(map, config, recovery) {
     const { rows, scale, margin } = source;
+    if (materialPlan.map1Sha256 !== source.map1Sha256 ||
+        materialPlan.rows.length !== rows.length ||
+        materialPlan.rows.some((row, i) => row.length !== rows[i].length)) {
+        throw Error('Materiais de Rihad não correspondem à planta urbana.');
+    }
+    const atlas = installAtlas(materialSpec);
+    const at = (x, y) => materialPlan.rows[Math.floor((y - margin) / scale)]?.[Math.floor((x - margin) / scale)];
     const width = rows[0].length * scale + 2 * margin;
     const height = rows.length * scale + 2 * margin;
     const data = Array(width * height * 6).fill(0);
@@ -38,12 +48,27 @@ function build(map, config, recovery) {
             const value = cell(x, y);
             const index = y * width + x;
             if (isSolid(value)) {
-                const face = !isSolid(cell(x, y + 1)) ? 13 : !isSolid(cell(x, y + 2)) ? 5 : 4;
-                data[index] = face;
+                if (value === '~') {
+                    data[index] = 4; // Keep the existing provisional blocked coast.
+                } else {
+                    const elevation = !isSolid(cell(x, y + 1)) ? 2 : !isSolid(cell(x, y + 2)) ? 1 : 0;
+                    const left = cell(x - 1, y);
+                    const right = cell(x + 1, y);
+                    const edge = !isSolid(left) ? 1 : !isSolid(right) ? 2 : 0;
+                    const original = at(x, y);
+                    const gate = (original === 'm' || original === 'c') && [x - 1, x + 1, x - scale, x + scale]
+                        .some(side => at(side, y) === 'g');
+                    const family = gate ? (y < height / 2 ? 'g' : 'i') :
+                        original === 'h' && elevation === 2 ? 'l' :
+                        Object.hasOwn(materialSpec.walls, original) ? original : 'm';
+                    data[index] = atlas.wall(family, elevation, edge);
+                }
                 data[5 * width * height + index] = 1;
             } else {
-                const floor = value === '1' ? 9 : value === '2' ? 2 : 1;
-                data[index] = floor;
+                const original = at(x, y);
+                const floor = value === 'G' || original === 'j' ? 'threshold' :
+                    value === '1' ? 'walk' : value === '2' ? 'earth' : 'road';
+                data[index] = atlas.floor(floor, x, y);
                 data[5 * width * height + index] = 4;
             }
         }
@@ -67,8 +92,8 @@ function build(map, config, recovery) {
     const restPoint = recovery.restPoints.find(point => point.id === config.restPointId);
     Object.assign(restPoint, rest, { source: 'MQ02-03E2: repouso autorizado na esplanada inicial de Rihad, posição adaptada.' });
     Object.assign(map, {
-        width, height, data,
-        note: 'M02-03E2: CITYW1 e 32 quarteirões; passagens de jardim DCN e fachadas provisórias. Map009 urbano.',
+        width, height, data, tilesetId: materialSpec.tilesetId,
+        note: 'M02: CITYW1 e 32 quarteirões; superfícies DCN do atlas exterior V01.',
     });
     fs.writeFileSync(path.join(root, 'data/ArenaRecovery.json'), JSON.stringify(recovery, null, 2) + '\n');
 }
