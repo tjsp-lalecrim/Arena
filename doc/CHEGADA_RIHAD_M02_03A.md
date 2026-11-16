@@ -1,5 +1,17 @@
 # M02-03A — primeira chegada a Rihad
 
+## Atlas exterior V01
+
+O Map009 usa um atlas dedicado ao percurso portão → esplanada → corte e aos quarteirões com as mesmas superfícies. Rua clara, passeio de blocos escuros e terreno ocre seguem `FLOR` do CITYW1 reconstruído. Fachadas, muralha, portal da corte, sebe e vãos de jardim usam famílias derivadas dos registros `MAP1`/DCN.INF. Cantos e jambas ocupam o lado sólido. Soleiras, folhas abertas representadas lateralmente e o muro baixo ao pé das sebes são composições ortogonais do projeto. Os 30 vãos utilizáveis e os dois sem travessia mantêm sua lógica. A costa continua provisória.
+
+| Reuso | Módulos que faltam |
+| --- | --- |
+| Porta e plataforma atuais. O interior de `PALACE2` mantém o atlas existente, que já permite testar pedra, lajes, soleiras e alturas. | Para a corte, faltam tapete com borda, degraus e batentes próprios de `CASTLE.INF`, trono, ornamentação local e caracterização de Blubamka. Para a cidade, costa e flora/objetos específicos continuam no inventário. |
+
+**Exportação.** Na raiz, execute `python tools/export-m02-surface-atlas.py rihad` com Pillow e depois `node tools/build-rihad-arrival.cjs`. O exportador monta um C nativo com células de 48 px, pisos em período 2×2, coroamento e duas fileiras de face. O gerador mantém B e A1 do tileset-base e reaproveita seus módulos de repouso. [Mestre, prompt e fontes](arte/m02-tilesets/sources-rihad.json) · [Peças, hash e exportação](arte/m02-tilesets/exports-rihad.json) · [Matriz de atribuição](mapas/RIHAD_MATERIAIS_M02.json).
+
+**Próximo teste integrado.** Observe a leitura do personagem junto ao portão, percorra a esplanada, atravesse um arco confirmado e entre na corte. A avaliação visual do exterior está pendente. [Capturas do portão](evidencias/m02-rihad-atlas/portao.png), [esplanada](evidencias/m02-rihad-atlas/esplanada.png), [jardim](evidencias/m02-rihad-atlas/jardim.png) e [corte](evidencias/m02-rihad-atlas/corte-exterior.png) · [Verificações](evidencias/m02-rihad-atlas/resultado.json).
+
 ## Fechamento funcional de Rihad
 
 Os dois vãos de jardim são `0x913B` (`GARDENGD.IMG`, atravessável) entre sebes sólidas `0x903A`. Cada um tem piso seco em uma face e parede sólida `DMNOBLE.SET` na face oposta, sem sobreposição em MAP2. O Map009 conserva os 30 arcos que ligam dois pisos e deixa estes dois sem travessia:
@@ -27,7 +39,7 @@ A auditoria da composição CITYW1 +32 MIF confirmou o SHA-256 da composição M
 
 Da chegada, o grafo passa de **7.357 para 7.795** centros MIF alcançáveis. Os 388×388 tiles e os IDs e coordenadas dos eventos permanecem. Nenhum novo diálogo ou interior opcional foi adicionado. O corredor da campanha mantém Ria, informante, repouso, Blubamka, Stonekeep, Fang Lair e seus retornos. Saves dos setores existentes mantêm a posição e usam a nova colisão ao carregar.
 
-**Próximo recorte de materiais.** Rua e passeio, muro baixo e arco de jardim, além de módulos de fachada com vãos legíveis, precisam de um atlas exterior de Rihad. A costa permanece bloqueada na margem prevista. Os acessos comerciais e residenciais mantêm o exterior, com interiores fora do recorte. A variante da corte e os dois vãos sem saída foram verificados no [fechamento funcional](#fechamento-funcional-de-rihad). [Famílias visuais](#famílias-visuais-de-rihad)
+**Estado anterior ao V01.** O levantamento apontou rua e passeio, muro baixo e arco de jardim, além de fachadas com vãos legíveis. A costa permanece bloqueada na margem prevista. Os acessos comerciais e residenciais mantêm o exterior, com interiores fora do recorte. A variante da corte e os dois vãos sem saída foram verificados no [fechamento funcional](#fechamento-funcional-de-rihad). [Famílias visuais](#famílias-visuais-de-rihad)
 
 **Avaliação integrada pendente.** A partir da chegada, siga para o pátio do templo pelo arco MIF (13,35), MV (345,108), atravesse e volte pelo mesmo vão. Continue pela cidade até a corte, preservando os passos normais da missão. [Arena local](http://127.0.0.1:8774/) · [Teste Rihad e Stonekeep](evidencias/m02-rihad-passagens/resultado.json) · [Teste Fang Lair e retorno a Rihad](evidencias/m02-rihad-passagens/fang-lair.json)
 
