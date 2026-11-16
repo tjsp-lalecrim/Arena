@@ -11,13 +11,25 @@ const output = path.join(root, 'doc/evidencias/m02-rihad-corte/resultado.json');
 const { gardenAccess } = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
 const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
     .map(name => path.join(root, 'data', name + '.json'));
-const bytes = generated.map(file => fs.readFileSync(file));
+const canonical = file => fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
+const bytes = generated.map(canonical);
 execFileSync(process.execPath, ['tools/build-rihad-arrival.cjs'], { cwd: root });
-generated.forEach((file, i) => assert.deepEqual(fs.readFileSync(file), bytes[i], file));
+generated.forEach((file, i) => assert.equal(canonical(file), bytes[i], file));
+const hound = require('../doc/arte/hell-hound-v01/config.json');
 for (const name of ['Map012', 'Enemies', 'Troops', 'ArenaLoot', 'ArenaCampaign']) {
     const file = 'data/' + name + '.json';
-    const prior = execFileSync('git', ['show', 'fea73e0:' + file], { cwd: root, encoding: 'utf8' });
-    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root, file))), JSON.parse(prior), file);
+    const prior = JSON.parse(execFileSync('git', ['show', 'fea73e0:' + file], { cwd: root, encoding: 'utf8' }));
+    const current = JSON.parse(fs.readFileSync(path.join(root, file)));
+    // The subsequent Fang Lair delivery only appended this creature and its two lower-level encounters.
+    if (name === 'Enemies') current.splice(hound.enemyId, 1);
+    if (name === 'Troops') current.splice(hound.troopId, 1);
+    if (name === 'ArenaLoot') delete current.enemies[hound.enemyId];
+    if (name === 'ArenaCampaign') {
+        const lower = current.areas.find(area => area.id === 'fang-lair.lower').encounters;
+        lower.entries = lower.entries.filter(entry => entry.enemyId !== hound.enemyId);
+        delete lower.mapVisuals[hound.enemyId];
+    }
+    assert.deepEqual(current, prior, file);
 }
 
 async function run() {

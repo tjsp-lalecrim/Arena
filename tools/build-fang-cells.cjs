@@ -20,6 +20,7 @@ function terrain(rows,s,m){
  return {width:w,height:h,data};
 }
 module.exports=function(){
+ const hound=require('./build-fang-hell-hound.cjs')();
  const c=read('data/ArenaFangCells.json');
  const [upperPlan,lowerPlan]=read('doc/mapas/FANG_COBERTURA_M02.json').levels;
  const toMap=(plan,[x,y])=>[3+3*(plan.crop[1]-x),3+3*(y-plan.crop[2])];
@@ -80,17 +81,18 @@ module.exports=function(){
  events[8].pages[0].trigger=1;
  const profile=read('data/ArenaStonekeepWhole.json').encounters;
  const encounterTemplate=read('data/Map008.json').events[169];
- const species={34:3,37:7,38:4,39:8,40:9,41:5};
+ const species={34:3,37:7,38:4,39:8,40:9,41:5,42:hound.enemyId};
  function addEncounters(plan,mapEvents,legacy){
   return plan.encounters.filter(row=>row.status!=='pending').map(row=>{
    const [x,y]=row.original,existing=legacy.find(e=>e.sourceOriginal[0]===x&&e.sourceOriginal[1]===y);
    if((row.status==='existing')!==!!existing)throw Error('Fang: legacy encounter mismatch at '+row.original);
    const origin=toMap(plan,row.original),enemyId=species[row.item];
    if(!enemyId||plan.rows[y-plan.crop[2]][plan.crop[1]-x]==='#')throw Error('Fang: invalid active encounter at '+row.original);
-   const template=profile.entries.find(e=>e.enemyId===enemyId);
+   const isHound=enemyId===hound.enemyId;
+   const template=isHound?hound:profile.entries.find(e=>e.enemyId===enemyId);
    const data={id:existing?.id||`fang.${plan.level}.enemy.mif${x}.${y}`,eventId:existing?.eventId||row.eventId,
     origin,sourceOriginal:row.original,sourceFlat:`FANG${plan.level} flat${row.flat} ${row.resource} / ITEM${row.item}`,
-    enemyId,troopId:template.troopId,questSpecific:true,radius:2,interval:90,regions:[4],scale:template.scale};
+    enemyId,troopId:template.troopId,questSpecific:true,radius:isHound?1:2,interval:90,regions:[4],scale:template.scale};
    if(mapEvents[data.eventId])throw Error('Fang: repeated event '+data.id);
    const e=JSON.parse(JSON.stringify(encounterTemplate)),page=e.pages[0];
    Object.assign(e,{id:data.eventId,name:row.resource+' / '+data.id,note:'ArenaEncounter:'+data.id,x:origin[0],y:origin[1]});
@@ -137,7 +139,7 @@ module.exports=function(){
   tilesetId:4,displayName:'',note:'FANG2: escada, alas secas, segundo enigma e sala do fragmento. Tiles provisórios.',
   encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events:lowerEvents});
  const items=read('data/Items.json');if(items[8]&&!items[8].note.includes('MQ02.gold-key'))throw Error('Item8 occupied');items[8]={...items[1],id:8,name:'Chave dourada de Fang Lair',description:'Chave da Cela 2. Abre o portal junto às celas de Fang Lair. Ícone provisório.',itypeId:2,consumable:false,price:0,note:'<ArenaQuest: MQ02>\n<ArenaUnique>\nMQ02.gold-key / fang.cell2.key; consumo somente no portal.'};
- const visuals=entries=>Object.fromEntries([...new Set(entries.map(e=>e.enemyId))].map(id=>[id,profile.mapVisuals[id]]));
+ const visuals=entries=>Object.fromEntries([...new Set(entries.map(e=>e.enemyId))].map(id=>[id,id===hound.enemyId?hound.mapVisual:profile.mapVisuals[id]]));
  const campaign=read('data/ArenaCampaign.json');Object.assign(campaign.areas.find(a=>a.id===c.areaId),{mapId:c.mapId,encounters:{schemaVersion:1,mapId:c.mapId,areaId:c.areaId,completionQuestId:c.questId,mapVisuals:visuals(entries),entries}});campaign.sources.find(v=>v.id===c.sourceId).itemId=c.itemId;
  const staffSource=campaign.sources.find(source=>source.id===staff.sourceId);
  if(!staffSource||staffSource.areaId!==lower.areaId||staffSource.questId!==c.questId)throw Error('Invalid campaign source '+staff.sourceId);

@@ -453,6 +453,45 @@
       },
       "difficulty": "provisional-M02-BAL",
       "source": "Local Arena_Monsters PDF20:16% chance6-60gold. Only this documented reward enabled; no new items/effects."
+    },
+    "10": {
+      "gold": {
+        "chance": 0,
+        "min": 0,
+        "max": 0
+      },
+      "potions": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "gearChance": 0,
+      "equipment": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "weapons": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      },
+      "questSources": [],
+      "rare": {
+        "chance": 0,
+        "variants": {},
+        "items": {
+          "chance": 0,
+          "min": 1,
+          "max": 1,
+          "entries": []
+        }
+      },
+      "difficulty": "Hell Hound provisório de Fang Lair",
+      "source": "O campo de loot original vale 25; a composição da recompensa não foi atribuída. Piloto concede somente EXP."
     }
   },
   "technical": {

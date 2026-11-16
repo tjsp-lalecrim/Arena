@@ -76,9 +76,7 @@ A promoção à main leva os dois trechos e as dependências de MQ02 da feature 
 
 ### Roteiro de avaliação no navegador
 
-1. No Chrome, abra o [Arena local](http://127.0.0.1:8774/). Carregue uma partida anterior à entrega do pergaminho ou inicie **Novo Jogo** e use **Continuar jornada** no Shift Gate. Você chega dentro do portão de Rihad. Avance até a esplanada logo adiante. Se estiver no nível 1, use **Arredores** junto ao portão para ganhar experiência. No nível 2, use **Repouso** na esplanada para ouvir Ria e converse com o informante.
-2. Siga para o sul pelas ruas até a muralha oposta. Use o portão interno e atravesse o corredor até **Corte**. Fale com Blubamka e escolha **Aceitar o pedido**. Saia e volte pela cidade ao portão por onde chegou. Interaja na **Estrada · Stonekeep** e escolha **Viajar para Stonekeep**.
-3. Em Stonekeep, atravesse os aposentos e a água até a ilha e recolha o pergaminho. Se encontrar a porta relatada, anote o local e a ação tentada. Retorne a Rihad pela saída junto à entrada de Stonekeep. Salve em um slot separado na esplanada e recarregue. Confira a posição e a posse do pergaminho. Volte à corte, entregue-o e repita a conversa. O item deve sair uma vez e o diário deve indicar que Fang Lair foi localizada.
+[Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome).
 
 <a id="entrega-atual--c2-sul-y8089"></a>
 
