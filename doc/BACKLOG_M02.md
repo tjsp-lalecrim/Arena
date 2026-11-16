@@ -2,13 +2,15 @@
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
+**Avaliação integrada de MQ02.** Base jogável `main` em `f78de8d`. O responsável fará a avaliação manual no Chrome pelo [Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome). Os testes automatizados já realizados estão vinculados ao roteiro. Permanecem no backlog a cobertura das [matrizes de Stonekeep](STONEKEEP_M02_04.md#matriz-vigente) e [Fang Lair](mapas/FANG_COBERTURA_M02.json), os [módulos definitivos de Rihad](CHEGADA_RIHAD_M02_03A.md#famílias-visuais-de-rihad), os materiais definitivos de Fang Lair e os [blocos narrativos com ilustração pendente](CAMPANHA_PRINCIPAL.md#inventário-textual).
+
 ## Recorte atual — retomar encontros e portas de Stonekeep
 
 Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada): por dungeon, uma espécie por entrega, combate+caminhada juntos quando ambos faltarem e avaliação antes da próxima. Reuso aprovado após correspondência nas fontes; não bestiário geral/variantes. **Depois** retomar distribuição dos encontros, portas e eventos. Loot/tesouros/descanso continuam posteriores.
 
 **Orc:** combate42b857f e **patrulha6794a81 explicitamente aprovados**, sem inferir aprovação de equilíbrio/recompensas/encontros. Assets preservados; seis B2 agora integrados, parâmetros provisórios.
 
-**Entrega atual.** Stonekeep está ligada à campanha no Map015. O inventário de 180 encontros e 70 portas está registrado, com 165 encontros alcançáveis na auditoria. Há 17 tesouros e seis refúgios ativos. A rota do pergaminho está conectada. A avaliação manual integrada está pendente. [Matriz, limites, saves e roteiro único](STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026)
+**Entrega atual.** Stonekeep está ligada à campanha no Map015. O inventário de 180 encontros e 70 portas está registrado, com 165 encontros alcançáveis na auditoria. Há 17 tesouros e seis refúgios ativos. A rota do pergaminho está conectada. A avaliação manual integrada está pendente. [Matriz, limites e saves](STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026)
 
 **Promoção de trechos.** Aplicar o fluxo de entregas integradas aprovado no M02-03E2. Registrar verificações essenciais, ressalvas e cobertura manual na [matriz do percurso](STONEKEEP_M02_04.md).
 

@@ -98,9 +98,7 @@ A derrota segue para Game Over. Uma vitória legítima registra `fangRetaliation
 
 ### Roteiro no Chrome a partir de um save com o fragmento
 
-1. Carregue um save com o primeiro fragmento e volte à **Saída da mina**, no primeiro nível. Se a partida estiver em Rihad, viaje para Fang Lair pelo portão. [Arena local](http://127.0.0.1:8774/)
-2. Interaja com a saída. Feche o último bloco da visão para entrar na batalha contra **Servo de Tharn**. Se a visão já tinha sido lida no save, a batalha começa diretamente.
-3. Vença, confira a missão concluída no **Diário** e o fragmento no **Inventário**. Salve, recarregue e interaja com a saída. A volta a Rihad deve ocorrer sem nova batalha. Para conferir derrota em separado, use o save anterior à vitória.
+[Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome).
 
 A rota principal de MQ02 está completa. Ainda faltam alas e encontros aplicáveis dos dois níveis, e a arte definitiva de ambientes. Avaliação manual pendente. [Evidências](evidencias/m02-fang-tharn-encontro/resultado.json)
 
@@ -120,9 +118,7 @@ A coleta registra o item e a passagem 90 → 100 em conjunto. O diário marca o 
 
 ### Continuação do roteiro no Chrome
 
-1. Continue do segundo enigma pelo roteiro abaixo. Atravesse a porta após escolher **Uma luva ou manopla** e siga pelo vestíbulo até **Primeiro fragmento · Interagir**.
-2. Interaja, leia a mensagem e confira em **Inventário** e **Diário** que há um fragmento e que a missão segue pendente na saída. Interaja de novo, salve, recarregue e confira que a quantidade continua sendo um.
-3. Volte pela porta e suba a escada. Guarde o teste no patamar para retomar a campanha no próximo recorte.
+[Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome).
 
 Validação focal no Chrome em origem e perfil descartáveis. Foram conferidos o mapa serializado da versão anterior, a coleta e leitura sem imagem, o diário, salvar/carregar antes e depois, a recuperação sem nova narração e o retorno pela escada até Rihad. Avaliação manual pendente. [Evidências](evidencias/m02-fang-fragmento/resultado.json)
 
@@ -138,9 +134,7 @@ A janela paginada usa toda a largura de leitura. As respostas do original em tor
 
 ### Roteiro único no Chrome
 
-1. Após entregar o pergaminho a Blubamka, vá ao portão de Rihad e escolha **Viajar para Fang Lair**. Siga até as celas. Se for testar as aranhas na mesma sessão, escolha **Cela 1** ou **Cela 3** e confira que uma derrota é preservada ao salvar e carregar. Resolva o enigma com **Cela 2**, recolha a chave dourada e use-a no primeiro portal. [Arena local](http://127.0.0.1:8774/)
-2. Desça a escada. Suba logo em seguida para conferir o retorno ao patamar e desça novamente. Siga até a porta do segundo enigma.
-3. Escolha uma resposta incorreta, depois tente novamente e cancele. A porta deve continuar fechada nas duas tentativas. Escolha **Uma luva ou manopla**, salve em outro slot e recarregue. A porta deve permanecer aberta e o diário deve apontar para o fragmento. Depois do batente, siga o roteiro da sala acima.
+[Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome).
 
 Sete grupos passaram em Chrome isolado, incluindo a rota anterior das celas, a descida e subida, o esqueleto, erro, cancelamento, acerto, save e reentrada com a porta aberta. A vitória amostral e a caminhada foram aceleradas no teste. [Evidências](evidencias/m02-fang-segundo-enigma/resultado.json).
 
@@ -166,9 +160,7 @@ As falas usam os blocos do [inventário textual](CAMPANHA_PRINCIPAL.md#inventár
 
 ### Roteiro único no Chrome
 
-1. Entregue o pergaminho a Blubamka e volte ao portão urbano. Escolha **Viajar para Fang Lair**. Passe pelo portal da entrada e siga o corredor até as celas. [Arena local](http://127.0.0.1:8774/)
-2. Leia o enigma e escolha **Cela 1** ou **Cela 3** para liberar as quatro aranhas. Derrote uma se quiser conferir a persistência. Salve em outro slot e carregue. As celas liberadas devem continuar abertas e a aranha derrotada deve continuar ausente.
-3. Responda **Cela 2**, pegue a chave dourada e volte ao portal. A abertura consome a chave uma vez. Siga ao patamar e interaja com a escada. Para conferir o retorno, volte pelo mesmo corredor e interaja na entrada para regressar a Rihad.
+[Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome).
 
 Cinco grupos passaram em Chrome 157 com perfil e slots descartáveis. O teste usou a entrega real a partir de uma fixture com pergaminho e acelerou apenas a caminhada e uma vitória. Cobriu cancelamento, travessia, combate, saves antes e depois da abertura, retorno e retomada de um Map013 da amostra. A reconstrução também passou. [Resultado automatizado](evidencias/m02-fang-campanha/resultado.json).
 

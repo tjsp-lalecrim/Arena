@@ -1,6 +1,27 @@
 # M02-01 — estados, viagens e continuidade da MQ02
 
-**Implementação atual de Stonekeep.** A estrada de Rihad leva ao Map015 na campanha. A rota de MQ02 segue até a entrega do pergaminho em Rihad. Os registros de implementação anteriores abaixo são históricos. [Integração, matriz e roteiro](STONEKEEP_M02_04.md#stonekeep-na-campanha--integração-de-10112026).
+## Roteiro integrado de MQ02 no Chrome
+
+**Referência de jogo:** `main` em `f78de8d`. Avaliação manual pendente. As verificações automatizadas existentes em Chrome isolado cobrem [Rihad, corte e Stonekeep](evidencias/m02-rihad-corte/resultado.json) e [Fang Lair, retaliação e retorno](evidencias/m02-rihad-corte/fang-lair.json).
+
+Abra o [Arena local](http://127.0.0.1:8774/) no Chrome desktop. Se o servidor estiver parado, inicie-o pelo [procedimento local](EXECUCAO_LOCAL.md#iniciar-acessar-e-encerrar). Use o fluxo normal da campanha. Para preservar a partida de origem, use slots livres para os pontos de retomada e mantenha o mesmo endereço e perfil do Chrome. Para conferir um save, volte ao título, recarregue a página com F5 e escolha **Continuar** no slot de teste.
+
+| Passo | Ação | O que deve acontecer e onde retomar |
+| --- | --- | --- |
+| 1. Chegada a Rihad | No Shift Gate, escolha **Continuar jornada**. Também vale começar com um save já no portão de Rihad. Vá à esplanada. Se estiver no nível 1, ganhe experiência em **Arredores** e volte. No nível 2 ou acima, use **Repouso**, termine a visão de Ria e fale com o informante. | A chegada fica dentro do portão urbano. A visão acontece uma vez e o informante indica a corte. Retome no portão se ainda faltar a visão, ou na esplanada antes de falar com o informante. |
+| 2. Audiência | Siga para o sul até a muralha oposta, atravesse o portão interno e entre em **Corte**. Siga pela faixa central até Blubamka e escolha **Aceitar o pedido**. Volte ao portão urbano e escolha **Viajar para Stonekeep** na estrada. | O diário pede o pergaminho e Stonekeep fica disponível. Um save com o pedido aceito pode retomar na estrada. Um save da corte antiga retoma na entrada do salão atual com o progresso preservado. |
+| 3. Stonekeep | Atravesse os aposentos e a passagem de água até a ilha. Recolha o pergaminho e volte pela saída junto à entrada de Stonekeep. | O inventário recebe um pergaminho e o diário pede a volta à corte. **Save A:** em Rihad, com o pergaminho no inventário, antes de entregá-lo. Ao carregar, siga à corte para fazer a entrega. |
+| 4. Entrega e retomada na corte | Fale com Blubamka e escolha **Entregar o pergaminho**. Use **Salvar** dentro da corte, em outro slot, e carregue pela tela de título após F5. Confira a posição, o inventário e o diário. Fale com Blubamka novamente. | O save retoma no salão e na posição gravada. O pergaminho foi consumido uma vez, a conversa não oferece nova entrega e Fang Lair está no diário. **Save B:** dentro da corte, após a entrega. Retome saindo da corte, voltando ao portão urbano e escolhendo **Viajar para Fang Lair** na estrada. |
+| 5. Primeiro enigma | Na mina, siga o corredor até as celas. Escolha **Cela 1** ou **Cela 3** para testar um erro. Depois escolha **Cela 2**, recolha a chave dourada ao sul e use-a no portal da escada. | O erro libera as aranhas previstas e permite tentar de novo. O acerto abre a Cela 2. O portal consome a chave uma vez. Um save no patamar com o portal aberto permite retomar na escada. |
+| 6. Segundo enigma | Desça a escada e siga até a porta do enigma. Experimente uma resposta errada e depois cancele uma tentativa. Escolha **Uma luva ou manopla**. | Erro e cancelamento deixam a porta fechada e permitem tentar novamente. O acerto abre a porta e o diário aponta para o fragmento. Se já tiver um save com a porta aberta, retome no vestíbulo. |
+| 7. Fragmento | Passe pela porta e interaja com **Primeiro fragmento · Interagir**. Termine a leitura, confira o inventário e volte pela escada. | Há uma única peça no inventário, e o diário ainda indica que falta sair da mina. **Save C:** no patamar do primeiro nível, com o fragmento e antes de interagir com a saída. Serve para repetir só a retaliação. |
+| 8. Retaliação e volta | Interaja com **Saída da mina** no primeiro nível. Termine a visão e vença o **Servo de Tharn**. Confira o diário e o inventário. Interaja novamente com a saída para voltar a Rihad. | A visão abre o combate. Se o save já registrar a leitura, a saída inicia o combate diretamente. A vitória conclui MQ02 e preserva o fragmento. O retorno a Rihad não repete visão, batalha ou recompensas. |
+
+Ao relatar um problema, indique o passo, a área ou ponto do mapa, a última ação, o esperado e o observado. Se puder, guarde o slot anterior e anexe uma captura. Para a porta de Stonekeep ainda sem localização, uma captura do entorno e a mensagem exibida ajudam a identificar o evento. Correções que afetem a campanha serão reproduzidas a partir desse relato, verificadas e promovidas pelo [fluxo do projeto](DESENVOLVIMENTO_E_VERSIONAMENTO.md).
+
+A cobertura restante dos mapas, os materiais definitivos e as ilustrações por bloco continuam no [backlog do M02](BACKLOG_M02.md). Release e GitHub Pages seguem em etapas próprias.
+
+## Histórico da especificação e das entregas
 
 **Delta A2-E posterior a8f28207:** Map015 isolado com24 encontros/4portas; base integral com avaliação manual adiada, avanço autorizado. [Cobertura e conexões](STONEKEEP_M02_04.md#faixa-a2-e--primeiro-setor-funcional-no-map015). Map012/quest/recibos mantidos. Completar Stonekeep antes do levantamento integral/dimensionamento de Rihad, sem expansão de Fang Lair por associação.
 
