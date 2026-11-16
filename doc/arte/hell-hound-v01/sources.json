@@ -1,0 +1,81 @@
+{
+  "archive": "GLOBAL.BSA",
+  "palette": "PAL.COL",
+  "area": "42068779.MIF / FANG2.INF",
+  "map1": "0x8039",
+  "flat": 57,
+  "alias": "HELLHOUN.DFA",
+  "item": 42,
+  "creatureIndex": 10,
+  "exePattern": "hound@.cfa",
+  "positions": [
+    [
+      63,
+      74
+    ],
+    [
+      65,
+      74
+    ]
+  ],
+  "original": {
+    "level": 7,
+    "hp": [
+      50,
+      75
+    ],
+    "damage": [
+      5,
+      25
+    ],
+    "baseExp": 1250,
+    "expMultiplier": 25,
+    "magicField": 4,
+    "lootField": 25,
+    "scale": 290
+  },
+  "animations": [
+    {
+      "file": "HOUND1.CFA",
+      "width": 59,
+      "height": 92,
+      "frames": 12,
+      "sha256": "996f50e4c3df99fc9c56288f02fb123fd0269510e2012be26b55c6d35ce215ae"
+    },
+    {
+      "file": "HOUND2.CFA",
+      "width": 126,
+      "height": 84,
+      "frames": 8,
+      "sha256": "dc57a7d5dafae42f2030b7fa28911057c616d7e0da57f880c88367af488047eb"
+    },
+    {
+      "file": "HOUND3.CFA",
+      "width": 157,
+      "height": 70,
+      "frames": 8,
+      "sha256": "88752f9613cb559fcae931de24f72c444fffbd902fa8618c72c696b5b9cec734"
+    },
+    {
+      "file": "HOUND4.CFA",
+      "width": 135,
+      "height": 70,
+      "frames": 8,
+      "sha256": "1b4a31f6ea4fc6ecf66e425aa4c99738b2007e294be783c2636235afee73bf12"
+    },
+    {
+      "file": "HOUND5.CFA",
+      "width": 62,
+      "height": 86,
+      "frames": 8,
+      "sha256": "de4e2da2ec8cef135c5e64aefcd9aa7965017434062e027b6e8063ab4852a86a"
+    },
+    {
+      "file": "HOUND6.CFA",
+      "width": 92,
+      "height": 45,
+      "frames": 3,
+      "sha256": "52bec9df288318842ea33fdefa76ee71fc722ac90c2122d35465e90870436a3e"
+    }
+  ]
+}
