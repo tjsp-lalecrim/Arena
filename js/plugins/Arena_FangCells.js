@@ -315,6 +315,14 @@ var ArenaFangCells;
   }
   createMap.apply(this,arguments);
  };
+ var mapLoaded=Scene_Map.prototype.onMapLoaded;
+ Scene_Map.prototype.onMapLoaded=function(){
+  // Same-map saves may preserve the old B-only set despite loading current map tiles.
+  if(!$gamePlayer.isTransferring()&&(here()||below())&&$gameMap.tilesetId()!==$dataMap.tilesetId){
+   $gameMap.changeTileset($dataMap.tilesetId);
+  }
+  mapLoaded.apply(this,arguments);
+ };
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&ArenaContinuation.labActive()&&$gameMap.mapId()===$arenaRihad.court.entry.mapId&&!$gamePlayer.isTransferring()){
   pending=false;var queenId=$arenaRihad.court.queenEventId,queen=$gameMap.event(queenId);$gamePlayer.locate(queen.x,queen.y+1);var i=new Game_Interpreter();i.setup([],queenId);i._branch[0]=0;if(!ArenaCourtDelivery.deliver(i))throw Error('Fang Lair: fixture de entrega falhou.');var p=c().lab;$gameTemp.clearDestination();$gamePlayer.reserveTransfer(c().mapId,p.x,p.y,p.direction,0);
@@ -333,7 +341,7 @@ var ArenaFangCells;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if((here()||below())&&ArenaContinuation.labActive()){this.addCommand('Guardar teste em RAM','arenaRihadStore');this.addCommand('Carregar teste da RAM','arenaRihadLoad');}};
  var create=Scene_Map.prototype.createDisplayObjects,updateMap=Scene_Map.prototype.update;
  Scene_Map.prototype.createDisplayObjects=function(){create.apply(this,arguments);if(here()||below()){this._fangLabels=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._fangLabels);}};
- Scene_Map.prototype.update=function(){updateMap.apply(this,arguments);if(!this._fangLabels)return;var b=this._fangLabels.bitmap;b.clear();this._fangLabels.visible=!$gameMessage.isBusy();if(!this._fangLabels.visible)return;b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Fang Lair',16,4,b.width-32,30);b.fontSize=16;b.drawText('Materiais provisórios · Esc: menu',16,38,b.width-32,24);
+ Scene_Map.prototype.update=function(){updateMap.apply(this,arguments);if(!this._fangLabels)return;var b=this._fangLabels.bitmap;b.clear();this._fangLabels.visible=!$gameMessage.isBusy();if(!this._fangLabels.visible)return;b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Fang Lair',16,4,b.width-32,30);b.fontSize=16;b.drawText('Mina V01 · Esc: menu',16,38,b.width-32,24);
   function label(p,text){var x=$gameMap.adjustX(p[0])*48+24,y=$gameMap.adjustY(p[1])*48-28;if(y<75||y>b.height||x<0||x>b.width)return;b.fontSize=16;b.fillRect(Math.max(0,x-148),y,296,24,'rgba(8,14,18,.85)');b.drawText(text,Math.max(0,x-144),y,288,24,'center');}
   if(below()){
    label(c().lower.stair,'Subir para o primeiro nível');

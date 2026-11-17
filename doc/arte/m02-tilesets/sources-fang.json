@@ -1,0 +1,29 @@
+{
+  "tool": "ImageGen integrado",
+  "prompt": "Make one Fang Lair original Elder Scrolls Arena mine orthographic texture atlas. Use the provided original decoded FANG1 and FANG2 reference images for structure and palette and the second reference from the existing game only as style. EXACT 4x4 evenly sized equal cells, full-bleed opaque flat texture grid, no grid lines nor blank gaps nor labels. Each cell is a separately cropped sample tiled over 48px game cells, strictly overhead for ground and strictly flat straight-on for wall materials. Row1: MFLOORA compact slate-gray fine gravel; MFLOORD dusty muted warm exposed rocky floor planes; subtly brighter mixed gray and warm gravel (walking circulation contrast); dense dark top-down cap of charcoal split rock. Row2: MINEA rocky uneven mottled warm khaki gray with narrow timber braces visually durable; MINEB rough cool charcoal bedrock; MINEC dark earthy olive shale strata with old narrow timber support; MINED dark mottled rubble with pale tan exposed fractures. Row3: MINEE black stone flecked brown; MINEF cold slate gray rock; MINEA1/A warm gray cracked rock with muted earthy iron oxide mineral seams; MINEB1/C1 rich brown slate and restrained rust mineral variation, NO lava or glowing seams. Row4: pale worn stair tread material in weathered trim-stone, collapsed dark slate fragments as flat rocky cut, worn warm wooden mining plank, matte charcoal stone cap variant. Top-down game texture, painted tactile dark fantasy, eroded rough hewn stone and timber, not masonry bricks or generic prison. Moderate values and low speckle, floors clearly lighter than wall caps and sufficient contrast for near-black sprites. No scenery, borders, vignette, props, UV grids, text, shadows between swatches or perspective.",
+  "original": "Instalação local do Arena e GLOBAL.BSA, consulta somente leitura; PAL.COL para pranchas de referência",
+  "originalResources": {
+    "42068779.MIF": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7",
+    "FANG1.INF": "4693f2db924a07fb4c5868978d595ecf624467990b1ad59fedc9df6c1760190a",
+    "FANG2.INF": "3f6e54169b7202e3565774686ad3cffd674dcf3805acaebfe264a84a5fd9bd7e",
+    "MFLOORA.SET": "70bc888cd7f3dbc3786bacb2d26263763fa7334d5cf4e519ce497ebc32d06ccb",
+    "MFLOORD.SET": "02d9f0b9d813bfdfae5109c07c0f3fdf67d6f3452c9aba6b675d7e847b95d3cf",
+    "MINEA.SET": "8471340f56c7353c7ff8bd98a7ea7a1edbc3f6de7d2e1aef19082a1aff0f668a",
+    "MINEB.SET": "82a08120c006c75a4cb14dfaab1499dac87914ede6e8c99b215f2dd11c5b1599",
+    "MINEC.SET": "3bc409e73533e020e36ae2e9681942dde6e31866f53546feddd82a665dfc9870",
+    "MINED.SET": "2f93b9db3947df2b80a67705773f31d89e297fbd7e7da913a77e887fa31c027d",
+    "MINEE.SET": "595759a6864e9b753d53acee622b142783ea944b2341afd58a24d8de0fb8c55d",
+    "MINEF.SET": "cc8d56008783378e2de0562b6e88a03793a336320b79028a57e8e063ae80bc12",
+    "MINEA1.SET": "a8a3183b70afb92c0f2b1ee71b207b6ae96dc73a030385b81147ca06421eee9d",
+    "MINEB1.SET": "7b18e9e9b11c56ce2232ab6239fcfdf3dcd1302df6e207e90d7d35f2b5c7db2e",
+    "MINEC1.SET": "2df134cd3b196926fdcfcd2044f72317804cceda5440b781fba0a9d91d0f7066",
+    "MDOOR1.IMG": "177331e9913985ee46e508796f4c7f3cc50bda00fb33667c40e31e37f05a067d",
+    "MCELL.IMG": "ccead6c6be33c45fe3de2522d8b01039a2714df60afacb0aa903461957376196",
+    "MSD.IMG": "1e67700f4345784af54fef6fa80d1af51e4faecc952338ecefc49ace603ef020",
+    "MSU.IMG": "8944149e0f000791709c664ccfc1edb86019e31012eb95da9bb6269c45c7e6ce"
+  },
+  "referenceBoard": "tmp/m02-tilesets/fang-refs.png",
+  "styleReference": "img/tilesets/Arena_Shared_Castle_Stone_V01_C.png",
+  "master": "art/masters/fang-mine-v01/atlas-source.png",
+  "manualVisualReview": "pendente"
+}
