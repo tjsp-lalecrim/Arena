@@ -98,6 +98,7 @@ function build(map, config, recovery) {
     }
     config.signage = {
         signs: signage.signs,
+        audienceRoute: [signage.audienceStart, ...signage.routeCorners, signage.court],
         doors: signage.doors.map(({ type, tile, approach }) => ({ type, tile, approach })),
     };
     Object.assign(map.events[1], position('informant'));

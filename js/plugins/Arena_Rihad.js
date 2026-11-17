@@ -104,6 +104,43 @@ var ArenaRihad;
   this._rihadMarkers=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._rihadMarkers);
  }};
  var arrows={2:'↓',4:'←',6:'→',8:'↑'};
+ function directionTo(x,y,tx,ty){
+  return x<tx?6:x>tx?4:y<ty?2:y>ty?8:0;
+ }
+ function audienceDirection(){
+  var points=$arenaRihad.signage.audienceRoute;
+  var x=$gamePlayer.x,y=$gamePlayer.y,best=5,direction=0;
+  for(var i=1;i<points.length;i++){
+   var a=points[i-1],b=points[i];
+   var px=Math.min(Math.max(x,Math.min(a[0],b[0])),Math.max(a[0],b[0]));
+   var py=Math.min(Math.max(y,Math.min(a[1],b[1])),Math.max(a[1],b[1]));
+   var distance=Math.abs(px-x)+Math.abs(py-y);
+   if(distance>4||distance>best||px!==x&&py!==y)continue;
+   var join=directionTo(x,y,px,py);
+   if(join){
+    // Only guide a nearby player back to the route along an unobstructed lane.
+    var cx=x,cy=y;
+    while((cx!==px||cy!==py)&&$gamePlayer.canPass(cx,cy,join)){
+     cx=$gameMap.xWithDirection(cx,join);cy=$gameMap.yWithDirection(cy,join);
+    }
+    if(cx!==px||cy!==py)continue;
+   }
+   // At a shared corner use the outgoing leg. The last tile faces the door.
+   best=distance;direction=join||directionTo(px,py,b[0],b[1])||2;
+  }
+  return direction;
+ }
+ function drawAudienceMarker(bitmap){
+  if(!here()||$gameMessage.isBusy()||$gamePlayer.isTransferring())return;
+  var quest=ArenaQuests.snapshot('MQ02');
+  if(!quest||quest.stage!==30)return;
+  var direction=audienceDirection();
+  if(!direction)return;
+  var label=arrows[direction]+' Audiência',width=Math.ceil(bitmap.measureTextWidth(label))+22;
+  var x=bitmap.width-width-18;
+  bitmap.fillRect(x,20,width,32,'#223932');
+  bitmap.drawText(label,x+8,20,width-16,32,'center');
+ }
  function nearby(entries,position,range){
   var closest=null;
   entries.forEach(function(entry){
@@ -117,6 +154,7 @@ var ArenaRihad;
   var b=this._rihadCaption.bitmap;b.clear();b.fillRect(0,0,b.width,72,'rgba(12,16,18,0.92)');b.fontSize=23;b.textColor='#e1d2ae';
   b.drawText(here()?'Rihad · Hammerfell':'Arredores de Rihad — amostra provisória',18,4,b.width-36,30);
   b.fontSize=17;b.drawText((here()?'Exterior V01':'Materiais de reuso')+' · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM, sem saves pessoais':''),18,36,b.width-36,26);
+  drawAudienceMarker(b);
   b=this._rihadMarkers.bitmap;b.clear();b.fontSize=18;b.textColor='#ead9b5';
   var markers=[[2,9,'Voltar a Rihad']];
   if(here()){
