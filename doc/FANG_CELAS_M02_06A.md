@@ -2,6 +2,16 @@
 
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
+## Atlas de mina V01
+
+Map013 e Map017 compartilham o mesmo atlas C de 48 px nas áreas já jogáveis. `FANG1.INF` e `FANG2.INF` ligam `FLOR` às famílias MFLOORA/MFLOORD e `MAP1` às famílias MINEA–F. A classificação é feita com a tabela do nível correspondente, pois a ordem de MINEB/MINED difere entre os dois arquivos. As famílias MINEA1–C1 orientam variações minerais sem brilho de lava. Os pisos mais claros distinguem a circulação da rocha alta. Coroamentos e cortes são adaptações ortogonais da estratificação, com material secundário mais escuro nas células sem face minerária atribuível.
+
+Os pisos e as faces foram aplicados à entrada, alas secas, celas, patamares e sala do fragmento. Escadas têm marca visual nas mesmas células de transferência. As portas, grades, tesouros e o atlas A1 existente foram reaproveitados. Os dois enigmas, as posições de patrulha, a colisão e as áreas atualmente inacessíveis não mudaram. Lava animada, travessia e acesso aos ghouls da ilha seguem na etapa própria.
+
+**Exportação.** Na raiz, execute `python tools/export-m02-surface-atlas.py fang` com Pillow e depois `node tools/build-rihad-arrival.cjs`. O arquivo C é gerado com pisos em período 2×2, corte de rocha, coroamento, duas fileiras de face e cantos. [Mestre, prompt e fontes](arte/m02-tilesets/sources-fang.json) · [Peças, hash e exportação](arte/m02-tilesets/exports-fang.json) · [Classificação dos dois níveis](mapas/FANG_MATERIAIS_M02.json).
+
+**Próximo teste integrado.** Compare o contraste com o personagem e os Hell Hounds. Observe a leitura de piso e bordas de rocha da entrada à sala do fragmento, a posição das portas e a transição na escada. [Entrada](evidencias/m02-fang-atlas/entrada.png) · [Celas](evidencias/m02-fang-atlas/celas.png) · [Escada](evidencias/m02-fang-atlas/escada.png) · [Sala do fragmento](evidencias/m02-fang-atlas/sala.png) · [Verificações](evidencias/m02-fang-atlas/fang-lair.json).
+
 ## Hell Hounds da sala do fragmento
 
 O `FANG2.INF` vincula `MAP1 0x8039` ao flat 57, `HELLHOUN.DFA / ITEM42`. O índice 10 no `ACD.EXE` instalado identifica **Hell Hound** e `HOUND@.CFA`. A consulta de `HOUND1–6.CFA` no `GLOBAL.BSA`, com `PAL.COL`, mostra o corpo canino alongado, ombros pesados, pelagem azul-negra, olhos vermelhos e derrota em brasas. O acabamento em carvão com luz fria, a mordida lateral e a projeção superior são adaptações. [Arquivos e tabelas de origem](arte/hell-hound-v01/sources.json).
@@ -84,7 +94,7 @@ A [matriz de cobertura](mapas/FANG_COBERTURA_M02.json) vincula as 95 posições 
 
 Os novos encontros usam os perfis, inimigos e tabelas de recompensa existentes, com IDs individuais. IDs das quatro aranhas, do primeiro esqueleto, dos itens, recibos e etapas foram mantidos. O Servo de Tharn é um encontro narrativo separado dos 95. O Map017 ampliado desloca a projeção anterior em (+9,+51); saves no recorte antigo são convertidos pelo ponto da escada, preservando posição relativa, direção e derrotas. No entorno da sala, três células (66,74–76) foram restauradas conforme o muro do MAP1, retirando a adaptação antiga que, junto ao piso novo, permitiria contornar a porta do enigma. Saves sobre essas três células retomam no corredor seco adjacente.
 
-As duas celas de tesouro LOCK 15 no primeiro nível já estão integradas. No segundo, os dez LOCK 10 registrados sobre MAP1 de parede são mantidos na matriz sem abrir vãos por suposição; só a porta confirmada do enigma está ativa. Permanecem pendentes a travessia de poços/desníveis e lava, materiais de mina, ferragens/objetos, arte do Fantasma e avaliação visual dos Hell Hounds e outros elementos opcionais da planta.
+As duas celas de tesouro LOCK 15 no primeiro nível já estão integradas. No segundo, os dez LOCK 10 registrados sobre MAP1 de parede são mantidos na matriz sem abrir vãos por suposição; só a porta confirmada do enigma está ativa. Permanecem pendentes a travessia de poços/desníveis e lava, ferragens/objetos específicos, arte do Fantasma e avaliação visual dos Hell Hounds e outros elementos opcionais da planta.
 
 **Avaliação no Chrome pelo fluxo normal.** A partir da entrada, explore o ramal seco que leva ao ghoul em MIF (24,2), MV (228,9). Após descer as celas, explore o corredor seco até o esqueleto em MIF (55,90), MV (114,114). Salve após uma vitória e confira que o encontro fica ausente ao carregar. A avaliação manual do percurso principal pode ocorrer em paralelo pelo roteiro abaixo. [Arena local](http://127.0.0.1:8774/) · [Teste integrado](evidencias/m02-fang-alas/resultado.json)
 

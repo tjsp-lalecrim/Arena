@@ -1,7 +1,8 @@
 // Fang Lair campaign: disposable Chrome origin/profile, real MV event/choice processing.
 const fs=require('fs'),path=require('path'),http=require('http'),cp=require('child_process'),assert=require('assert/strict'),{chromium}=require('playwright');
-const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-hell-hound'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
+const R=path.resolve(__dirname,'..'),out=path.join(R,'doc/evidencias/m02-fang-atlas'),read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),base=f=>JSON.parse(cp.execFileSync('git',['show','4d7e2df:'+f],{cwd:R,encoding:'utf8',maxBuffer:20e6}));
 const c=read('data/ArenaFangCells.json'),map=read('data/Map013.json');
+const mineTileset=read('doc/arte/m02-tilesets/fang.json').tilesetId;
 const coverage=read('doc/mapas/FANG_COBERTURA_M02.json');
 const sourcePassages=coverage.levels[0].passages;
 const originalBase=JSON.parse(cp.execFileSync('git',['show','37a5272:doc/mapas/FANG_COBERTURA_M02.json'],{cwd:R,encoding:'utf8'}));
@@ -49,6 +50,12 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));let b;try{
  b=await chromium.launch({channel:'chrome',headless:true});const p=await b.newPage({viewport:{width:1050,height:850}}),errors=[],missing=[],checks=[];p.setDefaultTimeout(18000);p.on('pageerror',e=>{errors.push(e.message);console.error(e.message);});p.on('response',r=>{if(r.status()>=400)missing.push(r.url());});
  const title=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
+ const capture=async name=>{
+  fs.mkdirSync(out,{recursive:true});
+  await p.evaluate(()=>$gamePlayer.center($gamePlayer.x,$gamePlayer.y));
+  await p.waitForTimeout(400);
+  await p.locator('#GameCanvas').screenshot({path:path.join(out,name+'.png')});
+ };
  const ready=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_Map&&SceneManager._scene.isActive()&&!SceneManager.isSceneChanging()&&!$gamePlayer.isTransferring()&&$gamePlayer.canMove());
  const press=async key=>{await p.keyboard.press(key,{delay:90});await p.waitForTimeout(180);};
  async function messages(untilChoice=false){for(let n=0;n<180;n++){const s=await p.evaluate(()=>{const w=SceneManager._scene._messageWindow;if(w?._textState)w._showFast=true;const choice=SceneManager._scene._choiceListWindow||w?._choiceWindow;return{busy:$gameMessage.isBusy(),running:$gameMap.isEventRunning(),pause:w?.pause,wait:w?._waitCount,choice:choice?.isOpenAndActive(),neutral:choice?._arenaCourtAwaitNeutral};});if(untilChoice&&s.choice&&!s.neutral)return;if(!untilChoice&&!s.busy&&!s.running)return;if(s.pause&&!s.wait&&!s.choice)await press('Enter');else await p.waitForTimeout(80);}throw Error('Message/choice timeout');}
@@ -127,6 +134,13 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  await walk(await p.evaluate(()=>{const e=$gameMap.event($arenaRihad.court.exitEventId);return [e.x,e.y-1];}));await press('ArrowDown');await p.waitForFunction(()=>$gameMap.mapId()===9&&!$gamePlayer.isTransferring());await ready();
  await travel(2);await ready();assert.equal(await p.evaluate(()=>$gameMap.mapId()),9);
  await travel(0);await p.waitForFunction(()=>$gameMap.mapId()===13&&!$gamePlayer.isTransferring());await ready();
+ assert.equal(await p.evaluate(()=>$gameMap.tilesetId()),mineTileset);
+ await capture('entrada');
+ const oldTilesetPosition=await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]);
+ await p.evaluate(()=>$gameMap._tilesetId=4);await save(16);await load(16);
+ assert.equal(await p.evaluate(()=>$gameMap.tilesetId()),mineTileset);
+ assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]),oldTilesetPosition);
+
  assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]),c.entry);
  await walk([c.arrivalText[0],c.arrivalText[1]-1]);await press('ArrowDown');await p.waitForFunction(()=>$gameMessage.isBusy());await messages();await ready();
  assert.equal((await snapshot()).q.objectives.fangEntryRead,true);
@@ -275,7 +289,7 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  assert.equal((await snapshot()).count,1);
  await save(16);await load(16);
  assert.equal((await snapshot()).count,1);assert.equal((await snapshot()).q.stage,70);
- await walk(c.riddle);await p.evaluate(()=>$gamePlayer.setDirection(2));await press('Enter');await messages();await ready();
+ await walk(c.riddle);await capture('celas');await p.evaluate(()=>$gamePlayer.setDirection(2));await press('Enter');await messages();await ready();
  s=await snapshot();assert.equal(s.q.stage,80);assert.equal(s.count,0);assert.equal(s.source.active,false);
  assert.equal(s.q.receipts['MQ02.fang.lower-door'].quantity,1);assert.equal(s.q.completed,false);
  assert.equal((await reachable()).limit,true);
@@ -311,6 +325,9 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
   await ready();
  }
  await stairs(c.limit,lower.mapId,2);assert.deepEqual(await position(),lower.entry);
+ assert.equal(await p.evaluate(()=>$gameMap.tilesetId()),mineTileset);
+ await capture('escada');
+
  await stairs(lower.stair,c.mapId,2);assert.deepEqual(await position(),lower.return);
  assert.deepEqual(await snapshot(),s);
  await stairs(c.limit,lower.mapId,2);
@@ -398,8 +415,12 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  fs.mkdirSync(out,{recursive:true});
  const beforeStaff=await staffState();assert.equal(beforeStaff.count,0);
  assert.equal(beforeStaff.journal.steps.find(s=>s.id==='fang-staff-piece').done,false);
+ await p.evaluate(()=>$gameMap._tilesetId=4);
  await save(21);await load(21);assert.deepEqual(await staffState(),beforeStaff);
- await p.locator('#GameCanvas').screenshot({path:path.join(out,'sala.png')});
+ assert.equal(await p.evaluate(()=>$gameMap.tilesetId()),mineTileset);
+ assert.deepEqual(await position(),staff.position);
+ await capture('sala');
+ checks.push('Both pre-atlas save fixtures adopt the current shared mine tileset and preserve positions and quest state');
  await press('Enter');await p.waitForFunction(()=>$gameMessage.isBusy());
  const message=await p.evaluate(()=>{
   const w=SceneManager._scene._messageWindow;
@@ -575,5 +596,5 @@ const types={'.html':'text/html','.js':'application/javascript','.json':'applica
  checks.push('Save/load before and after the pickup, repeat interaction, recovery without replay, and return to the stairs preserve state and the prior receipts');
  console.log('PASS sala do fragmento, diário, save e retorno');
  checks.push('All new placements are reachable on their respective levels; contacts and persistent defeats verified in a disposable save');
- assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'fang-lair.json'),JSON.stringify({base:'f78de8d',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Ghost, and definitive environment art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
+ assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);fs.mkdirSync(out,{recursive:true});fs.writeFileSync(path.join(out,'fang-lair.json'),JSON.stringify({base:'f87f2f0',wings:[upperWings,lowerWings],browser:b.version(),canvas:[816,624],checks,errors,missing,scope:'Real MV choices, action events, native passability BFS and accelerated walks; disposable origin/profile, RAM and synthetic normal save only',pending:['Manual Chrome campaign evaluation','Remaining wings, Ghost, and definitive environment art']},null,2)+'\n');console.log('PASS Fang cells: '+checks.length+' groups; preservation and stable full reconstruction');
  }finally{if(b)await b.close();server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

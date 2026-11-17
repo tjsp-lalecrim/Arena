@@ -1,7 +1,18 @@
 // Fang Lair campaign and connected dry wings, using provisional runtime tiles.
 const fs=require('fs'),path=require('path'),R=path.resolve(__dirname,'..');
 const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),write=(n,v)=>fs.writeFileSync(path.join(R,'data/'+n+'.json'),(Array.isArray(v)?'[\n'+v.map(x=>JSON.stringify(x)).join(',\n')+'\n]':v.data&&v.events?JSON.stringify(v):JSON.stringify(v,null,2))+'\n');
-function terrain(rows,s,m){
+const installAtlas=require('./m02-surface-atlas.cjs');
+const materialSpec=require('../doc/arte/m02-tilesets/fang.json');
+const materialPlan=require('../doc/mapas/FANG_MATERIAIS_M02.json');
+
+function terrain(plan,s,m,atlas,stair){
+ const rows=plan.rows, materials=materialPlan.levels[plan.level-1];
+ if(materials.crop.join()!==plan.crop.join()||materials.walls.length!==rows.length||
+    materials.floors.length!==rows.length||
+    rows.some((row,i)=>materials.walls[i].length!==row.length||materials.floors[i].length!==row.length)){
+  throw Error('Materiais de Fang Lair não correspondem à planta do nível '+plan.level);
+ }
+ const at=(layer,x,y)=>materials[layer][Math.floor((y-m)/s)]?.[Math.floor((x-m)/s)];
  const w=rows[0].length*s+2*m,h=rows.length*s+2*m,data=Array(w*h*6).fill(0);
  const cell=(x,y)=>rows[Math.floor((y-m)/s)]?.[Math.floor((x-m)/s)]||'#';
  // 3×3 elbows. A closed side keeps its full border solid, including the
@@ -13,14 +24,24 @@ function terrain(rows,s,m){
   return mask?mask[(y-m)%s][(x-m)%s]==='#':value==='#';
  }
  for(let y=0;y<h;y++)for(let x=0;x<w;x++){
-  const value=cell(x,y),solid=solidAt(x,y),dy=(y-m+s)%s;
-  data[y*w+x]=solid?(cell(x,y)==='#'&&cell(x,y+s)!=='#'?(dy===0?4:5+x%2+(dy-1)*8):4):value==='='||value==='+'?9:1+x%2+y%2*8;
+  const value=cell(x,y),solid=solidAt(x,y);
+  if(solid){
+   const level=!solidAt(x,y+1)?2:!solidAt(x,y+2)?1:0;
+   const edge=!solidAt(x-1,y)?1:!solidAt(x+1,y)?2:0;
+   data[y*w+x]=atlas.wall(at('walls',x,y)||'x',level,edge);
+  }else{
+   const atStair=Math.abs(stair[0]-x)<=1&&Math.abs(stair[1]-y)<=1;
+   const original=at('floors',x,y);
+   const floor=atStair?'stair':value==='='||value==='+'||original==='2'?'cut':original==='1'?'earth':'gravel';
+   data[y*w+x]=atlas.floor(floor,x,y);
+  }
   data[(5*h+y)*w+x]=solid?1:4;
  }
  return {width:w,height:h,data};
 }
 module.exports=function(){
  const hound=require('./build-fang-hell-hound.cjs')();
+ const atlas=installAtlas(materialSpec);
  const c=read('data/ArenaFangCells.json');
  const [upperPlan,lowerPlan]=read('doc/mapas/FANG_COBERTURA_M02.json').levels;
  const toMap=(plan,[x,y])=>[3+3*(plan.crop[1]-x),3+3*(y-plan.crop[2])];
@@ -107,7 +128,7 @@ module.exports=function(){
  dryTreasures.forEach(addTreasure);
  write('ArenaFangCells',{...c,dryTreasures});
  if(read('data/MapInfos.json')[13]&&read('data/MapInfos.json')[13].name!=='M02-06 Fang Lair — celas (provisório)')throw Error('Map013 ID occupied');
- write('Map013',{...read('data/Map001.json'),...terrain(upperPlan.rows,3,2),tilesetId:4,displayName:'',note:'Fang Lair: entrada, alas secas e celas. Materiais provisórios.',encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events});
+ write('Map013',{...read('data/Map001.json'),...terrain(upperPlan,3,2,atlas,c.limit),tilesetId:materialSpec.tilesetId,displayName:'',note:'Fang Lair: entrada, alas secas e celas, atlas da mina V01.',encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events});
  const infos=read('data/MapInfos.json');infos[13]={id:13,expanded:true,name:'M02-06 Fang Lair — celas (provisório)',order:13,parentId:0,scrollX:0,scrollY:0};
  const lower=c.lower,staff=lower.staffPiece,layout=read('doc/mapas/FANG_NIVEL2_M02.json');
  for(const name of ['entry','stair','approach','door','staffPiece']){
@@ -135,8 +156,8 @@ module.exports=function(){
  staffEvent.note='FANG2 MAP1 0x8066 at (64,75): CHAOS1.DFA / ITEM13';
  lowerEvents[staff.eventId]=staffEvent;
  const lowerEntries=addEncounters(lowerPlan,lowerEvents,[{id:'fang.lower.approach.skeleton.01',eventId:3,sourceOriginal:layout.anchors.skeleton}]);
- write('Map'+String(lower.mapId).padStart(3,'0'),{...read('data/Map001.json'),...terrain(lowerPlan.rows,3,2),
-  tilesetId:4,displayName:'',note:'FANG2: escada, alas secas, segundo enigma e sala do fragmento. Tiles provisórios.',
+ write('Map'+String(lower.mapId).padStart(3,'0'),{...read('data/Map001.json'),...terrain(lowerPlan,3,2,atlas,lower.stair),
+  tilesetId:materialSpec.tilesetId,displayName:'',note:'FANG2: escada, alas secas, segundo enigma e sala do fragmento. Atlas da mina V01.',
   encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events:lowerEvents});
  const items=read('data/Items.json');if(items[8]&&!items[8].note.includes('MQ02.gold-key'))throw Error('Item8 occupied');items[8]={...items[1],id:8,name:'Chave dourada de Fang Lair',description:'Chave da Cela 2. Abre o portal junto às celas de Fang Lair. Ícone provisório.',itypeId:2,consumable:false,price:0,note:'<ArenaQuest: MQ02>\n<ArenaUnique>\nMQ02.gold-key / fang.cell2.key; consumo somente no portal.'};
  const visuals=entries=>Object.fromEntries([...new Set(entries.map(e=>e.enemyId))].map(id=>[id,id===hound.enemyId?hound.mapVisual:profile.mapVisuals[id]]));
