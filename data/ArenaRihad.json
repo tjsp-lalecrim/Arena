@@ -50,5 +50,4591 @@
     "exitEventId": 1,
     "queenEventId": 2,
     "destinationId": "stonekeep.entry"
+  },
+  "signage": {
+    "signs": [
+      {
+        "position": [
+          345,
+          9
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          345,
+          16
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          345,
+          26
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          345,
+          36
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          345,
+          46
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          345,
+          52
+        ],
+        "court": 6,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          52
+        ],
+        "court": 6,
+        "gate": 4
+      },
+      {
+        "position": [
+          356,
+          52
+        ],
+        "court": 2,
+        "gate": 4
+      },
+      {
+        "position": [
+          356,
+          62
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          356,
+          72
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          356,
+          82
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          356,
+          92
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          356,
+          102
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          356,
+          112
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          356,
+          118
+        ],
+        "court": 4,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          118
+        ],
+        "court": 2,
+        "gate": 6
+      },
+      {
+        "position": [
+          355,
+          128
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          138
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          148
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          158
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          168
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          178
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          188
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          355,
+          193
+        ],
+        "court": 6,
+        "gate": 8
+      },
+      {
+        "position": [
+          365,
+          193
+        ],
+        "court": 6,
+        "gate": 4
+      },
+      {
+        "position": [
+          368,
+          193
+        ],
+        "court": 2,
+        "gate": 4
+      },
+      {
+        "position": [
+          368,
+          203
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          368,
+          213
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          368,
+          214
+        ],
+        "court": 6,
+        "gate": 8
+      },
+      {
+        "position": [
+          371,
+          214
+        ],
+        "court": 2,
+        "gate": 4
+      },
+      {
+        "position": [
+          371,
+          224
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          371,
+          234
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          371,
+          244
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          371,
+          253
+        ],
+        "court": 6,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          253
+        ],
+        "court": 2,
+        "gate": 4
+      },
+      {
+        "position": [
+          374,
+          263
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          273
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          283
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          293
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          303
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          313
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          323
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          333
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          343
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          353
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          363
+        ],
+        "court": 2,
+        "gate": 8
+      },
+      {
+        "position": [
+          374,
+          373
+        ],
+        "court": 4,
+        "gate": 8
+      },
+      {
+        "position": [
+          364,
+          373
+        ],
+        "court": 4,
+        "gate": 6
+      },
+      {
+        "position": [
+          361,
+          373
+        ],
+        "court": 2,
+        "gate": 6
+      },
+      {
+        "position": [
+          361,
+          383
+        ],
+        "court": 4,
+        "gate": 8
+      }
+    ],
+    "doors": [
+      {
+        "type": "Casa",
+        "tile": [
+          336,
+          14
+        ],
+        "approach": [
+          336,
+          13
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          150,
+          14
+        ],
+        "approach": [
+          150,
+          13
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          117,
+          14
+        ],
+        "approach": [
+          117,
+          13
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          92,
+          15
+        ],
+        "approach": [
+          91,
+          15
+        ]
+      },
+      {
+        "type": "Templo",
+        "tile": [
+          272,
+          15
+        ],
+        "approach": [
+          271,
+          15
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          190,
+          18
+        ],
+        "approach": [
+          191,
+          18
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          125,
+          18
+        ],
+        "approach": [
+          124,
+          18
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          39,
+          17
+        ],
+        "approach": [
+          39,
+          16
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          323,
+          21
+        ],
+        "approach": [
+          322,
+          21
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          307,
+          21
+        ],
+        "approach": [
+          308,
+          21
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          219,
+          20
+        ],
+        "approach": [
+          219,
+          19
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          161,
+          21
+        ],
+        "approach": [
+          160,
+          21
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          108,
+          22
+        ],
+        "approach": [
+          108,
+          23
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          175,
+          24
+        ],
+        "approach": [
+          176,
+          24
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          147,
+          25
+        ],
+        "approach": [
+          147,
+          26
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          84,
+          25
+        ],
+        "approach": [
+          84,
+          26
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          63,
+          23
+        ],
+        "approach": [
+          63,
+          22
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          45,
+          25
+        ],
+        "approach": [
+          45,
+          26
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          300,
+          28
+        ],
+        "approach": [
+          300,
+          29
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          233,
+          27
+        ],
+        "approach": [
+          232,
+          27
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          125,
+          27
+        ],
+        "approach": [
+          124,
+          27
+        ]
+      },
+      {
+        "type": "Templo",
+        "tile": [
+          354,
+          31
+        ],
+        "approach": [
+          354,
+          32
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          237,
+          34
+        ],
+        "approach": [
+          237,
+          35
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          193,
+          33
+        ],
+        "approach": [
+          194,
+          33
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          73,
+          33
+        ],
+        "approach": [
+          74,
+          33
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          288,
+          35
+        ],
+        "approach": [
+          288,
+          34
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          46,
+          36
+        ],
+        "approach": [
+          47,
+          36
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          31,
+          36
+        ],
+        "approach": [
+          32,
+          36
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          323,
+          39
+        ],
+        "approach": [
+          322,
+          39
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          150,
+          40
+        ],
+        "approach": [
+          150,
+          41
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          36,
+          38
+        ],
+        "approach": [
+          36,
+          37
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          313,
+          42
+        ],
+        "approach": [
+          314,
+          42
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          299,
+          42
+        ],
+        "approach": [
+          298,
+          42
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          260,
+          42
+        ],
+        "approach": [
+          259,
+          42
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          334,
+          45
+        ],
+        "approach": [
+          335,
+          45
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          291,
+          46
+        ],
+        "approach": [
+          291,
+          47
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          268,
+          45
+        ],
+        "approach": [
+          269,
+          45
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          190,
+          45
+        ],
+        "approach": [
+          191,
+          45
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          126,
+          46
+        ],
+        "approach": [
+          126,
+          47
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          66,
+          44
+        ],
+        "approach": [
+          66,
+          43
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          237,
+          47
+        ],
+        "approach": [
+          237,
+          46
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          212,
+          48
+        ],
+        "approach": [
+          211,
+          48
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          170,
+          48
+        ],
+        "approach": [
+          169,
+          48
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          147,
+          47
+        ],
+        "approach": [
+          147,
+          46
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          223,
+          51
+        ],
+        "approach": [
+          224,
+          51
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          186,
+          52
+        ],
+        "approach": [
+          186,
+          53
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          144,
+          52
+        ],
+        "approach": [
+          144,
+          53
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          42,
+          50
+        ],
+        "approach": [
+          42,
+          49
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          351,
+          53
+        ],
+        "approach": [
+          351,
+          52
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          295,
+          54
+        ],
+        "approach": [
+          296,
+          54
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          264,
+          53
+        ],
+        "approach": [
+          264,
+          52
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          330,
+          56
+        ],
+        "approach": [
+          330,
+          55
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          159,
+          56
+        ],
+        "approach": [
+          159,
+          55
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          153,
+          56
+        ],
+        "approach": [
+          153,
+          55
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          373,
+          60
+        ],
+        "approach": [
+          374,
+          60
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          281,
+          60
+        ],
+        "approach": [
+          280,
+          60
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          179,
+          60
+        ],
+        "approach": [
+          178,
+          60
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          166,
+          60
+        ],
+        "approach": [
+          167,
+          60
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          88,
+          60
+        ],
+        "approach": [
+          89,
+          60
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          73,
+          60
+        ],
+        "approach": [
+          74,
+          60
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          344,
+          63
+        ],
+        "approach": [
+          343,
+          63
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          336,
+          64
+        ],
+        "approach": [
+          336,
+          65
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          270,
+          64
+        ],
+        "approach": [
+          270,
+          65
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          129,
+          62
+        ],
+        "approach": [
+          129,
+          61
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          110,
+          60
+        ],
+        "approach": [
+          109,
+          60
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          62,
+          63
+        ],
+        "approach": [
+          61,
+          63
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          31,
+          63
+        ],
+        "approach": [
+          32,
+          63
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          366,
+          67
+        ],
+        "approach": [
+          366,
+          68
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          306,
+          67
+        ],
+        "approach": [
+          306,
+          68
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          186,
+          67
+        ],
+        "approach": [
+          186,
+          68
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          147,
+          67
+        ],
+        "approach": [
+          147,
+          68
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          24,
+          67
+        ],
+        "approach": [
+          24,
+          68
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          189,
+          74
+        ],
+        "approach": [
+          189,
+          73
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          171,
+          74
+        ],
+        "approach": [
+          171,
+          73
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          45,
+          74
+        ],
+        "approach": [
+          45,
+          73
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          365,
+          78
+        ],
+        "approach": [
+          364,
+          78
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          306,
+          77
+        ],
+        "approach": [
+          306,
+          76
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          105,
+          77
+        ],
+        "approach": [
+          105,
+          76
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          97,
+          78
+        ],
+        "approach": [
+          98,
+          78
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          291,
+          82
+        ],
+        "approach": [
+          291,
+          83
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          276,
+          82
+        ],
+        "approach": [
+          276,
+          83
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          178,
+          81
+        ],
+        "approach": [
+          179,
+          81
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          156,
+          82
+        ],
+        "approach": [
+          156,
+          83
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          126,
+          82
+        ],
+        "approach": [
+          126,
+          83
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          41,
+          81
+        ],
+        "approach": [
+          40,
+          81
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          109,
+          84
+        ],
+        "approach": [
+          110,
+          84
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          27,
+          88
+        ],
+        "approach": [
+          27,
+          89
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          369,
+          88
+        ],
+        "approach": [
+          369,
+          89
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          285,
+          86
+        ],
+        "approach": [
+          285,
+          85
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          69,
+          88
+        ],
+        "approach": [
+          69,
+          89
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          306,
+          91
+        ],
+        "approach": [
+          306,
+          92
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          279,
+          91
+        ],
+        "approach": [
+          279,
+          92
+        ]
+      },
+      {
+        "type": "Templo",
+        "tile": [
+          345,
+          94
+        ],
+        "approach": [
+          345,
+          95
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          196,
+          93
+        ],
+        "approach": [
+          197,
+          93
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          373,
+          96
+        ],
+        "approach": [
+          374,
+          96
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          295,
+          96
+        ],
+        "approach": [
+          296,
+          96
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          124,
+          96
+        ],
+        "approach": [
+          125,
+          96
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          49,
+          96
+        ],
+        "approach": [
+          50,
+          96
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          37,
+          96
+        ],
+        "approach": [
+          38,
+          96
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          143,
+          99
+        ],
+        "approach": [
+          142,
+          99
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          69,
+          100
+        ],
+        "approach": [
+          69,
+          101
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          23,
+          99
+        ],
+        "approach": [
+          22,
+          99
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          365,
+          102
+        ],
+        "approach": [
+          364,
+          102
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          285,
+          103
+        ],
+        "approach": [
+          285,
+          104
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          186,
+          103
+        ],
+        "approach": [
+          186,
+          104
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          116,
+          102
+        ],
+        "approach": [
+          115,
+          102
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          41,
+          102
+        ],
+        "approach": [
+          40,
+          102
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          270,
+          106
+        ],
+        "approach": [
+          270,
+          107
+        ]
+      },
+      {
+        "type": "Guilda dos Magos",
+        "tile": [
+          225,
+          109
+        ],
+        "approach": [
+          225,
+          110
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          196,
+          108
+        ],
+        "approach": [
+          197,
+          108
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          169,
+          108
+        ],
+        "approach": [
+          170,
+          108
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          124,
+          108
+        ],
+        "approach": [
+          125,
+          108
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          105,
+          109
+        ],
+        "approach": [
+          105,
+          110
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          295,
+          111
+        ],
+        "approach": [
+          296,
+          111
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          23,
+          114
+        ],
+        "approach": [
+          22,
+          114
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          303,
+          116
+        ],
+        "approach": [
+          303,
+          115
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          275,
+          117
+        ],
+        "approach": [
+          274,
+          117
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          271,
+          117
+        ],
+        "approach": [
+          272,
+          117
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          91,
+          117
+        ],
+        "approach": [
+          92,
+          117
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          44,
+          117
+        ],
+        "approach": [
+          43,
+          117
+        ]
+      },
+      {
+        "type": "Templo",
+        "tile": [
+          362,
+          117
+        ],
+        "approach": [
+          361,
+          117
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          344,
+          117
+        ],
+        "approach": [
+          343,
+          117
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          179,
+          120
+        ],
+        "approach": [
+          178,
+          120
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          157,
+          120
+        ],
+        "approach": [
+          158,
+          120
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          143,
+          120
+        ],
+        "approach": [
+          142,
+          120
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          101,
+          120
+        ],
+        "approach": [
+          100,
+          120
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          73,
+          120
+        ],
+        "approach": [
+          74,
+          120
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          320,
+          123
+        ],
+        "approach": [
+          319,
+          123
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          285,
+          124
+        ],
+        "approach": [
+          285,
+          125
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          196,
+          123
+        ],
+        "approach": [
+          197,
+          123
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          129,
+          122
+        ],
+        "approach": [
+          129,
+          121
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          108,
+          124
+        ],
+        "approach": [
+          108,
+          125
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          330,
+          127
+        ],
+        "approach": [
+          330,
+          128
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          165,
+          127
+        ],
+        "approach": [
+          165,
+          128
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          48,
+          127
+        ],
+        "approach": [
+          48,
+          128
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          327,
+          134
+        ],
+        "approach": [
+          327,
+          133
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          288,
+          134
+        ],
+        "approach": [
+          288,
+          133
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          246,
+          134
+        ],
+        "approach": [
+          246,
+          133
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          179,
+          135
+        ],
+        "approach": [
+          178,
+          135
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          320,
+          138
+        ],
+        "approach": [
+          319,
+          138
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          171,
+          137
+        ],
+        "approach": [
+          171,
+          136
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          160,
+          138
+        ],
+        "approach": [
+          161,
+          138
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          25,
+          138
+        ],
+        "approach": [
+          26,
+          138
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          282,
+          142
+        ],
+        "approach": [
+          282,
+          143
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          260,
+          141
+        ],
+        "approach": [
+          259,
+          141
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          253,
+          141
+        ],
+        "approach": [
+          254,
+          141
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          59,
+          141
+        ],
+        "approach": [
+          58,
+          141
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          357,
+          145
+        ],
+        "approach": [
+          357,
+          146
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          299,
+          144
+        ],
+        "approach": [
+          298,
+          144
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          151,
+          144
+        ],
+        "approach": [
+          152,
+          144
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          140,
+          144
+        ],
+        "approach": [
+          139,
+          144
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          20,
+          144
+        ],
+        "approach": [
+          19,
+          144
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          352,
+          147
+        ],
+        "approach": [
+          353,
+          147
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          282,
+          146
+        ],
+        "approach": [
+          282,
+          145
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          271,
+          147
+        ],
+        "approach": [
+          272,
+          147
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          187,
+          147
+        ],
+        "approach": [
+          188,
+          147
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          61,
+          147
+        ],
+        "approach": [
+          62,
+          147
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          345,
+          149
+        ],
+        "approach": [
+          345,
+          148
+        ]
+      },
+      {
+        "type": "Templo",
+        "tile": [
+          216,
+          154
+        ],
+        "approach": [
+          216,
+          155
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          180,
+          151
+        ],
+        "approach": [
+          180,
+          152
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          162,
+          149
+        ],
+        "approach": [
+          162,
+          148
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          110,
+          150
+        ],
+        "approach": [
+          109,
+          150
+        ]
+      },
+      {
+        "type": "Templo",
+        "tile": [
+          93,
+          154
+        ],
+        "approach": [
+          93,
+          155
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          324,
+          152
+        ],
+        "approach": [
+          324,
+          151
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          286,
+          153
+        ],
+        "approach": [
+          287,
+          153
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          155,
+          153
+        ],
+        "approach": [
+          154,
+          153
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          121,
+          153
+        ],
+        "approach": [
+          122,
+          153
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          239,
+          156
+        ],
+        "approach": [
+          238,
+          156
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          357,
+          160
+        ],
+        "approach": [
+          357,
+          161
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          330,
+          160
+        ],
+        "approach": [
+          330,
+          161
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          312,
+          158
+        ],
+        "approach": [
+          312,
+          157
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          264,
+          160
+        ],
+        "approach": [
+          264,
+          161
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          20,
+          159
+        ],
+        "approach": [
+          19,
+          159
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          249,
+          163
+        ],
+        "approach": [
+          249,
+          164
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          156,
+          161
+        ],
+        "approach": [
+          156,
+          160
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          305,
+          165
+        ],
+        "approach": [
+          304,
+          165
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          186,
+          164
+        ],
+        "approach": [
+          186,
+          163
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          145,
+          165
+        ],
+        "approach": [
+          146,
+          165
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          348,
+          167
+        ],
+        "approach": [
+          348,
+          166
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          342,
+          167
+        ],
+        "approach": [
+          342,
+          166
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          264,
+          167
+        ],
+        "approach": [
+          264,
+          166
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          96,
+          167
+        ],
+        "approach": [
+          96,
+          166
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          278,
+          171
+        ],
+        "approach": [
+          277,
+          171
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          250,
+          171
+        ],
+        "approach": [
+          251,
+          171
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          200,
+          171
+        ],
+        "approach": [
+          199,
+          171
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          123,
+          172
+        ],
+        "approach": [
+          123,
+          173
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          114,
+          172
+        ],
+        "approach": [
+          114,
+          173
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          65,
+          168
+        ],
+        "approach": [
+          64,
+          168
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          320,
+          174
+        ],
+        "approach": [
+          319,
+          174
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          261,
+          175
+        ],
+        "approach": [
+          261,
+          176
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          231,
+          173
+        ],
+        "approach": [
+          231,
+          172
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          141,
+          175
+        ],
+        "approach": [
+          141,
+          176
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          100,
+          174
+        ],
+        "approach": [
+          101,
+          174
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          357,
+          178
+        ],
+        "approach": [
+          357,
+          179
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          242,
+          177
+        ],
+        "approach": [
+          241,
+          177
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          182,
+          177
+        ],
+        "approach": [
+          181,
+          177
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          149,
+          177
+        ],
+        "approach": [
+          148,
+          177
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          302,
+          180
+        ],
+        "approach": [
+          301,
+          180
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          288,
+          181
+        ],
+        "approach": [
+          288,
+          182
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          165,
+          179
+        ],
+        "approach": [
+          165,
+          178
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          42,
+          181
+        ],
+        "approach": [
+          42,
+          182
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          342,
+          184
+        ],
+        "approach": [
+          342,
+          185
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          277,
+          183
+        ],
+        "approach": [
+          278,
+          183
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          225,
+          184
+        ],
+        "approach": [
+          225,
+          185
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          207,
+          184
+        ],
+        "approach": [
+          207,
+          185
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          327,
+          187
+        ],
+        "approach": [
+          327,
+          188
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          309,
+          187
+        ],
+        "approach": [
+          309,
+          188
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          144,
+          194
+        ],
+        "approach": [
+          144,
+          193
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          84,
+          194
+        ],
+        "approach": [
+          84,
+          193
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          350,
+          198
+        ],
+        "approach": [
+          349,
+          198
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          176,
+          198
+        ],
+        "approach": [
+          175,
+          198
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          288,
+          202
+        ],
+        "approach": [
+          288,
+          203
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          165,
+          200
+        ],
+        "approach": [
+          165,
+          199
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          151,
+          201
+        ],
+        "approach": [
+          152,
+          201
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          46,
+          201
+        ],
+        "approach": [
+          47,
+          201
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          342,
+          205
+        ],
+        "approach": [
+          342,
+          206
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          304,
+          204
+        ],
+        "approach": [
+          305,
+          204
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          271,
+          204
+        ],
+        "approach": [
+          272,
+          204
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          216,
+          203
+        ],
+        "approach": [
+          216,
+          202
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          126,
+          205
+        ],
+        "approach": [
+          126,
+          206
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          363,
+          208
+        ],
+        "approach": [
+          363,
+          209
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          312,
+          206
+        ],
+        "approach": [
+          312,
+          205
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          192,
+          206
+        ],
+        "approach": [
+          192,
+          205
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          86,
+          207
+        ],
+        "approach": [
+          85,
+          207
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          72,
+          211
+        ],
+        "approach": [
+          72,
+          212
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          233,
+          210
+        ],
+        "approach": [
+          232,
+          210
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          175,
+          210
+        ],
+        "approach": [
+          176,
+          210
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          354,
+          214
+        ],
+        "approach": [
+          354,
+          215
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          213,
+          214
+        ],
+        "approach": [
+          213,
+          215
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          189,
+          214
+        ],
+        "approach": [
+          189,
+          215
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          27,
+          214
+        ],
+        "approach": [
+          27,
+          215
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          308,
+          216
+        ],
+        "approach": [
+          307,
+          216
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          267,
+          217
+        ],
+        "approach": [
+          267,
+          218
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          148,
+          216
+        ],
+        "approach": [
+          149,
+          216
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          120,
+          215
+        ],
+        "approach": [
+          120,
+          214
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          366,
+          218
+        ],
+        "approach": [
+          366,
+          217
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          324,
+          218
+        ],
+        "approach": [
+          324,
+          217
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          297,
+          220
+        ],
+        "approach": [
+          297,
+          221
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          99,
+          220
+        ],
+        "approach": [
+          99,
+          221
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          85,
+          219
+        ],
+        "approach": [
+          86,
+          219
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          189,
+          221
+        ],
+        "approach": [
+          189,
+          220
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          141,
+          223
+        ],
+        "approach": [
+          141,
+          224
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          377,
+          225
+        ],
+        "approach": [
+          376,
+          225
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          352,
+          225
+        ],
+        "approach": [
+          353,
+          225
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          338,
+          225
+        ],
+        "approach": [
+          337,
+          225
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          331,
+          225
+        ],
+        "approach": [
+          332,
+          225
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          237,
+          224
+        ],
+        "approach": [
+          237,
+          223
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          96,
+          224
+        ],
+        "approach": [
+          96,
+          223
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          84,
+          226
+        ],
+        "approach": [
+          84,
+          227
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          369,
+          229
+        ],
+        "approach": [
+          369,
+          230
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          298,
+          228
+        ],
+        "approach": [
+          299,
+          228
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          206,
+          228
+        ],
+        "approach": [
+          205,
+          228
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          167,
+          228
+        ],
+        "approach": [
+          166,
+          228
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          108,
+          229
+        ],
+        "approach": [
+          108,
+          230
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          67,
+          228
+        ],
+        "approach": [
+          68,
+          228
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          291,
+          232
+        ],
+        "approach": [
+          291,
+          233
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          273,
+          230
+        ],
+        "approach": [
+          273,
+          229
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          45,
+          232
+        ],
+        "approach": [
+          45,
+          233
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          355,
+          231
+        ],
+        "approach": [
+          356,
+          231
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          266,
+          234
+        ],
+        "approach": [
+          265,
+          234
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          234,
+          235
+        ],
+        "approach": [
+          234,
+          236
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          182,
+          234
+        ],
+        "approach": [
+          181,
+          234
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          171,
+          235
+        ],
+        "approach": [
+          171,
+          236
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          102,
+          233
+        ],
+        "approach": [
+          102,
+          232
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          313,
+          237
+        ],
+        "approach": [
+          314,
+          237
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          302,
+          237
+        ],
+        "approach": [
+          301,
+          237
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          154,
+          237
+        ],
+        "approach": [
+          155,
+          237
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          120,
+          238
+        ],
+        "approach": [
+          120,
+          239
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          96,
+          238
+        ],
+        "approach": [
+          96,
+          239
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          193,
+          240
+        ],
+        "approach": [
+          194,
+          240
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          171,
+          239
+        ],
+        "approach": [
+          171,
+          238
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          85,
+          240
+        ],
+        "approach": [
+          86,
+          240
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          293,
+          243
+        ],
+        "approach": [
+          292,
+          243
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          282,
+          244
+        ],
+        "approach": [
+          282,
+          245
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          133,
+          243
+        ],
+        "approach": [
+          134,
+          243
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          59,
+          243
+        ],
+        "approach": [
+          58,
+          243
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          342,
+          250
+        ],
+        "approach": [
+          342,
+          251
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          330,
+          250
+        ],
+        "approach": [
+          330,
+          251
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          273,
+          247
+        ],
+        "approach": [
+          273,
+          248
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          165,
+          247
+        ],
+        "approach": [
+          165,
+          248
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          108,
+          247
+        ],
+        "approach": [
+          108,
+          248
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          359,
+          255
+        ],
+        "approach": [
+          358,
+          255
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          225,
+          254
+        ],
+        "approach": [
+          225,
+          253
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          144,
+          254
+        ],
+        "approach": [
+          144,
+          253
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          351,
+          257
+        ],
+        "approach": [
+          351,
+          256
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          340,
+          258
+        ],
+        "approach": [
+          341,
+          258
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          253,
+          261
+        ],
+        "approach": [
+          254,
+          261
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          231,
+          262
+        ],
+        "approach": [
+          231,
+          263
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          163,
+          261
+        ],
+        "approach": [
+          164,
+          261
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          80,
+          261
+        ],
+        "approach": [
+          79,
+          261
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          331,
+          264
+        ],
+        "approach": [
+          332,
+          264
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          320,
+          264
+        ],
+        "approach": [
+          319,
+          264
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          214,
+          264
+        ],
+        "approach": [
+          215,
+          264
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          140,
+          264
+        ],
+        "approach": [
+          139,
+          264
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          120,
+          265
+        ],
+        "approach": [
+          120,
+          266
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          367,
+          267
+        ],
+        "approach": [
+          368,
+          267
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          282,
+          266
+        ],
+        "approach": [
+          282,
+          265
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          242,
+          267
+        ],
+        "approach": [
+          241,
+          267
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          231,
+          266
+        ],
+        "approach": [
+          231,
+          265
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          192,
+          268
+        ],
+        "approach": [
+          192,
+          269
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          360,
+          271
+        ],
+        "approach": [
+          360,
+          272
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          342,
+          269
+        ],
+        "approach": [
+          342,
+          268
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          171,
+          271
+        ],
+        "approach": [
+          171,
+          272
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          101,
+          270
+        ],
+        "approach": [
+          100,
+          270
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          335,
+          273
+        ],
+        "approach": [
+          334,
+          273
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          227,
+          273
+        ],
+        "approach": [
+          226,
+          273
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          307,
+          276
+        ],
+        "approach": [
+          308,
+          276
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          288,
+          275
+        ],
+        "approach": [
+          288,
+          274
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          249,
+          280
+        ],
+        "approach": [
+          249,
+          281
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          201,
+          278
+        ],
+        "approach": [
+          201,
+          277
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          78,
+          280
+        ],
+        "approach": [
+          78,
+          281
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          336,
+          281
+        ],
+        "approach": [
+          336,
+          280
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          307,
+          282
+        ],
+        "approach": [
+          308,
+          282
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          295,
+          282
+        ],
+        "approach": [
+          296,
+          282
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          281,
+          282
+        ],
+        "approach": [
+          280,
+          282
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          130,
+          282
+        ],
+        "approach": [
+          131,
+          282
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          114,
+          286
+        ],
+        "approach": [
+          114,
+          287
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          366,
+          284
+        ],
+        "approach": [
+          366,
+          283
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          325,
+          285
+        ],
+        "approach": [
+          326,
+          285
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          208,
+          285
+        ],
+        "approach": [
+          209,
+          285
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          153,
+          284
+        ],
+        "approach": [
+          153,
+          283
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          249,
+          287
+        ],
+        "approach": [
+          249,
+          286
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          147,
+          289
+        ],
+        "approach": [
+          147,
+          290
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          235,
+          291
+        ],
+        "approach": [
+          236,
+          291
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          126,
+          290
+        ],
+        "approach": [
+          126,
+          289
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          321,
+          295
+        ],
+        "approach": [
+          321,
+          296
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          252,
+          295
+        ],
+        "approach": [
+          252,
+          296
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          186,
+          293
+        ],
+        "approach": [
+          186,
+          292
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          362,
+          297
+        ],
+        "approach": [
+          361,
+          297
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          329,
+          297
+        ],
+        "approach": [
+          328,
+          297
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          264,
+          296
+        ],
+        "approach": [
+          264,
+          295
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          159,
+          298
+        ],
+        "approach": [
+          159,
+          299
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          345,
+          299
+        ],
+        "approach": [
+          345,
+          298
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          288,
+          304
+        ],
+        "approach": [
+          288,
+          305
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          225,
+          301
+        ],
+        "approach": [
+          225,
+          302
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          211,
+          300
+        ],
+        "approach": [
+          212,
+          300
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          178,
+          300
+        ],
+        "approach": [
+          179,
+          300
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          170,
+          300
+        ],
+        "approach": [
+          169,
+          300
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          100,
+          300
+        ],
+        "approach": [
+          101,
+          300
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          268,
+          303
+        ],
+        "approach": [
+          269,
+          303
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          236,
+          303
+        ],
+        "approach": [
+          235,
+          303
+        ]
+      },
+      {
+        "type": "Equipamentos",
+        "tile": [
+          147,
+          307
+        ],
+        "approach": [
+          147,
+          308
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          90,
+          304
+        ],
+        "approach": [
+          90,
+          305
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          204,
+          307
+        ],
+        "approach": [
+          204,
+          308
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          114,
+          307
+        ],
+        "approach": [
+          114,
+          308
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          302,
+          315
+        ],
+        "approach": [
+          301,
+          315
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          246,
+          314
+        ],
+        "approach": [
+          246,
+          313
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          294,
+          317
+        ],
+        "approach": [
+          294,
+          316
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          283,
+          318
+        ],
+        "approach": [
+          284,
+          318
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          231,
+          317
+        ],
+        "approach": [
+          231,
+          316
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          332,
+          324
+        ],
+        "approach": [
+          331,
+          324
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          274,
+          324
+        ],
+        "approach": [
+          275,
+          324
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          263,
+          324
+        ],
+        "approach": [
+          262,
+          324
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          216,
+          325
+        ],
+        "approach": [
+          216,
+          326
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          310,
+          327
+        ],
+        "approach": [
+          311,
+          327
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          253,
+          327
+        ],
+        "approach": [
+          254,
+          327
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          339,
+          331
+        ],
+        "approach": [
+          339,
+          332
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          303,
+          331
+        ],
+        "approach": [
+          303,
+          332
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          285,
+          329
+        ],
+        "approach": [
+          285,
+          328
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          278,
+          333
+        ],
+        "approach": [
+          277,
+          333
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          231,
+          334
+        ],
+        "approach": [
+          231,
+          335
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          225,
+          334
+        ],
+        "approach": [
+          225,
+          335
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          363,
+          335
+        ],
+        "approach": [
+          363,
+          334
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          333,
+          341
+        ],
+        "approach": [
+          333,
+          340
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          279,
+          341
+        ],
+        "approach": [
+          279,
+          340
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          243,
+          341
+        ],
+        "approach": [
+          243,
+          340
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          216,
+          343
+        ],
+        "approach": [
+          216,
+          344
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          309,
+          344
+        ],
+        "approach": [
+          309,
+          343
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          268,
+          345
+        ],
+        "approach": [
+          269,
+          345
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          249,
+          349
+        ],
+        "approach": [
+          249,
+          350
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          228,
+          352
+        ],
+        "approach": [
+          228,
+          353
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          340,
+          354
+        ],
+        "approach": [
+          341,
+          354
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          264,
+          355
+        ],
+        "approach": [
+          264,
+          356
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          221,
+          354
+        ],
+        "approach": [
+          220,
+          354
+        ]
+      },
+      {
+        "type": "Casa nobre",
+        "tile": [
+          356,
+          357
+        ],
+        "approach": [
+          355,
+          357
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          305,
+          357
+        ],
+        "approach": [
+          304,
+          357
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          272,
+          357
+        ],
+        "approach": [
+          271,
+          357
+        ]
+      },
+      {
+        "type": "Taverna",
+        "tile": [
+          216,
+          358
+        ],
+        "approach": [
+          216,
+          359
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          253,
+          363
+        ],
+        "approach": [
+          254,
+          363
+        ]
+      },
+      {
+        "type": "Casa",
+        "tile": [
+          246,
+          367
+        ],
+        "approach": [
+          246,
+          368
+        ]
+      }
+    ]
   }
 }

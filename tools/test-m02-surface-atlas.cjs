@@ -1,5 +1,5 @@
 // Confirm that a visual atlas replacement preserves every native movement flag,
-// non-ground layer, event, and map property used by the existing quest saves.
+// non-ground layer (except documented blocked facade overlays), event, and map property used by the existing quest saves.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -26,9 +26,28 @@ for (const id of maps) {
     const before = priorSets[wasSet], after = currentSets[nowSet], layer = map.width * map.height;
     assert.deepEqual(after.tilesetNames.slice(0,6),before.tilesetNames.slice(0,6),file);
     assert.equal(after.tilesetNames[6],cfg.sheet,file);
+    if (scope === 'rihad') {
+        const plan = read('doc/mapas/RIHAD_SINALIZACAO_M02.json');
+        const overlays = new Map();
+        for (const { tile:[x,y], side, approach:[ax,ay] } of plan.doors) {
+            assert.equal(was[5*layer + ay*map.width+ax],4);
+            overlays.set(y*map.width+x, side === 2 ? 381 : side === 8 ? 383 : 382);
+            if (side === 2) overlays.set((y-1)*map.width+x,380);
+        }
+        for (const [i,tile] of overlays) {
+            assert.equal(was[layer+i],0);
+            assert.equal(was[5*layer+i],1);
+            assert.equal(after.flags[tile], before.flags[was[i]]);
+            was[layer+i] = tile;
+        }
+        const c = read('data/ArenaRihad.json').signage;
+        assert.deepEqual(c.signs, plan.signs);
+        assert.deepEqual(c.doors, plan.doors.map(({type,tile,approach}) => ({type,tile,approach})));
+    }
     assert.deepEqual(now.slice(layer),was.slice(layer),file);
     for (let i=0;i<layer;i++) {
         assert.equal(after.flags[now[i]],before.flags[was[i]],file+' at index '+i);
     }
-    console.log('PASS '+file+': ground presentation only; preserved events, regions, objects, and native tile flags');
+    console.log('PASS '+file+': preserved events, regions and native passage flags' +
+        (scope === 'rihad' ? '; decorative facade panels only on existing walls' : ''));
 }

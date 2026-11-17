@@ -2,7 +2,7 @@
   "tool": "ImageGen integrado e exportação Pillow",
   "masterSha256": "d3fc927d3cb964f8a85171069d18f1ee34468f6017d0b9f071940960c866973e",
   "output": "img/tilesets/Arena_Rihad_Exterior_V01_C.png",
-  "sha256": "0d41eb0e30fda6df2575aace916f44617f9d56b1ecdba4571bd165a395cf139c",
+  "sha256": "edf82c0d63d859fdebe00832df4fe7395c3b6242e736b6753bdf569d0b625716",
   "size": [
     384,
     768
@@ -629,6 +629,22 @@
       "l",
       2,
       "right"
+    ],
+    [
+      "closedDoor",
+      "lintel"
+    ],
+    [
+      "closedDoor",
+      "leaf"
+    ],
+    [
+      "closedDoor",
+      "side"
+    ],
+    [
+      "closedDoor",
+      "back"
     ]
   ]
 }

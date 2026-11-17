@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "notReady": [
-    "Antes de tratar de Fang Lair na corte, busque orientação com o informante da esplanada e recupere suas forças."
+    "Antes da audiência, procure o informante na esplanada perto do portão urbano. Siga as placas para voltar ao portão."
   ],
   "offer": [
     "Blubamka: Boas-vindas a Rihad. Sou a rainha Blubamka e concordo em lhe falar de Fang Lair, em troca de um favor.",
@@ -11,13 +11,13 @@
   ],
   "accepted": [
     "Excelente. Stonekeep fica perto de Rihad. Tenha cuidado: Golthog é astuto e maligno. Há até rumores de que seja um necromante a serviço do Underking. Quando tiver o pergaminho, volte aqui e descobrirei a localização de Fang Lair para você.",
-    "Stonekeep é agora um destino conhecido. Viaje pela estrada ao sul da esplanada e volte à corte com o pergaminho."
+    "Stonekeep é agora um destino conhecido. Siga as placas até o portão urbano, ao norte, para viajar. Volte à corte com o pergaminho."
   ],
   "decline": [
     "Lamento que não possa ajudar agora. Se mudar de ideia, volte a perguntar sobre Fang Lair. Ficarei satisfeita com outra oportunidade de recuperar o pergaminho."
   ],
   "pending": [
-    "Nosso acordo continua: recupere o pergaminho em Stonekeep e volte à corte. Siga pela estrada ao sul da esplanada para viajar."
+    "Nosso acordo continua: recupere o pergaminho em Stonekeep e volte à corte. Para viajar, siga as placas até o portão urbano, ao norte."
   ],
   "future": [
     "A entrega do pergaminho será integrada no próximo recorte. Seu progresso foi preservado; nenhuma entrega, recompensa ou conclusão será simulada nesta versão."
@@ -44,10 +44,10 @@
     "delivered": [
       "Blubamka: Você recuperou o pergaminho! Espero que também tenha enviado Golthog para uma sepultura precoce. De todo modo, cumprirei minha parte do acordo.",
       "Blubamka chama um cortesão, que se curva e traz uma pena. Ela examina o pergaminho e indica a localização de Fang Lair, em Hammerfell.",
-      "Fang Lair é agora um destino conhecido. Você pode viajar pelo portão de Rihad."
+      "Fang Lair é agora um destino conhecido. Siga as placas até o portão urbano, ao norte, para viajar."
     ],
     "repeat": [
-      "Nossa troca está concluída. Já lhe indiquei a localização de Fang Lair, em Hammerfell. Você pode viajar pelo portão de Rihad."
+      "Nossa troca está concluída. Já lhe indiquei a localização de Fang Lair, em Hammerfell. Siga as placas até o portão urbano, ao norte, para viajar."
     ],
     "blocked": [
       "Não foi possível confirmar a entrega do pergaminho. Nenhum item ou progresso foi alterado. Volte ao título e carregue sua partida para tentar novamente."

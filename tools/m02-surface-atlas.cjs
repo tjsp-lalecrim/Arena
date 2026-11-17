@@ -24,14 +24,21 @@ module.exports = function installSurfaceAtlas(config) {
     // Four floor quadrants repeat in a 2×2 pattern. The nine wall pieces
     // encode cap/upper face/lower face, each with a plain/left/right edge.
     const wallStart = floors.length * 4;
-    if (wallStart + walls.length * 9 > 128) throw Error('Atlas C excede o bloco nativo de oito colunas.');
+    const doorStart = wallStart + walls.length * 9;
+    const closedDoors = config.closedDoors || [];
+    if (doorStart + closedDoors.length > 128) throw Error('Atlas C excede o bloco nativo de oito colunas.');
     spec.flags.fill(base.flags[1], firstTile, firstTile + wallStart);
-    spec.flags.fill(base.flags[4], firstTile + wallStart, firstTile + wallStart + walls.length * 9);
+    spec.flags.fill(base.flags[4], firstTile + wallStart, firstTile + doorStart + closedDoors.length);
     list[spec.id] = spec;
     const json = '[\n' + list.map(entry => JSON.stringify(entry)).join(',\n') + '\n]\n';
     // Idempotent when the city and both mine levels rebuild in the same pipeline.
     if (fs.readFileSync(file, 'utf8') !== json) fs.writeFileSync(file, json);
     return {
+        closedDoor(piece) {
+            const index = closedDoors.indexOf(piece);
+            if (index < 0) throw Error('Peça de porta fechada desconhecida: ' + piece);
+            return firstTile + doorStart + index;
+        },
         floor(family, x, y) {
             const index = floors.indexOf(family);
             if (index < 0) throw Error('Família de piso desconhecida: ' + family);

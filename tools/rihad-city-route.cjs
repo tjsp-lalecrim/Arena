@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const source = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
+const signage = require('../doc/mapas/RIHAD_SINALIZACAO_M02.json');
 const materialPlan = require('../doc/mapas/RIHAD_MATERIAIS_M02.json');
 const materialSpec = require('../doc/arte/m02-tilesets/rihad.json');
 const installAtlas = require('./m02-surface-atlas.cjs');
@@ -16,7 +17,7 @@ function position(name) {
 
 function build(map, config, recovery) {
     const { rows, scale, margin } = source;
-    if (materialPlan.map1Sha256 !== source.map1Sha256 ||
+    if (signage.map1Sha256 !== source.map1Sha256 || materialPlan.map1Sha256 !== source.map1Sha256 ||
         materialPlan.rows.length !== rows.length ||
         materialPlan.rows.some((row, i) => row.length !== rows[i].length)) {
         throw Error('Materiais de Rihad não correspondem à planta urbana.');
@@ -79,6 +80,26 @@ function build(map, config, recovery) {
         data[(height + rest.y + dy) * width + rest.x + dx] = 68 + dx + 1 + (dy + 1) * 8;
     }
     const arrival = position('arrival');
+    function putDoor(x, y, piece) {
+        const index = y * width + x;
+        if (!isSolid(cell(x, y)) || data[width * height + index]) {
+            throw Error('Sobreposição de porta decorativa em Rihad: ' + x + ',' + y);
+        }
+        data[width * height + index] = atlas.closedDoor(piece);
+    }
+    for (const { tile: [x, y], approach, side } of signage.doors) {
+        if (isSolid(cell(...approach))) throw Error('Placa sem acesso em Rihad: ' + approach.join(','));
+        if (side === 2) {
+            putDoor(x, y - 1, 'lintel');
+            putDoor(x, y, 'leaf');
+        } else {
+            putDoor(x, y, side === 8 ? 'back' : 'side');
+        }
+    }
+    config.signage = {
+        signs: signage.signs,
+        doors: signage.doors.map(({ type, tile, approach }) => ({ type, tile, approach })),
+    };
     Object.assign(map.events[1], position('informant'));
     Object.assign(map.events[2], rest);
     Object.assign(map.events[3], position('road'));

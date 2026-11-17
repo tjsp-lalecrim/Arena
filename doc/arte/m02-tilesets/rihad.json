@@ -24,5 +24,11 @@
     "t": 7,
     "i": 14,
     "l": 13
-  }
+  },
+  "closedDoors": [
+    "lintel",
+    "leaf",
+    "side",
+    "back"
+  ]
 }
