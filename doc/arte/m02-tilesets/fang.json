@@ -1,0 +1,26 @@
+{
+  "name": "Fang Lair — mina V01",
+  "sheet": "Arena_Fang_Mine_V01_C",
+  "tilesetId": 7,
+  "master": "art/masters/fang-mine-v01/atlas-source.png",
+  "floors": {
+    "gravel": 0,
+    "earth": 1,
+    "cut": 2,
+    "stair": 12
+  },
+  "wallCap": 3,
+  "trim": 13,
+  "walls": {
+    "a": 4,
+    "b": 5,
+    "c": 6,
+    "d": 7,
+    "e": 8,
+    "f": 9,
+    "A": 10,
+    "B": 11,
+    "C": 11,
+    "x": 15
+  }
+}

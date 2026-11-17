@@ -2,7 +2,7 @@
 
 ## Roteiro integrado de MQ02 no Chrome
 
-**Referência de jogo:** `main` com os [Hell Hounds de Fang Lair](FANG_CELAS_M02_06A.md#hell-hounds-da-sala-do-fragmento), sobre a integração `f78de8d`. Avaliação manual pendente. As verificações automatizadas existentes em Chrome isolado cobrem [Rihad, corte e Stonekeep](evidencias/m02-rihad-corte/resultado.json) e [Fang Lair, Hell Hounds, retaliação e retorno](evidencias/m02-fang-hell-hound/fang-lair.json).
+**Referência de jogo:** `main` com os [Hell Hounds de Fang Lair](FANG_CELAS_M02_06A.md#hell-hounds-da-sala-do-fragmento), sobre a integração `f78de8d`. Avaliação manual pendente. As verificações automatizadas existentes em Chrome isolado cobrem [Rihad, corte e Stonekeep](evidencias/m02-rihad-atlas/resultado.json) e [Fang Lair, Hell Hounds, retaliação e retorno](evidencias/m02-fang-atlas/fang-lair.json).
 
 Abra o [Arena local](http://127.0.0.1:8774/) no Chrome desktop. Se o servidor estiver parado, inicie-o pelo [procedimento local](EXECUCAO_LOCAL.md#iniciar-acessar-e-encerrar). Use o fluxo normal da campanha. Para preservar a partida de origem, use slots livres para os pontos de retomada e mantenha o mesmo endereço e perfil do Chrome. Para conferir um save, volte ao título, recarregue a página com F5 e escolha **Continuar** no slot de teste.
 
@@ -19,7 +19,7 @@ Abra o [Arena local](http://127.0.0.1:8774/) no Chrome desktop. Se o servidor es
 
 Ao relatar um problema, indique o passo, a área ou ponto do mapa, a última ação, o esperado e o observado. Se puder, guarde o slot anterior e anexe uma captura. Para a porta de Stonekeep ainda sem localização, uma captura do entorno e a mensagem exibida ajudam a identificar o evento. Correções que afetem a campanha serão reproduzidas a partir desse relato, verificadas e promovidas pelo [fluxo do projeto](DESENVOLVIMENTO_E_VERSIONAMENTO.md).
 
-A cobertura restante dos mapas, os materiais definitivos e as ilustrações por bloco continuam no [backlog do M02](BACKLOG_M02.md). Release e GitHub Pages seguem em etapas próprias.
+Avalie também os novos atlas no mesmo percurso: em Rihad, confira rua, passeio, portões, um arco de jardim e a chegada à corte. Em Fang Lair, confira a entrada, as celas, a escada e a sala do fragmento, incluindo a leitura do personagem sobre o piso. A cobertura restante dos mapas, os materiais ainda provisórios e as ilustrações por bloco continuam no [backlog do M02](BACKLOG_M02.md). Release e GitHub Pages seguem em etapas próprias.
 
 ## Histórico da especificação e das entregas
 
