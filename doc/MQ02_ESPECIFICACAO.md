@@ -4,7 +4,7 @@
 
 **Referência de jogo:** `main` com a [orientação de Rihad](CHEGADA_RIHAD_M02_03A.md#orientação-e-fachadas-de-rihad) e os [Hell Hounds de Fang Lair](FANG_CELAS_M02_06A.md#hell-hounds-da-sala-do-fragmento), sobre a integração `f78de8d`. Avaliação manual pendente. As verificações automatizadas existentes em Chrome isolado cobrem [Rihad, corte e Stonekeep](evidencias/m02-rihad-orientacao/resultado.json) e [Fang Lair, Hell Hounds, retaliação e retorno](evidencias/m02-fang-atlas/fang-lair.json).
 
-Para avaliar a seta **Audiência** no passo 2, use a branch `feature/m02-rihad-marcador`.
+A seta **Audiência** está disponível na `main`. A avaliação manual do piloto faz parte do passo 2.
 
 Abra o [Arena local](http://127.0.0.1:8774/) no Chrome desktop. Se o servidor estiver parado, inicie-o pelo [procedimento local](EXECUCAO_LOCAL.md#iniciar-acessar-e-encerrar). Use o fluxo normal da campanha. Para preservar a partida de origem, use slots livres para os pontos de retomada e mantenha o mesmo endereço e perfil do Chrome. Para conferir um save, volte ao título, recarregue a página com F5 e escolha **Continuar** no slot de teste.
 
