@@ -34,14 +34,21 @@ var ArenaRihad;
   if(!here()||$gameParty.inBattle()||$gameMessage.isBusy()||!(interpreter instanceof Game_Interpreter))return false;
   texts.forEach(function(t){$gameMessage.add(t);});interpreter.setWaitMode('message');return true;
  }
+ function guidance(){
+  var q=ArenaQuests.snapshot('MQ02'),stage=q&&q.stage||0;
+  if(stage<20)return 'square';
+  // The court gives the assignment and later receives the recovered parchment.
+  if(stage<40||stage>=50&&stage<60)return 'court';
+  return 'gate';
+ }
  ArenaRihad={
   inform:function(i){
-   var q=ArenaQuests.snapshot('MQ02'),stage=q&&q.stage||0;
-   if(stage<20)return message(i,['Você chegou a Rihad, no sul de Hammerfell.','Há um lugar de repouso na esplanada, a leste.',
-    'Há ratos nos arredores, pela passagem ao lado do portão.',
-    'Busque notícias entre os moradores antes da audiência.']);
-   return message(i,['Procura notícias de Fang Lair? Pergunte na corte.','O palácio fica junto à muralha da cidade.',
-    'Siga para o sul pelo interior da cidade até o portão da corte.']);
+   var way=guidance();
+   if(way==='square')return message(i,['Ao sul do portão, siga o passeio escuro até a esplanada. O leito fica a leste do passeio.',
+    'Para enfrentar os ratos, procure a passagem dos Arredores junto ao portão.']);
+   if(way==='court')return message(i,['Siga as placas da Corte pelas ruas ao sul.',
+    'Junto à muralha sul, passe pela grade e entre pela porta de madeira.']);
+   return message(i,['Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte.']);
   },
   arrivalNotice:function(i){return message(i,['Você chegou a Rihad, no sul de Hammerfell.']);},
   preview:function(){return ArenaContinuation.previewArrival($arenaRihad.arrival,true);},
@@ -96,6 +103,15 @@ var ArenaRihad;
   this._rihadCaption=new Sprite(new Bitmap(Graphics.boxWidth,76));this.addChild(this._rihadCaption);
   this._rihadMarkers=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._rihadMarkers);
  }};
+ var arrows={2:'↓',4:'←',6:'→',8:'↑'};
+ function nearby(entries,position,range){
+  var closest=null;
+  entries.forEach(function(entry){
+   var p=entry[position],distance=$gameMap.distance(p[0],p[1],$gamePlayer.x,$gamePlayer.y);
+   if(distance<=range){closest=entry;range=distance-1;}
+  });
+  return closest;
+ }
  var update=Scene_Map.prototype.update;
  Scene_Map.prototype.update=function(){update.apply(this,arguments);if(!(here()||outside())||!this._rihadCaption)return;
   var b=this._rihadCaption.bitmap;b.clear();b.fillRect(0,0,b.width,72,'rgba(12,16,18,0.92)');b.fontSize=23;b.textColor='#e1d2ae';
@@ -108,14 +124,28 @@ var ArenaRihad;
    var informant=$gameMap.event(c.informantEventId),rest=$gameMap.event(2);
    var road=$gameMap.event(3),outskirts=$gameMap.event(c.outskirts.accessEventId);
    markers=[[informant.x,informant.y,'Informante'],[rest.x,rest.y,'Repouso'],
-    [road.x,road.y,window.ArenaFangCells&&ArenaFangCells.destination().available?'Estrada · Viagens':ArenaStonekeep.known()?'Estrada · Stonekeep':'Portão urbano',76],
+    [road.x,road.y,'Portão urbano',76],
     [outskirts.x,outskirts.y,'Arredores',112]];
+   var way=guidance(), sign=nearby(c.signage.signs,'position',5);
+   if(sign&&way==='square'&&sign.position[1]<=16)markers.unshift([sign.position[0],sign.position[1],'↓ Esplanada',18,'#223932']);
+   if(sign&&way!=='square'){
+    var court=$gameMap.event(c.court.accessEventId);
+    var nearCourt=$gameMap.distance(sign.position[0],sign.position[1],court.x,court.y)<=3;
+    var atCourt=way==='court'&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,court.x,court.y)<=1;
+    if(!atCourt)markers.unshift([sign.position[0],sign.position[1],arrows[sign[way]]+' '+(way==='court'?'Corte':'Portão urbano'),nearCourt?-76:18,'#223932']);
+   }
+   var door=nearby(c.signage.doors,'approach',2);
+   if(door)markers.push([door.tile[0],door.tile[1],door.type+' · Fechado',-46,'#3d3028']);
   }
+  var boxes=[];
   markers.forEach(function(p){
    var px=$gameMap.adjustX(p[0])*48+24,y=$gameMap.adjustY(p[1])*48+(p[3]||-30);
    if(px<0||px>Graphics.boxWidth||y<72||y>Graphics.boxHeight-26)return;
-   var x=Math.max(8,Math.min(Graphics.boxWidth-224,px-108));
-   b.fillRect(x,y,216,26,'rgba(12,16,18,0.82)');b.drawText(p[2],x+4,y,208,26,'center');
+   var width=Math.ceil(b.measureTextWidth(p[2]))+20;
+   var x=Math.max(8,Math.min(Graphics.boxWidth-width-8,px-width/2));
+   if(boxes.some(function(r){return x<r.right+4&&x+width+4>r.left&&y<r.bottom+4&&y+30>r.top;}))return;
+   boxes.push({left:x,right:x+width,top:y,bottom:y+26});
+   b.fillRect(x,y,width,26,p[4]||'rgba(12,16,18,0.82)');b.drawText(p[2],x+6,y,width-12,26,'center');
   });
   this._rihadMarkers.visible=!$gameMessage.isBusy();
  };

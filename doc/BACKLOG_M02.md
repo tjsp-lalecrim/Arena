@@ -14,6 +14,9 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Promoção de trechos.** Aplicar o fluxo de entregas integradas aprovado no M02-03E2. Registrar verificações essenciais, ressalvas e cobertura manual na [matriz do percurso](STONEKEEP_M02_04.md).
 
+**Orientação em Rihad.** Falas do informante e de Blubamka, placas de percurso e 380 fachadas sinalizadas no Map009. A distinção visual de portas fechadas e entradas da campanha entra no próximo teste integrado. A [comparação de bússola](CHEGADA_RIHAD_M02_03A.md#estudo-de-bússola) recomenda, se aprovada, uma amostra apenas da esplanada à grade da corte.
+
+
 **M02-03E2.** O portão urbano, a esplanada e a corte estão ligados na campanha. A expansão abre 30 arcos originais de jardim em seis quarteirões e confirma os dois vãos sem travessia. O salão de audiência usa PALACE2, com os materiais atuais provisórios. Avaliação manual no próximo teste integrado de MQ02. O [atlas exterior V01](CHEGADA_RIHAD_M02_03A.md#atlas-exterior-v01) cobre a rota e as famílias dos quarteirões. Módulos específicos da corte continuam no inventário. M02-03E1 identificou a composição e as famílias de assets. Fang Lair tem Hell Hound integrado e Fantasma ainda com combate e patrulha pendentes. O servo permanece incerto. [Rihad](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual) · [Assets](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) · [Blocos narrativos](CAMPANHA_PRINCIPAL.md#inventário-textual)
 
 ## Histórico42b857f — piloto de batalha do orc

@@ -7,9 +7,10 @@ const { coverage, url } = require('./test-stonekeep-coverage.cjs');
 const battleControls = require('./battle-test-controls.cjs');
 
 const root = path.resolve(__dirname, '..');
-const output = path.join(root, 'doc/evidencias/m02-rihad-atlas/resultado.json');
+const output = path.join(root, 'doc/evidencias/m02-rihad-orientacao/resultado.json');
 const rihadTileset = require('../doc/arte/m02-tilesets/rihad.json').tilesetId;
 const { gardenAccess } = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
+const signage = require('../doc/mapas/RIHAD_SINALIZACAO_M02.json');
 const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
     .map(name => path.join(root, 'data', name + '.json'));
 const canonical = file => fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
@@ -58,15 +59,17 @@ async function run() {
             resources: ArenaResources.snapshot(), points: ArenaAttributes.snapshot(),
             items: $gameParty._items, gold: $gameParty.gold(), exp: $gameActors.actor(1).currentExp()
         }));
-        async function settle(expectChoice = false) {
+        async function settle(expectChoice = false, messages) {
             for (let i = 0; i < 420; i++) {
-                const status = await page.evaluate(() => {
+                const status = await page.evaluate(collectText => {
                     const w = SceneManager._scene._messageWindow;
                     if(w?._textState)w._showFast=true;
                     return { busy: $gameMessage.isBusy() || $gameMap.isEventRunning(),
                         paused: w?.pause && !w._waitCount && !w._choiceWindow.active,
-                        choice: w?._choiceWindow.isOpenAndActive() && !w._choiceWindow._arenaCourtAwaitNeutral };
-                });
+                        choice: w?._choiceWindow.isOpenAndActive() && !w._choiceWindow._arenaCourtAwaitNeutral,
+                        text: collectText ? $gameMessage.allText() : null };
+                }, !!messages);
+                if (messages && status.text) messages.add(status.text);
                 if (expectChoice && status.choice) return;
                 if (!expectChoice && !status.busy) return;
                 if (status.paused && !status.choice) await key('Enter');
@@ -191,6 +194,50 @@ async function run() {
             return [e.x, e.y + dy];
         }, {id, dy});
         const position = () => page.evaluate(() => [$gamePlayer.x, $gamePlayer.y]);
+        async function hasMarker(text) {
+            const found = await page.evaluate(text => {
+                const scene = SceneManager._scene;
+                const bitmap = scene._rihadMarkers.bitmap;
+                const draw = bitmap.drawText;
+                let found = false;
+                bitmap.drawText = function(label) {
+                    if(label === text) found = true;
+                    return draw.apply(this, arguments);
+                };
+                try {
+                    $gamePlayer.center($gamePlayer.x,$gamePlayer.y);
+                    scene.update();
+                    return found && scene._rihadMarkers.visible;
+                } finally {
+                    delete bitmap.drawText;
+                }
+            }, text);
+            assert(found, 'Placa ausente em '+await position()+': '+text);
+        }
+        async function followCity(reverse = false) {
+            const points = [signage.arrival, ...signage.routeCorners, signage.court];
+            if (reverse) points.reverse();
+            await walk(points[0]);
+            const label = reverse ? 'Portão urbano' : 'Corte';
+            let moves = 0;
+            for (let i=1; i<points.length; i++) {
+                const [x,y] = points[i-1], [nx,ny] = points[i];
+                assert(x===nx || y===ny);
+                const direction = x<nx?6:x>nx?4:y<ny?2:8;
+                const distance = Math.abs(x-nx)+Math.abs(y-ny);
+                if (i > 1) await hasMarker(({2:'↓',4:'←',6:'→',8:'↑'})[direction]+' '+label);
+                await page.evaluate(({direction,distance}) => {
+                    for (let step=0; step<distance; step++) {
+                        $gamePlayer.moveStraight(direction);
+                        if (!$gamePlayer.isMovementSucceeded()) throw Error('Rota sinalizada interrompida');
+                        while ($gamePlayer.isMoving()) $gamePlayer.updateMove();
+                    }
+                }, {direction,distance});
+                moves += distance;
+            }
+            assert.deepEqual(await position(), points.at(-1));
+            return moves;
+        }
         async function approachCourt() {
             const steps = await walk(await eventPosition(5, -1));
             await key('ArrowDown');
@@ -267,7 +314,6 @@ async function run() {
         assert.deepEqual(await position(), city.arrival);
         assert.equal(city.arrivalSideWall, true);
         assert.equal(await page.evaluate(() => $gameMap.tilesetId()), rihadTileset);
-        await captureCity('portao');
         await walk(await eventPosition(4, 1));
         await key('ArrowUp');
         await map(10);
@@ -291,8 +337,14 @@ async function run() {
         assert.equal(await stage(), 20);
         await walk(await eventPosition(1, 1));
         await talk(8);
+        const instruction = await page.evaluate(() => $gameMessage.allText());
+        assert.match(instruction, /muralha sul.*grade e entre pela porta de madeira/);
+        assert.doesNotMatch(instruction, /Fang Lair|Stonekeep/);
         await settle();
         assert.equal(await stage(), 30);
+        await walk(signage.arrival);
+        await hasMarker('↓ Corte');
+        await walk(await eventPosition(1, 1));
         const garden = await page.evaluate(({ passages, deadEnds }) => {
             const valid = (x, y, d) => $gamePlayer.isMapPassable(x, y, d);
             const toMap = ([x, y]) => [3 + 3 * (127 - x), 3 + 3 * y];
@@ -336,7 +388,6 @@ async function run() {
         const [x, y] = [345, 108];
         await walk([x,y+2]);
         const beforeGarden = await state();
-        await captureCity('jardim');
         for (let step = 0; step < 4; step++) await key('ArrowUp');
         assert.deepEqual(await position(), [x,y-2]);
         await save(20);
@@ -346,9 +397,21 @@ async function run() {
         for (let step = 0; step < 4; step++) await key('ArrowDown');
         assert.deepEqual(await position(), [x,y+2]);
         checks.push('30 vãos de jardim conectados ao portão, só nos lados confirmados. Travessia por teclado e save/load no pátio do templo sem mudar MQ02.');
-        await walk(await eventPosition(5, -1));
-        await captureCity('corte-exterior');
-        const citySteps = await approachCourt();
+        const tavern = signage.doors.find(door => door.type === 'Taverna');
+        await walk(tavern.approach);
+        await hasMarker('Taverna · Fechado');
+        const beforeClosed = await state();
+        await key(({2:'ArrowUp',4:'ArrowRight',6:'ArrowLeft',8:'ArrowDown'})[tavern.side]);
+        assert.deepEqual(await position(), tavern.approach);
+        await key('Enter');
+        assert.deepEqual(await state(), beforeClosed);
+        assert.equal(await page.evaluate(() => $gameMap.mapId()), 9);
+        await page.setViewportSize({width:640,height:520});
+        await captureCity('porta-taverna');
+        await hasMarker('Taverna · Fechado');
+        await page.setViewportSize({width:1080,height:850});
+        const citySteps = await followCity();
+        await approachCourt();
         const inCourt = await state();
         const courtEntry = await position();
         const oldCourt = JSON.parse(execFileSync('git', ['show', '84176ea:data/Map011.json'], { cwd: root, encoding: 'utf8' }));
@@ -371,12 +434,18 @@ async function run() {
         await walk(await eventPosition(2, 1));
         await talk(8);
         await chooseFirst();
-        await settle();
+        const returnInstruction = new Set();
+        await settle(false, returnInstruction);
+        assert.match([...returnInstruction].join(' ').replace(/\s+/g,' '), /portão urbano, ao norte/);
         assert.equal(await stage(), 40);
         console.log('PASS pedido da corte');
         await walk(await eventPosition(1, -1));
         await key('ArrowDown');
         await map(9);
+        const towardGate = await followCity(true);
+        assert.equal(towardGate,citySteps);
+        await captureCity('orientacao-portao');
+        checks.push('Percurso sinalizado em ambas as direções, '+citySteps+' passos por sentido com placas conferidas nas mudanças de direção; porta da taverna visível em janela menor e sem transferência.');
         const beforeTravel = await state();
         await travel(15);
         assert.equal(await page.evaluate(() => ArenaCampaignConfig.area('stonekeep').config.mapId), 15);
@@ -471,7 +540,6 @@ async function run() {
         await save(18);
         await reload(18, 9);
         assert.equal(await page.evaluate(() => $gameMap.tilesetId()), rihadTileset);
-        await captureCity('esplanada');
         checks.push('Save pré-atlas no Map009 adota o C atual sem remapear posição ou estado.');
         assert.deepEqual(await position(), citySavePosition);
         assert.deepEqual(await state(), beforeCitySave);
@@ -552,7 +620,7 @@ async function run() {
         assert.deepEqual(errors, []);
         assert.deepEqual(missing, []);
         fs.mkdirSync(path.dirname(output), { recursive: true });
-        fs.writeFileSync(output, JSON.stringify({ base:'f87f2f0', browser:browser.version(), checks, garden,
+        fs.writeFileSync(output, JSON.stringify({ base:'12a0713', browser:browser.version(), checks, garden,
             topology, steps:{ outward, home, citySteps, cityReturnSteps }, routeDoors, sample:{ enemy, treasure:treasure.id, refuge:refuge.id },
             errors, missing }, null, 2) + '\n');
         console.log(checks.join('\n'));
