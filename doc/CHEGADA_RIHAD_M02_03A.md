@@ -23,6 +23,23 @@ Os dois vãos de jardim são `0x913B` (`GARDENGD.IMG`, atravessável) entre sebe
 
 O Map011 usa o salão de `PALACE2.MIF`. O acesso de Rihad segue pelo mesmo portão urbano. [Seleção, planta e limites da corte](CORTE_RIHAD_M02_03D.md#interior-palace2--referência-vigente)
 
+## Orientação e fachadas de Rihad
+
+O informante indica o passeio escuro, o repouso e os Arredores antes da visão. Depois, aponta a corte na muralha sul, com a grade e a porta de madeira como referências. Ao aceitar o pedido ou entregar o pergaminho, Blubamka indica o portão urbano ao **norte**. As placas de percurso estão em 50 posições fixas e indicam Esplanada, Corte ou Portão urbano conforme MQ02. A oferta de viagens continua condicionada pelo progresso. Veja as [falas em jogo](CAMPANHA_PRINCIPAL.md#inventário-textual) e o [roteiro integrado](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome).
+
+A [matriz das fachadas e placas](mapas/RIHAD_SINALIZACAO_M02.json) cruza os registros MAP1 da composição `CITYW1.MIF` + 32 quarteirões com os recursos de `DCN.INF`. Há 380 portas decorativas acessíveis pelo lado da rua: 319 casas, 25 casas nobres, 16 de equipamentos, 13 tavernas, seis templos e uma Guilda dos Magos. São tipos do registro, sem atribuição de nomes próprios. Em 35 pontos comerciais, a placa original ocupa uma célula diferente da porta. Nesses casos, a fachada foi projetada sobre o ponto sólido adjacente à rua, conservando a associação local. A placa próxima explicita **Fechado**. Casas e estabelecimentos continuam fora do recorte de interiores.
+
+A exportação das quatro peças de porta reutiliza textura e moldura do mestre exterior. Para reconstruir, rode `python tools/export-m02-surface-atlas.py rihad` (Pillow) e `node tools/build-rihad-arrival.cjs`. A camada decorativa só é aplicada sobre volumes sólidos. As entradas de Arredores, Corte e portão urbano continuam usando os eventos existentes. No Chrome com perfil isolado, a rota sinalizada somou 422 passos em cada sentido. O teste percorreu a audiência, a ida a Stonekeep, a entrega única e a retomada de saves. [Resultado](evidencias/m02-rihad-orientacao/resultado.json) · [Retorno ao portão](evidencias/m02-rihad-orientacao/orientacao-portao.png) · [Taverna fechada em janela de 640 × 520](evidencias/m02-rihad-orientacao/porta-taverna.png). A avaliação manual fica no teste integrado.
+
+### Estudo de bússola
+
+| Opção | Perto de paredes e portões | Objetivo em outro mapa e janela menor |
+| --- | --- | --- |
+| Seta para o destino | Fácil de interpretar em terreno aberto. Em Rihad, pode apontar através da muralha ou para trás da fachada, ocultando o desvio até a grade ou o portão. | Exigiria escolher um ponto intermediário antes de mostrar direção entre mapas. A seta cabe em janela pequena, mas direção isolada deixa o destino ambíguo. |
+| Marcador da próxima passagem útil | Pode indicar a próxima esquina, a grade da corte ou o portão pela rota transitável. Precisa escolher a passagem pelo lado acessível e atualizar após a curva, com estabilidade para evitar que o alvo oscile. | Quando o objetivo estiver fora de Rihad, poderia apontar apenas para o portão e parar na transferência. Uma seta e um rótulo curto bastam para o teste em janela pequena. |
+
+Se aprovado, testar primeiro **esplanada → grade da corte** após a fala do informante. Usar as passagens já conferidas e um marcador discreto. Comparar com as placas existentes nos desvios e confirmar que o marcador cessa ao chegar à porta. A bússola segue sem implementação.
+
 ## M02-03E2 — passagens de jardim e quarteirões contíguos
 
 A auditoria da composição CITYW1 +32 MIF confirmou o SHA-256 da composição MAP1. Em `DCN.INF`, `NHEDGED.IMG` corresponde ao registro sólido `0x903A`. O recurso seguinte, `GARDENGD.IMG`, tem `*TRANSWALKTHRU` e aparece como `0x913B`. A conversão anterior tratava todos esses arcos como paredes. A revisão abre os **30 arcos** que ligam pisos secos em faces opostas, começando pelos quarteirões do templo próximo à esplanada e da ala nobre próxima à corte. O vão provisório tem uma faixa central de um tile e mantém as laterais sólidas. Os dois arcos que terminam diretamente em volume sólido, em MIF (52,8) e (57,72), foram confirmados como vãos sem travessia na planta. [Planta e lista de conexões](mapas/RIHAD_PERCURSO_M02.json)

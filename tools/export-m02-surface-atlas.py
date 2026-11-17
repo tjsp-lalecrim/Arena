@@ -91,6 +91,18 @@ def export(environment):
                     strip = ImageOps.mirror(strip)
                 end.paste(strip, (0 if edge == 'left' else 48 - width, 0))
                 put(end, [family, height, edge])
+    if spec.get('closedDoors'):
+        # Reuse the timbers and trim of the urban master on a transparent panel.
+        panel = Image.new('RGBA', (48, 96))
+        panel.paste(ImageEnhance.Brightness(trim).enhance(.63).resize((32, 76)), (8, 20))
+        wood = ImageEnhance.Brightness(material(spec['walls']['a'], (22, 68))).enhance(.65)
+        panel.paste(wood, (13, 28))
+        for name, top in (('lintel', 0), ('leaf', 48)):
+            put(panel.crop((0, top, 48, top + 48)), ['closedDoor', name])
+        edge = Image.new('RGBA', (48, 48))
+        edge.paste(trim.resize((8, 32)), (20, 8))
+        put(edge, ['closedDoor', 'side'])
+        put(edge.transpose(Image.Transpose.ROTATE_90), ['closedDoor', 'back'])
     output = ROOT / 'img/tilesets' / (spec['sheet'] + '.png')
     atlas.save(output)
     digest = lambda file: hashlib.sha256(file.read_bytes()).hexdigest()
