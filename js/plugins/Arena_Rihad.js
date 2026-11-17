@@ -127,7 +127,8 @@ var ArenaRihad;
     [road.x,road.y,'Portão urbano',76],
     [outskirts.x,outskirts.y,'Arredores',112]];
    var way=guidance(), sign=nearby(c.signage.signs,'position',5);
-   if(sign&&way==='square'&&sign.position[1]<=16)markers.unshift([sign.position[0],sign.position[1],'↓ Esplanada',18,'#223932']);
+   if(sign&&way==='square'&&sign.position[1]>16)way='gate';
+   if(sign&&way==='square')markers.unshift([sign.position[0],sign.position[1],'↓ Esplanada',18,'#223932']);
    if(sign&&way!=='square'){
     var court=$gameMap.event(c.court.accessEventId);
     var nearCourt=$gameMap.distance(sign.position[0],sign.position[1],court.x,court.y)<=3;
