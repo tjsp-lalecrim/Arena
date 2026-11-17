@@ -1,11 +1,12 @@
 {
-  "base": "12a0713",
-  "browser": "157.0.8103.51",
+  "base": "e341dbd",
+  "browser": "157.0.8103.79",
   "checks": [
     "70 portas alcançadas pelas condições de abertura, 165 contatos alcançáveis no grafo, pergaminho e saída conectados, 17 tesouros e seis refúgios acessíveis",
     "30 vãos de jardim conectados ao portão, só nos lados confirmados. Travessia por teclado e save/load no pátio do templo sem mudar MQ02.",
+    "Piloto de audiência no Chrome: aparece ao sair do diálogo na esplanada, indica cada desvio e some ao entrar na corte.",
     "Save do antigo Map011 retoma na entrada de PALACE2 e preserva personagem, inventário, MQ02 e recibos.",
-    "Percurso sinalizado em ambas as direções, 422 passos por sentido com placas conferidas nas mudanças de direção; porta da taverna visível em janela menor e sem transferência.",
+    "Percurso sinalizado em ambas as direções, 415 passos de ida e 422 de volta com placas conferidas nas mudanças de direção; porta da taverna visível em janela menor e sem transferência.",
     "Campanha desde a chegada nível 2 em Rihad: visão, informante, pedido da corte e estrada avançam 10→20→30→40 e entram no Map015",
     "Contato real em C3, vitória controlada, tesouro por interação e repouso por interação; slot normal isolado restaura derrota, recibos e recursos",
     "Save pré-atlas no Map009 adota o C atual sem remapear posição ou estado.",
@@ -119,7 +120,7 @@
   "steps": {
     "outward": 188,
     "home": 191,
-    "citySteps": 422,
+    "citySteps": 415,
     "cityReturnSteps": 407
   },
   "routeDoors": [

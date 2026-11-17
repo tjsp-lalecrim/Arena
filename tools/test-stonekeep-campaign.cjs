@@ -214,8 +214,25 @@ async function run() {
             }, text);
             assert(found, 'Placa ausente em '+await position()+': '+text);
         }
+        const audienceMarker = () => page.evaluate(() => {
+            const scene = SceneManager._scene;
+            const bitmap = scene._rihadCaption?.bitmap;
+            if (!bitmap) return null;
+            const draw = bitmap.drawText;
+            let marker = null;
+            bitmap.drawText = function(label) {
+                if (label.endsWith(' Audiência')) marker = label;
+                return draw.apply(this, arguments);
+            };
+            try {
+                scene.update();
+                return marker;
+            } finally {
+                delete bitmap.drawText;
+            }
+        });
         async function followCity(reverse = false) {
-            const points = [signage.arrival, ...signage.routeCorners, signage.court];
+            const points = [reverse ? signage.arrival : signage.audienceStart, ...signage.routeCorners, signage.court];
             if (reverse) points.reverse();
             await walk(points[0]);
             const label = reverse ? 'Portão urbano' : 'Corte';
@@ -225,7 +242,9 @@ async function run() {
                 assert(x===nx || y===ny);
                 const direction = x<nx?6:x>nx?4:y<ny?2:8;
                 const distance = Math.abs(x-nx)+Math.abs(y-ny);
-                if (i > 1) await hasMarker(({2:'↓',4:'←',6:'→',8:'↑'})[direction]+' '+label);
+                const arrow = ({2:'↓',4:'←',6:'→',8:'↑'})[direction];
+                if (i > 1) await hasMarker(arrow+' '+label);
+                if (!reverse) assert.equal(await audienceMarker(), arrow+' Audiência', 'Seta da audiência em '+[x,y]);
                 await page.evaluate(({direction,distance}) => {
                     for (let step=0; step<distance; step++) {
                         $gamePlayer.moveStraight(direction);
@@ -342,7 +361,11 @@ async function run() {
         assert.doesNotMatch(instruction, /Fang Lair|Stonekeep/);
         await settle();
         assert.equal(await stage(), 30);
+        await page.setViewportSize({width:640,height:520});
+        assert.equal(await audienceMarker(), '← Audiência');
+        await page.setViewportSize({width:1080,height:850});
         await walk(signage.arrival);
+        assert.equal(await audienceMarker(), null);
         await hasMarker('↓ Corte');
         await walk(await eventPosition(1, 1));
         const garden = await page.evaluate(({ passages, deadEnds }) => {
@@ -411,7 +434,10 @@ async function run() {
         await hasMarker('Taverna · Fechado');
         await page.setViewportSize({width:1080,height:850});
         const citySteps = await followCity();
+        assert.equal(await audienceMarker(), '↓ Audiência');
         await approachCourt();
+        assert.equal(await audienceMarker(), null);
+        checks.push('Piloto de audiência no Chrome: aparece ao sair do diálogo na esplanada, indica cada desvio e some ao entrar na corte.');
         const inCourt = await state();
         const courtEntry = await position();
         const oldCourt = JSON.parse(execFileSync('git', ['show', '84176ea:data/Map011.json'], { cwd: root, encoding: 'utf8' }));
@@ -443,9 +469,10 @@ async function run() {
         await key('ArrowDown');
         await map(9);
         const towardGate = await followCity(true);
-        assert.equal(towardGate,citySteps);
+        assert.equal(towardGate-citySteps,signage.audienceStart[1]-signage.arrival[1]);
+        assert.equal(await audienceMarker(), null);
         await captureCity('orientacao-portao');
-        checks.push('Percurso sinalizado em ambas as direções, '+citySteps+' passos por sentido com placas conferidas nas mudanças de direção; porta da taverna visível em janela menor e sem transferência.');
+        checks.push('Percurso sinalizado em ambas as direções, '+citySteps+' passos de ida e '+towardGate+' de volta com placas conferidas nas mudanças de direção; porta da taverna visível em janela menor e sem transferência.');
         const beforeTravel = await state();
         await travel(15);
         assert.equal(await page.evaluate(() => ArenaCampaignConfig.area('stonekeep').config.mapId), 15);
@@ -620,7 +647,7 @@ async function run() {
         assert.deepEqual(errors, []);
         assert.deepEqual(missing, []);
         fs.mkdirSync(path.dirname(output), { recursive: true });
-        fs.writeFileSync(output, JSON.stringify({ base:'12a0713', browser:browser.version(), checks, garden,
+        fs.writeFileSync(output, JSON.stringify({ base:'e341dbd', browser:browser.version(), checks, garden,
             topology, steps:{ outward, home, citySteps, cityReturnSteps }, routeDoors, sample:{ enemy, treasure:treasure.id, refuge:refuge.id },
             errors, missing }, null, 2) + '\n');
         console.log(checks.join('\n'));
