@@ -33,3 +33,21 @@ Verificação pública em Chrome 157 isolado: manifesto e os 390 arquivos compar
 A avaliação do responsável permanece **pendente** no [roteiro integrado, passos 1 e 2](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome). Retomar um save público anterior à audiência ou chegar a Rihad pela campanha. No nível 2, descansar, terminar a visão e conversar com o informante. Conferir as instruções, as placas da Corte e a seta Audiência até a grade; ao entrar na corte a seta desaparece. Após aceitar o pedido, seguir a orientação de Blubamka e as placas do Portão urbano.
 
 Preservar os dados do site e os saves públicos. Saves de localhost pertencem a outra origem e não são transferidos automaticamente. Esta publicação é uma prévia de teste; release segue no fechamento do marco.
+
+
+## Prévia de MQ02 com a pousada de Rihad — 18/11/2026
+
+Fonte publicada `0d8f2095257ca5e5f4ffd2cbdb3f140d493b61a3`, infraestrutura `19f53490336f9da918aec56248a6cd4ed131817a`. [Workflow manual 44408015343](https://github.com/tjsp-lalecrim/Arena/actions/runs/44408015343) executado pela main com publish=true. Build Linux e deploy concluídos com sucesso. Pacote com 392 arquivos de runtime, 54.101.351 bytes incluindo manifesto. Artefato do Actions com 41.665.416 bytes.
+
+O [jogo público](https://tjsp-lalecrim.github.io/Arena/) mantém a origem e o namespace `arena:m01:save-v1`. O [manifesto público](https://tjsp-lalecrim.github.io/Arena/package-manifest.json) identifica a fonte acima e tem SHA-256 `a316c6b25d693dca202baf3057a802645f82d8dffb6f6495a24c77d641869df1`. O rótulo herdado `m01-rc1` continua na receita; usar `sourceCommit` para identificar esta prévia.
+
+Verificação pública em Chrome isolado: abertura do título, manifesto e os 392 arquivos comparados por tamanho/SHA-256. A configuração aponta para Map018, cama/evento2 e fachada(313,42); o mapa contém os contratos de descanso/saída, e a imagem da cama foi carregada e decodificada. [Resultado e limites](evidencias/mq02-pages-rihad-inn/resultado.json).
+
+**Avaliação manual do responsável pendente**, integrada a MQ02:
+
+1. Falar com o informante e seguir as placas **Pousada**.
+2. Entrar na fachada correspondente, **Pousada do portão**, em Map009/(313,42), e seguir até o quarto.
+3. Interagir com a cama no nível 2 ou superior para assistir à visão disponível de Ria.
+4. Salvar, carregar e descansar novamente para conferir recuperação e apresentação única da visão.
+
+Uma partida que já registra a visão lida deve preservar essa conclusão. Para avaliar a apresentação, retomar um save público anterior à visão. Preservar dados do site e saves existentes. Saves de outras origens ou perfis não são transferidos automaticamente. A release fica para o fechamento do marco.

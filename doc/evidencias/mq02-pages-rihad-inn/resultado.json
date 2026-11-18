@@ -1,0 +1,196 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "0d8f2095257ca5e5f4ffd2cbdb3f140d493b61a3",
+  "manifestSha256": "a316c6b25d693dca202baf3057a802645f82d8dffb6f6495a24c77d641869df1",
+  "testVersion": "m01-rc1",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 392,
+  "totalBytes": 54101351,
+  "browser": "157.0.8103.80",
+  "loaded": {
+    "route": [
+      [
+        345,
+        13
+      ],
+      [
+        345,
+        52
+      ],
+      [
+        356,
+        52
+      ],
+      [
+        356,
+        118
+      ],
+      [
+        355,
+        118
+      ],
+      [
+        355,
+        193
+      ],
+      [
+        368,
+        193
+      ],
+      [
+        368,
+        214
+      ],
+      [
+        371,
+        214
+      ],
+      [
+        371,
+        253
+      ],
+      [
+        374,
+        253
+      ],
+      [
+        374,
+        373
+      ],
+      [
+        361,
+        373
+      ],
+      [
+        361,
+        383
+      ],
+      [
+        360,
+        383
+      ]
+    ],
+    "inn": {
+      "name": "Pousada do portão",
+      "areaId": "rihad.inn",
+      "accessEventId": 7,
+      "entry": {
+        "id": "rihad.inn.entry",
+        "mapId": 18,
+        "x": 42,
+        "y": 69,
+        "direction": 8
+      },
+      "exit": {
+        "id": "rihad.inn.exit",
+        "mapId": 9,
+        "x": 314,
+        "y": 42,
+        "direction": 6
+      },
+      "exitEventId": 1,
+      "bedEventId": 2,
+      "keeperEventId": 3,
+      "entrance": [
+        313,
+        42
+      ],
+      "approach": [
+        314,
+        42
+      ],
+      "bed": {
+        "x": 63,
+        "y": 10
+      },
+      "exteriorRoute": [
+        [
+          345,
+          13
+        ],
+        [
+          345,
+          31
+        ],
+        [
+          322,
+          31
+        ],
+        [
+          322,
+          42
+        ],
+        [
+          314,
+          42
+        ]
+      ],
+      "roomRoute": [
+        [
+          42,
+          69
+        ],
+        [
+          52,
+          69
+        ],
+        [
+          52,
+          55
+        ],
+        [
+          57,
+          55
+        ],
+        [
+          57,
+          19
+        ],
+        [
+          63,
+          19
+        ],
+        [
+          63,
+          11
+        ]
+      ]
+    },
+    "rest": {
+      "id": "MQ02.rihad.rest",
+      "mapId": 18,
+      "eventId": 2,
+      "x": 63,
+      "y": 10,
+      "technical": false,
+      "authorizedRefuge": true,
+      "source": "Cama da pousada de Rihad; TAVERN4, repouso integral gratuito adaptado."
+    },
+    "signs": 50,
+    "doors": 380,
+    "namespace": "arena:m01:save-v1",
+    "debug": false,
+    "markerScript": true,
+    "config": true,
+    "room": {
+      "width": 79,
+      "height": 79,
+      "bedSize": [
+        384,
+        768
+      ]
+    }
+  },
+  "errors": [],
+  "retries": [],
+  "checks": [
+    "Exact public manifest",
+    "All public resources checked by size and SHA256",
+    "Clean isolated Chrome title opening",
+    "Marker/signage and inn config loaded by runtime; Map018 rest/exit contracts; bed atlas decoded"
+  ],
+  "ownerEvaluation": "Pending integrated MQ02 campaign test; no gameplay or browser-restart validation attributed",
+  "runUrl": "https://github.com/tjsp-lalecrim/Arena/actions/runs/44408015343",
+  "infraCommit": "19f53490336f9da918aec56248a6cd4ed131817a",
+  "linuxValidation": "success; exact source SHA, package manifest and file checksums before deploy"
+}
