@@ -7,11 +7,11 @@ const { coverage, url } = require('./test-stonekeep-coverage.cjs');
 const battleControls = require('./battle-test-controls.cjs');
 
 const root = path.resolve(__dirname, '..');
-const output = path.join(root, 'doc/evidencias/m02-rihad-orientacao/resultado.json');
+const output = path.join(root, 'doc/evidencias/m02-rihad-pousada/campanha.json');
 const rihadTileset = require('../doc/arte/m02-tilesets/rihad.json').tilesetId;
 const { gardenAccess } = require('../doc/mapas/RIHAD_PERCURSO_M02.json');
 const signage = require('../doc/mapas/RIHAD_SINALIZACAO_M02.json');
-const generated = ['Map009', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
+const generated = ['Map009', 'Map018', 'Map011', 'Map012', 'Map015', 'ArenaCampaign', 'ArenaRecovery', 'ArenaRihad', 'ArenaStonekeep', 'ArenaStonekeepWhole']
     .map(name => path.join(root, 'data', name + '.json'));
 const canonical = file => fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
 const bytes = generated.map(canonical);
@@ -27,6 +27,7 @@ for (const name of ['Map012', 'Enemies', 'Troops', 'ArenaLoot', 'ArenaCampaign']
     if (name === 'Troops') current.splice(hound.troopId, 1);
     if (name === 'ArenaLoot') delete current.enemies[hound.enemyId];
     if (name === 'ArenaCampaign') {
+        current.areas = current.areas.filter(a => a.id !== 'rihad.inn');
         const lower = current.areas.find(area => area.id === 'fang-lair.lower').encounters;
         lower.entries = lower.entries.filter(entry => entry.enemyId !== hound.enemyId);
         delete lower.mapVisuals[hound.enemyId];
@@ -257,6 +258,17 @@ async function run() {
             assert.deepEqual(await position(), points.at(-1));
             return moves;
         }
+        async function approachInnBed() {
+            await walk(await page.evaluate(() => $arenaRihad.inn.approach));
+            await talk(4);
+            await map(18);
+            await walk(await eventPosition(2, 1));
+        }
+        async function leaveInn() {
+            await walk(await eventPosition(1, -1));
+            await key('ArrowDown');
+            await map(9);
+        }
         async function approachCourt() {
             const steps = await walk(await eventPosition(5, -1));
             await key('ArrowDown');
@@ -340,7 +352,7 @@ async function run() {
         await key('ArrowLeft');
         await map(9);
         assert.deepEqual(await position(), city.arrival);
-        await walk(await eventPosition(2, 1));
+        await approachInnBed();
         await talk(8);
         for (let i = 0; i < 30 && await page.evaluate(() => ArenaRiaVision.active()); i++) {
             await page.waitForFunction(() => SceneManager._scene instanceof Scene_ArenaNarrative &&
@@ -352,12 +364,13 @@ async function run() {
             });
             await key('Enter');
         }
-        await map(9);
+        await map(18);
+        await leaveInn();
         assert.equal(await stage(), 20);
         await walk(await eventPosition(1, 1));
         await talk(8);
         const instruction = await page.evaluate(() => $gameMessage.allText());
-        assert.match(instruction, /muralha sul.*grade e entre pela porta de madeira/);
+        assert.match(instruction.replace(/\s+/g,' '), /muralha sul.*grade e entre pela porta de madeira/);
         assert.doesNotMatch(instruction, /Fang Lair|Stonekeep/);
         await settle();
         assert.equal(await stage(), 30);
@@ -420,7 +433,7 @@ async function run() {
         for (let step = 0; step < 4; step++) await key('ArrowDown');
         assert.deepEqual(await position(), [x,y+2]);
         checks.push('30 vãos de jardim conectados ao portão, só nos lados confirmados. Travessia por teclado e save/load no pátio do templo sem mudar MQ02.');
-        const tavern = signage.doors.find(door => door.type === 'Taverna');
+        const tavern = signage.doors.find(door => door.type === 'Taverna' && door.original[0] !== 24);
         await walk(tavern.approach);
         await hasMarker('Taverna · Fechado');
         const beforeClosed = await state();
@@ -560,7 +573,7 @@ async function run() {
         await map(9);
         assert.deepEqual(await position(), city.arrival);
         const beforeCitySave = await state();
-        await walk(await eventPosition(2, 1));
+        await walk([354,15]);
         const citySavePosition = await position();
         // Mimic the serialized tileset value a pre-atlas Map009 save carries.
         await page.evaluate(() => $gameMap._tilesetId = 4);

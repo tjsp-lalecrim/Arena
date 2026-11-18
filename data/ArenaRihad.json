@@ -4698,5 +4698,91 @@
         ]
       }
     ]
+  },
+  "inn": {
+    "name": "Pousada do portão",
+    "areaId": "rihad.inn",
+    "accessEventId": 7,
+    "entry": {
+      "id": "rihad.inn.entry",
+      "mapId": 18,
+      "x": 42,
+      "y": 69,
+      "direction": 8
+    },
+    "exit": {
+      "id": "rihad.inn.exit",
+      "mapId": 9,
+      "x": 314,
+      "y": 42,
+      "direction": 6
+    },
+    "exitEventId": 1,
+    "bedEventId": 2,
+    "keeperEventId": 3,
+    "entrance": [
+      313,
+      42
+    ],
+    "approach": [
+      314,
+      42
+    ],
+    "bed": {
+      "x": 63,
+      "y": 10
+    },
+    "exteriorRoute": [
+      [
+        345,
+        13
+      ],
+      [
+        345,
+        31
+      ],
+      [
+        322,
+        31
+      ],
+      [
+        322,
+        42
+      ],
+      [
+        314,
+        42
+      ]
+    ],
+    "roomRoute": [
+      [
+        42,
+        69
+      ],
+      [
+        52,
+        69
+      ],
+      [
+        52,
+        55
+      ],
+      [
+        57,
+        55
+      ],
+      [
+        57,
+        19
+      ],
+      [
+        63,
+        19
+      ],
+      [
+        63,
+        11
+      ]
+    ]
   }
 }

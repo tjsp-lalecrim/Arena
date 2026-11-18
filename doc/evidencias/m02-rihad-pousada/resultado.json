@@ -1,0 +1,19 @@
+{
+  "browser": "157.0.8103.80",
+  "base": "71fb510",
+  "checks": [
+    "Normal campaign walks from city gate/informant to confirmed facade, enters original TAVERN4 plan and reaches bed; transfers preserve actor, resources and MQ01/MQ02.",
+    "Battle context cannot activate the inn bed.",
+    "Level 1 bed restores all resources at zero gold; normal save/load before rest preserves spent bars and leaves vision eligible.",
+    "Return after reaching level 2 opens vision once; full resources remain full and the held rest key does not advance the first block.",
+    "Native save/load during and after reading preserves the cursor/completion; repeat bed interaction does not replay vision, grant loot or mutate MQ01.",
+    "Previous-version exterior-platform save retains position, actor, progression, receipts and completed vision; retired event removed, inn entrance installed without healing on load.",
+    "After bed and informant stage 30, normal city circulation still reaches the functional court entrance.",
+    "Existing RAM laboratory reaches the same inn; personal slots remain blocked and RAM restoration works inside."
+  ],
+  "errors": [],
+  "missing": [],
+  "source": "TAVERN4.MIF / TAVERN.INF; CITYW1 + TPBD11B.MIF; DCN.INF",
+  "ownerEvaluation": "pending integrated MQ02",
+  "storage": "isolated Chrome profile; synthetic slot19 only"
+}

@@ -20,7 +20,7 @@ var ArenaRiaVision;
  }
  function read(){return validate(MVStateStore.read(ns));}
  function active(){return !!$gameSystem&&read().phase==='reading';}
- function eligible(){var q=ArenaQuests.snapshot('MQ02');return ArenaNarrative.isCampaign()&&q&&q.stage===10&&!q.completed&&$gameActors.actor(1).level>=2&&read().phase==='idle'&&!$gameParty.inBattle()&&$gameMap.mapId()===$arenaRihad.arrival.mapId;}
+ function eligible(){var q=ArenaQuests.snapshot('MQ02');return ArenaNarrative.isCampaign()&&q&&q.stage===10&&!q.completed&&$gameActors.actor(1).level>=2&&read().phase==='idle'&&!$gameParty.inBattle()&&$gameMap.mapId()===$arenaRihad.inn.entry.mapId;}
  function begin(){if(!eligible())return false;
   if(MVStateStore.once(ns,'MQ02.ria.begin',function(s){s.phase='reading';s.section=0;s.word=0;s.history=[];})!=='applied')return false;
   $gameTemp.clearDestination();$gameTemp._arenaRestFeedback=null;SceneManager.goto(Scene_ArenaNarrative);return true;
