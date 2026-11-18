@@ -76,9 +76,6 @@ function build(map, config, recovery) {
     }
 
     const rest = position('rest');
-    for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
-        data[(height + rest.y + dy) * width + rest.x + dx] = 68 + dx + 1 + (dy + 1) * 8;
-    }
     const arrival = position('arrival');
     function putDoor(x, y, piece) {
         const index = y * width + x;
@@ -102,7 +99,7 @@ function build(map, config, recovery) {
         doors: signage.doors.map(({ type, tile, approach }) => ({ type, tile, approach })),
     };
     Object.assign(map.events[1], position('informant'));
-    Object.assign(map.events[2], rest);
+
     Object.assign(map.events[3], position('road'));
     Object.assign(map.events[4], position('outskirts'));
     // Enter the interior by touching the provisional palace door.
@@ -117,6 +114,7 @@ function build(map, config, recovery) {
         width, height, data, tilesetId: materialSpec.tilesetId,
         note: 'M02: CITYW1 e 32 quarteirões; superfícies DCN do atlas exterior V01.',
     });
+    require('./build-rihad-inn.cjs')(map, config, recovery);
     fs.writeFileSync(path.join(root, 'data/ArenaRecovery.json'), JSON.stringify(recovery, null, 2) + '\n');
 }
 

@@ -14,6 +14,8 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Promoção de trechos.** Aplicar o fluxo de entregas integradas aprovado no M02-03E2. Registrar verificações essenciais, ressalvas e cobertura manual na [matriz do percurso](STONEKEEP_M02_04.md).
 
+**Descanso urbano de Rihad.** A [Pousada do portão](CHEGADA_RIHAD_M02_03A.md#pousada-do-portão--descanso-urbano-vigente) substitui a plataforma exterior: fachada original, interior TAVERN4, cama gratuita e visão de Ria preservada. Verificações técnicas focais e migração de saves registradas; avaliação manual da apresentação e do fluxo fica no teste integrado.
+
 **Orientação em Rihad.** Falas do informante e de Blubamka, placas de percurso e 380 fachadas sinalizadas no Map009. A distinção visual de portas fechadas e entradas da campanha entra no próximo teste integrado. O [piloto de marcador de direção](CHEGADA_RIHAD_M02_03A.md#estudo-de-bússola) está em avaliação apenas no trajeto da esplanada à grade da corte durante a audiência.
 
 

@@ -576,13 +576,13 @@
     },
     {
       "id": "MQ02.rihad.rest",
-      "mapId": 9,
+      "mapId": 18,
       "eventId": 2,
-      "x": 354,
-      "y": 15,
+      "x": 63,
+      "y": 10,
       "technical": false,
       "authorizedRefuge": true,
-      "source": "MQ02-03E2: repouso autorizado na esplanada inicial de Rihad, posição adaptada."
+      "source": "Cama da pousada de Rihad; TAVERN4, repouso integral gratuito adaptado."
     },
     {
       "id": "MQ02.stonekeep.refuge.87.44",

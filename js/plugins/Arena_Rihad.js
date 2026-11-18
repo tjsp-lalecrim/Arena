@@ -1,9 +1,9 @@
 /*:
- * @plugindesc v0.2.0 Rihad: chegada, repouso e arredores iniciais.
+ * @plugindesc v0.3.0 Rihad: chegada, pousada, repouso e arredores.
  * @author Codex
  * @help Após Arena_CampaignConfig e Arena_Continuation. ArenaRihad.json.
  * Chegada real conserva recursos. Amostra técnica usa fixtures/RAM existentes;
- * slots e backups normais permanecem bloqueados nela. Sem corte; Ria em plugin próprio.
+ * slots e backups normais permanecem bloqueados nela. Corte e visão de Ria em plugins próprios.
  * Veja doc/CHEGADA_RIHAD_M02_03A.md. Sem parâmetros/dependências externas.
  */
 var ArenaRihad;
@@ -18,10 +18,15 @@ var ArenaRihad;
    if(!c||c.schemaVersion!==1||!r.ok||r.config.mapId!==c.arrival.mapId)throw Error('Rihad: vínculo de chegada inválido.');
    var o=c.outskirts,a=o&&ArenaCampaignConfig.area(o.areaId);
    if(!o||!a.ok||a.config.mapId!==o.entry.mapId||o.return.mapId!==c.arrival.mapId||!ArenaCampaignConfig.encounters(o.areaId).ok)throw Error('Rihad: vínculo dos arredores inválido.');
+   var inn=c.inn,area=inn&&ArenaCampaignConfig.area(inn.areaId);
+   var point=$arenaRecovery.restPoints.filter(function(p){return p.id===c.restPointId;})[0];
+   if(!inn||!area.ok||area.config.mapId!==inn.entry.mapId||!point||point.mapId!==inn.entry.mapId||point.eventId!==inn.bedEventId)throw Error('Rihad: vínculo da pousada ou cama inválido.');
    ArenaContinuation.registerCampaignDestination(c.arrival);configured=true;
   }return true;
  };
  function here(){return $gameMap&&$gameMap.mapId()===$arenaRihad.arrival.mapId;}
+ function inInn(){return $gameMap&&$gameMap.mapId()===$arenaRihad.inn.entry.mapId;}
+ function urban(){return here()||inInn();}
  function outside(){return $gameMap&&$gameMap.mapId()===$arenaRihad.outskirts.entry.mapId;}
  function route(interpreter,from,eventId,to){
   var q=ArenaQuests.snapshot('MQ02'),e=$gameMap.event(eventId);
@@ -32,7 +37,7 @@ var ArenaRihad;
  }
  function message(interpreter,texts){
   if(!here()||$gameParty.inBattle()||$gameMessage.isBusy()||!(interpreter instanceof Game_Interpreter))return false;
-  texts.forEach(function(t){$gameMessage.add(t);});interpreter.setWaitMode('message');return true;
+  return ArenaCourt.show(interpreter,texts);
  }
  function guidance(){
   var q=ArenaQuests.snapshot('MQ02'),stage=q&&q.stage||0;
@@ -44,11 +49,20 @@ var ArenaRihad;
  ArenaRihad={
   inform:function(i){
    var way=guidance();
-   if(way==='square')return message(i,['Ao sul do portão, siga o passeio escuro até a esplanada. O leito fica a leste do passeio.',
+   if(way==='square')return message(i,['Para descansar, siga ao sul pelo passeio escuro. Na primeira curva, vire a oeste. Siga as placas até a Pousada do portão.',
     'Para enfrentar os ratos, procure a passagem dos Arredores junto ao portão.']);
    if(way==='court')return message(i,['Siga as placas da Corte pelas ruas ao sul.',
     'Junto à muralha sul, passe pela grade e entre pela porta de madeira.']);
    return message(i,['Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte.']);
+  },
+  enterInn:function(i){var c=$arenaRihad.inn;return route(i,c.exit.mapId,c.accessEventId,c.entry);},
+  leaveInn:function(i){var c=$arenaRihad.inn;return route(i,c.entry.mapId,c.exitEventId,c.exit);},
+  innkeeper:function(i){
+   var c=$arenaRihad.inn,e=$gameMap.event(c.keeperEventId);
+   if(!inInn()||!ArenaNarrative.isCampaign()||$gameParty.inBattle()||$gameMessage.isBusy()||
+     !(i instanceof Game_Interpreter)||i.eventId()!==c.keeperEventId||i._mapId!==c.entry.mapId||
+     !e||$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1)return false;
+   return ArenaCourt.show(i,['O quarto está disponível, sem custo. Siga as placas até a cama e interaja para descansar.']);
   },
   arrivalNotice:function(i){return message(i,['Você chegou a Rihad, no sul de Hammerfell.']);},
   preview:function(){return ArenaContinuation.previewArrival($arenaRihad.arrival,true);},
@@ -56,7 +70,7 @@ var ArenaRihad;
   returnToArrival:function(i){var o=$arenaRihad.outskirts;return route(i,o.entry.mapId,o.returnEventId,o.return);}
  };
  var terminateMessage=Window_Message.prototype.terminateMessage;
- Window_Message.prototype.terminateMessage=function(){terminateMessage.apply(this,arguments);if(here()||outside()){
+ Window_Message.prototype.terminateMessage=function(){terminateMessage.apply(this,arguments);if(urban()||outside()){
   $gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();
  }};
  // Map009 kept its logical ID. Recreate the map only for a serialized
@@ -81,6 +95,12 @@ var ArenaRihad;
   if(!$gamePlayer.isTransferring()&&here()&&!$gameMap.event($arenaRihad.outskirts.accessEventId)&&$dataMap.events[$arenaRihad.outskirts.accessEventId]){
    var id=$arenaRihad.outskirts.accessEventId;$gameMap._events[id]=new Game_Event($gameMap.mapId(),id);
   }
+  if(!$gamePlayer.isTransferring()&&here()){
+   // Keep player position and all persistent namespaces. Retire only the old exterior rest.
+   $gameMap._events[2]=null;
+   var entrance=$arenaRihad.inn.accessEventId;
+   if(!$gameMap.event(entrance))$gameMap._events[entrance]=new Game_Event($gameMap.mapId(),entrance);
+  }
   mapLoaded.apply(this,arguments);
   if(here()&&ArenaContinuation.labActive()&&ArenaContinuation.status().code==='arrived'&&!ArenaPersistence.snapshot().quests.MQ02)ArenaPersistence.setQuest('MQ02',10,{},false);
  };
@@ -90,7 +110,7 @@ var ArenaRihad;
  var title=Scene_Title.prototype.createCommandWindow;
  Scene_Title.prototype.createCommandWindow=function(){title.apply(this,arguments);this._commandWindow.setHandler('arenaRihadPreview',ArenaRihad.preview);};
  var commands=Window_MenuCommand.prototype.addOriginalCommands;
- Window_MenuCommand.prototype.addOriginalCommands=function(){commands.apply(this,arguments);if((here()||outside())&&ArenaContinuation.labActive()){
+ Window_MenuCommand.prototype.addOriginalCommands=function(){commands.apply(this,arguments);if((urban()||outside())&&ArenaContinuation.labActive()){
   this.addCommand('Guardar teste em RAM','arenaRihadStore');this.addCommand('Carregar teste da RAM','arenaRihadLoad');
  }};
  var menu=Scene_Menu.prototype.createCommandWindow;
@@ -99,7 +119,7 @@ var ArenaRihad;
   this._commandWindow.setHandler('arenaRihadLoad',function(){if(ArenaContinuation.memoryLoad())SceneManager.goto(Scene_Map);else{SoundManager.playBuzzer();this._commandWindow.activate();}}.bind(this));
  };
  var create=Scene_Map.prototype.createDisplayObjects;
- Scene_Map.prototype.createDisplayObjects=function(){create.apply(this,arguments);if(here()||outside()){
+ Scene_Map.prototype.createDisplayObjects=function(){create.apply(this,arguments);if(urban()||outside()){
   this._rihadCaption=new Sprite(new Bitmap(Graphics.boxWidth,76));this.addChild(this._rihadCaption);
   this._rihadMarkers=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._rihadMarkers);
  }};
@@ -150,18 +170,18 @@ var ArenaRihad;
   return closest;
  }
  var update=Scene_Map.prototype.update;
- Scene_Map.prototype.update=function(){update.apply(this,arguments);if(!(here()||outside())||!this._rihadCaption)return;
+ Scene_Map.prototype.update=function(){update.apply(this,arguments);if(!(urban()||outside())||!this._rihadCaption)return;
   var b=this._rihadCaption.bitmap;b.clear();b.fillRect(0,0,b.width,72,'rgba(12,16,18,0.92)');b.fontSize=23;b.textColor='#e1d2ae';
-  b.drawText(here()?'Rihad · Hammerfell':'Arredores de Rihad — amostra provisória',18,4,b.width-36,30);
-  b.fontSize=17;b.drawText((here()?'Exterior V01':'Materiais de reuso')+' · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM, sem saves pessoais':''),18,36,b.width-36,26);
+  b.drawText(inInn()?$arenaRihad.inn.name:here()?'Rihad · Hammerfell':'Arredores de Rihad — amostra provisória',18,4,b.width-36,30);
+  b.fontSize=17;b.drawText((inInn()?'Quarto sem custo · Interagir com a cama':here()?'Exterior V01':'Materiais de reuso')+' · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM, sem saves pessoais':''),18,36,b.width-36,26);
   drawAudienceMarker(b);
   b=this._rihadMarkers.bitmap;b.clear();b.fontSize=18;b.textColor='#ead9b5';
   var markers=[[2,9,'Voltar a Rihad']];
   if(here()){
    var c=$arenaRihad;
-   var informant=$gameMap.event(c.informantEventId),rest=$gameMap.event(2);
+   var informant=$gameMap.event(c.informantEventId);
    var road=$gameMap.event(3),outskirts=$gameMap.event(c.outskirts.accessEventId);
-   markers=[[informant.x,informant.y,'Informante'],[rest.x,rest.y,'Repouso'],
+   markers=[[informant.x,informant.y,'Informante'],[c.inn.entrance[0],c.inn.entrance[1],'Pousada · Entrar',-46,'#223932'],
     [road.x,road.y,'Portão urbano',76],
     [outskirts.x,outskirts.y,'Arredores',112]];
    var way=guidance(), sign=nearby(c.signage.signs,'position',5);
@@ -173,8 +193,25 @@ var ArenaRihad;
     var atCourt=way==='court'&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,court.x,court.y)<=1;
     if(!atCourt)markers.unshift([sign.position[0],sign.position[1],arrows[sign[way]]+' '+(way==='court'?'Corte':'Portão urbano'),nearCourt?-76:18,'#223932']);
    }
-   var door=nearby(c.signage.doors,'approach',2);
+   var door=nearby(c.signage.doors.filter(function(d){return d.tile[0]!==c.inn.entrance[0]||d.tile[1]!==c.inn.entrance[1];}),'approach',2);
    if(door)markers.push([door.tile[0],door.tile[1],door.type+' · Fechado',-46,'#3d3028']);
+  }
+  if(inInn()){
+   var keeper=$gameMap.event($arenaRihad.inn.keeperEventId),exit=$gameMap.event($arenaRihad.inn.exitEventId);
+   markers=[[keeper.x,keeper.y,'Estalajadeiro'],[exit.x,exit.y,'Sair para Rihad',32]];
+  }
+  var roomRoute=inInn()?$arenaRihad.inn.roomRoute:here()&&guidance()==='square'?$arenaRihad.inn.exteriorRoute:null;
+  if(roomRoute){
+   var signs=roomRoute.slice(0,-1).map(function(p,i){
+    return {position:p,next:roomRoute[i+1],previous:roomRoute[Math.max(0,i-1)]};
+   });
+   var sign=nearby(signs,'position',5);
+   if(sign){
+    var p=sign.position,next=sign.next,previous=sign.previous;
+    var label=arrows[directionTo(p[0],p[1],next[0],next[1])]+' '+(inInn()?'Quarto':'Pousada');
+    if(inInn())label+=' · '+arrows[directionTo(p[0],p[1],previous[0],previous[1])||2]+' Saída';
+    markers.unshift([p[0],p[1],label,-32,'#223932']);
+   }
   }
   var boxes=[];
   markers.forEach(function(p){
