@@ -21,6 +21,14 @@ for (const id of maps) {
     const file = 'data/Map'+id+'.json';
     const { data:was, tilesetId:wasSet, note:oldNote, ...prior } = old(file);
     const { data:now, tilesetId:nowSet, note:newNote, ...map } = read(file);
+    if (scope === 'rihad') {
+        // The inn delivery retires only exterior event 2 and adds facade access 7.
+        const inn = read('data/ArenaRihad.json').inn;
+        assert.equal(map.events[2], null);
+        assert.equal(map.events[inn.accessEventId].pages[0].list[0].parameters[0], 'ArenaRihad.enterInn(this);');
+        prior.events[2] = null;
+        prior.events[inn.accessEventId] = map.events[inn.accessEventId];
+    }
     assert.deepEqual(map, prior, file);
     assert.equal(nowSet, cfg.tilesetId, file);
     const before = priorSets[wasSet], after = currentSets[nowSet], layer = map.width * map.height;
@@ -28,6 +36,12 @@ for (const id of maps) {
     assert.equal(after.tilesetNames[6],cfg.sheet,file);
     if (scope === 'rihad') {
         const plan = read('doc/mapas/RIHAD_SINALIZACAO_M02.json');
+        const retired = {x:354,y:15};
+        for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++) {
+            const i=(retired.y+dy)*map.width+retired.x+dx;
+            assert.equal(now[layer+i],0);
+            was[layer+i]=0;
+        }
         const overlays = new Map();
         for (const { tile:[x,y], side, approach:[ax,ay] } of plan.doors) {
             assert.equal(was[5*layer + ay*map.width+ax],4);

@@ -1,5 +1,7 @@
 # M02-03C — visão de Ria em Rihad
 
+**Local vigente de descanso:** [cama da Pousada do portão](CHEGADA_RIHAD_M02_03A.md#pousada-do-portão--descanso-urbano-vigente), Map018, preservando o ID do repouso e o estado narrativo. As menções à plataforma exterior abaixo descrevem a entrega original.
+
 **Aprovação posterior do responsável —01/11/2026, versão explícita ad4af0e:** teste funcional satisfatório e direção artística aprovados. PilotoV01/arquivo/hash no [registro de arte](arte/MQ02_RIA_PILOTO_V01.json). Ambiente, dispositivo e casos técnicos adicionais não foram discriminados; não estender a aprovação aos testes manuais de chegada/arredores, persistência ou outras combinações. A aprovação do piloto não autoriza produzir variantes.
 
 **Decisões vigentes:** [glossário](LOCALIZACAO_E_GLOSSARIO.md) aprova **Cajado do Caos** para Staff of Chaos. Em M02-03D, a tradução foi aplicada aos textos ativos de Ria/diário, mantendo IDs, imagens e contagem de palavras/cursor por bloco. A transcrição abaixo é histórica de ad4af0e; a release m01 permanece intacta. Ilustrações por bloco/composição futura estão no registro único [REF07](REFINAMENTOS_POS_INTEGRACAO_M01.md#ref07--refinamentos-futuros-da-narrativa): refinamentos não bloqueantes para a corte. Relato e limites anteriores abaixo descrevem a entrega antes desta aprovação.

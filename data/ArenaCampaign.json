@@ -58,6 +58,11 @@
   ],
   "areas": [
     {
+      "id": "rihad.inn",
+      "questId": "MQ02",
+      "mapId": 18
+    },
+    {
       "id": "rihad.court",
       "questId": "MQ02",
       "mapId": 11

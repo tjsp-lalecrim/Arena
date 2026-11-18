@@ -1,0 +1,14 @@
+{
+  "status": "amostra integrada para avaliação, sem aprovação artística presumida",
+  "master": "art/masters/rihad-inn-bed-v01/bed-source.png",
+  "export": "img/tilesets/Arena_Inn_Bed_V01_E.png",
+  "method": "ImageGen nativo; recorte de alpha, redução proporcional e empacotamento Pillow",
+  "references": [
+    "Instalação original GLOBAL.BSA/BED.IMG, 64×64 índices, PAL.COL; consulta ignorada tmp/rihad-inn/bed-original.png",
+    "TAVERN4.MIF/TAVERN.INF: móvel baixo na célula MIF (4,2), representação de cama por BOXSIDE 5"
+  ],
+  "adaptation": "Cama ortogonal 1×2 tiles de 48px; cabeceira arredondada e madeira do original; lençol, cobertor, vista superior e detalhe são interpretação artística.",
+  "prompt": "Create ONE isolated game prop: a humble single wooden inn bed for the RPG The Elder Scrolls Arena adaptation, dark fantasy hand-painted digital game art consistent with austere medieval materials. Orthogonal TOP DOWN RPG map view, no isometric perspective. Bed axis exactly vertical, headboard at top and footboard bottom. Simple worn dark brown wooden four-post frame with modest round posts and curved edge inspired by original Arena BED.IMG, a cream linen pillow, muted dusty brown linen blanket with restrained warm grey folds, visibly a usable bed. Clear readable shape at final 48x96 pixels two 48px square tiles; art should occupy a centered tall 1:2 rectangle with 8 percent transparent safety margin, no parts cut off. Subtle upper-left ambient light, no cast floor shadow outside frame, no floor incorporated, no wall, no room, no people, no text, no additional objects, no alternate versions, no pixel art. Transparent background real alpha. Deliver only one standalone bed for a top-down tileset, rendered detailed enough to downsample cleanly.",
+  "masterSha256": "27a02980f5b8fa262cb2d5d2f3ca7fac10561314e9709b032b2a4d94bfb33fc7",
+  "exportSha256": "88281d77331f3e983a141f91c3fe2676cea131d7e99341ea207173b417a7283b"
+}
