@@ -17,4 +17,6 @@ O workflow usa a receita do checkout fixado em `source_sha`. Em seguida, o final
 | RC1 do M01 | `e407a69193e168c6c1a160ab5809b1781b4a6478` | `77ca50126995b178ddc9c2bcabbc8d99527e296103981ef83ebf5497b5c6c831` |
 | MQ02, teste integrado | `0bbc74ccb2889bf33ced31dcca13e92742e3964c` | `80ef435ca94be0b9e4f7aaae83e39683f6e77af04f158c28d96fcb87d7bc8a22` |
 
+| MQ02, marcador de Rihad | `ec6ad3c3aec7a69937f1d23605b592b5f8599d51` | `a18517b5234d77e6e0b2e83d40bc9a91f75a146a68f5895384a1899672ba1b5b` |
+
 A RC1 mantém a conversão CRLF dos arquivos registrados. O pacote de MQ02 é verificado com os bytes da receita, sem conversão. Essa receita ainda usa o rótulo `m01-rc1` no manifesto. Identifique a prévia pelo `sourceCommit`. O endereço público e o namespace `arena:m01:save-v1` são compartilhados entre as duas prévias.
