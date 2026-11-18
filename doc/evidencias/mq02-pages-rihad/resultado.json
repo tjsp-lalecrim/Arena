@@ -1,0 +1,93 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "ec6ad3c3aec7a69937f1d23605b592b5f8599d51",
+  "manifestSha256": "a18517b5234d77e6e0b2e83d40bc9a91f75a146a68f5895384a1899672ba1b5b",
+  "testVersion": "m01-rc1",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 390,
+  "totalBytes": 53992350,
+  "browser": "157.0.8103.80",
+  "loaded": {
+    "route": [
+      [
+        345,
+        13
+      ],
+      [
+        345,
+        52
+      ],
+      [
+        356,
+        52
+      ],
+      [
+        356,
+        118
+      ],
+      [
+        355,
+        118
+      ],
+      [
+        355,
+        193
+      ],
+      [
+        368,
+        193
+      ],
+      [
+        368,
+        214
+      ],
+      [
+        371,
+        214
+      ],
+      [
+        371,
+        253
+      ],
+      [
+        374,
+        253
+      ],
+      [
+        374,
+        373
+      ],
+      [
+        361,
+        373
+      ],
+      [
+        361,
+        383
+      ],
+      [
+        360,
+        383
+      ]
+    ],
+    "signs": 50,
+    "doors": 380,
+    "namespace": "arena:m01:save-v1",
+    "debug": false,
+    "markerScript": true,
+    "config": true
+  },
+  "errors": [],
+  "retries": [],
+  "checks": [
+    "Exact public manifest",
+    "All public resources checked by size and SHA256",
+    "Clean isolated Chrome title opening",
+    "Marker and signage script/config loaded by runtime"
+  ],
+  "ownerEvaluation": "Pending integrated MQ02 campaign test; no gameplay or browser-restart validation attributed",
+  "runUrl": "https://github.com/tjsp-lalecrim/Arena/actions/runs/44401004838",
+  "infraCommit": "6cf944e66962033673f61a0401221878108350b4",
+  "linuxValidation": "success; same source SHA and manifest hash",
+  "initialAttempt": "HTTP 503 for img/enemies/Arena_Combat_wolf_v01.png; complete verification succeeded with lower concurrency"
+}
