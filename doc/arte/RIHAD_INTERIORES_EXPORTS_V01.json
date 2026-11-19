@@ -1,0 +1,132 @@
+{
+  "tiles": {
+    "inn0": 256,
+    "inn1": 257,
+    "inn2": 258,
+    "inn3": 259,
+    "aggregate0": 260,
+    "aggregate1": 261,
+    "aggregate2": 262,
+    "aggregate3": 263,
+    "marble0": 264,
+    "marble1": 265,
+    "marble2": 266,
+    "marble3": 267,
+    "darkMarble0": 268,
+    "darkMarble1": 269,
+    "darkMarble2": 270,
+    "darkMarble3": 271,
+    "pale0": 272,
+    "pale1": 273,
+    "pale2": 274,
+    "pale3": 275,
+    "red0": 276,
+    "red1": 277,
+    "red2": 278,
+    "red3": 279,
+    "red4": 280,
+    "red5": 281,
+    "red6": 282,
+    "red7": 283,
+    "red8": 284,
+    "blue0": 285,
+    "blue1": 286,
+    "blue2": 287,
+    "blue3": 288,
+    "blue4": 289,
+    "blue5": 290,
+    "blue6": 291,
+    "blue7": 292,
+    "blue8": 293,
+    "wood00": 294,
+    "wood01": 295,
+    "wood02": 296,
+    "wood10": 297,
+    "wood11": 298,
+    "wood12": 299,
+    "wood20": 300,
+    "wood21": 301,
+    "wood22": 302,
+    "rubble00": 303,
+    "rubble01": 304,
+    "rubble02": 305,
+    "rubble10": 306,
+    "rubble11": 307,
+    "rubble12": 308,
+    "rubble20": 309,
+    "rubble21": 310,
+    "rubble22": 311,
+    "ashlar00": 312,
+    "ashlar01": 313,
+    "ashlar02": 314,
+    "ashlar10": 315,
+    "ashlar11": 316,
+    "ashlar12": 317,
+    "ashlar20": 318,
+    "ashlar21": 319,
+    "ashlar22": 320,
+    "step0": 321,
+    "step1": 322,
+    "step2": 323
+  },
+  "objects": {
+    "door": {
+      "tile": 512,
+      "width": 1,
+      "height": 2
+    },
+    "frame": {
+      "tile": 513,
+      "width": 1,
+      "height": 2
+    },
+    "table": {
+      "tile": 514,
+      "width": 2,
+      "height": 2
+    },
+    "counter": {
+      "tile": 516,
+      "width": 3,
+      "height": 1
+    },
+    "throne": {
+      "tile": 536,
+      "width": 2,
+      "height": 3
+    },
+    "brazier": {
+      "tile": 538,
+      "width": 1,
+      "height": 1
+    },
+    "banner": {
+      "tile": 539,
+      "width": 1,
+      "height": 2
+    },
+    "fountain": {
+      "tile": 540,
+      "width": 2,
+      "height": 2
+    },
+    "frameEW": {
+      "tile": 524,
+      "width": 2,
+      "height": 1
+    },
+    "counterNS": {
+      "tile": 568,
+      "width": 1,
+      "height": 3
+    }
+  },
+  "sources": {
+    "props-source.png": "7d1199e94fbddb45d5f39783415db4c113b7eafca5fe4bc10127f0183a470a46",
+    "surfaces-source.png": "d4d2145e8bac91d8931084cb4171da2163a7e1534b80a370f2f104ff8e592750"
+  },
+  "exports": {
+    "Arena_Rihad_Interiors_V01_C": "2ddbecfb5d76ced64f7efef8aea6cea95fd1066a59f512e103ba2f6c7d6ea717",
+    "Arena_Rihad_Interiors_V01_D": "6314bdda32e6698c738ec34e78edeab70e90d17c03a9f4f03117ef1d865abc06"
+  }
+}

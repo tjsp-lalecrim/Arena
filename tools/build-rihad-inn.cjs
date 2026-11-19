@@ -56,6 +56,8 @@ module.exports = function buildInn(city, config, recovery) {
             event(2, 'Cama — descanso autorizado', bed, "ArenaRecovery.usePoint('MQ02.rihad.rest',this);"),
             event(3, 'Estalajadeiro — representação de reuso', keeper, 'ArenaRihad.innkeeper(this);', '$Arena_redguard_male_walk_r02')],
     };
+    map.events[2].pages[0].priorityType = 1;
+    map.events[2].pages[0].through = false;
     data[layer + (bed.y - 1) * width + bed.x] = 768;
     data[layer + bed.y * width + bed.x] = 776;
     fs.writeFileSync(path.join(root, 'data/Map018.json'), JSON.stringify(map) + '\n');
@@ -65,6 +67,8 @@ module.exports = function buildInn(city, config, recovery) {
     sets[8].tilesetNames[8] = 'Arena_Inn_Bed_V01_E';
     sets[8].flags[768] = sets[8].flags[776] = 15;
     fs.writeFileSync(path.join(root, 'data/Tilesets.json'), '[\n' + sets.map(s => JSON.stringify(s)).join(',\n') + '\n]\n');
+    require('./rihad-interior-materials.cjs')(map, 'inn');
+    fs.writeFileSync(path.join(root, 'data/Map018.json'), JSON.stringify(map) + '\n');
     const infos = read('data/MapInfos.json');
     if (infos[18] && infos[18].name !== plan.name) throw Error('Mapa 18 ocupado');
     infos[18] = { id: 18, name: plan.name, order: 18, parentId: 9, expanded: true, scrollX: 0, scrollY: 0 };
@@ -78,5 +82,5 @@ module.exports = function buildInn(city, config, recovery) {
     city.events[plan.exterior.eventId] = event(plan.exterior.eventId, plan.name + ' — entrada', { x: plan.exterior.tile[0], y: plan.exterior.tile[1] }, 'ArenaRihad.enterInn(this);');
     city.events[plan.exterior.eventId].pages[0].priorityType = 1;
     city.events[plan.exterior.eventId].pages[0].through = false;
-    Object.assign(recovery.restPoints.find(p => p.id === config.restPointId), { mapId: plan.mapId, eventId: 2, ...bed, source: 'Cama da pousada de Rihad; TAVERN4, repouso integral gratuito adaptado.' });
+    Object.assign(recovery.restPoints.find(p => p.id === config.restPointId), { mapId: plan.mapId, eventId: 2, ...bed, footprint: [[0,0],[0,-1]], source: 'Cama da pousada de Rihad; TAVERN4, repouso integral gratuito adaptado.' });
 };

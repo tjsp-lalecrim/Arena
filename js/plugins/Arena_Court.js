@@ -61,7 +61,7 @@ var ArenaCourt;
   createMap.apply(this,arguments);
  };
  var mapLoaded=Scene_Map.prototype.onMapLoaded;
- Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring()&&$gameMap.mapId()===cfg().exit.mapId)[cfg().accessEventId,cfg().doorEventId].forEach(function(id){if(!$gameMap.event(id)&&$dataMap.events[id])$gameMap._events[id]=new Game_Event($gameMap.mapId(),id);});mapLoaded.apply(this,arguments);};
+ Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring()&&here()&&$gameMap.tilesetId()!==$dataMap.tilesetId)$gameMap.changeTileset($dataMap.tilesetId);if(!$gamePlayer.isTransferring()&&$gameMap.mapId()===cfg().exit.mapId)[cfg().accessEventId,cfg().doorEventId].forEach(function(id){if(!$gameMap.event(id)&&$dataMap.events[id])$gameMap._events[id]=new Game_Event($gameMap.mapId(),id);});mapLoaded.apply(this,arguments);};
  var choiceStart=Window_ChoiceList.prototype.start,choiceUpdate=Window_ChoiceList.prototype.update;
  Window_ChoiceList.prototype.start=function(){choiceStart.apply(this,arguments);if(here()){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
  // Keep the native subwindow active while fencing input: deactivation makes
@@ -78,7 +78,7 @@ var ArenaCourt;
  var canMove=Game_Player.prototype.canMove;
  Game_Player.prototype.canMove=function(){return !$gameTemp._arenaCourtTravelFence&&canMove.apply(this,arguments);};
  Scene_Map.prototype.createDisplayObjects=function(){display.apply(this,arguments);if(here()||$gameMap.mapId()===cfg().exit.mapId){this._courtLabels=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._courtLabels);}};
- Scene_Map.prototype.update=function(){update.apply(this,arguments);if($gameTemp._arenaCourtTravelFence&&!TouchInput.isPressed()&&!['ok','cancel','up','down','left','right'].some(function(k){return Input.isPressed(k);}))$gameTemp._arenaCourtTravelFence=false;if(!this._courtLabels)return;var b=this._courtLabels.bitmap;b.clear();if(here()){b.fillRect(0,0,b.width,72,'rgba(12,16,18,.92)');b.fontSize=23;b.textColor='#e1d2ae';b.drawText('Corte de Rihad — apresentação provisória',18,4,b.width-36,30);b.fontSize=17;b.drawText('Materiais/NPC de reuso · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM':''),18,36,b.width-36,26);}
+ Scene_Map.prototype.update=function(){update.apply(this,arguments);if($gameTemp._arenaCourtTravelFence&&!TouchInput.isPressed()&&!['ok','cancel','up','down','left','right'].some(function(k){return Input.isPressed(k);}))$gameTemp._arenaCourtTravelFence=false;if(!this._courtLabels)return;var b=this._courtLabels.bitmap;b.clear();if(here()){b.fillRect(0,0,b.width,72,'rgba(12,16,18,.92)');b.fontSize=23;b.textColor='#e1d2ae';b.drawText('Corte de Rihad — apresentação provisória',18,4,b.width-36,30);b.fontSize=17;b.drawText('Interior V01 · NPC provisório · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM':''),18,36,b.width-36,26);}
   var door=$gameMap.event(cfg().doorEventId);
   var labels=here()?[[cfg().queenEventId,'Blubamka · provisório',-90],[cfg().exitEventId,'Sair para Rihad ↓',-24]].map(function(label){
    var e=$gameMap.event(label[0]);return [e.x,e.y,label[1],label[2]];

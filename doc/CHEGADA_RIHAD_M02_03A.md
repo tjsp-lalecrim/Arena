@@ -6,7 +6,7 @@ O Map009 usa um atlas dedicado ao percurso portão → esplanada → corte e aos
 
 | Reuso | Módulos que faltam |
 | --- | --- |
-| Porta da corte e cama da pousada. O interior de `PALACE2` mantém o atlas existente, que já permite testar pedra, lajes, soleiras e alturas. | Para a corte, faltam tapete com borda, degraus e batentes próprios de `CASTLE.INF`, trono, ornamentação local e caracterização de Blubamka. Para a cidade, costa e flora/objetos específicos continuam no inventário. |
+| Cama E preservada; pousada e corte agora usam os [interiores V01](#interiores-v01-e-correção-da-cama--19112026), com pisos, paredes, caps, molduras, tapete, degraus e mobiliário. | Caracterização de Blubamka, costa e flora/objetos específicos da cidade continuam no inventário. A avaliação visual dos interiores V01 está pendente. |
 
 **Exportação.** Na raiz, execute `python tools/export-m02-surface-atlas.py rihad` com Pillow e depois `node tools/build-rihad-arrival.cjs`. O exportador monta um C nativo com células de 48 px, pisos em período 2×2, coroamento e duas fileiras de face. O gerador mantém B e A1 do tileset-base e reaproveita seus módulos de repouso. [Mestre, prompt e fontes](arte/m02-tilesets/sources-rihad.json) · [Peças, hash e exportação](arte/m02-tilesets/exports-rihad.json) · [Matriz de atribuição](mapas/RIHAD_MATERIAIS_M02.json).
 
@@ -23,6 +23,26 @@ Os dois vãos de jardim são `0x913B` (`GARDENGD.IMG`, atravessável) entre sebe
 
 O Map011 usa o salão de `PALACE2.MIF`. O acesso de Rihad segue pelo mesmo portão urbano. [Seleção, planta e limites da corte](CORTE_RIHAD_M02_03D.md#interior-palace2--referência-vigente)
 
+
+
+## Interiores V01 e correção da cama — 19/11/2026
+
+**Relato público da revisão 0d8f209:** o responsável não conseguiu interagir com a cama. Descanso e visão continuam sem aprovação manual. Não foi fornecida a posição exata do personagem. Foi reproduzida uma falha ao chegar pelo fluxo da campanha ao lado da cabeceira, MV(64,9): Enter e clique na cabeceira mantiveram a Vida em12. O evento estava ativo em(63,10), gatilho0, prioridade0 e sem condições de página restritivas. Sua validação usava apenas distância até o pé, enquanto a imagem e a colisão ocupavam(63,9) e(63,10). Os testes anteriores só cobriam a posição ao pé.
+
+A correção declara a área de dois tiles em `ArenaRecovery.json`, usa essa área para proximidade, indicação, teclado e clique e mantém um só evento/uma só recuperação. O evento passa a prioridade normal. Clicar na imagem pode aproximar o personagem até um tile acessível; outra entrada cancela essa aproximação. Os demais refúgios preservam o contrato de um tile. Saves com o evento antigo no interior são atualizados ao carregar; o ID do descanso, a posição do jogador e o estado da visão permanecem.
+
+**Interiores integrados:** pousada TAVERN4 e corte PALACE2 usam os atlas próprios C/D V01. A cama E existente é reaproveitada. A [configuração visual](mapas/RIHAD_INTERIORES_VISUAIS_M02.json) registra as correspondências MIF, os vãos e os objetos. O [registro de geração](arte/RIHAD_INTERIORES_V01.json) contém mestres, prompts, referências e interpretações. A aprovação visual continua pendente.
+
+| Módulos aplicados | Referência e alcance |
+| --- | --- |
+| Piso avermelhado e parede de madeira ocre sobre embasamento de pedra na pousada | IFLOOR5/6 e NOBB de TAVERN.INF, conforme materiais declarados e valores consultados. Tetos/caps adaptados à vista superior. |
+| Pedra clara irregular/regular e pisos de mármore na corte | CASC/CASD e FLCASC/FLCASD/FLCAS_E1 de CASTLE.INF. O tapete vermelho tem bordas por vizinhança; degraus acompanham as células de elevação já representadas, sem nova mecânica vertical. |
+| Portas, batentes e mobiliário separados | Molduras abertas nos nove vãos da pousada e seis da corte. Mesas e balcão nas células de mobiliário da taverna, incluindo orientação longitudinal. Trono atrás de Blubamka, fontes nas referências originais e braseiros decorativos. Painéis de tecido são interpretação ornamental, sem identificação heráldica canônica. |
+| Colisão e camadas | Caps com1tile e faces com2tiles. Mobiliário/ornamentos estão em folha transparente separada. Preservados todos os bits nativos de passagem e regiões dos Map011/018; adereços não criam bloqueios novos. A cama mantém colisão nos dois tiles. NPCs e seus eventos funcionais são preservados. |
+
+Exportar com `python tools/export-rihad-interiors.py` e reconstruir com `node tools/build-rihad-arrival.cjs`. Mestres ficam em `art/masters/rihad-interiors-v01`; somente as exportações `img/tilesets/Arena_Rihad_Interiors_V01_C.png` e `…_D.png` entram no runtime. Extrações originais ficam ignoradas e fora do pacote.
+
+A [verificação focal](evidencias/m02-rihad-interiores/resultado.json) reúne o percurso da pousada, Enter/clique junto à cabeceira, recuperação, nível1/2, visão única, saves, audiência e entrega única do pergaminho. A avaliação visual e funcional do responsável continua no [roteiro integrado](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome). A apresentação provisória dos NPCs e as ilustrações narrativas futuras seguem seus registros existentes.
 
 ## Pousada do portão — descanso urbano vigente
 

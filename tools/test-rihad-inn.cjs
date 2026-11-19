@@ -1,17 +1,36 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process');
 const {chromium}=require('playwright');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/m02-rihad-pousada');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/m02-rihad-interiores');
 const plan=require('../doc/mapas/RIHAD_POUSADA_M02.json');
-const files=['ArenaRihad','ArenaRecovery','ArenaCampaign','Map009','Map018','MapInfos','Tilesets'];
+const files=['ArenaRihad','ArenaRecovery','ArenaCampaign','Map009','Map011','Map018','MapInfos','Tilesets'];
 const canonical=f=>fs.readFileSync(path.join(root,'data/'+f+'.json'),'utf8').replace(/\r\n/g,'\n');
 const before=files.map(canonical);
 execFileSync(process.execPath,['tools/build-rihad-arrival.cjs'],{cwd:root});
 files.forEach((f,i)=>assert.equal(canonical(f),before[i],f+' rebuild'));
+const oldJSON=file=>JSON.parse(execFileSync('git',['show','0d8f209:data/'+file+'.json'],{cwd:root,encoding:'utf8',maxBuffer:20e6}));
+const oldSets=oldJSON('Tilesets'),sets=JSON.parse(canonical('Tilesets'));
+function nativePass(map,flags,index,bit){
+ const layer=map.width*map.height;
+ for(const z of [3,2,1,0]){
+  const flag=flags[map.data[z*layer+index]];
+  if(flag&16)continue;
+  return (flag&bit)===0;
+ }return false;
+}
+for(const name of ['Map011','Map018']){
+ const prior=oldJSON(name),current=JSON.parse(canonical(name)),layer=current.width*current.height;
+ assert.equal(current.width,prior.width);assert.equal(current.height,prior.height);
+ assert.deepEqual(current.data.slice(5*layer),prior.data.slice(5*layer));
+ for(let i=0;i<layer;i++)for(const bit of [1,2,4,8]){
+  assert.equal(nativePass(current,sets[current.tilesetId].flags,i,bit),nativePass(prior,oldSets[prior.tilesetId].flags,i,bit),name+':'+i);
+ }
+}
 (async()=>{
  fs.mkdirSync(out,{recursive:true});
  const browser=await chromium.launch({channel:'chrome',headless:true});
  try{
  const p=await browser.newPage({viewport:{width:1080,height:850},hasTouch:true}),errors=[],missing=[],checks=[];
+ checks.push('Generator reconstruction is stable; both maps preserve dimensions, regions and all four native collision bits at every tile.');
  p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)missing.push(r.url());});
  const key=async k=>{await p.keyboard.press(k,{delay:85});await p.waitForTimeout(190);};
  const title=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
@@ -89,11 +108,45 @@ files.forEach((f,i)=>assert.equal(canonical(f),before[i],f+' rebuild'));
  await enter();
  assert.deepEqual(await state(),untouched);
  await p.locator('#GameCanvas').screenshot({path:path.join(out,'interior.png')});
+ await walk([42,57]);await p.waitForTimeout(250);
+ await p.locator('#GameCanvas').screenshot({path:path.join(out,'salao-pousada.png')});
  await bed();await p.waitForTimeout(300);
  await p.locator('#GameCanvas').screenshot({path:path.join(out,'cama.png')});
  checks.push('Normal campaign walks from city gate/informant to confirmed facade, enters original TAVERN4 plan and reaches bed; transfers preserve actor, resources and MQ01/MQ02.');
  await p.evaluate(()=>{$gameActors.actor(1).setHp(12);$gameActors.actor(1).setMp(3);ArenaPersistence.setResource('vigor',7,ArenaResources.snapshot().vigor.maximum);});
+
+ const oldInn=JSON.parse(execFileSync('git',['show','0d8f209:data/Map018.json'],{cwd:root,encoding:'utf8',maxBuffer:20e6}));
+ const preservedPosition=await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]);
+ await p.evaluate(({oldInn,position})=>{
+  const current=$dataMap;try{$dataMap=oldInn;$gameMap.setup(18);$gamePlayer.locate(...position);}finally{$dataMap=current;}
+ },{oldInn,position:preservedPosition});
+ await save();await reload(18);
+ assert.equal(await p.evaluate(()=>$gameMap.tilesetId()),9);
+ assert.equal(await p.evaluate(()=>$gameMap.event(2)._priorityType),1);
+ assert.deepEqual(await p.evaluate(()=>[$gamePlayer.x,$gamePlayer.y]),preservedPosition);
+ checks.push('A real 0d8f209 serialized inn map adopts the new tileset/event priority without moving the player or healing on load.');
  const stable=await p.evaluate(()=>({gold:$gameParty.gold(),loot:ArenaLoot.snapshot(),quest:ArenaQuests.snapshot('MQ01'),points:ArenaAttributes.snapshot()}));
+ await walk([64,9]);await p.evaluate(()=>$gamePlayer.setDirection(4));
+ await key('Enter');await map(18);
+ assert.equal(await p.evaluate(()=>ArenaResources.snapshot().hp.current),100);
+ await p.evaluate(()=>{$gameActors.actor(1).setHp(12);$gameActors.actor(1).setMp(3);ArenaPersistence.setResource('vigor',7,ArenaResources.snapshot().vigor.maximum);});
+ await p.mouse.click(...await p.evaluate(()=>{
+  const r=Graphics._canvas.getBoundingClientRect();
+  return [r.x+($gameMap.adjustX(63)*48+24)*r.width/Graphics.width,r.y+($gameMap.adjustY(9)*48+24)*r.height/Graphics.height];
+ }));
+ await p.waitForFunction(()=>ArenaResources.snapshot().hp.current===100);
+ await walk([64,14]);
+ await p.evaluate(()=>{$gameActors.actor(1).setHp(12);window.pointerRestCalls=0;const original=ArenaResources.rest;ArenaResources.rest=function(){pointerRestCalls++;return original.apply(this,arguments);};});
+ const clickTarget=await p.evaluate(()=>{
+  const r=Graphics._canvas.getBoundingClientRect();
+  return [r.x+($gameMap.adjustX(63)*48+24)*r.width/Graphics.width,r.y+($gameMap.adjustY(9)*48+24)*r.height/Graphics.height];
+ });
+ await p.mouse.click(...clickTarget);
+ await p.waitForFunction(()=>ArenaResources.snapshot().hp.current===100);
+ assert.equal(await p.evaluate(()=>window.pointerRestCalls),1);
+ checks.push('Distant click walks to an accessible adjacent tile and rests once instead of targeting the blocked bed tile.');
+ checks.push('Regression: actual Enter beside headboard and click on the head tile both restore resources; the two-tile bed shares one event.');
+ await p.evaluate(()=>{$gameActors.actor(1).setHp(12);$gameActors.actor(1).setMp(3);ArenaPersistence.setResource('vigor',7,ArenaResources.snapshot().vigor.maximum);});
  await save();await reload(18);
  assert.deepEqual(await p.evaluate(()=>{const r=ArenaResources.snapshot();return [r.hp.current,r.mp.current,r.vigor.current];}),[12,3,7]);
  await key('Enter');await map(18);
@@ -155,7 +208,38 @@ files.forEach((f,i)=>assert.equal(canonical(f),before[i],f+' rebuild'));
  await leave();
  await walk(await p.evaluate(()=>{const e=$gameMap.event(5);return[e.x,e.y-1];}));
  await key('ArrowDown');await map(11);
- checks.push('After bed and informant stage 30, normal city circulation still reaches the functional court entrance.');
+
+ const position=await p.evaluate(()=>{const e=$gameMap.event(2);return[e.x,e.y+1];});
+ await walk(position);
+ await p.locator('#GameCanvas').screenshot({path:path.join(out,'corte.png')});
+ await talk(8);
+ async function chooseFirst(){
+  for(let i=0;i<130;i++){
+   const s=await p.evaluate(()=>{
+    const w=SceneManager._scene._messageWindow;if(w._textState)w._showFast=true;
+    return {choice:w._choiceWindow.isOpenAndActive()&&!w._choiceWindow._arenaCourtAwaitNeutral,paused:w.pause&&!w._waitCount};
+   });
+   if(s.choice){await p.evaluate(()=>SceneManager._scene._messageWindow._choiceWindow.select(0));await key('Enter');return;}
+   if(s.paused)await key('Enter');else await p.waitForTimeout(60);
+  }throw Error('no court choice');
+ }
+ await chooseFirst();await settle();
+ assert.equal(await p.evaluate(()=>ArenaQuests.snapshot('MQ02').stage),40);
+ await p.evaluate(()=>{
+  const q=ArenaQuests.snapshot('MQ02');
+  ArenaPersistence.setQuest('MQ02',50,q.objectives,false);
+  $gameParty.gainItem($dataItems[7],1);
+ });
+ await talk(8);await chooseFirst();await settle();
+ assert.equal(await p.evaluate(()=>ArenaQuests.snapshot('MQ02').stage),60);
+ assert.equal(await p.evaluate(()=>$gameParty.numItems($dataItems[7])),0);
+
+ const delivered=await state();
+ await p.evaluate(()=>$gameMap._tilesetId=4);await save();await reload(11);
+ assert.equal(await p.evaluate(()=>$gameMap.tilesetId()),10);
+ await talk(8);await settle();assert.deepEqual(await state(),delivered);
+ checks.push('Court approach, acceptance 30→40 and unique delivery 50→60 pass on the new atlas; save/load and repeat conversation preserve receipt and remove one parchment.');
+
  await p.evaluate(()=>SceneManager.goto(Scene_Title));await title();
  await p.evaluate(()=>ArenaRihad.preview());await map(9);await enter();await bed();
  assert.equal(await p.evaluate(()=>DataManager.saveGame(19)),false);
@@ -166,7 +250,7 @@ files.forEach((f,i)=>assert.equal(canonical(f),before[i],f+' rebuild'));
  assert.deepEqual(await state(),technical);
  checks.push('Existing RAM laboratory reaches the same inn; personal slots remain blocked and RAM restoration works inside.');
  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);
- fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({browser:browser.version(),base:'71fb510',checks,errors,missing,source:plan.source,ownerEvaluation:'pending integrated MQ02',storage:'isolated Chrome profile; synthetic slot19 only'},null,2)+'\n');
+ fs.writeFileSync(path.join(out,'resultado.json'),JSON.stringify({browser:browser.version(),base:'0d8f209',checks,errors,missing,source:plan.source,ownerEvaluation:'pending integrated MQ02',storage:'isolated Chrome profile; synthetic slot19 only'},null,2)+'\n');
  console.log(checks.join('\n'));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
