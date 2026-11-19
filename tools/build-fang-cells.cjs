@@ -41,6 +41,7 @@ function terrain(plan,s,m,atlas,stair){
 }
 module.exports=function(){
  const hound=require('./build-fang-hell-hound.cjs')();
+ require('./build-fang-ghost.cjs')();
  const atlas=installAtlas(materialSpec);
  const c=read('data/ArenaFangCells.json');
  const [upperPlan,lowerPlan]=read('doc/mapas/FANG_COBERTURA_M02.json').levels;

@@ -1,0 +1,1256 @@
+{
+  "base": "34bb70c",
+  "browser": "157.0.8103.80",
+  "url": "http://127.0.0.1:8774/",
+  "assets": {
+    "art/masters/fang-ghost-v01/battle-source.png": "51ca446f3f8ea79f2e92257b46a7c249d01f084aba512078c176b05cbde7ad8f",
+    "art/masters/fang-ghost-v01/walk-source.png": "878127f9111b259bb872ae72f6647efcf9f83181aafa032be7a4067833c53a7b",
+    "img/enemies/Arena_Combat_ghost_v01.png": "1de4712f437483745926dfd2f49ab233039c8dc86bb711d5b49a31cbbc45fe65",
+    "img/characters/$Arena_ghost_float_v01.png": "e9756e33847af09e08fd4e2734d355bd259126bf9d758970cdbb2bd540f52f77"
+  },
+  "checks": [
+    "Clean boot, native hub routing, one isolated specimen, normal saves blocked and storage empty",
+    "Four authored directions and three phases observed; floating movement, genuine patrol and native wall/pool/radius collision",
+    "RAM save/load restores specimen, actor and quest/point state without normal slots",
+    "Native contact once, all four battle motions/four frames, attack and technique damage/cost once, victory/return, one empty technical receipt and no duplicated grant",
+    "Defeat/receipt survive RAM load; leaving restores campaign config and provisional EXP100, no storage written",
+    "Fresh fixture resets specimen; native defeat remains game over"
+  ],
+  "collisions": [
+    false,
+    false,
+    false
+  ],
+  "trace": {
+    "directions": {
+      "2": [
+        1,
+        2,
+        0
+      ],
+      "4": [
+        1,
+        2,
+        0
+      ],
+      "6": [
+        1,
+        2,
+        0
+      ],
+      "8": [
+        1,
+        2,
+        0
+      ]
+    },
+    "steps": [
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "region": 4,
+        "distance": 0
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "region": 4,
+        "distance": 1
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "region": 4,
+        "distance": 2
+      }
+    ],
+    "motions": {
+      "idle": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "strike": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hurt": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "defeat": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "damage": [
+      {
+        "actor": true,
+        "value": 10
+      },
+      {
+        "actor": true,
+        "value": 10
+      },
+      {
+        "actor": false,
+        "value": 20
+      },
+      {
+        "actor": true,
+        "value": 20
+      },
+      {
+        "actor": false,
+        "value": 33
+      },
+      {
+        "actor": true,
+        "value": 20
+      },
+      {
+        "actor": false,
+        "value": 20
+      }
+    ],
+    "uses": [
+      2,
+      1,
+      6,
+      1
+    ]
+  },
+  "errors": [],
+  "missing": [],
+  "sourcePosition": [
+    3,
+    49
+  ],
+  "projectedPosition": [
+    291,
+    150
+  ],
+  "campaignPositionEnabled": false,
+  "reason": "Original chamber absent from connected dry-floor projection; crossing MAP1 walls/dry pit at (6,49)/(7,49) not demonstrated. No route invented.",
+  "recording": "Native canvas30fps, normal engine speed. Controlled direction demonstration, natural patrol, keyboard contact and normal battle with RNG0.5; separate1HP fixture tests defeat.",
+  "pending": [
+    "Owner visual evaluation at next integrated test",
+    "Original chamber access, then stable campaign encounter fang.1.enemy.mif3.49",
+    "Spell Drain/seeing invisible/flight physics not implemented; no new mechanic",
+    "No balance approval or full gameplay retest"
+  ],
+  "video": {
+    "file": "fantasma-patrulha-combate-normal.webm",
+    "durationSeconds": 34.566113,
+    "canvas": [
+      816,
+      624
+    ],
+    "playbackRate": 1
+  }
+}

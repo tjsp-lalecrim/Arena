@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "masters": {
+    "battle": "art/masters/fang-ghost-v01/battle-source.png",
+    "walk": "art/masters/fang-ghost-v01/walk-source.png"
+  },
+  "references": [
+    "tmp/ghost/wiki-3-1.png",
+    "tmp/ghost/referencia.png",
+    "img/enemies/Arena_Combat_hell_hound_v01.png"
+  ],
+  "prompts": {
+    "battle": "Use case: stylized-concept. Produce ONE transparent animation atlas, exactly 4 columns by 4 rows, 16 distinct fully separated full-body drawings of the SAME Ghost enemy from Elder Scrolls Arena. Reference1 is the original rendered Ghost identity: very narrow hairless humanoid spectral gray head, tiny paired deep-red eyes, high thin shoulders, long lean arms and elongated tapering lower body that ends in wispy points with NO feet. Reference2 is the decoded CFA silhouette/action source ONLY, its rainbow indexed colors are NOT literal ghost colors. Reference3 is ONLY Arena project's finely detailed dark-fantasy painted sprite finish and 4x4 atlas format; DO NOT copy the canine. Preserve the source creature, not a Halloween bedsheet, armored wraith, skeleton or hooded wizard. Bald smooth spectral head and indistinct gaunt gray face, dim red eyes, smoky charcoal-gray translucent body with cooler gray modeling; subtly visible arms/fingers; no mouth glow, hood, robe seams, clothes, weapon, armor, skull mask, horns or invented ornaments. True LATERAL profile facing screen LEFT, torso and head consistently facing left, slight oblique chest if needed for anatomy. Same slender height, consistent head/body scale, same pivot beneath pelvis; floating lower tip stays at same baseline except small physically drawn buoyant motion. Dark fantasy painterly figurative anatomy with readable soft edges and restrained translucency, moderate contrast against dark mine floor; no uniform ghost-white glow. Exactly four equal rows and four equal columns, broad transparent gutters and generous full-silhouette margins in each cell. Row1 four different calm floating poses: arms flex subtly, shoulders rise and fall, lower wisps curl differently, complete loop. Row2 four consecutive attack poses: draw nearest hand back, lift both arms and lean back in anticipation, fully articulate shoulder/elbow into an outstretched chilling grasp to LEFT, withdraw to neutral. Hand remains attached and no projectile or new spell effect. Row3 four hurt poses: neutral, chest recoils backward and arm bends, recoil relaxes, returns to neutral. Row4 four defeat poses: lower body begins to break into sparse gray wisps, shoulders collapse and silhouette fragments downward, small dissolving pieces of same gray apparition, final small faint residual gray wisp with no intact figure. Defeat is distinct from living idle, no gore or corpse. Real articulated differences between frames, not one drawing shifted around. No background scene, ground, cast shadow, fog spanning cells, labels, letters, borders, gridlines, watermarks or extra figures. Actual transparent alpha, retain translucent spectral edges. Each figure fully fits inside its own cell, never touching a cell edge. ONE atlas, no alternatives."
+  },
+  "approval": "Avaliação visual pendente no teste integrado; acesso de campanha ainda depende da ligação da câmara."
+}

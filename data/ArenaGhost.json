@@ -1,0 +1,160 @@
+{
+  "enemyId": 11,
+  "troopId": 12,
+  "name": "Fantasma",
+  "params": [
+    70,
+    0,
+    12,
+    4,
+    0,
+    7,
+    14,
+    6
+  ],
+  "hit": 0.9,
+  "exp": 100,
+  "source": "FANG1 flat58 GHOST.DFA / ITEM43, MIF (3,49). HP70/ATQ12/DEF4/MDF7/AGI14/SOR6/HIT90 e EXP100 provisórios; sem Spell Drain, invisibilidade ou voo físico. Câmara não ativada sem acesso comprovado.",
+  "scale": 1,
+  "loot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "Fantasma provisório de Fang Lair",
+    "source": "Wiki: sem cadáver; loot incerto. Sem itens/ouro atribuídos. EXP100 provisória só fora do laboratório; nenhuma posição de campanha ativada."
+  },
+  "mapVisual": {
+    "file": "$Arena_ghost_float_v01",
+    "cell": [
+      96,
+      96
+    ],
+    "ground": 90,
+    "animationWait": 12
+  },
+  "entry": {
+    "id": "technical.fang.ghost.arrival",
+    "mapId": 16,
+    "x": 4,
+    "y": 9,
+    "direction": 8
+  },
+  "roomSourceEventNote": "ArenaEncounter:technical.stonekeep.orc.walk.01",
+  "labLoot": {
+    "gold": {
+      "chance": 0,
+      "min": 0,
+      "max": 0
+    },
+    "potions": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "gearChance": 0,
+    "equipment": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "weapons": {
+      "chance": 0,
+      "min": 1,
+      "max": 1,
+      "entries": []
+    },
+    "questSources": [],
+    "rare": {
+      "chance": 0,
+      "variants": {},
+      "items": {
+        "chance": 0,
+        "min": 1,
+        "max": 1,
+        "entries": []
+      }
+    },
+    "difficulty": "isolated battle pilot only",
+    "source": "Empty rewards only for Spider battle/patrol laboratories; campaign uses its explicit separate configuration."
+  },
+  "encounters": {
+    "schemaVersion": 1,
+    "mapId": 16,
+    "areaId": "technical.fang.ghost",
+    "completionQuestId": "MQ02",
+    "mapVisuals": {
+      "11": {
+        "file": "$Arena_ghost_float_v01",
+        "cell": [
+          96,
+          96
+        ],
+        "ground": 90,
+        "animationWait": 12
+      }
+    },
+    "entries": [
+      {
+        "id": "technical.fang.ghost.01",
+        "eventId": 1,
+        "enemyId": 11,
+        "troopId": 12,
+        "origin": [
+          9,
+          6
+        ],
+        "sourceFlat": "Inspeção RAM; original FANG1 flat58 GHOST.DFA / ITEM43 em (3,49); acesso original pendente.",
+        "questSpecific": true,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          4
+        ],
+        "scale": 1
+      }
+    ]
+  },
+  "campaignPlacement": {
+    "enabled": false,
+    "id": "fang.1.enemy.mif3.49",
+    "original": [
+      3,
+      49
+    ],
+    "reason": "Acesso da câmara junto ao poço seco ainda não demonstrado; exemplar somente no hub RAM."
+  }
+}

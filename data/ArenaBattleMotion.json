@@ -12154,6 +12154,186 @@
           "impact": null
         }
       }
+    },
+    "11": {
+      "file": "Arena_Combat_ghost_v01",
+      "cell": [
+        192,
+        160
+      ],
+      "ground": 150,
+      "version": "fang-ghost-v01",
+      "actionMotion": "strike",
+      "motions": {
+        "idle": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                0,
+                192,
+                160
+              ],
+              "duration": 28
+            },
+            {
+              "rect": [
+                192,
+                0,
+                192,
+                160
+              ],
+              "duration": 28
+            },
+            {
+              "rect": [
+                384,
+                0,
+                192,
+                160
+              ],
+              "duration": 28
+            },
+            {
+              "rect": [
+                576,
+                0,
+                192,
+                160
+              ],
+              "duration": 28
+            }
+          ],
+          "loop": true,
+          "impact": null
+        },
+        "strike": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                160,
+                192,
+                160
+              ],
+              "duration": 12
+            },
+            {
+              "rect": [
+                192,
+                160,
+                192,
+                160
+              ],
+              "duration": 9
+            },
+            {
+              "rect": [
+                384,
+                160,
+                192,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                576,
+                160,
+                192,
+                160
+              ],
+              "duration": 12
+            }
+          ],
+          "loop": false,
+          "impact": 2
+        },
+        "hurt": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                320,
+                192,
+                160
+              ],
+              "duration": 6
+            },
+            {
+              "rect": [
+                192,
+                320,
+                192,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                384,
+                320,
+                192,
+                160
+              ],
+              "duration": 8
+            },
+            {
+              "rect": [
+                576,
+                320,
+                192,
+                160
+              ],
+              "duration": 8
+            }
+          ],
+          "loop": false,
+          "impact": null
+        },
+        "defeat": {
+          "frames": [
+            {
+              "rect": [
+                0,
+                480,
+                192,
+                160
+              ],
+              "duration": 12
+            },
+            {
+              "rect": [
+                192,
+                480,
+                192,
+                160
+              ],
+              "duration": 14
+            },
+            {
+              "rect": [
+                384,
+                480,
+                192,
+                160
+              ],
+              "duration": 13
+            },
+            {
+              "rect": [
+                576,
+                480,
+                192,
+                160
+              ],
+              "duration": 17
+            }
+          ],
+          "loop": false,
+          "impact": null
+        }
+      }
     }
   },
   "weapons": {
