@@ -529,7 +529,9 @@
           "item": 43,
           "status": "pending",
           "area": "câmara do Fantasma",
-          "dependency": "ghost-assets-and-access"
+          "dependency": "access-unconfirmed-assets-available",
+          "assetState": "battle-and-float-v01; visual evaluation pending",
+          "plannedId": "fang.1.enemy.mif3.49"
         },
         {
           "original": [
@@ -2931,7 +2933,7 @@
         46,
         51
       ],
-      "dependency": "combate/patrulha do Fantasma e acesso junto ao poço seco"
+      "dependency": "acesso junto ao poço seco não demonstrado; combate/patrulha V01 disponíveis em RAM"
     },
     {
       "level": 1,
@@ -2986,7 +2988,7 @@
         73,
         76
       ],
-      "dependency": "combate e patrulha de Hell Hound; fragmento continua acessível"
+      "dependency": "Hell Hounds integrados nas duas posições; avaliação visual pendente, sem impedir o fragmento"
     },
     {
       "level": 1,

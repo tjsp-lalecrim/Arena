@@ -59,5 +59,6 @@ var $plugins =
 {"name":"Arena_Orc","status":true,"description":"v0.2.0 Batalha do orc e exemplar de caminhada, somente RAM","parameters":{}},
 {"name":"Arena_LizardPatrol","status":true,"description":"v0.1.0 Exemplar de caminhada do homem-lagarto, somente RAM","parameters":{}},
 {"name":"Arena_Minotaur","status":true,"description":"v0.1.0 Minotauro: combate e patrulha RAM, alias OGRE.DFA corrigido","parameters":{}},
-{"name":"Arena_Spider","status":true,"description":"Stonekeep: exemplar aranha, combate e patrulha RAM.","parameters":{}}
+{"name":"Arena_Spider","status":true,"description":"Stonekeep: exemplar aranha, combate e patrulha RAM.","parameters":{}},
+{"name":"Arena_Ghost","status":true,"description":"Fantasma de Fang Lair: exemplar RAM; acesso original pendente.","parameters":{}}
 ];
