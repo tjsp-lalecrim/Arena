@@ -429,6 +429,21 @@
         "hurt": 2,
         "defeat": 3
       }
+    },
+    "11": {
+      "file": "Arena_Combat_ghost_v01",
+      "cell": [
+        192,
+        160
+      ],
+      "ground": 150,
+      "speed": 8,
+      "rows": {
+        "wait": 0,
+        "action": 1,
+        "hurt": 2,
+        "defeat": 3
+      }
     }
   }
 }

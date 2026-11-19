@@ -12,6 +12,20 @@ Os pisos e as faces foram aplicados à entrada, alas secas, celas, patamares e s
 
 **Próximo teste integrado.** Compare o contraste com o personagem e os Hell Hounds. Observe a leitura de piso e bordas de rocha da entrada à sala do fragmento, a posição das portas e a transição na escada. [Entrada](evidencias/m02-fang-atlas/entrada.png) · [Celas](evidencias/m02-fang-atlas/celas.png) · [Escada](evidencias/m02-fang-atlas/escada.png) · [Sala do fragmento](evidencias/m02-fang-atlas/sala.png) · [Verificações](evidencias/m02-fang-atlas/fang-lair.json).
 
+## Fantasma — exemplar V01 e acesso pendente — 19/11/2026
+
+**Identidade confirmada:** FANG1.INF, flat58, `GHOST.DFA / ITEM43`; MAP1 `0x803A` em MIF(3,49), coordenadas de matriz com base0. A transformação vigente projeta o centro em MV(291,150). `GHOST1–6.CFA` do GLOBAL.BSA foram decodificados para consulta, com hashes no [registro de fontes](arte/ghost-v01/sources.json). O MIF instalado confere com o hash do levantamento. A imagem renderizada na página4 do PDF local Monsters mostra silhueta humanoide estreita, corpo cinza-escuro afilado, flutuação e olhos vermelhos. Indexar os CFA diretamente com PAL.COL produz cores diferentes; essas cores de consulta não foram tomadas como aparência literal. Não foi alegada observação executada no DOS.
+
+**Limite de integração:** a câmara ainda não faz parte do piso conectado projetado. A ligação para a área acessível encontra MAP1 sólido em(6,49), com o trecho(7,49) junto ao poço seco ainda sem travessia demonstrada. Não abrir parede por suposição nem atribuir passagem ao voo do monstro. O encontro da campanha `fang.1.enemy.mif3.49` permanece identificado e **pendente de acesso**. A contagem ativa continua **40/76 no primeiro nível e17/19 no segundo**; disponibilidade dos assets não aumenta a cobertura.
+
+**Exemplar disponível:** Testes / Debug → Combate → **Fang Lair · Fantasma (RAM)**, em http://127.0.0.1:8774/. Usa a sala Map016 somente em memória, sem alterar o mapa de campanha. Observar flutuação, quatro direções e contato; vencer remove somente o ID técnico `technical.fang.ghost.01`. Guardar/Carregar teste pelo menu usa snapshot RAM; slots normais são bloqueados. Voltar ao título e entrar novamente reinicia o exemplar. Não requer saves pessoais.
+
+O original documenta Vida60–80, dano5–25, EXP=`HP×25+1500`, voo, visão de invisíveis e Spell Drain. A adaptação inicial usa Vida70, ATQ12, DEF4, MAT0, MDF7, AGI14, SOR6 e acerto90%, com o ataque físico existente. São **parâmetros provisórios**, próximos da faixa dos outros exemplares; MDF/AGI diferenciadas não equivalem a resistência ou invisibilidade originais. A EXP100 fora do laboratório é uma reserva provisória explícita, ligeiramente acima do Hell Hound90, sem conversão direta da EXP original. Nenhum encontro de campanha a concede nesta entrega. Laboratório:0EXP, sem ouro/itens. Fonte informa ausência de cadáver e loot incerto; não inventada uma tabela. Drenagem, invisibilidade, voo físico e regras especiais continuam sem implementação, para avaliação própria quando necessárias.
+
+**Arte e reconstrução:** um mestre lateral4×4 e um direcional3×4, fundo transparente, corpo cinza sem equipamento, movimento articulado das mãos/ombros e cauda espectral. Não se simula passada de pés. Perspectivas e dissolução são adaptações ao runtime. [Prompts e mestres](arte/ghost-v01/prompt.json) · [perfil](arte/ghost-v01/profile.json) · [recortes/quadros](arte/ghost-v01/exports.json). Exportar com `python tools/export-fang-ghost.py`, reconstruir com `node tools/build-rihad-arrival.cjs`; `build-fang-cells` chama o cadastro do Fantasma sem ativar sua posição. O exportador isola a grade e remove partículas desconectadas pequenas, preservando a alfa gerada no corpo/franjas; mantém escala única e âncora. Batalha192×160/apoio150 e mapa96×96/apoio90.
+
+[Verificação focal](evidencias/m02-fang-ghost/resultado.json): abertura limpa no Chrome isolado, quatro direções/fases, colisão, contato único,16 quadros de combate, custos/impactos, vitória e derrota, recibo único e serialização RAM antes/depois. Reconstrução idempotente e mapas/quest de campanha preservados. [Vídeo real em velocidade normal](evidencias/m02-fang-ghost/fantasma-patrulha-combate-normal.webm). A avaliação visual fica **pendente no próximo teste integrado**. Pages e release não atualizados.
+
 ## Hell Hounds da sala do fragmento
 
 O `FANG2.INF` vincula `MAP1 0x8039` ao flat 57, `HELLHOUN.DFA / ITEM42`. O índice 10 no `ACD.EXE` instalado identifica **Hell Hound** e `HOUND@.CFA`. A consulta de `HOUND1–6.CFA` no `GLOBAL.BSA`, com `PAL.COL`, mostra o corpo canino alongado, ombros pesados, pelagem azul-negra, olhos vermelhos e derrota em brasas. O acabamento em carvão com luz fria, a mordida lateral e a projeção superior são adaptações. [Arquivos e tabelas de origem](arte/hell-hound-v01/sources.json).
@@ -176,7 +190,7 @@ As falas usam os blocos do [inventário textual](CAMPANHA_PRINCIPAL.md#inventár
 
 Cinco grupos passaram em Chrome 157 com perfil e slots descartáveis. O teste usou a entrega real a partir de uma fixture com pergaminho e acelerou apenas a caminhada e uma vitória. Cobriu cancelamento, travessia, combate, saves antes e depois da abertura, retorno e retomada de um Map013 da amostra. A reconstrução também passou. [Resultado automatizado](evidencias/m02-fang-campanha/resultado.json).
 
-O teste manual continua pendente. Para completar Fang Lair, faltam os demais setores, conexões e encontros do primeiro nível, arte definitiva, segundo nível, segundo enigma, fragmento e retaliação. Fantasma e hell hound ainda precisam de combate e patrulha. O servo de Tharn segue sem identificação.
+O teste manual continua pendente. Para completar Fang Lair, faltam os demais setores, conexões e encontros do primeiro nível, arte definitiva, segundo nível, segundo enigma, fragmento e retaliação. Naquela revisão, Fantasma e Hell Hound ainda precisavam de combate e patrulha; situação vigente no inventário abaixo. O servo de Tharn segue sem identificação.
 
 ## Inventário de criaturas e materiais do M02
 
@@ -190,11 +204,11 @@ Leitura direta de `42068779.MIF`: **dois níveis de 100×100**, vinculados a FAN
 | Aranha, SPIDER.DFA / ITEM40 | 24 | 0 | 24 | Reuso aprovado com ressalva | Reuso |
 | Ghoul | 9 | 2 | 11 | Reuso | Reuso |
 | Homem-lagarto | 0 | 4 | 4 | Reuso | Reuso |
-| Fantasma, GHOST.DFA / ITEM43, MIF (3,49) | 1 | 0 | 1 | **Novo** | **Nova** |
+| Fantasma, GHOST.DFA / ITEM43, MIF (3,49) | 1 | 0 | 1 | V01 disponível em RAM; avaliação visual pendente | V01 disponível em RAM; acesso da câmara pendente |
 | Hell hound, HELLHOUN.DFA / ITEM42, MIF (63,74)/(65,74) | 0 | 2 | 2 | **Integrado** | **Integrada** |
-| **Total** | **76** | **19** | **95** | **2 espécies pendentes** | **2 espécies pendentes** |
+| **Total** | **76** | **19** | **95** | **0 conjuntos ausentes; avaliação pendente** | **0 conjuntos ausentes; avaliação pendente** |
 
-O fragmento em MIF (64,75) resolve `CHAOS1.DFA` / ITEM13 e fica fora da contagem de criaturas. A aranha das celas foi identificada como a mesma espécie de Stonekeep pela combinação **SPIDER.DFA + ITEM40**. Quatro das 24 posições ficam nas celas condicionadas e usam encontros persistentes. A tabela acima registra a situação dos demais encontros. A matriz de Stonekeep tem 9 espécies com ambos os conjuntos disponíveis. O M02 soma **11 espécies distintas confirmadas** até aqui, das quais **2 precisam de combate e patrulha**, **0 só de combate** e **0 só de patrulha**. Os arredores adaptados de Rihad reaproveitam o rato. [Levantamento urbano](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).
+O fragmento em MIF (64,75) resolve `CHAOS1.DFA` / ITEM13 e fica fora da contagem de criaturas. A aranha das celas foi identificada como a mesma espécie de Stonekeep pela combinação **SPIDER.DFA + ITEM40**. Quatro das 24 posições ficam nas celas condicionadas e usam encontros persistentes. A tabela acima registra a situação dos demais encontros. A matriz de Stonekeep tem 9 espécies com ambos os conjuntos disponíveis. O M02 soma **11 espécies distintas confirmadas** até aqui, das quais **0 estão sem combate ou patrulha**. O Hell Hound já está integrado nas duas posições; o Fantasma tem ambos os conjuntos disponíveis em RAM, com avaliação visual e ativação da posição original pendentes de acesso. Não confundir11 espécies com95 encontros nem disponibilidade com aprovação. Os arredores adaptados de Rihad reaproveitam o rato. [Levantamento urbano](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).
 
 O servo de Tharn fica **fora da contagem** até identificar a espécie ou regra de seleção. O relato da wiki e TEMPLATE #1392 estabelecem a retaliação, sem associá-la ao fantasma, aos hell hounds ou a uma criatura específica. Registrar também o possível comportamento de fogo dos hell hounds como dependência de design, sem decidir regras de combate neste inventário.
 

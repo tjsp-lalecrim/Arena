@@ -1,0 +1,105 @@
+{
+  "archive": "GLOBAL.BSA",
+  "palette": "PAL.COL; special Ghost rendering not reproduced by naive PAL.COL indexing",
+  "map": "42068779.MIF",
+  "mapSHA256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7",
+  "inf": "FANG1.INF",
+  "map1": "0x803A",
+  "flat": 58,
+  "alias": "GHOST.DFA",
+  "item": 43,
+  "position": [
+    3,
+    49
+  ],
+  "coordinates": "MIF layer array zero-based X/Y; reflected X in MV: (3+3*(99-X),3+3*Y) => (291,150)",
+  "animations": [
+    {
+      "file": "GHOST1.CFA",
+      "width": 100,
+      "height": 99,
+      "frames": 12,
+      "sha256": "fcf20d97b4fc25be3012e0472e4884662becf14fb2188d8dc8af457f5e163a80"
+    },
+    {
+      "file": "GHOST2.CFA",
+      "width": 75,
+      "height": 98,
+      "frames": 8,
+      "sha256": "f866fb31272cb6416f75e74375265721905f1e2ad5d08b1bb63fadcd0d329dfc"
+    },
+    {
+      "file": "GHOST3.CFA",
+      "width": 58,
+      "height": 93,
+      "frames": 8,
+      "sha256": "4f7abd553d8c95f52888d4529dcfda63645b8d589a238518e4ef73b1334c4784"
+    },
+    {
+      "file": "GHOST4.CFA",
+      "width": 74,
+      "height": 95,
+      "frames": 8,
+      "sha256": "5e9b9ce5289b6486114dee7f9665f359491cddb4b7b91e286dc6c0b6eea9df90"
+    },
+    {
+      "file": "GHOST5.CFA",
+      "width": 76,
+      "height": 101,
+      "frames": 8,
+      "sha256": "253e5e5e6aff88ed84f4e7c5726050db7fbdcc37ed661292a06331ce758df164"
+    },
+    {
+      "file": "GHOST6.CFA",
+      "width": 41,
+      "height": 97,
+      "frames": 3,
+      "sha256": "80f02db19cc6f25910b68b5a52289abeccf5efbfe86427421d045c565551a4b9"
+    }
+  ],
+  "wiki": "doc/wiki/Arena_Monsters - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf, p4; Fang Lair quest map local PDF and existing matrix",
+  "renderedReference": "Ghost image extracted from local Monsters PDF p4; charcoal-gray tapering floating humanoid, red eyes; raw indexed CFA palette colors not used literally",
+  "originalStats": {
+    "hp": [
+      60,
+      80
+    ],
+    "damage": [
+      5,
+      25
+    ],
+    "exp": "HP*25+1500",
+    "attributes": {
+      "STR": 30,
+      "INT": 50,
+      "WIL": 60,
+      "AGI": 70,
+      "END": 50,
+      "PER": 40,
+      "SPD": 70,
+      "LUC": 60
+    },
+    "abilities": [
+      "flight",
+      "sees invisible",
+      "Spell Drain level5"
+    ],
+    "loot": "no corpse; unknown (?) in source"
+  },
+  "adaptation": "Gray semitransparent painterly anatomy; lateral battle and four orthogonal map views. Float is visual only, no new collision exemption, spell drain, invisibility or resistance. Provisional existing physical attack; stats not a direct formula conversion. No original executable playtest claimed.",
+  "access": {
+    "campaignEnabled": false,
+    "blockedCells": [
+      [
+        6,
+        49
+      ],
+      [
+        7,
+        49
+      ]
+    ],
+    "evidence": "MAP1 wall record 0x1D1D at x6 and floor/pit boundary east of chamber. Current dry-route matrix does not project chamber; no documented traversal across this separator. Chamber original positions remain pending.",
+    "nextDecision": "Confirm original passage/mobility before activating fang.1.enemy.mif3.49; no corridor cut by assumption."
+  }
+}
