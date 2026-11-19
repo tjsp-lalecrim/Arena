@@ -1,0 +1,309 @@
+{
+  "grate": {
+    "source": "art/masters/m02-dungeon-objects-v01/grate-source.png",
+    "sha256": "9da4e33083cbd489daf594ca49422570fcf2978a24e6e29fbd85de9257daf8bc",
+    "parts": [
+      {
+        "source": [
+          95,
+          63,
+          628,
+          523
+        ]
+      },
+      {
+        "source": [
+          820,
+          64,
+          1353,
+          523
+        ]
+      },
+      {
+        "source": [
+          346,
+          583,
+          377,
+          1061
+        ]
+      },
+      {
+        "source": [
+          1071,
+          583,
+          1102,
+          1061
+        ]
+      }
+    ]
+  },
+  "img/characters/!$Arena_Stonekeep_Grate_V01.png": {
+    "sha256": "2c430b8b86ce9595d3c5c96335ecaa8f76ea787af51c5265faf590a168482568",
+    "size": [
+      432,
+      576
+    ]
+  },
+  "img/characters/!$Arena_Mine_Grate_V01.png": {
+    "sha256": "343b34ffa3e33c530b68bb733284db0d10f733b8debb18f34d5482ff2fd7aa52",
+    "size": [
+      432,
+      576
+    ]
+  },
+  "steel": {
+    "source": "art/masters/m02-dungeon-objects-v01/steel-source.png",
+    "sha256": "67b2c423341faba5f31556fdd533c250354a4cadab6db773f015aa30eca585d3",
+    "parts": [
+      {
+        "source": [
+          121,
+          107,
+          770,
+          544
+        ]
+      },
+      {
+        "source": [
+          1010,
+          107,
+          1654,
+          544
+        ]
+      },
+      {
+        "source": [
+          87,
+          723,
+          793,
+          769
+        ]
+      },
+      {
+        "source": [
+          975,
+          723,
+          1686,
+          769
+        ]
+      }
+    ]
+  },
+  "img/characters/!$Arena_Mine_SteelDoor_V01.png": {
+    "sha256": "9bf89b742bc48af46505d57f2b65479d7bdf7f90fc440c87ffdfaf235c53bc20",
+    "size": [
+      432,
+      576
+    ]
+  },
+  "props": {
+    "source": "art/masters/m02-dungeon-objects-v01/props-source.png",
+    "sha256": "e0cec36cead8c93ca3f6659c3b1f2625e02367aef5c487e2dfb1689ceb5485ad",
+    "parts": [
+      {
+        "source": [
+          136,
+          35,
+          332,
+          428
+        ]
+      },
+      {
+        "source": [
+          477,
+          136,
+          851,
+          335
+        ]
+      },
+      {
+        "source": [
+          917,
+          38,
+          1235,
+          356
+        ]
+      },
+      {
+        "source": [
+          1422,
+          38,
+          1741,
+          356
+        ]
+      },
+      {
+        "source": [
+          33,
+          536,
+          348,
+          849
+        ]
+      },
+      {
+        "source": [
+          536,
+          534,
+          854,
+          849
+        ]
+      },
+      {
+        "source": [
+          919,
+          519,
+          1299,
+          810
+        ]
+      },
+      {
+        "source": [
+          1361,
+          630,
+          1740,
+          696
+        ]
+      }
+    ]
+  },
+  "curves": {
+    "source": "art/masters/m02-dungeon-objects-v01/curves-source.png",
+    "sha256": "384f2034a8582801fefb0e38ba283e2810281e6b34bf6edd7dc517212e8a3798",
+    "parts": [
+      {
+        "source": [
+          56,
+          46,
+          569,
+          543
+        ]
+      },
+      {
+        "source": [
+          694,
+          46,
+          1205,
+          543
+        ]
+      },
+      {
+        "source": [
+          55,
+          699,
+          565,
+          1202
+        ]
+      },
+      {
+        "source": [
+          691,
+          699,
+          1205,
+          1202
+        ]
+      }
+    ]
+  },
+  "img/tilesets/Arena_Mine_Objects_V01_D.png": {
+    "sha256": "bdb78e36c71f35038831cfbf81d41b737dd51ec65428497560212f3ceefe62ff",
+    "size": [
+      384,
+      768
+    ]
+  },
+  "img/characters/!$Arena_Mine_Brace_V01.png": {
+    "sha256": "1a6be5c90e66eae9180493b6b74ac0ef555e5f1fdf46c950a8a9ca1d17a4848d",
+    "size": [
+      432,
+      576
+    ]
+  },
+  "tiles": {
+    "ns": [
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520
+    ],
+    "ew": [
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529
+    ],
+    "nw": [
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538
+    ],
+    "ne": [
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547
+    ],
+    "sw": [
+      548,
+      549,
+      550,
+      551,
+      552,
+      553,
+      554,
+      555,
+      556
+    ],
+    "se": [
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      564,
+      565
+    ]
+  },
+  "anchorChecks": {
+    "Stonekeep_Grate": {
+      "frames": 12,
+      "uniqueStages": true,
+      "openCentreTransparent": true,
+      "fixedGuidesOrHinges": true
+    },
+    "Mine_Grate": {
+      "frames": 12,
+      "uniqueStages": true,
+      "openCentreTransparent": true,
+      "fixedGuidesOrHinges": true
+    },
+    "Mine_SteelDoor": {
+      "frames": 12,
+      "uniqueStages": true,
+      "openCentreTransparent": true,
+      "fixedGuidesOrHinges": true
+    }
+  }
+}
