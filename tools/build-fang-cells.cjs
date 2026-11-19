@@ -1,6 +1,6 @@
 // Fang Lair campaign and connected dry wings, using provisional runtime tiles.
 const fs=require('fs'),path=require('path'),R=path.resolve(__dirname,'..');
-const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),write=(n,v)=>fs.writeFileSync(path.join(R,'data/'+n+'.json'),(Array.isArray(v)?'[\n'+v.map(x=>JSON.stringify(x)).join(',\n')+'\n]':v.data&&v.events?JSON.stringify(v):JSON.stringify(v,null,2))+'\n');
+const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),write=(n,v)=>{if(n==='Map013'||n==='Map017')require('./m02-dungeon-objects.cjs')(n,v);return fs.writeFileSync(path.join(R,'data/'+n+'.json'),(Array.isArray(v)?'[\n'+v.map(x=>JSON.stringify(x)).join(',\n')+'\n]':v.data&&v.events?JSON.stringify(v):JSON.stringify(v,null,2))+'\n');};
 const installAtlas=require('./m02-surface-atlas.cjs');
 const materialSpec=require('../doc/arte/m02-tilesets/fang.json');
 const materialPlan=require('../doc/mapas/FANG_MATERIAIS_M02.json');

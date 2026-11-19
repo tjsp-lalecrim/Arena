@@ -1,0 +1,137 @@
+{
+  "base": "b996fb3",
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Old-map normal save/load refreshes door art and adds only24 through decorations; player/quests/resources/items/receipts/self switches unchanged",
+    "Existing wrong/correct riddle, unique key/receipt, open cell/steel art and normal save/load preserve MQ02; no duplicated item/reward",
+    "All12 Stonekeep raising grates open/close with native transitions; occupied envelope refuses closing; open state normal save/load preserved"
+  ],
+  "coverage": {
+    "stoneGrates": 12,
+    "mineGrates": 11,
+    "steelPortals": 2,
+    "braces": 24,
+    "trackCells": 364
+  },
+  "doors": [
+    {
+      "id": "stonekeep.b3.door.mif12.31",
+      "axis": "north-south",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif15.31",
+      "axis": "north-south",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif18.31",
+      "axis": "north-south",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif20.31",
+      "axis": "north-south",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif10.33",
+      "axis": "east-west",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": 2
+    },
+    {
+      "id": "stonekeep.b3.door.mif10.35",
+      "axis": "east-west",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif10.38",
+      "axis": "east-west",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif10.42",
+      "axis": "east-west",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif10.44",
+      "axis": "east-west",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif12.46",
+      "axis": "north-south",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": 2
+    },
+    {
+      "id": "stonekeep.b3.door.mif15.46",
+      "axis": "north-south",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    },
+    {
+      "id": "stonekeep.b3.door.mif17.46",
+      "axis": "north-south",
+      "opened": true,
+      "closed": true,
+      "occupiedCloseRefused": true,
+      "collisionBothDirections": true,
+      "lockValue": null
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "storage": "Disposable Chrome profile; native slot19 only synthetic data. Personal profiles untouched.",
+  "timing": "Door/lock transitions stepped through native Game_Map.update in synthetic fixture; no runtime timing or performance claim. Screens show actual renderer.",
+  "pending": [
+    "Integrated owner visual evaluation",
+    "Dragon gate visual association and cart positions remain unconfirmed",
+    "Lava and narrative illustrations unchanged"
+  ],
+  "assetProof": "doc/arte/m02-dungeon-objects-v01/exports.json: selected masters/runtime SHA256 and pixel anchor invariants",
+  "sourceProof": "doc/arte/m02-dungeon-objects-v01/sources.json"
+}

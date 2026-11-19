@@ -1,0 +1,29 @@
+{
+  "tool": "built-in image_gen",
+  "approval": "Avaliação visual pendente no teste integrado; não aprova assets por integração.",
+  "masters": {
+    "grate": "art/masters/m02-dungeon-objects-v01/grate-source.png",
+    "steel": "art/masters/m02-dungeon-objects-v01/steel-source.png",
+    "props": "art/masters/m02-dungeon-objects-v01/props-source.png",
+    "curves": "art/masters/m02-dungeon-objects-v01/curves-source.png"
+  },
+  "prompts": {
+    "grate": "Use case: stylized-concept. One transparent modular game-object component master, 2 columns by 2 rows, four independent iron grille components based on the original PORTCULS.IMG and MCELL.IMG visible in reference image1. Preserve the original dull silver/gray square lattice, square-section wrought iron vertical bars with several narrow horizontal braces, subtle brown rust at joints, simple structural metal perimeter, NO spikes or invented heraldry. Detailed restrained dark fantasy painterly finish consistent with Arena orthogonal 48px maps; legible gray bars with transparent holes, no masonry, ground, wood, black-filled holes or cast shadow. Upper-left diffuse lighting. Top row: left full FRONT grille panel and right full BACK grille panel, SAME wide proportions about width136 to height96, rectangular flat orthographic vertical elevation, no perspective converging edges. These panels fill the lower two-tile wall face in the game. No decorative door frame beyond metal perimeter, no hinges needed on the top-row raising-gate model, no walls incorporated. Bottom row: left and right two true OVERHEAD closed-grille edge components, very narrow vertical long strips in the image plane, proportions width8 to length136, one representing the metal top seen along left side and one right side. They are seen straight from above, not a tall front panel rotated and not isometric. Maintain a broad transparent safety gutter around every one of the4 components; top-row components centered in own cells, bottom-row narrow strips centered in own cells. Exactly four full objects in a clean 2x2 layout, equal grid cells, no alternate proposals, no animation sequence, labels, text, border or dividers. Actual transparent alpha. Production will crop and pack these components once and animate them mechanically with fixed guides/hinges; preserve straight rectilinear modular edges.",
+    "steel": "Use case: stylized-concept. Exactly ONE transparent modular closed steel mine door component master,4 components in a clean2columns by2rows grid. Use MDOOR6.IMG in reference image1 as authoritative: warm gray steel slabs with regular small square/riveted studs, narrow dark vertical join, modest thin iron edge strips and a small square dark latch plate on RIGHT HALF. Preserve restrained age/rust, not wood, gold, runes, dragon ornaments or a modern vault. Dark-fantasy painted realistic aged steel at scale for48px orthogonal tiles; diffuse upper-left light, readable against brown mine rock. Top row: LEFT straight orthographic FRONT elevation of a full double-leaf rectangular door panel width136:height96; RIGHT back elevation of same panel/proportions with corresponding structural hardware. Two leaves and fixed outer hinge edges are the project's adaptation; no stone jambs, wall, floor or arch included. Bottom row LEFT and RIGHT: very thin vertical strips width8:length136 representing true OVERHEAD top view of closed paired metal leaves spanning the same doorway, distinct front/back edge treatment, real top edge of same steel slab, no frontal wall drawn on its side and no isometric projection. Exactly4 independent full components, one per cell, generous transparent margins and equal cell sizes. No opening states yet: engine will mechanically animate generated pieces around stable pivots. Straight panel edges, exact regular construction, consistent material and density; no perspective taper, text, symbols, labels, background, ground shadow, border or extra designs. Actual transparent alpha."
+  },
+  "references": [
+    "tmp/m02-objects/references.png",
+    "tmp/m02-objects/gates-rails.png",
+    "tmp/m02-objects/BRACE.IMG.png"
+  ],
+  "adaptations": [
+    "Grade compartilhada PORTCULS/MCELL; movimentos diferentes: elevação e giro.",
+    "Componentes superiores são top views próprios; orientação do strip ajustada na exportação, nunca rotação da face frontal.",
+    "Dragon gate e vagonetes sem associação visual/posição comprovada permanecem pendentes; nenhum símbolo ou flat arbitrário criado."
+  ],
+  "productionNotes": [
+    "Primeira prancha: retas e suportes aproveitados; curvas com um só trilho rejeitadas.",
+    "Edição das curvas e extração de fundo retornaram fundo/artefatos inadequados; não usadas no runtime.",
+    "Quatro curvas de dois trilhos produzidas separadamente como correção do mesmo conjunto, sem variantes para avaliação."
+  ]
+}

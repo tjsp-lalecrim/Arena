@@ -1,0 +1,95 @@
+{
+  "resources": [
+    {
+      "file": "PORTCULS.IMG",
+      "sha256": "ffe9721bc21a623905492c67463729346014695adaf5a5ea7ef91d5adea9c059",
+      "bytes": 4096
+    },
+    {
+      "file": "MCELL.IMG",
+      "sha256": "ccead6c6be33c45fe3de2522d8b01039a2714df60afacb0aa903461957376196",
+      "bytes": 4096
+    },
+    {
+      "file": "MDOOR6.IMG",
+      "sha256": "fbe64d8fb4665e4c84e54d303b3b18fa87a2ba376a300bfa9d33d216729bff26",
+      "bytes": 4096
+    },
+    {
+      "file": "BRACE.IMG",
+      "sha256": "c14d60886a3546a1c522d5653e4000e01a7f6fcdbecdc098b5dfe51b786aae49",
+      "bytes": 4096
+    },
+    {
+      "file": "FLOOR_C0.IMG",
+      "sha256": "b1414ecbaae61444387d162d85d494e6321ceb24829655edb2245759b66c3a3b",
+      "bytes": 4096
+    },
+    {
+      "file": "FLOOR_C2.IMG",
+      "sha256": "2698669c5c32c43ecc3bace376e7d106ff432fd1e7a2192ff1f7381e1181ec8c",
+      "bytes": 4096
+    },
+    {
+      "file": "FLOOR_C4.IMG",
+      "sha256": "d1b70e08f17fbf0875a440a09994613118242c22c93acba7bac628966e4bded1",
+      "bytes": 4096
+    },
+    {
+      "file": "FLOOR_C5.IMG",
+      "sha256": "d5ffabd7ebe022b70366394fd150762aee9ead74790056cb579a25728c793222",
+      "bytes": 4096
+    },
+    {
+      "file": "FLOOR_C6.IMG",
+      "sha256": "13e2e522e0f8b8d845205289d2f2b6194590fa02fb9356b64789505bd5d59b28",
+      "bytes": 4096
+    },
+    {
+      "file": "FLOOR_C8.IMG",
+      "sha256": "3e7a6c894a5adedb2c681d1f9f462d4efc4db7b26df447ecef836baa5a826f32",
+      "bytes": 4096
+    },
+    {
+      "file": "MSU.IMG",
+      "sha256": "8944149e0f000791709c664ccfc1edb86019e31012eb95da9bb6269c45c7e6ce",
+      "bytes": 4096
+    },
+    {
+      "file": "DGATE.IMG",
+      "sha256": "af3175cc34f488312b63ac70aadde7f34fad2aba07530253d7fcba6f44a0919e",
+      "bytes": 4096
+    }
+  ],
+  "maps": [
+    {
+      "file": "39699021.MIF",
+      "sha256": "4eb604e21b1b73c3fa85c1a544588d6a847a9cff496c4efab9f1b313b8b7d45b"
+    },
+    {
+      "file": "42068779.MIF",
+      "sha256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7"
+    }
+  ],
+  "facts": [
+    "STKEEP1:0xB094 -> texture index19 PORTCULS.IMG; type bits0x80 raising.",
+    "FANG1:0xB016 -> MCELL.IMG, swinging. FANG1/FANG2:0xB013 -> MDOOR6.IMG, swinging.",
+    "FANG1:0x9138 -> BRACE.IMG, transparent walk-through;24 of44 positions in projected floor.",
+    "FLOR indices5/7/8/9/10/11 -> FLOOR_C0/C2/C4/C5/C6/C8;364 projected cells. Horizontal reflection in MV exchanges east/west curve ends.",
+    "Wiki/local Fang Lair quest PDF p3 confirms tracks/trams are dressing and names dragon gate textually. Neither statement establishes the missing cart positions or a DGATE texture binding."
+  ],
+  "adaptations": [
+    "One generated square iron grille shared by PORTCULS/MCELL; distinct raising/swinging export.",
+    "Mine steel door uses existing double-leaf/pivot contract; original MDOOR6 panel/latch/rivets are the material reference.",
+    "Braces choose orientation from adjacent projected corridor; ambiguous wide areas use frontal representation. Same walkthrough collision as source.",
+    "Rails are transparent floor overlays; original terrain, corner masks and passage flags unchanged. No minecart transport mechanic.",
+    "Track texture orientation solved from original FLOR neighbour continuity (1106 matching endpoints vs22 for literal texture orientation), then mirrored X to MV; final visual rotation90degrees. Does not create traversable connections or repair source gaps."
+  ],
+  "limits": [
+    "No original executable playtest claimed.",
+    "DGATE.IMG decoded but not declared in FANG1/2.INF; actual visual dragon-gate association unresolved.",
+    "NCART/SCART not present in these INF flat lists; cart scene representation and coordinates remain unconfirmed.",
+    "No sprites placed in still-inaccessible/unprojected areas.",
+    "Only used variants generated; MDOOR1–5 not instantiated in current maps."
+  ]
+}
