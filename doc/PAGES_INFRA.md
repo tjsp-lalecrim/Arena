@@ -52,3 +52,14 @@ Verificação pública em Chrome isolado: abertura do título, manifesto e os 39
 4. Salvar, carregar e descansar novamente para conferir recuperação e apresentação única da visão.
 
 Uma partida que já registra a visão lida deve preservar essa conclusão. Para avaliar a apresentação, retomar um save público anterior à visão. Preservar dados do site e saves existentes. Saves de outras origens ou perfis não são transferidos automaticamente. A release fica para o fechamento do marco.
+
+
+## Prévia de MQ02 com cama corrigida e interiores — 19/11/2026
+
+Fonte publicada `1339e2aa07a9b04282509e84b97c43c7c7c1f30d`, infraestrutura `7d6cc9beac4a09d652c03305a614c3e5ce8325c7`. [Execução manual 44629638641](https://github.com/tjsp-lalecrim/Arena/actions/runs/44629638641), pela main com publish=true: build Linux e deploy concluídos com sucesso. Pacote com 394 arquivos de runtime e 54.432.691 bytes incluindo manifesto; artefato do Actions com 41.901.959 bytes. O manifesto tem SHA-256 `82f8eec9a2eb2558c582ba38a644c123ca960d3f3c0e03257b5203280368bab1`.
+
+[Endereço público](https://tjsp-lalecrim.github.io/Arena/) e namespace `arena:m01:save-v1` preservados. No Chrome157 isolado, o título abriu sem erros, os 394 arquivos foram comparados por tamanho/SHA-256, e foram conferidos configuração da área da cama, evento corrigido, sinalização, cama E e os dois atlas C/D carregados e decodificados. [Resultado](evidencias/mq02-pages-rihad-interiors/resultado.json). Isso não substitui a avaliação manual do descanso, da visão ou da composição dos interiores.
+
+**Roteiro público pendente:** seguir informante/placas Pousada até a fachada(313,42), entrar e alcançar o quarto. Aproximar-se da cabeceira ou do pé, testar Enter e clique na cama. Com nível2+ e visão ainda não lida, terminar a leitura; salvar/carregar e descansar novamente para conferir recuperação sem repetição. Visão já concluída deve permanecer concluída. Na corte, conferir leitura do salão, audiência ou entrega conforme a etapa do save. Os testes técnicos de recuperação, migração, audiência e entrega estão no [registro dos interiores](CHEGADA_RIHAD_M02_03A.md#interiores-v01-e-correção-da-cama--19112026).
+
+Não limpar dados do site nem transferir saves automaticamente. Saves pessoais foram preservados; testes técnicos usaram perfil/partidas sintéticas isolados. Rótulo herdado `m01-rc1` não identifica a revisão: conferir `sourceCommit`. Publicação continua manual; release permanece para o fechamento do marco.

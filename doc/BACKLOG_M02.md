@@ -14,7 +14,7 @@ Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação
 
 **Promoção de trechos.** Aplicar o fluxo de entregas integradas aprovado no M02-03E2. Registrar verificações essenciais, ressalvas e cobertura manual na [matriz do percurso](STONEKEEP_M02_04.md).
 
-**Interiores de Rihad.** A revisão pública0d8f209 teve falha manual relatada na cama. [Correção da área de interação e interiores V01](CHEGADA_RIHAD_M02_03A.md#interiores-v01-e-correção-da-cama--19112026) entregues para avaliação integrada. Sem aprovação presumida do descanso, da visão ou dos novos módulos.
+**Interiores de Rihad.** A revisão pública0d8f209 teve falha manual relatada na cama. [Correção da área de interação e interiores V01](CHEGADA_RIHAD_M02_03A.md#interiores-v01-e-correção-da-cama--19112026) entregues para avaliação integrada. Disponíveis na [prévia pública 1339e2a](PAGES_INFRA.md#prévia-de-mq02-com-cama-corrigida-e-interiores--19112026), com conferência técnica de manifesto/checksums e abertura. Sem aprovação presumida do descanso, da visão ou dos novos módulos.
 
 **Descanso urbano de Rihad.** A [Pousada do portão](CHEGADA_RIHAD_M02_03A.md#pousada-do-portão--descanso-urbano-vigente) substitui a plataforma exterior: fachada original, interior TAVERN4, cama gratuita e visão de Ria preservada. Verificações técnicas focais e migração de saves registradas; avaliação manual da apresentação e do fluxo fica no teste integrado.
 
