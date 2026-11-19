@@ -58,6 +58,7 @@ function build(){
   events: [null, event(1, 'Sair para Rihad', exit.x, exit.y, 'ArenaCourt.leave(this);', '', 1),
    event(2, 'Rainha Blubamka — sprite provisório', queen.x, queen.y, 'ArenaCourt.talk(this);', '$Arena_redguard_female_walk_r02')]
  };
+ require('./rihad-interior-materials.cjs')(map, 'court');
  fs.writeFileSync(path.join(root,'data/Map011.json'), JSON.stringify(map)+'\n');
  const infos=read('data/MapInfos.json');infos[9].name='M02-03 Rihad — percurso urbano';infos[11]={id:11,expanded:true,name:'M02-03 Corte de Rihad (PALACE2)',order:11,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
  write('data/ArenaRihad.json',cfg);
