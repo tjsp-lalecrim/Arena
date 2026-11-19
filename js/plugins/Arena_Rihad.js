@@ -89,7 +89,7 @@ var ArenaRihad;
  var mapLoaded=Scene_Map.prototype.onMapLoaded;
  Scene_Map.prototype.onMapLoaded=function(){
   // Same-map load uses serialized Game_Map settings with the current tile data.
-  if(!$gamePlayer.isTransferring()&&here()&&$gameMap.tilesetId()!==$dataMap.tilesetId){
+  if(!$gamePlayer.isTransferring()&&urban()&&$gameMap.tilesetId()!==$dataMap.tilesetId){
    $gameMap.changeTileset($dataMap.tilesetId);
   }
   if(!$gamePlayer.isTransferring()&&here()&&!$gameMap.event($arenaRihad.outskirts.accessEventId)&&$dataMap.events[$arenaRihad.outskirts.accessEventId]){
@@ -100,6 +100,11 @@ var ArenaRihad;
    $gameMap._events[2]=null;
    var entrance=$arenaRihad.inn.accessEventId;
    if(!$gameMap.event(entrance))$gameMap._events[entrance]=new Game_Event($gameMap.mapId(),entrance);
+  }
+  if(!$gamePlayer.isTransferring()&&inInn()){
+   var bedId=$arenaRihad.inn.bedEventId;
+   var bed=$gameMap.event(bedId);
+   if(!bed||bed._priorityType!==1)$gameMap._events[bedId]=new Game_Event($gameMap.mapId(),bedId);
   }
   mapLoaded.apply(this,arguments);
   if(here()&&ArenaContinuation.labActive()&&ArenaContinuation.status().code==='arrived'&&!ArenaPersistence.snapshot().quests.MQ02)ArenaPersistence.setQuest('MQ02',10,{},false);

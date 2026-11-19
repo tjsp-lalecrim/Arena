@@ -582,7 +582,17 @@
       "y": 10,
       "technical": false,
       "authorizedRefuge": true,
-      "source": "Cama da pousada de Rihad; TAVERN4, repouso integral gratuito adaptado."
+      "source": "Cama da pousada de Rihad; TAVERN4, repouso integral gratuito adaptado.",
+      "footprint": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
     },
     {
       "id": "MQ02.stonekeep.refuge.87.44",

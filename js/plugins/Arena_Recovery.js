@@ -30,6 +30,9 @@ var ArenaRecovery;
                             !Number.isInteger(p.mapId) || !$dataMapInfos[p.mapId] ||
                             !Number.isInteger(p.eventId) || p.eventId < 1 ||
                             typeof p.technical !== 'boolean' || !p.source) return false;
+                    if (p.footprint !== undefined && (!Array.isArray(p.footprint) || !p.footprint.length ||
+                            !p.footprint.every(function(offset) { return Array.isArray(offset) && offset.length === 2 && offset.every(Number.isInteger); }) ||
+                            new Set(p.footprint.map(function(offset) { return offset.join(','); })).size !== p.footprint.length)) return false;
                     ids[p.id] = true; return true;
                 })) throw new Error('Arena: configuração de recuperação inválida. Confira ArenaRecovery.json.');
         if (c.menuIntervalMs !== undefined && (!Number.isInteger(c.menuIntervalMs) || c.menuIntervalMs < 0)) throw new Error('Arena: menuIntervalMs deve ser inteiro não negativo.');
@@ -46,6 +49,16 @@ var ArenaRecovery;
     function potion(item) {
         return item && DataManager.isItem(item) && $arenaRecovery.potionIds.indexOf(item.id) >= 0;
     }
+    function pointTiles(point, event) {
+        return (point.footprint || [[0, 0]]).map(function(offset) {
+            return [event.x + offset[0], event.y + offset[1]];
+        });
+    }
+    function pointDistance(point, event) {
+        return Math.min.apply(null, pointTiles(point, event).map(function(tile) {
+            return $gameMap.distance($gamePlayer.x, $gamePlayer.y, tile[0], tile[1]);
+        }));
+    }
     function restAvailable(id,interpreter) {
         var point=$arenaRecovery.restPoints.filter(function(p){return p.id===id;})[0];
         var event=point&&$gameMap.event(point.eventId);
@@ -53,7 +66,7 @@ var ArenaRecovery;
             !$gamePlayer.isInVehicle()&&actor().isAlive()&&!$gameMessage.isBusy()&&
             $gameMap.mapId()===point.mapId&&event&&!event._erased&&
             interpreter instanceof Game_Interpreter&&interpreter._mapId===point.mapId&&
-            interpreter.eventId()===point.eventId&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,event.x,event.y)<=1);
+            interpreter.eventId()===point.eventId&&pointDistance(point,event)<=1);
     }
     ArenaRecovery = {
         isPotion: potion,
@@ -81,7 +94,7 @@ var ArenaRecovery;
     function pilot(){return $arenaRecovery.restPoints.filter(function(p){return p.dungeonPilot;})[0];}
     function nearestRefuge(){
         var points=$arenaRecovery.restPoints.filter(function(p){return (p.dungeonPilot||p.dungeonRefuge||p.authorizedRefuge)&&p.mapId===$gameMap.mapId()&&$gameMap.event(p.eventId)&&!$gameMap.event(p.eventId)._erased;});
-        points.sort(function(a,b){return $gameMap.distance($gamePlayer.x,$gamePlayer.y,a.x,a.y)-$gameMap.distance($gamePlayer.x,$gamePlayer.y,b.x,b.y)||a.eventId-b.eventId;});
+        points.sort(function(a,b){return pointDistance(a,$gameMap.event(a.eventId))-pointDistance(b,$gameMap.event(b.eventId))||a.eventId-b.eventId;});
         return points[0];
     }
     ArenaRecovery.startRestPilot=function(){
@@ -117,18 +130,40 @@ var ArenaRecovery;
         this._arenaRestLabel=new Sprite(new Bitmap(288,36));this.addChild(this._arenaRestLabel);
     };
     var mapTouch=Scene_Map.prototype.processMapTouch;
+    function approachPoint(point, event) {
+        var targets = pointTiles(point, event), queue = [[$gamePlayer.x, $gamePlayer.y]], seen = {};
+        seen[queue[0].join(',')] = true;
+        for (var i = 0; i < queue.length; i++) {
+            var at = queue[i];
+            if (targets.some(function(tile) { return $gameMap.distance(at[0],at[1],tile[0],tile[1])<=1; })) return at;
+            [2,4,6,8].forEach(function(direction) {
+                var x=$gameMap.xWithDirection(at[0],direction), y=$gameMap.yWithDirection(at[1],direction), key=x+','+y;
+                if (!seen[key] && $gameMap.isValid(x,y) && $gamePlayer.canPass(at[0],at[1],direction)) {
+                    seen[key]=true;queue.push([x,y]);
+                }
+            });
+        }
+        return null;
+    }
     Scene_Map.prototype.processMapTouch=function(){
         if(!TouchInput.isPressed())this._arenaRestPointer=false;
         if($gameTemp._arenaRestAwaitRelease){$gameTemp.clearDestination();this._touchCount=0;return;}
         var label=this._arenaRestLabel,p=nearestRefuge(),e=p&&$gameMap.event(p.eventId);
-        if(TouchInput.isTriggered()&&label&&label.visible&&TouchInput.x>=label.x&&TouchInput.x<label.x+288&&TouchInput.y>=label.y&&TouchInput.y<label.y+36){
+        var tileX=$gameMap.canvasToMapX(TouchInput.x),tileY=$gameMap.canvasToMapY(TouchInput.y);
+        var hitBed=p&&p.footprint&&e&&pointTiles(p,e).some(function(tile){return tile[0]===tileX&&tile[1]===tileY;});
+        var hitLabel=label&&label.visible&&TouchInput.x>=label.x&&TouchInput.x<label.x+288&&TouchInput.y>=label.y&&TouchInput.y<label.y+36;
+        if(TouchInput.isTriggered()&&(hitBed||hitLabel)){
             this._arenaRestPointer=true;this._touchCount=0;$gameTemp.clearDestination();
             if(e&&$gamePlayer.canMove()&&!$gameMap.isAnyEventStarting()){
-                if($gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=1)e.start();
-                else $gameTemp.setDestination(e.x,e.y);
+                if(pointDistance(p,e)<=1)e.start();
+                else if(p.footprint){
+                    var approach=approachPoint(p,e);
+                    if(approach){$gameTemp._arenaRestApproach=p.id;$gameTemp.setDestination(approach[0],approach[1]);}
+                }else $gameTemp.setDestination(e.x,e.y);
             }
             return;
         }
+        if(TouchInput.isTriggered())$gameTemp._arenaRestApproach=null;
         if(!this._arenaRestPointer)mapTouch.apply(this,arguments);
     };
     var mapUpdate=Scene_Map.prototype.update;
@@ -136,13 +171,20 @@ var ArenaRecovery;
         var ok=Input.isTriggered('ok'),interactive=this.isActive()&&$gamePlayer.canMove()&&!$gameMessage.isBusy()&&!$gameMap.isEventRunning();mapUpdate.apply(this,arguments);
         if(!Input.isPressed('ok')&&!TouchInput.isPressed())$gameTemp._arenaRestAwaitRelease=false;
         var p=nearestRefuge(),e=p&&$gameMap.event(p.eventId),label=this._arenaRestLabel;
-        if(!label)return;var near=e&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=3;
+        if($gameTemp._arenaRestApproach){
+            if(Input.dir4||ok||$gameMessage.isBusy()||!p||p.id!==$gameTemp._arenaRestApproach)$gameTemp._arenaRestApproach=null;
+            else if(!$gameTemp.isDestinationValid()&&!$gamePlayer.isMoving()&&pointDistance(p,e)>1)$gameTemp._arenaRestApproach=null;
+            else if(e&&pointDistance(p,e)<=1&&interactive&&!$gamePlayer.isMoving()){
+                $gameTemp._arenaRestApproach=null;$gameTemp.clearDestination();e.start();
+            }
+        }
+        if(!label)return;var near=e&&pointDistance(p,e)<=3;
         label.visible=!!near;if(!near)return;
         label.x=Math.max(8,Math.min(Graphics.boxWidth-296,e.screenX()-144));label.y=Math.max(8,Math.min(e.screenY()-128,$gamePlayer.screenY()-112));
-        label.opacity=$gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=1?255:180;
+        label.opacity=pointDistance(p,e)<=1?255:180;
         var status=Date.now()<($gameTemp._arenaRestStatusUntil||0),b=label.bitmap;
         b.clear();b.fillRect(0,0,288,36,'rgba(15,24,26,0.9)');b.fontSize=20;b.textColor='#D8CCAF';b.drawText(status?'Recursos completos':'Descansar · Enter / toque',6,0,276,36,'center');
-        if(ok&&interactive&&!$gameTemp._arenaRestAwaitRelease&&this.isActive()&&$gamePlayer.canMove()&&!$gameMap.isAnyEventStarting()&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,e.x,e.y)<=1){$gameTemp.clearDestination();e.start();}
+        if(ok&&interactive&&!$gameTemp._arenaRestAwaitRelease&&this.isActive()&&$gamePlayer.canMove()&&!$gameMap.isAnyEventStarting()&&pointDistance(p,e)<=1){$gameTemp.clearDestination();e.start();}
     };
     var titleList=Window_TitleCommand.prototype.makeCommandList;
     Window_TitleCommand.prototype.makeCommandList=function(){titleList.apply(this,arguments);this.addCommand('Descanso técnico (refúgio)','arenaRestPilot');};

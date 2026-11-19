@@ -1,0 +1,809 @@
+{
+  "source": "TAVERN4.MIF / TAVERN.INF; PALACE2.MIF level 1 / CASTLE.INF",
+  "coordinates": "original MIF zero-based; MV margin 2, scale 3, mirrored X",
+  "inn": {
+    "walls": [
+      "fffffffffffffffffffffffff",
+      "fwwwwwwwwwwwwwwwwwwwwwwwf",
+      "fwwwff...wwwwwwwwww...wwf",
+      "fwww.....www...wwww..ffwf",
+      "fwww.....wwwff.wwww...wwf",
+      "fwww.....www..........wwf",
+      "fwwwww.wwwww...w..w...wwf",
+      "fwf.w..w..ww...w..wwwwwwf",
+      "fwf....w..wwwwww..wwwwwwf",
+      "fw..w.....wwfwww..w..fwwf",
+      "fw..w..w..w.f..w.....fwwf",
+      "fw..w..wwww.......w...wwf",
+      "fwwww..wwww....w..w...wwf",
+      "fwwww..wwwwwwwww..w...wwf",
+      "fwwww..wwwwwwwww..wwwwwwf",
+      "fwwww..w..f.f..w..wwwwwwf",
+      "fww....w..fff..w.......wf",
+      "fww.w.............w....wf",
+      "fw..wwww.ff.ff.wwww....wf",
+      "fw...wwf.......fwww....wf",
+      "fw...ww..ff.ff..www.f..wf",
+      "fw...wwf.......fwwwwfwwwf",
+      "fwff.www.......wwwwwwwwwf",
+      "fwwwwwwwwww.wwwwwwwwwwwwf",
+      "fffffffffff.fffffffffffff"
+    ],
+    "floors": [
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa",
+      "aaaaaaaaaaaaaaaaaaaaaaaaa"
+    ],
+    "props": [
+      {
+        "type": "table",
+        "original": [
+          10,
+          18
+        ]
+      },
+      {
+        "type": "table",
+        "original": [
+          13,
+          18
+        ]
+      },
+      {
+        "type": "table",
+        "original": [
+          10,
+          20
+        ]
+      },
+      {
+        "type": "table",
+        "original": [
+          13,
+          20
+        ]
+      },
+      {
+        "type": "counter",
+        "original": [
+          10,
+          16
+        ]
+      },
+      {
+        "type": "counter",
+        "original": [
+          11,
+          16
+        ]
+      },
+      {
+        "type": "counter",
+        "original": [
+          12,
+          16
+        ]
+      },
+      {
+        "type": "counterNS",
+        "original": [
+          10,
+          15
+        ]
+      },
+      {
+        "type": "counterNS",
+        "original": [
+          12,
+          15
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          8,
+          5
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          19,
+          6
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          14,
+          7
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          19,
+          9
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          14,
+          10
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          3,
+          11
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          20,
+          16
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          2,
+          19
+        ]
+      }
+    ],
+    "doors": [
+      {
+        "original": [
+          15,
+          5
+        ],
+        "axis": "horizontal"
+      },
+      {
+        "original": [
+          18,
+          5
+        ],
+        "axis": "horizontal"
+      },
+      {
+        "original": [
+          6,
+          6
+        ],
+        "axis": "vertical"
+      },
+      {
+        "original": [
+          4,
+          8
+        ],
+        "axis": "horizontal"
+      },
+      {
+        "original": [
+          7,
+          9
+        ],
+        "axis": "horizontal"
+      },
+      {
+        "original": [
+          18,
+          10
+        ],
+        "axis": "horizontal"
+      },
+      {
+        "original": [
+          15,
+          11
+        ],
+        "axis": "horizontal"
+      },
+      {
+        "original": [
+          4,
+          16
+        ],
+        "axis": "horizontal"
+      },
+      {
+        "original": [
+          18,
+          16
+        ],
+        "axis": "horizontal"
+      }
+    ]
+  },
+  "court": {
+    "walls": [
+      "ffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "fcdcddddcddccdcdccddcccdccdcddcccdcccdcddcdddcdcdf",
+      "fcdccddccdddcccdddccddcccccdddcdccdccdddddccddcddf",
+      "fdccdcdccccccdddccccddcdccddddcdcdcddcdcccdccddddf",
+      "fdcc.....ccdcccccdcdcdcccdccccdddccccd.....cdccdcf",
+      "fdcc.....ddddccdcddccdcdccdcdccddcdddd.....cccdccf",
+      "fcdc.....cddddddcccddddcccdcccdcdcddcd.....dccdccf",
+      "fccd.....ccdcddcc.............dcccddcc.....cccdddf",
+      "fccc.......................................cddcdcf",
+      "fcdc.........cccd...fffffff...dcd..........dddddcf",
+      "fccc.....ddcdddcd...f.....f...dccccccd.....cdddccf",
+      "fccc.....ccdcdcdc...f.....f...cddddddd.....ccdcddf",
+      "fdcc.....dd.........f.....f........dcd.....cccdccf",
+      "fccd.....cc.........f.....f........cdd.....cddcccf",
+      "fdcd.....dd.........f.....f........cdc.....ccccccf",
+      "fdddccccddc..cdcc...fffffff........ddddcddcdcccddf",
+      "fcddddddddc..cddd.............cdc..ccdccddcccddddf",
+      "fdcdcdcdddd..dcdc.............ccc..cccddcccccdddcf",
+      "fdcdddcddcc..cccdcddddddcddcddccd..ccccdddccccdccf",
+      "fddcdcddccc..cddccccddcccdccccdcd..cdcdcdcddccdccf",
+      "fccccddcccc..cdcdcdccdccddddccddd..cccdddcccdddccf",
+      "fcd.....cdd..cddcccccdcdddddddccd..cddcddcdccddcdf",
+      "fcd..........dcdddddddcddddddddcc..ccdd.....cdddcf",
+      "fdd..........cdccddccddccddccdcdc...........cdcccf",
+      "fcc.....ccc..dddccccddcccdcddddcd...........dcdcdf",
+      "fcd.....cdd..dcdcdcdcdddcdddccccc..dccc.....ddcddf",
+      "fcd.....ddd..dcdcccddcddcdddddcdc..dcdd.....dccdcf",
+      "fcc.....cdc..ccdd.....fff.....ccd..dddd.....cdcccf",
+      "fcd.....cdc...........fff..........cccd.....cccddf",
+      "fcd.....dcd........................dcdc.....cddcdf",
+      "fddcd.cccdcd.dddd.............ccc.ddcdc.....cddccf",
+      "fdccc.dccdcd.dccd.............dcd.dddcdd.cccddcccf",
+      "fdcdd.dddcdd.dddd.............ccc.cdddcd.dccdccdcf",
+      "fddcd.dccdcc.dcdd.............ccd.ccdddc.cdccccdcf",
+      "fccdd.cdcddd.dddc.............cdd.dddcdc.dcddccccf",
+      "fcdcc.cddddd.cddd.............cdd.cccddd.ccdcddcdf",
+      "fcdcd..cdddd.dddc.............ccd.dcdddd.cddcccdcf",
+      "fdcdc..dddcd.ddcc.............ccc.ddccdd.dcddcccdf",
+      "fddc.....cdc.dccc.............ccc.cc.....cdddcccdf",
+      "fcdd.....ccd.dccddcccc...cdccddcd.cd.....dddcddccf",
+      "fdcc.....dcd.dcddddccdd.ccdcccddc.dc.....ddddddddf",
+      "fcdc.....ddd.dccccccdcc.cccdcdddd.dd.....ccdddcdcf",
+      "fdcc.........cdccccdddccccddcdddc........ddcdcdddf",
+      "fccd.....dccdccdcddccccdddccdcdccddc.....ccccccddf",
+      "fdcd.....cdcddccdcdddcccccccccdddccc.....cddccdccf",
+      "fcdd.....cccdcddcdccddcccdcdddcddccc.....dcdddcdcf",
+      "fdcdcdddcdcdccccddcdddccccddcdcdcddcddcdccccddddcf",
+      "fcccdddcddcdcccdcdddcddcccccdcddccdddccdccdcdcccdf",
+      "fccdddddcccccccdcccdccdcddccddcdddddddddccdddddddf",
+      "ffffffffffffffffffffffffffffffffffffffffffffffffff"
+    ],
+    "floors": [
+      "mmmmmammmmmmmmmmmmmmmmmammmmmammmmmmmmmmmmmmmmmmma",
+      "mmmammmmmmmmmammmmmmmmmmmaammammmmmmmmmmmmmmmmmmmm",
+      "ammmmmammmmmmmmmmmmmmmammmammammmmamammmmmmmmaammm",
+      "mmmmmmmmmmmammmmmmmmmmammammammmmmmmmmmmmmmammmamm",
+      "mmmmmmmammammmmmmmmmmmmaammmmmmmmmmmmmaaammammammm",
+      "mmmmmmmmammmmmmmmmmammmmmammmmmmmmmmmmmmamammammmm",
+      "mmammmmammmmmmmmmmmmmmmmmmmammmmmmmmmmmmmmmmmmamma",
+      "mmmmmmmmmmmmmmmmmmmmmmammmmmmmmmammmmmmmmmmmammmmm",
+      "ammmmmmmammmmmmmammrrrrrrrrrmmmmmmammammmmmmmmmmam",
+      "mmammmammmmmmmmmmmmrmmmmmmarmmmmmmmmmmmmmmammamamm",
+      "ammammmmmmaaammmmmmrmpppppmrmmammmmmmmmmmmmammmmmm",
+      "mmmmmmmmmmmmmmmmaamrmppppparamamammmammmmmmmmmamam",
+      "mmmmammmammmmmammmmrmppppparmmmmaammmammmmmmmmmmmm",
+      "mmmmmmmmmmammmmmmamrapppppmrmmmmmaammmmmmmamammmmm",
+      "mammmmmmmmmmammmammrmpppppmrmmmmmmmmmmmmmmmmmmammm",
+      "mmmmmmmmmammmmammmmrammmmmmrmmmmmmaammmmammmmmmmmm",
+      "mmmmammmmmmammammmmrrrrrrrrrmmmmmammmmmmmmmmmmammm",
+      "mmmmmmmmmammmmmmmmmmmmmmmammammmmammmmmmmmmmmmmmmm",
+      "mmmmmmmmmmmmammmmmmmmmmmmmmmammmmmmammmmmmmmmmmmma",
+      "mmmmmmmmmammmammmmmmmammammmmmmmmmammmmmmmmmmmmmmm",
+      "mmmmmmmmmmmaammmmmmmmmmmmmmmmmmmmmmmammammmmmmmmmm",
+      "mmmmaammmmammmmmmmmmmmmmmmmmmammmmammmmmmammammmmm",
+      "mmmmmmmmammmaammmammmmmmmammmmmmmmmmammmmmmmmmmmmm",
+      "mmmammmmammmmmmmmmmmmmmmmaammmmmammmmmmmmmmmammmma",
+      "mmmmmmmmammmmmmmmammmmmmmmmmmmmmmmmammmammmammmmmm",
+      "mammammmmammmmmmmmmmmammmammmmmammmammammmmmmammam",
+      "mammmmmmmmaammmmmammmmmmmmmamammmmmmammmmmmamammmm",
+      "mmmmmmmmammmmmmmmrrrrrrrrrrrrrmmmmmmmmmmmmmmmmmaaa",
+      "ammmmmmmmmmmmmmmmrammrrrrrmmarmmmaaammmmmmmammmmmm",
+      "mmmmmmmmammmmmammrmmmrrrrrmmmrammaaammmmmmmmmmmamm",
+      "mamammammmmmmammmrammmmrmmmmmrammmmmmmmmmmmmmmammm",
+      "mmmmmmmmmmmmmmmmmrmmmmmraammmrmmmmmmmammmmmmmaammm",
+      "mmmmmmmammmmammmmrmmmmmrmmmmmrammamammmmamammmmmmm",
+      "maammmmmmmmammmmarmmmmmrmmmmmrammmmmmmammammammamm",
+      "amammmmmammmmmmamrmmmmmrammmmrmammmmmmmammammmmmmm",
+      "mmmmmmmmmammmmmmmrmmmmmrmmmmmrmmmmmmmmmmmmmmmmmmmm",
+      "ammammmmmmmmammmmrmmmmmrmmmmarmmmmammmmmmmmmmmmama",
+      "aamamammmmmmmmmmarmmmamrmmmmmrmmmmmmmmmmmmammmamam",
+      "ammmmmmmmmamammmmrrrrrrrrrrrrrmmammmmmmmmmammmmamm",
+      "mmammmmammmmmmmmmrmmmmarmmmmmrmmmmmmammmmmmammmmmm",
+      "ammmmmmmmamammmmmrmmmmmrmammmrmmmmmmmmmmmmmmmmmamm",
+      "mmmmmmmammmamaammrmmmmmrmammmrmmammmmmammmmmmmmamm",
+      "mmammmmmamammmmmmrmmmmmrmmmamrmmmmmmmamammmmmmmmmm",
+      "mmmammammmmmmmmmmrmaamarmmmmmrmmmmmmmmmmmaammmammm",
+      "mmmmmmammmmmmamamrmmmamrmmmmmrmmmmmmmmmmmmmmammmam",
+      "mmmmmmmmmmmmmmaamrrrrrmrarrrrrmamammammmmmammmmmmm",
+      "mmammmmmmmmmmmmmmmmmmamrmmmammmmmmmammammmmmmmmmmm",
+      "mmmmmammmmmmamamaamaammrmaammmmmmmmmmammammmammmmm",
+      "maamaammmmammmmmmmmmmmarmmmmmmmmammmmmmmmmmmmmmamm",
+      "ammammammmmmmmmmmmaammmmmmmmmmmmmmamaamammmmmmmmmm"
+    ],
+    "props": [
+      {
+        "type": "throne",
+        "original": [
+          23,
+          29
+        ],
+        "offset": [
+          0,
+          -2
+        ]
+      },
+      {
+        "type": "fountain",
+        "original": [
+          18,
+          36
+        ]
+      },
+      {
+        "type": "fountain",
+        "original": [
+          28,
+          36
+        ]
+      },
+      {
+        "type": "banner",
+        "original": [
+          17,
+          27
+        ],
+        "offset": [
+          -2,
+          -2
+        ]
+      },
+      {
+        "type": "banner",
+        "original": [
+          29,
+          27
+        ],
+        "offset": [
+          2,
+          -2
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          4,
+          4
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          42,
+          4
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          17,
+          7
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          20,
+          7
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          23,
+          7
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          26,
+          7
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          29,
+          7
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          11,
+          13
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          34,
+          13
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          4,
+          14
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          8,
+          14
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          38,
+          14
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          42,
+          14
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          17,
+          17
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          20,
+          17
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          23,
+          17
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          26,
+          17
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          29,
+          17
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          3,
+          21
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          7,
+          21
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          39,
+          22
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          43,
+          22
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          19,
+          27
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          21,
+          27
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          25,
+          27
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          27,
+          27
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          7,
+          29
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          11,
+          29
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          34,
+          29
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          39,
+          30
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          17,
+          31
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          29,
+          31
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          20,
+          34
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          26,
+          34
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          17,
+          36
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          29,
+          36
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          20,
+          37
+        ]
+      },
+      {
+        "type": "brazier",
+        "original": [
+          26,
+          37
+        ]
+      }
+    ],
+    "doors": [
+      {
+        "original": [
+          16,
+          8
+        ],
+        "axis": "vertical"
+      },
+      {
+        "original": [
+          30,
+          8
+        ],
+        "axis": "vertical"
+      },
+      {
+        "original": [
+          5,
+          30
+        ],
+        "axis": "vertical"
+      },
+      {
+        "original": [
+          12,
+          30
+        ],
+        "axis": "vertical"
+      },
+      {
+        "original": [
+          33,
+          30
+        ],
+        "axis": "vertical"
+      },
+      {
+        "original": [
+          40,
+          31
+        ],
+        "axis": "vertical"
+      }
+    ],
+    "steps": [
+      [
+        20,
+        9
+      ],
+      [
+        21,
+        9
+      ],
+      [
+        22,
+        9
+      ],
+      [
+        23,
+        9
+      ],
+      [
+        24,
+        9
+      ],
+      [
+        25,
+        9
+      ],
+      [
+        26,
+        9
+      ],
+      [
+        20,
+        10
+      ],
+      [
+        26,
+        10
+      ],
+      [
+        20,
+        11
+      ],
+      [
+        26,
+        11
+      ],
+      [
+        20,
+        12
+      ],
+      [
+        26,
+        12
+      ],
+      [
+        20,
+        13
+      ],
+      [
+        26,
+        13
+      ],
+      [
+        20,
+        14
+      ],
+      [
+        26,
+        14
+      ],
+      [
+        20,
+        15
+      ],
+      [
+        21,
+        15
+      ],
+      [
+        22,
+        15
+      ],
+      [
+        23,
+        15
+      ],
+      [
+        24,
+        15
+      ],
+      [
+        25,
+        15
+      ],
+      [
+        26,
+        15
+      ]
+    ]
+  }
+}
