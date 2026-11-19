@@ -1,5 +1,9 @@
 # M02-04 — amostra integrada de Stonekeep
 
+## Ferragens V01 — 19/11/2026
+
+As12grades `PORTCULS.IMG` de B3 agora têm arte de grade elevatória, sem alterar70portas/180encontros ou suas regras/IDs. Coordenadas e vínculos no [contrato de objetos](mapas/M02_OBJETOS_DUNGEONS.json); escopo, exportação e capturas no [registro compartilhado](FANG_CELAS_M02_06A.md#portas-e-objetos-do-m02-v01--19112026). Materiais/quest/pergaminho/água preservados. Avaliação visual pendente no teste integrado; relato da porta sem localização e avaliação de Forçar a porta permanecem nos registros existentes.
+
 ## Matriz operacional de assets — nove espécies
 
 **Organização aprovada:** preparar por dungeon, uma espécie por entrega e avaliação antes da próxima; quando ambos faltarem, combate e caminhada juntos. [Regra principal](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada). Totais abaixo são as180referências MAP1→STKEEP1.INF do levantamento completo, não encontros DOS observados ou distribuição já implementada. Reuso entre dungeons exige correspondência nas fontes. Cobertura Map015 atual: **180/180 encontros registrados e 70/70 portas**; as inspeções RAM do orc e do homem-lagarto não entram nessa contagem.

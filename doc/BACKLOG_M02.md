@@ -4,6 +4,8 @@
 
 **Avaliação integrada de MQ02.** Base jogável `main` com os Hell Hounds integrados sobre `f78de8d`. O responsável fará a avaliação manual no Chrome pelo [Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome). Os testes automatizados já realizados estão vinculados ao roteiro. Permanecem no backlog a cobertura das [matrizes de Stonekeep](STONEKEEP_M02_04.md#matriz-vigente) e [Fang Lair](mapas/FANG_COBERTURA_M02.json), os [módulos definitivos de Rihad](CHEGADA_RIHAD_M02_03A.md#famílias-visuais-de-rihad), os materiais definitivos de Fang Lair e os [blocos narrativos com ilustração pendente](CAMPANHA_PRINCIPAL.md#inventário-textual).
 
+**Portas e objetos M02.** [Conjunto V01](FANG_CELAS_M02_06A.md#portas-e-objetos-do-m02-v01--19112026):12grades de Stonekeep,11grades de celas e2portais metálicos na mina,24suportes e364células de trilho aplicados às áreas atuais. Avaliação visual agrupada com MQ02. Dragon gate e vagonetes continuam dependentes da associação visual/posicional nas fontes; lava e ilustrações mantêm dependências próprias.11espécies com combate/patrulha disponíveis; Fantasma ainda aguarda avaliação visual e acesso original.
+
 ## Recorte atual — retomar encontros e portas de Stonekeep
 
 Nova organização aprovada em [DIRECAO_DE_ARTE](DIRECAO_DE_ARTE.md#preparação-de-inimigos-por-dungeon--organização-aprovada): por dungeon, uma espécie por entrega, combate+caminhada juntos quando ambos faltarem e avaliação antes da próxima. Reuso aprovado após correspondência nas fontes; não bestiário geral/variantes. **Depois** retomar distribuição dos encontros, portas e eventos. Loot/tesouros/descanso continuam posteriores.

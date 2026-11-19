@@ -1,0 +1,20 @@
+{
+  "Stonekeep_Grate": {
+    "frames": 12,
+    "uniqueStages": true,
+    "openCentreTransparent": true,
+    "fixedGuidesOrHinges": true
+  },
+  "Mine_Grate": {
+    "frames": 12,
+    "uniqueStages": true,
+    "openCentreTransparent": true,
+    "fixedGuidesOrHinges": true
+  },
+  "Mine_SteelDoor": {
+    "frames": 12,
+    "uniqueStages": true,
+    "openCentreTransparent": true,
+    "fixedGuidesOrHinges": true
+  }
+}

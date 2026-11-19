@@ -1,0 +1,718 @@
+{
+  "schemaVersion": 1,
+  "maps": [
+    {
+      "mapId": 15,
+      "sprites": [
+        {
+          "id": "stonekeep.b3.door.mif12.31",
+          "eventId": 565,
+          "original": [
+            12,
+            31
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "north-south"
+        },
+        {
+          "id": "stonekeep.b3.door.mif15.31",
+          "eventId": 574,
+          "original": [
+            15,
+            31
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "north-south"
+        },
+        {
+          "id": "stonekeep.b3.door.mif18.31",
+          "eventId": 583,
+          "original": [
+            18,
+            31
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "north-south"
+        },
+        {
+          "id": "stonekeep.b3.door.mif20.31",
+          "eventId": 592,
+          "original": [
+            20,
+            31
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "north-south"
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.33",
+          "eventId": 601,
+          "original": [
+            10,
+            33
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "east-west"
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.35",
+          "eventId": 610,
+          "original": [
+            10,
+            35
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "east-west"
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.38",
+          "eventId": 619,
+          "original": [
+            10,
+            38
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "east-west"
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.42",
+          "eventId": 637,
+          "original": [
+            10,
+            42
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "east-west"
+        },
+        {
+          "id": "stonekeep.b3.door.mif10.44",
+          "eventId": 664,
+          "original": [
+            10,
+            44
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "east-west"
+        },
+        {
+          "id": "stonekeep.b3.door.mif12.46",
+          "eventId": 673,
+          "original": [
+            12,
+            46
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "north-south"
+        },
+        {
+          "id": "stonekeep.b3.door.mif15.46",
+          "eventId": 682,
+          "original": [
+            15,
+            46
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "north-south"
+        },
+        {
+          "id": "stonekeep.b3.door.mif17.46",
+          "eventId": 691,
+          "original": [
+            17,
+            46
+          ],
+          "raw": "0xb094",
+          "source": "PORTCULS.IMG",
+          "file": "!$Arena_Stonekeep_Grate_V01",
+          "kind": "raising",
+          "axis": "north-south"
+        }
+      ],
+      "decorations": []
+    },
+    {
+      "mapId": 13,
+      "sprites": [
+        {
+          "eventId": 10,
+          "original": [
+            95,
+            82
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 11,
+          "original": [
+            91,
+            82
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 12,
+          "original": [
+            95,
+            86
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 13,
+          "original": [
+            91,
+            86
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 14,
+          "original": [
+            96,
+            88
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 15,
+          "original": [
+            90,
+            88
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 16,
+          "original": [
+            97,
+            96
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 17,
+          "original": [
+            91,
+            96
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 18,
+          "original": [
+            94,
+            96
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 19,
+          "original": [
+            88,
+            96
+          ],
+          "raw": "0xb013",
+          "source": "MDOOR6.IMG",
+          "file": "!$Arena_Mine_SteelDoor_V01"
+        },
+        {
+          "eventId": 20,
+          "original": [
+            91,
+            78
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        },
+        {
+          "eventId": 24,
+          "original": [
+            95,
+            78
+          ],
+          "raw": "0xb016",
+          "source": "MCELL.IMG",
+          "file": "!$Arena_Mine_Grate_V01"
+        }
+      ],
+      "decorations": [
+        {
+          "id": "visual.fang.1.brace.47.7",
+          "eventId": 500,
+          "original": [
+            47,
+            7
+          ],
+          "origin": [
+            159,
+            25
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.18.12",
+          "eventId": 502,
+          "original": [
+            18,
+            12
+          ],
+          "origin": [
+            246,
+            40
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.20.15",
+          "eventId": 506,
+          "original": [
+            20,
+            15
+          ],
+          "origin": [
+            240,
+            49
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.51.15",
+          "eventId": 507,
+          "original": [
+            51,
+            15
+          ],
+          "origin": [
+            147,
+            49
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.22.19",
+          "eventId": 510,
+          "original": [
+            22,
+            19
+          ],
+          "origin": [
+            234,
+            61
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.23.20",
+          "eventId": 511,
+          "original": [
+            23,
+            20
+          ],
+          "origin": [
+            231,
+            64
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.23.23",
+          "eventId": 512,
+          "original": [
+            23,
+            23
+          ],
+          "origin": [
+            231,
+            73
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.27.37",
+          "eventId": 516,
+          "original": [
+            27,
+            37
+          ],
+          "origin": [
+            219,
+            115
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.66.44",
+          "eventId": 519,
+          "original": [
+            66,
+            44
+          ],
+          "origin": [
+            102,
+            136
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.46.45",
+          "eventId": 521,
+          "original": [
+            46,
+            45
+          ],
+          "origin": [
+            162,
+            139
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.48.47",
+          "eventId": 522,
+          "original": [
+            48,
+            47
+          ],
+          "origin": [
+            156,
+            145
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.50.49",
+          "eventId": 524,
+          "original": [
+            50,
+            49
+          ],
+          "origin": [
+            150,
+            151
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.41.53",
+          "eventId": 528,
+          "original": [
+            41,
+            53
+          ],
+          "origin": [
+            177,
+            163
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.46.58",
+          "eventId": 529,
+          "original": [
+            46,
+            58
+          ],
+          "origin": [
+            162,
+            178
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.65.62",
+          "eventId": 530,
+          "original": [
+            65,
+            62
+          ],
+          "origin": [
+            105,
+            190
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.48.64",
+          "eventId": 531,
+          "original": [
+            48,
+            64
+          ],
+          "origin": [
+            156,
+            196
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.67.65",
+          "eventId": 532,
+          "original": [
+            67,
+            65
+          ],
+          "origin": [
+            99,
+            199
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.66.69",
+          "eventId": 533,
+          "original": [
+            66,
+            69
+          ],
+          "origin": [
+            102,
+            211
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.68.69",
+          "eventId": 534,
+          "original": [
+            68,
+            69
+          ],
+          "origin": [
+            96,
+            211
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.30.72",
+          "eventId": 535,
+          "original": [
+            30,
+            72
+          ],
+          "origin": [
+            210,
+            220
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.27.73",
+          "eventId": 536,
+          "original": [
+            27,
+            73
+          ],
+          "origin": [
+            219,
+            223
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.44.76",
+          "eventId": 537,
+          "original": [
+            44,
+            76
+          ],
+          "origin": [
+            168,
+            232
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.86.76",
+          "eventId": 538,
+          "original": [
+            86,
+            76
+          ],
+          "origin": [
+            42,
+            232
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.28.77",
+          "eventId": 539,
+          "original": [
+            28,
+            77
+          ],
+          "origin": [
+            216,
+            235
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        }
+      ]
+    },
+    {
+      "mapId": 17,
+      "sprites": [
+        {
+          "eventId": 4,
+          "original": [
+            64,
+            72
+          ],
+          "raw": "0xb013",
+          "source": "MDOOR6.IMG",
+          "file": "!$Arena_Mine_SteelDoor_V01"
+        }
+      ],
+      "decorations": []
+    }
+  ]
+}
