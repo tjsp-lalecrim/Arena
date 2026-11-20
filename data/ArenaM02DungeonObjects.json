@@ -695,6 +695,28 @@
           "direction": 2,
           "file": "!$Arena_Mine_Brace_V01",
           "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.entry-face",
+          "eventId": 600,
+          "original": [
+            4,
+            1
+          ],
+          "origin": [
+            288,
+            7
+          ],
+          "raw": "0x1515",
+          "source": "MSU.IMG",
+          "direction": 2,
+          "file": "!$Arena_Fang_ExitFace_V01",
+          "kind": "static-interior-up-exit",
+          "interactionEventId": 1,
+          "interactionPosition": [
+            288,
+            9
+          ]
         }
       ]
     },

@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Entrada de Fang Lair:** [face interna MSU integrada e investigação delimitada](FANG_CELAS_M02_06A.md#entrada-interna-e-investigação-de-vagonetes--20112026). Exterior dragon gate e vagonetes permanecem incertos; candidatos nos volumes(87,21)/(88,21) registrados, sem geração/colocação por suposição. Avaliação visual agrupada; Pages e release separados.
+
 **Cenário V01:** [94painéis visíveis, carpete reutilizado,117adereços de Rihad e objetos de missão](FANG_CELAS_M02_06A.md#cenário-confirmado-v01--20112026) integrados para avaliação agrupada. Não gerar duplicatas desses conjuntos; dragon gate/vagonetes/Servo/ilustrações mantêm suas dependências. Pages e release separados.
 
 **Revisão20/11:** Shift Gate passa a exigir nível2 como adaptação provisória (sem retroagir sobre Rihad). [Inventário de assets auditado](FANG_CELAS_M02_06A.md#inventário-auditado-de-assets-do-m02--20112026): interiores, Blubamka, Fantasma, Hell Hounds e lava entregues; geração futura separada de acesso/avaliação pendentes.

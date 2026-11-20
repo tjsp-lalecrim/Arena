@@ -27,12 +27,14 @@ module.exports=function(name,map){
    }
   }
   const template=map.events[1].pages[0];
-  for(const b of area.braces){
+  for(const b of area.braces.concat(area.decorations||[])){
    if(map.events[b.eventId])throw Error('Dungeon objects: reserved decoration ID occupied '+b.eventId);
    const p=JSON.parse(JSON.stringify(template));p.conditions={actorId:1,actorValid:false,itemId:1,itemValid:false,selfSwitchCh:'A',selfSwitchValid:false,switch1Id:1,switch1Valid:false,switch2Id:1,switch2Valid:false,variableId:1,variableValid:false,variableValue:0};
    Object.assign(p,{priorityType:1,through:true,trigger:0,walkAnime:false,stepAnime:false,directionFix:true,moveType:0,image:{tileId:0,characterName:b.file,characterIndex:0,direction:b.direction,pattern:0},list:[{code:0,indent:0,parameters:[]}]});
-   map.events[b.eventId]={id:b.eventId,name:'Suporte da mina / '+b.id,note:b.id,x:b.origin[0],y:b.origin[1],pages:[p]};
+   map.events[b.eventId]={id:b.eventId,name:(b.kind==='static-interior-up-exit'?'Face interna da saída / ':'Suporte da mina / ')+b.id,note:b.id,x:b.origin[0],y:b.origin[1],pages:[p]};
   }
  }
+ const runtime={schemaVersion:1,maps:[plan.stonekeep,...plan.fang].map(a=>({mapId:a.mapId,sprites:a.doors,decorations:(a.braces||[]).concat(a.decorations||[])}))};
+ fs.writeFileSync(path.join(R,'data/ArenaM02DungeonObjects.json'),JSON.stringify(runtime,null,2)+'\n');
  return map;
 };
