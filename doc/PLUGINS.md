@@ -1,6 +1,6 @@
 ## Mapa mundial e viagem de campanha — vigente
 
-Arena_WorldMap0.2.0 após os provedores de campanha: menu/tecla M, nove províncias e273 localidades nomeadas, listas alfabéticas, indisponíveis desabilitados e serviço comum ao portão. Destinos de quest preservam sigilo até descoberta. Consulta em interiores, sem contornar saída/Tharn. Dados vetoriais/estado versionado, namespace web preservado. [Contrato, fontes e validação](plugins/Arena_WorldMap.md).
+Arena_WorldMap0.3.0 após os provedores de campanha: menu/tecla M, nove províncias e273 localidades nomeadas, listas alfabéticas, indisponíveis desabilitados, estados/motivos textuais e símbolos distintos, serviço comum ao portão. Destinos de quest preservam sigilo até descoberta. Consulta em interiores, sem contornar saída/Tharn. Dados vetoriais/estado versionado, namespace web preservado. [Contrato, fontes e validação](plugins/Arena_WorldMap.md).
 
 ## Homem-lagarto M02 — caminhada e exemplar RAM
 

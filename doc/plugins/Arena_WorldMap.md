@@ -1,4 +1,4 @@
-# Arena_WorldMap 0.2.0 — mapa mundial e viagem
+# Arena_WorldMap 0.3.0 — mapa mundial e viagem
 
 Entrega de campanha M02, runtime MV 1.6.1, navegador desktop/Chrome. Sem plugin externo ou mudança no motor. `Arena_WorldMap.js` carrega por último, após MV_StateStore, MV_JournalModel, Arena_Narrative/Continuation, Rihad/Court, StonekeepWhole e FangCells. Não requer habilitar debug.
 
@@ -57,3 +57,11 @@ Referência funcional verificada: `260ee82c58ad3da4fdbbac3c767931bc2ff3ed26`, `f
 ### Ampliação do catálogo — 20/11/2026
 
 Pedido do responsável: incluir todas as localidades e ordenar alfabeticamente, desabilitando as indisponíveis. Nomes, IDs e posições dos273 registros nomeados conferidos diretamente com CITYDATA.65; preservado o requisito anterior de sigilo de quest. Cada província externa apresenta32 cidades antes das descobertas; Imperial Province apresenta Imperial City. Marcadores indisponíveis em cinza; somente o selecionado, o local atual e destinos jogáveis mostram nomes simultâneos para evitar sobreposição. Lista com rolagem e foco mantém acesso a todos. Nenhuma cidade/dungeon nova é construída e nenhuma regra de viagem muda. [Validação focal do catálogo](../evidencias/mapa-mundial-catalogo/resultado.json), `tools/test-world-map-catalogue.cjs`; verificações anteriores de viagem/persistência seguem válidas para o serviço inalterado.
+
+### Complemento para avaliação pública — 20/11/2026
+
+Base9b6f0ad. Lista provincial com nome e estado textual por linha: **Localização atual**, **Disponível para viajar**, **Indisponível**. Mapa distingue círculo duplo atual, losango disponível e X bloqueado, além da cor; seleção tem contorno. Selecionar uma linha ou ponto exibe o motivo no rodapé, inclusive por teclado sem tentar viajar. Rodapé maior em canvas640×480 para leitura. Catálogo/ordem/sigilo mantidos. API `status(id)` fornece estado/rótulo/motivo usando a mesma validação da viagem.
+
+[Verificação das lacunas](../evidencias/mapa-mundial-publicacao/resultado.json): correspondência de257 pontos públicos/linhas em todas as províncias, clique real no último destino de cada lista, rolagem por teclado, motivos e estados, descoberta e confirmação de Stonekeep, cancelamento e janela menor. `tools/test-world-map.cjs` reutilizado e aprovado no Chrome atual: ida/volta das duas dungeons, portão comum, consulta em interiores, etapa100/retaliação, save/load inclusive durante a transferência, recursos/quest/recibos preservados. Gate: arquivos Arena_Quests/ArenaQuests/Continuation idênticos a42e36b0; mínimo2 e [evidências válidas de nível1/2, save e Rihad](../evidencias/m02-gate-nivel2/resultado.json) reutilizados, sem repetir combates.
+
+**Apresentação:** mapa vetorial é versão funcional **pendente de avaliação visual**; preservar como objetivo a fidelidade geográfica e visual ao Arena original. A simplificação atual não é aprovação de arte definitiva. Sua geração pode aguardar o feedback. Nenhum novo asset, custo, tempo, regra de quest, nível ou save foi introduzido. Publicação manual/evidência e roteiro vigentes em [PAGES_INFRA](../PAGES_INFRA.md); release somente no fechamento.
