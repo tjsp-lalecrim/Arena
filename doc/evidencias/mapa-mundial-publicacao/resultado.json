@@ -1,0 +1,38 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "All257 public locations: same stable IDs/coordinates in map and list; every point center resolves to its own row; actual mouse selection of last entry in each province.",
+    "Alphabetical provinces, disabled rows with textual reason/status, Enter blocked, last entry reachable; keyboard scrolling reaches final row.",
+    "Current/available/unavailable have textual labels and distinct marker shapes; click on available Stonekeep selects same ID and opens explicit confirmation; cancel does not travel; secret Fang remains hidden."
+  ],
+  "states": {
+    "current": {
+      "state": "current",
+      "label": "Localização atual",
+      "reason": "Você já está neste local."
+    },
+    "available": {
+      "state": "available",
+      "label": "Disponível para viajar",
+      "reason": ""
+    },
+    "blocked": {
+      "state": "blocked",
+      "label": "Indisponível",
+      "reason": "Destino indisponível nesta versão."
+    },
+    "secret": false
+  },
+  "errors": [],
+  "reusedGateEvidence": {
+    "reference": "42e36b0",
+    "unchangedFiles": [
+      "js/plugins/Arena_Quests.js",
+      "data/ArenaQuests.json",
+      "js/plugins/Arena_Continuation.js"
+    ],
+    "minimumLevel": 2,
+    "evidence": "../m02-gate-nivel2/resultado.json"
+  },
+  "limits": "Fresh isolated synthetic campaign. Vector cartography functional, owner visual assessment pending. No personal saves."
+}
