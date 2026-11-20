@@ -44,7 +44,7 @@ var ArenaRiaVision;
  DataManager.extractSaveContents=function(c){var e=c&&c.system&&c.system._persistentState&&c.system._persistentState.namespaces[ns];if(e)validate(e.data);return extract.apply(this,arguments);};
  var rest=ArenaRecovery.usePoint;
  ArenaRecovery.usePoint=function(id,interpreter){var result=rest.apply(this,arguments);
-  if(id===$arenaRihad.restPointId&&(result.ok||result.reason==='full'))begin();return result;
+  if(id===$arenaRihad.restPointId&&(result.ok||result.reason==='full')){if(!begin()&&ArenaNarrative.isCampaign()&&$gameActors.actor(1).level<2&&ArenaQuests.snapshot('MQ02').stage===10)ArenaCourt.show(interpreter,['Você pode explorar os Arredores pelo portão urbano e voltar à pousada após ganhar experiência.']);}return result;
  };
  var inform=ArenaRihad.inform;
  ArenaRihad.inform=function(i){var result=inform.apply(this,arguments),q=ArenaQuests.snapshot('MQ02');

@@ -81,6 +81,7 @@
         "mapId": 10,
         "areaId": "rihad.outskirts",
         "completionQuestId": "MQ02",
+        "progressionFloor": 2,
         "mapVisuals": {
           "1": {
             "file": "$Arena_rat_walk_r02",

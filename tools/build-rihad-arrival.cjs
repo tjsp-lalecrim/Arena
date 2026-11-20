@@ -43,7 +43,7 @@ const outside={...read('data/Map001.json'),width:ow,height:oh,data:od,tilesetId:
  note:'M02-03B: Arredores de Rihad. Traçado/terreno provisórios adaptados, não planta original. Encontros visíveis; sem sorteio nativo de encontros.',
  events:[null,event(1,'Retornar à esplanada de Rihad',2,9,'ArenaRihad.returnToArrival(this);')]};
 outside.events[1].pages[0].trigger=1;
-const profile={schemaVersion:1,mapId:10,areaId:'rihad.outskirts',completionQuestId:'MQ02',mapVisuals:{'1':read('data/ArenaEncounters.json').mapVisuals['1']},entries:[]};
+const profile={schemaVersion:1,mapId:10,areaId:'rihad.outskirts',completionQuestId:'MQ02',progressionFloor:2,mapVisuals:{'1':read('data/ArenaEncounters.json').mapVisuals['1']},entries:[]};
 [[10,5],[18,5],[10,11],[18,11]].forEach((origin,i)=>{
  const id='rihad.approach.rat.0'+(i+1),eventId=i+2;
  const rat=JSON.parse(JSON.stringify(read('data/Map008.json').events[169]));
@@ -55,10 +55,10 @@ write('data/Map010.json',outside);
 const infos=read('data/MapInfos.json');infos[9]={id:9,expanded:true,name:'M02-03 Rihad — chegada (amostra)',order:9,parentId:0,scrollX:0,scrollY:0};infos[10]={id:10,expanded:true,name:'M02-03 Arredores de Rihad (amostra)',order:10,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
 const campaignPath=path.join(root,'data/ArenaCampaign.json');
 fs.writeFileSync(campaignPath,fs.readFileSync(campaignPath,'utf8').replace(/("id"\s*:\s*"rihad"\s*,\s*"questId"\s*:\s*"MQ02"\s*,\s*"mapId"\s*:\s*)(null|\d+)/,'$19'));
-const raw=fs.readFileSync(campaignPath,'utf8'),area={id:'rihad.outskirts',questId:'MQ02',mapId:10,encounters:profile};
-const replaced=raw.replace(/\{"id":"rihad\.outskirts","questId":"MQ02","mapId":(?:null|\d+)(?:,"encounters":\{[^\r\n]*\})?\}/,JSON.stringify(area));
-if(replaced===raw&&!read('data/ArenaCampaign.json').areas.some(a=>a.id===area.id&&JSON.stringify(a)===JSON.stringify(area)))throw Error('Formato da área de arredores não reconhecido; preservar configuração.');
-fs.writeFileSync(campaignPath,replaced);
+const campaign=read('data/ArenaCampaign.json'),area={id:'rihad.outskirts',questId:'MQ02',mapId:10,encounters:profile};
+const areaIndex=campaign.areas.findIndex(a=>a.id===area.id);
+if(areaIndex<0)throw Error('Área dos arredores ausente; preservar configuração.');
+campaign.areas[areaIndex]=area;write('data/ArenaCampaign.json',campaign);
 const recovery=read('data/ArenaRecovery.json');const point={id:'MQ02.rihad.rest',mapId:9,eventId:2,x:15,y:10,technical:false,authorizedRefuge:true,source:'MQ02_ESPECIFICACAO: repouso autorizado na chegada; posição e plataforma são adaptação provisória.'};
 recovery.restPoints=recovery.restPoints.filter(p=>p.id!==point.id).concat(point);write('data/ArenaRecovery.json',recovery);
 write('data/ArenaRihad.json',{schemaVersion:1,areaId:'rihad',arrival:{id:'rihad.arrival',mapId:9,x:10,y:11,direction:8},informantEventId:1,restPointId:point.id,

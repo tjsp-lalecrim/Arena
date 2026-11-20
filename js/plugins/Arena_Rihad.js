@@ -39,6 +39,12 @@ var ArenaRihad;
   if(!here()||$gameParty.inBattle()||$gameMessage.isBusy()||!(interpreter instanceof Game_Interpreter))return false;
   return ArenaCourt.show(interpreter,texts);
  }
+ function gateDestinations(){
+  var list=[{id:'outskirts',name:'Ir aos Arredores de Rihad',to:$arenaRihad.outskirts.entry}];
+  if(window.ArenaStonekeep&&ArenaStonekeep.known())list.push({id:'stonekeep',name:'Viajar para Stonekeep',to:ArenaStonekeep.configuration().entry});
+  if(window.ArenaFangCells&&ArenaFangCells.destination().available)list.push({id:'fang',name:'Viajar para Fang Lair',to:{mapId:$arenaFangCells.mapId,x:$arenaFangCells.entry[0],y:$arenaFangCells.entry[1],direction:2}});
+  return list;
+ }
  function guidance(){
   var q=ArenaQuests.snapshot('MQ02'),stage=q&&q.stage||0;
   if(stage<20)return 'square';
@@ -50,7 +56,7 @@ var ArenaRihad;
   inform:function(i){
    var way=guidance();
    if(way==='square')return message(i,['Para descansar, siga ao sul pelo passeio escuro. Na primeira curva, vire a oeste. Siga as placas até a Pousada do portão.',
-    'Para enfrentar os ratos, procure a passagem dos Arredores junto ao portão.']);
+    'Para ganhar experiência, volte ao portão urbano, ao norte, e escolha Ir aos Arredores de Rihad. Há ratos junto à estrada. Pode voltar pelo mesmo caminho e descansar na pousada.']);
    if(way==='court')return message(i,['Siga as placas da Corte pelas ruas ao sul.',
     'Junto à muralha sul, passe pela grade e entre pela porta de madeira.']);
    return message(i,['Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte.']);
@@ -64,7 +70,18 @@ var ArenaRihad;
      !e||$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1)return false;
    return ArenaCourt.show(i,['O quarto está disponível, sem custo. Siga as placas até a cama e interaja para descansar.']);
   },
-  arrivalNotice:function(i){return message(i,['Você chegou a Rihad, no sul de Hammerfell.']);},
+  arrivalNotice:function(i){return ArenaRihad.offerGate(i);},
+  offerGate:function(i){
+   var gate=$gameMap.event(3);
+   if(!here()||!ArenaNarrative.isCampaign()||$gameParty.inBattle()||$gameMessage.isBusy()||$gamePlayer.isTransferring()||!(i instanceof Game_Interpreter)||i._mapId!==$gameMap.mapId()||i.eventId()!==3||!gate||$gameMap.distance(gate.x,gate.y,$gamePlayer.x,$gamePlayer.y)>1||ArenaQuests.snapshot('MQ02').stage<10)return false;
+   var destinations=gateDestinations(),names=destinations.map(function(v){return v.name;}).concat(['Ficar em Rihad']);
+   var list=[{code:102,indent:0,parameters:[names,names.length-1,names.length-1,2,0]}];
+   destinations.forEach(function(v,n){list.push({code:402,indent:0,parameters:[n,v.name]},{code:355,indent:1,parameters:['ArenaRihad.travelFromGate(this,'+JSON.stringify(v.id)+');']});});
+   list.push({code:402,indent:0,parameters:[names.length-1,'Ficar em Rihad']},{code:404,indent:0,parameters:[]},{code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;
+  },
+  travelFromGate:function(i,id){if(!(i instanceof Game_Interpreter))return false;var destinations=gateDestinations(),index=destinations.findIndex(function(v){return v.id===id;});
+   if(index<0||i._branch[0]!==index)return false;return route(i,$arenaRihad.arrival.mapId,3,destinations[index].to);
+  },
   preview:function(){return ArenaContinuation.previewArrival($arenaRihad.arrival,true);},
   visitOutskirts:function(i){var o=$arenaRihad.outskirts;return route(i,$arenaRihad.arrival.mapId,o.accessEventId,o.entry);},
   returnToArrival:function(i){var o=$arenaRihad.outskirts;return route(i,o.entry.mapId,o.returnEventId,o.return);}
@@ -187,7 +204,7 @@ var ArenaRihad;
    var informant=$gameMap.event(c.informantEventId);
    var road=$gameMap.event(3),outskirts=$gameMap.event(c.outskirts.accessEventId);
    markers=[[informant.x,informant.y,'Informante'],[c.inn.entrance[0],c.inn.entrance[1],'Pousada · Entrar',-46,'#223932'],
-    [road.x,road.y,'Portão urbano',76],
+    [road.x,road.y,'Portão · Arredores',76],
     [outskirts.x,outskirts.y,'Arredores',112]];
    var way=guidance(), sign=nearby(c.signage.signs,'position',5);
    if(sign&&way==='square'&&sign.position[1]>16)way='gate';
@@ -196,7 +213,7 @@ var ArenaRihad;
     var court=$gameMap.event(c.court.accessEventId);
     var nearCourt=$gameMap.distance(sign.position[0],sign.position[1],court.x,court.y)<=3;
     var atCourt=way==='court'&&$gameMap.distance($gamePlayer.x,$gamePlayer.y,court.x,court.y)<=1;
-    if(!atCourt)markers.unshift([sign.position[0],sign.position[1],arrows[sign[way]]+' '+(way==='court'?'Corte':'Portão urbano'),nearCourt?-76:18,'#223932']);
+    if(!atCourt)markers.unshift([sign.position[0],sign.position[1],arrows[sign[way]]+' '+(way==='court'?'Corte':'Portão · Arredores'),nearCourt?-76:18,'#223932']);
    }
    var door=nearby(c.signage.doors.filter(function(d){return d.tile[0]!==c.inn.entrance[0]||d.tile[1]!==c.inn.entrance[1];}),'approach',2);
    if(door)markers.push([door.tile[0],door.tile[1],door.type+' · Fechado',-46,'#3d3028']);
