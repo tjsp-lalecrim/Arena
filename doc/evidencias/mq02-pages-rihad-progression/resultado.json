@@ -1,0 +1,36 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "2f3686e9bb3a4b039216e8a3b3711ef6554f5a44",
+  "manifestSha256": "772e3999a685fd6b019798d12e29be23868008ad9fa94a258c139b3382501d76",
+  "namespace": "arena:m01:save-v1",
+  "run": "https://github.com/tjsp-lalecrim/Arena/actions/runs/44717514201",
+  "runtimeFiles": 408,
+  "totalBytes": 55303915,
+  "checked": [
+    "data/ArenaCampaign.json",
+    "data/ArenaRihad.json",
+    "data/Map009.json",
+    "data/Map010.json",
+    "js/plugins/Arena_Encounters.js",
+    "js/plugins/Arena_RiaVision.js",
+    "js/plugins/Arena_Rihad.js",
+    "js/plugins/Arena_Stonekeep.js"
+  ],
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Exact public manifest",
+    "Changed runtime files plus city/outskirts configurations match checksums; unchanged assets covered in preceding public preview",
+    "Clean Chrome opens title, gate menu at stage10/level1 and travels to four rats",
+    "Public test RAM session isolated; normal slot save blocked"
+  ],
+  "errors": [],
+  "limits": "No owner save inspected. Full level1 combat/inn/vision/save-load regression passed locally in synthetic normal campaign.",
+  "workflow": {
+    "platform": "linux",
+    "build": "success",
+    "deploy": "success",
+    "infraCommit": "219496d1e2b4e55a6d346d6622f3ff3b1633bdfe",
+    "artifactBytes": 42684326
+  },
+  "probeNote": "Initial public probe timed out waiting for choices; repeated after explicitly waiting for active map and neutral input. No runtime change was required."
+}
