@@ -8,7 +8,7 @@ function position([x, y]) {
 }
 
 function build(){
- const c={areaId:'rihad.court',entry:{id:'rihad.court.entry',mapId:11,...position(plan.anchors.entry),direction:8},exit:{id:'rihad.court.exit',mapId:9,x:10,y:5,direction:2},accessEventId:5,doorEventId:6,exitEventId:1,queenEventId:2,destinationId:'stonekeep.entry'};
+ const c={areaId:'rihad.court',entry:{id:'rihad.court.entry',mapId:11,...position(plan.anchors.entry),direction:8},exit:{id:'rihad.court.exit',mapId:9,x:10,y:5,direction:2},accessEventId:5,doorEventId:6,exitEventId:1,queenEventId:2,destinationId:'stonekeep.entry',characterName:'$Arena_Blubamka_V01',faceName:'Arena_Blubamka_V01',faceIndex:0};
  const base=read('data/Map008.json').events[241].pages[0];
  function event(id,name,x,y,script,characterName='',trigger=0){const p=JSON.parse(JSON.stringify(base));p.image.characterName=characterName;p.image.direction=2;p.trigger=trigger;p.priorityType=characterName?1:0;p.through=!characterName;p.directionFix=true;p.walkAnime=!!characterName;p.list=script?[{code:355,indent:0,parameters:[script]},{code:0,indent:0,parameters:[]}]:[{code:0,indent:0,parameters:[]}];return {id,name,note:'M02-03D — representação provisória, sem planta/fisionomia canônica',x,y,pages:[p]};}
  const arrival=read('data/Map009.json');
@@ -56,8 +56,9 @@ function build(){
   displayName: '', note: 'PALACE2.MIF / caslev1: planta pública da corte, materiais e NPC provisórios.',
   encounterList: [], scrollType: 0, parallaxName: '', specifyBattleback: false,
   events: [null, event(1, 'Sair para Rihad', exit.x, exit.y, 'ArenaCourt.leave(this);', '', 1),
-   event(2, 'Rainha Blubamka — sprite provisório', queen.x, queen.y, 'ArenaCourt.talk(this);', '$Arena_redguard_female_walk_r02')]
+   event(2, 'Rainha Blubamka', queen.x, queen.y, 'ArenaCourt.talk(this);', c.characterName)]
  };
+ map.events[2].note='Blubamka V01: interpretação regional; pose frontal estática, direção fixa. doc/CORTE_RIHAD_M02_03D.md';
  require('./rihad-interior-materials.cjs')(map, 'court');
  fs.writeFileSync(path.join(root,'data/Map011.json'), JSON.stringify(map)+'\n');
  const infos=read('data/MapInfos.json');infos[9].name='M02-03 Rihad — percurso urbano';infos[11]={id:11,expanded:true,name:'M02-03 Corte de Rihad (PALACE2)',order:11,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');

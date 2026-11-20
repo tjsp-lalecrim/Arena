@@ -1,0 +1,13 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Map sprite stationary south, collision and accessible adjacent interaction",
+    "Portrait native 144px; wrapped text within reserved face width",
+    "Audience cancel 30 / accept 40 / delivery 60; repeat without duplicate receipt or item",
+    "RAM save blocked; isolated normal slot19 reload retains actor/store/Ria and replaces legacy serialized sprite",
+    "Non-queen shared text remains full width",
+    "Court generator reconstructs presentation identically"
+  ],
+  "errors": [],
+  "manual": "Visual assessment deferred to next integrated Pages preview; no owner approval inferred."
+}
