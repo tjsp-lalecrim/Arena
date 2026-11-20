@@ -1,0 +1,1043 @@
+{
+  "panels": 94,
+  "parts": 564,
+  "rugTiles": 1431,
+  "appliedPanels": [
+    {
+      "original": [
+        60,
+        1
+      ],
+      "position": [
+        90,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        61,
+        1
+      ],
+      "position": [
+        87,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        1
+      ],
+      "position": [
+        72,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        1
+      ],
+      "position": [
+        51,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        77,
+        1
+      ],
+      "position": [
+        39,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        1
+      ],
+      "position": [
+        33,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        3
+      ],
+      "position": [
+        213,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        3
+      ],
+      "position": [
+        159,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        41,
+        3
+      ],
+      "position": [
+        147,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        4
+      ],
+      "position": [
+        231,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        4
+      ],
+      "position": [
+        222,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        7
+      ],
+      "position": [
+        159,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        10
+      ],
+      "position": [
+        222,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        11
+      ],
+      "position": [
+        234,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        11
+      ],
+      "position": [
+        231,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        11
+      ],
+      "position": [
+        162,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        11
+      ],
+      "position": [
+        102,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        12
+      ],
+      "position": [
+        249,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        14
+      ],
+      "position": [
+        141,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        14
+      ],
+      "position": [
+        135,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        14
+      ],
+      "position": [
+        132,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        15
+      ],
+      "position": [
+        198,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        15
+      ],
+      "position": [
+        120,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        15
+      ],
+      "position": [
+        99,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        16
+      ],
+      "position": [
+        195,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        16
+      ],
+      "position": [
+        129,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        86,
+        17
+      ],
+      "position": [
+        12,
+        54
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        17
+      ],
+      "position": [
+        9,
+        54
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        19
+      ],
+      "position": [
+        189,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        19
+      ],
+      "position": [
+        90,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        76,
+        25
+      ],
+      "position": [
+        42,
+        78
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        29
+      ],
+      "position": [
+        99,
+        90
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        34
+      ],
+      "position": [
+        96,
+        105
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        53,
+        36
+      ],
+      "position": [
+        111,
+        111
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        45
+      ],
+      "position": [
+        105,
+        138
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        82,
+        46
+      ],
+      "position": [
+        24,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        72,
+        48
+      ],
+      "position": [
+        54,
+        147
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        34,
+        49
+      ],
+      "position": [
+        168,
+        150
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        49
+      ],
+      "position": [
+        138,
+        150
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        49
+      ],
+      "position": [
+        114,
+        150
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        49
+      ],
+      "position": [
+        96,
+        150
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        33,
+        53
+      ],
+      "position": [
+        171,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        53
+      ],
+      "position": [
+        108,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        53
+      ],
+      "position": [
+        99,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        53
+      ],
+      "position": [
+        96,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        59,
+        53
+      ],
+      "position": [
+        93,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        53
+      ],
+      "position": [
+        90,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        79,
+        55
+      ],
+      "position": [
+        33,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        56
+      ],
+      "position": [
+        144,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        56
+      ],
+      "position": [
+        105,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        69,
+        56
+      ],
+      "position": [
+        63,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        70,
+        56
+      ],
+      "position": [
+        60,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        6,
+        59
+      ],
+      "position": [
+        252,
+        180
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        59
+      ],
+      "position": [
+        72,
+        180
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        67,
+        59
+      ],
+      "position": [
+        69,
+        180
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        83,
+        59
+      ],
+      "position": [
+        21,
+        180
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        60
+      ],
+      "position": [
+        201,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        60
+      ],
+      "position": [
+        123,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        81,
+        60
+      ],
+      "position": [
+        27,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        60
+      ],
+      "position": [
+        15,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        61
+      ],
+      "position": [
+        51,
+        186
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        47,
+        62
+      ],
+      "position": [
+        129,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        63
+      ],
+      "position": [
+        111,
+        192
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        23,
+        64
+      ],
+      "position": [
+        201,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        64
+      ],
+      "position": [
+        15,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        9,
+        66
+      ],
+      "position": [
+        243,
+        201
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        66
+      ],
+      "position": [
+        231,
+        201
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        77,
+        68
+      ],
+      "position": [
+        39,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        69
+      ],
+      "position": [
+        177,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        69
+      ],
+      "position": [
+        138,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        69
+      ],
+      "position": [
+        93,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        70
+      ],
+      "position": [
+        102,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        84,
+        70
+      ],
+      "position": [
+        18,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        72
+      ],
+      "position": [
+        186,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        73
+      ],
+      "position": [
+        141,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        73
+      ],
+      "position": [
+        99,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        74
+      ],
+      "position": [
+        183,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        74
+      ],
+      "position": [
+        36,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        74
+      ],
+      "position": [
+        33,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        75
+      ],
+      "position": [
+        177,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        77
+      ],
+      "position": [
+        15,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        77
+      ],
+      "position": [
+        9,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        79
+      ],
+      "position": [
+        90,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        79
+      ],
+      "position": [
+        51,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        80
+      ],
+      "position": [
+        198,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        80
+      ],
+      "position": [
+        195,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        80
+      ],
+      "position": [
+        189,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        80
+      ],
+      "position": [
+        186,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        35,
+        81
+      ],
+      "position": [
+        165,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        82
+      ],
+      "position": [
+        249,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        48,
+        82
+      ],
+      "position": [
+        126,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        82
+      ],
+      "position": [
+        123,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        82
+      ],
+      "position": [
+        36,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        82,
+        85
+      ],
+      "position": [
+        24,
+        258
+      ],
+      "family": "casf"
+    }
+  ],
+  "urban": 117,
+  "limits": "Only source-backed south-visible wall faces; covered/hidden faces remain represented by their existing material, not invented wall geometry."
+}

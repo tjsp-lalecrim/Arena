@@ -352,7 +352,7 @@ var ArenaFangCells;
   }
   if(c().optionalTreasure.cells.some(function(cell){return !treasureCellOpen(cell);}))label([21,237],'Celas de tesouro');
   label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,ArenaContinuation.labActive()?'Retornar ao título':q().stage===100?'Saída da mina':'Retornar a Rihad');label(c().limit,'Descer para o segundo nível');
-  [[9,288,'Cela 3'],[18,288,'Cela 2'],[27,288,'Cela 1']].forEach(function(p){label(p,p[2]);});if(ArenaPersistence.sourceStatus(c().sourceId).active)label(c().key,'Chave dourada · provisório');
+  [[9,288,'Cela 3'],[18,288,'Cela 2'],[27,288,'Cela 1']].forEach(function(p){label(p,p[2]);});if(ArenaPersistence.sourceStatus(c().sourceId).active)label(c().key,'Chave dourada · Interagir');
  };
  ArenaDebugHub.register({symbol:'arenaFangCells',name:'Fang Lair · celas (RAM)',category:'campaign',description:'Enigma, chave da Cela 2 e portal. Liberação das aranhas e combate com o exemplar existente.',saving:'Somente RAM · slots normais bloqueados'},ArenaFangCells.preview);
 })();

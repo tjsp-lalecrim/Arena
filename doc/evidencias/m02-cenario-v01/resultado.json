@@ -1,0 +1,19 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "All collision bits, regions and pre-existing map events preserved on Maps9/15/13/17",
+    "Legacy city snapshot appends117 visual-only props once; save/load stable",
+    "Existing parchment/queen delivery/gold key/staff collection contracts work with source-driven sprites; collected/retired sprites remain absent on reload",
+    "No duplicate fragment/quest, no actor/loot/MQ01 changes",
+    "Native screenshots show reused fountain/carpet and new ornaments/props/quest objects"
+  ],
+  "application": {
+    "panels": 94,
+    "parts": 564,
+    "rugTiles": 1431,
+    "urban": 117
+  },
+  "errors": [],
+  "limits": "Isolated Chrome synthetic normal saves19, controlled positions/stages and frozen patrol timing for screenshots. No new visual approval inferred; no personal saves, full campaign, Pages or mobile tests.",
+  "reconstruction": "Parent build-rihad-arrival and direct build-rihad-court reproduced Map009/015/013/017, ArenaScenery, Tilesets and application metadata identically."
+}
