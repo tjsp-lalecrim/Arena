@@ -1,0 +1,19 @@
+{
+  "prompt": "Create ONE coherent character asset sheet with REAL TRANSPARENT background, no text or labels, two separated panels side by side with large transparent gap. LEFT panel: bust portrait. RIGHT panel: a single full body stationary map sprite seen from a high orthographic top-down RPG camera, facing down toward screen bottom; not isometric, no perspective ground or shadow plane. Character: Queen Blubamka of Rihad, Arena. Source evidence establishes her name, queen title and Hammerfell court, NOT individual race or physical looks. Artistic regional interpretation: dignified mature brown-skinned woman around fifty, dark wavy hair, composed authoritative face, understated gold circlet with a single burgundy stone, deep slate-blue long robe with antique gold edging, ivory inner collar, restrained burgundy shoulder cloth, gold belt. No weapon or scepter; hands calmly together at waist. Inspired by supplied generic Arena QUEEN reference's blue robe, gold edging and circlet, but this is an individual project interpretation, not a claim that this generic figure is canonically Blubamka. Dark fantasy detailed painted finish, readable simplified map silhouette, no cartoon, no pixel art. Both panels MUST depict exactly same face/hair/clothing/adornments and colors. Portrait follows supplied bust only for pose: entire chest, shoulders, neck, head and gaze turn together in three quarters toward image RIGHT, natural alignment, no twisted neck, not looking back over shoulder. Bust includes crown and shoulder margins. Map figure high-angle orthographic body including head crown and feet, long skirt with clearly readable top planes. Stable vertical centered standing pose, no chair/throne, no floor, no scenery, no words. Keep all edges fully inside canvas with generous transparent margins. One design only.",
+  "references": [
+    "tmp/rihad-review/queen-generic.png (QUEEN.IMG generic, not canon identity)",
+    "art/references/pose-personagens/breton-female-busto-v01.png (pose only)"
+  ],
+  "method": "Native image generation with transparency; technical crop, uniform scale and packing, no painted substitution.",
+  "originalConsulted": {
+    "file": "QUEEN.IMG",
+    "sha256": "a8157eb34e1d5038f14a4c3c9313ca2d67e19b2b2f3fb194d3b23119a3082c0e",
+    "dimensions": [
+      80,
+      83
+    ],
+    "meaning": "Generic court figure; not evidence of Blubamka individual appearance",
+    "archive": "GLOBAL.BSA",
+    "lookup": "CASTLE.INF @FLATS"
+  }
+}

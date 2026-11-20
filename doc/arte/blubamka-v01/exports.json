@@ -1,0 +1,26 @@
+[
+  {
+    "path": "art/masters/blubamka-v01/identity.png",
+    "sha256": "8495d6dcf068169237381eb68889ffd94544ed62cceefabc5ea729c72ddbafd4",
+    "size": [
+      1774,
+      887
+    ]
+  },
+  {
+    "path": "img/faces/Arena_Blubamka_V01.png",
+    "sha256": "8a57b15419d1431dccb1f3fbdfcefba52a78b08c6e139dad553c9d288a3835ce",
+    "size": [
+      144,
+      144
+    ]
+  },
+  {
+    "path": "img/characters/$Arena_Blubamka_V01.png",
+    "sha256": "1159f30d107333bd14b659733ab1283df8b3df8068a2f4a29c51231f15305c0c",
+    "size": [
+      144,
+      256
+    ]
+  }
+]

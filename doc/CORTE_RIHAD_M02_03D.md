@@ -1,5 +1,26 @@
 # M02-03D — audiência mínima de Rihad
 
+## Blubamka V01 — representação própria (20/11/2026)
+
+**Estado:** sprite de mapa e retrato integrados; avaliação visual adiada pelo responsável para a próxima prévia integrada no Pages. As avaliações recentes de assets continuam adiadas, sem aprovação presumida. Não foi produzida ilustração narrativa.
+
+| Evidência | Limite / adaptação |
+| --- | --- |
+| Wiki local `Arena_Fang Lair (quest)`, p.2: Queen Blubamka, governante de Rihad; cidade-estado ao sul de Hammerfell. `TEMPLATE.DAT` #1315–1317/#1319 sustenta pedido e entrega; usa placeholders de título/nome. | “Rainha Blubamka” confirmado. As fontes consultadas não estabelecem idade, raça individual, rosto, traje ou joias próprios. |
+| `PALACE2.MIF` / `CASTLE.INF`: marcador do governante em MIF(23,29), Map011(81,90); conjunto declara `KING.IMG` e `QUEEN.IMG`. Consulta direta ao arquivo genérico QUEEN.IMG: veste azul-clara, contorno dourado e diadema. | A figura genérica não é um retrato individual de Blubamka. Não houve nova observação de partida DOS. |
+| Interpretação regional autorizada, mantendo nome, papel e acontecimentos. | Mulher madura de pele castanha, cabelos escuros ondulados, diadema dourado com pedra vinho, veste azul-ardósia, gola marfim e manto vinho. São escolhas artísticas para a corte de Hammerfell, **não confirmação de raça, idade, símbolos ou vestuário canônicos**, nem importação de outro jogo da série. |
+
+**Conjunto único:** [mestre](../art/masters/blubamka-v01/identity.png), [prompt e papéis das referências](arte/blubamka-v01/generation.json), [exportações/checksums](arte/blubamka-v01/exports.json). A referência de busto da bretã orienta apenas pose e enquadramento, não a identidade. Extração de QUEEN.IMG permanece em `tmp/rihad-review`, ignorada e fora do pacote. Mestre gerado com alpha real, sem fundo incorporado.
+
+`python tools/export-blubamka.py` (Pillow) recorta e reduz proporcionalmente o mestre: rosto144×144; folha de personagem144×256 com células48×64. O evento é parado, direção2 fixa: três células frontais iguais para compatibilidade de padrões, outras direções vazias. **Não é um ciclo de caminhada** e não há atuação que o exija. `node tools/build-rihad-court.cjs` recompõe o evento e a configuração; gerador pai também o invoca. Pisos, paredes, trono e demais mapas permanecem iguais.
+
+O retrato usa a janela nativa, reserva168px e repagina os textos existentes em até quatro linhas. Aparece somente no evento2 da corte, incluindo pedido e entrega; o helper compartilhado continua sem rosto e em largura total nos outros eventos. O rosto também acompanha as frases de narração inseridas nessa conversa; não substitui a futura ilustração específica de cada bloco. Sprite, ID, posição, prioridade, gatilho e direção fixa são preservados. Saves da corte atualizam apenas a imagem serializada do evento; inventário, recursos, visão e recibos permanecem intactos. Não há troca de namespace.
+
+**Verificação focal:** `node tools/test-blubamka.cjs` em Chrome isolado, servidor canônico sem cache. Sprite/colisão/interação adjacente, largura com retrato, cancelamento30, aceitação40, entrega60/repetição, bloqueio de slots RAM, save/load normal sintético no slot19, imagem legada e reconstrução. [Resultado](evidencias/blubamka-v01/resultado.json) · [Corte](evidencias/blubamka-v01/corte.png) · [Audiência](evidencias/blubamka-v01/audiencia.png). Não utiliza saves pessoais nem repete a campanha.
+
+**Próximo teste integrado, após publicação separada:** entrar na corte pelo percurso normal, aproximar-se de Blubamka e falar; observar identidade, escala e leitura do retrato durante pedido/entrega. O hub existente “Rihad · audiência (RAM)” continua disponível para diagnóstico, sem novo acesso técnico. A publicação Pages desta entrega não foi executada. A prévia permanece na fonte1339e2a; aguardam agrupamento Fantasma (`b996fb3`), portas/objetos (`e5d822e`), lava (`0d613fc`) e este conjunto. A avaliação manual não bloqueia as verificações técnicas, mas permanece pendente.
+
+
 A transferência para Stonekeep e a [entrega do pergaminho](ENTREGA_PERGAMINHO_M02_05.md) fazem parte do fluxo vigente. O histórico da amostra 03D registra a implementação anterior a essas conexões.
 
 **Confirmação do responsável —01/11/2026:** diálogo da audiência funciona e a quest atualiza. Referência entregue/disponível **fe99ac3**; o relato não informou hash nem ambiente. Não atribuir aprovação estética dos placeholders ou testes adicionais de persistência, recusa, transferências, editor ou dispositivo. Evidências automatizadas abaixo permanecem identificadas separadamente.
@@ -16,7 +37,7 @@ A transferência para Stonekeep e a [entrega do pergaminho](ENTREGA_PERGAMINHO_M
 | Saída do salão, MAP1 `0x1111` | (23,41) | (81,126) |
 | Audiência, marcador de regente `0x8000` | (23,29) | (81,90) |
 
-O [dado do gerador](mapas/RIHAD_CORTE_M02.json) preserva a planta do salão com escala de três tiles por célula, X espelhado e margem de dois tiles. Laje, faixa de tapete e degraus usam pisos provisórios do atlas atual. Os seis limiares interiores sem registro `LOCK` usam vãos abertos de um tile. O poço de água (FLOR `0x0D00`) fica fora da circulação e tem representação provisória. Avisos de áreas restritas, guardas, encontros laterais, decoração e o nível auxiliar `test2` ficam fora do percurso da audiência. O marcador genérico do original serve para posição, e a caracterização de Blubamka segue provisória.
+O [dado do gerador](mapas/RIHAD_CORTE_M02.json) preserva a planta do salão com escala de três tiles por célula, X espelhado e margem de dois tiles. Laje, faixa de tapete e degraus usam pisos provisórios do atlas atual. Os seis limiares interiores sem registro `LOCK` usam vãos abertos de um tile. O poço de água (FLOR `0x0D00`) fica fora da circulação e tem representação provisória. Avisos de áreas restritas, guardas, encontros laterais, decoração e o nível auxiliar `test2` ficam fora do percurso da audiência. O marcador genérico do original serve para posição; a representação própria V01 acima é interpretação artística em avaliação.
 
 A audiência e a saída mantêm Map011, eventos 2 e 1, etapa, inventário e recibos. Saves da corte 17×13 retomam na entrada atual do salão, preservando dados da partida. Saves gravados no salão novo conservam sua posição. O próximo teste integrado de MQ02 pode usar o caminho normal: entrar na corte, seguir a faixa central até Blubamka, aceitar o pedido, visitar Stonekeep, voltar e entregar, conferir o diário e conversar novamente. Guardar e carregar na corte pode ser incluído nesse mesmo percurso.
 
