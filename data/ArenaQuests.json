@@ -62,5 +62,6 @@
     "max": 8
   },
   "gateHalfWidth": 1,
-  "gateDepth": 2
+  "gateDepth": 2,
+  "minimumGateLevel": 2
 }

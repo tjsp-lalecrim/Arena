@@ -6,7 +6,7 @@ O Map009 usa um atlas dedicado ao percurso portão → esplanada → corte e aos
 
 | Reuso | Módulos que faltam |
 | --- | --- |
-| Cama E preservada; pousada e corte agora usam os [interiores V01](#interiores-v01-e-correção-da-cama--19112026), com pisos, paredes, caps, molduras, tapete, degraus e mobiliário. | [Blubamka V01](CORTE_RIHAD_M02_03D.md#blubamka-v01--representação-própria-20112026) tem sprite e retrato em avaliação; costa e flora/objetos específicos continuam pendentes. Avaliações visuais recentes adiadas até a próxima prévia integrada. |
+| Blubamka V01 (sprite/retrato) e cama E preservados; pousada e corte usam os [interiores V01](#interiores-v01-e-correção-da-cama--19112026), com pisos, paredes, caps, molduras, tapete, degraus e mobiliário. | Costa e flora/objetos específicos ainda requerem reuso/ocorrências. Os conjuntos entregues têm avaliação visual pendente; isso não é falta de produção. |
 
 **Exportação.** Na raiz, execute `python tools/export-m02-surface-atlas.py rihad` com Pillow e depois `node tools/build-rihad-arrival.cjs`. O exportador monta um C nativo com células de 48 px, pisos em período 2×2, coroamento e duas fileiras de face. O gerador mantém B e A1 do tileset-base e reaproveita seus módulos de repouso. [Mestre, prompt e fontes](arte/m02-tilesets/sources-rihad.json) · [Peças, hash e exportação](arte/m02-tilesets/exports-rihad.json) · [Matriz de atribuição](mapas/RIHAD_MATERIAIS_M02.json).
 
@@ -151,14 +151,14 @@ No primeiro carregamento de um save da antiga esplanada, o jogo retoma no portã
 
 | Família | Referência original | Decisão frente aos atlas existentes |
 | --- | --- | --- |
-| 1. Rua, passeio e terreno aberto · prioridade alta | NROADD, NSIDWALD, NGRASSD | **Nova**. Começar por piso, borda reta, esquina e junção de rua/passeio reaproveitáveis. O piso claro de `Arena_Dungeon_M14_R03` serve na prova de percurso, como placeholder |
-| 2. Fachadas, coberturas e vãos comuns · prioridade alta | DMBS1–3, DMEQUIP, DMTAVERN, DMMUGUIL, DMTEMPLE, DMNOBLE, NHEDGED, GARDENGD | **Nova**. Começar por base de parede, cimalha, canto e vão padrão reaproveitáveis. Separar ornamentos residenciais e institucionais, sebes e arcos de jardim. Adaptar componentes de portas onde a silhueta for compatível |
-| 3. Muralha, portão e fachada da corte | CITYWALD, DLGTD, DRGTD, DGATE, BK01/02PALD | **Nova**. Reaproveitar batente e contrato de colisão/âncora; portão monumental e fachada do palácio preservam composição local. O atlas castelhano de Stonekeep só serve como referência modular |
+| 1. Rua, passeio e terreno aberto · prioridade alta | NROADD, NSIDWALD, NGRASSD | **Entregue** no atlas exterior V01: rua, passeio, terreno e transições atuais. Avaliação visual separada |
+| 2. Fachadas, coberturas e vãos comuns · prioridade alta | DMBS1–3, DMEQUIP, DMTAVERN, DMMUGUIL, DMTEMPLE, DMNOBLE, NHEDGED, GARDENGD | **Entregue** no atlas exterior V01: famílias de fachada, cantos, sebes/arcos, portas e sinalização aplicados |
+| 3. Muralha, portão e fachada da corte | CITYWALD, DLGTD, DRGTD, DGATE, BK01/02PALD | **Entregue** na composição urbana V01; não confundir o recurso DGATE urbano com o vínculo ainda não comprovado de dragon gate em Fang Lair |
 | 4. Costa e transições | SEAWALLD, FLOR 13 | **Adaptar** a superfície existente `Arena_Water_M14_R02_A1` e conferir margem/porto antes de escolher o acabamento |
 | 5. Adereços urbanos e flora | NLAMP1, NWELL, NFOUNT, CACTUS, PALM | **Mista**. Reusar vasos, luzes e pedra onde houver equivalência. Poço, fonte, palmeira e cacto exigem desenho próprio quando necessários ao setor |
-| 6. Interior obrigatório da corte | `PALACE2.MIF` / `CASTLE.INF` | **Mista**. Reusar pisos e paredes existentes provisoriamente. Priorizar piso modular, tapete com bordas, degrau e batente, aproveitáveis em palácios com a mesma família. Trono, ornamentos e caracterização de Blubamka ficam no conjunto local |
+| 6. Interior obrigatório da corte | `PALACE2.MIF` / `CASTLE.INF` | **Entregue**: interiores C/D, trono/ornamentos e Blubamka V01. Ver [inventário auditado](FANG_CELAS_M02_06A.md#inventário-auditado-de-assets-do-m02--20112026); sem pendência de novo conjunto completo |
 
-**Contagem de planejamento.** Seis famílias urbanas. Um atlas modular exterior novo é a unidade mínima para rua, fachada e fortificação. Costa pode dividir esse atlas com a superfície já existente. A variante de palácio está identificada. Confirmar o espaço disponível nos atlas existentes antes de reservar um atlas interior separado. Informante e Blubamka têm representações provisórias reutilizáveis no teste de mapa. Blubamka V01 tem sprite/retrato próprios em avaliação, separados do atlas; ilustrações narrativas continuam futuras.
+**Contagem vigente.** Seis famílias urbanas: exterior C e interiores C/D já produzidos; Blubamka tem sprite/retrato próprios. Costa/adereços restantes requerem fechar reuso/ocorrências antes de fixar novas gerações. Ilustrações narrativas permanecem vinculadas aos blocos. Avaliação visual pendente não equivale a asset ausente.
 
 **Plano anterior à integração urbana.** Importar a estrutura da cidade com os tiles disponíveis como provisórios, testar carregamento e medir a rota contínua **portão urbano → esplanada → portão interno → corte existente**. Transferir os gatilhos de chegada, informante, repouso e estrada por seus IDs atuais. Começar por essa ligação antes de finalizar outros quarteirões, mantendo-os no inventário da planta. [Contagem conjunta de criaturas do M02](FANG_CELAS_M02_06A.md#inventário-de-criaturas-e-materiais-do-m02) e [texto da campanha](CAMPANHA_PRINCIPAL.md#inventário-textual).
 <a id="cobertura-vigente-de-rihad--revisão02112026"></a>
