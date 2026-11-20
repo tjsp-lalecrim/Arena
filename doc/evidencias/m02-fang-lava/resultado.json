@@ -11,6 +11,7 @@
     "Clean new-map boot, native A1 phases0/1/2 observed without timing override; lava blocked and not swimming; actual normal-speed recording",
     "Old tileset7 serialized save resumes with11 and exact resources/quest/items/points/receipts/position; no namespace or personal-profile change",
     "Native collision path stair->dry bank->staff and back; fragment collected once with both Hell Hounds alive; stage100/retaliation pending and upper-level return preserved",
+    "Same64x64 pool region captured in native renderer has three different phase hashes",
     "Same64x64 pool region captured in native renderer has three different phase hashes"
   ],
   "performanceBefore": {
@@ -77,7 +78,7 @@
   "renderedPhases": [
     {
       "phase": 0,
-      "sha256": "ebee394e41386893e365bab36916668522c516e325de348f1a7a593998e75687"
+      "sha256": "7ecc269f2d1e1f2361d014c782df16bf959546bf9643cd1729df0ab53f55d32a"
     },
     {
       "phase": 1,
