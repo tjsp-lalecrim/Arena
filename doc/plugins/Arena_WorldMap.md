@@ -51,3 +51,5 @@ Roteiro único no Chrome (`http://127.0.0.1:8774/`, servidor existente `tools/ar
 4. Com fragmento/etapa100, continuar pela entrada da mina: o mapa não substitui visão/retaliação. Depois da vitória, sair normalmente e usar o mapa na cidade.
 
 Avaliação manual deste recurso pendente. Pages, release, lava e inventário de objetos incertos não são alterados por esta entrega.
+
+Referência funcional verificada: `260ee82c58ad3da4fdbbac3c767931bc2ff3ed26`, `feature/mapa-mundial-viagem`. [Pacote Windows verificado](../evidencias/mapa-mundial/pacote.json):417 arquivos, namespace e caminhos/checksums conferidos, sem referências/mestres/saves. Não houve publicação no Pages. Promoção pelo fluxo feature → develop → branch de estabilização → main; avaliação do responsável continua pendente.
