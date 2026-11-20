@@ -1,0 +1,19 @@
+// Follow-up to test-world-map: old-save extension and held input at the two return levels.
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),{chromium}=require('playwright');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/mapa-mundial');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});try{const p=await b.newPage({viewport:{width:980,height:780}}),errors=[];p.setDefaultTimeout(20000);p.on('pageerror',e=>errors.push(e.message));
+ const title=()=>p.waitForFunction(()=>window.ArenaWorldMap&&SceneManager._scene instanceof Scene_Title&&SceneManager._scene._commandWindow.isOpenAndActive());
+ const map=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_Map&&SceneManager._sceneStarted&&!SceneManager.isSceneChanging()&&$gamePlayer.canMove());
+ const world=()=>p.waitForFunction(()=>SceneManager._scene instanceof Scene_ArenaWorldMap&&SceneManager._scene._list._ready&&SceneManager._scene._list.active);
+ const key=async k=>{await p.keyboard.press(k,{delay:85});await p.waitForTimeout(220);};
+ await p.goto('http://127.0.0.1:8774/');await title();await p.evaluate(()=>ArenaRihad.preview());await map();
+ assert(await p.evaluate(()=>{const e=$gameMap.event(3),i=new Game_Interpreter();$gamePlayer.locate(e.x,e.y+1);i._mapId=9;i._eventId=3;i._branch[0]=0;return ArenaRihad.travelFromGate(i,'outskirts');}));await map();assert.equal(await p.evaluate(()=>$gameMap.mapId()),10);assert.equal(await p.evaluate(()=>ArenaContinuation.labActive()),true);assert.equal(await p.evaluate(()=>DataManager.saveGame(18)),false);
+ assert(await p.evaluate(()=>{const e=$gameMap.event(1),i=new Game_Interpreter();$gamePlayer.locate(e.x,e.y+1);i._mapId=10;i._eventId=1;return ArenaRihad.returnToArrival(i);}));await map();assert.equal(await p.evaluate(()=>$gameMap.mapId()),9);
+ const fixture=await p.evaluate(()=>{const c={system:$gameSystem,screen:$gameScreen,timer:$gameTimer,switches:$gameSwitches,variables:$gameVariables,selfSwitches:$gameSelfSwitches,actors:$gameActors,party:$gameParty,map:$gameMap,player:$gamePlayer};const raw=JsonEx.makeDeepCopy(c);delete raw.system._persistentState.namespaces.arenaWorldTravel;return JsonEx.stringify(raw);});
+ await p.evaluate(()=>ArenaContinuation.leaveLab());await title();
+ await p.evaluate(f=>{const c=JsonEx.parse(f),before=JsonEx.stringify({actors:c.actors,party:c.party,quests:c.system._persistentState.namespaces});DataManager.extractSaveContents(c);if(ArenaWorldMap.state().sequence!==0||ArenaWorldMap.state().trip!==null)throw Error('old-save defaults');const namespaces=JsonEx.makeDeepCopy($gameSystem._persistentState.namespaces);delete namespaces.arenaWorldTravel;if(before!==JsonEx.stringify({actors:$gameActors,party:$gameParty,quests:namespaces}))throw Error('old-save preservation');SceneManager.goto(Scene_Map);},fixture);await map();
+ await key('m');await world();await p.evaluate(()=>SceneManager._scene._list.select(1));await key('Enter');await world();
+ await p.keyboard.down('Escape');await p.waitForTimeout(850);assert(await p.evaluate(()=>SceneManager._scene instanceof Scene_ArenaWorldMap&&SceneManager._scene._province===null));
+ await p.keyboard.up('Escape');await world();await key('Escape');await map();
+ assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'input-migration.json'),JSON.stringify({browser:await b.version(),checks:['Existing Rihad laboratory gate still travels to/out of outskirts in RAM; save slots stay blocked and lab is not converted.','Old synthetic normal save without arenaWorldTravel extends with defaults, keeping actors/party/all old namespaces.','M opens; one held Esc returns province -> Tamriel without also closing the map; fresh Esc returns to exploration.'],errors},null,2)+'\n');console.log('World map old-save/input follow-up passed.');
+ }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

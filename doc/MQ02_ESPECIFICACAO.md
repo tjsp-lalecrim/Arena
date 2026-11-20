@@ -2,6 +2,10 @@
 
 ## Roteiro integrado de MQ02 no Chrome
 
+**Mapa mundial integrado:** [roteiro e regras](plugins/Arena_WorldMap.md#verificação-e-avaliação). Na cidade, usar menu Mapa mundial/M → Hammerfell → destino conhecido; conferir cancelamento e viagem a Stonekeep, retorno pelo evento normal e viagem a Fang Lair após entrega. Em interiores, apenas consulta; etapa100 mantém saída/visão/retaliação obrigatórias. Portão continua como alternativa pelo mesmo serviço.
+
+**Feedback recebido:** a visão de Ria foi apresentada com sucesso. A avaliação do mapa mundial permanece pendente; não pedir nova avaliação isolada da visão. As menções históricas abaixo ao bloqueio anterior da cama não anulam esse relato.
+
 **Teste manual pendente:** o responsável não conseguiu acionar a cama na prévia0d8f209. A correção cobre pé e cabeceira por Enter/clique, com interiores V01; [diagnóstico e evidência](CHEGADA_RIHAD_M02_03A.md#interiores-v01-e-correção-da-cama--19112026).
 
 Descanso urbano vigente na [Pousada do portão](CHEGADA_RIHAD_M02_03A.md#pousada-do-portão--descanso-urbano-vigente), com avaliação manual pendente. A prévia Pages `0d8f209` já contém a pousada; [publicação e roteiro curto](PAGES_INFRA.md#prévia-de-mq02-com-a-pousada-de-rihad--18112026).

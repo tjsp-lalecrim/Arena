@@ -1,0 +1,9 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Existing Rihad laboratory gate still travels to/out of outskirts in RAM; save slots stay blocked and lab is not converted.",
+    "Old synthetic normal save without arenaWorldTravel extends with defaults, keeping actors/party/all old namespaces.",
+    "M opens; one held Esc returns province -> Tamriel without also closing the map; fresh Esc returns to exploration."
+  ],
+  "errors": []
+}
