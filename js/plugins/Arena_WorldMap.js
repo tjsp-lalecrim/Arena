@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Mapa mundial: províncias, descoberta e viagem exterior MQ02.
+ * @plugindesc v0.2.0 Mapa mundial: províncias, descoberta e viagem exterior MQ02.
  * @author Codex
  * @help Após Rihad, StonekeepWhole e FangCells. Dados ArenaWorldMap.json.
  * Menu Mapa mundial; tecla M fora de batalha. Enter confirma, Esc retorna.
@@ -13,7 +13,8 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
  MVStateStore.register('arenaWorldTravel',1,{sequence:0,trip:null},function(s){return s;});
  function cfg(){return $arenaWorldMap;}
  var loaded=DataManager.isDatabaseLoaded,validated=false;
- DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!validated){var c=cfg();if(!c||c.schemaVersion!==1||c.provinces.length!==9||!c.geography||c.provinces.some(function(p){return !c.geography.regions[p.id]||!c.geography.regions[p.id].length;})||c.places.length!==3||c.places.some(function(p){return !p.point||p.point.length!==2||c.provinces.every(function(v){return v.id!==p.province;});})||c.exteriorMaps.some(function(id){return !$dataMapInfos[id];}))throw Error('Mapa mundial: configuração geográfica ou áreas exteriores inválidas.');validated=true;}return true;};
+ DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!validated){var c=cfg();if(!c||c.schemaVersion!==1||c.provinces.length!==9||!c.geography||c.provinces.some(function(p){return !c.geography.regions[p.id]||!c.geography.regions[p.id].length;})||c.places.length!==273||c.places.some(function(p){return !p.point||p.point.length!==2||c.provinces.every(function(v){return v.id!==p.province;});})||c.exteriorMaps.some(function(id){return !$dataMapInfos[id];}))throw Error('Mapa mundial: configuração geográfica ou áreas exteriores inválidas.');validated=true;}return true;};
+ function alphabetical(a,b){return a.name.localeCompare(b.name,'pt-BR',{sensitivity:'base'})||a.id.localeCompare(b.id);}
  function quest(){return ArenaQuests.snapshot('MQ02');}
  function campaign(){return !!window.$gameSystem&&ArenaNarrative.isCampaign()&&!(ArenaContinuation.labActive());}
  function location(){
@@ -39,7 +40,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
  }
  function reason(id,fromGate){
   if(!campaign()&&!(fromGate&&ArenaNarrative.isCampaign()&&ArenaContinuation.labActive()))return 'Mapa de campanha indisponível nesta sessão técnica.';
-  if(!known(id))return 'Destino indisponível.';
+  if(!known(id))return 'Destino indisponível nesta versão.';
   if($gameParty.inBattle()||$gamePlayer.isTransferring()||SceneManager.isSceneChanging()||$gameTemp._arenaEncounterLock)return 'Aguarde a ação em andamento.';
   if($gameMessage.isBusy()||(!fromGate&&$gameMap.isEventRunning()))return 'Conclua a interação antes de viajar.';
   var trip=MVStateStore.read('arenaWorldTravel').trip;
@@ -73,7 +74,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
    if(!(SceneManager._scene instanceof Scene_Map)||!SceneManager._sceneStarted||!campaign()||$gameParty.inBattle()||$gameMessage.isBusy()||$gameMap.isEventRunning()||$gamePlayer.isTransferring()||SceneManager.isSceneChanging()||$gameTemp._arenaEncounterLock)return false;
    fence();SceneManager.push(Scene_ArenaWorldMap);return true;
   },
-  entries:function(province){return cfg().places.filter(function(p){return p.province===province&&known(p.id);});},
+  entries:function(province){return cfg().places.filter(function(p){return p.province===province&&(!p.questSecret||known(p.id));}).map(function(p){return Object.assign({},p,{enabled:!reason(p.id,false)});}).sort(alphabetical);},
   state:function(){return MVStateStore.read('arenaWorldTravel');}
  };
  var start=Scene_Map.prototype.start;
@@ -93,7 +94,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
  List.prototype.initialize=function(x,y,w,h){this._ww=w;this._hh=h;this.rows=[];Window_Command.prototype.initialize.call(this,x,y);};
  List.prototype.windowWidth=function(){return this._ww;};List.prototype.windowHeight=function(){return this._hh;};
  List.prototype.standardFontSize=function(){return 20;};List.prototype.itemHeight=function(){return 34;};
- List.prototype.makeCommandList=function(){this.rows.forEach(function(r){this.addCommand(r.name,'pick',true,r.id);},this);};
+ List.prototype.makeCommandList=function(){this.rows.forEach(function(r){this.addCommand(r.name,'pick',r.enabled!==false,r.id);},this);};
  List.prototype.setRows=function(rows){this.rows=rows;this.refresh();this.select(0);};
  List.prototype.processOk=function(){if(!this._ready)return;Window_Command.prototype.processOk.call(this);};
  List.prototype.processCancel=function(){if(this._ready)Window_Command.prototype.processCancel.call(this);};
@@ -118,17 +119,17 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
   points.forEach(function(p){
    var pt=view?p.point:p.label,x=rect.x+pt[0]/320*rect.w,y=rect.y+pt[1]/200*rect.h;
    var current=view?location()===p.id:(location()?p.id==='hammerfell':p.id==='imperial');
-   b.drawCircle(x,y,selection===p.id?6:4,current?'#ffe19b':selection===p.id?'#ecb474':'#d4c8a7');
+   b.drawCircle(x,y,selection===p.id?6:3,current?'#ffe19b':selection===p.id?'#ecb474':p.enabled===false?'#727773':'#d4c8a7');
    b.fontSize=view?18:14;b.textColor=current?'#ffe19b':'#eee3c8';b.outlineWidth=4;b.outlineColor='#12191b';
    var label=p.name;if(view&&current)label+=' · atual';
    var tw=Math.min(b.width-8,b.measureTextWidth(label)+8),lx=Math.max(0,Math.min(b.width-tw,x-tw/2));
-   if(view||rect.w>=400||selection===p.id||current)b.drawText(label,lx,y+7,tw,26,'center');this._hits.push({id:p.id,x:x,y:y,rect:[lx,y-10,tw,44]});
+   var showLabel=view?(selection===p.id||current||known(p.id)):(rect.w>=400||selection===p.id||current);if(showLabel)b.drawText(label,lx,y+7,tw,26,'center');this._hits.push({id:p.id,x:x,y:y,rect:showLabel?[lx,y-10,tw,44]:[x-7,y-7,14,14]});
   },this);
-  b.fontSize=16;b.textColor='#e0d5b9';b.drawText(view?'Selecione um local conhecido.':'Selecione uma província.',4,b.height-32,b.width-8,26);
+  b.fontSize=16;b.textColor='#e0d5b9';b.drawText(view?'Locais em cinza: viagem indisponível.':'Selecione uma província.',4,b.height-32,b.width-8,26);
  };
  MapWindow.prototype.update=function(){Window_Base.prototype.update.call(this);if(!this.visible||!this.owner||!this.owner._list.active||!this.owner._list._ready||!TouchInput.isTriggered())return;
   var x=TouchInput.x-this.x-this.padding,y=TouchInput.y-this.y-this.padding;
-  var hit=(this._hits||[]).find(function(h){return x>=h.rect[0]&&x<=h.rect[0]+h.rect[2]&&y>=h.rect[1]&&y<=h.rect[1]+h.rect[3];});
+  var hit=(this._hits||[]).filter(function(h){return x>=h.rect[0]&&x<=h.rect[0]+h.rect[2]&&y>=h.rect[1]&&y<=h.rect[1]+h.rect[3];}).sort(function(a,b){return Math.pow(x-a.x,2)+Math.pow(y-a.y,2)-Math.pow(x-b.x,2)-Math.pow(y-b.y,2);})[0];
   if(!hit&&!this._view&&this._rect){var r=this._rect,px=(x-r.x)/r.w*320,py=(y-r.y)/r.h*200;
    var inside=function(pts){var yes=false;for(var i=0,j=pts.length-1;i<pts.length;j=i++){var a=pts[i],b=pts[j];if((a[1]>py)!==(b[1]>py)&&px<(b[0]-a[0])*(py-a[1])/(b[1]-a[1])+a[0])yes=!yes;}return yes;};
    hit=cfg().geography.world.find(function(p){return inside(p.points);});
@@ -154,7 +155,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
  };
  Scene.prototype.arm=function(window){window._ready=false;this._armAt=Date.now()+180;this._armedWindow=window;};
  Scene.prototype.showLevel=function(){
-  var rows=this._province?ArenaWorldMap.entries(this._province):cfg().provinces;
+  var rows=this._province?ArenaWorldMap.entries(this._province):cfg().provinces.slice().sort(alphabetical);
   if(!rows.length)rows=[{id:null,name:'Sem locais disponíveis'}];
   this._list.setRows(rows);this._list.activate();this.arm(this._list);this._selected=undefined;this.refreshInfo();
  };

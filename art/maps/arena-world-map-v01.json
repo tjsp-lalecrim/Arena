@@ -214,6 +214,424 @@
     ],
     "places": [
       {
+        "id": "original.0.0",
+        "name": "North Point",
+        "province": "high-rock",
+        "point": [
+          175,
+          14
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.1",
+        "name": "Daggerfall",
+        "province": "high-rock",
+        "point": [
+          9,
+          162
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.2",
+        "name": "Camlorn",
+        "province": "high-rock",
+        "point": [
+          43,
+          103
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.3",
+        "name": "Shornhelm",
+        "province": "high-rock",
+        "point": [
+          133,
+          59
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.4",
+        "name": "Wayrest",
+        "province": "high-rock",
+        "point": [
+          146,
+          125
+        ],
+        "originalLocationId": 4,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.5",
+        "name": "Evermore",
+        "province": "high-rock",
+        "point": [
+          218,
+          75
+        ],
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.6",
+        "name": "Farrun",
+        "province": "high-rock",
+        "point": [
+          261,
+          8
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.7",
+        "name": "Jehanna",
+        "province": "high-rock",
+        "point": [
+          312,
+          11
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.8",
+        "name": "Old Gate",
+        "province": "high-rock",
+        "point": [
+          147,
+          39
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.9",
+        "name": "Meir Darguard",
+        "province": "high-rock",
+        "point": [
+          101,
+          71
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.10",
+        "name": "Kings Guard",
+        "province": "high-rock",
+        "point": [
+          81,
+          100
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.11",
+        "name": "Ilessen Hills",
+        "province": "high-rock",
+        "point": [
+          42,
+          136
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.12",
+        "name": "Portdun Creek",
+        "province": "high-rock",
+        "point": [
+          158,
+          76
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.13",
+        "name": "Vermeir Wastes",
+        "province": "high-rock",
+        "point": [
+          162,
+          115
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.14",
+        "name": "Raven Spring",
+        "province": "high-rock",
+        "point": [
+          245,
+          58
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.15",
+        "name": "Cloud Spring",
+        "province": "high-rock",
+        "point": [
+          280,
+          23
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.16",
+        "name": "Reich Gradkeep",
+        "province": "high-rock",
+        "point": [
+          31,
+          163
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.17",
+        "name": "Glenpoint",
+        "province": "high-rock",
+        "point": [
+          46,
+          150
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.18",
+        "name": "Ebon Wastes",
+        "province": "high-rock",
+        "point": [
+          43,
+          119
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.19",
+        "name": "Moonguard",
+        "province": "high-rock",
+        "point": [
+          64,
+          108
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.20",
+        "name": "Eagle Brook",
+        "province": "high-rock",
+        "point": [
+          80,
+          85
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.21",
+        "name": "Meir Thorvale",
+        "province": "high-rock",
+        "point": [
+          113,
+          72
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.22",
+        "name": "White Haven",
+        "province": "high-rock",
+        "point": [
+          111,
+          52
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.23",
+        "name": "Normar Heights",
+        "province": "high-rock",
+        "point": [
+          158,
+          27
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.24",
+        "name": "Thorkan Park",
+        "province": "high-rock",
+        "point": [
+          150,
+          46
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.25",
+        "name": "Markwasten Moor",
+        "province": "high-rock",
+        "point": [
+          148,
+          73
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.26",
+        "name": "Norvulk Hills",
+        "province": "high-rock",
+        "point": [
+          159,
+          103
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.27",
+        "name": "Wind Keep",
+        "province": "high-rock",
+        "point": [
+          181,
+          103
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.28",
+        "name": "Black Wastes",
+        "province": "high-rock",
+        "point": [
+          198,
+          79
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.29",
+        "name": "Dunkarn Haven",
+        "province": "high-rock",
+        "point": [
+          236,
+          72
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.30",
+        "name": "Karthgran Vale",
+        "province": "high-rock",
+        "point": [
+          244,
+          45
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.31",
+        "name": "Dunlain Falls",
+        "province": "high-rock",
+        "point": [
+          274,
+          38
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
+      },
+      {
+        "id": "original.0.32",
+        "name": "Crypt of Hearts",
+        "province": "high-rock",
+        "point": [
+          198,
+          62
+        ],
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "original.0.33",
+        "name": "Mines of Khuras",
+        "province": "high-rock",
+        "point": [
+          71,
+          132
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.1.0",
+        "name": "Sentinel",
+        "province": "hammerfell",
+        "point": [
+          46,
+          78
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.1",
+        "name": "Hegathe",
+        "province": "hammerfell",
+        "point": [
+          43,
+          155
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.2",
+        "name": "Gilane",
+        "province": "hammerfell",
+        "point": [
+          103,
+          142
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.3",
+        "name": "Taneth",
+        "province": "hammerfell",
+        "point": [
+          158,
+          135
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
         "id": "rihad",
         "name": "Rihad",
         "province": "hammerfell",
@@ -221,17 +639,305 @@
           207,
           180
         ],
-        "originalLocationId": 4
+        "originalLocationId": 4,
+        "questSecret": false
       },
       {
-        "id": "stonekeep",
-        "name": "Stonekeep",
+        "id": "original.1.5",
+        "name": "Dragonstar",
         "province": "hammerfell",
         "point": [
-          205,
-          155
+          219,
+          11
         ],
-        "originalLocationId": 33
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.6",
+        "name": "Elinhir",
+        "province": "hammerfell",
+        "point": [
+          304,
+          81
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.7",
+        "name": "Skaven",
+        "province": "hammerfell",
+        "point": [
+          180,
+          48
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.8",
+        "name": "Sunkeep",
+        "province": "hammerfell",
+        "point": [
+          45,
+          119
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.9",
+        "name": "Lainebon Place",
+        "province": "hammerfell",
+        "point": [
+          118,
+          128
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.10",
+        "name": "Vulnim Gate",
+        "province": "hammerfell",
+        "point": [
+          115,
+          89
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.11",
+        "name": "Heldorn Mount",
+        "province": "hammerfell",
+        "point": [
+          199,
+          29
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.12",
+        "name": "Riverpoint",
+        "province": "hammerfell",
+        "point": [
+          201,
+          103
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.13",
+        "name": "Roseguard",
+        "province": "hammerfell",
+        "point": [
+          186,
+          145
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.14",
+        "name": "North Hall",
+        "province": "hammerfell",
+        "point": [
+          250,
+          131
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.15",
+        "name": "Belkarth Guard",
+        "province": "hammerfell",
+        "point": [
+          264,
+          53
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.16",
+        "name": "Dragon Grove",
+        "province": "hammerfell",
+        "point": [
+          28,
+          137
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.17",
+        "name": "Chasetown",
+        "province": "hammerfell",
+        "point": [
+          47,
+          101
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.18",
+        "name": "Shadymarch",
+        "province": "hammerfell",
+        "point": [
+          102,
+          130
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.19",
+        "name": "Lainlyn",
+        "province": "hammerfell",
+        "point": [
+          76,
+          77
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.20",
+        "name": "Riverview",
+        "province": "hammerfell",
+        "point": [
+          116,
+          102
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.21",
+        "name": "Thorstad Place",
+        "province": "hammerfell",
+        "point": [
+          126,
+          69
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.22",
+        "name": "Verkarth City",
+        "province": "hammerfell",
+        "point": [
+          166,
+          69
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.23",
+        "name": "Karnver Falls",
+        "province": "hammerfell",
+        "point": [
+          177,
+          115
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.24",
+        "name": "Corten Mont",
+        "province": "hammerfell",
+        "point": [
+          208,
+          127
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.25",
+        "name": "Chaseguard",
+        "province": "hammerfell",
+        "point": [
+          193,
+          168
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.26",
+        "name": "Stonemoor",
+        "province": "hammerfell",
+        "point": [
+          251,
+          152
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.27",
+        "name": "Vulkneu Town",
+        "province": "hammerfell",
+        "point": [
+          252,
+          108
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.28",
+        "name": "Stonedale",
+        "province": "hammerfell",
+        "point": [
+          288,
+          108
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.29",
+        "name": "Nimbel Moor",
+        "province": "hammerfell",
+        "point": [
+          291,
+          73
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.30",
+        "name": "Dragon Gate",
+        "province": "hammerfell",
+        "point": [
+          238,
+          29
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.1.31",
+        "name": "Cliff Keep",
+        "province": "hammerfell",
+        "point": [
+          209,
+          51
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
       },
       {
         "id": "fang",
@@ -241,7 +947,2274 @@
           280,
           42
         ],
-        "originalLocationId": 32
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "stonekeep",
+        "name": "Stonekeep",
+        "province": "hammerfell",
+        "point": [
+          205,
+          155
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.2.0",
+        "name": "Solitude",
+        "province": "skyrim",
+        "point": [
+          112,
+          8
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.1",
+        "name": "Dawnstar",
+        "province": "skyrim",
+        "point": [
+          186,
+          23
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.2",
+        "name": "Winterhold",
+        "province": "skyrim",
+        "point": [
+          244,
+          17
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.3",
+        "name": "Snowhawk",
+        "province": "skyrim",
+        "point": [
+          75,
+          66
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.4",
+        "name": "Riften",
+        "province": "skyrim",
+        "point": [
+          301,
+          158
+        ],
+        "originalLocationId": 4,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.5",
+        "name": "Falcrenth",
+        "province": "skyrim",
+        "point": [
+          103,
+          178
+        ],
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.6",
+        "name": "Whiterun",
+        "province": "skyrim",
+        "point": [
+          187,
+          105
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.7",
+        "name": "Windhelm",
+        "province": "skyrim",
+        "point": [
+          282,
+          46
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.8",
+        "name": "Karthwasten Hall",
+        "province": "skyrim",
+        "point": [
+          27,
+          92
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.9",
+        "name": "Dragon Bridge",
+        "province": "skyrim",
+        "point": [
+          86,
+          35
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.10",
+        "name": "Granitehall",
+        "province": "skyrim",
+        "point": [
+          89,
+          113
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.11",
+        "name": "Oakwood",
+        "province": "skyrim",
+        "point": [
+          145,
+          141
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.12",
+        "name": "Stonehills",
+        "province": "skyrim",
+        "point": [
+          146,
+          47
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.13",
+        "name": "Amol",
+        "province": "skyrim",
+        "point": [
+          251,
+          44
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.14",
+        "name": "Sunguard",
+        "province": "skyrim",
+        "point": [
+          242,
+          135
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.15",
+        "name": "Vernim Wood",
+        "province": "skyrim",
+        "point": [
+          286,
+          109
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.16",
+        "name": "Amber Guard",
+        "province": "skyrim",
+        "point": [
+          51,
+          79
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.17",
+        "name": "Markarth Side",
+        "province": "skyrim",
+        "point": [
+          83,
+          49
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.18",
+        "name": "Lainalten",
+        "province": "skyrim",
+        "point": [
+          83,
+          89
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.19",
+        "name": "North Keep",
+        "province": "skyrim",
+        "point": [
+          101,
+          137
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.20",
+        "name": "Dunstad Grove",
+        "province": "skyrim",
+        "point": [
+          122,
+          58
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.21",
+        "name": "Neugrad Watch",
+        "province": "skyrim",
+        "point": [
+          120,
+          158
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.22",
+        "name": "Black Moor",
+        "province": "skyrim",
+        "point": [
+          136,
+          110
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.23",
+        "name": "Greenwall",
+        "province": "skyrim",
+        "point": [
+          276,
+          156
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.24",
+        "name": "Dunpar Wall",
+        "province": "skyrim",
+        "point": [
+          177,
+          62
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.25",
+        "name": "Riverwood",
+        "province": "skyrim",
+        "point": [
+          177,
+          141
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.26",
+        "name": "Helarchen Creek",
+        "province": "skyrim",
+        "point": [
+          210,
+          40
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.27",
+        "name": "Nimalten City",
+        "province": "skyrim",
+        "point": [
+          215,
+          123
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.28",
+        "name": "Laintar Dale",
+        "province": "skyrim",
+        "point": [
+          220,
+          69
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.29",
+        "name": "Pargran Village",
+        "province": "skyrim",
+        "point": [
+          246,
+          98
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.30",
+        "name": "Reich Corigate",
+        "province": "skyrim",
+        "point": [
+          267,
+          123
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.31",
+        "name": "Dragon Wood",
+        "province": "skyrim",
+        "point": [
+          282,
+          75
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
+      },
+      {
+        "id": "original.2.32",
+        "name": "Labyrinthian",
+        "province": "skyrim",
+        "point": [
+          147,
+          73
+        ],
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "original.2.33",
+        "name": "Fortress of Ice",
+        "province": "skyrim",
+        "point": [
+          230,
+          40
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.3.0",
+        "name": "Ebonheart",
+        "province": "morrowind",
+        "point": [
+          149,
+          111
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.1",
+        "name": "Narsis",
+        "province": "morrowind",
+        "point": [
+          154,
+          181
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.2",
+        "name": "Blacklight",
+        "province": "morrowind",
+        "point": [
+          56,
+          32
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.3",
+        "name": "Firewatch",
+        "province": "morrowind",
+        "point": [
+          186,
+          32
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.4",
+        "name": "Necrom",
+        "province": "morrowind",
+        "point": [
+          281,
+          95
+        ],
+        "originalLocationId": 4,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.5",
+        "name": "Mournhold",
+        "province": "morrowind",
+        "point": [
+          210,
+          133
+        ],
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.6",
+        "name": "Tear",
+        "province": "morrowind",
+        "point": [
+          247,
+          190
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.7",
+        "name": "Kragenmoor",
+        "province": "morrowind",
+        "point": [
+          83,
+          140
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.8",
+        "name": "Silgrad Tower",
+        "province": "morrowind",
+        "point": [
+          35,
+          76
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.9",
+        "name": "Stoneforest",
+        "province": "morrowind",
+        "point": [
+          100,
+          63
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.10",
+        "name": "Karththor Dale",
+        "province": "morrowind",
+        "point": [
+          91,
+          102
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.11",
+        "name": "Oaktown",
+        "province": "morrowind",
+        "point": [
+          112,
+          163
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.12",
+        "name": "Eagle Moor",
+        "province": "morrowind",
+        "point": [
+          161,
+          133
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.13",
+        "name": "Silnim Dale",
+        "province": "morrowind",
+        "point": [
+          205,
+          170
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.14",
+        "name": "Dragon Glade",
+        "province": "morrowind",
+        "point": [
+          235,
+          96
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.15",
+        "name": "Glen Haven",
+        "province": "morrowind",
+        "point": [
+          224,
+          43
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.16",
+        "name": "Cormar View",
+        "province": "morrowind",
+        "point": [
+          31,
+          37
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.17",
+        "name": "Reich Parkeep",
+        "province": "morrowind",
+        "point": [
+          39,
+          63
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.18",
+        "name": "Markgran Forest",
+        "province": "morrowind",
+        "point": [
+          100,
+          50
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.19",
+        "name": "Verarchen Hall",
+        "province": "morrowind",
+        "point": [
+          67,
+          87
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.20",
+        "name": "Riverbridge",
+        "province": "morrowind",
+        "point": [
+          112,
+          131
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.21",
+        "name": "Stonefalls",
+        "province": "morrowind",
+        "point": [
+          125,
+          105
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.22",
+        "name": "Old Run",
+        "province": "morrowind",
+        "point": [
+          174,
+          74
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.23",
+        "name": "Old Keep",
+        "province": "morrowind",
+        "point": [
+          179,
+          154
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.24",
+        "name": "Heimlyn Keep",
+        "province": "morrowind",
+        "point": [
+          139,
+          165
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.25",
+        "name": "Darnim Watch",
+        "province": "morrowind",
+        "point": [
+          204,
+          112
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.26",
+        "name": "Corkarth Run",
+        "province": "morrowind",
+        "point": [
+          236,
+          170
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.27",
+        "name": "Amber Forest",
+        "province": "morrowind",
+        "point": [
+          244,
+          138
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.28",
+        "name": "Sailen Vulgate",
+        "province": "morrowind",
+        "point": [
+          258,
+          107
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.29",
+        "name": "Greenheights",
+        "province": "morrowind",
+        "point": [
+          253,
+          78
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.30",
+        "name": "Helnim Wall",
+        "province": "morrowind",
+        "point": [
+          221,
+          80
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.31",
+        "name": "Karththor Heights",
+        "province": "morrowind",
+        "point": [
+          240,
+          43
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
+      },
+      {
+        "id": "original.3.32",
+        "name": "Dagoth-Ur",
+        "province": "morrowind",
+        "point": [
+          133,
+          44
+        ],
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "original.3.33",
+        "name": "Black Gate",
+        "province": "morrowind",
+        "point": [
+          196,
+          143
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.4.0",
+        "name": "Dusk",
+        "province": "summurset",
+        "point": [
+          218,
+          173
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.1",
+        "name": "Sunhold",
+        "province": "summurset",
+        "point": [
+          151,
+          171
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.2",
+        "name": "Alinor",
+        "province": "summurset",
+        "point": [
+          77,
+          131
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.3",
+        "name": "Shimmerene",
+        "province": "summurset",
+        "point": [
+          186,
+          115
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.4",
+        "name": "Lillandril",
+        "province": "summurset",
+        "point": [
+          62,
+          54
+        ],
+        "originalLocationId": 4,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.5",
+        "name": "Firsthold",
+        "province": "summurset",
+        "point": [
+          193,
+          15
+        ],
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.6",
+        "name": "Skywatch",
+        "province": "summurset",
+        "point": [
+          252,
+          86
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.7",
+        "name": "Cloudrest",
+        "province": "summurset",
+        "point": [
+          155,
+          56
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.8",
+        "name": "Sea Keep",
+        "province": "summurset",
+        "point": [
+          48,
+          91
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.9",
+        "name": "Corgrad Wastes",
+        "province": "summurset",
+        "point": [
+          112,
+          55
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.10",
+        "name": "Riverfield",
+        "province": "summurset",
+        "point": [
+          134,
+          115
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.11",
+        "name": "Marnor Keep",
+        "province": "summurset",
+        "point": [
+          122,
+          155
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.12",
+        "name": "Archen Grangrove",
+        "province": "summurset",
+        "point": [
+          185,
+          169
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.13",
+        "name": "Vulkhel Guard",
+        "province": "summurset",
+        "point": [
+          256,
+          125
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.14",
+        "name": "Belport Run",
+        "province": "summurset",
+        "point": [
+          177,
+          36
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.15",
+        "name": "West Guard",
+        "province": "summurset",
+        "point": [
+          240,
+          58
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.16",
+        "name": "Karnwasten Moor",
+        "province": "summurset",
+        "point": [
+          43,
+          73
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.17",
+        "name": "Wasten Coridale",
+        "province": "summurset",
+        "point": [
+          54,
+          130
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.18",
+        "name": "White Guard",
+        "province": "summurset",
+        "point": [
+          72,
+          99
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.19",
+        "name": "Marbruk Brook",
+        "province": "summurset",
+        "point": [
+          95,
+          65
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.20",
+        "name": "Graddun Spring",
+        "province": "summurset",
+        "point": [
+          109,
+          38
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.21",
+        "name": "Ebon Stadmont",
+        "province": "summurset",
+        "point": [
+          118,
+          86
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.22",
+        "name": "Glenview",
+        "province": "summurset",
+        "point": [
+          131,
+          170
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.23",
+        "name": "Holly Falls",
+        "province": "summurset",
+        "point": [
+          161,
+          150
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.24",
+        "name": "Rosefield",
+        "province": "summurset",
+        "point": [
+          161,
+          118
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.25",
+        "name": "Old Falls",
+        "province": "summurset",
+        "point": [
+          158,
+          74
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.26",
+        "name": "Kings Haven",
+        "province": "summurset",
+        "point": [
+          152,
+          34
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.27",
+        "name": "Karndar Watch",
+        "province": "summurset",
+        "point": [
+          208,
+          46
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.28",
+        "name": "Thorheim Guard",
+        "province": "summurset",
+        "point": [
+          206,
+          164
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.29",
+        "name": "Silsailen Point",
+        "province": "summurset",
+        "point": [
+          237,
+          89
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.30",
+        "name": "Silver Wood",
+        "province": "summurset",
+        "point": [
+          241,
+          139
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.31",
+        "name": "Riverwatch",
+        "province": "summurset",
+        "point": [
+          96,
+          118
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
+      },
+      {
+        "id": "original.4.32",
+        "name": "Crystal Tower",
+        "province": "summurset",
+        "point": [
+          139,
+          22
+        ],
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "original.4.33",
+        "name": "Temple of Mad God",
+        "province": "summurset",
+        "point": [
+          80,
+          82
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.5.0",
+        "name": "Eldenroot",
+        "province": "valenwood",
+        "point": [
+          196,
+          98
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.1",
+        "name": "Silvenar",
+        "province": "valenwood",
+        "point": [
+          159,
+          59
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.2",
+        "name": "Woodhearth",
+        "province": "valenwood",
+        "point": [
+          50,
+          116
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.3",
+        "name": "Falinesti",
+        "province": "valenwood",
+        "point": [
+          121,
+          41
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.4",
+        "name": "Greenheart",
+        "province": "valenwood",
+        "point": [
+          132,
+          144
+        ],
+        "originalLocationId": 4,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.5",
+        "name": "Arenthia",
+        "province": "valenwood",
+        "point": [
+          228,
+          9
+        ],
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.6",
+        "name": "Haven",
+        "province": "valenwood",
+        "point": [
+          298,
+          170
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.7",
+        "name": "Southpoint",
+        "province": "valenwood",
+        "point": [
+          216,
+          171
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.8",
+        "name": "Thormar Keep",
+        "province": "valenwood",
+        "point": [
+          209,
+          26
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.9",
+        "name": "Vulkwasten Wood",
+        "province": "valenwood",
+        "point": [
+          153,
+          43
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.10",
+        "name": "Emperors Run",
+        "province": "valenwood",
+        "point": [
+          90,
+          55
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.11",
+        "name": "Longvale",
+        "province": "valenwood",
+        "point": [
+          130,
+          93
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.12",
+        "name": "Longhaven",
+        "province": "valenwood",
+        "point": [
+          89,
+          137
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.13",
+        "name": "Karthdar Square",
+        "province": "valenwood",
+        "point": [
+          211,
+          77
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.14",
+        "name": "Wasten Brukbrook",
+        "province": "valenwood",
+        "point": [
+          235,
+          140
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.15",
+        "name": "Eagle Vale",
+        "province": "valenwood",
+        "point": [
+          251,
+          169
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.16",
+        "name": "Vullain Haven",
+        "province": "valenwood",
+        "point": [
+          66,
+          130
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.17",
+        "name": "Cori Silmoor",
+        "province": "valenwood",
+        "point": [
+          83,
+          79
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.18",
+        "name": "Glenpoint",
+        "province": "valenwood",
+        "point": [
+          99,
+          98
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.19",
+        "name": "Marbruk Field",
+        "province": "valenwood",
+        "point": [
+          116,
+          134
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.20",
+        "name": "Black Park",
+        "province": "valenwood",
+        "point": [
+          126,
+          67
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.21",
+        "name": "Meadow Run",
+        "province": "valenwood",
+        "point": [
+          156,
+          92
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.22",
+        "name": "Tarlain Heights",
+        "province": "valenwood",
+        "point": [
+          170,
+          130
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.23",
+        "name": "Archen Cormount",
+        "province": "valenwood",
+        "point": [
+          184,
+          113
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.24",
+        "name": "Moonmont",
+        "province": "valenwood",
+        "point": [
+          192,
+          77
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.25",
+        "name": "Stone Fell",
+        "province": "valenwood",
+        "point": [
+          195,
+          50
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.26",
+        "name": "Ebon Ro",
+        "province": "valenwood",
+        "point": [
+          183,
+          26
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.27",
+        "name": "Lynpar March",
+        "province": "valenwood",
+        "point": [
+          231,
+          98
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.28",
+        "name": "Stonesquare",
+        "province": "valenwood",
+        "point": [
+          210,
+          138
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.29",
+        "name": "Green Hall",
+        "province": "valenwood",
+        "point": [
+          233,
+          158
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.30",
+        "name": "Heimdar City",
+        "province": "valenwood",
+        "point": [
+          270,
+          160
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.31",
+        "name": "Cormeir Spring",
+        "province": "valenwood",
+        "point": [
+          274,
+          132
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
+      },
+      {
+        "id": "original.5.32",
+        "name": "Elden Grove",
+        "province": "valenwood",
+        "point": [
+          77,
+          100
+        ],
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "original.5.33",
+        "name": "Selene's Web",
+        "province": "valenwood",
+        "point": [
+          206,
+          110
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.6.0",
+        "name": "Corinth",
+        "province": "elsweyr",
+        "point": [
+          144,
+          113
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.1",
+        "name": "Alabaster",
+        "province": "elsweyr",
+        "point": [
+          266,
+          97
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.2",
+        "name": "Senchal",
+        "province": "elsweyr",
+        "point": [
+          275,
+          188
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.3",
+        "name": "Rimmen",
+        "province": "elsweyr",
+        "point": [
+          252,
+          43
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.4",
+        "name": "Torval",
+        "province": "elsweyr",
+        "point": [
+          97,
+          153
+        ],
+        "originalLocationId": 4,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.5",
+        "name": "Dune",
+        "province": "elsweyr",
+        "point": [
+          37,
+          24
+        ],
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.6",
+        "name": "Orcrest",
+        "province": "elsweyr",
+        "point": [
+          130,
+          41
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.7",
+        "name": "Riverhold",
+        "province": "elsweyr",
+        "point": [
+          120,
+          10
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.8",
+        "name": "Seaplace",
+        "province": "elsweyr",
+        "point": [
+          84,
+          17
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.9",
+        "name": "Meir Lynmount",
+        "province": "elsweyr",
+        "point": [
+          189,
+          28
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.10",
+        "name": "Ein Meirvale",
+        "province": "elsweyr",
+        "point": [
+          89,
+          82
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.11",
+        "name": "Greenhall",
+        "province": "elsweyr",
+        "point": [
+          155,
+          71
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.12",
+        "name": "Brukreich Bridge",
+        "province": "elsweyr",
+        "point": [
+          208,
+          105
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.13",
+        "name": "Portneu View",
+        "province": "elsweyr",
+        "point": [
+          122,
+          133
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.14",
+        "name": "Tenmar Forest",
+        "province": "elsweyr",
+        "point": [
+          161,
+          161
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.15",
+        "name": "Darvulk Haven",
+        "province": "elsweyr",
+        "point": [
+          219,
+          184
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.16",
+        "name": "Verkarth Hills",
+        "province": "elsweyr",
+        "point": [
+          34,
+          39
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.17",
+        "name": "Cori Darglade",
+        "province": "elsweyr",
+        "point": [
+          56,
+          19
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.18",
+        "name": "Tardorn Wood",
+        "province": "elsweyr",
+        "point": [
+          103,
+          15
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.19",
+        "name": "Kings Walk",
+        "province": "elsweyr",
+        "point": [
+          145,
+          21
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.20",
+        "name": "Chasemoor",
+        "province": "elsweyr",
+        "point": [
+          183,
+          44
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.21",
+        "name": "Neumar Walk",
+        "province": "elsweyr",
+        "point": [
+          117,
+          65
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.22",
+        "name": "Heimthor Mount",
+        "province": "elsweyr",
+        "point": [
+          96,
+          103
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.23",
+        "name": "Helkarn Land",
+        "province": "elsweyr",
+        "point": [
+          150,
+          95
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.24",
+        "name": "River Keep",
+        "province": "elsweyr",
+        "point": [
+          207,
+          73
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.25",
+        "name": "Valley Guard",
+        "province": "elsweyr",
+        "point": [
+          248,
+          60
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.26",
+        "name": "Darkarn Place",
+        "province": "elsweyr",
+        "point": [
+          242,
+          88
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.27",
+        "name": "Duncori Walk",
+        "province": "elsweyr",
+        "point": [
+          201,
+          118
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.28",
+        "name": "Chasegrove",
+        "province": "elsweyr",
+        "point": [
+          139,
+          142
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.29",
+        "name": "Black Heights",
+        "province": "elsweyr",
+        "point": [
+          183,
+          157
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.30",
+        "name": "Markgran Brook",
+        "province": "elsweyr",
+        "point": [
+          189,
+          179
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.31",
+        "name": "South Guard",
+        "province": "elsweyr",
+        "point": [
+          241,
+          186
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
+      },
+      {
+        "id": "original.6.32",
+        "name": "Halls of Colossus",
+        "province": "elsweyr",
+        "point": [
+          154,
+          174
+        ],
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "original.6.33",
+        "name": "Temple of Agamanus",
+        "province": "elsweyr",
+        "point": [
+          143,
+          123
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.7.0",
+        "name": "Stormhold",
+        "province": "black-marsh",
+        "point": [
+          124,
+          25
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.1",
+        "name": "Thorn",
+        "province": "black-marsh",
+        "point": [
+          248,
+          21
+        ],
+        "originalLocationId": 1,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.2",
+        "name": "Helstrom",
+        "province": "black-marsh",
+        "point": [
+          138,
+          66
+        ],
+        "originalLocationId": 2,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.3",
+        "name": "Gideon",
+        "province": "black-marsh",
+        "point": [
+          40,
+          99
+        ],
+        "originalLocationId": 3,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.4",
+        "name": "Soulrest",
+        "province": "black-marsh",
+        "point": [
+          44,
+          157
+        ],
+        "originalLocationId": 4,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.5",
+        "name": "Blackrose",
+        "province": "black-marsh",
+        "point": [
+          147,
+          142
+        ],
+        "originalLocationId": 5,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.6",
+        "name": "Lilmoth",
+        "province": "black-marsh",
+        "point": [
+          183,
+          181
+        ],
+        "originalLocationId": 6,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.7",
+        "name": "Archon",
+        "province": "black-marsh",
+        "point": [
+          248,
+          130
+        ],
+        "originalLocationId": 7,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.8",
+        "name": "Riverwalk",
+        "province": "black-marsh",
+        "point": [
+          224,
+          27
+        ],
+        "originalLocationId": 8,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.9",
+        "name": "Tenmar Wall",
+        "province": "black-marsh",
+        "point": [
+          139,
+          30
+        ],
+        "originalLocationId": 9,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.10",
+        "name": "Greenglade",
+        "province": "black-marsh",
+        "point": [
+          200,
+          64
+        ],
+        "originalLocationId": 10,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.11",
+        "name": "Greenspring",
+        "province": "black-marsh",
+        "point": [
+          125,
+          76
+        ],
+        "originalLocationId": 11,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.12",
+        "name": "Rockgrove",
+        "province": "black-marsh",
+        "point": [
+          72,
+          125
+        ],
+        "originalLocationId": 12,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.13",
+        "name": "Moonmarch",
+        "province": "black-marsh",
+        "point": [
+          105,
+          164
+        ],
+        "originalLocationId": 13,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.14",
+        "name": "Seaspring",
+        "province": "black-marsh",
+        "point": [
+          184,
+          118
+        ],
+        "originalLocationId": 14,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.15",
+        "name": "Rockpark",
+        "province": "black-marsh",
+        "point": [
+          200,
+          155
+        ],
+        "originalLocationId": 15,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.16",
+        "name": "Chasecreek",
+        "province": "black-marsh",
+        "point": [
+          199,
+          15
+        ],
+        "originalLocationId": 16,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.17",
+        "name": "Alten Corimont",
+        "province": "black-marsh",
+        "point": [
+          158,
+          26
+        ],
+        "originalLocationId": 17,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.18",
+        "name": "Branchmont",
+        "province": "black-marsh",
+        "point": [
+          234,
+          43
+        ],
+        "originalLocationId": 18,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.19",
+        "name": "Rockguard",
+        "province": "black-marsh",
+        "point": [
+          98,
+          58
+        ],
+        "originalLocationId": 19,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.20",
+        "name": "Rockpoint",
+        "province": "black-marsh",
+        "point": [
+          178,
+          54
+        ],
+        "originalLocationId": 20,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.21",
+        "name": "Riverbridge",
+        "province": "black-marsh",
+        "point": [
+          228,
+          75
+        ],
+        "originalLocationId": 21,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.22",
+        "name": "Alten Markmont",
+        "province": "black-marsh",
+        "point": [
+          156,
+          86
+        ],
+        "originalLocationId": 22,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.23",
+        "name": "Glenbridge",
+        "province": "black-marsh",
+        "point": [
+          80,
+          89
+        ],
+        "originalLocationId": 23,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.24",
+        "name": "Stonewastes",
+        "province": "black-marsh",
+        "point": [
+          56,
+          115
+        ],
+        "originalLocationId": 24,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.25",
+        "name": "Rockspring",
+        "province": "black-marsh",
+        "point": [
+          115,
+          125
+        ],
+        "originalLocationId": 25,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.26",
+        "name": "Portdun Mont",
+        "province": "black-marsh",
+        "point": [
+          224,
+          113
+        ],
+        "originalLocationId": 26,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.27",
+        "name": "Branchgrove",
+        "province": "black-marsh",
+        "point": [
+          204,
+          138
+        ],
+        "originalLocationId": 27,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.28",
+        "name": "Seafalls",
+        "province": "black-marsh",
+        "point": [
+          262,
+          98
+        ],
+        "originalLocationId": 28,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.29",
+        "name": "Longmont",
+        "province": "black-marsh",
+        "point": [
+          125,
+          155
+        ],
+        "originalLocationId": 29,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.30",
+        "name": "Alten Meirhall",
+        "province": "black-marsh",
+        "point": [
+          161,
+          167
+        ],
+        "originalLocationId": 30,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.31",
+        "name": "Chasepoint",
+        "province": "black-marsh",
+        "point": [
+          65,
+          156
+        ],
+        "originalLocationId": 31,
+        "questSecret": false
+      },
+      {
+        "id": "original.7.32",
+        "name": "Murkwood",
+        "province": "black-marsh",
+        "point": [
+          164,
+          116
+        ],
+        "originalLocationId": 32,
+        "questSecret": true
+      },
+      {
+        "id": "original.7.33",
+        "name": "Vaults of Gemin",
+        "province": "black-marsh",
+        "point": [
+          116,
+          36
+        ],
+        "originalLocationId": 33,
+        "questSecret": true
+      },
+      {
+        "id": "original.8.0",
+        "name": "Imperial City",
+        "province": "imperial",
+        "point": [
+          180,
+          65
+        ],
+        "originalLocationId": 0,
+        "questSecret": false
       }
     ],
     "geography": {
@@ -31803,5 +34776,6 @@
         ]
       }
     }
-  }
+  },
+  "catalogue": "CITYDATA.65: todos os 273 registros com nome estático (257 cidades/vilas e 16 destinos de quest). Registros sem nome não identificam localidades estáticas; não inventar nomes ou transformar preenchimento vazio da Imperial Province em conteúdo. Destinos de quest permanecem ocultos até descoberta."
 }

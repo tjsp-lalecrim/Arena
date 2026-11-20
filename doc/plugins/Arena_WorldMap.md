@@ -1,11 +1,11 @@
-# Arena_WorldMap 0.1.0 — mapa mundial e viagem
+# Arena_WorldMap 0.2.0 — mapa mundial e viagem
 
 Entrega de campanha M02, runtime MV 1.6.1, navegador desktop/Chrome. Sem plugin externo ou mudança no motor. `Arena_WorldMap.js` carrega por último, após MV_StateStore, MV_JournalModel, Arena_Narrative/Continuation, Rihad/Court, StonekeepWhole e FangCells. Não requer habilitar debug.
 
 ## Uso e regras vigentes
 
 - Menu → **Mapa mundial**, ou **M** durante exploração. Setas selecionam; Enter abre província/seleciona local; mouse permite clicar no mapa ou lista. Esc retorna um nível, depois ao jogo/menu de origem. A exploração fica pausada enquanto a cena está aberta.
-- Tamriel apresenta nove províncias; cada uma abre sua vista regional. Outras províncias informam que ainda não há locais implementados. Somente os locais conhecidos de Hammerfell aparecem: Rihad após chegada, Stonekeep após aceitação do pedido, Fang Lair após entrega com recibo válido. Não usar uma lista de destinos futuros como spoiler.
+- Tamriel e as listas provinciais têm ordem alfabética (comparação PT-BR, sem distinguir caixa/acentos). Catálogo completo dos **273 registros com nome fixo** de CITYDATA.65:257 cidades/vilas e16 destinos de quest. Destinos sem conteúdo ou sem condição de viagem ficam desabilitados/em cinza, com motivo no rodapé. Não recebem âncoras fictícias. Os destinos de quest ainda secretos permanecem ocultos até descoberta: Stonekeep após aceitação do pedido, Fang Lair após entrega com recibo válido. Outras quests preservam sigilo até suas futuras implementações. A Imperial Province possui uma cidade nomeada; não transformar seus campos vazios em localidades. Os112 registros de dungeons sem nome fixo das oito províncias não são nomeados por suposição.
 - Viagem permitida em Rihad exterior/Arredores. Na pousada, corte e dungeons, consulta permitida; sair pelo evento normal antes de viajar. Não criamos um exterior novo nas entradas das dungeons.
 - Confirmação explícita, inicialmente em **Cancelar**; chegada em âncora acessível, distância dos gatilhos, limpeza do destino de clique e trava até soltura dos controles. Executar novamente durante transferência é recusado.
 - Portão, ofertas antigas de Stonekeep/Fang e mapa usam o mesmo serviço de disponibilidade/transferência. O portão mantém também o acesso aos Arredores. Saídas de dungeons continuam nos eventos existentes: sobretudo em Fang Lair, visão, combate e vitória de Tharn não podem ser contornados pelo mapa. Etapa100 impede viagem rápida mesmo com a visão lida.
@@ -31,7 +31,7 @@ Mestre: `art/maps/arena-world-map-v01.json`, com fontes/checksums e geometria. E
 
 ## Contrato técnico e persistência
 
-Configuração: `ArenaWorldMap.json`, schema1; `provinces`, `places`, `geography`, `exteriorMaps`. Nenhum parâmetro no gerenciador de plugins. IDs dos locais independem do texto traduzido; âncoras são resolvidas pelas configurações já existentes. Configuração geográfica inválida gera diagnóstico de inicialização, sem fallback silencioso.
+Configuração: `ArenaWorldMap.json`, schema1, catálogo expandido sem mudança do estado de save; `provinces`, `places`, `geography`, `exteriorMaps`. Nenhum parâmetro no gerenciador de plugins. IDs dos locais independem do texto traduzido; âncoras são resolvidas pelas configurações já existentes. Configuração geográfica inválida gera diagnóstico de inicialização, sem fallback silencioso.
 
 API: `ArenaWorldMap.open()`, `location()`, `known(id)`, `entries(province)`, `anchor(id)`, `reason(id)`, `travel(id)`, `fromGate(interpreter,id)`, `state()`. `travel` revalida descoberta, contexto, batalha, evento, transferência, destino atual e retaliação no instante da execução. O adaptador do portão valida evento/distância além da escolha original. Não usar API para mover laboratórios à campanha.
 
@@ -53,3 +53,7 @@ Roteiro único no Chrome (`http://127.0.0.1:8774/`, servidor existente `tools/ar
 Avaliação manual deste recurso pendente. Pages, release, lava e inventário de objetos incertos não são alterados por esta entrega.
 
 Referência funcional verificada: `260ee82c58ad3da4fdbbac3c767931bc2ff3ed26`, `feature/mapa-mundial-viagem`. [Pacote Windows verificado](../evidencias/mapa-mundial/pacote.json):417 arquivos, namespace e caminhos/checksums conferidos, sem referências/mestres/saves. Não houve publicação no Pages. Promoção pelo fluxo feature → develop → branch de estabilização → main; avaliação do responsável continua pendente.
+
+### Ampliação do catálogo — 20/11/2026
+
+Pedido do responsável: incluir todas as localidades e ordenar alfabeticamente, desabilitando as indisponíveis. Nomes, IDs e posições dos273 registros nomeados conferidos diretamente com CITYDATA.65; preservado o requisito anterior de sigilo de quest. Cada província externa apresenta32 cidades antes das descobertas; Imperial Province apresenta Imperial City. Marcadores indisponíveis em cinza; somente o selecionado, o local atual e destinos jogáveis mostram nomes simultâneos para evitar sobreposição. Lista com rolagem e foco mantém acesso a todos. Nenhuma cidade/dungeon nova é construída e nenhuma regra de viagem muda. [Validação focal do catálogo](../evidencias/mapa-mundial-catalogo/resultado.json), `tools/test-world-map-catalogue.cjs`; verificações anteriores de viagem/persistência seguem válidas para o serviço inalterado.
