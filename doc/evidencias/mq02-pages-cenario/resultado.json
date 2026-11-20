@@ -1,0 +1,40 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "2c53bd0dc55a5f7e67a0587618ff0060766b3700",
+  "infraCommit": "38e521943a577124d67f1a06a7c8cffa4107c461",
+  "manifestSha256": "ef86e589863233746704d391d3afde97526dc93fb2e1527fd3df8ffb5044b340",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 415,
+  "totalBytes": 55756458,
+  "browser": "157.0.8103.80",
+  "presentation": {
+    "urban": 117,
+    "urbanEvents": 117,
+    "stonekeepE": "Arena_M02_Scenery_V01_E",
+    "entryFace": "!$Arena_Fang_ExitFace_V01",
+    "gateMinimum": 2,
+    "debug": false,
+    "assets": [
+      "!Arena_Rihad_Props_V01",
+      "!$Arena_Rihad_Fountain_Reuse_V01",
+      "!$Arena_QuestObjects_V01",
+      "!$Arena_Fang_ExitFace_V01"
+    ]
+  },
+  "retries": [],
+  "errors": [],
+  "checks": [
+    "Public manifest exact SHA/hash",
+    "All runtime files HTTP200, size/SHA256 matched",
+    "Clean isolated Chrome opening and decoding of new scenery assets",
+    "Player profile debug disabled; Gate2 and source bindings retained"
+  ],
+  "limits": "Publication smoke only. Owner visual/campaign assessment pending; no personal saves loaded, altered or cleared.",
+  "workflow": {
+    "url": "https://github.com/tjsp-lalecrim/Arena/actions/runs/44765645038",
+    "conclusion": "success",
+    "buildPlatform": "linux",
+    "deploy": "success",
+    "artifactBytes": 43003698
+  }
+}
