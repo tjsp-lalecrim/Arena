@@ -1,5 +1,22 @@
 # M02-03B — arredores de Rihad para progressão inicial
 
+## Acesso vigente pela campanha — 20/11/2026
+
+O responsável relata que a cama funciona e acredita estar no nível1; o nível do save não foi inspecionado nem confirmado. A visão requer nível2, MQ02 etapa10 e leitura ainda não iniciada. O relato não é registrado como defeito narrativo nem como nova aprovação da visão.
+
+**Diagnóstico:** na fonte pública01f9915, Map010 e os quatro ratos já estavam no pacote. Na cidade reconstruída, o acesso lateral/evento4 fica em(342,3), alcançável pela circulação; portanto não estava removido. Porém o evento3 do portão(345,3) só informava chegada antes da audiência e oferecia viagens apenas após desbloqueios. Não havia opção explícita de Arredores nesse menu. A indicação verbal era vaga. A prova anterior ao ajuste está em `tmp/arredores-before.json` (consulta técnica ignorada).
+
+**Correção:** o portão oferece **Ir aos Arredores de Rihad** desde a chegada/etapa10, antes de Ria ou da corte. Stonekeep/Fang Lair só aparecem quando conhecidas pelas regras já existentes. Cancelar fica na cidade. Acesso lateral anterior preservado. Informante e placas indicam Portão/Arredores; retorno do Map010 por(2,9) chega em Map009(345,6), com caminho livre para a Pousada do portão. Descansar no nível1 recupera recursos e orienta explorar os Arredores e voltar após ganhar experiência, sem antecipar o sonho e sem consumir seu estado.
+
+**Progressão:** quatro ratos existentes,15EXP cada; nível2 exige50EXP. Quem chega com0EXP alcança60EXP/nível2 ao vencer os quatro. Não há nível, recompensa ou cura na viagem. Fórmula, curva, equipamento e recompensas não mudaram.
+
+**Proteção delimitada de saves de desenvolvimento:** em jogo regular, derrotar os quatro já fornece EXP suficiente. Para um registro inconsistente com todos derrotados e personagem ainda abaixo do nível2, o perfil `rihad.outskirts.progressionFloor=2` permite uma nova geração dos encontros comuns **somente ao sair da área esgotada**. Reutiliza o mecanismo de gerações de respawn; não marca MQ02/área concluída, não concede EXP automaticamente e não apaga recibos, reservas ou tesouros. Descansar/recarregar não reativa inimigos. Com algum rato vivo ou nível2+, não há essa reativação excepcional. Outros mapas mantêm a regra anterior.
+
+**Verificação:** `node tools/test-rihad-progression-route.cjs`, Chrome isolado com save normal sintético19. Percurso informante→cama nível1→portão→quatro combates reais→cidade→pousada→visão única; cancelamento, EXP/pontos, save/load e recuperação do caso esgotado. Contatos posicionados de forma controlada, sem modificar atributos ou inimigos. [Resultado](evidencias/m02-rihad-arredores-acesso/resultado.json). Não utiliza saves pessoais nem presume teste do responsável. Reconstrução usa `build-rihad-arrival.cjs`; a área agora é atualizada por ID no JSON, preservando os demais contratos mesmo com formatação multilinha.
+
+**Roteiro público após atualizar a prévia:** conferir nível em Inventário; falar com o informante, voltar ao portão norte e escolher Arredores. Vencer ratos até nível2, podendo retornar à pousada entre combates. Voltar pelo oeste do mapa, seguir placas Pousada e usar a cama. Com visão ainda não lida, terminar a leitura; salvar/carregar e descansar novamente para conferir que não se repete. Não limpar dados do site. Exploração livre de outras dungeons é possibilidade futura para avaliação, sem desbloqueio antecipado nesta correção.
+
+
 **Atualização posterior:** manuais adiados expressamente pelo responsável; sem aprovação presumida do trecho ou descanso/RAM. [M02-03C](VISAO_RIA_M02_03C.md) integra a visão após nível2 e traz **um roteiro agrupado vigente**; abaixo permanece a referência3022750, na qual o sonho ainda estava ausente. Não exigir repetir os recortes antigos separadamente.
 
 01/11/2026. Feature `feature/m02-arredores-rihad`, sobre **b8738b9**, preservando02A/02B/03A e a tag m01. **Implementado tecnicamente para avaliação**, sem merge/push/Pages. M02-03 permanece parcial: sonho de Ria, corte e missão ausentes.

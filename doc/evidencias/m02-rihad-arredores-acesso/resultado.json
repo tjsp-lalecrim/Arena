@@ -1,0 +1,28 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Level1 normal campaign: informant/bed guidance, gate cancel and outskirts option; four real Atacar victories yield EXP60/level2/3 points; return to inn, full recovery, vision once and save/load.",
+    "Exhausted level1 development save reactivates only ordinary outskirts rats on exit via next generation; no EXP, old loot receipts/pending preserved, MQ01 unchanged; persistent on save/load."
+  ],
+  "battles": [
+    {
+      "level": 1,
+      "exp": 15
+    },
+    {
+      "level": 1,
+      "exp": 30
+    },
+    {
+      "level": 1,
+      "exp": 45
+    },
+    {
+      "level": 2,
+      "exp": 60
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "limits": "Synthetic isolated normal save19; controlled positioning for contacts, real unmodified combat and rewards. No personal save inspected; owner level1 remains unconfirmed."
+}
