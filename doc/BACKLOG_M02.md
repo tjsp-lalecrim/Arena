@@ -1,6 +1,6 @@
 # Estado operacional do M02 — cobertura completa
 
-**Mapa mundial e viagem rápida — fonte funcional260ee82:** [entrega de campanha, serviço comum ao portão e roteiro](plugins/Arena_WorldMap.md). Nove províncias representadas, destinos Rihad/Stonekeep/Fang Lair sujeitos à descoberta; consulta em interiores, sem bypass da retaliação. Avaliação manual/visual pendente. Viagem mantém a elipse sem custo/cura/tempo adicional; sem novas áreas ou fechamento de MQ02.
+**Mapa mundial e viagem rápida — fonte funcional260ee82:** [entrega de campanha, serviço comum ao portão e roteiro](plugins/Arena_WorldMap.md). Nove províncias e273 localidades nomeadas do original, listas alfabéticas/rolagem e indisponíveis desabilitados; destinos de quest, incluindo Stonekeep/Fang Lair, mantêm sigilo até descoberta; consulta em interiores, sem bypass da retaliação. Avaliação manual/visual pendente. Viagem mantém a elipse sem custo/cura/tempo adicional; sem novas áreas ou fechamento de MQ02.
 
 **Feedback atual:** responsável confirmou apresentação bem-sucedida da visão de Ria; [cobertura exata](VISAO_RIA_M02_03C.md). Não atribuir nova confirmação de persistência.
 

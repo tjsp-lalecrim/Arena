@@ -31,8 +31,8 @@ const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/mapa-
  assert.equal(await p.evaluate(()=>SceneManager._scene._commandWindow._list.filter(c=>c.symbol==='arenaWorldMap').length),1);
  await p.evaluate(()=>{const w=SceneManager._scene._commandWindow;w.selectSymbol('arenaWorldMap');w.processOk();});await world();await shoot('tamriel');
  assert.equal(await p.evaluate(()=>SceneManager._scene._list.rows.length),9);
- for(const id of ['high-rock','skyrim','morrowind','summurset','valenwood','elsweyr','black-marsh','imperial']){await province(id);assert.equal(await p.evaluate(()=>SceneManager._scene._list.currentExt()),null);await key('Escape');await world();}
- await clickPoint('hammerfell');await world();assert.deepEqual(await p.evaluate(()=>SceneManager._scene._list.rows.map(r=>r.id)),['rihad']);await shoot('hammerfell-chegada');
+ for(const id of ['high-rock','skyrim','morrowind','summurset','valenwood','elsweyr','black-marsh','imperial']){await province(id);assert(await p.evaluate(()=>SceneManager._scene._list.rows.length>0&&SceneManager._scene._list.rows.every(r=>r.enabled===false))); await key('Escape');await world();}
+ await clickPoint('hammerfell');await world();assert.equal(await p.evaluate(()=>SceneManager._scene._list.rows.length),32);assert(await p.evaluate(()=>SceneManager._scene._list.rows.every(r=>r.enabled===false)));await shoot('hammerfell-chegada');
  await key('Escape');await key('Escape');await p.waitForFunction(()=>SceneManager._scene instanceof Scene_Menu);await key('Escape');await map(9);
  assert.equal(await protectedState(),original);assert.equal((await trip()).sequence,0);
  checks.push('Menu, all nine provinces, unavailable provinces, no quest spoilers and cancellation preserve campaign.');

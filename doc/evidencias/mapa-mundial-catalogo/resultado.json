@@ -1,0 +1,14 @@
+{
+  "browser": "157.0.8103.80",
+  "namedLocations": 273,
+  "cities": 257,
+  "questLocations": 16,
+  "checks": [
+    "Names/coordinates/IDs compared against every named CITYDATA.65 record.",
+    "Nine province lists alphabetized; 32 cities each except Imperial City.",
+    "Unavailable rows genuinely disabled; Enter cannot open confirmation or travel.",
+    "Scrolling reaches last row; map labels avoid showing all names at once.",
+    "Stonekeep becomes enabled after discovery, Fang Lair stays secret, confirmation/cancel preserved."
+  ],
+  "errors": []
+}
