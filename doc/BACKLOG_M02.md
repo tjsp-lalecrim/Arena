@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Prévia agrupada de assets (20/11/2026).** Publicação manual da fonte `01f9915`: [execução e roteiro agrupado](PAGES_INFRA.md#prévia-agrupada-de-assets-do-m02--20112026). Fantasma, objetos, lava e Blubamka disponíveis para avaliação, sem aprovação presumida. Fantasma permanece sem acesso de campanha confirmado; release e fechamento do marco continuam separados.
+
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).
 
 **Avaliação integrada de MQ02.** Base jogável `main` com os Hell Hounds integrados sobre `f78de8d`. O responsável fará a avaliação manual no Chrome pelo [Roteiro integrado de MQ02 no Chrome](MQ02_ESPECIFICACAO.md#roteiro-integrado-de-mq02-no-chrome). Os testes automatizados já realizados estão vinculados ao roteiro. Permanecem no backlog a cobertura das [matrizes de Stonekeep](STONEKEEP_M02_04.md#matriz-vigente) e [Fang Lair](mapas/FANG_COBERTURA_M02.json), os [módulos definitivos de Rihad](CHEGADA_RIHAD_M02_03A.md#famílias-visuais-de-rihad), os materiais definitivos de Fang Lair e os [blocos narrativos com ilustração pendente](CAMPANHA_PRINCIPAL.md#inventário-textual).
