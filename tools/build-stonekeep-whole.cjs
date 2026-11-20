@@ -39,6 +39,7 @@ function build(){
  require('./stonekeep-eastern-wings.cjs')(map,config);
  require('./stonekeep-provisions.cjs')(map,config);
  require('./m02-dungeon-objects.cjs')('Map015',map);
+ require('./m02-scenery.cjs').stonekeep(map);
  for(const p of config.points)if(![4,5].includes(map.data[(5*274+p.position[1])*274+p.position[0]]))throw Error('Stonekeep integral: ponto técnico fora do piso '+p.name);
  const infos=read('data/MapInfos.json');if(infos[15]&&infos[15].name!=='Stonekeep integral — base isolada')throw Error('Map015 ocupado');infos[15]={id:15,name:'Stonekeep integral — base isolada',expanded:true,order:15,parentId:0,scrollX:0,scrollY:0};
  for(const [file,obj]of [['Map015',map],['ArenaStonekeepWhole',config],['MapInfos',infos]])fs.writeFileSync(path.join(R,'data/'+file+'.json'),(file==='MapInfos'?'[\n'+obj.map(v=>JSON.stringify(v)).join(',\n')+'\n]':JSON.stringify(obj))+'\n');

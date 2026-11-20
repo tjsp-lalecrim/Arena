@@ -1,0 +1,10680 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "city": "DCN.INF + CITYW1 composed in tmp/rihad-review/composicao.json",
+    "stonekeep": "STKEEP1.INF /39699021.MIF"
+  },
+  "urban": [
+    {
+      "id": "rihad.prop.mif7.2",
+      "eventId": 1000,
+      "resource": "PALM2.IMG",
+      "original": [
+        7,
+        2
+      ],
+      "position": [
+        363,
+        9
+      ]
+    },
+    {
+      "id": "rihad.prop.mif42.2",
+      "eventId": 1001,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        42,
+        2
+      ],
+      "position": [
+        258,
+        9
+      ]
+    },
+    {
+      "id": "rihad.prop.mif60.2",
+      "eventId": 1002,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        60,
+        2
+      ],
+      "position": [
+        204,
+        9
+      ]
+    },
+    {
+      "id": "rihad.prop.mif80.2",
+      "eventId": 1003,
+      "resource": "PALM2.IMG",
+      "original": [
+        80,
+        2
+      ],
+      "position": [
+        144,
+        9
+      ]
+    },
+    {
+      "id": "rihad.prop.mif1.4",
+      "eventId": 1004,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        1,
+        4
+      ],
+      "position": [
+        381,
+        15
+      ]
+    },
+    {
+      "id": "rihad.prop.mif25.4",
+      "eventId": 1005,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        25,
+        4
+      ],
+      "position": [
+        309,
+        15
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.4",
+      "eventId": 1006,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        124,
+        4
+      ],
+      "position": [
+        12,
+        15
+      ]
+    },
+    {
+      "id": "rihad.prop.mif120.6",
+      "eventId": 1007,
+      "resource": "PALM3.IMG",
+      "original": [
+        120,
+        6
+      ],
+      "position": [
+        24,
+        21
+      ]
+    },
+    {
+      "id": "rihad.prop.mif24.7",
+      "eventId": 1008,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        24,
+        7
+      ],
+      "position": [
+        312,
+        24
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.8",
+      "eventId": 1009,
+      "resource": "PALM2.IMG",
+      "original": [
+        124,
+        8
+      ],
+      "position": [
+        12,
+        27
+      ]
+    },
+    {
+      "id": "rihad.prop.mif60.9",
+      "eventId": 1010,
+      "resource": "PALM1.IMG",
+      "original": [
+        60,
+        9
+      ],
+      "position": [
+        204,
+        30
+      ]
+    },
+    {
+      "id": "rihad.prop.mif111.9",
+      "eventId": 1011,
+      "resource": "PALM3.IMG",
+      "original": [
+        111,
+        9
+      ],
+      "position": [
+        51,
+        30
+      ]
+    },
+    {
+      "id": "rihad.prop.mif92.10",
+      "eventId": 1012,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        92,
+        10
+      ],
+      "position": [
+        108,
+        33
+      ]
+    },
+    {
+      "id": "rihad.prop.mif96.10",
+      "eventId": 1013,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        96,
+        10
+      ],
+      "position": [
+        96,
+        33
+      ]
+    },
+    {
+      "id": "rihad.prop.mif88.11",
+      "eventId": 1014,
+      "resource": "PALM1.IMG",
+      "original": [
+        88,
+        11
+      ],
+      "position": [
+        120,
+        36
+      ]
+    },
+    {
+      "id": "rihad.prop.mif91.11",
+      "eventId": 1015,
+      "resource": "PALM2.IMG",
+      "original": [
+        91,
+        11
+      ],
+      "position": [
+        111,
+        36
+      ]
+    },
+    {
+      "id": "rihad.prop.mif99.11",
+      "eventId": 1016,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        99,
+        11
+      ],
+      "position": [
+        87,
+        36
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.11",
+      "eventId": 1017,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        124,
+        11
+      ],
+      "position": [
+        12,
+        36
+      ]
+    },
+    {
+      "id": "rihad.prop.mif38.12",
+      "eventId": 1018,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        38,
+        12
+      ],
+      "position": [
+        270,
+        39
+      ]
+    },
+    {
+      "id": "rihad.prop.mif74.12",
+      "eventId": 1019,
+      "resource": "NWELL1.IMG",
+      "original": [
+        74,
+        12
+      ],
+      "position": [
+        162,
+        39
+      ]
+    },
+    {
+      "id": "rihad.prop.mif111.12",
+      "eventId": 1020,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        111,
+        12
+      ],
+      "position": [
+        51,
+        39
+      ]
+    },
+    {
+      "id": "rihad.prop.mif36.13",
+      "eventId": 1021,
+      "resource": "PALM3.IMG",
+      "original": [
+        36,
+        13
+      ],
+      "position": [
+        276,
+        42
+      ]
+    },
+    {
+      "id": "rihad.prop.mif96.13",
+      "eventId": 1022,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        96,
+        13
+      ],
+      "position": [
+        96,
+        42
+      ]
+    },
+    {
+      "id": "rihad.prop.mif109.13",
+      "eventId": 1023,
+      "resource": "PALM2.IMG",
+      "original": [
+        109,
+        13
+      ],
+      "position": [
+        57,
+        42
+      ]
+    },
+    {
+      "id": "rihad.prop.mif50.14",
+      "eventId": 1024,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        50,
+        14
+      ],
+      "position": [
+        234,
+        45
+      ]
+    },
+    {
+      "id": "rihad.prop.mif89.14",
+      "eventId": 1025,
+      "resource": "PALM2.IMG",
+      "original": [
+        89,
+        14
+      ],
+      "position": [
+        117,
+        45
+      ]
+    },
+    {
+      "id": "rihad.prop.mif117.14",
+      "eventId": 1026,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        117,
+        14
+      ],
+      "position": [
+        33,
+        45
+      ]
+    },
+    {
+      "id": "rihad.prop.mif123.14",
+      "eventId": 1027,
+      "resource": "PALM2.IMG",
+      "original": [
+        123,
+        14
+      ],
+      "position": [
+        15,
+        45
+      ]
+    },
+    {
+      "id": "rihad.prop.mif95.15",
+      "eventId": 1028,
+      "resource": "PALM1.IMG",
+      "original": [
+        95,
+        15
+      ],
+      "position": [
+        99,
+        48
+      ]
+    },
+    {
+      "id": "rihad.prop.mif92.16",
+      "eventId": 1029,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        92,
+        16
+      ],
+      "position": [
+        108,
+        51
+      ]
+    },
+    {
+      "id": "rihad.prop.mif2.17",
+      "eventId": 1030,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        2,
+        17
+      ],
+      "position": [
+        378,
+        54
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.19",
+      "eventId": 1031,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        124,
+        19
+      ],
+      "position": [
+        12,
+        60
+      ]
+    },
+    {
+      "id": "rihad.prop.mif40.21",
+      "eventId": 1032,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        40,
+        21
+      ],
+      "position": [
+        264,
+        66
+      ]
+    },
+    {
+      "id": "rihad.prop.mif109.21",
+      "eventId": 1033,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        109,
+        21
+      ],
+      "position": [
+        57,
+        66
+      ]
+    },
+    {
+      "id": "rihad.prop.mif1.22",
+      "eventId": 1034,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        1,
+        22
+      ],
+      "position": [
+        381,
+        69
+      ]
+    },
+    {
+      "id": "rihad.prop.mif106.24",
+      "eventId": 1035,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        106,
+        24
+      ],
+      "position": [
+        66,
+        75
+      ]
+    },
+    {
+      "id": "rihad.prop.mif49.25",
+      "eventId": 1036,
+      "resource": "NWELL2.IMG",
+      "original": [
+        49,
+        25
+      ],
+      "position": [
+        237,
+        78
+      ]
+    },
+    {
+      "id": "rihad.prop.mif54.26",
+      "eventId": 1037,
+      "resource": "PALM1.IMG",
+      "original": [
+        54,
+        26
+      ],
+      "position": [
+        222,
+        81
+      ]
+    },
+    {
+      "id": "rihad.prop.mif57.27",
+      "eventId": 1038,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        57,
+        27
+      ],
+      "position": [
+        213,
+        84
+      ]
+    },
+    {
+      "id": "rihad.prop.mif125.27",
+      "eventId": 1039,
+      "resource": "PALM2.IMG",
+      "original": [
+        125,
+        27
+      ],
+      "position": [
+        9,
+        84
+      ]
+    },
+    {
+      "id": "rihad.prop.mif60.29",
+      "eventId": 1040,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        60,
+        29
+      ],
+      "position": [
+        204,
+        90
+      ]
+    },
+    {
+      "id": "rihad.prop.mif61.29",
+      "eventId": 1041,
+      "resource": "PALM1.IMG",
+      "original": [
+        61,
+        29
+      ],
+      "position": [
+        201,
+        90
+      ]
+    },
+    {
+      "id": "rihad.prop.mif91.29",
+      "eventId": 1042,
+      "resource": "PALM3.IMG",
+      "original": [
+        91,
+        29
+      ],
+      "position": [
+        111,
+        90
+      ]
+    },
+    {
+      "id": "rihad.prop.mif97.32",
+      "eventId": 1043,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        97,
+        32
+      ],
+      "position": [
+        93,
+        99
+      ]
+    },
+    {
+      "id": "rihad.prop.mif26.35",
+      "eventId": 1044,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        26,
+        35
+      ],
+      "position": [
+        306,
+        108
+      ]
+    },
+    {
+      "id": "rihad.prop.mif104.35",
+      "eventId": 1045,
+      "resource": "PALM1.IMG",
+      "original": [
+        104,
+        35
+      ],
+      "position": [
+        72,
+        108
+      ]
+    },
+    {
+      "id": "rihad.prop.mif1.37",
+      "eventId": 1046,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        1,
+        37
+      ],
+      "position": [
+        381,
+        114
+      ]
+    },
+    {
+      "id": "rihad.prop.mif61.38",
+      "eventId": 1047,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        61,
+        38
+      ],
+      "position": [
+        201,
+        117
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.39",
+      "eventId": 1048,
+      "resource": "PALM1.IMG",
+      "original": [
+        124,
+        39
+      ],
+      "position": [
+        12,
+        120
+      ]
+    },
+    {
+      "id": "rihad.prop.mif96.40",
+      "eventId": 1049,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        96,
+        40
+      ],
+      "position": [
+        96,
+        123
+      ]
+    },
+    {
+      "id": "rihad.prop.mif51.41",
+      "eventId": 1050,
+      "resource": "PALM2.IMG",
+      "original": [
+        51,
+        41
+      ],
+      "position": [
+        231,
+        126
+      ]
+    },
+    {
+      "id": "rihad.prop.mif118.41",
+      "eventId": 1051,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        118,
+        41
+      ],
+      "position": [
+        30,
+        126
+      ]
+    },
+    {
+      "id": "rihad.prop.mif116.44",
+      "eventId": 1052,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        116,
+        44
+      ],
+      "position": [
+        36,
+        135
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.44",
+      "eventId": 1053,
+      "resource": "PALM3.IMG",
+      "original": [
+        124,
+        44
+      ],
+      "position": [
+        12,
+        135
+      ]
+    },
+    {
+      "id": "rihad.prop.mif118.45",
+      "eventId": 1054,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        118,
+        45
+      ],
+      "position": [
+        30,
+        138
+      ]
+    },
+    {
+      "id": "rihad.prop.mif2.47",
+      "eventId": 1055,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        2,
+        47
+      ],
+      "position": [
+        378,
+        144
+      ]
+    },
+    {
+      "id": "rihad.prop.mif81.49",
+      "eventId": 1056,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        81,
+        49
+      ],
+      "position": [
+        141,
+        150
+      ]
+    },
+    {
+      "id": "rihad.prop.mif98.50",
+      "eventId": 1057,
+      "resource": "PALM2.IMG",
+      "original": [
+        98,
+        50
+      ],
+      "position": [
+        90,
+        153
+      ]
+    },
+    {
+      "id": "rihad.prop.mif117.50",
+      "eventId": 1058,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        117,
+        50
+      ],
+      "position": [
+        33,
+        153
+      ]
+    },
+    {
+      "id": "rihad.prop.mif67.51",
+      "eventId": 1059,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        67,
+        51
+      ],
+      "position": [
+        183,
+        156
+      ]
+    },
+    {
+      "id": "rihad.prop.mif78.51",
+      "eventId": 1060,
+      "resource": "PALM3.IMG",
+      "original": [
+        78,
+        51
+      ],
+      "position": [
+        150,
+        156
+      ]
+    },
+    {
+      "id": "rihad.prop.mif95.51",
+      "eventId": 1061,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        95,
+        51
+      ],
+      "position": [
+        99,
+        156
+      ]
+    },
+    {
+      "id": "rihad.prop.mif105.52",
+      "eventId": 1062,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        105,
+        52
+      ],
+      "position": [
+        69,
+        159
+      ]
+    },
+    {
+      "id": "rihad.prop.mif85.56",
+      "eventId": 1063,
+      "resource": "PALM2.IMG",
+      "original": [
+        85,
+        56
+      ],
+      "position": [
+        129,
+        171
+      ]
+    },
+    {
+      "id": "rihad.prop.mif120.56",
+      "eventId": 1064,
+      "resource": "PALM3.IMG",
+      "original": [
+        120,
+        56
+      ],
+      "position": [
+        24,
+        171
+      ]
+    },
+    {
+      "id": "rihad.prop.mif73.57",
+      "eventId": 1065,
+      "resource": "NWELL1.IMG",
+      "original": [
+        73,
+        57
+      ],
+      "position": [
+        165,
+        174
+      ]
+    },
+    {
+      "id": "rihad.prop.mif11.58",
+      "eventId": 1066,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        11,
+        58
+      ],
+      "position": [
+        351,
+        177
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.58",
+      "eventId": 1067,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        124,
+        58
+      ],
+      "position": [
+        12,
+        177
+      ]
+    },
+    {
+      "id": "rihad.prop.mif2.59",
+      "eventId": 1068,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        2,
+        59
+      ],
+      "position": [
+        378,
+        180
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.59",
+      "eventId": 1069,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        124,
+        59
+      ],
+      "position": [
+        12,
+        180
+      ]
+    },
+    {
+      "id": "rihad.prop.mif120.60",
+      "eventId": 1070,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        120,
+        60
+      ],
+      "position": [
+        24,
+        183
+      ]
+    },
+    {
+      "id": "rihad.prop.mif122.63",
+      "eventId": 1071,
+      "resource": "PALM1.IMG",
+      "original": [
+        122,
+        63
+      ],
+      "position": [
+        18,
+        192
+      ]
+    },
+    {
+      "id": "rihad.prop.mif125.64",
+      "eventId": 1072,
+      "resource": "PALM3.IMG",
+      "original": [
+        125,
+        64
+      ],
+      "position": [
+        9,
+        195
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.67",
+      "eventId": 1073,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        124,
+        67
+      ],
+      "position": [
+        12,
+        204
+      ]
+    },
+    {
+      "id": "rihad.prop.mif32.68",
+      "eventId": 1074,
+      "resource": "NWELL1.IMG",
+      "original": [
+        32,
+        68
+      ],
+      "position": [
+        288,
+        207
+      ]
+    },
+    {
+      "id": "rihad.prop.mif13.69",
+      "eventId": 1075,
+      "resource": "NWELL2.IMG",
+      "original": [
+        13,
+        69
+      ],
+      "position": [
+        345,
+        210
+      ]
+    },
+    {
+      "id": "rihad.prop.mif51.70",
+      "eventId": 1076,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        51,
+        70
+      ],
+      "position": [
+        231,
+        213
+      ]
+    },
+    {
+      "id": "rihad.prop.mif27.74",
+      "eventId": 1077,
+      "resource": "PALM2.IMG",
+      "original": [
+        27,
+        74
+      ],
+      "position": [
+        303,
+        225
+      ]
+    },
+    {
+      "id": "rihad.prop.mif38.74",
+      "eventId": 1078,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        38,
+        74
+      ],
+      "position": [
+        270,
+        225
+      ]
+    },
+    {
+      "id": "rihad.prop.mif24.76",
+      "eventId": 1079,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        24,
+        76
+      ],
+      "position": [
+        312,
+        231
+      ]
+    },
+    {
+      "id": "rihad.prop.mif124.76",
+      "eventId": 1080,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        124,
+        76
+      ],
+      "position": [
+        12,
+        231
+      ]
+    },
+    {
+      "id": "rihad.prop.mif110.79",
+      "eventId": 1081,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        110,
+        79
+      ],
+      "position": [
+        54,
+        240
+      ]
+    },
+    {
+      "id": "rihad.prop.mif56.80",
+      "eventId": 1082,
+      "resource": "PALM3.IMG",
+      "original": [
+        56,
+        80
+      ],
+      "position": [
+        216,
+        243
+      ]
+    },
+    {
+      "id": "rihad.prop.mif121.82",
+      "eventId": 1083,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        121,
+        82
+      ],
+      "position": [
+        21,
+        249
+      ]
+    },
+    {
+      "id": "rihad.prop.mif29.87",
+      "eventId": 1084,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        29,
+        87
+      ],
+      "position": [
+        297,
+        264
+      ]
+    },
+    {
+      "id": "rihad.prop.mif21.89",
+      "eventId": 1085,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        21,
+        89
+      ],
+      "position": [
+        321,
+        270
+      ]
+    },
+    {
+      "id": "rihad.prop.mif123.89",
+      "eventId": 1086,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        123,
+        89
+      ],
+      "position": [
+        15,
+        270
+      ]
+    },
+    {
+      "id": "rihad.prop.mif38.90",
+      "eventId": 1087,
+      "resource": "PALM3.IMG",
+      "original": [
+        38,
+        90
+      ],
+      "position": [
+        270,
+        273
+      ]
+    },
+    {
+      "id": "rihad.prop.mif2.91",
+      "eventId": 1088,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        2,
+        91
+      ],
+      "position": [
+        378,
+        276
+      ]
+    },
+    {
+      "id": "rihad.prop.mif7.91",
+      "eventId": 1089,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        7,
+        91
+      ],
+      "position": [
+        363,
+        276
+      ]
+    },
+    {
+      "id": "rihad.prop.mif18.91",
+      "eventId": 1090,
+      "resource": "PALM1.IMG",
+      "original": [
+        18,
+        91
+      ],
+      "position": [
+        330,
+        276
+      ]
+    },
+    {
+      "id": "rihad.prop.mif73.93",
+      "eventId": 1091,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        73,
+        93
+      ],
+      "position": [
+        165,
+        282
+      ]
+    },
+    {
+      "id": "rihad.prop.mif37.94",
+      "eventId": 1092,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        37,
+        94
+      ],
+      "position": [
+        273,
+        285
+      ]
+    },
+    {
+      "id": "rihad.prop.mif13.97",
+      "eventId": 1093,
+      "resource": "NWELL1.IMG",
+      "original": [
+        13,
+        97
+      ],
+      "position": [
+        345,
+        294
+      ]
+    },
+    {
+      "id": "rihad.prop.mif27.97",
+      "eventId": 1094,
+      "resource": "PALM3.IMG",
+      "original": [
+        27,
+        97
+      ],
+      "position": [
+        303,
+        294
+      ]
+    },
+    {
+      "id": "rihad.prop.mif2.98",
+      "eventId": 1095,
+      "resource": "PALM3.IMG",
+      "original": [
+        2,
+        98
+      ],
+      "position": [
+        378,
+        297
+      ]
+    },
+    {
+      "id": "rihad.prop.mif35.98",
+      "eventId": 1096,
+      "resource": "PALM1.IMG",
+      "original": [
+        35,
+        98
+      ],
+      "position": [
+        279,
+        297
+      ]
+    },
+    {
+      "id": "rihad.prop.mif8.106",
+      "eventId": 1097,
+      "resource": "CACTUS2.IMG",
+      "original": [
+        8,
+        106
+      ],
+      "position": [
+        360,
+        321
+      ]
+    },
+    {
+      "id": "rihad.prop.mif19.106",
+      "eventId": 1098,
+      "resource": "PALM1.IMG",
+      "original": [
+        19,
+        106
+      ],
+      "position": [
+        327,
+        321
+      ]
+    },
+    {
+      "id": "rihad.prop.mif54.107",
+      "eventId": 1099,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        54,
+        107
+      ],
+      "position": [
+        222,
+        324
+      ]
+    },
+    {
+      "id": "rihad.prop.mif6.108",
+      "eventId": 1100,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        6,
+        108
+      ],
+      "position": [
+        366,
+        327
+      ]
+    },
+    {
+      "id": "rihad.prop.mif19.108",
+      "eventId": 1101,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        19,
+        108
+      ],
+      "position": [
+        327,
+        327
+      ]
+    },
+    {
+      "id": "rihad.prop.mif8.109",
+      "eventId": 1102,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        8,
+        109
+      ],
+      "position": [
+        360,
+        330
+      ]
+    },
+    {
+      "id": "rihad.prop.mif109.109",
+      "eventId": 1103,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        109,
+        109
+      ],
+      "position": [
+        57,
+        330
+      ]
+    },
+    {
+      "id": "rihad.prop.mif26.111",
+      "eventId": 1104,
+      "resource": "PALM1.IMG",
+      "original": [
+        26,
+        111
+      ],
+      "position": [
+        306,
+        336
+      ]
+    },
+    {
+      "id": "rihad.prop.mif37.111",
+      "eventId": 1105,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        37,
+        111
+      ],
+      "position": [
+        273,
+        336
+      ]
+    },
+    {
+      "id": "rihad.prop.mif1.112",
+      "eventId": 1106,
+      "resource": "PALM1.IMG",
+      "original": [
+        1,
+        112
+      ],
+      "position": [
+        381,
+        339
+      ]
+    },
+    {
+      "id": "rihad.prop.mif13.114",
+      "eventId": 1107,
+      "resource": "PALM3.IMG",
+      "original": [
+        13,
+        114
+      ],
+      "position": [
+        345,
+        345
+      ]
+    },
+    {
+      "id": "rihad.prop.mif11.115",
+      "eventId": 1108,
+      "resource": "PALM1.IMG",
+      "original": [
+        11,
+        115
+      ],
+      "position": [
+        351,
+        348
+      ]
+    },
+    {
+      "id": "rihad.prop.mif2.116",
+      "eventId": 1109,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        2,
+        116
+      ],
+      "position": [
+        378,
+        351
+      ]
+    },
+    {
+      "id": "rihad.prop.mif32.117",
+      "eventId": 1110,
+      "resource": "NWELL1.IMG",
+      "original": [
+        32,
+        117
+      ],
+      "position": [
+        288,
+        354
+      ]
+    },
+    {
+      "id": "rihad.prop.mif2.120",
+      "eventId": 1111,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        2,
+        120
+      ],
+      "position": [
+        378,
+        363
+      ]
+    },
+    {
+      "id": "rihad.prop.mif26.123",
+      "eventId": 1112,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        26,
+        123
+      ],
+      "position": [
+        306,
+        372
+      ]
+    },
+    {
+      "id": "rihad.prop.mif40.123",
+      "eventId": 1113,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        40,
+        123
+      ],
+      "position": [
+        264,
+        372
+      ]
+    },
+    {
+      "id": "rihad.prop.mif19.124",
+      "eventId": 1114,
+      "resource": "NFOUNT1D.DFA",
+      "original": [
+        19,
+        124
+      ],
+      "position": [
+        327,
+        375
+      ]
+    },
+    {
+      "id": "rihad.prop.mif14.125",
+      "eventId": 1115,
+      "resource": "CACTUS3.IMG",
+      "original": [
+        14,
+        125
+      ],
+      "position": [
+        342,
+        378
+      ]
+    },
+    {
+      "id": "rihad.prop.mif16.125",
+      "eventId": 1116,
+      "resource": "CACTUS1.IMG",
+      "original": [
+        16,
+        125
+      ],
+      "position": [
+        336,
+        378
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "original": [
+        6,
+        1
+      ],
+      "position": [
+        252,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        1
+      ],
+      "position": [
+        240,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        1
+      ],
+      "position": [
+        237,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        20,
+        1
+      ],
+      "position": [
+        210,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        1
+      ],
+      "position": [
+        195,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        1
+      ],
+      "position": [
+        171,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        35,
+        1
+      ],
+      "position": [
+        165,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        1
+      ],
+      "position": [
+        159,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        38,
+        1
+      ],
+      "position": [
+        156,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        1
+      ],
+      "position": [
+        144,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        1
+      ],
+      "position": [
+        138,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        1
+      ],
+      "position": [
+        135,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        1
+      ],
+      "position": [
+        129,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        1
+      ],
+      "position": [
+        123,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        1
+      ],
+      "position": [
+        111,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        1
+      ],
+      "position": [
+        99,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        1
+      ],
+      "position": [
+        96,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        1
+      ],
+      "position": [
+        93,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        1
+      ],
+      "position": [
+        90,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        61,
+        1
+      ],
+      "position": [
+        87,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        1
+      ],
+      "position": [
+        72,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        1
+      ],
+      "position": [
+        51,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        77,
+        1
+      ],
+      "position": [
+        39,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        1
+      ],
+      "position": [
+        33,
+        6
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        5,
+        2
+      ],
+      "position": [
+        255,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        8,
+        2
+      ],
+      "position": [
+        246,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        9,
+        2
+      ],
+      "position": [
+        243,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        2
+      ],
+      "position": [
+        234,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        2
+      ],
+      "position": [
+        222,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        2
+      ],
+      "position": [
+        183,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        2
+      ],
+      "position": [
+        177,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        32,
+        2
+      ],
+      "position": [
+        174,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        38,
+        2
+      ],
+      "position": [
+        156,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        41,
+        2
+      ],
+      "position": [
+        147,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        2
+      ],
+      "position": [
+        144,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        2
+      ],
+      "position": [
+        138,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        2
+      ],
+      "position": [
+        132,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        2
+      ],
+      "position": [
+        129,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        48,
+        2
+      ],
+      "position": [
+        126,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        2
+      ],
+      "position": [
+        123,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        2
+      ],
+      "position": [
+        114,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        2
+      ],
+      "position": [
+        111,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        2
+      ],
+      "position": [
+        96,
+        9
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        5,
+        3
+      ],
+      "position": [
+        255,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        3
+      ],
+      "position": [
+        237,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        3
+      ],
+      "position": [
+        234,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        3
+      ],
+      "position": [
+        231,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        3
+      ],
+      "position": [
+        228,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        3
+      ],
+      "position": [
+        219,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        3
+      ],
+      "position": [
+        213,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        3
+      ],
+      "position": [
+        195,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        3
+      ],
+      "position": [
+        192,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        3
+      ],
+      "position": [
+        183,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        30,
+        3
+      ],
+      "position": [
+        180,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        3
+      ],
+      "position": [
+        171,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        3
+      ],
+      "position": [
+        159,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        41,
+        3
+      ],
+      "position": [
+        147,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        3
+      ],
+      "position": [
+        141,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        3
+      ],
+      "position": [
+        6,
+        12
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        4
+      ],
+      "position": [
+        258,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        5,
+        4
+      ],
+      "position": [
+        255,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        4
+      ],
+      "position": [
+        231,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        4
+      ],
+      "position": [
+        228,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        4
+      ],
+      "position": [
+        222,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        4
+      ],
+      "position": [
+        138,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        4
+      ],
+      "position": [
+        132,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        4
+      ],
+      "position": [
+        111,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        4
+      ],
+      "position": [
+        108,
+        15
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        5
+      ],
+      "position": [
+        267,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        5,
+        5
+      ],
+      "position": [
+        255,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        5
+      ],
+      "position": [
+        204,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        5
+      ],
+      "position": [
+        192,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        5
+      ],
+      "position": [
+        162,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        5
+      ],
+      "position": [
+        159,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        5
+      ],
+      "position": [
+        138,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        48,
+        5
+      ],
+      "position": [
+        126,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        5
+      ],
+      "position": [
+        123,
+        18
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        6
+      ],
+      "position": [
+        258,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        6
+      ],
+      "position": [
+        201,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        6
+      ],
+      "position": [
+        186,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        32,
+        6
+      ],
+      "position": [
+        174,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        6
+      ],
+      "position": [
+        162,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        6
+      ],
+      "position": [
+        132,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        6
+      ],
+      "position": [
+        120,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        6
+      ],
+      "position": [
+        114,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        6
+      ],
+      "position": [
+        108,
+        21
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        7
+      ],
+      "position": [
+        249,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        7
+      ],
+      "position": [
+        222,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        7
+      ],
+      "position": [
+        183,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        7
+      ],
+      "position": [
+        171,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        7
+      ],
+      "position": [
+        159,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        7
+      ],
+      "position": [
+        135,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        7
+      ],
+      "position": [
+        6,
+        24
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        8
+      ],
+      "position": [
+        258,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        6,
+        8
+      ],
+      "position": [
+        252,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        8
+      ],
+      "position": [
+        225,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        8
+      ],
+      "position": [
+        204,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        8
+      ],
+      "position": [
+        198,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        8
+      ],
+      "position": [
+        189,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        30,
+        8
+      ],
+      "position": [
+        180,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        8
+      ],
+      "position": [
+        135,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        8
+      ],
+      "position": [
+        132,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        8
+      ],
+      "position": [
+        129,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        51,
+        8
+      ],
+      "position": [
+        117,
+        27
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        9
+      ],
+      "position": [
+        228,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        9
+      ],
+      "position": [
+        225,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        9
+      ],
+      "position": [
+        189,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        9
+      ],
+      "position": [
+        186,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        9
+      ],
+      "position": [
+        177,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        9
+      ],
+      "position": [
+        144,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        9
+      ],
+      "position": [
+        120,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        9
+      ],
+      "position": [
+        105,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        9
+      ],
+      "position": [
+        102,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        9
+      ],
+      "position": [
+        96,
+        30
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        10
+      ],
+      "position": [
+        249,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        9,
+        10
+      ],
+      "position": [
+        243,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        10
+      ],
+      "position": [
+        222,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        10
+      ],
+      "position": [
+        201,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        10
+      ],
+      "position": [
+        177,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        10
+      ],
+      "position": [
+        162,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        10
+      ],
+      "position": [
+        120,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        10
+      ],
+      "position": [
+        96,
+        33
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        11
+      ],
+      "position": [
+        261,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        11
+      ],
+      "position": [
+        249,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        11
+      ],
+      "position": [
+        234,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        11
+      ],
+      "position": [
+        231,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        11
+      ],
+      "position": [
+        228,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        11
+      ],
+      "position": [
+        225,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        11
+      ],
+      "position": [
+        204,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        11
+      ],
+      "position": [
+        195,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        11
+      ],
+      "position": [
+        162,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        11
+      ],
+      "position": [
+        111,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        11
+      ],
+      "position": [
+        102,
+        36
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        12
+      ],
+      "position": [
+        261,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        12
+      ],
+      "position": [
+        258,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        12
+      ],
+      "position": [
+        249,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        12
+      ],
+      "position": [
+        201,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        12
+      ],
+      "position": [
+        198,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        12
+      ],
+      "position": [
+        195,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        12
+      ],
+      "position": [
+        111,
+        39
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        13
+      ],
+      "position": [
+        258,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        6,
+        13
+      ],
+      "position": [
+        252,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        13
+      ],
+      "position": [
+        207,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        13
+      ],
+      "position": [
+        204,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        13
+      ],
+      "position": [
+        201,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        13
+      ],
+      "position": [
+        144,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        13
+      ],
+      "position": [
+        129,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        13
+      ],
+      "position": [
+        6,
+        42
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        14
+      ],
+      "position": [
+        258,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        5,
+        14
+      ],
+      "position": [
+        255,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        14
+      ],
+      "position": [
+        204,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        14
+      ],
+      "position": [
+        186,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        14
+      ],
+      "position": [
+        141,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        14
+      ],
+      "position": [
+        135,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        14
+      ],
+      "position": [
+        132,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        14
+      ],
+      "position": [
+        99,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        14
+      ],
+      "position": [
+        96,
+        45
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        15
+      ],
+      "position": [
+        264,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        15
+      ],
+      "position": [
+        216,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        15
+      ],
+      "position": [
+        198,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        15
+      ],
+      "position": [
+        120,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        15
+      ],
+      "position": [
+        99,
+        48
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        16
+      ],
+      "position": [
+        264,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        16
+      ],
+      "position": [
+        222,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        16
+      ],
+      "position": [
+        216,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        16
+      ],
+      "position": [
+        195,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        16
+      ],
+      "position": [
+        129,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        86,
+        16
+      ],
+      "position": [
+        12,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        16
+      ],
+      "position": [
+        9,
+        51
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        17
+      ],
+      "position": [
+        222,
+        54
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        17
+      ],
+      "position": [
+        213,
+        54
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        17
+      ],
+      "position": [
+        90,
+        54
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        86,
+        17
+      ],
+      "position": [
+        12,
+        54
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        17
+      ],
+      "position": [
+        9,
+        54
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        18
+      ],
+      "position": [
+        228,
+        57
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        18
+      ],
+      "position": [
+        225,
+        57
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        18
+      ],
+      "position": [
+        105,
+        57
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        19
+      ],
+      "position": [
+        228,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        19
+      ],
+      "position": [
+        219,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        19
+      ],
+      "position": [
+        207,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        19
+      ],
+      "position": [
+        189,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        19
+      ],
+      "position": [
+        102,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        19
+      ],
+      "position": [
+        90,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        19
+      ],
+      "position": [
+        6,
+        60
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        5,
+        20
+      ],
+      "position": [
+        255,
+        63
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        20
+      ],
+      "position": [
+        231,
+        63
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        20
+      ],
+      "position": [
+        222,
+        63
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        20
+      ],
+      "position": [
+        219,
+        63
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        20,
+        20
+      ],
+      "position": [
+        210,
+        63
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        20
+      ],
+      "position": [
+        204,
+        63
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        21
+      ],
+      "position": [
+        261,
+        66
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        5,
+        21
+      ],
+      "position": [
+        255,
+        66
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        21
+      ],
+      "position": [
+        225,
+        66
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        21
+      ],
+      "position": [
+        216,
+        66
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        21
+      ],
+      "position": [
+        171,
+        66
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        21
+      ],
+      "position": [
+        99,
+        66
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        21
+      ],
+      "position": [
+        93,
+        66
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        22
+      ],
+      "position": [
+        228,
+        69
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        22
+      ],
+      "position": [
+        225,
+        69
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        22
+      ],
+      "position": [
+        222,
+        69
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        20,
+        22
+      ],
+      "position": [
+        210,
+        69
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        22
+      ],
+      "position": [
+        207,
+        69
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        22
+      ],
+      "position": [
+        195,
+        69
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        22
+      ],
+      "position": [
+        102,
+        69
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        6,
+        23
+      ],
+      "position": [
+        252,
+        72
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        23
+      ],
+      "position": [
+        240,
+        72
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        23
+      ],
+      "position": [
+        237,
+        72
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        23
+      ],
+      "position": [
+        222,
+        72
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        23
+      ],
+      "position": [
+        177,
+        72
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        23
+      ],
+      "position": [
+        120,
+        72
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        23
+      ],
+      "position": [
+        93,
+        72
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        24
+      ],
+      "position": [
+        189,
+        75
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        24
+      ],
+      "position": [
+        186,
+        75
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        24
+      ],
+      "position": [
+        171,
+        75
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        25
+      ],
+      "position": [
+        192,
+        78
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        30,
+        25
+      ],
+      "position": [
+        180,
+        78
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        25
+      ],
+      "position": [
+        108,
+        78
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        25
+      ],
+      "position": [
+        93,
+        78
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        76,
+        25
+      ],
+      "position": [
+        42,
+        78
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        26
+      ],
+      "position": [
+        195,
+        81
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        26
+      ],
+      "position": [
+        192,
+        81
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        26
+      ],
+      "position": [
+        189,
+        81
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        26
+      ],
+      "position": [
+        111,
+        81
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        26
+      ],
+      "position": [
+        93,
+        81
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        27
+      ],
+      "position": [
+        99,
+        84
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        28
+      ],
+      "position": [
+        195,
+        87
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        28
+      ],
+      "position": [
+        192,
+        87
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        28
+      ],
+      "position": [
+        111,
+        87
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        55,
+        28
+      ],
+      "position": [
+        105,
+        87
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        29
+      ],
+      "position": [
+        99,
+        90
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        88,
+        29
+      ],
+      "position": [
+        6,
+        90
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        30
+      ],
+      "position": [
+        198,
+        93
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        30
+      ],
+      "position": [
+        9,
+        93
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        31
+      ],
+      "position": [
+        198,
+        96
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        31
+      ],
+      "position": [
+        195,
+        96
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        31
+      ],
+      "position": [
+        111,
+        96
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        61,
+        31
+      ],
+      "position": [
+        87,
+        96
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        32
+      ],
+      "position": [
+        93,
+        99
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        53,
+        33
+      ],
+      "position": [
+        111,
+        102
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        59,
+        33
+      ],
+      "position": [
+        93,
+        102
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        33
+      ],
+      "position": [
+        90,
+        102
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        34
+      ],
+      "position": [
+        105,
+        105
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        34
+      ],
+      "position": [
+        96,
+        105
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        54,
+        35
+      ],
+      "position": [
+        108,
+        108
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        36
+      ],
+      "position": [
+        132,
+        111
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        36
+      ],
+      "position": [
+        111,
+        111
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        37
+      ],
+      "position": [
+        135,
+        114
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        61,
+        38
+      ],
+      "position": [
+        87,
+        117
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        39
+      ],
+      "position": [
+        138,
+        120
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        39
+      ],
+      "position": [
+        135,
+        120
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        39
+      ],
+      "position": [
+        90,
+        120
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        88,
+        39
+      ],
+      "position": [
+        6,
+        120
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        40
+      ],
+      "position": [
+        96,
+        123
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        44,
+        41
+      ],
+      "position": [
+        138,
+        126
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        42
+      ],
+      "position": [
+        135,
+        129
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        42
+      ],
+      "position": [
+        99,
+        129
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        42
+      ],
+      "position": [
+        96,
+        129
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        42
+      ],
+      "position": [
+        90,
+        129
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        61,
+        42
+      ],
+      "position": [
+        87,
+        129
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        62,
+        42
+      ],
+      "position": [
+        84,
+        129
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        42
+      ],
+      "position": [
+        6,
+        129
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        43
+      ],
+      "position": [
+        105,
+        132
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        43
+      ],
+      "position": [
+        90,
+        132
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        42,
+        44
+      ],
+      "position": [
+        144,
+        135
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        44
+      ],
+      "position": [
+        138,
+        135
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        44
+      ],
+      "position": [
+        132,
+        135
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        44
+      ],
+      "position": [
+        105,
+        135
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        44
+      ],
+      "position": [
+        96,
+        135
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        59,
+        44
+      ],
+      "position": [
+        93,
+        135
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        55,
+        45
+      ],
+      "position": [
+        105,
+        138
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        59,
+        45
+      ],
+      "position": [
+        93,
+        138
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        61,
+        45
+      ],
+      "position": [
+        87,
+        138
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        62,
+        45
+      ],
+      "position": [
+        84,
+        138
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        74,
+        45
+      ],
+      "position": [
+        48,
+        138
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        80,
+        45
+      ],
+      "position": [
+        30,
+        138
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        83,
+        45
+      ],
+      "position": [
+        21,
+        138
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        84,
+        45
+      ],
+      "position": [
+        18,
+        138
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        61,
+        46
+      ],
+      "position": [
+        87,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        62,
+        46
+      ],
+      "position": [
+        84,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        63,
+        46
+      ],
+      "position": [
+        81,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        65,
+        46
+      ],
+      "position": [
+        75,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        71,
+        46
+      ],
+      "position": [
+        57,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        72,
+        46
+      ],
+      "position": [
+        54,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        77,
+        46
+      ],
+      "position": [
+        39,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        46
+      ],
+      "position": [
+        36,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        81,
+        46
+      ],
+      "position": [
+        27,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        82,
+        46
+      ],
+      "position": [
+        24,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        46
+      ],
+      "position": [
+        15,
+        141
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        47
+      ],
+      "position": [
+        105,
+        144
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        47
+      ],
+      "position": [
+        99,
+        144
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        47
+      ],
+      "position": [
+        90,
+        144
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        63,
+        47
+      ],
+      "position": [
+        81,
+        144
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        47
+      ],
+      "position": [
+        72,
+        144
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        70,
+        47
+      ],
+      "position": [
+        60,
+        144
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        71,
+        47
+      ],
+      "position": [
+        57,
+        144
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        72,
+        47
+      ],
+      "position": [
+        54,
+        144
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        47
+      ],
+      "position": [
+        33,
+        144
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        48
+      ],
+      "position": [
+        93,
+        147
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        63,
+        48
+      ],
+      "position": [
+        81,
+        147
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        65,
+        48
+      ],
+      "position": [
+        75,
+        147
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        72,
+        48
+      ],
+      "position": [
+        54,
+        147
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        80,
+        48
+      ],
+      "position": [
+        30,
+        147
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        48
+      ],
+      "position": [
+        6,
+        147
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        34,
+        49
+      ],
+      "position": [
+        168,
+        150
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        49
+      ],
+      "position": [
+        144,
+        150
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        49
+      ],
+      "position": [
+        138,
+        150
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        48,
+        49
+      ],
+      "position": [
+        126,
+        150
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        49
+      ],
+      "position": [
+        114,
+        150
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        49
+      ],
+      "position": [
+        96,
+        150
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        62,
+        49
+      ],
+      "position": [
+        84,
+        150
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        63,
+        49
+      ],
+      "position": [
+        81,
+        150
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        42,
+        50
+      ],
+      "position": [
+        144,
+        153
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        50
+      ],
+      "position": [
+        108,
+        153
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        50
+      ],
+      "position": [
+        99,
+        153
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        61,
+        50
+      ],
+      "position": [
+        87,
+        153
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        70,
+        50
+      ],
+      "position": [
+        60,
+        153
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        81,
+        50
+      ],
+      "position": [
+        27,
+        153
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        51
+      ],
+      "position": [
+        108,
+        156
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        65,
+        51
+      ],
+      "position": [
+        75,
+        156
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        51
+      ],
+      "position": [
+        72,
+        156
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        69,
+        51
+      ],
+      "position": [
+        63,
+        156
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        70,
+        51
+      ],
+      "position": [
+        60,
+        156
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        71,
+        51
+      ],
+      "position": [
+        57,
+        156
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        85,
+        51
+      ],
+      "position": [
+        15,
+        156
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        51
+      ],
+      "position": [
+        9,
+        156
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        52
+      ],
+      "position": [
+        129,
+        159
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        52
+      ],
+      "position": [
+        120,
+        159
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        69,
+        52
+      ],
+      "position": [
+        63,
+        159
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        73,
+        52
+      ],
+      "position": [
+        51,
+        159
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        74,
+        52
+      ],
+      "position": [
+        48,
+        159
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        81,
+        52
+      ],
+      "position": [
+        27,
+        159
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        52
+      ],
+      "position": [
+        15,
+        159
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        52
+      ],
+      "position": [
+        9,
+        159
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        53
+      ],
+      "position": [
+        264,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        6,
+        53
+      ],
+      "position": [
+        252,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        53
+      ],
+      "position": [
+        249,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        53
+      ],
+      "position": [
+        234,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        53
+      ],
+      "position": [
+        228,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        53
+      ],
+      "position": [
+        225,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        53
+      ],
+      "position": [
+        216,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        32,
+        53
+      ],
+      "position": [
+        174,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        53
+      ],
+      "position": [
+        171,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        53
+      ],
+      "position": [
+        141,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        53
+      ],
+      "position": [
+        132,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        53
+      ],
+      "position": [
+        129,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        53
+      ],
+      "position": [
+        123,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        51,
+        53
+      ],
+      "position": [
+        117,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        54,
+        53
+      ],
+      "position": [
+        108,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        53
+      ],
+      "position": [
+        99,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        58,
+        53
+      ],
+      "position": [
+        96,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        59,
+        53
+      ],
+      "position": [
+        93,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        53
+      ],
+      "position": [
+        90,
+        162
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        74,
+        53
+      ],
+      "position": [
+        48,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        81,
+        53
+      ],
+      "position": [
+        27,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        53
+      ],
+      "position": [
+        6,
+        162
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        54
+      ],
+      "position": [
+        264,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        54
+      ],
+      "position": [
+        222,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        54
+      ],
+      "position": [
+        213,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        54
+      ],
+      "position": [
+        177,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        54
+      ],
+      "position": [
+        144,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        48,
+        54
+      ],
+      "position": [
+        126,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        54
+      ],
+      "position": [
+        123,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        54
+      ],
+      "position": [
+        51,
+        165
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        76,
+        54
+      ],
+      "position": [
+        42,
+        165
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        79,
+        54
+      ],
+      "position": [
+        33,
+        165
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        6,
+        55
+      ],
+      "position": [
+        252,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        55
+      ],
+      "position": [
+        234,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        55
+      ],
+      "position": [
+        225,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        55
+      ],
+      "position": [
+        222,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        55
+      ],
+      "position": [
+        219,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        55
+      ],
+      "position": [
+        216,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        55
+      ],
+      "position": [
+        213,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        55
+      ],
+      "position": [
+        144,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        55
+      ],
+      "position": [
+        132,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        55
+      ],
+      "position": [
+        120,
+        168
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        66,
+        55
+      ],
+      "position": [
+        72,
+        168
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        70,
+        55
+      ],
+      "position": [
+        60,
+        168
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        79,
+        55
+      ],
+      "position": [
+        33,
+        168
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        56
+      ],
+      "position": [
+        264,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        56
+      ],
+      "position": [
+        219,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        56
+      ],
+      "position": [
+        177,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        56
+      ],
+      "position": [
+        144,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        56
+      ],
+      "position": [
+        132,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        56
+      ],
+      "position": [
+        105,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        61,
+        56
+      ],
+      "position": [
+        87,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        62,
+        56
+      ],
+      "position": [
+        84,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        69,
+        56
+      ],
+      "position": [
+        63,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        70,
+        56
+      ],
+      "position": [
+        60,
+        171
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        82,
+        56
+      ],
+      "position": [
+        24,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        56
+      ],
+      "position": [
+        9,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        56
+      ],
+      "position": [
+        6,
+        171
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        57
+      ],
+      "position": [
+        234,
+        174
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        57
+      ],
+      "position": [
+        228,
+        174
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        57
+      ],
+      "position": [
+        177,
+        174
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        32,
+        57
+      ],
+      "position": [
+        174,
+        174
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        57
+      ],
+      "position": [
+        162,
+        174
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        57
+      ],
+      "position": [
+        123,
+        174
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        53,
+        57
+      ],
+      "position": [
+        111,
+        174
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        57
+      ],
+      "position": [
+        99,
+        174
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        57
+      ],
+      "position": [
+        90,
+        174
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        78,
+        57
+      ],
+      "position": [
+        36,
+        174
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        82,
+        57
+      ],
+      "position": [
+        24,
+        174
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        58
+      ],
+      "position": [
+        264,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        58
+      ],
+      "position": [
+        177,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        32,
+        58
+      ],
+      "position": [
+        174,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        35,
+        58
+      ],
+      "position": [
+        165,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        58
+      ],
+      "position": [
+        141,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        58
+      ],
+      "position": [
+        138,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        48,
+        58
+      ],
+      "position": [
+        126,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        76,
+        58
+      ],
+      "position": [
+        42,
+        177
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        81,
+        58
+      ],
+      "position": [
+        27,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        82,
+        58
+      ],
+      "position": [
+        24,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        58
+      ],
+      "position": [
+        9,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        58
+      ],
+      "position": [
+        6,
+        177
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        6,
+        59
+      ],
+      "position": [
+        252,
+        180
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        59
+      ],
+      "position": [
+        141,
+        180
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        59
+      ],
+      "position": [
+        114,
+        180
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        66,
+        59
+      ],
+      "position": [
+        72,
+        180
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        67,
+        59
+      ],
+      "position": [
+        69,
+        180
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        69,
+        59
+      ],
+      "position": [
+        63,
+        180
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        74,
+        59
+      ],
+      "position": [
+        48,
+        180
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        83,
+        59
+      ],
+      "position": [
+        21,
+        180
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        59
+      ],
+      "position": [
+        15,
+        180
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        59
+      ],
+      "position": [
+        6,
+        180
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        60
+      ],
+      "position": [
+        267,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        60
+      ],
+      "position": [
+        240,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        60
+      ],
+      "position": [
+        234,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        60
+      ],
+      "position": [
+        213,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        60
+      ],
+      "position": [
+        201,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        60
+      ],
+      "position": [
+        186,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        60
+      ],
+      "position": [
+        183,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        60
+      ],
+      "position": [
+        123,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        60
+      ],
+      "position": [
+        114,
+        183
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        53,
+        60
+      ],
+      "position": [
+        111,
+        183
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        70,
+        60
+      ],
+      "position": [
+        60,
+        183
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        73,
+        60
+      ],
+      "position": [
+        51,
+        183
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        81,
+        60
+      ],
+      "position": [
+        27,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        82,
+        60
+      ],
+      "position": [
+        24,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        60
+      ],
+      "position": [
+        15,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        60
+      ],
+      "position": [
+        9,
+        183
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        6,
+        61
+      ],
+      "position": [
+        252,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        61
+      ],
+      "position": [
+        240,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        61
+      ],
+      "position": [
+        237,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        61
+      ],
+      "position": [
+        231,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        61
+      ],
+      "position": [
+        222,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        61
+      ],
+      "position": [
+        213,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        61
+      ],
+      "position": [
+        207,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        61
+      ],
+      "position": [
+        135,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        69,
+        61
+      ],
+      "position": [
+        63,
+        186
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        70,
+        61
+      ],
+      "position": [
+        60,
+        186
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        73,
+        61
+      ],
+      "position": [
+        51,
+        186
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        87,
+        61
+      ],
+      "position": [
+        9,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        61
+      ],
+      "position": [
+        6,
+        186
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        62
+      ],
+      "position": [
+        267,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        62
+      ],
+      "position": [
+        261,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        62
+      ],
+      "position": [
+        240,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        62
+      ],
+      "position": [
+        237,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        32,
+        62
+      ],
+      "position": [
+        174,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        47,
+        62
+      ],
+      "position": [
+        129,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        62
+      ],
+      "position": [
+        123,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        62
+      ],
+      "position": [
+        114,
+        189
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        53,
+        62
+      ],
+      "position": [
+        111,
+        189
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        66,
+        62
+      ],
+      "position": [
+        72,
+        189
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        70,
+        62
+      ],
+      "position": [
+        60,
+        189
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        85,
+        62
+      ],
+      "position": [
+        15,
+        189
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        63
+      ],
+      "position": [
+        264,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        63
+      ],
+      "position": [
+        258,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        20,
+        63
+      ],
+      "position": [
+        210,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        63
+      ],
+      "position": [
+        120,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        63
+      ],
+      "position": [
+        111,
+        192
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        63
+      ],
+      "position": [
+        99,
+        192
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        69,
+        63
+      ],
+      "position": [
+        63,
+        192
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        76,
+        63
+      ],
+      "position": [
+        42,
+        192
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        77,
+        63
+      ],
+      "position": [
+        39,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        63
+      ],
+      "position": [
+        36,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        63
+      ],
+      "position": [
+        33,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        63
+      ],
+      "position": [
+        9,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        63
+      ],
+      "position": [
+        6,
+        192
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        64
+      ],
+      "position": [
+        240,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        64
+      ],
+      "position": [
+        237,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        64
+      ],
+      "position": [
+        234,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        64
+      ],
+      "position": [
+        201,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        64
+      ],
+      "position": [
+        195,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        64
+      ],
+      "position": [
+        123,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        74,
+        64
+      ],
+      "position": [
+        48,
+        195
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        85,
+        64
+      ],
+      "position": [
+        15,
+        195
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        65
+      ],
+      "position": [
+        267,
+        198
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        8,
+        65
+      ],
+      "position": [
+        246,
+        198
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        65
+      ],
+      "position": [
+        234,
+        198
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        65
+      ],
+      "position": [
+        231,
+        198
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        65
+      ],
+      "position": [
+        228,
+        198
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        65
+      ],
+      "position": [
+        171,
+        198
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        65
+      ],
+      "position": [
+        99,
+        198
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        60,
+        65
+      ],
+      "position": [
+        90,
+        198
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        64,
+        65
+      ],
+      "position": [
+        78,
+        198
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        83,
+        65
+      ],
+      "position": [
+        21,
+        198
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        9,
+        66
+      ],
+      "position": [
+        243,
+        201
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        66
+      ],
+      "position": [
+        231,
+        201
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        66
+      ],
+      "position": [
+        135,
+        201
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        66
+      ],
+      "position": [
+        90,
+        201
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        72,
+        66
+      ],
+      "position": [
+        54,
+        201
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        74,
+        66
+      ],
+      "position": [
+        48,
+        201
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        76,
+        66
+      ],
+      "position": [
+        42,
+        201
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        83,
+        66
+      ],
+      "position": [
+        21,
+        201
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        67
+      ],
+      "position": [
+        132,
+        204
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        51,
+        67
+      ],
+      "position": [
+        117,
+        204
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        67
+      ],
+      "position": [
+        108,
+        204
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        57,
+        67
+      ],
+      "position": [
+        99,
+        204
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        59,
+        67
+      ],
+      "position": [
+        93,
+        204
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        64,
+        67
+      ],
+      "position": [
+        78,
+        204
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        66,
+        67
+      ],
+      "position": [
+        72,
+        204
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        67,
+        67
+      ],
+      "position": [
+        69,
+        204
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        70,
+        67
+      ],
+      "position": [
+        60,
+        204
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        71,
+        67
+      ],
+      "position": [
+        57,
+        204
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        73,
+        67
+      ],
+      "position": [
+        51,
+        204
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        76,
+        67
+      ],
+      "position": [
+        42,
+        204
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        67
+      ],
+      "position": [
+        6,
+        204
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        68
+      ],
+      "position": [
+        186,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        68
+      ],
+      "position": [
+        105,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        68,
+        68
+      ],
+      "position": [
+        66,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        68
+      ],
+      "position": [
+        51,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        77,
+        68
+      ],
+      "position": [
+        39,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        80,
+        68
+      ],
+      "position": [
+        30,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        68
+      ],
+      "position": [
+        9,
+        207
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        69
+      ],
+      "position": [
+        267,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        8,
+        69
+      ],
+      "position": [
+        246,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        9,
+        69
+      ],
+      "position": [
+        243,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        69
+      ],
+      "position": [
+        231,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        69
+      ],
+      "position": [
+        225,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        69
+      ],
+      "position": [
+        222,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        69
+      ],
+      "position": [
+        216,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        69
+      ],
+      "position": [
+        213,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        69
+      ],
+      "position": [
+        183,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        69
+      ],
+      "position": [
+        177,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        44,
+        69
+      ],
+      "position": [
+        138,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        59,
+        69
+      ],
+      "position": [
+        93,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        69
+      ],
+      "position": [
+        90,
+        210
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        61,
+        69
+      ],
+      "position": [
+        87,
+        210
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        67,
+        69
+      ],
+      "position": [
+        69,
+        210
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        2,
+        70
+      ],
+      "position": [
+        264,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        70
+      ],
+      "position": [
+        261,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        9,
+        70
+      ],
+      "position": [
+        243,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        70
+      ],
+      "position": [
+        237,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        70
+      ],
+      "position": [
+        228,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        70
+      ],
+      "position": [
+        213,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        70
+      ],
+      "position": [
+        183,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        70
+      ],
+      "position": [
+        111,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        70
+      ],
+      "position": [
+        102,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        68,
+        70
+      ],
+      "position": [
+        66,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        84,
+        70
+      ],
+      "position": [
+        18,
+        213
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        71
+      ],
+      "position": [
+        267,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        71
+      ],
+      "position": [
+        264,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        71
+      ],
+      "position": [
+        231,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        71
+      ],
+      "position": [
+        222,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        71
+      ],
+      "position": [
+        219,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        71
+      ],
+      "position": [
+        213,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        71
+      ],
+      "position": [
+        120,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        86,
+        71
+      ],
+      "position": [
+        12,
+        216
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        72
+      ],
+      "position": [
+        267,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        72
+      ],
+      "position": [
+        264,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        72
+      ],
+      "position": [
+        261,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        72
+      ],
+      "position": [
+        219,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        72
+      ],
+      "position": [
+        216,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        72
+      ],
+      "position": [
+        186,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        72
+      ],
+      "position": [
+        105,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        72
+      ],
+      "position": [
+        90,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        61,
+        72
+      ],
+      "position": [
+        87,
+        219
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        68,
+        72
+      ],
+      "position": [
+        66,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        71,
+        72
+      ],
+      "position": [
+        57,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        72,
+        72
+      ],
+      "position": [
+        54,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        72
+      ],
+      "position": [
+        15,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        72
+      ],
+      "position": [
+        6,
+        219
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        73
+      ],
+      "position": [
+        258,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        8,
+        73
+      ],
+      "position": [
+        246,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        73
+      ],
+      "position": [
+        225,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        73
+      ],
+      "position": [
+        198,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        73
+      ],
+      "position": [
+        195,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        73
+      ],
+      "position": [
+        177,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        73
+      ],
+      "position": [
+        141,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        73
+      ],
+      "position": [
+        132,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        73
+      ],
+      "position": [
+        111,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        73
+      ],
+      "position": [
+        99,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        73
+      ],
+      "position": [
+        96,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        73
+      ],
+      "position": [
+        90,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        65,
+        73
+      ],
+      "position": [
+        75,
+        222
+      ],
+      "family": "cask"
+    },
+    {
+      "original": [
+        76,
+        73
+      ],
+      "position": [
+        42,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        77,
+        73
+      ],
+      "position": [
+        39,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        73
+      ],
+      "position": [
+        6,
+        222
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        74
+      ],
+      "position": [
+        222,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        74
+      ],
+      "position": [
+        219,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        74
+      ],
+      "position": [
+        204,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        74
+      ],
+      "position": [
+        198,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        74
+      ],
+      "position": [
+        195,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        74
+      ],
+      "position": [
+        183,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        74
+      ],
+      "position": [
+        162,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        40,
+        74
+      ],
+      "position": [
+        150,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        41,
+        74
+      ],
+      "position": [
+        147,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        74
+      ],
+      "position": [
+        132,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        74
+      ],
+      "position": [
+        96,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        74
+      ],
+      "position": [
+        36,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        74
+      ],
+      "position": [
+        33,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        86,
+        74
+      ],
+      "position": [
+        12,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        74
+      ],
+      "position": [
+        6,
+        225
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        75
+      ],
+      "position": [
+        264,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        75
+      ],
+      "position": [
+        240,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        75
+      ],
+      "position": [
+        207,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        75
+      ],
+      "position": [
+        189,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        75
+      ],
+      "position": [
+        177,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        34,
+        75
+      ],
+      "position": [
+        168,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        75
+      ],
+      "position": [
+        162,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        75
+      ],
+      "position": [
+        135,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        75
+      ],
+      "position": [
+        132,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        69,
+        75
+      ],
+      "position": [
+        63,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        75
+      ],
+      "position": [
+        15,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        86,
+        75
+      ],
+      "position": [
+        12,
+        228
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        76
+      ],
+      "position": [
+        240,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        76
+      ],
+      "position": [
+        225,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        76
+      ],
+      "position": [
+        222,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        76
+      ],
+      "position": [
+        207,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        23,
+        76
+      ],
+      "position": [
+        201,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        76
+      ],
+      "position": [
+        198,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        76
+      ],
+      "position": [
+        192,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        76
+      ],
+      "position": [
+        108,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        76
+      ],
+      "position": [
+        72,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        67,
+        76
+      ],
+      "position": [
+        69,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        69,
+        76
+      ],
+      "position": [
+        63,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        84,
+        76
+      ],
+      "position": [
+        18,
+        231
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        22,
+        77
+      ],
+      "position": [
+        204,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        77
+      ],
+      "position": [
+        198,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        77
+      ],
+      "position": [
+        192,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        35,
+        77
+      ],
+      "position": [
+        165,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        77
+      ],
+      "position": [
+        159,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        41,
+        77
+      ],
+      "position": [
+        147,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        77
+      ],
+      "position": [
+        36,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        77
+      ],
+      "position": [
+        33,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        77
+      ],
+      "position": [
+        15,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        77
+      ],
+      "position": [
+        9,
+        234
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        78
+      ],
+      "position": [
+        264,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        78
+      ],
+      "position": [
+        207,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        78
+      ],
+      "position": [
+        192,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        78
+      ],
+      "position": [
+        186,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        78
+      ],
+      "position": [
+        162,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        40,
+        78
+      ],
+      "position": [
+        150,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        78
+      ],
+      "position": [
+        132,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        61,
+        78
+      ],
+      "position": [
+        87,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        78
+      ],
+      "position": [
+        6,
+        237
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        79
+      ],
+      "position": [
+        264,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        79
+      ],
+      "position": [
+        261,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        79
+      ],
+      "position": [
+        240,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        79
+      ],
+      "position": [
+        189,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        79
+      ],
+      "position": [
+        183,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        38,
+        79
+      ],
+      "position": [
+        156,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        46,
+        79
+      ],
+      "position": [
+        132,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        79
+      ],
+      "position": [
+        120,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        56,
+        79
+      ],
+      "position": [
+        102,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        79
+      ],
+      "position": [
+        99,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        60,
+        79
+      ],
+      "position": [
+        90,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        62,
+        79
+      ],
+      "position": [
+        84,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        63,
+        79
+      ],
+      "position": [
+        81,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        79
+      ],
+      "position": [
+        51,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        76,
+        79
+      ],
+      "position": [
+        42,
+        240
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        2,
+        80
+      ],
+      "position": [
+        264,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        3,
+        80
+      ],
+      "position": [
+        261,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        80
+      ],
+      "position": [
+        228,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        80
+      ],
+      "position": [
+        219,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        20,
+        80
+      ],
+      "position": [
+        210,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        24,
+        80
+      ],
+      "position": [
+        198,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        80
+      ],
+      "position": [
+        195,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        80
+      ],
+      "position": [
+        189,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        80
+      ],
+      "position": [
+        186,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        41,
+        80
+      ],
+      "position": [
+        147,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        43,
+        80
+      ],
+      "position": [
+        141,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        80
+      ],
+      "position": [
+        135,
+        243
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        81
+      ],
+      "position": [
+        267,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        13,
+        81
+      ],
+      "position": [
+        231,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        81
+      ],
+      "position": [
+        225,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        81
+      ],
+      "position": [
+        219,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        81
+      ],
+      "position": [
+        216,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        33,
+        81
+      ],
+      "position": [
+        171,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        35,
+        81
+      ],
+      "position": [
+        165,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        41,
+        81
+      ],
+      "position": [
+        147,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        81
+      ],
+      "position": [
+        111,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        63,
+        81
+      ],
+      "position": [
+        81,
+        246
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        7,
+        82
+      ],
+      "position": [
+        249,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        82
+      ],
+      "position": [
+        240,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        11,
+        82
+      ],
+      "position": [
+        237,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        82
+      ],
+      "position": [
+        234,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        82
+      ],
+      "position": [
+        228,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        82
+      ],
+      "position": [
+        219,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        48,
+        82
+      ],
+      "position": [
+        126,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        49,
+        82
+      ],
+      "position": [
+        123,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        52,
+        82
+      ],
+      "position": [
+        114,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        67,
+        82
+      ],
+      "position": [
+        69,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        82
+      ],
+      "position": [
+        36,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        84,
+        82
+      ],
+      "position": [
+        18,
+        249
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        12,
+        83
+      ],
+      "position": [
+        234,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        83
+      ],
+      "position": [
+        225,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        83
+      ],
+      "position": [
+        222,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        83
+      ],
+      "position": [
+        216,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        83
+      ],
+      "position": [
+        213,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        83
+      ],
+      "position": [
+        189,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        58,
+        83
+      ],
+      "position": [
+        96,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        83
+      ],
+      "position": [
+        72,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        88,
+        83
+      ],
+      "position": [
+        6,
+        252
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        84
+      ],
+      "position": [
+        258,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        84
+      ],
+      "position": [
+        240,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        14,
+        84
+      ],
+      "position": [
+        228,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        84
+      ],
+      "position": [
+        222,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        19,
+        84
+      ],
+      "position": [
+        213,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        27,
+        84
+      ],
+      "position": [
+        189,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        29,
+        84
+      ],
+      "position": [
+        183,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        65,
+        84
+      ],
+      "position": [
+        75,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        82,
+        84
+      ],
+      "position": [
+        24,
+        255
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        85
+      ],
+      "position": [
+        240,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        20,
+        85
+      ],
+      "position": [
+        210,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        85
+      ],
+      "position": [
+        207,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        30,
+        85
+      ],
+      "position": [
+        180,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        40,
+        85
+      ],
+      "position": [
+        150,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        85
+      ],
+      "position": [
+        108,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        67,
+        85
+      ],
+      "position": [
+        69,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        85
+      ],
+      "position": [
+        51,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        82,
+        85
+      ],
+      "position": [
+        24,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        84,
+        85
+      ],
+      "position": [
+        18,
+        258
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        4,
+        86
+      ],
+      "position": [
+        258,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        15,
+        86
+      ],
+      "position": [
+        225,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        86
+      ],
+      "position": [
+        216,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        21,
+        86
+      ],
+      "position": [
+        207,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        25,
+        86
+      ],
+      "position": [
+        195,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        86
+      ],
+      "position": [
+        186,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        36,
+        86
+      ],
+      "position": [
+        162,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        37,
+        86
+      ],
+      "position": [
+        159,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        42,
+        86
+      ],
+      "position": [
+        144,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        86
+      ],
+      "position": [
+        99,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        65,
+        86
+      ],
+      "position": [
+        75,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        86
+      ],
+      "position": [
+        72,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        73,
+        86
+      ],
+      "position": [
+        51,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        86
+      ],
+      "position": [
+        15,
+        261
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        1,
+        87
+      ],
+      "position": [
+        267,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        18,
+        87
+      ],
+      "position": [
+        216,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        30,
+        87
+      ],
+      "position": [
+        180,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        87
+      ],
+      "position": [
+        177,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        32,
+        87
+      ],
+      "position": [
+        174,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        35,
+        87
+      ],
+      "position": [
+        165,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        39,
+        87
+      ],
+      "position": [
+        153,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        40,
+        87
+      ],
+      "position": [
+        150,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        50,
+        87
+      ],
+      "position": [
+        120,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        53,
+        87
+      ],
+      "position": [
+        111,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        54,
+        87
+      ],
+      "position": [
+        108,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        87
+      ],
+      "position": [
+        99,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        86,
+        87
+      ],
+      "position": [
+        12,
+        264
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        10,
+        88
+      ],
+      "position": [
+        240,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        16,
+        88
+      ],
+      "position": [
+        222,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        17,
+        88
+      ],
+      "position": [
+        219,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        26,
+        88
+      ],
+      "position": [
+        192,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        28,
+        88
+      ],
+      "position": [
+        186,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        31,
+        88
+      ],
+      "position": [
+        177,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        38,
+        88
+      ],
+      "position": [
+        156,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        40,
+        88
+      ],
+      "position": [
+        150,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        45,
+        88
+      ],
+      "position": [
+        135,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        55,
+        88
+      ],
+      "position": [
+        105,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        57,
+        88
+      ],
+      "position": [
+        99,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        66,
+        88
+      ],
+      "position": [
+        72,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        71,
+        88
+      ],
+      "position": [
+        57,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        72,
+        88
+      ],
+      "position": [
+        54,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        78,
+        88
+      ],
+      "position": [
+        36,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        79,
+        88
+      ],
+      "position": [
+        33,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        80,
+        88
+      ],
+      "position": [
+        30,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        84,
+        88
+      ],
+      "position": [
+        18,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        85,
+        88
+      ],
+      "position": [
+        15,
+        267
+      ],
+      "family": "casf"
+    },
+    {
+      "original": [
+        87,
+        88
+      ],
+      "position": [
+        9,
+        267
+      ],
+      "family": "casf"
+    }
+  ],
+  "rugs": [
+    [
+      39,
+      2
+    ],
+    [
+      39,
+      3
+    ],
+    [
+      39,
+      4
+    ],
+    [
+      39,
+      5
+    ],
+    [
+      39,
+      6
+    ],
+    [
+      39,
+      7
+    ],
+    [
+      39,
+      8
+    ],
+    [
+      39,
+      9
+    ],
+    [
+      39,
+      10
+    ],
+    [
+      39,
+      11
+    ],
+    [
+      39,
+      12
+    ],
+    [
+      39,
+      13
+    ],
+    [
+      39,
+      14
+    ],
+    [
+      39,
+      15
+    ],
+    [
+      39,
+      16
+    ],
+    [
+      36,
+      17
+    ],
+    [
+      37,
+      17
+    ],
+    [
+      38,
+      17
+    ],
+    [
+      39,
+      17
+    ],
+    [
+      40,
+      17
+    ],
+    [
+      41,
+      17
+    ],
+    [
+      42,
+      17
+    ],
+    [
+      36,
+      18
+    ],
+    [
+      39,
+      18
+    ],
+    [
+      42,
+      18
+    ],
+    [
+      36,
+      19
+    ],
+    [
+      39,
+      19
+    ],
+    [
+      42,
+      19
+    ],
+    [
+      36,
+      20
+    ],
+    [
+      39,
+      20
+    ],
+    [
+      42,
+      20
+    ],
+    [
+      36,
+      21
+    ],
+    [
+      42,
+      21
+    ],
+    [
+      36,
+      22
+    ],
+    [
+      42,
+      22
+    ],
+    [
+      36,
+      23
+    ],
+    [
+      42,
+      23
+    ],
+    [
+      35,
+      24
+    ],
+    [
+      36,
+      24
+    ],
+    [
+      42,
+      24
+    ],
+    [
+      43,
+      24
+    ],
+    [
+      35,
+      25
+    ],
+    [
+      43,
+      25
+    ],
+    [
+      35,
+      26
+    ],
+    [
+      43,
+      26
+    ],
+    [
+      35,
+      27
+    ],
+    [
+      43,
+      27
+    ],
+    [
+      29,
+      28
+    ],
+    [
+      30,
+      28
+    ],
+    [
+      31,
+      28
+    ],
+    [
+      32,
+      28
+    ],
+    [
+      35,
+      28
+    ],
+    [
+      43,
+      28
+    ],
+    [
+      46,
+      28
+    ],
+    [
+      47,
+      28
+    ],
+    [
+      48,
+      28
+    ],
+    [
+      49,
+      28
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      32,
+      29
+    ],
+    [
+      33,
+      29
+    ],
+    [
+      34,
+      29
+    ],
+    [
+      35,
+      29
+    ],
+    [
+      43,
+      29
+    ],
+    [
+      44,
+      29
+    ],
+    [
+      45,
+      29
+    ],
+    [
+      46,
+      29
+    ],
+    [
+      49,
+      29
+    ],
+    [
+      29,
+      30
+    ],
+    [
+      49,
+      30
+    ],
+    [
+      29,
+      31
+    ],
+    [
+      49,
+      31
+    ],
+    [
+      29,
+      32
+    ],
+    [
+      49,
+      32
+    ],
+    [
+      29,
+      33
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      33,
+      33
+    ],
+    [
+      34,
+      33
+    ],
+    [
+      35,
+      33
+    ],
+    [
+      43,
+      33
+    ],
+    [
+      44,
+      33
+    ],
+    [
+      45,
+      33
+    ],
+    [
+      46,
+      33
+    ],
+    [
+      49,
+      33
+    ],
+    [
+      29,
+      34
+    ],
+    [
+      30,
+      34
+    ],
+    [
+      31,
+      34
+    ],
+    [
+      32,
+      34
+    ],
+    [
+      35,
+      34
+    ],
+    [
+      43,
+      34
+    ],
+    [
+      46,
+      34
+    ],
+    [
+      47,
+      34
+    ],
+    [
+      48,
+      34
+    ],
+    [
+      49,
+      34
+    ],
+    [
+      35,
+      35
+    ],
+    [
+      43,
+      35
+    ],
+    [
+      35,
+      36
+    ],
+    [
+      36,
+      36
+    ],
+    [
+      37,
+      36
+    ],
+    [
+      41,
+      36
+    ],
+    [
+      42,
+      36
+    ],
+    [
+      43,
+      36
+    ],
+    [
+      37,
+      37
+    ],
+    [
+      41,
+      37
+    ],
+    [
+      37,
+      38
+    ],
+    [
+      41,
+      38
+    ],
+    [
+      37,
+      39
+    ],
+    [
+      41,
+      39
+    ],
+    [
+      37,
+      40
+    ],
+    [
+      41,
+      40
+    ],
+    [
+      37,
+      41
+    ],
+    [
+      41,
+      41
+    ],
+    [
+      37,
+      42
+    ],
+    [
+      38,
+      42
+    ],
+    [
+      39,
+      42
+    ],
+    [
+      40,
+      42
+    ],
+    [
+      41,
+      42
+    ],
+    [
+      39,
+      43
+    ],
+    [
+      39,
+      44
+    ],
+    [
+      39,
+      45
+    ],
+    [
+      39,
+      46
+    ],
+    [
+      39,
+      47
+    ],
+    [
+      39,
+      48
+    ],
+    [
+      39,
+      49
+    ],
+    [
+      39,
+      50
+    ],
+    [
+      39,
+      51
+    ],
+    [
+      39,
+      52
+    ],
+    [
+      39,
+      53
+    ],
+    [
+      39,
+      54
+    ],
+    [
+      39,
+      55
+    ],
+    [
+      39,
+      56
+    ],
+    [
+      39,
+      57
+    ],
+    [
+      39,
+      58
+    ],
+    [
+      39,
+      59
+    ],
+    [
+      39,
+      60
+    ],
+    [
+      39,
+      61
+    ],
+    [
+      39,
+      62
+    ],
+    [
+      36,
+      63
+    ],
+    [
+      37,
+      63
+    ],
+    [
+      38,
+      63
+    ],
+    [
+      39,
+      63
+    ],
+    [
+      40,
+      63
+    ],
+    [
+      41,
+      63
+    ],
+    [
+      42,
+      63
+    ],
+    [
+      36,
+      64
+    ],
+    [
+      37,
+      64
+    ],
+    [
+      38,
+      64
+    ],
+    [
+      39,
+      64
+    ],
+    [
+      40,
+      64
+    ],
+    [
+      41,
+      64
+    ],
+    [
+      42,
+      64
+    ],
+    [
+      36,
+      65
+    ],
+    [
+      37,
+      65
+    ],
+    [
+      38,
+      65
+    ],
+    [
+      39,
+      65
+    ],
+    [
+      40,
+      65
+    ],
+    [
+      41,
+      65
+    ],
+    [
+      42,
+      65
+    ],
+    [
+      36,
+      66
+    ],
+    [
+      37,
+      66
+    ],
+    [
+      38,
+      66
+    ],
+    [
+      39,
+      66
+    ],
+    [
+      40,
+      66
+    ],
+    [
+      41,
+      66
+    ],
+    [
+      42,
+      66
+    ]
+  ],
+  "questSprites": [
+    {
+      "mapId": 15,
+      "eventId": 2,
+      "sourceId": "stonekeep.parchment",
+      "kind": 0
+    },
+    {
+      "mapId": 13,
+      "eventId": 3,
+      "sourceId": "fang.cell2.key",
+      "kind": 1
+    },
+    {
+      "mapId": 17,
+      "eventId": 5,
+      "sourceId": "fang.staff-piece-1",
+      "kind": 2
+    }
+  ]
+}

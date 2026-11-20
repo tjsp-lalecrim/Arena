@@ -1,0 +1,81 @@
+{
+  "originals": [
+    {
+      "name": "DCN.INF",
+      "sha256": "fed1752e7e417ff7ec89937c9252ebc8bcd3101d7ac80d49bc5cfe2de6e73d36"
+    },
+    {
+      "name": "STKEEP1.INF",
+      "sha256": "1b8842b438e37d14bc9f9abeea7ff28e629d5b279dca313daa3eee0d58bebd5c"
+    },
+    {
+      "name": "FANG1.INF",
+      "sha256": "4693f2db924a07fb4c5868978d595ecf624467990b1ad59fedc9df6c1760190a"
+    },
+    {
+      "name": "FANG2.INF",
+      "sha256": "3f6e54169b7202e3565774686ad3cffd674dcf3805acaebfe264a84a5fd9bd7e"
+    },
+    {
+      "name": "CASF.SET",
+      "sha256": "74fb28ed3c2a2dbce41233bdf84299e1d3211168c6da02525de6848f1dd8182c"
+    },
+    {
+      "name": "CASK.SET",
+      "sha256": "bf5d01f7b3ae35bc2c4fdb7eec40f8dbe762c842dfd516ac819249fbb31c766f"
+    },
+    {
+      "name": "PARCHFLT.IMG",
+      "sha256": "c1a68b6b49759a9829fc5369f2e655e5fad38fae7497eb16b89288b55dfa6046"
+    },
+    {
+      "name": "KEY.IMG",
+      "sha256": "fac3df5a1bd8e4ed00f98038f9ba93d77403035f4093a4fa6fa760de44a213e6"
+    },
+    {
+      "name": "CHAOS1.DFA",
+      "sha256": "9342fd87a3ef191d29a7c11620c2dc0617af72fd5d35bc72ea20a9b8e08953fb"
+    },
+    {
+      "name": "NWELL1.IMG",
+      "sha256": "67874fe06fb4e53f26e858166f9162ac6a22ada3e9322904f8b3d70a242c95ca"
+    },
+    {
+      "name": "NWELL2.IMG",
+      "sha256": "6d8726f9f935a35b7ac4aa8db20927a423fa8efa599daddba441e78c280a22e1"
+    },
+    {
+      "name": "CACTUS1.IMG",
+      "sha256": "3947d111ae726bd16958fa85d714d1f896da51110a25e4a8a8871537ea8e7a54"
+    },
+    {
+      "name": "CACTUS2.IMG",
+      "sha256": "651f48074132ee50c8979517df8a5eac526748f110efdb136935734a49cd9f02"
+    },
+    {
+      "name": "CACTUS3.IMG",
+      "sha256": "c0c473be50d4208382850f2ccb7521cdc54b1ca074a483731123eca863c153bb"
+    },
+    {
+      "name": "PALM1.IMG",
+      "sha256": "8436351632730e1c4981a64fa9a87548112b9bb674145135617210da96a1d40b"
+    },
+    {
+      "name": "PALM2.IMG",
+      "sha256": "8523c0f247aab666bd8af39e488601e04954cf628d39c3a92a9ec94bf5bfce53"
+    },
+    {
+      "name": "PALM3.IMG",
+      "sha256": "47b0d094f0a1c2390b49e6a5ebda6ad70967c3f5ace46651f1f0c4af2b880335"
+    }
+  ],
+  "extraction": "read-only GLOBAL.BSA/installed originals; PAL.COL. IMG flags0/raw, SET64x64, DFA RLE first frame; references in tmp/m02-scenery ignored, not runtime. No new original-game observation claimed.",
+  "interpretations": [
+    "Orthographic projections, apparent scale and painterly finish are project adaptations.",
+    "Panel decorative marks are stylizations, not literal inscriptions or lore claims.",
+    "Fountain reuses existing interior prop, static representation; no new animation or interaction.",
+    "CHAOS1 uses one static red aura composition, not claimed animated DFA reproduction.",
+    "Urban original flats are decorative/through in this implementation; all current collision masks preserved."
+  ],
+  "composedCityMap1Sha256": "5d224c5e3cd48b1f7f382a2195d9548ed592efa2d38fc8634f4938a6f03b1bac"
+}
