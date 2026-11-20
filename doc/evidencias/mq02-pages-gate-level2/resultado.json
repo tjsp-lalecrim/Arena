@@ -1,0 +1,30 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "42e36b0ecf7dc391179ea55449b89fa626d1e9ef",
+  "manifestSha256": "79f0834bb8f46b74bf8c362799f564f805a1138ac1a03510c2591da09b6a5546",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 408,
+  "totalBytes": 55304444,
+  "checked": [
+    "data/ArenaQuests.json",
+    "data/ArenaRihad.json",
+    "data/Map009.json",
+    "data/Map010.json",
+    "js/plugins/Arena_Quests.js"
+  ],
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Exact public manifest",
+    "Changed config/plugin size and SHA256; unchanged assets reuse previous preview evidence",
+    "Clean Chrome opening, level1 Gate message and unchanged MQ01/narrative through normal isolated synthetic session"
+  ],
+  "errors": [],
+  "limits": "Public smoke; level2, save/load, EXP and continuation regression covered locally; no personal saves.",
+  "run": "https://github.com/tjsp-lalecrim/Arena/actions/runs/44724168288",
+  "infraCommit": "086d04576d854a733495e99992183ac3832320ec",
+  "workflow": {
+    "build": "success",
+    "deploy": "success",
+    "platform": "linux"
+  }
+}
