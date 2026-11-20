@@ -2,6 +2,8 @@
 
 ## Acesso vigente pela campanha — 20/11/2026
 
+Correção integrada e [publicada na prévia2f3686e](PAGES_INFRA.md#prévia-de-mq02-com-acesso-inicial-aos-arredores--20112026), sem aprovação manual presumida.
+
 O responsável relata que a cama funciona e acredita estar no nível1; o nível do save não foi inspecionado nem confirmado. A visão requer nível2, MQ02 etapa10 e leitura ainda não iniciada. O relato não é registrado como defeito narrativo nem como nova aprovação da visão.
 
 **Diagnóstico:** na fonte pública01f9915, Map010 e os quatro ratos já estavam no pacote. Na cidade reconstruída, o acesso lateral/evento4 fica em(342,3), alcançável pela circulação; portanto não estava removido. Porém o evento3 do portão(345,3) só informava chegada antes da audiência e oferecia viagens apenas após desbloqueios. Não havia opção explícita de Arredores nesse menu. A indicação verbal era vaga. A prova anterior ao ajuste está em `tmp/arredores-before.json` (consulta técnica ignorada).
