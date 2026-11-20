@@ -1,0 +1,36 @@
+{
+  "master": "art/masters/fang-lava-v01/surface-source.png",
+  "masterSHA256": "4318ef917bc3843771855bc94aee5ecabb66b46b409895b62ae4e06c67edf335",
+  "output": "img/tilesets/Arena_Fang_Lava_V01_A1.png",
+  "sha256": "545ab26b97deafd98dee43fcad173c93c86ecab48d80e14f25668b766936efb9",
+  "size": [
+    768,
+    576
+  ],
+  "kind": 4,
+  "phaseRegion": [
+    384,
+    0,
+    288,
+    144
+  ],
+  "tile": 48,
+  "nativeSequence": [
+    0,
+    1,
+    2,
+    1
+  ],
+  "nativeFramesPerPhase": 30,
+  "phaseSHA256": [
+    "ae9f8f9404b987b7d85a90a16c67627d72a4aee0525e42ce8778904cf69530f6",
+    "1af528a307154de26f6603bc6e040760c0f91b0f73609d524a686a20361e6708",
+    "e5f1cfd4ea1e071a3ee804687abda5c21ea08e1420fd8fec886d93baa861f513"
+  ],
+  "checks": [
+    "Three different authored phases",
+    "Opposite spatial edges equal",
+    "All lava quarters opaque;5px crust banks",
+    "Other A1 slots copied unchanged from existing water export"
+  ]
+}

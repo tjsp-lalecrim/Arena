@@ -1,0 +1,40 @@
+{
+  "resources": [
+    {
+      "file": "CASLAVA.IMG",
+      "bytes": 4096,
+      "sha256": "f864462422ae7cc5576f48147116cd7389c5fc89172b661290f54dc477bcd6a8"
+    },
+    {
+      "file": "DNG2LAVA.IMG",
+      "bytes": 4096,
+      "sha256": "30de670b189b9f02c0d1dace24dfd5c79b193bcbd3607d652b87fb8c6c9c9864"
+    },
+    {
+      "file": "LAVA.IMG",
+      "bytes": 4096,
+      "sha256": "30de670b189b9f02c0d1dace24dfd5c79b193bcbd3607d652b87fb8c6c9c9864"
+    },
+    {
+      "file": "LAVAWALL.IMG",
+      "bytes": 4096,
+      "sha256": "ed13072740e52ef2ebabd5779bd7e0496812b720f7d7680604dea1f982a69d91"
+    },
+    {
+      "file": "MLAVA.IMG",
+      "bytes": 4096,
+      "sha256": "30de670b189b9f02c0d1dace24dfd5c79b193bcbd3607d652b87fb8c6c9c9864"
+    },
+    {
+      "file": "SLAVA.IMG",
+      "bytes": 4096,
+      "sha256": "30de670b189b9f02c0d1dace24dfd5c79b193bcbd3607d652b87fb8c6c9c9864"
+    }
+  ],
+  "confirmed": "FANG2.INF binds MLAVA.IMG to *LAVACHASM; FLOR0x0E00.210 MAP1=0 open cells;17 overlapped with wall volumes retained.",
+  "referenceInterpretation": "MLAVA is a chasm rim/alpha-test overlay, not a full rectangular overhead lava plane. Most black source pixels have palette index0. Cached OpenTESArena MapGeneration.cpp maps lava floor to OpaqueScreenSpaceAnimation and wall to OpaqueScreenSpaceAnimationWithAlphaTestLayer.",
+  "primaryTechnicalReference": "https://github.com/afritz1/OpenTESArena/blob/main/OpenTESArena/src/World/MapGeneration.cpp",
+  "variants": "MLAVA/LAVA/SLAVA/DNG2LAVA share identical bytes; CASLAVA differs slightly; LAVAWALL is distinct and not the Fang2 binding.",
+  "adaptation": "Generated dark crust and red/orange seams form a new orthogonal48px surface.3 subtle generated keyframes use native A1 sequence0,1,2,1; no change to engine animation constants. Periodic edges and dark crust rim are technical derivatives of generated pixels; original bitmap never exported.",
+  "limits": "No original executable playtest claimed. This is not implementation or approval of lava risk, Resist Fire, Passwall or a route to ghouls."
+}
