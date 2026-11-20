@@ -1,5 +1,7 @@
 # M02-03C — visão de Ria em Rihad
 
+**Feedback atual do responsável — 20/11/2026:** a visão de Ria foi apresentada com sucesso. Esse relato resolve a dúvida de apresentação mencionada após o teste da cama; não acrescenta nova confirmação de salvar/reabrir, recursos ou outros testes não relatados.
+
 **Local vigente de descanso:** [cama da Pousada do portão](CHEGADA_RIHAD_M02_03A.md#pousada-do-portão--descanso-urbano-vigente), Map018, preservando o ID do repouso e o estado narrativo. As menções à plataforma exterior abaixo descrevem a entrega original.
 
 **Aprovação posterior do responsável —01/11/2026, versão explícita ad4af0e:** teste funcional satisfatório e direção artística aprovados. PilotoV01/arquivo/hash no [registro de arte](arte/MQ02_RIA_PILOTO_V01.json). Ambiente, dispositivo e casos técnicos adicionais não foram discriminados; não estender a aprovação aos testes manuais de chegada/arredores, persistência ou outras combinações. A aprovação do piloto não autoriza produzir variantes.

@@ -1,5 +1,7 @@
 # Avaliação de mapa de orientação e bússola de objetivos
 
+**Decisão posterior — 20/11/2026:** mapa mundial e viagem rápida autorizados e implementados na campanha em entrega própria. [Contrato vigente, referências, adaptações e roteiro](plugins/Arena_WorldMap.md). A recomendação histórica de adiar viagem rápida abaixo foi substituída por essa autorização; mapa local/minimapa continuam distintos.
+
 Avaliação em 25/10/2026. A inclusão está em análise: não é uma funcionalidade aprovada automaticamente nem foi implementada ou testada. “Mapa de guia” é interpretado aqui como mapa local consultável, com minimapa como opção complementar; não implica mapa mundial ou viagem rápida.
 
 ## Momento da decisão

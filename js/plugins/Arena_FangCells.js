@@ -126,7 +126,7 @@ var ArenaFangCells;
    ],i.eventId());return true;
   },
   travel:function(i){
-   return road(i)&&i._branch[0]===0&&transfer({mapId:c().mapId,x:c().entry[0],y:c().entry[1],direction:2});
+   return road(i)&&i._branch[0]===0&&ArenaWorldMap.fromGate(i,'fang');
   },
   describe:function(i,block){
    var id=block==='arrival'?7:8,flag=block==='arrival'?'fangEntryRead':'fangCellsSeen';

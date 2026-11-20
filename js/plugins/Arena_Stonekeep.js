@@ -32,7 +32,7 @@ var ArenaStonekeep;
     {code:402,indent:0,parameters:[0,'Viajar para Stonekeep']},{code:355,indent:1,parameters:['ArenaStonekeep.travel(this);']},
     {code:402,indent:0,parameters:[1,'Ficar em Rihad']},{code:404,indent:0,parameters:[]},{code:0,indent:0,parameters:[]}],i.eventId());return true;
   },
-  travel:function(i){return valid(i,c().return.mapId,c().travelEventId)&&i._branch[0]===0&&this.known()?transfer(c().entry):false;},
+  travel:function(i){return valid(i,c().return.mapId,c().travelEventId)&&i._branch[0]===0&&this.known()?ArenaWorldMap.fromGate(i,'stonekeep'):false;},
   leave:function(i){return valid(i,c().mapId,c().exitEventId)?transfer(c().return):false;},
   collect:function(i){
    if(!valid(i,c().mapId,c().sourceEventId))return false;

@@ -80,7 +80,7 @@ var ArenaRihad;
    list.push({code:402,indent:0,parameters:[names.length-1,'Ficar em Rihad']},{code:404,indent:0,parameters:[]},{code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;
   },
   travelFromGate:function(i,id){if(!(i instanceof Game_Interpreter))return false;var destinations=gateDestinations(),index=destinations.findIndex(function(v){return v.id===id;});
-   if(index<0||i._branch[0]!==index)return false;return route(i,$arenaRihad.arrival.mapId,3,destinations[index].to);
+   if(index<0||i._branch[0]!==index)return false;return ArenaWorldMap.fromGate(i,id);
   },
   preview:function(){return ArenaContinuation.previewArrival($arenaRihad.arrival,true);},
   visitOutskirts:function(i){var o=$arenaRihad.outskirts;return route(i,$arenaRihad.arrival.mapId,o.accessEventId,o.entry);},

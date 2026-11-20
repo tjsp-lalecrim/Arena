@@ -1,0 +1,16 @@
+{
+  "browser": "157.0.8103.80",
+  "url": "http://127.0.0.1:8774/",
+  "checks": [
+    "Technical session cannot use world travel or normal saves; synthetic normal campaign restored in isolated profile.",
+    "Menu, all nine provinces, unavailable provinces, no quest spoilers and cancellation preserve campaign.",
+    "M shortcut, explicit confirmation/cancel, Rihad -> production Stonekeep -> Rihad, resources/quest/receipts unchanged, normal save/load and dungeon consultation only.",
+    "Receipt-gated Fang Lair discovery; Rihad -> Fang Lair -> Rihad and normal save/load preserve all protected state.",
+    "Gate delegates to shared service; duplicate execution refused; save during reserved transition restores exactly once.",
+    "Inn and Fang Lair remain consultation-only; already-read Tharn vision at stage100 cannot bypass pending retaliation or change quest.",
+    "Exterior outskirts -> Rihad works; a lock appearing while confirmation is open is revalidated; battle cannot open map."
+  ],
+  "errors": [],
+  "missing": [],
+  "scope": "Synthetic normal campaign, isolated Chrome context; no personal saves. Existing combat/Tharn sequence reused without replaying battles. Cartographic appearance/owner assessment pending."
+}
