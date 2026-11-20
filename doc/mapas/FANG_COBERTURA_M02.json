@@ -2815,7 +2815,15 @@
           "No verified crossing of the separating wall volumes",
           "No implemented map lava damage with protection or Passwall. Normal water and native floor damage do not supply these rules."
         ],
-        "decision": "pending; preserve the existing Map017 and both ghoul placements without adding encounters"
+        "decision": "Traversal pending. Animated V01 applied to confirmed open lava cells only; wall volumes, collisions, ghoul placements and route conditions preserved.",
+        "surface": {
+          "state": "animated-v01-integrated-visual-evaluation-pending",
+          "sourceOpenCells": 210,
+          "animatedTiles": 1890,
+          "wallOverLavaKept": 17,
+          "configuration": "doc/mapas/FANG_LAVA_M02.json",
+          "collision": "unchanged, blocked; no swimming/damage/protection rule added"
+        }
       },
       "treasures": [
         {

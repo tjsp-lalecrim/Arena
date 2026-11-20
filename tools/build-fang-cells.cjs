@@ -1,6 +1,6 @@
 // Fang Lair campaign and connected dry wings, using provisional runtime tiles.
 const fs=require('fs'),path=require('path'),R=path.resolve(__dirname,'..');
-const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),write=(n,v)=>{if(n==='Map013'||n==='Map017')require('./m02-dungeon-objects.cjs')(n,v);return fs.writeFileSync(path.join(R,'data/'+n+'.json'),(Array.isArray(v)?'[\n'+v.map(x=>JSON.stringify(x)).join(',\n')+'\n]':v.data&&v.events?JSON.stringify(v):JSON.stringify(v,null,2))+'\n');};
+const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8')),write=(n,v,atlas)=>{if(n==='Map013'||n==='Map017')require('./m02-dungeon-objects.cjs')(n,v);if(n==='Map017')require('./fang-lava.cjs')(v,atlas);return fs.writeFileSync(path.join(R,'data/'+n+'.json'),(Array.isArray(v)?'[\n'+v.map(x=>JSON.stringify(x)).join(',\n')+'\n]':v.data&&v.events?JSON.stringify(v):JSON.stringify(v,null,2))+'\n');};
 const installAtlas=require('./m02-surface-atlas.cjs');
 const materialSpec=require('../doc/arte/m02-tilesets/fang.json');
 const materialPlan=require('../doc/mapas/FANG_MATERIAIS_M02.json');
@@ -159,7 +159,7 @@ module.exports=function(){
  const lowerEntries=addEncounters(lowerPlan,lowerEvents,[{id:'fang.lower.approach.skeleton.01',eventId:3,sourceOriginal:layout.anchors.skeleton}]);
  write('Map'+String(lower.mapId).padStart(3,'0'),{...read('data/Map001.json'),...terrain(lowerPlan,3,2,atlas,lower.stair),
   tilesetId:materialSpec.tilesetId,displayName:'',note:'FANG2: escada, alas secas, segundo enigma e sala do fragmento. Atlas da mina V01.',
-  encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events:lowerEvents});
+  encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events:lowerEvents},atlas);
  const items=read('data/Items.json');if(items[8]&&!items[8].note.includes('MQ02.gold-key'))throw Error('Item8 occupied');items[8]={...items[1],id:8,name:'Chave dourada de Fang Lair',description:'Chave da Cela 2. Abre o portal junto às celas de Fang Lair. Ícone provisório.',itypeId:2,consumable:false,price:0,note:'<ArenaQuest: MQ02>\n<ArenaUnique>\nMQ02.gold-key / fang.cell2.key; consumo somente no portal.'};
  const visuals=entries=>Object.fromEntries([...new Set(entries.map(e=>e.enemyId))].map(id=>[id,id===hound.enemyId?hound.mapVisual:profile.mapVisuals[id]]));
  const campaign=read('data/ArenaCampaign.json');Object.assign(campaign.areas.find(a=>a.id===c.areaId),{mapId:c.mapId,encounters:{schemaVersion:1,mapId:c.mapId,areaId:c.areaId,completionQuestId:c.questId,mapVisuals:visuals(entries),entries}});campaign.sources.find(v=>v.id===c.sourceId).itemId=c.itemId;
