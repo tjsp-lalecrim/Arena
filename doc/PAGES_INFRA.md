@@ -23,6 +23,7 @@ O workflow usa a receita do checkout fixado em `source_sha`. Em seguida, o final
 | MQ02, progressão inicial de Rihad | `2f3686e9bb3a4b039216e8a3b3711ef6554f5a44` | `772e3999a685fd6b019798d12e29be23868008ad9fa94a258c139b3382501d76` |
 | MQ02, Shift Gate nível2 | `42e36b0ecf7dc391179ea55449b89fa626d1e9ef` | `79f0834bb8f46b74bf8c362799f564f805a1138ac1a03510c2591da09b6a5546` |
 | MQ02, cenários e entrada interna | `2c53bd0dc55a5f7e67a0587618ff0060766b3700` | `ef86e589863233746704d391d3afde97526dc93fb2e1527fd3df8ffb5044b340` |
+| MQ02, mapa mundial e catálogo acessível | `7597fd7de672132c866947a961ea335b5e874264` | `fcdc490cd51846a05aca7e5005268142f18ea27c5f1a5eb94ffff47384382f01` |
 
 A RC1 mantém a conversão CRLF dos arquivos registrados. O pacote de MQ02 é verificado com os bytes da receita, sem conversão. Essa receita ainda usa o rótulo `m01-rc1` no manifesto. Identifique a prévia pelo `sourceCommit`. O endereço público e o namespace `arena:m01:save-v1` são compartilhados entre as duas prévias.
 
@@ -70,7 +71,7 @@ Não limpar dados do site nem transferir saves automaticamente. Saves pessoais f
 
 ## Prévia agrupada de assets do M02 — 20/11/2026
 
-Fonte do jogo **`01f9915657329d47c922a1d1c78583bb625d3698`**, contendo Fantasma `b996fb3`, grades/portais/objetos `e5d822e`, lava `0d613fc` e Blubamka `01f9915`. Infraestrutura do workflow `24b9460ed71a6cd485e7855731ce4d489a0d7b55`; somente registro do manifesto selecionado, sem alteração funcional. [Execução manual44708123431](https://github.com/tjsp-lalecrim/Arena/actions/runs/44708123431), pela main, SHA completo e `publish=true`: build Linux e deploy concluídos com sucesso. Duas construções idênticas, inventário/capitalização/tamanhos/checksums e manifesto autorizado conferidos. Pacote:408arquivos de runtime,55.301.529bytes incluindo manifesto. Artefato Actions:42.682.216bytes.
+Fonte do jogo **`01f9915657329d47c922a1d1c78583bb625d3698`**, contendo Fantasma `b996fb3`, grades/portais/objetos `e5d822e`, lava `0d613fc` e Blubamka `01f9915`. Infraestrutura do workflow `24b9460ed71a6cd485e7855731ce4d489a0d7b55`; somente registro do manifesto selecionado, sem alteração funcional. [Execução manual 44708123431](https://github.com/tjsp-lalecrim/Arena/actions/runs/44708123431), pela main, SHA completo e `publish=true`: build Linux e deploy concluídos com sucesso. Duas construções idênticas, inventário/capitalização/tamanhos/checksums e manifesto autorizado conferidos. Pacote:408arquivos de runtime,55.301.529bytes incluindo manifesto. Artefato Actions:42.682.216bytes.
 
 [Jogo público](https://tjsp-lalecrim.github.io/Arena/) · [Manifesto](https://tjsp-lalecrim.github.io/Arena/package-manifest.json). SHA-256 do manifesto: `5bfb33136283a9407f15905bdf1e176814758884f0cc12e5780ca320f85a51c9`. O rótulo herdado `m01-rc1` não representa a etapa da campanha: conferir `sourceCommit`. Origem e namespace `arena:m01:save-v1` preservados. Não limpar dados do site; saves de localhost/outros dispositivos não são transferidos automaticamente. Sem release, tag ou alteração de acionamento: Pages continua exclusivamente manual.
 
@@ -90,7 +91,7 @@ Retomar saves públicos nas etapas pertinentes; não é necessário reiniciar um
 
 ## Prévia de MQ02 com acesso inicial aos Arredores — 20/11/2026
 
-Fonte funcional publicada **`2f3686e9bb3a4b039216e8a3b3711ef6554f5a44`**, correção `da8d4fc`. Infraestrutura do workflow `219496d1e2b4e55a6d346d6622f3ff3b1633bdfe`. [Execução manual44717514201](https://github.com/tjsp-lalecrim/Arena/actions/runs/44717514201): build Linux e deploy concluídos com sucesso. Reconstrução dupla idêntica e manifesto autorizado conferidos;408arquivos,55.303.915bytes com manifesto, artefato42.684.326bytes. SHA-256 do manifesto: `772e3999a685fd6b019798d12e29be23868008ad9fa94a258c139b3382501d76`.
+Fonte funcional publicada **`2f3686e9bb3a4b039216e8a3b3711ef6554f5a44`**, correção `da8d4fc`. Infraestrutura do workflow `219496d1e2b4e55a6d346d6622f3ff3b1633bdfe`. [Execução manual 44717514201](https://github.com/tjsp-lalecrim/Arena/actions/runs/44717514201): build Linux e deploy concluídos com sucesso. Reconstrução dupla idêntica e manifesto autorizado conferidos;408arquivos,55.303.915bytes com manifesto, artefato42.684.326bytes. SHA-256 do manifesto: `772e3999a685fd6b019798d12e29be23868008ad9fa94a258c139b3382501d76`.
 
 [Jogo](https://tjsp-lalecrim.github.io/Arena/) e [manifesto público](https://tjsp-lalecrim.github.io/Arena/package-manifest.json) mantêm origem e namespace `arena:m01:save-v1`. Rótulo herdado `m01-rc1`: identificar a revisão por `sourceCommit`. No Chrome isolado foram conferidos o manifesto exato, checksums dos arquivos de runtime alterados e configurações cidade/Arredores, abertura, opção do portão no nível1/etapa10 e chegada aos quatro ratos. Os assets inalterados reutilizam a conferência pública integral da prévia anterior. [Resultado](evidencias/mq02-pages-rihad-progression/resultado.json) · [Portão público](evidencias/mq02-pages-rihad-progression/portao-publico.png).
 
@@ -100,7 +101,7 @@ A [regressão local pela campanha normal sintética](ARREDORES_RIHAD_M02_03B.md#
 
 ## Prévia Shift Gate nível2 e inventário auditado — 20/11/2026
 
-Fonte publicada **`42e36b0ecf7dc391179ea55449b89fa626d1e9ef`**, correção `14f1eda`; infraestrutura `086d04576d854a733495e99992183ac3832320ec`. [Execução manual44724168288](https://github.com/tjsp-lalecrim/Arena/actions/runs/44724168288): build Linux e deploy concluídos com sucesso. Pacote408arquivos/55.304.444bytes incluindo manifesto; reconstrução dupla e checksums validados. Manifesto SHA-256 `79f0834bb8f46b74bf8c362799f564f805a1138ac1a03510c2591da09b6a5546`.
+Fonte publicada **`42e36b0ecf7dc391179ea55449b89fa626d1e9ef`**, correção `14f1eda`; infraestrutura `086d04576d854a733495e99992183ac3832320ec`. [Execução manual 44724168288](https://github.com/tjsp-lalecrim/Arena/actions/runs/44724168288): build Linux e deploy concluídos com sucesso. Pacote408arquivos/55.304.444bytes incluindo manifesto; reconstrução dupla e checksums validados. Manifesto SHA-256 `79f0834bb8f46b74bf8c362799f564f805a1138ac1a03510c2591da09b6a5546`.
 
 [Jogo público](https://tjsp-lalecrim.github.io/Arena/) · [manifesto](https://tjsp-lalecrim.github.io/Arena/package-manifest.json). Origem e namespace `arena:m01:save-v1` preservados; rótulo herdado `m01-rc1` não identifica esta revisão, usar `sourceCommit`. Chrome isolado conferiu manifesto, checksums dos arquivos alterados, abertura e bloqueio no Gate no nível1, sem concluir MQ01/narrativa. [Resultado](evidencias/mq02-pages-gate-level2/resultado.json). A regressão local inclui quatro batalhas reais/nível2, retomada do save, conclusão única e continuação a Rihad; saves pessoais não utilizados.
 
@@ -124,3 +125,24 @@ Retomar saves públicos nos pontos adequados; objetos já recolhidos/entregues d
 4. **Shift Gate, opcional:** somente para quem possui save anterior à saída de Imperial Dungeons. No nível 1, conferir mensagem de nível 2 e recuar para explorar. Após alcançar nível 2, sair e continuar a Rihad normalmente. Quem já está em Rihad ignora este passo; não há bloqueio retroativo ou exigência de refazer M01.
 
 **Limitações do inventário preservadas:** o asset novo é a **face interna MSU**, não uma fachada exterior dragon gate comprovada. A associação de DGATE/WDUNGDR à entrada exterior continua incerta. Vagonetes não foram gerados/distribuídos; candidatos nos volumes MIF(87,21)/(88,21), junto ao trilho(88,20), ainda exigem comprovação visual/composição. [Investigação e captura](FANG_CELAS_M02_06A.md#entrada-interna-e-investigação-de-vagonetes--20112026). Servo definitivo e ilustrações seguem suas dependências de fonte e orientação. Avaliação integrada permanece pendente; release no fechamento do marco.
+
+
+## Prévia do mapa mundial de MQ02 — 20/11/2026
+
+Fonte **`7597fd7de672132c866947a961ea335b5e874264`**: main com catálogo 9b6f0ad e complemento funcional 309e9b8. Workflow/infraestrutura **`44bb2271e72ae5d5b9f993c6270a12877924774c`**, com registro explícito de manifesto, sem mudar receita, origem ou namespace. [Execução manual 44785403163](https://github.com/tjsp-lalecrim/Arena/actions/runs/44785403163): `source_sha` completo e `publish=true`, build Linux e deploy concluídos com sucesso. Duas construções idênticas, inventário, capitalização e tamanho/SHA-256 dos 417 arquivos conferidos; 55.884.173 bytes incluindo manifesto; artefato Actions 43.032.961 bytes.
+
+[Jogo público](https://tjsp-lalecrim.github.io/Arena/) · [manifesto público](https://tjsp-lalecrim.github.io/Arena/package-manifest.json). Hash do manifesto: `fcdc490cd51846a05aca7e5005268142f18ea27c5f1a5eb94ffff47384382f01`. O rótulo herdado `m01-rc1` não identifica esta etapa; usar `sourceCommit`. Namespace **`arena:m01:save-v1`**, mesma origem/URL, sem limpeza, transferência automática ou alteração de slots pessoais. Publicação continua exclusivamente manual. Sem tag, release ou fechamento do M02.
+
+Verificação pública: Chrome isolado abriu o título sem erro; manifesto exato e os 417 arquivos públicos conferidos por tamanho/SHA-256. Catálogo 273, nove províncias, API de estados, mínimo2 do Gate e perfil jogador sem debug carregados; sem tentativas extras por falha HTTP. [Resultado](evidencias/mapa-mundial-pages/resultado.json) · [abertura](evidencias/mapa-mundial-pages/titulo-publico.png). O teste usa perfil Chrome isolado; não acessa saves pessoais nem simula aprovação do responsável.
+
+[Contratos e verificações locais](plugins/Arena_WorldMap.md#complemento-para-avaliação-pública--20112026): listas alfabéticas,273 localidades nomeadas/257 públicas, segredos só após descoberta; estado/motivo textual e símbolos distintos, seleção ponto/lista e rolagem, confirmação/cancelamento, viagens e retornos, save/load e retaliação protegida. Gate mínimo2 permanece com os mesmos arquivos/evidências já validados para níveis1/2, retomada e continuação; não repetir a dungeon para avaliar o mapa.
+
+### Roteiro curto de avaliação na campanha
+
+1. Carregar a partida pública. Na cidade, **Menu → Mapa mundial** ou **M**. Selecionar uma província por mouse ou teclado; conferir ordem alfabética e retornar a Tamriel com Esc.
+2. Em **Hammerfell**, rolar a lista até o fim. Selecionar um destino público sem conteúdo (por exemplo, **Sentinel**): deve aparecer **Indisponível**, com motivo no rodapé; Enter não inicia viagem. Local atual, destino disponível e bloqueado têm texto e símbolos diferentes.
+3. Após aceitar o pedido de Blubamka, **Stonekeep** aparece disponível. Selecionar seu ponto e conferir o mesmo nome/estado na lista. Cancelar primeiro; selecionar novamente e confirmar a viagem. Na dungeon, o mapa só permite consulta e orienta sair. Retornar pelo acesso normal à cidade.
+4. Depois da entrega legítima do pergaminho, **Fang Lair** aparece. Viajar pelo mapa e retornar pela saída normal. A posse do fragmento/etapa100 mantém visão e retaliação na saída; o mapa não permite contorná-las. O portão continua como alternativa pelo mesmo serviço.
+5. **Opcional**, somente com save anterior à saída de Imperial Dungeons: no nível1, Gate informa o mínimo2 e permite recuar; no nível2, saída/continuação normais. Quem já está em Rihad não precisa repetir esse trecho.
+
+O mapa vetorial atual é uma **versão funcional pendente de avaliação visual**. Fidelidade geográfica e visual ao Arena original permanece objetivo; arte definitiva pode aguardar esse feedback. Não declarar aprovação pela publicação. Dragon gate exterior, vagonetes, Servo definitivo e ilustrações mantêm suas dependências documentadas; esta entrega não gera assets nem resolve esses itens por associação.

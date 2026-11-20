@@ -1,0 +1,34 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "7597fd7de672132c866947a961ea335b5e874264",
+  "infraCommit": "44bb2271e72ae5d5b9f993c6270a12877924774c",
+  "workflow": "https://github.com/tjsp-lalecrim/Arena/actions/runs/44785403163",
+  "manifestSha256": "fcdc490cd51846a05aca7e5005268142f18ea27c5f1a5eb94ffff47384382f01",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 417,
+  "totalBytes": 55884173,
+  "browser": "157.0.8103.80",
+  "runtime": {
+    "places": 273,
+    "provinces": 9,
+    "statusApi": "function",
+    "plugin": "v0.3.0 Catálogo, identificação acessível e viagem de campanha",
+    "minimumGateLevel": 2,
+    "debug": false,
+    "namespace": "arena:m01:save-v1"
+  },
+  "retries": [],
+  "errors": [],
+  "checks": [
+    "Public manifest matches selected full source SHA and exact authorized hash",
+    "Every public runtime file matches size and SHA256",
+    "Fresh isolated Chrome opens title without errors; WorldMap catalogue/status API, Gate2 and player profile loaded"
+  ],
+  "limits": "Publication smoke only; local campaign/UI evidence reused. Manual and visual assessment pending. No personal save read, cleared or written.",
+  "workflowResult": {
+    "conclusion": "success",
+    "buildPlatform": "linux",
+    "deploy": "success",
+    "artifactBytes": 43032961
+  }
+}
