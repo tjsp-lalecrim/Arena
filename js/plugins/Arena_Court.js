@@ -14,8 +14,8 @@ var ArenaCourt;
  function here(){return $gameMap&&$gameMap.mapId()===cfg().entry.mapId;}
  function valid(i,mapId,eventId){var e=$gameMap.event(eventId);return !$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&ArenaNarrative.isCampaign()&&$gameMap.mapId()===mapId&&i instanceof Game_Interpreter&&i._mapId===mapId&&i.eventId()===eventId&&e&&!e._erased&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;}
  function transfer(i,from,eventId,to){if(!valid(i,from,eventId)||$gameMessage.isBusy()||ArenaQuests.snapshot('MQ02').stage<10)return false;$gameTemp.clearDestination();$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp._arenaCourtTravelFence=true;$gamePlayer.reserveTransfer(to.mapId,to.x,to.y,to.direction,0);return true;}
- function textCommands(texts,indent){var w=SceneManager._scene._messageWindow,list=[];w.resetFontSettings();texts.forEach(function(text){var lines=MVJournalModel.wrap(text,w.contentsWidth()-8,w.textWidth.bind(w));for(var n=0;n<lines.length;n+=4){list.push({code:101,indent:indent,parameters:['',0,0,2]});lines.slice(n,n+4).forEach(function(t){list.push({code:401,indent:indent,parameters:[t]});});}});return list;}
- function show(i,texts){var list=textCommands(texts,0);list.push({code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;}
+ function textCommands(texts,indent,portrait){var w=SceneManager._scene._messageWindow,list=[];w.resetFontSettings();texts.forEach(function(text){var lines=MVJournalModel.wrap(text,w.contentsWidth()-8-(portrait?168:0),w.textWidth.bind(w));for(var n=0;n<lines.length;n+=4){list.push({code:101,indent:indent,parameters:[portrait?cfg().faceName:'',portrait?cfg().faceIndex:0,0,2]});lines.slice(n,n+4).forEach(function(t){list.push({code:401,indent:indent,parameters:[t]});});}});return list;}
+ function show(i,texts){var list=textCommands(texts,0,here()&&i.eventId()===cfg().queenEventId);list.push({code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;}
  ArenaCourt={
   show:show,
   enter:function(i){var c=cfg();return transfer(i,c.exit.mapId,c.accessEventId,c.entry);},
@@ -26,11 +26,11 @@ var ArenaCourt;
    var q=ArenaQuests.snapshot('MQ02');
    if(q.stage<30)return show(i,$arenaCourt.notReady);
    if(q.stage!==30)return show(i,q.stage<50?$arenaCourt.pending:$arenaCourt.future);
-   var list=textCommands($arenaCourt.offer,0);
+   var list=textCommands($arenaCourt.offer,0,true);
    list.push({code:102,indent:0,parameters:[['Aceitar o pedido','Agora não'],1,1,2,0]},
     {code:402,indent:0,parameters:[0,'Aceitar o pedido']},{code:355,indent:1,parameters:['ArenaCourt.accept(this);']},
     {code:402,indent:0,parameters:[1,'Agora não']});
-   list=list.concat(textCommands($arenaCourt.decline,1));list.push({code:404,indent:0,parameters:[]},{code:0,indent:0,parameters:[]});
+   list=list.concat(textCommands($arenaCourt.decline,1,true));list.push({code:404,indent:0,parameters:[]},{code:0,indent:0,parameters:[]});
    i.setupChild(list,i.eventId());return true;
   },
   accept:function(i){
@@ -61,7 +61,7 @@ var ArenaCourt;
   createMap.apply(this,arguments);
  };
  var mapLoaded=Scene_Map.prototype.onMapLoaded;
- Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring()&&here()&&$gameMap.tilesetId()!==$dataMap.tilesetId)$gameMap.changeTileset($dataMap.tilesetId);if(!$gamePlayer.isTransferring()&&$gameMap.mapId()===cfg().exit.mapId)[cfg().accessEventId,cfg().doorEventId].forEach(function(id){if(!$gameMap.event(id)&&$dataMap.events[id])$gameMap._events[id]=new Game_Event($gameMap.mapId(),id);});mapLoaded.apply(this,arguments);};
+ Scene_Map.prototype.onMapLoaded=function(){if(!$gamePlayer.isTransferring()&&here()&&$gameMap.tilesetId()!==$dataMap.tilesetId)$gameMap.changeTileset($dataMap.tilesetId);if(!$gamePlayer.isTransferring()&&$gameMap.mapId()===cfg().exit.mapId)[cfg().accessEventId,cfg().doorEventId].forEach(function(id){if(!$gameMap.event(id)&&$dataMap.events[id])$gameMap._events[id]=new Game_Event($gameMap.mapId(),id);});mapLoaded.apply(this,arguments);if(here()){var e=$gameMap.event(cfg().queenEventId);if(e&&!e._erased)e.setImage(cfg().characterName,0);}};
  var choiceStart=Window_ChoiceList.prototype.start,choiceUpdate=Window_ChoiceList.prototype.update;
  Window_ChoiceList.prototype.start=function(){choiceStart.apply(this,arguments);if(here()){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
  // Keep the native subwindow active while fencing input: deactivation makes
@@ -78,9 +78,9 @@ var ArenaCourt;
  var canMove=Game_Player.prototype.canMove;
  Game_Player.prototype.canMove=function(){return !$gameTemp._arenaCourtTravelFence&&canMove.apply(this,arguments);};
  Scene_Map.prototype.createDisplayObjects=function(){display.apply(this,arguments);if(here()||$gameMap.mapId()===cfg().exit.mapId){this._courtLabels=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._courtLabels);}};
- Scene_Map.prototype.update=function(){update.apply(this,arguments);if($gameTemp._arenaCourtTravelFence&&!TouchInput.isPressed()&&!['ok','cancel','up','down','left','right'].some(function(k){return Input.isPressed(k);}))$gameTemp._arenaCourtTravelFence=false;if(!this._courtLabels)return;var b=this._courtLabels.bitmap;b.clear();if(here()){b.fillRect(0,0,b.width,72,'rgba(12,16,18,.92)');b.fontSize=23;b.textColor='#e1d2ae';b.drawText('Corte de Rihad — apresentação provisória',18,4,b.width-36,30);b.fontSize=17;b.drawText('Interior V01 · NPC provisório · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM':''),18,36,b.width-36,26);}
+ Scene_Map.prototype.update=function(){update.apply(this,arguments);if($gameTemp._arenaCourtTravelFence&&!TouchInput.isPressed()&&!['ok','cancel','up','down','left','right'].some(function(k){return Input.isPressed(k);}))$gameTemp._arenaCourtTravelFence=false;if(!this._courtLabels)return;var b=this._courtLabels.bitmap;b.clear();if(here()){b.fillRect(0,0,b.width,72,'rgba(12,16,18,.92)');b.fontSize=23;b.textColor='#e1d2ae';b.drawText('Corte de Rihad — apresentação provisória',18,4,b.width-36,30);b.fontSize=17;b.drawText('Interior V01 · Esc: menu'+(ArenaContinuation.labActive()?' · teste RAM':''),18,36,b.width-36,26);}
   var door=$gameMap.event(cfg().doorEventId);
-  var labels=here()?[[cfg().queenEventId,'Blubamka · provisório',-90],[cfg().exitEventId,'Sair para Rihad ↓',-24]].map(function(label){
+  var labels=here()?[[cfg().queenEventId,'Rainha Blubamka',-90],[cfg().exitEventId,'Sair para Rihad ↓',-24]].map(function(label){
    var e=$gameMap.event(label[0]);return [e.x,e.y,label[1],label[2]];
   }):door?[[$gameMap.event(cfg().accessEventId).x,door.y,'Corte ↓',-30]]:[];b.fontSize=18;b.textColor='#ead9b5';labels.forEach(function(p){var px=$gameMap.adjustX(p[0])*48+24,y=$gameMap.adjustY(p[1])*48+p[3];if(px<0||px>b.width||y<72||y>b.height-26)return;var x=Math.max(8,Math.min(b.width-248,px-120));b.fillRect(x,y,240,26,'rgba(12,16,18,.85)');b.drawText(p[2],x+4,y,232,26,'center');});this._courtLabels.visible=!$gameMessage.isBusy();
  };
