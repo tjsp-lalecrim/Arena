@@ -2,6 +2,8 @@
 
 ## Blubamka V01 — representação própria (20/11/2026)
 
+**Publicação posterior:** conjunto incluído na [prévia agrupada01f9915](PAGES_INFRA.md#prévia-agrupada-de-assets-do-m02--20112026), sem aprovação visual presumida.
+
 **Estado:** sprite de mapa e retrato integrados; avaliação visual adiada pelo responsável para a próxima prévia integrada no Pages. As avaliações recentes de assets continuam adiadas, sem aprovação presumida. Não foi produzida ilustração narrativa.
 
 | Evidência | Limite / adaptação |

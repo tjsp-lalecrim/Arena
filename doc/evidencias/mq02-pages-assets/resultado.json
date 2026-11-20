@@ -1,0 +1,53 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "01f9915657329d47c922a1d1c78583bb625d3698",
+  "infraCommit": "24b9460ed71a6cd485e7855731ce4d489a0d7b55",
+  "run": "https://github.com/tjsp-lalecrim/Arena/actions/runs/44708123431",
+  "manifestSha256": "5bfb33136283a9407f15905bdf1e176814758884f0cc12e5780ca320f85a51c9",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 408,
+  "totalBytes": 55301529,
+  "browser": "157.0.8103.80",
+  "presentation": {
+    "character": "$Arena_Blubamka_V01",
+    "face": "Arena_Blubamka_V01",
+    "lava": "Arena_Fang_Lava_V01_A1",
+    "debug": false,
+    "assets": [
+      [
+        "character",
+        "$Arena_Blubamka_V01"
+      ],
+      [
+        "face",
+        "Arena_Blubamka_V01"
+      ],
+      [
+        "tileset",
+        "Arena_Fang_Lava_V01_A1"
+      ],
+      [
+        "character",
+        "$Arena_ghost_float_v01"
+      ]
+    ]
+  },
+  "checks": [
+    "Public manifest exact SHA/hash",
+    "Every runtime file HTTP200, size and SHA256",
+    "Clean isolated Chrome title opening and asset decoding",
+    "Player package debug disabled"
+  ],
+  "errors": [],
+  "retries": [],
+  "previousAttempt": "HTTP503 for js/plugins/Arena_Skeleton.js; verification restarted serially; cause not determined.",
+  "limits": "Publication smoke only; no owner campaign, rest, persistence or visual approval inferred. No personal saves used.",
+  "workflow": {
+    "build": "success",
+    "deploy": "success",
+    "platform": "linux",
+    "artifactBytes": 42682216,
+    "artifactId": 14615588246,
+    "packagedTwiceIdentically": true
+  }
+}
