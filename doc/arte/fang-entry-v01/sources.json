@@ -1,0 +1,69 @@
+{
+  "originals": [
+    {
+      "name": "42068779.MIF",
+      "sha256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7"
+    },
+    {
+      "name": "FANG1.INF",
+      "sha256": "4693f2db924a07fb4c5868978d595ecf624467990b1ad59fedc9df6c1760190a"
+    },
+    {
+      "name": "FANG2.INF",
+      "sha256": "3f6e54169b7202e3565774686ad3cffd674dcf3805acaebfe264a84a5fd9bd7e"
+    },
+    {
+      "name": "MSU.IMG",
+      "sha256": "8944149e0f000791709c664ccfc1edb86019e31012eb95da9bb6269c45c7e6ce"
+    },
+    {
+      "name": "DGATE.IMG",
+      "sha256": "af3175cc34f488312b63ac70aadde7f34fad2aba07530253d7fcba6f44a0919e"
+    },
+    {
+      "name": "WDUNGDR1.IMG",
+      "sha256": "c840d9a52b1faee4cb169e1a86f21c73d10ef6fa5436a26b56eb069ee2eb467d"
+    },
+    {
+      "name": "WDUNGDR2.IMG",
+      "sha256": "bd417f021464ac4a800a00e94717962a78ba20408ce30f96dc75bba9671ec16e"
+    },
+    {
+      "name": "NCART1.IMG",
+      "sha256": "7c541b08e0507a1157cd1cdbfdf50f2e8573621295ff0f36e52ed57e4d0a2861"
+    },
+    {
+      "name": "NCART1.DFA",
+      "sha256": "ee5d15cb7cd96fc4d44c5891ae2e16c2065fad6c462525f7b32d95d766dbee65"
+    },
+    {
+      "name": "SCART1.IMG",
+      "sha256": "208ea6aa5a789456fae57408f23cce383446bc5c0903bdb523dbccd6cb7982df"
+    },
+    {
+      "name": "DWN.INF",
+      "sha256": "1f4cb7f7be594e384c70842405e21666043acadce2cc6c9b3bf60ccd71dba32a"
+    },
+    {
+      "name": "DCN.INF",
+      "sha256": "fed1752e7e417ff7ec89937c9252ebc8bcd3101d7ac80d49bc5cfe2de6e73d36"
+    },
+    {
+      "name": "PAL.COL",
+      "sha256": "e2ac903f3580024ed5a50b03066786a52d48558f2a326d898693803c9044641a"
+    }
+  ],
+  "wiki": "Local Arena_Fang Lair (quest), p3: dragon gate arrival text; trams/tracks explicitly dungeon dressing.",
+  "decoder": "Reused tmp/rihad-review/inspect.py and original-review readers; raw64x64 textures have no IMG header. Corrected consultation of MSU/WDUNGDR/MFLOORB/BRACE accordingly.",
+  "newOriginalGameObservation": false,
+  "mapping": "MIF zero-based(4,1), MSU tex21 0x1515. MV wall center(288,6), visual base(288,7); existing departure interaction Map013/event1(288,9) unchanged.",
+  "adaptations": [
+    "Only interior timber/ladder face reconstructed; no exterior dragon/head, opening leaf, climbing control or transport system.",
+    "Orthographic wall elevation, painterly finish and scale are project adaptations; source naming does not establish material lore."
+  ],
+  "uncertain": [
+    "No confirmed Fang-specific exterior binding of DGATE or wilderness WDUNGDR1/2.",
+    "No cart flat in either level; no MAP2 layer; adjacent raised-block candidates are not proven carts."
+  ],
+  "consultationFiles": "tmp/fang-final-props remains ignored; originals not copied into distributed runtime."
+}

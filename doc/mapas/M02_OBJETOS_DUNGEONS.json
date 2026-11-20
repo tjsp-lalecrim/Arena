@@ -5151,7 +5151,31 @@
           90
         ]
       ],
-      "excludedTracks": 218
+      "excludedTracks": 218,
+      "decorations": [
+        {
+          "id": "visual.fang.1.entry-face",
+          "eventId": 600,
+          "original": [
+            4,
+            1
+          ],
+          "origin": [
+            288,
+            7
+          ],
+          "raw": "0x1515",
+          "source": "MSU.IMG",
+          "direction": 2,
+          "file": "!$Arena_Fang_ExitFace_V01",
+          "kind": "static-interior-up-exit",
+          "interactionEventId": 1,
+          "interactionPosition": [
+            288,
+            9
+          ]
+        }
+      ]
     },
     {
       "level": 2,
@@ -5176,8 +5200,72 @@
     }
   ],
   "unresolved": {
-    "dragonGate": "Texto original confirma dragon gate; FANG1/2.INF não declaram DGATE.IMG. Saída inicial usa MSU.IMG em MAP1 (4,1). Nenhuma associação visual específica comprovada; não inventar símbolo/arquitetura.",
-    "carts": "FANG1/2.INF não declaram NCART1/SCART1. Wiki menciona trams, mas posição/representação nos blocos não confirmadas. Não distribuir um flat genérico por inferência."
+    "dragonGate": "Exterior dragon gate appearance remains unconfirmed. Interior ascending exit MSU.IMG at MIF(4,1) now has its own static face; interaction preserved at MV(288,9). Not a claim that DGATE.IMG is used here.",
+    "carts": "No cart flat identified in FANG1/2, no MAP2 layers. NCART/SCART are city resources with different vehicle silhouettes. Specific raised-volume candidates at MIF(87,21)/(88,21), near rail(88,20), require visual/box mapping confirmation before placement."
   },
-  "trackOrientation": "Floor texture UV axes differ from MIF array. Source neighbour audit selects N->W,E->S,S->E,W->N before reflected X projection; final source-image->MV is90deg clockwise. 1106 paired endpoints/58 terminal or unmatched endpoints in all original track cells. No geometrical connections added."
+  "trackOrientation": "Floor texture UV axes differ from MIF array. Source neighbour audit selects N->W,E->S,S->E,W->N before reflected X projection; final source-image->MV is90deg clockwise. 1106 paired endpoints/58 terminal or unmatched endpoints in all original track cells. No geometrical connections added.",
+  "entryAudit": {
+    "level": 1,
+    "original": [
+      4,
+      1
+    ],
+    "raw": "0x1515",
+    "resource": "MSU.IMG",
+    "interiorFaceConfirmed": true,
+    "exteriorDragonGateAppearanceConfirmed": false,
+    "exteriorCandidate": "WDUNGDR1/2 are generic wilderness MENU8/9 doors; no Fang-specific exterior binding confirmed. DGATE belongs to desert-city INF, not FANG1/2.",
+    "textSource": "TEMPLATE.DAT arrival and local UESP Fang Lair quest p3; descriptive dragon gate name, not image identification."
+  },
+  "cartAudit": {
+    "resourceLists": [
+      "FANG1.INF",
+      "FANG2.INF"
+    ],
+    "ncartsDeclaredInFang": false,
+    "ncartsDeclaredIn": [
+      "DCN/DCR/DCW",
+      "MCN/MCR/MCW",
+      "TCN/TCR/TCW"
+    ],
+    "scartsDeclaredIn": [
+      "MCS",
+      "TCS"
+    ],
+    "map2Present": false,
+    "cartFlatIdentified": false,
+    "candidates": [
+      {
+        "original": [
+          87,
+          21
+        ],
+        "word": "0x4065",
+        "floor": "0x0",
+        "nearTracks": [
+          [
+            88,
+            20
+          ]
+        ]
+      },
+      {
+        "original": [
+          88,
+          21
+        ],
+        "word": "0x5865",
+        "floor": "0x0",
+        "nearTracks": [
+          [
+            88,
+            20
+          ]
+        ]
+      }
+    ],
+    "doubt": "Are the raised volumes at(87,21)/(88,21) mine carts, rock/structures, or another prop? Need first-person observation or proven box-side/cap binding; adjacency to track(88,20) does not prove cart identity.",
+    "level2RaisedNearTrack": [],
+    "wikiFunction": "Decoration only; no player transport interaction."
+  }
 }
