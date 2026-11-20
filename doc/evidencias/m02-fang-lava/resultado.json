@@ -1,0 +1,92 @@
+{
+  "base": "e5d822e",
+  "browser": "157.0.8103.80",
+  "coverage": {
+    "sourceOpenCells": 210,
+    "animatedTiles": 1890,
+    "wallFaceTilesUpdated": 444,
+    "wallOverLavaCellsKept": 17
+  },
+  "checks": [
+    "Clean new-map boot, native A1 phases0/1/2 observed without timing override; lava blocked and not swimming; actual normal-speed recording",
+    "Old tileset7 serialized save resumes with11 and exact resources/quest/items/points/receipts/position; no namespace or personal-profile change",
+    "Native collision path stair->dry bank->staff and back; fragment collected once with both Hell Hounds alive; stage100/retaliation pending and upper-level return preserved",
+    "Same64x64 pool region captured in native renderer has three different phase hashes"
+  ],
+  "performanceBefore": {
+    "seconds": 8.0122,
+    "rafFPS": 60.033448990289806,
+    "engineFPS": 60.033448990289806,
+    "medianMs": 16.69999999999891,
+    "p95Ms": 16.900000000001455,
+    "maxMs": 17.100000000000364,
+    "phases": [
+      0,
+      1,
+      2
+    ],
+    "jsHeap": {
+      "used": 37453897,
+      "total": 57679881
+    },
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1050 Ti (0x00001C8C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "canvas": [
+      816,
+      624
+    ],
+    "viewport": [
+      1050,
+      850
+    ]
+  },
+  "performanceAfter": {
+    "seconds": 8.002500000071526,
+    "rafFPS": 60.106216806710506,
+    "engineFPS": 60.106216806710506,
+    "medianMs": 16.69999999999891,
+    "p95Ms": 16.900000000001455,
+    "maxMs": 17,
+    "phases": [
+      0,
+      1,
+      2
+    ],
+    "jsHeap": {
+      "used": 24891434,
+      "total": 54747050
+    },
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce GTX 1050 Ti (0x00001C8C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "canvas": [
+      816,
+      624
+    ],
+    "viewport": [
+      1050,
+      850
+    ]
+  },
+  "performanceLimits": "Headless Chrome,8s window after2s warmup, same bank/viewport. Baseline only routes Map017 to prior geometry for comparison; candidate unmocked. RAF/JS heap are not GPU/OS memory or physical-device guarantees. Recording separate from performance window.",
+  "errors": [],
+  "missing": [],
+  "storage": "Disposable Chrome profile, synthetic native slot19. No personal data.",
+  "pending": [
+    "Owner visual evaluation in integrated MQ02",
+    "Lava island route/risk/protection and ghoul encounters remain pending",
+    "No Pages/release or general gameplay benchmark"
+  ],
+  "renderedPhases": [
+    {
+      "phase": 0,
+      "sha256": "ebee394e41386893e365bab36916668522c516e325de348f1a7a593998e75687"
+    },
+    {
+      "phase": 1,
+      "sha256": "c460524e7c686342391204d659b85cef3a21941e006495d4bcac6f750fa25daf"
+    },
+    {
+      "phase": 2,
+      "sha256": "c1ae5db19ef6110a53cd834b30a09fcffc5a15a829079b5cf7bd2435a5d2707b"
+    }
+  ],
+  "fixture": "Synthetic MQ02 stage90 with key/portal receipt prepared by existing persistence APIs. Collision route uses native canPass and controlled movement advancement; performance and video run at normal engine speed. No full campaign or personal save loaded."
+}
