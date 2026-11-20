@@ -1,0 +1,58 @@
+[
+  {
+    "path": "art/masters/m02-scenery-v01/panels-source.png",
+    "size": [
+      2172,
+      724
+    ],
+    "sha256": "c0d7ef213d775f620ed2ebd28c23a954c88fef8115fe041103c5dbbcdae7450a"
+  },
+  {
+    "path": "art/masters/m02-scenery-v01/quest-source.png",
+    "size": [
+      2172,
+      724
+    ],
+    "sha256": "7649d0fc6357a116b37856083b7eaae787e21997391ac9f756649eef2bc84aba"
+  },
+  {
+    "path": "art/masters/m02-scenery-v01/urban-source.png",
+    "size": [
+      1268,
+      1240
+    ],
+    "sha256": "61fcb89d5639f502ce4ca4947570c28517d25e141b5970f81c647039a6c1e706"
+  },
+  {
+    "path": "img/tilesets/Arena_M02_Scenery_V01_E.png",
+    "size": [
+      384,
+      768
+    ],
+    "sha256": "d5bd2a789259e53890f07d2226734c59f12b122a4f56153f0421bfe8323b8cb0"
+  },
+  {
+    "path": "img/characters/!$Arena_QuestObjects_V01.png",
+    "size": [
+      144,
+      192
+    ],
+    "sha256": "74c17732e209523c11eb11b916c9e4381aa445dac1a014210a2b87a7be2dcf0e"
+  },
+  {
+    "path": "img/characters/!$Arena_Rihad_Fountain_Reuse_V01.png",
+    "size": [
+      288,
+      576
+    ],
+    "sha256": "ac65be9c6c34810d47b2df07ec77ed9d0078086d5b8da8f90f8c1374d6d7389b"
+  },
+  {
+    "path": "img/characters/!Arena_Rihad_Props_V01.png",
+    "size": [
+      1152,
+      1152
+    ],
+    "sha256": "2cb042949f9e3ddc8722c1dcf58e7321b9ff826e8bd8b70e52e4174c18c9d948"
+  }
+]

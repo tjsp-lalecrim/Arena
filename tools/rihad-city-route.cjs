@@ -115,6 +115,7 @@ function build(map, config, recovery) {
         note: 'M02: CITYW1 e 32 quarteirões; superfícies DCN do atlas exterior V01.',
     });
     require('./build-rihad-inn.cjs')(map, config, recovery);
+    require('./m02-scenery.cjs').urban(map);
     fs.writeFileSync(path.join(root, 'data/ArenaRecovery.json'), JSON.stringify(recovery, null, 2) + '\n');
 }
 

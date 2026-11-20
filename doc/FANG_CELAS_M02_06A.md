@@ -1,5 +1,26 @@
 # Fang Lair — amostra funcional das celas (M02-06A)
 
+## Cenário confirmado V01 — 20/11/2026
+
+**Produzido e integrado, avaliação visual pendente no próximo teste de MQ02.** Três folhas geradas: dois painéis de Stonekeep, oito adereços urbanos e três objetos de missão. Mestres em `art/masters/m02-scenery-v01`; [prompts](arte/m02-scenery-v01/prompts.json), [fontes/hashes/adaptações](arte/m02-scenery-v01/sources.json), [exportações](arte/m02-scenery-v01/exports.json) e [ocorrências](mapas/M02_CENARIO_CONFIRMADO_V01.json). Originais consultados em modo somente leitura; extrações ignoradas em `tmp/m02-scenery`, fora do pacote. Não houve nova observação de partida DOS.
+
+| Aplicação atual | Evidência e adaptação |
+| --- | --- |
+|94 módulos de painéis,564tiles de sobreposição em Map015 | CASF.SET#3 e CASK.SET#2 identificados por índice STKEEP1.INF/MAP1, original90×90 completo. Somente faces sul já visíveis da representação ortogonal;770células-fonte incluem outras faces/volumes cobertos. Não foi criada parede/colisão para mostrar ornamento. Tecidos e formas coloridas são estilizações dos motivos originais, não transcrição de inscrições ou atribuição de significado heráldico |
+|1.431tiles de carpete em Map015 | REDRUG/FLOR8: **reuso exato** das nove peças do tapete vermelho dos interiores; bordas escolhidas por vizinhança. Das164células-fonte, limiares/volumes que não são piso região4 ficam intactos |
+|117adereços em Map009 | MAP1 composto de Rihad + DCN.INF:7poços NWELL1/2,46cactos CACTUS1–3,39palmeiras PALM1–3,25fontes NFOUNT1D. Oito desenhos gerados; fonte **reutiliza** os pixels do objeto dos interiores. Projeção/escala, orientação fixa dos antigos billboards e fonte estática são adaptações; não há orientação cardinal canônica inferida da imagem frontal. Eventos decorativos sem ação, através, sem novos bloqueios; nenhum coincide com âncora de evento de campanha |
+|Pergaminho, chave dourada, duas chaves de latão e fragmento | PARCHFLT.IMG/ITEM13 de Stonekeep, KEY.IMG de Fang e CHAOS1.DFA/ITEM13. A chave de rubi legada tem pedra vermelha, por isso foi preservada e não usada para substituir a chave dourada. O fragmento é uma composição **estática** da peça/aura vermelha, não uma nova animação ou o Cajado completo. Aparência/consumo do item e estados das fontes continuam separados |
+
+Exportar com `python tools/export-m02-scenery.py` (Pillow), depois `node tools/build-rihad-arrival.cjs`. Recorte usa o envelope alpha≥16 para evitar margens quase invisíveis, mantendo a alfa do conteúdo, escala proporcional e apoio. Folha urbana tem células96×144 (módulos48px), oito posições nativas; as poses estáticas frontais são repetidas nas três colunas, sem fingir caminhada. Painéis são independentes da alvenaria; não há piso incorporado aos objetos. O atlas E é dedicado ao tileset de Stonekeep e mantém os demais materiais. Map012 técnico permanece como referência histórica.
+
+`Arena_Scenery` usa `ArenaScenery.json`, gerado do contrato versionado. Fontes/recibos existentes decidem visibilidade, sem conceder itens ou recompensas. Chaves de latão preservam páginas/switches B/A. Saves antigos da cidade recebem os adereços ausentes antes dos sprites, uma vez; saves com item coletado/entregue não o fazem reaparecer. Não há namespace novo, migração de inventário, alteração de itens/receitas ou nova interação de poço/fonte.
+
+**Verificação focal:** comparação dos quatro bits nativos de colisão em todos os tiles e das regiões/eventos preexistentes de Map009/015/013/017; snapshot antigo da cidade, salvar/carregar, coleta única e ocultação persistente dos três objetos de missão, audiência/entrega e retomada sem duplicação. [Resultado](evidencias/m02-cenario-v01/resultado.json). Capturas: [poço](evidencias/m02-cenario-v01/rihad-poco.png), [palmeira](evidencias/m02-cenario-v01/rihad-palmeira.png), [fonte reutilizada](evidencias/m02-cenario-v01/rihad-fonte.png), [CASF](evidencias/m02-cenario-v01/stonekeep-painel-casf.png), [CASK](evidencias/m02-cenario-v01/stonekeep-painel-cask.png), [carpete reutilizado](evidencias/m02-cenario-v01/stonekeep-carpete.png), [pergaminho](evidencias/m02-cenario-v01/stonekeep-pergaminho.png), [chave](evidencias/m02-cenario-v01/fang-chave.png), [fragmento](evidencias/m02-cenario-v01/fang-fragmento.png). Partidas sintéticas/Chrome isolado; sem percurso inteiro ou saves pessoais.
+
+**Avaliação agrupada:** em Rihad observar escala dos poços/cactos/palmeiras e passagem junto aos objetos; em Stonekeep conferir painéis/carpetes e coleta do pergaminho; em Fang conferir a chave e a peça, coleta e ausência após carregar. Usar o roteiro normal já existente e os acessos RAM atuais, sem outro comando de debug. Aprovação artística não presumida. Pages e release não atualizados.
+
+**Continuam separados:** costa e outros detalhes sem ocorrência/material fechado; dragon gate, vagonetes e Servo definitivo com dependências de referência/decisão; ilustrações narrativas por bloco, dependentes de orientação do responsável. Painéis/carpetes/adereços acima e os três objetos não são mais produção ausente. Revisão de aranha/título permanece em qualidade.
+
 ## Inventário auditado de assets do M02 — 20/11/2026
 
 Conferência de arquivos, configurações e ocorrências, sem geração nem aprovação visual nova. **Não são mais pendências de produção:**
@@ -15,12 +36,12 @@ Conferência de arquivos, configurações e ocorrências, sem geração nem apro
 
 **O que ainda demanda arte ou decisão antes de gerar:**
 
-| Candidato restante | Evidência / estado da referência | Próxima ação de arte, sem produção nesta tarefa |
+| Item do inventário | Evidência / estado da referência | Situação após cenário V01 |
 | --- | --- | --- |
-| Painéis ornamentados de Stonekeep | `CASF.SET#3` confirmado; `STONEKEEP_MATERIAIS_M02.json` usa base castanha sem ornamento e `stonekeep-sector-a2e.cjs` mantém esse contrato | Amostra própria do painel após conferir suas ocorrências no mapa integral; não inventar significado heráldico. Demais decoração não vira requisito por associação |
-| Carpete REDRUG de Stonekeep | Recurso confirmado; trechos ainda usam piso de suporte | Conferir reuso do tapete vermelho já produzido para Rihad antes de contar como geração. Aplicação/adaptação pode bastar; não é outro atlas inteiro obrigatório |
-| Costa e adereços específicos de Rihad | SEAWALLD/NWELL/PALM/CACTUS e demais famílias declaradas em DCN, inventário urbano existente | Costa pode adaptar água/margem existentes; flora/poço próprios apenas onde a ocorrência exigir. Fonte/brazeiro já produzidos nos interiores podem ser reutilizados quando compatíveis; fechar distribuição/reuso antes de fixar contagem de novos desenhos |
-| Objetos de missão no mapa | Pergaminho Map015/evento2, chave Map013/evento3 e fragmento Map017/evento5 usam eventos sem imagem de personagem e apresentação funcional por marcadores | Representações próprias ainda não entregues. Conferir a imagem original específica e escala antes de gerar; preservação dos itens/IDs não depende da troca visual |
+| Painéis ornamentados de Stonekeep | `CASF.SET#3` confirmado; `STONEKEEP_MATERIAIS_M02.json` usa base castanha sem ornamento e `stonekeep-sector-a2e.cjs` mantém esse contrato | **Entregue** CASF#3 e CASK#2 nas94faces representáveis acima; demais decoração exige ocorrência/fonte própria |
+| Carpete REDRUG de Stonekeep | Recurso confirmado; trechos ainda usam piso de suporte | **Reutilizado e aplicado** em1.431tiles; não exige nova geração |
+| Costa e adereços específicos de Rihad | SEAWALLD/NWELL/PALM/CACTUS e demais famílias declaradas em DCN, inventário urbano existente | 117ocorrências de poço/cacto/palmeira/fonte atendidas; fonte reutilizada. Costa e outros objetos continuam separados, sem duplicar os já produzidos |
+| Objetos de missão no mapa | Pergaminho Map015/evento2, chave Map013/evento3 e fragmento Map017/evento5 usam eventos sem imagem de personagem e apresentação funcional por marcadores | **Entregues** conforme PARCHFLT/KEY/CHAOS1; fontes e IDs preservados, sem nova pendência de geração desses três objetos |
 | Dragon gate | Nome confirmado no texto, mas FANG1/2 não declaram DGATE; saída existente associada a MSU.IMG em(4,1) | **Investigar vínculo visual**, não prometer DGATE.IMG como identificação confirmada. Nenhuma geração autorizada por semelhança de nome |
 | Vagonetes | Wiki cita trams; NCART1/SCART1 não associados às ocorrências dos blocos atuais | **Confirmar recurso/posição**. Trilhos e suportes já estão entregues; não confundir com vagonete produzido |
 | Servo de Tharn definitivo | `ArenaFangCells.json.retaliation.encounter`: enemy4/troop5, **esqueleto existente** apresentado como Servo. Identidade da espécie não estabelecida por TEMPLATE#1392/wiki | Escolha provisória funcional autorizada; identificação ou orientação artística antes de criar conjunto próprio. Não contar como12ªespécie original confirmada |

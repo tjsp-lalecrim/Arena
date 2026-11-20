@@ -6,7 +6,7 @@ O Map009 usa um atlas dedicado ao percurso portão → esplanada → corte e aos
 
 | Reuso | Módulos que faltam |
 | --- | --- |
-| Blubamka V01 (sprite/retrato) e cama E preservados; pousada e corte usam os [interiores V01](#interiores-v01-e-correção-da-cama--19112026), com pisos, paredes, caps, molduras, tapete, degraus e mobiliário. | Costa e flora/objetos específicos ainda requerem reuso/ocorrências. Os conjuntos entregues têm avaliação visual pendente; isso não é falta de produção. |
+| Blubamka V01 (sprite/retrato) e cama E preservados; pousada e corte usam os [interiores V01](#interiores-v01-e-correção-da-cama--19112026), com pisos, paredes, caps, molduras, tapete, degraus e mobiliário. | Poços, cactos, palmeiras e fontes têm117ocorrências atendidas no [cenário V01](FANG_CELAS_M02_06A.md#cenário-confirmado-v01--20112026); costa e outros objetos permanecem separados. Avaliação visual não equivale a produção ausente. |
 
 **Exportação.** Na raiz, execute `python tools/export-m02-surface-atlas.py rihad` com Pillow e depois `node tools/build-rihad-arrival.cjs`. O exportador monta um C nativo com células de 48 px, pisos em período 2×2, coroamento e duas fileiras de face. O gerador mantém B e A1 do tileset-base e reaproveita seus módulos de repouso. [Mestre, prompt e fontes](arte/m02-tilesets/sources-rihad.json) · [Peças, hash e exportação](arte/m02-tilesets/exports-rihad.json) · [Matriz de atribuição](mapas/RIHAD_MATERIAIS_M02.json).
 
@@ -155,7 +155,7 @@ No primeiro carregamento de um save da antiga esplanada, o jogo retoma no portã
 | 2. Fachadas, coberturas e vãos comuns · prioridade alta | DMBS1–3, DMEQUIP, DMTAVERN, DMMUGUIL, DMTEMPLE, DMNOBLE, NHEDGED, GARDENGD | **Entregue** no atlas exterior V01: famílias de fachada, cantos, sebes/arcos, portas e sinalização aplicados |
 | 3. Muralha, portão e fachada da corte | CITYWALD, DLGTD, DRGTD, DGATE, BK01/02PALD | **Entregue** na composição urbana V01; não confundir o recurso DGATE urbano com o vínculo ainda não comprovado de dragon gate em Fang Lair |
 | 4. Costa e transições | SEAWALLD, FLOR 13 | **Adaptar** a superfície existente `Arena_Water_M14_R02_A1` e conferir margem/porto antes de escolher o acabamento |
-| 5. Adereços urbanos e flora | NLAMP1, NWELL, NFOUNT, CACTUS, PALM | **Mista**. Reusar vasos, luzes e pedra onde houver equivalência. Poço, fonte, palmeira e cacto exigem desenho próprio quando necessários ao setor |
+| 5. Adereços urbanos e flora | NLAMP1, NWELL, NFOUNT, CACTUS, PALM | **Entregues** poços/cactos/palmeiras e fonte reutilizada nas117ocorrências; demais objetos exigem conferência específica, sem regenerar estes conjuntos |
 | 6. Interior obrigatório da corte | `PALACE2.MIF` / `CASTLE.INF` | **Entregue**: interiores C/D, trono/ornamentos e Blubamka V01. Ver [inventário auditado](FANG_CELAS_M02_06A.md#inventário-auditado-de-assets-do-m02--20112026); sem pendência de novo conjunto completo |
 
 **Contagem vigente.** Seis famílias urbanas: exterior C e interiores C/D já produzidos; Blubamka tem sprite/retrato próprios. Costa/adereços restantes requerem fechar reuso/ocorrências antes de fixar novas gerações. Ilustrações narrativas permanecem vinculadas aos blocos. Avaliação visual pendente não equivale a asset ausente.
