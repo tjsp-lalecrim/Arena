@@ -1,0 +1,16 @@
+{
+  "master": "art/masters/fang-entry-v01/entry-source.png",
+  "masterSha256": "c8d104ad3147ffb23452db8df822c7c42132977bd38f49dcff1089774fc8acae",
+  "runtime": "img/characters/!$Arena_Fang_ExitFace_V01.png",
+  "sha256": "08e32eb71e2a28f4264011604bf7e5cff204de546b233bb7d44791b7e6c7ea81",
+  "size": [
+    432,
+    576
+  ],
+  "cell": [
+    144,
+    144
+  ],
+  "ground": 142,
+  "mode": "One static prop repeated in native cells, no animated door or climb mechanic"
+}

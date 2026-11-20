@@ -1,0 +1,26 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Tile/region/tileset data and every preexisting event preserved on Maps9/13/15/17",
+    "Native gate travel from Rihad reaches unchanged entry, static face at confirmed inner wall",
+    "Exit, approach and side collisions unchanged; native action returns to Rihad without actor/loot/quest/narrative changes",
+    "Legacy normal save19 appends visual decoration once; repeated reload has no duplicate",
+    "Parent generator reconstructs maps and runtime bindings identically"
+  ],
+  "shape": {
+    "art": "!$Arena_Fang_ExitFace_V01",
+    "origin": [
+      288,
+      7
+    ],
+    "through": true,
+    "priority": 1,
+    "exit": [
+      288,
+      9
+    ],
+    "exitScript": "ArenaFangCells.leave(this);"
+  },
+  "errors": [],
+  "limits": "Isolated synthetic normal save19, quest delivery preconditions prepared with existing source/receipt APIs. No full quest replay, original DOS observation, personal save, mobile or Pages test."
+}

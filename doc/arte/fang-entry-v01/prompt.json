@@ -1,0 +1,10 @@
+{
+  "prompt": "Produce ONE isolated game prop on TRUE TRANSPARENT background for The Elder Scrolls Arena Fang Lair, faithful to supplied MSU.IMG source. This is the CONFIRMED INTERIOR ASCENDING EXIT/LADDER, NOT an invented dragon-shaped exterior gate. A broad rough dark red-brown timber doorway lintel and two vertical posts, with short angular braces, inside an old abandoned mine; two slender dark vertical ladder rails and weathered brown/golden horizontal rungs recede upward into the opening. Use only timber framework and ladder; no surrounding rock rectangle, no embedded floor/ground, no pedestal, no text, no glowing portal, no dragon, no invented heraldry, no opening door leaf. Background and negative space inside aperture must have real alpha. Match proportions/color identity of original source: square heavy wood surround, relatively narrow ladder in central opening, dark iron fastenings restrained. Orthographic wall-face elevation for an overhead 48px grid RPG, straight horizontal lintel and upright posts, readable upper surfaces subtly from high camera, NOT isometric or first person tunnel perspective. Dark fantasy detailed hand-painted finish matching existing mine/wood art, visible wood grain and wear, sufficient contrast against dark rock. Entire object comfortably inside canvas, generous margins, approximately square to slightly tall 3x3 tiles on final export, stable bottom anchor, no cropped posts or rungs. ONE composition only, no variants, no tile atlas, no characters.",
+  "references": [
+    {
+      "path": "tmp/fang-final-props/MSU.IMG.png",
+      "role": "Original interior exit face, extracted raw64x64/PAL.COL; not evidence of exterior dragon gate."
+    }
+  ],
+  "method": "ImageGen nativo; true alpha. Proportional crop/scale and static native-sheet packing only."
+}
