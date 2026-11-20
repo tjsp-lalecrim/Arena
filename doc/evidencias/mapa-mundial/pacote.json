@@ -1,0 +1,15 @@
+{
+  "platform": "win32",
+  "sourceCommit": "260ee82c58ad3da4fdbbac3c767931bc2ff3ed26",
+  "testVersion": "m01-rc1",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 417,
+  "totalBytes": 55934746,
+  "manifestSha256": "54e955a041a536cbeca2e72f7a0ccf32824b8ce8ccc8d562476af07470f92c80",
+  "checks": [
+    "exact inventory; runtime paths only; no symlinks/saves/references",
+    "SHA-256/size of every file",
+    "path capitalization/collisions; HTML/CSS relative resources",
+    "canonical plugins registry, referenced plugin files, stable namespace"
+  ]
+}

@@ -1,5 +1,9 @@
 # Estado operacional do M02 — cobertura completa
 
+**Mapa mundial e viagem rápida — fonte funcional260ee82:** [entrega de campanha, serviço comum ao portão e roteiro](plugins/Arena_WorldMap.md). Nove províncias representadas, destinos Rihad/Stonekeep/Fang Lair sujeitos à descoberta; consulta em interiores, sem bypass da retaliação. Avaliação manual/visual pendente. Viagem mantém a elipse sem custo/cura/tempo adicional; sem novas áreas ou fechamento de MQ02.
+
+**Feedback atual:** responsável confirmou apresentação bem-sucedida da visão de Ria; [cobertura exata](VISAO_RIA_M02_03C.md). Não atribuir nova confirmação de persistência.
+
 **Prévia pública atual:** [cenários e entrada interna, fonte 2c53bd0](PAGES_INFRA.md#prévia-de-cenários-e-entrada-interna-do-m02--20112026). Avaliação manual/visual pendente pelo roteiro agrupado; dragon gate exterior e vagonetes seguem incertos, sem produção ou integração presumida. Release no fechamento.
 
 **Entrada de Fang Lair:** [face interna MSU integrada e investigação delimitada](FANG_CELAS_M02_06A.md#entrada-interna-e-investigação-de-vagonetes--20112026). Exterior dragon gate e vagonetes permanecem incertos; candidatos nos volumes(87,21)/(88,21) registrados, sem geração/colocação por suposição. Avaliação visual agrupada; Pages e release separados.

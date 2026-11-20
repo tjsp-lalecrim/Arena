@@ -1,3 +1,7 @@
+## Mapa mundial e viagem de campanha — vigente
+
+Arena_WorldMap0.1.0 após os provedores de campanha: menu/tecla M, nove províncias, locais conhecidos e serviço comum ao portão. Consulta em interiores, sem contornar saída/Tharn. Dados vetoriais/estado versionado, namespace web preservado. [Contrato, fontes e validação](plugins/Arena_WorldMap.md).
+
 ## Homem-lagarto M02 — caminhada e exemplar RAM
 
 Arena_LizardPatrol0.1.0: Enemy3/Troop3/batalha R03 preservados;12poses, uma área de inspeção privada no Map016 reutilizado. Sem distribuição de campanha; EXP/loot normais restaurados fora do contexto. [Contrato](plugins/Arena_LizardPatrol.md), [fontes/arte/testes](HOMEM_LAGARTO_M02.md).
