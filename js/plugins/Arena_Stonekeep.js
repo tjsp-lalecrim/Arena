@@ -68,8 +68,6 @@ var ArenaStonekeep;
  DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!registered){validateBindings();ArenaDungeon.registerSwimming(c().mapId,c().swimming);registered=true;}return true;};
  var destination=ArenaCourt.destination;
  ArenaCourt.destination=function(){var d=destination();if(window.$arenaStonekeep&&ArenaCampaignConfig.area(c().areaId).ok)d.available=d.known;return d.available?{id:d.id,known:d.known,available:true}:d;};
- var notice=ArenaRihad.arrivalNotice;
- ArenaRihad.arrivalNotice=function(i){if(window.ArenaFangCells&&ArenaFangCells.destination().available)return ArenaFangCells.offerTravel(i);return ArenaStonekeep.known()?ArenaStonekeep.offer(i):notice.apply(this,arguments);};
  var choice=Window_ChoiceList.prototype.start;
  Window_ChoiceList.prototype.start=function(){choice.apply(this,arguments);if($gameMap.mapId()===c().return.mapId&&$gameMap._interpreter.eventId()===c().travelEventId){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
  var terminate=Window_Message.prototype.terminateMessage;

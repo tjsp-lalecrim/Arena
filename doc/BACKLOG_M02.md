@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Progressão inicial de Rihad:** [acesso explícito aos Arredores pelo portão e orientação da cama no nível1](ARREDORES_RIHAD_M02_03B.md#acesso-vigente-pela-campanha--20112026). Cama funcionando relatada; nível1 é hipótese do responsável, sem confirmação de falha narrativa. Exploração livre de outras dungeons fica como possibilidade futura para avaliação, sem implementação autorizada neste recorte.
+
 **Prévia agrupada de assets (20/11/2026).** Publicação manual da fonte `01f9915`: [execução e roteiro agrupado](PAGES_INFRA.md#prévia-agrupada-de-assets-do-m02--20112026). Fantasma, objetos, lava e Blubamka disponíveis para avaliação, sem aprovação presumida. Fantasma permanece sem acesso de campanha confirmado; release e fechamento do marco continuam separados.
 
 **Diretriz técnica vigente:** navegador desktop principal; código/dados/geradores oficiais; editor opcional, sem compatibilidade obrigatória. Runtime MV/módulos mantidos; capacidade necessária a mapas completos/contínuos autorizada com inspeção, testes e impactos documentados, sem troca de motor/refatoração geral. [Fluxo](DESENVOLVIMENTO_E_VERSIONAMENTO.md), [execução local única](EXECUCAO_LOCAL.md).

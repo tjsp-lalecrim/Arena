@@ -67,7 +67,11 @@ var ArenaEncounters;
             ensure(c);var a=area(c),q=ArenaPersistence.snapshot().quests[c.completionQuestId];
             a.completed=a.completed||!!(q&&q.completed);
             var all={};c.entries.forEach(function(v){all[v.id]=state(v);});
-            var next=MVEncounterRules.exit(a,all);storeArea(next.area,c);
+            // Narrow configured recovery: no automatic EXP; reuse ordinary generation
+            // after exhaustion below the required level. Never erase old receipts.
+            var recovery=Number.isInteger(c.progressionFloor)&&$gameActors.actor(1).level<c.progressionFloor&&c.entries.length>0&&c.entries.every(function(v){return !v.questSpecific&&all[v.id].defeated;})&&!a.completed;
+            var input=Object.assign({},a,{completed:a.completed||recovery});
+            var next=MVEncounterRules.exit(input,all);if(recovery)next.area.completed=a.completed;storeArea(next.area,c);
             Object.keys(next.enemies).forEach(function(id){var v=next.enemies[id];ArenaPersistence.setEnemy(id,v.areaId,v.questSpecific,v.defeated,v.generation);});
         },
         startLab:function() { ArenaDungeon.startLab();$gameSystem._arenaEncounterTechnical=true;$gamePlayer.reserveTransfer($arenaEncounters.mapId,35,16,6,0); },
