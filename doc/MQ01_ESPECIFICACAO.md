@@ -1,5 +1,12 @@
 ## Vigência R02
 
+## Adaptação provisória do Shift Gate — 20/11/2026
+
+`ArenaQuests.json.minimumGateLevel=2`. O ponto efetivo `ArenaQuests.reachGate()` testa o nível antes de qualquer conclusão de MQ01, área ou narrativa. No nível1 mostra o requisito e permite recuar/explorar; no nível2 mantém o fluxo normal. Retomar dentro dos contatos do Gate repete apenas a orientação, não altera estados. Saves ending/ended já concluídos e partidas em Rihad permanecem válidos, sem regressão ou namespace novo.
+
+Regressão em Chrome isolado: nível1, bloqueio/retomada preservando estados, quatro vitórias reais (60EXP), nível2/conclusão única, save/load do encerramento e continuação normal a Rihad. Auditoria do componente acessível ao Gate:61encontros/1.185EXP disponíveis na fixture pré-Gate, limiar50EXP. Saves coerentes preservam EXP e derrotas; os combates necessários continuam disponíveis ou já concederam a EXP. Sem evidência de bloqueio permanente, não foram alterados recompensas, curvas ou respawn. Os Arredores continuam acessíveis, inclusive a chegadas legadas no nível1. [Resultado](evidencias/m02-gate-nivel2/resultado.json). Personais não carregados. Configuração é fonte do gerador `build-quests.cjs`; a tag m01 não foi alterada.
+
+
 Textos executados: seção Texto vigente — M01-18 R02 ao final deste documento. Introdução/Ria anteriores são histórico. Ver REVISAO_INTEGRACAO_M01_18_R02.md e LOCALIZACAO_E_GLOSSARIO.md para mudanças e fontes.
 
 ## Integração M01-18

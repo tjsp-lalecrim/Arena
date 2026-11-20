@@ -1,5 +1,34 @@
 # Fang Lair — amostra funcional das celas (M02-06A)
 
+## Inventário auditado de assets do M02 — 20/11/2026
+
+Conferência de arquivos, configurações e ocorrências, sem geração nem aprovação visual nova. **Não são mais pendências de produção:**
+
+| Entregue / ocorrências atuais | Arquivos / contrato conferidos | O que permanece separado |
+| --- | --- | --- |
+| Pousada e corte | Map018/tileset9 e Map011/tileset10 usam `Arena_Rihad_Interiors_V01_C/D`; cama E reutilizada; pisos, paredes, tetos, molduras, tapetes, degraus, mesas/balcão, trono e ornamentos em `RIHAD_INTERIORES_EXPORTS_V01.json` | Avaliação integrada; ornamentos geométricos são interpretação, não heráldica confirmada. Não pedir novamente um atlas interior completo |
+| Blubamka | Evento2 de Map011, `$Arena_Blubamka_V01` e retrato `Arena_Blubamka_V01` | Avaliação visual, sem ilustrações narrativas produzidas por consequência |
+| Fantasma | `$Arena_ghost_float_v01` e `Arena_Combat_ghost_v01`, configuração e exemplar RAM | Câmara MIF(3,49) ainda sem acesso comprovado; isto é dependência de geometria, **não falta de combate/patrulha** |
+| Hell Hound | Dois encontros Map017(90,66)/(84,66), sprite e atlas lateral existentes | Avaliação visual/balanceamento; não são bloqueio de coleta do fragmento |
+| Lava | Map017/tileset11, `Arena_Fang_Lava_V01_A1`,3fases | Ilha/rota e risco/proteção ainda pendentes, não textura ou animação |
+| Grades/portais/estruturas | Contrato `M02_OBJETOS_DUNGEONS.json`:12grades de Stonekeep; Fang13 com12portas (11grades+portal),24suportes e364células de trilho; Fang17 com1portal | Outras ocorrências dependem da cobertura dos mapas, não de regenerar o conjunto disponível |
+
+**O que ainda demanda arte ou decisão antes de gerar:**
+
+| Candidato restante | Evidência / estado da referência | Próxima ação de arte, sem produção nesta tarefa |
+| --- | --- | --- |
+| Painéis ornamentados de Stonekeep | `CASF.SET#3` confirmado; `STONEKEEP_MATERIAIS_M02.json` usa base castanha sem ornamento e `stonekeep-sector-a2e.cjs` mantém esse contrato | Amostra própria do painel após conferir suas ocorrências no mapa integral; não inventar significado heráldico. Demais decoração não vira requisito por associação |
+| Carpete REDRUG de Stonekeep | Recurso confirmado; trechos ainda usam piso de suporte | Conferir reuso do tapete vermelho já produzido para Rihad antes de contar como geração. Aplicação/adaptação pode bastar; não é outro atlas inteiro obrigatório |
+| Costa e adereços específicos de Rihad | SEAWALLD/NWELL/PALM/CACTUS e demais famílias declaradas em DCN, inventário urbano existente | Costa pode adaptar água/margem existentes; flora/poço próprios apenas onde a ocorrência exigir. Fonte/brazeiro já produzidos nos interiores podem ser reutilizados quando compatíveis; fechar distribuição/reuso antes de fixar contagem de novos desenhos |
+| Objetos de missão no mapa | Pergaminho Map015/evento2, chave Map013/evento3 e fragmento Map017/evento5 usam eventos sem imagem de personagem e apresentação funcional por marcadores | Representações próprias ainda não entregues. Conferir a imagem original específica e escala antes de gerar; preservação dos itens/IDs não depende da troca visual |
+| Dragon gate | Nome confirmado no texto, mas FANG1/2 não declaram DGATE; saída existente associada a MSU.IMG em(4,1) | **Investigar vínculo visual**, não prometer DGATE.IMG como identificação confirmada. Nenhuma geração autorizada por semelhança de nome |
+| Vagonetes | Wiki cita trams; NCART1/SCART1 não associados às ocorrências dos blocos atuais | **Confirmar recurso/posição**. Trilhos e suportes já estão entregues; não confundir com vagonete produzido |
+| Servo de Tharn definitivo | `ArenaFangCells.json.retaliation.encounter`: enemy4/troop5, **esqueleto existente** apresentado como Servo. Identidade da espécie não estabelecida por TEMPLATE#1392/wiki | Escolha provisória funcional autorizada; identificação ou orientação artística antes de criar conjunto próprio. Não contar como12ªespécie original confirmada |
+| Ilustrações narrativas | Blocos ordenados e fontes em [CAMPANHA_PRINCIPAL](CAMPANHA_PRINCIPAL.md#inventário-textual), incluindo Ria, audiência e retaliação | Apresentar texto e aguardar orientação visual de cada bloco; uma ilustração por entrega. Retrato de Blubamka não substitui esses blocos |
+
+As11espécies confirmadas possuem os dois conjuntos; não falta novo bestiário para corrigir este inventário. A revisão da aranha e modernização do título são melhorias futuras de qualidade, não assets ausentes do percurso. Contagens de desenhos/atlas restantes não são fechadas enquanto reuso, correspondências e orientação estiverem em aberto. Histórico abaixo é evidência datada, não lista vigente de pendências.
+
+
 02/11/2026. Feature `feature/m02-fang-lair-celas`, dependências preservadas sobre **f27e9a9**. Núcleo de enigma/chave/portal implementado, **aguardando avaliação da amostra**. O encontro condicionado das aranhas ainda não está implementado; portanto M02-06A não está integralmente concluído. Testes manuais dos grupos de Stonekeep continuam adiados para integração; REF17/contraste continua em QUALIDADE-01.
 
 ## Atlas de mina V01
@@ -254,8 +283,8 @@ O servo de Tharn fica **fora da contagem** até identificar a espécie ou regra 
 
 | Família | Referência original | Decisão frente aos atlas existentes |
 | --- | --- | --- |
-| 1. Pisos de mina | MFLOORA/MFLOORD, MFLOORB, FLOOR_C | **Nova**. Pisos imperiais e de Stonekeep servem somente na montagem provisória |
-| 2. Paredes, cortes e tetos | MINEA–F, variantes MINEA1–C1 | **Nova**. Reusar módulos técnicos, margens e regras de colisão de Stonekeep, preservando a identidade da mina |
+| 1. Pisos de mina | MFLOORA/MFLOORD, MFLOORB, FLOOR_C | **Entregue** no atlas `Arena_Fang_Mine_V01_C`, aplicado aos dois níveis; reuso legado só onde explicitamente mantido |
+| 2. Paredes, cortes e tetos | MINEA–F, variantes MINEA1–C1 | **Entregue** no mesmo atlas C, com famílias MINE e aplicações por nível; outras áreas exigem classificação, não geração automática de outro atlas |
 | 3. Portas, celas e dragon gate | MDOOR1–6, MCELL, entrada descrita no PDF p.3 | MCELL/MDOOR6 integrados nas ocorrências atuais V01. Dragon gate segue sem associação visual confirmada; MDOOR1–5 sem ocorrências atuais |
 | 4. Desníveis, poços, escadas e travessias | MSD/MSU, PIT, poços, túneis e escadas da planta | **Adaptar** componentes e geradores. Sem equivalência de travessia provada para cada trecho |
 | 5. Água, lava e bordas | MWATER, MLAVA, valores de FLOR e planta do nível inferior | Água legada preservada. A1 de lava V01 integrado no segundo nível, com avaliação visual pendente; rota/risco/proteção continuam separados |
