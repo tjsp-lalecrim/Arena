@@ -1,0 +1,698 @@
+{
+  "browser": "157.0.8103.80",
+  "audit": {
+    "reachable": 61,
+    "rats": [
+      {
+        "id": "imperial.enemy.01",
+        "eventId": 169,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          37,
+          16
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.02",
+        "eventId": 170,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          148,
+          16
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.03",
+        "eventId": 171,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          109,
+          19
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.06",
+        "eventId": 174,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          91,
+          22
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.07",
+        "eventId": 175,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          13,
+          25
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.09",
+        "eventId": 177,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          58,
+          25
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.10",
+        "eventId": 178,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          139,
+          25
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.11",
+        "eventId": 179,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          148,
+          25
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.15",
+        "eventId": 183,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          124,
+          28
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.17",
+        "eventId": 185,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          103,
+          31
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.20",
+        "eventId": 188,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          82,
+          37
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.22",
+        "eventId": 190,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          10,
+          40
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.23",
+        "eventId": 191,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          67,
+          43
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.24",
+        "eventId": 192,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          76,
+          43
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.26",
+        "eventId": 194,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          31,
+          46
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.31",
+        "eventId": 199,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          13,
+          58
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.32",
+        "eventId": 200,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          19,
+          58
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.34",
+        "eventId": 202,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          46,
+          61
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.36",
+        "eventId": 204,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          46,
+          64
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.37",
+        "eventId": 205,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          103,
+          79
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.41",
+        "eventId": 209,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          97,
+          97
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.42",
+        "eventId": 210,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          37,
+          100
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.46",
+        "eventId": 214,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          49,
+          103
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.47",
+        "eventId": 215,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          52,
+          103
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.50",
+        "eventId": 218,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          67,
+          106
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.51",
+        "eventId": 219,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          73,
+          109
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.55",
+        "eventId": 223,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          37,
+          115
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.58",
+        "eventId": 226,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          79,
+          118
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.60",
+        "eventId": 228,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          43,
+          121
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.61",
+        "eventId": 229,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          61,
+          121
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.63",
+        "eventId": 231,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          43,
+          124
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.65",
+        "eventId": 233,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          13,
+          130
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.66",
+        "eventId": 234,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          100,
+          133
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      },
+      {
+        "id": "imperial.enemy.67",
+        "eventId": 235,
+        "enemyId": 1,
+        "troopId": 1,
+        "origin": [
+          88,
+          136
+        ],
+        "sourceFlat": "rat.dfa",
+        "questSpecific": false,
+        "radius": 3,
+        "interval": 90,
+        "regions": [
+          3,
+          4,
+          5
+        ],
+        "scale": 1
+      }
+    ],
+    "threshold": 50,
+    "availableExp": 1185
+  },
+  "checks": [
+    "All Gate contacts share guarded reachGate; level1 attempts and save reload preserve complete persistent state and permit retreat",
+    "Current reachable enemies include at least four rats; real Atacar victories grant60EXP/level2; rewards retained on reload",
+    "Level2 Gate completes MQ01 once and preserves ending on reload; normal continuation reaches Rihad",
+    "Existing arrival at level1 can reload and retains outskirts option; no retroactive restriction"
+  ],
+  "errors": [],
+  "limits": "Normal synthetic saves19 in isolated Chrome; key/door pre-Gate fixture, controlled contact positioning. No personal save altered. No engine/assets generated."
+}

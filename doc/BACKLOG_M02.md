@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Revisão20/11:** Shift Gate passa a exigir nível2 como adaptação provisória (sem retroagir sobre Rihad). [Inventário de assets auditado](FANG_CELAS_M02_06A.md#inventário-auditado-de-assets-do-m02--20112026): interiores, Blubamka, Fantasma, Hell Hounds e lava entregues; geração futura separada de acesso/avaliação pendentes.
+
 **Progressão inicial de Rihad:** [acesso explícito aos Arredores pelo portão e orientação da cama no nível1](ARREDORES_RIHAD_M02_03B.md#acesso-vigente-pela-campanha--20112026). Cama funcionando relatada; nível1 é hipótese do responsável, sem confirmação de falha narrativa. Exploração livre de outras dungeons fica como possibilidade futura para avaliação, sem implementação autorizada neste recorte.
 
 **Prévia agrupada de assets (20/11/2026).** Publicação manual da fonte `01f9915`: [execução e roteiro agrupado](PAGES_INFRA.md#prévia-agrupada-de-assets-do-m02--20112026). Fantasma, objetos, lava e Blubamka disponíveis para avaliação, sem aprovação presumida. Fantasma permanece sem acesso de campanha confirmado; release e fechamento do marco continuam separados.

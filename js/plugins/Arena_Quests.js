@@ -11,6 +11,7 @@ var ArenaQuests;
  if(!window.MVQuestRules||!window.ArenaEncounters)throw Error('Arena_Quests: dependências ausentes');
  DataManager._databaseFiles.push({name:'$arenaQuests',src:'ArenaQuests.json'});
  function cfg(){return window.$arenaQuests;}
+ var loaded=DataManager.isDatabaseLoaded;DataManager.isDatabaseLoaded=function(){if(!loaded.apply(this,arguments))return false;if(!Number.isInteger(cfg().minimumGateLevel)||cfg().minimumGateLevel<1)throw Error('MQ01: nível mínimo do Shift Gate inválido.');return true;};
  function configuration(id){
   if(id===undefined)id=cfg().questId;
   if(id===cfg().questId)return {ok:true,config:cfg()};
@@ -68,6 +69,7 @@ var ArenaQuests;
   },
   reachGate:function(){
    if(!inMap()||!inGateArea()||quest().stage!==30)return false;
+   if($gameActors.actor(1).level<cfg().minimumGateLevel){if(!$gameMessage.isBusy())$gameMessage.add('O Shift Gate exige nível '+cfg().minimumGateLevel+'.\nContinue explorando a dungeon para ganhar experiência.');return false;}
    var ok=atomic(function(){if(!move(40,view()))return false;ArenaEncounters.completeArea();return true;});
    if(ok){if(window.ArenaNarrative&&ArenaNarrative.isCampaign())ArenaNarrative.finish();else $gameMessage.add('MQ01 concluída neste teste técnico.\nA demo completa começa em Novo Jogo.');}return ok;
   },
