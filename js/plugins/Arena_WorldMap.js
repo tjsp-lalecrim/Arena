@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.2.0 Mapa mundial: províncias, descoberta e viagem exterior MQ02.
+ * @plugindesc v0.3.0 Mapa mundial: províncias, descoberta e viagem exterior MQ02.
  * @author Codex
  * @help Após Rihad, StonekeepWhole e FangCells. Dados ArenaWorldMap.json.
  * Menu Mapa mundial; tecla M fora de batalha. Enter confirma, Esc retorna.
@@ -50,6 +50,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
   if(location()===id)return 'Você já está neste local.';
   return '';
  }
+ function destinationStatus(id){var why=reason(id,false),state=location()===id?'current':why?'blocked':'available';return {state:state,label:state==='current'?'Localização atual':state==='available'?'Disponível para viajar':'Indisponível',reason:why};}
  function fence(){
   $gameTemp.clearDestination();$gameTemp._arenaCourtTravelFence=true;
   $gameTemp._arenaNarrativeFence={until:Date.now()+180};
@@ -63,7 +64,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
   $gamePlayer.reserveTransfer(to.mapId,to.x,to.y,to.direction,0);return {ok:true,destinationId:to.id};
  }
  ArenaWorldMap={
-  location:location,known:known,anchor:anchor,reason:reason,
+  location:location,known:known,anchor:anchor,reason:reason,status:destinationStatus,
   travel:function(id){return travel(id,false);},
   fromGate:function(i,id){
    var e=$gameMap.event(3);
@@ -74,7 +75,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
    if(!(SceneManager._scene instanceof Scene_Map)||!SceneManager._sceneStarted||!campaign()||$gameParty.inBattle()||$gameMessage.isBusy()||$gameMap.isEventRunning()||$gamePlayer.isTransferring()||SceneManager.isSceneChanging()||$gameTemp._arenaEncounterLock)return false;
    fence();SceneManager.push(Scene_ArenaWorldMap);return true;
   },
-  entries:function(province){return cfg().places.filter(function(p){return p.province===province&&(!p.questSecret||known(p.id));}).map(function(p){return Object.assign({},p,{enabled:!reason(p.id,false)});}).sort(alphabetical);},
+  entries:function(province){return cfg().places.filter(function(p){return p.province===province&&(!p.questSecret||known(p.id));}).map(function(p){var state=destinationStatus(p.id);return Object.assign({},p,{enabled:state.state==='available',status:state.label,blockReason:state.reason});}).sort(alphabetical);},
   state:function(){return MVStateStore.read('arenaWorldTravel');}
  };
  var start=Scene_Map.prototype.start;
@@ -93,7 +94,8 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
  List.prototype=Object.create(Window_Command.prototype);List.prototype.constructor=List;
  List.prototype.initialize=function(x,y,w,h){this._ww=w;this._hh=h;this.rows=[];Window_Command.prototype.initialize.call(this,x,y);};
  List.prototype.windowWidth=function(){return this._ww;};List.prototype.windowHeight=function(){return this._hh;};
- List.prototype.standardFontSize=function(){return 20;};List.prototype.itemHeight=function(){return 34;};
+ List.prototype.standardFontSize=function(){return 20;};List.prototype.itemHeight=function(){return this.rows[0]&&this.rows[0].point?52:34;};
+ List.prototype.drawItem=function(index){var row=this.rows[index],r=this.itemRectForText(index);if(!row)return;this.resetTextColor();this.changePaintOpacity(row.enabled!==false||row.id===location());if(row.id===location())this.changeTextColor('#ffe19b');this.contents.fontSize=18;this.contents.drawText(row.name,r.x,r.y,r.width,26);if(row.point){this.contents.fontSize=14;this.contents.drawText(row.status,r.x,r.y+26,r.width,22);}this.resetFontSettings();this.changePaintOpacity(true);};
  List.prototype.makeCommandList=function(){this.rows.forEach(function(r){this.addCommand(r.name,'pick',r.enabled!==false,r.id);},this);};
  List.prototype.setRows=function(rows){this.rows=rows;this.refresh();this.select(0);};
  List.prototype.processOk=function(){if(!this._ready)return;Window_Command.prototype.processOk.call(this);};
@@ -119,13 +121,13 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
   points.forEach(function(p){
    var pt=view?p.point:p.label,x=rect.x+pt[0]/320*rect.w,y=rect.y+pt[1]/200*rect.h;
    var current=view?location()===p.id:(location()?p.id==='hammerfell':p.id==='imperial');
-   b.drawCircle(x,y,selection===p.id?6:3,current?'#ffe19b':selection===p.id?'#ecb474':p.enabled===false?'#727773':'#d4c8a7');
+   if(!view)b.drawCircle(x,y,selection===p.id?6:3,current?'#ffe19b':selection===p.id?'#ecb474':'#d4c8a7');else{ctx.save();ctx.strokeStyle=current?'#ffe19b':p.enabled?'#d4c8a7':'#92978e';ctx.fillStyle=ctx.strokeStyle;ctx.lineWidth=2;ctx.beginPath();if(current){ctx.arc(x,y,6,0,Math.PI*2);ctx.stroke();ctx.beginPath();ctx.arc(x,y,2,0,Math.PI*2);ctx.fill();}else if(p.enabled){ctx.moveTo(x,y-5);ctx.lineTo(x+5,y);ctx.lineTo(x,y+5);ctx.lineTo(x-5,y);ctx.closePath();ctx.fill();}else{ctx.moveTo(x-3,y-3);ctx.lineTo(x+3,y+3);ctx.moveTo(x+3,y-3);ctx.lineTo(x-3,y+3);ctx.stroke();}if(selection===p.id){ctx.beginPath();ctx.arc(x,y,9,0,Math.PI*2);ctx.stroke();}ctx.restore();b._setDirty();}
    b.fontSize=view?18:14;b.textColor=current?'#ffe19b':'#eee3c8';b.outlineWidth=4;b.outlineColor='#12191b';
    var label=p.name;if(view&&current)label+=' · atual';
    var tw=Math.min(b.width-8,b.measureTextWidth(label)+8),lx=Math.max(0,Math.min(b.width-tw,x-tw/2));
-   var showLabel=view?(selection===p.id||current||known(p.id)):(rect.w>=400||selection===p.id||current);if(showLabel)b.drawText(label,lx,y+7,tw,26,'center');this._hits.push({id:p.id,x:x,y:y,rect:showLabel?[lx,y-10,tw,44]:[x-7,y-7,14,14]});
+   var showLabel=view?(selection===p.id||rect.w>=320&&(current||known(p.id))):(rect.w>=400||selection===p.id||current),labelY=view?Math.max(rect.y,Math.min(y+7,b.height-76)):y+7;if(showLabel)b.drawText(label,lx,labelY,tw,26,'center');var hitTop=Math.min(y-10,labelY);this._hits.push({id:p.id,x:x,y:y,rect:showLabel?[lx,hitTop,tw,Math.max(y+10,labelY+26)-hitTop]:[x-7,y-7,14,14]});
   },this);
-  b.fontSize=16;b.textColor='#e0d5b9';b.drawText(view?'Locais em cinza: viagem indisponível.':'Selecione uma província.',4,b.height-32,b.width-8,26);
+  b.fontSize=14;b.textColor='#e0d5b9';if(view){b.drawText('Atual: círculo · Disponível: losango',4,b.height-48,b.width-8,22);b.drawText('Indisponível: X · motivo ao selecionar',4,b.height-26,b.width-8,22);}else b.drawText('Selecione uma província.',4,b.height-32,b.width-8,26);
  };
  MapWindow.prototype.update=function(){Window_Base.prototype.update.call(this);if(!this.visible||!this.owner||!this.owner._list.active||!this.owner._list._ready||!TouchInput.isTriggered())return;
   var x=TouchInput.x-this.x-this.padding,y=TouchInput.y-this.y-this.padding;
@@ -140,11 +142,11 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
  Scene.prototype=Object.create(Scene_MenuBase.prototype);Scene.prototype.constructor=Scene;
  Scene.prototype.initialize=function(){Scene_MenuBase.prototype.initialize.call(this);this._province=null;this._selected=null;};
  Scene.prototype.create=function(){Scene_MenuBase.prototype.create.call(this);
-  var w=Graphics.boxWidth,h=Graphics.boxHeight,side=Math.min(300,Math.round(w*.36));
+  var w=Graphics.boxWidth,h=Graphics.boxHeight,side=Math.min(300,Math.round(w*.36)),footer=w<720?144:112;
   this._heading=new Window_Base(0,0,w,104);this.addWindow(this._heading);
-  this._map=new MapWindow(0,104,w-side,h-104-112);this._map.owner=this;this.addWindow(this._map);
-  this._list=new List(w-side,104,side,h-104-112);this._list.setHandler('pick',this.pick.bind(this));this._list.setHandler('cancel',this.back.bind(this));this.addWindow(this._list);
-  this._help=new Window_Base(0,h-112,w,112);this.addWindow(this._help);
+  this._map=new MapWindow(0,104,w-side,h-104-footer);this._map.owner=this;this.addWindow(this._map);
+  this._list=new List(w-side,104,side,h-104-footer);this._list.setHandler('pick',this.pick.bind(this));this._list.setHandler('cancel',this.back.bind(this));this.addWindow(this._list);
+  this._help=new Window_Base(0,h-footer,w,footer);this.addWindow(this._help);
   this._confirm=new Window_Command(0,0);this._confirm.makeCommandList=function(){this.addCommand('Viajar','travel');this.addCommand('Cancelar','cancel');};
   this._confirm.height=this._confirm.fittingHeight(2);this._confirm.createContents();this._confirm.refresh();
   this._confirm.x=Math.floor((w-this._confirm.width)/2);this._confirm.y=Math.floor((h-this._confirm.height)/2);
@@ -163,7 +165,7 @@ var ArenaWorldMap,Scene_ArenaWorldMap;
   var selected=this._list.currentExt(),b=this._heading.contents;b.clear();b.fontSize=25;b.drawText('Mapa mundial'+(this._province?' · '+cfg().provinces.find(function(p){return p.id===this._province;},this).name:' · Tamriel'),0,0,b.width,30);
   var current=cfg().places.find(function(p){return p.id===location();});b.fontSize=18;b.drawText('Localização atual: '+(current?current.name:location()==='outskirts'?'Arredores de Rihad':'Imperial Dungeons / antes de Rihad'),0,34,b.width,24);
   this._map.showMap(this._province,selected);b=this._help.contents;b.clear();b.fontSize=18;
-  var lines=this._province?(selected?[reason(selected,false)||'Viagem instantânea · sem custo, cura ou tempo adicional.','Enter/clique: selecionar e confirmar · Esc: voltar a Tamriel']:['Esta província está representada para expansão futura.','Não há locais implementados disponíveis nesta versão.']):['Mouse ou setas: selecionar · Enter: abrir província · Esc: voltar ao jogo','M: abrir o mapa durante a exploração · jogo pausado nesta tela.'];
+  var lines=this._province?(selected?[destinationStatus(selected).label+' · '+(reason(selected,false)||'Sem custo, cura ou tempo adicional.'),reason(selected,false)?'Setas/clique: consultar motivo · Esc: voltar a Tamriel':'Enter/clique: selecionar e confirmar · Esc: voltar a Tamriel']:['Esta província está representada para expansão futura.','Não há locais implementados disponíveis nesta versão.']):['Mouse ou setas: selecionar · Enter: abrir província · Esc: voltar ao jogo','M: abrir o mapa durante a exploração · jogo pausado nesta tela.'];
   var lineNo=0;lines.forEach(function(t){MVJournalModel.wrap(t,b.width-8,this._help.textWidth.bind(this._help)).forEach(function(line){b.drawText(line,0,lineNo++*25,b.width,25);});},this);
  };
  Scene.prototype.pick=function(){var id=this._list.currentExt();if(!id){SoundManager.playBuzzer();this._list.activate();return;}
