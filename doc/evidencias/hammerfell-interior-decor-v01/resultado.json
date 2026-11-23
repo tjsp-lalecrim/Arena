@@ -1,0 +1,23 @@
+{
+  "browser": "157.0.8103.80",
+  "base": "0d8f209",
+  "checks": [
+    "Generator reconstruction is stable; both maps preserve dimensions, regions and all four native collision bits at every tile.",
+    "Normal campaign walks from city gate/informant to confirmed facade, enters original TAVERN4 plan and reaches bed; transfers preserve actor, resources and MQ01/MQ02.",
+    "A real 0d8f209 serialized inn map adopts the new tileset/event priority without moving the player or healing on load.",
+    "Distant click walks to an accessible adjacent tile and rests once instead of targeting the blocked bed tile.",
+    "Regression: actual Enter beside headboard and click on the head tile both restore resources; the two-tile bed shares one event.",
+    "Battle context cannot activate the inn bed.",
+    "Level 1 bed restores all resources at zero gold; normal save/load before rest preserves spent bars and leaves vision eligible.",
+    "Return after reaching level 2 opens vision once; full resources remain full and the held rest key does not advance the first block.",
+    "Native save/load during and after reading preserves the cursor/completion; repeat bed interaction does not replay vision, grant loot or mutate MQ01.",
+    "Previous-version exterior-platform save retains position, actor, progression, receipts and completed vision; retired event removed, inn entrance installed without healing on load.",
+    "Court approach, acceptance 30→40 and unique delivery 50→60 pass on the new atlas; save/load and repeat conversation preserve receipt and remove one parchment.",
+    "Existing RAM laboratory reaches the same inn; personal slots remain blocked and RAM restoration works inside."
+  ],
+  "errors": [],
+  "missing": [],
+  "source": "TAVERN4.MIF / TAVERN.INF; CITYW1 + TPBD11B.MIF; DCN.INF",
+  "ownerEvaluation": "pending integrated MQ02",
+  "storage": "isolated Chrome profile; synthetic slot19 only"
+}
