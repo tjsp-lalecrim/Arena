@@ -10,6 +10,8 @@ Retrato nas mensagens do informante por parâmetro opcional do apresentador exis
 
 [Captura na cidade](evidencias/rihad-informant-v01/cidade.png) · [antes de Ria](evidencias/rihad-informant-v01/antes-de-ria.png) · [após Ria](evidencias/rihad-informant-v01/depois-de-ria.png) · [orientação de viagem](evidencias/rihad-informant-v01/orientacao-portao.png) · [verificações](evidencias/rihad-informant-v01/resultado.json). Chrome isolado: aproximação pela rota, teclado/clique, colisão, retrato e páginas nas etapas10/20/30/40/50/60, ausência de alterações em recursos/atores/MQ01/Ria/loot, RAM sem slots e save normal sintético com sprite antigo reapresentado sem perder estado. Regressão de Blubamka reutilizada: audiência/aceitação/entrega e texto compartilhado sem retrato preservados. Não houve teste em save pessoal.
 
+Referência funcional verificada: `452d7c20ae2e6651aa07c185814cb631a48942ae`. [Pacote web conferido](evidencias/rihad-informant-v01/pacote.json):419 arquivos, referências e checksums válidos, sem mestres/documentação/saves distribuídos; não publicado.
+
 **Avaliação visual pendente**, agrupada ao próximo teste integrado. Acesso local `http://127.0.0.1:8774/`: no percurso normal, conversar com o informante junto à chegada e conferir retrato/legibilidade, avançando as páginas. Comparar orientações nos checkpoints pré/pós-Ria disponíveis, sem exigir refazer a dungeon ou rever a visão já aprovada. Inspeção direta existente: **Testes / Debug → Campanha e mapas → Rihad · chegada nível 1 (RAM)**. Nenhum comando técnico novo. Saves antigos recebem apenas a apresentação atual do evento; não mudam namespace, posição, quest ou recursos. Pages e release ficam separados.
 
 
