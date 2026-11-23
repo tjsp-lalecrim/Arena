@@ -1,0 +1,55 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Normal campaign gate→outskirts, isolated save/load before encounter; real contact selects origin area background.",
+    "Unknown/Stonekeep/null areas retain global default. Uniform cover at three desktop window proportions; UI and actor/rat legibility captured.",
+    "Native attacks/motion timelines complete, victory returns to Map010 with defeated state; subsequent save/load/contact reselects area backdrop. No personal saves."
+  ],
+  "layouts": [
+    {
+      "viewport": {
+        "width": 1100,
+        "height": 850
+      },
+      "canvas": {
+        "x": 142,
+        "y": 113,
+        "width": 816,
+        "height": 624
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "canvas": {
+        "x": 232,
+        "y": 48,
+        "width": 816,
+        "height": 624
+      }
+    },
+    {
+      "viewport": {
+        "width": 640,
+        "height": 480
+      },
+      "canvas": {
+        "x": 6.15625,
+        "y": 0,
+        "width": 627.6875,
+        "height": 480
+      }
+    }
+  ],
+  "motions": {
+    "enemy/idle": 212,
+    "actor/idle": 229,
+    "actor/light": 26,
+    "enemy/defeat": 242
+  },
+  "errors": [],
+  "missing": [],
+  "ownerEvaluation": "Visual assessment pending integrated campaign test; next grouped Pages publication, not published in this task."
+}

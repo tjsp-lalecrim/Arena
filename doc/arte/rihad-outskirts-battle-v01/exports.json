@@ -1,0 +1,10 @@
+{
+  "master": "art/masters/rihad-outskirts-battle-v01/source.png",
+  "export": "img\\pictures\\Arena_Rihad_Outskirts_Battle_V01.png",
+  "size": [
+    816,
+    459
+  ],
+  "sha256": "ad86f3c9e3fcf606f13b028707226e28c70cf7468e8a288f5b28081f6e1adb34",
+  "method": "Uniform proportional resize only; native renderer uniform cover for visible battle field"
+}

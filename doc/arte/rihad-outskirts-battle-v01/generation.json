@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-23",
+  "tool": "native image_gen",
+  "prompt": "One finished environmental BATTLE BACKGROUND image for Arena RPG, panoramic16:9 opaque painting, no characters, creatures, rats, people, weapons, text, labels, UI, emblems or interfaces. Lateral turn-basedbattle staging NOT topdown/isometric. Inspired by original Rihad/Hammerfell Arena DCN reference board: pale warmgravel, dryochre earth, charcoalstones, rust/sandstone lowregional citywalls; complement restrained regional Redguard desertcoastalarchitecture, not named landmarks fromlatergames. Darkfantasy highdefinition handpainted, realisticgroundmaterials with broadcleanreadableforms. Coastal outskirts of Rihad interpreted as dry roadside clearing near a coastalcity: distant hazyblue sea visible at farLEFT horizon, low arid hills towardRIGHT background, distantsmallweathered sand/rustcitywall and squareflatrooftower at farRIGHT background. No actualnamedlandmark or dungeonmouth. Time diffuse lateafternoon with overcastwarmhaze, mutedbluegray sky, enoughlight to read darkbrown rats and differentplayerarmors. Horizon atupper30percent. LOWER65percent is spacious continuous warmneutral compactedsand/gravel combatground, verysubtle stones only alongfar edges. Empty flatSTAGING lane especially playerLEFT at20percentwidth and enemyRIGHT at80percentwidth, feetrest around68percentheight. No tallgrass, large rocks, trees, busy debris or darkshadows atstagingpoints. Distantlowdryscrub edges only. Lightupperleft, restrained contrast/no blackvignette, no intenseglow, no foregroundocclusion. Must match sandygravel/ochre/charcoal colorfamily of currentRihadmap but is lateralbattlelandscape. ONEimage only, no collage or tiles.",
+  "master": "art/masters/rihad-outskirts-battle-v01/source.png",
+  "references": [
+    "Original Arena local GLOBAL.BSA/DCN.INF decoded surface board tmp/m02-tilesets/rihad-refs.png; hashes in doc/arte/m02-tilesets/sources-rihad.json",
+    "Original Hammerfell map decoded at tmp/world-map/HAMERFEL.png: Rihad coastal placement",
+    "Current Rihad exterior atlas for established color/material finish; franchise regional references already catalogued in doc/arte/rihad-npcs-v01/generation.json"
+  ],
+  "adaptation": "Coastal roadside clearing, hills, wall silhouette and time/weather are artistic environmental interpretation. The small Map010 outskirts is a project adaptation; image does not establish exact shoreline orientation or new accessible terrain. No first-person original gameplay observation claimed.",
+  "approval": "Pending integrated owner visual evaluation; one environmental image, no characters"
+}
