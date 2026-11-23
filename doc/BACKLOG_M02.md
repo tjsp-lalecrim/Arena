@@ -2,7 +2,7 @@
 
 **Complemento dos interiores:** [seis módulos/11colocações](CHEGADA_RIHAD_M02_03A.md#complemento-dos-interiores-de-hammerfell--23112026) na pousada/corte; mobiliário, cama e eventos existentes preservados. Avaliação visual agrupada aos NPCs/fachadas, sem aprovação presumida. Prévia agrupada nesta entrega em [Pages](PAGES_INFRA.md); release somente no fechamento.
 
-**Fachadas/adereços regionais:** [12 módulos/21 ocorrências](CHEGADA_RIHAD_M02_03A.md#fachadas-e-adereços-de-hammerfell-v01--23112026), toldos, postigos, símbolos e recipientes visuais no percurso urbano. Portas/serviços preservados; avaliação visual agrupada aos NPCs. Aguarda próxima prévia Pages, sem nova publicação nesta entrega. Não encerra todas as pendências de cidade/arte.
+**Fachadas/adereços regionais:** [12 módulos/21 ocorrências](CHEGADA_RIHAD_M02_03A.md#fachadas-e-adereços-de-hammerfell-v01--23112026), toldos, postigos, símbolos e recipientes visuais no percurso urbano. Portas/serviços preservados; avaliação visual agrupada aos NPCs. Incluído na [prévia agrupada fcd6601](PAGES_INFRA.md#prévia-de-fachadas-e-interiores-de-rihad--23112026). Não encerra todas as pendências de cidade/arte.
 
 **Variantes de Hammerfell:** [idoso, artesã, viajante e guarda](CHEGADA_RIHAD_M02_03A.md#quatro-variantes-de-hammerfell--23112026), quatro retratos e quatro orientações; artesã/viajante móveis, integrados à cidade sem novos serviços. Avaliação visual agrupada pendente. Publicação acumulada (informante, trio e variantes) nesta entrega, com referência vigente em [Pages](PAGES_INFRA.md). Não iniciar nova produção por consequência.
 
@@ -14,7 +14,7 @@
 
 **Feedback atual:** responsável confirmou apresentação bem-sucedida da visão de Ria; [cobertura exata](VISAO_RIA_M02_03C.md). Não atribuir nova confirmação de persistência.
 
-**Prévia pública atual:** [NPCs acumulados de Hammerfell, fonte d04cc5a](PAGES_INFRA.md#prévia-acumulada-de-npcs-de-hammerfell--23112026), preservando mapa mundial e catálogo. Avaliação manual/visual pendente pelo roteiro agrupado; dragon gate exterior e vagonetes seguem incertos, sem produção ou integração presumida. Release no fechamento.
+**Prévia pública atual:** [fachadas, interiores e NPCs de Hammerfell, fonte fcd6601](PAGES_INFRA.md#prévia-de-fachadas-e-interiores-de-rihad--23112026), preservando mapa mundial e catálogo. Avaliação manual/visual pendente pelo roteiro agrupado; dragon gate exterior e vagonetes seguem incertos, sem produção ou integração presumida. Release no fechamento.
 
 **Entrada de Fang Lair:** [face interna MSU integrada e investigação delimitada](FANG_CELAS_M02_06A.md#entrada-interna-e-investigação-de-vagonetes--20112026). Exterior dragon gate e vagonetes permanecem incertos; candidatos nos volumes(87,21)/(88,21) registrados, sem geração/colocação por suposição. Avaliação visual agrupada; Pages e release separados.
 
