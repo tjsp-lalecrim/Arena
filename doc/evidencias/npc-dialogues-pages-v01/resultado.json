@@ -1,0 +1,32 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "a38f39082fb0a0f535c495ffd3158128b9079891",
+  "workflow": "https://github.com/tjsp-lalecrim/Arena/actions/runs/45280558151",
+  "infraCommit": "8caba09bc0efe3f794efe28de92f86e718211e5a",
+  "manifestSha256": "7bb904a1ee16bcee99dae0abffe6f37317da8f39e1363d58ae12487fbef23be1",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 440,
+  "totalBytes": 57362068,
+  "browser": "157.0.8103.80",
+  "status": {
+    "regionalActors": 7,
+    "ids": [
+      "rihad.inn.keeper",
+      "rihad.guard.court.01",
+      "rihad.civilian.square.01",
+      "rihad.regional.elder.01",
+      "rihad.regional.artisan.01",
+      "rihad.regional.traveler.01",
+      "rihad.regional.guardvariant.01"
+    ],
+    "debug": false,
+    "namespace": "arena:m01:save-v1"
+  },
+  "errors": [],
+  "checks": [
+    "Every public file matches manifest size/SHA256; exact selected source and manifest",
+    "Fresh isolated Chrome opens game; NPC dialogue module/data plus retained atlases and actor assets load",
+    "Public player profile debug disabled; stable origin and save namespace"
+  ],
+  "limits": "Publication smoke; local circulation/dialogue/save evidence reused. Owner visual assessment pending; no personal saves touched."
+}
