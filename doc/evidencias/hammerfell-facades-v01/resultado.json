@@ -1,0 +1,12 @@
+{
+  "browser": "157.0.8103.80",
+  "changedCells": 33,
+  "checks": [
+    "Map009 events and five other layers unchanged; only visual layer3 and dedicated D tile flags differ. Native passability unchanged at every altered cell.",
+    "Walkable arrival/inn/houses/court routes; inn entry/exit preserves actor/party/persistent-state snapshot. Existing service/closed-door events unchanged.",
+    "Rebuild stable; isolated normal save/load keeps state and position; RAM save remains blocked. No personal data used."
+  ],
+  "errors": [],
+  "missing": [],
+  "manual": "Visual assessment pending with NPC group; no approval inferred."
+}
