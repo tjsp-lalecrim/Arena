@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Fachadas/adereços regionais:** [12 módulos/21 ocorrências](CHEGADA_RIHAD_M02_03A.md#fachadas-e-adereços-de-hammerfell-v01--23112026), toldos, postigos, símbolos e recipientes visuais no percurso urbano. Portas/serviços preservados; avaliação visual agrupada aos NPCs. Aguarda próxima prévia Pages, sem nova publicação nesta entrega. Não encerra todas as pendências de cidade/arte.
+
 **Variantes de Hammerfell:** [idoso, artesã, viajante e guarda](CHEGADA_RIHAD_M02_03A.md#quatro-variantes-de-hammerfell--23112026), quatro retratos e quatro orientações; artesã/viajante móveis, integrados à cidade sem novos serviços. Avaliação visual agrupada pendente. Publicação acumulada (informante, trio e variantes) nesta entrega, com referência vigente em [Pages](PAGES_INFRA.md). Não iniciar nova produção por consequência.
 
 **Trio regional Redguard:** [pousadeira, guarda da corte e moradora](CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026), com retratos/quatro direções e caminhada da moradora. Avaliação visual agrupada pendente; informante e Blubamka preservados. Informante, trio e variantes já constam da [prévia acumulada d04cc5a](PAGES_INFRA.md#prévia-acumulada-de-npcs-de-hammerfell--23112026), sem release.
