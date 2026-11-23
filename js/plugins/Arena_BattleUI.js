@@ -18,6 +18,13 @@ var ArenaBattleUI;
     var realScale=Graphics._updateRealScale;
     Graphics._updateRealScale=function(){realScale.apply(this,arguments);if(this._width>0&&this._height>0)this._realScale=Math.min(this._realScale,Math.max(1,window.innerWidth)/this._width,Math.max(1,window.innerHeight)/this._height);};
     function config(){return $arenaBattleUI;}
+    function backgroundForArea(id){return config().areaBackgrounds&&config().areaBackgrounds[id]||config().background;}
+    var battleSetup=BattleManager.setup;
+    BattleManager.setup=function(){
+        battleSetup.apply(this,arguments);
+        var area=window.ArenaCampaignConfig&&ArenaCampaignConfig.ready()&&ArenaCampaignConfig.forMap($gameMap.mapId());
+        this._arenaBattleAreaId=area&&area.ok?area.config.id:null;
+    };
     function contentTop(){return Graphics.boxHeight-config().commandHeight-config().hotbarHeight;}
     function slotId(i){return config().slotPrefix+(i+1);}
     function actor(){return BattleManager.actor()||$gameParty.battleMembers()[0];}
@@ -40,7 +47,7 @@ var ArenaBattleUI;
         var parts=[],mp=a.skillMpCost(item),v=Number(item.meta.ArenaVigorCost||0);if(mp)parts.push(mp+' M');if(v)parts.push(v+' V');return parts.join(' / ')||'—';
     }
     function describe(item,a){if(!item)return 'Remover a associação deste espaço.';var r=resolve(refOf(item),a);return item.name+' · '+cost(item,a)+'\n'+(r.reason?r.reason+' ':'')+item.description;}
-    ArenaBattleUI={resolve:resolve,config:config,slotId:slotId,theme:menuChrome};
+    ArenaBattleUI={resolve:resolve,config:config,slotId:slotId,theme:menuChrome,backgroundForArea:backgroundForArea};
     Input.keyMapper[67]='arenaConfigure';for(var key=1;key<=8;key++)Input.keyMapper[48+key]='arenaSlot'+key;
     var prevent=Input._shouldPreventDefault;
     Input._shouldPreventDefault=function(keyCode){return keyCode===9&&SceneManager._scene instanceof Scene_Battle||prevent.apply(this,arguments);};
@@ -56,7 +63,15 @@ var ArenaBattleUI;
     var anim=Sprite_Battler.prototype.startAnimation;
     Sprite_Battler.prototype.startAnimation=function(animation,mirror,delay){return anim.call(this,animation,ArenaBattleMotion.profile(this._battler)?!mirror:mirror,delay);};
     Spriteset_Battle.prototype.createBattleback=function(){
-        this._back1Sprite=new Sprite(ImageManager.loadPicture(config().background.file));this._back1Sprite.scale.set(Graphics.boxWidth/576);this._back1Sprite.y=config().background.y;
+        var backdrop=backgroundForArea(BattleManager._arenaBattleAreaId);
+        this._back1Sprite=new Sprite(ImageManager.loadPicture(backdrop.file));
+        if(backdrop.fit==='cover'){
+            var sprite=this._back1Sprite;
+            sprite.bitmap.addLoadListener(function(bitmap){
+                var scale=Math.max(Graphics.boxWidth/bitmap.width,contentTop()/bitmap.height);
+                sprite.scale.set(scale);sprite.x=(Graphics.boxWidth-bitmap.width*scale)/2;sprite.y=(contentTop()-bitmap.height*scale)/2+(backdrop.y||0);
+            });
+        }else{this._back1Sprite.scale.set(Graphics.boxWidth/576);this._back1Sprite.y=backdrop.y;}
         this._back2Sprite=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this._back2Sprite.bitmap.fillAll('rgba(7,12,17,0.26)');var ground=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));ground.bitmap.fillAll('#0b1114');this._battleField.addChild(ground);this._battleField.addChild(this._back1Sprite);this._battleField.addChild(this._back2Sprite);
     };
     // Small field labels have no window frame; menu chrome is local to battle.

@@ -1,5 +1,7 @@
 # Arena_BattleUI0.2.0
 
+Extensão23/11/2026: `areaBackgrounds[areaId]` opcional, com arquivo/fit/y. ID capturado no setup via registro de área do mapa de origem, sem novo contexto persistente. API `backgroundForArea(id)` preserva o cenário global para desconhecidas/não configuradas; `cover` proporcional somente para o novo fundo. [Arredores/fontes/evidências](../ARREDORES_RIHAD_M02_03B.md#cenário-de-batalha-costeiro-v01--23112026).
+
 Plugin próprio Codex após Arena_BattleMotion e MV_BattleSlots; depende dos contratos anteriores de ArenaBattle, ArenaResources, ArenaAbilities e ArenaPersistence. Sem dependências externas, parâmetros do gerenciador ou comandos de plugin. Configuração em data/ArenaBattleUI.json; manter registro canônico em js/plugins.js.
 
 ## Composição e convenções
