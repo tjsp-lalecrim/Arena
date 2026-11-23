@@ -57,12 +57,7 @@ var ArenaRihad;
  }
  ArenaRihad={
   inform:function(i){
-   var way=guidance();
-   if(way==='square')return message(i,['Para descansar, siga ao sul pelo passeio escuro. Na primeira curva, vire a oeste. Siga as placas até a Pousada do portão.',
-    'Para ganhar experiência, volte ao portão urbano, ao norte, e escolha Ir aos Arredores de Rihad. Há ratos junto à estrada. Pode voltar pelo mesmo caminho e descansar na pousada.']);
-   if(way==='court')return message(i,['Siga as placas da Corte pelas ruas ao sul.',
-    'Junto à muralha sul, passe pela grade e entre pela porta de madeira.']);
-   return message(i,['Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte.']);
+   return ArenaNPCDialogues.presentOrientation(i);
   },
   enterInn:function(i){var c=$arenaRihad.inn;return route(i,c.exit.mapId,c.accessEventId,c.entry);},
   leaveInn:function(i){var c=$arenaRihad.inn;return route(i,c.entry.mapId,c.exitEventId,c.exit);},
@@ -71,11 +66,11 @@ var ArenaRihad;
    if(!inInn()||!ArenaNarrative.isCampaign()||$gameParty.inBattle()||$gameMessage.isBusy()||
      !(i instanceof Game_Interpreter)||i.eventId()!==c.keeperEventId||i._mapId!==c.entry.mapId||
      !e||$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1)return false;
-   var npc=regional('rihad.inn.keeper');return ArenaCourt.show(i,npc.texts,{name:npc.faceName,index:0});
+   return ArenaNPCDialogues.open(i,'rihad.inn.keeper');
   },
   talkRegional:function(i,id){var npc=regional(id),e=npc&&$gameMap.event(npc.eventId);
    if(!npc||npc.key==='innkeeper'||$gameMap.mapId()!==npc.mapId||!ArenaNarrative.isCampaign()||$gameParty.inBattle()||$gameMessage.isBusy()||$gamePlayer.isTransferring()||!(i instanceof Game_Interpreter)||i._mapId!==npc.mapId||i.eventId()!==npc.eventId||!e||e._erased||$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1||ArenaQuests.snapshot('MQ02').stage<10)return false;
-   var texts=ArenaQuests.snapshot('MQ02').stage<20&&npc.textsBeforeRia?npc.textsBeforeRia:npc.texts;return ArenaCourt.show(i,texts,{name:npc.faceName,index:0});
+   return ArenaNPCDialogues.open(i,id);
   },
   arrivalNotice:function(i){return ArenaRihad.offerGate(i);},
   offerGate:function(i){

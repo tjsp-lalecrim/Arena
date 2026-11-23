@@ -140,3 +140,26 @@ Nos demais marcos, cada ID abaixo nomeia um bloco futuro em ordem. Texto detalha
 As cidades e dungeons listadas exigem estrutura completa conforme o [escopo vigente](MARCOS_DO_PROJETO.md#escopo-mínimo-funcional-vigente--decisão-de02112026). Eventos/população/serviços opcionais não se tornam obrigatórios; preservar edifícios/acessos urbanos mesmo com interiores sem função na campanha ainda inacessíveis. A viagem condensada até Rihad já está autorizada em MQ02_ESPECIFICACAO.md; não justifica reduzir a cidade.
 
 O primeiro marco termina na introdução e dungeon inicial. Cidades e demais quests entram em entregas posteriores. Os identificadores MQxx são propostos para planejamento; não são IDs já implantados no banco de dados.
+
+### Diálogos locais reutilizáveis — 23/11/2026
+
+Runtime em `ArenaNPCDialogues.json`; T=tradução, A=adaptação/fala da versão. Ilustração opcional nula em cada bloco: aguarda orientação individual, sem geração nesta entrega. Assuntos/condições/papel e bindings completos no JSON; efeitos específicos de Blubamka continuam em ArenaCourt/ArenaCourtDelivery.
+
+|ID estável|PT-BR|Fonte/classificação|Ilustração|
+|---|---|---|---|
+|`rihad.orientation.rest`|Para descansar, siga ao sul pelo passeio escuro. Na primeira curva, vire a oeste. Siga as placas até a Pousada do portão. / Para ganhar experiência, volte ao portão urbano, ao norte, e escolha Ir aos Arredores de Rihad. Há ratos junto à estrada. Pode voltar pelo mesmo caminho e descansar na pousada.|A; 214541c Arena_Rihad.js; adaptação de orientação ao percurso implementado|A orientar|
+|`rihad.orientation.court`|Siga as placas da Corte pelas ruas ao sul. / Junto à muralha sul, passe pela grade e entre pela porta de madeira.|A; 214541c Arena_Rihad.js; adaptação de orientação ao percurso implementado|A orientar|
+|`rihad.orientation.gate`|Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte.|A; 214541c Arena_Rihad.js; adaptação de orientação ao percurso implementado|A orientar|
+|`common.rumors`|Até onde sei, não está acontecendo muita coisa.|T; TEMPLATE.DAT #0159 alternativa1; rumores genéricos, não ativa eventos|A orientar|
+|`common.city`|Aqui em {city}, siga as placas para encontrar a Pousada, a Corte e o Portão urbano.|A; Fala criada para a sinalização desta versão|A orientar|
+|`common.palace`|Acho que a {rulerTitle} está procurando alguém no palácio. Se estiver recebendo visitantes na sala de audiência, poderá contar tudo.|A/T; TEMPLATE.DAT #0202 alternativa1; %t/%g adaptados ao título conhecido de Blubamka; sem missão secundária|A orientar|
+|`common.stonekeep`|Você já conhece {destination}. Para viajar, siga as placas do Portão urbano.|A; Orientação do projeto; destino só após aceite de Blubamka|A orientar|
+|`common.fang`|{destination} já é um destino conhecido. Você pode consultar o Mapa mundial e as viagens no portão.|A; Orientação do projeto; só após entrega legítima do pergaminho|A orientar|
+|`rihad.inn.keeper.local`|O quarto está disponível, sem custo. Siga as placas até a cama e interaja para descansar.|A; RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto|A orientar|
+|`rihad.guard.court.01.local`|A grade fica adiante, ao sul. Atravesse o vão e siga até a porta de madeira da corte. / Para viajar, volte seguindo as placas do Portão urbano.|A; RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto|A orientar|
+|`rihad.guard.court.01.beforeRia`|Esta é a aproximação da corte. Para descansar, siga as placas da Pousada.|A; Texto anterior à visão; adaptação do projeto|A orientar|
+|`rihad.civilian.square.01.local`|As placas apontam a Pousada e o Portão urbano. Fica mais fácil se seguir o passeio de pedra.|A; RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto|A orientar|
+|`rihad.regional.elder.01.local`|O passeio de pedra liga os quarteirões. As placas ajudam a encontrar a Pousada e o Portão urbano.|A; RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto|A orientar|
+|`rihad.regional.artisan.01.local`|O avental já viu dias melhores, mas ainda aguenta o trabalho. A entrada da Pousada fica logo ali.|A; RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto|A orientar|
+|`rihad.regional.traveler.01.local`|Quando for partir, procure o Portão urbano. As viagens disponíveis aparecem por lá ou no Mapa mundial.|A; RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto|A orientar|
+|`rihad.regional.guardvariant.01.local`|Mantenha a passagem livre junto à grade. As placas indicam o caminho de volta ao Portão urbano.|A; RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto|A orientar|
