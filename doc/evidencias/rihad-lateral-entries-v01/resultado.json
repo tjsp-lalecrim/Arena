@@ -1,0 +1,96 @@
+{
+  "browser": "157.0.8103.80",
+  "baseline": "214541c",
+  "checks": [
+    "East/west closed houses remain unavailable/colliding, with no transfer or persistent-state change after Enter/click; source events unchanged.",
+    "Inn enters through real Enter and click on upper artwork; returns through unchanged normal exit, state preserved.",
+    "All ten east/west internal open passages crossed both ways; court/bed/queen approaches and exits accessible. No new opening/closing mechanic claimed.",
+    "Both generator replays stable; dimensions, regions, every event and four native passage bits preserved against214541c.",
+    "Isolated normal slot19 saves/loads preserve actor, inventory/resources, quests/receipts and position; RAM saves remain blocked."
+  ],
+  "crossed": [
+    {
+      "mapId": 18,
+      "anchor": [
+        30,
+        18
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 18,
+      "anchor": [
+        21,
+        18
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 18,
+      "anchor": [
+        63,
+        27
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 18,
+      "anchor": [
+        54,
+        30
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 18,
+      "anchor": [
+        21,
+        33
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 18,
+      "anchor": [
+        30,
+        36
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 18,
+      "anchor": [
+        63,
+        51
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 18,
+      "anchor": [
+        21,
+        51
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 11,
+      "anchor": [
+        102,
+        27
+      ],
+      "bothDirections": true
+    },
+    {
+      "mapId": 11,
+      "anchor": [
+        60,
+        27
+      ],
+      "bothDirections": true
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "ownerEvaluation": "Visual assessment pending integrated test; technical coverage only. No personal saves."
+}

@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "exteriorAtlas": "Arena_Rihad_Lateral_Exterior_V01_D",
+  "interiorAtlas": "Arena_Rihad_Lateral_Interior_V01_D",
+  "modules": {
+    "urbanE": {
+      "w": 1,
+      "h": 2,
+      "tile": 640
+    },
+    "urbanW": {
+      "w": 1,
+      "h": 2,
+      "tile": 642
+    },
+    "timberE": {
+      "w": 2,
+      "h": 2,
+      "tile": 704
+    },
+    "timberW": {
+      "w": 2,
+      "h": 2,
+      "tile": 706
+    },
+    "stoneE": {
+      "w": 2,
+      "h": 2,
+      "tile": 708
+    },
+    "stoneW": {
+      "w": 2,
+      "h": 2,
+      "tile": 710
+    }
+  },
+  "interiors": {
+    "inn": [
+      [
+        30,
+        18
+      ],
+      [
+        21,
+        18
+      ],
+      [
+        63,
+        27
+      ],
+      [
+        54,
+        30
+      ],
+      [
+        21,
+        33
+      ],
+      [
+        30,
+        36
+      ],
+      [
+        63,
+        51
+      ],
+      [
+        21,
+        51
+      ]
+    ],
+    "court": [
+      [
+        102,
+        27
+      ],
+      [
+        60,
+        27
+      ]
+    ]
+  },
+  "notes": "Urban E/W follows original side6/4. Bidirectional internal thresholds have no canonical single facing; project chooses E for centers left of map midpoint, W for right. Static presentation only, no door animations/state."
+}

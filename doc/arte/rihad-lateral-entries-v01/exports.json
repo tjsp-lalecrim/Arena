@@ -1,0 +1,128 @@
+{
+  "master": "art/masters/rihad-lateral-entries-v01/source.png",
+  "cell": [
+    48,
+    48
+  ],
+  "modules": [
+    {
+      "key": "urbanE",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tile": 640,
+      "xy": [
+        389,
+        2
+      ],
+      "size": [
+        37,
+        92
+      ]
+    },
+    {
+      "key": "urbanW",
+      "sourceRect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "tile": 642,
+      "xy": [
+        485,
+        2
+      ],
+      "size": [
+        37,
+        92
+      ]
+    },
+    {
+      "key": "timberE",
+      "sourceRect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "tile": 704,
+      "xy": [
+        408,
+        386
+      ],
+      "size": [
+        48,
+        92
+      ]
+    },
+    {
+      "key": "timberW",
+      "sourceRect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "tile": 706,
+      "xy": [
+        504,
+        386
+      ],
+      "size": [
+        47,
+        92
+      ]
+    },
+    {
+      "key": "stoneE",
+      "sourceRect": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "tile": 708,
+      "xy": [
+        597,
+        386
+      ],
+      "size": [
+        54,
+        92
+      ]
+    },
+    {
+      "key": "stoneW",
+      "sourceRect": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "tile": 710,
+      "xy": [
+        693,
+        386
+      ],
+      "size": [
+        54,
+        92
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "path": "img\\tilesets\\Arena_Rihad_Lateral_Exterior_V01_D.png",
+      "sha256": "2bc31048e9d5cf04268debddf6beb62297e5a25b7fa8c1b10a5f2708eb5981f5"
+    },
+    {
+      "path": "img\\tilesets\\Arena_Rihad_Lateral_Interior_V01_D.png",
+      "sha256": "8374e3e3af1daf9bfbd5137d416d4b9c5aaece326df5ed1576e68385e890e885"
+    }
+  ],
+  "method": "Uniform scale/crop only; original alpha retained; prior atlas banks retained"
+}

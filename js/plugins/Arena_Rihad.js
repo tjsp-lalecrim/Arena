@@ -93,6 +93,29 @@ var ArenaRihad;
   visitOutskirts:function(i){var o=$arenaRihad.outskirts;return route(i,$arenaRihad.arrival.mapId,o.accessEventId,o.entry);},
   returnToArrival:function(i){var o=$arenaRihad.outskirts;return route(i,o.entry.mapId,o.returnEventId,o.return);}
  };
+ // The lateral inn leaf spans two tiles; both address the same existing event.
+ var innMapTouch=Scene_Map.prototype.processMapTouch;
+ Scene_Map.prototype.processMapTouch=function(){
+  if(!TouchInput.isPressed())this._arenaInnPointer=false;
+  if(here()&&TouchInput.isTriggered()){
+   var p=$arenaRihad.inn.entrance,x=$gameMap.canvasToMapX(TouchInput.x),y=$gameMap.canvasToMapY(TouchInput.y);
+   $gameTemp._arenaInnApproach=false;
+   if(x===p[0]&&(y===p[1]||y===p[1]-1)&&ArenaNarrative.isCampaign()&&$gamePlayer.canMove()&&!$gameMessage.isBusy()&&!$gameMap.isEventRunning()){
+    this._arenaInnPointer=true;$gameTemp._arenaInnApproach=true;$gameTemp.setDestination($arenaRihad.inn.approach[0],$arenaRihad.inn.approach[1]);return;
+   }
+  }
+  if(!this._arenaInnPointer)innMapTouch.apply(this,arguments);
+ };
+ var innMapUpdate=Scene_Map.prototype.update;
+ Scene_Map.prototype.update=function(){
+  innMapUpdate.apply(this,arguments);
+  if(!$gameTemp._arenaInnApproach)return;
+  if(!here()||Input.dir4||Input.isTriggered('ok')||Input.isTriggered('menu')||TouchInput.isCancelled()||$gameMessage.isBusy()||!ArenaNarrative.isCampaign()){$gameTemp._arenaInnApproach=false;return;}
+  var p=$arenaRihad.inn.approach;
+  if($gamePlayer.x===p[0]&&$gamePlayer.y===p[1]&&!$gamePlayer.isMoving()&&$gamePlayer.canMove()&&!$gameMap.isEventRunning()){
+   $gameTemp._arenaInnApproach=false;$gameTemp.clearDestination();$gamePlayer.setDirection(4);$gameMap.event($arenaRihad.inn.accessEventId).start();
+  }else if(!$gameTemp.isDestinationValid()&&!$gamePlayer.isMoving())$gameTemp._arenaInnApproach=false;
+ };
  var terminateMessage=Window_Message.prototype.terminateMessage;
  Window_Message.prototype.terminateMessage=function(){terminateMessage.apply(this,arguments);if(urban()||outside()){
   $gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();
@@ -213,7 +236,7 @@ var ArenaRihad;
    var c=$arenaRihad;
    var informant=$gameMap.event(c.informantEventId);
    var road=$gameMap.event(3),outskirts=$gameMap.event(c.outskirts.accessEventId);
-   markers=[[informant.x,informant.y,'Informante',-58],[c.inn.entrance[0],c.inn.entrance[1],'Pousada · Entrar',-46,'#223932'],
+   markers=[[informant.x,informant.y,'Informante',-58],[c.inn.entrance[0],c.inn.entrance[1],'Pousada · Entrar',-82,'#223932'],
     [road.x,road.y,'Portão · Arredores',76],
     [outskirts.x,outskirts.y,'Arredores',112]];
    var way=guidance(), sign=nearby(c.signage.signs,'position',5);
@@ -226,7 +249,7 @@ var ArenaRihad;
     if(!atCourt)markers.unshift([sign.position[0],sign.position[1],arrows[sign[way]]+' '+(way==='court'?'Corte':'Portão · Arredores'),nearCourt?-76:18,'#223932']);
    }
    var door=nearby(c.signage.doors.filter(function(d){return d.tile[0]!==c.inn.entrance[0]||d.tile[1]!==c.inn.entrance[1];}),'approach',2);
-   if(door)markers.push([door.tile[0],door.tile[1],door.type+' · Fechado',-46,'#3d3028']);
+   if(door)markers.push([door.tile[0],door.tile[1],door.type+' · Fechado',door.side===4||door.side===6?-82:-46,'#3d3028']);
   }
   if(inInn()){
    var keeper=$gameMap.event($arenaRihad.inn.keeperEventId),exit=$gameMap.event($arenaRihad.inn.exitEventId);
