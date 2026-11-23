@@ -12,7 +12,7 @@ Compilação por `tools/rihad-lateral-entries.cjs`/`node tools/build-rihad-arriv
 
 Pousada: clique em313,41 ou313,42 aproxima até314,42 e aciona o mesmo evento7 uma única vez; direção/Enter e transferências continuam nativos. Outra direção/clique/menu cancela a aproximação. Só essa entrada funcional recebe o alvo visual ampliado; casas indisponíveis mantêm colisão/aviso, sem transferência. Nenhum estado de porta novo no save, namespace ou migração pessoal.
 
-[Verificação focal e capturas](evidencias/rihad-lateral-entries-v01/resultado.json): reconstrução dupla, eventos/regiões/bits nativos, aproximação e clique/teclado, vãos nos dois sentidos, cama/Blubamka e save/load em perfil isolado. Avaliação visual agrupada pendente, sem aprovação presumida. A prévia Pages desta entrega inclui entradas e cenário dos Arredores; referência e roteiro vigentes em [Pages](PAGES_INFRA.md). Release no fechamento.
+[Verificação focal e capturas](evidencias/rihad-lateral-entries-v01/resultado.json): reconstrução dupla, eventos/regiões/bits nativos, aproximação e clique/teclado, vãos nos dois sentidos, cama/Blubamka e save/load em perfil isolado. Avaliação visual agrupada pendente, sem aprovação presumida. A [prévia Pages verificada3741159](PAGES_INFRA.md#prévia-de-entradas-laterais-e-cenário-dos-arredores--23112026) inclui entradas e cenário dos Arredores. Origem/saves preservados, roteiro visual no mesmo registro. Release no fechamento.
 
 ## Complemento dos interiores de Hammerfell — 23/11/2026
 
