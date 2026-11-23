@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "tool": "native image_gen",
   "model": "not exposed by native tool; no CLI fallback",
-  "references": "../rihad-npcs-v01/generation.json â€” same eight archived images and attribution caveats; current review board for style/scale",
+  "references": "../rihad-npcs-v01/generation.json — same eight archived images and attribution caveats; current review board for style/scale",
   "interpretation": "Four new functional Rihad citizens; names, placement, occupations and dress are project interpretations, not canonical named citizens or authenticated uniforms.",
   "approval": "Pending integrated owner visual evaluation",
   "actors": [

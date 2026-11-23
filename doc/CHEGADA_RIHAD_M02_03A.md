@@ -15,7 +15,7 @@ Todos os quatro têm falas breves e retratos144×144. Artesã/viajante possuem12
 
 Falas limitadas a placas, caminhos públicos e ambientação, sem antecipar destinos secretos. Não há compra/venda ou profissão jogável. Os personagens móveis usam rotas curtas não ignoráveis, pausam ao conversar e respeitam colisões; as vias obrigatórias e entradas permanecem livres. O contrato de carregamento existente insere somente os novos IDs ausentes em saves urbanos antes de criar os sprites, preservando os estados já presentes. Não muda namespace nem toca saves pessoais.
 
-[Capturas e resultado focal](evidencias/hammerfell-variants-v01/resultado.json): leitura e retratos, quatro direções/quadros móveis, colisões, caminhos até pousada/corte, reconstrução e retomada em perfil isolado. Avaliação visual do responsável permanece pendente, agrupada no próximo teste integrado. Roteiro: conversar com informante na chegada; observar idoso, moradora e viajante junto ao passeio; seguir placas Pousada, conversar com artesã e responsável; ir à corte e comparar os dois guardas. Publicação acumulada solicitada nesta entrega, registrada em [Pages](PAGES_INFRA.md); release continua no fechamento.
+[Capturas e resultado focal](evidencias/hammerfell-variants-v01/resultado.json): leitura e retratos, quatro direções/quadros móveis, colisões, caminhos até pousada/corte, reconstrução e retomada em perfil isolado. Avaliação visual do responsável permanece pendente, agrupada no próximo teste integrado. Roteiro: conversar com informante na chegada; observar idoso, moradora e viajante junto ao passeio; seguir placas Pousada, conversar com artesã e responsável; ir à corte e comparar os dois guardas. [Publicação acumulada verificada](PAGES_INFRA.md#prévia-acumulada-de-npcs-de-hammerfell--23112026), fonte `d04cc5a8a65ca18796dd196dfd097faf4e4aaf7d`; inclui informante, trio e variantes. Release continua no fechamento.
 
 ## Trio regional Redguard — 23/11/2026
 
@@ -39,7 +39,7 @@ Referência funcional verificada: `731a22baa869b81424e7057302062ed5ab71d541`. [P
 
 **Roteiro integrado futuro:** no caminho da chegada à pousada, observar a moradora e conversar; entrar na pousada, falar com a responsável, acessar o quarto e sair; na ida à corte, falar com o guarda ao norte da grade e continuar pela entrada existente. Setas/Enter e clique usam os mesmos componentes. Acesso RAM já existente **Testes / Debug → Campanha e mapas → Rihad · chegada nível 1 (RAM)** permite inspecionar moradora/pousada; **Rihad · audiência (RAM)** e saída da corte encurtam o acesso ao guarda. Sem novo laboratório ou comando no título.
 
-Avaliação visual do trio agrupada ao próximo teste integrado, sem aprovação presumida. Consulta do manifesto público em23/11/2026: Pages permanece em `7597fd7de672132c866947a961ea335b5e874264`; informante `7e4dbac` e o trio desta entrega aguardam uma publicação manual própria. Não publicar nem criar release por consequência. Inventário de inimigos, lava, viagens, descoberta, custos de descanso e fluxo MQ02 não alterados.
+Avaliação visual do trio agrupada ao próximo teste integrado, sem aprovação presumida. Registro histórico anterior à publicação acumulada acima: consulta do manifesto em23/11/2026 apontava `7597fd7de672132c866947a961ea335b5e874264`; informante `7e4dbac` e trio aguardavam publicação, atendida pela prévia acumulada acima. Release continua separada. Inventário de inimigos, lava, viagens, descoberta, custos de descanso e fluxo MQ02 não alterados.
 
 
 ## Informante V01 — 23/11/2026

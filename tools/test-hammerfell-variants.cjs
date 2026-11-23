@@ -1,4 +1,4 @@
-// Three regional NPCs only: navigation, native event movement/dialogue, old-save insertion.
+// Four regional variants only: navigation, native event movement/dialogue, old-save insertion.
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),assert=require('node:assert/strict'),{chromium}=require('playwright');
 const root=path.resolve(__dirname,'..'),out=path.join(root,'doc/evidencias/hammerfell-variants-v01'),plan=require('../doc/mapas/RIHAD_NPCS_M02.json');
 const read=n=>JSON.parse(fs.readFileSync(path.join(root,'data',n+'.json'),'utf8'));
