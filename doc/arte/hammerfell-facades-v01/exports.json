@@ -1,0 +1,215 @@
+{
+  "master": "art/masters/hammerfell-facades-v01/source.png",
+  "export": "img\\tilesets\\Arena_Hammerfell_Facades_V01_D.png",
+  "sha256": "ce0e078561f8a80d3a28542f2df478984e1d85072a16dc525fbfdb984e24e0ae",
+  "cell": [
+    48,
+    48
+  ],
+  "modules": [
+    {
+      "key": "awningRustSouth",
+      "sourceRect": [
+        0,
+        0,
+        362,
+        362
+      ],
+      "exportSize": [
+        71,
+        44
+      ],
+      "position": [
+        12,
+        2
+      ]
+    },
+    {
+      "key": "awningTealSouth",
+      "sourceRect": [
+        362,
+        0,
+        724,
+        362
+      ],
+      "exportSize": [
+        71,
+        44
+      ],
+      "position": [
+        108,
+        2
+      ]
+    },
+    {
+      "key": "awningRustEast",
+      "sourceRect": [
+        724,
+        0,
+        1086,
+        362
+      ],
+      "exportSize": [
+        92,
+        64
+      ],
+      "position": [
+        194,
+        16
+      ]
+    },
+    {
+      "key": "awningTealEast",
+      "sourceRect": [
+        1086,
+        0,
+        1448,
+        362
+      ],
+      "exportSize": [
+        92,
+        64
+      ],
+      "position": [
+        290,
+        16
+      ]
+    },
+    {
+      "key": "shuttersSouth",
+      "sourceRect": [
+        0,
+        362,
+        362,
+        724
+      ],
+      "exportSize": [
+        43,
+        44
+      ],
+      "position": [
+        2,
+        98
+      ]
+    },
+    {
+      "key": "shuttersEast",
+      "sourceRect": [
+        362,
+        362,
+        724,
+        724
+      ],
+      "exportSize": [
+        12,
+        44
+      ],
+      "position": [
+        114,
+        98
+      ]
+    },
+    {
+      "key": "innSign",
+      "sourceRect": [
+        724,
+        362,
+        1086,
+        724
+      ],
+      "exportSize": [
+        44,
+        37
+      ],
+      "position": [
+        194,
+        101
+      ]
+    },
+    {
+      "key": "houseSign",
+      "sourceRect": [
+        1086,
+        362,
+        1448,
+        724
+      ],
+      "exportSize": [
+        44,
+        38
+      ],
+      "position": [
+        290,
+        101
+      ]
+    },
+    {
+      "key": "potBasket",
+      "sourceRect": [
+        0,
+        724,
+        362,
+        1086
+      ],
+      "exportSize": [
+        44,
+        40
+      ],
+      "position": [
+        2,
+        196
+      ]
+    },
+    {
+      "key": "sacks",
+      "sourceRect": [
+        362,
+        724,
+        724,
+        1086
+      ],
+      "exportSize": [
+        44,
+        40
+      ],
+      "position": [
+        98,
+        196
+      ]
+    },
+    {
+      "key": "crates",
+      "sourceRect": [
+        724,
+        724,
+        1086,
+        1086
+      ],
+      "exportSize": [
+        41,
+        44
+      ],
+      "position": [
+        195,
+        194
+      ]
+    },
+    {
+      "key": "lattice",
+      "sourceRect": [
+        1086,
+        724,
+        1448,
+        1086
+      ],
+      "exportSize": [
+        44,
+        40
+      ],
+      "position": [
+        290,
+        196
+      ]
+    }
+  ]
+}
