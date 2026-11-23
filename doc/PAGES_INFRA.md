@@ -146,3 +146,9 @@ Verificação pública: Chrome isolado abriu o título sem erro; manifesto exato
 5. **Opcional**, somente com save anterior à saída de Imperial Dungeons: no nível1, Gate informa o mínimo2 e permite recuar; no nível2, saída/continuação normais. Quem já está em Rihad não precisa repetir esse trecho.
 
 O mapa vetorial atual é uma **versão funcional pendente de avaliação visual**. Fidelidade geográfica e visual ao Arena original permanece objetivo; arte definitiva pode aguardar esse feedback. Não declarar aprovação pela publicação. Dragon gate exterior, vagonetes, Servo definitivo e ilustrações mantêm suas dependências documentadas; esta entrega não gera assets nem resolve esses itens por associação.
+
+## Prévia acumulada de NPCs de Hammerfell — 23/11/2026
+
+Fonte selecionada `d04cc5a8a65ca18796dd196dfd097faf4e4aaf7d`, promovida pelo Git Flow, inclui informante7e4dbac, trio2d95d3e e variantesc0e11f7. Pacote com433arquivos de runtime,56.326.334bytes incluindo manifesto; SHA-256 `a39c8a3edd34d637d9c3d4047537b18b7cd277136b30d3e4cabc0aca5086402f`. Receita existente, checkout LF igual ao Linux, sem normalização adicional ou relaxamento de validação. Registro explícito na política; workflow manual pela main, SHA inteiro e publish=true. Publicação aguardando execução, não declarada concluída.
+
+Roteiro integrado: chegada/informante → idoso e civis junto ao passeio → placas Pousada/artesã → responsável no interior → corte/dois guardas. Conversar por Enter/clique e observar os circuitos curtos sem bloquear vias; prosseguir a MQ02 normalmente. Avaliação artística agrupada pendente. Origem pública e namespace `arena:m01:save-v1` preservados; não limpar dados nem transferir saves de outras origens. Sem release/tag.
