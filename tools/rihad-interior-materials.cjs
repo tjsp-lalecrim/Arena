@@ -79,4 +79,5 @@ module.exports = function applyInterior(map, kind) {
     sets[id] = tileset;
     fs.writeFileSync(setsFile,'[\n'+sets.map(s=>JSON.stringify(s)).join(',\n')+'\n]\n');
     map.tilesetId = id;
+    require('./rihad-interior-decor.cjs')(map,kind);
 };

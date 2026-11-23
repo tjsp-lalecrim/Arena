@@ -1,5 +1,13 @@
 # M02-03A — primeira chegada a Rihad
 
+## Complemento dos interiores de Hammerfell — 23/11/2026
+
+Seis módulos,11colocações: tapeçaria ferrugem/ocre, caminho de mesa teal, luminária frontal/lateral, bandeja com jarro/copos e jarro tampado. [Fontes/prompts/mestre](arte/hammerfell-interior-decor-v01/generation.json) · [exportação e hash](arte/hammerfell-interior-decor-v01/exports.json) · [posições e dimensões](mapas/RIHAD_INTERIOR_DECOR_V01.json). Base: TAVERN4/PALACE2 e materiais TAVA/TAVB, NOBB, TABLE, tecidos/carpete na consulta local já decodificada. As novas peças e suas posições são interpretações regionais; não heráldica canônica, iluminação dinâmica, novos serviços ou loot.
+
+Mesa, balcão, portas, trono, braseiros, fontes, carpete e cama preservados. Complementos no salão da pousada e parede do quarto, com tecidos/luminárias na parede da audiência, afastados de Blubamka. Objetos independentes de piso/parede, alpha real, dimensões em48px e escala uniforme. Atlas D próprio768×768: banco esquerdo mantém a folha anterior, banco direito IDs640–767 recebe o complemento; cama E intacta. Configuração de origem recomposta por `node tools/build-rihad-arrival.cjs`; exportação por `python tools/export-hammerfell-interior-decor.py`. Sem eventos novos, sem mexer em colisões ou quests.
+
+[Capturas/verificação focal](evidencias/hammerfell-interior-decor-v01/resultado.json): circulação, cama e recuperação/visão única, audiência/entrega, retomada de saves sintéticos e reconstrução. Avaliação visual dos interiores, fachadas e NPCs continua pendente e agrupada. Publicação solicitada nesta entrega registrada em [Pages](PAGES_INFRA.md); release permanece no fechamento.
+
 ## Fachadas e adereços de Hammerfell V01 — 23/11/2026
 
 Complemento visual modular, sem novos serviços/interiores: [mestre, prompt, referências e correção de projeção](arte/hammerfell-facades-v01/generation.json), [exportação/recortes/hash](arte/hammerfell-facades-v01/exports.json), [prancha](arte/hammerfell-facades-v01/review.png) e [21 ocorrências explícitas](mapas/RIHAD_FACHADAS_V01.json). Base arquitetônica DCN.INF/CITYW1 já reconstruída; panos/cores/madeira complementados pela direção regional Redguard. Colocações de adereços, padrões e símbolos são **interpretações artísticas**, não objetos/nomes canônicos demonstrados pelo original. Atribuição das oito referências complementares conserva as ressalvas do conjunto de NPCs.

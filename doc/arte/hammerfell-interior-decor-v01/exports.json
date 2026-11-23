@@ -1,0 +1,113 @@
+{
+  "master": "art/masters/hammerfell-interior-decor-v01/source.png",
+  "export": "img\\tilesets\\Arena_Hammerfell_Interior_Decor_V01_D.png",
+  "sha256": "c89b7d48ee6fb4c591661f36878cf01520ed508cf38518559fc8077a0c8ae4e9",
+  "cell": [
+    48,
+    48
+  ],
+  "modules": [
+    {
+      "key": "tapestry",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "exportSize": [
+        44,
+        82
+      ],
+      "position": [
+        386,
+        7
+      ]
+    },
+    {
+      "key": "runner",
+      "sourceRect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "exportSize": [
+        92,
+        35
+      ],
+      "position": [
+        482,
+        6
+      ]
+    },
+    {
+      "key": "lampS",
+      "sourceRect": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "exportSize": [
+        43,
+        92
+      ],
+      "position": [
+        578,
+        2
+      ]
+    },
+    {
+      "key": "lampE",
+      "sourceRect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "exportSize": [
+        44,
+        74
+      ],
+      "position": [
+        386,
+        155
+      ]
+    },
+    {
+      "key": "tray",
+      "sourceRect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "exportSize": [
+        34,
+        36
+      ],
+      "position": [
+        511,
+        174
+      ]
+    },
+    {
+      "key": "jar",
+      "sourceRect": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "exportSize": [
+        32,
+        44
+      ],
+      "position": [
+        584,
+        146
+      ]
+    }
+  ]
+}
