@@ -68,6 +68,7 @@ module.exports = function buildInn(city, config, recovery) {
     sets[8].flags[768] = sets[8].flags[776] = 15;
     fs.writeFileSync(path.join(root, 'data/Tilesets.json'), '[\n' + sets.map(s => JSON.stringify(s)).join(',\n') + '\n]\n');
     require('./rihad-interior-materials.cjs')(map, 'inn');
+    require('./rihad-npcs.cjs')(map, config, plan.mapId);
     fs.writeFileSync(path.join(root, 'data/Map018.json'), JSON.stringify(map) + '\n');
     const infos = read('data/MapInfos.json');
     if (infos[18] && infos[18].name !== plan.name) throw Error('Mapa 18 ocupado');

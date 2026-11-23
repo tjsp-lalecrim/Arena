@@ -1,0 +1,22 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Original geometry/events retained; court approach reachable with guard present, no quest gate or secret destination disclosed.",
+    "Inn entry, new keeper portrait/text, accessible bed and normal exit preserved; guard/civil dialogue leaves actor/party/all persistent state unchanged.",
+    "Four directions loaded for all three; civilian real movement includes all directions/patterns in bounded path. Contact collision/dialogue works. Old city save inserts exactly one visible guard/civil before sprites; later save restores native route position/index. RAM stays isolated."
+  ],
+  "observedDirections": [
+    2,
+    6,
+    4,
+    8
+  ],
+  "observedPatterns": [
+    1,
+    2,
+    0
+  ],
+  "errors": [],
+  "missing": [],
+  "manual": "Art evaluation pending integrated test. Synthetic isolated saves only, no personal data. Existing Ria/Blubamka assets unchanged."
+}

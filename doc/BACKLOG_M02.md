@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Trio regional Redguard:** [pousadeira, guarda da corte e moradora](CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026), com retratos/quatro direções e caminhada da moradora. Avaliação visual agrupada pendente; informante e Blubamka preservados. Pages continua7597fd7: informante7e4dbac e este trio aguardam publicação manual, sem release.
+
 **Informante de Rihad V01:** [sprite/retrato próprios e validação focal](CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026), orientação de campanha preservada. Avaliação visual agrupada pendente, sem aprovação presumida; Pages/release separados.
 
 **Mapa mundial e viagem rápida — catálogo9b6f0ad e complemento público:** [entrega de campanha, serviço comum ao portão e roteiro](plugins/Arena_WorldMap.md). Nove províncias e273 localidades nomeadas do original, listas alfabéticas/rolagem e indisponíveis desabilitados; destinos de quest, incluindo Stonekeep/Fang Lair, mantêm sigilo até descoberta; consulta em interiores, sem bypass da retaliação. Mapa vetorial funcional, pendente de avaliação visual; fidelidade geográfica/visual ao original continua objetivo, arte definitiva aguarda feedback. Estados e motivos textuais/símbolos distintos conferidos para publicação manual. Viagem mantém a elipse sem custo/cura/tempo adicional; sem novas áreas ou fechamento de MQ02.

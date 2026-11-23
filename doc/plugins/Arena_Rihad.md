@@ -1,3 +1,9 @@
+## v0.5.0 — três NPCs regionais
+
+`ArenaRihad.json.regionalNpcs` deriva de `doc/mapas/RIHAD_NPCS_M02.json`, aplicado por `tools/rihad-npcs.cjs` aos mapas existentes. `innkeeper` mantém condições/fala do posto; `talkRegional(interpreter,id)` valida mapa/evento/distância/MQ02≥10 e apresenta texto/retrato configurados, sem editar quest/recursos. Native Game_Event fornece quatro orientações, contato e trava durante diálogo; só a moradora usa rota repetida/não ignorável (sem through), pausas e animação. Não cria núcleo de população/combate.
+
+No load não transferido, inserir somente IDs ausentes900/901 antes de `createDisplayObjects`, para que saves anteriores ganhem sprites visíveis. Reaplicar imagem/directionFix=false dos três sem reinicializar posição/rota existente. Estado nativo de Game_Map no save, sem novo namespace ou slots. Configuração inválida falha no boot, sem defaults silenciosos. Nenhum plugin/motor/dependência externa novo. [Fontes, arte, testes e roteiro](../CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026).
+
 ## v0.4.0 — informante V01
 
 `ArenaRihad.json.informantVisual` configura characterName/faceName/faceIndex0/direction2, gerado em `rihad-city-route.cjs`. Evento1 imóvel/fixo usa novo sprite. Ao carregar Map009, reaplica imagem/pose atual somente ao informante não apagado, sem recriar mapa/eventos ou mudar posição e estado. `ArenaRihad.inform` fornece retrato ao helper compartilhado; fontes/textos e wrapper de Ria20→30 intactos. Placa elevada para liberar a cabeça. Retrato/folha via exportação determinística; nenhum plugin/dependência/namespace novo. [Arte, testes, limites e acesso](../CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026). Blubamka/heróis preservados, avaliação visual pendente.

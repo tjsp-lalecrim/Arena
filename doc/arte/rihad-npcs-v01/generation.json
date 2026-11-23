@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-23",
+  "tool": "native image_gen",
+  "references": [
+    {
+      "file": "doc/prints/redguard-referencia-0ca234e3-50ec-4590-b24e-f4310711bb69.png",
+      "sha256": "8cae12d64789852811ce85eb8fd62b55d6c24e18ae8564d6439fee2c0b014fea",
+      "description": "Ilustração de homem de colete vermelho e camisa clara, associável à linguagem visual de Redguard/Cyrus.",
+      "attribution": "Autoria/publicação deste recorte não confirmadas; não afirmar oficial."
+    },
+    {
+      "file": "doc/prints/redguard-referencia-533b0f3f-c3cd-48e1-80ef-b74e126019c2.png",
+      "sha256": "459855d756e29b2fa10540de329c745c8786290253b29c9ac610d8fd56a3e85d",
+      "description": "Captura reconhecível de Alik’r de Skyrim: camadas, lenços e faixas.",
+      "attribution": "Referência de jogo reconhecível; URL original e eventual uso de mods não preservados, arquivo não autenticado como divulgação oficial."
+    },
+    {
+      "file": "doc/prints/redguard-referencia-6ed72258-368b-4700-8453-b422b13e0dce.png",
+      "sha256": "2b345b3af7a4ec845c82e6362fba3bf7816c514000e6a8c2ba0e118557d4ba9d",
+      "description": "Ilustração de viajante/maga no deserto, tecidos sobrepostos e lenço claro.",
+      "attribution": "Autoria e estatuto oficial não confirmados; tratar como interpretação visual, sem copiar poderes/objetos."
+    },
+    {
+      "file": "doc/prints/redguard-referencia-96530bf9-8b8a-4929-8e6e-c6caaae568ee.png",
+      "sha256": "eaa3d68335dd441ce11c789a347d9199e5dab95d17bda27f4dbf61aa15e3eba6",
+      "description": "Ilustração assinada de espadachim numa taverna, inscrições Sentinel/202 4E.",
+      "attribution": "Arte autoral/fã aparente, não fonte canônica; assinatura visível sem autoria verificada. Não importar inscrições, cronologia, tatuagens ou história."
+    },
+    {
+      "file": "doc/prints/redguard-referencia-d20360fe-c969-4964-a41f-3fd46524e2bc.png",
+      "sha256": "5235bb7cb8c30eea7268c01c718dd8f6b037c6f6756cbfdc60a7c3cb9154b127",
+      "description": "Montagem/capa com título The Elder Scrolls Adventures: Redguard e Cyrus.",
+      "attribution": "Elementos oficiais reconhecíveis, contexto confirmado pela página Bethesda; autoria da montagem/recorte não autenticada."
+    },
+    {
+      "file": "doc/prints/redguard-referencia-daf8c1f3-97fd-4c4f-9e21-5fe8d189444b.png",
+      "sha256": "d62c60a61b532b13fa4d17c4325bd7872d09f08b209228bb6a26793b3c463908",
+      "description": "Retrato feminino com lenço azul, brincos e moedas, assinatura ADR2016 aparente.",
+      "attribution": "Ilustração autoral/fã aparente; autoria completa e publicação oficial não verificadas. Usar composição/vestuário, não copiar personagem."
+    },
+    {
+      "file": "doc/prints/redguard-referencia-e128d4e7-7d33-4661-bc8a-6be3cd774762.png",
+      "sha256": "d1f24508555d15dd55a7d9d1baf053812b12f1d25c49c84c389034eb4bbda0cd",
+      "description": "Ilustração de mulher armada com capuz e armadura trabalhada.",
+      "attribution": "Origem e estatuto oficial não confirmados; não atribuir automaticamente a ESO/Skyrim."
+    },
+    {
+      "file": "doc/prints/redguard-referencia-f37b2b7b-63e3-4d04-b58f-fd29ab0fa915.png",
+      "sha256": "791ce52ae74f78716288a71b2d40c760c243bcdaecd5b259ed5c6282fac63bd0",
+      "description": "Ilustração de guerreiro de turbante/capa vermelha e lâmina curva.",
+      "attribution": "Origem e estatuto oficial não confirmados; não apresentar como uniforme canônico de Rihad."
+    }
+  ],
+  "officialContext": [
+    {
+      "url": "https://elderscrolls.bethesda.net/en-US/redguard",
+      "evidence": "Official context of Redguard/Cyrus/Hammerfell, not authentication of every archived image."
+    },
+    {
+      "url": "https://bethesda.net/en-US/news/skyrim-special-edition-creation-club-sneak-peek-2019",
+      "evidence": "Official Skyrim discussion of Cyrus/outfits; no claim of Arena-era uniform continuity."
+    }
+  ],
+  "scope": "Three reusable NPCs, each4 map orientations; civilian12 articulated walk frames, stationary innkeeper/guard4 standing poses each. Portraits for all three short dialogue interactions. No combat assets, quests, fees, public release or Pages.",
+  "comparisonExisting": {
+    "informant": "Preserve V01. Already brown-skinned, layered green/ochre/red cloth, but closer to generic Arena citizen broad collar than Alik’r linen wrapping. Distinction is variety to assess, not a defect or automatic replacement. Static south only remains its existing scope.",
+    "blubamka": "Preserve V01 blue/burgundy royal robe and circlet. Less wrapped textile than supplied civil references, appropriate possible occupational variation. Wiki Arena_People p3 identifies her as female Redguard; individual face/robe remain artistic interpretation. Historical generation prompt not rewritten. Do not require all Redguards to wear turbans or copy the queen to civilians."
+  },
+  "actors": [
+    {
+      "id": "innkeeper",
+      "name": "Responsável pela pousada",
+      "prompt": "Production asset for Arena RPG Maker MV: figurative painted dark fantasy, earth tones and readable restrained colors, soft upper-left light. Same character face, skin, hair, clothes and accessories across portrait and every orthographic pose. No text, labels, UI, scenery, floor, cast ground shadow, checkerboard or opaque background. REAL TRANSPARENT alpha. Natural human proportions, not chibi, pixel art, anime, isometric, modern costume or photorealistic 3D. Portrait is head/neck/shoulders/torso aligned in natural three-quarter view toward image RIGHT, not looking back over shoulder. Map figures are full body high-angle orthographic TOP-DOWN, distinct front/back/side top planes, never frontal side-view paper dolls. Keep all heads/feet/accessories inside their own cells with ample alpha gutters; stable scale and foot support, no cropping. Supplied franchise images establish regional visual inspiration, not exact canon identities. These NPCs are project interpretations in Arena-era Rihad; do not copy recognizable named characters or introduce Skyrim quests/story symbols.\nOne landscape transparent sheet, ratio2:1. Leftmost35percent: ONE bust portrait centered vertically, occupying only that left panel. Remaining65percent: FOUR well-separated full-body stationary poses in an exact2columns x2rows equal grid: upper-left facing DOWN/south, upper-right facing LEFT/west, lower-left facing RIGHT/east, lower-right facing UP/north (back fully shown). All four poses of the SAME character, relaxed standing, feet supported, arms at rest, no walking cycle needed for this stationary post. Do not overlap cells or let portrait enter the right grid. No labels or extra miniatures.\nCharacter: a warm approachable Redguard woman around45, medium warm brown skin, broad pleasant face, dark tightly curled hair pinned in braids beneath a dark teal wrapped headscarf. Small plain brass hoop earrings, no crown or jewels. Civilian innkeeper work clothing: clean cream linen blouse with modest neckline and elbow sleeves, layered rust/copper overdress with broad blue-teal waist sash and a practical plain oatmeal apron, sturdy brown shoes. Sturdy natural build, hands calmly together near apron. No weapons, armor or exposed midriff. Use supplied female scarf portrait only for regional textile/earring ideas, not its face or revealing neckline; source Redguard cover for layered civilian cloth; existing informant sheet ONLY for project paint finish and top-down camera. Clearly different face and clothing from the informant and Queen Blubamka.",
+      "references": [
+        "doc\\prints\\redguard-referencia-daf8c1f3-97fd-4c4f-9e21-5fe8d189444b.png",
+        "doc\\prints\\redguard-referencia-d20360fe-c969-4964-a41f-3fd46524e2bc.png",
+        "art/masters/rihad-informant-v01/identity.png"
+      ],
+      "moving": false,
+      "generatedArtifact": "exec-8a172083-92c3-41c0-82cc-d38e6a8fba8c.png",
+      "master": "art/masters/rihad-npcs-v01/innkeeper.png",
+      "model": "Not exposed by native tool; no CLI/API fallback",
+      "approval": "Visual assessment pending integrated test, no owner approval inferred"
+    },
+    {
+      "id": "guard",
+      "name": "Guarda de Rihad",
+      "prompt": "Production asset for Arena RPG Maker MV: figurative painted dark fantasy, earth tones and readable restrained colors, soft upper-left light. Same character face, skin, hair, clothes and accessories across portrait and every orthographic pose. No text, labels, UI, scenery, floor, cast ground shadow, checkerboard or opaque background. REAL TRANSPARENT alpha. Natural human proportions, not chibi, pixel art, anime, isometric, modern costume or photorealistic 3D. Portrait is head/neck/shoulders/torso aligned in natural three-quarter view toward image RIGHT, not looking back over shoulder. Map figures are full body high-angle orthographic TOP-DOWN, distinct front/back/side top planes, never frontal side-view paper dolls. Keep all heads/feet/accessories inside their own cells with ample alpha gutters; stable scale and foot support, no cropping. Supplied franchise images establish regional visual inspiration, not exact canon identities. These NPCs are project interpretations in Arena-era Rihad; do not copy recognizable named characters or introduce Skyrim quests/story symbols.\nOne landscape transparent sheet, ratio2:1. Leftmost35percent: ONE bust portrait centered vertically, occupying only that left panel. Remaining65percent: FOUR well-separated full-body stationary poses in an exact2columns x2rows equal grid: upper-left facing DOWN/south, upper-right facing LEFT/west, lower-left facing RIGHT/east, lower-right facing UP/north (back fully shown). All four poses of the SAME character, relaxed standing, feet supported, arms at rest, no walking cycle needed for this stationary post. Do not overlap cells or let portrait enter the right grid. No labels or extra miniatures.\nCharacter: a serious but calm Redguard male city guard around30, deep dark brown skin, broad nose, close-cropped black curls under a sand/ivory cloth turban with a restrained muted ochre band; clean-shaven. Regional practical military equipment inspired by supplied Skyrim Alik’r clothes and red-cloaked warrior reference, but NOT a canonical uniform: quilted charcoal-blue tunic, layered weathered brown leather lamellar/scale vest with small dark iron details, dull maroon waist sash, light sand loose trousers, brown boots and bracers. One curved saber SHEATHED on anatomical RIGHT hip ending at knee, small round wood/leather shield strapped on anatomical LEFT forearm; left/right attachments must remain physically consistent in all views, NOT simply mirrored sides. No crown, magic, huge spikes or giant cape. Hands at rest; no attack stance. A short maroon shoulder cloth is fine, kept away from boots. Portrait same face/turban/shoulder armor, no dramatic action. No copied names, badges or new lore.",
+      "references": [
+        "doc\\prints\\redguard-referencia-533b0f3f-c3cd-48e1-80ef-b74e126019c2.png",
+        "doc\\prints\\redguard-referencia-f37b2b7b-63e3-4d04-b58f-fd29ab0fa915.png",
+        "art/masters/rihad-informant-v01/identity.png"
+      ],
+      "moving": false,
+      "generatedArtifact": "exec-4da4444d-74be-4299-a979-4776c0a3da17.png",
+      "master": "art/masters/rihad-npcs-v01/guard.png",
+      "model": "Not exposed by native tool; no CLI/API fallback",
+      "approval": "Visual assessment pending integrated test, no owner approval inferred"
+    },
+    {
+      "id": "civilian",
+      "name": "Moradora de Rihad",
+      "prompt": "Production asset for Arena RPG Maker MV: figurative painted dark fantasy, earth tones and readable restrained colors, soft upper-left light. Same character face, skin, hair, clothes and accessories across portrait and every orthographic pose. No text, labels, UI, scenery, floor, cast ground shadow, checkerboard or opaque background. REAL TRANSPARENT alpha. Natural human proportions, not chibi, pixel art, anime, isometric, modern costume or photorealistic 3D. Portrait is head/neck/shoulders/torso aligned in natural three-quarter view toward image RIGHT, not looking back over shoulder. Map figures are full body high-angle orthographic TOP-DOWN, distinct front/back/side top planes, never frontal side-view paper dolls. Keep all heads/feet/accessories inside their own cells with ample alpha gutters; stable scale and foot support, no cropping. Supplied franchise images establish regional visual inspiration, not exact canon identities. These NPCs are project interpretations in Arena-era Rihad; do not copy recognizable named characters or introduce Skyrim quests/story symbols.\nOne large landscape transparent sheet, ratio2:1. Leftmost25percent: ONE bust portrait isolated and centered vertically. Remaining75percent: EXACT3columns x4rows equal grid of12 full-body WALKING frames, with transparent gutters. ROW1 facing DOWN/south; ROW2 LEFT/west; ROW3 RIGHT/east; ROW4 UP/north (backs). Within each row columns are: LEFT leg leading with opposite arm forward; passing/neutral stance; RIGHT leg leading with opposite arm forward. Real articulated leg/hip/arm motion and subtle cloth response, not translated or rotated copies of one pose. Side-view legs separate naturally, front/back steps clearly differentiated. Stable head size/body scale/feet baseline within every equal cell, natural anatomy. Portrait cannot enter right grid, no labels, extra frames or scenery.\nCharacter: an older Redguard civilian woman around65, light copper/olive-brown skin distinct from the other NPCs, lined face, soft brown eyes, silver-grey textured hair braided and pinned in a low compact bun; NO turban or hood, so her hair is visible from all directions. Layered modest indigo cloth jacket over off-white tunic, a narrow faded ochre scarf loosely around neck, simple leather waist belt with one small practical pouch, loose warm grey trousers and flat dark brown boots. Small plain brass earrings only. Upright able-bodied walking posture; empty hands swing naturally, no cane, weapons, armor, huge jewelry or dangling giant baggage. Civilian daily-use clothes with subtle wear. Use Redguard supplied civil vest/blouse and female portrait for textile/skin/face variety, NOT exact identities or neckline; existing informant sheet ONLY for project paint finish. Maintain the grey braided bun, indigo jacket, ochre neck scarf and same pouch position across all12 true step frames. Clear front/back/left/right camera, no frame duplicated as fake movement.",
+      "references": [
+        "doc\\prints\\redguard-referencia-0ca234e3-50ec-4590-b24e-f4310711bb69.png",
+        "doc\\prints\\redguard-referencia-daf8c1f3-97fd-4c4f-9e21-5fe8d189444b.png",
+        "art/masters/rihad-informant-v01/identity.png"
+      ],
+      "moving": true,
+      "generatedArtifact": "exec-4c52ed40-fc1e-4b7b-a810-d72d634d7101.png",
+      "master": "art/masters/rihad-npcs-v01/civilian.png",
+      "model": "Not exposed by native tool; no CLI/API fallback",
+      "approval": "Visual assessment pending integrated test, no owner approval inferred"
+    }
+  ]
+}
