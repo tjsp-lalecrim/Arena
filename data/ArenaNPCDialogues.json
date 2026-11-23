@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "blocks": {
+    "rihad.orientation.rest": {
+      "id": "rihad.orientation.rest",
+      "texts": [
+        "Para descansar, siga ao sul pelo passeio escuro. Na primeira curva, vire a oeste. Siga as placas até a Pousada do portão.",
+        "Para ganhar experiência, volte ao portão urbano, ao norte, e escolha Ir aos Arredores de Rihad. Há ratos junto à estrada. Pode voltar pelo mesmo caminho e descansar na pousada."
+      ],
+      "source": "214541c Arena_Rihad.js; adaptação de orientação ao percurso implementado",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.orientation.court": {
+      "id": "rihad.orientation.court",
+      "texts": [
+        "Siga as placas da Corte pelas ruas ao sul.",
+        "Junto à muralha sul, passe pela grade e entre pela porta de madeira."
+      ],
+      "source": "214541c Arena_Rihad.js; adaptação de orientação ao percurso implementado",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.orientation.gate": {
+      "id": "rihad.orientation.gate",
+      "texts": [
+        "Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte."
+      ],
+      "source": "214541c Arena_Rihad.js; adaptação de orientação ao percurso implementado",
+      "classification": "A",
+      "illustration": null
+    },
+    "common.rumors": {
+      "id": "common.rumors",
+      "texts": [
+        "Até onde sei, não está acontecendo muita coisa."
+      ],
+      "source": "TEMPLATE.DAT #0159 alternativa1; rumores genéricos, não ativa eventos",
+      "classification": "T",
+      "illustration": null
+    },
+    "common.city": {
+      "id": "common.city",
+      "texts": [
+        "Aqui em {city}, siga as placas para encontrar a Pousada, a Corte e o Portão urbano."
+      ],
+      "source": "Fala criada para a sinalização desta versão",
+      "classification": "A",
+      "illustration": null
+    },
+    "common.palace": {
+      "id": "common.palace",
+      "texts": [
+        "Acho que a {rulerTitle} está procurando alguém no palácio. Se estiver recebendo visitantes na sala de audiência, poderá contar tudo."
+      ],
+      "source": "TEMPLATE.DAT #0202 alternativa1; %t/%g adaptados ao título conhecido de Blubamka; sem missão secundária",
+      "classification": "A/T",
+      "illustration": null
+    },
+    "common.stonekeep": {
+      "id": "common.stonekeep",
+      "texts": [
+        "Você já conhece {destination}. Para viajar, siga as placas do Portão urbano."
+      ],
+      "source": "Orientação do projeto; destino só após aceite de Blubamka",
+      "classification": "A",
+      "illustration": null
+    },
+    "common.fang": {
+      "id": "common.fang",
+      "texts": [
+        "{destination} já é um destino conhecido. Você pode consultar o Mapa mundial e as viagens no portão."
+      ],
+      "source": "Orientação do projeto; só após entrega legítima do pergaminho",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.inn.keeper.local": {
+      "id": "rihad.inn.keeper.local",
+      "texts": [
+        "O quarto está disponível, sem custo. Siga as placas até a cama e interaja para descansar."
+      ],
+      "source": "RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.guard.court.01.local": {
+      "id": "rihad.guard.court.01.local",
+      "texts": [
+        "A grade fica adiante, ao sul. Atravesse o vão e siga até a porta de madeira da corte.",
+        "Para viajar, volte seguindo as placas do Portão urbano."
+      ],
+      "source": "RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.guard.court.01.beforeRia": {
+      "id": "rihad.guard.court.01.beforeRia",
+      "texts": [
+        "Esta é a aproximação da corte. Para descansar, siga as placas da Pousada."
+      ],
+      "source": "Texto anterior à visão; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.civilian.square.01.local": {
+      "id": "rihad.civilian.square.01.local",
+      "texts": [
+        "As placas apontam a Pousada e o Portão urbano. Fica mais fácil se seguir o passeio de pedra."
+      ],
+      "source": "RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.regional.elder.01.local": {
+      "id": "rihad.regional.elder.01.local",
+      "texts": [
+        "O passeio de pedra liga os quarteirões. As placas ajudam a encontrar a Pousada e o Portão urbano."
+      ],
+      "source": "RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.regional.artisan.01.local": {
+      "id": "rihad.regional.artisan.01.local",
+      "texts": [
+        "O avental já viu dias melhores, mas ainda aguenta o trabalho. A entrada da Pousada fica logo ali."
+      ],
+      "source": "RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.regional.traveler.01.local": {
+      "id": "rihad.regional.traveler.01.local",
+      "texts": [
+        "Quando for partir, procure o Portão urbano. As viagens disponíveis aparecem por lá ou no Mapa mundial."
+      ],
+      "source": "RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    },
+    "rihad.regional.guardvariant.01.local": {
+      "id": "rihad.regional.guardvariant.01.local",
+      "texts": [
+        "Mantenha a passagem livre junto à grade. As placas indicam o caminho de volta ao Portão urbano."
+      ],
+      "source": "RIHAD_NPCS_M02.json / texto implementado anteriormente; adaptação do projeto",
+      "classification": "A",
+      "illustration": null
+    }
+  },
+  "npcs": {
+    "rihad.informant": {
+      "id": "rihad.informant",
+      "mapId": 9,
+      "eventId": 1,
+      "name": "Informante",
+      "role": "informant",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Rihad_Informant_V01",
+      "topics": [
+        {
+          "id": "directions",
+          "label": "Como seguir meu caminho?",
+          "action": "rihad.orientation"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        },
+        {
+          "id": "audience",
+          "label": "A audiência na corte",
+          "block": "common.palace",
+          "minStage": 20,
+          "maxStage": 39
+        },
+        {
+          "id": "stonekeep",
+          "label": "Stonekeep",
+          "block": "common.stonekeep",
+          "minStage": 40,
+          "destination": "Stonekeep"
+        },
+        {
+          "id": "fang",
+          "label": "Fang Lair",
+          "block": "common.fang",
+          "minStage": 60,
+          "destination": "Fang Lair"
+        }
+      ]
+    },
+    "rihad.inn.keeper": {
+      "id": "rihad.inn.keeper",
+      "mapId": 18,
+      "eventId": 3,
+      "name": "Responsável pela pousada",
+      "role": "innkeeper",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Rihad_Innkeeper_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.inn.keeper.local"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        },
+        {
+          "id": "audience",
+          "label": "A audiência na corte",
+          "block": "common.palace",
+          "minStage": 20,
+          "maxStage": 39
+        }
+      ]
+    },
+    "rihad.guard.court.01": {
+      "id": "rihad.guard.court.01",
+      "mapId": 9,
+      "eventId": 900,
+      "name": "Guarda de Rihad",
+      "role": "guard",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Rihad_Guard_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.guard.court.01.local",
+          "variants": [
+            {
+              "maxStage": 19,
+              "block": "rihad.guard.court.01.beforeRia"
+            }
+          ]
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "audience",
+          "label": "A audiência na corte",
+          "block": "common.palace",
+          "minStage": 20,
+          "maxStage": 39
+        }
+      ]
+    },
+    "rihad.civilian.square.01": {
+      "id": "rihad.civilian.square.01",
+      "mapId": 9,
+      "eventId": 901,
+      "name": "Moradora de Rihad",
+      "role": "civilian",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Rihad_Civilian_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.civilian.square.01.local"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        }
+      ]
+    },
+    "rihad.regional.elder.01": {
+      "id": "rihad.regional.elder.01",
+      "mapId": 9,
+      "eventId": 902,
+      "name": "Morador idoso",
+      "role": "elder",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Elder_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.elder.01.local"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        }
+      ]
+    },
+    "rihad.regional.artisan.01": {
+      "id": "rihad.regional.artisan.01",
+      "mapId": 9,
+      "eventId": 903,
+      "name": "Artesã de Rihad",
+      "role": "artisan",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Artisan_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.artisan.01.local"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        }
+      ]
+    },
+    "rihad.regional.traveler.01": {
+      "id": "rihad.regional.traveler.01",
+      "mapId": 9,
+      "eventId": 904,
+      "name": "Viajante de Hammerfell",
+      "role": "traveler",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Traveler_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.traveler.01.local"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        }
+      ]
+    },
+    "rihad.regional.guardvariant.01": {
+      "id": "rihad.regional.guardvariant.01",
+      "mapId": 9,
+      "eventId": 905,
+      "name": "Guarda de Rihad",
+      "role": "guardvariant",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Guardvariant_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.guardvariant.01.local"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "audience",
+          "label": "A audiência na corte",
+          "block": "common.palace",
+          "minStage": 20,
+          "maxStage": 39
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "templateSha256": "dae070edf25b137daa2d023c8335d2e276aa6a8bd1f64ef05011ce7cc1254bd7",
+  "source": "Installed Arena/ARENA/TEMPLATE.DAT, CP437, #block and & alternative separators; no remote or personal saves",
+  "used": [
+    "#0159/1",
+    "#0202/1"
+  ],
+  "consultedNotActivated": [
+    "#0100 names/occupation",
+    "#0107 peddler",
+    "#0108 local information",
+    "#0128 directions/gossip",
+    "#0160 jobs and #0187+ secondary quests deferred"
+  ],
+  "markers": {
+    "%cn": "city",
+    "%n": "NPC identity: no invented canonical personal name",
+    "%t": "rulerTitle",
+    "%di": "not used as original geographic directions differ from adapted map"
+  },
+  "limits": "No generic rumor proves event happened in Rihad. #0202 used only after Ria, as adapted public invitation; does not itself grant a quest."
+}
