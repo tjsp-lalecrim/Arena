@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Diálogos locais por tópicos:** [Arena_NPCDialogues](plugins/Arena_NPCDialogues.md), dados/blocos com fontes e condições, informante/pousadeira/guardas/moradores; Blubamka preservada. Rumores secundários e comércio não ativados. Avaliação manual pendente; prévia nesta entrega, release no fechamento.
+
 **Entradas laterais de Rihad:** [179 painéis urbanos/10vãos internos](CHEGADA_RIHAD_M02_03A.md#entradas-laterais-v01--23112026), seis módulos E/W próprios; planta, colisões, destinos e eventos preservados. Prévia agrupada com cenário dos Arredores nesta entrega em [Pages](PAGES_INFRA.md). Avaliação visual continua pendente; não cria novos serviços ou mecânicas de porta.
 
 **Cenário dos Arredores:** [fundo costeiro próprio e seleção por área](ARREDORES_RIHAD_M02_03B.md#cenário-de-batalha-costeiro-v01--23112026), mantendo cenário global das outras áreas. Avaliação visual pendente; incluído na [prévia3741159](PAGES_INFRA.md#prévia-de-entradas-laterais-e-cenário-dos-arredores--23112026). Sem rebalanceamento, novo mapa ou antecipação de cenário para outras dungeons.

@@ -63,5 +63,6 @@ var $plugins =
 {"name":"Arena_Ghost","status":true,"description":"Fantasma de Fang Lair: exemplar RAM; acesso original pendente.","parameters":{}},
 {"name":"Arena_M02DungeonObjects","status":true,"description":"Atualização visual de portas e suportes do M02; estados preservados.","parameters":{}},
 {"name":"Arena_Scenery","status":true,"description":"v0.1.0 Assets confirmados de cenário M02","parameters":{}},
-{"name":"Arena_WorldMap","status":true,"description":"v0.3.0 Catálogo, identificação acessível e viagem de campanha","parameters":{}}
+{"name":"Arena_WorldMap","status":true,"description":"v0.3.0 Catálogo, identificação acessível e viagem de campanha","parameters":{}},
+{"name":"Arena_NPCDialogues","status":true,"description":"v0.1.0 Diálogos por tópicos, dados e paginação existentes.","parameters":{}}
 ];

@@ -249,3 +249,6 @@ Arena_Minotaur0.1.0: combate e patrulha do mesmo exemplar; sala Map016 seleciona
 ## Aranha de Stonekeep — exemplar RAM
 
 Arena_Spider0.2.0: um exemplar de batalha/patrulha, Enemy9/Troop10, área privada em Map016 só em memória. Um encontro real C1 sul, demais19ainda ausentes; recompensas de campanha separadas dos dois laboratórios0EXP/loot. Sem efeitos novos ou reuso em Fang Lair. [Contrato](plugins/Arena_Spider.md), [fontes/arte/verificações](ARANHA_M02.md).
+# Módulo de diálogos locais
+
+`Arena_NPCDialogues` após os adaptadores de campanha, dados `ArenaNPCDialogues.json`; [contrato, fontes e dependências](plugins/Arena_NPCDialogues.md). Reutiliza apresentação de ArenaCourt, sem substituir Arena_Narrative/MV_NarrativePages.
