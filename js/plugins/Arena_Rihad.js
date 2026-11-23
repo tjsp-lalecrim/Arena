@@ -23,7 +23,7 @@ var ArenaRihad;
    var inn=c.inn,area=inn&&ArenaCampaignConfig.area(inn.areaId);
    var point=$arenaRecovery.restPoints.filter(function(p){return p.id===c.restPointId;})[0];
    if(!inn||!area.ok||area.config.mapId!==inn.entry.mapId||!point||point.mapId!==inn.entry.mapId||point.eventId!==inn.bedEventId)throw Error('Rihad: vínculo da pousada ou cama inválido.');
-   if(!Array.isArray(c.regionalNpcs)||c.regionalNpcs.length!==3||c.regionalNpcs.some(function(n){return !n.id||!n.characterName||!n.faceName||!n.texts||n.mapId!==9&&n.mapId!==18;}))throw Error('Rihad: configuração de NPCs regionais inválida.');
+   if(!Array.isArray(c.regionalNpcs)||c.regionalNpcs.length<3||c.regionalNpcs.some(function(n,i,a){return !n.id||a.some(function(other,j){return j!==i&&(other.id===n.id||other.mapId===n.mapId&&other.eventId===n.eventId);})||!n.characterName||!n.faceName||!n.texts||n.mapId!==9&&n.mapId!==18;}))throw Error('Rihad: configuração de NPCs regionais inválida.');
    ArenaContinuation.registerCampaignDestination(c.arrival);configured=true;
   }return true;
  };

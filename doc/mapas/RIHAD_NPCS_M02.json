@@ -77,7 +77,115 @@
         "As placas apontam a Pousada e o Portão urbano. Fica mais fácil se seguir o passeio de pedra."
       ],
       "placement": "Circuito adaptado em terreno livre de área pública junto ao passeio, lateral à rua principal; sem encontro, quest ou serviço novo."
+    },
+    {
+      "id": "rihad.regional.elder.01",
+      "key": "elder",
+      "name": "Morador idoso",
+      "mapId": 9,
+      "eventId": 902,
+      "position": [
+        350,
+        30
+      ],
+      "direction": 2,
+      "moving": false,
+      "characterName": "$Arena_Hammerfell_Elder_V01",
+      "faceName": "Arena_Hammerfell_Elder_V01",
+      "texts": [
+        "O passeio de pedra liga os quarteirões. As placas ajudam a encontrar a Pousada e o Portão urbano."
+      ],
+      "placement": "Interpretação funcional em área já jogável; posição e identidade não são registros canônicos."
+    },
+    {
+      "id": "rihad.regional.artisan.01",
+      "key": "artisan",
+      "name": "Artesã de Rihad",
+      "mapId": 9,
+      "eventId": 903,
+      "position": [
+        316,
+        45
+      ],
+      "direction": 2,
+      "moving": true,
+      "characterName": "$Arena_Hammerfell_Artisan_V01",
+      "faceName": "Arena_Hammerfell_Artisan_V01",
+      "texts": [
+        "O avental já viu dias melhores, mas ainda aguenta o trabalho. A entrada da Pousada fica logo ali."
+      ],
+      "placement": "Interpretação funcional em área já jogável; posição e identidade não são registros canônicos.",
+      "route": [
+        6,
+        6,
+        2,
+        2,
+        4,
+        4,
+        8,
+        8
+      ],
+      "routeBounds": [
+        316,
+        45,
+        318,
+        47
+      ]
+    },
+    {
+      "id": "rihad.regional.traveler.01",
+      "key": "traveler",
+      "name": "Viajante de Hammerfell",
+      "mapId": 9,
+      "eventId": 904,
+      "position": [
+        350,
+        40
+      ],
+      "direction": 2,
+      "moving": true,
+      "characterName": "$Arena_Hammerfell_Traveler_V01",
+      "faceName": "Arena_Hammerfell_Traveler_V01",
+      "texts": [
+        "Quando for partir, procure o Portão urbano. As viagens disponíveis aparecem por lá ou no Mapa mundial."
+      ],
+      "placement": "Interpretação funcional em área já jogável; posição e identidade não são registros canônicos.",
+      "route": [
+        6,
+        6,
+        2,
+        2,
+        4,
+        4,
+        8,
+        8
+      ],
+      "routeBounds": [
+        350,
+        40,
+        352,
+        42
+      ]
+    },
+    {
+      "id": "rihad.regional.guardvariant.01",
+      "key": "guardvariant",
+      "name": "Guarda de Rihad",
+      "mapId": 9,
+      "eventId": 905,
+      "position": [
+        351,
+        371
+      ],
+      "direction": 2,
+      "moving": false,
+      "characterName": "$Arena_Hammerfell_Guardvariant_V01",
+      "faceName": "Arena_Hammerfell_Guardvariant_V01",
+      "texts": [
+        "Mantenha a passagem livre junto à grade. As placas indicam o caminho de volta ao Portão urbano."
+      ],
+      "placement": "Interpretação funcional em área já jogável; posição e identidade não são registros canônicos."
     }
   ],
-  "notes": "Interpretações artísticas regionais, não NPCs nomeados do original. Três retratos para diálogos breves; apenas a civil caminha. Estados nativos de evento, sem namespace novo."
+  "notes": "Sete NPCs regionais: trio V01 e quatro variantes reutilizáveis. Retratos apenas nos diálogos; três civis móveis, demais quatro poses estáticas. Sem novos serviços, quests ou namespace."
 }
