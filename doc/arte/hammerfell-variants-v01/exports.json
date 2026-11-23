@@ -1,0 +1,998 @@
+[
+  {
+    "key": "elder",
+    "master": "art/masters/hammerfell-variants-v01/elder.png",
+    "portraitCrop": [
+      0,
+      0,
+      850,
+      887
+    ],
+    "cell": [
+      48,
+      64
+    ],
+    "footAnchor": 62,
+    "uniformScale": 0.1330166270783848,
+    "moving": false,
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          425
+        ],
+        "size": [
+          23,
+          50
+        ],
+        "xy": [
+          12,
+          12
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          425
+        ],
+        "size": [
+          23,
+          50
+        ],
+        "xy": [
+          60,
+          12
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          425
+        ],
+        "size": [
+          23,
+          50
+        ],
+        "xy": [
+          108,
+          12
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          425
+        ],
+        "size": [
+          14,
+          51
+        ],
+        "xy": [
+          17,
+          75
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          425
+        ],
+        "size": [
+          14,
+          51
+        ],
+        "xy": [
+          65,
+          75
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          425
+        ],
+        "size": [
+          14,
+          51
+        ],
+        "xy": [
+          113,
+          75
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": [
+          900,
+          425,
+          1335,
+          887
+        ],
+        "size": [
+          14,
+          56
+        ],
+        "xy": [
+          17,
+          134
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": [
+          900,
+          425,
+          1335,
+          887
+        ],
+        "size": [
+          14,
+          56
+        ],
+        "xy": [
+          65,
+          134
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": [
+          900,
+          425,
+          1335,
+          887
+        ],
+        "size": [
+          14,
+          56
+        ],
+        "xy": [
+          113,
+          134
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "sourceRect": [
+          1335,
+          425,
+          1774,
+          887
+        ],
+        "size": [
+          23,
+          55
+        ],
+        "xy": [
+          12,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "sourceRect": [
+          1335,
+          425,
+          1774,
+          887
+        ],
+        "size": [
+          23,
+          55
+        ],
+        "xy": [
+          60,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "sourceRect": [
+          1335,
+          425,
+          1774,
+          887
+        ],
+        "size": [
+          23,
+          55
+        ],
+        "xy": [
+          108,
+          199
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "path": "art/masters/hammerfell-variants-v01/elder.png",
+        "sha256": "2c4e22fd4b47e4422c54b1a7c1f56f062d77d59e3bfde19ef2f54d487b3eedec"
+      },
+      {
+        "path": "img/characters/$Arena_Hammerfell_Elder_V01.png",
+        "sha256": "f082e9202ce215a4219d7f53f0e260326284ac2f2af4aabe631892a8af2364ab"
+      },
+      {
+        "path": "img/faces/Arena_Hammerfell_Elder_V01.png",
+        "sha256": "7a2fd0f3844b575a9272214d016173dfc35740b1f0e6c511cf298251cd22ae02"
+      }
+    ]
+  },
+  {
+    "key": "artisan",
+    "master": "art/masters/hammerfell-variants-v01/artisan.png",
+    "portraitCrop": [
+      0,
+      0,
+      790,
+      887
+    ],
+    "cell": [
+      48,
+      64
+    ],
+    "footAnchor": 62,
+    "uniformScale": 0.25806451612903225,
+    "moving": true,
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": [
+          800,
+          0,
+          1124,
+          222
+        ],
+        "size": [
+          24,
+          56
+        ],
+        "xy": [
+          12,
+          6
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          0,
+          1448,
+          222
+        ],
+        "size": [
+          23,
+          56
+        ],
+        "xy": [
+          60,
+          6
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          0,
+          1774,
+          222
+        ],
+        "size": [
+          23,
+          56
+        ],
+        "xy": [
+          108,
+          6
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": [
+          800,
+          222,
+          1124,
+          443
+        ],
+        "size": [
+          36,
+          55
+        ],
+        "xy": [
+          6,
+          71
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          222,
+          1448,
+          443
+        ],
+        "size": [
+          18,
+          56
+        ],
+        "xy": [
+          63,
+          70
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          222,
+          1774,
+          443
+        ],
+        "size": [
+          36,
+          55
+        ],
+        "xy": [
+          102,
+          71
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": [
+          800,
+          443,
+          1124,
+          665
+        ],
+        "size": [
+          37,
+          55
+        ],
+        "xy": [
+          5,
+          135
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          443,
+          1448,
+          665
+        ],
+        "size": [
+          20,
+          55
+        ],
+        "xy": [
+          62,
+          135
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          443,
+          1774,
+          665
+        ],
+        "size": [
+          39,
+          55
+        ],
+        "xy": [
+          100,
+          135
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "sourceRect": [
+          800,
+          665,
+          1124,
+          887
+        ],
+        "size": [
+          22,
+          55
+        ],
+        "xy": [
+          13,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          665,
+          1448,
+          887
+        ],
+        "size": [
+          22,
+          55
+        ],
+        "xy": [
+          61,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          665,
+          1774,
+          887
+        ],
+        "size": [
+          21,
+          55
+        ],
+        "xy": [
+          109,
+          199
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "path": "art/masters/hammerfell-variants-v01/artisan.png",
+        "sha256": "f8c3062bf6f93fc1001c5860a04c7793128d8ee6d55a60db259cb47ba6d042b1"
+      },
+      {
+        "path": "img/characters/$Arena_Hammerfell_Artisan_V01.png",
+        "sha256": "7e58b5f3ef195ec8504c9e6baf63e392f6fe3df7be9a67956e140e0b0fd1565d"
+      },
+      {
+        "path": "img/faces/Arena_Hammerfell_Artisan_V01.png",
+        "sha256": "85cb53c58bf1d04c0efb10a0629e61fed5bf44ed9d1f4e4e0b505c4e70f1bca4"
+      }
+    ]
+  },
+  {
+    "key": "traveler",
+    "master": "art/masters/hammerfell-variants-v01/traveler.png",
+    "portraitCrop": [
+      0,
+      0,
+      790,
+      887
+    ],
+    "cell": [
+      48,
+      64
+    ],
+    "footAnchor": 62,
+    "uniformScale": 0.25925925925925924,
+    "moving": true,
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": [
+          800,
+          0,
+          1124,
+          222
+        ],
+        "size": [
+          27,
+          56
+        ],
+        "xy": [
+          10,
+          6
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          0,
+          1448,
+          222
+        ],
+        "size": [
+          28,
+          56
+        ],
+        "xy": [
+          58,
+          6
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          0,
+          1774,
+          222
+        ],
+        "size": [
+          28,
+          56
+        ],
+        "xy": [
+          106,
+          6
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": [
+          800,
+          222,
+          1124,
+          443
+        ],
+        "size": [
+          35,
+          55
+        ],
+        "xy": [
+          6,
+          71
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          222,
+          1448,
+          443
+        ],
+        "size": [
+          22,
+          56
+        ],
+        "xy": [
+          61,
+          70
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          222,
+          1774,
+          443
+        ],
+        "size": [
+          35,
+          55
+        ],
+        "xy": [
+          102,
+          71
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": [
+          800,
+          443,
+          1124,
+          665
+        ],
+        "size": [
+          36,
+          55
+        ],
+        "xy": [
+          6,
+          135
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          443,
+          1448,
+          665
+        ],
+        "size": [
+          20,
+          55
+        ],
+        "xy": [
+          62,
+          135
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          443,
+          1774,
+          665
+        ],
+        "size": [
+          37,
+          55
+        ],
+        "xy": [
+          101,
+          135
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "sourceRect": [
+          800,
+          665,
+          1124,
+          887
+        ],
+        "size": [
+          28,
+          55
+        ],
+        "xy": [
+          10,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "sourceRect": [
+          1124,
+          665,
+          1448,
+          887
+        ],
+        "size": [
+          29,
+          55
+        ],
+        "xy": [
+          57,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "sourceRect": [
+          1448,
+          665,
+          1774,
+          887
+        ],
+        "size": [
+          29,
+          55
+        ],
+        "xy": [
+          105,
+          199
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "path": "art/masters/hammerfell-variants-v01/traveler.png",
+        "sha256": "4816591e05d4f0698935d994e1840d4cdaf6683d82d4c6f39f74d3a854183ea2"
+      },
+      {
+        "path": "img/characters/$Arena_Hammerfell_Traveler_V01.png",
+        "sha256": "0ba9ef2138219aebeacd7e31b860a9f7e16ad317c7d38860354b2f303b08bfd1"
+      },
+      {
+        "path": "img/faces/Arena_Hammerfell_Traveler_V01.png",
+        "sha256": "1dbad24b527ed99761b675aee0458ba54b00dcdc7fd0274dfd7f8f5779bf766a"
+      }
+    ]
+  },
+  {
+    "key": "guardvariant",
+    "master": "art/masters/hammerfell-variants-v01/guardvariant.png",
+    "portraitCrop": [
+      0,
+      0,
+      850,
+      887
+    ],
+    "cell": [
+      48,
+      64
+    ],
+    "footAnchor": 62,
+    "uniformScale": 0.12698412698412698,
+    "moving": false,
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": [
+          900,
+          0,
+          1250,
+          425
+        ],
+        "size": [
+          26,
+          49
+        ],
+        "xy": [
+          11,
+          13
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": [
+          900,
+          0,
+          1250,
+          425
+        ],
+        "size": [
+          26,
+          49
+        ],
+        "xy": [
+          59,
+          13
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": [
+          900,
+          0,
+          1250,
+          425
+        ],
+        "size": [
+          26,
+          49
+        ],
+        "xy": [
+          107,
+          13
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": [
+          1250,
+          0,
+          1774,
+          425
+        ],
+        "size": [
+          15,
+          51
+        ],
+        "xy": [
+          16,
+          75
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": [
+          1250,
+          0,
+          1774,
+          425
+        ],
+        "size": [
+          15,
+          51
+        ],
+        "xy": [
+          64,
+          75
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": [
+          1250,
+          0,
+          1774,
+          425
+        ],
+        "size": [
+          15,
+          51
+        ],
+        "xy": [
+          112,
+          75
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": [
+          900,
+          425,
+          1250,
+          887
+        ],
+        "size": [
+          15,
+          56
+        ],
+        "xy": [
+          16,
+          134
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": [
+          900,
+          425,
+          1250,
+          887
+        ],
+        "size": [
+          15,
+          56
+        ],
+        "xy": [
+          64,
+          134
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": [
+          900,
+          425,
+          1250,
+          887
+        ],
+        "size": [
+          15,
+          56
+        ],
+        "xy": [
+          112,
+          134
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "sourceRect": [
+          1250,
+          425,
+          1774,
+          887
+        ],
+        "size": [
+          24,
+          55
+        ],
+        "xy": [
+          12,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "sourceRect": [
+          1250,
+          425,
+          1774,
+          887
+        ],
+        "size": [
+          24,
+          55
+        ],
+        "xy": [
+          60,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "sourceRect": [
+          1250,
+          425,
+          1774,
+          887
+        ],
+        "size": [
+          24,
+          55
+        ],
+        "xy": [
+          108,
+          199
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "path": "art/masters/hammerfell-variants-v01/guardvariant.png",
+        "sha256": "c6e20de6904c9eb6edb41968149925dca32d1567014711aceef67b4aa32995fa"
+      },
+      {
+        "path": "img/characters/$Arena_Hammerfell_Guardvariant_V01.png",
+        "sha256": "75f71862a21034629b0656f31fc65e59732573bacd4874bc10ac8676e73f351a"
+      },
+      {
+        "path": "img/faces/Arena_Hammerfell_Guardvariant_V01.png",
+        "sha256": "881a355da5cdeb7cafb64e41bb31b5ec41d4ec3795bcf852c7869f723031f3ef"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Seven configured actors; four variants native dialogue/portraits fit pages, no actor/party/persistent-state changes.",
+    "Both moving variants show four directions/three patterns and interpolation, remain within short route bounds; normal-priority bodies collide.",
+    "Reachable court/inn; original geometry and pre-existing events unchanged. Rebuild stable.",
+    "RAM saves blocked; isolated synthetic older city save inserts four visible unique events; subsequent native route positions/indices persist. No personal saves."
+  ],
+  "motion": {
+    "artisan": {
+      "directions": [
+        6,
+        2,
+        4,
+        8
+      ],
+      "patterns": [
+        1,
+        2,
+        0
+      ],
+      "interpolated": true
+    },
+    "traveler": {
+      "directions": [
+        6,
+        2,
+        4,
+        8
+      ],
+      "patterns": [
+        1,
+        2,
+        0
+      ],
+      "interpolated": true
+    }
+  },
+  "errors": [],
+  "missing": [],
+  "manual": "Owner visual assessment pending integrated test; not inferred from technical checks."
+}
