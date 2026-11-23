@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.3.0 Rihad: chegada, pousada, repouso e arredores.
+ * @plugindesc v0.4.0 Rihad: chegada, repouso e informante com retrato.
  * @author Codex
  * @help Após Arena_CampaignConfig e Arena_Continuation. ArenaRihad.json.
  * Chegada real conserva recursos. Amostra técnica usa fixtures/RAM existentes;
@@ -18,6 +18,7 @@ var ArenaRihad;
    if(!c||c.schemaVersion!==1||!r.ok||r.config.mapId!==c.arrival.mapId)throw Error('Rihad: vínculo de chegada inválido.');
    var o=c.outskirts,a=o&&ArenaCampaignConfig.area(o.areaId);
    if(!o||!a.ok||a.config.mapId!==o.entry.mapId||o.return.mapId!==c.arrival.mapId||!ArenaCampaignConfig.encounters(o.areaId).ok)throw Error('Rihad: vínculo dos arredores inválido.');
+   var visual=c.informantVisual;if(!visual||!visual.characterName||!visual.faceName||visual.faceIndex!==0||visual.direction!==2)throw Error('Rihad: apresentação do informante inválida.');
    var inn=c.inn,area=inn&&ArenaCampaignConfig.area(inn.areaId);
    var point=$arenaRecovery.restPoints.filter(function(p){return p.id===c.restPointId;})[0];
    if(!inn||!area.ok||area.config.mapId!==inn.entry.mapId||!point||point.mapId!==inn.entry.mapId||point.eventId!==inn.bedEventId)throw Error('Rihad: vínculo da pousada ou cama inválido.');
@@ -37,7 +38,7 @@ var ArenaRihad;
  }
  function message(interpreter,texts){
   if(!here()||$gameParty.inBattle()||$gameMessage.isBusy()||!(interpreter instanceof Game_Interpreter))return false;
-  return ArenaCourt.show(interpreter,texts);
+  var visual=$arenaRihad.informantVisual;return ArenaCourt.show(interpreter,texts,interpreter.eventId()===$arenaRihad.informantEventId?{name:visual.faceName,index:visual.faceIndex}:null);
  }
  function gateDestinations(){
   var list=[{id:'outskirts',name:'Ir aos Arredores de Rihad',to:$arenaRihad.outskirts.entry}];
@@ -124,6 +125,7 @@ var ArenaRihad;
    if(!bed||bed._priorityType!==1)$gameMap._events[bedId]=new Game_Event($gameMap.mapId(),bedId);
   }
   mapLoaded.apply(this,arguments);
+  if(here()){var actor=$gameMap.event($arenaRihad.informantEventId),visual=$arenaRihad.informantVisual;if(actor&&!actor._erased){actor.setImage(visual.characterName,0);actor.setDirectionFix(false);actor.setDirection(visual.direction);actor.setDirectionFix(true);actor.setPattern(1);}}
   if(here()&&ArenaContinuation.labActive()&&ArenaContinuation.status().code==='arrived'&&!ArenaPersistence.snapshot().quests.MQ02)ArenaPersistence.setQuest('MQ02',10,{},false);
  };
  // Use the existing RAM laboratory, with no route to personal save slots.
@@ -203,7 +205,7 @@ var ArenaRihad;
    var c=$arenaRihad;
    var informant=$gameMap.event(c.informantEventId);
    var road=$gameMap.event(3),outskirts=$gameMap.event(c.outskirts.accessEventId);
-   markers=[[informant.x,informant.y,'Informante'],[c.inn.entrance[0],c.inn.entrance[1],'Pousada · Entrar',-46,'#223932'],
+   markers=[[informant.x,informant.y,'Informante',-58],[c.inn.entrance[0],c.inn.entrance[1],'Pousada · Entrar',-46,'#223932'],
     [road.x,road.y,'Portão · Arredores',76],
     [outskirts.x,outskirts.y,'Arredores',112]];
    var way=guidance(), sign=nearby(c.signage.signs,'position',5);

@@ -51,6 +51,7 @@ Conferência de arquivos, configurações e ocorrências, sem geração nem apro
 | --- | --- | --- |
 | Pousada e corte | Map018/tileset9 e Map011/tileset10 usam `Arena_Rihad_Interiors_V01_C/D`; cama E reutilizada; pisos, paredes, tetos, molduras, tapetes, degraus, mesas/balcão, trono e ornamentos em `RIHAD_INTERIORES_EXPORTS_V01.json` | Avaliação integrada; ornamentos geométricos são interpretação, não heráldica confirmada. Não pedir novamente um atlas interior completo |
 | Blubamka | Evento2 de Map011, `$Arena_Blubamka_V01` e retrato `Arena_Blubamka_V01` | Avaliação visual, sem ilustrações narrativas produzidas por consequência |
+| Informante de Rihad | Map009/evento1, `$Arena_Rihad_Informant_V01` e retrato `Arena_Rihad_Informant_V01`; [registro](CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026) | Produzido e integrado; avaliação visual agrupada pendente. Personagem funcional adaptado, aparência interpretada; não substitui ilustrações narrativas |
 | Fantasma | `$Arena_ghost_float_v01` e `Arena_Combat_ghost_v01`, configuração e exemplar RAM | Câmara MIF(3,49) ainda sem acesso comprovado; isto é dependência de geometria, **não falta de combate/patrulha** |
 | Hell Hound | Dois encontros Map017(90,66)/(84,66), sprite e atlas lateral existentes | Avaliação visual/balanceamento; não são bloqueio de coleta do fragmento |
 | Lava | Map017/tileset11, `Arena_Fang_Lava_V01_A1`,3fases | Ilha/rota e risco/proteção ainda pendentes, não textura ou animação |

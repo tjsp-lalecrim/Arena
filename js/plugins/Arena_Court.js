@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Audiência mínima de Blubamka: pedido explícito, destino lógico.
+ * @plugindesc v0.1.1 Audiência mínima de Blubamka: pedido explícito, destino lógico.
  * @author Codex
  * @help Após Arena_RiaVision, Arena_Rihad, Arena_Persistence e MV_JournalModel.
  * Configuração ArenaCourt.json; posições em ArenaRihad.json.court.
@@ -14,8 +14,8 @@ var ArenaCourt;
  function here(){return $gameMap&&$gameMap.mapId()===cfg().entry.mapId;}
  function valid(i,mapId,eventId){var e=$gameMap.event(eventId);return !$gameParty.inBattle()&&!$gamePlayer.isTransferring()&&ArenaNarrative.isCampaign()&&$gameMap.mapId()===mapId&&i instanceof Game_Interpreter&&i._mapId===mapId&&i.eventId()===eventId&&e&&!e._erased&&$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)<=1;}
  function transfer(i,from,eventId,to){if(!valid(i,from,eventId)||$gameMessage.isBusy()||ArenaQuests.snapshot('MQ02').stage<10)return false;$gameTemp.clearDestination();$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp._arenaCourtTravelFence=true;$gamePlayer.reserveTransfer(to.mapId,to.x,to.y,to.direction,0);return true;}
- function textCommands(texts,indent,portrait){var w=SceneManager._scene._messageWindow,list=[];w.resetFontSettings();texts.forEach(function(text){var lines=MVJournalModel.wrap(text,w.contentsWidth()-8-(portrait?168:0),w.textWidth.bind(w));for(var n=0;n<lines.length;n+=4){list.push({code:101,indent:indent,parameters:[portrait?cfg().faceName:'',portrait?cfg().faceIndex:0,0,2]});lines.slice(n,n+4).forEach(function(t){list.push({code:401,indent:indent,parameters:[t]});});}});return list;}
- function show(i,texts){var list=textCommands(texts,0,here()&&i.eventId()===cfg().queenEventId);list.push({code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;}
+ function textCommands(texts,indent,portrait){var face=portrait&&typeof portrait==='object'?portrait:portrait?{name:cfg().faceName,index:cfg().faceIndex}:null;var w=SceneManager._scene._messageWindow,list=[];w.resetFontSettings();texts.forEach(function(text){var lines=MVJournalModel.wrap(text,w.contentsWidth()-8-(face?168:0),w.textWidth.bind(w));for(var n=0;n<lines.length;n+=4){list.push({code:101,indent:indent,parameters:[face?face.name:'',face?face.index:0,0,2]});lines.slice(n,n+4).forEach(function(t){list.push({code:401,indent:indent,parameters:[t]});});}});return list;}
+ function show(i,texts,face){var list=textCommands(texts,0,face||here()&&i.eventId()===cfg().queenEventId);list.push({code:0,indent:0,parameters:[]});i.setupChild(list,i.eventId());return true;}
  ArenaCourt={
   show:show,
   enter:function(i){var c=cfg();return transfer(i,c.exit.mapId,c.accessEventId,c.entry);},
