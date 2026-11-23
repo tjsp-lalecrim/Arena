@@ -1,5 +1,7 @@
 ## v0.5.0 — três NPCs regionais
 
+Entradas laterais23/11/2026: o alvo visual1×2 da pousada encaminha clique para a aproximação314,42 e evento7 existentes, sem mudar o destino. Aproximação transitória cancelável, sem novo estado persistente. Demais entradas urbanas só mudam arte; orientação na sinalização deriva da configuração original. [Fontes/evidências](../CHEGADA_RIHAD_M02_03A.md#entradas-laterais-v01--23112026).
+
 Extensão23/11/2026: sete entradas regionais configuradas, com quatro variantes adicionais. Validação aceita expansão explícita e rejeita colisão de ID lógico ou mapa/evento; mantém os três papéis anteriores obrigatórios na configuração produzida. Inserção de eventos ausentes e retomada das rotas usam o mesmo contrato, sem novo plugin/sistema de NPCs. Folhas/poses e evidências em [chegada](../CHEGADA_RIHAD_M02_03A.md#quatro-variantes-de-hammerfell--23112026).
 
 `ArenaRihad.json.regionalNpcs` deriva de `doc/mapas/RIHAD_NPCS_M02.json`, aplicado por `tools/rihad-npcs.cjs` aos mapas existentes. `innkeeper` mantém condições/fala do posto; `talkRegional(interpreter,id)` valida mapa/evento/distância/MQ02≥10 e apresenta texto/retrato configurados, sem editar quest/recursos. Native Game_Event fornece quatro orientações, contato e trava durante diálogo; só a moradora usa rota repetida/não ignorável (sem through), pausas e animação. Não cria núcleo de população/combate.

@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Entradas laterais de Rihad:** [179 painéis urbanos/10vãos internos](CHEGADA_RIHAD_M02_03A.md#entradas-laterais-v01--23112026), seis módulos E/W próprios; planta, colisões, destinos e eventos preservados. Prévia agrupada com cenário dos Arredores nesta entrega em [Pages](PAGES_INFRA.md). Avaliação visual continua pendente; não cria novos serviços ou mecânicas de porta.
+
 **Cenário dos Arredores:** [fundo costeiro próprio e seleção por área](ARREDORES_RIHAD_M02_03B.md#cenário-de-batalha-costeiro-v01--23112026), mantendo cenário global das outras áreas. Avaliação visual pendente; incluir na próxima prévia agrupada Pages. Sem rebalanceamento, novo mapa ou antecipação de cenário para outras dungeons.
 
 **Complemento dos interiores:** [seis módulos/11colocações](CHEGADA_RIHAD_M02_03A.md#complemento-dos-interiores-de-hammerfell--23112026) na pousada/corte; mobiliário, cama e eventos existentes preservados. Avaliação visual agrupada aos NPCs/fachadas, sem aprovação presumida. Prévia agrupada nesta entrega em [Pages](PAGES_INFRA.md); release somente no fechamento.

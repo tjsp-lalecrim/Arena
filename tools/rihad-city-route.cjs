@@ -96,7 +96,7 @@ function build(map, config, recovery) {
     config.signage = {
         signs: signage.signs,
         audienceRoute: [signage.audienceStart, ...signage.routeCorners, signage.court],
-        doors: signage.doors.map(({ type, tile, approach }) => ({ type, tile, approach })),
+        doors: signage.doors.map(({ type, tile, approach, side }) => ({ type, tile, approach, side })),
     };
     Object.assign(map.events[1], position('informant'));
     config.informantVisual={characterName:'$Arena_Rihad_Informant_V01',faceName:'Arena_Rihad_Informant_V01',faceIndex:0,direction:2};
@@ -122,6 +122,7 @@ function build(map, config, recovery) {
     require('./m02-scenery.cjs').urban(map);
     require('./rihad-npcs.cjs')(map, config, 9);
     require('./rihad-facade-props.cjs')(map);
+    require('./rihad-lateral-entries.cjs')(map,'urban');
     fs.writeFileSync(path.join(root, 'data/ArenaRecovery.json'), JSON.stringify(recovery, null, 2) + '\n');
 }
 

@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-23",
+  "tool": "native image_gen; no CLI/API fallback",
+  "initialPrompt": "Use case stylized-concept. ONE production SOURCE ATLAS for Rihad lateral doors/open passages, strict48px orthogonal RPGmap, painted darkfantasy matching supplied current urban/interior materials. EXACT2columns x3rows equalcells, SIX independentassets on REAL transparentalpha background, ample transparentpadding, NO words/labels/floors/walls/terrain/scenery/shadows/checkerboard. Main light always upperLEFT for BOTH columns, do NOT mirror lighting. No isometric/vanishingpoint, no frontdoor rotated90degrees. E/W are lateral wall planes alignednorth/south; right/left sides of opening specifically authored. Strong readable broad woodleaf/reveal about24-30pixelswide when resized48px, NOT a hairlineedge. Keep sober originalArena timber/stone/brassfamily, no newheraldry. Materialreference1 existing exteriorpalette, reference2 existing doorjambs/woodprops for finish. Row1 LEFT: CLOSED URBAN TIMBERdoor facingEAST (approached fromRIGHT), hinge/mount atLEFT, visible thick warmdarkwood leafand dark recessedopening, subtle existing brass/iron bands, tallrectangular1:2 footprint; detached woodtrim only, no stonewall. Row1 RIGHT: correspondingWESTfacingdoor approached fromLEFT, mountatRIGHT, visiblewood and reveal wideenough, SAMEworldlightupperleft, own construction not mirror. Row2 LEFT: OPEN TIMBERpassage facingEAST for existingtavern narrowthreshold, square2:2module with north/south postcaps, darkoak jambs and overheadedge framing a LARGE fullyTRANSPARENT horizontal corridor opening throughMIDDLE lowerhalf, no closingdoorleaf, no wallchunks, no opaqueplateacrossgap. Row2 RIGHT correspondingWESTfacingopen timberpassage ownposts/reveal sameupperleftlight. Row3 LEFT: OPEN PALEASHLARpassage facingEAST forpalace, same module2:2 and completelytransparent horizontalwalkthroughgap, palegrey stonepost/jambs matchingreference, restrained weatheredcarvededge not new ornament. Row3 RIGHT matchingWEST ownorientation. ALLopenframes have broadreadablejambs and cleartraversal gap; width2tilesat96px, height2tiles96px. Entiregeometry inside itscell, nofloor. Topplanes squaredparallelaxes, no diagonalpictureframe. Different front/back reveal geometry makes orientations identifiable even without labels.",
+  "correctedPrompt": "Generate ONE sixasset game tile atlas, exactly2columns x3rows on real transparent background. These are architectural PLAN-VIEW lateral door components, NOT front elevation door portraits. Camera STRICTLY VERTICALLY ABOVE90degrees, NO visiblefrontface, NO perspective, NO isometric, NO U-shaped frontal arches. WorldNORTH isimageUP. Walk direction through every opening is HORIZONTAL LEFT↔RIGHT, never towardsimageUP/DOWN. Wall axis NORTH/SOUTH vertical. Eachasset thin inX and long inY with upperLEFTlight, all geometrical edges PARALLEL imageaxes. Darkfantasy paintedtexture using darkwarmtimber/dulliron or palegreyashlar fromreference, nofloor/wall/scenery/text/shadows/glow. Transparent everywhere between components.\nROW1 LEFT closedE urban timber door: overheadplan, two small timber jambcaps atTOPandBOTTOM, visiblethick wood leaf CLOSED as a VERTICAL RECTANGLE centered between caps, width roughly30%cellwidth and length70%cellheight. Leafrunsnorthsouth, hinges attachedatNORTHtopcap, reveal/dullironlip visibleonEAST/rightedge. Seen onlytop surface grain andheadsofhinges, not uprightdoorfront. ROW1RIGHT closedW: sameplan buthingesatSOUTHbottomcap andliponWEST/leftedge; ownlightupperleft, notmirror. No uprightplankdoorpanelwithdoorknocker.\nROW2LEFT OPEN E timberthreshold: exactlyTWO separated thickwoodenJAMBcaps, one north/top andone south/bottom, alignedverticallyalongcenterX. Eachcapabout35%cellwidth and16%cellheight. HUGE fullytransparentHORIZONTALgap between them permits travel LEFTtoRIGHT in middle60%height. Capshavesteppedwoodtrim/revealprojectingtoRIGHT. NO LEAF, NO solidconnectingbeam, NO horizontalarch spanningcaps. ROW2RIGHT sameOPENW two cap blocks, revealprojectstoLEFT, ownupperleftlighting.\nROW3LEFT OPEN E stonepassage: same2-separated-cap overheadplanlayout, squared paleashlarcaps with recessedmortarlines, revealright. ROW3RIGHT OPENW paleashlarcapstwo separatedvertically, revealleft. There is NEVER a frontaldoorframeU orviewstandinginfrontofadoor. Think dungeonarchitecturalmap seenfromdirectlyabove, wood/stonecapends north/south ofhorizontalwalkway. Preserveusablegaps with transparentalpha, noopaque material betweenposts.",
+  "master": "art/masters/rihad-lateral-entries-v01/source.png",
+  "rejectedMaster": "art/masters/rihad-lateral-entries-v01/source-rejected-front.png",
+  "references": [
+    "img/tilesets/Arena_Rihad_Exterior_V01_C.png — current DCN material/wood palette; original resource hashes in doc/arte/m02-tilesets/sources-rihad.json",
+    "art/masters/rihad-interiors-v01/props-source.png — current wood/stone material identity, not a lateral geometry template",
+    "doc/mapas/RIHAD_SINALIZACAO_M02.json — original CITYW1 + blocks/DCN entrance positions and facing",
+    "doc/mapas/RIHAD_INTERIORES_VISUAIS_M02.json — TAVERN4/PALACE2 thresholds"
+  ],
+  "audit": {
+    "urban": {
+      "east": 91,
+      "west": 88,
+      "total": 179,
+      "activeArtFamilies": 1,
+      "sourceTypes": {
+        "Casa": 160,
+        "Casa nobre": 12,
+        "Taverna": 3,
+        "Templo": 2,
+        "Equipamentos": 2
+      }
+    },
+    "innOpenLateral": 8,
+    "courtOpenLateral": 2
+  },
+  "interpretations": "Six plan-view modules: urban closed timber E/W, inn open timber E/W, court open pale stone E/W. Regional finish retained; source does not establish unique facing of bidirectional interior thresholds. Compiler chooses E left of map midpoint, W right, only for visual composition. First frontal generation rejected and retained, not exported. No new original family, heraldry or opening/closing mechanic claimed.",
+  "approval": "Visual assessment pending grouped campaign test, not inferred"
+}

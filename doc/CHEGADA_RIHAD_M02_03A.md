@@ -1,5 +1,19 @@
 # M02-03A — primeira chegada a Rihad
 
+## Entradas laterais V01 — 23/11/2026
+
+[Comparação na escala nativa](arte/rihad-lateral-entries-v01/comparison.png) · [mestre, prompts e referências](arte/rihad-lateral-entries-v01/generation.json) · [recortes/hashes](arte/rihad-lateral-entries-v01/exports.json) · [configuração de origem](mapas/RIHAD_LATERAL_ENTRIES_V01.json). Foram conferidas380entradas urbanas:118sul/83norte e179laterais (91leste/88oeste). Todas as laterais usavam a mesma faixa genérica de8px, inclusive a pousada313,42/evento7. Os tipos originais Casa/Casa nobre/Taverna/Templo/Equipamentos são preservados, sem inventar famílias artísticas ou serviços adicionais por rótulo.
+
+Seis módulos próprios: madeira urbana fechada E/W, vão de madeira E/W para pousada e vão de pedra clara E/W para corte. Reusam materiais/ornamentos existentes com projeção superior ortogonal, alpha real, apoio e escala fixos; sem espelhamento automático. Primeira geração frontal rejeitada, preservada no registro; somente a correção em planta superior foi exportada. Portas urbanas usam1×2tiles e vãos2×2, sem parede/piso incorporados. As179entradas e os10vãos recebem a variante no mesmo ponto lógico, sem alterar a planta.
+
+Pousada: centros30,18;21,18;63,27;54,30;21,33;30,36;63,51;21,51. Corte:102,27 e60,27. São vãos abertos bidirecionais E↔W; orientação visual E no lado esquerdo do mapa/W no direito é uma adaptação de apresentação, não lado canônico da fonte. As passagens norte/sul e a entrada frontal externa da corte permanecem intactas. Não existem animações ou estados de abrir/fechar nesses acessos de Rihad: painéis indisponíveis continuam fechados, vãos continuam abertos e as transferências existentes são preservadas. Não acrescentar mecânica apenas para criar uma animação.
+
+Compilação por `tools/rihad-lateral-entries.cjs`/`node tools/build-rihad-arrival.cjs`; exportação `python tools/export-rihad-lateral-entries.py`. Duas cópias estendidas dos atlas D anteriores preservam fachadas e decoração. Nenhuma folha compartilhada é sobrescrita, cama E mantida. Peças sobre parede usam estrela; a fileira inferior dos vãos fica sob o personagem sobre piso já livre, preservando os bits de passagem e evitando esconder seus pés. A arte tem vão transparente. Rótulos das laterais foram elevados para não encobrir a nova folha.
+
+Pousada: clique em313,41 ou313,42 aproxima até314,42 e aciona o mesmo evento7 uma única vez; direção/Enter e transferências continuam nativos. Outra direção/clique/menu cancela a aproximação. Só essa entrada funcional recebe o alvo visual ampliado; casas indisponíveis mantêm colisão/aviso, sem transferência. Nenhum estado de porta novo no save, namespace ou migração pessoal.
+
+[Verificação focal e capturas](evidencias/rihad-lateral-entries-v01/resultado.json): reconstrução dupla, eventos/regiões/bits nativos, aproximação e clique/teclado, vãos nos dois sentidos, cama/Blubamka e save/load em perfil isolado. Avaliação visual agrupada pendente, sem aprovação presumida. A prévia Pages desta entrega inclui entradas e cenário dos Arredores; referência e roteiro vigentes em [Pages](PAGES_INFRA.md). Release no fechamento.
+
 ## Complemento dos interiores de Hammerfell — 23/11/2026
 
 Seis módulos,11colocações: tapeçaria ferrugem/ocre, caminho de mesa teal, luminária frontal/lateral, bandeja com jarro/copos e jarro tampado. [Fontes/prompts/mestre](arte/hammerfell-interior-decor-v01/generation.json) · [exportação e hash](arte/hammerfell-interior-decor-v01/exports.json) · [posições e dimensões](mapas/RIHAD_INTERIOR_DECOR_V01.json). Base: TAVERN4/PALACE2 e materiais TAVA/TAVB, NOBB, TABLE, tecidos/carpete na consulta local já decodificada. As novas peças e suas posições são interpretações regionais; não heráldica canônica, iluminação dinâmica, novos serviços ou loot.
