@@ -42,7 +42,7 @@ var $plugins =
 {"name":"Arena_Continuation","status":true,"description":"v0.2.0 Continuidade M01/M02 e laboratório isolado","parameters":{"TechnicalDestination":"{\"id\":\"technical.resources.arrival\",\"mapId\":5,\"x\":4,\"y\":7,\"direction\":2}"}},
 {"name":"MV_CampaignConfig","status":true,"description":"v0.1.0 Índices puros de configuração","parameters":{}},
 {"name":"Arena_CampaignConfig","status":true,"description":"v0.1.0 Contratos por quest e área","parameters":{}},
-{"name":"Arena_Rihad","status":true,"description":"v0.4.0 Rihad: informante V01, chegada, pousada e arredores","parameters":{}},
+{"name":"Arena_Rihad","status":true,"description":"v0.5.0 Rihad: trio regional, informante, pousada e arredores","parameters":{}},
 {"name":"Arena_RiaVision","status":true,"description":"v0.1.0 Visão de Ria MQ02 por descanso","parameters":{}},
 {"name":"Arena_Court","status":true,"description":"v0.1.1 Corte e apresentação paginada com retrato opcional","parameters":{}},
 {"name":"Arena_Stonekeep","status":true,"description":"v0.1.0 Amostra de Stonekeep e fonte do pergaminho","parameters":{}},

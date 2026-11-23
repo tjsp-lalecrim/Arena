@@ -4793,5 +4793,84 @@
         11
       ]
     ]
-  }
+  },
+  "regionalNpcs": [
+    {
+      "id": "rihad.inn.keeper",
+      "key": "innkeeper",
+      "name": "Responsável pela pousada",
+      "mapId": 18,
+      "eventId": 3,
+      "position": [
+        42,
+        54
+      ],
+      "direction": 2,
+      "moving": false,
+      "characterName": "$Arena_Rihad_Innkeeper_V01",
+      "faceName": "Arena_Rihad_Innkeeper_V01",
+      "texts": [
+        "O quarto está disponível, sem custo. Siga as placas até a cama e interaja para descansar."
+      ],
+      "placement": "Mesmo posto funcional TAVERN4; personagem/vestuário interpretados."
+    },
+    {
+      "id": "rihad.guard.court.01",
+      "key": "guard",
+      "name": "Guarda de Rihad",
+      "mapId": 9,
+      "eventId": 900,
+      "position": [
+        359,
+        371
+      ],
+      "direction": 2,
+      "moving": false,
+      "characterName": "$Arena_Rihad_Guard_V01",
+      "faceName": "Arena_Rihad_Guard_V01",
+      "textsBeforeRia": [
+        "Esta é a aproximação da corte. Para descansar, siga as placas da Pousada."
+      ],
+      "texts": [
+        "A grade fica adiante, ao sul. Atravesse o vão e siga até a porta de madeira da corte.",
+        "Para viajar, volte seguindo as placas do Portão urbano."
+      ],
+      "placement": "Adaptação em piso livre, fora do vão/rota obrigatória; não posição canônica de guarda original."
+    },
+    {
+      "id": "rihad.civilian.square.01",
+      "key": "civilian",
+      "name": "Moradora de Rihad",
+      "mapId": 9,
+      "eventId": 901,
+      "position": [
+        347,
+        22
+      ],
+      "direction": 2,
+      "moving": true,
+      "characterName": "$Arena_Rihad_Civilian_V01",
+      "faceName": "Arena_Rihad_Civilian_V01",
+      "route": [
+        6,
+        6,
+        2,
+        2,
+        4,
+        4,
+        8,
+        8
+      ],
+      "routeBounds": [
+        347,
+        22,
+        349,
+        24
+      ],
+      "texts": [
+        "As placas apontam a Pousada e o Portão urbano. Fica mais fácil se seguir o passeio de pedra."
+      ],
+      "placement": "Circuito adaptado em terreno livre de área pública junto ao passeio, lateral à rua principal; sem encontro, quest ou serviço novo."
+    }
+  ]
 }

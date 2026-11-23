@@ -52,6 +52,12 @@ O tom é antigo, austero e ameaçador. A sensação de perigo vem da composiçã
 
 Adaptação autorizada: substituir apresentações genéricas das cortes por personagens e ambientes coerentes com a região e, quando conhecida pelas fontes, a raça do personagem. Preservar nomes, papéis e acontecimentos originais. Antes de afirmar raça, aparência ou vestuário como canônicos, registrar a fonte localizável; cidade/província não comprova a raça de um indivíduo. Na ausência de evidência, identificar a escolha como interpretação artística, preservando continuidade entre representações. O sprite emprestado de Blubamka em M02-03D não é evidência de sua raça/traje. A aplicação visual é recorte posterior em REF07, sem refazer automaticamente os placeholders.
 
+### NPCs de Hammerfell — direção Redguard complementar
+
+Decisão do responsável em23/11/2026: Arena ancora época, contexto e composição regional; Skyrim e The Elder Scrolls Adventures: Redguard complementam identidade visual. Preservar variedade de tons de pele, feições, idade, cabelo e roupa. Tecidos sobrepostos, faixas, lenços, turbantes, couro e adornos devem corresponder à ocupação/referência; não tornar turbante, armadura ou um único rosto obrigatórios. Identificar material oficial, captura e arte de fã quando verificável; ausência de proveniência não comprova origem oficial. Não importar automaticamente eventos, inscrições, cronologia, uniformes ou mecânicas dos outros jogos. Escolhas não sustentadas são interpretação artística.
+
+[Oito referências arquivadas, atribuições e prompts do trio](arte/rihad-npcs-v01/generation.json). Informante/Blubamka atuais permanecem; [comparação e hashes preservados](arte/rihad-npcs-v01/preserved.json) não equivalem a autorização de substituição. Retratos de diálogo são distintos das futuras ilustrações narrativas. Quatro direções de mapa para o trio; somente a moradora necessita caminhada neste recorte.
+
 ## Paleta-base
 
 As cores abaixo são referências de direção, não uma limitação rígida do número de cores de cada imagem.

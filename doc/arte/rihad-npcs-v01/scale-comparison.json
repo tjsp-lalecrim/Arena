@@ -1,0 +1,225 @@
+{
+  "measurements": [
+    {
+      "file": "img/characters/$Arena_Blubamka_V01.png",
+      "cell": [
+        48,
+        64
+      ],
+      "alphaThresholdForMeasurement": 8,
+      "directions": [
+        {
+          "direction": 2,
+          "bounds": [
+            15,
+            17,
+            34,
+            61
+          ],
+          "height": 44
+        },
+        {
+          "direction": 4,
+          "bounds": null,
+          "height": 0
+        },
+        {
+          "direction": 6,
+          "bounds": null,
+          "height": 0
+        },
+        {
+          "direction": 8,
+          "bounds": null,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "file": "img/characters/$Arena_Rihad_Informant_V01.png",
+      "cell": [
+        48,
+        64
+      ],
+      "alphaThresholdForMeasurement": 8,
+      "directions": [
+        {
+          "direction": 2,
+          "bounds": [
+            13,
+            2,
+            35,
+            62
+          ],
+          "height": 60
+        },
+        {
+          "direction": 4,
+          "bounds": null,
+          "height": 0
+        },
+        {
+          "direction": 6,
+          "bounds": null,
+          "height": 0
+        },
+        {
+          "direction": 8,
+          "bounds": null,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "file": "img/characters/$Arena_Rihad_Innkeeper_V01.png",
+      "cell": [
+        48,
+        64
+      ],
+      "alphaThresholdForMeasurement": 8,
+      "directions": [
+        {
+          "direction": 2,
+          "bounds": [
+            12,
+            6,
+            35,
+            62
+          ],
+          "height": 56
+        },
+        {
+          "direction": 4,
+          "bounds": [
+            14,
+            6,
+            33,
+            62
+          ],
+          "height": 56
+        },
+        {
+          "direction": 6,
+          "bounds": [
+            14,
+            7,
+            34,
+            62
+          ],
+          "height": 55
+        },
+        {
+          "direction": 8,
+          "bounds": [
+            12,
+            8,
+            35,
+            62
+          ],
+          "height": 54
+        }
+      ]
+    },
+    {
+      "file": "img/characters/$Arena_Rihad_Guard_V01.png",
+      "cell": [
+        48,
+        64
+      ],
+      "alphaThresholdForMeasurement": 8,
+      "directions": [
+        {
+          "direction": 2,
+          "bounds": [
+            11,
+            8,
+            37,
+            62
+          ],
+          "height": 54
+        },
+        {
+          "direction": 4,
+          "bounds": [
+            15,
+            8,
+            32,
+            62
+          ],
+          "height": 54
+        },
+        {
+          "direction": 6,
+          "bounds": [
+            15,
+            6,
+            32,
+            62
+          ],
+          "height": 56
+        },
+        {
+          "direction": 8,
+          "bounds": [
+            11,
+            7,
+            37,
+            62
+          ],
+          "height": 55
+        }
+      ]
+    },
+    {
+      "file": "img/characters/$Arena_Rihad_Civilian_V01.png",
+      "cell": [
+        48,
+        64
+      ],
+      "alphaThresholdForMeasurement": 8,
+      "directions": [
+        {
+          "direction": 2,
+          "bounds": [
+            11,
+            10,
+            37,
+            62
+          ],
+          "height": 52
+        },
+        {
+          "direction": 4,
+          "bounds": [
+            14,
+            12,
+            34,
+            62
+          ],
+          "height": 50
+        },
+        {
+          "direction": 6,
+          "bounds": [
+            14,
+            10,
+            34,
+            62
+          ],
+          "height": 52
+        },
+        {
+          "direction": 8,
+          "bounds": [
+            11,
+            8,
+            36,
+            62
+          ],
+          "height": 54
+        }
+      ]
+    }
+  ],
+  "interpretation": "New trio nominal56px with all4directions; existing informant visible60px and Blubamka44px frontal only. Record differences for integrated evaluation; do not silently resize or replace existing approved/current masters. Body-height variation is a comparison criterion, not automatic proof of a defect or permission for retroactive rework."
+}

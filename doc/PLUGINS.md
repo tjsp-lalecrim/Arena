@@ -1,3 +1,7 @@
+## Trio regional Redguard — vigente
+
+Arena_Rihad0.5.0: responsável da pousada, guarda e moradora em eventos nativos; retratos no apresentador existente e caminhada nativa somente para a civil. Configuração/gerador e reapresentação de saves antigos sem novo namespace. [Contrato](plugins/Arena_Rihad.md), [fontes/arte/testes](CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026). Avaliação visual agrupada pendente; nenhum retrabalho automático de Blubamka/informante.
+
 ## Informante de Rihad — apresentação vigente
 
 Arena_Rihad0.4.0 e Arena_Court0.1.1: conjunto próprio no evento1, retrato opcional no apresentador existente e reapresentação de saves antigos, sem novo plugin/namespace. [Contrato](plugins/Arena_Rihad.md), [arte e evidências](CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026). Avaliação visual agrupada pendente; não alterar a visão aprovada ou seus futuros blocos ilustrados.

@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.4.0 Rihad: chegada, repouso e informante com retrato.
+ * @plugindesc v0.5.0 Rihad: NPCs regionais, pousada e orientação.
  * @author Codex
  * @help Após Arena_CampaignConfig e Arena_Continuation. ArenaRihad.json.
  * Chegada real conserva recursos. Amostra técnica usa fixtures/RAM existentes;
@@ -9,6 +9,7 @@
 var ArenaRihad;
 (function(){
  'use strict';var configured=false;
+ function regional(id){return $arenaRihad.regionalNpcs.filter(function(n){return n.id===id;})[0];}
  DataManager._databaseFiles.push({name:'$arenaRihad',src:'ArenaRihad.json'});
  var loaded=DataManager.isDatabaseLoaded;
  DataManager.isDatabaseLoaded=function(){
@@ -22,6 +23,7 @@ var ArenaRihad;
    var inn=c.inn,area=inn&&ArenaCampaignConfig.area(inn.areaId);
    var point=$arenaRecovery.restPoints.filter(function(p){return p.id===c.restPointId;})[0];
    if(!inn||!area.ok||area.config.mapId!==inn.entry.mapId||!point||point.mapId!==inn.entry.mapId||point.eventId!==inn.bedEventId)throw Error('Rihad: vínculo da pousada ou cama inválido.');
+   if(!Array.isArray(c.regionalNpcs)||c.regionalNpcs.length!==3||c.regionalNpcs.some(function(n){return !n.id||!n.characterName||!n.faceName||!n.texts||n.mapId!==9&&n.mapId!==18;}))throw Error('Rihad: configuração de NPCs regionais inválida.');
    ArenaContinuation.registerCampaignDestination(c.arrival);configured=true;
   }return true;
  };
@@ -69,7 +71,11 @@ var ArenaRihad;
    if(!inInn()||!ArenaNarrative.isCampaign()||$gameParty.inBattle()||$gameMessage.isBusy()||
      !(i instanceof Game_Interpreter)||i.eventId()!==c.keeperEventId||i._mapId!==c.entry.mapId||
      !e||$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1)return false;
-   return ArenaCourt.show(i,['O quarto está disponível, sem custo. Siga as placas até a cama e interaja para descansar.']);
+   var npc=regional('rihad.inn.keeper');return ArenaCourt.show(i,npc.texts,{name:npc.faceName,index:0});
+  },
+  talkRegional:function(i,id){var npc=regional(id),e=npc&&$gameMap.event(npc.eventId);
+   if(!npc||npc.key==='innkeeper'||$gameMap.mapId()!==npc.mapId||!ArenaNarrative.isCampaign()||$gameParty.inBattle()||$gameMessage.isBusy()||$gamePlayer.isTransferring()||!(i instanceof Game_Interpreter)||i._mapId!==npc.mapId||i.eventId()!==npc.eventId||!e||e._erased||$gameMap.distance(e.x,e.y,$gamePlayer.x,$gamePlayer.y)>1||ArenaQuests.snapshot('MQ02').stage<10)return false;
+   var texts=ArenaQuests.snapshot('MQ02').stage<20&&npc.textsBeforeRia?npc.textsBeforeRia:npc.texts;return ArenaCourt.show(i,texts,{name:npc.faceName,index:0});
   },
   arrivalNotice:function(i){return ArenaRihad.offerGate(i);},
   offerGate:function(i){
@@ -124,8 +130,10 @@ var ArenaRihad;
    var bed=$gameMap.event(bedId);
    if(!bed||bed._priorityType!==1)$gameMap._events[bedId]=new Game_Event($gameMap.mapId(),bedId);
   }
+  if(!$gamePlayer.isTransferring()&&urban())$arenaRihad.regionalNpcs.filter(function(n){return n.mapId===$gameMap.mapId();}).forEach(function(n){if(!$gameMap.event(n.eventId)&&$dataMap.events[n.eventId])$gameMap._events[n.eventId]=new Game_Event($gameMap.mapId(),n.eventId);});
   mapLoaded.apply(this,arguments);
   if(here()){var actor=$gameMap.event($arenaRihad.informantEventId),visual=$arenaRihad.informantVisual;if(actor&&!actor._erased){actor.setImage(visual.characterName,0);actor.setDirectionFix(false);actor.setDirection(visual.direction);actor.setDirectionFix(true);actor.setPattern(1);}}
+  if(urban())$arenaRihad.regionalNpcs.filter(function(n){return n.mapId===$gameMap.mapId();}).forEach(function(n){var e=$gameMap.event(n.eventId);if(e&&!e._erased){e.setImage(n.characterName,0);e.setDirectionFix(false);}});
   if(here()&&ArenaContinuation.labActive()&&ArenaContinuation.status().code==='arrived'&&!ArenaPersistence.snapshot().quests.MQ02)ArenaPersistence.setQuest('MQ02',10,{},false);
  };
  // Use the existing RAM laboratory, with no route to personal save slots.
@@ -222,7 +230,7 @@ var ArenaRihad;
   }
   if(inInn()){
    var keeper=$gameMap.event($arenaRihad.inn.keeperEventId),exit=$gameMap.event($arenaRihad.inn.exitEventId);
-   markers=[[keeper.x,keeper.y,'Estalajadeiro'],[exit.x,exit.y,'Sair para Rihad',32]];
+   markers=[[keeper.x,keeper.y,'Responsável pela pousada',-58],[exit.x,exit.y,'Sair para Rihad',32]];
   }
   var roomRoute=inInn()?$arenaRihad.inn.roomRoute:here()&&guidance()==='square'?$arenaRihad.inn.exteriorRoute:null;
   if(roomRoute){
