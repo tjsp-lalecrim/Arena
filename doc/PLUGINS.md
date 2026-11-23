@@ -1,3 +1,7 @@
+## Informante de Rihad — apresentação vigente
+
+Arena_Rihad0.4.0 e Arena_Court0.1.1: conjunto próprio no evento1, retrato opcional no apresentador existente e reapresentação de saves antigos, sem novo plugin/namespace. [Contrato](plugins/Arena_Rihad.md), [arte e evidências](CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026). Avaliação visual agrupada pendente; não alterar a visão aprovada ou seus futuros blocos ilustrados.
+
 ## Mapa mundial e viagem de campanha — vigente
 
 Arena_WorldMap0.3.0 após os provedores de campanha: menu/tecla M, nove províncias e273 localidades nomeadas, listas alfabéticas, indisponíveis desabilitados, estados/motivos textuais e símbolos distintos, serviço comum ao portão. Destinos de quest preservam sigilo até descoberta. Consulta em interiores, sem contornar saída/Tharn. Dados vetoriais/estado versionado, namespace web preservado. [Contrato, fontes e validação](plugins/Arena_WorldMap.md).

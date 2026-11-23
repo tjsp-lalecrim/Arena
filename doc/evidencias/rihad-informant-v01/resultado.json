@@ -1,0 +1,49 @@
+{
+  "browser": "157.0.8103.80",
+  "checks": [
+    "Native approach from arrival, collision, stationary south sprite, keyboard and real pointer interaction.",
+    "Portrait on every page; complete unchanged guidance before Ria and at20/30/40/50/60; only existing20->30 transition, resources/actors/MQ01/Ria/loot preserved.",
+    "RAM slots remain blocked; synthetic normal slot19 reload updates legacy serialized sprite without touching actors/party/store/position or personal saves.",
+    "Shared non-informant text remains full width; existing Blubamka regression run separately. Generator stable for all dependent maps/data; no other event, geometry, collision or art altered."
+  ],
+  "pages": [
+    {
+      "stage": 10,
+      "pages": 3,
+      "text": "Para descansar, siga ao sul pelo passeio escuro. Na primeira curva, vire a oeste. Siga as placas até a Pousada do portão. Para ganhar experiência, volte ao portão urbano, ao norte, e escolha Ir aos Arredores de Rihad. Há ratos junto à estrada. Pode voltar pelo mesmo caminho e descansar na pousada."
+    },
+    {
+      "stage": 20,
+      "pages": 2,
+      "text": "Siga as placas da Corte pelas ruas ao sul. Junto à muralha sul, passe pela grade e entre pela porta de madeira."
+    },
+    {
+      "stage": 30,
+      "pages": 2,
+      "text": "Siga as placas da Corte pelas ruas ao sul. Junto à muralha sul, passe pela grade e entre pela porta de madeira."
+    },
+    {
+      "stage": 40,
+      "pages": 1,
+      "text": "Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte."
+    },
+    {
+      "stage": 50,
+      "pages": 2,
+      "text": "Siga as placas da Corte pelas ruas ao sul. Junto à muralha sul, passe pela grade e entre pela porta de madeira."
+    },
+    {
+      "stage": 60,
+      "pages": 1,
+      "text": "Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte."
+    },
+    {
+      "stage": 60,
+      "pages": 1,
+      "text": "Para sair da cidade ou viajar, siga as placas do Portão urbano pelas ruas ao norte."
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "manual": "Visual assessment pending next integrated campaign test; no owner approval inferred. Synthetic RAM/normal saves only."
+}

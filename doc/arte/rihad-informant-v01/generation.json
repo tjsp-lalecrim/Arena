@@ -1,0 +1,74 @@
+{
+  "prompt": "Use case: stylized-concept. Create ONE coherent character production asset sheet on a REAL TRANSPARENT background. Exactly two isolated panels separated by generous empty transparent space: LEFT a detailed bust portrait; RIGHT one full-body stationary map character. No text, labels, frame, scenery, floor or background shadow plane. One character design only.\nSubject: the unnamed local informant at Rihad in this Arena adaptation, a civilian rather than a warrior or ruler. Middle-aged man approximately 50, medium-deep warm brown skin, observant kind face, short salt-and-pepper beard, dark hair with greying temples visible beneath a simple faded brick-red soft cloth cap/headwrap. Outfit takes its identity from the supplied original MLGEN01D.CFA reference: muted moss-green long-sleeved tunic, ochre/mustard sleeveless open over-vest with a broad folded collar, faded brick-red waist sash, loose desaturated teal trousers, worn dark brown boots. Plain matte linen/wool and modest leather, moderate wear, no crown, jewelry, armor, weapon, quiver or heroic insignia. Hands relaxed together near waist, both feet grounded. Appearance and costume details are project artistic interpretation, not a canonical named original NPC.\nReferences: image1 original generic male citizen is reference for silhouette and garment/color relationships ONLY; do not copy pixelation, first-person camera or its pale skin as a restriction. Image2 Blubamka sheet is reference for painted dark fantasy finish, orthographic map angle and sheet organization ONLY; do NOT copy her face, royal clothes, circlet or colors.\nLeft portrait: natural three-quarter bust turned gently toward image RIGHT, head/neck/shoulders/torso aligned, looking ahead along torso angle, no twisted neck or looking back. Head, cloth cap, shoulders and entire upper chest comfortably framed, slight warm key light from upper left, readable expression and clean silhouette. Rich controlled painted detail, no skin plasticity.\nRight sprite: SAME man, same face, cap, beard, clothing/color blocks, but strongly simplified for a final 48x64 map cell. True high-angle orthographic top-down RPG camera, facing screen DOWN. See the TOP of the cap, shoulders and upper surfaces of boots; do not render a frontal side-view paper doll or isometric projection. Natural upright standing body, arms at rest, feet aligned, no ground plane or cast floor shadow. Full figure centered with wide alpha margins above cap and below boots, no cuts. Soft upper-left light matches the existing project. Character readable at 60px tall, compact natural proportions rather than chibi. Keep silhouette independent of any tile.\nDetailed figurative dark fantasy digital painting, earth tones with restrained green/ochre/teal accents, clear material distinction and contours, consistent identity between both panels. Transparent alpha, not a painted checkerboard. Single proposal, no variants.",
+  "tool": "built-in image_gen",
+  "transparentBackground": true,
+  "referencesProvided": [
+    {
+      "path": "tmp/rihad-informant/MLGEN01D.CFA.png",
+      "role": "Original generic citizen: costume/color relationships only, no individual identity claim."
+    },
+    {
+      "path": "art/masters/blubamka-v01/identity.png",
+      "role": "Existing project finish and orthographic sprite scale/pose only; not character identity."
+    }
+  ],
+  "originalConsulted": [
+    {
+      "resource": "MLGEN01D.CFA",
+      "archive": "GLOBAL.BSA",
+      "sha256": "33a121f100a31bd8d55fd5d7351bc32d1b526244a4b683222981ef1f7d68a098",
+      "size": [
+        41,
+        99
+      ],
+      "frames": 9,
+      "consultedFrame": 0,
+      "palette": "PAL.COL",
+      "meaning": "Generic original citizen visual reference, not an identified Rihad quest NPC."
+    },
+    {
+      "resource": "MLGEN01T.CFA",
+      "archive": "GLOBAL.BSA",
+      "sha256": "9a7adfc5a73d7a1d5d6fd47b6262c3a3582b4b64ccf09f12b11345a5325fdbd7",
+      "size": [
+        43,
+        99
+      ],
+      "frames": 9,
+      "consultedFrame": 0,
+      "palette": "PAL.COL",
+      "meaning": "Generic original citizen visual reference, not an identified Rihad quest NPC."
+    }
+  ],
+  "localWiki": [
+    {
+      "file": "doc/wiki/Arena_Races - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "pages": [
+        1,
+        2,
+        9
+      ],
+      "evidence": "Hammerfell/Redguard association and regional variation, not proof of the adapted informant individual race or clothing."
+    },
+    {
+      "file": "doc/wiki/Arena_People - UESP Wiki - The Unofficial Elder Scrolls Pages.pdf",
+      "pages": [
+        1,
+        3
+      ],
+      "evidence": "Named quest characters include Blubamka; current unnamed functional informant has no canonical individual portrait established here."
+    }
+  ],
+  "interpretation": "Male civilian around50 with brown skin, greying hair/beard and faded cloth cap; green tunic, ochre vest, red sash and muted teal trousers reinterpret MLGEN01D palette. Not a new quest character or a canon claim.",
+  "scope": "One static south-facing map pose + bust portrait. Event remains stationary/direction-fixed. No walking, narrative illustration, new actor or variant.",
+  "date": "2026-11-23",
+  "generatedArtifact": "exec-5998cf44-74b4-4cd5-8447-4b76ea9ac76a.png",
+  "master": "art/masters/rihad-informant-v01/identity.png",
+  "masterDimensions": [
+    1774,
+    887
+  ],
+  "model": "Not exposed by native tool; no CLI/API fallback.",
+  "reuse": "Existing Blubamka portrait/sprite packing and painting direction; native dialogue/pagination/144px face slot. No existing character artwork modified.",
+  "approval": "Owner visual assessment pending next integrated test; technical validation does not imply artistic approval."
+}

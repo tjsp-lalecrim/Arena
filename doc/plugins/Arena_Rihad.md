@@ -1,3 +1,7 @@
+## v0.4.0 — informante V01
+
+`ArenaRihad.json.informantVisual` configura characterName/faceName/faceIndex0/direction2, gerado em `rihad-city-route.cjs`. Evento1 imóvel/fixo usa novo sprite. Ao carregar Map009, reaplica imagem/pose atual somente ao informante não apagado, sem recriar mapa/eventos ou mudar posição e estado. `ArenaRihad.inform` fornece retrato ao helper compartilhado; fontes/textos e wrapper de Ria20→30 intactos. Placa elevada para liberar a cabeça. Retrato/folha via exportação determinística; nenhum plugin/dependência/namespace novo. [Arte, testes, limites e acesso](../CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026). Blubamka/heróis preservados, avaliação visual pendente.
+
 ## Integração M02-03D — corte
 
 Arena_Court usa ArenaRihad.json.court para entrada/saída identificadas, sem substituir a chegada ou repouso. Falas do informante apontam a entrada ao norte após a visão/orientação; eventos anteriores e transição20→30 preservados. O gerador pai agora recompõe também Map011/acesso5/porta6, sem desfazer Map010 ou repouso. [Contrato/cobertura](Arena_Court.md). Descrições dos recortes anteriores abaixo conservam seu escopo histórico.
