@@ -1,0 +1,32 @@
+[
+  {
+    "path": "art/masters/blubamka-v01/identity.png",
+    "sha256": "8495d6dcf068169237381eb68889ffd94544ed62cceefabc5ea729c72ddbafd4",
+    "unchanged": true
+  },
+  {
+    "path": "img/faces/Arena_Blubamka_V01.png",
+    "sha256": "8a57b15419d1431dccb1f3fbdfcefba52a78b08c6e139dad553c9d288a3835ce",
+    "unchanged": true
+  },
+  {
+    "path": "img/characters/$Arena_Blubamka_V01.png",
+    "sha256": "1159f30d107333bd14b659733ab1283df8b3df8068a2f4a29c51231f15305c0c",
+    "unchanged": true
+  },
+  {
+    "path": "art/masters/rihad-informant-v01/identity.png",
+    "sha256": "f29d6a6f2a89be7e105ab4528bedeb809cbb3c70dac8677959ce3a6a8d1974b5",
+    "unchanged": true
+  },
+  {
+    "path": "img/faces/Arena_Rihad_Informant_V01.png",
+    "sha256": "998403dfb5e32b38edd81007888e5c8adbd688c6689be2c5dac802157671f060",
+    "unchanged": true
+  },
+  {
+    "path": "img/characters/$Arena_Rihad_Informant_V01.png",
+    "sha256": "18287760a97382a5486c8482a1f8fa6aa42911a001dfb2d3bdd9be0d32e632de",
+    "unchanged": true
+  }
+]

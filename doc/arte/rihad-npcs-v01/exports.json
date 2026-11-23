@@ -1,0 +1,785 @@
+[
+  {
+    "id": "innkeeper",
+    "master": "art/masters/rihad-npcs-v01/innkeeper.png",
+    "portraitCrop": [
+      0,
+      0,
+      850,
+      887
+    ],
+    "nativeCell": [
+      48,
+      64
+    ],
+    "footAnchor": 62,
+    "uniformScale": 0.1330166270783848,
+    "animation": "4 authored stationary directions, each repeated across native patterns; no walking cycle claimed",
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          443
+        ],
+        "size": [
+          23,
+          56
+        ],
+        "xy": [
+          12,
+          6
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          443
+        ],
+        "size": [
+          23,
+          56
+        ],
+        "xy": [
+          60,
+          6
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          443
+        ],
+        "size": [
+          23,
+          56
+        ],
+        "xy": [
+          108,
+          6
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          443
+        ],
+        "size": [
+          19,
+          56
+        ],
+        "xy": [
+          14,
+          70
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          443
+        ],
+        "size": [
+          19,
+          56
+        ],
+        "xy": [
+          62,
+          70
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          443
+        ],
+        "size": [
+          19,
+          56
+        ],
+        "xy": [
+          110,
+          70
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": [
+          900,
+          443,
+          1335,
+          887
+        ],
+        "size": [
+          20,
+          55
+        ],
+        "xy": [
+          14,
+          135
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": [
+          900,
+          443,
+          1335,
+          887
+        ],
+        "size": [
+          20,
+          55
+        ],
+        "xy": [
+          62,
+          135
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": [
+          900,
+          443,
+          1335,
+          887
+        ],
+        "size": [
+          20,
+          55
+        ],
+        "xy": [
+          110,
+          135
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "sourceRect": [
+          1335,
+          443,
+          1774,
+          887
+        ],
+        "size": [
+          23,
+          54
+        ],
+        "xy": [
+          12,
+          200
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "sourceRect": [
+          1335,
+          443,
+          1774,
+          887
+        ],
+        "size": [
+          23,
+          54
+        ],
+        "xy": [
+          60,
+          200
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "sourceRect": [
+          1335,
+          443,
+          1774,
+          887
+        ],
+        "size": [
+          23,
+          54
+        ],
+        "xy": [
+          108,
+          200
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "path": "art/masters/rihad-npcs-v01/innkeeper.png",
+        "sha256": "091a18d560ac384387aa2c1a06cd58a4f4f706dfefa8e445c2d225a0c8fb4685",
+        "size": [
+          1774,
+          887
+        ]
+      },
+      {
+        "path": "img/faces/Arena_Rihad_Innkeeper_V01.png",
+        "sha256": "be70c677e994e9b7901e7051166ccbcc7d865378f820cf34c68497dd78bab923",
+        "size": [
+          144,
+          144
+        ]
+      },
+      {
+        "path": "img/characters/$Arena_Rihad_Innkeeper_V01.png",
+        "sha256": "e238b3c531e2e1065e1af75c890d02ad1212922627430fd4dd7621558c62cca4",
+        "size": [
+          144,
+          256
+        ]
+      }
+    ]
+  },
+  {
+    "id": "guard",
+    "master": "art/masters/rihad-npcs-v01/guard.png",
+    "portraitCrop": [
+      0,
+      0,
+      850,
+      887
+    ],
+    "nativeCell": [
+      48,
+      64
+    ],
+    "footAnchor": 62,
+    "uniformScale": 0.12993039443155452,
+    "animation": "4 authored stationary directions, each repeated across native patterns; no walking cycle claimed",
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          430
+        ],
+        "size": [
+          26,
+          54
+        ],
+        "xy": [
+          11,
+          8
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          430
+        ],
+        "size": [
+          26,
+          54
+        ],
+        "xy": [
+          59,
+          8
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": [
+          900,
+          0,
+          1335,
+          430
+        ],
+        "size": [
+          26,
+          54
+        ],
+        "xy": [
+          107,
+          8
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          430
+        ],
+        "size": [
+          17,
+          54
+        ],
+        "xy": [
+          15,
+          72
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          430
+        ],
+        "size": [
+          17,
+          54
+        ],
+        "xy": [
+          63,
+          72
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": [
+          1335,
+          0,
+          1774,
+          430
+        ],
+        "size": [
+          17,
+          54
+        ],
+        "xy": [
+          111,
+          72
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": [
+          900,
+          430,
+          1335,
+          887
+        ],
+        "size": [
+          17,
+          56
+        ],
+        "xy": [
+          15,
+          134
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": [
+          900,
+          430,
+          1335,
+          887
+        ],
+        "size": [
+          17,
+          56
+        ],
+        "xy": [
+          63,
+          134
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": [
+          900,
+          430,
+          1335,
+          887
+        ],
+        "size": [
+          17,
+          56
+        ],
+        "xy": [
+          111,
+          134
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "sourceRect": [
+          1335,
+          430,
+          1774,
+          887
+        ],
+        "size": [
+          26,
+          55
+        ],
+        "xy": [
+          11,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "sourceRect": [
+          1335,
+          430,
+          1774,
+          887
+        ],
+        "size": [
+          26,
+          55
+        ],
+        "xy": [
+          59,
+          199
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "sourceRect": [
+          1335,
+          430,
+          1774,
+          887
+        ],
+        "size": [
+          26,
+          55
+        ],
+        "xy": [
+          107,
+          199
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "path": "art/masters/rihad-npcs-v01/guard.png",
+        "sha256": "58a9a46085d7af3585a1b569b85fe592a03c7d106590b2ad02d7c903ccb6e3ab",
+        "size": [
+          1774,
+          887
+        ]
+      },
+      {
+        "path": "img/faces/Arena_Rihad_Guard_V01.png",
+        "sha256": "2f160f3e6059ab6b4080ab040e03a73a345ab3122535fa177c508c4660d16e5a",
+        "size": [
+          144,
+          144
+        ]
+      },
+      {
+        "path": "img/characters/$Arena_Rihad_Guard_V01.png",
+        "sha256": "8daa0282b6b2f4c36b4172ad6e08c2849e5841acd20f01fa5087309669761c07",
+        "size": [
+          144,
+          256
+        ]
+      }
+    ]
+  },
+  {
+    "id": "civilian",
+    "master": "art/masters/rihad-npcs-v01/civilian.png",
+    "portraitCrop": [
+      0,
+      0,
+      640,
+      887
+    ],
+    "nativeCell": [
+      48,
+      64
+    ],
+    "footAnchor": 62,
+    "uniformScale": 0.25339366515837103,
+    "animation": "12 authored articulated walking frames",
+    "cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "sourceRect": [
+          640,
+          0,
+          1018,
+          225
+        ],
+        "size": [
+          25,
+          55
+        ],
+        "xy": [
+          11,
+          7
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "sourceRect": [
+          1018,
+          0,
+          1396,
+          225
+        ],
+        "size": [
+          26,
+          52
+        ],
+        "xy": [
+          59,
+          10
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "sourceRect": [
+          1396,
+          0,
+          1774,
+          225
+        ],
+        "size": [
+          25,
+          55
+        ],
+        "xy": [
+          107,
+          7
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "sourceRect": [
+          640,
+          225,
+          1018,
+          443
+        ],
+        "size": [
+          30,
+          50
+        ],
+        "xy": [
+          9,
+          76
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "sourceRect": [
+          1018,
+          225,
+          1396,
+          443
+        ],
+        "size": [
+          20,
+          50
+        ],
+        "xy": [
+          62,
+          76
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "sourceRect": [
+          1396,
+          225,
+          1774,
+          443
+        ],
+        "size": [
+          30,
+          51
+        ],
+        "xy": [
+          105,
+          75
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "sourceRect": [
+          640,
+          443,
+          1018,
+          660
+        ],
+        "size": [
+          31,
+          52
+        ],
+        "xy": [
+          8,
+          138
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "sourceRect": [
+          1018,
+          443,
+          1396,
+          660
+        ],
+        "size": [
+          20,
+          52
+        ],
+        "xy": [
+          62,
+          138
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "sourceRect": [
+          1396,
+          443,
+          1774,
+          660
+        ],
+        "size": [
+          34,
+          52
+        ],
+        "xy": [
+          103,
+          138
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "sourceRect": [
+          640,
+          660,
+          1018,
+          887
+        ],
+        "size": [
+          27,
+          56
+        ],
+        "xy": [
+          10,
+          198
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "sourceRect": [
+          1018,
+          660,
+          1396,
+          887
+        ],
+        "size": [
+          25,
+          54
+        ],
+        "xy": [
+          59,
+          200
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "sourceRect": [
+          1396,
+          660,
+          1774,
+          887
+        ],
+        "size": [
+          27,
+          56
+        ],
+        "xy": [
+          106,
+          198
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "path": "art/masters/rihad-npcs-v01/civilian.png",
+        "sha256": "e215807a878e41bf1c2866d60a39ca9a1b3dac3a202775ca03c45db49593aab8",
+        "size": [
+          1774,
+          887
+        ]
+      },
+      {
+        "path": "img/faces/Arena_Rihad_Civilian_V01.png",
+        "sha256": "b173629e2beb86b728fca09a26e198fe1ded18e9b5a46d18754d755720c24a66",
+        "size": [
+          144,
+          144
+        ]
+      },
+      {
+        "path": "img/characters/$Arena_Rihad_Civilian_V01.png",
+        "sha256": "cf624a570b87ec2de55c5adab21013ee68fbd7695c4cca4e48789080764230c7",
+        "size": [
+          144,
+          256
+        ]
+      }
+    ]
+  }
+]
