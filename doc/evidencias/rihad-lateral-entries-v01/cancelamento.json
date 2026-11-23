@@ -1,0 +1,20 @@
+{
+  "browser": "157.0.8103.80",
+  "session": "Fresh isolated RAM fixture; no personal saves",
+  "cases": [
+    {
+      "action": "keyboard-right",
+      "mapId": 9,
+      "pending": false,
+      "persistentStateUnchanged": true
+    },
+    {
+      "action": "click-away",
+      "mapId": 9,
+      "pending": false,
+      "persistentStateUnchanged": true
+    }
+  ],
+  "errors": [],
+  "limits": "Only click approach cancellation; full entry/collision/save test separately recorded."
+}

@@ -80,4 +80,5 @@ module.exports = function applyInterior(map, kind) {
     fs.writeFileSync(setsFile,'[\n'+sets.map(s=>JSON.stringify(s)).join(',\n')+'\n]\n');
     map.tilesetId = id;
     require('./rihad-interior-decor.cjs')(map,kind);
+    require('./rihad-lateral-entries.cjs')(map,kind);
 };
