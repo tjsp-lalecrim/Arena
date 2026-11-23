@@ -1,0 +1,16 @@
+{
+  "platform": "win32",
+  "sourceCommit": "731a22baa869b81424e7057302062ed5ab71d541",
+  "testVersion": "m01-rc1",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 425,
+  "totalBytes": 56176768,
+  "manifestSha256": "2b17a9c0e7b33b4c4af192094bdf6e3330c9af53caeaef77eb3d25471fe594b6",
+  "checks": [
+    "Inventário exato: somente runtime, sem mestres, referências ou saves",
+    "SHA-256 e tamanho de cada arquivo",
+    "Caminhos, recursos relativos HTML/CSS e registro de plugins",
+    "Namespace estável; pacote de jogador com debug desabilitado"
+  ],
+  "published": false
+}
