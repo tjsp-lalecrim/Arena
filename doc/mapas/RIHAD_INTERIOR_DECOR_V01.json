@@ -1,0 +1,121 @@
+{
+  "atlas": "Arena_Hammerfell_Interior_Decor_V01_D",
+  "modules": {
+    "tapestry": {
+      "tx": 0,
+      "ty": 0,
+      "w": 1,
+      "h": 2
+    },
+    "runner": {
+      "tx": 2,
+      "ty": 0,
+      "w": 2,
+      "h": 1
+    },
+    "lampS": {
+      "tx": 4,
+      "ty": 0,
+      "w": 1,
+      "h": 2
+    },
+    "lampE": {
+      "tx": 0,
+      "ty": 3,
+      "w": 1,
+      "h": 2
+    },
+    "tray": {
+      "tx": 2,
+      "ty": 3,
+      "w": 2,
+      "h": 2
+    },
+    "jar": {
+      "tx": 4,
+      "ty": 3,
+      "w": 1,
+      "h": 1
+    }
+  },
+  "placements": [
+    {
+      "id": "inn.cloth",
+      "area": "inn",
+      "module": "tapestry",
+      "x": 38,
+      "y": 51
+    },
+    {
+      "id": "inn.runner",
+      "area": "inn",
+      "module": "runner",
+      "x": 41,
+      "y": 51
+    },
+    {
+      "id": "inn.lightS",
+      "area": "inn",
+      "module": "lampS",
+      "x": 46,
+      "y": 51
+    },
+    {
+      "id": "room.lightE",
+      "area": "inn",
+      "module": "lampE",
+      "x": 61,
+      "y": 8
+    },
+    {
+      "id": "inn.trayA",
+      "area": "inn",
+      "module": "tray",
+      "x": 44,
+      "y": 56
+    },
+    {
+      "id": "inn.trayB",
+      "area": "inn",
+      "module": "tray",
+      "x": 35,
+      "y": 56
+    },
+    {
+      "id": "inn.water",
+      "area": "inn",
+      "module": "jar",
+      "x": 45,
+      "y": 48
+    },
+    {
+      "id": "court.clothA",
+      "area": "court",
+      "module": "tapestry",
+      "x": 74,
+      "y": 81
+    },
+    {
+      "id": "court.clothB",
+      "area": "court",
+      "module": "tapestry",
+      "x": 88,
+      "y": 81
+    },
+    {
+      "id": "court.lightA",
+      "area": "court",
+      "module": "lampS",
+      "x": 72,
+      "y": 81
+    },
+    {
+      "id": "court.lightB",
+      "area": "court",
+      "module": "lampS",
+      "x": 90,
+      "y": 81
+    }
+  ],
+  "source": "TAVERN4/PALACE2 layout and existing props retained; new textile, lighting and dressing placements are artistic adaptations."
+}

@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Complemento dos interiores:** [seis módulos/11colocações](CHEGADA_RIHAD_M02_03A.md#complemento-dos-interiores-de-hammerfell--23112026) na pousada/corte; mobiliário, cama e eventos existentes preservados. Avaliação visual agrupada aos NPCs/fachadas, sem aprovação presumida. Prévia agrupada nesta entrega em [Pages](PAGES_INFRA.md); release somente no fechamento.
+
 **Fachadas/adereços regionais:** [12 módulos/21 ocorrências](CHEGADA_RIHAD_M02_03A.md#fachadas-e-adereços-de-hammerfell-v01--23112026), toldos, postigos, símbolos e recipientes visuais no percurso urbano. Portas/serviços preservados; avaliação visual agrupada aos NPCs. Aguarda próxima prévia Pages, sem nova publicação nesta entrega. Não encerra todas as pendências de cidade/arte.
 
 **Variantes de Hammerfell:** [idoso, artesã, viajante e guarda](CHEGADA_RIHAD_M02_03A.md#quatro-variantes-de-hammerfell--23112026), quatro retratos e quatro orientações; artesã/viajante móveis, integrados à cidade sem novos serviços. Avaliação visual agrupada pendente. Publicação acumulada (informante, trio e variantes) nesta entrega, com referência vigente em [Pages](PAGES_INFRA.md). Não iniciar nova produção por consequência.
