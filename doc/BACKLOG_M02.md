@@ -2,7 +2,7 @@
 
 **Variantes de Hammerfell:** [idoso, artesã, viajante e guarda](CHEGADA_RIHAD_M02_03A.md#quatro-variantes-de-hammerfell--23112026), quatro retratos e quatro orientações; artesã/viajante móveis, integrados à cidade sem novos serviços. Avaliação visual agrupada pendente. Publicação acumulada (informante, trio e variantes) nesta entrega, com referência vigente em [Pages](PAGES_INFRA.md). Não iniciar nova produção por consequência.
 
-**Trio regional Redguard:** [pousadeira, guarda da corte e moradora](CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026), com retratos/quatro direções e caminhada da moradora. Avaliação visual agrupada pendente; informante e Blubamka preservados. Pages continua7597fd7: informante7e4dbac e este trio aguardam publicação manual, sem release.
+**Trio regional Redguard:** [pousadeira, guarda da corte e moradora](CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026), com retratos/quatro direções e caminhada da moradora. Avaliação visual agrupada pendente; informante e Blubamka preservados. Informante, trio e variantes já constam da [prévia acumulada d04cc5a](PAGES_INFRA.md#prévia-acumulada-de-npcs-de-hammerfell--23112026), sem release.
 
 **Informante de Rihad V01:** [sprite/retrato próprios e validação focal](CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026), orientação de campanha preservada. Avaliação visual agrupada pendente, sem aprovação presumida; Pages/release separados.
 
@@ -10,7 +10,7 @@
 
 **Feedback atual:** responsável confirmou apresentação bem-sucedida da visão de Ria; [cobertura exata](VISAO_RIA_M02_03C.md). Não atribuir nova confirmação de persistência.
 
-**Prévia pública atual:** [mapa mundial e catálogo acessível, fonte7597fd7](PAGES_INFRA.md#prévia-do-mapa-mundial-de-mq02--20112026). Avaliação manual/visual pendente pelo roteiro agrupado; dragon gate exterior e vagonetes seguem incertos, sem produção ou integração presumida. Release no fechamento.
+**Prévia pública atual:** [NPCs acumulados de Hammerfell, fonte d04cc5a](PAGES_INFRA.md#prévia-acumulada-de-npcs-de-hammerfell--23112026), preservando mapa mundial e catálogo. Avaliação manual/visual pendente pelo roteiro agrupado; dragon gate exterior e vagonetes seguem incertos, sem produção ou integração presumida. Release no fechamento.
 
 **Entrada de Fang Lair:** [face interna MSU integrada e investigação delimitada](FANG_CELAS_M02_06A.md#entrada-interna-e-investigação-de-vagonetes--20112026). Exterior dragon gate e vagonetes permanecem incertos; candidatos nos volumes(87,21)/(88,21) registrados, sem geração/colocação por suposição. Avaliação visual agrupada; Pages e release separados.
 
