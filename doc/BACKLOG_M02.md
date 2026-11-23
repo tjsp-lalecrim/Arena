@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Variantes de Hammerfell:** [idoso, artesã, viajante e guarda](CHEGADA_RIHAD_M02_03A.md#quatro-variantes-de-hammerfell--23112026), quatro retratos e quatro orientações; artesã/viajante móveis, integrados à cidade sem novos serviços. Avaliação visual agrupada pendente. Publicação acumulada (informante, trio e variantes) nesta entrega, com referência vigente em [Pages](PAGES_INFRA.md). Não iniciar nova produção por consequência.
+
 **Trio regional Redguard:** [pousadeira, guarda da corte e moradora](CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026), com retratos/quatro direções e caminhada da moradora. Avaliação visual agrupada pendente; informante e Blubamka preservados. Pages continua7597fd7: informante7e4dbac e este trio aguardam publicação manual, sem release.
 
 **Informante de Rihad V01:** [sprite/retrato próprios e validação focal](CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026), orientação de campanha preservada. Avaliação visual agrupada pendente, sem aprovação presumida; Pages/release separados.

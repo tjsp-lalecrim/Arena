@@ -1,5 +1,22 @@
 # M02-03A — primeira chegada a Rihad
 
+## Quatro variantes de Hammerfell — 23/11/2026
+
+Complemento reutilizável do trio V01, sem substituir informante, Blubamka ou os três conjuntos anteriores. [Folha comparativa](arte/hammerfell-variants-v01/review.png) · [prompts, mestres e referências](arte/hammerfell-variants-v01/generation.json) · [recortes, exportações e hashes](arte/hammerfell-variants-v01/exports.json). As mesmas oito referências arquivadas são usadas com as ressalvas de autoria do registro anterior: contexto Arena/Skyrim/Redguard, não cópia de cidadãos nomeados ou uniforme canônico. Idades, feições, ocupações, roupas e posições adicionais são interpretações do projeto.
+
+| Variante | Ocorrência em Map009 | Distinção e comportamento |
+| --- | --- | --- |
+| Morador idoso | evento902, `rihad.regional.elder.01`,350,30 | Cabelo/barba brancos, rosto longo, colete ameixa e faixa ferrugem; quatro poses imóveis, vira para conversar |
+| Artesã | evento903, `rihad.regional.artisan.01`,316,45 | Pele mais escura, cachos/faixa, mangas dobradas, avental dividido e estojo; circuito316–318/45–47 |
+| Viajante | evento904, `rihad.regional.traveler.01`,350,40 | Silhueta larga, bigode, turbante ocre, casaco azul/cinza, bolsa lateral; circuito350–352/40–42 |
+| Guarda variante | evento905, `rihad.regional.guardvariant.01`,351,371 | Mulher, rosto/lenço baixo e fechos diferentes do guarda anterior; equipamentos da mesma família, quatro poses imóveis |
+
+Todos os quatro têm falas breves e retratos144×144. Artesã/viajante possuem12quadros articulados por folha; idoso/guarda possuem4poses reais repetidas nos padrões nativos, sem alegar caminhada. Células48×64, apoio62 e altura até56px, escala uniforme por personagem e alpha original preservado. `python tools/export-hammerfell-variants.py` exporta mestres de `art/masters/hammerfell-variants-v01`; `node tools/build-rihad-arrival.cjs` aplica a configuração existente `RIHAD_NPCS_M02.json`. Materiais, geometria, eventos antigos, quests, recompensas e serviços não alterados. Uniformes/armas são visuais: não acrescentam combate.
+
+Falas limitadas a placas, caminhos públicos e ambientação, sem antecipar destinos secretos. Não há compra/venda ou profissão jogável. Os personagens móveis usam rotas curtas não ignoráveis, pausam ao conversar e respeitam colisões; as vias obrigatórias e entradas permanecem livres. O contrato de carregamento existente insere somente os novos IDs ausentes em saves urbanos antes de criar os sprites, preservando os estados já presentes. Não muda namespace nem toca saves pessoais.
+
+[Capturas e resultado focal](evidencias/hammerfell-variants-v01/resultado.json): leitura e retratos, quatro direções/quadros móveis, colisões, caminhos até pousada/corte, reconstrução e retomada em perfil isolado. Avaliação visual do responsável permanece pendente, agrupada no próximo teste integrado. Roteiro: conversar com informante na chegada; observar idoso, moradora e viajante junto ao passeio; seguir placas Pousada, conversar com artesã e responsável; ir à corte e comparar os dois guardas. Publicação acumulada solicitada nesta entrega, registrada em [Pages](PAGES_INFRA.md); release continua no fechamento.
+
 ## Trio regional Redguard — 23/11/2026
 
 Três personagens reutilizáveis, produzidos com `image_gen` nativo, sem acrescentar serviços ou quests. [Referências/atribuições/prompts integrais](arte/rihad-npcs-v01/generation.json) · [mestres, recortes, hashes e exportações](arte/rihad-npcs-v01/exports.json) · [prancha dos três conjuntos](arte/rihad-npcs-v01/review.png). As oito imagens fornecidas foram consultadas; associação a material de jogo, montagem/capa e ilustrações de autoria incompleta é registrada sem atribuir estatuto oficial por suposição. Contexto oficial complementar: [Bethesda — Redguard](https://elderscrolls.bethesda.net/en-US/redguard). Esses NPCs, suas características e suas posições adicionais são interpretações do projeto, não personagens nomeados/uniformes canônicos do original.

@@ -1,4 +1,4 @@
-// Three regional roles on the existing city/inn. Data/positions remain explicit and rebuildable.
+// Regional roles on the existing city/inn. Data/positions remain explicit and rebuildable.
 const plan=require('../doc/mapas/RIHAD_NPCS_M02.json');
 module.exports=function apply(map,config,mapId){
  config.regionalNpcs=JSON.parse(JSON.stringify(plan.actors));
