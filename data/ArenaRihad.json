@@ -4702,6 +4702,12 @@
       }
     ]
   },
+  "informantVisual": {
+    "characterName": "$Arena_Rihad_Informant_V01",
+    "faceName": "Arena_Rihad_Informant_V01",
+    "faceIndex": 0,
+    "direction": 2
+  },
   "inn": {
     "name": "Pousada do portão",
     "areaId": "rihad.inn",

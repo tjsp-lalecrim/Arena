@@ -1,4 +1,6 @@
-# Arena_Court v0.1.0
+# Arena_Court v0.1.1
+
+**v0.1.1:** `show(interpreter,texts,face?)` aceita descritor opcional `{name,index}` para o informante de Rihad. Sem argumento, mantém detecção anterior de Blubamka e texto sem imagem em largura total. Paginação reserva168px somente quando há retrato; aceitação/entrega/recibos intactos. [Regressões e fonte](../CHEGADA_RIHAD_M02_03A.md#informante-v01--23112026).
 
 Adaptador mínimo M02-03D, sem dependência externa. Após Arena_RiaVision, Arena_Rihad, Arena_Persistence/Arena_Quests, Arena_CampaignConfig e MV_JournalModel; utiliza intérprete, mensagens, escolhas e transferências nativos MV1.6.1. Não clona núcleos nem altera arquivos do motor. [Conteúdo, fontes e roteiro](../CORTE_RIHAD_M02_03D.md).
 

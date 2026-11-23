@@ -99,6 +99,10 @@ function build(map, config, recovery) {
         doors: signage.doors.map(({ type, tile, approach }) => ({ type, tile, approach })),
     };
     Object.assign(map.events[1], position('informant'));
+    config.informantVisual={characterName:'$Arena_Rihad_Informant_V01',faceName:'Arena_Rihad_Informant_V01',faceIndex:0,direction:2};
+    map.events[1].name='Informante de Rihad';
+    map.events[1].note='Conjunto visual V01: civil regional interpretado; imóvel, direção sul fixa. doc/arte/rihad-informant-v01/generation.json';
+    Object.assign(map.events[1].pages[0].image,{characterName:config.informantVisual.characterName,characterIndex:0,direction:2,pattern:1});
 
     Object.assign(map.events[3], position('road'));
     Object.assign(map.events[4], position('outskirts'));

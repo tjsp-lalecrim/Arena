@@ -25,7 +25,7 @@ function event(id,name,x,y,script,characterName=''){
 }
 const map={...read('data/Map001.json'),width,height,data,tilesetId:4,
  displayName:'',note:'M02-03A: Rihad, esplanada adaptada; materiais/NPC provisórios reutilizados. Nome no cabeçalho próprio, sem duplicar janela nativa. Sem planta original confirmada.',
- events:[null,event(1,'Informante — representação provisória',9,7,'ArenaRihad.inform(this);','$Arena_redguard_male_walk_r02'),
+ events:[null,event(1,'Informante de Rihad',9,7,'ArenaRihad.inform(this);','$Arena_Rihad_Informant_V01'),
  event(2,'Repouso autorizado — Rihad',15,10,"ArenaRecovery.usePoint('MQ02.rihad.rest',this);"),
  event(3,'Chegada de estrada — rihad.arrival',10,12,'ArenaRihad.arrivalNotice(this);'),
  event(4,'Arredores de Rihad — acesso',18,9,'ArenaRihad.visitOutskirts(this);')],

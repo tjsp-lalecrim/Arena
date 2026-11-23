@@ -1,5 +1,18 @@
 # M02-03A — primeira chegada a Rihad
 
+## Informante V01 — 23/11/2026
+
+Map009/evento1 mantém posição(348,12), interação e colisão. Novo conjunto próprio: `$Arena_Rihad_Informant_V01` e retrato `Arena_Rihad_Informant_V01`, distinto do protagonista antes reutilizado e de Blubamka. Civil masculino com barba/cabelo grisalhos, tecido vermelho desbotado, túnica verde, colete ocre e calças azul-esverdeadas: **interpretação artística**, não aparência canônica de um NPC nomeado. `MLGEN01D.CFA`/varianteT e moradores/raças na wiki local foram consultados; não foi alegada observação no jogo DOS ou identificação de um informante único no original.
+
+[Prompt integral, ferramenta e referências](arte/rihad-informant-v01/generation.json) · [mestre/recortes/exportações e hashes](arte/rihad-informant-v01/exports.json). Mestre1774×887; retrato144×144; folha144×256/células48×64, figura22×60 e apoio62. Usa **somente a pose imóvel para baixo**, porque o evento já era fixo; três padrões frontais iguais, demais direções transparentes. Não representa uma caminhada ou poses novas não necessárias. Alpha real gerado preservado; recorte técnico delimitado por conteúdo significativo, sem repintura. `python tools/export-rihad-informant.py` e `node tools/build-rihad-arrival.cjs` recompõem os consumidores.
+
+Retrato nas mensagens do informante por parâmetro opcional do apresentador existente; margem168px e paginação nativa. Falas, indicação da pousada/arredores antes de Ria, corte após Ria e portão nas etapas correspondentes preservadas. A transição20→30 continua única e existente. A placa Informante foi elevada para não encobrir a cabeça. Retrato não substitui nem autoriza as ilustrações narrativas por bloco.
+
+[Captura na cidade](evidencias/rihad-informant-v01/cidade.png) · [antes de Ria](evidencias/rihad-informant-v01/antes-de-ria.png) · [após Ria](evidencias/rihad-informant-v01/depois-de-ria.png) · [orientação de viagem](evidencias/rihad-informant-v01/orientacao-portao.png) · [verificações](evidencias/rihad-informant-v01/resultado.json). Chrome isolado: aproximação pela rota, teclado/clique, colisão, retrato e páginas nas etapas10/20/30/40/50/60, ausência de alterações em recursos/atores/MQ01/Ria/loot, RAM sem slots e save normal sintético com sprite antigo reapresentado sem perder estado. Regressão de Blubamka reutilizada: audiência/aceitação/entrega e texto compartilhado sem retrato preservados. Não houve teste em save pessoal.
+
+**Avaliação visual pendente**, agrupada ao próximo teste integrado. Acesso local `http://127.0.0.1:8774/`: no percurso normal, conversar com o informante junto à chegada e conferir retrato/legibilidade, avançando as páginas. Comparar orientações nos checkpoints pré/pós-Ria disponíveis, sem exigir refazer a dungeon ou rever a visão já aprovada. Inspeção direta existente: **Testes / Debug → Campanha e mapas → Rihad · chegada nível 1 (RAM)**. Nenhum comando técnico novo. Saves antigos recebem apenas a apresentação atual do evento; não mudam namespace, posição, quest ou recursos. Pages e release ficam separados.
+
+
 ## Atlas exterior V01
 
 O Map009 usa um atlas dedicado ao percurso portão → esplanada → corte e aos quarteirões com as mesmas superfícies. Rua clara, passeio de blocos escuros e terreno ocre seguem `FLOR` do CITYW1 reconstruído. Fachadas, muralha, portal da corte, sebe e vãos de jardim usam famílias derivadas dos registros `MAP1`/DCN.INF. Cantos e jambas ocupam o lado sólido. Soleiras, folhas abertas representadas lateralmente e o muro baixo ao pé das sebes são composições ortogonais do projeto. Os 30 vãos utilizáveis e os dois sem travessia mantêm sua lógica. A costa continua provisória.

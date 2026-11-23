@@ -1,0 +1,52 @@
+{
+  "method": "Built-in image_gen master; technical crop/uniform Lanczos scale only. Generated alpha preserved.",
+  "portraitCrop": [
+    0,
+    0,
+    1000,
+    887
+  ],
+  "spriteCrop": [
+    1000,
+    0,
+    1774,
+    887
+  ],
+  "cropBounds": "Alpha>8 locates the content bounds plus2px padding; generated pixel alpha unchanged inside crop.",
+  "spriteCell": [
+    48,
+    64
+  ],
+  "figureSize": [
+    22,
+    60
+  ],
+  "footAnchor": 62,
+  "consumedPose": "Stationary south, directionFix=true, stepAnime=false; three identical front patterns. No walking cycle claimed; unused direction rows transparent.",
+  "exports": [
+    {
+      "path": "art/masters/rihad-informant-v01/identity.png",
+      "sha256": "f29d6a6f2a89be7e105ab4528bedeb809cbb3c70dac8677959ce3a6a8d1974b5",
+      "size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "path": "img/faces/Arena_Rihad_Informant_V01.png",
+      "sha256": "998403dfb5e32b38edd81007888e5c8adbd688c6689be2c5dac802157671f060",
+      "size": [
+        144,
+        144
+      ]
+    },
+    {
+      "path": "img/characters/$Arena_Rihad_Informant_V01.png",
+      "sha256": "18287760a97382a5486c8482a1f8fa6aa42911a001dfb2d3bdd9be0d32e632de",
+      "size": [
+        144,
+        256
+      ]
+    }
+  ]
+}
