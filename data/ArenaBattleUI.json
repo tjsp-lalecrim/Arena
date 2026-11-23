@@ -163,5 +163,12 @@
     "8": "sword",
     "9": "heal",
     "10": "fire"
+  },
+  "areaBackgrounds": {
+    "rihad.outskirts": {
+      "file": "Arena_Rihad_Outskirts_Battle_V01",
+      "fit": "cover",
+      "y": 0
+    }
   }
 }

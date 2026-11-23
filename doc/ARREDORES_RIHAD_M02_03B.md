@@ -1,5 +1,13 @@
 # M02-03B — arredores de Rihad para progressão inicial
 
+## Cenário de batalha costeiro V01 — 23/11/2026
+
+Uma imagem própria para `rihad.outskirts`: [mestre, prompt e fontes](arte/rihad-outskirts-battle-v01/generation.json), [exportação proporcional/hash](arte/rihad-outskirts-battle-v01/exports.json). Base de materiais DCN.INF decodificados, geografia do mapa provincial original HAMERFEL e cores do atlas urbano atual. Clareira costeira, mar, colinas, céu e muralha são interpretação artística; não orientação exata demonstrada pelo Map010 nem observação em primeira pessoa no DOS. Sem personagens/textos na arte. Chão amplo para jogador/ratos, armas e efeitos.
+
+`ArenaBattleUI.json.areaBackgrounds` configura somente esta área. No setup nativo da batalha, `Arena_BattleUI` captura o ID do mapa de origem pelo registro existente `ArenaCampaignConfig.forMap`; não seleciona por espécie ou etapa. `backgroundForArea(id)` mantém `background` como padrão para áreas sem configuração. Novo fundo usa `cover` uniforme no campo visível; o padrão anterior conserva escala/posição. Não altera encontros, animações, dano, custos, EXP, loot ou namespace. Seleção refeita em cada combate após load; não grava arte no save nem exige migração.
+
+`python tools/export-rihad-outskirts-battle.py` exporta816×459 sem deformação. [Capturas/verificação](evidencias/rihad-outskirts-battle-v01/resultado.json): portão normal→Arredores, save/load, contato, três proporções de janela, ações/animações até vitória/retorno e novo combate após carregar. Configuração/equipamento da sessão são sintéticos em perfil isolado; saves pessoais intactos. Avaliação visual pendente. Incluir na **próxima publicação agrupada** Pages; a prévia atual de interiores/fachadas continua `fcd6601`. Sem nova publicação/release nesta entrega.
+
 ## Acesso vigente pela campanha — 20/11/2026
 
 Correção integrada e [publicada na prévia2f3686e](PAGES_INFRA.md#prévia-de-mq02-com-acesso-inicial-aos-arredores--20112026), sem aprovação manual presumida.
