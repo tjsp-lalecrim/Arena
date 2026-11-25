@@ -2,6 +2,16 @@
   "schemaVersion": 1,
   "mapId": 9,
   "innMapId": 18,
+  "knowledge": {
+    "nearPathTiles": 12,
+    "localServicePathTiles": 36,
+    "wellInformedRoles": [
+      "informant",
+      "innkeeper",
+      "guard",
+      "guardvariant"
+    ]
+  },
   "interiorPois": [
     {
       "id": "inn.exit",
@@ -11,7 +21,6 @@
         71
       ],
       "face": 2,
-      "hint": "Fora da pousada, os moradores indicam as entradas da cidade.",
       "source": "Existing TAVERN4 exit1; outside locations can be requested in the city"
     },
     {
@@ -57,7 +66,6 @@
       ],
       "face": 4,
       "interior": 18,
-      "hint": "Na aproximação, procure a placa Pousada junto à fachada.",
       "source": "CITYW1/TPBD11B; TAVERN4; generic project name"
     },
     {
@@ -73,7 +81,6 @@
       ],
       "face": 2,
       "interior": 11,
-      "hint": "Na muralha sul, atravesse a grade e procure a porta de madeira.",
       "source": "CITYW1 palace threshold; PALACE2"
     },
     {
@@ -88,7 +95,6 @@
         6
       ],
       "face": 8,
-      "hint": "Siga as placas Portão urbano até a saída ao norte.",
       "source": "CITYW1 north gate; current event3"
     },
     {
@@ -669,43 +675,15 @@
   "blocks": {
     "direction": {
       "id": "rihad.where.direction",
-      "text": "Ah, fica ao {direction} daqui.",
-      "source": "TEMPLATE.DAT #0260 alternative1; %di replaced from current NPC/accessible entrance",
+      "text": "Fica a {direction} daqui.",
+      "source": "TEMPLATE.DAT #0260 alternative1; concise translation/adaptation, %di from current NPC to entrance, no precise marker",
       "classification": "T/A",
       "illustration": null
     },
     "near": {
       "id": "rihad.where.near",
-      "text": "Está logo aqui.",
-      "source": "Adaptation of nearby-location context #0261; does not claim an original map inscription",
-      "classification": "A",
-      "illustration": null
-    },
-    "route": {
-      "id": "rihad.where.route",
-      "text": "Pelas ruas, comece pelo {first}.{turn} Siga a indicação até {place}.",
-      "source": "Project adaptation to reconstructed streets and accessible thresholds",
-      "classification": "A",
-      "illustration": null
-    },
-    "entrance": {
-      "id": "rihad.where.entrance",
-      "text": "Na entrada, fique de frente para {face}.",
-      "source": "Project interaction direction at the existing event/closed facade",
-      "classification": "A",
-      "illustration": null
-    },
-    "closed": {
-      "id": "rihad.where.closed",
-      "text": "O estabelecimento está fechado nesta versão. A indicação leva apenas à fachada.",
-      "source": "Current service coverage; project-specific",
-      "classification": "A",
-      "illustration": null
-    },
-    "outskirts": {
-      "id": "rihad.where.outskirts",
-      "text": "No Portão urbano, escolha Ir aos Arredores de Rihad. Pode voltar à cidade pelo mesmo caminho.",
-      "source": "Existing project gate access, independent of Ria/audience",
+      "text": "É logo aqui; vou indicar a entrada.",
+      "source": "TEMPLATE.DAT #0261 nearby exact-location family; project marker replaces original automap inscription",
       "classification": "A",
       "illustration": null
     },
