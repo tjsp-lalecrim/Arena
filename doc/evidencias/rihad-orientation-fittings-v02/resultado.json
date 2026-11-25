@@ -1,0 +1,111 @@
+{
+  "browser": "158.0.8127.37",
+  "baseline": "f462950",
+  "checks": [
+    "Both generator rebuilds stable; all previous events, geometry/regions and four native passage bits unchanged.",
+    "Six new actors restored into a synthetic old city save; four mobile circuits observed, static elder/guard retain authored poses.",
+    "Mouse/keyboard topics, scroll to closed service, correct cardinal axes, directions from three distant NPCs after movement; real native routes to inn approach.",
+    "Selected next-passage arrow persists through isolated normal save/load; explicit menu/NPC cancellation hides it; entering interiors clears the exterior target.",
+    "All ten internal E/W thresholds cross both ways; inn/court entrances and exits remain functional, no animation or anchor regenerated.",
+    "Where is/cancel does not run informant quest effects; explicit original orientation20→30 retained; unknown quest destinations absent; variables not exposed.",
+    "UI-only follow-up: Where is initially focuses first destination/top row so inn/court are visible; existing input fence retained."
+  ],
+  "routes": [
+    {
+      "npc": [
+        348,
+        12
+      ],
+      "target": [
+        360,
+        383
+      ],
+      "length": 413,
+      "compass": "sudeste"
+    },
+    {
+      "npc": [
+        358,
+        90
+      ],
+      "target": [
+        314,
+        42
+      ],
+      "length": 92,
+      "compass": "noroeste"
+    },
+    {
+      "npc": [
+        370,
+        205
+      ],
+      "target": [
+        314,
+        42
+      ],
+      "length": 219,
+      "compass": "noroeste"
+    },
+    {
+      "npc": [
+        375,
+        320
+      ],
+      "target": [
+        314,
+        42
+      ],
+      "length": 339,
+      "compass": "noroeste"
+    }
+  ],
+  "moved": [
+    {
+      "id": 906,
+      "from": [
+        357,
+        90
+      ],
+      "to": [
+        358,
+        90
+      ]
+    },
+    {
+      "id": 907,
+      "from": [
+        355,
+        150
+      ],
+      "to": [
+        356,
+        150
+      ]
+    },
+    {
+      "id": 908,
+      "from": [
+        369,
+        205
+      ],
+      "to": [
+        370,
+        205
+      ]
+    },
+    {
+      "id": 909,
+      "from": [
+        374,
+        270
+      ],
+      "to": [
+        375,
+        270
+      ]
+    }
+  ],
+  "errors": [],
+  "limits": "Fresh isolated Chrome, synthetic normal slot19 and RAM fixture. Dynamic citizens observed separately; traversal helper freezes NPCs for deterministic collision routing. Owner general functioning satisfactory, no new detailed manual approval."
+}

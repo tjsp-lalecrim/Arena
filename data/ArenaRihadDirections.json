@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "mapId": 9,
+  "innMapId": 18,
+  "interiorPois": [
+    {
+      "id": "inn.exit",
+      "name": "Saída para Rihad",
+      "approach": [
+        42,
+        71
+      ],
+      "face": 2,
+      "hint": "Fora da pousada, os moradores indicam as entradas da cidade.",
+      "source": "Existing TAVERN4 exit1; outside locations can be requested in the city"
+    },
+    {
+      "id": "inn.bed",
+      "name": "Quarto · Cama",
+      "approach": [
+        64,
+        10
+      ],
+      "face": 4,
+      "source": "Existing authorized bed interaction; no recovery from directions"
+    }
+  ],
+  "groups": [
+    {
+      "id": "temple",
+      "label": "Templo · Fechado"
+    },
+    {
+      "id": "equipment",
+      "label": "Equipamentos · Fechado"
+    },
+    {
+      "id": "mages",
+      "label": "Guilda dos Magos · Fechado"
+    },
+    {
+      "id": "tavern",
+      "label": "Outra taverna · Fechado"
+    }
+  ],
+  "pois": [
+    {
+      "id": "inn",
+      "name": "Pousada do portão",
+      "approach": [
+        314,
+        42
+      ],
+      "tile": [
+        313,
+        42
+      ],
+      "face": 4,
+      "interior": 18,
+      "hint": "Na aproximação, procure a placa Pousada junto à fachada.",
+      "source": "CITYW1/TPBD11B; TAVERN4; generic project name"
+    },
+    {
+      "id": "court",
+      "name": "Corte",
+      "approach": [
+        360,
+        383
+      ],
+      "tile": [
+        360,
+        384
+      ],
+      "face": 2,
+      "interior": 11,
+      "hint": "Na muralha sul, atravesse a grade e procure a porta de madeira.",
+      "source": "CITYW1 palace threshold; PALACE2"
+    },
+    {
+      "id": "gate",
+      "name": "Portão urbano",
+      "approach": [
+        345,
+        7
+      ],
+      "tile": [
+        345,
+        6
+      ],
+      "face": 8,
+      "hint": "Siga as placas Portão urbano até a saída ao norte.",
+      "source": "CITYW1 north gate; current event3"
+    },
+    {
+      "id": "outskirts",
+      "name": "Arredores de Rihad",
+      "approach": [
+        345,
+        7
+      ],
+      "tile": [
+        345,
+        6
+      ],
+      "face": 8,
+      "source": "Project road access through the same gate menu; not a new original building"
+    },
+    {
+      "id": "temple.37.5",
+      "group": "temple",
+      "name": "Templo",
+      "approach": [
+        271,
+        15
+      ],
+      "tile": [
+        272,
+        15
+      ],
+      "face": 6,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTEPD.IMG; original 37,5; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "temple.9.9",
+      "group": "temple",
+      "name": "Templo",
+      "approach": [
+        354,
+        32
+      ],
+      "tile": [
+        354,
+        31
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTEPD.IMG; original 9,9; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "temple.14.30",
+      "group": "temple",
+      "name": "Templo",
+      "approach": [
+        345,
+        95
+      ],
+      "tile": [
+        345,
+        94
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTEPD.IMG; original 14,30; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "temple.7.39",
+      "group": "temple",
+      "name": "Templo",
+      "approach": [
+        361,
+        117
+      ],
+      "tile": [
+        362,
+        117
+      ],
+      "face": 6,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTEPD.IMG; original 7,39; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "temple.56.49",
+      "group": "temple",
+      "name": "Templo",
+      "approach": [
+        216,
+        155
+      ],
+      "tile": [
+        216,
+        154
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTEPD.IMG; original 56,49; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "temple.97.49",
+      "group": "temple",
+      "name": "Templo",
+      "approach": [
+        93,
+        155
+      ],
+      "tile": [
+        93,
+        154
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTEPD.IMG; original 97,49; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.85.14",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        126,
+        47
+      ],
+      "tile": [
+        126,
+        46
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 85,14; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.75.26",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        156,
+        83
+      ],
+      "tile": [
+        156,
+        82
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 75,26; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.67.33",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        186,
+        104
+      ],
+      "tile": [
+        186,
+        103
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 67,33; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.106.56",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        64,
+        168
+      ],
+      "tile": [
+        65,
+        168
+      ],
+      "face": 6,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 106,56; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.15.67",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        342,
+        206
+      ],
+      "tile": [
+        342,
+        205
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 15,67; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.104.68",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        72,
+        212
+      ],
+      "tile": [
+        72,
+        211
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 104,68; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.114.76",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        45,
+        233
+      ],
+      "tile": [
+        45,
+        232
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 114,76; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.10.77",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        356,
+        231
+      ],
+      "tile": [
+        355,
+        231
+      ],
+      "face": 4,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 10,77; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.14.81",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        342,
+        251
+      ],
+      "tile": [
+        342,
+        250
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 14,81; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.18.81",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        330,
+        251
+      ],
+      "tile": [
+        330,
+        250
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 18,81; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.65.88",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        192,
+        269
+      ],
+      "tile": [
+        192,
+        268
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 65,88; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.70.89",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        171,
+        272
+      ],
+      "tile": [
+        171,
+        271
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 70,89; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.101.92",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        78,
+        281
+      ],
+      "tile": [
+        78,
+        280
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 101,92; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.76.98",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        159,
+        299
+      ],
+      "tile": [
+        159,
+        298
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 76,98; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.32.99",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        288,
+        305
+      ],
+      "tile": [
+        288,
+        304
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 32,99; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "equipment.79.100",
+      "group": "equipment",
+      "name": "Equipamentos",
+      "approach": [
+        147,
+        308
+      ],
+      "tile": [
+        147,
+        307
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DEQD.IMG; original 79,100; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "mages.54.35",
+      "group": "mages",
+      "name": "Guilda dos Magos",
+      "approach": [
+        225,
+        110
+      ],
+      "tile": [
+        225,
+        109
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DMUD.IMG; original 54,35; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.91.20",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        109,
+        60
+      ],
+      "tile": [
+        110,
+        60
+      ],
+      "face": 6,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 91,20; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.119.27",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        27,
+        89
+      ],
+      "tile": [
+        27,
+        88
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 119,27; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.106.28",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        69,
+        89
+      ],
+      "tile": [
+        69,
+        88
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 106,28; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.106.32",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        69,
+        101
+      ],
+      "tile": [
+        69,
+        100
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 106,32; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.13.39",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        343,
+        117
+      ],
+      "tile": [
+        344,
+        117
+      ],
+      "face": 6,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 13,39; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.8.47",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        357,
+        146
+      ],
+      "tile": [
+        357,
+        145
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 8,47; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.8.52",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        357,
+        161
+      ],
+      "tile": [
+        357,
+        160
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 8,52; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.8.58",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        357,
+        179
+      ],
+      "tile": [
+        357,
+        178
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 8,58; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.90.93",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        114,
+        287
+      ],
+      "tile": [
+        114,
+        286
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 90,93; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.57.107",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        216,
+        326
+      ],
+      "tile": [
+        216,
+        325
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 57,107; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.57.113",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        216,
+        344
+      ],
+      "tile": [
+        216,
+        343
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 57,113; type confirmed, proper name unconfirmed"
+    },
+    {
+      "id": "tavern.57.118",
+      "group": "tavern",
+      "name": "Outra taverna",
+      "approach": [
+        216,
+        359
+      ],
+      "tile": [
+        216,
+        358
+      ],
+      "face": 8,
+      "closed": true,
+      "source": "CITYW1.MIF + 32 blocos / DCN.INF; DTAVD.IMG; original 57,118; type confirmed, proper name unconfirmed"
+    }
+  ],
+  "blocks": {
+    "direction": {
+      "id": "rihad.where.direction",
+      "text": "Ah, fica ao {direction} daqui.",
+      "source": "TEMPLATE.DAT #0260 alternative1; %di replaced from current NPC/accessible entrance",
+      "classification": "T/A",
+      "illustration": null
+    },
+    "near": {
+      "id": "rihad.where.near",
+      "text": "Está logo aqui.",
+      "source": "Adaptation of nearby-location context #0261; does not claim an original map inscription",
+      "classification": "A",
+      "illustration": null
+    },
+    "route": {
+      "id": "rihad.where.route",
+      "text": "Pelas ruas, comece pelo {first}.{turn} Siga a indicação até {place}.",
+      "source": "Project adaptation to reconstructed streets and accessible thresholds",
+      "classification": "A",
+      "illustration": null
+    },
+    "entrance": {
+      "id": "rihad.where.entrance",
+      "text": "Na entrada, fique de frente para {face}.",
+      "source": "Project interaction direction at the existing event/closed facade",
+      "classification": "A",
+      "illustration": null
+    },
+    "closed": {
+      "id": "rihad.where.closed",
+      "text": "O estabelecimento está fechado nesta versão. A indicação leva apenas à fachada.",
+      "source": "Current service coverage; project-specific",
+      "classification": "A",
+      "illustration": null
+    },
+    "outskirts": {
+      "id": "rihad.where.outskirts",
+      "text": "No Portão urbano, escolha Ir aos Arredores de Rihad. Pode voltar à cidade pelo mesmo caminho.",
+      "source": "Existing project gate access, independent of Ria/audience",
+      "classification": "A",
+      "illustration": null
+    },
+    "unknown": {
+      "id": "rihad.where.unknown",
+      "text": "Não sei onde fica. Desculpe.",
+      "source": "TEMPLATE.DAT #0259 alternative1; no route shown if unavailable",
+      "classification": "T",
+      "illustration": null
+    },
+    "stopped": {
+      "id": "rihad.where.stopped",
+      "text": "Indicação encerrada.",
+      "source": "Project navigation action; no quest change",
+      "classification": "A",
+      "illustration": null
+    }
+  }
+}

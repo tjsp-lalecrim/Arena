@@ -1,5 +1,7 @@
 # Estado operacional do M02 — cobertura completa
 
+**Feedback25/11:** funcionamento geral satisfatório relatado pelo responsável; encaixes decorativos inadequados, sobretudo E/W, registrados para correção. [Ajustes de montagem, seis moradores e Onde fica…?](plugins/Arena_RihadDirections.md) nesta entrega; sem regenerar arte. Orientação/localização pública não descobre destinos de quest. Avaliação manual dos ajustes permanece pendente; não extrapolar o relato para persistência/colisões específicas.
+
 **Diálogos locais por tópicos:** [Arena_NPCDialogues](plugins/Arena_NPCDialogues.md), dados/blocos com fontes e condições, informante/pousadeira/guardas/moradores; Blubamka preservada. Rumores secundários e comércio não ativados. Avaliação manual pendente; prévia nesta entrega, release no fechamento.
 
 **Entradas laterais de Rihad:** [179 painéis urbanos/10vãos internos](CHEGADA_RIHAD_M02_03A.md#entradas-laterais-v01--23112026), seis módulos E/W próprios; planta, colisões, destinos e eventos preservados. Prévia agrupada com cenário dos Arredores nesta entrega em [Pages](PAGES_INFRA.md). Avaliação visual continua pendente; não cria novos serviços ou mecânicas de porta.
