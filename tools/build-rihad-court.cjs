@@ -63,6 +63,7 @@ function build(){
  fs.writeFileSync(path.join(root,'data/Map011.json'), JSON.stringify(map)+'\n');
  const infos=read('data/MapInfos.json');infos[9].name='M02-03 Rihad — percurso urbano';infos[11]={id:11,expanded:true,name:'M02-03 Corte de Rihad (PALACE2)',order:11,parentId:0,scrollX:0,scrollY:0};fs.writeFileSync(path.join(root,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
  write('data/ArenaRihad.json',cfg);
+ require('./build-rihad-guidance.cjs')();
  const p=path.join(root,'data/ArenaCampaign.json'),raw=fs.readFileSync(p,'utf8'),a={id:c.areaId,questId:'MQ02',mapId:11},existing=read('data/ArenaCampaign.json').areas.find(a=>a.id===c.areaId);
  if(existing){if(JSON.stringify(existing)!==JSON.stringify(a))throw Error('Vínculo da corte divergente; preservar configuração.');}
  else fs.writeFileSync(p,raw.replace('"areas": [','"areas": [\n    '+JSON.stringify(a)+','));

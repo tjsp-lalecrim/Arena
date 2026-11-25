@@ -166,6 +166,11 @@
           "action": "rihad.orientation"
         },
         {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
           "id": "city",
           "label": "Sobre Rihad",
           "block": "common.city"
@@ -214,6 +219,11 @@
           "block": "rihad.inn.keeper.local"
         },
         {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
           "id": "city",
           "label": "Sobre Rihad",
           "block": "common.city"
@@ -254,6 +264,11 @@
           ]
         },
         {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
           "id": "city",
           "label": "Sobre Rihad",
           "block": "common.city"
@@ -283,6 +298,11 @@
           "block": "rihad.civilian.square.01.local"
         },
         {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
           "id": "city",
           "label": "Sobre Rihad",
           "block": "common.city"
@@ -308,6 +328,11 @@
           "id": "local",
           "label": "Informações locais",
           "block": "rihad.regional.elder.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
         },
         {
           "id": "city",
@@ -337,6 +362,11 @@
           "block": "rihad.regional.artisan.01.local"
         },
         {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
           "id": "city",
           "label": "Sobre Rihad",
           "block": "common.city"
@@ -357,6 +387,11 @@
           "id": "local",
           "label": "Informações locais",
           "block": "rihad.regional.traveler.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
         },
         {
           "id": "city",
@@ -384,6 +419,200 @@
           "id": "local",
           "label": "Informações locais",
           "block": "rihad.regional.guardvariant.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "audience",
+          "label": "A audiência na corte",
+          "block": "common.palace",
+          "minStage": 20,
+          "maxStage": 39
+        }
+      ]
+    },
+    "rihad.street.resident.01": {
+      "id": "rihad.street.resident.01",
+      "mapId": 9,
+      "eventId": 906,
+      "name": "Viajante de Hammerfell",
+      "role": "traveler",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Traveler_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.traveler.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        }
+      ]
+    },
+    "rihad.street.resident.02": {
+      "id": "rihad.street.resident.02",
+      "mapId": 9,
+      "eventId": 907,
+      "name": "Artesã de Rihad",
+      "role": "artisan",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Artisan_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.artisan.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        }
+      ]
+    },
+    "rihad.street.resident.03": {
+      "id": "rihad.street.resident.03",
+      "mapId": 9,
+      "eventId": 908,
+      "name": "Moradora de Rihad",
+      "role": "civilian",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Rihad_Civilian_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.civilian.square.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        }
+      ]
+    },
+    "rihad.street.resident.04": {
+      "id": "rihad.street.resident.04",
+      "mapId": 9,
+      "eventId": 909,
+      "name": "Viajante de Hammerfell",
+      "role": "traveler",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Traveler_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.traveler.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        }
+      ]
+    },
+    "rihad.street.resident.05": {
+      "id": "rihad.street.resident.05",
+      "mapId": 9,
+      "eventId": 910,
+      "name": "Morador idoso",
+      "role": "elder",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Elder_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.elder.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
+        },
+        {
+          "id": "city",
+          "label": "Sobre Rihad",
+          "block": "common.city"
+        },
+        {
+          "id": "rumors",
+          "label": "Alguma novidade?",
+          "block": "common.rumors"
+        }
+      ]
+    },
+    "rihad.street.resident.06": {
+      "id": "rihad.street.resident.06",
+      "mapId": 9,
+      "eventId": 911,
+      "name": "Guarda de Rihad",
+      "role": "guardvariant",
+      "city": "Rihad",
+      "rulerTitle": "rainha Blubamka",
+      "face": "Arena_Hammerfell_Guardvariant_V01",
+      "topics": [
+        {
+          "id": "local",
+          "label": "Informações locais",
+          "block": "rihad.regional.guardvariant.01.local"
+        },
+        {
+          "id": "where",
+          "label": "Onde fica…?",
+          "action": "rihad.where"
         },
         {
           "id": "city",

@@ -143,6 +143,21 @@ O primeiro marco termina na introdução e dungeon inicial. Cidades e demais que
 
 ### Diálogos locais reutilizáveis — 23/11/2026
 
+Complemento25/11, [Onde fica…?](plugins/Arena_RihadDirections.md). Oito blocos parametrizados, `illustration:null`; seus destinos e marcos ficam nos dados, sem geração de ilustração antes da orientação individual do responsável.
+
+|ID|Texto PT-BR/variáveis|Origem|
+|---|---|---|
+|`rihad.where.direction`|Ah, fica ao {direction} daqui.|T/A: TEMPLATE.DAT #0260/1; rumo calculado da posição atual do NPC à entrada acessível|
+|`rihad.where.near`|Está logo aqui.|A: contexto próximo de #0261, sem fingir inscrição no mapa|
+|`rihad.where.route`|Pelas ruas, comece pelo {first}.{turn} Siga a indicação até {place}.|A: circulação do mapa do projeto; turn é vazio ou “Depois da curva, siga para o …”|
+|`rihad.where.entrance`|Na entrada, fique de frente para {face}.|A: lado acessível do evento/fachada|
+|`rihad.where.closed`|O estabelecimento está fechado nesta versão. A indicação leva apenas à fachada.|A: cobertura atual dos serviços|
+|`rihad.where.outskirts`|No Portão urbano, escolha Ir aos Arredores de Rihad. Pode voltar à cidade pelo mesmo caminho.|A: acesso já implementado|
+|`rihad.where.unknown`|Não sei onde fica. Desculpe.|T: TEMPLATE.DAT #0259/1|
+|`rihad.where.stopped`|Indicação encerrada.|A: navegação do projeto|
+
+Complementos locais nos destinos, todos A: Pousada — “Na aproximação, procure a placa Pousada junto à fachada.”; Corte — “Na muralha sul, atravesse a grade e procure a porta de madeira.”; Portão — “Siga as placas Portão urbano até a saída ao norte.”; saída interna — “Fora da pousada, os moradores indicam as entradas da cidade.” Variáveis são expandidas no runtime, não mostradas ao jogador. A direção geral não substitui as passagens da rua. Consulte o módulo para fontes/manuais, transformação dos eixos e limitações.
+
 Runtime em `ArenaNPCDialogues.json`; T=tradução, A=adaptação/fala da versão. Ilustração opcional nula em cada bloco: aguarda orientação individual, sem geração nesta entrega. Assuntos/condições/papel e bindings completos no JSON; efeitos específicos de Blubamka continuam em ArenaCourt/ArenaCourtDelivery.
 
 |ID estável|PT-BR|Fonte/classificação|Ilustração|

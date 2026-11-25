@@ -3,7 +3,10 @@
   "source": "Installed Arena/ARENA/TEMPLATE.DAT, CP437, #block and & alternative separators; no remote or personal saves",
   "used": [
     "#0159/1",
-    "#0202/1"
+    "#0202/1",
+    "#0259/1",
+    "#0260/1",
+    "#0261 nearby context (adapted, not literal map inscription)"
   ],
   "consultedNotActivated": [
     "#0100 names/occupation",
@@ -16,7 +19,11 @@
     "%cn": "city",
     "%n": "NPC identity: no invented canonical personal name",
     "%t": "rulerTitle",
-    "%di": "not used as original geographic directions differ from adapted map"
+    "%di": "Rumo calculado no mapa reconstruído a partir da posição atual do NPC; X original invertido em MV"
   },
-  "limits": "No generic rumor proves event happened in Rihad. #0202 used only after Ria, as adapted public invitation; does not itself grant a quest."
+  "limits": "No generic rumor proves event happened in Rihad. #0202 used only after Ria, as adapted public invitation; does not itself grant a quest.",
+  "directionSources": [
+    "Installed Docs/Manual.pdf complete: person interaction, compass and automap; no detailed Where Is wording claimed from manual",
+    "Local wiki Arena:Town Guide, Where Is...: general compass directions and marking nearby places"
+  ]
 }

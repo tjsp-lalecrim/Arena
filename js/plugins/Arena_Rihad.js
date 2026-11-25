@@ -9,6 +9,30 @@
 var ArenaRihad;
 (function(){
  'use strict';var configured=false;
+ // Assembly of existing atlas pieces. No resampling, new art or collision.
+ // Every fitting has a fixed logical anchor; inner jambs flank the walk row.
+ function Sprite_RihadFitting(spec){this.initialize(spec);}
+ Sprite_RihadFitting.prototype=Object.create(Sprite.prototype);
+ Sprite_RihadFitting.prototype.constructor=Sprite_RihadFitting;
+ Sprite_RihadFitting.prototype.initialize=function(spec){
+  Sprite.prototype.initialize.call(this);this._fitting=spec;this.z=1;
+  var m=spec.module,w=m.w*48,h=spec.split?144:m.h*48,local=m.tile-512;
+  this.bitmap=new Bitmap(w,h);var source=ImageManager.loadTileset(spec.atlas),self=this;
+  source.addLoadListener(function(){var sx=384+local%8*48,sy=Math.floor(local%128/8)*48;
+   // Source panels have transparent margins: align their opaque edges with
+   // the two wall lips, leaving the entire 48px walking strip uncovered.
+   if(spec.split){self.bitmap.blt(source,sx,sy,w,48,0,28);self.bitmap.blt(source,sx,sy+48,w,48,0,70);}
+   else self.bitmap.blt(source,sx,sy,w,h,0,0);
+  });
+ };
+ Sprite_RihadFitting.prototype.update=function(){Sprite.prototype.update.call(this);var s=this._fitting;
+  this.x=$gameMap.adjustX(s.x)*48+(48-this.bitmap.width)/2+s.offsetX;
+  this.y=$gameMap.adjustY(s.y-1)*48;
+ };
+ var createFittings=Spriteset_Map.prototype.createCharacters;
+ Spriteset_Map.prototype.createCharacters=function(){createFittings.apply(this,arguments);
+  ($dataMap.arenaLateralFittings||[]).forEach(function(s){this._tilemap.addChild(new Sprite_RihadFitting(s));},this);
+ };
  function regional(id){return $arenaRihad.regionalNpcs.filter(function(n){return n.id===id;})[0];}
  DataManager._databaseFiles.push({name:'$arenaRihad',src:'ArenaRihad.json'});
  var loaded=DataManager.isDatabaseLoaded;
@@ -201,7 +225,15 @@ var ArenaRihad;
   return direction;
  }
  function drawAudienceMarker(bitmap){
-  if(!here()||$gameMessage.isBusy()||$gamePlayer.isTransferring())return;
+  if(!urban()||$gameMessage.isBusy()||$gamePlayer.isTransferring())return;
+  var chosen=window.ArenaRihadDirections&&ArenaRihadDirections.marker();
+  if(chosen){
+   if(chosen.hidden)return;
+   var title=(chosen.arrived?'● Chegou · ':chosen.blocked?'? ':arrows[chosen.direction]+' ')+chosen.label;
+   var size=Math.min(300,Math.ceil(bitmap.measureTextWidth(title))+22),left=bitmap.width-size-18;
+   bitmap.fillRect(left,20,size,32,'#223932');bitmap.drawText(title,left+8,20,size-16,32,'center');return;
+  }
+  if(!here())return;
   var quest=ArenaQuests.snapshot('MQ02');
   if(!quest||quest.stage!==30)return;
   var direction=audienceDirection();

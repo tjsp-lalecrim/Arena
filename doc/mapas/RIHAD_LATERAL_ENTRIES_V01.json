@@ -80,5 +80,7 @@
       ]
     ]
   },
-  "notes": "Urban E/W follows original side6/4. Bidirectional internal thresholds have no canonical single facing; project chooses E for centers left of map midpoint, W for right. Static presentation only, no door animations/state."
+  "notes": "Urban E/W follows original side6/4. Bidirectional internal thresholds have no canonical single facing; project chooses E for centers left of map midpoint, W for right. Static presentation only, no door animations/state.",
+  "assemblyRevision": 2,
+  "assemblyNotes": "25/11: masters and atlas pixels unchanged. Runtime assembles parts around clear 48px lane, centered at logical threshold; exterior x offset6px toward accessible wall edge. See Arena_RihadDirections.md."
 }
