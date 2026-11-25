@@ -185,7 +185,185 @@
         "Mantenha a passagem livre junto à grade. As placas indicam o caminho de volta ao Portão urbano."
       ],
       "placement": "Interpretação funcional em área já jogável; posição e identidade não são registros canônicos."
+    },
+    {
+      "id": "rihad.street.resident.01",
+      "key": "traveler",
+      "name": "Viajante de Hammerfell",
+      "mapId": 9,
+      "eventId": 906,
+      "position": [
+        357,
+        90
+      ],
+      "direction": 2,
+      "moving": true,
+      "characterName": "$Arena_Hammerfell_Traveler_V01",
+      "faceName": "Arena_Hammerfell_Traveler_V01",
+      "texts": [
+        "Quando for partir, procure o Portão urbano. As viagens disponíveis aparecem por lá ou no Mapa mundial."
+      ],
+      "placement": "Adaptação de população: cruzamento/rua já acessível; não ocorrência canônica. Circuito fora das portas/placas/rota central.",
+      "route": [
+        6,
+        6,
+        2,
+        2,
+        4,
+        4,
+        8,
+        8
+      ],
+      "routeBounds": [
+        357,
+        90,
+        359,
+        92
+      ]
+    },
+    {
+      "id": "rihad.street.resident.02",
+      "key": "artisan",
+      "name": "Artesã de Rihad",
+      "mapId": 9,
+      "eventId": 907,
+      "position": [
+        355,
+        150
+      ],
+      "direction": 2,
+      "moving": true,
+      "characterName": "$Arena_Hammerfell_Artisan_V01",
+      "faceName": "Arena_Hammerfell_Artisan_V01",
+      "texts": [
+        "O avental já viu dias melhores, mas ainda aguenta o trabalho. A entrada da Pousada fica logo ali."
+      ],
+      "placement": "Adaptação de população: cruzamento/rua já acessível; não ocorrência canônica. Circuito fora das portas/placas/rota central.",
+      "route": [
+        6,
+        6,
+        2,
+        2,
+        4,
+        4,
+        8,
+        8
+      ],
+      "routeBounds": [
+        355,
+        150,
+        357,
+        152
+      ]
+    },
+    {
+      "id": "rihad.street.resident.03",
+      "key": "civilian",
+      "name": "Moradora de Rihad",
+      "mapId": 9,
+      "eventId": 908,
+      "position": [
+        369,
+        205
+      ],
+      "direction": 2,
+      "moving": true,
+      "characterName": "$Arena_Rihad_Civilian_V01",
+      "faceName": "Arena_Rihad_Civilian_V01",
+      "route": [
+        6,
+        6,
+        2,
+        2,
+        4,
+        4,
+        8,
+        8
+      ],
+      "routeBounds": [
+        369,
+        205,
+        371,
+        207
+      ],
+      "texts": [
+        "As placas apontam a Pousada e o Portão urbano. Fica mais fácil se seguir o passeio de pedra."
+      ],
+      "placement": "Adaptação de população: cruzamento/rua já acessível; não ocorrência canônica. Circuito fora das portas/placas/rota central."
+    },
+    {
+      "id": "rihad.street.resident.04",
+      "key": "traveler",
+      "name": "Viajante de Hammerfell",
+      "mapId": 9,
+      "eventId": 909,
+      "position": [
+        374,
+        270
+      ],
+      "direction": 2,
+      "moving": true,
+      "characterName": "$Arena_Hammerfell_Traveler_V01",
+      "faceName": "Arena_Hammerfell_Traveler_V01",
+      "texts": [
+        "Quando for partir, procure o Portão urbano. As viagens disponíveis aparecem por lá ou no Mapa mundial."
+      ],
+      "placement": "Adaptação de população: cruzamento/rua já acessível; não ocorrência canônica. Circuito fora das portas/placas/rota central.",
+      "route": [
+        6,
+        6,
+        2,
+        2,
+        4,
+        4,
+        8,
+        8
+      ],
+      "routeBounds": [
+        374,
+        270,
+        376,
+        272
+      ]
+    },
+    {
+      "id": "rihad.street.resident.05",
+      "key": "elder",
+      "name": "Morador idoso",
+      "mapId": 9,
+      "eventId": 910,
+      "position": [
+        375,
+        320
+      ],
+      "direction": 2,
+      "moving": false,
+      "characterName": "$Arena_Hammerfell_Elder_V01",
+      "faceName": "Arena_Hammerfell_Elder_V01",
+      "texts": [
+        "O passeio de pedra liga os quarteirões. As placas ajudam a encontrar a Pousada e o Portão urbano."
+      ],
+      "placement": "Adaptação de população: cruzamento/rua já acessível; não ocorrência canônica. Circuito fora das portas/placas/rota central."
+    },
+    {
+      "id": "rihad.street.resident.06",
+      "key": "guardvariant",
+      "name": "Guarda de Rihad",
+      "mapId": 9,
+      "eventId": 911,
+      "position": [
+        361,
+        366
+      ],
+      "direction": 2,
+      "moving": false,
+      "characterName": "$Arena_Hammerfell_Guardvariant_V01",
+      "faceName": "Arena_Hammerfell_Guardvariant_V01",
+      "texts": [
+        "Mantenha a passagem livre junto à grade. As placas indicam o caminho de volta ao Portão urbano."
+      ],
+      "placement": "Adaptação de população: cruzamento/rua já acessível; não ocorrência canônica. Circuito fora das portas/placas/rota central."
     }
   ],
-  "notes": "Sete NPCs regionais: trio V01 e quatro variantes reutilizáveis. Retratos apenas nos diálogos; três civis móveis, demais quatro poses estáticas. Sem novos serviços, quests ou namespace."
+  "notes": "Treze NPCs regionais mais o informante. Seis exemplares adicionais reutilizam variantes, sem novas artes/serviços. Quatro novos civis móveis; idoso e guarda mantêm poses estáticas existentes."
 }

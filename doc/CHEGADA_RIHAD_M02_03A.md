@@ -1,5 +1,13 @@
 # M02-03A — primeira chegada a Rihad
 
+## Montagem lateral e orientação por moradores — 25/11/2026
+
+Relato do responsável: funcionamento geral satisfatório, com encaixes inadequados de decoração, principalmente leste/oeste. Correção delimitada na montagem dos179painéis urbanos e10vãos internos: centro e borda acessível corrigidos, peças dos batentes separadas da faixa transitável; masters/exportações preservados. Sem novas animações, colisões ou planta. [Contrato e comparações antes/depois](plugins/Arena_RihadDirections.md#encaixes-existentes). Registro V01 abaixo é histórico; a fileira inferior sobre o piso foi substituída pela montagem V02.
+
+Seis exemplares adicionais, IDs906–911: viajante357,90; artesã355,150; moradora369,205; viajante374,270; idoso375,320; guarda361,366. Posições/circuitos são adaptações em ruas livres, não ocorrências canônicas; quatro civis móveis e duas poses estáticas, reutilizando os assets existentes. Configuração canônica em [RIHAD_NPCS_M02](mapas/RIHAD_NPCS_M02.json); total13regionais+informante. Saves urbanos anteriores recebem apenas os eventos ausentes, preservando posições/progresso/recibos anteriores.
+
+[Onde fica…?](plugins/Arena_RihadDirections.md) oferece entradas públicas e o estabelecimento alcançável mais próximo de cada tipo confirmado, com serviço fechado explicitado. Resposta parte da posição atual do NPC, seta acompanha as passagens e pode ser encerrada. Não revela destinos de quest nem executa os efeitos exclusivos do informante/Blubamka. Na pousada, indica quarto/cama e saída; pedir os demais locais aos moradores na rua. Avaliação manual desta alteração pendente, sem aprovação presumida a partir do relato geral.
+
 ## Entradas laterais V01 — 23/11/2026
 
 [Comparação na escala nativa](arte/rihad-lateral-entries-v01/comparison.png) · [mestre, prompts e referências](arte/rihad-lateral-entries-v01/generation.json) · [recortes/hashes](arte/rihad-lateral-entries-v01/exports.json) · [configuração de origem](mapas/RIHAD_LATERAL_ENTRIES_V01.json). Foram conferidas380entradas urbanas:118sul/83norte e179laterais (91leste/88oeste). Todas as laterais usavam a mesma faixa genérica de8px, inclusive a pousada313,42/evento7. Os tipos originais Casa/Casa nobre/Taverna/Templo/Equipamentos são preservados, sem inventar famílias artísticas ou serviços adicionais por rótulo.

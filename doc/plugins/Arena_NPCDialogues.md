@@ -1,5 +1,7 @@
 # Arena_NPCDialogues0.1.0
 
+Extensão25/11: quatorze bindings (informante+treze regionais), incluindo seis exemplares reutilizados nas ruas. Ação explícita `rihad.where` encaminha ao [módulo de rotas locais](Arena_RihadDirections.md), sem passar pelo efeito exclusivo da orientação do informante. O gerador recompõe novos bindings e o tópico “Onde fica…?”; textos anteriores e efeitos de Blubamka preservados.
+
 Depois de Arena_Rihad/RiaVision/Court/CourtDelivery e seus contratos de quests, persistência e mensagens. Um plugin próprio, sem novas cenas, assets, namespace ou serviço comercial. `ArenaNPCDialogues.json` contém NPCs por ID/mapa/evento/papel, tópicos ordenados, faixas de MQ02 e blocos PT-BR com origem, classificação e `illustration:null`. Inventário canônico de texto: [campanha](../CAMPANHA_PRINCIPAL.md#diálogos-locais-reutilizáveis--23112026); [levantamento das fontes](../mapas/NPC_DIALOGUE_SOURCES.json).
 
 Consulta local somente leitura de TEMPLATE.DAT (CP437), blocos `#NNNN` e alternativas separadas por `&`; excertos completos ficam ignorados em tmp/npc-dialogues. #0128 menciona informações/direções/rumores; #0100/0107/0108 são apresentações por ocupação; #0159 fornece ausência de novidades, #0202 uma indicação de audiência. Não inferir que rumores políticos, trabalhos secundários, doenças ou serviços de outros blocos ocorreram em Rihad. Wiki local Arena:Controls complementa o contexto de interação. Não houve reprodução em DOS nem transcrição de todas as opções do executável.
