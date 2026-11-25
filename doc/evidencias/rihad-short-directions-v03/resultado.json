@@ -1,0 +1,166 @@
+{
+  "browser": "158.0.8127.37",
+  "checks": [
+    "Generator stable twice; city/inn/court maps, actors, quest dialogues and bindings unchanged; previous movement/fittings evidence reused.",
+    "V1 unrestricted guide retired once; all other synthetic save state preserved, no personal saves or web namespace change.",
+    "Single brief far/near/unknown responses via native dialogue; no UI/route narration or raw markers.",
+    "Current moving NPC position, eight compass sectors and dominant axis checked; true map-wall detour not classified near.",
+    "Deterministic role/local-service knowledge; every city NPC retains essential landmarks, no random progression gate.",
+    "Near alone grants precise entrance; far/unknown clear it; cancel retains prior selection; v2 save/load restores it.",
+    "Where is remains separate from informant20→30; Blubamka unchanged, prior evidence reused."
+  ],
+  "moved": {
+    "from": [
+      316,
+      45
+    ],
+    "to": [
+      317,
+      45
+    ],
+    "info": {
+      "kind": "near",
+      "pathLength": 6,
+      "direction": "noroeste"
+    }
+  },
+  "unknown": {
+    "id": "temple.9.9",
+    "label": "Templo · Fechado"
+  },
+  "wall": {
+    "poi": "inn",
+    "position": [
+      307,
+      37
+    ],
+    "air": 12,
+    "path": 18,
+    "result": {
+      "kind": "direction",
+      "pathLength": 18,
+      "direction": "sudeste"
+    }
+  },
+  "knowledge": [
+    {
+      "id": "rihad.informant",
+      "landmarks": [
+        "direction",
+        "direction",
+        "near",
+        "near"
+      ]
+    },
+    {
+      "id": "rihad.guard.court.01",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.civilian.square.01",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.regional.elder.01",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.regional.artisan.01",
+      "landmarks": [
+        "near",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.regional.traveler.01",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.regional.guardvariant.01",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.street.resident.01",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.street.resident.02",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.street.resident.03",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.street.resident.04",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.street.resident.05",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    },
+    {
+      "id": "rihad.street.resident.06",
+      "landmarks": [
+        "direction",
+        "direction",
+        "direction",
+        "direction"
+      ]
+    }
+  ],
+  "errors": [],
+  "limits": "Fresh isolated Chrome, RAM fixture converted to synthetic normal slot19; no personal saves. Wall case temporarily relocates the synthetic informant onto a real accessible street, restoring it immediately; no map mocks. Prior city/fittings/Blubamka evidence reused."
+}
