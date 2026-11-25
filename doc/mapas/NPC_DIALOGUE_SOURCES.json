@@ -25,5 +25,13 @@
   "directionSources": [
     "Installed Docs/Manual.pdf complete: person interaction, compass and automap; no detailed Where Is wording claimed from manual",
     "Local wiki Arena:Town Guide, Where Is...: general compass directions and marking nearby places"
-  ]
+  ],
+  "directionAssociationConfirmed": {
+    "date": "2026-11-25",
+    "0259": "unknown location responses; first alternative translated",
+    "0260": "general direction with %di; first alternative condensed/translated",
+    "0261": "nearby exact location inscribed on automap; adapted to existing precise marker",
+    "townGuide": "Where Is... distinguishes general compass directions from nearby precise map location",
+    "limits": "No original numeric threshold or knowledge probability asserted; project uses deterministic roles and path thresholds12/36."
+  }
 }
