@@ -1,0 +1,38 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "93adf9a730a258e17604a19b7b79f67a2198bb8d",
+  "workflow": "https://github.com/tjsp-lalecrim/Arena/actions/runs/45912652366",
+  "infraCommit": "6ec1acd59b7d6086fe18b879683011be735429d5",
+  "manifestSha256": "2915849ee25a401c8a5134cefa0666ac6442a350e76e23b7769e9c0e42e6c56c",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 449,
+  "totalBytes": 57825321,
+  "browser": "158.0.8127.37",
+  "entries": 380,
+  "deferred": [
+    {
+      "id": "rihad.court.gate",
+      "x": 360,
+      "y": 384,
+      "reason": "Open3-wide boundary corridor: no independent3x3 wall mass. Existing functional gate preserved; needs a specific freestanding/shared-boundary design."
+    }
+  ],
+  "status": {
+    "debug": false,
+    "title": [
+      "newGame",
+      "continue",
+      "options"
+    ],
+    "namespace": "arena:m01:save-v1",
+    "fourMaterials": true,
+    "localKeys": []
+  },
+  "errors": [],
+  "checks": [
+    "All public files size/SHA-256, exact selected source/manifest",
+    "Clean Chrome opens title; shared geometry and four campaign materials compile",
+    "Player profile debug disabled; unchanged public origin/namespace, no personal storage touched"
+  ],
+  "limits": "Publication smoke only. Local native circulation, bed, audience, delivery and saves evidence reused. Visual assessment of applied compositions remains pending; provisional solution acceptance preserved."
+}
