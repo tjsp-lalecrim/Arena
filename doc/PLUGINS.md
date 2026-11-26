@@ -1,5 +1,7 @@
 ## Trio regional Redguard — vigente
 
+`Arena_ArchitectureLab`: [protótipo RAM de paredes/entradas em quatro planos](plugins/Arena_ArchitectureLab.md). Após DebugHub/Continuation; Map019/020, Tileset12 próprio e configuração técnica. Sem renderização/controles em mapas da campanha; avaliação visual pendente antes de qualquer adoção nas380entradas.
+
 Arena_Rihad0.5.0: responsável da pousada, guarda e moradora em eventos nativos; retratos no apresentador existente e caminhada nativa somente para a civil. Configuração/gerador e reapresentação de saves antigos sem novo namespace. [Contrato](plugins/Arena_Rihad.md), [fontes/arte/testes](CHEGADA_RIHAD_M02_03A.md#trio-regional-redguard--23112026). Avaliação visual agrupada pendente; nenhum retrabalho automático de Blubamka/informante.
 
 ## Informante de Rihad — apresentação vigente

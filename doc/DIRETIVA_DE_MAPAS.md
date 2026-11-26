@@ -1,5 +1,9 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
+## Experimento de quatro faces — avaliação pendente
+
+O responsável considera que3070ee2 ainda não resolveu a perspectiva das entradas. [Protótipo RAM com a construção espacial dos prints de Zelda](plugins/Arena_ArchitectureLab.md), sem copiar seus materiais/paleta ou alterar a campanha. Parede/porta no mesmo plano; avaliar cobertura1/face2, cantos e compartilhamento2+1+2 antes de adotar regra. Não substitui automaticamente os contratos atuais nem autoriza mudar a planta/380entradas. A colisão da fonte permanece pendente de confirmação específica.
+
 ## Cobertura completa e amostras
 
 Aplicar o [escopo mínimo funcional vigente](MARCOS_DO_PROJETO.md#escopo-mínimo-funcional-vigente--decisão-de02112026): cidades/dungeons da campanha com mapas completos e encontros previstos, não apenas rota principal. Construir por setores pequenos com comparação original→MV, portas/conexões e inventário dos encontros; amostra aprovada não conclui o mapa. Eventos opcionais podem ser adiados sem apagar sua geometria. Não criar população infinita ou encontros aleatórios para preencher lacunas. Prioridade atual e dependências em BACKLOG_M02.md.

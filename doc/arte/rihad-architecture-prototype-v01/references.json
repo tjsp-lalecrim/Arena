@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "sourceMain": "350d60790b8d66286619d5cbbd2e08761b20529e",
+  "references": [
+    {
+      "path": "doc/prints/zelda-paredes-quatro-direcoes-84da6536-6658-4b28-b45c-4eb3d8b54f1e.png",
+      "sha256": "386834d18e5a8b009176ea59fc52f024b06d7402c808414a65fd957453825780",
+      "role": "Interior: floor boundary, four-direction faces, mitered corners"
+    },
+    {
+      "path": "doc/prints/zelda-paredes-quatro-direcoes-97866b3f-f7ee-4546-8f45-5f7be2a9ed2a.png",
+      "sha256": "bf38e3dad131456cc02b3edb54d61b3b911d55560e69ac20c4c36cb19943c0ea",
+      "role": "Interior: floor boundary, four-direction faces, mitered corners"
+    },
+    {
+      "path": "doc/prints/zelda-paredes-quatro-direcoes-bf29af77-116c-4f46-8ad6-e474b9945501.png",
+      "sha256": "17d602c9ec9823545e7e77f4707994253ce811c749f8777ceae53dad4044a7a9",
+      "role": "Outdoor platform, low-wall exterior corners; NOT evidence of Hammerfell building facade"
+    },
+    {
+      "path": "doc/prints/zelda-paredes-quatro-direcoes-c1656595-3065-4c83-8149-96f5845072bb.png",
+      "sha256": "7568098654a4fcdc254d5f258d5ec52abe7cf37c660bf0904e53ff96044342de",
+      "role": "Shared walls, connected rooms, corner/door projection"
+    },
+    {
+      "path": "doc/prints/zelda-paredes-quatro-direcoes-fb21b8b3-cf4d-4263-b65f-88db4d0c0c31.png",
+      "sha256": "2a4de4856df1b857339c18053870fbda7424c8756d2b0b7a3af101c4911c3170",
+      "role": "Directional faces/height reading; not adopting elevations or stairs"
+    }
+  ],
+  "assets": [
+    {
+      "path": "img/tilesets/Arena_Rihad_Exterior_V01_C.png",
+      "sha256": "edf82c0d63d859fdebe00832df4fe7395c3b6242e736b6753bdf569d0b625716"
+    },
+    {
+      "path": "img/tilesets/Arena_Rihad_Lateral_Exterior_V01_D.png",
+      "sha256": "2bc31048e9d5cf04268debddf6beb62297e5a25b7fa8c1b10a5f2708eb5981f5"
+    },
+    {
+      "path": "img/characters/!$Arena_Doors_M14_R03.png",
+      "sha256": "50842de0af87fb0b53bf1b0748d9cc8ccb904befcddb18e51eabe9c8c896d39b"
+    }
+  ],
+  "method": "Code-native geometric prototype: orthogonal floor grid; four wall planes unfold96px toward the floor,48px cap; source textures UV-mapped into matching wall/door quadrilaterals using two clipped affine triangles. No AI image generation, no bitmap edits, no Zelda pixels exported.",
+  "masters": [
+    "tools/build-architecture-lab.cjs",
+    "js/plugins/Arena_ArchitectureLab.js",
+    "data/ArenaArchitectureLab.json"
+  ],
+  "adaptations": [
+    "Same source Arena textures; local multi-direction cutaway interpretation, not original Arena camera or new canonical Hammerfell architecture.",
+    "Shared wall2+1+2=5tiles; single-faced wall2+1=3.",
+    "City crop map9 [289,10,348,33]; source307,21 ->copy18,11 and323,21 ->copy34,11. Only copied technical pockets/operable leaves are new; campaign untouched.",
+    "Instant closed/open geometry states; hinge/folded strip fixed, not a new final swing animation."
+  ],
+  "status": "Prototype awaiting owner visual assessment; no adoption for380entries. Fountain collision still awaits specific owner confirmation."
+}
