@@ -1,0 +1,58 @@
+{
+  "baseline": "350d607",
+  "browser": "158.0.8127.37",
+  "crossings": [
+    {
+      "id": "room.n",
+      "bothDirections": true,
+      "width": 3,
+      "orientation": "norte"
+    },
+    {
+      "id": "room.s",
+      "bothDirections": true,
+      "width": 3,
+      "orientation": "sul"
+    },
+    {
+      "id": "room.e",
+      "bothDirections": true,
+      "width": 3,
+      "orientation": "leste"
+    },
+    {
+      "id": "room.w",
+      "bothDirections": true,
+      "width": 3,
+      "orientation": "oeste"
+    },
+    {
+      "id": "copy.eastFace",
+      "bothDirections": true,
+      "width": 1
+    },
+    {
+      "id": "copy.westFace",
+      "bothDirections": true,
+      "width": 1
+    }
+  ],
+  "checks": [
+    "Campaign maps1–18/configs/assets unchanged; existing tilesets preserved, only technical12 appended; two deterministic rebuilds.",
+    "Actual hub route, four native keyboard crossings and reverse, closed collision and close-over-player guard, independent leaves.",
+    "Copied Rihad E/W entrances at original307,21 and323,21: pointer opening, native crossing/return in isolated technical pockets.",
+    "RAM checkpoint restores map/position/doors/actor/quest/receipts, normal save/StorageManager blocked, localStorage keys untouched.",
+    "Four face screenshots without proximity captions, exterior/copy, normal-speed canvas recording; engine error screen absent."
+  ],
+  "errors": [],
+  "limits": "Geometric/UV prototype using existing Arena textures, not final art or campaign integration. Three-tile laboratory apertures; one-tile city copy. Source streets preserved, copied inspection pockets are technical adaptations. No owner visual approval or fountain collision confirmation inferred.",
+  "video": {
+    "file": "travessia-quatro-direcoes.webm",
+    "durationSeconds": 17.192439,
+    "width": 816,
+    "height": 624,
+    "codec": "VP9/WebM",
+    "speed": "normal; real canvas.captureStream30, no time scaling",
+    "decode": "Chrome media playback: no error"
+  }
+}

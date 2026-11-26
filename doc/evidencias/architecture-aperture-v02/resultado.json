@@ -1,0 +1,64 @@
+{
+  "baseline": "350d607",
+  "browser": "158.0.8127.37",
+  "crossings": [
+    {
+      "id": "room.n",
+      "orientation": "norte",
+      "bothDirections": true,
+      "width": 3
+    },
+    {
+      "id": "room.s",
+      "orientation": "sul",
+      "bothDirections": true,
+      "width": 3
+    },
+    {
+      "id": "room.e",
+      "orientation": "leste",
+      "bothDirections": true,
+      "width": 3
+    },
+    {
+      "id": "room.w",
+      "orientation": "oeste",
+      "bothDirections": true,
+      "width": 3
+    },
+    {
+      "id": "copy.eastFace",
+      "bothDirections": true,
+      "width": 1
+    },
+    {
+      "id": "copy.westFace",
+      "bothDirections": true,
+      "width": 1
+    }
+  ],
+  "checks": [
+    "Campaign maps1–18/configs/assets unchanged; existing tilesets preserved, only technical12 appended; two deterministic rebuilds.",
+    "Actual hub route, four native keyboard crossings and reverse, closed collision and close-over-player guard, independent leaves.",
+    "Copied Rihad E/W entrances at original307,21 and323,21: pointer opening, native crossing/return in isolated technical pockets.",
+    "RAM checkpoint restores map/position/doors/actor/quest/receipts, normal save/StorageManager blocked, localStorage keys untouched.",
+    "Four face screenshots without proximity captions, exterior/copy, normal-speed canvas recording; engine error screen absent.",
+    "Aperture layer audit: all81 interior samples across9 planes have no wall/roof residue and exact world-aligned threshold RGBA; frame geometry, leaf/hinge placement, event IDs and all collision layers preserved against a7661e9."
+  ],
+  "errors": [],
+  "ownerReport": {
+    "perspective": "Explicitly approved by owner for a7661e9",
+    "apertureCorrection": "Pending evaluation",
+    "fountainCollision": "Pending specific confirmation"
+  },
+  "limits": "Geometric/UV prototype using existing Arena textures, not final art or campaign integration. Three-tile laboratory apertures; one-tile city copy. Source streets preserved, copied inspection pockets are technical adaptations. Visual coverage refers to technical checks; perspective approval is recorded separately from aperture/fountain evaluation.",
+  "video": {
+    "file": "travessia-quatro-direcoes.webm",
+    "durationSeconds": 17.124546,
+    "width": 816,
+    "height": 624,
+    "codec": "VP9/WebM",
+    "speed": "normal; real canvas.captureStream30, no time scaling",
+    "decode": "Chrome playback: no error"
+  }
+}

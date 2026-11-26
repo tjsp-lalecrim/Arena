@@ -23,4 +23,5 @@ module.exports=function(map){
  // Urban side leaves are now part of complete sections; internal fittings stay independent.
  map.arenaLateralFittings=[];
  map.arenaEntranceRevision=1;
+ require('./rihad-architecture.cjs')(map);
 };

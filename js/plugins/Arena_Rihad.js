@@ -119,7 +119,8 @@ var ArenaRihad;
   if(here()&&TouchInput.isTriggered()){
    var p=$arenaRihad.inn.entrance,x=$gameMap.canvasToMapX(TouchInput.x),y=$gameMap.canvasToMapY(TouchInput.y);
    $gameTemp._arenaInnApproach=false;
-   if(x===p[0]&&(y===p[1]||y===p[1]-1)&&ArenaNarrative.isCampaign()&&$gamePlayer.canMove()&&!$gameMessage.isBusy()&&!$gameMap.isEventRunning()){
+   var hit=x===p[0]&&(y===p[1]||y===p[1]-1)||window.ArenaRihadArchitecture&&ArenaRihadArchitecture.hits('rihad.entry.'+p[0]+'.'+p[1],x,y);
+   if(hit&&ArenaNarrative.isCampaign()&&$gamePlayer.canMove()&&!$gameMessage.isBusy()&&!$gameMap.isEventRunning()){
     this._arenaInnPointer=true;$gameTemp._arenaInnApproach=true;$gameTemp.setDestination($arenaRihad.inn.approach[0],$arenaRihad.inn.approach[1]);return;
    }
   }

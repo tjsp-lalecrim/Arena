@@ -71,3 +71,40 @@ Os testes anteriores conferiam o tile central da fonte e pixels visíveis/acesso
 Na fonte, antes o personagem ocupa(351,177); depois fica ao sul(351,178), fora da base, com câmera acompanhando. Legendas só foram ocultadas pelo teste para as capturas; continuam no jogo como apoio. Identificação/placas e estado fechado das casas preservados.
 
 Roteiro único: do portão seguir às casas laterais(307,21)/(323,21); comparar templo frontal(354,31) e casa ao norte(351,53), reconhecendo a entrada pela imagem. Entrar na pousada(313,42) por tecla/clique, alcançar o quarto e retornar. Pela rota à corte, contornar a fonte(351,177) pelos quatro lados; conferir base bloqueada e personagem à frente ao sul. Prosseguir à corte(360,384), entrar/sair e salvar/carregar em piso livre. Não fabricar save pessoal preso: reparação já testada isoladamente. Implementação `8ecb000`, fonte promovida à main `3070ee2c078d1515c2b8c4e1202b02a8fbc24063`. [Prévia publicada/conferida](../evidencias/rihad-fonte-entradas-pages-v02/resultado.json), [execução45901851858](https://github.com/tjsp-lalecrim/Arena/actions/runs/45901851858): manifesto exato,443arquivos por tamanho/SHA-256 e abertura no Chrome. Registros posteriores só documentais/de infraestrutura. Avaliação manual dos ajustes pendente; release no fechamento.
+
+## Arquitetura gradual na campanha — 26/11/2026
+
+**Aceitação do responsável:**85a9d80 considerado melhor, solução aceita provisoriamente com ressalvas e avanço autorizado. Não é aprovação definitiva do acabamento. Perspectiva/acabamento do vão ficam num único item **REF08** do registro de refinamentos, vinculado a QUALIDADE-01. A confirmação específica da fonte continua pendente; sua base/âncora não foi alterada.
+
+**Aplicação:**380 fachadas urbanas no Map009:118sul,88oeste,91leste,83norte, incluindo a pousada(313,42), casas relatadas pelos padrões laterais(307,21)/(323,21), templo frontal(354,31) e face norte(351,53). Cada uma comporta um volume sólido independente3×3, sem sobreposição com outro módulo. Cobertura1tile/face2 dentro da massa original; piso48px contínuo e seção do batente64px constante, com8px de batente fora de cada lado. Cortes/cantos locais unem a face à cobertura. Não é conversão de todas as paredes de toda a cidade.
+
+`MV_ArchitecturePlanes` extrai sem alterar as funções geométricas de85a9d80; laboratório e campanha passam a usá-las. `tools/rihad-architecture.cjs` compila as ocorrências após a montagem antiga, valida massa/ausência de sobreposição e registra `arenaArchitectureEntries`/exceções. `Arena_RihadArchitecture` monta materiais existentes em bitmaps pequenos compartilhados e oculta do desenho os módulos fora da tela; não cria canvas do tamanho da cidade. `Arena_RihadDecor` evita duplicar a seção antiga nas ocorrências convertidas. Colisão, regiões, planta, largura das ruas, eventos, aproximações, destinos, placas e decoração permanecem idênticos. A folha estática mantém o comportamento anterior: a pousada transfere pelo evento, casas permanecem fechadas; nenhuma animação de giro foi acrescentada.
+
+O piso/soleira tem uma única origem mundial e não herda UVs das faces. Espessura vem dos revelos/batentes e o lintel pertence à camada acima do personagem. O clique da pousada aceita também a folha projetada, conservando o ponto de aproximação e o evento7; a área histórica de clique continua válida. Sem nova tecla, recurso ou estado persistente.
+
+**Exceções estruturais preservadas:**
+
+|Local|Situação e dependência|
+|---|---|
+|Corte exterior, Map009(360,384)|Corredor aberto de3tiles na borda urbana, fora das380fachadas sólidas. Não há volume3×3 para esta seção: acrescentar massa/jambas alteraria a planta ou estreitaria o acesso. Porta funcional atual preservada. Requer solução específica de portão isolado/borda compartilhada; não declarado convertido|
+|Pousada, Map018: centros(30,18),(21,18),(63,27),(54,30),(21,33),(30,36),(63,51),(21,51)|Oito limiares laterais de paredes compartilhadas de3tiles. Duas faces completas exigem2+1+2=5tiles. Montagem anterior preservada; não aumentar parede para dentro dos cômodos/corredores|
+|Corte, Map011: centros(102,27),(60,27)|Mesmo limite em dois limiares laterais compartilhados; preservar travessia e abordagem de Blubamka. Dependência de representação para espessura estreita, sem mudar coordenadas|
+
+Outros frames internos existentes não foram convertidos neste primeiro grupo. Aprovação do protótipo não certifica essas composições nem resolve automaticamente a borda da corte.
+
+**Saves:** como não mudou nenhuma célula de colisão/evento/destino, posições válidas continuam válidas. O renderizador lê os metadados atuais de `$dataMap`, inclusive ao retomar um `Game_Map` serializado anterior. Não há nova migração, troca de namespace ou deslocamento por esta arquitetura; a reparação de decoração anterior continua disponível nos seus próprios casos. Saves pessoais não foram acessados.
+
+**Verificações focais:** [geometria e fluxo](../evidencias/rihad-architecture-campaign-v01/geometria.json), [controles reutilizados](../evidencias/rihad-architecture-campaign-v01/controles/resultado.json), [geometria do laboratório compartilhado](../evidencias/rihad-architecture-campaign-v01/laboratorio/geometria-piso.json). Chrome158 isolado:380massas sem sobreposição, largura constante, duas reconstruções canônicas estáveis; todos os arrays físicos/eventos/contratos preservados. Clique na nova folha da pousada, teclado, cama/recuperação, retorno, dez corredores internos e Blubamka acessíveis; salvar/carregar cidade/corte, aceite30→40 e entrega50→60 sem duplicação. Fixture só fornece o pergaminho, sem repetir Stonekeep. Slots19 sintéticos em perfil descartável; RAM bloqueia saves normais. A fonte não recebeu novo aceite manual por esses testes.
+
+|Aplicação, escala real e legendas de proximidade ocultas|Captura|
+|---|---|
+|Pousada, aproximação(314,42)|[nova seção leste](../evidencias/rihad-architecture-campaign-v01/depois-pousada.png)|
+|Casa leste, aproximação(308,21)|[aplicação](../evidencias/rihad-architecture-campaign-v01/depois-leste.png)|
+|Casa oeste, aproximação(322,21)|[aplicação](../evidencias/rihad-architecture-campaign-v01/depois-oeste.png)|
+|Templo frontal, aproximação(354,32)|[aplicação sul](../evidencias/rihad-architecture-campaign-v01/depois-sul.png)|
+|Casa norte, aproximação(351,52)|[aplicação norte](../evidencias/rihad-architecture-campaign-v01/depois-norte.png)|
+|Corte exterior, aproximação(360,383)|[exceção funcional preservada](../evidencias/rihad-architecture-campaign-v01/depois-corte.png)|
+
+Reconstruir pelo mesmo `node tools/build-rihad-arrival.cjs`; não editar a saída manualmente. Laboratório continua no hub quando debug habilitado; pacote de jogador mantém-o desabilitado. Sem arte nova, mudanças no motor ou adoção de paredes compartilhadas sem espessura. Publicação manual em etapa própria desta integração, com commit/manifesto exatos.
+
+**Roteiro integrado curto:** no Chrome, seguir do portão à pousada pelas placas, reconhecer a nova entrada e entrar por Enter ou clique na folha; chegar à cama e retornar. Observar as casas laterais próximas e a face norte. Prosseguir à corte, cujo portão atual foi preservado, falar com Blubamka conforme a etapa da partida e salvar/carregar no interior. Se possuir o pergaminho, entregar e conversar novamente: item consumido uma vez e destino de Fang Lair preservado. Não é necessário repetir a campanha ou fabricar save preso.

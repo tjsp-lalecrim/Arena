@@ -1,5 +1,9 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
+## Arquitetura de quatro faces — aceite provisório
+
+O responsável aprovou a perspectiva dea7661e9 e **aceitou provisoriamente85a9d80 com ressalvas**, autorizando aplicação gradual. [Campanha, abrangência e exceções](plugins/Arena_RihadDecor.md#arquitetura-gradual-na-campanha--26112026). Piso/soleira atravessam o vão num único plano horizontal de largura constante, escala/fase mundiais; não derivar sua máscara da projeçãoUV das paredes. Faces internas e batentes explicam a espessura fora da largura livre; lintel fica acima do personagem e apoios são fixos entre estados. Inspecionar planos com cores simples antes dos materiais. Cobertura1/face2 exige volume sólido independente3tiles; duas faces compartilhadas exigem2+1+2=5tiles. Não ocupar ruas/cômodos nem deslocar eventos para acomodar o módulo: registrar a exceção e preservar a solução funcional atual. Refino de perspectiva/acabamento tem registro único em REF08/QUALIDADE-01. Colisão da fonte continua pendente de confirmação específica.
+
 ## Cobertura completa e amostras
 
 Aplicar o [escopo mínimo funcional vigente](MARCOS_DO_PROJETO.md#escopo-mínimo-funcional-vigente--decisão-de02112026): cidades/dungeons da campanha com mapas completos e encontros previstos, não apenas rota principal. Construir por setores pequenos com comparação original→MV, portas/conexões e inventário dos encontros; amostra aprovada não conclui o mapa. Eventos opcionais podem ser adiados sem apagar sua geometria. Não criar população infinita ou encontros aleatórios para preencher lacunas. Prioridade atual e dependências em BACKLOG_M02.md.

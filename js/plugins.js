@@ -66,5 +66,8 @@ var $plugins =
 {"name":"Arena_WorldMap","status":true,"description":"v0.3.0 Catálogo, identificação acessível e viagem de campanha","parameters":{}},
 {"name":"Arena_NPCDialogues","status":true,"description":"v0.1.0 Diálogos por tópicos, dados e paginação existentes.","parameters":{}},
 {"name":"Arena_RihadDirections","status":true,"description":"Onde fica…? Rotas locais e indicação cancelável.","parameters":{}},
-{"name":"Arena_RihadDecor","status":true,"description":"Bases físicas e placas de Rihad; retomada segura.","parameters":{}}
+{"name":"MV_ArchitecturePlanes","status":true,"description":"Planos compartilhados: paredes e piso horizontal contínuo.","parameters":{}},
+{"name":"Arena_RihadArchitecture","status":true,"description":"Seções arquitetônicas de Rihad compiladas sem alterar colisões.","parameters":{}},
+{"name":"Arena_RihadDecor","status":true,"description":"Bases físicas e placas de Rihad; retomada segura.","parameters":{}},
+{"name":"Arena_ArchitectureLab","status":true,"description":"Protótipo RAM de paredes e entradas em quatro orientações; campanha preservada.","parameters":{}}
 ];
