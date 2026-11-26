@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "collisionTile": 767,
+  "reservedTile": "Última célula transparente do atlas D; flags15, usada na camada2 somente nas bases explícitas dos Map009/011/018. Não reutilizar para arte.",
+  "profiles": {
+    "floorSingle": {
+      "cells": [
+        [
+          0,
+          0
+        ]
+      ],
+      "reason": "Base sólida de um tile; margens e projeção visual não ampliam o chão ocupado."
+    },
+    "urbanFountain": {
+      "cells": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "reason": "Círculo da fonte reutilizada está centrado48px acima do apoio do evento (exportação96x144); o tile de baixo é aproximação frontal."
+    },
+    "trunk": {
+      "cells": [
+        [
+          0,
+          0
+        ]
+      ],
+      "reason": "Somente tronco/base no chão; copa livre sobre os tiles vizinhos."
+    },
+    "table": {
+      "cells": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "reason": "Tampo e base de mesa2x2; não é área com altura livre para o personagem."
+    },
+    "counter": {
+      "cells": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "reason": "Balcão horizontal3x1."
+    },
+    "counterNS": {
+      "cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "reason": "Balcão vertical1x3."
+    },
+    "throne": {
+      "cells": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "reason": "Assento/base na fileira inferior; espaldar é projeção visual."
+    },
+    "fountain": {
+      "cells": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "reason": "Bacia de piso2x2."
+    },
+    "bed": {
+      "cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "reason": "Dois tiles já sólidos do leito, preservados."
+    },
+    "flat": {
+      "cells": [],
+      "reason": "Peça plana não acrescenta colisão; apoios sólidos (como balcão sob o tecido) continuam sólidos."
+    },
+    "suspended": {
+      "cells": [],
+      "reason": "Peça suspensa/parede com altura livre, sem base de piso adicional."
+    },
+    "tableware": {
+      "cells": [],
+      "reason": "Louça apoiada nas mesas existentes; não cria outro móvel no chão."
+    }
+  },
+  "urban": {
+    "NWELL1.IMG": "floorSingle",
+    "NWELL2.IMG": "floorSingle",
+    "CACTUS1.IMG": "floorSingle",
+    "CACTUS2.IMG": "floorSingle",
+    "CACTUS3.IMG": "floorSingle",
+    "NFOUNT1D.DFA": "urbanFountain",
+    "PALM1.IMG": "trunk",
+    "PALM2.IMG": "trunk",
+    "PALM3.IMG": "trunk"
+  },
+  "facade": {
+    "awningRustSouth": "suspended",
+    "awningTealSouth": "suspended",
+    "awningRustEast": "suspended",
+    "awningTealEast": "suspended",
+    "shuttersSouth": "suspended",
+    "shuttersEast": "suspended",
+    "innSign": "suspended",
+    "houseSign": "suspended",
+    "lattice": "suspended",
+    "potBasket": "floorSingle",
+    "sacks": "floorSingle",
+    "crates": "floorSingle"
+  },
+  "interior": {
+    "table": "table",
+    "counter": "counter",
+    "counterNS": "counterNS",
+    "throne": "throne",
+    "fountain": "fountain",
+    "brazier": "floorSingle",
+    "banner": "suspended",
+    "bed": "bed"
+  },
+  "dressing": {
+    "tapestry": "suspended",
+    "runner": "flat",
+    "lampS": "suspended",
+    "lampE": "suspended",
+    "tray": "tableware",
+    "jar": "floorSingle"
+  },
+  "signs": {
+    "heightPixels": 36,
+    "bracketInsetPixels": 4,
+    "rule": "Frontal na face alta adjacente à porta. E/W: suporte na borda acessível e placa projetada, espelhando apenas o suporte/símbolo simétrico para oeste. Pontos lógicos não mudam.",
+    "sideHeightPixels": 72
+  }
+}

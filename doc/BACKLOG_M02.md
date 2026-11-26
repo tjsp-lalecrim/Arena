@@ -1,6 +1,8 @@
 # Estado operacional do M02 — cobertura completa
 
-**Orientação breve25/11:** responsável confirmou que a indicação funciona, mas considerou as respostas longas. [Revisão Onde fica…?](plugins/Arena_RihadDirections.md): frase única distante/próxima/desconhecida; marcador só concedido de perto pelo caminho acessível, conhecimento determinístico e pontos essenciais sempre conhecidos. Instruções de quest preservadas. Verificações focais passaram; avaliação manual desta revisão pendente.
+**Decoração/placas25/11:** responsável considerou melhores as respostas curtas e relatou objetos atravessáveis/placas baixas. [Bases explícitas e montagem das placas](plugins/Arena_RihadDecor.md):210objetos auditados,209células de base, seis placas reposicionadas e retomada segura se salvo dentro de objeto. Sem arte nova ou mudança de quest; verificação focal passou, avaliação manual dos ajustes pendente.
+
+**Orientação breve25/11:** responsável confirmou que a indicação funciona, mas considerou as respostas longas. [Revisão Onde fica…?](plugins/Arena_RihadDirections.md): frase única distante/próxima/desconhecida; marcador só concedido de perto pelo caminho acessível, conhecimento determinístico e pontos essenciais sempre conhecidos. Instruções de quest preservadas. Verificações focais passaram; responsável considerou melhores as respostas curtas, sem atribuir confirmação manual dos demais casos técnicos.
 
 **Feedback25/11:** funcionamento geral satisfatório relatado pelo responsável; encaixes decorativos inadequados, sobretudo E/W, registrados para correção. [Ajustes de montagem, seis moradores e Onde fica…?](plugins/Arena_RihadDirections.md) nesta entrega; sem regenerar arte. Orientação/localização pública não descobre destinos de quest. Avaliação manual dos ajustes permanece pendente; não extrapolar o relato para persistência/colisões específicas.
 

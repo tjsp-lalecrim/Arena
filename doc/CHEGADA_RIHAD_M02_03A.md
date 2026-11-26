@@ -1,5 +1,9 @@
 # M02-03A — primeira chegada a Rihad
 
+## Bases decorativas e placas — 25/11/2026
+
+[Auditoria, regras, capturas antes/depois e acesso](plugins/Arena_RihadDecor.md). Cadastro único passa a compilar209células de base em210objetos da cidade/pousada/corte, com176novas células bloqueadas. Altura visual não amplia automaticamente a colisão. Seis placas de símbolos recebem montagem alta por orientação, preservando identificação/approach; nenhum asset regenerado. Respostas curtas consideradas melhores pelo responsável, sem atribuir nova aprovação visual das placas. Verificações focais e retomada de saves sintéticos registradas; avaliação manual da correção pendente.
+
 ## Montagem lateral e orientação por moradores — 25/11/2026
 
 Relato do responsável: funcionamento geral satisfatório, com encaixes inadequados de decoração, principalmente leste/oeste. Correção delimitada na montagem dos179painéis urbanos e10vãos internos: centro e borda acessível corrigidos, peças dos batentes separadas da faixa transitável; masters/exportações preservados. Sem novas animações, colisões ou planta. [Contrato e comparações antes/depois](plugins/Arena_RihadDirections.md#encaixes-existentes). Registro V01 abaixo é histórico; a fileira inferior sobre o piso foi substituída pela montagem V02.

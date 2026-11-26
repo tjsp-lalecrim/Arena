@@ -30,6 +30,8 @@ Decisão provisória para representação, sujeita a testes: cap/teto1tile, altu
 | Interação | Célula e gatilho acessível por lado permitido; não depender de pixels transparentes do sprite |
 | Extensão visual | Canvas, pixels opacos, margem, âncora, camada e eventual projeção acima do apoio |
 
+Aplicação vigente em Rihad: [cadastro de bases e montagem das placas](plugins/Arena_RihadDecor.md). Cadastrar a base por família/ocorrência antes de compilar; copas, toldos, tecidos e louça não recebem bloqueio pelo retângulo da imagem. Usar o gerador canônico e manter reservado o tile transparente da máscara. Preservar o ponto lógico da identificação quando ajustar a projeção visual da placa.
+
 O ponto de apoio nativo de um evento `(x,y)` é `((x+0,5)×48,(y+1)×48)`. Prefixo `!` evita deslocamento adicional6px; `$` identifica folha única3colunas×4direções. Recortar uma fonte uma única vez é permitido; recortar/recentralizar cada quadro de animação de forma independente é proibido. Preservar os masters e a transformação técnica.
 
 ## Categorias e camadas

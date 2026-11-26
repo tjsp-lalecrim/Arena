@@ -71,6 +71,7 @@ module.exports = function applyInterior(map, kind) {
         const x=3+(sourceWidth-1-ox)*3+offset[0]-Math.floor(item.width/2);
         const y=3+oy*3+offset[1]-item.height+1;
         object(prop.type,x,y);
+        require('./rihad-decor-contracts.cjs').add(map,kind+'.'+prop.type+'.'+ox+'.'+oy,'interior',prop.type,x,y);
     }
     for (const [ox,oy] of source.steps || []) {
         const x=3+(sourceWidth-1-ox)*3,y=3+oy*3;
@@ -81,4 +82,6 @@ module.exports = function applyInterior(map, kind) {
     map.tilesetId = id;
     require('./rihad-interior-decor.cjs')(map,kind);
     require('./rihad-lateral-entries.cjs')(map,kind);
+    if(kind==='inn')require('./rihad-decor-contracts.cjs').add(map,'inn.bed','interior','bed',map.events[2].x,map.events[2].y);
+    require('./rihad-decor-contracts.cjs').finalize(map);
 };
