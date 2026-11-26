@@ -1,4 +1,4 @@
-// Visual-only source-backed placement; never change regions, events or passability.
+// Source-backed placement; Rihad physical bases are compiled separately.
 const fs=require('node:fs'),path=require('node:path'),R=path.resolve(__dirname,'..');
 const read=f=>JSON.parse(fs.readFileSync(path.join(R,f),'utf8'));
 const spec=()=>read('doc/mapas/M02_CENARIO_CONFIRMADO_V01.json');
@@ -11,6 +11,7 @@ function urban(map){
   Object.assign(page,{priorityType:1,through:true,trigger:0,moveType:0,directionFix:true,walkAnime:false,stepAnime:false,
    image:{characterName:v.resource==='NFOUNT1D.DFA'?'!$Arena_Rihad_Fountain_Reuse_V01':'!Arena_Rihad_Props_V01',characterIndex:Math.max(0,names.indexOf(v.resource)),tileId:0,direction:2,pattern:1},list:[{code:0,indent:0,parameters:[]}]});
   map.events[v.eventId]={id:v.eventId,name:v.resource+' / '+v.id,note:'ArenaScenery:'+v.id,x:v.position[0],y:v.position[1],pages:[page]};
+  require('./rihad-decor-contracts.cjs').add(map,v.id,'urban',v.resource,v.position[0],v.position[1]);
  }
  writeConfig();
 }

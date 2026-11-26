@@ -17,6 +17,7 @@ function position(name) {
 
 function build(map, config, recovery) {
     const { rows, scale, margin } = source;
+    map.arenaDecor = []; map.arenaDecorSigns = []; map.arenaDecorBlocked = [];
     if (signage.map1Sha256 !== source.map1Sha256 || materialPlan.map1Sha256 !== source.map1Sha256 ||
         materialPlan.rows.length !== rows.length ||
         materialPlan.rows.some((row, i) => row.length !== rows[i].length)) {
@@ -123,6 +124,7 @@ function build(map, config, recovery) {
     require('./rihad-npcs.cjs')(map, config, 9);
     require('./rihad-facade-props.cjs')(map);
     require('./rihad-lateral-entries.cjs')(map,'urban');
+    require('./rihad-decor-contracts.cjs').finalize(map);
     fs.writeFileSync(path.join(root, 'data/ArenaRecovery.json'), JSON.stringify(recovery, null, 2) + '\n');
 }
 
