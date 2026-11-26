@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "93adf9a730a258e17604a19b7b79f67a2198bb8d",
+  "testVersion": "m01-rc1",
+  "runtimeFiles": 449,
+  "runtimeBytes": 57747750,
+  "totalBytes": 57825321,
+  "manifestSha256": "2915849ee25a401c8a5134cefa0666ac6442a350e76e23b7769e9c0e42e6c56c",
+  "checks": [
+    "Two identical builds from exact LF source/recipe; player debug disabled",
+    "Every runtime path/size/SHA-256 verified; no saves/masters/references",
+    "Manual Pages workflow remains unchanged; no namespace/origin change"
+  ]
+}

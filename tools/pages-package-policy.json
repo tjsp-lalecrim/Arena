@@ -187,5 +187,11 @@
     "testVersion": "m01-rc1",
     "manifestSha256": "46504b183c9bc437179378ea7a3be4d8b64ee70900c580e9277b69542ad608fc",
     "crlfFiles": []
+  },
+  {
+    "sourceCommit": "93adf9a730a258e17604a19b7b79f67a2198bb8d",
+    "testVersion": "m01-rc1",
+    "manifestSha256": "2915849ee25a401c8a5134cefa0666ac6442a350e76e23b7769e9c0e42e6c56c",
+    "crlfFiles": []
   }
 ]
