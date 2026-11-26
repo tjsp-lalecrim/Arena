@@ -6,7 +6,7 @@ function add(map,id,category,type,x,y){
  const s=spec(),profile=s[category][type],p=s.profiles[profile];if(!p)throw Error('Missing decor profile '+category+'/'+type);
  if(!map.arenaDecor)map.arenaDecor=[];
  if(map.arenaDecor.some(v=>v.id===id))throw Error('Duplicate decor '+id);
- map.arenaDecor.push({id,category,type,profile,x,y,cells:p.cells.map(([dx,dy])=>[x+dx,y+dy])});
+ map.arenaDecor.push({id,category,type,profile,x,y,cells:p.cells.map(([dx,dy])=>[x+dx,y+dy]),...(p.renderOffset?{renderOffset:p.renderOffset}:{} )});
 }
 function sign(map,p,atlas,module){
  if(module.w!==1||module.h!==1)throw Error('Sign requires an explicit 1x1 module: '+p.id);

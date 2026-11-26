@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Rihad: montagem de placas e retomada segura junto à decoração.
+ * @plugindesc v0.2.0 Rihad: bases, seções de entrada e retomada segura.
  * @author Codex
  * @help Após Arena_RihadDirections. Bases nativas compiladas nos mapas.
  * Não altera quests, recursos, namespace ou dados pessoais. Sem arte nova.
@@ -21,6 +21,15 @@ var ArenaRihadDecor;
   }return null;
  }
  ArenaRihadDecor={solidAt:solid,lastRepair:null};
+ var position=Sprite_Character.prototype.updatePosition;
+ Sprite_Character.prototype.updatePosition=function(){position.apply(this,arguments);
+  if(!this._character||!this._character.eventId||!$dataMap.arenaDecor)return;
+  if(this._arenaDecorMap!==$dataMap){this._arenaDecorMap=$dataMap;var event=$dataMap.events[this._character.eventId()];
+   this._arenaDecorRecord=event&&$dataMap.arenaDecor.filter(function(v){return event.note==='ArenaScenery:'+v.id;})[0];
+  }
+  var d=this._arenaDecorRecord;
+  if(d&&d.renderOffset){this.x+=d.renderOffset[0];this.y+=d.renderOffset[1];}
+ };
  var loaded=Scene_Map.prototype.onMapLoaded;
  Scene_Map.prototype.onMapLoaded=function(){loaded.apply(this,arguments);cached=null;ArenaRihadDecor.lastRepair=null;
   if(!$dataMap.arenaDecorRevision||!solid($gamePlayer.x,$gamePlayer.y))return;
@@ -41,5 +50,40 @@ var ArenaRihadDecor;
   this.y=$gameMap.adjustY(s.y)*48-s.height;
  };
  var create=Spriteset_Map.prototype.createCharacters;
- Spriteset_Map.prototype.createCharacters=function(){create.apply(this,arguments);($dataMap.arenaDecorSigns||[]).forEach(function(s){this._tilemap.addChild(new Sign(s));},this);};
+ function Entry(s){this.initialize(s);}
+ Entry.prototype=Object.create(Sprite.prototype);Entry.prototype.constructor=Entry;
+ var entryCache={};
+ Entry.prototype.initialize=function(s){Sprite.prototype.initialize.call(this);this._entrySection=s;this.z=1;
+  var key=[s.wallAtlas,s.upper,s.lower,s.side,s.doorAtlas,JSON.stringify(s.mask)].join('/');
+  if(entryCache[key]){this.bitmap=entryCache[key];return;}
+  this.bitmap=entryCache[key]=new Bitmap(144,96);
+  var wall=ImageManager.loadTileset(s.wallAtlas),door=ImageManager.loadTileset(s.doorAtlas),b=this.bitmap,drawn=false;
+  function draw(){if(drawn||!wall.isReady()||!door.isReady())return;drawn=true;
+   function tile(id,dx,dy){var local=id%256;b.blt(wall,local%8*48,Math.floor(local/8)*48,48,48,dx,dy);}
+   for(var col=0;col<3;col++){tile(s.upper,col*48,0);tile(s.lower,col*48,48);}
+   // A visible section boundary separates the roof from the two-row vertical
+   // face. It is clipped to existing solid cells, never projected over streets.
+   b.fillRect(0,0,144,7,'#797269');b.fillRect(0,7,144,4,'rgba(0,0,0,0.50)');
+   b.fillRect(0,11,4,85,'#444039');b.fillRect(140,11,4,85,'#444039');
+   var x=(s.x-s.left)*48;
+   // Roof cut: complete wall section, recessed opening, fixed jambs and sill.
+   // Hidden north/east/west faces use an explicit local section, not a leaf on a cap.
+   b.fillRect(x+5,12,38,78,'#141313');
+   b.fillRect(x+3,10,42,3,'#797269');b.fillRect(x+3,13,3,76,'#302d29');b.fillRect(x+42,13,3,76,'#24211f');
+   var local=s.module.tile-512,sx=384+local%8*48,sy=Math.floor(local%128/8)*48;
+   b.blt(door,sx,sy,48,96,x+3,11,39,78);
+   // Recess depth faces the accessible side; these strips never cover a walk tile.
+   if(s.side===4){b.fillRect(x+1,14,4,72,'#a0998b');b.fillRect(x+39,13,6,75,'rgba(0,0,0,0.48)');}
+   if(s.side===6){b.fillRect(x+43,14,4,72,'#a0998b');b.fillRect(x+3,13,6,75,'rgba(0,0,0,0.48)');}
+   b.fillRect(x+4,s.side===8?0:89,40,6,'#a79d8a');
+   b.fillRect(x+7,s.side===8?6:87,34,2,'#443e35');
+   for(var yy=0;yy<2;yy++)for(var xx=0;xx<3;xx++)if(!s.mask.some(function(p){return p[0]===xx&&p[1]===yy;}))b.clearRect(xx*48,yy*48,48,48);
+  }
+  wall.addLoadListener(draw);door.addLoadListener(draw);
+ };
+ Entry.prototype.update=function(){Sprite.prototype.update.call(this);var s=this._entrySection;this.x=$gameMap.adjustX(s.left)*48;this.y=$gameMap.adjustY(s.top)*48;};
+ Spriteset_Map.prototype.createCharacters=function(){create.apply(this,arguments);
+  ($dataMap.arenaEntranceSections||[]).forEach(function(s){this._tilemap.addChild(new Entry(s));},this);
+  ($dataMap.arenaDecorSigns||[]).forEach(function(s){this._tilemap.addChild(new Sign(s));},this);
+ };
 })();
