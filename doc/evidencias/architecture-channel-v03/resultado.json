@@ -1,0 +1,110 @@
+{
+  "baseline": "350d607",
+  "browser": "158.0.8127.37",
+  "crossings": [
+    {
+      "id": "room.n",
+      "orientation": "norte",
+      "bothDirections": true,
+      "width": 3,
+      "poses": {
+        "before": [
+          15,
+          7
+        ],
+        "center": [
+          15,
+          5
+        ],
+        "after": [
+          15,
+          3
+        ]
+      }
+    },
+    {
+      "id": "room.s",
+      "orientation": "sul",
+      "bothDirections": true,
+      "width": 3,
+      "poses": {
+        "before": [
+          15,
+          20
+        ],
+        "center": [
+          15,
+          22
+        ],
+        "after": [
+          15,
+          24
+        ]
+      }
+    },
+    {
+      "id": "room.e",
+      "orientation": "leste",
+      "bothDirections": true,
+      "width": 3,
+      "poses": {
+        "before": [
+          22,
+          14
+        ],
+        "center": [
+          25,
+          14
+        ],
+        "after": [
+          28,
+          14
+        ]
+      }
+    },
+    {
+      "id": "room.w",
+      "orientation": "oeste",
+      "bothDirections": true,
+      "width": 3,
+      "poses": {
+        "before": [
+          7,
+          14
+        ],
+        "center": [
+          5,
+          14
+        ],
+        "after": [
+          3,
+          14
+        ]
+      }
+    },
+    {
+      "id": "copy.eastFace",
+      "bothDirections": true,
+      "width": 1
+    },
+    {
+      "id": "copy.westFace",
+      "bothDirections": true,
+      "width": 1
+    }
+  ],
+  "checks": [
+    "Campaign maps1–18/configs/assets unchanged; existing tilesets preserved, only technical12 appended; two deterministic rebuilds.",
+    "Actual hub route, four native keyboard crossings and reverse, closed collision and close-over-player guard, independent leaves.",
+    "Copied Rihad E/W entrances at original307,21 and323,21: pointer opening, native crossing/return in isolated technical pockets.",
+    "RAM checkpoint restores map/position/doors/actor/quest/receipts, normal save/StorageManager blocked, localStorage keys untouched.",
+    "Four face screenshots without proximity captions, exterior/copy, normal-speed canvas recording; engine error screen absent."
+  ],
+  "errors": [],
+  "ownerReport": {
+    "perspective": "Explicitly approved by owner for a7661e9",
+    "apertureCorrection": "Pending evaluation",
+    "fountainCollision": "Pending specific confirmation"
+  },
+  "limits": "Geometric/UV prototype using existing Arena textures, not final art or campaign integration. Three-tile laboratory apertures; one-tile city copy. Source streets preserved, copied inspection pockets are technical adaptations. Visual coverage refers to technical checks; perspective approval is recorded separately from aperture/fountain evaluation."
+}

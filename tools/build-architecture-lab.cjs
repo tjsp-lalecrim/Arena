@@ -16,6 +16,9 @@ function door(m,id,rect,axis,width,segments){
  fill(m,rect,false);const cx=Math.floor((rect[0]+rect[2])/2),cy=Math.floor((rect[1]+rect[3])/2),events=[];
  // Existing flat threshold family, NOT the dark walk paving. Extend one tile
  // into each connected floor, without changing regions, masks or colliders.
+ // floorRect is the ONE horizontal plane for the entire logical doorway,
+ // including a shared wall. Never derive its silhouette/UVs from wall faces:
+ // thickness belongs to reveals/jambs outside this clear, constant-width floor.
  const floorRect=rect.slice();if(axis==='x'){floorRect[0]--;floorRect[2]++;}else{floorRect[1]--;floorRect[3]++;}
  const first=256+Object.keys(read('doc/arte/m02-tilesets/rihad.json').floors).indexOf('threshold')*4;
  if(first!==268)throw Error('Architecture threshold family changed; review source atlas');

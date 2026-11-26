@@ -2,7 +2,7 @@
 
 ## Experimento de quatro faces — avaliação pendente
 
-O responsável **aprovou a perspectiva de paredes/portas do protótipoa7661e9**, inspirado na construção espacial dos prints de Zelda, sem copiar seus materiais/paleta. [Correção do vão em avaliação própria](plugins/Arena_ArchitectureLab.md#correção-do-vão--26112026): recortar a abertura projetada, não apenas a célula física; revelar piso plano explícito, com fase contínua, sem resíduos de face/teto. Manter apoios e âncoras aprovados. Cobertura1/face2 e compartilhamento2+1+2 não autorizam mudar a planta ou aplicar às380entradas antes do feedback da correção. Campanha preservada; colisão da fonte pendente de confirmação específica.
+O responsável **aprovou a perspectiva de paredes/portas do protótipoa7661e9**, inspirado na construção espacial dos prints de Zelda, sem copiar seus materiais/paleta. [Plano horizontal único V03 em avaliação](plugins/Arena_ArchitectureLab.md#plano-horizontal-único-v03--26112026): piso/soleira atravessam o vão em um único retângulo de largura constante, com escala e fase mundiais, inclusive em paredes compartilhadas. Não derivar a máscara do piso da projeçãoUV das faces: dois trapézios independentes criam aparência de funil. Representar espessura pelas faces internas/batentes fora da largura livre, soleira no plano do piso e lintel na camada superior; manter apoios fixos entre aberto/fechado. Conferir primeiro com cores por superfície e depois materiais, personagem antes/centro/depois nos quatro sentidos. Cobertura1/face2 e compartilhamento2+1+2 não autorizam mudar a planta ou aplicar às380entradas antes do feedback. Campanha preservada; colisão da fonte pendente de confirmação específica.
 
 ## Cobertura completa e amostras
 

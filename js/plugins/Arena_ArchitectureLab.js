@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.1 Protótipo RAM: recorte projetado e piso contínuo dos vãos.
+ * @plugindesc v0.1.2 Protótipo RAM: canal horizontal único, revelos e batentes.
  * @author Codex
  * @help Após DebugHub/Continuation. Somente Map019/020 com sessão RAM ativa.
  * Texturas existentes em planos geométricos; nenhuma pintura/asset de Zelda.
@@ -43,6 +43,11 @@ var ArenaArchitectureLab;
   ctx.save();ctx.beginPath();ctx.moveTo(dst[0][0],dst[0][1]);ctx.lineTo(dst[1][0],dst[1][1]);ctx.lineTo(dst[2][0],dst[2][1]);ctx.closePath();ctx.clip();ctx.setTransform(a,b,c,d,dst[0][0]-a*src[0][0]-c*src[0][1],dst[0][1]-b*src[0][0]-d*src[0][1]);ctx.drawImage(image,0,0);ctx.restore();
  }
  function warp(ctx,b,q){var w=b.width,h=b.height;triangle(ctx,b._canvas,[[0,0],[w,0],[w,h]],[q[0],q[1],q[2]]);triangle(ctx,b._canvas,[[0,0],[w,h],[0,h]],[q[0],q[2],q[3]]);}
+ // Wall faces retain their approved perspective. An aperture is a separate
+ // local section: constant tangent width, never a slice of the flared wall UVs.
+ function entryPlane(sf,seg,width){var s=seg.side,f=sf.faces[s],c=seg.center*48,h=width/2,axis=s==='N'||s==='S'?1:0,a=f[0][axis],b=f[3][axis];
+  return s==='N'?[[c-h,a],[c+h,a],[c+h,b],[c-h,b]]:s==='S'?[[c+h,a],[c-h,a],[c-h,b],[c+h,b]]:s==='E'?[[a,c-h],[a,c+h],[b,c+h],[b,c-h]]:[[a,c+h],[a,c-h],[b,c-h],[b,c+h]];
+ }
  function dispose(b){if(b._baseTexture)b._baseTexture.destroy();b._canvas.width=0;b._canvas.height=0;}
  function tile(dst,src,id,x,y){var i=id%256;dst.blt(src,i%8*48,Math.floor(i/8)*48,48,48,x,y);}
  function field(ctx,texture,r){ctx.save();ctx.fillStyle=ctx.createPattern(texture._canvas,'repeat');ctx.fillRect(r[0]*48,r[1]*48,(r[2]-r[0])*48,(r[3]-r[1])*48);ctx.restore();}
@@ -54,13 +59,16 @@ var ArenaArchitectureLab;
   spec().buildings.forEach(function(b){var roof=new Layer(4);roof._building=b;self.roofs.push(roof);tilemap.addChild(roof);});
   var m=$arenaArchitectureLab.materials;this.atlas=ImageManager.loadTileset(m.wallAtlas);this.door=ImageManager.loadCharacter(m.door);this.urban=ImageManager.loadTileset(m.urbanAtlas);
  }
- Builder.prototype.update=function(){var key=JSON.stringify(state());if(this.key!==key&&this.atlas.isReady()&&this.door.isReady()&&this.urban.isReady()){this.paint();this.key=key;}
+ Builder.prototype.update=function(){var key=JSON.stringify(state())+'|'+!!$gameTemp._arenaArchitectureSurfaceColors;if(this.key!==key&&this.atlas.isReady()&&this.door.isReady()&&this.urban.isReady()){this.paint();this.key=key;}
   this.roofs.forEach(function(s){var r=s._building.rect,inside=$gamePlayer.x>=r[0]&&$gamePlayer.x<r[2]&&$gamePlayer.y>=r[1]&&$gamePlayer.y<r[3];s.alpha=inside?0.16:1;});
  };
  Builder.prototype.destroy=function(){[this.floor,this.wall,this.beam].concat(this.roofs).forEach(function(s){dispose(s.bitmap);});};
  Builder.prototype.paint=function(){var self=this,m=$arenaArchitectureLab.materials,wall=this.wall.bitmap,beams=this.beam.bitmap,floor=this.floor.bitmap;floor.clear();wall.clear();beams.clear();this.roofs.forEach(function(s){s.bitmap.clear();});
+  // Internal diagnostic only, not a new player control or a persistent setting.
+  var colors=!!$gameTemp._arenaArchitectureSurfaceColors;
   var texture=new Bitmap(48,96),cap=new Bitmap(48,48),threshold=new Bitmap(96,96);tile(texture,this.atlas,m.upper,0,0);tile(texture,this.atlas,m.lower,0,48);tile(cap,this.atlas,m.cap,0,0);
   for(var ty=0;ty<2;ty++)for(var tx=0;tx<2;tx++)tile(threshold,this.atlas,m.threshold+tx+ty*2,tx*48,ty*48);
+  if(colors){texture.fillAll('#ac6756');cap.fillAll('#78619b');threshold.fillAll('#547b63');}
   var surfaces={};
   function render(s,out){var r=s.rect,l=r[0],t=r[1],x=r[2],y=r[3];surfaces[s.id]={s:s,out:out,faces:{}};
    if(!out){field(wall._context,cap,[l-3,t-3,x+3,t-2]);field(wall._context,cap,[l-3,y+2,x+3,y+3]);field(wall._context,cap,[l-3,t-2,l-2,y+2]);field(wall._context,cap,[x+2,t-2,x+3,y+2]);}
@@ -70,26 +78,37 @@ var ArenaArchitectureLab;
   }
   spec().rooms.forEach(function(r){render(r,false);});spec().buildings.forEach(function(r){render(r,true);});
   this.roofs.forEach(function(s){var r=s._building.rect;field(s.bitmap._context,cap,[r[0]+2,r[1]+2,r[2]-2,r[3]-2]);});
-  // Erase every opening through face AND cap first; preserve full useful width.
-  spec().doors.forEach(function(d){var r=d.rect;[wall,beams].concat(self.roofs.map(function(s){return s.bitmap;})).forEach(function(b){b.clearRect(r[0]*48,r[1]*48,(r[2]-r[0])*48,(r[3]-r[1])*48);});});
-  spec().doors.forEach(function(d){d.segments.forEach(function(seg){var sf=surfaces[seg.surface],r=sf.s.rect,side=seg.side,length=side==='N'||side==='S'?r[2]-r[0]:r[3]-r[1];
-    var center=side==='N'?(seg.center-r[0])/length:side==='S'?(r[2]-seg.center)/length:side==='E'?(seg.center-r[1])/length:(r[3]-seg.center)/length;
-    // Jambs stand OUTSIDE the useful aperture, preserving48/144px at the foot.
-    var hole=d.width*48,w=hole+16,half=w/48/length/2,q=sub(sf.faces[side],center-half,center+half,0,1),frame=new Bitmap(w,96);
-    // The plane is trapezoidal: clearing only d.rect left pieces of the wall
-    // under the transparent opening. Clear the EXACT unchanged frame polygon,
-    // then restore jambs/leaf. The floor beneath stays in world coordinates.
+  var frames=[];this.portalModels=[];
+  spec().doors.forEach(function(d){var hole=d.width*48,w=hole+16,r=d.rect.map(function(v){return v*48;}),fr=d.floorRect.map(function(v){return v*48;}),depth=12;
+   var reveals=d.axis==='x'?[[r[0],r[1]-depth,r[2],r[1]],[r[0],r[3],r[2],r[3]+depth]]:[[r[0]-depth,r[1],r[0],r[3]],[r[2],r[1],r[2]+depth,r[3]]];
+   var model={id:d.id,axis:d.axis,width:hole,floor:fr,channel:r,reveals:reveals,frames:[]};self.portalModels.push(model);
+   // ONE horizontal floor per logical doorway, including both faces of a
+   // shared wall. No warp, taper, per-face scale, sill ramp or center cap strip.
+   [wall,beams].concat(self.roofs.map(function(s){return s.bitmap;})).forEach(function(b){b.clearRect(fr[0],fr[1],fr[2]-fr[0],fr[3]-fr[1]);});
+   d.segments.forEach(function(seg){var q=entryPlane(surfaces[seg.surface],seg,w);frames.push({door:d,segment:seg,q:q,width:w,hole:hole});model.frames.push({side:seg.side,q:q,frameOnly:!!seg.frameOnly});
+    // Rectangular frame margins are outside the clear floor, not bright fans.
     [wall].concat(self.roofs.map(function(s){return s.bitmap;})).forEach(function(b){var c=b._context;c.save();c.beginPath();q.forEach(function(p,i){c[i?'lineTo':'moveTo'](p[0],p[1]);});c.closePath();c.clip();c.clearRect(0,0,b.width,b.height);c.restore();});
-    var fc=floor._context;fc.save();fc.beginPath();q.forEach(function(p,i){fc[i?'lineTo':'moveTo'](p[0],p[1]);});fc.closePath();fc.clip();field(fc,threshold,[0,0,$dataMap.width,$dataMap.height]);fc.restore();
+   });
+  });
+  this.portalModels.forEach(function(model){var d=spec().doors.filter(function(d){return d.id===model.id;})[0];field(floor._context,threshold,d.floorRect);
+   if(colors){var r=model.channel,mid=model.axis==='x'?(r[0]+r[2])/2:(r[1]+r[3])/2;floor.fillRect(model.axis==='x'?mid-24:r[0],model.axis==='x'?r[1]:mid-24,model.axis==='x'?48:r[2]-r[0],model.axis==='x'?r[3]-r[1]:48,'#99a66b');}
+   // Internal wall faces explain thickness OUTSIDE the horizontal clear width.
+   model.reveals.forEach(function(r){if(colors)wall.fillRect(r[0],r[1],r[2]-r[0],r[3]-r[1],'#397c9d');else field(wall._context,texture,r.map(function(v){return v/48;}));});
+  });
+  frames.forEach(function(f){var d=f.door,seg=f.segment,q=f.q,w=f.width,hole=f.hole,frame=new Bitmap(w,96);
     if(!state()[d.id]&&!seg.frameOnly){frame.fillRect(8,0,hole,96,'#171615');if(d.width===1)frame.blt(self.urban,384,0,48,96,8,0);else frame.blt(self.door,0,48,144,96,8,0);}
-    // Fixed stone jambs, overhead lintel and level threshold; same plane as wall.
+    if(colors&&!state()[d.id]&&!seg.frameOnly)frame.fillRect(8,0,hole,96,'#c97163');
+    // Jambs and folded leaf keep fixed anchors. The sill belongs to the floor,
+    // so it is NEVER blitted onto this vertical face or mirrored at the center.
     frame.blt(texture,0,0,8,96,0,0);frame.blt(texture,40,0,8,96,w-8,0);
-    frame.blt(texture,0,0,48,10,0,0,w,10);frame.blt(threshold,0,28,48,10,0,86,w,10);
+    if(colors){frame.fillRect(0,0,8,96,'#bd985e');frame.fillRect(w-8,0,8,96,'#bd985e');}
     if(state()[d.id]&&!seg.frameOnly){frame.blt(self.door,0,48,8,96,2,0,5,86);}
     warp(wall._context,frame,q);
-    var beam=new Bitmap(w,10);beam.blt(frame,0,0,w,10,0,0);warp(beams._context,beam,sub(q,0,1,0,10/96));
+    // One overhead lintel for one leaf; the reverse shared-wall face is only a
+    // reveal/frame. It must not add a second crossbar masquerading as a step.
+    var beam=new Bitmap(w,10);if(!seg.frameOnly){beam.blt(texture,0,0,48,10,0,0,w,10);if(colors)beam.fillAll('#78619b');warp(beams._context,beam,sub(q,0,1,0,10/96));}
     dispose(frame);dispose(beam);
-   });});
+  });
   [floor,wall,beams].concat(this.roofs.map(function(s){return s.bitmap;})).forEach(function(b){b._setDirty();});dispose(texture);dispose(cap);dispose(threshold);
  };
  var loaded=Scene_Map.prototype.onMapLoaded;Scene_Map.prototype.onMapLoaded=function(){loaded.apply(this,arguments);sync();};

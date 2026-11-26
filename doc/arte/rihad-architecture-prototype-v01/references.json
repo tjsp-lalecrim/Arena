@@ -72,6 +72,15 @@
       271
     ],
     "sourceFamily": "threshold",
-    "method": "Native world-aligned floor with one-tile aprons; geometric aperture clipping before restoring fixed frame/leaf. No new art, geometry/anchors unchanged."
+    "method": "Native world-aligned floor with one-tile aprons; geometric aperture clipping before restoring fixed frame/leaf. No new art, geometry/anchors unchanged.",
+    "status": "V02 historical: residue partly resolved per owner feedback; center spatial continuity still unsatisfactory."
+  },
+  "channelGeometryCorrection": {
+    "baseline": "6ab6798",
+    "reference": "doc/prints/rihad-prototipo-perspectiva-centro-3e11d047.png",
+    "method": "One world-aligned horizontal rectangle per logical aperture, including shared walls; local opening frames constant-width; inner reveals outside clear floor; no vertical sill; one overhead lintel. Approved overall wall-face projection unchanged.",
+    "diagnostic": "Floor green, level sill olive, reveals blue, jambs gold, wall terracotta, cap/lintel violet; transient gameTemp flag only.",
+    "evidence": "doc/evidencias/architecture-channel-v03",
+    "status": "Awaiting owner visual evaluation; no campaign adoption."
   }
 }
