@@ -17,9 +17,25 @@
         [
           0,
           -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
         ]
       ],
-      "reason": "Círculo da fonte reutilizada está centrado48px acima do apoio do evento (exportação96x144); o tile de baixo é aproximação frontal."
+      "renderOffset": [
+        24,
+        0
+      ],
+      "reason": "Bacia e pedestal ocupam2x2. Deslocamento visual+24px em X alinha o centro da exportação96x144 à união dos quatro tiles; evento lógico e Y de profundidade preservados."
     },
     "trunk": {
       "cells": [
