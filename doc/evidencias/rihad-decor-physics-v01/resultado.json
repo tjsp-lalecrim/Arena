@@ -1,0 +1,79 @@
+{
+  "browser": "158.0.8127.37",
+  "baseline": "408888d",
+  "audit": [
+    {
+      "map": "Map009",
+      "objects": 138,
+      "physicalCells": 120,
+      "newBlockedCells": 120,
+      "signs": 6
+    },
+    {
+      "map": "Map011",
+      "objects": 47,
+      "physicalCells": 48,
+      "newBlockedCells": 48,
+      "signs": 0
+    },
+    {
+      "map": "Map018",
+      "objects": 25,
+      "physicalCells": 41,
+      "newBlockedCells": 8,
+      "signs": 0
+    }
+  ],
+  "paths": {
+    "doors": 380,
+    "missingDoors": [],
+    "blockedNpcs": []
+  },
+  "signs": [
+    {
+      "id": "inn.sign",
+      "side": 6,
+      "height": 72,
+      "alpha": true
+    },
+    {
+      "id": "house334.sign",
+      "side": 6,
+      "height": 72,
+      "alpha": true
+    },
+    {
+      "id": "house373.sign",
+      "side": 6,
+      "height": 72,
+      "alpha": true
+    },
+    {
+      "id": "house336.sign",
+      "side": 2,
+      "height": 36,
+      "alpha": true
+    },
+    {
+      "id": "house366.sign",
+      "side": 2,
+      "height": 36,
+      "alpha": true
+    },
+    {
+      "id": "house369.sign",
+      "side": 2,
+      "height": 36,
+      "alpha": true
+    }
+  ],
+  "checks": [
+    "Only declared physical cells gained collision; all other native passage bits, event IDs, regions, quest contracts and other maps preserved; transparent reserved tile verified; two rebuilds stable.",
+    "380 door approaches and all city NPC patrol cells remain connected; solid crates/pots/well/fountain stop keyboard and click, canopy clearance remains walkable.",
+    "All six sign bitmaps visible at shared mounting heights; door/sign logical IDs and approaches preserved; front/side captures inspected.",
+    "Synthetic old saves inside crate/table relocate to nearest reachable unoccupied floor, only position changes; safe city/court saves retain position; RAM normal slots blocked.",
+    "Inn upper-leaf click, all ten lateral thresholds, bed full recovery, keeper, informant short response and queen click accessible; exit/return works; no quest effects duplicated."
+  ],
+  "errors": [],
+  "limits": "Fresh Chrome profile, synthetic normal slot19 only. Traversal helper freezes NPCs; all authored patrol paths audited separately. Bed level1 recovery tested; existing Ria and Blubamka acceptance/delivery evidence reused, no full campaign or new manual approval."
+}

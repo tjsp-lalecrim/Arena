@@ -254,3 +254,5 @@ Arena_Spider0.2.0: um exemplar de batalha/patrulha, Enemy9/Troop10, área privad
 `Arena_NPCDialogues` após os adaptadores de campanha, dados `ArenaNPCDialogues.json`; [contrato, fontes e dependências](plugins/Arena_NPCDialogues.md). Reutiliza apresentação de ArenaCourt, sem substituir Arena_Narrative/MV_NarrativePages.
 
 `Arena_RihadDirections` após Arena_NPCDialogues: [Onde fica…?, rotas e indicação cancelável](plugins/Arena_RihadDirections.md). Dados separados, entradas reais, sem descoberta/efeito de quest; a montagem visual de frames existentes continua no módulo Rihad.
+
+`Arena_RihadDecor` após Arena_RihadDirections: [bases físicas, placas e retomada segura](plugins/Arena_RihadDecor.md). Colisão nativa compilada, sem retângulos de imagem como obstáculo e sem alterar os sistemas de quest.
