@@ -1,5 +1,9 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
+## Experimento de quatro faces — avaliação pendente
+
+O responsável **aprovou a perspectiva de paredes/portas do protótipoa7661e9**, inspirado na construção espacial dos prints de Zelda, sem copiar seus materiais/paleta. [Plano horizontal único V03 em avaliação](plugins/Arena_ArchitectureLab.md#plano-horizontal-único-v03--26112026): piso/soleira atravessam o vão em um único retângulo de largura constante, com escala e fase mundiais, inclusive em paredes compartilhadas. Não derivar a máscara do piso da projeçãoUV das faces: dois trapézios independentes criam aparência de funil. Representar espessura pelas faces internas/batentes fora da largura livre, soleira no plano do piso e lintel na camada superior; manter apoios fixos entre aberto/fechado. Conferir primeiro com cores por superfície e depois materiais, personagem antes/centro/depois nos quatro sentidos. Cobertura1/face2 e compartilhamento2+1+2 não autorizam mudar a planta ou aplicar às380entradas antes do feedback. Campanha preservada; colisão da fonte pendente de confirmação específica.
+
 ## Cobertura completa e amostras
 
 Aplicar o [escopo mínimo funcional vigente](MARCOS_DO_PROJETO.md#escopo-mínimo-funcional-vigente--decisão-de02112026): cidades/dungeons da campanha com mapas completos e encontros previstos, não apenas rota principal. Construir por setores pequenos com comparação original→MV, portas/conexões e inventário dos encontros; amostra aprovada não conclui o mapa. Eventos opcionais podem ser adiados sem apagar sua geometria. Não criar população infinita ou encontros aleatórios para preencher lacunas. Prioridade atual e dependências em BACKLOG_M02.md.
