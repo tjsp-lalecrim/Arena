@@ -255,4 +255,4 @@ Arena_Spider0.2.0: um exemplar de batalha/patrulha, Enemy9/Troop10, área privad
 
 `Arena_RihadDirections` após Arena_NPCDialogues: [Onde fica…?, rotas e indicação cancelável](plugins/Arena_RihadDirections.md). Dados separados, entradas reais, sem descoberta/efeito de quest; a montagem visual de frames existentes continua no módulo Rihad.
 
-`Arena_RihadDecor` após Arena_RihadDirections: [bases físicas, placas e retomada segura](plugins/Arena_RihadDecor.md). Colisão nativa compilada, sem retângulos de imagem como obstáculo e sem alterar os sistemas de quest.
+`Arena_RihadDecor` após Arena_RihadDirections: [bases físicas, placas, seções de entrada e retomada segura](plugins/Arena_RihadDecor.md). Colisão nativa compilada, âncora explícita das fontes, montagem arquitetônica com assets existentes; sem retângulos de imagem como obstáculo ou alteração de quest.
