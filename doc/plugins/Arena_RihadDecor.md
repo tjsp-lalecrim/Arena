@@ -1,6 +1,6 @@
 # Arena_RihadDecor0.2.0 — bases, placas e seções de entrada
 
-Após Arena_RihadDirections. Sem arte nova, alteração de motor ou namespace. [Cadastro único](../mapas/RIHAD_DECOR_CONTRATOS.json), compilador `tools/rihad-decor-contracts.cjs`, saídas Map009/011/018 e flags dos tilesets6/9/10. O runtime monta as seis placas e trata somente posições de retomada dentro das bases cadastradas.
+Após Arena_RihadDirections. Sem arte nova, alteração de motor ou namespace. [Cadastro único](../mapas/RIHAD_DECOR_CONTRATOS.json), compilador `tools/rihad-decor-contracts.cjs`, saídas Map009/011/018 e flags dos tilesets6/9/10. O runtime monta placas/seções de entrada, aplica a âncora visual explícita das fontes e trata posições de retomada dentro das bases cadastradas.
 
 ## Auditoria e colisão
 
@@ -24,6 +24,8 @@ As seis placas físicas de símbolos mantêm ID e ponto lógico: três frontais 
 
 Projeção comum por orientação: frontais sobem36px, dentro da face vertical alta adjacente à porta; laterais sobem72px e prendem o suporte à borda acessível, com4px de encaixe. A regra oeste inverte o suporte do mesmo módulo simétrico; não há ocorrência física oeste nesse conjunto atual para alegar avaliação de campo. As laterais projetam a placa para fora da face e ficam atrás do personagem quando ele passa à frente; as frontais usam a camada necessária para aparecer sobre a parede. Não alteram o vão, a folha, dobradiças, animação ou colisão das portas. É montagem dos pixels existentes, sem recortar/recentralizar quadros de animação.
 
+Comparações da revisão anterior de25/11; seus limites de cobertura são corrigidos pela seção de26/11 abaixo.
+
 |Caso|Antes|Depois|
 |---|---|---|
 |Fachada frontal|[captura](../evidencias/rihad-decor-physics-v01/antes-frontal.png)|[captura](../evidencias/rihad-decor-physics-v01/depois-frontal.png)|
@@ -45,9 +47,9 @@ Feedback registrado: respostas curtas consideradas melhores; decoração atraves
 
 Roteiro: observar a placa da pousada e uma fachada frontal no quarteirão próximo; tentar atravessar caixas/vasos e contorná-los; entrar por tecla/clique, chegar à cama e falar com a responsável; visitar Blubamka e retornar. Salvar/carregar em piso livre mantém a posição. Não é necessário fabricar um save preso: a recuperação desse caso já foi verificada tecnicamente em perfil isolado.
 
-Implementação `b469155`, fonte funcional promovida à main `bcf3d3c63d1b0536860af1a4c5b52d02ddd82411`. [Prévia pública conferida](../evidencias/rihad-decor-pages-v02/resultado.json), [execução45730753285](https://github.com/tjsp-lalecrim/Arena/actions/runs/45730753285): manifesto e443arquivos por tamanho/SHA-256, abertura isolada e máscaras/módulo servidos confirmados. Os commits posteriores de infraestrutura e registro não mudam o conteúdo funcional selecionado. Avaliação manual dos ajustes permanece pendente; sem release ou limpeza de dados.
+Referência anterior: implementação `b469155`, fonte promovida à main `bcf3d3c63d1b0536860af1a4c5b52d02ddd82411`. [Prévia conferida em25/11](../evidencias/rihad-decor-pages-v02/resultado.json), [execução45730753285](https://github.com/tjsp-lalecrim/Arena/actions/runs/45730753285): manifesto e443arquivos por tamanho/SHA-256, abertura isolada e máscaras/módulo servidos confirmados. O feedback seguinte apontou os defeitos tratados abaixo; essa evidência de publicação não constitui aprovação da montagem visual.
 
-## Fonte e seções de entrada —26/11/2026
+## Fonte e seções de entrada — 26/11/2026
 
 Responsável testou a última prévia e confirmou persistência da sobreposição na fonte e leitura arquitetônica inadequada das entradas. Consultados os três prints `rihad-colisao-portas-*`. Fonte identificada em **Map009(351,177)**, originalMIF(11,58), evento1066. Os prints de portas mostram os padrões norte reduzido a soleira e lateral sem face de parede. Casos reproduzíveis próximos ao portão estão abaixo; não atribuir ao print uma coordenada de casa que ele não informa.
 
@@ -68,4 +70,4 @@ Os testes anteriores conferiam o tile central da fonte e pixels visíveis/acesso
 
 Na fonte, antes o personagem ocupa(351,177); depois fica ao sul(351,178), fora da base, com câmera acompanhando. Legendas só foram ocultadas pelo teste para as capturas; continuam no jogo como apoio. Identificação/placas e estado fechado das casas preservados.
 
-Roteiro único: do portão seguir às casas laterais(307,21)/(323,21); comparar templo frontal(354,31) e casa ao norte(351,53), reconhecendo a entrada pela imagem. Entrar na pousada(313,42) por tecla/clique, alcançar o quarto e retornar. Pela rota à corte, contornar a fonte(351,177) pelos quatro lados; conferir base bloqueada e personagem à frente ao sul. Prosseguir à corte(360,384), entrar/sair e salvar/carregar em piso livre. Não fabricar save pessoal preso: reparação já testada isoladamente. Pages depende do registro do pacote desta revisão; release no fechamento.
+Roteiro único: do portão seguir às casas laterais(307,21)/(323,21); comparar templo frontal(354,31) e casa ao norte(351,53), reconhecendo a entrada pela imagem. Entrar na pousada(313,42) por tecla/clique, alcançar o quarto e retornar. Pela rota à corte, contornar a fonte(351,177) pelos quatro lados; conferir base bloqueada e personagem à frente ao sul. Prosseguir à corte(360,384), entrar/sair e salvar/carregar em piso livre. Não fabricar save pessoal preso: reparação já testada isoladamente. Implementação `8ecb000`, fonte promovida à main `3070ee2c078d1515c2b8c4e1202b02a8fbc24063`. [Prévia publicada/conferida](../evidencias/rihad-fonte-entradas-pages-v02/resultado.json), [execução45901851858](https://github.com/tjsp-lalecrim/Arena/actions/runs/45901851858): manifesto exato,443arquivos por tamanho/SHA-256 e abertura no Chrome. Registros posteriores só documentais/de infraestrutura. Avaliação manual dos ajustes pendente; release no fechamento.
