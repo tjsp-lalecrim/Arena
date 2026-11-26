@@ -6,7 +6,7 @@ Relato do responsável: funcionamento geral satisfatório, com encaixes inadequa
 
 Seis exemplares adicionais, IDs906–911: viajante357,90; artesã355,150; moradora369,205; viajante374,270; idoso375,320; guarda361,366. Posições/circuitos são adaptações em ruas livres, não ocorrências canônicas; quatro civis móveis e duas poses estáticas, reutilizando os assets existentes. Configuração canônica em [RIHAD_NPCS_M02](mapas/RIHAD_NPCS_M02.json); total13regionais+informante. Saves urbanos anteriores recebem apenas os eventos ausentes, preservando posições/progresso/recibos anteriores.
 
-[Onde fica…?](plugins/Arena_RihadDirections.md) oferece entradas públicas e o estabelecimento alcançável mais próximo de cada tipo confirmado, com serviço fechado explicitado. Resposta parte da posição atual do NPC, seta acompanha as passagens e pode ser encerrada. Não revela destinos de quest nem executa os efeitos exclusivos do informante/Blubamka. Na pousada, indica quarto/cama e saída; pedir os demais locais aos moradores na rua. Avaliação manual desta alteração pendente, sem aprovação presumida a partir do relato geral.
+[Onde fica…?](plugins/Arena_RihadDirections.md) oferece entradas públicas e o estabelecimento alcançável mais próximo de cada tipo confirmado, com serviço fechado explicitado. Revisão breve vigente: resposta distante dá só o rumo da posição atual do NPC; marcador preciso é concedido apenas de perto por caminho acessível e pode ser encerrado. Não revela destinos de quest nem executa os efeitos exclusivos do informante/Blubamka. Na pousada, indica quarto/cama e saída; pedir os demais locais aos moradores na rua. Avaliação manual desta alteração pendente, sem aprovação presumida a partir do relato geral.
 
 ## Entradas laterais V01 — 23/11/2026
 
