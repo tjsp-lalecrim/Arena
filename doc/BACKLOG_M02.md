@@ -28,7 +28,7 @@
 
 **Feedback atual:** responsável confirmou apresentação bem-sucedida da visão de Ria; [cobertura exata](VISAO_RIA_M02_03C.md). Não atribuir nova confirmação de persistência.
 
-**Prévia pública atual:** [bases e placas, fontebcf3d3c](PAGES_INFRA.md#prévia-de-bases-e-placas--25112026), incluindo orientação breve, seis novos exemplares regionais, diálogos por tópicos, entradas laterais, cenário dos Arredores, fachadas/interiores/NPCs e preservando mapa mundial/catálogo. Avaliação manual/visual dos ajustes pendente pelo roteiro agrupado; dragon gate exterior e vagonetes seguem incertos, sem produção ou integração presumida. Release no fechamento.
+**Prévia pública atual:** [fonte e entradas arquitetônicas, fonte3070ee2](PAGES_INFRA.md#prévia-de-fonte-e-entradas-arquitetônicas--26112026), incluindo orientação breve, seis novos exemplares regionais, diálogos por tópicos, entradas laterais, cenário dos Arredores, fachadas/interiores/NPCs e preservando mapa mundial/catálogo. Avaliação manual/visual dos ajustes pendente pelo roteiro agrupado; dragon gate exterior e vagonetes seguem incertos, sem produção ou integração presumida. Release no fechamento.
 
 **Entrada de Fang Lair:** [face interna MSU integrada e investigação delimitada](FANG_CELAS_M02_06A.md#entrada-interna-e-investigação-de-vagonetes--20112026). Exterior dragon gate e vagonetes permanecem incertos; candidatos nos volumes(87,21)/(88,21) registrados, sem geração/colocação por suposição. Avaliação visual agrupada; Pages e release separados.
 
