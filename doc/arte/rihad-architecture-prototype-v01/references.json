@@ -46,7 +46,10 @@
   "masters": [
     "tools/build-architecture-lab.cjs",
     "js/plugins/Arena_ArchitectureLab.js",
-    "data/ArenaArchitectureLab.json"
+    "data/ArenaArchitectureLab.json",
+    "js/plugins/MV_ArchitecturePlanes.js",
+    "js/plugins/Arena_RihadArchitecture.js",
+    "tools/rihad-architecture.cjs"
   ],
   "adaptations": [
     "Same source Arena textures; local multi-direction cutaway interpretation, not original Arena camera or new canonical Hammerfell architecture.",
@@ -54,13 +57,16 @@
     "City crop map9 [289,10,348,33]; source307,21 ->copy18,11 and323,21 ->copy34,11. Only copied technical pockets/operable leaves are new; campaign untouched.",
     "Instant closed/open geometry states; hinge/folded strip fixed, not a new final swing animation."
   ],
-  "status": "Perspective approved for a7661e9; aperture correction pending; no campaign adoption. Fountain remains pending.",
+  "status": "85a9d80 provisionally accepted with caveats; gradual campaign adoption authorized. Perspective/aperture finishing remains future REF08. Fountain pending.",
   "ownerApprovals": {
     "perspective": {
       "commit": "a7661e9",
       "status": "Explicitly approved by owner"
     },
-    "apertureCorrection": "Pending feedback",
+    "apertureCorrection": {
+      "commit": "85a9d80",
+      "status": "Provisionally accepted with caveats; owner considered it better and authorized progress."
+    },
     "fountainCollision": "Pending specific confirmation"
   },
   "thresholdCorrection": {
@@ -81,6 +87,6 @@
     "method": "One world-aligned horizontal rectangle per logical aperture, including shared walls; local opening frames constant-width; inner reveals outside clear floor; no vertical sill; one overhead lintel. Approved overall wall-face projection unchanged.",
     "diagnostic": "Floor green, level sill olive, reveals blue, jambs gold, wall terracotta, cap/lintel violet; transient gameTemp flag only.",
     "evidence": "doc/evidencias/architecture-channel-v03",
-    "status": "Awaiting owner visual evaluation; no campaign adoption."
+    "status": "Provisionally accepted with caveats; campaign application constrained by available solid volume."
   }
 }

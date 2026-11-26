@@ -1,8 +1,8 @@
 # Diretiva de mapas e objetos — ortogonal MV
 
-## Experimento de quatro faces — avaliação pendente
+## Arquitetura de quatro faces — aceite provisório
 
-O responsável **aprovou a perspectiva de paredes/portas do protótipoa7661e9**, inspirado na construção espacial dos prints de Zelda, sem copiar seus materiais/paleta. [Plano horizontal único V03 em avaliação](plugins/Arena_ArchitectureLab.md#plano-horizontal-único-v03--26112026): piso/soleira atravessam o vão em um único retângulo de largura constante, com escala e fase mundiais, inclusive em paredes compartilhadas. Não derivar a máscara do piso da projeçãoUV das faces: dois trapézios independentes criam aparência de funil. Representar espessura pelas faces internas/batentes fora da largura livre, soleira no plano do piso e lintel na camada superior; manter apoios fixos entre aberto/fechado. Conferir primeiro com cores por superfície e depois materiais, personagem antes/centro/depois nos quatro sentidos. Cobertura1/face2 e compartilhamento2+1+2 não autorizam mudar a planta ou aplicar às380entradas antes do feedback. Campanha preservada; colisão da fonte pendente de confirmação específica.
+O responsável aprovou a perspectiva dea7661e9 e **aceitou provisoriamente85a9d80 com ressalvas**, autorizando aplicação gradual. [Campanha, abrangência e exceções](plugins/Arena_RihadDecor.md#arquitetura-gradual-na-campanha--26112026). Piso/soleira atravessam o vão num único plano horizontal de largura constante, escala/fase mundiais; não derivar sua máscara da projeçãoUV das paredes. Faces internas e batentes explicam a espessura fora da largura livre; lintel fica acima do personagem e apoios são fixos entre estados. Inspecionar planos com cores simples antes dos materiais. Cobertura1/face2 exige volume sólido independente3tiles; duas faces compartilhadas exigem2+1+2=5tiles. Não ocupar ruas/cômodos nem deslocar eventos para acomodar o módulo: registrar a exceção e preservar a solução funcional atual. Refino de perspectiva/acabamento tem registro único em REF08/QUALIDADE-01. Colisão da fonte continua pendente de confirmação específica.
 
 ## Cobertura completa e amostras
 
