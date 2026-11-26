@@ -21,6 +21,8 @@ Critérios detalhados permanecem em [REFINAMENTOS_POS_INTEGRACAO_M01.md](REFINAM
 |4 | REF07/REF08/REF16/REF17 e ressalvas de portas/objetos | Uma inconsistência visual identificada em escala real; preservar ilustrações e encaixe/animação/colisão. Tela de título e introdução são assuntos distintos; não regenerar artes adequadas |
 |5 | REF01 / REF06 e REF14 desktop | Conveniência/navegação/feedback selecionados conforme uso real. Se notificação já entregue no M02, não repetir. Aproveitamento da tela exige distinguir canvas, resolução interna e fullscreen; não incorporar a parcela mobile |
 
+**REF08/Rihad:** perspectiva e acabamento dos vãos aceitos provisoriamente com ressalvas; critérios únicos em REFINAMENTOS_POS_INTEGRACAO_M01.md#ref08--acabamento-arquitetônico-dos-vãos-de-rihad. Sem nova rodada de polimento nesta integração.
+
 **REF17/Stonekeep:** contraste moderado do piso para identificação do lobo; critérios e registro únicos em REFINAMENTOS_POS_INTEGRACAO_M01.md. Melhoria futura, não iniciada e não bloqueante para a campanha.
 
 Manutenção focal entra somente quando sustentada por falha, duplicação ou custo recorrente concreto que afete o recorte; não inventariar/refatorar todo o motor. Novos problemas terão fonte única no registro de pendências, sem relatório paralelo por conveniência.
