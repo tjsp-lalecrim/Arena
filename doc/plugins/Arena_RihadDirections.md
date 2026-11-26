@@ -41,6 +41,8 @@ Roteiro atual: perto do portão, perguntar ao informante **Onde fica…? → Pou
 
 ## Encaixes existentes
 
+Histórico visual V01, preservado sem nova alteração nesta revisão de respostas.
+
 Sem geração ou alteração de masters/exportações. A montagem anterior tratava os2×2tiles do frame lateral como sua área final e punha a faixa inferior sobre o piso; também deslocava o centro24px para oeste. `arenaLateralFittings` nos mapas gerados separa posição lógica de extensão visual: duas peças do atlas ficam centradas no vão, com suas bordas opacas junto aos lábios de parede, deixando a faixa transitável48px livre. Entradas exteriores alinham a folha à borda acessível da parede (±6px). Sprites decorativos ficam abaixo do personagem e não possuem colisão. Os dez frames internos são estáticos, não novas portas animadas; animações e âncoras das portas funcionais permanecem intactas.
 
 [Comparações e verificações](../evidencias/rihad-orientation-fittings-v02/resultado.json). Relato recebido: funcionamento geral satisfatório, com encaixes inadequados sobretudo E/W. O defeito é tratado nesta entrega; não atribuir ao relato aprovação visual destes ajustes ou testes específicos de persistência.
@@ -53,4 +55,6 @@ Sem geração ou alteração de masters/exportações. A montagem anterior trata
 |Entrada leste|[V01](../evidencias/rihad-orientation-fittings-v02/antes-leste.png)|[V02](../evidencias/rihad-orientation-fittings-v02/depois-leste.png)|
 |Entrada oeste|[V01](../evidencias/rihad-orientation-fittings-v02/antes-oeste.png)|[V02](../evidencias/rihad-orientation-fittings-v02/depois-oeste.png)|
 
-Implementação53010fc, promovida funcionalmente em main3234adc; [prévia pública conferida](../PAGES_INFRA.md#prévia-de-encaixes-e-onde-fica--25112026). Evidências anteriores de aceite/entrega única de Blubamka em npc-dialogues-v01 reutilizadas, pois seus eventos/handlers não foram alterados. A conferência nova cobre cancelamento sem efeito do informante, circulação/entrada/saída, estado e apresentação; não é nova aprovação manual da campanha ou da arte.
+Histórico V01: implementação53010fc, promovida funcionalmente em main3234adc; [prévia pública conferida](../PAGES_INFRA.md#prévia-de-encaixes-e-onde-fica--25112026). Evidências anteriores de aceite/entrega única de Blubamka em npc-dialogues-v01 reutilizadas, pois seus eventos/handlers não foram alterados. A conferência nova cobre cancelamento sem efeito do informante, circulação/entrada/saída, estado e apresentação; não é nova aprovação manual da campanha ou da arte.
+
+Revisão breve a7a6255, promovida funcionalmente em main64f727b; [prévia publicada e conferida](../PAGES_INFRA.md#prévia-de-orientação-breve--25112026). Avaliação manual da concisão/proximidade pendente, sem release.
