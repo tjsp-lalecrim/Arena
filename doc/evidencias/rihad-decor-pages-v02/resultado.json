@@ -1,0 +1,39 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "bcf3d3c63d1b0536860af1a4c5b52d02ddd82411",
+  "workflow": "https://github.com/tjsp-lalecrim/Arena/actions/runs/45730753285",
+  "infraCommit": "794124ff5539ba0f79dde83d059cd3d254da8b8e",
+  "manifestSha256": "0e196f801224f5911fa2c4d073f52e326c2884e843e6b65ee033cd25720884e5",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 443,
+  "totalBytes": 57465853,
+  "browser": "158.0.8127.37",
+  "status": {
+    "regionalActors": 13,
+    "ids": [
+      "rihad.inn.keeper",
+      "rihad.guard.court.01",
+      "rihad.civilian.square.01",
+      "rihad.regional.elder.01",
+      "rihad.regional.artisan.01",
+      "rihad.regional.traveler.01",
+      "rihad.regional.guardvariant.01",
+      "rihad.street.resident.01",
+      "rihad.street.resident.02",
+      "rihad.street.resident.03",
+      "rihad.street.resident.04",
+      "rihad.street.resident.05",
+      "rihad.street.resident.06"
+    ],
+    "debug": false,
+    "namespace": "arena:m01:save-v1"
+  },
+  "errors": [],
+  "checks": [
+    "Every public file matches manifest size/SHA256; exact selected source and manifest",
+    "Fresh isolated Chrome opens game; NPC dialogue module/data plus retained atlases and actor assets load",
+    "Public player profile debug disabled; stable origin and save namespace",
+    "Decor module, native collision mask flags and all three compiled map contracts verified publicly"
+  ],
+  "limits": "Publication smoke; local circulation/dialogue/save evidence reused. Owner visual assessment pending; no personal saves touched."
+}
