@@ -124,6 +124,7 @@ function build(map, config, recovery) {
     require('./rihad-npcs.cjs')(map, config, 9);
     require('./rihad-facade-props.cjs')(map);
     require('./rihad-lateral-entries.cjs')(map,'urban');
+    require('./rihad-entrance-assembly.cjs')(map);
     require('./rihad-decor-contracts.cjs').finalize(map);
     fs.writeFileSync(path.join(root, 'data/ArenaRecovery.json'), JSON.stringify(recovery, null, 2) + '\n');
 }

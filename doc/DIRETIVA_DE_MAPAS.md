@@ -32,6 +32,8 @@ Decisão provisória para representação, sujeita a testes: cap/teto1tile, altu
 
 Aplicação vigente em Rihad: [cadastro de bases e montagem das placas](plugins/Arena_RihadDecor.md). Cadastrar a base por família/ocorrência antes de compilar; copas, toldos, tecidos e louça não recebem bloqueio pelo retângulo da imagem. Usar o gerador canônico e manter reservado o tile transparente da máscara. Preservar o ponto lógico da identificação quando ajustar a projeção visual da placa.
 
+**Correção de26/11 — Rihad:** conferir a união dos pixels da bacia/pedestal contra a base física, separadamente da margem transparente e do ponto lógico. Se a âncora projetar a base entre tiles, registrar deslocamento visual comum à família e testar todas as aproximações, incluindo clique. Oclusão usa profundidade do apoio: personagem ao norte atrás, ao sul à frente; não prioridade fixa acima para compensar colisão. [Fonte e evidências](plugins/Arena_RihadDecor.md#fonte-e-seções-de-entrada--26112026).
+
 O ponto de apoio nativo de um evento `(x,y)` é `((x+0,5)×48,(y+1)×48)`. Prefixo `!` evita deslocamento adicional6px; `$` identifica folha única3colunas×4direções. Recortar uma fonte uma única vez é permitido; recortar/recentralizar cada quadro de animação de forma independente é proibido. Preservar os masters e a transformação técnica.
 
 ## Categorias e camadas
@@ -45,6 +47,8 @@ O ponto de apoio nativo de um evento `(x,y)` é `((x+0,5)×48,(y+1)×48)`. Prefi
 | Porta lateral leste/oeste | mesmo canvas; componente realmente visto de cima, borda8px×136px; dobradiças locais(72,4)/(72,140) |136px é **profundidade do vão na planta**, não altura de parede. Não desenhar uma face96px inclinada para simular isometria |
 
 Os encaixes devem usar geometria do mapa como moldura. Componentes de porta não incluem jambas de pedra, piso ou teto. A animação pode projetar/rotacionar a folha em torno de dobradiça fixa; não transladar evento ou redimensionar o conjunto. Norte/sul usam componentes de frente/verso; leste/oeste usam componentes próprios superiores, nunca a imagem frontal girada. Diagonal momentânea de folha durante giro no plano não altera a projeção ortogonal do cenário.
+
+**Entradas urbanas ocultas pela projeção:** inspecionar teto, face, vão, moldura, folha e soleira como conjunto, com legendas de proximidade ocultas. Folha sobre cap plano ou faixa isolada não identifica arquitetura suficiente. Em Rihad, fachadas norte/laterais usam corte local explícito, duas fileiras de face e recuo/soleira orientados ao acesso. A montagem recorta-se às células sólidas existentes; não cria passagem, serviço ou piso. Preservar coordenada lógica/lado acessível; o corte é convenção gráfica do projeto, não nova evidência da planta original. Validar primeiro frente/leste/oeste e então a montagem equivalente. Não aplicar essa exceção a portas animadas de dungeon nem girar quadros para simular outra orientação. [Compilador e limites](plugins/Arena_RihadDecor.md#fonte-e-seções-de-entrada--26112026).
 
 Objetos de piso só em regiões de piso/plataforma autorizadas. Uma célula sólida não é, sozinha, uma face de parede válida. O compilador deve comprovar que a extensão da decoração coincide com as duas fileiras de face desenhadas e que há área aberta abaixo. Se a projeção original exigir adaptação, registrar posição lógica original, face visual escolhida, distância e motivo. Resolver por uma regra de busca/atribuição única e sem sobreposição, não por remendos locais. Se não houver face válida dentro do limite, falhar a compilação e registrar a lacuna.
 

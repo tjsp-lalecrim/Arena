@@ -1,5 +1,9 @@
 # M02-03A — primeira chegada a Rihad
 
+## Fonte e leitura arquitetônica —26/11/2026
+
+[Diagnóstico dos prints, regras, comparações e locais exatos](plugins/Arena_RihadDecor.md#fonte-e-seções-de-entrada--26112026). Responsável confirmou que os defeitos persistiam na prévia anterior; sem aprovação presumida da nova correção. Bases das25fontes corrigidas, total vigente284células de base nos210objetos;380entradas recebem montagem arquitetônica por orientação sem modificar a planta ou destinos. Teclado/clique, quatro aproximações e retomada isolada conferidos; avaliação visual pendente. Contagens abaixo registram a revisão de25/11 e não substituem o contrato vigente.
+
 ## Bases decorativas e placas — 25/11/2026
 
 [Auditoria, regras, capturas antes/depois e acesso](plugins/Arena_RihadDecor.md). Cadastro único passa a compilar209células de base em210objetos da cidade/pousada/corte, com176novas células bloqueadas. Altura visual não amplia automaticamente a colisão. Seis placas de símbolos recebem montagem alta por orientação, preservando identificação/approach; nenhum asset regenerado. Respostas curtas consideradas melhores pelo responsável, sem atribuir nova aprovação visual das placas. Verificações focais e retomada de saves sintéticos registradas; avaliação manual da correção pendente.

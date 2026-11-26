@@ -1,0 +1,715 @@
+{
+  "baseline": "d6011c3",
+  "browser": "158.0.8127.37",
+  "paths": {
+    "reachable": 69789,
+    "blockedDoors": []
+  },
+  "contacts": [
+    {
+      "side": "norte",
+      "keyboardBlocked": true,
+      "pointerBlocked": true
+    },
+    {
+      "side": "leste",
+      "keyboardBlocked": true,
+      "pointerBlocked": true
+    },
+    {
+      "side": "sul",
+      "keyboardBlocked": true,
+      "pointerBlocked": true
+    },
+    {
+      "side": "oeste",
+      "keyboardBlocked": true,
+      "pointerBlocked": true
+    }
+  ],
+  "fountainAudit": [
+    {
+      "id": "rihad.prop.mif42.2",
+      "eventId": 1001,
+      "cells": [
+        [
+          258,
+          8
+        ],
+        [
+          259,
+          8
+        ],
+        [
+          258,
+          9
+        ],
+        [
+          259,
+          9
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -7680
+    },
+    {
+      "id": "rihad.prop.mif60.2",
+      "eventId": 1002,
+      "cells": [
+        [
+          204,
+          8
+        ],
+        [
+          205,
+          8
+        ],
+        [
+          204,
+          9
+        ],
+        [
+          205,
+          9
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -7680
+    },
+    {
+      "id": "rihad.prop.mif1.4",
+      "eventId": 1004,
+      "cells": [
+        [
+          381,
+          14
+        ],
+        [
+          382,
+          14
+        ],
+        [
+          381,
+          15
+        ],
+        [
+          382,
+          15
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -7392
+    },
+    {
+      "id": "rihad.prop.mif99.11",
+      "eventId": 1016,
+      "cells": [
+        [
+          87,
+          35
+        ],
+        [
+          88,
+          35
+        ],
+        [
+          87,
+          36
+        ],
+        [
+          88,
+          36
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -6384
+    },
+    {
+      "id": "rihad.prop.mif124.11",
+      "eventId": 1017,
+      "cells": [
+        [
+          12,
+          35
+        ],
+        [
+          13,
+          35
+        ],
+        [
+          12,
+          36
+        ],
+        [
+          13,
+          36
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -6384
+    },
+    {
+      "id": "rihad.prop.mif111.12",
+      "eventId": 1020,
+      "cells": [
+        [
+          51,
+          38
+        ],
+        [
+          52,
+          38
+        ],
+        [
+          51,
+          39
+        ],
+        [
+          52,
+          39
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -6240
+    },
+    {
+      "id": "rihad.prop.mif50.14",
+      "eventId": 1024,
+      "cells": [
+        [
+          234,
+          44
+        ],
+        [
+          235,
+          44
+        ],
+        [
+          234,
+          45
+        ],
+        [
+          235,
+          45
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -5952
+    },
+    {
+      "id": "rihad.prop.mif124.19",
+      "eventId": 1031,
+      "cells": [
+        [
+          12,
+          59
+        ],
+        [
+          13,
+          59
+        ],
+        [
+          12,
+          60
+        ],
+        [
+          13,
+          60
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -5232
+    },
+    {
+      "id": "rihad.prop.mif57.27",
+      "eventId": 1038,
+      "cells": [
+        [
+          213,
+          83
+        ],
+        [
+          214,
+          83
+        ],
+        [
+          213,
+          84
+        ],
+        [
+          214,
+          84
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -4080
+    },
+    {
+      "id": "rihad.prop.mif97.32",
+      "eventId": 1043,
+      "cells": [
+        [
+          93,
+          98
+        ],
+        [
+          94,
+          98
+        ],
+        [
+          93,
+          99
+        ],
+        [
+          94,
+          99
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -3360
+    },
+    {
+      "id": "rihad.prop.mif26.35",
+      "eventId": 1044,
+      "cells": [
+        [
+          306,
+          107
+        ],
+        [
+          307,
+          107
+        ],
+        [
+          306,
+          108
+        ],
+        [
+          307,
+          108
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -2928
+    },
+    {
+      "id": "rihad.prop.mif2.47",
+      "eventId": 1055,
+      "cells": [
+        [
+          378,
+          143
+        ],
+        [
+          379,
+          143
+        ],
+        [
+          378,
+          144
+        ],
+        [
+          379,
+          144
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -1200
+    },
+    {
+      "id": "rihad.prop.mif95.51",
+      "eventId": 1061,
+      "cells": [
+        [
+          99,
+          155
+        ],
+        [
+          100,
+          155
+        ],
+        [
+          99,
+          156
+        ],
+        [
+          100,
+          156
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": -624
+    },
+    {
+      "id": "rihad.prop.mif11.58",
+      "eventId": 1066,
+      "cells": [
+        [
+          351,
+          176
+        ],
+        [
+          352,
+          176
+        ],
+        [
+          351,
+          177
+        ],
+        [
+          352,
+          177
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 384
+    },
+    {
+      "id": "rihad.prop.mif2.59",
+      "eventId": 1068,
+      "cells": [
+        [
+          378,
+          179
+        ],
+        [
+          379,
+          179
+        ],
+        [
+          378,
+          180
+        ],
+        [
+          379,
+          180
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 528
+    },
+    {
+      "id": "rihad.prop.mif124.59",
+      "eventId": 1069,
+      "cells": [
+        [
+          12,
+          179
+        ],
+        [
+          13,
+          179
+        ],
+        [
+          12,
+          180
+        ],
+        [
+          13,
+          180
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 528
+    },
+    {
+      "id": "rihad.prop.mif124.67",
+      "eventId": 1073,
+      "cells": [
+        [
+          12,
+          203
+        ],
+        [
+          13,
+          203
+        ],
+        [
+          12,
+          204
+        ],
+        [
+          13,
+          204
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 1680
+    },
+    {
+      "id": "rihad.prop.mif51.70",
+      "eventId": 1076,
+      "cells": [
+        [
+          231,
+          212
+        ],
+        [
+          232,
+          212
+        ],
+        [
+          231,
+          213
+        ],
+        [
+          232,
+          213
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 2112
+    },
+    {
+      "id": "rihad.prop.mif123.89",
+      "eventId": 1086,
+      "cells": [
+        [
+          15,
+          269
+        ],
+        [
+          16,
+          269
+        ],
+        [
+          15,
+          270
+        ],
+        [
+          16,
+          270
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 4848
+    },
+    {
+      "id": "rihad.prop.mif73.93",
+      "eventId": 1091,
+      "cells": [
+        [
+          165,
+          281
+        ],
+        [
+          166,
+          281
+        ],
+        [
+          165,
+          282
+        ],
+        [
+          166,
+          282
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 5424
+    },
+    {
+      "id": "rihad.prop.mif54.107",
+      "eventId": 1099,
+      "cells": [
+        [
+          222,
+          323
+        ],
+        [
+          223,
+          323
+        ],
+        [
+          222,
+          324
+        ],
+        [
+          223,
+          324
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 7440
+    },
+    {
+      "id": "rihad.prop.mif8.109",
+      "eventId": 1102,
+      "cells": [
+        [
+          360,
+          329
+        ],
+        [
+          361,
+          329
+        ],
+        [
+          360,
+          330
+        ],
+        [
+          361,
+          330
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 7728
+    },
+    {
+      "id": "rihad.prop.mif109.109",
+      "eventId": 1103,
+      "cells": [
+        [
+          57,
+          329
+        ],
+        [
+          58,
+          329
+        ],
+        [
+          57,
+          330
+        ],
+        [
+          58,
+          330
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 7728
+    },
+    {
+      "id": "rihad.prop.mif2.116",
+      "eventId": 1109,
+      "cells": [
+        [
+          378,
+          350
+        ],
+        [
+          379,
+          350
+        ],
+        [
+          378,
+          351
+        ],
+        [
+          379,
+          351
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 8736
+    },
+    {
+      "id": "rihad.prop.mif19.124",
+      "eventId": 1114,
+      "cells": [
+        [
+          327,
+          374
+        ],
+        [
+          328,
+          374
+        ],
+        [
+          327,
+          375
+        ],
+        [
+          328,
+          375
+        ]
+      ],
+      "pixels": 2795,
+      "offsetX": 24,
+      "z": 3,
+      "sortY": 9888
+    }
+  ],
+  "depth": [
+    {
+      "side": "north",
+      "player": 465,
+      "fountain": 468
+    },
+    {
+      "side": "south",
+      "player": 470,
+      "fountain": 467
+    }
+  ],
+  "sections": {
+    "count": 380,
+    "orientations": {
+      "2": 118,
+      "4": 88,
+      "6": 91,
+      "8": 83
+    },
+    "empty": 0,
+    "labelsVisible": false
+  },
+  "checks": [
+    "25 original fountain event IDs/images retained; shared2x2 footprint contains every opaque body pixel at the explicit+24px visual anchor.",
+    "Reported fountain351,177: four keyboard/pointer approaches blocked; native renderer sorts player behind to north and in front to south.",
+    "Three synthetic old positions inside newly solid fountain cells relocate to reachable floor; resources/actor/party/quest/receipts unchanged; safe save untouched.",
+    "380 entry sections linked to unchanged logical doors/approaches; all approaches reachable; sections clipped to existing solids; no collision or region changes except fountain bases.",
+    "Front/east/west/north captures at real game scale without proximity captions; closed-house interactions unchanged; inn/court Enter and pointer transfers/returns and bed/queen approaches verified.",
+    "Two canonical rebuilds stable; other maps, items, encounters, quest and travel configs unchanged."
+  ],
+  "errors": [],
+  "limits": "Fresh isolated Chrome, RAM fixture extracted as a synthetic normal session; slot19 only in this fresh context. Native movement along routes accelerated between focal points; contacts use real keyboard/mouse. No personal saves or full campaign replay. Owner visual approval remains pending."
+}
