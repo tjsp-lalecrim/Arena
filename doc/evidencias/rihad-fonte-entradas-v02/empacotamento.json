@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "3070ee2c078d1515c2b8c4e1202b02a8fbc24063",
+  "failedRun": "https://github.com/tjsp-lalecrim/Arena/actions/runs/45901358432",
+  "previousManifest": "bfcc3c1460f8feb0a03ab2a12fd7d393decb5c8606e2a05fde6c73e668eebb3f",
+  "manifest": "46504b183c9bc437179378ea7a3be4d8b64ee70900c580e9277b69542ad608fc",
+  "previousRecipe": "c976ac7de3efc645ffafb34f48c6c76fb63c37ba5888b04c8fc798786b1941f1",
+  "recipe": "99d9f2cac64efaa3f8865c97867aa99d4ed4c2e9957135106a0a5a43cf238206",
+  "runtimeFiles": 443,
+  "checks": [
+    "All443 runtime file paths, sizes and checksums identical; namespace, source and player debug profile unchanged.",
+    "Only recipeSha256 differed: initial command used Windows tooling recipe; CI source recipe is LF.",
+    "Rebuilt with source checkout own tools/build-web-package.cjs and recipe, without modifying the source or normalizing runtime files."
+  ],
+  "approval": "Exact LF manifest registered; all checksum validation retained; failed run did not deploy."
+}
