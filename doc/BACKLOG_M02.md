@@ -1,6 +1,6 @@
 # Estado operacional do M02 — cobertura completa
 
-**Protótipo arquitetônico26/11:** responsável considera incompatível a perspectiva das portas mesmo após3070ee2. [Quatro faces, cantos, exterior e cópia de duas fachadas no hub RAM](plugins/Arena_ArchitectureLab.md), só na feature; aguardar avaliação antes de adotar nas380entradas. Campanha/main/Pages preservadas. Colisão da fonte ainda sem confirmação específica; não confundir com o feedback das portas.
+**Protótipo arquitetônico26/11:** perspectiva das paredes/portas dea7661e9 **explicitamente aprovada** pelo responsável. [Correção do piso/recorte dos vãos](plugins/Arena_ArchitectureLab.md#correção-do-vão--26112026) na mesma feature, com avaliação própria pendente antes de ampliar às380entradas. Aprovação da perspectiva não é aceite desta correção. Campanha/main/Pages preservadas; colisão da fonte sem confirmação específica.
 
 **Fonte/entradas26/11:** responsável confirmou persistência dos defeitos na prévia anterior. [Correção de base/âncora das25fontes e leitura das380entradas](plugins/Arena_RihadDecor.md#fonte-e-seções-de-entrada--26112026), com seções arquitetônicas nos lados ocultos, sem novos assets/planta ou mudanças de quest. Verificações focais de quatro aproximações, retomada de saves e acessos funcionais passaram; avaliação manual dos ajustes pendente. A cobertura do teste anterior era insuficiente para o envelope da fonte e a fachada sem legenda.
 

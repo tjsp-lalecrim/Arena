@@ -2,7 +2,7 @@
 
 ## Experimento de quatro faces — avaliação pendente
 
-O responsável considera que3070ee2 ainda não resolveu a perspectiva das entradas. [Protótipo RAM com a construção espacial dos prints de Zelda](plugins/Arena_ArchitectureLab.md), sem copiar seus materiais/paleta ou alterar a campanha. Parede/porta no mesmo plano; avaliar cobertura1/face2, cantos e compartilhamento2+1+2 antes de adotar regra. Não substitui automaticamente os contratos atuais nem autoriza mudar a planta/380entradas. A colisão da fonte permanece pendente de confirmação específica.
+O responsável **aprovou a perspectiva de paredes/portas do protótipoa7661e9**, inspirado na construção espacial dos prints de Zelda, sem copiar seus materiais/paleta. [Correção do vão em avaliação própria](plugins/Arena_ArchitectureLab.md#correção-do-vão--26112026): recortar a abertura projetada, não apenas a célula física; revelar piso plano explícito, com fase contínua, sem resíduos de face/teto. Manter apoios e âncoras aprovados. Cobertura1/face2 e compartilhamento2+1+2 não autorizam mudar a planta ou aplicar às380entradas antes do feedback da correção. Campanha preservada; colisão da fonte pendente de confirmação específica.
 
 ## Cobertura completa e amostras
 

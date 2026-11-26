@@ -1,6 +1,6 @@
 # Rihad — arquitetura em quatro orientações (protótipo)
 
-**Estado:** avaliação visual pendente, somente na feature. Base main350d607, incluindo a fonte publicada3070ee2. O responsável considera que as montagens anteriores não atingiram a perspectiva esperada. **A colisão da fonte continua pendente de confirmação específica**; não foi alterada neste protótipo.
+**Estado:** o responsável **aprovou explicitamente a perspectiva das paredes e portas do protótipoa7661e9**. A correção do recorte/piso dos vãos abaixo aguarda avaliação própria, sem ampliar a aplicação à campanha. Base main350d607, incluindo a fonte publicada3070ee2. **A colisão da fonte continua pendente de confirmação específica**; não foi alterada nesta entrega.
 
 ## Método e referências
 
@@ -25,7 +25,7 @@ Correspondência: **Map009(307,21)→cópia(18,11)**, face leste; **Map009(323,2
 
 Roteiro: abrir e atravessar a porta norte; retornar. Pelo menu repetir sul, leste e oeste; observar ambos os lados da parede compartilhada. Visitar o edifício exterior e seu canto. Nas duas fachadas copiadas, clicar na folha, atravessar e voltar. Guardar RAM, mudar de ponto e carregar. Sair para o título. Saves/backup normais continuam bloqueados pelo laboratório existente; não usar slots pessoais.
 
-## Capturas e evidências
+## Capturas e evidências V01 — referência da perspectiva aprovada
 
 Sem legendas de proximidade, apenas cabeçalho técnico. Tiles48px; a visão geral usa canvas maior **somente na captura**, sem reduzir a escala ou modificar a resolução da campanha.
 
@@ -39,7 +39,26 @@ Sem legendas de proximidade, apenas cabeçalho técnico. Tiles48px; a visão ger
 |Fachada urbana oeste|[atual](../evidencias/architecture-lab-v01/antes-oeste.png) · [protótipo](../evidencias/architecture-lab-v01/copia-oeste-fechada.png)|
 |Contexto|[exterior](../evidencias/architecture-lab-v01/exterior-edificio.png) · [canto interno](../evidencias/architecture-lab-v01/canto-interno.png) · [canto externo](../evidencias/architecture-lab-v01/canto-externo.png) · [geral48px](../evidencias/architecture-lab-v01/visao-geral-48px.png)|
 
-[Vídeo em velocidade normal](../evidencias/architecture-lab-v01/travessia-quatro-direcoes.webm). [Teste focal](../../tools/test-architecture-lab.cjs), [resultado](../evidencias/architecture-lab-v01/resultado.json): hub real; colisão fechada, quatro travessias/reversos; fechamento protegido; cliques nas cópias; restauraçãoRAM; bloqueio de slots e retorno. Chrome/fixtures isolados, sem alteração de localStorage pessoal. Não é aprovação artística do responsável.
+[Vídeo original em velocidade normal](../evidencias/architecture-lab-v01/travessia-quatro-direcoes.webm). [Teste focal](../../tools/test-architecture-lab.cjs), [resultado V01](../evidencias/architecture-lab-v01/resultado.json): hub real; colisão fechada, quatro travessias/reversos; fechamento protegido; cliques nas cópias; restauraçãoRAM; bloqueio de slots e retorno. Chrome/fixtures isolados, sem alteração de localStorage pessoal. Registro técnico anterior ao feedback; a aprovação posterior da perspectiva não aprova o recorte defeituoso visível nesse vídeo.
+
+## Correção do vão — 26/11/2026
+
+Referência: `doc/prints/rihad-prototipo-parede-no-vao-79c09ed3.png`, cerca de14s do vídeo V01, entrada oeste do Map019. **Duas causas verificadas**, sem atribuir a cache: o gerador preenchia o vão com os tiles260–263 (`walk`, pavimento preto com juntas largas); camadas1–3 estavam vazias, sem tile residual. Além disso, o compositor apagava apenas o retângulo físico, embora a abertura projetada fosse trapezoidal, deixando resíduos de parede nas bordas. [Inspeção anterior](../evidencias/architecture-aperture-v02/antes-camadas.json) registrou16amostras opacas de parede nas81amostras internas dos nove planos.
+
+O gerador agora usa a família existente **threshold268–271**, uma soleira/laje clara, com um tile de continuação em cada piso conectado. Sem nova arte. A camada de piso do compositor repete essa textura em coordenadas do mundo, sem girar/deformar o piso, e o recorte segue exatamente o quadrilátero do batente antes de recompor folha, jambas e lintel. A soleira projetada usa o mesmo material. Perspectiva, dimensões dos planos, batentes, posição da folha/dobradiça e colisores/eventos permanecem inalterados.
+
+|Orientação|Antes, durante a passagem|Depois, mesmo enquadramento|Estados corrigidos|
+|---|---|---|---|
+|Norte|[antes](../evidencias/architecture-aperture-v02/antes-n-travessia.png)|[depois](../evidencias/architecture-aperture-v02/depois-n-travessia.png)|[fechada](../evidencias/architecture-aperture-v02/interior-norte-fechada.png) · [aberta](../evidencias/architecture-aperture-v02/interior-norte-aberta.png)|
+|Sul|[antes](../evidencias/architecture-aperture-v02/antes-s-travessia.png)|[depois](../evidencias/architecture-aperture-v02/depois-s-travessia.png)|[fechada](../evidencias/architecture-aperture-v02/interior-sul-fechada.png) · [aberta](../evidencias/architecture-aperture-v02/interior-sul-aberta.png)|
+|Leste|[antes](../evidencias/architecture-aperture-v02/antes-e-travessia.png)|[depois](../evidencias/architecture-aperture-v02/depois-e-travessia.png)|[fechada](../evidencias/architecture-aperture-v02/interior-leste-fechada.png) · [aberta](../evidencias/architecture-aperture-v02/interior-leste-aberta.png)|
+|Oeste|[antes](../evidencias/architecture-aperture-v02/antes-w-travessia.png)|[depois](../evidencias/architecture-aperture-v02/depois-w-travessia.png)|[fechada](../evidencias/architecture-aperture-v02/interior-oeste-fechada.png) · [aberta](../evidencias/architecture-aperture-v02/interior-oeste-aberta.png)|
+
+[Novo vídeo17s, escala816×624 e velocidade normal](../evidencias/architecture-aperture-v02/travessia-quatro-direcoes.webm). As comparações alinham tecnicamente câmera/posição; os deslocamentos do vídeo/testes usam movimento nativo e entrada real, sem aceleração. Não há legendas de proximidade.
+
+[Regressão das camadas](../../tools/check-architecture-aperture.cjs), [inspeção corrigida](../evidencias/architecture-aperture-v02/depois-camadas.json): zero resíduo de parede/teto nas81amostras; piso opaco comRGBA idêntico ao atlas na fase mundial esperada. Compara geometria aprovada, âncoras da folha/dobradiças, eventos e todas as camadas físicas contraa7661e9. [Resultado dos controles](../evidencias/architecture-aperture-v02/resultado.json): fechado/aberto/travessia nas4orientações, retorno, interação por teclado/clique, sobreposição, proteção de fechamento e checkpointRAM. Cópias/exterior usam a mesma correção; duas reconstruções estáveis, mapas1–18/configurações/recursos preservados. Sem saves pessoais.
+
+Repetir: mesmo hub e pontos existentes; abrir/travessar/retornar em N/S/E/W, observar o piso claro contínuo e os apoios fixos. **Perspectiva aprovada; esta correção ainda pendente de feedback.** Sem aplicação às380entradas, merge, Pages ou release.
 
 ## Impacto e aplicação gradual
 

@@ -14,10 +14,19 @@ function floor(m,x,y,solid=false){const n=m.width*m.height,i=y*m.width+x;m.data[
 function fill(m,rect,solid){for(let y=rect[1];y<rect[3];y++)for(let x=rect[0];x<rect[2];x++)floor(m,x,y,solid);}
 function door(m,id,rect,axis,width,segments){
  fill(m,rect,false);const cx=Math.floor((rect[0]+rect[2])/2),cy=Math.floor((rect[1]+rect[3])/2),events=[];
+ // Existing flat threshold family, NOT the dark walk paving. Extend one tile
+ // into each connected floor, without changing regions, masks or colliders.
+ const floorRect=rect.slice();if(axis==='x'){floorRect[0]--;floorRect[2]++;}else{floorRect[1]--;floorRect[3]++;}
+ const first=256+Object.keys(read('doc/arte/m02-tilesets/rihad.json').floors).indexOf('threshold')*4;
+ if(first!==268)throw Error('Architecture threshold family changed; review source atlas');
+ for(let y=floorRect[1];y<floorRect[3];y++)for(let x=floorRect[0];x<floorRect[2];x++){
+  const i=y*m.width+x;if(m.data[5*m.width*m.height+i]!==4)throw Error('Threshold apron outside connected floor '+id);
+  m.data[i]=first+(x&1)+(y&1)*2;
+ }
  for(let y=rect[1];y<rect[3];y++)for(let x=rect[0];x<rect[2];x++){const eventId=m.events.length;events.push(eventId);
   m.events.push({id:eventId,name:'Architecture door / '+id,note:'ArchitectureLab:'+id,x,y,pages:[{conditions:{actorId:1,actorValid:false,itemId:1,itemValid:false,selfSwitchCh:'A',selfSwitchValid:false,switch1Id:1,switch1Valid:false,switch2Id:1,switch2Valid:false,variableId:1,variableValid:false,variableValue:0},directionFix:true,image:{characterIndex:0,characterName:'',direction:2,pattern:1,tileId:0},list:[{code:355,indent:0,parameters:['ArenaArchitectureLab.toggle('+JSON.stringify(id)+');']},{code:0,indent:0,parameters:[]}],moveFrequency:3,moveRoute:{list:[{code:0,parameters:[]}],repeat:true,skippable:false,wait:false},moveSpeed:3,moveType:0,priorityType:1,stepAnime:false,through:false,trigger:0,walkAnime:false}]});
  }
- return{id,rect,axis,width,events,segments};
+ return{id,rect,axis,width,events,segments,floorRect};
 }
 const m=fresh(19,49,49);for(let y=0;y<m.height;y++)for(let x=0;x<m.width;x++)floor(m,x,y,x<1||y<1||x>=48||y>=48);
 const rooms=[{id:'main',rect:[7,7,23,21]},{id:'annex',rect:[28,7,40,21]}];
@@ -40,5 +49,5 @@ fill(c,[13,9,16,14],false);fill(c,[37,9,40,14],false);
 const copyDoors=[door(c,'copy.eastFace',[16,11,19,12],'x',1,[{surface:'copy.west',side:'E',center:11.5}]),door(c,'copy.westFace',[34,11,37,12],'x',1,[{surface:'copy.east',side:'W',center:11.5}])];
 c.arenaArchitecture={rooms:[],buildings,doors:copyDoors,source:{mapId:9,crop,logicalDoors:[[307,21],[323,21]],adaptation:'Technical floor pockets/operable leaves only in copied solids; original streets, events and campaign remain untouched.'}};write('data/Map020.json',c);
 for(const[id,name]of[[19,'Arquitetura — quatro orientações (RAM)'],[20,'Rihad — cópia de fachadas (RAM)']]){infos[id]={id,name,order:id,parentId:0,expanded:true,scrollX:0,scrollY:0};}fs.writeFileSync(path.join(R,'data/MapInfos.json'),'[\n'+infos.map(v=>JSON.stringify(v)).join(',\n')+'\n]\n');
-write('data/ArenaArchitectureLab.json',{version:1,mapIds:[19,20],entry:{id:'technical.architecture.arrival',mapId:19,x:15,y:8,direction:8},materials:{wallAtlas:'Arena_Rihad_Exterior_V01_C',upper:275,lower:278,cap:272,floor:260,door:'!$Arena_Doors_M14_R03',urbanAtlas:'Arena_Rihad_Lateral_Exterior_V01_D'},points:[{name:'Interior · norte',mapId:19,x:15,y:8,direction:8},{name:'Interior · sul',mapId:19,x:15,y:19,direction:2},{name:'Interior · leste / parede compartilhada',mapId:19,x:21,y:14,direction:6},{name:'Interior · oeste',mapId:19,x:8,y:14,direction:4},{name:'Exterior · edifício',mapId:19,x:18,y:46,direction:8},{name:'Rihad · fachada leste original(307,21)',mapId:20,x:20,y:11,direction:4},{name:'Rihad · fachada oeste original(323,21)',mapId:20,x:33,y:11,direction:6}]});
+write('data/ArenaArchitectureLab.json',{version:1,mapIds:[19,20],entry:{id:'technical.architecture.arrival',mapId:19,x:15,y:8,direction:8},materials:{wallAtlas:'Arena_Rihad_Exterior_V01_C',upper:275,lower:278,cap:272,floor:260,threshold:268,door:'!$Arena_Doors_M14_R03',urbanAtlas:'Arena_Rihad_Lateral_Exterior_V01_D'},points:[{name:'Interior · norte',mapId:19,x:15,y:8,direction:8},{name:'Interior · sul',mapId:19,x:15,y:19,direction:2},{name:'Interior · leste / parede compartilhada',mapId:19,x:21,y:14,direction:6},{name:'Interior · oeste',mapId:19,x:8,y:14,direction:4},{name:'Exterior · edifício',mapId:19,x:18,y:46,direction:8},{name:'Rihad · fachada leste original(307,21)',mapId:20,x:20,y:11,direction:4},{name:'Rihad · fachada oeste original(323,21)',mapId:20,x:33,y:11,direction:6}]});
 console.log('Only Map019/020, technical configuration, MapInfos19/20 and isolated Tileset12 generated.');

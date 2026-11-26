@@ -54,5 +54,24 @@
     "City crop map9 [289,10,348,33]; source307,21 ->copy18,11 and323,21 ->copy34,11. Only copied technical pockets/operable leaves are new; campaign untouched.",
     "Instant closed/open geometry states; hinge/folded strip fixed, not a new final swing animation."
   ],
-  "status": "Prototype awaiting owner visual assessment; no adoption for380entries. Fountain collision still awaits specific owner confirmation."
+  "status": "Perspective approved for a7661e9; aperture correction pending; no campaign adoption. Fountain remains pending.",
+  "ownerApprovals": {
+    "perspective": {
+      "commit": "a7661e9",
+      "status": "Explicitly approved by owner"
+    },
+    "apertureCorrection": "Pending feedback",
+    "fountainCollision": "Pending specific confirmation"
+  },
+  "thresholdCorrection": {
+    "atlas": "Arena_Rihad_Exterior_V01_C",
+    "tiles": [
+      268,
+      269,
+      270,
+      271
+    ],
+    "sourceFamily": "threshold",
+    "method": "Native world-aligned floor with one-tile aprons; geometric aperture clipping before restoring fixed frame/leaf. No new art, geometry/anchors unchanged."
+  }
 }

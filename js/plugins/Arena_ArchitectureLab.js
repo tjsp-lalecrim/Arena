@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.1.0 Protótipo RAM: paredes/entradas em quatro projeções locais.
+ * @plugindesc v0.1.1 Protótipo RAM: recorte projetado e piso contínuo dos vãos.
  * @author Codex
  * @help Após DebugHub/Continuation. Somente Map019/020 com sessão RAM ativa.
  * Texturas existentes em planos geométricos; nenhuma pintura/asset de Zelda.
@@ -9,7 +9,7 @@ var ArenaArchitectureLab;
 (function(){'use strict';
  DataManager._databaseFiles.push({name:'$arenaArchitectureLab',src:'ArenaArchitectureLab.json'});
  var database=DataManager.isDatabaseLoaded;DataManager.isDatabaseLoaded=function(){if(!database.apply(this,arguments))return false;
-  var c=$arenaArchitectureLab;if(!c||c.version!==1||c.mapIds.join(',')!=='19,20'||!$dataMapInfos[19]||!$dataMapInfos[20]||!$dataTilesets[12]||!c.materials||c.entry.mapId!==19)throw Error('Arquitetura RAM: configuração/mapas técnicos inválidos.');return true;
+  var c=$arenaArchitectureLab;if(!c||c.version!==1||c.mapIds.join(',')!=='19,20'||!$dataMapInfos[19]||!$dataMapInfos[20]||!$dataTilesets[12]||!c.materials||c.materials.threshold!==268||c.entry.mapId!==19)throw Error('Arquitetura RAM: configuração/mapas técnicos inválidos.');return true;
  };
  function here(){return window.$gameMap&&window.$arenaArchitectureLab&&ArenaContinuation.labActive()&&$arenaArchitectureLab.mapIds.indexOf($gameMap.mapId())>=0;}
  function state(){return $gameSystem._arenaArchitectureDoors||($gameSystem._arenaArchitectureDoors={});}
@@ -49,17 +49,18 @@ var ArenaArchitectureLab;
  function Layer(z){Sprite.call(this);this.z=z;this.bitmap=new Bitmap($dataMap.width*48,$dataMap.height*48);}
  Layer.prototype=Object.create(Sprite.prototype);Layer.prototype.constructor=Layer;
  Layer.prototype.update=function(){Sprite.prototype.update.call(this);this.x=-$gameMap.displayX()*48;this.y=-$gameMap.displayY()*48;};
- function Builder(tilemap){this.map=$dataMap;this.wall=new Layer(1);this.beam=new Layer(4);this.roofs=[];this.key=null;
-  tilemap.addChild(this.wall);tilemap.addChild(this.beam);var self=this;
+ function Builder(tilemap){this.map=$dataMap;this.floor=new Layer(0.5);this.wall=new Layer(1);this.beam=new Layer(4);this.roofs=[];this.key=null;
+  tilemap.addChild(this.floor);tilemap.addChild(this.wall);tilemap.addChild(this.beam);var self=this;
   spec().buildings.forEach(function(b){var roof=new Layer(4);roof._building=b;self.roofs.push(roof);tilemap.addChild(roof);});
   var m=$arenaArchitectureLab.materials;this.atlas=ImageManager.loadTileset(m.wallAtlas);this.door=ImageManager.loadCharacter(m.door);this.urban=ImageManager.loadTileset(m.urbanAtlas);
  }
  Builder.prototype.update=function(){var key=JSON.stringify(state());if(this.key!==key&&this.atlas.isReady()&&this.door.isReady()&&this.urban.isReady()){this.paint();this.key=key;}
   this.roofs.forEach(function(s){var r=s._building.rect,inside=$gamePlayer.x>=r[0]&&$gamePlayer.x<r[2]&&$gamePlayer.y>=r[1]&&$gamePlayer.y<r[3];s.alpha=inside?0.16:1;});
  };
- Builder.prototype.destroy=function(){[this.wall,this.beam].concat(this.roofs).forEach(function(s){dispose(s.bitmap);});};
- Builder.prototype.paint=function(){var self=this,m=$arenaArchitectureLab.materials,wall=this.wall.bitmap,beams=this.beam.bitmap;wall.clear();beams.clear();this.roofs.forEach(function(s){s.bitmap.clear();});
-  var texture=new Bitmap(48,96),cap=new Bitmap(48,48);tile(texture,this.atlas,m.upper,0,0);tile(texture,this.atlas,m.lower,0,48);tile(cap,this.atlas,m.cap,0,0);
+ Builder.prototype.destroy=function(){[this.floor,this.wall,this.beam].concat(this.roofs).forEach(function(s){dispose(s.bitmap);});};
+ Builder.prototype.paint=function(){var self=this,m=$arenaArchitectureLab.materials,wall=this.wall.bitmap,beams=this.beam.bitmap,floor=this.floor.bitmap;floor.clear();wall.clear();beams.clear();this.roofs.forEach(function(s){s.bitmap.clear();});
+  var texture=new Bitmap(48,96),cap=new Bitmap(48,48),threshold=new Bitmap(96,96);tile(texture,this.atlas,m.upper,0,0);tile(texture,this.atlas,m.lower,0,48);tile(cap,this.atlas,m.cap,0,0);
+  for(var ty=0;ty<2;ty++)for(var tx=0;tx<2;tx++)tile(threshold,this.atlas,m.threshold+tx+ty*2,tx*48,ty*48);
   var surfaces={};
   function render(s,out){var r=s.rect,l=r[0],t=r[1],x=r[2],y=r[3];surfaces[s.id]={s:s,out:out,faces:{}};
    if(!out){field(wall._context,cap,[l-3,t-3,x+3,t-2]);field(wall._context,cap,[l-3,y+2,x+3,y+3]);field(wall._context,cap,[l-3,t-2,l-2,y+2]);field(wall._context,cap,[x+2,t-2,x+3,y+2]);}
@@ -75,20 +76,25 @@ var ArenaArchitectureLab;
     var center=side==='N'?(seg.center-r[0])/length:side==='S'?(r[2]-seg.center)/length:side==='E'?(seg.center-r[1])/length:(r[3]-seg.center)/length;
     // Jambs stand OUTSIDE the useful aperture, preserving48/144px at the foot.
     var hole=d.width*48,w=hole+16,half=w/48/length/2,q=sub(sf.faces[side],center-half,center+half,0,1),frame=new Bitmap(w,96);
+    // The plane is trapezoidal: clearing only d.rect left pieces of the wall
+    // under the transparent opening. Clear the EXACT unchanged frame polygon,
+    // then restore jambs/leaf. The floor beneath stays in world coordinates.
+    [wall].concat(self.roofs.map(function(s){return s.bitmap;})).forEach(function(b){var c=b._context;c.save();c.beginPath();q.forEach(function(p,i){c[i?'lineTo':'moveTo'](p[0],p[1]);});c.closePath();c.clip();c.clearRect(0,0,b.width,b.height);c.restore();});
+    var fc=floor._context;fc.save();fc.beginPath();q.forEach(function(p,i){fc[i?'lineTo':'moveTo'](p[0],p[1]);});fc.closePath();fc.clip();field(fc,threshold,[0,0,$dataMap.width,$dataMap.height]);fc.restore();
     if(!state()[d.id]&&!seg.frameOnly){frame.fillRect(8,0,hole,96,'#171615');if(d.width===1)frame.blt(self.urban,384,0,48,96,8,0);else frame.blt(self.door,0,48,144,96,8,0);}
     // Fixed stone jambs, overhead lintel and level threshold; same plane as wall.
     frame.blt(texture,0,0,8,96,0,0);frame.blt(texture,40,0,8,96,w-8,0);
-    frame.blt(texture,0,0,48,10,0,0,w,10);frame.blt(cap,0,28,48,10,0,86,w,10);
+    frame.blt(texture,0,0,48,10,0,0,w,10);frame.blt(threshold,0,28,48,10,0,86,w,10);
     if(state()[d.id]&&!seg.frameOnly){frame.blt(self.door,0,48,8,96,2,0,5,86);}
     warp(wall._context,frame,q);
     var beam=new Bitmap(w,10);beam.blt(frame,0,0,w,10,0,0);warp(beams._context,beam,sub(q,0,1,0,10/96));
     dispose(frame);dispose(beam);
    });});
-  [wall,beams].concat(this.roofs.map(function(s){return s.bitmap;})).forEach(function(b){b._setDirty();});dispose(texture);dispose(cap);
+  [floor,wall,beams].concat(this.roofs.map(function(s){return s.bitmap;})).forEach(function(b){b._setDirty();});dispose(texture);dispose(cap);dispose(threshold);
  };
  var loaded=Scene_Map.prototype.onMapLoaded;Scene_Map.prototype.onMapLoaded=function(){loaded.apply(this,arguments);sync();};
  var display=Scene_Map.prototype.createDisplayObjects;Scene_Map.prototype.createDisplayObjects=function(){display.apply(this,arguments);if(here()){
-  this._architectureBuilder=new Builder(this._spriteset._tilemap);this._architectureHUD=new Sprite(new Bitmap(Graphics.boxWidth,68));var b=this._architectureHUD.bitmap;b.fillAll('rgba(12,16,20,.90)');b.fontSize=21;b.textColor='#ead8b3';b.drawText('Arquitetura · protótipo RAM · avaliação visual pendente',14,2,b.width-28,30);b.fontSize=17;b.drawText('Enter/clique: porta · Esc: pontos / guardar RAM / título',14,34,b.width-28,26);this.addChild(this._architectureHUD);
+  this._architectureBuilder=new Builder(this._spriteset._tilemap);this._architectureHUD=new Sprite(new Bitmap(Graphics.boxWidth,68));var b=this._architectureHUD.bitmap;b.fillAll('rgba(12,16,20,.90)');b.fontSize=21;b.textColor='#ead8b3';b.drawText('Arquitetura · perspectiva aprovada · vão em avaliação',14,2,b.width-28,30);b.fontSize=17;b.drawText('Enter/clique: porta · Esc: pontos / guardar RAM / título',14,34,b.width-28,26);this.addChild(this._architectureHUD);
  }};
  var touch=Scene_Map.prototype.processMapTouch;Scene_Map.prototype.processMapTouch=function(){
   if(!here())return touch.apply(this,arguments);
