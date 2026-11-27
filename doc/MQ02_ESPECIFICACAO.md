@@ -2,7 +2,9 @@
 
 ## Roteiro integrado de MQ02 no Chrome
 
-**Exploração opcional nordeste/leste de Fang Lair:** [cobertura27/11 e percurso](FANG_CELAS_M02_06A.md#alas-nordeste-e-leste--27112026), partindo da entrada normal até a margem MIF(59,8), com retorno pela rede sul MIF(82,61). Dois tesouros e 21 encontros adicionais, sem condição nova dos enigmas/MQ02. Salvar/carregar após coleta/vitória; avaliação manual no teste integrado. Ainda não publicado no Pages.
+**Exploração opcional centro/sul de Fang Lair:** [seis encontros e roteiro](FANG_CELAS_M02_06A.md#centro-e-salas-sul-seis-encontros-finais-do-primeiro-nível--27112026). Margem MIF(75,83), corredor inferior até (63,93), ramificação até (59,87), retorno pela mesma rede. Conferir uma vitória/save/load sem recompensa repetida, no mesmo teste de nordeste/leste e dos enigmas/fragmento/Tharn.76/76encontros inventariados do primeiro nível integrados; geometria/objetos ainda não declarados completos. Avaliação manual pendente, prévia agrupada em PAGES_INFRA.
+
+**Exploração opcional nordeste/leste de Fang Lair:** [cobertura27/11 e percurso](FANG_CELAS_M02_06A.md#alas-nordeste-e-leste--27112026), partindo da entrada normal até a margem MIF(59,8), com retorno pela rede sul MIF(82,61). Dois tesouros e 21 encontros adicionais, sem condição nova dos enigmas/MQ02. Salvar/carregar após coleta/vitória; avaliação manual no teste integrado. Incluído na prévia agrupada centro/sul, conforme PAGES_INFRA.
 
 **Exploração opcional de Fang Lair:** [Fantasma, ramo oeste/sul e cinco tesouros](FANG_CELAS_M02_06A.md#ala-oestesul-e-tesouro-do-fantasma--26112026). A partir da entrada, margem MIF(9,37)/MV(273,114), poço seco até a câmara; tesouro(5,51), continuidade sul pelas margens(2,63)/(8,75)/(19,74)/(6,94). Conferir uma derrota e uma coleta após salvar/carregar e voltar à rota dos enigmas. Não é condição para obter o fragmento ou concluir MQ02; avaliação manual pendente.
 

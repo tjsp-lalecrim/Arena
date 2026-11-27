@@ -1,0 +1,100 @@
+{
+  "method": "Separate disposable RAM fixture, rendered sample at bank/inside/exit/BRACE, paired capture with actor visible versus hidden; RGB delta restricted to actor envelope. Not original DOS observation or manual art approval. Movement/normal route verified separately by main focal test.",
+  "samples": [
+    {
+      "name": "margem-75-83",
+      "p": [
+        75,
+        252
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 877
+    },
+    {
+      "name": "sob-a-estrutura",
+      "p": [
+        78,
+        279
+      ],
+      "alpha": 0.18823529411764706,
+      "state": {
+        "region": 5,
+        "roofAlpha": 0.18823529411764706,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 882
+    },
+    {
+      "name": "saida-63-93",
+      "p": [
+        111,
+        282
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 905
+    },
+    {
+      "name": "saida-59-87",
+      "p": [
+        123,
+        264
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 905
+    },
+    {
+      "name": "suporte-44-90",
+      "p": [
+        168,
+        273
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 476
+    }
+  ]
+}

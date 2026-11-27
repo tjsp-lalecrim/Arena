@@ -1,0 +1,1585 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "file": "42068779.MIF",
+    "sha256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7",
+    "level": 1,
+    "inf": "FANG1.INF",
+    "map2Present": false,
+    "installedReadback": "MAP1/FLOR rechecked against installed MIF,27/11/2026"
+  },
+  "coordinates": "MIF zero-based, X reflected in MV: (3+3*(99-X),3+3*Y). No change of existing coordinates.",
+  "evidence": {
+    "manual": "Installed Docs/Player Guide.pdf, PDF80/printed72: Pitfalls creates tunnels under walls by removing floor; Passwall removes walls. FLOR already contains the dry chasm here; no spell needs to be cast to create it.",
+    "wiki": "Local Fang Lair quest PDF3/5: mine shafts/tunnels and level map; not evidence of a door at6,49.",
+    "decode": "Consulted local OpenTESArena MapGeneration.cpp: FLOR at levelY0; MAP1 at levelY1, ordinary equal-byte records are walls, not diagonals/raised platforms. Interpretation of reverse-engineered format, not original executable observation.",
+    "brace": "FANG1.INF TRANSWALKTHRU BRACE.IMG, MAP1 0x9138 noncolliding support as confirmed in preceding delivery; no new door/lock required.",
+    "scope": "Two dry components X62–72/Y72–96 and X24–59/Y84–95, existing atlas and explicit dry chasm chains; no original DOS traversal observation."
+  },
+  "routes": [
+    {
+      "id": "fang.1.lower-trench.south.1",
+      "entryBank": [
+        75,
+        83
+      ],
+      "pit": [
+        {"original":[75,84],"map1":0,"flor":3072},
+        {"original":[75,85],"map1":6939,"flor":3072},
+        {"original":[75,86],"map1":7710,"flor":3072},
+        {"original":[75,87],"map1":7710,"flor":3072},
+        {"original":[75,88],"map1":7710,"flor":3072},
+        {"original":[75,89],"map1":7196,"flor":3072},
+        {"original":[74,89],"map1":7196,"flor":3072},
+        {"original":[74,90],"map1":7196,"flor":3072},
+        {"original":[74,91],"map1":7196,"flor":3072},
+        {"original":[74,92],"map1":7196,"flor":3072},
+        {"original":[74,93],"map1":7453,"flor":3072},
+        {"original":[74,94],"map1":6939,"flor":3072},
+        {"original":[73,94],"map1":7710,"flor":3072},
+        {"original":[72,94],"map1":7196,"flor":3072},
+        {"original":[71,94],"map1":6939,"flor":3072},
+        {"original":[70,94],"map1":7453,"flor":3072},
+        {"original":[69,94],"map1":7710,"flor":3072},
+        {"original":[68,94],"map1":7196,"flor":3072},
+        {"original":[68,95],"map1":7196,"flor":3072},
+        {"original":[68,96],"map1":6939,"flor":3072},
+        {"original":[68,97],"map1":6939,"flor":3072},
+        {"original":[68,98],"map1":7710,"flor":3072},
+        {"original":[67,98],"map1":6939,"flor":3072},
+        {"original":[66,98],"map1":7196,"flor":3072},
+        {"original":[65,98],"map1":6939,"flor":3072},
+        {"original":[64,98],"map1":7196,"flor":3072},
+        {"original":[63,98],"map1":6939,"flor":3072},
+        {"original":[62,98],"map1":7710,"flor":3072},
+        {"original":[62,97],"map1":6939,"flor":3072},
+        {"original":[62,96],"map1":0,"flor":3072},
+        {"original":[62,95],"map1":0,"flor":3072},
+        {"original":[62,94],"map1":0,"flor":3072},
+        {"original":[62,93],"map1":0,"flor":3072}
+      ],
+      "exitBank": [
+        63,
+        93
+      ]
+    },
+    {
+      "id": "fang.1.lower-trench.south.2",
+      "entryBank": [
+        75,
+        83
+      ],
+      "pit": [
+        {"original":[75,84],"map1":0,"flor":3072},
+        {"original":[75,85],"map1":6939,"flor":3072},
+        {"original":[75,86],"map1":7710,"flor":3072},
+        {"original":[75,87],"map1":7710,"flor":3072},
+        {"original":[75,88],"map1":7710,"flor":3072},
+        {"original":[75,89],"map1":7196,"flor":3072},
+        {"original":[74,89],"map1":7196,"flor":3072},
+        {"original":[74,90],"map1":7196,"flor":3072},
+        {"original":[74,91],"map1":7196,"flor":3072},
+        {"original":[74,92],"map1":7196,"flor":3072},
+        {"original":[74,93],"map1":7453,"flor":3072},
+        {"original":[74,94],"map1":6939,"flor":3072},
+        {"original":[73,94],"map1":7710,"flor":3072},
+        {"original":[72,94],"map1":7196,"flor":3072},
+        {"original":[71,94],"map1":6939,"flor":3072},
+        {"original":[70,94],"map1":7453,"flor":3072},
+        {"original":[69,94],"map1":7710,"flor":3072},
+        {"original":[68,94],"map1":7196,"flor":3072},
+        {"original":[68,95],"map1":7196,"flor":3072},
+        {"original":[68,96],"map1":6939,"flor":3072},
+        {"original":[68,97],"map1":6939,"flor":3072},
+        {"original":[68,98],"map1":7710,"flor":3072},
+        {"original":[67,98],"map1":6939,"flor":3072},
+        {"original":[66,98],"map1":7196,"flor":3072},
+        {"original":[65,98],"map1":6939,"flor":3072},
+        {"original":[64,98],"map1":7196,"flor":3072},
+        {"original":[63,98],"map1":6939,"flor":3072},
+        {"original":[62,98],"map1":7710,"flor":3072},
+        {"original":[62,97],"map1":6939,"flor":3072},
+        {"original":[62,96],"map1":0,"flor":3072},
+        {"original":[62,95],"map1":0,"flor":3072},
+        {"original":[62,94],"map1":0,"flor":3072},
+        {"original":[62,93],"map1":0,"flor":3072},
+        {"original":[62,92],"map1":6939,"flor":3072},
+        {"original":[62,91],"map1":7453,"flor":3072},
+        {"original":[62,90],"map1":6939,"flor":3072},
+        {"original":[61,90],"map1":7196,"flor":3072},
+        {"original":[60,90],"map1":7710,"flor":3072},
+        {"original":[59,90],"map1":6939,"flor":3072},
+        {"original":[59,89],"map1":7196,"flor":3072},
+        {"original":[59,88],"map1":0,"flor":3072}
+      ],
+      "exitBank": [
+        59,
+        87
+      ]
+    }
+  ],
+  "room": [
+    {"original":[70,72],"map1":32769,"flor":768},
+    {"original":[71,72],"map1":0,"flor":768},
+    {"original":[70,73],"map1":0,"flor":768},
+    {"original":[71,73],"map1":0,"flor":1024},
+    {"original":[70,74],"map1":0,"flor":768},
+    {"original":[72,73],"map1":0,"flor":2304},
+    {"original":[71,74],"map1":32822,"flor":768},
+    {"original":[70,75],"map1":0,"flor":768},
+    {"original":[72,74],"map1":0,"flor":2304},
+    {"original":[71,75],"map1":0,"flor":768},
+    {"original":[70,76],"map1":32768,"flor":768},
+    {"original":[72,75],"map1":0,"flor":2304},
+    {"original":[71,76],"map1":0,"flor":768},
+    {"original":[72,76],"map1":0,"flor":2304},
+    {"original":[71,77],"map1":0,"flor":768},
+    {"original":[72,77],"map1":0,"flor":2304},
+    {"original":[71,78],"map1":0,"flor":768},
+    {"original":[72,78],"map1":0,"flor":2304},
+    {"original":[71,79],"map1":32824,"flor":768},
+    {"original":[72,79],"map1":0,"flor":2304},
+    {"original":[71,80],"map1":0,"flor":768},
+    {"original":[72,80],"map1":0,"flor":2304},
+    {"original":[71,81],"map1":0,"flor":768},
+    {"original":[72,81],"map1":0,"flor":2304},
+    {"original":[71,82],"map1":0,"flor":768},
+    {"original":[72,82],"map1":0,"flor":2304},
+    {"original":[71,83],"map1":0,"flor":768},
+    {"original":[72,83],"map1":0,"flor":2304},
+    {"original":[71,84],"map1":0,"flor":768},
+    {"original":[72,84],"map1":0,"flor":2304},
+    {"original":[71,85],"map1":0,"flor":768},
+    {"original":[72,85],"map1":0,"flor":2304},
+    {"original":[71,86],"map1":0,"flor":768},
+    {"original":[72,86],"map1":0,"flor":2304},
+    {"original":[70,86],"map1":0,"flor":768},
+    {"original":[71,87],"map1":0,"flor":768},
+    {"original":[72,87],"map1":0,"flor":2304},
+    {"original":[69,86],"map1":0,"flor":768},
+    {"original":[70,87],"map1":0,"flor":768},
+    {"original":[71,88],"map1":0,"flor":1024},
+    {"original":[72,88],"map1":0,"flor":2304},
+    {"original":[68,86],"map1":32768,"flor":768},
+    {"original":[69,87],"map1":0,"flor":768},
+    {"original":[70,88],"map1":32792,"flor":1024},
+    {"original":[71,89],"map1":0,"flor":768},
+    {"original":[72,89],"map1":0,"flor":2304},
+    {"original":[68,87],"map1":0,"flor":768},
+    {"original":[69,88],"map1":0,"flor":768},
+    {"original":[70,89],"map1":0,"flor":768},
+    {"original":[71,90],"map1":0,"flor":768},
+    {"original":[72,90],"map1":0,"flor":2304},
+    {"original":[67,87],"map1":0,"flor":768},
+    {"original":[68,88],"map1":0,"flor":2048},
+    {"original":[69,89],"map1":0,"flor":768},
+    {"original":[70,90],"map1":0,"flor":1024},
+    {"original":[71,91],"map1":0,"flor":768},
+    {"original":[72,91],"map1":0,"flor":2304},
+    {"original":[66,87],"map1":0,"flor":768},
+    {"original":[67,88],"map1":0,"flor":1280},
+    {"original":[68,89],"map1":0,"flor":2304},
+    {"original":[69,90],"map1":0,"flor":768},
+    {"original":[70,91],"map1":0,"flor":768},
+    {"original":[71,92],"map1":0,"flor":1280},
+    {"original":[72,92],"map1":32768,"flor":1792},
+    {"original":[65,87],"map1":0,"flor":768},
+    {"original":[66,88],"map1":0,"flor":1280},
+    {"original":[68,90],"map1":0,"flor":2304},
+    {"original":[69,91],"map1":0,"flor":768},
+    {"original":[70,92],"map1":0,"flor":1280},
+    {"original":[64,87],"map1":0,"flor":768},
+    {"original":[65,88],"map1":0,"flor":2816},
+    {"original":[68,91],"map1":0,"flor":2304},
+    {"original":[69,92],"map1":0,"flor":1280},
+    {"original":[63,87],"map1":0,"flor":1024},
+    {"original":[64,88],"map1":0,"flor":768},
+    {"original":[65,89],"map1":0,"flor":768},
+    {"original":[68,92],"map1":0,"flor":2560},
+    {"original":[62,87],"map1":0,"flor":768},
+    {"original":[63,88],"map1":0,"flor":1024},
+    {"original":[64,89],"map1":0,"flor":768},
+    {"original":[65,90],"map1":0,"flor":2304},
+    {"original":[62,88],"map1":0,"flor":768},
+    {"original":[63,89],"map1":0,"flor":768},
+    {"original":[64,90],"map1":0,"flor":768},
+    {"original":[65,91],"map1":0,"flor":2304},
+    {"original":[63,90],"map1":0,"flor":768},
+    {"original":[64,91],"map1":0,"flor":768},
+    {"original":[65,92],"map1":0,"flor":2304},
+    {"original":[63,91],"map1":0,"flor":768},
+    {"original":[64,92],"map1":32792,"flor":768},
+    {"original":[65,93],"map1":0,"flor":2304},
+    {"original":[63,92],"map1":0,"flor":768},
+    {"original":[64,93],"map1":0,"flor":768},
+    {"original":[65,94],"map1":0,"flor":2304},
+    {"original":[63,93],"map1":0,"flor":768},
+    {"original":[64,94],"map1":32822,"flor":768},
+    {"original":[65,95],"map1":0,"flor":2304},
+    {"original":[63,94],"map1":0,"flor":768},
+    {"original":[64,95],"map1":32822,"flor":768},
+    {"original":[65,96],"map1":0,"flor":1792},
+    {"original":[63,95],"map1":0,"flor":1024},
+    {"original":[64,96],"map1":0,"flor":1280},
+    {"original":[63,96],"map1":0,"flor":1280},
+    {"original":[50,84],"map1":32776,"flor":768},
+    {"original":[51,84],"map1":0,"flor":768},
+    {"original":[50,85],"map1":0,"flor":768},
+    {"original":[52,84],"map1":0,"flor":768},
+    {"original":[51,85],"map1":0,"flor":1024},
+    {"original":[50,86],"map1":0,"flor":768},
+    {"original":[52,85],"map1":0,"flor":768},
+    {"original":[51,86],"map1":32792,"flor":768},
+    {"original":[50,87],"map1":0,"flor":768},
+    {"original":[52,86],"map1":0,"flor":1024},
+    {"original":[51,87],"map1":0,"flor":768},
+    {"original":[50,88],"map1":0,"flor":768},
+    {"original":[52,87],"map1":0,"flor":768},
+    {"original":[51,88],"map1":0,"flor":768},
+    {"original":[50,89],"map1":0,"flor":768},
+    {"original":[53,87],"map1":0,"flor":768},
+    {"original":[52,88],"map1":0,"flor":768},
+    {"original":[51,89],"map1":0,"flor":1024},
+    {"original":[54,87],"map1":0,"flor":768},
+    {"original":[53,88],"map1":0,"flor":768},
+    {"original":[52,89],"map1":0,"flor":768},
+    {"original":[55,87],"map1":32768,"flor":768},
+    {"original":[54,88],"map1":0,"flor":768},
+    {"original":[53,89],"map1":0,"flor":768},
+    {"original":[52,90],"map1":0,"flor":768},
+    {"original":[56,87],"map1":0,"flor":768},
+    {"original":[55,88],"map1":0,"flor":1024},
+    {"original":[53,90],"map1":0,"flor":768},
+    {"original":[52,91],"map1":0,"flor":1024},
+    {"original":[57,87],"map1":0,"flor":768},
+    {"original":[56,88],"map1":0,"flor":768},
+    {"original":[53,91],"map1":0,"flor":768},
+    {"original":[52,92],"map1":0,"flor":768},
+    {"original":[58,87],"map1":0,"flor":768},
+    {"original":[57,88],"map1":0,"flor":768},
+    {"original":[53,92],"map1":0,"flor":768},
+    {"original":[51,92],"map1":0,"flor":1024},
+    {"original":[52,93],"map1":0,"flor":768},
+    {"original":[59,87],"map1":0,"flor":768},
+    {"original":[58,88],"map1":0,"flor":768},
+    {"original":[54,92],"map1":32796,"flor":768},
+    {"original":[53,93],"map1":0,"flor":768},
+    {"original":[50,92],"map1":0,"flor":768},
+    {"original":[51,93],"map1":0,"flor":768},
+    {"original":[59,86],"map1":0,"flor":768},
+    {"original":[54,93],"map1":0,"flor":768},
+    {"original":[49,92],"map1":0,"flor":768},
+    {"original":[50,93],"map1":0,"flor":768},
+    {"original":[59,85],"map1":32768,"flor":768},
+    {"original":[48,92],"map1":0,"flor":768},
+    {"original":[49,93],"map1":0,"flor":768},
+    {"original":[47,92],"map1":0,"flor":768},
+    {"original":[48,93],"map1":0,"flor":768},
+    {"original":[46,92],"map1":0,"flor":768},
+    {"original":[47,93],"map1":0,"flor":768},
+    {"original":[45,92],"map1":0,"flor":768},
+    {"original":[46,93],"map1":0,"flor":768},
+    {"original":[46,91],"map1":32796,"flor":768},
+    {"original":[44,92],"map1":0,"flor":2304},
+    {"original":[45,93],"map1":0,"flor":768},
+    {"original":[45,91],"map1":32796,"flor":768},
+    {"original":[46,94],"map1":0,"flor":768},
+    {"original":[43,92],"map1":0,"flor":768},
+    {"original":[44,93],"map1":32792,"flor":2304},
+    {"original":[44,91],"map1":0,"flor":2304},
+    {"original":[45,94],"map1":0,"flor":768},
+    {"original":[46,95],"map1":0,"flor":1024},
+    {"original":[43,93],"map1":0,"flor":768},
+    {"original":[43,91],"map1":0,"flor":768},
+    {"original":[44,94],"map1":0,"flor":2304},
+    {"original":[44,90],"map1":37176,"flor":2304},
+    {"original":[45,95],"map1":0,"flor":768},
+    {"original":[43,94],"map1":0,"flor":1024},
+    {"original":[44,95],"map1":0,"flor":2304},
+    {"original":[44,89],"map1":0,"flor":2304},
+    {"original":[43,95],"map1":0,"flor":768},
+    {"original":[45,89],"map1":0,"flor":768},
+    {"original":[43,89],"map1":0,"flor":1024},
+    {"original":[44,88],"map1":0,"flor":2048},
+    {"original":[45,88],"map1":0,"flor":768},
+    {"original":[42,89],"map1":0,"flor":768},
+    {"original":[43,88],"map1":0,"flor":1280},
+    {"original":[41,89],"map1":0,"flor":1024},
+    {"original":[42,88],"map1":0,"flor":1280},
+    {"original":[40,89],"map1":0,"flor":768},
+    {"original":[41,88],"map1":0,"flor":1280},
+    {"original":[39,89],"map1":0,"flor":768},
+    {"original":[40,88],"map1":0,"flor":1280},
+    {"original":[38,89],"map1":0,"flor":768},
+    {"original":[39,90],"map1":0,"flor":1024},
+    {"original":[39,88],"map1":0,"flor":1280},
+    {"original":[37,89],"map1":0,"flor":1024},
+    {"original":[38,90],"map1":32792,"flor":768},
+    {"original":[38,88],"map1":0,"flor":1280},
+    {"original":[39,87],"map1":0,"flor":1024},
+    {"original":[36,89],"map1":0,"flor":768},
+    {"original":[37,90],"map1":0,"flor":1024},
+    {"original":[37,88],"map1":0,"flor":1280},
+    {"original":[38,87],"map1":0,"flor":768},
+    {"original":[35,89],"map1":0,"flor":1024},
+    {"original":[36,90],"map1":0,"flor":768},
+    {"original":[36,88],"map1":0,"flor":1280},
+    {"original":[37,87],"map1":0,"flor":768},
+    {"original":[34,89],"map1":0,"flor":768},
+    {"original":[35,88],"map1":0,"flor":1280},
+    {"original":[36,87],"map1":0,"flor":768},
+    {"original":[33,89],"map1":0,"flor":1024},
+    {"original":[34,88],"map1":0,"flor":1280},
+    {"original":[32,89],"map1":32823,"flor":768},
+    {"original":[33,88],"map1":0,"flor":1280},
+    {"original":[31,89],"map1":32823,"flor":768},
+    {"original":[32,88],"map1":0,"flor":1280},
+    {"original":[30,89],"map1":0,"flor":1024},
+    {"original":[31,88],"map1":0,"flor":1280},
+    {"original":[29,89],"map1":0,"flor":1024},
+    {"original":[30,88],"map1":0,"flor":1280},
+    {"original":[28,89],"map1":0,"flor":768},
+    {"original":[29,88],"map1":0,"flor":1280},
+    {"original":[27,89],"map1":0,"flor":768},
+    {"original":[28,88],"map1":0,"flor":1280},
+    {"original":[26,89],"map1":0,"flor":768},
+    {"original":[27,90],"map1":0,"flor":768},
+    {"original":[27,88],"map1":0,"flor":1280},
+    {"original":[25,89],"map1":0,"flor":1024},
+    {"original":[26,90],"map1":0,"flor":768},
+    {"original":[26,88],"map1":0,"flor":1280},
+    {"original":[27,91],"map1":0,"flor":768},
+    {"original":[24,89],"map1":32796,"flor":2304},
+    {"original":[25,90],"map1":32792,"flor":768},
+    {"original":[25,88],"map1":0,"flor":1280},
+    {"original":[26,91],"map1":0,"flor":768},
+    {"original":[27,92],"map1":0,"flor":768},
+    {"original":[24,90],"map1":32796,"flor":2304},
+    {"original":[24,88],"map1":0,"flor":2816},
+    {"original":[25,91],"map1":0,"flor":768},
+    {"original":[26,92],"map1":0,"flor":768},
+    {"original":[24,91],"map1":32796,"flor":2304},
+    {"original":[25,92],"map1":0,"flor":768},
+    {"original":[26,93],"map1":0,"flor":1280},
+    {"original":[24,92],"map1":0,"flor":2304},
+    {"original":[25,93],"map1":0,"flor":1280},
+    {"original":[24,93],"map1":0,"flor":2560}
+  ],
+  "braces": [
+    {
+      "id": "visual.fang.1.brace.44.90",
+      "eventId": 543,
+      "original": [
+        44,
+        90
+      ],
+      "origin": [
+        168,
+        274
+      ],
+      "raw": "0x9138",
+      "source": "BRACE.IMG",
+      "direction": 2,
+      "file": "!$Arena_Mine_Brace_V01",
+      "orientation": "adaptação à conexão local; empate=face frontal"
+    }
+  ],
+  "tracks": [
+    {
+      "original": [
+        72,
+        73
+      ],
+      "center": [
+        84,
+        222
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        74
+      ],
+      "center": [
+        84,
+        225
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        75
+      ],
+      "center": [
+        84,
+        228
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        76
+      ],
+      "center": [
+        84,
+        231
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        77
+      ],
+      "center": [
+        84,
+        234
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        78
+      ],
+      "center": [
+        84,
+        237
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        79
+      ],
+      "center": [
+        84,
+        240
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        80
+      ],
+      "center": [
+        84,
+        243
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        81
+      ],
+      "center": [
+        84,
+        246
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        82
+      ],
+      "center": [
+        84,
+        249
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        83
+      ],
+      "center": [
+        84,
+        252
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        84
+      ],
+      "center": [
+        84,
+        255
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        85
+      ],
+      "center": [
+        84,
+        258
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        86
+      ],
+      "center": [
+        84,
+        261
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        87
+      ],
+      "center": [
+        84,
+        264
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        88
+      ],
+      "center": [
+        84,
+        267
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        89
+      ],
+      "center": [
+        84,
+        270
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        72,
+        90
+      ],
+      "center": [
+        84,
+        273
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        68,
+        88
+      ],
+      "center": [
+        96,
+        267
+      ],
+      "flor": 8,
+      "shape": "se"
+    },
+    {
+      "original": [
+        72,
+        91
+      ],
+      "center": [
+        84,
+        276
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        67,
+        88
+      ],
+      "center": [
+        99,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        68,
+        89
+      ],
+      "center": [
+        96,
+        270
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        71,
+        92
+      ],
+      "center": [
+        87,
+        279
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        72,
+        92
+      ],
+      "center": [
+        84,
+        279
+      ],
+      "flor": 7,
+      "shape": "ne"
+    },
+    {
+      "original": [
+        66,
+        88
+      ],
+      "center": [
+        102,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        68,
+        90
+      ],
+      "center": [
+        96,
+        273
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        70,
+        92
+      ],
+      "center": [
+        90,
+        279
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        65,
+        88
+      ],
+      "center": [
+        105,
+        267
+      ],
+      "flor": 11,
+      "shape": "sw"
+    },
+    {
+      "original": [
+        68,
+        91
+      ],
+      "center": [
+        96,
+        276
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        69,
+        92
+      ],
+      "center": [
+        93,
+        279
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        68,
+        92
+      ],
+      "center": [
+        96,
+        279
+      ],
+      "flor": 10,
+      "shape": "nw"
+    },
+    {
+      "original": [
+        65,
+        90
+      ],
+      "center": [
+        105,
+        273
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        65,
+        91
+      ],
+      "center": [
+        105,
+        276
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        65,
+        92
+      ],
+      "center": [
+        105,
+        279
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        65,
+        93
+      ],
+      "center": [
+        105,
+        282
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        65,
+        94
+      ],
+      "center": [
+        105,
+        285
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        65,
+        95
+      ],
+      "center": [
+        105,
+        288
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        65,
+        96
+      ],
+      "center": [
+        105,
+        291
+      ],
+      "flor": 7,
+      "shape": "ne"
+    },
+    {
+      "original": [
+        64,
+        96
+      ],
+      "center": [
+        108,
+        291
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        63,
+        96
+      ],
+      "center": [
+        111,
+        291
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        44,
+        92
+      ],
+      "center": [
+        168,
+        279
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        44,
+        93
+      ],
+      "center": [
+        168,
+        282
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        44,
+        91
+      ],
+      "center": [
+        168,
+        276
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        44,
+        94
+      ],
+      "center": [
+        168,
+        285
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        44,
+        90
+      ],
+      "center": [
+        168,
+        273
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        44,
+        95
+      ],
+      "center": [
+        168,
+        288
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        44,
+        89
+      ],
+      "center": [
+        168,
+        270
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        44,
+        88
+      ],
+      "center": [
+        168,
+        267
+      ],
+      "flor": 8,
+      "shape": "se"
+    },
+    {
+      "original": [
+        43,
+        88
+      ],
+      "center": [
+        171,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        42,
+        88
+      ],
+      "center": [
+        174,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        41,
+        88
+      ],
+      "center": [
+        177,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        40,
+        88
+      ],
+      "center": [
+        180,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        39,
+        88
+      ],
+      "center": [
+        183,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        38,
+        88
+      ],
+      "center": [
+        186,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        37,
+        88
+      ],
+      "center": [
+        189,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        36,
+        88
+      ],
+      "center": [
+        192,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        35,
+        88
+      ],
+      "center": [
+        195,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        34,
+        88
+      ],
+      "center": [
+        198,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        33,
+        88
+      ],
+      "center": [
+        201,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        32,
+        88
+      ],
+      "center": [
+        204,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        31,
+        88
+      ],
+      "center": [
+        207,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        30,
+        88
+      ],
+      "center": [
+        210,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        29,
+        88
+      ],
+      "center": [
+        213,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        28,
+        88
+      ],
+      "center": [
+        216,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        27,
+        88
+      ],
+      "center": [
+        219,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        26,
+        88
+      ],
+      "center": [
+        222,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        24,
+        89
+      ],
+      "center": [
+        228,
+        270
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        25,
+        88
+      ],
+      "center": [
+        225,
+        267
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        24,
+        90
+      ],
+      "center": [
+        228,
+        273
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        24,
+        88
+      ],
+      "center": [
+        228,
+        267
+      ],
+      "flor": 11,
+      "shape": "sw"
+    },
+    {
+      "original": [
+        24,
+        91
+      ],
+      "center": [
+        228,
+        276
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        26,
+        93
+      ],
+      "center": [
+        222,
+        282
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        24,
+        92
+      ],
+      "center": [
+        228,
+        279
+      ],
+      "flor": 9,
+      "shape": "ns"
+    },
+    {
+      "original": [
+        25,
+        93
+      ],
+      "center": [
+        225,
+        282
+      ],
+      "flor": 5,
+      "shape": "ew"
+    },
+    {
+      "original": [
+        24,
+        93
+      ],
+      "center": [
+        228,
+        282
+      ],
+      "flor": 10,
+      "shape": "nw"
+    }
+  ],
+  "objectsAudit": [
+    {
+      "original": [
+        70,
+        72
+      ],
+      "flat": 1,
+      "source": "brazier.dfa     S:3",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        70,
+        76
+      ],
+      "flat": 0,
+      "source": "bagage1.img     F:1",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        68,
+        86
+      ],
+      "flat": 0,
+      "source": "bagage1.img     F:1",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        70,
+        88
+      ],
+      "flat": 24,
+      "source": "torchpst.dfa    S:4",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        72,
+        92
+      ],
+      "flat": 0,
+      "source": "bagage1.img     F:1",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        64,
+        92
+      ],
+      "flat": 24,
+      "source": "torchpst.dfa    S:4",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        50,
+        84
+      ],
+      "flat": 8,
+      "source": "equipmen.img",
+      "status": "not-represented",
+      "dependency": "EQUIPMEN visual/function and any collection still to confirm; not claimed as implemented treasure"
+    },
+    {
+      "original": [
+        51,
+        86
+      ],
+      "flat": 24,
+      "source": "torchpst.dfa    S:4",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        55,
+        87
+      ],
+      "flat": 0,
+      "source": "bagage1.img     F:1",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        54,
+        92
+      ],
+      "flat": 28,
+      "source": "barrel.img",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        59,
+        85
+      ],
+      "flat": 0,
+      "source": "bagage1.img     F:1",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        46,
+        91
+      ],
+      "flat": 28,
+      "source": "barrel.img",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        45,
+        91
+      ],
+      "flat": 28,
+      "source": "barrel.img",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        44,
+        93
+      ],
+      "flat": 24,
+      "source": "torchpst.dfa    S:4",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        38,
+        90
+      ],
+      "flat": 24,
+      "source": "torchpst.dfa    S:4",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        24,
+        89
+      ],
+      "flat": 28,
+      "source": "barrel.img",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        25,
+        90
+      ],
+      "flat": 24,
+      "source": "torchpst.dfa    S:4",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        24,
+        90
+      ],
+      "flat": 28,
+      "source": "barrel.img",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    },
+    {
+      "original": [
+        24,
+        91
+      ],
+      "flat": 28,
+      "source": "barrel.img",
+      "status": "not-represented",
+      "dependency": "Source prop not instantiated; matching visual/physical representation remains separate; routes do not require these cells"
+    }
+  ],
+  "encounters": [
+    {
+      "original": [
+        71,
+        74
+      ],
+      "flat": 54,
+      "resource": "OGRE.DFA",
+      "item": 39,
+      "status": "added",
+      "area": "centro sul",
+      "dependency": null,
+      "eventId": 638,
+      "access": "central-south-trenches-brace"
+    },
+    {
+      "original": [
+        71,
+        79
+      ],
+      "flat": 56,
+      "resource": "GHOUL.DFA",
+      "item": 41,
+      "status": "added",
+      "area": "centro sul",
+      "dependency": null,
+      "eventId": 639,
+      "access": "central-south-trenches-brace"
+    },
+    {
+      "original": [
+        31,
+        89
+      ],
+      "flat": 55,
+      "resource": "SPIDER.DFA",
+      "item": 40,
+      "status": "added",
+      "area": "salas sul",
+      "dependency": null,
+      "eventId": 640,
+      "access": "central-south-trenches-brace"
+    },
+    {
+      "original": [
+        32,
+        89
+      ],
+      "flat": 55,
+      "resource": "SPIDER.DFA",
+      "item": 40,
+      "status": "added",
+      "area": "salas sul",
+      "dependency": null,
+      "eventId": 641,
+      "access": "central-south-trenches-brace"
+    },
+    {
+      "original": [
+        64,
+        94
+      ],
+      "flat": 54,
+      "resource": "OGRE.DFA",
+      "item": 39,
+      "status": "added",
+      "area": "centro sul",
+      "dependency": null,
+      "eventId": 642,
+      "access": "central-south-trenches-brace"
+    },
+    {
+      "original": [
+        64,
+        95
+      ],
+      "flat": 54,
+      "resource": "OGRE.DFA",
+      "item": 39,
+      "status": "added",
+      "area": "centro sul",
+      "dependency": null,
+      "eventId": 643,
+      "access": "central-south-trenches-brace"
+    }
+  ],
+  "treasures": [],
+  "preserved": [
+    {"original":[73,80],"map1":7196,"flor":1024},
+    {"original":[22,88],"map1":7196,"flor":768},
+    {"original":[23,88],"map1":7453,"flor":768},
+    {"original":[72,72],"map1":0,"flor":3072},
+    {"original":[73,73],"map1":0,"flor":3072},
+    {"original":[73,74],"map1":0,"flor":3072},
+    {"original":[73,75],"map1":0,"flor":3072},
+    {"original":[73,76],"map1":0,"flor":3072}
+  ],
+  "limits": [
+    "Only inventory of76encounters complete after this transfer, not all original geometry/objects/events",
+    "Normal-floor walls, optional lower chasm and nonessential diagonal/raised volumes preserved",
+    "BAGAGE/F1 cell exclusions checked conservatively for route independence; no new prop collider inferred",
+    "EQUIPMEN50,84 does not silently become a generic treasure; visual and function remain pending",
+    "No new mechanics, artwork, balances or lava island integration"
+  ]
+}
