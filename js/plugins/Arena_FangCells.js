@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.8.0 Fang Lair: celas e tesouros das alas secas.
+ * @plugindesc v0.9.0 Fang Lair: celas, alas e acesso inferior ao Fantasma.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
  * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
@@ -337,8 +337,30 @@ var ArenaFangCells;
  Window_ChoiceList.prototype.start=function(){choice.apply(this,arguments);if(here()||below()||($gameMap.mapId()===$arenaRihad.arrival.mapId&&$gameMap._interpreter.eventId()===ArenaStonekeep.configuration().travelEventId)){this._arenaCourtAwaitNeutral=true;this._arenaCourtReadyAt=Date.now()+150;}};
  var end=Window_Message.prototype.terminateMessage;
  Window_Message.prototype.terminateMessage=function(){end.apply(this,arguments);if(here()||below()){$gameTemp._arenaNarrativeFence={until:Date.now()+150};$gameTemp.clearDestination();}};
+ // Same local overhead/cutaway construction used by Stonekeep's dry corridor.
+ // FLOR12 is open only on the authored lower path; not a global passability rule.
+ var createTiles=Spriteset_Map.prototype.createTilemap;
+ Spriteset_Map.prototype.createTilemap=function(){createTiles.apply(this,arguments);var p=$dataMap.arenaGhostPassage;if(!p)return;
+  var b=p.worldBounds,bitmap=new Bitmap((b[2]-b[0]+1)*48,(b[3]-b[1]+1)*48),roof=new Sprite(bitmap),atlas=ImageManager.loadTileset($dataTilesets[$dataMap.tilesetId].tilesetNames[6]);
+  atlas.addLoadListener(function(){p.overheadTiles.forEach(function(t){var i=t.tileId%256;bitmap.blt(atlas,i%8*48,Math.floor(i/8)*48,48,48,(t.x-b[0])*48,(t.y-b[1])*48);});});
+  this._fangGhostRoof=roof;this._baseSprite.addChild(roof);
+ };
+ var tileUpdate=Spriteset_Map.prototype.updateTilemap;
+ Spriteset_Map.prototype.updateTilemap=function(){tileUpdate.apply(this,arguments);var roof=this._fangGhostRoof;if(!roof)return;var p=$dataMap.arenaGhostPassage,b=p.worldBounds;
+  roof.x=b[0]*48-this._tilemap.origin.x;roof.y=b[1]*48-this._tilemap.origin.y;
+  roof.alpha=p.pathTiles.some(function(v){return Math.abs($gamePlayer._realX-v[0])+Math.abs($gamePlayer._realY-v[1])<1;})?p.roofOpacityInside/255:1;
+ };
+ var terminateMap=Scene_Map.prototype.terminate;
+ Scene_Map.prototype.terminate=function(){terminateMap.apply(this,arguments);var roof=this._spriteset&&this._spriteset._fangGhostRoof;if(roof&&roof.bitmap){var b=roof.bitmap;if(b._baseTexture)b._baseTexture.destroy();b._canvas.width=0;b._canvas.height=0;}};
  var menu=Window_MenuCommand.prototype.addOriginalCommands;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if((here()||below())&&ArenaContinuation.labActive()){this.addCommand('Guardar teste em RAM','arenaRihadStore');this.addCommand('Carregar teste da RAM','arenaRihadLoad');}};
+ var addInspection=Window_MenuCommand.prototype.addOriginalCommands;
+ Window_MenuCommand.prototype.addOriginalCommands=function(){addInspection.apply(this,arguments);if(here()&&ArenaContinuation.labActive()&&ArenaDebugHub.enabled())this.addCommand('Inspecionar acesso ao Fantasma (RAM)','arenaFangGhostAccess');};
+ var inspectionMenu=Scene_Menu.prototype.createCommandWindow;
+ Scene_Menu.prototype.createCommandWindow=function(){inspectionMenu.apply(this,arguments);this._commandWindow.setHandler('arenaFangGhostAccess',function(){
+  if(!here()||!ArenaContinuation.labActive()||!ArenaDebugHub.enabled())return;var p=c().ghostAccess;
+  Input.clear();TouchInput.clear();$gameTemp.clearDestination();$gameTemp._arenaNarrativeFence={until:Date.now()+180};$gamePlayer.reserveTransfer(p.mapId,p.x,p.y,p.direction,2);SceneManager.pop();
+ });};
  var create=Scene_Map.prototype.createDisplayObjects,updateMap=Scene_Map.prototype.update;
  Scene_Map.prototype.createDisplayObjects=function(){create.apply(this,arguments);if(here()||below()){this._fangLabels=new Sprite(new Bitmap(Graphics.boxWidth,Graphics.boxHeight));this.addChild(this._fangLabels);}};
  Scene_Map.prototype.update=function(){updateMap.apply(this,arguments);if(!this._fangLabels)return;var b=this._fangLabels.bitmap;b.clear();this._fangLabels.visible=!$gameMessage.isBusy();if(!this._fangLabels.visible)return;b.fillRect(0,0,b.width,70,'rgba(8,14,18,.94)');b.fontSize=22;b.textColor='#ead9b5';b.drawText('Fang Lair',16,4,b.width-32,30);b.fontSize=16;b.drawText('Mina V01 · Esc: menu',16,38,b.width-32,24);
@@ -350,6 +372,7 @@ var ArenaFangCells;
    if(lowerDoorOpen()&&ArenaPersistence.sourceStatus(staff.sourceId).missing)label(staff.position,'Primeiro fragmento · Interagir');
    return;
   }
+  label([c().ghostAccess.x,c().ghostAccess.y],'Poço seco · passagem inferior');
   if(c().optionalTreasure.cells.some(function(cell){return !treasureCellOpen(cell);}))label([21,237],'Celas de tesouro');
   label(c().riddle,q().stage>=80?'Portal aberto':'Portal / enigma');label(c().entry,ArenaContinuation.labActive()?'Retornar ao título':q().stage===100?'Saída da mina':'Retornar a Rihad');label(c().limit,'Descer para o segundo nível');
   [[9,288,'Cela 3'],[18,288,'Cela 2'],[27,288,'Cela 1']].forEach(function(p){label(p,p[2]);});if(ArenaPersistence.sourceStatus(c().sourceId).active)label(c().key,'Chave dourada · Interagir');

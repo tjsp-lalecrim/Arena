@@ -726,6 +726,15 @@
               "6": 72,
               "8": 72
             }
+          },
+          "11": {
+            "file": "$Arena_ghost_float_v01",
+            "cell": [
+              96,
+              96
+            ],
+            "ground": 90,
+            "animationWait": 12
           }
         },
         "entries": [
@@ -1051,6 +1060,28 @@
             "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
             "enemyId": 7,
             "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif3.49",
+            "eventId": 601,
+            "origin": [
+              291,
+              150
+            ],
+            "sourceOriginal": [
+              3,
+              49
+            ],
+            "sourceFlat": "FANG1 flat58 GHOST.DFA / ITEM43",
+            "enemyId": 11,
+            "troopId": 12,
             "questSpecific": true,
             "radius": 2,
             "interval": 90,

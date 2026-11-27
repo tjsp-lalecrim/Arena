@@ -466,5 +466,16 @@
         21
       ]
     }
-  ]
+  ],
+  "ghostAccess": {
+    "id": "technical.fang.ghost-access",
+    "mapId": 13,
+    "original": [
+      9,
+      37
+    ],
+    "x": 273,
+    "y": 114,
+    "direction": 2
+  }
 }

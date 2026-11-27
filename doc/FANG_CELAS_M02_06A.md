@@ -1,5 +1,31 @@
 # Fang Lair — amostra funcional das celas (M02-06A)
 
+
+## Acesso inferior à câmara do Fantasma — 26/11/2026
+
+**Resultado vigente:** o encontro **GHOST.DFA / ITEM43, flat58, MIF(3,49)** está integrado na campanha como `fang.1.enemy.mif3.49`, evento601, Map013(291,150). Câmara acessível pelo poço seco ocidental, sem derrubar as duas paredes a leste. Map013 passa a **41/76encontros e2.421células MIF com piso parcial/integral**; Map017 mantém17/19. Total58/95; faltam35no primeiro nível e2ghouls no segundo. Isso não conclui geometria/loot/eventos de Fang Lair. Arte do Fantasma permanece sem avaliação visual explicitamente relatada; nenhuma geração ou revisão artística nesta entrega.
+
+**Fontes e certeza:** `42068779.MIF` instalado, SHA-256582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7; MAP1/FLOR extraídos anteriormente foram novamente decodificados e comparados iguais. Ausência de MAP2 confirmada. `FANG1.INF` declara poço seco/PIT e o flat do Fantasma. Planta e descrição de túneis da wiki local (quest PDF3/5) foram reconferidas. O **Player Guide instalado, PDF80/página impressa72**, distingue Passwall (remove paredes) de Pitfalls (retira piso e cria túneis sob paredes). O formato interpretado em MapGeneration.cpp/OpenTESArena coloca FLOR no nível vertical0 e MAP1 no1. A combinação dessas fontes sustenta o túnel inferior preexistente; **não foi observada a travessia no executável DOS** nem afirmada uma altura medida em primeira pessoa. [Contrato delimitado com todos os registros](mapas/FANG_FANTASMA_ACESSO_M02.json) · [visão das camadas](evidencias/fang-ghost-access/rota-camadas.png).
+
+|Trecho, coordenadas originais base-zero|Conclusão|
+|---|---|
+|Margem(9,37) → poço(9,38)–(9,39)|Piso seco conectado à entrada normal; MAP1 vazio sobre FLOR0x0C00 nos primeiros dois trechos permite entrar no nível inferior|
+|33células do poço: por(9,40), oeste até(3,40), norte até(3,35), oeste até(1,35), sul até(1,51), leste até(2,51)|FLOR0x0C00 contínuo.30células têm parede comum MAP1 por cima; não são diagonais, portas ou plataformas elevadas. A projeção anterior juntava a parede do nível superior ao piso inferior e bloqueava todo o percurso|
+|Poço aberto(2,51) → piso(2,50) → câmaraX2–5/Y46–51|Saída do túnel com MAP1 vazio;22células secas efetivamente abertas. O poço isolado em(4,46) não foi liberado por associação|
+|Separação leste(6,49)/(7,49)|MAP1 0x1D1D/0x1C1C, FLOR normal. Obstrução real no plano superior, preservada. Não é uma porta secreta identificada nem acesso criado por Passwall|
+
+**Adaptação à grade:** caminhar por uma faixa inferior de1tileMV, com patamares no material de escada já existente. As paredes MAP1 permanecem como sobreposição, reduzida localmente enquanto o personagem está sob a estrutura, reutilizando a construção de teto do corredor seco de Stonekeep. Máscaras de cantos/limites mantêm os lados fechados: não se sobe do túnel para salas superiores ao longo da rota. Somente as duas margens são conectadas. Não há queda, oxigênio, risco de lava, custos, nova tecla ou sistema geral de salto/escalada/Passwall; é a mesma convenção local de travessia/transferência de desnível usada nas passagens existentes. Não abre automaticamente outras células FLOR12. O deslocamento da campanha é contínuo, sem mapa/transferência interna.
+
+**Encontro e persistência:** mesmos sprites de flutuação e combate, parâmetros e ataque físico. EXP100 provisória na campanha; nenhum ouro/item atribuído, pois o loot original é incerto/sem cadáver. O laboratório de combate continuaEXP0, com seu próprio ID/recibo. Patrulha da campanha em região4, raio2, sem entrar no piso inferior/região5. Contato/vitória/derrota/recibo usam os núcleos existentes. Saves antigos conservam posição/quest/recibos; o sincronizador de encontros acrescenta601 uma vez se ausente. Nenhuma posição antes válida ficou bloqueada; sem migração de slots ou namespace.
+
+**Verificação:** [teste focal e resultado](evidencias/fang-ghost-access/resultado.json), Chrome158 isolado: ligação à entrada normal, ida/volta,198verificações laterais sem fuga, teto e colisões, contato único, batalha real, retorno, EXP100/um recibo, repetição protegida e save/load na passagem/câmara após vitória. Dois rebuilds idênticos; outros mapas, portas, enigmas, itens/fontes/recebimentos e retaliação preservados. Reutilizadas as evidências anteriores de animação/game over e dos dois enigmas/MQ02; não repetida a campanha. Fixture de ator equipado nível10/RNG0,5 apenas para uma batalha técnica; sem saves pessoais, testes manuais ou aprovação de balanceamento inferidos.
+
+**Teste:** http://127.0.0.1:8774/ → **Testes / Debug → Campanha e mapas → Fang Lair · celas (RAM)**; Esc → **Inspecionar acesso ao Fantasma (RAM)**. Usa a mesma sessão, sem outro laboratório/comando no título. Chega à margem Map013(273,114), MIF(9,37); seguir ao sul pelo piso de transição e pelo corredor inferior até a câmara. Voltar pela mesma passagem. Guardar/Carregar RAM continuam no menu; slots normais ficam bloqueados nessa sessão. Na campanha normal, viajar a Fang Lair já descoberta, seguir o ramo oeste até essa margem e usar salvar/carregar normal. A opção de inspeção não aparece na campanha normal nem no perfil público.
+
+[Margem](evidencias/fang-ghost-access/entrada-poco.png) · [sob a estrutura](evidencias/fang-ghost-access/teto-rebaixado.png) · [câmara](evidencias/fang-ghost-access/camara.png) · [combate](evidencias/fang-ghost-access/combate-campanha.png).
+
+**Reuso posterior delimitado:** a mesma rede FLOR12 tem saídas abertas para **oeste sul**, como poço(2,62)→piso(2,63), (9,75)→(8,75) e(18,74)→(19,74). São candidatos concretos à mesma representação; validar o ramo inteiro, margens, paredes e encontros antes de ampliar. Não foram abertos nesta entrega. Nordeste de aranhas, bolsa leste, centro/salas sul e lava não receberam uma passagem por analogia. O tesouro original(5,51) agora tem acesso, mas coleta ainda está pendente de integração própria; totais de tesouros seguem6/13 e0/6. Pages permanece na fonte93adf9a; **este acesso/encontro aguarda próxima publicação**. Release só no fechamento do marco.
+
 ## Entrada interna e investigação de vagonetes — 20/11/2026
 
 **Entrega delimitada:** face interna de saída produzida e integrada; aparência exterior do chamado dragon gate e vagonetes continuam sem correspondência comprovada. Não declarar esses dois itens concluídos. Avaliação visual da face integrada fica agrupada no próximo teste de MQ02; sem Pages ou release.
@@ -218,6 +244,8 @@ A cobertura do primeiro nível passa de 2.196 a **2.352 células MIF com piso tr
 
 A [matriz de cobertura](mapas/FANG_COBERTURA_M02.json) vincula as 95 posições originais a andar, coordenadas MIF de base zero, flat, espécie, estado e dependência. As áreas excluídas estão delimitadas nela. A leitura de MAP1/FLOR dos dois pisos de `42068779.MIF` foi cruzada com FANG1/FANG2.INF e com as âncoras anteriores. Abrimos somente os pisos secos ligados cardinalmente ao percurso, incluindo o suporte atravessável MAP1 `0x91xx` como passagem provisória. Paredes diagonais, desníveis sem equivalência confirmada e FLOR 12/13/14 de poço/água/lava ficaram fora das novas ligações. Os tiles existentes continuam provisórios.
 
+Tabela histórica desta ampliação; estado vigente da câmara e contagem no registro26/11 acima.
+
 | Andar | Geometria disponível | Encontros originais ativos | Pendentes |
 | --- | --- | ---: | --- |
 | Map013 | 304×301 tiles, 2.196 células MIF projetadas. Ramais da entrada e túneis centrais, corredores de acesso às celas. Coordenadas MV anteriores preservadas | 40/76; 36 novos, 4 aranhas condicionadas já existentes | 36 incluindo Fantasma (3,49), câmara junto ao poço seco. Outras bolsas e ligações nos quadrantes das aranhas do nordeste, leste, oeste sul, centro sul e salas sul |
@@ -321,11 +349,11 @@ Leitura direta de `42068779.MIF`: **dois níveis de 100×100**, vinculados a FAN
 | Aranha, SPIDER.DFA / ITEM40 | 24 | 0 | 24 | Reuso aprovado com ressalva | Reuso |
 | Ghoul | 9 | 2 | 11 | Reuso | Reuso |
 | Homem-lagarto | 0 | 4 | 4 | Reuso | Reuso |
-| Fantasma, GHOST.DFA / ITEM43, MIF (3,49) | 1 | 0 | 1 | V01 disponível em RAM; avaliação visual pendente | V01 disponível em RAM; acesso da câmara pendente |
+| Fantasma, GHOST.DFA / ITEM43, MIF (3,49) | 1 | 0 | 1 | Integrado na campanha; avaliação visual pendente | Integrada via passagem inferior delimitada; RAM preservada |
 | Hell hound, HELLHOUN.DFA / ITEM42, MIF (63,74)/(65,74) | 0 | 2 | 2 | **Integrado** | **Integrada** |
 | **Total** | **76** | **19** | **95** | **0 conjuntos ausentes; avaliação pendente** | **0 conjuntos ausentes; avaliação pendente** |
 
-O fragmento em MIF (64,75) resolve `CHAOS1.DFA` / ITEM13 e fica fora da contagem de criaturas. A aranha das celas foi identificada como a mesma espécie de Stonekeep pela combinação **SPIDER.DFA + ITEM40**. Quatro das 24 posições ficam nas celas condicionadas e usam encontros persistentes. A tabela acima registra a situação dos demais encontros. A matriz de Stonekeep tem 9 espécies com ambos os conjuntos disponíveis. O M02 soma **11 espécies distintas confirmadas** até aqui, das quais **0 estão sem combate ou patrulha**. O Hell Hound já está integrado nas duas posições; o Fantasma tem ambos os conjuntos disponíveis em RAM, com avaliação visual e ativação da posição original pendentes de acesso. Não confundir11 espécies com95 encontros nem disponibilidade com aprovação. Os arredores adaptados de Rihad reaproveitam o rato. [Levantamento urbano](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).
+O fragmento em MIF (64,75) resolve `CHAOS1.DFA` / ITEM13 e fica fora da contagem de criaturas. A aranha das celas foi identificada como a mesma espécie de Stonekeep pela combinação **SPIDER.DFA + ITEM40**. Quatro das 24 posições ficam nas celas condicionadas e usam encontros persistentes. A tabela acima registra a situação dos demais encontros. A matriz de Stonekeep tem 9 espécies com ambos os conjuntos disponíveis. O M02 soma **11 espécies distintas confirmadas** até aqui, das quais **0 estão sem combate ou patrulha**. O Hell Hound está integrado nas duas posições; o Fantasma está integrado na posição original pela passagem inferior documentada acima, com avaliação visual pendente e laboratório RAM preservado. Não confundir11 espécies com95 encontros nem disponibilidade com aprovação. Os arredores adaptados de Rihad reaproveitam o rato. [Levantamento urbano](CHEGADA_RIHAD_M02_03A.md#m02-03e1--planta-reconstruída-e-inventário-visual).
 
 O servo de Tharn fica **fora da contagem** até identificar a espécie ou regra de seleção. O relato da wiki e TEMPLATE #1392 estabelecem a retaliação, sem associá-la ao fantasma, aos hell hounds ou a uma criatura específica. Registrar também o possível comportamento de fogo dos hell hounds como dependência de design, sem decidir regras de combate neste inventário.
 

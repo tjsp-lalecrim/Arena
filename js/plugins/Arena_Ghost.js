@@ -1,8 +1,8 @@
 /*:
- * @plugindesc v0.1.0 Fantasma de Fang Lair: exemplar isolado; acesso original pendente.
+ * @plugindesc v0.1.0 Fantasma de Fang Lair: exemplar RAM; encontro da campanha separado.
  * @author Codex
  * @help Após DebugHub/Continuation/Encounters/Battle. Reutiliza a sala RAM Map016.
- * Nenhum encontro é ativado na campanha enquanto a câmara (3,49) não tiver acesso comprovado.
+ * Campanha usa fang.1.enemy.mif3.49 e EXP própria; este plugin só prepara o laboratório.
  */
 var ArenaGhost;
 (function(){'use strict';
@@ -39,5 +39,5 @@ var ArenaGhost;
  ArenaLoot.tableForEnemy=function(enemy){return here()&&enemy.enemyId()===$arenaGhost.enemyId?$arenaGhost.labLoot:loot.apply(this,arguments);};
  var start=Scene_Map.prototype.start;
  Scene_Map.prototype.start=function(){start.apply(this,arguments);if(pending&&here()&&!$gamePlayer.isTransferring()){pending=false;if(!ArenaBattle.prepare($arenaGhost.entry.mapId))throw Error('Fantasma: preparo RAM indisponível.');}};
- ArenaDebugHub.register({symbol:'arenaGhost',name:'Fang Lair · Fantasma (RAM)',category:'combat',description:'Um exemplar flutuante: quatro direções, patrulha e contato. Câmara original (3,49) ainda sem acesso comprovado; parâmetros provisórios.',saving:'Somente RAM · Guardar/Carregar teste · slots normais bloqueados'},ArenaGhost.start);
+ ArenaDebugHub.register({symbol:'arenaGhost',name:'Fang Lair · Fantasma (RAM)',category:'combat',description:'Um exemplar flutuante: quatro direções, patrulha e contato. Campanha: menu RAM das celas leva ao acesso inferior; parâmetros provisórios.',saving:'Somente RAM · Guardar/Carregar teste · slots normais bloqueados'},ArenaGhost.start);
 })();

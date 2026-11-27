@@ -14,7 +14,7 @@
   ],
   "hit": 0.9,
   "exp": 100,
-  "source": "FANG1 flat58 GHOST.DFA / ITEM43, MIF (3,49). HP70/ATQ12/DEF4/MDF7/AGI14/SOR6/HIT90 e EXP100 provisórios; sem Spell Drain, invisibilidade ou voo físico. Câmara não ativada sem acesso comprovado.",
+  "source": "FANG1 flat58 GHOST.DFA / ITEM43, MIF (3,49). HP70/ATQ12/DEF4/MDF7/AGI14/SOR6/HIT90 e EXP100 provisórios; sem Spell Drain, invisibilidade ou voo físico. Campanha: câmara alcançada pelo poço seco rebaixado; ver FANG_FANTASMA_ACESSO_M02.json.",
   "scale": 1,
   "loot": {
     "gold": {
@@ -53,7 +53,7 @@
       }
     },
     "difficulty": "Fantasma provisório de Fang Lair",
-    "source": "Wiki: sem cadáver; loot incerto. Sem itens/ouro atribuídos. EXP100 provisória só fora do laboratório; nenhuma posição de campanha ativada."
+    "source": "Wiki: sem cadáver; loot incerto. Sem itens/ouro atribuídos. EXP100 provisória na campanha; laboratório mantém EXP0 e recibo técnico separado."
   },
   "mapVisual": {
     "file": "$Arena_ghost_float_v01",
@@ -109,7 +109,7 @@
       }
     },
     "difficulty": "isolated battle pilot only",
-    "source": "Empty rewards only for Spider battle/patrol laboratories; campaign uses its explicit separate configuration."
+    "source": "Empty rewards only for the isolated Ghost battle/patrol laboratory; campaign uses explicit EXP100 provisional and its separate receipt."
   },
   "encounters": {
     "schemaVersion": 1,
@@ -137,7 +137,7 @@
           9,
           6
         ],
-        "sourceFlat": "Inspeção RAM; original FANG1 flat58 GHOST.DFA / ITEM43 em (3,49); acesso original pendente.",
+        "sourceFlat": "Inspeção RAM separada; campanha usa FANG1 flat58 GHOST.DFA / ITEM43 em (3,49), pela passagem inferior delimitada.",
         "questSpecific": true,
         "radius": 3,
         "interval": 90,
@@ -149,12 +149,12 @@
     ]
   },
   "campaignPlacement": {
-    "enabled": false,
+    "enabled": true,
     "id": "fang.1.enemy.mif3.49",
     "original": [
       3,
       49
     ],
-    "reason": "Acesso da câmara junto ao poço seco ainda não demonstrado; exemplar somente no hub RAM."
+    "reason": "Rota inferior delimitada FLOR12, descida/subida locais e teto MAP1 preservado visualmente; encontro individual estável no Map013."
   }
 }
