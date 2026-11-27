@@ -1,0 +1,20 @@
+{
+  "sourceCommit": "d4f1d400f5e2d9a2f5f106900e5cc0eb1ab1fce1",
+  "infrastructureCommit": "e45b5392680effabd22d5d6f9c5daad4de9475d1",
+  "id": 45918462539,
+  "url": "https://github.com/tjsp-lalecrim/Arena/actions/runs/45918462539",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}
