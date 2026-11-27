@@ -1,0 +1,46 @@
+{
+  "url": "https://tjsp-lalecrim.github.io/Arena/",
+  "sourceCommit": "d4f1d400f5e2d9a2f5f106900e5cc0eb1ab1fce1",
+  "workflow": "https://github.com/tjsp-lalecrim/Arena/actions/runs/45918462539",
+  "infraCommit": "e45b5392680effabd22d5d6f9c5daad4de9475d1",
+  "manifestSha256": "e1084013726cbd9f2cb47e1364ea72215fd96831a94d19fdd3600175b61b7c97",
+  "namespace": "arena:m01:save-v1",
+  "runtimeFiles": 449,
+  "totalBytes": 57864820,
+  "browser": "158.0.8127.37",
+  "fang": {
+    "upperEnemies": 49,
+    "lowerEnemies": 17,
+    "upperTreasures": 11,
+    "dryTreasures": 7,
+    "lowerPathTiles": 397
+  },
+  "entries": 380,
+  "deferred": [
+    {
+      "id": "rihad.court.gate",
+      "x": 360,
+      "y": 384,
+      "reason": "Open3-wide boundary corridor: no independent3x3 wall mass. Existing functional gate preserved; needs a specific freestanding/shared-boundary design."
+    }
+  ],
+  "status": {
+    "debug": false,
+    "title": [
+      "newGame",
+      "continue",
+      "options"
+    ],
+    "namespace": "arena:m01:save-v1",
+    "fourMaterials": true,
+    "localKeys": []
+  },
+  "errors": [],
+  "retries": [],
+  "checks": [
+    "All public files size/SHA-256, exact selected source/manifest",
+    "Clean Chrome opens title; Ghost/event601, eight additional encounters, five treasures and lower route metadata present; shared architecture preserved",
+    "Player profile debug disabled; unchanged public origin/namespace, no personal storage touched"
+  ],
+  "limits": "Publication smoke only. Ghost and west/south native movement, contacts/treasures and save checks reused from isolated local evidence. MQ02/manual and visual evaluation remain pending; no personal storage touched."
+}

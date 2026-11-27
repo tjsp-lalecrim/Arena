@@ -84,7 +84,7 @@
   "checks": [
     "Native bidirectional route from unchanged mine entrance to four banks, all eight enemies; side collision and sparse roof chunks, no resource/quest change",
     "Five native treasure interactions once, including5,51 and four southern piles; receipts, images and position persist; old serialized map updated additively",
-    "Eight independent native contacts, transition lock, normal victory/reward settlement once; defeats/loot persist through save and return; MQ01/MQ02/Ria unchanged. Existing riddles/fragment/Tharn tests reused (unchanged)"
+    "Eight independent native contacts, transition lock, normal victory/reward settlement once; defeats/loot persist through save and actual mine exit to Rihad/validated travel back, resources preserved; MQ01/MQ02/Ria unchanged. Existing riddles/fragment/Tharn tests reused (unchanged)"
   ],
   "errors": [],
   "limits": "Synthetic RAM fixture, native accelerated route with stationary patrols; separate disposable normal slot19, lethal HP test for eight existing species reward/return paths, not combat/balance assessment. No personal storage or manual approval; no DOS traversal observation."
