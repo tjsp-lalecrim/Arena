@@ -1,4 +1,4 @@
-# Arena_FangCells 0.9.0
+# Arena_FangCells 0.10.0
 
 Os montes das alas secas usam o mesmo evento e recibo dos tesouros das celas, com posições geradas pela matriz. Saves anteriores recebem os eventos novos no Map013 sem mudar a posição. [Cobertura dos tesouros](../FANG_CELAS_M02_06A.md#tesouros-das-alas-secas--primeiro-nível).
 
@@ -33,3 +33,9 @@ Teste focal: `node tools/test-fang-cells.cjs` (Playwright/Chrome instalados). Or
 [Contrato, fontes, limitações e acesso de teste](../FANG_CELAS_M02_06A.md#acesso-inferior-à-câmara-do-fantasma--26112026). `tools/fang-ghost-access.cjs` valida a cadeia FLOR12 e compila máscaras locais3×3 de passagem com1tile livre, mantendo laterais fechadas. O marcador `t` da matriz não é uma célula inteira de piso. Região5 é o corredor inferior;4 é a câmara/piso comum. A patrulha permanece em4. O gerador conserva paredes como `arenaGhostPassage.overheadTiles`; o runtime usa sobreposição local com opacidade48/255 somente dentro da faixa, seguindo o método do corredor seco de Stonekeep. Não altera flags globais, motor ou mobilidade.
 
 Evento601/IDlógico `fang.1.enemy.mif3.49` usa os núcleos de encontros/loot existentes. A sincronização já aditiva recupera o evento em saves anteriores e respeita a derrota persistida. A opção de inspeção só aparece no menu de Map013 em sessão RAM e debug habilitado; reutiliza o laboratório das celas e os seus limites, sem novo acesso no título. Namespace e regras dos enigmas/fragmento/Tharn preservados. Reconstrução canônica continua `node tools/build-rihad-arrival.cjs`.
+
+## Ramos inferiores oeste/sul
+
+Contrato delimitado `doc/mapas/FANG_OESTE_SUL_M02.json`: quatro cadeias unidas à rota do Fantasma, com máscaras somadas nos cruzamentos. O gerador rejeita poço com camada elevada/diagonal incompatível; somente FLOR12 e MAP1 vazio/flat/parede comum são permitidos. Paredes sobre piso normal não mudam. A sobreposição usa blocos esparsos de16×16tiles e libera suas texturas ao sair do mapa, evitando alocar o retângulo vazio entre os ramos. Colisão continua nas máscaras, sem depender do desenho.
+
+Eventos602–609 (encontros) e610–614 (tesouros) têm IDs próprios; componentes de encontros/tesouros e sincronização de snapshots antigos são reutilizados. Mesmos parâmetros de campanha e tabela de loot, sem migração de namespace ou novos comandos de debug. [Cobertura, fontes e roteiro](../FANG_CELAS_M02_06A.md#ala-oestesul-e-tesouro-do-fantasma--26112026).

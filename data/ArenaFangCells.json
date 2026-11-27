@@ -465,6 +465,46 @@
         13,
         21
       ]
+    },
+    {
+      "id": "fang.treasure.mif.5.51",
+      "eventId": 610,
+      "original": [
+        5,
+        51
+      ]
+    },
+    {
+      "id": "fang.treasure.mif.7.97",
+      "eventId": 611,
+      "original": [
+        7,
+        97
+      ]
+    },
+    {
+      "id": "fang.treasure.mif.8.97",
+      "eventId": 612,
+      "original": [
+        8,
+        97
+      ]
+    },
+    {
+      "id": "fang.treasure.mif.7.98",
+      "eventId": 613,
+      "original": [
+        7,
+        98
+      ]
+    },
+    {
+      "id": "fang.treasure.mif.8.98",
+      "eventId": 614,
+      "original": [
+        8,
+        98
+      ]
     }
   ],
   "ghostAccess": {

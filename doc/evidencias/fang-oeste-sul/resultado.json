@@ -1,0 +1,91 @@
+{
+  "baseline": "800dcbf6cc4c0c6fcf14511e7aa07f53144f7a36",
+  "browser": "158.0.8127.37",
+  "url": "http://127.0.0.1:8774/",
+  "coverage": {
+    "upperEnemies": 49,
+    "totalUpperEnemies": 76,
+    "lowerEnemies": 17,
+    "totalLowerEnemies": 19,
+    "upperTreasures": 11,
+    "totalUpperTreasures": 13
+  },
+  "changedNativeCells": 2251,
+  "distances": [
+    {
+      "bank": [
+        2,
+        63
+      ],
+      "steps": 39
+    },
+    {
+      "bank": [
+        8,
+        75
+      ],
+      "steps": 93
+    },
+    {
+      "bank": [
+        19,
+        74
+      ],
+      "steps": 124
+    },
+    {
+      "bank": [
+        6,
+        94
+      ],
+      "steps": 168
+    }
+  ],
+  "sides": {
+    "tested": 790,
+    "invalid": 0,
+    "chunks": 24,
+    "maxCanvas": 589824
+  },
+  "battles": [
+    {
+      "id": "fang.1.enemy.mif11.68",
+      "exp": 75
+    },
+    {
+      "id": "fang.1.enemy.mif8.70",
+      "exp": 60
+    },
+    {
+      "id": "fang.1.enemy.mif9.70",
+      "exp": 60
+    },
+    {
+      "id": "fang.1.enemy.mif12.85",
+      "exp": 60
+    },
+    {
+      "id": "fang.1.enemy.mif11.86",
+      "exp": 60
+    },
+    {
+      "id": "fang.1.enemy.mif18.92",
+      "exp": 75
+    },
+    {
+      "id": "fang.1.enemy.mif20.94",
+      "exp": 50
+    },
+    {
+      "id": "fang.1.enemy.mif21.94",
+      "exp": 50
+    }
+  ],
+  "checks": [
+    "Native bidirectional route from unchanged mine entrance to four banks, all eight enemies; side collision and sparse roof chunks, no resource/quest change",
+    "Five native treasure interactions once, including5,51 and four southern piles; receipts, images and position persist; old serialized map updated additively",
+    "Eight independent native contacts, transition lock, normal victory/reward settlement once; defeats/loot persist through save and return; MQ01/MQ02/Ria unchanged. Existing riddles/fragment/Tharn tests reused (unchanged)"
+  ],
+  "errors": [],
+  "limits": "Synthetic RAM fixture, native accelerated route with stationary patrols; separate disposable normal slot19, lethal HP test for eight existing species reward/return paths, not combat/balance assessment. No personal storage or manual approval; no DOS traversal observation."
+}
