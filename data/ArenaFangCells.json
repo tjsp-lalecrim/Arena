@@ -451,6 +451,14 @@
   },
   "dryTreasures": [
     {
+      "id": "fang.treasure.mif.71.4",
+      "eventId": 636,
+      "original": [
+        71,
+        4
+      ]
+    },
+    {
       "id": "fang.treasure.mif.57.19",
       "eventId": 76,
       "original": [
@@ -464,6 +472,14 @@
       "original": [
         13,
         21
+      ]
+    },
+    {
+      "id": "fang.treasure.mif.96.34",
+      "eventId": 637,
+      "original": [
+        96,
+        34
       ]
     },
     {

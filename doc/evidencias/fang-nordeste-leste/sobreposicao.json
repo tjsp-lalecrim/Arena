@@ -1,0 +1,119 @@
+{
+  "method": "Separate disposable RAM fixture, rendered sample at bank/inside/exit/BRACE, paired capture with actor visible versus hidden; RGB delta restricted to actor envelope. Not original DOS observation or manual art approval. Movement/normal route verified separately by main focal test.",
+  "samples": [
+    {
+      "name": "margem-59-8",
+      "p": [
+        123,
+        27
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 894
+    },
+    {
+      "name": "sob-a-estrutura",
+      "p": [
+        120,
+        33
+      ],
+      "alpha": 0.18823529411764706,
+      "state": {
+        "region": 5,
+        "roofAlpha": 0.18823529411764706,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 882
+    },
+    {
+      "name": "saida-64-12",
+      "p": [
+        108,
+        39
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 894
+    },
+    {
+      "name": "saida-94-46",
+      "p": [
+        18,
+        141
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 894
+    },
+    {
+      "name": "saida-95-31",
+      "p": [
+        15,
+        96
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 905
+    },
+    {
+      "name": "suporte-69-34",
+      "p": [
+        93,
+        105
+      ],
+      "alpha": 1,
+      "state": {
+        "region": 4,
+        "roofAlpha": 1,
+        "visible": true,
+        "opacity": 255,
+        "screen": [
+          408,
+          330
+        ]
+      },
+      "visibleChangedPixels": 551
+    }
+  ]
+}

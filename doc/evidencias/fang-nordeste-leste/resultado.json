@@ -1,0 +1,155 @@
+{
+  "baseline": "4874cf45f59f7295f9ef29dbb9caa4bc4cc826a1",
+  "browser": "158.0.8127.37",
+  "url": "http://127.0.0.1:8774/",
+  "coverage": {
+    "upperEnemies": 70,
+    "totalUpperEnemies": 76,
+    "lowerEnemies": 17,
+    "totalLowerEnemies": 19,
+    "upperTreasures": 13,
+    "totalUpperTreasures": 13
+  },
+  "changedNativeCells": 7982,
+  "distances": [
+    {
+      "id": "fang.1.lower-trench.east.1",
+      "bank": [
+        64,
+        12
+      ],
+      "steps": 27
+    },
+    {
+      "id": "fang.1.lower-trench.east.2",
+      "bank": [
+        77,
+        59
+      ],
+      "steps": 39
+    },
+    {
+      "id": "fang.1.lower-trench.east.3",
+      "bank": [
+        95,
+        31
+      ],
+      "steps": 48
+    },
+    {
+      "id": "fang.1.lower-trench.east.4",
+      "bank": [
+        94,
+        46
+      ],
+      "steps": 126
+    },
+    {
+      "id": "fang.1.lower-trench.east.5",
+      "bank": [
+        92,
+        54
+      ],
+      "steps": 63
+    }
+  ],
+  "sides": {
+    "tested": 1344,
+    "invalid": 0,
+    "chunks": 38,
+    "maxCanvas": 589824
+  },
+  "battles": [
+    {
+      "id": "fang.1.enemy.mif97.5",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif70.7",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif76.9",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif72.20",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif79.20",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif82.24",
+      "exp": 75
+    },
+    {
+      "id": "fang.1.enemy.mif87.24",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif78.25",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif77.26",
+      "exp": 75
+    },
+    {
+      "id": "fang.1.enemy.mif76.27",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif87.27",
+      "exp": 75
+    },
+    {
+      "id": "fang.1.enemy.mif76.31",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif88.31",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif86.33",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif91.33",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif78.34",
+      "exp": 75
+    },
+    {
+      "id": "fang.1.enemy.mif64.36",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif76.40",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif93.41",
+      "exp": 60
+    },
+    {
+      "id": "fang.1.enemy.mif79.44",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif95.54",
+      "exp": 60
+    }
+  ],
+  "checks": [
+    "Native ida/volta from unchanged normal mine entrance through five explicit lower routes; all21new encounters reached, no side leaks or resource/quest change",
+    "Both remaining treasures71,4 and96,34 claimed by native interaction once; receipts, images and position persist; old serialized map updated additively",
+    "Twenty-one independent native contacts, transition lock, normal victory/reward settlement once; defeats/loot persist through save and actual mine exit to Rihad/validated travel back, resources preserved; MQ01/MQ02/Ria unchanged. Existing riddles/fragment/Tharn tests reused (unchanged)"
+  ],
+  "errors": [],
+  "limits": "Synthetic RAM fixture, native accelerated route with stationary patrols; separate disposable normal slot19, lethal HP test for21 existing species reward/return paths, not combat/balance assessment. No personal storage or manual approval; no DOS traversal observation."
+}
