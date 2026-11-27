@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "d4f1d400f5e2d9a2f5f106900e5cc0eb1ab1fce1",
+  "testVersion": "m01-rc1",
+  "runtimeFiles": 449,
+  "runtimeBytes": 57787248,
+  "totalBytes": 57864820,
+  "manifestSha256": "e1084013726cbd9f2cb47e1364ea72215fd96831a94d19fdd3600175b61b7c97",
+  "rebuildsIdentical": true,
+  "recipe": "LF checkout; builder and recipe from selected source, same as Linux workflow",
+  "scope": "Ghost and bounded west/south branches; no runtime changes in infra commit"
+}
