@@ -88,8 +88,10 @@
   },
   "adaptation": "Gray semitransparent painterly anatomy; lateral battle and four orthogonal map views. Float is visual only, no new collision exemption, spell drain, invisibility or resistance. Provisional existing physical attack; stats not a direct formula conversion. No original executable playtest claimed.",
   "access": {
-    "campaignEnabled": false,
-    "blockedCells": [
+    "campaignEnabled": true,
+    "evidence": "East MAP1 walls remain blocked. Installed FLOR12 forms the bounded lower route from9,38 to2,51; manual Pitfalls description supports tunnels under walls. Source interpretation and local grade adaptation, not DOS observation.",
+    "nextDecision": "No access decision pending for this bounded route. Visual assessment remains pending; other trench branches require their own validation.",
+    "historicalEastWalls": [
       [
         6,
         49
@@ -99,7 +101,6 @@
         49
       ]
     ],
-    "evidence": "MAP1 wall record 0x1D1D at x6 and floor/pit boundary east of chamber. Current dry-route matrix does not project chamber; no documented traversal across this separator. Chamber original positions remain pending.",
-    "nextDecision": "Confirm original passage/mobility before activating fang.1.enemy.mif3.49; no corridor cut by assumption."
+    "contract": "doc/mapas/FANG_FANTASMA_ACESSO_M02.json"
   }
 }

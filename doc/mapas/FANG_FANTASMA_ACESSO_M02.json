@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "file": "42068779.MIF",
+    "sha256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7",
+    "level": 1,
+    "inf": "FANG1.INF",
+    "map2Present": false,
+    "installedReadback": "Cached MAP1/FLOR decoded again from installed MIF and compared equal,26/11/2026"
+  },
+  "coordinates": "MIF zero-based, X reflected in MV: (3+3*(99-X),3+3*Y). No change of existing coordinates.",
+  "evidence": {
+    "manual": "Installed Docs/Player Guide.pdf, PDF80/printed72: Pitfalls creates tunnels under walls by removing floor; Passwall removes walls. FLOR already contains the dry chasm here; no spell needs to be cast to create it.",
+    "wiki": "Local Fang Lair quest PDF3/5: mine shafts/tunnels and level map; not evidence of a door at6,49.",
+    "decode": "Consulted local OpenTESArena MapGeneration.cpp: FLOR at levelY0; MAP1 at levelY1, ordinary equal-byte records are walls, not diagonals/raised platforms. Interpretation of reverse-engineered format, not original executable observation."
+  },
+  "route": {
+    "entryBank": [
+      9,
+      37
+    ],
+    "pit": [
+      {
+        "original": [
+          9,
+          38
+        ],
+        "map1": 0,
+        "flor": 3072
+      },
+      {
+        "original": [
+          9,
+          39
+        ],
+        "map1": 0,
+        "flor": 3072
+      },
+      {
+        "original": [
+          9,
+          40
+        ],
+        "map1": 7196,
+        "flor": 3072
+      },
+      {
+        "original": [
+          8,
+          40
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          7,
+          40
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          6,
+          40
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          5,
+          40
+        ],
+        "map1": 6939,
+        "flor": 3072
+      },
+      {
+        "original": [
+          4,
+          40
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          3,
+          40
+        ],
+        "map1": 6939,
+        "flor": 3072
+      },
+      {
+        "original": [
+          3,
+          39
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          3,
+          38
+        ],
+        "map1": 6939,
+        "flor": 3072
+      },
+      {
+        "original": [
+          3,
+          37
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          3,
+          36
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          3,
+          35
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          2,
+          35
+        ],
+        "map1": 7196,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          35
+        ],
+        "map1": 7196,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          36
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          37
+        ],
+        "map1": 7196,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          38
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          39
+        ],
+        "map1": 7196,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          40
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          41
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          42
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          43
+        ],
+        "map1": 6939,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          44
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          45
+        ],
+        "map1": 6939,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          46
+        ],
+        "map1": 7196,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          47
+        ],
+        "map1": 7453,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          48
+        ],
+        "map1": 7196,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          49
+        ],
+        "map1": 6939,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          50
+        ],
+        "map1": 7710,
+        "flor": 3072
+      },
+      {
+        "original": [
+          1,
+          51
+        ],
+        "map1": 6939,
+        "flor": 3072
+      },
+      {
+        "original": [
+          2,
+          51
+        ],
+        "map1": 0,
+        "flor": 3072
+      }
+    ],
+    "exitBank": [
+      2,
+      50
+    ],
+    "room": [
+      {
+        "original": [
+          2,
+          46
+        ],
+        "map1": 32769,
+        "flor": 1024
+      },
+      {
+        "original": [
+          3,
+          46
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          5,
+          46
+        ],
+        "map1": 32796,
+        "flor": 768
+      },
+      {
+        "original": [
+          2,
+          47
+        ],
+        "map1": 0,
+        "flor": 1024
+      },
+      {
+        "original": [
+          3,
+          47
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          4,
+          47
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          5,
+          47
+        ],
+        "map1": 32796,
+        "flor": 768
+      },
+      {
+        "original": [
+          2,
+          48
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          3,
+          48
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          4,
+          48
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          5,
+          48
+        ],
+        "map1": 32796,
+        "flor": 768
+      },
+      {
+        "original": [
+          2,
+          49
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          3,
+          49
+        ],
+        "map1": 32826,
+        "flor": 768
+      },
+      {
+        "original": [
+          4,
+          49
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          5,
+          49
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          2,
+          50
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          3,
+          50
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          4,
+          50
+        ],
+        "map1": 0,
+        "flor": 1024
+      },
+      {
+        "original": [
+          5,
+          50
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          3,
+          51
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          4,
+          51
+        ],
+        "map1": 0,
+        "flor": 768
+      },
+      {
+        "original": [
+          5,
+          51
+        ],
+        "map1": 32778,
+        "flor": 768
+      }
+    ],
+    "directEastWalls": [
+      {
+        "original": [
+          6,
+          49
+        ],
+        "map1": 7453,
+        "flor": 768
+      },
+      {
+        "original": [
+          7,
+          49
+        ],
+        "map1": 7196,
+        "flor": 768
+      }
+    ],
+    "adaptation": "Bounded lower trench, one MV tile wide with existing stair lips at the two open ends; native walking and local overhead overlay, no general climbing/jumping/spell/cost. Only this route collapses into the orthogonal plane. MAP1 walls remain as overhead visuals; sides stay blocked."
+  },
+  "encounter": {
+    "id": "fang.1.enemy.mif3.49",
+    "eventId": 601,
+    "original": [
+      3,
+      49
+    ],
+    "flat": 58,
+    "resource": "GHOST.DFA",
+    "item": 43,
+    "enemyId": 11,
+    "troopId": 12
+  },
+  "preview": {
+    "id": "technical.fang.ghost-access",
+    "mapId": 13,
+    "original": [
+      9,
+      37
+    ],
+    "x": 273,
+    "y": 114,
+    "direction": 2
+  },
+  "limits": [
+    "No observation of traversal in the original executable",
+    "No blanket opening of all FLOR12 cells or eastern walls",
+    "Other chasm branches, lava and mobility costs remain independent",
+    "Room treasure5,51 becomes reachable but collection integration is separate"
+  ],
+  "reuseCandidates": [
+    {
+      "area": "oeste sul",
+      "pit": [
+        2,
+        62
+      ],
+      "land": [
+        2,
+        63
+      ]
+    },
+    {
+      "area": "oeste sul",
+      "pit": [
+        9,
+        75
+      ],
+      "land": [
+        8,
+        75
+      ]
+    },
+    {
+      "area": "oeste sul",
+      "pit": [
+        18,
+        74
+      ],
+      "land": [
+        19,
+        74
+      ]
+    }
+  ],
+  "reuseStatus": "Open MAP1 banks in the same FLOR12 component; candidate branches only, no additional geometry/enemies activated."
+}

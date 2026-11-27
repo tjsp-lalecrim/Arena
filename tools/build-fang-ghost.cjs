@@ -1,4 +1,4 @@
-// One reusable Ghost record; original position remains pending until access is proven.
+// One reusable Ghost record; bounded campaign placement belongs to the Fang map generator.
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
