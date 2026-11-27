@@ -3,7 +3,7 @@
 
 ## Centro e salas sul: seis encontros finais do primeiro nível — 27/11/2026
 
-**Cobertura vigente:** **76/76 encontros inventariados no primeiro nível**, 17/19 no segundo; total **93/95**. Os 13/13 tesouros registrados do primeiro nível foram preservados; segundo nível0/6. Acesso dos seis novos encontros verificado desde a entrada normal, nos dois sentidos; blocos anteriores mantêm suas evidências e condições de quest. A geometria e os demais eventos/objetos **não estão declarados completos**. Avaliação manual continua pendente, sem aprovação presumida. A prévia agrupada desta entrega incluirá nordeste/leste; referência e resultado em [Pages](PAGES_INFRA.md). Sem nova arte, parâmetros de combate, mecânica de exploração, tag ou release.
+**Cobertura vigente:** **76/76 encontros inventariados no primeiro nível**, 17/19 no segundo; total **93/95**. Os 13/13 tesouros registrados do primeiro nível foram preservados; segundo nível0/6. Acesso dos seis novos encontros verificado desde a entrada normal, nos dois sentidos; blocos anteriores mantêm suas evidências e condições de quest. A geometria e os demais eventos/objetos **não estão declarados completos**. Avaliação manual continua pendente, sem aprovação presumida. [Prévia agrupada publicada e conferida](PAGES_INFRA.md#fang-lair-encontros-do-primeiro-nível--27112026), fonte d783e99, incluindo nordeste/leste. Sem nova arte, parâmetros de combate, mecânica de exploração, tag ou release.
 
 | MIF base-zero | Criatura original / cadastro existente | Evento / MV |
 | --- | --- | --- |
