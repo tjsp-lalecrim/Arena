@@ -515,7 +515,7 @@
     "No observation of traversal in the original executable",
     "No blanket opening of all FLOR12 cells or eastern walls",
     "Other chasm branches, lava and mobility costs remain independent",
-    "Room treasure5,51 becomes reachable but collection integration is separate"
+    "Room treasure5,51 integrated in west/south delivery, separate persistent receipt"
   ],
   "reuseCandidates": [
     {
@@ -552,5 +552,5 @@
       ]
     }
   ],
-  "reuseStatus": "Open MAP1 banks in the same FLOR12 component; candidate branches only, no additional geometry/enemies activated."
+  "reuseStatus": "Candidates implemented as four explicitly validated west/south branches; see doc/mapas/FANG_OESTE_SUL_M02.json. Other branches remain independent."
 }
