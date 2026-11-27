@@ -783,6 +783,28 @@
             "scale": 1
           },
           {
+            "id": "fang.1.enemy.mif97.5",
+            "eventId": 615,
+            "origin": [
+              9,
+              18
+            ],
+            "sourceOriginal": [
+              97,
+              5
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
             "id": "fang.1.enemy.mif38.6",
             "eventId": 42,
             "origin": [
@@ -840,6 +862,94 @@
             "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
             "enemyId": 4,
             "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif70.7",
+            "eventId": 616,
+            "origin": [
+              90,
+              24
+            ],
+            "sourceOriginal": [
+              70,
+              7
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif76.9",
+            "eventId": 617,
+            "origin": [
+              72,
+              30
+            ],
+            "sourceOriginal": [
+              76,
+              9
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif72.20",
+            "eventId": 618,
+            "origin": [
+              84,
+              63
+            ],
+            "sourceOriginal": [
+              72,
+              20
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif79.20",
+            "eventId": 619,
+            "origin": [
+              63,
+              63
+            ],
+            "sourceOriginal": [
+              79,
+              20
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
             "questSpecific": true,
             "radius": 2,
             "interval": 90,
@@ -937,6 +1047,94 @@
             "scale": 1
           },
           {
+            "id": "fang.1.enemy.mif82.24",
+            "eventId": 620,
+            "origin": [
+              54,
+              75
+            ],
+            "sourceOriginal": [
+              82,
+              24
+            ],
+            "sourceFlat": "FANG1 flat56 GHOUL.DFA / ITEM41",
+            "enemyId": 5,
+            "troopId": 6,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif87.24",
+            "eventId": 621,
+            "origin": [
+              39,
+              75
+            ],
+            "sourceOriginal": [
+              87,
+              24
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif78.25",
+            "eventId": 622,
+            "origin": [
+              66,
+              78
+            ],
+            "sourceOriginal": [
+              78,
+              25
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif77.26",
+            "eventId": 623,
+            "origin": [
+              69,
+              81
+            ],
+            "sourceOriginal": [
+              77,
+              26
+            ],
+            "sourceFlat": "FANG1 flat56 GHOUL.DFA / ITEM41",
+            "enemyId": 5,
+            "troopId": 6,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
             "id": "fang.1.enemy.mif56.27",
             "eventId": 49,
             "origin": [
@@ -950,6 +1148,50 @@
             "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
             "enemyId": 8,
             "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif76.27",
+            "eventId": 624,
+            "origin": [
+              72,
+              84
+            ],
+            "sourceOriginal": [
+              76,
+              27
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif87.27",
+            "eventId": 625,
+            "origin": [
+              39,
+              84
+            ],
+            "sourceOriginal": [
+              87,
+              27
+            ],
+            "sourceFlat": "FANG1 flat56 GHOUL.DFA / ITEM41",
+            "enemyId": 5,
+            "troopId": 6,
             "questSpecific": true,
             "radius": 2,
             "interval": 90,
@@ -1003,6 +1245,94 @@
             "scale": 1
           },
           {
+            "id": "fang.1.enemy.mif76.31",
+            "eventId": 626,
+            "origin": [
+              72,
+              96
+            ],
+            "sourceOriginal": [
+              76,
+              31
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif88.31",
+            "eventId": 627,
+            "origin": [
+              36,
+              96
+            ],
+            "sourceOriginal": [
+              88,
+              31
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif86.33",
+            "eventId": 628,
+            "origin": [
+              42,
+              102
+            ],
+            "sourceOriginal": [
+              86,
+              33
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif91.33",
+            "eventId": 629,
+            "origin": [
+              27,
+              102
+            ],
+            "sourceOriginal": [
+              91,
+              33
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
             "id": "fang.1.enemy.mif41.34",
             "eventId": 52,
             "origin": [
@@ -1016,6 +1346,116 @@
             "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
             "enemyId": 8,
             "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif78.34",
+            "eventId": 630,
+            "origin": [
+              66,
+              105
+            ],
+            "sourceOriginal": [
+              78,
+              34
+            ],
+            "sourceFlat": "FANG1 flat56 GHOUL.DFA / ITEM41",
+            "enemyId": 5,
+            "troopId": 6,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif64.36",
+            "eventId": 631,
+            "origin": [
+              108,
+              111
+            ],
+            "sourceOriginal": [
+              64,
+              36
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif76.40",
+            "eventId": 632,
+            "origin": [
+              72,
+              123
+            ],
+            "sourceOriginal": [
+              76,
+              40
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif93.41",
+            "eventId": 633,
+            "origin": [
+              21,
+              126
+            ],
+            "sourceOriginal": [
+              93,
+              41
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif79.44",
+            "eventId": 634,
+            "origin": [
+              63,
+              135
+            ],
+            "sourceOriginal": [
+              79,
+              44
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
             "questSpecific": true,
             "radius": 2,
             "interval": 90,
@@ -1126,6 +1566,28 @@
             "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
             "enemyId": 4,
             "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif95.54",
+            "eventId": 635,
+            "origin": [
+              15,
+              165
+            ],
+            "sourceOriginal": [
+              95,
+              54
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
             "questSpecific": true,
             "radius": 2,
             "interval": 90,

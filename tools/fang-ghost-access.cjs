@@ -2,7 +2,8 @@
 const fs=require('fs'),path=require('path'),R=path.resolve(__dirname,'..');
 const spec=()=>JSON.parse(fs.readFileSync(path.join(R,'doc/mapas/FANG_FANTASMA_ACESSO_M02.json')));
 const west=()=>JSON.parse(fs.readFileSync(path.join(R,'doc/mapas/FANG_OESTE_SUL_M02.json')));
-const routes=()=>[spec().route,...west().routes];
+const east=()=>JSON.parse(fs.readFileSync(path.join(R,'doc/mapas/FANG_NORDESTE_LESTE_M02.json')));
+const routes=()=>[spec().route,...west().routes,...east().routes];
 const world=([x,y])=>[3+3*(99-x),3+3*y];
 function masks(plan){
  if(plan.level!==1)return {};
@@ -29,4 +30,4 @@ function apply(map,plan,atlas,materials){
  const xs=roof.map(t=>t.x),ys=roof.map(t=>t.y);
  map.arenaGhostPassage={id:'fang.1.lower-trench.ghost',pathTiles,overheadTiles:roof,worldBounds:[Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)],roofOpacityInside:48};
 }
-module.exports={spec,west,routes,world,masks,apply};
+module.exports={spec,west,east,routes,world,masks,apply};
