@@ -1,9 +1,41 @@
 # Fang Lair — amostra funcional das celas (M02-06A)
 
 
+## Centro e salas sul: seis encontros finais do primeiro nível — 27/11/2026
+
+**Cobertura vigente:** **76/76 encontros inventariados no primeiro nível**, 17/19 no segundo; total **93/95**. Os 13/13 tesouros registrados do primeiro nível foram preservados; segundo nível0/6. Acesso dos seis novos encontros verificado desde a entrada normal, nos dois sentidos; blocos anteriores mantêm suas evidências e condições de quest. A geometria e os demais eventos/objetos **não estão declarados completos**. Avaliação manual continua pendente, sem aprovação presumida. A prévia agrupada desta entrega incluirá nordeste/leste; referência e resultado em [Pages](PAGES_INFRA.md). Sem nova arte, parâmetros de combate, mecânica de exploração, tag ou release.
+
+| MIF base-zero | Criatura original / cadastro existente | Evento / MV |
+| --- | --- | --- |
+| (71,74) | Minotauro, alias OGRE.DFA / ITEM39 | 638 / (87,225) |
+| (71,79) | Ghoul / ITEM41 | 639 / (87,240) |
+| (31,89) | Aranha / ITEM40 | 640 / (207,270) |
+| (32,89) | Aranha / ITEM40 | 641 / (204,270) |
+| (64,94) | Minotauro, alias OGRE.DFA / ITEM39 | 642 / (108,285) |
+| (64,95) | Minotauro, alias OGRE.DFA / ITEM39 | 643 / (108,288) |
+
+IDs lógicos `fang.1.enemy.mifX.Y`, patrulhas em piso seco/região4, contato/trava de transição, combate e recibos existentes. EXP adicional **415** (Minotauros60×3, ghoul75, aranhas80×2), provisória para M02-BAL; tabelas de loot/atributos/fórmula não mudaram. São encontros opcionais para a rota principal, sem exigir eliminar todos.
+
+**Fontes e trajeto:** reaproveitados FANG1.INF, planta da wiki, MAP1/FLOR e o leitor existente; [comparação com o MIF instalado](evidencias/fang-centro-sul/fonte-verificada.json), sem observação de travessia DOS nesta tarefa. O contrato [FANG_CENTRO_SUL_M02](mapas/FANG_CENTRO_SUL_M02.json) registra cada célula/camada e [mapa anotado](evidencias/fang-centro-sul/camadas-rota.png). Mesma transformação MV=(3+3×(99−X),3+3×Y), sem mover eventos anteriores. O piso MIF(75,83), MV(75,252), liga-se à entrada normal por circulação já existente. Dali:
+
+- Poço (75,84) → (75,89) → (74,89–94) → (68,94–98) → (62,98–93) → margem **(63,93)**: acesso aos quatro encontros do centro sul.
+- Mesmo ramo até (62,93), continuando por (62,90) → (59,90) → (59,88) → margem **(59,87)**: acesso às duas aranhas das salas sul.
+
+São **41 células de poço** na união e **245 células secas** novas, com o mesmo corredor inferior de um tile, patamares e sobreposição já adotados. Nenhuma adaptação diferente foi necessária. As paredes sobre piso normal em (73,80), MAP1 0x1C1C, (22,88), 0x1C1C, e (23,88), 0x1D1D, permanecem sólidas. O pequeno poço (72,72)/(73,73–76), diagonais e volumes não necessários à conexão continuam intactos; não foram abertos por proximidade. Os seis encontros são alcançáveis sem depender de cruzar as cinco células BAGAGE1/F:1, excluídas conservadoramente numa conferência de conectividade, sem presumir uma nova regra de colisão desses props.
+
+**Objetos e materiais conferidos:** reuso do atlas da mina e das famílias de piso/parede do cadastro original; **75 células de trilho** acrescentadas e o suporte atravessável **BRACE.IMG (44,90)**, evento543, sem porta/LOCK novo. Totais projetados:531células de trilho e41/44suportes do primeiro nível. O contrato separa **19 props ainda não representados**: cinco BAGAGE1, um BRAZIER, seis TORCHPST, seis BARREL e EQUIPMEN (50,84). Não foram substituídos por marcadores/loot fictícios; aparência, base física e, para EQUIPMEN, função/coleta ainda exigem tratamento próprio. Esse inventário não invalida o acesso comprovado nem declara toda a decoração/eventos concluídos.
+
+**Persistência e validação:** [teste focal](../tools/test-fang-south.cjs) e [resultado](evidencias/fang-centro-sul/resultado.json), Chrome isolado: ida/volta desde a entrada, seis contatos, trava contra início repetido, retorno padrão de vitória e recompensas únicas, restauração do save sintético anterior sem os seis registros/eventos e sem o suporte novo, preservando ator/inventário/posição/quest/recibos. Save/load no túnel e após derrotas; saída à cidade e viagem de volta sem cura; tesouro antigo continua coletado. 1.591verificações laterais sem fuga e duas reconstruções idênticas. [Sobreposição renderizada](evidencias/fang-centro-sul/sobreposicao.json): cinco pares com/sem personagem comprovam pixels visíveis em margem, túnel, saídas e suporte, além das propriedades de camada. Nenhum save pessoal, namespace ou origem foi modificado.
+
+Fixture RAM e slot19 descartável. HP letal foi aplicado somente ao inimigo de teste após cada contato, para exercitar liquidação/retorno por ID; animações, ações, derrota e sequência dos enigmas/fragmento/Tharn inalteradas reutilizam as evidências anteriores. Movimento acelerado e patrulhas paradas na inspeção de rotas não constituem teste manual ou aprovação de balanceamento.
+
+**Roteiro integrado:** de Rihad, viajar a Fang Lair já descoberta. Seguir pela rota normal até a margem MIF(75,83)/MV(75,252), entrar no poço e alcançar a margem(63,93)/MV(111,282). Explorar o centro, voltar ao corredor inferior e seguir ao ramo(59,88) para sair em(59,87)/MV(123,264), nas salas das aranhas. Após uma vitória, salvar/carregar e conferir ausência do encontro/recompensa repetida. Retornar pela mesma rede e continuar pelos enigmas, fragmento e retaliação. Pode ser agrupado à exploração [nordeste/leste abaixo](#alas-nordeste-e-leste--27112026); não é necessário derrotar todos. Hub de celas/RAM preservado, sem comandos redundantes.
+
+**Pendências reais:** geometria e props além do recorte explicitamente auditado; função/representação de EQUIPMEN(50,84); três suportes de origem ainda não projetados; dragon gate exterior/vagonetes e ilustrações seguem seus registros. A ilha de lava, com dois ghouls e seis tesouros, mantém confirmação de rota e regras de risco/proteção próprias. Não confundir76/76encontros com conclusão da dungeon, aprovação manual ou fechamento de MQ02/M02.
+
 ## Alas nordeste e leste — 27/11/2026
 
-**Cobertura vigente:** Map013 **70/76 encontros**, Map017 **17/19**; total **87/95**. Tesouros: **13/13 no primeiro nível**, 0/6 no segundo. A matriz registra 3.684 células-fonte com piso parcial/integral. Isso não significa geometria ou eventos integralmente concluídos. Avaliação manual adiada para o teste integrado, sem aprovação presumida. Esta entrega aguarda a próxima publicação agrupada no Pages; não houve publicação, geração artística ou release.
+**Registro da entrega anterior (totais substituídos acima):** Map013 **70/76 encontros**, Map017 **17/19**; total **87/95**. Tesouros: **13/13 no primeiro nível**, 0/6 no segundo. A matriz registra 3.684 células-fonte com piso parcial/integral. Isso não significa geometria ou eventos integralmente concluídos. Avaliação manual adiada para o teste integrado, sem aprovação presumida. Naquela entrega não houve publicação; nordeste/leste entram na prévia agrupada centro/sul acima. Sem geração artística ou release.
 
 **Consulta e certeza:** reutilizados a planta da wiki, FANG1.INF, as extrações e o leitor de MAP1/FLOR. A comparação com o MIF instalado confirmou os mesmos hashes das camadas ([resultado](evidencias/fang-nordeste-leste/fonte-verificada.json)); ausência de MAP2 preservada. A fundamentação dos túneis é a mesma do acesso ao Fantasma: FLOR12 no plano inferior e parede comum MAP1 acima, guia instalado e interpretação do formato, **sem observação de travessia no executável DOS nesta tarefa**. [Contrato delimitado](mapas/FANG_NORDESTE_LESTE_M02.json) · [planta anotada](evidencias/fang-nordeste-leste/camadas-rota.png). Coordenadas MIF base-zero; MV=(3+3×(99−X),3+3×Y), mantendo todos os pontos anteriores.
 
@@ -27,7 +59,7 @@ Chrome isolado, sessão RAM e slot19 sintético. Os inimigos receberam HP letal 
 
 **Acesso para a próxima avaliação integrada:** campanha normal após descobrir Fang Lair, viajar de Rihad à mina e seguir à margem MIF(59,8)/MV(123,27). Percorrer a passagem até (64,12), explorar a ala nordeste e o tesouro (71,4); pela margem (95,19), alcançar o tesouro (96,34) e as salas orientais. A rede sul leva de volta pela margem (82,61)/MV(54,186). Salvar/carregar após uma coleta/vitória e retornar à rota dos enigmas. [Margem norte](evidencias/fang-nordeste-leste/margem-59-8.png) · [túnel](evidencias/fang-nordeste-leste/sob-a-estrutura.png) · [saída leste](evidencias/fang-nordeste-leste/saida-94-46.png) · [suporte atravessável](evidencias/fang-nordeste-leste/suporte-69-34.png). O laboratório **Testes / Debug → Campanha e mapas → Fang Lair · celas (RAM)** permanece disponível, com guardar/carregar RAM e sem novos comandos ou slots pessoais.
 
-**Próximo bloco:** quatro encontros de centro sul, MIF(71,74)/(71,79)/(64,94)/(64,95), e duas aranhas das salas sul (31,89)/(32,89). Conferir primeiro as ligações da rede FLOR12 pelas margens (62,93–96) e (27,93)/(43–46,96), sem liberar os candidatos de parede (73,80)/(22,88)/(23,88) por analogia. A ilha de lava (dois ghouls), seus seis tesouros e risco/proteção continuam com dependências próprias. A geometria remanescente, dragon gate exterior, vagonetes, Servo e ilustrações mantêm seus registros; não são declarados resolvidos por esta ampliação.
+**Planejamento anterior, executado acima:** quatro encontros de centro sul, MIF(71,74)/(71,79)/(64,94)/(64,95), e duas aranhas das salas sul (31,89)/(32,89). Conferir primeiro as ligações da rede FLOR12 pelas margens (62,93–96) e (27,93)/(43–46,96), sem liberar os candidatos de parede (73,80)/(22,88)/(23,88) por analogia. A ilha de lava (dois ghouls), seus seis tesouros e risco/proteção continuam com dependências próprias. A geometria remanescente, dragon gate exterior, vagonetes, Servo e ilustrações mantêm seus registros; não são declarados resolvidos por esta ampliação.
 
 ## Ala oeste/sul e tesouro do Fantasma — 26/11/2026
 

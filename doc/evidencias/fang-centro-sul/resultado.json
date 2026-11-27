@@ -1,0 +1,71 @@
+{
+  "baseline": "3c25090ef7a2934f7d98656d9933777bdbaab271",
+  "browser": "158.0.8127.37",
+  "url": "http://127.0.0.1:8774/",
+  "coverage": {
+    "upperEnemies": 76,
+    "totalUpperEnemies": 76,
+    "lowerEnemies": 17,
+    "totalLowerEnemies": 19,
+    "upperTreasures": 13,
+    "totalUpperTreasures": 13
+  },
+  "changedNativeCells": 2329,
+  "distances": [
+    {
+      "id": "fang.1.lower-trench.south.1",
+      "bank": [
+        63,
+        93
+      ],
+      "steps": 102
+    },
+    {
+      "id": "fang.1.lower-trench.south.2",
+      "bank": [
+        59,
+        87
+      ],
+      "steps": 126
+    }
+  ],
+  "sides": {
+    "tested": 1591,
+    "invalid": 0,
+    "chunks": 45,
+    "maxCanvas": 589824
+  },
+  "battles": [
+    {
+      "id": "fang.1.enemy.mif71.74",
+      "exp": 60
+    },
+    {
+      "id": "fang.1.enemy.mif71.79",
+      "exp": 75
+    },
+    {
+      "id": "fang.1.enemy.mif31.89",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif32.89",
+      "exp": 80
+    },
+    {
+      "id": "fang.1.enemy.mif64.94",
+      "exp": 60
+    },
+    {
+      "id": "fang.1.enemy.mif64.95",
+      "exp": 60
+    }
+  ],
+  "checks": [
+    "Native ida/volta from unchanged normal mine entrance through two explicit lower routes; all six new encounters reached, no side leaks or resource/quest change",
+    "Legacy synthetic save with six missing enemy records/events and one missing brace restored additively; actor/inventory/quests/position/prior treasure receipt preserved, native save/load inside trench",
+    "Six independent native contacts, transition lock, normal victory/reward settlement once; defeats/loot persist through save and actual mine exit to Rihad/validated travel back, resources preserved; MQ01/MQ02/Ria unchanged. Existing riddles/fragment/Tharn tests reused (unchanged)"
+  ],
+  "errors": [],
+  "limits": "Synthetic RAM fixture, native accelerated route with stationary patrols; separate disposable normal slot19, lethal HP test for six encounters with existing species, reward/return paths, not combat/balance assessment. No personal storage or manual approval; no DOS traversal observation."
+}

@@ -83,36 +83,36 @@
         "######1.======#....############=#=#.....#########.....2###1..########.2##.###########t#......#t#..t#",
         "#######==2######1..############...#.....#########.....#####..########.###.###.....###t#......#t#..t#",
         "##3.#.#=#########..################.....#########.....#####..########.###.###.....###t#..#####t#..t#",
-        "##....#=.4#######..################.....##...#############3..#.#..###=###.###.....###t#..#ttttt#..t#",
-        "##....#=.....####..################.....##...4#########......#....4#3...=.###.....###t#..#t#####..t#",
-        "##.....=.....####..###############3.....##............................#.#.###....ttttt#..#t#####..t#",
-        "##....==......###..4#############.......##..............##1.............4####.....#####..#t.......t#",
-        "######=######=###...#############.......##...2##..#####=#####1....2####...........#####..#........t#",
-        "##..#.=.#..##..##...#############.......##############...##############=###############..#..###...t#",
-        "##....=....##..##...#############.......##############...#############...#####...........#..###...t#",
-        "##..#.=.#..##..##...##################################...#############...#####...........#..######t#",
-        "#####...#####..##...4#3...############################...#############...#####..#######......#####t#",
-        "##..#...#..##..###1.......############################################...#####..#######......##tttt#",
-        "##.........##..####.......####################################################..#######......##t####",
-        "##..#...#..##..#######1...####################################################..#######......##t####",
-        "#####...#####..########.#.####################################################..#######......##t####",
-        "##..#...#..##..###############################################################..#######......##tttt#",
-        "##.........##..###############################################################..#######......#####t#",
-        "##..#...#..##..#....##########################################################..##################t#",
-        "###.#...#.###..#....##########################################################..################ttt#",
-        "##..........#..#....##########################################################..################t###",
-        "##..........#..#....##########################################################..################t###",
-        "##..........#..#....##########################################################....###########tttt###",
-        "##..........#.......##########################################################....###########t######",
-        "##........#.##......##########################################################....###########t######",
-        "##........#.##################################################################....###########..#####",
-        "##........#.#################################################################################..#####",
-        "##.##.##.##.#################################################################################..#####",
-        "##.##.##.##.###############################################################################....#####",
-        "##.##.##.##.###############################################################################....#####"
+        "##....#=.4#######..#########..#####.....##...#############3..#.#..###=###.###.....###t#..#ttttt#..t#",
+        "##....#=.....####..########...#####.....##...4#########......#....4#3...=.###.....###t#..#t#####..t#",
+        "##.....=.....####..########...####3.....##............................#.#.###....ttttt#..#t#####..t#",
+        "##....==......###..4#######...###.......##..............##1.............4####.....#####..#t.......t#",
+        "######=######=###...#######...###.......##...2##..#####=#####1....2####...........#####..#........t#",
+        "##..#.=.#..##..##...#######..####.......##############...##############=###############..#..###...t#",
+        "##....=....##..##...#######..####.......##############...#############...#####...........#..###...t#",
+        "##..#.=.#..##..##...#######..#########################...#############...#####...........#..######t#",
+        "#####...#####..##...4#3...#..#########################...#############...#####..#######......#####t#",
+        "##..#...#..##..###1.......#..#########################################...#####..#######......##tttt#",
+        "##.........##..####.......#..#################################################..#######......##t####",
+        "##..#...#..##..#######1...#..#################################################..#######......##t####",
+        "#####...#####..########.t.#..##################...############################..#######......##t####",
+        "##..#...#..##..#########t##..###########.######...############################..#######......##tttt#",
+        "##.........##..#########t##.....########.######...############################..#######......#####t#",
+        "##..#...#..##..#....####t##...........##..........##########....##############..##################t#",
+        "###.#...#.###..#....####t##...........##t.........####......................##..################ttt#",
+        "##..........#..#....####tt#.....##...###t#####....####......................##..################t###",
+        "##..........#..#....#####t#.....##...tttt#####..#######.####....########....##..################t###",
+        "##..........#..#....#####t#.....##...t########..#####....###############....##....###########tttt###",
+        "##..........#.......#####t#.....##...t#######............###############....##....###########t######",
+        "##........#.##......#####t########...t#######............################...##....###########t######",
+        "##........#.#############ttttttt##...t###############....#####################....###########..#####",
+        "##........#.###################t##...t###############....####################################..#####",
+        "##.##.##.##.###################t##...t#######################################################..#####",
+        "##.##.##.##.###################t#####t#####################################################....#####",
+        "##.##.##.##.###################ttttttt#####################################################....#####"
       ],
-      "priorWalkable": 2736,
-      "walkable": 3684,
+      "priorWalkable": 3684,
+      "walkable": 3970,
       "encounters": [
         {
           "original": [
@@ -782,9 +782,11 @@
           "flat": 54,
           "resource": "OGRE.DFA",
           "item": 39,
-          "status": "pending",
+          "status": "added",
           "area": "centro sul",
-          "dependency": "dry-chasm-diagonal-or-height-access"
+          "dependency": null,
+          "eventId": 638,
+          "access": "central-south-trenches-brace"
         },
         {
           "original": [
@@ -849,9 +851,11 @@
           "flat": 56,
           "resource": "GHOUL.DFA",
           "item": 41,
-          "status": "pending",
+          "status": "added",
           "area": "centro sul",
-          "dependency": "dry-chasm-diagonal-or-height-access"
+          "dependency": null,
+          "eventId": 639,
+          "access": "central-south-trenches-brace"
         },
         {
           "original": [
@@ -962,9 +966,11 @@
           "flat": 55,
           "resource": "SPIDER.DFA",
           "item": 40,
-          "status": "pending",
+          "status": "added",
           "area": "salas sul",
-          "dependency": "dry-chasm-diagonal-or-height-access"
+          "dependency": null,
+          "eventId": 640,
+          "access": "central-south-trenches-brace"
         },
         {
           "original": [
@@ -974,9 +980,11 @@
           "flat": 55,
           "resource": "SPIDER.DFA",
           "item": 40,
-          "status": "pending",
+          "status": "added",
           "area": "salas sul",
-          "dependency": "dry-chasm-diagonal-or-height-access"
+          "dependency": null,
+          "eventId": 641,
+          "access": "central-south-trenches-brace"
         },
         {
           "original": [
@@ -1028,9 +1036,11 @@
           "flat": 54,
           "resource": "OGRE.DFA",
           "item": 39,
-          "status": "pending",
+          "status": "added",
           "area": "centro sul",
-          "dependency": "dry-chasm-diagonal-or-height-access"
+          "dependency": null,
+          "eventId": 642,
+          "access": "central-south-trenches-brace"
         },
         {
           "original": [
@@ -1040,9 +1050,11 @@
           "flat": 54,
           "resource": "OGRE.DFA",
           "item": 39,
-          "status": "pending",
+          "status": "added",
           "area": "centro sul",
-          "dependency": "dry-chasm-diagonal-or-height-access"
+          "dependency": null,
+          "eventId": 643,
+          "access": "central-south-trenches-brace"
         }
       ],
       "locks": [
@@ -2098,30 +2110,6 @@
         ],
         "unresolved": [
           {
-            "area": "centro sul",
-            "wallCandidates": [
-              [
-                73,
-                80
-              ]
-            ],
-            "obstruction": "MAP1 solido"
-          },
-          {
-            "area": "salas sul",
-            "wallCandidates": [
-              [
-                22,
-                88
-              ],
-              [
-                23,
-                88
-              ]
-            ],
-            "obstruction": "MAP1 solido; acesso via outras alas segue sem confirmacao"
-          },
-          {
             "area": "oeste sul — volumes/diagonais restantes",
             "wallCandidates": [
               [
@@ -2144,6 +2132,24 @@
               ]
             ],
             "obstruction": "All21inventoried encounters and both treasures now accessible via explicit lower routes/BRACE0x9138. Candidate67,43 is solid MAP1 0x1E1E on normal floor,92,38 is a solid normal-floor wall; retained. Unresolved volumes87,21/88,21 are not assumed to be carts or passable. No new LOCK/door."
+          },
+          {
+            "area": "centro/salas sul — geometria e objetos restantes",
+            "wallCandidates": [
+              [
+                73,
+                80
+              ],
+              [
+                22,
+                88
+              ],
+              [
+                23,
+                88
+              ]
+            ],
+            "obstruction": "Six encounters reachable by lower route from75,83 through62,93/59,88. Normal-floor walls remain solid. Small chasm72,72/73,73–76 and nonessential diagonal/raised volumes not opened. Source decoration/objects beyond the reusable brace/tracks remain pending, including EQUIPMEN50,84 function."
           }
         ],
         "ghostAccess": {
@@ -2173,6 +2179,13 @@
           "pitCells": 92,
           "roomCells": 856,
           "method": "Explicit FLOR12 chains plus dry zero/flat cells and BRACE0x9138 noncolliding supports, no doors invented or raised/diagonal voxels removed"
+        },
+        "centralSouthAccess": {
+          "contract": "doc/mapas/FANG_CENTRO_SUL_M02.json",
+          "routes": 2,
+          "pitCells": 41,
+          "roomCells": 245,
+          "method": "Explicit FLOR12 chains, zero-MAP1 banks and dry components including the noncolliding BRACE0x9138; existing masks/roof only"
         }
       },
       "optionalTreasureCells": [
@@ -2423,6 +2436,33 @@
         "optional-cell": 4,
         "dry": 9,
         "pending": 0
+      },
+      "coverageStatus": {
+        "encounters": {
+          "implemented": 76,
+          "inventoried": 76,
+          "pending": 0,
+          "access": "Six central/south additions verified from normal entrance, both directions; preceding blocks reuse their valid evidence and original quest conditions (cell spiders) remain intact"
+        },
+        "treasures": {
+          "implemented": 13,
+          "inventoried": 13,
+          "changedThisDelivery": 0
+        },
+        "geometry": {
+          "complete": false,
+          "sourceCellsWithPartialOrFullFloor": 3970,
+          "pending": "Normal-floor walls and unused pit/diagonal/raised geometry retained. Reaching all inventoried encounters is not proof of full geometry/event fidelity."
+        },
+        "objects": {
+          "representedBraces": 41,
+          "sourceBraces": 44,
+          "projectedTrackCells": 531,
+          "unrepresentedPropsInNewRooms": 19,
+          "audit": "doc/mapas/FANG_CENTRO_SUL_M02.json#objectsAudit",
+          "equipment50_84": "Visual and function not confirmed; not silently counted as an implemented treasure"
+        },
+        "manualEvaluation": "pending integrated campaign test"
       }
     },
     {
@@ -3048,7 +3088,7 @@
         72,
         96
       ],
-      "dependency": "diagonais e poços secos"
+      "dependency": "All six inventoried encounters accessible and integrated via explicit lower routes; normal-floor walls, optional chasm, other diagonal/raised geometry and unrepresented source props remain pending; manual evaluation pending"
     },
     {
       "level": 1,
@@ -3059,7 +3099,7 @@
         84,
         95
       ],
-      "dependency": "diagonais e poços secos"
+      "dependency": "All six inventoried encounters accessible and integrated via explicit lower routes; normal-floor walls, optional chasm, other diagonal/raised geometry and unrepresented source props remain pending; manual evaluation pending"
     },
     {
       "level": 2,

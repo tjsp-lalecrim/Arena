@@ -1905,6 +1905,28 @@
             "scale": 1
           },
           {
+            "id": "fang.1.enemy.mif71.74",
+            "eventId": 638,
+            "origin": [
+              87,
+              225
+            ],
+            "sourceOriginal": [
+              71,
+              74
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
             "id": "fang.1.enemy.mif20.75",
             "eventId": 68,
             "origin": [
@@ -2006,6 +2028,28 @@
             "sourceFlat": "FANG1 flat52 ORC.DFA / ITEM37",
             "enemyId": 7,
             "troopId": 8,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif71.79",
+            "eventId": 639,
+            "origin": [
+              87,
+              240
+            ],
+            "sourceOriginal": [
+              71,
+              79
+            ],
+            "sourceFlat": "FANG1 flat56 GHOUL.DFA / ITEM41",
+            "enemyId": 5,
+            "troopId": 6,
             "questSpecific": true,
             "radius": 2,
             "interval": 90,
@@ -2213,6 +2257,50 @@
             "scale": 1
           },
           {
+            "id": "fang.1.enemy.mif31.89",
+            "eventId": 640,
+            "origin": [
+              207,
+              270
+            ],
+            "sourceOriginal": [
+              31,
+              89
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif32.89",
+            "eventId": 641,
+            "origin": [
+              204,
+              270
+            ],
+            "sourceOriginal": [
+              32,
+              89
+            ],
+            "sourceFlat": "FANG1 flat55 SPIDER.DFA / ITEM40",
+            "enemyId": 9,
+            "troopId": 10,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
             "id": "fang.1.enemy.mif18.92",
             "eventId": 607,
             "origin": [
@@ -2270,6 +2358,50 @@
             "sourceFlat": "FANG1 flat53 SKELETON.DFA / ITEM38",
             "enemyId": 4,
             "troopId": 5,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif64.94",
+            "eventId": 642,
+            "origin": [
+              108,
+              285
+            ],
+            "sourceOriginal": [
+              64,
+              94
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
+            "questSpecific": true,
+            "radius": 2,
+            "interval": 90,
+            "regions": [
+              4
+            ],
+            "scale": 1
+          },
+          {
+            "id": "fang.1.enemy.mif64.95",
+            "eventId": 643,
+            "origin": [
+              108,
+              288
+            ],
+            "sourceOriginal": [
+              64,
+              95
+            ],
+            "sourceFlat": "FANG1 flat54 OGRE.DFA / ITEM39",
+            "enemyId": 8,
+            "troopId": 9,
             "questSpecific": true,
             "radius": 2,
             "interval": 90,
