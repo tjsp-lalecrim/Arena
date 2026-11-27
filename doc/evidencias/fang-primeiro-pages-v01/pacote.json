@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "d783e99ad8b4fb50968da8d3a1acb3153fee5ea9",
+  "testVersion": "m01-rc1",
+  "runtimeFiles": 449,
+  "runtimeBytes": 57865273,
+  "totalBytes": 57942845,
+  "manifestSha256": "9b90e64b29613f3a421f7b75b5be03c4edf5aef4f0177635f7dbeb33ae4f992f",
+  "rebuildsIdentical": true,
+  "recipe": "LF checkout; builder/recipe from selected source, same as Linux workflow",
+  "scope": "Grouped preview: northeastern/eastern wings and six final central/southern encounters.76/76 fixed encounters integrated, geometry incomplete; no runtime change in infra commit"
+}
