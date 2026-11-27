@@ -1,0 +1,48 @@
+{
+  "baseline": "2f21638",
+  "browser": "158.0.8127.37",
+  "url": "http://127.0.0.1:8774/",
+  "pitCells": 33,
+  "roomCells": 22,
+  "changedNativeCells": 297,
+  "distances": [
+    218,
+    218,
+    18,
+    84,
+    102
+  ],
+  "sides": {
+    "tested": 198,
+    "invalid": 0
+  },
+  "encounter": {
+    "id": "fang.1.enemy.mif3.49",
+    "eventId": 601,
+    "origin": [
+      291,
+      150
+    ],
+    "sourceOriginal": [
+      3,
+      49
+    ],
+    "sourceFlat": "FANG1 flat58 GHOST.DFA / ITEM43",
+    "enemyId": 11,
+    "troopId": 12,
+    "questSpecific": true,
+    "radius": 2,
+    "interval": 90,
+    "regions": [
+      4
+    ],
+    "scale": 1
+  },
+  "checks": [
+    "Existing RAM menu reaches unchanged campaign bank; native path ida/volta, side collision, overhead alpha and resources/quest preserved",
+    "Ordinary synthetic slot19 reload inside trench and chamber; old missing event appended once by existing sync, namespace unchanged",
+    "Native campaign contact once, actual victory/return, EXP100 once, empty campaign drops and one receipt; defeat survives save/load and repeated reward calls"
+  ],
+  "errors": [],
+  "limits": "Source/raw/manual interpretation, not original DOS observation. Disposable level10 equipped actor and RNG0.5 for one campaign battle; route uses native movement helper with stationary encounters, no personal save. Prior ghost animation/defeat and MQ02 riddle/Tharn evidence reused; no visual or balance approval inferred."
+}

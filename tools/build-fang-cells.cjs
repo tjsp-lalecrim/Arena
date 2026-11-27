@@ -7,6 +7,7 @@ const materialPlan=require('../doc/mapas/FANG_MATERIAIS_M02.json');
 
 function terrain(plan,s,m,atlas,stair){
  const rows=plan.rows, materials=materialPlan.levels[plan.level-1];
+ const ghostPassage=require('./fang-ghost-access.cjs'),trench=ghostPassage.masks(plan);
  if(materials.crop.join()!==plan.crop.join()||materials.walls.length!==rows.length||
     materials.floors.length!==rows.length||
     rows.some((row,i)=>materials.walls[i].length!==row.length||materials.floors[i].length!==row.length)){
@@ -21,6 +22,7 @@ function terrain(plan,s,m,atlas,stair){
                     '3':['###','#..','#..'],'4':['###','..#','..#']};
  function solidAt(x,y){
   const value=cell(x,y),mask=cornerMasks[value];
+  if(value==='t'){const key=[plan.crop[1]-Math.floor((x-m)/s),plan.crop[2]+Math.floor((y-m)/s)].join(),shape=trench[key];if(!shape)throw Error('Unregistered lower trench '+key);return !shape.has([(x-m)%s,(y-m)%s].join());}
   return mask?mask[(y-m)%s][(x-m)%s]==='#':value==='#';
  }
  for(let y=0;y<h;y++)for(let x=0;x<w;x++){
@@ -32,16 +34,16 @@ function terrain(plan,s,m,atlas,stair){
   }else{
    const atStair=Math.abs(stair[0]-x)<=1&&Math.abs(stair[1]-y)<=1;
    const original=at('floors',x,y);
-   const floor=atStair?'stair':value==='='||value==='+'||original==='2'?'cut':original==='1'?'earth':'gravel';
+   const floor=atStair?'stair':value==='t'||value==='='||value==='+'||original==='2'?'cut':original==='1'?'earth':'gravel';
    data[y*w+x]=atlas.floor(floor,x,y);
   }
-  data[(5*h+y)*w+x]=solid?1:4;
+  data[(5*h+y)*w+x]=solid?1:value==='t'?5:4;
  }
- return {width:w,height:h,data};
+ const result={width:w,height:h,data};if(plan.level===1)ghostPassage.apply(result,plan,atlas,materials);return result;
 }
 module.exports=function(){
  const hound=require('./build-fang-hell-hound.cjs')();
- require('./build-fang-ghost.cjs')();
+ const ghost=require('./build-fang-ghost.cjs')();
  const atlas=installAtlas(materialSpec);
  const c=read('data/ArenaFangCells.json');
  const [upperPlan,lowerPlan]=read('doc/mapas/FANG_COBERTURA_M02.json').levels;
@@ -103,7 +105,7 @@ module.exports=function(){
  events[8].pages[0].trigger=1;
  const profile=read('data/ArenaStonekeepWhole.json').encounters;
  const encounterTemplate=read('data/Map008.json').events[169];
- const species={34:3,37:7,38:4,39:8,40:9,41:5,42:hound.enemyId};
+ const species={34:3,37:7,38:4,39:8,40:9,41:5,42:hound.enemyId,43:ghost.enemyId};
  function addEncounters(plan,mapEvents,legacy){
   return plan.encounters.filter(row=>row.status!=='pending').map(row=>{
    const [x,y]=row.original,existing=legacy.find(e=>e.sourceOriginal[0]===x&&e.sourceOriginal[1]===y);
@@ -111,7 +113,7 @@ module.exports=function(){
    const origin=toMap(plan,row.original),enemyId=species[row.item];
    if(!enemyId||plan.rows[y-plan.crop[2]][plan.crop[1]-x]==='#')throw Error('Fang: invalid active encounter at '+row.original);
    const isHound=enemyId===hound.enemyId;
-   const template=isHound?hound:profile.entries.find(e=>e.enemyId===enemyId);
+   const template=isHound?hound:enemyId===ghost.enemyId?ghost:profile.entries.find(e=>e.enemyId===enemyId);
    const data={id:existing?.id||`fang.${plan.level}.enemy.mif${x}.${y}`,eventId:existing?.eventId||row.eventId,
     origin,sourceOriginal:row.original,sourceFlat:`FANG${plan.level} flat${row.flat} ${row.resource} / ITEM${row.item}`,
     enemyId,troopId:template.troopId,questSpecific:true,radius:isHound?1:2,interval:90,regions:[4],scale:template.scale};
@@ -127,7 +129,7 @@ module.exports=function(){
  const entries=addEncounters(upperPlan,events,c.spiders);
  const dryTreasures=upperPlan.treasures.filter(chest=>chest.status==='dry').map(({id,eventId,original})=>({id,eventId,original}));
  dryTreasures.forEach(addTreasure);
- write('ArenaFangCells',{...c,dryTreasures});
+ write('ArenaFangCells',{...c,dryTreasures,ghostAccess:require('./fang-ghost-access.cjs').spec().preview});
  if(read('data/MapInfos.json')[13]&&read('data/MapInfos.json')[13].name!=='M02-06 Fang Lair — celas (provisório)')throw Error('Map013 ID occupied');
  write('Map013',{...read('data/Map001.json'),...terrain(upperPlan,3,2,atlas,c.limit),tilesetId:materialSpec.tilesetId,displayName:'',note:'Fang Lair: entrada, alas secas e celas, atlas da mina V01.',encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events});
  const infos=read('data/MapInfos.json');infos[13]={id:13,expanded:true,name:'M02-06 Fang Lair — celas (provisório)',order:13,parentId:0,scrollX:0,scrollY:0};
@@ -161,7 +163,7 @@ module.exports=function(){
   tilesetId:materialSpec.tilesetId,displayName:'',note:'FANG2: escada, alas secas, segundo enigma e sala do fragmento. Atlas da mina V01.',
   encounterList:[],scrollType:0,parallaxName:'',specifyBattleback:false,events:lowerEvents},atlas);
  const items=read('data/Items.json');if(items[8]&&!items[8].note.includes('MQ02.gold-key'))throw Error('Item8 occupied');items[8]={...items[1],id:8,name:'Chave dourada de Fang Lair',description:'Chave da Cela 2. Abre o portal junto às celas de Fang Lair. Ícone provisório.',itypeId:2,consumable:false,price:0,note:'<ArenaQuest: MQ02>\n<ArenaUnique>\nMQ02.gold-key / fang.cell2.key; consumo somente no portal.'};
- const visuals=entries=>Object.fromEntries([...new Set(entries.map(e=>e.enemyId))].map(id=>[id,id===hound.enemyId?hound.mapVisual:profile.mapVisuals[id]]));
+ const visuals=entries=>Object.fromEntries([...new Set(entries.map(e=>e.enemyId))].map(id=>[id,id===hound.enemyId?hound.mapVisual:id===ghost.enemyId?ghost.mapVisual:profile.mapVisuals[id]]));
  const campaign=read('data/ArenaCampaign.json');Object.assign(campaign.areas.find(a=>a.id===c.areaId),{mapId:c.mapId,encounters:{schemaVersion:1,mapId:c.mapId,areaId:c.areaId,completionQuestId:c.questId,mapVisuals:visuals(entries),entries}});campaign.sources.find(v=>v.id===c.sourceId).itemId=c.itemId;
  const staffSource=campaign.sources.find(source=>source.id===staff.sourceId);
  if(!staffSource||staffSource.areaId!==lower.areaId||staffSource.questId!==c.questId)throw Error('Invalid campaign source '+staff.sourceId);
