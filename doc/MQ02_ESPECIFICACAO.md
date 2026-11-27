@@ -2,6 +2,8 @@
 
 ## Roteiro integrado de MQ02 no Chrome
 
+**Exploração opcional de Fang Lair:** [Fantasma, ramo oeste/sul e cinco tesouros](FANG_CELAS_M02_06A.md#ala-oestesul-e-tesouro-do-fantasma--26112026). A partir da entrada, margem MIF(9,37)/MV(273,114), poço seco até a câmara; tesouro(5,51), continuidade sul pelas margens(2,63)/(8,75)/(19,74)/(6,94). Conferir uma derrota e uma coleta após salvar/carregar e voltar à rota dos enigmas. Não é condição para obter o fragmento ou concluir MQ02; avaliação manual pendente.
+
 **Mapa mundial integrado:** [roteiro e regras](plugins/Arena_WorldMap.md#verificação-e-avaliação). Na cidade, usar menu Mapa mundial/M → Hammerfell → destino conhecido; conferir cancelamento e viagem a Stonekeep, retorno pelo evento normal e viagem a Fang Lair após entrega. Em interiores, apenas consulta; etapa100 mantém saída/visão/retaliação obrigatórias. Portão continua como alternativa pelo mesmo serviço.
 
 **Feedback recebido:** a visão de Ria foi apresentada com sucesso. A avaliação do mapa mundial permanece pendente; não pedir nova avaliação isolada da visão. As menções históricas abaixo ao bloqueio anterior da cama não anulam esse relato.

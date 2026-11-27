@@ -1,5 +1,5 @@
 /*:
- * @plugindesc v0.9.0 Fang Lair: celas, alas e acesso inferior ao Fantasma.
+ * @plugindesc v0.10.0 Fang Lair: celas, alas e acesso inferior ao Fantasma.
  * @author Codex
  * @help Após CourtDelivery, DebugHub e núcleos Persistence/Quests/Journal.
  * ArenaFangCells.json; Map013 e Map017, incluindo a sala do fragmento.
@@ -340,19 +340,25 @@ var ArenaFangCells;
  // Same local overhead/cutaway construction used by Stonekeep's dry corridor.
  // FLOR12 is open only on the authored lower path; not a global passability rule.
  var createTiles=Spriteset_Map.prototype.createTilemap;
- Spriteset_Map.prototype.createTilemap=function(){createTiles.apply(this,arguments);var p=$dataMap.arenaGhostPassage;if(!p)return;
-  var b=p.worldBounds,bitmap=new Bitmap((b[2]-b[0]+1)*48,(b[3]-b[1]+1)*48),roof=new Sprite(bitmap),atlas=ImageManager.loadTileset($dataTilesets[$dataMap.tilesetId].tilesetNames[6]);
-  atlas.addLoadListener(function(){p.overheadTiles.forEach(function(t){var i=t.tileId%256;bitmap.blt(atlas,i%8*48,Math.floor(i/8)*48,48,48,(t.x-b[0])*48,(t.y-b[1])*48);});});
-  this._fangGhostRoof=roof;this._baseSprite.addChild(roof);
- };
- var tileUpdate=Spriteset_Map.prototype.updateTilemap;
- Spriteset_Map.prototype.updateTilemap=function(){tileUpdate.apply(this,arguments);var roof=this._fangGhostRoof;if(!roof)return;var p=$dataMap.arenaGhostPassage,b=p.worldBounds;
-  roof.x=b[0]*48-this._tilemap.origin.x;roof.y=b[1]*48-this._tilemap.origin.y;
-  roof.alpha=p.pathTiles.some(function(v){return Math.abs($gamePlayer._realX-v[0])+Math.abs($gamePlayer._realY-v[1])<1;})?p.roofOpacityInside/255:1;
- };
- var terminateMap=Scene_Map.prototype.terminate;
- Scene_Map.prototype.terminate=function(){terminateMap.apply(this,arguments);var roof=this._spriteset&&this._spriteset._fangGhostRoof;if(roof&&roof.bitmap){var b=roof.bitmap;if(b._baseTexture)b._baseTexture.destroy();b._canvas.width=0;b._canvas.height=0;}};
- var menu=Window_MenuCommand.prototype.addOriginalCommands;
+    Spriteset_Map.prototype.createTilemap=function(){createTiles.apply(this,arguments);var p=$dataMap.arenaGhostPassage;if(!p)return;
+    // Sparse 16-tile chunks avoid allocating a tall west/south bounding canvas.
+    // The visual roof never supplies collision; authored lower masks do that.
+    var b=p.worldBounds,roof=new Sprite(),chunks={},atlas=ImageManager.loadTileset($dataTilesets[$dataMap.tilesetId].tilesetNames[6]);
+    p.overheadTiles.forEach(function(t){var cx=Math.floor((t.x-b[0])/16),cy=Math.floor((t.y-b[1])/16),key=cx+','+cy,chunk=chunks[key];
+     if(!chunk){chunk=chunks[key]={sprite:new Sprite(new Bitmap(16*48,16*48)),tiles:[]};chunk.sprite.x=cx*16*48;chunk.sprite.y=cy*16*48;roof.addChild(chunk.sprite);}
+     chunk.tiles.push(t);
+    });
+    atlas.addLoadListener(function(){Object.keys(chunks).forEach(function(key){var chunk=chunks[key];chunk.tiles.forEach(function(t){var i=t.tileId%256;chunk.sprite.bitmap.blt(atlas,i%8*48,Math.floor(i/8)*48,48,48,(t.x-b[0])*48-chunk.sprite.x,(t.y-b[1])*48-chunk.sprite.y);});});});
+    this._fangGhostRoof=roof;this._baseSprite.addChild(roof);
+   };
+   var tileUpdate=Spriteset_Map.prototype.updateTilemap;
+   Spriteset_Map.prototype.updateTilemap=function(){tileUpdate.apply(this,arguments);var roof=this._fangGhostRoof;if(!roof)return;var p=$dataMap.arenaGhostPassage,b=p.worldBounds;
+    roof.x=b[0]*48-this._tilemap.origin.x;roof.y=b[1]*48-this._tilemap.origin.y;
+    roof.alpha=p.pathTiles.some(function(v){return Math.abs($gamePlayer._realX-v[0])+Math.abs($gamePlayer._realY-v[1])<1;})?p.roofOpacityInside/255:1;
+   };
+   var terminateMap=Scene_Map.prototype.terminate;
+   Scene_Map.prototype.terminate=function(){terminateMap.apply(this,arguments);var roof=this._spriteset&&this._spriteset._fangGhostRoof;if(roof)roof.children.forEach(function(chunk){var b=chunk.bitmap;if(b){if(b._baseTexture)b._baseTexture.destroy();b._canvas.width=0;b._canvas.height=0;}});};
+var menu=Window_MenuCommand.prototype.addOriginalCommands;
  Window_MenuCommand.prototype.addOriginalCommands=function(){menu.apply(this,arguments);if((here()||below())&&ArenaContinuation.labActive()){this.addCommand('Guardar teste em RAM','arenaRihadStore');this.addCommand('Carregar teste da RAM','arenaRihadLoad');}};
  var addInspection=Window_MenuCommand.prototype.addOriginalCommands;
  Window_MenuCommand.prototype.addOriginalCommands=function(){addInspection.apply(this,arguments);if(here()&&ArenaContinuation.labActive()&&ArenaDebugHub.enabled())this.addCommand('Inspecionar acesso ao Fantasma (RAM)','arenaFangGhostAccess');};
