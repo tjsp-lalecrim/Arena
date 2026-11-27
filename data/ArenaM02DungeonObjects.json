@@ -969,6 +969,23 @@
           "orientation": "adaptação à conexão local; empate=face frontal"
         },
         {
+          "id": "visual.fang.1.brace.44.90",
+          "eventId": 543,
+          "original": [
+            44,
+            90
+          ],
+          "origin": [
+            168,
+            274
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
           "id": "visual.fang.1.entry-face",
           "eventId": 600,
           "original": [

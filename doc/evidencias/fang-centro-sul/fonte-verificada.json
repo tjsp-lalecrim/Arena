@@ -1,0 +1,28 @@
+{
+  "source": {
+    "file": "42068779.MIF",
+    "sha256": "582f039f79a5c428d94a838a8c8ffc0124b35c742dacd41d911d6400e16b02e7",
+    "level": 1,
+    "inf": "FANG1.INF",
+    "map2Present": false,
+    "installedReadback": "MAP1/FLOR rechecked against installed MIF,27/11/2026"
+  },
+  "layers": {
+    "MAP1": {
+      "decodedBytes": 20000,
+      "sha256": "c0c049b88333f8ab6b413e965ae275c62dbc1141117cb31b049b91b35c3b92b7"
+    },
+    "FLOR": {
+      "decodedBytes": 20000,
+      "sha256": "dd90dd26a96e213f869cdc800ab3c660c9c83f7a340fb77c819a2d0171e6166b"
+    }
+  },
+  "checked": {
+    "pitCells": 41,
+    "dryCells": 245,
+    "braces": 1,
+    "encounters": 6,
+    "treasures": 0
+  },
+  "scope": "Installed readback exact; MAP1/FLOR records, empty banks, original enemy/treasure flats, noncolliding BRACE0x9138. No original DOS traversal observation."
+}
