@@ -306,6 +306,23 @@
           "orientation": "adaptação à conexão local; empate=face frontal"
         },
         {
+          "id": "visual.fang.1.brace.81.10",
+          "eventId": 501,
+          "original": [
+            81,
+            10
+          ],
+          "origin": [
+            57,
+            34
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
           "id": "visual.fang.1.brace.18.12",
           "eventId": 502,
           "original": [
@@ -319,6 +336,57 @@
           "raw": "0x9138",
           "source": "BRACE.IMG",
           "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.83.12",
+          "eventId": 503,
+          "original": [
+            83,
+            12
+          ],
+          "origin": [
+            51,
+            40
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.89.13",
+          "eventId": 504,
+          "original": [
+            89,
+            13
+          ],
+          "origin": [
+            33,
+            43
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.87.14",
+          "eventId": 505,
+          "original": [
+            87,
+            14
+          ],
+          "origin": [
+            39,
+            46
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
           "file": "!$Arena_Mine_Brace_V01",
           "orientation": "adaptação à conexão local; empate=face frontal"
         },
@@ -353,6 +421,40 @@
           "raw": "0x9138",
           "source": "BRACE.IMG",
           "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.71.15",
+          "eventId": 508,
+          "original": [
+            71,
+            15
+          ],
+          "origin": [
+            87,
+            49
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.77.16",
+          "eventId": 509,
+          "original": [
+            77,
+            16
+          ],
+          "origin": [
+            69,
+            52
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
           "file": "!$Arena_Mine_Brace_V01",
           "orientation": "adaptação à conexão local; empate=face frontal"
         },
@@ -408,6 +510,57 @@
           "orientation": "adaptação à conexão local; empate=face frontal"
         },
         {
+          "id": "visual.fang.1.brace.68.28",
+          "eventId": 513,
+          "original": [
+            68,
+            28
+          ],
+          "origin": [
+            96,
+            88
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.68.33",
+          "eventId": 514,
+          "original": [
+            68,
+            33
+          ],
+          "origin": [
+            96,
+            103
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.69.34",
+          "eventId": 515,
+          "original": [
+            69,
+            34
+          ],
+          "origin": [
+            93,
+            106
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
           "id": "visual.fang.1.brace.27.37",
           "eventId": 516,
           "original": [
@@ -425,6 +578,40 @@
           "orientation": "adaptação à conexão local; empate=face frontal"
         },
         {
+          "id": "visual.fang.1.brace.68.39",
+          "eventId": 517,
+          "original": [
+            68,
+            39
+          ],
+          "origin": [
+            96,
+            121
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.94.43",
+          "eventId": 518,
+          "original": [
+            94,
+            43
+          ],
+          "origin": [
+            18,
+            133
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
           "id": "visual.fang.1.brace.66.44",
           "eventId": 519,
           "original": [
@@ -433,6 +620,23 @@
           ],
           "origin": [
             102,
+            136
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.87.44",
+          "eventId": 520,
+          "original": [
+            87,
+            44
+          ],
+          "origin": [
+            39,
             136
           ],
           "raw": "0x9138",
@@ -476,6 +680,23 @@
           "orientation": "adaptação à conexão local; empate=face frontal"
         },
         {
+          "id": "visual.fang.1.brace.87.47",
+          "eventId": 523,
+          "original": [
+            87,
+            47
+          ],
+          "origin": [
+            39,
+            145
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
           "id": "visual.fang.1.brace.50.49",
           "eventId": 524,
           "original": [
@@ -485,6 +706,57 @@
           "origin": [
             150,
             151
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.84.49",
+          "eventId": 525,
+          "original": [
+            84,
+            49
+          ],
+          "origin": [
+            48,
+            151
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 6,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.75.50",
+          "eventId": 526,
+          "original": [
+            75,
+            50
+          ],
+          "origin": [
+            75,
+            154
+          ],
+          "raw": "0x9138",
+          "source": "BRACE.IMG",
+          "direction": 2,
+          "file": "!$Arena_Mine_Brace_V01",
+          "orientation": "adaptação à conexão local; empate=face frontal"
+        },
+        {
+          "id": "visual.fang.1.brace.85.52",
+          "eventId": 527,
+          "original": [
+            85,
+            52
+          ],
+          "origin": [
+            45,
+            160
           ],
           "raw": "0x9138",
           "source": "BRACE.IMG",
